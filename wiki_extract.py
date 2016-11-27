@@ -5,6 +5,26 @@ import os
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 
+def save_image(url,fname,hdr) :
+    print('Retrieving image',url)
+    # Retrieve the Image
+    opener = urllib.request.build_opener()
+    opener.addheaders.append(('Cookie', hdr))
+    try:
+        f = opener.open(url)
+    except:
+        f = None
+
+    if f is not None:
+        folder = os.path.dirname(fname)
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        image = f.read()
+        out = open(fname,'wb')
+        out.write(image)
+        out.close()
+        print('Wrote',len(data),' characters to '+fname)
+
 wikibase = 'https://share.coursera.org'
 baseurl = wikibase+'/wiki/index.php'
 
@@ -85,33 +105,48 @@ for category in categories:
             # print (data)
 
             soup = BeautifulSoup(data, 'html.parser')
-            # Retrieve all of the anchor tags
+
+            # Retrieve all of the img tags
+            # <img alt="Snacourselogo.jpeg" src="/wiki/images/thumb/a/a1/Snacourselogo.jpeg/195px-Snacourselogo.jpeg" width="195" height="180" />
             tags = soup('img')
             for tag in tags:
                 src = tag.get('src', 'None')
                 if src == None : continue
                 if not src.startswith('/wiki/images/') : continue
                 fname = src[6:]
-                folder = os.path.dirname(fname)
                 url = wikibase + src;
-                print('Retrieving image',url)
-                # Retrieve the Image
+                save_image(url,fname,hdr)
+
+            # <a href="/wiki/index.php/File:Snacourselogo.jpeg" class="image">
+            tags = soup('a')
+            for tag in tags:
+                src = tag.get('href', 'None')
+                if src == None : continue
+                if not src.startswith('/wiki/index.php/File:') : continue
+
+                url = wikibase + src;
+
+                # Retrieve the File: page and pull in the href images
                 opener = urllib.request.build_opener()
                 opener.addheaders.append(('Cookie', hdr))
+                print('Retrieving File page',url);
                 try:
                     f = opener.open(url)
                 except:
                     f = None
 
-                if f is not None:
-                    if not os.path.exists(folder):
-                        os.makedirs(folder)
-                    image = f.read()
-                    out = open(fname,'wb')
-                    out.write(image)
-                    out.close()
-                    print('Wrote',len(data),' characters to '+fname)
-
+                if f is not None : 
+                    fpage = f.read().decode()
+                    soup2 = BeautifulSoup(fpage, 'html.parser')
+                    tags2 = soup2('a')
+                    for tag2 in tags2:
+                        src = tag2.get('href', 'None')
+                        if src == None : continue
+                        if not src.startswith('/wiki/images') : continue
+                        fname = src[6:]
+                        url = wikibase + src;
+                        save_image(url,fname,hdr)
+                        break # only take the first one
 
 
             usesoup = False
