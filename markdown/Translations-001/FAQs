@@ -1,0 +1,150 @@
+# Introduction
+This page is for collaboratively writing an updated version of the FAQs page https://class.coursera.org/translations-001/wiki/faqs in the platform of Coursera's Global Translator's community
+
+**Feel free to do any edit you want: this being a wiki, even if you should accidentally delete some content you want to keep, you can retrieve it via the History of this page. Beware however that the software will log you out after a while, so save your work regularly.**
+
+Maybe the FAQs page could be structured this way:
+
+# A) Available info
+Maybe this A) section should be given in another page and just linked to  in the FAQs
+
+## 1. Official help resources
+
+Transifex: see http://docs.transifex.com/
+
+ABBYY-ls: See [let's ask ABBYY-ls if they have their own FAQs]
+
+Coursera platform: see https://learner.coursera.help/hc and in particular https://learner.coursera.help/hc/en-us/sections/200365595-Forums-and-Community .
+
+## 2. Exisiting info: pages
+
+### 2.1 "Non language" wiki pages
+
+Brief description of each, but several need a serious overhaul first: content-wise  and form-wise: see https://class.coursera.org/translations-001/wiki/aboutGTC which is labeled Introduction (more in a reply to this comment, maybe)
+
+### 2.2 "Non language non wiki" pages
+
+(those with redirects)
+
+To be written by Coursera staff:
+
+General info about these pages
+
+Brief description of each
+
+### 2.3 Wiki pages for languages
+
+To be written by Coursera staff:
+
+Who makes them and why so few
+
+Brief description of each
+
+### 2.4 Forums
+
+Link to https://class.coursera.org/translations-001/forum/index . No details as Coursera Staff sometimes change their names or create new ones.
+
+How to retrieve info in the forums via the search engine, tags and the complete activity list of a member
+
+Warning about obsolete though apparently authoritative info (e.g. topics made and pinned by former Coursera Staff)
+
+# B) Actual FAQs
+"CS" = those whose answer should be written by Coursera Staff
+
+## 1. Hierarchy of languages
+
+Why is there no wiki page for my language? CS
+
+Why is there no forum for my language? CS
+
+Why is there no coordinator for my language? CS
+
+How often is the Other Languages page updated? CS
+
+If my language community has no coordinator on Transifex, how can its translations be reviewed and approved for publication in course platforms? CS
+
+## 2. Transifex v. Coursera platform roles
+
+What is the correspondence between Transifex roles and labels - Coursera staff, Staff, Teaching assistant - in this Coursera platform?
+
+Why don't the language coordinators listed in the Language Coordinators page correspond to those of the Transifex page for my language community? CS
+
+## 3. Transifex roles: recurring glitches
+
+I am a translator and I have done nothing wrong: why am I chucked out of my Transifex language community? CS
+
+I am a coordinator and I have done nothing wrong: why am I demoted to translator in Transifex but still appear as teaching assistant / staff in this platform? CS
+
+I am a reviewer and I have done nothing wrong: why am I demoted to translator in Transifex? CS
+
+## 4. Transifex languages
+
+My language is not among the 65 Transifex translation languages listed in the Dashboard of the GTC. Why was there no response when I requested its addition via the Transifex Request Language feature? CS
+
+Courses that are in other languages than English can be translated into any of the 65 Transifex translation languages listed in the Dashboard of the GTC, but not in English. Why can't a variety of English be added as translation language, just as there is French as source language and French (France) as translation language? CS
+
+## 5. Transifex translation tool
+
+Transifex has become very slow and sluggish since the addition of the video player. How can I deactivate it?
+
+A: Uncheck the video player setting in the droplist that opens from the little cogwheel top right.
+
+Why do some translation resources have no video player? CS
+
+Why have the strings in my translation suddenly become unrelated to the original content? CS
+
+Why are there only random translations attributed to various people in some translation resources? And why are some of these translations totally unrelated to their source CS
+
+Why has the translation I was working on suddenly become unavailable for translation? CS
+
+## 6. Issues with original subtitles
+
+Original subtitles are absurdly split. How far can I resplit them more logically in the translation, without them getting out of sync once added to the video? CS
+
+There are errors in the original subtitles and I've indicated them in comments marked as issue that get automatically notified to the project maintainers. Why did they not respond? Then the https://class.coursera.org/translations-001/wiki/guidelines page says to also report errors in the  Transcript Errors subforum. But is it still monitored by Coursera staff? CS
+
+## 7. Recognition and quality assessment
+
+The table for the various types of recognition in the Recognition page repeatedly mentions "of consistent high-quality" as a criterion. How is this high quality assessed, in particular for translations in languages that have no Coordinator or Reviewer who can officially mark them as reviewed? CS
+
+The Recognition page foresees "Public recognition on Coursera’s website." for 2,500+ translated words. Yet the Translator Agreement says: "Coursera will credit you as a “Translator” on the Coursera website", without a minimum number of translated words. So why aren't all translators listed in the linked page? CS
+
+The Recognition page foresees a "digital Statement of Accomplishment" for 15'000+ translated words and a "igital Statement of Accomplishment with Distinction" for 25'000+ translated words. Yet Coursera is phasing out Statements of Accomplishment, and as they are, they say nothing of the actual work done by the translators. Chinese and Portuguese translators have a different, more relevant form of certification. Can't other translators have something similar too? CS
+
+I translate into 2 (or more) languages and until November 2014 [check date], the stats for my translations in each of these languages were listed in the Request Recognition page. Why has this page only listed the stats for one of my languages since then? Are my translations into other languages nonetheless taken into account for recognition? CS
+
+I have translated more than 25'000 words but haven't received a voucher for a Verified Certificate. What should I do?
+
+Answer: Try the Request Recognition page. If it does not work .... (to be added by CS)
+
+Why is the Leaderboard page stuck?
+
+Answer: As the Leaderboard is updated on the basis of Transifex activity stats, check the activity widget in the Transifex Dashboard: if it is stuck too, it's probably due to maintenance.  Check if the issue has been reported in the Ask Coursera forum and if it hasn't yet, report it. Don't worry: when the Transifex stats start working again, they'll also cover the "stuck" days
+
+Why is the Leaderboard page stuck, even though the Transifex activity widget is normally updating? CS
+
+## 8. Courses for translation
+
+Why do some courses have coursera-flex- or flex- as a prefix to their title in Transifex? CS
+
+I was translating a lecture and now the whole course has disappeared from Transifex. Why? CS
+
+I was translating a lecture and now it appears in 2 (or more) different courses in Transifex. Why? CS
+
+My language does not have a coordinator who can indicate which courses must be translated first, and the spreadsheet of GTC Approved for Translation courses has not been updated in a long time. Same for the list of courses in the Othe Languages page. How can I choose a course for translation? CS
+
+How can I request a course for translation, if my language does not have a coordinator who can add requests in the Translation Requests spreadsheet? CS
+
+Some courses are not available for translation because the instructors or their university declined to have them translated by the GTC, due to the terms imposed to them by Coursera for these GTC translations. Could the GTC terms for instructors/universities be made public, just as the Translator Agreement is? CS
+
+## 9. Communication
+
+Why do Coursera Staff only monitor the Ask Coursera forum, when they created forums like Transcript errors, Request courses, Transifex help and Ideas & Suggestions to gather our feedback? CS
+
+What happens when an email is sent to translate@coursera.org? CS
+
+Is there a limit to the number of posts someone is allowed to make in the Coursera forums for the GTC? CS
+
+# Back to
+
+The [The main page of the Global Translator Community's wiki](https://share.coursera.org/wiki/index.php/Translations-001:Main).

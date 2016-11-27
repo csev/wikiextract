@@ -1,0 +1,221 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Introastro:Python</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Python coding
+for Python 2.7.3
+tip always add $$\text{import math}$$ first to help in better function.</p>
+<p>You can download and install an easy python suite called 'pythonxy: Scientific-oriented Python' (multi OS supported).</p>
+<ul>
+<li><p>After installing, run 'Spyder' as an easy editor.</p></li>
+<li><p>TIP: You have a free book/quick-start guide at 'python install folder'/doc/... (e.g. at windows: 'C:\Python27\Doc\python275.chm').</p></li>
+</ul>
+<p>Install pip for easy installation of python modules such as unum.
+"pip install unum" to install python module that enables SI units as shown below.</p>
+<pre>
+from unum.units import *
+from unum import Unum
+from math import *
+import datetime
+
+# Unit Conversions
+
+##These exists in Unum, but they have floating errors
+#deg        = ARCDEG   = Unum.unit( 'degrees'  , pi/float(180) * RAD , 'degree (angle)')
+#arcmin     = ARCMIN   = Unum.unit( &quot;`&quot;        , ARCDEG / float(60) , 'minute (angle)')
+#arcsec     = ARCSEC   = Unum.unit( &quot;``&quot;       , ARCMIN / float(60) , 'second (angle)')
+# I looked at  these units in Unum and I don't see that these definitions here are an improvement.
+#Joseph Robinson  2014-12-04
+
+day = d #Already Defined in Unum
+AU = Unum.unit('AU',  149597870700 * m, 'astronomical unit')
+ly = Unum.unit('ly', 9460730472580800 * m, 'light year')
+pc = Unum.unit('pc', 3.08567758e13 * km, 'parsec')
+yr_j = Unum.unit('yr_j', 365.25 * d, 'julian year')
+yr_s = Unum.unit('yr_s', 365.256363004 * d, 'sidereal year')
+yr_t = Unum.unit('yr_t', 365.2421897 * d, 'tropical year')
+e_charge = Unum.unit('e', 1.6021765e-19 * C, 'elementary charge')
+mu = Unum.unit('mu', 1.6605389e-27 * kg, 'atomic mass unit')
+
+#Physical Constants
+me = 9.109382e-31 * kg              #electron mass
+mp = 1.6726217e-27 * kg             #proton mass
+R_ = 1.09737315685e7 * 1/m          #Rydberg constant
+c = 299792458 * m/s              #speed of light in vacuum
+h = 6.626069e-34 * J*s              #Planck constant
+b = 2.8977685e-3 * m*K              #Wien's constant
+kB = 1.380648e-23 * J/K             #Boltzmann constant
+g = 9.80665e0 * m/s**2              #gravitational acceleration at Earth's surface
+sc = 1.361e3 * W/m**2                #solar constant
+G = 6.67384e-11 * m**3/(kg * s**2)    #gravitational constant
+gr_s = 5.6703e-8 * W/(m**2 * K**4)  #Stefan-Boltzmann constant
+
+#Astronomical Data
+D_earth_sun_AU = 1*AU
+D_saturn_sun_AU = 9.58*AU  # Saturn's orbit - Semi-major axis = 1 433 449 370 km = 9.582 017 20 AU (wikipedia)
+
+R_sun = 6.95508e5 * km      #Sun's mean radius
+R_earth = 6.371e3 * km      #Earth's mean radius
+R_moon = 1.7375e3 * km      #Moon's mean radius
+R_mercury = 2.4397e3 * km   #Mercury's mean radius
+R_venus = 6.0518e3 * km     #Venus mean radius
+R_mars = 3.3895e3 * km      #Mars mean radius
+R_jupiter = 6.9911e4 * km   #Jupiter's mean radius
+R_saturn = 5.8232e4 * km    #Saturn's mean radius
+R_uranus = 2.5362e4 * km    #Uranus mean radius
+R_neptune = 2.4622e4 * km   #Neptune mean radius
+R_pluto = 1.151e3 * km      #Pluto's mean radius
+
+M_sun = 1.9891e30 * kg      #Sun's mass
+M_earth = 5.97219e24 * kg   #Earth's mass
+M_moon = 7.3477e22 * kg     #Moon's mass
+M_mercury = 3.30104e23 * kg #Mercury's mass
+M_venus = 4.86732e24 * kg   #Venus mass
+M_mars = 6.41693e23 * kg    #Mars mass
+M_jupiter = 1.89813e27 * kg #Jupiter's mass
+M_saturn = 5.68319e26 * kg  #Saturn's mass
+M_uranus = 8.68103e25 * kg  #Uranus mass
+M_neptune = 1.0241e26 * kg  #Neptune mass
+M_pluto = 1.309e22 * kg     #Pluto's mass
+
+L_sun = 3.83e26 * W         #Luminosity of the Sun
+T_sun = 5.777e3 * K         #Surface temperature of the Sun
+
+#Helpful Functions
+def grav_poten_energy(p_m1,p_m2,p_r):
+     form = -((G*p_m1*p_m2)/p_r)
+     return form
+
+def kinetic_energy(p_m, p_v):
+      form = (1/2)*p_m*p_v**2
+      return form
+
+def angular_momentum(p_m, p_v, p_R):
+      return p_m*p_v*p_R
+
+def momentum(p_m, p_v):
+      return p_m*p_v
+
+def centripetal_acceleration(p_v, p_R):
+      return (p_v**2/p_R)
+
+def gravity_at_earth_surface(p_m):
+      form = g*p_m
+      return form
+
+def gravity(p_m, p_r):
+      form = (G*p_m)/p_r**2
+      return form
+
+def gravity_two_object(p_m1, p_m2, p_r):
+      form = (G*p_m1*p_m2)/p_r**2
+      return form
+
+def Kepler_constant_K(p_Mtotal):
+     return (4*(pi**2))/(G*p_Mtotal)
+
+def Kepler_third_law2(p_K, p_R):
+      form=(4*pi**2)/(p_K*p_R)
+      return form
+
+def Kepler_third_law(p_K, p_a):
+      form = sqrt((p_K*p_a**3).asNumber())*s
+      return form
+
+def synodic_period(period1, period2):
+      form1 = abs((period1*period2)/(period2-period1))
+      return form1
+
+def resolution(p_arcsec, p_distance):
+       form1 = p_arcsec.asUnit(deg)
+       form2 = (pi/180.0) * p_distance
+       return form1*form2
+
+def alt(p_zen):
+        form = 90 * deg - p_zen
+        return form
+
+def zenith(p_lat, p_dec):
+       return abs(p_lat - p_dec)
+
+def highest_position(p_lat, p_dec):
+    altitude = alt(zenith(p_lat, p_dec))
+    azimuth = 0 * deg
+    if p_dec &lt; p_lat:
+        azimuth = 180 * deg
+    return (azimuth, altitude)
+
+def distance(p_a,p_r):
+       form1 = p_a/57.3
+       main = form1 * p_r
+       return main
+
+def flux(p_sigma, p_T):
+       return p_sigma*p_T**4
+
+def luminosity(p_R, p_F):
+       return 4*pi*p_R**2*p_F
+
+def doppler_effect(p_v, p_c, lp_ambda0):
+       return p_lambda0*(1-(p_v/p_c))
+
+def julian_date(datetimeObject):
+    &quot;&quot;&quot;
+    returns JD for a given datetime object
+    https://docs.python.org/2/library/datetime.html#datetime-objects
+    &quot;&quot;&quot;
+    return datetimeObject.toordinal() + (((
+            datetimeObject.second   / 60.) + 
+            datetimeObject.minute  )/ 60.  + 
+            datetimeObject.hour    )/ 24.  + 1721424.5
+
+
+#Examples
+#Positional Astronomy
+#How High is Sun at Noon? Athens is at Latitude 37.7N (Lesson: Week 1 - 6th Video)
+#At equinox 
+print &quot;Sun in Athens Equinox:&quot;, highest_position(37.7 * deg, 0.0 * deg)
+#At summer solstice
+print &quot;Sun in Athens Summer Solstice:&quot;, highest_position(37.7 * deg, 23.5 * deg)
+#At winter solstice
+print &quot;Sun in Athens Winter Solstice:&quot;, highest_position(37.7 * deg, -23.5 * deg)
+print
+print &quot;Calculate Julian Date&quot;
+print &quot;enter date as  year, month, day, hour, minute, second &quot; 
+print &quot;example 2000, 1, 1, 12, 0, 0&quot;
+DATE = eval(raw_input())
+gregDate = datetime.datetime(DATE[0],DATE[1],DATE[2],DATE[3],DATE[4],DATE[5])
+print 'JD of entered datetime = ', julian_date(gregDate)
+print
+##
+
+#Newton's Universe
+#The weight of the professor at the surface of Earth (Lesson: Week 2 - 4th Video)
+print &quot;The weight of the professor on earth:&quot;, (gravity_at_earth_surface(59*kg)).asUnit(N)
+#Kepler's K constant for our Solar System (Lesson: Week 2 - 6th Video)
+print &quot;Kepler Constant for Our Solar System:&quot;, Kepler_constant_K(M_sun)
+#Low-Earth Orbit: ISS orbits at an altitude of h = 370km (Lesson: Week 2 - 7th Video)
+R_iss = R_earth + 370*km
+print &quot;The Period of ISS is:&quot;, (Kepler_third_law(Kepler_constant_K(M_earth), R_iss)).asUnit(min)
+#Ronen's Gravitas (Lesson: Week 2 - 8th Video)
+print &quot;Ronen's Gravitas:&quot;, (gravity_two_object(M_earth, 59*kg, R_earth)).asUnit(N)
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Introastro:Python&amp;oldid=30249">https://share.coursera.org/wiki/index.php?title=Introastro:Python&amp;oldid=30249</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Introastro" title="Category:Introastro">Introastro</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

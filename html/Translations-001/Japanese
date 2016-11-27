@@ -1,0 +1,60 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Translations-001:Japanese</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Japanese Translator Community</p>
+<p>目次　　
+    Transifexから始めよう。
+    翻訳を始めるにあたって。
+    どのリソースを翻訳するべきか。
+    翻訳が終わったら。
+    日本語コミュニティ・フォーラムに参加しよう。
+    どんどん翻訳して、無料クーポンを手に入れよう。
+    自分のランキングをチェックしよう。
+    翻訳を諦めそうになったら。</p>
+<code><pre>Transifexから始めよう。
+</pre></code>
+<p>Courseraの翻訳プラットフォームはTransifexです。Coursera GTCにサイン・インした方なら誰でも、無料でTransifex翻訳サイトのCoursera Hubを利用できます。まずは、TransifexのアカウントIDを使って、Transifex内のCoursera Hubにアクセスしてください。Coursera Hub内のProjectから、翻訳するResourceを選んで、早速、翻訳を開始してみましょう。　Transifexの利用方法について詳しく知りたい方は、Coursera GTCのGet Startedの項目をご参照ください。（Transifexのアクセスに問題のある方は、GTCの”Request Transifex Access” Toolを使って、リクエストを送ってください。）</p>
+<code><pre>翻訳を始めるにあたって。
+</pre></code>
+<p>現在の日本語コミュニティでは、翻訳部分の担当者の割り振りはなく、翻訳箇所の報告も必要ありませんから、日本語メンバーは、いつでも自分の好きな箇所から自由に翻訳に参加することができます。翻訳に際しては、他の日本語メンバーのトランスレーターの翻訳を尊重し、Courseraのガイドラインに従ってください。</p>
+<code><pre>どのリソースを翻訳するべきか。
+</pre></code>
+<p>Transifex内のCoursera HubのProjectの中でも、実は、より優先的に翻訳に取り組むべきProjectがあります。それらは、Courseraが指定し、各言語のLanguage Coordinator (LC)に伝えられます。Courseraが指定する優先的に取り組むべきProjectとは、a) 内容の変更が少なく、今後、複数回、開講される見込みがあるコース、そして　b) Courseraの受講生に人気の高いコースです。各言語のLCは、Courseraが指定したProjectの中から、さらに各言語が優先的に取り組むべきProjectをコミュニティ内で提示することになっています。日本語コミュニティでは、Courseraが指定したProjectの中から、既に一定量の翻訳が行われているコースを
+「優先的に翻訳に取り組むべきプロジェクト一覧」
+として、このページのトップでご紹介しています。</p>
+<p>また、Transifex内の日本語プロジェクト一覧も、どのリソースを翻訳するかを選択する際に役に立ちます。Transifex内のCoursera Hubで、"mine"を選ぶと日本語のプロジェクト一覧”Projects of 'Coursera' organization - Japanese”　が表示されます。完了度の高いものから順に、上から下へprojectの完了度を示す％の棒グラフが並んでいます。棒グラフにカーソルを当てると、翻訳済み・翻訳未済みのstring数が分かりますから、どの程度の量で翻訳が完了するかを把握することができます。</p>
+<code><pre>翻訳が終わったら。
+</pre></code>
+<p>翻訳されたリソースは、Reviewer権限を持つトランスレーターによってレビューされます。Project内のすべてのリソースが翻訳され、レビューが完了すると、Courseraのコースに翻訳がPublishされ、Courseraのコースで日本語字幕が利用可能となります。　
+ 注）翻訳途中のリソースは、Publishされません。できるだけ、一つのProjectに集中して、Publishを目指しましょう！</p>
+<code><pre>日本語コミュニティ・フォーラムに参加しよう。
+</pre></code>
+<p>Coursera GTCのDiscussion Forumsでは、Coursera StaffやLCからのお知らせ、重要事項のアップデート、トランスレーター同士の情報交換やコミュニティ内の運営方針についてのディスカッションなど、様々なスレッドが役に立ちます。Discussion Forums 内の日本語コミュニティに参加して、トランスレーター同士の交流や情報共有の場として、積極的に活用してください。また、日本語コミュニティ・フォーラムをSubscribeして、最新情報を入手することもお忘れなく。</p>
+<code><pre>どんどん翻訳して、無料クーポンを手に入れよう。
+</pre></code>
+<p>Coursera GTCのトランスレーターには、いくつかのステータスが与えられます。トランスレーターは、MemberからTranslatorにステータスが上がると、Courseraのウェブサイトで名前が公表されます。さらにOutstanding Translatorに昇格すると、Statement of Accomplishmentが授与されます。最高ランクのLead Translatorに昇格すると、Statement of AccomplishmentにDistinctionが付与されます。また、25,000語　翻訳する毎に、CourseraのSignature Truckで使える無料クーポン券がもらえます。詳しくは、Coursera GTCのRecognitionページを参照してください。</p>
+<code><pre>自分のランキングをチェックしよう。
+</pre></code>
+<p>自分のステータスやランキングが気になりませんか？　Coursera GTCのLeaderboardでは、トランスレーターのランキングが公表されています。また、Coursera GTCのRequest recognitionボタンをクリックすると、自分の現在のステータスとこれまでの翻訳数が表示され、Course RecordsページにStatement of Accomplishmentが発行されます。</p>
+<code><pre>翻訳を諦めそうになったら。
+</pre></code>
+<p>翻訳を始めて見たものの、作業量の多さに、途中で投げ出しそうになってはいませんか？　また、慣れないアカデミックな単語や専門用語の多さに、自分の翻訳力を信じられなくなってはいませんか？　そんなときは、日本語コミュニティのフォーラムに投稿して、仲間を募ってください。もしくは、LCに連絡して、助けを求めてください。自分の翻訳に自信が持てなくても、Reviewerがいますから大丈夫です。一人で全リソースを翻訳しなくても、ほかのTranslatorの助けを借りれば大丈夫です。日本語コミュニティの皆で協力して、Courseraのコースに一つでも多く日本語字幕をつけましょう！</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 25/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Translations-001:Japanese&amp;oldid=31549">https://share.coursera.org/wiki/index.php?title=Translations-001:Japanese&amp;oldid=31549</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

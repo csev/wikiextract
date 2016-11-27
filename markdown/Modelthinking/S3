@@ -1,0 +1,49 @@
+
+
+Central Limit Theorem 
+=========================
+
+The Central Limit theorem states that the sum of *random* and *independent* variables follow a *Normal Distribution function* or *Bell Curve*
+
+This means that whatever the phenomenon you are observing as soon as its variable are random and independent, statistically the results will follow a Bell Curve. 
+
+Bell Curve or Normal distribution
+---------------------------------------
+
+*Bell Curve* or *Normal distribution function* are mathematical functions which represent a particular probability distribution. These functions allow to model the overall result of a statistical set of experiments. 
+  
+  They are characterized by :
+  
+  + The probability "p" that each event has a particular result (and thus the probability (1-p) that it doesn't)
+  + The number "N" of events (or variables)
+
+This means that if you are observing a set of "N" independent events, and each of them has a probability of "p" to give a particular result then the distribution of probability will follow a Bell Curve / Normal distribution function which has N and p as its key parameters
+
+    Key features of a Bell Curve or Normal distribution
+    ---------------------------------------------------
+    + Average : µ = Np 
+    + Standard deviation: Sigma = sqrt (Np(1-p))   sqrt() meaning square root of
+
+Six Sigma 
+===============
+
+   In a *Bell curve* the standard deviation or *Sigma* gives a measure of the *spread* of the distribution around the average. The smaller *sigma* is, the narrower the "bell" is, and thus the higher the probability of having the majority of the results close to the average
+
+   As a mathematical result, we know that the probabilities of having results within a certain range are as follows:
+
+   + Probability of having all results in the range [A-sigma; A+sigma] = 68.2%
+   + Probability of having all results in the range [A-2sigma; A+2sigma] = 95.4%
+   + Probability of having all results in the range [A-6sigma; A+6sigma] = 3 / 1'000'000   this means 3 in a million !
+ 
+
+The Game of Life
+================
+
+Simulation model representing how biological cells could live or die. The model applies to a *World* in *2 dimensions* with cell which can be alive or dead. It has 2 rules which apply at individual (cell) level:
+- If a cell is on, it remains on if it has exactly 2 or 3 neighbors on, otherwise it dies (<2 or >3 neighbours)
+- If a cell is off, it turns on if it has 3 neigbors on
+
+Cellular Automata
+=======================
+Diverse Preferences
+=========================

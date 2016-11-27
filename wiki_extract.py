@@ -97,10 +97,13 @@ def save_image(url,fname,hdr) :
         out.close()
         print('Wrote',len(data),' characters to '+fname)
 
-count = 400
-for category in categories:
+count = 100000
+pages = 0
+images = 0
+while len(categories) > 0 :
+    category = categories.pop()
     print()
-    print('========== Starting Category',category)
+    print('========== Starting Category',category,'with',len(categories),'left to process')
 
     retrieved = list()
     todo = list()
@@ -118,6 +121,7 @@ for category in categories:
             print('Already retrieved',url)
             continue
         retrieved.append(page)
+        pages = pages + 1
 
         url = baseurl + '/' + urllib.parse.quote_plus(page)
         print('Retrieving HTML',url)
@@ -144,6 +148,7 @@ for category in categories:
                 if not src.startswith('/wiki/images/') : continue
                 fname = src[6:]
                 url = wikibase + src;
+                images = images + 1
                 save_image(url,fname,hdr)
 
             # <a href="/wiki/index.php/File:Snacourselogo.jpeg" class="image">
@@ -175,6 +180,7 @@ for category in categories:
                         if not href.startswith('/wiki/images') : continue
                         fname = href[6:]
                         url = wikibase + href;
+                        images = images + 1
                         save_image(url,fname,hdr)
                         image_map[src] = href
                         break # only take the first one
@@ -281,3 +287,5 @@ for category in categories:
                 if ref in todo : continue
                 todo.append(pieces[0]+':'+ref)
 
+print('Pages retrieved:', pages);
+print('Images retrieved:', images);

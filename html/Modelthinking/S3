@@ -1,0 +1,65 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ModelThinking:S3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Central_Limit_Theorem"><span class="tocnumber">1</span> <span class="toctext">Central Limit Theorem</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Bell_Curve_or_Normal_distribution"><span class="tocnumber">1.1</span> <span class="toctext">Bell Curve or Normal distribution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Six_Sigma"><span class="tocnumber">2</span> <span class="toctext">Six Sigma</span></a></li>
+<li class="toclevel-1"><a href="#The_Game_of_Life"><span class="tocnumber">3</span> <span class="toctext">The Game of Life</span></a></li>
+<li class="toclevel-1"><a href="#Cellular_Automata"><span class="tocnumber">4</span> <span class="toctext">Cellular Automata</span></a></li>
+<li class="toclevel-1"><a href="#Diverse_Preferences"><span class="tocnumber">5</span> <span class="toctext">Diverse Preferences</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Central_Limit_Theorem">Central Limit Theorem</span></h1>
+<p>The Central Limit theorem states that the sum of <em>random</em> and <em>independent</em> variables follow a <em>Normal Distribution function</em> or <em>Bell Curve</em></p>
+<p>This means that whatever the phenomenon you are observing as soon as its variable are random and independent, statistically the results will follow a Bell Curve. </p>
+<h2> <span class="mw-headline" id="Bell_Curve_or_Normal_distribution">Bell Curve or Normal distribution</span></h2>
+<p><em>Bell Curve</em> or <em>Normal distribution function</em> are mathematical functions which represent a particular probability distribution. These functions allow to model the overall result of a statistical set of experiments. </p>
+<p>They are characterized by&#160;:</p>
+<ul>
+<li>The probability "p" that each event has a particular result (and thus the probability (1-p) that it doesn't)</li>
+<li>The number "N" of events (or variables)</li>
+</ul>
+<p>This means that if you are observing a set of "N" independent events, and each of them has a probability of "p" to give a particular result then the distribution of probability will follow a Bell Curve / Normal distribution function which has N and p as its key parameters</p>
+<code><pre>Key features of a Bell Curve or Normal distribution
+---------------------------------------------------
++ Average&#160;: µ = Np 
++ Standard deviation: Sigma = sqrt (Np(1-p))   sqrt() meaning square root of
+</pre></code>
+<h1> <span class="mw-headline" id="Six_Sigma">Six Sigma</span></h1>
+<p>In a <em>Bell curve</em> the standard deviation or <em>Sigma</em> gives a measure of the <em>spread</em> of the distribution around the average. The smaller <em>sigma</em> is, the narrower the "bell" is, and thus the higher the probability of having the majority of the results close to the average</p>
+<p>As a mathematical result, we know that the probabilities of having results within a certain range are as follows:</p>
+<ul>
+<li>Probability of having all results in the range [A-sigma; A+sigma] = 68.2%</li>
+<li>Probability of having all results in the range [A-2sigma; A+2sigma] = 95.4%</li>
+<li>Probability of having all results in the range [A-6sigma; A+6sigma] = 3 / 1'000'000   this means 3 in a million&#160;!</li>
+</ul>
+<h1> <span class="mw-headline" id="The_Game_of_Life">The Game of Life</span></h1>
+<p>Simulation model representing how biological cells could live or die. The model applies to a <em>World</em> in <em>2 dimensions</em> with cell which can be alive or dead. It has 2 rules which apply at individual (cell) level:
+- If a cell is on, it remains on if it has exactly 2 or 3 neighbors on, otherwise it dies (&lt;2 or &gt;3 neighbours)
+- If a cell is off, it turns on if it has 3 neigbors on</p>
+<h1> <span class="mw-headline" id="Cellular_Automata">Cellular Automata</span></h1>
+<h1> <span class="mw-headline" id="Diverse_Preferences">Diverse Preferences</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ModelThinking:S3&amp;oldid=2439">https://share.coursera.org/wiki/index.php?title=ModelThinking:S3&amp;oldid=2439</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,49 @@
+This is a page for gathering resources and info concerning translations in Ukrainian. Click on Edit to add content. You can also create subpages as explained in the [Creating or linking to other pages within the wiki](https://share.coursera.org/wiki/index.php/Help:Editing#Creating_or_linking_to_other_pages_within_the_wiki) section of the [[Help:Editing]] page.
+[[File:Ukrainian_ornament.jpg‎]]
+# Словники:
+- Словники України онлайн: http://lcorp.ulif.org.ua/dictua/
+- Онлайн-переклад: http://online-pereklad.com.ua/multitran.html
+- PROZ. The translation workplace: http://www.proz.com/about/overview/terminology/
+- Онлайн-словник ABBYY: http://www.lingvo.ua/uk
+- Академічний тлумачний словник української мови: http://sum.in.ua/
+- Онлайн-перекладач МЕТА: http://translate.meta.ua/en/
+- Словник вимови Shtooka: http://swac-collections.org/overview.php?lang=ukr
+- Російсько-українські словники з пошуком по всій базі http://r2u.org.ua/
+- Російськомовний перекладач, особливо корисний для перекладу phrasal verbs: http://wooordhunt.ru/
+# Граматика
+- Граматичні таблиці: http://essuir.sumdu.edu.ua/handle/123456789/387
+- Мова - ДНК нації: http://ukr-mova.in.ua/library/?page=4
+# Онлайн-клавіатура:
+- http://ukrainian.keyboard.su/
+# Стандарт підпису SRT-файлів
+- **В останньому рядку** того файла, над яким ви працювали (перекладали чи редагували), слід **підписатися**: 
+
+Наприклад:[[File:Signat.png|638×480px|thumb|left]]
+
+
+
+
+[НЕМАЄ ЗВУКУ].
+
+Переклад: О. Онищенко | редагування: О.Фідкевич.
+
+Coursera Global Translator Community.
+
+Або:
+
+[МУЗИКА].
+
+Перекладач: ol.onyshchenko| редактор: magesnitsa.
+
+Coursera Global Translator Community.
+
+Тобто себе ви записуєте **українською** мовою, а «Coursera Global Translator Community» - **англійською**, і, крім того, ви не зобов’язані вказувати своє справжнє ім’я, тому  можна підписуватися своїм ніком на Transifex.
+
+
+- У тих випадках (дивись тред: https://class.coursera.org/translations-001/forum/thread?thread_id=1036), **коли останній рядок** розлогий і **містить довге речення**, рекомендується:
+
+Наприклад:[[File:Signat.png|638×480px|thumb|left]]
+
+1. відмовитися від написання «Coursera Global Translator Community»; або
+1. відмовитися від підпису взагалі; або
+1. перенести підпис на перший рядок, якщо він містить тільки [НЕМАЄ ЗВУКУ], або [МУЗИКА], або [ДЯКУЮ] тощо.

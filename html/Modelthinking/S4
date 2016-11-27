@@ -1,0 +1,79 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ModelThinking:S4</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Multi-Criteria_Decision_Making"><span class="tocnumber">1</span> <span class="toctext">Multi-Criteria Decision Making</span></a></li>
+<li class="toclevel-1"><a href="#Spatial_Models"><span class="tocnumber">2</span> <span class="toctext">Spatial Models</span></a></li>
+<li class="toclevel-1"><a href="#Probability:_The_Basics"><span class="tocnumber">3</span> <span class="toctext">Probability: The Basics</span></a></li>
+<li class="toclevel-1"><a href="#Decision_trees"><span class="tocnumber">4</span> <span class="toctext">Decision trees</span></a></li>
+<li class="toclevel-1"><a href="#External_Resources"><span class="tocnumber">5</span> <span class="toctext">External Resources</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Multi-Criteria_Decision_Making">Multi-Criteria Decision Making</span></h1>
+<p>Multi-criterion decision making is a method allowing you to make a choice between several alternatives depending on a set of criteria. Examples: to choose a car you might look at its speed AND comfort and see if different car match your reference point on each of these 2 dimensions</p>
+<p>This method can be either:</p>
+<ul>
+<li>Qualitative: each criterion has the same weight</li>
+<li>Quantitative: each criterion has a different weight (eg. girl who prefers the lighter camera despite the zoom, screen are not as good as the other, heavier cameras)</li>
+</ul>
+<h1> <span class="mw-headline" id="Spatial_Models">Spatial Models</span></h1>
+<p>An easy way to visualise the result of applying the multi-criterion decision making method is by <em>mapping out</em> the position of the different alternatives on a graph where dimensions represent the different criteria. In that way, it is very easy to determine which alternative is best, as its <em>distance</em> to the <em>ideal point</em> is the smallest</p>
+<p>The model can be also used the other way round: determining the position of the <em>ideal point</em> by observing the preferences / choices made</p>
+<h1> <span class="mw-headline" id="Probability:_The_Basics">Probability: The Basics</span></h1>
+<code><pre>Axiom 1: Probability of an event is in the range [0,1]
+Axiom 2: Sum of probabilities of all possible events = 1
+Axiom 3: If B is a subset of A, then p(B)&lt;= p(A)
+</pre></code>
+<p>For each type of phenomenon you want to understand, there are several ways in which you can model them, and find out the probability of different events:</p>
+<ul>
+<li><p>Classical / Mathematical method
+Typical example is the <em>dice</em> example, where mathematics can tell you exactly what are the probabilities of certain events (e.g. p(1)=1/6, p(odd number)=1/2, p(n&lt;5)=2/3 etc.)</p></li>
+<li><p>Frequency method
+Estimating the probability through <em>frequency</em> is a method used to <em>estimate</em> the probability of an event by counting the statistics
+Assumptions: stationarity (we suppose the probability is stable through time)</p></li>
+<li><p>Subjective method
+Estimating the probability of each event, while making sure all 3 axioms are respected (counter example: flight attendant finishing her MBA)</p></li>
+<li><p>Modelisation
+<em>to be continued</em></p></li>
+</ul>
+<h1> <span class="mw-headline" id="Decision_trees">Decision trees</span></h1>
+<p>Decision trees are a simple and efficient way to facilitate decision making when several successive options have different probabilities.</p>
+<p>The method is to draw a tree of which each node represents a decision/alternative point, and each branch is an option. At the end of each branch you write the value (or payoff) of the corresponding option, and on the branch you write the probability of that option to occur. 
+You can then estimate the average payoff (mean) of each option by multiplying payoff x probability, and choose the option(s) which maximise value for you </p>
+<ul>
+<li><strong>Inferring probabilities and payoffs</strong></li>
+</ul>
+<p>Decision trees can help you infer probabilities and payoffs of certain event, by looking at other people (or even your own) decisions. This works because when you take a particular decision that means you assume certain probabilities or payoffs; </p>
+<ul>
+<li><strong>Value of information</strong></li>
+</ul>
+<p>Decision trees can also help you know what is the value of certain information like, say, knowing the probability of occurrence of a particular event (e.g. you miss the train, or there is a cashback next month on the car you want to buy). </p>
+<p>To assess the value of possessing this information (which will help you make the best choice) you have to:</p>
+<ol>
+<li>Calculate the value without the information</li>
+<li>Calculate the value with the information</li>
+<li>Calculate the difference between the previous two cases</li>
+</ol>
+<p>The decision trees in cases 1) and 2) have the same structure, but in 2) you add a first step which introduces the odds that the information you are being given is this or that.  In other words, the value of the information is related to the fact that we will receive it "before" our fist decision is made ("information" moves first), at which point we will have eliminated the associated uncertainty bearing on our decision, but, as we do not have the information yet, we still need to account for the odds associated with the possible "content" of the information we will receive (the outcomes of the "information's move"). </p>
+<h1> <span class="mw-headline" id="External_Resources">External Resources</span></h1>
+<p>Additional Material on Decision Analysis by Craig W. Kirkwood can be found at (<a rel="nofollow" class="external free" href="http://www.public.asu.edu/~kirkwood/">http://www.public.asu.edu/~kirkwood/</a>). In particular, for Decision Trees see (<a rel="nofollow" class="external free" href="http://www.public.asu.edu/~kirkwood/DAStuff/decisiontrees/index.html">http://www.public.asu.edu/~kirkwood/DAStuff/decisiontrees/index.html</a>), which expands on one of the recommended readings.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ModelThinking:S4&amp;oldid=3471">https://share.coursera.org/wiki/index.php?title=ModelThinking:S4&amp;oldid=3471</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

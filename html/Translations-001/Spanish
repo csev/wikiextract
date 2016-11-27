@@ -1,0 +1,79 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Translations-001:Spanish</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Página principal de traducciones al español: <a rel="nofollow" class="external text" href="https://class.coursera.org/translations-001/wiki/spanish">Trabajos en activo</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lo_que_debes_saber_antes_de_empezar_a_traducir"><span class="tocnumber">1</span> <span class="toctext">Lo que debes saber antes de empezar a traducir</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.C2.BFPuedo_entrar_a_Transifex_y_empezar_a_traducir_cualquier_cosa.3F"><span class="tocnumber">1.1</span> <span class="toctext">¿Puedo entrar a Transifex y empezar a traducir cualquier cosa?</span></a></li>
+<li class="toclevel-2"><a href="#GTC_Guidelines"><span class="tocnumber">1.2</span> <span class="toctext">GTC Guidelines</span></a></li>
+<li class="toclevel-2"><a href="#Consejos_y_Direcci.C3.B3n_para_la_Traducci.C3.B3n_al_Espa.C3.B1ol"><span class="tocnumber">1.3</span> <span class="toctext">Consejos y Dirección para la Traducción al Español</span></a></li>
+<li class="toclevel-2"><a href="#Gu.C3.ADa_del_Espa.C3.B1ol_.22Courseriano.22"><span class="tocnumber">1.4</span> <span class="toctext">Guía del Español "Courseriano"</span></a></li>
+<li class="toclevel-2"><a href="#.C2.BFC.C3.B3mo_puedo_sugerir_otros_cursos_para_que_sean_a.C3.B1adidos_a_la_lista_de_prioridades.3F"><span class="tocnumber">1.5</span> <span class="toctext">¿Cómo puedo sugerir otros cursos para que sean añadidos a la lista de prioridades?</span></a></li>
+<li class="toclevel-2"><a href="#.C2.BFC.C3.B3mo_puedo_reportar_traducciones_deficientes.3F"><span class="tocnumber">1.6</span> <span class="toctext">¿Cómo puedo reportar traducciones deficientes?</span></a></li>
+<li class="toclevel-2"><a href="#A.C3.BAn_tengo_algunas_preguntas.2C_.C2.BFqu.C3.A9_debo_hacer.3F"><span class="tocnumber">1.7</span> <span class="toctext">Aún tengo algunas preguntas, ¿qué debo hacer?</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lo_que_debes_saber_antes_de_empezar_a_traducir">Lo que debes saber antes de empezar a traducir</span></h1>
+<p><strong>¡Bienvenido a la <em>Global Translator Community</em> de Español! ¡Gracias por tu tiempo y tu dedicación!</strong></p>
+<p>Con el fin de evitar que el proceso de traducción se convierta en un caos, hemos decidido establecer ciertas pautas y lineamientos que deben ser tenidos en cuenta en el momento de realizar las traducciones de los cursos.  Antes de que empieces a traducir, te pedimos que dediques 10 minutos de tu tiempo a leer y entender las políticas que Coursera y tus "<em><a rel="nofollow" class="external text" href="https://class.coursera.org/translations-001/wiki/language-coordinators">Language Coordinators</a></em>" han trazado a fin de lograr un ambiente de cooperación adecuado.</p>
+<hr />
+<h3> <span class="mw-headline" id=".C2.BFPuedo_entrar_a_Transifex_y_empezar_a_traducir_cualquier_cosa.3F">¿Puedo entrar a Transifex y empezar a traducir cualquier cosa?</span></h3>
+<blockquote>
+  <p>¡Excelente pregunta! <strong>La respuesta es ¡NO!</strong> Con el fin de que el proceso de traducción funcione adecuadamente, Coursera y los <em>Language Coordinators</em> hemos establecido ciertas <em>normas de etiqueta</em> que la comunidad debe seguir. Dichas normas se encuentran claramente explicadas en los documentos que encontrarás más abajo.</p>
+</blockquote>
+<hr />
+<h3> <span class="mw-headline" id="GTC_Guidelines">GTC Guidelines</span></h3>
+<blockquote>
+  <p>Las <em><a rel="nofollow" class="external text" href="https://class.coursera.org/translations-001/wiki/guidelines">GTC Guidelines</a></em> son recomendaciones generales de Eli y de Sebastien acerca del proceso de nuestra comunidad, del proceso de traducción y del estilo que debe ser usado en nuestras traducciones. ¡Asegúrate de leer este documento antes de traducir tu primera palabra!</p>
+</blockquote>
+<hr />
+<h3> <span class="mw-headline" id="Consejos_y_Direcci.C3.B3n_para_la_Traducci.C3.B3n_al_Espa.C3.B1ol">Consejos y Dirección para la Traducción al Español</span></h3>
+<blockquote>
+  <p>Los <em>Language Coordinators</em> hemos elaborado una <a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/translations/language_pages/spanish/SpanishGTC_guidelines.pdf">guía completa</a> que habla sobre cómo utilizar laa plataforma <em>Transifex</em> para realizar traducciones, el proceso a seguir para realizar traducciones de alta calidad, la selección de revisores para los cursos y otra información de interés general.</p>
+</blockquote>
+<hr />
+<h3> <span class="mw-headline" id="Gu.C3.ADa_del_Espa.C3.B1ol_.22Courseriano.22">Guía del Español "Courseriano"</span></h3>
+<blockquote>
+  <p><em>¿Tú, vos, usted, vosotros, ustedes?</em> En un esfuerzo por tratar de homogeneizar las traducciones que los hispanohablantes de diferentes países están realizando, hemos decidido poner a tu disposición la <a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/translations/language_pages/spanish/SpanishGTC_espaNol_courseriano.pdf">Guía del Español Courseriano</a>. ¡Debes asegurarte de leer y entender esta guía antes de empezar a hacer tus traducciones!</p>
+</blockquote>
+<hr />
+<h3> <span class="mw-headline" id=".C2.BFC.C3.B3mo_puedo_sugerir_otros_cursos_para_que_sean_a.C3.B1adidos_a_la_lista_de_prioridades.3F">¿Cómo puedo sugerir otros cursos para que sean añadidos a la lista de prioridades?</span></h3>
+<blockquote>
+  <p><em>Coursera</em> tiene ciertas condiciones que son necesarias para que un curso sea elegible para ser traducido. Todos los cursos que están disponibles en nuestra lista de prioridades cumplen con tales requisitos. Si después de revisar la lista, deseas <strong>sugerir un nuevo curso</strong>, por favor dirígete a este <a rel="nofollow" class="external text" href="https://class.coursera.org/translations-001/forum/thread?thread_id=586">hilo en los foros</a> y haz tu sugerencia.</p>
+</blockquote>
+<hr />
+<h3> <span class="mw-headline" id=".C2.BFC.C3.B3mo_puedo_reportar_traducciones_deficientes.3F">¿Cómo puedo reportar traducciones deficientes?</span></h3>
+<blockquote>
+  <p>Para <em>Coursera</em> y para los <em>Language Coordinators</em> es importante mantener una alta calidad en las traducciones.  Estamos seguros que la inmensa mayoría de nuestros traductores están intentando hacer una buena labor. Pero también sabemos de ciertos usuarios que no alcanzan los estándares de calidad requeridos.</p>
+  <p>Por tal motivo, hemos creado un <a rel="nofollow" class="external text" href="https://class.coursera.org/translations-001/forum/thread?thread_id=499">hilo en los foros</a> que le permitirá a la comunidad reportar aquellos usuarios cuyas traducciones son deficientes.  Los <em>Language Coordinators</em> examinaremos los reportes, contactaremos al usuario respectivo y tomaremos las medidas necesarias.</p>
+  <p>De antemano, te agradecemos tu ayuda para mantener impecables nuestras traducciones al Español.</p>
+</blockquote>
+<hr />
+<h3> <span class="mw-headline" id="A.C3.BAn_tengo_algunas_preguntas.2C_.C2.BFqu.C3.A9_debo_hacer.3F">Aún tengo algunas preguntas, ¿qué debo hacer?</span></h3>
+<blockquote>
+  <p>Si has leído los documentos anteriores y todavía tienes algún tipo de pregunta, te invitamos a que te dirijas al <a rel="nofollow" class="external text" href="https://class.coursera.org/translations-001/forum/list?forum_id=10007">foro de la comunidad de traducción al Español</a> y hagas tu pregunta allí. Los <em>Language Coordinators</em> estamos continuamente monitoreando dicho foro y trataremos de dar respuesta pronta a tus inquietudes.</p>
+</blockquote>
+<hr />
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 10/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Translations-001:Spanish&amp;oldid=30335">https://share.coursera.org/wiki/index.php?title=Translations-001:Spanish&amp;oldid=30335</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

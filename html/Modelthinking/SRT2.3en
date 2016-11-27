@@ -1,0 +1,823 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ModelThinking:SRT2.3en</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Added here because it was available but is now missing. Save as *.srt and load into video player (tested with VLC).</p>
+<pre>
+1
+00:00:00,000 --&gt; 00:00:04,957
+Hi. In this lecture, we're gonna introduce
+something called measure of dissimilarity,
+
+2
+00:00:04,957 --&gt; 00:00:08,762
+an index of dissimilarity. And we're gonna
+use that to look at different cities and
+
+3
+00:00:08,762 --&gt; 00:00:12,521
+different regions and ask how segregated
+they are. So remember in the last lecture,
+
+4
+00:00:12,521 --&gt; 00:00:16,097
+we looked at [inaudible] segregation
+model. And what we saw is that, people who
+
+5
+00:00:16,097 --&gt; 00:00:19,581
+had fairly tolerant thresholds for, you
+know, living with people of different
+
+6
+00:00:19,581 --&gt; 00:00:23,065
+income groups or different races still
+ended up being segregated. And so the
+
+7
+00:00:23,065 --&gt; 00:00:26,595
+result it, when we look at cities across
+the United States, we see substantial
+
+8
+00:00:26,595 --&gt; 00:00:30,217
+segregation by income, we see substantial
+segregation by race, and we wanna know,
+
+9
+00:00:30,217 --&gt; 00:00:33,831
+what we wanna do here is sort of. Figure
+out, can we construct some kind of
+
+10
+00:00:33,831 --&gt; 00:00:37,666
+measure, some way of categorizing
+numerically, how segregated a particular
+
+11
+00:00:37,666 --&gt; 00:00:41,553
+city is along a particular.&#160;?Cause when
+you have those measures, right, that
+
+12
+00:00:41,553 --&gt; 00:00:45,756
+allows us to make, you know, better sense
+of data. Like, to use and understand data
+
+13
+00:00:45,756 --&gt; 00:00:49,525
+better. And that's one reason why we
+model, so. To get started, let's remind
+
+14
+00:00:49,525 --&gt; 00:00:53,391
+ourselves again of just what these
+patterns look like. So this is the city of
+
+15
+00:00:53,391 --&gt; 00:00:57,308
+New York. And remember that regions that
+are depicted in red are predominantly
+
+16
+00:00:57,308 --&gt; 00:01:01,274
+Caucasian. Regions that are depicted in
+blue are predominantly African-American.
+
+17
+00:01:01,274 --&gt; 00:01:04,939
+Yellow, predominantly Latino, and green,
+predominantly Asian. So, New York is
+
+18
+00:01:04,939 --&gt; 00:01:08,805
+interesting, 'cause it's just, like, these
+big chunks of different racial groups
+
+19
+00:01:08,805 --&gt; 00:01:12,722
+spread out over this city. Not all cities
+look the same way. Here's Los Angeles,
+
+20
+00:01:12,722 --&gt; 00:01:16,638
+right? Los Angeles has this area called
+the valley, which is mostly white. South
+
+21
+00:01:16,638 --&gt; 00:01:19,882
+Central. Right? Which is mostly
+African-American. And then over in
+
+22
+00:01:19,882 --&gt; 00:01:23,891
+Monterey Park, it's mostly Asian. If you
+look at Houston, again, you see all these
+
+23
+00:01:23,891 --&gt; 00:01:27,952
+sort of interesting patterns, and how
+people are racially distributed across the
+
+24
+00:01:27,952 --&gt; 00:01:31,860
+city. And if you look at DC, it's almost
+like there's a dividing line, right? To
+
+25
+00:01:31,860 --&gt; 00:01:35,615
+the east, most people are African
+American. And to the west, most people are
+
+26
+00:01:35,615 --&gt; 00:01:39,371
+Caucasian. So, different cities look
+different ways. What we'd like to do is
+
+27
+00:01:39,371 --&gt; 00:01:43,534
+have some sort of number for representing
+this racial disparity. Okay, now remember
+
+28
+00:01:43,534 --&gt; 00:01:47,748
+the same is true for income. So we can use
+the same for income disparity. And if you
+
+29
+00:01:47,748 --&gt; 00:01:51,810
+look at a city like Chicago, what you see
+is that there's red represents wealthy
+
+30
+00:01:51,810 --&gt; 00:01:55,720
+people, so there's wealthy people in this
+area known as the Gold Coast. In the
+
+31
+00:01:55,720 --&gt; 00:01:59,579
+center of the city, it's mostly poor
+people. And then to the North and to the
+
+32
+00:01:59,579 --&gt; 00:02:03,540
+West in the suburbs, right, it's called
+collar counties because it looks like a
+
+33
+00:02:03,540 --&gt; 00:02:07,181
+collar, these again are wealthy people.
+Again, New York. Remember, the red dots
+
+34
+00:02:07,181 --&gt; 00:02:10,835
+here represent rich people. People who
+make more than $200,000 a year. All around
+
+35
+00:02:10,835 --&gt; 00:02:14,628
+Central Park here, you see wealthy people.
+And as soon as you move further out from
+
+36
+00:02:14,628 --&gt; 00:02:18,189
+the city, right, you see poor people. So
+it's interesting. New York is sort of a
+
+37
+00:02:18,189 --&gt; 00:02:21,612
+little bit different than Chicago, in
+that, right in the center of New York,
+
+38
+00:02:21,612 --&gt; 00:02:25,219
+there's a lot of wealth. And then as you
+move out, it gets poor. Chicago sort of
+
+39
+00:02:25,219 --&gt; 00:02:29,048
+looks the other way. So what we want is we
+want some measure for. How segregated a
+
+40
+00:02:29,048 --&gt; 00:02:33,238
+city is. So to construct, we're going to
+construct a very simple measure called the
+
+41
+00:02:33,238 --&gt; 00:02:37,478
+index of dissimilarity and we're going to
+do it with just two types of people, rich
+
+42
+00:02:37,478 --&gt; 00:02:41,565
+people and poor people. So I'm going to
+represent rich people with blue dots and
+
+43
+00:02:41,565 --&gt; 00:02:45,550
+poor people with yellow dots. Now I'm
+going to place these people on a grid, so
+
+44
+00:02:45,550 --&gt; 00:02:49,638
+I'm just going, a 24 city block area here
+and in each block I'm going to put ten
+
+45
+00:02:49,638 --&gt; 00:02:54,337
+people, all right? So. Let's start out,
+and let's suppose in twelve of these
+
+46
+00:02:54,337 --&gt; 00:03:00,028
+blocks right here, I put all rich people.
+And in six of these blocks, I put all poor
+
+47
+00:03:00,028 --&gt; 00:03:05,440
+people. And in six of these blocks, I put
+half poor, half rich. So what does that
+
+48
+00:03:05,440 --&gt; 00:03:10,500
+give me, total? Well, remember I said,
+I've got twelve. Blocks here and I've got
+
+49
+00:03:10,500 --&gt; 00:03:15,244
+ten people per block. That's 120 rich
+people here. And I've got six blocks here
+
+50
+00:03:15,244 --&gt; 00:03:19,745
+but there's only five rich people per
+block and five poor, so that's 30. So
+
+51
+00:03:19,745 --&gt; 00:03:24,185
+120+30=150. So we've got 150 rich people
+and then I've got 90 poor people. So 240
+
+52
+00:03:24,185 --&gt; 00:03:28,443
+people total; 150 rich, 90 poor. And I
+want some way of representing how
+
+53
+00:03:28,443 --&gt; 00:03:33,492
+segregated are these city blocks. Now the
+interesting thing is these districts here,
+
+54
+00:03:33,492 --&gt; 00:03:38,540
+these green ones, are less segregated than
+these blue ones and these yellow ones. So
+
+55
+00:03:38,540 --&gt; 00:03:43,063
+I want some measure that will capture that
+fact. Alright, so how do I do it? Well,
+
+56
+00:03:43,063 --&gt; 00:03:47,047
+what I'm gonna do is I'm gonna do this.
+I'm gonna let B be the number of blue
+
+57
+00:03:47,047 --&gt; 00:03:51,135
+people on a block, little B. And let big B
+be the number of blue people total. So
+
+58
+00:03:51,135 --&gt; 00:03:55,377
+then if I take little b over big B, that's
+gonna be, tell me the percentage of blue
+
+59
+00:03:55,377 --&gt; 00:03:59,413
+people in that block, relative to the
+total number of blue people. So it's just
+
+60
+00:03:59,413 --&gt; 00:04:03,656
+gives me some sense of the proportion of
+the total number of blue people that are
+
+61
+00:04:03,656 --&gt; 00:04:07,691
+in that block. And similarly, little y
+over big Y's giving me the proportion of
+
+62
+00:04:07,691 --&gt; 00:04:11,727
+yellow people in that block. Now, why do I
+wanna do that? Why do I wanna look at
+
+63
+00:04:11,727 --&gt; 00:04:15,975
+these two numbers? Because, if I take the
+difference between. Little B over big B
+
+64
+00:04:15,975 --&gt; 00:04:20,877
+and little Y over little Y, that's gonna
+tell me how distorted the distribution is
+
+65
+00:04:20,877 --&gt; 00:04:25,300
+in that particular block. Let me be more
+precise here. Suppose that I had a
+
+66
+00:04:25,300 --&gt; 00:04:30,223
+district that had five blue and three
+yellow. And even more precise. Suppose I
+
+67
+00:04:30,223 --&gt; 00:04:35,421
+have a district that has five blue and
+three yellow and I wanna add, this'll be a
+
+68
+00:04:35,421 --&gt; 00:04:40,555
+perfectly representative district. What
+that would mean is that five over 150 of,
+
+69
+00:04:40,555 --&gt; 00:04:46,073
+there's 150 blue people and five of those
+150 people live in this particular block
+
+70
+00:04:46,073 --&gt; 00:04:50,785
+so, five over 150 equals one over 30, so
+one out of every 30. Blue people lies
+
+71
+00:04:50,785 --&gt; 00:04:55,029
+inside that block. Now there's 90 yellow
+people and three out of the 90 yellow
+
+72
+00:04:55,029 --&gt; 00:04:59,169
+people live in that block so one out of
+30. Yellow people, or poor people live
+
+73
+00:04:59,169 --&gt; 00:05:03,404
+inside that bloc. So one over 30, minus
+one over 30 equals zero. So what we get is
+
+74
+00:05:03,404 --&gt; 00:05:07,691
+that we get a perfectly represented block
+between rich and poor. What I'm talking
+
+75
+00:05:07,691 --&gt; 00:05:11,926
+blue and yellow. We have a difference of
+zero, but if we get relatively more blue,
+
+76
+00:05:11,926 --&gt; 00:05:16,161
+or relatively more yellow, [inaudible] I'm
+taking the absolute value, that's what
+
+77
+00:05:16,161 --&gt; 00:05:20,131
+these two lines mean right here, the
+absolute value. It means that I'm gonna
+
+78
+00:05:20,131 --&gt; 00:05:23,730
+get a positive number, something have
+more, it's gonna represent more
+
+79
+00:05:23,730 --&gt; 00:05:28,818
+segregation. So let's take a look at our
+particular. For example, this block right
+
+80
+00:05:28,818 --&gt; 00:05:34,489
+here is all blue. Right? And there's ten.
+Blue people in there. Now, there's 150
+
+81
+00:05:34,489 --&gt; 00:05:39,741
+blue people total. So ten out of 150 blue
+people lie in the block. There's no, no
+
+82
+00:05:39,741 --&gt; 00:05:44,992
+yellow people, no poor people in that
+block. So I've got ten over 150 minus zero
+
+83
+00:05:44,992 --&gt; 00:05:50,111
+over 90. So that equals ten over 150. I
+can get rid of the zeros, it equals 115.
+
+84
+00:05:50,111 --&gt; 00:05:55,296
+So in every one of these blocks, my index
+is gonna be 1/15. Now in these yellow
+
+85
+00:05:55,296 --&gt; 00:06:00,548
+blocks right here, there's no blue people,
+there's no rich people. So that's zero
+
+86
+00:06:00,548 --&gt; 00:06:05,180
+over 150. But there's ten. Yellow people
+or poor people. So that's ten over 90. So
+
+87
+00:06:05,180 --&gt; 00:06:09,637
+there's way too many yellow people. Then
+there should be proportionally. And so we
+
+88
+00:06:09,637 --&gt; 00:06:13,763
+take zero minus ten over 90, I get
+one-ninth, right? Naturally I've got these
+
+89
+00:06:13,763 --&gt; 00:06:18,055
+absolute value signs here, so everything
+becomes positive. So, [inaudible], these
+
+90
+00:06:18,055 --&gt; 00:06:21,961
+districts, these blocks are one-ninth.
+Then finally, I've got these green
+
+91
+00:06:21,961 --&gt; 00:06:26,362
+districts. Now remember, these have five
+blue, so that's five over 150. And they've
+
+92
+00:06:26,362 --&gt; 00:06:30,709
+got five yellow, so that's five over 90,
+right? And I take the absolute value. Now,
+
+93
+00:06:30,709 --&gt; 00:06:35,098
+what do I get there? Well, that's one over
+30. Right? Minus one over eighteen, so
+
+94
+00:06:35,098 --&gt; 00:06:39,693
+that's, this is complicated. And we're
+going to find out that this is equal to
+
+95
+00:06:39,693 --&gt; 00:06:44,919
+one over. 45. Okay? So this is one over
+45, right? So what we get then is every
+
+96
+00:06:44,919 --&gt; 00:06:50,532
+one of those ten blue districts the index
+to dissimilarity is one over fifteen.
+
+97
+00:06:50,532 --&gt; 00:06:56,042
+Every one of the yellow districts the
+index to dissimilarity is one ninth. And
+
+98
+00:06:56,042 --&gt; 00:07:01,090
+every one of the districts that's five
+blue and five yellow is one over 45. Okay,
+
+99
+00:07:01,090 --&gt; 00:07:05,948
+so how do we figure out how segregated
+this whole region is? What we do is we
+
+100
+00:07:05,948 --&gt; 00:07:11,059
+say, we've got six districts or blocks
+here that have a dissimilarity of one over
+
+101
+00:07:11,059 --&gt; 00:07:15,665
+45. So we needed six times one over 45.
+And we've got six here that have a
+
+102
+00:07:15,665 --&gt; 00:07:21,100
+dissimilarity of one-ninth. So we're gonna
+add six times one-ninth. That happened to
+
+103
+00:07:21,100 --&gt; 00:07:27,064
+somewhat of 1/15th, so we get twelve
+times. One over fifteen. And if we add all
+
+104
+00:07:27,064 --&gt; 00:07:31,935
+that up. We get 72 over 45. So, 72 over 45
+is, that's our tentative measure. We're
+
+105
+00:07:31,935 --&gt; 00:07:36,644
+gonna have to change this a little bit,
+'cause what does that mean? What does 72
+
+106
+00:07:36,644 --&gt; 00:07:40,959
+over 45 mean? Is that bad, is that good?
+So. Let's, let's go through them. Let's
+
+107
+00:07:40,959 --&gt; 00:07:45,450
+sort of put our measure through the paces.
+So whenever you construct a measure, what
+
+108
+00:07:45,450 --&gt; 00:07:49,886
+you're trying to is do some extreme cases
+to see how well it works. So, let's start
+
+109
+00:07:49,886 --&gt; 00:07:54,268
+out with a simpler case, to see if this
+measure sorta makes sense. So now I've got
+
+110
+00:07:54,268 --&gt; 00:07:58,705
+four blocks that are four blue, four all
+yellow. And here's another case where I've
+
+111
+00:07:58,705 --&gt; 00:08:03,303
+got all eight of them are 50/50. And let's
+compute our index of dissimilarity in each
+
+112
+00:08:03,303 --&gt; 00:08:07,469
+of these cases. So let's start with this
+one. Well, in each one of these blocks,
+
+113
+00:08:07,469 --&gt; 00:08:12,631
+there's gonna be five. Blue, right, and
+five yellow. The total number of blue and
+
+114
+00:08:12,631 --&gt; 00:08:17,878
+yellow, right, since I've got eight
+blocks, I've got 80 people. So that means
+
+115
+00:08:17,878 --&gt; 00:08:23,552
+there's gonna be 40 blue, and 40 yellow.
+So for each one of these blocks, they get
+
+116
+00:08:23,552 --&gt; 00:08:29,225
+five over 40 minus five over 40, which is
+zero. So every single block contributes
+
+117
+00:08:29,225 --&gt; 00:08:34,039
+zero. And my total index of dissimilarity,
+the similarity is zero. So that's great,
+
+118
+00:08:34,039 --&gt; 00:08:38,617
+right? Because that means that if I, if
+everybody was perfectly mixed, my index
+
+119
+00:08:38,617 --&gt; 00:08:43,255
+would be zero. So it seems like it's a
+pretty good index. But let's go back and
+
+120
+00:08:43,255 --&gt; 00:08:48,195
+look at this other case. So now, I've got
+this case where I've got. You know, four
+
+121
+00:08:48,195 --&gt; 00:08:54,338
+that are all yellow, and four that are all
+blue. So, once again, I've got 40 yellow,
+
+122
+00:08:54,338 --&gt; 00:08:59,943
+right, and 40 blue. But now we've gotta
+think, for each one of these yellow
+
+123
+00:08:59,943 --&gt; 00:09:06,010
+districts, what do I have? I've got zero
+over 40 blue, minus five over 40 yellows.
+
+124
+00:09:06,010 --&gt; 00:09:10,717
+Right? I'm sorry. Ten. Ten. So we've got
+ten yellows in each one so ten over 40
+
+125
+00:09:10,717 --&gt; 00:09:15,425
+yellows. So what that means is that's
+gonna be equal to one-fourth. And since
+
+126
+00:09:15,425 --&gt; 00:09:20,257
+all these are the same I'm gonna get a
+fourth, a fourth, a fourth, and so on. And
+
+127
+00:09:20,257 --&gt; 00:09:24,903
+also, for the blues, right? By the same
+logic. So every single one of these is
+
+128
+00:09:24,903 --&gt; 00:09:29,932
+gonna be a value of one-fourth. When I add
+all those up I get two. Right? I don't get
+
+129
+00:09:29,932 --&gt; 00:09:34,388
+one, I get two. So, now I've got a bit of
+an issue. So when, if people are perfectly
+
+130
+00:09:34,388 --&gt; 00:09:38,343
+segregated, I get two. And if they're
+perfectly mixed, I get zero. So this
+
+131
+00:09:38,343 --&gt; 00:09:42,798
+suggest I've got a pretty good measure
+here. But what I probably want to do is I
+
+132
+00:09:42,798 --&gt; 00:09:48,945
+wanna divide it by two. Right? If I divide
+it by two, then if I get. If I'm perfectly
+
+133
+00:09:48,945 --&gt; 00:09:53,665
+mixed. You get a score of zero. And if
+you're perfectly segregated, you get a
+
+134
+00:09:53,665 --&gt; 00:09:58,503
+score of one, alright? So, if I go to this
+case, where there's 40 rich and 40 poor
+
+135
+00:09:58,503 --&gt; 00:10:03,341
+and they're perfectly mixed, my score is
+gonna be zero, right? Because I get five
+
+136
+00:10:03,341 --&gt; 00:10:08,057
+black and five yellow in each district.
+Woops, this should be a five, right? And
+
+137
+00:10:08,057 --&gt; 00:10:12,834
+so I get a score of zero. And when I go
+the other one, I get a score of one. Now,
+
+138
+00:10:12,834 --&gt; 00:10:17,672
+when I look at my thing here, when I get
+72 over 45, which didn't make any sense.
+
+139
+00:10:17,672 --&gt; 00:10:22,282
+Now, that's 72 over 90. Right. And if I
+divide this by nine, that's going to be.8,
+
+140
+00:10:22,282 --&gt; 00:10:26,069
+so 80%. So in some sense this is 80
+percent segregation which seems pretty
+
+141
+00:10:26,069 --&gt; 00:10:30,846
+segregated. Now we can go back and we can
+look at our cities, okay. So now we've got
+
+142
+00:10:30,846 --&gt; 00:10:35,623
+this measure. We can go to each one of our
+cities, this is going to take a lot more
+
+143
+00:10:35,623 --&gt; 00:10:40,458
+work, but we could plug in all that census
+data and we could say how segregated are
+
+144
+00:10:40,458 --&gt; 00:10:45,461
+they. What we can do is we can look at
+Philadelphia. So now we can go back. And
+
+145
+00:10:45,461 --&gt; 00:10:49,804
+we can look at our census data, and we can
+look at a city like Philadelphia. We can
+
+146
+00:10:49,804 --&gt; 00:10:53,989
+ask how segregated [inaudible], is it? And
+notice, look at what he hit, .8, exactly
+
+147
+00:10:53,989 --&gt; 00:10:58,226
+the same as our example. So this tells us
+the score in Philadelphia is .8. Now, if
+
+148
+00:10:58,226 --&gt; 00:11:02,145
+you look at this map and say, how
+segregated is it? Now we have a score, and
+
+149
+00:11:02,145 --&gt; 00:11:05,853
+now we can do things like compare
+Philadelphia to Detroit. So remember,
+
+150
+00:11:05,853 --&gt; 00:11:09,984
+Detroit also looks segregated. When we do
+Detroit, even though it looks sort of
+
+151
+00:11:09,984 --&gt; 00:11:13,903
+segregated, the score is only .6. So
+Detroit is actually substantially less
+
+152
+00:11:13,903 --&gt; 00:11:18,140
+segregated than Philadelphia, even though,
+look. If you look at these two pictures,
+
+153
+00:11:18,140 --&gt; 00:11:22,165
+here's Philadelphia. And here's Detroit,
+it's very hard to tell the difference
+
+154
+00:11:22,165 --&gt; 00:11:26,066
+between the two. Okay, so what have we
+learned in this lecture? We've learned
+
+155
+00:11:26,066 --&gt; 00:11:30,384
+that, just, we can construct a very simple
+measure called the index of dissimilarity.
+
+156
+00:11:30,384 --&gt; 00:11:34,598
+And by using that measure, we can compare
+how segregated different cities are. And
+
+157
+00:11:34,598 --&gt; 00:11:38,604
+now, once we've got this measure in our
+pocket, right, we can use it to measure
+
+158
+00:11:38,604 --&gt; 00:11:42,349
+segregation by race, segregation by
+income. And all sorts of segregations.
+
+159
+00:11:42,349 --&gt; 00:11:46,511
+It's a really useful tool to help us sort
+of take data and understand the world.
+
+160
+00:11:46,511 --&gt; 00:11:47,448
+Alright, thank you.
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ModelThinking:SRT2.3en&amp;oldid=27531">https://share.coursera.org/wiki/index.php?title=ModelThinking:SRT2.3en&amp;oldid=27531</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

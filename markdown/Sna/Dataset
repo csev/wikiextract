@@ -1,0 +1,33 @@
+As we continue to explore network analysis applications throughout this course, you may find that you want to create your own datasets and/or convert data you already have into a form suitable for network analysis and visualization tools such as Gephi, Guess, etc. While preparing network datasets often requires programming, there are some options immediately avaialble to those without a programming background.
+
+To return to the SNA Course Wiki, click [here](https://share.coursera.org/wiki/index.php/Sna:Main)
+
+##Gephi
+
+For starters, you can directly import data into Gephi via CSV format, which is a file format (i.e. "comma separated value") commonly available in spreadsheet programs such as Excel and Openoffice/Libreoffice Calc. 
+
+If you already have data that can be expressed in terms of nodes and edges (Gephi refers to this as an "edge table"), all you need to do is create "Source" and "Target" column headers at the top of your CSV file to enable Gephi to import it. This method effectively allows you to quickly transform Excel data to network data without additional programming, scripting or munging.
+
+For detailed instructions on how to import Excel/CSV data into Gephi, you may refer to the following documentation:
+
+* [Gephi - Spreedsheet (Excel) Import](https://gephi.org/users/supported-graph-formats/spreadsheet/)
+
+* [Gephi - Import CSV Data Manual](http://wiki.gephi.org/index.php/Import_CSV_Data)
+
+Here's some Gephi sample Datasets:
+
+* [Gephi - Sample Datasets](http://wiki.gephi.org/index.php/Datasets)
+
+##NodeXL
+
+Some course participants using Windows have recommended NodeXL, which a free, open-source template for MS Excel 2007/2010 that allows you to create network visualizations.
+
+To read more about NodeXL and/or download this software, please check out the following link:
+
+* [NodeXL](http://nodexl.codeplex.com/)
+
+##Network Data Management
+
+Stay tuned for more information on how to readily create and transform data into formats available for subsequent network analysis.
+
+&lt;&lt;&nbsp;[[Sna:Main|Social Network Analysis]]

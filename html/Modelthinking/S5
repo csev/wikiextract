@@ -1,0 +1,166 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ModelThinking:S5</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Thinking_Electrons_.285.1.29"><span class="tocnumber">1</span> <span class="toctext">Thinking Electrons (5.1)</span></a></li>
+<li class="toclevel-1"><a href="#Rational_Actor_Model_.285.2.29"><span class="tocnumber">2</span> <span class="toctext">Rational Actor Model (5.2)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#When_do_we_see_rationality.3F"><span class="tocnumber">2.1</span> <span class="toctext">When do we see rationality?</span></a></li>
+<li class="toclevel-2"><a href="#Why_assume_rationality_when_it_isn.27t_the_case_very_often_.28when_modeling_humans.29.3F"><span class="tocnumber">2.2</span> <span class="toctext">Why assume rationality when it isn't the case very often (when modeling humans)?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Behavior-Based_Models_.285.3.29"><span class="tocnumber">3</span> <span class="toctext">Behavior-Based Models (5.3)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Types_of_Biases"><span class="tocnumber">3.1</span> <span class="toctext">Types of Biases</span></a></li>
+<li class="toclevel-2"><a href="#Lots_of_other_types_of_biases"><span class="tocnumber">3.2</span> <span class="toctext">Lots of other types of biases</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Rule_Based_Models_.285.4.29"><span class="tocnumber">4</span> <span class="toctext">Rule Based Models (5.4)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Types_of_Rules"><span class="tocnumber">4.1</span> <span class="toctext">Types of Rules</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Fixed_Decision_Rules"><span class="tocnumber">4.1.1</span> <span class="toctext">Fixed Decision Rules</span></a></li>
+<li class="toclevel-3"><a href="#Adaptive_Rules"><span class="tocnumber">4.1.2</span> <span class="toctext">Adaptive Rules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Why_Model_people_using_Rules.3F"><span class="tocnumber">4.2</span> <span class="toctext">Why Model people using Rules?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#When_Does_Behavior_Matter.3F_.285.5.29"><span class="tocnumber">5</span> <span class="toctext">When Does Behavior Matter? (5.5)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Does_it_matter_what_model_we_use.3F"><span class="tocnumber">5.1</span> <span class="toctext">Does it matter what model we use?</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Two_Sided_Market"><span class="tocnumber">5.1.1</span> <span class="toctext">Two Sided Market</span></a></li>
+<li class="toclevel-3"><a href="#Race_to_the_Bottom_Game"><span class="tocnumber">5.1.2</span> <span class="toctext">Race to the Bottom Game</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Thinking_Electrons_.285.1.29">Thinking Electrons (5.1)</span></h1>
+<p>In a <em>decision</em> or a <em>game</em> situation, agents can behave according to 1 of 3 different models: <em>rational</em>, <em>behavior-based</em>, or <em>rule-based</em>. </p>
+<ul>
+<li><p>Decision - objective depends on only your own actions</p></li>
+<li><p>Game - objective depends on actions of others</p></li>
+</ul>
+<p>In a <em>decision</em> situation (e.g. market place with buyers &amp; sellers), the choice of the model doesn't make much difference in the result. </p>
+<p>In a <em>game</em> situation (e.g. race to the bottom game), the choice of the model changes the result: rational (R=0), behavior-based (R=50, or R= 33, or R=22, depending if you expect others to all choose 50, or you think other people too will think like you and then guess 33 etc.)</p>
+<h1> <span class="mw-headline" id="Rational_Actor_Model_.285.2.29">Rational Actor Model (5.2)</span></h1>
+<ul>
+<li>Rational Agents have an <em>objective function</em>, and will choose the rational solution to maximize their <em>objective</em> or <em>utility</em> function. </li>
+</ul>
+<p>This function describes what is the optimal situation for them according to different parameters (e.g. consumer will maximize for example leisure (L) and consumption (C) according to let's say a square root function&#160;: Utility (U)= sqrt (L*C))</p>
+<p>It is a weakness of the rational-actor model that it assumes each actor has limitless information on which to base a rational decision. </p>
+<h3> <span class="mw-headline" id="When_do_we_see_rationality.3F">When do we see rationality?</span></h3>
+<ul>
+<li>When the stakes are large (e.g. large amount of money to lose or gain) </li>
+<li>Repeated (so people learn)</li>
+<li>Group decisions (with more people, less likely to be irrational in general)</li>
+<li>When the problems are easy (when they aren't complex)</li>
+</ul>
+<h3> <span class="mw-headline" id="Why_assume_rationality_when_it_isn.27t_the_case_very_often_.28when_modeling_humans.29.3F">Why assume rationality when it isn't the case very often (when modeling humans)?</span></h3>
+<p><strong>Roger Miason</strong> - Came up with concept of mechanism design. Makes the argument that rational behavior is an important benchmark, because it is unique and testable. It is very easily to solve for in mathematical models to find the optimal point which we then assume to be the rational decision. Contrasted to modeling irrationality there are many ways to be irrational and it is hard to then say how someone will react irrationally. It also could be that the model does start off irrationality but moves to rationality as people learn. Finally even if people make mistakes, you'll see the overall behavior be rational e.g. some spending too much, others spending too little.</p>
+<h1> <span class="mw-headline" id="Behavior-Based_Models_.285.3.29">Behavior-Based Models (5.3)</span></h1>
+<p>Behavior Models are critical of the rational actors model. </p>
+<p>This is because the behavior-based model treats actors as acting according to behaviors. Many observations in laboratories and in data show that people deviate from rational behavior. Additionally there is evidence in neuroscience that the way the human brain is "wired" can cause these irrational behaviors. In some cases, a rational-actor model is adjusted by allowing agents to deviate from the rational behavior, due to different cognitive biases. </p>
+<p>Daniel Kahneman - Psychologist who won a noble piece prize in economics for his work on how people significantly differ from the rational actors model. In his book "Thinking Fast and Slow" he makes the argument that when thinking fast we act more in the behavior/emotional model, when we think slow we act more in the rational model. </p>
+<p>Richard H Thaler and Cass R Sunstein - In their book "Nudge" argue that these biases have real implications for policy and how we construct them because these biases are systemic. </p>
+<ul>
+<li><strong>Prospect Theory</strong></li>
+</ul>
+<p>People tend to limit their exposure to risk, and would rather take the solution which is more certain in terms of payoff, although <em>statistically</em> it is not optimal. e.g. between option 1: 50% chance to win 1M$ and 50% chance to loose 0,1M$ and option 2: 50% chance to win $1000 and 50% chance to win 0, people would choose option 2. </p>
+<p>As the risks get bigger, people tend to be risk adverse.</p>
+<h3> <span class="mw-headline" id="Types_of_Biases">Types of Biases</span></h3>
+<ul>
+<li><strong>Hyperbolic Discounting</strong></li>
+</ul>
+<p>The perception of discounting fades out with time. Example: between $1000 today and $1005 tomorrow often it is found that one would pick $1000, but between $1000 in a year and 1005$ in a year + 1 day people would pick $1005, although in both cases the current value is higher for the second alternative ($1005).</p>
+<ul>
+<li><strong>Status Quo Bias</strong></li>
+</ul>
+<p>People tend to limit the impact on current situation, and can be tempted to choose the solution which is closer to the current situation. </p>
+<p>When taking an action to change from the default, people tend to choose the default. E.g In Europe some countries have and opt out of organ donation on driver license forms, and others have an opt in to organ donation. Those that have the opt-out have approximately 90% of those who are drivers as organ donors while those that have an opt-in (example given being Britain) have something like 25%. This is an example of sticking with the default or status quo. </p>
+<ul>
+<li><strong>Base-Rate Bias</strong></li>
+</ul>
+<p>People can choose a solution which is close to a figure/result they have in mind at the moment they take the decision (e.g. pick a figure close to the last 2 digits of their phone number, if they just been asked their phone number)</p>
+<h3> <span class="mw-headline" id="Lots_of_other_types_of_biases">Lots of other types of biases</span></h3>
+<ul>
+<li><p>WEIRD (<em>W</em>estern <em>E</em>ducated <em>I</em>ndustrialzed <em>R</em>ich <em>D</em>emocratic) - Lots of studies are done on people who fit this environment. Do these behavior studies show up in other populations where people are of different cultures/environments?</p></li>
+<li><p>People Learn - How strong are these biases through repeat iteration and their ability to understand the problem and therefore may start acting rationally.</p></li>
+<li><p>Computationally Difficult - intensive to include these complicated biases in a model</p></li>
+</ul>
+<p><strong>What to choose: rational, behavior-based, rule-based&#160;?</strong></p>
+<p>How to think about this, how to model? Assume rationality. Then determine what is the list of documented biases of people are. What are relevant to this model? Then look out into the world and data and look at how people are behaving, does it fit the model? If there is reason to believe that a bias is effecting things, then include them in the model.</p>
+<h1> <span class="mw-headline" id="Rule_Based_Models_.285.4.29">Rule Based Models (5.4)</span></h1>
+<p>Assume that people follow some rule based behavior when constructing model. e.g. For instance in the Schelling Model, we saw that people would move based on the percentage of people that were similar to them falling below some threshold. The standing ovation model is another similar. </p>
+<p>We can contrast this to a behavior based model, where people have biases, or rational behavior based model, where people act based on an optimal decision. </p>
+<h3> <span class="mw-headline" id="Types_of_Rules">Types of Rules</span></h3>
+<ul>
+<li><p>Fixed - follow the same rule no matter what</p></li>
+<li><p>Adaptive - rule changes based on the context of what is going on, information. </p></li>
+</ul>
+<p>These can be applied to the <em>decision</em> and <em>game</em> based models where decisions are made only on your own choices only or decisions are based on the decisions of others, respectfully.</p>
+<h4> <span class="mw-headline" id="Fixed_Decision_Rules">Fixed Decision Rules</span></h4>
+<p>An example of a fixed decision rule would be a random choice rule. Where you assume people completely random choices (clearly this contrasts with the rational model). Another would be the idea that people take the most direct route. In taking the most direct path, it may take a bit longer to get to your destination, but you get there. Clearly this isn't the most optimal but it is a good rule that works with the objective of getting to your destination. </p>
+<p>Fixed Strategies - with a strategy your payoff depends on what other people do. E.g. Inherited land between you and your brother and you want to divide it. You could just divide it evenly. However you could try a <strong>"tit for tat"</strong> model. </p>
+<p>Moore Machines - In a tit for tat model, you can describe it as switching between "nice" and "mean" states, or machine states. </p>
+<p>Grim Trigger - Start in nice state but should someone do something mean to you once, even if they start doing nice things, you always stay in the "mean" state.</p>
+<h4> <span class="mw-headline" id="Adaptive_Rules">Adaptive Rules</span></h4>
+<p>Gradient based method - Keep increasing a variable, to see if increasing the variable optimizes the model. e.g. Making cookies, increase the amount of honey if it increases the taste of the cookies. </p>
+<p>Random based method - Add a new variable to the model to see how it effects the model. e.g. Making cookies, add raisins. </p>
+<p>Mimicry - Essentially it is: who is doing well? Copy others who are doing well. </p>
+<p>A simple rule can easily be exploited. Bargaining Rule, accept only if you get 60% initially, demand 1% less each round. This could be exploited by someone who keeps coming back with a new price and walking you down to 0% since you'll always go 1% lower than their offer. </p>
+<h3> <span class="mw-headline" id="Why_Model_people_using_Rules.3F">Why Model people using Rules?</span></h3>
+<ul>
+<li>Easy to Model - easy to think through and easy to compute</li>
+<li>Capture main effects - how would someone behave in this situation? You can get get most of the behavior in a model </li>
+<li>Ad Hoc - not everyone is the same as you. Rules might not represent what is really going on</li>
+<li>Exploitable - if everyone followed one particular rule, someone could take advantage of it.</li>
+</ul>
+<h1> <span class="mw-headline" id="When_Does_Behavior_Matter.3F_.285.5.29">When Does Behavior Matter? (5.5)</span></h1>
+<p>This section focuses on comparing and contrasting the <em>rational</em> - objective functions and optimizing for their objectives - , <em>behavioral</em> - rationality with bias - and <em>rule based</em> - a rule that governs behavior, could be rational, behavioral, or arbitrary - models. </p>
+<p><em>Calibration</em> is a way in which we construct a model to mimic the real world as accurately as possible. This can be done with collecting data about how agents act and then using that information to construct a model. </p>
+<h3> <span class="mw-headline" id="Does_it_matter_what_model_we_use.3F">Does it matter what model we use?</span></h3>
+<p>This depends on what we're modeling and how accurate each model is. </p>
+<h4> <span class="mw-headline" id="Two_Sided_Market">Two Sided Market</span></h4>
+<ul>
+<li>Buyers are willing to buy from [0,100]</li>
+<li>Sellers are willing to sell from [50,150]</li>
+</ul>
+<p>Relevant buyers are wiling to buy between [50, 100] and relevant sellers are willing to sell withing [50,100]. Probably will end up with a price of 75.</p>
+<p>How does this work for various models? Behavior, rational, and rule based (zero intelligence) have shown that it doesn't matter the behavior - the result is the same.</p>
+<h4> <span class="mw-headline" id="Race_to_the_Bottom_Game">Race to the Bottom Game</span></h4>
+<ul>
+<li>Pick a number between 0 and 100.</li>
+<li>Whoever is closest to 2/3 of the mean, wins.</li>
+</ul>
+<p><strong>Rational Agent</strong> - A rational agent would would pick 0. Why? Because if everyone is picking 6, the mean is 6, 2/3 of 6 is 4. Therefore you should pick 4. But if everyone is picking 4, 2/3 of 4 is then it should be 2.66. But if everyone picks 2.66.... eventually the best bid becomes 0. </p>
+<p><strong>Rule Based</strong> - A mix of rational and bias, because some assume (with a bias) that someone is going to pick 50. Others think 33. It has a variety to the guesses. </p>
+<p>E.g. Suppose 2 Rational, 1 Irrational person. R: Rational. X: Irrational. If irrational person picks X = 50 then what would R pick? R should pick 2/3 of X. But R's guesses effect the mean. Therefore </p>
+<blockquote>
+  <p>$$ R = \frac{2}{3} \frac{R + R + X}{3} $$</p>
+  <p>$$ 9R = 2(R + R + X) \equiv 5R = 2X \equiv R = \frac{2X}{5}$$</p>
+  <p>$$ \therefore R = 20 $$</p>
+</blockquote>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ModelThinking:S5&amp;oldid=10189">https://share.coursera.org/wiki/index.php?title=ModelThinking:S5&amp;oldid=10189</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

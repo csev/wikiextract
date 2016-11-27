@@ -1,0 +1,161 @@
+Thinking Electrons (5.1)
+==================
+
+In a *decision* or a *game* situation, agents can behave according to 1 of 3 different models: *rational*, *behavior-based*, or *rule-based*. 
+
+* Decision - objective depends on only your own actions
+
+* Game - objective depends on actions of others
+
+
+In a *decision* situation (e.g. market place with buyers & sellers), the choice of the model doesn't make much difference in the result. 
+
+
+In a *game* situation (e.g. race to the bottom game), the choice of the model changes the result: rational (R=0), behavior-based (R=50, or R= 33, or R=22, depending if you expect others to all choose 50, or you think other people too will think like you and then guess 33 etc.)
+
+
+Rational Actor Model (5.2)
+==============
+
++ Rational Agents have an *objective function*, and will choose the rational solution to maximize their *objective* or *utility* function. 
+
+This function describes what is the optimal situation for them according to different parameters (e.g. consumer will maximize for example leisure (L) and consumption (C) according to let's say a square root function : Utility (U)= sqrt (L*C))
+
+It is a weakness of the rational-actor model that it assumes each actor has limitless information on which to base a rational decision. 
+
+### When do we see rationality?
+
+* When the stakes are large (e.g. large amount of money to lose or gain) 
+* Repeated (so people learn)
+* Group decisions (with more people, less likely to be irrational in general)
+* When the problems are easy (when they aren't complex)
+
+### Why assume rationality when it isn't the case very often (when modeling humans)?
+**Roger Miason** - Came up with concept of mechanism design. Makes the argument that rational behavior is an important benchmark, because it is unique and testable. It is very easily to solve for in mathematical models to find the optimal point which we then assume to be the rational decision. Contrasted to modeling irrationality there are many ways to be irrational and it is hard to then say how someone will react irrationally. It also could be that the model does start off irrationality but moves to rationality as people learn. Finally even if people make mistakes, you'll see the overall behavior be rational e.g. some spending too much, others spending too little.
+
+
+Behavior-Based Models (5.3)
+==============
+
+Behavior Models are critical of the rational actors model. 
+
+This is because the behavior-based model treats actors as acting according to behaviors. Many observations in laboratories and in data show that people deviate from rational behavior. Additionally there is evidence in neuroscience that the way the human brain is "wired" can cause these irrational behaviors. In some cases, a rational-actor model is adjusted by allowing agents to deviate from the rational behavior, due to different cognitive biases. 
+
+Daniel Kahneman - Psychologist who won a noble piece prize in economics for his work on how people significantly differ from the rational actors model. In his book "Thinking Fast and Slow" he makes the argument that when thinking fast we act more in the behavior/emotional model, when we think slow we act more in the rational model. 
+
+Richard H Thaler and Cass R Sunstein - In their book "Nudge" argue that these biases have real implications for policy and how we construct them because these biases are systemic. 
+
++ **Prospect Theory**
+
+People tend to limit their exposure to risk, and would rather take the solution which is more certain in terms of payoff, although *statistically* it is not optimal. e.g. between option 1: 50% chance to win 1M$ and 50% chance to loose 0,1M$ and option 2: 50% chance to win $1000 and 50% chance to win 0, people would choose option 2. 
+
+As the risks get bigger, people tend to be risk adverse.
+
+
+### Types of Biases
++ **Hyperbolic Discounting**
+
+The perception of discounting fades out with time. Example: between $1000 today and $1005 tomorrow often it is found that one would pick $1000, but between $1000 in a year and 1005$ in a year + 1 day people would pick $1005, although in both cases the current value is higher for the second alternative ($1005).
+
++ **Status Quo Bias**
+
+People tend to limit the impact on current situation, and can be tempted to choose the solution which is closer to the current situation. 
+
+When taking an action to change from the default, people tend to choose the default. E.g In Europe some countries have and opt out of organ donation on driver license forms, and others have an opt in to organ donation. Those that have the opt-out have approximately 90% of those who are drivers as organ donors while those that have an opt-in (example given being Britain) have something like 25%. This is an example of sticking with the default or status quo. 
+
++ **Base-Rate Bias**
+
+People can choose a solution which is close to a figure/result they have in mind at the moment they take the decision (e.g. pick a figure close to the last 2 digits of their phone number, if they just been asked their phone number)
+
+###Lots of other types of biases
+
+* WEIRD (*W*estern *E*ducated *I*ndustrialzed *R*ich *D*emocratic) - Lots of studies are done on people who fit this environment. Do these behavior studies show up in other populations where people are of different cultures/environments?
+
+* People Learn - How strong are these biases through repeat iteration and their ability to understand the problem and therefore may start acting rationally.
+
+* Computationally Difficult - intensive to include these complicated biases in a model
+
+**What to choose: rational, behavior-based, rule-based ?**
+
+How to think about this, how to model? Assume rationality. Then determine what is the list of documented biases of people are. What are relevant to this model? Then look out into the world and data and look at how people are behaving, does it fit the model? If there is reason to believe that a bias is effecting things, then include them in the model.
+
+Rule Based Models (5.4)
+=======
+
+Assume that people follow some rule based behavior when constructing model. e.g. For instance in the Schelling Model, we saw that people would move based on the percentage of people that were similar to them falling below some threshold. The standing ovation model is another similar. 
+
+We can contrast this to a behavior based model, where people have biases, or rational behavior based model, where people act based on an optimal decision. 
+
+### Types of Rules
+
+* Fixed - follow the same rule no matter what
+
+* Adaptive - rule changes based on the context of what is going on, information. 
+
+These can be applied to the *decision* and *game* based models where decisions are made only on your own choices only or decisions are based on the decisions of others, respectfully.
+
+#### Fixed Decision Rules
+
+An example of a fixed decision rule would be a random choice rule. Where you assume people completely random choices (clearly this contrasts with the rational model). Another would be the idea that people take the most direct route. In taking the most direct path, it may take a bit longer to get to your destination, but you get there. Clearly this isn't the most optimal but it is a good rule that works with the objective of getting to your destination. 
+
+Fixed Strategies - with a strategy your payoff depends on what other people do. E.g. Inherited land between you and your brother and you want to divide it. You could just divide it evenly. However you could try a **"tit for tat"** model. 
+
+Moore Machines - In a tit for tat model, you can describe it as switching between "nice" and "mean" states, or machine states. 
+
+Grim Trigger - Start in nice state but should someone do something mean to you once, even if they start doing nice things, you always stay in the "mean" state.
+
+#### Adaptive Rules
+
+Gradient based method - Keep increasing a variable, to see if increasing the variable optimizes the model. e.g. Making cookies, increase the amount of honey if it increases the taste of the cookies. 
+
+Random based method - Add a new variable to the model to see how it effects the model. e.g. Making cookies, add raisins. 
+
+Mimicry - Essentially it is: who is doing well? Copy others who are doing well. 
+
+
+A simple rule can easily be exploited. Bargaining Rule, accept only if you get 60% initially, demand 1% less each round. This could be exploited by someone who keeps coming back with a new price and walking you down to 0% since you'll always go 1% lower than their offer. 
+
+### Why Model people using Rules?
+
+* Easy to Model - easy to think through and easy to compute
+* Capture main effects - how would someone behave in this situation? You can get get most of the behavior in a model 
+* Ad Hoc - not everyone is the same as you. Rules might not represent what is really going on
+* Exploitable - if everyone followed one particular rule, someone could take advantage of it.
+
+
+When Does Behavior Matter? (5.5)
+=======
+
+This section focuses on comparing and contrasting the *rational* - objective functions and optimizing for their objectives - , *behavioral* - rationality with bias - and *rule based* - a rule that governs behavior, could be rational, behavioral, or arbitrary - models. 
+
+*Calibration* is a way in which we construct a model to mimic the real world as accurately as possible. This can be done with collecting data about how agents act and then using that information to construct a model. 
+
+### Does it matter what model we use?
+
+This depends on what we're modeling and how accurate each model is. 
+
+#### Two Sided Market
+
+* Buyers are willing to buy from [0,100]
+* Sellers are willing to sell from [50,150]
+
+Relevant buyers are wiling to buy between [50, 100] and relevant sellers are willing to sell withing [50,100]. Probably will end up with a price of 75.
+
+How does this work for various models? Behavior, rational, and rule based (zero intelligence) have shown that it doesn't matter the behavior - the result is the same.
+
+#### Race to the Bottom Game
+
+* Pick a number between 0 and 100.
+* Whoever is closest to 2/3 of the mean, wins.
+
+**Rational Agent** - A rational agent would would pick 0. Why? Because if everyone is picking 6, the mean is 6, 2/3 of 6 is 4. Therefore you should pick 4. But if everyone is picking 4, 2/3 of 4 is then it should be 2.66. But if everyone picks 2.66.... eventually the best bid becomes 0. 
+
+**Rule Based** - A mix of rational and bias, because some assume (with a bias) that someone is going to pick 50. Others think 33. It has a variety to the guesses. 
+
+E.g. Suppose 2 Rational, 1 Irrational person. R: Rational. X: Irrational. If irrational person picks X = 50 then what would R pick? R should pick 2/3 of X. But R's guesses effect the mean. Therefore 
+
+>   $$ R = \frac{2}{3} \frac{R + R + X}{3} $$
+ 
+>   $$ 9R = 2(R + R + X) \equiv 5R = 2X \equiv R = \frac{2X}{5}$$
+
+>   $$ \therefore R = 20 $$

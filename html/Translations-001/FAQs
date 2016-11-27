@@ -1,0 +1,131 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Translations-001:FAQs</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#A.29_Available_info"><span class="tocnumber">2</span> <span class="toctext">A) Available info</span></a>
+<ul>
+<li class="toclevel-2"><a href="#1._Official_help_resources"><span class="tocnumber">2.1</span> <span class="toctext">1. Official help resources</span></a></li>
+<li class="toclevel-2"><a href="#2._Exisiting_info:_pages"><span class="tocnumber">2.2</span> <span class="toctext">2. Exisiting info: pages</span></a>
+<ul>
+<li class="toclevel-3"><a href="#2.1_.22Non_language.22_wiki_pages"><span class="tocnumber">2.2.1</span> <span class="toctext">2.1 "Non language" wiki pages</span></a></li>
+<li class="toclevel-3"><a href="#2.2_.22Non_language_non_wiki.22_pages"><span class="tocnumber">2.2.2</span> <span class="toctext">2.2 "Non language non wiki" pages</span></a></li>
+<li class="toclevel-3"><a href="#2.3_Wiki_pages_for_languages"><span class="tocnumber">2.2.3</span> <span class="toctext">2.3 Wiki pages for languages</span></a></li>
+<li class="toclevel-3"><a href="#2.4_Forums"><span class="tocnumber">2.2.4</span> <span class="toctext">2.4 Forums</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#B.29_Actual_FAQs"><span class="tocnumber">3</span> <span class="toctext">B) Actual FAQs</span></a>
+<ul>
+<li class="toclevel-2"><a href="#1._Hierarchy_of_languages"><span class="tocnumber">3.1</span> <span class="toctext">1. Hierarchy of languages</span></a></li>
+<li class="toclevel-2"><a href="#2._Transifex_v._Coursera_platform_roles"><span class="tocnumber">3.2</span> <span class="toctext">2. Transifex v. Coursera platform roles</span></a></li>
+<li class="toclevel-2"><a href="#3._Transifex_roles:_recurring_glitches"><span class="tocnumber">3.3</span> <span class="toctext">3. Transifex roles: recurring glitches</span></a></li>
+<li class="toclevel-2"><a href="#4._Transifex_languages"><span class="tocnumber">3.4</span> <span class="toctext">4. Transifex languages</span></a></li>
+<li class="toclevel-2"><a href="#5._Transifex_translation_tool"><span class="tocnumber">3.5</span> <span class="toctext">5. Transifex translation tool</span></a></li>
+<li class="toclevel-2"><a href="#6._Issues_with_original_subtitles"><span class="tocnumber">3.6</span> <span class="toctext">6. Issues with original subtitles</span></a></li>
+<li class="toclevel-2"><a href="#7._Recognition_and_quality_assessment"><span class="tocnumber">3.7</span> <span class="toctext">7. Recognition and quality assessment</span></a></li>
+<li class="toclevel-2"><a href="#8._Courses_for_translation"><span class="tocnumber">3.8</span> <span class="toctext">8. Courses for translation</span></a></li>
+<li class="toclevel-2"><a href="#9._Communication"><span class="tocnumber">3.9</span> <span class="toctext">9. Communication</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Back_to"><span class="tocnumber">4</span> <span class="toctext">Back to</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>This page is for collaboratively writing an updated version of the FAQs page <a rel="nofollow" class="external free" href="https://class.coursera.org/translations-001/wiki/faqs">https://class.coursera.org/translations-001/wiki/faqs</a> in the platform of Coursera's Global Translator's community</p>
+<p><strong>Feel free to do any edit you want: this being a wiki, even if you should accidentally delete some content you want to keep, you can retrieve it via the History of this page. Beware however that the software will log you out after a while, so save your work regularly.</strong></p>
+<p>Maybe the FAQs page could be structured this way:</p>
+<h1> <span class="mw-headline" id="A.29_Available_info">A) Available info</span></h1>
+<p>Maybe this A) section should be given in another page and just linked to  in the FAQs</p>
+<h2> <span class="mw-headline" id="1._Official_help_resources">1. Official help resources</span></h2>
+<p>Transifex: see <a rel="nofollow" class="external free" href="http://docs.transifex.com/">http://docs.transifex.com/</a></p>
+<p>ABBYY-ls: See [let's ask ABBYY-ls if they have their own FAQs]</p>
+<p>Coursera platform: see <a rel="nofollow" class="external free" href="https://learner.coursera.help/hc">https://learner.coursera.help/hc</a> and in particular <a rel="nofollow" class="external free" href="https://learner.coursera.help/hc/en-us/sections/200365595-Forums-and-Community">https://learner.coursera.help/hc/en-us/sections/200365595-Forums-and-Community</a> .</p>
+<h2> <span class="mw-headline" id="2._Exisiting_info:_pages">2. Exisiting info: pages</span></h2>
+<h3> <span class="mw-headline" id="2.1_.22Non_language.22_wiki_pages">2.1 "Non language" wiki pages</span></h3>
+<p>Brief description of each, but several need a serious overhaul first: content-wise  and form-wise: see <a rel="nofollow" class="external free" href="https://class.coursera.org/translations-001/wiki/aboutGTC">https://class.coursera.org/translations-001/wiki/aboutGTC</a> which is labeled Introduction (more in a reply to this comment, maybe)</p>
+<h3> <span class="mw-headline" id="2.2_.22Non_language_non_wiki.22_pages">2.2 "Non language non wiki" pages</span></h3>
+<p>(those with redirects)</p>
+<p>To be written by Coursera staff:</p>
+<p>General info about these pages</p>
+<p>Brief description of each</p>
+<h3> <span class="mw-headline" id="2.3_Wiki_pages_for_languages">2.3 Wiki pages for languages</span></h3>
+<p>To be written by Coursera staff:</p>
+<p>Who makes them and why so few</p>
+<p>Brief description of each</p>
+<h3> <span class="mw-headline" id="2.4_Forums">2.4 Forums</span></h3>
+<p>Link to <a rel="nofollow" class="external free" href="https://class.coursera.org/translations-001/forum/index">https://class.coursera.org/translations-001/forum/index</a> . No details as Coursera Staff sometimes change their names or create new ones.</p>
+<p>How to retrieve info in the forums via the search engine, tags and the complete activity list of a member</p>
+<p>Warning about obsolete though apparently authoritative info (e.g. topics made and pinned by former Coursera Staff)</p>
+<h1> <span class="mw-headline" id="B.29_Actual_FAQs">B) Actual FAQs</span></h1>
+<p>"CS" = those whose answer should be written by Coursera Staff</p>
+<h2> <span class="mw-headline" id="1._Hierarchy_of_languages">1. Hierarchy of languages</span></h2>
+<p>Why is there no wiki page for my language? CS</p>
+<p>Why is there no forum for my language? CS</p>
+<p>Why is there no coordinator for my language? CS</p>
+<p>How often is the Other Languages page updated? CS</p>
+<p>If my language community has no coordinator on Transifex, how can its translations be reviewed and approved for publication in course platforms? CS</p>
+<h2> <span class="mw-headline" id="2._Transifex_v._Coursera_platform_roles">2. Transifex v. Coursera platform roles</span></h2>
+<p>What is the correspondence between Transifex roles and labels - Coursera staff, Staff, Teaching assistant - in this Coursera platform?</p>
+<p>Why don't the language coordinators listed in the Language Coordinators page correspond to those of the Transifex page for my language community? CS</p>
+<h2> <span class="mw-headline" id="3._Transifex_roles:_recurring_glitches">3. Transifex roles: recurring glitches</span></h2>
+<p>I am a translator and I have done nothing wrong: why am I chucked out of my Transifex language community? CS</p>
+<p>I am a coordinator and I have done nothing wrong: why am I demoted to translator in Transifex but still appear as teaching assistant / staff in this platform? CS</p>
+<p>I am a reviewer and I have done nothing wrong: why am I demoted to translator in Transifex? CS</p>
+<h2> <span class="mw-headline" id="4._Transifex_languages">4. Transifex languages</span></h2>
+<p>My language is not among the 65 Transifex translation languages listed in the Dashboard of the GTC. Why was there no response when I requested its addition via the Transifex Request Language feature? CS</p>
+<p>Courses that are in other languages than English can be translated into any of the 65 Transifex translation languages listed in the Dashboard of the GTC, but not in English. Why can't a variety of English be added as translation language, just as there is French as source language and French (France) as translation language? CS</p>
+<h2> <span class="mw-headline" id="5._Transifex_translation_tool">5. Transifex translation tool</span></h2>
+<p>Transifex has become very slow and sluggish since the addition of the video player. How can I deactivate it?</p>
+<p>A: Uncheck the video player setting in the droplist that opens from the little cogwheel top right.</p>
+<p>Why do some translation resources have no video player? CS</p>
+<p>Why have the strings in my translation suddenly become unrelated to the original content? CS</p>
+<p>Why are there only random translations attributed to various people in some translation resources? And why are some of these translations totally unrelated to their source CS</p>
+<p>Why has the translation I was working on suddenly become unavailable for translation? CS</p>
+<h2> <span class="mw-headline" id="6._Issues_with_original_subtitles">6. Issues with original subtitles</span></h2>
+<p>Original subtitles are absurdly split. How far can I resplit them more logically in the translation, without them getting out of sync once added to the video? CS</p>
+<p>There are errors in the original subtitles and I've indicated them in comments marked as issue that get automatically notified to the project maintainers. Why did they not respond? Then the <a rel="nofollow" class="external free" href="https://class.coursera.org/translations-001/wiki/guidelines">https://class.coursera.org/translations-001/wiki/guidelines</a> page says to also report errors in the  Transcript Errors subforum. But is it still monitored by Coursera staff? CS</p>
+<h2> <span class="mw-headline" id="7._Recognition_and_quality_assessment">7. Recognition and quality assessment</span></h2>
+<p>The table for the various types of recognition in the Recognition page repeatedly mentions "of consistent high-quality" as a criterion. How is this high quality assessed, in particular for translations in languages that have no Coordinator or Reviewer who can officially mark them as reviewed? CS</p>
+<p>The Recognition page foresees "Public recognition on Coursera’s website." for 2,500+ translated words. Yet the Translator Agreement says: "Coursera will credit you as a “Translator” on the Coursera website", without a minimum number of translated words. So why aren't all translators listed in the linked page? CS</p>
+<p>The Recognition page foresees a "digital Statement of Accomplishment" for 15'000+ translated words and a "igital Statement of Accomplishment with Distinction" for 25'000+ translated words. Yet Coursera is phasing out Statements of Accomplishment, and as they are, they say nothing of the actual work done by the translators. Chinese and Portuguese translators have a different, more relevant form of certification. Can't other translators have something similar too? CS</p>
+<p>I translate into 2 (or more) languages and until November 2014 [check date], the stats for my translations in each of these languages were listed in the Request Recognition page. Why has this page only listed the stats for one of my languages since then? Are my translations into other languages nonetheless taken into account for recognition? CS</p>
+<p>I have translated more than 25'000 words but haven't received a voucher for a Verified Certificate. What should I do?</p>
+<p>Answer: Try the Request Recognition page. If it does not work .... (to be added by CS)</p>
+<p>Why is the Leaderboard page stuck?</p>
+<p>Answer: As the Leaderboard is updated on the basis of Transifex activity stats, check the activity widget in the Transifex Dashboard: if it is stuck too, it's probably due to maintenance.  Check if the issue has been reported in the Ask Coursera forum and if it hasn't yet, report it. Don't worry: when the Transifex stats start working again, they'll also cover the "stuck" days</p>
+<p>Why is the Leaderboard page stuck, even though the Transifex activity widget is normally updating? CS</p>
+<h2> <span class="mw-headline" id="8._Courses_for_translation">8. Courses for translation</span></h2>
+<p>Why do some courses have coursera-flex- or flex- as a prefix to their title in Transifex? CS</p>
+<p>I was translating a lecture and now the whole course has disappeared from Transifex. Why? CS</p>
+<p>I was translating a lecture and now it appears in 2 (or more) different courses in Transifex. Why? CS</p>
+<p>My language does not have a coordinator who can indicate which courses must be translated first, and the spreadsheet of GTC Approved for Translation courses has not been updated in a long time. Same for the list of courses in the Othe Languages page. How can I choose a course for translation? CS</p>
+<p>How can I request a course for translation, if my language does not have a coordinator who can add requests in the Translation Requests spreadsheet? CS</p>
+<p>Some courses are not available for translation because the instructors or their university declined to have them translated by the GTC, due to the terms imposed to them by Coursera for these GTC translations. Could the GTC terms for instructors/universities be made public, just as the Translator Agreement is? CS</p>
+<h2> <span class="mw-headline" id="9._Communication">9. Communication</span></h2>
+<p>Why do Coursera Staff only monitor the Ask Coursera forum, when they created forums like Transcript errors, Request courses, Transifex help and Ideas &amp; Suggestions to gather our feedback? CS</p>
+<p>What happens when an email is sent to translate@coursera.org? CS</p>
+<p>Is there a limit to the number of posts someone is allowed to make in the Coursera forums for the GTC? CS</p>
+<h1> <span class="mw-headline" id="Back_to">Back to</span></h1>
+<p>The <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Translations-001:Main">The main page of the Global Translator Community's wiki</a>.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Translations-001:FAQs&amp;oldid=31726">https://share.coursera.org/wiki/index.php?title=Translations-001:FAQs&amp;oldid=31726</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>
