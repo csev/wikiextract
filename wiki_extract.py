@@ -119,6 +119,7 @@ for category in categories:
 
             # <a href="/wiki/index.php/File:Snacourselogo.jpeg" class="image">
             tags = soup('a')
+            image_map = dict()
             for tag in tags:
                 src = tag.get('href', 'None')
                 if src == None : continue
@@ -140,12 +141,13 @@ for category in categories:
                     soup2 = BeautifulSoup(fpage, 'html.parser')
                     tags2 = soup2('a')
                     for tag2 in tags2:
-                        src = tag2.get('href', 'None')
-                        if src == None : continue
-                        if not src.startswith('/wiki/images') : continue
-                        fname = src[6:]
-                        url = wikibase + src;
+                        href = tag2.get('href', 'None')
+                        if href == None : continue
+                        if not href.startswith('/wiki/images') : continue
+                        fname = href[6:]
+                        url = wikibase + href;
                         save_image(url,fname,hdr)
+                        image_map[src] = href
                         break # only take the first one
 
 
@@ -161,7 +163,11 @@ for category in categories:
 
             # get rid of icky stuff
             data = data.replace('<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>','')
-            data = data.replace('<a href="/wiki/index.php/File:','<a href="/wiki/index.php/#File:')
+            
+            # Change <a href="/wiki/index.php/File:... to <a href="/wiki/image...
+            for k in image_map:
+                v = image_map[k]
+                data = data.replace(k,v)
 
             folder = 'html/'+category
             if not os.path.exists(folder):
