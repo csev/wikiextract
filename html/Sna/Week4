@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Concepts: Clustering, community structure, modularity, overlapping communities</p>
 <p>Activities: Detect and interpret disjoint and overlapping communities in a variety of networks (scientific collaborations, political blogs, cooking ingredients, etc.)</p>
 <h1> <span class="mw-headline" id="4B_Heuristics_for_finding_communities.">4B Heuristics for finding communities.</span></h1>

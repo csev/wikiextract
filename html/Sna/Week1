@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Concepts: Nodes, edges, adjacency matrix, one and two-mode networks, node degree</p>
 <p>Activity: Upload a social network (e.g. your Facebook social network into Gephi and visualize it ).</p>
 

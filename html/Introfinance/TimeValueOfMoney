@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><h2> <span class="mw-headline" id="Discrete_Compounding_.28One_Period.29">Discrete Compounding (One Period)</span></h2>
 <p>This is a really simple idea. Say you've got an amount of money $$Q&#95;0 =
 100$$ that you want to put into a bank account that pays 5% ($$r = 0.05$$)

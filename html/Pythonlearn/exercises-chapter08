@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week08" title="Pythonlearn:resources-week08"> Back to Chapter 8 Resources</a></p>
 <p><strong>Exercises 4 &amp; 5 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.</strong></p>
 <p><em>Exercise 8.1</em> - Write a function called chop that takes a list and modiﬁes it, removing the ﬁrst and last elements, and returns None.

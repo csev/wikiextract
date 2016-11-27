@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Concepts: Simple contagion, threshold models, opinion formation</p>
 <p>Activity: Evaluate via simulation the impact of network structure on the above processes</p>
 

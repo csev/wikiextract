@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><h3> <span class="mw-headline" id="Installation">Installation</span></h3>
 <p>Gephi requires Java 6 or higher. You can download the latest version from <a rel="nofollow" class="external text" href="http://www.java.com/getjava/">www.java.com/getjava/</a>.
 If you are having installation difficulties, the best place to check is likely <a rel="nofollow" class="external text" href="http://forum.gephi.org">the official Gephi forum</a>, where you can search and also seek help.</p>

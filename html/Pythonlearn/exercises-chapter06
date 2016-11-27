@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week06" title="Pythonlearn:resources-week06"> Back to Chapter 6 Resources</a></p>
 <p><strong>Exercise 5 is  a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.</strong></p>
 <p>Exercise 6.1 - Write a while loop that starts at the last character in the string and works its way backwards to the first character in the string, printing each letter on a separate line, except backwards.</p>

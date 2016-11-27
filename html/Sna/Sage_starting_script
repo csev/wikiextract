@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><pre>
 from urllib2 import urlopen
 mysn = urlopen(&quot;http://spark-public.s3.amazonaws.com/sna/datasets/week1/LadaFacebookAnon.gml&quot;).read()

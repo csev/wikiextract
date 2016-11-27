@@ -4,7 +4,7 @@
 				<div id="bodyContent">
 		            <h3 id="siteSub">From Coursera</h3>
 		            <div id="contentSub"></div>
-		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+		            		            		            					<!-- start content -->
 					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Concepts: Small worlds, geographic networks, decentralized search</p>
 <p>Activity: Evaluate whether several real-world networks exhibit small world properties, simulate decentralized search on different topologies, evaluate effect of small-world topology on information diffusion.</p>
 <h2> <span class="mw-headline" id="What_we_are_going_to_deal_with_this_week.3F">What we are going to deal with this week?</span></h2>
