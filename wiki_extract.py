@@ -5,26 +5,6 @@ import os
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 
-def save_image(url,fname,hdr) :
-    print('Retrieving image',url)
-    # Retrieve the Image
-    opener = urllib.request.build_opener()
-    opener.addheaders.append(('Cookie', hdr))
-    try:
-        f = opener.open(url)
-    except:
-        f = None
-
-    if f is not None:
-        folder = os.path.dirname(fname)
-        if not os.path.exists(folder):
-            os.makedirs(folder)
-        image = f.read()
-        out = open(fname,'wb')
-        out.write(image)
-        out.close()
-        print('Wrote',len(data),' characters to '+fname)
-
 wikibase = 'https://share.coursera.org'
 baseurl = wikibase+'/wiki/index.php'
 
@@ -67,6 +47,26 @@ for x in cookies:
     hdr += x[1]
     # print(x)
 # print(hdr)
+
+def save_image(url,fname,hdr) :
+    print('Retrieving image',url)
+    # Retrieve the Image
+    opener = urllib.request.build_opener()
+    opener.addheaders.append(('Cookie', hdr))
+    try:
+        f = opener.open(url)
+    except:
+        f = None
+
+    if f is not None:
+        folder = os.path.dirname(fname)
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+        image = f.read()
+        out = open(fname,'wb')
+        out.write(image)
+        out.close()
+        print('Wrote',len(data),' characters to '+fname)
 
 count = 400
 for category in categories:
@@ -163,6 +163,8 @@ for category in categories:
 
             # get rid of icky stuff
             data = data.replace('<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>','')
+            # <!-- Saved in parser cache with key crowdwiki:pcache:idhash:265-0!*!*!!en!*!* and timestamp 20161127015124 -->
+            data = re.sub(r'<!-- Saved in parser cache with key crowdwiki:pcache:.+ -->', '', data)
             
             # Change <a href="/wiki/index.php/File:... to <a href="/wiki/image...
             for k in image_map:
