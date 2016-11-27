@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week08</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week08</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
 <ul>
@@ -38,19 +38,232 @@
 </td></tr></table>
 <h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
 <h2> <span class="mw-headline" id="Lists">Lists</span></h2>
-<p>Collection - allows us to put many values in a single variable.<br/>
-Simple variables are not collections. The previous value is overwritten when changed.<br/>
+<p>Collection - allows us to put many values in a single variable.<br />
+Simple variables are not collections. The previous value is overwritten when changed.<br />
 <ul><li> A List is made up of list 'constants'. Lists are surrounded by square brackets [] and the constants in the list are separated by commas. ([2,4,6,8]) 
 </li><li> A List element can be any Python object, even another list
 </li><li> A List can be empty
 </li><li> Lists are mutable (they can be changed)
 <ul><li> This is a big difference between lists and strings.  Strings are NOT mutable.  Strings and lists are similar when it comes to other functions such as concatenation, slicing, the pattern for indexing the elements within the list, and others.
 </li></ul>
-</li><li> When len() is used on a list, it counts and returns the number of constants that make up the list. (not the number of characters)<br/>
+</li><li> When len() is used on a list, it counts and returns the number of constants that make up the list. (not the number of characters)<br />
 </li><li> Lists can be concatenated using +
-</li><li> Lists can be sliced<br/>
+</li><li> Lists can be sliced<br />
 </li><li> List is a unique type that can be checked using type() (result: &lt;type 'list'&gt;)
 </li><li> An empty list can be created with list(), or setting a variable to "[]", e.g. stuff = []
 </li><li> Lists can be tested for contents using in/not in
-</li><li> List is an ordered sequence</li></ul></p>
-</div></div></div>
+</li><li> List is an ordered sequence</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="List_Methods">List Methods</span></h3>
+<p>Read more about list Methods online at: <a rel="nofollow" class="external free" href="http://docs.python.org/tutorial/datastructures.html">http://docs.python.org/tutorial/datastructures.html</a><br />
+On the page there is method: list.copy(). But when I test this method, python told me: 'list' object has no attribute 'copy'</p>
+<p>And now I realized that's a difference between python2.7 and python 3</p>
+<p>Methods: append, count, extend, index, insert, pop, remove, reverse, sort  </p>
+<p>append() - use to add constants to the end of a list  (lst.append('word'))</p>
+<p>remove() - use to remove constants from a list  </p>
+<p>sort() - use to sort the list. It changes the list permanently.</p>
+<h3> <span class="mw-headline" id="List_Functions">List Functions</span></h3>
+<p>len() - find length, max() - find highest value, min() - find lowest value, sum() - add all values<br />
+average can be found with sum()/len()</p>
+<h3> <span class="mw-headline" id="Selection_in_a_List">Selection in a List</span></h3>
+<p>Look up items in a list using an index specified in square brackets. The number in the index indicates the numbered item in the list.<br />
+For example: For friends = ['Joseph','Glen','Sally'] using "print friends [1]" will print out "Glen" (remember numbering starts with zero)  </p>
+<h3> <span class="mw-headline" id="Using_Strings_and_Lists_Together">Using Strings and Lists Together</span></h3>
+<p>"Split" breaks a string into parts and produces a list of strings.  </p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p>abc = 'With three words'<br />
+      stuff = abc.split()<br />
+      print stuff<br />
+          ['With','three','words']<br />
+      * Split sees multiple spaces as one, creates one split.
+      * Define a delimiter for split by entering a parameter (i.e. split(';') to use semicolon as a delimiter)</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<h3> <span class="mw-headline" id="Broken_Links_in_iBook_.22Python_for_Informatics.22_Sec_8.14_Debugging.3F">Broken Links in iBook "Python for Informatics" Sec 8.14 Debugging?</span></h3>
+<p>I encountered 404 Errors in clicking these links as referenced in Paragraph 1 of Sec 8.14 Debugging:
+<ul><li> "docs.python.org/lib/typesseq.html"
+</li><li> "docs.python.org/lib/typesseq-mutable.html"
+</li></ul>
+Respectively, these substitutes for the above worked for me:
+<ul><li> <a rel="nofollow" class="external free" href="https://docs.python.org/2.7/library/stdtypes.html#sequence-types-str-unicode-list-tuple-bytearray-buffer-xrange">https://docs.python.org/2.7/library/stdtypes.html#sequence-types-str-unicode-list-tuple-bytearray-buffer-xrange</a>
+</li><li> <a rel="nofollow" class="external free" href="https://docs.python.org/2.7/library/stdtypes.html#mutable-sequence-types">https://docs.python.org/2.7/library/stdtypes.html#mutable-sequence-types</a>
+</li></ul>
+Additionally, one might find the links below helpful in tweaking apart and organizing in one's head the different (and at this point, often mind-numbing) Python operations:
+<ul><li> 2. Built-in Functions: <a rel="nofollow" class="external free" href="https://docs.python.org/2.7/library/functions.html">https://docs.python.org/2.7/library/functions.html</a>
+</li><li> 5.6.1 String Methods: <a rel="nofollow" class="external free" href="https://docs.python.org/2.7/library/stdtypes.html#string-methods">https://docs.python.org/2.7/library/stdtypes.html#string-methods</a></p>
+</li></ul>
+
+<p>*** Something to look for when reading info from a 'docs.python.org' web page.
+<ul><li><ul><li><ul><li> Scroll to bottom of screen and make sure the version is 2.7.x and not the latest 3.x.x.</p>
+</li></ul>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Glossary">Glossary</span></h2>
+<ul>
+<li>Mutable - an object which allows an element of its contents to be changed. Lists are mutable meaning that one value can be changed without affecting the other objects in the list. (i.e. "lotto[2] = 28" changes the value of the third list item to '28')  </li>
+<li>Immutable - an object which does not allow an element of its contents to be changed. Strings are immutable, meaning once the value is defined it cannot be changed. (it can be overwritten, but not changed) For example, a single letter's case cannot be changed within the string. (i.e. "fruit[0] = 'b'" results in an error)</li>
+<li>Range is a function that creates and returns a list of numbers that range from zero to one less than the parameter. (i.e. "print range(4)" returns "[0,1,2,3]")</li>
+</ul>
+<h1> <span class="mw-headline" id="Del">Del</span></h1>
+<ul>
+<li>Del is a command which removes what corresponds to the index of the list.  For example, if we have</li>
+</ul>
+<p>a = [1, 2, 3, 4, 5]
+del a[0] returns [2, 3, 4, 5].</p>
+<p>If we have multiple arguments after del, then del first updates the list, and then removes the next argument.  For example if</p>
+<p>a = [1, 2, 3, 4, 5]
+del a[0], a[2] returns [2, 3, 5], since a[0] first gets deleted yielding [2, 3, 4, 5], then since the 2-element of [2, 3, 4, 5] is 4, 4 gets deleted.</p>
+<p>Here is another solution for Exercise 8.1 with guarding action taking place. Critique and comment, please:</p>
+<code><pre>def chop(mlist):                                     # this function returns nothing
+   if len(mlist)==0:
+      print 'there is nothing to chop'
+      exit()
+   if len(mlist)==1:
+      print 'only one element found, deleted..'
+      del mlist[0]
+      exit()
+   else:
+      print 'first and last element deleted'
+      del mlist[0]                                     #Reduced this part of the code with del mlist[0], mlist[-1]
+      del mlist[len(mlist)-1]
+</pre></code>
+<p>Here is another solution for Exercise 8.1</p>
+<hr />
+<h2> <span class="mw-headline" id="Mike_R..27s_comment:_This_alternate_solution_for_the_.27chop.27_function_does_not_produce_the_requested_result._The_exercise_specifically_states_to_modify_the_original_list.2C_not_a_copy._That_is_why_it_says_to_return_.22None.22.2C_because_the_original_list_is_being_changed_.28and_it_doesn.27t_make_sense_to_return_a_result_in_that_situation.29._This_solution_is_based_on_a_misinterpretation_of_the_exercise.">Mike R.'s comment: This alternate solution for the 'chop' function does not produce the requested result. The exercise specifically states to modify the original list, not a copy. That is why it says to return "None", because the original list is being changed (and it doesn't make sense to return a result in that situation). This solution is based on a misinterpretation of the exercise.</span></h2>
+<pre>
+origList = [1, 2, 3, 4, 5, 6, 7]
+
+def chop(origList):
+    newList = list(origList)        # copy to a new list
+    del newList[0]                  # remove 1st element
+    del newList[len(newList)-1]     # remove last element
+
+    return newList[:]               # the Question doesn't make sense. Why write a function that return None.
+                                    # I changed it to return the newList[:] instead. Just comment out this line
+                                    # with a &quot;#&quot; and it will return None.
+def middle(origList):
+    newList = list(origList)
+    return newList[1:-1]
+
+print &quot;Original list:&quot;, origList
+print &quot;Chopped list:&quot;, chop(origList)
+print &quot;Only middle list:&quot;, middle(origList)
+</pre>
+<h3> <span class="mw-headline" id="Solution_to_Exercise_8.2:">Solution to Exercise 8.2:</span></h3>
+<pre>
+fhand = open('mbox-short.txt')
+count = 0
+for line in fhand:
+    words = line.split()
+    # print 'Debug:', words
+    if len(words) == 0&#160;: continue
+    if words[0]&#160;!= 'From'&#160;: continue
+    try:
+        count = count + 1
+        print words[22]
+    except:
+        print 'Index out of range.'
+        break
+
+
+With the result:
+&quot;Index out of range.&quot;
+</pre>
+<h3> <span class="mw-headline" id="Solution_to_Exercise_8.3:">Solution to Exercise 8.3:</span></h3>
+<pre>
+fhand = open('mbox-short.txt')
+count = 0
+for line in fhand:
+    words = line.split()
+    # print 'Debug:', words
+    if len(words) == 0 or words[0]&#160;!= 'From': continue
+        try:
+        count = count + 1
+        print words[24]
+    except:
+        print 'Index out of range.'
+        break
+
+
+With the result:
+&quot;Index out of range.&quot;
+</pre>
+<p>Here is another solution to Exercise 8.3, using the "and" logical operator, instead of "or":
+<pre>
+fhand = open('mbox-short.txt')
+count = 0
+for line in fhand:
+  words = line.split()
+  if len(words)&#160;!= 0 and words[0] == 'From'&#160;:
+    count = count+1
+    print words[2], count
+  else&#160;: continue
+</pre></p>
+<h3> <span class="mw-headline" id="Solution_to_Exercise_8.6:">Solution to Exercise 8.6:</span></h3>
+<pre>
+numlist = list()
+while True:
+    inp = raw_input('Enter a number, when done entering numbers, type &quot;done&quot;: ')
+    if inp == 'done':break
+    value = float(inp)
+    numlist.append(value)
+    print numlist
+
+print 'this is: ',numlist
+print min(numlist)
+print max(numlist)
+
+Result:
+
+Enter a number, when done entering numbers, type &quot;done&quot;: 12
+[12.0]
+Enter a number, when done entering numbers, type &quot;done&quot;: 3
+[12.0, 3.0]
+Enter a number, when done entering numbers, type &quot;done&quot;: 56
+[12.0, 3.0, 56.0]
+Enter a number, when done entering numbers, type &quot;done&quot;: 156
+[12.0, 3.0, 56.0, 156.0]
+Enter a number, when done entering numbers, type &quot;done&quot;: done
+this is:  [12.0, 3.0, 56.0, 156.0]
+3.0
+156.0
+
+</pre>
+<h3> <span class="mw-headline" id="About_Exercise_8.6">About Exercise 8.6</span></h3>
+<p>the code below is not an exact solution, but an interesting way to do the same thing:</p>
+<pre>
+
+numlist = list()
+while True:
+    inp = raw_input(&quot;Enter a number: &quot;)
+    if inp == &quot;done&quot;:
+        break
+    num = float(inp)
+    numlist.append(num)
+
+numlist.sort()
+
+print &quot;Maximum:&quot;,numlist[-1]
+print &quot;Minimum:&quot;,numlist[0]
+
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 77/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3963-0!*!0!!en!*!* and timestamp 20161126063722 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week08&amp;oldid=34464">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week08&amp;oldid=34464</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

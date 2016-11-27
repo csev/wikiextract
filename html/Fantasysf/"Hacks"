@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Fantasysf:"Hacks"</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Fantasysf:"Hacks"</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Various_.22Hacks.22_for_marking_have_popped_up_from_within_the_community._They_include:"><span class="tocnumber">1</span> <span class="toctext">Various "Hacks" for marking have popped up from within the community.  They include:</span></a>
 <ul>
@@ -20,31 +20,31 @@
 <h3> <span class="mw-headline" id="Various_.22Hacks.22_for_marking_have_popped_up_from_within_the_community._They_include:">Various "Hacks" for marking have popped up from within the community.  They include:</span></h3>
 <h4> <span class="mw-headline" id="1._Using_the_comments_to_report_grades._.28link_to_thread.3F.29">1. Using the comments to report grades. (link to thread?)</span></h4>
 <h4> <span class="mw-headline" id="2._Using_the_comments_to_rewrite_the_essay_in_terms_of_grammar_and_meaning._.28Additional_examples_anyone.3F.29">2. Using the comments to rewrite the essay in terms of grammar and meaning. (Additional examples anyone?)</span></h4>
-<hr/>
+<hr />
 <p><strong>You can use the following syntax to correct grammar in context:</strong></p>
 <blockquote>
-<blockquote>
-<p>&gt;&gt;this means delete text&lt;&lt; [[this means add text]] {{this is just a comment}}</p>
-</blockquote>
+  <blockquote>
+    <p>&#62;&#62;this means delete text&lt;&lt; &#91;&#91;this means add text]] &#123;&#123;this is just a comment&#125;&#125;</p>
+  </blockquote>
 </blockquote>
 <p><strong>So, if this were the original text:</strong></p>
 <blockquote>
-<blockquote>
-<p>Mary shelly using the monster to spoke her feelings about being rejected by her own father.</p>
-</blockquote>
+  <blockquote>
+    <p>Mary shelly using the monster to spoke her feelings about being rejected by her own father.</p>
+  </blockquote>
 </blockquote>
 <p><strong>Then the edited text would look like:</strong></p>
 <blockquote>
-<blockquote>
-<p>Mary &gt;&gt;shelly using&lt;&lt; [[Shelley used]] the monster to &gt;&gt;spoke&lt;&lt; [[express]] her feelings about 
-    being rejected by her own father. {{great point!}}</p>
+  <blockquote>
+    <p>Mary &gt;&gt;shelly using&lt;&lt; &#91;&#91;Shelley used]] the monster to &gt;&gt;spoke&lt;&lt; &#91;&#91;express]] her feelings about 
+    being rejected by her own father. &#123;&#123;great point!&#125;&#125;</p>
+  </blockquote>
 </blockquote>
-</blockquote>
-<hr/>
+<hr />
 <h4> <span class="mw-headline" id="3._Using_a_thread_as_a_.22cybersquat.22_which_is_a_place_where_the_grading_conversation_can_continue_while_respecting_user_anonymity._.28further_information.3F.29">3. Using a thread as a "cybersquat" which is a place where the grading conversation can continue while respecting user anonymity. (further information?)</span></h4>
 <h4> <span class="mw-headline" id="4._The_polemic_.22comment-o-matic.22_which_gives_comment_templates_for_peer_graders_to_use.">4. The polemic "comment-o-matic" which gives comment templates for peer graders to use.</span></h4>
-<hr/>
-<p>This tool is a collection of peer review comments left by someone called An Anonymous Benefactor.  <a class="external text" href="https://docs.google.com/document/d/1xND0XvIZZ-AXqWe3xj64jFOA2XqL_phRm8ejtLW5aWA/edit" rel="nofollow">It is found here.</a></p>
+<hr />
+<p>This tool is a collection of peer review comments left by someone called An Anonymous Benefactor.  <a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1xND0XvIZZ-AXqWe3xj64jFOA2XqL_phRm8ejtLW5aWA/edit">It is found here.</a></p>
 <p>The controversy seems to center on two parallel arguments: </p>
 <ol>
 <li><p>Whether the peer reviewers are doing their own thinking, or just cutting and pasting reviews.  </p></li>
@@ -52,7 +52,8 @@
 </ol>
 <p>Whatever the original purpose may have been, the comments appear well thought out.</p>
 <p><a href="/wiki/index.php/Fantasysf:commentomatic" title="Fantasysf:commentomatic">Sample comments from comment-o-matic</a></p>
-<hr/>
+<hr />
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 6/1000000
@@ -60,9 +61,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:191-0!*!0!!en!*!* and timestamp 20161127022915 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Fantasysf:%22Hacks%22&amp;oldid=1842">https://share.coursera.org/wiki/index.php?title=Fantasysf:%22Hacks%22&amp;oldid=1842</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,90 +1,107 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:Resources</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:Resources</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
 <p>These are some resources associated with the lectures - this page is student editable.  </p>
 <p><a href="/wiki/index.php/Pythonlearn:Main" title="Pythonlearn:Main"> Main Wiki Page</a></p>
-<hr/>
+<hr />
 <ul>
 <li><p><a href="/wiki/index.php/Pythonlearn:resources-general" title="Pythonlearn:resources-general"> Generally Useful Python Resources</a></p></li>
 <li><p><a href="/wiki/index.php/Pythonlearn:resources-lesson0" title="Pythonlearn:resources-lesson0"> Important information about this class (Must read!)</a></p></li>
 </ul>
-<hr/>
+<hr />
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week01" title="Pythonlearn:resources-week01"> Chapter 1: Why we program</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter01" title="Pythonlearn:exercises-chapter01"> Chapter 1 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-install" title="Pythonlearn:resources-install"> Optional: Installing Python</a></li>
 <li><a href="/wiki/index.php/Optional:_Using_the_Windows_Command_Prompt" title="Optional: Using the Windows Command Prompt">Optional: Using the Windows Command Prompt</a></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week02" title="Pythonlearn:resources-week02"> Chapter 2: Variables and Expressions</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter02" title="Pythonlearn:exercises-chapter02"> Chapter 2 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week03" title="Pythonlearn:resources-week03"> Chapter 3: Conditional code</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter03" title="Pythonlearn:exercises-chapter03"> Chapter 3 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week04" title="Pythonlearn:resources-week04"> Chapter 4: Functions </a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter04" title="Pythonlearn:exercises-chapter04"> Chapter 4 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week05" title="Pythonlearn:resources-week05"> Chapter 5: Loops and Iteration</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter05" title="Pythonlearn:exercises-chapter05"> Chapter 5 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week06" title="Pythonlearn:resources-week06"> Chapter 6: Strings</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter06" title="Pythonlearn:exercises-chapter06"> Chapter 6 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week07" title="Pythonlearn:resources-week07"> Chapter 7: Files </a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter07" title="Pythonlearn:exercises-chapter07"> Chapter 7 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week08" title="Pythonlearn:resources-week08"> Chapter 8: Lists </a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter08" title="Pythonlearn:exercises-chapter08"> Chapter 8 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week09" title="Pythonlearn:resources-week09"> Chapter 9: Dictionaries</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter09" title="Pythonlearn:exercises-chapter09"> Chapter 9 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week10" title="Pythonlearn:resources-week10"> Chapter 10: Tuples </a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter10" title="Pythonlearn:exercises-chapter10"> Chapter 10 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week11" title="Pythonlearn:resources-week11"> Chapter 11: Regular Expressions</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter11" title="Pythonlearn:exercises-chapter11"> Chapter 11 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week12" title="Pythonlearn:resources-week12"> Chapter 12: Networked Programs</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter12" title="Pythonlearn:exercises-chapter12"> Chapter 12 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week13" title="Pythonlearn:resources-week13"> Chapter 13: Using Web Services</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter13" title="Pythonlearn:exercises-chapter13"> Chapter 13 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week14" title="Pythonlearn:resources-week14"> Chapter 14: Using Databases and Structured Query Language (SQL)</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter14" title="Pythonlearn:exercises-chapter14"> Chapter 14 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week15" title="Pythonlearn:resources-week15"> Chapter 15: Visualizing Data</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter15" title="Pythonlearn:exercises-chapter15"> Chapter 15 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week16" title="Pythonlearn:resources-week16"> Chapter 16: Automating Common Tasks On Your Computer</a>
+
 <ul>
 <li><a href="/wiki/index.php/Pythonlearn:exercises-chapter16" title="Pythonlearn:exercises-chapter16"> Chapter 16 Exercises</a></li>
 </ul></li>
 <li><a href="/wiki/index.php/Pythonlearn:resources-week99" title="Pythonlearn:resources-week99"> Summary / Future </a></li>
-<li><a href="/wiki/index.php/Pythonlearn:resources-glossary-by-chapter" title="Pythonlearn:resources-glossary-by-chapter"> Glossary by Chapter</a> </li>
+<li><a href="/wiki/index.php/Pythonlearn:resources-glossary-by-chapter" title="Pythonlearn:resources-glossary-by-chapter"> Glossary by Chapter</a>  </li>
 <li><a href="/wiki/index.php/Pythonlearn:Complete_Glossary" title="Pythonlearn:Complete Glossary"> Complete Glossary</a></li>
 </ul>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 3/1000000
@@ -92,9 +109,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3952-0!*!0!*!*!*!* and timestamp 20161126073236 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:Resources&amp;oldid=32801">https://share.coursera.org/wiki/index.php?title=Pythonlearn:Resources&amp;oldid=32801</a>"</div>
-<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li><li><a href="/wiki/index.php/Category:Programming_for_Everybody" title="Category:Programming for Everybody">Programming for Everybody</a></li></ul></div></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li><li><a href="/wiki/index.php/Category:Programming_for_Everybody" title="Category:Programming for Everybody">Programming for Everybody</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

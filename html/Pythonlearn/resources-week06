@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week06</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week06</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes:_Strings"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes: Strings</span></a>
 <ul>
@@ -39,14 +39,14 @@
 <p>For our purpose returns the length the string.</p>
 <p>.find():</p>
 <code><pre>    Use the .find() function when you want to know the position of a character or a sub string  within a string. 
-         To find the position of the "3" in the string "0123456": 
-         data="0123456"
+         To find the position of the &quot;3&quot; in the string &quot;0123456&quot;: 
+         data=&quot;0123456&quot;
          pos=data.find('3')
          print pos
          &gt;3
 
-         To find the position of "l" in "realmadrid":
-         word="realmadrid"
+         To find the position of &quot;l&quot; in &quot;realmadrid&quot;:
+         word=&quot;realmadrid&quot;
          pos=word.find('l')
          print pos
          &gt;3
@@ -57,7 +57,7 @@
          print pos
          &gt;2
 
-       (Note: an error you may get is "Expected character buffer," which can happen if you omit the quotation marks from your string.)
+       (Note: an error you may get is &quot;Expected character buffer,&quot; which can happen if you omit the quotation marks from your string.)
 </pre></code>
 <p>.upper():</p>
 <code><pre>    Use the .upper() function to capitalize each character in the given string.
@@ -69,7 +69,7 @@
 <p>.replace()</p>
 <code><pre>    Use the .replace()to search and replace a character or letter in a given string.
         data='Hello Python'
-        rpld=data.replace("Python","Leo")
+        rpld=data.replace(&quot;Python&quot;,&quot;Leo&quot;)
         print rpld
         &gt;Hello Leo
 </pre></code>
@@ -115,7 +115,7 @@
        test new line
 
 
-       Case2: But, in this case if we apply .strip() to var and print the result, the blank line "disappear"
+       Case2: But, in this case if we apply .strip() to var and print the result, the blank line &quot;disappear&quot;
 
        &gt;&gt;&gt; print var.strip()
        test new line
@@ -123,7 +123,7 @@
 
        Case3: Another example to clarify. This time we apply strip() directly and obtain only the phrase:
 
-       &gt;&gt;&gt; "this is another new line\n".strip()
+       &gt;&gt;&gt; &quot;this is another new line\n&quot;.strip()
        'this is another new line'
 </pre></code>
 <h1> <span class="mw-headline" id="dir.28.29">dir()</span></h1>
@@ -140,31 +140,32 @@
 <p>age = "30"</p>
 <p>print name + " is " + age + " years old"</p>
 <p>could be replaced with the much simpler (method called string interpolation)</p>
-<p>print "%s is %d years old" % (name, age) -- % is an operator that will allow us to replace the %s with a literal 
+<p>print "%s is&#160;%d years old"&#160;% (name, age) --&#160;% is an operator that will allow us to replace the&#160;%s with a literal 
   or the value of a  variable
 <pre>
-Above syntax gives an "TypeError: %d format: a number is required, not str"
-print "%s is %d years old" % (name, int(age)) --Added int conversion
+Above syntax gives an &quot;TypeError:&#160;%d format: a number is required, not str&quot;
+print &quot;%s is&#160;%d years old&quot;&#160;% (name, int(age)) --Added int conversion
 </pre>
   Since Python 2.6 (and including Python 3), an interpolation method named #format is available.</p>
 <p>sample text: "This line of {} is being used to demonstrate the #format {}.".format('text', 'method')</p>
 <p>yields: "this line of text is being used to demonstrate the #format method.</p>
-<p>read more here:  <a class="external free" href="https://docs.python.org/2/library/string.html#format-string-syntax" rel="nofollow">https://docs.python.org/2/library/string.html#format-string-syntax</a></p>
+<p>read more here:  <a rel="nofollow" class="external free" href="https://docs.python.org/2/library/string.html#format-string-syntax">https://docs.python.org/2/library/string.html#format-string-syntax</a></p>
 <p>This method is powerful, flexible, and intuitive. </p>
 <p>Can we say that "join strings with variables" is a concatenation? </p>
 <p>I think this is a better way to concatenate variables of different data types all at the same time. Like for example in this case we are concatenating name with age and if age was a decimal value it would still work fine. </p>
 <p>name = 'john'</p>
 <p>age = 36</p>
-<p>print "%s is %d years old" %(name,age)</p>
+<p>print "%s is&#160;%d years old"&#160;%(name,age)</p>
 <h1> <span class="mw-headline" id="Chapter_6_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter06" title="Pythonlearn:exercises-chapter06"> Chapter 6 Exercises</a></span></h1>
 <p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
 <h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
 <p>This is a nice page, listing all the methods for String manipulation in Python -
-<a class="external free" href="https://docs.python.org/release/2.5.2/lib/string-methods.html" rel="nofollow">https://docs.python.org/release/2.5.2/lib/string-methods.html</a></p>
-<p><strong>N.B.</strong> <a class="external free" href="https://docs.python.org/release/2.7.10/library/stdtypes.html#string-methods" rel="nofollow">https://docs.python.org/release/2.7.10/library/stdtypes.html#string-methods</a> is a more recent and up-to-date page for string methods</p>
-<p>Python 2.7.8 String Services - <a class="external free" href="https://docs.python.org/2/library/strings.html" rel="nofollow">https://docs.python.org/2/library/strings.html</a></p>
+<a rel="nofollow" class="external free" href="https://docs.python.org/release/2.5.2/lib/string-methods.html">https://docs.python.org/release/2.5.2/lib/string-methods.html</a></p>
+<p><strong>N.B.</strong> <a rel="nofollow" class="external free" href="https://docs.python.org/release/2.7.10/library/stdtypes.html#string-methods">https://docs.python.org/release/2.7.10/library/stdtypes.html#string-methods</a> is a more recent and up-to-date page for string methods</p>
+<p>Python 2.7.8 String Services - <a rel="nofollow" class="external free" href="https://docs.python.org/2/library/strings.html">https://docs.python.org/2/library/strings.html</a></p>
 <p>Add resources for this chapter to this page..</p>
-<p>Have a look at this section of the Python 2.7.8 documentation:- <a class="external free" href="https://docs.python.org/2/library/stdtypes.html#string-methods" rel="nofollow">https://docs.python.org/2/library/stdtypes.html#string-methods</a></p>
+<p>Have a look at this section of the Python 2.7.8 documentation:- <a rel="nofollow" class="external free" href="https://docs.python.org/2/library/stdtypes.html#string-methods">https://docs.python.org/2/library/stdtypes.html#string-methods</a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 83/1000000
@@ -172,9 +173,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3961-0!*!0!!en!*!* and timestamp 20161126063705 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week06&amp;oldid=34452">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week06&amp;oldid=34452</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

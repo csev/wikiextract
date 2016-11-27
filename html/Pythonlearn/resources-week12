@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week12</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week12</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
 <ul>
@@ -26,7 +26,7 @@
 <p>Your browser sends commands across the Internet to servers, which run server languages like PHP, MySql, etc., and send stuff back. We’re writing Python programs that use the same protocol as your web browser so we can read information across the Internet. </p>
 <p>Transport Control Protocol (TCP) is built on top of IP (Internet Protocol). It assumes IP might lose some data, so it stores and transmits data if it seems to be lost. It handles “flow control.” 
 Peer-to-peer transport layer: computer applications effectively make telephone calls from one application to another. We don’t worry too much about the details of the connection, just like when you make a phone call, you don’t care so much about how it works, just that you and the other person can hear each other. </p>
-<p>Socket: “In computer networking, an Internet socket or network socket is an endpoint of a bidirectional inter-process communication flow across an Internet Protocol-based computer network, such as the Internet.” A socket is a concept, in which two computer applications talk across a network. Like a file handle connects us to a disc drive, a socket is a way to connect to another process and get data back. File handles and sockets are like portholes that allow us to send and receive information to and from the outside world.<br/>
+<p>Socket: “In computer networking, an Internet socket or network socket is an endpoint of a bidirectional inter-process communication flow across an Internet Protocol-based computer network, such as the Internet.” A socket is a concept, in which two computer applications talk across a network. Like a file handle connects us to a disc drive, a socket is a way to connect to another process and get data back. File handles and sockets are like portholes that allow us to send and receive information to and from the outside world.<br />
 Lots of different applications can run on the same server, so these applications have what we call a TCP Port Number, which is like an extension on a phone number. (The IP address is like the main phone number.) It allows you to talk specifically to the web server on a host, or the email server on a host, etc. </p>
 <p>A client initiates a connection, the server responds to it.</p>
 <p>Port 80 is the one we use the most, the port for a web server (HTTP). The port number is determined by the protocol.  </p>
@@ -57,9 +57,9 @@ for line in filehandle:
 Is it a particular part of a 'soup' object indicated by the 'a'?
 Is it a method of 'soup' applied to 'a'?</p>
 <p>When asking for type(soup), I'm getting &lt;class 'BeautifulSoup.BeautifulSoup'&gt; which doesn't help my understanding...</p>
-<p>I feel silly but I did try searching for soup() and couldn't find any answers, which makes me think I'm thinking of it wrong :) What exactly am I saying - the long human language version, please! - when I'm saying tags=soup('a')?</p>
+<p>I feel silly but I did try searching for soup() and couldn't find any answers, which makes me think I'm thinking of it wrong&#160;:) What exactly am I saying - the long human language version, please! - when I'm saying tags=soup('a')?</p>
 <p>I keep seeing expressions with findAll (or find_all for BS4), never a shortcut like tags=soup('a'):</p>
-<code><pre>for a in soup.find_all('a', href=True): print "Found the URL:", a['href']
+<code><pre>for a in soup.find_all('a', href=True): print &quot;Found the URL:&quot;, a['href']
 </pre></code>
 <p>or</p>
 <code><pre>href_tags = soup.find_all(href=True)
@@ -68,7 +68,7 @@ Is it a method of 'soup' applied to 'a'?</p>
     <strong>for tag in tags:
     print tag.get('href', None)</strong></p>
 <p>(a) Saw an opinion that since we limit the search for href to the contents of the &lt;a&gt; tags, checking for None would be redundant since all &lt;a&gt; tags contain an href attribute, and the following was suggested:</p>
-<code><pre>links = soup.find_all('a',attrs={'href': re.compile("^http://")})
+<code><pre>links = soup.find_all('a',attrs={'href': re.compile(&quot;^http://&quot;)})
 
 for tag in links:
 link = tag['href']
@@ -76,7 +76,7 @@ print link
 </pre></code>
 <p>(b) <strong>tag.get()</strong>
 - what exactly am I doing and what are the options in the parentheses?</p>
-<p>Any word of wisdom on it?.. I have successfully used the above expressions but I apparently don't dig either of them :(</p>
+<p>Any word of wisdom on it?.. I have successfully used the above expressions but I apparently don't dig either of them&#160;:(</p>
 <p><strong>Mark Montgomery, Mentor:</strong></p>
 <p>The 'a' is not specific to the soup object necessarily. Soup is extracting portions of the HTML file. In this case, the &lt;a&gt; is referring to an anchor tag. As you can see on that link I provided, there are many types of tags in HTML.</p>
 <p>When you create the soup item, Beautifulsoup parses the HTML file and extracts the tag contents, etc for you to use in your code. Then when you say tags=soup('a'), you are assigning the list of &lt;a&gt; anchor data to a variable called 'tags'.</p>
@@ -87,7 +87,7 @@ print link
 <p>Some of what you ask is HTML , BS4, regex course which isn't what this course is.</p>
 <p>In your 2a "checking for None would be redundant since all &lt;a&gt; tags contain an href attribute, and the following was suggested:"</p>
 <p>It depends on the data, as not all anchor tags have an href, like</p>
-<code><pre>&lt;a name="section1"&gt;
+<code><pre>&lt;a name=&quot;section1&quot;&gt;
 </pre></code>
 <p>or href appears in a link tag that is not an &lt;a&gt;</p>
 <p><strong>Student's Question:</strong></p>
@@ -112,11 +112,11 @@ for tag in links:
 <p>None is the same as in earlier parts of the course, the default value in Part 2 it was 
     .get(data, 0) + 1.</p>
 <p>You can see this with a little example,</p>
-<code><pre>&gt;&gt;&gt; sample_dict = {"k1":1, "k2":2}
+<code><pre>&gt;&gt;&gt; sample_dict = {&quot;k1&quot;:1, &quot;k2&quot;:2}
 
 key is in dictionary, returns value
 
-&gt;&gt;&gt; data = sample_dict.get("k1",0)
+&gt;&gt;&gt; data = sample_dict.get(&quot;k1&quot;,0)
 
 &gt;&gt;&gt; data
 
@@ -124,7 +124,7 @@ key is in dictionary, returns value
 
 data not in dictionary, returns default 0
 
-&gt;&gt;&gt; data = sample_dict.get("k3",0)
+&gt;&gt;&gt; data = sample_dict.get(&quot;k3&quot;,0)
 
 &gt;&gt;&gt; data
 
@@ -132,7 +132,7 @@ data not in dictionary, returns default 0
 
 change default to None, same lookup
 
-&gt;&gt;&gt; data = sample_dict.get("k3",None)
+&gt;&gt;&gt; data = sample_dict.get(&quot;k3&quot;,None)
 
 &gt;&gt;&gt; data
 
@@ -146,6 +146,7 @@ True
 </pre></code>
 <h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
 <p>Add resources for this chapter to this page..</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 93/1000000
@@ -153,9 +154,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:5398-0!*!0!!en!*!* and timestamp 20161126102117 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week12&amp;oldid=34375">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week12&amp;oldid=34375</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

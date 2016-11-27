@@ -1,24 +1,24 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:Online-Chat</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:Online-Chat</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
 <h3> <span class="mw-headline" id="Online_chat">Online chat</span></h3>
-<p>Here is an internet chat relay (irc), accessible <a class="external text" href="http://webchat.freenode.net/" rel="nofollow">HERE</a> ; join channel : <strong>#pr4e</strong></p>
-<p>You can also configure your favorite irc client with the following informations :  server= irc.freenode.net ; port= 6667 ; channel= #pr4e</p>
+<p>Here is an internet chat relay (irc), accessible <a rel="nofollow" class="external text" href="http://webchat.freenode.net/">HERE</a>&#160;; join channel&#160;: <strong>#pr4e</strong></p>
+<p>You can also configure your favorite irc client with the following informations&#160;:  server= irc.freenode.net&#160;; port= 6667&#160;; channel= #pr4e</p>
 <p>It is <strong>important</strong> to note that this is a student initiative, hence <strong>not</strong> an <strong>official</strong> coursera feature. Only expect help from other students there.</p>
-<hr/>
+<hr />
 <h3> <span class="mw-headline" id="Using_the_Freenode_web_site_to_connect">Using the Freenode web site to connect</span></h3>
-<p>If you haven't used IRC before, you don't need a client or browser extension. Freenode has a web client: <a class="external free" href="http://webchat.freenode.net/" rel="nofollow">http://webchat.freenode.net/</a> </p>
+<p>If you haven't used IRC before, you don't need a client or browser extension. Freenode has a web client: <a rel="nofollow" class="external free" href="http://webchat.freenode.net/">http://webchat.freenode.net/</a>  </p>
 <p>All you need is a (somewhat unique) username, and the channel (chat room) name: pr4e. Enter those (don't use "philalethe", enter your preferred name), fill out the captcha, and hit connect.</p>
-<p><a class="image" href="/wiki/index.php/File:Freenode-pr4e-IRCconnect.jpg"><img alt='"Image of the connection page for the Freenode web client" 533×375px' height="375" src="/wiki/images/3/31/Freenode-pr4e-IRCconnect.jpg" width="533"/></a></p>
+<p><a href="/wiki/index.php/File:Freenode-pr4e-IRCconnect.jpg" class="image"><img alt="&quot;Image of the connection page for the Freenode web client&quot; 533×375px" src="/wiki/images/3/31/Freenode-pr4e-IRCconnect.jpg" width="533" height="375" /></a></p>
 <p>Then you'll see this:</p>
-<p><a class="image" href="/wiki/index.php/File:Freenode-pr4e-IRCchannel.JPG"><img alt='"Image of IRC channel on Freenode" 533×460px' height="664" src="/wiki/images/a/a7/Freenode-pr4e-IRCchannel.JPG" width="770"/></a></p>
+<p><a href="/wiki/index.php/File:Freenode-pr4e-IRCchannel.JPG" class="image"><img alt="&quot;Image of IRC channel on Freenode&quot; 533×460px" src="/wiki/images/a/a7/Freenode-pr4e-IRCchannel.JPG" width="770" height="664" /></a></p>
 <p>Don't worry if you don't see any chat going on. It only shows what's been said since <em>you</em> logged on.  </p>
-<p>Circled in blue is the channel name. The tab next to it, "Status" is information from the server. Make sure #pr4e is highlighted. If you don't see that tab, type /join pr4e into the text box. Users are to the right (highlighted in yellow). Text input is on the bottom.   </p>
+<p>Circled in blue is the channel name. The tab next to it, "Status" is information from the server. Make sure &#35;pr4e is highlighted. If you don't see that tab, type /join pr4e into the text box. Users are to the right (highlighted in yellow). Text input is on the bottom.   </p>
 <p>That's it. Come say hi!  </p>
 <h3> <span class="mw-headline" id="Commands">Commands</span></h3>
 <ul>
@@ -28,13 +28,14 @@
 <li>/part to leave the channel</li>
 <li>/quit to leave the server</li>
 </ul>
-<p>Message to NickServ about your nickname :</p>
+<p>Message to NickServ about your nickname&#160;:</p>
 <ul>
 <li>/msg NickServ REGISTER YOURPASSWORD EMAILADDRESS  - Register your nick on the server (recommended). If you register your name, you'll be asked to identify yourself with a password each time you log on. Use the following:  </li>
 <li>/msg NickServ IDENTIFY YOURPASSWORD - Log in to your account.</li>
 </ul>
-<p>About ChanServ and NickServ: <a class="external free" href="http://www.esper.net/chanserv.php" rel="nofollow">http://www.esper.net/chanserv.php</a><br/>
-About Freenode: <a class="external free" href="https://freenode.net/faq.shtml" rel="nofollow">https://freenode.net/faq.shtml</a></p>
+<p>About ChanServ and NickServ: <a rel="nofollow" class="external free" href="http://www.esper.net/chanserv.php">http://www.esper.net/chanserv.php</a><br />
+About Freenode: <a rel="nofollow" class="external free" href="https://freenode.net/faq.shtml">https://freenode.net/faq.shtml</a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 4/1000000
@@ -42,9 +43,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:4382-0!*!*!!*!2!* and timestamp 20161127022906 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:Online-Chat&amp;oldid=29092">https://share.coursera.org/wiki/index.php?title=Pythonlearn:Online-Chat&amp;oldid=29092</a>"</div>
-<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li></ul></div></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

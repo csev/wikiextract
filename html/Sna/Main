@@ -1,14 +1,14 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Sna:Main</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>Welcome to the Social Network Analysis wiki page!
-<a class="image" href="/wiki/index.php/File:Snacourselogo.jpeg"><img alt="Snacourselogo.jpeg" height="180" src="/wiki/images/thumb/a/a1/Snacourselogo.jpeg/195px-Snacourselogo.jpeg" width="195"/></a> </p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sna:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Welcome to the Social Network Analysis wiki page!
+<a href="/wiki/index.php/File:Snacourselogo.jpeg" class="image"><img alt="Snacourselogo.jpeg" src="/wiki/images/thumb/a/a1/Snacourselogo.jpeg/195px-Snacourselogo.jpeg" width="195" height="180" /></a> </p>
 <p>Please join in and help share any useful advice, tips or suggestions with your fellow course participants. Feel free to create pages as needed. To see how to edit/create a page, see "Help" on the left navbar.</p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Pre-Course_Survey"><span class="tocnumber">1</span> <span class="toctext">Pre-Course Survey</span></a></li>
 <li class="toclevel-1"><a href="#Signature_Track"><span class="tocnumber">2</span> <span class="toctext">Signature Track</span></a></li>
@@ -49,124 +49,124 @@
 </ul>
 <h2> <span class="mw-headline" id="Signature_Track">Signature Track</span></h2>
 <h2> <span class="mw-headline" id="SNA_Course_FAQ">SNA Course FAQ</span></h2>
-<p><a class="external text" href="https://class.coursera.org/sna-002/wiki/view?page=FrequentlyAskedQuestions" rel="nofollow">SNA Course FAQ</a> </p>
-<p>Come follow us on <a class="external text" href="https://twitter.com/SNAcourse" rel="nofollow">SNA Twitter</a></p>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/sna-002/wiki/view?page=FrequentlyAskedQuestions">SNA Course FAQ</a> </p>
+<p>Come follow us on <a rel="nofollow" class="external text" href="https://twitter.com/SNAcourse">SNA Twitter</a></p>
 <h2> <span class="mw-headline" id="Datasets">Datasets</span></h2>
 <ul>
-<li><a class="external text" href="http://www.casos.cs.cmu.edu/computational_tools/data2.php" rel="nofollow">CASOS</a></li>
-<li><a class="external text" href="http://datamob.org/datasets" rel="nofollow">Datamob</a></li>
-<li><a class="external text" href="http://www.cs.cmu.edu/~enron/" rel="nofollow">Enron Email Dataset</a></li>
-<li><a class="external text" href="http://www-personal.umich.edu/~mejn/netdata/" rel="nofollow">Mark Newman's network data collection</a></li>
-<li><a class="external text" href="http://www.nber.org/data/" rel="nofollow">National Bureau of Economic Research</a></li>
-<li><a class="external text" href="http://wiki.gephi.org/index.php/Datasets" rel="nofollow">Gephi Sample Datasets</a></li>
-<li><a class="external text" href="http://www.quandl.com/" rel="nofollow">Quandl</a></li>
-<li><a class="external text" href="http://snap.stanford.edu/data/" rel="nofollow">Stanford large network data set collection</a></li>
-<li><a class="external text" href="http://www.infochimps.com/datasets/twitter-census-conversation-metrics-one-year-of-urls-hashtags-sm" rel="nofollow">Twitter Census - Conversation Metrics</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.casos.cs.cmu.edu/computational_tools/data2.php">CASOS</a></li>
+<li><a rel="nofollow" class="external text" href="http://datamob.org/datasets">Datamob</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.cmu.edu/~enron/">Enron Email Dataset</a></li>
+<li><a rel="nofollow" class="external text" href="http://www-personal.umich.edu/~mejn/netdata/">Mark Newman's network data collection</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.nber.org/data/">National Bureau of Economic Research</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.gephi.org/index.php/Datasets">Gephi Sample Datasets</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.quandl.com/">Quandl</a></li>
+<li><a rel="nofollow" class="external text" href="http://snap.stanford.edu/data/">Stanford large network data set collection</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.infochimps.com/datasets/twitter-census-conversation-metrics-one-year-of-urls-hashtags-sm">Twitter Census - Conversation Metrics</a></li>
 </ul>
 <h2> <span class="mw-headline" id="Data_Visualization">Data Visualization</span></h2>
 <ul>
-<li><a class="external text" href="http://d3js.org/" rel="nofollow">D3.js - Data-Driven Documents</a> D3.js is a JavaScript library for manipulating data-based documents</li>
-<li><a class="external text" href="http://flowingdata.com/" rel="nofollow">FlowingData</a> Data visualization examples and tutorials</li>
-<li><a class="external text" href="http://www-958.ibm.com/software/analytics/manyeyes/" rel="nofollow">Many Eyes</a> Data visualization tools from IBM</li>
-<li><a class="external text" href="http://visual.ly/network-graph-programming-languages-influence" rel="nofollow">visual.ly</a> Interactive network graph example</li>
+<li><a rel="nofollow" class="external text" href="http://d3js.org/">D3.js - Data-Driven Documents</a> D3.js is a JavaScript library for manipulating data-based documents</li>
+<li><a rel="nofollow" class="external text" href="http://flowingdata.com/">FlowingData</a> Data visualization examples and tutorials</li>
+<li><a rel="nofollow" class="external text" href="http://www-958.ibm.com/software/analytics/manyeyes/">Many Eyes</a> Data visualization tools from IBM</li>
+<li><a rel="nofollow" class="external text" href="http://visual.ly/network-graph-programming-languages-influence">visual.ly</a> Interactive network graph example</li>
 </ul>
 <h2> <span class="mw-headline" id="SNA_Tools">SNA Tools</span></h2>
 <h3> <span class="mw-headline" id="Additional_Programming_Resources">Additional Programming Resources</span></h3>
 <ul>
 <li><a href="/wiki/index.php/SNA:Dataset" title="SNA:Dataset">Loading Network Data without Programming</a></li>
-<li><a class="external text" href="https://www.coursera.org/course/interactivepython" rel="nofollow">An Introduction to Interactive Programming in Python</a></li>
-<li><a class="external text" href="http://www.codecademy.com" rel="nofollow">Code Academy</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.coursera.org/course/interactivepython">An Introduction to Interactive Programming in Python</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.codecademy.com">Code Academy</a></li>
 </ul>
 <h3> <span class="mw-headline" id="iGraph">iGraph</span></h3>
 <ul>
-<li>The network analysis library we will be using in particular is <a class="external text" href="http://igraph.sourceforge.net/documentation.html" rel="nofollow">igraph</a></li>
+<li>The network analysis library we will be using in particular is <a rel="nofollow" class="external text" href="http://igraph.sourceforge.net/documentation.html">igraph</a></li>
 <li>iGraph has some built-in demos, be sure to check them out, demo(package="igraph"), or specifically e.g. demo(centrality)</li>
-<li><a class="external text" href="http://igraph.sourceforge.net/igraphbook/igraphbook-creating.html" rel="nofollow">iGraph Tutorial - incomplete</a></li>
-<li><a class="external text" href="http://hal.elte.hu/~nepusz/development/igraph/tutorial/tutorial.html" rel="nofollow">python-igraph Tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="http://igraph.sourceforge.net/igraphbook/igraphbook-creating.html">iGraph Tutorial - incomplete</a></li>
+<li><a rel="nofollow" class="external text" href="http://hal.elte.hu/~nepusz/development/igraph/tutorial/tutorial.html">python-igraph Tutorial</a></li>
 </ul>
 <h3> <span class="mw-headline" id="Gephi">Gephi</span></h3>
 <ul>
-<li>Download <a class="external text" href="http://gephi.org/" rel="nofollow">Gephi</a> and explore some of its <a class="external text" href="https://gephi.org/users/" rel="nofollow">tutorials</a>.</li>
+<li>Download <a rel="nofollow" class="external text" href="http://gephi.org/">Gephi</a> and explore some of its <a rel="nofollow" class="external text" href="https://gephi.org/users/">tutorials</a>.</li>
 <li>Check out our <a href="/wiki/index.php/Sna:Gephi" title="Sna:Gephi">Gephi page</a> (for course-specific topics/troubleshooting).</li>
-<li><a class="external text" href="http://blog.ouseful.info/2011/07/07/visualising-twitter-friend-connections-using-gephi-an-example-using-wireduk-friends-network/" rel="nofollow">Using Gephi Tool for visualizing twitter network</a></li>
-<li><a class="external text" href="https://gephi.org/2011/the-egyptian-revolution-on-twitter/" rel="nofollow">The Egyptian Revolution on Twitter</a></li>
+<li><a rel="nofollow" class="external text" href="http://blog.ouseful.info/2011/07/07/visualising-twitter-friend-connections-using-gephi-an-example-using-wireduk-friends-network/">Using Gephi Tool for visualizing twitter network</a></li>
+<li><a rel="nofollow" class="external text" href="https://gephi.org/2011/the-egyptian-revolution-on-twitter/">The Egyptian Revolution on Twitter</a></li>
 </ul>
 <h3> <span class="mw-headline" id="GML">GML</span></h3>
 <ul>
-<li><a class="external text" href="https://class.coursera.org/sna-2012-001/forum/thread?thread_id=435" rel="nofollow">How to create a GML file</a></li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/sna-2012-001/forum/thread?thread_id=435">How to create a GML file</a></li>
 </ul>
 <h3> <span class="mw-headline" id="Mining_the_Social_Web">Mining the Social Web</span></h3>
 <ul>
-<li><a class="external text" href="https://github.com/ptwobrussell/Mining-the-Social-Web" rel="nofollow">Mining the Social Web GitHub</a></li>
-<li><a class="external text" href="https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition" rel="nofollow">Mining the Social Web (2nd Edition) GitHub</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/ptwobrussell/Mining-the-Social-Web">Mining the Social Web GitHub</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition">Mining the Social Web (2nd Edition) GitHub</a></li>
 </ul>
 <h3> <span class="mw-headline" id="NetLogo">NetLogo</span></h3>
 <ul>
 <li>For help running NetLogo, please read our  <a href="/wiki/index.php/Sna:NetLogo" title="Sna:NetLogo">NetLogo wiki page</a>.</li>
-<li>For general NetLogo demonstrations <a class="external text" href="http://ccl.northwestern.edu/netlogo/index.shtml" rel="nofollow">here</a></li>
-<li><a class="external text" href="http://www.ladamic.com/netlearn/" rel="nofollow">Lada's collection of network-specific demos</a></li>
+<li>For general NetLogo demonstrations <a rel="nofollow" class="external text" href="http://ccl.northwestern.edu/netlogo/index.shtml">here</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.ladamic.com/netlearn/">Lada's collection of network-specific demos</a></li>
 </ul>
 <h3> <span class="mw-headline" id="Newt">Newt</span></h3>
 <ul>
-<li><a class="external text" href="https://github.com/psychemedia/newt" rel="nofollow">Newt</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/psychemedia/newt">Newt</a></li>
 </ul>
 <h3> <span class="mw-headline" id="NodeXL">NodeXL</span></h3>
 <ul>
-<li><a class="external text" href="http://nodexl.codeplex.com/" rel="nofollow">NodeXL</a></li>
+<li><a rel="nofollow" class="external text" href="http://nodexl.codeplex.com/">NodeXL</a></li>
 <li>Note: Windows OS and Office 2007 or 2010</li>
 </ul>
 <h3> <span class="mw-headline" id="R">R</span></h3>
 <ul>
-<li>R is freely available <a class="external text" href="http://www.r-project.org/" rel="nofollow">here</a>. </li>
-<li>For installation help, check <a class="external text" href="http://cran.r-project.org/doc/manuals/R-admin.html" rel="nofollow">here</a></li>
-<li>There are network analysis libraries for R such as <a class="external text" href="http://cran.r-project.org/web/packages/sna/index.html" rel="nofollow">SNA library</a> (see <a class="external text" href="http://www.jstatsoft.org/v24/i06/paper" rel="nofollow">Journal of Statistical Software article on sna package</a>).</li>
-<li>If you work using Gephi, you should take a look at <a class="external text" href="http://cran.r-project.org/web/packages/rgexf/index.html" rel="nofollow">rgexf</a> library. Works with gephi's gexf graph files.</li>
-<li>If you're running into issues with using R, be sure to first check out <a class="external text" href="http://www.rseek.org/" rel="nofollow">rseek</a> or <a class="external text" href="http://www.r-bloggers.com/my-main-resources-for-r-programming/" rel="nofollow">r-bloggers</a></li>
+<li>R is freely available <a rel="nofollow" class="external text" href="http://www.r-project.org/">here</a>. </li>
+<li>For installation help, check <a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/manuals/R-admin.html">here</a></li>
+<li>There are network analysis libraries for R such as <a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/sna/index.html">SNA library</a> (see <a rel="nofollow" class="external text" href="http://www.jstatsoft.org/v24/i06/paper">Journal of Statistical Software article on sna package</a>).</li>
+<li>If you work using Gephi, you should take a look at <a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/rgexf/index.html">rgexf</a> library. Works with gephi's gexf graph files.</li>
+<li>If you're running into issues with using R, be sure to first check out <a rel="nofollow" class="external text" href="http://www.rseek.org/">rseek</a> or <a rel="nofollow" class="external text" href="http://www.r-bloggers.com/my-main-resources-for-r-programming/">r-bloggers</a></li>
 </ul>
 <h3> <span class="mw-headline" id="Python">Python</span></h3>
 <ul>
-<li><a class="external text" href="http://networkx.lanl.gov/" rel="nofollow">NetworkX</a> is an Open Source <a class="external text" href="http://www.python.org/" rel="nofollow">Python</a> package for "the creation, manipulation, and study of the structure, dynamics, and functions of complex networks". There is a <a class="external text" href="http://spark-public.s3.amazonaws.com/sna/other/hw1_with_networkx.py" rel="nofollow">starting script</a> provided by the course creators.</li>
-<li>Also, you can use <a class="external text" href="http://www.sagemath.org" rel="nofollow">Sage</a>, an Open Source web-based Mathematica-like computational environment that contains NetworkX and also posses its own graph library.
+<li><a rel="nofollow" class="external text" href="http://networkx.lanl.gov/">NetworkX</a> is an Open Source <a rel="nofollow" class="external text" href="http://www.python.org/">Python</a> package for "the creation, manipulation, and study of the structure, dynamics, and functions of complex networks". There is a <a rel="nofollow" class="external text" href="http://spark-public.s3.amazonaws.com/sna/other/hw1_with_networkx.py">starting script</a> provided by the course creators.</li>
+<li>Also, you can use <a rel="nofollow" class="external text" href="http://www.sagemath.org">Sage</a>, an Open Source web-based Mathematica-like computational environment that contains NetworkX and also posses its own graph library.
 
 <ul>
 <li>Simple starting script <a href="/wiki/index.php/Sna:Sage_starting_script" title="Sna:Sage starting script">can be found</a> on this wiki.</li>
-<li>There are three important documentation pages: <a class="external text" href="http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html" rel="nofollow">general graph reference</a>, <a class="external text" href="http://www.sagemath.org/doc/reference/sage/graphs/graph.html" rel="nofollow">undirected graph reference</a> and <a class="external text" href="http://www.sagemath.org/doc/reference/sage/graphs/digraph.html" rel="nofollow">directed graph reference</a>.</li>
-<li>You can use <a class="external text" href="http://alpha.sagenb.org/" rel="nofollow">a public installation</a>, if you don't mind its slowness.</li>
+<li>There are three important documentation pages: <a rel="nofollow" class="external text" href="http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html">general graph reference</a>, <a rel="nofollow" class="external text" href="http://www.sagemath.org/doc/reference/sage/graphs/graph.html">undirected graph reference</a> and <a rel="nofollow" class="external text" href="http://www.sagemath.org/doc/reference/sage/graphs/digraph.html">directed graph reference</a>.</li>
+<li>You can use <a rel="nofollow" class="external text" href="http://alpha.sagenb.org/">a public installation</a>, if you don't mind its slowness.</li>
 </ul></li>
-<li><a class="external text" href="http://projects.skewed.de/graph-tool/" rel="nofollow">graph-tool</a> is "an efficient python module for manipulation and statistical analysis of graphs (a.k.a. networks). Contrary to most other python modules with similar functionality, the core data structures and algorithms are implemented in C++, making extensive use of template metaprogramming, based heavily on the Boost Graph Library. This confers a level of performance which is comparable (both in memory usage and computation time) to that of a pure C++ library."</li>
+<li><a rel="nofollow" class="external text" href="http://projects.skewed.de/graph-tool/">graph-tool</a> is "an efficient python module for manipulation and statistical analysis of graphs (a.k.a. networks). Contrary to most other python modules with similar functionality, the core data structures and algorithms are implemented in C++, making extensive use of template metaprogramming, based heavily on the Boost Graph Library. This confers a level of performance which is comparable (both in memory usage and computation time) to that of a pure C++ library."</li>
 </ul>
 <h3> <span class="mw-headline" id="Java">Java</span></h3>
 <ul>
-<li><a class="external text" href="http://jung.sourceforge.net" rel="nofollow">Jung - Java Universal Network/Graph Framework</a> </li>
-<li><a class="external text" href="http://neo4j.org" rel="nofollow">Neo4j</a> - a graph database</li>
-<li><a class="external text" href="https://github.com/tinkerpop/blueprints/wiki" rel="nofollow">Blueprints</a> - think JDBC, but for graph databases</li>
+<li><a rel="nofollow" class="external text" href="http://jung.sourceforge.net">Jung - Java Universal Network/Graph Framework</a> </li>
+<li><a rel="nofollow" class="external text" href="http://neo4j.org">Neo4j</a> - a graph database</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/tinkerpop/blueprints/wiki">Blueprints</a> - think JDBC, but for graph databases</li>
 </ul>
 <h3> <span class="mw-headline" id="JavaScript">JavaScript</span></h3>
 <ul>
-<li><a class="external text" href="http://d3js.org" rel="nofollow">D3.js</a> - D3: Data Driven Documents</li>
-<li><a class="external text" href="http://felix-kling.de/JSNetworkX/" rel="nofollow">JSNetworkX</a> - A port of the NetworkX graph library to JavaScript</li>
-<li><a class="external text" href="http://arborjs.org" rel="nofollow">arbor.js</a> - a graph visualization library using web workers and jQuery</li>
+<li><a rel="nofollow" class="external text" href="http://d3js.org">D3.js</a> - D3: Data Driven Documents</li>
+<li><a rel="nofollow" class="external text" href="http://felix-kling.de/JSNetworkX/">JSNetworkX</a> - A port of the NetworkX graph library to JavaScript</li>
+<li><a rel="nofollow" class="external text" href="http://arborjs.org">arbor.js</a> - a graph visualization library using web workers and jQuery</li>
 </ul>
 <h3> <span class="mw-headline" id="Talend">Talend</span></h3>
 <ul>
-<li><a class="external text" href="http://gabrielebaldassarre.com/build-graphs-for-social-network-analysis/" rel="nofollow">Talend: Building GML Graphs</a></li>
+<li><a rel="nofollow" class="external text" href="http://gabrielebaldassarre.com/build-graphs-for-social-network-analysis/">Talend: Building GML Graphs</a></li>
 </ul>
 <h3> <span class="mw-headline" id="Twitter">Twitter</span></h3>
 <ul>
-<li><a class="external text" href="http://twitter4j.org/en/index.html" rel="nofollow">Twitter4j</a></li>
-<li><a class="external text" href="https://groups.google.com/forum/?fromgroups#!forum/twitter4j" rel="nofollow">Twitter4j Dev Forum</a></li>
-<li><a class="external text" href="https://dev.twitter.com/" rel="nofollow">TwitterAPI</a></li>
-<li><a class="external text" href="http://www.laurentluce.com/posts/python-twitter-statistics-and-the-2012-french-presidential-election/" rel="nofollow">Python, Twitter and the 2012 French Presidential Election</a></li>
-<li><a class="external text" href="http://mentionmapp.com/#" rel="nofollow">Mentionmapp</a></li>
-<li><a class="external text" href="http://twiangulate.com/search/" rel="nofollow">Twiangulate</a></li>
-<li><a class="external text" href="http://iteractive.ca/sna/connect.php" rel="nofollow">Iteractive</a>: Suitable if you follow 340 people or less</li>
+<li><a rel="nofollow" class="external text" href="http://twitter4j.org/en/index.html">Twitter4j</a></li>
+<li><a rel="nofollow" class="external text" href="https://groups.google.com/forum/?fromgroups#!forum/twitter4j">Twitter4j Dev Forum</a></li>
+<li><a rel="nofollow" class="external text" href="https://dev.twitter.com/">TwitterAPI</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.laurentluce.com/posts/python-twitter-statistics-and-the-2012-french-presidential-election/">Python, Twitter and the 2012 French Presidential Election</a></li>
+<li><a rel="nofollow" class="external text" href="http://mentionmapp.com/#">Mentionmapp</a></li>
+<li><a rel="nofollow" class="external text" href="http://twiangulate.com/search/">Twiangulate</a></li>
+<li><a rel="nofollow" class="external text" href="http://iteractive.ca/sna/connect.php">Iteractive</a>: Suitable if you follow 340 people or less</li>
 </ul>
 <h3> <span class="mw-headline" id="LinkedIn">LinkedIn</span></h3>
 <ul>
-<li><a class="external text" href="http://inmaps.linkedinlabs.com/" rel="nofollow">LinkedIn Maps</a></li>
+<li><a rel="nofollow" class="external text" href="http://inmaps.linkedinlabs.com/">LinkedIn Maps</a></li>
 </ul>
 <h2> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h2>
-<p>You can access the lecture videos by going <a class="external text" href="https://class.coursera.org/sna-2012-001/lecture/index" rel="nofollow">here</a> </p>
+<p>You can access the lecture videos by going <a rel="nofollow" class="external text" href="https://class.coursera.org/sna-2012-001/lecture/index">here</a> </p>
 <ul>
 <li><p><a href="/wiki/index.php/Sna:Week1" title="Sna:Week1">Week 1: What are networks and what use is it to study them?</a></p></li>
 <li><p><a href="/wiki/index.php/Sna:Week2" title="Sna:Week2">Week 2: Random network models: Erdos-Renyi and Barabasi-Albert</a></p></li>
@@ -178,19 +178,20 @@
 <li><p><a href="/wiki/index.php/Sna:Week8" title="Sna:Week8">Week 8: SNA and online social networks</a></p></li>
 </ul>
 <h2> <span class="mw-headline" id="Suggested_Readings">Suggested Readings</span></h2>
-<p>Networks, Crowds &amp; Markets by Easley &amp; Kleinberg. See Ch 1-5,13-14,19-21 <a class="external text" href="http://www.cs.cornell.edu/home/kleinber/networks-book" rel="nofollow">online</a> or <a class="external text" href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf" rel="nofollow">pdf</a></p>
+<p>Networks, Crowds &amp; Markets by Easley &amp; Kleinberg. See Ch 1-5,13-14,19-21 <a rel="nofollow" class="external text" href="http://www.cs.cornell.edu/home/kleinber/networks-book">online</a> or <a rel="nofollow" class="external text" href="http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf">pdf</a></p>
 <h2> <span class="mw-headline" id="Research_and_Articles">Research and Articles</span></h2>
-<p><a class="external text" href="http://www.ams.org/samplings/feature-column/fc-2012-08" rel="nofollow">"It's a Small World After All"</a>: mathematical overview of small world models and experiments</p>
-<p><a class="external text" href="http://www.tedmed.com/videos-info?name=Albert-L%C3%A1szl%C3%B3_Barab%C3%A1si_at_TEDMED_2012&amp;q=updated&amp;year=all&amp;sid=175&amp;vid=257#.T8kiZ9ak9Ak.facebook" rel="nofollow">ALBERT-LÁSZLÓ BARABÁSI</a> @ TEDMED 2012</p>
+<p><a rel="nofollow" class="external text" href="http://www.ams.org/samplings/feature-column/fc-2012-08">"It's a Small World After All"</a>: mathematical overview of small world models and experiments</p>
+<p><a rel="nofollow" class="external text" href="http://www.tedmed.com/videos-info?name=Albert-L%C3%A1szl%C3%B3_Barab%C3%A1si_at_TEDMED_2012&amp;q=updated&amp;year=all&amp;sid=175&amp;vid=257#.T8kiZ9ak9Ak.facebook">ALBERT-LÁSZLÓ BARABÁSI</a> @ TEDMED 2012</p>
 <h2> <span class="mw-headline" id="Albert_-_Laszlo_Barabasi">Albert - Laszlo Barabasi</span></h2>
 <ul>
-<li><a class="external text" href="http://www.barabasilab.com/pubs.php" rel="nofollow">BarabasiLab</a>: all papers of Albert- Laszlo Barabasi in one website</li>
-<li><a class="external text" href="http://diseasome.eu/map.html" rel="nofollow">Diseasome</a>: explore the human disease network </li>
+<li><a rel="nofollow" class="external text" href="http://www.barabasilab.com/pubs.php">BarabasiLab</a>: all papers of Albert- Laszlo Barabasi in one website</li>
+<li><a rel="nofollow" class="external text" href="http://diseasome.eu/map.html">Diseasome</a>: explore the human disease network </li>
 </ul>
 <h2> <span class="mw-headline" id="Network_Terminology">Network Terminology</span></h2>
 <p><a href="/wiki/index.php/Terms" title="Terms">Terms</a></p>
 <h2> <span class="mw-headline" id="Technical_Support">Technical Support</span></h2>
 <p><a href="/wiki/index.php/SNA:Guess" title="SNA:Guess">Launching Applets without java-enabled web browsers</a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 2/1000000
@@ -198,9 +199,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:322-0!*!0!!en!2!* and timestamp 20161127014409 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:Main&amp;oldid=29039">https://share.coursera.org/wiki/index.php?title=Sna:Main&amp;oldid=29039</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,14 +1,14 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week03</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<p><a href="/wiki/index.php/Pythonlearn:exercises-chapter03" title="Pythonlearn:exercises-chapter03"> Chapter 3 Exercises</a><br/>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week03</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<p><a href="/wiki/index.php/Pythonlearn:exercises-chapter03" title="Pythonlearn:exercises-chapter03"> Chapter 3 Exercises</a><br />
 The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.  </p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes_-_Conditional_Execution"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes - Conditional Execution</span></a>
 <ul>
@@ -47,10 +47,10 @@ The above page is intended as a place for students to work out solutions and ans
 <p>Visualize python great tool for beginners</p>
 <p>Stanley Canning a few seconds ago
 I would really recommend students to use the visualizer that can be found at</p>
-<p><a class="external free" href="http://www.pythontutor.com/visualize.html#mode=edit" rel="nofollow">http://www.pythontutor.com/visualize.html#mode=edit</a></p>
+<p><a rel="nofollow" class="external free" href="http://www.pythontutor.com/visualize.html#mode=edit">http://www.pythontutor.com/visualize.html#mode=edit</a></p>
 <p>It goes through each line of code line by line and points out where you have an error unlike the python playground which gives an error message but no indication where you went wrong.</p>
 <p>It certainly helped me and I hope it helps others</p>
-<hr/>
+<hr />
 <p>Computer programs have to make decisions all the time.</p>
 <ul>
 <li>If the user presses the play button, play the corresponding song.</li>
@@ -58,14 +58,14 @@ I would really recommend students to use the visualizer that can be found at</p>
 <li>If the spaceship image touches the space-mine image, play the explosion sound and display the "Game Over!" image.</li>
 </ul>
 <p>Up until now we've been writing code that executes sequentially line by line from top to bottom without invoking any decision structures. But Python provides a way for us to execute alternative code if we want one desired output or another section of code if that is the more appropriate behavior. This is called <strong>conditional execution</strong>. Example:</p>
-<code><pre> if x &gt; 0 : print 'x is positive'
+<code><pre> if x &gt; 0&#160;: print 'x is positive'
 </pre></code>
 <p>The above code simply evaluates whether the number stored in variable <strong>x</strong> is greater than 0. If it is, the <code>print</code> will execute; if it is not, Python ignores it and moves on with the rest of your program. There are a lot of moving parts to this code, so let's break it down to its fundamentals.</p>
 <p><em>Nota Jenevain:</em> If you're using Python 3, do not forget to use parentheses when calling to print. Otherwise, the program won't work.</p>
 <h2> <span class="mw-headline" id="Basics_of_Conditional_Statements">Basics of Conditional Statements</span></h2>
 <p>Conditional statements let Python know it is about to enter a decision-making structure. The <code>if</code> statement is the simplest of the conditional statements (to read more on other conditional statements see <strong>Conditional Execution: More Complex Conditionals: Alternative Execution</strong> below). Conditional statements always end with the <code>:</code> colon character, after which the code you may want to execute is placed.</p>
 <p><em>Nota Bene:</em> In the above example the <code>print</code> function is placed on the same line as the <code>if</code> statement, immediately following the <code>:</code> character. This is an acceptable format if you only have one line of code you want to execute after your conditional statement. If there is a whole section of code, however, (often referred to as a <em>code block</em>) that you want to execute, the valid syntax is to place them in the following lines under the <code>if</code> and indent it 4 <code>space</code> characters in, forming a visual code block.</p>
-<code><pre>if x &gt; 0 :
+<code><pre>if x &gt; 0&#160;:
     print 'x is positive'
     print 'all other numbers bigger than x are probably positive as well'
 </pre></code>
@@ -99,10 +99,10 @@ I would really recommend students to use the visualizer that can be found at</p>
 <ul>
 <li><code>x == y</code></li>
 </ul></li>
-<li>Inequality ( != )
+<li>Inequality (&#160;!= )
 
 <ul>
-<li><code>x != y</code></li>
+<li><code>x&#160;!= y</code></li>
 </ul></li>
 </ul>
 <p><em>Nota Bene:</em> A common source of programming errors is accidentally confusing the double equals <code>==</code> <em>equality operator</em> with the single equals <code>=</code> <em>assignment operator</em>, which outside of the context of Python is more commonly associated with the mathematical equals sign. In Python <code>=</code> is the <em>assignment operator</em>, meaning it is strictly used for assigning values to variables whereas the <code>==</code> <em>equality operator</em> is a comparison operator that tests whether two values are equivalent and returns a <code>bool</code> value of <code>true</code> or <code>false.</code> Comparison operators look at variables but do not actually change their values.</p>
@@ -115,39 +115,39 @@ I would really recommend students to use the visualizer that can be found at</p>
 
 <ul>
 <li><code>and</code> checks whether both boolean expressions evaluate as true</li>
-<li><code>if x &gt; 0 and y &gt; 0 : print 'this line runs if both numbers are positive'</code></li>
+<li><code>if x &gt; 0 and y &gt; 0&#160;: print 'this line runs if both numbers are positive'</code></li>
 </ul></li>
 <li>Logical OR ( or )
 
 <ul>
 <li><code>or</code> checks whether either expression is evaluated as true</li>
-<li><code>if x &gt; 0 or y &gt; 0 : print 'this line runs if either x or y is evaluated as positive'</code></li>
+<li><code>if x &gt; 0 or y &gt; 0&#160;: print 'this line runs if either x or y is evaluated as positive'</code></li>
 </ul></li>
 <li>Logical NOT ( not )
 
 <ul>
 <li><code>not</code> negates a boolean expression, i.e. if the <code>bool</code> value returned is <code>false</code> then <code>not</code> evaluates to <code>true</code></li>
-<li><code>if not( x &gt; y ) : print 'this line runs when x is less than or equal to y'</code></li>
+<li><code>if not( x &gt; y )&#160;: print 'this line runs when x is less than or equal to y'</code></li>
 </ul></li>
 </ul>
 <p>Considering that A and B are boolean expressions, we can build the truth table presented below:</p>
 <table border="1">
 <caption>Logical operators truth table </caption>
-<tr>
-<th>A</th><th>B</th><th>A and B</th><th>A or B</th><th>not A</th>
-</tr>
-<tr>
-<td>true</td><td>true</td><td>true</td><td>true</td><td>false</td>
-</tr>
-<tr>
-<td>true</td><td>false</td><td>false</td><td>true</td><td>false</td>
-</tr>
-<tr>
-<td>false</td><td>true</td><td>false</td><td>true</td><td>true</td>
-</tr>
-<tr>
-<td>false</td><td>false</td><td>false</td><td>false</td><td>true</td>
-</tr>
+    <tr>
+        <th>A</th><th>B</th><th>A and B</th><th>A or B</th><th>not A</th>
+    </tr>
+    <tr>
+        <td>true</td><td>true</td><td>true</td><td>true</td><td>false</td>
+    </tr>
+    <tr>
+        <td>true</td><td>false</td><td>false</td><td>true</td><td>false</td>
+    </tr>
+    <tr>
+        <td>false</td><td>true</td><td>false</td><td>true</td><td>true</td>
+    </tr>
+    <tr>
+        <td>false</td><td>false</td><td>false</td><td>false</td><td>true</td>
+    </tr>
 </table>
 <h3> <span class="mw-headline" id="Conditional_Execution">Conditional Execution</span></h3>
 <ul>
@@ -161,11 +161,11 @@ I would really recommend students to use the visualizer that can be found at</p>
 <code><pre> #example 1:
 
  &gt;&gt;&gt;if x &gt; 0:
- ...    print ("x is positive")
+ ...    print (&quot;x is positive&quot;)
 
  #example 2:
 
- &gt;&gt;&gt;if x &lt; 0 :
+ &gt;&gt;&gt;if x &lt; 0&#160;:
  ...    pass      # need to handle negative value
 
  #example 3:
@@ -174,7 +174,7 @@ I would really recommend students to use the visualizer that can be found at</p>
 
  &gt;&gt;&gt;if x &lt; 10:
 
- ...    print "Small"
+ ...    print &quot;Small&quot;
  ...
  Small
  &gt;&gt;&gt;
@@ -182,25 +182,25 @@ I would really recommend students to use the visualizer that can be found at</p>
 <h3> <span class="mw-headline" id="Alternative_Execution">Alternative Execution</span></h3>
 <p>There are even more complex conditional statements available to exercise better control over code block execution in the form of the <code>elif</code> and <code>else</code> statements.</p>
 <p><code>elif</code> example:</p>
-<code><pre> if x % 2 == 0 :
+<code><pre> if x&#160;% 2 == 0&#160;:
      print 'x is an even number'
- elif not( x % 2 == 0) :
+ elif not( x&#160;% 2 == 0)&#160;:
      print 'x is an odd number'
 </pre></code>
 <p>An abbreviated amalgam of the words "else if", the <code>elif</code> statement follows beneath the initial <code>if</code> code block but de-indented. It is nearly identical to the <code>if</code> statement in its form.  You can provide another set of boolean expressions to test after the <code>elif</code> followed by a <code>:</code> and an alternative indented block of code to execute should that boolean logic evaluate as true instead of <code>if</code>.</p>
-<code><pre> if x % 2 == 0 :
+<code><pre> if x&#160;% 2 == 0&#160;:
      print 'x is an even number'
- else :
+ else&#160;:
      print 'x is an odd number'
 </pre></code>
 <p><code>else</code> is a final catch-all condition statement placed at the bottom of an conditional statement stack.</p>
 <h3> <span class="mw-headline" id="Chained_Conditionals">Chained Conditionals</span></h3>
 <p><code>if</code>, <code>elif</code>, and <code>else</code> statements can be combined to form a comprehensive logical flow to your program:</p>
-<code><pre> if x &gt; 0 :
+<code><pre> if x &gt; 0&#160;:
      print 'x is a positive number'
- elif x &lt; 0 :
+ elif x &lt; 0&#160;:
      print 'x is a negative number'
- else :
+ else&#160;:
      print 'x is 0'
 </pre></code>
 <p>You can place as many <code>elif</code> conditionals after the initial <code>if</code> statement as you deem necessary; however, be careful how you structure your chained conditionals. Python evaluates sequentially line by line from top to bottom, and as soon as Python encounters a boolean expression it evaluates as true it will execute its corresponding code block and skip the rest of the conditional statements, returning back to the main body of code. This holds true even if there were other conditional statements beneath that which may have also been true. Also, the terminal <code>else</code> statement isn't strictly necessary, but most programmers appreciate having the extra layer of control over program execution should all other above parameters evaluate false.</p>
@@ -210,7 +210,7 @@ I would really recommend students to use the visualizer that can be found at</p>
 <p>if age &gt; 50:</p>
 <p>print 'you must be joking try again'</p>
 <p>quit()</p>
-<p>elif age &gt; 50 :</p>
+<p>elif age &gt; 50&#160;:</p>
 <p>print ' I want to wish you '</p>
 <p>quit()</p>
 <p>print 'a happy birthday'</p>
@@ -222,18 +222,18 @@ I would really recommend students to use the visualizer that can be found at</p>
 <h1> <span class="mw-headline" id="Convert_the_input_to_an_integer.">Convert the input to an integer.</span></h1>
 <p>age = int(age)
 This will convert what you enter to an integer.</p>
-<p>Finally, your if and elif lines do the same thing - they both check that the number is greater than 50 which I imagine is not quite what you were trying to do :)</p>
+<p>Finally, your if and elif lines do the same thing - they both check that the number is greater than 50 which I imagine is not quite what you were trying to do&#160;:)</p>
 <p>0 Upvote
 ·
 Reply</p>
 <h3> <span class="mw-headline" id="Nested_Conditionals">Nested Conditionals</span></h3>
 <p>You can also have one or more conditional statements indented as a subset of a parent conditional, forming a hierarchy of nested conditional logic:</p>
-<code><pre> if x == y :
+<code><pre> if x == y&#160;:
      print 'x and y are equal'
- else :
-     if x &lt; y :
+ else&#160;:
+     if x &lt; y&#160;:
          print 'x is less than y'
-     elif x &gt; y :
+     elif x &gt; y&#160;:
          print 'x is greater than y'
 </pre></code>
 <p><em>Nota Bene:</em> Although nested conditionals make the hierarchy and structure of your conditional code blocks readily apparent, nesting too far quickly devolves legibility and makes program flow hard to follow. Avoid nesting too deeply, usually one or two levels should be sufficient. Any further need for control can be exercised with the use of logical operators and strategically combined boolean expressions.</p>
@@ -241,11 +241,11 @@ Reply</p>
 <h3> <span class="mw-headline" id="Try.2FExcept">Try/Except</span></h3>
 <p>There is a conditional execution structure built into Python to handle potentially error prone code called the “try / except” block. The idea of <code>try</code> and <code>except</code> is that if you know that a particular block of code may have a problem executing and you want to maintain some semblance of program control instead of Python simply quitting with errors when it encounters this potentially volatile code, you can provide Python an alternative block of code to be executed if an error occurs. These extra statements (the <code>except</code> block) are ignored if there is no error. This is especially useful for code that involves potentially erroneous user input but can apply to any code debugging situation you're dealing with.</p>
 <p>Try/Except - Beginning with <code>try,</code> Python tests the first operation. If the operation fails, then it proceeds to follow the instructions in <code>except.</code> If the <code>try</code> is successful then <code>except</code> is skipped.</p>
-<code><pre>test = raw_input("Enter an integer:")  
+<code><pre>test = raw_input(&quot;Enter an integer:&quot;)  
 try:  
    test = int(test)  
 except:  
-   print "Invalid entry."
+   print &quot;Invalid entry.&quot;
    quit()  
 result = test * 2  
 print result  
@@ -257,19 +257,19 @@ ValueError: invalid literal for int() with base 10: 'stan' Can anyone help to ex
 <p>Thanks </p>
 <p>Stan </p>
 <p>Stan, I am not getting an error while running the code immediately above. Joel</p>
-<p><strong>Pratik Dhole here ..Remember :</strong>  Stan <code>except:</code> block in Python is used to catch the error while user might do some mistake in run time.<br/>
-Whatever the code you write below <code>except:</code> will execute as its the functionality of it. It continue the flow of program. Here are some changes in your code : <br/></p>
-<code><pre>test = raw_input("Enter an integer:")  
+<p><strong>Pratik Dhole here ..Remember&#160;:</strong>  Stan <code>except:</code> block in Python is used to catch the error while user might do some mistake in run time.<br />
+Whatever the code you write below <code>except:</code> will execute as its the functionality of it. It continue the flow of program. Here are some changes in your code&#160;: <br /></p>
+<code><pre>test = raw_input(&quot;Enter an integer:&quot;)  
 try:  
    test = int(test)
    result = test * 2
    print result
 except:  
-   print "Invalid entry."
+   print &quot;Invalid entry.&quot;
    quit()  
 # if u print after except this will also run ..
 #just remove comment of the below line and see   
-#print "code still runs"   # this will execute
+#print &quot;code still runs&quot;   # this will execute
 </pre></code>
 <h3> <span class="mw-headline" id="Guardian_Patterns_in_Logical_Evaluations">Guardian Patterns in Logical Evaluations</span></h3>
 <p>Consider the following code:</p>
@@ -280,7 +280,7 @@ except:
  &gt;&gt;&gt; x = 6
  &gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2
   Traceback (most recent call last):
- File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+ File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
  ZeroDivisionError: integer division or modulo by zero
 </pre></code>
 <p>When evaluating boolean expressions in a conditional statement Python compares each condition from left to right in the line as it encounters them. Because of this as well as the definition of the logical <code>and</code> operator the first conditional statement didn't cause an error, even though the same divide by zero <code>x/y</code> boolean expression was present as in the second conditional statement that caused a traceback error. This is because the first expression <code>x &gt;= 2</code> evaluated <code>false</code> before it got to the divide by zero expression. When Python detects that there is nothing to be gained by evaluating the rest of a logical expression, it stops its evaluation and does not do the computations in the rest of the logical expression. When the evaluation of a logical expression stops because the overall value is already known, it is called <em>short-circuiting</em> the evaluation.</p>
@@ -290,53 +290,54 @@ except:
  ​ &gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2
  ​ False
  ​ &gt;&gt;&gt; x = 6
- ​ &gt;&gt;&gt; x &gt;= 2 and y != 0 and (x/y) &gt; 2
+ ​ &gt;&gt;&gt; x &gt;= 2 and y&#160;!= 0 and (x/y) &gt; 2
  False
- ​ &gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2 and y != 0
+ ​ &gt;&gt;&gt; x &gt;= 2 and (x/y) &gt; 2 and y&#160;!= 0
  Traceback (most recent call last):
- File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+ File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
  ZeroDivisionError: integer division or modulo by zero
 </pre></code>
-<p>The first conditional statement doesn't cause an error because the first expression <code>x &gt;= 2</code> evaluates as false and short circuits the evaluation before the division by zero expression is hit. However in the second conditional statement because of the error preventive <code>y != 0</code> expression we effectively force a short circuit before the last expression is ever hit. <code>y != 0</code> is said to act as a <em>guard</em> to insure that <code>x/y</code> is only executed if <code>y</code> is a non-zero number.</p>
+<p>The first conditional statement doesn't cause an error because the first expression <code>x &gt;= 2</code> evaluates as false and short circuits the evaluation before the division by zero expression is hit. However in the second conditional statement because of the error preventive <code>y&#160;!= 0</code> expression we effectively force a short circuit before the last expression is ever hit. <code>y&#160;!= 0</code> is said to act as a <em>guard</em> to insure that <code>x/y</code> is only executed if <code>y</code> is a non-zero number.</p>
 <p><strong>Note</strong></p>
 <p>Depending on project logic <code>y == 0</code> comparsion also may be used as guard</p>
 <code><pre> ​ &gt;&gt;&gt; x &gt;= 2 and (y == 0 or (x/y) &gt; 2)
  True
 </pre></code>
-<p>Note from my trials: I first assumed the 'try' 'exception' could be used to catch wrong user input, but I finally understand this only catches the exceptions thrown by Python itself. So the word 'except' makes better sense now. :) </p>
+<p>Note from my trials: I first assumed the 'try' 'exception' could be used to catch wrong user input, but I finally understand this only catches the exceptions thrown by Python itself. So the word 'except' makes better sense now.&#160;:) </p>
 <h1> <span class="mw-headline" id="Exercises">Exercises</span></h1>
 <ul>
 <li><strong>Exercise 1.</strong> <em>Stochita Radu</em></li>
 </ul>
 <blockquote>
-<p>You ask the user to enter his age. Check to see if the input is actually a number. <a class="external text" href="http://pastebin.com/BrZkpnht" rel="nofollow">Solution</a></p>
-<p><em>For example, if the user enters <code>ds</code>, let the computer print an error</em></p>
+  <p>You ask the user to enter his age. Check to see if the input is actually a number. <a rel="nofollow" class="external text" href="http://pastebin.com/BrZkpnht">Solution</a></p>
+  <p><em>For example, if the user enters <code>ds</code>, let the computer print an error</em></p>
 </blockquote>
 <ul>
 <li><strong>Exercise 2.</strong> <em>Stochita Radu</em></li>
 </ul>
 <blockquote>
-<p>The user enters a number between 0 and 10:</p>
-<ul>
-<li><p>number &gt;= 8: print "Cool"</p></li>
-<li><p>number &gt;= 6: print "Good"</p></li>
-<li><p>number &gt;= 4: print "Meh"</p></li>
-<li><p>number &gt;= 2: print "Nevermind"</p></li>
-<li><p>number &gt;= 0: print "Ouch!"</p></li>
-</ul>
-<p><em>Don't forget to show the user an error if the number entered is not a number and if it is not in the specified range.</em> <a class="external text" href="http://pastebin.com/3ZkzBhbS" rel="nofollow">Solution</a></p>
+  <p>The user enters a number between 0 and 10:</p>
+  <ul>
+  <li><p>number &gt;= 8: print "Cool"</p></li>
+  <li><p>number &gt;= 6: print "Good"</p></li>
+  <li><p>number &gt;= 4: print "Meh"</p></li>
+  <li><p>number &gt;= 2: print "Nevermind"</p></li>
+  <li><p>number &gt;= 0: print "Ouch!"</p></li>
+  </ul>
+  <p><em>Don't forget to show the user an error if the number entered is not a number and if it is not in the specified range.</em> <a rel="nofollow" class="external text" href="http://pastebin.com/3ZkzBhbS">Solution</a></p>
 </blockquote>
 <ul>
 <li><strong>Exercise 3.</strong> <em>Stochita Radu</em></li>
 </ul>
 <blockquote>
-<p>You want to calculate how much do you earn per month. Enter the number of hours that you work and the rate that you are paid. </p>
-<p><em>Remember that if you work more than 40 hours, you will get paid with 50% more.</em></p>
-<p><em>P.S: Remember to check for errors.</em></p>
-<p><em>P.S: Remember that you can not work with negative numbers.</em> <a class="external text" href="http://pastebin.com/k7zNMyGL" rel="nofollow">Solution</a></p>
+  <p>You want to calculate how much do you earn per month. Enter the number of hours that you work and the rate that you are paid. </p>
+  <p><em>Remember that if you work more than 40 hours, you will get paid with 50% more.</em></p>
+  <p><em>P.S: Remember to check for errors.</em></p>
+  <p><em>P.S: Remember that you can not work with negative numbers.</em> <a rel="nofollow" class="external text" href="http://pastebin.com/k7zNMyGL">Solution</a></p>
 </blockquote>
 <h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
 <p>Add resources for this chapter to this page..</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 115/1000000
@@ -344,9 +345,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3958-0!*!0!!en!*!* and timestamp 20161126063621 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week03&amp;oldid=34146">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week03&amp;oldid=34146</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

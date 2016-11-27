@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week10</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week10</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
 <ul>
@@ -40,7 +40,7 @@ print y
 fred</pre></p>
 <h3> <span class="mw-headline" id="Tuples_and_Dictionaries">Tuples and Dictionaries</span></h3>
 <p>The 'items()' method in dictionaries returns a list of tuples (key, value).</p>
-<p>Tuples are Comparable<br/>
+<p>Tuples are Comparable<br />
 The contents of a tuple can be compared and evaluated, running left to right through the listed variables. &lt;, &gt;, &lt;=, &gt;=, ==  </p>
 <p>~~Applying the sorted() function (which takes a sequence as a parameter and returns a sorted sequence) to a dictionary yields a list of its keys in sorted order; e.g.:</p>
 <pre>
@@ -105,7 +105,7 @@ f 22
 <p>When sorting by value and there are duplicate values, the second item in the tuple defines the order of the duplicates.</p>
 <pre>c = {'a':10, 'b':1, 'c':22, 'f':22}
 tmp = list()
-for k, v in c.items() :
+for k, v in c.items()&#160;:
     tmp.append( (v, k) )
 
 print tmp
@@ -124,7 +124,8 @@ The above can sort a list of items in a dictionary(c) by the value. By first rev
 <p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
 <h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
 <p>Add resources for this chapter to this page..</p>
-<p><a class="external free" href="https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions" rel="nofollow">https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions</a></p>
+<p><a rel="nofollow" class="external free" href="https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions">https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions</a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 84/1000000
@@ -132,9 +133,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3965-0!*!0!!en!*!* and timestamp 20161126063737 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week10&amp;oldid=34210">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week10&amp;oldid=34210</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

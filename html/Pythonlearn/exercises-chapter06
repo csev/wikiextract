@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter06</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week06" title="Pythonlearn:resources-week06"> Back to Chapter 6 Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:exercises-chapter06</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week06" title="Pythonlearn:resources-week06"> Back to Chapter 6 Resources</a></p>
 <p><strong>Exercise 5 is  a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.</strong></p>
 <p>Exercise 6.1 - Write a while loop that starts at the last character in the string and works its way backwards to the first character in the string, printing each letter on a separate line, except backwards.</p>
 <pre>
@@ -38,9 +38,9 @@ def count(string, letter):
     for i in string:
         if i == letter:
             x += 1
-    print "The letter "+letter+" appears " +str(x)+" times in the string: "+string
+    print &quot;The letter &quot;+letter+&quot; appears &quot; +str(x)+&quot; times in the string: &quot;+string
     
-count("This is a test", "t")
+count(&quot;This is a test&quot;, &quot;t&quot;)
 </pre>
 <p>Alternate version that returns the count to the calling code:</p>
 <pre>
@@ -56,15 +56,16 @@ print count('supercalifragilisticexpialidocious', 'l')
 <p>or</p>
 <pre>
 def count(string, letter):
-    print("The letter \""+letter+"\" appears",(string.lower()).count(letter),"times in the string: \""+string+"\"")
+    print(&quot;The letter \&quot;&quot;+letter+&quot;\&quot; appears&quot;,(string.lower()).count(letter),&quot;times in the string: \&quot;&quot;+string+&quot;\&quot;&quot;)
 
-count("This is a test", "s")
+count(&quot;This is a test&quot;, &quot;s&quot;)
 </pre>
-<p>Exercise 6.4 There is a string method called count that is similar to the function in the previous exercise. Read the documentation of this method at <a class="external free" href="https://docs.python.org/2/library/stdtypes.html#string-methods" rel="nofollow">https://docs.python.org/2/library/stdtypes.html#string-methods</a> and write an invocation that counts the number of times the letter a occurs in 'banana'.</p>
+<p>Exercise 6.4 There is a string method called count that is similar to the function in the previous exercise. Read the documentation of this method at <a rel="nofollow" class="external free" href="https://docs.python.org/2/library/stdtypes.html#string-methods">https://docs.python.org/2/library/stdtypes.html#string-methods</a> and write an invocation that counts the number of times the letter a occurs in 'banana'.</p>
 <pre>
 word = 'banana'
 word.count('a',0,)
 </pre>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 22/1000000
@@ -72,9 +73,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3997-0!*!0!*!*!*!* and timestamp 20161126111620 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter06&amp;oldid=33411">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter06&amp;oldid=33411</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

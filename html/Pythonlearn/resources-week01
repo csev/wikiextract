@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week01</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week01</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Chapter_1_Exercises"><span class="tocnumber">1</span> <span class="toctext">Chapter 1 Exercises</span></a></li>
 <li class="toclevel-1"><a href="#Why_We_Program"><span class="tocnumber">2</span> <span class="toctext">Why We Program</span></a></li>
@@ -21,9 +21,9 @@
 <li class="toclevel-2"><a href="#Print_Statement"><span class="tocnumber">7.3</span> <span class="toctext">Print Statement</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1"><a href="#Atif_:_Reserved_words_rearranged_in_Alphabetical_Order"><span class="tocnumber">8</span> <span class="toctext">Atif : Reserved words rearranged in Alphabetical Order</span></a>
+<li class="toclevel-1"><a href="#Atif_:_Reserved_words_rearranged_in_Alphabetical_Order"><span class="tocnumber">8</span> <span class="toctext">Atif&#160;: Reserved words rearranged in Alphabetical Order</span></a>
 <ul>
-<li class="toclevel-2"><a href="#Just_another_creative_way_to_remember_.3B.29"><span class="tocnumber">8.1</span> <span class="toctext">Just another creative way to remember ;)</span></a></li>
+<li class="toclevel-2"><a href="#Just_another_creative_way_to_remember_.3B.29"><span class="tocnumber">8.1</span> <span class="toctext">Just another creative way to remember&#160;;)</span></a></li>
 </ul>
 </li>
 <li class="toclevel-1"><a href="#Cody_W.27s_Note_for_you.21"><span class="tocnumber">9</span> <span class="toctext">Cody W's Note for you!</span></a></li>
@@ -54,7 +54,7 @@
 <p>Exercise 1.9: Check your "grammar" of the reserve words or legality of variables used in your program.</p>
 <p>This above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.  </p>
 <h1> <span class="mw-headline" id="Why_We_Program">Why We Program</span></h1>
-<p>Computers are very powerful and very simple at the same time. They can be given sets of instructions in human readable languages that can be translated into the computer's native binary language. Python is one of those languages. The language of Python gives the user a simple way to program. Python can be considered an easy language used to program complicated things. This famous language was created by <a class="extiw" href="http://en.wikipedia.org/wiki/Guido_van_Rossum" title="wikipedia:Guido van Rossum">Guido Van Rossum</a>.</p>
+<p>Computers are very powerful and very simple at the same time. They can be given sets of instructions in human readable languages that can be translated into the computer's native binary language. Python is one of those languages. The language of Python gives the user a simple way to program. Python can be considered an easy language used to program complicated things. This famous language was created by <a href="http://en.wikipedia.org/wiki/Guido_van_Rossum" class="extiw" title="wikipedia:Guido van Rossum">Guido Van Rossum</a>.</p>
 <h1> <span class="mw-headline" id="Some_nice_quotes_from_our_professor_Charles_Severance:">Some nice quotes from our professor Charles Severance:</span></h1>
 <ul>
 <li>"This is not a regular class. This is a class where you're supposed to learn something."</li>
@@ -70,7 +70,7 @@
 <ul>
 <li>cd - display current directory.  Short for "change directory".</li>
 <li>cd .. - move up the directory tree one level.  Doing this from C:\Users\JohnSmith\Desktop will take you to C:\Users\JohnSmith, for example.</li>
-<li>cd %userprofile%\Desktop - takes you to the currently logged in users desktop on most versions of Windows</li>
+<li>cd&#160;%userprofile%\Desktop - takes you to the currently logged in users desktop on most versions of Windows</li>
 <li>cd C:\Users\JohnSmith\Desktop - takes you to the desktop on Win 7 and 8. Replace JohnSmith with your logon or profile name.</li>
 <li>cd C:\Documents and Settings\JohnSmith\Desktop - takes you to the desktop on Windows XP</li>
 <li>cd \ - brings you back to the root of the current drive</li>
@@ -154,12 +154,12 @@ else:
 <li>Repeated steps - while (Don't forget to modify the variable used in the conditional, otherwise this will run forever!)
 <pre>
 while i &lt; 6:
-    print "At the top i is %d" % i</pre></li>
+    print &quot;At the top i is&#160;%d&quot;&#160;% i</pre></li>
 <li><p>Repeated steps - another example</p>
 <p>Assign a value to i which is greater than 2</p>
 <pre>
 while i &gt; 2:
-    print "Right now i is %d" % i
+    print &quot;Right now i is&#160;%d&quot;&#160;% i
     i=i-1</pre></li>
 <li><p>Loop - for
 <pre>
@@ -167,22 +167,22 @@ for (y) in (x):
     (command)
 </pre></p></li>
 </ul>
-<hr/>
-<p>Here is an excerpt of my notes from the first week of class.  Please build and tweak as you all see fit! ~ Kendra<br/></p>
-<p>3&gt;'s     ~ What's next? (If you write it out here, the page puts it in a blue box without the symbol. It executes it.) <strong>Response from Scott:</strong> Thank you for sharing your notes! By the way, here's a tip: If the wiki renders a section of what you typed differently from how you expected, it's probably because what you typed contains special meaning within the Markdown markup language (similar to the concept of reserved words for Python). One way to work around this is to use the backslash escape character ("\"). For example, if you really want to display three right arrows in a row, you would type this: '\&gt;\&gt;\&gt;' which renders like this: '&gt;&gt;&gt;'. Here is a link to a page that contains more examples of Markdown: <a class="external free" href="http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html" rel="nofollow">http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html</a>.</p>
+<hr />
+<p>Here is an excerpt of my notes from the first week of class.  Please build and tweak as you all see fit! ~ Kendra<br /></p>
+<p>3&gt;'s     ~ What's next? (If you write it out here, the page puts it in a blue box without the symbol. It executes it.) <strong>Response from Scott:</strong> Thank you for sharing your notes! By the way, here's a tip: If the wiki renders a section of what you typed differently from how you expected, it's probably because what you typed contains special meaning within the Markdown markup language (similar to the concept of reserved words for Python). One way to work around this is to use the backslash escape character ("\"). For example, if you really want to display three right arrows in a row, you would type this: '&#92;&gt;&#92;&gt;&#92;&gt;' which renders like this: '&#62;&#62;&#62;'. Here is a link to a page that contains more examples of Markdown: <a rel="nofollow" class="external free" href="http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html">http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html</a>.</p>
 <h5> <span class="mw-headline" id="Assignment_Statement">Assignment Statement</span></h5>
 <p>x = 2   </p>
 <h5> <span class="mw-headline" id="Assignment_with_Expression">Assignment with Expression</span></h5>
 <p>x = x+2</p>
 <h5> <span class="mw-headline" id="Print_Statement">Print Statement</span></h5>
 <p>print x  </p>
-<hr/>
-<h1> <span class="mw-headline" id="Atif_:_Reserved_words_rearranged_in_Alphabetical_Order">Atif : Reserved words rearranged in Alphabetical Order</span></h1>
+<hr />
+<h1> <span class="mw-headline" id="Atif_:_Reserved_words_rearranged_in_Alphabetical_Order">Atif&#160;: Reserved words rearranged in Alphabetical Order</span></h1>
 <code><pre>    I just rearranged reserved words in alphabetical order.
     Feel free to edit it, if there are any mistakes.
     I added a few more sections to the Notes.
 </pre></code>
-<hr/>
+<hr />
 <p>There are reserved words that are a part of python language. Use these reserved words to instruct Python.</p>
 <code><pre>    and
     as
@@ -216,9 +216,9 @@ for (y) in (x):
     with
     yield
 </pre></code>
-<hr/>
+<hr />
 <p>If you use the reserved words without meaning to, they will not throw off your intentions, but most likely they will cause error reports.  You can create your own commands using variables.</p>
-<hr/>
+<hr />
 <p>I came up with a way to remember the 31 reserved words easily (for me). Everyone has their own types of mnemonic devices that work for them. If this is not helpful to you, please feel free to ignore it. I am sharing it in case it could be useful to anyone. I am new to programming. My groupings might not be logical to anyone else, but it worked for me. </p>
 <p>I chunk the reserved words and just remember how many there are in each section.</p>
 <p>5 two-letter words
@@ -266,15 +266,15 @@ for (y) in (x):
 <li>lambda</li>
 <li>import</li>
 </ol>
-<hr/>
-<h2> <span class="mw-headline" id="Just_another_creative_way_to_remember_.3B.29">Just another creative way to remember ;)</span></h2>
+<hr />
+<h2> <span class="mw-headline" id="Just_another_creative_way_to_remember_.3B.29">Just another creative way to remember&#160;;)</span></h2>
 <p>Read this as a sentence a few times... If you are from finance background, the first sentence will be easy to remember although its final meaning is obscure..</p>
 <p>" with global yield finally in break, assert and continue for import raise or try def return. while del exec (think of Dell Executive... lol...) is not from lambda class except elif, print pass as if... else... "</p>
-<p>All 31 reserved words are covered without repetition... there seems to be some meaning to the statements but... it is not so clear... :)</p>
-<hr/>
+<p>All 31 reserved words are covered without repetition... there seems to be some meaning to the statements but... it is not so clear...&#160;:)</p>
+<hr />
 <p>Indented ~ Loops and Conditional statements  </p>
 <h1> <span class="mw-headline" id="Cody_W.27s_Note_for_you.21">Cody W's Note for you!</span></h1>
-<p>I'd like to add that the <em>METHOD</em> our teacher is using for us to understand the material is amazing. Pay attention to that!<br/>
+<p>I'd like to add that the <em>METHOD</em> our teacher is using for us to understand the material is amazing. Pay attention to that!<br />
 The mindset he is trying to teach makes absolute sense and I'm glad I am a part of the class.  </p>
 <h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
 <ul>
@@ -287,11 +287,118 @@ The mindset he is trying to teach makes absolute sense and I'm glad I am a part 
 <li>Script, software, code, and program are words that can be used interchangeably; they all refer to a set or sequence of stored instructions for a computer.  </li>
 <li>Instructions need to be explicit because computers do exactly what we say to do and not what we mean to do.  </li>
 </ul>
-<p><strong>Hardware Architecture</strong><br/>
-<ul><li> CPU (central processing unit) – runs the program; not the brains exactly; very very fast<br/>
-</li><li> RAM (random access memory) – main memory; fast, small, temporary storage; lost on shutdown or reboot<br/>
-</li><li> ROM (read only memory) – secondary memory; slower, large, permanent memory; lasts until deleted; examples are disk drives and memory sticks<br/>
-</li><li> input devices – used to give data to the CPU; keyboard, mouse, touch screen<br/>
-</li><li> output devices – screen, speakers, printer, DVD burner<br/>
-</li><li> network – retrieve info from network, but not always available; almost like a secondary memory, slower and less reliable</li></ul></p>
-</div></div></div>
+<p><strong>Hardware Architecture</strong><br />
+<ul><li> CPU (central processing unit) – runs the program; not the brains exactly; very very fast<br />
+</li><li> RAM (random access memory) – main memory; fast, small, temporary storage; lost on shutdown or reboot<br />
+</li><li> ROM (read only memory) – secondary memory; slower, large, permanent memory; lasts until deleted; examples are disk drives and memory sticks<br />
+</li><li> input devices – used to give data to the CPU; keyboard, mouse, touch screen<br />
+</li><li> output devices – screen, speakers, printer, DVD burner<br />
+</li><li> network – retrieve info from network, but not always available; almost like a secondary memory, slower and less reliable</p>
+</li></ul>
+
+<p><strong>Python as a language</strong><br />
+<ul><li> Programs live in the main memory.<br />
+</li><li> The CPU pulls programs from the main memory.<br />
+</li><li> Computers do not execute source code, which is made up of language human programmers can understand.
+</li><li> Computers execute machine code, which is made up of  binary code; ones and zeros.<br />
+</li><li> The Python interpreter translates from the Python source code into machine code.<br />
+</li><li> Python is the language of the Python interpreter, and those who can converse with it. 
+</li><li> An individual who can speak Python is known as a Pythonista.<br />
+</li><li> Python was developed by Guido van Rossum, who was inspired by <a href="/wiki/index.php/W:en:The_Monty_Python%27s_Flying_Circus" title="W:en:The Monty Python's Flying Circus">The Monty Python's Flying Circus</a> skits for the name.  </p>
+</li></ul>
+
+<p><strong>Elements of Python</strong><br />
+<ul><li> vocabulary/words – variables and reserved words<br />
+</li><li> sentence structure – valid syntax patterns<br />
+</li><li> story structure – constructing a program for a purpose<br />
+</li><li> Reserved words – cannot be used as variable names/identifiers<br />
+</li></ul>
+<a rel="nofollow" class="external text" href="http://zetcode.com/lang/python/keywords/">Keywords in Python tutorial</a> - Explains the usage of each reserved word.  </p>
+<code><pre>  and del for is raise assert elif from lambda 
+
+  return break else global not try class except if or  
+
+  while continue exec import pass yield def finally in print  
+</pre></code>
+<ul>
+<li>sentences – single lines of code  </li>
+<li>paragraphs – multiple lines, or blocks, of code   </li>
+</ul>
+<p><strong>Python Scripts</strong><br />
+<ul><li> Interactive Python is good for experiments and programs that are 3-4 lines long<br />
+</li><li> Most programs are much longer, so we type them in a file, and then tell Python to run the commands in the file<br />
+</li><li> As convention, the suffix “.py” is added to the file name to indicate it contains Python
+</li><li> To run the program from the command window, remember to cd to the directory that contains the file, type the file name including ".py" (Just in case someone other than myself was running from the interpreter, hopefully, this will help.)</p>
+</li></ul>
+
+<p><strong>Interactive vs. Script</strong><br />
+<ul><li> Interactive – type directly into Python one line at a time and it responds<br />
+</li><li> Script – enter a sequence of statements (lines) into a file using a text editor, and then tell Python to execute the statements in the file  </p>
+</li></ul>
+
+<p><strong>Program steps or Program flow</strong><br />
+<ul><li> Like a recipe or installation instructions, a program is a sequence of steps to be done in order<br />
+</li><li> Some steps are conditional – they might be skipped depending on the circumstances.<br />
+</li><li> Sometimes a step or a group of steps are to be repeated<br />
+</li><li> Sometimes we store a set of steps to be used over and over as needed in several places throughout the program<br />
+</li><li> Loops (repeated steps) have iteration variables (counters) that change each time through the loop and often go through a sequence of numbers</p>
+</li></ul>
+
+<p><strong>Type of Errors</strong>
+<ul><li>Syntax Error: it is a mistake made in the grammar, while writing a python statement. The line and character that Python Error indicates is usually the starting point, to figure out the syntax error.
+</li><li>Logic Error: there is an error in the way python statement was written. Usually, it is related to the order of the words used in the statement.
+</li><li>Semantic Error: The python statements are written correctly, but it does not perform the task it was it designed to do. </p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="Download_Resources">Download Resources</span></h1>
+<p>Here are web links to some of the software downloads relevant to this course.
+<ul><li>Python Tutor - Enter your code into here and watch how it executes step by step - <a rel="nofollow" class="external free" href="http://pythontutor.com/">http://pythontutor.com/</a>
+</li><li>Emacs, Great Editor supports Python syntax highlighting.  Windows &amp; GNU/Linux Versions: <a rel="nofollow" class="external free" href="http://www.gnu.org/software/emacs/">http://www.gnu.org/software/emacs/</a>
+</li><li>Text Editor: <a rel="nofollow" class="external free" href="http://notepad-plus-plus.org/download/">http://notepad-plus-plus.org/download/</a> (for Microsoft Windows only)
+</li><li>Python: <a rel="nofollow" class="external free" href="http://www.python.org/downloads/">http://www.python.org/downloads/</a>
+</li><li>Python Portable (WinOS): <a rel="nofollow" class="external free" href="http://portablepython.com/">http://portablepython.com/</a> (for Microsoft Windows only)
+</li><li>Dr. Chuck's resource: <a rel="nofollow" class="external free" href="http://www.pythonlearn.com/install.php">http://www.pythonlearn.com/install.php</a> (Note - if you use the Microsoft Window's Instructions, content is only covered for Windows XP, Vista, and 7. It is possible to extrapolate from these instructions how to download and access Python, Notepad++, and the Command Prompt in Windows 8, but may take a few moments.)
+</li><li>Microsoft Visual Studio Code: <a rel="nofollow" class="external free" href="https://code.visualstudio.com/">https://code.visualstudio.com/</a> and then you can install the Python extension for syntax highlighting for your Python scripts.
+</li><li>Microsoft Visual Studio Express: <a rel="nofollow" class="external free" href="http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx">http://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx</a> has a nice Plug in for Python scripting(Python Tools for Visual Studio): <a rel="nofollow" class="external free" href="http://microsoft.github.io/PTVS/">http://microsoft.github.io/PTVS/</a> 
+</li><li>Microsoft Visual Studio Community 2015: <a rel="nofollow" class="external free" href="http://www.visualstudio.com/products/visual-studio-community-vs">http://www.visualstudio.com/products/visual-studio-community-vs</a> (for Microsoft Windows 7 Service Pack 1 to Windows 10 and server editions.)
+</li><li>Sublime Text <a rel="nofollow" class="external free" href="http://www.sublimetext.com/">http://www.sublimetext.com/</a> (For Mac, GNU/Linux &amp; Windows)
+</li><li>TextWrangler: Programmer's text editor <a rel="nofollow" class="external free" href="http://www.barebones.com/products/textwrangler/">http://www.barebones.com/products/textwrangler/</a> (For Mac)
+</li><li>Interesting blog post if you're interested in using vim on GNU/Linux: <a rel="nofollow" class="external free" href="http://www.jeffknupp.com/blog/2013/12/04/my-development-environment-for-python/">http://www.jeffknupp.com/blog/2013/12/04/my-development-environment-for-python/</a>
+</li><li>Free Python IDE PyCharm by JetBrains. The community version is free and it's more than enough to complete the course. <a rel="nofollow" class="external free" href="https://www.jetbrains.com/pycharm/download/">https://www.jetbrains.com/pycharm/download/</a>
+</li><li>Python extension for Chrome: Access Python within your browser. <a rel="nofollow" class="external free" href="http://goo.gl/Vvml4T">http://goo.gl/Vvml4T</a>
+</li><li>Repl.it, an online environment for interactively exploring programming languages, including Python (after following this link, to get to Python 2.x, on the main home page, click to expand Practical and choose just "Python" not "Python 3"): <a rel="nofollow" class="external free" href="http://repl.it/">http://repl.it/</a>
+</li><li>Online IPython shell. <a rel="nofollow" class="external free" href="http://www.tutorialspoint.com/ipython_terminal_online.php">http://www.tutorialspoint.com/ipython_terminal_online.php</a> IPython is an alternative enhanced interactive shell for python with many neat features that don't exist in the original python shell. Tutorialspoint site allows you to experiment with this shell(along with other shells for many other languages) without having to install anything on your local hard drive.
+</li><li>Another online Python shell is pythonanywhere (<a rel="nofollow" class="external free" href="https://www.pythonanywhere.com">https://www.pythonanywhere.com</a>) avoiding having to install Python at work, and allowing access to your files from anywhere.
+</li><li>Atom Editor, available for Mac OS X Mountain Lion or later, Windows 7 or later, RedHat Enterprise or Ubuntu GNU/Linux <a rel="nofollow" class="external free" href="https://atom.io">https://atom.io</a>
+</li><li>TextWrangler for Mac can be downloaded from the App Store - no need to download packages or install manually. TextWrangler at the App Store is for Mac OS X 10.8.5 or greater. If you have an older Mac, you'll need to get an older copy of TextWrangler from the publisher's website: <a rel="nofollow" class="external free" href="http://www.barebones.com/support/textwrangler/updates.html">http://www.barebones.com/support/textwrangler/updates.html</a>.</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Python_bundles_for_MS-Windows">Python bundles for MS-Windows</span></h2>
+<ul>
+<li>Anaconda download link <a rel="nofollow" class="external free" href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a>  Anaconda include many libraries for Python such as SciPy, NumPy, etc. Anaconda installation does not affect other Python program installed in your computer because it does not change Windows registry. It is highly recommended to install Anaconda to your local directory such as C:\Users\&lt;your user name directory&gt;. </li>
+</ul>
+<p>18:16, 4 June 2015 (UTC)<a href="/wiki/index.php?title=User:1eafbe516789c6225a4bea5e70f1ce2c&amp;action=edit&amp;redlink=1" class="new" title="User:1eafbe516789c6225a4bea5e70f1ce2c (page does not exist)">1eafbe516789c6225a4bea5e70f1ce2c</a> 18:16, 4 June 2015 (UTC)
+Interested in the history of software? I've been reading "Alan Turing: The Enigma" by Andrew Hodges and it's been very interesting to learn a little about how people like Turing and John von Neumann thought about what it would mean to have a "machine" that can sit around and wait for instructions, and then with those instructions do almost anything. I know I'm not doing Hodges' book justice in that single sentence; I've just been fascinated to consider a time when the notion of software or programming didn't exist. If I were to condense it to its root, I'd say that the ideas developed from philosophy and mathematics, not engineering or other science. In any case, I highly recommend the book, although it is long and will take time and concentration to get through it. (Lee Katterman, Ann Arbor)
+18:16, 4 June 2015 (UTC)<a href="/wiki/index.php?title=User:1eafbe516789c6225a4bea5e70f1ce2c&amp;action=edit&amp;redlink=1" class="new" title="User:1eafbe516789c6225a4bea5e70f1ce2c (page does not exist)">1eafbe516789c6225a4bea5e70f1ce2c</a> 18:16, 4 June 2015 (UTC)</p>
+<hr />
+<h1> <span class="mw-headline" id="Raspberry_Pi">Raspberry Pi</span></h1>
+<p>From Wikipedia: <em>"The Raspberry Pi is a series of credit card-sized single-board computers developed in the UK by the Raspberry Pi Foundation with the intention of promoting the teaching of basic computer science in schools."</em><a rel="nofollow" class="external autonumber" href="http://en.wikipedia.org/wiki/Raspberry_Pi">[1]</a></p>
+<p>This board is a full computer built on a small PCB, designed to be maker friendly.  The base "computer" is a board, a power adapter and a SD card with an OS installed.  There are many different OS's available to run this board, most of them based on Linux.  Standard personal computer input/output peripherals can be used with it(depending on the model), such as: USB keyboard/mouse, HDMI video for a monitor, an RCA(composite video) for an analog video display, a wired network port, audio and a camera port.  Other USB devices such as wireless networking and external hard drives may also be used.</p>
+<p>The Raspberry Pi also has a General Purpose Input/Output(GPIO) header for lower level interaction with various components.  These can be accelerometers, gyroscopes, motor controllers, LEDs, <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/I%C2%B2C">I2C</a> and SPI communications, etc.</p>
+<p>Raspberry Pi's are used in various projects.  They are used as the controllers for <a rel="nofollow" class="external text" href="http://3dprint.com/16060/raspberry-pi-3d-printer/">3D printers</a>, <a rel="nofollow" class="external text" href="http://www.instructables.com/id/Building-robots-with-Raspberry-Pi-and-Python/">robots</a>, <a rel="nofollow" class="external text" href="http://lifehacker.com/5929913/build-a-xbmc-media-center-with-a-35-raspberry-pi">home entertainment centers</a>, <a rel="nofollow" class="external text" href="http://www.emlid.com/">autopilots for UAV/drones</a>, <a rel="nofollow" class="external text" href="http://www.cnet.com/how-to/create-a-retro-game-console-with-the-raspberry-pi/">game consoles</a>, <a rel="nofollow" class="external text" href="http://www.pcworld.com/article/2905152/raspberry-pi-2-laptop-coming-with-pitop-assembly-kit.html">laptop computers</a>, etc.  Youtube and many maker-hacker <a rel="nofollow" class="external text" href="https://hackaday.io/projects/tag/raspberry%20pi">blogs</a> are full of projects featuring Pi's.  A Raspberry Pi can be a powerful tool to bridge the gap for those learning computer programming and interfacing with electronics.</p>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 110/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3956-0!*!0!!en!*!* and timestamp 20161126063452 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week01&amp;oldid=34451">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week01&amp;oldid=34451</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

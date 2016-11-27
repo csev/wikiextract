@@ -1,20 +1,20 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter10</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week10" title="Pythonlearn:resources-week10"> Back to Chapter 10 Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:exercises-chapter10</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week10" title="Pythonlearn:resources-week10"> Back to Chapter 10 Resources</a></p>
 <p><strong>Exercise 2 is a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.</strong></p>
 <h2> <span class="mw-headline" id="Exercise_1">Exercise 1</span></h2>
 <pre>
 # Standard Opening - open and read target input text file.
 file = raw_input('Enter file name: ')
-if len(file) &lt; 1 : file = 'mbox-short.txt'
-try :
+if len(file) &lt; 1&#160;: file = 'mbox-short.txt'
+try&#160;:
     fhand = open(file)
-except :
+except&#160;:
     print 'Cannot open file: ', file, '.', '...please try, again.'
     exit ()
 
@@ -22,15 +22,15 @@ except :
 counts = dict()
 
 # Compute dictionary to map each word to the count of words
-for line in fhand :
-    if not line.startswith('From ') : continue
+for line in fhand&#160;:
+    if not line.startswith('From ')&#160;: continue
     words = line.split()
     words = words[1]
     counts[words] = counts.get(words, 0) + 1
 
 # Construct a list of (val, key) tuples
 lst = list()    # note: 'lst' begins with lowercase letter 'L'
-for key, val in counts.items() :
+for key, val in counts.items()&#160;:
     lst.append( (val, key))  # important to note that we are switching the order (key, val) to (val, key)
 
 # Sort the tuples list in reverse order
@@ -47,10 +47,10 @@ print key, val
 <pre>
 # Standard Opening - open and read target input text file.
 file = raw_input('Enter file name: ')
-if len(file) &lt; 1 : file = 'mbox-short.txt'
-try :
+if len(file) &lt; 1&#160;: file = 'mbox-short.txt'
+try&#160;:
     fhand = open(file)
-except :
+except&#160;:
     print 'Cannot open file: ', file, '.', '...please try, again.'
     exit ()
 
@@ -58,8 +58,8 @@ except :
 counts = dict()
 
 # Compute dictionary to map each word to the count of words
-for line in fhand :
-    if not line.startswith('From ') : continue
+for line in fhand&#160;:
+    if not line.startswith('From ')&#160;: continue
     words = line.split()
     words = words[1]
     counts[words] = counts.get(words, 0) + 1
@@ -76,32 +76,32 @@ print key, val
 <p>++NOTE++ - This will work locally, but will not work with the on-line playground/autograder. The translate method is not available there.</p>
 <p>String Module import and Ignore list definition
 <pre>from string import punctuation, whitespace, digits
-ignore = punctuation + whitespace + digits </pre> </p>
+ignore = punctuation + whitespace + digits </pre>                                                                                           </p>
 <p>Ask for input of a file name, open handle in READ mode and translate using Ignore list
 <pre>fname = raw_input('Please enter a file name: ')
 fhand = open(fname)</pre></p>
 <p><pre>inp = fhand.read()
 inp = inp.translate(None, ignore)
-inp = inp.lower()</pre> </p>
+inp = inp.lower()</pre>                                                                                 </p>
 <p>Take out insurance on input
 <pre>try:
     fhand = open(fname)
 except:
     print 'File: ' ,fname, 'cannot be found'
     exit()</pre></p>
-<p>Intitial variables set<br/>
+<p>Intitial variables set<br />
 <pre>ltrdict = dict()
-ltrlst = list()</pre> </p>
+ltrlst = list()</pre>                                                                                       </p>
 <p>Populate dictionary
 <pre>for ltrs in inp:
-    ltrdict[ltrs] = ltrdict.get(ltrs,0) + 1</pre> </p>
+    ltrdict[ltrs] = ltrdict.get(ltrs,0) + 1</pre>                                                                                                                   </p>
 <p>Create sorted list of dictionary items
 <pre>for k,v in ltrdict.items():
     ltrlst.append((v,k))
 ltrlst.sort(reverse=True)
-sortedlst = ltrlst</pre> </p>
-<p>Print results of histogram<br/>
-<pre>print('\n'.join(map(str,sortedlst)))</pre> </p>
+sortedlst = ltrlst</pre>                                                                </p>
+<p>Print results of histogram<br />
+<pre>print('\n'.join(map(str,sortedlst)))</pre>                                                         </p>
 <p>Close file
 <pre>fhand.close()</pre></p>
 <p><strong>Exercise 3: Alternate to above</strong></p>
@@ -112,11 +112,11 @@ sortedlst = ltrlst</pre> </p>
 # Open and read target text file.
 
 file = raw_input('Enter file name: ')
-if len(file) &lt; 1 : file = 'words.txt'
+if len(file) &lt; 1&#160;: file = 'words.txt'
 
-try :
+try&#160;:
     fhand = open(file)
-except :
+except&#160;:
     print 'Cannot open file:', file, '.', '...please try, again.'
 
 # Import string. See Sec 9.4 Advanced Text Parsing, Chap 9, Python for Informatics
@@ -129,13 +129,13 @@ counts = dict()
 
 # Compute the dictionary that maps each letter to the count of letters
 
-for line in fhand :
+for line in fhand&#160;:
     line = line.translate(None, string.punctuation)
     line = line.lower()
     words = line.split()
     delimiter = ''   #see Chap 8.9 Lists and Strings
     letters = delimiter.join(words)
-    for ltr in letters :
+    for ltr in letters&#160;:
         counts[ltr] = counts.get(ltr, 0) + 1
 
 # Use list comprehension to produce reverse-ordered list of swapped-value tuples.
@@ -149,16 +149,16 @@ lettercounts = sorted ( [ (cnt, ltr) for ltr, cnt in counts.items() ], reverse=T
 cnt_ltr_freq = list()
 totalcounts = 0
 
-for cnt, ltr in lettercounts :
+for cnt, ltr in lettercounts&#160;:
     totalcounts += cnt
 
 print 'Total number occurrences of all letters in file: ', totalcounts 
 
-for cnt, ltr in lettercounts :
+for cnt, ltr in lettercounts&#160;:
     freq = float(cnt) / float(totalcounts)
     cnt_ltr_freq.append ( [ltr, cnt, float ( freq * 100 ) ] )
 
-for x in cnt_ltr_freq :
+for x in cnt_ltr_freq&#160;:
     print x[0], x[1], round(x[2], 2), '%'  # Round the frequencies to two digits after the decimal point.
 </pre>
 <p><strong>Another way to do Exercise 3</strong></p>
@@ -167,11 +167,11 @@ for x in cnt_ltr_freq :
 <p>Here is my way to do it without string module and more directly. You need only care about the alphabet letters.</p>
 <pre>
 
-filename = raw_input("Enter the file name: ")
+filename = raw_input(&quot;Enter the file name: &quot;)
 try:
     fhand = open(filename)
 except:
-    print "The file is not exist!"
+    print &quot;The file is not exist!&quot;
     quit()
 #read the file into a big string
 words = fhand.read()
@@ -202,6 +202,7 @@ for f,l in letterf[:]:
     print l,f
 
 </pre>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 121/1000000
@@ -209,9 +210,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:4001-0!*!0!!*!*!* and timestamp 20161126125437 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter10&amp;oldid=34286">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter10&amp;oldid=34286</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

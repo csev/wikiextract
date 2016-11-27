@@ -1,22 +1,22 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter11</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week11" title="Pythonlearn:resources-week11"> Back to Chapter 11 Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:exercises-chapter11</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week11" title="Pythonlearn:resources-week11"> Back to Chapter 11 Resources</a></p>
 <p><strong>There are no  assigned problems for this chapter.</strong></p>
 <p>Chap 11 Exercise 1</p>
 <pre>
 
 file = raw_input('Enter filename: ')
 
-if len(file) &lt; 1 : file = 'mbox.txt'
+if len(file) &lt; 1&#160;: file = 'mbox.txt'
 
-try :
+try&#160;:
     hand = open(file)
-except :
+except&#160;:
     print 'Unable to find or open', file
     exit()
 
@@ -25,9 +25,9 @@ exp = raw_input('Enter a regular expression: ') # as, for example, __^Author__
 import re
 count = 0
 
-for line in hand :
+for line in hand&#160;:
     line = line.rstrip()
-    if re.search(exp, line) : count += 1
+    if re.search(exp, line)&#160;: count += 1
 
 print file, 'had', count, 'lines that matched', exp
 
@@ -37,11 +37,11 @@ print file, 'had', count, 'lines that matched', exp
 
 file = raw_input('Enter filename: ')
 
-if len(file) &lt; 1 : file = 'mbox.txt'
+if len(file) &lt; 1&#160;: file = 'mbox.txt'
 
-try :
+try&#160;:
     hand = open(file)
-except :
+except&#160;:
     print 'Cannot find or open', file
     exit()
 
@@ -49,10 +49,10 @@ import re
 numlist = list()
 count = 0
 
-for line in hand :
+for line in hand&#160;:
     line = line.rstrip()
     stuff = re.findall('^New Revision: ([0-9]+)', line)
-    if len(stuff) != 1 : continue
+    if len(stuff)&#160;!= 1&#160;: continue
     count += 1
     stuff = float(stuff[0])
     numlist.append(stuff)
@@ -60,6 +60,7 @@ for line in hand :
 print 'Average: ', sum(numlist) / count
 
 </pre>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 7/1000000
@@ -67,9 +68,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:4002-0!*!0!*!*!*!* and timestamp 20161126175534 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter11&amp;oldid=32746">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter11&amp;oldid=32746</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

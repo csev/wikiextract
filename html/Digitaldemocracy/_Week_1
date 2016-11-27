@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Digitaldemocracy: Week 1</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Digitaldemocracy: Week 1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Voting_as_a_Security_Problem"><span class="tocnumber">1</span> <span class="toctext">Voting as a Security Problem</span></a>
 <ul>
@@ -46,5 +46,229 @@
 </li><li> How can the system break?
 </li><li> What is the weakest link? easist to attack?
 </li><li> Identify false assumptions
-</li><li> Think outside the box of system designer</li></ul></dd></dl></dd></dl></dd></dl></p>
-</div></div></div>
+</li><li> Think outside the box of system designer</p>
+</li></ul>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+
+<p><strong>Think like a defender</strong><br />
+<dl><dd><dl><dd><dl><dd><ul><li> security policy 
+</li></ul>
+<dl><dd><ul><li> What is being protected?
+</li><li> What properties are being enforced?</p>
+</li></ul>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+
+<p><strong>Threat model</strong>
+<dl><dd><dl><dd><dl><dd><ul><li> Who are the attackers? capabilities? motives?
+</li><li> What kind of attack?</p>
+</li></ul>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+
+<p><strong>Risk assessment</strong>
+<dl><dd><dl><dd><dl><dd><ul><li> Weaknesses of the system?
+</li><li> Costs of a successful attack?
+</li><li> How likely?</p>
+</li></ul>
+</dd></dl>
+</dd></dl>
+</dd></dl>
+
+<p><strong>Countermeasures</strong>
+<ul><li> Costs vs. benefits
+</li><li> Technical vs. nontechnical</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="Ssecurity_requirements_for_voting">Ssecurity requirements for voting</span></h4>
+<p><strong>1. Integrity</strong>
+<ul><li> Outcome is the same as voter intent
+</li><li> Votes are cast as intended
+</li><li> Votes are counted as cast</p>
+</li></ul>
+
+<p><strong>2. Ballot secrecy</strong>
+<ul><li> Weak: no one can figure out how a person voted
+</li><li> Strong: no one can reveal how he/she voted → prevent vote buying, coercion</p>
+</li></ul>
+
+<p><strong>3. Voter authentication</strong>
+<ul><li> Only authorized voters vote
+</li><li> Each voter can only vote once</p>
+</li></ul>
+
+<p><strong>4. Voter enfranchisement</strong>
+<ul><li> All authorized voters have the opportunity to vote</p>
+</li></ul>
+
+<p><strong>5. Availability</strong>
+<ul><li> Election system is able to accept all votes and produce results in a timely manner</p>
+</li></ul>
+
+<p><strong>Other concerns</strong>
+<ul><li> cost effectiveness
+</li><li> availability
+</li><li> convenience
+</li><li> intelligibility</p>
+</li></ul>
+
+<p><strong>Noteworthy for decision-making:</strong>
+<em>Tensions exist between some security requirements such as between Integrity and Ballot Secrecy, Voter authentication and enfranchisement.</em>
+<em>These tensions require trade-offs which ultimately result in what security/technology to embark on to protect ballots.</em></p>
+<h2> <span class="mw-headline" id="It_is_believed_these_trade-offs_are_the_underlying_considerations_for_whatever_technologies_have_been_used_at_different_times_in_voting_history."><em>It is believed these trade-offs are the underlying considerations for whatever technologies have been used at different times in voting history.</em></span></h2>
+<h2> <span class="mw-headline" id="How_We_Got_Here">How We Got Here</span></h2>
+<h4> <span class="mw-headline" id="The_Living_Voice">The Living Voice</span></h4>
+<p>Voice Voting:<br />
+<em>viva voce</em> = living voice in Latin</p>
+<p><strong>Process:</strong><br />
+<ul><li> Voter walks up to polling place<br />
+</li><li> Election judge swears in voter on the Bible<br />
+</li><li> Voter calls out his name loudly → authorization<br />
+</li><li> Voter calls out candidate he is voting for<br />
+</li><li> Clerks write down voters name and vote<br />
+</li><li> Observers could also record votes as they are called out  </p>
+</li></ul>
+
+<p><strong>Problems:</strong><br />
+<ul><li> No ballot secrecy<br />
+</li><li> Candidate could be within listening distance of vote<br />
+</li><li> Voter intimidation/coercion possible<br />
+</li><li> Vote buying possible  </p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="Early_Paper_Ballots">Early Paper Ballots</span></h4>
+<p>Replaced voice voting<br />
+France &amp; England wrote ballot voting into constitution and charters<br />
+Earliest known use in ancient Greece (used balls, tokens)<br />
+Ballot boxes were usually locked<br />
+Voters put paper ballot in slot on box<br />
+Officials counted votes publicly; if counting later, might seal the box  </p>
+<p><strong>Security Mechanisms during counting:</strong>
+Reader of ballot does not have a writing implement<br />
+Observers from different parties, levels of government</p>
+<p><strong>Security Issues:</strong>
+<ul><li> Procedural: if not followed precisely could exclude the observers in the back
+</li><li> Readers could announce any name
+</li><li> Ballot boxes could be rigged – false botton and false side
+</li><li> Glass boxes were introduced to prevent this
+</li><li> Faulty lock</p>
+</li></ul>
+
+<p>Acme voting machine
+    1st machine – had gears, crank
+    Voter inserted ballot, turned crank → bell to signal vote entered, counter protected against box stuffing, same # of ballots as votes</p>
+<p>Cardboard ballot box:
+    disposable</p>
+<p>Metal ballot box:
+    more secure than cardboard
+    metal tab for attaching padlocks</p>
+<p><strong>Design of Ballots:</strong>
+<ul><li> Early ballots → voter wrote in names
+</li><li> Would be easier for voters to have names already on ballots
+</li><li> Some had one name printed &amp; room for other names to be written in
+</li><li> Possible for voters to write in the spaces between listed names
+</li><li> Party tickets
+</li><li> Nonstandard designs → voter confusion</p>
+</li></ul>
+
+<p><strong>Security Issues:</strong><br />
+Multiple voting<br />
+<ul><li> Multiple ballots printed on same ticket<br />
+</li><li> Voter responsible for tearing them off<br />
+</li><li> Different colors used for different party tickets<br />
+</li><li> Weak protections  </p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="The_Australian_Ballot">The Australian Ballot</span></h4>
+<ul>
+<li>Pre-printed ballot → uniformity</li>
+<li>Provided by the government, not the voter or parties</li>
+<li>Voting booth → secrecy</li>
+<li><p>Voter registration  </p></li>
+<li><p>Additional costs
+<dl><dd><ul><li><ul><li> Had to decide in advance who goes on the ballot<br />
+</li><li> Printing ballots
+</li><li> More advanced preparation<br />
+</li><li> Storage of booths between elections<br />
+</li><li> Additional complexity: advanced planning, printing  </p></li>
+</li></ul>
+</li></ul>
+</dd></dl>
+</ul>
+<p><strong>Security Issues:</strong><br />
+<ul><li> Counting bosses and political corruption: Boss Tweed &amp; Tamany Hall
+</li><li> Counters made extra marks on ballots with hidden pencil/lead (short pencil artist)
+</li><li> Marks could also be erased
+</li><li> Extraneous marks would disqualify a vote (identifying marks/names/multiple votes) </p>
+</li></ul>
+
+<p><strong>Chain Voting:</strong><br />
+<ul><li> Person waits outside polling place and says he wants to buy ballots
+</li><li> Has a pre-filled out ballot
+</li><li> Voter takes the ballot to the voting booth
+</li><li> Voter picks a new ballot &amp; goes to booth with it
+</li><li> Puts pre-filled out ballot in box &amp; gives blank ballot to criminal
+</li><li> Criminal uses blank ballot with another person
+</li><li>Could prevent using a detachable serial number on ballot to make sure voter returns the same ballot</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="Mechanical_Voting_Machines">Mechanical Voting Machines</span></h4>
+<ul>
+<li>Industrial Revolution influenced invention of mechanical voting machines – late 1800s-early 1900s</li>
+<li>Claims: complete secrecy, tamper proof</li>
+<li>Mechanism to prevent multiple voting</li>
+<li>Inside machine, locked: counter mechanism to count votes as they were cast</li>
+<li>Could vote for individual candidates or a party</li>
+<li>Lever to close &amp; open the curtain; lever would cast the votes and clear the board</li>
+<li>Was in view of an official to ensure correct procedure done</li>
+<li>Eliminated most of the problems of voice voting, paper ballots, chain voting, etc</li>
+<li>Security issues:<br />
+<dl><dd><dl><dd><ul><li><ul><li> No record that voter voted; nothing for voter to see
+</li><li> Mechanical failure due to multiple parts, gears, etc
+</li><li> Counter could stop incrementing if tab broke off
+</li><li> Sabotage to machine → difficult to distinguish if mechanical or sabatoge
+</li><li> Fraud: jam pencil lead into gears  </li>
+</li></ul>
+</li></ul>
+</dd></dl>
+</dd></dl>
+</ul>
+<h4> <span class="mw-headline" id="Punched_Card_Voting:">Punched Card Voting:</span></h4>
+<ul>
+<li>Holes punched out of a card with a stylus and read by a computer</li>
+<li>Nothing printed on cards → secrecy</li>
+<li>Security issues:
+<dl><dd><dl><dd><ul><li><ul><li> No good way for the voter to see the vote being counted correctly
+</li><li> Easy to misalign cards
+</li><li> Florida 2000 presidential election: some voters voted for 2 candidates
+</li><li> Votes were discounted
+</li><li> Chad (paper punched out): can cause many problems
+</li><li> Can block another hole being punched
+</li><li> Holes might not be punched all the way
+</li><li> Could be maliciously tampered with during counting
+</li><li> Punch cards are no longer used → computer voting systems introduced</li>
+</li></ul>
+</li></ul>
+</dd></dl>
+</dd></dl>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 31/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:265-0!*!*!!en!*!* and timestamp 20161127015124 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Digitaldemocracy:_Week_1&amp;oldid=17514">https://share.coursera.org/wiki/index.php?title=Digitaldemocracy:_Week_1&amp;oldid=17514</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

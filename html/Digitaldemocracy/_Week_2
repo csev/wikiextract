@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Digitaldemocracy: Week 2</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Digitaldemocracy: Week 2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Computers_at_the_Polls"><span class="tocnumber">1</span> <span class="toctext">Computers at the Polls</span></a>
 <ul>
@@ -28,9 +28,9 @@
 <h2> <span class="mw-headline" id="Computers_at_the_Polls">Computers at the Polls</span></h2>
 <h4> <span class="mw-headline" id="Computers_at_the_Polls_2">Computers at the Polls</span></h4>
 <p><strong>Types of fraud:</strong> 2 sets of distinctions</p>
-<p>Retail – attack on individual voters &amp; their ballots<br/>
+<p>Retail – attack on individual voters &amp; their ballots<br />
 Wholesale – attack on counting process  </p>
-<p>Insider – have an official role in the system; have particular privliges &amp; special access<br/>
+<p>Insider – have an official role in the system; have particular privliges &amp; special access<br />
 Outsider – the public, no official role  </p>
 <h4> <span class="mw-headline" id="Optical_Scan_Technology">Optical Scan Technology</span></h4>
 <ul>
@@ -42,5 +42,298 @@ Outsider – the public, no official role  </p>
 <ul><li> Voter fills out ballot &amp; puts it into the machine
 </li><li> Ballot goes into a ballot box that is attached to the scanner
 </li><li> After the election, the machine prints the totals
-</li><li> Most have a storage card that should match the paper tape</li></ul></p>
-</div></div></div>
+</li><li> Most have a storage card that should match the paper tape</p>
+</li></ul>
+
+<p><strong>Technical Issues</strong>
+<ul><li> Threshold for sensing distinction between light &amp; dark → could be tricky to set
+</li><li> Different type of sensor takes a photo of the ballot
+</li><li> Can distinguish marks with greater accuracy
+</li><li> Requires software to interpret marks</p>
+</li></ul>
+
+<p><strong>2 styles of machines</strong><br />
+1. Precinct Count - ballot goes into the box in the precinct &amp; is counted there<br />
+2. Central Count – ballot goes into the box, and is sent to a central location to be scanned in bulk</p>
+<p><strong>Advantages of Precinct Count</strong>
+<ul><li> count ballots immediately in same location → less risk of tampering
+</li><li> machine can look for problems with the ballot &amp; send it back to the voter to try again → usability  </p>
+</li></ul>
+
+<p><strong>Security Issues</strong>
+<ul><li> Voters marks vary greatly
+</li><li> Infrared might see dark differently than a human
+</li><li> Ballot could get distorted &amp; the marks do not line up under the sensor
+</li><li> Ballot inserted at angle &amp; marks do not line up under the sensor
+</li><li> Calibrating machine is tricky
+</li><li> Potential to identify voters by how they filled in the bubbles
+</li><li> Software could be changed
+</li></ul>
+<dl><dd><dl><dd>Example: Harri Hursti
+</dd><dd>What would happen if a hacker got access to the memory card?
+</dd><dd>He loaded the memory card with a number of votes for the candidates he wants to win</p>
+</dd></dl>
+</dd></dl>
+
+<p><strong>Other issues with optical scan machines</strong>
+<ul><li> Ballots to print, distribute
+</li><li> Ballots in other languages, large print
+</li><li> Storage of ballots</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="Direct_Recording_Electronic_voting_machines">Direct Recording Electronic voting machines</span></h4>
+<ul>
+<li>Votes are recorded directly in the computer</li>
+<li>Began to be introduced in the 1970s and 80s</li>
+<li>Paper with voter choices overlaid on a grid of buttons; did not need to program computer</li>
+<li>Touchscreen DREs allowed for multiple languages, varying font size, etc</li>
+<li>Voter authentication:
+<dl><dd><dl><dd><ul><li><ul><li> Voter ID authenticated &amp; given a voter authorization card
+</li><li> Voter inserts card into machine to allow 1 vote to be made</li>
+</li></ul>
+</li></ul>
+</dd></dl>
+</dd></dl>
+</ul>
+<p><strong>After Election</strong>
+<ul><li> Supervisor card used to print out results
+</li><li> Officials sign the tape
+</li><li> Only shows the total # of votes for each candidate; does not show individual votes
+</li><li> Machine records votes on a memory card
+</li><li> Special software reports the totals of the votes from the memory card</p>
+</li></ul>
+
+<p><strong>Security Issues</strong>
+<ul><li> Hard problem: writing correct software that works accurately
+</li><li> Even harder: writing secure software
+</li><li> Even harder: writing complex secure software is difficult, especially when the software has to preserve ballot secrecy and integrity</p>
+</li></ul>
+
+<p><strong>Potential areas of problems</strong>
+<ul><li> Technological Errors
+<ul><li> Design flaws – software may do what the designers intended, but fail to take into account certain major requirements or something the machine needs to do
+</li><li> Software bugs – errors in the software development process
+</li><li> Hardware glitches 
+</li><li> Reliability problems with machine functioning</p>
+</li></ul>
+</li></ul>
+
+<ul>
+<li><p>Vulnerabilities<br />
+<dl><dd><ul><li> Software security – where an attacker could manipulate the machine to make things go wrong
+</li><li> Hardware sabatoge 
+</li><li> Data manipulation – like the Hursti scam
+</li><li> Privacy leaks – will see a lot these soon</p></li>
+</li></ul>
+</dd></dl>
+<li><p>System integrity
+<ul><li><ul><li> Secret software 
+</li></ul>
+</li></ul>
+<dl><dd><dl><dd><dl><dd>Even if the company who built the software posted the software on the internet and said everyone can look at it, fundamentally, there is no way to guarantee that the asserted software is actually the one being used in the machine for the election. There have been many cases in which a software that has never been tested or certified by a government ends up being the software running in the machine on election day. 
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<ul><li><ul><li> Unapproved software
+</li><li> COTS software
+<ul><li> Commercial off the shelf software – software packages that are developed by someone else and used for other purposes
+</li><li> Problems with integrity – have to updated and changed, do not necessarily have to be tested or approved
+</li></ul>
+</li><li> Dishonest lookalike voting machines</p></li>
+</li></ul>
+</li></ul>
+</ul>
+<h4> <span class="mw-headline" id="Inside_the_Black_Box">Inside the Black Box</span></h4>
+<p>DRE voting machines are sometimes referred to as “black box” voting machines
+<ul><li> All the records are inside the machine -&gt; fundamentally unobservable
+</li><li> Computer software is kept secret from the public
+<ul><li> Could be called a trade secret
+</li></ul>
+</li><li> For voting, this process should be more transparent
+</li><li> Software companies often engaged in practices that hindered securtiy
+<ul><li> Secret Software
+</li><li> Security snake oil practices
+</li><li> Security by obscurity = keeping something secret because to do otherwise would be a security problem
+<ul><li> Widely discredited practice in software development
+</li><li> If software relies on secrecy for security and it is leaked, then there is no way to get that security back
+</li><li> More secure to assume that the software is available to the attacker
+</li></ul>
+</li></ul>
+</li><li> Diebold (manufacturer of DRE machines) 
+<ul><li> Extremely secretive
+</li><li> Did not allow evaluation of software or hardware </p>
+</li></ul>
+</li></ul>
+
+<p><strong>2003 - Things began to change</strong>
+<ul><li> Bev Harris (voting activist) inadvertantly discovered the complete source code to the Diebold DRE machine that they were trying to keep secret
+</li><li> 1st time code code be evaluated and the results given to the public
+</li><li> 3 universities evaluated the software and published an analysis in 2003</p>
+</li></ul>
+
+<p>Some of the problems found were
+<ul><li> Voters could make fake Voter Access Cards -&gt; multiple voting possible
+</li><li> Design flaws caused encryption/decryption process to be applied incorrectly
+<ul><li> The same encryption key was used for all memory cards -&gt; major security flaw
+</li><li> Ballots cast were stored on the memory card in order of casting, which would make it easy to figure out how every single voter voted if a person had access to the memory card
+</li><li> Bad software engineering practices within the company -&gt; strong need for sophisticated software not met</p>
+</li></ul>
+</li></ul>
+
+<p>Diebold claimed to have fixed the software, however these major problems with security indicate much deeper problems that, in reality, cannot be fixed so easily. It is also unlikely to find all of the other problems that are surely present in the software, and many have been found.</p>
+<h4> <span class="mw-headline" id="Paper_as_a_Defense">Paper as a Defense</span></h4>
+<p><strong>Advantages of using paper</strong> (especially in combination with some form of technology)<br />
+<ul><li> Provides a backup of the voting records in case of computer failure, lack of availability, etc.
+</li><li> Can do an audit to ensure that both the paper and the electronic records match
+</li><li> Precinct count optical scan machines are preferred for greatest amount of security</p>
+</li></ul>
+
+<p><strong>Major security problems with paper ballots and ballot boxes</strong>
+<ul><li> Physical tampering
+</li><li> Retail fraud
+</li><li> large conspiracy needed to pull it off</p>
+</li></ul>
+
+<p><strong>Major security problems with memory cards</strong>
+<ul><li> Electronic tampering
+</li><li> Wholesale fraud
+</li><li> Only a small conspiracy needed to pull it off</p>
+</li></ul>
+
+<p><strong>Voter-Verifiable Paper Audit Trail / Voter-Verified Physical Audit Trail</strong>
+<ul><li> After voting, computer generates a printout record of the vote
+</li><li> Voter can see immediately and verify their vote -&gt; in case DRE was incorrectly recording votes as they were being cast -&gt; integrity</p>
+</li></ul>
+
+<p><strong>Security issues</strong>
+<ul><li> Dishonest computer software that could print something different
+</li><li> Machine could try to print extra ballots
+</li><li> Machine could throw out a vote</p>
+</li></ul>
+
+<p>Possible solution is to use a cash register type of tape
+<ul><li> Print on tape fades
+</li><li> Print is hard to read
+</li><li> Some machines have the voter open a door to see the tape
+</li><li> Not cutting the tape between each voter keeps a record of an ordered list of voters and their votes</p>
+</li></ul>
+
+<p>Researchers do not agree which is more secure/better: precinct count optical scan machines or DRE voting machine with VVPAT.</p>
+<h2> <span class="mw-headline" id="Problems_with_DREs">Problems with DREs</span></h2>
+<h4> <span class="mw-headline" id="Diebold">Diebold</span></h4>
+<p>In 2006, Professor Halderderman and others had the opportunity to reverse engineer the software in a Diebold DRE voting machine. He received the machine from an anonymous source in New York City, and spent the summer working on the machine in secrecy. 
+<ul><li> Difficult to reverse engineer a machine that has special software that only works for a specific purpose.
+</li><li> Source code is stored in binary that has to be converted into the source code that can be understood by humans.
+</li><li> They found many design flaws in the software.
+</li><li> Bootloader - program that turns on the machine and starts up the operating system
+<ul><li> Potential for a hacker to change the bootloader and the votes
+</li><li> Bootloader contains instructions for updating the machine if certain files are present
+</li><li> Any piece of the Diebold software could be tampered with and changed
+</li></ul>
+</li></ul>
+<dl><dd><dl><dd><dl><dd>example: the bootloader, WinCE kernal, and BallotStation programs could all be replaced by another file if it is present on the memory card
+</dd></dl>
+</dd></dl>
+</dd></dl>
+<ul><li><ul><li> Computers need a way to update software, but Diebold did not have any security controls in place (not even a confirmation that the user wanted to do that update -&gt; attacker only needs to know the file name
+</li><li> Another file would give the user access to Windows Explorer -&gt; another way to tamper with the software
+</li></ul>
+</li><li>Removable ROM chip could also be tampered with and the bootloader file could be bypassed</p>
+</li></ul>
+
+<p><strong>Failure in Depth</strong>
+<ul><li> Boot into Explorer
+</li><li> Insecure firmware updater
+</li><li> ROM replacement</p>
+</li></ul>
+
+<p><strong>Prof. Halderman's Research Project</strong>
+<ul><li> Developed an application that could be loaded onto the machine, and runs on top of Windows along side of the BallotStation interface in the background
+</li><li> No visible sign of the application unless the special ballot stuffing interface is opened that changes votes and the election outcome
+</li><li> Stuffer application monitors the voting process, and with each vote, determines if it needs to be changed or if it matches the outcome the attacker wants
+</li><li> AccuVote has 3 different records to keep track of the voting
+<ul><li> All 3 are accessible from the software, including the stuffer application
+</li></ul>
+</li></ul>
+<dl><dd><dl><dd><ol><li>1 Primary Vote Record (internal memory)
+</li><li>2 Audit Log (internal memory)
+</li><li> 3 Backup Vote Record (removable memory card)
+</li></ol>
+</dd></dl>
+</dd></dl>
+<ul><li> After the election, the stuffer application changes the records in all 3 places and removes itself so that there is no trace of it on the machine</p>
+</li></ul>
+
+<p><strong>Mock Election</strong>
+<ul><li> Staged an election between George Washington and Benedict Arnold
+</li><li> Loaded the malicious software
+</li><li> Ran the initial tape before any votes were cast (typical election procedure)to see that the votes start at zero
+<ul><li> Malicious software could have the machine print zero votes even if that was not the case
+</li></ul>
+</li><li> All votes went to George Washington, but the outcome was always Benedict Arnold</p>
+</li></ul>
+
+<p><strong>Other ways that things can go wrong</strong>
+<ul><li> Before elections, memory card would be moved from machine to machine to do things like update software -&gt; developed a virus that would infect one machine, then infect all the others in a precint through the memory card being used on all the others
+</li><li> One person could potentially alter a state election</p>
+</li></ul>
+
+<p><strong>Security Mechanism that Diebold did have in place</strong>
+<ul><li> Locked door protected access to the memory card
+</li><li> Every voting machine everywhere used the same exact key
+</li><li> Lock was easy to pick -&gt; did not even need the key
+</li><li> The key was widely available -&gt; can Google the number on the key; same key used for juke boxes and hotel mini bars, and is sold on eBay
+</li><li> Diebold had a website where they sold the key to anyone who had previously bought a voting machine (had to be a municipality)
+<ul><li> High resolution image of key on website was used to buy a similar key and file it down to match the image; person sent the key to Prof. Halderman, and it opened the machine</p>
+</li></ul>
+</li></ul>
+
+<h4> <span class="mw-headline" id="More_Goes_Wrong">More Goes Wrong</span></h4>
+<p><strong>Other studies of DRE voting machines</strong></p>
+<p><strong>2007 - Study commissioned by Deborah Bowen, Secretary of State for California</strong>
+<ul><li> Called for a study of all electronic voting machines in California
+</li><li> Study included machines by other manufacturers (Hart, Sequoia), not just Diebold
+</li><li> All three teams found similar results with all the machines
+</li><li> The Secretary of State decertified all of the DRE machines for use in California</p>
+</li></ul>
+
+<p><strong>2007 - Study commissioned by the Secretary of State of Ohio</strong>
+<ul><li> Found similar problems with DREs
+</li><li> Each study found more problems than the study the preceded it
+</li><li> Some problems with the software was expected (as with any software), and it would have been unusual not to find any at all</p>
+</li></ul>
+
+<p><strong>Other studies</strong>
+<ul><li> Netherlands - found that in less than a minute, machine could taken apart and the memory chip replaced with malicious software; also found that votes could be picked up by radio signals, and the signal changed depending on the candidate -&gt; Netherlands banned DREs and went back to paper ballots
+</li><li> Sequoia AVC Edge machine - has similar hardware as a desktop and a compact flash memory card; installed Linux on it, installed Doom (game), then converted it to a Pac Man machine</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="The_Test_of_Time">The Test of Time</span></h4>
+<p>One challenge is to design and build an electronic voting machine that can remain secure for the length of its operational lifetime. </p>
+<p><strong>Sequoia AVC Advantage</strong>
+<ul><li> Internal memory chips could be replaced by an attacker
+</li><li> Protections were in place that if a memory card was replaced, the machine would not run the software on the card -&gt; Prof. Halderman found a way around these protections too</p>
+</li></ul>
+
+<p><strong>Security issues with the sale of surplus DREs on eBay</strong>
+<ul><li> When other states are still using them, criminals could use the machines to develop new attacks
+</li><li> Files are not securely erased from the memory card when the files are deleted<br />
+</li><li> Although the files are encrypted, the key needed to decrypt it was not difficult to obtain
+</li><li> DREs are toxic to dispose of</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 9/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:270-0!*!*!!en!*!* and timestamp 20161127022933 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Digitaldemocracy:_Week_2&amp;oldid=2066">https://share.coursera.org/wiki/index.php?title=Digitaldemocracy:_Week_2&amp;oldid=2066</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

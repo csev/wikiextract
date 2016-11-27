@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter08</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week08" title="Pythonlearn:resources-week08"> Back to Chapter 8 Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:exercises-chapter08</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week08" title="Pythonlearn:resources-week08"> Back to Chapter 8 Resources</a></p>
 <p><strong>Exercises 4 &amp; 5 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.</strong></p>
 <p><em>Exercise 8.1</em> - Write a function called chop that takes a list and modiﬁes it, removing the ﬁrst and last elements, and returns None.
 Then write a function called middle that takes a list and returns a new list that contains all but the ﬁrst and last elements.</p>
@@ -45,8 +45,8 @@ count = 0
 for line in fhand:
     words = line.split()
 # print 'Debug:', words
-    if len(words) == 0 or len(words) &lt; 3 : continue        # Seems redundant. Should be simply: if len(words) &lt; 3: continue , no?
-    if words[0] != 'From' : continue
+    if len(words) == 0 or len(words) &lt; 3&#160;: continue        # Seems redundant. Should be simply: if len(words) &lt; 3: continue , no?
+    if words[0]&#160;!= 'From'&#160;: continue
     print words[2]
 </pre>
 <p><em>Exercise 8.3</em> - Rewrite the guardian code in the above example without two
@@ -58,7 +58,7 @@ count = 0
 
 for line in fhand:
     words = line.split()
-    if len(words) != 0 and words[0] == 'From':  # still throws exception when len(words) &lt; 3.  Should be: if len(words) &gt;= 3 and words[0] == 'From':
+    if len(words)&#160;!= 0 and words[0] == 'From':  # still throws exception when len(words) &lt; 3.  Should be: if len(words) &gt;= 3 and words[0] == 'From':
         print words[2]
 </pre>
 <p><em>Exercise 8.6</em> - Rewrite the program that prompts the user for a list of numbers and
@@ -72,7 +72,7 @@ memory = list()
 
 while True:
     number = raw_input('Enter a number:')
-    if number == 'done' or number == '' : break
+    if number == 'done' or number == ''&#160;: break
     memory.append(float(number))
 
 
@@ -80,6 +80,7 @@ print min(memory)
 print max(memory)
 </pre>
 <p><strong>Exercises 4 &amp; 5 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.</strong></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 13/1000000
@@ -87,9 +88,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3999-0!*!0!*!*!*!* and timestamp 20161126081140 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter08&amp;oldid=33966">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter08&amp;oldid=33966</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

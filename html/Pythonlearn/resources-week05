@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week05</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week05</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
 <ul>
@@ -63,13 +63,13 @@ False
 <h1> <span class="mw-headline" id="break">break</span></h1>
 <p>Use the small letter "b" instead of the capital letter "B" to key in the "break" statement before you run a program. </p>
 <h1> <span class="mw-headline" id="Validating_the_input_data">Validating the input data</span></h1>
-<p>Validating the input data means checking that what was input is the kind of data you want. <br/>
-The below code is one way to do that.<br/><br/>
+<p>Validating the input data means checking that what was input is the kind of data you want. <br />
+The below code is one way to do that.<br /><br />
 <pre>
 try:
     num = int(num)
 except:
-    print "Invalid input"
+    print &quot;Invalid input&quot;
     continue
 </pre></p>
 <p>Or if you wish to do this without potentially affecting the value of num, this code works as well.
@@ -77,29 +77,29 @@ except:
     try:
         num = float(num)
     except:
-        print "Invalid input"
+        print &quot;Invalid input&quot;
         continue
 </pre></p>
 <h1> <span class="mw-headline" id="Stuck_in_a_loop_and_Ctrl_C_won.27t_work">Stuck in a loop and Ctrl C won't work</span></h1>
-<p>Normally 'Ctrl C' will terminate a python program but I got stuck trying to exit my draft program that wasn't doing what I wanted. Instead of exiting as normal it very nicely handled the input as a String and simply returned "Invalid Input:"  then followed 'continue' by simply requesting a new number. Initially I had to kill the terminal session and start afresh until I eventually found that Ctrl Z did the job when Ctrl C did not!   <br/></p>
+<p>Normally 'Ctrl C' will terminate a python program but I got stuck trying to exit my draft program that wasn't doing what I wanted. Instead of exiting as normal it very nicely handled the input as a String and simply returned "Invalid Input:"  then followed 'continue' by simply requesting a new number. Initially I had to kill the terminal session and start afresh until I eventually found that Ctrl Z did the job when Ctrl C did not!   <br /></p>
 <p>*Note(Júlio Araújo): Ctrl+Z, at least in a command line in Linux cause the current proccess that is executing to 'pause' not to stop. If in Linux(may test on other OS) from the command line you execute the program 'top' and make Ctrl+Z will you see that it is paused in background, to call the program back(from pause state) you can do 'fg'. With two or more programs are in background, you have to do 'fg x' - where x is the number associated with the paused program.</p>
 <p>*Note(Robin Hood): I think Ctrl+D sends EndOfFile and may work here.</p>
 <h1> <span class="mw-headline" id=".27not.27_vs._.27is_not.27">'not' vs. 'is not'</span></h1>
 <p><pre>
     intTestValueOne = 1
     if not type(intTestValueOne) == type(1.0):
-        print "Variable is not type('float')"</pre></p>
+        print &quot;Variable is not type('float')&quot;</pre></p>
 <pre>
     fltTestValueTwo = 3.5
     if type(fltTestValueTwo) is not type(1):
-        print "Variable is not type('int')"</pre>
+        print &quot;Variable is not type('int')&quot;</pre>
 <p>Both of the above 'if' statements are going to evaluate to true but which would be the preferred way? I don't know if this is something that I or anyone else is going to be doing on a regular basis and I don't remember what I was thinking about that initially cause me to go this route, but my first attempts with several derivations of the below all failed.
 <pre>
-    if type(intTestValueOne) == "&lt;type 'int'&gt;": 'dosomething'
+    if type(intTestValueOne) == &quot;&lt;type 'int'&gt;&quot;: 'dosomething'
 </pre></p>
 <p>... why not just this:
 <pre>
-    if type(x) == int: "dosomething"
+    if type(x) == int: &quot;dosomething&quot;
 </pre>
 <p>this thing "&lt;type 'int'&gt;" is a string so I wouldn't be comparing the type to a string like that. In newer versions of Python it is &lt;class 'int'&gt; so that code is fragile. 
 </p>
@@ -112,25 +112,25 @@ ci = 0
 
 while True:
 
-    inp = raw_input("Enter a number: ")
-    if inp == 'done' : break
+    inp = raw_input(&quot;Enter a number: &quot;)
+    if inp == 'done'&#160;: break
     try:
         num = float(inp)
         si = si + num
         ci = ci + 1
     except: #this appears to also work for an unintended blank line of data as well.
-        print "Bad Data"
+        print &quot;Bad Data&quot;
 
-print "Sum:", si, "Count:", ci, "Mean:",si/ci
+print &quot;Sum:&quot;, si, &quot;Count:&quot;, ci, &quot;Mean:&quot;,si/ci
 </pre>
 <p>It appears to work fine without the use of 'continue'. Am I missing an exception that I should have debugged for?</p>
 <h3> <span class="mw-headline" id="RE:_An_exception_--.3E_zero_division">RE: An exception --&gt; zero division</span></h3>
 <p>I agree with you, there is no need to use 'continue' in this case because 'try' will make the execution stop at the first statement and therefore the count and the sum will not be affected. However we should add a few statements before evaluating 'si/ci' to prevent zero division error (when the user only types invalid inputs then 'done') this way as an example:</p>
 <pre>
-if ci != 0 :
-    print "Sum:", si, "Count:", ci, "Mean:",si/ci
-else :
-    print "All inputs you entered were invalid ! Good Bye !"
+if ci&#160;!= 0&#160;:
+    print &quot;Sum:&quot;, si, &quot;Count:&quot;, ci, &quot;Mean:&quot;,si/ci
+else&#160;:
+    print &quot;All inputs you entered were invalid&#160;! Good Bye&#160;!&quot;
 </pre>
 <h3> <span class="mw-headline" id="RE:_need_for_continue">RE: need for continue</span></h3>
 <p>There is no need for continue as the 'except:' is at the end of the loop. this means that once except is triggered it will already go to the next iteration</p>
@@ -140,15 +140,15 @@ loop= 0
 count= 0
 running_total= 0
 while loop ==0:
-    inp= raw_input ("Enter a number:")
+    inp= raw_input (&quot;Enter a number:&quot;)
     
-    if inp== "done" or inp== "Done" :
+    if inp== &quot;done&quot; or inp== &quot;Done&quot;&#160;:
         break
         
     try:
         num= float(inp)
     except:
-        print "Invalid input. Please insert a number or type done to finish"
+        print &quot;Invalid input. Please insert a number or type done to finish&quot;
         continue 
         
     count= count + 1
@@ -156,9 +156,9 @@ while loop ==0:
     running_total= running_total + num
         
 
-print count," numbers input" 
-print running_total," total"
-print "and average:", running_total/count
+print count,&quot; numbers input&quot; 
+print running_total,&quot; total&quot;
+print &quot;and average:&quot;, running_total/count
 </pre>
 <p>to clarify, continue is needed here because without it any bad input will not stop the iteration. this will mess up the count and the running total.</p>
 <h1> <span class="mw-headline" id="The_need_for_while">The need for while</span></h1>
@@ -203,7 +203,7 @@ if 3 &lt; None and 3 &gt; None:
 </pre>
 <p>How it is supposed to work?</p>
 <h3> <span class="mw-headline" id="RE:RE:_Mentionable_bug_while_working_exercise">RE:RE: Mentionable bug while working exercise</span></h3>
-<p>It works as it should. and - is logical operation, the result is True when both sides are true. So if we do your 'and' in sequences it be as follow:<br/>
+<p>It works as it should. and - is logical operation, the result is True when both sides are true. So if we do your 'and' in sequences it be as follow:<br />
 <pre>
 if num &lt; small:             # if it is true next is checked
     if num &gt; large:         # if small &lt;= large then that statement is false, so next will be ignored
@@ -242,7 +242,7 @@ if (firstNum == 1 or bottomNum &lt;&gt; 0):     # either firstNum == 1 is TRUE, 
     if (firstNum == None or some condition):   # this is a comparison, note the double ==
     .... Do Something                          # Since the first part is always TRUE, if-statement will run at least once
 </pre>
-<p>So why would you use "is None" ?
+<p>So why would you use "is None"&#160;?
 You want to use "is None" when you don't know how high or low to set the value of the variable "firstNum". In the book example it was used to find the Maximum and Minimum number from a list. "is None" can be think of as any value, just a place holder for any value. It needs to be initialised after first use.
 The comparison operator == is easy to understand. If something equals to something, then it's TRUE. 
 Now change the "==" into is None.
@@ -251,21 +251,21 @@ Now change the "==" into is None.
     firstNum = None                            #
     .
     .
-    if (firstNum is None or some condition):   # equivalent to double == None, because "or" is used, the if-statement
-    .... Do Something                          # will always execute at the first time. "firstNum" will be assigned 
+    if (firstNum is None or some condition):   # equivalent to double == None, because &quot;or&quot; is used, the if-statement
+    .... Do Something                          # will always execute at the first time. &quot;firstNum&quot; will be assigned 
                                                # some initial value inside the if-block
 </pre>
 <p>Using the Maximum loop example from Chapter 5.7
 </p>
 <pre>
-    if largest is None or itervar &gt; largest :
+    if largest is None or itervar &gt; largest&#160;:
         largest = itervar                      # as mentioned, you need to assign an initial value after is None first use
     print 'Loop:', itervar, largest
 </pre>
 <p>After first initialisation. From this moment on, the "is None" condition is ignored. It's as if this is a normal if-statement. You can think of it like this,
 </p>
 <pre>
-    if itervar &gt; largest :                     # is None can be ignored after first initialisation
+    if itervar &gt; largest&#160;:                     # is None can be ignored after first initialisation
         largest = itervar                      # subsequent loops will behave just like any other if-statement
     print 'Loop:', itervar, largest
 </pre></p>
@@ -302,7 +302,7 @@ elif b:
 elif c:
     do something c
 else:
-    print "None of the above"
+    print &quot;None of the above&quot;
 </pre>
 <p>In a multi if-statements, each if-statement condition will be tested. Of course, any initialisation within each if-statement block will also be executed (if setup to do so).
 </p>
@@ -314,12 +314,13 @@ if b:
 if c:
     do something c
 else:
-    print "None of the above"
+    print &quot;None of the above&quot;
 </pre></p>
 <h1> <span class="mw-headline" id="Chapter_5_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter05" title="Pythonlearn:exercises-chapter05"> Chapter 5 Exercises</a></span></h1>
 <p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
 <h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
 <p>Add resources for this chapter to this page..</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 250/1000000
@@ -327,9 +328,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3960-0!*!0!!en!*!* and timestamp 20161126063319 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week05&amp;oldid=34421">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week05&amp;oldid=34421</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

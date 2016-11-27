@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Introfinance:Main</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Introfinance:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Major_concepts"><span class="tocnumber">1</span> <span class="toctext">Major concepts</span></a></li>
 <li class="toclevel-1"><a href="#Resources"><span class="tocnumber">2</span> <span class="toctext">Resources</span></a></li>
@@ -32,13 +32,29 @@
 </ul>
 <h3> <span class="mw-headline" id="Useful_links">Useful links</span></h3>
 <ul>
-<li><a class="external text" href="http://www.amazon.com/Saving-Capitalism-Capitalists-Unleashing-Opportunity/dp/0691121281/ref=tmm_pap_title_0?ie=UTF8&amp;qid=1346520156&amp;sr=1-1" rel="nofollow">Saving Capitalism from the Capitalists</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.amazon.com/Saving-Capitalism-Capitalists-Unleashing-Opportunity/dp/0691121281/ref=tmm_pap_title_0?ie=UTF8&amp;qid=1346520156&amp;sr=1-1">Saving Capitalism from the Capitalists</a></li>
 </ul>
 <h3> <span class="mw-headline" id="Notes">Notes</span></h3>
 <h1> <span class="mw-headline" id="Week_2_-_Lecture_2_-_Multiple_Payments_.28Annuity.29">Week 2 - Lecture 2 - Multiple Payments (Annuity)</span></h1>
 <p>C - cash
 PMT = Payment</p>
 <p>Notes
-<ul><li> Nothing happens at t=0 !!
-</li><li> i means: End of period i</li></ul></p>
-</div></div></div>
+<ul><li> Nothing happens at t=0&#160;!!
+</li><li> i means: End of period i</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:171-0!*!0!!en!*!* and timestamp 20161127014721 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Introfinance:Main&amp;oldid=18159">https://share.coursera.org/wiki/index.php?title=Introfinance:Main&amp;oldid=18159</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

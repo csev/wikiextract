@@ -1,15 +1,15 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week04</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<p><a href="/wiki/index.php/Pythonlearn:exercises-chapter04" title="Pythonlearn:exercises-chapter04"> Chapter 4 Exercises</a><br/>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week04</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<p><a href="/wiki/index.php/Pythonlearn:exercises-chapter04" title="Pythonlearn:exercises-chapter04"> Chapter 4 Exercises</a><br />
 This page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
-<p><a href="/wiki/index.php/Pythonlearn:student-essays" title="Pythonlearn:student-essays"> Student Essays</a> </p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<p><a href="/wiki/index.php/Pythonlearn:student-essays" title="Pythonlearn:student-essays"> Student Essays</a>  </p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes_-_Functions"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes  - Functions</span></a>
 <ul>
@@ -63,5 +63,194 @@ This page is intended as a place for students to work out solutions and answers 
 <p>Programmers tend to write a lot of code, sometimes writing intricately nested conditionals and plugging in variables into complex formulas just to calculate one value or derive one output. However, repeating those several lines of code over and over again for every time the computation is required can make your source code quite verbose as well as tedious to maintain.</p>
 <p>In many programming languages there is a very powerful notion of "modular code" that can help solve this dilemma. Various segments of related code are broken apart and collapsed into smaller sets that can then be used to contribute to the larger, overarching scheme of the program itself. These reusable, modular pieces have different names in different languages (modules, routines, sub-routines, methods, etc), but in Python and many other languages besides, these are referred to as <em>functions</em>.</p>
 <p><strong>Functions</strong>
-<dl><dd> Taking segments of related code, wrapping it up in its own allocated code block, and attributing it with a name so that it can be called later at any point of the overarching program, thus treating it as its own separate, self contained, and individually existing entity. A "sub program" within your program, if you will.</dd></dl></p>
-</div></div></div>
+<dl><dd> Taking segments of related code, wrapping it up in its own allocated code block, and attributing it with a name so that it can be called later at any point of the overarching program, thus treating it as its own separate, self contained, and individually existing entity. A "sub program" within your program, if you will.</p>
+</dd></dl>
+
+<h2> <span class="mw-headline" id="Why_use_functions.3F">Why use functions?</span></h2>
+<p><strong>To function or not to function...</strong></p>
+<p>To see the full utility of functions, coding programs that are longer than what is required to complete <em>Programming for Everybody</em> is necessary.  But even if the reasoning behind the use of functions is not clear to you by the end of this course, an understanding of the benefits of using functions and when you should write a function will come as you continue to code with python and your programs become more complex.  As with previous sections in this course, don't be discouraged if you don't have a complete understanding a given step.  Keep programming while using and reviewing the concepts taught and the understanding will come. Think about it this way: "A function will help the program function."</p>
+<p>The remainder of the course and the textbook will often use function definitions to explain concepts.  The reasons why this course uses functions to teach are some of the same reasons that you will use functions in your own programming.</p>
+<p>Neither the textbook or the lecture contained a complete list of the reasons to use functions presented within Chapter/Week 4.  The combined reasons for using functions was combined under four major subheadings: Repetition, Clarity, Productivity, Debugging.  These four major groups were not listed as such within the course, and in reality there is overlap between each category and any other of the categories.  The categories used here are only a suggested framework for discussion.  <strong>Quotation marks below denote text taken directly from the textbook or the lecture slides.</strong></p>
+<h3> <span class="mw-headline" id="Repetition">Repetition</span></h3>
+<p>"You keep doing the same thing over and over again"</p>
+<p>One of the reasons to learn to program that was stated at the beginning of the course is to take advantage of the computer's ability to repeat the same task over and over in the same manner.  </p>
+<p>"Don’t repeat yourself - make it work once and then reuse it"</p>
+<p>"Make a library of common stuff that you do over and over"</p>
+<p>You can use the formula that you created within the same program, or within other programs where you want to do the same processes.</p>
+<h3> <span class="mw-headline" id="Clarity">Clarity</span></h3>
+<p>"Part of the skill of creating and using functions is to have a function properly capture an idea..."</p>
+<p>"Organize your code into “paragraphs” - capture a complete thought and “name it”."</p>
+<p>"Functions can make a program smaller by eliminating repetitive code."</p>
+<p>"If something gets too long or complex, break it up into logical chunks and put those chunks in functions."</p>
+<p>"Creating a new function gives you an opportunity to name a group of statements, which makes your program easier to read, understand, and debug."</p>
+<h3> <span class="mw-headline" id="Productivity">Productivity</span></h3>
+<p>"Well-designed functions are often useful for many programs. Once you write and debug one, you can reuse it."</p>
+<p>You may find that you are using the same processes within different programs.</p>
+<p>"Make a library of common stuff that you do over and over - perhaps share this with your friends..."</p>
+<p>"Later, if you make a change, you only have to make it in one place."</p>
+<p>Even if your function is not perfect from the start, or you find a better way to express your programming needs, you will have reduced the number of places you will need to edit your program.  Because of the nature of functions, the results of one edit can be seen throughout the length of your program or programs where that function is being used.</p>
+<h3> <span class="mw-headline" id="Debugging">Debugging</span></h3>
+<p>"Dividing a long program into functions allows you to debug the parts one at a time and then assemble them into a working whole."</p>
+<p>All of the previous categories lead up to assistance with debugging.  There is less code to read during debugging because you have reduced the amount of repetition though formulas.  This simplification makes your code easier to read in order to follow the flow of how python processes your program.  Part of this simplification in reading the code is due to the program having been broken down into smaller chunks that can be analyzed for their individual contributions to your program.  If the function is part of your personal python library, you will have already tested and debugged these saved sections of your code during the creation of previous programs.  You will be able to focus your attention on the new and still untested portions of your code.</p>
+<h2> <span class="mw-headline" id="Built-In_Functions">Built-In Functions</span></h2>
+<p>Whether we realized it or not, we have already been using functions extensively in our programs since week 1. Python has a number of built-in functions we can use without any knowledge of how its internal code actually works, so long as we know what the function name is. Examples include:</p>
+<ul>
+<li><code>raw_input()</code></li>
+<li><code>type()</code></li>
+<li><code>int()</code></li>
+<li><code>float()</code></li>
+<li><code>str()</code></li>
+<li><code>max()</code></li>
+<li><code>len()</code></li>
+</ul>
+<p>To see a full listing of Python's built-in functions, visit the <a rel="nofollow" class="external text" href="https://docs.python.org/2/library/functions.html">online Python documentation</a>.</p>
+<h2> <span class="mw-headline" id="Basics_of_Function_Structure">Basics of Function Structure</span></h2>
+<h3> <span class="mw-headline" id="Function_Calls">Function Calls</span></h3>
+<p>Utilizing a function is simple. We execute a function by addressing its name; this is called <em>invoking</em> a function.</p>
+<code><pre>x = raw_input()
+</pre></code>
+<p>When assigning the value to <strong>x</strong>, function <code>raw_input()</code> is <em>invoked</em> using its name. As soon as Python reads this line of code Python accesses all the code pertinent to function <code>raw_input()</code> it has built in and executes, resulting in our program "freezing" while a blinking cursor appears at the terminal awaiting user input.</p>
+<h3> <span class="mw-headline" id="Arguments">Arguments</span></h3>
+<p>After the function call, we can optionally pass in any <em>arguments</em> in the form of variables or constants that the function might accept as well in the following parentheses.</p>
+<code><pre>x = raw_input(&quot;Enter the value of x: &quot;)
+</pre></code>
+<p>The <code>raw_input()</code> function call is followed by the string literal <code>"Enter the value of x: "</code> as the <em>argument</em> passed into its parentheses. (Read more on <strong><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Pythonlearn:resources-week04#Passing_Information">Functions: Passing Information</a></strong>).</p>
+<p>Without the <code>raw_input()</code> function we could still implement our own code to gather information from the keyboard, but it would require an extensive knowledge of how Python works and would considerably lengthen our code. A prevailing idea in computer science is the notion of building re-usable code. In this case, we are spared the extraneous details of how to hardcode an implementation of keyboard input by simply reusing the Python provided code already available to us in the  <code>raw_input()</code> function.</p>
+<h2> <span class="mw-headline" id="User-Defined_Functions">User-Defined Functions</span></h2>
+<p>Python also allows us to create our own custom functions. This can be very useful if the functionality we seek isn't provided in one of <a rel="nofollow" class="external text" href="https://docs.python.org/2/library/functions.html">Python's built-in functions</a> or if we simply want to consolidate repetitive code.</p>
+<h3> <span class="mw-headline" id="Function_Definitions">Function Definitions</span></h3>
+<code><pre>def myFunction():
+    # your code goes here...
+</pre></code>
+<p>In order to <em>define</em> a function we use the <code>def</code> keyword. This is followed by the unique name you wish to invoke your function with and a set of parentheses. You end the line with the <code>:</code> colon character. Your code block is then placed in the following lines, indented 4 <code>space</code> characters in.</p>
+<h3> <span class="mw-headline" id="Function_Placement">Function Placement</span></h3>
+<p>Function definitions have to be placed before you invoke them (common practice holds to define all functions at the very top of your source code file). It is similar in concept to the use of a variable in that if Python encounters a variable name such as <strong>myVariable</strong> before you assign a value to it Python will not know what "myVariable" means and therefore gives a traceback error. In similar regard, the function definition teaches Python what <code>myFunction()</code> is, how to recognize it when it is invoked, and what code to run once it is called in your code.</p>
+<code><pre>def myFunction():
+    print 'I am now printing from myFunction&#160;:D'
+
+print 'I am printing from the main body of code'
+myFunction()
+
+# Output
+I am printing from the main body of code
+I am now printing from myFunction&#160;:D
+</pre></code>
+<h3> <span class="mw-headline" id="Function_Evaluation_vs._Function_Execution">Function Evaluation vs. Function Execution</span></h3>
+<p>Notice that Python did not run the <code>print</code> in the <code>myFunction()</code> code block first. The first two lines are only to instruct Python what <code>myFunction()</code> is. The definition does not actually execute any of its enclosed code. Then at the very bottom we make the function call for the first time, and appropriately it is the last line of output.</p>
+<h2> <span class="mw-headline" id="Passing_Information">Passing Information</span></h2>
+<h3> <span class="mw-headline" id="Parameters">Parameters</span></h3>
+<p>You can also specify <em>parameters</em> within the parentheses that your function can work with. <em>Parameters</em> are temporary variables that act as placeholders for the <em>arguments</em> passed in on the function call.</p>
+<code><pre>def product(num1, num2):
+    num3 = num1 * num2
+</pre></code>
+<p>The function <code>product()</code> takes in two variables, <strong>num1</strong> and <strong>num2</strong>. These are generically named variables because they only serve a generalized purpose; multiply two numbers together. The actual arguments passed in may be <strong>length</strong> and <strong>width</strong>, or <strong>speed</strong> and <strong>distance</strong>, or <strong>rate</strong> and <strong>hours</strong>. Perhaps our program even sends all of those variables into <code>product()</code> at different stages of the very same program.</p>
+<p>It is important to understand therefore that <em>parameters</em> within a function definition, even if named the very same as our variables, <em>are only temporary placeholders</em>. As soon as the end of the code block is hit the memory allocated for all variables within <code>product()</code> gets reclaimed by the computer. This is due to something called <em>variable scope</em>. </p>
+<p><em>Nota Bene</em>: Ironically, an expanded discussion of variable scope is not within the scope (pun intended) of this chapter or lecture. Dr. Chuck did very briefly describe this behaviour in his lecture, comparing the processes done within a function as "scratch paper calculations" that are then "thrown away" after it is done executing. </p>
+<h3> <span class="mw-headline" id="Returns">Returns</span></h3>
+<p>If we want our calculations to have permanence then, we can "return" a value back to function call using the <code>return</code> keyword followed by a variable, constant, or expression.</p>
+<code><pre>def product(num1, num2):
+    num3 = num1 * num2
+    return num3
+
+# somewhere in the middle of your code...
+triangleArea = product(base, height) * 0.5
+</pre></code>
+<p>As soon as <code>product()</code> is done evaluating, the <code>return num3</code> line sends the value of <strong>num3</strong> back to the line where <code>product()</code> was called. The arithmetic expression continues to evaluate by multiplying 0.5 by the product that was returned. Finally <strong>triangleArea</strong> is assigned the value of the finished calculation.</p>
+<p><em>Nota Bene</em>: The <code>return</code> statement should be placed at the bottom of your function code block. Anything after the <code>return</code> statement will not be executed since <code>return</code> force exits the function to give back the value to the calling expression. The only time you might want to implement <code>return</code> statements elsewhere is if it's incorporated into various conditional statements that would return varying values depending on boolean evaluations.</p>
+<p>Programs generally take some input, do some calculations, and produce an output. Functions generally follow this pattern too. However a function does not explicitly have to take arguments or return a value, i.e. take some input and produce an output. A function that has no parameters, so takes no input arguments, is a <em>parameterless</em> or <em>no-argument</em> function, and one that returns no value is a <em>void</em> function. </p>
+<h2> <span class="mw-headline" id="Advanced_Topics">Advanced Topics</span></h2>
+<h3> <span class="mw-headline" id="Modules">Modules</span></h3>
+<p><em>Modules</em> are also arguably a little outside of scope to discuss extensively this early on. However, Dr. Chuck did briefly mention the use of Python libraries in his lecture and he used the <strong>math module</strong> to demonstrate some advanced function usage in the chapter. I believe the topic is worth at least a quick overview as it has tremendous implications regarding function extensibility.</p>
+<p>An oversimplified definition of a <em>module</em> would be a Python source file, similar to all the .py files you have been creating for your Coursera problem sets. These source files contain a specific set of function definitions pertaining to particular criteria. (See <a rel="nofollow" class="external text" href="https://docs.python.org/2/tutorial/modules.html">Python's Official Documentation on Modules</a>)</p>
+<p>These <em>module</em> files can then be incorporated into your code with the <code>#import</code> command. This gives you a whole new library of functions to utilize in your code. For example, Dr. Chuck uses the <a rel="nofollow" class="external text" href="https://docs.python.org/2/library/math.html">math module</a> in the textbook <a rel="nofollow" class="external text" href="http://www.pythonlearn.com/html-008/cfbook005.html#toc46">to demonstrate trigonometric functions</a> and other advanced functions not available among the built-in Python functions. In fact Python has a wide array of <a rel="nofollow" class="external text" href="https://docs.python.org/2/library/numeric.html">numeric and math related modules</a> that offer powerfully capable functions for complex operations.</p>
+<p>For a comprehensive list of <em>Python modules</em> see the <a rel="nofollow" class="external text" href="https://docs.python.org/2/py-modindex.html">Python Module Index</a>.</p>
+<h3> <span class="mw-headline" id="Bringing_It_All_Together:_A_Practical_Implementation">Bringing It All Together: A Practical Implementation</span></h3>
+<p>Dr. Chuck mentions that functions may not seem useful right now when our programs are generally only a few lines long. However, for pedagogical reasons, we are asked to re-implement our simple "Compute Pay" program to utilize a function call in our week 4 problem set. Similarly, all the lecture examples, self admitted by Dr. Chuck himself, are rather simple and silly. Even in these notes, for pedagogical reasons similar to Dr. Chuck's, I've kept all of the examples simple, leaning towards concept comprehension rather than complex implementations.</p>
+<p>However, this kind of oversimplification brings about its own set of problems. Fellow students might wonder why bother with a <code>product()</code> function when they could simply use the arithmetic <code>*</code> multiplication operator instead? Why write a function that only does a <code>print</code> execution when a straightforward <code>print</code> would accomplish the same trivial task?</p>
+<p>It is equally important to get a practical perspective of code concepts than just simplified examples. At a certain point, explaining in abstract terms becomes detrimental. To that end, I've whipped up some example code that implements <em>all</em> of the above topics to demonstrate them <em>in real-world application</em>.</p>
+<code><pre># Caesar Cipher - A Python program to encrypt/decrypt messages
+# Python v 2.x (Not Supported in v3.x)
+
+# Import Declaration
+import string
+
+# Function Definition
+def cipher(message, shift, encrypt):
+   if encrypt == False&#160;: shift = 26 - shift
+   return message.translate(
+       string.maketrans(
+           string.ascii_uppercase + string.ascii_lowercase,
+           string.ascii_uppercase[shift:] + string.ascii_uppercase[:shift] +
+           string.ascii_lowercase[shift:] + string.ascii_lowercase[:shift]
+           )
+       )
+
+# Prompt user for encryption criteria
+message = raw_input(&quot;Enter plain-text message: &quot;)
+shift = int(raw_input(&quot;Choose your cipher shift value: &quot;))
+
+# Encrypt message
+message = cipher(message, shift, encrypt = True)
+print &quot;Encrypted cipher-text: &quot; + message
+
+# Prompt user for decryption
+key = int(raw_input(&quot;Please enter cipher-key to decrypt your message: &quot;))
+
+# Attempt decryption
+if key == shift:
+    message = cipher(message, shift, encrypt = False)
+    print &quot;Decrypted cipher-text: &quot; + message
+else:
+    message = None
+    print &quot;Invalid key. Your message has been deleted.&quot;
+    print &quot;This program will now self destruct!&quot;
+</pre></code>
+<ul>
+<li>This throws up an error:</li>
+</ul>
+<p>AttributeError: 'str' object has no attribute 'translate' on line 10</p>
+<p>This program utilizes the principles of a classic <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Caesar_cipher">Caesar Cipher</a> in order to encrypt and decrypt messages. The textbook <a rel="nofollow" class="external text" href="http://www.pythonlearn.com/html-008/cfbook005.html#toc46">briefly covers module imports and dot notation</a>, however if you have only watched the lecture videos on Coursera, just ignore the verbose minutia in the latter part of the function definition and take it on faith that <code>return message.translate()</code> is returning an encrypted/decrypted value back to the function call. </p>
+<p>The point to take away from this is that without the function definition, all of that <a rel="nofollow" class="external text" href="https://docs.python.org/2/library/string.html#module-string">string manipulation logic</a> happening would have to be implemented over and over in the code whenever the <strong>message</strong> variable needed to be encrypted or decrypted by the user. However, as the current implementation stands, every time <strong>message</strong> is manipulated, a simple <code>cipher()</code> call is made that only takes up one line. This drastically cleans up the code and makes debugging much less of a hassle since if you ever wanted to tweak some parameter in the algorithm, there is only one place you have to go to edit instead of several.</p>
+<p>Function <code>cipher()</code> also utilizes <em>arguments</em> and <em>parameters</em> to pass in the user input <strong>message</strong>, the encryption <strong>shift</strong> value (i.e. the 'key'), and a <code>bool</code> value to determine whether to encrypt or decrypt <strong>message</strong> with that key.</p>
+<p>Sample Output:</p>
+<code><pre>Enter plain-text message: Cryptography using Python!
+Choose your cipher shift value: 17
+
+Encrypted cipher-text: Tipgkfxirgyp ljzex Gpkyfe!
+
+Please enter cipher-key to decrypt your message: 17
+Decrypted cipher-text: Cryptography using Python!
+</pre></code>
+<h3> <span class="mw-headline" id="An_Aside_on_Naming_Schemes">An Aside on Naming Schemes</span></h3>
+<p>Function names should be contextually obvious. This is most often either a simple word that describes its purpose, i.e. <code>cipher()</code>, or <code>product()</code>, or something in the <em>verbNoun()</em> or <em>verb_noun()</em> format, such as <code>calculateArea()</code>, or <code>compute_pay()</code>, etc, that readily suggests what output it will produce. But if the function returns a boolean result then its name should be an assertion that should clearly be either <code>True</code> or <code>False</code>, such as <code>isEven()</code> for a function that will return <code>True</code> if the argument is an even integer and <code>False</code> otherwise.</p>
+<p>Regarding the <em>parameter</em> naming scheme, here is where I'll again depart slightly from all of Dr. Chuck's examples so far. The <a rel="nofollow" class="external text" href="http://www.pythonlearn.com/html-008/cfbook005.html#toc50">textbook example</a> implemented another silly, simple parameter name. In the <a rel="nofollow" class="external text" href="https://class.coursera.org/pythonlearn-002/lecture/51">worked exercise</a> example as well, Dr. Chuck shortened the already crystal clear <strong>hour</strong> and <strong>rate</strong> variables to <strong>h</strong> and <strong>r</strong> in the <code>computePay()</code> function. I understand the pedagogical reasoning behind purposefully changing the names inside of the function, it was to demonstrate that <em>parameter variables</em> and <em>argument variables</em> are functionally different. A lot of other computer science classrooms and even in-the-field programmers implement this tactic as well. However, this seems to me, like change for change's own sake.</p>
+<p>Even a venerable programmer like Dr. Chuck inevitably confused himself working with obscure variables <strong>h</strong> and <strong>r</strong>. This goes back to the discussion on good design choices (see Week 2 Notes on <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Pythonlearn:resources-week02#Variable_Naming">Variable Naming</a> and <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Pythonlearn:resources-week02#Python_Comments">Python Comments</a>). There is (and this is just a fellow student's opinion, so take it with a heavy grain of salt) absolutely nothing wrong with keeping the same contextually obvious naming scheme within functions <em>so long as you understand variable scope and that these are two distinct variables</em>. Without the <code>return</code> statement preceding the <code>message.translate()</code> line, the <code>cipher()</code> function would be absolutely useless. Because the <em>argument variable</em> <strong>message</strong> and the <em>parameter variable</em> <strong>message</strong> are two distinct entities, they are not the same variable; any changes made to <strong>message</strong> inside function <code>cipher()</code> would not persist to the <strong>message</strong> variable in the main body of code.</p>
+<h1> <span class="mw-headline" id="">_______</span></h1>
+<p>2/25/2016
+Insightful and extremely helpful. Enjoyed reading and learning several new things. Very nice work. 
+I understood the reason for using "message" as both for <i>parameter variable' and ' argument variable</i> to demonstrate that they are two different variables. However, for clarity I will still prefer to use a different variable like 'my_message' or something similar for one of the variable names. 
+Thanks you for making clear several concepts in your note. </p>
+<h1> <span class="mw-headline" id="_2">______</span></h1>
+<p>So long as you understand this and that you explicitly need a <code>return</code> statement in order to output a value from your functions, I see no reason why using the same variable name <strong>message</strong> should be discouraged. It seems far less confusing to me that changing it to variable <strong>m</strong> or variable <strong>inp</strong> or variable <strong>myStr</strong> simply to scratch the itch of changing names just because it can be done.</p>
+<h2> <span class="mw-headline" id="Again.2C_these_sorts_of_decisions_deal_less_with_Python.27s_syntax_rules_and_fall_more_in_line_with_what_may_be_considered_good_programming_style_and_design_choices.">Again, these sorts of decisions deal less with Python's syntax rules and fall more in line with what may be considered good programming style and design choices.</span></h2>
+<p>Some languages encourage use of a descriptive prefix on variable names to aid in readily determining a parameter. For example, in a function, the parameter variable <strong>pName</strong> or <strong>p_name</strong> cannot be confused with local variable <strong>name</strong>. </p>
+<h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
+<ul>
+<li><p><a rel="nofollow" class="external text" href="https://docs.python.org/release/1.5.1p1/tut/functions.html">Creating functions - Python official website</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/functions.html">Defining functions</a></p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 75/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3959-0!*!0!!en!*!* and timestamp 20161126063638 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week04&amp;oldid=33600">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week04&amp;oldid=33600</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

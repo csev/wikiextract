@@ -1,26 +1,51 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:student-essays</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><h1> <span class="mw-headline" id=".22Why_is_it_so_hard_to_learn_programming.3F.22">"Why is it so hard to learn programming?"</span></h1>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:student-essays</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id=".22Why_is_it_so_hard_to_learn_programming.3F.22">"Why is it so hard to learn programming?"</span></h1>
 <p>After I decided to learn to program, the first thing I had to do was choose a programming language. I wanted to find the perfect programming language, one in which I could build anything I wanted. However, I found that every language has advantages and disadvantages.   </p>
 <p>When I want to learn, I should choose reading books or taking courses. But books and courses aren't available for for any language you want to learn; this reduces the number of options you have to choose from!  </p>
 <p>With this fact, I learn any most popular programming language with most popular books. But, after learning the fundamentals, I still cannot create a program which I want! In other words, I am still not a programmer! Even after reading huge books, this situation never changes!  </p>
 <p>I become angry about this situation. If I search on the web, I see all books and all courses claim that by learning programming by them, we could succeed and create our programs. But that’s just a lie.  </p>
 <p>One day, I download many books in Python and C++ (more than 700 MB) and look them very fast. I just look at them how they create programs by the examples. If that examples have good knowledge which enable me to create my programs, I start read that book and learn every sentence of that to become a true programmer. But I found out all of them have a same method! They begin with some simple statement (Hello World!) and some other aspects of programming and then, finish!  </p>
 <p>These books and courses even don’t teach how to build a setup (install) file to let the people setup our program to their computer! In Python, we have many bad circumstance which confuse more and more from other languages. Python fans always claim this is very easy and powerful and could run in any device! But in fact, this language doesn’t have a visual development environment (IDE)! Indeed, Python just could create program for main operation systems like Windows, Linux, MAC and few other. Even for Android, it needs more knowledge about other programs and library codes!  </p>
-<p>Wait a minute! If we manage to create a program which works well on algorithm and other necessary elements of program, we don’t have time to create visual elements and to configure it to operate on other devices. We want a simple and fast way to succeed in producing programs. But when we ask this, these repeated and false statements comes from fans of Python:<br/>
-“There is no any ideal programming language or IDE!”<br/>
-“Python is very easy and powerful language!”<br/>
+<p>Wait a minute! If we manage to create a program which works well on algorithm and other necessary elements of program, we don’t have time to create visual elements and to configure it to operate on other devices. We want a simple and fast way to succeed in producing programs. But when we ask this, these repeated and false statements comes from fans of Python:<br />
+“There is no any ideal programming language or IDE!”<br />
+“Python is very easy and powerful language!”<br />
 “We have enormous resources for this language and many universities teach this language for programming!”  </p>
 <p>OK! If we assume their thought is right, we go back to the beginning of our problem which I mentioned in the beginning of this article. So, I choose not to trust them and to find out a faster and easier way to reach my goal.  </p>
 <p>I have searched the Internet and have found some tools which enable people to create games without knowing a programming language! All parts are available. But those tools are not ideal because they are limited to few situations and won't enable you to create any program, because they don’t cover all aspects of computer logic.  </p>
-<p>I search again and also I look at all programming language which made so far. I see their facilities to create programs for any device. After that, I search on editor part of programming (IDE). I searched again to found out which tools in the computer world have all of advantage of programming language part and editor part. My search was for this desires:<br/>
-<ul><li> Easy programming language<br/>
-</li><li> Cross build which enable to create program for multiple device<br/>
-</li><li> Visual part for creating widows, Menu, buttons, etc.<br/>
-</li><li> Free and open source  </li></ul></p>
-</div></div></div>
+<p>I search again and also I look at all programming language which made so far. I see their facilities to create programs for any device. After that, I search on editor part of programming (IDE). I searched again to found out which tools in the computer world have all of advantage of programming language part and editor part. My search was for this desires:<br />
+<ul><li> Easy programming language<br />
+</li><li> Cross build which enable to create program for multiple device<br />
+</li><li> Visual part for creating widows, Menu, buttons, etc.<br />
+</li><li> Free and open source  </p>
+</li></ul>
+
+<p>Last desire (Free and open source) is very important to prevent loosing accessing from this tool. Companies could sell their programs in very high price and that made a huge problem to use them. Open source of a program which we using for creating programs is also very important, because by that, we have more security and developers for that tool and we could trust that more than a tool which just few employee of a company made that.
+In the search of the web, I see many lie quotes about programming language and IDE, but again, I just follow my dream and finally, I found out “Lazarus”.  </p>
+<p>Lazarus is a tool (IDE) which has my desire, but very soon I found out another one which is better than Lazarus. Notice, even when I found out my dream tool (Lazarus), I look at other best tool. I don’t want to become like Python fans which keep saying the same thing all time! I just want a way to success and I don’t care about its name or its language.
+After Lazarus, I found out “Code Typhon” which has all the things I wanted. That is my way which, unfortunately, teaching system doesn’t have at all! I just want to reach my dream, but these teaching staffs and book publishers, just think about their income and their ranks on universities!  </p>
+<p>Today, having a degree is more important to make invention or discovery! How many walls should hold this useless degrees? How many cheers will be enough for this teaching staffs?
+Where is our right? I was eager to create a program, but they show me C++! Python! C#! And their favorite IDE. But none of them was easy for me or my favorite one.
+If beginners see this qualifications in any field, they lose their will to continue that. For example, if people don’t understand chess, they won't like it as chess fans do.  </p>
+<p>I hope this becomes a true reason to change this teaching system in programming.  </p>
+<hr />
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 10/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:4086-0!*!*!*!*!*!* and timestamp 20161126105251 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:student-essays&amp;oldid=27574">https://share.coursera.org/wiki/index.php?title=Pythonlearn:student-essays&amp;oldid=27574</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

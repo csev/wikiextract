@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter09</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week09" title="Pythonlearn:resources-week09"> Back to Chapter 9 Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:exercises-chapter09</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week09" title="Pythonlearn:resources-week09"> Back to Chapter 9 Resources</a></p>
 <p><strong>Exercise 4 is a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.</strong></p>
 <p><em>Exercise 1</em></p>
 <ul>
@@ -21,7 +21,7 @@ fhand = open('words.txt')
 inp = fhand.read()
 inp = inp.split() # inp = list(inp) also creates a list containing all the words in words.txt as elements.
 
-for word in inp :
+for word in inp&#160;:
     count = count + 1
     newdict[word] = [count]
 
@@ -35,27 +35,27 @@ print 'political' in newdict
 <p><em>Exercise 1 - different approach</em>
 I used mbox-short.txt for this exercise.
 <pre>
-name = raw_input("Enter file:")
+name = raw_input(&quot;Enter file:&quot;)
 handle = open(name,'r')
 text = handle.read()
 words = text.split()&lt;/p&gt;
 
 &lt;p&gt;if 'From' in words:
-    print "True"
+    print &quot;True&quot;
 </pre></p>
 <ul>
 <li>Note: to use the <strong>in</strong> operator to check for presence of specific <em>values</em> (rather than <em>keys</em>), reference the use of the method <strong>values</strong> as explained on page 86 of <em>Python For Informatics</em>.</li>
 </ul>
 <p><em>Exercise 2</em> - Write a program that categorizes each mail message by which day of the week the commit was done. To do this look for lines which start with "From", then look for the third word and then keep a running count of each of the days of the week. At the end of the program print out the contents of your dictionary (order does not matter).</p>
 <pre>
-fname = raw_input("Enter a file name: ")
-if len(fname) &lt; 1 : fname = "mbox-short.txt"
+fname = raw_input(&quot;Enter a file name: &quot;)
+if len(fname) &lt; 1&#160;: fname = &quot;mbox-short.txt&quot;
 fhand = open(fname)
 
 days = dict()
 
 for line in fhand:
-    if line.startswith("From "):
+    if line.startswith(&quot;From &quot;):
         words = line.split()
         dayofweek = words[2]
         days[dayofweek] = days.get(dayofweek,0) + 1
@@ -69,18 +69,18 @@ print days
 </ul>
 <pre>
 file = raw_input('Enter file name: ')
-if len(file) &lt; 1 : file = 'mbox-short.txt'
+if len(file) &lt; 1&#160;: file = 'mbox-short.txt'
 
-try :
+try&#160;:
     fhand = open(file)
-except :
+except&#160;:
     print 'Cannot open file:' , file , '.' , '...please try, again.'
     exit()
 
 email_adrs = dict()
 
-for line in fhand :
-    if not line.startswith('From ') : continue
+for line in fhand&#160;:
+    if not line.startswith('From ')&#160;: continue
     words = line.split()
     email_adrs[words[1]] = email_adrs.get(words[1], 0) + 1
 
@@ -91,18 +91,18 @@ print email_adrs
 <p><em>Exercise 5</em></p>
 <pre>
 file = raw_input('Enter file name: ')
-if len(file) &lt; 1 : file = 'mbox-short.txt'
+if len(file) &lt; 1&#160;: file = 'mbox-short.txt'
 
-try :
+try&#160;:
     hand = open(file)
-except :
+except&#160;:
     print 'Could not open',file
     exit()
 
 school = dict()
 
-for line in hand :
-    if not line.startswith('From ') : continue
+for line in hand&#160;:
+    if not line.startswith('From ')&#160;: continue
     words = line.split()
     words = words[1].split('@')
     addr = words[1]
@@ -122,7 +122,7 @@ except:
     exit()
 hosts = dict()
 for line in fhand:
-    if not line.startswith('From ') : continue
+    if not line.startswith('From ')&#160;: continue
     atpos = line.find('@')
     sppos = line.find(' ',atpos)
     host = line[atpos+1:sppos]
@@ -130,6 +130,7 @@ for line in fhand:
 print hosts 
 
 </pre>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 19/1000000
@@ -137,9 +138,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:4000-0!*!0!*!*!*!* and timestamp 20161126214953 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter09&amp;oldid=34299">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter09&amp;oldid=34299</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

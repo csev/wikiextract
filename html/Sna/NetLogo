@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Sna:NetLogo</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>In the SNA course, you will need <a class="external text" href="http://ccl.northwestern.edu/netlogo/" rel="nofollow">NetLogo</a> to explore the models. You can do by loading applets in your browser, or by launching the desktop app.</p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sna:NetLogo</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>In the SNA course, you will need <a rel="nofollow" class="external text" href="http://ccl.northwestern.edu/netlogo/">NetLogo</a> to explore the models. You can do by loading applets in your browser, or by launching the desktop app.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Using_NetLogo_as_a_standalone_app:"><span class="tocnumber">1</span> <span class="toctext">Using NetLogo as a standalone app:</span></a></li>
 <li class="toclevel-1"><a href="#Using_NetLogo_applet_in_your_browser"><span class="tocnumber">2</span> <span class="toctext">Using NetLogo applet in your browser</span></a>
@@ -42,50 +42,51 @@
 </td></tr></table>
 <h2> <span class="mw-headline" id="Using_NetLogo_as_a_standalone_app:">Using NetLogo as a standalone app:</span></h2>
 <ul>
-<li>Download (and optionally) read tutorials <a class="external text" href="http://ccl.northwestern.edu/netlogo/" rel="nofollow">here</a>.</li>
-<li>Download the <a class="external text" href="https://spark-public.s3.amazonaws.com/sna/netlearn/netlearn.zip" rel="nofollow">bundle of NetLogo apps for this course</a>.</li>
-<li>You can also download individual applet files from the course pages, e.g. <a class="external free" href="http://www.ladamic.com/netlearn/NetLogo502/VisualizationCommunities.html" rel="nofollow">http://www.ladamic.com/netlearn/NetLogo502/VisualizationCommunities.html</a>, right click on the .nlogo filename, and select 'Save Link As'. Then within NetLogo, fo to File-&gt;Open, and navigate to the spot where you saved the .nlogo file.
-<a class="image" href="/wiki/index.php/File:Saving_NLogoFile.jpg"><img alt="Saving NLogoFile.jpg" height="815" src="/wiki/images/1/1d/Saving_NLogoFile.jpg" width="747"/></a></li>
-<li>You will also need the NW extension of the applet to run models, starting with Week 2. You can download it <a class="external text" href="https://spark-public.s3.amazonaws.com/sna/netlearn/nw.zip" rel="nofollow">here</a>. If that version is incompatible with your system, try the <a class="external text" href="https://github.com/NetLogo/NW-Extension" rel="nofollow">latest version from github</a>. Unzip the archive and place it in the 'extensions' folder of your NetLogo application, e.g. on a Mac /Applications/NetLogo 5.0.3/extensions.</li>
+<li>Download (and optionally) read tutorials <a rel="nofollow" class="external text" href="http://ccl.northwestern.edu/netlogo/">here</a>.</li>
+<li>Download the <a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/sna/netlearn/netlearn.zip">bundle of NetLogo apps for this course</a>.</li>
+<li>You can also download individual applet files from the course pages, e.g. <a rel="nofollow" class="external free" href="http://www.ladamic.com/netlearn/NetLogo502/VisualizationCommunities.html">http://www.ladamic.com/netlearn/NetLogo502/VisualizationCommunities.html</a>, right click on the .nlogo filename, and select 'Save Link As'. Then within NetLogo, fo to File-&gt;Open, and navigate to the spot where you saved the .nlogo file.
+<a href="/wiki/index.php/File:Saving_NLogoFile.jpg" class="image"><img alt="Saving NLogoFile.jpg" src="/wiki/images/1/1d/Saving_NLogoFile.jpg" width="747" height="815" /></a></li>
+<li>You will also need the NW extension of the applet to run models, starting with Week 2. You can download it <a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/sna/netlearn/nw.zip">here</a>. If that version is incompatible with your system, try the <a rel="nofollow" class="external text" href="https://github.com/NetLogo/NW-Extension">latest version from github</a>. Unzip the archive and place it in the 'extensions' folder of your NetLogo application, e.g. on a Mac /Applications/NetLogo 5.0.3/extensions.</li>
 </ul>
 <h2> <span class="mw-headline" id="Using_NetLogo_applet_in_your_browser">Using NetLogo applet in your browser</span></h2>
 <h3> <span class="mw-headline" id="Coursera_Browser_Recommendations">Coursera Browser Recommendations</span></h3>
-<p>Coursera broadly recommends using the latest web browser versions (when possible) for optimal compatibility and overall experience. See <a class="external text" href="http://help.coursera.org/customer/portal/articles/502540-what-kind-of-computer-and-web-browser-do-i-need-" rel="nofollow">here</a></p>
+<p>Coursera broadly recommends using the latest web browser versions (when possible) for optimal compatibility and overall experience. See <a rel="nofollow" class="external text" href="http://help.coursera.org/customer/portal/articles/502540-what-kind-of-computer-and-web-browser-do-i-need-">here</a></p>
 <h3> <span class="mw-headline" id="NetLogo_Java_Requirement">NetLogo Java Requirement</span></h3>
 <p>You will encounter the following error screens if Java is not installed:</p>
 <h4> <span class="mw-headline" id="Google_Chrome_-_No_Java_Installed">Google Chrome - No Java Installed</span></h4>
-<p><a class="image" href="/wiki/index.php/File:Sna-chrome-netlogo-vid1quiz-nojava.PNG"><img alt="Sna-chrome-netlogo-vid1quiz-nojava.PNG" height="500" src="/wiki/images/thumb/8/8c/Sna-chrome-netlogo-vid1quiz-nojava.PNG/601px-Sna-chrome-netlogo-vid1quiz-nojava.PNG" width="601"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-chrome-netlogo-vid1quiz-nojava.PNG" class="image"><img alt="Sna-chrome-netlogo-vid1quiz-nojava.PNG" src="/wiki/images/thumb/8/8c/Sna-chrome-netlogo-vid1quiz-nojava.PNG/601px-Sna-chrome-netlogo-vid1quiz-nojava.PNG" width="601" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Firefox_-_No_Java_Installed">Firefox - No Java Installed</span></h4>
-<p><a class="image" href="/wiki/index.php/File:Sna-firefox-netlogo-vidquiz1-nojava.PNG"><img alt="Sna-firefox-netlogo-vidquiz1-nojava.PNG" height="500" src="/wiki/images/thumb/b/b5/Sna-firefox-netlogo-vidquiz1-nojava.PNG/578px-Sna-firefox-netlogo-vidquiz1-nojava.PNG" width="578"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-firefox-netlogo-vidquiz1-nojava.PNG" class="image"><img alt="Sna-firefox-netlogo-vidquiz1-nojava.PNG" src="/wiki/images/thumb/b/b5/Sna-firefox-netlogo-vidquiz1-nojava.PNG/578px-Sna-firefox-netlogo-vidquiz1-nojava.PNG" width="578" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Internet_Explorer_-_No_Java_Installed">Internet Explorer - No Java Installed</span></h4>
-<p><a class="image" href="/wiki/index.php/File:Sna-IE-netlogo-vidquiz1-nojava.PNG"><img alt="Sna-IE-netlogo-vidquiz1-nojava.PNG" height="500" src="/wiki/images/thumb/2/21/Sna-IE-netlogo-vidquiz1-nojava.PNG/569px-Sna-IE-netlogo-vidquiz1-nojava.PNG" width="569"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-IE-netlogo-vidquiz1-nojava.PNG" class="image"><img alt="Sna-IE-netlogo-vidquiz1-nojava.PNG" src="/wiki/images/thumb/2/21/Sna-IE-netlogo-vidquiz1-nojava.PNG/569px-Sna-IE-netlogo-vidquiz1-nojava.PNG" width="569" height="500" /></a></p>
 <h3> <span class="mw-headline" id="Java_Requirement">Java Requirement</span></h3>
-<p>NetLogo requires that your web browser support Java 5 or later. For details on NetLogo Java requirements see the NetLogo Applet guide <a class="external text" href="http://ccl.northwestern.edu/netlogo/docs/applet.html#java" rel="nofollow">here</a></p>
+<p>NetLogo requires that your web browser support Java 5 or later. For details on NetLogo Java requirements see the NetLogo Applet guide <a rel="nofollow" class="external text" href="http://ccl.northwestern.edu/netlogo/docs/applet.html#java">here</a></p>
 <h3> <span class="mw-headline" id="Java_Installation">Java Installation</span></h3>
-<p>To install the latest version of Java, go <a class="external text" href="http://java.com/en/download/index.jsp" rel="nofollow">here</a></p>
-<p><a class="image" href="/wiki/index.php/File:Sna-chrome-netlogo-vid1quiz-javainstall.PNG"><img alt="Sna-chrome-netlogo-vid1quiz-javainstall.PNG" height="500" src="/wiki/images/thumb/3/3c/Sna-chrome-netlogo-vid1quiz-javainstall.PNG/597px-Sna-chrome-netlogo-vid1quiz-javainstall.PNG" width="597"/></a></p>
+<p>To install the latest version of Java, go <a rel="nofollow" class="external text" href="http://java.com/en/download/index.jsp">here</a></p>
+<p><a href="/wiki/index.php/File:Sna-chrome-netlogo-vid1quiz-javainstall.PNG" class="image"><img alt="Sna-chrome-netlogo-vid1quiz-javainstall.PNG" src="/wiki/images/thumb/3/3c/Sna-chrome-netlogo-vid1quiz-javainstall.PNG/597px-Sna-chrome-netlogo-vid1quiz-javainstall.PNG" width="597" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Java_Installation_Confirmation">Java Installation Confirmation</span></h4>
 <p>Here's an example of a completed Java installation:</p>
-<p><a class="image" href="/wiki/index.php/File:Sna-javainstall_confirmation.PNG"><img alt="Sna-javainstall confirmation.PNG" height="500" src="/wiki/images/5/57/Sna-javainstall_confirmation.PNG" width="652"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-javainstall_confirmation.PNG" class="image"><img alt="Sna-javainstall confirmation.PNG" src="/wiki/images/5/57/Sna-javainstall_confirmation.PNG" width="652" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Java_Reload_Prompt">Java Reload Prompt</span></h4>
 <p>Once Java is installed, you will need to reload the NetLogo page to activate it:</p>
-<p><a class="image" href="/wiki/index.php/File:Sna-chrome-java-install.PNG"><img alt="Sna-chrome-java-install.PNG" height="500" src="/wiki/images/thumb/8/82/Sna-chrome-java-install.PNG/605px-Sna-chrome-java-install.PNG" width="605"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-chrome-java-install.PNG" class="image"><img alt="Sna-chrome-java-install.PNG" src="/wiki/images/thumb/8/82/Sna-chrome-java-install.PNG/605px-Sna-chrome-java-install.PNG" width="605" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Java_Permission_Prompt">Java Permission Prompt</span></h4>
 <p>In addition, you will need to give Java permissions to run the NetLogo applet:</p>
-<p><a class="image" href="/wiki/index.php/File:Sna-chrome-java-installed.PNG"><img alt="Sna-chrome-java-installed.PNG" height="500" src="/wiki/images/thumb/8/8a/Sna-chrome-java-installed.PNG/610px-Sna-chrome-java-installed.PNG" width="610"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-chrome-java-installed.PNG" class="image"><img alt="Sna-chrome-java-installed.PNG" src="/wiki/images/thumb/8/8a/Sna-chrome-java-installed.PNG/610px-Sna-chrome-java-installed.PNG" width="610" height="500" /></a></p>
 <h3> <span class="mw-headline" id="NetLogo_Browser_Recommendations">NetLogo Browser Recommendations</span></h3>
 <p>NetLogo functionality has specifically been tested and confirmed on Chrome, Firefox, Internet Explorer and Safari.</p>
 <p>For reference, the following screenshots show a working NetLogo installation:</p>
 <h4> <span class="mw-headline" id="Chrome_.28v.22.0.229.79_m.29_Working">Chrome (v.22.0.229.79 m) Working</span></h4>
-<p><a class="image" href="/wiki/index.php/File:Sna-chrome-netlogo-working.PNG"><img alt="Sna-chrome-netlogo-working.PNG" height="500" src="/wiki/images/thumb/c/c9/Sna-chrome-netlogo-working.PNG/626px-Sna-chrome-netlogo-working.PNG" width="626"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-chrome-netlogo-working.PNG" class="image"><img alt="Sna-chrome-netlogo-working.PNG" src="/wiki/images/thumb/c/c9/Sna-chrome-netlogo-working.PNG/626px-Sna-chrome-netlogo-working.PNG" width="626" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Firefox_.28v.15.0.1.29_Working">Firefox (v.15.0.1) Working</span></h4>
-<p><a class="image" href="/wiki/index.php/File:Sna-firefox-netlogo-working.PNG"><img alt="Sna-firefox-netlogo-working.PNG" height="500" src="/wiki/images/thumb/f/f5/Sna-firefox-netlogo-working.PNG/572px-Sna-firefox-netlogo-working.PNG" width="572"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-firefox-netlogo-working.PNG" class="image"><img alt="Sna-firefox-netlogo-working.PNG" src="/wiki/images/thumb/f/f5/Sna-firefox-netlogo-working.PNG/572px-Sna-firefox-netlogo-working.PNG" width="572" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Internet_Explorer_.28v.9.29_Working">Internet Explorer (v.9) Working</span></h4>
-<p><a class="image" href="/wiki/index.php/File:Sna-IE-netlogo-working.PNG"><img alt="Sna-IE-netlogo-working.PNG" height="500" src="/wiki/images/thumb/3/34/Sna-IE-netlogo-working.PNG/570px-Sna-IE-netlogo-working.PNG" width="570"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-IE-netlogo-working.PNG" class="image"><img alt="Sna-IE-netlogo-working.PNG" src="/wiki/images/thumb/3/34/Sna-IE-netlogo-working.PNG/570px-Sna-IE-netlogo-working.PNG" width="570" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Safari_.28v.6.0_8536.25.29_Working">Safari (v.6.0 8536.25) Working</span></h4>
-<p><a class="image" href="/wiki/index.php/File:Sna-safari-netlogo-working.png"><img alt="Sna-safari-netlogo-working.png" height="500" src="/wiki/images/thumb/1/13/Sna-safari-netlogo-working.png/682px-Sna-safari-netlogo-working.png" width="682"/></a></p>
+<p><a href="/wiki/index.php/File:Sna-safari-netlogo-working.png" class="image"><img alt="Sna-safari-netlogo-working.png" src="/wiki/images/thumb/1/13/Sna-safari-netlogo-working.png/682px-Sna-safari-netlogo-working.png" width="682" height="500" /></a></p>
 <h4> <span class="mw-headline" id="Opera_.28v.12.16.29_Working">Opera (v.12.16) Working</span></h4>
-<p>(<a class="external text" href="https://share.coursera.org/wiki/index.php/Sna:Main" rel="nofollow">back to Main SNA page</a>)</p>
+<p>(<a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Sna:Main">back to Main SNA page</a>)</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 2/1000000
@@ -93,9 +94,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:425-0!*!*!!en!2!* and timestamp 20161127022942 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:NetLogo&amp;oldid=17432">https://share.coursera.org/wiki/index.php?title=Sna:NetLogo&amp;oldid=17432</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-lesson0</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-lesson0</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lesson_Zero:_Getting_the_most_from_P4E"><span class="tocnumber">1</span> <span class="toctext">Lesson Zero: Getting the most from P4E</span></a>
 <ul>
@@ -77,7 +77,7 @@
 <h2> <span class="mw-headline" id="Signature_Track_and_Certificates">Signature Track and Certificates</span></h2>
 <p>Subject to a passing grade, every student is eligible to earn an electronic certificate called a Statement of Accomplishment. If you wish, you can enroll for the Signature Track for this course for a fee and earn a Verified Certificate.</p>
 <p>If you wish to enroll on the Signature Track you can do so during the first few weeks of the course. You cannot enroll once the invitation period closes. You can always re-do the class on the Signature Track for a Verified Certificate.</p>
-<p>For more information on the Signature Track, please click here: <a class="external free" href="https://www.coursera.org/signature/" rel="nofollow">https://www.coursera.org/signature/</a></p>
+<p>For more information on the Signature Track, please click here: <a rel="nofollow" class="external free" href="https://www.coursera.org/signature/">https://www.coursera.org/signature/</a></p>
 <h2> <span class="mw-headline" id="Python_Version_and_Coding_Tools">Python Version and Coding Tools</span></h2>
 <p>This class uses Python version 2. Code written in the Python 3 syntax will not be accepted by the Autograder and Code Playground.</p>
 <p>Please follow the instructions given in the Week 1 to install Python 2 and the code editor for your operating system. You may use different code editors but if you are experiencing issues with non-standard coding environments you may be asked to use the standard coding environment. </p>
@@ -112,6 +112,7 @@
 <li>Don't share your code in the forum, even if the code is 'work in progress' and doesn't produce the correct answer. A Teaching Assistant may ask you to share a few lines of your code to help you.</li>
 <li>Sometimes, the best way you can overcome an issue with coursework is to step away from the computer and have break.</li>
 </ul>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 2/1000000
@@ -119,9 +120,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:5226-0!*!0!!en!*!* and timestamp 20161126114002 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-lesson0&amp;oldid=32348">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-lesson0&amp;oldid=32348</a>"</div>
-<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li></ul></div></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

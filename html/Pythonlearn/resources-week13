@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week13</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week13</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
 <ul>
@@ -33,56 +33,56 @@ data structures to a common data exchange format is Serialization.</p>
 programming language's data structure implementations.</p>
 <p>There are many competent data exchange solutions but we will focus only on</p>
 <ul>
-<li>XML  : e<strong>X</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage</li>
-<li>JSON : <strong>J</strong>ava <strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation</li>
+<li>XML &#160;: e<strong>X</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage</li>
+<li>JSON&#160;: <strong>J</strong>ava <strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation</li>
 </ul>
 <h2> <span class="mw-headline" id="XML">XML</span></h2>
 <ol>
-<li>History of XML : <font color="red"> TBD </font></li>
-<li>Schema (XSD) : <font color="red"> TBD </font></li>
+<li>History of XML&#160;: <font color="red"> TBD </font></li>
+<li>Schema (XSD)&#160;: <font color="red"> TBD </font></li>
 </ol>
 <p>XML is quite like HTML.
-A XML document example taken from video lecture file (xml1.py):</p>
+A XML document example taken from video lecture file &#40;xml1.py&#41;:</p>
 <code><pre>&lt;person&gt;
   &lt;name&gt;Chuck&lt;/name&gt;
-  &lt;phone type="intl"&gt;
+  &lt;phone type=&quot;intl&quot;&gt;
      +1 734 303 4456
   &lt;/phone&gt;
-  &lt;email hide="yes"/&gt;
+  &lt;email hide=&quot;yes&quot;/&gt;
 &lt;/person&gt;
 </pre></code>
-<p>It has :</p>
+<p>It has&#160;:</p>
 <ol>
-<li><p><strong>Tags</strong> : <u>Start Tag</u>, <u>End Tag</u> and <u> Empty-Element tag </u></p>
-<p><strong>Tag</strong> is the first word inside a less than &lt; and greater than &gt;, angular brackets.</p>
-<p>In above example :-</p>
+<li><p><strong>Tags</strong>&#160;: <u>Start Tag</u>, <u>End Tag</u> and <u> Empty-Element tag </u></p>
+<p><strong>Tag</strong> is the first word inside a less than &lt; and greater than &#62;, angular brackets.</p>
+<p>In above example&#160;:-</p>
 <p><code>'person', 'name', 'phone' and 'email'</code></p>
 <p>Start Tag and End Tag are in pair, start tag comes before end tag and</p>
 <p>use the <strong>same string</strong>.
-Example :-</p>
+Example&#160;:-</p>
 <p><code>'person', 'name' and 'phone'</code></p>
 <p>Notice that backslash <code>/</code> comes inside End tag.</p>
 <p><strong>Empty-Element</strong> tag doesn't have a end tag.
-A backslash <code>/</code> comes before the ending greater than &gt; closing bracket. 
-Example :-</p>
+A backslash <code>/</code> comes before the ending greater than &#62; closing bracket. 
+Example&#160;:-</p>
 <p><code>'email'</code></p></li>
-<li><p><strong>Element</strong> :</p>
+<li><p><strong>Element</strong>&#160;:</p>
 <p>What ever is there between a pair of <u>Start Tag</u> and <u>End Tag</u> is a element.
-Example :-</p>
-<p><code>For 'name' : Chuck</code></p>
-<p><code>For 'phone' : +1 734 303 4456</code></p>
+Example&#160;:-</p>
+<p><code>For 'name'&#160;: Chuck</code></p>
+<p><code>For 'phone'&#160;: +1 734 303 4456</code></p>
 <p><code>Nothing for 'email'</code></p></li>
-<li><p>Attribute :</p>
-<p><strong>Start Tag</strong> or <strong>Empty-Element Tag</strong> are the first word inside &lt; word_1 &gt;.
+<li><p>Attribute&#160;:</p>
+<p><strong>Start Tag</strong> or <strong>Empty-Element Tag</strong> are the first word inside &lt; word_1 &#62;.
 But for <code>'phone' and 'email'</code> we have some more things inside the angular brackets.</p>
-<p>These are <strong>attribute(s)</strong> of the <strong>tag</strong>.</p>
+<p>These are <strong>attribute&#40;s&#41;</strong> of the <strong>tag</strong>.</p>
 <p>&lt; <strong>Start Tag</strong> <em>attribute1</em>="value1" <em>attribute2</em>="value2" &gt; <strong>Element</strong> &lt;/ <strong>End Tag</strong> &gt;</p>
 <p>or</p>
 <p>&lt; <strong>Empty-Element Tag</strong> <em>attribute1</em>="value1" <em>attribute2</em>="value2" /&gt;</p>
 <p>Attributes are with a assignment operator, name-value pair.</p>
 <p>Left hand side of assignment operator is the
 <em>name</em> of attribute and right hand side has the <em>value</em>.
-Example :-</p>
+Example&#160;:-</p>
 <p>name of attribute: <code>'phone'</code> value: <code>type="intl"</code></p>
 <p>name of attribute: <code>'email'</code> value: <code>hide="yes"</code></p></li>
 </ol>
@@ -122,6 +122,7 @@ for sub_ele in dom_obj:
 <p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actually graded assignments.</p>
 <h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
 <p>Add resources for this chapter to this page..</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 76/1000000
@@ -129,9 +130,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:5399-0!*!0!!en!*!* and timestamp 20161126102118 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week13&amp;oldid=32962">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week13&amp;oldid=32962</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,18 +1,19 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Sna:Week5</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>Concepts: Small worlds, geographic networks, decentralized search</p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sna:Week5</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Concepts: Small worlds, geographic networks, decentralized search</p>
 <p>Activity: Evaluate whether several real-world networks exhibit small world properties, simulate decentralized search on different topologies, evaluate effect of small-world topology on information diffusion.</p>
 <h2> <span class="mw-headline" id="What_we_are_going_to_deal_with_this_week.3F">What we are going to deal with this week?</span></h2>
 <p>This week we are going to deal with small world network. So far we have seen two types of networks - random networks and real world networks. Random networks have a remarkable property that it grows (new nodes are added) but average shortest path increases logarithmically on the number of nodes. On the otherhand real world networks have some interesting community structures but they are not random at localized scale. But we are yet to deal with the very local structure (structure around a particular node). So, what we are going to do this week is filling the gap -  is it possible for the real world networks to have properties like random network at local level?</p>
 <h2> <span class="mw-headline" id="Small_world_experiments">Small world experiments</span></h2>
 <ul>
-<li><a class="external text" href="http://en.wikipedia.org/wiki/Milgram_experiment" rel="nofollow">Milgram's experiment</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Milgram_experiment">Milgram's experiment</a></li>
 </ul>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 2/1000000
@@ -20,9 +21,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:329-0!*!*!!*!*!* and timestamp 20161127022938 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:Week5&amp;oldid=29601">https://share.coursera.org/wiki/index.php?title=Sna:Week5&amp;oldid=29601</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

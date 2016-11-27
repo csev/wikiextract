@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter01</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week01" title="Pythonlearn:resources-week01"> Back to Chapter 1 Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:exercises-chapter01</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week01" title="Pythonlearn:resources-week01"> Back to Chapter 1 Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Exercise_1_What_is_the_function_of_the_secondary_memory_in_a_computer.3F"><span class="tocnumber">1</span> <span class="toctext">Exercise 1   What is the function of the secondary memory in a computer?</span></a></li>
 <li class="toclevel-1"><a href="#Exercise_2_What_is_a_program.3F"><span class="tocnumber">2</span> <span class="toctext">Exercise 2   What is a program?</span></a></li>
@@ -20,9 +20,9 @@
 </ul>
 </td></tr></table>
 <h1> <span class="mw-headline" id="Exercise_1_What_is_the_function_of_the_secondary_memory_in_a_computer.3F">Exercise 1   What is the function of the secondary memory in a computer?</span></h1>
-<p>a) Execute all of the computation and logic of the program<br/>
-b) Retrieve web pages over the Internet<br/>
-c) Store information for the long term - even beyond a power cycle<br/>
+<p>a) Execute all of the computation and logic of the program<br />
+b) Retrieve web pages over the Internet<br />
+c) Store information for the long term - even beyond a power cycle<br />
 d) Take input from the user  </p>
 <p><strong>Answer:</strong> (c).</p>
 <h1> <span class="mw-headline" id="Exercise_2_What_is_a_program.3F">Exercise 2   What is a program?</span></h1>
@@ -30,14 +30,14 @@ d) Take input from the user  </p>
 <h1> <span class="mw-headline" id="Exercise_3_What_is_the_difference_between_a_compiler_and_an_interpreter.3F">Exercise 3   What is the difference between a compiler and an interpreter?</span></h1>
 <p><strong>Answer:</strong> A compiler translates a file written in high-level (human-comprehensible) language into low-level (machine) language all at once at a very very fast rate, and stores it so it can be used later. An interpreter uses high-level language and interacts (translates from high-level to low-level and back again) with a programmer in real time (human time).</p>
 <h1> <span class="mw-headline" id="Exercise_4_Which_of_the_following_contains_.22machine_code.22.3F">Exercise 4   Which of the following contains "machine code"?</span></h1>
-<p>a) The Python interpreter<br/>
-b) The keyboard<br/>
-c) Python source file<br/>
+<p>a) The Python interpreter<br />
+b) The keyboard<br />
+c) Python source file<br />
 d) A word processing document  </p>
 <p><strong>Answer:</strong> (a) because the Python interpreter must translate the high-level language to machine code.</p>
 <h1> <span class="mw-headline" id="Exercise_5_What_is_wrong_with_the_following_code:">Exercise 5   What is wrong with the following code:</span></h1>
 <code><pre>&gt;&gt;&gt; primt 'Hello world!'    
-   File "&lt;stdin&gt;", line 1  
+   File &quot;&lt;stdin&gt;&quot;, line 1  
     primt 'Hello world!'  
                    ^  
 SyntaxError: invalid syntax  
@@ -46,10 +46,10 @@ SyntaxError: invalid syntax
 <p><strong>Answer:</strong> 'primt' should be 'print'</p>
 <h1> <span class="mw-headline" id="Exercise_6_Where_in_the_computer_is_a_variable_such_as_.22X.22_stored_after_the_following_Python_line_finishes.3F">Exercise 6   Where in the computer is a variable such as "X" stored after the following Python line finishes?</span></h1>
 <p>x = 123  </p>
-<p>a) Central processing unit<br/>
-b) Main Memory<br/>
-c) Secondary Memory<br/>
-d) Input Devices<br/>
+<p>a) Central processing unit<br />
+b) Main Memory<br />
+c) Secondary Memory<br />
+d) Input Devices<br />
 e) Output Devices  </p>
 <p><strong>Answer:</strong> (b), Main Memory or temporary memory. The value of the variable is not stored and not available for retrieval after the program quits.</p>
 <h1> <span class="mw-headline" id="Exercise_7_What_will_the_following_program_print_out:">Exercise 7   What will the following program print out:</span></h1>
@@ -57,26 +57,27 @@ e) Output Devices  </p>
 x = x + 1
 print x
 </pre></code>
-<p>a) 43<br/>
-b) 44<br/>
-c) x + 1<br/>
+<p>a) 43<br />
+b) 44<br />
+c) x + 1<br />
 d) Error because x = x + 1 is not possible mathematically  </p>
 <p><strong>Answer:</strong> (b).</p>
 <h1> <span class="mw-headline" id="Exercise_8_Explain_each_of_the_following_using_an_example_of_a_human_capability:">Exercise 8   Explain each of the following using an example of a human capability:</span></h1>
-<p>(1) Central processing unit<br/>
-(2) Main Memory<br/>
-(3) Secondary Memory<br/>
-(4) Input Device<br/>
+<p>(1) Central processing unit<br />
+(2) Main Memory<br />
+(3) Secondary Memory<br />
+(4) Input Device<br />
 (5) Output Device  </p>
 <p>For example, "What is the human equivalent to a Central Processing Unit"?  </p>
-<p><strong>Answer:</strong><br/>
-(1) The CPU is like the brain.  Based on sensory input, the human brain acts on conscious thought while a human is awake, similar to how a waiter or waitress waits on people and continually asks them if they need anything.<br/>
-(2) The main memory is like our waking consciousness - what we are thinking right now.  Someone copying data (e.g. written notes) from one place to another may store it briefly in his or her brain’s short-term memory during the copy process as he or she looks away from the source to the place where she or he is copying the data.<br/>
-(3) The secondary memory is like our long-term memory.  A student stores information away in his or her long-term memory while studying material in order to recall it later for quizzes, even after sleeping.<br/>
-(4) Input devices are like our 5 senses.<br/>
+<p><strong>Answer:</strong><br />
+(1) The CPU is like the brain.  Based on sensory input, the human brain acts on conscious thought while a human is awake, similar to how a waiter or waitress waits on people and continually asks them if they need anything.<br />
+(2) The main memory is like our waking consciousness - what we are thinking right now.  Someone copying data (e.g. written notes) from one place to another may store it briefly in his or her brain’s short-term memory during the copy process as he or she looks away from the source to the place where she or he is copying the data.<br />
+(3) The secondary memory is like our long-term memory.  A student stores information away in his or her long-term memory while studying material in order to recall it later for quizzes, even after sleeping.<br />
+(4) Input devices are like our 5 senses.<br />
 (5) Output devices are like our facial expressions, gestures, or speech.    </p>
 <h1> <span class="mw-headline" id="Exercise_9_How_do_you_fix_a_.22Syntax_Error.22.3F">Exercise 9   How do you fix a "Syntax Error"?</span></h1>
 <p><strong>Answer:</strong> Correct the grammar and/or spelling in the source code so the program can understand the instruction.</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 38/1000000
@@ -84,9 +85,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3991-0!*!0!!en!*!* and timestamp 20161126075236 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter01&amp;oldid=32048">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter01&amp;oldid=32048</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week11</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a class="new" href="/wiki/index.php?title=Pythonlearn:_Resources&amp;action=edit&amp;redlink=1" title="Pythonlearn: Resources (page does not exist)"> Back to Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week11</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php?title=Pythonlearn:_Resources&amp;action=edit&amp;redlink=1" class="new" title="Pythonlearn: Resources (page does not exist)"> Back to Resources</a></p>
 <h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
 <p>Regular Expression Quick Guide:
 <ul><li> ^ - Matches the beginning of a line
@@ -13,7 +13,7 @@
 </li><li> . - Matches any character
 </li><li> \s - Matches whitespace
 </li><li> \S - Matches any non-whitespace character
-</li><li> * - Repeats a character zero or more times
+</li><li> &#42; - Repeats a character zero or more times
 </li><li> *? - Repeats a character zero or more times (non-greedy)
 </li><li> + - Repeats a character one or more times
 </li><li> +? - Repeats a character one or more times (non-greedy)
@@ -21,5 +21,27 @@
 </li><li> [^XYZ] - Matches a single character not in the listed set
 </li><li> [a-z0-9] - The set of characters can include a range
 </li><li> ( - Indicates where string extraction is to start
-</li><li> ) - Indicates where string extraction is to end</li></ul></p>
-</div></div></div>
+</li><li> ) - Indicates where string extraction is to end</p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="Chapter_11_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter11" title="Pythonlearn:exercises-chapter11"> Chapter 11 Exercises</a></span></h1>
+<p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actually graded assignments.</p>
+<h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
+<p>A great way to learn regular expressions with simple, interactive exercises:
+<a rel="nofollow" class="external free" href="https://regexone.com/">https://regexone.com/</a>
+Check it out.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3966-0!*!0!!*!*!* and timestamp 20161126101751 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week11&amp;oldid=34467">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week11&amp;oldid=34467</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

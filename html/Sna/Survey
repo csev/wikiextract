@@ -1,13 +1,13 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Sna:Survey</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>Welcome to the Social Network Analysis Pre-Course Survey Results for Fall 2012.</p>
-<p>To return to the SNA Course Wiki, click <a class="external text" href="https://share.coursera.org/wiki/index.php/Sna:Main" rel="nofollow">here</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sna:Survey</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Welcome to the Social Network Analysis Pre-Course Survey Results for Fall 2012.</p>
+<p>To return to the SNA Course Wiki, click <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Sna:Main">here</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Pre-Course_Survey_Fall_2012"><span class="tocnumber">1</span> <span class="toctext">Pre-Course Survey Fall 2012</span></a>
 <ul>
@@ -26,7 +26,7 @@
 </td></tr></table>
 <h2> <span class="mw-headline" id="Pre-Course_Survey_Fall_2012">Pre-Course Survey Fall 2012</span></h2>
 <h3> <span class="mw-headline" id="Course_Background">Course Background</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna1-course-background.png"><img alt="Sna1-course-background.png" height="528" src="/wiki/images/thumb/4/44/Sna1-course-background.png/800px-Sna1-course-background.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna1-course-background.png" class="image"><img alt="Sna1-course-background.png" src="/wiki/images/thumb/4/44/Sna1-course-background.png/800px-Sna1-course-background.png" width="800" height="528" /></a></p>
 <pre>
                 Background Participants  Proportion
 
@@ -68,21 +68,22 @@
           computer science         2706 25.63471012
 </pre>
 <h3> <span class="mw-headline" id="Previous_MOOC_Experience">Previous MOOC Experience</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna2-mooc-xp.png"><img alt="Sna2-mooc-xp.png" height="537" src="/wiki/images/thumb/1/1f/Sna2-mooc-xp.png/800px-Sna2-mooc-xp.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna2-mooc-xp.png" class="image"><img alt="Sna2-mooc-xp.png" src="/wiki/images/thumb/1/1f/Sna2-mooc-xp.png/800px-Sna2-mooc-xp.png" width="800" height="537" /></a></p>
 <h3> <span class="mw-headline" id="Previous_SNA_Experience">Previous SNA Experience</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna3-previous-xp.png"><img alt="Sna3-previous-xp.png" height="489" src="/wiki/images/thumb/b/be/Sna3-previous-xp.png/800px-Sna3-previous-xp.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna3-previous-xp.png" class="image"><img alt="Sna3-previous-xp.png" src="/wiki/images/thumb/b/be/Sna3-previous-xp.png/800px-Sna3-previous-xp.png" width="800" height="489" /></a></p>
 <h3> <span class="mw-headline" id="Primary_Interest_in_SNA.3F">Primary Interest in SNA?</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna4-primary-sna.png"><img alt="Sna4-primary-sna.png" height="556" src="/wiki/images/thumb/6/6f/Sna4-primary-sna.png/800px-Sna4-primary-sna.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna4-primary-sna.png" class="image"><img alt="Sna4-primary-sna.png" src="/wiki/images/thumb/6/6f/Sna4-primary-sna.png/800px-Sna4-primary-sna.png" width="800" height="556" /></a></p>
 <h3> <span class="mw-headline" id="Top_20_Networks_of_Interest">Top 20 Networks of Interest</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna5-top20-networks.png"><img alt="Sna5-top20-networks.png" height="555" src="/wiki/images/thumb/8/8a/Sna5-top20-networks.png/800px-Sna5-top20-networks.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna5-top20-networks.png" class="image"><img alt="Sna5-top20-networks.png" src="/wiki/images/thumb/8/8a/Sna5-top20-networks.png/800px-Sna5-top20-networks.png" width="800" height="555" /></a></p>
 <h3> <span class="mw-headline" id="Textbook.2FTutorial_Reading_Preferences">Textbook/Tutorial Reading Preferences</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna6-textbook-reading.png"><img alt="Sna6-textbook-reading.png" height="562" src="/wiki/images/thumb/5/5f/Sna6-textbook-reading.png/800px-Sna6-textbook-reading.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna6-textbook-reading.png" class="image"><img alt="Sna6-textbook-reading.png" src="/wiki/images/thumb/5/5f/Sna6-textbook-reading.png/800px-Sna6-textbook-reading.png" width="800" height="562" /></a></p>
 <h3> <span class="mw-headline" id="Research_Reading_Preferences">Research Reading Preferences</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna7-research-reading.png"><img alt="Sna7-research-reading.png" height="589" src="/wiki/images/thumb/3/39/Sna7-research-reading.png/800px-Sna7-research-reading.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna7-research-reading.png" class="image"><img alt="Sna7-research-reading.png" src="/wiki/images/thumb/3/39/Sna7-research-reading.png/800px-Sna7-research-reading.png" width="800" height="589" /></a></p>
 <h3> <span class="mw-headline" id="Graph_Theory.2C_Math_and_CS_Reading_Preferences">Graph Theory, Math and CS Reading Preferences</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna8-mathcs-reading.png"><img alt="Sna8-mathcs-reading.png" height="559" src="/wiki/images/thumb/c/c1/Sna8-mathcs-reading.png/800px-Sna8-mathcs-reading.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna8-mathcs-reading.png" class="image"><img alt="Sna8-mathcs-reading.png" src="/wiki/images/thumb/c/c1/Sna8-mathcs-reading.png/800px-Sna8-mathcs-reading.png" width="800" height="559" /></a></p>
 <h3> <span class="mw-headline" id="Network_Application_Reading_Preferences">Network Application Reading Preferences</span></h3>
-<p><a class="image" href="/wiki/index.php/File:Sna9-netapps-reading.png"><img alt="Sna9-netapps-reading.png" height="576" src="/wiki/images/thumb/5/52/Sna9-netapps-reading.png/800px-Sna9-netapps-reading.png" width="800"/></a></p>
+<p><a href="/wiki/index.php/File:Sna9-netapps-reading.png" class="image"><img alt="Sna9-netapps-reading.png" src="/wiki/images/thumb/5/52/Sna9-netapps-reading.png/800px-Sna9-netapps-reading.png" width="800" height="576" /></a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 11/1000000
@@ -90,9 +91,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:353-0!*!*!!en!2!* and timestamp 20161127022943 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:Survey&amp;oldid=8573">https://share.coursera.org/wiki/index.php?title=Sna:Survey&amp;oldid=8573</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

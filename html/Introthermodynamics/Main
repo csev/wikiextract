@@ -1,66 +1,67 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Introthermodynamics:Main</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>"Introduction to thermodynamics" course starts with concepts and units definition and proceeds ahead with properties measuring, states definition, pathways between states and focus mainly on the first law of thermodynamics : energy conservation.</p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Introthermodynamics:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>"Introduction to thermodynamics" course starts with concepts and units definition and proceeds ahead with properties measuring, states definition, pathways between states and focus mainly on the first law of thermodynamics&#160;: energy conservation.</p>
 <h1> <span class="mw-headline" id="Freely_available_references_and_tools">Freely available references and tools</span></h1>
 <p>To help understand the concepts the following references and tools are available online:</p>
 <ol>
-<li><p>US Department of Energy Fundamentals Handbook Thermodynamics, Heat Transfer and Fluid Flow, Vol. 1 of 3 ( <a class="external free" href="http://www.hss.doe.gov/nuclearsafety/techstds/docs/handbook/h1012v1.pdf" rel="nofollow">http://www.hss.doe.gov/nuclearsafety/techstds/docs/handbook/h1012v1.pdf</a> )‎</p></li>
-<li><p>Thermodynamics and Chemistry, 2nd Edition, by Howard DeVoe, Associate Professor Emeritus, University of Maryland(<a class="external free" href="http://www2.chem.umd.edu/thermobook" rel="nofollow">http://www2.chem.umd.edu/thermobook</a>)</p></li>
-<li><p>Online calculator of steam (<a class="external free" href="http://www.steamtablesonline.com" rel="nofollow">http://www.steamtablesonline.com</a>)</p></li>
+<li><p>US Department of Energy Fundamentals Handbook Thermodynamics, Heat Transfer and Fluid Flow, Vol. 1 of 3 ( <a rel="nofollow" class="external free" href="http://www.hss.doe.gov/nuclearsafety/techstds/docs/handbook/h1012v1.pdf">http://www.hss.doe.gov/nuclearsafety/techstds/docs/handbook/h1012v1.pdf</a> )‎</p></li>
+<li><p>Thermodynamics and Chemistry, 2nd Edition, by Howard DeVoe, Associate Professor Emeritus, University of Maryland(<a rel="nofollow" class="external free" href="http://www2.chem.umd.edu/thermobook">http://www2.chem.umd.edu/thermobook</a>)</p></li>
+<li><p>Online calculator of steam (<a rel="nofollow" class="external free" href="http://www.steamtablesonline.com">http://www.steamtablesonline.com</a>)</p></li>
 </ol>
 <h1> <span class="mw-headline" id="Weekly_Reading">Weekly Reading</span></h1>
 <p><table border="1">
-<tr>
-<td><b><center>Week</center></b></td>
-<td><b><center>Supportive Reading Material</center></b></td>
-<td><b><center>Topic</center></b></td>
-</tr>
-<tr>
-<td>1</td>
-<td>Devoe: 19 - 29</td>
-<td>Introduction, concepts, definitions, and UNITS!!<br/>Thermodynamic properties, the conservation of energy</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Devoe: 30 – 44<br/>DOE: 1-13, 41-52</td>
-<td>Work transfer and heat transfer, phase diagrams, the<br/>conservation of energy for closed systems</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Devoe: Chapter 2.4-2.5</td>
-<td>Thermodynamic properties, state relations, the ideal gas<br/>model, the incompressible substance model, conservation of<br/>mass for open systems</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Devoe: 52-55<br/>DOE: 14-25</td>
-<td>Conservation of energy for open systems, flow work, flow<br/>devices, examples</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Devoe: 56-66<br/>DOE: 53-68<br/>(Also DOE: 14-25)</td>
-<td>Transient analysis and the conservation of mass and energy;<br/>power, refrigeration and heat pump cycles</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Devoe: 67-97<br/>(Also DOE: 14-25)</td>
-<td>The 2nd law of thermodynamics, Carnot and Rankine power<br/>cycles</td>
-</tr>
-<tr>
-<td>7</td>
-<td>DOE: 26-30<br/>(Also DOE: 14-25, 53-68)</td>
-<td>Carnot and Rankine cycles continued, co-generation and<br/>waste heat recovery</td>
-</tr>
-<tr>
-<td>8</td>
-<td>(DOE: 14-25, 26-30, 53-68)</td>
-<td>Comparing energy carriers</td>
-</tr>
+   <tr>
+      <td><b><center>Week</center></b></td>
+      <td><b><center>Supportive Reading Material</center></b></td>
+      <td><b><center>Topic</center></b></td>
+   </tr>
+   <tr>
+      <td>1</td>
+      <td>Devoe: 19 - 29</td>
+      <td>Introduction, concepts, definitions, and UNITS!!<br />Thermodynamic properties, the conservation of energy</td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td>Devoe: 30 – 44<br />DOE: 1-13, 41-52</td>
+      <td>Work transfer and heat transfer, phase diagrams, the<br />conservation of energy for closed systems</td>
+   </tr>
+   <tr>
+      <td>3</td>
+      <td>Devoe: Chapter 2.4-2.5</td>
+      <td>Thermodynamic properties, state relations, the ideal gas<br />model, the incompressible substance model, conservation of<br />mass for open systems</td>
+   </tr>
+   <tr>
+      <td>4</td>
+      <td>Devoe: 52-55<br />DOE: 14-25</td>
+      <td>Conservation of energy for open systems, flow work, flow<br />devices, examples</td>
+   </tr>
+   <tr>
+      <td>5</td>
+      <td>Devoe: 56-66<br />DOE: 53-68<br />(Also DOE: 14-25)</td>
+      <td>Transient analysis and the conservation of mass and energy;<br />power, refrigeration and heat pump cycles</td>
+   </tr>
+   <tr>
+      <td>6</td>
+      <td>Devoe: 67-97<br />(Also DOE: 14-25)</td>
+      <td>The 2nd law of thermodynamics, Carnot and Rankine power<br />cycles</td>
+   </tr>
+   <tr>
+      <td>7</td>
+      <td>DOE: 26-30<br />(Also DOE: 14-25, 53-68)</td>
+      <td>Carnot and Rankine cycles continued, co-generation and<br />waste heat recovery</td>
+   </tr>
+   <tr>
+      <td>8</td>
+      <td>(DOE: 14-25, 26-30, 53-68)</td>
+      <td>Comparing energy carriers</td>
+   </tr>
 </table></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 3/1000000
@@ -68,9 +69,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:1841-0!*!*!!*!*!* and timestamp 20161127022927 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Introthermodynamics:Main&amp;oldid=13609">https://share.coursera.org/wiki/index.php?title=Introthermodynamics:Main&amp;oldid=13609</a>"</div>
-<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Physics" title="Category:Physics">Physics</a></li></ul></div></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Physics" title="Category:Physics">Physics</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

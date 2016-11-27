@@ -1,14 +1,14 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter12</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week12" title="Pythonlearn:resources-week12"> Back to Chapter 12 Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:exercises-chapter12</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:resources-week12" title="Pythonlearn:resources-week12"> Back to Chapter 12 Resources</a></p>
 <p><strong>Do not include the assigned problems for any chapter in this page of solutions</strong></p>
 <h1> <span class="mw-headline" id="Problem_with_executing_socket1.py">Problem with executing socket1.py</span></h1>
-<p>As asked in the Exercise of Chapter 12 I altered socket1.py which I downloaded here: <a class="external free" href="http://www.pythonlearn.com/code/socket1.py" rel="nofollow">http://www.pythonlearn.com/code/socket1.py</a>
+<p>As asked in the Exercise of Chapter 12 I altered socket1.py which I downloaded here: <a rel="nofollow" class="external free" href="http://www.pythonlearn.com/code/socket1.py">http://www.pythonlearn.com/code/socket1.py</a>
 my version looks the following:
 <pre>
 import socket
@@ -34,6 +34,7 @@ mysock.close()
 </p>
 Any hints?</p>
 <p>I'm working on a late 2009 mac book pro with OS X El Capitan.</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 20/1000000
@@ -41,9 +42,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:5403-0!*!0!*!*!*!* and timestamp 20161127022019 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter12&amp;oldid=33088">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter12&amp;oldid=33088</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

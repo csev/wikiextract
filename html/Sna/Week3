@@ -1,13 +1,13 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Sna:Week3</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>Concepts: Betweenness, closeness, eigenvector centrality (+ PageRank), network centralization</p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sna:Week3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Concepts: Betweenness, closeness, eigenvector centrality (+ PageRank), network centralization</p>
 <p>Activities: Calculate and interpret node centrality for real-world networks (your Facebook graph, the Enron corporate email network, Twitter networks, etc.)</p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Centrality"><span class="tocnumber">1</span> <span class="toctext">Centrality</span></a></li>
 <li class="toclevel-1"><a href="#Brokerage"><span class="tocnumber">2</span> <span class="toctext">Brokerage</span></a></li>
@@ -21,26 +21,45 @@
 Centralization characterizes the entire network  by  capturing the inequality of the distribution of centralities.
 The simplest measure of centralization is standard deviation of degree distribution.</p>
 <p>Freeman's general formula for centralization:</p>
-<p>$$C_D = \frac{\sum_{i=1}^g[C_D(n*) - C_D(i)]} {[(N - 1)(N-2)]} $$</p>
-<p>where $$C_D(n*)$$ is the maximum centrality in the network.</p>
+<p>$$C&#95;D = \frac{\sum&#95;{i=1}^g[C&#95;D(n&#42;) - C&#95;D(i)]} {[(N - 1)(N-2)]} $$</p>
+<p>where $$C&#95;D(n&#42;)$$ is the maximum centrality in the network.</p>
 <h1> <span class="mw-headline" id="Brokerage">Brokerage</span></h1>
 <h1> <span class="mw-headline" id="Betweenness">Betweenness</span></h1>
 <p>Intuition: how many pairs of individuals would have to go through you in order to reach one another in the minimum shortest path.</p>
-<p>$$C_B(I) =\sum_{j&lt;k}\frac{g_{jk}(i)} {g_{jk}}$$</p>
-<p>where $$g_{jk}$$ is the number of shortest paths connecting $$j$$ and $$k$$, and $$g_{jk}(i) $$- the number of shortest paths connecting $$j$$ and $$k$$ that go through $$i$$. </p>
-<p>The $$C_B(I) $$ is usually normalized as follows:</p>
-<p>$$C_B(I) = C_B(I) / [(N - 1) (N-2) / 2]$$</p>
+<p>$$C&#95;B(I) =\sum&#95;{j&lt;k}\frac{g&#95;{jk}(i)} {g&#95;{jk}}$$</p>
+<p>where $$g&#95;{jk}$$ is the number of shortest paths connecting $$j$$ and $$k$$, and $$g&#95;{jk}(i) $$- the number of shortest paths connecting $$j$$ and $$k$$ that go through $$i$$. </p>
+<p>The $$C&#95;B(I) $$ is usually normalized as follows:</p>
+<p>$$C&#95;B(I) = C&#95;B(I) / [(N - 1) (N-2) / 2]$$</p>
 <h1> <span class="mw-headline" id="Closeness">Closeness</span></h1>
 <p>Closeness is based on the length of the shortest path between a node and all other nodes in the network.
 Closeness Centrality is defined as</p>
-<p>$$C_C(i) =[\sum_{j=1}^Nd(i,j) ]^{-1} $$</p>
+<p>$$C&#95;C(i) =[\sum&#95;{j=1}^Nd(i,j) ]^{-1} $$</p>
 <h1> <span class="mw-headline" id="Eigenvector_Centrality">Eigenvector Centrality</span></h1>
 <p>Bonacich eigenvector centrality</p>
-<p>$$c_i(\beta) = \sum_j(\alpha + \beta c_j) * A_{ji} $$ 
+<p>$$c&#95;i(\beta) = \sum&#95;j(\alpha + \beta c&#95;j) &#42; A&#95;{ji} $$ 
 , where 
 <ul><li> $$\alpha $$ is a normalization constant
 </li><li> $$\beta $$ determines how important the centrality of your neighbors is
 </li><li> $$A $$ is the adjacency matrix (can be weighted)
 </li><li> $$I$$ is the identity matrix (1s down the diagonal, 0s off-diagonal)
-</li><li> $$1$$ is a matrix of all ones</li></ul></p>
-</div></div></div>
+</li><li> $$1$$ is a matrix of all ones</p>
+</li></ul>
+
+<p>Small $$\beta $$ signifies high attenuation, only your immediate friends matter.
+High $$\beta $$ signifies low attenuation,  global network structure matters. 
+0 yields simple degree centrality.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:327-0!*!*!!en!*!* and timestamp 20161127022939 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:Week3&amp;oldid=10864">https://share.coursera.org/wiki/index.php?title=Sna:Week3&amp;oldid=10864</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

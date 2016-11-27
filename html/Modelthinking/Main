@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Modelthinking:Main</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Modelthinking:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Model_Thinking"><span class="tocnumber">1</span> <span class="toctext">Model Thinking</span></a>
 <ul>
@@ -44,9 +44,9 @@
 <p>This is the wiki home page for the Model Thinking course (Fall '12), by Professor Scott E. Page.</p>
 <p>Students are invited to contribute to the wiki.</p>
 <h2> <span class="mw-headline" id="References">References</span></h2>
-<p>For more information about the course,  details for the course <a class="external text" href="https://class.coursera.org/modelthinking-2012-002/class/index" rel="nofollow">are posted here</a> on the course announcements' board.</p>
-<p>Also see <a class="new" href="/wiki/index.php?title=ModelThinking:Schedule&amp;action=edit&amp;redlink=1" title="ModelThinking:Schedule (page does not exist)">ModelThinking:Schedule</a> (which was originally posted <a class="external text" href="https://class.coursera.org/modelthinking-2012-002/class/index" rel="nofollow">here</a>)</p>
-<p>Also see the <a class="external text" href="https://class.coursera.org/modelthinking-2012-002/wiki/index" rel="nofollow">course Syllabus page</a></p>
+<p>For more information about the course,  details for the course <a rel="nofollow" class="external text" href="https://class.coursera.org/modelthinking-2012-002/class/index">are posted here</a> on the course announcements' board.</p>
+<p>Also see <a href="/wiki/index.php?title=ModelThinking:Schedule&amp;action=edit&amp;redlink=1" class="new" title="ModelThinking:Schedule (page does not exist)">ModelThinking:Schedule</a> (which was originally posted <a rel="nofollow" class="external text" href="https://class.coursera.org/modelthinking-2012-002/class/index">here</a>)</p>
+<p>Also see the <a rel="nofollow" class="external text" href="https://class.coursera.org/modelthinking-2012-002/wiki/index">course Syllabus page</a></p>
 <p>An alternative 'Main' page to this wiki can also be found at <a href="/wiki/index.php/ModelThinking:Main" title="ModelThinking:Main">ModelThinking:Main</a></p>
 <p>Also see the <a href="/wiki/index.php/Modelthinking:Subtitles" title="Modelthinking:Subtitles">Modelthinking:Subtitles</a></p>
 <p>Glossary (WIP) <a href="/wiki/index.php/Modelthinking:Glossary" title="Modelthinking:Glossary">Modelthinking:Glossary</a></p>
@@ -68,8 +68,8 @@
 <p>Model thinking also includes understanding and using model tools as appropriate.</p>
 <h2> <span class="mw-headline" id="Model_Thinking_and_the_.22Wisdom.22_of_Proverbs">Model Thinking and the "Wisdom" of Proverbs</span></h2>
 <p>If we think of proverbs as a form of heuristics, based on the "No Free Lunch" theorem we should expect that no proverb will work every time. Furthermore, if we combine this with the "do the opposite" heuristics, we should expect that any proverb should "generate" its equally valid opposite. This is a point that Prof. Sage likes to make, highlighting that, contrary to proverbs, formal models do provide some guidance on when a particular approach is likely or unlikely to work.</p>
-<p>I could not find a site fully dedicated to proverbs and their opposites, so I collected a few examples from a number of sites. My current list is here <a class="external autonumber" href="https://docs.google.com/spreadsheet/ccc?key=0AuvzKmo32Ma-dDB4amVGbkNrbUMzN0NxZ09iZXNJMnc#gid=1" rel="nofollow">[1]</a>.</p>
-<p>The Toulmin Model of argumentation is one useful way to look at how arguments (proverbs included) are constructed and what qualifies them or invalidates them. (<a class="external free" href="http://www-rohan.sdsu.edu/~digger/305/toulmin_model.htm" rel="nofollow">http://www-rohan.sdsu.edu/~digger/305/toulmin_model.htm</a>)</p>
+<p>I could not find a site fully dedicated to proverbs and their opposites, so I collected a few examples from a number of sites. My current list is here <a rel="nofollow" class="external autonumber" href="https://docs.google.com/spreadsheet/ccc?key=0AuvzKmo32Ma-dDB4amVGbkNrbUMzN0NxZ09iZXNJMnc#gid=1">[1]</a>.</p>
+<p>The Toulmin Model of argumentation is one useful way to look at how arguments (proverbs included) are constructed and what qualifies them or invalidates them. (<a rel="nofollow" class="external free" href="http://www-rohan.sdsu.edu/~digger/305/toulmin_model.htm">http://www-rohan.sdsu.edu/~digger/305/toulmin_model.htm</a>)</p>
 <h2> <span class="mw-headline" id="Standard_Deviation_for_a_Binomial_Distribution">Standard Deviation for a Binomial Distribution</span></h2>
 <p>A binomial distribution refers to the distribution of data for a case where there are two possible outcomes.  E.g, heads or tails; or show or no-show.</p>
 <p>Mathematical definitions are as follows:</p>
@@ -88,7 +88,7 @@ Mean = pN</p></li>
 <p>Those correspond with falling within the first standard deviation (SD), 2nd SD, and the 3rd SD.  Thus 99.7% of the sets will fall within the third deviation.</p>
 <h2> <span class="mw-headline" id="Standard_Deviation_for_a_Binomial_Distribution_meets_the_infamous_Monty_Hall_Probability_Problem">Standard Deviation for a Binomial Distribution meets the infamous Monty Hall Probability Problem</span></h2>
 <p>Scott E Page went over the Monty Hall Probability problem and many students were bewildered by his explanation, as it was contrary to a misapplied rule that what happened before doesn't carry over in probability. This is a problem that has embarrassed even professors and professional statisticians.</p>
-<p>If you go here: <a class="external free" href="http://learningenvironment.com/ThreeDoors" rel="nofollow">http://learningenvironment.com/ThreeDoors</a>, you can quickly learn about the problem and run through it 100 times.  That web application was created by a student (Reid Albecker) long before taking this class.</p>
+<p>If you go here: <a rel="nofollow" class="external free" href="http://learningenvironment.com/ThreeDoors">http://learningenvironment.com/ThreeDoors</a>, you can quickly learn about the problem and run through it 100 times.  That web application was created by a student (Reid Albecker) long before taking this class.</p>
 <p>Let's look at what the standard deviation (SD) is for this problem for sets with N = 10, N = 50, and N = 100.</p>
 <code><pre>p = 0.67 for the case where the player switches every time. p in this case is the probability of winning.
 Mean will always be 0.67N.
@@ -143,6 +143,7 @@ SD3 range (99.7%): 1.24 to 12.16
 <li><a href="/wiki/index.php/ModelThinking:SRT2.3en" title="ModelThinking:SRT2.3en"> 2.3) Measuring Segregation - English SRT</a></li>
 </ul>
 <h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 11/1000000
@@ -150,9 +151,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:221-0!*!0!!en!*!* and timestamp 20161127022928 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Modelthinking:Main&amp;oldid=27527">https://share.coursera.org/wiki/index.php?title=Modelthinking:Main&amp;oldid=27527</a>"</div>
-<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Model_Thinking" title="Category:Model Thinking">Model Thinking</a></li></ul></div></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Model_Thinking" title="Category:Model Thinking">Model Thinking</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

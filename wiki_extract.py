@@ -82,17 +82,18 @@ for category in categories:
             data = f.read().decode()
             # print (data)
 
-            usesoup = True
+            usesoup = False
             if usesoup : 
                 soup = BeautifulSoup(data, 'html.parser')
                 thediv = soup.find("div", {"id": "content"})
+                # print(thediv)
                 data = str(thediv)
             else : 
                 startpos = data.find('<div id="content">')
                 endpos = data.find('</div><!-- end of MAINCONTENT div -->')
-                data = data.substr(startpos,endpos)+'</div>'
+                data = data[startpos:endpos]+'</div>'
 
-            # print(thediv)
+            data = data.replace('<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>','')
             # data = data.replace('href="/wiki/index.php/','href="index.php?page=')
             folder = 'html/'+category
             if not os.path.exists(folder):

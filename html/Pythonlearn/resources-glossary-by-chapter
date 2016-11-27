@@ -1,11 +1,11 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-glossary-by-chapter</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-glossary-by-chapter</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Python_for_Informatics_Glossary"><span class="tocnumber">1</span> <span class="toctext">Python for Informatics Glossary</span></a>
 <ul>
@@ -31,7 +31,7 @@
 </td></tr></table>
 <h1> <span class="mw-headline" id="Python_for_Informatics_Glossary">Python for Informatics Glossary</span></h1>
 <p>This Glossary is taken from Charles Severance’s book, <em>Python for Informatics - Exploring Information</em></p>
-<p><a href="/wiki/index.php/Pythonlearn:Complete_Glossary" title="Pythonlearn:Complete Glossary"> Complete Glossary</a> </p>
+<p><a href="/wiki/index.php/Pythonlearn:Complete_Glossary" title="Pythonlearn:Complete Glossary"> Complete Glossary</a>  </p>
 <h2> <span class="mw-headline" id="Chapter_1">Chapter 1</span></h2>
 <p><strong>bug:</strong> An error in a program. </p>
 <p><strong>central processing unit:</strong> The heart of any computer. It is what runs the software that we write; also called "CPU" or "the processor". </p>
@@ -164,7 +164,7 @@
 <p><strong>tuple assignment:</strong> An assignment with a sequence on the right side and a tuple of variables on the left. The right side is evaluated and then its elements are assigned to the variables on the left. </p>
 <h2> <span class="mw-headline" id="Chapter_11">Chapter 11</span></h2>
 <p><strong>brittle code:</strong> Code that works when the input data is in a particular format but is prone to breakage if there is some deviation from the correct format. We call this “brittle code” because it is easily broken.</p>
-<p><strong>greedy matching:</strong> The notion that the “+” and “*” characters in a regular expression expand outward to match the largest possible string.</p>
+<p><strong>greedy matching:</strong> The notion that the “+” and “&#42;” characters in a regular expression expand outward to match the largest possible string.</p>
 <p><strong>grep:</strong> A command available in most Unix systems that searches through text files looking for lines that match regular expressions. The command name stands for "Generalized Regular Expression Parser".</p>
 <p><strong>regular expression:</strong> A language for expressing more complex search strings. A regular expression may contain special characters that indicate that a search only matches at the beginning or end of a line or many other similar capabilities.</p>
 <p><strong>wild card:</strong> A special character that matches any character. In regular expressions the wild-card character is the period.</p>
@@ -205,6 +205,7 @@
 <p><strong>shell:</strong> A command-line interface to an operating system. Also called a “terminal program” in some systems. In this interface you type a command and parameters on a line and press “enter” to execute the command.</p>
 <p><strong>walk:</strong> A term we use to describe the notion of visiting the entire tree of directories, sub-directories, sub-sub-directories, until we have visited the all of the directories. We call this “walking the directory tree”.</p>
 <p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 2/1000000
@@ -212,9 +213,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:4003-0!*!0!!en!*!* and timestamp 20161127022908 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-glossary-by-chapter&amp;oldid=32811">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-glossary-by-chapter&amp;oldid=32811</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

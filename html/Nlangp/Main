@@ -1,14 +1,14 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Nlangp:Main</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>
-Welcome to the <a class="external text" href="https://class.coursera.org/nlangp-001/class/index" rel="nofollow">Natural Language Processing</a> Portal!
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Nlangp:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Welcome to the <a rel="nofollow" class="external text" href="https://class.coursera.org/nlangp-001/class/index">Natural Language Processing</a> Portal!
 This is a barebones template of sorts. Feel free to add pages as needed.</p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Week_1"><span class="tocnumber">1</span> <span class="toctext">Week 1</span></a>
 <ul>
@@ -34,5 +34,53 @@ This is a barebones template of sorts. Feel free to add pages as needed.</p>
 </li><li> A document icon (page with a folded-over corner) that links the in-video quiz questions and answers.
 </li><li> A landscape picture icon that links the slides used for that lecture section.
 </li><li> Two sets of list icons (rows of lines, one with bullets) that contain the video subtitles (in English). One contains just the text. The other includes timing information (need more info here).
-</li><li> A download icon (looks like an inbox with a down-pointing arrow) link to where you can download the lecture video in MP4 format.</li></ul></p>
-</div></div></div>
+</li><li> A download icon (looks like an inbox with a down-pointing arrow) link to where you can download the lecture video in MP4 format.</p>
+</li></ul>
+
+<p>Also please see <a rel="nofollow" class="external text" href="http://www.cs.columbia.edu/~mcollins/notes-spring2013.html">the comprehensive notes</a> for for the class.</p>
+<h3> <span class="mw-headline" id="Applications">Applications</span></h3>
+<ul>
+<li>Machine Translation</li>
+<li>Information Extraction</li>
+<li>Text Summarization</li>
+<li>Dialogue System</li>
+</ul>
+<h3> <span class="mw-headline" id="Why_is_NLP_hard.3F">Why is NLP hard?</span></h3>
+<ul>
+<li>Ambiguity</li>
+</ul>
+<h2> <span class="mw-headline" id="Language_Modeling">Language Modeling</span></h2>
+<p>$$V$$
+<dl><dd>   some (finite) vocabulary
+</dd></dl>
+$$V^\dagger$$
+<dl><dd>   (infinite) set of sentences
+</dd></dl>
+$$p$$
+<dl><dd>   $$p$$ is a function that satisfies</p>
+</dd></dl>
+
+<blockquote>
+  <p>$$\sum&#95;{x\in V^\dagger}p(x) = 1$$, where $$p(x)\ge 0$$ for all $$x \in V^\dagger$$</p>
+</blockquote>
+<h2> <span class="mw-headline" id="Markov_Processes">Markov Processes</span></h2>
+<p>Assume that: for any $$i \in {2...n}$$, for any $$x&#95;1...x&#95;i$$,</p>
+<blockquote>
+  <p>$$P(X&#95;i=x&#95;i|X&#95;1=x&#95;1...X&#95;{i-1}=x&#95;{i-1}) = P(X&#95;i=x&#95;i|X&#95;{i-1}=x&#95;{i-1})$$</p>
+</blockquote>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:1265-0!*!*!!en!*!* and timestamp 20161127022929 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Nlangp:Main&amp;oldid=20171">https://share.coursera.org/wiki/index.php?title=Nlangp:Main&amp;oldid=20171</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:AI" title="Category:AI">AI</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Natural_Language_Processing" title="Category:Natural Language Processing">Natural Language Processing</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

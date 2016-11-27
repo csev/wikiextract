@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week09</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:resources-week09</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
 <ul>
@@ -31,10 +31,10 @@
 <p>List - a linear collection of ordered values.</p>
 <p>Dictionary - an assortment of unordered labeled values, similar to a database</p>
 <h2> <span class="mw-headline" id="Dictionaries">Dictionaries</span></h2>
-<p>Different names for Dictionaries:<br/>
-<ul><li> Associative Arrays - Perl/Php<br/>
-</li><li> Properties of Map or HashMap - Java<br/>
-</li><li> Property Bag - C#/.Net<br/>
+<p>Different names for Dictionaries:<br />
+<ul><li> Associative Arrays - Perl/Php<br />
+</li><li> Properties of Map or HashMap - Java<br />
+</li><li> Property Bag - C#/.Net<br />
 </li></ul>
 An example of working with Dictionaries (9A):    </p>
 <code><pre>purse = dict()  
@@ -44,15 +44,15 @@ purse['candy'] = 3
 purse['tissues'] = 75  
 print purse  
 </pre></code>
-<p>Output:<br/>
+<p>Output:<br />
 {'money':12,'tissues':75,'candy':3}
-The output shows both the key('money') and the value ('12'). The value can be modified, like with lists.<br/>
+The output shows both the key('money') and the value ('12'). The value can be modified, like with lists.<br />
 For example (9B):  </p>
 <code><pre>purse['candy'] = purse['candy'] + 2  
 </pre></code>
 <p>Will change the value of 'candy' to 5.  </p>
 <p>Dictionaries are like Lists except that they use keys('money') instead of numbers to look up values. (Lists are ordered, Dictionaries are not and so rely on keys for lookup)  </p>
-<p>Dictionary literals (constants) use curly braces {} and have a list of key : value pairs. As usual for dictionaries, the list is unordered.  </p>
+<p>Dictionary literals (constants) use curly braces {} and have a list of key&#160;: value pairs. As usual for dictionaries, the list is unordered.  </p>
 <h3> <span class="mw-headline" id="Using_Dictionary_to_tally.2Fcount_items">Using Dictionary to tally/count items</span></h3>
 <p>The "in/not in" operators can be used to see if a key exists in the dictionary - without resulting in a traceback error.</p>
 <p>Example (9C):  </p>
@@ -91,7 +91,7 @@ print counts
 <code><pre>for occurrence in counts.values():
   print occurrence
 </pre></code>
-<p>Iterate over the elements ((key, value) pairs) in a dictionary : counts.items():</p>
+<p>Iterate over the elements ((key, value) pairs) in a dictionary&#160;: counts.items():</p>
 <code><pre>for name,occurrence in counts.items():
   print name, occurrence
 </pre></code>
@@ -100,7 +100,8 @@ print counts
 <p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
 <h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
 <p>Add resources for this chapter to this page..</p>
-<p><a class="external text" href="https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/" rel="nofollow">Python Dictionaries - https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/</a></p>
+<p><a rel="nofollow" class="external text" href="https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/">Python Dictionaries - https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/</a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 89/1000000
@@ -108,9 +109,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3964-0!*!0!!en!*!* and timestamp 20161126063729 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week09&amp;oldid=34459">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week09&amp;oldid=34459</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

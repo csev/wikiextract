@@ -1,12 +1,12 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Fantasysf:Main</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Fantasysf:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Fantasy_.26_Science_Fiction"><span class="tocnumber">1</span> <span class="toctext">Fantasy &amp; Science Fiction</span></a></li>
 <li class="toclevel-1"><a href="#Writing_Help"><span class="tocnumber">2</span> <span class="toctext">Writing Help</span></a></li>
@@ -18,22 +18,23 @@
 <ul>
 <li><a href="/wiki/index.php/Fantasysf:Portfolios" title="Fantasysf:Portfolios">Student Writing Portfolios</a></li>
 <li><a href="/wiki/index.php/Fantasysf:Blogroll" title="Fantasysf:Blogroll">Student Blogroll</a></li>
-<li><a class="external text" href="http://www-personal.umich.edu/~esrabkin/" rel="nofollow">Eric Rabkin's Home Page</a></li>
-<li><a class="external text" href="http://www-personal.umich.edu/~esrabkin/sf/SF_HistUtopLit.htm" rel="nofollow">History of Utopian Literature</a></li>
+<li><a rel="nofollow" class="external text" href="http://www-personal.umich.edu/~esrabkin/">Eric Rabkin's Home Page</a></li>
+<li><a rel="nofollow" class="external text" href="http://www-personal.umich.edu/~esrabkin/sf/SF_HistUtopLit.htm">History of Utopian Literature</a></li>
 </ul>
 <h2> <span class="mw-headline" id="Writing_Help">Writing Help</span></h2>
 <ul>
-<li><a class="external text" href="http://owl.english.purdue.edu/owl/" rel="nofollow">Purdue's OWL: Online Writing Laboratory</a> provides reference materials on all aspects of English writing.</li>
+<li><a rel="nofollow" class="external text" href="http://owl.english.purdue.edu/owl/">Purdue's OWL: Online Writing Laboratory</a> provides reference materials on all aspects of English writing.</li>
 </ul>
 <h2> <span class="mw-headline" id="Essay_Evaluation_Guidelines">Essay Evaluation Guidelines</span></h2>
 <p><a href="/wiki/index.php/Fantasysf:Essay_Evaluation_Guidelines" title="Fantasysf:Essay Evaluation Guidelines">Essay Evaluation Guidelines</a></p>
 <h2> <span class="mw-headline" id="Group_Dynamics_References">Group Dynamics References</span></h2>
 <ul>
-<li><a class="external text" href="http://www.opus.org.uk/" rel="nofollow">Opus</a> is a place to visit to learn more about group dynamics.</li>
-<li><a class="external text" href="http://www.ofek-groups.org/en/index.php?option=com_content&amp;task=view&amp;id=22&amp;Itemid=35" rel="nofollow">Group Relations Conference explained.</a></li>
-<li><a class="external text" href="http://en.wikipedia.org/wiki/Wilfred_Bion" rel="nofollow">Wilfred Bion</a></li>
-<li>[Alpha Misanthropos] (<a class="external free" href="http://alphamisanthropos.wordpress.com/about/" rel="nofollow">http://alphamisanthropos.wordpress.com/about/</a>)</li>
+<li><a rel="nofollow" class="external text" href="http://www.opus.org.uk/">Opus</a> is a place to visit to learn more about group dynamics.</li>
+<li><a rel="nofollow" class="external text" href="http://www.ofek-groups.org/en/index.php?option=com_content&amp;task=view&amp;id=22&amp;Itemid=35">Group Relations Conference explained.</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Wilfred_Bion">Wilfred Bion</a></li>
+<li>[Alpha Misanthropos] (<a rel="nofollow" class="external free" href="http://alphamisanthropos.wordpress.com/about/">http://alphamisanthropos.wordpress.com/about/</a>)</li>
 </ul>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 2/1000000
@@ -41,9 +42,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:172-0!*!0!!en!*!* and timestamp 20161127013634 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Fantasysf:Main&amp;oldid=19105">https://share.coursera.org/wiki/index.php?title=Fantasysf:Main&amp;oldid=19105</a>"</div>
-<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li></ul></div></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

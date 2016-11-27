@@ -1,13 +1,13 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Sna:Week2</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>Concepts: Connected components, giant component, average shortest path, diameter, breadth-first search, preferential attachment</p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sna:Week2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Concepts: Connected components, giant component, average shortest path, diameter, breadth-first search, preferential attachment</p>
 <p>Activities: Create random networks, calculate component distribution, average shortest path, evaluate impact of structure on ability of information to diffuse</p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Erdos-Renyi:_simplest_network_model"><span class="tocnumber">1</span> <span class="toctext">Erdos-Renyi: simplest network model</span></a></li>
 <li class="toclevel-1"><a href="#2C_Models_of_network_growth"><span class="tocnumber">2</span> <span class="toctext">2C Models of network growth</span></a></li>
@@ -33,5 +33,134 @@ Key parameters
 <ul><li> N = number of nodes in the network
 </li><li> p = probability that any two nodes share an edge
 </li><li> M = total number of edges in the graph
-</li><li> k  = degree of a node, the number of edges incident to a node.</li></ul></p>
-</div></div></div>
+</li><li> k  = degree of a node, the number of edges incident to a node.</p>
+</li></ul>
+
+<p>Degree distribution.
+(N, p) - model: For each potential edge we flip a biased coin
+<ul><li> with probability $$p$$ we add the edge
+</li><li> with probability $$(1-p) $$ we don't</p>
+</li></ul>
+
+<p>As the size of the network increases and $$p$$ is unchanged the probability of any two nodes being connected increases.  </p>
+<p>The <strong>binomial distribution</strong> gives us the probability that a node has degree k:
+$$
+B(N-1;k,p) = {N-1\choose k}p^k(1-p)^{N-1-k}
+$$</p>
+<p>where </p>
+<p>$$
+{N-1\choose k}=\frac{(N-1)!}{k!(N-1-k)!}
+$$</p>
+<p>is the <strong>binomial coefficient</strong>, which tells us how many ways we can choose $$k$$ items out of $$(N-1) $$.
+The <strong>mean</strong>, or <strong>expected value</strong> of binomial distribution, tells us the average degree $$z$$</p>
+<p>$$
+z = (N-1)p
+$$</p>
+<p>The variance in degree is </p>
+<p>$$
+\sigma^2 = (N-1)p(1-p)
+$$</p>
+<p>Average shortest path.
+If average degree of each node is $$z$$ then the number of nodes at distance $$l$$ is $$z^l$$.
+The average shortest path $$l&#95;{av}$$ can be approximated as
+$$
+l&#95;{av} \approx \dfrac {logN}{logz} 
+$$</p>
+<p>Because logarithm grows slowly, the Erdos-Renye networks can grow very large but nodes will be just a few hops apart.</p>
+<p>Relative to ER, the introduction model has
+<ul><li> more closed triads
+</li><li> longer average shortest path
+</li><li> more uneven degree
+</li><li> smaller giant component at low p</p>
+</li></ul>
+
+<p>Binomial distribution has factorials which can be hard to compute for large values. So if p is small, the Poisson distribution can be used. Furthermore, if n is large, the Normal distribution can be used.</p>
+<h2> <span class="mw-headline" id="2C_Models_of_network_growth">2C Models of network growth</span></h2>
+<h2> <span class="mw-headline" id="Power_law_distribution">Power law distribution</span></h2>
+<p>On a logarithm plot the power law distribution is represented by 
+$$
+ln(p(k)) = c - \alpha ln(k)
+$$,</p>
+<p>where $$c$$ is <strong>normalization constant</strong>, and $$\alpha$$ is <strong>power law exponent</strong>. Exponentiate both sides to get that $$p(k)$$, the probability of observing an node of degree $$k$$ is given by </p>
+<p>$$
+p(k) = Ck^{-\alpha}
+$$</p>
+<p>Social networks are not described by power law distribution. It is hard to keep up with thousands or tens of thousands of friends.</p>
+<h2> <span class="mw-headline" id="Growth_of_random_networks.">Growth of random networks.</span></h2>
+<p>At each timestamp a node is born and that  node selects $$m$$ other nodes at random to connect to. At time $$t$$ there are $$t$$ nodes.  The degree of a node born at time $$i$$ growths as 
+$$
+\dfrac{dk&#95;i(t)}{dt} = \dfrac{m}{t}
+$$</p>
+<p>To get the number of nodes a node accumulate since its birth at time $$i$$ until time $$t$$ we integrate the above expression to get</p>
+<p>$$ k&#95;i(t) = m + m\log(\frac{t}{i}) $$.</p>
+<p>On average $$ k&#95;i(t) &gt; k&#95;j(t)$$ if $$ i &lt; j $$. In other words older nodes on average have more edges.</p>
+<h2> <span class="mw-headline" id="Preferential_attachment.">Preferential attachment.</span></h2>
+<p>New nodes prefer to attach to well-connected nodes over less-well connected nodes. This process is known as cumulative advantage, rich-get-richer, and Matthew effect.</p>
+<h2> <span class="mw-headline" id="Barabasi-Albert_model">Barabasi-Albert model</span></h2>
+<p>The BA model was first used to describe skewed degree distribution of World Wide Web. It combines both the growth and preferential attachment concepts above. New nodes are added at time $$ i $$ with $$m$$ edges. These new edges connect to nodes with probability proportional to their degree relative to the whole graph.</p>
+<p>For example, consider a BA-model graph with three nodes A, B, and C, and m = 1. Their relative degrees a, b, c, are $$a=2$$, $$b=1$$, $$c=1$$ (A&lt;-&gt;B, A&lt;-&gt;C). Suppose a new node D comes into existence. D gets to make one new edge; where will they put it? They are more likely to attach to A because A <em>already has</em> a degree of two, whereas B and C only have a degree of 1.</p>
+<h3> <span class="mw-headline" id="Node_degree_with_respect_to_time">Node degree with respect to time</span></h3>
+<p>A given node's degree changes over time, as expressed by the differential equation below:</p>
+<p>$$ \frac{dk&#95;i(t)}{dt} = m \times \frac{k&#95;i}{2tm} = \frac{k&#95;i}{2t} $$ </p>
+<p>At time <code>t</code> there are <code>m</code> new edges. Edges are allocated in proportion to a node's degree ($$k&#95;i$$) divided by the sum of the degrees ($$2tm$$), because there are $$tm$$ other edges and each edge has 2 endpoints.</p>
+<p>This is a <em>separable first-order ordinary differential equation</em> (<a rel="nofollow" class="external free" href="http://tutorial.math.lamar.edu/Classes/DE/Separable.aspx">http://tutorial.math.lamar.edu/Classes/DE/Separable.aspx</a>).</p>
+<p>Bring all the <code>k's</code> to one side and the <code>t's</code> to the other. This is the <strong>separation stage</strong>:</p>
+<p>$$ \frac{2}{k&#95;i} \times dk&#95;i(t) = \frac{1}{t} \times dt $$</p>
+<p>Now integrate both sides. The equation remains balanced because integration is just like any other operation, and we're applying it to both sides:</p>
+<p>$$ \int \frac{2}{k&#95;i} \times dk&#95;i(t) = \int \frac{1}{t} \times dt $$</p>
+<p>Consult a handy integration table, like <a rel="nofollow" class="external free" href="http://integral-table.com/">http://integral-table.com/</a>. We know that:</p>
+<ul>
+<li>Multiplicative factors can be moved out, i.e. $$ \int A \times f(x).dx = A \times \int f(x).dx $$, where A is a constant.</li>
+<li>$$ \int \frac{1}{x}dx = ln(x) + C $$</li>
+</ul>
+<p>(In many integral tables you will see <code>ln</code> and not <code>log</code>. <code>ln</code> just means log to base e, and log just means log to base 10. They're "the same" for integrations. Also very important to note that the second integral adds a restriction that the solution is only valid for $$ x &gt; 0 $$, because of the <code>ln</code>. This is OK because time is always positive&#160;;) but more interesting is that there is no defined solution for $$ t = 0 $$).</p>
+<p>Applying the first and second rules to the left, and the second rule to the right, gives:</p>
+<p>$$ 2 (ln(k&#95;i) + C) = ln(t) + D $$</p>
+<p>Noticed I used a <code>C</code> and a <code>D</code>? This just means we don't know what these two numbers are. Rather than keeping track of two unknown constants let's just collapse them into one unknown constant <code>E</code>:</p>
+<p>$$ 2 ln(k&#95;i) = ln(t) + E $$.</p>
+<p>Now we <strong>solve for an initial value</strong> in order to get rid of E. What do we know? The rules of the model are such that:</p>
+<p>$$ k&#95;i(i) = m $$</p>
+<p>because at time <code>i</code> the node at <code>i</code> has a degree of m. Hence:</p>
+<p>$$ 2 ln(m) = ln(i) + E $$</p>
+<p>$$ E = 2 ln(m) - ln(i) $$</p>
+<p>$$ E = ln(m^2) - ln(i) $$</p>
+<p>$$ E = ln(\frac{m^2}{i}) $$</p>
+<p>Note the use of the rules of logarithms (<a rel="nofollow" class="external free" href="http://www.mathwords.com/l/logarithm_rules.htm">http://www.mathwords.com/l/logarithm_rules.htm</a>).</p>
+<p>Substituting back in:</p>
+<p>$$ 2 ln(k&#95;i(t)) = ln(t) + ln(\frac{m^2}{i}) $$</p>
+<p>$$ 2 ln(k&#95;i(t)) = ln(t \times \frac{m^2}{i}) $$</p>
+<p>$$ ln(k&#95;i(t)) = \frac{1}{2} ln(t \times \frac{m^2}{i}) $$</p>
+<p>$$ ln(k&#95;i(t)) = ln((t \times \frac{m^2}{i})^\frac{1}{2}) $$</p>
+<p>Note that raising something to the power of half implies a square root. Raise both sides by the power of e to reverse the <code>ln</code>'s:</p>
+<p>$$ k&#95;i(t) = (t \times \frac{m^2}{i})^\frac{1}{2} $$</p>
+<p>A bit of shuffling:</p>
+<p>$$ k&#95;i(t) = (m^2)^\frac{1}{2} (\frac{t}{i})^\frac{1}{2} $$</p>
+<p>$$ k&#95;i(t) = m \sqrt{\frac{t}{i}} $$, { $$ \forall t \in \mathbb{Z} $$ | $$ t &gt; 0 $$ }.</p>
+<h3> <span class="mw-headline" id="Probability_of_connection">Probability of connection</span></h3>
+<p>The probability of connecting to node $$i$$ is expressed by</p>
+<p>$$
+P(i) = m\frac{k&#95;i}{\sum&#95;{j}{k&#95;j}}
+$$</p>
+<h3> <span class="mw-headline" id="Degree_Distribution">Degree Distribution</span></h3>
+<p>Let $$\tau$$ be the time of birth of node of degree $$k'$$, then:</p>
+<p>$$ \frac{\tau}{t} = (\frac{m}{k'})^2 $$</p>
+<p>$$ 1 - \frac{\tau}{t} = 1 - (\frac{m}{k'})^2 $$</p>
+<p>$$ \Pr(k \leq k') = 1 - (\frac{m}{k'})^2 $$</p>
+<p>$$\Pr(k \leq k')$$ gives the cumulative distribution function (CDF) of the degree. To get the probability density function (PDF), we simply differentiate $$\Pr(k \leq k')$$ w.r.t. $$k'$$ and let $$k' = k$$.</p>
+<p>This yields $$\Pr(k) = 2 \frac{m^2}{k^3}$$.</p>
+<p>This results in power-law with exponent $$\alpha = 3$$ which is unrealistically steep.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:326-0!*!*!!en!*!* and timestamp 20161127022354 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:Week2&amp;oldid=18056">https://share.coursera.org/wiki/index.php?title=Sna:Week2&amp;oldid=18056</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

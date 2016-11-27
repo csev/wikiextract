@@ -1,13 +1,13 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Pythonlearn:Main</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Resources</a></p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pythonlearn:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Resources</a></p>
 <p><a href="/wiki/index.php/Pythonlearn:Online-Chat" title="Pythonlearn:Online-Chat"> Online-Chat</a></p>
-<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
 <ul>
 <li class="toclevel-1"><a href="#Week_One"><span class="tocnumber">1</span> <span class="toctext">Week One</span></a></li>
 <li class="toclevel-1"><a href="#Week_Two"><span class="tocnumber">2</span> <span class="toctext">Week Two</span></a></li>
@@ -59,6 +59,7 @@
 <p>See: <a href="/wiki/index.php/Pythonlearn:resources-week15" title="Pythonlearn:resources-week15">the wiki page for notes on Week 15</a></p>
 <h2> <span class="mw-headline" id="Week_Sixteen">Week Sixteen</span></h2>
 <p>See: <a href="/wiki/index.php/Pythonlearn:resources-week16" title="Pythonlearn:resources-week16">the wiki page for notes on Week 16</a></p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 2/1000000
@@ -66,9 +67,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:3971-0!*!0!!en!*!* and timestamp 20161126125914 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:Main&amp;oldid=32787">https://share.coursera.org/wiki/index.php?title=Pythonlearn:Main&amp;oldid=32787</a>"</div>
-<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li><li><a href="/wiki/index.php/Category:Python" title="Category:Python">Python</a></li></ul></div></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li><li><a href="/wiki/index.php/Category:Python" title="Category:Python">Python</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

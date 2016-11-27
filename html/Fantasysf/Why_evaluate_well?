@@ -1,14 +1,15 @@
 <div id="content">
-<a id="top"></a>
-<h1 class="firstHeading" id="firstHeading">Fantasysf:Why evaluate well?</h1>
-<div id="bodyContent">
-<h3 id="siteSub">From Coursera</h3>
-<div id="contentSub"></div>
-<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
-<div class="mw-content-ltr" dir="ltr" lang="en"><p>A review works on the same math as humour: two half jokes are not a whole joke.</p>
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Fantasysf:Why evaluate well?</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            <div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>A review works on the same math as humour: two half jokes are not a whole joke.</p>
 <p>In reality, 1000 rushed half reviews might not be as useful as one thoughtful one.</p>
 <p>In addition, when you evaluate well, you learn too.</p>
 <p>Focusing on <strong>quality</strong> of reviews is much more useful (for everyone) than focusing on <strong>quantity</strong>.</p>
+
 <!-- 
 NewPP limit report
 Preprocessor node count: 1/1000000
@@ -16,9 +17,10 @@ Post-expand include size: 0/2097152 bytes
 Template argument size: 0/2097152 bytes
 Expensive parser function count: 0/100
 -->
+
 <!-- Saved in parser cache with key crowdwiki:pcache:idhash:190-0!*!*!*!*!*!* and timestamp 20161127022921 -->
 </div><div class="printfooter">
 Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Fantasysf:Why_evaluate_well%3F&amp;oldid=1417">https://share.coursera.org/wiki/index.php?title=Fantasysf:Why_evaluate_well%3F&amp;oldid=1417</a>"</div>
-<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
-</div>
-</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>
