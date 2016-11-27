@@ -1,0 +1,475 @@
+[[Pythonlearn:Resources | Back to Resources]]
+  
+[[Pythonlearn:exercises-chapter02 | Chapter 2 Exercises]]  
+  
+# Some nice quotes from our professor Charles Severance:
+* "Spam is good. Eggs is spam... Is good."
+
+ 
+##Constants
+
+Are **Fixed values** such as numbers, letters and strings.  String constants use single or double quotes.
+* Note: A "string" is any series of letters, numbers, and other symbols. For example: "This is a string." or "1+2 does not equal 5"
+
+##Variables
+ 
+Virtually all programming languages, including Python, utilize variables in order to do sustained calculations and manipulate data. 
+
+: Represent a named location in a computer memory the programmer uses to store various values to keep track of for use later. Variables can then be retrieved and acted on at any time using the assigned variable "name."
+
+## Variable Naming
+
+Variables can have any name you decide to use that makes sense with only a few restrictions in the way of rules. 
+
+- Variable names can only contain letters (a, b, c, A, etc.), numeric digits (1, 2, 3, etc.), or \_underscore_ characters.
+     - However they cannot start with a digit
+- Names cannot contain special symbols and characters (@, #, $, etc.)
+- Also strictly avoid using [Python's list of reserved keywords](https://docs.python.org/2/reference/lexical_analysis.html#keywords)
+
+These few hardcoded rules aside, there are no formal structures on variable names. However, there are some general variable naming guidelines or conventions that most programmers follow and recommend. For example, variables **age**, **name**, and **height** are much more readable and easier to make sense of than variables **x**, **y**, and **z** that may represent the very same data. This type of contextually obvious naming scheme is called mnemonics, and though single letter variables like **x**, **y**, **z** or vague/generic names such as **variable1**, or **var1** is acceptable, it is not recommended.
+
+*Nota Bene:* Python is a case sensitive programming language. Be aware of this when you first name and subsequently use your variables. For instance, **leapyear**, **Leapyear**, **leapYear**, and **LeapYear** will actually be viewed as 4 different variables by Python even if you intended the same thing, a "leap year," but simply mistyped.
+
+# Variable Assignment
+
+Python statements are lines of code that do something. The most common type of statement you'll probably come across are assignment statements.
+
+**Assignment Statements**
+: An assignment statement consists of a variable on the left hand side and an expression on the right hand side connected by an equal sign in between them.
+
+Example:
+
+     age = 57
+
+- The left hand side **age** is a variable, essentially representing a memory location in the computer.
+
+- The right hand side **57** is a simple mathematical expression, and its value is stored in the memory location represented by variable name **age**
+
+- So the above assignment statement assigns the value **57** to the variable **age**.
+
+Variables, as the name implies, can vary. Some who are new to programming, especially those with any high school level background in algebra, are initially confused by this concept. You may find it helps to read the single equals sign as 'becomes', thus x = 5 means x becomes 5.
+
+You might quite often see code like this:
+
+     x = 5
+
+     # later on in your program...
+
+     x = 3
+
+     # even farther in your code....
+
+     x = -7
+
+The important thing to keep in mind is that these are not the algebraic "independent variables" you're used to having to manipulate equations for and find the solutions to. In Python, a named variable simply correlates to a space in computer memory. You can save any value to this allocated memory and manipulate or change its value to suit your program's needs.
+
+Although we can understand simple programs using this description, and many programming languages, including C, C++, and Java, do exactly this, Python doesn't. Instead, a variable points to a storage location containing its current value, and so does every variable with that same value. If its value is changed by assignment then, instead of changing its storage location to that value, a new location is set to the value if it's not already in memory, then the variable is changed to point to that new location--but other variables pointing to the old location still point there. Moreover, Python assumes small integers (-5 to +256) are very likely to be used, so they're automatically stored when the system is initialized, ready to be used (a process called memoization). So, to be quite accurate:
+
+     x = 5  # sets variable x to point to the location storing 5 (memoized during system initialization)
+
+     y = x  # sets y to point to the location x presently does (so the location storing 5)
+
+     x = x + 1 # sets variable x to point to the location storing 6 (memoized during system initialization)--but y still points to 5
+
+     y = 3.14  # stores 3.14 in a new memory location unless it has already been used and so is already available (has been memoized), and sets y to point to it 
+
+     w = y  # sets w to point to the same value y presently points to (3.14)
+
+     z = 3.14  # sets z to point to 3.14, the same value as y and w presently point to
+
+So instead of thinking of a variable being a named location whose value gets changed, it's more accurate to think of a variable as a name on a sticky note that gets moved and stuck to a location storing its new value (after storing that value if it hasn't been used previously). Note that we have just one location storing value 3.14, but three variables (w, y, and z) presently share that value. If any one of them changes, the value in that location doesn't change; instead, that variable now points to a different location containing that new value and the other two still "point to" 3.14.
+
+### Assigning from Mathematical Expressions
+
+More complex mathematical expressions can be evaluated for variable assignment than just numeric literals. This can be achieved by way of the following operators:
+
+- Addition ( + )
+     - `x = 5 + 10`
+- Subtraction ( - )
+     - `x = 5 - 10`
+- Multiplication ( * )
+     - `x = 5 * 10`
+- Power ( ** )
+     - Exponentiation ( $$5^{10}$$ )
+          - ` x = 5**10`
+     - The ** operator can also be utilized for root calculations since roots are just fraction exponents ( $$\sqrt[]{10}$$ = $$10^{1/2}$$ )
+          - `x = 10**.5`
+- Division ( / )
+     - `x = 5  / 10`
+- Modulo ( % )
+     - Used to return the remainder of a division instead of the quotient answer ( 10 % 3 = 1, since 3 * 3 = 9 and 10 - 9 leaves a remainder 1 )
+     - `x = 10 % 3`
+
+*Nota Bene:* There is a marked difference between *integer number* division and *floating point number* division. Because Python treats these two numeric types distinctly different, you might get erroneous answers when doing division operations without precaution. (read more on **Data Types: Other Caveats** below)
+
+*Nota Júlio Araújo:* 
+
+     If x equals to an even number:
+     x % 2 = 0
+     If x equals to an odd number:
+     x % 2 > 0
+
+     12345 % 10 = 5
+     12345 % 100 = 45
+     12345 % 1000 = 345
+     12345 % 10000 = 2345
+     12345 % 100000 = 12345
+     
+     12345 / 1 = 12345
+     12345 / 10 = 1234
+     12345 / 100 = 123
+     12345 / 1000 = 12
+     12345 / 10000 = 1
+     
+     From left to right, I want the 3rd digit...
+     12345 % 1000 / 100   (this evaluates to 3)
+     12345 / 100 % 10     (this evaluates to 3)
+     
+     From left to right, I want the 4th digit...
+     12345 / 10 % 10      (this evaluates to 4)
+     12345 % 100 / 10     (this evaluates to 4)
+     
+     We can play with several combinations to extract a nth digit. I don't know Python very well (yet), but surely there are
+     functions to perform the same task, but the simpler the expression (without using functions or objects), the faster it 
+     executes.
+
+**Evaluation Logic Flow**
+
+Although almost all Python code is exclusively executed sequentially line-by-line from top to bottom and each line evaluated from left to right, assignment statements have their right hand mathematical expression calculated first and then have the resulting value assigned to the variable (unless you are declaring a variable for the first time).
+
+Consider the following series of assignments:
+
+     x = 3
+
+     y = 4
+
+     x = x + 6
+
+     y = x + y
+
+
+1. `x = 3` is executed first. Python allocates some memory in the computer and labels it **x**. It then evaluates the mathematical value of **3** and assigns that to **x**.
+2. `y = 4` is the next line executed. Python creates another variable **y**. Evaluates the right hand expression and stores the number **4** in **y**'s memory location.
+3. In `x = x + 6`, variable **x** already exists so Python ignores it and evaluates the right hand side. Since **x** holds a value of 3 from our first line, the expression is read by Python as `x = 3 + 6`. The value of 3 + 6 is 9, and this value is saved to variable **x**, 9 is then stored in memory and **x** is pointed to that location.
+4. `y = x + y` is read as `y = 9 + 4`, evaluated as `y = 13`. the new value is stored in memory and **y** gets pointed to it.
+
+**Operator Precedence (PEMDAS)**
+
+Python also has a built operator precedence that affects the flow of mathematical evaluation. This means that certain calculations in more complex mathematical expressions will be evaluated first before moving on to others. An easy way to memorize the orders of operators is the acronym PEMDAS. Python's operator precedence is as follows:
+
+PEMDAS: 
+
+1. Parenthesis (P)
+2. Exponents /  Roots (E)
+3. Multiplication and Division (M D)
+4. Addition and Subtraction (A S)
+
+     *Mnemonic: **P**ython **E**ats **M**any **D**elicious **A**nimals for **S**upper*
+
+Multiplication and division are really in the same precedence class; that's why I grouped them together because splitting them into two separate classes(with two different numbers) may give the inspiration that one is of higher precedence over the other. The same applies to addition and subtraction.
+
+*Nota Bene:* Python will evaluate each hierarchy of operator with its default left-to-right behaviour before moving to the next level. If you wish to force some other part to be evaluated first, enclose it in parenthesis
+
+Example:
+
+     x = 1 + 2 * 3 / ( 6 - 12 )
+
+1. (6 - 12) will be evaluated first even though subtraction is the lowest in the Python's operator hierarchy because it is enclosed in parenthesis.
+     - `6 - 12 = -6`
+2. After the parenthesis, multiplication and division come next. Python will calculate these values as it encounters them going from left to right.
+     - `2 * 3 = 6`
+     - `6 / -6 = -1`
+3. Finally the only low level operator is evaluated
+     - `1 + (-1) = 0`
+
+Evaluating this expression in any other order will result in a completely different value being stored in **x**, so be aware of operator precedence when forming your calculations in Python code.
+
+* BODMAS/PEMDAS:
+
+*An alternative way to remember PEMDAS is ["BOD-MAS"](https://www.mathsisfun.com/operation-order-bodmas.html):
+
+
+BODMAS:
+
+1. Brackets (Parenthesis)
+2. Order (Powers/Exponents , Square Roots)
+4. Division
+6. Multiplication
+7. Addition
+8. Subtraction
+
+### Assigning from User Input
+
+Aside from variable assignment with numeric or string literals such as `x = 3` or `x = "Hello Coursera!"` or even more complex arithmetic operations such as `x = 3 * 99 / .5`, Python provides a way for assigning variable values from keyboard. This is useful if you don't already know the value of the variable you're going to be working with. The command to accept user input is `raw_input(). This will make a pop-up box appear on  your screen.
+
+Example:
+
+     name = raw_input("What is your name, human? ")
+     print "Hello", name + "! I am Python :D"
+
+The basic structure of the assignment statement remains the same, to the left of the equal sign is the variable the data returned is being saved to and to the right is the `raw_input()` command.
+
+However, `raw_input` introduces some unique properties of its own. `raw_input()` accepts a string within its parenthesis which acts as a prompt for the user when this line of code is run. Therefore, at program runtime, the output of the first line of code will display:
+
+     What is your name, human?
+
+For all intents and purposes, your program will appear to freeze after this. Python pauses its sequential execution of your code to wait for the user to input a value. Let's say they entered "Chuck Severance" after Python asked for their name. As soon as the `Enter` key is clicked, Python passes in **Chuck Severance** into the **name** variable just as previous assignment statements did, and continues executing the rest of your code. The last line of output will display:
+
+     Hello Chuck Severance! I am Python :D
+
+*Note Chandrama:*In Python 3.x, **input()** replaces **raw_input()**, for input from the console.Also remember to use the **print()** function with Python 3.4, including parentheses, for output to the console, instead of the old **print** command that did not require parentheses.So the example above will be in Python 3x as follows:
+
+      name = input("What is your name, human? ")
+     print ("Hello", name + "! I am Python :D")
+Source:(https://www.codecademy.com/forum_questions/535b85237c82ca9f46000f87) by Glenn Richard
+
+## Data Types
+
+Notice how the mixed use of string literals and variable names in the second `print` line comes together in the final output. Until now, we've only seen the `+` operator used in the context of arithmetic addition. But Python didn't combine variable **name** `+` the other sentence to form a whole new value like passing in 2 + 2 into Python would produce 4. This is because Python is aware of something called "data types" and it acts on each different type accordingly.
+
+The **data types** we have learned about so far are:
+
+- **Numeric types**
+     - **Integer numbers**
+          - A whole number, i.e. a number that is not a fraction
+          - Ex: 1, 5, 33, -24, 5000
+     - **Floating-point numbers**
+          - A number with a fraction or decimal point
+          - 17.34, 98.2, -768.001, 0.2
+- **Strings**
+     - A collection of characters
+     - This can be alphabetic characters, special characters, or even numeric characters (but saved as type string, enclosed in "quotes")
+     - Ex: "Alphabetic", "ch@r@cter$!!!", "1234567890"
+
+*Nota Bene:* If you are unsure of what data type a particular variable, constant, or literal is, you can ask Python by using the `type()` function.
+
+Because variable **name** and the string literal passed in to `print` were both of variable type string, Python did something called *concatenation* rather than *addition* with the `+` operator. In effect, concatenation attaches the second string to the end of the first.
+
+String concatenation example:
+
+     print "Hello" + "Coursera!"
+     
+     #Output: HelloCoursera!
+
+Note that when using concatenation with the `+` operator, sentence spacing isn't automatically allotted for. Whereas `print "Hello", "Coursera!"` would have output "Hello Coursera!". Also the multiplication `*` operator can be used for multiple string concatenation:
+
+     print "Free Education!", "Hip-hip-hooray! " * 3 + "Thank you Coursera!"
+     
+     #Outputs: Free Education! Hip-hip-hooray! Hip-hip-hooray! Hip-hip-hooray! Thank you Coursera!
+  
+###Type Conversion
+
+`raw_input` is great for assigning values to variables we don't have predefined. However it comes with one caveat, all input accepted is saved as a string. Regardless of if we're specifically prompting for a numeric value and the user enters numbers only, the resulting value will be saved as type string. After all, even numeric characters are just characters, as far as Python knows, all the user typed in were a bunch of characters.
+
+This can lead to logical errors if we tried to do any sort of arithmetic calculation with data that is essentially of type string. Best case scenario, you may end up botching your variables by concatenating or multiple concatenating them together
+
+     x = raw_input("Enter a number: ")
+     y = raw_input("Enter another number: ")
+     z = x + y
+     print "The sum of", x, "and", y, "is",  z
+
+     #Output:
+     # Enter a number: 23
+     # Enter another number: 45
+     # The sum of 23 and 45 is 2345
+     
+
+ 
+Or in the worst case Python may give you an error if you try to make it do a calculation with strings that it simply cannot make sense of like division or root calculation.
+
+*Type-casting* is a universal programming notion of converting the value of a variable from one type into another. In Python, this is achieved by utilizing functions such as `int()`, `float()`, or `str()`. If we want to do arithmetic calculation with user input values, we need to convert them into a numeric type first.
+
+     z = int(x) + int(y)
+     print "The correct sum actually was", z
+
+     #Output: The correct sum actually was 68
+
+*Nota Bene:* You can only type-cast between strings and integers and vice versa if the characters are numeric. Any alphanumeric or special character combination will result in a Python error.
+
+###Other Caveats
+
+**Permanence: Data type-casting vs. Data conversion**
+
+Converting a variable to integer or float without redefining the variable with the operand "=" will not save the variable as integer or float in memory for later use. The following example illustrates this concept.
+
+    
+    >>> var = raw_input('Enter Number:\n')
+    Enter Number:
+    35
+    >>> print type(var)
+    <type 'str'>
+    >>> print float(var)
+    35.0
+    >>> print var
+    35
+    >>> print type(var)
+    <type 'str'>
+    >>> var = float(var)
+    >>> print type(var)
+    <type 'float'>
+
+**Truncation: Integer division vs. Floating-point division**
+
+There is a marked difference between *integer number* division and *floating point number* division. Because Python treats these two numeric types distinctly different, you might get erroneous answers when doing division operations without precaution.
+
+For instance, calculating 99.0/100 in Python will evaluate the decimal numbers in the answer as well, giving you a solution of 0.99.
+
+Whereas when evaluating the two whole number division 99/100, Python doesn't recognize any decimal points and therefore truncates (not round up/down, truncates simply means "cut off" or "discard") any value after the decimal point, effectively give you an answer of 0.
+
+As soon as one operand is a float, the rest of that expression will be evaluated as a float. Be careful however that following the order of operations, this only happens when the first float is encountered. Example 1+2\*3/4.0-5 will be evaluated as -2.5 while 1.0+2\*3/4-5 is evaluated as -3.0 because the addition operation happens much later in the order of operations. Everything before the 1.0 is encountered as an operand is evaluated as integers.
+
+*Nota Jenevain:* Actually, in Python 3, both expressions evaluate to -2.5. 
+  
+## Python Comments
+
+It is good practice to document your code as your programs begin to get larger than the introductory "Hello World" level.
+
+Code documentation in Python is done using the `#` symbol. Anything after a `#` is ignored by the Python Interpreter, meaning none of it is read or interpreted as code. Multi-line comments can be done by putting multiple lines of comments between lines with three single quotes.
+
+These comments are for programmer's benefit only. It increases the clarity and readability of your code, whether that's you yourself re-visiting old code from months or years ago and trying to remember what you were thinking when you wrote that particular algorithm, or if it's someone else altogether looking through your code trying to make sense of your programming logic.
+
+Consider the following undocumented code:
+
+     a = float(raw_input('Enter a number: '))
+     b = float(raw_input('Enter a number: '))
+     c = float(raw_input('Enter a number: '))
+     x = (a + b + c) / 2
+     y = (x*(x-a)*(x-b)*(x-c))**0.5
+     print '%.2f' %y
+
+Generally, all useful programs read some data, do some work with the data, and then produce results, and that is apparently happening here so it can't be faulted on that count. For all intents and purposes, this is a perfectly functional program. But it's almost impossible to distinguish what it is calculating nor what its purpose is. And even though this program successfully runs, its output isn't very clear on the purpose or solution either:
+
+     Enter a number: 23
+     Enter a number: 34
+     Enter a number: 12
+     66.81
+
+Now lets look at it with a bit more careful documentation:
+
+     # Python Program to calculate the area of triangle
+
+     # Prompts the user to input the 3 sides of the triangle
+     a = float(raw_input('Enter a number: '))
+     b = float(raw_input('Enter a number: '))
+     c = float(raw_input('Enter a number: '))
+
+     # Formula to calculate the semi-perimeter
+     x = (a + b + c) / 2
+
+     # Calculates the area
+     y = (x*(x-a)*(x-b)*(x-c))**0.5
+
+     # Output final area value
+     print '%.2f' %y
+
+
+     
+
+Now things are starting to take shape. Again, this doesn't affect the actual Python interpreted code in any way, but now it has become much more legible and easier to understand both what its purpose is as well as what each segment of the program is attempting to do, even if we had never seen the formula being mentioned before.
+
+While we're at it, let's make the output a bit clearer as well:
+
+     # Python Program to find the area of triangle
+
+     # Prompts the user to input the 3 sides of the triangle
+     side1 = float(raw_input('Enter first side: '))
+     side2 = float(raw_input('Enter second side: '))
+     side3 = float(raw_input('Enter third side: '))
+
+     # Formula to calculate the semi-perimeter
+     sPerim = (side1 + side2 + side3) / 2
+
+     # Calculates the area
+     area = (sPerim * (sPerim - side1) * (sPerim - side2) * (sPerim - side3) ) ** 0.5
+
+     # Output final area value
+     print 'The area of the triangle is %0.2f' %area
+
+
+     '''
+     Sample Program Output
+     Enter first side: 5
+     Enter second side: 6
+     Enter third side: 7
+     The area of the triangle is 14.70
+     '''
+
+Not only have the refined prompts and program output become much more understandable, the programmer's contextually aware variable naming scheme (see **Variable Naming** above) have practically made all of the formula self documenting. 
+
+There is no clear-cut *right* or *wrong* way to document your code or even name your variables. Those kind of decisions deal less with Python's strict language syntax rules and fall more along the lines of general programming design choices. The first code snippet shown still works perfectly fine, but a better designed and well documented Python program is considered superior. ([source attribution](http://www.programiz.com/python-programming/examples/area-triangle))
+
+##Debugging
+* Here are a few pointers on debugging.
+
+*Avoid spaces in between variable names. Python thinks there are two operands. Example:
+
+     >>>Madam Medousa = "lets start the bout"
+     SyntaxError: invalid syntax
+
+     #correct syntax
+     >>>madam_medousa = "lets start the bout"
+     >>>print madam_medousa
+     "lets start the bout"
+
+* Common Syntax Errors.
+      1) SyntaxError: invalid syntax
+      2) SyntaxError: invalid token
+
+*Runtime Error: using a variable before it is defined. Example:
+
+     >>>cat= "Garfield"
+     >>>food = "burgers"
+     >>> Garfield + food
+     NameError: name"Garfield" is not defined
+     
+     # "Garfield" is a string in the variable cat.
+     # Hence, Garfield is not a defined as a mnemonic variable.
+
+*Case sEn5iTiVity (sensitivity!) matters:
+  
+     >>>Olive = 5
+     >>>olive = "olive oil"
+     >>>oLiVe = 7
+
+     # variable names are case sensitive,
+     # all of these variations of olive are separate variables.
+ 
+# More Resource Topics
+An interesting article on [why python integer division floors](http://python-history.blogspot.de/2010/08/why-pythons-integer-division-floors.html) by Guido van Rossum.
+
+A very useful and simple Python 2.7 cheat sheet
+[Python  2.7  Quick  Reference  Sheet](http://www.astro.up.pt/~sousasag/Python_For_Astronomers/Python_qr.pdf)
+
+I found some mistakes on page 2. The last two examples under "Formatting Numbers as Strings" missed a "%" in front, it confused me a while. 
+
+# Exercises written by students
+* **Exercise 1.** 
+
+> Using a file or the Python Playground, gather the first initials of user's first, middle and last names. Print these horizontally (3 across), vertically (3 down), and horizontally with one blank space between each letter. [Solution](http://pastebin.com/qqRQaMrR) [Note: It's possible the words horizontal and vertical should be swapped in the comments in the solution to Exercise 1] - I found the part to print the names vertically confusing. I understand vertically printing to be the initials should be displayed on separate lines.
+
+* **Exercise 2.**
+
+> For the 3 line program below, add one character to prevent printing x twice. [Exercise](http://pastebin.com/3KQSagPm) [Solution](http://pastebin.com/zrPgPaXL)
+
+* **Exercise 3.** *Stochita Radu*
+
+> You are throwing a party next week and you want to order one pizza and two bottles of juice per guest. Ask the user to enter the number of people that are coming to the party, the price of the pizza and the price of the juice and make the computer print to him the money he needs to have in order to afford buying everything. 
+
+> *For example, if the price of the pizza is 10 dollars and the juice bottle costs 5 dollars and there are 10 people coming to the party, the user needs to pay 200 dollars.* [Solution](http://pastebin.com/v89aWDCu)
+
+* **Exercise 4.** *Stochita Radu*
+
+> Hello, my name is Greg and I am visiting USA for four weeks but it's very hard for me to understand the Fahrenheit system. Can you please help me convert the Fahrenheit to Celsius? I'll input the value by typing.
+
+> *The formula for conversion is **Tc = (Tf - 32) * 5.0 / 9.0*** [Solution](http://pastebin.com/f3VaM02C)
+
+* **Exercise 5.** *Stochita Radu*
+
+> Yo, convert the give temperature in Celsius degrees to Fahrenheit degrees. Move it!
+
+> *The formula for conversion is **Tf = Tc * 9.0 / 5.0 + 32*** [Solution](http://pastebin.com/60NNUvft)
+    
+
+
+
+{{reflist}}

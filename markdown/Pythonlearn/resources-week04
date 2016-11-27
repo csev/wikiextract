@@ -1,0 +1,262 @@
+
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+[[Pythonlearn:exercises-chapter04 | Chapter 4 Exercises]]  
+This page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.
+  
+[[Pythonlearn:student-essays | Student Essays]]  
+  
+# Lecture Notes  - Functions
+
+Programmers tend to write a lot of code, sometimes writing intricately nested conditionals and plugging in variables into complex formulas just to calculate one value or derive one output. However, repeating those several lines of code over and over again for every time the computation is required can make your source code quite verbose as well as tedious to maintain.
+
+In many programming languages there is a very powerful notion of "modular code" that can help solve this dilemma. Various segments of related code are broken apart and collapsed into smaller sets that can then be used to contribute to the larger, overarching scheme of the program itself. These reusable, modular pieces have different names in different languages (modules, routines, sub-routines, methods, etc), but in Python and many other languages besides, these are referred to as *functions*.
+
+**Functions**
+: Taking segments of related code, wrapping it up in its own allocated code block, and attributing it with a name so that it can be called later at any point of the overarching program, thus treating it as its own separate, self contained, and individually existing entity. A "sub program" within your program, if you will.
+
+## Why use functions?
+**To function or not to function...**
+
+To see the full utility of functions, coding programs that are longer than what is required to complete _Programming for Everybody_ is necessary.  But even if the reasoning behind the use of functions is not clear to you by the end of this course, an understanding of the benefits of using functions and when you should write a function will come as you continue to code with python and your programs become more complex.  As with previous sections in this course, don't be discouraged if you don't have a complete understanding a given step.  Keep programming while using and reviewing the concepts taught and the understanding will come. Think about it this way: "A function will help the program function."
+
+The remainder of the course and the textbook will often use function definitions to explain concepts.  The reasons why this course uses functions to teach are some of the same reasons that you will use functions in your own programming.
+
+Neither the textbook or the lecture contained a complete list of the reasons to use functions presented within Chapter/Week 4.  The combined reasons for using functions was combined under four major subheadings: Repetition, Clarity, Productivity, Debugging.  These four major groups were not listed as such within the course, and in reality there is overlap between each category and any other of the categories.  The categories used here are only a suggested framework for discussion.  **Quotation marks below denote text taken directly from the textbook or the lecture slides.**
+
+### Repetition
+"You keep doing the same thing over and over again"
+
+One of the reasons to learn to program that was stated at the beginning of the course is to take advantage of the computer's ability to repeat the same task over and over in the same manner.  
+
+"Don’t repeat yourself - make it work once and then reuse it"
+
+"Make a library of common stuff that you do over and over"
+
+You can use the formula that you created within the same program, or within other programs where you want to do the same processes.
+
+### Clarity
+"Part of the skill of creating and using functions is to have a function properly capture an idea..."
+
+"Organize your code into “paragraphs” - capture a complete thought and “name it”."
+
+"Functions can make a program smaller by eliminating repetitive code."
+
+"If something gets too long or complex, break it up into logical chunks and put those chunks in functions."
+
+"Creating a new function gives you an opportunity to name a group of statements, which makes your program easier to read, understand, and debug."
+
+### Productivity
+"Well-designed functions are often useful for many programs. Once you write and debug one, you can reuse it."
+
+You may find that you are using the same processes within different programs.
+
+"Make a library of common stuff that you do over and over - perhaps share this with your friends..."
+
+"Later, if you make a change, you only have to make it in one place."
+
+Even if your function is not perfect from the start, or you find a better way to express your programming needs, you will have reduced the number of places you will need to edit your program.  Because of the nature of functions, the results of one edit can be seen throughout the length of your program or programs where that function is being used.
+
+### Debugging
+"Dividing a long program into functions allows you to debug the parts one at a time and then assemble them into a working whole."
+
+All of the previous categories lead up to assistance with debugging.  There is less code to read during debugging because you have reduced the amount of repetition though formulas.  This simplification makes your code easier to read in order to follow the flow of how python processes your program.  Part of this simplification in reading the code is due to the program having been broken down into smaller chunks that can be analyzed for their individual contributions to your program.  If the function is part of your personal python library, you will have already tested and debugged these saved sections of your code during the creation of previous programs.  You will be able to focus your attention on the new and still untested portions of your code.
+
+## Built-In Functions
+
+Whether we realized it or not, we have already been using functions extensively in our programs since week 1. Python has a number of built-in functions we can use without any knowledge of how its internal code actually works, so long as we know what the function name is. Examples include:
+
+- `raw_input()`
+- `type()`
+- `int()`
+- `float()`
+- `str()`
+- `max()`
+- `len()`
+
+To see a full listing of Python's built-in functions, visit the [online Python documentation](https://docs.python.org/2/library/functions.html).
+
+## Basics of Function Structure
+
+### Function Calls
+
+Utilizing a function is simple. We execute a function by addressing its name; this is called *invoking* a function.
+
+    x = raw_input()
+
+When assigning the value to **x**, function `raw_input()` is *invoked* using its name. As soon as Python reads this line of code Python accesses all the code pertinent to function `raw_input()` it has built in and executes, resulting in our program "freezing" while a blinking cursor appears at the terminal awaiting user input.
+
+### Arguments
+
+After the function call, we can optionally pass in any *arguments* in the form of variables or constants that the function might accept as well in the following parentheses.
+
+    x = raw_input("Enter the value of x: ")
+
+The `raw_input()` function call is followed by the string literal `"Enter the value of x: "` as the *argument* passed into its parentheses. (Read more on **[Functions: Passing Information](https://share.coursera.org/wiki/index.php/Pythonlearn:resources-week04#Passing_Information)**).
+
+Without the `raw_input()` function we could still implement our own code to gather information from the keyboard, but it would require an extensive knowledge of how Python works and would considerably lengthen our code. A prevailing idea in computer science is the notion of building re-usable code. In this case, we are spared the extraneous details of how to hardcode an implementation of keyboard input by simply reusing the Python provided code already available to us in the  `raw_input()` function.
+
+## User-Defined Functions
+
+Python also allows us to create our own custom functions. This can be very useful if the functionality we seek isn't provided in one of [Python's built-in functions](https://docs.python.org/2/library/functions.html) or if we simply want to consolidate repetitive code.
+
+### Function Definitions
+
+    def myFunction():
+        # your code goes here...
+
+In order to *define* a function we use the `def` keyword. This is followed by the unique name you wish to invoke your function with and a set of parentheses. You end the line with the `:` colon character. Your code block is then placed in the following lines, indented 4 `space` characters in.
+
+### Function Placement
+
+Function definitions have to be placed before you invoke them (common practice holds to define all functions at the very top of your source code file). It is similar in concept to the use of a variable in that if Python encounters a variable name such as **myVariable** before you assign a value to it Python will not know what "myVariable" means and therefore gives a traceback error. In similar regard, the function definition teaches Python what `myFunction()` is, how to recognize it when it is invoked, and what code to run once it is called in your code.
+
+    def myFunction():
+        print 'I am now printing from myFunction :D'
+
+    print 'I am printing from the main body of code'
+    myFunction()
+
+    # Output
+    I am printing from the main body of code
+    I am now printing from myFunction :D
+
+### Function Evaluation vs. Function Execution
+
+Notice that Python did not run the `print` in the `myFunction()` code block first. The first two lines are only to instruct Python what `myFunction()` is. The definition does not actually execute any of its enclosed code. Then at the very bottom we make the function call for the first time, and appropriately it is the last line of output.
+
+## Passing Information
+
+### Parameters
+
+You can also specify *parameters* within the parentheses that your function can work with. *Parameters* are temporary variables that act as placeholders for the *arguments* passed in on the function call.
+
+
+    def product(num1, num2):
+        num3 = num1 * num2
+
+The function `product()` takes in two variables, **num1** and **num2**. These are generically named variables because they only serve a generalized purpose; multiply two numbers together. The actual arguments passed in may be **length** and **width**, or **speed** and **distance**, or **rate** and **hours**. Perhaps our program even sends all of those variables into `product()` at different stages of the very same program.
+
+It is important to understand therefore that *parameters* within a function definition, even if named the very same as our variables, *are only temporary placeholders*. As soon as the end of the code block is hit the memory allocated for all variables within `product()` gets reclaimed by the computer. This is due to something called *variable scope*. 
+
+*Nota Bene*: Ironically, an expanded discussion of variable scope is not within the scope (pun intended) of this chapter or lecture. Dr. Chuck did very briefly describe this behaviour in his lecture, comparing the processes done within a function as "scratch paper calculations" that are then "thrown away" after it is done executing. 
+
+### Returns
+
+If we want our calculations to have permanence then, we can "return" a value back to function call using the `return` keyword followed by a variable, constant, or expression.
+
+    def product(num1, num2):
+        num3 = num1 * num2
+        return num3
+
+    # somewhere in the middle of your code...
+    triangleArea = product(base, height) * 0.5
+
+As soon as `product()` is done evaluating, the `return num3` line sends the value of **num3** back to the line where `product()` was called. The arithmetic expression continues to evaluate by multiplying 0.5 by the product that was returned. Finally **triangleArea** is assigned the value of the finished calculation.
+
+*Nota Bene*: The `return` statement should be placed at the bottom of your function code block. Anything after the `return` statement will not be executed since `return` force exits the function to give back the value to the calling expression. The only time you might want to implement `return` statements elsewhere is if it's incorporated into various conditional statements that would return varying values depending on boolean evaluations.
+
+Programs generally take some input, do some calculations, and produce an output. Functions generally follow this pattern too. However a function does not explicitly have to take arguments or return a value, i.e. take some input and produce an output. A function that has no parameters, so takes no input arguments, is a *parameterless* or *no-argument* function, and one that returns no value is a *void* function. 
+
+## Advanced Topics
+
+### Modules
+
+*Modules* are also arguably a little outside of scope to discuss extensively this early on. However, Dr. Chuck did briefly mention the use of Python libraries in his lecture and he used the **math module** to demonstrate some advanced function usage in the chapter. I believe the topic is worth at least a quick overview as it has tremendous implications regarding function extensibility.
+
+An oversimplified definition of a *module* would be a Python source file, similar to all the .py files you have been creating for your Coursera problem sets. These source files contain a specific set of function definitions pertaining to particular criteria. (See [Python's Official Documentation on Modules](https://docs.python.org/2/tutorial/modules.html))
+
+These *module* files can then be incorporated into your code with the `#import` command. This gives you a whole new library of functions to utilize in your code. For example, Dr. Chuck uses the [math module](https://docs.python.org/2/library/math.html) in the textbook [to demonstrate trigonometric functions](http://www.pythonlearn.com/html-008/cfbook005.html#toc46) and other advanced functions not available among the built-in Python functions. In fact Python has a wide array of [numeric and math related modules](https://docs.python.org/2/library/numeric.html) that offer powerfully capable functions for complex operations.
+
+For a comprehensive list of *Python modules* see the [Python Module Index](https://docs.python.org/2/py-modindex.html).
+
+### Bringing It All Together: A Practical Implementation
+
+Dr. Chuck mentions that functions may not seem useful right now when our programs are generally only a few lines long. However, for pedagogical reasons, we are asked to re-implement our simple "Compute Pay" program to utilize a function call in our week 4 problem set. Similarly, all the lecture examples, self admitted by Dr. Chuck himself, are rather simple and silly. Even in these notes, for pedagogical reasons similar to Dr. Chuck's, I've kept all of the examples simple, leaning towards concept comprehension rather than complex implementations.
+
+However, this kind of oversimplification brings about its own set of problems. Fellow students might wonder why bother with a `product()` function when they could simply use the arithmetic `*` multiplication operator instead? Why write a function that only does a `print` execution when a straightforward `print` would accomplish the same trivial task?
+
+It is equally important to get a practical perspective of code concepts than just simplified examples. At a certain point, explaining in abstract terms becomes detrimental. To that end, I've whipped up some example code that implements *all* of the above topics to demonstrate them *in real-world application*.
+
+    # Caesar Cipher - A Python program to encrypt/decrypt messages
+    # Python v 2.x (Not Supported in v3.x)
+    
+    # Import Declaration
+    import string
+    
+    # Function Definition
+    def cipher(message, shift, encrypt):
+       if encrypt == False : shift = 26 - shift
+       return message.translate(
+           string.maketrans(
+               string.ascii_uppercase + string.ascii_lowercase,
+               string.ascii_uppercase[shift:] + string.ascii_uppercase[:shift] +
+               string.ascii_lowercase[shift:] + string.ascii_lowercase[:shift]
+               )
+           )
+           
+    # Prompt user for encryption criteria
+    message = raw_input("Enter plain-text message: ")
+    shift = int(raw_input("Choose your cipher shift value: "))
+    
+    # Encrypt message
+    message = cipher(message, shift, encrypt = True)
+    print "Encrypted cipher-text: " + message
+    
+    # Prompt user for decryption
+    key = int(raw_input("Please enter cipher-key to decrypt your message: "))
+    
+    # Attempt decryption
+    if key == shift:
+        message = cipher(message, shift, encrypt = False)
+        print "Decrypted cipher-text: " + message
+    else:
+        message = None
+        print "Invalid key. Your message has been deleted."
+        print "This program will now self destruct!"
+
+* This throws up an error:
+
+AttributeError: 'str' object has no attribute 'translate' on line 10
+
+This program utilizes the principles of a classic [Caesar Cipher](http://en.wikipedia.org/wiki/Caesar_cipher) in order to encrypt and decrypt messages. The textbook [briefly covers module imports and dot notation](http://www.pythonlearn.com/html-008/cfbook005.html#toc46), however if you have only watched the lecture videos on Coursera, just ignore the verbose minutia in the latter part of the function definition and take it on faith that `return message.translate()` is returning an encrypted/decrypted value back to the function call. 
+
+The point to take away from this is that without the function definition, all of that [string manipulation logic](https://docs.python.org/2/library/string.html#module-string) happening would have to be implemented over and over in the code whenever the **message** variable needed to be encrypted or decrypted by the user. However, as the current implementation stands, every time **message** is manipulated, a simple `cipher()` call is made that only takes up one line. This drastically cleans up the code and makes debugging much less of a hassle since if you ever wanted to tweak some parameter in the algorithm, there is only one place you have to go to edit instead of several.
+
+Function `cipher()` also utilizes *arguments* and *parameters* to pass in the user input **message**, the encryption **shift** value (i.e. the 'key'), and a `bool` value to determine whether to encrypt or decrypt **message** with that key.
+
+Sample Output:
+
+    Enter plain-text message: Cryptography using Python!
+    Choose your cipher shift value: 17
+
+    Encrypted cipher-text: Tipgkfxirgyp ljzex Gpkyfe!
+
+    Please enter cipher-key to decrypt your message: 17
+    Decrypted cipher-text: Cryptography using Python!
+
+### An Aside on Naming Schemes
+
+Function names should be contextually obvious. This is most often either a simple word that describes its purpose, i.e. `cipher()`, or `product()`, or something in the *verbNoun()* or *verb_noun()* format, such as `calculateArea()`, or `compute_pay()`, etc, that readily suggests what output it will produce. But if the function returns a boolean result then its name should be an assertion that should clearly be either `True` or `False`, such as `isEven()` for a function that will return `True` if the argument is an even integer and `False` otherwise.
+
+Regarding the *parameter* naming scheme, here is where I'll again depart slightly from all of Dr. Chuck's examples so far. The [textbook example](http://www.pythonlearn.com/html-008/cfbook005.html#toc50) implemented another silly, simple parameter name. In the [worked exercise](https://class.coursera.org/pythonlearn-002/lecture/51) example as well, Dr. Chuck shortened the already crystal clear **hour** and **rate** variables to **h** and **r** in the `computePay()` function. I understand the pedagogical reasoning behind purposefully changing the names inside of the function, it was to demonstrate that *parameter variables* and *argument variables* are functionally different. A lot of other computer science classrooms and even in-the-field programmers implement this tactic as well. However, this seems to me, like change for change's own sake.
+
+Even a venerable programmer like Dr. Chuck inevitably confused himself working with obscure variables **h** and **r**. This goes back to the discussion on good design choices (see Week 2 Notes on [Variable Naming](https://share.coursera.org/wiki/index.php/Pythonlearn:resources-week02#Variable_Naming) and [Python Comments](https://share.coursera.org/wiki/index.php/Pythonlearn:resources-week02#Python_Comments)). There is (and this is just a fellow student's opinion, so take it with a heavy grain of salt) absolutely nothing wrong with keeping the same contextually obvious naming scheme within functions *so long as you understand variable scope and that these are two distinct variables*. Without the `return` statement preceding the `message.translate()` line, the `cipher()` function would be absolutely useless. Because the *argument variable* **message** and the *parameter variable* **message** are two distinct entities, they are not the same variable; any changes made to **message** inside function `cipher()` would not persist to the **message** variable in the main body of code.
+#_______
+2/25/2016
+Insightful and extremely helpful. Enjoyed reading and learning several new things. Very nice work. 
+I understood the reason for using "message" as both for ''parameter variable' and ' argument variable'' to demonstrate that they are two different variables. However, for clarity I will still prefer to use a different variable like 'my_message' or something similar for one of the variable names. 
+Thanks you for making clear several concepts in your note. 
+#______
+So long as you understand this and that you explicitly need a `return` statement in order to output a value from your functions, I see no reason why using the same variable name **message** should be discouraged. It seems far less confusing to me that changing it to variable **m** or variable **inp** or variable **myStr** simply to scratch the itch of changing names just because it can be done.
+
+Again, these sorts of decisions deal less with Python's syntax rules and fall more in line with what may be considered good programming style and design choices.
+------
+Some languages encourage use of a descriptive prefix on variable names to aid in readily determining a parameter. For example, in a function, the parameter variable **pName** or **p_name** cannot be confused with local variable **name**. 
+  
+# More Resource Topics
+
+* [Creating functions - Python official website](https://docs.python.org/release/1.5.1p1/tut/functions.html)
+
+* [Defining functions](http://anh.cs.luc.edu/python/hands-on/3.1/handsonHtml/functions.html)

@@ -1,0 +1,170 @@
+[[Category:Coursera]]
+[[Category:Model Thinking]]
+# Model Thinking
+
+This is the wiki home page for the Model Thinking course (Fall '12), by Professor Scott E. Page.
+
+Students are invited to contribute to the wiki.
+
+## References 
+
+For more information about the course,  details for the course [are posted here](https://class.coursera.org/modelthinking-2012-002/class/index) on the course announcements' board.
+
+Also see [[ModelThinking:Schedule]] (which was originally posted [here](https://class.coursera.org/modelthinking-2012-002/class/index))
+
+Also see the [course Syllabus page](https://class.coursera.org/modelthinking-2012-002/wiki/index)
+
+An alternative 'Main' page to this wiki can also be found at [[ModelThinking:Main]]
+
+Also see the [[Modelthinking:Subtitles]]
+
+Glossary (WIP) [[Modelthinking:Glossary]]
+
+# Course Overview - All Sections
+
+[[ModelThinking:Overview| Overview of the course, showing all sections and their respective key ideas, names and terms. Also includes links to detailed notes of each section.]]
+
+
+## Key Sections 
+
+[[ModelThinking:S3 | Section 3: Aggregation]]
+
+[[ModelThinking:S4 | Section 4: Decision Models]]
+
+[[ModelThinking:S5 | Section 5: Thinking Electrons - Modeling People ]]
+
+
+# Key Concepts
+
+## What is a Model?
+
+
+A model is a representation of something. A model allows us to more quickly see information and relationships of information that the model pertains to.  It allows us to communicate about something in a deeper way and with more insight and clarity.
+
+The theory of evolution is a model. Height * width = the area of a rectangle is a model.  A blueprint is a model.  The notion that men are physically stronger than women is a model. As is the notion that if you eat less you will lose weight.
+
+Models often have assumptions that are accepted and can thus allow us the ability to manipulate our world without retesting everything at all times.  These assumptions are processed as if they are attributes of the object or phenomenon we are making decisions about or communicating about.
+
+An example of a model is the coin flipping model.  In this model, a coin has two sides and when flipped is as likely to land on one side as the other.  Having two sides is an attribute.  Equal probability of landing on either side is an attribute.
+
+Models can also be conceived of as thought paradigms: objectively conceived patterns, of relatively rigid form, that convert objects and perceptions into ideas.  In a political domain these models might be called "ideologies."
+
+## What is Model Thinking?
+
+
+Model thinking is bringing together what you know about models in general and about various models in particular, to develop and refine a quality model for accessing information about an object, people, or phenomena for the purposes of describing, communicating, understanding and/or making predictions. Model thinking allows us to extend our cognitive grasp of something and synthesize information that is not directly available. E.g., no one directly measured the distance from earth to the sun, yet most Americans know it is 93 million miles away.
+
+Model thinking also includes understanding and using model tools as appropriate.
+
+## Model Thinking and the "Wisdom" of Proverbs
+
+If we think of proverbs as a form of heuristics, based on the "No Free Lunch" theorem we should expect that no proverb will work every time. Furthermore, if we combine this with the "do the opposite" heuristics, we should expect that any proverb should "generate" its equally valid opposite. This is a point that Prof. Sage likes to make, highlighting that, contrary to proverbs, formal models do provide some guidance on when a particular approach is likely or unlikely to work.
+
+I could not find a site fully dedicated to proverbs and their opposites, so I collected a few examples from a number of sites. My current list is here [https://docs.google.com/spreadsheet/ccc?key=0AuvzKmo32Ma-dDB4amVGbkNrbUMzN0NxZ09iZXNJMnc#gid=1].
+
+The Toulmin Model of argumentation is one useful way to look at how arguments (proverbs included) are constructed and what qualifies them or invalidates them. (http://www-rohan.sdsu.edu/~digger/305/toulmin_model.htm)
+
+## Standard Deviation for a Binomial Distribution
+
+A binomial distribution refers to the distribution of data for a case where there are two possible outcomes.  E.g, heads or tails; or show or no-show.
+
+Mathematical definitions are as follows:
+
++ p = probability (in the case of flipping a coin, this would be 0.5)
+
++ N = Number of outcomes in a single set (if you flip a coin 12 times, N would equal 12)
+Mean = pN
+
++ Standard Deviation = SquareRoot(p(1-p)N)
+
+For a very large population of sets (each set produces N outcomes), the following holds true:
+
++ 68% of the time a set of outcomes will fall between (Mean - 1(Standard Deviation)) and the (Mean + 1(Standard Deviation))
+
++ 95% of the time a set of outcomes will fall between (Mean - 2(Standard Deviation) and (Mean + 2(Standard Deviation))
+
++ 99.7% of the time a set of outcomes will fall between (Mean - 3(Standard Deviation) and (Mean + 3(Standard Deviation))
+
+Those correspond with falling within the first standard deviation (SD), 2nd SD, and the 3rd SD.  Thus 99.7% of the sets will fall within the third deviation.
+
+
+## Standard Deviation for a Binomial Distribution meets the infamous Monty Hall Probability Problem
+
+Scott E Page went over the Monty Hall Probability problem and many students were bewildered by his explanation, as it was contrary to a misapplied rule that what happened before doesn't carry over in probability. This is a problem that has embarrassed even professors and professional statisticians.
+
+If you go here: http://learningenvironment.com/ThreeDoors, you can quickly learn about the problem and run through it 100 times.  That web application was created by a student (Reid Albecker) long before taking this class.
+
+Let's look at what the standard deviation (SD) is for this problem for sets with N = 10, N = 50, and N = 100.
+
+    p = 0.67 for the case where the player switches every time. p in this case is the probability of winning.
+    Mean will always be 0.67N.
+
+    Case: N = 100, Median = 67
+    SD = SquareRoot(p(1-p)N) = SquareRoot(0.67(1-0.67)100) = SquareRoot(22.11) = 4.7
+    SD1 range (68%): 67-4.7 to 67+4.7, or 62.3 to 71.7
+    SD2 range (95%): 67-(2*4.7) to 67+(2*4.7), 57.6 to 76.4
+    SD3 range (99.7%): 67-(3*4.7) to 67+(3*4.7), 52.9 to 81.1
+
+    Case: N = 50, Median = 33.5
+    SD = SquareRoot(p(1-p)N) = SquareRoot(0.67(1-0.67)50) = 3.32
+    SD1 range (68%): 33.5-4.06 to 33.5+4.06, or 29.4 to 37.6
+    SD2 range (95%): 25.4 to 41.6
+    SD3 range (99.7%): 21.3 to 45.7
+
+    Case: N = 10, Median = 6.7
+    SD = SquareRoot(p(1-p)N) = SquareRoot(0.67(1-0.67)10) = 1.48
+    SD1 range (68%): 6.7-1.82 to 6.7+1.82, or 4.88 to 8.52
+    SD2 range (95%): 3.06 to 10.34
+    SD3 range (99.7%): 1.24 to 12.16
+
+Therefore if you run through the problem for 100 games, there is a 95% chance you will wind up with more than 57 wins if you switch every time.  But with 10 games, there is a about 32% chance that you will get 5 or less wins by switching every time.
+
+## Game of Life
+
+The rules:
+
+For each cycle:
+
++ An OFF (dead) cell will turn ON (alive) in the next cycle if three of its neighbors are ON.
+
++ An ON cell will turn OFF if it doesn't have exactly 2 or 3 neighbors that are ON.
+
+### Netlogo - Computer Simulation Software
+
+To do this on NetLogo, download NetLogo from ccl.northwestern.edu/netlogo/
+
+Once installed,
+
+1. Open up NetLogo and click on 'File' on the menu bar
+
+2. Click on 'Model Library'
+
+3. Once the Model Library opens up, type in 'life' (without quotes) into the search at the bottom left part of the page
+
+4. Click on 'Life'
+
+5. Click on the Open button
+
+6. Click on the setup-blank button
+
+7. Click on the draw-cells button
+
+8. Draw some cells (this creates on cells) by clicking where you want the ON cells to be
+
+9. Click the go-once button each time you want to make it go to the next cycle, or the go-forever button if you desire.
+
+Note: the draw-cells button and the go-forever buttons toggle on and off.
+
+
+# Course Errata
+Section 1, Video 5 "Using Models to Decide, Strategize and Design", 9:20: Belgium should be the Netherlands. 9:24: France should be Germany. 9:25: Germany should be France.
+
+Section 7, Video 5 "Classifying Tipping Points", 3:28: The assasination of archduke Franz Ferdinand led to WWI not WWII.
+
+Section 18, reading: V.S. Subrahmanian's auction slides: Page 4, last sentence should read: "If only one BIDDER is active, then he wins at the current price."
+
+## Missing Content
+
+- [[ModelThinking:SRT2.3en | 2.3) Measuring Segregation - English SRT]]
+
+# Categories

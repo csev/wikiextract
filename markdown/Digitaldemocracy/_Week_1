@@ -1,0 +1,206 @@
+## Voting as a Security Problem
+
+voting is fundamental for democracy; electoral fraud is as old as voting
+
+#### Goals for the course
+* Understand how votes are counted
+* Apply the security mindset
+* Critically examine the role of technology
+* Learn what we can do to make elections more fair and accurate
+
+#### Security Mindset
+* Look for ways that things can go wrong
+* Adversary = criminal, bad guy
+* Adversarial failures = adversary successfully sabatoging something
+
+**Think like an attacker**
+:::* Understand how to circumvent security
+:::* How can the system break?
+:::* What is the weakest link? easist to attack?
+:::* Identify false assumptions
+:::* Think outside the box of system designer
+
+**Think like a defender**  
+:::* security policy 
+::::* What is being protected?
+::::* What properties are being enforced?
+
+
+**Threat model**
+:::* Who are the attackers? capabilities? motives?
+:::* What kind of attack?
+
+
+**Risk assessment**
+:::* Weaknesses of the system?
+:::* Costs of a successful attack?
+:::* How likely?
+
+
+**Countermeasures**
+* Costs vs. benefits
+* Technical vs. nontechnical
+	
+#### Ssecurity requirements for voting
+**1. Integrity**
+* Outcome is the same as voter intent
+* Votes are cast as intended
+* Votes are counted as cast
+
+**2. Ballot secrecy**
+* Weak: no one can figure out how a person voted
+* Strong: no one can reveal how he/she voted → prevent vote buying, coercion
+
+**3. Voter authentication**
+* Only authorized voters vote
+* Each voter can only vote once
+
+**4. Voter enfranchisement**
+* All authorized voters have the opportunity to vote
+
+**5. Availability**
+* Election system is able to accept all votes and produce results in a timely manner
+
+**Other concerns**
+* cost effectiveness
+* availability
+* convenience
+* intelligibility
+
+**Noteworthy for decision-making:**
+*Tensions exist between some security requirements such as between Integrity and Ballot Secrecy, Voter authentication and enfranchisement.*
+*These tensions require trade-offs which ultimately result in what security/technology to embark on to protect ballots.*
+*It is believed these trade-offs are the underlying considerations for whatever technologies have been used at different times in voting history.*
+---
+## How We Got Here
+
+#### The Living Voice
+
+Voice Voting:  
+*viva voce* = living voice in Latin
+	
+**Process:**  
+* Voter walks up to polling place  
+* Election judge swears in voter on the Bible   
+* Voter calls out his name loudly → authorization  
+* Voter calls out candidate he is voting for  
+* Clerks write down voters name and vote  
+* Observers could also record votes as they are called out  
+	
+**Problems:**  
+* No ballot secrecy   
+* Candidate could be within listening distance of vote  
+* Voter intimidation/coercion possible  
+* Vote buying possible  
+
+#### Early Paper Ballots
+Replaced voice voting  
+France & England wrote ballot voting into constitution and charters  
+Earliest known use in ancient Greece (used balls, tokens)  
+Ballot boxes were usually locked  
+Voters put paper ballot in slot on box  
+Officials counted votes publicly; if counting later, might seal the box  
+	
+**Security Mechanisms during counting:**
+Reader of ballot does not have a writing implement  
+Observers from different parties, levels of government
+	
+**Security Issues:**
+* Procedural: if not followed precisely could exclude the observers in the back
+* Readers could announce any name
+* Ballot boxes could be rigged – false botton and false side
+* Glass boxes were introduced to prevent this
+* Faulty lock
+
+Acme voting machine
+	1st machine – had gears, crank
+	Voter inserted ballot, turned crank → bell to signal vote entered, counter protected against box stuffing, same # of ballots as votes
+	
+
+Cardboard ballot box:
+	disposable
+
+
+Metal ballot box:
+	more secure than cardboard
+	metal tab for attaching padlocks
+		
+
+**Design of Ballots:**
+* Early ballots → voter wrote in names
+* Would be easier for voters to have names already on ballots
+* Some had one name printed & room for other names to be written in
+* Possible for voters to write in the spaces between listed names
+* Party tickets
+* Nonstandard designs → voter confusion
+
+
+**Security Issues:**  
+Multiple voting  
+* Multiple ballots printed on same ticket  
+* Voter responsible for tearing them off  
+* Different colors used for different party tickets  
+* Weak protections  
+
+#### The Australian Ballot  
+
+* Pre-printed ballot → uniformity
+* Provided by the government, not the voter or parties
+* Voting booth → secrecy
+* Voter registration  
+   
+* Additional costs
+:** Had to decide in advance who goes on the ballot   
+:** Printing ballots
+:** More advanced preparation  
+:** Storage of booths between elections  
+:** Additional complexity: advanced planning, printing  
+
+
+**Security Issues:**  
+* Counting bosses and political corruption: Boss Tweed & Tamany Hall
+* Counters made extra marks on ballots with hidden pencil/lead (short pencil artist)
+* Marks could also be erased
+* Extraneous marks would disqualify a vote (identifying marks/names/multiple votes)	
+
+
+**Chain Voting:**  
+* Person waits outside polling place and says he wants to buy ballots
+* Has a pre-filled out ballot
+* Voter takes the ballot to the voting booth
+* Voter picks a new ballot & goes to booth with it
+* Puts pre-filled out ballot in box & gives blank ballot to criminal
+* Criminal uses blank ballot with another person
+*Could prevent using a detachable serial number on ballot to make sure voter returns the same ballot
+		
+
+
+#### Mechanical Voting Machines  
+* Industrial Revolution influenced invention of mechanical voting machines – late 1800s-early 1900s
+* Claims: complete secrecy, tamper proof
+* Mechanism to prevent multiple voting
+* Inside machine, locked: counter mechanism to count votes as they were cast
+* Could vote for individual candidates or a party
+* Lever to close & open the curtain; lever would cast the votes and clear the board
+* Was in view of an official to ensure correct procedure done
+* Eliminated most of the problems of voice voting, paper ballots, chain voting, etc
+* Security issues:  
+::** No record that voter voted; nothing for voter to see
+::** Mechanical failure due to multiple parts, gears, etc
+::** Counter could stop incrementing if tab broke off
+::** Sabotage to machine → difficult to distinguish if mechanical or sabatoge
+::** Fraud: jam pencil lead into gears  
+
+#### Punched Card Voting:  
+* Holes punched out of a card with a stylus and read by a computer
+* Nothing printed on cards → secrecy
+* Security issues:
+::** No good way for the voter to see the vote being counted correctly
+::** Easy to misalign cards
+::** Florida 2000 presidential election: some voters voted for 2 candidates
+::** Votes were discounted
+::** Chad (paper punched out): can cause many problems
+::** Can block another hole being punched
+::** Holes might not be punched all the way
+::** Could be maliciously tampered with during counting
+::** Punch cards are no longer used → computer voting systems introduced

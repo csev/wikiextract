@@ -1,0 +1,145 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter09</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week09" title="Pythonlearn:resources-week09"> Back to Chapter 9 Resources</a></p>
+<p><strong>Exercise 4 is a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.</strong></p>
+<p><em>Exercise 1</em></p>
+<ul>
+<li>The code below is not pretty.</li>
+<li>It is suggested here only as the part that does the work.</li>
+<li>That is, guardian statements, exception catching and elegant coding features, such as prompting for filenames, not included.</li>
+</ul>
+<pre>
+newdict = dict()
+count = 0
+fhand = open('words.txt')
+
+inp = fhand.read()
+inp = inp.split() # inp = list(inp) also creates a list containing all the words in words.txt as elements.
+
+for word in inp :
+    count = count + 1
+    newdict[word] = [count]
+
+# examples of using the **in** operator to check whether a string is in the dictionary as specified in Exercise 9.1:
+
+print 'is' in newdict
+print 'and' in newdict
+print 'political' in newdict
+
+</pre>
+<p><em>Exercise 1 - different approach</em>
+I used mbox-short.txt for this exercise.
+<pre>
+name = raw_input("Enter file:")
+handle = open(name,'r')
+text = handle.read()
+words = text.split()&lt;/p&gt;
+
+&lt;p&gt;if 'From' in words:
+    print "True"
+</pre></p>
+<ul>
+<li>Note: to use the <strong>in</strong> operator to check for presence of specific <em>values</em> (rather than <em>keys</em>), reference the use of the method <strong>values</strong> as explained on page 86 of <em>Python For Informatics</em>.</li>
+</ul>
+<p><em>Exercise 2</em> - Write a program that categorizes each mail message by which day of the week the commit was done. To do this look for lines which start with "From", then look for the third word and then keep a running count of each of the days of the week. At the end of the program print out the contents of your dictionary (order does not matter).</p>
+<pre>
+fname = raw_input("Enter a file name: ")
+if len(fname) &lt; 1 : fname = "mbox-short.txt"
+fhand = open(fname)
+
+days = dict()
+
+for line in fhand:
+    if line.startswith("From "):
+        words = line.split()
+        dayofweek = words[2]
+        days[dayofweek] = days.get(dayofweek,0) + 1
+
+print days
+</pre>
+<p><em>Exercise 3</em></p>
+<ul>
+<li>OK, 9.2 above sets a higher standard.</li>
+<li>So, the code below contains an opening convenience and an exception catcher.</li>
+</ul>
+<pre>
+file = raw_input('Enter file name: ')
+if len(file) &lt; 1 : file = 'mbox-short.txt'
+
+try :
+    fhand = open(file)
+except :
+    print 'Cannot open file:' , file , '.' , '...please try, again.'
+    exit()
+
+email_adrs = dict()
+
+for line in fhand :
+    if not line.startswith('From ') : continue
+    words = line.split()
+    email_adrs[words[1]] = email_adrs.get(words[1], 0) + 1
+
+print email_adrs
+</pre>
+<p>In exercise 3, we can also look at the lines start with "From:". In that case, when the line splits into a list, there are only two items in it.</p>
+<p><strong>Exercise 4 is a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.</strong></p>
+<p><em>Exercise 5</em></p>
+<pre>
+file = raw_input('Enter file name: ')
+if len(file) &lt; 1 : file = 'mbox-short.txt'
+
+try :
+    hand = open(file)
+except :
+    print 'Could not open',file
+    exit()
+
+school = dict()
+
+for line in hand :
+    if not line.startswith('From ') : continue
+    words = line.split()
+    words = words[1].split('@')
+    addr = words[1]
+    school[addr] = school.get(addr, 0) + 1
+
+print school
+
+</pre>
+<p><em>Exercise 5 v2</em></p>
+<pre>
+fname = raw_input('Enter file name: ')
+if len(fname) &lt; 1: fname = 'mbox-short.txt'
+try:
+    fhand = open(fname)
+except:
+    print 'File', fname, 'cannot be opened.'
+    exit()
+hosts = dict()
+for line in fhand:
+    if not line.startswith('From ') : continue
+    atpos = line.find('@')
+    sppos = line.find(' ',atpos)
+    host = line[atpos+1:sppos]
+    hosts[host] = hosts.get(host, 0) + 1
+print hosts 
+
+</pre>
+<!-- 
+NewPP limit report
+Preprocessor node count: 19/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:4000-0!*!0!*!*!*!* and timestamp 20161126214953 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter09&amp;oldid=34299">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter09&amp;oldid=34299</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

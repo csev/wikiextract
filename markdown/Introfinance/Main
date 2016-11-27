@@ -1,0 +1,33 @@
+###Major concepts
+
+* [[Introfinance:TimeValueOfMoney | Time value of Money]]
+* [[Introfinance:FVandPV | Making Sense of PV and FV]]
+
+* Annuities and Perpetuities
+
+* Decision Criteria - NPV, Payback (deprecated), IRR
+
+###Resources
+
+* [[Introfinance:Free online learning materials | Free online learning materials]]
+
+###Spreadsheet usage
+
+* Remember that the NPV calculation range is for cash flows EXCEPT for time=0. Always add time 0 CF later.
+
+###Useful links
+
+* [Saving Capitalism from the Capitalists](http://www.amazon.com/Saving-Capitalism-Capitalists-Unleashing-Opportunity/dp/0691121281/ref=tmm_pap_title_0?ie=UTF8&qid=1346520156&sr=1-1)
+
+###Notes
+
+
+
+Week 2 - Lecture 2 - Multiple Payments (Annuity)
+================================================
+C - cash
+PMT = Payment
+
+Notes
+* Nothing happens at t=0 !!
+* i means: End of period i

@@ -1,0 +1,135 @@
+[[Pythonlearn:resources-week09 | Back to Chapter 9 Resources]]
+
+**Exercise 4 is a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.**
+
+*Exercise 1*
+
+- The code below is not pretty.
+- It is suggested here only as the part that does the work.
+- That is, guardian statements, exception catching and elegant coding features, such as prompting for filenames, not included.
+
+<pre>
+newdict = dict()
+count = 0
+fhand = open('words.txt')
+
+inp = fhand.read()
+inp = inp.split() # inp = list(inp) also creates a list containing all the words in words.txt as elements.
+
+for word in inp :
+    count = count + 1
+    newdict[word] = [count]
+
+# examples of using the **in** operator to check whether a string is in the dictionary as specified in Exercise 9.1:
+
+print 'is' in newdict
+print 'and' in newdict
+print 'political' in newdict
+
+</pre>
+
+*Exercise 1 - different approach*
+I used mbox-short.txt for this exercise.
+<pre>
+name = raw_input("Enter file:")
+handle = open(name,'r')
+text = handle.read()
+words = text.split()
+
+if 'From' in words:
+	print "True"
+</pre>
+
+- Note: to use the **in** operator to check for presence of specific *values* (rather than *keys*), reference the use of the method **values** as explained on page 86 of *Python For Informatics*.
+
+*Exercise 2* - Write a program that categorizes each mail message by which day of the week the commit was done. To do this look for lines which start with "From", then look for the third word and then keep a running count of each of the days of the week. At the end of the program print out the contents of your dictionary (order does not matter).
+
+<pre>
+fname = raw_input("Enter a file name: ")
+if len(fname) < 1 : fname = "mbox-short.txt"
+fhand = open(fname)
+
+days = dict()
+
+for line in fhand:
+    if line.startswith("From "):
+        words = line.split()
+        dayofweek = words[2]
+        days[dayofweek] = days.get(dayofweek,0) + 1
+
+print days
+</pre>
+
+*Exercise 3*
+
+- OK, 9.2 above sets a higher standard.
+- So, the code below contains an opening convenience and an exception catcher.
+
+<pre>
+file = raw_input('Enter file name: ')
+if len(file) < 1 : file = 'mbox-short.txt'
+
+try :
+    fhand = open(file)
+except :
+    print 'Cannot open file:' , file , '.' , '...please try, again.'
+    exit()
+
+email_adrs = dict()
+
+for line in fhand :
+    if not line.startswith('From ') : continue
+    words = line.split()
+    email_adrs[words[1]] = email_adrs.get(words[1], 0) + 1
+
+print email_adrs
+</pre>
+In exercise 3, we can also look at the lines start with "From:". In that case, when the line splits into a list, there are only two items in it.
+
+**Exercise 4 is a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.**
+
+*Exercise 5*
+
+<pre>
+file = raw_input('Enter file name: ')
+if len(file) < 1 : file = 'mbox-short.txt'
+
+try :
+    hand = open(file)
+except :
+    print 'Could not open',file
+    exit()
+
+school = dict()
+
+for line in hand :
+    if not line.startswith('From ') : continue
+    words = line.split()
+    words = words[1].split('@')
+    addr = words[1]
+    school[addr] = school.get(addr, 0) + 1
+
+print school
+
+</pre>
+
+*Exercise 5 v2*
+
+<pre>
+fname = raw_input('Enter file name: ')
+if len(fname) < 1: fname = 'mbox-short.txt'
+try:
+    fhand = open(fname)
+except:
+    print 'File', fname, 'cannot be opened.'
+    exit()
+hosts = dict()
+for line in fhand:
+    if not line.startswith('From ') : continue
+    atpos = line.find('@')
+    sppos = line.find(' ',atpos)
+    host = line[atpos+1:sppos]
+    hosts[host] = hosts.get(host, 0) + 1
+print hosts 
+
+</pre>

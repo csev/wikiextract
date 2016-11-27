@@ -1,0 +1,34 @@
+[[Pythonlearn:resources-week12 | Back to Chapter 12 Resources]]
+
+**Do not include the assigned problems for any chapter in this page of solutions**
+
+# Problem with executing socket1.py
+
+As asked in the Exercise of Chapter 12 I altered socket1.py which I downloaded here: http://www.pythonlearn.com/code/socket1.py
+my version looks the following:
+<pre>
+import socket
+mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+mysock.connect(('www.pythonlearn.com', 80))
+mysock.send('GET http://www.pythonlearn.com/code/intro-short.txt HTTP/1.0\n\n')
+count = 0
+while True:
+    print count
+    data = mysock.recv(512)
+    print data
+    if len(data) < 1:
+        print len(data)
+        count = count+1
+        continue
+    print data
+    count = count+1
+mysock.close()
+</pre>
+
+I added count and print count and a second print data for debbuging. My code looks like the code that was presented in the course videos...so I have no idea why it is'nt working in my case.
+
+When I execute the program I only get 0 as an output and aftrerwards nothing happens anymore (I waited more than half an hour). I don't get any errors or tracebacks which means that the program gets stuck somwhere in the process of receiving data. I also tried to use <pre>data = mysock.recv(12) </pre> to check if the data stream is too long...nothing helped.
+The code from the videos also don't work on my computer...
+Any hints?
+
+I'm working on a late 2009 mac book pro with OS X El Capitan.

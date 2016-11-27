@@ -1,0 +1,297 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week01</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Chapter_1_Exercises"><span class="tocnumber">1</span> <span class="toctext">Chapter 1 Exercises</span></a></li>
+<li class="toclevel-1"><a href="#Why_We_Program"><span class="tocnumber">2</span> <span class="toctext">Why We Program</span></a></li>
+<li class="toclevel-1"><a href="#Some_nice_quotes_from_our_professor_Charles_Severance:"><span class="tocnumber">3</span> <span class="toctext">Some nice quotes from our professor Charles Severance:</span></a></li>
+<li class="toclevel-1"><a href="#Windows.2FDOS_Commands"><span class="tocnumber">4</span> <span class="toctext">Windows/DOS Commands</span></a></li>
+<li class="toclevel-1"><a href="#Mac_.26_GNU.2FLinux_Commands"><span class="tocnumber">5</span> <span class="toctext">Mac &amp; GNU/Linux Commands</span></a></li>
+<li class="toclevel-1"><a href="#Python_commands"><span class="tocnumber">6</span> <span class="toctext">Python commands</span></a></li>
+<li class="toclevel-1"><a href="#Conditional_Steps.2C_repeated_steps.2C_loop"><span class="tocnumber">7</span> <span class="toctext">Conditional Steps, repeated steps, loop</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Assignment_Statement"><span class="tocnumber">7.1</span> <span class="toctext">Assignment Statement</span></a></li>
+<li class="toclevel-2"><a href="#Assignment_with_Expression"><span class="tocnumber">7.2</span> <span class="toctext">Assignment with Expression</span></a></li>
+<li class="toclevel-2"><a href="#Print_Statement"><span class="tocnumber">7.3</span> <span class="toctext">Print Statement</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Atif_:_Reserved_words_rearranged_in_Alphabetical_Order"><span class="tocnumber">8</span> <span class="toctext">Atif : Reserved words rearranged in Alphabetical Order</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Just_another_creative_way_to_remember_.3B.29"><span class="tocnumber">8.1</span> <span class="toctext">Just another creative way to remember ;)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Cody_W.27s_Note_for_you.21"><span class="tocnumber">9</span> <span class="toctext">Cody W's Note for you!</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">10</span> <span class="toctext">Lecture Notes</span></a></li>
+<li class="toclevel-1"><a href="#Download_Resources"><span class="tocnumber">11</span> <span class="toctext">Download Resources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Python_bundles_for_MS-Windows"><span class="tocnumber">11.1</span> <span class="toctext">Python bundles for MS-Windows</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Raspberry_Pi"><span class="tocnumber">12</span> <span class="toctext">Raspberry Pi</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">13</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Chapter_1_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter01" title="Pythonlearn:exercises-chapter01"> Chapter 1 Exercises</a></span></h1>
+<p>Exercise 1.1: C) Store information for the long term--even beyond a power cycle.</p>
+<p>Exercise 1.2: A sequence of Python statements that have been crafted to do something.</p>
+<p>Exercise 1.3: An interpreter reads the source code and interprets right away, translating one line at a time. A compiler needs the entire program file before running, translating from high-level language to machine level language and then putting in a separate file to execute later.</p>
+<p>Exercise 1.4: A) The Python interpreter</p>
+<p>Exercise 1.5: There is a syntactical error in the line that holds the reserve word, "primt" which should be written as "print".</p>
+<p>Exercise 1.6: B) Main Memory</p>
+<p>Exercise 1.7: B) 44 </p>
+<p>Exercise 1.8:
+      -Central Processing Unit: Like the human brain? or "The heart of (any computer)" (p.15)
+      -Main Memory:  Your short term-memory
+      -Secondary Memory: Your long-term memory
+      -Input Device: You ears when listening or putting food in your body
+      -Output Device: Your mouth when speaking</p>
+<p>Exercise 1.9: Check your "grammar" of the reserve words or legality of variables used in your program.</p>
+<p>This above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.  </p>
+<h1> <span class="mw-headline" id="Why_We_Program">Why We Program</span></h1>
+<p>Computers are very powerful and very simple at the same time. They can be given sets of instructions in human readable languages that can be translated into the computer's native binary language. Python is one of those languages. The language of Python gives the user a simple way to program. Python can be considered an easy language used to program complicated things. This famous language was created by <a class="extiw" href="http://en.wikipedia.org/wiki/Guido_van_Rossum" title="wikipedia:Guido van Rossum">Guido Van Rossum</a>.</p>
+<h1> <span class="mw-headline" id="Some_nice_quotes_from_our_professor_Charles_Severance:">Some nice quotes from our professor Charles Severance:</span></h1>
+<ul>
+<li>"This is not a regular class. This is a class where you're supposed to learn something."</li>
+<li>"Humans are great at eliminating bad solutions really fast"</li>
+<li>"Maybe I'm talking to computers, maybe you are all computers. I'm certainly not a computer."</li>
+<li>"Probably most of you said: "I don't care. This is such a hard problem, it's a stupid problem"</li>
+<li>"Computers need a strategy. We need to give them a strategy."</li>
+<li>"Instead of thinking of the program Python is some kind of evil, demonic monster that hates you, think of it as a dog."</li>
+<li>"Any questions? You can't do questions!"</li>
+</ul>
+<h1> <span class="mw-headline" id="Windows.2FDOS_Commands">Windows/DOS Commands</span></h1>
+<p>These are commands that may be used in the default command interpreter, <code>cmd.exe</code>, as well as Powershell.</p>
+<ul>
+<li>cd - display current directory.  Short for "change directory".</li>
+<li>cd .. - move up the directory tree one level.  Doing this from C:\Users\JohnSmith\Desktop will take you to C:\Users\JohnSmith, for example.</li>
+<li>cd %userprofile%\Desktop - takes you to the currently logged in users desktop on most versions of Windows</li>
+<li>cd C:\Users\JohnSmith\Desktop - takes you to the desktop on Win 7 and 8. Replace JohnSmith with your logon or profile name.</li>
+<li>cd C:\Documents and Settings\JohnSmith\Desktop - takes you to the desktop on Windows XP</li>
+<li>cd \ - brings you back to the root of the current drive</li>
+<li>X: - takes you to the last used location on drive X (typically, use C: or D:).  It defaults to the root directory if you have not previously cd'd to anywhere on that drive.</li>
+<li>dir - Display a list of files and folders, very fast.</li>
+<li>dir /p - Display´s long lists of files and folders per "pages". Slower.</li>
+<li>dir /? - Shows commands for folders and subfolders in the current folder/directory. </li>
+<li>cls - Clear the screen  </li>
+<li>Up arrow - display previous commands within that session. Enter to select the command or Escape to get back to the prompt</li>
+<li>Tab - Toggles through existing files and folders in current directory, will auto complete the typing of a file or folder name once the first letters are typed. </li>
+<li>dir &gt; myfile - creates a text file named myfile containing the directory listing.  To open it with Notepad, just type "Notepad myfile" at the prompt.</li>
+<li>exit - Closes the command window. It has the same effect that closing the window with the "X" button (at the top right corner).</li>
+<li>F3 - repeats previous command (i.e. if you typed "ping 10.10.10.10" and pressed Enter. It would show "ping 10.10.10.10" again without having to retype it.</li>
+</ul>
+<h1> <span class="mw-headline" id="Mac_.26_GNU.2FLinux_Commands">Mac &amp; GNU/Linux Commands</span></h1>
+<p>These are commands that may be used in a common command interpreter, <code>bash</code>, which is installed by default on most Mac or GNU/Linux systems, but may not apply 100% in other command shells, such as <code>fish</code>, or <code>zsh</code> for instance.</p>
+<ul>
+<li>pwd - short for "print working directory." Displays the directory you are currently in.</li>
+<li>cd - a quick change directory back to $HOME directory.  Short for "change directory".</li>
+<li>cd .. - move up the directory tree one level.  Doing this from /home/johnsmith/Desktop will take you to /home/johnsmith, for example.</li>
+<li>cd $HOME/Desktop - takes you to the currently logged in users desktop on most versions of Mac &amp; GNU/Linux</li>
+<li>cd ~/Desktop - takes you to the currently logged in users desktop on most versions of Mac &amp; GNU/Linux</li>
+<li>cd /home/johnsmith/Desktop - takes you to the desktop on Mac &amp; GNU/Linux. Replace johnsmith with your own user.</li>
+<li>cd / - brings you back to the root of the current drive</li>
+<li>ls - Display a list of files and folders, very fast.</li>
+<li>ls | more - Displays long lists of files and folders per "pages". Slower.</li>
+<li>ls --help - Shows info about listing files and folders. </li>
+<li>ls -l - Displays a detailed list of files and folders.</li>
+<li>clear - Clear the screen  </li>
+<li>Up arrow - display previous commands within that session. Enter to select the command or Ctrl-C to get back to the prompt (In some terminals the Up arrow is not correctly mapped, thus look for an alternative in your terminal documentation)</li>
+<li>Tab - Toggles through existing files and folders in current directory, will auto complete the typing of a file or folder name once the first letters are typed (in some terminal/shell sessions the tab is not working, please refer to the terminal/shell session documentation you are using)</li>
+<li>Ctrl+A - Go to the beginning of a line.</li>
+<li>Ctrl+E - Go to the end of a line.</li>
+<li>Ctrl+F - Character forward (walk in line by characters).</li>
+<li>Alt+F - Word forward (walk in line by words - if the shortcut is always used, you can try Alt+Shift+F or Alt+Win+F).</li>
+<li>Ctrl+B - Character backward (walk in line by characters).</li>
+<li>Alt+B - Word backward (walk in line by words - if the shortcut is always used, you can try Alt+Shift+F or Alt+Win+F)</li>
+<li>Ctrl+L - Clear screen. It clears all text above the actual line.</li>
+<li>Ctrl+D - Delete characters in current position.</li>
+<li>Ctrl+T - Transpose characters (change positions).</li>
+<li>Alt+T - Transpose words (change positions).</li>
+<li>Ctrl+K - Cut till the end of the line.</li>
+<li>Ctrl+U - Cut till the beginning of the line.</li>
+<li>Ctrl+W - Cut previous word.</li>
+<li>Alt+D - Cut next word.</li>
+<li>Ctrl+Y - Paste recently cut text.</li>
+<li>Ctrl+C - Delete whole line.</li>
+</ul>
+<h1> <span class="mw-headline" id="Python_commands">Python commands</span></h1>
+<ul>
+<li>quit()  or exit() -ends Python on Windows.</li>
+<li>ctrl + z  - suspends python process on Mac and GNU/Linux, resume with fg command</li>
+<li>quit()  or  ctrl + D -Tells "End Of File" to Python on Mac and GNU/Linux.</li>
+<li>quit()  or  ctrl + C -Kills Python process on Mac and GNU/Linux.</li>
+</ul>
+<h1> <span class="mw-headline" id="Conditional_Steps.2C_repeated_steps.2C_loop">Conditional Steps, repeated steps, loop</span></h1>
+<ul>
+<li>Conditional Steps - if ... elif .. else
+<pre>
+if (expression):
+   (command)
+elif (expression):
+   (command)
+else:
+   (command)
+</pre></li>
+<li>Conditional Steps (Multi elif) - if ... elif .. else
+<pre>
+if x &lt; 0:
+    x = 0
+    print 'negative changed to zero'
+elif x == 0:
+    print 'zero'
+elif x == 1:
+    print 'single'
+elif x == 2:
+    print 'double'
+else:
+    print 'more'
+</pre></li>
+<li>Repeated steps - while (Don't forget to modify the variable used in the conditional, otherwise this will run forever!)
+<pre>
+while i &lt; 6:
+    print "At the top i is %d" % i</pre></li>
+<li><p>Repeated steps - another example</p>
+<p>Assign a value to i which is greater than 2</p>
+<pre>
+while i &gt; 2:
+    print "Right now i is %d" % i
+    i=i-1</pre></li>
+<li><p>Loop - for
+<pre>
+for (y) in (x):
+    (command)
+</pre></p></li>
+</ul>
+<hr/>
+<p>Here is an excerpt of my notes from the first week of class.  Please build and tweak as you all see fit! ~ Kendra<br/></p>
+<p>3&gt;'s     ~ What's next? (If you write it out here, the page puts it in a blue box without the symbol. It executes it.) <strong>Response from Scott:</strong> Thank you for sharing your notes! By the way, here's a tip: If the wiki renders a section of what you typed differently from how you expected, it's probably because what you typed contains special meaning within the Markdown markup language (similar to the concept of reserved words for Python). One way to work around this is to use the backslash escape character ("\"). For example, if you really want to display three right arrows in a row, you would type this: '\&gt;\&gt;\&gt;' which renders like this: '&gt;&gt;&gt;'. Here is a link to a page that contains more examples of Markdown: <a class="external free" href="http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html" rel="nofollow">http://www.unexpected-vortices.com/sw/rippledoc/quick-markdown-example.html</a>.</p>
+<h5> <span class="mw-headline" id="Assignment_Statement">Assignment Statement</span></h5>
+<p>x = 2   </p>
+<h5> <span class="mw-headline" id="Assignment_with_Expression">Assignment with Expression</span></h5>
+<p>x = x+2</p>
+<h5> <span class="mw-headline" id="Print_Statement">Print Statement</span></h5>
+<p>print x  </p>
+<hr/>
+<h1> <span class="mw-headline" id="Atif_:_Reserved_words_rearranged_in_Alphabetical_Order">Atif : Reserved words rearranged in Alphabetical Order</span></h1>
+<code><pre>    I just rearranged reserved words in alphabetical order.
+    Feel free to edit it, if there are any mistakes.
+    I added a few more sections to the Notes.
+</pre></code>
+<hr/>
+<p>There are reserved words that are a part of python language. Use these reserved words to instruct Python.</p>
+<code><pre>    and
+    as
+    assert
+    break
+    class
+    continue
+    def
+    del
+    elif
+    else
+    except
+    exec
+    finally
+    for
+    from
+    global
+    if
+    import
+    in
+    is
+    lambda
+    not
+    or
+    pass
+    print
+    raise
+    return
+    try
+    while
+    with
+    yield
+</pre></code>
+<hr/>
+<p>If you use the reserved words without meaning to, they will not throw off your intentions, but most likely they will cause error reports.  You can create your own commands using variables.</p>
+<hr/>
+<p>I came up with a way to remember the 31 reserved words easily (for me). Everyone has their own types of mnemonic devices that work for them. If this is not helpful to you, please feel free to ignore it. I am sharing it in case it could be useful to anyone. I am new to programming. My groupings might not be logical to anyone else, but it worked for me. </p>
+<p>I chunk the reserved words and just remember how many there are in each section.</p>
+<p>5 two-letter words
+6 three-letter words + 4 words.
+5 other four-letter words
+11 longer words strung in an ungrammatical but memorizable pseudo-sentence.</p>
+<p>total: 31 words.</p>
+<p>5 two-letter words</p>
+<ol>
+<li>as</li>
+<li>is</li>
+<li>in</li>
+<li>if</li>
+<li>or</li>
+</ol>
+<p>6 three-letter words</p>
+<ol>
+<li>and</li>
+<li>def</li>
+<li>del</li>
+<li>for ("for" triggers its opposite, "from", which somehow triggered the obvious computer operations): 1. from 2. break 3. return 4. print</li>
+<li>not</li>
+<li>try</li>
+</ol>
+<p>5 other four-letter words (not including from) (put in an order that almost sounds like a sentence to me. What is exec elif? How do you pass with it? I don't know, but it's easy to remember.)</p>
+<ol>
+<li>else</li>
+<li>pass</li>
+<li>with</li>
+<li>exec</li>
+<li>elif</li>
+</ol>
+<p>11 longer words in an ungrammatical pseudo-sentence. I know it doesn't make sense, but it almost sounds like it could, so it made it easier for me to remember than alphabetical order.</p>
+<p>finally assert global class raise, except yield while continue lambda import.</p>
+<ol>
+<li>finally</li>
+<li>assert</li>
+<li>global</li>
+<li>class</li>
+<li>raise</li>
+<li>except</li>
+<li>yield</li>
+<li>while</li>
+<li>continue</li>
+<li>lambda</li>
+<li>import</li>
+</ol>
+<hr/>
+<h2> <span class="mw-headline" id="Just_another_creative_way_to_remember_.3B.29">Just another creative way to remember ;)</span></h2>
+<p>Read this as a sentence a few times... If you are from finance background, the first sentence will be easy to remember although its final meaning is obscure..</p>
+<p>" with global yield finally in break, assert and continue for import raise or try def return. while del exec (think of Dell Executive... lol...) is not from lambda class except elif, print pass as if... else... "</p>
+<p>All 31 reserved words are covered without repetition... there seems to be some meaning to the statements but... it is not so clear... :)</p>
+<hr/>
+<p>Indented ~ Loops and Conditional statements  </p>
+<h1> <span class="mw-headline" id="Cody_W.27s_Note_for_you.21">Cody W's Note for you!</span></h1>
+<p>I'd like to add that the <em>METHOD</em> our teacher is using for us to understand the material is amazing. Pay attention to that!<br/>
+The mindset he is trying to teach makes absolute sense and I'm glad I am a part of the class.  </p>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<ul>
+<li>Computers are programmed.  </li>
+<li>Programmers are people who write programs.  </li>
+<li>A program is a set of instructions that tells a computer what to do.  </li>
+<li>To learn to program, one must move from a user (on the "outside") to the "inside" of a computer.  </li>
+<li>One reason to learn to program is build stuff for people to use.  </li>
+<li>Professional programmers build things for others to use. </li>
+<li>Script, software, code, and program are words that can be used interchangeably; they all refer to a set or sequence of stored instructions for a computer.  </li>
+<li>Instructions need to be explicit because computers do exactly what we say to do and not what we mean to do.  </li>
+</ul>
+<p><strong>Hardware Architecture</strong><br/>
+<ul><li> CPU (central processing unit) – runs the program; not the brains exactly; very very fast<br/>
+</li><li> RAM (random access memory) – main memory; fast, small, temporary storage; lost on shutdown or reboot<br/>
+</li><li> ROM (read only memory) – secondary memory; slower, large, permanent memory; lasts until deleted; examples are disk drives and memory sticks<br/>
+</li><li> input devices – used to give data to the CPU; keyboard, mouse, touch screen<br/>
+</li><li> output devices – screen, speakers, printer, DVD burner<br/>
+</li><li> network – retrieve info from network, but not always available; almost like a secondary memory, slower and less reliable</li></ul></p>
+</div></div></div>

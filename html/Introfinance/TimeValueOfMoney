@@ -1,0 +1,67 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Introfinance:TimeValueOfMoney</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><h2> <span class="mw-headline" id="Discrete_Compounding_.28One_Period.29">Discrete Compounding (One Period)</span></h2>
+<p>This is a really simple idea. Say you've got an amount of money $$Q_0 =
+100$$ that you want to put into a bank account that pays 5% ($$r = 0.05$$)
+per year.</p>
+<code><pre>q0=100;r=0.05;
+</pre></code>
+<p>Then, after one year your account balance is equal to the original
+deposit plus 5% on that deposit:</p>
+<code><pre>q1 = q0 + q0*r
+</pre></code>
+<p>To calculate the balance after two years, we take the balance $$Q_1$$ and
+apply the same procedure:</p>
+<code><pre>q2 = q1 + q1*r
+</pre></code>
+<p>Using symbolic notation, we can try to evaluate $$Q_1$$ and $$Q_2$$ in terms
+of the initial deposit $$Q_0$$:</p>
+<code><pre>syms q0 q1 q2 r
+q1 = q0 + q0*r;
+factor(q1)
+q2 = q1 + q1*r;
+factor(q2)
+
+ans =
+
+q0*(r + 1)
+
+
+ans =
+
+q0*(r + 1)^2
+</pre></code>
+<p>This lets us deduce that after $$t$$ years,</p>
+<p>$$Q_t = Q_0(1+r)^t$$</p>
+<p>So for a period of 10 years, we would get the following graph of $$Q$$
+against $$t$$:</p>
+<code><pre>t = linspace(0,10);
+q0 = 100; r = 0.05;
+q = q0*(1+r) .^ t;
+figure
+xlabel('Time in years');
+ylabel('Account balance');
+plot(t,q);
+</pre></code>
+<p><center>
+<p><a class="image" href="/wiki/index.php/File:Tvom1.png"><img alt="Tvom1.png" height="420" src="/wiki/images/9/9b/Tvom1.png" width="561"/></a>
+</p>
+</center></p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:1120-0!*!*!*!*!2!* and timestamp 20161127022926 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Introfinance:TimeValueOfMoney&amp;oldid=6843">https://share.coursera.org/wiki/index.php?title=Introfinance:TimeValueOfMoney&amp;oldid=6843</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

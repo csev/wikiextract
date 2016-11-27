@@ -1,0 +1,49 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter12</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week12" title="Pythonlearn:resources-week12"> Back to Chapter 12 Resources</a></p>
+<p><strong>Do not include the assigned problems for any chapter in this page of solutions</strong></p>
+<h1> <span class="mw-headline" id="Problem_with_executing_socket1.py">Problem with executing socket1.py</span></h1>
+<p>As asked in the Exercise of Chapter 12 I altered socket1.py which I downloaded here: <a class="external free" href="http://www.pythonlearn.com/code/socket1.py" rel="nofollow">http://www.pythonlearn.com/code/socket1.py</a>
+my version looks the following:
+<pre>
+import socket
+mysock = socket.socket(socket.AF&lt;em&gt;INET, socket.SOCK&lt;/em&gt;STREAM)
+mysock.connect(('www.pythonlearn.com', 80))
+mysock.send('GET http://www.pythonlearn.com/code/intro-short.txt HTTP/1.0\n\n')
+count = 0
+while True:
+    print count
+    data = mysock.recv(512)
+    print data
+    if len(data) &lt; 1:
+        print len(data)
+        count = count+1
+        continue
+    print data
+    count = count+1
+mysock.close()
+</pre></p>
+<p>I added count and print count and a second print data for debbuging. My code looks like the code that was presented in the course videos...so I have no idea why it is'nt working in my case.</p>
+<p>When I execute the program I only get 0 as an output and aftrerwards nothing happens anymore (I waited more than half an hour). I don't get any errors or tracebacks which means that the program gets stuck somwhere in the process of receiving data. I also tried to use <pre>data = mysock.recv(12) </pre> to check if the data stream is too long...nothing helped.
+<p>The code from the videos also don't work on my computer...
+</p>
+Any hints?</p>
+<p>I'm working on a late 2009 mac book pro with OS X El Capitan.</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:5403-0!*!0!*!*!*!* and timestamp 20161127022019 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter12&amp;oldid=33088">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter12&amp;oldid=33088</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

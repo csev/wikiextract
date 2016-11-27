@@ -1,0 +1,42 @@
+[[Pythonlearn:resources-week07 | Back to Chapter 7 Resources]]
+
+**Exercises 1 & 2 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.**
+
+Exercise 7.1 Write a program to read through a file and print the contents of the
+file (line by line) all in upper case. Executing the program will look as follows:
+python shout.py
+
+
+<h3>Exercise 7.3:</h3>
+Sometimes when programmers get bored or want to have a bit of fun,<br>
+they add a harmless Easter Egg to their program (en.wikipedia.org/wiki/
+Easter_egg_(media)).<br> Modify the program that prompts the user for the file
+name so that it prints a funny message when the user types in the exact file name
+’na na boo boo’.<br> The program should behave normally for all other files which
+exist and don’t exist.<br> Here is a sample execution of the program:
+python egg.py<br>
+Enter the file name: mbox.txt<br>
+There were 1797 subject lines in mbox.txt<br>
+python egg.py<br>
+Enter the file name: missing.tyxt<br>
+File cannot be opened: missing.tyxt<br>
+python egg.py<br>
+Enter the file name: na na boo boo<br>
+NA NA BOO BOO TO YOU - You have been punk'd!<br>
+We are not encouraging you to put Easter Eggs in your programs - this is just an
+exercise.<br>
+<h4>Answer</h4>
+	count = 0
+	fname = raw_input("Enter the file name:")
+	if fname == "na na boo boo":
+		print "NA NA BOO BOO TO YOU - You have been punk'd!"
+		quit()
+	try:
+		fcontent = open(fname)
+	except:
+		print "File cannot be opened:", fname
+		quit()
+	for line in fcontent:
+		count = count + 1
+	print "There were %d subject lines in %s"%(count, fname)
+that is all!

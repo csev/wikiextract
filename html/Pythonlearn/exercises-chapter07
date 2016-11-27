@@ -1,0 +1,59 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter07</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week07" title="Pythonlearn:resources-week07"> Back to Chapter 7 Resources</a></p>
+<p><strong>Exercises 1 &amp; 2 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.</strong></p>
+<p>Exercise 7.1 Write a program to read through a file and print the contents of the
+file (line by line) all in upper case. Executing the program will look as follows:
+python shout.py</p>
+<h3> <span class="mw-headline" id="Exercise_7.3:">Exercise 7.3:</span></h3>
+<p>Sometimes when programmers get bored or want to have a bit of fun,<br/>
+they add a harmless Easter Egg to their program (en.wikipedia.org/wiki/
+Easter<em>egg</em>(media)).<br/> Modify the program that prompts the user for the file
+name so that it prints a funny message when the user types in the exact file name
+’na na boo boo’.<br/> The program should behave normally for all other files which
+exist and don’t exist.<br/> Here is a sample execution of the program:
+python egg.py<br/>
+Enter the file name: mbox.txt<br/>
+There were 1797 subject lines in mbox.txt<br/>
+python egg.py<br/>
+Enter the file name: missing.tyxt<br/>
+File cannot be opened: missing.tyxt<br/>
+python egg.py<br/>
+Enter the file name: na na boo boo<br/>
+NA NA BOO BOO TO YOU - You have been punk'd!<br/>
+We are not encouraging you to put Easter Eggs in your programs - this is just an
+exercise.<br/>
+<h4> <span class="mw-headline" id="Answer">Answer</span></h4>
+<pre>   count = 0
+   fname = raw_input("Enter the file name:")
+   if fname == "na na boo boo":
+       print "NA NA BOO BOO TO YOU - You have been punk'd!"
+       quit()
+   try:
+       fcontent = open(fname)
+   except:
+       print "File cannot be opened:", fname
+       quit()
+   for line in fcontent:
+       count = count + 1
+   print "There were %d subject lines in %s"%(count, fname)
+</pre>
+that is all!</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3998-0!*!0!!*!*!* and timestamp 20161127022849 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter07&amp;oldid=32970">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter07&amp;oldid=32970</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

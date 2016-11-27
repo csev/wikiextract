@@ -1,0 +1,93 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-general</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Installation.2C_Books_.26_Guides"><span class="tocnumber">1</span> <span class="toctext">Installation, Books &amp; Guides</span></a></li>
+<li class="toclevel-1"><a href="#eBooks"><span class="tocnumber">2</span> <span class="toctext">eBooks</span></a></li>
+<li class="toclevel-1"><a href="#Tutorials_and_Courses"><span class="tocnumber">3</span> <span class="toctext">Tutorials and Courses</span></a></li>
+<li class="toclevel-1"><a href="#Practice_Exercises"><span class="tocnumber">4</span> <span class="toctext">Practice Exercises</span></a></li>
+<li class="toclevel-1"><a href="#Online_Coding"><span class="tocnumber">5</span> <span class="toctext">Online Coding</span></a></li>
+<li class="toclevel-1"><a href="#Reference"><span class="tocnumber">6</span> <span class="toctext">Reference</span></a></li>
+<li class="toclevel-1"><a href="#Other_Course_Wikis"><span class="tocnumber">7</span> <span class="toctext">Other Course Wikis</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">8</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Installation.2C_Books_.26_Guides">Installation, Books &amp; Guides</span></h1>
+<ul>
+<li><a class="external text" href="https://share.coursera.org/wiki/index.php/Pythonlearn:resources-install" rel="nofollow">Installation, Editors &amp; IDE, Useful Tips, Books &amp; Guides</a></li>
+</ul>
+<h1> <span class="mw-headline" id="eBooks">eBooks</span></h1>
+<ul>
+<li><a class="external text" href="http://swaroopch.com/2012/11/02/byte-of-python-pandoc/" rel="nofollow">A Byte of Python</a> EPUB and PDF  </li>
+<li><a class="external text" href="https://en.wikibooks.org/wiki/Non-Programmer%27s_Tutorial_for_Python_2.6" rel="nofollow">Non-Programmer's Tutorial for Python 2.6</a> Printable version and PDF  </li>
+<li><a class="external text" href="http://en.wikibooks.org/wiki/A_Beginner%27s_Python_Tutorial" rel="nofollow">A Beginner's Python Tutorial</a> </li>
+<li><a class="external text" href="http://learnpythonthehardway.org/" rel="nofollow">Learn Python The Hard Way</a> </li>
+<li><a class="external text" href="http://openbookproject.net/thinkcs/python/english2e/index.html" rel="nofollow">How to Think Like a Computer Scientist</a> </li>
+<li><a class="external text" href="http://www.greenteapress.com/thinkpython/thinkpython.html" rel="nofollow">Think Python: How to Think Like a Computer Scientist</a> PDF and HTML  </li>
+<li><a class="external text" href="http://cli.learncodethehardway.org/book/" rel="nofollow">The Command Line Crash Course</a></li>
+<li><a class="external text" href="http://fullcirclemagazine.org/python-special-edition-1/" rel="nofollow">Python Special Edition 1</a> Full Circle, The independent magazine for the Ubuntu Linux community.</li>
+</ul>
+<h1> <span class="mw-headline" id="Tutorials_and_Courses">Tutorials and Courses</span></h1>
+<ul>
+<li><a class="external text" href="http://www.codecademy.com/tracks/python/" rel="nofollow">Code Academy Python Track</a> </li>
+<li><a class="external text" href="http://cscircles.cemc.uwaterloo.ca/" rel="nofollow">Computer Science Circles</a> This website teaches python programming also, however it teaches Python 3 which is not what this course teaches.  </li>
+<li>Site Closed as of 31 July 2014 per <a class="external free" href="https://en.wikipedia.org/wiki/LearnStreet" rel="nofollow">https://en.wikipedia.org/wiki/LearnStreet</a> <a class="external text" href="https://www.learnstreet.com/lessons/python/" rel="nofollow">Learn Street Python Lessons</a> 9 lessons, 76 exercises and 24 videos  </li>
+<li><a class="external text" href="http://www.tutorialspoint.com/python/index.htm" rel="nofollow">Tutorials Point Python Programming</a> Basic and advanced tutorials. Can download the tutorial in PDF format.  </li>
+<li><a class="external text" href="https://docs.python.org/2/tutorial/" rel="nofollow">Python Tutorial - Official website</a> Everything you can find about Python 2.7 is here.</li>
+<li><a class="external text" href="http://www.learnpython.org/" rel="nofollow">LearnPython</a></li>
+<li><a class="external text" href="http://learnpythonthehardway.org/" rel="nofollow">Learn Python The Hard Way</a> Everything is free and highly-educational, but if you want, you can pay for the courses.</li>
+<li><a class="external text" href="https://www.codementor.io/python/tutorial" rel="nofollow">CodeMentor for Python</a> Here you have to pay for every 10 minutes that you spend learning with a mentor.</li>
+</ul>
+<h1> <span class="mw-headline" id="Practice_Exercises">Practice Exercises</span></h1>
+<ul>
+<li><a class="external text" href="http://www.pythonchallenge.com/" rel="nofollow">Python Challenge</a></li>
+<li><a class="external text" href="http://openbookproject.net/pybiblio/practice" rel="nofollow">Python Bibliotheca</a> </li>
+<li><a class="external text" href="https://developers.google.com/edu/python/exercises/basic" rel="nofollow">Google for Education Basic Python Exercises</a></li>
+<li><a class="external text" href="https://www.checkio.org" rel="nofollow">CheckIO</a> Create and take Python "missions", and get feedback from community. Improve your skills as you advance through different levels.</li>
+</ul>
+<h1> <span class="mw-headline" id="Online_Coding">Online Coding</span></h1>
+<ul>
+<li><a class="external text" href="https://www.pythonanywhere.com/" rel="nofollow">Python Anywhere</a> Host, run and code Python in the cloud  </li>
+<li><a class="external text" href="http://www.codeskulptor.org/" rel="nofollow">CodeSkulptor</a> A browser-based Python interpreter, as featured in the online course “An Introduction to Interactive Programming in Python”. It implements a subset of Python 2, plus the addition of three graphical libraries, SimpleGui, SimpleMap, and SimplePlot.  </li>
+<li><a class="external text" href="http://www.pythontutor.com/visualize.html" rel="nofollow">Online Python Tutor – Visualize Program Execution</a> </li>
+<li><a class="external text" href="http://labs.codecademy.com/" rel="nofollow">Code Academy Labs</a> </li>
+<li><a class="external text" href="http://www.compileonline.com/execute_python_online.php" rel="nofollow">Compile Online</a></li>
+<li><a class="external text" href="http://www.codenvy.com" rel="nofollow">Codenvy</a> Online IDE and VM for Python and many other languages. Ideal for Chromebook users. Free account available.</li>
+<li><a class="external text" href="http://koding.com" rel="nofollow">Koding</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Reference">Reference</span></h1>
+<ul>
+<li><a class="external text" href="http://www.tutorialspoint.com/python/python_quick_guide.htm" rel="nofollow">Python – Quick Guide</a> </li>
+<li><a class="external text" href="http://www.tutorialspoint.com/computer_glossary.htm" rel="nofollow">Online Computer Glossary</a> </li>
+<li><a class="external text" href="http://foldoc.org/" rel="nofollow">Free On-line Dictionary of Computing (FOLDOC)</a> </li>
+<li><a class="external text" href="http://www.webopedia.com/" rel="nofollow">Webopedia online computer and Internet terms dictionary </a> </li>
+<li><a class="external text" href="http://inventwithpython.com/blog/2012/07/09/16-common-python-runtime-errors/" rel="nofollow">16 Common Python Runtime Errors Beginners Find</a> </li>
+<li><a class="external text" href="http://inventwithpython.com/appendixd.html" rel="nofollow">Common Error Messages in Python</a> </li>
+<li><a class="external text" href="http://www.cs.bu.edu/courses/cs108/guides/debug.html" rel="nofollow">Python Debugging (fixing problems): A guide for beginner programmers.</a> </li>
+<li><a class="external text" href="http://pythontutor.com/" rel="nofollow">Visualizing code execution</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Other_Course_Wikis">Other Course Wikis</span></h1>
+<ul>
+<li><a href="/wiki/index.php/PGM:LTP" title="PGM:LTP"> Learn to Program</a> </li>
+<li><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main"> An Introduction to Interactive Programming in Python</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3954-0!*!0!!en!*!* and timestamp 20161127022912 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-general&amp;oldid=33581">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-general&amp;oldid=33581</a>"</div>
+<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Python" title="Category:Python">Python</a></li><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li></ul></div></div> <!-- end content -->
+</div>
+</div>

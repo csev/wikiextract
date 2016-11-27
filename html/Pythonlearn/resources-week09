@@ -1,0 +1,116 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week09</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Dictionaries"><span class="tocnumber">1.1</span> <span class="toctext">Dictionaries</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Using_Dictionary_to_tally.2Fcount_items"><span class="tocnumber">1.1.1</span> <span class="toctext">Using Dictionary to tally/count items</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Few_more_methods_to_iterate_a_dictionary_using_example_9C.27s_dictionary"><span class="tocnumber">1.2</span> <span class="toctext">Few more methods to iterate a dictionary using example 9C's dictionary</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Exercises_previously_posted_here_have_been_moved_and_can_be_accessed_through_the_Chapter_9_Exercises_link_below."><span class="tocnumber">1.2.1</span> <span class="toctext">Exercises previously posted here have been moved and can be accessed through the Chapter 9 Exercises link below.</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Chapter_9_Exercises"><span class="tocnumber">2</span> <span class="toctext">Chapter 9 Exercises</span></a></li>
+<li class="toclevel-1"><a href="#More_Resource_Topics"><span class="tocnumber">3</span> <span class="toctext">More Resource Topics</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<p><strong>Examples below come from Chapter 9 Video</strong></p>
+<p>List - a linear collection of ordered values.</p>
+<p>Dictionary - an assortment of unordered labeled values, similar to a database</p>
+<h2> <span class="mw-headline" id="Dictionaries">Dictionaries</span></h2>
+<p>Different names for Dictionaries:<br/>
+<ul><li> Associative Arrays - Perl/Php<br/>
+</li><li> Properties of Map or HashMap - Java<br/>
+</li><li> Property Bag - C#/.Net<br/>
+</li></ul>
+An example of working with Dictionaries (9A):    </p>
+<code><pre>purse = dict()  
+
+purse['money'] = 12  
+purse['candy'] = 3  
+purse['tissues'] = 75  
+print purse  
+</pre></code>
+<p>Output:<br/>
+{'money':12,'tissues':75,'candy':3}
+The output shows both the key('money') and the value ('12'). The value can be modified, like with lists.<br/>
+For example (9B):  </p>
+<code><pre>purse['candy'] = purse['candy'] + 2  
+</pre></code>
+<p>Will change the value of 'candy' to 5.  </p>
+<p>Dictionaries are like Lists except that they use keys('money') instead of numbers to look up values. (Lists are ordered, Dictionaries are not and so rely on keys for lookup)  </p>
+<p>Dictionary literals (constants) use curly braces {} and have a list of key : value pairs. As usual for dictionaries, the list is unordered.  </p>
+<h3> <span class="mw-headline" id="Using_Dictionary_to_tally.2Fcount_items">Using Dictionary to tally/count items</span></h3>
+<p>The "in/not in" operators can be used to see if a key exists in the dictionary - without resulting in a traceback error.</p>
+<p>Example (9C):  </p>
+<code><pre>counts = dict()  
+names = ['csev','owen','csev','zqian','cwen']  
+for name in names:  
+  if name not in counts:  
+    counts[name]= 1  
+  else:  
+    counts[name] = counts[name] + 1  
+print counts  
+</pre></code>
+<p>The above operation is so common, that the method 'get' does it for us.  </p>
+<code><pre>print counts.get(name,0)  
+</pre></code>
+<p>Performs the same operation as:  </p>
+<code><pre>if name in counts:  
+  return counts[name]  
+else:  
+  retrun 0  
+</pre></code>
+<p>So, example 9C can be simplified down to 9D, below:</p>
+<p>Example (9D):</p>
+<code><pre>counts = dict()  
+names = ['csev','owen','csev','zqian','cwen']  
+for name in names:  
+  counts[name] = counts.get(name,0) + 1  
+print counts  
+</pre></code>
+<h2> <span class="mw-headline" id="Few_more_methods_to_iterate_a_dictionary_using_example_9C.27s_dictionary">Few more methods to iterate a dictionary using example 9C's dictionary</span></h2>
+<p>Iterate over keys: counts.keys():</p>
+<code><pre>for name in counts.keys():
+  print name
+</pre></code>
+<p>Iterate over the values in a dictionary: counts.values():</p>
+<code><pre>for occurrence in counts.values():
+  print occurrence
+</pre></code>
+<p>Iterate over the elements ((key, value) pairs) in a dictionary : counts.items():</p>
+<code><pre>for name,occurrence in counts.items():
+  print name, occurrence
+</pre></code>
+<h3> <span class="mw-headline" id="Exercises_previously_posted_here_have_been_moved_and_can_be_accessed_through_the_Chapter_9_Exercises_link_below.">Exercises previously posted here have been moved and can be accessed through the Chapter 9 Exercises link below.</span></h3>
+<h1> <span class="mw-headline" id="Chapter_9_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter09" title="Pythonlearn:exercises-chapter09"> Chapter 9 Exercises</a></span></h1>
+<p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
+<h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
+<p>Add resources for this chapter to this page..</p>
+<p><a class="external text" href="https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/" rel="nofollow">Python Dictionaries - https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/</a></p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 89/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3964-0!*!0!!en!*!* and timestamp 20161126063729 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week09&amp;oldid=34459">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week09&amp;oldid=34459</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

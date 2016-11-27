@@ -1,0 +1,99 @@
+
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+# Lecture Notes
+**Examples below come from Chapter 9 Video**
+
+List - a linear collection of ordered values.
+
+Dictionary - an assortment of unordered labeled values, similar to a database
+
+## Dictionaries  
+Different names for Dictionaries:  
+* Associative Arrays - Perl/Php  
+* Properties of Map or HashMap - Java  
+* Property Bag - C#/.Net  
+An example of working with Dictionaries (9A):    
+
+    purse = dict()  
+    
+    purse['money'] = 12  
+    purse['candy'] = 3  
+    purse['tissues'] = 75  
+    print purse  
+
+Output:  
+{'money':12,'tissues':75,'candy':3}
+The output shows both the key('money') and the value ('12'). The value can be modified, like with lists.  
+For example (9B):  
+
+    purse['candy'] = purse['candy'] + 2  
+
+Will change the value of 'candy' to 5.  
+  
+Dictionaries are like Lists except that they use keys('money') instead of numbers to look up values. (Lists are ordered, Dictionaries are not and so rely on keys for lookup)  
+  
+Dictionary literals (constants) use curly braces {} and have a list of key : value pairs. As usual for dictionaries, the list is unordered.  
+
+###Using Dictionary to tally/count items  
+The "in/not in" operators can be used to see if a key exists in the dictionary - without resulting in a traceback error.
+
+Example (9C):  
+
+    counts = dict()  
+    names = ['csev','owen','csev','zqian','cwen']  
+    for name in names:  
+      if name not in counts:  
+        counts[name]= 1  
+      else:  
+        counts[name] = counts[name] + 1  
+    print counts  
+  
+The above operation is so common, that the method 'get' does it for us.  
+  
+    print counts.get(name,0)  
+  
+Performs the same operation as:  
+  
+    if name in counts:  
+      return counts[name]  
+    else:  
+      retrun 0  
+  
+So, example 9C can be simplified down to 9D, below:
+  
+Example (9D):
+
+    counts = dict()  
+    names = ['csev','owen','csev','zqian','cwen']  
+    for name in names:  
+      counts[name] = counts.get(name,0) + 1  
+    print counts  
+
+##Few more methods to iterate a dictionary using example 9C's dictionary
+
+Iterate over keys: counts.keys():
+
+    for name in counts.keys():
+      print name
+
+Iterate over the values in a dictionary: counts.values():
+
+    for occurrence in counts.values():
+      print occurrence
+
+Iterate over the elements ((key, value) pairs) in a dictionary : counts.items():
+
+    for name,occurrence in counts.items():
+      print name, occurrence
+
+###Exercises previously posted here have been moved and can be accessed through the Chapter 9 Exercises link below. 
+
+# [[Pythonlearn:exercises-chapter09 | Chapter 9 Exercises]]  
+The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.
+
+# More Resource Topics
+Add resources for this chapter to this page..
+
+[Python Dictionaries - https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/](https://www.jeffknupp.com/blog/2015/08/30/python-dictionaries/)

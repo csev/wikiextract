@@ -1,0 +1,191 @@
+
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+#Lecture Notes: Strings
+A string is a series of alphanumeric characters in a character data type.  A string is defined by grouping series of character with single or double quotes.  A plus sign (+) is used to concatenate multiple character strings.  A numeric string is still alphanumeric characters until it has been converted to a numeric data type. An arithmetic operation against an numeric string will still cause a trace back error.  
+
+##Slicing of Strings
+A slice is a character or a series of character within a string.  A string slice is defined by the index operator, square brackets '[ ]'. Indexes (or subs) are integers or numeric expression staring with 0. 
+
+MySlice = slice_of_data[beginning position:'up to' position].
+
+beginning position
+  first position of the slice.  The index starts with zero
+'up to' position
+  last position of the slice plus one or up to but not including. 
+
+#Builtin String Functions
+##len
+For our purpose returns the length the string.
+
+
+  .find():
+
+        Use the .find() function when you want to know the position of a character or a sub string  within a string. 
+             To find the position of the "3" in the string "0123456": 
+             data="0123456"
+             pos=data.find('3')
+             print pos
+             >3
+                   
+             To find the position of "l" in "realmadrid":
+             word="realmadrid"
+             pos=word.find('l')
+             print pos
+             >3
+             
+             To find the position of 'cd' in the string 'abcdef'
+             word = 'abcdef'
+             pos = word.find('cd')
+             print pos
+             >2
+
+           (Note: an error you may get is "Expected character buffer," which can happen if you omit the quotation marks from your string.)
+
+  .upper():
+
+        Use the .upper() function to capitalize each character in the given string.
+            data='Hello Python'
+            capdata=data.upper()
+            print capdata
+            >HELLO PYTHON
+
+  .replace()
+ 
+        Use the .replace()to search and replace a character or letter in a given string.
+            data='Hello Python'
+            rpld=data.replace("Python","Leo")
+            print rpld
+            >Hello Leo
+
+
+  .lower()
+
+            Use the .lower() function to convert the sting to the lower case.
+            data='Hello Python'
+            capdata=data.lower()
+            print capdata
+            >hello python
+
+
+  .startswith()
+
+            Use the .startswith() function to check if the string begin with that character or not.
+            data='Hello Python'
+            print data.startswith('H')
+            >True
+
+  .rstrip()
+
+            Use the .rstrip() function <without any parameters> to remove any additional white spaces
+            , ' ', from the right side of the calling string.
+            data1 = 'Python is cool    '
+            data2 = 'Yay'
+            print data1.rstrip() + data2
+            >Python is coolYay      
+
+  .lstrip()
+
+           Use the .lstrip() function <without any parameters> to remove any additional white spaces
+            , ' ', from the left side of the calling string.
+           greet = ' Hello Bob '
+           print greet.lstrip()
+           >'Hello Bob '
+
+  .strip()
+
+           removes both beginning and ending whitespaces of the calling string. In the above example, where greet = ' Hello Bob ':
+           print greet.strip()
+           >'Hello Bob'
+           
+           .strip() also removes the new line character at the end of the string. This is something more about .strip() method. 
+           Note that I have assigned to variable var the following value:  var = 'test new line\n'
+                    
+           Case1: In this case we just print the value of var and note that the \n & print output a blank line
+
+           >>> print var
+           test new line
+
+
+           Case2: But, in this case if we apply .strip() to var and print the result, the blank line "disappear"
+
+           >>> print var.strip()
+           test new line
+           >>>
+
+           Case3: Another example to clarify. This time we apply strip() directly and obtain only the phrase:
+
+           >>> "this is another new line\n".strip()
+           'this is another new line'
+
+          
+
+# dir()
+
+    
+`dir` isn't a method in the `str` type in python; `dir` is rather a free function that can be used with any variable/type to know what methods are supported on this variable/type.
+
+  [[Pythonlearn:Resources | Back to Resources]]
+
+# Some basic notes 
+  To find all functions which can be used for a string, you can do following 
+  fruit = 'banana'
+  dir(fruit) <--- this will give you all functions which can be applied on string. Or you can just do dir(str).  
+
+  Immutable: When you apply function on a string (say fruit.upper()) then a new copy of original string with modifications as per function is provided. Original string remains intact.
+
+# Additional Notes: a better (?) way to join strings with variables
+
+  Python offers a cleaner way to join variables inside strings. Follow the example
+
+  name = "Karl" 
+
+  age = "30"
+
+  print name + " is " + age + " years old"
+
+  could be replaced with the much simpler (method called string interpolation)
+
+  print "%s is %d years old" % (name, age) -- % is an operator that will allow us to replace the %s with a literal 
+  or the value of a  variable
+<pre>
+Above syntax gives an "TypeError: %d format: a number is required, not str"
+print "%s is %d years old" % (name, int(age)) --Added int conversion
+</pre>
+  Since Python 2.6 (and including Python 3), an interpolation method named #format is available.
+
+  sample text: "This line of {} is being used to demonstrate the #format {}.".format('text', 'method')
+
+  yields: "this line of text is being used to demonstrate the #format method.
+
+  read more here:  https://docs.python.org/2/library/string.html#format-string-syntax
+
+  This method is powerful, flexible, and intuitive. 
+
+
+Can we say that "join strings with variables" is a concatenation? 
+
+I think this is a better way to concatenate variables of different data types all at the same time. Like for example in this case we are concatenating name with age and if age was a decimal value it would still work fine. 
+
+name = 'john'
+
+age = 36
+
+print "%s is %d years old" %(name,age)
+
+
+# [[Pythonlearn:exercises-chapter06 | Chapter 6 Exercises]]  
+The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.
+
+# More Resource Topics
+This is a nice page, listing all the methods for String manipulation in Python -
+https://docs.python.org/release/2.5.2/lib/string-methods.html
+
+**N.B.** https://docs.python.org/release/2.7.10/library/stdtypes.html#string-methods is a more recent and up-to-date page for string methods
+
+Python 2.7.8 String Services - https://docs.python.org/2/library/strings.html
+
+Add resources for this chapter to this page..
+
+Have a look at this section of the Python 2.7.8 documentation:- https://docs.python.org/2/library/stdtypes.html#string-methods

@@ -1,0 +1,180 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week06</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes:_Strings"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes: Strings</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Slicing_of_Strings"><span class="tocnumber">1.1</span> <span class="toctext">Slicing of Strings</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Builtin_String_Functions"><span class="tocnumber">2</span> <span class="toctext">Builtin String Functions</span></a>
+<ul>
+<li class="toclevel-2"><a href="#len"><span class="tocnumber">2.1</span> <span class="toctext">len</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#dir.28.29"><span class="tocnumber">3</span> <span class="toctext">dir()</span></a></li>
+<li class="toclevel-1"><a href="#Some_basic_notes"><span class="tocnumber">4</span> <span class="toctext">Some basic notes</span></a></li>
+<li class="toclevel-1"><a href="#Additional_Notes:_a_better_.28.3F.29_way_to_join_strings_with_variables"><span class="tocnumber">5</span> <span class="toctext">Additional Notes: a better (?) way to join strings with variables</span></a></li>
+<li class="toclevel-1"><a href="#Chapter_6_Exercises"><span class="tocnumber">6</span> <span class="toctext">Chapter 6 Exercises</span></a></li>
+<li class="toclevel-1"><a href="#More_Resource_Topics"><span class="tocnumber">7</span> <span class="toctext">More Resource Topics</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes:_Strings">Lecture Notes: Strings</span></h1>
+<p>A string is a series of alphanumeric characters in a character data type.  A string is defined by grouping series of character with single or double quotes.  A plus sign (+) is used to concatenate multiple character strings.  A numeric string is still alphanumeric characters until it has been converted to a numeric data type. An arithmetic operation against an numeric string will still cause a trace back error.  </p>
+<h2> <span class="mw-headline" id="Slicing_of_Strings">Slicing of Strings</span></h2>
+<p>A slice is a character or a series of character within a string.  A string slice is defined by the index operator, square brackets '[ ]'. Indexes (or subs) are integers or numeric expression staring with 0. </p>
+<p>MySlice = slice<em>of</em>data[beginning position:'up to' position].</p>
+<p>beginning position
+  first position of the slice.  The index starts with zero
+'up to' position
+  last position of the slice plus one or up to but not including. </p>
+<h1> <span class="mw-headline" id="Builtin_String_Functions">Builtin String Functions</span></h1>
+<h2> <span class="mw-headline" id="len">len</span></h2>
+<p>For our purpose returns the length the string.</p>
+<p>.find():</p>
+<code><pre>    Use the .find() function when you want to know the position of a character or a sub string  within a string. 
+         To find the position of the "3" in the string "0123456": 
+         data="0123456"
+         pos=data.find('3')
+         print pos
+         &gt;3
+
+         To find the position of "l" in "realmadrid":
+         word="realmadrid"
+         pos=word.find('l')
+         print pos
+         &gt;3
+
+         To find the position of 'cd' in the string 'abcdef'
+         word = 'abcdef'
+         pos = word.find('cd')
+         print pos
+         &gt;2
+
+       (Note: an error you may get is "Expected character buffer," which can happen if you omit the quotation marks from your string.)
+</pre></code>
+<p>.upper():</p>
+<code><pre>    Use the .upper() function to capitalize each character in the given string.
+        data='Hello Python'
+        capdata=data.upper()
+        print capdata
+        &gt;HELLO PYTHON
+</pre></code>
+<p>.replace()</p>
+<code><pre>    Use the .replace()to search and replace a character or letter in a given string.
+        data='Hello Python'
+        rpld=data.replace("Python","Leo")
+        print rpld
+        &gt;Hello Leo
+</pre></code>
+<p>.lower()</p>
+<code><pre>        Use the .lower() function to convert the sting to the lower case.
+        data='Hello Python'
+        capdata=data.lower()
+        print capdata
+        &gt;hello python
+</pre></code>
+<p>.startswith()</p>
+<code><pre>        Use the .startswith() function to check if the string begin with that character or not.
+        data='Hello Python'
+        print data.startswith('H')
+        &gt;True
+</pre></code>
+<p>.rstrip()</p>
+<code><pre>        Use the .rstrip() function &lt;without any parameters&gt; to remove any additional white spaces
+        , ' ', from the right side of the calling string.
+        data1 = 'Python is cool    '
+        data2 = 'Yay'
+        print data1.rstrip() + data2
+        &gt;Python is coolYay      
+</pre></code>
+<p>.lstrip()</p>
+<code><pre>       Use the .lstrip() function &lt;without any parameters&gt; to remove any additional white spaces
+        , ' ', from the left side of the calling string.
+       greet = ' Hello Bob '
+       print greet.lstrip()
+       &gt;'Hello Bob '
+</pre></code>
+<p>.strip()</p>
+<code><pre>       removes both beginning and ending whitespaces of the calling string. In the above example, where greet = ' Hello Bob ':
+       print greet.strip()
+       &gt;'Hello Bob'
+
+       .strip() also removes the new line character at the end of the string. This is something more about .strip() method. 
+       Note that I have assigned to variable var the following value:  var = 'test new line\n'
+
+       Case1: In this case we just print the value of var and note that the \n &amp; print output a blank line
+
+       &gt;&gt;&gt; print var
+       test new line
+
+
+       Case2: But, in this case if we apply .strip() to var and print the result, the blank line "disappear"
+
+       &gt;&gt;&gt; print var.strip()
+       test new line
+       &gt;&gt;&gt;
+
+       Case3: Another example to clarify. This time we apply strip() directly and obtain only the phrase:
+
+       &gt;&gt;&gt; "this is another new line\n".strip()
+       'this is another new line'
+</pre></code>
+<h1> <span class="mw-headline" id="dir.28.29">dir()</span></h1>
+<p><code>dir</code> isn't a method in the <code>str</code> type in python; <code>dir</code> is rather a free function that can be used with any variable/type to know what methods are supported on this variable/type.</p>
+<p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<h1> <span class="mw-headline" id="Some_basic_notes">Some basic notes</span></h1>
+<p>To find all functions which can be used for a string, you can do following 
+  fruit = 'banana'
+  dir(fruit) &lt;--- this will give you all functions which can be applied on string. Or you can just do dir(str).  </p>
+<p>Immutable: When you apply function on a string (say fruit.upper()) then a new copy of original string with modifications as per function is provided. Original string remains intact.</p>
+<h1> <span class="mw-headline" id="Additional_Notes:_a_better_.28.3F.29_way_to_join_strings_with_variables">Additional Notes: a better (?) way to join strings with variables</span></h1>
+<p>Python offers a cleaner way to join variables inside strings. Follow the example</p>
+<p>name = "Karl" </p>
+<p>age = "30"</p>
+<p>print name + " is " + age + " years old"</p>
+<p>could be replaced with the much simpler (method called string interpolation)</p>
+<p>print "%s is %d years old" % (name, age) -- % is an operator that will allow us to replace the %s with a literal 
+  or the value of a  variable
+<pre>
+Above syntax gives an "TypeError: %d format: a number is required, not str"
+print "%s is %d years old" % (name, int(age)) --Added int conversion
+</pre>
+  Since Python 2.6 (and including Python 3), an interpolation method named #format is available.</p>
+<p>sample text: "This line of {} is being used to demonstrate the #format {}.".format('text', 'method')</p>
+<p>yields: "this line of text is being used to demonstrate the #format method.</p>
+<p>read more here:  <a class="external free" href="https://docs.python.org/2/library/string.html#format-string-syntax" rel="nofollow">https://docs.python.org/2/library/string.html#format-string-syntax</a></p>
+<p>This method is powerful, flexible, and intuitive. </p>
+<p>Can we say that "join strings with variables" is a concatenation? </p>
+<p>I think this is a better way to concatenate variables of different data types all at the same time. Like for example in this case we are concatenating name with age and if age was a decimal value it would still work fine. </p>
+<p>name = 'john'</p>
+<p>age = 36</p>
+<p>print "%s is %d years old" %(name,age)</p>
+<h1> <span class="mw-headline" id="Chapter_6_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter06" title="Pythonlearn:exercises-chapter06"> Chapter 6 Exercises</a></span></h1>
+<p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
+<h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
+<p>This is a nice page, listing all the methods for String manipulation in Python -
+<a class="external free" href="https://docs.python.org/release/2.5.2/lib/string-methods.html" rel="nofollow">https://docs.python.org/release/2.5.2/lib/string-methods.html</a></p>
+<p><strong>N.B.</strong> <a class="external free" href="https://docs.python.org/release/2.7.10/library/stdtypes.html#string-methods" rel="nofollow">https://docs.python.org/release/2.7.10/library/stdtypes.html#string-methods</a> is a more recent and up-to-date page for string methods</p>
+<p>Python 2.7.8 String Services - <a class="external free" href="https://docs.python.org/2/library/strings.html" rel="nofollow">https://docs.python.org/2/library/strings.html</a></p>
+<p>Add resources for this chapter to this page..</p>
+<p>Have a look at this section of the Python 2.7.8 documentation:- <a class="external free" href="https://docs.python.org/2/library/stdtypes.html#string-methods" rel="nofollow">https://docs.python.org/2/library/stdtypes.html#string-methods</a></p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 83/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3961-0!*!0!!en!*!* and timestamp 20161126063705 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week06&amp;oldid=34452">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week06&amp;oldid=34452</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

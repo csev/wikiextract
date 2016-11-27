@@ -1,0 +1,154 @@
+
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+# Lecture Notes  
+Add notes about the lectures here...
+
+**Examples below come from Chapter 13 Video**
+
+Till now we have learned about different Python built in data types
+some of the complicated one like are list and dictionary (associative array/hash map).
+Other languages like Java may store a list or a dictionary differently than Python.
+When two programs talk to each other, ie send data thru internet, the data stream
+must be language agnostic. To achieve this we use data serialization and de-serialization.
+
+<u>Data Serialization and De-serialization</u>
+
+Data Serialization means we convert/encode our user/language specific data structure to a
+pre-agreed structure which the second party understand. This conversion/encoding of our
+data structures to a common data exchange format is Serialization.
+
+Data De-serialization means decoding/reverting back the received common data to native
+programming language's data structure implementations.
+
+There are many competent data exchange solutions but we will focus only on
+
++ XML  : e**X**tensible **M**arkup **L**anguage
++ JSON : **J**ava **S**cript **O**bject **N**otation
+
+
+## XML
+
+  1. History of XML : <font color="red"> TBD </font>
+  2. Schema (XSD) : <font color="red"> TBD </font>
+
+XML is quite like HTML.
+A XML document example taken from video lecture file \(xml1.py\):
+  
+    <person>
+      <name>Chuck</name>
+      <phone type="intl">
+         +1 734 303 4456
+      </phone>
+      <email hide="yes"/>
+    </person>
+  
+It has :
+
+1. **Tags** : <u>Start Tag</u>, <u>End Tag</u> and <u> Empty-Element tag </u>
+
+   **Tag** is the first word inside a less than < and greater than \>, angular brackets.
+   
+   In above example :-
+
+    `'person', 'name', 'phone' and 'email'`
+
+   Start Tag and End Tag are in pair, start tag comes before end tag and
+
+   use the **same string**.
+   Example :-
+
+    `'person', 'name' and 'phone'`
+
+   Notice that backslash `/` comes inside End tag.
+
+   **Empty-Element** tag doesn't have a end tag.
+   A backslash `/` comes before the ending greater than \> closing bracket. 
+   Example :-
+
+   `'email'`
+   
+2. **Element** :
+
+   What ever is there between a pair of <u>Start Tag</u> and <u>End Tag</u> is a element.
+   Example :-
+
+     `For 'name' : Chuck`
+
+     `For 'phone' : +1 734 303 4456`
+
+     `Nothing for 'email'`
+
+3. Attribute :
+
+   **Start Tag** or **Empty-Element Tag** are the first word inside < word_1 \>.
+   But for `'phone' and 'email'` we have some more things inside the angular brackets.
+   
+   These are **attribute\(s\)** of the **tag**.
+   
+   < **Start Tag** *attribute1*="value1" *attribute2*="value2" > **Element** </ **End Tag** >
+
+   or
+
+   < **Empty-Element Tag** *attribute1*="value1" *attribute2*="value2" />
+   
+   Attributes are with a assignment operator, name-value pair.
+
+   Left hand side of assignment operator is the
+   *name* of attribute and right hand side has the *value*.
+   Example :-
+
+   name of attribute: `'phone' ` value: `type="intl"`
+
+   name of attribute: `'email'` value: `hide="yes"`
+
+
+XML support is in-built in Python.
+
+    import xml.etree.ElementTree as xml_parser
+ 
+The inbuilt library traverse the XML file and
+
+stores the **tags, elements and attributes** in a document object model( kind of tree ).
+
+It is easier to extract information from this representation of document(XML).
+
+To traverse a XML file content ( our above XML example ) stored inside a string element
+   
+    dom_obj = xml_parser.fromstring(data)
+
+To find entry with tag name as `'name'`.
+
+    print dom_obj.find('name')
+
+To find all ( a list of ) entries with tag name as `'name'`.
+
+    print dom_obj.findall('name')
+
+To find element of a tag entry with name as `'name'`.
+
+    print dom_obj.find('name').text
+
+To fetch attribute list for `'email'`
+
+    dom_obj.find('email').get('hide')
+
+Loop thru all sub elements of `'person'`
+
+    # tested on python 3.4 with correct print function
+    for sub_ele in dom_obj:
+      print sub_ele.tag, sub_ele.attrib, sub_ele.text
+ 
+    >  name {} Chuck
+    >  phone {'type': 'intl'}
+    >        +1 734 303 4456
+
+    >  email {'hide': 'yes'} None
+
+
+# [[Pythonlearn:exercises-chapter13 | Chapter 13 Exercises]]  
+The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actually graded assignments.
+
+# More Resource Topics
+Add resources for this chapter to this page..

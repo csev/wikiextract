@@ -1,0 +1,128 @@
+[[Category:Pythonlearn]]
+[[Pythonlearn:Resources | Back to Resources]]
+
+#Lesson Zero: Getting the most from P4E
+
+Welcome! Thank-you for signing up to Charles 'Dr. Chuck' Severance's *Programming for Everybody* MOOC on Coursera. This page has been written by the Teaching Assistants for this course to anticipate and answer a number of common questions raised by students each session of the P4E class. 
+
+Please take some time to read and understand the information contained here. Some of the terminology and technologies may be strange to you, but students will get to know these as the class progresses. 
+
+##Configure the Coursera User Settings
+
+Take a moment to configure a few settings on the *Account Settings* page. After logging into the Coursera platform, have a look at the top right corner and click The drop-down menu that shows your name. Select the *Settings* option.
+
+Look at the *Full Name* setting. This is the name that will appear on your Verified Certificate or Statement of Accomplishment. Change it if you want to.
+
+Look at the *Timezone* setting. Pick your home timezone to localise the deadlines for coursework.
+
+Nota sobre idioma español (e acho tambem para português). Python devuelve errores si se utilizan ciertos caracteres dentro del programa, incluso en los comentarios. No emplear acentuación ni tampoco la letra Ñ.
+
+##Main Menu and Links
+
+You can navigate around the sections of the class by using the left-hand menu, organised into a series of 'tabs'. If this is your first time in class take time to visit a few of the more important links:
+
+###Announcements 
+
+This contains important information for you from the Teaching staff. Normally, there will be an announcement each week as the next set of course materials are released, usually on a Thursday (timezone dependent). Announcements are also sent out as Emails to registered students. Take a moment to check the announcements page each time you visit the class.
+
+###Syllabus
+
+Visit this link to see a week-by-week outline of the course, the taught content and the coursework. Notice the deadlines for the coursework. We'll talk more about coursework later on in this page.
+
+###Grading and Logistics
+
+This page has been removed for session 5 and the information rolled up into the Syllabus link.
+
+##Lectures
+
+The curriculum is delivered by viewing a number of video lectures each week. You can access the lectures by visiting the *Video Lectures and Assignments* link. When you visit a link, a green check mark or tick will appear against the lecture. Please note that this does not mean you have completed any coursework associated with the lecture.
+
+The lecture and assignment numbering system mirrors the section headings in the free class textbook. You can access the lecture materials by visiting the *Course Materials (Free)* link in the left-hand menu.
+
+##Coursework
+
+Programming For Everybody can be accessed from anywhere around the world. This means that coursework will have different deadlines depending on your current location. Do not use deadlines as a last minute reminder to rush and submit coursework. As a rough rule of thumb, make sure you complete all coursework on the calendar day before the deadlines.
+
+There are four types of coursework for this class:
+
+###Quizzes 
+
+Students will need to complete one quiz per week. You can access the quizzes by using the *Quizzes* link from the left hand menu link. Completed quiz scores can be seen at that link.
+
+###Assignments
+
+Students will need to complete one or more programming assignment per week. You can access each assignment by visiting the *Video Lectures and Assignments* link. 
+
+Take a look at the icons to the right of each video lecture. Click the icon that looks like a computer screen or open laptop. Remember there may be more than one assignment in any given week. (If you are in Firefox and get a "Secure Connection Failed" error, your browser may not recognize the security certificate; try using another browser, such as Google Chrome.)
+
+The assignments are completed in a teaching tool called the Autograder. The Autograder is hosted by Dr Chuck and is not part of the Coursera platform. When you complete a programming assignment in the Autograder, the results can be viewed by visiting the *External Grades* link on the left-hand menu.
+
+Once the deadline has passed for a programming assignment you are free to discuss the assignment in the class forum. However, do not share any code solutions to the assignments.
+
+###Peer Graded Essays
+
+Peer Graded Essays were removed from the 5th session of P4E.
+
+###Final Exam
+
+At the end of the course, there will be a final examination which draws from the entire taught syllabus.
+
+Access the exam, when released, by visiting the *Final Exam* link on the left-hand menu.
+
+##Signature Track and Certificates
+
+Subject to a passing grade, every student is eligible to earn an electronic certificate called a Statement of Accomplishment. If you wish, you can enroll for the Signature Track for this course for a fee and earn a Verified Certificate.
+
+If you wish to enroll on the Signature Track you can do so during the first few weeks of the course. You cannot enroll once the invitation period closes. You can always re-do the class on the Signature Track for a Verified Certificate.
+
+For more information on the Signature Track, please click here: https://www.coursera.org/signature/
+
+##Python Version and Coding Tools
+
+This class uses Python version 2. Code written in the Python 3 syntax will not be accepted by the Autograder and Code Playground.
+
+Please follow the instructions given in the Week 1 to install Python 2 and the code editor for your operating system. You may use different code editors but if you are experiencing issues with non-standard coding environments you may be asked to use the standard coding environment. 
+
+##Python Code Playground and Autograder
+
+The *Python Code Playground* is a browser-based programming tool which does not require any additional installation. It implements a subset of the Python 2 language sufficient for teaching the class curriculum.
+
+The *Autograder* is the *Playground* tool with some additional assessment logic that checks the code that students submit for programming assignments. 
+
+When writing assignment code, remember that you should write code that runs on the *Autograder*. Some code may run on a local install of Python but not be accepted by the *Autograder*.
+
+The *Autograder* window is split into three 'panes':
+
+- The coding pane, where you input your program;
+- The *Your Output* pane, where your program will produce any output;
+- The *Desired Output* pane, where you can see what output is expected from your program.
+
+###Supported Web Browsers
+
+The Autograder relies on the JavaScript language built in to many browsers. Some browsers do not implement JavaScript correctly and will give unexpected errors. We recommend **not** using Internet Explorer for that reason.
+
+There have been a number of reports that recent versions of Firefox have been causing issues and strange behaviour in the Autograder. We recommend not using that browser.
+
+###"Mismatch" Error
+
+The *Autograder* will give you errors and other messages if your code does not answer the assignment correctly or in the expected manner. One such message is the Mismatch.
+
+The Mismatch error is specific to the Autograder, not Python itself. A Mismatch error will arise when your program does not produce the *exact* output required. The *exact* output is displayed in the *Desired Output* pane.
+
+Mismatches can require some care in resolving. Take particular care with whitespace such as spaces, tabs and carriage return/newlines.
+
+##Giving and Asking for help
+
+This class has a dedicated *Discussion Forum* which can be accessed from the left-hand menu. In the forum you can ask for and offer assistance as you work through the curriculum. 
+
+In order to maximise best and fair use of these discussions, please bear these rules in mind:
+
+- When looking for an answer, remember to use the Search feature to see if someone has asked your question before.
+- When giving an answer, remember to add *tags* to your new thread to help people find your post using the Search feature.
+- Do not share answers to coursework. Instead, help your fellow students find their own answers.
+- When trying to answer coding *Assignments* make sure to read and understand all the error messages and pop-up messages the *Autograder* gives you when running the code.
+- Indent your code carefully and accurately. Use four spaces per level of indentation.
+- If you are pasting code into the *Autograder*, use your browser's paste as plain text option if it has it.
+- If the *Autograder* gives you a line number as part of the error message, you may need to look at the line before, or the entire code block to find the error.
+- Don't share your code in the forum, even if the code is 'work in progress' and doesn't produce the correct answer. A Teaching Assistant may ask you to share a few lines of your code to help you.
+- Sometimes, the best way you can overcome an issue with coursework is to step away from the computer and have break.

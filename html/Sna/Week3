@@ -1,0 +1,46 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Sna:Week3</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p>Concepts: Betweenness, closeness, eigenvector centrality (+ PageRank), network centralization</p>
+<p>Activities: Calculate and interpret node centrality for real-world networks (your Facebook graph, the Enron corporate email network, Twitter networks, etc.)</p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Centrality"><span class="tocnumber">1</span> <span class="toctext">Centrality</span></a></li>
+<li class="toclevel-1"><a href="#Brokerage"><span class="tocnumber">2</span> <span class="toctext">Brokerage</span></a></li>
+<li class="toclevel-1"><a href="#Betweenness"><span class="tocnumber">3</span> <span class="toctext">Betweenness</span></a></li>
+<li class="toclevel-1"><a href="#Closeness"><span class="tocnumber">4</span> <span class="toctext">Closeness</span></a></li>
+<li class="toclevel-1"><a href="#Eigenvector_Centrality"><span class="tocnumber">5</span> <span class="toctext">Eigenvector Centrality</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Centrality">Centrality</span></h1>
+<p>Centrality refers to individual node.
+Centralization characterizes the entire network  by  capturing the inequality of the distribution of centralities.
+The simplest measure of centralization is standard deviation of degree distribution.</p>
+<p>Freeman's general formula for centralization:</p>
+<p>$$C_D = \frac{\sum_{i=1}^g[C_D(n*) - C_D(i)]} {[(N - 1)(N-2)]} $$</p>
+<p>where $$C_D(n*)$$ is the maximum centrality in the network.</p>
+<h1> <span class="mw-headline" id="Brokerage">Brokerage</span></h1>
+<h1> <span class="mw-headline" id="Betweenness">Betweenness</span></h1>
+<p>Intuition: how many pairs of individuals would have to go through you in order to reach one another in the minimum shortest path.</p>
+<p>$$C_B(I) =\sum_{j&lt;k}\frac{g_{jk}(i)} {g_{jk}}$$</p>
+<p>where $$g_{jk}$$ is the number of shortest paths connecting $$j$$ and $$k$$, and $$g_{jk}(i) $$- the number of shortest paths connecting $$j$$ and $$k$$ that go through $$i$$. </p>
+<p>The $$C_B(I) $$ is usually normalized as follows:</p>
+<p>$$C_B(I) = C_B(I) / [(N - 1) (N-2) / 2]$$</p>
+<h1> <span class="mw-headline" id="Closeness">Closeness</span></h1>
+<p>Closeness is based on the length of the shortest path between a node and all other nodes in the network.
+Closeness Centrality is defined as</p>
+<p>$$C_C(i) =[\sum_{j=1}^Nd(i,j) ]^{-1} $$</p>
+<h1> <span class="mw-headline" id="Eigenvector_Centrality">Eigenvector Centrality</span></h1>
+<p>Bonacich eigenvector centrality</p>
+<p>$$c_i(\beta) = \sum_j(\alpha + \beta c_j) * A_{ji} $$ 
+, where 
+<ul><li> $$\alpha $$ is a normalization constant
+</li><li> $$\beta $$ determines how important the centrality of your neighbors is
+</li><li> $$A $$ is the adjacency matrix (can be weighted)
+</li><li> $$I$$ is the identity matrix (1s down the diagonal, 0s off-diagonal)
+</li><li> $$1$$ is a matrix of all ones</li></ul></p>
+</div></div></div>

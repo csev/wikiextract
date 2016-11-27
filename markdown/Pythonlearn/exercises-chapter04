@@ -1,0 +1,18 @@
+
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+# Lecture Notes  
+  
+# [[Pythonlearn:exercises-chapter04 | Chapter 4 Exercises]]  
+The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.
+
+# More Resource Topics
+Add resources for this chapter to this page..
+
+
+Exercises 4.1 Random numbers are generated just like the ones in the textbook<br>
+Exercise 4.2: NameError: name 'print_lyrics is not defined on line 1<br>
+Exercise 4.3: The program runs just fine. Order of function definitions seems to not matter when a function is called within a function definition<br>
+Exercise 4.4: b) It indicates the start of a function<br>
+Exercise 4.5: d) ABC Zap ABC<br>

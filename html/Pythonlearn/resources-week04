@@ -1,0 +1,67 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week04</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<p><a href="/wiki/index.php/Pythonlearn:exercises-chapter04" title="Pythonlearn:exercises-chapter04"> Chapter 4 Exercises</a><br/>
+This page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
+<p><a href="/wiki/index.php/Pythonlearn:student-essays" title="Pythonlearn:student-essays"> Student Essays</a> </p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes_-_Functions"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes  - Functions</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Why_use_functions.3F"><span class="tocnumber">1.1</span> <span class="toctext">Why use functions?</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Repetition"><span class="tocnumber">1.1.1</span> <span class="toctext">Repetition</span></a></li>
+<li class="toclevel-3"><a href="#Clarity"><span class="tocnumber">1.1.2</span> <span class="toctext">Clarity</span></a></li>
+<li class="toclevel-3"><a href="#Productivity"><span class="tocnumber">1.1.3</span> <span class="toctext">Productivity</span></a></li>
+<li class="toclevel-3"><a href="#Debugging"><span class="tocnumber">1.1.4</span> <span class="toctext">Debugging</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Built-In_Functions"><span class="tocnumber">1.2</span> <span class="toctext">Built-In Functions</span></a></li>
+<li class="toclevel-2"><a href="#Basics_of_Function_Structure"><span class="tocnumber">1.3</span> <span class="toctext">Basics of Function Structure</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Function_Calls"><span class="tocnumber">1.3.1</span> <span class="toctext">Function Calls</span></a></li>
+<li class="toclevel-3"><a href="#Arguments"><span class="tocnumber">1.3.2</span> <span class="toctext">Arguments</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#User-Defined_Functions"><span class="tocnumber">1.4</span> <span class="toctext">User-Defined Functions</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Function_Definitions"><span class="tocnumber">1.4.1</span> <span class="toctext">Function Definitions</span></a></li>
+<li class="toclevel-3"><a href="#Function_Placement"><span class="tocnumber">1.4.2</span> <span class="toctext">Function Placement</span></a></li>
+<li class="toclevel-3"><a href="#Function_Evaluation_vs._Function_Execution"><span class="tocnumber">1.4.3</span> <span class="toctext">Function Evaluation vs. Function Execution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Passing_Information"><span class="tocnumber">1.5</span> <span class="toctext">Passing Information</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Parameters"><span class="tocnumber">1.5.1</span> <span class="toctext">Parameters</span></a></li>
+<li class="toclevel-3"><a href="#Returns"><span class="tocnumber">1.5.2</span> <span class="toctext">Returns</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Advanced_Topics"><span class="tocnumber">1.6</span> <span class="toctext">Advanced Topics</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Modules"><span class="tocnumber">1.6.1</span> <span class="toctext">Modules</span></a></li>
+<li class="toclevel-3"><a href="#Bringing_It_All_Together:_A_Practical_Implementation"><span class="tocnumber">1.6.2</span> <span class="toctext">Bringing It All Together: A Practical Implementation</span></a></li>
+<li class="toclevel-3"><a href="#An_Aside_on_Naming_Schemes"><span class="tocnumber">1.6.3</span> <span class="toctext">An Aside on Naming Schemes</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#"><span class="tocnumber">2</span> <span class="toctext">_______</span></a></li>
+<li class="toclevel-1"><a href="#_2"><span class="tocnumber">3</span> <span class="toctext">______</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Again.2C_these_sorts_of_decisions_deal_less_with_Python.27s_syntax_rules_and_fall_more_in_line_with_what_may_be_considered_good_programming_style_and_design_choices."><span class="tocnumber">3.1</span> <span class="toctext">Again, these sorts of decisions deal less with Python's syntax rules and fall more in line with what may be considered good programming style and design choices.</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#More_Resource_Topics"><span class="tocnumber">4</span> <span class="toctext">More Resource Topics</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes_-_Functions">Lecture Notes  - Functions</span></h1>
+<p>Programmers tend to write a lot of code, sometimes writing intricately nested conditionals and plugging in variables into complex formulas just to calculate one value or derive one output. However, repeating those several lines of code over and over again for every time the computation is required can make your source code quite verbose as well as tedious to maintain.</p>
+<p>In many programming languages there is a very powerful notion of "modular code" that can help solve this dilemma. Various segments of related code are broken apart and collapsed into smaller sets that can then be used to contribute to the larger, overarching scheme of the program itself. These reusable, modular pieces have different names in different languages (modules, routines, sub-routines, methods, etc), but in Python and many other languages besides, these are referred to as <em>functions</em>.</p>
+<p><strong>Functions</strong>
+<dl><dd> Taking segments of related code, wrapping it up in its own allocated code block, and attributing it with a name so that it can be called later at any point of the overarching program, thus treating it as its own separate, self contained, and individually existing entity. A "sub program" within your program, if you will.</dd></dl></p>
+</div></div></div>

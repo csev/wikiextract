@@ -1,0 +1,43 @@
+[[Category:AI]]
+[[Category:Coursera]]
+[[Category:Natural Language Processing]]
+Welcome to the [Natural Language Processing](https://class.coursera.org/nlangp-001/class/index) Portal!
+This is a barebones template of sorts. Feel free to add pages as needed.
+
+# Week 1
+## Introduction
+### Course Resources
+Please take some time to familiarize yourself with the Coursera user interface. Try all the links on the left-hand menu to see what's there. Of special note are the course materials which are linked from the Video Lectures page.  At the first lecture of each section you will find a lecture title and several icons on the right:
+* The lecture video title, including the video running time. Clicking this link plays the video. (You can also download the video for offline viewing; see below.)
+* A document icon (page with a folded-over corner) that links the in-video quiz questions and answers.
+* A landscape picture icon that links the slides used for that lecture section.
+* Two sets of list icons (rows of lines, one with bullets) that contain the video subtitles (in English). One contains just the text. The other includes timing information (need more info here).
+* A download icon (looks like an inbox with a down-pointing arrow) link to where you can download the lecture video in MP4 format.
+
+Also please see [the comprehensive notes](http://www.cs.columbia.edu/~mcollins/notes-spring2013.html) for for the class.
+
+### Applications
+* Machine Translation
+* Information Extraction
+* Text Summarization
+* Dialogue System
+
+### Why is NLP hard?
+* Ambiguity
+
+## Language Modeling
+
+$$V$$
+:   some (finite) vocabulary
+$$V^\dagger$$
+:   (infinite) set of sentences
+$$p$$
+:   $$p$$ is a function that satisfies
+> $$\sum_{x\in V^\dagger}p(x) = 1$$, where $$p(x)\ge 0$$ for all $$x \in V^\dagger$$
+
+## Markov Processes
+
+Assume that: for any $$i \in {2...n}$$, for any $$x_1...x_i$$,
+> $$P(X_i=x_i|X_1=x_1...X_{i-1}=x_{i-1}) = P(X_i=x_i|X_{i-1}=x_{i-1})$$
+
+# Categories

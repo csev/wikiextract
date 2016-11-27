@@ -1,0 +1,198 @@
+Concepts: Connected components, giant component, average shortest path, diameter, breadth-first search, preferential attachment
+
+Activities: Create random networks, calculate component distribution, average shortest path, evaluate impact of structure on ability of information to diffuse
+
+
+Erdos-Renyi: simplest network model
+--------------------------------
+Assumptions
+* nodes connect at random
+* network is undirected
+* no self loops
+Key parameters
+* N = number of nodes in the network
+* p = probability that any two nodes share an edge
+* M = total number of edges in the graph
+* k  = degree of a node, the number of edges incident to a node.
+
+Degree distribution.
+(N, p) - model: For each potential edge we flip a biased coin
+* with probability $$p$$ we add the edge
+* with probability $$(1-p) $$ we don't
+
+As the size of the network increases and $$p$$ is unchanged the probability of any two nodes being connected increases.  
+
+The **binomial distribution** gives us the probability that a node has degree k:
+$$
+B(N-1;k,p) = {N-1\choose k}p^k(1-p)^{N-1-k}
+$$
+
+where 
+
+$$
+{N-1\choose k}=\frac{(N-1)!}{k!(N-1-k)!}
+$$
+
+is the **binomial coefficient**, which tells us how many ways we can choose $$k$$ items out of $$(N-1) $$.
+The **mean**, or **expected value** of binomial distribution, tells us the average degree $$z$$
+
+$$
+z = (N-1)p
+$$
+
+The variance in degree is 
+
+$$
+\sigma^2 = (N-1)p(1-p)
+$$
+
+Average shortest path.
+If average degree of each node is $$z$$ then the number of nodes at distance $$l$$ is $$z^l$$.
+The average shortest path $$l_{av}$$ can be approximated as
+$$
+l_{av} \approx \dfrac {logN}{logz} 
+$$
+
+Because logarithm grows slowly, the Erdos-Renye networks can grow very large but nodes will be just a few hops apart.
+
+Relative to ER, the introduction model has
+* more closed triads
+* longer average shortest path
+* more uneven degree
+* smaller giant component at low p
+
+
+Binomial distribution has factorials which can be hard to compute for large values. So if p is small, the Poisson distribution can be used. Furthermore, if n is large, the Normal distribution can be used.
+
+2C Models of network growth
+--------------------------------
+
+## Power law distribution
+
+On a logarithm plot the power law distribution is represented by 
+$$
+ln(p(k)) = c - \alpha ln(k)
+$$,
+
+where $$c$$ is **normalization constant**, and $$\alpha$$ is **power law exponent**. Exponentiate both sides to get that $$p(k)$$, the probability of observing an node of degree $$k$$ is given by 
+
+$$
+p(k) = Ck^{-\alpha}
+$$
+
+Social networks are not described by power law distribution. It is hard to keep up with thousands or tens of thousands of friends.
+
+## Growth of random networks.
+At each timestamp a node is born and that  node selects $$m$$ other nodes at random to connect to. At time $$t$$ there are $$t$$ nodes.  The degree of a node born at time $$i$$ growths as 
+$$
+\dfrac{dk_i(t)}{dt} = \dfrac{m}{t}
+$$
+
+To get the number of nodes a node accumulate since its birth at time $$i$$ until time $$t$$ we integrate the above expression to get
+
+$$ k_i(t) = m + m\log(\frac{t}{i}) $$.
+
+On average $$ k_i(t) > k_j(t)$$ if $$ i < j $$. In other words older nodes on average have more edges.
+
+## Preferential attachment.
+New nodes prefer to attach to well-connected nodes over less-well connected nodes. This process is known as cumulative advantage, rich-get-richer, and Matthew effect.
+
+
+## Barabasi-Albert model
+
+The BA model was first used to describe skewed degree distribution of World Wide Web. It combines both the growth and preferential attachment concepts above. New nodes are added at time $$ i $$ with $$m$$ edges. These new edges connect to nodes with probability proportional to their degree relative to the whole graph.
+
+For example, consider a BA-model graph with three nodes A, B, and C, and m = 1. Their relative degrees a, b, c, are $$a=2$$, $$b=1$$, $$c=1$$ (A<->B, A<->C). Suppose a new node D comes into existence. D gets to make one new edge; where will they put it? They are more likely to attach to A because A *already has* a degree of two, whereas B and C only have a degree of 1.
+
+### Node degree with respect to time
+
+A given node's degree changes over time, as expressed by the differential equation below:
+
+$$ \frac{dk_i(t)}{dt} = m \times \frac{k_i}{2tm} = \frac{k_i}{2t} $$ 
+
+At time `t` there are `m` new edges. Edges are allocated in proportion to a node's degree ($$k_i$$) divided by the sum of the degrees ($$2tm$$), because there are $$tm$$ other edges and each edge has 2 endpoints.
+
+This is a *separable first-order ordinary differential equation* (http://tutorial.math.lamar.edu/Classes/DE/Separable.aspx).
+
+Bring all the `k's` to one side and the `t's` to the other. This is the **separation stage**:
+
+$$ \frac{2}{k_i} \times dk_i(t) = \frac{1}{t} \times dt $$
+
+Now integrate both sides. The equation remains balanced because integration is just like any other operation, and we're applying it to both sides:
+
+$$ \int \frac{2}{k_i} \times dk_i(t) = \int \frac{1}{t} \times dt $$
+
+Consult a handy integration table, like http://integral-table.com/. We know that:
+
+- Multiplicative factors can be moved out, i.e. $$ \int A \times f(x).dx = A \times \int f(x).dx $$, where A is a constant.
+- $$ \int \frac{1}{x}dx = ln(x) + C $$
+
+(In many integral tables you will see `ln` and not `log`. `ln` just means log to base e, and log just means log to base 10. They're "the same" for integrations. Also very important to note that the second integral adds a restriction that the solution is only valid for $$ x > 0 $$, because of the `ln`. This is OK because time is always positive ;) but more interesting is that there is no defined solution for $$ t = 0 $$).
+
+Applying the first and second rules to the left, and the second rule to the right, gives:
+
+$$ 2 (ln(k_i) + C) = ln(t) + D $$
+
+Noticed I used a `C` and a `D`? This just means we don't know what these two numbers are. Rather than keeping track of two unknown constants let's just collapse them into one unknown constant `E`:
+
+$$ 2 ln(k_i) = ln(t) + E $$.
+
+Now we **solve for an initial value** in order to get rid of E. What do we know? The rules of the model are such that:
+
+$$ k_i(i) = m $$
+
+because at time `i` the node at `i` has a degree of m. Hence:
+
+$$ 2 ln(m) = ln(i) + E $$
+
+$$ E = 2 ln(m) - ln(i) $$
+
+$$ E = ln(m^2) - ln(i) $$
+
+$$ E = ln(\frac{m^2}{i}) $$
+
+Note the use of the rules of logarithms (http://www.mathwords.com/l/logarithm_rules.htm).
+
+Substituting back in:
+
+$$ 2 ln(k_i(t)) = ln(t) + ln(\frac{m^2}{i}) $$
+
+$$ 2 ln(k_i(t)) = ln(t \times \frac{m^2}{i}) $$
+
+$$ ln(k_i(t)) = \frac{1}{2} ln(t \times \frac{m^2}{i}) $$
+
+$$ ln(k_i(t)) = ln((t \times \frac{m^2}{i})^\frac{1}{2}) $$
+
+Note that raising something to the power of half implies a square root. Raise both sides by the power of e to reverse the `ln`'s:
+
+$$ k_i(t) = (t \times \frac{m^2}{i})^\frac{1}{2} $$
+
+A bit of shuffling:
+
+$$ k_i(t) = (m^2)^\frac{1}{2} (\frac{t}{i})^\frac{1}{2} $$
+
+$$ k_i(t) = m \sqrt{\frac{t}{i}} $$, { $$ \forall t \in \mathbb{Z} $$ | $$ t > 0 $$ }.
+
+
+### Probability of connection
+
+The probability of connecting to node $$i$$ is expressed by
+
+$$
+P(i) = m\frac{k_i}{\sum_{j}{k_j}}
+$$
+
+### Degree Distribution
+Let $$\tau$$ be the time of birth of node of degree $$k'$$, then:
+
+$$ \frac{\tau}{t} = (\frac{m}{k'})^2 $$
+
+$$ 1 - \frac{\tau}{t} = 1 - (\frac{m}{k'})^2 $$
+
+$$ \Pr(k \leq k') = 1 - (\frac{m}{k'})^2 $$
+
+$$\Pr(k \leq k')$$ gives the cumulative distribution function (CDF) of the degree. To get the probability density function (PDF), we simply differentiate $$\Pr(k \leq k')$$ w.r.t. $$k'$$ and let $$k' = k$$.
+
+This yields $$\Pr(k) = 2 \frac{m^2}{k^3}$$.
+
+This results in power-law with exponent $$\alpha = 3$$ which is unrealistically steep.

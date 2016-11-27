@@ -1,0 +1,220 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-glossary-by-chapter</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Python_for_Informatics_Glossary"><span class="tocnumber">1</span> <span class="toctext">Python for Informatics Glossary</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Chapter_1"><span class="tocnumber">1.1</span> <span class="toctext">Chapter 1</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_2"><span class="tocnumber">1.2</span> <span class="toctext">Chapter 2</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_3"><span class="tocnumber">1.3</span> <span class="toctext">Chapter 3</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_4"><span class="tocnumber">1.4</span> <span class="toctext">Chapter 4</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_5"><span class="tocnumber">1.5</span> <span class="toctext">Chapter 5</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_6"><span class="tocnumber">1.6</span> <span class="toctext">Chapter 6</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_7"><span class="tocnumber">1.7</span> <span class="toctext">Chapter 7</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_8"><span class="tocnumber">1.8</span> <span class="toctext">Chapter 8</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_9"><span class="tocnumber">1.9</span> <span class="toctext">Chapter 9</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_10"><span class="tocnumber">1.10</span> <span class="toctext">Chapter 10</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_11"><span class="tocnumber">1.11</span> <span class="toctext">Chapter 11</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_12"><span class="tocnumber">1.12</span> <span class="toctext">Chapter 12</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_13"><span class="tocnumber">1.13</span> <span class="toctext">Chapter 13</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_14"><span class="tocnumber">1.14</span> <span class="toctext">Chapter 14</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_15"><span class="tocnumber">1.15</span> <span class="toctext">Chapter 15</span></a></li>
+<li class="toclevel-2"><a href="#Chapter_16"><span class="tocnumber">1.16</span> <span class="toctext">Chapter 16</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Python_for_Informatics_Glossary">Python for Informatics Glossary</span></h1>
+<p>This Glossary is taken from Charles Severance’s book, <em>Python for Informatics - Exploring Information</em></p>
+<p><a href="/wiki/index.php/Pythonlearn:Complete_Glossary" title="Pythonlearn:Complete Glossary"> Complete Glossary</a> </p>
+<h2> <span class="mw-headline" id="Chapter_1">Chapter 1</span></h2>
+<p><strong>bug:</strong> An error in a program. </p>
+<p><strong>central processing unit:</strong> The heart of any computer. It is what runs the software that we write; also called "CPU" or "the processor". </p>
+<p><strong>compile:</strong> To translate a program written in a high-level language into a low-level language all at once, in preparation for later execution. </p>
+<p><strong>high-level language:</strong> A programming language like Python that is designed to be easy for humans to read and write. </p>
+<p><strong>interactive mode:</strong> A way of using the Python interpreter by typing commands and expressions at the prompt. </p>
+<p><strong>interpret:</strong> To execute a program in a high-level language by translating it one line at a time. </p>
+<p><strong>low-level language:</strong> A programming language that is designed to be easy for a computer to execute; also called "machine code" or "assembly language." </p>
+<p><strong>machine code:</strong> The lowest level language for software which is the language that is directly executed by the central processing unit (CPU). </p>
+<p><strong>main memory:</strong> Stores programs and data. Main memory loses its information when the power is turned off. </p>
+<p><strong>parse:</strong> To examine a program and analyze the syntactic structure. </p>
+<p><strong>portability:</strong> A property of a program that can run on more than one kind of computer. </p>
+<p><strong>print statement:</strong> An instruction that causes the Python interpreter to display a value on the screen. </p>
+<p><strong>problem solving:</strong> The process of formulating a problem, finding a solution, and expressing the solution. </p>
+<p><strong>program:</strong> A set of instructions that specifies a computation. </p>
+<p><strong>prompt:</strong> When a program displays a message and pauses for the user to type some input to the program. </p>
+<p><strong>secondary memory:</strong> Stores programs and data and retains its information even when the power is turned off. Generally slower than main memory. Examples of secondary memory include disk drives and flash memory in USB sticks. </p>
+<p><strong>semantics:</strong> The meaning of a program. </p>
+<p><strong>semantic error:</strong> An error in a program that makes it do something other than what the programmer intended. </p>
+<p><strong>source code:</strong> A program in a high-level language. </p>
+<h2> <span class="mw-headline" id="Chapter_2">Chapter 2</span></h2>
+<p><strong>assignment:</strong> A statement that assigns a value to a variable. </p>
+<p><strong>concatenate:</strong> To join two operands end-to-end. </p>
+<p><strong>comment:</strong> Information in a program that is meant for other programmers (or anyone reading the source code) and has no effect on the execution of the program. </p>
+<p><strong>evaluate:</strong> To simplify an expression by performing the operations in order to yield a single value.</p>
+<p><strong>expression:</strong> A combination of variables, operators, and values that represents a single result value. </p>
+<p><strong>floating-point:</strong> A type that represents numbers with fractional parts. </p>
+<p><strong>floor division:</strong> The operation that divides two numbers and chops off the fraction part. </p>
+<p><strong>integer:</strong> A type that represents whole numbers. </p>
+<p><strong>keyword:</strong> A reserved word that is used by the compiler to parse a program; you cannot use keywords like <em>if</em>, <em>def</em>, and <em>while</em> as variable names. </p>
+<p><strong>mnemonic:</strong> A memory aid. We often give variables mnemonic names to help us remember what is stored in the variable. </p>
+<p><strong>modulus operator:</strong> An operator, denoted with a percent sign (%), that works on integers and yields the remainder when one number is divided by another. </p>
+<p><strong>operand:</strong> One of the values on which an operator operates. </p>
+<p><strong>operator:</strong> A special symbol that represents a simple computation like addition, multiplication, or string concatenation. </p>
+<p><strong>rules of precedence:</strong> The set of rules governing the order in which expressions involving multiple operators and operands are evaluated. </p>
+<p><strong>statement:</strong> A section of code that represents a command or action. So far, the statements we have seen are assignments and print statements. </p>
+<p><strong>string:</strong> A type that represents sequences of characters. </p>
+<p><strong>type:</strong> A category of values. The types we have seen so far are integers (type <em>int</em>), floating-point numbers (type <em>float</em>), and strings (type <em>str</em>). </p>
+<p><strong>value:</strong> One of the basic units of data, like a number or string, that a program manipulates. </p>
+<p><strong>variable:</strong> A name that refers to a value. </p>
+<h2> <span class="mw-headline" id="Chapter_3">Chapter 3</span></h2>
+<p><strong>body:</strong> The sequence of statements within a compound statement. </p>
+<p><strong>boolean expression:</strong> An expression whose value is either <em>True</em> or <em>False</em>. </p>
+<p><strong>branch:</strong> One of the alternative sequences of statements in a conditional statement. </p>
+<p><strong>chained conditional:</strong> A conditional statement with a series of alternative branches. </p>
+<p><strong>comparison operator:</strong> One of the operators that compares its operands: <em>==</em>, <em>!=</em>, <em>&gt;</em>, <em>&lt;</em>, <em>&gt;=</em>, and <em>&lt;=</em>.</p>
+<p><strong>conditional statement:</strong> A statement that controls the flow of execution depending on some condition. </p>
+<p><strong>condition:</strong> The boolean expression in a conditional statement that determines which branch is executed. </p>
+<p><strong>compound statement:</strong> A statement that consists of a header and a body. The header ends with a colon (:). The body is indented relative to the header. </p>
+<p><strong>guardian pattern:</strong> Where we construct a logical expression with additional comparisons to take advantage of the short circuit behavior. </p>
+<p><strong>logical operator:</strong> One of the operators that combines boolean expressions: <em>and</em>, <em>or</em>, and <em>not</em>.</p>
+<p><strong>nested conditional:</strong> A conditional statement that appears in one of the branches of another conditional statement. </p>
+<p><strong>traceback:</strong> A list of the functions that are executing, printed when an exception occurs. </p>
+<p><strong>short circuit:</strong> When Python is part-way through evaluating a logical expression and stops the evaluation because Python knows the final value for the expression without needing to evaluate the rest of the expression. </p>
+<h2> <span class="mw-headline" id="Chapter_4">Chapter 4</span></h2>
+<p><strong>algorithm:</strong> A general process for solving a category of problems. </p>
+<p><strong>argument:</strong> A value provided to a function when the function is called. This value is assigned to the corresponding parameter in the function. </p>
+<p><strong>body:</strong> The sequence of statements inside a function definition. </p>
+<p><strong>composition:</strong> Using an expression as part of a larger expression, or a statement as part of a larger statement. </p>
+<p><strong>deterministic:</strong> Pertaining to a program that does the same thing each time it runs, given the same inputs. </p>
+<p><strong>dot notation:</strong> The syntax for calling a function in another module by specifying the module name followed by a dot (period) and the function name. </p>
+<p><strong>flow of execution:</strong> The order in which statements are executed during a program run. </p>
+<p><strong>fruitful function:</strong> A function that returns a value. </p>
+<p><strong>function:</strong> A named sequence of statements that performs some useful operation. Functions may or may not take arguments and may or may not produce a result. </p>
+<p><strong>function call:</strong> A statement that executes a function. It consists of the function name followed by an argument list. </p>
+<p><strong>function definition:</strong> A statement that creates a new function, specifying its name, parameters, and the statements it executes. </p>
+<p><strong>function object:</strong> A value created by a function definition. The name of the function is a variable that refers to a function object. </p>
+<p><strong>header:</strong> The first line of a function definition. </p>
+<p><strong>import statement:</strong> A statement that reads a module file and creates a module object. </p>
+<p><strong>module object:</strong> A value created by an <em>import</em> statement that provides access to the data and code defined in a module. </p>
+<p><strong>parameter:</strong> A name used inside a function to refer to the value passed as an argument. </p>
+<p><strong>pseudorandom:</strong> Pertaining to a sequence of numbers that appear to be random, but are generated by a deterministic program. </p>
+<p><strong>return value:</strong> The result of a function. If a function call is used as an expression, the return value is the value of the expression. </p>
+<p><strong>void function:</strong> A function that doesn't return a value. </p>
+<h2> <span class="mw-headline" id="Chapter_5">Chapter 5</span></h2>
+<p><strong>accumulator:</strong> A variable used in a loop to add up or accumulate a result. </p>
+<p><strong>counter:</strong> A variable used in a loop to count the number of times something happened. We initialize a counter to zero and then increment the counter each time we want to "count" something. </p>
+<p><strong>decrement:</strong> An update that decreases the value of a variable. </p>
+<p><strong>initialize:</strong> An assignment that gives an initial value to a variable that will be updated.</p>
+<p><strong>increment:</strong> An update that increases the value of a variable (often by one). </p>
+<p><strong>infinite loop:</strong> A loop in which the terminating condition is never satisfied or for which there is no termination condition. </p>
+<p><strong>iteration:</strong> Repeated execution of a set of statements using either a recursive function call or a loop. </p>
+<h2> <span class="mw-headline" id="Chapter_6">Chapter 6</span></h2>
+<p><strong>catch:</strong> To prevent an exception from terminating a program using the <em>try</em> and <em>except</em> statements. </p>
+<p><strong>newline:</strong> A special character used in files and strings to indicate the end of a line. </p>
+<p><strong>Pythonic:</strong> A technique that works elegantly in Python. "Using try and except is the <i>Pythonic</i> way to recover from missing files.". </p>
+<p><strong>Quality Assurance:</strong> A person or team focused on insuring the overall quality of a software product. QA is often involved in testing a product and identifying problems before the product is released. </p>
+<p><strong>text file:</strong> A sequence of characters stored in permanent storage like a hard drive. </p>
+<h2> <span class="mw-headline" id="Chapter_7">Chapter 7</span></h2>
+<p><strong>catch:</strong> To prevent an exception from terminating a program using the <em>try</em> and <em>except</em> statements. </p>
+<p><strong>newline:</strong> A special character used in files and strings to indicate the end of a line. </p>
+<p><strong>Pythonic:</strong> A technique that works elegantly in Python. "Using try and except is the <i>Pythonic</i> way to recover from missing files.". </p>
+<p><strong>Quality Assurance:</strong> A person or team focused on insuring the
+ overall quality of a software product. QA is often involved in testing a product and identifying problems before the product is released. </p>
+<p><strong>text file:</strong> A sequence of characters stored in permanent storage like a hard drive. </p>
+<h2> <span class="mw-headline" id="Chapter_8">Chapter 8</span></h2>
+<p><strong>aliasing:</strong> A circumstance where two or more variables refer to the same object. </p>
+<p><strong>delimiter:</strong> A character or string used to indicate where a string should be split. </p>
+<p><strong>element:</strong> One of the values in a list (or other sequence), also called items. </p>
+<p><strong>equivalent:</strong> Having the same value. </p>
+<p><strong>index:</strong> An integer value that indicates an element in a list. </p>
+<p><strong>identical:</strong> Being the same object (which implies equivalence). </p>
+<p><strong>list:</strong> A sequence of values. </p>
+<p><strong>list traversal:</strong> The sequential accessing of each element in a list. </p>
+<p><strong>nested list:</strong> A list that is an element of another list. </p>
+<p><strong>object:</strong> Something a variable can refer to. An object has a type and a value. </p>
+<p><strong>reference:</strong> The association between a variable and its value. </p>
+<h2> <span class="mw-headline" id="Chapter_9">Chapter 9</span></h2>
+<p><strong>dictionary:</strong> A mapping from a set of keys to their corresponding values. </p>
+<p><strong>hashtable:</strong> The algorithm used to implement Python dictionaries. </p>
+<p><strong>hash function:</strong> A function used by a hashtable to compute the location for a key. </p>
+<p><strong>histogram:</strong> A set of counters. </p>
+<p><strong>implementation:</strong> A way of performing a computation. </p>
+<p><strong>item:</strong> Another name for a key-value pair. </p>
+<p><strong>key:</strong> An object that appears in a dictionary as the first part of a key-value pair. </p>
+<p><strong>key-value pair:</strong> The representation of the mapping from a key to a value. </p>
+<p><strong>lookup:</strong> A dictionary operation that takes a key and finds the corresponding value. </p>
+<p><strong>nested loops:</strong> When there is one or more loops "inside" of another loop. The inner loop runs to completion each time the outer loop runs once. </p>
+<p><strong>value:</strong> An object that appears in a dictionary as the second part of a key-value pair. This is more specific than our previous use of the word "value." </p>
+<h2> <span class="mw-headline" id="Chapter_10">Chapter 10</span></h2>
+<p><strong>comparable:</strong> A type where one value can be checked to see if it is greater than, less than or equal to another value of the same type. Types which are comparable can be put in a list and sorted. </p>
+<p><strong>data structure:</strong> A collection of related values, often organized in lists, dictionaries, tuples, etc. </p>
+<p><strong>DSU:</strong> Abbreviation of "decorate-sort-undecorate," a pattern that involves building a list of tuples, sorting, and extracting part of the result. </p>
+<p><strong>gather:</strong> The operation of assembling a variable-length argument tuple. </p>
+<p><strong>hashable:</strong> A type that has a hash function. Immutable types like integers, floats and strings are hashable; mutable types like lists and dictionaries are not. </p>
+<p><strong>scatter:</strong> The operation of treating a sequence as a list of arguments. </p>
+<p><strong>shape (of a data structure):</strong> A summary of the type, size and composition of a data structure. </p>
+<p><strong>singleton:</strong> A list (or other sequence) with a single element. </p>
+<p><strong>tuple:</strong> An immutable sequence of elements. </p>
+<p><strong>tuple assignment:</strong> An assignment with a sequence on the right side and a tuple of variables on the left. The right side is evaluated and then its elements are assigned to the variables on the left. </p>
+<h2> <span class="mw-headline" id="Chapter_11">Chapter 11</span></h2>
+<p><strong>brittle code:</strong> Code that works when the input data is in a particular format but is prone to breakage if there is some deviation from the correct format. We call this “brittle code” because it is easily broken.</p>
+<p><strong>greedy matching:</strong> The notion that the “+” and “*” characters in a regular expression expand outward to match the largest possible string.</p>
+<p><strong>grep:</strong> A command available in most Unix systems that searches through text files looking for lines that match regular expressions. The command name stands for "Generalized Regular Expression Parser".</p>
+<p><strong>regular expression:</strong> A language for expressing more complex search strings. A regular expression may contain special characters that indicate that a search only matches at the beginning or end of a line or many other similar capabilities.</p>
+<p><strong>wild card:</strong> A special character that matches any character. In regular expressions the wild-card character is the period.</p>
+<h2> <span class="mw-headline" id="Chapter_12">Chapter 12</span></h2>
+<p><strong>BeautifulSoup:</strong> A Python library for parsing HTML documents and extracting data from HTML documents that compensates for most of the imperfections in the HTML that browsers generally ignore. You can download the BeautifulSoup code from www.crummy.com.</p>
+<p><strong>port:</strong> A number that generally indicates which application you are contacting when you make a socket connection to a server. As an example, web traffic usually uses port 80 while email traffic uses port 25.</p>
+<p><strong>scrape:</strong> When a program pretends to be a web browser and retrieves a web page, then looks at the web page content. Often programs are following the links in one page to find the next page so they can traverse a network of pages or a social network.</p>
+<p><strong>socket:</strong> A network connection between two applications where the applications can send and receive data in either direction.</p>
+<p><strong>spider:</strong> The act of a web search engine retrieving a page and then all the pages linked from a page and so on until they have nearly all of the pages on the Internet which they use to build their search index.</p>
+<h2> <span class="mw-headline" id="Chapter_13">Chapter 13</span></h2>
+<p><strong>API:</strong> Application Program Interface - A contract between applications that defines the patterns of interaction between two application components.</p>
+<p><strong>ElementTree:</strong> A built-in Python library used to parse XML data.</p>
+<p><strong>JSON:</strong> JavaScript Object Notation. A format that allows for the markup of structured data based on the syntax of JavaScript Objects.</p>
+<p><strong>SOA:</strong> Service-Oriented Architecture. When an application is made of components connected across a network.</p>
+<p><strong>XML:</strong> eXtensible Markup Language. A format that allows for the markup of structured data.</p>
+<h2> <span class="mw-headline" id="Chapter_14">Chapter 14</span></h2>
+<p><strong>attribute:</strong> One of the values within a tuple. More commonly called a “column” or “field”.</p>
+<p><strong>constraint:</strong> When we tell the database to enforce a rule on a field or a row in a table. A common constraint is to insist that there can be no duplicate values in a particular field (i.e., all the values must be unique).</p>
+<p><strong>cursor:</strong> A cursor allows you to execute SQL commands in a database and retrieve data from the database. A cursor is similar to a socket or file handle for network connections and files, respectively.</p>
+<p><strong>database browser:</strong> A piece of software that allows you to directly connect to a database and manipulate the database directly without writing a program.</p>
+<p><strong>foreign key:</strong> A numeric key that points to the primary key of a row in another table. Foreign keys establish relationships between rows stored in different tables.</p>
+<p><strong>index:</strong> Additional data that the database software maintains as rows and inserts into a table to make lookups very fast.</p>
+<p><strong>logical key:</strong> A key that the “outside world” uses to look up a particular row. For example in a table of user accounts, a person’s email address might be a good candidate as the logical key for the user’s data.</p>
+<p><strong>normalization:</strong> Designing a data model so that no data is replicated. We store each item of data at one place in the database and reference it elsewhere using a foreign key.</p>
+<p><strong>primary key:</strong> A numeric key assigned to each row that is used to refer to one row in a table from another table. Often the database is configured to automatically assign primary keys as rows are inserted.</p>
+<p><strong>relation:</strong> An area within a database that contains tuples and attributes. More typically called a “table”.</p>
+<p><strong>tuple:</strong> A single entry in a database table that is a set of attributes. More typically called “row”.</p>
+<h2> <span class="mw-headline" id="Chapter_15">Chapter 15</span></h2>
+<p>No glossary entries for this chapter.</p>
+<h2> <span class="mw-headline" id="Chapter_16">Chapter 16</span></h2>
+<p><strong>absolute path:</strong> A string that describes where a file or directory is stored that starts at the “top of the tree of directories” so that it can be used to access the file or directory, regardless of the current working directory.</p>
+<p><strong>checksum:</strong> See also hashing. The term “checksum” comes from the need to verify if data was garbled as it was sent across a network or written to a backup medium and then read back in. When the data is written or sent, the sending system computes a checksum and also sends the checksum. When the data is read or received, the receiving system re-computes the checksum from the received data and compares it to the received checksum. If the checksums do not match, we must assume that the data was garbled as it was transferred.</p>
+<p><strong>command-line argument:</strong> Parameters on the command line after the Python file name.</p>
+<p><strong>current working directory:</strong> The current directory that you are “in”. You can change your working directory using the cd command on most systems in their command-line interfaces. When you open a file in Python using just the file name with no path information, the file must be in the current working directory where you are running the program.</p>
+<p><strong>hashing:</strong> Reading through a potentially large amount of data and producing a unique checksum for the data. The best hash functions produce very few “collisions” where you can give two different streams of data to the hash function and get back the same hash. MD5, SHA1, and SHA256 are examples of commonly used hash functions.</p>
+<p><strong>pipe:</strong> A pipe is a connection to a running program. Using a pipe, you can write a program to send data to another program or receive data from that program. A pipe is similar to a socket except that a pipe can only be used to connect programs running on the same computer (i.e., not across a network).</p>
+<p><strong>relative path:</strong> A string that describes where a file or directory is stored relative to the current working directory.</p>
+<p><strong>shell:</strong> A command-line interface to an operating system. Also called a “terminal program” in some systems. In this interface you type a command and parameters on a line and press “enter” to execute the command.</p>
+<p><strong>walk:</strong> A term we use to describe the notion of visiting the entire tree of directories, sub-directories, sub-sub-directories, until we have visited the all of the directories. We call this “walking the directory tree”.</p>
+<p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:4003-0!*!0!!en!*!* and timestamp 20161127022908 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-glossary-by-chapter&amp;oldid=32811">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-glossary-by-chapter&amp;oldid=32811</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

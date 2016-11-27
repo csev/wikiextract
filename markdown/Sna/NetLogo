@@ -1,0 +1,86 @@
+In the SNA course, you will need [NetLogo](http://ccl.northwestern.edu/netlogo/) to explore the models. You can do by loading applets in your browser, or by launching the desktop app.
+
+## Using NetLogo as a standalone app:
+
+* Download (and optionally) read tutorials <a href="http://ccl.northwestern.edu/netlogo/">here</a>.
+* Download the <a href="https://spark-public.s3.amazonaws.com/sna/netlearn/netlearn.zip">bundle of NetLogo apps for this course</a>.
+* You can also download individual applet files from the course pages, e.g. http://www.ladamic.com/netlearn/NetLogo502/VisualizationCommunities.html, right click on the .nlogo filename, and select 'Save Link As'. Then within NetLogo, fo to File->Open, and navigate to the spot where you saved the .nlogo file.
+[[File:Saving_NLogoFile.jpg]]
+* You will also need the NW extension of the applet to run models, starting with Week 2. You can download it <a href="https://spark-public.s3.amazonaws.com/sna/netlearn/nw.zip">here</a>. If that version is incompatible with your system, try the <a href="https://github.com/NetLogo/NW-Extension"> latest version from github</a>. Unzip the archive and place it in the 'extensions' folder of your NetLogo application, e.g. on a Mac /Applications/NetLogo 5.0.3/extensions.
+
+## Using NetLogo applet in your browser
+
+### Coursera Browser Recommendations
+
+Coursera broadly recommends using the latest web browser versions (when possible) for optimal compatibility and overall experience. See [here](http://help.coursera.org/customer/portal/articles/502540-what-kind-of-computer-and-web-browser-do-i-need-)
+
+### NetLogo Java Requirement
+
+You will encounter the following error screens if Java is not installed:
+
+#### Google Chrome - No Java Installed
+
+[[File:Sna-chrome-netlogo-vid1quiz-nojava.PNG|700x500px]]
+
+#### Firefox - No Java Installed
+
+[[File:Sna-firefox-netlogo-vidquiz1-nojava.PNG|700x500px]]
+
+#### Internet Explorer - No Java Installed
+
+[[File:Sna-IE-netlogo-vidquiz1-nojava.PNG|700x500px]]
+
+### Java Requirement
+
+NetLogo requires that your web browser support Java 5 or later. For details on NetLogo Java requirements see the NetLogo Applet guide [here](http://ccl.northwestern.edu/netlogo/docs/applet.html#java)
+
+### Java Installation
+
+To install the latest version of Java, go [here](http://java.com/en/download/index.jsp)
+
+[[File:Sna-chrome-netlogo-vid1quiz-javainstall.PNG|700x500px]]
+
+#### Java Installation Confirmation
+
+Here's an example of a completed Java installation:
+
+[[File:Sna-javainstall_confirmation.PNG|700x500px]]
+
+#### Java Reload Prompt
+
+Once Java is installed, you will need to reload the NetLogo page to activate it:
+
+[[File:Sna-chrome-java-install.PNG|700x500px]]
+
+#### Java Permission Prompt
+
+In addition, you will need to give Java permissions to run the NetLogo applet:
+
+[[File:Sna-chrome-java-installed.PNG|700x500px]]
+
+### NetLogo Browser Recommendations
+
+NetLogo functionality has specifically been tested and confirmed on Chrome, Firefox, Internet Explorer and Safari.
+
+For reference, the following screenshots show a working NetLogo installation:
+
+#### Chrome (v.22.0.229.79 m) Working
+
+[[File:Sna-chrome-netlogo-working.PNG|700x500px]]
+
+#### Firefox (v.15.0.1) Working
+
+[[File:Sna-firefox-netlogo-working.PNG|700x500px]]
+
+#### Internet Explorer (v.9) Working
+
+[[File:Sna-IE-netlogo-working.PNG|700x500px]]
+
+#### Safari (v.6.0 8536.25) Working
+
+[[File:Sna-safari-netlogo-working.png|700x500px]]
+
+#### Opera (v.12.16) Working
+
+
+ ([back to Main SNA page](https://share.coursera.org/wiki/index.php/Sna:Main))

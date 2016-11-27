@@ -1,0 +1,37 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Sna:Week2</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p>Concepts: Connected components, giant component, average shortest path, diameter, breadth-first search, preferential attachment</p>
+<p>Activities: Create random networks, calculate component distribution, average shortest path, evaluate impact of structure on ability of information to diffuse</p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Erdos-Renyi:_simplest_network_model"><span class="tocnumber">1</span> <span class="toctext">Erdos-Renyi: simplest network model</span></a></li>
+<li class="toclevel-1"><a href="#2C_Models_of_network_growth"><span class="tocnumber">2</span> <span class="toctext">2C Models of network growth</span></a></li>
+<li class="toclevel-1"><a href="#Power_law_distribution"><span class="tocnumber">3</span> <span class="toctext">Power law distribution</span></a></li>
+<li class="toclevel-1"><a href="#Growth_of_random_networks."><span class="tocnumber">4</span> <span class="toctext">Growth of random networks.</span></a></li>
+<li class="toclevel-1"><a href="#Preferential_attachment."><span class="tocnumber">5</span> <span class="toctext">Preferential attachment.</span></a></li>
+<li class="toclevel-1"><a href="#Barabasi-Albert_model"><span class="tocnumber">6</span> <span class="toctext">Barabasi-Albert model</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Node_degree_with_respect_to_time"><span class="tocnumber">6.1</span> <span class="toctext">Node degree with respect to time</span></a></li>
+<li class="toclevel-2"><a href="#Probability_of_connection"><span class="tocnumber">6.2</span> <span class="toctext">Probability of connection</span></a></li>
+<li class="toclevel-2"><a href="#Degree_Distribution"><span class="tocnumber">6.3</span> <span class="toctext">Degree Distribution</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Erdos-Renyi:_simplest_network_model">Erdos-Renyi: simplest network model</span></h2>
+<p>Assumptions
+<ul><li> nodes connect at random
+</li><li> network is undirected
+</li><li> no self loops
+</li></ul>
+Key parameters
+<ul><li> N = number of nodes in the network
+</li><li> p = probability that any two nodes share an edge
+</li><li> M = total number of edges in the graph
+</li><li> k  = degree of a node, the number of edges incident to a node.</li></ul></p>
+</div></div></div>

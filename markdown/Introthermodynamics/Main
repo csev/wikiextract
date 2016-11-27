@@ -1,0 +1,64 @@
+"Introduction to thermodynamics" course starts with concepts and units definition and proceeds ahead with properties measuring, states definition, pathways between states and focus mainly on the first law of thermodynamics : energy conservation.
+
+Freely available references and tools
+==============
+To help understand the concepts the following references and tools are available online:
+
+1. US Department of Energy Fundamentals Handbook Thermodynamics, Heat Transfer and Fluid Flow, Vol. 1 of 3 ( http://www.hss.doe.gov/nuclearsafety/techstds/docs/handbook/h1012v1.pdf )‎
+
+2. Thermodynamics and Chemistry, 2nd Edition, by Howard DeVoe, Associate Professor Emeritus, University of Maryland(http://www2.chem.umd.edu/thermobook)
+
+3. Online calculator of steam (http://www.steamtablesonline.com)
+
+
+Weekly Reading
+==============
+<table border="1">
+   <tr>
+      <td><b><center>Week</center></b></td>
+      <td><b><center>Supportive Reading Material</center></b></td>
+      <td><b><center>Topic</center></b></td>
+   </tr>
+   <tr>
+      <td>1</td>
+      <td>Devoe: 19 - 29</td>
+      <td>Introduction, concepts, definitions, and UNITS!!<br>Thermodynamic properties, the conservation of energy</td>
+   </tr>
+   <tr>
+      <td>2</td>
+      <td>Devoe: 30 – 44<br>DOE: 1-13, 41-52</td>
+      <td>Work transfer and heat transfer, phase diagrams, the<br>conservation of energy for closed systems</td>
+   </tr>
+   <tr>
+      <td>3</td>
+      <td>Devoe: Chapter 2.4-2.5</td>
+      <td>Thermodynamic properties, state relations, the ideal gas<br>model, the incompressible substance model, conservation of<br>mass for open systems</td>
+   </tr>
+   <tr>
+      <td>4</td>
+      <td>Devoe: 52-55<br>DOE: 14-25</td>
+      <td>Conservation of energy for open systems, flow work, flow<br>devices, examples</td>
+   </tr>
+   <tr>
+      <td>5</td>
+      <td>Devoe: 56-66<br>DOE: 53-68<br>(Also DOE: 14-25)</td>
+      <td>Transient analysis and the conservation of mass and energy;<br>power, refrigeration and heat pump cycles</td>
+   </tr>
+   <tr>
+      <td>6</td>
+      <td>Devoe: 67-97<br>(Also DOE: 14-25)</td>
+      <td>The 2nd law of thermodynamics, Carnot and Rankine power<br>cycles</td>
+   </tr>
+   <tr>
+      <td>7</td>
+      <td>DOE: 26-30<br>(Also DOE: 14-25, 53-68)</td>
+      <td>Carnot and Rankine cycles continued, co-generation and<br>waste heat recovery</td>
+   </tr>
+   <tr>
+      <td>8</td>
+      <td>(DOE: 14-25, 26-30, 53-68)</td>
+      <td>Comparing energy carriers</td>
+   </tr>
+</table>
+[[Category:Coursera]]
+[[Category:Physics]]

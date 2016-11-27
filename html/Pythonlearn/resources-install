@@ -1,0 +1,276 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-install</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p>Feel free to add material here.   -- Chuck</p>
+<p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Books_and_Guides"><span class="tocnumber">1</span> <span class="toctext">Books and Guides</span></a></li>
+<li class="toclevel-1"><a href="#Install_Python"><span class="tocnumber">2</span> <span class="toctext">Install Python</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Ubuntu"><span class="tocnumber">2.1</span> <span class="toctext">Ubuntu</span></a></li>
+<li class="toclevel-2"><a href="#CentOS.2FFedora.2FRed_Hat"><span class="tocnumber">2.2</span> <span class="toctext">CentOS/Fedora/Red Hat</span></a></li>
+<li class="toclevel-2"><a href="#OS_X"><span class="tocnumber">2.3</span> <span class="toctext">OS X</span></a></li>
+<li class="toclevel-2"><a href="#iOS"><span class="tocnumber">2.4</span> <span class="toctext">iOS</span></a></li>
+<li class="toclevel-2"><a href="#ActivePython"><span class="tocnumber">2.5</span> <span class="toctext">ActivePython</span></a></li>
+<li class="toclevel-2"><a href="#Windows"><span class="tocnumber">2.6</span> <span class="toctext">Windows</span></a></li>
+<li class="toclevel-2"><a href="#ArchLinux.2FManjaro"><span class="tocnumber">2.7</span> <span class="toctext">ArchLinux/Manjaro</span></a></li>
+<li class="toclevel-2"><a href="#Slackware_GNU.2FLinux"><span class="tocnumber">2.8</span> <span class="toctext">Slackware GNU/Linux</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Editors_and_IDE"><span class="tocnumber">3</span> <span class="toctext">Editors and IDE</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Emacs"><span class="tocnumber">3.1</span> <span class="toctext">Emacs</span></a></li>
+<li class="toclevel-2"><a href="#Ipython_and_Jupyter"><span class="tocnumber">3.2</span> <span class="toctext">Ipython and Jupyter</span></a></li>
+<li class="toclevel-2"><a href="#Sublime_Text"><span class="tocnumber">3.3</span> <span class="toctext">Sublime Text</span></a></li>
+<li class="toclevel-2"><a href="#Komodo"><span class="tocnumber">3.4</span> <span class="toctext">Komodo</span></a></li>
+<li class="toclevel-2"><a href="#Wingware"><span class="tocnumber">3.5</span> <span class="toctext">Wingware</span></a></li>
+<li class="toclevel-2"><a href="#Vim"><span class="tocnumber">3.6</span> <span class="toctext">Vim</span></a></li>
+<li class="toclevel-2"><a href="#The_Eric_Python_IDE"><span class="tocnumber">3.7</span> <span class="toctext">The Eric Python IDE</span></a></li>
+<li class="toclevel-2"><a href="#PyDev"><span class="tocnumber">3.8</span> <span class="toctext">PyDev</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Useful_tips:"><span class="tocnumber">4</span> <span class="toctext">Useful tips:</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Multiple_python_versions"><span class="tocnumber">4.1</span> <span class="toctext">Multiple python versions</span></a></li>
+<li class="toclevel-2"><a href="#Path_environment"><span class="tocnumber">4.2</span> <span class="toctext">Path environment</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Windows_users"><span class="tocnumber">4.2.1</span> <span class="toctext">Windows users</span></a></li>
+<li class="toclevel-3"><a href="#Virtual_Environment"><span class="tocnumber">4.2.2</span> <span class="toctext">Virtual Environment</span></a></li>
+<li class="toclevel-3"><a href="#virtualenv"><span class="tocnumber">4.2.3</span> <span class="toctext">virtualenv</span></a></li>
+<li class="toclevel-3"><a href="#Tool_for_OSX_finder"><span class="tocnumber">4.2.4</span> <span class="toctext">Tool for OSX finder</span></a></li>
+<li class="toclevel-3"><a href="#Alternative_to_.5BGo2Shell.5D"><span class="tocnumber">4.2.5</span> <span class="toctext">Alternative to [Go2Shell]</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Make_Screenshots"><span class="tocnumber">4.3</span> <span class="toctext">Make Screenshots</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Books_and_Guides">Books and Guides</span></h1>
+<p><a class="external free" href="https://wiki.python.org/moin/BeginnersGuide" rel="nofollow">https://wiki.python.org/moin/BeginnersGuide</a></p>
+<hr/>
+<p><a class="external free" href="http://www.learnpython.org/" rel="nofollow">http://www.learnpython.org/</a>
+One more place to start with python.</p>
+<hr/>
+<p><a class="external free" href="http://legacy.python.org/dev/peps/pep-0008/#imports" rel="nofollow">http://legacy.python.org/dev/peps/pep-0008/#imports</a>
+Python convention and style guide</p>
+<hr/>
+<p><a class="external free" href="http://www.greenteapress.com/thinkpython/" rel="nofollow">http://www.greenteapress.com/thinkpython/</a>
+Think Python: How to Think Like a Computer Scientist, is a free Book by Allen B. Downey. It is released under the Creative Commons Attribution-NonCommercial 3.0 Unported License.</p>
+<hr/>
+<p><a class="external free" href="http://openbookproject.net/thinkcs/" rel="nofollow">http://openbookproject.net/thinkcs/</a>
+How to Think Like a Computer Scientist: Learning with Python by Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers</p>
+<hr/>
+<p><a class="external free" href="http://www.swaroopch.com/notes/python/" rel="nofollow">http://www.swaroopch.com/notes/python/</a>
+"A Byte of Python" is a book by Swaroop C.H. and released under the Creative Commons Attribution-NonCommercial-ShareAlike License 2.0 .</p>
+<hr/>
+<p><a class="external free" href="https://mail.python.org/pipermail/tutor/2004-July/030634.html" rel="nofollow">https://mail.python.org/pipermail/tutor/2004-July/030634.html</a><br/>
+This link is a tutorial on how to call a .py file into Windows cmd.</p>
+<hr/>
+<p><a class="external free" href="http://www.codecademy.com/en/tracks/python/resume" rel="nofollow">http://www.codecademy.com/en/tracks/python/resume</a> 
+This is a website that can help you to better understand python and some other language.</p>
+<hr/>
+<p><a class="external free" href="http://learnpythonthehardway.org/book/index.html" rel="nofollow">http://learnpythonthehardway.org/book/index.html</a> 
+This is a website that gave me my start in Python. It's got loads of exercises to help you practice. Enjoy! -- Bevin</p>
+<hr/>
+<p><a class="external free" href="http://inventwithpython.com/" rel="nofollow">http://inventwithpython.com/</a>
+These guides teach Python with a focus mostly on designing games right from the beginning.</p>
+<hr/>
+<p><a class="external free" href="http://sololearn.com/Play/Python" rel="nofollow">http://sololearn.com/Play/Python</a>
+Great way to learn Python. Teaches several computing languages in other courses.</p>
+<h1> <span class="mw-headline" id="Install_Python">Install Python</span></h1>
+<p><a class="external free" href="https://www.python.org/downloads/" rel="nofollow">https://www.python.org/downloads/</a>
+(Note:  As of 10 Nov 2015 a sticky post from the Coursera discussion boards says the course uses Python V2.7.10.  The main current release is V2.7.12 and may be used for this course.  </p>
+<h3> <span class="mw-headline" id="Ubuntu">Ubuntu</span></h3>
+<p>Python 2 and python 3 are both installed by default, ie they are part of the ubuntu-desktop, lubuntu-desktop etc meta-packages/virtual tasks. </p>
+<p>To confirm that Python is already installed, open a terminal window and type
+<pre>
+python
+</pre>
+If so, a message similar to this should be displayed indicating which version of Python is installed: </p>
+<blockquote>
+<p>Python 2.7.6 (default, Mar 22 2014, 22:59:56) 
+  [GCC 4.8.2] on linux2 
+  Type "help", "copyright", "credits" or "license" for more information.</p>
+</blockquote>
+<p>To return to the prompt type either
+<pre>
+exit()
+</pre>
+<p>or
+</p>
+<pre>
+quit()
+</pre>
+<p>or
+</p>
+<pre>
+[ctrl]-d
+</pre></p>
+<p>If Python is not installed (eg it has been uninstalled for some reason), in Ubuntu type 
+<pre>
+sudo apt-get install python
+</pre>
+<p>and hit return, to get the latest version of python 2, or
+</p>
+<pre>
+sudo apt-get install python3
+</pre>
+and hit return, to get the latest version of python 3.</p>
+<p>Running commands with <kbd>sudo</kbd> is dangerous. Make sure you know what you are running.</p>
+<h3> <span class="mw-headline" id="CentOS.2FFedora.2FRed_Hat">CentOS/Fedora/Red Hat</span></h3>
+<p>Step 1: Install Python,</p>
+<p>If you have chose the development workstation from Fedora/CentOS/Redhat, more than likely it will have Python installed, if it is not installed you can use the RPM package that comes with the distro. I'll recommend using the package that comes from the distro because you will get all the security and bug fixes when you update your system.</p>
+<p>If you prefer to install from source, skip step 1 and go straight to step 2.</p>
+<pre>
+yum install python
+</pre>
+<p>For Fedora 23+</p>
+<pre>
+dnf install python 
+</pre>
+<p>Step 2: Download Python 2.7</p>
+<p>Download Python using below command from python official site</p>
+<pre>
+cd /usr/src
+wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
+</pre>
+<p>Step 3: Extract Archive and Compile</p>
+<p>Use below set of commands to extract Python source code and compile it on your system using altinstall.</p>
+<pre>
+tar xzf Python-2.7.9.tgz
+cd Python-2.7.9
+./configure
+make altinstall
+</pre>
+<p>make altinstall is used to prevent replacing the default
+python binary file /usr/bin/python.</p>
+<p>Step 4: Check the Python Version</p>
+<p>Check the latest version installed of python using below command</p>
+<pre>
+python2.7 -V
+ Python 2.7.9
+</pre>
+<p>Please, see <a class="external text" href="http://tecadmin.net/install-python-2-7-on-centos-rhel/" rel="nofollow">tecadmin.net</a> for original source.</p>
+<h3> <span class="mw-headline" id="OS_X">OS X</span></h3>
+<p>If you are running OS X you already have a version of python inside the built in terminal. Just fire it up and type python for python-2.x. </p>
+<h3> <span class="mw-headline" id="iOS">iOS</span></h3>
+<p>There are several versions of Python available as apps for use on iPhones and iPads such as Pythonista among others.
+-RPE-</p>
+<h3> <span class="mw-headline" id="ActivePython">ActivePython</span></h3>
+<p><a class="external text" href="http://www.activestate.com/activepython/downloads" rel="nofollow">ActivePython</a> is an easy single file installer for Python on Windows that does everything for you (environment variables and what not).</p>
+<h3> <span class="mw-headline" id="Windows">Windows</span></h3>
+<p><strong>Note:</strong> It is not required to run as administrator but it will have no or fewer installation errors later.</p>
+<p><strong>NOTE FOR IMPORTING MODULES</strong> Some modules that aren't built into Python need to be installed before they can be imported to Python. Beautiful Soup is an example, and needs to be installed from the command prompt (cmd) using a program such as pip. Pip is built into the newer versions of Python so you can type "pip install (module name)" into cmd. Note that if you are getting errors, you need to navigate to the python folder and run it there, or for those with skillz, you need to set up the Python System Variable to map the path.</p>
+<h3> <span class="mw-headline" id="ArchLinux.2FManjaro">ArchLinux/Manjaro</span></h3>
+<p>The ArchLinux official repositories have both python3 and python2 available, and they can coexist in the same box. To install python2 (which is used in this course) run:</p>
+<pre>
+pacman -S python2
+</pre>
+<p>You need to explicitly call python2 instead of just python, like so:</p>
+<pre>
+python2 program.py
+</pre>
+<p><strong>Note:</strong> If you accidentally call "python program.py" you'll be using python3 instead of python2 and you will probably receive error messages.</p>
+<h3> <span class="mw-headline" id="Slackware_GNU.2FLinux">Slackware GNU/Linux</span></h3>
+<p>Run python from a terminal. It comes with default installation.</p>
+<h1> <span class="mw-headline" id="Editors_and_IDE">Editors and IDE</span></h1>
+<p><strong>Note to Students:</strong> The first part of the course highly recommends that you use a text editor to input and save scripts and to run them using a command line shell. </p>
+<p><strong>For Windows Users</strong>, the course suggests that you download the free application <strong><a class="external text" href="https://notepad-plus-plus.org/download" rel="nofollow">NotePad++</a></strong> and execute code using the <strong>Windows Command Prompt.</strong></p>
+<p><strong>For Mac OS X Users</strong>, the course suggests that you download the free text editor <strong>TextWrangler</strong> from <a class="external text" href="http://www.barebones.com/products/textwrangler/" rel="nofollow">Bare Bones Software</a> available from the Mac App Store for those running OS X 10.9 (Mavericks) or later. For earlier versions of OS X, you can download the program directly from the Bare Bones Software website. To execute your code, you should use <strong>Terminal.</strong></p>
+<p>There are detailed video instructions on how to install the above mentioned text editors as well as how to run programs from the respective command line shells in <a class="external text" href="https://www.coursera.org/learn/python/home/week/2" rel="nofollow">Week 2</a> of Programming for Everybody. There are also tutorials included on how to produce screen captures in order to submit work for review.</p>
+<hr/>
+<p><a class="external free" href="http://www.pythoncentral.io/comparison-of-python-ides-development/" rel="nofollow">http://www.pythoncentral.io/comparison-of-python-ides-development/</a> This article by Jason Fruit give a nice comparison of Python IDE's and you can also read the following article by Sergio Tapia Gutierrez for another opinion. <a class="external free" href="http://www.pythoncentral.io/the-best-python-ides-you-can-use-for-development/" rel="nofollow">http://www.pythoncentral.io/the-best-python-ides-you-can-use-for-development/</a> If IDE's are not your thing and a simple text editor will do, then check out this article by Jason Fruit. <a class="external free" href="http://www.pythoncentral.io/best-text-editors-for-python-development/" rel="nofollow">http://www.pythoncentral.io/best-text-editors-for-python-development/</a></p>
+<hr/>
+<p>Python Wiki contains perhaps a more complete list of all the available Python IDEs and Editors. <a class="external free" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments" rel="nofollow">https://wiki.python.org/moin/IntegratedDevelopmentEnvironments</a><br/>
+<a class="external free" href="https://wiki.python.org/moin/PythonEditors" rel="nofollow">https://wiki.python.org/moin/PythonEditors</a></p>
+<h3> <span class="mw-headline" id="Emacs">Emacs</span></h3>
+<p>Emacs is <a class="external text" href="https://www.gnu.org/philosophy/free-sw.html" rel="nofollow">free software</a> and is available for all of the popular operating systems, including the <b>Windows</b> family (XP, 7, 8, etc.), the <b>BSD</b> family (FreeBSD, MacOS X, OpenBSD, etc.), <b>GNU/Linux</b> family (Debian, RedHat, Arch, etc.), and the various Unixes.</p>
+<p><b>GNU/Linux</b>: Use your package manager to install the version compiled by your distro's maintainers, or build it yourself from the source code at <a class="external free" href="http://ftpmirror.gnu.org/emacs/" rel="nofollow">http://ftpmirror.gnu.org/emacs/</a>.</p>
+<p><b>Windows</b>: <a class="external free" href="ftp://ftp.gnu.org/gnu/emacs/windows/" rel="nofollow">ftp://ftp.gnu.org/gnu/emacs/windows/</a></p>
+<p><b>MacOS X</b>: <a class="external free" href="http://emacsformacosx.com/" rel="nofollow">http://emacsformacosx.com/</a></p>
+<p>The official <a class="external text" href="https://wiki.python.org/moin/EmacsEditor" rel="nofollow">Python wiki</a> provides information for users who want to use Emacs as a Python IDE.</p>
+<h3> <span class="mw-headline" id="Ipython_and_Jupyter">Ipython and Jupyter</span></h3>
+<p>Jupyter lets you edit and change your commands on the fly, making it really easy to debug code. It also allows for some wonderful data outputs. This notebook used to be called iPython, but it has grown so other programming languages can use it, too. <a class="external free" href="https://jupyter.readthedocs.io/en/latest/install.html" rel="nofollow">https://jupyter.readthedocs.io/en/latest/install.html</a></p>
+<p>It's packaged on all GNU/Linux distros, so you can install it with your package manager or pip. Mac and Windows users should install it with anaconda or the pip command line tool. <a class="external free" href="http://ipython.org/install.html" rel="nofollow">http://ipython.org/install.html</a></p>
+<h3> <span class="mw-headline" id="Sublime_Text">Sublime Text</span></h3>
+<p>Sublime Text is a sophisticated text editor for code, markup and prose.
+You'll love the slick user interface, extraordinary features and amazing performance.</p>
+<p>Is available for OS X, Windows and GNU/Linux. One license is all you need to use Sublime Text on every computer you own, no matter what operating system it uses.</p>
+<p>Uses a custom UI toolkit, optimized for speed and beauty, while taking advantage of native functionality on each platform.</p>
+<p><a class="external text" href="http://www.sublimetext.com/" rel="nofollow">Sublime Text</a> Home page
+<a class="external text" href="http://sublime-text-unofficial-documentation.readthedocs.org/en/sublime-text-2/" rel="nofollow">Sublime Text Unofficial Documentation</a> Unofficial Documentation</p>
+<h3> <span class="mw-headline" id="Komodo">Komodo</span></h3>
+<p>A cross-platform IDE for many scripting languages, including python. It's developed by ActiveState, which also happens to be the author of ActivePython distribution for windows. Komodo comes in two flavours: komodo edit and komodo IDE. Komodo edit is a free open-source lightweight editor. Komodo IDE on the other hand is a commercial, fully fledged IDE with version control integration, debugging, and many other professional features. You can download komodo edit for free while you can only get a trial version of komodo IDE or buy a license to use it.</p>
+<p>Komodo edit is available here <a class="external free" href="http://komodoide.com/komodo-edit/" rel="nofollow">http://komodoide.com/komodo-edit/</a>. You can also have a look at what komodo IDE offers here <a class="external free" href="http://komodoide.com/" rel="nofollow">http://komodoide.com/</a>.</p>
+<h3> <span class="mw-headline" id="Wingware">Wingware</span></h3>
+<p><a class="external free" href="https://wingware.com/store/free" rel="nofollow">https://wingware.com/store/free</a> This company released an integrated development environment (IDE), in many ways similar to Visual Studio or Eclipse, which is used for Java. It normally costs $95/year, but for students, even on the Coursera course, you can apply for a student license and get the software for free. You will have to register with their site, and send them an email with your information, but after you do so, they will issue you a free license key good for 180 days, for non-commercial and educational use. If you like the IDE after you complete the course, it is available for $95/year for non-commercial use, and you can also purchase it on the Steam digital download service that is used mostly for distributing video games - <a class="external free" href="http://store.steampowered.com/app/244830/" rel="nofollow">http://store.steampowered.com/app/244830/</a> (I do not have any association with WingWare, the company that makes it. My only connection is that I'm interested in the software, and I was granted a student license).</p>
+<h3> <span class="mw-headline" id="Vim">Vim</span></h3>
+<p>The <a class="external text" href="http://www.vim.org/" rel="nofollow">vim</a> editor is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems. Oftentimes, vim is thought of as a "programmer's editor." It is so useful for programming that many consider it an entire IDE. It's not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files. </p>
+<h3> <span class="mw-headline" id="The_Eric_Python_IDE">The Eric Python IDE</span></h3>
+<p><a class="external text" href="http://eric-ide.python-projects.org/" rel="nofollow">Eric</a> is a full featured Python and Ruby editor and IDE, written in python. It is based on the cross platform Qt gui toolkit, integrating the highly flexible Scintilla editor control. It is designed to be usable as everdays' quick and dirty editor as well as being usable as a professional project management tool integrating many advanced features Python offers the professional coder. eric includes a plugin system, which allows easy extension of the IDE functionality with plugins downloadable from the net.</p>
+<p>Current stable version is <a class="external text" href="http://eric-ide.python-projects.org/eric-download.html" rel="nofollow">eric6</a> based on PyQt5/4 (with Qt5/4) and Python 3 or Python 2.</p>
+<h3> <span class="mw-headline" id="PyDev">PyDev</span></h3>
+<p><a class="external text" href="http://www.pydev.org/" rel="nofollow">PyDev</a> PyDev is a Python IDE for Eclipse, which may be used in Python, Jython and IronPython development.</p>
+<h1> <span class="mw-headline" id="Useful_tips:">Useful tips:</span></h1>
+<h3> <span class="mw-headline" id="Multiple_python_versions">Multiple python versions</span></h3>
+<p>A note to windows users with multiple versions of python installed.  If you want to use version 2.7 but say that you have 3.3 as well but when you go into the CLI on windows and type python and start python 3.3.  To get the environment you want use, type at the command prompt: py -x.x, where x.x is the python version you want to run.</p>
+<hr/>
+<p>Mac users: If you have multiple instances of Python installed, type "which python" (without quotes) into the terminal to see which version you are running.</p>
+<h3> <span class="mw-headline" id="Path_environment">Path environment</span></h3>
+<h4> <span class="mw-headline" id="Windows_users">Windows users</span></h4>
+<p>Modify Python's path environment variable so Python can be ran from any directory, not only from installed directory without using 3rd-party Python environments. For example, "C:\Windows&gt;python" will run Python interpreter even if Python executable is not in Windows directory.</p>
+<p>My Computer &gt; Properties &gt; Advanced &gt; Environment Variables... &gt; System variables</p>
+<p>Select Path &gt; Edit... &gt; Append ";C:\Python27\" to end of Variable value &gt; OK</p>
+<p>Don't forget to close any open console windows and reopen them to apply the new path variable.</p>
+<p><a class="external text" href="http://www.pythoncentral.io/add-python-to-path-python-is-not-recognized-as-an-internal-or-external-command/" rel="nofollow">Windows 7</a></p>
+<p>Or fast for Windows:</p>
+<p>From an administrator command prompt: rundll32.exe sysdm.cpl,EditEnvironmentVariables</p>
+<p>And then as above Select Path ... etc</p>
+<p>[Windows 8] (<a class="external free" href="http://winaero.com/blog/how-to-edit-environment-variables-quickly-in-windows-8-1-and-windows-8/" rel="nofollow">http://winaero.com/blog/how-to-edit-environment-variables-quickly-in-windows-8-1-and-windows-8/</a>)</p>
+<h4> <span class="mw-headline" id="Virtual_Environment">Virtual Environment</span></h4>
+<p>A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them. It solves the “Project X depends on version 1.x but, Project Y needs 4.x” dilemma, and keeps your global site-packages directory clean and manageable.</p>
+<p><a class="external text" href="http://docs.python-guide.org/en/latest/dev/virtualenvs/" rel="nofollow">Python virtualenv</a> Virtual Environments</p>
+<h4> <span class="mw-headline" id="virtualenv">virtualenv</span></h4>
+<p>virtualenv is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.</p>
+<p><a class="external text" href="http://es.slideshare.net/ajha/virtualenv-y-buildout-32816471" rel="nofollow">Developing with Python in an isolated and secure environment</a> Slides (Spanish)</p>
+<h4> <span class="mw-headline" id="Tool_for_OSX_finder">Tool for OSX finder</span></h4>
+<p>A great tool that will for terminal users on osx.</p>
+<p>It installs a button on your finder toolbar that will open a terminal window to the current directory you are in Finder.</p>
+<p><a class="external text" href="http://zipzapmac.com/go2shell/" rel="nofollow">Go2Shell</a> Home page</p>
+<h4> <span class="mw-headline" id="Alternative_to_.5BGo2Shell.5D">Alternative to [Go2Shell]</span></h4>
+<p>If you don't want to install some untrusted software then what could you do is
+<pre>
+1. Open finder window
+2. Select Services form the Finder options on the top left and click on Services Preferences
+3. Once in services preferences scroll down to Files and Folders drop down option.
+4. There you will find two options New Terminal at window and New terminal Tab at window check them and close the window.
+5. Now if you right click any folder go to the last option Services there you will find the Services you selected .
+6. Click on New Terminal at folder and it will start a terminal with CWD as the folder that you right clicked.
+</pre></p>
+<h2> <span class="mw-headline" id="Make_Screenshots">Make Screenshots</span></h2>
+<p>GNU/Linux and Windows users: <strong>Alt + PrintScreen</strong> = screenshot of the active window</p>
+<p>A simple way to capture screen shot on Linux is with the <code>import</code> command from ImageMagick Combined with the <code>sleep</code> command, this line will give 5 seconds to switch views to whatever you want to have in the screen shot,
+   <pre>$ sleep 5; import -w root myimage.jpg</pre></p>
+<p>More about ImageMagick and other GNU/Linux tools here for clipping smaller bits of the screen <a class="external text" href="http://tips.webdesign10.com/how-to-take-a-screenshot-with-ubuntu-linux" rel="nofollow">Screenshot tools</a></p>
+<p>Mac users: <strong>Shift + ⌘ + 3</strong> = screen shot and  <strong>Shift + ⌘ + 4</strong> = targeted piece of the screen that you can select.  You can also change the settings to default to .jpg and not .png and set a different default folder.<br/>
+Another Mac option: Applications-&gt;Utilities-&gt;Grab Grab Allow you to do timed windows and your full desktop. Save as tiff, then open with Preview and export as png or jpg.</p>
+<p>For Spanish speaking students you may find the "Snipping tool" as "Recortes" at Windows 7/Vista/8 versions and for Portuguese speaking students this tool is labelled as "Ferramenta de Captura" at Windows 7/Vista/8 versions</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 153/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3953-0!*!0!!en!*!* and timestamp 20161126062733 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-install&amp;oldid=34327">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-install&amp;oldid=34327</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

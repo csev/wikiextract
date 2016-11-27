@@ -1,0 +1,60 @@
+[[Pythonlearn:resources-week11 | Back to Chapter 11 Resources]]
+
+**There are no  assigned problems for this chapter.**
+
+Chap 11 Exercise 1
+
+<pre>
+
+file = raw_input('Enter filename: ')
+
+if len(file) < 1 : file = 'mbox.txt'
+
+try :
+    hand = open(file)
+except :
+    print 'Unable to find or open', file
+    exit()
+
+exp = raw_input('Enter a regular expression: ') # as, for example, __^Author__
+
+import re
+count = 0
+
+for line in hand :
+    line = line.rstrip()
+    if re.search(exp, line) : count += 1
+
+print file, 'had', count, 'lines that matched', exp
+
+</pre>
+
+Chap 11 Exercise 2
+
+<pre>
+
+file = raw_input('Enter filename: ')
+
+if len(file) < 1 : file = 'mbox.txt'
+
+try :
+    hand = open(file)
+except :
+    print 'Cannot find or open', file
+    exit()
+
+import re
+numlist = list()
+count = 0
+
+for line in hand :
+    line = line.rstrip()
+    stuff = re.findall('^New Revision: ([0-9]+)', line)
+    if len(stuff) != 1 : continue
+    count += 1
+    stuff = float(stuff[0])
+    numlist.append(stuff)
+
+print 'Average: ', sum(numlist) / count
+
+</pre>

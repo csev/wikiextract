@@ -1,0 +1,191 @@
+
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+Lecture Notes
+===========  
+In this chapter, we’re talking about taking our Python applications and changing the source of their data. Up until now, we’ve been reading files. But a lot of the time you need to look at data that’s coming in from the Internet. So now we're looking at programs that talk to the Internet. 
+
+Request-Response Cycle
+-------------------------
+Your browser sends commands across the Internet to servers, which run server languages like PHP, MySql, etc., and send stuff back. We’re writing Python programs that use the same protocol as your web browser so we can read information across the Internet. 
+
+Transport Control Protocol (TCP) is built on top of IP (Internet Protocol). It assumes IP might lose some data, so it stores and transmits data if it seems to be lost. It handles “flow control.” 
+Peer-to-peer transport layer: computer applications effectively make telephone calls from one application to another. We don’t worry too much about the details of the connection, just like when you make a phone call, you don’t care so much about how it works, just that you and the other person can hear each other. 
+
+Socket: “In computer networking, an Internet socket or network socket is an endpoint of a bidirectional inter-process communication flow across an Internet Protocol-based computer network, such as the Internet.” A socket is a concept, in which two computer applications talk across a network. Like a file handle connects us to a disc drive, a socket is a way to connect to another process and get data back. File handles and sockets are like portholes that allow us to send and receive information to and from the outside world.  
+Lots of different applications can run on the same server, so these applications have what we call a TCP Port Number, which is like an extension on a phone number. (The IP address is like the main phone number.) It allows you to talk specifically to the web server on a host, or the email server on a host, etc. 
+
+A client initiates a connection, the server responds to it.
+
+Port 80 is the one we use the most, the port for a web server (HTTP). The port number is determined by the protocol.  
+
+Python Socket Library
+----------------------
+There’s a really nice library in Python called the socket library that saves us from having to understand how the connection works. 
+
+    import socket
+    mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    mysock.connect(('www.py4inf.com', 80))
+    mysock.send('GET http://www.py4inf.com/code/romeo.txt HTTP/1.0\n\n')
+
+The second line above is like “open” when we’re dealing with file handles. It creates a porthole that allows us to communicate with the network. You’ll probably never change that line. (The weird “socket.socket” syntax is because socket is both the name of the library and the method within the library.) This line effectively opens the porthole to the outside world, but it doesn’t connect the socket to anything yet. That’s what the next line is for—it tells the socket where you want the other end to connect. (You can’t just connect to anything—there has to be running software waiting for your connection.)  
+
+Urllib: open urls as if it were a file (and read the content)
+-------------------------------------------------------------
+The urllib library makes it even easier to open and read the content of urls, you treat a webpage much like a file. We add the 'for line in filehandle' loop to print the contents of the url. 
+
+    import urllib
+    filehandle = urllib.urlopen('http://www.py4inf.com/code/romeo.txt')
+    for line in filehandle:
+     print line.rstrip()
+
+
+# [[Pythonlearn:exercises-chapter12 | Chapter 12 Exercises]]  
+The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actually graded assignments.
+
+
+# tags = soup('a') and tag.get('href', None) - can use but don't understand
+
+
+**Student's Question:**
+
+Have been wondering about the expression
+
+**tags = soup('a')**
+
+I understand that the result of it is a list of all <a> tags in a format of [<a...>, <a...>, <a...>]
+
+What I don't understand is the function of each element in "soup('a')" and their relationship:
+
+Is it a 'soup' object containing a string 'a' (or any other string I put there; or is it only certain special words recognized by BS)?
+Is it a particular part of a 'soup' object indicated by the 'a'?
+Is it a method of 'soup' applied to 'a'?
+
+When asking for type(soup), I'm getting <class 'BeautifulSoup.BeautifulSoup'> which doesn't help my understanding...
+
+I feel silly but I did try searching for soup() and couldn't find any answers, which makes me think I'm thinking of it wrong :) What exactly am I saying - the long human language version, please! - when I'm saying tags=soup('a')?
+
+I keep seeing expressions with findAll (or find_all for BS4), never a shortcut like tags=soup('a'):
+
+    for a in soup.find_all('a', href=True): print "Found the URL:", a['href']
+or
+
+    href_tags = soup.find_all(href=True)
+
+
+(2) 
+    **for tag in tags:
+    print tag.get('href', None)**
+
+(a) Saw an opinion that since we limit the search for href to the contents of the <a> tags, checking for None would be redundant since all <a> tags contain an href attribute, and the following was suggested:
+
+    links = soup.find_all('a',attrs={'href': re.compile("^http://")})
+
+    for tag in links:
+    link = tag['href']
+    print link
+
+(b) **tag.get()**
+- what exactly am I doing and what are the options in the parentheses?
+
+Any word of wisdom on it?.. I have successfully used the above expressions but I apparently don't dig either of them :(
+
+
+
+**Mark Montgomery, Mentor:**
+
+The 'a' is not specific to the soup object necessarily. Soup is extracting portions of the HTML file. In this case, the <a> is referring to an anchor tag. As you can see on that link I provided, there are many types of tags in HTML.
+
+When you create the soup item, Beautifulsoup parses the HTML file and extracts the tag contents, etc for you to use in your code. Then when you say tags=soup('a'), you are assigning the list of <a> anchor data to a variable called 'tags'.
+
+
+
+**Stephen Catto, Mentor:**
+
+It's a lot easier to stick with what's in the course, and supported, and the supplied starter code.
+
+Not using BS4, find_all() isn't used, using simple soup() and not a regex / compile. Just forget that stuff, that's all for later and understanding HMTL / regex beyond what the course uses.
+
+For what's in the course, we are saying soup(find something) , let it do the regex, parsing in the background for us.
+
+Some of what you ask is HTML , BS4, regex course which isn't what this course is.
+
+In your 2a "checking for None would be redundant since all <a> tags contain an href attribute, and the following was suggested:"
+
+It depends on the data, as not all anchor tags have an href, like
+
+    <a name="section1">
+or href appears in a link tag that is not an <a>
+
+
+**Student's Question:**
+
+[...] So in tag.get('href', **None**), what does exactly None do? We are asking to look at a 'tag' (in 'tags' list), find (all?) the 'href' occurrences, and return it as a list. If there no matches (None) - will an empty list be created, or is it saying to create a list if there is a match, and do nothing if there's None?..
+
+
+**Jamie Hall, Mentor:**
+
+this
+
+    tags = soup('a')
+
+is just a shorter version of
+
+    tags = soup.find_all('a')
+
+the longer version is more helpful, as the method name tells you what you're doing ie you're finding all of the 'a' elements from your soup object
+
+these operations
+
+    for tag in tags:
+        print tag.get('href', None)
+        
+    for tag in links:
+        link = tag['href']
+work because BS provides a dictionary-like interface to the object that you're calling tag. If you recall how to work with dicts from the previous course, you should feel empowered here
+
+
+**Stephen Catto, Mentor:**
+
+None is the same as in earlier parts of the course, the default value in Part 2 it was 
+    .get(data, 0) + 1.
+
+You can see this with a little example,
+
+
+    >>> sample_dict = {"k1":1, "k2":2}
+    
+    key is in dictionary, returns value
+    
+    >>> data = sample_dict.get("k1",0)
+    
+    >>> data
+    
+    1
+    
+    data not in dictionary, returns default 0
+    
+    >>> data = sample_dict.get("k3",0)
+    
+    >>> data
+    
+    0
+    
+    change default to None, same lookup
+    
+    >>> data = sample_dict.get("k3",None)
+    
+    >>> data
+    
+    >>> # this blank line no output because of None
+    
+    >>> data is None
+    
+    True
+    
+    >>>
+    
+
+# More Resource Topics
+Add resources for this chapter to this page..

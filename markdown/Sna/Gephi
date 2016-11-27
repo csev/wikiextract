@@ -1,0 +1,19 @@
+###Installation
+
+Gephi requires Java 6 or higher. You can download the latest version from [www.java.com/getjava/](http://www.java.com/getjava/).
+If you are having installation difficulties, the best place to check is likely [the official Gephi forum](http://forum.gephi.org), where you can search and also seek help.
+
+###Cool plugins
+
+[OpenOrd Layout Plugin for large graphs](https://gephi.org/plugins/openord-layout/)
+
+###FAQ
+
+* *The Force Atlas 2 layout just keeps going*: That's OK, just click the 'stop' button when the visualization is to your satisfaction.
+* *When the layout algorithm stops, the network is in a strange orientation*. Go to the drop down menu where you selected your layout algorithm, you will see 'Counterclockwise Rotate' and 'Clockwise Rotate', which you can use to re-orient the layout
+* *When you select the filter, the visualization changes, but the numbers in the upper right do not. Is that supposed to happen?*:
+* When you need to do some quick analysis and you want no programming, you can export your Data-Library table into CSV file. You can open it in excel or any spreadsheet software and do quick analysis like quick counting of nodes in the largest component.
+* *Looking for the the file "dining.gephi", - check the syllabus or the file associated with the lecture.
+* *When trying to use Gephi on Mac OS X 10.7.5 I had to download Gephi version 0.8.1 instead of the newer 0.8.2 to get it to work
+* If you are creating a filter, it is possible to enter exact numbers rather than use the slider. Just double-click on the number you are trying to change, and enter the new number.
+* *Gephi freezes when loading the sample graphs on Mac OS X*: On Mac OS X (Mountain Lion at least), if Java 7 is installed and is the default JDK, then follow the instructions at https://github.com/gephi/gephi/issues/748#issuecomment-14484122 to get Gephi running using Java 6. It seems that - at least on Mountain Lion - Gephi does not run properly on Java 7 and freezes. Latest Java 6 for Mac OS X can be downloaded from http://support.apple.com/kb/DL1572 .

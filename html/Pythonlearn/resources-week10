@@ -1,0 +1,140 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week10</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Tuples"><span class="tocnumber">1.1</span> <span class="toctext">Tuples</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Tuples_and_Dictionaries"><span class="tocnumber">1.1.1</span> <span class="toctext">Tuples and Dictionaries</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#List_Comprehension"><span class="tocnumber">1.2</span> <span class="toctext">List Comprehension</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Chapter_10_Exercises"><span class="tocnumber">2</span> <span class="toctext">Chapter 10 Exercises</span></a></li>
+<li class="toclevel-1"><a href="#More_Resource_Topics"><span class="tocnumber">3</span> <span class="toctext">More Resource Topics</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<h2> <span class="mw-headline" id="Tuples">Tuples</span></h2>
+<p>Tuples are a sequence that behave much like a list, except:</p>
+<ul>
+<li>Tuples are immutable (cannot be altered)</li>
+<li>displayed surrounded by parentheses '(,)' rather than brackets '[,]'</li>
+<li>surrounding by parenthesis is just visual help; Comma is what makes tuple type</li>
+<li>cannot sort, append, reverse, reorder, etc</li>
+<li>can only: count and index</li>
+</ul>
+<p>Tuples are more efficient, they use less processing time since fewer operations are possible.  </p>
+<p>Tuples are great for "temporary variables" because they are fast and easy to work with.  </p>
+<p>Tuples can be placed on the left-hand side on an assignment statement, the parentheses can even be omitted.
+<pre>(x,y) = (4, 'fred')
+print y
+fred</pre></p>
+<h3> <span class="mw-headline" id="Tuples_and_Dictionaries">Tuples and Dictionaries</span></h3>
+<p>The 'items()' method in dictionaries returns a list of tuples (key, value).</p>
+<p>Tuples are Comparable<br/>
+The contents of a tuple can be compared and evaluated, running left to right through the listed variables. &lt;, &gt;, &lt;=, &gt;=, ==  </p>
+<p>~~Applying the sorted() function (which takes a sequence as a parameter and returns a sorted sequence) to a dictionary yields a list of its keys in sorted order; e.g.:</p>
+<pre>
+&gt;&gt;&gt; c = {'a': 10, 'c': 22, 'b': 1, 'f': 22}
+&gt;&gt;&gt; sorted(c)
+['a', 'b', 'c', 'f']
+
+We can print the key:value pairs in order by key by:
+
+&gt;&gt;&gt; for k in sorted(c):
+...     print k, c[k]
+...     
+a 10
+b 1
+c 22
+f 22
+</pre>
+<p>We can build a list of the key:value pairs in order by key by appending each pair as a tuple to an initially empty list:</p>
+<pre>
+&gt;&gt;&gt; csorted = []
+&gt;&gt;&gt; for k in sorted(c): # if c is dictionary, it CAN'T be sorted...
+...     csorted.append((k, c[k]))
+... 
+&gt;&gt;&gt; csorted
+[('a', 10), ('b', 1), ('c', 22), ('f', 22)]
+</pre>
+<p>The same thing can be achieved using a tuple (with or without parentheses) as the for-loop control and building a list of tuples from c.items(), then sorting it:</p>
+<pre>
+&gt;&gt;&gt; for k, v in c.items():
+...     csorted.append((k, v))
+... 
+&gt;&gt;&gt; csorted
+[('a', 10), ('c', 22), ('b', 1), ('f', 22)]
+&gt;&gt;&gt; sorted(csorted)
+[('a', 10), ('b', 1), ('c', 22), ('f', 22)]
+&gt;&gt;&gt; csorted = sorted(csorted)
+&gt;&gt;&gt; csorted
+[('a', 10), ('b', 1), ('c', 22), ('f', 22)]
+</pre>
+<p>Since the items() method for a dictionary returns a list of its key:value pairs as tuples:</p>
+<pre>
+&gt;&gt;&gt; c.items()
+[('a', 10), ('c', 22), ('b', 1), ('f', 22)]
+</pre>
+<p>we could just sort c.items() instead of building a new list of tuples "by hand" first:</p>
+<pre>
+&gt;&gt;&gt; sorted(c.items())
+[('a', 10), ('b', 1), ('c', 22), ('f', 22)]
+</pre>
+<p>But if we want to sort the dictionary, c, by value instead of key we need to build the list of value:key pairs as tuples by hand (by reversing the value and key (v, k)), then sort that list:</p>
+<pre>
+&gt;&gt;&gt; tmp = list()
+&gt;&gt;&gt; for k, v in c.items():
+...     tmp.append( (v, k) )
+... 
+&gt;&gt;&gt; print tmp
+[(10, 'a'), (22, 'c'), (1, 'b'), (22, 'f')]
+&gt;&gt;&gt; tmp.sort(reverse=True)
+&gt;&gt;&gt; print tmp
+[(22, 'f'), (22, 'c'), (10, 'a'), (1, 'b')] 
+</pre>
+<p>When sorting by value and there are duplicate values, the second item in the tuple defines the order of the duplicates.</p>
+<pre>c = {'a':10, 'b':1, 'c':22, 'f':22}
+tmp = list()
+for k, v in c.items() :
+    tmp.append( (v, k) )
+
+print tmp
+#[(10, 'a'), (22, 'c'), (1, 'b'), (22, 'f')]
+tmp.sort(reverse=True)
+print tmp
+#[(22, 'f'), (22, 'c'), (10, 'a'), (1, 'b')]  
+#because 'f' comes  before 'c' when sorting in reverse order.
+</pre>
+<h2> <span class="mw-headline" id="List_Comprehension">List Comprehension</span></h2>
+<p>List comprehension (represented by [,]) creates a dynamic list. 
+<pre>
+print sorted( [ (v,k) for k,v in c.items() ] )</pre>
+The above can sort a list of items in a dictionary(c) by the value. By first reversing the tuples (v,k) and then sorting it.</p>
+<h1> <span class="mw-headline" id="Chapter_10_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter10" title="Pythonlearn:exercises-chapter10"> Chapter 10 Exercises</a></span></h1>
+<p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
+<h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
+<p>Add resources for this chapter to this page..</p>
+<p><a class="external free" href="https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions" rel="nofollow">https://docs.python.org/2/tutorial/datastructures.html#list-comprehensions</a></p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 84/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3965-0!*!0!!en!*!* and timestamp 20161126063737 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week10&amp;oldid=34210">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week10&amp;oldid=34210</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

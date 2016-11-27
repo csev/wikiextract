@@ -1,0 +1,13 @@
+<pre>
+from urllib2 import urlopen
+mysn = urlopen("http://spark-public.s3.amazonaws.com/sna/datasets/week1/LadaFacebookAnon.gml").read()
+
+import networkx
+G = networkx.parse_gml(mysn)  # Now, G is a NetworkX graph object
+G = Graph(G)                  # Now it's a native Sage graph object
+
+vertex_count = len(G.vertices())
+print("number of nodes: {}".format(vertex_count))
+</pre>
+
+[See it running.](http://aleph.sagemath.org/?q=9cd79ccf-2b5a-45b6-8e11-671fc0e69773&lang=sage)

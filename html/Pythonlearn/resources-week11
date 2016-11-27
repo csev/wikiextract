@@ -1,0 +1,25 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week11</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a class="new" href="/wiki/index.php?title=Pythonlearn:_Resources&amp;action=edit&amp;redlink=1" title="Pythonlearn: Resources (page does not exist)"> Back to Resources</a></p>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<p>Regular Expression Quick Guide:
+<ul><li> ^ - Matches the beginning of a line
+</li><li> $ - Matches the end of the line
+</li><li> . - Matches any character
+</li><li> \s - Matches whitespace
+</li><li> \S - Matches any non-whitespace character
+</li><li> * - Repeats a character zero or more times
+</li><li> *? - Repeats a character zero or more times (non-greedy)
+</li><li> + - Repeats a character one or more times
+</li><li> +? - Repeats a character one or more times (non-greedy)
+</li><li> [aeiou] - Matches a single character in the listed set
+</li><li> [^XYZ] - Matches a single character not in the listed set
+</li><li> [a-z0-9] - The set of characters can include a range
+</li><li> ( - Indicates where string extraction is to start
+</li><li> ) - Indicates where string extraction is to end</li></ul></p>
+</div></div></div>

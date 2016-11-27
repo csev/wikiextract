@@ -1,0 +1,40 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Sna:Week4</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p>Concepts: Clustering, community structure, modularity, overlapping communities</p>
+<p>Activities: Detect and interpret disjoint and overlapping communities in a variety of networks (scientific collaborations, political blogs, cooking ingredients, etc.)</p>
+<h1> <span class="mw-headline" id="4B_Heuristics_for_finding_communities.">4B Heuristics for finding communities.</span></h1>
+<p><strong>Clique</strong> - fully connected subgraph in which every node is directly connected to every other node. Cliques can overlap. </p>
+<p>Cliques are not robust; one missing link can disqualify a clique. Cliques lacks core-periphery structure. Centrality measure don't apply to cliques because every node has the same degree. </p>
+<p><strong>k-cores</strong> - each node within a subgraph is connected to k other nodes in the subgraph. </p>
+<p><strong>n-clique</strong> - subgraph in which the maximum distance between any two nodes is n. The <strong>diameter</strong> in n-clique may be larger than n.</p>
+<h1> <span class="mw-headline" id="4C_community_finding">4C community finding</span></h1>
+<p>Betweenness clustering algorithm</p>
+<ul>
+<li>Compute the betweenness of all edges</li>
+<li><p>while (betweenness of any edge &gt; threshold):</p>
+<p>remove edge with highest betweenness</p>
+<p>recalculate betweenness</p></li>
+</ul>
+<p>Modularity
+$$
+ Q = 1 \dfrac{1}{2m} \sum_{vw}[A_{vw} - \dfrac{k_vk_w}{2m}] \delta(c_v, c_w), where
+$$</p>
+<p>$$A_{vw}$$ is adjacency matrix, $$k$$ is degree, $$m$$ is the total number  of edges.  If  nodes $$v$$ and $$w$$ are in the same community then  $$\delta(c_v, c_w) = 1$$, otherwise $$\delta(c_v, c_w) = 0$$</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:328-0!*!*!!*!*!* and timestamp 20161127022938 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:Week4&amp;oldid=4097">https://share.coursera.org/wiki/index.php?title=Sna:Week4&amp;oldid=4097</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

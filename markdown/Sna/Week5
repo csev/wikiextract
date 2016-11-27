@@ -1,0 +1,11 @@
+Concepts: Small worlds, geographic networks, decentralized search
+
+Activity: Evaluate whether several real-world networks exhibit small world properties, simulate decentralized search on different topologies, evaluate effect of small-world topology on information diffusion.
+
+What we are going to deal with this week?
+----------------------------------------
+This week we are going to deal with small world network. So far we have seen two types of networks - random networks and real world networks. Random networks have a remarkable property that it grows (new nodes are added) but average shortest path increases logarithmically on the number of nodes. On the otherhand real world networks have some interesting community structures but they are not random at localized scale. But we are yet to deal with the very local structure (structure around a particular node). So, what we are going to do this week is filling the gap -  is it possible for the real world networks to have properties like random network at local level?
+
+Small world experiments
+-----------------------
+* [Milgram's experiment](http://en.wikipedia.org/wiki/Milgram_experiment)

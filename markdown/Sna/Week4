@@ -1,0 +1,31 @@
+Concepts: Clustering, community structure, modularity, overlapping communities
+
+Activities: Detect and interpret disjoint and overlapping communities in a variety of networks (scientific collaborations, political blogs, cooking ingredients, etc.)
+
+# 4B Heuristics for finding communities.
+
+**Clique** - fully connected subgraph in which every node is directly connected to every other node. Cliques can overlap. 
+
+Cliques are not robust; one missing link can disqualify a clique. Cliques lacks core-periphery structure. Centrality measure don't apply to cliques because every node has the same degree. 
+
+**k-cores** - each node within a subgraph is connected to k other nodes in the subgraph. 
+
+**n-clique** - subgraph in which the maximum distance between any two nodes is n. The **diameter** in n-clique may be larger than n.
+
+
+# 4C community finding
+Betweenness clustering algorithm
+
+* Compute the betweenness of all edges
+* while (betweenness of any edge > threshold):
+
+   remove edge with highest betweenness
+
+   recalculate betweenness
+
+Modularity
+$$
+ Q = 1 \dfrac{1}{2m} \sum_{vw}[A_{vw} - \dfrac{k_vk_w}{2m}] \delta(c_v, c_w), where
+$$
+
+$$A_{vw}$$ is adjacency matrix, $$k$$ is degree, $$m$$ is the total number  of edges.  If  nodes $$v$$ and $$w$$ are in the same community then  $$\delta(c_v, c_w) = 1$$, otherwise $$\delta(c_v, c_w) = 0$$

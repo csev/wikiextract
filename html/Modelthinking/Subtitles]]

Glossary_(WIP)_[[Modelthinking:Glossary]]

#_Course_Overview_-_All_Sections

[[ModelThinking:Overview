@@ -1,0 +1,15 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Bad title</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<p>The requested page title was invalid, empty, or an incorrectly linked inter-language or inter-wiki title.
+It may contain one or more characters which cannot be used in titles.</p>
+<p id="mw-returnto">Return to <a href="/wiki/index.php/Main_Page" title="Main Page">Main Page</a>.</p>
+<div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php/Special:Badtitle">https://share.coursera.org/wiki/index.php/Special:Badtitle</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

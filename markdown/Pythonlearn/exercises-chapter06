@@ -1,0 +1,77 @@
+[[Pythonlearn:resources-week06 | Back to Chapter 6 Resources]]
+
+**Exercise 5 is  a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.**
+
+Exercise 6.1 - Write a while loop that starts at the last character in the string and works its way backwards to the first character in the string, printing each letter on a separate line, except backwards.
+
+<pre>
+#Using 'while' loop
+fruit=raw_input('Enter a string: ')
+index = len(fruit)
+while index > 0:
+    letter = fruit[index-1]
+    print letter
+    index = index - 1
+</pre>
+
+Alternate version using negative indices:
+
+<pre>
+fruit = raw_input('Enter the name of a fruit: ')
+index = -1
+while index >= -len(fruit):
+    print fruit[index]
+    index = index - 1
+</pre>
+
+
+by using slicing
+
+<pre>
+fruit = raw_input('Enter the name of a fruit: ')
+for letter in fruit[::-1]: print(letter)
+</pre>
+
+
+Exercise 6.3 Encapsulate this code in a function named count, and generalize it
+so that it accepts the string and the letter as arguments.
+
+<pre>
+def count(string, letter):
+	x = 0
+	for i in string:
+		if i == letter:
+			x += 1
+	print "The letter "+letter+" appears " +str(x)+" times in the string: "+string
+	
+count("This is a test", "t")
+</pre>
+
+Alternate version that returns the count to the calling code:
+
+<pre>
+def count(string, letter_were_looking_for):
+    result = 0
+    for letter in string:
+        if letter == letter_were_looking_for:
+            result = result + 1
+    return result
+    
+print count('supercalifragilisticexpialidocious', 'l')
+</pre>
+
+or
+
+<pre>
+def count(string, letter):
+    print("The letter \""+letter+"\" appears",(string.lower()).count(letter),"times in the string: \""+string+"\"")
+
+count("This is a test", "s")
+</pre>
+
+Exercise 6.4 There is a string method called count that is similar to the function in the previous exercise. Read the documentation of this method at https://docs.python.org/2/library/stdtypes.html#string-methods and write an invocation that counts the number of times the letter a occurs in 'banana'.
+
+<pre>
+word = 'banana'
+word.count('a',0,)
+</pre>

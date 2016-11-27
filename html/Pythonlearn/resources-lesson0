@@ -1,0 +1,127 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-lesson0</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lesson_Zero:_Getting_the_most_from_P4E"><span class="tocnumber">1</span> <span class="toctext">Lesson Zero: Getting the most from P4E</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Configure_the_Coursera_User_Settings"><span class="tocnumber">1.1</span> <span class="toctext">Configure the Coursera User Settings</span></a></li>
+<li class="toclevel-2"><a href="#Main_Menu_and_Links"><span class="tocnumber">1.2</span> <span class="toctext">Main Menu and Links</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Announcements"><span class="tocnumber">1.2.1</span> <span class="toctext">Announcements</span></a></li>
+<li class="toclevel-3"><a href="#Syllabus"><span class="tocnumber">1.2.2</span> <span class="toctext">Syllabus</span></a></li>
+<li class="toclevel-3"><a href="#Grading_and_Logistics"><span class="tocnumber">1.2.3</span> <span class="toctext">Grading and Logistics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Lectures"><span class="tocnumber">1.3</span> <span class="toctext">Lectures</span></a></li>
+<li class="toclevel-2"><a href="#Coursework"><span class="tocnumber">1.4</span> <span class="toctext">Coursework</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Quizzes"><span class="tocnumber">1.4.1</span> <span class="toctext">Quizzes</span></a></li>
+<li class="toclevel-3"><a href="#Assignments"><span class="tocnumber">1.4.2</span> <span class="toctext">Assignments</span></a></li>
+<li class="toclevel-3"><a href="#Peer_Graded_Essays"><span class="tocnumber">1.4.3</span> <span class="toctext">Peer Graded Essays</span></a></li>
+<li class="toclevel-3"><a href="#Final_Exam"><span class="tocnumber">1.4.4</span> <span class="toctext">Final Exam</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Signature_Track_and_Certificates"><span class="tocnumber">1.5</span> <span class="toctext">Signature Track and Certificates</span></a></li>
+<li class="toclevel-2"><a href="#Python_Version_and_Coding_Tools"><span class="tocnumber">1.6</span> <span class="toctext">Python Version and Coding Tools</span></a></li>
+<li class="toclevel-2"><a href="#Python_Code_Playground_and_Autograder"><span class="tocnumber">1.7</span> <span class="toctext">Python Code Playground and Autograder</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Supported_Web_Browsers"><span class="tocnumber">1.7.1</span> <span class="toctext">Supported Web Browsers</span></a></li>
+<li class="toclevel-3"><a href="#.22Mismatch.22_Error"><span class="tocnumber">1.7.2</span> <span class="toctext">"Mismatch" Error</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Giving_and_Asking_for_help"><span class="tocnumber">1.8</span> <span class="toctext">Giving and Asking for help</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lesson_Zero:_Getting_the_most_from_P4E">Lesson Zero: Getting the most from P4E</span></h1>
+<p>Welcome! Thank-you for signing up to Charles 'Dr. Chuck' Severance's <em>Programming for Everybody</em> MOOC on Coursera. This page has been written by the Teaching Assistants for this course to anticipate and answer a number of common questions raised by students each session of the P4E class. </p>
+<p>Please take some time to read and understand the information contained here. Some of the terminology and technologies may be strange to you, but students will get to know these as the class progresses. </p>
+<h2> <span class="mw-headline" id="Configure_the_Coursera_User_Settings">Configure the Coursera User Settings</span></h2>
+<p>Take a moment to configure a few settings on the <em>Account Settings</em> page. After logging into the Coursera platform, have a look at the top right corner and click The drop-down menu that shows your name. Select the <em>Settings</em> option.</p>
+<p>Look at the <em>Full Name</em> setting. This is the name that will appear on your Verified Certificate or Statement of Accomplishment. Change it if you want to.</p>
+<p>Look at the <em>Timezone</em> setting. Pick your home timezone to localise the deadlines for coursework.</p>
+<p>Nota sobre idioma español (e acho tambem para português). Python devuelve errores si se utilizan ciertos caracteres dentro del programa, incluso en los comentarios. No emplear acentuación ni tampoco la letra Ñ.</p>
+<h2> <span class="mw-headline" id="Main_Menu_and_Links">Main Menu and Links</span></h2>
+<p>You can navigate around the sections of the class by using the left-hand menu, organised into a series of 'tabs'. If this is your first time in class take time to visit a few of the more important links:</p>
+<h3> <span class="mw-headline" id="Announcements">Announcements</span></h3>
+<p>This contains important information for you from the Teaching staff. Normally, there will be an announcement each week as the next set of course materials are released, usually on a Thursday (timezone dependent). Announcements are also sent out as Emails to registered students. Take a moment to check the announcements page each time you visit the class.</p>
+<h3> <span class="mw-headline" id="Syllabus">Syllabus</span></h3>
+<p>Visit this link to see a week-by-week outline of the course, the taught content and the coursework. Notice the deadlines for the coursework. We'll talk more about coursework later on in this page.</p>
+<h3> <span class="mw-headline" id="Grading_and_Logistics">Grading and Logistics</span></h3>
+<p>This page has been removed for session 5 and the information rolled up into the Syllabus link.</p>
+<h2> <span class="mw-headline" id="Lectures">Lectures</span></h2>
+<p>The curriculum is delivered by viewing a number of video lectures each week. You can access the lectures by visiting the <em>Video Lectures and Assignments</em> link. When you visit a link, a green check mark or tick will appear against the lecture. Please note that this does not mean you have completed any coursework associated with the lecture.</p>
+<p>The lecture and assignment numbering system mirrors the section headings in the free class textbook. You can access the lecture materials by visiting the <em>Course Materials (Free)</em> link in the left-hand menu.</p>
+<h2> <span class="mw-headline" id="Coursework">Coursework</span></h2>
+<p>Programming For Everybody can be accessed from anywhere around the world. This means that coursework will have different deadlines depending on your current location. Do not use deadlines as a last minute reminder to rush and submit coursework. As a rough rule of thumb, make sure you complete all coursework on the calendar day before the deadlines.</p>
+<p>There are four types of coursework for this class:</p>
+<h3> <span class="mw-headline" id="Quizzes">Quizzes</span></h3>
+<p>Students will need to complete one quiz per week. You can access the quizzes by using the <em>Quizzes</em> link from the left hand menu link. Completed quiz scores can be seen at that link.</p>
+<h3> <span class="mw-headline" id="Assignments">Assignments</span></h3>
+<p>Students will need to complete one or more programming assignment per week. You can access each assignment by visiting the <em>Video Lectures and Assignments</em> link. </p>
+<p>Take a look at the icons to the right of each video lecture. Click the icon that looks like a computer screen or open laptop. Remember there may be more than one assignment in any given week. (If you are in Firefox and get a "Secure Connection Failed" error, your browser may not recognize the security certificate; try using another browser, such as Google Chrome.)</p>
+<p>The assignments are completed in a teaching tool called the Autograder. The Autograder is hosted by Dr Chuck and is not part of the Coursera platform. When you complete a programming assignment in the Autograder, the results can be viewed by visiting the <em>External Grades</em> link on the left-hand menu.</p>
+<p>Once the deadline has passed for a programming assignment you are free to discuss the assignment in the class forum. However, do not share any code solutions to the assignments.</p>
+<h3> <span class="mw-headline" id="Peer_Graded_Essays">Peer Graded Essays</span></h3>
+<p>Peer Graded Essays were removed from the 5th session of P4E.</p>
+<h3> <span class="mw-headline" id="Final_Exam">Final Exam</span></h3>
+<p>At the end of the course, there will be a final examination which draws from the entire taught syllabus.</p>
+<p>Access the exam, when released, by visiting the <em>Final Exam</em> link on the left-hand menu.</p>
+<h2> <span class="mw-headline" id="Signature_Track_and_Certificates">Signature Track and Certificates</span></h2>
+<p>Subject to a passing grade, every student is eligible to earn an electronic certificate called a Statement of Accomplishment. If you wish, you can enroll for the Signature Track for this course for a fee and earn a Verified Certificate.</p>
+<p>If you wish to enroll on the Signature Track you can do so during the first few weeks of the course. You cannot enroll once the invitation period closes. You can always re-do the class on the Signature Track for a Verified Certificate.</p>
+<p>For more information on the Signature Track, please click here: <a class="external free" href="https://www.coursera.org/signature/" rel="nofollow">https://www.coursera.org/signature/</a></p>
+<h2> <span class="mw-headline" id="Python_Version_and_Coding_Tools">Python Version and Coding Tools</span></h2>
+<p>This class uses Python version 2. Code written in the Python 3 syntax will not be accepted by the Autograder and Code Playground.</p>
+<p>Please follow the instructions given in the Week 1 to install Python 2 and the code editor for your operating system. You may use different code editors but if you are experiencing issues with non-standard coding environments you may be asked to use the standard coding environment. </p>
+<h2> <span class="mw-headline" id="Python_Code_Playground_and_Autograder">Python Code Playground and Autograder</span></h2>
+<p>The <em>Python Code Playground</em> is a browser-based programming tool which does not require any additional installation. It implements a subset of the Python 2 language sufficient for teaching the class curriculum.</p>
+<p>The <em>Autograder</em> is the <em>Playground</em> tool with some additional assessment logic that checks the code that students submit for programming assignments. </p>
+<p>When writing assignment code, remember that you should write code that runs on the <em>Autograder</em>. Some code may run on a local install of Python but not be accepted by the <em>Autograder</em>.</p>
+<p>The <em>Autograder</em> window is split into three 'panes':</p>
+<ul>
+<li>The coding pane, where you input your program;</li>
+<li>The <em>Your Output</em> pane, where your program will produce any output;</li>
+<li>The <em>Desired Output</em> pane, where you can see what output is expected from your program.</li>
+</ul>
+<h3> <span class="mw-headline" id="Supported_Web_Browsers">Supported Web Browsers</span></h3>
+<p>The Autograder relies on the JavaScript language built in to many browsers. Some browsers do not implement JavaScript correctly and will give unexpected errors. We recommend <strong>not</strong> using Internet Explorer for that reason.</p>
+<p>There have been a number of reports that recent versions of Firefox have been causing issues and strange behaviour in the Autograder. We recommend not using that browser.</p>
+<h3> <span class="mw-headline" id=".22Mismatch.22_Error">"Mismatch" Error</span></h3>
+<p>The <em>Autograder</em> will give you errors and other messages if your code does not answer the assignment correctly or in the expected manner. One such message is the Mismatch.</p>
+<p>The Mismatch error is specific to the Autograder, not Python itself. A Mismatch error will arise when your program does not produce the <em>exact</em> output required. The <em>exact</em> output is displayed in the <em>Desired Output</em> pane.</p>
+<p>Mismatches can require some care in resolving. Take particular care with whitespace such as spaces, tabs and carriage return/newlines.</p>
+<h2> <span class="mw-headline" id="Giving_and_Asking_for_help">Giving and Asking for help</span></h2>
+<p>This class has a dedicated <em>Discussion Forum</em> which can be accessed from the left-hand menu. In the forum you can ask for and offer assistance as you work through the curriculum. </p>
+<p>In order to maximise best and fair use of these discussions, please bear these rules in mind:</p>
+<ul>
+<li>When looking for an answer, remember to use the Search feature to see if someone has asked your question before.</li>
+<li>When giving an answer, remember to add <em>tags</em> to your new thread to help people find your post using the Search feature.</li>
+<li>Do not share answers to coursework. Instead, help your fellow students find their own answers.</li>
+<li>When trying to answer coding <em>Assignments</em> make sure to read and understand all the error messages and pop-up messages the <em>Autograder</em> gives you when running the code.</li>
+<li>Indent your code carefully and accurately. Use four spaces per level of indentation.</li>
+<li>If you are pasting code into the <em>Autograder</em>, use your browser's paste as plain text option if it has it.</li>
+<li>If the <em>Autograder</em> gives you a line number as part of the error message, you may need to look at the line before, or the entire code block to find the error.</li>
+<li>Don't share your code in the forum, even if the code is 'work in progress' and doesn't produce the correct answer. A Teaching Assistant may ask you to share a few lines of your code to help you.</li>
+<li>Sometimes, the best way you can overcome an issue with coursework is to step away from the computer and have break.</li>
+</ul>
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:5226-0!*!0!!en!*!* and timestamp 20161126114002 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-lesson0&amp;oldid=32348">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-lesson0&amp;oldid=32348</a>"</div>
+<div class="catlinks" id="catlinks"><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Pythonlearn" title="Category:Pythonlearn">Pythonlearn</a></li></ul></div></div> <!-- end content -->
+</div>
+</div>

@@ -1,0 +1,56 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week08</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lists"><span class="tocnumber">1.1</span> <span class="toctext">Lists</span></a>
+<ul>
+<li class="toclevel-3"><a href="#List_Methods"><span class="tocnumber">1.1.1</span> <span class="toctext">List Methods</span></a></li>
+<li class="toclevel-3"><a href="#List_Functions"><span class="tocnumber">1.1.2</span> <span class="toctext">List Functions</span></a></li>
+<li class="toclevel-3"><a href="#Selection_in_a_List"><span class="tocnumber">1.1.3</span> <span class="toctext">Selection in a List</span></a></li>
+<li class="toclevel-3"><a href="#Using_Strings_and_Lists_Together"><span class="tocnumber">1.1.4</span> <span class="toctext">Using Strings and Lists Together</span></a></li>
+<li class="toclevel-3"><a href="#Broken_Links_in_iBook_.22Python_for_Informatics.22_Sec_8.14_Debugging.3F"><span class="tocnumber">1.1.5</span> <span class="toctext">Broken Links in iBook "Python for Informatics" Sec 8.14 Debugging?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Glossary"><span class="tocnumber">1.2</span> <span class="toctext">Glossary</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Del"><span class="tocnumber">2</span> <span class="toctext">Del</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Mike_R..27s_comment:_This_alternate_solution_for_the_.27chop.27_function_does_not_produce_the_requested_result._The_exercise_specifically_states_to_modify_the_original_list.2C_not_a_copy._That_is_why_it_says_to_return_.22None.22.2C_because_the_original_list_is_being_changed_.28and_it_doesn.27t_make_sense_to_return_a_result_in_that_situation.29._This_solution_is_based_on_a_misinterpretation_of_the_exercise."><span class="tocnumber">2.1</span> <span class="toctext">Mike R.'s comment: This alternate solution for the 'chop' function does not produce the requested result. The exercise specifically states to modify the original list, not a copy. That is why it says to return "None", because the original list is being changed (and it doesn't make sense to return a result in that situation). This solution is based on a misinterpretation of the exercise.</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_to_Exercise_8.2:"><span class="tocnumber">2.1.1</span> <span class="toctext">Solution to Exercise 8.2:</span></a></li>
+<li class="toclevel-3"><a href="#Solution_to_Exercise_8.3:"><span class="tocnumber">2.1.2</span> <span class="toctext">Solution to Exercise 8.3:</span></a></li>
+<li class="toclevel-3"><a href="#Solution_to_Exercise_8.6:"><span class="tocnumber">2.1.3</span> <span class="toctext">Solution to Exercise 8.6:</span></a></li>
+<li class="toclevel-3"><a href="#About_Exercise_8.6"><span class="tocnumber">2.1.4</span> <span class="toctext">About Exercise 8.6</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<h2> <span class="mw-headline" id="Lists">Lists</span></h2>
+<p>Collection - allows us to put many values in a single variable.<br/>
+Simple variables are not collections. The previous value is overwritten when changed.<br/>
+<ul><li> A List is made up of list 'constants'. Lists are surrounded by square brackets [] and the constants in the list are separated by commas. ([2,4,6,8]) 
+</li><li> A List element can be any Python object, even another list
+</li><li> A List can be empty
+</li><li> Lists are mutable (they can be changed)
+<ul><li> This is a big difference between lists and strings.  Strings are NOT mutable.  Strings and lists are similar when it comes to other functions such as concatenation, slicing, the pattern for indexing the elements within the list, and others.
+</li></ul>
+</li><li> When len() is used on a list, it counts and returns the number of constants that make up the list. (not the number of characters)<br/>
+</li><li> Lists can be concatenated using +
+</li><li> Lists can be sliced<br/>
+</li><li> List is a unique type that can be checked using type() (result: &lt;type 'list'&gt;)
+</li><li> An empty list can be created with list(), or setting a variable to "[]", e.g. stuff = []
+</li><li> Lists can be tested for contents using in/not in
+</li><li> List is an ordered sequence</li></ul></p>
+</div></div></div>

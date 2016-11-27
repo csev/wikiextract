@@ -1,0 +1,356 @@
+
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+[[Pythonlearn:exercises-chapter03 | Chapter 3 Exercises]]  
+The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.  
+
+# Lecture Notes - Conditional Execution
+
+Visualize python great tool for beginners
+
+
+Stanley Canning a few seconds ago
+I would really recommend students to use the visualizer that can be found at
+
+http://www.pythontutor.com/visualize.html#mode=edit
+
+It goes through each line of code line by line and points out where you have an error unlike the python playground which gives an error message but no indication where you went wrong.
+
+It certainly helped me and I hope it helps others
+
+*******************************************************************************************
+
+Computer programs have to make decisions all the time.
+
+- If the user presses the play button, play the corresponding song.
+- If the bank account balance is less than zero, send an automated email warning.
+- If the spaceship image touches the space-mine image, play the explosion sound and display the "Game Over!" image.
+
+Up until now we've been writing code that executes sequentially line by line from top to bottom without invoking any decision structures. But Python provides a way for us to execute alternative code if we want one desired output or another section of code if that is the more appropriate behavior. This is called **conditional execution**. Example:
+
+     if x > 0 : print 'x is positive'
+
+The above code simply evaluates whether the number stored in variable **x** is greater than 0. If it is, the `print` will execute; if it is not, Python ignores it and moves on with the rest of your program. There are a lot of moving parts to this code, so let's break it down to its fundamentals.
+
+*Nota Jenevain:* If you're using Python 3, do not forget to use parentheses when calling to print. Otherwise, the program won't work.
+
+## Basics of Conditional Statements
+
+Conditional statements let Python know it is about to enter a decision-making structure. The `if` statement is the simplest of the conditional statements (to read more on other conditional statements see **Conditional Execution: More Complex Conditionals: Alternative Execution** below). Conditional statements always end with the `:` colon character, after which the code you may want to execute is placed.
+
+*Nota Bene:* In the above example the `print` function is placed on the same line as the `if` statement, immediately following the `:` character. This is an acceptable format if you only have one line of code you want to execute after your conditional statement. If there is a whole section of code, however, (often referred to as a *code block*) that you want to execute, the valid syntax is to place them in the following lines under the `if` and indent it 4 `space` characters in, forming a visual code block.
+
+    if x > 0 :
+        print 'x is positive'
+        print 'all other numbers bigger than x are probably positive as well'
+
+### Boolean Expressions
+
+The `x > 0` segment is called a boolean expression. Boolean expressions test its given parameters, in this case the variable **x** to the left against the numeric literal 0 to the right, and returns a value of either `true` or `false.` The actual condition being tested depends on what comparison operator is being used in the middle.
+
+### Comparison Operators
+
+There are many different ways to construct a conditional statement in Python using comparison operators. The comparison operators provided by Python are:
+
+- Less than ( < )
+     - `x < y`
+- Less than or equal ( <= )
+     - `x <= y`
+- Greater than ( > )
+     - `x > y`
+- Greater than or equal ( >= )
+     - `x >= y`
+- Equality ( == )
+     - `x == y`
+- Inequality ( != )
+     - `x != y`
+
+*Nota Bene:* A common source of programming errors is accidentally confusing the double equals `==` *equality operator* with the single equals `=` *assignment operator*, which outside of the context of Python is more commonly associated with the mathematical equals sign. In Python `=` is the *assignment operator*, meaning it is strictly used for assigning values to variables whereas the `==` *equality operator* is a comparison operator that tests whether two values are equivalent and returns a `bool` value of `true` or `false.` Comparison operators look at variables but do not actually change their values.
+
+Another possible error is forgetting to add the colon (:) where needed.
+
+## More Complex Conditionals
+
+###Logical Operators
+
+Python also provides a set of logical operators to combine multiple boolean expressions together for more complex boolean logic testing.
+
+- Logical AND ( and )
+     - `and` checks whether both boolean expressions evaluate as true
+     - `if x > 0 and y > 0 : print 'this line runs if both numbers are positive'`
+- Logical OR ( or )
+     - `or` checks whether either expression is evaluated as true
+     - `if x > 0 or y > 0 : print 'this line runs if either x or y is evaluated as positive'`
+- Logical NOT ( not )
+     - `not` negates a boolean expression, i.e. if the `bool` value returned is `false` then `not` evaluates to `true`
+     - `if not( x > y ) : print 'this line runs when x is less than or equal to y'`
+
+Considering that A and B are boolean expressions, we can build the truth table presented below:
+
+<table border="1">
+<caption>Logical operators truth table </caption>
+    <tr>
+        <th>A</th><th>B</th><th>A and B</th><th>A or B</th><th>not A</th>
+    </tr>
+    <tr>
+        <td>true</td><td>true</td><td>true</td><td>true</td><td>false</td>
+    </tr>
+    <tr>
+        <td>true</td><td>false</td><td>false</td><td>true</td><td>false</td>
+    </tr>
+    <tr>
+        <td>false</td><td>true</td><td>false</td><td>true</td><td>true</td>
+    </tr>
+    <tr>
+        <td>false</td><td>false</td><td>false</td><td>false</td><td>true</td>
+    </tr>
+</table>
+
+### Conditional Execution
+
+* We use conditional execution to check conditions and change the behavior of program.
+
+* The Boolean expression after the if statement is called the condition.
+
+* We end the if statement with a colon (:) and lines after the if statement are indented.
+
+* If you enter an if statement, the prompt will change from 3 chevrons (>>>) to three dots (...). This is where you place your compound statement.
+
+* Compound Statement is the if statement header line followed by indented block statements
+
+*Examples:
+    
+     #example 1:
+
+     >>>if x > 0:
+     ...    print ("x is positive")
+
+     #example 2:
+ 
+     >>>if x < 0 :
+     ...    pass      # need to handle negative value
+    
+     #example 3:
+    
+     >>>x = 3
+    
+     >>>if x < 10:
+    
+     ...    print "Small"
+     ...
+     Small
+     >>>
+
+
+### Alternative Execution
+
+There are even more complex conditional statements available to exercise better control over code block execution in the form of the `elif` and `else` statements.
+
+`elif` example:
+
+     if x % 2 == 0 :
+         print 'x is an even number'
+     elif not( x % 2 == 0) :
+         print 'x is an odd number'
+
+An abbreviated amalgam of the words "else if", the `elif` statement follows beneath the initial `if` code block but de-indented. It is nearly identical to the `if` statement in its form.  You can provide another set of boolean expressions to test after the `elif` followed by a `:` and an alternative indented block of code to execute should that boolean logic evaluate as true instead of `if`.
+
+     if x % 2 == 0 :
+         print 'x is an even number'
+     else :
+         print 'x is an odd number'
+
+`else` is a final catch-all condition statement placed at the bottom of an conditional statement stack.
+
+### Chained Conditionals
+
+`if`, `elif`, and `else` statements can be combined to form a comprehensive logical flow to your program:
+
+     if x > 0 :
+         print 'x is a positive number'
+     elif x < 0 :
+         print 'x is a negative number'
+     else :
+         print 'x is 0'
+
+You can place as many `elif` conditionals after the initial `if` statement as you deem necessary; however, be careful how you structure your chained conditionals. Python evaluates sequentially line by line from top to bottom, and as soon as Python encounters a boolean expression it evaluates as true it will execute its corresponding code block and skip the rest of the conditional statements, returning back to the main body of code. This holds true even if there were other conditional statements beneath that which may have also been true. Also, the terminal `else` statement isn't strictly necessary, but most programmers appreciate having the extra layer of control over program execution should all other above parameters evaluate false.
+
+
+I tried to write a programme using if and elif , In the beginning My programme  did not  work.    Ben Hills  showed me  where the errors were 
+
+ My programme that did not  work
+
+age = raw_input ('please write your age')
+
+if age > 50:
+
+print 'you must be joking try again'
+
+quit()
+
+elif age > 50 :
+
+print ' I want to wish you '
+
+quit()
+
+print 'a happy birthday'
+
+reply from Ben Hills
+
+
+Hi Stanley,
+
+I can see a few problems with this code. Firstly, quit() is a function call to exit Python and is not really needed here as your program will exit naturally when it gets to the end.
+
+Secondly, the raw_input call stores whatever you enter into age as a String and not a number and so has an unexpected effect. You'll need to convert it to an integer first, something like:
+
+age = raw_input('please write your age')
+
+# Convert the input to an integer.
+age = int(age)
+This will convert what you enter to an integer.
+
+Finally, your if and elif lines do the same thing - they both check that the number is greater than 50 which I imagine is not quite what you were trying to do :)
+
+ 0 Upvote
+·
+Reply
+### Nested Conditionals
+
+You can also have one or more conditional statements indented as a subset of a parent conditional, forming a hierarchy of nested conditional logic:
+
+     if x == y :
+         print 'x and y are equal'
+     else :
+         if x < y :
+             print 'x is less than y'
+         elif x > y :
+             print 'x is greater than y'
+
+*Nota Bene:* Although nested conditionals make the hierarchy and structure of your conditional code blocks readily apparent, nesting too far quickly devolves legibility and makes program flow hard to follow. Avoid nesting too deeply, usually one or two levels should be sufficient. Any further need for control can be exercised with the use of logical operators and strategically combined boolean expressions.
+
+## Error Handling Code
+
+### Try/Except
+
+There is a conditional execution structure built into Python to handle potentially error prone code called the “try / except” block. The idea of `try` and `except` is that if you know that a particular block of code may have a problem executing and you want to maintain some semblance of program control instead of Python simply quitting with errors when it encounters this potentially volatile code, you can provide Python an alternative block of code to be executed if an error occurs. These extra statements (the `except` block) are ignored if there is no error. This is especially useful for code that involves potentially erroneous user input but can apply to any code debugging situation you're dealing with.
+
+Try/Except - Beginning with `try,` Python tests the first operation. If the operation fails, then it proceeds to follow the instructions in `except.` If the `try` is successful then `except` is skipped.
+
+    test = raw_input("Enter an integer:")  
+    try:  
+       test = int(test)  
+    except:  
+       print "Invalid entry."
+       quit()  
+    result = test * 2  
+    print result  
+
+The code above uses `try` to test whether the input from the user is an integer. If the input is an integer, it will multiply the integer by 2. If the input is not an integer then the message "Invalid entry." will be displayed before exiting the program with the *quit()* function.
+
+**Nota Bene:** The `except` block is meant to be a chance to regain program control. At this point of the execution an error has already occurred in your code. Your priority in this block should be to either prompt the user and then safely quit or to set default values to your working variables before letting the program continue execution. Because after an except block is finished executing the program will continue to run any code in the main body beyond the try/except block. In the case of the above example, we can either set `test = 1` or some other default value before we let it continue execution or we can prompt the user and *quit()* within the except block itself as we have done. Without either of these error handling strategies, Python will simply try to calculate `result` as soon as it leaves the `except` block with erroneous data and this will probably produce an unexpected result; e.g., if you comment out the `quit()` and enter a string instead of an integer it will print the error message but then the string repeated twice, because that's what `"some string"*2` means in Python.
+
+
+I tried this program and  entered my name instead of a number  I received an error 
+ValueError: invalid literal for int() with base 10: 'stan' Can anyone help to explain the error 
+
+Thanks 
+
+Stan 
+
+Stan, I am not getting an error while running the code immediately above. Joel
+
+**Pratik Dhole here ..Remember :**  Stan `except:` block in Python is used to catch the error while user might do some mistake in run time.<br />
+Whatever the code you write below `except:` will execute as its the functionality of it. It continue the flow of program. Here are some changes in your code : <br />
+
+    test = raw_input("Enter an integer:")  
+    try:  
+       test = int(test)
+       result = test * 2
+       print result
+    except:  
+       print "Invalid entry."
+       quit()  
+    # if u print after except this will also run ..
+    #just remove comment of the below line and see   
+    #print "code still runs"   # this will execute
+
+### Guardian Patterns in Logical Evaluations
+
+Consider the following code:
+
+     ​ >>> x = 1
+     ​ >>> y = 0
+     >>> x >= 2 and (x/y) > 2
+     False
+     >>> x = 6
+     >>> x >= 2 and (x/y) > 2
+      Traceback (most recent call last):
+     File "<stdin>", line 1, in <module>
+     ZeroDivisionError: integer division or modulo by zero
+
+When evaluating boolean expressions in a conditional statement Python compares each condition from left to right in the line as it encounters them. Because of this as well as the definition of the logical `and` operator the first conditional statement didn't cause an error, even though the same divide by zero `x/y` boolean expression was present as in the second conditional statement that caused a traceback error. This is because the first expression `x >= 2` evaluated `false` before it got to the divide by zero expression. When Python detects that there is nothing to be gained by evaluating the rest of a logical expression, it stops its evaluation and does not do the computations in the rest of the logical expression. When the evaluation of a logical expression stops because the overall value is already known, it is called *short-circuiting* the evaluation.
+
+This short-circuit of logical evaluations behaviour can be utilized with strategically placed `and` operators to implement an error handling technique called *guardian patterns*.
+
+     ​ >>> x = 1
+     ​ >>> y = 0
+     ​ >>> x >= 2 and (x/y) > 2
+     ​ False
+     ​ >>> x = 6
+     ​ >>> x >= 2 and y != 0 and (x/y) > 2
+     False
+     ​ >>> x >= 2 and (x/y) > 2 and y != 0
+     Traceback (most recent call last):
+     File "<stdin>", line 1, in <module>
+     ZeroDivisionError: integer division or modulo by zero
+
+The first conditional statement doesn't cause an error because the first expression `x >= 2` evaluates as false and short circuits the evaluation before the division by zero expression is hit. However in the second conditional statement because of the error preventive `y != 0` expression we effectively force a short circuit before the last expression is ever hit. `y != 0` is said to act as a *guard* to insure that `x/y` is only executed if `y` is a non-zero number.
+
+**Note**
+
+Depending on project logic `y == 0` comparsion also may be used as guard
+
+     ​ >>> x >= 2 and (y == 0 or (x/y) > 2)
+     True
+
+Note from my trials: I first assumed the 'try' 'exception' could be used to catch wrong user input, but I finally understand this only catches the exceptions thrown by Python itself. So the word 'except' makes better sense now. :) 
+
+# Exercises 
+
+* **Exercise 1.** *Stochita Radu*
+
+> You ask the user to enter his age. Check to see if the input is actually a number. [Solution](http://pastebin.com/BrZkpnht)
+
+> *For example, if the user enters `ds`, let the computer print an error*
+
+* **Exercise 2.** *Stochita Radu*
+
+> The user enters a number between 0 and 10:
+
+> * number >= 8: print "Cool"
+
+> * number >= 6: print "Good"
+
+> * number >= 4: print "Meh"
+
+> * number >= 2: print "Nevermind"
+
+> * number >= 0: print "Ouch!"
+
+> *Don't forget to show the user an error if the number entered is not a number and if it is not in the specified range.* [Solution](http://pastebin.com/3ZkzBhbS)
+
+* **Exercise 3.** *Stochita Radu*
+
+> You want to calculate how much do you earn per month. Enter the number of hours that you work and the rate that you are paid. 
+
+> *Remember that if you work more than 40 hours, you will get paid with 50% more.*
+
+> *P.S: Remember to check for errors.*
+
+> *P.S: Remember that you can not work with negative numbers.* [Solution](http://pastebin.com/k7zNMyGL)
+
+# More Resource Topics
+Add resources for this chapter to this page..

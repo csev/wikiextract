@@ -1,0 +1,155 @@
+Welcome to the Social Network Analysis wiki page!
+[[File:Snacourselogo.jpeg|200x180px]] 
+
+Please join in and help share any useful advice, tips or suggestions with your fellow course participants. Feel free to create pages as needed. To see how to edit/create a page, see "Help" on the left navbar.
+
+## Pre-Course Survey
+* [[Sna:Survey2|Pre-Course Survey Results Winter 2013]]
+* [[Sna:Survey|Pre-Course Survey Results Fall 2012]]
+
+## Signature Track
+
+## SNA Course FAQ
+
+[SNA Course FAQ](https://class.coursera.org/sna-002/wiki/view?page=FrequentlyAskedQuestions) 
+
+Come follow us on [SNA Twitter](https://twitter.com/SNAcourse)
+
+## Datasets 
+
+* [CASOS](http://www.casos.cs.cmu.edu/computational_tools/data2.php)
+* [Datamob](http://datamob.org/datasets)
+* [Enron Email Dataset](http://www.cs.cmu.edu/~enron/)
+* [Mark Newman's network data collection](http://www-personal.umich.edu/~mejn/netdata/)
+* [National Bureau of Economic Research](http://www.nber.org/data/)
+* [Gephi Sample Datasets](http://wiki.gephi.org/index.php/Datasets)
+* [Quandl](http://www.quandl.com/)
+* [Stanford large network data set collection](http://snap.stanford.edu/data/)
+* [Twitter Census - Conversation Metrics](http://www.infochimps.com/datasets/twitter-census-conversation-metrics-one-year-of-urls-hashtags-sm)
+
+## Data Visualization
+
+* [D3.js - Data-Driven Documents](http://d3js.org/) D3.js is a JavaScript library for manipulating data-based documents
+* [FlowingData](http://flowingdata.com/) Data visualization examples and tutorials
+* [Many Eyes](http://www-958.ibm.com/software/analytics/manyeyes/) Data visualization tools from IBM
+* [visual.ly](http://visual.ly/network-graph-programming-languages-influence) Interactive network graph example
+
+## SNA Tools
+
+###Additional Programming Resources
+* [[SNA:Dataset|Loading Network Data without Programming]]
+* [An Introduction to Interactive Programming in Python](https://www.coursera.org/course/interactivepython)
+* [Code Academy](http://www.codecademy.com)
+
+###iGraph
+* The network analysis library we will be using in particular is [igraph](http://igraph.sourceforge.net/documentation.html)
+* iGraph has some built-in demos, be sure to check them out, demo(package="igraph"), or specifically e.g. demo(centrality)
+* [iGraph Tutorial - incomplete](http://igraph.sourceforge.net/igraphbook/igraphbook-creating.html)
+* [python-igraph Tutorial](http://hal.elte.hu/~nepusz/development/igraph/tutorial/tutorial.html)
+
+###Gephi
+* Download [Gephi](http://gephi.org/) and explore some of its [tutorials](https://gephi.org/users/).
+* Check out our [[Sna:Gephi|Gephi page]] (for course-specific topics/troubleshooting).
+* [Using Gephi Tool for visualizing twitter network](http://blog.ouseful.info/2011/07/07/visualising-twitter-friend-connections-using-gephi-an-example-using-wireduk-friends-network/)
+* [The Egyptian Revolution on Twitter](https://gephi.org/2011/the-egyptian-revolution-on-twitter/)
+
+###GML
+* [How to create a GML file](https://class.coursera.org/sna-2012-001/forum/thread?thread_id=435)
+
+###Mining the Social Web
+* [Mining the Social Web GitHub](https://github.com/ptwobrussell/Mining-the-Social-Web)
+* [Mining the Social Web (2nd Edition) GitHub](https://github.com/ptwobrussell/Mining-the-Social-Web-2nd-Edition)
+
+###NetLogo
+* For help running NetLogo, please read our  [[Sna:NetLogo|NetLogo wiki page]].
+* For general NetLogo demonstrations [here](http://ccl.northwestern.edu/netlogo/index.shtml)
+* [Lada's collection of network-specific demos](http://www.ladamic.com/netlearn/)
+
+###Newt
+* [Newt](https://github.com/psychemedia/newt)
+
+###NodeXL
+* [NodeXL](http://nodexl.codeplex.com/)
+* Note: Windows OS and Office 2007 or 2010
+
+###R
+* R is freely available [here](http://www.r-project.org/). 
+* For installation help, check [here](http://cran.r-project.org/doc/manuals/R-admin.html)
+* There are network analysis libraries for R such as [SNA library](http://cran.r-project.org/web/packages/sna/index.html) (see [Journal of Statistical Software article on sna package](http://www.jstatsoft.org/v24/i06/paper)).
+* If you work using Gephi, you should take a look at [rgexf](http://cran.r-project.org/web/packages/rgexf/index.html) library. Works with gephi's gexf graph files.
+* If you're running into issues with using R, be sure to first check out [rseek](http://www.rseek.org/) or [r-bloggers](http://www.r-bloggers.com/my-main-resources-for-r-programming/)
+
+###Python
+* [NetworkX](http://networkx.lanl.gov/) is an Open Source [Python](http://www.python.org/) package for "the creation, manipulation, and study of the structure, dynamics, and functions of complex networks". There is a [starting script](http://spark-public.s3.amazonaws.com/sna/other/hw1_with_networkx.py) provided by the course creators.
+* Also, you can use [Sage](http://www.sagemath.org), an Open Source web-based Mathematica-like computational environment that contains NetworkX and also posses its own graph library.
+ * Simple starting script [[Sna:Sage starting script|can be found]] on this wiki.
+ * There are three important documentation pages: [general graph reference](http://www.sagemath.org/doc/reference/sage/graphs/generic_graph.html), [undirected graph reference](http://www.sagemath.org/doc/reference/sage/graphs/graph.html) and [directed graph reference](http://www.sagemath.org/doc/reference/sage/graphs/digraph.html).
+ * You can use [a public installation](http://alpha.sagenb.org/), if you don't mind its slowness.
+* [graph-tool](http://projects.skewed.de/graph-tool/) is "an efficient python module for manipulation and statistical analysis of graphs (a.k.a. networks). Contrary to most other python modules with similar functionality, the core data structures and algorithms are implemented in C++, making extensive use of template metaprogramming, based heavily on the Boost Graph Library. This confers a level of performance which is comparable (both in memory usage and computation time) to that of a pure C++ library."
+
+###Java
+* [Jung - Java Universal Network/Graph Framework](http://jung.sourceforge.net) 
+* [Neo4j](http://neo4j.org) - a graph database
+* [Blueprints](https://github.com/tinkerpop/blueprints/wiki) - think JDBC, but for graph databases
+
+###JavaScript
+* [D3.js](http://d3js.org) - D3: Data Driven Documents
+* [JSNetworkX](http://felix-kling.de/JSNetworkX/) - A port of the NetworkX graph library to JavaScript
+* [arbor.js](http://arborjs.org) - a graph visualization library using web workers and jQuery
+
+###Talend
+* [Talend: Building GML Graphs](http://gabrielebaldassarre.com/build-graphs-for-social-network-analysis/)
+
+###Twitter
+* [Twitter4j](http://twitter4j.org/en/index.html)
+* [Twitter4j Dev Forum](https://groups.google.com/forum/?fromgroups#!forum/twitter4j)
+* [TwitterAPI](https://dev.twitter.com/)
+* [Python, Twitter and the 2012 French Presidential Election](http://www.laurentluce.com/posts/python-twitter-statistics-and-the-2012-french-presidential-election/)
+* [Mentionmapp](http://mentionmapp.com/#)
+* [Twiangulate](http://twiangulate.com/search/)
+* [Iteractive](http://iteractive.ca/sna/connect.php): Suitable if you follow 340 people or less
+
+###LinkedIn
+* [LinkedIn Maps](http://inmaps.linkedinlabs.com/)
+
+## Lecture Notes
+
+You can access the lecture videos by going [here](https://class.coursera.org/sna-2012-001/lecture/index) 
+
+* [[Sna:Week1|Week 1: What are networks and what use is it to study them?]]
+
+* [[Sna:Week2|Week 2: Random network models: Erdos-Renyi and Barabasi-Albert]]
+
+* [[Sna:Week3|Week 3: Network centrality]]
+
+* [[Sna:Week4|Week 4: Community]]
+
+* [[Sna:Week5|Week 5: Small world network models, optimization, strategic network formation and search]]
+
+* [[Sna:Week6|Week 6: Contagion, opinion formation, coordination and cooperation]]
+
+* [[Sna:Week7|Week 7: Cool and unusual applications of SNA]]
+
+* [[Sna:Week8|Week 8: SNA and online social networks]]
+
+## Suggested Readings
+
+Networks, Crowds & Markets by Easley & Kleinberg. See Ch 1-5,13-14,19-21 [online](http://www.cs.cornell.edu/home/kleinber/networks-book) or [pdf](http://www.cs.cornell.edu/home/kleinber/networks-book/networks-book.pdf)
+
+## Research and Articles
+
+["It's a Small World After All"](http://www.ams.org/samplings/feature-column/fc-2012-08): mathematical overview of small world models and experiments
+
+[ALBERT-LÁSZLÓ BARABÁSI](http://www.tedmed.com/videos-info?name=Albert-L%C3%A1szl%C3%B3_Barab%C3%A1si_at_TEDMED_2012&q=updated&year=all&sid=175&vid=257#.T8kiZ9ak9Ak.facebook) @ TEDMED 2012
+
+## Albert - Laszlo Barabasi
+
+* [BarabasiLab](http://www.barabasilab.com/pubs.php): all papers of Albert- Laszlo Barabasi in one website
+* [Diseasome](http://diseasome.eu/map.html): explore the human disease network 
+
+
+## Network Terminology
+[[Terms]]
+
+## Technical Support
+[[SNA:Guess|Launching Applets without java-enabled web browsers]]

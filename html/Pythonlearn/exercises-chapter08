@@ -1,0 +1,95 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter08</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week08" title="Pythonlearn:resources-week08"> Back to Chapter 8 Resources</a></p>
+<p><strong>Exercises 4 &amp; 5 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.</strong></p>
+<p><em>Exercise 8.1</em> - Write a function called chop that takes a list and modiﬁes it, removing the ﬁrst and last elements, and returns None.
+Then write a function called middle that takes a list and returns a new list that contains all but the ﬁrst and last elements.</p>
+<pre>
+numbers = [1, 2, 3, 4, 5, 6]
+
+
+def chop(x):
+    #x = x[1:len(x)-1]    #this is not right as mentioned we need to modify, not create new list
+    '''right code is below'''
+    del x[0]
+    del x[len(x)-1]
+
+
+def middle(y):
+    return y[1:len(y)-1]
+
+
+print chop(numbers)
+print middle(numbers)
+</pre>
+<p><em>Exercise 8.2</em> - Figure out which line of the above programis still not properly
+guarded. See if you can construct a text ﬁle which causes the program to
+fail and then modify the program so that the line is properly guarded and
+test it to make sure it handles your new text ﬁle.</p>
+<pre>
+#The program can fail if a line that start with 'From' is composed by less then 3 elements
+#If for example we modify the first line of the file mailbox-short.txt like this: From stephen.marquard@uct.ac.za
+#the program will throw a Traceback IndexError because after doing line.split()
+# the resulting list will be ['From', 'stephen.marquard@uct.ac.za'] which as a length of only 2
+#therefor making the print words[2] line to fail
+
+
+
+fhand = open('mbox-short.txt')
+count = 0
+for line in fhand:
+    words = line.split()
+# print 'Debug:', words
+    if len(words) == 0 or len(words) &lt; 3 : continue        # Seems redundant. Should be simply: if len(words) &lt; 3: continue , no?
+    if words[0] != 'From' : continue
+    print words[2]
+</pre>
+<p><em>Exercise 8.3</em> - Rewrite the guardian code in the above example without two
+if statements. Instead use a compound logical expression using the and
+logical operator with a single if statement.</p>
+<pre>
+fhand = open('mbox-short.txt')
+count = 0
+
+for line in fhand:
+    words = line.split()
+    if len(words) != 0 and words[0] == 'From':  # still throws exception when len(words) &lt; 3.  Should be: if len(words) &gt;= 3 and words[0] == 'From':
+        print words[2]
+</pre>
+<p><em>Exercise 8.6</em> - Rewrite the program that prompts the user for a list of numbers and
+prints out the maximum and minimum of the numbers at the end when the user
+enters “done”. Write the program to store the numbers the user enters in a list
+and use the max() and min() functions to compute the maximum and minimum
+numbers after the loop completes.</p>
+<pre>
+memory = list()
+
+
+while True:
+    number = raw_input('Enter a number:')
+    if number == 'done' or number == '' : break
+    memory.append(float(number))
+
+
+print min(memory)
+print max(memory)
+</pre>
+<p><strong>Exercises 4 &amp; 5 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.</strong></p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 13/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3999-0!*!0!*!*!*!* and timestamp 20161126081140 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter08&amp;oldid=33966">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter08&amp;oldid=33966</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

@@ -1,0 +1,36 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Sna:Gephi</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><h3> <span class="mw-headline" id="Installation">Installation</span></h3>
+<p>Gephi requires Java 6 or higher. You can download the latest version from <a class="external text" href="http://www.java.com/getjava/" rel="nofollow">www.java.com/getjava/</a>.
+If you are having installation difficulties, the best place to check is likely <a class="external text" href="http://forum.gephi.org" rel="nofollow">the official Gephi forum</a>, where you can search and also seek help.</p>
+<h3> <span class="mw-headline" id="Cool_plugins">Cool plugins</span></h3>
+<p><a class="external text" href="https://gephi.org/plugins/openord-layout/" rel="nofollow">OpenOrd Layout Plugin for large graphs</a></p>
+<h3> <span class="mw-headline" id="FAQ">FAQ</span></h3>
+<ul>
+<li><em>The Force Atlas 2 layout just keeps going</em>: That's OK, just click the 'stop' button when the visualization is to your satisfaction.</li>
+<li><em>When the layout algorithm stops, the network is in a strange orientation</em>. Go to the drop down menu where you selected your layout algorithm, you will see 'Counterclockwise Rotate' and 'Clockwise Rotate', which you can use to re-orient the layout</li>
+<li><em>When you select the filter, the visualization changes, but the numbers in the upper right do not. Is that supposed to happen?</em>:</li>
+<li>When you need to do some quick analysis and you want no programming, you can export your Data-Library table into CSV file. You can open it in excel or any spreadsheet software and do quick analysis like quick counting of nodes in the largest component.</li>
+<li>*Looking for the the file "dining.gephi", - check the syllabus or the file associated with the lecture.</li>
+<li>*When trying to use Gephi on Mac OS X 10.7.5 I had to download Gephi version 0.8.1 instead of the newer 0.8.2 to get it to work</li>
+<li>If you are creating a filter, it is possible to enter exact numbers rather than use the slider. Just double-click on the number you are trying to change, and enter the new number.</li>
+<li><em>Gephi freezes when loading the sample graphs on Mac OS X</em>: On Mac OS X (Mountain Lion at least), if Java 7 is installed and is the default JDK, then follow the instructions at <a class="external free" href="https://github.com/gephi/gephi/issues/748#issuecomment-14484122" rel="nofollow">https://github.com/gephi/gephi/issues/748#issuecomment-14484122</a> to get Gephi running using Java 6. It seems that - at least on Mountain Lion - Gephi does not run properly on Java 7 and freezes. Latest Java 6 for Mac OS X can be downloaded from <a class="external free" href="http://support.apple.com/kb/DL1572" rel="nofollow">http://support.apple.com/kb/DL1572</a> .</li>
+</ul>
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:416-0!*!*!!*!*!* and timestamp 20161127022943 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sna:Gephi&amp;oldid=17450">https://share.coursera.org/wiki/index.php?title=Sna:Gephi&amp;oldid=17450</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

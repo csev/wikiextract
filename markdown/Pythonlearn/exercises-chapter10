@@ -1,0 +1,218 @@
+[[Pythonlearn:resources-week10 | Back to Chapter 10 Resources]]
+
+**Exercise 2 is a graded assignment. Please do not post solutions to this exercise, even after the deadline has passed.**
+
+##Exercise 1
+
+<pre>
+# Standard Opening - open and read target input text file.
+file = raw_input('Enter file name: ')
+if len(file) < 1 : file = 'mbox-short.txt'
+try :
+    fhand = open(file)
+except :
+    print 'Cannot open file: ', file, '.', '...please try, again.'
+    exit ()
+
+# Prime the dictionary
+counts = dict()
+
+# Compute dictionary to map each word to the count of words
+for line in fhand :
+    if not line.startswith('From ') : continue
+    words = line.split()
+    words = words[1]
+    counts[words] = counts.get(words, 0) + 1
+
+# Construct a list of (val, key) tuples
+lst = list()    # note: 'lst' begins with lowercase letter 'L'
+for key, val in counts.items() :
+    lst.append( (val, key))  # important to note that we are switching the order (key, val) to (val, key)
+
+# Sort the tuples list in reverse order
+lst.sort(reverse=True)
+
+# Assign tuple in (val, key) order to variables and print in swapped (key, value) order
+val, key = lst[0]
+print key, val
+
+</pre>
+- Utilizing the list comprehension operation presented by Dr. Severance at the tail end of the video lecture results in the following version of the above:
+
+<pre>
+# Standard Opening - open and read target input text file.
+file = raw_input('Enter file name: ')
+if len(file) < 1 : file = 'mbox-short.txt'
+try :
+    fhand = open(file)
+except :
+    print 'Cannot open file: ', file, '.', '...please try, again.'
+    exit ()
+
+# Prime the dictionary
+counts = dict()
+
+# Compute dictionary to map each word to the count of words
+for line in fhand :
+    if not line.startswith('From ') : continue
+    words = line.split()
+    words = words[1]
+    counts[words] = counts.get(words, 0) + 1
+
+# Utilize a one-line, list comprehension operation to create the sorted list instead of several (as above).
+email_adrs = sorted ( [ (v, k) for k, v in counts.items() ] )
+
+# Assign the parts of the last list element (the tuple representing the highest frequency email) to a val-key ordered tuple and print its assigned values in key-val order.
+val, key = email_adrs[-1]
+print key, val
+</pre>
+
+
+##Exercise 3
+
+ Write a program that reads a file and prints the letters in decreasing order of frequency. Your program should convert all the input to lower case and only count the letters a-z. Your program should not count spaces, digits, punctuation, or anything other than the letters a-z. Find text samples from several different languages and see how letter frequency varies between languages. Compare your results with the tables at  ikipedia.org/wiki/Letter_frequencies.
+
+++NOTE++ - This will work locally, but will not work with the on-line playground/autograder. The translate method is not available there.
+
+String Module import and Ignore list definition
+<pre>from string import punctuation, whitespace, digits
+ignore = punctuation + whitespace + digits </pre>																							
+
+Ask for input of a file name, open handle in READ mode and translate using Ignore list
+<pre>fname = raw_input('Please enter a file name: ')
+fhand = open(fname)</pre>
+																	
+<pre>inp = fhand.read()
+inp = inp.translate(None, ignore)
+inp = inp.lower()</pre>																					
+
+Take out insurance on input
+<pre>try:
+	fhand = open(fname)
+except:
+	print 'File: ' ,fname, 'cannot be found'
+	exit()</pre>
+	
+Intitial variables set	
+<pre>ltrdict = dict()
+ltrlst = list()</pre>																						
+
+Populate dictionary
+<pre>for ltrs in inp:
+    ltrdict[ltrs] = ltrdict.get(ltrs,0) + 1</pre>																													
+
+Create sorted list of dictionary items
+<pre>for k,v in ltrdict.items():
+    ltrlst.append((v,k))
+ltrlst.sort(reverse=True)
+sortedlst = ltrlst</pre>																
+
+Print results of histogram	
+<pre>print('\n'.join(map(str,sortedlst)))</pre>															
+
+Close file
+<pre>fhand.close()</pre>
+
+**Exercise 3: Alternate to above**
+
+- The code below produces an easy-to-read column of letters associated with the number of counts for each letter and a measure of frequency of occurence.
+
+<pre>
+# Open and read target text file.
+
+file = raw_input('Enter file name: ')
+if len(file) < 1 : file = 'words.txt'
+
+try :
+    fhand = open(file)
+except :
+    print 'Cannot open file:', file, '.', '...please try, again.'
+
+# Import string. See Sec 9.4 Advanced Text Parsing, Chap 9, Python for Informatics
+
+import string
+
+# Prime a dictionary shell for later use
+
+counts = dict()
+
+# Compute the dictionary that maps each letter to the count of letters
+
+for line in fhand :
+    line = line.translate(None, string.punctuation)
+    line = line.lower()
+    words = line.split()
+    delimiter = ''   #see Chap 8.9 Lists and Strings
+    letters = delimiter.join(words)
+    for ltr in letters :
+        counts[ltr] = counts.get(ltr, 0) + 1
+
+# Use list comprehension to produce reverse-ordered list of swapped-value tuples.
+# See https://docs.python.org/2.7/library/functions.html RE: reversing sort order
+
+lettercounts = sorted ( [ (cnt, ltr) for ltr, cnt in counts.items() ], reverse=True )
+
+# The above results in a dictionary (lettercounts) of tuples containing a count(key) for each letter (value).
+# To derive frequency or the number of occurrences of each letter over total occurrences of all letters...
+
+cnt_ltr_freq = list()
+totalcounts = 0
+
+for cnt, ltr in lettercounts :
+    totalcounts += cnt
+
+print 'Total number occurrences of all letters in file: ', totalcounts 
+
+for cnt, ltr in lettercounts :
+    freq = float(cnt) / float(totalcounts)
+    cnt_ltr_freq.append ( [ltr, cnt, float ( freq * 100 ) ] )
+
+for x in cnt_ltr_freq :
+    print x[0], x[1], round(x[2], 2), '%'  # Round the frequencies to two digits after the decimal point.
+</pre>
+
+**Another way to do Exercise 3**
+
+The two ways above to do Exercise 3 used string module to delete punctuation and whitespace etc. 
+
+But you don't know what's more in the "etc." For example, the second way forgets deleting digits.
+
+Here is my way to do it without string module and more directly. You need only care about the alphabet letters.
+
+<pre>
+
+filename = raw_input("Enter the file name: ")
+try:
+    fhand = open(filename)
+except:
+    print "The file is not exist!"
+    quit()
+#read the file into a big string
+words = fhand.read()
+
+#lower the string, don't worry about digits, punctuation etc.
+words = words.lower()
+
+#change the string into single letters
+twords = tuple(words)
+
+letters = list()
+for i in twords:
+#we only choose the alphabet letters
+    if i.isalpha() == True:
+        letters.append(i)
+
+#now we can count these letters        
+letter = dict()
+for w in letters:
+    letter[w] = letter.get(w,0)+1
+    
+letterf = list()
+for k,v in letter.items():
+    letterf.append((v,k))
+letterf.sort(reverse=True)
+
+for f,l in letterf[:]:
+    print l,f
+
+</pre>

@@ -1,0 +1,50 @@
+[[Category:Pythonlearn]]
+### Online chat
+
+Here is an internet chat relay (irc), accessible [HERE](http://webchat.freenode.net/) ; join channel : **#pr4e**
+
+You can also configure your favorite irc client with the following informations :  server= irc.freenode.net ; port= 6667 ; channel= #pr4e
+
+
+It is **important** to note that this is a student initiative, hence **not** an **official** coursera feature. Only expect help from other students there.
+
+---
+
+### Using the Freenode web site to connect
+
+If you haven't used IRC before, you don't need a client or browser extension. Freenode has a web client: [http://webchat.freenode.net/](http://webchat.freenode.net/)  
+  
+All you need is a (somewhat unique) username, and the channel (chat room) name: pr4e. Enter those (don't use "philalethe", enter your preferred name), fill out the captcha, and hit connect.
+
+[[File:Freenode-pr4e-IRCconnect.jpg|alt="Image of the connection page for the Freenode web client" 533×375px]]
+  
+Then you'll see this:
+
+[[File:Freenode-pr4e-IRCchannel.JPG|alt="Image of IRC channel on Freenode" 533×460px]]
+  
+  
+Don't worry if you don't see any chat going on. It only shows what's been said since _you_ logged on.  
+  
+Circled in blue is the channel name. The tab next to it, "Status" is information from the server. Make sure \#pr4e is highlighted. If you don't see that tab, type /join pr4e into the text box. Users are to the right (highlighted in yellow). Text input is on the bottom.   
+  
+That's it. Come say hi!  
+  
+
+### Commands
+
+
+* /nick yourname - Change your nickname.   
+* /join #channel - Join a channel (or ## for subchannel) #pr4e in our case.  
+* /query nickname or /msg nickname - Create a private discussion between you and the other person.  
+* /part to leave the channel
+* /quit to leave the server
+
+Message to NickServ about your nickname :
+
+* /msg NickServ REGISTER YOURPASSWORD EMAILADDRESS  - Register your nick on the server (recommended). If you register your name, you'll be asked to identify yourself with a password each time you log on. Use the following:  
+* /msg NickServ IDENTIFY YOURPASSWORD - Log in to your account.
+
+
+
+About ChanServ and NickServ: http://www.esper.net/chanserv.php  
+About Freenode: https://freenode.net/faq.shtml

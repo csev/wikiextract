@@ -1,0 +1,251 @@
+## Computers at the Polls
+
+#### Computers at the Polls
+
+**Types of fraud:** 2 sets of distinctions
+
+Retail – attack on individual voters & their ballots  
+Wholesale – attack on counting process  
+
+Insider – have an official role in the system; have particular privliges & special access  
+Outsider – the public, no official role  
+
+
+#### Optical Scan Technology
+* Originally used for scoring standardized tests
+* Developed in the 1960s
+* Replaced human counters → potential for fraud
+
+**Process**
+* Voter fills out ballot & puts it into the machine
+* Ballot goes into a ballot box that is attached to the scanner
+* After the election, the machine prints the totals
+* Most have a storage card that should match the paper tape
+
+**Technical Issues**
+* Threshold for sensing distinction between light & dark → could be tricky to set
+* Different type of sensor takes a photo of the ballot
+* Can distinguish marks with greater accuracy
+* Requires software to interpret marks
+
+**2 styles of machines**    
+1. Precinct Count - ballot goes into the box in the precinct & is counted there  
+2. Central Count – ballot goes into the box, and is sent to a central location to be scanned in bulk
+
+**Advantages of Precinct Count**
+* count ballots immediately in same location → less risk of tampering
+* machine can look for problems with the ballot & send it back to the voter to try again → usability  
+  
+
+
+**Security Issues**
+* Voters marks vary greatly
+* Infrared might see dark differently than a human
+* Ballot could get distorted & the marks do not line up under the sensor
+* Ballot inserted at angle & marks do not line up under the sensor
+* Calibrating machine is tricky
+* Potential to identify voters by how they filled in the bubbles
+* Software could be changed
+::Example: Harri Hursti
+::What would happen if a hacker got access to the memory card?
+::He loaded the memory card with a number of votes for the candidates he wants to win
+
+
+**Other issues with optical scan machines**
+* Ballots to print, distribute
+* Ballots in other languages, large print
+* Storage of ballots
+
+#### Direct Recording Electronic voting machines
+* Votes are recorded directly in the computer
+* Began to be introduced in the 1970s and 80s
+* Paper with voter choices overlaid on a grid of buttons; did not need to program computer
+* Touchscreen DREs allowed for multiple languages, varying font size, etc
+* Voter authentication:
+::** Voter ID authenticated & given a voter authorization card
+::** Voter inserts card into machine to allow 1 vote to be made
+
+**After Election**
+* Supervisor card used to print out results
+* Officials sign the tape
+* Only shows the total # of votes for each candidate; does not show individual votes
+* Machine records votes on a memory card
+* Special software reports the totals of the votes from the memory card
+
+**Security Issues**
+* Hard problem: writing correct software that works accurately
+* Even harder: writing secure software
+* Even harder: writing complex secure software is difficult, especially when the software has to preserve ballot secrecy and integrity
+
+
+**Potential areas of problems**
+* Technological Errors
+** Design flaws – software may do what the designers intended, but fail to take into account certain major requirements or something the machine needs to do
+** Software bugs – errors in the software development process
+** Hardware glitches 
+** Reliability problems with machine functioning
+
+
+* Vulnerabilities  
+:* Software security – where an attacker could manipulate the machine to make things go wrong
+:* Hardware sabatoge 
+:* Data manipulation – like the Hursti scam
+:* Privacy leaks – will see a lot these soon
+
+* System integrity
+** Secret software 
+:::Even if the company who built the software posted the software on the internet and said everyone can look at it, fundamentally, there is no way to guarantee that the asserted software is actually the one being used in the machine for the election. There have been many cases in which a software that has never been tested or certified by a government ends up being the software running in the machine on election day. 
+** Unapproved software
+** COTS software
+*** Commercial off the shelf software – software packages that are developed by someone else and used for other purposes
+*** Problems with integrity – have to updated and changed, do not necessarily have to be tested or approved
+** Dishonest lookalike voting machines
+
+#### Inside the Black Box
+DRE voting machines are sometimes referred to as “black box” voting machines
+* All the records are inside the machine -> fundamentally unobservable
+* Computer software is kept secret from the public
+** Could be called a trade secret
+* For voting, this process should be more transparent
+* Software companies often engaged in practices that hindered securtiy
+** Secret Software
+** Security snake oil practices
+** Security by obscurity = keeping something secret because to do otherwise would be a security problem
+*** Widely discredited practice in software development
+*** If software relies on secrecy for security and it is leaked, then there is no way to get that security back
+*** More secure to assume that the software is available to the attacker
+* Diebold (manufacturer of DRE machines) 
+** Extremely secretive
+** Did not allow evaluation of software or hardware 
+ 
+**2003 - Things began to change**
+* Bev Harris (voting activist) inadvertantly discovered the complete source code to the Diebold DRE machine that they were trying to keep secret
+* 1st time code code be evaluated and the results given to the public
+* 3 universities evaluated the software and published an analysis in 2003
+
+Some of the problems found were
+* Voters could make fake Voter Access Cards -> multiple voting possible
+* Design flaws caused encryption/decryption process to be applied incorrectly
+** The same encryption key was used for all memory cards -> major security flaw
+** Ballots cast were stored on the memory card in order of casting, which would make it easy to figure out how every single voter voted if a person had access to the memory card
+** Bad software engineering practices within the company -> strong need for sophisticated software not met
+
+Diebold claimed to have fixed the software, however these major problems with security indicate much deeper problems that, in reality, cannot be fixed so easily. It is also unlikely to find all of the other problems that are surely present in the software, and many have been found.
+
+#### Paper as a Defense
+**Advantages of using paper** (especially in combination with some form of technology)  
+* Provides a backup of the voting records in case of computer failure, lack of availability, etc.
+* Can do an audit to ensure that both the paper and the electronic records match
+* Precinct count optical scan machines are preferred for greatest amount of security
+
+**Major security problems with paper ballots and ballot boxes**
+* Physical tampering
+* Retail fraud
+* large conspiracy needed to pull it off
+
+**Major security problems with memory cards**
+* Electronic tampering
+* Wholesale fraud
+* Only a small conspiracy needed to pull it off
+
+
+**Voter-Verifiable Paper Audit Trail / Voter-Verified Physical Audit Trail**
+* After voting, computer generates a printout record of the vote
+* Voter can see immediately and verify their vote -> in case DRE was incorrectly recording votes as they were being cast -> integrity
+
+
+**Security issues**
+* Dishonest computer software that could print something different
+* Machine could try to print extra ballots
+* Machine could throw out a vote
+
+Possible solution is to use a cash register type of tape
+* Print on tape fades
+* Print is hard to read
+* Some machines have the voter open a door to see the tape
+* Not cutting the tape between each voter keeps a record of an ordered list of voters and their votes
+
+Researchers do not agree which is more secure/better: precinct count optical scan machines or DRE voting machine with VVPAT.
+
+## Problems with DREs
+#### Diebold
+In 2006, Professor Halderderman and others had the opportunity to reverse engineer the software in a Diebold DRE voting machine. He received the machine from an anonymous source in New York City, and spent the summer working on the machine in secrecy. 
+* Difficult to reverse engineer a machine that has special software that only works for a specific purpose.
+* Source code is stored in binary that has to be converted into the source code that can be understood by humans.
+* They found many design flaws in the software.
+* Bootloader - program that turns on the machine and starts up the operating system
+** Potential for a hacker to change the bootloader and the votes
+** Bootloader contains instructions for updating the machine if certain files are present
+** Any piece of the Diebold software could be tampered with and changed
+:::example: the bootloader, WinCE kernal, and BallotStation programs could all be replaced by another file if it is present on the memory card
+** Computers need a way to update software, but Diebold did not have any security controls in place (not even a confirmation that the user wanted to do that update -> attacker only needs to know the file name
+** Another file would give the user access to Windows Explorer -> another way to tamper with the software
+*Removable ROM chip could also be tampered with and the bootloader file could be bypassed
+
+**Failure in Depth**
+* Boot into Explorer
+* Insecure firmware updater
+* ROM replacement
+
+**Prof. Halderman's Research Project**
+* Developed an application that could be loaded onto the machine, and runs on top of Windows along side of the BallotStation interface in the background
+* No visible sign of the application unless the special ballot stuffing interface is opened that changes votes and the election outcome
+* Stuffer application monitors the voting process, and with each vote, determines if it needs to be changed or if it matches the outcome the attacker wants
+* AccuVote has 3 different records to keep track of the voting
+** All 3 are accessible from the software, including the stuffer application
+::#1 Primary Vote Record (internal memory)
+::#2 Audit Log (internal memory)
+::# 3 Backup Vote Record (removable memory card)
+* After the election, the stuffer application changes the records in all 3 places and removes itself so that there is no trace of it on the machine
+
+**Mock Election**
+* Staged an election between George Washington and Benedict Arnold
+* Loaded the malicious software
+* Ran the initial tape before any votes were cast (typical election procedure)to see that the votes start at zero
+** Malicious software could have the machine print zero votes even if that was not the case
+* All votes went to George Washington, but the outcome was always Benedict Arnold
+
+
+**Other ways that things can go wrong**
+* Before elections, memory card would be moved from machine to machine to do things like update software -> developed a virus that would infect one machine, then infect all the others in a precint through the memory card being used on all the others
+* One person could potentially alter a state election
+
+**Security Mechanism that Diebold did have in place**
+* Locked door protected access to the memory card
+* Every voting machine everywhere used the same exact key
+* Lock was easy to pick -> did not even need the key
+* The key was widely available -> can Google the number on the key; same key used for juke boxes and hotel mini bars, and is sold on eBay
+* Diebold had a website where they sold the key to anyone who had previously bought a voting machine (had to be a municipality)
+** High resolution image of key on website was used to buy a similar key and file it down to match the image; person sent the key to Prof. Halderman, and it opened the machine
+
+#### More Goes Wrong
+**Other studies of DRE voting machines**
+
+**2007 - Study commissioned by Deborah Bowen, Secretary of State for California**
+* Called for a study of all electronic voting machines in California
+* Study included machines by other manufacturers (Hart, Sequoia), not just Diebold
+* All three teams found similar results with all the machines
+* The Secretary of State decertified all of the DRE machines for use in California
+
+**2007 - Study commissioned by the Secretary of State of Ohio**
+* Found similar problems with DREs
+* Each study found more problems than the study the preceded it
+* Some problems with the software was expected (as with any software), and it would have been unusual not to find any at all
+
+
+**Other studies**
+* Netherlands - found that in less than a minute, machine could taken apart and the memory chip replaced with malicious software; also found that votes could be picked up by radio signals, and the signal changed depending on the candidate -> Netherlands banned DREs and went back to paper ballots
+* Sequoia AVC Edge machine - has similar hardware as a desktop and a compact flash memory card; installed Linux on it, installed Doom (game), then converted it to a Pac Man machine
+
+#### The Test of Time
+One challenge is to design and build an electronic voting machine that can remain secure for the length of its operational lifetime. 
+
+**Sequoia AVC Advantage**
+* Internal memory chips could be replaced by an attacker
+* Protections were in place that if a memory card was replaced, the machine would not run the software on the card -> Prof. Halderman found a way around these protections too
+
+**Security issues with the sale of surplus DREs on eBay**
+* When other states are still using them, criminals could use the machines to develop new attacks
+* Files are not securely erased from the memory card when the files are deleted  
+* Although the files are encrypted, the key needed to decrypt it was not difficult to obtain
+* DREs are toxic to dispose of

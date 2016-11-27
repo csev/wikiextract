@@ -1,0 +1,89 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:exercises-chapter02</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:resources-week02" title="Pythonlearn:resources-week02"> Back to Chapter 2 Resources</a> </p>
+<p>This page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments,. </p>
+<p><strong>Exercises 2 &amp; 3 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.</strong> </p>
+<h1> <span class="mw-headline" id="Exercise_4_Assume_that_we_execute_the_following_assignment_statements:">Exercise 4   Assume that we execute the following assignment statements:</span></h1>
+<code><pre>width = 17  
+
+height = 12.0  
+</pre></code>
+<p>For each of the following expressions, write the value of the expression and the type (of the value of the expression). Use the Python interpreter to check your answers.   </p>
+<code><pre>width/2  
+</pre></code>
+<p><strong>Ans</strong>: 8, type: integer</p>
+<code><pre>width/2.0  
+</pre></code>
+<p><strong>Ans</strong>: 8.5, type: float</p>
+<code><pre>height/3  
+</pre></code>
+<p><strong>Ans</strong>: 4.0, type: float</p>
+<code><pre>1 + 2 * 5  
+</pre></code>
+<p><strong>Ans</strong>: 11, type: integer</p>
+<h1> <span class="mw-headline" id="Exercise_5_Write_a_program_which_prompts_the_user_for_a_Celsius_temperature.2C_convert_the_temperature_to_Fahrenheit_and_print_out_the_converted_temperature.">Exercise 5   Write a program which prompts the user for a Celsius temperature, convert the temperature to Fahrenheit and print out the converted temperature.</span></h1>
+<p><strong>Solution 1</strong> </p>
+<code><pre>inp = raw_input("Enter Celsius Temperature: ")  
+
+temp_cel = float(inp)  
+
+print "Temperature in Fahrenheit", (9.0 / 5) * temp_cel + 32
+</pre></code>
+<p><strong>Solution 2</strong></p>
+<code><pre>inp = raw_input("Enter Celsius Temperature: ")
+
+cel = float(inp)
+
+fahr = cel * 1.80 + 32
+
+print fahr
+</pre></code>
+<p><strong>Solution 3</strong> </p>
+<code><pre>ctemp = raw_input("Enter the Celsius temperature: ")
+
+ctempf = float(ctemp)
+
+fahren =ctempf * 9/5 + 32
+
+print 'Converted Tempeture is :' ,fahren , 'Fahrenheit'
+</pre></code>
+<p><strong>Solution 4</strong> </p>
+<code><pre>print float(raw_input("What is the temp in Celsius to be converted to Fahrenheit? ")) * 9 / 5 + 32  
+</pre></code>
+<p><strong>Solution 5</strong></p>
+<code><pre>#f=(9c/5)+ 32
+
+Celsius=raw_input('Enter the temperature in Celsius: ')
+
+C=float(Celsius)
+
+Fahrenheit=(9*C/5)+32
+
+F= Fahrenheit
+
+print 'The temperature in Fahrenheit is ',F,'F'
+</pre></code>
+<p><strong>Optimal Temperature Conversion Formula</strong><br/>
+The 9/5 is based on 180/100 which is the difference between freezing and boiling in Fahrenheit and Celsius respectively.<br/>
+To save couple of clock ticks a more efficient formula would be :  </p>
+<code><pre>`1.8 * temp_cel + 32`
+</pre></code>
+<p><strong>Solutions 1 through 5 are good examples of programming, but all are incorrect if you enter a negative Celsius number (use Optimal Formula).</strong></p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 103/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3993-0!*!0!!*!*!* and timestamp 20161126073317 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter02&amp;oldid=33232">https://share.coursera.org/wiki/index.php?title=Pythonlearn:exercises-chapter02&amp;oldid=33232</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

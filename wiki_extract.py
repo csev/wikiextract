@@ -73,63 +73,82 @@ for category in categories:
         # Retrieve the HTML
         opener = urllib.request.build_opener()
         opener.addheaders.append(('Cookie', hdr))
-        f = opener.open(url)
-        data = f.read().decode()
-        # print (data)
-        soup = BeautifulSoup(data, 'html.parser')
-        thediv = soup.find("div", {"id": "content"})
-        # print(thediv)
-        folder = 'html/'+category
-        if not os.path.exists(folder):
-            os.makedirs(folder)
-        fname = folder+'/'+page
-        out = open(fname,'w')
-        out.write(str(thediv))
-        out.close()
-        print('Wrote',len(str(thediv)),' characters to '+fname)
+        try:
+            f = opener.open(url)
+        except:
+            f = None
 
-        quit()
+        if f is not None:
+            data = f.read().decode()
+            # print (data)
 
-        url = baseurl + '?title=' + category + ':' + urllib.parse.quote_plus(page) + '&action=edit'
-        print('Retrieving',url)
+            usesoup = True
+            if usesoup : 
+                soup = BeautifulSoup(data, 'html.parser')
+                thediv = soup.find("div", {"id": "content"})
+                data = str(thediv)
+            else : 
+                startpos = data.find('<div id="content">')
+                endpos = data.find('</div><!-- end of MAINCONTENT div -->')
+                data = data.substr(startpos,endpos)+'</div>'
 
+            # print(thediv)
+            # data = data.replace('href="/wiki/index.php/','href="index.php?page=')
+            folder = 'html/'+category
+            if not os.path.exists(folder):
+                os.makedirs(folder)
+    
+            fname = folder+'/'+page
+            out = open(fname,'w')
+            out.write(data)
+            out.close()
+            print('Wrote',len(data),' characters to '+fname)
+    
         # Retrieve the markdown
+        url = baseurl + '?title=' + category + ':' + urllib.parse.quote_plus(page) + '&action=edit'
+        print('Retrieving markdown',url)
+
         opener = urllib.request.build_opener()
         opener.addheaders.append(('Cookie', hdr))
 
         # f = opener.open("https://share.coursera.org/wiki/index.php/Pythonlearn:Main")
         # f = opener.open("https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week01&action=edit")
 
-        f = opener.open(url)
-        data = f.read().decode()
-        # print (data)
-        textarea = re.findall('<textarea.*?>(.*)</textarea>',data, re.MULTILINE | re.DOTALL)
-        if len(textarea) < 1 :
-            print("No <textarea> found")
-            continue
+        try:
+            f = opener.open(url)
+        except: 
+            f = None
 
-        # Assume the first one
-        textarea = html.unescape(textarea[0])
+        if f is not None:
+            data = f.read().decode()
+            # print (data)
+            textarea = re.findall('<textarea.*?>(.*)</textarea>',data, re.MULTILINE | re.DOTALL)
+            if len(textarea) < 1 :
+                print("No <textarea> found")
+                continue
 
-        folder = 'markdown/'+category
-        if not os.path.exists(folder):
-            os.makedirs(folder)
-        fname = folder+'/'+page
-        out = open(fname,'w')
-        out.write(textarea)
-        out.close()
-        print('Wrote',len(textarea),' characters to '+fname)
+            # Assume the first one
+            textarea = html.unescape(textarea[0])
+    
+            folder = 'markdown/'+category
+            if not os.path.exists(folder):
+                os.makedirs(folder)
+            fname = folder+'/'+page
+            out = open(fname,'w')
+            out.write(textarea)
+            out.close()
+            print('Wrote',len(textarea),' characters to '+fname)
 
-        # lines = textarea.split("\n")
-        # for line in lines:
-            # print(line)
-
-        refs = re.findall('\[\['+category+':(.*?)\|.*?\]\]', textarea, re.MULTILINE | re.DOTALL)
-        # print(refs)
-        for ref in refs :
-            ref = ref.rstrip()
-            ref = ref.replace(' ','_')
-            if ref in retrieved : continue
-            if ref in todo : continue
-            todo.append(ref)
+            # lines = textarea.split("\n")
+            # for line in lines:
+                # print(line)
+    
+            refs = re.findall('\[\['+category+':(.*?)\|.*?\]\]', textarea, re.MULTILINE | re.DOTALL)
+            # print(refs)
+            for ref in refs :
+                ref = ref.rstrip()
+                ref = ref.replace(' ','_')
+                if ref in retrieved : continue
+                if ref in todo : continue
+                todo.append(ref)
 

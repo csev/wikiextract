@@ -1,0 +1,87 @@
+[[Pythonlearn:resources-week02 | Back to Chapter 2 Resources]]  
+  
+This page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments,. 
+  
+**Exercises 2 & 3 are graded assignments. Please do not post solutions to these exercises, even after the deadline for them has passed.**  
+  
+# Exercise 4   Assume that we execute the following assignment statements:  
+    width = 17  
+  
+    height = 12.0  
+  
+For each of the following expressions, write the value of the expression and the type (of the value of the expression). Use the Python interpreter to check your answers.   
+  
+    width/2  
+  
+**Ans**: 8, type: integer
+  
+    width/2.0  
+  
+**Ans**: 8.5, type: float
+    
+    height/3  
+  
+**Ans**: 4.0, type: float
+    
+    1 + 2 * 5  
+  
+**Ans**: 11, type: integer
+    
+  
+# Exercise 5   Write a program which prompts the user for a Celsius temperature, convert the temperature to Fahrenheit and print out the converted temperature.
+
+**Solution 1**  
+  
+    inp = raw_input("Enter Celsius Temperature: ")  
+  
+    temp_cel = float(inp)  
+  
+    print "Temperature in Fahrenheit", (9.0 / 5) * temp_cel + 32
+  
+
+**Solution 2**
+  
+    inp = raw_input("Enter Celsius Temperature: ")
+  
+    cel = float(inp)
+  
+    fahr = cel * 1.80 + 32
+  
+    print fahr
+  
+**Solution 3**  
+  
+    ctemp = raw_input("Enter the Celsius temperature: ")
+  
+    ctempf = float(ctemp)
+  
+    fahren =ctempf * 9/5 + 32
+  
+    print 'Converted Tempeture is :' ,fahren , 'Fahrenheit'
+
+**Solution 4**  
+  
+    print float(raw_input("What is the temp in Celsius to be converted to Fahrenheit? ")) * 9 / 5 + 32  
+
+**Solution 5**
+
+    #f=(9c/5)+ 32
+
+    Celsius=raw_input('Enter the temperature in Celsius: ')
+
+    C=float(Celsius)
+
+    Fahrenheit=(9*C/5)+32
+    
+    F= Fahrenheit
+
+    print 'The temperature in Fahrenheit is ',F,'F'
+   
+  
+**Optimal Temperature Conversion Formula**  
+The 9/5 is based on 180/100 which is the difference between freezing and boiling in Fahrenheit and Celsius respectively.  
+To save couple of clock ticks a more efficient formula would be :  
+  
+    `1.8 * temp_cel + 32`
+
+**Solutions 1 through 5 are good examples of programming, but all are incorrect if you enter a negative Celsius number (use Optimal Formula).**

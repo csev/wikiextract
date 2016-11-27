@@ -1,0 +1,336 @@
+Feel free to add material here.   -- Chuck
+
+[[Pythonlearn:Resources | Back to Resources]]
+
+# Books and Guides
+
+https://wiki.python.org/moin/BeginnersGuide
+
+---
+http://www.learnpython.org/
+One more place to start with python.
+
+---
+http://legacy.python.org/dev/peps/pep-0008/#imports
+Python convention and style guide
+
+---
+http://www.greenteapress.com/thinkpython/
+Think Python: How to Think Like a Computer Scientist, is a free Book by Allen B. Downey. It is released under the Creative Commons Attribution-NonCommercial 3.0 Unported License.
+
+---
+http://openbookproject.net/thinkcs/
+How to Think Like a Computer Scientist: Learning with Python by Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers
+
+---
+http://www.swaroopch.com/notes/python/
+"A Byte of Python" is a book by Swaroop C.H. and released under the Creative Commons Attribution-NonCommercial-ShareAlike License 2.0 .
+
+---
+https://mail.python.org/pipermail/tutor/2004-July/030634.html  
+This link is a tutorial on how to call a .py file into Windows cmd.
+
+---
+http://www.codecademy.com/en/tracks/python/resume 
+This is a website that can help you to better understand python and some other language.
+
+---
+http://learnpythonthehardway.org/book/index.html 
+This is a website that gave me my start in Python. It's got loads of exercises to help you practice. Enjoy! -- Bevin
+
+---
+http://inventwithpython.com/
+These guides teach Python with a focus mostly on designing games right from the beginning.
+
+---
+http://sololearn.com/Play/Python
+Great way to learn Python. Teaches several computing languages in other courses.
+
+# Install Python
+
+https://www.python.org/downloads/
+(Note:  As of 10 Nov 2015 a sticky post from the Coursera discussion boards says the course uses Python V2.7.10.  The main current release is V2.7.12 and may be used for this course.  
+
+### Ubuntu
+Python 2 and python 3 are both installed by default, ie they are part of the ubuntu-desktop, lubuntu-desktop etc meta-packages/virtual tasks. 
+
+To confirm that Python is already installed, open a terminal window and type
+<pre>
+python
+</pre>
+If so, a message similar to this should be displayed indicating which version of Python is installed: 
+>Python 2.7.6 (default, Mar 22 2014, 22:59:56) 
+>[GCC 4.8.2] on linux2 
+>Type "help", "copyright", "credits" or "license" for more information.
+
+To return to the prompt type either
+<pre>
+exit()
+</pre>
+or
+<pre>
+quit()
+</pre>
+or
+<pre>
+[ctrl]-d
+</pre>
+
+If Python is not installed (eg it has been uninstalled for some reason), in Ubuntu type 
+<pre>
+sudo apt-get install python
+</pre>
+and hit return, to get the latest version of python 2, or
+<pre>
+sudo apt-get install python3
+</pre>
+and hit return, to get the latest version of python 3.
+
+Running commands with <kbd>sudo</kbd> is dangerous. Make sure you know what you are running.
+ 
+### CentOS/Fedora/Red Hat
+
+Step 1: Install Python,
+
+If you have chose the development workstation from Fedora/CentOS/Redhat, more than likely it will have Python installed, if it is not installed you can use the RPM package that comes with the distro. I'll recommend using the package that comes from the distro because you will get all the security and bug fixes when you update your system.
+
+If you prefer to install from source, skip step 1 and go straight to step 2.
+
+<pre>
+yum install python
+</pre>
+
+For Fedora 23+
+
+<pre>
+dnf install python 
+</pre>
+
+Step 2: Download Python 2.7
+
+Download Python using below command from python official site
+
+<pre>
+cd /usr/src
+wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
+</pre>
+
+Step 3: Extract Archive and Compile
+
+Use below set of commands to extract Python source code and compile it on your system using altinstall.
+
+<pre>
+tar xzf Python-2.7.9.tgz
+cd Python-2.7.9
+./configure
+make altinstall
+</pre>
+
+make altinstall is used to prevent replacing the default
+python binary file /usr/bin/python.
+
+Step 4: Check the Python Version
+
+Check the latest version installed of python using below command
+
+<pre>
+python2.7 -V
+ Python 2.7.9
+</pre>
+
+Please, see [tecadmin.net][Source] for original source.
+
+[Source]: http://tecadmin.net/install-python-2-7-on-centos-rhel/
+
+### OS X
+If you are running OS X you already have a version of python inside the built in terminal. Just fire it up and type python for python-2.x. 
+
+### iOS
+There are several versions of Python available as apps for use on iPhones and iPads such as Pythonista among others.
+-RPE-
+
+### ActivePython
+
+[http://www.activestate.com/activepython/downloads ActivePython] is an easy single file installer for Python on Windows that does everything for you (environment variables and what not).
+
+
+
+### Windows
+
+
+**Note:** It is not required to run as administrator but it will have no or fewer installation errors later.
+
+
+**NOTE FOR IMPORTING MODULES** Some modules that aren't built into Python need to be installed before they can be imported to Python. Beautiful Soup is an example, and needs to be installed from the command prompt (cmd) using a program such as pip. Pip is built into the newer versions of Python so you can type "pip install (module name)" into cmd. Note that if you are getting errors, you need to navigate to the python folder and run it there, or for those with skillz, you need to set up the Python System Variable to map the path.
+
+
+
+
+### ArchLinux/Manjaro
+
+The ArchLinux official repositories have both python3 and python2 available, and they can coexist in the same box. To install python2 (which is used in this course) run:
+
+<pre>
+pacman -S python2
+</pre>
+
+You need to explicitly call python2 instead of just python, like so:
+
+<pre>
+python2 program.py
+</pre>
+
+**Note:** If you accidentally call "python program.py" you'll be using python3 instead of python2 and you will probably receive error messages.
+
+### Slackware GNU/Linux
+
+Run python from a terminal. It comes with default installation.
+
+# Editors and IDE
+
+
+**Note to Students:** The first part of the course highly recommends that you use a text editor to input and save scripts and to run them using a command line shell. 
+
+**For Windows Users**, the course suggests that you download the free application **[NotePad++](<https://notepad-plus-plus.org/download>)** and execute code using the **Windows Command Prompt.**
+
+**For Mac OS X Users**, the course suggests that you download the free text editor **TextWrangler** from [Bare Bones Software](<http://www.barebones.com/products/textwrangler/>) available from the Mac App Store for those running OS X 10.9 (Mavericks) or later. For earlier versions of OS X, you can download the program directly from the Bare Bones Software website. To execute your code, you should use **Terminal.**
+
+There are detailed video instructions on how to install the above mentioned text editors as well as how to run programs from the respective command line shells in [Week 2](<https://www.coursera.org/learn/python/home/week/2>) of Programming for Everybody. There are also tutorials included on how to produce screen captures in order to submit work for review.
+
+---
+http://www.pythoncentral.io/comparison-of-python-ides-development/ This article by Jason Fruit give a nice comparison of Python IDE's and you can also read the following article by Sergio Tapia Gutierrez for another opinion. http://www.pythoncentral.io/the-best-python-ides-you-can-use-for-development/ If IDE's are not your thing and a simple text editor will do, then check out this article by Jason Fruit. http://www.pythoncentral.io/best-text-editors-for-python-development/
+
+---
+Python Wiki contains perhaps a more complete list of all the available Python IDEs and Editors. https://wiki.python.org/moin/IntegratedDevelopmentEnvironments  
+https://wiki.python.org/moin/PythonEditors
+
+
+
+### Emacs
+
+Emacs is [free software](<https://www.gnu.org/philosophy/free-sw.html>) and is available for all of the popular operating systems, including the '''Windows''' family (XP, 7, 8, etc.), the '''BSD''' family (FreeBSD, MacOS X, OpenBSD, etc.), '''GNU/Linux''' family (Debian, RedHat, Arch, etc.), and the various Unixes.
+
+'''GNU/Linux''': Use your package manager to install the version compiled by your distro's maintainers, or build it yourself from the source code at http://ftpmirror.gnu.org/emacs/.
+
+'''Windows''': ftp://ftp.gnu.org/gnu/emacs/windows/
+
+'''MacOS X''': http://emacsformacosx.com/
+
+The official [Python wiki](<https://wiki.python.org/moin/EmacsEditor>) provides information for users who want to use Emacs as a Python IDE.
+
+### Ipython and Jupyter
+
+Jupyter lets you edit and change your commands on the fly, making it really easy to debug code. It also allows for some wonderful data outputs. This notebook used to be called iPython, but it has grown so other programming languages can use it, too. https://jupyter.readthedocs.io/en/latest/install.html
+
+It's packaged on all GNU/Linux distros, so you can install it with your package manager or pip. Mac and Windows users should install it with anaconda or the pip command line tool. http://ipython.org/install.html
+
+
+### Sublime Text
+
+Sublime Text is a sophisticated text editor for code, markup and prose.
+You'll love the slick user interface, extraordinary features and amazing performance.
+
+Is available for OS X, Windows and GNU/Linux. One license is all you need to use Sublime Text on every computer you own, no matter what operating system it uses.
+
+Uses a custom UI toolkit, optimized for speed and beauty, while taking advantage of native functionality on each platform.
+
+[Sublime Text](<http://www.sublimetext.com/>) Home page
+[Sublime Text Unofficial Documentation](<http://sublime-text-unofficial-documentation.readthedocs.org/en/sublime-text-2/>) Unofficial Documentation
+
+
+### Komodo
+
+A cross-platform IDE for many scripting languages, including python. It's developed by ActiveState, which also happens to be the author of ActivePython distribution for windows. Komodo comes in two flavours: komodo edit and komodo IDE. Komodo edit is a free open-source lightweight editor. Komodo IDE on the other hand is a commercial, fully fledged IDE with version control integration, debugging, and many other professional features. You can download komodo edit for free while you can only get a trial version of komodo IDE or buy a license to use it.
+
+Komodo edit is available here http://komodoide.com/komodo-edit/. You can also have a look at what komodo IDE offers here http://komodoide.com/.
+
+### Wingware
+
+https://wingware.com/store/free This company released an integrated development environment (IDE), in many ways similar to Visual Studio or Eclipse, which is used for Java. It normally costs $95/year, but for students, even on the Coursera course, you can apply for a student license and get the software for free. You will have to register with their site, and send them an email with your information, but after you do so, they will issue you a free license key good for 180 days, for non-commercial and educational use. If you like the IDE after you complete the course, it is available for $95/year for non-commercial use, and you can also purchase it on the Steam digital download service that is used mostly for distributing video games - http://store.steampowered.com/app/244830/ (I do not have any association with WingWare, the company that makes it. My only connection is that I'm interested in the software, and I was granted a student license).
+
+### Vim
+The [http://www.vim.org/ vim] editor is a highly configurable text editor built to enable efficient text editing. It is an improved version of the vi editor distributed with most UNIX systems. Oftentimes, vim is thought of as a "programmer's editor." It is so useful for programming that many consider it an entire IDE. It's not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files. 
+
+### The Eric Python IDE
+
+[http://eric-ide.python-projects.org/ Eric] is a full featured Python and Ruby editor and IDE, written in python. It is based on the cross platform Qt gui toolkit, integrating the highly flexible Scintilla editor control. It is designed to be usable as everdays' quick and dirty editor as well as being usable as a professional project management tool integrating many advanced features Python offers the professional coder. eric includes a plugin system, which allows easy extension of the IDE functionality with plugins downloadable from the net.
+
+Current stable version is [http://eric-ide.python-projects.org/eric-download.html eric6] based on PyQt5/4 (with Qt5/4) and Python 3 or Python 2.
+
+### PyDev
+
+[http://www.pydev.org/ PyDev] PyDev is a Python IDE for Eclipse, which may be used in Python, Jython and IronPython development.
+
+# Useful tips:
+
+
+### Multiple python versions
+
+A note to windows users with multiple versions of python installed.  If you want to use version 2.7 but say that you have 3.3 as well but when you go into the CLI on windows and type python and start python 3.3.  To get the environment you want use, type at the command prompt: py -x.x, where x.x is the python version you want to run.
+
+---
+Mac users: If you have multiple instances of Python installed, type "which python" (without quotes) into the terminal to see which version you are running.
+
+### Path environment
+
+#### Windows users
+Modify Python's path environment variable so Python can be ran from any directory, not only from installed directory without using 3rd-party Python environments. For example, "C:\Windows>python" will run Python interpreter even if Python executable is not in Windows directory.
+
+My Computer > Properties > Advanced > Environment Variables... > System variables
+
+Select Path > Edit... > Append ";C:\Python27\" to end of Variable value > OK
+
+Don't forget to close any open console windows and reopen them to apply the new path variable.
+
+[Windows 7](http://www.pythoncentral.io/add-python-to-path-python-is-not-recognized-as-an-internal-or-external-command/)
+
+Or fast for Windows:
+
+From an administrator command prompt: rundll32.exe sysdm.cpl,EditEnvironmentVariables
+
+And then as above Select Path ... etc
+
+[Windows 8] (http://winaero.com/blog/how-to-edit-environment-variables-quickly-in-windows-8-1-and-windows-8/)
+
+#### Virtual Environment
+
+A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them. It solves the “Project X depends on version 1.x but, Project Y needs 4.x” dilemma, and keeps your global site-packages directory clean and manageable.
+
+[Python virtualenv](<http://docs.python-guide.org/en/latest/dev/virtualenvs/>) Virtual Environments
+#### virtualenv
+
+virtualenv is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.
+
+[Developing with Python in an isolated and secure environment](<http://es.slideshare.net/ajha/virtualenv-y-buildout-32816471>) Slides (Spanish)
+
+#### Tool for OSX finder
+A great tool that will for terminal users on osx.
+ 
+It installs a button on your finder toolbar that will open a terminal window to the current directory you are in Finder.
+
+[Go2Shell](<http://zipzapmac.com/go2shell/>) Home page
+
+####Alternative to [Go2Shell]
+If you don't want to install some untrusted software then what could you do is
+<pre>
+1. Open finder window
+2. Select Services form the Finder options on the top left and click on Services Preferences
+3. Once in services preferences scroll down to Files and Folders drop down option.
+4. There you will find two options New Terminal at window and New terminal Tab at window check them and close the window.
+5. Now if you right click any folder go to the last option Services there you will find the Services you selected .
+6. Click on New Terminal at folder and it will start a terminal with CWD as the folder that you right clicked.
+</pre>
+
+## Make Screenshots
+
+GNU/Linux and Windows users: **Alt + PrintScreen** = screenshot of the active window
+
+A simple way to capture screen shot on Linux is with the `import` command from ImageMagick Combined with the `sleep` command, this line will give 5 seconds to switch views to whatever you want to have in the screen shot,
+   <pre>$ sleep 5; import -w root myimage.jpg</pre>
+
+More about ImageMagick and other GNU/Linux tools here for clipping smaller bits of the screen [Screenshot tools](<http://tips.webdesign10.com/how-to-take-a-screenshot-with-ubuntu-linux>)
+
+Mac users: **Shift + ⌘ + 3** = screen shot and  **Shift + ⌘ + 4** = targeted piece of the screen that you can select.  You can also change the settings to default to .jpg and not .png and set a different default folder.  
+Another Mac option: Applications->Utilities->Grab Grab Allow you to do timed windows and your full desktop. Save as tiff, then open with Preview and export as png or jpg.
+
+For Spanish speaking students you may find the "Snipping tool" as "Recortes" at Windows 7/Vista/8 versions and for Portuguese speaking students this tool is labelled as "Ferramenta de Captura" at Windows 7/Vista/8 versions

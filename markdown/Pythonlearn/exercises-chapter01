@@ -1,0 +1,81 @@
+
+
+[[Pythonlearn:resources-week01 | Back to Chapter 1 Resources]]
+
+# Exercise 1   What is the function of the secondary memory in a computer?  
+  
+a) Execute all of the computation and logic of the program  
+b) Retrieve web pages over the Internet  
+c) Store information for the long term - even beyond a power cycle  
+d) Take input from the user  
+
+**Answer:** (c).
+  
+# Exercise 2   What is a program?  
+
+**Answer:** A program is a set of instructions that specifies a computation, or at its most basic a sequence of Python statements that have been crafted to do something. Other terms that refer to the same thing include script, code and software.
+  
+# Exercise 3   What is the difference between a compiler and an interpreter?  
+
+**Answer:** A compiler translates a file written in high-level (human-comprehensible) language into low-level (machine) language all at once at a very very fast rate, and stores it so it can be used later. An interpreter uses high-level language and interacts (translates from high-level to low-level and back again) with a programmer in real time (human time).
+  
+# Exercise 4   Which of the following contains "machine code"?  
+a) The Python interpreter  
+b) The keyboard  
+c) Python source file  
+d) A word processing document  
+
+**Answer:** (a) because the Python interpreter must translate the high-level language to machine code.
+  
+# Exercise 5   What is wrong with the following code:  
+    >>> primt 'Hello world!'    
+       File "<stdin>", line 1  
+        primt 'Hello world!'  
+                       ^  
+    SyntaxError: invalid syntax  
+    >>>   
+
+**Answer:** 'primt' should be 'print'
+  
+# Exercise 6   Where in the computer is a variable such as "X" stored after the following Python line finishes?  
+x = 123  
+
+a) Central processing unit  
+b) Main Memory  
+c) Secondary Memory  
+d) Input Devices  
+e) Output Devices  
+
+**Answer:** (b), Main Memory or temporary memory. The value of the variable is not stored and not available for retrieval after the program quits.
+  
+# Exercise 7   What will the following program print out:  
+    x = 43
+    x = x + 1
+    print x
+  
+a) 43  
+b) 44  
+c) x + 1  
+d) Error because x = x + 1 is not possible mathematically  
+
+**Answer:** (b).
+  
+# Exercise 8   Explain each of the following using an example of a human capability:  
+(1) Central processing unit  
+(2) Main Memory  
+(3) Secondary Memory  
+(4) Input Device  
+(5) Output Device  
+  
+For example, "What is the human equivalent to a Central Processing Unit"?  
+
+**Answer:**    
+(1) The CPU is like the brain.  Based on sensory input, the human brain acts on conscious thought while a human is awake, similar to how a waiter or waitress waits on people and continually asks them if they need anything.<br>
+(2) The main memory is like our waking consciousness - what we are thinking right now.  Someone copying data (e.g. written notes) from one place to another may store it briefly in his or her brain’s short-term memory during the copy process as he or she looks away from the source to the place where she or he is copying the data.<br>
+(3) The secondary memory is like our long-term memory.  A student stores information away in his or her long-term memory while studying material in order to recall it later for quizzes, even after sleeping.<br>
+(4) Input devices are like our 5 senses.<br>
+(5) Output devices are like our facial expressions, gestures, or speech.    
+  
+# Exercise 9   How do you fix a "Syntax Error"?
+
+**Answer:** Correct the grammar and/or spelling in the source code so the program can understand the instruction.

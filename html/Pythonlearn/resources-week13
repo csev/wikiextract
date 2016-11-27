@@ -1,0 +1,137 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week13</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#XML"><span class="tocnumber">1.1</span> <span class="toctext">XML</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Chapter_13_Exercises"><span class="tocnumber">2</span> <span class="toctext">Chapter 13 Exercises</span></a></li>
+<li class="toclevel-1"><a href="#More_Resource_Topics"><span class="tocnumber">3</span> <span class="toctext">More Resource Topics</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<p>Add notes about the lectures here...</p>
+<p><strong>Examples below come from Chapter 13 Video</strong></p>
+<p>Till now we have learned about different Python built in data types
+some of the complicated one like are list and dictionary (associative array/hash map).
+Other languages like Java may store a list or a dictionary differently than Python.
+When two programs talk to each other, ie send data thru internet, the data stream
+must be language agnostic. To achieve this we use data serialization and de-serialization.</p>
+<p><u>Data Serialization and De-serialization</u></p>
+<p>Data Serialization means we convert/encode our user/language specific data structure to a
+pre-agreed structure which the second party understand. This conversion/encoding of our
+data structures to a common data exchange format is Serialization.</p>
+<p>Data De-serialization means decoding/reverting back the received common data to native
+programming language's data structure implementations.</p>
+<p>There are many competent data exchange solutions but we will focus only on</p>
+<ul>
+<li>XML  : e<strong>X</strong>tensible <strong>M</strong>arkup <strong>L</strong>anguage</li>
+<li>JSON : <strong>J</strong>ava <strong>S</strong>cript <strong>O</strong>bject <strong>N</strong>otation</li>
+</ul>
+<h2> <span class="mw-headline" id="XML">XML</span></h2>
+<ol>
+<li>History of XML : <font color="red"> TBD </font></li>
+<li>Schema (XSD) : <font color="red"> TBD </font></li>
+</ol>
+<p>XML is quite like HTML.
+A XML document example taken from video lecture file (xml1.py):</p>
+<code><pre>&lt;person&gt;
+  &lt;name&gt;Chuck&lt;/name&gt;
+  &lt;phone type="intl"&gt;
+     +1 734 303 4456
+  &lt;/phone&gt;
+  &lt;email hide="yes"/&gt;
+&lt;/person&gt;
+</pre></code>
+<p>It has :</p>
+<ol>
+<li><p><strong>Tags</strong> : <u>Start Tag</u>, <u>End Tag</u> and <u> Empty-Element tag </u></p>
+<p><strong>Tag</strong> is the first word inside a less than &lt; and greater than &gt;, angular brackets.</p>
+<p>In above example :-</p>
+<p><code>'person', 'name', 'phone' and 'email'</code></p>
+<p>Start Tag and End Tag are in pair, start tag comes before end tag and</p>
+<p>use the <strong>same string</strong>.
+Example :-</p>
+<p><code>'person', 'name' and 'phone'</code></p>
+<p>Notice that backslash <code>/</code> comes inside End tag.</p>
+<p><strong>Empty-Element</strong> tag doesn't have a end tag.
+A backslash <code>/</code> comes before the ending greater than &gt; closing bracket. 
+Example :-</p>
+<p><code>'email'</code></p></li>
+<li><p><strong>Element</strong> :</p>
+<p>What ever is there between a pair of <u>Start Tag</u> and <u>End Tag</u> is a element.
+Example :-</p>
+<p><code>For 'name' : Chuck</code></p>
+<p><code>For 'phone' : +1 734 303 4456</code></p>
+<p><code>Nothing for 'email'</code></p></li>
+<li><p>Attribute :</p>
+<p><strong>Start Tag</strong> or <strong>Empty-Element Tag</strong> are the first word inside &lt; word_1 &gt;.
+But for <code>'phone' and 'email'</code> we have some more things inside the angular brackets.</p>
+<p>These are <strong>attribute(s)</strong> of the <strong>tag</strong>.</p>
+<p>&lt; <strong>Start Tag</strong> <em>attribute1</em>="value1" <em>attribute2</em>="value2" &gt; <strong>Element</strong> &lt;/ <strong>End Tag</strong> &gt;</p>
+<p>or</p>
+<p>&lt; <strong>Empty-Element Tag</strong> <em>attribute1</em>="value1" <em>attribute2</em>="value2" /&gt;</p>
+<p>Attributes are with a assignment operator, name-value pair.</p>
+<p>Left hand side of assignment operator is the
+<em>name</em> of attribute and right hand side has the <em>value</em>.
+Example :-</p>
+<p>name of attribute: <code>'phone'</code> value: <code>type="intl"</code></p>
+<p>name of attribute: <code>'email'</code> value: <code>hide="yes"</code></p></li>
+</ol>
+<p>XML support is in-built in Python.</p>
+<code><pre>import xml.etree.ElementTree as xml_parser
+</pre></code>
+<p>The inbuilt library traverse the XML file and</p>
+<p>stores the <strong>tags, elements and attributes</strong> in a document object model( kind of tree ).</p>
+<p>It is easier to extract information from this representation of document(XML).</p>
+<p>To traverse a XML file content ( our above XML example ) stored inside a string element</p>
+<code><pre>dom_obj = xml_parser.fromstring(data)
+</pre></code>
+<p>To find entry with tag name as <code>'name'</code>.</p>
+<code><pre>print dom_obj.find('name')
+</pre></code>
+<p>To find all ( a list of ) entries with tag name as <code>'name'</code>.</p>
+<code><pre>print dom_obj.findall('name')
+</pre></code>
+<p>To find element of a tag entry with name as <code>'name'</code>.</p>
+<code><pre>print dom_obj.find('name').text
+</pre></code>
+<p>To fetch attribute list for <code>'email'</code></p>
+<code><pre>dom_obj.find('email').get('hide')
+</pre></code>
+<p>Loop thru all sub elements of <code>'person'</code></p>
+<code><pre># tested on python 3.4 with correct print function
+for sub_ele in dom_obj:
+  print sub_ele.tag, sub_ele.attrib, sub_ele.text
+
+&gt;  name {} Chuck
+&gt;  phone {'type': 'intl'}
+&gt;        +1 734 303 4456
+
+&gt;  email {'hide': 'yes'} None
+</pre></code>
+<h1> <span class="mw-headline" id="Chapter_13_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter13" title="Pythonlearn:exercises-chapter13"> Chapter 13 Exercises</a></span></h1>
+<p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actually graded assignments.</p>
+<h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
+<p>Add resources for this chapter to this page..</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 76/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:5399-0!*!0!!en!*!* and timestamp 20161126102118 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week13&amp;oldid=32962">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week13&amp;oldid=32962</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

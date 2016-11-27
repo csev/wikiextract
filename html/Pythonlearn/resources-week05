@@ -1,0 +1,335 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week05</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.22is.22_and_.22is_not.22_Operators"><span class="tocnumber">1.1</span> <span class="toctext">"is" and "is not" Operators</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#break"><span class="tocnumber">2</span> <span class="toctext">break</span></a></li>
+<li class="toclevel-1"><a href="#Validating_the_input_data"><span class="tocnumber">3</span> <span class="toctext">Validating the input data</span></a></li>
+<li class="toclevel-1"><a href="#Stuck_in_a_loop_and_Ctrl_C_won.27t_work"><span class="tocnumber">4</span> <span class="toctext">Stuck in a loop and Ctrl C won't work</span></a></li>
+<li class="toclevel-1"><a href="#.27not.27_vs._.27is_not.27"><span class="tocnumber">5</span> <span class="toctext">'not' vs. 'is not'</span></a></li>
+<li class="toclevel-1"><a href="#The_need_for_continue"><span class="tocnumber">6</span> <span class="toctext">The need for continue</span></a>
+<ul>
+<li class="toclevel-2"><a href="#RE:_An_exception_--.3E_zero_division"><span class="tocnumber">6.1</span> <span class="toctext">RE: An exception --&gt; zero division</span></a></li>
+<li class="toclevel-2"><a href="#RE:_need_for_continue"><span class="tocnumber">6.2</span> <span class="toctext">RE: need for continue</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#The_need_for_while"><span class="tocnumber">7</span> <span class="toctext">The need for while</span></a>
+<ul>
+<li class="toclevel-2"><a href="#RE:_need_for_while"><span class="tocnumber">7.1</span> <span class="toctext">RE: need for while</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Mentionable_bug_while_working_exercise"><span class="tocnumber">8</span> <span class="toctext">Mentionable bug while working exercise</span></a>
+<ul>
+<li class="toclevel-2"><a href="#RE:_Mentionable_bug_while_working_exercise"><span class="tocnumber">8.1</span> <span class="toctext">RE: Mentionable bug while working exercise</span></a></li>
+<li class="toclevel-2"><a href="#RE:RE:_Mentionable_bug_while_working_exercise"><span class="tocnumber">8.2</span> <span class="toctext">RE:RE: Mentionable bug while working exercise</span></a></li>
+<li class="toclevel-2"><a href="#RE:RE:RE:_Mentionable_bug_while_working_exercise"><span class="tocnumber">8.3</span> <span class="toctext">RE:RE:RE: Mentionable bug while working exercise</span></a></li>
+<li class="toclevel-2"><a href="#RE:RE:RE:RE:_Mentionable_bug_while_working_exercise"><span class="tocnumber">8.4</span> <span class="toctext">RE:RE:RE:RE: Mentionable bug while working exercise</span></a></li>
+<li class="toclevel-2"><a href="#When_to_use_.22is_None.22"><span class="tocnumber">8.5</span> <span class="toctext">When to use "is None"</span></a></li>
+<li class="toclevel-2"><a href="#Better_Understanding_of_multiple_if-statements_vs_if-elif-statements"><span class="tocnumber">8.6</span> <span class="toctext">Better Understanding of multiple if-statements vs if-elif-statements</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Chapter_5_Exercises"><span class="tocnumber">9</span> <span class="toctext">Chapter 5 Exercises</span></a></li>
+<li class="toclevel-1"><a href="#More_Resource_Topics"><span class="tocnumber">10</span> <span class="toctext">More Resource Topics</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<h3> <span class="mw-headline" id=".22is.22_and_.22is_not.22_Operators">"is" and "is not" Operators</span></h3>
+<p>"is" can be used in logical expressions.</p>
+<p>It implies 'is exactly the same instance, type and value'.</p>
+<p>Whereas '==' compares two items and will declare the comparison as 'True' if the items are the same type and have the same physical value, the 'is' operator only agrees they are the same if they are actually the same physical instance of the value.</p>
+<p>[You don't need to understand this in any more detail if you are happy with the statement above! The reason there is a difference between 'is' and '==' starts to become clearer if you understand that the Python language caches small values such as '1', '2', "a", "b", etc, consequently when you say 'x = 1' x is pointed at the cached value of '1', 'y = 1' will point at the same physical cached value of '1' rather than at another instance of '1' somewhere else in memory. So 'x is y' is actually True because they both point at the same physical cached value of '1'. In the example below where x and y are set to 10000, 'x is y' is False because Python doesn't cache the larger values, so x points at one instance of 10000, whereas y points at a difference instance of 10000, so x is not actually the same instance as y. Because this behavior is implementation dependent, 'is' should only be used with predefined constant values such as 'True', 'False' and 'None'. If Python was re-implemented for an environment with very little memory, it is possible it would cache more constants, so 10000 could be cached and then your program which checked 'x is y' could return 'True' instead of 'False' making an unexpected change in the logic, fine if that was intended, but disastrous if not!]</p>
+<p>'==' should be used more frequently than 'is' and 'is not' as these operators are intended for specific situations. 'is' and 'is not' are best used when testing for specific values like "None" or "True/False". '==' is best used for testing numeric values. (i.e. 'if i == 4')</p>
+<p>Avoid using "is" or "is not" to check for equality between integer or floating point numbers since results are unpredictable. For example:</p>
+<code><pre>&gt;&gt;&gt;&gt; x = 1
+&gt;&gt;&gt;&gt; y = 1
+&gt;&gt;&gt;&gt; x is y
+True
+
+&gt;&gt;&gt;&gt; x = 10000
+&gt;&gt;&gt;&gt; y = 10000
+&gt;&gt;&gt;&gt; x is y
+False
+</pre></code>
+<h1> <span class="mw-headline" id="break">break</span></h1>
+<p>Use the small letter "b" instead of the capital letter "B" to key in the "break" statement before you run a program. </p>
+<h1> <span class="mw-headline" id="Validating_the_input_data">Validating the input data</span></h1>
+<p>Validating the input data means checking that what was input is the kind of data you want. <br/>
+The below code is one way to do that.<br/><br/>
+<pre>
+try:
+    num = int(num)
+except:
+    print "Invalid input"
+    continue
+</pre></p>
+<p>Or if you wish to do this without potentially affecting the value of num, this code works as well.
+<pre>
+    try:
+        num = float(num)
+    except:
+        print "Invalid input"
+        continue
+</pre></p>
+<h1> <span class="mw-headline" id="Stuck_in_a_loop_and_Ctrl_C_won.27t_work">Stuck in a loop and Ctrl C won't work</span></h1>
+<p>Normally 'Ctrl C' will terminate a python program but I got stuck trying to exit my draft program that wasn't doing what I wanted. Instead of exiting as normal it very nicely handled the input as a String and simply returned "Invalid Input:"  then followed 'continue' by simply requesting a new number. Initially I had to kill the terminal session and start afresh until I eventually found that Ctrl Z did the job when Ctrl C did not!   <br/></p>
+<p>*Note(Júlio Araújo): Ctrl+Z, at least in a command line in Linux cause the current proccess that is executing to 'pause' not to stop. If in Linux(may test on other OS) from the command line you execute the program 'top' and make Ctrl+Z will you see that it is paused in background, to call the program back(from pause state) you can do 'fg'. With two or more programs are in background, you have to do 'fg x' - where x is the number associated with the paused program.</p>
+<p>*Note(Robin Hood): I think Ctrl+D sends EndOfFile and may work here.</p>
+<h1> <span class="mw-headline" id=".27not.27_vs._.27is_not.27">'not' vs. 'is not'</span></h1>
+<p><pre>
+    intTestValueOne = 1
+    if not type(intTestValueOne) == type(1.0):
+        print "Variable is not type('float')"</pre></p>
+<pre>
+    fltTestValueTwo = 3.5
+    if type(fltTestValueTwo) is not type(1):
+        print "Variable is not type('int')"</pre>
+<p>Both of the above 'if' statements are going to evaluate to true but which would be the preferred way? I don't know if this is something that I or anyone else is going to be doing on a regular basis and I don't remember what I was thinking about that initially cause me to go this route, but my first attempts with several derivations of the below all failed.
+<pre>
+    if type(intTestValueOne) == "&lt;type 'int'&gt;": 'dosomething'
+</pre></p>
+<p>... why not just this:
+<pre>
+    if type(x) == int: "dosomething"
+</pre>
+<p>this thing "&lt;type 'int'&gt;" is a string so I wouldn't be comparing the type to a string like that. In newer versions of Python it is &lt;class 'int'&gt; so that code is fragile. 
+</p>
+int is a keyword so just use it.</p>
+<h1> <span class="mw-headline" id="The_need_for_continue">The need for continue</span></h1>
+<p>I answered assignment 5.1 with the following:</p>
+<pre>
+si = 0
+ci = 0
+
+while True:
+
+    inp = raw_input("Enter a number: ")
+    if inp == 'done' : break
+    try:
+        num = float(inp)
+        si = si + num
+        ci = ci + 1
+    except: #this appears to also work for an unintended blank line of data as well.
+        print "Bad Data"
+
+print "Sum:", si, "Count:", ci, "Mean:",si/ci
+</pre>
+<p>It appears to work fine without the use of 'continue'. Am I missing an exception that I should have debugged for?</p>
+<h3> <span class="mw-headline" id="RE:_An_exception_--.3E_zero_division">RE: An exception --&gt; zero division</span></h3>
+<p>I agree with you, there is no need to use 'continue' in this case because 'try' will make the execution stop at the first statement and therefore the count and the sum will not be affected. However we should add a few statements before evaluating 'si/ci' to prevent zero division error (when the user only types invalid inputs then 'done') this way as an example:</p>
+<pre>
+if ci != 0 :
+    print "Sum:", si, "Count:", ci, "Mean:",si/ci
+else :
+    print "All inputs you entered were invalid ! Good Bye !"
+</pre>
+<h3> <span class="mw-headline" id="RE:_need_for_continue">RE: need for continue</span></h3>
+<p>There is no need for continue as the 'except:' is at the end of the loop. this means that once except is triggered it will already go to the next iteration</p>
+<p>Continue, however, is needed for a piece of code like this:</p>
+<pre>
+loop= 0
+count= 0
+running_total= 0
+while loop ==0:
+    inp= raw_input ("Enter a number:")
+    
+    if inp== "done" or inp== "Done" :
+        break
+        
+    try:
+        num= float(inp)
+    except:
+        print "Invalid input. Please insert a number or type done to finish"
+        continue 
+        
+    count= count + 1
+    
+    running_total= running_total + num
+        
+
+print count," numbers input" 
+print running_total," total"
+print "and average:", running_total/count
+</pre>
+<p>to clarify, continue is needed here because without it any bad input will not stop the iteration. this will mess up the count and the running total.</p>
+<h1> <span class="mw-headline" id="The_need_for_while">The need for while</span></h1>
+<p>I don't get the need for while loops. Can you give me an example for a while loop, that solves a problem that cannot be solved by a for loop?</p>
+<h3> <span class="mw-headline" id="RE:_need_for_while">RE: need for while</span></h3>
+<p>We need while loops when you don't know the number of iterations before hand and want to execute a bunch of code until some condition is satisfied.
+A trivial example is -- Ask user to input a number - Print the number if it is odd - Stop printing if it is even -- in a loop. So here, you won't know before hand the number of times the loop has to execute and you would use "while"</p>
+<h1> <span class="mw-headline" id="Mentionable_bug_while_working_exercise">Mentionable bug while working exercise</span></h1>
+<p>When trying to return the smallest and largest integer from one or more raw_input() prompts:
+Originally both the 'small' and 'large' variable were assigned a value of 'None'.
+In order to replace the value for both variables with the very first (or only) input, I tried this bit of code:</p>
+<pre>
+if num &lt; small and num &gt; large:
+    small = num
+    large = num
+</pre>
+<p>I tried rearranging and simplifying and putting conditionals within conditionals no matter what I did:
+<ul><li>large would always return as you would expect, with the largest or only input number
+</li><li>and small would ALWAYS return its original value of None!
+</li></ul>
+After spending about 30 minutes rewriting and rewriting, I watched again the lesson on 'is' expressions and decided to try this:</p>
+<pre>
+if small is None and large is None:
+    small = num
+    large = num
+</pre>
+<p>... which fixed fixed the bug and now seems intuitive but I still cannot understand why it wouldn't work the first way. If the value for both variables is None then it is true that 'num &lt; small and num &gt; large' so why would only one of the the variables within that condition be reassigned value?
+I know what to do now if I come across a similar problem but I think it would be helpful to understand the nature of the problem in anycase. If anyone can answer the question, it'd be much appreciated.</p>
+<p>I spent half an hour trying to figure out this same problem. The reason for this is in Python version 2.7 there is nothing smaller than None, so the expression will never evaluate as True.  This has been changed in python 3. To demonstrate, the code simplified was:
+<pre>
+small = None
+if input &lt; small:
+    small = input
+</pre></p>
+<p>There is no value of 'input' that will cause the if statement to be true.</p>
+<h3> <span class="mw-headline" id="RE:_Mentionable_bug_while_working_exercise">RE: Mentionable bug while working exercise</span></h3>
+<p>Why exactly do you think that value of 'none' would be larger and at the same time smaller than one and the same (first) input? Let's try '3' for example:</p>
+<pre>
+if 3 &lt; None and 3 &gt; None:
+    small(None) = 3
+    large(None) = 3
+</pre>
+<p>How it is supposed to work?</p>
+<h3> <span class="mw-headline" id="RE:RE:_Mentionable_bug_while_working_exercise">RE:RE: Mentionable bug while working exercise</span></h3>
+<p>It works as it should. and - is logical operation, the result is True when both sides are true. So if we do your 'and' in sequences it be as follow:<br/>
+<pre>
+if num &lt; small:             # if it is true next is checked
+    if num &gt; large:         # if small &lt;= large then that statement is false, so next will be ignored
+        pass                # the result TRUE AND FALSE will never be executed /
+        small = num         # /&lt;br /&gt;
+print 'I am the fisrt instruction after if (TRUE) AND (NOT TRUE) logic'
+</pre></p>
+<h3> <span class="mw-headline" id="RE:RE:RE:_Mentionable_bug_while_working_exercise">RE:RE:RE: Mentionable bug while working exercise</span></h3>
+<p>To avoid that the Smallest Value stays on None, i add another condition to change the value of smallest with the first input number:
+<pre>
+ if num &gt;= largest:
+    largest = num
+if num &lt; smallest or smallest == None:
+    smallest = num
+</pre></p>
+<h3> <span class="mw-headline" id="RE:RE:RE:RE:_Mentionable_bug_while_working_exercise">RE:RE:RE:RE: Mentionable bug while working exercise</span></h3>
+<p>Think of None as a way to represent absence of a value</p>
+<h3> <span class="mw-headline" id="When_to_use_.22is_None.22">When to use "is None"</span></h3>
+<p>The use of "is None" was discussed in Video Lecture 5.3 and Chapter 5.7 from the text book.</p>
+<p>The concept was hard to understand until I realised "is None" is actually a Comparison Operator like (&lt;, ==, &gt;, &gt;=, ...etc) and often used in a Conditional expression.</p>
+<p>Let's start with a simple example - without "is None"
+<pre>
+if (firstNum == 1 and bottomNum &lt;&gt; 0):    # pretty easy to understand, BOTH Comparison Operators need to return TRUE
+    .... Do Something                     # before the if-statement block underneath can Do Something
+</pre></p>
+<p>Let's change the "and" operator to "or", so either one of the conditions will turn the if-statement to TRUE
+<pre>
+if (firstNum == 1 or bottomNum &lt;&gt; 0):     # either firstNum == 1 is TRUE, OR, bottomNum &lt;&gt; 0 is TRUE
+    .... Do Something                     # if-statement block underneath will Do Something
+</pre></p>
+<p>Let's set up "is None"
+<pre>
+    firstNum = None                            # note that this is an assignment, not a comparison
+    .
+    .
+    if (firstNum == None or some condition):   # this is a comparison, note the double ==
+    .... Do Something                          # Since the first part is always TRUE, if-statement will run at least once
+</pre>
+<p>So why would you use "is None" ?
+You want to use "is None" when you don't know how high or low to set the value of the variable "firstNum". In the book example it was used to find the Maximum and Minimum number from a list. "is None" can be think of as any value, just a place holder for any value. It needs to be initialised after first use.
+The comparison operator == is easy to understand. If something equals to something, then it's TRUE. 
+Now change the "==" into is None.
+</p>
+<pre>
+    firstNum = None                            #
+    .
+    .
+    if (firstNum is None or some condition):   # equivalent to double == None, because "or" is used, the if-statement
+    .... Do Something                          # will always execute at the first time. "firstNum" will be assigned 
+                                               # some initial value inside the if-block
+</pre>
+<p>Using the Maximum loop example from Chapter 5.7
+</p>
+<pre>
+    if largest is None or itervar &gt; largest :
+        largest = itervar                      # as mentioned, you need to assign an initial value after is None first use
+    print 'Loop:', itervar, largest
+</pre>
+<p>After first initialisation. From this moment on, the "is None" condition is ignored. It's as if this is a normal if-statement. You can think of it like this,
+</p>
+<pre>
+    if itervar &gt; largest :                     # is None can be ignored after first initialisation
+        largest = itervar                      # subsequent loops will behave just like any other if-statement
+    print 'Loop:', itervar, largest
+</pre></p>
+<h3> <span class="mw-headline" id="Better_Understanding_of_multiple_if-statements_vs_if-elif-statements">Better Understanding of multiple if-statements vs if-elif-statements</span></h3>
+<p>While working on this problem using the if-elif statements in my solution, I keep getting inconsistent results depending on the order in which I enter the values (as input). Logically the coding looks fine and there were only two conditions to evaluate, so the if-elif "shouldn't" make any difference. What I failed to recognise was the subtle difference between multiple if-statements and if-elif-statements.</p>
+<p>Let's consider this dummy example: working out the highest and lowest temperatures from climate change in the past decades.
+<pre>
+     if initialise baseTemp, baseTemp &gt; highest:     # let's call this line the highest temp condition
+        highest = baseTemp
+     elif initialise baseTemp, baseTemp &lt; lowest:    # call this the lowest temp condition
+        lowest = baseTemp
+</pre>
+<p>Logically, if the base temperature isn't greater than highest then it must be the lowest (eg. the elif-statement will be executed). The baseTemp variable needs to be initialised with some common base value, so with each loop this variable can be compared to find the highest or the lowest temperature. The details of these comparisons and what goes on within the if-blocks are NOT actually important, except for the following two points. I am only interested in multi-if vs elif here.
+</p>
+<pre>
+    1. I want both the highest and lowest statements to start with the same baseTemp
+    2. With each iteration, the variable is evaluated against the highest OR the lowest condition
+</pre>
+<p>Point 2 above is pretty much taken care of since if the first condition isn't meet, the if-statement will jump to the next condition. In fact, I can replace "elif" with just "else" here since there are only two. Logically it's still sound. The "gotcha" is that once you initialised baseTemp the value will change depending on which if-statement it subsequently execute. So to satisfy Point 1, both highest and lowest conditions need to be executed in the very first loop. With "elif",if the first if-statement (highest condition) is TRUE then the second if-statement (lowest temp) would not be getting the proper baseTemp value. In this case, replace "elif" with "if".
+</p>
+<pre>
+     if initialise baseTemp, baseTemp &gt; highest:
+        highest = baseTemp
+     if initialise baseTemp, baseTemp &lt; lowest:
+        lowest = baseTemp
+</pre>
+<p>And this is what I didn't get before.... in an if-elif-statements, when ANY of the elif or if condition is meet, the program immediately jumps out and ignore the rest of the block.
+</p>
+<pre>
+if a:
+    do something a
+elif b:
+    do something b
+elif c:
+    do something c
+else:
+    print "None of the above"
+</pre>
+<p>In a multi if-statements, each if-statement condition will be tested. Of course, any initialisation within each if-statement block will also be executed (if setup to do so).
+</p>
+<pre>
+if a:
+    do something a
+if b:
+    do something b
+if c:
+    do something c
+else:
+    print "None of the above"
+</pre></p>
+<h1> <span class="mw-headline" id="Chapter_5_Exercises"><a href="/wiki/index.php/Pythonlearn:exercises-chapter05" title="Pythonlearn:exercises-chapter05"> Chapter 5 Exercises</a></span></h1>
+<p>The above page is intended as a place for students to work out solutions and answers to the exercises from the textbook. Please do not post answers to exercises that are actual graded assignments.</p>
+<h1> <span class="mw-headline" id="More_Resource_Topics">More Resource Topics</span></h1>
+<p>Add resources for this chapter to this page..</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 250/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+<!-- Saved in parser cache with key crowdwiki:pcache:idhash:3960-0!*!0!!en!*!* and timestamp 20161126063319 -->
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week05&amp;oldid=34421">https://share.coursera.org/wiki/index.php?title=Pythonlearn:resources-week05&amp;oldid=34421</a>"</div>
+<div class="catlinks catlinks-allhidden" id="catlinks"></div> <!-- end content -->
+</div>
+</div>

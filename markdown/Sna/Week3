@@ -1,0 +1,49 @@
+Concepts: Betweenness, closeness, eigenvector centrality (+ PageRank), network centralization
+
+Activities: Calculate and interpret node centrality for real-world networks (your Facebook graph, the Enron corporate email network, Twitter networks, etc.)
+
+# Centrality
+Centrality refers to individual node.
+Centralization characterizes the entire network  by  capturing the inequality of the distribution of centralities.
+The simplest measure of centralization is standard deviation of degree distribution.
+
+Freeman's general formula for centralization:
+
+$$C_D = \frac{\sum_{i=1}^g[C_D(n*) - C_D(i)]} {[(N - 1)(N-2)]} $$
+
+where $$C_D(n*)$$ is the maximum centrality in the network.
+
+
+# Brokerage
+
+# Betweenness
+Intuition: how many pairs of individuals would have to go through you in order to reach one another in the minimum shortest path.
+
+$$C_B(I) =\sum_{j<k}\frac{g_{jk}(i)} {g_{jk}}$$
+
+where $$g_{jk}$$ is the number of shortest paths connecting $$j$$ and $$k$$, and $$g_{jk}(i) $$- the number of shortest paths connecting $$j$$ and $$k$$ that go through $$i$$. 
+
+The $$C_B(I) $$ is usually normalized as follows:
+
+$$C_B(I) = C_B(I) / [(N - 1) (N-2) / 2]$$
+
+# Closeness
+Closeness is based on the length of the shortest path between a node and all other nodes in the network.
+Closeness Centrality is defined as
+
+$$C_C(i) =[\sum_{j=1}^Nd(i,j) ]^{-1} $$
+
+# Eigenvector Centrality
+Bonacich eigenvector centrality
+
+$$c_i(\beta) = \sum_j(\alpha + \beta c_j) * A_{ji} $$ 
+, where 
+* $$\alpha $$ is a normalization constant
+* $$\beta $$ determines how important the centrality of your neighbors is
+* $$A $$ is the adjacency matrix (can be weighted)
+* $$I$$ is the identity matrix (1s down the diagonal, 0s off-diagonal)
+* $$1$$ is a matrix of all ones
+
+Small $$\beta $$ signifies high attenuation, only your immediate friends matter.
+High $$\beta $$ signifies low attenuation,  global network structure matters. 
+0 yields simple degree centrality.

@@ -1,0 +1,84 @@
+<div id="content">
+<a id="top"></a>
+<h1 class="firstHeading" id="firstHeading">Pythonlearn:resources-week07</h1>
+<div id="bodyContent">
+<h3 id="siteSub">From Coursera</h3>
+<div id="contentSub"></div>
+<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div> <!-- start content -->
+<div class="mw-content-ltr" dir="ltr" lang="en"><p><a href="/wiki/index.php/Pythonlearn:Resources" title="Pythonlearn:Resources"> Back to Resources</a></p>
+<table class="toc" id="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Working_with_files"><span class="tocnumber">1.1</span> <span class="toctext">Working with files</span></a>
+<ul>
+<li class="toclevel-3"><a href="#The_newline_character"><span class="tocnumber">1.1.1</span> <span class="toctext">The newline character</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Code_patterns"><span class="tocnumber">1.2</span> <span class="toctext">Code patterns</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Counting_lines_in_a_file"><span class="tocnumber">1.2.1</span> <span class="toctext">Counting lines in a file</span></a></li>
+<li class="toclevel-3"><a href="#Reading_the_whole_file"><span class="tocnumber">1.2.2</span> <span class="toctext">Reading the whole file</span></a></li>
+<li class="toclevel-3"><a href="#Searching_through_a_file"><span class="tocnumber">1.2.3</span> <span class="toctext">Searching through a file</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Chapter_7_Exercises"><span class="tocnumber">2</span> <span class="toctext">Chapter 7 Exercises</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_exercises_with_file_introduce_the_idea_of_opening_a_text_file_and_choosing_a_handle_to_it."><span class="tocnumber">2.1</span> <span class="toctext">The exercises with file introduce the idea of opening a text file and choosing a handle to it.</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Opening"><span class="tocnumber">2.1.1</span> <span class="toctext">Opening</span></a></li>
+<li class="toclevel-3"><a href="#Working_the_data"><span class="tocnumber">2.1.2</span> <span class="toctext">Working the data</span></a></li>
+<li class="toclevel-3"><a href="#Create_and_write_in_a_file"><span class="tocnumber">2.1.3</span> <span class="toctext">Create and write in a file</span></a></li>
+<li class="toclevel-3"><a href="#Closing_the_file"><span class="tocnumber">2.1.4</span> <span class="toctext">Closing the file</span></a></li>
+<li class="toclevel-3"><a href="#Printing_the_results"><span class="tocnumber">2.1.5</span> <span class="toctext">Printing the results</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#More_Resource_Topics"><span class="tocnumber">3</span> <span class="toctext">More Resource Topics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#File_names_and_paths:"><span class="tocnumber">3.1</span> <span class="toctext">File names and paths:</span></a>
+<ul>
+<li class="toclevel-3"><a href="#For_Windows:"><span class="tocnumber">3.1.1</span> <span class="toctext">For Windows:</span></a></li>
+<li class="toclevel-3"><a href="#For_Unix_.2F_Unix-like_.28Linux.2C_.5BMac.5D_OS_X.2C_etc.29"><span class="tocnumber">3.1.2</span> <span class="toctext">For Unix / Unix-like (Linux, [Mac] OS X, etc)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Using_try.2C_except.2C_and_open"><span class="tocnumber">4</span> <span class="toctext">Using try, except, and open</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<h2> <span class="mw-headline" id="Working_with_files">Working with files</span></h2>
+<p>Before Python can access file information it must "open" the file. open() is the built-in function which tells Python to open the file. open() takes two parameters 'filename' and 'mode'. If you leave the second parameter off 'open(filename)' Python will simply open the file in read mode ('r'). Opening a file does not cause Python to read all the data in the file, but it makes the information in the file available to Python to use - it creates a connection between Python and the file on the hard drive, referred to as a "Handle".</p>
+<p>If the file cannot be found you will receive a traceback error.</p>
+<h3> <span class="mw-headline" id="The_newline_character">The newline character</span></h3>
+<p>'\n' represents a newline. Newline is one character, even though it is represented by two.</p>
+<h2> <span class="mw-headline" id="Code_patterns">Code patterns</span></h2>
+<h3> <span class="mw-headline" id="Counting_lines_in_a_file">Counting lines in a file</span></h3>
+<p><pre>
+fhand = open("words.txt")
+count = 0
+for line in fhand:
+    count = count + 1
+print "line count", count
+</pre></p>
+<h3> <span class="mw-headline" id="Reading_the_whole_file">Reading the whole file</span></h3>
+<p><pre>
+fhand =  open("words.txt")
+inp = fhand.read() # reads the whole file into memory
+print len(inp)# returns the number of characters in a file
+print inp # prints the whole file
+</pre></p>
+<h3> <span class="mw-headline" id="Searching_through_a_file">Searching through a file</span></h3>
+<p><pre>
+fhand= open("mbox-short.txt")
+for line in fhand:
+    # line = line.rstrip()
+    if line.startswith("From "):
+        print line
+</pre>
+<ul><li>note that methods something.strip() or something.rstrip() should be used to get rid of the extra \n (new line character). </li></ul></p>
+</div></div></div>
