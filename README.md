@@ -4,7 +4,7 @@ This is a bit of clunky bit of Python code - but it works with a little attentio
 content from Coursera's mediaWiki instance.  In essense, you give this application a list
 of categories and the `wiki_extract.py` will spider the URLs and extract the following:
 
-* It reads the HTML version of the page and pulls out the main content <div>.  It then parses
+* It reads the HTML version of the page and pulls out the main content `<div>`.  It then parses
 that, looking for thumbnail images, and pull down the images down and stores them in the `images`
 folder. It also looks for `File:` urls, visits the `File:` page, grabs the original large image
 and also pulls that into `images`.  Then the `File:` hrefs are patched to point to the actual
