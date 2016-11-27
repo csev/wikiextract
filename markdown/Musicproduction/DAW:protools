@@ -1,0 +1,80 @@
+[[Category:Music Production|protools]]
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project specifics
+details of file management
+*Project Name
+*File type
+*Bit depth
+**Pro tools Bar menu>Preferences>Processing>Audio Suite>Bit Depth>Then choose between 16, 18, 20 or 24 Bits
+*Sampling rate
+*Hardware
+*Buffer size
+**Pro tools Bar menu>Preferences>Processing>Audio Suite>Buffer size>Then choose between mini, small, medium, large or jumbo
+*Project folders specifics
+
+##Recording
+details of audio recording
+*Metronome(click track)
+**Create a new track, then go to Track>Create Click Track.  A mono track is created with the 'click' plugin.  You can customize the plugin from there.  You could, instead, simply create a mono audio track in samples, then find and add the plugin yourself by selecting Inserts A-E>plug-in>Instrument>Click(mono).
+**Customize the click by doing a left click on the plugin in the track strip within the Mix window.  click on the <factory default> button to get the Librarian menu.  There you can choose the click sound.  Next, you can modify the accented and unaccented settings (measured in dB) which help keep time while you create.
+**To listen to your click track, click solo in the click track (in case you already have other recorded tracks in your session).  Select View>Transport>Midi Controls, then, in the Transport Window, highlight only the Metronome in the bottom right.  Be sure to de-select the Countoff button, and click Play.  Modify settings as desired.
+*Count in
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+*Grid
+*Change grid resolution
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+**Software instruments are also known as Virtual Instruments.
+**Pro Tools supports RTAS and AAX virtual instruments or plugins
+**Installed instruments are recognized by Pro Tools on start up.
+
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+*Website
+*Manual
+*Forums
+*Links
+
+##Categories

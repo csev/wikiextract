@@ -1,0 +1,93 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Comnetworks:Phone Calls are like Sockets</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Let's consider what one needs to do to make a phone call. Let's also assume that this is in the age before cell phone, and everyone has a land line.</p>
+<p>First you would contact your local phone company/agency to order a phone. A technician would run a wire from the local pole your home and connect it to your new phone. You would also get a new phone number.</p>
+<p>Once you have a new phone, you have to try it out. Being a good child, you call your parents.</p>
+<p>You pick up the phone and wait for the dial tone. Then you enter in your childhood phone number. The number rings a few times, and then you hear a click and your mother’s voice say, “Hello.”</p>
+<p>You say, “Hello mom. I’m calling from my new phone.”</p>
+<p>“Oh that’s wonderful,” she says.</p>
+<p>You chit-chat for awhile, and then you say, “It’s been great talking to you mom, but I have a few more people to call. I wanted to call you first.”</p>
+<p>“That’s lovely Junior. Thanks for calling. Good-bye.”</p>
+<p>“Good-bye.”</p>
+<p>And you both hang up.</p>
+<p>Computer applications use Sockets in much the same way that people use telephones. In both cases people and computers connect using a network. The underlying network mechanism is unknown. There’s a set protocol for establishing a connection each network. The network, for the most part, doesn’t care about the content being communicated.</p>
+<p>Let’s compare the telephone model API with the Socket API. It’s not an exact match, but it’s reasonably close.</p>
+<p>First the caller/client API:
+<table border="BORDER">
+<tr>
+<th>Caller
+</th><th>Client
+</tr><tr>
+<td>Install the phone
+</td><td>SOCKET
+</tr><tr>
+</td><td>Look up a phone number in the phone book.
+</td><td>GETADDRINFO
+</tr><tr>
+</td><td>Dial the number
+</td><td>CONNECT
+</tr><tr>
+</td><td>Talking
+</td><td>SEND
+</tr><tr>
+</td><td>Listening
+</td><td>RECV
+</tr><tr>
+</td><td>Hang up
+</td><td>CLOSE
+</table>
+<p>
+Now the person being called/server API:
+<table border="BORDER">
+   <tr>
+      <th>Person being called
+      </th><th>Server
+   </tr><tr>
+      <td>Install the phone
+      </td><td>SOCKET
+   </tr><tr>
+      </td><td>Register the phone with the phone number – done by a technician.
+      </td><td>GETADDRINFO
+   </tr><tr>
+      </td><td>Continue the registration.
+      </td><td>BIND
+   </tr><tr>
+      </td><td>Wait for the phone to ring
+      </td><td>LISTEN
+   </tr><tr>
+      </td><td>Pick up a ringing phone.
+      </td><td>ACCEPT
+   </tr><tr>
+      </td><td>Talking
+      </td><td>SEND
+   </tr><tr>
+      </td><td>Listening
+      </td><td>RECV
+   </tr><tr>
+      </td><td>Hang up
+      </td><td>CLOSE
+</table>
+<p>
+The Socket API concept isn’t that much different from concepts that most of us has been using all of our lives.</p>
+<p>Human protocols even predate technology. We just don’t tend to call them protocols. We tend to call them social formalities. When you meet someone new, we often first say "Hello," present names and shake hands. Once we are through these formalities, conversation may begin.</p>
+<p>Computers have the same kind of formalities, but we call them protocols, and sockets is just one of them.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Comnetworks:Phone_Calls_are_like_Sockets&amp;oldid=24019">https://share.coursera.org/wiki/index.php?title=Comnetworks:Phone_Calls_are_like_Sockets&amp;oldid=24019</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,36 @@
+
+
+
+# Lecture Video Table of Contents
+
+##Learning: Parameter Estimation in MNs
+
+Maximum Likelihood for Log-Linear Models
+<pre>
+0:43	Log-likelihood for Markov networks
+5:03	Example: Log-likelihood function
+6:45	Log-likelihood for log-linear model
+9:46	The log-partition function
+18:17	Maximum likelihood estimation
+20:51	Computation: Gradient ascent
+23:24	Example: Ising model
+26:46	Summary
+</pre>
+
+##Maximum Likelihood for Conditional Random Fields
+<pre>
+0:27	Estimation for CRFs
+4:18	Example: Image segmentation
+8:14	Computation
+10:09	"However . . ." (mitigating factors for computational complexity of CRFs)
+12:21	Summary
+</pre>
+
+##MAP Estimation for MRFs and CRFs
+<pre>
+0:00	Introduction
+2:00	Gaussian parameter prior
+3:20	Laplacian parameter prior
+4:39	MAP estimation and regularization
+8:42	Summary
+</pre>

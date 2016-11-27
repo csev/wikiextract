@@ -1,0 +1,28 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compfinance:Asset Return Calculations (Equations)</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h2> <span class="mw-headline" id="Simple_Returns">Simple Returns</span></h2>
+<p>Let $$P&#95;t$$ denote the price in month $$t$$ of an asset that pays no dividends and let $$P&#95;{t−1}$$ denote the price in month $$t − 1$$.</p>
+<p>$$R = \frac{(P&#95;t - P&#95;{t-1})}{P&#95;{t-1}}$$</p>
+<h2> <span class="mw-headline" id="Continuously_Compounded_Returns">Continuously Compounded Returns</span></h2>
+<p>Let $$P&#95;t$$ denote the price in month $$t$$ of an asset that pays no dividends and let $$P&#95;{t−1}$$ denote the price in month $$t − 1$$.</p>
+<p>$$r = \ln\left(\frac{P&#95;t}{P&#95;{t-1}}\right)$$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compfinance:Asset_Return_Calculations_(Equations)&amp;oldid=3137">https://share.coursera.org/wiki/index.php?title=Compfinance:Asset_Return_Calculations_(Equations)&amp;oldid=3137</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

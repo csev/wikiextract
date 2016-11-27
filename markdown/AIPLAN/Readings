@@ -1,0 +1,83 @@
+[[Category:Artificial Intelligence Planning|read]]
+## Course Text Books
+
+The course can be augmented using readings from two text books, but these are not required for the course: 
+
+* "[http://projects.laas.fr/planning/ Automated Planning: Theory and Practice]" by Malik Ghallab, Dana Nau and Paulo Traverso (Elsevier, ISBN 1-55860-856-7) 2004.
+* "[http://aima.cs.berkeley.edu/ Artificial Intelligence: A Modern Approach]" by Stuart Russell and Peter Norvig (Prentice Hall, ISBN 0-13-604259-7) 2nd Edition, 2010. Note that [http://aima.cs.berkeley.edu/2nd-ed/newchap11.pdf Chapter 11: Planning] of this edition is available online.  Of course, a later edition may be used but note that chapter numbers and specific content may vary.
+
+A number of other course readings are suggested as the course progresses, and links to freely acessible on-line PDF copies are provided where possible.
+
+## Reviews and Summaries
+
+Hendler, J.A., Tate, A. and Drummond, M. (1990) "AI Planning: Systems and Techniques", AI Magazine Vol. 11, No. 2, pp.61-77, Summer 1990, AAAI Press.
+[[http://aaaipress.org/ojs/index.php/aimagazine/article/view/833 Article]]
+[[http://aaaipress.org/ojs/index.php/aimagazine/article/download/833/751 PDF]]
+[[http://www.aiai.ed.ac.uk/project/oplan/documents/1990-PRE/90-ai-magazine-hendler-tate-drummond-ai-planning.pdf Alt]]
+
+Weld, D.S. (1999) "Recent Advances in AI Planning", AI Magazine, Vol. 20, No. 2, pp. 93-123 Summer 1999, AAAI Press. 
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/view/1459 Article]]
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/download/1459/1358 PDF]]
+[[http://homes.cs.washington.edu/~weld/papers/pi2.pdf Alt]]
+
+Wilkins, D. E. and desJardins, M. (2001) "A Call for Knowledge-based Planning", AI Magazine, Vol. 22, No. 1, pp. 99-115, Spring 2001.
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/view/1547 Article]]
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/download/1547/1446 PDF]]
+
+Nau, D.S. (2007) "Current Trends in Automated Planning", AI Magazine, Vol. 28, No. 4, pp. 43-58, Winter 2007, AAAI Press.
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/view/2067 Article]]
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/download/2067/2054 PDF]]
+
+## Practical Planners and Applications
+
+Tate, A. (1996) "Responsive Planning and Scheduling Using AI Planning Techniques – Optimum-AIV", in "Trends & Controversies – AI Planning Systems in the Real World", IEEE Expert: Intelligent Systems & their Applications, Vol. 11 No. 6, pp. 4-12, December 1996. [[http://www.aiai.ed.ac.uk/project/oplan/documents/1996/96-ieee-is-trends-and-controversies-orig.pdf PDF]]
+
+Tate, A. and Dalton, J. (2003) "O-Plan: a Common Lisp Planning Web Service", invited paper, in Proceedings of the International Lisp Conference 2003, October 12-25, 2003, New York, NY, USA, October 12-15, 2003.
+[[http://www.aiai.ed.ac.uk/project/ix/documents/2003/2003-luc-tate-oplan-web.pdf PDF]]
+
+Nau, D., Au, T-C., Ilghami, O., Kuter, U., Wu, D.,Yaman, F., Muñoz-Avila, H., and Murdock, J.W. (2005) "Applications of SHOP and SHOP2", IEEE Intelligent Systems, March-April 2005, Vol. 20, No. 2, pp.34-41, Computer Society. [[http://www.cs.utexas.edu/~chiu/papers/Nau05shop2.pdf PDF]]
+
+Ghallab, M., Nau, D. and Traverso, P. (2004) "Automated Planning – Theory and Practice", Chapters 19, 22 and 23, Elsevier/Morgan Kaufmann.
+
+## AI Plan Representation
+
+Tate, A. (1998), "Roots of SPAR - Shared Planning and Activity Representation", The Knowledge Engineering Review, Vol. 13, No. 1, pp. 121-128, Special Issue on "Putting Ontologies to Use" (eds. Uschold. M. and Tate, A.), Cambridge University Press, March 1998.
+[[http://www.aiai.ed.ac.uk/project/spar/DOCS/spar-roots.html Article]]
+
+## RoboCup Rescue 
+
+Kitano, H. and Tadokoro, S. (2001) "RoboCup Rescue: A Grand Challenge for Multiagent and Intelligent Systems", AI Magazine, Vol.22, No. 1, pp 39-52, Spring, 2001. 
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/view/1542 Article]]
+[[http://www.aaai.org/ojs/index.php/aimagazine/article/download/1542/1441 PDF]]
+
+## NASA Deep Space 1 - Remote Agent Experiment
+
+Muscettola, N., Nayak, P.P., Pell, B.,Williams, B.C. (1998) "Remote Agent: to boldy go where no AI system has gone before", in Special issue on "Artificial Intelligence 40 Years Later", Artificial Intelligence, Vol. 103, Nos. 1/2, pp. 5-48, August, 1998, Elsevier.
+[[http://www.sciencedirect.com/science/article/pii/S000437029800068X Article]]
+[[http://www.cse.unl.edu/~ylu/csce896/papers/remote-agent.pdf PDF]]
+
+Dorais, G.A., Kurieb, J. and Rajan, K. (1998) "Remote Agent Demonstration", NASA Report.
+[[http://ti.arc.nasa.gov/m/pub-archive/77h/0077%20(Dorais).pdf PDF]]
+
+##ARPA/Rome Laboratory Planning Initiative
+
+Tate, A. (ed.) (1996) Advanced Planning Technology: Technological Achievements of the ARPA/Rome Laboratory Planning Initiative (ARPI), May 29-31, 1996, Edinburgh, Scotland. Published by The AAAI Press, Menlo Park, California, USA. ISBN 978-0-929280-98-1.
+[[http://www.aaai.org/Library/ARPI/arpi96contents.php AAAI Press On-line Version]] *Each paper can be clicked on, and access to the PDF is via the blue hyper-linked title in the pop-up abstract that appears*
+
+Bursetin, M.H. (1997) The Common Prototype Environment -Final Technical Report, BBN Systems & Technology, Rome Laboratory Technical Report RL-TR-97-35, June 1997. [[http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA329154 DTIC On-line PDF]]
+
+## Readings Suggested by Class Participants
+
+Please add carefully selected readings proposals here.
+
+LaValle, S.M. (2006) Planning Algorithms, Cambridge University Press. [[http://planning.cs.uiuc.edu/ On-line e-Book 842 pages]] *Primarily about planning related to robot control*.  
+
+Week 2 Feature: Nilsson, Nils J. (1984) Shakey the Robot, Technical Note 323, SRI International. [[http://www.ai.sri.com/pub_list/629 Article]]
+
+[http://bookboon.com Bookboon.com], a free e-textbook publisher, offers their free textbooks on artificial intelligence for the AI Planning MOOC students to download during their online lectures: 
+
+* Artificial Intelligence: Agents and Environments [http://bookboon.com/en/textbooks/it-programming/artificial-intelligence-agents-and-environments]
+* Artificial Intelligence: Agent Behaviour [http://bookboon.com/en/textbooks/it-programming/artificial-intelligence-agent-behaviour-i]
+* Artificial Intelligence: Exercises I [http://bookboon.com/en/textbooks/it-programming/artificial-intelligence-exercises-i]
+* Artificial Intelligence: Exercises II [http://bookboon.com/en/textbooks/it-programming/artificial-intelligence-exercises-ii]
+## Categories

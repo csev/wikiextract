@@ -1,0 +1,91 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Interactivepython: Good Advice on Programming</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction_and_background"><span class="tocnumber">1</span> <span class="toctext">Introduction and background</span></a>
+<ul>
+<li class="toclevel-2"><a href="#General_Advice_.28Applicable_to_All_Programming_Languages.29"><span class="tocnumber">1.1</span> <span class="toctext">General Advice (Applicable to All Programming Languages)</span></a></li>
+<li class="toclevel-2"><a href="#Python_Specific_Advice"><span class="tocnumber">1.2</span> <span class="toctext">Python Specific Advice</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Useful_Functions_and_Libraries"><span class="tocnumber">1.2.1</span> <span class="toctext">Useful Functions and Libraries</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Libraries"><span class="tocnumber">1.2.1.1</span> <span class="toctext">Libraries</span></a></li>
+<li class="toclevel-4"><a href="#Functions"><span class="tocnumber">1.2.1.2</span> <span class="toctext">Functions</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction_and_background">Introduction and background</span></h1>
+<p>This is an introductory course and there are plenty of seasoned programmers taking the course. I suggest that we use this page to pass on good advice on Programming in general as well as advice on python specific programming.</p>
+<p>So with that said: Happy editing and I hope people can benefit it</p>
+<h2> <span class="mw-headline" id="General_Advice_.28Applicable_to_All_Programming_Languages.29">General Advice (Applicable to All Programming Languages)</span></h2>
+<ul>
+<li><p>Google is your friend. Identify your problem and Google it. Chances are someone has had a similar problem and the problem has been solved.</p></li>
+<li><p>Find an editor you're comfortable with. Having the right editor can mean the difference between throwing teddy bears and rocks at your computer. </p></li>
+<li>Make sure the editor you use has syntax highlighting, it makes reading code far easier.</li>
+<li><p>Use space indentation in code. It's the generally accepted way of indenting as it keeps the formatting from computer to computer.</p></li>
+<li><p>Write comments. When you do, assume you're writing it for someone who has never read a line of code. When you look at your code 3 months later, they will help you understand the code you've written. </p>
+<p>-- Include a short description, date (maybe time), how, and what the change is supposed to accomplish. Comment out the code to be changed, then enter the corrected code. Never DELETE the original code until the program is about to be released as a gold or platinum release.</p></li>
+<li><p>Make sure to indent rigidly. As far as Python goes this is a requirement but many other languages don't require it. It greatly helps readability of the code and makes it much easier to see where a block of code belongs.</p></li>
+<li><p>If you require to do something more than once, write a function for it. Again this enhances readability of the code as the code requires fewer lines. However you must also weigh the impact from loading the function's parameters along with the load and execution time. Over-functionalized programs can become poor performers and may become dificult to support particularly in a large developmental shop.</p></li>
+<li><p>When you're in doubt of where your error is, use distinguishable 'print()' calls. It'll help you figure out exactly where your problem arises. Or you can use built-in debug tools.</p></li>
+<li><p>Keep lines short. Many style guidelines suggest a maximum of 80 characters per line including spaces. 60 allows for sidebar comments</p></li>
+</ul>
+<h2> <span class="mw-headline" id="Python_Specific_Advice">Python Specific Advice</span></h2>
+<ul>
+<li>Use the documentation for Python. It can help you find and understand built-in functions thus, eliminating your need for reinventing it.</li>
+</ul>
+<h3> <span class="mw-headline" id="Useful_Functions_and_Libraries">Useful Functions and Libraries</span></h3>
+<p>It's nearly always a better choice to use the functions that are already implemented in Python, or any other language for that matter, rather than writing your own. So here's a section for useful libraries and functions.</p>
+<h4> <span class="mw-headline" id="Libraries">Libraries</span></h4>
+<ul>
+<li>random - This library is very useful for whenever you need to generate a random value.</li>
+<li>math - This library contains a number of useful mathematical functions freeing you from coding them yourself.</li>
+</ul>
+<h4> <span class="mw-headline" id="Functions">Functions</span></h4>
+<ul>
+<li><p>string.lower() - This function will turn your string into purely lower case letters. This is highly useful as you never know how a user will enter a string</p>
+<blockquote>
+  <p>foo = "BaR"</p>
+  <p>print foo.lower()</p>
+  <p>bar</p>
+</blockquote></li>
+<li><p>string.upper() - This function will turn your string into purely upper case letters.</p>
+<blockquote>
+  <p>foo = "baR"</p>
+  <p>print foo.upper()</p>
+  <p>BAR</p>
+</blockquote></li>
+<li><p>string.capitalize() - This will capitalize the first letter of your string.</p>
+<blockquote>
+  <p>foo = "bar"</p>
+  <p>print foo.capitalize()</p>
+  <p>Bar</p>
+</blockquote></li>
+</ul>
+<hr />
+<p><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Interactivepython:_Good_Advice_on_Programming&amp;oldid=26973">https://share.coursera.org/wiki/index.php?title=Interactivepython:_Good_Advice_on_Programming&amp;oldid=26973</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

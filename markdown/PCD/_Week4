@@ -1,0 +1,99 @@
+# Week 4 Keywords  
+## 4.1 - An in vitro system for caspase activation
+**[PARP](http://en.wikipedia.org/wiki/Poly_ADP_ribose_polymerase)**  
+* poly(ADP-ribose) polymerase  
+* Is cleaved  in apoptotic cells. 
+* The amino acid sequence of one of the cleavage sites of PARP is similar to the amino acid sequence of one of the cleavage sites in interleukin-1beta, which is cleaved by ICE.  
+* It is DEVD in the case of PARP and FEAD in the case of interleukin-1beta.  
+* In both cases, cleavage occurs after the fourth amino acid, the aspartic acid residue.  
+  
+**Biochemical approach**  
+
+**Genetic approach**  
+
+**Chromatography**  
+
+**Anion-exchange chromatography**  
+
+**Affinity chromatography**  
+
+**Pro-caspase**  
+
+**[Zymogen](http://en.wikipedia.org/wiki/Zymogen)**  
+* inactive enzyme precursor  
+
+**HeLa cells** 
+* immortal human cell line. First human cell line isolated and most commonly used human cell line. 
+* Derived in 1951 from a cervical cancer removed from a patient named [Henrietta Lacks](http://en.wikipedia.org/wiki/Henrietta_Lacks), who died of cancer that same year.  
+  
+**Substrate** 
+ 
+**Apaf**  
+* apoptotic protease activating factors  
+
+  
+## 4.2 - Apaf-1, Apaf-2, and Apaf-3  
+**Heme protein**  
+  
+
+**Cytochrome c (Apaf-2)**  
+*  small heme protein with two different jobs, ATP production (component of the electron transport chain) and commitment to the apoptotic fate  
+ * Cytochrome c is a component of the electron transport chain. Its heme group can accept one electron from complex III, which it then transfers to complex IV.  
+* Cytochrome c is an electron carrier and without it, the electron transport chain wouldn't be able to function and the ATP synthase wouldn't be able to make ATP. Cytochrome c is essential for our cells' ability to generate mitochondrial ATP and this is critical for cellular and organismal viability.  
+* In contrast to complexes I through IV and the ATP synthase, cytochrome c is not integrated into the inner mitochondrial membrane but is in the inter membrane space loosely associated with the inner mitochondrial membrane.  
+* Cytochrome c is encoded by the nuclear genome and is synthesized as a pro-form referred to as apo-cytochrome c in the cytoplasm, which is then imported into the inter membrane space in a TOM-dependent manner.  
+* During this import, the heme group is attached and the protein matures to holo-cytochrome c.  
+* Cytochrome c was the first factor with a role in apoptosis identified that in parallel, had a very important role in a cellular process other than apoptosis. Cytochrome c basically has two fundamentally different jobs, ATP production AND commitment to the apoptotic fate.  
+* In  response to apoptotic signals, HeLa cells, for example, release most of their cytochrome c from most of their mitochondria and the release occurs within about 5 min.  
+* Cytochrome c release in response to apoptotic  signals can be blocked by Bcl-2.  
+  
+**Electron transport chain**  
+* Composed of five complexes, complex I, II, III, and IV and the ATP synthase, which uses the electrochemical proton gradient generated across the inner mitochondrial membrane by complexes I, II, III, and IV to synthesize ATP.  
+  
+**Electron carrier**  
+
+**Post-translational import**  
+
+**TOM and Tim complex**  
+
+**Apo-cytochrome c**  
+* pro-form Cytochrome c that is encoded by the nuclear genome and is synthesized in the cytoplasm  
+
+**Holo-cytochrome c**  
+* apocytochrome c + heme
+* During import of Apo-cytochrome c into inter-menbrane space, the heme group is attached and the protein matures 
+
+**Apaf-1**  
+
+**WD40 repeats**  
+**Caspase 9 (Apaf-3)**  
+**CARD domain**  
+**Apoptosome**  
+* Through various biochemical and structural studies we now know that the release of cytochrome c and its binding to Apaf-1 allows the formation of the apoptosome, a wheel composed of 7 spokes, which was determined by cryoelectron microscopy of single apoptosome particles at a resolution of 12.8 angstrom.  
+* This apoptosome is composed of seven Apaf-1 molecules each bound to one cytochrome c molecule.  
+* Once the apoptosome has assembled, potentially up to 7 molecules of pro-caspase 9 can be recruited to the apoptosome through CARD-CARD interactions with Apaf-1.  
+* This then is thought to lead to forced dimerization of pro-caspase 9 molecules.  
+  
+**Induced-proximity model**  
+* While pro-caspases are much less active than cleaved, fully active caspases, they do have some low level of proteolytic activity. This low level of activity is sufficient to cleave and therefore activate other pro-caspase 9 molecules, if in close vicinity, as is the case when two pro-caspase 9 molecules bind to the same apoptosome and are forced to dimerize.  
+* The function of the apoptosome therefore is to bring together pro-caspase 9 molecules so that activation in trans can occur, activation between molecules.  
+  
+**Caspase cascades**  
+**Initiator caspase**  
+**Effector caspase**  
+  
+## 4.3 - Structural analyses of Bcl-2 family members  
+**Structural studies**  
+**Solution structure**  
+**Receptor domain of guardians**  
+**Membrane translocation domain**  
+**Pore-forming bacterial toxins**  
+**Diphtheria toxin**  
+**Conformational or structural change**  
+**Channel-forming activity**  
+**Synthetic lipid membranes**  
+**Mitochondrial outer membrane vesicles**  
+  
+## 4.4 - Comparing the molecular mechanisms of apoptosis in C. elegans and mammals  
+**Cryoelectron microscopy**  
+**Crystal structure**

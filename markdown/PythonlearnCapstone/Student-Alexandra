@@ -1,0 +1,24 @@
+Cheetah Conservation - 
+			        and the close linkage to Dr. Laurie Marker
+
+I’d like to data-mine websites concerned with the conservation of cheetahs worldwide. I’m especially interested in how one person, Dr. Laurie Marker, is connected with the general topic of Cheetah Conservation. She is a prominent and interesting character who dedicated her life to cheetahs in moving to Namibia 25 years ago to save this species from extinction. 
+
+Data source evaluation: Of course, it would be easier to have a (raw) dataset already like in the given examples on the Coursera reading page. On the other side: I can imagine that in a real life work context you will also have to deal with the problem that you have access to gazillions of (useless) data sources and you are still being forced to look for your work related relevant ones… So, if I wanted to get my idea working, I had to build up my data set by scraping the web first.
+
+Possible analyses: The usage of data sources will also depend on my questions of interest. At the moment, it’s still brainstorming. Imaginable questions are:
+
+How often is the name of Dr. Laurie Marker mentioned on these websites?
+Which websites, which countries, which newspapers/magazines/… are most engaged in publishing articles regarding Dr. Laurie Marker and/or cheetah conservation? 
+How many different Conservation Funds do (co-)exist worldwide? Are theses Funds connected? 
+What are the main topics published in the last months?
+How have topics changed over the years?
+….
+
+Probable issues: Many.
+ I’m still unsure about what’s technically possible (with our tools, python, for me…) in this project.
+Some questions are more quantitative and related to data mining, others could be more qualitative.
+Is there ‘enough’ data I have access to?
+Am I able to arrange a data set by scraping? And do I have the data afterwards which I need to answer my questions?
+Do I miss the task with this project?
+
+Comment: Cheetah Conservation Fund is a hobby of mine. But please help me to modify my project. If you have a better idea that could practically work for me, please get in touch. It would be great to apply this python project for a ‘good’ purpose. All kinds of analyses are thinkable.

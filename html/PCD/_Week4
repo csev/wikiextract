@@ -1,0 +1,128 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PCD: Week4</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_4_Keywords"><span class="tocnumber">1</span> <span class="toctext">Week 4 Keywords</span></a>
+<ul>
+<li class="toclevel-2"><a href="#4.1_-_An_in_vitro_system_for_caspase_activation"><span class="tocnumber">1.1</span> <span class="toctext">4.1 - An in vitro system for caspase activation</span></a></li>
+<li class="toclevel-2"><a href="#4.2_-_Apaf-1.2C_Apaf-2.2C_and_Apaf-3"><span class="tocnumber">1.2</span> <span class="toctext">4.2 - Apaf-1, Apaf-2, and Apaf-3</span></a></li>
+<li class="toclevel-2"><a href="#4.3_-_Structural_analyses_of_Bcl-2_family_members"><span class="tocnumber">1.3</span> <span class="toctext">4.3 - Structural analyses of Bcl-2 family members</span></a></li>
+<li class="toclevel-2"><a href="#4.4_-_Comparing_the_molecular_mechanisms_of_apoptosis_in_C._elegans_and_mammals"><span class="tocnumber">1.4</span> <span class="toctext">4.4 - Comparing the molecular mechanisms of apoptosis in C. elegans and mammals</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_4_Keywords">Week 4 Keywords</span></h1>
+<h2> <span class="mw-headline" id="4.1_-_An_in_vitro_system_for_caspase_activation">4.1 - An in vitro system for caspase activation</span></h2>
+<p><strong><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Poly_ADP_ribose_polymerase">PARP</a></strong><br />
+<ul><li> poly(ADP-ribose) polymerase<br />
+</li><li> Is cleaved  in apoptotic cells. 
+</li><li> The amino acid sequence of one of the cleavage sites of PARP is similar to the amino acid sequence of one of the cleavage sites in interleukin-1beta, which is cleaved by ICE.<br />
+</li><li> It is DEVD in the case of PARP and FEAD in the case of interleukin-1beta.<br />
+</li><li> In both cases, cleavage occurs after the fourth amino acid, the aspartic acid residue.  </p>
+</li></ul>
+
+<p><strong>Biochemical approach</strong>  </p>
+<p><strong>Genetic approach</strong>  </p>
+<p><strong>Chromatography</strong>  </p>
+<p><strong>Anion-exchange chromatography</strong>  </p>
+<p><strong>Affinity chromatography</strong>  </p>
+<p><strong>Pro-caspase</strong>  </p>
+<p><strong><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Zymogen">Zymogen</a></strong><br />
+<ul><li> inactive enzyme precursor  </p>
+</li></ul>
+
+<p><strong>HeLa cells</strong> 
+<ul><li> immortal human cell line. First human cell line isolated and most commonly used human cell line. 
+</li><li> Derived in 1951 from a cervical cancer removed from a patient named <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Henrietta_Lacks">Henrietta Lacks</a>, who died of cancer that same year.  </p>
+</li></ul>
+
+<p><strong>Substrate</strong> </p>
+<p><strong>Apaf</strong><br />
+<ul><li> apoptotic protease activating factors  </p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="4.2_-_Apaf-1.2C_Apaf-2.2C_and_Apaf-3">4.2 - Apaf-1, Apaf-2, and Apaf-3</span></h2>
+<p><strong>Heme protein</strong>  </p>
+<p><strong>Cytochrome c (Apaf-2)</strong><br />
+<ul><li>  small heme protein with two different jobs, ATP production (component of the electron transport chain) and commitment to the apoptotic fate<br />
+</li></ul>
+ * Cytochrome c is a component of the electron transport chain. Its heme group can accept one electron from complex III, which it then transfers to complex IV.<br />
+<ul><li> Cytochrome c is an electron carrier and without it, the electron transport chain wouldn't be able to function and the ATP synthase wouldn't be able to make ATP. Cytochrome c is essential for our cells' ability to generate mitochondrial ATP and this is critical for cellular and organismal viability.<br />
+</li><li> In contrast to complexes I through IV and the ATP synthase, cytochrome c is not integrated into the inner mitochondrial membrane but is in the inter membrane space loosely associated with the inner mitochondrial membrane.<br />
+</li><li> Cytochrome c is encoded by the nuclear genome and is synthesized as a pro-form referred to as apo-cytochrome c in the cytoplasm, which is then imported into the inter membrane space in a TOM-dependent manner.<br />
+</li><li> During this import, the heme group is attached and the protein matures to holo-cytochrome c.<br />
+</li><li> Cytochrome c was the first factor with a role in apoptosis identified that in parallel, had a very important role in a cellular process other than apoptosis. Cytochrome c basically has two fundamentally different jobs, ATP production AND commitment to the apoptotic fate.<br />
+</li><li> In  response to apoptotic signals, HeLa cells, for example, release most of their cytochrome c from most of their mitochondria and the release occurs within about 5 min.<br />
+</li><li> Cytochrome c release in response to apoptotic  signals can be blocked by Bcl-2.  </p>
+</li></ul>
+
+<p><strong>Electron transport chain</strong><br />
+<ul><li> Composed of five complexes, complex I, II, III, and IV and the ATP synthase, which uses the electrochemical proton gradient generated across the inner mitochondrial membrane by complexes I, II, III, and IV to synthesize ATP.  </p>
+</li></ul>
+
+<p><strong>Electron carrier</strong>  </p>
+<p><strong>Post-translational import</strong>  </p>
+<p><strong>TOM and Tim complex</strong>  </p>
+<p><strong>Apo-cytochrome c</strong><br />
+<ul><li> pro-form Cytochrome c that is encoded by the nuclear genome and is synthesized in the cytoplasm  </p>
+</li></ul>
+
+<p><strong>Holo-cytochrome c</strong><br />
+<ul><li> apocytochrome c + heme
+</li><li> During import of Apo-cytochrome c into inter-menbrane space, the heme group is attached and the protein matures </p>
+</li></ul>
+
+<p><strong>Apaf-1</strong>  </p>
+<p><strong>WD40 repeats</strong><br />
+<strong>Caspase 9 (Apaf-3)</strong><br />
+<strong>CARD domain</strong><br />
+<strong>Apoptosome</strong><br />
+<ul><li> Through various biochemical and structural studies we now know that the release of cytochrome c and its binding to Apaf-1 allows the formation of the apoptosome, a wheel composed of 7 spokes, which was determined by cryoelectron microscopy of single apoptosome particles at a resolution of 12.8 angstrom.<br />
+</li><li> This apoptosome is composed of seven Apaf-1 molecules each bound to one cytochrome c molecule.<br />
+</li><li> Once the apoptosome has assembled, potentially up to 7 molecules of pro-caspase 9 can be recruited to the apoptosome through CARD-CARD interactions with Apaf-1.<br />
+</li><li> This then is thought to lead to forced dimerization of pro-caspase 9 molecules.  </p>
+</li></ul>
+
+<p><strong>Induced-proximity model</strong><br />
+<ul><li> While pro-caspases are much less active than cleaved, fully active caspases, they do have some low level of proteolytic activity. This low level of activity is sufficient to cleave and therefore activate other pro-caspase 9 molecules, if in close vicinity, as is the case when two pro-caspase 9 molecules bind to the same apoptosome and are forced to dimerize.<br />
+</li><li> The function of the apoptosome therefore is to bring together pro-caspase 9 molecules so that activation in trans can occur, activation between molecules.  </p>
+</li></ul>
+
+<p><strong>Caspase cascades</strong><br />
+<strong>Initiator caspase</strong><br />
+<strong>Effector caspase</strong>  </p>
+<h2> <span class="mw-headline" id="4.3_-_Structural_analyses_of_Bcl-2_family_members">4.3 - Structural analyses of Bcl-2 family members</span></h2>
+<p><strong>Structural studies</strong><br />
+<strong>Solution structure</strong><br />
+<strong>Receptor domain of guardians</strong><br />
+<strong>Membrane translocation domain</strong><br />
+<strong>Pore-forming bacterial toxins</strong><br />
+<strong>Diphtheria toxin</strong><br />
+<strong>Conformational or structural change</strong><br />
+<strong>Channel-forming activity</strong><br />
+<strong>Synthetic lipid membranes</strong><br />
+<strong>Mitochondrial outer membrane vesicles</strong>  </p>
+<h2> <span class="mw-headline" id="4.4_-_Comparing_the_molecular_mechanisms_of_apoptosis_in_C._elegans_and_mammals">4.4 - Comparing the molecular mechanisms of apoptosis in C. elegans and mammals</span></h2>
+<p><strong>Cryoelectron microscopy</strong><br />
+<strong>Crystal structure</strong></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 41/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PCD:_Week4&amp;oldid=14722">https://share.coursera.org/wiki/index.php?title=PCD:_Week4&amp;oldid=14722</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

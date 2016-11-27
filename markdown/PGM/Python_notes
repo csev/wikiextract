@@ -1,0 +1,79 @@
+# Reference links 
+Here is a list of packages that allow programming PGM's in python:
+
+* http://pythonhosted.org/libpgm/
+* https://github.com/jsheek/probabilistic-graphical-models
+
+# Examples
+
+Here is an example of how to use libpgm to calculate the President, Accident, and TrafficJam example from Quiz 1.
+
+<pre>
+import json
+import os
+import tempfile
+from libpgm.discretebayesiannetwork import DiscreteBayesianNetwork
+from libpgm.nodedata import NodeData
+from libpgm.graphskeleton import GraphSkeleton
+from libpgm.tablecpdfactorization import TableCPDFactorization
+
+my_net = """
+{
+  "V" :  ["President", "Accident", "TrafficJam"],
+  "E" :  [ ["President", "TrafficJam"],
+           ["Accident", "TrafficJam"] ],
+  "Vdata" : {
+    "President": {
+      "ord": 0,
+      "numoutcomes":2,
+      "parents":null,
+      "children": ["TrafficJam"],
+      "vals":["False","True"],
+      "cprob":[0.99,0.01]
+    },
+    "Accident": {
+      "ord": 0,
+      "numoutcomes":2,
+      "parents":null,
+      "children": ["TrafficJam"],
+      "vals":["False","True"],
+      "cprob":[0.9,0.1]
+    },
+    "TrafficJam": {
+      "ord":1,
+      "numoutcomes":2,
+      "parents": ["President","Accident"],
+      "vals":["False","True"],
+      "cprob" : {
+        "['False', 'False']": [0.9,0.1],
+        "['False', 'True']": [0.5,0.5],
+        "['True', 'False']": [0.4,0.6],
+        "['True', 'True']": [0.1,0.9]
+      }
+    }
+  }
+}
+"""
+
+# Can not load from strings, so we must make a temporary file
+net_filename = 'mynet.json'
+open(net_filename,'w').write(my_net)
+nd = NodeData()
+skel = GraphSkeleton()
+nd.load(net_filename)
+skel.load(net_filename)
+
+# load bayesian network
+bn = DiscreteBayesianNetwork(skel, nd)
+
+# Query
+# load factorization
+fn = TableCPDFactorization(bn)
+
+evidence = {'TrafficJam':'True','President':'True'}
+query = {'Accident':1}
+
+# calculate probability distribution
+result = fn.condprobve(query, evidence)
+print result.vals
+</pre>

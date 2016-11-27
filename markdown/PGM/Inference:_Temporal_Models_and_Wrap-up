@@ -1,0 +1,25 @@
+
+
+# Lecture Video Table of Contents
+
+##Inference in Temporal Models
+<pre>
+0:40	DBN template specification
+1:02	Ground Bayes network
+1:40	Template model
+2:16	Belief state tracking
+7:55	Robot localization
+10:24	Computational issues
+13:01	Entanglement
+17:12	Example: Collective web page classification
+19:00	Summary
+</pre>
+
+##Inference: Summary
+<pre>
+0:31	MAP versus marginals
+4:03	Algorithms for marginals
+5:19	Algorithms for MAP
+7:30	Factors in approximate inference
+10:18	"So, now what?"
+</pre>

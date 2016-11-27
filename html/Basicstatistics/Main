@@ -1,0 +1,93 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Basicstatistics:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Cases.2C_variables_and_Levels_of_Measurements"><span class="tocnumber">1</span> <span class="toctext">Cases, variables and Levels of Measurements</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Cases"><span class="tocnumber">1.1</span> <span class="toctext">Cases</span></a></li>
+<li class="toclevel-2"><a href="#Variables"><span class="tocnumber">1.2</span> <span class="toctext">Variables</span></a></li>
+<li class="toclevel-2"><a href="#Levels_of_Measurements"><span class="tocnumber">1.3</span> <span class="toctext">Levels of Measurements</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Categorical"><span class="tocnumber">1.3.1</span> <span class="toctext">Categorical</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Nominal_variables"><span class="tocnumber">1.3.1.1</span> <span class="toctext">Nominal variables</span></a></li>
+<li class="toclevel-4"><a href="#Ordinal_variables"><span class="tocnumber">1.3.1.2</span> <span class="toctext">Ordinal variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Quantitative"><span class="tocnumber">1.3.2</span> <span class="toctext">Quantitative</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Interval_variables"><span class="tocnumber">1.3.2.1</span> <span class="toctext">Interval variables</span></a></li>
+<li class="toclevel-4"><a href="#Ratio_variables"><span class="tocnumber">1.3.2.2</span> <span class="toctext">Ratio variables</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Cases.2C_variables_and_Levels_of_Measurements">Cases, variables and Levels of Measurements</span></h1>
+<h2> <span class="mw-headline" id="Cases">Cases</span></h2>
+<p>A case is a subject or an object that is being studied and holds certain information or a collection of variables.
+One example could be a patient in a statistical study</p>
+<h2> <span class="mw-headline" id="Variables">Variables</span></h2>
+<p>The characteristics that describe a particular case. Taking the Patient as a Case, Variables would be age, weight, blood type, smoking, etc.</p>
+<h2> <span class="mw-headline" id="Levels_of_Measurements">Levels of Measurements</span></h2>
+<p>There are four levels of measurements to measure characteristics of any case.</p>
+<h3> <span class="mw-headline" id="Categorical">Categorical</span></h3>
+<p>Subdivided into two groups:</p>
+<h4> <span class="mw-headline" id="Nominal_variables">Nominal variables</span></h4>
+<p>A collection of categorical values where order has no meaning. Categories do not show which is better, worse, high or more.</p>
+<p>Examples:</p>
+<ul>
+<li>Eye color (brown, blue)</li>
+<li>Nationality (French, Japanese, Canadian)</li>
+<li>Gender (Male, Female)</li>
+</ul>
+<h4> <span class="mw-headline" id="Ordinal_variables">Ordinal variables</span></h4>
+<p>Similar to Nominal variables except that it has order. Ordinal variables can be observed using a rating scale or ranked. For example, in a marathon race, runners are ranked by winning positions (first, second, third, etc). However, it is hard to measure the performance of each runner for example how far was the first runner from the second.
+Another example, suppose you want to classify some people by their education experience. This can be done using three categorical values: High School, Vocational, Graduate or Higher.
+Ordinal variables as it sounds, show order, but it does not show precise quantitative measurement between categories values.</p>
+<h3> <span class="mw-headline" id="Quantitative">Quantitative</span></h3>
+<p>Subdivided into two groups:</p>
+<h4> <span class="mw-headline" id="Interval_variables">Interval variables</span></h4>
+<p>Continuous variables that are broken down into a finite and equal spaced intervals with order.</p>
+<p>Example:</p>
+<ul>
+<li>Temperature
+
+<ol>
+<li>0° - 9.9°</li>
+<li>10° - 19.9°</li>
+<li>20° - 39.9°</li>
+<li>40° - 49.9°</li>
+</ol></li>
+</ul>
+<p>Suppose a temperature observation is 36° from a statistical study, then this value falls into the third interval (20° - 39.9°).</p>
+<h4> <span class="mw-headline" id="Ratio_variables">Ratio variables</span></h4>
+<p>An infinite set of decimal values that can be ordered.</p>
+<p>Example:</p>
+<ul>
+<li>Rain amount in a particular time differs from place to place.</li>
+<li>The salary income of employees.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Basicstatistics:Main&amp;oldid=34397">https://share.coursera.org/wiki/index.php?title=Basicstatistics:Main&amp;oldid=34397</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

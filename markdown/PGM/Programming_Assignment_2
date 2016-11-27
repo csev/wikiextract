@@ -1,0 +1,32 @@
+###Background information on genetics
+####Online Information
+Many people in the forums recommend the [Khan Academy videos](http://www.khanacademy.org/science/biology/v/introduction-to-heredity).
+####Basic genetics tutorial
+#####Definitions of genetic terms
+* **Gene:** A gene is a unit of inheritance. For the purposes of the class, every person has two copies of each gene, one copy inherited from each parent.
+* **Allele:** Alleles are the individual types that can be inherited for a given gene. A gene can have one or more alleles.
+* **Genotype:** A genotype is a collective term for the set of copies that a person has for one or more genes. For the purposes of the homework, the genotype is determined solely by the number and type of alleles that the person has and not the parent from which an individual allele originates. So if a gene has two alleles B and b there are three possible genotypes BB, Bb, and bb.
+* **Phenotype:** A phenotype is an observable trait, such as the presence or absence of a disease or eye color. For the purposes of this homework the phenotype of a person is influenced by the genotype of the relevant causal genes.
+#####Inheritance
+If the genotype of a parent is known, then the child inherits one randomly determined copy from the two copies the parent has. If the parent's genotype is unknown or the parent is not in the model, the copy inherited from that parent is nominally determined by the population allele distribution in the absence of relevant observations.
+#####Mendelian Inheritance
+Mendelian inheritance is a simple mode of inheritance governed by a single gene with two alleles, one dominant and one recessive. If a person has one or two dominant alleles he or she will have the phenotype associated with the dominant allele. Only if both copies are the recessive will the person have the phenotype associated with the recessive allele. 
+###Programming Assignment 2
+####General information about the factor struct
+For the various factor structs that are created by the model, the first listed variable is the 'target' (the variable to the left of the conditioning bar) and the variables that follow are the 'inputs' (the variables to the right of the conditioning bar). The phenotype variables can take two values, the first (var == 1) denotes the presence of disease, the second (var == 2) denotes the absence of disease.
+####Note about sendToSamiamInfoDecoupled
+The original version of sendToSamiamInfoDecoupled.m has a bug where it is missing this line at the start:
+
+    pedigree = struct('parents', [0,0;1,3;0,0;1,3;2,6;0,0;2,6;4,9;0,0]);
+
+The solution is to either paste in that line at the start if it is not there or to redownload the homework materials.
+####The GeneCopy variables in constructDecoupledGeneticNetwork
+The GeneCopy variables in the constructDecoupledGeneticNetwork exercise are designed to simulate the process of inheriting a single copy of a gene from a single parent. However, instead of representing the two copies from a parent as a single node in the graph, each copy of a gene from a parent has its own node. So the conditional probability for the CPD is as follows:
+
+    P(<child copy of gene from parent 1>|<copy 1 of gene in parent 1>, <copy 2 of gene in parent 1>)
+
+###Programming Assignment 2 Quiz
+
+Questions 4 and 5: Beware that although the text refers to sections 2.4 and 3.3 and in the pdf the graphics show a network with 3 people, the question is referred to the full networks loaded in Samian with 9 people.
+
+The number of persons is not important, because this is a template model.

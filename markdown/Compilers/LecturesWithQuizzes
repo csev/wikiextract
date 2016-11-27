@@ -1,0 +1,360 @@
+[[Category:missing category]]
+Because it is easy to overlook which lectures of the compiler course have embedded quizes (especially if you download the videos and view them offline) we'll document here which of the lecture videos have embedded quizzes.
+
+# Week 1
+## Introduction
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>01-01: Introduction</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>01-02: Structure of a Compiler</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>01-03: The Economy of Programming Languages</td>
+        <td>No</td>
+    </tr>
+</table>
+
+## The Cool Programming Language
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>02-01: Cool Overview</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>02-02: Cool Example II</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>02-03: Cool Example III</td>
+        <td>No</td>
+    </tr>
+</table>
+
+# Week 2
+
+## Lexical Analysis
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>03-01: Lexical Analysis</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>03-02: Lexical Analysis Examples</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>03-03: Regular Languages</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>03-04: Formal Languages</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>03-05: Lexical Specifications</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>DeduceIt Demo</td>
+        <td>No</td>
+    </tr>
+</table>
+
+## Finite Automata
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>04-01: Lexical Specification</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>04-02: Finite Automata</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>04-03: Regular Expressions into NFAs</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>04-04: NFA to DFA</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>04-05: Implementing Finite Automata</td>
+        <td>No</td>
+    </tr>
+</table>
+
+# Week 3
+
+## Parsing
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>05-01: Introduction to Parsing</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>05-02: Context Free Grammars</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>05-03: Derivations</td>
+        <td><strong>Yes</strong> (2 questions)</td>
+    </tr>
+    <tr>
+        <td>05-04: Ambiguity</td>
+        <td><strong>Yes</strong> (2 quizzes)</td>
+    </tr>
+</table>
+
+## Top-Down Parsing
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>06-01: Error Handling</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>06-02: Abstract Syntax Trees</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>06-03: Recursive Descent Parsing</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>06-04: Recursive Descent Algorithm</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>06-04-1: Recursive Descent Limitations</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>06-05: Left Recursion</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+</table>
+
+# Week 4
+
+## Bottom-Up Parsing I
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>07-01: Predictive Parsing</td>
+        <td><strong>Yes</strong> (2 quizzes)</td>
+    </tr>
+    <tr>
+        <td>07-02: First Sets</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>07-03: Follow Sets</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>07-04: LL1 Parsing Tables</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>07-05: Bottom-Up Parsing</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>07-06: Shift-Reduce Parsing</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+</table>
+
+## Bottom-Up Parsing II
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>08-01: Handles</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>08-02: Recognizing Handles</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>08-03: Recognizing Viable Prefixes</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>08-04: Valid Items</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>08-05: SLR Parsing</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>08-06: SLR Parsing Example</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>08-07: SLR Improvements</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>08-08: SLR Examples</td>
+        <td>No</td>
+    </tr>
+</table>
+
+# Week 5
+
+## Semantic Analysis and Type Checking
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>09-01: Introduction to Semantic Analysis</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>09-02: Scope</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>09-03: Symbol Tables</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>09-04: Types</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>09-05: Type Checking</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>09-06: Type Environments</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>09-07: Subtyping</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>09-08: Typing Methods</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>09-09: Implementing Type Checking</td>
+        <td>No</td>
+    </tr>
+</table>
+
+# Week 6
+
+## Cool Type Checking
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>10-01: Static vs. Dynamic Typing</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>10-02: Self Type</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>10-03: Self Type Operations</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>10-04: Self Type Usage</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>10-05: Self Type Checking</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>10-06: Error Recovery</td>
+        <td>No</td>
+    </tr>
+</table>
+
+## Runtime Organization
+
+<table border=1>
+    <tr>
+        <td><strong>Lecture</strong></td>
+        <td><strong>Has quiz?</strong></td>
+    </tr>
+    <tr>
+        <td>11-01: Runtime Organization</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>11-02: Activations</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+    <tr>
+        <td>11-03: Activation Records</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>11-04: Globals and Heap</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>11-05: Alignment</td>
+        <td>No</td>
+    </tr>
+    <tr>
+        <td>11-06: Stack Machines</td>
+        <td><strong>Yes</strong></td>
+    </tr>
+</table>

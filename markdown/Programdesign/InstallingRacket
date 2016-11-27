@@ -1,0 +1,108 @@
+Installing and Working with \[Dr\]Racket
+========================================
+
+For this course, you need to have the Racket software installed on a computer where you can perform your programming work:
+
+ 1. Download the version of Racket designed for your computer from the [Racket](http://racket-lang.org/) web site.
+ 2. Install the Racket software on your computer.
+ 3. Start up the DrRacket application (not Racket) for use in the course.
+ 4. Become familiar with the settings and the different parts of the DrRacket application.
+ 5. Explore the Web resources that are supplied for Racket
+
+The rest of this page and further pages go through those stages step-by-step.  Skip ahead to other topics, linked above, if you are familiar with this kind of download or want to review a different stage.
+
+Choosing Your Download
+----------------------
+
+After reaching the Racket web site with your Web browser, use the Download button there to find the download choices.
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1832-DownloadButton.png]]
+</center>
+
+The Racket site will suggest a download for you based on information from the Web browser.
+
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1833-DownloadPage.png]]
+</center>
+
+To see what other downloads are available and determine what might be a better choice for you, click on the pull-down pointer next to the Platform recommendation.
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1835-x64-selection.png]]
+</center>
+
+The full list includes two flavors of Windows, three flavors of Mac OS X, and four flavors of Linux.  You'll need to decide which of these is most suitable for the computer you want to install Racket on.  Often the original recommendation will be appropriate.
+
+The Windows source, Mac OSX source, and Unix source are not programs to install.  Those three download provides the source code, the programming, that was used to create the Racket programs that the other downloads provide.  They are not needed for this course. 
+
+Choosing Windows Downloads
+--------------------------
+
+ * Choosing [[Programdesign:MacOSXRacketInstall | Macintosh OSX Downloads]]
+ * Choosing [[Programdesign:LinuxRacketInstall | Linux OS Downloads]]
+
+All current desktop versions of Windows will accept, install, and operate Windows (x86, 32-bit) programs.  This is a safe choice for Windows XP, Windows Vista, Windows 7, and Windows 8 (but not Windows RT, which is not a desktop version).  A desktop version of Windows is required to use Racket on Windows at this time.  If you have one of those desktop versions, the x86 versions is always a safe choice.
+
+The hardware for recent desktop PC systems will also operate x64 programs.  If you have an x64 version of Windows on that PC hardware, the Windows (x64, 64-bit) download will install and operate.  That provides a version of Racket that can employ the full power of 64-bit systems.  The most common versions of x64 Windows are for Windows 7 and Windows 8.  
+
+An x64 download will not install on an x86 Windows system.  There is no harm done.  Windows will simply refuse to operate the x64 software.
+
+You can tell whether or not a Windows operating system is for x64 computers using the Control Panel basic System information display.  
+
+There's not much difference in the download procedure itself.  We'll choose x64 by way of example.
+
+ * Prefer the [[Programdesign:Win32RacketDownload | x86 Download]]?
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1836-x64-download.png]]
+</center>
+
+Once a platform version is chosen and Download is clicked, the next step is to choose a location to use for the download.
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1839-x64-download.png]]
+</center>
+
+There is no difference in the languages that Racket and DrRacket will work in.  Choose any site that is close to you on the Internet.  If you are on a different continent from any of these sites, choose one on a continent that has the best Internet connectivity with yours.
+
+Once the download connection is made, your web browser may require additional decisions from you.  For the latest versions of Microsoft Internet Explorer, the download activity appears at the bottom of the browser window.
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1841-x64-download.png]]
+</center>
+
+Although it is possible to download and run the download in one step, it is valuable to download the software first.  That way, it is in a known place where it can be saved in a backup, installed while off-line from the Internet, reinstalled later, installed on more computers, etc.
+
+If you know where your browser will save the download, clicking Save is sufficient.  
+
+If you don't know where the download will go, or want to double-check or change the destination, click the pull-down pointer next to the "Save" button.
+
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1843-x64-download.png]]
+</center>
+
+When "Save as" is selected, your PC's operating system will offer you a dialog for choosing where the download should be saved.  It starts by showing where it would have saved it automatically.
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1844-x64-download.png]]
+</center>
+
+In this case, the default destination is the Downloads folder of my account on a Windows 8 x64 Desktop system.  I often put programming tools in a different place, but the Downloads folder (obviously unused, here) will be closer to what you might be doing.  
+
+It is now clear where the browser is going to put the downloaded file.  That's good enough and Save is clicked.
+
+<center>
+[[File:Racket-5.3.6-2013-09-04-1846-x64-download.png]]
+</center>
+
+After the 52 MB download is delivered to the PC, there will be a security scan as well as verification of the download.  If all is well, there will be notification that the download completed.  
+
+It is now possible to go ahead and run the downloaded program and install Racket.  Alternatively, now that it is known where to find the file, it can be installed later.
+
+
+<center>
+'''To Be Continued'''
+</center>

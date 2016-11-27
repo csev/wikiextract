@@ -1,0 +1,139 @@
+[[Category:AI|pgm]]
+[[Category:Coursera]]
+[[Category:Probabilistic Graphical Models]]
+Welcome to the wiki page for PGM-class!
+
+Please join in and help us create the best learning environment possible for your fellow PGM classmates.
+
+If you've previously asked a question on the forum and received a thoughtful and helpful answer, please write out the question and answer in the appropriate page on this wiki; that will save other students a lot of time, and you'll be giving back to the community!
+
+Feel free to create pages as needed. To see how to edit/create a page, see "Help" on the left navbar.
+
+## Lecture Notes
+
+Different students have different learning styles, and having written notes to accompany the video lectures will be very useful to students who prefer learning by reading. Referring to notes is also a fast way of revision, and of course, writing/editing notes will help you to master the material!
+
+This is the link to the video lectures https://class.coursera.org/pgm/lecture/index
+### Week 1
+
+#### Introduction and Overview
+
+* [[PGM:Overview and Motivation|Overview and Motivation]]  
+* [[PGM:Distributions|Distributions]]  
+* [[PGM:Factors|Factors]]  
+
+#### Bayesian Network Fundamentals
+
+* [[PGM:Semantics And Factorization|Semantics And Factorization]]  
+* [[PGM:Reasoning Patterns|Reasoning Patterns]]  
+* [[PGM:Flow of Probabilistic Influence|Flow of Probabilistic Influence]]  
+* [[PGM:Conditional Independence|Conditional Independence]]  
+* [[PGM:Independencies in Bayesian Networks|Independencies in Bayesian Networks]]  
+* [[PGM:Naive Bayes|Naive Bayes]]  
+* [[PGM:Application - Medical Diagnosis|Application - Medical Diagnosis]]  
+* [[PGM:Knowledge Engineering Example - SAMIAM|Knowledge Engineering Example - SAMIAM]]  
+
+#### Template Models
+
+* [[PGM:Overview of Template Models|Overview of Template Models]]  
+* [[PGM:Temporal Models - DBNs|Temporal Models - DBNs]]  
+* [[PGM:Temporal Models - HMMs|Temporal Models - HMMs]]  
+* [[PGM:Plate Models|Plate Models]]
+
+### Week 2
+
+#### Structured CPDs
+* [[PGM:Structured CPDs|Structured CPDs]]
+
+#### Markov Network Fundamentals
+* [[PGM:Markov Network Fundamentals|Markov Network Fundamentals]]
+ 
+### Week 3
+
+#### Representation Wrapup: Knowledge Engineering
+
+#### Inference: Variable Elimination
+* [[PGM:Inference: Variable Elimination|Inference: Variable Elimination]]
+
+####Inference: Belief Propagation, Part 1
+* [[PGM:Inference: Belief Propagation Part 1|Inference: Belief Propagation Part 1]]
+
+### Week 4
+
+#### Inference: Belief Propagation, Part 2
+* [[PGM:Inference: Belief Propagation Part 2|Inference: Belief Propagation Part 2]]
+
+#### Inderence: MAP Estimation, Part 1
+* [[PGM:Inference: MAP Estimation Part 1|Inference: MAP Estimation Part 1]]
+
+### Week 5
+
+#### Inference: MAP Estimation, Part2
+* [[PGM:Inference: MAP Estimation Part 2|Inference: MAP Estimation Part 2]]
+
+#### Inference: Sampling Methods
+* [[PGM:Inference: Sampling Methods|Inference: Sampling Methods]]
+
+### Week 6
+
+#### Inference: Temporal Models and Wrap-up
+* [[PGM:Inference: Temporal Models and Wrap-up|Inference: Temporal Models and Wrap-up]]
+
+#### Inference: Decision Theory
+* [[PGM:Decision Theory|Decision Theory]]
+
+#### Learning: Overview
+* [[PGM:Learning|Learning]]
+
+### Week 7
+#### Learning: Parameter Estimation in BNs
+* [[PGM:Learning: Parameter Estimation in BNs|Learning: Parameter Estimation in BNs]]
+#### Learning: Parameter Estimation in MNs
+* [[PGM:Learning: Parameter Estimation in MNs|Learning: Parameter Estimation in MNs]]
+
+### Week 8
+#### Structure Learning
+* [[PGM:Learning: Structure Learning|Learning: Structure Learning]]
+
+### Week 9
+#### Learning With Incomplete Data
+* [[PGM:Learning: Learning With Incomplete Data|Learning: Learning With Incomplete Data]]
+#### Learning: Wrapup
+* [[PGM:Learning: Wrapup|Learning: Wrapup]]
+* [[PGM:Class Summary|Class Summary]]
+
+## Problem Sets
+
+Did you come across a problem whose wording was unclear? Without explicitly giving away the answers, help your friends by clarifying things on the wiki. 
+
+[[PGM:Problem Set: Bayesian Network Fundamentals|Problem Set: Bayesian Network Fundamentals]]  
+[[PGM:Problem Set: Template Models|Problem Set: Template Models]]
+
+[[PGM:Problem Set: Structured CPDs|Problem Set: Structured CPDs]]  
+
+[[PGM:Problem Set: MAP Inference and Week 4 Review |Problem Set: MAP Inference and Week 4 Review]]
+
+## Programming Assignments
+
+Spent hours figuring out a particularly tricky part of the assignments, or solved a nasty installation issue? Help your fellow students navigate the programming assignments by writing up these pages.
+
+[[PGM:Programming Assignment 1| Programming Assignment 1: Introduction to Bayesian Networks]]  
+[[PGM:Programming Assignment 2| Programming Assignment 2: Bayes Nets for Genetic Networks]]  
+[[PGM:Programming Assignment 3| Programming Assignment 3: Markov Networks for OCR]]  
+[[PGM:Programming Assignment 4| Programming Assignment 4: Exact Inference]] 
+
+[[PGM:Programming Assignment 5| Programming Assignment 5: Approximate Inference]] 
+  
+[[PGM:Installing Octave|Installing Octave]]  
+[[PGM:Octave Tips and Tricks|Octave Tips and Tricks]]  
+[[PGM:SamIam Tips and Tricks|SamIam Tips and Tricks]]
+
+## Miscellaneous
+
+* [[PGM:Suggestions for the class|Suggestions for the class]]
+* [[PGM:LaTeX|LaTeX guide]] a list of $$\LaTeX$$ commands which are relevant to this PGM course
+* [[PGM:Virtual machine for Programming Assignments]]
+* [[PGM:Acronyms|Acronyms used in this course]]
+* [[PGM:Python notes|Notes about programming PGM's in Python]]
+
+## Categories

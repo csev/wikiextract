@@ -1,0 +1,32 @@
+----
+**Web Intelligence and Big Data** by [*Gautam Shroff*](http://www.wireless.ucla.edu/bio/bio.asp?Id=20407)
+
+ from TCS Innovation Labs
+
+Example of an O(2 exp N) problem or O(2^n)
+==============================
+
+Goal: 
+
+ - Create a list that shows how many times each word in a document appears in that document.
+
+Approach:
+
+ - Start with the first word in the document, and compare it with every other word in the document to see if they are the same. Count matches.
+
+ - Repeat for second word in the document, and so on.
+
+
+The number of comparisons required for this approach is O(2^n).
+
+That's not to say that the actual number of comparisons must be exactly 2^n, but rather that is the order of magnitude of the problem, so it is the maximum number of comparisons.
+
+
+We can use Big-O to classify the order of magnitude of the problem, allowing us to estimate the time required to solve the problem or the amount of computing power required to solve the problem. Big-O also allows us to compare the efficiency of algorithms.
+
+
+
+
+
+----
+There appears to be two 'main' pages. This one, and this one.https://share.coursera.org/wiki/index.php/Bigdata:Main

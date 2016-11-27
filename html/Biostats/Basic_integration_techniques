@@ -1,0 +1,63 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Biostats:Basic integration techniques</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Here are some calculus techniques that will be useful in the course.</p>
+<p><strong>1. Differentiate and integrate polynomials</strong>  </p>
+<p>Assume you already know this.</p>
+<p><strong>2. Compute definite integrals</strong>  </p>
+<p>Let $$F$$ be the anti-derivative of $$f$$, ie  </p>
+<p>$$ F'(x) = f(x) $$  </p>
+<p>then  </p>
+<p>$$ \displaystyle\int&#95;a^b { f(t) dt } = F(b) - F(a) $$  </p>
+<p>This is known as the fundamental theorem of calculus.  </p>
+<p><strong>3. The Exponential function</strong>  </p>
+<p>The exponential function is $$e^x$$. It is also written as exp(x) in the lecture.  </p>
+<p>The derivatives of exponential function is the function itself.  </p>
+<p>$$ \dfrac d {dx} {e^x} = e^x $$  </p>
+<p>So the indefinite integral is  </p>
+<p>$$ \displaystyle\int {e^x} dx = {e^x} + C $$  </p>
+<p>(Note the result of indefinite integral has a constant C).  </p>
+<p>The exponential function is defined by the power series  </p>
+<p>$$ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{4^3}{4!}+ ... = \displaystyle\sum&#95;{n=0}^{\infty} \frac {x^n} {n!} $$  </p>
+<p>Seriously! Check this out in wikipedia.<br />
+<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Exponential_function#Formal_definition">http://en.wikipedia.org/wiki/Exponential<em>function#Formal</em>definition</a>  </p>
+<p>We can use this to find the approximate numerical result of an exponential function. For example, find $$ e^{0.5} $$ by adding the first 4 terms:  </p>
+<p>$$ e^{0.5} = 1 + 0.5 + 0.25 / 2! + 0.125 / 3! + ... \cong 1.6458 $$  </p>
+<p>This approximates $$ \sqrt e $$ within 0.2%.  </p>
+<p>The Poisson distribution is closely related to the power series, those PMF is $$ \frac {\lambda^k} {k!} \cdot e^{-\lambda} $$ where k is 0, 1, 2, 3, ...  </p>
+<p><strong>4. Chain Rule (of differentiation)</strong>  </p>
+<p>In some case we are given probability in the form such as $$ e^{-x / 5} $$, for example, in lecture 2 slide 17 the "PDF example". This can be arrange as a composite function $$f \circ g = f(g(x))$$, where $$ f(u) = e^u $$ and $$ g(x) = - x / 5$$. To differentiate, we need to apply the chain rule, that is  </p>
+<p>$$ (f \circ g)'(x) = f'(g(t)) \cdot g'(t) $$  </p>
+<p>In the above case, find the derivate of $$ e^{-x / 5} $$ using  </p>
+<p>$$ f'(g(x)) \cdot g'(x) = e^{-x / 5} (- \frac 1 5 ) $$  </p>
+<p><strong>5. Substitution rule</strong>  </p>
+<p>In integration, the counterpart to the chain rule is the substitution rule. It is also known as u-substitution. This is just the reverse of the chain rule.  </p>
+<p>$$ \displaystyle\int f'(u) du = \displaystyle\int f'(g(t)) g'(t) dt $$  </p>
+<p>To solve the integral on the example slide of the PDF section, let $$ u=-\frac x 5 $$. Then $$ du = -\frac 1 5 dx $$.  </p>
+<p>$$ \displaystyle\int e^{-x / 5} ( \frac 1 5 ) dx = - \displaystyle\int e^u du = -e^{-x / 5} + C $$  </p>
+<p>Actually we already know the answer because this is the reverse of what we have done in the chain rule section.  </p>
+<p>To use the substitution rule, the strategy is to look for an inner function u. Then find out the derivative $$ du $$. Hopefully it will match the other part of the function that we are integrating.  </p>
+<hr />
+<p>With these technique we can now solve the complex looking density function that appeared in the quiz. How do we integrate $$ e^{-x} (1 + e^{-x}) ^ {-2} $$? We can apply the substitution rule. The question is what should we choose as $$ u $$? A lot of times, this comes down to making an educated guess. Given a function $$ f $$, what might its antiderivative $$ F $$ looks like? Make a guess and try to differentiate it to see if the results is indeed $$f$$. Here is a hint, do you see a $$ \frac 1 {u^2} $$ in the above function? What will be the corresponding $$ du $$?  </p>
+<p>These are some reminder on the calculus. If you have not worked on calculus problem for a long time you may still find this difficult. Practice will help.</p>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Biostats:Basic_integration_techniques&amp;oldid=14460">https://share.coursera.org/wiki/index.php?title=Biostats:Basic_integration_techniques&amp;oldid=14460</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Biostatistics" title="Category:Biostatistics">Biostatistics</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

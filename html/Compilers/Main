@@ -1,0 +1,73 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This is shared wiki among all installments of the “Compilers” course. Please visit <a rel="nofollow" class="external text" href="https://www.coursera.org/course/compilers">the central page</a> of the “Compilers” course to learn more (don’t miss <a rel="nofollow" class="external text" href="https://class.coursera.org/compilers-selfservice">self-study course</a> allowing you to study at any time, at your own pace).</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Course_materials"><span class="tocnumber">1</span> <span class="toctext">Course materials</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Supplement"><span class="tocnumber">1.1</span> <span class="toctext">Supplement</span></a></li>
+<li class="toclevel-2"><a href="#COOL_setup"><span class="tocnumber">1.2</span> <span class="toctext">COOL setup</span></a></li>
+<li class="toclevel-2"><a href="#Assignment-specific_pages"><span class="tocnumber">1.3</span> <span class="toctext">Assignment-specific pages</span></a></li>
+<li class="toclevel-2"><a href="#COOL_frameworks"><span class="tocnumber">1.4</span> <span class="toctext">COOL frameworks</span></a></li>
+<li class="toclevel-2"><a href="#Additional_tools"><span class="tocnumber">1.5</span> <span class="toctext">Additional tools</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Miscellaneous"><span class="tocnumber">2</span> <span class="toctext">Miscellaneous</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Course_materials">Course materials</span></h1>
+<h2> <span class="mw-headline" id="Supplement">Supplement</span></h2>
+<ul>
+<li><a href="/wiki/index.php/Compilers:Certificate" title="Compilers:Certificate">Certificate</a> (statement of accomplishment)</li>
+<li><a href="/wiki/index.php/Compilers:Errata" title="Compilers:Errata">Lectures errata</a></li>
+<li><a href="/wiki/index.php/Compilers:LecturesWithQuizzes" title="Compilers:LecturesWithQuizzes">Lectures with quizzes</a></li>
+</ul>
+<h2> <span class="mw-headline" id="COOL_setup">COOL setup</span></h2>
+<ul>
+<li><a href="/wiki/index.php/Compilers:GettingStartedWithTheVMsAndFirstSteps" title="Compilers:GettingStartedWithTheVMsAndFirstSteps">Getting started with the VMs and first steps</a></li>
+<li><a href="/wiki/index.php/Compilers:InstallingDirectlyonLinux" title="Compilers:InstallingDirectlyonLinux">Installing directly on Linux</a> (no VM is required)</li>
+<li><a href="/wiki/index.php/Compilers:WorkingOnWindows" title="Compilers:WorkingOnWindows">COOL for Windows</a> </li>
+</ul>
+<p><strong>Pages to delete (either outdated or merged into other pages)</strong></p>
+<ul>
+<li><a href="/wiki/index.php/Compilers:GettingStartedWithTheVMs" title="Compilers:GettingStartedWithTheVMs">Getting started with the VMs</a></li>
+<li><a href="/wiki/index.php/Compilers:VirtualBoxVMsetup" title="Compilers:VirtualBoxVMsetup">Virtual Box VM setup</a> </li>
+</ul>
+<h2> <span class="mw-headline" id="Assignment-specific_pages">Assignment-specific pages</span></h2>
+<ul>
+<li><p><a href="/wiki/index.php/Compilers:PA2" title="Compilers:PA2">Assignment 1 (building lexer)</a></p></li>
+<li><p><a href="/wiki/index.php/Compilers:Pitfalls" title="Compilers:Pitfalls">Common pitfalls</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="COOL_frameworks">COOL frameworks</span></h2>
+<ul>
+<li>unofficial <a rel="nofollow" class="external text" href="https://www.assembla.com/spaces/cool-csharp-framework/">COOL C# framework</a> by <a rel="nofollow" class="external text" href="https://www.coursera.org/user/i/6086d41e8041582356104a01a7b7cfd5">Maciej Pilichowski</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="Additional_tools">Additional tools</span></h2>
+<ul>
+<li><a href="/wiki/index.php/Compilers:Testsuites" title="Compilers:Testsuites">Running testsuites</a></li>
+<li><a href="/wiki/index.php/Compilers:OnlineResources" title="Compilers:OnlineResources">Online resources</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Miscellaneous">Miscellaneous</span></h1>
+<ul>
+<li>students’ projects made <a href="/wiki/index.php/Compilers:AfterCourse" title="Compilers:AfterCourse">after course</a>,</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:Main&amp;oldid=24942">https://share.coursera.org/wiki/index.php?title=Compilers:Main&amp;oldid=24942</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

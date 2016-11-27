@@ -1,0 +1,74 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Gradient Descent</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>So we have our hypothesis function and we have a way of measuring how well it fits into the data. Now we need to estimate the parameters in hypothesis function. That's where gradient descent comes in.</p>
+<p>Imagine that we graph our hypothesis function based on its fields $$\theta&#95;0$$ and $$\theta&#95;1$$ (actually we are graphing the cost function as a function of the parameter estimates). This can be kind of confusing; we are moving up to a higher level of abstraction. We are not graphing x and y itself, but the parameter range of our hypothesis function and the cost resulting from selecting particular set of parameters. </p>
+<p>We put $$\theta&#95;0$$ on the x axis and $$\theta&#95;1$$ on the y axis, with the cost function on the vertical z axis. The points on our graph will be the result of the <strong>cost function</strong> using our hypothesis with those specific theta parameters.</p>
+<p>We will know that we have succeeded when our cost function is at the very bottom of the pits in our graph, i.e. when its value is the minimum. </p>
+<p>The way we do this is by taking the <strong>derivative</strong> (the tangential line to a function) of our cost function. The slope of the tangent is the derivative at that point and it will give us a direction to move towards. We make steps down the cost function in the direction with the steepest descent, and the size of each step is determined by the parameter $$\alpha$$, which is called the <strong>learning rate</strong>.</p>
+<p>The gradient descent algorithm is:</p>
+<blockquote>
+  <p>$$ \text{repeat until convergence:} $$</p>
+  <blockquote>
+    <p>$$ \theta&#95;j&#160;:= \theta&#95;j - \alpha \frac{\partial}{\partial \theta&#95;j} J(\theta&#95;0, \theta&#95;1)$$</p>
+  </blockquote>
+  <p>where </p>
+  <blockquote>
+    <p>$$j=0, 1$$ represents the feature index number.</p>
+  </blockquote>
+</blockquote>
+<p>Intuitively, this could be thought of as:</p>
+<blockquote>
+  <p>$$\text{repeat until convergence:}$$</p>
+  <blockquote>
+    <p>$$ \theta&#95;j&#160;:= \theta&#95;j - \alpha &#91;\text{Slope of tangent aka derivative in j dimension}&#93;$$</p>
+  </blockquote>
+</blockquote>
+<h1> <span class="mw-headline" id="Gradient_Descent_for_Linear_Regression">Gradient Descent for Linear Regression</span></h1>
+<p>When specifically applied to the case of linear regression, a new form of the gradient descent equation can be derived. We can substitute our actual cost function and our actual hypothesis function and modify the equation to (the derivation of the formulas are out of the scope of this course, but a really great one can be <a rel="nofollow" class="external text" href="https://math.stackexchange.com/questions/70728/partial-derivative-in-gradient-descent-for-two-variables/189792#189792">found here</a>):</p>
+<blockquote>
+  <p>$$\begin{align&#42;}
+  \text{repeat until convergence: } \lbrace &amp; \newline 
+  \theta&#95;0&#160;:= &amp; \theta&#95;0 - \alpha \frac{1}{m} \sum\limits&#95;{i=1}^{m}(h&#95;\theta(x&#95;{i}) - y&#95;{i}) \newline
+  \theta&#95;1&#160;:= &amp; \theta&#95;1 - \alpha \frac{1}{m} \sum\limits&#95;{i=1}^{m}\left((h&#95;\theta(x&#95;{i}) - y&#95;{i}) x&#95;{i}\right) \newline
+  \rbrace&amp;
+  \end{align&#42;}$$</p>
+</blockquote>
+<p>where $$m$$ is the size of the training set, $$\theta&#95;0$$ a constant that will be changing simultaneously with $$\theta&#95;1$$, $$\alpha$$ is the learning rate which is the step size when updating the parameter $$\theta&#95;j$$  and $$x&#95;{i}, y&#95;{i}$$ are values of the given training set (data).</p>
+<p>Note that we have separated out the two cases for $$\theta&#95;j$$ into separate equations for $$\theta&#95;0$$ and $$\theta&#95;1$$; and that for $$\theta&#95;1$$ we are multiplying $$x&#95;{i}$$ at the end due to the derivative.</p>
+<p>The point of all this is that if we start with a guess for our hypothesis and then repeatedly 
+ apply these gradient descent equations, our hypothesis will become more and more accurate.</p>
+<h2> <span class="mw-headline" id="Gradient_Descent_for_Linear_Regression:_visual_worked_example">Gradient Descent for Linear Regression: visual worked example</span></h2>
+<p><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=WnqQrPNYz5Q">See this video</a> that some may find useful as it visualizes the improvement of the hypothesis as the error function reduces. </p>
+<h2> <span class="mw-headline" id="Frequently_Asked_Questions">Frequently Asked Questions</span></h2>
+<ul>
+<li>What is a <strong>Gradient</strong> (no calculus required)?</li>
+</ul>
+<blockquote>
+  <p>A <strong>gradient</strong> is a mathematical operation that takes a scalar-valued function of multiple variables (e.g. the cost function) as an input, and computes a vector-valued output.  The output of the gradient operator is called the <strong>gradient of the input function</strong>, or simply the <strong>gradient vector</strong>.  The gradient vector contains information about the slope of the input function, and the direction of steepest ascent, at any location in the domain of the function.  Specifically, the magnitude of the gradient vector is a measure of the slope of the input function, whereas the direction of the gradient vector is the same as the direction of steepest ascent.</p>
+</blockquote>
+<ul>
+<li>How is the gradient of the cost function used in <strong>Gradient Descent</strong>?</li>
+</ul>
+<hr />
+<p>Next: <a href="/wiki/index.php/ML:Linear_Algebra_Review" title="ML:Linear Algebra Review">Linear Algebra Review (Optional)</a> Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Gradient_Descent&amp;oldid=34434">https://share.coursera.org/wiki/index.php?title=ML:Gradient_Descent&amp;oldid=34434</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

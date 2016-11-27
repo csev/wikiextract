@@ -1,0 +1,135 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Clustering</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Unsupervised_Learning:_Introduction"><span class="tocnumber">1</span> <span class="toctext">Unsupervised Learning: Introduction</span></a></li>
+<li class="toclevel-1"><a href="#K-Means_Algorithm"><span class="tocnumber">2</span> <span class="toctext">K-Means Algorithm</span></a></li>
+<li class="toclevel-1"><a href="#Optimization_Objective"><span class="tocnumber">3</span> <span class="toctext">Optimization Objective</span></a></li>
+<li class="toclevel-1"><a href="#Random_Initialization"><span class="tocnumber">4</span> <span class="toctext">Random Initialization</span></a></li>
+<li class="toclevel-1"><a href="#Choosing_the_Number_of_Clusters"><span class="tocnumber">5</span> <span class="toctext">Choosing the Number of Clusters</span></a></li>
+<li class="toclevel-1"><a href="#Bonus:_Discussion_of_the_drawbacks_of_K-Means"><span class="tocnumber">6</span> <span class="toctext">Bonus: Discussion of the drawbacks of K-Means</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Unsupervised_Learning:_Introduction">Unsupervised Learning: Introduction</span></h1>
+<p>Unsupervised learning is contrasted from supervised learning because it uses an <strong>unlabeled</strong> training set rather than a labeled one. </p>
+<p>In other words, we don't have the vector $$y$$ of expected results, we only have a dataset of features where we can find structure.</p>
+<p>Clustering is good for:</p>
+<ul>
+<li>Market segmentation</li>
+<li>Social network analysis</li>
+<li>Organizing computer clusters</li>
+<li>Astronomical data analysis</li>
+</ul>
+<h1> <span class="mw-headline" id="K-Means_Algorithm">K-Means Algorithm</span></h1>
+<p>The K-Means Algorithm is the most popular and widely used algorithm for automatically grouping data into coherent subsets.</p>
+<ol>
+<li>Randomly initialize two points in the dataset called the <em>cluster centroids</em>.</li>
+<li>Cluster assignment: assign all examples into one of two groups based on which cluster centroid the example is closest to.</li>
+<li>Move centroid: compute the averages for all the points inside each of the two cluster centroid groups, then move the cluster centroid points to those averages.</li>
+<li>Re-run (2) and (3) until we have found our clusters.</li>
+</ol>
+<p>Our main variables are:</p>
+<blockquote>
+  <p>$$K$$ (number of clusters)</p>
+  <p>Training set $$&#123;x^{(1)}, x^{(2)}, \dots,x^{(m)}&#125;$$</p>
+  <p>Where $$x^{(i)} \in \mathbb{R}^n$$</p>
+</blockquote>
+<p>Note that we <strong>will not use</strong> the $$x&#95;0 = 1$$ convention.</p>
+<p><strong>The algorithm:</strong></p>
+<code><pre>Randomly initialize K cluster centroids mu(1), mu(2), ..., mu(K)
+Repeat:
+   for i = 1 to m:
+      c(i)&#160;:= index (from 1 to K) of cluster centroid closest to x(i)
+   for k = 1 to K:
+      mu(k)&#160;:= average (mean) of points assigned to cluster k
+</pre></code>
+<p>The <strong>first for-loop</strong> is the 'Cluster Assignment' step. We make a vector <em>c</em> where <em>c(i)</em> represents the centroid assigned to example <em>x(i)</em>.</p>
+<p>We can write the operation of the Cluster Assignment step more mathematically as follows:</p>
+<p>$$c^{(i)} = argmin&#95;k\ ||x^{(i)} - \mu&#95;k||^2$$</p>
+<p>That is, each $$c^{(i)}$$ contains the index of the centroid that has minimal distance to $$x^{(i)}$$.</p>
+<p>By convention, we square the right-hand-side, which makes the function we are trying to minimize more sharply increasing. It is mostly just a convention. But a convention that helps reduce the computation load because the Euclidean distance requires a square root but it is canceled.</p>
+<p>Without the square:</p>
+<p>$$||x^{(i)} - \mu&#95;k|| = ||\quad\sqrt{(x&#95;1^i - \mu&#95;{1(k)})^2 + (x&#95;2^i - \mu&#95;{2(k)})^2 + (x&#95;3^i - \mu&#95;{3(k)})^2 + ...}\quad||$$</p>
+<p>With the square:</p>
+<p>$$||x^{(i)} - \mu&#95;k||^2 = ||\quad(x&#95;1^i - \mu&#95;{1(k)})^2 + (x&#95;2^i - \mu&#95;{2(k)})^2 + (x&#95;3^i - \mu&#95;{3(k)})^2 + ...\quad||$$</p>
+<p>...so the square convention serves two purposes, minimize more sharply and less computation.</p>
+<p>The <strong>second for-loop</strong> is the 'Move Centroid' step where we move each centroid to the average of its group.</p>
+<p>More formally, the equation for this loop is as follows:</p>
+<p>$$ \mu&#95;k = \dfrac{1}{n}&#91;x^{(k&#95;1)} + x^{(k&#95;2)} + \dots + x^{(k&#95;n)}&#93; \in \mathbb{R}^n$$</p>
+<p>Where each of $$x^{(k&#95;1)}, x^{(k&#95;2)}, \dots, x^{(k&#95;n)}$$ are the training examples assigned to group $$ \mu&#95;k$$. </p>
+<p>If you have a cluster centroid with <strong>0 points</strong> assigned to it, you can randomly <strong>re-initialize</strong> that centroid to a new point. You can also simply <strong>eliminate</strong> that cluster group.</p>
+<p>After a number of iterations the algorithm will <strong>converge</strong>, where new iterations do not affect the clusters.</p>
+<p>Note on non-separated clusters: some datasets have no real inner separation or natural structure. K-means can still evenly segment your data into $$K$$ subsets, so can still be useful in this case.</p>
+<h1> <span class="mw-headline" id="Optimization_Objective">Optimization Objective</span></h1>
+<p>Recall some of the parameters we used in our algorithm:</p>
+<blockquote>
+  <p>$$c^{(i)} = $$ index of cluster (1,2,...,K) to which example $$x^{(i)}$$ is currently assigned</p>
+  <p>$$\mu&#95;k = $$ cluster centroid $$ k\ (\mu&#95;k \in \mathbb{R}^n)$$</p>
+  <p>$$\mu&#95;{c^{(i)}} = $$ cluster centroid of cluster to which example $$x^{(i)}$$ has been assigned</p>
+</blockquote>
+<p>Using these variables we can define our <strong>cost function</strong>:</p>
+<p>$$
+\large
+J(c^{(i)},\dots,c^{(m)},\mu&#95;1,\dots,\mu&#95;K) = \dfrac{1}{m}\sum&#95;{i=1}^m ||x^{(i)} - \mu&#95;{c^{(i)}}||^2
+$$</p>
+<p>Our <strong>optimization objective</strong> is to minimize all our parameters using the above cost function:</p>
+<p>$$
+\large
+min&#95;{c,\mu}\ J(c,\mu)
+$$</p>
+<p>That is, we are finding all the values in sets $$c$$, representing all our clusters, and $$\mu$$, representing all our centroids, that will minimize <strong>the average of the distances</strong> of every training example to its corresponding cluster centroid.</p>
+<p>The above cost function is often called the <strong>distortion</strong> of the training examples.</p>
+<p>In the <strong>cluster assignment step</strong>, our goal is to:</p>
+<blockquote>
+  <p>Minimize $$J(\dots)$$ with $$c^{(1)},\dots,c^{(m)}$$ (holding $$\mu&#95;1,\dots,\mu&#95;K$$ fixed)</p>
+</blockquote>
+<p>In the <strong>move centroid</strong> step, our goal is to:</p>
+<blockquote>
+  <p>Minimize $$J(\dots)$$ with $$\mu&#95;1,\dots,\mu&#95;K$$</p>
+</blockquote>
+<p>With k-means, it is <strong>not possible for the cost function to sometimes increase</strong>. It should always descend.</p>
+<h1> <span class="mw-headline" id="Random_Initialization">Random Initialization</span></h1>
+<p>There's one particular recommended method for randomly initializing your cluster centroids.</p>
+<ol>
+<li>Have $$K &lt; m$$. That is, make sure the number of your clusters is less than the number of your training examples.</li>
+<li>Randomly pick $$K$$ training examples. (Not mentioned in the lecture, but also be sure the selected examples are unique).</li>
+<li>Set $$\mu&#95;1,\dots,\mu&#95;k$$ equal to these $$K$$ examples.</li>
+</ol>
+<p>K-means <strong>can get stuck in local optima</strong>. To decrease the chance of this happening, you can run the algorithm on many different random initializations. In cases where $$K&lt;10$$ it is strongly recommended to run a loop of random initializations.</p>
+<code><pre>for i = 1 to 100:
+   randomly initialize k-means
+   run k-means to get 'c' and 'm'
+   compute the cost function (distortion) J(c,m)
+pick the clustering that gave us the lowest cost
+</pre></code>
+<h1> <span class="mw-headline" id="Choosing_the_Number_of_Clusters">Choosing the Number of Clusters</span></h1>
+<p>Choosing $$K$$ can be quite arbitrary and ambiguous. </p>
+<p><strong>The elbow method</strong>: plot the cost $$J$$ and the number of clusters $$K$$. The cost function should reduce as we increase the number of clusters, and then flatten out. Choose $$K$$ at the point where the cost function starts to flatten out.</p>
+<p>However, fairly often, the curve is <strong>very gradual</strong>, so there's no clear elbow.</p>
+<p><strong>Note:</strong> $$J$$ will <strong>always</strong> decrease as $$K$$ is increased. The one exception is if k-means gets stuck at a bad local optimum.</p>
+<p>Another way to choose $$K$$ is to observe how well k-means performs on a <strong>downstream purpose</strong>. In other words, you choose $$K$$ that proves to be most useful for some goal you're trying to achieve from using these clusters.</p>
+<h1> <span class="mw-headline" id="Bonus:_Discussion_of_the_drawbacks_of_K-Means">Bonus: Discussion of the drawbacks of K-Means</span></h1>
+<p><a rel="nofollow" class="external text" href="http://stats.stackexchange.com/questions/133656/how-to-understand-the-drawbacks-of-k-means">From StackExchange</a> This links to a discussion that shows various situations in which K-means gives totally correct but unexpected results.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Dimensionality_Reduction" title="ML:Dimensionality Reduction">Dimensionality Reduction</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Clustering&amp;oldid=34220">https://share.coursera.org/wiki/index.php?title=ML:Clustering&amp;oldid=34220</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

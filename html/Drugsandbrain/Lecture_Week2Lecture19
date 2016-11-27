@@ -1,0 +1,65 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week2Lecture19</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 19 The Stimulatory G Protein (Gs) Pathway<br />
+<ul><li> Here, we're going to follow the stimulatory G Protein or Gs pathway. And as you'll see, many useful drugs interfere with or activate this pathway or the enzymes in this pathway.  </p>
+</li></ul>
+
+<p><strong>Gq, Gs, and Gt protein effectors include some enzymes</strong><br />
+<ul><li> Here's our map of the G protein pathway. We have told you about the receptor. We've told you about the Gi, G protein. Now we're going to tell you about the Gs G Protein. The upshot is that Gs coupled receptors often stimulate neurons and other cells. That's where the s comes from. </p>
+</li></ul>
+
+<ul>
+<li><p>And, in particular, in this mini-lecture, we're going to describe an effector of the Gs Protein, which is an enzyme. It's an important enzyme that was discovered in the late 50s' by Sutherland. The enzyme is called a cyclase. It's activated by Gs, as we'll see, and the enzyme takes ATP, the universal energy currency of a cell, and converts that molecule to a cyclic AMP {cAMP}. So, adenosine triphosphate becomes cyclic adenosine monophosphate. Again, at this point, we are transferring a high energy phosphate bond here from another phosphate group to a hydroxyl group on the sugar molecule, cyclic AMP, a key intracellular messenger.  </p></li>
+<li><p>An interesting aspect of this intracellular messenger pathway is that there is prominent set of enzymes that act as cyclases to produce cyclic AMP. And the larger set of enzymes that destroy the cyclic AMP, once it's made, break it down into AMP adenosine monophosphate. Alright, and we basically break this phosphate to three prime hydroxyl bond producing adenosine monophosphate. The enzyme that breaks down cyclic AMP is called a phosphodiesterase. Literally, it breaks down this diester. And this enzyme, phosphodiesterase, is inhibited by caffeine. Caffeine has other effects, some directly on G Protein receptors, but its most common effect is to increase the lifetime of cyclic AMP by inhibiting its breakdown by phosphodiesterase. </p></li>
+</ul>
+<p><strong>Caffeine prolongs the intracellular messenger cAMP</strong><br />
+<ul><li> Interestingly enough, there is a parallel elsewhere in metabolism. I've just told you about production of an intracellular messenger, cyclic AMP. This cyclic AMP is produced a cyclase from ATP making cyclic AMP. This is inhibited by a small molecule, caffeine, theophylline, coffee, tea do the same things. Now, we can therefore generalize to say, that phosphodiesterase inhibitors sometimes prolongs the life of intracellular messengers.  </p>
+</li></ul>
+
+<ul>
+<li>Elsewhere, in the body, there is a system, a different set of cyclase that takes GTP, another energy molecule in the cell. In fact, the same energy molecule that activates G Proteins, but acting in a different place here, another pathway that makes cyclic GMP out of GTP. This cyclic GMP is also broken down by a phosphodiesterase. And so you know what is a selective class of drugs that inhibits a class of phosphodiesterase molecules? Well, that selective class of drugs is Sildenafil, Tadalafil, and Vardenafil. Clearly, they do not work in the brain, hey act elsewhere. But this is a useful bit of cocktail party conversation which you can use.  </li>
+</ul>
+<p><strong>Intracellular messengers bind to proteins</strong><br />
+<ul><li> So, we have a generalization that intracellular messengers, such as calcium and cyclic AMP bind to proteins. Some intercellular messengers bind to ion channels directly, but those occur in organs that are not really relevant to drugs in the brain.  So instead, we're going to follow the pathway in which intercellular messengers bind to enzymes, in this case the kinases. So, cyclic AMP is binding to a kinase.  </p>
+</li></ul>
+
+<p><strong>Ca2+ or cAMP binds to kinase; kinase Ca2+ cAMP this activates the kinase</strong><br />
+<ul><li> When cyclic AMP binds to cyclic AMP activated kinase, this activates the kinase. It's also called PKA or protein kinase A. So, protein kinase A (cyclic AMP activated protein kinase), consists of four subunits: two regulatory subunits and two catalytic subunits. When cyclic AMP binds to the regulatory subunits, they dissociate, they leave, the active subunit revealing the active site of the enzyme, the kinase. So, here we are at the level of cyclic AMP, activating a kinase.  </p>
+</li></ul>
+
+<ul>
+<li>And what a kinase does is to transfer a high energy phosphate bond from ATP to a side chain on a protein. Typically, a kinase transfers that high energy, phosphate bond to a serine side chain, sometimes to a threonine side chain. They both contain hydroxyl groups and so the hydrogen is replaced by a phosphate group. This phosphate group has a negative charge. And it is often vastly important for changing the function of a protein. So, a kinase phosphorylates a protein and the kinase is, in turn, counteracted by a phosphatase, which removes the phosphate group from the protein, and brings the protein back to the standard hydroxyl form.  </li>
+</ul>
+<p><strong>Example of ion channel phosphorylation: β-adrenergic receptors regulate accommodation in hippocampal neurons</strong><br />
+<ul><li> Let's look at an example of the effects on neuronal function by the cyclic AMP pathway. We're going to be looking at &#946;-adrenergic receptors. The &#946;-adrenergic receptor was, in fact, pictured in our very first slide about the G protein pathway and it is regulating a decrease, firing of spikes in the hippocampus. We've talked about the hippocampus.  </p>
+</li></ul>
+
+<ul>
+<li>This decreased firing of spikes we call accommodation. The phosphorylated protein, in this case, is itself an ion channel, called SK or small-conductance calcium-activated potassium channel. I warned you, there are lots of potassium channels in the genome that control cell firing. But we won't put out another circuit diagram here.  </li>
+<li><p>So normally, when these experimenters applied a pulse of glutamate to a hippocampal neuron, the neuron depolarized, because the glutamate activated glutamate channels, depolarize the cell past the threshold for a spike. The cell fired spikes but the calcium flowed in through the glutamate channels and perhaps also in through other channels. This activated a calcium-activated potassium channel. This cell repolarized and stopped firing. That's the normal condition.   </p></li>
+<li><p>When norepinephrine was present, activating &#946;-adrenergic receptor, the channel, the calcium-activated potassium channel was phosphorylated by the kinase. As a result, it was partially inhibited and so the accommodation was less. Here, you can see that the neuron continues firing whereas here, it stopped firing. And pharmacological experiments are not often reversible. In this case, happily, the experimenters could wash away the norepinephrine. And again, the cell accommodates.  </p></li>
+<li><p>Now, the next trace, B, simplifies the experiment in a couple of ways. The scale factors are still the same. First, the experimenters simply used a pulse of current rather than a glutamate pulse. That's a little bit cleaner. And second, they bypassed the Gs and cyclase, by adding a drug called 8-bromo-cyclic AMP (a derivative of cyclic AMP that is not hydrolyzed by a phosphodiesterase). So, in the presence of 8-bromo-cyclic AMP, we find that accommodation is less, the cell fires more, just as though it were a glutamate pulse and a norepinephrine application and this too is reversible by washing out 8-bromo-cyclic AMP.  </p></li>
+<li><p>Now, in the third experiment, it's even simpler. We have applied tetrodotoxin, the puffer fish poison that blocks sodium channels. And so now, we're not going to be getting action potentials, we are simply going to apply a pulse of glutamate to stimulate an excitatory postsynaptic potential. As promised, calcium flows in through the glutamate channels. This gives us activation of the calcium-activated potassium channel [which] gives us a hyper polarization toward the potassium Nernst potential.  </p></li>
+<li><p>This glutamate-activated, calcium-activated potassium channel induced hyperpolarization, is not present or is much smaller during action of a drug called forskolin, which directly activates adenylyl cyclase. The forskolin can be washed away and the experimenters regained the hyperpolarization that was due to the calcium-activated potassium channels, now no longer inhibited. </p></li>
+<li><p>So, this kind of a complex experiment shows you the kinds of detailed modifications grid that can be made to a cell's firing frequency based on the Gs or stimulatory G protein system. And you can see, it's called stimulatory because in the presence of a Gs activator, a cell fires more. Next time, we'll talk about another and the final G protein coupled pathway.</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 7/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture19&amp;oldid=6589">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture19&amp;oldid=6589</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

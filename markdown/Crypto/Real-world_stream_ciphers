@@ -1,0 +1,56 @@
+### Old example (software): [RC4](http://en.wikipedia.org/wiki/RC4) (1987)
+
+RC4 takes a 128 bit seed to generate a 2048 bit key
+
+* It's used in HTTPS and WEP
+
+**Weaknesses:**
+
+1. Bias in initial output: Pr[2<sup>nd</sup> byte = 0] = 2/256  
+The prob. that the 2<sup>nd</sup> byte is 0 is twice as high as it should be. In fact this is the same for the first couple of bytes and using RC4 you should ignore the first 256 bytes of the key.  
+2. Probability of (0,0) = 1/256<sup>2</sup> + 1/256<sup>3</sup>  
+After several GB of data the sequence (0,0) will appear more often than it should
+3. Related key attacks  
+
+You should not use RC4 in new systems and instead choose a modern generator.
+
+
+### Old example (hardware): [CSS](http://en.wikipedia.org/wiki/Content_Scramble_System) (badly broken)
+
+DVDs are encrypted using the Content Scramble System (CSS).
+
+Linear feedback shift register ([LFSR](http://en.wikipedia.org/wiki/LFSR)):
+
+The LFSR consists of a row of cells. For each iteration the content of these cells is combined with a xor. Then the cells are shifted one step, the last cells content is dropped and the result of the xor becomes the content for the now empty first cell.
+
+The seed is the initial state of the LFSR.
+
+* DVD encryption CSS: uses 2 LFSRs
+* GSM encryption ([A5/1,2](http://en.wikipedia.org/wiki/A5/1)): 3 LFSRs
+* [Bluetooth](http://en.wikipedia.org/wiki/Bluetooth) (E0): 4 LFSRs
+(all are broken)
+
+CSS: seed = 5 bytes = 40 bits (because at the time it was designed, US export regulations prohibited the export of crypto algorithms with longer keys)
+
+CSS uses one 17 bit LFSR and one 25 bit LFSR. To seed the LFSRs the first two bytes of the key are loaded into the 17 bit LFSR (together with a leading 1) and the last three bytes of the key are loaded into the 25 bit LFSR (again together with a leading 1).
+
+Each LFSR then generates 8 bits, those are added (modulo 256) and this byte is used to encrypt one byte of the DVD movies data by a xor operation.
+
+Again it is easy to break. Since we know the header structure of the underlying movie format we can use this information to find the initial state of both LFSRs.
+
+
+### Modern stream ciphers: eStream (2008)
+
+PRG: $$ \lbrace 0,1 \rbrace^s \times R \rightarrow \lbrace 0,1 \rbrace^n $$
+
+Nonce R: a non repeating value for a give key.
+
+$$ E(k,m;r) = m \oplus PRG(k;r) $$
+
+The pair (k,r) is never used more than once. So you can reuse the key, because (k,r) are unique.
+
+#### eStream: Salsa20 (hw+sw)
+
+$$ Salsa20: \lbrace 0,1 \rbrace^{128\ or\ 256} \times \lbrace 0,1 \rbrace^{64} \rightarrow \lbrace 0,1 \rbrace^n\ \ \ \(max\ n=2^{73}\ bits)$$
+
+$$ Salsa20(k;r):=H(k,(r,0))\|H(k,(r,1))\|...$$

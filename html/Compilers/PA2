@@ -1,0 +1,58 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:PA2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+The assignments START at PA2 (i.e. assignment 2 is the first assignment for this course) — the lexer.</p>
+<p>The resources page, as mentioned in <a rel="nofollow" class="external text" href="http://spark-university.s3.amazonaws.com/stanford-compilers/assignments-public/PA1.pdf">PA2 handout</a>:</p>
+<blockquote>
+  <p>On-line documentation for all the tools needed for the project will be made available on the <a rel="nofollow" class="external text" href="https://class.coursera.org/compilers-selfservice/wiki/view?page=OtherProjectResources">”Project Resources” page</a> of the wiki on the Coursera web site. This includes manuals for ﬂex and jlex (used in this assignment), the documentation for bison and java cup (used in the next assignment), as well as the manual for the spim simulator.</p>
+</blockquote>
+<p>Here are some more useful resources: </p>
+<ul>
+<li><p><a rel="nofollow" class="external text" href="https://class.coursera.org/compilers-selfservice/assignment/view?assignment_id=2">Assignment 2 page</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://spark-university.s3.amazonaws.com/stanford-compilers/resources%2Fcool_manual.pdf">The Cool Reference Manual</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="http://spark-university.s3.amazonaws.com/stanford-compilers/resources/cool-tour.pdf">A Tour of the Cool Support Code</a> In particular, look at section 3 "String Tables".</p></li>
+</ul>
+<p>It is very helpful when working on your lexer to turn on debugging support. To do this:</p>
+<ul>
+<li><p>Modify the Makefile by adding -DDEBUG to the CPPFLAGS declaration line</p></li>
+<li><p>make lexer</p></li>
+<li><p>Run the lexer with ./lexer -l -v to see debugging output.</p></li>
+</ul>
+<hr />
+<p>In 2013 Staff released additionally examples of .lex files for <a rel="nofollow" class="external text" href="http://spark-university.s3.amazonaws.com/stanford-compilers/files/lex_lecture/sample.flex">C++</a> and <a rel="nofollow" class="external text" href="http://spark-university.s3.amazonaws.com/stanford-compilers/files/lex_lecture/sample.jlex">Java</a> framework (please note Java version is <a rel="nofollow" class="external text" href="https://class.coursera.org/compilers-003/forum/thread?thread_id=85&amp;post_id=351#comment-146">probably buggy</a>) for easier start.</p>
+<p>The mentioned bug report:</p>
+<blockquote>
+  <p>Probably found it. Compare C++ and Java lex files. In C++ COMMENT is declared as exclusive, in Java as inclusive. This means that the line with &lt;COMMENT&gt;\n does not kick in not because of the dot metacharacter, but because of the line:</p>
+</blockquote>
+<code><pre>  \n        { num_lines++; }
+</pre></code>
+<blockquote>
+  <p>I could be wrong though, because I didn't test it (I currently don't have required setup).</p>
+</blockquote>
+<p>While developing your own lexer rules please do not copy verbatim those examples — they are toy examples, directly printing out the matched input. This how you do <strong>not</strong> build your lexer — it is only illustration of the matching rules. </p>
+<p>Instead of printing anything (printing is handled by given framework and it is already done by Staff) you should:
+<ul><li> return a token and optionally set special variables in C++ framework
+</li><li> return Symbol object with "attached" extra data if required in Java framework</p>
+</li></ul>
+
+<p>In case of C# framework you can find examples in the lexer/parser package.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:PA2&amp;oldid=25103">https://share.coursera.org/wiki/index.php?title=Compilers:PA2&amp;oldid=25103</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php?title=Category:Compilers&amp;action=edit&amp;redlink=1" class="new" title="Category:Compilers (page does not exist)">Compilers</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

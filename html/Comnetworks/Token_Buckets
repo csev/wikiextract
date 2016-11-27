@@ -1,0 +1,32 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Comnetworks:Token Buckets</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Data traffic comes from the applications feeding into TCP and then exits TCP on the other side flowing up to the host side of the app that will receive it. We saw congestion control a week or two ago. Congestion control is comprised of a set of techniques that limit traffic in the network so that it doesn't turn into a massive data traffic jam. However, congestion control is agnostic. It doesn't care who is the source of the traffic, who owns it, etc. Congestion control is kind of like a speed limit on the highway. It applies to everyone equally, or at least it should.</p>
+<p>However, not all data is the same. Some types of data are more critical than others. Remote surgery is becoming more common. No one wants a surgeon's virtual movements to be delayed to the patient because Justin Bieber just got a new hair style, and Twitter and Instagram comments are flooding the internet.</p>
+<p>We want some customers or data to have higher priority, which is usually obtained by paying more for the privilege. The Token Bucket is on way to define and enforce a priority policy. Think of a token as permission to place data onto the internet. These tokens are stored in a bucket, kind of like a bank. Tokens will flow into your bucket at a constant rate. If you don't use them, they will accumulate, but only until the bucket is full. Once filled, new tokens are "lost." You can always send data up to the rate that tokens enter your bucket. You can even surpass it from time to time, but only if you have a surplus in your bucket. Of course there is no physical bucket or tokens. The implementation will be a counter, with a max value, and a process that increments the counter. When you send data, the counter is checked, and decremented based upon the amount of data sent.</p>
+<p>Your ISP will assign you a token bucket signature based upon your contract. The more you pay for the service, the larger your token bucket and the faster the flow of tokens it will support. My own <a rel="nofollow" class="external text" href="https://www.optimum.net/pages/speed.html">ISP</a> has 3 levels of internet speed. I'd be willing to bet that they use token buckets.</p>
+<p>Here are a few real world similar examples. Airports can be crowded places. There's a lot of waiting in line. However, some passengers breeze through lines, get on the plane first and even have luxury lounges for their use while they wait. These passengers are frequent flyers and/or first class passengers. They get these perks because they spend more money than the average passenger.</p>
+<p>The ancient Romans were famous for bringing fresh water into their towns via aqueducts. The water would flow into fountains, where citizens could draw water freely. However, rich Romans had the option to divert water directly into their homes. The water would flow through a spout, where a larger spout could be purchased for more money. The spout drained into a large container, since the spout may provide no more than a trickle of water, even if it is a continuous trickle.</p>
+<p>The Roman water system for the rich is almost identical to token bucket. When you need water, you dip it out of your reservoir. You can pull out as much water as it holds. If you draw too much water, you'll have to wait for the trickle to fill it again.</p>
+<p>Token Bucket is like a budget system. Let's say that your family likes to dine out, but your income doesn't allow you to do it all the time. You can set up a budget where $25 (or $50) is allocated to dining out. Each week you cash your paycheck  and place $25 in a "dining out" envelope. When you have enough money to dine out, you can go out to dinner. $25 will probably handle fast-food (like McDonald's) once per week, but what if you want to go someplace nicer? You'll have to wait until the envelope has about $75-$100 and then you can "burst" it open and splurge on a more expensive meal.</p>
+<p>The "dining out" becomes your token bucket. Adding $25 per week is your rate. Removing money for dining out is spending your "tokens" (i.e., the same as sending data on the network.) Spending on a burst can be done using surplus in the envelope, but you can only do it sparingly.  The only place where this analogy fails is that your "dining out" envelop might not have a maximum capacity, whereas the token bucket does have a maximum capacity.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Comnetworks:Token_Buckets&amp;oldid=24041">https://share.coursera.org/wiki/index.php?title=Comnetworks:Token_Buckets&amp;oldid=24041</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Computer_Networks" title="Category:Computer Networks">Computer Networks</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

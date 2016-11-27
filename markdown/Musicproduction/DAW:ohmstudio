@@ -1,0 +1,75 @@
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Fundamentals
+the fundamentals of the application
+*[[Musicproduction:DAW:ohmstudio:Downloading_and_installing|Downloading and installing]]
+*[[Musicproduction:DAW:ohmstudio:Creating_a_new_project|Creating a new project]]
+*[[Musicproduction:DAW:ohmstudio:The_interface|The interface]]
+
+##Project specifics
+details of file management
+*[[Musicproduction:DAW:ohmstudio:Project_Name|Project Name]]
+*File type
+*Bit depth
+*Sampling rate
+*Hardware
+*Buffer size
+*Project folders specifics
+
+##Recording
+details of audio recording
+*Metronome(click track)
+*Count in
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+*Grid
+*Change grid resolution
+*Modifier key to toggle grid
+*Add fades
+*Modify fades
+*Efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+*[Ohm Studio Website](http://www.ohmstudio.com/ "Ohm Studio Home")
+*[Ohm Studio Documentation](http://www.ohmstudio.com/doc "Documentation")
+*[Ohm Studio Forum](http://forum.ohmstudio.com/ "All Discussions")
+*[Ohm Studio Blog](http://www.ohmstudio.com/blog "Blog")
+*Links

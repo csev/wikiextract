@@ -1,0 +1,716 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture71:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="Multimedia_-_Part_1_-_Italian_subtitles">Multimedia - Part 1 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture69:it" title="Android-001:Subtitles:Lecture69:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture71:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture71:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture71:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture71:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture71:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture71:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture71:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture71:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture73:it" title="Android-001:Subtitles:Lecture73:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/n9xyh3eykyau3tr/6%20-%206%20-%20Multimedia%20-%20Part%201%20%2811-47%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:09,641 --&gt; 00:00:12,368
+Ciao, sono Adam Porter e questo è
+
+2
+00:00:12,368 --&gt; 00:00:18,030
+&quot;Programming Mobile Applications for
+Android Handheld Systems&quot;.
+
+3
+00:00:20,205 --&gt; 00:00:23,280
+I dispositivi portatili permettono agli
+utenti di creare e di
+
+4
+00:00:23,280 --&gt; 00:00:27,870
+consumare grandi quantità di ricchi
+contenuti multimediali.
+
+5
+00:00:27,870 --&gt; 00:00:31,850
+E questi contenuti includono audio, come
+quando
+
+6
+00:00:31,850 --&gt; 00:00:35,230
+si ascolta la musica o si registrano note
+vocali.
+
+7
+00:00:35,230 --&gt; 00:00:38,800
+Immagini, come quando scatti e vedi una foto.
+
+8
+00:00:38,800 --&gt; 00:00:42,520
+E video, come quando registri e vedi filmati.
+
+9
+00:00:44,310 --&gt; 00:00:45,430
+In questa lezione
+
+10
+00:00:45,430 --&gt; 00:00:49,440
+parleremo delle classi multimediali
+che Android offre, ed
+
+11
+00:00:49,440 --&gt; 00:00:54,280
+esploreremo API ed applicazioni di esempio
+che riproducono audio,
+
+12
+00:00:54,280 --&gt; 00:00:59,400
+che ti permettono di vedere video e di
+registrare audio,
+
+13
+00:00:59,400 --&gt; 00:01:04,530
+e, infine, che consentono di utilizzare la
+fotocamera per scattare foto.
+
+14
+00:01:04,530 --&gt; 00:01:05,410
+Dunque, cominciamo.
+
+15
+00:01:07,490 --&gt; 00:01:12,530
+Android fornisce un certo numero di classi
+e capacità per supportare la codifica e
+
+16
+00:01:12,530 --&gt; 00:01:17,870
+la decodifica dei comuni formati
+multimediali. Le vostre applicazioni
+
+17
+00:01:17,870 --&gt; 00:01:23,270
+possono usarli per riprodurre e registrare
+audio, immagini statiche e video.
+
+18
+00:01:25,490 --&gt; 00:01:28,040
+Alcune delle classi di cui parleremo oggi
+
+19
+00:01:28,040 --&gt; 00:01:33,560
+sono le classi AudioManager e SoundPool, che
+permettono alle applicazioni di
+
+20
+00:01:33,560 --&gt; 00:01:37,200
+riprodurre effetti sonori e file audio,
+e di controllare
+
+21
+00:01:37,200 --&gt; 00:01:42,270
+hardware relativo all'audio del dispositivo,
+come altoparlanti e cuffie wireless.
+
+22
+00:01:43,590 --&gt; 00:01:47,190
+Parleremo di RingtoneManager e Ringtone.
+
+23
+00:01:47,190 --&gt; 00:01:50,690
+E questi sono i suoni che spesso
+si sentono quando arriva una telefonata,
+
+24
+00:01:50,690 --&gt; 00:01:54,820
+quando si riceve una notifica
+e quando si attivano gli allarmi.
+
+25
+00:01:55,920 --&gt; 00:02:00,650
+E il MediaPlayer, che permette alle
+applicazioni di riprodurre file audio e video.
+
+26
+00:02:01,670 --&gt; 00:02:06,926
+Il MediaRecorder, che permette alle
+applicazioni di registrare audio e video.
+
+27
+00:02:06,926 --&gt; 00:02:10,814
+E, infine, finiremo guardando la classe
+Camer.
+
+28
+00:02:10,814 --&gt; 00:02:15,755
+che consente alle applicazioni di
+controllare le fotocamere hardware su
+
+29
+00:02:15,755 --&gt; 00:02:16,549
+un dispositivo.
+
+30
+00:02:19,330 --&gt; 00:02:22,700
+La prima classe di cui voglio parlare è
+AudioManager.
+
+31
+00:02:22,700 --&gt; 00:02:24,940
+Questa classe gestisce le funzionalità audio
+
+32
+00:02:24,940 --&gt; 00:02:27,480
+di base, come cambiare il volume del
+dispositivo,
+
+33
+00:02:27,480 --&gt; 00:02:33,090
+riprodurre effetti sonori del sistema e
+cambiare la modalità suoneria del telefono.
+
+34
+00:02:34,160 --&gt; 00:02:39,358
+Le applicazioni ottengono un riferimento
+all'AudioManager
+
+35
+00:02:39,358 --&gt; 00:02:44,443
+chiamando Context.getSystemService
+e passandovi
+
+36
+00:02:44,443 --&gt; 00:02:48,206
+il valore Context.AUDIO_SERVICE.
+
+37
+00:02:48,206 --&gt; 00:02:51,609
+E una volta che ha un riferimento
+all'AudioManager,
+
+38
+00:02:51,609 --&gt; 00:02:55,842
+un'applicazione può caricare e quindi
+riprodurre effetti sonori, aggiustare
+
+39
+00:02:55,842 --&gt; 00:03:00,905
+il volume del dispositivo, e controllare
+l'hardware del disposotivo, ad esempio,
+
+40
+00:03:00,905 --&gt; 00:03:05,550
+disattivando il microfono, o attivando le
+cuffie bluetooth.
+
+41
+00:03:07,710 --&gt; 00:03:13,830
+Un'altra classe correlata che può essere usata
+per riprodurre audio complesso è la classe SoundPool.
+
+42
+00:03:13,830 --&gt; 00:03:18,560
+Un Soundpool rappresenta un insieme di
+campioni o flussi audio.
+
+43
+00:03:18,560 --&gt; 00:03:21,740
+E il Soundpool ti permette di mixare insieme
+
+44
+00:03:21,740 --&gt; 00:03:25,000
+e di riprodurre più campioni
+contemporaneamente.
+
+45
+00:03:27,490 --&gt; 00:03:30,930
+Diamo uno sguardo alla nostra prima
+applicazione di esempio di questa lezione.
+
+46
+00:03:32,590 --&gt; 00:03:37,260
+Quest'applicazione si chiama
+AudioVideoAudioManager.
+
+47
+00:03:37,260 --&gt; 00:03:42,230
+E quando viene eseguita,
+presenta due pulsanti etichettati &quot;Up&quot; e
+
+48
+00:03:42,230 --&gt; 00:03:47,620
+&quot;Down&quot;, che vengono usati per aumentare e
+diminuire il volume del dispositivo.
+
+49
+00:03:48,700 --&gt; 00:03:53,370
+L'applicazione mostra anche un pulsante
+etichettato &quot;Play&quot;,
+
+50
+00:03:53,370 --&gt; 00:04:00,500
+che, se premuto, riproduce il suono di una
+bolla che scoppia al livello di volume corrente.
+
+51
+00:04:00,500 --&gt; 00:04:01,830
+Avviamo l'applicazione ora.
+
+52
+00:04:04,280 --&gt; 00:04:10,998
+Dunque, ecco il mio dispositivo. E ora avvio
+l'applicazione AudioVideoAudioManager.
+
+53
+00:04:12,520 --&gt; 00:04:18,300
+E, come promesso, mostra tre pulsanti.
+Up, down e play.
+
+54
+00:04:20,330 --&gt; 00:04:25,780
+L'applicazione mostra anche il livello
+attuale del volume, in una scala da zero
+
+55
+00:04:25,780 --&gt; 00:04:30,499
+a dieci. In questo momento,
+il livello del volume è impostato a sei.
+
+56
+00:04:31,750 --&gt; 00:04:36,301
+Fatemi premere il tasto &quot;play&quot;, in modo da
+poter sentire il suono dello scoppio della bolla.
+
+57
+00:04:36,301 --&gt; 00:04:39,350
+Eccolo.
+[SUONO]
+
+58
+00:04:39,350 --&gt; 00:04:44,000
+E ora premo il pulsante &quot;up&quot; un po' di
+volte, per raggiungere il volume massimo.
+
+59
+00:04:45,780 --&gt; 00:04:50,308
+E ora premo di nuovo il tasto &quot;play&quot;.
+[SUONO]
+
+60
+00:04:50,308 --&gt; 00:04:54,436
+Ora premo i pulsanti down e play
+
+61
+00:04:54,436 --&gt; 00:04:58,372
+un po' di volte, e dovreste sentire lo
+scoppio della bolla a
+
+62
+00:04:58,372 --&gt; 00:05:02,310
+volumi sempre più bassi.
+Ecco.
+
+63
+00:05:02,310 --&gt; 00:05:12,310
+[AUDIO] Diamo un'occhiata al codice sorgente
+di quest'applicazione.
+
+64
+00:05:13,703 --&gt; 00:05:20,844
+Ecco l'applicazione AudioVideoAudioManager
+aperta nell'IDE.
+
+65
+00:05:20,844 --&gt; 00:05:22,780
+Ora apro la MainActivity.
+
+66
+00:05:24,920 --&gt; 00:05:28,749
+Qui il metodo onCreate ottiene un
+riferimento all'AudioManager.
+
+67
+00:05:30,340 --&gt; 00:05:33,350
+Poi inizia a preparare la sua interfaccia
+utente.
+
+68
+00:05:34,530 --&gt; 00:05:39,710
+In primo luogo, c'è la TextView che
+mostra il livello di volume corrente.
+
+69
+00:05:39,710 --&gt; 00:05:42,280
+Poi c'è il pulsante &quot;up&quot;.
+
+70
+00:05:42,280 --&gt; 00:05:46,720
+E, se cliccato, questo codice riproduce il
+suono del click su un tasto, e
+
+71
+00:05:46,720 --&gt; 00:05:51,160
+poi cerca di aumentare il livello del volume
+e aggiornare il livello visualizzato.
+
+72
+00:05:52,990 --&gt; 00:05:55,850
+Poi vediamo il pulsante &quot;down&quot;.
+
+73
+00:05:55,850 --&gt; 00:05:59,596
+Ed è quasi lo stesso codice del pulsante
+&quot;up&quot;.
+
+74
+00:05:59,596 --&gt; 00:06:03,530
+Ma invece di diminuire il livello del
+volume, lo aumenta.
+
+75
+00:06:06,570 --&gt; 00:06:08,850
+Poi il codice ottiene un riferimento al
+
+76
+00:06:08,850 --&gt; 00:06:13,280
+pulsante &quot;play&quot;, e quindi disattiva il
+pulsante temporaneamente.
+
+77
+00:06:14,790 --&gt; 00:06:18,840
+Dopo di che, il codice crea un oggetto
+Soundpool, che
+
+78
+00:06:18,840 --&gt; 00:06:21,210
+verrà utilizzato per riprodurre il suono
+di una bolla che scoppia.
+
+79
+00:06:21,210 --&gt; 00:06:26,810
+I parametri di questo SoundPool indicano che
+avrà solamente un
+
+80
+00:06:26,810 --&gt; 00:06:32,140
+flusso audio, e che il flusso viene
+riprodotto sul flusso
+
+81
+00:06:32,140 --&gt; 00:06:33,360
+audio della musica.
+
+82
+00:06:35,540 --&gt; 00:06:40,830
+Poi il codice carica il suono dello scoppio
+della bolla. Caricare il suono è
+
+83
+00:06:40,830 --&gt; 00:06:46,042
+un'operazione asincrona, quindi il codice
+imposta un OnLoadCompleteListener
+
+84
+00:06:46,042 --&gt; 00:06:50,740
+che verrà chiamato dopo che il suono sarà
+caricato.
+
+85
+00:06:52,130 --&gt; 00:06:54,470
+E quando viene chiamato il metodo
+onLoadComplete,
+
+86
+00:06:55,610 --&gt; 00:06:59,150
+il codice verifica se l'operazione ha avuto
+successo.
+
+87
+00:06:59,150 --&gt; 00:07:01,110
+E in tal caso abilita
+
+88
+00:07:01,110 --&gt; 00:07:01,890
+il tasto play.
+
+89
+00:07:03,220 --&gt; 00:07:07,720
+In precedenza il codice aveva disattivato il
+tatso play e lo aveva fatto per assicurarsi
+
+90
+00:07:07,720 --&gt; 00:07:12,070
+che non si potesse provare a riprodurre il
+suono prima che fosse correttamente caricato.
+
+91
+00:07:13,870 --&gt; 00:07:17,740
+Poi il codice imposta un listener per il
+pulsante play.
+
+92
+00:07:17,740 --&gt; 00:07:23,220
+Quando viene premuto, questo codice riproduce
+il suono della bolla al livello di volume attuale.
+
+93
+00:07:24,890 --&gt; 00:07:26,390
+Dopodoché il codice
+
+94
+00:07:26,390 --&gt; 00:07:29,910
+richiede il focus dell'audio, che significa
+che essenzialmente vuole
+
+95
+00:07:29,910 --&gt; 00:07:33,380
+essere il responsabile dell'audio riprodotto
+sul dispositivo.
+
+96
+00:07:35,300 --&gt; 00:07:38,579
+C'è anche del codice nei metodi onResume e
+onPause.
+
+97
+00:07:40,042 --&gt; 00:07:45,520
+Il metodo onResume attiva gli altoparlanti
+del dispositivo e poi carica gli
+
+98
+00:07:45,520 --&gt; 00:07:50,010
+effetti sonori del sistema, come l'effetto
+del click su un tasto che abbiamo usato sopra.
+
+99
+00:07:52,200 --&gt; 00:07:58,329
+Il metodo onPause inizia rilasciando il
+SoundPool e le sue risorse.
+
+100
+00:07:59,620 --&gt; 00:08:01,090
+Quindi disattiva gli altoparlanti del
+
+101
+00:08:01,090 --&gt; 00:08:05,220
+dispositivo, e scarica gli effetti sonori
+del sistema.
+
+102
+00:08:10,190 --&gt; 00:08:14,842
+Le prossime classi di uci parleremo sono
+Ringtone e RingtoneManager.
+
+103
+00:08:14,842 --&gt; 00:08:18,622
+RingtoneManager fornisce accesso alle clip
+
+104
+00:08:18,622 --&gt; 00:08:21,772
+audio che senti, ad esempio, quando
+
+105
+00:08:21,772 --&gt; 00:08:28,391
+arriva una telefonata, quando ricevi una
+nuova email, o quando si attiva un allarme.
+
+106
+00:08:28,391 --&gt; 00:08:32,063
+E tramite il RingtoneManager, le applicazioni
+possono ottenere e impostare
+
+107
+00:08:32,063 --&gt; 00:08:36,405
+varie suonerie, e possono riprodurle o
+fermarne la riproduzione.
+
+108
+00:08:36,405 --&gt; 00:08:40,005
+Vediamo un'applicazione di esempio che usa
+il RingtoneManager.
+
+109
+00:08:41,420 --&gt; 00:08:46,570
+Ora, quest'applicazione si chiama
+AudioVideoRingtoneManager.
+
+110
+00:08:46,570 --&gt; 00:08:50,370
+E quest'applicazione presenta tre pulsanti,
+
+111
+00:08:50,370 --&gt; 00:08:55,460
+etichettati ripettivamente &quot;Ringtone&quot;,
+&quot;Notification&quot; e &quot;Alarm&quot;.
+
+112
+00:08:55,460 --&gt; 00:09:00,800
+Premendo uno di questi pulsanti, viene
+riprodotta la suoneria di default associata.
+
+113
+00:09:01,990 --&gt; 00:09:04,860
+Proviamola. Dunque, ecco il mio dispositivo.
+
+114
+00:09:06,020 --&gt; 00:09:11,570
+Ora avvio l'applicazione
+AudioVideoRingtoneManager.
+
+115
+00:09:11,570 --&gt; 00:09:15,570
+Come potete vedere, mostra i tre pulsanti:
+
+116
+00:09:15,570 --&gt; 00:09:20,180
+&quot;Ringtone&quot;, &quot;Notification&quot;, and &quot;Alarm&quot;.
+Fatemi premere alcuni di tali pulsanti.
+
+117
+00:09:21,480 --&gt; 00:09:28,755
+Prima di tutto, ascoltiamo la suoneria di
+default premendo il tasto &quot;Ringtone&quot;.
+
+118
+00:09:28,755 --&gt; 00:09:33,598
+[SUONO] Ora proviamo la suoneria di default
+
+119
+00:09:33,598 --&gt; 00:09:39,722
+delle notifiche.
+[SUONO] E infine
+
+120
+00:09:39,722 --&gt; 00:09:45,250
+proviamo la suoneria predefinita degli
+allarmi.
+
+121
+00:09:45,250 --&gt; 00:09:50,605
+[SUONO] Una volta finito questo segmento di
+video, provate a scaricare,
+
+122
+00:09:50,605 --&gt; 00:09:55,008
+instalalre ed eseguire quest'applicazione
+
+123
+00:09:55,008 --&gt; 00:09:57,983
+sul vostro dispositivo, poi andate nella
+vostra
+
+124
+00:09:57,983 --&gt; 00:10:04,510
+applicazione delle impostazioni e cambiate
+le suonerie di default.
+
+125
+00:10:05,800 --&gt; 00:10:09,180
+Quando rieseguirete quest'applicazione,
+vedrete che
+
+126
+00:10:09,180 --&gt; 00:10:12,740
+riprodurrà le vostre nuove suonerie, non le
+vecchie.
+
+127
+00:10:13,910 --&gt; 00:10:16,760
+Dunque, diamo un'occhiata al codice sorgente
+di quest'applicazione.
+
+128
+00:10:20,150 --&gt; 00:10:25,000
+Ecco l'applicazione AudioVideoRingtoneManager
+aperta nell'IDE.
+
+129
+00:10:26,460 --&gt; 00:10:28,170
+Ora, aprirò la MainActivity.
+
+130
+00:10:29,590 --&gt; 00:10:34,130
+Nel metodo onCreate il codice crea
+tre pulsanti.
+
+131
+00:10:34,130 --&gt; 00:10:38,020
+Guardiamo il pulsante &quot;Ringtone&quot; ad esempio.
+
+132
+00:10:38,020 --&gt; 00:10:40,690
+Ora, qui vediamo che quando questo pulsante
+viene
+
+133
+00:10:40,690 --&gt; 00:10:45,430
+cliccato, il codice usa il RingtoneManager
+per ottenere l'URI
+
+134
+00:10:45,430 --&gt; 00:10:51,598
+della suoneria di default per le chiamate.
+Poi
+
+135
+00:10:51,598 --&gt; 00:10:56,718
+il codice ottiene la suoneria associata a
+tale
+
+136
+00:10:56,718 --&gt; 00:11:02,222
+URI chiamando il metodo
+RingtoneManager.getRingtone
+
+137
+00:11:02,222 --&gt; 00:11:06,849
+passandovi l'URI.
+Il risultato di tutto
+
+138
+00:11:06,849 --&gt; 00:11:11,450
+questo viene quindi passato a un metodo
+chiamato playRingtone.
+
+139
+00:11:11,450 --&gt; 00:11:13,560
+Scorriamo giù fino a tale metodo.
+
+140
+00:11:17,120 --&gt; 00:11:21,220
+Ora, questo metodo controlla se la
+suoneria è attualmente in riproduzione.
+
+141
+00:11:22,280 --&gt; 00:11:24,540
+E se lo è, allora quella suoneria viene
+
+142
+00:11:24,540 --&gt; 00:11:29,066
+fermata chiamando il metodo stop della
+classe Ringtone.
+
+143
+00:11:30,480 --&gt; 00:11:36,380
+La suoneria corrente viene quindi salvata
+nella variabile mCurrentRingtone, e,
+
+144
+00:11:36,380 --&gt; 00:11:42,406
+se la suoneria corrente non è null, allora
+il codice inizierà a riprodurla.
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture71:it&amp;oldid=23576">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture71:it&amp;oldid=23576</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

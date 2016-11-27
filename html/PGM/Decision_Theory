@@ -1,0 +1,65 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Decision Theory</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">1</span> <span class="toctext">Lecture Video Table of Contents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Maximum_Expected_Utility"><span class="tocnumber">1.1</span> <span class="toctext">Maximum Expected Utility</span></a></li>
+<li class="toclevel-2"><a href="#Utility_Functions"><span class="tocnumber">1.2</span> <span class="toctext">Utility Functions</span></a></li>
+<li class="toclevel-2"><a href="#Value_of_Perfect_Information"><span class="tocnumber">1.3</span> <span class="toctext">Value of Perfect Information</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h1>
+<h2> <span class="mw-headline" id="Maximum_Expected_Utility">Maximum Expected Utility</span></h2>
+<p><pre>
+0:43    Simple decision making
+2:30    Expected utility
+3:50    Simple influence diagram
+7:45    More complex influence diagram
+11:14   Information edges
+13:35   Expected utility with information
+15:16   Finding MEU decision rules
+21:20   More generally
+23:58   MEU algorithm summary
+24:58   Decision making under uncertainty
+</pre></p>
+<h2> <span class="mw-headline" id="Utility_Functions">Utility Functions</span></h2>
+<p><pre>
+0:21    Utilities and preferences
+3:20    St. Petersburg paradox
+4:35    Utility curve
+8:42    Typical utility curve
+10:42   Multi-attribute utilities
+14:27   Example: prenatal diagnosis
+17:00   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Value_of_Perfect_Information">Value of Perfect Information</span></h2>
+<p><pre>
+0:51    Value of information
+2:20    Finding MEU decision rules
+3:38    Theorem
+7:40    Example
+16:29   Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 29/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Decision_Theory&amp;oldid=4291">https://share.coursera.org/wiki/index.php?title=PGM:Decision_Theory&amp;oldid=4291</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

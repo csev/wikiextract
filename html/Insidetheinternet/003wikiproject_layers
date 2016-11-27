@@ -1,0 +1,60 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Insidetheinternet:003wikiproject layers</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/images/5/54/Packet1.gif" class="image"><img alt="Packet1.gif" src="/wiki/images/5/54/Packet1.gif" width="200" height="200" /></a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#from_Wikipedia"><span class="tocnumber">1</span> <span class="toctext">from Wikipedia</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Application_layer_.28process-to-process.29:"><span class="tocnumber">1.1</span> <span class="toctext">Application layer (process-to-process):</span></a></li>
+<li class="toclevel-2"><a href="#Transport_layer_.28host-to-host.29:"><span class="tocnumber">1.2</span> <span class="toctext">Transport layer (host-to-host):</span></a></li>
+<li class="toclevel-2"><a href="#Internet_layer:"><span class="tocnumber">1.3</span> <span class="toctext">Internet layer:</span></a></li>
+<li class="toclevel-2"><a href="#Link_layer:"><span class="tocnumber">1.4</span> <span class="toctext">Link layer:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#OSI_Layers"><span class="tocnumber">2</span> <span class="toctext">OSI Layers</span></a></li>
+<li class="toclevel-1"><a href="#Main_Page"><span class="tocnumber">3</span> <span class="toctext">Main Page</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="from_Wikipedia">from Wikipedia</span></h1>
+<p><a class="external mw-magiclink-rfc" href="//tools.ietf.org/html/rfc1122">RFC 1122</a>, entitled <strong>Host Requirements</strong>, is structured in paragraphs referring to layers, but the document refers to many other architectural principles not emphasizing layering. It loosely defines a four-layer model, with the layers having names, not numbers, as follows:</p>
+<h2> <span class="mw-headline" id="Application_layer_.28process-to-process.29:">Application layer (process-to-process):</span></h2>
+<p>This is the scope within which applications create user data and communicate this data to other processes or applications on another or the same host. The communications partners are often called peers. This is where the higher level protocols such as SMTP, FTP, SSH, HTTP, etc. operate.</p>
+<h2> <span class="mw-headline" id="Transport_layer_.28host-to-host.29:">Transport layer (host-to-host):</span></h2>
+<p>The transport layer constitutes the networking regime between two network hosts, either on the local network or on remote networks separated by routers. The transport layer provides a uniform networking interface that hides the actual topology (layout) of the underlying network connections. This is where flow-control, error-correction, and connection protocols exist, such as TCP. This layer deals with opening and maintaining connections between Internet hosts.</p>
+<h2> <span class="mw-headline" id="Internet_layer:">Internet layer:</span></h2>
+<p>The internet layer has the task of exchanging datagrams across network boundaries. It is therefore also referred to as the layer that establishes internetworking, indeed, it defines and establishes the Internet. This layer defines the addressing and routing structures used for the TCP/IP protocol suite. The primary protocol in this scope is the Internet Protocol, which defines IP addresses. Its function in routing is to transport datagrams to the next IP router that has the connectivity to a network closer to the final data destination.</p>
+<h2> <span class="mw-headline" id="Link_layer:">Link layer:</span></h2>
+<p>This layer defines the networking methods within the scope of the local network link on which hosts communicate without intervening routers. This layer describes the protocols used to describe the local network topology and the interfaces needed to effect transmission of Internet layer datagrams to next-neighbor hosts.</p>
+<p><a href="/wiki/images/5/5f/UDP_encapsulation.svg.png" class="image"><img alt="UDP encapsulation.svg.png" src="/wiki/images/5/5f/UDP_encapsulation.svg.png" width="500" height="313" /></a></p>
+<p>=================================</p>
+<p><a rel="nofollow" class="external free" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP">https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP</a><em>encapsulation.svg/500px-UDP</em>encapsulation.svg.png</p>
+<p>==================================</p>
+<h1> <span class="mw-headline" id="OSI_Layers">OSI Layers</span></h1>
+<p>There are 7 layers in the OSI description, compared with the traditional 4 layer scheme in TCP/IP</p>
+<p><a href="/wiki/index.php/Insidetheinternet:003wikiproject_LayersOSI" title="Insidetheinternet:003wikiproject LayersOSI"> OSI Layers</a></p>
+<h1> <span class="mw-headline" id="Main_Page">Main Page</span></h1>
+<p><a href="/wiki/index.php/Insidetheinternet:003wikiproject" title="Insidetheinternet:003wikiproject">  <strong>Wiki Project Main Page</strong></a></p>
+<p>====================================================</p>
+<p>page commenced Tuesday July 2 2013 FB</p>
+<p>page was updated Tuesday July 02 2013 23:10UTC+10 FB</p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Insidetheinternet:003wikiproject_layers&amp;oldid=13526">https://share.coursera.org/wiki/index.php?title=Insidetheinternet:003wikiproject_layers&amp;oldid=13526</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Inside_the_internet" title="Category:Inside the internet">Inside the internet</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

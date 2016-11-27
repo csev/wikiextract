@@ -1,0 +1,10 @@
+[[Category:Computer Networks]]
+Using TCP is very similar to making a phone call. One person dials a friends number. The other side rings, picks up the phone. You chat, and either side can hang up ending the conversation. Telephone protocols are extremely similar to TCP protocols.
+
+However, there are more similarities. As far as the two people on the phone are concerned, they are talking to each other directly. As the old AT&T advertising says, "It's the next best thing to being there."
+
+But are they as close as a kid's telephone toy consisting of two cups and a string? Absolutely not! Telephone networks are massive complex structures. Before the days of VoIP, a dedicated connection was nailed up through each switch from one phone to another. A call across a continent could include up to half a dozen switches or more. Now with VoIP, voice/sound waves are converted to digital information, broken into packets and sent across the internet like any other internet data.
+
+The people in the conversation have a virtual connection reinforced through their voices, but in reality, their conversation has been converted into electrical signals or data bits streaming through equipment that's out of sight and out of mind.
+
+TCP and supporting layers are much the same way. Two hosts have a digital virtual conversation at the TCP level, but the data actually progresses through layers of Networks, Links and Physical connections beneath them.

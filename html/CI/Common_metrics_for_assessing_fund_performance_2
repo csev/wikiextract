@@ -1,0 +1,72 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">CI:Common metrics for assessing fund performance 2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><strong>Module 2 Common metrics for assessing fund performance 2</strong> (Lecture Video 2.3)</p>
+<p><em>Note: Just copied notes from lecture slides, needs to be cleaned up</em></p>
+<ul>
+<li>Due Date: October 28, Time for Completion: 7 minutes</li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a> </li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=11">video</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/023-CompInvestI.pptx">powerpoint</a></li>
+</ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Objectives"><span class="tocnumber">1</span> <span class="toctext">Objectives</span></a></li>
+<li class="toclevel-1"><a href="#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#How_To_Compare_Similar_Portfolios.3F"><span class="tocnumber">2.1</span> <span class="toctext">How To Compare Similar Portfolios?</span></a></li>
+<li class="toclevel-2"><a href="#Sharpe_Ratio"><span class="tocnumber">2.2</span> <span class="toctext">Sharpe Ratio</span></a></li>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">2.3</span> <span class="toctext">Example</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Objectives">Objectives</span></h1>
+<ul>
+<li>Sharpe Ratio.</li>
+</ul>
+<h1> <span class="mw-headline" id="Notes">Notes</span></h1>
+<h2> <span class="mw-headline" id="How_To_Compare_Similar_Portfolios.3F">How To Compare Similar Portfolios?</span></h2>
+<ul>
+<li>daily_rets[i] = (value[i]/value[i-1]) – 1</li>
+<li>std<em>metric = stdev(daily</em>rets)</li>
+</ul>
+<h2> <span class="mw-headline" id="Sharpe_Ratio">Sharpe Ratio</span></h2>
+<ul>
+<li>Most “important” measure of asset performance.</li>
+<li>How well does the return of an asset compensate the investor for the risk taken?</li>
+<li>The higher the Sharpe ratio the better. </li>
+<li>When comparing two assets each with the same return, higher Sharpe ratio gives more return for the same risk.</li>
+</ul>
+<p>$$S =  \frac{E [R - R&#95;f]}{\sigma} = \frac{E [R - R&#95;f]}{\sqrt{var[R - R&#95;f]}}$$  </p>
+<ul>
+<li>Reward/Risk = How much reward are you getting for your risk?</li>
+<li>metric = k * mean(daily<em>rets)/stdev(daily</em>rets))</li>
+<li>k = sqrt(250) for daily returns</li>
+</ul>
+<h2> <span class="mw-headline" id="Example">Example</span></h2>
+<p><pre>
+      Return  Sharpe   STDEV   D-down   Corr
+Fund     33%     .94   0.58%   -8.67%   0.89
+$DJI     43%     .63   1.23%  -27.38%   1.00
+</pre></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=CI:Common_metrics_for_assessing_fund_performance_2&amp;oldid=4326">https://share.coursera.org/wiki/index.php?title=CI:Common_metrics_for_assessing_fund_performance_2&amp;oldid=4326</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:CI" title="Category:CI">CI</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

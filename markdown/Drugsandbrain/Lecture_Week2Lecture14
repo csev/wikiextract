@@ -1,0 +1,46 @@
+An edited transcript of Drugs and the Brain Lecture 14 Inhibitory Ligand-Gated Channels   
+* Hello. This mini lecture describes inhibitory ligand-gated channels. You'll see several themes that are familiar to you from the nicotinic acetylcholine receptor family, which are excitatory.  
+
+**The cerebellum: a famous circuit in neuroscience.**  
+
+* As usual, it's a good idea to have a brain region in mind, and a set of processes in mind when we discuss a molecule. Let's keep our minds on the cerebellum during this lecture. Actually, every neuron in the brain probably has GABAA and, or glycine inhibitory receptors. Many cell types in the brain, but not all of them make GABA, those are inhibitory neurons.  
+
+* For instance, in the cerebellum we have the Purkinje cells, large beautiful cells. If we see them from the face angle, the Purkinje cell looks like an enormous hand, 50 microns or so in diameter, with lots of dendrites and one axon coming down. If we see it from the side, incidentally they're all lined up together. So all of the Purkinje cells from the side look like this, their hands a bit narrower. In addition to those Purkinje cells, the cerebellum also has basket cells, GABAergic stellate cells, and Golgi cells. And all of these cells, then, are going to be able to activate inhibitory receptors on postsynaptic neurons.  
+
+* There's also a set of excitatory cells that release glutamate. These are vastly important. In fact, they are a plurality of the cell type in the central nervous system. That is, granule cells are approximately 10% of all of the cells in the brain. 
+
+**The Reversal Potential (EIPSP) for the inhibitory GABA and glycine receptors is ~ Ecl**    
+
+* In terms of our equivalent circuit, let's see the events that occur when we activate an inhibitory ligand-gated channel. The key observation here is that the ion that fluxes through the inhibitory ligand-gated channel is an anion, mostly chloride. And so in fact the reversal potential, the IPSP for the inhibitory postsynaptic potential (IPSP) for the inhibitory GABA and glycine receptors is roughly equal to the Nernst potential for chloride, and so, if we hold our membrane potential positive with respect to E chloride, then a pulse of GABA or glycine tends to push the voltage more negative. This is quite important, because if the membrane is depolarized if it's more positive than the usual resting potential. Then it may be firing spikes, firing action potentials, and the inhibitory postsynaptic potential tends to drive it more negative than threshold, and stop those spikes from firing.  
+
+* We can see either the equation or the equivalent circuit for some insight here. Now we've dropped the arrow from the resting potassium channels, because they're resting and they're always open. We have the additional conductance shown here in blue, which is the chloride conductance under the control of the GABA or glycine receptors. And it is opposing the excitatory conductance under the control of nicotinic receptors, or as we'll see in the next lecture, the glutamate receptors. And so, the more excitatory channels open, the more depolarized the cell becomes. We can see that down here with this term, E sub EPSP. But, the more inhibitory channels open, the more that depolarization is resisted and the more the cell wants to be driven toward e-chloride, which is around -80 milivolts, so that's more negative than the usual resting potential. So we can see the equation. We can see the equivalent circuit. Or we can see the actually traces that one might record in an experiment underlying the inhibitory effect of GABA, or glycine receptors. 
+
+**Nicotinic acetylcholine, GABAA , and glycine receptors look alike at this resolution**  
+
+* This is a familiar diagram to you, and at this level of resolution, the nicotinic acetylcholine and the GABA A, and the glycine receptors all look alike. We would have to delve deep into the pore to find out how it is, that in this case, GABA and glycine receptors trick only chloride ions into thinking they're still in water and can therefore flow through the center of the channel.  
+
+**The family of GABAA receptors and glycine receptors (primarily in spinal cord)**  
+
+The family of GABA A receptors is fairly complex. It has four &beta; subunits, six &alpha; subunits and assorted &gamma;, &delta;, &epsilon; and &rho; subunits. You'll see why we put &beta; before &alpha; on the next slide. In addition there are splice variants of the GABA A receptors. And these splice variants may be important for the response to ethanol.  
+
+* The glycine receptor family is a bit simpler, and they're expressed mostly in the spinal cord. And so this classic knee reflex that I told you about in the first lecture. When you extend your leg, actually extending the motor neurons inhibits the flexor motor neurons and that is done to some extent, with glycine receptors in the spinal cord. There are only two &alpha; subunits and one &beta; subunit. 
+
+**Pharmacology of GABAA Receptors: allosteric activators**  
+
+* The pharmacology of GABAA receptors is quite interesting. First let's talk about allosteric activators of GABAA receptors. So here we have looking down from the extracellular solution on the extracellular region of what we think would be a pretty good model for the GABA A receptor. And we see that the agonist binds at the interface between two subunits. But if you compare this with one of our diagrams of the nicotinic receptor, you'll note that the &beta; subunit is in the position of the &alpha; nicotinic receptors' subunit. And likewise the &alpha; subunit is in the position of the &beta; nicotinic receptors' subunit. Now that's a historical consequence of when those subunits were discovered, and it's just nomenclature. But that's why I had the &beta;s before the &alpha;s on the previous slide. 
+
+* Now a key observation here is that the benzodiazepines and here are some examples of names of benzodiazepines, bind allosterically at non agonist interfaces. So interfaces that are analogous to the agonist interfaces but are between other subunits here, between the &alpha; and the &gamma; subunit. So these allosteric activators prolong the action, increase the action of GABA itself, and therefore increase inhibition in the nervous system. Phenobarbital does the same thing. Its exact binding site, I think, is unknown. 
+
+**GABAA and Glycine blockers bind either at the agonist site or in the channel**  
+
+* There are other molecules that are not clinically useful, but pharmacologically useful for GABA A and glycine receptors. There are two plant alkaloids, bicuculline and strychnine that block these receptors. Bicuculine blocks the GABA A receptor by competing with GABA at the biding site. And again this is one of our diagrams of two subunits of a ligand-gated channel, a pentameric ligand-gated channel. Strychnine blocks glycine receptors again by competing at the agonist site.  
+
+* There's another class of blockers, also without much medical use, picrotoxin, which acts like a plug in a drain blocking GABA A and glycine receptors. We'll have more to say about channel blockers in a subsequent lecture. An important concept is that a drug can actually get right into the channel, and block it there. 
+
+**Additional potentiators of GABAA receptors**  
+
+* There are additional important potentiators of GABA A receptors as well. Some steroids, which quite possibly underlie premenstrual syndrome (I think that this literature is rather incomplete at the moment) can potentiate GABA A receptors.  
+
+* Ethanol can also potentiate GABA A receptors. I want to caution you that ethanol acts on many different types of proteins in the nervous system. Several ion channels, several receptors, we'll talk about this next week, but one place where ethanol binds is certainly to potentiate GABA receptors, to potentiate their inhibitory action. How ethanol makes people lose their inhibitions is an interesting story. Perhaps, it's inhibition of inhibition.  
+
+* General anesthetics that are used in surgery also bind to GABA A receptors. And here we know a bit about their binding. We know that general anesthetics don't bind at an agonist site, or in the extracellular region. They actually bind in the transmembrane region in what seems to be a water-filled cavity between the M2 and the M3 of GABA A receptors. Quite possibly ethanol binds at the same place. Next time we will talk about excitatory glutamate

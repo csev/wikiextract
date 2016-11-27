@@ -1,0 +1,35 @@
+This page will give detailed explanations of the equations covered in the course. Please add/correct wherever needed.
+
+**Luminosity**
+
+$$L_\odot$$ = 4$$\pi$$ $$D^2_\odot$$$$b_\odot = 3.83 \times 10^{26} \ W$$
+
+$$L_\odot$$ is the value for luminosity. 
+
+$$D_\odot$$ is distance to the Sun.
+
+$$b_\odot$$ is the Solar Constant (below).
+
+$$W$$ is Watts.
+
+In astronomy, luminosity measures the total amount of energy emitted by a star or other astronomical object in SI units of joules per second, which are watts (W above). A watt is one unit of power, and just as a light bulb is measured in watts, so too is the Sun, the latter having a total power output of 3.846*10^26 W. It is this number which constitutes the basic metric used in astronomy and is known as 1 solar luminosity, the symbol for which is $$L_\odot$$. 
+
+**Solar Constant**
+
+$$b_\odot = 1361 \ W/m^2$$
+
+This is the value of the solar constant. The solar constant (the 'b') is equal to a particular number (1361) when we use a particular set of units (W/m^2, where 'W' stands for Watts, a unit of power, and 'm' stands for meters, a unit of length. m^2 means that the unit 'meter' is squared, and thus represents an area of 'square meters'.) Written out fully, we could say "the solar constant is equal to 1361 Watts per square meter".  To get this number you would compute from the above expression with $$L_\odot$$ in Watts as above and $$D_\odot$$ in meters.
+
+Usefully, if we drop all the $${}_\odot$$ that make it specific, this formula gives us the brightness, i.e. intensity of the light (in W/m^2, say) of an object of luminosity (total radiated power in W) $$L$$ when observed at a distance (in m) $$D$$.
+
+**Zenith Angle**
+
+zenith.angle=Lattitude−declination
+
+The zenith angle is an angle measured from the -axis in spherical coordinates. It is also known as the polar angle and colatitude.
+
+In geography, latitude is a geographic coordinate that specifies the north-south position of a point on the Earth's surface. Lines of constant latitude, or parallels, run east–west as circles parallel to the equator. Latitude is an angle (defined below) which ranges from 0° at the Equator to 90° (North or South) at the poles.
+
+declination (abbreviated dec; symbol δ) is one of the two direction coordinates of a point on the celestial sphere in the equatorial coordinate system, the other being either right ascension or hour angle. Declination's angular distance is measured north or south of the celestial equator, along the hour circle passing through the point in question.
+
+For more: <http://geography101blog.wordpress.com/2006/07/10/zenith-and-sun-angle-calculations/>

@@ -1,0 +1,85 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Naive Bayes</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Naive_Bayes_Models"><span class="tocnumber">1</span> <span class="toctext">Naive Bayes Models</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">1.1</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-2"><a href="#Bernoulli_Naive_Bayes_for_text_classification"><span class="tocnumber">1.2</span> <span class="toctext">Bernoulli Naive Bayes for text classification</span></a></li>
+<li class="toclevel-2"><a href="#Multinomial_Naive_Bayes_for_Text"><span class="tocnumber">1.3</span> <span class="toctext">Multinomial Naive Bayes for Text</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Summary"><span class="tocnumber">2</span> <span class="toctext">Summary</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">3</span> <span class="toctext">Lecture Video Table of Contents</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Naive_Bayes_Models">Naive Bayes Models</span></h1>
+<p>Naive Bayes gives us a simplified approach to certain problems by making strong independence assumptions.</p>
+<h2> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Naive Bayes Model is commonly used in context of text classification.</p>
+<p>Random variables:
+<ul><li>  C: Class  (e.g. type of document)
+</li><li>  X1, X2,..., Xn: Features (e.g. word appears in that document)</p>
+</li></ul>
+
+<p>Dependencies graph:
+<ul><li> C-&gt;X1
+</li><li> C-&gt;X2
+</li><li> ...
+</li><li> C-&gt;Xn</p>
+</li></ul>
+
+<p><strong>Question</strong>: What independence assumption does the Naive Bayes model make?</p>
+<p><strong>Answer</strong>: Given the class variable, each observed variable is independent of the other observed variables.</p>
+<p>$$\Rightarrow (X&#95;i\perp X&#95;j |C)$$ for all $$X&#95;i, X&#95;j $$ </p>
+<p>$$\Rightarrow P(C, X1, X2,..., Xn) = P(C).\prod&#95;i P(X&#95;i|C)$$</p>
+<h2> <span class="mw-headline" id="Bernoulli_Naive_Bayes_for_text_classification">Bernoulli Naive Bayes for text classification</span></h2>
+<p><strong>Text classification</strong>: We have some kinds of categories and we want to assign our document to one of those.</p>
+<p>In Bernoulli naive model, we have a binary random variable for every vocabulary in dictionary. It's 1 if appears in the document and 0 otherwise.</p>
+<p>Therefore, the CPD of these binary random variables is: P(vocabulary|document label). For example, P("cat" appears|document label)</p>
+<p>It's naive because it makes very strong assumption that event of one word appearing is independent of event of different word appearing given that we know the class of document.</p>
+<h2> <span class="mw-headline" id="Multinomial_Naive_Bayes_for_Text">Multinomial Naive Bayes for Text</span></h2>
+<p>The variables for the features are words in the document, from the first to the last n position. Value of each variable is actual word, has the size of dictionary.</p>
+<p>We assume that probability distribution of word is the same over its position.</p>
+<p>It's naive because we make strong assumption that word in position 1 independent with word in 2 given the class variable.</p>
+<h1> <span class="mw-headline" id="Summary">Summary</span></h1>
+<ul>
+<li>Simple approach for classification
+
+<ul>
+<li>Computationally efficient</li>
+<li>Easy to construct</li>
+</ul></li>
+<li>Surprisingly effective in domains with many weakly relevant features</li>
+<li>Strong independence assumption reduces performance when many features are strongly correlated.</li>
+</ul>
+<h1> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h1>
+<p><pre>
+0:00    Definition
+0:27    Example
+1:09    Naive Bayes Model
+2:19    Naive Bayes Classifier
+3:16    Naive Bayes application: Text classification
+6:22    Multinomial Naive Bayes for Text
+9:14    Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Naive_Bayes&amp;oldid=2943">https://share.coursera.org/wiki/index.php?title=PGM:Naive_Bayes&amp;oldid=2943</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

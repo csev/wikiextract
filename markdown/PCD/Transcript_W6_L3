@@ -1,0 +1,39 @@
+[[Category:Coursera]] 
+[[Category:PCD]]
+[[Category:Biology]]
+
+# Week 6:  6.3 - Engulfment and degradation  
+
+* In the last section, we discussed processes induced by caspases in apoptotic cells and one of these processes is the externalization of PS, which signals to phagocytes that the cell should be eaten. The engulfment and clearance of apoptotic cells is the last step in the apoptotic process and it is a very important step as well. If apoptotic cells are not cleared they can become secondarily necrotic, which induces inflammation and which can promote autoimmunity. Like the central apoptosis pathway, which we mainly focused on during the last five weeks, the engulfment and clearance of apoptotic cells is also a process that is evolutionarily conserved.  
+
+* The engulfment and clearance of apoptotic cells is a large area of research and I will only give you a brief overview of the cellular and molecular mechanisms that are engaged during the process. I will focus again on <i>C. elegans</i>, because genetic studies in <i>C. elegans</i> have tremendously contributed to our understanding of this process as well. For those of you who would like to know more, I recommend two recent reviews, one by Kodi Ravichandran and one by Zheng Zhou. Both are leaders in the field, with Ravichandran focusing on studies in mammals and Zhou on studies in <i>C. elegans</i>.  
+
+* How is engulfment initiated and how does it proceed? At least in mammals, the first step is that the apoptotic cell sends out “find-me” signals. These signals are necessary to attract phagocytes from within the tissue.  In <i>C. elegans</i> such “find-me” signals may not be necessary since most of the times, it is the neighboring cells that engulf apoptotic cells.  
+
+* Once phagocytes have been attracted, the second step is that the apoptotic cell exhibits “eat-me” signals on its cell surface to tell the phagocyte that it is this cell that has to be cleared. At least in mammals, apart from PS, a number of other molecules have been proposed to function as “eat-me” signals; however, they have not yet been characterized very well.  
+
+* These “eat-me” signals on the apoptotic cells are then recognized by specific receptors on the plasma membrane of the phagocyte. The binding to their specific “eat-me” signal activates these receptors. And their activation induces two processes.  
+
+* First, they induce cytoskeletal rearrangements within the phagocyte, basically shape changes. These shape changes allow the complete engulfment of the apoptotic cell. Second, once the apoptotic cell has been engulfed, they induce the fusion of the phagosome with the lysosomal system, which eventually leads to the degradation of the entire apoptotic cell.  
+
+* An “eat-me” signal receptor or ‘phagocytic receptor’ very well characterized is mammalian LRP1 and its <i>C. elegans</i> homolog CED-1.  Remember CED-1? The <i>ced-1</i> gene is required for the engulfment of apoptotic cells in <i>C. elegans</i> and Ellis and Horvitz used a <i>ced-1</i> mutant background for their screen for mutants with a general block in apoptosis.  
+
+* The activation of <i>C. elegans</i> CED-1 in  the phagocyte through binding to the appropriate “eat-me” signal on the apoptotic cell activates a signaling pathway that results in the rearrangement of the actin cytoskeleton, one of the three major cytoskeletal components of eukaryotic cells, within the phagocyte.  In this context, CED-1 acts with CED-7 and CED-6, two additional <i>C. elegans</i> proteins that were identified genetically in <i>C. elegans</i> since their loss also causes a defect in engulfment.  
+
+* Furthermore, a recent publication by Zheng Zhou and co-workers indicates that in order to cause the actin cytoskeleton to rearrange, CED-1 also engages factors that normally function in receptor-mediated endocytosis, such as the membrane coat protein clathrin and its adaptor epsin. However, there is a second pathway that can induce the rearrangement of the actin cytoskeleton in phagocytes.  
+
+* The proteins CED-2, CED-5, CED-10 and  CED-12, which like CED-1, CED-6 and CED-7 were identified genetically in <i>C. elegans</i> because of their role in engulfment form a partially redundant pathway  that acts in parallel to the CED-1, CED-6, and CED-7  pathway to also cause the rearrangement of the actin cytoskeleton in the phagocyte.  However, it is currently unclear, how this pathway is activated.  Furthermore, the CED-2, CED-5, CED-10, CED-12 pathway induces actin rearrangement through the activation of small GTPases such as Rac, which are known for their roles in actin dynamics.  
+
+* The rearrangement of actin filaments - also referred to as ‘microfilaments’- allows the phagocyte to form plasma membrane extensions called pseudopods that eventually wrap around the entire apoptotic cell. The apoptotic cell completely engulfed by the phagocyte is then referred to as the phagosome. 
+
+* It is also known for <i>C. elegans</i> CED-1 and CED-6 that, once the phagosome is formed, they induce the gradual fusion of the phagosome with components of the lysosomal system, which is a major site of cellular degradation in eukaryotic cells.  
+
+* The lysosome is a cellular organelle that is sometimes referred to as the stomach of the cell, because it contains many digestive enzymes that can break down various macromolecules, large molecules, such as proteins for example.  
+
+* To achieve a fusion of the phagosome with the lysosomal system, the phagocyte takes advantage of many of the factors that are involved in lysosomal biogenesis, which is the formation of lysosomes.  Once the phagosome has been fused with the lysosomal system then it is referred to as a phagolysosome.  Within this phagolysosome, the apoptotic cell is eventually completely degraded and recycled and this is achieved mainly through the action of the digestive enzymes of the lysosome.  
+ 
+
+---
+[[PCD:Main | PCD Main Page]]  
+[[PCD: Week6 | Week 6 Keywords]]  
+[[PCD: Week6LectureList | Week 6 Lecture Transcripts]]

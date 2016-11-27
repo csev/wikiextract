@@ -1,0 +1,82 @@
+[[Category:Biostatistics|Basic integration techniques]]
+Here are some calculus techniques that will be useful in the course.
+
+**1. Differentiate and integrate polynomials**  
+
+Assume you already know this.
+  
+  
+**2. Compute definite integrals**  
+  
+Let $$F$$ be the anti-derivative of $$f$$, ie  
+  
+$$ F'(x) = f(x) $$  
+  
+then  
+  
+$$ \displaystyle\int_a^b { f(t) dt } = F(b) - F(a) $$  
+  
+This is known as the fundamental theorem of calculus.  
+  
+  
+**3. The Exponential function**  
+  
+The exponential function is $$e^x$$. It is also written as exp(x) in the lecture.  
+  
+The derivatives of exponential function is the function itself.  
+  
+$$ \dfrac d {dx} {e^x} = e^x $$  
+  
+So the indefinite integral is  
+  
+$$ \displaystyle\int {e^x} dx = {e^x} + C $$  
+  
+(Note the result of indefinite integral has a constant C).  
+  
+The exponential function is defined by the power series  
+  
+$$ e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{4^3}{4!}+ ... = \displaystyle\sum_{n=0}^{\infty} \frac {x^n} {n!} $$  
+  
+Seriously! Check this out in wikipedia.  
+[http://en.wikipedia.org/wiki/Exponential_function#Formal_definition](http://en.wikipedia.org/wiki/Exponential_function#Formal_definition)  
+  
+We can use this to find the approximate numerical result of an exponential function. For example, find $$ e^{0.5} $$ by adding the first 4 terms:  
+  
+$$ e^{0.5} = 1 + 0.5 + 0.25 / 2! + 0.125 / 3! + ... \cong 1.6458 $$  
+  
+This approximates $$ \sqrt e $$ within 0.2%.  
+  
+The Poisson distribution is closely related to the power series, those PMF is $$ \frac {\lambda^k} {k!} \cdot e^{-\lambda} $$ where k is 0, 1, 2, 3, ...  
+  
+  
+**4. Chain Rule (of differentiation)**  
+  
+In some case we are given probability in the form such as $$ e^{-x / 5} $$, for example, in lecture 2 slide 17 the "PDF example". This can be arrange as a composite function $$f \circ g = f(g(x))$$, where $$ f(u) = e^u $$ and $$ g(x) = - x / 5$$. To differentiate, we need to apply the chain rule, that is  
+  
+$$ (f \circ g)'(x) = f'(g(t)) \cdot g'(t) $$  
+  
+In the above case, find the derivate of $$ e^{-x / 5} $$ using  
+  
+$$ f'(g(x)) \cdot g'(x) = e^{-x / 5} (- \frac 1 5 ) $$  
+  
+  
+**5. Substitution rule**  
+  
+In integration, the counterpart to the chain rule is the substitution rule. It is also known as u-substitution. This is just the reverse of the chain rule.  
+  
+$$ \displaystyle\int f'(u) du = \displaystyle\int f'(g(t)) g'(t) dt $$  
+  
+To solve the integral on the example slide of the PDF section, let $$ u=-\frac x 5 $$. Then $$ du = -\frac 1 5 dx $$.  
+  
+$$ \displaystyle\int e^{-x / 5} ( \frac 1 5 ) dx = - \displaystyle\int e^u du = -e^{-x / 5} + C $$  
+  
+Actually we already know the answer because this is the reverse of what we have done in the chain rule section.  
+  
+To use the substitution rule, the strategy is to look for an inner function u. Then find out the derivative $$ du $$. Hopefully it will match the other part of the function that we are integrating.  
+  
+* * *  
+  
+With these technique we can now solve the complex looking density function that appeared in the quiz. How do we integrate $$ e^{-x} (1 + e^{-x}) ^ {-2} $$? We can apply the substitution rule. The question is what should we choose as $$ u $$? A lot of times, this comes down to making an educated guess. Given a function $$ f $$, what might its antiderivative $$ F $$ looks like? Make a guess and try to differentiate it to see if the results is indeed $$f$$. Here is a hint, do you see a $$ \frac 1 {u^2} $$ in the above function? What will be the corresponding $$ du $$?  
+  
+These are some reminder on the calculus. If you have not worked on calculus problem for a long time you may still find this difficult. Practice will help.
+#Categories

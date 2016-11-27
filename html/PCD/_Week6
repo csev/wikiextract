@@ -1,0 +1,218 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PCD: Week6</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#6.2_.E2.80.93_Active_research_on_caspases_In-vivo_methods"><span class="tocnumber">1</span> <span class="toctext">6.2 – Active research on caspases In-vivo methods</span></a></li>
+<li class="toclevel-1"><a href="#6.3_.E2.80.93_Engulfment_and_degradation"><span class="tocnumber">2</span> <span class="toctext">6.3 – Engulfment and degradation</span></a></li>
+<li class="toclevel-1"><a href="#6.4_.E2.80.93_Non-apoptotic_functions_of_the_Bcl-2_superfamily"><span class="tocnumber">3</span> <span class="toctext">6.4 – Non-apoptotic functions of the Bcl-2 superfamily</span></a></li>
+<li class="toclevel-1"><a href="#6.5_.E2.80.93_Non-apoptotic_functions_of_caspases_and_the_central_pathway"><span class="tocnumber">4</span> <span class="toctext">6.5 – Non-apoptotic functions of caspases and the central pathway</span></a></li>
+<li class="toclevel-1"><a href="#6.6_.E2.80.93_Human_disease_and_novel_therapeutics"><span class="tocnumber">5</span> <span class="toctext">6.6 – Human disease and novel therapeutics</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="6.2_.E2.80.93_Active_research_on_caspases_In-vivo_methods">6.2 – Active research on caspases In-vivo methods</span></h2>
+<p><a href="/wiki/index.php/PCD:Transcript_W6_L2" title="PCD:Transcript W6 L2"> Transcript</a><br />
+<strong>In-vitro methods</strong><br />
+<ul><li> Pools of in vitro translated proteins from mammals, C. elegans or other models have since been used to identify new caspase substrates by various investigators.<br />
+</li><li> In most cases, one or two dimensional polyacrylamide gel electrophoresis was used to identify proteins that are cleaved by caspases in vitro.<br />
+</li><li> Nowadays, the nature of these cleaved proteins is determined by mass spectrometry.</p>
+</li></ul>
+
+<p><strong>caspase substrates CAD</strong><br />
+<ul><li> CAD = caspase-activated deoxyribonuclease<br />
+</li><li> a deoxyribonuclease that is activated by caspases in apoptotic cells<br />
+</li><li> is activated by caspases indirectly through the cleavage and inactivation of a CAD inhibitor<br />
+</li><li> found bound to ICAD in the cytoplasm in healthy cells<br />
+</li><li> Once caspases become activated, they cleave ICAD. This results in the translocation of CAD from the cytoplasm to the nucleus where it contributes to DNA fragmentation and DNA ladder formation through its nuclease activity.  </p>
+</li></ul>
+
+<p><strong>ICAD</strong><br />
+<ul><li> inhibitor of CAD<br />
+</li><li> required for CAD folding<br />
+</li><li> can inhibit the ability of CAD to enter the nucleus<br />
+</li><li> can inhibit the ability of CAD to cleave DNA  </p>
+</li></ul>
+
+<p><strong>cytoskeletal elements</strong><br />
+<ul><li> structural proteins of a cell  </p>
+</li></ul>
+
+<p><strong>Xk-related protein 8</strong><br />
+<ul><li> located in the plasma membrane<br />
+</li><li> contribute to the externalization of PS to the outer leaflet of the plasma membrane<br />
+</li><li> The ability to contribute to PS externalization is dependent on its caspase-dependent cleavage. Therefore, it is speculated that Xk-related protein 8 in mammals and ced-8 in <em>C. elegans</em> are PS flippases themselves, whose flippase activity is specifically activated in apoptotic cells by caspase-cleavage.  </p>
+</li></ul>
+
+<p><strong>ced-8</strong><br />
+<ul><li> the loss of ced-8 does not block apoptosis like mutations in egl-1, ced-3 or ced-4 do<br />
+</li><li> the loss of ced-8 only slows things down  </p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="6.3_.E2.80.93_Engulfment_and_degradation">6.3 – Engulfment and degradation</span></h2>
+<p><a href="/wiki/index.php/PCD:Transcript_W6_L3" title="PCD:Transcript W6 L3"> Transcript</a>  </p>
+<p><strong>engulfment and clearance of apoptotic cells</strong><br />
+<ul><li> the last step in the apoptotic process<br />
+</li><li> If apoptotic cells are not cleared they can become secondarily necrotic, which induces inflammation and which can promote autoimmunity.<br />
+</li><li> is evolutionaryily conserved  </p>
+</li></ul>
+
+<p><strong>secondarily necrotic</strong>  </p>
+<p><strong>evolutionarily conserved</strong>  </p>
+<p><strong>find-me signals</strong><br />
+<ul><li> first step in the process 
+</li><li> necessary to attract phagocytes from within the tissue.<br />
+</li><li> In C. elegans, such “find-me” signals may not be necessary since most of the times, it is the neighboring cells that engulf apoptotic cells.  </p>
+</li></ul>
+
+<p><strong>eat-me signals</strong><br />
+<ul><li> second step<br />
+</li><li> apoptotic cells exhibits “eat-me” signals on its cell surface to tell the phagocyte that it is this cell that has to be cleared.<br />
+</li><li> At least in mammals, apart from PS, a number of other molecules have been proposed to function as “eat-me” signals; however, they have not yet been characterized very well.  </p>
+</li></ul>
+
+<ul>
+<li>“eat-me” signals on the apoptotic cells are then recognized by specific receptors on the plasma membrane of the phagocyte.  </li>
+<li>The binding to their specific “eat-me” signal activates these receptors.  </li>
+<li>Their activation induces two processes.<br />
+<dl><dd> 1. they induce cytoskeletal rearrangements within the phagocyte, basically shape changes. These shape changes allow the complete engulfment of the apoptotic cell.<br />
+</dd><dd> 2. Once the apoptotic cell has been engulfed, they induce the fusion of the phagosome with the lysosomal system, which eventually leads to the degradation of the entire apoptotic cell.  </li>
+</dd></dl>
+</ul>
+<p><strong>actin cytoskeleton</strong><br />
+<strong>microfilaments</strong><br />
+<strong>pseudopods</strong><br />
+<ul><li> one of the three major cytoskeletal components of eukaryotic cells, within the phagocyte<br />
+</li><li> The rearrangement of actin filaments allows the phagocyte to form plasma membrane extensions called pseudopods that eventually wrap around the entire apoptotic cell.<br />
+</li></ul>
+<a rel="nofollow" class="external text" href="http://cellix.imba.oeaw.ac.at/3-actin-cytoskeleton/">Actin Cytoskelton</a> (A Video Tour of Cell Motility)  </p>
+<p><strong>receptor-mediated endocytosis</strong><br />
+<strong>phagosome</strong> (the apoptotic cell completely engulfed by the phagocyte)<br />
+<strong>phagocytic receptor</strong><br />
+<strong>lysosomal system</strong> (major site of cellular degradation in eukaryotic cells)<br />
+<a rel="nofollow" class="external text" href="https://highered.mcgraw-hill.com/sites/0072495855/student_view0/chapter2/animation__phagocytosis.html">Phagocytosis animated video</a> by McGraw-Hill    </p>
+<ul>
+<li>The lysosome is a cellular organelle that is sometimes referred to as the stomach of the cell because it contains many digestive enzymes that can break down various macromolecules.  </li>
+<li>To achieve a fusion of the phagosome with the lysosomal system, the phagocyte takes advantage of many of the factors that are involved in lysosomal biogenesis, which is the formation of lysosomes.  </li>
+<li>Once the phagosome has been fused with the lysosomal system then it is referred to as a phagolysosome.  </li>
+<li>Within this phagolysosome, the apoptotic cell is eventually completely degraded and recycled, and this is achieved mainly through the action of the digestive enzymes of the lysosome.  </li>
+</ul>
+<p><strong>Rac GTPases</strong>  </p>
+<p><strong>cellular degradation</strong>  </p>
+<h2> <span class="mw-headline" id="6.4_.E2.80.93_Non-apoptotic_functions_of_the_Bcl-2_superfamily">6.4 – Non-apoptotic functions of the Bcl-2 superfamily</span></h2>
+<p><a href="/wiki/index.php/PCD:Transcript_W6_L4" title="PCD:Transcript W6 L4"> Transcript</a><br />
+<strong>mitochondrial function</strong>  </p>
+<p><strong>bifunctional proteins</strong>  </p>
+<p><strong>DRP-1</strong><br />
+<ul><li> dynamin-related<br />
+</li><li> required for mitochondrial fission
+</li><li> blocking mitochondrial fragmentation in Bax-expressing cells by expressing a dominant-negative Drp-1 construct slowed down the apoptotic process and delayed apoptosis<br />
+</li><li> the expression of a dominant-negative construct of drp-1 can block some of the 131 apoptotic cell death that occur during <em>C. elegans</em> development
+</li><li> the overexpression of wild-type drp-1 could induce ectopic apoptosis  </p>
+</li></ul>
+
+<p><strong>EAT-3 and FZO-9</strong><br />
+<ul><li> The ability of ced-9 to cause mitochondrial fusion is dependent on two dynamin-related GTPases, which are required for mitochondrial fusion, FZO-1 and EAT-3.<br />
+</li><li> ced-9 directly interacts with FZO-1, which like ced-9 localizes to the outer mitochondrial membrane.<br />
+</li></ul>
+<strong>EAT-3</strong><br />
+<ul><li> the C. elegans homolog of mammalian Opa1<br />
+</li></ul>
+<strong>FZO-1</strong><br />
+<ul><li> the C. elegans homolog of the mammalian mitofusins  </p>
+</li></ul>
+
+<p><strong>Dynamin related GTPases</strong><br />
+<ul><li> from <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Dynamin">Wikipedia</a>: "Dynamin is a GTPase responsible for endocytosis in the eukaryotic cell. Dynamins are principally involved in the scission of newly formed vesicles from the membrane of one cellular compartment and their targeting to, and fusion with, another compartment, both at the cell surface (particularly caveolae internalization) as well as at the Golgi apparatus. Dynamin also plays a role in many processes including division of organelles, cytokinesis and microbial pathogen resistance. Dynamin is part of the "dynamin superfamily," which includes classical dynamins, dynamin-like proteins, Mx proteins, OPA, mitofusins, and GBPs. Dynamin itself is a 96 kDa enzyme, and was first isolated when researchers were attempting to isolate new microtubule-based motors from the bovine brain. Dynamin has been extensively studied in the context of clathrin-coated vesicle budding from the cell membrane."  </p>
+</li></ul>
+
+<p><strong>ATP synthase</strong>  </p>
+<h2> <span class="mw-headline" id="6.5_.E2.80.93_Non-apoptotic_functions_of_caspases_and_the_central_pathway">6.5 – Non-apoptotic functions of caspases and the central pathway</span></h2>
+<p><a href="/wiki/index.php/PCD:Transcript_W6_L5" title="PCD:Transcript W6 L5"> Transcript</a>  </p>
+<p><strong>IAP ( inhibitor of apoptosis) proteins</strong><br />
+<ul><li> bind to pro-caspases such as Dronc, an initiator caspase, or Drice and Dcp-1, two effector caspases<br />
+</li><li> prevent their activation through a process that is still not quite clear<br />
+</li><li> mediate the ubiquitinylation of caspases<br />
+</li><li> Once a cell receives pro-apoptotic stimuli, these pro-apoptotic stimuli lead to the inactivation of IAP proteins.  </p>
+</li></ul>
+
+<p><strong>Dronc</strong><br />
+<ul><li> an initiator caspase  </p>
+</li></ul>
+
+<p><strong>initiator caspase</strong>  </p>
+<p><strong>ubiquitinylation</strong><br />
+<ul><li> The modification of a protein by the covalent attachment of one or more ubiquitin molecules. <a rel="nofollow" class="external text" href="http://en.wiktionary.org/wiki/ubiquitination">Source: Wiktionary</a><br />
+</li><li> <a rel="nofollow" class="external text" href="http://en.wiktionary.org/wiki/ubiquitin">Ubiquitin</a> - A small polypeptide present in the cells of all eukaryotes; it plays a part in modifying and degrading proteins.<br />
+</li><li> “One way cells clear out waste is by attaching a "death tag" to proteins they no longer need. Recognizing this tag, called ubiquitin, a cellular disposal machine called the proteasome begins digesting the proteins. Researchers have known about the existence of ubiquitin for a long time. However, in recent years, they have come to appreciate the fact that cells use ubiquitin-targeted destruction for much more than simply getting rid of debris. As it turns out, cells fine-tune many critical processes by using ubiquitin and the proteasome disposal system.”<br />
+</li></ul>
+Source: Davis, Alison. “<a rel="nofollow" class="external text" href="http://publications.nigms.nih.gov/insidethecell/chapter2.html">The Mask of Death."</a> <em>Inside the Cell</em>. National Institute of General Medical Science.  </p>
+<p><strong>hid</strong>, <strong>reaper</strong> and <strong>grim</strong><br />
+<ul><li> Bind to IAP proteins and thereby prevent them from interacting with pro-caspases.<br />
+</li><li> Free pro-caspases are then able to become active and consequently, the cell becomes irreversibly committed to the apoptotic fate.  </p>
+</li></ul>
+
+<p><strong>proteasome</strong><br />
+<ul><li> another major site of cellular degradation  </p>
+</li></ul>
+
+<p><strong>programmed elimination of cellular content</strong><br />
+<ul><li> The apoptotic process appear to play a role in the specific removal of nuclei and organelles, rather than the elimination of entire cells.<br />
+</li><li> In the case of the enucleation of red blood cells or the denucleation of the fiber cells, it is only certain components of the apoptotic pathway that appear to be activated in order to eliminate in a programmed manner specific cellular content.<br />
+</li><li> In the case of fiber cells in the lens, it is not only nuclei and other cellular organelles, but also house keeping enzymes that are eliminated. And the elimination does not appear to occur through extrusion, but through degradation.  </p>
+</li></ul>
+
+<p><strong>enucleated / denucleated</strong><br />
+<ul><li> describes a cell that lacks a nucleus<br />
+</li><li> Enucleation is the last step during erythropoiesis. The nucleus as well as other cellular organelles literally become extruded from the red blood cells through the plasma membrane.  </p>
+</li></ul>
+
+<p><strong>erythrocytes</strong><br />
+<ul><li> red blood cells<br />
+</li><li> enucleated or denucleated (they do not have a nucleus)  </p>
+</li></ul>
+
+<p><strong>erythropoesis</strong><br />
+<ul><li> the process of forming new erythrocytes  </p>
+</li></ul>
+
+<p><strong>hemoglobin</strong><br />
+<ul><li> protein in erythrocytes that is the carrier for oxygen in the blood  </p>
+</li></ul>
+
+<p><strong>fiber cells of eye lens</strong><br />
+<ul><li> another type of cell that does not have a nucleus  </p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="6.6_.E2.80.93_Human_disease_and_novel_therapeutics">6.6 – Human disease and novel therapeutics</span></h2>
+<p><a href="/wiki/index.php/PCD:Transcript_W6_L6" title="PCD:Transcript W6 L6"> Transcript</a><br />
+<strong>BH3 mimetics</strong><br />
+<strong>in silico screen</strong><br />
+<strong>ABT-737</strong><br />
+<strong>pan-Bcl-2 inhibitor</strong><br />
+<strong>ABT-2# 63</strong><br />
+<strong>Navitoclax</strong><br />
+<strong>platelets</strong><br />
+<strong>thrombocytes</strong><br />
+<strong>puma</strong></p>
+<hr />
+<p><a href="/wiki/index.php/PCD:Main" title="PCD:Main"> PCD Main Page</a><br />
+<a href="/wiki/index.php/PCD:_Week6LectureList" title="PCD: Week6LectureList"> Week 6 Lecture Transcripts</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 84/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PCD:_Week6&amp;oldid=28414">https://share.coursera.org/wiki/index.php?title=PCD:_Week6&amp;oldid=28414</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

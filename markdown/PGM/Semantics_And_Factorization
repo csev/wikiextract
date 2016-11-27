@@ -1,0 +1,70 @@
+[[Category:Probabilistic Graphical Models]]
+Example
+----
+
+Random Variables:
+* Grade ($$G$$)
+* Difficulty, ($$D$$)
+* Intelligence, ($$I$$)
+* SAT, ($$S$$)
+* Letter, ($$L$$)
+
+With dependencies:
+* $$D \rightarrow G$$
+* $$I \rightarrow G$$
+* $$I \rightarrow S$$
+* $$G \rightarrow L$$
+
+Means we have the CPDs (conditional probability distributions):
+* $$P(G|I,D)$$
+* $$P(S|I)$$
+* $$P(L|G)$$
+* $$P(D)$$
+* $$P(I)$$
+
+Draw a directed graph from these dependencies and annotate the nodes with their CPD. That makes a fully parameterized Bayesian network.
+
+Chain Rule for Bayesian Networks:
+$$P(G|I,D)P(S|I)P(L|G)P(D)P(I) = P(D,I,G,S,L)$$
+
+
+Bayesian Network: 
+----
+* directed acyclic graph (DAG) G whose nodes represent the random variables $$X_{1},..,X_{n}$$
+* for each node $$X_{i}$$, there is a CPD: $$P(X_i | Parents_G(X_i))$$
+* represents a joint distribution via the chain rule for Bayesian Networks
+$$P(X_1,..,X_n) = \prod_i P(X_i|Parents_G(X_i))$$
+
+Show that BN is a Legal Distribution: 
+
+> $$P \geq 0$$
+>
+> P is a product of nonnegative CPDs. //
+>
+> $$\sum P_{X_i,..,X_n} = 1$$:
+>
+> Use factorization of $$P$$ and reduce by separating out the summation.
+
+We say $$P$$ factorizes over graph $$G$$ if we can encode it with the chain rule.
+
+Application: genetic inheritance
+----
+
+
+Video Lecture Table of Contents
+----
+<pre>
+0:00	Representation: Bayesian networks
+0:30	Student example
+2:06	Drawing the graph
+4:15	Node annotations: CPDs
+6:06	Chain rule for Bayesian networks
+8:30	Bayesian network definition
+10:00	A Bayesian Network is a legal distribution
+10:01	Legal distribution: P >= 0
+10:45	Legal distribution: Sum of P == 1
+12:27	"Pushing in" summations
+14:18	Legal distribution: Factorizes over G
+14:48	Genetic inheritance
+16:18	Bayesian Networks for genetic inheritance
+</pre>

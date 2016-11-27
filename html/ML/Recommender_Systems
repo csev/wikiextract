@@ -1,0 +1,123 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Recommender Systems</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Problem_Formulation"><span class="tocnumber">1</span> <span class="toctext">Problem Formulation</span></a></li>
+<li class="toclevel-1"><a href="#Content_Based_Recommendations"><span class="tocnumber">2</span> <span class="toctext">Content Based Recommendations</span></a></li>
+<li class="toclevel-1"><a href="#Collaborative_Filtering"><span class="tocnumber">3</span> <span class="toctext">Collaborative Filtering</span></a></li>
+<li class="toclevel-1"><a href="#Collaborative_Filtering_Algorithm"><span class="tocnumber">4</span> <span class="toctext">Collaborative Filtering Algorithm</span></a></li>
+<li class="toclevel-1"><a href="#Vectorization:_Low_Rank_Matrix_Factorization"><span class="tocnumber">5</span> <span class="toctext">Vectorization: Low Rank Matrix Factorization</span></a></li>
+<li class="toclevel-1"><a href="#Implementation_Detail:_Mean_Normalization"><span class="tocnumber">6</span> <span class="toctext">Implementation Detail: Mean Normalization</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Problem_Formulation">Problem Formulation</span></h1>
+<p>Recommendation is currently a very popular application of machine learning.</p>
+<p>Say we are trying to recommend movies to customers. We can use the following definitions</p>
+<blockquote>
+  <p>$$n&#95;u = $$ number of users</p>
+  <p>$$n&#95;m = $$ number of movies</p>
+  <p>$$r(i,j) = 1$$ if user $$j$$ has rated movie $$i$$</p>
+  <p>$$y(i,j) = $$ rating given by user $$j$$ to movie $$i$$ (defined only if $$r(i,j) = 1$$)</p>
+</blockquote>
+<h1> <span class="mw-headline" id="Content_Based_Recommendations">Content Based Recommendations</span></h1>
+<p>We can introduce two features, $$x&#95;1$$ and $$x&#95;2$$ which represents how much romance or how much action a movie may have (on a scale of $$0 - 1$$). </p>
+<p>One approach is that we could do linear regression for every single user. For each user $$j$$, learn a parameter $$\theta^{(j)} \in \mathbb{R}^3$$. Predict user $$j$$ as rating movie $$i$$ with $$(\theta^{(j)})^Tx^{(i)}$$ stars.</p>
+<blockquote>
+  <p>$$\theta^{(j)} = $$ parameter vector for user $$j$$</p>
+  <p>$$x^{(i)} = $$ feature vector for movie $$i$$</p>
+  <p>For user $$j$$, movie $$i$$, predicted rating: $$(\theta^{(j)})^T(x^{(i)})$$</p>
+  <p>$$m^{(j)} = $$ number of movies rated by user $$j$$</p>
+</blockquote>
+<p>To learn $$\theta^{(j)}$$, we do the following</p>
+<p>$$min&#95;{\theta^{(j)}} = \dfrac{1}{2}\displaystyle \sum&#95;{i:r(i,j)=1} ((\theta^{(j)})^T(x^{(i)}) - y^{(i,j)})^2 + \dfrac{\lambda}{2} \sum&#95;{k=1}^n(\theta&#95;k^{(j)})^2$$</p>
+<p>This is our familiar linear regression. The base of the first summation is choosing all $$i$$ such that $$r(i,j) = 1$$.</p>
+<p>To get the parameters for all our users, we do the following:</p>
+<p>$$min&#95;{\theta^{(1)},\dots,\theta^{(n&#95;u)}} = \dfrac{1}{2}\displaystyle \sum&#95;{j=1}^{n&#95;u}  \sum&#95;{i:r(i,j)=1} ((\theta^{(j)})^T(x^{(i)}) - y^{(i,j)})^2 + \dfrac{\lambda}{2} \sum&#95;{j=1}^{n&#95;u} \sum&#95;{k=1}^n(\theta&#95;k^{(j)})^2$$</p>
+<p>We can apply our linear regression gradient descent update using the above cost function.</p>
+<p>The only real difference is that we <strong>eliminate the constant $$\dfrac{1}{m}$$</strong>.</p>
+<h1> <span class="mw-headline" id="Collaborative_Filtering">Collaborative Filtering</span></h1>
+<p>It can be very difficult to find features such as "amount of romance" or "amount of action" in a movie. To figure this out, we can use <em>feature finders</em>.</p>
+<p>We can let the users tell us how much they like the different genres, providing their parameter vector immediately for us.</p>
+<p>To infer the features from given parameters, we use the squared error function with regularization over all the users:</p>
+<p>$$min&#95;{x^{(1)},\dots,x^{(n&#95;m)}} \dfrac{1}{2} \displaystyle \sum&#95;{i=1}^{n&#95;m}  \sum&#95;{j:r(i,j)=1} ((\theta^{(j)})^T x^{(i)} - y^{(i,j)})^2 + \dfrac{\lambda}{2}\sum&#95;{i=1}^{n&#95;m} \sum&#95;{k=1}^{n} (x&#95;k^{(i)})^2$$</p>
+<p>You can also <strong>randomly guess</strong> the values for theta to guess the features repeatedly. You will actually converge to a good set of features.</p>
+<h1> <span class="mw-headline" id="Collaborative_Filtering_Algorithm">Collaborative Filtering Algorithm</span></h1>
+<p>To speed things up, we can simultaneously minimize our features and our parameters:</p>
+<p>$$
+\large
+J(x,\theta) = \dfrac{1}{2} \displaystyle \sum&#95;{(i,j):r(i,j)=1}((\theta^{(j)})^Tx^{(i)} - y^{(i,j)})^2 + \dfrac{\lambda}{2}\sum&#95;{i=1}^{n&#95;m} \sum&#95;{k=1}^{n} (x&#95;k^{(i)})^2 + \dfrac{\lambda}{2}\sum&#95;{j=1}^{n&#95;u} \sum&#95;{k=1}^{n} (\theta&#95;k^{(j)})^2$$</p>
+<p>It looks very complicated, but we've only combined the cost function for theta and the cost function for x.</p>
+<p>Because the algorithm can learn them itself, the bias units where $$x&#95;0 = 1$$ have been removed, therefore $$x \in \mathbb{R}^n$$ and $$\theta \in \mathbb{R}^n$$.</p>
+<p>These are the steps in the algorithm:</p>
+<ol>
+<li>Initialize $$x^{(i)},...,x^{(n&#95;m)},\theta^{(1)},...,\theta^{(n&#95;u)}$$ to small random values. This serves to break symmetry and ensures that the algorithm learns features $$x^{(i)},...,x^{(n&#95;m)}$$ that are different from each other.</li>
+<li>Minimize $$J(x^{(i)},...,x^{(n&#95;m)},\theta^{(1)},...,\theta^{(n&#95;u)})$$ using gradient descent (or an advanced optimization algorithm).<br />
+E.g. for every $$j=1,...,n&#95;u,i=1,...n&#95;m$$:<br />
+$$x&#95;k^{(i)}&#160;:= x&#95;k^{(i)} - \alpha\left (\displaystyle \sum&#95;{j:r(i,j)=1}{((\theta^{(j)})^T x^{(i)} - y^{(i,j)}) \theta&#95;k^{(j)}} + \lambda x&#95;k^{(i)} \right)$$<br />
+$$\theta&#95;k^{(j)}&#160;:= \theta&#95;k^{(j)} - \alpha\left (\displaystyle \sum&#95;{i:r(i,j)=1}{((\theta^{(j)})^T x^{(i)} - y^{(i,j)}) x&#95;k^{(i)}} + \lambda \theta&#95;k^{(j)} \right)$$</li>
+<li>For a user with parameters $$\theta$$ and a movie with (learned) features $$x$$, predict a star rating of $$\theta^Tx$$.</li>
+</ol>
+<h1> <span class="mw-headline" id="Vectorization:_Low_Rank_Matrix_Factorization">Vectorization: Low Rank Matrix Factorization</span></h1>
+<p>Given matrices $$X$$ (each row containing features of a particular movie) and $$\Theta$$ (each row containing the weights for those features for a given user), then the full matrix $$Y$$ of all predicted ratings of all movies by all users is given simply by:
+$$Y = X\Theta^T$$.</p>
+<p>Predicting how similar two movies $$i$$ and $$j$$ are can be done using the distance between their respective feature vectors $$x$$. Specifically, we are looking for a small value of $$||x^{(i)} - x^{(j)}||$$.</p>
+<h1> <span class="mw-headline" id="Implementation_Detail:_Mean_Normalization">Implementation Detail: Mean Normalization</span></h1>
+<p>If the ranking system for movies is used from the previous lectures, then new users (who have watched no movies), will be assigned new movies incorrectly.  Specifically, they will be assigned $$\theta$$ with all components equal to zero due to the minimization of the regularization term.  That is, we assume that the new user will rank all movies 0, which does not seem intuitively correct.</p>
+<p>We rectify this problem by normalizing the data relative to the mean.  First, we use a matrix Y to store the data from previous ratings, where the $$i$$th row of Y is the ratings for the $$i$$th movie and the $$j$$th column corresponds to the ratings for the $$j$$th user.</p>
+<p>We can now define a vector</p>
+<p>$$\mu  = [\mu&#95;1, \mu&#95;2, \dots , \mu&#95;{n&#95;m}] $$</p>
+<p>such that </p>
+<p>$$\mu&#95;i = \frac{\sum&#95;{j:r(i,j)=1}{Y&#95;{i,j}}}{\sum&#95;{j}{r(i,j)}}$$</p>
+<p>Which is effectively the mean of the previous ratings for the $$i$$th movie (where only movies that have been watched by users are counted).
+We now can normalize the data by subtracting $$u$$, the mean rating, from the actual ratings for each user (column in matrix $$Y$$):</p>
+<p>As an example, consider the following matrix $$Y$$ and mean ratings $$\mu$$:</p>
+<p>$$Y = 
+\begin{bmatrix}
+    5 &amp; 5 &amp; 0 &amp; 0  \newline
+    4 &amp;&#160;? &amp;&#160;? &amp; 0  \newline
+    0 &amp; 0 &amp; 5 &amp; 4 \newline
+    0 &amp; 0 &amp; 5 &amp; 0 \newline
+\end{bmatrix}, \quad
+ \mu = 
+\begin{bmatrix}
+    2.5 \newline
+    2  \newline
+    2.25 \newline
+    1.25 \newline
+\end{bmatrix}
+$$</p>
+<p>The resulting $$Y'$$ vector is:</p>
+<p>$$ Y' =
+\begin{bmatrix}
+  2.5    &amp; 2.5   &amp; -2.5 &amp; -2.5 \newline
+  2      &amp;&#160;?     &amp;&#160;?    &amp; -2 \newline
+  -.2.25 &amp; -2.25 &amp; 3.75 &amp; 1.25 \newline
+  -1.25  &amp; -1.25 &amp; 3.75 &amp; -1.25
+\end{bmatrix}
+$$</p>
+<p>Now we must slightly modify the linear regression prediction to include the mean normalization term:</p>
+<p>$$(\theta^{(j)})^T x^{(i)} + \mu&#95;i$$</p>
+<p>Now, for a new user, the initial predicted values will be equal to the $$\mu$$ term instead of simply being initialized to zero, which is more accurate.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Large_Scale_Machine_Learning" title="ML:Large Scale Machine Learning">Large Scale Machine Learning</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Recommender_Systems&amp;oldid=33029">https://share.coursera.org/wiki/index.php?title=ML:Recommender_Systems&amp;oldid=33029</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

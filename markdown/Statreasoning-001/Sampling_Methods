@@ -1,0 +1,17 @@
+Link to the course's [[Statreasoning-001:Main|Main Page]]
+
+#Convenience sampling
+
+The sample is convenient to the investigator, whether students in the investigator's class, patients in the investigator's practice, or fellow faculty members at the investigator's university. 
+
+#Respondent driven sampling
+
+The respondent chooses whether to be in the [[Statreasoning-001:Sample|sample]], often by responding to an advertisement or a mailed survey. 
+
+#Simple random sampling
+
+During **simple random sampling** every possible subsample of size *n* from a [[Statreasoning-001:Population|population]] is equally likely to be selected. A [[Statreasoning-001:Sample|sample]] that was randomly selected from a [[Statreasoning-001:Population|population]] should - albeit imperfectly - resemble that [[Statreasoning-001:Population|population]].
+
+#Stratified random sampling
+
+During **stratified random sampling**, the participants in the sample are chosen randomly within their strata, but the number of participants per strata is fixed in advance. The number per strata is either proportional to the strata in the [[Statreasoning-001:Population|population]] or weighting factors must be used to adjust the [[Statreasoning-001:Sample|sample]] to the [[Statreasoning-001:Population|population]].

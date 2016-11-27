@@ -1,0 +1,37 @@
+## Module 5: Linear Filters - note sharing
+
+This page is for sharing notes about, and discuss, "Module 5: Linear Filters" of the [Digital Signal Processing](https://class.coursera.org/dsp-001/class/index) course.
+
+### linear time-invariant systems, convolution
+
+
+### ideal and realizable filters
+
+
+### filter design and implementation
+
+
+### examples
+
+#### running numerical example «Real-time audio processing in C++» on Linux
+
+Original page: https://class.coursera.org/dsp-001/wiki/view?page=RTproc
+
+Here is working source (you can diff it with original source): https://dl.dropbox.com/u/937480/rtproc.tar.bz2
+Added CMake configuration and some functions' implementation for Linux, removed all VS stuff. This version uses distro's portaudio library, not internal.
+
+Steps to compile:
+
+  1. Install portaudio development files. For Ubuntu it can be done with `apt-get install portaudio19-dev`
+  2. Install if needed cmake and run `cmake .` in project folder
+  3. Run `make`
+
+After that you should have compiled `rtproc` binary and you can run app with `./rtproc` in project folder.
+
+All should be working now: app reads stream from your mic, applies selected effect and plays to speaker.
+
+### Back
+
+Back to the main note sharing page for the Digital Communications System course
+
+https://share.coursera.org/wiki/index.php/DigitalSignalProcessing:Main

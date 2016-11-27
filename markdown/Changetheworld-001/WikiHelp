@@ -1,0 +1,99 @@
+[[Category:How to change the world]]
+
+## Getting Started
+Wiki is for viewing.
+But if you want to change the page that you're viewing, you can.
+
+There is an "Edit" tab near the top right on your page.
+Click on it and you'll be in Edit mode.
+When you're in Edit mode, you'll see a box that have texts on it.
+I'll call it the Edit Window.
+It is empty if you've started a new page.
+You can type your text in it so that they'll show up later in your page.
+
+There are some rules that some special sequence of characters will affect the formatting of the final display.
+I'll explain them to you in the following sections.
+But before that, you have to know how to '''exit''' from the Edit mode.
+
+In Edit mode, you'll see there are 3 buttons near the end of your page.
+There are also the words ''Cancel'' and ''Editing help'' on the same line.
+The 3 buttons are '''Save Page''', '''Show preview''', and '''Show changes'''.
+You only need to know only the followings to get by:
+* '''Cancel''' is to forget all your changes, exit Edit mode and go back to viewing your page.
+* '''Show preview''' shows you how the effect of your editing will look like without saving it yet.
+* '''Save page''' is to commit your change made in your Edit window. Make sure you preview your change before saving.
+
+## Learn the basics in 20 minutes
+
+### How to make a paragraph
+Paragraphs are separated by '''empty lines'''.
+If what you type are not separate by empty lines,
+they are grouped together into a paragraph.
+So just put you sentences as normal
+and put in a empty line when you want to separate them into paragraphs.
+
+Test out how to make a paragraph '''[[Changetheworld-001:WikiHelp:Paragraph | here]]'''.
+(Click on the preceding word "here" to start testing.)
+
+### How to make a list
+You just put an asterisk ('''*'''), a plus sign ('''+'''), or a hyphen ('''-''') at the beginning of a line.
+Then you have one item of the list.
+I usually use asterisk.
+But it's your choice.
+Put a few lines starting with asterisks together.
+You get a list.
+
+Test out how to make a list '''[[Changetheworld-001:WikiHelp:List | here]]'''.
+
+### How to put in a Heading
+Heading starts with one or more hash sign ('''#''') at the beginning of the line.
+The top level Heading starts with one hash sign.
+The second level Heading starts with two hash signs and so on.
+
+Headings with different levels affect how the whole Wiki page displays.
+Make sure you put in the correct number of hashes on the Heading lines.
+
+Test out how to make a Heading '''[[Changetheworld-001:WikiHelp:Heading | here]]'''.
+
+### How to put in a web-link
+Web-link is the string starts with '''http://''' or '''https://''' that refers to a webpage.
+We call that string '''URL'''.
+
+In Edit mode, you put the link inside square brackets i.e. '''[''your link here'']''' anywhere inside your text.
+It can be part of a sentences.
+It can be inside an item of a list.
+After you exit Edit mode,
+when people click on the web-link, their browsers will bring them to that webpage.
+
+In the Edit Window, the link can have 2 components.
+A URL follows by a string to identify it.
+
+Test out how to make a web-link '''[[Changetheworld-001:WikiHelp:Link | here]]'''.
+
+
+### How to start a new Wiki page
+You make a special web-link, using the syntax
+'''\[\[Changetheworld-001:''your new page''\]\]'''.
+After you save the change or look at your page in preview,
+you'll see that link colored red.
+If you see the link is blue of some other color,
+the link already exits and you have choose another name.
+
+When you click on the new link, you'll be dropped into Edit mode to start editing the new page.
+
+'''Caution''': 
+We have to follow some naming convention when creating Wiki pages.
+See how other Wiki pages are named and follows the same convention.
+
+## To learn more
+Remember at in the ''Getting Started'' section above
+I mentioned '''Editing help''' that is on the same row as ''Save page'' near the bottom of your page.
+You can find more help there.
+
+But the easiest way to learn is to go to any page in this Wiki,
+enter Edit mode and '''see how other people edit''' the page.
+Copy their techniques.
+Don't worry too much if your formatting is not perfect.
+As long as you put your stuff there and don't delete other people's content,
+somebody can fix the formatting for you when they see it.
+Use the preview button to see what you've changed before saving it.

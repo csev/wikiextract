@@ -1,0 +1,84 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Algo1:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<p>Welcome to the Algorithms Part 1 wiki page
+If you've recently solved a tough installation issue or gotten helpful advice about a review question, programming exercise, or the video lectures, please take some time to help out your fellow classmates by writing about it in the appropriate wiki page.
+Feel free to create pages as needed. To see how to edit or create a page, see "Help" on the left navbar.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Algorithms_Part_1"><span class="tocnumber">1</span> <span class="toctext">Algorithms Part 1</span></a></li>
+<li class="toclevel-1"><a href="#Course_Information"><span class="tocnumber">2</span> <span class="toctext">Course Information</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">3</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">3.1</span> <span class="toctext">Week 1</span></a></li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">3.2</span> <span class="toctext">Week 2</span></a></li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">3.3</span> <span class="toctext">Week 3</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Algorithm_Design_Principles"><span class="tocnumber">4</span> <span class="toctext">Algorithm Design Principles</span></a></li>
+<li class="toclevel-1"><a href="#Online_References"><span class="tocnumber">5</span> <span class="toctext">Online References</span></a></li>
+<li class="toclevel-1"><a href="#Just_For_Fun"><span class="tocnumber">6</span> <span class="toctext">Just For Fun</span></a></li>
+<li class="toclevel-1"><a href="#Programming_Assignment_Sample_Data"><span class="tocnumber">7</span> <span class="toctext">Programming Assignment Sample Data</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1_2"><span class="tocnumber">7.1</span> <span class="toctext">Week 1</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Algorithms_Part_1">Algorithms Part 1</span></h1>
+<p>by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/~214">Tim Roughgarden</a>. His Stanford <a rel="nofollow" class="external text" href="http://theory.stanford.edu/~tim/">page</a></p>
+<p><a rel="nofollow" class="external text" href="https://www.coursera.org/course/algo">Course Home Page</a> and full course <a rel="nofollow" class="external text" href="https://class.coursera.org/algo-004/lecture/preview">videos</a></p>
+<h1> <span class="mw-headline" id="Course_Information">Course Information</span></h1>
+<p>This course is at an undergraduate level, likely situated in third or fourth year. Students should feel programming language concepts, including recursion, as well as proof techniques, including induction.</p>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<h3> <span class="mw-headline" id="Week_1"><a href="/wiki/index.php/Algo1:Week1" title="Algo1:Week1">Week 1</a></span></h3>
+<p>Introduction. Asymptotic analysis including big-oh notation. Divide-and-conquer algorithms for sorting, counting inversions, matrix multiplication, and closest pair.</p>
+<h3> <span class="mw-headline" id="Week_2"><a href="/wiki/index.php/Algo1:Week2" title="Algo1:Week2">Week 2</a></span></h3>
+<p>Running time analysis of divide-and-conquer algorithms. The master method. Introduction to randomized algorithms, with a probability review. QuickSort.</p>
+<h3> <span class="mw-headline" id="Week_3"><a href="/wiki/index.php/Algo1:Week3" title="Algo1:Week3">Week 3</a></span></h3>
+<p>More on randomized algorithms and probability. Computing the median in linear time. A randomized algorithm for the minimum graph cut problem.</p>
+<h1> <span class="mw-headline" id="Algorithm_Design_Principles"><a href="/wiki/index.php/Algo1:DesignPrinciples" title="Algo1:DesignPrinciples">Algorithm Design Principles</a></span></h1>
+<p>Every algorithm developer should have a toolbox from which to construct algorithms.</p>
+<h1> <span class="mw-headline" id="Online_References">Online References</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://algs4.cs.princeton.edu/home/">Algorithms</a> by Sedgewick and Wayne</li>
+<li><a rel="nofollow" class="external text" href="http://algs4.cs.princeton.edu/code/">Java Algorithm Library</a> provided by Sedgewick and Wayne</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.princeton.edu/courses/archive/spr10/cos433/mathcs.pdf">Mathematics for Computer Science</a> by Lehman and Leighton</li>
+<li><a rel="nofollow" class="external text" href="http://beust.com/algorithms.pdf">Algorithms</a> by Dasgupta, Papadimitriou and Vazirani</li>
+<li><a rel="nofollow" class="external text" href="http://algo2.iti.kit.edu/sanders/manuscript.pdf">Algorithms and Data Structures</a> by Mehlhorn and Sanders</li>
+<li><a rel="nofollow" class="external text" href="http://infolab.stanford.edu/~ullman/focs.html">Foundations of Computer Science</a> by Aho and Ullman</li>
+<li><a rel="nofollow" class="external text" href="https://www.coursera.org/courses?orderby=upcoming&amp;search=Algorithm">Coursera Algorithm Catalog</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.coursetalk.com/search/#filter_tab=all&amp;sort=-rating&amp;q=Algorithm">Algorithm MOOCs</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/List_of_algorithms">List of Algorithms</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Just_For_Fun">Just For Fun</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=ywWBy6J5gz8">Quick Sort</a> via Hungarian folk dancers. If only sub-sorts were in parallel!</li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=CmPA7zE8mx0">Shell Sort</a> via Hungarian folk dancers.</li>
+</ul>
+<h1> <span class="mw-headline" id="Programming_Assignment_Sample_Data">Programming Assignment Sample Data</span></h1>
+<h3> <span class="mw-headline" id="Week_1_2">Week 1</span></h3>
+<p><strong>For Unix users</strong>: It might be necessary to run dos2unix on the input file provided after clicking "Attempt Homework". The test case file here works just fine as it is.</p>
+<p><a rel="nofollow" class="external text" href="https://gist.github.com/raw/4653745/d75f5315b48d6b32df96e29c68e6931012981731/gistfile1.txt">Test case</a> - Solution: 2507223936</p>
+<p>To check if your program is getting input right the sumtotal of the values is 5000050000.</p>
+<p><em>Please note that this is</em> <strong>NOT</strong> <em>the solution to the assignment. It is a different similar file (and its solution) on which to test your code before submitting.</em></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Algo1:Main&amp;oldid=33517">https://share.coursera.org/wiki/index.php?title=Algo1:Main&amp;oldid=33517</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php?title=Category:Algorithms&amp;action=edit&amp;redlink=1" class="new" title="Category:Algorithms (page does not exist)">Algorithms</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

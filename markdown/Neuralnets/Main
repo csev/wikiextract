@@ -1,0 +1,34 @@
+Welcome to the wiki page.
+
+This wiki will be collaboratively created by students in Prof Geoffey Hinton's Neural Networks for Machine Learning course (Fall 2012).
+
+Feel free to create pages as needed. To see how to edit or create a page, see "Help" on the left navbar.
+
+[[ Lecture 2a - An overview of the main types of neural network architecture ]]
+
+[[ Lecture 2b - Perceptrons: The first generation of neural networks ]]
+
+[[ Lecture 2c - A geometrical view of perceptrons ]]
+
+[[ Lecture 2d - Why the learning works ]]
+
+[[ Lecture 2e - What perceptrons can’t do ]]
+
+[[Lecture 4c - A quick note on the cross-entropy and derivative of a softmax unit]]
+
+[[Lecture 13b - The math of Sigmoid Belief Networks]]
+
+[[Lectures 1-14 in one file]]
+
+# Online Books
+* [ E-Book Directory ](http://www.e-booksdirectory.com/listing.php?category=285)
+* [ Learning Deep Architectures for AI - Yoshua Bengio ](http://www.iro.umontreal.ca/~bengioy/papers/ftml.pdf)
+
+
+# Local Links
+* [ Machine Learning Class Wiki ](https://share.coursera.org/wiki/index.php/ML:Main)
+
+
+# External resources
+
+* [[Neuralnets:External Resources]] for Neural Networks for Machine Learning

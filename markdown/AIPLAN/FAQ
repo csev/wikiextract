@@ -1,0 +1,40 @@
+[[Category:Artificial Intelligence Planning|faq]]
+To assist in clearer communications this page can only be edited by the course instructors.  Please raise questions on the course forum and general ones will be identified and answered here if necessary.
+
+###Will I get a certificate after completing this class?###
+
+Students who successfully complete the class will be offered a Statement of Accomplishment signed by the instructors.
+
+###Do I earn University of Edinburgh credits upon completion of this class?###
+
+The Statement of Accomplishment is not part of a formal qualification from the University of Edinburgh. However, it may be useful to demonstrate prior learning and interest in your subject to a higher education institution or potential employer. 
+
+###What resources will I need for this class?###
+
+Nothing is required, but if you want to try out implementing some of the algorithms described in the lectures you'll need access to a programming environment. No specific programming language is required. You may use any programming language that you feel is appropriate for the programming assignments. Also, you may want to download existing planners and try those out. This may require you to compile them first. 
+
+###What is the coolest thing I'll learn if I take this class?###
+
+In this class you will learn the basic algorithms that are used in robots to deliberate over a course of actions to take. Simpler, reactive robots don't need this, but if a robot is to act intelligently, this type of reasoning about actions is vital. 
+
+###Can I contact the course lecturers directly?###
+
+You will appreciate that such direct contact would be difficult to manage. You are encouraged to use the course social network and discussion forum to raise questions and seek inputs. The tutors will participate in the forums, and will seek to answer frequently asked questions, in some cases by adding to the course FAQ area. 
+
+###What Twitter hash tag should I use?###
+
+Use the hash tag [#aiplan][1] for tweets about the course. The course team Twitter username is [@aiplanner][2]
+
+###How come this is free?###
+
+We are passionate about open on-line collaboration and education. Our taught AI planning course at Edinburgh has always published its course materials, readings and resources on-line for anyone to view. Our own on-campus students can access these materials at times when the course is not available if it is relevant to their interests and projects. We want to make the materials available in a more accessible form that can reach a broader audience who might be interested in AI planning technology. This achieves our primary objective of getting such technology into productive use. Another benefit for us is that more people get to know about courses in AI in the School of Informatics at the University of Edinburgh, or get interested in studying or collaborating with us. 
+
+###When will the course run again?###
+
+The 2015 session is the final time this course runs as a Coursera MOOC, but we intend to leave the course and materials available for self study by current and new participants at any time and leave the community wiki open for further study and use across course instances.
+
+
+  [1]: https://twitter.com/search?q=%23aiplan
+  [2]: https://twitter.com/aiplanner
+
+###Categories

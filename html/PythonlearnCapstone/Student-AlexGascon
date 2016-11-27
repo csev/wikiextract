@@ -1,0 +1,25 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PythonlearnCapstone:Student-AlexGascon</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h2> <span class="mw-headline" id="Week_3_project:_Identifying_a_Data_source">Week 3 project: Identifying a Data source</span></h2>
+<p>I've been a huge Pokémon fan since I was a child, so when I found this dataset <a rel="nofollow" class="external free" href="https://www.kaggle.com/abcsds/pokemon">https://www.kaggle.com/abcsds/pokemon</a> I instantly knew that I had to do something with it.</p>
+<p>I'm planning on focusing in a Data Visualization project. The first thing I want to do is to plot each Pokémon type according to the stats of its Pokémon, so we can easily see how the different types affect the stats. Then, if I still have time left, I'm planning on trying to use this stats to make an algorithm that can classify (or even predict!) the most adequate battling strategy for a Pokémon according to its stats (i.e. if it has high attack and speed, it should clearly be an attacker; if it has a huge defense and good HP, he may be a good defender).</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-AlexGascon&amp;oldid=34374">https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-AlexGascon&amp;oldid=34374</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

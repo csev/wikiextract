@@ -1,0 +1,241 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Welcome to the ML wiki page!</p>
+<p>If you've recently solved a tough installation issue or gotten helpful advice about a review question, programming exercise, or the video lectures, please take some time to help out your fellow classmates by writing about it in the appropriate wiki page.</p>
+<p>Feel free to create pages as needed. To see how to edit or create a page, see "Help" on the left navbar.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Course_Information"><span class="tocnumber">1</span> <span class="toctext">Course Information</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">2</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">2.1</span> <span class="toctext">Week 1</span></a></li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">2.2</span> <span class="toctext">Week 2</span></a></li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">2.3</span> <span class="toctext">Week 3</span></a></li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">2.4</span> <span class="toctext">Week 4</span></a></li>
+<li class="toclevel-2"><a href="#Week_5"><span class="tocnumber">2.5</span> <span class="toctext">Week 5</span></a></li>
+<li class="toclevel-2"><a href="#Week_6"><span class="tocnumber">2.6</span> <span class="toctext">Week 6</span></a></li>
+<li class="toclevel-2"><a href="#Week_7"><span class="tocnumber">2.7</span> <span class="toctext">Week 7</span></a></li>
+<li class="toclevel-2"><a href="#Week_8"><span class="tocnumber">2.8</span> <span class="toctext">Week 8</span></a></li>
+<li class="toclevel-2"><a href="#Week_9"><span class="tocnumber">2.9</span> <span class="toctext">Week 9</span></a></li>
+<li class="toclevel-2"><a href="#Week_10"><span class="tocnumber">2.10</span> <span class="toctext">Week 10</span></a></li>
+<li class="toclevel-2"><a href="#Transcripts_of_selected_video_lectures"><span class="tocnumber">2.11</span> <span class="toctext">Transcripts of selected video lectures</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Errata"><span class="tocnumber">3</span> <span class="toctext">Errata</span></a></li>
+<li class="toclevel-1"><a href="#Review_Questions_.28Quizzes.29"><span class="tocnumber">4</span> <span class="toctext">Review Questions (Quizzes)</span></a></li>
+<li class="toclevel-1"><a href="#Programming_Exercises"><span class="tocnumber">5</span> <span class="toctext">Programming Exercises</span></a></li>
+<li class="toclevel-1"><a href="#Installation_Issues"><span class="tocnumber">6</span> <span class="toctext">Installation Issues</span></a></li>
+<li class="toclevel-1"><a href="#Useful_resources_for_further_study"><span class="tocnumber">7</span> <span class="toctext">Useful resources for further study</span></a></li>
+<li class="toclevel-1"><a href="#Insights"><span class="tocnumber">8</span> <span class="toctext">Insights</span></a></li>
+<li class="toclevel-1"><a href="#Subtitles"><span class="tocnumber">9</span> <span class="toctext">Subtitles</span></a></li>
+<li class="toclevel-1"><a href="#Tips_for_Octave_on_OS_X"><span class="tocnumber">10</span> <span class="toctext">Tips for Octave on OS X</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Try_installing_a_later_version_of_Octave_than_the_one_recommended_on_the_course_content_.283.8.0.29."><span class="tocnumber">10.1</span> <span class="toctext">Try installing a later version of Octave than the one recommended on the course content (3.8.0).</span></a></li>
+<li class="toclevel-2"><a href="#Error_message_.22unknown_or_ambiguous_terminal_type.22"><span class="tocnumber">10.2</span> <span class="toctext">Error message "unknown or ambiguous terminal type"</span></a></li>
+<li class="toclevel-2"><a href="#The_hist.28.29_or_plot_.28.29_function_hangs"><span class="tocnumber">10.3</span> <span class="toctext">The hist() or plot () function hangs</span></a></li>
+<li class="toclevel-2"><a href="#Errors_when_editing_ex1_.22plotData.m.22"><span class="tocnumber">10.4</span> <span class="toctext">Errors when editing ex1 "plotData.m"</span></a></li>
+<li class="toclevel-2"><a href="#Try_Using_Vagrant_and_Virtualbox"><span class="tocnumber">10.5</span> <span class="toctext">Try Using Vagrant and Virtualbox</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">11</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Course_Information">Course Information</span></h2>
+<p>This course is at an undergraduate level, likely situated in second or third year. The only major prerequisite is experience with at least one programming language. Octave and MATLAB are easily learned if you have programming experience. If not, plan to spend some extra time on the programming exercises. The course is not math-intensive, and all methods that use calculus are explained through use of "intuitions" for the non-expert.</p>
+<h2> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h2>
+<p>Different students have different learning styles, and having written notes to accompany the video lectures will be very useful to students who prefer learning by reading. Contributing to these notes will help those students, and will also help you internalize what you just learned!</p>
+<p>This paragraph formerly had a link to a set of lecture videos and presentation slides, from the original version of this course. But Coursera deleted all of the old course materials on June 30, 2016. So the lecture slides are no longer available.</p>
+<h3> <span class="mw-headline" id="Week_1">Week 1</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Introduction" title="ML:Introduction">Introduction</a></li>
+<li><a href="/wiki/index.php/ML:Linear_Regression_with_One_Variable" title="ML:Linear Regression with One Variable">Linear Regression with One Variable</a></li>
+<li><a href="/wiki/index.php/ML:Gradient_Descent" title="ML:Gradient Descent">Gradient Descent</a></li>
+<li><a href="/wiki/index.php/ML:Linear_Algebra_Review" title="ML:Linear Algebra Review">Linear Algebra Review (Optional)</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_2">Week 2</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Linear_Regression_with_Multiple_Variables" title="ML:Linear Regression with Multiple Variables">Linear Regression with Multiple Variables</a></li>
+<li><a href="/wiki/index.php/ML:Octave_Tutorial" title="ML:Octave Tutorial">Octave Tutorial</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_3">Week 3</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Logistic_Regression" title="ML:Logistic Regression">Logistic Regression</a></li>
+<li><a href="/wiki/index.php/ML:Regularization" title="ML:Regularization">Regularization</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_4">Week 4</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Neural_Networks:_Representation" title="ML:Neural Networks: Representation">Neural Networks: Representation</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_5">Week 5</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Neural_Networks:_Learning" title="ML:Neural Networks: Learning">Neural Networks: Learning</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_6">Week 6</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Advice_for_Applying_Machine_Learning" title="ML:Advice for Applying Machine Learning">Advice for Applying Machine Learning</a></li>
+<li><a href="/wiki/index.php/ML:Machine_Learning_System_Design" title="ML:Machine Learning System Design">Machine Learning System Design</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_7">Week 7</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Support_Vector_Machines_(SVMs)" title="ML:Support Vector Machines (SVMs)">Support Vector Machines (SVMs)</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_8">Week 8</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Clustering" title="ML:Clustering">Clustering</a></li>
+<li><a href="/wiki/index.php/ML:Dimensionality_Reduction" title="ML:Dimensionality Reduction">Dimensionality Reduction</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_9">Week 9</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Anomaly_Detection" title="ML:Anomaly Detection">Anomaly Detection</a></li>
+<li><a href="/wiki/index.php/ML:Recommender_Systems" title="ML:Recommender Systems">Recommender Systems</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_10">Week 10</span></h3>
+<ul>
+<li><a href="/wiki/index.php/ML:Large_Scale_Machine_Learning" title="ML:Large Scale Machine Learning">Large Scale Machine Learning</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Transcripts_of_selected_video_lectures">Transcripts of selected video lectures</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://dl.dropboxusercontent.com/u/9722274/Monografias/OctTutV1b.pdf">Octave Tutorial <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span></a>, Andrew Ng, transcript written by Jose Soares Augusto, May 2012.</li>
+<li><a rel="nofollow" class="external text" href="https://dl.dropboxusercontent.com/u/9722274/Monografias/NN1.pdf">Neural Networks <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span></a>, Andrew Ng, transcript written by Jose Soares Augusto, June 2012.</li>
+<li><a rel="nofollow" class="external text" href="https://dl.dropboxusercontent.com/u/9722274/Monografias/SVM.pdf">Support Vector Machines (SVM) <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span></a>, Andrew Ng, transcript written by Jose Soares Augusto, June 2012.</li>
+<li><a rel="nofollow" class="external text" href="https://dl.dropboxusercontent.com/u/9722274/Monografias/KM1.pdf">K-Means Clustering <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span></a>, Andrew Ng, transcript written by Jose Soares Augusto, June 2012.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Errata">Errata</span></h2>
+<ul>
+<li><a href="/wiki/index.php/ML:Errata:_Week_1" title="ML:Errata: Week 1">Week 1 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_2" title="ML:Errata: Week 2">Week 2 and ex1 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_3" title="ML:Errata: Week 3">Week 3 and ex2 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_4" title="ML:Errata: Week 4">Week 4 and ex3 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_5" title="ML:Errata: Week 5">Week 5 and ex4 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_6" title="ML:Errata: Week 6">Week 6 and ex5 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_7" title="ML:Errata: Week 7">Week 7 and ex6 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_8" title="ML:Errata: Week 8">Week 8 and ex7 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_9" title="ML:Errata: Week 9">Week 9 and ex8 Errata</a></li>
+<li><a href="/wiki/index.php/ML:Errata:_Week_10" title="ML:Errata: Week 10">Week 10 Errata</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Review_Questions_.28Quizzes.29">Review Questions (Quizzes)</span></h2>
+<p>Stuck on a question's wording? Without giving away the answers, help out your classmates by clarifying things on these pages.</p>
+<ul>
+<li><a href="/wiki/index.php/ML:Review_Questions:_Introduction" title="ML:Review Questions: Introduction">Introduction</a></li>
+<li><a href="/wiki/index.php/ML:Review_Questions:_Linear_Regression_with_One_Variable" title="ML:Review Questions: Linear Regression with One Variable">Linear Regression with One Variable</a></li>
+<li><a href="/wiki/index.php/ML:Review_Questions:_Linear_Algebra_Review" title="ML:Review Questions: Linear Algebra Review">Linear Algebra Review</a></li>
+<li><a href="/wiki/index.php/ML:Review_Questions:_Linear_Regression_with_Multiple_Variables" title="ML:Review Questions: Linear Regression with Multiple Variables">Linear Regression with Multiple Variables</a></li>
+<li><a href="/wiki/index.php?title=ML:Review_Questions:_Support_Vector_Machines&amp;action=edit&amp;redlink=1" class="new" title="ML:Review Questions: Support Vector Machines (page does not exist)">Support Vector Machines</a></li>
+<li><a href="/wiki/index.php?title=ML:Review_Questions:_Octave_Tutorial&amp;action=edit&amp;redlink=1" class="new" title="ML:Review Questions: Octave Tutorial (page does not exist)">Octave Tutorial</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Programming_Exercises">Programming Exercises</span></h2>
+<p>Did you figure out an installation issue, or solve a tricky part of the exercise? Tell your classmates about it here!</p>
+<p>Note: You absolutely must use a text editor to modify the .m files (such as Notepad). Do not use a word processor (such as WordPad).</p>
+<ul>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_1:Linear_Regression" title="ML:Programming Exercise 1:Linear Regression">Programming Exercise 1: Linear Regression</a></li>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_2:Logistic_Regression" title="ML:Programming Exercise 2:Logistic Regression">Programming Exercise 2: Logistic Regression</a></li>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_3:Multi-class_Classification_and_Neural_Networks" title="ML:Programming Exercise 3:Multi-class Classification and Neural Networks">Programming Exercise 3: Multi-class Classification and Neural Networks</a></li>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_4:Neural_Networks_Learning" title="ML:Programming Exercise 4:Neural Networks Learning">Programming Exercise 4: Neural Networks Learning</a></li>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_5:Regularized_Linear_Regression_and_Bias_vs_Variance" title="ML:Programming Exercise 5:Regularized Linear Regression and Bias vs Variance">Programming Exercise 5: Regularized Linear Regression and Bias vs Variance</a></li>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_6:Support_Vector_Machines" title="ML:Programming Exercise 6:Support Vector Machines">Programming Exercise 6: Support Vector Machines</a></li>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_7:K-Means_Clustering_and_PCA" title="ML:Programming Exercise 7:K-Means Clustering and PCA">Programming Exercise 7: K-Means Clustering and PCA</a></li>
+<li><a href="/wiki/index.php/ML:Programming_Exercise_8:Anomaly_Detection_and_Recommender_Systems" title="ML:Programming Exercise 8:Anomaly Detection and Recommender Systems">Programming Exercise 8: Anomaly Detection and Recommender Systems</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Installation_Issues">Installation Issues</span></h2>
+<ul>
+<li><a href="/wiki/index.php/ML:Octave_Installation" title="ML:Octave Installation">Octave Installation</a></li>
+<li><a href="/wiki/index.php/ML:Technical_Support" title="ML:Technical Support">Watching the videos</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Useful_resources_for_further_study">Useful resources for further study</span></h2>
+<ul>
+<li><a href="/wiki/index.php/ML:Useful_Resources" title="ML:Useful Resources">Useful Resources</a></li>
+<li><a href="/wiki/index.php/ML:Classify_your_own_images" title="ML:Classify your own images">Classify your own images</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Insights">Insights</span></h2>
+<ul>
+<li><a href="/wiki/index.php/Initial_Ones_Feature_Vector" title="Initial Ones Feature Vector">Initial Ones Feature Vector</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Subtitles">Subtitles</span></h2>
+<ul>
+<li><a href="/wiki/index.php/ML:Subtitles" title="ML:Subtitles">ML:Subtitles</a></li>
+<li><a href="/wiki/index.php/ML:Trailer" title="ML:Trailer">ML:Trailer</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Tips_for_Octave_on_OS_X">Tips for Octave on OS X</span></h2>
+<h3> <span class="mw-headline" id="Try_installing_a_later_version_of_Octave_than_the_one_recommended_on_the_course_content_.283.8.0.29.">Try installing a later version of Octave than the one recommended on the course content (3.8.0).</span></h3>
+<p><a rel="nofollow" class="external free" href="http://wiki.octave.org/Octave_for_MacOS_X">http://wiki.octave.org/Octave_for_MacOS_X</a>. Under "Installing a Mac OS X Bundle," you can click on "download Octave 4.0.3 with Graphical User Interface."</p>
+<h3> <span class="mw-headline" id="Error_message_.22unknown_or_ambiguous_terminal_type.22">Error message "unknown or ambiguous terminal type"</span></h3>
+<p>A) Try changing the terminal type with this command, for any of "qt", "x11", or "aqua":</p>
+<code><pre>setenv(&quot;GNUTERM&quot;,&quot;qt&quot;)
+</pre></code>
+<p>Alternatively you can install the AquaTerm backend from SourceForge:
+<a rel="nofollow" class="external free" href="http://sourceforge.net/projects/aquaterm/">http://sourceforge.net/projects/aquaterm/</a></p>
+<p>and then reinstalling GNUplot with Aqua terminal support:</p>
+<code><pre>brew uninstall gnuplot
+brew install gnuplot --with-aquaterm
+</pre></code>
+<p>B) You may also try this:</p>
+<code><pre>brew uninstall fontconfig
+brew install fontconfig --universal
+brew uninstall gnuplot
+brew install gnuplot --with-qt
+</pre></code>
+<p>... then add this to ~/.octaverc</p>
+<code><pre>setenv(&quot;GNUTERM&quot;,&quot;qt&quot;)
+</pre></code>
+<h3> <span class="mw-headline" id="The_hist.28.29_or_plot_.28.29_function_hangs">The hist() or plot () function hangs</span></h3>
+<p>It's not really hung - on some distributions of Octave, the first plotting function you call causes the font library to generated. This can take a minute or so the first time, then after that the plotting functions will work much faster.</p>
+<p>Alternatively if Octave still does not respond after some time, you may have to change your fontconfig. I also installed gnuplot with-x11 and changed the file octaverc. These are the terminal commands:</p>
+<code><pre>brew install fltk
+brew install gnuplot --with-x11
+brew uninstall fontconfig
+brew install fontconfig --universal
+
+then edit /usr/local/share/octave/site/m/startup/octaverc , put this in the file
+</pre></code>
+<p>-------- (start copy) --------</p>
+<code><pre>setenv (&quot;GNUTERM&quot;, &quot;X11&quot;)
+gnuplot_binary(&quot;/usr/local/bin/gnuplot&quot;)
+graphics_toolkit('gnuplot')
+</pre></code>
+<p>-------- (end copy) --------</p>
+<p>save the file and start octave</p>
+<p>verify by running:</p>
+<code><pre>available_graphics_toolkits       &#160;% this will show the available graphics toolkits that can be loaded
+loaded_graphics_toolkits          &#160;% this will show the graphics toolkit that is currently loaded
+</pre></code>
+<p>other useful command examples:</p>
+<code><pre>register_graphics_toolkit(&quot;fltk&quot;) &#160;% this will add the fltk graphics toolkit to the available graphics toolkits list
+graphics_toolkit(&quot;qt&quot;)            &#160;% this will load the qt graphics toolkit
+</pre></code>
+<h3> <span class="mw-headline" id="Errors_when_editing_ex1_.22plotData.m.22">Errors when editing ex1 "plotData.m"</span></h3>
+<p>If you get an error like: </p>
+<code><pre>error: invalid character '�' (ASCII 226) near line 14, column 14
+</pre></code>
+<p>Then try to uncheck the TextEdit Preference - Smart quotes and Smart dashes; then use double quotes(") instead of single quotes(')</p>
+<h3> <span class="mw-headline" id="Try_Using_Vagrant_and_Virtualbox">Try Using Vagrant and Virtualbox</span></h3>
+<p>If you are using OS X (and some brands of Linux), you can have a lot of trouble getting the visualizations to work natively. One solution is to turn to virtualization; you can find a vagrant file that gets an ubuntu machine configured in virtual box, along with scripts to make this feel like a native OS X app here: 
+<a rel="nofollow" class="external free" href="http://deepneural.blogspot.fr/p/welcome.html">http://deepneural.blogspot.fr/p/welcome.html</a>
+Another script can be found here, but this one is just the Vagrant file and does not have all the nice OS X scripts bundled with it. 
+<a rel="nofollow" class="external free" href="https://gist.github.com/Starefossen/9353638">https://gist.github.com/Starefossen/9353638</a></p>
+<p>You'll additionally need virtualbox and vagrant to go down this route, which are thankfully both free. 
+<a rel="nofollow" class="external free" href="https://www.virtualbox.org">https://www.virtualbox.org</a>
+<a rel="nofollow" class="external free" href="https://www.vagrantup.com">https://www.vagrantup.com</a></p>
+<p>You'll need an X server, which you almost certainly are using in Linux already, but does not come out of the box with OS X.
+OS X users can get it here: <a rel="nofollow" class="external free" href="http://www.xquartz.org">http://www.xquartz.org</a></p>
+<h2> <span class="mw-headline" id="Categories">Categories</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 104/1000000
+Post-expand include size: 904/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Main&amp;oldid=34417">https://share.coursera.org/wiki/index.php?title=ML:Main&amp;oldid=34417</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:AI" title="Category:AI">AI</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:ML" title="Category:ML">ML</a></li><li><a href="/wiki/index.php/Category:Machine_Learning" title="Category:Machine Learning">Machine Learning</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

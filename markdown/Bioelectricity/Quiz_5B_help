@@ -1,0 +1,26 @@
+Q1: When you take multimeter and conect one probe to point before resistor $$R_1$$ and other one just next to first one, you get $$~0 V$$ voltage (remember voltage is differenec between potentials). 
+
+To solve part B you are plugging second probe to right electrode of resistor $$R_1$$ and measureing $$U_{R1}$$. For computing potential follow these steps:
+
+1. Compute I through capacitor path A as $$I_{cap} = C_m \frac{\partial Vm}{\partial x} \approx C_m \frac{\bigtriangleup Vm}{\bigtriangleup t} = C_m \frac{V_{m1} - V_{m2}}{\bigtriangleup t}$$, where $$V_{mi}$$ is membrane voltage and $$C_m$$ is membrane capacity.
+2. Compute membrane current as $$I_{mem} = I_{rez} + I_{cap}$$ where $$I_{rez}$$ is current through resistance path.
+3. Use Ohm's law to get voltage $$U_{R1} = I_{mem} R_{1}$$.
+4. And finally to get potential compute $$ \phi' = \phi -  U_{R1} = 0 - U_{R1}$$
+
+Alternatively it is possible to use voltage loops.
+
+----
+
+Q3: For computing specific membrane current use formula from videos $$I_{C} = \frac{V_{B} - 2 V_{C} + V_{D}}{R_i + R_e}$$
+
+----
+
+Q4: For part A try to draw another segment before segment A, name it maybe AA. This virtual AA segment supplies $$0 A$$,. To compute membrane current $$I_A$$ do:
+
+1. Compute intracellular current from AA as $$I_{iAA} = - \frac{V_A - V_B}{R_i + R_e}$$
+2. Extracellular current is $$I_{eA} = - I_{iA}$$
+3. Then compute $$ I_A = I_{AA} + I_{eA} = 0 + + I_{eA}$$, where $$I_{AA}$$ is membrane current of segment AA
+
+Use formula from Q3 to solve part B.
+
+----

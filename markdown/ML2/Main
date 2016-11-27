@@ -1,0 +1,18 @@
+Welcome to the ML2:Main wiki! This is a wiki set up for the second course in the University of Washington Machine Learning Specialization: [https://www.coursera.org/learn/ml-regression Machine Learning: Regression]
+
+## Helpful links
+* [https://github.com/learnml/machine-learning-specialization The specialization's official GitHub repository]
+
+    You can find the data sets and latest Jupyter notebooks there.
+
+* [https://dato.com/products/create/docs/index.html GraphLab Create API Documentation]
+
+    * [https://dato.com/products/create/docs/generated/graphlab.SFrame.html `graphlab.SFrame`]
+    * [https://dato.com/products/create/docs/generated/graphlab.SArray.html `graphlab.SArray`]
+
+* [http://docs.scipy.org/doc/numpy/reference/ NumPy Reference]
+* [http://docs.scipy.org/doc/numpy/user/ NumPy User Guide]
+* [[ML2:Errata|Errata]]
+
+## Course notes written by students
+* [https://github.com/Ezward/machinelearningnotes Ed Murphy's machinelearningnotes]

@@ -1,0 +1,127 @@
+[[Category:Coding the Matrix|Index]]
+Index for first printing of Coding the Matrix textbook (original index is incorrect)
+
+__bold__ page numbers indicate definition or introduction of a concept
+
+
+####Symbols####
+* $$\in$$ (set theory) __1__ 
+* $$\subseteq$$ (set theory) __1__
+* $$\mathbb{R}$$ (real space) __1__
+* $$\circ$$ (functional composition) 5
+* $$\mathbb C$$ (set of complex numbers) 
+####A####
+* absolute value __43__
+* affine combination 77, 131, __132__
+* affine space 130, __133__
+* audio records, comparison  91
+
+####B####
+* backward problem __4__
+  * and linear combinations 115
+####C####
+* cardinality __1__
+* cartesian product __1__
+* co-domain __2__
+* complex plane 42
+* computational problem __3__
+* containment (set theory) __1__
+* convex combination 76
+
+####D####
+* D-vector __64__
+* domain __2__
+* dot-product __87__
+
+####E####
+* Euler's formula __50__
+* event (probability) 10
+
+####F####
+* field 41
+* forward problem __4__
+  * and linear combinations 115
+* function __2__
+* Function Invertibility Theorem __8__
+* functional composition 5
+* functional inverse 6, __7__
+
+
+####G####
+* generator __119__
+  * standard generator 121
+* GF2 (Galois Field 2) __54__
+  * vectors over 81
+
+####H####
+Hamming codes 167
+
+####I####
+* identity function 5
+* image __2__
+
+####K####
+* kernel 175 
+
+####L####
+* linear combination __113__
+* linear equation __89__
+  * homogeneous linear equation 124
+* linear function __173__
+* linear system (system of linear equations)  __90__
+  * homogeneous linear system 125
+
+####M####
+* matrix 147
+  * as vectors, 153
+  * representations of 147-152
+* matrix-matrix multiplication 179
+* matrix-vector multiplication 154
+
+####N####
+
+* n-vector __63__
+* nonuniform distribution 10
+* norm __326__
+* null space __165__
+
+####O####
+
+* one-to-one (function) 7
+* onto (function) 7
+* orthogonal 328
+
+####P####
+
+* perfect secrecy (crypto) 12, __14__
+* probability 9
+* procedure __3__
+* Pythagorean theorem 43
+
+
+####S####
+
+* scalar-vector multiplication __70__
+* scaling __46__
+* set theory 1
+* Shrink-Algorithm Corollary 223
+* span  117 
+* Span Lemma  222
+* sparsity 65 
+ * subspace 128
+
+####T####
+* translation __44__
+* transposition __153__
+
+####U####
+* uniform distribution  9
+
+####V####
+
+* vector __63__
+  * k-sparse vector __65__
+* vector addition __67__
+* vector-matrix multiplication 154
+* vector space __127__
+  * properties of 126

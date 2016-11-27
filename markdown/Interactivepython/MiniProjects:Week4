@@ -1,0 +1,40 @@
+# Week 4 Mini-project
+## Pong
+<a href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=15">original source</a>
+
+In this project, we will build a version of <a href="http://en.wikipedia.org/wiki/Pong"> Pong</a>, one of the first arcade video games (1972).  While Pong is not particularly exciting compared to today's video games, Pong is relatively simple to build and provides a nice opportunity to work on the skills that you will need to build a game like <em>Asteroids</em>.  As usual, we have provided a <a href="http://www.codeskulptor.org/#examples-pong_template.py"> program template</a> that can be used to guide your development of Pong.
+### Mini-project development process ###
+
+1. Add code to <code>ball\_init</code> to start the ball in the middle of the table and give the ball a fixed velocity (for now).  Ignore the parameter <code>right</code> for now.
+1. Add code to the program template that draws a ball moving across the Pong table.  We recommend that you add the positional update for the ball to the draw handler.
+1. Modify your code such that the ball collides with and bounces off of the top and bottom walls.  Experiment with different hard-coded initial velocities to test your code.
+1. Add randomization to the velocity in <code>ball\_init(right)</code>  The velocity of the ball should be upwards and towards the right if <code>right == True</code> and upwards and towards the left if <code>right == False</code>.  The exact values for the horizontal and vertical components of this velocity should be generated using <code>random.randrange()</code>.  For the horizontal velocity, we suggest a speed of around <code>random.randrange(120, 240)</code> pixels per second.  For the vertical velocity, we suggest a speed of around <code>random.randrange(60, 180)</code> pixels per second.  (You will need to set the signs of speeds appropriately.)
+1. Add code that tests whether the ball touches/collides with the left and right gutters.  (Remember that the gutters are offset from the left and right edges of the canvas by the width of the paddle.)  When the ball touches a gutter, use <code>ball\_init(right)</code> to respawn the ball in the center of the table headed towards the opposite gutter.
+1. Next, add code that draws the left and right paddles in their respective gutters.  The vertical positions of these two paddles should depend on two global variables.  (In the template, the variables were <code>paddle1\_pos</code> and <code>paddle2\_pos</code>.)
+1. Add code that modifies the values of these vertical positions via an update in the draw handler.  The update should reference two global variables that contain the vertical velocities of the paddles. (In the template, the variables were <code>paddle1\_vel</code> and <code>paddle2\_vel</code>.)
+1. Update the values of these two vertical velocities using key handlers. The "w" and "s" keys should control the vertical velocity of the left paddle while the "Up arrow" and "Down arrow" key should control the velocity of the right paddle. In standard Pong, the left paddle moves up at a constant velocity if the "w" key is depressed and moves down at a constant velocity if the "s" is pressed and is motionless otherwise.  (The motion if both are pressed is up to you.) To achieve this effect, you will need to use both a keydown and a keyup handler to increase/decrease the vertical velocity in an appropriate manner.
+1. Restrict your paddles to stay entirely on the canvas by adding a check before you update the paddles' vertical position.
+1. Modify your collision code for the left and right gutters to check whether the ball is actually striking a paddle when it touches a gutter.  If so, reflect the ball back into play.  This collision model eliminates the possibility of the ball striking the edge of the paddle and greatly simplifies your collision/reflection code.
+1. To moderately increase the difficulty of your game, increase the velocity of the ball by 10% each time it strikes a paddle.
+1. Finally, add scoring to the game as shown in the Pong video lecture.  Each time the ball strikes the left or right gutter (but not a paddle), the opposite player receives a point and ball is respawned appropriately.
+
+Your final version of Pong should be remarkably similar to the original arcade Pong game.  Your full implementation should take around 100 lines with comments.
+
+### Grading Rubric  - 19 pts total (scaled to 100 pts) ###
+* 1 pt - The ball spawns in the middle of the canvas with a primarily upward and left/right velocity.  No credit if the ball only moves left or right. Bleh, that would be boring!
+* 2 pts - Ball bounces off of the top and bottom walls correctly. (1 pt each)
+* 2 pts - The ball respawns in the middle of the screen when it strikes the left/right gutter but not the paddles. (1 pt for each side)  Give credit for this item even if the ball hits the edge of the canvas instead of the gutter.
+* 1 pt - The left/right gutter is properly used as the edge of the table, instead of the edge of the canvas.
+* 1 pt - The ball spawns moving towards the player that won the last point.
+* 2 pts - The 'w' and 's' keys correctly control the velocity of the left paddle.  (1 pt if they control the position instead)
+* 2 pts - The up and down arrows keys correctly control the velocity of the right paddle.  (1 pt if they control the position instead)
+* 2 pts - The edge of each paddle is flush with the gutter.  (1 pt per paddle)
+* 2 pts - The paddles stay on the canvas at all times. (1 pt per paddle)
+* 2 pts - The ball correctly bounces off the left/right paddles. (1 pt per paddle)
+* 1 pt - The scoring text is positioned and updated appropriately.  The positioning need only approximate that in the video.
+* 1 pt - The game includes a "Restart" button that resets the score and relaunches the ball.
+
+---
+[[Interactivepython:MiniProjects|MiniProjects]]
+
+[[Interactivepython:Main|Main]]

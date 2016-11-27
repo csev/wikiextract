@@ -1,0 +1,79 @@
+[[Category:Probabilistic Graphical Models]]
+#Lecture Video Table of Contents
+###Pairwise Markov Networks
+<pre>
+0:24	Example
+1:50	General factor
+4:22	Unnormalized measure
+5:30	Partition function
+6:20	Aggregate factor
+9:35	Formal definition
+10:29	Applications of pairwise Markov networks
+</pre>
+
+###General Gibbs Distribution
+<pre>
+0:19	Fully connected network example
+2:57	Gibbs Distribution
+5:19	Induced Markov network
+7:51	Factorization
+9:25	Graph induction
+12:05	Flow of influence
+13:52	Active trails
+15:14	Summary
+</pre>
+
+###Conditional Random Fields
+<pre>
+0:00	Introduction
+0:25	Task-specific prediction
+3:01	Correlated features
+6:33	CRF representation
+11:15	CRFs and the Logistic model
+17:58	CRFs for image segmentation
+20:28	CRFs for Language
+21:22	Summary
+</pre>
+
+###Independencies in Markov Networks
+<pre>
+0:12	Separation
+2:01	Factorization and independence
+3:00	Inverse theorem
+4:12	Summary
+</pre>
+
+###I-maps and Perfect Maps
+<pre>
+0:34	Capturing independencies in P
+2:15	Sparse graph
+3:02	Minimal I-map
+6:17	Perfect maps
+10:17	Another imperfect map
+12:58	MN as a perfect map
+14:55	Uniqueness of a perfect map
+17:40	I-equivalence
+19:20	Summary
+</pre>
+
+###Log-linear models
+<pre>
+0:00	Introduction
+0:22	Representation
+2:07	Representing table factors
+4:46	Features for language
+8:31	Ising model
+12:23	Metric MRFs
+16:04	Metric MRF examples
+17:52	Image segmentation
+18:29	Denoising
+</pre>
+
+###Shared Features in Log-linear Models
+<pre>
+0:45	Ising models
+3:05	Natural Language Processing
+4:54	Image Segmentation example
+5:31	Repeated features
+7:45	Summary
+</pre>

@@ -1,0 +1,118 @@
+Pre-required libraries/components need to be installed for the compilation of ChucK and miniAudicle software:
+ 
+<pre>
+sudo apt-get update
+sudo apt-get install build-essential bison flex libsndfile1-dev libasound2-dev libqt4-dev libqscintilla2-dev
+</pre>
+
+# ChucK install
+
+Download the latest version of ChucK (in command line you can use the wget to fetch the zip file with ChucK source code):
+
+<pre>
+cd ~
+wget http://chuck.stanford.edu/release/files/chuck-1.3.2.0.tgz
+tar -zxvf chuck-1.3.2.0.tgz
+rm chuck-1.3.2.0.tgz
+cd  chuck-1.3.2.0/src
+</pre>
+
+Modifications of the source code. Use a text editor (ie. vim or kate or gedit) to edit the file:
+
+<pre>
+vim RtAudio/RtAudio.cpp 
+</pre>
+
+Find line number 5660:
+
+<pre>
+sprintf( name, "hw:%d,%d", card, subdevice );
+</pre>
+
+Change/revise:
+
+<pre>
+//sprintf( name, "hw:%d,%d", card, subdevice );  // commented out
+sprintf( name, "pulse" );
+</pre>
+
+Find line 5699:
+
+<pre>
+int openMode = SND_PCM_ASYNC;
+</pre>
+
+Change/Revise this to read:
+
+<pre>
+int openMode = SND_PCM_ASYNC;
+printf( "pcm name %s\n", name );  // line inserted
+</pre>
+
+Compile ChucK with the command:
+
+<pre>
+make linux-alsa
+</pre>
+
+If this ends without errors, install ChucK as /usr/bin/chuck so that the whole system can use it:
+
+<pre>
+sudo make install
+</pre>
+
+Test installed ChucK:
+
+<pre>
+cd ../examples
+chuck otf_05.ck
+</pre> 
+
+You should hear some burbling.
+
+# miniAudicle install
+
+Download the latest version of miniAudicle (in command line you can use the wget to fetch the zip file with latest miniAudicle source code):
+
+<pre>
+cd ~
+wget http://audicle.cs.princeton.edu/mini/release/files/miniAudicle-1.3.0a.tgz
+tar -zxvf miniAudicle-1.3.0a.tgz
+rm miniAudicle-1.3.0a.tgz
+cd miniAudicle-1.3.0a/src
+</pre>
+
+The same edit needs to be made to the RtAudio.cpp file in this source tree, otherwise when you try to play something you will get an error like:
+
+ugen's of type 'DAC' have no input - cannot => from another ugen...
+
+<pre>
+vim chuck/src/RtAudio/RtAudio.cpp
+</pre>
+
+Make the same changes to lines 5660 and 5699 as above, save the file, and exit the editor.
+
+Start the compile:
+
+<pre>
+make linux-alsa
+</pre>
+
+If this ends without errors, you should have a new program, miniAudicle, in the src directory.
+
+Click on miniAudicle (you can make a link to it, or move it to another location if you want) and three windows will open:
+miniAudicle - where you write and test your sound programs
+VirtualMachine - where you control the ChucK sound-server
+Console - where you can see error messages
+
+In the miniAudicle window, select File -> Open.  Navigate to chuck-1.3.2.0/examples, and load one of them (the ones in miniAudicle-1.3.0a/examples will not produce any sound as yet).  In the VirtualMachine window, click on Start Virtual Machine (or in the miniAudicle window, select ChucK -> Start Virtual Machine). 
+The icons in the miniAudicle window should go from grey to coloured.  Click Add Shred and you should hear the example.  Click Clear Virtual Machine to stop the sound.
+
+# Other stuff
+
+When playing ChucK and the course video together, the former may sound too loud.  Open your Volume Control app, which should have an entry in it like ALSA plug-in [miniAudicle]: ALSA Playback, and pull the slider down a bit.
+
+#Links
+* [https://class.coursera.org/chuck101-001/forum/thread?thread_id=130 ChucK on Ubuntu 12.04: howto (forum post by Kevin Donnelly)].
+
+[[Category:ChucK 101]]

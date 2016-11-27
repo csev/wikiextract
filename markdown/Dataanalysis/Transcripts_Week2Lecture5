@@ -1,0 +1,124 @@
+Data Analysis, Week 2, Lecture 5 Getting Data (Part 2)  
+
+* This is the second video about getting data into R. The first video we covered sort of the basic approaches, like read.table(), read.csv() and read.xlsx(). In this video, we'll talk a little bit more about interacting directly with connections and things like that, that are other more flexible ways that R allows you to interact with data.  
+
+**Interacting more directly with files**  
+
+* So, first of all, we're going to be talking about particularly connections to files. And so, basically what these are connections that allow you to read specifically and directly from a file and leave that connection open so that you can interact with the files directly rather than reading them one in a go, like you did with read.table() or read.csv(). So, there are a couple of different kinds of connections that you can open and I'm going to illustrate a couple of these during this lecture.  
+
+* One is the file command which opens a connection to a text file, either locally on your computer or something that you actually access on the web.  
+
+* Another is URL, which opens a connection to a URL on the web that doesn't necessarily have to be a text file, but can be.  
+
+* And then, there's also a couple of other connections that you can open so you can actually directly open a connection to a [gzip]( http://en.wikipedia.org/wiki/Gzip) file with gzfile. Or another connection that you can open is a bzfile connection which opens a connection to a  [bzip2]( http://en.wikipedia.org/wiki/Bzip2) file which usually have a suffix bz2.  
+
+* If you have more questions about these connections, we're going to go over the basics of how they work, but if you have more questions about them, ?connections will give you more information from R. And Roger has also covered these, a little bit in his reading and writing data videos which I link to in the previous lecture.  
+* So, one thing to keep in mind is, we're going to be opening connections to these files. And R will probably automatically close those connections, like say if you exit the program or so forth. But, it's important to remember to try to close your connections because it's good programming practice, especially if you are going to be sharing your analysis files with, with other people. 
+
+**readLines() - local file**  
+
+* So, we're going to start off with using a connection and the function readLines() to read data directly from a local file. So, in some cases, you actually don't need to use this connection approach because it's almost identical to just using one of the standard functions for reading new data. This is going to be one of those examples but it will illustrate a little bit about how the function works.  
+
+* So, the important parameters here for readLines() are *con*, which is a connection, *n*, which is the number of lines that you'd like to read in from that connection, and then the *encoding*. Since we're going to be reading in text files frequently, the *encoding* may matter depending on your application. And so, if need to know more about that, you can look it up in the help files for readLines().  
+
+* So here, we're going to open a connection to a file. In this case, it's the file that we downloaded previously. So, we're in gettingData2 directory now. And in the gettingData2 directory, there's a sub-directory called data again, and we've downloaded the file cameras.csv to that directory. And then, we pass it a “r” because we want to be able to tell the connection that we're going to be reading from that file. And then, what we can do is we can actually just run read.csv() on that connection.  
+
+* And if we then close the connection and look at the head of the camera data, we actually see that it's exactly the same file that we read in, as if we had run read.csv() on the file directly itself. So, read.csv() can actually use a file to actually read the data directly from the connection, or it can read from the file itself.  
+
+**readLines() - from the web**  
+
+* To give you a better idea of the power of this sort of approach is we can set a connection now to a particular URL. In this case, I've linked a connection to the URL that is the URL of the blog that I write, [simply statistics.org]( http://simplystatistics.org/). And again, I've said that this is going to be a connection where we read from that connection with the “r” here. And what I'm going to do is read the lines from that connection. And so, again, I'm going to tell readlines() nothing else than to read the lines from that connection. Then, I'm going to close it and look at the head() of simplyStats, this function or this variable that I've defined here.  
+
+* And so, what I see is that, it gives me, on each line, one line of the HTML file that composes the HTML file for this website. So, this is kind of neat because you can actually access the HTML of specific websites using this connection. The only thing that you could have done here is told that exactly how many lines of that HTML file you wanted to read. So, if you didn't want to read the whole file in, you could have set the *n* parameter to be equal to 10 or 20, and then it would have read in 10 or 20 lines only and skipped the rest of the file. This is useful if you're dealing with connections that have a lot of data.  
+
+**Reading JSON files {RJSONIO}**  
+
+* So, another way that you can read files in, and this is mighty useful if you're going to be dealing with a lot of [JSON (JavaScript Object Notation)]( http://en.wikipedia.org/wiki/JSON) files. Now, a lot of data that is being sorted particularly for social networking data but all sorts of other kind of data is in JSON format. And so, there's a package called the RJSONIO package. And if you install the package and then load that library, the RJSONIO package, then, what you're able to do is you can actually access JSON data itself.  
+
+* And so, the way that you do that is here again, I've picked up the URL of a specific JSON file. This is the JSON file for the same cameras data that we've been looking at in all of the other examples. And so, what I can do is I can download that file to my computer. Alternatively don't have to do this, I can open the connection directly to the URL itself. But for the simplicity of exposition here, I'm going to download it to my same directory. I downloaded to that  ./data directly, directory, and I save it as camera.json. And then, what I do is I open a connection to that file.  
+
+* And what I'm going to want to be able to do then is read in some of the data from that connection. And I can do that using the fromJSON() function. This is a function that's provided in the RJSONIO package. And so, again, I pass at that connection and I apply this function and then I close the connection. And if I look at the top of the JSON file, I actually see that it's been loaded into R in a particular kind of object where you actually have something that looks a lot like a list where you have, sort of, subcomponents of that object corresponding to the subcomponents of a JSON file.  
+
+* So, for those of you that don't know much about JSON files, they're structured a little bit differently than a data table. And so, they're structured in such a way that it almost looks like the same structure that you would see in a list in R. And so, what the JSON functions do is they actually read the JSON file in and create an R structure that allows you to sort of access the data directly. We're probably not going to be doing a lot with JSON files in this class. But if you have more questions about RJSONIO or RJSON, there are actually a lot of good web resources for you to be able to look up how to deal with  JSON files in R.  
+
+**Writing data - write.table()**
+
+* So now, that we've read data into R, one thing that you might end up doing is performing some kind of processing, and then you're going to want to write the data back out, after you've processed it. So, getting data is only partially a matter of getting the data from the internet. It might also be getting the processed data that you have in R and assigning that to some other data set on your computer.  
+
+* And so, what we're doing here is again we're going to use read.csv() to load in some data. And then, we're going to use write.table() to write the data out after we do something to it. So, here, we read the data in from /data/cameracsv..  
+
+* And then, what we're going to do is take the camera data and we're actually going to remove the first column of that data set. And the way that I do that is I use a “-1” here. So we've talked a little bit about subsetting, but one thing you can do is use negative symbols here to actually remove columns or rows of a data frame. And so, what I've done here is I've just removed the first column of that data frame and I've stored it in a variable called tmpData.  
+
+* Then, what I can do is write that same file out using write.table(). The argument that I need to pass it here is the name of the variable in R that I would like to have written, this is a data frame that I would like to have written. And then, I tell it what file I'd like to write it to. And so, in this case, I'm going to write it to camerasModified.csv because I've modified the cameras dataset. And I tell it again the separation that I'd like to have between data points.  
+
+* So, here again, because I'm going to read it back in with read.csv(), I'm going to save it as a file with comma-separated values. So then, I can read it back in the modified file, using read.csv() just like I did before. But now, I, instead of cameras, I send it camerasModified.  
+
+* And if I look at the head of that new data set that I've assigned to cameraData2, I see that I have the exact same data set, only the first column is missing. So, I've been able to write out a modified data set and load it back in.  
+
+* So, the important parameters for write.table() are: *x* which is the R object that you'd like to write out. This is usually for write.table() you want *x* to be a data frame; the *file* that you'd like to write it to. Then, {with *quote*} you can tell write.table(), whether to put quotation marks around characters. Sometimes you don't actually want the quotation marks around characters so you'll set this {*quote*}to be equal to false; but if you're going to load it back into R, you don't actually need to change this *quote* parameter because read.csv() and write.table() with separation *sep=","* allow you to read and write without having to change the parameters. Again, this separation allows you to tell R which separating element you'd like between the data values. And then, *row.names* and *col.names* allows you to tell R what row names and column names you'd like to assign to the data set before writing it out. 
+
+**Writing data - save(), save.image()**
+
+* Another way that you can save data is using the save() and save.image() commands. This is a little bit different than the way that write.table() works. Write.table() actually writes out a csv file or a tab derivative text file, usually with just one data frame in it. Save() can be used to save a bunch of R objects all at once into one binary file. And then, when you load that object back in, you'll be able to actually see all of the objects that you saved, with save(). So, the important parameters here are the *list of objects* that you'd like to save, and then the file that you'd like to save them to.  
+
+* Save.image() works very similarly to save, except it saves everything in your workspace. Actually, it's not your working directory, it's your workspace. So, all the variables that you've created while working in R are all saved when you do save.image().  
+
+* So, I'm just going to show you a little example of how this works. So, we, we can load in again, the camera data from the data/cameracsv. data set. And again, we can modify the data set to remove the first column. And then, what we can do is we can pass save() as many objects as we want. In this case, I'm going to pass two objects, the temporary data set and the camera data set. And I'm going to pass it the file that I would like those to be stored, and in this case it's going to be called cameras.rda. .rda is the usual extension for this type of binary format.  
+
+**Reading saved data - load()**
+
+* So then, once I've saved that data to this .rda file, I might want to be able to load it back in. And so, I'm going to show the way that you do that is with the load() function. And so, it's the opposite of save(). And the important parameters here are the *file* that you would like to have loaded in.  
+
+* So, first thing that I'm going to do is, just to show how this works a little bit, I'm going to remove everything that I have in my workspace. And so, the way that I'm going to do that is with the rm() command, the rm() command is used to remove variables from your workspace. And so, in this case, case if I type rm(list=ls()), this basically removes every variable that I've currently loaded into R. This doesn't remove any thing from your hard disk, from your directories, it just removes all the variables that have been loaded into R. But if you type ls(), this will list all the variables that you currently have in your work space. And so, in this case it says character zero, which means that there's no variables that we've loaded in.  
+
+* So, by removing all the variables, there's nothing loaded into R, and now we can just load the RDA file that we created on the previous page. So, we type load("./data/cameras.rda"). So, this is the .rda file that we created previously. And what will happen then is all of the objects that were stored in the .rda file will be loaded into our workspace. And so, if I type ls(), I actually see that both camera data and the temporary data files that I created and saved into that object now appear in my work space. So, load() and save() are very nice because you're able to actually save multiple R objects all into one file and they are also unmodified. So, when you load it back in, they're exactly the same files that you saved.  
+
+**paste() and paste0()**  
+
+* Another important thing that is useful when, loading in files into R, these are commands that aren't actually directly used for loading files, but can be used for figuring out which files to load. And particularly, if you have multiple files that you might want to load into R and they all have sort of a common pattern to them.  
+
+* So, these functions actually paste character string together. And the important parameters here are the list of string or variables and the separation that you want to have between those strings. paste0() is actually the same as paste() but it sets the separation to be nothing between the strings. And this is useful when you're creating file names by pasting together character strings. And these are great when you're trying to loop over files. You might also see file.path() as a way to sort of identify the path of the files that you're going to be looping over. But here, I'm going to show you just a really brief example.  
+
+* So again, I'm going to be looping over a set of indices. So if you're not comfortable with looping those, there's functions that, or I mean, there are videos that Rogers have created. that are available on YouTube or through the course website that talk about looping, that'll tell you how this works. But I'll explain it very briefly.  
+
+* So, the basic idea is, we're going to take the index, i, and we're going to give it each of the values, one all the way up to five. So, it's going to take values one, two, three, four, and five. So for each value that i take, what's going to happen is the file name is going to get assigned, and that file name is going to be assigned by using this paste() command. So, I'm using paste0, which again, is just like paste but it sets the separation to be nothing between the text strings. So, I pass it the a text string that's ./data.. And then, I also pass it this i, this index that we're going to be looping over. So remember, i will take the values one, two, three, four and five. And then, I pass it, again, another string .csv that looks like this. And then, at each iteration for every value of i, I'm going to print off the file name that results from this particular assignment. And so what I see is, I get a list of files that only differ by the number that is dependent at the end of data. 
+
+* So, each file says ./data,. that comes from this first term in the Paste command. Then, it gets a number, one, two, three, four, five. That comes from this index i, because we're looping over all the indexes one to five. And then, it gets .csv,. and that again is the third, the third component of the third string in this Paste command. So, this is really useful. If you have a bunch of files that you want to list out and then load in one at a time, you can actually loop over them defining the file names, and then reading those file names directly into R.  
+
+**Getting data off webpages**  
+
+* So, that's a little bit about loading files directly from connections or files that you've already downloaded. But, another way you can actually access data is you can actually scrape data directly, directly off of web pages. So this is a webpage.  
+
+* This is my [Google scholar profile](http://scholar.google.com/citations?user=HI-I6C0AAAAJ&hl=en) so this is contains a bunch of data about the papers I've written, and the number of times they've been cited and the years that they've been published. A little bit more information about my co-authors and all of that. This is the URL of the particular website. So, this is a bunch of data that we would like to maybe have access to. I certainly am interested in this data. And so, would I'd like to be able to get access to is say the times that my papers have been cited or maybe the years that they've been cited. And so, this data isn't downloadable as .CSV file or as another type of text file, but we can actually access from our directly the HTML data and be able to access those numbers. 
+
+**Getting data off webpages**  
+
+* So one approach that you can do this is using the read lines file functions that we talked about previously. So, I can again open up a connection to a URL. So, I'm going to pass it, the URL of that Google scholar profile that we saw on the previous page. And then, we can read lines of that connection. And so, what that will do is read in the HTML file. Then, we can close the connection and look at what we ended up getting. The HTML code actually looks like this. In this case, you can see it kind of goes off the screen and that's because of the way that the texture that this particular HTML file is formatted in a way that doesn't make it look nice and neat, it's all on one line. So, this makes it actually a little bit hard to work with. And so, you can actually end up trying to parse this one line of HTML but there's actually easier ways to access the data.  
+
+**Getting data off webpages {continued}**  
+
+* So, one of those ways that's easier is to use what's called the XML package. So, in the previous slide, we loaded in this XML library and one of the functions here is htmlTreeParse(). So, this function can be used to parse an HTML page or you could also parse other types of files with it. And basically what it does is it goes to this website and it breaks down all of the HTML files into their components, and stores it in a particular kind of object in R.  
+
+* Now, I'm not going to go into a lot of the details about how to use this. It's a, actually quite an extensive and useful package. It's also got a lot of different features and a lot of different parameters which are too many to cover right now. But, if you do have questions about that, you can ask them on the class message board. Or you can ask them on the standard R mailing lists.  
+
+* But, what we can do is, once we've loaded this object into R, we can actually now access particular parts of the object. So, using this xpathSApply(), what I could do is look through this object and find all the components of that object with the title tag and get the actual value of those objects with the title, with the title tag. And so what I see is, I get “Jeff Leek - Google Scholar Citations”. If you look on the HTML code, this particular set string is enclosed by the title tag in the HTML file.  
+
+* You can also actually, access particular parts of the table. So, in general, I might want to access say, the table that has my citations. And so, I can do that with this /td because that's accessing the table, the components of the table. And I am actually looking for the cited by ID, and so I can actually pass the ID to this xpathSApply(). And then, again, I want to get just the xmlValue, so this runs over all the elements of this HTML table that have this ID and it produces the values. So, you can see from that first page that we collect the data for how many citations each of my papers have.  
+
+* One thing that is useful here to note is that we're using the xmlValue function but you can actually apply all sorts of different functions to perform processing on the HTML file. This is actually pretty advanced data scraping using this XML package. And, like I said, there are tutorials about it available on the web. But for the purposes of this class, this is mostly general interest, ways that you can more easily access HTML files. We probably won't collect a lot of data in that way for this class.  
+
+**Further resources**  
+
+* So, some further resources that are more ways that you can load and access data in R. So actually this is just again a small smattering of all the different ways that you can load data into R and it's ever expanding. So, I'm just going to give you a couple of examples that I've used that I think are useful.  
+
+* So, one is the [httr]( http://cran.r-project.org/web/packages/httr/index.html) package. So, this is useful work for working with HTTP connections. It simplifies some of the issues that we had with the connections that we're using previously or being able to download files from the internet when you have an HTTPS connection and so forth.  
+
+* The [RMySQL]( http://cran.r-project.org/web/packages/RMySQL/index.html) package is useful for, interfacing with the database in particular [MySQL]( http://en.wikipedia.org/wiki/MySQL) database.  
+
+* You can also use the [bigmemory](http://www.bigmemory.org/) package for handling data, that is too big to store in RAM. So, if you remember that I mentioned when we were reading in data sets, that they're stored in RAM for R. And so, if you run out of RAM, if your data set is too big R won't be able to handle it anymore. But this big memory package sort of extends the R functionality for dealing with bigger data sets.  
+
+* Then, there's the [RHadoop]( https://github.com/RevolutionAnalytics/RHadoop/wiki) package for interfacing R and [Hadoop]( http://en.wikipedia.org/wiki/Apache_Hadoop), for performing sort of analytics on larger data sets than you would likely store in RAM. And this is created by this [Revolution Analytics]( http://en.wikipedia.org/wiki/Apache_Hadoop) company which also produces lots of other sort of useful R packages and extensions to R that are particularly useful for big data.  
+
+* And then, there's this [foreign]( http://cran.r-project.org/web/packages/foreign/index.html) package. So, the foreign package is useful for loading data into R from file format saved from [SAS]( http://en.wikipedia.org/wiki/SAS_(software)), SPSS, Octave and other statistical or mathematical programming languages. So, if you load this package foreign, you're able to read in files that you might have saved with a different programming language.  
+
+* If you want to know a little bit more in depth understanding of some of the topics that we've talked about in the getting data lectures, you can also see Rogers R get getting data lectures, which he's called reading and writing R from R, and these are the two videos, Part one and Part two that I'm going to here.

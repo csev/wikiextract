@@ -1,0 +1,38 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Errata: Week 4</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Errata_in_the_video_lectures">Errata in the video lectures</span></h1>
+<ul>
+<li>In the videos "Model Representation I" and "Model Representation II:, the diagram of the NN does not show the added bias units in the input and hidden layers. The bias units are represented in the equations as the variable $$x&#95;0$$.</li>
+<li>In the video "Model representation I", in the in-video quiz, the figure is incorrect in that it does not show the added bias units. The bias units must be included when you calculate the size of a Theta matrix.</li>
+<li>In the video "Model Representation II" at 2:42, Prof Ng mistakenly says that $$z^{(2)}$$ is a 3-dimensional vector. What he means is that the vector $$z^{(2)}$$ has three features - i.e it is size (3 x 1).</li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_the_programming_exercise">Errata in the programming exercise</span></h1>
+<ul>
+<li>In ex3.pdf at Section 1.3.2 "Vectorizing the gradient", there is a typo in the series of entries demonstrating how to compute the partial derivatives for all $$ \theta&#95;j$$ where $$h&#95;\theta(x) - y$$ is defined. The last row in the array has $$h&#95;\theta(x^{(1)}) - y^{(m)}$$ but it should be $$h&#95;\theta(x^{(m)}) - y^{(m)}$$</li>
+<li>in ex3.pdf, the end of Section 1.3.1 "Vectorizing the cost function" states: "Your job is to write the unregularized cost function in the file lrCostFunction.m". This should instead read "Your job is to write the regularized cost function in the file lrCostFunction.m". Additionally, the entire section discusses the equation for un-regularized cost, and may need to be updated for regularized cost instead.</li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_the_quiz">Errata in the quiz</span></h1>
+<ul>
+<li>In question 4 of the Neural Networks: Representation quiz, one potential answer may include the variable Theta2, even though this variable is undefined (the question only defines Theta1). When answering the question, treat Theta2 as Theta with a superscript "(2)", or $$\Theta^{(2)}$$, from lecture.</li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_4&amp;oldid=34280">https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_4&amp;oldid=34280</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Errata" title="Category:ML:Errata">ML:Errata</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

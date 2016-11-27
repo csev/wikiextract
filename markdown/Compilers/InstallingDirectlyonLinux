@@ -1,0 +1,64 @@
+<div style="border-left:15px solid darkgreen;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>This is the local copy of original Staff instruction copied to Wiki for easier access. Original text is available at: https://class.coursera.org/compilers-004/wiki/view?page=InstallingDirectlyonLinux Change the number of the course to the one you are enrolled on.<br>It was reported this solution works for Gentoo, Ubuntu, openSUSE.</td></table></div>
+<br>
+
+**NOTE: We highly recommend using Amazon EC2 or the VirtualBox VM.**
+
+However, there was enough demand that we are providing these instructions for people who want to run directly on their own installation of Linux. These instructions were tested with Ubuntu 11.10, but should work on similar (Debian-based) systems, and can be adapted for other distros.
+
+Steps:
+
+* Install packages (If you only intend to use the C++ version, you don't need the jdk).
+
+For Ubuntu:
+
+`sudo apt-get install flex bison build-essential csh openjdk-6-jdk libxaw7-dev libc6-i386`
+
+For Fedora:
+
+`sudo yum groupinstall "Development Tools" "Development Libraries"`
+
+`sudo yum install bison flex csh`
+
+* Make the /usr/class directory:
+
+`sudo mkdir /usr/class`
+
+* Make the directory owned by you:
+
+`sudo chown $USER /usr/class`
+
+* Go to /usr/class and download the tarball:
+
+`cd /usr/class`
+
+`wget http://spark-university.s3.amazonaws.com/stanford-compilers/vm/student-dist.tar.gz`
+
+* Untar:
+
+`tar -xf student-dist.tar.gz`
+
+
+If you want things exactly like the VMs:
+
+
+* Add a symlink to your home directory:
+
+`ln -s /usr/class/cs143/cool ~/cool`
+
+* Add the bin directory to your $PATH environment variable. If you are using bash, add to your .profile (or .bash_profile, .bashrc etc. depending on your configuration; note that in Ubuntu have to log out and back in for this to take effect):
+
+`PATH=/usr/class/cs143/cool/bin:$PATH`
+
+You may want to prepend `export` to the above command, i.e. `export PATH=...`.
+
+<br>
+<div style="border-left:15px solid darkred;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>"spim" is 32-bit program, in 64-bit system it requires installing 32-bit "glibc" library. <br>Because of heavy patching in order to run COOL assembly code (*.s) you **have to** use provided "spim" program, not any newer version available on the internet.<br>
+If xspim (the GUI version of spim) does not start up but only prints something like <br>
+`*-courier-medium-r-normal--12-*-75-*`<br>
+on the console, you will need to install some missing fonts and add them to the font path of your X11, like so:<br>
+`sudo apt-get install xfonts-75dpi xfonts-100dpi`<br>
+`xset +fp /usr/share/fonts/X11/75dpi`
+</td></table></div>
+
+In Debian/ubuntu, the 32 bit glibc library is provided by the libc6-i386 package:  
+`sudo apt-get install libc6-i386`

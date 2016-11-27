@@ -1,0 +1,194 @@
+We know that:
+
+$$
+J(\theta)=\dfrac{1}{2m} \displaystyle \sum_{i=1}^{m} \left( h_\theta(x^{(i)})-y^{(i)} \right)^2
+\quad \text{(the cost function)}
+$$
+
+$$
+h_\theta(x^{(i)})=\theta_0+\theta_1 x^{(i)}_1+\dots+\theta_n x^{(i)}_n
+\quad \text{(the predicted function)}
+$$
+
+$$
+\theta=
+\left[
+\begin{array}{c}
+\theta_0 \newline
+\theta_1 \newline
+\vdots \newline
+\theta_n
+\end{array}
+\right]
+\quad \text{(the parameter vector)}
+$$
+
+$$
+Y=
+\left[
+\begin{array}{c}
+y^{(1)} \newline
+y^{(2)} \newline
+\vdots \newline
+y^{(m)}
+\end{array}
+\right]
+\quad \text{(the result vector)}
+$$
+
+$$
+X=
+\left[
+\begin{array}{cccc}
+x^{(1)}_0 & x^{(1)}_1 & \cdots & x^{(1)}_n \newline
+x^{(2)}_0 & x^{(2)}_1 & \cdots & x^{(2)}_n \newline
+\vdots & \vdots & \vdots & \vdots \newline
+x^{(m)}_0 & x^{(m)}_1 & \cdots & x^{(m)}_n 
+\end{array}
+\right]
+\quad \forall i \in \{1,2,\cdots,m\} \quad x^{(i)}_0=1
+\quad \text{(the training matrix)}
+$$
+
+And we want to calculate $$\theta$$ for getting the minimum of $$J(\theta)$$. If $$J(\theta)$$ has continuous first partial derivatives for all $$\theta_j$$, then as an extremum 
+
+$$
+\forall j \in \{0,1,2,\cdots,n\} \quad \dfrac{\partial}{\partial\theta_j}J(\theta)=0
+$$
+
+The $$J(\theta)$$ is quadratic polynomial, always positive, and can be infinitely large. So the extremum is the minimum
+
+Note: In this proof, $$i$$ and $$j$$ is all integer, and $$1 \leq i \leq m \quad 0 \leq j \leq n$$. And a equation including $$i$$(or $$j$$) without as the variable of summation, means for all value in it's interval this equation holds. So we say the last equation just as $$\dfrac{\partial}{\partial\theta_j}J(\theta)=0$$ for convenience.
+
+$$
+\begin{align*}
+\frac{\partial}{\partial\theta_j}J(\theta)
+&=\frac{1}{2m}\sum_{i=1}^{m}\frac{\partial}{\partial\theta_j}(h_\theta(x^{(i)})-y^{(i)})^2 \newline
+&=\frac{1}{2m}\sum_{i=1}^{m}2(h_\theta(x^{(i)})-y^{(i)})\frac{\partial}{\partial\theta_j}(h_\theta(x^{(i)})-y^{(i)}) \newline
+&=\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x^{(i)}_j
+\end{align*}
+$$
+
+We define matrix $$N^{(i)}$$ as:
+
+$$
+N^{(i)}=
+\left[
+\begin{array}{c}
+x^{(i)}_0 & x^{(i)}_1 & \cdots & x^{(i)}_n
+\end{array}
+\right]
+$$
+
+So
+
+$$
+h_\theta(x^{(i)})=N^{(i)} \cdot \theta
+\quad
+X=
+\left[
+\begin{array}{c}
+N^{(1)} \newline
+N^{(2)}\newline
+\vdots \newline
+N^{(m)}
+\end{array}
+\right]
+$$
+
+$$
+\begin{align*}
+&\frac{1}{m}\sum_{i=1}^{m}(h_\theta(x^{(i)})-y^{(i)})x^{(i)}_j=0 \newline
+\Leftrightarrow \quad &\sum_{i=1}^{m}(N^{(i)}\theta-y^{(i)})x^{(i)}_j=0 \newline
+\Leftrightarrow \quad 
+&(x^{(1)}_j N^{(1)}+x^{(2)}_j N^{(2)}+\cdots+x^{(m)}_j N^{(m)}) \cdot \theta
+-(x^{(1)}_j y^{(1)},x^{(2)}_j y^{(2)},\cdots,x^{(m)}_j y^{(m)})=0 \newline
+\Leftrightarrow \quad
+&\left[
+\begin{array}{cccc}
+x^{(1)}_j & x^{(2)}_j & \cdots & x^{(m)}_j
+\end{array}
+\right] \cdot 
+\left[
+\begin{array}{c}
+N^{(1)} \newline
+N^{(2)}\newline
+\vdots \newline
+N^{(m)}
+\end{array}
+\right] \cdot \theta=
+\left[
+\begin{array}{cccc}
+x^{(1)}_j & x^{(2)}_j & \cdots & x^{(m)}_j
+\end{array}
+\right] \cdot Y \newline
+\Leftrightarrow \quad
+&\left[
+\begin{array}{cccc}
+x^{(1)}_j & x^{(2)}_j & \cdots & x^{(m)}_j
+\end{array}
+\right] \cdot X \cdot \theta=
+\left[
+\begin{array}{cccc}
+x^{(1)}_j & x^{(2)}_j & \cdots & x^{(m)}_j
+\end{array}
+\right] \cdot Y
+\end{align*}
+$$
+
+For $$1 \times m$$ matrix $$H$$ and $$m \times 1$$ matrix $$V$$:
+
+$$
+H_j \cdot V=a_j
+\quad \Leftrightarrow \quad 
+\left[
+\begin{array}{c}
+H_0 \newline
+H_1 \newline
+\vdots \newline
+H_n
+\end{array}
+\right]
+\cdot V=
+\left[
+\begin{array}{c}
+a_0 \newline
+a_1 \newline
+\vdots \newline
+a_n
+\end{array}
+\right]
+$$
+
+So the equation
+
+$$
+\begin{align*}
+\Leftrightarrow \quad
+&\left[
+\begin{array}{cccc}
+x^{(1)}_0 & x^{(2)}_0 & \cdots & x^{(m)}_0 \newline
+x^{(1)}_1 & x^{(2)}_1 & \cdots & x^{(m)}_1 \newline
+\vdots & \vdots & \vdots & \vdots \newline
+x^{(1)}_n & x^{(2)}_n & \cdots & x^{(m)}_n
+\end{array}
+\right] \cdot X \cdot \theta=
+\left[
+\begin{array}{cccc}
+x^{(1)}_0 & x^{(2)}_0 & \cdots & x^{(m)}_0 \newline
+x^{(1)}_1 & x^{(2)}_1 & \cdots & x^{(m)}_1 \newline
+\vdots & \vdots & \vdots & \vdots \newline
+x^{(1)}_n & x^{(2)}_n & \cdots & x^{(m)}_n
+\end{array}
+\right] \cdot Y \newline
+\Leftrightarrow \quad
+&X^TX\theta=X^TY
+\end{align*}
+$$
+
+
+If matrix $$X^TX$$ is invertible, then
+
+$$
+\theta=(X^TX)^{-1}X^TY
+$$

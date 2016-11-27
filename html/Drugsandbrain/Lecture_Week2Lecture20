@@ -1,0 +1,58 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week2Lecture20</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 20  The Ca2+ -mobilizing G protein (Gq) pathway; Modifying G protein Pathways<br />
+<ul><li> Hello.  We’re going to describe a third G protein pathway. It will be the final G protein pathway that we describe and we call it the calcium { Ca2+} mobilizing G protein or the Gq pathway. And we'll also talk about modifying G protein pathways. </p>
+</li></ul>
+
+<p><strong>Gq, Gs, and Gt protein effectors include some enzymes</strong><br />
+<ul><li> So we have discussed the fact that protein effectors of some G proteins include enzymes. And the Gq pathway leads to a particular enzyme that we will see in this lecture, producing intracellular messengers including calcium.  </p>
+</li></ul>
+
+<ul>
+<li>The overview of this pathway is that it leads from calcium in the endoplasmic reticulum to calcium in the cytosol. There are lots of steps and so we better amplify those steps here on the next slide.  </li>
+</ul>
+<p><strong>A channel gated by an intracellular ligand</strong>  </p>
+<ul>
+<li><p>And here they all are. A receptor as usual not shown here activates Gq's &#945;-subunit. This &#945;-subunit moves a short distance, to activate its effector, which is an enzyme. It's phospholipase C&#946;. There are lots of phospholipases in the genome. This one hydrolyzes phosphatidyl inositol 4,5 bisphosphate, also called PI(4,5)P2 or just PIP2. Phosphotidyl inositol 4,5 bisphosphate is a lipid. When phospholipase C&#946; hydrolyzes phosphatidyl inositol bisphosphate or PIP2, it produces diacylglycerol which is a lipid and inositol 1,4,5 trisphosphate {IP3}. Now, note that we are calling this a trisphosphate rather than a triphosphate. And for the cognoscenti {informed experts} that's because the phosphate groups are all connected directly to the molecule rather than to each other. So it's not a triphosphate but a trisphosphate.  </p></li>
+<li><p>Now, as it happens, all three of these small molecules have signaling functions on their own. PIP2 has a signaling function which we will not describe. Diacylglycerol has a signaling function and diacylglycerol goes on to activate another kind of protein kinase called protein kinase C and we won't discuss this further except that it has a very specific substrate proteins that it phosphorylates.  </p></li>
+<li><p>In addition, the other result of hydrolyzing PIP2 is IP3 and IP3 remarkably enough activates ion channels. Now this is a class of ion channels that we have not yet hinted about. These are ion channels that are in intracellular membranes. In this case in the endoplasmic reticulum and the IP3 gated ION channel is quite permeable to calcium. The lumen of the endoplasmic reticulum has lots of calcium in it. So production of IP3 opens this channel, liberates calcium into the cytoplasm. And there are two results.  </p></li>
+<li><p>The first result is that calcium binds to protein kinase C, helps to activate protein kinase C as well as diacylglycerol does. The second result is that calcium becomes an intracellular transmitter for other processes, itself activating other enzymes and activating other channels. So, this is a remarkably complex pathway, downstream from Gq, which is in turn, downstream from a 7 helix receptor.  </p></li>
+</ul>
+<p><strong>Genomic diversity of the G protein pathway</strong><br />
+<ul><li> Well, let's look for a moment at the genomic diversity of the g protein pathway. We've done most of the hard work now. We've shown you the three types of g protein pathways, i, q, and s. We won't talk about t because that doesn't really enter much in the brain. We've talked about the effectors, channels, and enzymes and we've talked about intracellular messengers.  </p>
+</li></ul>
+
+<ul>
+<li><p>In the genome are roughly 1,000 G protein-coupled receptors. Many of them are olfactory receptors so they are not terribly important for drugs in the brain. They all have seven helices as we've seen.  </p></li>
+<li><p>The genome also harbors genes for all three G protein subunits, &#945;, &#946; and &#947;. And in fact, there are 18 G &#945; subunit genes in the four major classes i, s, q, which we have discussed, and t, which we have not. The genome also has about five &#946; subunits and about three &#947; subunits.   </p></li>
+<li><p>Furthermore there are two major types of effectors as we've discussed. There are channels directly affected by G Proteins. We've discussed the G protein-gated potassium channels. There are five of them. So, we actually have not discussed all of them. And there are four calcium channels, roughly affected by G proteins, which we have also not discussed. And finally, there are enzymes activated by G proteins: three major classes, each with two to ten members. So, is that it? Is that the entire g protein pathway?  </p></li>
+<li><p>Well, actually you could think of the molecules on this picture as equivalent to a 1950s car, a 1950s automobile with a big carburetor, and a big engine, and a manual transmission. But actually, the G protein pathway has evolved over the years, so that these days it reminds you of a,  21st century plug-in hybrid, with lots of additional gadgets and software, and drive trains, and optimizing parts that tune it up for various purposes. So there are accessory proteins for the G protein pathway, and we'll discuss one of them now.  </p></li>
+</ul>
+<p><strong>Regulators of G protein Signaling tune the kinetics of effector activation/deactivation</strong>  </p>
+<ul>
+<li><p>This is the family of so called Regulators of G protein Signaling or RGS proteins. The RGS proteins come into the G protein cycle at the activation and deactivation of the &#945; subunit, right here in this red box. And if we look at the structure of the complex between an RGS protein and the G protein, here's what we see.  </p></li>
+<li><p>There are about twenty RGS proteins in the genome. This one is number 4. And as you know there are lots of &#945; subunit, G alpha subunit proteins in the genome. So, the yellow molecule is the &#945; subunit of G&#945;i. The red moiety is GTP itself being ready to be hydrolyzed. And the green moiety is RGS4. And it certainly does seem that RGS4, one of the side chains of RGS4, nestles itself into the G protein, at a point that is very close to the GTP, enhancing the entry and exit and hydrolysis of GTP at this site. So let's look at the physiological effects of this nestling.  </p></li>
+<li><p>Here is a recording from a heart. And we are looking at the pathway that Otto Loewe looked at, almost a century ago, in which acetylcholine, remember the vagus stuff (acetylcholine) {discussed in lecture 17} , activates those G protein gated potassium channels. When acetylcholine is removed, these channels deactivate. Now here is an early attempt to reconstitute that entire pathway in another cell.  </p></li>
+<li><p>So, we expressed the muscarinic acetylcholine receptor, and the G protein gated potassium channel and added a pulse of acetylcholine. The channel's activated at a leisurely fashion, and then deactivated in a leisurely fashion. Here are the so-called time constants. They differ by more than a factor of twenty between the crudely reconstituted system and the natural system.  </p></li>
+<li><p>So in this experiment we have co-expressed in addition. RGS4. And now, the kinetics of activating the potassium channel and of deactivating the potassium channel, look much more like the native system. And so this is an example of how an accessory protein in the G protein system can tune up the function of signal transduction. There are other examples involving the so called &#946;-arrestins but we're going to have to go on to other topics, in fact, to the final topic in the G protein pathway in the next lecture.</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture20&amp;oldid=6599">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture20&amp;oldid=6599</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

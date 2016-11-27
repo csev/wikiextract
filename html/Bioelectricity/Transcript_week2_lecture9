@@ -1,0 +1,52 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcript week2 lecture9</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Lecture_2-9_Membrane_Capacitance_Cm">Lecture 2-9 Membrane Capacitance Cm</span></h1>
+<p><strong>Bioelectricity week 2.9 (slide 42)</strong><br />
+<ul><li> Hello again. This is Roger Coke Barr for the Bioelectricity course, Week two, and this is our ninth segment. In this segment, we talk about membrane capacitance. And the capacitance per unit area is designated C sub m.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Capacitance: Why does membrane have capacitance? (slide 43)</strong><br />
+<ul><li> First, it's just worth asking why does membrane have capacitance? Somehow or other, it seems very reasonable that membrane has resistance, but capacitance, well, we're not quite so sure about that.<br />
+</li><li> However, think about the general definition of capacitance. There is capacitance between one point and another when you have two conductors separated by an insulating region. So, membranes are certainly an insulating region.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Capacitance: For membrane, where are the conductors? (slide 44)</strong><br />
+<ul><li> So, the question is if capacitance comes from two conductors separated by an insulating region, what are the conductors? Well, let's make ourselves a sketch and talk about that.<br />
+</li><li> So, let's suppose, this is a cell and cross section. We said that the membrane, which is diagrammed there in red, is a very good insulator. And, this region in the interior, that's a conductor. That's not a metal plate. We think of capacitors as having metal plates because human-made capacitors are built that way. But there's nothing about the phenomenon that requires that the conductors be plates. And, in fact, this solution is quite a good conductor because it's got a lot of ions floating around in it.<br />
+</li><li> So, that's one of the plates. And then, the other plate is this reaching outside. So, this exterior volume, which is also a conductor, is the other side of the capacitor.<br />
+</li><li> So, if we say to ourselves, capacitors have two conductors separated by an insulating region, that's exactly what we have here. A conductor inside, a conductor outside, insulating region in between. So, of course, it has capacitance.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Capacitance (slide 45)</strong><br />
+<ul><li> Let's talk about capacitors and capacitance and membrane current that flows through the capacitants as people describe it.<br />
+</li><li> The definition of capacitance, C = Q/V. Get that equation and turn it around, we'll have Q is equal to the membrane capacitance times V. Q, of course, is the charge on the capacitor. So, here's the charge right here. It's on the capacitor. I better make a note of that. Just write it in. Here is the charge.<br />
+</li><li> If we now mathematically differentiate the second equation, we get the third. And equation 3 says that if things change as a function of time, the dQ/dt (here) is equal to the amount of capacitance times the derivative of the voltage.<br />
+</li><li> And if we rearranged that equation to get equation 4, you could say dQ/dt is the same thing as the membrane current. It's the change in charge that's present membrane so that's like a current, a change in charge per time.<br />
+</li><li>So, Im then, as the current through the membrane that's coming by because of a current through the capacitor. Now, I have made a mistake here. So, I should say that's Ic, the current through the capacitor, Ic is equal to Cm times dVm / dt.<br />
+</li><li> We use that equation all the time in later mathematical work, so it's very helpful.<br />
+</li><li> Thank you for watching this segment and we'll go on to another one, having to do of what the value of capacitance is.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 19/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcript_week2_lecture9&amp;oldid=7958">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcript_week2_lecture9&amp;oldid=7958</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

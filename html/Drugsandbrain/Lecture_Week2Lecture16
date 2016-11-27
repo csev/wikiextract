@@ -1,0 +1,82 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week2Lecture16</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 16 Channel Blockers  </p>
+<ul>
+<li>Now we're going to stop hinting about sodium channels and actually discuss them. We're going to get more complex as this mini-lecture goes forward.  </li>
+</ul>
+<p><strong>Single-channel traces &amp; Atomic-Scale Structure: Local Anesthetic in an Ion Channel</strong><br />
+<ul><li> We're going to start with an exceedingly simple concept which is that in the absence of a blocker, a channel conducts ions. And when the blocker is present, much like a cork in a drain or a plug, the channel no longer conducts ions. It's still open but doesn't conduct ions.   </p>
+</li></ul>
+
+<ul>
+<li><p>Actually, recordings of individual single channels show very much this situation. Here is a muscle nicotinic receptor channel opening and then closing as usual. Here's another recording from a muscle nicotinic receptor in the presence of a lidocaine derivative. You can see that the channel opens to roughly its normal level, but that conduction is interrupted by these bouts when the drug is presumably bound to the channel. Well, how do we know it's actually like a plug in the drain?  </p></li>
+<li><p>Well, recently the community has produced x-ray crystallography studies of bacterial analogs of pentameric ligand-gated channels. Here is the structure of one of these bacterial analogs, so it would be a model for the GABA or glycine or nicotinic receptor and this model, this channel was crystallized in the presence of a brominated derivative of lidocaine.  </p></li>
+<li><p>Now, the scientists used a bromine derivative, because that shows up very clearly in x-ray pictures. So, to scale on the scale of the rest of the molecule here is the drug. And we can see the crystallographer’s result only the bromine part but there's good evidence that the rest of the molecule comes down, one or two turns of the &#945;-helix this way. So we have a very nice confirmation between electrophysiology and x-ray crystallography. of this direct simple view of drug lock of ion channels. Unfortunately no actual channel blocker used in medicine works on ligand-gated channels therapeutically.  </p></li>
+</ul>
+<p><strong>The membrane potential controlled by ligand-gated and voltage-gated channels</strong><br />
+<ul><li> Instead to look at channel blockers in medicine we need to go to the concept of voltage-gated channels and of action potentials. So I'll just remind you where we've come so far in the course. We have resting potassium channels that hold the membrane at the resting potential. We've discussed ligand-gated channels that underlie the excitatory post synaptic potential, or the inhibitory potential, and here is a trace of an excitatory post synaptic potential.  </p>
+</li></ul>
+
+<ul>
+<li><p>Today, we're going to briefly discuss voltage-gated sodium channels and voltage data potassium channels which do underlie the action potential and because these channels open and close rapidly compared with the time constant of the membrane we need to think about the capacitance. We won't think about it very much but I will warn you that quantitative analysis of this equivalent circuit do bring the capacitance in and of course that would be the famous Hodgkin-Huxley analysis of the action potential. I’ve left a space here because we're going to add one more channel type later on in this course.  </p></li>
+<li><p>So here we have a full blow action potential, here is our familiar equation which is dominated by terms in the Nernst potentials or the reversal potentials times their conductances. And at the beginning then, before the cell gets a stimulus or dominated by the resting potential through potassium channels (not completely but mostly as you'll see). And then during excitatory post-synaptic responses we're dominated by the reversal potential for the post synaptic potential. And then we're not showing inhibitory responses in this trace. During the peak of the action potential sodium channels are open and the action potential, membrane potential, goes to roughly Ena, roughly plus plus 50 millivolts.  </p></li>
+<li>And then if we look carefully we note that after hyperpolarization the membrane potential actually becomes more negative than the resting potential for a few milliseconds and that's because even more potassium channels open (dominate the membrane potential even more strongly) and these are different voltage-gated potassium channels than the resting potassium channels. So, that's the view that we all have of action potentials and we can't spend a whole lot of time discussing the Hodgkin-Huxley equations, or the biophysics of voltage-gated channels.  </li>
+</ul>
+<p><strong>More resources on voltage-gated channels and action potentials</strong><br />
+<ul><li> Happily, Duke University and Coursera have a lovely course on bioelectricity {Bioelectricity taught by Professor Roger C Barr}.  </p>
+</li></ul>
+
+<p><strong>Voltage-gated Na+ channels, and Blockade by Tetrodotoxin</strong>  </p>
+<ul>
+<li><p>The important point for us, thinking about drugs and the brain, is to think about how drugs might interfere with or enhance voltage-gated channel activity.  </p></li>
+<li><p>Now, here is a. X-ray crystallographic picture of a voltage-gated sodium channel from a bacteria, and here is the famous pufferfish toxin tetrodotoxin. Here it is, scaled down to be approximately the same size as the molecule. It seems to block at the very entrance to the sodium channel. Here, this blue part is a water-like pathway, in which the protein is again tricking the sodium ions into thinking that they're still in water as they flow through the channel. And pufferfish toxin then, tetrodotoxin acts as though it's plugging at the very beginning. This is simple, but it's a bit more simple in fact than the way most drugs work on sodium channels.  </p></li>
+<li><p>The way most drugs work on sodium channels involves a, an additional feature that is present in animal sodium channels and we can call it an inactivation flap. It comes and closes up the channel after it's been open for awhile (a couple of milliseconds). If you want to examine these, structures more you can go to protein data base files. {To access} these files, all you do is you google these four letters {e.g. 4EKW} and your first hit will usually be the database and you can take it from there. </p></li>
+</ul>
+<p><strong>Most Na+ Channel Blockers in Clinical Use Block from Inside the Cell</strong>  </p>
+<ul>
+<li><p>There are two points that we need to understand about sodium channel blockers. First is that most sodium channel blockers in clinical use actually block from inside the cell. Now, procaine for instance, we discussed in one of the early lectures that it exists in both the neutral form and in the proteinated charge form. It converts between those forms in a couple of milliseconds. So in its neutral form, it can go into the cell and in the cell it can bind to the inside of sodium channels mostly as the proteinated form.  </p></li>
+<li><p>The other key to understanding the action of some blockers is that they get trapped inside the channel by the very inactivation gate that we have been discussing. So, go inside the cell, work from there. When the channel is open and gives you a place to bind gets trapped in that channel by the inactivation mechanism. </p></li>
+</ul>
+<p><strong>Drug-blocked cannel example</strong>  </p>
+<ul>
+<li><p>So if we were again to look at stylized single channel recordings we would find, again using the trick where we line up all the single channel openings at the same time to mimic what might happen in a real membrane. We'll find that we’ve adjusted them to open at the same time and they close randomly, stochastically. And, when a drug is present, (a blocking drug) that blocking drug can stop the conduction. It doesn't necessarily close the channel. It gets trapped by the inactivation flap.  </p></li>
+<li><p>So all of the blue downward deflections here are the drug blocking the channel. Depending on the drug concentration, the channel might have a chance to close by itself. But an effective drug would close it more rapidly, have less current total. And then the drug gets trapped for a period of time which we'll discuss on the next slide in the inactivated channel. So this is a trapped or use-dependent blocker.  </p></li>
+</ul>
+<p><strong>Procainamide, a use-dependent blocker</strong>  </p>
+<ul>
+<li><p>And a typical use-dependent blocker is procainamide, a derivative of procaine. So in this tracing we have stimulated the cell artificially. And if we stimulate the cell artificially, rapidly enough, we get sodium channels opening, but the blocker comes in and blocks those channels, and it stays in the channels even when the next stimulus occurs. So the blockade accumulates until we have enough channels blocked, so that we no longer reach threshold for an action potential and the action potentials fail. Now the blocker does eventually come off the channels.  </p></li>
+<li><p>And so, if we instead stimulate at long intervals and the channels can recover during those long intervals, then we get nice full action potentials. So this is why we call procainamide a use-dependent blocker. The more the cell tries to fire, the more it gets blocked, a very useful property (use-dependence or frequency dependence).  </p></li>
+</ul>
+<p><strong>Na+ channel blockers in medicine</strong><br />
+<ul><li> And in fact, some of the sodium channel blockers in medicine are use-dependent blockers. For instance, the antiarrhythmics in the heart such as procainamide, prevent the heart from firing too rapidly (antiarrhythmia) and an example is Procainamide, there are others.  </p>
+</li></ul>
+
+<ul>
+<li><p>And antiepileptics and anticonvulsants in the brain are also use-dependent blockers. The best example here, a classical example which has been around for several decades, would be phenytoin.  </p></li>
+<li><p>Of course there are the classical local anesthetics that get in and our rapidly and we know about procaine and have discussed procaine. But in terms of use dependent block and frequency dependent block we have some very important handy anticonvulsants and antiarrhythmics. </p></li>
+</ul>
+<p><strong>Unwanted Ion Channel Blockade</strong>  </p>
+<ul>
+<li><p>Well there are also some cases of unwanted ion channel blockade. And probably the most important and most tragic case of unwanted ion channel blockade involves the fact that many candidate neural drugs bind in a water filled cavity of a particular potassium channel in the heart, mostly in the heart, although there is some of it in the brain. It's called, for very interesting historical reasons, the human ether-a-go-go-related gene (hERG). It has the function of turning on rather slowly and terminating the cardiac action potential.  </p></li>
+<li><p>But many drugs come and bind in this water filled cavity here prevent the hERG channel from terminating the action potential. The action potential gets longer and begins to interfere with the start of the next action potential. This causes potentially fatal arrhythmias for the cognoscenti this is long QT syndrome. And in fact, experts estimate that the 40% of drug candidates cause hERG blockade. That's right, in a typical million or so compound library that a drug company has made over the years, 40% of them may cause blockade of hERG channels. And there have been some tragic results. Now, the FDA requires that all new drugs pass a hERG safety test.</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture16&amp;oldid=6642">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture16&amp;oldid=6642</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

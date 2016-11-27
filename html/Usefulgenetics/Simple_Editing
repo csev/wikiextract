@@ -1,0 +1,108 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Usefulgenetics:Simple Editing</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Usefulgenetics:Main" title="Usefulgenetics:Main"> Back to Useful Genetics Wiki home page</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#What_is_Markdown.3F"><span class="tocnumber">1</span> <span class="toctext">What is Markdown?</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Headers"><span class="tocnumber">1.1</span> <span class="toctext">Headers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#This_is_an_H1"><span class="tocnumber">2</span> <span class="toctext">This is an H1</span></a>
+<ul>
+<li class="toclevel-2"><a href="#This_is_an_H2"><span class="tocnumber">2.1</span> <span class="toctext">This is an H2</span></a>
+<ul>
+<li class="toclevel-3"><a href="#This_is_an_H6"><span class="tocnumber">2.1.1</span> <span class="toctext">This is an H6</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Lists"><span class="tocnumber">2.2</span> <span class="toctext">Lists</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Unordered_lists"><span class="tocnumber">2.2.1</span> <span class="toctext">Unordered lists</span></a></li>
+<li class="toclevel-3"><a href="#Ordered_lists"><span class="tocnumber">2.2.2</span> <span class="toctext">Ordered lists</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Links"><span class="tocnumber">2.3</span> <span class="toctext">Links</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Links_to_pages_within_the_Useful_Genetics_Wiki"><span class="tocnumber">2.3.1</span> <span class="toctext">Links to pages within the Useful Genetics Wiki</span></a></li>
+<li class="toclevel-3"><a href="#Links_to_external_pages"><span class="tocnumber">2.3.2</span> <span class="toctext">Links to external pages</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#New_Pages"><span class="tocnumber">2.4</span> <span class="toctext">New Pages</span></a></li>
+<li class="toclevel-2"><a href="#Source"><span class="tocnumber">2.5</span> <span class="toctext">Source</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="What_is_Markdown.3F">What is Markdown?</span></h1>
+<p>Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people "to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)". The language takes many cues from existing conventions for marking up plain text in email. Source: <a rel="nofollow" class="external free" href="http://daringfireball.net">http://daringfireball.net</a></p>
+<p>The following is taken from <a rel="nofollow" class="external free" href="http://daringfireball.net/projects/markdown/syntax">http://daringfireball.net/projects/markdown/syntax</a>. Refer to the link for a detailed guide on markdown.</p>
+<h2> <span class="mw-headline" id="Headers">Headers</span></h2>
+<p>To make headers for markdown, you can use hash tags to denote how big you want the header to be. We use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:</p>
+<p>&#35; This is an H1</p>
+<p>&#35;# This is an H2</p>
+<p>&#35;##### This is an H6</p>
+<p>produces</p>
+<h1> <span class="mw-headline" id="This_is_an_H1">This is an H1</span></h1>
+<h2> <span class="mw-headline" id="This_is_an_H2">This is an H2</span></h2>
+<h6> <span class="mw-headline" id="This_is_an_H6">This is an H6</span></h6>
+<h2> <span class="mw-headline" id="Lists">Lists</span></h2>
+<p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
+<h3> <span class="mw-headline" id="Unordered_lists">Unordered lists</span></h3>
+<p>Unordered lists use asterisks, pluses, and hyphens — interchangably — as list markers. For instance, this is how you use asterisks.</p>
+<p>&#42;   Red</p>
+<p>&#42;   Green</p>
+<p>&#42;   Blue</p>
+<p>produces</p>
+<ul>
+<li><p>Red</p></li>
+<li><p>Green</p></li>
+<li><p>Blue</p></li>
+</ul>
+<h3> <span class="mw-headline" id="Ordered_lists">Ordered lists</span></h3>
+<p>Ordered lists use numbers followed by periods.  Just type:</p>
+<ol>
+<li><p>Bird</p></li>
+<li><p>McHale</p></li>
+<li><p>Parish</p></li>
+</ol>
+<h2> <span class="mw-headline" id="Links">Links</span></h2>
+<h3> <span class="mw-headline" id="Links_to_pages_within_the_Useful_Genetics_Wiki">Links to pages within the Useful Genetics Wiki</span></h3>
+<p>Type &#91;[Usefulgenetics:name-of-page]]</p>
+<p>For example, typing &#91;[Usefulgenetics:Main]] creates a link to our wiki home page: <a href="/wiki/index.php/Usefulgenetics:Main" title="Usefulgenetics:Main">Usefulgenetics:Main</a></p>
+<p>And typing &#91;[Usefulgenetics:Main | Useful Genetics Wiki Home]] creates the same link with only the page name showing: <a href="/wiki/index.php/Usefulgenetics:Main" title="Usefulgenetics:Main"> Useful Genetics Wiki Home</a></p>
+<p>To link to a glossary entry (useful to cross reference entries) use for example:-</p>
+<p>&#91;[Usefulgenetics:Glossary#Haplotype: | Haplotype]]</p>
+<p>Which reders as:-</p>
+<p><a href="/wiki/index.php/Usefulgenetics:Glossary#Haplotype:" title="Usefulgenetics:Glossary"> Haplotype</a></p>
+<h3> <span class="mw-headline" id="Links_to_external_pages">Links to external pages</span></h3>
+<p>Simple links to external pages are created just by typing the url:</p>
+<code><pre>http://joshreads.com/
+</pre></code>
+<p>If you want to show the page's title instead of the url, put the page title in square brackets before the url in round brackets:</p>
+<code><pre>\[Comics Curmudgeon](http://joshreads.com/) displays as [Comics Curmudgeon](http://joshreads.com/)
+</pre></code>
+<h2> <span class="mw-headline" id="New_Pages">New Pages</span></h2>
+<p>To create a new page just create a link to it, as if it existed.  When you save the page you're on, it will have a link to the empty new page, and clicking on that link will take you to your new page's Edit page.</p>
+<h2> <span class="mw-headline" id="Source">Source</span></h2>
+<p>Taken from a Coursera Instructor Support document; original source <a rel="nofollow" class="external free" href="http://daringfireball.net/projects/markdown/syntax">http://daringfireball.net/projects/markdown/syntax</a></p>
+<p><a href="/wiki/index.php/Usefulgenetics:Main" title="Usefulgenetics:Main"> Back to Useful Genetics Wiki home page</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Usefulgenetics:Simple_Editing&amp;oldid=19286">https://share.coursera.org/wiki/index.php?title=Usefulgenetics:Simple_Editing&amp;oldid=19286</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

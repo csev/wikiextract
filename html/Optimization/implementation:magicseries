@@ -1,0 +1,40 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:implementation:magicseries</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Magic_Series">Magic Series</span></h1>
+<h3> <span class="mw-headline" id="Comet">Comet</span></h3>
+<p>A constraint programming based comet model for the magic series problem.</p>
+<pre>
+import cotfd;
+Solver&lt;CP&gt; CP();
+
+int n = 5;
+range D = 0..n-1;
+var&lt;CP&gt;{int} s[D](CP,D);
+solve&lt;CP&gt; {
+  forall(k in D)
+    CP.post(s[k] == sum(i in D) (s[i]==k));
+} using {
+   label(s);
+   cout &lt;&lt; s &lt;&lt; endl;
+}
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:implementation:magicseries&amp;oldid=12208">https://share.coursera.org/wiki/index.php?title=Optimization:implementation:magicseries&amp;oldid=12208</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,72 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Genomescience:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This is the wiki home page for the Experimental Genome Science course (Fall '12), by Professors John Hogenesch and John Murray.</p>
+<p><span style="font-weight:bold;">Welcome to Experimental Genome Science</span>
+The goal of this course is to provide you with the basics and exposure to many of the different technologies and applications of genomics and proteomics. We will take you through genome sequence, expression profiling, genetics, including clinical genetics, proteomics, and along the way touch on several application areas. Although there are many interesting computational issues associated with these methods and applications, we will primarily focus on experimental issues.</p>
+<p>This course is aimed at the entry-level graduate student. Over the years, upper-level undergrads and graduate students from other disciplines have also done well in the course.  At a minimum you’ll need a strong understanding of molecular biology. For students with a computational background, we will introduce how the data are generated, what they are generally used for, and discuss issues of interpretation. It's hard to compute on data when you don't know how it's generated. For the experimentalist, we will give you an overview of many different methodologies and how they are applied at scale. Even if you are expert in one or 2 of these methods, it's doubtful that you are in all of them. None of us are. <br /></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#The_Genome"><span class="tocnumber">1</span> <span class="toctext">The Genome</span></a></li>
+<li class="toclevel-1"><a href="#Genetics_in_the_Genome_Era"><span class="tocnumber">2</span> <span class="toctext">Genetics in the Genome Era</span></a></li>
+<li class="toclevel-1"><a href="#Functional_Genomics"><span class="tocnumber">3</span> <span class="toctext">Functional Genomics</span></a></li>
+<li class="toclevel-1"><a href="#Plasmodium_Genomics"><span class="tocnumber">4</span> <span class="toctext">Plasmodium Genomics</span></a></li>
+<li class="toclevel-1"><a href="#Lectures_Not_Yet_Categorized"><span class="tocnumber">5</span> <span class="toctext">Lectures Not Yet Categorized</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="The_Genome">The Genome</span></h3>
+<ol>
+<li><a href="/wiki/index.php/Genomescience:History_and_Background_of_the_Human_Genome_Project" title="Genomescience:History and Background of the Human Genome Project">History and Background of the Human Genome Project</a> (1)</li>
+<li><a href="/wiki/index.php/Genomescience:The_Human_Genome_Project" title="Genomescience:The Human Genome Project">The Human Genome Project</a> (2)</li>
+<li><a href="/wiki/index.php/Genomescience:Next_Generation_Sequencing" title="Genomescience:Next Generation Sequencing">Next Generation Sequencing</a> (3)</li>
+<li><a href="/wiki/index.php/Genomescience:Large-scale_Genomics_Projects" title="Genomescience:Large-scale Genomics Projects">Large-scale Genomics Projects</a> (4)</li>
+</ol>
+<h3> <span class="mw-headline" id="Genetics_in_the_Genome_Era">Genetics in the Genome Era</span></h3>
+<ol>
+<li><a href="/wiki/index.php/Genomescience:Genomic_Inheritance" title="Genomescience:Genomic Inheritance">Genomic Inheritance</a> (5)</li>
+<li><a href="/wiki/index.php/Genomescience:Forward_Genetic_Screens" title="Genomescience:Forward Genetic Screens">Forward Genetic Screens</a> (6)</li>
+<li>Reverse Genetic Screens (7)</li>
+<li>Clinical Genetics (8)</li>
+</ol>
+<h3> <span class="mw-headline" id="Functional_Genomics">Functional Genomics</span></h3>
+<ol>
+<li>In Vivo/Model Organism Genomics (9)</li>
+<li><a href="/wiki/index.php/Genomescience:RNA_Expression_Analysis_and_Arrays" title="Genomescience:RNA Expression Analysis and Arrays">RNA Expression Analysis and Arrays</a> (10)</li>
+<li><a href="/wiki/index.php/Genomescience:RNA_Sequence_and_Splicing_Analysis" title="Genomescience:RNA Sequence and Splicing Analysis">RNA Sequence and Splicing Analysis</a> (11)</li>
+<li><a href="/wiki/index.php/Genomescience:Epigenomics_and_Transcriptional_Regulation" title="Genomescience:Epigenomics and Transcriptional Regulation">Epigenomics and Transcriptional Regulation</a> (12)</li>
+<li><a href="/wiki/index.php/Genomescience:ncRNA_Structure_and_Function" title="Genomescience:ncRNA Structure and Function">ncRNA Structure and Function</a> (13)</li>
+</ol>
+<h3> <span class="mw-headline" id="Plasmodium_Genomics">Plasmodium Genomics</span></h3>
+<ol>
+<li><a href="/wiki/index.php/Genomescience:Plasmodium_Genomics_I" title="Genomescience:Plasmodium Genomics I">Plasmodium Genomics I</a> (20)</li>
+<li><a href="/wiki/index.php/Genomescience:Plasmodium_Genomics_II" title="Genomescience:Plasmodium Genomics II">Plasmodium Genomics II</a> (21)</li>
+</ol>
+<h3> <span class="mw-headline" id="Lectures_Not_Yet_Categorized">Lectures Not Yet Categorized</span></h3>
+<ul>
+<li>Integrative genomics (14)</li>
+<li>Systems biology approaches (15)</li>
+<li>Single molecule genomics (16)</li>
+<li>Single cell genomics (17)</li>
+<li>Introduction to proteomics (18)</li>
+<li>Advanced proteomics (19)</li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Genomescience:Main&amp;oldid=22089">https://share.coursera.org/wiki/index.php?title=Genomescience:Main&amp;oldid=22089</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Biology" title="Category:Biology">Biology</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

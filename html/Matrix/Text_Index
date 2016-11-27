@@ -1,0 +1,214 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Matrix:Text Index</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Index for first printing of Coding the Matrix textbook (original index is incorrect)</p>
+<p><strong>bold</strong> page numbers indicate definition or introduction of a concept</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Symbols"><span class="tocnumber">1</span> <span class="toctext">Symbols</span></a></li>
+<li class="toclevel-1"><a href="#A"><span class="tocnumber">2</span> <span class="toctext">A</span></a></li>
+<li class="toclevel-1"><a href="#B"><span class="tocnumber">3</span> <span class="toctext">B</span></a></li>
+<li class="toclevel-1"><a href="#C"><span class="tocnumber">4</span> <span class="toctext">C</span></a></li>
+<li class="toclevel-1"><a href="#D"><span class="tocnumber">5</span> <span class="toctext">D</span></a></li>
+<li class="toclevel-1"><a href="#E"><span class="tocnumber">6</span> <span class="toctext">E</span></a></li>
+<li class="toclevel-1"><a href="#F"><span class="tocnumber">7</span> <span class="toctext">F</span></a></li>
+<li class="toclevel-1"><a href="#G"><span class="tocnumber">8</span> <span class="toctext">G</span></a></li>
+<li class="toclevel-1"><a href="#H"><span class="tocnumber">9</span> <span class="toctext">H</span></a></li>
+<li class="toclevel-1"><a href="#I"><span class="tocnumber">10</span> <span class="toctext">I</span></a></li>
+<li class="toclevel-1"><a href="#K"><span class="tocnumber">11</span> <span class="toctext">K</span></a></li>
+<li class="toclevel-1"><a href="#L"><span class="tocnumber">12</span> <span class="toctext">L</span></a></li>
+<li class="toclevel-1"><a href="#M"><span class="tocnumber">13</span> <span class="toctext">M</span></a></li>
+<li class="toclevel-1"><a href="#N"><span class="tocnumber">14</span> <span class="toctext">N</span></a></li>
+<li class="toclevel-1"><a href="#O"><span class="tocnumber">15</span> <span class="toctext">O</span></a></li>
+<li class="toclevel-1"><a href="#P"><span class="tocnumber">16</span> <span class="toctext">P</span></a></li>
+<li class="toclevel-1"><a href="#S"><span class="tocnumber">17</span> <span class="toctext">S</span></a></li>
+<li class="toclevel-1"><a href="#T"><span class="tocnumber">18</span> <span class="toctext">T</span></a></li>
+<li class="toclevel-1"><a href="#U"><span class="tocnumber">19</span> <span class="toctext">U</span></a></li>
+<li class="toclevel-1"><a href="#V"><span class="tocnumber">20</span> <span class="toctext">V</span></a></li>
+</ul>
+</td></tr></table>
+<h4> <span class="mw-headline" id="Symbols">Symbols</span></h4>
+<ul>
+<li>$$\in$$ (set theory) <strong>1</strong> </li>
+<li>$$\subseteq$$ (set theory) <strong>1</strong></li>
+<li>$$\mathbb{R}$$ (real space) <strong>1</strong></li>
+<li>$$\circ$$ (functional composition) 5</li>
+<li>$$\mathbb C$$ (set of complex numbers) </li>
+</ul>
+<h4> <span class="mw-headline" id="A">A</span></h4>
+<ul>
+<li>absolute value <strong>43</strong></li>
+<li>affine combination 77, 131, <strong>132</strong></li>
+<li>affine space 130, <strong>133</strong></li>
+<li>audio records, comparison  91</li>
+</ul>
+<h4> <span class="mw-headline" id="B">B</span></h4>
+<ul>
+<li>backward problem <strong>4</strong>
+
+<ul>
+<li>and linear combinations 115</li>
+</ul></li>
+</ul>
+<h4> <span class="mw-headline" id="C">C</span></h4>
+<ul>
+<li>cardinality <strong>1</strong></li>
+<li>cartesian product <strong>1</strong></li>
+<li>co-domain <strong>2</strong></li>
+<li>complex plane 42</li>
+<li>computational problem <strong>3</strong></li>
+<li>containment (set theory) <strong>1</strong></li>
+<li>convex combination 76</li>
+</ul>
+<h4> <span class="mw-headline" id="D">D</span></h4>
+<ul>
+<li>D-vector <strong>64</strong></li>
+<li>domain <strong>2</strong></li>
+<li>dot-product <strong>87</strong></li>
+</ul>
+<h4> <span class="mw-headline" id="E">E</span></h4>
+<ul>
+<li>Euler's formula <strong>50</strong></li>
+<li>event (probability) 10</li>
+</ul>
+<h4> <span class="mw-headline" id="F">F</span></h4>
+<ul>
+<li>field 41</li>
+<li>forward problem <strong>4</strong>
+
+<ul>
+<li>and linear combinations 115</li>
+</ul></li>
+<li>function <strong>2</strong></li>
+<li>Function Invertibility Theorem <strong>8</strong></li>
+<li>functional composition 5</li>
+<li>functional inverse 6, <strong>7</strong></li>
+</ul>
+<h4> <span class="mw-headline" id="G">G</span></h4>
+<ul>
+<li>generator <strong>119</strong>
+
+<ul>
+<li>standard generator 121</li>
+</ul></li>
+<li>GF2 (Galois Field 2) <strong>54</strong>
+
+<ul>
+<li>vectors over 81</li>
+</ul></li>
+</ul>
+<h4> <span class="mw-headline" id="H">H</span></h4>
+<p>Hamming codes 167</p>
+<h4> <span class="mw-headline" id="I">I</span></h4>
+<ul>
+<li>identity function 5</li>
+<li>image <strong>2</strong></li>
+</ul>
+<h4> <span class="mw-headline" id="K">K</span></h4>
+<ul>
+<li>kernel 175 </li>
+</ul>
+<h4> <span class="mw-headline" id="L">L</span></h4>
+<ul>
+<li>linear combination <strong>113</strong></li>
+<li>linear equation <strong>89</strong>
+
+<ul>
+<li>homogeneous linear equation 124</li>
+</ul></li>
+<li>linear function <strong>173</strong></li>
+<li>linear system (system of linear equations)  <strong>90</strong>
+
+<ul>
+<li>homogeneous linear system 125</li>
+</ul></li>
+</ul>
+<h4> <span class="mw-headline" id="M">M</span></h4>
+<ul>
+<li>matrix 147
+
+<ul>
+<li>as vectors, 153</li>
+<li>representations of 147-152</li>
+</ul></li>
+<li>matrix-matrix multiplication 179</li>
+<li>matrix-vector multiplication 154</li>
+</ul>
+<h4> <span class="mw-headline" id="N">N</span></h4>
+<ul>
+<li>n-vector <strong>63</strong></li>
+<li>nonuniform distribution 10</li>
+<li>norm <strong>326</strong></li>
+<li>null space <strong>165</strong></li>
+</ul>
+<h4> <span class="mw-headline" id="O">O</span></h4>
+<ul>
+<li>one-to-one (function) 7</li>
+<li>onto (function) 7</li>
+<li>orthogonal 328</li>
+</ul>
+<h4> <span class="mw-headline" id="P">P</span></h4>
+<ul>
+<li>perfect secrecy (crypto) 12, <strong>14</strong></li>
+<li>probability 9</li>
+<li>procedure <strong>3</strong></li>
+<li>Pythagorean theorem 43</li>
+</ul>
+<h4> <span class="mw-headline" id="S">S</span></h4>
+<ul>
+<li>scalar-vector multiplication <strong>70</strong></li>
+<li>scaling <strong>46</strong></li>
+<li>set theory 1</li>
+<li>Shrink-Algorithm Corollary 223</li>
+<li>span  117 </li>
+<li>Span Lemma  222</li>
+<li>sparsity 65 
+
+<ul>
+<li>subspace 128</li>
+</ul></li>
+</ul>
+<h4> <span class="mw-headline" id="T">T</span></h4>
+<ul>
+<li>translation <strong>44</strong></li>
+<li>transposition <strong>153</strong></li>
+</ul>
+<h4> <span class="mw-headline" id="U">U</span></h4>
+<ul>
+<li>uniform distribution  9</li>
+</ul>
+<h4> <span class="mw-headline" id="V">V</span></h4>
+<ul>
+<li>vector <strong>63</strong>
+
+<ul>
+<li>k-sparse vector <strong>65</strong></li>
+</ul></li>
+<li>vector addition <strong>67</strong></li>
+<li>vector-matrix multiplication 154</li>
+<li>vector space <strong>127</strong>
+
+<ul>
+<li>properties of 126</li>
+</ul></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Matrix:Text_Index&amp;oldid=14846">https://share.coursera.org/wiki/index.php?title=Matrix:Text_Index&amp;oldid=14846</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coding_the_Matrix" title="Category:Coding the Matrix">Coding the Matrix</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

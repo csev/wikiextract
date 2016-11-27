@@ -1,0 +1,177 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:Cost Curves</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<h2> <span class="mw-headline" id="Notes_for_Week_5:_3.3_Cost_Curves">Notes for Week 5: 3.3 Cost Curves</span></h2>
+<p>To illustrate the different <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Cost_curve">Cost Curves</a> the hypothetical example give us the following data:</p>
+<table border="1">
+  <tr>
+    <td># of Cooks</td>
+    <td># of Sandwiches</td>
+    <td>Marginal Product</td>
+    <td>Fixed Costs</td>
+    <td>Variable Costs</td>
+    <td>Total Costs</td>
+    <td>Marginal Costs</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>$100</td>
+    <td>$0</td>
+    <td>$100</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>40</td>
+    <td>40</td>
+    <td>$100</td>
+    <td>$80</td>
+    <td>$180</td>
+    <td>$2.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>90</td>
+    <td>50</td>
+    <td>$100</td>
+    <td>$160</td>
+    <td>$260</td>
+    <td>$1.60</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>120</td>
+    <td>30</td>
+    <td>$100</td>
+    <td>$240</td>
+    <td>$340</td>
+    <td>$2.70</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>135</td>
+    <td>15</td>
+    <td>$100</td>
+    <td>$320</td>
+    <td>$420</td>
+    <td>$5.30</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>140</td>
+    <td>5</td>
+    <td>$100</td>
+    <td>$400</td>
+    <td>$500</td>
+    <td>$16.00</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>142</td>
+    <td>2</td>
+    <td>$100</td>
+    <td>$480</td>
+    <td>$580</td>
+    <td>$40.00</td>
+  </tr>
+</table>
+<p><br /></p>
+<table border="1">
+  <tr>
+    <td># of Cooks</td>
+    <td># of Sandwiches</td>
+    <td><p>Average FC</p>
+    <p>FC/Q</p></td>
+    <td><p>Average VC</p>
+    <p>VC/Q</p></td>
+    <td><p>Average TC</p>
+    <p>TC/Q</p></td>
+    <td><p>Marginal Costs</p>
+    <p>&#160;</p></td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>40</td>
+    <td>$2.50</td>
+    <td>$2.00</td>
+    <td>$4.50</td>
+    <td>$2.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>90</td>
+    <td>$1.11</td>
+    <td>$1.78</td>
+    <td>$2.89</td>
+    <td>$1.60</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>120</td>
+    <td>$0.83</td>
+    <td>$2.00</td>
+    <td>$2.83</td>
+    <td>$2.70</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>135</td>
+    <td>$0.74</td>
+    <td>$2.37</td>
+    <td>$3.11</td>
+    <td>$5.30</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>140</td>
+    <td>$0.71</td>
+    <td>$2.86</td>
+    <td>$3.57</td>
+    <td>$16.00</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>142</td>
+    <td>$0.70</td>
+    <td>$3.38</td>
+    <td>$4.08</td>
+    <td>$40.00</td>
+  </tr>
+</table>
+<p>The <strong><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_fixed_cost">Average Fixed Cost</a> Curve</strong> is a L-shape curve because the <em>Fixed Costs</em> are <strong>fixed</strong> then the AFC <strong>decrease</strong> when the <em>Quantity of Output</em> <strong>increase</strong>. This has an important application in the study of <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Natural_monopoly">natural monopolies</a>. </p>
+<p>The <strong><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_variable_cost">Average Variable Cost</a> Curve</strong> is a J-shape curve because the <em><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Diminishing_returns">diminishing marginal product</a></em>. The marginal cost increases with the quantity produced. When a <strong>small amount</strong> is produced, <em>few workers</em> are involved, and much of the <em>equipment is not used</em>. Because you can easily put these <em>idle resources to use</em>, the marginal product of <em>an additional worker</em> is <strong>large</strong>, and the marginal cost of <em>an additional output</em> is <strong>small</strong>. By contrast, when a <strong>large amount</strong> is produced, the <em>space is filled with workers</em>, and most of the <em>equipment is fully utilized</em>. It can produce more by<em>(adding workers</em>, but these new workers have to work in crowed conditions and may have to wait to use the equipment. Therefore, when the <em>amount produced is already high</em>, the marginal product of <em>an additional worker</em> is <strong>low</strong>, and the marginal cost of <em>an extra output</em> is <strong>large</strong>.</p>
+<p>The <strong><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a> Curve</strong> is a U-shape curve because <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_fixed_cost">Average Fixed Cost</a> always declines as output rises because the fixed cost is spread over a larger number of units and <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_variable_cost">Average Variable Cost</a> typically rises as output increases because of <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Diminishing_returns">diminishing marginal product</a>.</p>
+<p>The <strong>lowest point of the average total cost</strong> is the most efficient point to perform the production. Sometimes this is called, <strong><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Minimum_efficient_scale">efficient scale</a></strong> because is the quantity of output that minimizes average total cost. The <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Marginal_cost">Marginal Cost</a> Curve intersect the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a> Curve precisely at that point. Whenever <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Marginal_cost">Marginal Cost</a> is <strong>less than</strong> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a>, <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a> is <strong>falling</strong>. Whenever <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Marginal_cost">Marginal Cost</a> is <strong>greater than</strong> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a>, <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a> is <strong>rising</strong>. At low levels of production, the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Marginal_cost">Marginal Cost</a> is <em>below</em> <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a>, so <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a> is <strong>falling</strong>. But after the two curves cross, <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Marginal_cost">Marginal Cost</a>  increases <em>above</em> the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a>. For the reason just discussed,  <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Average_total_cost">Average Total Cost</a> should begin to <em>rise</em> to that level of production. Therefore, this point of intersection is
+the <strong>minimum average total cost</strong>.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:Cost_Curves&amp;oldid=30997">https://share.coursera.org/wiki/index.php?title=Microecon:Cost_Curves&amp;oldid=30997</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

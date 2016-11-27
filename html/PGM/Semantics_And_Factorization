@@ -1,0 +1,90 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Semantics And Factorization</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Example"><span class="tocnumber">1</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-1"><a href="#Bayesian_Network:"><span class="tocnumber">2</span> <span class="toctext">Bayesian Network:</span></a></li>
+<li class="toclevel-1"><a href="#Application:_genetic_inheritance"><span class="tocnumber">3</span> <span class="toctext">Application: genetic inheritance</span></a></li>
+<li class="toclevel-1"><a href="#Video_Lecture_Table_of_Contents"><span class="tocnumber">4</span> <span class="toctext">Video Lecture Table of Contents</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Example">Example</span></h2>
+<p>Random Variables:
+<ul><li> Grade ($$G$$)
+</li><li> Difficulty, ($$D$$)
+</li><li> Intelligence, ($$I$$)
+</li><li> SAT, ($$S$$)
+</li><li> Letter, ($$L$$)</p>
+</li></ul>
+
+<p>With dependencies:
+<ul><li> $$D \rightarrow G$$
+</li><li> $$I \rightarrow G$$
+</li><li> $$I \rightarrow S$$
+</li><li> $$G \rightarrow L$$</p>
+</li></ul>
+
+<p>Means we have the CPDs (conditional probability distributions):
+<ul><li> $$P(G|I,D)$$
+</li><li> $$P(S|I)$$
+</li><li> $$P(L|G)$$
+</li><li> $$P(D)$$
+</li><li> $$P(I)$$</p>
+</li></ul>
+
+<p>Draw a directed graph from these dependencies and annotate the nodes with their CPD. That makes a fully parameterized Bayesian network.</p>
+<p>Chain Rule for Bayesian Networks:
+$$P(G|I,D)P(S|I)P(L|G)P(D)P(I) = P(D,I,G,S,L)$$</p>
+<h2> <span class="mw-headline" id="Bayesian_Network:">Bayesian Network:</span></h2>
+<ul>
+<li>directed acyclic graph (DAG) G whose nodes represent the random variables $$X&#95;{1},..,X&#95;{n}$$</li>
+<li>for each node $$X&#95;{i}$$, there is a CPD: $$P(X&#95;i | Parents&#95;G(X&#95;i))$$</li>
+<li>represents a joint distribution via the chain rule for Bayesian Networks
+$$P(X&#95;1,..,X&#95;n) = \prod&#95;i P(X&#95;i|Parents&#95;G(X&#95;i))$$</li>
+</ul>
+<p>Show that BN is a Legal Distribution: </p>
+<blockquote>
+  <p>$$P \geq 0$$</p>
+  <p>P is a product of nonnegative CPDs. //</p>
+  <p>$$\sum P&#95;{X&#95;i,..,X&#95;n} = 1$$:</p>
+  <p>Use factorization of $$P$$ and reduce by separating out the summation.</p>
+</blockquote>
+<p>We say $$P$$ factorizes over graph $$G$$ if we can encode it with the chain rule.</p>
+<h2> <span class="mw-headline" id="Application:_genetic_inheritance">Application: genetic inheritance</span></h2>
+<h2> <span class="mw-headline" id="Video_Lecture_Table_of_Contents">Video Lecture Table of Contents</span></h2>
+<p><pre>
+0:00    Representation: Bayesian networks
+0:30    Student example
+2:06    Drawing the graph
+4:15    Node annotations: CPDs
+6:06    Chain rule for Bayesian networks
+8:30    Bayesian network definition
+10:00   A Bayesian Network is a legal distribution
+10:01   Legal distribution: P &gt;= 0
+10:45   Legal distribution: Sum of P == 1
+12:27   &quot;Pushing in&quot; summations
+14:18   Legal distribution: Factorizes over G
+14:48   Genetic inheritance
+16:18   Bayesian Networks for genetic inheritance
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Semantics_And_Factorization&amp;oldid=13637">https://share.coursera.org/wiki/index.php?title=PGM:Semantics_And_Factorization&amp;oldid=13637</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Probabilistic_Graphical_Models" title="Category:Probabilistic Graphical Models">Probabilistic Graphical Models</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

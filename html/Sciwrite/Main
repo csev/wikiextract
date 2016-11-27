@@ -1,0 +1,114 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sciwrite:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Writing_in_the_Sciences"><span class="tocnumber">1</span> <span class="toctext">Writing in the Sciences</span></a></li>
+<li class="toclevel-1"><a href="#Principles_of_effective_writing"><span class="tocnumber">2</span> <span class="toctext">Principles of effective writing</span></a></li>
+<li class="toclevel-1"><a href="#The_Writing_Process"><span class="tocnumber">3</span> <span class="toctext">The Writing Process</span></a></li>
+<li class="toclevel-1"><a href="#Recommended_Writing_Order"><span class="tocnumber">4</span> <span class="toctext">Recommended Writing Order</span></a></li>
+<li class="toclevel-1"><a href="#How_to_learn"><span class="tocnumber">5</span> <span class="toctext">How to learn</span></a></li>
+<li class="toclevel-1"><a href="#Computer_tools_for_better_scientific_writing"><span class="tocnumber">6</span> <span class="toctext">Computer tools for better scientific writing</span></a></li>
+<li class="toclevel-1"><a href="#Examples_of_what_not_to_do"><span class="tocnumber">7</span> <span class="toctext">Examples of what not to do</span></a></li>
+<li class="toclevel-1"><a href="#Books_on_writing"><span class="tocnumber">8</span> <span class="toctext">Books on writing</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Writing_in_the_Sciences">Writing in the Sciences</span></h1>
+<p>Welcome to the Writing in the Sciences' wiki. Feel free to create pages as needed. To see how to edit and add pages you can look at the <a href="/wiki/index.php/Help:Editing" title="Help:Editing"> Help</a> page on the left bar.</p>
+<p>Good writers have:
+<ul><li> Something to say.
+</li><li> Logical thinking.
+</li><li> A few simple, learnable rules of style</p>
+</li></ul>
+
+<p>This course focuses on those rules. <strong>Writing is a competency that can be learned with practice.</strong></p>
+<p>The benchmark for our writing is <em>what the reader understands</em>, that is, the ability to communicate an idea clearly and effectively in an elegant way. The former requires clear thinking and the latter revision and a good editor.</p>
+<blockquote>
+  <p><em>Complex ideas don't require complex language. Scientific writing should be easy and even enjoyable to read.</em></p>
+</blockquote>
+<h1> <span class="mw-headline" id="Principles_of_effective_writing">Principles of effective writing</span></h1>
+<p>In this course we will be focusing on three principles:</p>
+<ul>
+<li><a href="/wiki/index.php/Sciwrite:Cutting_the_clutter" title="Sciwrite:Cutting the clutter"> Get rid of the clutter</a></li>
+<li><a href="/wiki/index.php/Sciwrite:Active_voice" title="Sciwrite:Active voice"> Use active voice</a> (subject + verb + object)</li>
+<li><a href="/wiki/index.php/Sciwrite:Verbs" title="Sciwrite:Verbs"> Write using verbs</a>: strong verbs, avoid turning verbs into nouns, and don't bury the main verb.</li>
+</ul>
+<p>We also have some grammar tips relevant for scientific manuscript:
+<ul><li> <a href="/wiki/index.php/Sciwrite:Grammar_tips" title="Sciwrite:Grammar tips"> Grammar tips</a>
+</li><li> <a href="/wiki/index.php/Sciwrite:Punctuation" title="Sciwrite:Punctuation"> Punctuation</a>
+</li><li> <a href="/wiki/index.php/Sciwrite:Parallelism" title="Sciwrite:Parallelism"> Parallelism</a></p>
+</li></ul>
+
+<p>How to write paragraph:
+<ul><li> <a href="/wiki/index.php/Sciwrite:Paragraph" title="Sciwrite:Paragraph"> Paragraph</a></p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="The_Writing_Process">The Writing Process</span></h1>
+<ol>
+<li>Prewriting</li>
+<li>Writing</li>
+<li>Revision</li>
+</ol>
+<h1> <span class="mw-headline" id="Recommended_Writing_Order">Recommended Writing Order</span></h1>
+<ol>
+<li>Figures and Tables </li>
+<li>Results</li>
+<li>Methods</li>
+<li>Introduction</li>
+<li>Discussion</li>
+<li>Abstract</li>
+</ol>
+<h1> <span class="mw-headline" id="How_to_learn">How to learn</span></h1>
+<p>Writing for the Sciences employs cognitive learning methodologies which enable students from all walks of life to learn through listening, watching, reading, and interacting with information.</p>
+<p>Some advices on how to learn to write in the sciences include:</p>
+<ul>
+<li>Read and listen.</li>
+<li>Research your topic.</li>
+<li>Define terminology.</li>
+<li>Discuss your research.</li>
+<li>Write and review.</li>
+<li>Engage your readers. </li>
+<li>Avoid the "muse."</li>
+<li>Accept the complexities of writing.</li>
+<li>Revise. Elegance happens on revision, not the first draft.</li>
+<li>Learn how to remove the clutter. </li>
+<li>Utilize a good editor.</li>
+<li>Take risks (find your voice).</li>
+</ul>
+<h1> <span class="mw-headline" id="Computer_tools_for_better_scientific_writing">Computer tools for better scientific writing</span></h1>
+<p>I have turned some of the advice from the first module into scripts
+you can "run" on your plain text files. </p>
+<p><a rel="nofollow" class="external free" href="https://github.com/ivanistheone/writing_scripts">https://github.com/ivanistheone/writing_scripts</a></p>
+<h1> <span class="mw-headline" id="Examples_of_what_not_to_do">Examples of what not to do</span></h1>
+<p>Some examples in scientific literature represent common errors:
+<ul><li> The first sentence is often long and unengaging
+</li><li> Spunky verbs become clunky nouns
+</li><li> Use of vague words
+</li><li> Use of unnecessary jargon and acronyms
+</li><li> Passive voice (more detail later)
+</li><li> Distance between subject and main verb (more detail later)</p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="Books_on_writing">Books on writing</span></h1>
+<ul>
+<li>The Chicago Guide to Communicating Science, Scott L. Montgomery, The University of Chicago Press, 2003.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sciwrite:Main&amp;oldid=5691">https://share.coursera.org/wiki/index.php?title=Sciwrite:Main&amp;oldid=5691</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

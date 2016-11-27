@@ -1,0 +1,25 @@
+### What makes a secure cipher?
+
+Attackers abilities: **Obtain one ciphertext** (for now)
+
+Possible security requirements:
+
+attempt #1: **Attacker can not recover secret key**
+
+If we take a very simple encryption algorithm, E(k,m)=m that simply outputs the message itself, the attacker could not learn anything about the key but know the message anyway.
+
+attempt #2: **attacker can not recover all of plaintext**
+
+The attacker may recover most of the plaintext, which already may be problematic enough.
+
+Shannon's idea: **CT should reveal no "info" about PT**
+
+Even though semantic security is weaker than Shannon's perfect security it still seems to be really demanding. Boneh demonstrates this with the example that the recovery of a one mere bit from the CT already makes the encryption fail to be semantically secure. However, it is not so demanding in the sense that stream ciphers with much smaller keylengths than the messagelength satisfy semantic security (provided the PRG is secure, i.e. unpredictable) as opposed to perfectly secure ciphers where the key must be at least as long as the message.
+
+### Definition of semantic security
+
+For $$b = 0, 1$$ define $$\text{EXP}(b)$$ as the guess $$b'$$ about the value of $$b$$ of an adversary $$A$$ who sent two messages $$m_0, m_1 \in \mathcal{M}: \lvert m_0 \rvert = \lvert m_1 \rvert$$ and received $$c \leftarrow E(k, m_b)$$ in response.
+
+With $$W_b:= [ \text{event that EXP}(b) = 1 ]$$ and $$\text{Adv}_{\scriptsize \text{SS}}[A, E]:= \lvert \text{Pr}[W_0] - \text{Pr}[W_1] \rvert \in [0, 1]$$, $$E$$ is defined as _semantically secure_ if for all "efficient" $$A$$ $$\text{Adv}_{\scriptsize \text{SS}}[A, E]$$ is negligible
+
+$$\Rightarrow$$ for all explicit $$m_0, m_1 \in \mathcal{M}:\; \left\lbrace E(k, m_0) \right\rbrace \approx_{\scriptsize P} \left\lbrace E(k, m_1) \right\rbrace$$

@@ -1,0 +1,222 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Welcome to the wiki page for PGM-class!</p>
+<p>Please join in and help us create the best learning environment possible for your fellow PGM classmates.</p>
+<p>If you've previously asked a question on the forum and received a thoughtful and helpful answer, please write out the question and answer in the appropriate page on this wiki; that will save other students a lot of time, and you'll be giving back to the community!</p>
+<p>Feel free to create pages as needed. To see how to edit/create a page, see "Help" on the left navbar.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">1.1</span> <span class="toctext">Week 1</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Introduction_and_Overview"><span class="tocnumber">1.1.1</span> <span class="toctext">Introduction and Overview</span></a></li>
+<li class="toclevel-3"><a href="#Bayesian_Network_Fundamentals"><span class="tocnumber">1.1.2</span> <span class="toctext">Bayesian Network Fundamentals</span></a></li>
+<li class="toclevel-3"><a href="#Template_Models"><span class="tocnumber">1.1.3</span> <span class="toctext">Template Models</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">1.2</span> <span class="toctext">Week 2</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Structured_CPDs"><span class="tocnumber">1.2.1</span> <span class="toctext">Structured CPDs</span></a></li>
+<li class="toclevel-3"><a href="#Markov_Network_Fundamentals"><span class="tocnumber">1.2.2</span> <span class="toctext">Markov Network Fundamentals</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">1.3</span> <span class="toctext">Week 3</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Representation_Wrapup:_Knowledge_Engineering"><span class="tocnumber">1.3.1</span> <span class="toctext">Representation Wrapup: Knowledge Engineering</span></a></li>
+<li class="toclevel-3"><a href="#Inference:_Variable_Elimination"><span class="tocnumber">1.3.2</span> <span class="toctext">Inference: Variable Elimination</span></a></li>
+<li class="toclevel-3"><a href="#Inference:_Belief_Propagation.2C_Part_1"><span class="tocnumber">1.3.3</span> <span class="toctext">Inference: Belief Propagation, Part 1</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">1.4</span> <span class="toctext">Week 4</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Inference:_Belief_Propagation.2C_Part_2"><span class="tocnumber">1.4.1</span> <span class="toctext">Inference: Belief Propagation, Part 2</span></a></li>
+<li class="toclevel-3"><a href="#Inderence:_MAP_Estimation.2C_Part_1"><span class="tocnumber">1.4.2</span> <span class="toctext">Inderence: MAP Estimation, Part 1</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_5"><span class="tocnumber">1.5</span> <span class="toctext">Week 5</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Inference:_MAP_Estimation.2C_Part2"><span class="tocnumber">1.5.1</span> <span class="toctext">Inference: MAP Estimation, Part2</span></a></li>
+<li class="toclevel-3"><a href="#Inference:_Sampling_Methods"><span class="tocnumber">1.5.2</span> <span class="toctext">Inference: Sampling Methods</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_6"><span class="tocnumber">1.6</span> <span class="toctext">Week 6</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Inference:_Temporal_Models_and_Wrap-up"><span class="tocnumber">1.6.1</span> <span class="toctext">Inference: Temporal Models and Wrap-up</span></a></li>
+<li class="toclevel-3"><a href="#Inference:_Decision_Theory"><span class="tocnumber">1.6.2</span> <span class="toctext">Inference: Decision Theory</span></a></li>
+<li class="toclevel-3"><a href="#Learning:_Overview"><span class="tocnumber">1.6.3</span> <span class="toctext">Learning: Overview</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_7"><span class="tocnumber">1.7</span> <span class="toctext">Week 7</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Learning:_Parameter_Estimation_in_BNs"><span class="tocnumber">1.7.1</span> <span class="toctext">Learning: Parameter Estimation in BNs</span></a></li>
+<li class="toclevel-3"><a href="#Learning:_Parameter_Estimation_in_MNs"><span class="tocnumber">1.7.2</span> <span class="toctext">Learning: Parameter Estimation in MNs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_8"><span class="tocnumber">1.8</span> <span class="toctext">Week 8</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Structure_Learning"><span class="tocnumber">1.8.1</span> <span class="toctext">Structure Learning</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_9"><span class="tocnumber">1.9</span> <span class="toctext">Week 9</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Learning_With_Incomplete_Data"><span class="tocnumber">1.9.1</span> <span class="toctext">Learning With Incomplete Data</span></a></li>
+<li class="toclevel-3"><a href="#Learning:_Wrapup"><span class="tocnumber">1.9.2</span> <span class="toctext">Learning: Wrapup</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Problem_Sets"><span class="tocnumber">2</span> <span class="toctext">Problem Sets</span></a></li>
+<li class="toclevel-1"><a href="#Programming_Assignments"><span class="tocnumber">3</span> <span class="toctext">Programming Assignments</span></a></li>
+<li class="toclevel-1"><a href="#Miscellaneous"><span class="tocnumber">4</span> <span class="toctext">Miscellaneous</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">5</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h2>
+<p>Different students have different learning styles, and having written notes to accompany the video lectures will be very useful to students who prefer learning by reading. Referring to notes is also a fast way of revision, and of course, writing/editing notes will help you to master the material!</p>
+<p>This is the link to the video lectures <a rel="nofollow" class="external free" href="https://class.coursera.org/pgm/lecture/index">https://class.coursera.org/pgm/lecture/index</a></p>
+<h3> <span class="mw-headline" id="Week_1">Week 1</span></h3>
+<h4> <span class="mw-headline" id="Introduction_and_Overview">Introduction and Overview</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Overview_and_Motivation" title="PGM:Overview and Motivation">Overview and Motivation</a>  </li>
+<li><a href="/wiki/index.php/PGM:Distributions" title="PGM:Distributions">Distributions</a>  </li>
+<li><a href="/wiki/index.php/PGM:Factors" title="PGM:Factors">Factors</a>  </li>
+</ul>
+<h4> <span class="mw-headline" id="Bayesian_Network_Fundamentals">Bayesian Network Fundamentals</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Semantics_And_Factorization" title="PGM:Semantics And Factorization">Semantics And Factorization</a>  </li>
+<li><a href="/wiki/index.php/PGM:Reasoning_Patterns" title="PGM:Reasoning Patterns">Reasoning Patterns</a>  </li>
+<li><a href="/wiki/index.php/PGM:Flow_of_Probabilistic_Influence" title="PGM:Flow of Probabilistic Influence">Flow of Probabilistic Influence</a>  </li>
+<li><a href="/wiki/index.php/PGM:Conditional_Independence" title="PGM:Conditional Independence">Conditional Independence</a>  </li>
+<li><a href="/wiki/index.php/PGM:Independencies_in_Bayesian_Networks" title="PGM:Independencies in Bayesian Networks">Independencies in Bayesian Networks</a>  </li>
+<li><a href="/wiki/index.php/PGM:Naive_Bayes" title="PGM:Naive Bayes">Naive Bayes</a>  </li>
+<li><a href="/wiki/index.php/PGM:Application_-_Medical_Diagnosis" title="PGM:Application - Medical Diagnosis">Application - Medical Diagnosis</a>  </li>
+<li><a href="/wiki/index.php/PGM:Knowledge_Engineering_Example_-_SAMIAM" title="PGM:Knowledge Engineering Example - SAMIAM">Knowledge Engineering Example - SAMIAM</a>  </li>
+</ul>
+<h4> <span class="mw-headline" id="Template_Models">Template Models</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Overview_of_Template_Models" title="PGM:Overview of Template Models">Overview of Template Models</a>  </li>
+<li><a href="/wiki/index.php/PGM:Temporal_Models_-_DBNs" title="PGM:Temporal Models - DBNs">Temporal Models - DBNs</a>  </li>
+<li><a href="/wiki/index.php/PGM:Temporal_Models_-_HMMs" title="PGM:Temporal Models - HMMs">Temporal Models - HMMs</a>  </li>
+<li><a href="/wiki/index.php/PGM:Plate_Models" title="PGM:Plate Models">Plate Models</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_2">Week 2</span></h3>
+<h4> <span class="mw-headline" id="Structured_CPDs">Structured CPDs</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Structured_CPDs" title="PGM:Structured CPDs">Structured CPDs</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Markov_Network_Fundamentals">Markov Network Fundamentals</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Markov_Network_Fundamentals" title="PGM:Markov Network Fundamentals">Markov Network Fundamentals</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_3">Week 3</span></h3>
+<h4> <span class="mw-headline" id="Representation_Wrapup:_Knowledge_Engineering">Representation Wrapup: Knowledge Engineering</span></h4>
+<h4> <span class="mw-headline" id="Inference:_Variable_Elimination">Inference: Variable Elimination</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Inference:_Variable_Elimination" title="PGM:Inference: Variable Elimination">Inference: Variable Elimination</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Inference:_Belief_Propagation.2C_Part_1">Inference: Belief Propagation, Part 1</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Inference:_Belief_Propagation_Part_1" title="PGM:Inference: Belief Propagation Part 1">Inference: Belief Propagation Part 1</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_4">Week 4</span></h3>
+<h4> <span class="mw-headline" id="Inference:_Belief_Propagation.2C_Part_2">Inference: Belief Propagation, Part 2</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Inference:_Belief_Propagation_Part_2" title="PGM:Inference: Belief Propagation Part 2">Inference: Belief Propagation Part 2</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Inderence:_MAP_Estimation.2C_Part_1">Inderence: MAP Estimation, Part 1</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Inference:_MAP_Estimation_Part_1" title="PGM:Inference: MAP Estimation Part 1">Inference: MAP Estimation Part 1</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_5">Week 5</span></h3>
+<h4> <span class="mw-headline" id="Inference:_MAP_Estimation.2C_Part2">Inference: MAP Estimation, Part2</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Inference:_MAP_Estimation_Part_2" title="PGM:Inference: MAP Estimation Part 2">Inference: MAP Estimation Part 2</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Inference:_Sampling_Methods">Inference: Sampling Methods</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Inference:_Sampling_Methods" title="PGM:Inference: Sampling Methods">Inference: Sampling Methods</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_6">Week 6</span></h3>
+<h4> <span class="mw-headline" id="Inference:_Temporal_Models_and_Wrap-up">Inference: Temporal Models and Wrap-up</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Inference:_Temporal_Models_and_Wrap-up" title="PGM:Inference: Temporal Models and Wrap-up">Inference: Temporal Models and Wrap-up</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Inference:_Decision_Theory">Inference: Decision Theory</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Decision_Theory" title="PGM:Decision Theory">Decision Theory</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Learning:_Overview">Learning: Overview</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Learning" title="PGM:Learning">Learning</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_7">Week 7</span></h3>
+<h4> <span class="mw-headline" id="Learning:_Parameter_Estimation_in_BNs">Learning: Parameter Estimation in BNs</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Learning:_Parameter_Estimation_in_BNs" title="PGM:Learning: Parameter Estimation in BNs">Learning: Parameter Estimation in BNs</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Learning:_Parameter_Estimation_in_MNs">Learning: Parameter Estimation in MNs</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Learning:_Parameter_Estimation_in_MNs" title="PGM:Learning: Parameter Estimation in MNs">Learning: Parameter Estimation in MNs</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_8">Week 8</span></h3>
+<h4> <span class="mw-headline" id="Structure_Learning">Structure Learning</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Learning:_Structure_Learning" title="PGM:Learning: Structure Learning">Learning: Structure Learning</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_9">Week 9</span></h3>
+<h4> <span class="mw-headline" id="Learning_With_Incomplete_Data">Learning With Incomplete Data</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Learning:_Learning_With_Incomplete_Data" title="PGM:Learning: Learning With Incomplete Data">Learning: Learning With Incomplete Data</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Learning:_Wrapup">Learning: Wrapup</span></h4>
+<ul>
+<li><a href="/wiki/index.php/PGM:Learning:_Wrapup" title="PGM:Learning: Wrapup">Learning: Wrapup</a></li>
+<li><a href="/wiki/index.php/PGM:Class_Summary" title="PGM:Class Summary">Class Summary</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Problem_Sets">Problem Sets</span></h2>
+<p>Did you come across a problem whose wording was unclear? Without explicitly giving away the answers, help your friends by clarifying things on the wiki. </p>
+<p><a href="/wiki/index.php/PGM:Problem_Set:_Bayesian_Network_Fundamentals" title="PGM:Problem Set: Bayesian Network Fundamentals">Problem Set: Bayesian Network Fundamentals</a><br />
+<a href="/wiki/index.php/PGM:Problem_Set:_Template_Models" title="PGM:Problem Set: Template Models">Problem Set: Template Models</a></p>
+<p><a href="/wiki/index.php/PGM:Problem_Set:_Structured_CPDs" title="PGM:Problem Set: Structured CPDs">Problem Set: Structured CPDs</a>  </p>
+<p><a href="/wiki/index.php/PGM:Problem_Set:_MAP_Inference_and_Week_4_Review" title="PGM:Problem Set: MAP Inference and Week 4 Review">Problem Set: MAP Inference and Week 4 Review</a></p>
+<h2> <span class="mw-headline" id="Programming_Assignments">Programming Assignments</span></h2>
+<p>Spent hours figuring out a particularly tricky part of the assignments, or solved a nasty installation issue? Help your fellow students navigate the programming assignments by writing up these pages.</p>
+<p><a href="/wiki/index.php/PGM:Programming_Assignment_1" title="PGM:Programming Assignment 1"> Programming Assignment 1: Introduction to Bayesian Networks</a><br />
+<a href="/wiki/index.php/PGM:Programming_Assignment_2" title="PGM:Programming Assignment 2"> Programming Assignment 2: Bayes Nets for Genetic Networks</a><br />
+<a href="/wiki/index.php/PGM:Programming_Assignment_3" title="PGM:Programming Assignment 3"> Programming Assignment 3: Markov Networks for OCR</a><br />
+<a href="/wiki/index.php/PGM:Programming_Assignment_4" title="PGM:Programming Assignment 4"> Programming Assignment 4: Exact Inference</a> </p>
+<p><a href="/wiki/index.php/PGM:Programming_Assignment_5" title="PGM:Programming Assignment 5"> Programming Assignment 5: Approximate Inference</a> </p>
+<p><a href="/wiki/index.php/PGM:Installing_Octave" title="PGM:Installing Octave">Installing Octave</a><br />
+<a href="/wiki/index.php/PGM:Octave_Tips_and_Tricks" title="PGM:Octave Tips and Tricks">Octave Tips and Tricks</a><br />
+<a href="/wiki/index.php/PGM:SamIam_Tips_and_Tricks" title="PGM:SamIam Tips and Tricks">SamIam Tips and Tricks</a></p>
+<h2> <span class="mw-headline" id="Miscellaneous">Miscellaneous</span></h2>
+<ul>
+<li><a href="/wiki/index.php/PGM:Suggestions_for_the_class" title="PGM:Suggestions for the class">Suggestions for the class</a></li>
+<li><a href="/wiki/index.php/PGM:LaTeX" title="PGM:LaTeX">LaTeX guide</a> a list of $$\LaTeX$$ commands which are relevant to this PGM course</li>
+<li><a href="/wiki/index.php/PGM:Virtual_machine_for_Programming_Assignments" title="PGM:Virtual machine for Programming Assignments">PGM:Virtual machine for Programming Assignments</a></li>
+<li><a href="/wiki/index.php/PGM:Acronyms" title="PGM:Acronyms">Acronyms used in this course</a></li>
+<li><a href="/wiki/index.php/PGM:Python_notes" title="PGM:Python notes">Notes about programming PGM's in Python</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Categories">Categories</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 8/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Main&amp;oldid=20174">https://share.coursera.org/wiki/index.php?title=PGM:Main&amp;oldid=20174</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:AI" title="Category:AI">AI</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Probabilistic_Graphical_Models" title="Category:Probabilistic Graphical Models">Probabilistic Graphical Models</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

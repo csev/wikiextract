@@ -1,0 +1,34 @@
+**active tissue** Tissue in which, following some trigger, electrical properties such as resistance can change. 
+  
+**conductivity** The measure of how many or how easily a charge moves.  
+  
+**ion** An atom or molecule with a charge due to an unequal number of protons (+) and electrons (-).  
+  
+**current flux (J)** The force per unit area. Is proportional to the force, multiplied by the conductivity.  
+   
+**electric field (E)** A measure of the change in potential with distance.  
+  
+**field point (p)** A point in a selected, variable location located away from the source and the sink out in the field.  
+   
+**force (F)** Equal to the electric field times the charge (q).  
+  
+**membrane** A thin material around cells composed of a lipid bilayer with hydrophilic heads and hydrophobic tails. A membrane is a super good conductor.  
+  
+**passive tissue** Tissue in which electrical properties, such as resistance, are maintained without change as time passes.  
+  
+**potential** The measure of the electrical energy available at one point.   
+  
+**resistance**  
+  
+**resisitivity**  
+  
+**source** Origin of current (flow of electricity).  
+  
+**sink** Destination of current.
+
+**voltage clamp** In bioelectricity, a voltage clamp is an experimental technique. An electrode is placed inside the membrane, and another electrode outside. The voltage between the two electrodes is set ("clamped") to a certain value and held constant for the duration of the clamp. In most cases there is a variable current thereafter, and the "experimental data" is the record of the current that follows the onset of the clamp.
+
+The idea of a voltage clamp is to create situations where the values of alpha and beta are not changing and Vm is known, so that what is being measured, the current, reflects changes in the ionic probabilities with time, but not other things.
+
+The majority of situations involve a transitio between two or more clamped voltages. 
+Voltage clamps do not occur naturally, except that one might consider the membrane at rest "clamped" by nature. (edited from prof RC Barr's note on Voltage clamps in Hints and Kinks)

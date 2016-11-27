@@ -1,0 +1,55 @@
+Statistics One Wiki
+
+# Notes from Slides
+## Lecture 1:
+- Confound was given a brief treatment in the presentation and not formally defined. 
+Confound - is an extraneous variable in a statistical model that correlates (positively or negatively) with both the dependent variable and the independent variable [wikipedia link](http://en.wikipedia.org/wiki/Confounding).
+
+# Notes on Labs
+## Lab 1 
+This lab teaches how to install R, which is programming software used to analyze data sets. Lab 1 also demonstrates some functions available in R. Functions are pre-built sets of instructions that can perform tasks. For instance, in lab 1, you will learn how to create a <i> vector</i>, which is a fancy way of saying "list" (more properly, a vector is a one-dimensional array). 
+
+To install R, you will need to have administrative rights on your computer. 
+
+### R on Windows and scripts
+When you have downloaded, installed and run R, go to File, Open Script. For Lab 1, this file is Stats1.13.Lab.01.R (You did download the Lab 1 file from the Resources tab, didn't you?)
+Try selecting a few lines of text, and right-click and select the top-most option "Run line or selection". The commands you have selected will be run in the R Console window.
+
+## Lab 2
+During the video for this lab, Professor Conway refers to the R scripts and data that have been made available. These can be found in the "R Resources" link under the left-side navigation bar. The direct link is: https://class.coursera.org/stats1-002/wiki/view?page=Resources.
+
+To download the scripts and data for the lab in a Windows environment, right click on the link and select "Save Link As..." This opens a dialog box that asks you want application to use to open it. I found when I tried to use Notepad (the default for my Windows machine), the resulting document did not have good formatting (no line breaks). Instead, I selected "Other" and then Windows Wordpad Application. This preserved the line breaks, making the document easier to read and more like the example Prof. Conway uses during the lab. 
+
+Early in Lab 2, Prof. Conway tells you how to get the working directory for your computer by using the function getwd(). You need to do this in order to know what directory to use when you save the downloaded scripts and data for your labs. R will look in your working directory for the specified documents when you use functions like read.table(), and if they are not there, you will get an error that typically ends "No such file or directory". 
+
+A subtle note when copying the text from the lab script into R to execute: In the example, Prof. Conway has us create 6 histograms. However, the first time I copied and executed, only 5 histograms appeared for me. This turned out to be because I had not copied the end of line break from the script. When I hit enter after the last line, the 6th histogram appeared. So, a best practice is to copy the blank line after a set of text from the lab script, so the final line of the script will execute.
+
+## Lab 3
+There is a typo in the comments about what packages to install. The documentation and Prof. Conway cite package "gclus" but the comments say "glus".
+
+<blockquote> # If necessary, install packages
+# install.packages("psych")
+# install.packages("gclus")
+# install.packages("rgl")
+</blockquote>
+
+The name of the datafile available in the Resources section is *NOT* the same as the name of the datafile provided in the script!   
+-- Actual name of datafile is:  "stats1`_datafiles_`Stats1.13.Lab.03.txt"  
+-- Script says name of datafile is ""Stats1.13.Lab.03.txt"  
+
+# Notes on Quizzes
+
+## How the Quizzes are graded
+In order to grade the quiz, the instructors have set up an environment that expects to see <i>exactly</i> the right answer. When you submit an answer, there is a background function (let's call it the grading robot) that examines what you typed character by character and compares it to the correct answer. If you have an accurate answer, but add additional characters (such as comments), the grading robot will mark it as incorrect. This makes it important to answer ONLY the last question that was asked. You do not need to show intermediate work, such as the steps you had to take in R to load the "psych" library. Just show the last function you entered in R to get the answer.
+
+## Quiz 1
+This quiz is your first chance to use the R programming language. 
+
+# Notes
+1. [Anabela's Statistics One course notes](http://www.livetag.com/moodleassets/stats/stats1.swf) by [Anabela Pinto](https://www.coursera.org/user/i/1c32bfb4137178d2f7364b5ea9624106)
+
+# about eta-squared:clear explanation about eta squared used to demonstrate effect size in ANOVA:
+https://www.msu.edu/~levinet/eta%20squared%20hcr.pdf
+
+# R-resource
+http://stats.stackexchange.com/

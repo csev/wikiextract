@@ -1,0 +1,77 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Creating an automated test in Octave</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>You might want to create a set of automated tests so that every time you make a change you can quickly check that you haven't broken anything.</p>
+<p>The course staff have already provided all the samples needed for this test suite. For example, in assignment 2 the samples reside in <code>sampleGeneticNetworks.m</code>.</p>
+<p>To turn it into an automated test, first create <code>CompareFactors.m</code> with the following content:</p>
+<code><pre>function CompareFactors(expected, actual)
+
+epsilon = 1e-4;
+
+different = 0;
+
+if ~all(size(expected.var) == size(actual.var))
+    warning('Different variables!');
+    expected.var, actual.var
+    different = 1;  
+elseif ~all(expected.var == actual.var)
+    warning('Different variables!');
+    expected.var, actual.var
+    different = 1;
+end
+
+if ~all(size(expected.card) == size(actual.card))
+    warning('Different cardinalities!');
+    expected.card, actual.card
+    different = 1;
+elseif ~all(expected.card == actual.card)
+    warning('Different cardinalities!');
+    expected.card, actual.card
+    different = 1;
+end
+
+if length(expected.val) == length(actual.val) &amp;&amp; max(abs(expected.val - actual.val)) &lt;= epsilon
+    disp('Same vals');
+else
+    disp('Different vals');
+    different = 1;
+end
+
+if different
+    disp([inputname(1), ':'])
+    expected
+    disp([inputname(2), ':'])
+    actual
+end
+</pre></code>
+<p>Now if in sampleGeneticNetworks.m you have e.g. the following lines:</p>
+<code><pre>phenotypeFactor = struct('var', [3,1], 'card', [2,3], 'val', [1,0,1,0,0,1]);&#160;% Comment out this line for testing
+% phenotypeFactor = phenotypeGivenGenotypeMendelianFactor(isDominant, genotypeVar, phenotypeVar);
+</pre></code>
+<p>Replace them with</p>
+<code><pre>expPhenotypeFactor = struct('var', [3,1], 'card', [2,3], 'val', [1,0,1,0,0,1]);&#160;% Comment out this line for testing
+actPhenotypeFactor = phenotypeGivenGenotypeMendelianFactor(isDominant, genotypeVar, phenotypeVar);
+CompareFactors(expPhenotypeFactor, actPhenotypeFactor);
+</pre></code>
+<p>Here, you assign the result of your function to one variable and the given correct answer to another. The new function, <code>CompareFactors</code>, either prints <code>Same vals</code> or an error message. Add similar calls to <code>CompareFactors</code> for all functions to be tested.</p>
+<p>Note that the output of <code>constructGeneticNetwork</code> should be compared not to <code>load('sampleFactorList.mat')</code> but to <code>load('sampleFactorList.mat').sampleFactorList</code>. Also, you have to loop over the individual factors.</p>
+<p>Now you are all set. Type <code>CompareFactors</code> in Octave. If everything is OK, you should see many lines with <code>Same vals</code>. If not, the error message will include the external names of the parameters, such as <code>expPhenotypeFactor</code> and <code>actPhenotypeFactor</code>, and this way you will know which function produced an incorrect result.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 10/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Creating_an_automated_test_in_Octave&amp;oldid=250">https://share.coursera.org/wiki/index.php?title=PGM:Creating_an_automated_test_in_Octave&amp;oldid=250</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

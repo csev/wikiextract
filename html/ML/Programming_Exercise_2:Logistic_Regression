@@ -1,0 +1,148 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 2:Logistic Regression</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Note for MATLAB users:
+If you are using MATLAB version R2015a or later, the fminunc() function has been changed in this version. The function works better, but does not give the expected result for Figure 5 in ex2.pdf, and it throws some warning messages (about a local minimum) when you run ex2_reg.m. This is normal, and you should still be able to submit your work to the grader.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Debugging_Tip"><span class="tocnumber">1</span> <span class="toctext">Debugging Tip</span></a></li>
+<li class="toclevel-1"><a href="#Typos_in_the_lectures_.28updated.29:"><span class="tocnumber">2</span> <span class="toctext">Typos in the lectures (updated):</span></a></li>
+<li class="toclevel-1"><a href="#Gradient_and_theta_values_for_ex2.m"><span class="tocnumber">3</span> <span class="toctext">Gradient and theta values for ex2.m</span></a></li>
+<li class="toclevel-1"><a href="#mapFeature.28.29_discussion:"><span class="tocnumber">4</span> <span class="toctext">mapFeature() discussion:</span></a></li>
+<li class="toclevel-1"><a href="#plotData.m_-_color_attributes"><span class="tocnumber">5</span> <span class="toctext">plotData.m - color attributes</span></a></li>
+<li class="toclevel-1"><a href="#Logistic_Regression_Gradient"><span class="tocnumber">6</span> <span class="toctext">Logistic Regression Gradient</span></a></li>
+<li class="toclevel-1"><a href="#Sigmoid_function"><span class="tocnumber">7</span> <span class="toctext">Sigmoid function</span></a></li>
+<li class="toclevel-1"><a href="#Decision_Boundary"><span class="tocnumber">8</span> <span class="toctext">Decision Boundary</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lambda_effect_over_Decision_Boundary"><span class="tocnumber">8.1</span> <span class="toctext">Lambda effect over Decision Boundary</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex2/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+<h1> <span class="mw-headline" id="Typos_in_the_lectures_.28updated.29:">Typos in the lectures (updated):</span></h1>
+<p>There are typos in the week 3 lectures, specifically for regularized logistic regression. This could create some confusion while doing the the last part of exercise 2. The equations in ex2.pdf are correct.</p>
+<h1> <span class="mw-headline" id="Gradient_and_theta_values_for_ex2.m">Gradient and theta values for ex2.m</span></h1>
+<p>Here are the values of both cost J and the gradients for the "initial theta (zeros)" test (ex2.pdf Section 1.2.2):</p>
+<code><pre>Cost at initial theta (zeros): 0.693147
+Gradient at initial theta (zeros):
+ -0.100000
+ -12.009217
+ -11.262842
+</pre></code>
+<p>Here are the values for both cost J and theta for the "theta found by fminunc" test (ex2.pdf Section 1.2.3):</p>
+<code><pre>Cost at theta found by fminunc: 0.203498
+theta:
+ -25.164593
+  0.206261
+  0.201499
+</pre></code>
+<h1> <span class="mw-headline" id="mapFeature.28.29_discussion:">mapFeature() discussion:</span></h1>
+<p>For two features $$x&#95;1$$ and $$x&#95;2$$, mapFunction calculates following terms.
+$$
+&#92; 1 ,&#92; x&#95;1 ,&#92; x&#95;2 ,&#92; x&#95;1^2 ,&#92; x&#95;1x&#95;2 ,&#92; x&#95;2^2 ,&#92; x&#95;1^3 ,&#92; x&#95;1^2x&#95;2 ,&#92; x&#95;1x&#95;2^2 ,&#92; x&#95;2^3 ,&#92; x&#95;1^4 ,&#92; x&#95;1^3x&#95;2 ,&#92; x&#95;1^2x&#95;2^2 ,&#92; x&#95;1x&#95;2^3 ,&#92; x&#95;2^4 ,&#92; x&#95;1^5 ,&#92; x&#95;1^4x&#95;2 ,&#92; x&#95;1^3x&#95;2^2 ,&#92; x&#95;1^2x&#95;2^3 ,&#92; x&#95;1x&#95;2^4 ,&#92; x&#95;2^5 ,&#92; x&#95;1^6 ,&#92; x&#95;1^5x&#95;2 ,&#92; x&#95;1^4x&#95;2^2 ,&#92; x&#95;1^3x&#95;2^3 ,&#92; x&#95;1^2x&#95;2^4 ,&#92; x&#95;1x&#95;2^5 ,&#92; x&#95;2^6.
+$$</p>
+<p>Not 100% sure about this, so please take this with a grain of salt.</p>
+<p>It appears to me that the "mapFeature" vector displayed on page 9 of the ex2.pdf is the transpose of what is intended.  Also, it would be more clear if each of the variables carried the (i) superscript denoting the trial</p>
+<p>$$
+mapFeature(x^{(i)}) = \left[ \begin{array} {c}  1 &#92;&#92; x&#95;{1}^{(i)} &#92;&#92; x&#95;{2}^{(i)} &#92;&#92; \left( x&#95;{1}^{(i)} \right)^{2} &#92;&#92; x&#95;{1}^{(i)} x&#95;{2}^{(i)} &#92;&#92; \left( x&#95;{2}^{(i)} \right)^{2} &#92;&#92; \left( x&#95;{1}^{(i)} \right)^{3}  &#92;&#92; \vdots &#92;&#92; x&#95;{1}^{(i)} \left( x&#95;{2}^{(i)} \right)^{5} &#92;&#92; \left( x&#95;{2}^{(i)} \right)^{6} \end{array} \right] ^{T}
+$$</p>
+<p>Of course this assumes exactly two features in the original dataset.  I think of this more as "mapTrial" than as "mapFeature" because what we're really doing is mapping the original trials with two features onto a new set of trials with 28 features.  </p>
+<p>I would not have thought twice about this, had I not gulped hard at the imprecise use of the word "dimensions" in the phase, "a 28-dimensional vector" in the text which follows the expression.</p>
+<p>This is how I interpreted it for the homework, and the results were accepted.  But if I'm way off base, please delete this wiki entry.</p>
+<p>===========================================================================</p>
+<p>I found this Octave expression quite useful for the regularization programming exercise:</p>
+<code><pre> ones(size(theta)) - eye(size(theta))
+</pre></code>
+<p>===========================================================================</p>
+<p>I found these other Octave expressions which also are quite useful for the regularization programming exercise:</p>
+<code><pre> theta(2:size(theta))
+ theta(2:end)
+</pre></code>
+<p>===========================================================================</p>
+<h1> <span class="mw-headline" id="plotData.m_-_color_attributes">plotData.m - color attributes</span></h1>
+<p>The plot() attribute "MarkerFaceColor" may not be supported on your version of Octave or MATLAB. You may need to modify it. Use the command "plot help" to see what attributes are supported.
+(You might just try to replace "MarkerFaceColor" with "MarkerFace", then the plot should work, although you get a warning.)</p>
+<h1> <span class="mw-headline" id="Logistic_Regression_Gradient">Logistic Regression Gradient</span></h1>
+<p>[w.r.t.=with respect to]</p>
+<p>Don't stumble over terminology - "the partial derivatives of the cost w.r.t. each parameter in theta" are: </p>
+<p>$$
+\large
+\frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})
+$$</p>
+<p>I was confused about this and kept trying to return the updated theta values . . . </p>
+<p>UPDATE (the above was really helpful, thank you for putting it here)
+As an additional hint: 
+the instructions say: "[...] the gradient of the cost  with respect to the parameters" - you're only asked for a gradient, don't overdo it (see above). 
+The fact that you're not given alpha should be a hint in itself. You don't need it. You won't be iterating neither.</p>
+<h1> <span class="mw-headline" id="Sigmoid_function">Sigmoid function</span></h1>
+<p>I saw some confusion on how to implement the sigmoid function in the forum. There are two main areas that might cause trouble.</p>
+<p>1) Trying to implement the hypothesis for logistic regression in the sigmoid function:</p>
+<p>This exercise has nothing to do with H(X) = (theta' * X). Instead, this exercise requires us to implement a generic sigmoid function that can be used in later exercises. Don't get caught up on logistic regression when implementing your sigmoid function. </p>
+<p>2) Handling scalars, vectors and matrices as input.</p>
+<p>Since the sigmoid function may take a scalar, vector or matrix, you need to implement a solution that takes all three into consideration. My first thought was to use if statements using the size of the input, but with element-wise operators, you can complete the assignment in one line. </p>
+<p>for instance, the following statement will return an error in Octave.
+    3 / [1 2 3; 4 5 6; 7 8 9]</p>
+<p>However, 
+    3 ./ [1 2 3; 4 5 6; 7 8 9] returns [1/3 2/3 3/3; 4/3 5/3 6/3; 7/3 8/3 9/3] (in decimal form, not fractions like I used)</p>
+<p>Also, 
+    2^[1 2 3; 4 5 6] fails, but 2.^[1 2 3; 4 5 6] returns [2 4 8; 16 32 64]</p>
+<p>So, using element-wise operations works on scalars, vectors and matrices, returning the same type of element that was operated on.   2.^(scalar) returns a scalar, 2.^[vector] returns a vector and x.^[matrix] returns a matrix.</p>
+<p>You could also use arrayfun in Octave to achieve the same result. I wonder which is a faster implementation.</p>
+<h1> <span class="mw-headline" id="Decision_Boundary">Decision Boundary</span></h1>
+<p>Thoughts regarding why the equation, $$theta&#95;{1} + theta&#95;{2}x&#95;{2} + theta&#95;{3}x&#95;{3}$$ = 0, is set equal to 0 for determining a decision boundary:</p>
+<p>In this exercise, we're solving a <strong>classification</strong> problem using logistic regression.<br />
+<ul><li> The hypothesis equation is $$h&#95;{\theta}(x) = g(z)$$, where $$g$$ is the sigmoid function $$\dfrac{1}{1+e^{-z}}$$, and $$z = \theta^{T}x$$
+</li><li> For classification, we usually interpret a hypothesis value $$h&#95;{\theta}(x) \geq 0.5$$ as predicting class "1"
+</li><li> Remember, $$h&#95;{\theta}(x) = g(z) = g(\theta^{T}x)$$ for logistic regression
+</li><li> This means that $$g(\theta^{T}x) \geq 0.5$$ predicts class "1"
+</li><li> The sigmoid function $$g(z)$$ outputs $$\geq 0.5$$ when $$z \geq 0$$ (look at a graph of the sigmoid function)
+</li><li> Remember, $$z = \theta^{T}x$$
+</li><li> So, $$\theta^{T}x \geq 0$$ predicts class "1"
+</li><li> Remember $$\theta^{T}x = \theta&#95;{1} + \theta&#95;{2}x&#95;{2} + \theta&#95;{3}x&#95;{3}$$ in this example (using 1-indexing)
+</li><li> So, $$\theta&#95;{1} + \theta&#95;{2}x&#95;{2} + \theta&#95;{3}x&#95;{3} \geq 0$$ predicts class "1"
+</li><li> The decision boundary lets us see the line that has been learned in order to separate out the y=0 vs y=1 classes, in this example
+</li><li> This boundary is at $$h&#95;{\theta}(x) = 0.5$$ (remember, this is the lowest possible value for predicting that a class is "1")
+</li><li> So, $$\theta&#95;{1} + \theta&#95;{2}x&#95;{2} + \theta&#95;{3}x&#95;{3} = 0$$ is the boundary
+</li><li> The decision boundary will be a line composed of <strong>any</strong> ($$x2$$,$$x3$$) points that make this equation <strong>equal zero</strong>.
+</li><li> In order to plot the line along the specific data we have, we arbitrarily decide to use values of $$x&#95;{2}$$ from our data, by choosing the max and min, and then add/subtract a little bit in order to make the line fit nicely.  Think about it, you could continue down the line in the above equation an infinite amount in either direction, and it will still be the line dividing the two classes.  However, we only have data that lies around a certain area of this line, so we make sure to only plot the line and data in that region (otherwise it would just be a line and some blank space around it).
+</li><li> Solve for $$x&#95;{3}$$ since we're using $$x&#95;{2}$$ values (the max &amp; min values +/- 2 in order to make a nice line). --&gt; $$x&#95;{3} = \dfrac{-1}{theta&#95;3} &#42; (theta&#95;{2}x&#95;{2} + theta&#95;1)$$, as seen in the Octave function.
+</li><li> Plugin the two $$x&#95;2$$ values (stored in plot&#95;x) into the above equation to get the two corresponding $$x&#95;3$$ values (and store in the plot&#95;y variable).
+</li><li> Plot a line using these values -&gt; this will be the decision boundary.
+</li><li> Plot the rest of our data on the graph as well, and notice that the line should separate the classes.
+</li><li> The above still applies even if you're using higher-order polynomial features, with the note that instead of a decision boundary "line", it will be a decision boundary "polynomial".</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Lambda_effect_over_Decision_Boundary">Lambda effect over Decision Boundary</span></h2>
+<p><center>
+<p><a href="/wiki/images/d/d1/ML-Ex2-2.5-Lambda-animation.gif" class="image"><img alt="&quot;Lambda effect over Decision Boundary&quot; 500x410px" src="/wiki/images/d/d1/ML-Ex2-2.5-Lambda-animation.gif" width="500" height="410" /></a>
+</p>
+</center></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 57/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_2:Logistic_Regression&amp;oldid=34194">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_2:Logistic_Regression&amp;oldid=34194</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Programming_Exercises" title="Category:ML:Programming Exercises">ML:Programming Exercises</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

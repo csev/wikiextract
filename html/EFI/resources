@@ -1,0 +1,70 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">EFI:resources</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Please share any great resources around the design of experiments (DOE) that you find. Preferably in the form of annotated links - the link itself, and a short description of what the link points to. Remember not to infringe copyright as you're sharing resources&#160;:-)</p>
+<p><a href="/wiki/index.php/EFI:Main" title="EFI:Main"> &gt; Return to wiki home</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Resources"><span class="tocnumber">1</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#DOE_.28Design_of_Experiments.29"><span class="tocnumber">1.1</span> <span class="toctext">DOE (Design of Experiments)</span></a></li>
+<li class="toclevel-2"><a href="#R"><span class="tocnumber">1.2</span> <span class="toctext">R</span></a></li>
+<li class="toclevel-2"><a href="#Scientific_Python_Installation"><span class="tocnumber">1.3</span> <span class="toctext">Scientific Python Installation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Social_networks"><span class="tocnumber">2</span> <span class="toctext">Social networks</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Resources">Resources</span></h2>
+<p>[create sub-headings as appropriate here; also - if you review a resource, please consider writing a short annotation (two sentences or so) about it, so that your classmates can more easily use the wiki resources by knowing what's behind the link!]</p>
+<h3> <span class="mw-headline" id="DOE_.28Design_of_Experiments.29">DOE (Design of Experiments)</span></h3>
+<p>Thanks for the links, <a rel="nofollow" class="external text" href="https://class.coursera.org/experiments-001/forum/thread?thread_id=197">Samy</a>
+<ul><li> <a rel="nofollow" class="external text" href="http://www.itl.nist.gov/div898/handbook/">Engineering Statistics Handbook</a>
+</li></ul>
+[add annotation] 
+<ul><li> <a rel="nofollow" class="external text" href="https://www.moresteam.com/toolbox/design-of-experiments.cfm">MoreSteam.com's Design of Experiments toolbox</a> 
+</li></ul>
+[add annotation]</p>
+<h3> <span class="mw-headline" id="R">R</span></h3>
+<p>Thanks to <a rel="nofollow" class="external text" href="https://class.coursera.org/experiments-001/forum/thread?thread_id=3">Jose &amp; Markus</a> for sharing...</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/web/views/ExperimentalDesign.html">CRAN (R's) Task View on Design of Experiments</a>
+[add annotation]</li>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/FrF2/FrF2.pdf">FrF2 package</a>
+[add annotation]</li>
+<li><a rel="nofollow" class="external text" href="http://www.r-qualitytools.org/xhtml/qualityTools.xhtml">R Quality Tools (package website)</a>
+[add annotation]</li>
+<li><a rel="nofollow" class="external text" href="http://www.sixsigmawithr.com/">Six Sigma with R (book/package companion website)</a> 
+[add annotation]</li>
+</ul>
+<h3> <span class="mw-headline" id="Scientific_Python_Installation">Scientific Python Installation</span></h3>
+<p>Installing Python packages for scientific purposes can be a tedious task, The following links provide installers to most of the scientific packages</p>
+<ul>
+<li>Anaconda Installer - <a rel="nofollow" class="external free" href="https://store.continuum.io/cshop/anaconda/">https://store.continuum.io/cshop/anaconda/</a> [Free]</li>
+<li>Enthought Canopy   -<a rel="nofollow" class="external free" href="https://www.enthought.com/">https://www.enthought.com/</a>  [Not Free, but free academic edition , with access to learning resources]</li>
+<li>Python xy          -<a rel="nofollow" class="external free" href="https://code.google.com/p/pythonxy/">https://code.google.com/p/pythonxy/</a> [Free, only Windows/]</li>
+</ul>
+<h2> <span class="mw-headline" id="Social_networks">Social networks</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.linkedin.com/groups?home=&amp;gid=2235170">LinkedIn group: "The Design of Experiment (DOE) Group"</a>
+The discussions that show up there are really insightful (You will need a LinkedIn account, and apply to join this group)</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=EFI:resources&amp;oldid=27891">https://share.coursera.org/wiki/index.php?title=EFI:resources&amp;oldid=27891</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

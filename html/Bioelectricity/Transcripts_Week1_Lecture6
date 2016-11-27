@@ -1,0 +1,60 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Week1 Lecture6</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#RT.2FF_and_other_Physical_Constants"><span class="tocnumber">1</span> <span class="toctext">RT/F and other Physical Constants</span></a>
+<ul>
+<li class="toclevel-2"><a href="#RT.2FF_.28slide_41.29"><span class="tocnumber">1.1</span> <span class="toctext">RT/F (slide 41)</span></a></li>
+<li class="toclevel-2"><a href="#RT.2FF_.28slide_42.29"><span class="tocnumber">1.2</span> <span class="toctext">RT/F (slide 42)</span></a></li>
+<li class="toclevel-2"><a href="#Faraday.E2.80.99s_constant_.28slide_43.29"><span class="tocnumber">1.3</span> <span class="toctext">Faraday’s constant (slide 43)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="RT.2FF_and_other_Physical_Constants">RT/F and other Physical Constants</span></h1>
+<ul>
+<li>My name is Roger Coke Barr. I'm here for the bioelectricity course to talk today about a mysterious but also useful group of constants RT [foreign] and a couple of other physical constants whose values we need from time to time. Now again I would say this is a boring topic. But this is a boring topic that can get in your mind and if it does it can be a real mystery.  </li>
+</ul>
+<h2> <span class="mw-headline" id="RT.2FF_.28slide_41.29">RT/F (slide 41)</span></h2>
+<ul>
+<li>RT is used as a kind of conversion factor between ionic concentrations and voltages. We're not working on the conversion right this moment but it will come up in a later week but you will see this factor RT/F. And you will say what is this R and T and F?  </li>
+<li>So R is the gas constant from chemistry. You remember the equation, PV equals NRT from chemistry of the gas law. And R is the constant in that law. About 8.3 joules per mole, per degree kelvin.  </li>
+<li>T, in this equation RT/F, is the absolute temperature.  </li>
+<li>And F is called Faraday's Constant. It's the amount of coulombs of charge that's present in one mole of material.  </li>
+<li>If you would look these values up in standard references, Wikipedia and other more technical references, you'll find they give the values more precisely, but beyond that there's a discussion of how the values are obtained. It's worth doing it. Please do so.   </li>
+</ul>
+<h2> <span class="mw-headline" id="RT.2FF_.28slide_42.29">RT/F (slide 42)</span></h2>
+<ul>
+<li>Now the absolutely amazing thing is that, for whatever reason, RT/F is about 26 millivolts. So 26 millivolts is a kind of a constant of nature. Something like the value of the charge on the electron and you ask yourself why on earth is RT/F 26 millivolts rather than some other voltage but it is.  </li>
+<li>And when you look into equations, when you see RT/F in your mind, you can say that's about 26 millivolts and it might vary a little bit because T varies depending on temperature. It could be a little higher or a little lower.  </li>
+<li>So 26 is, sort of plus or minus ten percent or so. But it's about 26 millivolts. It's just amazing.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Faraday.E2.80.99s_constant_.28slide_43.29">Faraday’s constant (slide 43)</span></h2>
+<ul>
+<li>Of RT/F, often times people are at least familiar with Faraday's constant, and think of it as some mysterious number. Faraday's constant is in a way the most ordinary of all the values. You just get it by counting or doing a simple operation on two different numbers.  </li>
+<li>First you take Avagrado's number, the number of molecules in a mole, and that's 6.02 times 10 to the 23rd. I've shown it here. Then you take the charge that's on one electron.  </li>
+<li>You might say, why do all electrons have the same charge? I don't know why they all have the same charge, but it seems that they all do, and that charge is 1.6 times 10 to the -19 coulombs. And so the way you get F is you just multiply those two numbers.  </li>
+<li>And so you get the total amount of charge this present when you have one moles worth of charges. The number of charge that's present in coulombs. The unit coulombs in a moles worth of material. So, it's quite a bit 96,487 coulombs. That's a lot, and Faraday's constant is that number.  </li>
+</ul>
+<hr />
+<p>That's all there is to this segment. It went pretty fast. But, I made it a separate segment because I know that often times one needs to come back and pick out those particular numbers. And maybe even to meditate on 26 millivolts and watts the part of the world around us. Thank you. We'll see you in the next segment.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture6&amp;oldid=7496">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture6&amp;oldid=7496</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,108 @@
+If you can't find what you're looking for here, try the Forum areas for Programming Exercise 1.
+
+### Debugging Tip
+The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.
+
+Open ex1/lib/submitWithConfiguration.m and replace line:
+
+     fprintf('!! Please try again later.\n');
+(around 28) with:
+
+    fprintf('Error from file: %s\nFunction: %s\nOn line: %d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+
+That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.
+
+### Note for OS X users
+If you are using OS X and get this error message when you run ex1.m and expect to see a plot figure:
+
+    gnuplot> set terminal aqua enhanced title "Figure 1" size 560 420  font "*,6" dashlength 1                     
+                      ^
+         line 0: unknown or ambiguous terminal type; type just 'set terminal' for a list
+
+... try entering this command in the workspace console to change the terminal type:
+
+    setenv("GNUTERM","qt")
+
+### How to check format of function arguments
+So that you may print the argument just by typing its name in the body of the function on a distinct line and call submit() in Octave.
+
+For example I may print the theta argument in the "Compute cost for one variable" exercise by writing this in my computeCost.m file. Of course, it will fail because 5 is just random number, but it will show me the value of theta:
+
+    function J = computeCost(X, y, theta)
+        m = length(y);
+        J = 0
+        theta
+        J = 5   % I have added this line just to show that the argument you want to print doesn't have to be on the last line
+    end
+
+# Testing matrix operations in Octave
+In our programming exercises, there are many complex matrix operations where it may not be clear what form the result is in. I find it helpful to create a few basic matrices and vectors to test out my operations. For instance the following commands can be copied to a file to be used at any time for testing an operation.
+
+    X = [1 2 3; 1 2 3; 1 2 3; 1 2 3; 1 5 6] % Make sure X has more rows than theta and isn't square
+    y = [1; 2; 3; 4; 5]
+    theta = [1; 1; 1]
+
+With these basic matrices and vectors you can model most of the programming exercises. If you don't know what form specific operations in the exercises take, you can test it in the Octave shell.  
+
+One thing that got me was using formulas like theta' * x where x was a single row in X.  All the notes show x as being a mX1 vector, but X(i,:) is a 1xm vector. Using the terminal, I figured out that I had to transpose x. It is very helpful.
+
+# Repeating previous operations in Octave
+When using the great unit tests by Vinh, if your function doesn't work the first time -- after you to edit and save your function file, then in your Octave window - just type ctrl-p to back up to what you typed previously, then enter to run it. (once you've gone back, can use ctrl-n for next)  (more info @ https://www.gnu.org/software/octave/doc/interpreter/Commands-For-History.html)
+
+You should also be able to use the up and down arrow keys to get the same effect. This works in both Octave and Matlab.
+
+# Warm up exercise
+If you type "ex1.m" you will get an error - just use "ex1". Press 'Run' in Matlab editor.
+# Compute cost for one variable
+theta is a matrix of size 2x1; first row is theta[0] and second one is theta[1] (I following index convention of videos here)
+Also fill arbitrary (non-zero) initial values to theta[0] and theta[1].
+# Gradient descent for one variable
+See the 5th segment of Week 1 Video II ("Gradient Descent") for a key tip on simultaneous updates of theta.
+# Feature normalization
+Use the zscore function to normalize:  http://www.gnu.org/software/octave/doc/interpreter/Basic-Statistical-Functions.html#XREFzscore
+
+repmat function can be used here.
+
+The bsxfun is helpful for applying a function (limited to two arguments) in an element-wise fashion to rows of a matrix using a vector of source values.  This is useful for feature normalization.  An example you can enter at the octave command line:
+
+    Z=[1 1 1; 2 2 2;];
+    v=[1 1 1];
+    bsxfun(@minus,Z,v);
+    ans =
+        0   0   0
+        1   1   1
+
+In this case, the corresponding elements of v are subtracted from each row of Z. The minus(a,b) function is equivalent to computing (a-b).
+
+(other mathematical functions: @plus, @rdivide)
+
+In Octave >= 3.0.6 you can use broadcast feature to abbreviate: https://www.gnu.org/software/octave/doc/interpreter/Broadcasting.html#Broadcasting
+
+    Z=[1 1 1; 2 2 2;];
+    v=[1 1 1];
+    Z - v    % or Z .- v
+    ans =
+       0   0   0
+       1   1   1
+
+A note regarding Feature Normalization when a feature is a constant: <provided by a ML-005 student>
+
+When I used the feature normalization routine we used in class it did not occur to me that some features of the training examples may have constant values, which means that the sigma vector has zeroes for those features. Thus when I divide by sigma to normalize the matrix NaNs filled in some slots. This causes gradient descent to get lost wandering through a NaN wasteland, but never reporting why.<br><br>The fix is easy. In featureNormalize, after sigma is calculated but before the division takes place, insert <br><pre>sigma( sigma == 0 ) = 1;          % to keep away the NaN's and Inf's</pre>Once this was done, gradient descent ran fine.
+
+TA note: for the ML class exercises, you do not need this trick, because the scripts add the column of bias units after the features are normalized. But for your use outside of the class exercises, this may be a useful technique.
+
+# Compute cost for multiple variables
+# Gradient descent for multiple variables
+The Wiki page "ML:Linear Regression with Multiple Variables" under section [Matrix Notation](https://share.coursera.org/wiki/index.php/ML:Linear_Regression_with_Multiple_Variables#Matrix_Notation) basically spells out one line solution to the problem. 
+
+When predicting prices using theta derived from gradient descent, do not forget to normalize input x or you'll get multimillion house value (wrong one).
+# Normal Equations
+I found that the line  "data = csvread('ex1data2.txt');" in ex1_multi.m is not needed as we previously load this data via "data = load('ex1data2.txt');"
+
+Prior steps normalized X, this line sets X back to the original values. To have theta from gradient descent and from the normal equations to be close run the normal equations using normalized features as well.  Therefor do not reload X.
+
+Comment: I think the point in reloading is to show that you actually get the same results even without doing anything with the data beforehand. Of course for this script its not effective, but in a real application you would use only one of the approaches. 
+Similar considerations would argue against feature normalisation.
+Therefore do reload X  
+
+[[Category:ML:Programming Exercises]]

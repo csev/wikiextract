@@ -1,0 +1,10 @@
+[[ML3:Main|« Back to the main page]]
+
+## The `tm` package
+If using the `tm` package to count the number of reviews containing the word "perfect", be aware that DocumentTermMatrix lowercases all words by default. To make it case-sensitive, you can set the tolower option to FALSE:
+
+<pre>
+dtm <- DocumentTermMatrix(corpus, list(dictionary = word.list, tolower = FALSE))
+</pre>
+
+There is more information in [this thread](https://www.coursera.org/learn/ml-classification/discussions/hTm_je6KEeWkUAr_DMJ5Lw).

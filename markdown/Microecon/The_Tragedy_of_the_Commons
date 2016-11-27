@@ -1,0 +1,42 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 8: 4.1 The Tragedy of the Commons
+
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 8: 4.1 The Tragedy of the Commons
+
+Fish problem:
+Suppose that fish cost a $1/lb and marginal cost of running a fishing vessel is $200 per day.
+Say currently there are 7 boats fishing, would you send the eighth boat out to fish?
+
+#Vessels Total catch (lb)
+1	 400
+2	 800
+3	 1200
+4	 1600
+5	 1900
+6	 2100
+7	 2100
+8	 2000
+
+A)  you own ONLY the eighth boat,
+If you go, revenue=2000/8=250*$1=$250. 
+
+B) you own ALL the eight boats,
+
+# Vessels	Total catch (lb)	Marginal revenue	Avg. Revenue	Total Profits
+1	400	$400	$400	$200
+2	800	$400	$400	$400
+3	1200	$400	$400	$600
+4	1600	$400	$400	$800
+5	1900	$300	$380	$900
+6	2100	$200	$350	$900
+7	2100	$0	$300	$700
+8	2000	($100)	$250	$400
+
+So, you'll send only 6 boats out. This paradox is called The Tragedy of the Commons.

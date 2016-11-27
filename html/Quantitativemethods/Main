@@ -1,0 +1,724 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Quantitativemethods:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/8/8e/Solidscience.jpg" class="image"><img alt="" src="/wiki/images/thumb/8/8e/Solidscience.jpg/400px-Solidscience.jpg" width="400" height="225" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/8/8e/Solidscience.jpg" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Methods and Statistics in Social Sciences: Quantitative Methods</div></div></div>
+<strong><a rel="nofollow" class="external text" href="https://www.coursera.org/learn/quantitative-methods">Methods and Statistics in Social Sciences: Quantitative Methods</a></strong></p>
+<p><em>Offered by: <a rel="nofollow" class="external text" href="https://www.coursera.org/amsterdam">University of Amsterdam</a></em></p>
+<p><em>Instructor: <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></em></p>
+<p><span style="color:white;">.</span></p>
+<p>Welcome to the Wiki page for <strong><a rel="nofollow" class="external text" href="https://www.coursera.org/learn/quantitative-methods">Methods and Statistics in Social Sciences: Quantitative Methods</a></strong> course!</p>
+<p>Feel free to edit any of the existing sections or to create new ones as well as new pages. I just started because some people wanted to participate but didn't know why.</p>
+<p>Remember, we all benefit from a clean and organized page!</p>
+<p>If you have any questions about editing/creating a wiki page, click <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Help:Editing">Help</a> on the left navigation bar or post a question in the forum. I'm sure someone from the team or student will answer! </p>
+<p>Best regards, <em><a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></em></p>
+<p><span style="color:white;">.</span></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Module_1:_Origins_of_the_scientific_method"><span class="tocnumber">1</span> <span class="toctext">Module 1: Origins of the scientific method</span></a>
+<ul>
+<li class="toclevel-2"><a href="#1.01_Non-scientific_methods"><span class="tocnumber">1.1</span> <span class="toctext">1.01 Non-scientific methods</span></a></li>
+<li class="toclevel-2"><a href="#1.02_Scientific_method"><span class="tocnumber">1.2</span> <span class="toctext">1.02 Scientific method</span></a></li>
+<li class="toclevel-2"><a href="#1.03_Scientific_claims"><span class="tocnumber">1.3</span> <span class="toctext">1.03 Scientific claims</span></a></li>
+<li class="toclevel-2"><a href="#1.04_Classical_period"><span class="tocnumber">1.4</span> <span class="toctext">1.04 Classical period</span></a></li>
+<li class="toclevel-2"><a href="#1.05_Enlightenment"><span class="tocnumber">1.5</span> <span class="toctext">1.05 Enlightenment</span></a></li>
+<li class="toclevel-2"><a href="#1.06_Modern_science"><span class="tocnumber">1.6</span> <span class="toctext">1.06 Modern science</span></a></li>
+<li class="toclevel-2"><a href="#1.07_Epistemology"><span class="tocnumber">1.7</span> <span class="toctext">1.07 Epistemology</span></a></li>
+<li class="toclevel-2"><a href="#1.08_Ontology"><span class="tocnumber">1.8</span> <span class="toctext">1.08 Ontology</span></a></li>
+<li class="toclevel-2"><a href="#1.09_Approaches"><span class="tocnumber">1.9</span> <span class="toctext">1.09 Approaches</span></a></li>
+<li class="toclevel-2"><a href="#1.10_Goal"><span class="tocnumber">1.10</span> <span class="toctext">1.10 Goal</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Module_2:_The_scientific_method"><span class="tocnumber">2</span> <span class="toctext">Module 2: The scientific method</span></a>
+<ul>
+<li class="toclevel-2"><a href="#2.01_The_empirical_cycle"><span class="tocnumber">2.1</span> <span class="toctext">2.01 The empirical cycle</span></a></li>
+<li class="toclevel-2"><a href="#2.02_.28Dis.29confirmation"><span class="tocnumber">2.2</span> <span class="toctext">2.02 (Dis)confirmation</span></a></li>
+<li class="toclevel-2"><a href="#2.03_Criteria"><span class="tocnumber">2.3</span> <span class="toctext">2.03 Criteria</span></a></li>
+<li class="toclevel-2"><a href="#2.04_Causality"><span class="tocnumber">2.4</span> <span class="toctext">2.04 Causality</span></a></li>
+<li class="toclevel-2"><a href="#2.05_Internal_validity_threats:_participants"><span class="tocnumber">2.5</span> <span class="toctext">2.05 Internal validity threats: participants</span></a></li>
+<li class="toclevel-2"><a href="#2.06_Internal_validity_threats:_instruments"><span class="tocnumber">2.6</span> <span class="toctext">2.06 Internal validity threats: instruments</span></a></li>
+<li class="toclevel-2"><a href="#2.07_Internal_validity_threats:_artifacts"><span class="tocnumber">2.7</span> <span class="toctext">2.07 Internal validity threats: artifacts</span></a></li>
+<li class="toclevel-2"><a href="#2.08_Internal_validity_threats:_design.2Fprocedure"><span class="tocnumber">2.8</span> <span class="toctext">2.08 Internal validity threats: design/procedure</span></a></li>
+<li class="toclevel-2"><a href="#2.09_Variables_of_interest"><span class="tocnumber">2.9</span> <span class="toctext">2.09 Variables of interest</span></a></li>
+<li class="toclevel-2"><a href="#2.10_Variables_of_desinterest"><span class="tocnumber">2.10</span> <span class="toctext">2.10 Variables of desinterest</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Module_3:_Research_designs"><span class="tocnumber">3</span> <span class="toctext">Module 3: Research designs</span></a>
+<ul>
+<li class="toclevel-2"><a href="#3.01_The_empirical_cycle"><span class="tocnumber">3.1</span> <span class="toctext">3.01 The empirical cycle</span></a></li>
+<li class="toclevel-2"><a href="#3.02_Factorial_designs"><span class="tocnumber">3.2</span> <span class="toctext">3.02 Factorial designs</span></a></li>
+<li class="toclevel-2"><a href="#3.03_Repeated_measurement"><span class="tocnumber">3.3</span> <span class="toctext">3.03 Repeated measurement</span></a></li>
+<li class="toclevel-2"><a href="#3.04_Manipulation"><span class="tocnumber">3.4</span> <span class="toctext">3.04 Manipulation</span></a></li>
+<li class="toclevel-2"><a href="#3.05_Lab_vs._field"><span class="tocnumber">3.5</span> <span class="toctext">3.05 Lab vs. field</span></a></li>
+<li class="toclevel-2"><a href="#3.06_Randomization"><span class="tocnumber">3.6</span> <span class="toctext">3.06 Randomization</span></a></li>
+<li class="toclevel-2"><a href="#3.07_Experimental_designs"><span class="tocnumber">3.7</span> <span class="toctext">3.07 Experimental designs</span></a></li>
+<li class="toclevel-2"><a href="#3.08_Matching"><span class="tocnumber">3.8</span> <span class="toctext">3.08 Matching</span></a></li>
+<li class="toclevel-2"><a href="#3.09_Quasi-experimental_designs"><span class="tocnumber">3.9</span> <span class="toctext">3.09 Quasi-experimental designs</span></a></li>
+<li class="toclevel-2"><a href="#3.10_Correlational_designs"><span class="tocnumber">3.10</span> <span class="toctext">3.10 Correlational designs</span></a></li>
+<li class="toclevel-2"><a href="#3.11_Other_designs"><span class="tocnumber">3.11</span> <span class="toctext">3.11 Other designs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Module_4:_Measurement"><span class="tocnumber">4</span> <span class="toctext">Module 4: Measurement</span></a>
+<ul>
+<li class="toclevel-2"><a href="#4.01_Operationalization"><span class="tocnumber">4.1</span> <span class="toctext">4.01 Operationalization</span></a></li>
+<li class="toclevel-2"><a href="#4.02_Measurement_structure"><span class="tocnumber">4.2</span> <span class="toctext">4.02 Measurement structure</span></a></li>
+<li class="toclevel-2"><a href="#4.03_Measurement_levels"><span class="tocnumber">4.3</span> <span class="toctext">4.03 Measurement levels</span></a></li>
+<li class="toclevel-2"><a href="#4.04_Variable_types"><span class="tocnumber">4.4</span> <span class="toctext">4.04 Variable types</span></a></li>
+<li class="toclevel-2"><a href="#4.05_Measurement_validity"><span class="tocnumber">4.5</span> <span class="toctext">4.05 Measurement validity</span></a></li>
+<li class="toclevel-2"><a href="#4.06_Measurement_reliability"><span class="tocnumber">4.6</span> <span class="toctext">4.06 Measurement reliability</span></a></li>
+<li class="toclevel-2"><a href="#4.07_Survey.2C_questionnaire.2C_test"><span class="tocnumber">4.7</span> <span class="toctext">4.07 Survey, questionnaire, test</span></a></li>
+<li class="toclevel-2"><a href="#4.08_Scales_.26_response_options"><span class="tocnumber">4.8</span> <span class="toctext">4.08 Scales &amp; response options</span></a></li>
+<li class="toclevel-2"><a href="#4.09_Response_and_rater_bias"><span class="tocnumber">4.9</span> <span class="toctext">4.09 Response and rater bias</span></a></li>
+<li class="toclevel-2"><a href="#4.10_Other_measurement_types"><span class="tocnumber">4.10</span> <span class="toctext">4.10 Other measurement types</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Module_5:_Sampling"><span class="tocnumber">5</span> <span class="toctext">Module 5: Sampling</span></a>
+<ul>
+<li class="toclevel-2"><a href="#5.01_External_validity_threats"><span class="tocnumber">5.1</span> <span class="toctext">5.01 External validity threats</span></a></li>
+<li class="toclevel-2"><a href="#5.02_Sampling_concepts"><span class="tocnumber">5.2</span> <span class="toctext">5.02 Sampling concepts</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Population"><span class="tocnumber">5.2.1</span> <span class="toctext">Population</span></a></li>
+<li class="toclevel-3"><a href="#Sample"><span class="tocnumber">5.2.2</span> <span class="toctext">Sample</span></a></li>
+<li class="toclevel-3"><a href="#Element"><span class="tocnumber">5.2.3</span> <span class="toctext">Element</span></a></li>
+<li class="toclevel-3"><a href="#Stratum"><span class="tocnumber">5.2.4</span> <span class="toctext">Stratum</span></a></li>
+<li class="toclevel-3"><a href="#Census"><span class="tocnumber">5.2.5</span> <span class="toctext">Census</span></a></li>
+<li class="toclevel-3"><a href="#Sampling_Frame"><span class="tocnumber">5.2.6</span> <span class="toctext">Sampling Frame</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#5.03_Probability_sampling"><span class="tocnumber">5.3</span> <span class="toctext">5.03 Probability sampling</span></a></li>
+<li class="toclevel-2"><a href="#5.04_Probability_sampling_-_simple"><span class="tocnumber">5.4</span> <span class="toctext">5.04 Probability sampling - simple</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Simple_Random_Sampling_.28Simple.29"><span class="tocnumber">5.4.1</span> <span class="toctext">Simple Random Sampling (Simple)</span></a></li>
+<li class="toclevel-3"><a href="#Systematic_Sampling_.28Simple.29"><span class="tocnumber">5.4.2</span> <span class="toctext">Systematic Sampling (Simple)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#5.05_Probability_sampling_-_complex"><span class="tocnumber">5.5</span> <span class="toctext">5.05 Probability sampling - complex</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Stratified_Random_Sampling_.28Relatively_Simple.29"><span class="tocnumber">5.5.1</span> <span class="toctext">Stratified Random Sampling (Relatively Simple)</span></a></li>
+<li class="toclevel-3"><a href="#Multi-Stage_Cluster_Sampling_.28Relatively_Simple.29"><span class="tocnumber">5.5.2</span> <span class="toctext">Multi-Stage Cluster Sampling (Relatively Simple)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#5.06_Non-probability_sampling"><span class="tocnumber">5.6</span> <span class="toctext">5.06 Non-probability sampling</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Convenience_Sampling"><span class="tocnumber">5.6.1</span> <span class="toctext">Convenience Sampling</span></a></li>
+<li class="toclevel-3"><a href="#Snowball_Sampling"><span class="tocnumber">5.6.2</span> <span class="toctext">Snowball Sampling</span></a></li>
+<li class="toclevel-3"><a href="#Purposive_Sampling"><span class="tocnumber">5.6.3</span> <span class="toctext">Purposive Sampling</span></a></li>
+<li class="toclevel-3"><a href="#Quota_Sampling"><span class="tocnumber">5.6.4</span> <span class="toctext">Quota Sampling</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#5.07_Sampling_error"><span class="tocnumber">5.7</span> <span class="toctext">5.07 Sampling error</span></a></li>
+<li class="toclevel-2"><a href="#5.08_Non-sampling_error"><span class="tocnumber">5.8</span> <span class="toctext">5.08 Non-sampling error</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Sampling_Bias"><span class="tocnumber">5.8.1</span> <span class="toctext">Sampling Bias</span></a></li>
+<li class="toclevel-3"><a href="#Non-Response"><span class="tocnumber">5.8.2</span> <span class="toctext">Non-Response</span></a></li>
+<li class="toclevel-3"><a href="#Incomplete.2F_Inaccurate_Sampling_Frame"><span class="tocnumber">5.8.3</span> <span class="toctext">Incomplete/ Inaccurate Sampling Frame</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#5.09_Sample_size"><span class="tocnumber">5.9</span> <span class="toctext">5.09 Sample size</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Module_6:_Practice.2C_ethics_.26_integrity"><span class="tocnumber">6</span> <span class="toctext">Module 6: Practice, ethics &amp; integrity</span></a>
+<ul>
+<li class="toclevel-2"><a href="#6.01_Documentation"><span class="tocnumber">6.1</span> <span class="toctext">6.01 Documentation</span></a></li>
+<li class="toclevel-2"><a href="#6.02_Data_management"><span class="tocnumber">6.2</span> <span class="toctext">6.02 Data management</span></a></li>
+<li class="toclevel-2"><a href="#6.03_Unethical_studies"><span class="tocnumber">6.3</span> <span class="toctext">6.03 Unethical studies</span></a></li>
+<li class="toclevel-2"><a href="#6.04_Ethics_towards_participants"><span class="tocnumber">6.4</span> <span class="toctext">6.04 Ethics towards participants</span></a></li>
+<li class="toclevel-2"><a href="#6.05_Research_integrity"><span class="tocnumber">6.5</span> <span class="toctext">6.05 Research integrity</span></a></li>
+<li class="toclevel-2"><a href="#6.06_Questionable_research_practices"><span class="tocnumber">6.6</span> <span class="toctext">6.06 Questionable research practices</span></a></li>
+<li class="toclevel-2"><a href="#6.06_Peer_review_process"><span class="tocnumber">6.7</span> <span class="toctext">6.06 Peer review process</span></a></li>
+<li class="toclevel-2"><a href="#6.08_Dissemination_problems"><span class="tocnumber">6.8</span> <span class="toctext">6.08 Dissemination problems</span></a></li>
+<li class="toclevel-2"><a href="#6.00_Milgram"><span class="tocnumber">6.9</span> <span class="toctext">6.00 Milgram</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Module_1:_Origins_of_the_scientific_method">Module 1: Origins of the scientific method</span></h1>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/1_Origins.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.01_Non-scientific_methods">1.01 Non-scientific methods</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/101_nonscientific_methods.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<ul>
+<li><strong><a href="/wiki/index.php/Quantitativemethods:1.01michaelnew" title="Quantitativemethods:1.01michaelnew"> Highly Idiosyncratic Notes</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=1980493">Michael New</a></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><em>"Whether the apple actually fell on Newton’s head or not, intuition, I believe, played a part in his first thoughts about the nature of forces, including gravitational."</em> <a href="/wiki/index.php/Quantitativemethods:1.01michaelnew" title="Quantitativemethods:1.01michaelnew"> Read more</a></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<ul>
+<li><strong><a href="/wiki/index.php/Quantitativemethods:1.01nfernandes" title="Quantitativemethods:1.01nfernandes"> Day-to-day Knowledge vs Scientific Knowledge</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><em>"So, what do we need to create knowledge? Is it enough to observe?"</em> <a href="/wiki/index.php/Quantitativemethods:1.01nfernandes" title="Quantitativemethods:1.01nfernandes"> Read more</a></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.02_Scientific_method">1.02 Scientific method</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/102_scientific_method.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.02nfernandes" title="Quantitativemethods:1.02nfernandes"> Is your study scientific?</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><em>"When applying the scientific method, check for these principles"</em></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/8/83/6_principles.png" class="image"><img alt="" src="/wiki/images/thumb/8/83/6_principles.png/400px-6_principles.png" width="400" height="225" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/8/83/6_principles.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Is your study scientific?</div></div></div></div></p>
+<blockquote>
+  <ul>
+  <li>All 6 principles respected/comprised → <strong>scientific method</strong> → can be compared to and compete with other scientific claims (by <strong>Carolina Reimão Doria</strong>)</li>
+  </ul>
+</blockquote>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.03_Scientific_claims">1.03 Scientific claims</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/103_scientific_claims.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.03carolinareimaodoria" title="Quantitativemethods:1.03carolinareimaodoria"> Scientific claims: a brief glossary</a></strong> by <strong>Carolina Reimão Doria</strong></p></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><em>"Some claims are more certain than others because they are better supported by evidence"</em> <a href="/wiki/index.php/Quantitativemethods:1.03carolinareimaodoria" title="Quantitativemethods:1.03carolinareimaodoria"> Read more</a></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.04_Classical_period">1.04 Classical period</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/104_classical_period.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.04nfernandes" title="Quantitativemethods:1.04nfernandes"> A chronology of the scientific evolution regarding the classical period until 16th-17 c.</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+</ul>
+<p><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/c/c7/Classicalperiod.png" class="image"><img alt="" src="/wiki/images/thumb/c/c7/Classicalperiod.png/400px-Classicalperiod.png" width="400" height="225" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/c/c7/Classicalperiod.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>A chronology of the scientific evolution</div></div></div></div></p>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.05_Enlightenment">1.05 Enlightenment</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/105_enlightenment.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.05nfernandes" title="Quantitativemethods:1.05nfernandes"> Enlightenment: key ideas</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.05nfernandes2" title="Quantitativemethods:1.05nfernandes2"> Induction and Deduction: a clarification of concepts</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p><em>"Induction and deduction are two, usually different but never contradictory, approaches to problem solving."</em> <a href="/wiki/index.php/Quantitativemethods:1.05nfernandes2" title="Quantitativemethods:1.05nfernandes2"> Read more</a></p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.06_Modern_science">1.06 Modern science</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/106_modern_science.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Kuhn_vs._Popper" title="Kuhn vs. Popper">Kuhn vs. Popper</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=4983046">Marcus Birkenkrahe</a></p></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.07_Epistemology">1.07 Epistemology</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/107_epistemology.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.07nfernandes" title="Quantitativemethods:1.07nfernandes"> Philosophy of Research: Epistemology</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+</ul>
+<p><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/c/cf/Epistemology.png" class="image"><img alt="" src="/wiki/images/thumb/c/cf/Epistemology.png/400px-Epistemology.png" width="400" height="225" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/c/cf/Epistemology.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Philosophy of Research: Epistemology</div></div></div></div></p>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.08_Ontology">1.08 Ontology</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/108_ontology.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.08nfernandes" title="Quantitativemethods:1.08nfernandes"> Philosophy of Research: Ontology</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+</ul>
+<p><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/8/8d/Ontology.png" class="image"><img alt="" src="/wiki/images/thumb/8/8d/Ontology.png/400px-Ontology.png" width="400" height="225" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/8/8d/Ontology.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Philosophy of Research: Ontology</div></div></div></div></p>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.09_Approaches">1.09 Approaches</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/109_approaches.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:1.09nfernandes" title="Quantitativemethods:1.09nfernandes"> Approaches</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+</ul>
+<p><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/e/ec/Approaches.png" class="image"><img alt="" src="/wiki/images/thumb/e/ec/Approaches.png/400px-Approaches.png" width="400" height="225" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/e/ec/Approaches.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Approaches</div></div></div></div></p>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="1.10_Goal">1.10 Goal</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/110_goals.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h1> <span class="mw-headline" id="Module_2:_The_scientific_method">Module 2: The scientific method</span></h1>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/2_Scientific_Method.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.01_The_empirical_cycle">2.01 The empirical cycle</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/201_empirical_cycle.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:2.01nfernandes" title="Quantitativemethods:2.01nfernandes"> The Empirical Cycle</a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778">Nuno Fernandes</a></p></li>
+</ul>
+<p><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/b/b0/Empirical_cycle.png" class="image"><img alt="" src="/wiki/images/thumb/b/b0/Empirical_cycle.png/400px-Empirical_cycle.png" width="400" height="225" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/b/b0/Empirical_cycle.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The empirical cycle</div></div></div></div></p>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.02_.28Dis.29confirmation">2.02 (Dis)confirmation</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/202_(dis)confirmation.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.03_Criteria">2.03 Criteria</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/203_criteria.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.04_Causality">2.04 Causality</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/204_causality.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.05_Internal_validity_threats:_participants">2.05 Internal validity threats: participants</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/205_internal_validity_threats-participants.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.06_Internal_validity_threats:_instruments">2.06 Internal validity threats: instruments</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/207_internal_validity_threats-artifacts.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.07_Internal_validity_threats:_artifacts">2.07 Internal validity threats: artifacts</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/207_internal_validity_threats-artifacts.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.08_Internal_validity_threats:_design.2Fprocedure">2.08 Internal validity threats: design/procedure</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/208_internal_validity_threats-design_procedure.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.09_Variables_of_interest">2.09 Variables of interest</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/209_variables_of_interest.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="2.10_Variables_of_desinterest">2.10 Variables of desinterest</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/210_variables_of_disinterest.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h1> <span class="mw-headline" id="Module_3:_Research_designs">Module 3: Research designs</span></h1>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/3_Research_Designs.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.01_The_empirical_cycle">3.01 The empirical cycle</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/301_true_experiments.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.02_Factorial_designs">3.02 Factorial designs</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/302_factorial_designs.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.03_Repeated_measurement">3.03 Repeated measurement</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/303_repeated_measures.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.04_Manipulation">3.04 Manipulation</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/304_manipulation.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.05_Lab_vs._field">3.05 Lab vs. field</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/305_lab_vs_field.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.06_Randomization">3.06 Randomization</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/306_randomization.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.07_Experimental_designs">3.07 Experimental designs</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/307_experimental_designs.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.08_Matching">3.08 Matching</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/308_matching.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.09_Quasi-experimental_designs">3.09 Quasi-experimental designs</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/309_quasi-experimental_designs.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.10_Correlational_designs">3.10 Correlational designs</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/310_correlation_designs.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="3.11_Other_designs">3.11 Other designs</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/311_other_designs.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h1> <span class="mw-headline" id="Module_4:_Measurement">Module 4: Measurement</span></h1>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/4_Measurement.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="4.01_Operationalization">4.01 Operationalization</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/401_operationalization.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:4.01chrysanthitseloudi" title="Quantitativemethods:4.01chrysanthitseloudi"> Operationalization</a></strong> by <strong>Chrysanthi Tseloudi</strong></p></li>
+</ul>
+<h2> <span class="mw-headline" id="4.02_Measurement_structure">4.02 Measurement structure</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/402_measurement_structure.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="4.03_Measurement_levels">4.03 Measurement levels</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/403_measurement_levels.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="4.04_Variable_types">4.04 Variable types</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/404_variable_types.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="4.05_Measurement_validity">4.05 Measurement validity</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/405_measurement_validity.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:4.05haodong" title="Quantitativemethods:4.05haodong"> Convergent and discriminant validity </a></strong> by <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5963098">Hao Dong</a> Credit to <a rel="nofollow" class="external text" href="https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=3780448">Mirjam</a></p></li>
+</ul>
+<p><span style="color:white;">.</span> </p>
+<h2> <span class="mw-headline" id="4.06_Measurement_reliability">4.06 Measurement reliability</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/406_measurement_reliability.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="4.07_Survey.2C_questionnaire.2C_test">4.07 Survey, questionnaire, test</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/407_survey_questionnaire_test.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="4.08_Scales_.26_response_options">4.08 Scales &amp; response options</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/408_scales_and_response_options.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="4.09_Response_and_rater_bias">4.09 Response and rater bias</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/409_response_and_rater_bias.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a>
+<span style="color:white;">.</span></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:4.09chrysanthitseloudi" title="Quantitativemethods:4.09chrysanthitseloudi"> Response and rater bias: excerpts of lecture transcript</a></strong> by <strong>Chrysanthi Tseloudi</strong></p></li>
+</ul>
+<h2> <span class="mw-headline" id="4.10_Other_measurement_types">4.10 Other measurement types</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/410_other_measurement_types.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:4.10othermeasurement" title="Quantitativemethods:4.10othermeasurement"> Other measurement types: concepts</a></strong> by <strong>Chrysanthi Tseloudi</strong></p></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h1> <span class="mw-headline" id="Module_5:_Sampling">Module 5: Sampling</span></h1>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/5_Sampling.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="5.01_External_validity_threats">5.01 External validity threats</span></h2>
+<ul>
+<li><p><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/501_external_validity_threats.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></p></li>
+<li><p><strong><a href="/wiki/index.php/Quantitativemethods:5.01externalthreats" title="Quantitativemethods:5.01externalthreats"> External validity threats: concepts</a></strong> by <strong>Chrysanthi Tseloudi</strong></p></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="5.02_Sampling_concepts">5.02 Sampling concepts</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/502_sampling_concepts.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h3> <span class="mw-headline" id="Population">Population</span></h3>
+<p>The term population refers to <strong>the entire collection of people or groups to whom the hypothesis is supposed to apply</strong>. Researchers should define their target population explicitly. Does the hypothesis apply to all people in the entire world, or just people in a specific country or culture?</p>
+<blockquote>
+  <p>Examples:</p>
+  <ul>
+  <li>Consider the hypothesis "Loneliness causes an increase in depression". This is a typical universalistic hypothesis. If the population is not explicitly mentioned, we infer the relation is assumed to hold for all people, in all cultures, in the past, now and in the future.</li>
+  <li>"Patriotism is steadily declining in the Netherlands over the last five years". This is at typical particularistic hypothesis. It is clear that this hypothesis applies to a specific country and to a specific time.</li>
+  </ul>
+</blockquote>
+<p>Let's assume that the target population for a hypothesis is clearly defined. How can we determine if the results generalize to this entire population?</p>
+<p>If we measure the entire population, then we're automatically sure the results hold for the entire population. Of course, for universal hypotheses it's simply impossible to measure the entire population, because the population consists of all people everywhere, including all people who are long dead and all people who have yet to be born. Even if the target population is smaller and well defined, it is almost always too complicated and too expensive to include the entire population in a study.</p>
+<p>This is why we take a <strong>sample</strong>.</p>
+<h3> <span class="mw-headline" id="Sample">Sample</span></h3>
+<p>A sample is a <strong>subset of the population</strong>. The sample is used to represent or estimate a property of the population. We have to make sure that our sample <strong>represents the population accurately</strong>. The overrepresentation of a specific part of the population can weaken the study's external validity.</p>
+<blockquote>
+  <p>Overrepresentation Examples:</p>
+  <ul>
+  <li><p>Suppose we sample mostly elderly people in our study on the effect of loneliness on depression and we find a strong effect.  Perhaps the strong effect of loneliness on depression is less apparent for young people. If our sample had been more representative of the entire population we would have found a smaller effect.</p></li>
+  <li><p>The same goes for our study of decreased patriotism. Suppose our sample consisted mainly of highly educated people working at a university. This might lead us to underestimate patriotic attitudes in the Netherlands. Our results will be biased.</p></li>
+  </ul>
+</blockquote>
+<h3> <span class="mw-headline" id="Element">Element</span></h3>
+<p>An element, or unit, is a <strong>single entity</strong> in the population. Together all the elements form the population. An element most often consists of one person, but of course it depends on your hypothesis. An element can also be a group, a school, a city, a union, a country; you name it.</p>
+<h3> <span class="mw-headline" id="Stratum">Stratum</span></h3>
+<p>A stratum is <strong>a subset of elements from the population that share a characteristic</strong>.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>In the population of currently enrolled students from the University of Amsterdam we can distinguish a female and a male stratum, for example. Of course we can identify many different strata that may overlap, for example male and female undergraduate and graduate students.</p>
+</blockquote>
+<h3> <span class="mw-headline" id="Census">Census</span></h3>
+<p>The term census refers to <strong>an enumeration or count of all elements in the population</strong>. The term can also refer to a situation where all elements in the population are actually measured; in that case, the sample consists of the entire population. The term census can indicate a 'national census': A nation-wide survey where demographic information on each inhabitant is collected. Of course in many western countries this census is conducted virtually, by collecting information from government databases.</p>
+<h3> <span class="mw-headline" id="Sampling_Frame">Sampling Frame</span></h3>
+<p>A sampling frame is essentially <strong>a list of all the elements in a population that can be individually identified</strong>. A sampling frame can overlap with a census defined as an enumeration of the population. However, a sampling frame is more than a simple list of elements. A sampling frame <strong>provides a way of actually contacting elements</strong>. It could be a phonebook or a list of email addresses for all students currently enrolled at the University of Amsterdam, for example. Also, a sampling frame <strong>doesn't always include all elements of a population</strong>. This could be <strong>due to clerical errors or an outdated list</strong>.</p>
+<h2> <span class="mw-headline" id="5.03_Probability_sampling">5.03 Probability sampling</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/503_probability_sampling.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<p>Some sampling methods offer better protection against the selection threat to external validity than others do. </p>
+<p>To use probability sampling, we need to have a sampling frame: a list of all elements in the population that can be accessed or contacted. <strong>A sampling frame is necessary to determine each element's probability of being selected</strong>. This probability should be known and non-zero. Then, some form of <strong>random selection</strong> is required where any element could in principle end up in the sample.</p>
+<p>Probability sampling minimizes the threat of a systematic bias in our selection of participants. Reducing systematic bias means reducing the risk of over- or underrepresentation of any population subgroup with a systematically higher or lower value on the property. Otherwise, our sample value will be unlikely to represent the population value accurately.</p>
+<p>To avoid a systematic difference between the sample and the population, we select elements from the population randomly.
+In the long run <strong>any specific participant characteristics will be represented in the sample, proportionally to their presence in the population</strong>. This means that any characteristic associated with a systematically higher or lower score on the dependent variable cannot bias the results in the long run. We call this a <strong>representative sample</strong>.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Suppose a population consists of eighty percent women. With repeated random sampling, we can expect the sample to contain eighty percent women in the long run. Each individual element has the same probability to be selected, and since there are more women, female elements will be selected more often.</p>
+</blockquote>
+<p>Probability sampling also allows us to <strong>assess the accuracy of our sample estimate</strong>. Probability sampling allows us to determine, that with repeated sampling, in a certain percent of the samples, <strong>the sample value will differ</strong> from the real, population value <strong>by no more than a certain margin of error</strong>. This means that we can judge how accurate our sample estimate is in the long run. Given a certain risk to get it wrong, we can assess what the margin of error is on average, meaning by how much the sample and population value will differ on average.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Consider an election between conservative candidate A and democratic candidate B. We want to estimate the proportion of people in the population that will vote for candidate A as accurately as possible. Random sampling allows us to make statement such as this: If we were to sample voters repeatedly, then in ninety percent of the samples, the true, population proportion of votes for A would lie within eight percentage points of our sample estimate. So if we find that sixty percent of our sample indicates they will vote for A, then we can say we are fairly confident that the true proportion will lie somewhere between fiftytwo and sixty-eight percent. This interval is called a <strong>confidence interval</strong>. Of course this particular interval could be wrong, because in ten percent of the samples the sample value will lie further that eight percentage points from the true value. This could be one of those samples, so we can never be certain.</p>
+</blockquote>
+<h2> <span class="mw-headline" id="5.04_Probability_sampling_-_simple">5.04 Probability sampling - simple</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/504_probability_sampling-simple.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<p>There are several types of probability sampling. </p>
+<h3> <span class="mw-headline" id="Simple_Random_Sampling_.28Simple.29">Simple Random Sampling (Simple)</span></h3>
+<p>Simple random sampling is <strong>the most basic form of probability sampling</strong>. In simple random sampling <strong>each element in the sampling frame has an equal and independent probability of being included</strong> in the sample. Independent means the selection of any single element does not depend on another element being selected first. In other words, every possible combination of elements is equally likely to be sampled.</p>
+<p>To obtain a simple random sample, we could write every unique combination of sampled elements on a separate card, shuffling the cards and then blindly drawing one card. Of course, if the population is large, then writing out all possible combinations is just too much work. Fortunately, an equivalent method is to randomly select individual elements. This can be done using random number tables, still found in the back of some statistics books. But these tables have become obsolete; we can now <strong>generate random number sequences with a computer</strong>. For example, if our population consists of twelve million registered taxpayers, then we can generate a sequence of two hundred unique random numbers between one and twelve million.</p>
+<h3> <span class="mw-headline" id="Systematic_Sampling_.28Simple.29">Systematic Sampling (Simple)</span></h3>
+<p>Systematic sampling is also <strong>aimed to obtain a random sample</strong> and is similar to simple random sampling. In systematic sampling <strong>only the first element is selected using a random number, the other elements are selected by systematically skipping a certain number of elements</strong>.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Suppose we want to sample the quality of cat food on an assembly line. A random number gives us a starting point: say the seventh bag. We then sample each tenth bag, so we select bag number seven, seventeen, twenty-seven, etcetera. It would be much
+  harder to select elements according to random numbers, say bag number seven, thirty, thirty-six, forty-one etcetera., especially if the assembly line moves very fast.</p>
+</blockquote>
+<p>With this approach, <strong>each element has an equal probability of being selected, but the probabilities are not independent</strong>. </p>
+<blockquote>
+  <p>In our example, elements seventeen, twenty-seven, thirty-seven etcetera, are only chosen if seven is chosen as a starting point.</p>
+</blockquote>
+<p>This is not a real problem; it just requires a little more statistical work to determine things like the margin of error.
+The <strong>real problem</strong> with systematic sampling is that <strong>it only results in truly random sample if there is absolutely no pattern in the list of elements</strong>.</p>
+<blockquote>
+  <p>What if the assembly line alternately produces cat food made with fish and cat food made with beef? Let's say all odd-numbered elements are made with fish. In our example we would never sample the quality of cat food made with beef! Of course this is an exaggerated example, but it illustrates that systematic sampling can be dangerous.</p>
+</blockquote>
+<p>A pre-existing list or ordering of elements can always contain a pattern that we are unaware of, resulting in a biased sample.
+So systematic sampling only results in a truly random sample if it is absolutely certain that the list of elements is ordered randomly. We can <strong>make sure of this by randomly reordering the entire list</strong>. We could generate a sequence of random numbers of the same size as the list and then select elements from this list using systematic sampling. Of course this is equivalent to random selection directly from the original list using random numbers. Unless we can be sure that the list is truly random, systematic sampling should not be considered a form of probability sampling; instead it should be considered <strong>a form of non-probability sampling</strong>.</p>
+<h2> <span class="mw-headline" id="5.05_Probability_sampling_-_complex">5.05 Probability sampling - complex</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/505_probability_sampling-complex.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h3> <span class="mw-headline" id="Stratified_Random_Sampling_.28Relatively_Simple.29">Stratified Random Sampling (Relatively Simple)</span></h3>
+<p>In stratified random sampling we <strong>divide the population into mutually exclusive strata</strong>. We sample from each stratum separately using <strong>simple random sampling</strong>. The separately sampled elements are <strong>added together</strong> to form the final sample.</p>
+<p>Stratified random sampling is useful for two reasons.</p>
+<ul>
+<li><p>It allows us to ensure that at least in terms of the sampled strata, <strong>our sample is representative</strong>. This means subpopulations are represented in the sample in exactly the same proportion as in the population. With simple random sampling we can expect the sample to be representative in the long run, but due to chance, in any particular sample, strata might be over- or underrepresented.*</p></li>
+<li><p>Stratification is useful because it can make <strong>sampling more efficient</strong>. This means, all other things being equal, that we achieve a <strong>smaller margin of error</strong> with the same sample size. Stratifying only increases efficiency if the strata differ strongly from each other, relative to the differences within each stratum.*</p></li>
+</ul>
+<blockquote>
+  <p>Example:</p>
+  <p>Imagine we want to sample the quality of cat food produced on an assembly line. The line produces cat food made with fish and cat food made with beef. Suppose the average quality of beef cat food is higher than that of fish cat food. Also, the quality
+  varies relatively little when we consider each type of food separately. Under these circumstances we will obtain a more accurate estimate of the population's average food quality if we stratify on food type. This is because quality is related to food type; even a small overrepresentation of one food type can distort our overall estimate of food quality. Stratifying prevents this distortion. If the quality does not differ between food types, then overrepresentation of one food type will not distort the overall estimate and stratification will not improve efficiency.</p>
+</blockquote>
+<p>It is important to realize that stratified sampling requires that we know which stratum each element belongs to. If we can identify strata, then we also know their size. As a consequence, the size of our subsamples does not have to correspond to the size of the strata. We can calculate a representative estimate by weighing the subsamples according to stratum size.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Why would we do this? Well, suppose our stratum of fish cat food is relatively small, or is known to strongly vary in quality. In both cases our estimate of the quality of fish cat food might be much less likely to be accurate than that of beef cat food. It might be worth it to take a bigger sample of fish cat food, so we have a better chance of getting an accurate estimate. Of course this means over-representing fish cat food. We can correct for this overrepresentation by weighing the separate estimates of fish and beef cat food according to their stratum sizes before averaging them into an overall estimate of food quality. This way the sample value is representative, efficient and more likely to be accurate.</p>
+</blockquote>
+<h3> <span class="mw-headline" id="Multi-Stage_Cluster_Sampling_.28Relatively_Simple.29">Multi-Stage Cluster Sampling (Relatively Simple)</span></h3>
+<p>Multi-stage cluster sampling consists of <strong>randomly sampling in stages</strong>, allowing us to use random sampling without going bankrupt. </p>
+<blockquote>
+  <p>Example:</p>
+  <p>Consider sampling frames that consist of all inhabitants, students, or eligible voters in a certain country. If we were to randomly select elements from these frames we would have to travel all over the country. In most cases this is just too expensive.</p>
+  <p>Say we want to sample math performance in the population of all Dutch students currently in their third year of secondary education. We start by forming a <strong>sampling frame of all</strong> school districts; this is the first stage, where students are clustered in districts. We randomly select a very small sample of school districts. We can use <strong>stratification</strong> to make sure we include districts in urban and rural areas.</p>
+  <p>In the second stage we <strong>randomly select</strong> schools from the previously selected districts. Students are now clustered in schools. In the third stage third year math classes are randomly sampled from the previously selected schools. We could even include a fourth stage where students are randomly sampled from the previously selected classes. Stratification can be used in all of these stages.</p>
+</blockquote>
+<p>Multi-stage cluster sampling <strong>makes random sampling feasible</strong>. But the margin of error is harder to determine, because the probability to be included in the sample is no longer the same for all elements, like it was with simple random sampling. Also, cluster sampling is usually associated with a <strong>larger margin of error</strong>, even if stratified sampling is used to increase efficiency. However, these disadvantages are generally more than outweighed by the <strong>reduction in cost and effort</strong>.</p>
+<h2> <span class="mw-headline" id="5.06_Non-probability_sampling">5.06 Non-probability sampling</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/506_non-probability_sampling.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<p>In non-probability sampling some elements in the sampling frame either have zero probability to be selected or their probability is unknown. As a consequence, we cannot accurately determine the margin of error. It's also impossible to determine the likelihood that a sample is representative of the population. If a study uses non-probability sampling, the results should always be interpreted with <strong>great caution</strong> and generalized only with very great reservation.</p>
+<h3> <span class="mw-headline" id="Convenience_Sampling">Convenience Sampling</span></h3>
+<p>Convenience sampling, or accidental sampling, is the simplest form of non-probability sampling. In convenience sampling, <strong>elements are selected that are the most convenient, the most easily accessible</strong>.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>If I'm interested in investigating the effectiveness of online lectures on study performance, I could recruit students in
+  courses that I teach myself. Of course this a highly selective sample of students from a particular university in a
+  particular bachelor program. Results will almost certainly be influenced by specific characteristics of this group and might very well fail to generalize to all university students in my country, let alone students in other countries.</p>
+</blockquote>
+<p>So the risk of bias is high and we have no way to determine how closely the sample value is likely to approach the population value. Even so, convenience samples are used very often. Because sometimes, it's simply impossible to obtain a sampling frame.
+In other cases, the effort and expense necessary to obtain a sampling frame are just not worth it; for example when a universalistic, causal hypothesis is investigated.</p>
+<h3> <span class="mw-headline" id="Snowball_Sampling">Snowball Sampling</span></h3>
+<p>Snowball sampling is a <strong>specific type of convenience sampling</strong>. In snowball sampling, initially, <strong>a small group of participants is recruited</strong>. The sample is extended by asking the initial participants to provide contact information for possible new participants. These new participants are also asked to supply contacts. If all <strong>participants refer new ones</strong>, the initially small sample can grow large very quickly.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Suppose we want to sample patients who suffer from a rare type of cancer. We could approach a patient interest group, for example, and ask the initial participants if they can put us in contact with other patients that they know through other interest groups or through their hospital visits. We continue to ask new participants to refer others to us, until the required sample size is reached.</p>
+</blockquote>
+<p>Snowball sampling is very useful for hard-to-reach, closed-community populations. All disadvantages of convenience sampling also apply to snowball sampling, maybe even more so, because there is the added risk that we are selecting a clique of friends, colleagues or acquaintances. These <strong>people could share characteristics that differ systematically from others</strong> in the population.</p>
+<h3> <span class="mw-headline" id="Purposive_Sampling">Purposive Sampling</span></h3>
+<p>In purposive sampling, elements are specifically <strong>chosen based on the judgment of the researcher</strong>. A purposive sample can consist of elements that are judged to be:</p>
+<ul>
+<li><strong>typical for the population</strong>, so that only a few elements are needed to estimate the population value.*</li>
+<li><strong>only extreme elements</strong>, for example, to get an idea of the effectiveness of social workers working with extremely uncooperative problem families*</li>
+<li>elements that are <strong>very much alike</strong>, or, </li>
+<li><strong>very different</strong>, for example, to get an idea of the range of values in the population*</li>
+<li>people who are judged to be <strong>experts</strong>, for example when research concerns opinions on matters that require special knowledge.*</li>
+</ul>
+<p>Purposive sampling is used mostly in qualitative research and suffers all the same disadvantages that convenience sampling does. The researcher's judgments can even form an additional source of bias.</p>
+<h3> <span class="mw-headline" id="Quota_Sampling">Quota Sampling</span></h3>
+<p>Quota sampling is superficially similar to stratified random sampling. <strong>Participants in the sample are distinguished according to characteristics</strong>, such as gender, age, ethnicity or educational level. The relative size of each category in the population can be obtained from a national statistics institute. This information is used to calculate how many participants are needed in each category. So that <strong>the relative category size in the sample corresponds to the category size in the population</strong>. But instead of randomly selecting elements from each stratum, <strong>participants for each category are selected using convenience sampling</strong>. Elements are sampled until the quotas in all categories are met.
+Although this approach might seem to result in a representative sample, all kinds of biases could be present.</p>
+<blockquote>
+  <p>Bias Example:</p>
+  <p>Suppose the choice of participants is left to an interviewer. Then it's possible that only people who seem friendly and cooperative are selected.</p>
+</blockquote>
+<h2> <span class="mw-headline" id="5.07_Sampling_error">5.07 Sampling error</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/507_sampling_error.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<p>The goal of sampling is to estimate a value in the population as accurately as possible. But even if we use the most advanced sampling methods, there will always be some discrepancy between our sample value - the estimate - and the true value in the
+population. The <strong>difference between sample and population value</strong> is generally referred to as error. This error can be categorized into two general types sampling error and non-sampling error. Sampling error is the difference between population and sample value due to the fact that our sample is a <strong>limited, incomplete subset</strong> of the population.</p>
+<p>The true value in the population is almost always unknown. If we knew the population value then we wouldn't need a sample. This also means that for any particular sample we cannot assess how large the error is exactly. However, for sampling error it is <strong>relatively easy to estimate how large the error is</strong>. If we would take an infinite number of samples from a population, then under certain conditions, the average sample value of all these samples will correspond to the population value.
+But of course individual samples will result in sample values that are different from the population value. Sampling error is the <strong>difference between sample and population value that we would expect due to chance</strong>. We can estimate how large the sampling error is on average, if we were to repeatedly draw new samples from the same population. Note that this only works for randomly selected samples!</p>
+<p>The average error, called the <strong>standard error</strong>, can be estimated based on the values obtained in a single sample. We can then use the standard error to calculate a margin of error.</p>
+<p>You might think the margin of error tells us by how much our sample differs from the population at most. But we can't calculate between what boundaries the true population value lies exactly, because we are estimating the sampling error in the long run, over repeated samples. In the long run a ridiculously small or large value is always possible. What we can say is that <strong>the population value will lie between certain boundaries most of the time</strong>. This information is captured in a <strong>confidence interval</strong>. A confidence interval allows us to say that with repeated sampling, in a certain percentage of these samples, the true population value will differ from the sample value by no more than the margin of error.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Suppose we want to estimate the proportion of people that will vote for candidate A in an election. We sample one hundred eligible voters and find that sixty percent of the sample says they'll vote for A. We have to decide how confident we want to be. Let's say that with repeated sampling, we want the population value to fall within the margin of error at least ninety percent of the time. With this decision, we can now calculate the margin of error. Let's say that the margin of error is eight percent. This means we can say that with repeated sampling, the population value will differ from the sample value by no more than eight percent, in ninety percent of the samples.</p>
+</blockquote>
+<p>Sampling error is <strong>related to the sample size</strong>. As sample size increases, sampling error will become smaller. Sampling error is also influenced by the <strong>amount of variation in the population</strong>. If a population varies widely on the property of interest, then the sample value can also assume very different values. For a given sample size, sampling error will be larger in a population that shows more variation.</p>
+<p><em><strong>Summary</strong>: Sampling error is the difference between population and sample value due to chance, due to the fact that our sample is a limited, incomplete subset of the population. Sampling error is unsystematic, random error. It is comparable to the random error that makes a measurement instrument less reliable. We can estimate how large the sampling error will be in the long run, which allows us to conclude how accurate our sample value is likely to be. This only works under certain conditions. One of these conditions is that the sample is a random sample from the population.</em></p>
+<h2> <span class="mw-headline" id="5.08_Non-sampling_error">5.08 Non-sampling error</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/508_non-sampling_error.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<p>Non-sampling error is the difference between population and sample value <strong>due to sources other that sampling error</strong>. Two major sources of non-sampling error are sampling bias and error due to nonresponse. They are both related to the sampling procedure.</p>
+<h3> <span class="mw-headline" id="Sampling_Bias">Sampling Bias</span></h3>
+<p>Sampling bias is a systematic form of error. Sampling bias is the difference between sample and population value <strong>due to a systematic under- or overrepresentation</strong> of certain elements in the population. Sampling bias occurs when some elements have a <strong>much smaller or larger chance to be selected than was intended</strong>. Sampling bias can also occur when certain elements have <strong>no chance to be selected</strong> at all.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Suppose we want to estimate the proportion of people that will vote for candidate A in an election. Sampling bias could occur if participants were recruited on the street by an interviewer during working hours. This could lead to an underrepresentation of people who are employed full-time. If these people would vote for candidate A more often, then we would systematically underestimate the percentage of votes for candidate A.</p>
+</blockquote>
+<p>The risk of sampling bias is <strong>eliminated</strong>, at least in the long run <strong>by using a probability sampling method</strong>. With non-probability sampling, the risk of sampling bias is strong. Sampling bias is comparable to the systematic error that makes a measurement instrument less valid, or less accurate.</p>
+<h3> <span class="mw-headline" id="Non-Response">Non-Response</span></h3>
+<p>Non-response is the source of error that refers to a <strong>lack of response to invitations</strong> or the <strong>explicit refusal</strong> to participate in a study. Non-response also includes participants who <strong>drop out during the study</strong> or <strong>participants whose data are invalid</strong> because they did not participate seriously, because something went wrong or they did not understand or failed to comply with some aspect of the procedure.
+If non-response is <strong>random</strong>, then you could say that non-response results in a <strong>smaller sample</strong> and will thereby <strong>slightly increase the margin of error</strong>. But sometimes nonresponse is <strong>not random</strong>. Sometimes specific subgroups in the population are less likely to participate. If this subgroup has systematically different values on the property of
+interest, then <strong>non-response is a source of systematic error</strong>.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Suppose people with a lower social economic status are less likely to participate in polls and also prefer other candidates to candidate A. In that case we are missing responses of people that would not vote for A, which could lead to a systematic
+  overestimation of the percentage of people that will vote for A.</p>
+</blockquote>
+<h3> <span class="mw-headline" id="Incomplete.2F_Inaccurate_Sampling_Frame">Incomplete/ Inaccurate Sampling Frame</span></h3>
+<blockquote>
+  <p>Example:</p>
+  <p>The sampling frame might be out of date.</p>
+</blockquote>
+<h2> <span class="mw-headline" id="5.09_Sample_size">5.09 Sample size</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/509_sample_size.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<p>The goal of sampling is to obtain the best possible estimate of a population value, within the limits of our budget and our time.
+Sample size refers to the number of elements we need to sample in order to get an accurate estimate of the population value.</p>
+<p>An easy answer would be "as large a sample as we can afford". Because as sample size increases, the margin of error will decrease. Accidental over- or underrepresentation of certain elements will be less extreme and will become less likely. In other words, <strong>a bigger sample is always better in terms of accuracy</strong>.</p>
+<p>But this doesn't mean we should all collect samples consisting of tens of thousands of elements. This is because as the sample size grows, the decrease in the margin of error becomes smaller and smaller. At a certain point <strong>the cost of collecting more elements outweighs the decrease in the margin of error</strong>.</p>
+<blockquote>
+  <p>Example:</p>
+  <p>Say we want to estimate the proportion of votes for candidate A in upcoming elections. Suppose we have a sample of five hundred eligible voters. Then the error won't be cut in half if we double the sample to a thousand elements, the decrease in error will be much, much smaller.</p>
+</blockquote>
+<p>Note that it is <strong>the absolute size</strong> of the sample that <strong>matters</strong>, not the relative size. It doesn't matter if we are estimating election results in Amsterdam, with slightly more than half a million eligible voters, or national elections with more than 13 million voters. As long as the samples are both randomly selected, the margin of error will be the
+same, all other things being equal. This seems very counter-intuitive, but it's true nonetheless.</p>
+<p>There are other <strong>factors to consider</strong> when deciding on sample size. The <strong>variability</strong> of the population is an important factor. Heterogeneity, or strong variation in the population on the property of interest, results in a larger margin of error, all other things being equal. If values in the population vary widely, then a sample is more likely to accidentally over- or underestimate the true population value. If the population is more homogeneous or similar, meaning it takes on a narrow, limited set of values, well then the sample value will automatically lie close to the population value. If a population is more homogeneous, we can sample more efficiently. This means, all other things being equal, that we can achieve a smaller
+margin of error with the same sample size. Or, conversely, we can obtain the same margin of error with a smaller sample.</p>
+<p>If a probability sampling method is used we can <strong>determine what margin of error we are willing to accept</strong>, given a certain confidence level. We can say that we want our sample estimate of election results to differ by no more than five percent from the final results in ninety five percent of the samples, if we were to sample repeatedly. We, or rather a computer, can now calculate exactly what sample size we need, to obtain this margin of error at this confidence level. This does require that we use random sampling and that we can estimate the variability in the population, for example based on previous studies, old census data or just a best guess if necessary.</p>
+<p>It's a good idea to <strong>plan ahead and compensate for non-response</strong>. Non-response refers to elements in the sample that cannot be contacted, that refuse to participate, fail to complete the study or provide invalid responses. If the response-rate can be estimated based on previous or comparable research, then we can take non-response into account and <strong>sample extra elements</strong> that will compensate for the expected loss of elements due to non-response.</p>
+<p><span style="color:white;">.</span></p>
+<h1> <span class="mw-headline" id="Module_6:_Practice.2C_ethics_.26_integrity">Module 6: Practice, ethics &amp; integrity</span></h1>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/6_Practice_Ethics_Integrity.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.01_Documentation">6.01 Documentation</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/601_documentation.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.02_Data_management">6.02 Data management</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/602_data_management.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.03_Unethical_studies">6.03 Unethical studies</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/603_unethical_studies.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.04_Ethics_towards_participants">6.04 Ethics towards participants</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/604_ethics_towards_participants.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.05_Research_integrity">6.05 Research integrity</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/605_research_integrity.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.06_Questionable_research_practices">6.06 Questionable research practices</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/606_questionable_research_practices.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.06_Peer_review_process">6.06 Peer review process</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/607_peer_review_process.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.08_Dissemination_problems">6.08 Dissemination problems</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/608_dissemination_problems.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<h2> <span class="mw-headline" id="6.00_Milgram">6.00 Milgram</span></h2>
+<ul>
+<li><strong><a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/English/600_Milgram.pdf">Video Lecture Transcript</a></strong> by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/annemarie">Annemarie Zand Scholten</a></li>
+</ul>
+<p><span style="color:white;">.</span></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 70/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Quantitativemethods:Main&amp;oldid=32527">https://share.coursera.org/wiki/index.php?title=Quantitativemethods:Main&amp;oldid=32527</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Methods_and_Statistics_in_Social_Sciences:_Quantitative_Methods" title="Category:Methods and Statistics in Social Sciences: Quantitative Methods">Methods and Statistics in Social Sciences: Quantitative Methods</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

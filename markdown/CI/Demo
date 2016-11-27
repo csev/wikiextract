@@ -1,0 +1,46 @@
+Homework & Demo Using Excel (Lecture Video 2.4)
+
+* Due: October 28
+* Video lenght: 7 minutes
+* [link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a "024-CompInvestI link"), [notes](http://www.quantsoftware.org/CompInvestI-Presentations/024-CompInvestI.pptx "024-CompInvestI notes"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=13 "024-CompInvestI video")
+
+* Overview
+** Download historical data.
+** Manipulate historical data in Excel.
+
+## Demo Using Excel
+* How to download historical data from Yahoo
+* How to manipulate it in Excel
+* How to compute the metrics we’ve been talking about
+
+# Notes
+## Download historical data
+There are lots of good sources of financial data online. Both Yahoo Finance [http://finance.yahoo.com/] and Google Finance [https://www.google.com/finance] provide historical prices.
+* For example, Apple on [Yahoo](http://finance.yahoo.com/q?s=AAPL&ql=0 "Apple on Yahoo") and [Google](https://www.google.com/finance?q=NASDAQ%3AAAPL&ei=eFeKUNjoGYeHwAORXg "Apple on Google")
+* Historic data can be saved as csv eg. [Yahoo - Apple 2011 csv](http://finance.yahoo.com/q/hp?s=AAPL&a=00&b=1&c=2011&d=11&e=31&f=2011&g=d "Apple 2011 csv") and [Google - Apple 2011 csv](https://www.google.com/finance/historical?cid=22144&startdate=Jan+1%2C+2011&enddate=dec+31%2C+2011&num=30&ei=KFmKUJiGJYeHwAORXg "Google - Apple 2011 csv")
+* This data can be imported into excel or other spreadsheet programs
+** The data includes date, open, high, low, close, volume, and adjusted close.
+** The data we will work with is adjusted close. Adjusted close is different from close.
+
+
+## How to manipulate it in Excel
+How to calculate values using real data in a spread sheet.
+
+* Sort data by date ascending (oldest first)
+* Delete open, high, low, close, and volume, leaving date and adjusted close.
+* Calculate Total Return (Annual Return)
+** (Final Value/First Value)-1, for example =(D253/D2)-1
+* Calculate Daily Return
+** (Today's value/Yesterday's Value)-1, for example =(B3/B2)-1
+** Format as percentage.
+* Calculate Average Daily Return.
+** Average of all Daily Returns, for example =average(C2:C253)
+** Format as number.
+* Calculate Standard Deviation of Daily Return.
+** Standard Deviation over all Daily Returns, for example =stdev(C2:C253)
+** Format as number
+* Calculate Sharpe Ratio
+** Square Root of 253 multiplied by (Average Daily Return divided by Standard Deviation of Daily Returns), for example =sqrt(253)*F4/F5
+
+
+[[Category:CI]]

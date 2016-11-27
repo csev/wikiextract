@@ -1,0 +1,126 @@
+[[Category:Music Production|reaper]]
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+REAPER (Rapid Environment for Audio Production, Engineering, and Recording) is a digital audio workstation. It is distributed with an uncrippled evaluation license.  After a 60 day trial period, a nag screen explaining the license cost will appear on start up. It is currently available for Microsoft Windows (98/Me/2000/XP/Vista/7/8) and Mac OS X (10.4/10.5/10.6/10.7/10.8/10.9).  It has been tested, and shown to be stable, in several Linux builds using WINE. Version 4 of REAPER was released on August 3, 2011.  Version 4.71 was released on July 15, 2014. REAPER was created by a team led by Justin Frankel, the creator of Winamp.
+
+##Project specifics
+details of file management
+*Project Name
+**Mac/PC: File - > Save Project As - > Pick a name and a place to save it (Be careful not to save a project within another project folder).
+*File type
+**Mac/PC: File - > Project Settings - > Media - > Audio format for new recordings (WAV or AIFF are good settings)
+*Bit depth
+** Mac: File -> Project Settings -> Advanced -> Track mixing bit depth
+** PC:  File -> Project Settings -> Media -> WAV Bit Depth (24 bit is a good default)  (this sets your TRACK properties, you should also check your INPUT DEVICE properties under Options -> Preferences -> Device)
+*Sampling rate
+** Mac: REAPER -> Preferences ->Device -> Request sample rate 
+** PC:  File -> Project Settings -> Check box next to "Sample Rate" and set rate in combobox (48KHz is a good default) (this sets your TRACK properties, you should also check your INPUT DEVICE properties under Options -> Preferences -> Device)
+*Hardware
+*Buffer size
+** Mac: REAPER -> Preferences ->Device -> Request block size (default on 512)
+** PC:  Options -> Preferences -> Device (this sets the INPUT buffer size, the "Buffering" tab includes options for media read buffers)
+*Project folders specifics
+
+All of these settings can be set in the project settings (File -> Project Settings...) in the "Project Settings" and "Media" tabs
+
+##Recording
+details of audio recording
+*Metronome(click track)
+**Click on the metronome icon or check [Options]->[Metronome/pre-roll]->[Metronome enabled]
+*Count in
+**Right-click on the metronome icon or go to [Options]->[Metronome/pre-roll]->[Metronome/pre-roll settings...]
+*Time Signature Changes
+**Reaper handles this be indicating time signature CHANGES, rather than specifying a time signature for each measure. To indicate a time signature change, insert a Tempo / Time Signature Marker - this will give you an interface to specify the new time signature.
+*Audio recording tips
+
+
+##Editing Audio
+NB. In Reaper a "region" is called an "item". In Reaper the term "region" has a completely different meaning. So in the section below, where "region" is mentioned, mentally substitute "item"
+
+details of editing audio
+*Trimming
+**Mouse over the left or right edge of an audio region.  When the mouse cursor changes to a bracket with arrows, left-click and drag to change the start or stop points of the region.
+*Cutting
+**Click the desired point of separation on an audio track and hit 'S'. This splits the audio track into two tracks. You can also select a portion of the region (click and drag in the project timeline near the top), right-click the track and click "split items at time selection", to split where the time selection begins and ends.
+*Grid
+**To toggle the grid display on or off, click on the Grid Lines icon in the toolbar or select the [Options]->[Snap/grid]->[Show grid] menu item.
+**To toggle snap to grid on or off, click on the Snap Enabled icon in the toolbar or select the [Options]->[Snap/grid]->[Enable Snapping] menu item.
+*Change grid resolution
+**Right-click on either the Grid Lines or Snap Enabled icon in the tool bar or select the [Options]->[Snap/grid]->[Snap/grid settings...] menu item.
+*toggle grid display
+**Alt-G
+*toggle snap to grid
+**Alt-S
+*modifier key to toggle snap to grid
+**Moving a track while holding Shift ignores snap and time selection.
+*add fades
+**Mouse over the TOP left or right edge of an audio region.  When the mouse cursor changes to a curved line with arrows, left-click and drag to change the fade length or right-click to change the fade curve. You can split (see cutting above) a region in order to add fades at other locations.
+*modify fades
+**Same procedure as adding fades
+*efficient compiling of multiple takes
+**Select the part of recording you want to duplicate and drag it to a new track while pressing Ctrl. An alternative method is splitting the track (shortcut: S) and dragging it to the new track while pressing Ctrl.
+**Repeat until you have all the needed parts, then add crossfades between takes (see above).
+**Compile the track by selecting all the items, right click and Glue items.
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+**The keyboard shortcuts for this are the + and - key on your keyboard
+**The mouse wheel also zooms in and out.
+**Selecting a time interval and pressing Ctrl+NumPadPlus or Ctrl+PageUp (on windows) will zoom in to that time interval.
+*Nudge
+**The keyboard shortcuts for this is N.
+**You can also right click and select Nudge.
+**Either option will open a pop up screen that allows you to choose direction and amount of Nudge.
+*Cycle
+**You must first select a time interval to cycle through.
+**The keyboard shortcut for this is R.
+**You can also click on the button to the right of the record button.
+*Merge
+**In Reaper, this is known as gluing. You can find this option under the "Item" tab.
+*Name
+**Select the track. Under the "Item" tab, select "Item Properties" and change the Take Name.
+*Color
+**Under the "Track" tab, select "Track Color."
+*Markers
+**Click on where you want to put a marker and hit the M key.
+*Change tempo
+*Other efficient editing tips
+**Assign your own hotkeys to actions. Go to the "actions" tab and assign a hotkey to an important action. A good custom hotkey would be custom coloring a track. Search "color track" in the search bar in the actions list. Find it, then assign it to C. Then select a track and press C. A window will popup allowing you to change the color of the track.
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+**Open Virtual MIDI Keyboard: Alt+B. 
+**To keep the Virtual MIDI Keyboard active even if you click outside its window, right-click on the bottom of the virtual keyboard and check "Send all keyboard input to Virtual MIDI keyboard (even when other windows active)".
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+**(see the "Busses" section)
+*Configure reverb in a send and return scheme
+*Busses
+**Reaper is more flexible than most DAWs when it comes to the concept of busses or submixes. You can actually route tracks directly to other tracks, and treat the parent track like a bus, by simply adding FX or by routing it to the master output or yet more bus tracks. Note that there's no distinction between a regular track and an auxiliary track.
+**A great way to edit track-routing is by looking at the Routing Matrix, which is a tab next to the Mixer. There's a convenient chart showing what routes to what.
+*Automation recording
+** Automation is called Envelopes in Reaper and allows you to record automation by doing the following steps: Click on a track -> V (to display the volume envelope) -> arm that track and then use the fader to control the automation for volume. Right-click on an envelope-track you can select between Latch/Touch/Trim etc.
+*Automation editing
+
+##Useful resources
+additional resources
+*Website: http://reaper.fm/
+*Manual: The manual can be downloaded here: http://reaper.fm/userguide.php
+*Reaper Wiki: http://wiki.cockos.com/wiki/index.php/Reaper_Documentation
+*Forums: http://forum.cockos.com/forumdisplay.php?f=20
+*Links
+
+##Categories

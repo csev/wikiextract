@@ -1,0 +1,140 @@
+#Programming Assignment #2 - The Philosophers problem.
+
+This is an analysis of the Philosophers problem of the [Programming Assignment #2](https://class.coursera.org/posa-001/human_grading/view/courses/970268/assessments/21/submissions).
+
+## Analysis
+
+The output presented in the problem caught my attention. I reproduce it here for clarity purpose.
+
+    ... The program should create output that looks something like this:
+
+    Dinner is starting!
+
+    Philosopher 1 picks up left chopstick.
+    Philosopher 1 picks up right chopstick.
+    Philosopher 1 eats.
+    Philosopher 3 picks up left chopstick
+    Philosopher 1 puts down right chopstick.
+    Philosopher 3 picks up right chopstick.
+    Philosopher 2 picks up left chopstick.
+    Philosopher 1 puts down left chopstick.
+    Philosopher 3 eats.
+    Philosopher 2 picks up right chopstick.
+    Philosopher 2 eats.
+    Philosopher 2 puts down right chopstick.
+    Philosopher 2 puts down left chopstick.
+    Philosopher 3 puts down right chopstick.
+    Philosopher 3 puts down left chopstick.
+    …
+    Dinner is over!
+
+Notice how:
+
+1. The philosophers 2 and 3 (adjacent philosophers) are eating at the same time.  
+...  
+    <strong>Philosopher 3 eats.</strong>  
+    Philosopher 2 picks up right chopstick.  
+    <strong>Philosopher 2 eats.</strong>  
+...  
+2. Each philosopher takes only **one** chopstick every time.
+
+In the Philosophers problem, one fork or chopstick is between two philosophers. As a consequence, **two adjacent philosophers cannot eat at the same time**. Unless it is assumed that a philosopher can take any chopstick. For instance the chopstick are in the center of the table or a waiter assigns the chopsticks on demand. In the first case, 
+the chopsticks are seen as 5 different classes of resources with 1 instance each. In the second case,
+there is one class of resource with 5 instances available. 
+ 
+Regarding the second point, we can see that philosophers take one chopstick per attempt. Thus, a typical solution where one philosopher take the two chopsticks at once **is not feasible** if we take this output as the expected results. 
+
+## Solutions
+
+The solutions presented below are modeled using Petri Nets. Red transitions indicated that are enabled to fire.
+
+### Solution #1
+
+In this case, a chopstick or fork is between two philosophers, two adjacent philosophers cannot eat at the same time and a philosopher takes the two chopsticks in a single atomic operation (i.e. inside the monitor).
+
+**Figure 1. Philosophers in the Initial state.**
+
+<center>
+[[File:Philo1-1.png|alt="Solution #1: Philosophers in their Initial state"]]
+</center>
+
+Any Philosophers can take the chopsticks.
+  
+  
+  
+**Figure 2: Philosopher 3 took forks.**
+
+<center>
+[[File:Philo1-2.png|alt="Solution #1: Philosopher 2 took forks"]]
+</center>
+
+Philosophers 2 and 4 are not able to eat.
+
+
+**Figure 3: Philosopher  1 and 3 are eating.**
+
+<center>
+[[File:Philo1-3.png|alt="Solution #1: Philosopher  1 and 3 are eating"]]
+</center>
+
+In this case, philosophers 1 and 3 are eating and therefore no other philosopher can eat.
+
+
+### Solution #2
+
+In this case, all the chopsticks are accessible to any philosopher, two adjacent philosophers can eat at the same time and a philosopher takes the two chopsticks in a single atomic operation (i.e. inside the monitor).
+
+**Figure 4. Philosophers in the Initial state.**
+
+<center>
+[[File:Philo2-1.png|alt="Solution #2: Philosophers in their Initial state"]]
+</center>
+
+Any Philosophers can take the chopsticks.
+
+**Figure 5: Philosopher 3 took forks.**
+
+<center>
+[[File:Philo2-2.png|alt="Solution #2: Philosopher 2 took forks"]]
+</center>
+
+Since there are still 3 chopsticks, any of the remaining philosophers can take then and
+eat.
+
+
+**Figure 6: Philosopher  3 and 5 are eating.**
+
+<center>
+[[File:Philo2-3.png|alt="Solution #2: Philosopher  3 and 5 are eating"]]
+</center>
+
+In this case, philosophers 3 and 5 are eating and therefore no other philosopher is able to do it.
+
+### Solution #3.
+
+This solution is similar to solution 2 except that philosophers take the forks or chopsticks, first left and
+then right. in order to avoid deadlock, a philosopher is Hungry state when has taken the left fork but hasn't taken the right fork.
+
+**Figure 7. Philosophers in the Initial state.**
+
+<center>
+[[File:Philo3-1.png|alt="Solution #3: Philosophers in their Initial state"]]
+</center>
+
+Any Philosophers can take the chopsticks.
+
+**Figure 8: Philosopher 1-4 took left forks.**
+
+<center>
+[[File:Philo3-2.png|alt="Solution #3: Philosopher 1-4 took left forks"]]
+</center>
+
+Philosophers 1 to 4 took the forks. One fork is available.
+
+**Figure 9: Philosopher 3 is able to eat.**
+
+<center>
+[[File:Philo3-3.png|alt="Solution #3: Philosopher  3 is able to eat"]]
+</center>
+
+Since at least one philosopher is able to eat (philosopher 3), deadlock is avoided.

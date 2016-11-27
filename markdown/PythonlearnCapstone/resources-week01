@@ -1,0 +1,27 @@
+Week 1 - Placeholder
+
+1 Data set resources Wiki
+===================
+ Here is a link to the Wiki page with a list of Data sets 
+
+ (https://share.coursera.org/wiki/index.php/PythonlearnCapstone-Datasets_for_projects. 
+
+1. City of Cincinnati Open Data
+=====================
+The City's data belongs to our citizens and the public. The City of Cincinnati will provide access to government data to improve services, increase accountability and stimulate economic activity.
+Portal : (https://data.cincinnati-oh.gov/)
+Description : Well curated data with clear APIs to access data
+Categories : Safer streets, Thriving neighbouhood, growing economy
+2. DATA USA
+==========
+About : In 2014, Deloitte, Datawheel, and Cesar Hidalgo, Professor at the MIT Media Lab and Director of MacroConnections, came together to embark on an ambitious journey -- to understand and visualize the critical issues facing the United States in areas like jobs, skills and education across industry and geography. And, to use this knowledge to inform decision making among executives, policymakers and citizens.
+Portal: (http://datausa.io)
+Ideas for projects : (http://datausa.io/story)
+Categories : a variety of census data
+
+3. Quandl
+=======================
+I have found [Quandl](https://www.quandl.com) to be a good source of economic and financial data.  If you register (free!) you can create an account that will give you a "token" and then use their API scripts to pull data right from the website or use their Python module, "quandl".  This lets you get your dataset without having to do any copying and pasting or downloading of files.
+
+- Home page URL: https://www.quandl.com
+- Python-specific URL: https://www.quandl.com/tools/python

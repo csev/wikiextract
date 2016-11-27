@@ -1,0 +1,25 @@
+# RT/F and other Physical Constants  
+  
+* My name is Roger Coke Barr. I'm here for the bioelectricity course to talk today about a mysterious but also useful group of constants RT [foreign] and a couple of other physical constants whose values we need from time to time. Now again I would say this is a boring topic. But this is a boring topic that can get in your mind and if it does it can be a real mystery.  
+  
+## RT/F (slide 41)  
+* RT is used as a kind of conversion factor between ionic concentrations and voltages. We're not working on the conversion right this moment but it will come up in a later week but you will see this factor RT/F. And you will say what is this R and T and F?  
+* So R is the gas constant from chemistry. You remember the equation, PV equals NRT from chemistry of the gas law. And R is the constant in that law. About 8.3 joules per mole, per degree kelvin.  
+* T, in this equation RT/F, is the absolute temperature.  
+* And F is called Faraday's Constant. It's the amount of coulombs of charge that's present in one mole of material.  
+* If you would look these values up in standard references, Wikipedia and other more technical references, you'll find they give the values more precisely, but beyond that there's a discussion of how the values are obtained. It's worth doing it. Please do so.   
+  
+## RT/F (slide 42)  
+* Now the absolutely amazing thing is that, for whatever reason, RT/F is about 26 millivolts. So 26 millivolts is a kind of a constant of nature. Something like the value of the charge on the electron and you ask yourself why on earth is RT/F 26 millivolts rather than some other voltage but it is.  
+* And when you look into equations, when you see RT/F in your mind, you can say that's about 26 millivolts and it might vary a little bit because T varies depending on temperature. It could be a little higher or a little lower.  
+* So 26 is, sort of plus or minus ten percent or so. But it's about 26 millivolts. It's just amazing.  
+  
+## Faraday’s constant (slide 43)  
+* Of RT/F, often times people are at least familiar with Faraday's constant, and think of it as some mysterious number. Faraday's constant is in a way the most ordinary of all the values. You just get it by counting or doing a simple operation on two different numbers.  
+* First you take Avagrado's number, the number of molecules in a mole, and that's 6.02 times 10 to the 23rd. I've shown it here. Then you take the charge that's on one electron.  
+* You might say, why do all electrons have the same charge? I don't know why they all have the same charge, but it seems that they all do, and that charge is 1.6 times 10 to the -19 coulombs. And so the way you get F is you just multiply those two numbers.  
+* And so you get the total amount of charge this present when you have one moles worth of charges. The number of charge that's present in coulombs. The unit coulombs in a moles worth of material. So, it's quite a bit 96,487 coulombs. That's a lot, and Faraday's constant is that number.  
+  
+---  
+  
+That's all there is to this segment. It went pretty fast. But, I made it a separate segment because I know that often times one needs to come back and pick out those particular numbers. And maybe even to meditate on 26 millivolts and watts the part of the world around us. Thank you. We'll see you in the next segment.

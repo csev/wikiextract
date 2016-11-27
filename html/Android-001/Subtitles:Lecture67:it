@@ -1,0 +1,1006 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture67:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="Touch_and_Gestures_-_Part_1_-_Italian_subtitles">Touch and Gestures - Part 1 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture65:it" title="Android-001:Subtitles:Lecture65:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture67:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture67:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture67:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture67:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture67:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture67:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture67:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture67:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture69:it" title="Android-001:Subtitles:Lecture69:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/cmot7e3bu0w3w9k/6%20-%204%20-%20Touch%20and%20Gestures%20-%20Part%201%20%2815-48%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:00,000 --&gt; 00:00:09,684
+[BLANK_AUDIO]
+
+2
+00:00:09,684 --&gt; 00:00:12,526
+Hi, I'm Adam Porter, and this is
+
+3
+00:00:12,526 --&gt; 00:00:18,030
+Programming Mobile Applications for
+Android Handheld Systems.
+
+4
+00:00:19,430 --&gt; 00:00:24,630
+Se avete usato applicazioni comuni che
+mostrano mappe o pagine web, allora
+
+5
+00:00:24,630 --&gt; 00:00:29,520
+avrete probabilmente usato &quot;gesture&quot; (gesti,
+movimenti) come scorrere il display, o
+
+6
+00:00:29,520 --&gt; 00:00:34,930
+battere il dito sul display o zoomare
+usando due dita.
+
+7
+00:00:36,310 --&gt; 00:00:39,980
+In questa lezione, parleremo della
+classe MotionEvents.
+
+8
+00:00:41,030 --&gt; 00:00:47,220
+Android usa questa classe per rappresentare
+i movimenti in vari dispositivi di input.
+
+9
+00:00:47,220 --&gt; 00:00:52,110
+Come il muose, un trackball, e
+anche le vostre dita.
+
+10
+00:00:53,120 --&gt; 00:00:57,460
+Poi discuteremo di come Android prende
+questi Motion Events e li da in pasto
+
+11
+00:00:57,460 --&gt; 00:01:01,410
+alle Views o altri oggetti, cosi che
+la vostra applicazione
+
+12
+00:01:01,410 --&gt; 00:01:03,270
+possa rispondere.
+
+13
+00:01:04,350 --&gt; 00:01:06,210
+Infine, parleremo di
+
+14
+00:01:06,210 --&gt; 00:01:09,960
+come Android riconosce pattern
+
+15
+00:01:09,960 --&gt; 00:01:13,760
+complessi di gesti (gesture), 
+come il
+
+16
+00:01:13,760 --&gt; 00:01:15,700
+&quot;pinch&quot; per zoomare.
+
+17
+00:01:18,290 --&gt; 00:01:23,370
+Android usa la classe MotionEvent per
+rappresentare movimenti in un dispositivo
+
+18
+00:01:23,370 --&gt; 00:01:27,270
+di input come una penna, un trackball,
+un mouse o le nostre dita.
+
+19
+00:01:28,570 --&gt; 00:01:33,180
+Un individual movement event contiene
+tante informazioni.
+
+20
+00:01:33,180 --&gt; 00:01:38,590
+Ha un action code, che indica il tipo di
+gesto che e' stato fatto.
+
+21
+00:01:38,590 --&gt; 00:01:43,930
+Contiene anche una varieta' di dati
+associati alla gesture.
+
+22
+00:01:43,930 --&gt; 00:01:47,690
+Per esempio, ha informazioni riguardanti
+il tempo nel quale
+
+23
+00:01:47,690 --&gt; 00:01:53,620
+l'evento e' successo, qual e' stato il 
+dispositivo di input, la posizione dell'evento.
+
+24
+00:01:53,620 --&gt; 00:01:58,180
+E se necessario, con quanta forza e'
+stato premuto il dispositivo, ecc.
+
+25
+00:01:58,180 --&gt; 00:02:00,290
+Come ho appena detto,
+queste informazioni dipendono
+
+26
+00:02:00,290 --&gt; 00:02:04,100
+dal tipo di dispositivo di input
+utilizzato.
+
+27
+00:02:04,100 --&gt; 00:02:09,360
+Nel resto della lezione, ci 
+soffermeremo sugli eventi &quot;touch&quot;
+
+28
+00:02:09,360 --&gt; 00:02:12,120
+che sono rilevati toccando
+un touch screen.
+
+29
+00:02:13,980 --&gt; 00:02:18,140
+Molti dispositivi sono dotati di display
+touch oggi.
+
+30
+00:02:18,140 --&gt; 00:02:24,300
+Cio significa che essi possono registrare
+e tracciare piu tocchi allo stesso tempo
+
+31
+00:02:24,300 --&gt; 00:02:31,060
+In Android, i dispositivi multi touch emettono
+un movement trace per ogni sorgente.
+
+32
+00:02:31,060 --&gt; 00:02:34,540
+E ognuno di questi sorgenti e'
+
+33
+00:02:34,540 --&gt; 00:02:35,390
+a un puntatore
+
+34
+00:02:38,210 --&gt; 00:02:42,160
+Quando android incontra un nuovo
+puntatore, genera un nuovo unico
+
+35
+00:02:42,160 --&gt; 00:02:47,730
+ID che rimarra' costante per tutto il 
+tempo che il puntatore sara' attivo.
+
+36
+00:02:47,730 --&gt; 00:02:54,150
+In alcuni casi, Android raggruppera' piu
+puntatori all'interno di un single motion event.
+
+37
+00:02:54,150 --&gt; 00:03:00,580
+E in questo caso, ogni puntatore all'interno del 
+motion event puo essere acceduto mediante il suo indice
+
+38
+00:03:00,580 --&gt; 00:03:03,420
+Bisogna essere consapevoli del fatto
+che tale indice non e'
+
+39
+00:03:03,420 --&gt; 00:03:06,450
+lo stesso dell'ID del puntatore.
+
+40
+00:03:06,450 --&gt; 00:03:11,330
+L'ID del puntatore e' costante per tutto
+il tempo che il puntatore e' attivo.
+
+41
+00:03:11,330 --&gt; 00:03:15,990
+L'indice nel quale i dati del puntatore sono
+memorizzati puo non esserlo.
+
+42
+00:03:17,930 --&gt; 00:03:21,200
+Approfondiamo il Motion Events.
+
+43
+00:03:21,200 --&gt; 00:03:26,100
+Come ho detto prima, Motion Events
+ha un action code.
+
+44
+00:03:26,100 --&gt; 00:03:28,210
+Quando inizia una gesture,
+
+45
+00:03:28,210 --&gt; 00:03:30,610
+viene creato un Motion Event,
+e
+
+46
+00:03:30,610 --&gt; 00:03:34,115
+questo conterra' alcuni dei
+seguenti action code.
+
+47
+00:03:34,115 --&gt; 00:03:39,550
+ACTION_DOWN, che indica che 
+un primo dito
+
+48
+00:03:39,550 --&gt; 00:03:42,195
+ha iniziato a toccare il display.
+
+49
+00:03:42,195 --&gt; 00:03:48,210
+ACTION_POINTER_DOWN, cio vuol dire che
+abbiamo gia avuto un ACTION_DOWN,
+
+50
+00:03:48,210 --&gt; 00:03:52,295
+ed ora abbiamo un altro dito che
+ha iniziato a toccare il display.
+
+51
+00:03:52,295 --&gt; 00:03:55,520
+ACTION_POINTER_UP.
+
+52
+00:03:55,520 --&gt; 00:03:59,070
+Abbiamo gia un ACTION_POINTER e un
+ACTION_POINTER_DOWN, e ora
+
+53
+00:03:59,070 --&gt; 00:04:02,305
+una delle dita ha smesso di
+toccare il display.
+
+54
+00:04:02,305 --&gt; 00:04:05,180
+ACTION_MOVE.
+
+55
+00:04:05,180 --&gt; 00:04:08,995
+Alcune delle dita che stanno toccando il
+display hanno cambiato la loro posizione.
+
+56
+00:04:08,995 --&gt; 00:04:11,540
+ACTION_UP.
+
+57
+00:04:11,540 --&gt; 00:04:15,610
+L'ultimo dito che ha toccato il display
+ha appena smesso di toccarlo
+
+58
+00:04:17,270 --&gt; 00:04:17,415
+E
+
+59
+00:04:17,415 --&gt; 00:04:19,030
+ACTION_CANCEL.
+
+60
+00:04:19,030 --&gt; 00:04:21,950
+Qualcosa ha prematuramente cancellato 
+la gesture corrente.
+
+61
+00:04:24,040 --&gt; 00:04:26,740
+Mentre la gesture e' in atto,
+Android provera'
+
+62
+00:04:26,740 --&gt; 00:04:31,450
+a garantire che il suo motion events
+rispetta le seguenti regole.
+
+63
+00:04:31,450 --&gt; 00:04:33,630
+I tocchi diminuiranno uno alla volta.
+
+64
+00:04:34,670 --&gt; 00:04:36,660
+Si muoveranno come un gruppo.
+
+65
+00:04:36,660 --&gt; 00:04:41,200
+Cosi un singolo motion event puo 
+riferirsi a piu puntatori, e
+
+66
+00:04:41,200 --&gt; 00:04:44,650
+arriveranno uno alla volta o essere
+cancellati.
+
+67
+00:04:47,400 --&gt; 00:04:49,680
+Quando hai bisogno di elaborare
+motion events, puoi
+
+68
+00:04:49,680 --&gt; 00:04:55,310
+usare alcuni di questi metodi,
+getActionMasked() che ritorna
+
+69
+00:04:55,310 --&gt; 00:05:01,810
+l'action code associato al motion
+event. getActionIndex(),
+
+70
+00:05:01,810 --&gt; 00:05:06,850
+che ritorna l'indice del puntatore 
+associato a questo action code.
+
+71
+00:05:06,850 --&gt; 00:05:12,400
+Per esempio, se l'action code e' down 
+allora puoi usare
+
+72
+00:05:12,400 --&gt; 00:05:17,650
+questo metodo per trovare l'indice
+dello specifico puntatore che
+
+73
+00:05:17,650 --&gt; 00:05:22,750
+e' touched down. getPointerId()
+che dato un indice,
+
+74
+00:05:22,750 --&gt; 00:05:27,470
+ritorna lo stable ID del puntatore
+
+75
+00:05:27,470 --&gt; 00:05:33,420
+associato a questo indice.
+GetPointerCount,
+
+76
+00:05:33,420 --&gt; 00:05:37,798
+che ritorna il numero di puntatori
+associati al motion event
+
+77
+00:05:37,798 --&gt; 00:05:42,860
+GetX and getY, che ritornano
+
+78
+00:05:42,860 --&gt; 00:05:48,030
+le coordinate x e y del puntatore
+memorizzato all'indice corrente
+
+79
+00:05:49,430 --&gt; 00:05:55,670
+E findPointerIndex, che ritorna l'indice
+associato al dato puntatore ID
+
+80
+00:05:59,140 --&gt; 00:06:04,400
+Quando avviene un tocco su una view,
+Android genera un motion event, e poi
+
+81
+00:06:04,400 --&gt; 00:06:11,260
+prova a spedire questo evento a vari
+oggetti, uno dei quali e' la view stessa.
+
+82
+00:06:11,260 --&gt; 00:06:15,570
+Android spedisce il motion event
+attraverso il metodo onTouchEvent()
+
+83
+00:06:16,610 --&gt; 00:06:20,610
+Questo metodo puo elaborare il motion
+event, e dovrebbe finire,
+
+84
+00:06:20,610 --&gt; 00:06:24,680
+ritornando true se il motion event e'
+stato consumato,
+
+85
+00:06:24,680 --&gt; 00:06:26,810
+e false se non lo e' stato.
+
+86
+00:06:28,860 --&gt; 00:06:32,190
+gli oggetti interessati alla ricezione del
+motion event che avviene
+
+87
+00:06:32,190 --&gt; 00:06:35,470
+su una certa view, possono registrarsi
+per ricevere questi eventi
+
+88
+00:06:35,470 --&gt; 00:06:41,180
+implementando l'interfaccia 
+view.OnTouchListener,
+
+89
+00:06:42,330 --&gt; 00:06:48,680
+e registrando l'oggetto col metodo
+view.setontouchlistener().
+
+90
+00:06:51,108 --&gt; 00:06:54,280
+Il metodo onTouch sara poi 
+chiamato quando
+
+91
+00:06:54,280 --&gt; 00:06:59,730
+un evento accade, come la pressone, il
+rilascio, il trascinamento.
+
+92
+00:06:59,730 --&gt; 00:07:02,990
+E questo metodo sara chiamato prima
+che l'evento
+
+93
+00:07:02,990 --&gt; 00:07:05,630
+venga spedito alla Touched View.
+
+94
+00:07:06,700 --&gt; 00:07:12,000
+Inoltre, onTouch() dovrebbe ritornare true
+se esaurisce il motion event
+
+95
+00:07:12,000 --&gt; 00:07:16,350
+Altrimenti false.
+Nel caso piu
+
+96
+00:07:16,350 --&gt; 00:07:20,750
+semplice, potete elaborare ogni touch
+event singolarmente.
+
+97
+00:07:20,750 --&gt; 00:07:25,930
+Ma le applicazioni spesso hanno bisogno o
+vogliono elaborare piu touch che fanno
+
+98
+00:07:25,930 --&gt; 00:07:30,810
+parte di una gesture piu complessa.
+Per fare cio, il codice
+
+99
+00:07:30,810 --&gt; 00:07:36,600
+avra bisogno di identificare ed elaborare
+particolare combinazioni di
+
+100
+00:07:36,600 --&gt; 00:07:41,831
+touch, per esempio, un doppio tocco 
+coinvolgera' un ACTION_DOWN.
+
+101
+00:07:43,580 --&gt; 00:07:47,680
+E poi un ACTION_UP e poi un altro
+ACTION_DOWN
+
+102
+00:07:47,680 --&gt; 00:07:51,030
+e infine un nuovo ACTION_UP, tutto in
+rapida successione.
+
+103
+00:07:51,030 --&gt; 00:07:55,000
+Per fare degli esempi, supponete di 
+iniziare una
+
+104
+00:07:55,000 --&gt; 00:07:59,000
+gesture mettendo un dito sul
+display.
+
+105
+00:07:59,000 --&gt; 00:08:01,870
+Questo generera' un evento
+ACTION_DOWN.
+
+106
+00:08:01,870 --&gt; 00:08:06,280
+E potrebbe assegnare un ID pointer di zero
+per questo puntatore.
+
+107
+00:08:06,280 --&gt; 00:08:08,710
+Se tenete il dito sul dispaly e lo
+muovete
+
+108
+00:08:08,710 --&gt; 00:08:14,040
+sul display stesso, potreste ottenere
+tanti action move event associati
+
+109
+00:08:14,040 --&gt; 00:08:18,480
+al pointer ID zero.
+Supponiamo ora
+
+110
+00:08:18,480 --&gt; 00:08:22,950
+di mettere un secondo dito sul display.
+In questo caso otterremo un action pointer
+
+111
+00:08:22,950 --&gt; 00:08:28,700
+down event, e questo nuovo puntatore 
+potrebbe ottenere un ID = 1.
+
+112
+00:08:28,700 --&gt; 00:08:33,870
+Se teniamo entrambe le dita sul display e
+le muoviamo, potremo ottenere tanti
+
+113
+00:08:33,870 --&gt; 00:08:40,460
+action move events associati gli ID
+0 e 1.
+
+114
+00:08:40,460 --&gt; 00:08:43,250
+Se togliamo il primo dito, allora
+
+115
+00:08:43,250 --&gt; 00:08:49,030
+otteniamo un action pointer up event, 
+associato al pointer ID zero.
+
+116
+00:08:49,030 --&gt; 00:08:53,850
+Poi, se togliamo anche l'altro dito
+otteniamo un action up event
+
+117
+00:08:53,850 --&gt; 00:08:59,560
+associato al pointer ID 1.
+Nel prossimo esempio
+
+118
+00:08:59,560 --&gt; 00:09:02,880
+inizieremo come prima, poggiando il
+primo dito sul display.
+
+119
+00:09:02,880 --&gt; 00:09:09,426
+Lo muoveremo, poggeremo un altro
+dito, e poi li muoveremo entrambi.
+
+120
+00:09:09,426 --&gt; 00:09:13,610
+Ma questa volta, comunque,
+toglieremo prima il secondo dito.
+
+121
+00:09:13,610 --&gt; 00:09:20,382
+In questo caso, otterremo un
+acion pointer up associato al pointer ID 1
+
+122
+00:09:20,382 --&gt; 00:09:24,837
+e poi toglieremo il primo dito, ottenendo
+un action up
+
+123
+00:09:24,837 --&gt; 00:09:30,327
+associata al pointer ID 0.
+
+124
+00:09:30,327 --&gt; 00:09:33,590
+Per l'ultimo esempio, useremo 
+tre dita.
+
+125
+00:09:33,590 --&gt; 00:09:38,410
+Poggeremo il primo dito, poi il secondo,
+infine il terzo.
+
+126
+00:09:38,410 --&gt; 00:09:42,360
+Poi li muoveremo tutti, e poi li
+rimuoveremo tutti.
+
+127
+00:09:42,360 --&gt; 00:09:45,570
+Prima il secondo dito, poi
+il primo,
+
+128
+00:09:45,570 --&gt; 00:09:49,090
+e infine toglieremo
+il terzo dito.
+
+129
+00:09:52,110 --&gt; 00:09:53,730
+La prima applicaizone di esempio
+
+130
+00:09:53,730 --&gt; 00:09:57,220
+di questa lezione e' chiamata
+touchIndicateTouchLocation.
+
+131
+00:09:57,220 --&gt; 00:10:03,830
+che disegna un cerchio ogni volta
+che l'utente tocca il display.
+
+132
+00:10:03,830 --&gt; 00:10:09,600
+Il colore del cerchio e' scelto casualmente
+e l'app ridisegnera' poi
+
+133
+00:10:09,600 --&gt; 00:10:14,640
+il cerchio, seguendo il dito dell'utente,
+se questo si muove sullo schermo.
+
+134
+00:10:15,770 --&gt; 00:10:17,370
+Infine, quando l'utente
+
+135
+00:10:17,370 --&gt; 00:10:20,250
+tocca lo schermo in piu punti
+
+136
+00:10:20,250 --&gt; 00:10:23,370
+La dimensione dei cerchi che sono
+disegnati
+
+137
+00:10:23,370 --&gt; 00:10:27,930
+cambiera' per rispecchiare il numero
+corrente di touch attivi.
+
+138
+00:10:27,930 --&gt; 00:10:31,369
+diamo un occhiata a questa app
+in azione.
+
+139
+00:10:31,369 --&gt; 00:10:32,556
+Questo e' il device
+
+140
+00:10:32,556 --&gt; 00:10:34,398
+[BLANK_AUDIO]
+
+141
+00:10:34,398 --&gt; 00:10:39,070
+Lanciamo l'applicazione.
+
+142
+00:10:41,360 --&gt; 00:10:43,780
+Quando viene eseguita, lo schermo
+e' vuoto.
+
+143
+00:10:43,780 --&gt; 00:10:46,240
+perche non ho ancora toccato lo schermo
+
+144
+00:10:47,850 --&gt; 00:10:52,870
+Ora poggio un dito sullo schermo
+e questo causa
+
+145
+00:10:52,870 --&gt; 00:10:56,890
+la comparsa di un cerchio dove ho
+toccato lo schermo.
+
+146
+00:10:57,990 --&gt; 00:11:00,900
+Appena sposto il dito sullo schermo,
+potete
+
+147
+00:11:00,900 --&gt; 00:11:04,800
+vedere come il cerchio viene ridisegnato,
+per tracciare i movimenti del dito.
+
+148
+00:11:05,990 --&gt; 00:11:06,620
+Ora,
+
+149
+00:11:06,620 --&gt; 00:11:08,510
+poggero' un secondo dito sul display
+
+150
+00:11:10,140 --&gt; 00:11:14,710
+e questo causa la comparsa di un 
+nuovo cerchio sotto il mio dito
+
+151
+00:11:14,710 --&gt; 00:11:19,410
+e come potete vedere, la dimensione dei
+due cerchi e' ora
+
+152
+00:11:19,410 --&gt; 00:11:23,030
+dimezzata rispetto alla dimensione 
+di quando c'era un dito.
+
+153
+00:11:24,830 --&gt; 00:11:27,820
+Ora tolgo il secondo dito e
+
+154
+00:11:27,820 --&gt; 00:11:30,160
+il primo cerchio torna alla 
+dimensione originale
+
+155
+00:11:31,500 --&gt; 00:11:31,680
+Ora,
+
+156
+00:11:31,680 --&gt; 00:11:35,940
+rimetto il secondo dito, e appaiono
+dinuovo i due cerchi
+
+157
+00:11:35,940 --&gt; 00:11:39,550
+di dimensione ridotta.
+Ora possono trascinare le due dita intorno
+
+158
+00:11:39,550 --&gt; 00:11:46,090
+allo schermo, e questi cerchi seguiranno i
+miei movimenti, infine poggero
+
+159
+00:11:46,090 --&gt; 00:11:55,870
+molte dita, quattro, sei, otto, dieci,
+Ho finito le dita&#160;:D
+
+160
+00:11:57,370 --&gt; 00:11:58,760
+Ora li muovo tutti, e
+
+161
+00:12:00,930 --&gt; 00:12:10,542
+Ora rimuovero' alcune dita,
+otto, sei, quattro, due, uno.
+
+162
+00:12:10,542 --&gt; 00:12:13,880
+Diamo un'occhiata al codice sorgente 
+di questa app.
+
+163
+00:12:16,410 --&gt; 00:12:21,260
+C'e' l'applicazione aperta nell'IDE.
+Apriamo l'activity principale.
+
+164
+00:12:23,140 --&gt; 00:12:29,100
+Questo codice prima crea una serie
+di custom view chiamate MarkerView
+
+165
+00:12:30,910 --&gt; 00:12:35,360
+Marker views saranno usate per marcare la
+posizione di un singolo touch.
+
+166
+00:12:37,030 --&gt; 00:12:42,280
+Poi, il codice definisce un insieme che 
+tiene le MarkerView che sono visibili
+
+167
+00:12:42,280 --&gt; 00:12:43,060
+correntemente sullo schermo.
+
+168
+00:12:43,060 --&gt; 00:12:47,440
+Andiamo al metodo onCreate(),
+il codice
+
+169
+00:12:47,440 --&gt; 00:12:51,530
+ottiene un FrameLayout che rappresenta la
+View principale di questa activity.
+
+170
+00:12:52,730 --&gt; 00:12:58,040
+E poi crea un OnTouchListener e lo setta
+come destinatario
+
+171
+00:12:58,040 --&gt; 00:13:03,210
+del metodo OnTouchListener.
+diamo un'occhiata a questo metodo.
+
+172
+00:13:05,910 --&gt; 00:13:11,460
+Quando l'utente tocca il display, il 
+metodo ontouch() del listener viene chiamato
+
+173
+00:13:12,830 --&gt; 00:13:17,730
+questo metodo inizia controllando che
+l'action code per il nuovo motion event
+
+174
+00:13:19,240 --&gt; 00:13:22,014
+Se l'action code e' ACTION_DOWN o
+
+175
+00:13:22,014 --&gt; 00:13:26,050
+ACTION_POINTER_DOWN, poi avviene un nuovo
+touch
+
+176
+00:13:26,050 --&gt; 00:13:30,550
+Quindi il codice crea e mostra un
+nuovo MarkerView.
+
+177
+00:13:30,550 --&gt; 00:13:32,250
+Il codice
+
+178
+00:13:32,250 --&gt; 00:13:36,660
+fa questo registrando un pointerID, e un
+
+179
+00:13:36,660 --&gt; 00:13:40,630
+pointerIndex per questo evento. Prende poi
+un marker dalla
+
+180
+00:13:40,630 --&gt; 00:13:45,800
+lista dei marker inattivi, e lo
+aggiunge alla lista
+
+181
+00:13:45,800 --&gt; 00:13:51,040
+di quelli attivi, usando il suo pointerID
+come chiave per questa view
+
+182
+00:13:52,450 --&gt; 00:13:57,380
+Poi setta la posizione di questa 
+MarkerView, e
+
+183
+00:13:57,380 --&gt; 00:14:03,160
+poi aggiorna il numero totale di tocchi
+per ogni markerView correntemente visibile
+
+184
+00:14:04,750 --&gt; 00:14:08,860
+Infine aggiunge il MarkerView alla view 
+principale dell'activity.
+
+185
+00:14:10,520 --&gt; 00:14:15,880
+Ora se, invece, l'action code e'
+ACTION_UP o ACTION_POINTER_UP
+
+186
+00:14:15,880 --&gt; 00:14:18,950
+allora vuol dire che il dito e' stato 
+rimosso dal display
+
+187
+00:14:20,370 --&gt; 00:14:22,900
+Quindi il codice essenzialmente
+
+188
+00:14:22,900 --&gt; 00:14:24,380
+disfa quello che abbiamo fatto
+in precedenza.
+
+189
+00:14:26,720 --&gt; 00:14:29,290
+Ora, come prima, il codice inizia
+a registrare
+
+190
+00:14:29,290 --&gt; 00:14:32,600
+il pointerID e il pointerIndex per
+questo evento.
+
+191
+00:14:35,600 --&gt; 00:14:38,670
+Poi rimuove il MarkerView che e'
+stato associato al
+
+192
+00:14:38,670 --&gt; 00:14:42,420
+dito che e' stato appena rimosso
+dalla lilsta di quelli attivi.
+
+193
+00:14:43,640 --&gt; 00:14:46,980
+Poi aggiunge questo marker
+alla lista di quelli inattivi.
+
+194
+00:14:48,630 --&gt; 00:14:50,780
+E successivamente aggiorna il
+numero totale
+
+195
+00:14:50,780 --&gt; 00:14:53,930
+di touch per ogni marker view 
+correntemente visibile.
+
+196
+00:14:55,190 --&gt; 00:14:58,830
+dopodiche rimuove il markerview
+dalla view principale dell'activity
+
+197
+00:14:58,830 --&gt; 00:15:00,942
+E infine, se
+
+198
+00:15:00,942 --&gt; 00:15:06,090
+l'action code e' ACTION_MOVE.
+allora il codice aggiorna
+
+199
+00:15:06,090 --&gt; 00:15:12,220
+la posizione dei relativi marker view,
+e inizia a ridisegnarli
+
+200
+00:15:12,220 --&gt; 00:15:17,600
+Il codice fa questo mediante un ciclo
+sui pointer nel motion event.
+
+201
+00:15:17,600 --&gt; 00:15:20,960
+Per ognuno di questi, ottiene
+il marker view
+
+202
+00:15:20,960 --&gt; 00:15:26,880
+del pointer, poi verifica se il pointer ha
+coperto una certa distanza.
+
+203
+00:15:27,880 --&gt; 00:15:34,230
+Se e' cosi, setta la nuova posizione per
+questo marker view, e poi chiama
+
+204
+00:15:34,230 --&gt; 00:15:39,280
+il metodo invalidate() sul MarkerView che indica
+che il marker view deve essere ridisegnato.
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture67:it&amp;oldid=23619">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture67:it&amp;oldid=23619</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

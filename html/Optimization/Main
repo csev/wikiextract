@@ -1,0 +1,34 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Welcome to the Discrete Optimization course wiki.  In this space you can contribute useful information relating to the course material that will benefit this session of the course and all future sessions!</p>
+<ul>
+<li><a href="/wiki/index.php/Optimization:correction" title="Optimization:correction"> Corrections</a> to the lectures,</li>
+<li>Guide to <a href="/wiki/index.php/Optimization:EditingVideos" title="Optimization:EditingVideos"> editing the videos</a>,</li>
+<li><a href="/wiki/index.php/Optimization:implementation" title="Optimization:implementation"> Implementations</a> of example in the lectures,</li>
+<li>Anything and everything about specific <a href="/wiki/index.php/Optimization:tools" title="Optimization:tools"> optimization tools</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="Extra_code_and_scripts">Extra code and scripts</span></h2>
+<ul>
+<li><a href="/wiki/index.php/Optimization:glue" title="Optimization:glue"> Glue code</a> helpful in the course, connecting the solver to different languages, file parsers, etc...</li>
+<li><a href="/wiki/index.php/Optimization:AutoSubmit" title="Optimization:AutoSubmit"> autosubmit</a> script which uses stored login and password data.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:Main&amp;oldid=13927">https://share.coursera.org/wiki/index.php?title=Optimization:Main&amp;oldid=13927</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

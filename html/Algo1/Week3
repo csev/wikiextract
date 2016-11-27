@@ -1,0 +1,32 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Algo1:Week3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h2> <span class="mw-headline" id="Random_Pivots">Random Pivots</span></h2>
+<p>Use a QuickSort framework with randomized pivot to find the $$n^{th}$$ ranked element in a set in average $$O(n)$$ time.</p>
+<h2> <span class="mw-headline" id="Deterministic_.24.24O.28n.5C_log.5C_n.29.24.24_QuickSort">Deterministic $$O(n\ log\ n)$$ QuickSort</span></h2>
+<p>QuickSort can obtain deterministic $$O(n\ log\ n)$$ performance through <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Median_of_medians">Median of Medians</a>, but in practice it's not used due to its complexity and high constant factor. Random pivot is much easier and in practice faster.</p>
+<h2> <span class="mw-headline" id="Graph">Graph</span></h2>
+<p>A <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Graph_(mathematics)">Graph</a> organizes data as relationships of pairs of elements. <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Graph_theory">Graph Theory</a> can be used to understand real world structures including roads, networks, Facebook, Linkedin and <a rel="nofollow" class="external text" href="https://oracleofbacon.org/">Six Degrees of Kevin Bacon</a>.</p>
+<p>Representing nodes in graphs is fairly straight forward. Representing edges is more interesting. Popular techniques include an <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Adjacency_matrix">adjacency matrix</a> or an <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Adjacency_list">adjacency list</a>. Adjacency lists tend to be better for sparse graphs.</p>
+<p>When enough edges of a graph are removed, such that the nodes left are no longer connected, then this set is called a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Cut_(graph_theory)">cut</a>. The minimum set of edges is called the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Cut_(graph_theory)#Minimum_cut">min cut</a>.</p>
+<p><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Karger's_algorithm">Karger's Algorithm</a> finds the min cut of a graph using randomization.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Algo1:Week3&amp;oldid=29431">https://share.coursera.org/wiki/index.php?title=Algo1:Week3&amp;oldid=29431</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php?title=Category:Algorithms&amp;action=edit&amp;redlink=1" class="new" title="Category:Algorithms (page does not exist)">Algorithms</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

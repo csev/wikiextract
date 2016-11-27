@@ -1,0 +1,37 @@
+Systematic Program Design 1
+===========================
+
+> > *This is the course wiki.  Information on many topics can be collected on pages of this wiki.  This Main page is a good place for a catalog of those topics, with further details on their own pages.*
+
+> > ***CHOOSE MATERIAL CAREFULLY*** Do not use the Course Wiki to post about details of homework, quizzes, programming projects, and exams.  The Course Wiki persists from one offering of the course to the next.  Discussion Forums are specific to individual offerings of the course.  Use the Forums to discuss homework, quizzes, programming project, and exam details ***after their deadlines***.
+
+Using the Tools
+---------------
+
+ * [[Programdesign:InstallingRacket | Installing and Working with [Dr]Racket]]
+
+ * [[Programdesign:UsingDrRacket | Using BSL, Saved Definitions (.rkt files) and Course Kits]]
+
+ * [[Programdesign:UsingForums | Using the Discussion Forum]]
+
+ * [[Programdesign:UsingWiki | Using the Course Wiki]]
+
+Diving into the Course
+----------------------
+
+ * [[Programdesign:QuirksAhahs | Quirks, Glitches, Gotchas, and Ahah!]]
+
+ * [[Programdesign:StudentPractices | The Great Student Practice Problem Explosion]]
+
+ * [[Programdesign:Glossary | Glossary]]
+
+ * [[Programdesign:Design Cheat Sheet | Design Cheat Sheet]]
+
+ 
+ IRC channel
+---------------
+/connect irc.freenode.net
+
+/join #coursera-spd1
+
+Online IRC client : http://webchat.freenode.net/

@@ -1,0 +1,42 @@
+[[Category:Coursera]]
+[[Category:Heterogeneous Parallel Programming]]
+
+# Heterogeneous Parallel Programming
+Course on programming for highly parallel environments.
+
+
+Glossary
+--------
+ 
+[Glossary of terms and acronyms](https://share.coursera.org/wiki/index.php/Hetero-002:Glossary)
+ 
+
+IRC Channel
+--------
+[#coursera-hpp@freenode](irc://#coursera-hpp@irc.freenode.net)
+
+[Web client](http://webchat.freenode.net/?channels=coursera-hpp)
+
+
+C Material
+--------
+[Learn C the Hard Way](http://c.learncodethehardway.org/book/)
+
+[nVidia CUDA C Programming Guide](http://docs.nvidia.com/cuda/pdf/CUDA_C_Programming_Guide.pdf)
+
+[NVIDIA CUDA Runtime API](http://docs.nvidia.com/cuda/cuda-runtime-api/)
+
+  [List of CUDA Device Properties](http://docs.nvidia.com/cuda/cuda-runtime-api/structcudaDeviceProp.html#structcudaDeviceProp)
+
+Debugging CUDA Programs
+--------
+Guidance and best practices for debugging CUDA programs
+
+[NVIDIA CUDA-GDB debugging documentation](http://docs.nvidia.com/cuda/cuda-gdb/) 
+
+# Important Facts/Details
+<br>
+Please feel free to add/edit important facts/details.
+*https://www.coursera.org/course/hetero
+*https://class.coursera.org/hetero-002
+*https://class.coursera.org/hetero-2012-001

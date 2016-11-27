@@ -1,0 +1,111 @@
+[[Category:DAW|ardour]]
+[[Category:Music Production|ardour]]
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project specifics
+details of file management
+*Project Name
+ - one choses to create a "new session" (and then chooses location and name) or open an existing session
+*File type
+ - ardour 3 supports broadcast wave, wave, wave-64 and caf
+*Bit depth
+ - session -> properties -> media
+*Sampling rate
+*Hardware
+*Buffer size
+ - typically configured during startup of ardour: choose driver, audio interface, sample rate, buffer size, number of buffers, audio mode, setup midi options (number of ports, midi driver, dither), define hardware input/output latency
+*Project folders specifics
+ - specified after hardware setup
+ - choose to create new session, provide location+name, or
+ - choose to open existing session (choose from recent ones or open from drive)
+##Recording
+details of audio recording
+*Metronome(click track)
+ - provided by means of a metronome button
+ - set up a tempo (e.g 120 beats/minute) and time signature (e.g. 4/4) on the meter and tempo tracks respectively
+ - one can change tempo/time signature in the middle of a piece
+*Count in
+ - Not available as an option, but punch in/out can be used as work around: 1. Mark a range, starting at beat #2 and about as long as you like to record, then right click and select "Set Punch from Range". 2. In the box next to the secondary clock, press on the "In" and if desired "Out" buttons, so they light up. 3. Drag the "start" marker to the beginning of beat #1 ("Location Markers" bar). Ardour will now only record in the area highlighted red, which depends on the punch markers' locations and if punch in / out functions are enabled. Obviously, any existing tracks need to be moved one beat to the right.  
+*Audio recording tips
+ - better to run with a real-time kernel, as otherwise you can easily get buffer overruns (leading to clicks or pops in the sound). By default, these overruns are automatically marked using labels. Overruns can be reduced by increasing buffer size at the expense of extra latency.
+ - if you record from laptop microphone, make sure that you don't enable mic input and master/track output simultaneously to avoid having your cat run away
+
+##Editing Audio
+details of editing audio
+*Trimming
+ - trimming is done by selecting the "hand" tool, moving it over the bottom (name) area of the clip and dragging the edges
+*Cutting
+ - cutting is done by selecting the range tool, selecting a region, then clicking ctrl+x
+*Grid
+ - grid is provided. One can snap to grid, or make grid magnetic, or ignore grid
+*Change grid resolution
+ - set up the granularity using a toolbar button (e.g. every beat/4 or every x seconds or ...)
+*modifier key to toggle grid
+ - grid can be made invisible via "view" menu -> "show measures" (keys can bound to that as well if wanted)
+*add fades
+ - fades can be added by selecting hand tool, then dragging from an left-upper or right-upper corner of a sound fragment
+*modify fades
+ - type of fade can be adjusted by right-clicking the faded region
+*efficient compiling of multiple takes
+ - you can have overlapping sound regions, so you could delete a part from one fragment and drag another fragment from a different track on top of it
+ - you can just delete part of one fragment and leave other fragment on second track
+ - ... probably many more ways to work than I'm aware of 
+ - you can use punch in/punch out
+##Efficient Editing
+details of efficient editing
+*Zoom
+ - press + and - keys
+*Nudge 
+ - right click on sound region -> nudge
+*Cycle
+ - right click on a sound region, select "loop region"
+*Merge
+ - in ardour 3: select both regions, right-click -> edit -> combine
+*Name
+ - track name can be changed by double-clicking
+*Color
+ - color can be chosen by right-clicking on the track
+*Markers
+ - custom markers can be added
+*Change tempo
+ - insert new event on tempo track
+*Other efficient editing tips
+ 
+##Editing MIDI
+details of editing midi
+*Velocity
+ - select note, ctrl+up arrow or ctrl+down arrow
+*Quantization
+ - select notes and right-click -> select your track name -> MIDI -> quantize
+*Control Change data
+ - select notes and right-click -> select your track name -> MIDI -> insert patch change
+ - or use automation to change the controller values (pitch bend, pressure, any controller really)
+*MIDI monitor(through)
+*Other MIDI editing tips
+ - select a note and right-click to assign to different channel
+*Adding software instruments
+** start your sampler/synth and connect using jack OR
+** use a plugin such as Calf Fluidsynth, Calf Monosynth or Calf Organ to load soundfonts or use in-DAW synthesizers
+*Other MIDI tips
+ - to hear midi notes as you insert/change them on the piano roll, choose "edit -> preferences -> midi -> send midi notes as they are selected"
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+*[Website](http://ardour.org)
+*Manual (http://manual.ardour.org)
+*Keyboard Shortcuts (https://community.ardour.org/node/2894)
+*Forums
+*Links
+
+##Categories

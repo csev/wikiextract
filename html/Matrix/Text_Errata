@@ -1,0 +1,240 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Matrix:Text Errata</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Coding the Matrix Errata</p>
+<p>This page does not include errors in the index. The printed index is incorrect, a <a href="/wiki/index.php/Matrix:Text_Index" title="Matrix:Text Index">new one</a> has been created (<a rel="nofollow" class="external text" href="http://codingthematrix.com/CodingTheMatrixIndexVersion0.pdf">PDF version</a>).</p>
+<p><a href="/wiki/index.php/Matrix:Main" title="Matrix:Main"> Return to Main Page</a></p>
+<p><strong>page 2</strong>: in 0.3 The function 4: a pre-image of the input should be: a pre-image of the output</p>
+<p>The result in Example 0.3.2 should start with {((1,1),1)...</p>
+<p><strong>page 3:</strong> In Example 0.3.3 there are dots missing between D\mapsto G and W\mapsto Z</p>
+<p><strong>page 5:</strong> In 0.3.3 there is a notation F^D equivalent to f: D -&gt; F. But the "pun" doesn't work this way. IMO the notation should be D^F, pronounced "D to the F". So the Fact 0.3.9 is correct, and the example "W to the |R" should be written W^|R.</p>
+<p><strong>page 6:</strong> The sentence in the last line, starting with "In general,"  ist not completed. </p>
+<p><strong>page 7</strong>: typo
+<em>Printed:</em> g $$\circ$$ f is defined and is the identify function on the domain of f</p>
+<p><em>Correction:</em> s/identify/identity</p>
+<p>last line in Definition 0.4.14: x in A should be x in D.  </p>
+<p>last line is an "orphan" </p>
+<p><strong>page 9:</strong> In Ex. 0.4.1 instaed of }. We there should be }, we</p>
+<p><strong>page 43</strong>: line -3: i^2=1 should be i^2=-1</p>
+<p>last line is an "orphan" </p>
+<p><strong>page 59</strong>: last line is an "orphan"</p>
+<p><strong>page 89</strong>: Missing symbol in def 2.9.6.</p>
+<p><em>Printed:</em> Definition 2.9.6: A linear equation is an equation of the form <strong>a</strong> $$\cdot$$  = $$\beta$$, where a is a vector, $$\beta$$ is a scalar, and   is a vector variable. </p>
+<p><em>Correction:</em> some symbol, perhaps "$$v$$" is required to represent the vector variable. </p>
+<p><strong>page 90</strong>: Missing symbol and incorrect symbol in def 2.9.10.</p>
+<p><em>Printed:</em> In general, a <em>system of linear equations</em> (often abbreviated <em>linear system</em>) is a collection of equations</p>
+<p>$$\qquad\mathbf{a}&#95;1\cdot = \beta&#95;1$$<br />
+$$\qquad\mathbf{a}&#95;2\cdot = \beta&#95;2$$<br />
+$$\qquad\ldots$$<br />
+$$\qquad\mathbf{a}&#95;{m}\cdot = \beta&#95;m$$  </p>
+<p>where  is a vector variable. A <em>solution</em> is a vector ^ that satisfies all the equations. </p>
+<p><em>Correction:</em> some symbol, perhaps "$$v$$" is required to represent the vector variable. Also, the caret symbol is probably not the intended one to represent the solution vector. </p>
+<p><strong>page 98</strong>: last line is an "orphan"</p>
+<p><strong>Page 103</strong> $$x$$ is written as [$$x&#95;1, x&#95;2, x&#95;3, x&#95;4$$] twice and then referred to [$$x&#95;0, x&#95;1, x&#95;2, x&#95;3$$] a couple of times.</p>
+<p><strong>page 118</strong>: in Quiz 3.2.6: consists should be consist</p>
+<p><strong>page 121</strong>: first "line" ist a "widow"</p>
+<p><strong>page 148</strong>: last line is an "orphan"</p>
+<p><strong>page 152:</strong> The footnote should be ...rowdict2mat(rowdict) and coldict2mat(coldict)... </p>
+<p><strong>Page 159</strong> Example 4.6.2  should be "which is 1 . 3 + 2 . (-1) = 1" instead of "which is 1 . 3 . 1 + 2 . (-1) = 1"</p>
+<p><strong>page 167</strong>: first line ist a "widow"</p>
+<p><strong>page 172</strong>: first line ist a "widow"</p>
+<p><strong>page 175</strong>: Execise 4.10.7: g([x,y)) should be g([x,y])</p>
+<p><strong>page 176</strong>: In 4.10.4 vectors v should be named u (as being elements of U)</p>
+<p><strong>page 177</strong>: in 4.10.6: onto? should be onto</p>
+<p><strong>Page 179</strong>: in 4.11 line -1: while the other is legal should be while the other is not legal</p>
+<p><strong>page 189</strong>: last line is an "orphan"</p>
+<p><strong>Page 190</strong> Three occurences on this page of: $$A=b$$ instead of: $$ Ax = b$$</p>
+<p><strong>Page 201</strong>: Question "What is a linear function?" already put one page before.</p>
+<p><strong>page 203f</strong>: Problem 4.17.10 is the same as Problem 4.17.5</p>
+<p><strong>Page 210</strong> Typo in LaTeX for ellipsis, in first complete paragraph</p>
+<p><strong>page 228</strong>: last line is an "orphan"</p>
+<p><strong>Page 232</strong> Description of the basis vectors $$a&#95;1$$ and $$a&#95;2$$ is incorrect.
+<ul><li> Actual: $$a&#95;1$$ goes horizontally from the bottom-left corner ... to the bottom-right corner
+</li><li> Correct: $$a&#95;1$$ goes horizontally from the top-left corner ... to the top-right corner 
+</li><li> Actual: $$a&#95;2$$ goes vertically from the top-right corner... to the bottom-right corner
+</li><li> Correct: $$a&#95;2$$ goes vertically from the top-left corner... to the bottom-left corner</p>
+</li></ul>
+
+<p>The text in the Perspective Lab instructions is correct.</p>
+<p><strong>page 241</strong>: line 1: to the top-right corner should be to the top-left corner</p>
+<p><strong>Page 243</strong> Section 5.12.5 "Thechange-of-basis matrix":
+IMHO: "Let $$H = A^{−1}C$$." should be "Let $$H = C^{−1}A$$."   (from Khayrat Glende)</p>
+<p><strong>Page 244</strong> Actual: "..combining Equations 5.10 and 5.12.6". Correct:"..combining Equations 5.10 and 5.11"</p>
+<p><strong>Page 244</strong> Missing numbering for the bottom two equations, referenced on page 245 as 2.12 and 2.12 (sic) (see below)</p>
+<p><strong>Page 245</strong> (Task 5.12.2) Actual: "Equations 5.12 and 5.12". Correct: "Equations 5.12 and 5.13"</p>
+<p><strong>Page 253</strong> Problem 5.14.17 listed in text is not listed in online course material</p>
+<p><strong>page 257</strong>: last line is an "orphan"</p>
+<p><strong>Page 258</strong> Section 6.1.2 (Proof) $${{}b&#95;k{}} \cup A \cup (S&#95;{k-1}-&#123;w&#125;)$$ instead of simply $${b&#95;k} \cup (S&#95;{k-1}-{w})$$</p>
+<p><strong>Page 259</strong> Layout error places bottom image on page over text, obscuring part of text</p>
+<p><strong>Page 263</strong> Section 6.2.4 Typo ("probabiity")</p>
+<p><strong>page 264</strong>: in 6.2.6 9: S equals k should be |S| equals k</p>
+<p><strong>page 267</strong>: in 6.3.1 line 7: the list of vectors should be the set of vectors</p>
+<p><strong>Page 277</strong> Typo in the Proof box where $$B^{-1}$$ has been used instead of $$A^{-1}$$.  "$$BAA^{-1} = \mathbb{1}&#95;RA^{-1}$$ by multiplying on the right by $$B^{-1}$$" should be corrected to "$$BAA^{-1} = \mathbb{1}&#95;RA^{-1}$$ by multiplying on the right by $$A^{-1}$$"</p>
+<p><strong>page 281:</strong> last line is an "orphan"</p>
+<p><strong>page 282:</strong> last line is an "orphan"</p>
+<p><strong>page 284:</strong> above Problem 6.7.2: and use it show should be and use it to show</p>
+<p><strong>page 291:</strong> pictures without title, p.e. "Lithography of Gauß in Astronomische Nachrichten, 1828 by S. Bendixen"  </p>
+<p>eliminationem vulgarem: Why use the accusative here? Nominative is eliminatio vulgaris  </p>
+<p><strong>page 292:</strong> last line of third item should be: lem 2.9.12 and 2.8.7). </p>
+<p>in 7.1 Echelon form, last item: row 3 instead of row 4 </p>
+<p><strong>page 294:</strong> in 7.1.3 not the shows but the rows should be ordered  </p>
+<p>Proof's lines 2 and 3: Grow algorithm on the set ... instead of on Span  </p>
+<p><strong>page 295:</strong> rows&#95;left is {1,2,4} should be rows&#95;left is {1,3,4}</p>
+<p>Typo: "interation" (probably "iteration")</p>
+<p><strong>page 296:</strong> from the fifth should be [0 0 0 9 8] (see last line of 5x5 matrix on foregoing page)</p>
+<p>similar: get new fifth row should be [0 0 0 9 8] - 3[0 0 0 3 2] = [0 0 0 0 2]</p>
+<p>and finally: selects [0 0 0 3] should be [0 0 0 0 3].</p>
+<p><strong>page 298</strong> in Example 7.1.5: This shows that v is Row A should be: This shows that v is in Row A</p>
+<p><strong>page 299:</strong> that the row rank is three. should be that the row rank is two.</p>
+<p><strong>page 300:</strong> the algorithm perform should be the algorithm performs</p>
+<p>column c should be column C, likewise column d should be column D</p>
+<p><strong>page 305</strong> second matrix: numbers in column D should be aligned with letter D</p>
+<p><strong>page 306:</strong> (Lemma 6.2.13), 2 should be (Lemma 6.2.13, D2)</p>
+<p><strong>page 309:</strong> in first equation x<em>i should be replaced by u</em>i, in third and fourth equation x<em>i should be replaced by v</em>i</p>
+<p><strong>page 310:</strong> in both equations the empty vector should be filled with components u_i</p>
+<p>in 7.6.3 components of a0 and b0 are different in text and code </p>
+<p>last line is an "orphan"</p>
+<p><strong>page 313:</strong> in 7.7.3, both bullets: the the bag should be the bag</p>
+<p>line (-5) 1176 factor 3 missing</p>
+<p><strong>page 314:</strong> 1st bullet: obtaine dby should be obtained by</p>
+<p>2nd bullet and 5 lines below: 1176 = 2<em>2</em>2<em>3</em>7*7</p>
+<p>next line: dumb&#95;factor or better: dump&#95;factor?</p>
+<p>Task 7.7.4: last sentence superfluous (report to whom?)</p>
+<p><strong>page 315</strong> Task 7.7.6: make&#95;vec should be make&#95;Vec (corresponding to following examples and factoring&#95;lab  </p>
+<p>switching the notification of exponents from e to a seems to be unnecessary  </p>
+<p><strong>page 316:</strong> in table line 5 (x=61) "factored" is 2.3..7.13 should be 2.3.7.31</p>
+<p><strong>page 317:</strong> first bullet should be positioned in a new line</p>
+<p>second bullet: By "product of these" is meant "product of the elements of alist", not of the entries of the  last row of M. This should be clarified.  </p>
+<p><strong>page 318</strong> 2nd line: K=len(primeset) schouldm't be in italic letters, rows = b[] should be rowlist = [],</p>
+<p>Problems should be 7.9 Problems and problem numbering updated</p>
+<p><strong>page 319:</strong> in line between matrices of example in Problem 7.8.2: your answer instead of you answer </p>
+<p><strong>page 321</strong> in Removing irrelevant columns: A = b isn't a matrix-vector-equation. One could say p.e.: "Let A be the original matrix and let b be the original right side"</p>
+<p><strong>page 322:</strong> in the matrix in Problem 7.8.7 (should be 7.9.7) there is a \hline missing</p>
+<p><strong>Page 331</strong> The picture shows an "a" vector instead of a "v" vector</p>
+<p><strong>Page 345</strong> "Because of Lemma 9.1.3, we tend to blur the between.." a word is missing, probably "difference"</p>
+<p>In the Proof box for Lemma 9.1.6: "Clearly the distance between $$b$$ and $$b^{\|\mathcal{V}}$$m is $$\| b^{\perp\mathcal{V}}\|$$."  There is an extraneous letter 'm' after $$b^{\|\mathcal{V}}$$.</p>
+<p><strong>Page 346</strong> First line: "This shows that $$\| b-p \| &gt; \mathit{norm}b-b^{\|\mathcal{V}}$$ if..." has an extraneous word <em>norm</em> instead of the double vertical bar symbols.  This should say instead: "This shows that $$\| b-p \| &gt; \| b-b^{\|\mathcal{V}}\|$$ if..."</p>
+<p>first line is a "widow"</p>
+<p><strong>page 347</strong>: last line is an "orphan"</p>
+<p><strong>Page 348</strong> Proof: "$$v&#95;I^&#42;$$ and $$ v&#95;j^&#42;$$ instead of $$v&#95;i$$ and $$v&#95;j$$, respectively</p>
+<p><strong>Page 349</strong> the column vector containing the sigma's has the first two entries $$\sigma&#95;0$$ and $$\sigma&#95;2$$ instead of $$\sigma&#95;0$$ and $$\sigma&#95;1$$</p>
+<p><strong>Page 359</strong> Section 9.6.6 "These vectors span the same space as input vectors.." the last vector is written as $$w&#95;n^&#42;$$ instead of simply $$w&#95;n$$</p>
+<p><strong>page 360</strong>: last line is an "orphan"</p>
+<p><strong>Page 361</strong> "In this case , therefore the ij entry is.." the first vector should also be typeset in bold.</p>
+<p>Lemma 9.7.2: "By Corollary 9.4.10.." should be 9.4.12</p>
+<p>There is an extra $$Q$$ after "column-orthogonal matrix" in definition 9.7.4.  The text should read "...where $$Q$$ is an $$m \times n$$ column-orthogonal matrix and $$R$$ is a triangular matrix." and not "...where $$Q$$ is an $$m \times n$$ column-orthogonal matrix <strong>Q</strong> and $$R$$ is a triangular matrix."</p>
+<p>9.7.3 "Requring A to have ..." probably "requiring" </p>
+<p><strong>Page 362</strong> There is a missing line break in the pseudocode for the algorithm <code>qr.factor</code>.  The text should read:</p>
+<blockquote>
+  <p>let $$R$$ = coefficient matrix with rows scaled<br />
+  return $$Q$$ and $$R$$  </p>
+</blockquote>
+<p>...and not:  </p>
+<blockquote>
+  <p>let $$R$$ = coefficient matrix with rows scaled return $$Q$$ and $$R$$</p>
+</blockquote>
+<p>"Normalizing them does not change them.." should rather be "Normalizing them does not change their span.."</p>
+<p><strong>page 364</strong>: first "line" is a "widow", last line is an "orphan"</p>
+<p><strong>Page 365</strong> "Column j of Q is $$q&#95;i$$.." Correct would be:Column j of Q is $$q&#95;j$$..</p>
+<p>There is a parens missing after "(Lemma 9.16"</p>
+<p>"Substituting A for Q" should be "Substituting A for QR"</p>
+<p><strong>Page 372</strong> "<strong>Theorem:</strong> for a matrix $$A$$ over the reals, the row rank equal s the column rank."  There is an extraneous space in the word "equals".</p>
+<p><strong>Page 376</strong> In several places in the problem descriptions for 9.11.13 and 9.11.14, a caret symbol is used to represent the solution vector, as in "find a vector ^ that minimizes $$\| A\verb.^.-b\|$$.  Some symbol, perhaps $${v}$$ is required to represent the vector variable.</p>
+<p><strong>Page 397</strong> A minus sign is missing in the exponent in the following line:</p>
+<ul>
+<li>Secondly, we can multiply by $$\mathcal{F}^{-1}$$ by first multiplying by $$W(e^{2\pi\mathbf{i}/n},n)$$...</li>
+</ul>
+<p>The expression using $$W$$ should instead be $$W(e^{-2\pi\mathbf{i}/n},n)$$, with a negative exponent.</p>
+<p><strong>Page 398</strong> The FFT explanation could be improved by mentioning one more key equation, i.e. $$\omega^k = -\omega^{k+\frac{n}{2}}$$.  We could further explain that this is because $$\omega^{k+\frac{n}{2}} = \omega^k\cdot\omega^{\frac{n}{2}}$$ and $$\omega^{\frac{n}{2}} = e^{\frac{2\pi\mathbf{i}}{n}\cdot{\frac{n}{2}}} = e^{\pi\mathbf{i}} = -1$$ due to Euler's equation.  Without this explanation the reader (like me) might be baffled by the line <code>[f0[j]-w**j*f1[j] for j in range(n//2)]</code> in the <code>FFT()</code> Python function.</p>
+<p><strong>Page 400</strong> In example 10.7.3 there is a bit of unescaped LaTeX: "$$= 1 + 1 + cdots + 1$$"</p>
+<p><strong>Page 402</strong> Near the bottom of the page, there is a typo where $$\omega^{2\cdot j} \quad \omega^{3\cdot j}$$ appear adjacent to each other instead of vertically aligned.</p>
+<p>The matrix shown should be $$\begin{bmatrix} \omega^{0\cdot j} &#92;&#92; \omega^{1\cdot j} &#92;&#92; \omega^{2\cdot j} &#92;&#92; \omega^{3\cdot j} \end{bmatrix}$$ instead of $$\begin{bmatrix} \omega^{0\cdot j} &#92;&#92; \omega^{1\cdot j} &#92;&#92; \omega^{2\cdot j} \quad \omega^{3\cdot j} \end{bmatrix}$$</p>
+<p><strong>Page 410</strong> On the third line on the page, <code>getkeys(dlist, k)</code> is inconsistent with section 10.9.7 on page 407.  The function should be referred to as <code>dictlist_helper(D_list, k)</code> instead.</p>
+<p><strong>Page 412</strong> Task 10.9.15 through 10.9.18.  In order to successfully compress images, 2 additional coding changes are needed. </p>
+<ul>
+<li>Firstly, the function <code>forward_no_normalization()</code> needs to be augmented to pad the input vector with zeroes to make the length a power of 2, i.e. pad to the length $$2^{(int(log(len(v)-1, 2))+1)}$$.</li>
+<li>Secondly, we need to add a helper function <code>image_round()</code> that will take the image (list of list of floats) returned from the 2-dimensional backward wavelet transform and round each float to an integer.  If we don't do this, the routine <code>image.image2display()</code> fails, because the image module assumes in the function <code>isgray()</code> that only images with integer-valued pixels are grayscale images.  When it sees float values, <code>image2display()</code> tries to process the input list-of-lists as a color image and throws a runtime error.</li>
+</ul>
+<p><strong>Page 424</strong> In example 11.3.4, the second right singular vector is $$[.63, -.78]$$, not $$[.63, 78]$$ as written.</p>
+<p><strong>Page 427</strong> Lemma 11.3.11: Let $$[{w}&#95;1, \ldots, {w}&#95;k]$$ be an orthonormal vector basis...</p>
+<ul>
+<li>In order to be consistent with the rest of the text, the above line and the remainder of the lemma definition should use $$[{v}&#95;1, \ldots, {v}&#95;k]$$ as the orthonormal vector basis rather than $$[{w}&#95;1, \ldots, {w}&#95;k]$$</li>
+</ul>
+<p><strong>Page 433</strong> 3 corrections:</p>
+<ul>
+<li>Equation (11.19) is incorrect.  The norm of $$AVw$$ should not be squared, i.e. the equation should say "$$\| AVw \| \geq \sigma^2&#95;k + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r$$" instead of "$$\| AVw \|^2 \geq \sigma^2&#95;k + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r$$"</li>
+<li>Equation (11.20) should use $$\sigma&#95;k$$ instead of $$\sigma$$.  The complete equation should be:<br />
+$$\frac{\| AVw \|}{\| Vw \|} \geq \frac{\sigma^2&#95;k + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r}{\sqrt{\sigma^2&#95;k + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r}} = \sqrt{\sigma^2&#95;k + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r}$$<br />
+...and not:<br />
+$$\frac{\| AVw \|}{\| Vw \|} \geq \frac{\sigma^2 + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r}{\sqrt{\sigma^2 + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r}} = \sqrt{\sigma^2 + \beta^2&#95;{k+1} + \ldots + \beta^2&#95;r}$$</li>
+<li>On the line following equation (11.20), the last $$Vw$$ on the line should use normal math font rather than calligraphic because it represents here a matrix and not a vector space, i.e. it should read "...normalizing $$Vw$$, i.e. $$v = \frac{1}{\| Vw \|}Vw$$." and not "...normalizing $$Vw$$, i.e. $$v = \frac{1}{\| Vw \|}\mathcal{V}w$$."</li>
+</ul>
+<p><strong>Page 436</strong> Task 11.6.5 has:</p>
+<ul>
+<li><em>Input:</em> A vector , and a matrix $${M}$$ ...</li>
+<li><em>Output:</em> The square of the norm of the projection of  into the space...</li>
+</ul>
+<p>On both lines the symbol $${x}$$ is missing.  So the text for input should read "A vector $${x}$$, and a matrix $${M}$$...", and for output "The square of the norm of the projection of $${x}$$ into the space...".  The same type of error needs to be corrected in tasks 11.6.4, 11.6.6, and 11.6.10.</p>
+<p><strong>Page 443</strong> One suggested addition and one correction.
+<ul><li> The symbol $$\Lambda$$ is used without prior introduction.  The explanation would be easier to follow with some additional text before discussing $$A^t$$:  </p>
+</li></ul>
+
+<blockquote>
+  <p>Let $$\Lambda = \begin{bmatrix} \frac{1+\sqrt{5}}{2} &amp; \frac{1+\sqrt{5}}{2} &#92;&#92; 1 &amp; 1 \end{bmatrix}$$<br />
+  $$\qquad \Lambda = S^{-1}AS$$<br />
+  $$\qquad S\Lambda S^{-1} = (SS^{-1})A(S^{-1}S) = A$$<br />
+  $$\qquad A^t = \underbrace{A \cdotp A \cdots A}$$<br />
+  $$\qquad \ldots$$</p>
+</blockquote>
+<ul>
+<li>The last matrix in the Proof box lower down on the page has not been rendered correctly, because its two elements are shown adjacent to each other instead of one below the other.  The relevant line should be:<br />
+$$\qquad = \begin{bmatrix} s&#95;{11}c&#95;1\lambda&#95;1^t + s&#95;{12}c&#95;2\lambda&#95;2^t &#92;&#92; s&#95;{21}c&#95;1\lambda&#95;1^t + s&#95;{22}c&#95;2\lambda&#95;2^t \end{bmatrix}$$<br />
+...instead of:<br />
+$$\qquad = \begin{bmatrix} s&#95;{11}c&#95;1\lambda&#95;1^t + s&#95;{12}c&#95;2\lambda&#95;2^ts&#95;{21}c&#95;1\lambda&#95;1^t + s&#95;{22}c&#95;2\lambda&#95;2^t \end{bmatrix}$$  </li>
+</ul>
+<p><strong>Page 445</strong> Two corrections:</p>
+<ul>
+<li>Typo in the first paragraph: "seen diagonalization one before" should be "seen diagonalization <em>once</em> before".</li>
+<li>There is a missing variable $$e&#95;1$$ in Example 12.3.3.  The text should read "$$Ae&#95;1 = \lambda&#95;1e&#95;1, \ldots, Ae&#95;n = \lambda&#95;ne&#95;n$$" instead of "$$Ae&#95;1 = \lambda&#95;1, \ldots, Ae&#95;n = \lambda&#95;ne&#95;n$$" </li>
+</ul>
+<p><strong>Page 446</strong> Typo on line 7 where $$v$$ is used instead of $$u$$.  The relevant sentence should be "Let $$u$$ be a non-zero vector in the null space." instead of "Let $$v$$ be a non-zero vector in the null space."</p>
+<p><strong>Page 447</strong> Typo in the initial sentence of example 12.3.11, which should read "...because $$A$$ is upper triangular." and not "...because $$U$$ is upper triangular".</p>
+<p><strong>Page 448</strong> Near the middle of the page, see the sentence "Let $$\lambda&#95;1, \ldots, \lambda&#95;n$$ be the diagonal elements of $$\Lambda$$, which are the eigenvalues of $$A$$, and let $$v&#95;1, \ldots, v&#95;n$$ be the corresponding eigenvectors..."<br />
+<ul><li> For consistency with the subsequent text, one possible correction would be to refer to the eigenvectors as $$u&#95;1, \ldots, u&#95;n$$ rather than $$v&#95;1, \ldots, v&#95;n$$.
+</li><li> But since $$u^{(0)}$$ and $$u^{(t)}$$ have already been used for the representation of the $$x$$ vectors in terms of the eigenvector basis, a better correction would be to leave the above text in place and change the equations on the rest of the page (everything leading up to equation 12.5) to refer to the eigenvectors as $$v&#95;1, \ldots, v&#95;n$$.</p>
+</li></ul>
+
+<p><strong>Page 451</strong> Just after the Proof box, "Combing Lemma 12.6.2 with..." should be "<em>Combining</em> Lemma 12.6.2 with..."</p>
+<p><strong>Page 459</strong> Last line, the single vertical bar to the left of $$a&#95;2$$ should be a double vertical bar, i.e. "...two sides, so $$\|a&#95;1\| |a&#95;2\|$$" should instead be "...two sides, so $$\|a&#95;1\| \|a&#95;2\|$$" </p>
+<p><strong>Page 466</strong> In the second sentence in the Proof box, the word "be" is repeated: "These $$n + 1$$ vectors belong to $$\mathbb{C}^n$$, so they must <strong>be be</strong> linearly dependent."</p>
+<p><strong>Page 467</strong> Two corrections:
+<ul><li> Just after equation 12.17, $$\lambda$$ should be used instead of $$\alpha$$, i.e. "for some complex numbers $$\beta, \alpha&#95;1, \alpha&#95;2, \ldots, \alpha&#95;k$$ where $$\beta \neq 0$$." should be corrected to $$\beta, \lambda&#95;1, \lambda&#95;2, \ldots, \lambda&#95;k$$ where $$\beta \neq 0$$."
+</li><li> Last line, "Now we prove Theorem 12.6.9" should be "Now we prove theorem <em>12.6.4</em>"</p>
+</li></ul>
+
+<p><strong>page 481</strong>: in 13.1 line -5: in found in should be found in</p>
+<p><strong>Page 482</strong> Some typos:</p>
+<ul>
+<li>"George Danzig wrote his dissertion..." should be "George <em>Dantzig</em> wrote his <em>dissertation</em>..."</li>
+<li>"...his algorithm it, the simplex algorithm" should be "...his algorithm <em>for</em> it, the simplex algorithm"</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 17/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Matrix:Text_Errata&amp;oldid=18820">https://share.coursera.org/wiki/index.php?title=Matrix:Text_Errata&amp;oldid=18820</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coding_the_Matrix" title="Category:Coding the Matrix">Coding the Matrix</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

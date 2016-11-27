@@ -1,0 +1,44 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Errata: Week 7</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Errata_in_video_lectures">Errata in video lectures</span></h1>
+<ul>
+<li><p>In 'Optimization Objective', starting at 9:25, the SVM regularization term should start from $$j=1$$, not $$j=0$$.</p></li>
+<li><p>In 'Optimization Objective', starting at 13:37, the SVM regularization term should be summing over $$j$$ instead of $$i$$: $$\sum\limits&#95;{j=1}^n\theta{&#95;j}^2$$. </p></li>
+<li><p>In 'Large Margin Intuition', starting from 1:04, should be labelled $$z \leq -1$$, for graphic on the right. (It is drawn correctly).</p></li>
+<li><p>In 'Mathematics Behind Large Margin Classification', starting from 11:22, second condition should be $$p^{(i)} \cdot |\theta| \leq -1$$ if $$y^{(i)} = 0$$ instead of $$y^{(i)} = 1$$. This persists also in the quiz.</p></li>
+<li><p>In 'Mathematics Behind Large Margin Classification', at 16:33, Dr. Ng writes towards the right of the slide that for a vertical decision boundary, $$p^{(1)} . ||\theta ||&gt; 0$$, while it should be $$p^{(1)} . ||\theta ||&gt; 1$$.</p></li>
+<li><p>In the 'Kernels I' video quiz, the notation surrounding $$x&#95;1-l^{(1)}$$ inside the exp( ) function is the norm notation.</p></li>
+<li><p>In 'Using An SVM', at 13:51, Dr. Ng writes $$\theta=K$$ instead of class $$y=K$$</p></li>
+<li><p>In 'Using An SVM', at 16:12, Dr. Ng says linear kernel instead of Gaussian kernel, which is written on the slide</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_programming_assignment_ex6">Errata in programming assignment ex6</span></h1>
+<ul>
+<li><p>In ex6.pdf, typo on page 1: "SVM rraining function" should be "SVM <b>t</b>raining function"</p></li>
+<li><p>In ex6.m at line 69: 
+Inside the fprintf() statement, the text "sigma = 0.5" should be "sigma = 2"</p></li>
+<li><p>In ex6.pdf, typo in section 1.2.2 on page 6: "obserse" should be ‘observe’.</p></li>
+<li><p>In ex6.pdf, in section 1.2.3 on page 7: The submit grader requires that you use exactly the eight values listed for both C and sigma.</p></li>
+<li><p>In dataset3Params.m, at line 2 "EX6PARAMS" should be "DATASET3PARAMS".</p></li>
+<li><p>In visualizeBoundary.m at line 21, the statement "contour(X1, X2, vals, [0 0], 'Color', 'b');" does not reliably display the contour plot on all platforms. The form "contour(X1, X2, vals, [0.5 0.5], 'linecolor', 'b');" seems to be a better choice.</p></li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_7&amp;oldid=34325">https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_7&amp;oldid=34325</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Errata" title="Category:ML:Errata">ML:Errata</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

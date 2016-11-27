@@ -1,0 +1,80 @@
+# Electricity in Solutions  
+  
+* Well, hello again. This is Roger Coke Barr. This is the Bio Electricity course, week one, and this is segment seven. In this segment we're gonna talk about the physics and the electricity, of electricity in solutions.  
+* This is a topic that can be approached as a highly mathematical topic, but it doesn't have to be. And even if it is you still have to understand it, in your head, intuitively, in terms of what's happening in, in, with the forces and the physics that's involved. As Richard Feynman famously said, all of physics can be derived mathematically, but none of it was. And that's true here.  
+* You have to understand the idea, and you can understand the idea with very little math. And then once you do understand the idea that math can useful to the degree you want to employ it order to work on particular situations.  
+  
+## Sources and sinks in a conductive medium, a sketch (slide 46)    
+* So we'd like to start with a very sketchy diagrammatic, simple diagram, and let me just talk about that for a little bit. We are imagining that the universe is filled with a conductive solution that has a conductivity (sigma).  
+* Now this yellow space, of course, drawn on this tablet, is limited by the black line, but we're imagining that the yellow space extends all the way out to the edge of the earth. We often make the same assumption in talking about people or animals, that they have a uniform volume conductor that is of infinite extent. Well, if you just take it on the face of it you'd say that's ridiculous. Obviously we all, have limits in just our skin and our body. Limits as to a small part in the whole entire universe.  
+* What people mean when they say that, is they mean we're not gonna take the any electrical effect of the boundary into account. We're gonna do our analysis as if things are infinite and as if they were not being influenced by the boundary. Most of the time that's a good approximation. So most of the time saying it's of infinite extent.  
+* This is perfectly okay, and within our infinite volume, we're imagining that we have a source and a sink.  
+* The source is spewing out current and it's flowing over to the sink. Because the whole universe is conducting, things can flow around on many different pathways, and in fact, they will take all available pathways, although more current is going to flow on the shorter pathways.  
+* Within our infinite volume, we've also identified a point P called a field point. Now the field point is a point that we pick out. It's a particular point, but it's in a place that we chose it to be. So that says the field point can be one place at one minute, then we can decide to put it a different place at a different minute.  
+* It's serves the purpose of identifying a specific point, which is as people call it out in the field, meaning away from the source and the sink. It's not the source, not the sink, just another place.  
+  
+## Electricity in Solutions— The “Big 5” (slide 47)  
+* So now, if we're gonna talk about electricity and solutions, we have to talk about what I call The Big Five. The Big Five are the five different things that electricity and solutions, in all around the whole entire space, they involved these five quantities. Potential, the electric field, electrical forces, the currents and the sources in sinks. Each one of these has a value at each different point in the field, so there's a potential everywhere, but of course a different value for the potential everywhere. There's an electric field everywhere. But a different value of the electric field everywhere. For these five things, I draw them in this fashion as a circle, because if you know the potential, you can get, if you know the potential, you can get the electric field. If you know the electrical field, you can find the electrical forces. If you know the electrical forces, you can find the current density, And if you find the current density, you can find sources and sinks. Then amazingly if you know the sources and sinks, you can come back around and find the potentials. So you can really start with anyone of these, and if you know anyone at all its diferent points in space, then at least in principle if you know that, and you also know the conductivity of the solution, you can go around and find all of the others.  
+  
+## #1 of the Big 5---Potentials (slide 48)  
+* So the first quantity in the big five is the potential. Now when people talk about potential, that is to say the man on the street, usually they are thinking of batteries. Well, yes, batteries do have voltages, and these voltages can be understood as potentials. But the idea of a potential is a much bigger idea.  
+* The potential is what gives a measure of the electrical energy avaiable at one point.  
+* Potentials are measured in volts, and the significance of this idea is the following.  
+* If one moves from a place with high potential, to a place with low potential (just want to score that) that means that the electrical energy diminishes, and that energy has been released to do some other task, most often to push charges from one place to another. But these potential differences are where electrical energy becomes available to do other things.  
+  
+## More about potential (slide 49)  
+* Now the potential function mathematically is a scalar function meaning it has a value but not a direction, and you might think of the potential as being like the height of a hill.  
+* If you are way up high on the hill, then if you roll down that hill, you're going to pick up a lot of energy because, being way up on the high, high on the hill has a lot of energy associated with it, potential energy.   
+  
+## Second of the big 5—the electric field (slide 50)  
+* The electric field is like the slope of the hill, and as you move down the hill, that slope is what will allow you to convert the energy of the hill into movement of your car.  
+* The electric field is a measure of how the potential is changing.  
+* So if it changes very rapidly, that is to say, over a short distance, the electric field changes considerably. You say, wow, this place has a big electric field. Now since slopes are normally measured uphill, high slope it means high rate of change going uphill.  
+* The electric field is thought of as the negative of the slope or the negative of the gradient of the quality, in this case electric field is the negative of the change of potential with distance. I'll put a minus sign in there so there's just emphasizes that we're talking about downhill here, not uphill.  
+  
+## (2nd again) Sign of E (slide 51)  
+* This slide emphasizes that fact. The electric field goes down the potential hill, not up. It's the negative of the gradient of potential.  
+  
+## Third of the big 5, Force F (slide 52)  
+* If we know the electric field we can find the forces, the equation. F equals Eq says that the force exerted is equal to the magnitude of the electric field, of the magnitude force, magnitude of the electric field times the charge involved.  
+* And the direction of the force is the direction of the electric field. I mean the force here means just regular force, a matter, something that's pushed on or pulled on. This is not some exotic quantity. This is ordinary pushing and pulling and as we know, thinking especially of lightning, the force associated with electric fields can be enormous. So it rips down trees for example or splits them in half.  
+* We're not talking about little things, we are talking about big things, possibly.  
+  
+## Fourth of the big 5—the current flux (slide 53)  
+* Because the electric field produces a force, the force can move the ions in solution, or in general, move charges from one place to another.  
+* The current flux is proportional to the force. It's called flux because if you just multiply the force in the units we have it so far times the conductivity, you'll get current per unit area. You have to multiply by the cross-sectional area to get the current measured in amperes.  
+* Sometimes people call the flux the current and measure the flux in amperes per centimeter square, but nonetheless designated with the letter I instead of J. That's all okay, it's common practice. You just have to look at the context and see what is happening.  
+  
+## Fifth in the big 5— Sources (slide 54)  
+* If you know where the currents are, you can find the sources. Sources are the points where the current originates or disappears. If you take the divergence of the current at a point, you can see if that point is the source.  
+* It's interesting that in discussing this topic we talk about sources and sinks, sources being where current comes from and sinks being where it disappears to.  
+* However, in the mathematical sense, you think about sources and sinks as sources just using one term. And then saying the sources can be positive or the sources can be negative. And then when the source is a negative number in normal conversation you call it a sink.  
+  
+## What does divergence diverge from? (slide 55)  
+* So lets look here about divergence again. We said sources occur where the current diverges. So if we test that at a couple points, here's how we would do it. We would enclose our field  point with a closed surface. And then we would test to see if the net current coming out of our field point is equal to zero, or is equal to some other value.  
+* In the case of this particular field point, we would say, well, there is current at the field point, cuz one of our current paths goes like this. So yes, there is current at the field point, but no, there, it is not a source because all of the current that comes into the envelope goes out of the envelope.  
+* So as a result, the total current coming out of the field point is equal to zero. Well, the total current going into the field point is equal to zero. Everything that comes in goes out.  
+  
+## What is the potential anywhere, for one source and one sink? (slide 56)  
+* We said before in the original sketch, the interesting thing that made the quantities circular is that if you know the sources and sinks, you can find the potential.  
+* So, here's the rule for finding the potential from one source in one sink, or in our particular case, from the field point and the diagram that's included. So P refers to this p. It means the potential that's at that particular point p. That potential is equal to I0, source current divided by four pi r.  
+* R is very important because this is the distance from the source to the field point. So there's r. There it is over there in its equation. And from that is subtracted the potential associated with the sync. And that potential is minus as zero. And the distance that's associated with that is r prime. But this R prime is just another distance. And R prime is over here in this equation.  
+* We could do this for any of a number of sources and sites, and compute the potential as long as we knew the current coming out of or going into each one, in each of the, the respective distances.  
+  
+## Electricity in solutions—Mathematical for of the 6-­‐step program (slide 57)  
+* If we describe, these 5 quantities, which are called the six step program, we would say, from a mathematical point of view, if we want to do this in 3D, mathematical notation, We would list the equations as these.  
+* These are somewhat similar to the form of Maxwell's equations, as related to electrostatics. In this particular course, we don't do complex problems, especially complex problems. So generally speaking, we don't need this mathematics.  
+* On the other hand, I know that you may be familiar with this kind of mathematics from other sources from this three dimensional vector mathematics. And I put this slide up so that you can see there's a very close connection.  
+  
+## Electricity in solutions—Comments on the math form of the 6-­step program (slide 58)    
+* Saying again, what we said at the beginning. The ideas that are here, in this particular segment, are most important because you just have to have an idea of what these quantities are qualitatively because we talk about them all the time.  
+* And then furthermore, you have to have the concept in mind that when you know the potential, you can get the electric field.  
+* When you have the electric field you can get the forces on charges and other charge particles, molecules, ions.  
+* When you have the forces, you can get the currents.  
+* When you have the currents, you can get the sources.  
+* When you have the sources, you can get back to the potentials again.  
+* That's a very tight group of ideas which are all tied together.   
+  
+---  
+  
+That concludes this segment. Thank you for watching. See you the next time around.

@@ -1,0 +1,40 @@
+# Inference: MAP Estimation Part 2
+
+## Lecture Video Table of Contents
+
+###Tractable MAP Problems
+<pre>
+0:31	Correspondence/data association
+3:02	3D cell reconstruction
+4:34	Mesh registration
+5:17	Associative potentials
+7:47	Example: Depth reconstruction
+9:14	Cardinality factors
+11:09	Sparse pattern factors
+12:54	Convexity factors
+14:25	Summary
+</pre>
+
+###Dual Decomposition - Intuition
+<pre>
+0:00	Motivation
+1:10	Problem formulation
+2:25	Divide and conquer
+9:02	Example
+11:44	Divide and Conquer revisited
+14:17	Constructing the slaves
+15:19	Example: 3D cell reconstruction
+</pre>
+
+###Dual Decomposition - Algorithm
+<pre>
+0:21	Algorithm
+4:59	Dual decomposition convergence
+6:05	At convergence
+7:25	Options for decoding X*
+9:22	Upper bound
+11:22	Important design choices
+12:59	Summary: Algorithm
+13:53	Summary: Theory
+15:09	Summary: Practice
+</pre>

@@ -1,0 +1,173 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PCD: Week5</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_5_Keywords"><span class="tocnumber">1</span> <span class="toctext">Week 5 Keywords</span></a>
+<ul>
+<li class="toclevel-2"><a href="#5.1_Regulation_of_protein_activity"><span class="tocnumber">1.1</span> <span class="toctext">5.1 Regulation of protein activity</span></a></li>
+<li class="toclevel-2"><a href="#5.2a_-_Regulation_of_C._elegans_egl-1_.28Part_A.29"><span class="tocnumber">1.2</span> <span class="toctext">5.2a - Regulation of  C. elegans egl-1 (Part A)</span></a></li>
+<li class="toclevel-2"><a href="#5.2B_-_Regulation_of_egl-1.28Part_B.29"><span class="tocnumber">1.3</span> <span class="toctext">5.2B - Regulation of egl-1(Part B)</span></a></li>
+<li class="toclevel-2"><a href="#5.3_-_Regulation_of_BH-3_only_proteins_.28Bad.29"><span class="tocnumber">1.4</span> <span class="toctext">5.3 - Regulation of BH-3 only proteins (Bad)</span></a></li>
+<li class="toclevel-2"><a href="#5.4_-_Regulation_of_BH-3_only_proteins_.28Bid.29"><span class="tocnumber">1.5</span> <span class="toctext">5.4 - Regulation of BH-3 only proteins (Bid)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_5_Keywords">Week 5 Keywords</span></h1>
+<h2> <span class="mw-headline" id="5.1_Regulation_of_protein_activity">5.1 Regulation of protein activity</span></h2>
+<p><strong>Transcriptional regulation</strong><br />
+<ul><li> At the transcriptional level, mRNA production can either be increased or decreased. 
+</li></ul>
+<strong>Post-transcriptional regulation</strong><br />
+<ul><li> At the post-transcriptional  level, mRNA stability can be  increased or decreased.<br />
+</li><li> Both mechanisms result in more or less mRNA available for translation, and therefore protein synthesis. </p>
+</li></ul>
+
+<p><strong>Post-translational regulation</strong><br />
+<ul><li> A change in stability can be brought about by a change at the post-translational level through modifications of the protein that can increase or decrease its stability.<br />
+</li><li> Those modifications could either be covalent or non-covalent modifications. </p>
+</li></ul>
+
+<p><strong>Covalent modification</strong><br />
+<ul><li> modification that is through covalent bonds that can lead to a change in protein stability<br />
+</li><li> examples: phosphorylation or ubiquitinylation</p>
+</li></ul>
+
+<p><strong>Chemical bonds</strong><br />
+<ul><li> covalent: stable bonds that involve sharing electrons<br />
+</li><li> non-covalent:  hydrogen bonds, ionic bonds, van der Waals forces, or hydrophobic interactions; do not involve sharing electrons  </p>
+</li></ul>
+
+<p><strong>Non-covalent modification</strong><br />
+<ul><li> modification that involves interactions such as hydrogen bonds, ionic bonds, van der Waals forces, or hydrophobic interactions.<br />
+</li><li> Non-covalent modifications that can lead to a change in protein stability are, for instance, protein-protein interactions or the binding of co-factors such as ATP, GTP or ions, such as Calcium cations.  </p>
+</li></ul>
+
+<p><strong>Phosphorylation</strong><br />
+<ul><li> covalent attachment of a phosphogroup to specific amino acid residues
+</li><li> Commonly used modification to change the activity of a protein, to either increase or decrease its activity  </p>
+</li></ul>
+
+<p><strong>Proteolytic cleavage</strong><br />
+<ul><li> covalent modification that can change activity of a protein.<br />
+</li><li> For example, proteolytic cleavage or maturation of pro-caspases results in enzymes with an increased proteolytic activity</p>
+</li></ul>
+
+<p><strong>Ubiquitinylation</strong><br />
+<ul><li> The modification of a protein by the covalent attachment of one or more ubiquitin molecules. <a rel="nofollow" class="external text" href="http://en.wiktionary.org/wiki/ubiquitination">Source: Wiktionary</a><br />
+</li><li> <a rel="nofollow" class="external text" href="http://en.wiktionary.org/wiki/ubiquitin">Ubiquitin</a> - A small polypeptide present in the cells of all eukaryotes; it plays a part in modifying and degrading proteins.<br />
+</li><li> “One way cells clear out waste is by attaching a "death tag" to proteins they no longer need. Recognizing this tag, called ubiquitin, a cellular disposal machine called the proteasome begins digesting the proteins. Researchers have known about the existence of ubiquitin for a long time. However, in recent years, they have come to appreciate the fact that cells use ubiquitin-targeted destruction for much more than simply getting rid of debris. As it turns out, cells fine-tune many critical processes by using ubiquitin and the proteasome disposal system.”<br />
+</li></ul>
+Source: Davis, Alison. “<a rel="nofollow" class="external text" href="http://publications.nigms.nih.gov/insidethecell/chapter2.html">The Mask of Death."</a> <em>Inside the Cell</em>. National Institute of General Medical Science.  </p>
+<h2> <span class="mw-headline" id="5.2a_-_Regulation_of_C._elegans_egl-1_.28Part_A.29">5.2a - Regulation of  <i>C. elegans</i> egl-1 (Part A)</span></h2>
+<p><strong>Interaction in cis</strong><br />
+<ul><li> interaction occurs on the same molecule of DNA. For example, promoter and its associated transcription unit  </p>
+</li></ul>
+
+<p><strong>Interaction in trans</strong><br />
+<ul><li> interaction occurs on different molecules. For example, enhancer (DNA) and transcription factor (protein). </p>
+</li></ul>
+
+<p><strong>Phosphatases</strong><br />
+<ul><li> enzymes that can remove phosphate groups from proteins</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="5.2B_-_Regulation_of_egl-1.28Part_B.29">5.2B - Regulation of egl-1(Part B)</span></h2>
+<p><strong>TRA (transformer)</strong><br />
+<ul><li> A zinc-finger DNA binding protein most similar to the Gli-family of transcriptional regulators in mammals.<br />
+</li><li> TRA-1 has a very important  role during C. elegans development. TRA-1 is the terminal and global regulator of somatic sexual fate.<br />
+</li><li> The activity of  TRA-1 determines whether a worm differentiates into a hermaphrodite or a male.<br />
+</li><li> In embryos that carry two X chromosomes, TRA-1 activity is high.<br />
+</li><li> TRA-1's function is to suppress  the transcription of genes required for male development and to promote the transcription of genes required for female development.  </p>
+</li></ul>
+
+<p><strong>Sex determination</strong><br />
+<ul><li> A zinc-finger DNA binding protein most similar to the Gli-family of transcriptional regulators in mammals.<br />
+</li><li> TRA-1 has a very important  role during C. elegans development. TRA-1 is the terminal and global regulator of somatic sexual fate.<br />
+</li><li> The activity of  TRA-1 determines whether a worm differentiates into a hermaphrodite or a male.<br />
+</li><li> In embryos that carry two X chromosomes, TRA-1 activity is high.<br />
+</li><li> TRA-1's function is to suppress  the transcription of genes required for male development and to promote the transcription of genes required for female development.  </p>
+</li></ul>
+
+<p><strong>Trans-acting factor</strong><br />
+<ul><li> transcriptional regulators<br />
+</li><li> TRA-1 is a trans-acting factor  </p>
+</li></ul>
+
+<p><strong>Proto-oncogene</strong> 
+<ul><li> Genes, whose overexpression or inappropriate  activation can cause tumorigenesis.<br />
+</li><li> Bcl-2 and Gli are examples of such proto-oncogenes.  </p>
+</li></ul>
+
+<p><strong>Tumor suppressor</strong><br />
+<ul><li> transcriptional activators of pro-apoptotic genes potentially are tumor suppressor genes<br />
+</li><li> loss can cause tumorigenesis<br />
+</li><li> For example, the loss of a transcriptional activator of a BH3-only gene, potentially leads to the inappropriate survival of cells, which then can acquire additional defects or mutations and give rise to a tumor.<br />
+</li><li> An example of a transcriptional activator of egl-1 is the transcription factor CEP-1. CEP-1 is required to activate egl-1 transcription in germ cells in response to DNA damage.<br />
+</li><li> In animals lacking CEP-1 function, egl-1 is not transcriptionally up-regulated in response to DNA damage, which leads to the inappropriate survival of germ cells that would otherwise die. The mammalian homolog of CEP-1 is p53, an important tumor suppressor that is  found inactivated in more than 85% of all human cancers.  </p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="5.3_-_Regulation_of_BH-3_only_proteins_.28Bad.29">5.3 - Regulation of BH-3 only proteins (Bad)</span></h2>
+<p><strong>14-3-3 proteins</strong><br />
+<ul><li> A family of regulatory proteins found in all eukaryotes that bind to many different signaling proteins. Currently, 200 diverse signaling proteins have been shown to bind to 14-3-3 proteins.<br />
+</li><li> It had also been shown that 14-3-3 proteins preferably bind to signaling proteins that are phosphorylated on either a serine residue or a threonine residue.<br />
+</li><li> For this reason, the question came up whether the interaction between 14-3-3 and Bad was dependent on Bad being phosphorylated.  </p>
+</li></ul>
+
+<p><strong>Kinase</strong><br />
+<ul><li> enzymes that can covalently attach a phosphate group (PO43-) to a protein<br />
+</li><li> This reaction is also referred to as phosphorylation<br />
+</li><li> The radio-actively labeled phosphate can be used by kinases to phosphorylate proteins, and through this phosphorylation, these proteins then become radio-actively labeled.  </p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="5.4_-_Regulation_of_BH-3_only_proteins_.28Bid.29">5.4 - Regulation of BH-3 only proteins (Bid)</span></h2>
+<p><strong>Complementary cDNA</strong><br />
+<ul><li> cDNA is DNA synthesized from a messenger RNA (mRNA) template in a reaction catalysed by the enzymes reverse transcriptase and DNA polymerase.<br />
+</li><li> cDNA is often used to clone eukaryotic genes in prokaryotes. When scientists want to express a specific protein in a cell that does not normally express that protein (i.e., heterologous expression), they will transfer the cDNA that codes for the protein to the recipient cell.<br />
+</li><li> cDNA is also produced naturally by retroviruses (such as HIV-1, HIV-2, Simian Immunodeficiency Virus, etc.) and then integrated into the host's genome where it creates a provirus.  </p>
+</li></ul>
+
+<p><strong>Extrinsic or death receptor pathway</strong><br />
+<ul><li> This pathway is induced by TNFalpha-like ligands to which a cell might be exposed to on its exterior.<br />
+</li><li> These ligands can bind to death receptors on the cell surface of that cell, such as the TNF receptor.<br />
+</li><li> Ligand binding causes several of these receptors to come together.<br />
+</li><li> Through their cytoplasmic domains, the aggregated receptors then assemble  the DISC complex just under the plasma membrane.  </p>
+</li></ul>
+
+<p><strong>Intrinsic or mitochondrial pathway</strong><br />
+<ul><li> Intrinsic activation is, for example, through DNA damage in the nucleus or through cell fate signals.<br />
+</li><li> “The intrinsic signaling pathway for programmed cell death involves non-receptor–mediated intracellular signals, inducing activities in the mitochondria that initiate apoptosis. ... stimuli induce changes in the inner mitochondrial membrane that result in the loss of transmembrane potential, causing the release of pro-apoptotic proteins into the cytosol. Pro-apoptotic proteins activate caspases that mediate the destruction of the cell through many pathways.”<br />
+</li></ul>
+  Source: <a rel="nofollow" class="external text" href="http://www.biooncology.com/research-education/bcell/introduction/mechanisms/intrinsic">“The intrinsic pathway for programmed cell death.”</a> <em>BioOncology.com</em>. Genentech.</p>
+<p><strong>DISC complex (death-inducing signaling complex)</strong>
+<ul><li> Apart from the cytoplasmic domains of the death receptors, these complexes contains several molecules of the protein FADD.<br />
+</li><li> FADD can bind to the cytoplasmic domains of the death receptors on one hand and to pro-caspase-8 on the other.<br />
+</li><li> Through the assembly of the DISC complex, several molecules of FADD can bind several molecules  of pro-caspase-8 and this allows for pro-caspase-8 activation - again through induced proximity or forced dimerization.<br />
+</li><li> The purpose of the DISC complex is to cause pro-caspase-8 activation and it is therefore functionally equivalent to the apoptosome, which is acting in the mitochondrial pathway.  </p>
+</li></ul>
+
+<p><strong>Induced proximity or forced dimerization model</strong>
+<ul><li> Dimer: a macromolecular complex formed by two, usually non-covalently bound, macromolecules like proteins or nucleic acids. It is a quaternary structure of a protein.<br />
+</li><li> “The Induced Proximity model, first proposed in 1998, states that the initiator caspases autoprocess themselves when brought into close proximity of each other (Salvesen and Dixit, 1999). This model is a succinct summary of experimental observations made by four independent laboratories, led by Dixit and Salvesen (Muzio et al., 1998), Yang and Baltimore Yang et al. 1998a and Yang et al. 1998b, Alnemri (Srinivasula et al., 1998), and Spenser (MacCorkle et al., 1998). The experimental approach was similar for all four groups—in each case the target caspase was fused with a heterologous dimerization domain. The Alnemri group used the mouse IgG-Fc portion while the other three laboratories all employed tandem FK506 binding domains (FKBPs), which bind to the dimeric ligand FK1012 and hence bring together the tethered caspases. As all four groups demonstrated, the target caspases were processed upon induced oligomerization.”<br />
+</li></ul>
+  Source: Yigong Shi. <a rel="nofollow" class="external text" href="http://www.sciencedirect.com/science/article/pii/S0092867404005756">“Caspase Activation: Revisiting the Induced Proximity Model.”</a> <em>Cell</em>, Volume 117, Issue 7. 25 June 2004, Pages 855–858. <a rel="nofollow" class="external free" href="http://dx.doi.org/10.1016/j.cell.2004.06.007">http://dx.doi.org/10.1016/j.cell.2004.06.007</a>.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 62/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PCD:_Week5&amp;oldid=14878">https://share.coursera.org/wiki/index.php?title=PCD:_Week5&amp;oldid=14878</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

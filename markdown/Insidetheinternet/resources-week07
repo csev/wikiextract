@@ -1,0 +1,63 @@
+**Unit 7: Application Protocols**
+
+* TCP and UDP port, Wikipedia - [http://en.wikipedia.org/wiki/TCP_and_UDP_port](http://en.wikipedia.org/wiki/TCP_and_UDP_port)
+* List of TCP and UDP port numbers, Wikipedia - [http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers](http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+* Http, Wikipedia - [http://en.wikipedia.org/wiki/Http](http://en.wikipedia.org/wiki/Http)
+* POP3, Wikipedia - [http://en.wikipedia.org/wiki/Pop3](http://en.wikipedia.org/wiki/Pop3)
+* Dr. Chuck's Request/Response Cycle Demo - [http://dr-chuck.com/page1.htm](http://dr-chuck.com/page1.htm)
+* Internet Standards RFC - [ietf.org/rfc/rfc1945.txt](http://www.ietf.org/rfc/rfc1945.txt)
+* The Matrix - Trinity Hacking Scene - [http://www.youtube.com/watch?v=0TJuipCrjZQ](http://www.youtube.com/watch?v=0TJuipCrjZQ)
+* Van Jacobsen: Content Centered Networking - [http://www.youtube.com/watch?v=Bc-4PJPxfVQ&feature=youtu.be](http://www.youtube.com/watch?v=Bc-4PJPxfVQ&feature=youtu.be)
+
+_Further Reading_
+
+* Tanenbaum, Andrew S. and David J. Wetherall. 2010. **Computer Networks**, 5th edition. Prentice Hall. This book actually covers all of the layers of the Internet, with a new addition of a section on network and application security. This book is not overly technical, but still covers technical concepts, like the three-way handshake for TCP connections. Wetherall is the instructor for Coursera's Computer Networking course.
+* Bonaventure O, **Computer Networking: Principles, Protocol, and Practice**  
+[http://www.saylor.org/site/wp-content/uploads/2012/02/Computer-Networking-Principles-Bonaventure-1-30-31-OTC1.pdf](http://www.saylor.org/site/wp-content/uploads/2012/02/Computer-Networking-Principles-Bonaventure-1-30-31-OTC1.pdf) This is a free open source text book covering theory of networks.  
+It is the course text of the [http://www.saylor.org/courses/cs402/](http://www.saylor.org/courses/cs402/) Computer Communications and Networks free on-line course
+* Masha du Toit, Anna Malczyk and Jean-Paul van Belle, **Internet Super User Text Book**, GetSmarter Publishing Jan 2010  
+[http://www.internetsuperuser.com/download-the-internet-super-user-textbook](http://www.internetsuperuser.com/download-the-internet-super-user-textbook) South African text book used in their complementary course. It is a complete reference about the workings and use of the Internet. Registration required for download.
+
+* "History of the internet" is an animated documentary explaining the inventions from time-sharing to filesharing, from Arpanet to Internet. The clip was made by Melih Bilgil — http://www.lonja.de
+The history is told using the PICOL icons, which are available on picol.org. You can get news about this project on blog.picol.org .
+
+Voice-over by Steve Taylor http://voice-pool.com
+You can get more information on this movie on my website
+http://www.lonja.de/motion/mo_history...
+or on the PICOL-Project site where you can download a pre-release of the icons.
+http://blog.picol.org/
+
+If you are interested in more Internet history you can also read/watch:
+- ISOC: History of the internet: http://www.isoc.org/internet/history/
+- http://en.wikipedia.org/wiki/History_...
+- Geschichte des Internet (german & link to Amazon): http://tinyurl.com/4kzlwq
+- Computer Networks: The Heralds Of Resource Sharing http://tinyurl.com/apocod
+
+Credits for subtitles:
+(The correctness of the subtiles depends on the people listed down here)
+English: Stefan Badragan | youtube.com/StevXtreme
+Italian: Stefan Badragan
+German: me
+Turkish: Zeynep Can
+French: Arnaud 'dehy' DE MOUHY
+Bulgarian: Andrian Georgiev
+Chinese: Terry Lee
+Portuguese (Brazilian): Guilherme Euler
+Spanish: Mauricio Diaz Orlich
+Polish: Agnieszka Marciniak
+Greek: Pantelis Bouboulis
+Swedish: Paul Lindström
+Catalan: Alfred Galitó
+
+Also thanks to: Frederico Goncalves Guimaraes
+
+    Category
+
+    Education
+    License
+
+    Standard YouTube License
+
+https://www.youtube.com/watch?v=9hIQjrMHTv4
+
+[[Category:Inside the internet|Resources]]

@@ -1,0 +1,29 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:GettingStartedWithTheVMs</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><div style="border-left:15px solid darkred;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>EC2 option is no longer supported.</td></table></div>
+<h2> <span class="mw-headline" id="Considerations_for_choosing_between_EC2_and_VirtualBox">Considerations for choosing between EC2 and VirtualBox</span></h2>
+<ul>
+<li><p>EC2 allows you to run your assignment in "the cloud" on one of Amazon's servers. Amazon is very generously providing $10 credits to students who choose this option, so you should not need to pay out of your own pocket for the server time you use. Instructions on setting up an EC2 instance are available <a rel="nofollow" class="external text" href="https://docs.google.com/document/pub?id=1yqdM0kzx-iiD4tvyyIne3KfpntK7TcwMJnxcVWqV2iE">here</a>.</p></li>
+<li><p>VirtualBox allows you to install the VM on your own computer instead of on Amazon's servers. If you will not have continuous internet access while working on the assignments this would be a better choice. Instructions on setting up VirtualBox are available <a href="/wiki/index.php/Compilers:VirtualBoxVMsetup" title="Compilers:VirtualBoxVMsetup">here</a>.</p></li>
+</ul>
+<p><strong>If you decide to use EC2, don't forget to fill out the "Amazon EC2 Usage" quiz on Coursera so we can get you a $10 Amazon credit.</strong></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:GettingStartedWithTheVMs&amp;oldid=24932">https://share.coursera.org/wiki/index.php?title=Compilers:GettingStartedWithTheVMs&amp;oldid=24932</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

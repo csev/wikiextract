@@ -1,0 +1,110 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Markov Network Fundamentals</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">1</span> <span class="toctext">Lecture Video Table of Contents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Pairwise_Markov_Networks"><span class="tocnumber">1.1</span> <span class="toctext">Pairwise Markov Networks</span></a></li>
+<li class="toclevel-2"><a href="#General_Gibbs_Distribution"><span class="tocnumber">1.2</span> <span class="toctext">General Gibbs Distribution</span></a></li>
+<li class="toclevel-2"><a href="#Conditional_Random_Fields"><span class="tocnumber">1.3</span> <span class="toctext">Conditional Random Fields</span></a></li>
+<li class="toclevel-2"><a href="#Independencies_in_Markov_Networks"><span class="tocnumber">1.4</span> <span class="toctext">Independencies in Markov Networks</span></a></li>
+<li class="toclevel-2"><a href="#I-maps_and_Perfect_Maps"><span class="tocnumber">1.5</span> <span class="toctext">I-maps and Perfect Maps</span></a></li>
+<li class="toclevel-2"><a href="#Log-linear_models"><span class="tocnumber">1.6</span> <span class="toctext">Log-linear models</span></a></li>
+<li class="toclevel-2"><a href="#Shared_Features_in_Log-linear_Models"><span class="tocnumber">1.7</span> <span class="toctext">Shared Features in Log-linear Models</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h1>
+<h3> <span class="mw-headline" id="Pairwise_Markov_Networks">Pairwise Markov Networks</span></h3>
+<p><pre>
+0:24    Example
+1:50    General factor
+4:22    Unnormalized measure
+5:30    Partition function
+6:20    Aggregate factor
+9:35    Formal definition
+10:29   Applications of pairwise Markov networks
+</pre></p>
+<h3> <span class="mw-headline" id="General_Gibbs_Distribution">General Gibbs Distribution</span></h3>
+<p><pre>
+0:19    Fully connected network example
+2:57    Gibbs Distribution
+5:19    Induced Markov network
+7:51    Factorization
+9:25    Graph induction
+12:05   Flow of influence
+13:52   Active trails
+15:14   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Conditional_Random_Fields">Conditional Random Fields</span></h3>
+<p><pre>
+0:00    Introduction
+0:25    Task-specific prediction
+3:01    Correlated features
+6:33    CRF representation
+11:15   CRFs and the Logistic model
+17:58   CRFs for image segmentation
+20:28   CRFs for Language
+21:22   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Independencies_in_Markov_Networks">Independencies in Markov Networks</span></h3>
+<p><pre>
+0:12    Separation
+2:01    Factorization and independence
+3:00    Inverse theorem
+4:12    Summary
+</pre></p>
+<h3> <span class="mw-headline" id="I-maps_and_Perfect_Maps">I-maps and Perfect Maps</span></h3>
+<p><pre>
+0:34    Capturing independencies in P
+2:15    Sparse graph
+3:02    Minimal I-map
+6:17    Perfect maps
+10:17   Another imperfect map
+12:58   MN as a perfect map
+14:55   Uniqueness of a perfect map
+17:40   I-equivalence
+19:20   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Log-linear_models">Log-linear models</span></h3>
+<p><pre>
+0:00    Introduction
+0:22    Representation
+2:07    Representing table factors
+4:46    Features for language
+8:31    Ising model
+12:23   Metric MRFs
+16:04   Metric MRF examples
+17:52   Image segmentation
+18:29   Denoising
+</pre></p>
+<h3> <span class="mw-headline" id="Shared_Features_in_Log-linear_Models">Shared Features in Log-linear Models</span></h3>
+<p><pre>
+0:45    Ising models
+3:05    Natural Language Processing
+4:54    Image Segmentation example
+5:31    Repeated features
+7:45    Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 65/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Markov_Network_Fundamentals&amp;oldid=23941">https://share.coursera.org/wiki/index.php?title=PGM:Markov_Network_Fundamentals&amp;oldid=23941</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Probabilistic_Graphical_Models" title="Category:Probabilistic Graphical Models">Probabilistic Graphical Models</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

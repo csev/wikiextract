@@ -1,0 +1,63 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:implementation:sendmoremoney</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Send_More_Money">Send More Money</span></h1>
+<h3> <span class="mw-headline" id="Comet">Comet</span></h3>
+<p>A constraint programming based comet model for the Send More Money problem.</p>
+<pre>
+import cotfd;
+
+Solver&lt;CP&gt; m();
+range Digits = 0..9;
+
+var&lt;CP&gt;{int} S(m,Digits);
+var&lt;CP&gt;{int} E(m,Digits);
+var&lt;CP&gt;{int} N(m,Digits);
+var&lt;CP&gt;{int} D(m,Digits);
+var&lt;CP&gt;{int} M(m,Digits);
+var&lt;CP&gt;{int} O(m,Digits);
+var&lt;CP&gt;{int} R(m,Digits);
+var&lt;CP&gt;{int} Y(m,Digits);
+var&lt;CP&gt;{int} x[1..8];
+x[1]=S;x[2]=E;x[3]=N;x[4]=D;
+x[5]=M;x[6]=O;x[7]=R;x[8]=Y;
+
+solve&lt;m&gt; {
+m.post(alldifferent(x));
+m.post(M&#160;!= 0); 
+m.post(S&#160;!= 0);
+m.post(         1000 * S + 100 * E + 10 * N + D +  
+                1000 * M + 100 * O + 10 * R + E ==
+    10000 * M + 1000 * O + 100 * N + 10 * E + Y);
+} using {
+   forall(i in 1..8&#160;:&#160;!x[i].bound()) 
+      label(x[i]);
+   cout &lt;&lt; &quot;D = &quot; &lt;&lt; D &lt;&lt; endl;
+   cout &lt;&lt; &quot;E = &quot; &lt;&lt; E &lt;&lt; endl;
+   cout &lt;&lt; &quot;O = &quot; &lt;&lt; O &lt;&lt; endl;
+   cout &lt;&lt; &quot;N = &quot; &lt;&lt; N &lt;&lt; endl;
+   cout &lt;&lt; &quot;M = &quot; &lt;&lt; M &lt;&lt; endl;
+   cout &lt;&lt; &quot;R = &quot; &lt;&lt; R &lt;&lt; endl;
+   cout &lt;&lt; &quot;S = &quot; &lt;&lt; S &lt;&lt; endl;
+   cout &lt;&lt; &quot;Y = &quot; &lt;&lt; Y &lt;&lt; endl;
+}
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:implementation:sendmoremoney&amp;oldid=12207">https://share.coursera.org/wiki/index.php?title=Optimization:implementation:sendmoremoney&amp;oldid=12207</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

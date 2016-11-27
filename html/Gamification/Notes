@@ -1,0 +1,765 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Gamification:Notes</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#What_is_gamification.3F"><span class="tocnumber">1</span> <span class="toctext">What is gamification?</span></a></li>
+<li class="toclevel-1"><a href="#Games_.28Overview.29"><span class="tocnumber">2</span> <span class="toctext">Games (Overview)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#What_is_a_game.3F"><span class="tocnumber">2.1</span> <span class="toctext">What is a game?</span></a></li>
+<li class="toclevel-2"><a href="#Gamification_and_Education"><span class="tocnumber">2.2</span> <span class="toctext">Gamification and Education</span></a></li>
+<li class="toclevel-2"><a href="#Games_and_Play"><span class="tocnumber">2.3</span> <span class="toctext">Games and Play</span></a></li>
+<li class="toclevel-2"><a href="#Video_Games"><span class="tocnumber">2.4</span> <span class="toctext">Video Games</span></a></li>
+<li class="toclevel-2"><a href="#Gamification_and_Agile_Software_Development"><span class="tocnumber">2.5</span> <span class="toctext">Gamification and Agile Software Development</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Game_Thinking"><span class="tocnumber">3</span> <span class="toctext">Game Thinking</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Why_Gamify.3F"><span class="tocnumber">3.1</span> <span class="toctext">Why Gamify?</span></a></li>
+<li class="toclevel-2"><a href="#Thinking_Like_a_Game_Designer"><span class="tocnumber">3.2</span> <span class="toctext">Thinking Like a Game Designer</span></a></li>
+<li class="toclevel-2"><a href="#Design_rules"><span class="tocnumber">3.3</span> <span class="toctext">Design rules</span></a></li>
+<li class="toclevel-2"><a href="#Understanding_Fun"><span class="tocnumber">3.4</span> <span class="toctext">Understanding Fun</span></a></li>
+<li class="toclevel-2"><a href="#Finding_the_Fun"><span class="tocnumber">3.5</span> <span class="toctext">Finding the Fun</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Game_Elements"><span class="tocnumber">4</span> <span class="toctext">Game Elements</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Breaking_Games_Down"><span class="tocnumber">4.1</span> <span class="toctext">Breaking Games Down</span></a></li>
+<li class="toclevel-2"><a href="#Pyramid_of_Gamification_Elements"><span class="tocnumber">4.2</span> <span class="toctext">Pyramid of Gamification Elements</span></a></li>
+<li class="toclevel-2"><a href="#PBL_Triad"><span class="tocnumber">4.3</span> <span class="toctext">PBL Triad</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Psychology_and_Motivation_.28I.29_-_Concepts_of_Gamification"><span class="tocnumber">5</span> <span class="toctext">Psychology and Motivation (I) - Concepts of Gamification</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Motivational_Design"><span class="tocnumber">5.1</span> <span class="toctext">Motivational Design</span></a></li>
+<li class="toclevel-2"><a href="#Behaviorism"><span class="tocnumber">5.2</span> <span class="toctext">Behaviorism</span></a></li>
+<li class="toclevel-2"><a href="#Behaviorism_and_Gamification"><span class="tocnumber">5.3</span> <span class="toctext">Behaviorism and Gamification</span></a></li>
+<li class="toclevel-2"><a href="#Reward_structures"><span class="tocnumber">5.4</span> <span class="toctext">Reward structures</span></a></li>
+<li class="toclevel-2"><a href="#Reward_Schedules"><span class="tocnumber">5.5</span> <span class="toctext">Reward Schedules</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Psychology_and_Motivation_-_Risks_and_Alternatives"><span class="tocnumber">6</span> <span class="toctext">Psychology and Motivation - Risks and Alternatives</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Limits_of_behaviourism"><span class="tocnumber">6.1</span> <span class="toctext">Limits of behaviourism</span></a></li>
+<li class="toclevel-2"><a href="#Dangers_of_behaviourism"><span class="tocnumber">6.2</span> <span class="toctext">Dangers of behaviourism</span></a></li>
+<li class="toclevel-2"><a href="#Extrinsic_and_intrinsic_motivation"><span class="tocnumber">6.3</span> <span class="toctext">Extrinsic and intrinsic motivation</span></a></li>
+<li class="toclevel-2"><a href="#How_rewards_demotivate"><span class="tocnumber">6.4</span> <span class="toctext">How rewards demotivate</span></a></li>
+<li class="toclevel-2"><a href="#Self-determination_theory"><span class="tocnumber">6.5</span> <span class="toctext">Self-determination theory</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Gamification_Design_Framework"><span class="tocnumber">7</span> <span class="toctext">Gamification Design Framework</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_design_process"><span class="tocnumber">7.1</span> <span class="toctext">The design process</span></a></li>
+<li class="toclevel-2"><a href="#D1.2F2:_Business_objectives.2Ftarget_behaviors"><span class="tocnumber">7.2</span> <span class="toctext">D1/2: Business objectives/target behaviors</span></a></li>
+<li class="toclevel-2"><a href="#D3:_Describe_your_players"><span class="tocnumber">7.3</span> <span class="toctext">D3: Describe your players</span></a></li>
+<li class="toclevel-2"><a href="#D4:_Devise_activity_loops"><span class="tocnumber">7.4</span> <span class="toctext">D4: Devise activity loops</span></a></li>
+<li class="toclevel-2"><a href="#D5.2F6:_Don.E2.80.99t_forget_the_fun_and_deploy"><span class="tocnumber">7.5</span> <span class="toctext">D5/6: Don’t forget the fun and deploy</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Design_Choices"><span class="tocnumber">8</span> <span class="toctext">Design Choices</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Two_approaches_to_gamification"><span class="tocnumber">8.1</span> <span class="toctext">Two approaches to gamification</span></a></li>
+<li class="toclevel-2"><a href="#Is_Gamification_right_for_me.3F"><span class="tocnumber">8.2</span> <span class="toctext">Is Gamification right for me?</span></a></li>
+<li class="toclevel-2"><a href="#Designing_for_collective_good"><span class="tocnumber">8.3</span> <span class="toctext">Designing for collective good</span></a></li>
+<li class="toclevel-2"><a href="#Designing_for_happiness"><span class="tocnumber">8.4</span> <span class="toctext">Designing for happiness</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Enterprise_Gamification"><span class="tocnumber">9</span> <span class="toctext">Enterprise Gamification</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Enterprise_applications"><span class="tocnumber">9.1</span> <span class="toctext">Enterprise applications</span></a></li>
+<li class="toclevel-2"><a href="#Workplace_motivations"><span class="tocnumber">9.2</span> <span class="toctext">Workplace motivations</span></a></li>
+<li class="toclevel-2"><a href="#The_game_vs._the_job"><span class="tocnumber">9.3</span> <span class="toctext">The game vs. the job</span></a></li>
+<li class="toclevel-2"><a href="#Playbor"><span class="tocnumber">9.4</span> <span class="toctext">Playbor</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Social_Good_and_Behavior_Change"><span class="tocnumber">10</span> <span class="toctext">Social Good and Behavior Change</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Gamification_for_good.3F"><span class="tocnumber">10.1</span> <span class="toctext">Gamification for good?</span></a></li>
+<li class="toclevel-2"><a href="#Social_good_applications"><span class="tocnumber">10.2</span> <span class="toctext">Social good applications</span></a></li>
+<li class="toclevel-2"><a href="#Social_good_techniques"><span class="tocnumber">10.3</span> <span class="toctext">Social good techniques</span></a></li>
+<li class="toclevel-2"><a href="#Behavior_change"><span class="tocnumber">10.4</span> <span class="toctext">Behavior change</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Critiques_and_Risks"><span class="tocnumber">11</span> <span class="toctext">Critiques and Risks</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Pointsification"><span class="tocnumber">11.1</span> <span class="toctext">Pointsification</span></a></li>
+<li class="toclevel-2"><a href="#Exploitationware"><span class="tocnumber">11.2</span> <span class="toctext">Exploitationware</span></a></li>
+<li class="toclevel-2"><a href="#Gaming_the_game"><span class="tocnumber">11.3</span> <span class="toctext">Gaming the game</span></a></li>
+<li class="toclevel-2"><a href="#Legal_issues"><span class="tocnumber">11.4</span> <span class="toctext">Legal issues</span></a></li>
+<li class="toclevel-2"><a href="#Regulatory_issues"><span class="tocnumber">11.5</span> <span class="toctext">Regulatory issues</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Beyond_the_Basics"><span class="tocnumber">12</span> <span class="toctext">Beyond the Basics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Going_beyond_the_basics"><span class="tocnumber">12.1</span> <span class="toctext">Going beyond the basics</span></a></li>
+<li class="toclevel-2"><a href="#Inducement_prizes"><span class="tocnumber">12.2</span> <span class="toctext">Inducement prizes</span></a></li>
+<li class="toclevel-2"><a href="#Virtual_economies"><span class="tocnumber">12.3</span> <span class="toctext">Virtual economies</span></a></li>
+<li class="toclevel-2"><a href="#Collective_action"><span class="tocnumber">12.4</span> <span class="toctext">Collective action</span></a></li>
+<li class="toclevel-2"><a href="#The_future_of_gamification"><span class="tocnumber">12.5</span> <span class="toctext">The future of gamification</span></a></li>
+<li class="toclevel-2"><a href="#Course_review_and_wrap-up"><span class="tocnumber">12.6</span> <span class="toctext">Course review and wrap-up</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Key_Points_from_Interviews"><span class="tocnumber">13</span> <span class="toctext">Key Points from Interviews</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Bing_Gordon"><span class="tocnumber">13.1</span> <span class="toctext">Bing Gordon</span></a></li>
+<li class="toclevel-2"><a href="#Amy_Jo_Kim"><span class="tocnumber">13.2</span> <span class="toctext">Amy Jo Kim</span></a></li>
+<li class="toclevel-2"><a href="#Daniel_Debow"><span class="tocnumber">13.3</span> <span class="toctext">Daniel Debow</span></a></li>
+<li class="toclevel-2"><a href="#Susan_Hunt_Stevens"><span class="tocnumber">13.4</span> <span class="toctext">Susan Hunt Stevens</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="What_is_gamification.3F">What is gamification?</span></h2>
+<code><pre> The use of game elements and game design techniques in non-game contexts.
+</pre></code>
+<p>No point in gamifying unless it is effective.</p>
+<p>Gamification is great for motivation - fun is powerful</p>
+<p>Practical categories:
+<ul><li>External (for example, consumer engagement)
+</li><li>Internal (for example, office incentives)
+</li><li>Behavior change (for example, fitocracy.com)
+</li><li>Can you think of others?</p>
+</li></ul>
+
+<p>Gamification is also about 'normalising' new attitudinal values and behaviors, like MiniMonos does in enabling kids to be environmentalists when playing their game. </p>
+<p>A definition by Michael Wu, Ph.D.:</p>
+<p>At the most fundamental level, gamification is the use of game mechanics to drive game-like engagement and actions. The logic is dead simple. People love to play games. But in everyday life, we are often presented with activities we hate, whether it is boring chores or stressful works. Gamification is the process of introducing game mechanics into these abhorred activities to make them more game-like (i.e. fun, rewarding, desirable, etc.), so that people would want to proactively take part in these tasks.</p>
+<p>(Taken from: <a rel="nofollow" class="external free" href="http://lithosphere.lithium.com/t5/Science-of-Social-blog/Gamification-from-a-Company-of-Pro-Gamers/ba-p/19258">http://lithosphere.lithium.com/t5/Science-of-Social-blog/Gamification-from-a-Company-of-Pro-Gamers/ba-p/19258</a>)</p>
+<h2> <span class="mw-headline" id="Games_.28Overview.29">Games (Overview)</span></h2>
+<h3> <span class="mw-headline" id="What_is_a_game.3F">What is a game?</span></h3>
+<code><pre> pre-lusory goal, constitutive rules, lusory attitude
+
+ &quot;voluntary overcoming of unnecesary obstacles&quot;
+
+ &quot;A game is a series of meaningful choices&quot;
+</pre></code>
+<p>Some examples of game elements:
+<ul><li>Points
+</li><li>Resources
+</li><li>Levels
+</li><li>Quests
+</li><li>Avatars
+</li><li>Social graph (a graph of relationships with other users, for example, friends on Facebook)
+</li><li>Leader board</p>
+</li></ul>
+
+<p>Some examples of successful game "categories":
+<ul><li>Sandbox - Minecraft
+</li><li>Building - SimCity, Civilization series
+</li><li>Social Building = Sims, Farmville
+</li><li>MMO's - World of Warcraft
+</li><li>Puzzle - Portal, Angry Birds</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Gamification_and_Education">Gamification and Education</span></h3>
+<p>If you are interested in how gamification can be applied into education, check this out:</p>
+<ul>
+<li><i><a rel="nofollow" class="external text" href="http://www.emergingedtech.com/2012/08/tailoring-the-classroom-of-the-future-with-the-fabric-of-the-past/">Tailoring the Classroom of the Future With the Fabric of the Past</a></i> by Matt Meyers</li>
+<li><i><a rel="nofollow" class="external text" href="http://www.emergingedtech.com/2012/06/the-gamification-of-education-and-cognitive-social-and-emotional-learning-benefits/">The Gamification of Education and Cognitive, Social, and Emotional Learning Benefits</a></i> by K. Walsh</li>
+</ul>
+<p>Very interesting work being done to empower learners to create their own "learning record store." Not a huge leap to see how this might feed into a gamified "eduquest" and result in parsable (vetted?) badging or progession points equating to degree requirement satisfaction.</p>
+<ul>
+<li><i><a rel="nofollow" class="external text" href="http://tincanapi.com/what-is-tin-can/overview/">tincanAPI</a></i> by C.Bacigalupo</li>
+</ul>
+<h3> <span class="mw-headline" id="Games_and_Play">Games and Play</span></h3>
+<p>Roger Callois suggested the dichotomy of 
+    Paidia (play)&lt;-----&gt; Ludus (game)</p>
+<ul>
+<li>"Play is the aimless expenditure of exuberant energy." - Friedrich Schiller</li>
+<li>"Play is whatever is done spontaneously and for its own sake." - George Santayana</li>
+<li>"Play creates a zone of proximal development of the child. In play a child always behaves beyond his average age." - Lev Vygotsky</li>
+<li><p>"Play is a free movement within a more rigid structure." - Katie Salen and Eric Zimmerman</p></li>
+<li><p>"A game is a closed, formal system that engages players in a structured conflict and resolves in an unequal outcome." - Tracy Fullerton, Chris Swain, Steven Hoffman</p></li>
+<li>"A game is a series of meaningful choices" - Sid Meier</li>
+<li>"A game is a domain of contrived contingency that generates interpretable outcomes." - Thomas Mallaby</li>
+<li>"A game is a problem-solving activity, approached with a playful attitude." - Jesse Schell</li>
+</ul>
+<p>In a game, there is freedom to go along different paths to the goal (from start to finish).</p>
+<p>To connect philosophical view of games and other views:
+<ul><li> emphasize voluntariness
+</li><li> games have learning or problem solving
+</li><li> game design is a balance of structure and exploration</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Video_Games">Video Games</span></h3>
+<p>Video games are a big industry ($66B worldwide in 2011)
+<ul><li>They are going online (versus boxed software or console game)
+</li><li>They are going mobile: 44% of US/UK adults have played a mobile game in the last month</p>
+</li></ul>
+
+<p>Everyone games:
+<ul><li> 97% of teens 12-17 play games
+</li><li> Avg game player is 30
+</li><li> 47% of gamers are women</p>
+</li></ul>
+
+<p>Game types:
+<ul><li>Sandbox (minecraft)
+</li><li>Building (Civilization)
+</li><li>Social Building (Farmville)
+</li><li>MMOGs (WoW)
+</li><li>Puzzle (Angry Birds)</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Gamification_and_Agile_Software_Development">Gamification and Agile Software Development</span></h3>
+<ul>
+<li>Planning Poker</li>
+<li>Kanban Boards</li>
+<li>Visual Studio Achievements</li>
+</ul>
+<h2> <span class="mw-headline" id="Game_Thinking">Game Thinking</span></h2>
+<h3> <span class="mw-headline" id="Why_Gamify.3F">Why Gamify?</span></h3>
+<p>Lessons from Dodgeball:
+<ul><li> Early mobile app to check in and see if friends were nearby
+</li><li> Chicken-egg problem: if no one was checked in nearby, it wasn't very interesting to check in yourself (engagement gap).  Also, no sense of progression, wasn't that social, and didn't incent you to make it a habit.
+</li><li> Bought by Google in 2005.
+</li><li> Dodgeball founders Dennis Crowley and Alex Rainert left Google in 2007
+</li><li> In 2009, Dennis Crowley started Foursquare with Naveen Selvadurai.<br />
+</li><li> FourSquare: introduced Badges, status (mayor)</p>
+</li></ul>
+
+<p>[<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Dodgeball"><em>(service)</a>]
+[<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Foursquare"></em>(social_networking)</a>]</p>
+<p>Aspects of Dodgeball
+<ul><li> Engagement gap - the more people use it, the bigger fun it is
+</li><li> Choices - lack of variety (you check-in or don't)
+</li><li> Progression - checking-in the hundreth time is like checking-in the first time
+</li><li> Social - Dodgeball involved relationships with friends
+</li><li> Habit - "If you have to think each time: 'Oh, I better get out my phone and go and check-in,' you're not going to do it all that much."</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Thinking_Like_a_Game_Designer">Thinking Like a Game Designer</span></h3>
+<ul>
+<li>Tell yourself: I AM a game designer, which is distinct from being a game designer (req. training) and from being a gamer</li>
+<li>Think of participants as PLAYERS (customers, community, employees, target population). Players PLAY (they are the center of the game, have autonomy, meaningful choices with consequences)</li>
+<li>Goal: get them and keep them playing</li>
+<li>about the state of mind</li>
+<li>as game designer, you think about components, instead of thinking like a gamer</li>
+<li>paying attention to the structure and the framework, not the experience</li>
+<li>think about the people involved as “players”
+ players are the center of the game
+ players feel a sense of autonomy
+ players play</li>
+<li>the relationship is between the designer and the player</li>
+</ul>
+<h3> <span class="mw-headline" id="Design_rules">Design rules</span></h3>
+<p>Player journey:
+<ul><li> Onboarding: getting a player to play; getting the player into the game as quickly as possible
+</li><li> Scaffolding: keeping the player playing; provides the training, helps the player overcome some of the obstacles which might otherwise get the player stuck; an introductory task (how to do something, a deep learning process)
+</li><li> Pathways to mastery (acquired and achieved a real skill)</p>
+</li></ul>
+
+<p>Plants v. Zombies level one:
+<ul><li> Guides: here's what you should do
+</li><li> Highlighting: focus on an area for guidance
+</li><li> Feedback: get a reward, defeat an enemy
+</li><li> Limited options: dumb-downed
+</li><li> Limited zombies: one zombie
+</li><li> Pretty darn hard to fail (rewards you with level completion)</p>
+</li></ul>
+
+<p>The importance of Balance: not too, hard, easy, overwhelming, underwhelming
+<ul><li> if it's too uneven for participants, then it's not fun
+</li><li> this is very tricky</p>
+</li></ul>
+
+<p>Create an experience
+<ul><li> Example of music site that created a club atmosphere, with DJs, and music rating system</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Understanding_Fun">Understanding Fun</span></h3>
+<ul>
+<li>Nicole Lazzaro's Four Types of Fun: Easy (blowing out steam), Hard (challenging), People (interact with others), Serious (meaningful)</li>
+<li>Marc LeBlanc's Eight Kinds of Fun: Sensation, Fantasy, Narrative, Challenge, Fellowship, Discovery, Expression, Submission</li>
+<li>Fun can be hard and serious if the activity means something to the user</li>
+</ul>
+<h3> <span class="mw-headline" id="Finding_the_Fun">Finding the Fun</span></h3>
+<ul>
+<li>Volkswagen Fun Theory ([<a rel="nofollow" class="external autonumber" href="http://www.thefuntheory.com/">[1]</a>]): oral stimulation, novelty, unexpected, mystery</li>
+<li>LinkedIn has gamelike things: profile progress bar: feedback, progression, completion</li>
+</ul>
+<h2> <span class="mw-headline" id="Game_Elements">Game Elements</span></h2>
+<h3> <span class="mw-headline" id="Breaking_Games_Down">Breaking Games Down</span></h3>
+<ul>
+<li>Tic tac toe elements: grid, tokens, two players, competitive, turns, win and draw states, no progression or scoring</li>
+<li>Elements -- bits and pieces</li>
+<li>Experience -- why it feels fun</li>
+</ul>
+<h3> <span class="mw-headline" id="Pyramid_of_Gamification_Elements">Pyramid of Gamification Elements</span></h3>
+<ul>
+<li>Elements: Dynamics, Mechanics, Components</li>
+<li>Experience surrounds elements</li>
+<li>Experience include aesthetics</li>
+<li>Top of pyramid: Dynamics (big picture, "grammar"): Constraints, Emotions, Narrative, Progression, Relationships</li>
+<li>Narrative makes things make sense (badges, etc.)</li>
+<li>Next level: Mechanics (Processes that drive action forward; "verbs"): Challenges, Chance, Competition, Cooperation, Feedback, Resource Acquisition, Rewards, Transactions, Turns, Win states</li>
+<li>Bottom level: Components (specific instantiations of mechanics and dynamics; "nouns"): Achievements, Avatars, Badges, Boss Fights, Collections, Combat, Content Unlocking, Gifting, Leaderboards, Levels, Points, Quests, Social Graph, Teams, Virtual Goods</li>
+</ul>
+<h3> <span class="mw-headline" id="PBL_Triad">PBL Triad</span></h3>
+<ul>
+<li>Points: Keep score, Determine win states, Connect to rewards, Provide feedback, Display of progress</li>
+<li>Badges: Represent achievements, Flexible, Style, Signal Importance, Credentials, Collections, Status symbols</li>
+<li>Leaderboards: Ranking (feedback on competition), Personalized leaderboards (friends)</li>
+</ul>
+<h2> <span class="mw-headline" id="Psychology_and_Motivation_.28I.29_-_Concepts_of_Gamification">Psychology and Motivation (I) - Concepts of Gamification</span></h2>
+<h3> <span class="mw-headline" id="Motivational_Design">Motivational Design</span></h3>
+<p>Example: In 2011 MLB introduced these player badges for every time you finish watching a video on their web site.  What's the point?
+Dodgers fan club was interested in them, they were not intended but later became obsessed with these badges (reminiscent of baseball cards)
+There is no answer to motivation; it's complicated because people are complicated.  </p>
+<p>Example: Apple Inc's retail store experience: they wanted you to linger, hang out, and browse, because purchasing a computer is a lifestyle change.  </p>
+<h3> <span class="mw-headline" id="Behaviorism">Behaviorism</span></h3>
+<p>Behaviorism: externally what people are doing on the outside (i.e. emotions, feelings, consciousness)
+Classical conditioning: stimulus entails a response
+<ul><li> Example: Pavlov's dog and the bell for food
+</li></ul>
+Operant conditioning: stimulus and response go in a feedback loop until the person learns (sees the consequences and becomes aware)
+<ul><li> Example: BF Skinners boxes</p>
+</li></ul>
+
+<p>Behavioral Economics: let's look at what people do (vs why)
+<ul><li> Example: person walks on the street and sees $100 what do they do?</p>
+</li></ul>
+
+<p>Learning from behaviorism:
+<ul><li> Observation
+</li><li> Feedback loop
+</li><li> Reinforcement</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Behaviorism_and_Gamification">Behaviorism and Gamification</span></h3>
+<p>Conditioning through consequences:
+<ul><li> Example: Zynga Farmville had crops and they wither if not taken care of, so there was an appointment mechanic (people drawn to check in)
+</li></ul>
+Reinforcement through rewards:
+<ul><li> The dopamine system deals with pleasure and learning, more associated with the activity of getting the reward than the reward itself.</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Reward_structures">Reward structures</span></h3>
+<p>What can be incentivized? Give player meaningful choices.
+Cognitive evaluation theory: What kind of rewards are there?
+<ul><li> Tangible (stuff you can hold in your hands) / intangible rewards 
+</li><li> Expected / unexpected rewards
+</li><li> Contingency (what do you have to do to get rewards?): non-contingent (don't have to do anything); engagement-contingent (starting to do something); completion-contingent (finish a task); performance-contingent (do a task well)</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Reward_Schedules">Reward Schedules</span></h3>
+<p>When vs what</p>
+<p>Types of schedules:
+<ul><li> Continuous (least interesting): every time, automatic
+</li><li> Fixed ratio (visiting a web site or playing a game)
+</li><li> Fixed interval (based on time not user)
+</li><li> Variable (no fixed schedule): people love surprises</p>
+</li></ul>
+
+<p>Variability:
+<ul><li> competitive OR non-competitive 
+</li><li> certain OR uncertain</p>
+</li></ul>
+
+<p>Variable Schedule Reward Machine (slot machine)</p>
+<h2> <span class="mw-headline" id="Psychology_and_Motivation_-_Risks_and_Alternatives">Psychology and Motivation - Risks and Alternatives</span></h2>
+<h3> <span class="mw-headline" id="Limits_of_behaviourism">Limits of behaviourism</span></h3>
+<p>Behaviourism describes what people do in certain circumstances (for example, they like lotteries). This is limited: it does not make us understand WHY they like lotteries. Clearly there is something to be said about that, but that is out of the scope of behaviourism. For gamification the behaviourist approach can be limited: the gamer should be central in thinking about gamification, but behaviourism considers the gamer as a black box.</p>
+<h3> <span class="mw-headline" id="Dangers_of_behaviourism">Dangers of behaviourism</span></h3>
+<p>Problems:
+<ul><li>Manipulation. May be problematic to get a player addicted in order to achieve goal that is not in his/her best interest (eg. slot machines).
+</li><li>Hedonic treadmill. When people get used to rewards, the consequetive lack of rewards may lower motivations. Tied into the dopamine reward system in the brain. If you figure out what the reward system is, the game becomes less interesting (because rewards are expected).  Remember the example of the monkey--when the tone was played before the spray of grape juice (the reward), the monkeys' dopamine response came with the tone, not the actual grape juice.
+</li><li>Overemphasis on status. Not everyone is motivated by status all the time.</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Extrinsic_and_intrinsic_motivation">Extrinsic and intrinsic motivation</span></h3>
+<p>Cognitivism: "opening the black box" (as opposed to behaviourism).
+Intrinsic rewards: do stuff for its own sake
+Extrinsic rewards: do stuff for other reasons than the thing itself
+SAPS framework: 4 kinds of extrinsic rewards:
+<ul><li>Status
+</li><li>Access. Special access to something new (moderaters only, unlocking new content).
+</li><li>Power
+</li><li>Stuff
+</li></ul>
+Badges can be both intrinsically and extrinsically motivating</p>
+<h3> <span class="mw-headline" id="How_rewards_demotivate">How rewards demotivate</span></h3>
+<p>Over-justification: Extrinsic rewards may lead a gamer to think that it's all about the rewards, making him 'forget' his initial intrinsic motivation. 
+Examples: 
+<ul><li>drawing: studies have shown that when kids are told to draw a picture without a reward being mentioned, they do fine and work hard on their drawing. However, when you tell them that they will get a prize for drawing a picture, they don't work as hard on it.
+</li><li>day care centre pickup: When a day-care enacted a fine for parents picking their kids up late, the number of late parents increased. This was because the guilt of picking their kids up late was replaced with a feeling of justification because they had paid for the privilege of picking them up late. [Note: The book Freakonomics discusses this in great length.]
+</li><li>blood donation, teacher salaries
+</li></ul>
+Over-justification effects occur for tasks that were interesting enough to begin with (i.e. people were already intrinsically motivated). 
+Over-justification occurs more often when the rewards were tangible. Less for unexpected awards. Performance-contingent rewards can go both ways: if the reward is only informational, then no problem; if the reward is desirable, a real reward, then the problem may occur. </p>
+<h3> <span class="mw-headline" id="Self-determination_theory">Self-determination theory</span></h3>
+<p>Amotivation (not motivated) vs intrinsic motivation (= strongest form of motivation)
+External regulation: the only thing that makes you do it, is that you have to. 
+Interjection: Make external motivators our own. Status: I don't care personally, but I care about the status.
+Identification: I can personally see some value in it. Aligned with personal goals, but don't really want to.
+Integration: I really want to do it. But not for the thing itself.
+Self-determination: 3 characteristics
+<ul><li>Competence: to do with ability (to achieve a successful outcome).
+</li><li>Autonomy: person is in control. Example: fitness site, player may choose desired workout areas.
+</li><li>Relatedness: activity is related to yourself</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Gamification_Design_Framework">Gamification Design Framework</span></h2>
+<h3> <span class="mw-headline" id="The_design_process">The design process</span></h3>
+<p>Design thinking principles
+<ul><li>Purposive (it has a goal)
+</li><li>Human centered ==&gt; it is about the user experience
+</li><li>Balance of analytical and creative. Abductive reasoning = inference from insufficient information. 
+</li><li>Iterative. Prototyping and playtesting. Start with very simple prototype.</p>
+</li></ul>
+
+<p><strong>D6 design framework</strong>:
+<ul><li> DEFINE business objectives
+</li><li> DELINEATE target behaviors
+</li><li> DESCRIBE your players
+</li><li> DEVISE activity loops.
+</li><li> DON'T forget the fun! 
+</li><li> DEPLOY the appropriate tools</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="D1.2F2:_Business_objectives.2Ftarget_behaviors">D1/2: Business objectives/target behaviors</span></h3>
+<p><strong>Step 1</strong> Define Business objectives: 
+<ul><li> What is it for? 
+</li><li> What will define success or failure? </p>
+</li></ul>
+
+<p>Foursquare example: social sharing and influence marketing.</p>
+<p>How to catalogue business goals
+1. Make a list and rank possible objectives
+2. Eliminate means to ends
+3. Justify objectives (why do you have these goals?)</p>
+<p><strong>Step 2</strong>: Delineate target behaviors
+<ul><li>Be specific
+</li><li>What are success metrics? ("win states")
+</li><li>What are the analytics? How do you measure them (such as ...)? 
+<ul><li> Daily average users / Monthly average users ratio (DAU/MAU) which is a measure for engagement (100%=every player comes back every day)
+</li><li> Virality
+</li><li> Volume of activity.</p>
+</li></ul>
+</li></ul>
+
+<h3> <span class="mw-headline" id="D3:_Describe_your_players">D3: Describe your players</span></h3>
+<p>Demographics, age groups, etc.
+Psychographics: what do they like?
+Overlapping value structures: many players have differing goals. 
+Bartle player type model: 2x2 matrix: players/world axis and acting/interaction axis: 
+<ul><li>Achievers
+</li><li>Explorers
+</li><li>Socializers
+</li><li>Killers (may also be healers) small part of population, but important (fanatical). 
+</li></ul>
+People are usually in several quadrants, and may go back and forth between them.</p>
+<h3> <span class="mw-headline" id="D4:_Devise_activity_loops">D4: Devise activity loops</span></h3>
+<p>1.Engagement loops (or micro loops): 
+<ul><li> Motivation -&gt; action -&gt; feedback cycle. 
+</li><li> Feedback itself can be a motivator.
+</li></ul>
+2. Progression loops (or macro loops):
+<ul><li> Player journey: onboarding -&gt; rest -&gt; climbing -&gt; boss fight -&gt; etc.
+</li><li> For example: start to finish using intermediate steps. </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="D5.2F6:_Don.E2.80.99t_forget_the_fun_and_deploy">D5/6: Don’t forget the fun and deploy</span></h3>
+<p>Forgetting the fun is easy to miss, especially when designing PBL games, it is easy to lose sight of the fun.<br />
+Deploy: use the right tools and pick the best ones for the challenge at hand. </p>
+<h2> <span class="mw-headline" id="Design_Choices">Design Choices</span></h2>
+<h3> <span class="mw-headline" id="Two_approaches_to_gamification">Two approaches to gamification</span></h3>
+<p>Is this a game? Is a slot machine a game? Where is the playfulness? Same for gamification: PBL? Is it a game?
+1. Doing perspective: 
+<ul><li> Making users do things
+</li><li> Examples: marketing, economics, incentives, needs, etc.
+</li></ul>
+2. Feeling perspective
+<ul><li> Making players awesome
+</li><li> Examples: design, psychology, experiences, etc.</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Is_Gamification_right_for_me.3F">Is Gamification right for me?</span></h3>
+<p>How to decide:
+<ul><li>Motivation: Would you derive value from encouraging behaviour?
+<ul><li>Situations where people need creativity, team work, emotional connections.
+</li><li>Make boring tasks interesting.
+</li></ul>
+</li><li>Meaningful choices: are the target activities interesting?
+</li><li>Structure: can behaviours be modeled through algorithms?
+<ul><li>Measuring and making meaningful choices
+</li></ul>
+</li><li>Potential conflicts: can the game avoid tension with other motivational structures?
+<ul><li>For example: school grading.</p>
+</li></ul>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Designing_for_collective_good">Designing for collective good</span></h3>
+<p>Stack overflow example
+Meaning depends on what the community feels is meaningful. 
+When fellow users vote up your answers, you create reputation. 
+Bounties: give reputation to someone
+All structured by prosocial behaviour. 
+Clay Shirky: groups tend to fall apart as they get bigger (goals may dilute with new members). So uses game dynamics to counter this.
+Reputation can give privileges (edit, tag, modify, delete, etc.) </p>
+<h3> <span class="mw-headline" id="Designing_for_happiness">Designing for happiness</span></h3>
+<p>Positive psychology: what makes people feel happy and fulfulled? 
+PERMA (by Jane McGonogal): Positive emotions, Engagement, Relation, Motivation, Achievement 
+Flow: state of complete engagement, time flies. Happens organically. 
+Chart: difficulty over time (Anxiety vs bored), stay between boundaries
+Conditions for flow:
+<ul><li>Clear goals
+</li><li>Balance between perceived challenges and perceived skills
+</li><li>Clear and immediate feedback</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Enterprise_Gamification">Enterprise Gamification</span></h2>
+<h3> <span class="mw-headline" id="Enterprise_applications">Enterprise applications</span></h3>
+<p>Potential applications:
+<ul><li> Intranet engagement (quality of discussion)
+</li><li> Productivity enhancement (Example: Call centers) Danger: may be used oppressively
+</li><li> Efficiency enhancement  (example: email application)
+</li><li> Knowledge management (example: Deloite whowhatwhere)
+</li><li> Human resources
+</li><li> Innovation (idea generation)
+</li><li> Serious games</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Workplace_motivations">Workplace motivations</span></h3>
+<p>What  motivates people?
+Rewards (pay, bonus, etc)  extrinsic
+<ul><li> Skill development
+</li><li> Information (how are you doing? What is the quality of your work?).
+</li><li> Corporate citizenship
+</li><li> Fun (example: Zappos face game)</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="The_game_vs._the_job">The game vs. the job</span></h3>
+<p>Rewards matter: quick phonecalls vs quality phonecalls 
+Citizens behavior 
+Framework
+2 suitable areas
+In-role behavior + future
+Citizenship + Core </p>
+<h3> <span class="mw-headline" id="Playbor">Playbor</span></h3>
+<p>Playbor = Play &amp; labour
+What if you don’t have a choice to enter a gamified system? Can be big-brotherish. Not necessarily fun. Are mandatory systems appropriate and ethical? ‘Electronic whip’. Autonomy is lost. Perceived as control. 
+Is it transparent? Is it voluntarily? What are the game elements? </p>
+<h2> <span class="mw-headline" id="Social_Good_and_Behavior_Change">Social Good and Behavior Change</span></h2>
+<h3> <span class="mw-headline" id="Gamification_for_good.3F">Gamification for good?</span></h3>
+<p>2 categories:
+Societal benefit
+Personal benefit
+Preliminary: positive emotions around games. Involving gamification is interesting just for that.
+Whats different?
+<ul><li> Inherent relatedness -&gt; be part of something bigger than yourself. In this context it is about activating latent desires. 
+</li><li> Caveat: rewards for doing good? -&gt; gamification puts a premium for short term rewards. Over-justification risk (risk of replacing intrinsic motivation).
+</li><li> Behavior change. Getting people over the hump. </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Social_good_applications">Social good applications</span></h3>
+<p>4 categories:
+<ul><li> Health and wellness. Example: Zamzee. Targeted at low income teenagers. Uses accelerometer.  Example 2: Superbetter. Improving peoples lives. 
+</li><li>Energy and invironment. Example: Opower. Social dynamic about energy saving. Peer pressure is really powerful. 2-4% increase in energy efficiency. Example 2: RecycleBank.
+</li><li> Education. Credentialing function. Openbadge framework. 
+</li><li> Government. </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Social_good_techniques">Social good techniques</span></h3>
+<p>Example: Capri (Congestion and Parking Relief Incentives)
+<ul><li> Feedback and rewards
+</li><li> Monitoring. Used mobile phones to automatically report (using GPS). Sensors are used more and more. 
+</li><li> Communal pressure. Social norms, not so much about competition. 
+</li><li> Competition. Example: Kukui cup. Which department uses the least energy? In this context the risk of nasty side-effects of competitions is smaller. 
+</li><li> Impact. Example: Practically green. Shows what you have reached (energy savings).
+</li><li> Chance. Lottery type of game. People love this. </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Behavior_change">Behavior change</span></h3>
+<p>Habit formation
+Fogg Behavior Model  www.behaviormodel.org
+B = MAT  Behavior = Motivation x Ability x Trigger
+Triggers are effective if motivation and perceived ability are both high.
+<ul><li> Motivation and Ability can trade off 
+</li><li> Trigger timing
+</li><li> Trigger types: Spark (increase motivation)/ Facilitator (increase perceived ability) / Signal (alarm clock).
+</li></ul>
+How does it tie into the D6 model?
+<ul><li> Engagement loop -&gt; Motivation (Motivation-&gt; Action -&gt; Feedback -&gt; Motivation -&gt; …)
+</li><li> Progression loop -&gt; Perceived ability
+</li><li> Good games trigger effectively</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Critiques_and_Risks">Critiques and Risks</span></h2>
+<h3> <span class="mw-headline" id="Pointsification">Pointsification</span></h3>
+<p>Criticism: Gamification focuses on PBL’s, which are the least essential to games. 
+Can be addressed by thinking about gamification more broadly. Critiques mostly the behavioral type of gamification (not all gamification works like that). 
+Does it actually work? 
+<ul><li> Real research on effectiveness is limited. 
+</li><li> Potential for engagement decay (if behavioral type of gamification is used).
+</li><li> Crowding out (ie over-justification).
+</li></ul>
+Implications
+<ul><li> Names are powerful: gamification refers to games.
+</li><li> Bad gamification is bad. Especially behaviorist type. 
+</li><li> There is more to games than gamification and vice versa.
+</li><li> Caveat ludor. Be beware of difference between pointsification and gamification</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Exploitationware">Exploitationware</span></h3>
+<p>Gamifcation can be TOO effective. ‘Electronic whip’. “Gamification proposes to replace real rewards with fictional ones”.  Really depends on how it is used, ethically: to really help employees or to trick them into doing extra stuff at no extra cost. 
+Cow clicker example. </p>
+<h3> <span class="mw-headline" id="Gaming_the_game">Gaming the game</span></h3>
+<p>Unwanted unanticipated behavior is possible. 
+Cheating may be possible. Less a problem in games with social elements. Iteration and play testing is important.
+Beneficial cheating?  Insider information may be misused, which worked out nicely in an innovation marketplace. </p>
+<h3> <span class="mw-headline" id="Legal_issues">Legal issues</span></h3>
+<ul>
+<li>Privacy. Lot of information about players. 
+<ul><li>Employment / labor law. Properly disclosed, etc.</li>
+</li></ul>
+<li>Deceptive marketing. Stealth marketing. </li>
+<li>Intellectual property. Just like in any digital system. </li>
+<li>Virtual property rights? Do you have any legal claim if you spent time and money for virtual goods?</li>
+</ul>
+<h3> <span class="mw-headline" id="Regulatory_issues">Regulatory issues</span></h3>
+<ul>
+<li>Paid endorsements. FTA requires disclosure. Achievements can involve tweeting about a product or service.</li>
+<li>Banking regulation. Issue if virtual goods / virtual currency are used.</li>
+<li>Sweepstakes and gambling. Games of skill vs games of chance. </li>
+</ul>
+<h2> <span class="mw-headline" id="Beyond_the_Basics">Beyond the Basics</span></h2>
+<h3> <span class="mw-headline" id="Going_beyond_the_basics">Going beyond the basics</span></h3>
+<p>Yay! You got a badge. With a smiley!
+Overview of what’s up next.</p>
+<h3> <span class="mw-headline" id="Inducement_prizes">Inducement prizes</span></h3>
+<ul>
+<li>A contest to motivate a result</li>
+<li>Alternative to direct funding
+Why? </li>
+<li>Cheaper</li>
+<li>Stimulates creativity and flexibility (more ideas generated)
+Prizes and gamification</li>
+<li>Contest to motivate</li>
+<li>Fun? Extrinsic reward.</li>
+<li>Remember SDT factors: Competence, Relatedness, Autonomy.
+Some initiatives</li>
+<li>X-Prize </li>
+<li>Innocentive</li>
+<li>Kaggle</li>
+<li>TopCoder</li>
+<li>DARPA Grand Challenges</li>
+<li>America Competes Act</li>
+<li>OSTP Initiative</li>
+<li>Challenge.gov
+How to design such a competition? </li>
+<li>Multiple teams / teams should be capable of competing</li>
+<li>Costs sufficiently small</li>
+<li>Balance of scale vs. incentives (Karim Lakhani) -&gt; you have to have a reasonable chance to win</li>
+<li>Opportunities to leverage results (for competitors)</li>
+</ul>
+<h3> <span class="mw-headline" id="Virtual_economies">Virtual economies</span></h3>
+<p>Persistent virtual goods -&gt; Virtual Goods
+Tradable / redeemable points -&gt; Virtual Currency
+In-game transactions / markets -&gt; Virtual Economy
+Virtual asset market is 7 billion dollars worldwide in 2010 
+Loyalty programs as virtual currency. Usually not fun, only extrinsic rewards. But: it is possible to have a virtual economy that is also fun. Key is balance:
+<ul><li> Economics driven by scarcity, not money. Scarcity can be designed. 
+</li><li> Faucets and drains -&gt; like passing go in Monopoly. Not too much money in the economy, not too little. 
+</li></ul>
+Danger! 
+<ul><li> Real money costs real money. Beware of what you are getting into.
+</li><li> Remember hedonic treadmill and crowding-out effect (over-justification). 
+</li><li> Intrinsic value from rarity and surprise. </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Collective_action">Collective action</span></h3>
+<p>2 axes: Competitive vs collaborative and Top-down vs Bottom-Up. Grant-Inducement prizes-Employees – Crowdsourcing / microwork.
+Mechanical Turk -&gt; for money. But also possible for <em>free</em> (yay?) by using gamification. Combination also possible: microtask.com. Players do not necessarily have to know they are being crowdsourced.
+When is this an option? 
+Nature of the task must be suitable: is it possible to split up the task? Are humans better than computers?
+How to motivate? Money, love, fun…</p>
+<h3> <span class="mw-headline" id="The_future_of_gamification">The future of gamification</span></h3>
+<h3> <span class="mw-headline" id="Course_review_and_wrap-up">Course review and wrap-up</span></h3>
+<h2> <span class="mw-headline" id="Key_Points_from_Interviews">Key Points from Interviews</span></h2>
+<h3> <span class="mw-headline" id="Bing_Gordon">Bing Gordon</span></h3>
+<ul>
+<li>games are new normal for those born after 1971</li>
+<li>can use games to improve motivation, increase interest, be effective and improve effectiveness through immediate feedback</li>
+<li>no books on gamification principles.  Robert Trent Jones (golf course designer); blogs of interaction designers.  Best is to play a great game.  Warcraft's party system with buffs is a great example of emphasizing teamwork.</li>
+<li>Janet Murray: play, the accelerator of human culture</li>
+<li>those habituated to games will put pressure on the assembly line system of education</li>
+<li>collaboration, not competition what attracts people back to games</li>
+</ul>
+<h3> <span class="mw-headline" id="Amy_Jo_Kim">Amy Jo Kim</span></h3>
+<p>** Note this is paraphrase from Lecture 8.5**</p>
+<p><em>KW</em>: what you make of the certain gamification trend?</p>
+<p><em>AJK</em>: it's a great wave of interest in gaming b/c same reasons (growing up, mechanics easy).  Word "gamification" will go away but will be a toolkit of various design.  It will be the wakening of a new trend.  </p>
+<p><em>KW</em>: Richard Bartles' notion of player types, you have a slightly different perspective?</p>
+<p><em>AJK</em>: Taking Bartles' structure and applying to all gamification is silly because it is a model of human behavior from multi-user dimensions (pre-cursor for WOW).  If you are building an MMO or player dynamics, you may use Bartle's model.  Sees different models in social media (here's Bartles player types, here's why they are not going to work, here's how to tweak them).  Bartles did not talk about <strong>self-expression</strong> (primary player type).  </p>
+<p><strong>AJK's Social Engagement Verbs (2010)</strong>:
+<ul><li> Express: build, create, choose, design
+</li><li> Compete: win, challenge, showoff, compare
+</li><li> Explore: view, collect, rate, vote, curate
+</li><li> Collaborate: comment, like, greet, share, give</p>
+</li></ul>
+
+<p><em>KW</em>: What's the opportunity space for the collaborative space in games?</p>
+<p><em>AJK</em>: Here's a quantifiable definition of GAME:</p>
+<code><pre> GAME: a system in which players engage in an artificial conflict, defined by rules, 
+ that results in a quantifiable outcome* (Source: _Rules of Play_)
+</pre></code>
+<p>What we see is zero-sum game (I win, you lose).  Head-to-head battle, gambling, rank-ordered competitions, war simulations is just a finite pie.  Some of the loved games (Sims, Rockband) does not have a quantifiable outcome, so I see it as:</p>
+<code><pre> GAME: a structured experience with rules and goals that's fun to play (Source: Engagement Design)
+</pre></code>
+<p>This was defining non-zero-sum games (we're not opponents but partners) such as training and drawing.  Playground games, martial arts, charity walk, and party games are all winning together.  </p>
+<p><em>KW</em>: What's a particular mistake that people make when coming out of web design and social media into gamification?</p>
+<p><em>AJK</em>:  Web design and social media understand funnels, engagement loops, and loyalty, but game experiences changes over time and key stages in a player's journey that gives the person powers and commitment.  What makes it sustainable is for the experience itself to evolve over time.  Use newbie, analytic, and expert (elder game).</p>
+<h3> <span class="mw-headline" id="Daniel_Debow">Daniel Debow</span></h3>
+<p>ABOUT: Daniel Debow is the VP, Salesforce.com/Rypple.  </p>
+<p>URL: <i><a rel="nofollow" class="external text" href="http://www.work.com">Salesforce Work.com</a></i>
+CEO of Ripple
+Ripple is about feedback, social performance management
+Not thinking about making it a game, but about design
+If any game could be made successful by just slapping game mechanics on top of them, then it would be easy. But most games are not that successful. Gamification is used for amplifying behaviors that are already desired.
+Q: How do you find things that are intrinsically rewarding.
+A: look at the data. What do people do? People already give eachother compliments/ recognition by mail or directly. Also physical awards already existed. The meaning of the award is what counts.<br />
+Also: Experiment. 
+Q: What’s the fundamental difference between internal and external gamification? 
+A: Understand context:
+Incentivizing with cash rewards for signing up friends made people invite their friends less, rather than more. 
+Depends on corporate culture to engage in frivolous behavior (badges, etc). People are conscious of their behavior.
+Q: Can gamification work in more traditional companies.
+A: Yes, for three reasons. Hip companies such as Facebook are quite traditional companies too. Many of our customers are traditional companies. Big companies have the same problem (performance management). Plus: it’s not like people don’t already play game at work. There are already many rewards at work (bigger office, car park, promotion). 
+Q: How do you avoid negative cutthroat behavior?
+A: Measure. People don’t always behave as you expect. Get game designers to help. Think of mechanics as amplification tools for desired behavior and choose those behaviors accordingly. </p>
+<h3> <span class="mw-headline" id="Susan_Hunt_Stevens">Susan Hunt Stevens</span></h3>
+<p>ABOUT: Susan Hunt Stevens is the CEO of Practically Green, a sustainable gamified online system.  </p>
+<p>URL: <i><a rel="nofollow" class="external text" href="http://www.practicallygreen.com/">Practically Green</a></i>
+Susan Hunt Stevens interview
+Practically Green -&gt; Motivate healthier and sustainable behavior
+Transparancy about norms
+Game elements used for scale (as in: measure where they are).
+Gamification was never planned, but it evolved. Game elements make it fun, which is new in this context. 
+Games have a shelf life of 6-18 months. Think about how to drive long term engagement. Community is key: 80% is in it for the social environment. 
+Much more effective if the community already exists, just make social norms transparent. Work communities get most engaged.
+Q: How is feedback used to change behavior?
+A: Level-up: beginners or advanced? Allows what information is useful / interesting for somebody. 
+Q: how do you avoid overjustification?
+A: There’s no currency / points. The more tangible the reward mechanism is, the more incentive there is to game the system. 
+Q: will gamification become the norm in these areas?
+A: One of the problems was is how to scale it.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 41/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Gamification:Notes&amp;oldid=23788">https://share.coursera.org/wiki/index.php?title=Gamification:Notes&amp;oldid=23788</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

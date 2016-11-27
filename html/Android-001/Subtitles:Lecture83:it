@@ -1,0 +1,697 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture83:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="The_Service_Class_-_Part_1_-_Italian_subtitles">The Service Class - Part 1 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture89:it" title="Android-001:Subtitles:Lecture89:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture83:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture83:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture83:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture83:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture83:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture83:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture83:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture83:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture85:it" title="Android-001:Subtitles:Lecture85:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/0tx5fhp0ffv8qmx/8%20-%205%20-%20The%20Service%20Class%20-%20Part%201%20%28%2010-19%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:00,000 --&gt; 00:00:09,637
+[BLANK_AUDIO]
+
+2
+00:00:09,637 --&gt; 00:00:12,479
+Ciao, sono Adam Porter, e questo è
+
+3
+00:00:12,479 --&gt; 00:00:18,030
+Programming Mobile Applications for
+Android Handheld Systems.
+
+4
+00:00:19,140 --&gt; 00:00:23,090
+Gran parte della nostra discussione di Android 
+finora è stata incentrata intorno alle
+
+5
+00:00:23,090 --&gt; 00:00:29,340
+activity class e cose che gli utenti vedono e
+con cui interagiscono attraverso quella classe.
+
+6
+00:00:29,340 --&gt; 00:00:35,640
+Cose come fragments, classi user interface
+, mappe e touchable views.
+
+7
+00:00:35,640 --&gt; 00:00:39,010
+Ma le applicazioni portatili 
+includono anche altre cose
+
+8
+00:00:39,010 --&gt; 00:00:42,860
+che sono meno visibili, 
+ma comunque molto importanti.
+
+9
+00:00:42,860 --&gt; 00:00:45,730
+Per esempio, abbiamo parlato di 
+broadcast receivers.
+
+10
+00:00:45,730 --&gt; 00:00:48,710
+Un componente Android fondamentale 
+che rimane in
+
+11
+00:00:48,710 --&gt; 00:00:53,820
+background, e che ascolta e
+risponde agli eventi.
+
+12
+00:00:53,820 --&gt; 00:00:56,200
+Ci sono anche i content providers
+(fornitori di contenuti)
+
+13
+00:00:56,200 --&gt; 00:01:00,810
+Un altro componente fondamentale di Android che
+permette la condivisione di dati tra applicazioni.
+
+14
+00:01:02,000 --&gt; 00:01:06,340
+Il quarto componente fondamentale Android
+è la service class.
+
+15
+00:01:06,340 --&gt; 00:01:10,430
+I Services sono progettati per 
+supportare più operazioni in esecuzione
+
+16
+00:01:10,430 --&gt; 00:01:13,450
+che di solito non sono visibili per l'utente.
+
+17
+00:01:13,450 --&gt; 00:01:16,728
+Cose come il download di file 
+di grandi dimensioni dalla rete.
+
+18
+00:01:16,728 --&gt; 00:01:21,780
+o la sincronizzazione delle informazioni 
+sul dispositivo con il server di rete.
+
+19
+00:01:23,020 --&gt; 00:01:27,560
+In questa lezione inizierò fornendo una panoramica
+della classe Services.
+
+20
+00:01:27,560 --&gt; 00:01:30,090
+Poi parlerò di come si implementa
+
+21
+00:01:30,090 --&gt; 00:01:34,300
+semplici Services che possono essere 
+avviati da client.
+
+22
+00:01:34,300 --&gt; 00:01:38,260
+E dopo di che finiremo parlando
+di come si implementani
+
+23
+00:01:38,260 --&gt; 00:01:43,450
+servizi più complessi che possono legarsi
+ai client e quindi interagire con loro.
+
+24
+00:01:45,490 --&gt; 00:01:48,360
+Come ho detto, i servizi non interagiscono direttamente
+
+25
+00:01:48,360 --&gt; 00:01:51,970
+con gli utenti, così 
+non hanno interfacce.
+
+26
+00:01:51,970 --&gt; 00:01:55,870
+I servizi hanno due usi principali, 
+in primo luogo, permettono di
+
+27
+00:01:55,870 --&gt; 00:02:01,340
+eseguire i lavori in background anche se
+l'applicazione che l'ha richiesto termina.
+
+28
+00:02:02,460 --&gt; 00:02:08,860
+In secondo luogo, i servizi permettono ad un processo
+di interagire con il codice in un altro processo.
+
+29
+00:02:10,260 --&gt; 00:02:15,144
+E come ho detto, i componenti che desiderano
+utilizzare un servizio, ma non hanno bisogno
+
+30
+00:02:15,144 --&gt; 00:02:17,956
+di interagire direttamente con esso, 
+possono far partire il
+
+31
+00:02:17,956 --&gt; 00:02:22,740
+servizio chiamando il metodo
+StartService della classe Context.
+
+32
+00:02:22,740 --&gt; 00:02:26,610
+Passandogli un intent
+associato a tale specico servizio.
+
+33
+00:02:28,780 --&gt; 00:02:32,860
+Una volta avviato, il servizio può essere eseguito
+in background a tempo indeterminato.
+
+34
+00:02:32,860 --&gt; 00:02:35,660
+Anche se, come qualsiasi componente, 
+Android può terminare
+
+35
+00:02:35,660 --&gt; 00:02:38,720
+un servizio se ha bisogno delle
+risorse di quel servizio.
+
+36
+00:02:39,880 --&gt; 00:02:42,400
+Started services sono generalmente progettati per
+
+37
+00:02:42,400 --&gt; 00:02:45,450
+eseguire un'unica operazione, dopo che essi
+
+38
+00:02:45,450 --&gt; 00:02:49,700
+terminano senza trasferire alcun risultato
+
+39
+00:02:49,700 --&gt; 00:02:51,490
+al componente che li hanno avviati.
+
+40
+00:02:52,640 --&gt; 00:02:58,460
+E per impostazione predefinita, i servizi vengono eseguiti 
+nel thread principale della loro applicazione hosting.
+
+41
+00:02:58,460 --&gt; 00:03:03,150
+Quindi, a seconda di come implementai e utilizzi
+un servizio, potrebbe essere necessario
+
+42
+00:03:03,150 --&gt; 00:03:06,910
+creare un thread separato in cui il
+servizio può fare il suo lavoro.
+
+43
+00:03:09,090 --&gt; 00:03:14,490
+Al contrario, i componenti che vogliono utilizzare 
+un servizio, ma hanno bisogno di interagire
+
+44
+00:03:14,490 --&gt; 00:03:17,220
+direttamente con esso, possono legarsi a quel
+
+45
+00:03:17,220 --&gt; 00:03:22,710
+servizio chiamando il metodo
+bindService della classe Context.
+
+46
+00:03:22,710 --&gt; 00:03:26,512
+passandogli un Intent associato ad un 
+servizio specifico.
+
+47
+00:03:26,512 --&gt; 00:03:31,940
+Un oggetto ServiceConnection che
+implementa metodi di callback una volta che
+
+48
+00:03:31,940 --&gt; 00:03:36,730
+il client sia collegato o scollegato
+dal servizio, ed eventuali flag
+
+49
+00:03:36,730 --&gt; 00:03:41,550
+che controllano il comportamento delle
+operazioni di Binding (associazione).
+
+50
+00:03:41,550 --&gt; 00:03:46,540
+Il Binding ad un servizio consente a un componente
+di inviare richiestee e ricevere risposte
+
+51
+00:03:46,540 --&gt; 00:03:52,650
+da un servizio in esecuzione nello stesso 
+o in un altro processo.
+
+52
+00:03:52,650 --&gt; 00:03:55,338
+Al momento del Binding, se il servizio non è
+
+53
+00:03:55,338 --&gt; 00:03:58,530
+già avviato, verrà avviato
+e collegato
+
+54
+00:03:58,530 --&gt; 00:04:02,058
+il servizio continuerà a funzionare finché
+
+55
+00:04:02,058 --&gt; 00:04:05,138
+almeno un client rimane legato
+ad esso.
+
+56
+00:04:05,138 --&gt; 00:04:08,314
+[BLANK_AUDIO]
+
+57
+00:04:08,314 --&gt; 00:04:13,534
+Ecco il mio dispositivo, ora vorrei iniziare 
+l'applicazione LocalLoggingService.
+
+58
+00:04:15,040 --&gt; 00:04:17,450
+Come potete vedere, questa applicazione mostra
+
+59
+00:04:17,450 --&gt; 00:04:21,200
+un solo pulsante etichettato 
+Genera messaggio di Log.
+
+60
+00:04:22,370 --&gt; 00:04:25,880
+Quando faccio clic su questo pulsante, 
+viene avviato un servizio,
+
+61
+00:04:25,880 --&gt; 00:04:28,760
+servizio che scriverà un messaggio
+nel registro di log.
+
+62
+00:04:28,760 --&gt; 00:04:30,880
+Ora premo il pulsante.
+
+63
+00:04:33,270 --&gt; 00:04:36,890
+Diamo uno sguardo alla console di log
+per vedere il messaggio.
+
+64
+00:04:36,890 --&gt; 00:04:37,390
+Quindi
+
+65
+00:04:39,570 --&gt; 00:04:41,480
+ecco il mio IDE.
+
+66
+00:04:41,480 --&gt; 00:04:43,120
+Apriamo il pannello LogCat.
+
+67
+00:04:45,120 --&gt; 00:04:46,760
+Qui potete vedere un messaggio di log
+
+68
+00:04:46,760 --&gt; 00:04:50,094
+Che è stato scritto con l'applicazione
+LocalLoggingService.
+
+69
+00:04:51,640 --&gt; 00:04:53,900
+Diamo un'occhiata al codice sorgente 
+di questa applicazione.
+
+70
+00:04:57,120 --&gt; 00:05:00,352
+Ecco la applicazione, 
+aperta nell'IDE.
+
+71
+00:05:00,352 --&gt; 00:05:04,110
+Vorrei iniziare aprendo la
+classe LoggingServiceClient.
+
+72
+00:05:06,172 --&gt; 00:05:09,692
+In onCreate, questo codice crea innanzitutto 
+un Intent che
+
+73
+00:05:09,692 --&gt; 00:05:14,480
+sarà utilizzato per avviare l'oggetto 
+LoggingService.
+
+74
+00:05:14,480 --&gt; 00:05:18,130
+Successivamente, il codice aggiunge 
+il messaggio 
+
+75
+00:05:18,130 --&gt; 00:05:21,243
+che deve essere registrato come extra
+nello startServiceIntent.
+
+76
+00:05:22,290 --&gt; 00:05:24,185
+E, infine, il codice chiama il
+
+77
+00:05:24,185 --&gt; 00:05:27,140
+metodo StartService, 
+passandogli l'intent.
+
+78
+00:05:29,790 --&gt; 00:05:35,750
+Ora, apriami la classe LoggingService,
+questa classe estende IntentService.
+
+79
+00:05:36,872 --&gt; 00:05:42,260
+L'IntentService viene avviato dal sistema
+e successivamente acccoda gli intent in entrata
+
+80
+00:05:42,260 --&gt; 00:05:48,604
+e quindi li invia, uno alla volta,
+al metodo onHandleIntent.
+
+81
+00:05:50,340 --&gt; 00:05:55,232
+In questo caso, il metodo scrive semplicemente
+il messaggio in arrivo nel log.
+
+82
+00:05:55,232 --&gt; 00:05:58,443
+[BLANK_AUDIO]
+
+83
+00:05:58,443 --&gt; 00:06:03,870
+L'esempio seguente si chiama
+MusicPlayerForegroundService, 
+
+84
+00:06:03,870 --&gt; 00:06:10,300
+questa applicazione, un client fa partire
+un servizio che riproduce un file musicale.
+
+85
+00:06:10,300 --&gt; 00:06:15,330
+Il servizio riproduce la musica in quello che è
+chiamato stato di Foreground (primo piano)
+
+86
+00:06:15,330 --&gt; 00:06:17,250
+E questo significa che il che il servizio
+
+87
+00:06:17,250 --&gt; 00:06:20,090
+farà qualcosa di cui l'utente
+sarà consapevole
+
+88
+00:06:20,090 --&gt; 00:06:23,940
+e quindi Android dovrebbe
+astenersi dal terminare
+
+89
+00:06:23,940 --&gt; 00:06:27,780
+questo servizio se il sistema avesse 
+memoria insufficiente.
+
+90
+00:06:27,780 --&gt; 00:06:31,660
+Inoltre, come ogni servizio, 
+il music playing service
+
+91
+00:06:31,660 --&gt; 00:06:37,240
+continuerà l'esecuzione anche se l'attività 
+client si sospende o termina.
+
+92
+00:06:37,240 --&gt; 00:06:38,864
+Guardiamo l'esecuzione dell'applicazione.
+
+93
+00:06:38,864 --&gt; 00:06:41,863
+[BLANK_AUDIO]
+
+94
+00:06:41,863 --&gt; 00:06:43,919
+Quindi, ecco il mio dispositivo.
+
+95
+00:06:43,919 --&gt; 00:06:49,113
+Ora, io inizierò il
+music player foreground service.
+
+96
+00:06:49,113 --&gt; 00:06:53,920
+Come potete vedere, ora ci sono due pulsanti
+visualizzati sul display.
+
+97
+00:06:53,920 --&gt; 00:06:59,740
+Quello superiore è etichettato Avvia servizio, e
+quello inferiore è etichettato Arresta servizio.
+
+98
+00:07:00,820 --&gt; 00:07:03,960
+Premendo questi tasti si avvia o si arresta un
+
+99
+00:07:03,960 --&gt; 00:07:07,370
+servizio  che è ospitato 
+da questa applicazione.
+
+100
+00:07:07,370 --&gt; 00:07:11,370
+Vorrei iniziare premendo il pulsante di avvio,
+e come
+
+101
+00:07:11,370 --&gt; 00:07:16,340
+si può sentire, quando premo il pulsante 
+di avvio, la musica inizia a suonare.
+
+102
+00:07:16,340 --&gt; 00:07:20,490
+Si nota anche che c'è una notifica
+ nella barra di stato.
+
+103
+00:07:22,010 --&gt; 00:07:23,860
+Ora, voglio uscire 
+da questa applicazione,
+
+104
+00:07:27,120 --&gt; 00:07:29,890
+e anche se ho terminato 
+l'applicazione
+
+105
+00:07:29,890 --&gt; 00:07:32,410
+si può vedere che il servizio 
+sta ancora eseguendo la musica.
+
+106
+00:07:33,870 --&gt; 00:07:37,270
+Ora, apriamo il notification
+drawer.
+
+107
+00:07:37,270 --&gt; 00:07:41,910
+E clicchiamo sul Notification View che
+riavvia l'applicazione.
+
+108
+00:07:43,530 --&gt; 00:07:47,170
+E ora premo il pulsante Stop Servizio
+che, come si può
+
+109
+00:07:47,170 --&gt; 00:07:51,230
+sentire, interrompe il servizio e 
+interrompe la musica.
+
+110
+00:07:52,330 --&gt; 00:07:54,380
+Diamo un'occhiata al codice sorgente 
+di questa applicazione.
+
+111
+00:07:55,750 --&gt; 00:07:58,640
+Ecco l'applicazione aperta nell'IDE.
+
+112
+00:07:58,640 --&gt; 00:08:04,970
+Vorrei iniziare aprendo Service Music
+ServiceClient, in onCreate.
+
+113
+00:08:04,970 --&gt; 00:08:09,324
+Questo codice crea innanzitutto un Intent, che
+sarà utilizzato per avviare il Musicservice.
+
+114
+00:08:10,470 --&gt; 00:08:15,956
+Poi il codice imposta il listener per i 
+pulsanti startButton e stopButton.
+
+115
+00:08:15,956 --&gt; 00:08:18,955
+Lo startButton ed il listener chiama il
+
+116
+00:08:18,955 --&gt; 00:08:24,810
+metodo StartService , passandogli
+musicServiceIntent.
+
+117
+00:08:24,810 --&gt; 00:08:27,435
+E il pulsante stopButton chiama 
+il metodo StopService
+
+118
+00:08:27,435 --&gt; 00:08:31,070
+passandogli lo stesso
+musicServiceIntent.
+
+119
+00:08:32,970 --&gt; 00:08:36,976
+Andiamo oltre e ora diamo un'occhiata
+alla classe MusicService.
+
+120
+00:08:39,270 --&gt; 00:08:43,630
+Qui in onCreate il codice inizia con
+la creazione di un nuovo MediaPlayer.
+
+121
+00:08:44,830 --&gt; 00:08:49,366
+poi collega ancheal MediaPlayer 
+nel CompletionListener,
+
+122
+00:08:49,366 --&gt; 00:08:53,780
+che interrompe il servizio quando la musica
+finisce la riproduzione.
+
+123
+00:08:54,980 --&gt; 00:08:59,460
+Ppi, il codice crea una zona 
+di notifica, così
+
+124
+00:08:59,460 --&gt; 00:09:03,410
+che l'utente può uscire dal client del 
+servizio del lettore musicale ,
+
+125
+00:09:03,410 --&gt; 00:09:06,390
+ma c'è ancora un modo per tornare al client
+
+126
+00:09:06,390 --&gt; 00:09:08,570
+per poter spegnere il lettore musicale.
+
+127
+00:09:10,650 --&gt; 00:09:14,730
+Proseguendo, il codice chiama il metodo
+startForeground.
+
+128
+00:09:14,730 --&gt; 00:09:18,130
+Che mette questo servizio in primo piano
+in modo che
+
+129
+00:09:18,130 --&gt; 00:09:22,010
+abbia meno probabilità di essere terminato 
+se il sistema ha bisogno di maggiori risorse.
+
+130
+00:09:23,130 --&gt; 00:09:26,840
+Il codice poi esegue l'override del 
+metodo onStartCommand.
+
+131
+00:09:28,070 --&gt; 00:09:31,990
+Questo metodo viene chiamato quando un client
+chiama il comando di avvio del servizio.
+
+132
+00:09:33,310 --&gt; 00:09:39,280
+Il codice in questo metodo di verifica
+se il lettore multimediale esiste
+
+133
+00:09:39,280 --&gt; 00:09:43,450
+e se sì, salva poi l'ID del comando
+iniziale corrente
+
+134
+00:09:43,450 --&gt; 00:09:48,370
+e poi fa riprodurre il brano dall'inizio
+dal Media Player.
+
+135
+00:09:50,030 --&gt; 00:09:53,520
+Questo metodo finisce restituendo un valore 
+che dice al sistema
+
+136
+00:09:53,520 --&gt; 00:09:57,730
+cosa fare se il servizio viene 
+terminato dal sistema.
+
+137
+00:09:57,730 --&gt; 00:10:04,280
+In questo caso, tale valore è
+START_NOT_STICKY.
+
+138
+00:10:04,280 --&gt; 00:10:06,680
+Il che significa che il sistema non dovrebbe
+
+139
+00:10:06,680 --&gt; 00:10:10,194
+riavviare automaticamente il servizio se
+viene fermato.
+
+140
+00:10:10,194 --&gt; 00:10:19,120
+[BLANK_AUDIO]
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture83:it&amp;oldid=24301">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture83:it&amp;oldid=24301</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

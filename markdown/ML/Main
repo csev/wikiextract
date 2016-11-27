@@ -1,0 +1,204 @@
+[[Category:AI|ML]]
+[[Category:Coursera]]
+[[Category:ML]]
+[[Category:Machine Learning]]
+Welcome to the ML wiki page!
+
+If you've recently solved a tough installation issue or gotten helpful advice about a review question, programming exercise, or the video lectures, please take some time to help out your fellow classmates by writing about it in the appropriate wiki page.
+
+Feel free to create pages as needed. To see how to edit or create a page, see "Help" on the left navbar.
+
+## Course Information
+
+This course is at an undergraduate level, likely situated in second or third year. The only major prerequisite is experience with at least one programming language. Octave and MATLAB are easily learned if you have programming experience. If not, plan to spend some extra time on the programming exercises. The course is not math-intensive, and all methods that use calculus are explained through use of "intuitions" for the non-expert.
+
+## Lecture Notes
+
+Different students have different learning styles, and having written notes to accompany the video lectures will be very useful to students who prefer learning by reading. Contributing to these notes will help those students, and will also help you internalize what you just learned!
+
+This paragraph formerly had a link to a set of lecture videos and presentation slides, from the original version of this course. But Coursera deleted all of the old course materials on June 30, 2016. So the lecture slides are no longer available.
+
+### Week 1
+
+* [[ML:Introduction|Introduction]]
+* [[ML:Linear Regression with One Variable|Linear Regression with One Variable]]
+* [[ML:Gradient Descent|Gradient Descent]]
+* [[ML:Linear Algebra Review|Linear Algebra Review (Optional)]]
+
+### Week 2
+
+* [[ML:Linear Regression with Multiple Variables|Linear Regression with Multiple Variables]]
+* [[ML:Octave Tutorial|Octave Tutorial]]
+
+### Week 3
+* [[ML:Logistic Regression|Logistic Regression]]
+* [[ML:Regularization|Regularization]]
+
+### Week 4
+* [[ML:Neural Networks: Representation|Neural Networks: Representation]]
+
+### Week 5
+* [[ML:Neural Networks: Learning|Neural Networks: Learning]]
+
+### Week 6
+* [[ML:Advice for Applying Machine Learning|Advice for Applying Machine Learning]]
+* [[ML:Machine Learning System Design|Machine Learning System Design]]
+
+### Week 7
+* [[ML:Support Vector Machines (SVMs)|Support Vector Machines (SVMs)]]
+
+### Week 8
+* [[ML:Clustering|Clustering]]
+* [[ML:Dimensionality Reduction|Dimensionality Reduction]]
+
+### Week 9
+* [[ML:Anomaly Detection|Anomaly Detection]]
+* [[ML:Recommender Systems|Recommender Systems]]
+
+### Week 10
+* [[ML:Large Scale Machine Learning|Large Scale Machine Learning]]
+
+### Transcripts of selected video lectures
+
+* [https://dl.dropboxusercontent.com/u/9722274/Monografias/OctTutV1b.pdf Octave Tutorial {{pdf}}], Andrew Ng, transcript written by Jose Soares Augusto, May 2012.
+* [https://dl.dropboxusercontent.com/u/9722274/Monografias/NN1.pdf Neural Networks {{pdf}}], Andrew Ng, transcript written by Jose Soares Augusto, June 2012.
+* [https://dl.dropboxusercontent.com/u/9722274/Monografias/SVM.pdf Support Vector Machines (SVM) {{pdf}}], Andrew Ng, transcript written by Jose Soares Augusto, June 2012.
+* [https://dl.dropboxusercontent.com/u/9722274/Monografias/KM1.pdf K-Means Clustering {{pdf}}], Andrew Ng, transcript written by Jose Soares Augusto, June 2012.  
+
+## Errata
+* [[ML:Errata: Week 1|Week 1 Errata]]
+* [[ML:Errata: Week 2|Week 2 and ex1 Errata]]
+* [[ML:Errata: Week 3|Week 3 and ex2 Errata]]
+* [[ML:Errata: Week 4|Week 4 and ex3 Errata]]
+* [[ML:Errata: Week 5|Week 5 and ex4 Errata]]
+* [[ML:Errata: Week 6|Week 6 and ex5 Errata]]
+* [[ML:Errata: Week 7|Week 7 and ex6 Errata]]
+* [[ML:Errata: Week 8|Week 8 and ex7 Errata]]
+* [[ML:Errata: Week 9|Week 9 and ex8 Errata]]
+* [[ML:Errata: Week 10|Week 10 Errata]]
+
+## Review Questions (Quizzes)
+
+Stuck on a question's wording? Without giving away the answers, help out your classmates by clarifying things on these pages.
+
+* [[ML:Review Questions: Introduction|Introduction]]
+* [[ML:Review Questions: Linear Regression with One Variable|Linear Regression with One Variable]]
+* [[ML:Review Questions: Linear Algebra Review|Linear Algebra Review]]
+* [[ML:Review Questions: Linear Regression with Multiple Variables|Linear Regression with Multiple Variables]]
+* [[ML:Review Questions: Support Vector Machines|Support Vector Machines]]
+* [[ML:Review Questions: Octave Tutorial|Octave Tutorial]]
+
+## Programming Exercises
+
+Did you figure out an installation issue, or solve a tricky part of the exercise? Tell your classmates about it here!
+
+Note: You absolutely must use a text editor to modify the .m files (such as Notepad). Do not use a word processor (such as WordPad).
+
+* [[ML:Programming Exercise 1:Linear Regression|Programming Exercise 1: Linear Regression]]
+* [[ML:Programming Exercise 2:Logistic Regression|Programming Exercise 2: Logistic Regression]]
+* [[ML:Programming Exercise 3:Multi-class Classification and Neural Networks|Programming Exercise 3: Multi-class Classification and Neural Networks]]
+* [[ML:Programming Exercise 4:Neural Networks Learning|Programming Exercise 4: Neural Networks Learning]]
+* [[ML:Programming Exercise 5:Regularized Linear Regression and Bias vs Variance|Programming Exercise 5: Regularized Linear Regression and Bias vs Variance]]
+* [[ML:Programming Exercise 6:Support Vector Machines|Programming Exercise 6: Support Vector Machines]]
+* [[ML:Programming Exercise 7:K-Means Clustering and PCA|Programming Exercise 7: K-Means Clustering and PCA]]
+* [[ML:Programming Exercise 8:Anomaly Detection and Recommender Systems|Programming Exercise 8: Anomaly Detection and Recommender Systems]]
+
+## Installation Issues
+* [[ML:Octave Installation|Octave Installation]]
+* [[ML:Technical Support|Watching the videos]]
+
+## Useful resources for further study
+
+* [[ML: Useful Resources|Useful Resources]]
+* [[ML: Classify your own images|Classify your own images]]
+
+##Insights
+* [[Initial Ones Feature Vector]]
+
+## Subtitles
+
+* [[ML:Subtitles]]
+* [[ML:Trailer]]
+
+## Tips for Octave on OS X
+### Try installing a later version of Octave than the one recommended on the course content (3.8.0). 
+http://wiki.octave.org/Octave\_for\_MacOS\_X. Under "Installing a Mac OS X Bundle," you can click on "download Octave 4.0.3 with Graphical User Interface."
+### Error message "unknown or ambiguous terminal type"
+A) Try changing the terminal type with this command, for any of "qt", "x11", or "aqua":
+
+    setenv("GNUTERM","qt")
+
+Alternatively you can install the AquaTerm backend from SourceForge:
+http://sourceforge.net/projects/aquaterm/
+
+and then reinstalling GNUplot with Aqua terminal support:
+
+    brew uninstall gnuplot
+    brew install gnuplot --with-aquaterm
+
+B) You may also try this:
+
+    brew uninstall fontconfig
+    brew install fontconfig --universal
+    brew uninstall gnuplot
+    brew install gnuplot --with-qt
+
+... then add this to ~/.octaverc
+
+    setenv("GNUTERM","qt")
+
+### The hist() or plot () function hangs
+It's not really hung - on some distributions of Octave, the first plotting function you call causes the font library to generated. This can take a minute or so the first time, then after that the plotting functions will work much faster.
+
+Alternatively if Octave still does not respond after some time, you may have to change your fontconfig. I also installed gnuplot with-x11 and changed the file octaverc. These are the terminal commands:
+
+    brew install fltk
+    brew install gnuplot --with-x11
+    brew uninstall fontconfig
+    brew install fontconfig --universal
+
+    then edit /usr/local/share/octave/site/m/startup/octaverc , put this in the file
+
+  -------- (start copy) --------
+
+    setenv ("GNUTERM", "X11")
+    gnuplot_binary("/usr/local/bin/gnuplot")
+    graphics_toolkit('gnuplot')
+
+  -------- (end copy) --------
+
+save the file and start octave
+
+verify by running:
+
+    available_graphics_toolkits        % this will show the available graphics toolkits that can be loaded
+    loaded_graphics_toolkits           % this will show the graphics toolkit that is currently loaded
+
+other useful command examples:
+    
+    register_graphics_toolkit("fltk")  % this will add the fltk graphics toolkit to the available graphics toolkits list
+    graphics_toolkit("qt")             % this will load the qt graphics toolkit
+        
+
+### Errors when editing ex1 "plotData.m"
+
+If you get an error like: 
+
+    error: invalid character '�' (ASCII 226) near line 14, column 14
+
+Then try to uncheck the TextEdit Preference - Smart quotes and Smart dashes; then use double quotes(") instead of single quotes(')
+
+### Try Using Vagrant and Virtualbox
+If you are using OS X (and some brands of Linux), you can have a lot of trouble getting the visualizations to work natively. One solution is to turn to virtualization; you can find a vagrant file that gets an ubuntu machine configured in virtual box, along with scripts to make this feel like a native OS X app here: 
+http://deepneural.blogspot.fr/p/welcome.html
+Another script can be found here, but this one is just the Vagrant file and does not have all the nice OS X scripts bundled with it. 
+https://gist.github.com/Starefossen/9353638
+
+You'll additionally need virtualbox and vagrant to go down this route, which are thankfully both free. 
+https://www.virtualbox.org
+https://www.vagrantup.com
+
+You'll need an X server, which you almost certainly are using in Linux already, but does not come out of the box with OS X.
+OS X users can get it here: http://www.xquartz.org
+
+## Categories

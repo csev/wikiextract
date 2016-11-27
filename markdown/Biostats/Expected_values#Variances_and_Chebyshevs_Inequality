@@ -1,0 +1,49 @@
+[[Category:Biostatistics|Expected values]]
+[[Biostats:Main]]
+
+Expected values
+---------------
+
+Expected value of a discrete random variable:
+
+$$E[X] = \displaystyle\sum_{x} x p(x)$$
+
+Expected value of a continuous random variable:
+
+$$\displaystyle E[X] = \int^{\infty}_{-\infty} t f(t)\,dt$$
+
+Rules about expected values
+---------------------------
+
+Expected values are linear operators:
+
+$$E [a X + b] = a E [X] + b$$
+
+$$E [X + Y] = E [X] + E [Y]$$
+
+>where *a* and *b* are constants and *X* and *Y* are random variables (discrete or continuous or one of each)
+
+In general, $$E [g (X )] \neq g (E [X ])$$ if *g* is function that is not linear.
+
+Variances and Chebyshev's Inequality
+-----------------------------------
+
+####Variance
+
+$$Var(X ) = E [(X − \mu)^{2} ]$$
+
+> where X is a random variable with mean *µ*
+
+Some properties of variance (aka $$\sigma^{2}$$):
+
+$$Var(X ) = E [X^{2} ] − E [X ]^{2}$$ (note that $$E[X] = \mu$$)
+
+$$Var(a X) = a^{2} Var(X)$$
+
+> where *a* is a constant
+
+The **Standard Deviation** is the square root of the variance.
+
+####Chebyshev's Inequality
+
+$$P(|X − \mu | \geq k \sigma) \leq \frac {1}{k^{2}}$$

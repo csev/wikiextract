@@ -1,0 +1,163 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Dimensionality Reduction</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Motivation_I:_Data_Compression"><span class="tocnumber">1</span> <span class="toctext">Motivation I: Data Compression</span></a></li>
+<li class="toclevel-1"><a href="#Motivation_II:_Visualization"><span class="tocnumber">2</span> <span class="toctext">Motivation II: Visualization</span></a></li>
+<li class="toclevel-1"><a href="#Principal_Component_Analysis_Problem_Formulation"><span class="tocnumber">3</span> <span class="toctext">Principal Component Analysis Problem Formulation</span></a></li>
+<li class="toclevel-1"><a href="#Principal_Component_Analysis_Algorithm"><span class="tocnumber">4</span> <span class="toctext">Principal Component Analysis Algorithm</span></a></li>
+<li class="toclevel-1"><a href="#Reconstruction_from_Compressed_Representation"><span class="tocnumber">5</span> <span class="toctext">Reconstruction from Compressed Representation</span></a></li>
+<li class="toclevel-1"><a href="#Choosing_the_Number_of_Principal_Components"><span class="tocnumber">6</span> <span class="toctext">Choosing the Number of Principal Components</span></a></li>
+<li class="toclevel-1"><a href="#Advice_for_Applying_PCA"><span class="tocnumber">7</span> <span class="toctext">Advice for Applying PCA</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Motivation_I:_Data_Compression">Motivation I: Data Compression</span></h1>
+<ul>
+<li>We may want to reduce the dimension of our features if we have a lot of redundant data.
+
+<ul>
+<li>To do this, we find two highly correlated features, plot them, and make a new line that seems to describe both features accurately. We place all the new features on this single line.</li>
+</ul></li>
+</ul>
+<p>Doing dimensionality reduction will reduce the total data we have to store in computer memory and will speed up our learning algorithm.</p>
+<p>Note: in dimensionality reduction, we are reducing our features rather than our number of examples. Our variable $$m$$ will stay the same size; $$n$$, the number of features each example from $$x^{(1)}$$ to $$x^{(m)}$$ carries, will be reduced.</p>
+<h1> <span class="mw-headline" id="Motivation_II:_Visualization">Motivation II: Visualization</span></h1>
+<p>It is not easy to visualize data that is more than three dimensions. We can reduce the dimensions of our data to 3 or less in order to plot it.</p>
+<p>We need to find new features, $$z&#95;1, z&#95;2$$ (and perhaps $$z&#95;3$$) that  can effectively <strong>summarize</strong> all the other features. </p>
+<p>Example: hundreds of features related to a country's economic system may all be combined into one feature that you call "Economic Activity."</p>
+<h1> <span class="mw-headline" id="Principal_Component_Analysis_Problem_Formulation">Principal Component Analysis Problem Formulation</span></h1>
+<p>The most popular dimensionality reduction algorithm is <em>Principal Component Analysis</em> (PCA)</p>
+<p><strong>Problem formulation</strong></p>
+<p>Given two features, $$x&#95;1$$ and $$x&#95;2$$, we want to find a single line that effectively describes both features at once. We then map our old features onto this new line to get a new single feature.</p>
+<p>The same can be done with three features, where we map them to a plane.</p>
+<p>The <strong>goal of PCA</strong> is to <strong>reduce</strong> the average of all the distances of every feature to the projection line. This is the <strong>projection error</strong>.</p>
+<blockquote>
+  <p>Reduce from 2d to 1d: find a direction (a vector $$u^{(1)} \in \mathbb{R}^n$$) onto which to project the data so as to minimize the projection error.</p>
+</blockquote>
+<p>The more general case is as follows:</p>
+<blockquote>
+  <p>Reduce from n-dimension to k-dimension: Find $$k$$ vectors $$u^{(1)}, u^{(2)}, \dots, u^{(k)}$$ onto which to project the data so as to minimize the projection error.</p>
+</blockquote>
+<p>If we are converting from 3d to 2d, we will project our data onto two directions (a plane), so $$k$$ will be 2.</p>
+<p><strong>PCA is not linear regression</strong></p>
+<ul>
+<li>In linear regression, we are minimizing the <strong>squared error</strong> from every point to our predictor line. These are vertical distances.</li>
+<li>In PCA, we are minimizing the <strong>shortest distance</strong>, or shortest <em>orthogonal</em> distances, to our data points.</li>
+</ul>
+<p>More generally, in linear regression we are taking all our examples in $$x$$ and applying the parameters in $$\Theta$$ to predict $$y$$. </p>
+<p>In PCA, we are taking a number of features $$x&#95;1, x&#95;2, \dots, x&#95;n$$, and finding a closest common dataset among them. We aren't trying to predict any result and we aren't applying any theta weights to the features.</p>
+<h1> <span class="mw-headline" id="Principal_Component_Analysis_Algorithm">Principal Component Analysis Algorithm</span></h1>
+<p>Before we can apply PCA, there is a data pre-processing step we must perform:</p>
+<p><strong>Data preprocessing</strong></p>
+<blockquote>
+  <p>Given training set: $$x^{(1)}, x^{(2)}, \dots, x^{(m)}$$</p>
+  <p>Preprocess (feature scaling/mean normalization):</p>
+  <p>$$\mu&#95;j = \dfrac{1}{m}\sum^m&#95;{i=1}x&#95;j^{(i)}$$</p>
+  <p>Replace each $$x&#95;j^{(i)}$$ with $$x&#95;j^{(i)} - \mu&#95;j$$</p>
+  <p>If different features on different scales (e.g., $$x&#95;1 = $$ size of house, $$x&#95;2 = $$ number of bedrooms), scale features to have comparable range of values.</p>
+</blockquote>
+<p>Above, we first subtract the mean of each feature from the original feature. Then we scale all the features ($$x&#95;j^{(i)} = \dfrac{x&#95;j^{(i)} - \mu&#95;j}{s&#95;j}$$)</p>
+<p>We can define specifically what it means to reduce from 2d to 1d data as follows:</p>
+<p>$$x^{(i)} \in \mathbb{R}^2 \rightarrow z^{(i)} \in \mathbb{R}$$</p>
+<p>The $$z$$ values are all real numbers and are the projections of our features onto $$u^{(1)}$$.</p>
+<p>So, PCA has two tasks: figure out $$u^{(1)},\dots,u^{(k)}$$ and also to find $$z&#95;1, z&#95;2, \dots, z&#95;m$$.</p>
+<p>The mathematical proof for the following procedure is complicated and beyond the scope of this course.</p>
+<p><strong>1. Compute "covariance matrix"</strong></p>
+<p>$$
+\large
+\Sigma = \dfrac{1}{m}\sum^m&#95;{i=1}(x^{(i)})(x^{(i)})^T
+$$</p>
+<p>This can be vectorized in Octave as:</p>
+<code><pre>Sigma = (1/m) * X' * X;
+</pre></code>
+<p>We denote the covariance matrix with a capital sigma (which happens to be the same symbol for summation, confusingly---they represent entirely different things).</p>
+<p>Note that $$x^{(i)}$$ is an $$n \times 1$$ vector, $$(x^{(i)})^T$$ is an $$1 \times n$$ vector and $$X$$ is a $$m \times n$$ matrix (row-wise stored examples). The product of those will be an $$n \times n$$ matrix, which are the dimensions of $$\Sigma$$.</p>
+<p><strong>2. Compute "eigenvectors" of covariance matrix $$\Sigma$$</strong></p>
+<code><pre>[U,S,V] = svd(Sigma);
+</pre></code>
+<p>svd() is the 'singular value decomposition', a built-in Octave function. </p>
+<p>What we actually want out of svd() is the 'U' matrix of the Sigma covariance matrix: $$U \in \mathbb{R}^{n \times n}$$. U contains $$u^{(1)},\dots,u^{(n)}$$, which is exactly what we want.</p>
+<p><strong>3. Take the first $$k$$ columns of the U matrix and compute $$z$$</strong></p>
+<p>We'll assign the first $$k$$ columns of U to a variable called 'Ureduce'. This will be an $$n \times k$$ matrix. We compute z with: </p>
+<p>$$
+\large
+z^{(i)} = Ureduce^T \cdot x^{(i)}
+$$</p>
+<p>$$Ureduce^T$$ will have dimensions $$k \times n$$ while $$x^{(i)}$$ will have dimensions $$n \times 1$$. The product $$Ureduce^T \cdot x^{(i)}$$ will have dimensions $$k \times 1$$.</p>
+<p>To summarize, the whole algorithm in octave is roughly:</p>
+<code><pre>Sigma = (1/m) * X' * X; &#160;% compute the covariance matrix
+[U,S,V] = svd(Sigma);   &#160;% compute our projected directions
+Ureduce = U(:,1:k);     &#160;% take the first k directions
+Z = X * Ureduce;        &#160;% compute the projected data points
+</pre></code>
+<h1> <span class="mw-headline" id="Reconstruction_from_Compressed_Representation">Reconstruction from Compressed Representation</span></h1>
+<p>If we use PCA to compress our data, how can we uncompress our data, or go back to our original number of features?</p>
+<p>To go from 1-dimension back to 2d we do: $$z \in \mathbb{R} \rightarrow x \in \mathbb{R}^2$$.</p>
+<p>We can do this with the equation: $$x&#95;{approx}^{(1)} = U&#95;{reduce} \cdot z^{(1)}$$.</p>
+<p>Note that we can only get approximations of our original data.</p>
+<p>Note: It turns out that the U matrix has the special property that it is a Unitary Matrix. One of the special properties of a Unitary Matrix is:</p>
+<p>$$U^{-1} = U^∗$$ where the "*" means "conjugate transpose".</p>
+<p>Since we are dealing with real numbers here, this is equivalent to:</p>
+<p>$$U^{-1} = U^T$$
+So we could compute the inverse and use that, but it would be a waste of energy and compute cycles.</p>
+<h1> <span class="mw-headline" id="Choosing_the_Number_of_Principal_Components">Choosing the Number of Principal Components</span></h1>
+<p>How do we choose $$k$$, also called the <em>number of principal components</em>? Recall that $$k$$ is the dimension we are reducing to.</p>
+<p>One way to choose $$k$$ is by using the following formula:</p>
+<blockquote>
+  <p>Given the average squared projection error: $$\dfrac{1}{m}\sum^m&#95;{i=1}||x^{(i)} - x&#95;{approx}^{(i)}||^2$$</p>
+  <p>Also given the total variation in the data: $$\dfrac{1}{m}\sum^m&#95;{i=1}||x^{(i)}||^2$$</p>
+  <p>Choose $$k$$ to be the smallest value such that: $$\large \dfrac{\dfrac{1}{m}\sum^m&#95;{i=1}||x^{(i)} - x&#95;{approx}^{(i)}||^2}{\dfrac{1}{m}\sum^m&#95;{i=1}||x^{(i)}||^2} \leq 0.01$$ (1%)</p>
+</blockquote>
+<p>In other words, the squared projection error divided by the total variation should be less than one percent, so that <strong>99% of the variance is retained</strong>. </p>
+<p><strong>Algorithm for choosing $$k$$</strong></p>
+<ol>
+<li>Try PCA with $$k = 1, 2, \dots$$</li>
+<li>Compute $$U&#95;{reduce}, z, x$$</li>
+<li>Check the formula given above that 99% of the variance is retained. If not, go to step one and increase $$k$$.</li>
+</ol>
+<p>This procedure would actually be horribly inefficient. In Octave, we will call svd:</p>
+<code><pre>[U,S,V] = svd(Sigma)
+</pre></code>
+<p>Which gives us a matrix S. We can actually check for 99% of retained variance using the S matrix as follows:</p>
+<p>$$
+\dfrac{\sum&#95;{i=1}^kS&#95;{ii}}{\sum&#95;{i=1}^nS&#95;{ii}} \geq 0.99
+$$</p>
+<h1> <span class="mw-headline" id="Advice_for_Applying_PCA">Advice for Applying PCA</span></h1>
+<p>The most common use of PCA is to speed up supervised learning.</p>
+<p>Given a training set with a large number of features (e.g. $$x^{(1)},\dots,x^{(m)} \in \mathbb{R}^{10000}$$) we can use PCA to reduce the number of features in each example of the training set (e.g. $$z^{(1)},\dots,z^{(m)} \in \mathbb{R}^{1000}$$).</p>
+<p>Note that we should define the PCA reduction from $$x^{(i)}$$ to $$z^{(i)}$$ <strong>only on the training set</strong> and not on the cross-validation or test sets. You can apply the mapping $$z^{(i)}$$ to your cross-validation and test sets after it is defined on the training set.</p>
+<p><strong>Applications</strong>
+<ul><li> Compressions
+<ul><li> Reduce space of data
+</li><li> Speed up algorithm
+</li></ul>
+</li><li> Visualization of data
+<ul><li> Choose k = 2 or k = 3</p>
+</li></ul>
+</li></ul>
+
+<p><strong>Bad use of PCA</strong>: trying to prevent overfitting. We might think that reducing the features with PCA would be an effective way to address overfitting. It might work, but is not recommended because it does not consider the values of our results $$y$$. Using just regularization will be at least as effective.</p>
+<p>Don't assume you need to do PCA. <strong>Try your full machine learning algorithm without PCA first.</strong> Then use PCA if you find that you need it.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Anomaly_Detection" title="ML:Anomaly Detection">Anomaly Detection</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 38/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Dimensionality_Reduction&amp;oldid=34224">https://share.coursera.org/wiki/index.php?title=ML:Dimensionality_Reduction&amp;oldid=34224</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

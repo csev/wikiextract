@@ -1,0 +1,43 @@
+This is the wiki home page for the Experimental Genome Science course (Fall '12), by Professors John Hogenesch and John Murray.
+
+<span style='font-weight:bold;'>Welcome to Experimental Genome Science</span>
+The goal of this course is to provide you with the basics and exposure to many of the different technologies and applications of genomics and proteomics. We will take you through genome sequence, expression profiling, genetics, including clinical genetics, proteomics, and along the way touch on several application areas. Although there are many interesting computational issues associated with these methods and applications, we will primarily focus on experimental issues.
+
+This course is aimed at the entry-level graduate student. Over the years, upper-level undergrads and graduate students from other disciplines have also done well in the course.  At a minimum you’ll need a strong understanding of molecular biology. For students with a computational background, we will introduce how the data are generated, what they are generally used for, and discuss issues of interpretation. It's hard to compute on data when you don't know how it's generated. For the experimentalist, we will give you an overview of many different methodologies and how they are applied at scale. Even if you are expert in one or 2 of these methods, it's doubtful that you are in all of them. None of us are. <br>
+
+
+
+### The Genome 
+1. [[Genomescience:History and Background of the Human Genome Project|History and Background of the Human Genome Project]] (1)
+2. [[Genomescience:The Human Genome Project|The Human Genome Project]] (2)
+3. [[Genomescience:Next Generation Sequencing|Next Generation Sequencing]] (3)
+4. [[Genomescience:Large-scale Genomics Projects|Large-scale Genomics Projects]] (4)
+
+### Genetics in the Genome Era
+1. [[Genomescience:Genomic Inheritance|Genomic Inheritance]] (5)
+2. [[Genomescience:Forward Genetic Screens|Forward Genetic Screens]] (6)
+3. Reverse Genetic Screens (7)
+4. Clinical Genetics (8)
+
+### Functional Genomics
+1. In Vivo/Model Organism Genomics (9)
+2. [[Genomescience:RNA Expression Analysis and Arrays|RNA Expression Analysis and Arrays]] (10)
+3. [[Genomescience:RNA Sequence and Splicing Analysis|RNA Sequence and Splicing Analysis]] (11)
+4. [[Genomescience:Epigenomics and Transcriptional Regulation|Epigenomics and Transcriptional Regulation]] (12)
+5. [[Genomescience:ncRNA Structure and Function|ncRNA Structure and Function]] (13)
+
+### Plasmodium Genomics
+1. [[Genomescience:Plasmodium Genomics I|Plasmodium Genomics I]] (20)
+2. [[Genomescience:Plasmodium Genomics II|Plasmodium Genomics II]] (21)
+
+### Lectures Not Yet Categorized
+
+* Integrative genomics (14)
+* Systems biology approaches (15)
+* Single molecule genomics (16)
+* Single cell genomics (17)
+* Introduction to proteomics (18)
+* Advanced proteomics (19)
+
+[[Category:Coursera]]
+[[Category:Biology]]

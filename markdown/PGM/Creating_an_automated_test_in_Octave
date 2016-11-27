@@ -1,0 +1,62 @@
+You might want to create a set of automated tests so that every time you make a change you can quickly check that you haven't broken anything.
+
+The course staff have already provided all the samples needed for this test suite. For example, in assignment 2 the samples reside in `sampleGeneticNetworks.m`.
+
+To turn it into an automated test, first create `CompareFactors.m` with the following content:
+
+    function CompareFactors(expected, actual)
+
+    epsilon = 1e-4;
+
+    different = 0;
+
+    if ~all(size(expected.var) == size(actual.var))
+        warning('Different variables!');
+        expected.var, actual.var
+        different = 1;	
+    elseif ~all(expected.var == actual.var)
+        warning('Different variables!');
+        expected.var, actual.var
+        different = 1;
+    end
+
+    if ~all(size(expected.card) == size(actual.card))
+        warning('Different cardinalities!');
+        expected.card, actual.card
+        different = 1;
+    elseif ~all(expected.card == actual.card)
+        warning('Different cardinalities!');
+        expected.card, actual.card
+        different = 1;
+    end
+
+    if length(expected.val) == length(actual.val) && max(abs(expected.val - actual.val)) <= epsilon
+        disp('Same vals');
+    else
+        disp('Different vals');
+        different = 1;
+    end
+
+    if different
+        disp([inputname(1), ':'])
+        expected
+        disp([inputname(2), ':'])
+        actual
+    end
+
+Now if in sampleGeneticNetworks.m you have e.g. the following lines:
+
+    phenotypeFactor = struct('var', [3,1], 'card', [2,3], 'val', [1,0,1,0,0,1]); % Comment out this line for testing
+    % phenotypeFactor = phenotypeGivenGenotypeMendelianFactor(isDominant, genotypeVar, phenotypeVar);
+
+Replace them with
+
+    expPhenotypeFactor = struct('var', [3,1], 'card', [2,3], 'val', [1,0,1,0,0,1]); % Comment out this line for testing
+    actPhenotypeFactor = phenotypeGivenGenotypeMendelianFactor(isDominant, genotypeVar, phenotypeVar);
+    CompareFactors(expPhenotypeFactor, actPhenotypeFactor);
+
+Here, you assign the result of your function to one variable and the given correct answer to another. The new function, `CompareFactors`, either prints `Same vals` or an error message. Add similar calls to `CompareFactors` for all functions to be tested.
+
+Note that the output of `constructGeneticNetwork` should be compared not to `load('sampleFactorList.mat')` but to `load('sampleFactorList.mat').sampleFactorList`. Also, you have to loop over the individual factors.
+
+Now you are all set. Type `CompareFactors` in Octave. If everything is OK, you should see many lines with `Same vals`. If not, the error message will include the external names of the parameters, such as `expPhenotypeFactor` and `actPhenotypeFactor`, and this way you will know which function produced an incorrect result.

@@ -1,0 +1,25 @@
+## Last question
+
+I am confused with the answers I received for the last question! I believe there is only one correct answer, but the system told me there are three correct answers. Is this OK?
+
+### Answer
+
+The last question is as follows:  
+
+Let A and B be 3x3 (square) matrices. Which of the following must necessarily hold true?  
+Is this the question you are referring to?  
+This has two correct answers.
+
+When given space to type the answer, just enter the answer -- don't "show your work". (I did and the computer graded it wrong with the correct answer shown on other side of equal sign!)
+
+There were two correct answers in the options I was given. If my memory holds good, one was A+B=B+A and the other one was (A*B)*A=A*(B*A)
+
+## Writing matrices
+
+I don't know how to write the answer to question 4. I tried to represent a 1x3 matrix by writing [10 20 -15] (not the actual numbers). The results came back as wrong, but it gave no explanation, so I don't know if my calculations or my syntax are inaccurate.
+
+### Answer
+
+I had this same issue at first.  Double-check the expected dimensions of your matrix multiplication.  Hint: if *A* is a matrix with dimensions *n*x*m* and *B* is a matrix with dimensions *m*x*p*, what will be the dimensions of the product *AB*?
+
+Please note that system also expects you to input a single real number instead of a 1x1 matrix. This is not correct (since number is not the same as a 1x1 matrix), but this is how checking works (as of November 4th, 2015).

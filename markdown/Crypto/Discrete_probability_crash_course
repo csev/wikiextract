@@ -1,0 +1,90 @@
+### Discrete Probability (crash course)
+**Discrete Probability examples:**
+
+U: finite set (e.g. U = {0,1}<sup>n</sup> is the set of all possible combinations of n bits {0,1}<sup>2</sup> equals {00, 01, 10, 11})
+
+|U| = the size of U = 4
+
+#### Probability distribution
+Def: **[Probability distribution](http://en.wikipedia.org/wiki/Probability_distribution)** P over U is a function P: U -> [0,1]
+
+It assigns to every element in U a number between 0 and 1, defining the weight (or probabilty) of that particular element in the universe U.
+
+$$\displaystyle\sum\limits_{x \in U} P(x)=1$$
+
+The sum of weights of all elements x in the universe U must sum up to 1.
+
+**Examples:**
+
+1.  Uniform distribution: for all $$\displaystyle x \in U:  P(x)=1 / |U|$$  
+
+    The uniform distribution assigns to every element X in the universe exactly 
+    the same weight. e.g.: {00 = 1/4, 01 = 1/4, 10 = 1/4, 00 = 1/4}
+
+2.  Point distribution at x<sub>0</sub>: P(x<sub>0</sub>) = 1, $$\forall$$x$$\neq$$x<sub>0</sub>: P(x) = 0
+
+    We assign the weight 1 to x<sub>0</sub> and to all other points x in U we assign the weight 0
+
+The universe U will always be a finite set, so we can write down the weights that the distribution assigns to every element and represent the entire distribution as a vector.
+
+**Distribution vector:** (P(000), P(001), P(010),...,P(111)) for the universe of all three bit strings, a vector of dimension eight (all possible strings of three bits)
+
+#### Events
+* For a set $$A \subseteq U$$: $$Pr[A] = \sum\limits_{x \in A} P(x) \in [0,1]$$ note: Pr[U] = 1
+
+For a subset A of our universe U the probability Pr[A] for A is the sum of the weights of all elements in this set A.
+
+* The subset A is called an event
+
+**Example:**
+
+The universe U={0, 1}<sup>8</sup> (all 8 bit strings {00000000, 00000001,...,11111111}
+
+|U|= 256
+
+* A = {all x in U such that lsb<sub>2</sub>=11}  $$\subseteq U$$ -> find the probability where all lsb (least significant bits) = 11 for the uniform distribution on {0, 1}<sup>8</sup>
+
+11111101 is an element that's not in set A (lsb = 01)  
+while  11111111 would be an element in A
+
+Pr[A] = 64 x 1/256 =  1/4  
+
+#### The union bound
+
+For Events A<sub>1</sub> and A<sub>2</sub>
+
+$$Pr[A_{1} \cup A_{2}] \le Pr[A_{1}] + Pr[A_{2}]$$  
+What is the probability that either A<sub>1</sub> or A<sub>2</sub> occurs? What is the probability of the union of these two events?  
+The probability is less or equal than the sum of those probabilities. As an example if A<sub>1</sub> is the probability that a die roll results in 1 or 2 and A<sub>2</sub> is the probability that it results in 2 or 3, the sum would be {1,2} + {2,3} = {1/6 + 1/6} + {1/6 + 1/6} = 4/6 = 2/3. But since the number 2 appears in both sets it is counted twice. That for the actual probability for the union bound of those two events is only 1/2.  
+In the simple case that the two probabilities are disjoint (have no elements in common), the probability that either of them happens is exactly equal to the sum of the probabilities $$Pr[A_{1} \cap A_{2}] = \oslash => Pr[A_{1}] + Pr[A_{2}]$$  
+
+**Example:**
+
+$$Pr[ A_{1} ] = \lbrace all\ x\ in\ \lbrace 0,1 \rbrace^n\ s.t.\ lsb_{2}(x)=11 \rbrace$$  
+$$Pr[ A_{2} ] = \lbrace all\ x\ in\ \lbrace 0,1 \rbrace^n\ s.t.\ msb_{2}(x)=11 \rbrace$$
+
+$$Pr[ lsb_{2}(x)=11\ or\ msb_{2}(x)=11 ]\ =\ Pr[A_{1} \cup A_{2}]\ \le\ 1/4 + 1/4 = 1/2$$  
+What is the probability that either the least two significant bits of a string are 11 or the most significant bits are 11?
+
+#### Random variables
+
+Def: A random variable X is a function X:U -> V  
+A function X from the universe U into a set V. The set V is the place where the random variable takes its values.
+
+#### The uniform random variable
+
+
+#### Independence
+
+**Def:** events A and B are independent if $$P[A\ and\ B]\ =\ P[A] \cdot P[B]$$  
+If you know that event A happened you know nothing about if event B happened or not.  
+Random variables X,Y taking values in V are independent if  
+$$ \forall a,b\in V:\ Pr[X=a\ and\ Y=b]\ =\ Pr[X=a]\ \cdot\ Pr[Y=b] $$
+
+**Example:**  
+$$ U=\lbrace 0,1 \rbrace ^2=\lbrace 00,01,10,11\rbrace\ and\ r \overset{R}{\gets} U $$
+Define random variables X and Y as: X=lsb(r), Y=msb(r)  
+$$Pr[X=0\ and\ Y=0]\ =\ Pr[r=00]\ =\ 1/4\ =\ Pr[X=0]\ \cdot\ Pr[Y=0]\ =\ 1/2\ \cdot\ 1/2$$ 
+
+#### Review: XOR
+XOR in two strings {0,1}<sup>2</sup> is their bit-wise addition mod 2

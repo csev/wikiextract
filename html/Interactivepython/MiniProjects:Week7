@@ -1,0 +1,116 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Interactivepython:MiniProjects:Week7</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_7_Mini-project"><span class="tocnumber">1</span> <span class="toctext">Week 7 Mini-project</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Spaceship"><span class="tocnumber">1.1</span> <span class="toctext">Spaceship</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Mini-project_development_process"><span class="tocnumber">1.1.1</span> <span class="toctext">Mini-project development process</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Phase_one_-_Spaceship"><span class="tocnumber">1.1.1.1</span> <span class="toctext">Phase one - Spaceship</span></a></li>
+<li class="toclevel-4"><a href="#Phase_two_-_Rocks"><span class="tocnumber">1.1.1.2</span> <span class="toctext">Phase two - Rocks</span></a></li>
+<li class="toclevel-4"><a href="#Phase_three_-_Missiles"><span class="tocnumber">1.1.1.3</span> <span class="toctext">Phase three - Missiles</span></a></li>
+<li class="toclevel-4"><a href="#Phase_four_-_User_interface"><span class="tocnumber">1.1.1.4</span> <span class="toctext">Phase four - User interface</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Grading_rubric_-_20_pts_total_.28scaled_to_100_pts.29"><span class="tocnumber">1.1.2</span> <span class="toctext">Grading rubric  - 20 pts total (scaled to 100 pts)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_7_Mini-project">Week 7 Mini-project</span></h1>
+<h2> <span class="mw-headline" id="Spaceship">Spaceship</span></h2>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=22">original source</a></p>
+<p>In our last two mini-projects, we will build a 2D space game <em>RiceRocks</em> that is inspired by the classic arcade game <em>Asteroids</em> (1979).  <em>Asteroids</em> is a relatively simple game by today's standards, but was still immensely popular during its time. (Joe spent countless quarters playing it.)  In the game, the player controls a spaceship via four buttons: two buttons that rotate the spaceship clockwise or counterclockwise (independent of its current velocity), a thrust button that accelerates the ship in its forward direction and a fire button that shoots missiles.
+Large asteroids spawn randomly on the screen with random velocities.  The player's goal is to destroy these asteroids before they strike the player's ship.  In the arcade version, a large rock hit by a missile split into several fast moving small asteroids that themselves must be destroyed.  Occasionally, a flying saucer also crosses the screen and attempts to destroy the player's spaceship.  Searching for "asteroids arcade" yields links to multiple versions of <em>Asteroids</em> that are available on the web (including an updated version by <em>Atari</em>, the original creator of <em>Asteroids</em>).</p>
+<h3> <span class="mw-headline" id="Mini-project_development_process">Mini-project development process</span></h3>
+<p>For this mini-project, you will implement a working spaceship plus add a single asteroid and a single missile.  We have provided art for your game so its look and feel is that of a more modern game.  You should begin by loading the <a rel="nofollow" class="external text" href="http://www.codeskulptor.org/#examples-spaceship_template.py">program template</a>. The program template includes all necessary image and audio files. Unfortunately, no audio format is supported by all major browsers so we have decided to provided sounds in the <code>mp3</code> format which is supported by Chrome (but not Firefox).  <b>We highly recommend using Chrome for the last two weeks of the class.</b>  We have found that Chrome typically has better performance on games with more substantial drawing requirements and standardization on a common browser will make peer assessing projects more reliable.</p>
+<h4> <span class="mw-headline" id="Phase_one_-_Spaceship">Phase one - Spaceship</span></h4>
+<p>In this phase, you will implement the control scheme for the spaceship.This includes a complete Spaceship class and the appropriate keyboard handlers to control the spaceship. Your spaceship should behave as follows:</p>
+<ul>
+<li>The left and right arrows should control the orientation of your spaceship.  While the left arrow is held down, your spaceship should turn counter-clockwise.  While the right arrow is down, your spaceship should turn clockwise.  When neither key is down, your ship should maintain its orientation.  You will need to pick some reasonable angular velocity at which your ship should turn. </li>
+<li>The up arrow should control the thrusters of your spaceship.  The thrusters should be on when the up arrow is down and off when it is up.  When the thrusters are on, you should draw the ship with thrust flames. When the thrusters are off, you should draw the ship without thrust flames.</li>
+<li>When thrusting, the ship should accelerate in the direction of its forward vector. This vector can be computed from the orientation/angle of the ship using the helper function angle&#95;to&#95;vector.  You will need to experiment with scaling each component of this acceleration vector to generate a reasonable acceleration.</li>
+<li>Remember that while the ship accelerates in its forward direction, but the ship always moves in the direction of its velocity vector.  Being able to accelerate in a direction different than the direction that you are moving is a hallmark of <em>Asteroids</em>.</li>
+<li>Your ship should always experience some amount of friction.  (Yeah, we know, "Why is there friction in the vacuum of space?". Just trust us there is in this game.) This choice means that the velocity should always be multiplied by a constant factor less than one to slow the ship down.  It will then come to a stop eventually after you stop the thrusters.</li>
+</ul>
+<p>Now, implement these behaviors above in order.  Each step should require just a few lines of code.  Here are some hints:</p>
+<ol>
+<li>Modify the draw method for the Ship class to draw the ship image(without thrust flames) instead of a circle.   This method should incorporate the ship's position and angle. Note that the angle should be in radians, not degrees. Since a call to the ship's draw method already exists in the draw handler, you should now see the ship image. Experiment with different positions and angles for the ship.</li>
+<li>Implement an initial version of the update method for the ship.  This version should update the position of the ship based on its velocity.  Since a call to the update method also already exists in the draw handler, the ship should move in response to different initial velocities. </li>
+<li>Modify the update method for the ship to increment its angle by its angular velocity. </li>
+<li>Make your ship turn in response to the left/right arrow keys. Add keydown and keyup handlers that check the left and right arrow keys.  Add methods to the Ship class to increment and decrement the angular velocity by a fixed amount.  Call these methods in the keyboard handlers appropriately and verify that you can turn your ship as you expect. </li>
+<li>Modify the keyboard handlers to turn the ship's thrusters on/off.  Add a method to the Ship class to turn the thrusters on/off (you can make it take a boolean argument which is True or False to decide if they should be on or off).  </li>
+<li>Modify the ship's draw method to draw the thrust image when it is on. (The ship image is tiled and contains both images of the ship.) </li>
+<li>Modify the ship's thrust method to play the thrust sound when the thrust is on.  Turn it off when the thrust is off. </li>
+<li>Use the given helper function angle&#95;to&#95;vector to compute the forward vector pointing in the direction the ship is facing based on the ship's angle.</li>
+<li>Make your ship accelerate in the direction of this forward vector in response to the up arrow key. You will need to update the velocity vector by a small fraction of the forward acceleration vector so that the ship does not accelerate too fast.  </li>
+<li>Modify your position update so that the ship's position wraps around the screen when it goes off the edge (use modular arithmetic!).  </li>
+<li>Up to this point, your ship will never slow down. Add friction as shown in the "Acceleration and Friction" video by multiplying each component of the velocity by a number slightly less than 1 during each update. </li>
+</ol>
+<p>You should now have a ship that flies around the screen,as you would like for <em>RiceRocks</em>.  Adjust the constants as you would like to get it to fly how you want.</p>
+<h4> <span class="mw-headline" id="Phase_two_-_Rocks">Phase two - Rocks</span></h4>
+<p>To implement rocks, we will use the provided Sprite class.  Note that the update method for the sprite will be very similar to the update method for the ship.  The primary difference is that the ship's velocity and rotation are controlled by keys, whereas sprites have these set randomly when they are created.In the template, "a&#95;rock" is created at the start with no velocity.Instead, we want to create a new rock once every second.  For now,this means we will simply replace the existing rock.  Next week, we will add multiple rocks. This week, the ship will not die if it hits a rock.  We'll add that next week. To implement rocks, we suggest the following:</p>
+<ol>
+<li>Complete the Sprite class (as shown in the "Sprite class" video) by modifying the draw handler to draw the actual image and the update handler to make the sprite move and rotate.  Rocks do not accelerate or experience friction, so the sprite update method should be simpler than the ship update method.  Test this by giving "a&#95;rock" different starting parameters and ensuring it behaves as you expect.</li>
+<li>Create a timer that ticks once per second.  In that timer, set"a&#95;rock" to be a new rock.  Choose velocity, position, and angular velocity randomly.  You will want to tweak the ranges of these random numbers, as that will affect how fun the game is to play.  Make sureyou generated rocks that spin in both directions and, likewise, move in all directions.</li>
+</ol>
+<h4> <span class="mw-headline" id="Phase_three_-_Missiles">Phase three - Missiles</span></h4>
+<p>To implement missiles, we will use the same sprite class as for rocks.Missiles will always have a zero angular velocity.  They will also have a lifespan (they should disappear after a certain amount of time or you will eventually have missiles all over the place), but we will ignore that this week.  Also, for now, we will only allow a single missile and it will not yet blow up rocks.  We'll add more next week.Your missile should be created when you hit the space bar, not on a timer like rocks.  Otherwise, the process is very similar:</p>
+<ol>
+<li>Add a "shoot" method to your ship class.  This should spawn a new missile (for now just replace the old missile in "a&#95;missile").  The missile's initial position should be the tip of your ship's "gun". It's velocity should be the sum of the ship's velocity and a multiple of the ship's forward vector.</li>
+<li>Modify the keydown handler to call this shoot method when the space bar is pressed.</li>
+<li>Make sure that the missile sound is passed to the sprite constructor so that you will get the shooting sound whenever you shoot a missile.</li>
+</ol>
+<h4> <span class="mw-headline" id="Phase_four_-_User_interface">Phase four - User interface</span></h4>
+<p>Our user interface for <em>RiceRocks</em> simply shows the number of lives remaining and the score.  This week neither of those elements ever change, but they will next week.  Add code to the draw event handler to draw these on the canvas.  Use the "lives" and "score" global variables as the current lives remaining and score.</p>
+<h3> <span class="mw-headline" id="Grading_rubric_-_20_pts_total_.28scaled_to_100_pts.29">Grading rubric  - 20 pts total (scaled to 100 pts)</span></h3>
+<p>Please assess your peer's mini-projects in Chrome.  <b>If, for some reason, you must use Firefox or another browser (or had issues playing sounds in Chrome), please give your peers full credit on the two sound-related rubric items.</b>
+<ul><li> 1 pt - The program draws the ship as an image.
+</li><li> 1 pt - The ship flies in a straight line when not under thrust.
+</li><li> 1 pt - The ship rotates at a constant angular velocity in a counter clockwise direction when the left arrow key is held down.
+</li><li> 1 pt - The ship rotates at a constant angular velocity in the clockwise direction when the right arrow key is held down.
+</li><li> 1 pt - The ship's orientation is independent of its velocity.
+</li><li> 1 pt - The program draws the ship with thrusters on when the up arrow is held down.
+</li><li> 1 pt - The program plays the thrust sound only when the up arrow key is held down.
+</li><li> 1 pt - The ship accelerates in its forward direction when the thrust key is held down.
+</li><li> 1 pt - The ship's position wraps to the other side of the screen when it crosses the edge of the screen.
+</li><li> 1 pt - The ship's velocity slows to zero while the thrust is not being applied.
+</li><li> 1 pt - The program draws a rock as an image.
+</li><li> 1 pt - The rock travels in a straight line at a constant velocity.
+</li><li> 1 pt - The rock is respawned once every second by a timer.
+</li><li> 1 pt - The rock has a random spawn position, spin direction and velocity.
+</li><li> 1 pt - The program spawns a missile when the space bar is depressed. 
+</li><li> 1 pt - The missile spawns at the tip of the ship's gun.
+</li><li> 1 pt - The missile's velocity is the sum of the ship's velocity and a multiple of its forward vector.
+</li><li> 1 pt - The program plays the missile firing sound when the missile is spawned.
+</li><li> 1 pt - The program draws appropriate text for lives on the upper left portion of the screen.
+</li><li> 1 pt - The program draws appropriate text for score on the upper right portion of the screen.</p>
+</li></ul>
+
+<hr />
+<p><a href="/wiki/index.php/Interactivepython:MiniProjects" title="Interactivepython:MiniProjects">MiniProjects</a></p>
+<p><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week7&amp;oldid=18967">https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week7&amp;oldid=18967</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

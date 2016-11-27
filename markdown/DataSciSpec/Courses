@@ -1,0 +1,42 @@
+[[Category:DataSciSpec]]
+Return to [[DataSciSpec:Main| Data Science Specialization]]
+
+This Page will cover additional information concerning the various courses comprising the  [[DataSciSpec:Main|Data Science Specialization]] track.
+Please also check out the [[DataSciSpec:Useful_Resources| Useful Resources page]] to find common tutorials about many topics.
+
+#Course Lecture Notes and Code
+
+All lecture material is on GitHub originally as Rmarkdown documents from which HTML slides and PDFs can be generated.
+
+<https://github.com/DataScienceSpecialization/courses>
+
+Note:  These lecture notes were originally created by [Xing Su](mailto:s.xing@me.com), who [invites contributions](https://github.com/sux13/DataScienceSpCourseNotes/pulls).
+
+#The Data Scientist's Toolbox
+* Lecture Notes for [Data Scientist's Toolbox (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/1_DATASCITOOLBOX/Data_Scientists_Toolbox_Course_Notes.pdf)
+* Some notes for [Data Scientist's Toolbox](https://share.coursera.org/wiki/index.php/Datascitoolbox-006:Main)
+
+#R Programming
+* Lecture Notes for [R Programming (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/2_RPROG/R_Programming_Course_Notes.pdf)
+* Some notes on [[DataSciSpec:Functional\_Progr\_in_R | functional programming in R]]
+
+#Getting and Cleaning Data
+* Lecture Notes for [Getting and Cleaning Data (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/3_GETDATA/Getting_and_Cleaning_Data_Course_Notes.pdf)
+
+#Exploratory Data Analysis
+* Lecture Notes for [Exploratory Data Analysis (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/4_EXDATA/Exploratory_Data_Analysis_Course_Notes.pdf)
+
+#Reproducible Research
+* Lecture Notes for [Reproducible Research (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/5_REPDATA/Reproducible_Research_Course_Notes.pdf)
+
+#Statistical Inference
+* Lecture Notes for [Statistical Inference (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/6_STATINFERENCE/Statistical_Inference_Course_Notes.pdf)
+
+#Regression Models
+* Lecture Notes for [Regression Models (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/7_REGMODS/Regression_Models_Course_Notes.pdf)
+
+#Practical Machine Learning
+* Lecture Notes for [Practical Machine Learning (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/8_PREDMACHLEARN/Practical_Machine_Learning_Course_Notes.pdf)
+
+#Developing Data Products
+* Lecture Notes for [Developing Data Products (single PDF document)](http://sux13.github.io/DataScienceSpCourseNotes/9_DEVDATAPROD/Developing_Data_Products_Course_Notes.pdf)

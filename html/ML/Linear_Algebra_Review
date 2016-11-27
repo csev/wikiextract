@@ -1,0 +1,175 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Linear Algebra Review</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Khan Academy has excellent <a rel="nofollow" class="external text" href="http://www.khanacademy.org/#linear-algebra">Linear Algebra Tutorials</a>.</p>
+<p>This online  <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Linear_least_squares_%28mathematics%29#Derivation_of_the_normal_equations">Linear Algebra text</a> is also an excellent resource, particularly for a proof of the normal equation.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Matrices_and_Vectors"><span class="tocnumber">1</span> <span class="toctext">Matrices and Vectors</span></a></li>
+<li class="toclevel-1"><a href="#Addition_and_Scalar_Multiplication"><span class="tocnumber">2</span> <span class="toctext">Addition and Scalar Multiplication</span></a></li>
+<li class="toclevel-1"><a href="#Matrix-Vector_Multiplication"><span class="tocnumber">3</span> <span class="toctext">Matrix-Vector Multiplication</span></a></li>
+<li class="toclevel-1"><a href="#Matrix-Matrix_Multiplication"><span class="tocnumber">4</span> <span class="toctext">Matrix-Matrix Multiplication</span></a></li>
+<li class="toclevel-1"><a href="#Matrix_Multiplication_Properties"><span class="tocnumber">5</span> <span class="toctext">Matrix Multiplication Properties</span></a></li>
+<li class="toclevel-1"><a href="#Inverse_and_Transpose"><span class="tocnumber">6</span> <span class="toctext">Inverse and Transpose</span></a></li>
+<li class="toclevel-1"><a href="#Footnotes"><span class="tocnumber">7</span> <span class="toctext">Footnotes</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Matrices_and_Vectors">Matrices and Vectors</span></h1>
+<p>Matrices are 2-dimensional arrays:</p>
+<p>$$
+ \begin{bmatrix}
+  a &amp; b &amp; c \newline 
+  d &amp; e &amp; f \newline 
+  g &amp; h &amp; i \newline 
+  j &amp; k &amp; l
+ \end{bmatrix}
+$$</p>
+<p>The above matrix has four rows and three columns, so it is a 4 x 3 matrix.</p>
+<p>A vector is a matrix with one column and many rows:</p>
+<p>$$
+ \begin{bmatrix}
+  w \newline
+  x \newline
+  y \newline
+  z 
+ \end{bmatrix}
+$$</p>
+<p>So vectors are a subset of matrices. The above vector is a 4 x 1 matrix.</p>
+<p><strong>Notation and terms</strong>:
+<ul><li> $$A&#95;{ij}$$ refers to the element in the ith row and jth column of matrix A.
+</li><li> A vector with 'n' rows is referred to as an 'n'-dimensional vector
+</li><li> $$v&#95;i$$ refers to the element in the ith row of the vector.
+</li><li> In general, all our vectors and matrices will be 1-indexed. Note that for some programming languages, the arrays are 0-indexed.
+</li><li> Matrices are usually denoted by uppercase names while vectors are lowercase.
+</li><li> "Scalar" means that an object is a single value, not a vector or matrix. 
+</li><li> $$\mathbb{R}$$ refers to the set of scalar real numbers
+</li><li> $$\mathbb{R^n}$$ refers to the set of n-dimensional vectors of real numbers</p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="Addition_and_Scalar_Multiplication">Addition and Scalar Multiplication</span></h1>
+<p>Addition and subtraction are <strong>element-wise</strong>, so you simply add or subtract each corresponding element:</p>
+<p>$$
+ \begin{bmatrix}
+  a &amp; b \newline 
+  c &amp; d \newline 
+ \end{bmatrix} +
+\begin{bmatrix}
+  w &amp; x \newline 
+  y &amp; z \newline 
+ \end{bmatrix} =
+\begin{bmatrix}
+  a+w &amp; b+x \newline 
+  c+y &amp; d+z \newline 
+ \end{bmatrix}
+$$</p>
+<p>To add or subtract two matrices, their dimensions must be <strong>the same</strong>.</p>
+<p>In scalar multiplication, we simply multiply every element by the scalar value:</p>
+<p>$$
+ \begin{bmatrix}
+  a &amp; b \newline 
+  c &amp; d \newline 
+ \end{bmatrix} &#42; x =
+\begin{bmatrix}
+  a&#42;x &amp; b&#42;x \newline 
+  c&#42;x &amp; d&#42;x \newline 
+ \end{bmatrix}
+$$</p>
+<h1> <span class="mw-headline" id="Matrix-Vector_Multiplication">Matrix-Vector Multiplication</span></h1>
+<p>We map the column of the vector onto each row of the matrix, multiplying each element and summing the result.</p>
+<p>$$
+ \begin{bmatrix}
+  a &amp; b \newline 
+  c &amp; d \newline 
+  e &amp; f
+ \end{bmatrix} &#42;
+\begin{bmatrix}
+  x \newline 
+  y \newline 
+ \end{bmatrix} =
+\begin{bmatrix}
+  a&#42;x + b&#42;y \newline 
+  c&#42;x + d&#42;y \newline 
+  e&#42;x + f&#42;y
+ \end{bmatrix}
+$$</p>
+<p>The result is a <strong>vector</strong>. The vector must be the <strong>second</strong> term of the multiplication. The number of <strong>columns</strong> of the matrix must equal the number of <strong>rows</strong> of the vector.</p>
+<p>An <strong>m x n matrix</strong> multiplied by an <strong>n x 1 vector</strong> results in an <strong>m x 1 vector</strong>.</p>
+<h1> <span class="mw-headline" id="Matrix-Matrix_Multiplication">Matrix-Matrix Multiplication</span></h1>
+<p>We multiply two matrices by breaking it into several vector multiplications and concatenating the result</p>
+<p>$$
+ \begin{bmatrix}
+  a &amp; b \newline 
+  c &amp; d \newline 
+  e &amp; f
+ \end{bmatrix} &#42;
+\begin{bmatrix}
+  w &amp; x \newline 
+  y &amp; z \newline 
+ \end{bmatrix} =
+\begin{bmatrix}
+  a&#42;w + b&#42;y &amp; a&#42;x + b&#42;z \newline 
+  c&#42;w + d&#42;y &amp; c&#42;x + d&#42;z \newline 
+  e&#42;w + f&#42;y &amp; e&#42;x + f&#42;z
+ \end{bmatrix}
+$$</p>
+<p>An <strong>m x n matrix</strong> multiplied by an <strong>n x o matrix</strong> results in an <strong>m x o</strong> matrix. In the above example, a 3 x 2 matrix times a 2 x 2 matrix resulted in a 3 x 2 matrix.</p>
+<p>To multiply two matrices, the number of <strong>columns</strong> of the first matrix must equal the number of <strong>rows</strong> of the second matrix.</p>
+<h1> <span class="mw-headline" id="Matrix_Multiplication_Properties">Matrix Multiplication Properties</span></h1>
+<ul>
+<li>Not commutative. $$A&#42;B \neq B&#42;A$$</li>
+<li>Associative. $$(A&#42;B)&#42;C = A&#42;(B&#42;C)$$</li>
+</ul>
+<p>The <strong>identity matrix</strong>, when multiplied by any matrix of the same dimensions, results in the original matrix. It's just like multiplying numbers by 1. The identity matrix simply has 1's on the diagonal (upper left to lower right diagonal) and 0's elsewhere.</p>
+<p>$$
+ \begin{bmatrix}
+  1 &amp; 0 &amp; 0 \newline 
+  0 &amp; 1 &amp; 0 \newline 
+  0 &amp; 0 &amp; 1 \newline 
+ \end{bmatrix}
+$$</p>
+<p>When multiplying the identity matrix after some matrix $$(A&#42;I)$$, the square identity matrix should match the other matrix's <strong>columns</strong>. When multiplying the identity matrix before some other matrix $$(I&#42;A)$$, the square identity matrix should match the other matrix's <strong>rows</strong>.</p>
+<h1> <span class="mw-headline" id="Inverse_and_Transpose">Inverse and Transpose</span></h1>
+<p>The <strong>inverse</strong> of a matrix $$A$$ is denoted $$A^{-1}$$. Multiplying by the inverse results in the identity matrix.</p>
+<p>A non square matrix does not have an inverse matrix. We can compute inverses of matrices in octave with the pinv(A) function $$^{[1]}$$ and in matlab with the inv(A) function. Matrices that don't have an inverse are <em>singular</em> or <em>degenerate</em>.</p>
+<p>The <strong>transposition</strong> of a matrix is like rotating the matrix 90<b>°</b> in clockwise direction and then reversing it. We can compute transposition of matrices in matlab with the transpose(A) function or A':</p>
+<p>$$
+A = 
+ \begin{bmatrix}
+  a &amp; b \newline 
+  c &amp; d \newline 
+  e &amp; f
+ \end{bmatrix} 
+$$</p>
+<p>$$
+A^T = 
+ \begin{bmatrix}
+  a &amp; c &amp; e \newline 
+  b &amp; d &amp; f \newline 
+ \end{bmatrix}
+$$</p>
+<p>In other words:</p>
+<p>$$A&#95;{ij} = A^T&#95;{ji}$$</p>
+<h1> <span class="mw-headline" id="Footnotes">Footnotes</span></h1>
+<p>[1]: As described in the course video, this octave function computes the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Moore%E2%80%93Penrose%20pseudoinverse">pseudo inverse</a> for singular matrices which do not have inverses.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Linear_Regression_with_Multiple_Variables" title="ML:Linear Regression with Multiple Variables">Linear Regression with Multiple Variables</a> Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Linear_Algebra_Review&amp;oldid=34247">https://share.coursera.org/wiki/index.php?title=ML:Linear_Algebra_Review&amp;oldid=34247</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,1029 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture47:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="Threads.2C_AsynTasks_.26_Handlers_-_Part_1_-_Italian_subtitles">Threads, AsynTasks &amp; Handlers - Part 1 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture45:it" title="Android-001:Subtitles:Lecture45:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture47:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture47:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture47:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture47:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture47:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture47:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture47:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture47:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture49:it" title="Android-001:Subtitles:Lecture49:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/il58pm7rvf10m0s/5%20-%205%20-%20Threads%2C%20AsynTasks%20%26%20Handlers%20-%20Part%201%20%2815_32%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:08,940 --&gt; 00:00:12,310
+Ciao, mi chiamo Adam Porter, e questo è
+
+2
+00:00:12,310 --&gt; 00:00:17,090
+Programmazione di applicazioni mobile per
+Sistemi palmari Android.
+
+3
+00:00:19,250 --&gt; 00:00:21,730
+I sistemi portatili, come tutti i
+dispositivi di calcolo
+
+4
+00:00:21,730 --&gt; 00:00:26,570
+oggi, contengono sempre più
+&quot;core&quot; di calcolo.
+
+5
+00:00:26,570 --&gt; 00:00:31,070
+E  questo significa che più
+programmi, o execution threads,
+
+6
+00:00:31,070 --&gt; 00:00:36,040
+possono essere in esecuzione sul dispositivo
+tutti nello stesso tempo.
+
+7
+00:00:36,040 --&gt; 00:00:38,450
+E questa è una cosa potente, perché
+consente di
+
+8
+00:00:38,450 --&gt; 00:00:41,200
+fare più lavoro in un breve lasso di tempo.
+
+9
+00:00:42,280 --&gt; 00:00:44,330
+Ma può anche rendere i programmi
+
+10
+00:00:44,330 --&gt; 00:00:47,140
+più complessi, il che porta ad errori e
+
+11
+00:00:47,140 --&gt; 00:00:49,040
+problemi di prestazioni se non non si sta
+attenti.
+
+12
+00:00:50,170 --&gt; 00:00:51,810
+Quindi, in questa lezione andremo a
+
+13
+00:00:51,810 --&gt; 00:00:55,710
+parlare di scrittura di programmi
+multi-threaded per Android.
+
+14
+00:00:55,710 --&gt; 00:00:57,730
+E discuteremo alcune delle
+
+15
+00:00:57,730 --&gt; 00:01:00,910
+le classi che Android fornisce
+a supporto.
+
+16
+00:01:02,510 --&gt; 00:01:05,490
+In particolare, in questa lezione inizierò
+
+17
+00:01:05,490 --&gt; 00:01:08,900
+con una breve discussione del threading
+stesso.
+
+18
+00:01:08,900 --&gt; 00:01:09,730
+Successivamente,
+
+19
+00:01:09,730 --&gt; 00:01:13,490
+Parleremo del thread interfaccia utente di Android,
+il principale thread
+
+20
+00:01:13,490 --&gt; 00:01:18,288
+in cui le applicazioni Android
+eseguono la maggior parte del loro lavoro.
+
+21
+00:01:18,288 --&gt; 00:01:23,080
+E  discuteremo anche di come questo impatti
+nella progettazione del software applicativo.
+
+22
+00:01:24,320 --&gt; 00:01:27,480
+Dopo di che, parlerò della classe AsyncTask
+
+23
+00:01:27,480 --&gt; 00:01:30,810
+che aiuta a semplificare il threading
+in Android.
+
+24
+00:01:31,820 --&gt; 00:01:35,340
+E, infine, svolgeremo una discussione
+sulla classe Handler,
+
+25
+00:01:35,340 --&gt; 00:01:38,210
+un altro meccanismo Android threading
+
+26
+00:01:39,670 --&gt; 00:01:43,230
+Ora, io continuo ad usare il termine Thread, ma cosa
+è un thread?
+
+27
+00:01:43,230 --&gt; 00:01:48,300
+Ebbene, in sostanza, un thread è uno dei
+diversi flussi di calcolo
+
+28
+00:01:48,300 --&gt; 00:01:52,060
+in esecuzione contemporaneamente in un
+processo del sistema operativo.
+
+29
+00:01:53,160 --&gt; 00:01:56,620
+In termini di implementazione, ciascun thread
+ha un proprio program counter
+
+30
+00:01:56,620 --&gt; 00:02:00,360
+e uno stack di esecuzione,
+ma condivide
+
+31
+00:02:00,360 --&gt; 00:02:03,290
+l'heap e le aree di memoria statica con altri
+
+32
+00:02:03,290 --&gt; 00:02:06,320
+thread in esecuzione all'interno di un processo
+del sistema operativo.
+
+33
+00:02:07,850 --&gt; 00:02:10,820
+Ora questo grafico raffigura questi concetti,
+e
+
+34
+00:02:10,820 --&gt; 00:02:14,590
+qui mostra un ipotetico dispositivo
+di calcolo
+
+35
+00:02:14,590 --&gt; 00:02:17,330
+Ora, questo dispositivo è dotato di due CPU.
+
+36
+00:02:17,330 --&gt; 00:02:19,910
+CPU 1.
+e CPU 2.
+
+37
+00:02:21,120 --&gt; 00:02:25,430
+Ognuna di queste CPU può svolgere le
+istruzioni che compongono
+
+38
+00:02:25,430 --&gt; 00:02:30,560
+le applicazioni in esecuzione sul dispositivo.
+Ora, sulla CPU 2,
+
+39
+00:02:30,560 --&gt; 00:02:36,540
+Sto mostrando due processi in esecuzione,
+p3 e p4.
+
+40
+00:02:36,540 --&gt; 00:02:38,860
+Ora, un modo di pensare i processi
+
+41
+00:02:38,860 --&gt; 00:02:42,280
+è che contengono ambienti di esecuzione
+autonomi.
+
+42
+00:02:43,320 --&gt; 00:02:47,240
+Hanno risorse come la memoria,
+file aperti,
+
+43
+00:02:47,240 --&gt; 00:02:50,570
+connessioni di rete, e altre cose che
+gestiscono
+
+44
+00:02:50,570 --&gt; 00:02:54,110
+e tengono separate da altri processi sul
+dispositivo.
+
+45
+00:02:55,150 --&gt; 00:03:02,620
+E all'interno di uno di questi processi, P4,
+vediamo due thread in esecuzione, T7 e T8.
+
+46
+00:03:03,710 --&gt; 00:03:06,200
+Ora ognuno di questi threads è una
+esecuzione
+
+47
+00:03:06,200 --&gt; 00:03:09,770
+di un flusso di istruzioni con il
+proprio stack di chiamate.
+
+48
+00:03:11,400 --&gt; 00:03:15,670
+Ma dato che sono all'interno dello stesso processo,
+ognuno può accedere alle
+
+49
+00:03:15,670 --&gt; 00:03:19,730
+risorse di processo, compresa la memoria heap
+e variabili statiche.
+
+50
+00:03:22,100 --&gt; 00:03:24,480
+In Java, i threads sono rappresentati da un
+
+51
+00:03:24,480 --&gt; 00:03:30,340
+oggetto di tipo Thread  nel package java.lang
+
+52
+00:03:30,340 --&gt; 00:03:34,100
+I thread Java implementano l'interfaccia
+Runnable, che
+
+53
+00:03:34,100 --&gt; 00:03:36,260
+significa che avranno un metodo pubblico,
+
+54
+00:03:36,260 --&gt; 00:03:43,420
+chiamato run(), che non richiede
+argomenti, e che non ha valore di ritorno.
+
+55
+00:03:43,420 --&gt; 00:03:47,300
+Ora, per questo corso, supponiamo che
+abbiate già imparato a conoscere
+
+56
+00:03:47,300 --&gt; 00:03:51,050
+i Thread Java, e che sappiate come usarli.
+
+57
+00:03:51,050 --&gt; 00:03:54,131
+Tuttavia, se avete bisogno di un ripasso
+per favore guardate il tutorial
+
+58
+00:03:54,131 --&gt; 00:03:57,900
+sulla concorrenza al
+seguente indirizzo URL.
+
+59
+00:03:57,900 --&gt; 00:04:01,620
+http://docs.oracle.com/javase/tutorial/essential/concurrency/threads.html
+
+60
+00:04:01,620 --&gt; 00:04:06,480
+Ora, alcuni dei metodi dei thread che andremo
+a vedere in questa lezione includono
+
+61
+00:04:06,480 --&gt; 00:04:09,234
+metodo start() per iniziare un thread, e
+
+62
+00:04:09,234 --&gt; 00:04:13,070
+il metodo sleep() per sospendere
+temporaneamente un thread.
+
+63
+00:04:14,670 --&gt; 00:04:16,890
+Alcuni metodi di cui potresti aver bisogno
+quando stai utilizzando
+
+64
+00:04:16,890 --&gt; 00:04:21,240
+i threads
+includono il metodo wait(),
+
+65
+00:04:21,240 --&gt; 00:04:23,180
+che permette al thread corrente
+di fermarsi
+
+66
+00:04:23,180 --&gt; 00:04:27,120
+e di attendere fino a che
+un altro thread
+
+67
+00:04:27,120 --&gt; 00:04:31,780
+invochi un metodo corrispondente come
+notify() o notifyall().
+
+68
+00:04:32,980 --&gt; 00:04:37,330
+E quando questo accade, il thread in attesa
+può riacquistare il blocco
+
+69
+00:04:37,330 --&gt; 00:04:41,670
+che aveva quando ha chiamato wait(),
+e può continuare l'esecuzione.
+
+70
+00:04:43,280 --&gt; 00:04:48,100
+Il metodo di notifica notify() risveglia un singolo thread
+che è in attesa su questo oggetto.
+
+71
+00:04:51,260 --&gt; 00:04:54,830
+Ora per utilizzare un thread, normalmente
+si fanno le seguenti le cose.
+
+72
+00:04:54,830 --&gt; 00:04:57,740
+In primo luogo, si crea il thread.
+
+73
+00:04:57,740 --&gt; 00:05:02,100
+Ad esempio, utilizzando il comando new.
+
+74
+00:05:02,100 --&gt; 00:05:06,410
+Ora, i threads non si avviano automaticamente
+quando li si crea.
+
+75
+00:05:06,410 --&gt; 00:05:10,720
+Per avviare il thread, è necessario richiamare
+metodo start() del thread.
+
+76
+00:05:11,910 --&gt; 00:05:17,320
+Questo porta alla chiamata del
+metodo run(),
+
+77
+00:05:17,320 --&gt; 00:05:21,640
+e il thread continua l'esecuzione fino a che
+il metodo run termina.
+
+78
+00:05:25,320 --&gt; 00:05:28,270
+Questo grafico aiuta a capire questo comportamento.
+
+79
+00:05:28,270 --&gt; 00:05:34,670
+In primo luogo, una applicazione in esecuzione emette un
+comando new per creare un nuovo oggetto thread.
+
+80
+00:05:36,010 --&gt; 00:05:40,310
+Quando questa chiamata termina, l'applicazione
+continua.
+
+81
+00:05:40,310 --&gt; 00:05:44,200
+E poco dopo, richiama il metodo start()
+
+82
+00:05:45,270 --&gt; 00:05:48,090
+E questa chiamata ritorna
+all'applicazione,
+
+83
+00:05:48,090 --&gt; 00:05:50,600
+ma causa che anche il codice nel metodo run()
+
+84
+00:05:50,600 --&gt; 00:05:53,110
+del thread venga eseguito.
+
+85
+00:05:54,250 --&gt; 00:05:57,990
+E siccome il programma continua, esistono
+ora due thread di esecuzione.
+
+86
+00:05:59,000 --&gt; 00:06:01,540
+E, naturalmente, si può fare questo
+più volte,
+
+87
+00:06:01,540 --&gt; 00:06:05,120
+creando ed eseguendo quanti thread
+si desidera.
+
+88
+00:06:07,330 --&gt; 00:06:11,340
+Quindi, andiamo a vedere un programma in cui il
+threading sarebbe utile.
+
+89
+00:06:12,640 --&gt; 00:06:14,560
+La prima applicazione che vedremo
+in
+
+90
+00:06:14,560 --&gt; 00:06:18,320
+questa lezione si chiama
+Threading No Threading.
+
+91
+00:06:18,320 --&gt; 00:06:19,920
+E come vedrete in un secondo,
+
+92
+00:06:19,920 --&gt; 00:06:23,780
+l'applicazione visualizza una semplice
+interfaccia utente con due pulsanti.
+
+93
+00:06:24,860 --&gt; 00:06:28,710
+Il primo pulsante è etichettato LoadIcon.
+
+94
+00:06:28,710 --&gt; 00:06:33,020
+Quando l'utente fa clic su questo pulsante,
+l'applicazione si apre e
+
+95
+00:06:33,020 --&gt; 00:06:36,330
+legge un file contenente una bitmap.
+
+96
+00:06:36,330 --&gt; 00:06:42,090
+E una volta fatto questo, si vede
+la bitmap appena caricata sul display.
+
+97
+00:06:42,090 --&gt; 00:06:46,530
+L'idea è che questa operazione richiede
+una notevole quantità di tempo.
+
+98
+00:06:47,820 --&gt; 00:06:53,710
+Ora, nel codice che uso in questa
+lezione, esagererò
+
+99
+00:06:53,710 --&gt; 00:06:58,120
+su quanto tempo ci vuole, va bene?
+Ma non
+
+100
+00:06:58,120 --&gt; 00:07:01,380
+lasciatevi distrarre, il punto è sempre lo
+stesso.
+
+101
+00:07:01,380 --&gt; 00:07:05,370
+Alcune operazioni richiedono un tempo relativamente lungo
+
+102
+00:07:05,370 --&gt; 00:07:09,530
+E per voi, come sviluppatori, è necessario
+comprendere e trattare questo aspetto.
+
+103
+00:07:11,270 --&gt; 00:07:15,400
+Il secondo pulsante è etichettato OtherButton;
+quando l'utente fa clic
+
+104
+00:07:15,400 --&gt; 00:07:20,870
+su questo pulsante un messaggio toast si apre
+e visualizza un testo.
+
+105
+00:07:20,870 --&gt; 00:07:23,920
+E l'idea è che se si vede il
+testo,
+
+106
+00:07:23,920 --&gt; 00:07:25,670
+poi si sa che il pulsante funziona.
+
+107
+00:07:27,520 --&gt; 00:07:29,670
+Ora, se non è possibile fare clic sul pulsante,
+
+108
+00:07:29,670 --&gt; 00:07:32,710
+o non si vede il testo, allora qualcosa è
+sbagliato.
+
+109
+00:07:32,710 --&gt; 00:07:36,170
+In particolare, l'utente dovrebbe essere in grado di
+fare clic su uno dei
+
+110
+00:07:36,170 --&gt; 00:07:41,320
+pulsanti, in qualsiasi momento, e il sistema
+dovrebbe funzionare.
+
+111
+00:07:41,320 --&gt; 00:07:43,590
+Quindi, cerchiamo di eseguire una versione di questo
+
+112
+00:07:43,590 --&gt; 00:07:46,780
+applicazione che non utilizza alcun
+threading.
+
+113
+00:07:46,780 --&gt; 00:07:48,940
+Ora, cosa pensi che succederà?
+
+114
+00:07:50,690 --&gt; 00:07:53,030
+Sarò in grado di premere entrambi i tasti
+quando voglio?
+
+115
+00:07:54,090 --&gt; 00:07:54,730
+Vediamo.
+
+116
+00:07:56,600 --&gt; 00:08:00,800
+Ecco, inizio l'applicazione
+ThreadingNoThreading .
+
+117
+00:08:03,030 --&gt; 00:08:06,369
+Come potete vedere, ci sono i
+due pulsanti di cui abbiamo parlato.
+
+118
+00:08:08,690 --&gt; 00:08:13,180
+Io prima premo il pulsante  OtherButton,
+e come potete vedere,
+
+119
+00:08:13,180 --&gt; 00:08:16,990
+posso fare clic su di esso e il messaggio promesso
+appare sul display.
+
+120
+00:08:19,130 --&gt; 00:08:21,100
+Ora ho intenzione di fare due cose.
+
+121
+00:08:21,100 --&gt; 00:08:25,710
+Io prima premerò il pulsante Load Icon,
+che inizierà l'onerosa
+
+122
+00:08:25,710 --&gt; 00:08:30,750
+operazione di lettura nella
+bitmap da un file e poi la visualizzerò.
+
+123
+00:08:32,450 --&gt; 00:08:34,490
+E subito dopo aver premuto il bottone Load Icon
+
+124
+00:08:34,490 --&gt; 00:08:38,560
+io premerò il tasto OtherButton
+nuovamente.
+
+125
+00:08:38,560 --&gt; 00:08:44,530
+Andiamo.
+Ora, io premo il pulsante Load Icon, e
+
+126
+00:08:45,870 --&gt; 00:08:49,770
+ora premo l'altro tasto.
+Ok.
+
+127
+00:08:50,830 --&gt; 00:08:52,630
+Così, che cosa sta succedendo qui?
+
+128
+00:08:52,630 --&gt; 00:08:56,390
+L'altro pulsante sembra essere bloccato.
+Perché è così?
+
+129
+00:08:58,940 --&gt; 00:09:04,170
+Beh, la risposta è che quando stavo cercando
+di premere Other Button, Android
+
+130
+00:09:04,170 --&gt; 00:09:09,940
+stava ancora caricando l'icona quando ho
+premuto il tasto Load Icon.
+
+131
+00:09:09,940 --&gt; 00:09:15,030
+E che la prima operazione stava impedendo
+alla seconda operazione di aver luogo.
+
+132
+00:09:19,460 --&gt; 00:09:24,240
+Ok, allora una soluzione apparentemente ovvia,
+ma alla fine non corretta
+
+133
+00:09:24,240 --&gt; 00:09:27,320
+a questo problema, sarebbe quella di andare al
+listener che è
+
+134
+00:09:27,320 --&gt; 00:09:30,470
+collegato al pulsante Load Icon e
+semplicemente creare un
+
+135
+00:09:30,470 --&gt; 00:09:34,200
+nuovo thread che carica il bitmap e poi
+lo visualizzi.
+
+136
+00:09:35,600 --&gt; 00:09:41,190
+Così ho implementato questo approccio in un
+applicazione chiamata Threadingsimple.
+
+137
+00:09:41,190 --&gt; 00:09:45,831
+Diamo uno sguardo a questa applicazione e
+discutiamo del perché in realtà non funziona.
+
+138
+00:09:45,831 --&gt; 00:09:55,025
+[BLANK_AUDIO]
+
+139
+00:09:55,025 --&gt; 00:09:58,890
+Quindi, ecco il codice per
+l'applicazione Threadingsimple.
+
+140
+00:10:00,240 --&gt; 00:10:03,050
+Qui c'è il tasto listener per il
+pulsante Load Icon.
+
+141
+00:10:04,110 --&gt; 00:10:08,290
+Chiama il metodo LoadIcon, che è
+giusto qui sotto.
+
+142
+00:10:10,510 --&gt; 00:10:15,390
+Questo codice crea un nuovo thread, che
+ci mette un po' per caricare la bitmap
+
+143
+00:10:15,390 --&gt; 00:10:19,990
+e poi cerca di impostare la bitmap su un
+ImageView che fa parte del layout.
+
+144
+00:10:21,990 --&gt; 00:10:26,345
+Quindi cerchiamo di eseguire questo codice.
+Ora, io inizierò
+
+145
+00:10:26,345 --&gt; 00:10:31,180
+l' applicazione.
+E ora premo il pulsante Load Icon
+
+146
+00:10:31,180 --&gt; 00:10:35,920
+E ora, premo il pulsante Other Button.
+
+147
+00:10:37,420 --&gt; 00:10:42,100
+Beh prima di tutto, ho premuto Other Button
+e vediamo che ha risposto.
+
+148
+00:10:42,100 --&gt; 00:10:47,950
+Quindi caricare l'icona non sembra
+bloccarsi premendo l'altro pulsante.
+
+149
+00:10:47,950 --&gt; 00:10:49,680
+Quindi questo è un bene, abbiamo fatto qualche progresso.
+
+150
+00:10:50,890 --&gt; 00:10:53,580
+Tuttavia, si può vedere che abbiamo un
+problema più grande ora.
+
+151
+00:10:54,640 --&gt; 00:10:55,960
+Abbiamo schiantato l'applicazione.
+
+152
+00:10:57,550 --&gt; 00:11:03,220
+Se indaghiamo nell'output del Log Cat,
+vediamo che c'è un messaggio che ci dice che
+
+153
+00:11:03,220 --&gt; 00:11:09,860
+solo il thread originale che ha creato una
+view hierarchy può toccare le sue views.
+
+154
+00:11:09,860 --&gt; 00:11:13,970
+Quindi, Android semplicemente non permetterà
+ai threads di iniziare a fare scherzi
+
+155
+00:11:13,970 --&gt; 00:11:18,030
+in giro con views che sono
+state create da altri thread.
+
+156
+00:11:19,870 --&gt; 00:11:23,160
+Quindi significa che, mentre il nuovo thread che
+abbiamo creato per caricare il
+
+157
+00:11:23,160 --&gt; 00:11:29,150
+bitmap può fare quel lavoro, non può effettivamente
+fare l'ultimo passo e
+
+158
+00:11:29,150 --&gt; 00:11:31,740
+aggiungere la bitmap risultante al display.
+Così
+
+159
+00:11:34,640 --&gt; 00:11:38,900
+quale thread effettivamente ha creato questo
+gerarchia delle view dell'applicazione?
+
+160
+00:11:38,900 --&gt; 00:11:41,950
+Ebbene, tutte le applicazioni Android hanno un thread principale
+
+161
+00:11:41,950 --&gt; 00:11:44,820
+che è anche chiamato
+UI thread (thread interfaccia utente).
+
+162
+00:11:46,060 --&gt; 00:11:49,710
+Componenti dell'applicazione che vengono eseguiti nello
+stesso processo,
+
+163
+00:11:49,710 --&gt; 00:11:54,500
+per default, usano la stessa
+UI thread.
+
+164
+00:11:54,500 --&gt; 00:11:59,424
+In tutti quei metodi del ciclo di vita di cui abbiamo
+parlato, OnCreate, OnStart,
+
+165
+00:11:59,424 --&gt; 00:12:04,240
+ecc, sono tutti gestiti nel UI thread.
+
+166
+00:12:04,240 --&gt; 00:12:08,670
+E in aggiunta, il toolkit UI è di per sé
+non thread-safe.
+
+167
+00:12:09,940 --&gt; 00:12:15,740
+E tutto questo significa che se si
+blocca il thread dell'interfaccia utente con operazioni lunghe
+
+168
+00:12:15,740 --&gt; 00:12:20,150
+allora si impedisce
+all'applicazione di
+
+169
+00:12:20,150 --&gt; 00:12:23,880
+rispondere ad altre richieste che l'utente
+sta facendo.
+
+170
+00:12:23,880 --&gt; 00:12:24,960
+Infatti,
+
+171
+00:12:24,960 --&gt; 00:12:28,650
+lo abbiamo visto nell'applicazione
+ThreadingNoThreading.
+
+172
+00:12:28,650 --&gt; 00:12:33,440
+Così, le operazioni a esecuzione prolungata devono essere
+messe in thread in background.
+
+173
+00:12:34,830 --&gt; 00:12:40,479
+Allo stesso tempo però, non possiamo accedere
+al toolkit UI da un thread non UI.
+
+174
+00:12:40,479 --&gt; 00:12:44,446
+Ed è quello che ci ha messo nei guai con
+l'applicazione ThreadingSimple.
+
+175
+00:12:44,446 --&gt; 00:12:47,010
+[BLANK_AUDIO]
+
+176
+00:12:47,010 --&gt; 00:12:52,010
+Quindi, abbiamo bisogno di fare un lavoro in un
+thread in background, ma quando quel
+
+177
+00:12:52,010 --&gt; 00:12:58,370
+lavoro è fatto noi dobbiamo fare gli aggiornamenti all'UI,
+indietro nel thread dell'interfaccia utente.
+
+178
+00:12:58,370 --&gt; 00:13:02,770
+E Android, infatti, ci dà un sacco di
+modi di fare proprio questo.
+
+179
+00:13:02,770 --&gt; 00:13:06,040
+In particolare, Android fornisce diversi
+metodi che
+
+180
+00:13:06,040 --&gt; 00:13:09,290
+sono garantiti per funzionare sul UI thread.
+
+181
+00:13:10,360 --&gt; 00:13:12,111
+Due di questi metodi
+
+182
+00:13:12,120 --&gt; 00:13:19,050
+sono il metodo post() della classe view, e
+runOnUiThread() della classe activity.
+
+183
+00:13:20,560 --&gt; 00:13:23,730
+Entrambi questi metodi prendono un parametro
+Runnable.
+
+184
+00:13:24,820 --&gt; 00:13:29,130
+Questo Runnable dovrebbe, per esempio, contenere
+il codice
+
+185
+00:13:29,130 --&gt; 00:13:32,760
+che aggiorna il display nel nostro recente
+esempi.
+
+186
+00:13:32,760 --&gt; 00:13:37,180
+Quindi, se stiamo utilizzando questi metodi, dovremmo
+caricare la bitmap
+
+187
+00:13:37,180 --&gt; 00:13:42,370
+in un thread in background e quando questa
+operazione è completa, dovremmo utilizzare uno di
+
+188
+00:13:42,370 --&gt; 00:13:49,320
+questi metodi per eseguire un Runnable che
+ imposti la bitmap sul display.
+
+189
+00:13:49,320 --&gt; 00:13:50,360
+Vediamolo in azione.
+
+190
+00:13:52,780 --&gt; 00:13:53,930
+Quindi, ecco il mio dispositivo.
+E
+
+191
+00:13:56,150 --&gt; 00:13:59,730
+Inizierò l'applicazione
+threading viewpost
+
+192
+00:13:59,730 --&gt; 00:14:06,470
+E qui ci sono i due pulsanti.
+E ancora, vado a fare due cose ora.
+
+193
+00:14:07,770 --&gt; 00:14:09,759
+Premo il pulsante  Load Icon.
+
+194
+00:14:11,260 --&gt; 00:14:14,090
+E poi, subito dopo, premo
+Other Button.
+
+195
+00:14:15,120 --&gt; 00:14:17,010
+E mi aspetto di vedere che l'operazione di
+
+196
+00:14:17,010 --&gt; 00:14:22,450
+Other Button non è bloccata dal funzionamento
+della Icon Load.
+
+197
+00:14:22,450 --&gt; 00:14:24,020
+E, mi aspetto di vedere che
+
+198
+00:14:24,020 --&gt; 00:14:27,680
+l'icona si carica senza bloccare
+l'applicazione.
+
+199
+00:14:27,680 --&gt; 00:14:29,330
+Andiamo.
+
+200
+00:14:30,630 --&gt; 00:14:36,310
+Ora, io premo il pulsante Load Icon, e
+ora premo Other Button.
+
+201
+00:14:37,730 --&gt; 00:14:43,735
+C'è il testo da Other Button,
+e, infine, c'è il bitmap.
+
+202
+00:14:45,270 --&gt; 00:14:46,840
+Diamo uno sguardo al codice sorgente.
+
+203
+00:14:46,840 --&gt; 00:14:47,970
+Quindi, ecco
+
+204
+00:14:47,970 --&gt; 00:14:52,590
+la mia applicazione, aperta nell'IDE.
+Aprirò il main activity
+
+205
+00:14:52,590 --&gt; 00:14:57,102
+di questa applicazione, e andrò
+dritto al
+
+206
+00:14:57,102 --&gt; 00:15:02,470
+metodo LoadIcon, che viene chiamato quando
+l'utente preme il pulsante Load Icon.
+
+207
+00:15:03,770 --&gt; 00:15:07,915
+Come prima, questo codice crea un nuovo thread
+e poi carica la
+
+208
+00:15:07,915 --&gt; 00:15:13,020
+bitmap.
+Ma dopo aver caricato la bitmap, si vede
+
+209
+00:15:13,020 --&gt; 00:15:20,265
+che ora abbiamo una chiamata a view.post,
+passando un runnable, il cui codice
+
+210
+00:15:20,265 --&gt; 00:15:27,643
+chiama il metodo setImageBitmap per impostare la
+bitmap appena caricata su questo image view.
+
+211
+00:15:27,643 --&gt; 00:15:28,597
+[BLANK_AUDIO]
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture47:it&amp;oldid=23124">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture47:it&amp;oldid=23124</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,65 @@
+#Week 5, Lecture 2A - Regulation of <i>C. elegans</i> egl-1 (Part A)
+
+* Through what mechanism is the activity of <i>C. elegans</i> EGL-1 regulated? You have heard about the <i>C. elegans</i> gene <i>egl-1</i> a couple of times already. Once in the section about the forward genetic screen for <i>C. elegans</i> mutants with defects in cell death and the  screen identified n1162, a loss-of-function mutation of <i>ced-4</i>, you also heard about it in the  section about the reversion screen that led to the identification of  <i>ced-9</i> loss-of-function mutations and finally you heard about it in  the section about the Bcl-2 superfamily.  
+
+* <i>C. elegans</i> <i>egl-1</i> encodes the sole <i>C. elegans</i> BH3-only protein or sensor with a role in apoptosis during development. Why is <i>egl-1</i> called <i>egl-1</i>? And egl stands for egg-laying defective.  Why is it not called ced like the other components of the central pathway, <i>ced-9</i>, <i>ced-4</i>, and <i>ced-3</i>? It is because the <i>egl-1</i> gene was originally defined by dominant mutations that cause a defect in egg laying and that therefore were identified in screens for egg-laying defective animals.  
+
+* Seven independent dominant or semi- dominant <i>egl-1</i> mutations were identified in such screens and these mutations all cause an Egl phenotype.  
+
+* Why do they cause an Egl phenotype? They cause an Egl phenotype because they cause the HSN neurons, which are required for egg laying, to inappropriately undergo apoptosis in hermaphrodites.  I also mentioned already in one of the previous sections that the HSNs normally die in males, in which the HSN neurons are not needed for egg laying.  
+
+* Using one of the semi-dominant <i>egl-1</i> alleles, <i>n1084</i>, I performed a reversion screen as a postdoc to identify recessive, loss-of-function mutations of the gene. Using this approach, I identified the mutation <i>n3082</i>, a recessive mutation. Genetically, <i>n3082</i> behaved like a loss-of-function mutation of the <i>egl-1</i> gene and that is because it was a dominant suppressor of <i>n1084</i> and mapped to the same region on chromosome V.  
+
+* And I found that <i>n3082</i> causes a general block in apoptosis just as the loss of either <i>ced-3</i> or <i>ced-4</i> does. In homozygous <i>n1084</i> <i>n3082</i> animals, many of the 131 cells that normally die during <i>C. elegans</i> development inappropriately survive. Based on its Ced phenotype, I cloned the gene defined by <i>n3082</i>. It turned out to encode a BH3-only protein. And when I sequenced the transcription unit encoding this BH3-only protein in <i>n1084</i> <i>n3082</i> animals to identify the <i>n1084</i> and the <i>n3082</i> mutation, I only managed to find the <i>n3082</i> mutation.  
+
+* <i>n3082</i> turns out to be a 5 base pair deletion in exon 2 of the BH3-only transcription unit.  This 5 base pair deletion causes a frame shift, which results in the synthesis of a truncated, non-functional EGL-1 protein. To find the <i>n1084</i> mutation, I sequenced the region upstream and downstream of the BH3-only transcription unit. And I sequenced all the way to the gene upstream and all the way to the gene downstream. But again, nothing! No mutation.  
+
+* I then started to wonder whether the two mutations, <i>n1084</i> and <i>n3082</i>, might be mutations in two different genes, after all. For this reason, I did some more mapping in order to see whether I could separate the two mutations by recombination. And I could. But they were very closely linked, only 0.04 map units which translates into about 20,000 base pairs or 20 kb.  
+
+* The mapping provided some useful information with respect to the order of <i>n1084</i> and <i>n3082</i>. The mapping indicated that <i>n1084</i> was to the left of <i>n3082</i> on chromosome V. And this meant that <i>n1084</i> was somewhere 3’ or downstream of the <i>n3082</i> mutation and therefore somewhere downstream of the BH3-only transcription unit.  
+
+* I sequenced some more in that direction but again no success.  And then I came up with a functional assay to identify the <i>n1084</i> mutation. Remember, <i>n1084</i> can induce an Egl phenotype in a dominant manner. I reasoned that a DNA fragment covering the gene defined by the <i>n1084</i> mutation and carrying the <i>n1084</i> mutation should be able to induce an Egl phenotype when injected into wild-type worms.  
+
+* To test this I used PCR, the polymerase chain reaction, to amplify a 7.8 kb fragment spanning the BH3-only transcription unit and about 6 kb of its downstream region from genomic DNA isolated from wild-type animals, homozygous <i>n1084</i> animals or homozygous <i>n1084</i> <i>n3082</i> animals.  
+
+* Rather than into wild-type animals, I separately injected the three different PCR fragments into <i>n1084</i> <i>n3082</i> animals. Why did I do that? Remember <i>n1084</i> <i>n3082</i> animals are no longer egg-laying defective but they have acquired a general block in apoptosis, a Ced phenotype. By using this genetic background, I could test the PCR-fragments and the BH3-only transcription unit, in particular, for their ability to rescue the Ced phenotype caused by <i>n3082</i>.  
+
+* What was the phenotype of <i>n1084</i> <i>n3082</i> animals carrying the three different fragments? <i>n1084</i> <i>n3082</i> animals carrying the PCR-fragment amplified from wild-type animals no longer exhibited a Ced phenotype, which demonstrated that the PCR fragment contained everything necessary to rescue the loss of function of this BH3-only gene. These animals also did not exhibit an Egl phenotype.  
+
+* <i>n1084</i> <i>n3082</i> animals carrying the PCR-fragment amplified from <i>n1084</i> <i>n3082</i> animals still exhibited a Ced phenotype and also did not exhibit an Egl phenotype. This result confirmed that <i>n3082</i> causes a severe reduction in the function of the BH3-only transcription unit.  
+
+* Finally, <i>n1084</i> <i>n3082</i> animals carrying the PCR-fragment amplified from <i>n1084</i> animals did not exhibit a Ced phenotype but did exhibit an Egl phenotype. This was great because what it meant is that the 7.8 kb PCR fragment not only contained everything necessary to rescue the loss of the BH3-only gene but also contained everything necessary for the <i>n1084</i> mutation to cause an Egl phenotype.  
+
+* I quickly sequenced the 7.8 kb region that was covered by the PCR fragment and I found a mutation in the fragment amplified from <i>n1084</i> animals. At the very 3’end of the fragment, 5.6 kb downstream of the BH3-only transcription unit there was a single base change, a G-to-A transition. Great! Finally found.  
+
+* However, what I also realized is that between the BH3-only gene and the <i>n1084</i> mutation, there was another transcription unit, F23B12.1, which encodes a phosphatase of unknown function. Phosphatases are enzymes that can remove phosphate groups from proteins.  Since F23B12.1 is transcribed in the opposite direction, compared to the BH3-only transcription unit, the <i>n1084</i> mutation is actually upstream of the F23B12.1 transcription unit.  
+
+* Could it be that <i>n1084</i> affects F23B12.1 - in cis, and that its gene product, the phosphatase, then somehow affects the BH3-only gene - in trans? Or does <i>n1084</i> act from a distance to (in cis)– directly affect the BH3-only gene?  
+
+* What does in<i> cis </i>and in<i> trans </i>actually mean? With “in <i> cis </i>”, I am referring to an interaction that needs to occur on the same molecule of DNA. For example, the promoter region of a particular transcription unit is required in<i> cis </i>to cause transcription from that transcription unit. And for most enhancers and silencers, those regions of genes that are important for the regulation of transcription and, hence, gene expression, that’s true as well. They need to be in<i> cis </i>to a particular transcription unit, on the same DNA molecule, in order to affect transcription from that particular transcription unit.  
+
+* In contrast, “in <i> trans</i>” refers to an interaction between, for example, the promoter region of a gene and the protein complex or enzymatic machinery that comes to bind to this promoter region “in trans” to activate transcription of the transcription unit. Interactions in<i> trans </i>are between different molecules, molecules that are not physically or covalently linked.  
+
+* Going back to <i>egl-1</i>, if the <i>n1084</i> mutation affected F23B12.1 and if the F23B12.1 phosphatase subsequently affected the BH3-only transcription unit, the interaction between <i>n1084</i> and the BH3-only transcription unit would be in <i> trans</i> It could therefore take place even if the F23B12.1 transcription unit with the <i>n1084</i> mutation was located on a different chromosome than the BH3-only transcription unit.  
+
+* In contrast, if the <i>n1084</i> mutation somehow acts over the F23B12.1 transcription unit to directly affect the BH3-only transcription unit, the interaction between <i>n1084</i> and the BH3-only transcription unit would be in <i> cis</i>. It could therefore NOT take place if the <i>n1084</i> mutation was located on a different chromosome than the BH3-only transcription unit.  
+
+* The following observations strongly suggested that <i>n1084</i> acts on the BH3-only transcription unit in <i> cis</i>.  
+
+* First, remember, a PCR fragment amplified from <i>n1084</i> animals but not from <i>n1084</i> <i>n3082</i> animals could induce an Egl phenotype in <i>n1084</i> <i>n3082</i> animals. This suggests that <i>n1084</i> requires a functional BH3-only transcription unit to cause an Egl phenotype.  
+
+* Second, a PCR-fragment amplified from wild-type animals did not cause an Egl phenotype when injected into <i>n1084</i> <i>n3082</i> animals and similarly, a PCR-fragment amplified from <i>n1084</i> <i>n3082</i> animals did not cause an Egl phenotype when injected into wild-type animals. This suggests that the <i>n1084</i> mutation and a wild-type BH3-only transcription unit have to be in<i> cis </i>in order for <i>n1084</i> to induce an Egl phenotype. When in trans, this is not possible.  
+
+* Third, <i>n3082</i> fails to suppress the Egl phenotype caused by <i>n1084</i> when in<i> trans </i>to <i>n1084</i>. To show this, I generated a chimeric PCR fragment that contained the <i>n3082</i> mutation but no longer the <i>n1084</i> mutation.  This I injected into <i>n1084</i> animals and the result was that the animals were Egl  In contrast, animals heterozygous for the <i>n1084</i> <i>n3082</i> chromosome are not Egl (<i>n1084</i> <i>n3082</i>/+).  Therefore, <i>n1084</i> and <i>n3082</i> in<i> cis </i>cause a different phenotype than <i>n1084</i> and <i>n3082</i> in trans.  
+
+* All together this strongly suggested that <i>n1084</i> is directly affecting the BH3-only transcription unit and that the gene defined by <i>n1084</i> and <i>n3082</i> therefore were the same gene, <i>egl-1</i>. For this reason, the <i>egl-1</i> gene is identical to the BH3-only gene. 
+
+* So, that is all good but what does this mean with respect to the mechanism through which <i>egl-1</i> activity is regulated? The location of the <i>n1084</i> mutation with respect to the <i>egl-1</i> transcription unit very strongly suggested that <i>n1084</i> affects the transcription of the <i>egl-1</i> gene. And this meant that altered <i>egl-1</i> transcription results in an altered pattern of apoptosis.  * Specifically, it results in the inappropriate or ectopic death of the HSN neurons in hermaphrodites.  
+
+* We therefore proposed that <i>egl-1</i> activity is - at least in part - regulated at the transcriptional level.  In other words, we proposed that <i>egl-1</i> activity is - at least in part – regulated through controlling the amount of its gene product, the EGL-1 BH3-only protein.  
+
+* This was subsequently confirmed with an <i>egl-1</i> reporter. Egl-1 expression is detected predominantly in cells that are programmed to die during <i>C. elegans</i> development. Therefore, the synthesis of EGL-1 protein is regulated.  At the time this was published in 1999, it was quite a surprise that a mutation that was downstream of a downstream transcription unit directly (in<i> cis </i>) could affect the transcription of a transcription unit. And that in <i>C. elegans</i>, where things including transcriptional regulation were thought to be somewhat simpler. In the case of <i>egl-1</i>, the term “gene” becomes somewhat blurry in that parts of the <i>egl-1</i> gene, and <i>cis </i>-acting regulatory regions, in particular, overlap with those of neighboring genes.  
+  
+[[PCD:Main | PCD Main Page]]  
+[[PCD: Week5 | Week 5 Keywords]]  
+[[PCD: Week5LectureList | Week 5 Lecture Transcripts]]

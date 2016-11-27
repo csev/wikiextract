@@ -1,0 +1,134 @@
+This is a set of links to the  material referenced at the end of the lectures
+
+## Week 1
+
+None
+
+## Week 2
+### Using Block Ciphers
+* A concrete security treatment of symmetric encryption: Analysis of the DES modes of operation,  
+M.Bellare, A.Desai, E.Jokipii and P.Rogaway, FOCS 1997  
+http://www.cs.ucdavis.edu/research/tech-reports/1997/CSE-97-9.pdf
+
+* Nonce‐Based Symmetric Encryption,  
+P. Rogaway, FSE 2004  
+http://pdf.aminer.org/000/217/279/nonce\_based\_symmetric\_encryption.pdf
+
+## Week 3
+### Message Integrity
+* CBC MACs for Arbitrary‐Length Messages: The Three-­Key Constructions. J. Cryptology 18(2): 111­-131 (2005)  
+J.Black, P.Rogaway:  
+http://www.cs.ucdavis.edu/~rogaway/papers/3k.pdf
+
+* A Tight Bound for EMAC. ICALP (2) 2006: 168‐179  
+K.Pietrzak:  
+http://homepages.cwi.nl/~pietrzak/publications/Pie06c.pdf
+
+* A Block­-Cipher Mode of Operation for Parallelizable Message Authentication. EUROCRYPT 2002: 384‐397  
+J.Black, P.Rogaway:  
+http://www.iacr.org/cryptodb/archive/2002/EUROCRYPT/2070/2070.pdf
+
+* New Proofs for NMAC and HMAC: Security Without Collision‐Resistance. CRYPTO 2006: 602‐619  
+M.Bellare:  
+http://www.iacr.org/archive/crypto2006/41170597/41170597.pdf
+
+* A New Mode of Operation for Block Ciphers and Length‐Preserving MACs. EUROCRYPT 2008: 198­-219  
+Y.Dodis, K.Pietrzak, P.Puniya:  
+http://www.iacr.org/conferences/eurocrypt2008/sessions/KrzysztofPitrzak\_20080415.pdf
+
+## Week 4
+### Authenticated Encryption
+* The Order of Encryption and Authentication for Protecting Communications,  
+H.Krawczyk, Crypto 2001.  
+http://www.iacr.org/archive/crypto2001/21390309.pdf
+
+* Authenticated‐Encryption with Associated-­Data,  
+P.Rogaway, Proc. of CCS 2002.  
+http://www.cs.ucdavis.edu/~rogaway/papers/ad.pdf
+
+* Password Interception in a SSL/TLS Channel,  
+B.Canvel, A.Hiltgen, S.Vaudenay, M.Vuagnoux, Crypto 2003.  
+http://canvel.free.fr/crypto/pdf/crypto03.pdf
+
+* Plaintext Recovery Attacks Against SSH,  
+M.Albrecht, K.Paterson and G.Watson, IEEE S&P 2009  
+http://modular.math.washington.edu/home/wstein/www/home/malb/papers/plaintext\_recover\_attacks\_against\_ssh.pdf
+
+* Problem areas for the IP security protocols,  
+S.Bellovin, Usenix Security 1996.  
+http://academiccommons.columbia.edu/download/fedora\_content/download/ac:127083/CONTENT/badesp.pdf
+
+### Odds and Ends
+* Cryptographic Extraction and Key Derivation: The HKDF Scheme.  
+H.Krawczyk, Crypto 2010  
+http://eprint.iacr.org/2010/264.pdf
+
+* Deterministic Authenticatied‐Encryption: A Provable‐Security Treatment of the Keywrap Problem.  
+P.Rogaway, T.Shrimp1on, Eurocrypt 2006  
+http://www.cs.ucdavis.edu/~rogaway/papers/keywrap.pdf
+
+* A Parallelizable Enciphering Mode.  
+S.Halevi, P.Rogaway, CT-RSA 2004  
+http://www.cs.ucdavis.edu/~rogaway/papers/eme.pdf
+
+* Efficient Instantiations of Tweakable Blockciphers and Refinements to Modes OCB and PMAC.  
+P.Rogaway, Asiacrypt 2004  
+http://www.cs.ucdavis.edu/~rogaway/papers/offsets.pdf
+
+* How to Encipher Messages on a Small Domain: Deterministic Encryption and the Thorp Shuffle.  
+B.Morris, P.Rogaway, T.Stegers, Crypto 2009  
+http://www.cs.ucdavis.edu/~rogaway/papers/thorp.pdf
+
+## Week 5
+### Basic Key Exchange
+* Merkle Puzzles are Optimal,  
+B.Barak, M.Mahmoody‐Ghidary, Crypto ’09  
+http://www.boazbarak.org/Papers/merkle.pdf
+
+* On formal models of key exchange  
+V.Shoup, 1999  (sections 7‐9)  
+http://www.shoup.net/papers/skey.pdf
+
+### Intro. Number Theory
+* A Computational Introduction to Number Theory and Algebra,  
+V.Shoup, 2008 (V2), Chapter 1‐4, 11, 12  
+Available at http://shoup.net/ntb/ntb-v2.pdf
+
+## Week 6
+### Public Key Encryption from trapdoor permutations:
+* Why chosen ciphertext security matters,  
+V.Shoup, 1998  
+http://www.shoup.net/papers/expo.pdf
+
+* Twenty years of attacks on the RSA cryptosystem,  
+D.Boneh, Notices of the AMS, 1999  
+http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf
+
+* OAEP reconsidered,  
+V.Shoup, Crypto 2001  
+http://www.shoup.net/papers/oaep.pdf
+
+* Key lengths,  
+A.Lenstra, 2004  
+http://www.keylength.com/biblio/Handbook\_of\_Information\_Security\_-\_Keylength.pdf
+
+### Public-Key Encryption from Diffie-Hellman
+* The Decision Diffie‐Hellman problem.  
+D.Boneh, ANTS 3, 1998  
+http://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf
+
+* Universal hash proofs and a paradigm for chosen ciphertext secure public key encryption.  
+R.Cramer and V.Shoup, Eurocrypt 2002  
+http://www.shoup.net/papers/uhp.pdf
+
+* Chosen‐ciphertext security from Identity‐Based Encryption.  
+D.Boneh, R.CaneK, S.Halevi, and J.Katz, SICOMP 2007  
+http://www.stanford.edu/~dabo/papers/ccaibejour.pdf
+
+* The Twin Diffie‐Hellman problem and applications.  
+D.Cash, E.Kiltz, V.Shoup, Eurocrypt 2008  
+http://www.iacr.org/archive/eurocrypt2008/49650126/49650126.pdf
+
+* Efficient chosen‐ciphertext security via extractable hash proofs.  
+H.Wee, Crypto 2010  
+http://www.seas.gwu.edu/~hoeteck/pubs/exthps-crypto10.pdf

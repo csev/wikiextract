@@ -1,0 +1,80 @@
+## Factors
+
+For any given probability space, a factor is just a real valued random variable defined in terms of other random variables.  For example, if a random variable for a beverage of type $$B$$ can take on values $$b^0$$(coffee) and $$b^1$$(tea) and another random variable for taste $$T$$ can take on values $$t^0$$(bitter) and $$t^1$$(sweet), then the we could create a factor, $$c$$, for the number of calories in the beverage with the following definition
+
+$$c(b^0, t^0) = 10$$, $$c(b^0, t^1) = 70$$, $$c(b^1, t^0) = 0$$, and $$c(b^1, t^1) = 65$$.
+
+Perhaps the most common use of the term factor comes from the factorization of the joint probability function of a Bayesian network. For example, if a Bayesian network has the form $$A\rightarrow B\rightarrow C$$, then the joint pdf for $$A, B,$$ and $$C$$ has the form
+
+$$P(A,B,C) = P(A) P(B|A) P(C|B)$$
+
+and the functions $$f(a) = P(A=a)$$, $$g(a, b) = P(B=b|A=a)$$, and $$h(b, c) = P(C=c|B=b)$$ are factors.
+
+## Factor Operations
+### Factor Product
+If $$\phi_1(X,Y)$$ and $$\phi_2(Y,Z)$$ are two factors then we compute their product of $$\phi(X,Y,Z)$$ by multiplying $$\phi(X,Y)\cdot\phi(Y,Z)$$ for all common values of Y.
+
+Example 1: Let's assume that $$A = \phi(X_1)$$ and $$B = \phi(X_2,X_1)$$ with the values defined in the following tables:
+(This is the example from FactorTutorial.m $$A =$$ FACTORS.INPUT(1). $$B =$$  FACTORS.INPUT(2) and $$C =$$ FACTORS.PRODUCT)
+
+$$ A = \begin{array}{|c|c|}
+ x_1^1 & 0.11 \\\ \hline
+ x_1^2 & 0.89 
+\end{array}$$
+
+$$ B = \begin{array}{|c|c|}
+ x_2^1 & x_1^1 & 0.59 \\\ \hline
+ x_2^2 & x_1^1 & 0.41 \\\ \hline
+x_2^1 & x_1^2 & 0.22 \\\ \hline
+x_2^2 & x_1^2 & 0.78
+\end{array}$$
+
+Then their product $$C = \phi(X_1)\cdot \phi(X_2, X_1)$$ is:
+
+$$ C = \begin{array}{|c|c|}
+ x_1^1 & x_2^1 & 0.0649 (=0.11*0.59)\\\ \hline
+ x_1^2 & x_2^1 & 0.1958 (=0.89*0.22)\\\ \hline
+x_1^1 & x_2^2 & 0.0451 (= 0.11*0.41)\\\ \hline
+x_1^2 & x_2^2 & 0.6942 (= 0.89*0.78)
+\end{array}$$
+
+<br />
+Example 2: This is the example from the Lectures
+
+[[File:Pgm w1 factor product ex1.jpg|frame| center|640x374px|alt=An example of how to compute a Factor Product from Lecture "Factors".]]
+
+Note to Example 2: Some confusion may arise while using the tables in Example 2 in octave.
+
+From FactorTutorial.m, "A factor's values are stored in a row vector in the .val field 
+ using an ordering such that the left-most variables as defined in the 
+ .var field cycle through their values the fastest". This order is dictated by how the  AssignmentToIndex and IndexToAssignment functions are implemented.
+
+Letting variable A=1, Variable B = 2, and Variable C = 3, we should express the factors shown as follows.
+
+phi1 = struct('var', [2, 1], 'card', [2, 3], 'val', [0.5,0.8,0.1,0.0,0.3,0.9]); % the fastest cycling variable is B, so B should be leftmost
+
+phi2 = struct('var', [3, 2], 'card', [2, 2], 'val', [0.5,0.7,0.1,0.2]); % the fastest cycling variable is C, so C should be leftmost
+
+product_shown = struct('var', [3,2,1],'card', [2,2,3],'val',[.25,.35,.08,.16,0.05,0.07,0.0,0.0,0.15,0.21,0.09,0.18]); % fastest cycling variable is C, followed by B, then A
+
+However the FactorProduct function will not return product_shown, as it reorders the variables by sort, so the actual product will be returned in the following struct, which is identical (within tolerance) to the result of FactorProduct(phi1,phi2).
+
+product = struct('var',[1,2,3],'card', [3,2,2], 'val', [0.25, 0.05, 0.15, 0.08, 0, 0.09, 0.35, 0.07, 0.21, 0.16, 0, 0.18]);
+
+It is all too easy to incorrectly define the product table as follows, assuming that A=1,B=2,C=3 are shown in the order octave requires - which is false.
+
+incorrect_product = struct('var', [1,2,3],'card', [3,2,2],'val',[.25,.35,.08,.16,0.05,0.07,0.0,0.0,0.15,0.21,0.09,0.18]);
+
+## Lecture Video Table of Contents
+<pre>
+0:00	Introduction
+0:15	Factors
+0:59	Example: Joint distribution
+1:22	Example: Unnormalized measure
+2:01	Example: Conditional probability distribution
+3:09	Example: General factor
+3:39	Factor operations: Product
+4:41	Factor operations: Marginalization
+5:35	Factor operations: Reduction
+6:05	Why factors?
+</pre>

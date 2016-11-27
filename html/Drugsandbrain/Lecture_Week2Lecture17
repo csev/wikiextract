@@ -1,0 +1,90 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week2Lecture17</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 17 G protein pathway: Principles and Receptors   </p>
+<ul>
+<li>This is the Parsons-Gates building at Caltech. In Numbers, it frequently appeared as the supposed office building of the hero.   </li>
+<li>First, {we are} starting a series of four mini-lectures on the G protein pathway. This is an amazing and important pathway in neuroscience. I'll give you an overview.   </li>
+<li>It starts with a receptor on the cell membrane.  </li>
+<li>We then activate a G protein. There are four major types of G proteins, but many minor types.  </li>
+<li>This in turn activates an effector which can be either a channel, or an enzyme.  </li>
+<li>This in turn activates an intracellular messenger, usually, either soluble calcium, or a cyclic nucleotide, primarily cyclic AMP.  </li>
+<li>This often activates a kinase, another type of enzyme. </li>
+<li>The kinase phosphorylates a protein.  </li>
+<li>And if the pathway goes on long enough, the phosphorylated protein goes into the nucleus and activates genes.  </li>
+<li>Now, these lightning bolts occur at three places in the pathway, because those are the places where high energy phosphate groups are transferred from either ATP or GTP to a protein or from one protein to another.  </li>
+</ul>
+<p><strong>Proof of chemical synaptic transmission (Otto Loewe, University of Graz, 1921).</strong><br />
+<ul><li> Now, we start this story with the proof of chemical synaptic transmission, which was done by the great physiologist pharmacologist, Otto Loewi, at the University of Graz in 1921. Indeed, many details of G protein pathways were discovered for neuronal control of the heart. It had been known for many years that if you electrically stimulate the vagus nerve, which runs from the head to the heart, the heart slows down or stops beating.<br />
+</li><li> So here's in, a schematic of two wires stimulating the vagus nerve. In German, it was called the vogus nerve, which means wanderer. Now, the experiment that Otto Loewi did was to connect two frog hearts to the same bucket of Ringer's solution. Here's a little bit of oxygenation to keep the Ringer's solution fresh. And he took the output from the first heart solution flowing through the first heart, and applied it to the second heart.  </p>
+</li></ul>
+
+<ul>
+<li>And Otto Loewi used the most advanced physiological recording technique available at the time, the smoked drum. So here are two levers, and they are scratching the smoke off this drum. And sure enough, when Otto Loewi stimulated frog heart A, it stopped beating. But a little while later, heart B also stopped beating. So, this interesting experiment said that there was a diffusible substance moving from heart A to heart B. That the diffusible substance had presumably stopped heart A and was now stopping heart B at the same time.  </li>
+<li>This experiment involves lots of controls and lots of do overs, etc. But the basic principal is this diffusible substance. Now, those of you who are German speakers will know that a diffusible substance is often called a Stoff, and so Otto Loewi called the diffusible substance the Vagusstoff. And we now know that the Vagusstoff is Acetylcholine, and that it is acting on a particular type of acetylcholine receptor called a muscarinic acetylcholine receptor, entirely different as we'll see from the nicotinic acetylcholine receptors. These muscarinic acetylcholine receptors are instead, actually activated, (hijacked) by the mushroom toxin muscarine.  </li>
+</ul>
+<p><strong>Some postsynaptic membranes contain G protein-coupled receptors (“metabotropic” receptors) and / or ligand-gated channels</strong><br />
+<ul><li> So, in fact, many postsynaptic membranes contain G protein-coupled receptors {GPCR} . There is a G protein-coupled serotonin receptor, a G protein-coupled muscarinic acetylcholine receptor, which we just described and a G protein-coupled dopamine receptor.<br />
+</li><li> They are on the receiving end of the synapses. So here, we have a pre-synaptic terminal containing serotonin, one containing acetylcholine, one containing dopamine, and these are diffusing to activate their G protein coupled receptors.<br />
+</li></ul>
+So, this is synaptic transmission as we have seen. But, as we will see, it's a bit slower and more diffuse than the little chemical hop that we have described up until now.  </p>
+<p><strong>Several small-molecule transmitters serve as agonists for both ligand-gated channels &amp; GPCRs (among vertebrates)</strong><br />
+<ul><li> Several small molecule transmitters serve as agonist for both ligand gated channels and G protein-coupled receptors. Among vertebrates, acetylcholine activates nicotinic acetylcholine receptors and muscarinic acetylcholine receptors.  </p>
+</li></ul>
+
+<ul>
+<li><p>We call the ligand gated channel, the GABA A channel. So that ligand-gated channel that I've been describing to you for the past few lectures is actually more precisely called GABA A.  </p></li>
+<li><p>And the GABA B receptor is the G protein-coupled receptor. Glutamate has an ionotropic glutamate receptor {iGluR} , which I described to you, and metabotropic GPCR {mGluR}. Serotonin has one lone gene, the 5-HT3 receptor, and about seven G protein-coupled receptors. And then among invertebrates, there are also ligand-gated channels that are activated by other transmitters, not among vertebrates. And among vertebrates, there definitely are GPCRs, activated by histamine and dopamine.  So, this is a very widespread system.  </p></li>
+</ul>
+<p><strong>time scale of seconds and perhaps minutes, the language of the nervous system is still electricity</strong>  </p>
+<ul>
+<li>Now, I do want to remind you that on a time scale of seconds and perhaps minutes, the language of the nervous system is still electricity. And we are still describing a set of mechanisms that manipulate impulse frequencies in individual neurons but it's done entirely differently by GPCRs.  </li>
+</ul>
+<p><strong>Plasma Membrane Components of the G Protein Pathway</strong><br />
+<ul><li> The plasma membrane components of the G protein pathway are described in this image. Here is a recent x-ray crystallographic structure {PDB file 3SN6} that is actually a much more realistic version of the schema that I've put here.  </p>
+</li></ul>
+
+<ul>
+<li><p>The neurotransmitter or the hormone binds to the, bind to the receptor, the G protein-coupled receptor. Here is the hormone schematized. This bright color is the hormone in real structure. The receptor always has seven transmembrane domains. The receptor contacts the G protein which contains three different sub-units, cleverly called &#945;, &#946;, and &#947;. You'll notice that the  &#946; is drawn as a type of propeller structure. And it's light blue in this crystal structure here. The &amp;alpha:, sort of yellowish here in the scheme, sort of dark yellow in this picture. And the &#947;  sub-unit is here.   </p></li>
+<li><p>So, when the neurotransmitter or hormone binds to the receptor, it activates the G protein. Usually, the G protein is anchored in the membrane by lipid tails. The G protein changes shape so that it liberates GDP, guanosine diphosphate, and binds GTP.  </p></li>
+<li><p>The G protein then moves not very far, less than a micron certainly. And sometimes actually there's a complex containing all of these molecules, and activates an effector. The  &#946;&#947; sub-units can also activate effectors and all of this stays pretty close to the membrane because the G protein subunits remain near the membrane, and most effectors are also membrane proteins.  </p></li>
+<li><p>The whole process gets stopped when the GTP, that is bound to the &amp;alpha: sub-domain, gets hydrolyzed into GDP. So, as you probably know, the universal energy currency of a cell is ATP, adenosine triphosphate. There is also a GTP, that also has three phosphate bonds. And so, GTP can carry energy and signals as well and it gets hydrolyzed to terminate the action of the G protein and the whole process can start again if the G protein can find an activated G protein receptor. Fairly complicated, it took about 40 years to work out {and} involved about four Nobel prizes.  </p></li>
+</ul>
+<p><strong>G protein-coupled receptors</strong><br />
+<ul><li> So, what are some generalizations that we can make about the first part of the pathway, the G protein coupled receptor itself? Well, all of them have seven &#945;- helices in the membrane.  </p>
+</li></ul>
+
+<ul>
+<li><p>There are about a thousand G protein coupled receptors in the genome. That 4 to 5% of the 20,000 to 25,000 genes in the genome are G protein-coupled receptors. Most are still orphans, that is, their ligands are unknown.  </p></li>
+<li><p>Individual members of this family respond to perhaps a low-molecular weight neurotransmitter such as the ones we've seen: serotonin, dopamine, or acetylcholine. Others respond to a short protein, eight to 40 amino acids, a peptide such as endorphin. Others respond to a relatively water insoluble lipid, such as anandamide which is the endocannabinoid, the endogenous cannabinoid. </p></li>
+<li><p>Most G protein-coupled receptors actually are olfactory receptors, and they respond to an olfactory stimulus.  </p></li>
+<li>And finally, in the eye, there are in our bodies, four genes for rhodopsin. Each of them has retinal, a small molecule bound to in a position that looks very much like a low molecular weight neurotransmitter. Light photo isomerizes the retinal and produces a change in the structure of the receptor. And so, the receptor goes on to activate a G protein.  </li>
+<li>We can't talk in this course about D {olfactory} and E {light, rhodopsin}, we will mostly concentrate on A { low-molecular weight neurotransmitter}, B {peptides} and C { water insoluble lipid}.  </li>
+</ul>
+<p><strong>Selective advantage of such a complex pathway</strong><br />
+<ul><li> Well now, this is a complex pathway. What is the selective advantage of such a complex pathway? Mostly, the neurotransmitter or hormone does not directly influence the response. I haven't told you about the response yet, it's downstream. But it is not directly influenced by the neurotransmitter or the hormone either from the viewpoint of chemistry, because the chemistry of the initial agonist receptor interaction is quite different from the ultimate chemistry that occurs inside the cell.  </p>
+</li></ul>
+
+<ul>
+<li>Also, there is a decoupling of the speed. The initial agonist binding occurs within milliseconds, but it takes a fraction of a second to get the pathway activated. And also, there is a decoupling of localization, within about a micron, the ultimate effects are not really agonist as bound to the receptors.  </li>
+<li>Now, all of this means very flexible pathways but all, all of this amplification and indirect coupling also requires energy. And also, the amplification and indirect coupling limit the pathway in some ways with regards to speed and also with regards to co-operativity. I know of no G protein couple receptors that have Hill coefficients of greater than one. Next time, we'll delve into additional details of the G protein pathway.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 10/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture17&amp;oldid=6522">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture17&amp;oldid=6522</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

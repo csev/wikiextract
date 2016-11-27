@@ -1,0 +1,83 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 7:K-Means Clustering and PCA</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Debugging_Tip"><span class="tocnumber">1</span> <span class="toctext">Debugging Tip</span></a></li>
+<li class="toclevel-1"><a href="#Workaround_for_problem_in_plotting_routine"><span class="tocnumber">2</span> <span class="toctext">Workaround for problem in plotting routine</span></a></li>
+<li class="toclevel-1"><a href="#findClosestCentroids.28.29_issue_with_regards_to_the_grader"><span class="tocnumber">3</span> <span class="toctext">findClosestCentroids() issue with regards to the grader</span></a></li>
+<li class="toclevel-1"><a href="#Selecting_the_initial_centroids_-_an_additional_consideration"><span class="tocnumber">4</span> <span class="toctext">Selecting the initial centroids - an additional consideration</span></a></li>
+<li class="toclevel-1"><a href="#Fully_vectorizing_findClosestCentroids.28.29"><span class="tocnumber">5</span> <span class="toctext">Fully vectorizing findClosestCentroids()</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_projectData.m"><span class="tocnumber">6</span> <span class="toctext">Errata in projectData.m</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex7/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+<h2> <span class="mw-headline" id="Workaround_for_problem_in_plotting_routine">Workaround for problem in plotting routine</span></h2>
+<p>{CTA Note: This problem only effects certain versions of Octave}
+after completion of the <code>computecentroids.m</code> function, i ran into the following problem:</p>
+<code><pre>    K-Means iteration 1/10...
+    error: __scatter__: A(I): index out of bounds; value 4 out of bound 3
+    error: called from:
+    error:   /Applications/Octave.app/Contents/Resources/share/octave/3.4.0/m/plot/private/__scatter__.m at line 199, column 13
+    error:   /Applications/Octave.app/Contents/Resources/share/octave/3.4.0/m/plot/scatter.m at line 71, column 11
+    error:  &#160;?/ex7/mlclass-ex7/plotDataPoints.m at line 12, column 1
+    error:  &#160;?/ex7/mlclass-ex7/plotProgresskMeans.m at line 11, column 1
+    error:  &#160;?/ex7/mlclass-ex7/runkMeans.m at line 48, column 9
+    error:  &#160;?/ex7/mlclass-ex7/ex7.m at line 92, column 19
+</pre></code>
+<p>i don't think it is caused by my solution, and found a workaround by modifying the <code>plotDataPoints.m</code> as follows </p>
+<code><pre>   &#160;% use idx directly. It will index into the default color map.
+   &#160;% scatter(X(:,1), X(:,2), 15, colors);
+    scatter(X(:,1), X(:,2), 15, idx);
+</pre></code>
+<p>The issue is a bug in the scatter() function in certain versions of Octave.</p>
+<h2> <span class="mw-headline" id="findClosestCentroids.28.29_issue_with_regards_to_the_grader">findClosestCentroids() issue with regards to the grader</span></h2>
+<p>If two centroids have identical distances, the submit grader wants you to select the one with the lowest index value. This situation arises when running ex7_pca.m - some of the image pixels have the same minimum distance to more than one centroid.
+This restriction is most easily accommodated by using the min() function to find the centroid with the minimum distance.
+Students have found that using the find() function does not result in the answer the grader prefers.</p>
+<h2> <span class="mw-headline" id="Selecting_the_initial_centroids_-_an_additional_consideration">Selecting the initial centroids - an additional consideration</span></h2>
+<p>This issue was omitted from the lectures. When the initial centroids are selected, be sure that they are each unique. For example, if using K-Means to compress an image, each of the initial centroids should represent a unique color. If two initial centroids were the exact same color, then you would effectively have K-1 centroids, not K.</p>
+<p>Using the kMeansInitCentroids() method as given in ex7.pdf, an experiment on the "bird_small.mat" data set shows that approximately 5 tries in 10,000 will result in duplicate centroids. The method given in ex7.pdf only selects unique members of the training set as the centroids - it does not verify that they are not duplicate values.</p>
+<p>One method for preventing duplicate centroids would be as follows:
+<ul><li> Randomly select a set of K training examples as the initial centroids.
+</li><li> Use the <code>unique(centroids, 'rows')</code> function to get a matrix of all of the unique centroid values.
+</li><li> If the number of unique rows is not equal to K, then re-select a new set of initial centroids.</p>
+</li></ul>
+
+<p>Another method would be to prevent any duplicates at all by using the <code>unique</code> function on the training examples (<code>unique(X, 'rows')</code>) <strong>before</strong> randomly selecting the initial centroids.</p>
+<h2> <span class="mw-headline" id="Fully_vectorizing_findClosestCentroids.28.29">Fully vectorizing findClosestCentroids()</span></h2>
+<p>It is possible to fully vectorize this function by using 3D arrays for the training examples and the centroids.</p>
+<p><strong>Tip 1:</strong> To transform 2D arrays to 3D, you can use <a rel="nofollow" class="external text" href="http://www.mathworks.com/help/matlab/ref/permute.html"><code>permute</code></a> with an extra dimension index. For example, you can transform a m×n (2D) matrix <strong>A2</strong> to a m×1×n (3D) array <strong>A3</strong> using <code>A3 = permute(A2, [1 3 2]);</code></p>
+<p><strong>Tip 2:</strong> Instead of using <a rel="nofollow" class="external text" href="http://www.mathworks.com/help/matlab/ref/repmat.html"><code>repmat</code></a> to "expand" a matrix for binary operations, it is usually faster to use <a rel="nofollow" class="external text" href="http://www.mathworks.com/help/matlab/ref/bsxfun.html"><code>bsxfun</code></a>.</p>
+<h2> <span class="mw-headline" id="Errata_in_projectData.m">Errata in projectData.m</span></h2>
+<p>Make the following change in the "Instructions" section:</p>
+<code><pre>%      projection_k = x' * U(:, 1:k);
+</pre></code>
+<p>The "1:k" portion was missing the "1:" part.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_7:K-Means_Clustering_and_PCA&amp;oldid=33728">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_7:K-Means_Clustering_and_PCA&amp;oldid=33728</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

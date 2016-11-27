@@ -1,0 +1,35 @@
+Best Practices For Problem Solving
+==================================
+
+**Use Excel!**
+ - Or use Google Docs, Zoho Docs or Open Office. Any spreadsheet program will do. This is the best advice. Ever. 
+ - Or R or Python or Octave...the point is that it's useful to have traceable, reusable solutions to problems, because problems recur and are embedded in future problems.  
+ - A tutorial on basic [problem solving with Excel](http://bowlesphysics.com/images/Engineering_Problem_Solving_and_Excel.pdf)  
+- [A sample spreadsheet based on Quiz 4B](https://public.sheet.zoho.com/public/tammymarcou/sample-spreadsheet-excel-xlsx)  
+  
+**Student created programs**  
+* [A library module and set of examples to assist in calculations of HH model](https://github.com/KitWallace/Bioelectricity) (in Python)  
+* [MathCad](https://docs.google.com/folder/d/0BzxX2vdkNaQZOFRWcDl5cEpwX1U/edit?pli=1)  
+* [[Bioelectricity:Possibly useful Matlab/Octave code | Possibly useful Matlab/Octave code]]  
+    
+    
+Some General Homework Tips
+--------------------------
+- Be generous with the decimals for numerical quiz answers; rounding too soon will lead to a wrong result. Dr. Barr recommends at least 5 decimal places. 
+- Express your answers in scientific notation, and copy-and-paste from your calculator/spreadsheet.  This will avoid a lot of transcription errors.
+- Solve problems algebraically, then plug in whatever values occur in your problem instance.  This makes it easier if you have to re-work a problem later.
+- Most of the B quiz problems don't have entirely arbitrary values. Thinking about what is happening physically and biologically may help you solve the problem or check that your numerical solution is physically reasonable.
+- Pay close attention to units and conversions.
+- Keep a screenshot of your quiz results, it may come in handy
+- Keep a copy of your quizzes; it will help when revising for the final test
+- Even if you score 100% on your first shot at the A quizzes, if you have time, play around with it some more; the question bank is quite rich and you'll learn that little bit more every time you do the quiz
+- And remember that if you don't manage to get the quizzes in on time, the late penalty is only 1% per day, so if you're 10 days late and score full marks, you'll still be getting 90% out of the deal. They're very much worth doing, both for the knowledge and for the points.
+- This might seem like a no-brainer, but try not to start dipping into your late days until week 4. Once you start using them, they can go pretty quickly.
+- If you're lost as to how to proceed in a certain problem, check if a similar problem exists in that week's sample quiz. Use it. Try to reverse engineer a method from the answer. 
+- If that doesn't work out, you can always seek help on the discussion boards. Remember that the sample quizzes can be dissected and discussed down to their very last detail, including the answers, whereas the actual quiz questions, in addition to having randomized numbers, can only be discussed in generalities. Providing steps is okay, up to a reasonable extent. 
+- Convert things to base MKS units; i.e. express everything in meters, volts, and so on.  Express -90mV as -90e-3 in your calculator. This is the safe way to work with units; 
+-However, in some applications, if you're careful you'll notice that many units cancel out - and you don't need to do much conversion. If you're not comfortable with playing with units, the above suggestion is probably safer! 
+  
+**Online Calculators**  
+- [Wolfram Alpha](https://www.wolframalpha.com/examples/)--A pretty powerful computational search engine that will do a good chunk of the minor calculations. Choose a topic for examples of what it can do.  
+- [EEWeb Scientific Calculator](http://www.eeweb.com/toolbox/calculator) is also pretty good. It is less powerful, but less intimidating.

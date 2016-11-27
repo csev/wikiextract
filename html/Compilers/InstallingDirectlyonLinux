@@ -1,0 +1,73 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:InstallingDirectlyonLinux</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><div style="border-left:15px solid darkgreen;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>This is the local copy of original Staff instruction copied to Wiki for easier access. Original text is available at: <a rel="nofollow" class="external free" href="https://class.coursera.org/compilers-004/wiki/view?page=InstallingDirectlyonLinux">https://class.coursera.org/compilers-004/wiki/view?page=InstallingDirectlyonLinux</a> Change the number of the course to the one you are enrolled on.<br />It was reported this solution works for Gentoo, Ubuntu, openSUSE.</td></table></div>
+<p><br /></p>
+<p><strong>NOTE: We highly recommend using Amazon EC2 or the VirtualBox VM.</strong></p>
+<p>However, there was enough demand that we are providing these instructions for people who want to run directly on their own installation of Linux. These instructions were tested with Ubuntu 11.10, but should work on similar (Debian-based) systems, and can be adapted for other distros.</p>
+<p>Steps:</p>
+<ul>
+<li>Install packages (If you only intend to use the C++ version, you don't need the jdk).</li>
+</ul>
+<p>For Ubuntu:</p>
+<p><code>sudo apt-get install flex bison build-essential csh openjdk-6-jdk libxaw7-dev libc6-i386</code></p>
+<p>For Fedora:</p>
+<p><code>sudo yum groupinstall "Development Tools" "Development Libraries"</code></p>
+<p><code>sudo yum install bison flex csh</code></p>
+<ul>
+<li>Make the /usr/class directory:</li>
+</ul>
+<p><code>sudo mkdir /usr/class</code></p>
+<ul>
+<li>Make the directory owned by you:</li>
+</ul>
+<p><code>sudo chown $USER /usr/class</code></p>
+<ul>
+<li>Go to /usr/class and download the tarball:</li>
+</ul>
+<p><code>cd /usr/class</code></p>
+<p><code>wget <a rel="nofollow" class="external free" href="http://spark-university.s3.amazonaws.com/stanford-compilers/vm/student-dist.tar.gz">http://spark-university.s3.amazonaws.com/stanford-compilers/vm/student-dist.tar.gz</a></code></p>
+<ul>
+<li>Untar:</li>
+</ul>
+<p><code>tar -xf student-dist.tar.gz</code></p>
+<p>If you want things exactly like the VMs:</p>
+<ul>
+<li>Add a symlink to your home directory:</li>
+</ul>
+<p><code>ln -s /usr/class/cs143/cool ~/cool</code></p>
+<ul>
+<li>Add the bin directory to your $PATH environment variable. If you are using bash, add to your .profile (or .bash_profile, .bashrc etc. depending on your configuration; note that in Ubuntu have to log out and back in for this to take effect):</li>
+</ul>
+<p><code>PATH=/usr/class/cs143/cool/bin:$PATH</code></p>
+<p>You may want to prepend <code>export</code> to the above command, i.e. <code>export PATH=...</code>.</p>
+<p><br />
+<div style="border-left:15px solid darkred;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>"spim" is 32-bit program, in 64-bit system it requires installing 32-bit "glibc" library. <br />Because of heavy patching in order to run COOL assembly code (*.s) you <strong>have to</strong> use provided "spim" program, not any newer version available on the internet.<br />
+<p>If xspim (the GUI version of spim) does not start up but only prints something like <br />
+<code>*-courier-medium-r-normal--12-*-75-*</code><br />
+on the console, you will need to install some missing fonts and add them to the font path of your X11, like so:<br />
+<code>sudo apt-get install xfonts-75dpi xfonts-100dpi</code><br />
+<code>xset +fp /usr/share/fonts/X11/75dpi</code>
+</p>
+</td></table></div></p>
+<p>In Debian/ubuntu, the 32 bit glibc library is provided by the libc6-i386 package:<br />
+<code>sudo apt-get install libc6-i386</code></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 8/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:InstallingDirectlyonLinux&amp;oldid=26743">https://share.coursera.org/wiki/index.php?title=Compilers:InstallingDirectlyonLinux&amp;oldid=26743</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

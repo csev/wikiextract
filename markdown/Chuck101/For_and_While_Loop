@@ -1,0 +1,29 @@
+Examples of for and while loops:
+
+<pre>
+// from i equal to 0 and less than 4 increment 1
+for (0 => int i; i<4; i++) 
+{
+    // print each 1 second number i
+    <<< i >>>;
+    1::second => now;
+}
+</pre>
+
+<pre>
+// i is a variable initialized with 0
+0 => int i;
+
+// while i<4 repeat the following ChucK code
+while(i<4) 
+{
+   // print each 1 second number i
+   <<< i >>>;
+   1::second => now;
+
+   // increment i by 1
+   i++; 
+}
+</pre>
+
+[[Category: ChucK 101]]

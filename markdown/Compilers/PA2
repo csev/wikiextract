@@ -1,0 +1,43 @@
+[[Category:Compilers]]
+The assignments START at PA2 (i.e. assignment 2 is the first assignment for this course) — the lexer.
+
+The resources page, as mentioned in [PA2 handout](http://spark-university.s3.amazonaws.com/stanford-compilers/assignments-public/PA1.pdf "Assignment 1"):
+
+> On-line documentation for all the tools needed for the project will be made available on the [”Project Resources” page](https://class.coursera.org/compilers-selfservice/wiki/view?page=OtherProjectResources "Resources") of the wiki on the Coursera web site. This includes manuals for ﬂex and jlex (used in this assignment), the documentation for bison and java cup (used in the next assignment), as well as the manual for the spim simulator.
+
+Here are some more useful resources: 
+
+* [Assignment 2 page](https://class.coursera.org/compilers-selfservice/assignment/view?assignment_id=2 "Assignment 2")
+
+* [The Cool Reference Manual](https://spark-university.s3.amazonaws.com/stanford-compilers/resources%2Fcool_manual.pdf)
+
+* [A Tour of the Cool Support Code](http://spark-university.s3.amazonaws.com/stanford-compilers/resources/cool-tour.pdf) In particular, look at section 3 "String Tables".
+
+It is very helpful when working on your lexer to turn on debugging support. To do this:
+
+* Modify the Makefile by adding -DDEBUG to the CPPFLAGS declaration line
+
+* make lexer
+
+* Run the lexer with ./lexer -l -v to see debugging output.
+
+----
+
+In 2013 Staff released additionally examples of .lex files for [C++](http://spark-university.s3.amazonaws.com/stanford-compilers/files/lex_lecture/sample.flex) and [Java](http://spark-university.s3.amazonaws.com/stanford-compilers/files/lex_lecture/sample.jlex) framework (please note Java version is [probably buggy](https://class.coursera.org/compilers-003/forum/thread?thread_id=85&post_id=351#comment-146)) for easier start.
+
+The mentioned bug report:
+
+> Probably found it. Compare C++ and Java lex files. In C++ COMMENT is declared as exclusive, in Java as inclusive. This means that the line with <COMMENT>\n does not kick in not because of the dot metacharacter, but because of the line:
+
+      \n        { num_lines++; }
+
+> I could be wrong though, because I didn't test it (I currently don't have required setup).
+
+
+While developing your own lexer rules please do not copy verbatim those examples — they are toy examples, directly printing out the matched input. This how you do **not** build your lexer — it is only illustration of the matching rules. 
+
+Instead of printing anything (printing is handled by given framework and it is already done by Staff) you should:
+* return a token and optionally set special variables in C++ framework
+* return Symbol object with "attached" extra data if required in Java framework
+
+In case of C# framework you can find examples in the lexer/parser package.

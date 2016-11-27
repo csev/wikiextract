@@ -1,0 +1,383 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Neural Networks: Learning</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Cost_Function"><span class="tocnumber">1</span> <span class="toctext">Cost Function</span></a></li>
+<li class="toclevel-1"><a href="#Backpropagation_Algorithm"><span class="tocnumber">2</span> <span class="toctext">Backpropagation Algorithm</span></a></li>
+<li class="toclevel-1"><a href="#Backpropagation_Intuition"><span class="tocnumber">3</span> <span class="toctext">Backpropagation Intuition</span></a></li>
+<li class="toclevel-1"><a href="#Implementation_Note:_Unrolling_Parameters"><span class="tocnumber">4</span> <span class="toctext">Implementation Note: Unrolling Parameters</span></a></li>
+<li class="toclevel-1"><a href="#Gradient_Checking"><span class="tocnumber">5</span> <span class="toctext">Gradient Checking</span></a></li>
+<li class="toclevel-1"><a href="#Random_Initialization"><span class="tocnumber">6</span> <span class="toctext">Random Initialization</span></a></li>
+<li class="toclevel-1"><a href="#Putting_it_Together"><span class="tocnumber">7</span> <span class="toctext">Putting it Together</span></a></li>
+<li class="toclevel-1"><a href="#Bonus:_Tutorial_on_How_to_classify_your_own_images_of_digits"><span class="tocnumber">8</span> <span class="toctext">Bonus: Tutorial on How to classify your own images of digits</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Sample_image"><span class="tocnumber">8.1</span> <span class="toctext">Sample image</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Bonus:_Explanation_of_Derivatives_Used_in_Backpropagation"><span class="tocnumber">9</span> <span class="toctext">Bonus: Explanation of Derivatives Used in Backpropagation</span></a></li>
+<li class="toclevel-1"><a href="#Bonus:_NN_for_linear_systems"><span class="tocnumber">10</span> <span class="toctext">Bonus: NN for linear systems</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Introduction"><span class="tocnumber">10.1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-2"><a href="#Testing_your_linear_NN"><span class="tocnumber">10.2</span> <span class="toctext">Testing your linear NN</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Bonus:_Dean_Pomerleau.27s_autonomous_driving_projects"><span class="tocnumber">11</span> <span class="toctext">Bonus: Dean Pomerleau's autonomous driving projects</span></a></li>
+<li class="toclevel-1"><a href="#Additional_Resources_for_Backpropagation"><span class="tocnumber">12</span> <span class="toctext">Additional Resources for Backpropagation</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Cost_Function">Cost Function</span></h1>
+<p>Let's first define a few variables that we will need to use:</p>
+<blockquote>
+  <p>$$L = $$ total number of layers in the network</p>
+  <p>$$s&#95;l = $$ number of units (not counting bias unit) in layer $$l$$</p>
+  <p>$$K = $$ number of output units/classes</p>
+</blockquote>
+<p>Recall that in neural networks, we may have many output nodes. We denote $$h&#95;\Theta(x)&#95;k$$ as being a hypothesis that results in the $$k^{th}$$ output.</p>
+<p>Our cost function for neural networks is going to be a generalization of the one we used for logistic regression. </p>
+<p>Recall that the cost function for regularized logistic regression was:</p>
+<p>$$
+J(\theta) = - \frac{1}{m} \sum&#95;{i=1}^m \large[ y^{(i)}\ \log (h&#95;\theta (x^{(i)})) + (1 - y^{(i)})\ \log (1 - h&#95;\theta(x^{(i)}))\large] + \frac{\lambda}{2m}\sum&#95;{j=1}^n \theta&#95;j^2
+$$</p>
+<p>For neural networks, it is going to be slightly more complicated:</p>
+<p>$$
+\begin{gather&#42;}
+\large
+J(\Theta) = - \frac{1}{m} \sum&#95;{i=1}^m \sum&#95;{k=1}^K \left[y^{(i)}&#95;k \log ((h&#95;\Theta (x^{(i)}))&#95;k) + (1 - y^{(i)}&#95;k)\log (1 - (h&#95;\Theta(x^{(i)}))&#95;k)\right] + \frac{\lambda}{2m}\sum&#95;{l=1}^{L-1} \sum&#95;{i=1}^{s&#95;l} \sum&#95;{j=1}^{s&#95;{l+1}} ( \Theta&#95;{j,i}^{(l)})^2
+\end{gather&#42;}
+$$</p>
+<p>We have added a few nested summations to account for our multiple output nodes. In the first part of the equation, between the square brackets, we have an additional nested summation that loops through the number of output nodes.</p>
+<p>In the regularization part, after the square brackets, we must account for multiple theta matrices. The number of columns in our current theta matrix is equal to the number of nodes in our current layer (including the bias unit). The number of rows in our current theta matrix is equal to the number of nodes in the next layer (excluding the bias unit). As before with logistic regression, we square every term.</p>
+<p>Note:</p>
+<ul>
+<li><p>the double sum simply adds up the logistic regression costs calculated for each cell in the output layer; and</p></li>
+<li><p>the triple sum simply adds up the squares of all the individual $$\Theta$$s in the entire network.</p></li>
+<li><p>the $$ i $$ in the triple sum does <b>not</b> refer to training example $$ i $$</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Backpropagation_Algorithm">Backpropagation Algorithm</span></h1>
+<p>"Backpropagation" is neural-network terminology for minimizing our cost function, just like what we were doing with gradient descent in logistic and linear regression.</p>
+<p>Our goal is to compute:</p>
+<p>$$
+\min&#95;\Theta J(\Theta)
+$$</p>
+<p>That is, we want to minimize our cost function J using an optimal set of parameters in theta.</p>
+<p>In this section we'll look at the equations we use to compute the partial derivative of $$J(\Theta)$$:</p>
+<p>$$
+\dfrac{\partial}{\partial \Theta&#95;{i,j}^{(l)}}J(\Theta)
+$$</p>
+<p>In backpropagation we're going to compute for every node:</p>
+<blockquote>
+  <p>$$\delta&#95;j^{(l)}$$ = "error" of node $$j$$ in layer $$l$$</p>
+</blockquote>
+<p>Recall that $$a&#95;j^{(l)}$$ is activation node $$j$$ in layer $$l$$. </p>
+<p>For the <strong>last layer</strong>, we can compute the vector of delta values with:</p>
+<p>$$
+\large
+\delta^{(L)} = a^{(L)} - y
+$$</p>
+<p>Where L is our total number of layers and $$a^{(L)}$$ is the vector of outputs of the activation units for the last layer. So our "error values" for the last layer are simply the differences of our actual results in the last layer and the correct outputs in y.</p>
+<p>To get the delta values of the layers before the last layer, we can use an equation that steps us back from right to left:</p>
+<p>$$
+\delta^{(l)} = ((\Theta^{(l)})^T \delta^{(l+1)})\ .&#42;\ g'(z^{(l)})
+$$</p>
+<p>The delta values of layer $$l$$ are calculated by multiplying the delta values in the next layer with the theta matrix of layer $$l$$. We then element-wise multiply that with a function called g', or g-prime, which is the derivative of the activation function $$g$$ evaluated with the input values given by $$z^{(l)}$$. </p>
+<p>The g-prime derivative terms can also be written out as:</p>
+<p>$$
+g'(z^{(l)}) = a^{(l)}\ .&#42;\ (1 - a^{(l)})
+$$</p>
+<p>This can be shown and proved in calculus.</p>
+<p>$$g(z) = \frac{1}{1 + e^{-z}}$$</p>
+<p>$$\frac{\partial g(z)}{\partial z} = -\left( \frac{1}{1 + e^{-z}} \right)^2\frac{\partial{}}{\partial{z}} \left(1 + e^{-z} \right)$$
+$$= -\left( \frac{1}{1 + e^{-z}} \right)^2e^{-z}\left(-1\right)$$
+$$= \left( \frac{1}{1 + e^{-z}} \right) \left( \frac{1}{1 + e^{-z}} \right)\left(e^{-z}\right)$$
+$$= \left( \frac{1}{1 + e^{-z}} \right) \left( \frac{e^{-z}}{1 + e^{-z}} \right)$$
+$$=\left( \frac{1}{1+e^{-z}}\right)\left( \frac{1+e^{-z}}{1+e^{-z}}-\frac{1}{1+e^{-z}}\right)$$
+$$= g(z) \left( 1 - g(z)\right)$$</p>
+<p>The full backpropagation equation for the inner nodes is then:</p>
+<p>$$
+\delta^{(l)} = ((\Theta^{(l)})^T \delta^{(l+1)})\ .&#42;\ a^{(l)}\ .&#42;\ (1 - a^{(l)})
+$$</p>
+<p>A. Ng states that the derivation and proofs are complicated and involved, but you can still implement the above equations to do back propagation without knowing the details.</p>
+<p>We can compute our partial derivative terms by multiplying our activation values and our error values for each training example t:</p>
+<p>$$
+\dfrac{\partial J(\Theta)}{\partial \Theta&#95;{i,j}^{(l)}} = \frac{1}{m}\sum&#95;{t=1}^m a&#95;j^{(t)(l)} {\delta}&#95;i^{(t)(l+1)}
+$$</p>
+<p>This however ignores regularization, which we'll deal with later.</p>
+<p>Note: $$\delta^{l+1}$$ and $$\ a^{l+1}$$ are vectors with $$s&#95;{l+1}$$ elements. Similarly, $$\ a^{(l)}$$ is a vector with $$s&#95;{l}$$ elements. Multiplying them produces a matrix that is $$s&#95;{l+1}$$ by $$s&#95;{l}$$ which is the same dimension as $$\Theta^{(l)}$$.  That is, the process produces a gradient term for every element in $$\Theta^{(l)}$$.  (Actually, $$\Theta^{(l)}$$ has $$s&#95;{l}$$ + 1 column, so the dimensionality is not exactly the same).</p>
+<p>We can now take all these equations and put them together into a backpropagation algorithm:</p>
+<p><strong>Backpropagation Algorithm</strong>
+<ul><li> Given training set $$\lbrace (x^{(1)}, y^{(1)}) \cdots (x^{(m)}, y^{(m)})\rbrace$$
+</li><li> Set $$\Delta^{(l)}&#95;{i,j}&#160;:= 0$$ for all $$(l,i,j)$$
+</li><li> For training example $$t = 1$$ to $$m$$:
+<ul><li> Set $$a^{(1)}&#160;:= x^{(t)}$$
+</li><li> Perform forward propagation to compute $$a^{(l)}$$ for $$l = 2,3,\dots ,L$$
+</li><li> Using $$y^{(t)}$$, compute $$\delta^{(L)} = a^{(L)} - y^{(t)}$$
+</li><li> Compute $$\delta^{(L-1)}, \delta^{(L-2)},\dots,\delta^{(2)}$$ using $$\delta^{(l)} = ((\Theta^{(l)})^T \delta^{(l+1)})\ .&#42;\ a^{(l)}\ .&#42;\ (1 - a^{(l)})$$
+</li><li> $$\Delta^{(l)}&#95;{i,j}&#160;:= \Delta^{(l)}&#95;{i,j} + a&#95;j^{(l)} \delta&#95;i^{(l+1)}$$ or with vectorization, $$\Delta^{(l)}&#160;:= \Delta^{(l)} + \delta^{(l+1)}(a^{(l)})^T $$ 
+</li></ul>
+</li><li> $$D^{(l)}&#95;{i,j}&#160;:= \dfrac{1}{m}\left(\Delta^{(l)}&#95;{i,j} + \lambda\Theta^{(l)}&#95;{i,j}\right)$$ <strong>If</strong> $$j \neq 0$$ NOTE: Typo in lecture slide omits outside parentheses. This version is correct.
+</li><li> $$D^{(l)}&#95;{i,j}&#160;:= \dfrac{1}{m}\Delta^{(l)}&#95;{i,j}$$ <strong>If</strong> $$j = 0$$</p>
+</li></ul>
+
+<p>The capital-delta matrix is used as an "accumulator" to add up our values as we go along and eventually compute our partial derivative. </p>
+<p>The actual proof is quite involved, but, the $$D^{(l)}&#95;{i,j}$$ terms are the partial derivatives and the results we are looking for:</p>
+<p>$$
+D&#95;{i,j}^{(l)} = \dfrac{\partial J(\Theta)}{\partial \Theta&#95;{i,j}^{(l)}}.
+$$</p>
+<h1> <span class="mw-headline" id="Backpropagation_Intuition">Backpropagation Intuition</span></h1>
+<p>The cost function is: </p>
+<p>$$
+\begin{gather&#42;}
+J(\theta) = - \frac{1}{m} \sum&#95;{t=1}^m\sum&#95;{k=1}^K  \left[ y^{(t)}&#95;k \ \log (h&#95;\theta (x^{(t)}))&#95;k + (1 - y^{(t)}&#95;k)\ \log (1 - h&#95;\theta(x^{(t)})&#95;k)\right] + \frac{\lambda}{2m}\sum&#95;{l=1}^{L-1} \sum&#95;{i=1}^{s&#95;l} \sum&#95;{j=1}^{s&#95;l+1} ( \theta&#95;{j,i}^{(l)})^2
+\end{gather&#42;}
+$$</p>
+<p>If we consider simple non-multiclass classification (k = 1) and disregard regularization, the cost is computed with:</p>
+<p>$$
+cost(t) =y^{(t)} \ \log (h&#95;\theta (x^{(t)})) + (1 - y^{(t)})\ \log (1 - h&#95;\theta(x^{(t)}))
+$$</p>
+<p>More intuitively you can think of that equation roughly as:</p>
+<p>$$
+cost(t) \approx (h&#95;\theta(x^{(t)})-y^{(t)})^2
+$$</p>
+<p>Intuitively, $$\delta&#95;j^{(l)}$$ is the "error" for $$a^{(l)}&#95;j$$ (unit $$j$$ in layer $$l$$)</p>
+<p>More formally, the delta values are actually the derivative of the cost function:</p>
+<p>$$
+\delta&#95;j^{(l)} = \dfrac{\partial}{\partial z&#95;j^{(l)}} cost(t)
+$$</p>
+<p>Recall that our derivative is the slope of a line tangent to the cost function, so the steeper the slope the more incorrect we are.</p>
+<p>Note: In lecture, sometimes i is used to index a training example. Sometimes it is used to index a unit in a layer. In the Back Propagation Algorithm described here, t is used to index a training example rather than overloading the use of i.</p>
+<h1> <span class="mw-headline" id="Implementation_Note:_Unrolling_Parameters">Implementation Note: Unrolling Parameters</span></h1>
+<p>With neural networks, we are working with sets of matrices:</p>
+<p>$$
+\begin{align&#42;}
+\Theta^{(1)}, \Theta^{(2)}, \Theta^{(3)}, \dots \newline
+D^{(1)}, D^{(2)}, D^{(3)}, \dots
+\end{align&#42;}
+$$</p>
+<p>In order to use optimizing functions such as "fminunc()", we will want to "unroll" all the elements and put them into one long vector:</p>
+<code><pre>thetaVector = [ Theta1(:); Theta2(:); Theta3(:); ]
+deltaVector = [ D1(:); D2(:); D3(:) ]
+</pre></code>
+<p>If the dimensions of Theta1 is 10x11, Theta2 is 10x11 and Theta3 is 1x11, then we can get back our original matrices from the "unrolled" versions as follows:</p>
+<code><pre>Theta1 = reshape(thetaVector(1:110),10,11)
+Theta2 = reshape(thetaVector(111:220),10,11)
+Theta3 = reshape(thetaVector(221:231),1,11)
+</pre></code>
+<p>NOTE: The lecture slides show an example neural network with 3 layers. However, <em>3</em> theta matrices are defined: Theta1, Theta2, Theta3. There should be only 2 theta matrices: Theta1 (10 x 11), Theta2 (1 x 11).</p>
+<h1> <span class="mw-headline" id="Gradient_Checking">Gradient Checking</span></h1>
+<p>Gradient checking will assure that our backpropagation works as intended.</p>
+<p>We can approximate the derivative of our cost function with:</p>
+<p>$$
+\dfrac{\partial}{\partial\Theta}J(\Theta) \approx \dfrac{J(\Theta + \epsilon) - J(\Theta - \epsilon)}{2\epsilon}
+$$</p>
+<p>With multiple theta matrices, we can approximate the derivative <strong>with respect to</strong> $$\Theta&#95;j$$ as follows: </p>
+<p>$$
+\dfrac{\partial}{\partial\Theta&#95;j}J(\Theta) \approx \dfrac{J(\Theta&#95;1, \dots, \Theta&#95;j + \epsilon, \dots, \Theta&#95;n) - J(\Theta&#95;1, \dots, \Theta&#95;j - \epsilon, \dots, \Theta&#95;n)}{2\epsilon}
+$$</p>
+<p>A good small value for $${\epsilon}$$ (epsilon), guarantees the math above to become true. If the value be much smaller, may we will end up with numerical problems. The professor Andrew usually uses the value $${\epsilon = 10^{-4}}$$.</p>
+<p>We are only adding or subtracting epsilon to the $$\Theta&#95;j$$ matrix. In octave we can do it as follows:</p>
+<code><pre>epsilon = 1e-4;
+for i = 1:n,
+  thetaPlus = theta;
+  thetaPlus(i) += epsilon;
+  thetaMinus = theta;
+  thetaMinus(i) -= epsilon;
+  gradApprox(i) = (J(thetaPlus) - J(thetaMinus))/(2*epsilon)
+end;
+</pre></code>
+<p>We then want to check that gradApprox $$\approx$$ deltaVector.</p>
+<p>Once you've verified <strong>once</strong> that your backpropagation algorithm is correct, then you don't need to compute gradApprox again. The code to compute gradApprox is very slow.</p>
+<h1> <span class="mw-headline" id="Random_Initialization">Random Initialization</span></h1>
+<p>Initializing all theta weights to zero does not work with neural networks. When we backpropagate, all nodes will update to the same value repeatedly.</p>
+<p>Instead we can randomly initialize our weights:</p>
+<p>Initialize each $$\Theta^{(l)}&#95;{ij}$$ to a random value between $$[-\epsilon,\epsilon]$$:</p>
+<p>$$
+\epsilon = \dfrac{\sqrt{6}}{\sqrt{\mathrm{Loutput} + \mathrm{Linput}}}
+$$</p>
+<p>$$
+\Theta^{(l)} =  2 \epsilon \; \mathrm{rand}(\mathrm{Loutput}, \mathrm{Linput} + 1)    - \epsilon<br />
+$$</p>
+<code><pre>If the dimensions of Theta1 is 10x11, Theta2 is 10x11 and Theta3 is 1x11.
+
+Theta1 = rand(10,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
+Theta2 = rand(10,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
+Theta3 = rand(1,11) * (2 * INIT_EPSILON) - INIT_EPSILON;
+</pre></code>
+<p>rand(x,y) will initialize a matrix of random real numbers between 0 and 1. (Note: this epsilon is unrelated to the epsilon from Gradient Checking)</p>
+<p>Why use this method? This paper may be useful:</p>
+<p><a rel="nofollow" class="external free" href="https://web.stanford.edu/class/ee373b/nninitialization.pdf">https://web.stanford.edu/class/ee373b/nninitialization.pdf</a></p>
+<h1> <span class="mw-headline" id="Putting_it_Together">Putting it Together</span></h1>
+<p>First, pick a network architecture; choose the layout of your neural network, including how many hidden units in each layer and how many layers total.
+<ul><li> Number of input units = dimension of features $$x^{(i)}$$
+</li><li> Number of output units = number of classes
+</li><li> Number of hidden units per layer = usually more the better (must balance with cost of computation as it increases with more hidden units)
+</li><li> Defaults: 1 hidden layer. If more than 1 hidden layer, then the same number of units in every hidden layer.</p>
+</li></ul>
+
+<p><strong>Training a Neural Network</strong></p>
+<ol>
+<li>Randomly initialize the weights</li>
+<li>Implement forward propagation to get $$h&#95;\theta(x^{(i)})$$</li>
+<li>Implement the cost function</li>
+<li>Implement backpropagation to compute partial derivatives</li>
+<li>Use gradient checking to confirm that your backpropagation works. Then disable gradient checking.</li>
+<li>Use gradient descent or a built-in optimization function to minimize the cost function with the weights in theta.</li>
+</ol>
+<p>When we perform forward and back propagation, we loop on every training example:</p>
+<code><pre>for i = 1:m,
+   Perform forward propagation and backpropagation using example (x(i),y(i))
+   (Get activations a(l) and delta terms d(l) for l = 2,...,L
+</pre></code>
+<h1> <span class="mw-headline" id="Bonus:_Tutorial_on_How_to_classify_your_own_images_of_digits">Bonus: Tutorial on How to classify your own images of digits</span></h1>
+<ul>
+<li><a href="/wiki/index.php/ML:Classify_your_own_images" title="ML:Classify your own images">link to a complete tutorial on How to classify your own images of digits</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Sample_image">Sample image</span></h2>
+<p><a href="/wiki/images/d/d8/ML-Ex3-MyPhotoToDataDigit-4.jpg" class="image"><img alt="ML-Ex3-MyPhotoToDataDigit-4.jpg" src="/wiki/images/d/d8/ML-Ex3-MyPhotoToDataDigit-4.jpg" width="897" height="832" /></a>
+<ul><li> Use your own photos
+</li><li> Use your own predict function from Exercise 3
+</li><li> <a href="/wiki/index.php/ML:Classify_your_own_images" title="ML:Classify your own images">The tutorial</a> also explains how the images are converted thru several formats to be processed and displayed.</p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="Bonus:_Explanation_of_Derivatives_Used_in_Backpropagation">Bonus: Explanation of Derivatives Used in Backpropagation</span></h1>
+<p>Start!
+<ul><li> We know that for a logistic regression classifier (which is what all of the output neurons in a neural network are), we use the cost function, $$J(\theta) = -ylog(h&#95;{\theta}(x)) - (1-y)log(1-h&#95;{\theta}(x))$$, and apply this over the $$K$$ output neurons, and for all $$m$$ examples.
+</li><li> The equation to compute the partial derivatives of the theta terms in the output neurons:
+</li></ul>
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-1)}} = \frac{\partial J(\theta)}{\partial a^{(L)}} \frac{\partial a^{(L)}}{\partial z^{(L)}} \frac{\partial z^{(L)}}{\partial \theta^{(L-1)}}$$
+<ul><li> And the equation to compute partial derivatives of the theta terms in the [last] hidden layer neurons (layer L-1):
+</li></ul>
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = \frac{\partial J(\theta)}{\partial a^{(L)}} \frac{\partial a^{(L)}}{\partial z^{(L)}} \frac{\partial z^{(L)}}{\partial a^{(L-1)}} \frac{\partial a^{(L-1)}}{\partial z^{(L-1)}} \frac{\partial z^{(L-1)}}{\partial \theta^{(L-2)}}$$
+<ul><li> Clearly they share some pieces in common, so a delta term ($$\delta^{(L)}$$) can be used for the common pieces between the output layer and the hidden layer immediately before it (with the possibility that there could be many hidden layers if we wanted):
+</li></ul>
+$$\delta^{(L)} = \frac{\partial J(\theta)}{\partial a^{(L)}} \frac{\partial a^{(L)}}{\partial z^{(L)}}$$
+<ul><li> And we can go ahead and use another delta term ($$\delta^{(L-1)}$$) for the pieces that would be shared by the final hidden layer and a hidden layer before that, if we had one.  Regardless, this delta term will still serve to make the math and implementation more concise.
+</li></ul>
+$$\delta^{(L-1)} = \frac{\partial J(\theta)}{\partial a^{(L)}} \frac{\partial a^{(L)}}{\partial z^{(L)}} \frac{\partial z^{(L)}}{\partial a^{(L-1)}} \frac{\partial a^{(L-1)}}{\partial z^{(L-1)}}$$<br />
+$$\delta^{(L-1)} = \delta^{(L)} \frac{\partial z^{(L)}}{\partial a^{(L-1)}} \frac{\partial a^{(L-1)}}{\partial z^{(L-1)}}$$
+<ul><li> With these delta terms, our equations become:
+</li></ul>
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-1)}} = \delta^{(L)} \frac{\partial z^{(L)}}{\partial \theta^{(L-1)}}$$<br />
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = \delta^{(L-1)} \frac{\partial z^{(L-1)}}{\partial \theta^{(L-2)}}$$</p>
+<p>Now, time to evaluate these derivatives:
+<ul><li> Let's start with the output layer:
+</li></ul>
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-1)}} = \delta^{(L)} \frac{\partial z^{(L)}}{\partial \theta^{(L-1)}}$$
+<ul><li> Using $$\delta^{(L)} = \frac{\partial J(\theta)}{\partial a^{(L)}} \frac{\partial a^{(L)}}{\partial z^{(L)}}$$, we need to evaluate both partial derivatives.
+</li><li> Given $$J(\theta) = -ylog(a^{(L)}) - (1-y)log(1-a^{(L)})$$, where $$a^{(L)} = h&#95;{\theta}(x))$$, the partial derivative is:
+</li></ul>
+$$\frac{\partial J(\theta)}{\partial a^{(L)}} = \frac{1-y}{1-a^{(L)}} - \frac{y}{a^{(L)}}$$
+<ul><li> And given $$a = g(z)$$, where $$g = \frac{1}{1+e^{-z}}$$, the partial derivative is:
+</li></ul>
+$$\frac{\partial a^{(L)}}{\partial z^{(L)}} = a^{(L)}(1-a^{(L)})$$
+<ul><li> So, let's substitute these in for $$\delta^{(L)}$$:
+</li></ul>
+$$\delta^{(L)} = \frac{\partial J(\theta)}{\partial a^{(L)}} \frac{\partial a^{(L)}}{\partial z^{(L)}}$$<br />
+$$\delta^{(L)} = (\frac{1-y}{1-a^{(L)}} - \frac{y}{a^{(L)}}) (a^{(L)}(1-a^{(L)}))$$<br />
+$$\delta^{(L)} =a^{(L)} - y$$
+<ul><li> So, for a 3-layer network ($$L=3$$), 
+</li></ul>
+$$\delta^{(3)} =a^{(3)} - y$$
+<ul><li> Note that this is the correct equation, as given in our notes.
+</li><li> Now, given $$z = \theta &#42; input$$, and in layer $$L$$ the input is $$a^{(L-1)}$$, the partial derivative is:
+</li></ul>
+$$\frac{\partial z^{(L)}}{\partial \theta^{(L-1)}} = a^{(L-1)}$$
+<ul><li> <strong>Put it together for the output layer</strong>:
+</li></ul>
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-1)}} = \delta^{(L)} \frac{\partial z^{(L)}}{\partial \theta^{(L-1)}}$$<br />
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-1)}} = (a^{(L)} - y) (a^{(L-1)})$$</p>
+<ul>
+<li>Let's continue on for the hidden layer (let's assume we only have 1 hidden layer):<br />
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} =  \delta^{(L-1)} \frac{\partial z^{(L-1)}}{\partial \theta^{(L-2)}}$$</li>
+<li>Let's figure out $$\delta^{(L-1)}$$. </li>
+<li>Once again, given $$z = \theta &#42; input$$, the partial derivative is:<br />
+$$\frac{\partial z^{(L)}}{\partial a^{(L-1)}} = \theta^{(L-1)}$$</li>
+<li>And:
+$$\frac{\partial a^{(L-1)}}{\partial z^{(L-1)}} = a^{(L-1)}(1-a^{(L-1)})$$</li>
+<li>So, let's substitute these in for $$\delta^{(L-1)}$$:<br />
+$$\delta^{(L-1)} = \delta^{(L)} \frac{\partial z^{(L)}}{\partial a^{(L-1)}} \frac{\partial a^{(L-1)}}{\partial z^{(L-1)}}$$<br />
+$$\delta^{(L-1)} = \delta^{(L)} (\theta^{(L-1)}) (a^{(L-1)}(1-a^{(L-1)}))$$<br />
+$$\delta^{(L-1)} = \delta^{(L)} \theta^{(L-1)} a^{(L-1)}(1-a^{(L-1)})$$</li>
+<li>So, for a 3-layer network,<br />
+$$\delta^{(2)} = \delta^{(3)} \theta^{(2)} a^{(2)}(1-a^{(2)})$$</li>
+<li><strong>Put it together for the [last] hidden layer</strong>:<br />
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = \delta^{(L-1)} \frac{\partial z^{(L-1)}}{\partial \theta^{(L-2)}}$$<br />
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = (\delta^{(L)} \frac{\partial z^{(L)}}{\partial a^{(L-1)}} \frac{\partial a^{(L-1)}}{\partial z^{(L-1)}}) (a^{(L-2)})$$<br />
+$$\frac{\partial J(\theta)}{\partial \theta^{(L-2)}} = ((a^{(L)} - y) (\theta^{(L-1)})(a^{(L-1)}(1-a^{(L-1)}))) (a^{(L-2)})$$  </li>
+</ul>
+<h1> <span class="mw-headline" id="Bonus:_NN_for_linear_systems">Bonus: NN for linear systems</span></h1>
+<h2> <span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>The NN we created for classification can easily be modified to have a linear output. First solve the 4th programming exercise. You can create a new function script, nnCostFunctionLinear.m, with the following characteristics
+<ul><li> There is only one output node, so you do not need the 'num_labels' parameter.
+</li><li> Since there is one linear output, you do not need to convert y into a logical matrix.
+</li><li> You still need a non-linear function in the hidden layer.
+</li><li> The non-linear function is often the tanh() function - it has an output range from -1 to +1, and its gradient is easily implemented. Let $$g(z) = tanh(z)$$.
+</li><li> The gradient of tanh is $$g'(z) = 1 - g(z)^2$$. Use this in backpropagation in place of the sigmoid gradient.
+</li><li> Remove the sigmoid function from the output layer (i.e. calculate a3 without using a sigmoid function), since we want a linear output.
+</li><li> Cost computation: Use the linear cost function for J (from ex1 and ex5) for the unregularized portion. For the regularized portion, use the same method as ex4.
+</li><li> Where reshape() is used to form the Theta matrices, replace 'num&#95;labels' with '1'.
+</li></ul>
+You still need to randomly initialize the Theta values, just as with any NN. You will want to experiment with different epsilon values.
+You will also need to create a predictLinear() function, using the tanh() function in the hidden layer, and a linear output.</p>
+<h2> <span class="mw-headline" id="Testing_your_linear_NN">Testing your linear NN</span></h2>
+<p>Here is a test case for your nnCostFunctionLinear()</p>
+<code><pre>% inputs
+nn_params = [31 16 15 -29 -13 -8 -7 13 54 -17 -11 -9 16]'/ 10;
+il = 1;
+hl = 4;
+X = [1&#160;; 2&#160;; 3];
+y = [1&#160;; 4&#160;; 9];
+lambda = 0.01;
+
+% command
+[j g] = nnCostFunctionLinear(nn_params, il, hl, X, y, lambda)
+
+% results
+j =  0.020815
+g =
+    -0.0131002
+    -0.0110085
+    -0.0070569
+     0.0189212
+    -0.0189639
+    -0.0192539
+    -0.0102291
+     0.0344732
+     0.0024947
+     0.0080624
+     0.0021964
+     0.0031675
+    -0.0064244
+</pre></code>
+<p>Now create a script that uses the 'ex5data1.mat' from ex5, but without creating the polynomial terms. 
+With 8 units in the hidden layer and MaxIter set to 200, you should be able to get a final cost value of 0.3 to 0.4. The results will vary a bit due to the random Theta initialization. If you plot the training set and the predicted values for the training set (using your predictLinear() function), you should have a good match.</p>
+<h1> <span class="mw-headline" id="Bonus:_Dean_Pomerleau.27s_autonomous_driving_projects">Bonus: Dean Pomerleau's autonomous driving projects</span></h1>
+<p><a rel="nofollow" class="external text" href="http://www.ri.cmu.edu/research_project_detail.html?type=publication&amp;project_id=160&amp;menu_id=261">CMU NavLab</a></p>
+<h1> <span class="mw-headline" id="Additional_Resources_for_Backpropagation">Additional Resources for Backpropagation</span></h1>
+<ul>
+<li>Very thorough conceptual [example] (<a rel="nofollow" class="external free" href="https://web.archive.org/web/20150317210621/https://www4.rgu.ac.uk/files/chapter3%20-%20bp.pdf">https://web.archive.org/web/20150317210621/https://www4.rgu.ac.uk/files/chapter3%20-%20bp.pdf</a>)</li>
+<li>Short <a rel="nofollow" class="external text" href="http://pandamatak.com/people/anand/771/html/node37.html">derivation</a> of the backpropagation algorithm</li>
+<li>Stanford University deep learning <a rel="nofollow" class="external text" href="http://ufldl.stanford.edu/wiki/index.php/Backpropagation_Algorithm">notes</a></li>
+<li>Very thorough <a rel="nofollow" class="external text" href="http://neuralnetworksanddeeplearning.com/chap2.html">derivation and proof</a> </li>
+</ul>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Advice_for_Applying_Machine_Learning" title="ML:Advice for Applying Machine Learning">Advice for Applying Machine Learning</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 71/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Neural_Networks:_Learning&amp;oldid=34310">https://share.coursera.org/wiki/index.php?title=ML:Neural_Networks:_Learning&amp;oldid=34310</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

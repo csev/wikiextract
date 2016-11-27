@@ -1,0 +1,79 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Linear Regression with One Variable</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Model_Representation"><span class="tocnumber">1</span> <span class="toctext">Model Representation</span></a></li>
+<li class="toclevel-1"><a href="#The_Hypothesis_Function"><span class="tocnumber">2</span> <span class="toctext">The Hypothesis Function</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example:"><span class="tocnumber">2.1</span> <span class="toctext">Example:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Cost_Function"><span class="tocnumber">3</span> <span class="toctext">Cost Function</span></a></li>
+<li class="toclevel-1"><a href="#Frequently_Asked_Questions"><span class="tocnumber">4</span> <span class="toctext">Frequently Asked Questions</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Model_Representation">Model Representation</span></h1>
+<p>Recall that in <em>regression problems</em>, we are taking input variables and trying to fit the output onto a <em>continuous</em> expected result function. </p>
+<p>Linear regression with one variable is also known as "univariate linear regression."</p>
+<p>Univariate linear regression is used when you want to predict a <strong>single output</strong> value $$y$$ from a <strong>single input</strong> value $$x$$. We're doing <strong>supervised learning</strong> here, so that means we already have an idea about what the input/output cause and effect should be. </p>
+<h1> <span class="mw-headline" id="The_Hypothesis_Function">The Hypothesis Function</span></h1>
+<p>Our hypothesis function has the general form:</p>
+<blockquote>
+  <p>$$\hat{y} = h&#95;\theta(x) = \theta&#95;0 + \theta&#95;1 x$$</p>
+</blockquote>
+<p>Note that this is like the equation of a straight line. 
+We give to $$h&#95;\theta(x)$$ values for $$\theta&#95;0$$ and $$\theta&#95;1$$ to get our estimated output  $$ \hat{y} $$.  In other words, we are trying to create a function called $$h&#95;\theta$$ that is trying to map our input data (the x's) to our output data (the y's).</p>
+<h3> <span class="mw-headline" id="Example:">Example:</span></h3>
+<p>Suppose we have the following set of training data:</p>
+<blockquote>
+  <table>
+  <tr><th>input<br />x</th><th>output<br />y</th></tr>
+  <tr><td align="center">0</td><td align="center">4</td></tr>
+  <tr><td align="center">1</td><td align="center">7</td></tr>
+  <tr><td align="center">2</td><td align="center">7</td></tr>
+  <tr><td align="center">3</td><td align="center">8</td></tr>
+  </table>
+</blockquote>
+<p>Now we can make a random guess about our $$h&#95;\theta$$ function: $$\theta&#95;0 = 2$$ and $$\theta&#95;1 = 2$$. The hypothesis function becomes $$h&#95;\theta(x) = 2 + 2 x$$. </p>
+<p>So for input of 1 to our hypothesis, y will be 4. This is off by 3.
+Note that we will be trying out various values of $$\theta&#95;0$$ and $$\theta&#95;1$$ to try to find values which provide the best possible "fit" or the most representative "straight line" through the data points mapped on the x-y plane.</p>
+<h1> <span class="mw-headline" id="Cost_Function">Cost Function</span></h1>
+<p>We can measure the accuracy of our hypothesis function by using a <strong>cost function</strong>. This takes an average (actually a fancier version of an average) of all the results of the hypothesis with inputs from x's compared to the actual output y's. </p>
+<p>$$J(\theta&#95;0, \theta&#95;1) = \dfrac {1}{2m} \displaystyle \sum &#95;{i=1}^m \left ( \hat{y}&#95;{i}- y&#95;{i} \right)^2  = \dfrac {1}{2m} \displaystyle \sum &#95;{i=1}^m \left (h&#95;\theta (x&#95;{i}) - y&#95;{i} \right)^2$$</p>
+<p>To break it apart, it is $$\frac{1}{2} \bar{x}$$ where $$\bar{x}$$ is the mean of the squares of $$h&#95;\theta (x&#95;{i}) - y&#95;{i}$$ , or the difference between the predicted value and the actual value.</p>
+<p>This function is otherwise called the "Squared error function", or "Mean squared error". The mean is halved $$\left(\frac{1}{2m}\right)$$ as a convenience for the computation of the gradient descent, as the derivative term of the square function will cancel out the  $$\frac{1}{2}$$ term.</p>
+<p>Now we are able to concretely measure the accuracy of our predictor function against the correct results we have so that we can predict new results we don't have.</p>
+<p>If we try to think of it in visual terms, our training data set is scattered on the x-y plane. We are trying to make straight line (defined by $$h&#95;\theta(x)$$) which passes through this scattered set of data. Our objective is to get the best possible line. The best possible line will be such so that the average squared vertical distances of the scattered points from the line will be the least. In the best case, the line should pass through all the points of our training data set. In such a case the value of $$J(\theta&#95;0, \theta&#95;1)$$ will be 0.</p>
+<h1> <span class="mw-headline" id="Frequently_Asked_Questions">Frequently Asked Questions</span></h1>
+<p><strong>Q: Why is the cost function about the sum of squares, rather than the sum of cubes (or just the $$ (h(x) -y) $$ or $$abs(h(x) -y)$$ )&#160;?</strong></p>
+<p>A: It might be easier to think of this as measuring the distance of two points. In this case, we are measuring the distance of two multi-dimensional values (i.e. the observed output value $$y&#95;i$$ and the estimated output value $$\hat{y}&#95;i$$). We all know how to measure the distance of two points $$(x&#95;1, y&#95;1)$$ and $$(x&#95;2, y&#95;2)$$, which is $$\sqrt{(x&#95;1-x&#95;2)^2+(y&#95;1-y&#95;2)^2}$$. If we have n-dimension then we want the positive square root of $$\sum&#95;{i=1}^{n} (x&#95;i-y&#95;i)^2$$. That's where the sum of squares comes from. (see also <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean distance</a>)</p>
+<p>The sum of squares isn’t the only possible cost function, but it has many nice properties. Squaring the error means that an overestimate is "punished" just the same as an underestimate: an error of -1 is treated just like +1, and the two equal but opposite errors can’t cancel each other. If we cube the error (or just use the difference), we lose this property. Also in the case of cubing, big errors are punished more than small ones, so an error of 2 becomes 8.</p>
+<p>The squaring function is smooth (can be differentiated) and yields linear forms after differentiation, which is nice for optimization. It also has the property of being “convex”. A convex cost function guarantees there will be a global minimum, so our algorithms will converge.</p>
+<p>If you throw in absolute value, then you get a non-differentiable function. If you try to take the derivative of abs(x) and set it equal to zero to find the minimum, you won't get any answers since it's undefined in 0.</p>
+<p><strong>Q: Why can’t I use 4th powers in the cost function? Don’t they have the nice properties of squares?</strong></p>
+<p>A: Imagine that you are throwing darts at a dartboard, or firing arrows at a target. If you use the sum of squares as the error (where the center of the bulls-eye is the origin of the coordinate system), the error is the distance from the center. Now rotate the coordinates by 30 degree, or 45 degrees, or anything. The distance, and hence the error, remains unchanged. 4th powers lack this property, which is known as “rotational invariance”.</p>
+<p><strong>Q: Why does 1/(2 * m) make the math easier?</strong></p>
+<p>A: When we differentiate the cost to calculate the gradient, we get a factor of 2 in the numerator, due to the exponent inside the sum. This '2' in the numerator cancels-out with the '2' in the denominator, saving us one math operation in the formula.</p>
+<hr />
+<p>Next: <a href="/wiki/index.php/ML:Gradient_Descent" title="ML:Gradient Descent">Gradient Descent</a> Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 10/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Linear_Regression_with_One_Variable&amp;oldid=34035">https://share.coursera.org/wiki/index.php?title=ML:Linear_Regression_with_One_Variable&amp;oldid=34035</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

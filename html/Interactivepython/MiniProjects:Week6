@@ -1,0 +1,89 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Interactivepython:MiniProjects:Week6</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_6_Mini-project"><span class="tocnumber">1</span> <span class="toctext">Week 6 Mini-project</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Blackjack"><span class="tocnumber">1.1</span> <span class="toctext">Blackjack</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Mini-project_development_process"><span class="tocnumber">1.1.1</span> <span class="toctext">Mini-project development process</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Phase_one"><span class="tocnumber">1.1.1.1</span> <span class="toctext">Phase one</span></a></li>
+<li class="toclevel-4"><a href="#Phase_two"><span class="tocnumber">1.1.1.2</span> <span class="toctext">Phase two</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Grading_rubric_-_18_pts_total_.28scaled_to_100.29"><span class="tocnumber">1.1.2</span> <span class="toctext">Grading rubric - 18 pts total (scaled to 100)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_6_Mini-project">Week 6 Mini-project</span></h1>
+<h2> <span class="mw-headline" id="Blackjack">Blackjack</span></h2>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=20">original source</a></p>
+<p>Blackjack is a simple, popular card game that is played in many casinos.  During a hand of Blackjack, the players plays against a dealer with the goal of building a hand whose value is higher than the value of the dealer's hand, but not over 21. (The player is said to have busted in this case).  Cards in Blackjack have the following values: an ace may be valued as either 1 or 11 (player's choice), face cards are valued at 10 and the value of the remaining cards corresponds to their number.The game logic for our <em>simplified</em> version of Blackjack is as follows. The player and the dealer are each dealt two cards initially with one of the dealer's cards being dealt faced down (his <em>hole</em> card).  The player may then ask for the dealer to repeatedly "hit" his hand by dealing him another card.  If at any point the value of the player's hand exceeds 21, the player is "busted" and loses immediately.  At any point prior to busting, the player may "stand" and the dealer will then expose his hole card and hit his hand until the value of his hand is 17 or more. (Aces count as 11 unless it causes the dealer's hand to bust). If the dealer busts, the player wins. Otherwise, the player and dealer then compare the values of their hands and the hand with the higher value wins.  <b>The dealer wins ties in our version.</b></p>
+<h3> <span class="mw-headline" id="Mini-project_development_process">Mini-project development process</span></h3>
+<p>We suggest you develop your Blackjack game in two phases.  The first phase will concentrate on implementing the basic logic of Blackjack while the second phase will focus on building a more full-featured version.  In phase one, you will use buttons to control the game and echo the state of the game to the console using print statements.  In the second phase, you will replace the print statements by drawing images and text on the canvas and add some extra game logic.</p>
+<h4> <span class="mw-headline" id="Phase_one">Phase one</span></h4>
+<ol>
+<li>Download the  <a rel="nofollow" class="external text" href="http://www.codeskulptor.org/#examples-blackjack_template.py">program template</a> for this mini-project and review the class definitions for <code>Card</code> and <code>Hand</code>.  Implement the methods <code>&#95;&#95;init&#95;&#95;, &#95;&#95;str&#95;&#95;, add&#95;card</code> for the <code>Hand</code> class. We suggest modeling a hand as a list of cards.</li>
+<li>Implement the <code>Deck</code> class.  We sugget modeling a deck of cards as list of cards generated using a list comprehension.  Use <code>random.shuffle()</code> to shuffle this deck of cards.</li>
+<li>Use the <code>add&#95;card</code> method for a hand and the <code>deal&#95;card</code> method for a deck to transfer a card from the deck to a hand. Ignore the possibility of being busted for now.</li>
+<li>Implement a "Deal" button that clears everything, creates player and dealer hands, and hits both the player and the dealer twice.  The hands should be printed to the console with an appropriate message indicating which hand is which.</li>
+<li>Implement a <code>get&#95;value</code> method for the <code>Hand</code> class.  You should use the provided <code>VALUE</code> dictionary to look up the value of a single card in conjunction with the logic explained in the video lecture for this project to compute the value of a hand.</li>
+<li>Implement a "Hit" button. If the value of the hand is less than or equal to 21, clicking this button adds an extra card to player's hand. If the value exceeds 21 after being hit, print "You have busted".</li>
+<li>Implement a "Stand" button.  If the player has busted, remind the player that they have busted.  Otherwise, repeatedly hit the dealer until his hand has value 17 or more (using a while loop). If the dealer busts, let the player know.   Otherwise, compare the value of the player's and dealer's hands.  If the value of the player's hand is less than or equal to the dealer's hand, the dealer wins.  Otherwise the player has won. <b>Remember the dealer wins ties in our version. </b></li>
+</ol>
+<p>With this design, the player needs to explicitly hit "Deal" to start a new deal.  This choice will make using the canvas to build an image-based version of Blackjack easier.  At this point, we would suggest testing your implementation of Blackjack extensively.</p>
+<h4> <span class="mw-headline" id="Phase_two">Phase two</span></h4>
+<p>In the second phase of your implementation, you will add five features:</p>
+<ol>
+<li>Using the <code>draw</code> method of the <code>Card</code> class provided in the program template, implement your own <code>draw</code> method for the <code>Hand</code> class.  We suggest that each player's hand be drawn as a horizontal sequence of cards on the canvas.  To simplify your code, you may assume that only the first five cards of a player's hand need to be visible on the canvas.</li>
+<li>Replace printing in the console by drawing text messages on the canvas.  We suggest adding a global <code>message</code> string that is drawn in the draw handler using <code>draw&#95;text</code>.</li>
+<li>Add logic that keeps track of whether the player's hand is still being played.  If the hand is still in play, you should draw an image of the back of a card (provided in the template) over the dealer's first (hole) card to hide it. Once the player is done, the dealer's hole card should be displayed.</li>
+<li>Add a score counter that keeps track of wins and losses for your Blackjack session. In the simplest case (see our demo), the program displays wins minus losses.  However, you are welcome to implement a more sophisticated betting/scoring system.</li>
+<li>Finally, modify the logic for the "Deal" button to reset and reshuffle the deck to avoid the situation where the deck becomes empty.  If the "Deal" button is hit during the middle of a hand, the player loses the hand.</li>
+</ol>
+<p>Congratulations!  You have just built Blackjack.  To wrap things up, please review the demo of our version of Blackjack in the Blackjack video lecture to ensure that your version has full functionality. </p>
+<h3> <span class="mw-headline" id="Grading_rubric_-_18_pts_total_.28scaled_to_100.29">Grading rubric - 18 pts total (scaled to 100)</span></h3>
+<p>You must implement the simplified rules of Blackjack specified in this description.  Small variations from our demo version are acceptable such as displaying the value of a hand or implementing a betting system.  <b>But, you may not change the logic of the game.</b>  After the submission deadline, you are welcome to post enhanced versions of Blackjack to the Hall of Fame with more realistic game logic such as pushes on ties, splitting pairs and doubling down.</p>
+<ul>
+<li>1 pt - The program displays the title "Blackjack" on the canvas.</li>
+<li>1 pt - The program displays 3 buttons ("Deal", "Hit" and "Stand") in the control area. </li>
+<li>2 pts - The program graphically displays the player's hand using card images. (1 pt if text is displayed in the console instead) </li>
+<li>2 pts - The program graphically displays the dealer's hand using card images. Displaying both of the dealer's cards face up is allowable when evaluating this bullet. (1 pt if text displayed in the console instead) </li>
+<li>1 pt - The dealer's hole card is hidden until the hand is over when it is then displayed.</li>
+<li>2 pts - Hitting the "Deal" button deals out two cards each to the player and dealer. (1 pt per player)  </li>
+<li>1 pt - Hitting the "Deal" button in the middle of the hand causes the player to lose the current hand.</li>
+<li>1 pt - Hitting the "Hit" button deals another card to the player. </li>
+<li>1 pt - Hitting the "Stand" button deals cards to the dealer as necessary.</li>
+<li>1 pt - The program correctly recognizes the player busting. </li>
+<li>1 pt - The program correctly recognizes the dealer busting. </li>
+<li>1 pt - The program correctly computes hand values and declares a winner. Evalute based on player/dealer winner messages. </li>
+<li>2 pts - The program accurately prompts the player for an action with messages similar to "Hit or stand?" and "New deal?". (1 pt per message)</li>
+<li>1 pt - The program implements a scoring system that correctly reflects wins and losses. Please be generous in evaluating this item.</li>
+</ul>
+<hr />
+<p><a href="/wiki/index.php/Interactivepython:MiniProjects" title="Interactivepython:MiniProjects">MiniProjects</a></p>
+<p><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week6&amp;oldid=18966">https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week6&amp;oldid=18966</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

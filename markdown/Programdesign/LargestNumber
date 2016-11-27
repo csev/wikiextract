@@ -1,0 +1,12 @@
+### Largest Number in a list
+
+Start with a list of numbers, defined as:
+
+ListOfNumber is one of:
+
+ * empty
+ * (cons Number ListOfNumber)
+
+Write a function that consumes a ListOfNumber and produces the largest number in the list.
+
+Hint: a wish list function may be necessary.

@@ -1,0 +1,62 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML3:Python notes</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ML3:Main" title="ML3:Main">« Back to the main page</a></p>
+<h2> <span class="mw-headline" id="Avoiding_explicit_loops">Avoiding explicit loops</span></h2>
+<p>In general, code involving SFrames/SArrays and NumPy ndarrays is more performant if explicit Python loops are avoided. Explicit loops include <code>for</code> and <code>while</code> loops over the array, such as:</p>
+<pre>
+num_positive_predictions = 0
+for i in range(len(predictions)):
+    if predictions[i] == +1:
+        num_positive_predictions += 1
+</pre>
+<p>.. and Python list comprehensions, such as:</p>
+<pre>
+num_positive_predictions = sum([p == +1 for p in predictions])
+</pre>
+<p>SFrame/SArray supports a feature called "logical filters" that can be used to select rows of an SFrame or values of an SArray that satisfy a predicate. For example, if <code>test_data</code> is an SFrame of the test dataset and <code>predictions</code> is an SArray of the test predictions, we can select the test examples that are predicted to be positive with:</p>
+<pre>
+predicted_positive = test_data[predictions == +1]
+</pre>
+<p>We can count the number of positive predictions with:</p>
+<pre>
+num_positive_predictions = len(predictions[predictions == +1])
+</pre>
+<p>Assuming that the true label field of <code>test_data</code> is named 'true_label', we can count the number of positive test examples with:</p>
+<pre>
+num_positive = len(test_data[test_data['true_label'] == +1])
+</pre>
+<p><strong>NOTE</strong> Within the predicate expression, boolean AND is represented using the <code>&amp;</code> operator rather than the <code>and</code> operator. Similarly, boolean OR is represented using the <code>|</code> operator rather than the <code>or</code> operator. In addition, because <code>&amp;</code> and <code>|</code> have higher operator precedence than <code>and</code> and <code>or</code>, you should generally surround both operands with parentheses. For example:</p>
+<pre>
+false_negatives = test_data[(test_data['true_label'] == +1) &amp; (predictions == -1)]
+</pre>
+<p>If you see error messages like "TypeError: unsupported operand type(s) for &amp;: 'int' and 'SArray'", then try surrounding the operands with parentheses.</p>
+<h2> <span class="mw-headline" id="from_future_import_division"><code>from __future__ import division</code></span></h2>
+<p>The effect of this import is to modify the behavior of the division operator <code>/</code> to be like Python 3. In Python 2, dividing two integers results in integer division by default. This has led to unexpected results and confusion. For example, when calculating the classification error, the formula is #incorrect / #examples. Because #incorrect is less than #examples, the result of the division would always be 0 by default in Python 2 without taking steps to cast either the numerator or denominator to a float.</p>
+<p>Here is a demo:</p>
+<code><pre>&gt;&gt;&gt; 1 / 2
+0
+&gt;&gt;&gt; from __future__ import division
+&gt;&gt;&gt; 1 / 2
+0.5
+</pre></code>
+<p>See also: <a rel="nofollow" class="external text" href="https://www.python.org/dev/peps/pep-0238/">PEP 238 -- Changing the Division Operator</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 65/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML3:Python_notes&amp;oldid=33566">https://share.coursera.org/wiki/index.php?title=ML3:Python_notes&amp;oldid=33566</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,127 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML1:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Welcome to the ML1:Main wiki! This is a wiki set up for the first course in the University of Washington Machine Learning Specialization: <a rel="nofollow" class="external text" href="https://www.coursera.org/learn/ml-foundations">Machine Learning Foundations: A Case Study Approach</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Helpful_links"><span class="tocnumber">1</span> <span class="toctext">Helpful links</span></a></li>
+<li class="toclevel-1"><a href="#Graphlab_issues"><span class="tocnumber">2</span> <span class="toctext">Graphlab issues</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.27import_graphlab.27_fails_after_graphlab_upgrade"><span class="tocnumber">2.1</span> <span class="toctext">'import graphlab' fails after graphlab upgrade</span></a></li>
+<li class="toclevel-2"><a href="#SFrame.show.28.29_doesn.27t_show_anything"><span class="tocnumber">2.2</span> <span class="toctext">SFrame.show() doesn't show anything</span></a></li>
+<li class="toclevel-2"><a href="#No_module_named_graphlab_.28under_construction.29"><span class="tocnumber">2.3</span> <span class="toctext">No module named graphlab (under construction)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Additional_reading"><span class="tocnumber">3</span> <span class="toctext">Additional reading</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Helpful_links">Helpful links</span></h1>
+<ul>
+<li><p><a rel="nofollow" class="external text" href="https://github.com/learnml/machine-learning-specialization">The specialization's official GitHub repository</a></p>
+<p>You can find the data sets and latest Jupyter notebooks there.</p></li>
+<li><p><a rel="nofollow" class="external text" href="https://dato.com/products/create/docs/index.html">GraphLab Create API Documentation</a></p>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://dato.com/products/create/docs/generated/graphlab.SFrame.html"><code>graphlab.SFrame</code></a></li>
+<li><a rel="nofollow" class="external text" href="https://dato.com/products/create/docs/generated/graphlab.SArray.html"><code>graphlab.SArray</code></a></li>
+</ul></li>
+<li><p><a href="/wiki/index.php/ML1:Errata" title="ML1:Errata">Errata</a></p></li>
+</ul>
+<h1> <span class="mw-headline" id="Graphlab_issues">Graphlab issues</span></h1>
+<h3> <span class="mw-headline" id=".27import_graphlab.27_fails_after_graphlab_upgrade">'import graphlab' fails after graphlab upgrade</span></h3>
+<p><strong>Prerequisite</strong></p>
+<blockquote>
+  <p>Executing 
+<pre>
+import graphlab
+</pre></p>
+</blockquote>
+<p><strong>Error text</strong> </p>
+<blockquote>
+  <p>ImportError: dlopen(/Users/<strong><em>/anaconda/lib/python2.7/site-packages/graphlab/cython/cy_unity.so,
+  no suitable image found.  Did find:
+  /Users/</em></strong>/anaconda/lib/python2.7/site-packages/graphlab/cython/cy_unity.so: unknown file type, 
+  first eight bytes: 0x7F 0x45 0x4C 0x46 0x02 0x01 0x01 0x00</p>
+</blockquote>
+<p><strong>Solution</strong> (<a rel="nofollow" class="external text" href="http://forum.turi.com/discussion/1319/error-when-importing-graphlab">source</a>)</p>
+<p>One of the most probable cause is outdated pip.</p>
+<p>To fix it start Dato Launcher, then select Terminal. Check current version of pip with
+<pre>
+pip -V
+</pre>
+In case you see older version just run upgrade with next command:</p>
+<pre>
+pip install --upgrade pip
+</pre>
+<p>Then re-install graphlab-create
+<pre>
+pip uninstall graphlab-create
+pip install graphlab-create==2.0
+</pre></p>
+<hr />
+<h3> <span class="mw-headline" id="SFrame.show.28.29_doesn.27t_show_anything">SFrame.show() doesn't show anything</span></h3>
+<p><strong>Prerequisite</strong></p>
+<blockquote>
+  <p>Executing something like
+<pre>
+import graphlab
+graphlab.canvas.set_target('ipynb')
+data = graphlab.SFrame('data/')
+data['image'].show()
+</pre></p>
+</blockquote>
+<p><strong>Issue</strong> </p>
+<blockquote>
+  <p>Expecting some images to show up but it shows nothing</p>
+</blockquote>
+<p><strong>Solution</strong></p>
+<ol>
+<li>Make sure you are running correct graphlab version. Start Dato Launcher, then select Terminal. Execute next command:
+<pre>
+pip install graphlab-create==2.0
+</pre></li>
+</ol>
+<p><strong>Workaround</strong> (<em>if nothing else work</em>)</p>
+<p>Replace </p>
+<blockquote>
+<pre>
+graphlab.canvas.set_target('ipynb')
+</pre>
+</blockquote>
+<p>with </p>
+<blockquote>
+<pre>
+graphlab.canvas.set_target('browser')
+</pre>
+</blockquote>
+<p>Instead of inlining images into the page it will open a new browser page for images. This is less convenient but this is something.</p>
+<hr />
+<h3> <span class="mw-headline" id="No_module_named_graphlab_.28under_construction.29">No module named graphlab (under construction)</span></h3>
+<p><strong>Prerequisite</strong></p>
+<p><strong>Error text</strong> </p>
+<p><strong>Solution</strong></p>
+<h1> <span class="mw-headline" id="Additional_reading">Additional reading</span></h1>
+<ol>
+<li><a rel="nofollow" class="external text" href="https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465065708?ie=UTF8&amp;tag=slatmaga-20">The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World</a> by Pedro Domingos</li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf">ImageNet Classification with Deep Convolutional Neural Networks</a> by Alex Krizhevsky, Ilya Sutskever and Geoffrey E. Hinton</li>
+<li><a rel="nofollow" class="external text" href="http://www.deeplearningbook.org/">Deep Learning</a> by Ian Goodfellow, Yoshua Bengio and Aaron Courville</li>
+<li><a rel="nofollow" class="external text" href="http://www.tfidf.com/">Tf-idf&#160;:: A Single-Page Tutorial</a></li>
+</ol>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 76/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML1:Main&amp;oldid=33953">https://share.coursera.org/wiki/index.php?title=ML1:Main&amp;oldid=33953</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

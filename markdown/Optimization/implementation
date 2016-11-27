@@ -1,0 +1,6 @@
+The course lectures contain many small examples, usually in an abstract specification.  This page contains a collection of those examples with specific implementations, so you can play with them.
+
+* [[Optimization:implementation:magicseries | Magic Series]]
+* [[Optimization:implementation:queens | N-Queens]]
+* [[Optimization:implementation:sendmoremoney | Send More Money]]
+* ...

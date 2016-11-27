@@ -1,0 +1,72 @@
+An anonymous student posted this to the forum in the first iteration of the course:  
+  
+*I wrote some Matlab/Octave code that might be interesting for those of you who want to play around with the differential equation governing the number of open and closed channels in a bioelectrical system. Given that there was no specific quiz question regarding this material I am assuming it is safe to do so. For best results save the 3 functions as three separate .m files.*
+  
+    function n = nchannels(t,alpha, beta, no, nc)
+    %% nchannels
+    %% Calculate number of open channels in a bioelectrical system
+    %% The equation used is based on the solution to 
+    %% dNo/dt = alpha*Nc - beta*No
+    %%
+    %% The following parameters are required:
+    %% t        : time at which to calculate number of open channels (ms)
+    %% alpha    : channel closing rate in 1/ms
+    %% beta     : channel opening rate in 1/ms
+    %% no       : initial number of open channels
+    %% nc       : initial number of closed channels
+
+    n = alpha*(no+nc)/(alpha + beta) + (no - alpha*(no+nc)/(alpha+beta))*exp(-t*(alpha+beta));
+    
+    end %nchannels
+
+    function result = nchannelsIntSolve(t, alpha, beta, no, nc, stepsize)
+    %% nchannelsIntSolve
+    %% Calculate number of open channels in a bioelectrical system
+    %%
+    %% This function numerically integrates the following differential equation
+    %% dNo/dt = alpha*Nc - beta*No
+    %%
+    %% The following parameters are required:
+    %% t        : time at which to calculate number of open channels (ms)
+    %% alpha    : channel closing rate in 1/ms
+    %% beta     : channel opening rate in 1/ms
+    %% no       : initial number of open channels
+    %% nc       : initial number of closed channels
+    %% stepsize : delta t for each iteration
+
+    n = nc + no;
+
+    for i = stepsize:stepsize:t
+        dNo = stepsize*(alpha*nc-beta*no);
+        no = no + dNo;
+        nc = n - no;
+    end
+
+    result = no;
+
+    end
+
+
+    function nchannelPlot(t, alpha, beta, no, nc, stepsize)
+
+    %% Plots the number of open channels as a function of time in a
+    %% bioelectrical system
+    %%
+    %% Requires nchannels.m
+    %%
+    %%%% The following parameters are required:
+    %% t        : time interval over which to plot (ms)
+    %% alpha    : channel closing rate in 1/ms
+    %% beta     : channel opening rate in 1/ms
+    %% no       : initial number of open channels
+    %% nc       : initial number of closed channels
+    %% stepsize : resolution of the plot in units of ms
+
+    x = stepsize:stepsize:t;
+    y = nchannels(x,alpha,beta,no,nc);
+
+    plot(x,y);
+    xlabel('Time (ms)');
+    ylabel('Number of open channels');
+
+    end % nchannelPlot

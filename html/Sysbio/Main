@@ -1,0 +1,79 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Sysbio:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction_to_Systems_Biology"><span class="tocnumber">1</span> <span class="toctext">Introduction to Systems Biology</span></a>
+<ul>
+<li class="toclevel-2"><a href="#About_the_Course"><span class="tocnumber">1.1</span> <span class="toctext">About the Course</span></a></li>
+<li class="toclevel-2"><a href="#Topics_covered_include"><span class="tocnumber">1.2</span> <span class="toctext">Topics covered include</span></a></li>
+<li class="toclevel-2"><a href="#Recommended_Background"><span class="tocnumber">1.3</span> <span class="toctext">Recommended Background</span></a></li>
+<li class="toclevel-2"><a href="#Reading_Material"><span class="tocnumber">1.4</span> <span class="toctext">Reading Material</span></a></li>
+<li class="toclevel-2"><a href="#Grading_Policy"><span class="tocnumber">1.5</span> <span class="toctext">Grading Policy</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction_to_Systems_Biology">Introduction to Systems Biology</span></h1>
+<p>Course Instructor&#160;: Prof. Ravi Iyengar</p>
+<h2> <span class="mw-headline" id="About_the_Course">About the Course</span></h2>
+<p>This course will introduce the student to contemporary Systems Biology focused on mammalian cells, their constituents and their functions.  </p>
+<p>Biology is moving from molecular to modular. As our knowledge of our genome and gene expression deepens and we develop lists of molecules (proteins, lipids, ions) involved in cellular processes, we need to understand how these molecules interact with each other to form modules that act as discrete functional systems.  These systems underlie core subcellular processes such as signal transduction, transcription, motility and electrical excitability. In turn these processes come together to exhibit cellular behaviors such as secretion, proliferation and action potentials. </p>
+<p>What are the properties of such subcellular and cellular systems?<br />
+What are the mechanisms by which emergent behaviors of systems arise?<br />
+What types of experiments inform systems-level thinking? 
+Why do we need computation and simulations to understand these systems? </p>
+<p>The course will develop multiple lines of reasoning to answer the questions listed above. Two major reasoning threads are: the design, execution and interpretation of multivariable experiments that produce large data sets; and quantitative reasoning using computational models and simulations.  Examples will be discussed to demonstrate “how” cell- level functions arise and “why” mechanistic knowledge allows us to predict cellular behaviors leading to disease states and drug responses. </p>
+<h2> <span class="mw-headline" id="Topics_covered_include">Topics covered include</span></h2>
+<ul>
+<li>Systems Level Reasoning&#160;: Bottom-Up and Top-Down Approaches for Complex Systems</li>
+<li>Cell Signaling Pathways&#160;: Molecules to Pathways, cAMP and MAP-kinase Pathways</li>
+<li>Signal Flow&#160;: Pathways to Networks</li>
+<li>The Actin Cytoskeleton &amp; the Cell Motility Machine&#160;; Cellular Electrical Machinery</li>
+<li>Mathematical Representations of Cell Biological Systems in Time and Space</li>
+<li>Gathering Large Data Sets in Genomics and Proteomics</li>
+<li>Inferring Modules: Computational Analysis of Large Data Sets; Building Networks</li>
+<li>Small Scale Systems Biology Experiments</li>
+<li>Identifying Emergent Properties by Computation:  Dynamical Models</li>
+<li>Emergent Properties: Ultrasensitivity, Bistability, Robustness &amp; Fragility</li>
+<li>Modules to Functions: Control Systems</li>
+<li>Module-Boundaries: Sharp and Fuzzy, Interactions between Subcellular Modules</li>
+<li>Emergence of Cellular Functions from Subcellular Modules</li>
+<li>Systems Analysis of Complex Diseases</li>
+<li>Systems Pharmacology: Understanding Drug Action from a Systems Perspective</li>
+</ul>
+<h2> <span class="mw-headline" id="Recommended_Background">Recommended Background</span></h2>
+<p>Undergraduate introductory cell biology; familiarity with statistics and quantitative reasoning </p>
+<h2> <span class="mw-headline" id="Reading_Material">Reading Material</span></h2>
+<ul>
+<li>Information from some chapters in Molecular Biology of the Cell (4th Edition), review articles and selected original research articles are discussed in the lectures. </li>
+<li>List of all materials used to develop the lectures are available.  These will be optional reading. </li>
+<li>Each week one paper will be assigned as required reading. The required reading will be discussed in the discussion forum. All assigned reading and most source materials will be freely accessible so there will be no cost to the student. </li>
+</ul>
+<h2> <span class="mw-headline" id="Grading_Policy">Grading Policy</span></h2>
+<ul>
+<li>Quizzes - 45% of total grade </li>
+<li>Discussion Forum - 20% of total grade </li>
+<li>Midterm Exam - 10% of total grade </li>
+<li>Final Exam - 25% of total grade</li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Sysbio:Main&amp;oldid=22098">https://share.coursera.org/wiki/index.php?title=Sysbio:Main&amp;oldid=22098</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Biology" title="Category:Biology">Biology</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

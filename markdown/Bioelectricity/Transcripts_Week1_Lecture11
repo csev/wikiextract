@@ -1,0 +1,38 @@
+# Problem Session 1-11  
+  
+* Hello again, this is Roger Coke Barr for the bioelectricity course. Week one, lecture eleven. I thought it would be useful to have a problem session. Let's see if we can work the following problem.  
+  
+## Problem Session Q (slide 80)  
+* So our problem says, suppose we have a source, right here. And just one millimeter away, we have a sink, right there.  
+* What is the potential that results, form this source and sink? At this point up here, A. And what is the potential that results from this source and sink at this point b.  
+* If you notice this diagram is not to scale, it gives you the idea that the separation along the x axis between the source and sink is small only one unit. And both the source and sync are a long ways a way from either field point a or field point b because field point a and b are ten units away on the z axis.  
+  
+## Problem Session A (slide 81)  
+* So if we take these segments in turn, we can say look this problem is done readily enough, but the fact that we have a equation that gives us the potential to a source and sink combination.  
+* We compute 5p as I0 over four pi sigma R etc. And if we specialize that to our particular situation, we'd say that means that pi over A is equal to I zero over four pi sigma. One over R, minus one over R prime.  
+* If we go over to our diagram and we say, how much is r and how much is r prime? Well, r is the distance to the source. R is the distance from field point a, where we're computing the potential to the source. That's distance r. R prime is the distance from the field point A to the sink.  
+* Now if you look at these, this problem you would say "hm, R and R prime are just about the same  because A is a long way from the source and A long way from the sink. So surely, the answer here is zero, or if not zero, inconsequential. It seems like that would be the case, but it's just not true.  
+* The difference between R and R-prime may be small, but there is a difference. And because there's a difference, this term, one over R, minus one over R-prime is definitely not equal to zero.  
+* I'll write that up here, too, just for emphasis. That term is not equal to zero. And as a result, when you compute phi A, it will have, a definite number value. I'll leave it up to you to complete the calculation.  
+  
+## Problem Session B (slide 82)  
+* If we now move on and look at the second part, the b part of the problem session question, it's the same question, except it just asks for a different field point.  
+* Now we're asking for b rather than a. 
+* So if we go over to our expression, say well, just as before, we'll make it pi b now, instead of a, still is I zero, over four pi sigma. One over R minus one over R prime. And you look at that and you say, hm, this is just the same as we had in part a, so therefore the answer is just the same as in part a.  
+* Is that right? Well, actually, no, because r is the distance now from point b, from point B to the source, so R is here. And that's just a little bit longer than it was in part a. In R prime, the distance to the distance to the sink is just a little bit shorter than it was in part a.  
+* So even though the equation is the same, the two distances are, are a little bit different. Some people would say, well in order to distinguish these symbolically, you might want to put a subscript on the r's. So I'll do that here, indicating that these r's come from field point B, rather than field point A.  
+* So, once again, I'll count on you to go ahead and substitute the numbers in. I think you'll find it worthwhile to do so. You have to do one over RB and one over RB prime, with high precision, so as to retain any significant procession.  
+* But the result should not be zero, and in fact because of the symmetry of the problem, we can see that if you do this, it should come out to be the negative of the result that was found in part A. Check and see if that what's happens.  
+  
+## Problem Session C (slide 83)  
+* So here we are in the problem session part C, and this part of the question it asks, what is the voltage between point A and point B? And we are in very good shape to answer that question, because we already know the potential of A and the potential of B. So the voltage between two points is simply the difference in the potential of two points. So we can see Vab is equal to phi A minus phi b. You have the values for phi a and phi b from the previous section, previous sections, so if you could go ahead and substitute those in and put the net result right here. Please do that now.  
+  
+## Problem Session D (slide 84)  
+* So now I thought I would ask you a more difficult challenge question. If you look at the calculations we have done so far, you'd say, well now look. Five p involves, for either p of a or p of b, if it's a we could say, okay, it's five a. And if we want to, we can put superscripts on the R, so that we have RA, or prime A. If we want to we can factor out I0 over four pi sigma as we did before. But when you get it all done what we're doing is we are computing two terms, and each term is very similar to the other. They're just a little tiny bit different.  
+* That seems like a situation that needs improvement because when you compute two things that are very close in value and then you subtract, it's confusing, it's repetitive, and it's prone to error. That is to say human error but also error in computer calculations. I mean most numerical error comes from doing subtractions of two quantities that are very similar because, then there's a big loss of numerical significance.  
+* So is there a way, mathematically to reduce the two terms to one? And the answer is no. But if you say, is there a way to reduce the two terms to one to a good approximation, the answer is yes. And the reason the answer is yes, is because to a good approximation, if you know R, and if you know this angle in between that angle (which we know that angle because we know all the coordinates), you can estimate R prime with good accuracy.  
+* If we can find R prime, in terms of R, possibly also using that angle, Then we can reduce this expression from two terms, down to one. Can you do that? I'll leave it to you to see if you can figure it out.  
+  
+---  
+  
+So we'll conclude this segment with this nice picture of one of the main quads at Duke University. Thank you for watching this problem session. We'll see you in the next segment.

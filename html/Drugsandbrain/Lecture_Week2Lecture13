@@ -1,0 +1,74 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week2Lecture13</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 13 Nicotinic Acetylcholine Receptors: Activation and Desensitization</p>
+<ul>
+<li>Hello. In this mini-lecture, we're going to go into greater detail about nicotinic acid receptors as examples of ligand gated channels, and from then on we'll treat them more or less as black boxes, that participate in recreation and addiction and ultimately in longer term processes. Today we'll talk about the details.  </li>
+</ul>
+<p><strong>Brain region Midbrain dopaminergic cells (tyrosine hydroxylase stain)</strong><br />
+<ul><li> It's always good to keep our eye on a brain region and the function, though. And so, we are going to be talking about a particular brain region, the ventral part of the mid brain. In the ventral part of the mid-brain there are lots of nicotinic acetylcholine receptors. This is a stain for tyrosine hydroxylase, which is an enzyme involved in making nicotinic receptors. From here to here is a couple of millimeters in this mouse brain, and we see these structures that stain for tyrosine hydroxylase. There are perhaps several tens of thousands of individual neuron cell bodies here. And you can see that the structure looks very much like a handle bar moustache. The handlebars at the side are called the substantia nigra pars compacta or SNc. They control motion and they are lost in Parkinson's disease. The upper lip of the handlebar mustache is called the ventral tegmental area, or VTA, and it controls rewards. And it plays a large role in the reason why people get a feeling of well being when they smoke tobacco. </p>
+</li></ul>
+
+<ul>
+<li>In addition there are other neurons in this region that express nicotinic acetylcholine receptors and that's called the substantia nigra pars reticulata. These are not dopaminergic neurons like the ones that stay in black, these are GABAergic neurons, neurons that make GABA. Although, the dopaminergic neurons express many types of nicotinic receptors, the GABAergic neurons had a smaller repertoire of nicotinic receptors.  </li>
+</ul>
+<p><strong>Nicotinic acetylcholine, GABAA , and glycine receptors look alike at this resolution</strong>  </p>
+<ul>
+<li>Just a reminder that at this level of resolution, nicotinic receptors, GABA-A receptors which we will discuss in our next talk, and glycine receptors, all look alike. There is an extracellular binding region consisting mostly of beta strands and beta sheets. There's a transmembrane region consisting mostly of alpha helices. And then there is an incompletely pictured intracellular region here that varies a great deal among the receptors. The agonist binds at the interface between two subunits here.  </li>
+</ul>
+<p><strong>The Family of Nicotinic Acetylcholine Receptors</strong>  </p>
+<ul>
+<li><p>If we look down at the plane of the membrane imaginatively, we can actually see what seems to be a hole surrounded by all five subunits, in fact surrounded by the M2 second transmembrane helix of each of the five subunits. This is the conducting channel of the receptor and it is going to play an important role in our next few minutes.  </p></li>
+<li><p>The mammalian genome contains about ten genes, four &#945; subunits, three for &#946; subunits and also the &#947;, &#948;, and &#949; subunits. Nicotinic receptors always contain at least two &#945; subunits. The muscle receptor contains two &#945; ones, a &#946; one, and an &#949; and a &#948;. The major brain nicotinic receptors contain both &#945;4 and &#946;2 sub units. The stoichiometry, which is denoted here by a subscript is either two &#945;4s and three &#946;2 , or three &#945;4s and two &#946;2. And in other cases there may be an &#945;5 subunit which we won't have a chance to describe until later in the course.  The other major brain nicotinic acetylcholine receptor contains five identical &#945;7 subunits, so it is a homo-pentamer.  </p></li>
+</ul>
+<p><strong>How do Nicotinic Receptors Transduce Agonist Binding into Channel Gating?</strong>  </p>
+<ul>
+<li><p>How do nicotinic receptors transduce agonist binding into channel gating? There are several models, none of which is yet completely proven. One is the swivel model in which, let's remember now, that this is one entire chain of the receptor. This is another and so we're looking at two of the five chains of the receptor. In this model, acetylcholine or nicotine, the drug, binds in the extracellular region. It swivels, it contacts an actuator region, which pushes the M2 aside, allowing ions to flow through.</p></li>
+<li><p>The twist version of the mechanism also has acetylcholine or nicotine binding at the same place in the extracellular region but instead of the M2 regions swiveling aside they sort of stand up straight, again, allowing a little bit more room for ions to bind. So these two ideas and other related ones are in active investigation in many labs around the world.  </p></li>
+</ul>
+<p><strong>In any case, the permeant ions experience a water-like environment</strong><br />
+  * But in any case, when the channel opens there is a change in the nature of the conducting pore at the very middle of the channel. When it's closed, it is probably lined by oily side chains, a leucine residue. And as you know, ions don't like to be in oil and so they're prevented from permeating through the receptor.  </p>
+<ul>
+<li>But when the channel opens, the conducting pathway is probably lines by polar side chains, serine or threonine. These have hydroxyl groups, and if you like or if you want to imagine the ion gets tricked into thinking that it’s still in water, which has lots of hydroxyl groups that hydrate it, and so the ion as it flows through the membrane, just thinks it is flowing through water.  </li>
+</ul>
+<p><strong>The Reversal Potential (Erev = EEPSP) for the synaptic potential (or current</strong><br />
+<ul><li> Now, because the channel is permeant to ions, it has reversal potential. And let's talk about a reversal potential. If we record electrically from a neuron at its normal resting potential (about -80 or -90 millivolts) and give some nicotine to that neuron, we see that the neuron depolarizes. The membrane potential becomes less negative, more positive.  </p>
+</li></ul>
+
+<ul>
+<li><p>If we set the membrane potential before the experiment to a less negative voltage say -50 or -20, the membrane potential depolarizes less. But clearly the membrane potential tends to be driven toward a value near zero.  </p></li>
+<li><p>And when we get to -5 millivolts, near zero, there is no more depolarization. If now we shift the membrane potential to a positive voltage, and do the same experiment at +20 or +40 or +60, we see that the nicotine tends to drive the membrane potential also towards zero, in this case, more negative. So it is clearly possible to describe a place where the sign of the effect of nicotine reverses. And we call that the reversal potential, or E sub EPSP, because this is an excitatory post-synaptic potential.  </p></li>
+<li><p>Normally, in a normal cell, we're interested in events at around -80 or -90 millivolts, and when the activation becomes large enough, either by nicotine or acetylcholine, to exceed the threshold for action potentials, we get spikes.  </p></li>
+<li><p>So, most excitatory ligand-gated channels, allow the flux of both Sodium and Potassium, and sometimes Calcium. You'll note that this -5 millivolts, is not the Nernst potential for sodium, that's around here, +50, +60. It's not the Nernst potential for potassium, that's around here, -90, or so. Instead, it's a, kind of, average of those two.  </p></li>
+<li><p>So, electrically we can say we can have an equivalent circuit that says, here is the cell membrane at rest. The potassium channels are open. And when nicotinic receptor or other excitatory receptor channels open, we have our variable conductance consisting of the sum of a bunch of individual single channel conductances in parallel. We have our variable conductance opened by the EPSP channels and it’s in series with a battery, that has a value of neither sodium nor potassium, but somewhere in the middle around -5 millivolts, so here's the inside {cytosol}, there's the outside.  </p></li>
+<li><p>And our equation for the effect on the resting potential in this situation is that the voltage across the membrane, &#916;V, is again a weighted sum of the equilibrium potential for potassium, (Nernst potential for potassium), plus the potential for the EPSP times its conductance.  And so if the conductance, the number of open channels, here is very large, then EPSP dominates. And we go to near zero millivolts. And as long as we go past -50 millivolts or so we get action potentials.  On the other hand, if few of these channels are open, then these channels dominate, the potassium channels and we stay at the resting potential, -88 or -90. We'll be adding additional terms to this equation when we talk about inhibitory channels, and again when we talk about action potentials, but I think you get the idea. </p></li>
+</ul>
+<p><strong>Desensitization Occurs at Many Ligand-Gated Channels</strong>  </p>
+<ul>
+<li><p>Another topic that is rather important when we discuss ligand-gated channels is desensitization. Now, to introduce desensitization, let me show you these voltage clamp trace from a <em>Xenopus</em> oocyte which we have injected with RNA encoding &#945;4 and &#946;2 nicotinic receptor subunits. The only point you have to remember about this voltage clamp trace is that is proportional to the number of channels open on a time scale of less than a second, certainly.  </p></li>
+<li><p>And we see a couple of regions of the trace. First of all we see a resting region of the trace. That's the channels being closed or resting. And then the trace reaches a peak, and we call that the activated phase of the trace. And then it begins to decrease again, the number of open channels begin to decrease. And we call that the desensitized phase.  </p></li>
+<li><p>Now, what is going on? I can assure you that why is going on is not a complex cell biological process, (and I'll give you a proof of that a couple of minutes) such as internalization or phosporylation. Instead, we have simple physical chemistry taking place here. And let's look at it in terms of physical chemistry. Here on this axis, we have a reaction coordinate. A reaction coordinate is neither time nor distance, it's the progress of the reaction. And here on the Y axis we have the free energy of the agonist-receptor interaction. Now, because nicotine and the receptor are present for several seconds at a time, they can, like any biochemical process, examine each other and get over kinetic energy humps to find the state of lowest free energy. That's down here. Now that state of lowest free energy is of course also the state of tightest binding between nicotine and the receptor.  </p></li>
+<li><p>So, when we add nicotine to a receptor, we see a destabilization of the closed state and a stabilization of the active state with the channel open. But this is not the most stable state, it is a metastable state. And if nicotine is present for a long period of time, the channel can find another state that is not necessarily open. In fact, since the natural transmitter is acetylcholine, and acetylcholine is present for only milliseconds at a time before it gets hydrolyzed by acetylcholinesterase there's probably no selective advantage for this lower energy state to be open, or this lower energy state, or that lower energy state.  </p></li>
+<li><p>And in fact, there may be a selective disadvantage, in having the receptor open for long periods of time, because that would cause excitotoxic depolarizations. The result is that these higher affinity, more stable states of the receptor are not open, that's what we call desensitization.  </p></li>
+<li><p>Now, I told you that there's no biochemistry past channel activation and desensitization going on here. That is there no endocytosis or phosphorylation, and to give you an example of the basis for that conclusion. I can tell you that &#945;7 nicotinic receptors get desensitized by nicotine within just a few milliseconds.  </p></li>
+<li><p>Now when neuroscientists talk about the effect of nicotine, sometimes we cannot explain the effects of nicotine by activation of receptors. And so, instead we say well maybe they are explained by desensitization of the receptor. And so, which effects are caused by activation and which by desensitization is a topic of some current interest in neuroscience. Next we'll talk about inhibitory, ligand-gated channels.</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture13&amp;oldid=6761">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture13&amp;oldid=6761</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

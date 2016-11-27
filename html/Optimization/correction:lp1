@@ -1,0 +1,31 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:correction:lp1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h3> <span class="mw-headline" id="Slides_14_-_21">Slides 14 - 21</span></h3>
+<p>The systems of equations presented on these slides does not match the picture.  The slides have been updated with the correct system of equations which is,</p>
+<p>$$-4.0 x&#95;1  +  2.5 x&#95;2  \leq   -0.25$$</p>
+<p>$$-3.0 x&#95;1  -  6.0 x&#95;2 \leq -43.50$$</p>
+<p>$$1.5 x&#95;1  -  4.5 x&#95;2  \leq    3.00$$</p>
+<p>$$1.7 x&#95;1  -  1.7 x&#95;2  \leq   16.67 $$</p>
+<p>$$ 4.8 x&#95;1  +  1.2 x&#95;2  \leq   82.33 $$</p>
+<p>$$ 2.0 x&#95;1  +  3.5 x&#95;2  \leq   65.75 $$</p>
+<p>$$ -3.0 x&#95;1 +  5.0 x&#95;2  \leq   29.50 $$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:correction:lp1&amp;oldid=12214">https://share.coursera.org/wiki/index.php?title=Optimization:correction:lp1&amp;oldid=12214</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

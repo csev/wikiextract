@@ -1,0 +1,81 @@
+
+
+# Lecture Video Table of Contents
+
+##Structure Learning Overview
+<pre>
+0:18	Why structure learning?
+1:12	Importance of accurate structure
+4:34	Score-based learning
+</pre>
+
+##Likelihood Scores
+<pre>
+0:29	Likelihood score
+1:30	Example
+8:59	General decomposition
+10:55	Limitations of likelihood score
+13:21	Avoiding overfitting
+15:31	Summary
+</pre>
+
+##BIC and Asymptotic Consistency
+<pre>
+0:55	Penalizing complexity
+4:07	Asymptotic behavior
+6:30	Consistency
+10:54	Summary
+</pre>
+
+##Bayesian Score
+<pre>
+0:31	Bayesian score
+2:42	Marginal likelihood of data given G
+4:43	Marginal likelihood intuition
+7:10	Marginal likelihood: BayesNets
+9:28	Marginal likelihood decomposition
+10:23	Structure priors
+11:55	Parameter priors
+15:16	BDe and BIC (asymptotic behavior)
+18:45	Summary
+</pre>
+
+##Learning Tree Structured Networks
+<pre>
+0:17	Score-based learning
+0:34	Optimization problem
+1:02	Learning trees/forests
+2:54	Learning forests
+5:42	Learning forests 1
+8:27	Learning forests 2
+8:40	Learning forests 3
+10:20	Example
+11:35	Summary
+</pre>
+
+##Learning General Graphs: Heuristic Search
+<pre>
+0:34	Optimization problem
+0:57	Beyond trees
+2:02	Heuristic search
+4:35	Greedy hill-climbing
+6:21	Greedy hill-climbing pitfalls
+8:37	Why edge reversal?
+11:24	A pretty good, simple algorithm
+13:31	Example: ICU alarm
+16:00	Example: JamBayes
+16:54	Predicting surprises
+17:45	Influences in learned model
+18:25	Biological network reconstruction
+21:52	Summary
+</pre>
+
+##Learning General Graphs: Search and Decomposability
+<pre>
+0:31	Heuristic search review
+1:12	Naive computational analysis
+4:14	Exploiting decomposability
+10:20	Computational cost
+12:35	More computational efficiency
+14:55	Summary
+</pre>

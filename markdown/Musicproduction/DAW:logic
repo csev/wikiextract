@@ -1,0 +1,84 @@
+[[Category:Music Production|logic]]
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project specifics
+details of file management
+*Project Name
+*File type
+*Bit depth
+*Sampling rate
+*Hardware
+*Buffer size
+*Project folders specifics
+
+##Recording
+details of audio recording
+*Metronome(click track)
+*Count in
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+
+Each of the following options can be achieved by clicking 'esc' and selecting the appropriate option.
+
+NOTE: After finishing, don't forget to click 'esc' again and press '1' to come back to the regular cursor.
+
+*Trimming
+*Cutting - Esc + 5 brings you to the cutting tool.(only for versions prior to Logic Pro X)
+*Grid (ctrl + G)
+*Change grid resolution
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom - You can zoom in and out by pressing ctl+option+ up/down to zoom in and out (default). Also, pinch zoom works. At least in LP9.
+*(Command + left arrow = zooms horizontally in , Command + right arrow (keyboard) = zoom horizontally out, vertical zoom in and out is command + up and down arrows in Logic Pro X)
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity: In piano roll view, select Velocity tool (V) and move up/down to increase velocity. To change all velocities at once, enter in Hypereditor mode (option+5) and select all velocities and move it. 
+*Quantization: In piano roll view,select grid notes (1/8, 1/16, swing, ...), select notes and press Q button.
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+###Website
+* [Logic Pro 9](http://www.apple.com/logicpro/)
+* [Logic Pro X](http://www.apple.com/logic-pro/)
+###Manual
+* [Logic Pro 9](http://help.apple.com/logicpro/mac/9.1.6/en/logicpro/usermanual/)
+###Forums
+* [Apple Discussions Page](http://discussions.apple.com/category.jspa?categoryID=200)
+* [Logic Pro Help](http://logicprohelp.com/)
+###Links
+* [Apple Pro Training Series: Logic Pro 9 and Logic Express 9 (via Amazon)](http://www.amazon.com/gp/product/0321636805)
+* [Lynda.com Logic Pro X Essential Training](http://www.lynda.com/Logic-Pro-tutorials/Logic-Pro-X-Essential-Training/96308-2.html)
+* [Tuts+ Premium Learn Logic Pro X in 2 Hours](https://tutsplus.com/course/learn-logic-pro-x-in-2-hours/)
+##Categories

@@ -1,0 +1,129 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Datamanagement:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#General_Reading_Material"><span class="tocnumber">1</span> <span class="toctext">General Reading Material</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Books_or_Book_Chapters"><span class="tocnumber">1.1</span> <span class="toctext">Books or Book Chapters</span></a></li>
+<li class="toclevel-2"><a href="#Articles"><span class="tocnumber">1.2</span> <span class="toctext">Articles</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Clinical_Research_Informatics"><span class="tocnumber">1.2.1</span> <span class="toctext">Clinical Research Informatics</span></a></li>
+<li class="toclevel-3"><a href="#Terminologies_and_Standards"><span class="tocnumber">1.2.2</span> <span class="toctext">Terminologies and Standards</span></a></li>
+<li class="toclevel-3"><a href="#REDCap-Related_References"><span class="tocnumber">1.2.3</span> <span class="toctext">REDCap-Related References</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Material_Related_to_Weekly_Lectures"><span class="tocnumber">2</span> <span class="toctext">Material Related to Weekly Lectures</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">2.1</span> <span class="toctext">Week 1</span></a></li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">2.2</span> <span class="toctext">Week 4</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Sharing_Your_Work"><span class="tocnumber">2.2.1</span> <span class="toctext">Sharing Your Work</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Code_sharing_websites"><span class="tocnumber">2.2.1.1</span> <span class="toctext">Code sharing websites</span></a></li>
+<li class="toclevel-4"><a href="#Data_Publishing_Websites"><span class="tocnumber">2.2.1.2</span> <span class="toctext">Data Publishing Websites</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_5"><span class="tocnumber">2.3</span> <span class="toctext">Week 5</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Neuroimaging"><span class="tocnumber">2.3.1</span> <span class="toctext">Neuroimaging</span></a></li>
+<li class="toclevel-3"><a href="#Medical_Terminologies_and_Standards"><span class="tocnumber">2.3.2</span> <span class="toctext">Medical Terminologies and Standards</span></a>
+<ul>
+<li class="toclevel-4"><a href="#List"><span class="tocnumber">2.3.2.1</span> <span class="toctext">List</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="General_Reading_Material">General Reading Material</span></h1>
+<h2> <span class="mw-headline" id="Books_or_Book_Chapters">Books or Book Chapters</span></h2>
+<p><strong>Practical Guide to Clinical Data Management</strong> (Thanks M. Kuhlmann)<br />
+ISBN-10: 1439848297 | ISBN-13: 978-1439848296</p>
+<p><strong>Data Management Using Stata: A Practical Handbook</strong> (Thanks David)<br />
+<em>Includes description of double data entry</em><br />
+by Michael N. Michell, Stata Press.</p>
+<h2> <span class="mw-headline" id="Articles">Articles</span></h2>
+<h3> <span class="mw-headline" id="Clinical_Research_Informatics">Clinical Research Informatics</span></h3>
+<p><a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3392857/">Clinical research informatics: a conceptual perspective</a><br />
+J Am Med Inform Assoc. Jun 2012; 19(e1): e36–e42.<br />
+Michael G Kahn and Chunhua Weng</p>
+<h3> <span class="mw-headline" id="Terminologies_and_Standards">Terminologies and Standards</span></h3>
+<p><a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC61323/">Representing thoughts, words, and things in the UMLS</a><br />
+J Am Med Inform Assoc. 1998 Sep-Oct;5(5):421-31.<br />
+Campbell KE, Oliver DE, Spackman KA, Shortliffe EH.  </p>
+<p><a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3415631/">Desiderata for Controlled Medical Vocabularies in the Twenty-First Century</a><br />
+Methods Inf Med. Author manuscript; available in PMC Aug 10, 2012.<br />
+James.J. Cimino, M.D.  </p>
+<p><a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3078665/">Data standards for clinical research data collection forms: current status and challenges</a><br />
+J Am Med Inform Assoc. 2011 May-Jun; 18(3): 341–346.<br />
+Rachel L Richesson and Prakash Nadkarni</p>
+<h3> <span class="mw-headline" id="REDCap-Related_References">REDCap-Related References</span></h3>
+<p><a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2700030/">Research Electronic Data Capture (REDCap) - A metadata-driven methodology and workflow process for providing translational research informatics support</a><br />
+J Biomed Inform. Apr 2009; 42(2): 377–381.<br />
+Paul A. Harris, Ph.D, Robert Taylor, M.A., Robert Thielke, Ph.D., Jonathon Payne, B.S., Nathaniel Gonzalez, B.S.C.S., and Jose G. Conde, M.D.  </p>
+<p><a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3600393/">Procurement of Shared Data Instruments for Research Electronic Data Capture (REDCap)</a><br />
+J Biomed Inform. Apr 2013; 46(2): 259–265.<br />
+Jihad S Obeid, Catherine A McGraw, Brenda L Minor, José G Conde, Robert Pawluk, Michael Lin, Janey Wang, Sean R Banks, Sheree A Hemphill, Rob Taylor, and Paul A Harris</p>
+<h1> <span class="mw-headline" id="Material_Related_to_Weekly_Lectures">Material Related to Weekly Lectures</span></h1>
+<h2> <span class="mw-headline" id="Week_1">Week 1</span></h2>
+<h2> <span class="mw-headline" id="Week_4">Week 4</span></h2>
+<h3> <span class="mw-headline" id="Sharing_Your_Work">Sharing Your Work</span></h3>
+<p><a rel="nofollow" class="external text" href="http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285">Good article: Ten Simple Rules for Reproducible Computational Research</a>. Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten Simple Rules for Reproducible Computational Research. PLoS Comput Biol 9(10): e1003285. doi:10.1371/journal.pcbi.1003285</p>
+<p><a rel="nofollow" class="external text" href="http://www.plos.org/open-access/howopenisit/">HowOpenIsIt?</a> - <strong>Open Access Spectrum (OAS)</strong></p>
+<p><a rel="nofollow" class="external text" href="http://thenextweb.com/dd/2014/03/17/mozilla-science-lab-github-figshare-team-fix-citation-code-academia/">Making your code citeable</a> and generaging a Digital Object Identifier (DOI) using Figshare, Mozilla, and GitHub.</p>
+<h4> <span class="mw-headline" id="Code_sharing_websites">Code sharing websites</span></h4>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://github.com/">GitHub</a></li>
+<li><a rel="nofollow" class="external text" href="https://bitbucket.org/">Bitbucket</a>: offers private repositories in the free account tier</li>
+<li><a rel="nofollow" class="external text" href="http://sourceforge.net/">SourceForge</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Data_Publishing_Websites">Data Publishing Websites</span></h4>
+<p>See <a rel="nofollow" class="external text" href="http://oad.simmons.edu/oadwiki/Data_repositories">here</a> for a list. Includes:</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://figshare.com/">Figshare</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_5">Week 5</span></h2>
+<h3> <span class="mw-headline" id="Neuroimaging">Neuroimaging</span></h3>
+<p>Scott is answering questions on <a rel="nofollow" class="external text" href="https://class.coursera.org/datamanagement-001/forum/thread?thread_id=238">this forum thread</a></p>
+<h3> <span class="mw-headline" id="Medical_Terminologies_and_Standards">Medical Terminologies and Standards</span></h3>
+<p>We will post here a growing list of standards that may relevant to clinical research. Please visit this space often if you are interested in the this topic as we expected to be updated. Feel free to edit this page to add terminologies or standards that you think would be of interest to this class. The recommended way to do this is to dedicate a page to each one that can then be kept as a modular reference and then link to that page from here. If you want to add a new page and to avoid collision with pages from other courses on the Coursera wiki, please pre-pend the page title with <strong>"DMCR:"</strong>.</p>
+<h4> <span class="mw-headline" id="List">List</span></h4>
+<ul>
+<li>Systematized Nomenclature of Medicine - Clinical Terms: <a href="/wiki/index.php?title=DMCR:SNOMEDCT&amp;action=edit&amp;redlink=1" class="new" title="DMCR:SNOMEDCT (page does not exist)"> SNOMED-CT</a></li>
+<li>Clinical Data Interchange Standards Consortium: <a href="/wiki/index.php?title=DMCR:CISC&amp;action=edit&amp;redlink=1" class="new" title="DMCR:CISC (page does not exist)"> CDISC-related standards</a></li>
+<li>International Classification of Disease: <a href="/wiki/index.php?title=DMCR:ICD9&amp;action=edit&amp;redlink=1" class="new" title="DMCR:ICD9 (page does not exist)"> ICD-9</a>, <a href="/wiki/index.php?title=DMCR:ICD10&amp;action=edit&amp;redlink=1" class="new" title="DMCR:ICD10 (page does not exist)"> ICD-10</a></li>
+<li>International Classification of Diseases for Oncology: <a href="/wiki/index.php?title=DMCR:ICDO3&amp;action=edit&amp;redlink=1" class="new" title="DMCR:ICDO3 (page does not exist)"> ICD-O-3</a></li>
+<li>Unified Medical Language System <a href="/wiki/index.php?title=DMCR:UMLS&amp;action=edit&amp;redlink=1" class="new" title="DMCR:UMLS (page does not exist)"> UMLS</a>: The UMLS is not a single terminology, but a collection of many terminologies, classifications, or coding schemes with associated resources (like mappings between them.)</li>
+<li>Logical Observation Identifiers Names and Codes: <a href="/wiki/index.php?title=DMCR:LOINC&amp;action=edit&amp;redlink=1" class="new" title="DMCR:LOINC (page does not exist)"> LOINC</a></li>
+<li>Health Level 7 <a href="/wiki/index.php?title=DMCR:HL7&amp;action=edit&amp;redlink=1" class="new" title="DMCR:HL7 (page does not exist)"> HL7</a></li>
+<li>Current Procedural Terminology <a href="/wiki/index.php?title=DMCR:CPT&amp;action=edit&amp;redlink=1" class="new" title="DMCR:CPT (page does not exist)"> CPT</a></li>
+</ul>
+<p>General principles for online forms.
+<a href="/wiki/index.php/General_principles" title="General principles">General principles</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 17/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Datamanagement:Main&amp;oldid=27788">https://share.coursera.org/wiki/index.php?title=Datamanagement:Main&amp;oldid=27788</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Biology" title="Category:Biology">Biology</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

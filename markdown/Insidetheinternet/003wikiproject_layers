@@ -1,0 +1,56 @@
+
+
+[[File:Packet1.gif]]
+
+from Wikipedia
+==============
+
+RFC 1122, entitled **Host Requirements**, is structured in paragraphs referring to layers, but the document refers to many other architectural principles not emphasizing layering. It loosely defines a four-layer model, with the layers having names, not numbers, as follows:
+
+##Application layer (process-to-process):
+ This is the scope within which applications create user data and communicate this data to other processes or applications on another or the same host. The communications partners are often called peers. This is where the higher level protocols such as SMTP, FTP, SSH, HTTP, etc. operate.
+
+
+##Transport layer (host-to-host):
+ The transport layer constitutes the networking regime between two network hosts, either on the local network or on remote networks separated by routers. The transport layer provides a uniform networking interface that hides the actual topology (layout) of the underlying network connections. This is where flow-control, error-correction, and connection protocols exist, such as TCP. This layer deals with opening and maintaining connections between Internet hosts.
+
+
+##Internet layer:
+ The internet layer has the task of exchanging datagrams across network boundaries. It is therefore also referred to as the layer that establishes internetworking, indeed, it defines and establishes the Internet. This layer defines the addressing and routing structures used for the TCP/IP protocol suite. The primary protocol in this scope is the Internet Protocol, which defines IP addresses. Its function in routing is to transport datagrams to the next IP router that has the connectivity to a network closer to the final data destination.
+
+
+##Link layer:
+ This layer defines the networking methods within the scope of the local network link on which hosts communicate without intervening routers. This layer describes the protocols used to describe the local network topology and the interfaces needed to effect transmission of Internet layer datagrams to next-neighbor hosts.
+
+
+
+[[File:UDP_encapsulation.svg.png]]
+
+=================================
+
+https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/UDP_encapsulation.svg/500px-UDP_encapsulation.svg.png
+
+==================================
+
+OSI Layers
+==========
+
+There are 7 layers in the OSI description, compared with the traditional 4 layer scheme in TCP/IP
+
+
+[[Insidetheinternet:003wikiproject_LayersOSI | OSI Layers]]
+
+Main Page
+=========
+
+[[Insidetheinternet:003wikiproject |  **Wiki Project Main Page**]]
+
+
+====================================================
+
+page commenced Tuesday July 2 2013 FB
+
+page was updated Tuesday July 02 2013 23:10UTC+10 FB
+
+
+[[Category:Inside the internet]]

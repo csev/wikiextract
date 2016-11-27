@@ -1,0 +1,14 @@
+[[Category:Game Programming|d]]
+<pre>
+using System
+namespace consoleapplication1
+{
+    class program
+    {
+        static void Main()
+        {
+           Console.WriteLine("Hello world") ;
+        }
+    }
+}
+</pre>

@@ -1,0 +1,95 @@
+# Week 8 Mini-project
+## RiceRocks (Asteroids)
+<a href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=24">original source</a>
+
+For our last mini-project, we will complete the implementation of <em>RiceRocks</em>,
+an updated version of <em>Asteroids</em>, that we began last week. You may start with
+either your code or the <a href="http://www.codeskulptor.org/#examples-ricerocks_template.py">template</a>
+which includes a full implementation of Spaceship and will be released immediately after the deadline for
+the Spaceship mini-project (by making the preceding link live). If you start with your own code,
+you should add the splash screen image that you dismiss with a mouse click before starting this
+mini-project. We strongly recommend using Chrome for this mini-project since Chrome's superior
+performance will become apparent when you program attempts to draw dozens of sprites.
+
+### Mini-project development process ###
+
+At the end of this project, your game will have multiple rocks and multiple missiles. You will lose a life
+if your ship collides with a rock and you will score points if your missile collides with a rock. You will
+keep track of the score and lives remaining and end the game at the proper time. You may optionally add
+animated explosions when there is a collision.
+
+#### Phase one - Multiple rocks ####
+For this phase, you will keep a set of rocks and spawn new rocks into this set. This requires the following steps:
+
+1. Remove "a\_rock" and replace it with "rock\_group". Initialize the rock group to an empty set. Modify your rock spawner to create a new rock (an instance of a Sprite object) and add it to the rock\_group.
+1. Limit the total number of rocks in the game at any one time. We suggest you limit it to 12. With too many rocks the game becomes less fun and the animation slows down significantly.
+1. Create a helper function "process\_sprite\_group". This function should take a set and a canvas and call the update and draw methods for each sprite in the group.
+1. Call process\_sprite\_group function on rock\_group in the draw handler.
+
+#### Phase two - Collisions ####
+For this phase, you will detect collisions between the ship and a rock. Upon a collision, the rock should be
+destroyed and the player should lose a life. To implement ship-rock collisions, you need to do the following:
+
+1. Add a "collide" method to the Sprite class. This should take an"other\_object" as an argument and return True if there is a collision or False otherwise. For now, this other object will always be your ship, but we want to be able to use this collide method to detect collisions with missiles later, as well. Collisions can be detected using the radius of the two objects. This requires you to implement methods "get\_position" and "get\_radius" on both the Sprite and Ship classes.
+1. Implement a "group\_collide" helper function. This function should take a set "group" and an a sprite "other\_object". It should check for collisions between other\_object and every element of group. If there is a collision, the colliding object should be removed from the group. The function should return the number of collisions. Be sure to use the "collide" method from part 1 on the sprites in the group to accomplish this.
+1. In the draw handler, use the group\_collide helper to determine if the ship hit any of the rocks. If so, decrease the number of lives by one. Note that you could have negative lives at this point. Don't worry about that yet.
+
+
+At this point, you should have a game of "dodge 'em". You can fly around trying to avoid the rocks!
+
+#### Phase three - Missiles ####
+For this phase, you will keep a set of missiles and spawn new missiles into this set when firing using the space bar. This requires the following steps:
+
+1. Remove "a\_missile" and replace it with "missile\_group". Initialize the missile group to an empty set. Modify your shoot method of my\_ship to create a new missile (an instance of the Sprite class) and add it to the missile\_group. Make sure that your firing sound plays each time a missile is spawned.
+1. In the draw handler, use your helper function process\_sprite\_group to process missile\_group. While you can now shoot multiple missiles, you will notice that they stick around forever. To fix this, we need to modify the Sprite class and the process\_sprite\_group function.
+1. In the update method of the Sprite class, increment the age of the sprite every time update is called. If the age is greater than or equal to the lifespan of the sprite, then we want to remove it. So, return True(meaning we want to keep it) if the age is less than the lifespan and False (meaning we want to remove it) otherwise.
+1. Modify process\_sprite\_group to check the return value of update. If it returns False, remove the sprite from the group.
+
+#### Phase four - Collisions revisited ####
+Now, we want to destroy rocks when they are hit by a missile. We can't quite use group\_collide, because we want to check for collisions between two groups. All we need to do is add one more helper function:
+
+1. Implement a final helper function group\_group\_collide that takes two groups of objects as input. Group\_group\_collide should iterate through the elements of the first group using a for-loop and then call group\_collide with each of these elements on the second group. Group\_group\_collide should return the number of elements in the first group that collide with the second group as well as delete these elements in the first group.
+1. Call group\_group\_collide in the draw handler to detect missile/rock collisions. Increment the score by the number of missile collisions.
+
+#### Phase five - Finish it off ####
+You now have a mostly working version of <em>RiceRocks</em>!!! Let's add a few final touches.
+
+1. Start the number of lives at 3.
+1. When the number of lives becomes 0, reset the game. In particular, set the flag started to False, destroy all rocks and prevent any more rocks for spawning until the game is restarted.
+1. When the game restarts, make sure the lives and the score are properly reset.Starting spawning rocks again. Restart the soundtrack.
+1. When you spawn rocks, you want to make sure they are some distance away from the ship. Otherwise, you can die when a rock spawns on top of you, which isn't much fun. Experiment with varying the velocity of rocks based on the score to make gameplay get more difficult as the game progresses.
+1. Tweak any constants that you have to make the game play the way you want.
+
+Congratulations! You have completed the assignment. Enjoy playing your game!!!
+
+#### Bonus ####
+The following will not be graded. Feel free to try this, but do not break any of the other game functionality. We strongly recommend that you save your work before doing this and keep track of it, so you can submit a working version of the first five phases if you end up breaking your game trying to add more features.One thing that is missing in your game is explosions when things collide. We have provided a tiled explosion image that you can use to create animated explosions. To get things working, you will need to do a few things:
+
+1. In the draw method of the Sprite class, check if "self.animated" is True. If so, then choose the correct tile in the image based on the age. The image is tiled horizontally. If self.animated is False, it should continue to draw the sprite as before.
+1. Create an "explosion\_group" global variable and initialize it to an empty set.
+1. In group\_collide, if there is a collision, create a new explosion (an instance of the Sprite class)and add it to the explosion\_group. Make sure that each explosion plays the explosion sound.
+1. In the draw handler, use process\_sprite\_group to process explosion\_group.
+
+You should now have explosions working!
+
+### Grading rubric - 13 pts (scaled to 100 pts) ###
+Note that the animated explosions are not graded. However, please add comments concerning the quality of the explosions and general gameplay in the free comments at the bottom of the page. Please assess your peer's mini-projects in Chrome. <b>If, for some reason, you must use Firefox or another browser (or had issues playing sounds in Chrome), please give your peers full credit on the sound-related rubric items.</b>
+* 1 pt - The program spawns multiple rocks.
+* 1 pt - The program correctly determines whether the ship collides with a rock.
+* 1 pt - The program removes a rock when the ship collides with a rock.
+* 1 pt - The number of lives decreases by one when the ship collides with a rock.
+* 1 pt - The program spawns multiple missiles.
+* 1 pt - The program plays the firing sound when each missile is spawned.
+* 1 pt - The program removes a missile after some fixed time period.
+* 1 pt - The program correctly determines whether a missile and a rock collide.
+* 1 pt - The program removes missiles and rocks that collide.
+* 1 pt - The score is updated appropriately after missile/rock collisions.
+* 1 pt - When the lives go to zero, the splash screen reappears and all rocks are removed.
+* 1 pt - When the splash screen is clicked, the lives are reset to 3, score is reset to zero and the soundtrack restarts.
+* 1 pt - The game spawns rocks only while the game is started.
+
+
+---
+[[Interactivepython:MiniProjects|MiniProjects]]
+
+[[Interactivepython:Main|Main]]

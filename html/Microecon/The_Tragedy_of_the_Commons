@@ -1,0 +1,63 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:The Tragedy of the Commons</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Notes_for_Week_8:_4.1_The_Tragedy_of_the_Commons"><span class="tocnumber">1</span> <span class="toctext">Notes for Week 8: 4.1 The Tragedy of the Commons</span></a></li>
+<li class="toclevel-1"><a href="#Notes_for_Week_8:_4.1_The_Tragedy_of_the_Commons_2"><span class="tocnumber">2</span> <span class="toctext">Notes for Week 8: 4.1 The Tragedy of the Commons</span></a></li>
+<li class="toclevel-1"><a href="#Vessels_Total_catch_.28lb.29"><span class="tocnumber">3</span> <span class="toctext">Vessels Total catch (lb)</span></a></li>
+<li class="toclevel-1"><a href="#Vessels_Total_catch_.28lb.29_Marginal_revenue_Avg._Revenue_Total_Profits"><span class="tocnumber">4</span> <span class="toctext">Vessels   Total catch (lb)    Marginal revenue    Avg. Revenue    Total Profits</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Notes_for_Week_8:_4.1_The_Tragedy_of_the_Commons">Notes for Week 8: 4.1 The Tragedy of the Commons</span></h2>
+<p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<h2> <span class="mw-headline" id="Notes_for_Week_8:_4.1_The_Tragedy_of_the_Commons_2">Notes for Week 8: 4.1 The Tragedy of the Commons</span></h2>
+<p>Fish problem:
+Suppose that fish cost a $1/lb and marginal cost of running a fishing vessel is $200 per day.
+Say currently there are 7 boats fishing, would you send the eighth boat out to fish?</p>
+<h1> <span class="mw-headline" id="Vessels_Total_catch_.28lb.29">Vessels Total catch (lb)</span></h1>
+<p>1    400
+2    800
+3    1200
+4    1600
+5    1900
+6    2100
+7    2100
+8    2000</p>
+<p>A)  you own ONLY the eighth boat,
+If you go, revenue=2000/8=250*$1=$250. </p>
+<p>B) you own ALL the eight boats,</p>
+<h1> <span class="mw-headline" id="Vessels_Total_catch_.28lb.29_Marginal_revenue_Avg._Revenue_Total_Profits">Vessels   Total catch (lb)    Marginal revenue    Avg. Revenue    Total Profits</span></h1>
+<p>1   400 $400    $400    $200
+2   800 $400    $400    $400
+3   1200    $400    $400    $600
+4   1600    $400    $400    $800
+5   1900    $300    $380    $900
+6   2100    $200    $350    $900
+7   2100    $0  $300    $700
+8   2000    ($100)  $250    $400</p>
+<p>So, you'll send only 6 boats out. This paradox is called The Tragedy of the Commons.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:The_Tragedy_of_the_Commons&amp;oldid=28361">https://share.coursera.org/wiki/index.php?title=Microecon:The_Tragedy_of_the_Commons&amp;oldid=28361</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

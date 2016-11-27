@@ -1,0 +1,240 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 4:Neural Networks Learning</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This is the toughest exercise so far, mainly because you have to implement a series of steps, each subject to error, before you get any feedback. These techniques may help:</p>
+<ul>
+<li><p>See the tutorial below (developed for the Spring 2014 session).</p></li>
+<li><p>Use the command line. The command line is your friend. Run enough of ex4.m to initialize X, y, Theta1, and Theta2, then work one statement or operation at a time to get the results you want. When you get a statement working, transfer it to nnCostFunction--and save the file.</p></li>
+<li><p>Use dimensions. Use size() to check the dimensions of vectors and matrices to determine order of multiplication and whether a transpose is needed. This is especially valuable for the gradients. Keep in mind that the gradient matrices are the same size as Theta1 and Theta2. Also note that you will need to do some things that may seem counter-intuitive, like multiplying a m X 1 vector by a 1 X n vector to get an m X n matrix.</p></li>
+<li><p>You may find it helpful to note the dimensions of each matrix in a comment on the line of code, as you define it and use it, e.g.:  </p>
+<code><pre>Theta1 = reshape(.....)   &#160;% (nhn x (n+1))  
+a = b * c  &#160;% dimcheck: (nhn x (n+1))  = (nhn x m) * (m x (n+1))  
+</pre></code></li>
+<li><p>Do not hard-code. Specifically, do not hard-code the size of the 'binarized' y vector to 10. It will work fine for the initial tests, but will blow up with cryptic error messages later on.</p></li>
+<li><p>If you get stuck on gradients, try working on a smaller, easier to grasp problem. You can steal code from checkNNGradients and paste it into the command line to get a 3-5-3 network that's a bit more manageable.</p></li>
+<li><p>Full vectorization of backprop</p></li>
+</ul>
+<p>If you want to get rid of the loop over the training samples in back propagation algorithm, you are facing the problem to create a logical vector for y for all training examples. Some smart guy from the spring 2013 instance of this course came up with the following elegant solution for this task</p>
+<code><pre>yv=[1:num_labels] == y
+</pre></code>
+<p>(This does not seem to work in Octave 3.2.4, I use 3.6.4 Doesn't work on 3.4 either.)</p>
+<p>After getting this, it was pretty straightforward to vectorize the loop. I could transform each line from my for-loop 1:1 to the vectorized code.</p>
+<p>Note, the above expression relies on the broadcasting feature of Octave: see <a rel="nofollow" class="external free" href="http://www.gnu.org/software/octave/doc/interpreter/Broadcasting.html">http://www.gnu.org/software/octave/doc/interpreter/Broadcasting.html</a>.</p>
+<p>A call to bsxfun is an equivalent solution that explicitly apply a broadcast:</p>
+<code><pre>yv = bsxfun(@eq, y, 1:num_labels);
+</pre></code>
+<p>A different solution - kind of slow (this loop alone took about half the time of my vectorized solution on a mac laptop):</p>
+<code><pre>yv = zeros(m, num_labels);
+for i = 1:m
+  yv(i, y(i)) = 1;
+end
+</pre></code>
+<p>Using vectorization speeds up the code considerably.</p>
+<p>Another method for generating the y matrix, this time looping over the labels:</p>
+<code><pre>y_matrix = [];   &#160;% create a null matrix
+for i = 1:num_labels
+    y_matrix = [y_mat y == i];
+end
+</pre></code>
+<p>Another vectorized one-line method (using vectorized indexing of an eye matrix)- Spring 2014 session:</p>
+<code><pre>y_matrix = eye(num_labels)(y,:);  &#160;% works for Octave
+...or
+all_combos = eye(num_labels);    
+y_matrix = all_combos(y,:)        &#160;% works for Matlab
+</pre></code>
+<p>This method uses an indexing trick to vectorize the creation of 'y_matrix', where each element of 'y' is mapped to a single-value row vector copied from an eye matrix.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#FYI:_Misleading_Formula_in_Ex4_pdf_for_regularization_term_of_cost"><span class="tocnumber">1</span> <span class="toctext">FYI: Misleading Formula in Ex4 pdf for regularization term of cost</span></a></li>
+<li class="toclevel-1"><a href="#Tutorial_for_Ex.4_Forward_and_Backpropagation_.28Spring_2014_session.29"><span class="tocnumber">2</span> <span class="toctext">Tutorial for Ex.4 Forward and Backpropagation (Spring 2014 session)</span></a></li>
+<li class="toclevel-1"><a href="#Debugging_Tip"><span class="tocnumber">3</span> <span class="toctext">Debugging Tip</span></a></li>
+<li class="toclevel-1"><a href="#Tips_for_classifying_your_own_images:"><span class="tocnumber">4</span> <span class="toctext">Tips for classifying your own images:</span></a></li>
+<li class="toclevel-1"><a href="#Bonus:_Tutorial_on_How_to_classify_your_own_images_of_digits"><span class="tocnumber">5</span> <span class="toctext">Bonus: Tutorial on How to classify your own images of digits</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Sample"><span class="tocnumber">5.1</span> <span class="toctext">Sample</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Bonus:_Neural_Network_does_not_need_order_in_pixels_of_an_image_as_humans_do"><span class="tocnumber">6</span> <span class="toctext">Bonus: Neural Network does not need order in pixels of an image as humans do</span></a>
+<ul>
+<li class="toclevel-2"><a href="#ex3_rand.m_is_a_modified_version_of_ex3.m"><span class="tocnumber">6.1</span> <span class="toctext">ex3_rand.m is a modified version of ex3.m</span></a></li>
+<li class="toclevel-2"><a href="#Why_the_order_is_Irrelevant_for_the_Neural-Network"><span class="tocnumber">6.2</span> <span class="toctext">Why the order is Irrelevant for the Neural-Network</span></a></li>
+<li class="toclevel-2"><a href="#Equivalent_example_of_order_irrelevancy"><span class="tocnumber">6.3</span> <span class="toctext">Equivalent example of order irrelevancy</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="FYI:_Misleading_Formula_in_Ex4_pdf_for_regularization_term_of_cost">FYI: Misleading Formula in Ex4 pdf for regularization term of cost</span></h3>
+<p>The summation indexes for Theta 1 and 2 should be from 2 to 26  and 2 to 401 respectively.</p>
+<h3> <span class="mw-headline" id="Tutorial_for_Ex.4_Forward_and_Backpropagation_.28Spring_2014_session.29">Tutorial for Ex.4 Forward and Backpropagation (Spring 2014 session)</span></h3>
+<p>This tutorial outlines the process of accomplishing the goals for Programming Exercise 4. The purpose&#160;is to create a&#160;collection of all the useful&#160;yet scattered and&#160;obscure knowledge that otherwise would require hours of frustrating searches.<br /><br />This tutorial is targeted solely at vectorized implementations. If you're a looper, you're doing it the hard way, and you're on your own.<br /><br />I'll use the less-than-helpful greek letters and math notation from the video lectures in this tutorial, though I'll start off with a glossary so we can agree on what they are. I will also suggest some common variable names, so students can more easily get help on the Forum. <br /><br />It is left to the reader to convert these lines into program statements. <u>You will&#160;need to determine the correct order and transpositions for each matrix multiplication</u>.<br /><br />Most of this material appears in either the video lectures, slides, course wiki, or the ex4.pdf file, though nowhere else does it all appear in one place. <br /><br /><b>Glossary:</b><br />Each of these variables will have a subscript, noting which NN layer it is associated with.<br />$$\Theta$$: A matrix of weights to compute the inner values&#160;of the neural network.&#160;When we used single-vector theta values, it was noted with the lower-case character $$\theta$$.<br /><br />$$z$$&#160;: is the result of&#160;multiplying a data vector&#160;with a $$\Theta$$ matrix. A typical variable name would be "z2".<br /><br />$$a$$&#160;: The "activation" output from a neural layer. This is always generated using a sigmoid function $$g()$$ on a $$z$$ value. A typical variable name would be "a2".<br /><br />$$\delta$$&#160;: lower-case delta is used for the "error" term in each layer.&#160; A typical variable name would be "d2".<br /><br />$$\Delta$$&#160;: upper-case delta is used to hold the sum of the product of a $$\delta$$ value with the previous layer's $$a$$ value. In the vectorized solution, these sums are calculated automatically though the magic of matrix algebra. A typical variable name would be "Delta2".<br /><br />$$\Theta$$ gradient&#160;: This is the thing we're looking for, the partial derivative of theta. There is one of these variables associated with&#160;each $$\Delta$$. These values are returned by nnCostFunction(), so the variable names must be "Theta1&#95;grad" and "Theta2&#95;grad".<br /><br />$$g()$$ is the sigmoid function.<br />$$g'()$$ is the sigmoid gradient function.<br /><br />Tip: One handy method for ignoring a column of bias units is to use the notation "SomeMatrix(:,2:end)". This selects all of the rows of a matrix, and omits the entire first column.<br /><br /><b>Here we go</b><br />Nearly all of the editing in this exercise happens in nnCostFunction.m. Let's get started.</p>
+<p><b>A note regarding the sizes of these data objects:</b><br />See the Appendix at the bottom of the tutorial for information on the sizes of the data objects.<br /><br /><b>A note regarding bias units, regularization, and back-propagation:</b><br /><i>There are two methods for handing the bias units in the back-propagation and gradient calculations.&#160;I've described only one of them here, it's the one that I understood the best. Both methods work, choose the one that makes sense to you and avoids&#160;dimension errors. It matters not a whit whether the bias unit is dropped before or after it is calculated - both methods give the same results, though the order of operations and transpositions required may be different. Those with contrary opinions are welcome to write their own tutorial.</i><br /><br /><b>Forward Propagation:</b><br />We'll&#160;start by outlining the forward propagation process. Though this was already accomplished once during&#160;Exercise 3, you'll need to duplicate some of that work because computing the gradients requires some of the intermediate results from forward propagation.</p>
+<p>Step 1 - Expand the 'y' output values into a matrix of single&#160;values (see ex4.pdf Page 5). This is most easily done using an eye() matrix of size num&#95;labels, with vectorized indexing by 'y', as in "eye(num&#95;labels)(y,:)". Discussions of this and other methods are available&#160;in the Course Wiki - Programming Exercises section.&#160;A typical variable name would be "y_matrix".</p>
+<p>Step 2 - perform the&#160;forward propagation:<br />$$a&#95;1$$ equals the X input matrix with a column of 1's added (bias units)<br />$$z&#95;2$$ equals the product of $$a&#95;1$$ and $$\Theta&#95;1$$<br />$$a&#95;2$$ is the result of passing $$z&#95;2$$ through $$g()$$<br />$$a&#95;2$$ then has a column of 1st added (bias units)<br />$$z&#95;3$$ equals the product of $$a&#95;2$$ and $$\Theta&#95;2$$<br />$$a&#95;3$$ is the result of passing $$z&#95;3$$ through $$g()$$<br /><br /><b>Cost Function, non-regularized</b></p>
+<p>Step 3 - Compute the unregularized cost according to ex4.pdf (top of Page 5), (I had a hard time understanding this equation mainly that I had a misconception that y(i)<em>k is a vector, instead it is just simply one number) using $$a&#95;3$$, your y</em>matrix, and $$m$$ (the number of training examples).&#160;Cost should be a scalar value. If you get a vector of cost values, you can sum that vector&#160;to get the cost.<br />Remember to use element-wise multiplication with the log() function.<br /><br />Now you can run ex4.m to check the&#160;unregularized cost is correct, then&#160;you can submit Part 1 to the grader.</p>
+<p><br /><br /><b>Cost Regularization</b></p>
+<p>Step 4 - Compute the regularized component of the cost according to ex4.pdf Page 6, using $$\Theta&#95;1$$ and $$\Theta&#95;2$$ (ignoring the columns of bias units), along with&#160;$$\lambda$$, and $$m$$. The easiest method to do this is to compute the regularization terms separately, then add them&#160;to the unregularized cost from Step 3.<br /><br />You can run ex4.m to check the regularized cost, then&#160;you&#160;can submit Part 2 to the grader.<br /><br /><b>Sigmoid Gradient and Random Initialization</b></p>
+<p>Step 5 - You'll need to prepare the sigmoid gradient function $$g'()$$, as shown in ex4.pdf Page 7<br /><br />You can submit Part 3&#160;to the grader.</p>
+<p>Step 6 - Implement the random initialization function as instructed on ex4.pdf, top of Page 8. You do not submit this function to the grader.<br /><br /><b>Backpropagation</b></p>
+<p>Step 7 - Now we work from the output layer back to the hidden layer, calculating how bad the errors are. See ex4.pdf Page 9 for reference.<br /><br />$$\delta&#95;3$$ equals the difference between&#160;$$a&#95;3$$ and the y_matrix.<br />$$\delta&#95;2$$ equals the product of $$\delta&#95;3$$&#160;and $$\Theta&#95;2$$ (ignoring the $$\Theta&#95;2$$ bias units), then multiplied element-wise by the $$g'()$$ of $$z&#95;2$$ (computed back in Step 2).<br /><br />Note that at this point, the instructions in&#160;ex4.pdf are specific&#160;to&#160;looping implementations, so the notation there is different.<br />$$\Delta&#95;2$$ equals the product of $$\delta&#95;3$$ and $$a&#95;2$$. This step calculates the product and sum of the errors.<br />$$\Delta&#95;1$$ equals the product of $$\delta&#95;2$$ and $$a&#95;1$$. This step calculates the product and sum of the errors.</p>
+<p><b>Gradient,&#160;non-regularized</b></p>
+<p>Step 8 - Now we calculate the <u>non-regularized</u> theta gradients, using the sums of the errors we just computed. (see ex4.pdf bottom of Page 11)<br />$$\Theta&#95;1$$ gradient equals $$\Delta&#95;1$$&#160;scaled by $$1/m$$<br />$$\Theta&#95;2$$ gradient equals $$\Delta&#95;2$$&#160;scaled by $$1/m$$<br /><br />The ex4.m script will also perform gradient checking for you, using a smaller test case than the full character classification example. So if you're debugging your nnCostFunction() using the "keyboard" command during this, you'll suddenly be seeing some much smaller&#160;sizes of X and the $$\Theta$$ values. Do not be alarmed.<br /><br />If the feedback provided to you by ex4.m for gradient checking seems OK, you can now submit Part 4 to the grader. <br /><br /><b>Gradient Regularization</b></p>
+<p>Step 9 - For reference see ex4.pdf, top of Page 12, for the right-most terms of the equation for $$j &gt;= 1$$.<br />Now we calculate the regularization terms for the theta gradients.&#160;The goal is that regularization of the gradient should not change the theta gradient(:,1) values (for the bias units) calculated in Step 8. There are several ways to implement this (in Steps <b>9a</b> and <b>9b</b>).<br /><br /><span><u>Method 1</u>: <b>9a)</b> Calculate the regularization for indexes (:,2:end), and <b>9b)</b> add them to theta gradients (:,2:end).<br /><u>Method 2</u>: <b>9a)</b> Calculate the regularization for the entire theta gradient, then overwrite the (:,1) value with 0 before <b>9b)</b> adding to the entire matrix.</span><br /><br />Details for Steps 9a and 9b<br /><b>9a)</b> Pick a method, and calculate the regularization terms as follows:<br />$$(\lambda / m) &#42; \Theta&#95;1$$ (using either Method 1 or Method 2)<br />...and<br />$$(\lambda / m) &#42; \Theta&#95;2$$ (using either Method 1 or Method 2)<br /><br /><b>9b)</b> Add these regularization terms to the appropriate $$\Theta&#95;1$$ gradient&#160; and $$\Theta&#95;2$$ gradient terms from Step 8 (using either Method 1 or Method 2). Avoid modifying&#160;the bias unit of the theta gradients.<br /><i>&#160;&#160;&#160;&#160;Note: there is an errata&#160;in the&#160;lecture video and slides regarding some missing parenthesis for this calculation. <br />&#160;&#160;&#160; The ex4.pdf file is correct.</i><br /><br />The ex4.m script will provide you feedback regarding the acceptable relative difference. <br />If all seems well, you can submit Part 5 to the grader.<br /><br />Now pat yourself on the back.</p>
+<p><b>Appendix:</b></p>
+<p>Here are the sizes for the&#160;character recognition example, using the method described in this tutorial. <br />a1: 5000x401<br />z2: 5000x25<br />a2: 5000x26<br />a3: 5000x10<br />d3: 5000x10<br />d2: 5000x25<br />Theta1, Delta1 and Theta1<em>grad: 25x401<br />Theta2, Delta2 and Theta2</em>grad: 10x26<br /><br />Note that the ex4.m script uses a several test cases of different sizes, and the submit grader uses yet another different test case.</p>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex4/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+<h2> <span class="mw-headline" id="Tips_for_classifying_your_own_images:">Tips for classifying your own images:</span></h2>
+<p>There's no documentation on how the images were prepared for this course. These tips may be helpful.</p>
+<ul>
+<li><p>The images must be gray-scale with 20x20 pixels.</p></li>
+<li><p>The image pixels are scaled (or normalized) so that -1.0 is black, 0.0 is grey, and +1.0 is white. However, nearly all of the pixels are in the 0.0 to +1.0 range. The backgrounds are grey, and the image "pen strokes" are white.</p></li>
+<li><p>Your images must use the same value range as the training data, otherwise the NN will not be able to classify them.</p></li>
+<li><p>Center the digit image so it does not use the two pixels around the borders.</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Bonus:_Tutorial_on_How_to_classify_your_own_images_of_digits">Bonus: Tutorial on How to classify your own images of digits</span></h1>
+<p>Follow the link to the complete tutorial
+<ul><li> <a href="/wiki/index.php/ML:Classify_your_own_images" title="ML:Classify your own images">link to a complete tutorial on How to classify your own images</a></p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Sample">Sample</span></h2>
+<p><a href="/wiki/images/d/d8/ML-Ex3-MyPhotoToDataDigit-4.jpg" class="image"><img alt="ML-Ex3-MyPhotoToDataDigit-4.jpg" src="/wiki/images/d/d8/ML-Ex3-MyPhotoToDataDigit-4.jpg" width="897" height="832" /></a>
+<ul><li> Use your own photos
+</li><li> Use your own predict function from Exercise 3
+</li><li> <a href="/wiki/index.php/ML:Classify_your_own_images" title="ML:Classify your own images">The tutorial</a> also explains how the images are converted thru several formats to be processed and displayed.
+</li></ul>
+<strong>-Posted by Eduardo Martinez (student)</strong></p>
+<h1> <span class="mw-headline" id="Bonus:_Neural_Network_does_not_need_order_in_pixels_of_an_image_as_humans_do">Bonus: Neural Network does not need order in pixels of an image as humans do</span></h1>
+<p>The pixels order (as a human sees them) is not necessary (or relevant) for a Neural Network.</p>
+<p>You can test it with a modified ex3.m program below (you can call it ex3_rand.m)</p>
+<p>The program has a randomize pixel position step "scrambling" the 400 vector positions BEFORE the training.
+As long as you keep the same pixel position when predicting, the results are the same.</p>
+<p>It is interesting to "see" how prediction perfectly works with a scrambled picture!</p>
+<p>You can test it once you have submitted OK the ex3.m program (meaning that <strong>you have the oneVsAll function working OK first</strong>).</p>
+<h2> <span class="mw-headline" id="ex3_rand.m_is_a_modified_version_of_ex3.m">ex3_rand.m is a modified version of ex3.m</span></h2>
+<code><pre>% ex3_rand.m (is a modified version of ex3.m to scramble pixels/features)
+%
+%% Machine Learning Online Class - Exercise 3 | Randomize Features
+
+%% Initialization
+clear&#160;; close all; clc
+
+%% Setup the parameters you will use for this part of the exercise
+input_layer_size  = 400; &#160;% 20x20 Input Images of Digits
+num_labels = 10;         &#160;% 10 labels, from 1 to 10   
+                         &#160;% (note that we have mapped &quot;0&quot; to label 10)
+
+%% =========== Part 1: Loading and Visualizing Data =============
+%  We start the exercise by first loading and visualizing the dataset. 
+%  You will be working with a dataset that contains handwritten digits.
+%
+
+% Load Training Data
+fprintf('Loading and Visualizing Data ...\n')
+
+load('ex3data1.mat');&#160;% training data stored in arrays X, y
+m = size(X, 1);
+
+% Randomly select 100 data points to display
+rand_indices = randperm(m, 100);
+sel = X(rand_indices,&#160;:);
+
+displayData(sel);
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+
+%% ============ Part 2: Vectorize Logistic Regression ============
+%  In this part of the exercise, you will reuse your logistic regression
+%  code from the last exercise. You task here is to make sure that your
+%  regularized logistic regression implementation is vectorized. After
+%  that, you will implement one-vs-all classification for the handwritten
+%  digit dataset.
+%
+
+% Added to randomize features (to probe that is irrelevant)
+fprintf('\nRandomizing columns...\n');
+X_rand = X(:, randperm(size(X,2)));
+
+fprintf('\nTraining One-vs-All Logistic Regression...\n')
+
+lambda = 0.1;
+[all_theta] = oneVsAll(X_rand, y, num_labels, lambda);
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
+
+
+%% ================ Part 3: Predict for One-Vs-All ================
+%  After ...
+pred = predictOneVsAll(all_theta, X_rand);
+
+fprintf('\nTraining Set Accuracy:&#160;%f\n', mean(double(pred == y)) * 100);
+
+%% ============ Part 4: Predict Random Samples ============
+%  To give you an idea of the network's output, you can also run
+%  through the examples one at the a time to see what it is predicting.
+
+%  Randomly permute examples
+rp = randperm(m);
+
+for i = 1:m
+   &#160;% Display 
+    fprintf('\nDisplaying Example Randomized Image\n');
+    displayData(X_rand(rp(i),&#160;:));
+
+    pred = predictOneVsAll(all_theta, X_rand(rp(i),:));
+    fprintf('\nNeural Network Prediction:&#160;%d (label&#160;%d)\n', pred, y(rp(i)));
+
+   &#160;% Pause
+    fprintf('Program paused. Press enter to continue.\n');
+    pause;
+end
+</pre></code>
+<h2> <span class="mw-headline" id="Why_the_order_is_Irrelevant_for_the_Neural-Network">Why the order is Irrelevant for the Neural-Network</span></h2>
+<p>You can see that the order of the pixels is irrelevant as long as you are consistent in two ways:</p>
+<ol>
+<li><p>Between samples. Each feature should mean the same pixel. You can not change the pixel location for one sample and not for the others. You can scramble them but you have to keep the "scrambling" fixed for the entire samples.</p></li>
+<li><p>Between labels. Each label should represent the same digit for its group of samples. Meaning a digit four is a four for all of the samples you labeled as four and can not change it.It does not matter if the pixels are 'scrambled", it is a four.</p></li>
+</ol>
+<h2> <span class="mw-headline" id="Equivalent_example_of_order_irrelevancy">Equivalent example of order irrelevancy</span></h2>
+<p>An equivalent example is the order of variable names when solving a system of equations. It does not matter how you call a variable or the order as long as you are consistent through out the solution.</p>
+<p>For example, this:</p>
+<p>$$3x&#95;1 + 4x&#95;2 = 26$$</p>
+<p>$$2x&#95;1 -3x&#95;2 = -11$$</p>
+<p>Solution: $$x&#95;1 = 2;\quad x&#95;2=5$$</p>
+<p>...is equivalent to:</p>
+<p>$$3x&#95;2 + 4x&#95;1 = 26$$</p>
+<p>$$2x&#95;2 - 3x&#95;1 = -11$$</p>
+<p>Solution: $$x&#95;2 = 2;\quad x&#95;1 = 5$$</p>
+<p>...also you can "scramble" the terms and "labels"</p>
+<p>$$-3x&#95;1 + 2x&#95;2 = -11$$</p>
+<p>$$4x&#95;1 + 3x&#95;2 = 26$$</p>
+<p>Solution: $$x&#95;1 = 5;\quad x&#95;2 = 2$$</p>
+<p>It has to do with convention. Any convention as long as it is the same all the way thru.</p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 83/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_4:Neural_Networks_Learning&amp;oldid=34308">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_4:Neural_Networks_Learning&amp;oldid=34308</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Programming_Exercises" title="Category:ML:Programming Exercises">ML:Programming Exercises</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

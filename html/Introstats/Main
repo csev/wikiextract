@@ -1,0 +1,335 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Introstats:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Other_resources"><span class="tocnumber">1</span> <span class="toctext">Other resources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Traditional_textbooks"><span class="tocnumber">1.1</span> <span class="toctext">Traditional textbooks</span></a></li>
+<li class="toclevel-2"><a href="#Online_textbooks"><span class="tocnumber">1.2</span> <span class="toctext">Online textbooks</span></a></li>
+<li class="toclevel-2"><a href="#Posts_from_staff"><span class="tocnumber">1.3</span> <span class="toctext">Posts from staff</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Additional_Resources_for_Week_1"><span class="tocnumber">2</span> <span class="toctext">Additional Resources for Week 1</span></a></li>
+<li class="toclevel-1"><a href="#Summary_Notes_on_First_Week_Videos:"><span class="tocnumber">3</span> <span class="toctext">Summary Notes on First Week Videos:</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Five_numbers_summary:"><span class="tocnumber">3.1</span> <span class="toctext">Five numbers summary:</span></a></li>
+<li class="toclevel-2"><a href="#Box_plot:"><span class="tocnumber">3.2</span> <span class="toctext">Box plot:</span></a></li>
+<li class="toclevel-2"><a href="#Modified_box_plot:"><span class="tocnumber">3.3</span> <span class="toctext">Modified box plot:</span></a></li>
+<li class="toclevel-2"><a href="#The_trimmed_mean:"><span class="tocnumber">3.4</span> <span class="toctext">The trimmed mean:</span></a></li>
+<li class="toclevel-2"><a href="#Histogram:"><span class="tocnumber">3.5</span> <span class="toctext">Histogram:</span></a></li>
+<li class="toclevel-2"><a href="#The_relative_location_of_the_mode.2C_median.2C_and_mean_in_a_unimodal_distribution:"><span class="tocnumber">3.6</span> <span class="toctext">The relative location of the mode, median, and mean in a unimodal distribution:</span></a></li>
+<li class="toclevel-2"><a href="#The_empirical_rule:"><span class="tocnumber">3.7</span> <span class="toctext">The empirical rule:</span></a></li>
+<li class="toclevel-2"><a href="#Types_of_variables:"><span class="tocnumber">3.8</span> <span class="toctext">Types of variables:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Additional_Resources_for_Week_2"><span class="tocnumber">4</span> <span class="toctext">Additional Resources for Week 2</span></a></li>
+<li class="toclevel-1"><a href="#Summary_Notes_on_Second_Week_Videos:"><span class="tocnumber">5</span> <span class="toctext">Summary Notes on Second Week Videos:</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Relationships_btween_two_quantative_variables"><span class="tocnumber">5.1</span> <span class="toctext">Relationships btween two quantative variables</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Additional_Resources_for_Week_3"><span class="tocnumber">6</span> <span class="toctext">Additional Resources for Week 3</span></a></li>
+<li class="toclevel-1"><a href="#Summary_Notes_on_Third_Week_Videos:"><span class="tocnumber">7</span> <span class="toctext">Summary Notes on Third Week Videos:</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Basic_Rules_For_Probability"><span class="tocnumber">7.1</span> <span class="toctext">Basic Rules For Probability</span></a></li>
+<li class="toclevel-2"><a href="#Distribution_Of_Random_Variables_.28Discrete.29"><span class="tocnumber">7.2</span> <span class="toctext">Distribution Of Random Variables (Discrete)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Additional_Resources_for_Week_4"><span class="tocnumber">8</span> <span class="toctext">Additional Resources for Week 4</span></a></li>
+<li class="toclevel-1"><a href="#Additional_Resources_for_Week_5"><span class="tocnumber">9</span> <span class="toctext">Additional Resources for Week 5</span></a></li>
+<li class="toclevel-1"><a href="#Slides_of_the_course_materials"><span class="tocnumber">10</span> <span class="toctext">Slides of the course materials</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">10.1</span> <span class="toctext">Week 1</span></a></li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">10.2</span> <span class="toctext">Week 2</span></a></li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">10.3</span> <span class="toctext">Week 3</span></a></li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">10.4</span> <span class="toctext">Week 4</span></a></li>
+<li class="toclevel-2"><a href="#From_week_5"><span class="tocnumber">10.5</span> <span class="toctext">From week 5</span></a></li>
+<li class="toclevel-2"><a href="#Week_6"><span class="tocnumber">10.6</span> <span class="toctext">Week 6</span></a></li>
+<li class="toclevel-2"><a href="#Week_7"><span class="tocnumber">10.7</span> <span class="toctext">Week 7</span></a></li>
+<li class="toclevel-2"><a href="#Week_8"><span class="tocnumber">10.8</span> <span class="toctext">Week 8</span></a></li>
+<li class="toclevel-2"><a href="#All_Weeks"><span class="tocnumber">10.9</span> <span class="toctext">All Weeks</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Other_resources">Other resources</span></h3>
+<p>There is no formal textbook or required reading for this course.  But if you'd like to investigate some resources that cover the material at a similar level, here are some recommendations from Alison and Jeff:</p>
+<h5> <span class="mw-headline" id="Traditional_textbooks">Traditional textbooks</span></h5>
+<p>There are many excellent textbooks that cover the material in the course.  Here are three of our favourites:</p>
+<ol>
+<li><p>Introduction to the Practice of Statistics by David S. Moore and George P. McCabe.  The book is currently in its fifth edition, but all editions are great.</p></li>
+<li><p>Stats: Data and Models, Canadian edition by Richard D. De Veaux, Paul F. Velleman, David E. Bock, Augustin M. Vukov, and Augustine C.M. Wong.  The original version of the book by the first three authors is also recommended.</p></li>
+<li><p>Statistics by David Freedman, Robert Pisani and Roger Purves.</p></li>
+</ol>
+<h5> <span class="mw-headline" id="Online_textbooks">Online textbooks</span></h5>
+<p>There are also many resources online.  For an online textbook try one of the following:</p>
+<ol>
+<li><p><a rel="nofollow" class="external text" href="http://www.openintro.org/stat/index.php">OpenIntro Statistics</a> (paperback copies also available)</p></li>
+<li><p><a rel="nofollow" class="external text" href="http://onlinestatbook.com/2/index.html">OnlineStatBook</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="http://davidmlane.com/hyperstat/index.html">Hyperstat</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="http://www.sjsu.edu/faculty/gerstman/StatPrimer/">StatPrimer</a></p></li>
+</ol>
+<h5> <span class="mw-headline" id="Posts_from_staff">Posts from staff</span></h5>
+<p>The following link redirect you to the staff's posts:</p>
+<p>Jeffrey Rosenthal: 
+<a rel="nofollow" class="external free" href="https://class.coursera.org/introstats-001/forum/profile?user_id=2068199">https://class.coursera.org/introstats-001/forum/profile?user_id=2068199</a></p>
+<p>Alison Gibbs: 
+<a rel="nofollow" class="external free" href="https://class.coursera.org/introstats-001/forum/profile?user_id=1084582">https://class.coursera.org/introstats-001/forum/profile?user_id=1084582</a></p>
+<p>Edwin Lei: 
+<a rel="nofollow" class="external free" href="https://class.coursera.org/introstats-001/forum/profile?user_id=1679722">https://class.coursera.org/introstats-001/forum/profile?user_id=1679722</a></p>
+<h3> <span class="mw-headline" id="Additional_Resources_for_Week_1">Additional Resources for Week 1</span></h3>
+<p>(Posted by Alison Gibbs)</p>
+<ul>
+<li><p>Lecture 1.3 is about measures of centre of the data.  Try playing with <a rel="nofollow" class="external text" href="http://onlinestatbook.com/stat_sim/descriptive/Contents.html">this applet</a> (by the Rice Virtual Lab in Statistics) to see how the relative values of the mean and median change when you manipulate the data values.</p></li>
+<li><p>Lecture 1.5 is about the shape of a distribution of data and includes information about histograms.  You can experiment with <a rel="nofollow" class="external text" href="http://www.rossmanchance.com/applets/HClasses/Histogram.html">this applet</a> (by Allan Rossman and Beth Chance) to see how the shape of a histogram can vary with the choice of bin width.  The choice of bin width needs to be carefully considered on a dataset by dataset basis.</p></li>
+</ul>
+<h3> <span class="mw-headline" id="Summary_Notes_on_First_Week_Videos:">Summary Notes on First Week Videos:</span></h3>
+<p>The following is a summary of the most important points in first week videos. Please feel free to correct or add any important information.</p>
+<p>=============================================================================================</p>
+<h4> <span class="mw-headline" id="Five_numbers_summary:">Five numbers summary:</span></h4>
+<ul>
+<li><p>Minimum: the lowest point</p></li>
+<li><p>First quartile: the ¼ point in data.</p></li>
+<li><p>Median: the average point or the center of data. Median is robust or resistant to outliers.</p></li>
+<li><p>Third quartile: the ¾ point in data.</p></li>
+<li><p>Maximum: the largest point.</p></li>
+</ul>
+<h4> <span class="mw-headline" id="Box_plot:">Box plot:</span></h4>
+<p>shows all the five numbers summary.</p>
+<ul>
+<li>Whiskers: the lowest value in both sides (left and right) of box plots</li>
+</ul>
+<h4> <span class="mw-headline" id="Modified_box_plot:">Modified box plot:</span></h4>
+<p>is used to explain unusual data.</p>
+<ul>
+<li><p>Inter-quartile range or IQR: the difference between the third quartile and first quartile</p></li>
+<li><p>Inner fences: is 1.5 times the IQR beyond the first and third quartile.</p></li>
+<li><p>Lower inner fence = 1st quartile - (1.5 x IQR)</p></li>
+<li><p>Upper inner fence = 3rd quartile + (1.5 x IQR)</p></li>
+<li><p>Mean= the sum of data values / number of data values</p></li>
+</ul>
+<h4> <span class="mw-headline" id="The_trimmed_mean:">The trimmed mean:</span></h4>
+<p>to remove the influence of bigger or lowest unusual values in data by excluding a percentage of values from the largest and lowest sides of the sample and calculating the mean of the remaining. For example, a 10% trimmed mean is calculated by ignoring 10% of the data points on the highest side and 10% of the data points on the lowest side. An 8% trimmed mean is calculated by ignoring 8% of the data points on the highest side and 8% of the data points on the lowest side. What percentage to ignore is arbitrary, and is meant to exclude outliers so that their impact is removed.</p>
+<p>Measures of the spread of data by:</p>
+<ul>
+<li><p>Range: max value – min value (not robust)</p></li>
+<li><p>IRQ range: third quartile – 1st quartile (robust)</p></li>
+<li><p>Variance: “is defined as the sum of the squared distances of each term in the distribution from the mean (μ), divided by the number of terms in the distribution (N).” (<a rel="nofollow" class="external free" href="http://www.sciencebuddies.org/science-fair-projects/search.shtml?t=&amp;q=standard+deviation+&amp;cof=FORID%3A9&amp;cx=006938645102073751460%3A5g77bgclmby">http://www.sciencebuddies.org/science-fair-projects/search.shtml?t=&amp;q=standard+deviation+&amp;cof=FORID%3A9&amp;cx=006938645102073751460%3A5g77bgclmby</a>)</p></li>
+<li><p>Standard deviation SD: A measure of the dispersion of a set of data from its mean. (not robust).</p></li>
+</ul>
+<h4> <span class="mw-headline" id="Histogram:">Histogram:</span></h4>
+<p>is useful to show distribution of data.</p>
+<ul>
+<li><p>Bins: the intervals used in a histogram. The data must be separated into mutually exclusive and exhaustive bins.</p></li>
+<li><p>Cutpoints: the values that define the beginning and the end of the bins.</p></li>
+<li><p>Frequency: the count of the number of the data values in each bin.</p></li>
+<li><p>Peaks or modes: the largest bins.</p></li>
+<li><p>Unimodal: one peak; bimodal: 2 peaks; multimodal: multiple peaks.</p></li>
+<li><p>Uniform distribution: all data values occur about an equal number of times. It’s an example of a distribution without mode.</p></li>
+<li><p>Symmetric histogram: without mode.</p></li>
+<li><p>Left-skewed histogram: the longer tail on the left side.</p></li>
+<li><p>Right-skewed histogram: the longer tail on the right side.</p>
+<p><a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/7/76/Skewed_histogram.GIF">https://share.coursera.org/wiki/images/7/76/Skewed_histogram.GIF</a></p></li>
+</ul>
+<p>(Source: <a rel="nofollow" class="external free" href="http://killianhma0910.wikispaces.com/7.+Histograms">http://killianhma0910.wikispaces.com/7.+Histograms</a>)</p>
+<p>Outliers or gaps: data values that are much larger or smaller than the rest of the data.</p>
+<h4> <span class="mw-headline" id="The_relative_location_of_the_mode.2C_median.2C_and_mean_in_a_unimodal_distribution:">The relative location of the mode, median, and mean in a unimodal distribution:</span></h4>
+<ol>
+<li><p>Symmetric distribution: the mean, median, and mode are all approximately the same.</p></li>
+<li><p>Left-skewed distribution: the mode is larger than the median which is larger than the mean.</p></li>
+<li><p>Right-skewed distribution: the mode is less than the median which is less the mean.</p></li>
+</ol>
+<p>Symmetric, unimodal is a bell-shaped distribution.</p>
+<h4> <span class="mw-headline" id="The_empirical_rule:">The empirical rule:</span></h4>
+<p>In statistics, the 68-95-99.7 rule — or three-sigma rule, or empirical rule — states that for a normal distribution, nearly all values lie within 3 standard deviations of the mean.</p>
+<p>About 68.27% of the values lie within 1 standard deviation of the mean. Similarly, about 95.45% of the values lie within 2 standard deviations of the mean. Nearly all (99.73%) of the values lie within 3 standard deviations of the mean. (Source: <a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/68-95-99.7_rule">http://en.wikipedia.org/wiki/68-95-99.7_rule</a>)</p>
+<p>Categorical variables: non-numerical data.</p>
+<p>Observational unit: the person or thing on which measurements are taken. Also called case, subject (when a person), experimental unit.</p>
+<p>Variables: a measured characteristic of an observation unit.</p>
+<h4> <span class="mw-headline" id="Types_of_variables:">Types of variables:</span></h4>
+<code><pre>1. Quantitative: a variable is quantitative if it takes on numerical values for which arithmetic operation make sense.
+
+2. Categorical: categorical variable records into which of several categories an observations falls.
+
+3. Ordinal: ordinal variables have a natural order. Ex: responses to likert scale
+</pre></code>
+<p>Observed value or observation: the actual value of a variable for one of the observational nits in a database.</p>
+<h3> <span class="mw-headline" id="Additional_Resources_for_Week_2">Additional Resources for Week 2</span></h3>
+<p>(Posted by Alison)</p>
+<ul>
+<li>Lecture 2.3 is about summarising the relationship between two quantitative variables, including the (Pearson) correlation.  <a rel="nofollow" class="external text" href="http://statweb.calpoly.edu/chance/applets/guesscorrelation/GuessCorrelation.html">This applet</a> (by Allan Rossman and Beth Chance) and <a rel="nofollow" class="external text" href="http://onlinestatbook.com/stat_sim/reg_by_eye/index.html">this applet</a> (by the Rice Virtual Lab in Statistics) allow you to see how accurately you can guess the correlation from a scatterplot of randomly simulated data for two quantitative variables.</li>
+</ul>
+<h3> <span class="mw-headline" id="Summary_Notes_on_Second_Week_Videos:">Summary Notes on Second Week Videos:</span></h3>
+<p>The following is a summary of the most important points in second week videos.
+Please feel free to correct or add any important information.</p>
+<p>=============================================================================================</p>
+<ol>
+<li>The <b>marginal distribution</b> is the distribution of only <u>one of the variables</u> in a <b>contingency table</b>.</li>
+<li>A <b>conditional distribution</b> of a categorical variable is its distribution within a fixed value of a second variable.
+(the <b>conditional distribution</b> proportions sum = 1)</li>
+<li>Two variables in a <b>contingency table</b> are independent if the <b>conditional distribution</b> of one variable is the same for <u>all values</u> of the other variable.</li>
+</ol>
+<h4> <span class="mw-headline" id="Relationships_btween_two_quantative_variables">Relationships btween two quantative variables</span></h4>
+<h3> <span class="mw-headline" id="Additional_Resources_for_Week_3">Additional Resources for Week 3</span></h3>
+<p>(Posted by Alison)</p>
+<ul>
+<li><p>In Lecture 3-5, we demonstrated some of the concepts using online java applets.  The coin tossing simulation can be found <a rel="nofollow" class="external text" href="http://www.rossmanchance.com/applets/CoinTossing/CoinToss.html">here</a> (with thanks to Allan Rossman and Beth Chance).  The sampling distribution of the mean applet can be found by pressing the "Begin" button on <a rel="nofollow" class="external text" href="http://onlinestatbook.com/stat_sim/sampling_dist/index.html">this page</a> (with thanks to David Lane for this one).  You are encouraged to play around and experiment with the applets yourself.</p></li>
+<li><p>If you're not using R, there are online calculators for the Binomial and Normal probability distributions.  For Binomial distribution calculations, we recommend <a rel="nofollow" class="external text" href="http://www.stat.tamu.edu/~west/applets/binomialdemo.html">this applet</a> (with thanks to Webster West).  For Normal distribution calculations, we recommend <a rel="nofollow" class="external text" href="http://www.stat.tamu.edu/~west/applets/normaldemo.html">this applet</a> (thanks again to Webster West) or <a rel="nofollow" class="external text" href="http://www.rossmanchance.com/applets/NormalCalcs/NormalCalculations.html">this applet</a> (thanks again to Allan Rossman and Beth Chance).</p></li>
+</ul>
+<h3> <span class="mw-headline" id="Summary_Notes_on_Third_Week_Videos:">Summary Notes on Third Week Videos:</span></h3>
+<p>The following is a summary of the most important points in third week videos.
+Please feel free to correct or add any important information.</p>
+<p>=============================================================================================</p>
+<h4> <span class="mw-headline" id="Basic_Rules_For_Probability">Basic Rules For Probability</span></h4>
+<p>S = Sample space (all possible outcomes)<br />
+A = An event - Any Subset of S<br />
+P(A)= Probability of A<br />
+<ul><li> 0 &lt;= P(A) &gt;= 1
+</li><li> P(S) = 1 
+</li><li> P(A') = 1-P(A)<br /><br />
+</li></ul>
+<b>Examples:</b><br />
+<u>We toss a fair coin 2 times:</u><br />
+S = {HH,HT,TH,TT}<br />
+p(HH)=P(HT)=p(TH)=P(TT)=$$ \frac{1}{4}$$=25%<br />
+A = Total of <u>two</u> heads --&gt; P(A)=P(HH)=$$ \frac{1}{4}$$=25%<br />
+A = Total of <u>one</u> head --&gt; P(A)=P(HT)+P(TH)=$$ \frac{1}{4}$$+$$ \frac{1}{4}$$=$$ \frac{1}{2}$$=50%<br /><br />
+<u>We toss a biased coin 2 times:</u><br />
+(assumption: P(Red side)=$$ \frac{1}{3}$$, P(Silver side=$$ \frac{2}{3}$$))<br />
+S = {RR,RS,SR,SS}<br />
+P(RR)=$$ \frac{1}{3}$$x$$ \frac{1}{3}$$=$$ \frac{1}{9}$$     P(RS)=$$ \frac{1}{3}$$x$$ \frac{2}{3}$$=$$ \frac{2}{9}$$     P(SR)=$$ \frac{2}{3}$$x$$ \frac{1}{3}$$=$$ \frac{2}{9}$$     P(SS)=$$ \frac{2}{3}$$x$$ \frac{2}{3}$$=$$ \frac{4}{9}$$<br /><br />
+Random value X: X = Total reds<br />
+P(X=2)=P(RR)=$$ \frac{1}{9}$$<br />
+P(X=0)=P(SS)=$$ \frac{4}{9}$$<br />
+P(X=1)=P(RS)+P(SR)=$$ \frac{2}{9}$$+$$ \frac{2}{9}$$=$$ \frac{4}{9}$$<br /><br /></p>
+<h4> <span class="mw-headline" id="Distribution_Of_Random_Variables_.28Discrete.29">Distribution Of Random Variables (Discrete)</span></h4>
+<p><b>Probability Distribution</b><br />
+<ul><li> Binomial(2,$$ \frac{1}{2}$$): We did 2 experiments (exp. flipped two coins) and the probability for success was $$ \frac{1}{2}$$
+</li><li> Binomial(1,$$ \frac{1}{2}$$)= Bernouly($$ \frac{1}{2}$$): We did 1 experiment (exp. flipped one coin) and the probability for success was $$ \frac{1}{2}$$<br /><br />
+</li></ul>
+<b>Mean / Average / Expected value</b><br />
+<b>$$ \sum\limits&#95;{x} XP(X)$$</b><br />
+$$ E(aX+bY)=aE(X)+bE(Y)$$<br /><br />
+<b>Variance</b><br />
+$$ \sum\limits&#95;{x} (X-M)^2 P(X)$$<br />
+$$ Var(aX)=a^2Var(X) $$<br />
+$$ SD(aX)=|a|SD(X) $$<br /><br />
+$$ Var(aX+b)=a^2Var(X) $$<br />
+$$ Var(X+Y)=Var(X)+Var(Y)$$ - Only if $$X,Y$$ are Independent<br /></p>
+<h3> <span class="mw-headline" id="Additional_Resources_for_Week_4">Additional Resources for Week 4</span></h3>
+<p>(Posted by Alison)</p>
+<ul>
+<li><p>In Lecture 4-5, we again demonstrate some of the concepts using online java applets.  The applet for simulating confidence intervals for a proportion is <a rel="nofollow" class="external text" href="http://www.rossmanchance.com/applets/NewConfsim/Confsim.html">here</a> (with thanks to Allan Rossman and Beth Chance).  The applet for simulating confidence intervals for a mean can be found on <a rel="nofollow" class="external text" href="http://www.utstat.utoronto.ca/alisong/moocapplets/ci_creation_applet">this page</a> (our thanks to Dale Berger and the WISE team for allowing us to mirror their applet).  You are encouraged to play around and experiment with the applets yourself.</p></li>
+<li><p>This week we also introduce a new probability distribution, the t distribution.  In the R tutorial for Lecture 4-4, Cristina demonstrates how to use R to get values for t distributions.  If you're not following the optional R part of the course, you can instead use online calculators to compute these values.  For the t distribution, we recommend <a rel="nofollow" class="external text" href="http://www.stat.tamu.edu/~west/applets/tdemo.html">this applet</a> (with thanks to Webster West).  Alternatively, tables of the t distribution can also be found online and in most introductory statistics textbooks.  </p></li>
+<li><p>Also, as recommended in Week 3, you can find a Binomial distribution calculator <a rel="nofollow" class="external text" href="http://www.stat.tamu.edu/~west/applets/binomialdemo.html">here</a> (thanks again to Webster West).  And for Normal distribution calculations, we recommend <a rel="nofollow" class="external text" href="http://www.stat.tamu.edu/~west/applets/normaldemo.html">this applet</a> (thanks once more to Webster West) or <a rel="nofollow" class="external text" href="http://www.rossmanchance.com/applets/NormalCalcs/NormalCalculations.html">this applet</a> (thanks again to Allan Rossman and Beth Chance).</p></li>
+</ul>
+<h3> <span class="mw-headline" id="Additional_Resources_for_Week_5">Additional Resources for Week 5</span></h3>
+<p>(Posted by Alison)</p>
+<p>(Week 5 materials will be posted on Monday April 29 at 12:01 AM EDT)</p>
+<ul>
+<li><p>Lecture 5-5 uses a java applet to illustrate some of the ideas about statistical power.  If you'd like to try the applet yourself, you can find it <a rel="nofollow" class="external text" href="http://www.utstat.utoronto.ca/alisong/moocapplets/power_applet/">here</a> (our thanks to Dale Berger and the WISE team for allowing us to mirror their applet).  You are encouraged to play around and experiment with it yourself.</p></li>
+<li><p>If you're not following the optional R part of the course, you may again want to use online calculators for critical values and probabilities for the normal and t distributions.  Again, for Normal distribution calculations, we recommend <a rel="nofollow" class="external text" href="http://www.stat.tamu.edu/~west/applets/normaldemo.html">this applet</a> (thanks to Webster West) or <a rel="nofollow" class="external text" href="http://www.rossmanchance.com/applets/NormalCalcs/NormalCalculations.html">this applet</a> (thanks again to Allan Rossman and Beth Chance).  For the t distribution, we recommend <a rel="nofollow" class="external text" href="http://www.stat.tamu.edu/~west/applets/tdemo.html">this applet</a> (with thanks once more to Webster West).  Alternatively, tables of the Normal and t distributions can also be found online and in most introductory statistics textbooks.  </p></li>
+</ul>
+<h3> <span class="mw-headline" id="Slides_of_the_course_materials">Slides of the course materials</span></h3>
+<p>Here the class/community shares the created slides. 
+Feel free to download, add or modify in terms of choosing another location etc.  </p>
+<h4> <span class="mw-headline" id="Week_1">Week 1</span></h4>
+<ol>
+<li>Introduction (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/pgwbqu3zosfzc6q/STA%20-%201-1%20-%20Introduction.pdf">https://www.dropbox.com/s/pgwbqu3zosfzc6q/STA%20-%201-1%20-%20Introduction.pdf</a>)<br /></li>
+<li>Five number summary (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/x7oog2vesearzqb/STA%20-%201-2%20-%20Fife%20number%20summary.pdf">https://www.dropbox.com/s/x7oog2vesearzqb/STA%20-%201-2%20-%20Fife%20number%20summary.pdf</a>)<br /></li>
+<li>The centre of the data and the effects of extreme values (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/1ubauvgedlzmoo1/STA%20-%201-3%20-%20The%20centre%20of%20the%20data%20and%20the%20effects%20of%20extreme%20values.pdf">https://www.dropbox.com/s/1ubauvgedlzmoo1/STA%20-%201-3%20-%20The%20centre%20of%20the%20data%20and%20the%20effects%20of%20extreme%20values.pdf</a>)<br /></li>
+<li>The spread of the data (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/s7fzk2gfd6uarna/STA%20-%201-4%20-%20The%20spread%20of%20the%20data.pdf">https://www.dropbox.com/s/s7fzk2gfd6uarna/STA%20-%201-4%20-%20The%20spread%20of%20the%20data.pdf</a>)<br /></li>
+<li>The shape of the data (<a rel="nofollow" class="external free" href="http://goo.gl/Ls6Uh">http://goo.gl/Ls6Uh</a>, or <a rel="nofollow" class="external free" href="https://www.dropbox.com/s/9fg8et6hegrbb9x/STA%20-%201-5%20-%20The-Shape-of-the-Data.pdf">https://www.dropbox.com/s/9fg8et6hegrbb9x/STA%20-%201-5%20-%20The-Shape-of-the-Data.pdf</a>)</li>
+<li>Categorical Variables (<a rel="nofollow" class="external text" href="https://docs.google.com/file/d/0B1_15M2f9QfTbjFQWmgzYjJnT0k/edit">Slides</a>, <a rel="nofollow" class="external free" href="https://www.dropbox.com/s/4ubs1pu4wxs4pbg/STA%20-%201-6%20-%20Categorical%20variables.pdf">https://www.dropbox.com/s/4ubs1pu4wxs4pbg/STA%20-%201-6%20-%20Categorical%20variables.pdf</a>)</li>
+<li>Some features of data (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/e27v5a1jdnnh4np/STA%20-%201-7%20-%20Some%20features%20of%20data.pdf">https://www.dropbox.com/s/e27v5a1jdnnh4np/STA%20-%201-7%20-%20Some%20features%20of%20data.pdf</a>)</li>
+</ol>
+<p>R-Tutorials</p>
+<ol>
+<li><p>I'll do it: name</p></li>
+<li><p>I'll do it: name</p></li>
+<li><p>I'll do it: name</p></li>
+</ol>
+<h4> <span class="mw-headline" id="Week_2">Week 2</span></h4>
+<p>Here are the slides for week 2. Please note that they are stored on a free Dropbox account and thus might not be available after some time due to large download volumes. </p>
+<p>I would like to suggest that everyone who likes to have slides (and downloads the below for example) registers for producing one slide deck in a subsequent week (see below). This will eliminate double work and speed up things a lot since not only one person has to produce all work. I am counting on you guys...</p>
+<ol>
+<li>Relationships Between Quantitative and Categorical Variables (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/kkr8kprhq00aal7/STA%20-%202-1%20-%20Relationships%20Between%20Quantitative%20and%20Categorical%20Variables.pdf">https://www.dropbox.com/s/kkr8kprhq00aal7/STA%20-%202-1%20-%20Relationships%20Between%20Quantitative%20and%20Categorical%20Variables.pdf</a>)</li>
+<li>Examining relationships between two categorical variables (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/fzhlrwecofcntn8/STA%20-%202-2%20-%20Examining%20relationships%20between%20two%20categorical%20variables.pdf">https://www.dropbox.com/s/fzhlrwecofcntn8/STA%20-%202-2%20-%20Examining%20relationships%20between%20two%20categorical%20variables.pdf</a>)</li>
+<li>Relationships between two quantitative variables (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/cytfdc5cy3bketv/STA%20-%202-3%20-%20Relationships%20between%20two%20quantitative%20variables.pdf">https://www.dropbox.com/s/cytfdc5cy3bketv/STA%20-%202-3%20-%20Relationships%20between%20two%20quantitative%20variables.pdf</a>)</li>
+<li>Data Collection - Sampling (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/cy0w2azer87vqyj/STA%20-%202-4%20-%20Data%20Collection%20-%20Sampling.pdf">https://www.dropbox.com/s/cy0w2azer87vqyj/STA%20-%202-4%20-%20Data%20Collection%20-%20Sampling.pdf</a>)</li>
+<li>Data Collection - Observational Studies (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/fadyz70e1zov1t3/STA%20-%202-5%20-%20Data%20Collection%20-%20Observational%20Studies.pdf">https://www.dropbox.com/s/fadyz70e1zov1t3/STA%20-%202-5%20-%20Data%20Collection%20-%20Observational%20Studies.pdf</a>)</li>
+<li>STA - 2-6 - Data Collection - Experiments (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/ihena29qlde1zgd/STA%20-%202-6%20-%20Data%20Collection%20-%20Experiments.pdf">https://www.dropbox.com/s/ihena29qlde1zgd/STA%20-%202-6%20-%20Data%20Collection%20-%20Experiments.pdf</a>)</li>
+</ol>
+<p>R-Tutorials</p>
+<ol>
+<li><p>Relationships Between Quantitative and Categorical Variables R Tutorial (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/0b5hj3li0oadr98/STA%202.1%20Relationship%20between%20Quantitatve%20and%20Categorical%20Variables%20R-Tutorial.pdf">https://www.dropbox.com/s/0b5hj3li0oadr98/STA%202.1%20Relationship%20between%20Quantitatve%20and%20Categorical%20Variables%20R-Tutorial.pdf</a>)</p></li>
+<li><p>I'll do it: name</p></li>
+<li><p>I'll do it: name</p></li>
+</ol>
+<h4> <span class="mw-headline" id="Week_3">Week 3</span></h4>
+<ol>
+<li>3.1
+(<a rel="nofollow" class="external free" href="https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing">https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing</a>)</li>
+<li>3.2
+(<a rel="nofollow" class="external free" href="https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing">https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing</a>)</li>
+<li>3.3
+(<a rel="nofollow" class="external free" href="https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing">https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing</a>)</li>
+<li>3.4
+(<a rel="nofollow" class="external free" href="https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing">https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&amp;usp=sharing</a>)</li>
+<li>3.5
+(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B4TNr4F2wA_5d0czVThnSk1nWjQ/edit?usp=sharing">https://docs.google.com/file/d/0B4TNr4F2wA_5d0czVThnSk1nWjQ/edit?usp=sharing</a>)</li>
+</ol>
+<p>R-Tutorials</p>
+<ol>
+<li><p>I'll do it: name</p></li>
+<li><p>I'll do it: name</p></li>
+<li><p>I'll do it: name</p></li>
+</ol>
+<p>In case you want to link the files, press the "Edit" register top left of this page and scroll down to the "Markup" which is in fact very easy to read. Check out the source how this weeks stuff is done and copy and paste. In case of difficulties paste in the message boards.</p>
+<h4> <span class="mw-headline" id="Week_4">Week 4</span></h4>
+<p>Thanks to the person posting slides for week 3! This motivated me to continue producing and sharing slides...</p>
+<ol>
+<li>Introduction to confidence intervals (<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/dy7sj6a44ggi8f4/STA%20-%204-1%20-%20Introduction%20to%20confidence%20intervals.pdf">https://www.dropbox.com/s/dy7sj6a44ggi8f4/STA%20-%204-1%20-%20Introduction%20to%20confidence%20intervals.pdf</a>)</li>
+<li>Confidence intervals for proportions(<a rel="nofollow" class="external free" href="https://www.dropbox.com/s/bphxh123bzfj4gs/STA%20-%204-2%20-%20Confidence%20Intervals%20for%20proportions.pdf">https://www.dropbox.com/s/bphxh123bzfj4gs/STA%20-%204-2%20-%20Confidence%20Intervals%20for%20proportions.pdf</a>)</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<h4> <span class="mw-headline" id="From_week_5">From week 5</span></h4>
+<p>Here is my dropbox-account. I cannot guarantee that all future course materials will be provided and I do only provide them "as-is". It would be good to see that there are some more "contributions" from other students. This would reduce the workload tremendously.</p>
+<p>Dropbox: <a rel="nofollow" class="external free" href="https://www.dropbox.com/sh/7b0an21ybl4d212/bj2dKa86kp">https://www.dropbox.com/sh/7b0an21ybl4d212/bj2dKa86kp</a>.</p>
+<h4> <span class="mw-headline" id="Week_6">Week 6</span></h4>
+<p>(Posted by Billy)
+Here are slides and text for all 4 week 6 lectures in one pdf! Note I do not intend to post anything for the R lectures as I don't find slides quite as useful for R. Post here if there is an issue with the download and I can try to fix it. Major kudos the person (week 5) who put up their entire set of slides - I wasted so much time pausing and rewinding making text based notes straight from the video!</p>
+<p>1-4. Week 6 All 4 Lectures (<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B6aXGpGtizy7bzNfOWctaWpVSkE/edit?usp=sharing">https://docs.google.com/file/d/0B6aXGpGtizy7bzNfOWctaWpVSkE/edit?usp=sharing</a>)</p>
+<h4> <span class="mw-headline" id="Week_7">Week 7</span></h4>
+<p>(Posted by Billy)
+Week 7 All Lectures: <a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B6aXGpGtizy7RldkS3NLVV9FeWc/edit?usp=sharing">https://docs.google.com/file/d/0B6aXGpGtizy7RldkS3NLVV9FeWc/edit?usp=sharing</a></p>
+<h4> <span class="mw-headline" id="Week_8">Week 8</span></h4>
+<p>(Posted by Billy)
+Week 8 All Lectures <a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B6aXGpGtizy7cXhyTnFRQWo1U3c/edit?usp=sharing">https://docs.google.com/file/d/0B6aXGpGtizy7cXhyTnFRQWo1U3c/edit?usp=sharing</a></p>
+<h4> <span class="mw-headline" id="All_Weeks">All Weeks</span></h4>
+<p>(Courtesy of Bernat Gabor)
+Full course lectures <a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B42XvjSlpDCtUl9XbDczbjByNHc/edit">https://docs.google.com/file/d/0B42XvjSlpDCtUl9XbDczbjByNHc/edit</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Introstats:Main&amp;oldid=13643">https://share.coursera.org/wiki/index.php?title=Introstats:Main&amp;oldid=13643</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,65 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:The Demand Function, the Demand Schedule and the Demand Curve</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<h2> <span class="mw-headline" id="Notes_for_Week_2:_2.2._The_Demand_Function.2C_Schedule.2C_and_Curve">Notes for Week 2: 2.2. The Demand Function, Schedule, and Curve</span></h2>
+<p>Use math to organize thinking</p>
+<p>$$Q&#95;x = f(P&#95;x, P&#95;y,I, T)$$</p>
+<p>$$Q&#95;x$$ - Quantity demand for x (Tomatoes) <br />
+$$P&#95;x$$ - Price of x (Tomatoes) <br />
+$$P&#95;y$$ - Price of related good y (e.g., bread or red bell peppers) <br /> 
+I  - Income of consumers <br />
+T  - Tastes or preferences of consumers
+<br /></p>
+<h3> <span class="mw-headline" id="Demand_Schedule">Demand Schedule</span></h3>
+<p><strong>Relationship of Demand to Price</strong> <br />
+Px Qx <br />
+0  12 <br />
+2  10 <br />
+4  8 <br />
+6  6 <br />
+8  4 <br />
+10 2 <br />
+12 0</p>
+<p>All other things equal/unchanged</p>
+<p>Tomato Example 
+Diagram (graph) 
+X = Qx
+Y - Px</p>
+<p>forms straight line (demand curve) with negative slope</p>
+<p><a href="/wiki/images/3/3c/Demand_graph.jpg" class="image"><img alt="Demand graph.jpg" src="/wiki/images/3/3c/Demand_graph.jpg" width="313" height="285" /></a></p>
+<hr />
+<p>Qx = f(Px,Py, I, T)</p>
+<p>where...
+Qx = quantity of "x" supply; Px = x's price; Py = price of related goods; I = income; T = preferences</p>
+<p>Demand Scale: 
+-inverse proportion
+-as Px (price) rises, Qd (quantity of demand) falls, and vice versa</p>
+<p>For those familiar with graphs: 
+The demand curve is a line of y = -x + b; where b is the Qd (quantity of demand), while the Px (price) is 0</p>
+<hr />
+<p>In conclusion, the demand graph is one of the key fundamentals that should be learned in Economics. It compares <strong><i>quantity</i> demanded for a particular good with the price of that particular good</strong>.</p>
+<h3> <span class="mw-headline" id="Law_of_Demand">Law of Demand</span></h3>
+<p>When the price of a given good goes up and all the other things stay the same, the consumption of this good decreases. And vice-versa.</p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:The_Demand_Function,_the_Demand_Schedule_and_the_Demand_Curve&amp;oldid=30570">https://share.coursera.org/wiki/index.php?title=Microecon:The_Demand_Function,_the_Demand_Schedule_and_the_Demand_Curve&amp;oldid=30570</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Microecon" title="Category:Microecon">Microecon</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

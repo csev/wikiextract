@@ -1,0 +1,91 @@
+Keep in mind that all the programming exercise solutions should handle any number of features in the training examples. Passing the test case in the PDF file is not sufficient to be sure of passing the submit grader's test case.
+
+### Debugging Tip
+The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.
+
+Open ex6/lib/submitWithConfiguration.m and replace line:
+
+     fprintf('!! Please try again later.\n');
+(around 28) with:
+
+    fprintf('Error from file: %s\nFunction: %s\nOn line: %d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+
+That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.
+
+## Update to ex6.m
+At line 69/70, change "sigma = 0.5" to "sigma = %0.5f", and change the list of output variables from "sim" to "sigma, sim". This lets the screen output display the actual value of sigma, rather than an (incorrect) constant value.
+
+## Trouble with the contour plot (visualizeBoundary.m)
+
+### Octave 3.8.x and higher
+
+If you have Octave 3.8.x, the ex6 script will not plot decision boundary, and prints 'Unknown hggroup property Color' with stack trace.
+
+One fix is to modify line 21 in visualizeBoundary.m  with this code:
+
+    contour(X1, X2, vals, [1 1], 'linecolor', 'blue');
+
+(Note: I tried this and although the error went away, I still don't see any contour line drawn; sokolov 3/22/2015)
+
+I had the same problem with the line not displaying until i changed the [0 0] to [1 1] - tmcarthur 7/1/2016
+
+OR
+
+If you change line 21 to following, it will show two lines and will work with >= 3.8.x .
+
+    contour(X1, X2, vals);
+
+For more information see
+
+http://lists.gnu.org/archive/html/octave-bug-tracker/2014-01/msg00226.html
+
+
+### Matlab
+
+In Matlab R2014b and R2015b, simply changing the [0 0] parameter on line 21 in visualizeBoundary.m to [1 1] plots the boundary.
+   
+## processEmail no loop possible
+Can use find() or ismember() for the word vocabulary cell array
+
+## Understanding SMO and the svmTrain() and svmPredict() methods
+The '''svmTrain.m''' file is provided with this exercise and it contains an implementation of the Sequential Minimal Optimization (SMO) algorithm to minimize an SVM.
+You don't need to understand how it works in order to complete the exercise. There are comments in the code that reference numbered equations, 
+but the code doesn't say what document those numbers reference. It turns out to be a section of the course materials from CS 229 at Stanford covering SMO, which can
+be found here:
+
+http://cs229.stanford.edu/materials/smo.pdf
+
+## More SVM explanations
+"An Idiot's Guide to Support Vector Machines"
+
+http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf
+
+## Information on SVMLIB
+
+This exercise uses the SVMLIB package to solve an exercise similar to ex6 (also by Prof Ng).
+
+http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex7/ex7.html
+
+## Using LIBSVM in MATLAB/Octave
+
+In the optional section of this exercise, Prof Ng recommended that we use LIBSVM to solve the problem.
+
+http://www.csie.ntu.edu.tw/~cjlin/libsvm/
+
+Installing LIBSVM on MATLAB/Octave is very easy. 
+
+- After downloading and unzipping the LIBSVM package, open MATLAB/Octave.
+
+- Go to the directory of the MATLAB/Octave version, e.g. "E:/CourseraML/machine-learning-ex6/ex6/libsvm-3.21/matlab"
+
+- Enter "make" in the command window.
+
+- That's it! You're done! Now read the README file in the MATLAB directory, and learn how to use svmtrain and svmpredict function.
+
+- In short, the syntax of these two functions are:
+
+   model = __svmtrain__( trainingLabelVector, trainingInstanceMatrix [, 'libsvmOptions'])
+
+   [predictedLabel, accuracy, decisionValues/probEstimates] = __svmpredict__( testingLabelVector, testingInstanceMatrix, model [, 'libsvmOptions']);
+
+[[Category:ML:Programming Exercises]]

@@ -1,0 +1,44 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Gameprogramming:Introduction</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+<h1> <span class="mw-headline" id="Introduction_to_C.23_Programming">Introduction to C# Programming</span></h1>
+<h2> <span class="mw-headline" id="A_basic_structure_of_a_simple_program"> A basic structure of a simple program</span></h2></p>
+<pre>
+using System
+namespace consoleapplication1
+{
+    class program
+    {
+        static void Main()
+        {
+           Console.WriteLine(&quot;Hello world&quot;)&#160;;
+        }
+    }
+}
+</pre>
+<h2> <span class="mw-headline" id="Comments_in_c.23">Comments in c#</span></h2>
+<ul>
+<li>Documentation comments</li>
+<li>Inline comments</li>
+</ul>
+<p><a href="/wiki/index.php/Gameprogramming:Main" title="Gameprogramming:Main"> Back to Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Gameprogramming:Introduction&amp;oldid=21027">https://share.coursera.org/wiki/index.php?title=Gameprogramming:Introduction&amp;oldid=21027</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Game_Programming" title="Category:Game Programming">Game Programming</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

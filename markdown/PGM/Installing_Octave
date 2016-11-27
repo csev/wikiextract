@@ -1,0 +1,108 @@
+### Installing Octave on Mac OS X 10.12 (sierra) with Homebrew
+
+A quick and convenient way to install Octave on OSx 10.12.x in the Terminal with Homebrew.
+
+Prerequisites : 
+
+1. install Xcode from the AppStore
+2. install homebrew from the official website : http://brew.sh
+
+Main steps in the Terminal (from Octave Wiki : [http://wiki.octave.org][0]) :
+
+1. import computing libraries definition with this command : 
+<pre>brew tap homebrew/science</pre>
+
+2. then update Homebrew :
+<pre>brew update && brew upgrade</pre>
+
+3. Install dependence XQuartz :
+<pre>brew cask install xquartz</pre>
+
+4. Install dependence Octave :
+<pre>brew install octave</pre>
+
+###Mac OS X 10.6 tips
+
+Installing GnuPlot on OS X 10.6, you may get an error complaining about "libfreetype". You can repair this, with the following steps:
+
+1. Open /Applications/Gnuplot.app/Contents/Resources/bin/gnuplot in a text editor. 
+2. Use the editor search-and-replace feature to replace "DYLD\_LIBRARY\_PATH" with "DYLD\_FALLBACK\_LIBRARY\_PATH". There are four instances that need to be replaced.
+
+MacPorts (a package manager for Mac OS X) has a portfile to install Octave on the recent versions of Mac OS X including Lion 10.7.  Note that its stable version (currently 3.2.4) does not support the 'textscan' command used in certain assignments for interacting with files such as the BayesNet used by samiam.  To get the current version, you need to install what MacPorts considers a developer beta (octave-devel).  After installing macports, to install Octave 3.4 you must type at a terminal (with su privileges):
+
+sudo port selfupdate
+
+sudo port install octave-devel
+
+Note: if you already have octave 3.2.4 (latest stable) installed, you must uninstall it first using:
+sudo port uninstall octave
+
+###Graphical user interfaces
+There are a few GUI front ends for octave. For Windows users:
+* [http://guioctave.com/ GUI Octave] has a nice resemblance to Matlab. The one feature that is missing is correct debugging support with Octave 3.4.
+** In newer versions of octave the documentation folder has been renamed. But because the location is hardcoded in GUI Octave, you have to change that, to use the documentation feature. E.g. if you are in C:\Octave\3.6.1_gcc4.6.2\doc\octave\html you could create a softlink like this: mklink /D .\interpreter .\octave.html (This works only in the cmd since Vista). Or you copy the folder or rename it to interpreter.
+
+Syntax highlighting for .m files is supported by some of the general-purpose text editors such as GEdit for Ubuntu or [http://notepad-plus-plus.org/ Notepad++] for Microsoft Windows.
+
+###Installing Octave in Red Hat EL 6 / CentOS 6
+GNU Octave is not included to official repositories of these Linux distributions. However you can install it from non-official [EPEL repository](http://fedoraproject.org/wiki/EPEL).
+
+1. Add EPEL repository to yum configuration:
+<pre>wget http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-5.noarch.rpm
+rpm -i epel-release-6-5.noarch.rpm</pre>
+
+2. Install GNU Octave
+<pre>yum install octave</pre>
+
+### Installing Octave on Ubuntu
+
+Note: this section was updated to include instructions for installing Octave from the source code.
+
+As of 01 Apr 2012, the version of Octave in the Ubuntu Software Repositories was 3.2. You can install that, if you wish, by using the command below in an Ubuntu terminal window.
+<pre>sudo apt-get install octave</pre>
+
+If you wish to use version 3.4 of Octave as recommended in the [Octave Installation guide](http://class.coursera.org/pgm/wiki/view?page=OctaveInstallation) for the course, another possibility is to build and install Octave by downloading the source code.
+
+It may seem as though doing this would be impossibly complex. However, I did this with Ubuntu and did not find it to be as hard as I was afraid it would be. It turned out to be more tedious and time consuming than difficult. Basically you do <code>sudo apt-get</code> over and over again and spend a lot of time waiting for compiles to complete. ;-)
+
+Here's a list of the commands/steps I followed.
+
+You can start by downloading one of the octave-3.4.3 source code archive files (for example [octave-3.4.3.tar.bz2][2]) from the *Gnu Project Archives* for Octave ([ftp.gnu.org/gnu/octave/][3]) and unpacking the octave-3.4.3 folder to a suitable place.
+
+The <code>apt-get</code> commands below install the programs and libraries needed to build Octave from the source code and run it once it is has been built.
+
+    sudo apt-get install build-essential
+    sudo apt-get build-dep octave3.2
+    sudo apt-get install gnuplot
+
+The programs below are installed to satisfy some dependencies which the <code>configure</code> script warns about. I'm not sure they are actually needed for the work done in this class, but I figured *what the heck?* and installed them anyway.
+
+    sudo apt-get install bison libfontconfig-dev
+    sudo apt-get install gtk2-engines-pixbuf
+
+After the above installs have completed, the next commands to enter are:
+
+    ./configure
+    make
+    make check
+    sudo make install
+
+Here's a little more detail on how to enter the above commands.
+
+After the above installs complete, you open up a terminal window and change directory into the octave-3.4.3 folder you unpacked from the archive. You then type <code>./configure</code> at the command prompt and press enter. 
+
+A **lot** of text will now stream past you in the terminal window. But after a while it should stop and, if you scroll up a bit, you should see a message something like:  
+<code>Octave is now configured for x86_64-unknown-linux-gnu</code>
+
+Now enter the command <code>make</code>. Again you'll see lots of text flow past. At this point all the source code for Octave is being compiled and linked together into either libraries or programs.
+
+This step typically takes a *seriously* **long** time ... as in *hours* ... to complete, I suggest doing something else while waiting for Octave to compile and build 
+
+When the <code>make</code> successfully completes, you enter the command <code>make check</code>. This runs tests on the code generated by the previous make to try to ensure that Octave is functioning as it should.
+
+Assuming that goes well then the command <code>sudo make install</code> actually installs the Octave 3.4.3 you built onto your Ubuntu system. After this completes you should be able to run Octave just by opening a terminal window and entering `octave` and pressing enter as shown in all the tutorials.
+
+  [0]: http://wiki.octave.org/Octave_for_MacOS_X
+  [1]: http://octave.1599824.n4.nabble.com/Octave-3-4-3-in-Ubuntu-11-10-td3947501.html
+  [2]: http://ftp.gnu.org/gnu/octave/octave-3.4.3.tar.bz2
+  [3]: http://ftp.gnu.org/gnu/octave/

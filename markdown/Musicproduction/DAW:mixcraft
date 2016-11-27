@@ -1,0 +1,81 @@
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project specifics
+details of file management
+*Project Name
+*File type
+To select file type click "file" on the top left corner and click on "preferences" from the dropdown menu. In the "Mixcraft Preferences" window select "Recording" by clicking on it. In "Recording", make sure you've selected "Uncompressed Wave File (.WAV)" under "Recording File Type:". 
+*Bit depth
+*Sampling rate
+To select sampling rate click "file" on the top left corner and click on "preferences" from the dropdown menu. In the "Mixcraft Preferences" window select "Sound Device" by clicking on it if it is not already selected. If Wave driver is selected under "Driver" locate "Wave Options" and select 48000 in the menu to the right of the "Sample Rate:" text by clicking on the downward arrow next to the number and selecting the appropriate rate. 
+*Hardware
+*Buffer size
+*Project folders specifics
+
+##Recording
+details of audio recording
+*Metronome(click track)
+*Count in
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+*Grid
+*Change grid resolution
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+*Website
+http://www.acoustica.com/mixcraft/
+*Manual
+Mixcraft 6 Manual 
+http://acoustica.com/mixcraft/support.htm
+
+Mixcraft 5 Manual 
+http://www.acoustica.com/files/help/mixcraft-5-manual.pdf
+
+Mixcraft 4 Manual 
+http://www.acoustica.com/files/help/mixcraft-4-manual.pdf
+
+*Forums
+http://forums.acoustica.com/bbs/viewforum.php?f=4 
+*Links

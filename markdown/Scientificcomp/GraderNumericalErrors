@@ -1,0 +1,47 @@
+# Known Assignment and Quiz Grader Numerical Errors:
+
+## Quiz 2
+
+* Q11 — assume t=0 as starting point for iteration (not stated in the problem)
+* Q12 — assume t=0 as starting point for iteration (not stated in the problem)
+
+## Quiz 3
+
+* Q4 — assume c1 = 0 and c2 = 1 (not stated in the problem) 
+* Q5 — assume c1 = 0 and c2 = 1 (not stated in the problem)  
+* Q6 — + 0.1 to the correctly rounded answer for no apparent reason.
+
+## Quiz 6
+    
+* Q3 — assume the range is [0,1] not [-1,1] as in the description.
+
+## Quiz 8
+
+* Q3 — assume $$\delta^2=1$$.
+
+
+## Quiz 10
+
+All iterations start at 1, example 1-9 == 8 iterations
+
+## Quiz 11
+
+* Q3 — correct operation count for FFT would use log base 2 since you split the problem
+into a binary tree with FFT, grader expects natural log (also rounded down instead of up??!), 
+I believe because matlab uses natural log by default but this is an error.
+(Technically, O() ignores constant factors, and there are plenty of factors in the FFT operation count. The unit operation has a complex multiply, complex add, and complex subtract. Does that count as ten or one or some other number?)
+
+* Q4 — correct answer requires $$f\prime(x)$$ = (-i*k)^n*f(x) not (i*k)^n*f(x) like in the lectures.
+
+## Homework 2
+
+* B — do not actually use the same shooting method for Beta, it does not pass the grader.      
+hard code eps_n =1
+* BQA — solution correct with either method
+* BQB — off +/- ??
+* BQC — solution correct with either method
+* BQD — off +/- ??
+
+## Homework 4
+
+Equation 4 of faqHW4.pdf should be $$\omega_t = \nu A\omega - B\psi C\omega +C\psi B\omega$$, i.e. the Laplacian matrix $$A$$ is applied to $$\omega$$ not $$\psi$$.

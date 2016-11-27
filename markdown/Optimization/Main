@@ -1,0 +1,11 @@
+Welcome to the Discrete Optimization course wiki.  In this space you can contribute useful information relating to the course material that will benefit this session of the course and all future sessions!
+
+* [[Optimization:correction | Corrections]] to the lectures,
+* Guide to [[Optimization:EditingVideos | editing the videos]],
+* [[Optimization:implementation | Implementations]] of example in the lectures,
+* Anything and everything about specific [[Optimization:tools | optimization tools]].
+
+## Extra code and scripts
+
+* [[Optimization:glue | Glue code]] helpful in the course, connecting the solver to different languages, file parsers, etc...
+* [[Optimization:AutoSubmit | autosubmit]] script which uses stored login and password data.

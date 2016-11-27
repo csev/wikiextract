@@ -1,0 +1,106 @@
+Welcome to the ML1:Main wiki! This is a wiki set up for the first course in the University of Washington Machine Learning Specialization: [https://www.coursera.org/learn/ml-foundations Machine Learning Foundations: A Case Study Approach]
+
+# Helpful links
+* [https://github.com/learnml/machine-learning-specialization The specialization's official GitHub repository]
+
+    You can find the data sets and latest Jupyter notebooks there.
+
+* [https://dato.com/products/create/docs/index.html GraphLab Create API Documentation]
+
+    * [https://dato.com/products/create/docs/generated/graphlab.SFrame.html `graphlab.SFrame`]
+    * [https://dato.com/products/create/docs/generated/graphlab.SArray.html `graphlab.SArray`]
+
+* [[ML1:Errata|Errata]]
+
+# Graphlab issues
+
+### 'import graphlab' fails after graphlab upgrade
+
+**Prerequisite**
+
+> Executing 
+> <pre>
+> import graphlab
+> </pre>
+
+**Error text** 
+
+> ImportError: dlopen(/Users/***/anaconda/lib/python2.7/site-packages/graphlab/cython/cy_unity.so,
+> no suitable image found.  Did find:
+> /Users/***/anaconda/lib/python2.7/site-packages/graphlab/cython/cy_unity.so: unknown file type, 
+> first eight bytes: 0x7F 0x45 0x4C 0x46 0x02 0x01 0x01 0x00
+
+**Solution** ([source](http://forum.turi.com/discussion/1319/error-when-importing-graphlab))
+
+One of the most probable cause is outdated pip.
+
+To fix it start Dato Launcher, then select Terminal. Check current version of pip with
+<pre>
+pip -V
+</pre>
+In case you see older version just run upgrade with next command:
+
+<pre>
+pip install --upgrade pip
+</pre>
+Then re-install graphlab-create
+<pre>
+pip uninstall graphlab-create
+pip install graphlab-create==2.0
+</pre>
+
+---
+
+### SFrame.show() doesn't show anything
+**Prerequisite**
+
+> Executing something like
+> <pre>
+> import graphlab
+> graphlab.canvas.set_target('ipynb')
+> data = graphlab.SFrame('data/')
+> data['image'].show()
+> </pre>
+
+**Issue** 
+
+> Expecting some images to show up but it shows nothing
+
+**Solution**
+
+1. Make sure you are running correct graphlab version. Start Dato Launcher, then select Terminal. Execute next command:
+<pre>
+pip install graphlab-create==2.0
+</pre>
+
+**Workaround** (_if nothing else work_)
+
+Replace 
+
+> <pre>
+> graphlab.canvas.set_target('ipynb')
+> </pre>
+
+with 
+
+> <pre>
+> graphlab.canvas.set_target('browser')
+> </pre>
+
+Instead of inlining images into the page it will open a new browser page for images. This is less convenient but this is something.
+
+---
+
+### No module named graphlab (under construction)
+**Prerequisite**
+
+**Error text** 
+
+**Solution**
+
+# Additional reading
+
+1. [The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World](https://www.amazon.com/Master-Algorithm-Ultimate-Learning-Machine/dp/0465065708?ie=UTF8&tag=slatmaga-20) by Pedro Domingos
+2. [ImageNet Classification with Deep Convolutional Neural Networks](http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf) by Alex Krizhevsky, Ilya Sutskever and Geoffrey E. Hinton
+3. [Deep Learning](http://www.deeplearningbook.org/) by Ian Goodfellow, Yoshua Bengio and Aaron Courville
+4. [Tf-idf :: A Single-Page Tutorial](http://www.tfidf.com/)

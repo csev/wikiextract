@@ -1,0 +1,380 @@
+# Bioelectricity -- Week 4  
+[[Bioelectricity:Week 4 transcripts | Edited Transcripts]]  
+[[Bioelectricity:Main | Main Page]]  
+    
+**Learning Objectives**  
+* Describe the purpose of each of the 4 model levels (1) alpha/beta (2) probabilities (3) ionic currents (4) trans-membrane voltage  
+* Estimate changes in each probability over a small interval Δt  
+* Compute the ionic current of potassium, sodium, and chloride from the state variables  
+* Estimate the change in trans-membrane potential over a short interval Δt  
+* State which ionic current is dominant during different phases of the action potential -- excitation, plateau, recovery  
+
+A) Hodgkin-Huxley Membrane Model
+B) HH Numerical calculations  
+
+Train system: Integrate the cars  
+  
+**Hodgkin-Huxley Membrane Model**  
+HH Numerical Calculations  
+Train system: Build the cars. Put train together.  
+  
+1. Introduction to week 4
+2. What is the problem?
+3. HH replacement for Rm
+4. The equation for each pathway
+5. Changes in n, m, h
+6. Equations for alphas and betas
+7. Problem session , gNa
+8. Putting it all together.
+9. Changes in n, m, h and Vm
+10. Numerical calculations, time and space
+11. Problem session, a Vm step
+12. Week 4 conclusions  
+
+## Active tissue – “the problem” (4-2)  
+**Where does the active response come from?**  
+algorithm?  
+How can Vm be getting bigger?  
+  
+$$I_m = I_c + I_r$$  
+$$I_c = I_m – I_r$$  
+$$C_m \frac{dV_m}{dt} = I_m – I_r$$
+  
+$$I_m$$ is $$I_{stim}$$ and then zero  
+$$I_r$$ is $$\frac{V_m}{R_m}$$  
+So,  
+: $$dV_m = ( I_{stim} – \frac{V_m}{R_m}) \frac{dt}{C_m}$$  
+  
+* But there's just no way here that one can possibly explain a large secondary or large subsequent deflection which we call the action potential.
+* So, our problem is we've got to explain that.  
+  
+**Hodgkin and Huxley Giant Squid, Electrodes**
+* Recorded data from the nerve axon of the giant squid  
+* Inserted electrodes inside and outside, along the axis to measure voltages and currents across the membrane  
+  
+**Model**
+* Created a mathematical theory to unify the experimental findings and provide a mechanism for the creation of action potentials.
+* This mathematical theory, somewhat updated, is presented here.
+* Received Nobel Prize  
+* Each ionic current described mathematically, including changes with Vm, and, for Na+, changes with time.  
+* Changed the composition of extracellular solution, so as to isolate the action of individual ions 
+  
+---
+## HH replacement for Rm (4-3)  
+**Replacing Rm with Ionic Currents**  
+* The Hodgkin and Huxley model observes that the, the passive model is limited in its representation of the pass through the membrane that are called, caused by holes and channels in the membrane.
+* Hodgkin and Huxley replaced that composite resistive model with what it really is underneath the surface, so to speak.  
+* It is thousands of each of three different kinds of channels.  
+:* One for Potassium  
+:* One for Sodium  
+:* And one for everything else, so called Leakage.  
+ 
+**Hodgkin-Huxley model: Replace Rm with individual ionic pathways.**  
+* Ir is replaced by Iion  
+* Iion has a path for each of 3 ions  
+* Each ionic pathway has a battery and a variable resistance  
+  
+**Stored energy now comes into the model**
+* Each ionic pathway has a battery
+* The batteries have a voltage equal to the Nernst potential for that ion.
+* Each ionic pathway also has a **variable** resistance.  
+:$$E_K$$ = the battery in the K path = equilibrium voltage for K+ (negative value) 
+:$$E_{Na}$$ = the battery in the Na path = equilibrium voltage for Na+ (positive value)  
+:$$E_l$$ = the battery in the leakage path 
+:$$E_K$$ does not= $$E_{Na}$$ does not = $$E_l$$ (3 different numbers)  
+
+* Each resistor has a line through it 
+* Is a signifier that resistance is a variable resistance. It is not the same resistance all the time.  
+* These resistances are not linked to each other because a part of the model is that each of these three lines are operating independently.  
+* It is the so called Independence Assumption. So that means that there has to be some other additional rules that tell us how these pathways operate.  
+* Each variable resistance is written as its reciprocal, a conductance, hence, for example, gK.  
+  
+---
+## The Equation for Each Pathway (4-4)  
+**The equations for the K pathway**   
+$$I_K$$ = $$g_K$$ ($$V_m$$ - $$E_K$$)  
+  
+There are a couple of important things to notice here.  
+* First, pathway resistance has been replaced by the pathway conductance.  
+* That means that in this equation, we have the conductance that multiplies the voltage rather than having the current divided by the resistance, as is normally the case for equations written as Ohm's law.  
+* But we see, in a different way, this is another form of Ohm's law, in the sense that it has the current equals the conductance times the voltage.  
+* n is the probability of an n particle being open  
+  
+However, this voltage is not just the voltage.
+It's not just Vm. It's Vm - EK.
+This whole entire composite effect, that is to say, the current that flows, IK, is
+depending on the Vm.  
+Take away EK - EK.  
+So the current that flows on the K pathway is Vm – EK and is proportional to Vm - EK.  
+  
+gK = ¯gKn^4
+
+* gK seems to be a variable rather than a constant.  
+* gK, at any particular moment, is equal to the maximum value of gK, the maximum it could ever have (signified by the bar over the gK) times this other quantity, K n to the fourth.  
+* How does one interpret that?  
+* We really are thinking not for just one channel, but for a whole aggregate of channels, the thousands of channels that are present in a patch.  
+* So, for that aggregate of channels, the conductivity is the maximum conductivity, the conductivity of all the channels were open, times the probability of a channel being open. Seems like a strange way to do it, but it works, so we like it.  
+  
+**K channel sketch, with n**  
+* Channel is going from the inside to the outside of this membrane.  
+* There are four gates the ion has to pass through to get through the channel.  
+* Probability that one particle (gates) is open is **n**.  
+* Probability that 4 are open, is **n** to the 4th.  
+* That is to say, the product of the probabilities of each one separately.  
+* So you think of the whole pathway from inside to outside, the whole channel, for potassium, as being a channel that has four units within it, four particles, each particle has to be in the open position, and when all four are open, then the channel as a whole is open.  
+  
+[[File:BE-week4-K-channel-sketch.png‎]]  
+  
+**The equations for the Na pathway.**  
+  
+$$I_Na$$ = $$g_{Na}$$ ($$V_m$$ - $$E_{Na}$$)
+  
+gNa = ¯gNa * (m^3) * h  
+  
+INa(t) = gNa(t)(Vm − ENa) [from textbook]
+* m is the probability of an m particle being open, and similarly for h.  
+* Similar structure to K pathway.  
+* Once again, voltage term is the difference between trans-membrane potential and the  sodium equilibrium potential.  
+* This is a hugely different combination than Vm - EK.  
+  
+**Sketch of an Na channel, with m and h**  
+* Gna conductivity of sodium channels, b that is, exist at a particular moment, is the maximum value (the value if all were open) timed m cubed h.  
+* So m cubed h is again a probability   
+* m cubed h also means we have 3 particles of the m type and one particle of the h type.  
+* For the channel as a whole to be open, all four of these particles have to be open.  
+  
+[[File:BE-week4-Na-channel-sketch.png]]  
+  
+*Why do you suppose there are two different kinds of gates that are built into this
+model? Two different kinds of particles. And the answer to that is it has to do with timing. This is a mechanism by which the right timing can be introduced, and, as you'll see later on, what happens is that, the timing is such that m, the m, m gates control the opening, control the timing of the opening and the h gates control the timing of the closing. We haven't shown that here, but you'll see that later on.*  
+  
+**The equations for the L pathway.**  
+
+* There are no probabilities here  
+* The L pathway, the leakage pathway, is like an ordinary hole in the membrane.  
+* There are not very many of these, so that means that gL is not a very big number. But it's an important number, even though small.  
+* And gL goes according to Vm - EL.  
+* El is usually taken as the equilibrium potential for chlorine ions.  
+* So, we know, we have a number for that value once we know this EL ion concentration in the interior and the exterior.  
+  
+---
+## Changes in n, m, h (4-5)  
+Now, we are want to talk about this n business, the probabilities and how they change, how these probabilities change as the voltage across the membrane changes.  
+  
+The rates of change of n, m, h are given by these differential equations:  
+dn/dt = $$\alpha_n$$ (1-n) - $$\beta_n$$ * n   
+   
+dn/dt = $$\alpha_m$$ (1-m) - $$\beta_m$$ * m    
+  
+dn/dt = $$\alpha_h$$ (1-h) - $$\beta_h$$ * h    
+  
+* Keep in mind that all the alphas and betas change when Vm changes.  
+* The number that are open, changing with the time, dn/dt is equal to this coefficient alpha which tells us what is the rate at which the closed channels are opening.  
+* If n is the number open, then one minus n is the number closed.  
+* n will be the number open.
+* Beta is the coefficient that tells us how rapidly channels that are open are going closed.  
+* Alpha is the rate of opening.  
+* All the alphas and betas change when Vm changes.  
+* They not only aren't the same value, they may not go in the same direction. They also may not change in the same degree.  
+* As a result you've really got to know what they are, before you can make any use
+at all out of these equations.   
+  
+There is one more general result that can be determined however from looking at these equations, and that is what is the long term equilibrium value of n, or m, or h, if the voltage does not change. So if Vm is constant, then n goes to alpha n over alpha n plus
+beta n. 
+    
+Changes in n, m, h: estimates.
+The rates of change of n, m, h are given by these differential equations:  
+  
+Often changes in n,m,h are computed by turning these equations around into approximations, where dt is now a finite interval and dn, dm, dh are estimates:  
+  
+---
+## Equations for alphas and betas (4-6)  
+First a matter of terminology  
+What is the difference between Vm and vm?
+sketch  
+* vm with a lower-case v is the  trans-membrane voltage relative to the transmembrane
+baseline voltage.  
+* Vm with an upper-case V is the trans-membrane voltage, absolute.  
+* Note that vm=Vm-Vr, where Vr is the resting transmembrane voltage.  
+* vm with a lower-case v is the trans-membrane voltage relative to the baseline voltage.  
+** vm is easier to measure, as it is not affected by DC drift, an issue with instrumentation. Baseline vm is by definition equal to zero.  
+• Vm with an upper-case V is the trans-membrane voltage, absolute.  
+** Vm is the “right” Vm. The baseline value of Vm will be -70mV, more or less, rather than 0 mV.  
+* Note that vm=Vm-Vr, where Vr is the resting Voltage.  
+** Everyone recognizes the difference between Vm and vm, but the specific notation is not always that used here.  
+  
+**Alphas and Betas**
+* The alpha functions are measurements of how fast the n, m, h particles open.  
+* The beta functions are measurements of how fast the n,m,h particles close.  
+* The HH expressions are in “per msec” units.  
+  
+On the train one hears, “Doors are opening” and “Doors are closing”  
+  
+* The alpha and beta functions given by HH are mathematical encapsulations of experimental
+measurements.  
+* In the HH model, they are specific to squid axon.  
+* Even though they are presented as mathematical functions, they are experimental results, given in a mathematical expression.  
+
+* There is an alpha (“turn on”) function and a beta (“turn off”) function.  
+* There are alphas and betas for each of the 3 probabilities n, m, h. Each function is notably different from the others.  
+* There are 6 functions in all.  
+
+* In coding the functions for computer evaluation, attention has to be given to assigning the correct function value for values of the argument vm when the function’s denominator goes to zero.  
+* HH did their numerical calculations manually.  
+  
+**Alphas and betas use vm**
+* The alpha and beta functions are written in terms of vm, the voltage as measured against the baseline.  
+
+**Equation for alpha_n, beta_n**  
+     expressed here in C language code  
+<code>//n  
+u = (10-vm)/10;  
+if (u > 0){au = u;} else{au = -u;}  
+if (au > 1.E-7){  
+     an=.01*(10.-vm)/(exp((10-vm)/10)-1);  
+}  
+else{ an = 0.1; }  
+bn=0.125*exp(-vm/80);</code>  
+  
+**Equation for alpha_m, beta_m**  
+<code>//m  
+u = (25-vm)/10;  
+if (u > 0){au = u;} else{au = -u;}  
+if (au > 1.E-7){  
+    am=0.1*(25-vm)/(exp((25-vm)/10)-1);  
+}  
+else {am = 1.;}  
+bm=4*exp(-vm/18);</code>    
+
+**Equation for alpha_h, beta_h**  
+<code>//h  
+ah=0.07*exp(-vm/20);  
+bh=1/(exp((30-vm)/10)+1);  
+return 0;</code>  
+  
+Hallelujah hallelujah no probabilities here  
+
+**HH Parameters and State Variables**  
+  
+---
+## Problem session , I_Na (4-7)  
+**Problem Session, I_ion, Q**  
+The tissue is active.  
+Using the HH standard parameter values, using the state variables set 1, and with no stimulus current at this time, what is:  
+a) IK  
+* Ik is equal to G bar K into the fourth.  
+* Probability n to the fourth, VM minus EK.  
+* We consider what each of these terms mean, GK is the conductance if all channels are open.  
+* n to the fourth is the probability of channels being open  
+* VM minus CK is often called the driving force.  
+* For potassium ions, the difference between the present voltage and the equilibrium voltage for potassium.  
+* This is a straight forward section of this question.  
+* You put in the numbers and you compute the answers.  
+  
+b) Ina  
+c) IL  
+* can be done in essentially the same way, but of course, substituting in the correct values for each of the respective components.  
+  
+d) If these currents were maintained without change for 50 usec, what would be the change in Vm?   
+* Use dVm = ( Istim – Vm/Rm) *dt / Cm  
+:* Problem: do not have a value for Rm
+: Solution: Vm/Rm = Iion = IK + INa + IL  
+
+**Problem Session, I_ion, a**  
+Using the HH standard parameter values, and using the state variables set 1, what is:  
+a) IK  
+  
+**Problem Session, dVm eq**
+Using the HH standard parameter values, and using the state variables set 1, what is:
+d) If these currents were maintained without change for 50 usec, what would be the change in Vm?  
+Notes: (1) for this question compute the change in one big step. Normally many smaller steps would be better.  
+(2) usec is an abbreviation for microseconds.
+dVm = ( Istim – Vm/Rm) *dt / Cm  
+
+**Problem Session, dVm numerical**
+Using the HH standard parameter values, and using the state variables set 1, what is:
+the change in Vm?  
+  
+---
+## Putting it all together (4-8)  
+* Hodgkin and Huxley were trying to explain why the big response occurs, in active tissue, after a small stimulus.  
+* The provided a mechanism by replacing the resistance current, in the passive model, with 3 components of ionic current, in an active model.  
+* The total current of these 3 components is called the ionic current.  
+* The ionic currents depend on probabilities of particle openings, and these probabilities are designated n, m, h  
+If
+* one knows Vm, n, m, h at one time, and 
+* if one knows Im and Istim at this time,  
+And
+*then one can project new values for Vm, n, m, h at a subsequent time,
+* To a good approximation, if the time interval is short.
+  
+* Finding individual ionic currents is nice, from a physiological perspective. It gives understanding of the mechanisms at work.
+* Being able to project forward, from one time to the next, for all the state variables Vm, n, m, h, is absolutely essential.
+* That time shift, repeated over and over, is what allows one to move forward, step by step, through a time interval. Doing that allows one to figure out what the sequence of events is, in an action potential.  
+  
+---
+## Changes in n, m, h and Vm (4-9)  
+Istim, Im plus Vm and n,m,h  
+Im = ic + iion  
+Iion = Ina + IK + IL  
+dVm / dt = dt( Im - Iion )/Cm  
+Vm[1] = Vm + dVm  
+Get alphas and betas  
+dn / dt =  
+dm / dt =  
+n[1], m[1], h[1]  
+  
+---
+## Numerical calculations, time and space (4-10)  
+Numerical calculations  
+Vm  
+gNa  
+gK  
+
+Sitting there  
+Na+ comes in  
+K+ goes out  
+Problem session, Vm steps  
+  
+---
+## Problem session, Vm steps (4-11)  
+**Q**  
+* Begin with the standard conditions. The tissue is active. At this moment the state variables are those of set 1.
+* A) What is Vm after one time step, if each time step is 50 usec?
+* B) What are n,m, h after one time step?
+* C) What is Vm after 2 time steps?
+  
+**A**  
+* Begin with the standard conditions and state variables set 1.
+* A) What is Vm after one time step (Vm1), if each time step is 50
+usec?  
+
+**B**  
+* Begin with the standard conditions and state variables set 1.
+* B) What are n,m, h after one time step (n1, m1, h1) of 50 usec?  
+  
+**C**
+* Begin with the standard conditions and state variables set 1.
+* C) What is Vm after 2 time steps (Vm2)?  
+  
+---
+## Week 4 in review (4-12)  
+* We started the week with a mystery. Where did the action potential come from? What was the mechanism?  
+* The HH model provided the answer. The resistive current in the passive model was replaced by 3 ionic currents. Each had a probabilistic basis.  
+* With the HH model, it was possible to move from one time to the next, and thereby to trace out the time history of the transmembrane potential, and each of its component currents.  
+* From the perspective of energy, we began the week with **no apparent source of energy**
+for the big voltages changes seen in the active tissue’s response.  
+  
+Once again:  
+* From the perspective of energy, we began the week with no source of energy for the big
+voltages changes seen in the active tissue’s response.
+Out of gas  
+
+* The Hodgkin-Huxley model showed how the membrane uses the energy **stored in the membrane** that comes from the ionic concentration differences of K, Na, and L ions.  
+
+* The Hodgkin-Huxley model linked the membrane model to the energy stored in the membrane that came from the ionic concentration differences of K, Na, and L.
+* Vm changes no longer have to be energized by Istim. 
+* Not like pulse transmission in coaxial cable…
+Bye bye Istim, I don’t need you any more  
+  
+[[Bioelectricity:Main | Main Page]]

@@ -1,0 +1,20 @@
+# Magic Series #
+
+### Comet ###
+A constraint programming based comet model for the magic series problem.
+
+<pre>
+import cotfd;
+Solver<CP> CP();
+
+int n = 5;
+range D = 0..n-1;
+var<CP>{int} s[D](CP,D);
+solve<CP> {
+  forall(k in D)
+    CP.post(s[k] == sum(i in D) (s[i]==k));
+} using {
+   label(s);
+   cout << s << endl;
+}
+</pre>

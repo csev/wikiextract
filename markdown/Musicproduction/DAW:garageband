@@ -1,0 +1,100 @@
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project specifics
+details of file management
+*Project Name
+*File type
+*Bit depth
+
+To change the project's bit depth, select GarageBand > Preferences... > Advanced; from the drop down menu at the top of the screen. On the advanced panel, there are three options: good, better, and best. The default "good" setting sets the bit depth at 16-bit. "Better" uses 24-bit in recording, but exports to 16-bit. "Best" exports in 24-bit.
+Note: this does not apply in the latest Garageband (10.0.3) which only has a checkbox for 24-bit (24-bit checked, 16-bit unchecked)
+
+*Sampling rate
+By default, GarageBand records and exports and exports at 44.1kHz. There is currently no option to change the sampling rate.
+
+*Hardware
+
+*Buffer size
+
+Garageband doesn't let you set buffer size. Previous versions did, but not the more recent ones.
+
+*Project folders specifics
+
+##Recording
+details of audio recording
+
+*Metronome(click track)
+
+The metronome can be enable by clicking on the metronome icon on the bottom panel between the master level control and the time/measure/project display.  The tempo of the metronome (and entire project) can be changed by clicking whatever icon is displayed in the time/measure/project display and selecting "project". Then click on the number displayed under tempo and move the bar up or down to your desired tempo.
+
+*Count in
+
+"Count in" gives you an intro beat count before recording begins.   To select, click "Control" on the top bar, then select "count in".
+
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+To cut/slice, place your red line marker on the place you want to cut and hit command T.
+*Grid
+*Change grid resolution
+*modifier key to toggle grid
+To turn grid on and off, hit commad G.
+*Add fades
+Right-click the small downward pointing arrow in the bottom right of the Track Header to reveal the Track's automation curve. Select 'Track Volume' in the drop-down and toggle the adjacent selection button to enable volume editing on the track. In the timeline, below the selected track, left-click anywhere to add a fade control point. Move the control points up or down to adjust the Track's volume at that point in the timeline. Repeat as desired.
+*Modify fades
+Show the Track's automation curve (small downward pointing arrow in the bottom right of a Track's Header), then select 'Track Volume' in the drop-down and add, move or delete automation control points to the timeline underneath the Track in the Timeline.
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+Zoom using the scroll wheel (hold CTRL modifier) or with a two-finger 'Pinch to Zoom' motion on a touch-enabled trackpad.
+*Nudge
+*Cycle
+Toggle the 'Cylcle Region' button (appears adjacent to the metronome button and looks like a recycle symbol of two arrows), then drag the yellow region at the top of the timeline to define the region. 
+*Merge
+*Name
+Double-click the name of the Track, edit the name and press Enter to save.
+*Color
+*Markers
+Markers can only be added to Movie or Podcast track: Track -> Show Podcast Track. Press the 'P' key to drop a Marker at the current Timeline position. Double-click the marker to reveal the Podcast Track pane (in the lower third of the Garageband window), then edit the Chapter Title. Resize the Marker region by dragging the edges, in the same way as other regions.
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+*Website
+http://www.apple.com/support/garageband/
+<br>support.apple.com/kb/PH1811
+<br>https://class.coursera.org/musicproduction-001/forum/list?forum_id=79 
+<br>https://class.coursera.org/musicproduction-001/forum/thread?thread_id=891
+*Manual
+http://manuals.info.apple.com/en_US/GarageBand_09_Getting_Started.pdf
+
+http://manuals.info.apple.com/en_US/GarageBand-AtAGlance.pdf
+*Forums
+*Links

@@ -1,0 +1,232 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">CI:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Welcome to the CI wiki page!</p>
+<p>This wiki will be collaboratively created by students in Tucker Balch's Computational Investing, Part 1 (Oct 2012). Find out how modern electronic markets work, why stock prices change in ways they do, and how computation can help our understanding of them. Learn to build algorithms and visualizations to inform investing practice.</p>
+<p>Feel free to create pages as needed. To see how to edit or create a page, see "Help" on the left navbar.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">1.1</span> <span class="toctext">Week 1</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Module_1:_Class_Overview"><span class="tocnumber">1.1.1</span> <span class="toctext">Module 1: Class Overview</span></a></li>
+<li class="toclevel-3"><a href="#Module_2:_So_you_want_to_be_a_Portfolio_Manager.3F"><span class="tocnumber">1.1.2</span> <span class="toctext">Module 2: So you want to be a Portfolio Manager?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">1.2</span> <span class="toctext">Week 2</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Module_3:_Mechanics_of_the_market"><span class="tocnumber">1.2.1</span> <span class="toctext">Module 3: Mechanics of the market</span></a></li>
+<li class="toclevel-3"><a href="#Module_4:_What_is_a_company_worth.3F"><span class="tocnumber">1.2.2</span> <span class="toctext">Module 4: What is a company worth?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">1.3</span> <span class="toctext">Week 3</span></a>
+<ul>
+<li class="toclevel-3"><a href="#QSTK_Software_Overview"><span class="tocnumber">1.3.1</span> <span class="toctext">QSTK Software Overview</span></a></li>
+<li class="toclevel-3"><a href="#Installing_on_Windows"><span class="tocnumber">1.3.2</span> <span class="toctext">Installing on Windows</span></a></li>
+<li class="toclevel-3"><a href="#Capital_Assets_Pricing_Model"><span class="tocnumber">1.3.3</span> <span class="toctext">Capital Assets Pricing Model</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">1.4</span> <span class="toctext">Week 4</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Efficient_Markets_Hypothesis"><span class="tocnumber">1.4.1</span> <span class="toctext">Efficient Markets Hypothesis</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_5"><span class="tocnumber">1.5</span> <span class="toctext">Week 5</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Portfolio_Optimization_and_the_Efficient_Frontier"><span class="tocnumber">1.5.1</span> <span class="toctext">Portfolio Optimization and the Efficient Frontier</span></a></li>
+<li class="toclevel-3"><a href="#Digging_Into_Data"><span class="tocnumber">1.5.2</span> <span class="toctext">Digging Into Data</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Quizzes"><span class="tocnumber">2</span> <span class="toctext">Quizzes</span></a></li>
+<li class="toclevel-1"><a href="#Quant_Software_wiki"><span class="tocnumber">3</span> <span class="toctext">Quant Software wiki</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<p>Different students have different learning styles, and having written notes to accompany the video lectures will be very useful to students who prefer learning by reading. Contributing to these notes will help those students, and will also help you internalize what you just learned!</p>
+<p>You can get to the lecture videos by going <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/class/index">here</a></p>
+<h2> <span class="mw-headline" id="Week_1">Week 1</span></h2>
+<h3> <span class="mw-headline" id="Module_1:_Class_Overview"><b>Module 1: Class Overview</b></span></h3>
+<ul>
+<li>Time:  19 minutes, Difficulty Level: Easy.</li>
+</ul>
+<p><strong>Goals and Objectives Of the Course</strong>
+<ul><li> Understand electronic markets
+</li><li> Understand market data
+</li><li> Write software to visualize
+</li><li> Write software to discover
+</li><li> Create market simulator</p>
+</li></ul>
+
+<p><strong>Lectures</strong>
+<ul><li> <a href="/wiki/index.php/CI:Class_Overview" title="CI:Class Overview">Class Overview</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=35">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/011-CompInvestI.pdf">pdf</a>)</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Module_2:_So_you_want_to_be_a_Portfolio_Manager.3F"><b>Module 2: So you want to be a Portfolio Manager?</b></span></h3>
+<ul>
+<li>Time: 108 minutes, Difficulty Level: Easy.</li>
+</ul>
+<p><strong>Goals and Objectives</strong>
+<ul><li> Understand course viewpoint: Portfolio Manager
+</li><li> Understand portfolio manager incentives
+</li><li> Understand two main types of funds
+</li><li> Understand benchmarks</p>
+</li></ul>
+
+<p><strong>Lectures</strong>
+<ul><li> <a href="/wiki/index.php/CI:Module_2_Objectives" title="CI:Module 2 Objectives">Module 2 Objectives</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=3">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/021-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:Common_metrics_for_assessing_fund_performance_1" title="CI:Common metrics for assessing fund performance 1">Common metrics for assessing fund performance 1</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=9">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/022-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:Common_metrics_for_assessing_fund_performance_2" title="CI:Common metrics for assessing fund performance 2">Common metrics for assessing fund performance 2</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=11">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/023-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:Demo" title="CI:Demo">Demo</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=13">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/024-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php?title=CI:Construct_and_Assess_a_Portfolio&amp;action=edit&amp;redlink=1" class="new" title="CI:Construct and Assess a Portfolio (page does not exist)">Construct and Assess a Portfolio</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=15">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/025-CompInvestI.pptx">powerpoint</a>)</p>
+</li></ul>
+
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1">Homework 1</a> - (<a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1_rubric">Marking</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_2">Week 2</span></h2>
+<h3> <span class="mw-headline" id="Module_3:_Mechanics_of_the_market">Module 3: Mechanics of the market</span></h3>
+<ul>
+<li>Time: 43 minutes, Difficulty Level: Easy.</li>
+</ul>
+<p><strong>Goals and Objectives</strong>
+<ul><li> Order Book
+</li><li> Short Selling
+</li><li> Arbitrage
+</li><li> Inside the hedge fund
+</li><li> Optimizers</p>
+</li></ul>
+
+<p><strong>Lectures</strong>
+<ul><li> <a href="/wiki/index.php/CI:Module_3_Objectives" title="CI:Module 3 Objectives">Module 3 Objectives</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=39">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/031-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:The_Order_book" title="CI:The Order book">The Order book</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=41">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/032-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:Hedge_funds_and_Arbitrage" title="CI:Hedge funds and Arbitrage">Hedge funds and Arbitrage</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=43">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/033-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:The_Computing_inside_a_Hedge_fund" title="CI:The Computing inside a Hedge fund">The Computing inside a Hedge fund</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=45">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/034-CompInvestI.pptx">powerpoint</a>)</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Module_4:_What_is_a_company_worth.3F"><b>Module 4: What is a company worth?</b></span></h3>
+<ul>
+<li>Time:  88 minutes, Difficulty Level: Easy.</li>
+</ul>
+<p><strong>Goals and Objectives</strong>
+<ul><li> Intrinsic value
+</li><li> News and Price
+</li><li> Fundamental analysis of a company</p>
+</li></ul>
+
+<p><strong>Lectures</strong>
+<ul><li> <a href="/wiki/index.php/CI:Intrinsic_Value_(Value_of_future_dividends)" title="CI:Intrinsic Value (Value of future dividends)">Intrinsic Value (Value of future dividends)</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=47">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/041-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:How_and_why_news_affects_prices_(Event_Study)" title="CI:How and why news affects prices (Event Study)">How and why news affects prices (Event Study)</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=49">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/042-CompInvestI.pptx">powerpoint</a>)
+</li><li> <a href="/wiki/index.php/CI:Fundamental_analysis_of_company_value" title="CI:Fundamental analysis of company value">Fundamental analysis of company value</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=51">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/043-CompInvestI.pptx">powerpoint</a>)</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Week_3">Week 3</span></h2>
+<h3> <span class="mw-headline" id="QSTK_Software_Overview"><b>QSTK Software Overview</b></span></h3>
+<p>** Video 61: QSTK software overview
+<ul><li><ul><li> Video 62: Installing prerequisites on Unix (MacOS and Ubuntu)
+</li><li> Video 63: Installing QSTK on Unix
+</li><li> Video 64: Installing Data
+</li><li> Video 65: Testing QSTK
+</li><li> Video 66: Testing QSTK continued</p>
+</li></ul>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Installing_on_Windows"><b>Installing on Windows</b></span></h3>
+<p>** Video 61: QSTK software overview
+<ul><li><ul><li> Video 81: Installing QSTK on Windows Overview
+</li><li> Video 82: Ubuntu install within VirtualBox
+</li><li> Video 83: Boot Ubuntu and Test QSTK
+</li><li> Video 65: Testing QSTK
+</li><li> Video 66: Testing QSTK continued</p>
+</li></ul>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Capital_Assets_Pricing_Model"><b>Capital Assets Pricing Model</b></span></h3>
+<p>** Video 71: Capital Assets Pricing Model
+<ul><li><ul><li> Video 72: CAPM: What is Beta
+</li><li> Video 73: How Hedge Funds use CAPM</p>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Week_4">Week 4</span></h2>
+<h3> <span class="mw-headline" id="Efficient_Markets_Hypothesis"><b>Efficient Markets Hypothesis</b></span></h3>
+<p>*Time / Difficulty Level&#160;: 60 minutes / Easy.</p>
+<p><strong>Goals and Objectives</strong>
+<ul><li> Information
+</li><li> Efficient Markets Hypothesis</p>
+</li></ul>
+
+<p><strong>Lectures</strong></p>
+<ul>
+<li><p><a href="/wiki/index.php?title=CI:Information_and_Arbitrage&amp;action=edit&amp;redlink=1" class="new" title="CI:Information and Arbitrage (page does not exist)">Information and Arbitrage</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week4">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=83">video</a></p></li>
+<li><p><a href="/wiki/index.php?title=CI:Efficient_Markets_Hypothesis&amp;action=edit&amp;redlink=1" class="new" title="CI:Efficient Markets Hypothesis (page does not exist)">Efficient Markets Hypothesis</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week4">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=85">video</a></p></li>
+<li><p><a href="/wiki/index.php?title=CI:Event_Studies&amp;action=edit&amp;redlink=1" class="new" title="CI:Event Studies (page does not exist)">Event Studies</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=89">video</a></p></li>
+<li><a href="/wiki/index.php?title=CI:Event_Profiler_(QSTK)&amp;action=edit&amp;redlink=1" class="new" title="CI:Event Profiler (QSTK) (page does not exist)">Event Profiler (QSTK)</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week4">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=93">video</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_5">Week 5</span></h2>
+<h3> <span class="mw-headline" id="Portfolio_Optimization_and_the_Efficient_Frontier"><b>Portfolio Optimization and the Efficient Frontier</b></span></h3>
+<p>Time / Difficulty Level&#160;: 60 minutes / Medium.</p>
+<p><strong>Goals and Objectives</strong>
+<ul><li> Portfolio Optimization
+</li><li> Correlation and Covariance
+</li><li> Efficient Frontier
+</li><li> How optimizers work</p>
+</li></ul>
+
+<p><strong>Lectures</strong></p>
+<ul>
+<li><a href="/wiki/index.php?title=CI:Portfolio_Optimization_and_Efficient_Frontier_1&amp;action=edit&amp;redlink=1" class="new" title="CI:Portfolio Optimization and Efficient Frontier 1 (page does not exist)">Portfolio Optimization and Efficient Frontier 1</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=95">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/111-CompInvestI.pdf">powerpoint</a>)</li>
+<li><a href="/wiki/index.php?title=CI:Portfolio_Optimization_and_Efficient_Frontier_2&amp;action=edit&amp;redlink=1" class="new" title="CI:Portfolio Optimization and Efficient Frontier 2 (page does not exist)">Portfolio Optimization and Efficient Frontier 2</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=97">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/112-CompInvestI.pdf">powerpoint</a>)</li>
+<li><a href="/wiki/index.php?title=CI:Correlation_and_Covariance&amp;action=edit&amp;redlink=1" class="new" title="CI:Correlation and Covariance (page does not exist)">Correlation and Covariance</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=99">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/113-CompInvestI.pdf">powerpoint</a>)</li>
+<li><a href="/wiki/index.php?title=CI:Efficient_Frontier&amp;action=edit&amp;redlink=1" class="new" title="CI:Efficient Frontier (page does not exist)">Efficient Frontier</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=101">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/114-CompInvestI.pdf">powerpoint</a>)</li>
+<li><a href="/wiki/index.php?title=CI:How_optimizers_work&amp;action=edit&amp;redlink=1" class="new" title="CI:How optimizers work (page does not exist)">How optimizers work</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=103">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/115-CompInvestI.pdf">powerpoint</a>)</li>
+</ul>
+<h3> <span class="mw-headline" id="Digging_Into_Data"><b>Digging Into Data</b></span></h3>
+<ul>
+<li>Time / Difficulty Level&#160;: 60 minutes / Medium.</li>
+</ul>
+<p><strong>Goals and Objectives</strong>
+<ul><li> Digging into Data</p>
+</li></ul>
+
+<p><strong>Lectures</strong>
+<ul><li> <a href="/wiki/index.php?title=CI:Digging_into_Data&amp;action=edit&amp;redlink=1" class="new" title="CI:Digging into Data (page does not exist)">Digging into Data</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=105">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/121-CompInvestI.pdf">powerpoint</a>)
+</li><li> <a href="/wiki/index.php?title=CI:Actual_Vs_Adjusted_Price&amp;action=edit&amp;redlink=1" class="new" title="CI:Actual Vs Adjusted Price (page does not exist)">Actual Vs Adjusted Price</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=107">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/122-CompInvestI.pdf">powerpoint</a>)
+</li><li> <a href="/wiki/index.php?title=CI:Data_Sanity_and_Scrubbing&amp;action=edit&amp;redlink=1" class="new" title="CI:Data Sanity and Scrubbing (page does not exist)">Data Sanity and Scrubbing</a> (<a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5">link</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=109">video</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/123-CompInvestI.pdf">powerpoint</a>)</p>
+</li></ul>
+
+<ul>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=148">Quiz 4</a> - Week 5</li>
+</ul>
+<h1> <span class="mw-headline" id="Quizzes">Quizzes</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=68">Quiz 1</a> - Module 1 &amp; 2</li>
+<li><p><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=84">Quiz 2</a> - Module 3 &amp; 4</p></li>
+<li><p><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=148">Quiz 4</a> - Week 5</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Quant_Software_wiki">Quant Software wiki</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org">wiki.quantsoftware.org</a></li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=CI:Main&amp;oldid=5589">https://share.coursera.org/wiki/index.php?title=CI:Main&amp;oldid=5589</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:CI" title="Category:CI">CI</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

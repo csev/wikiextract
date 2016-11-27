@@ -1,0 +1,217 @@
+# Editing videos
+
+On average videos available in this course are a bit longer than typical video at Coursera platform. If desired one can download and cut the videos in more manageable pieces.
+
+Before cutting the videos (source file will be intact) make sure the source files are the same (by running md5sum).
+
+## Constraint Programming
+
+**MD5 sums:**
+
+    6ce8e449faf8d32963bf82e03ad0d396 *001.mp4
+    7dc8154d0b9ee8ac9236eb2f82495d03 *002.mp4
+    0bf4dd4bc403bf5e7400b6db2268e623 *003.mp4
+    5535ed21973486d0775fd211ddea3342 *004.mp4
+    1ca30242843a4eaf3274468f57d46840 *005.mp4
+    eefcc279cc782d2d04614be4efde6f24 *006.mp4
+    03e0966bcc9b67a415b451bd02d548f8 *007.mp4
+    a5a8583714be858d6264d5d58dcabdd8 *008.mp4
+    1e8b916f3d4877b56449eedad9515934 *009.mp4
+    c552273f03561df84a20c8f244d1ac10 *010.mp4
+
+**Edit commands:**
+
+    ffmpeg -i 001.mp4 -ss 0 -t 00:07:31 "001.1. Intro, n-Queens.mp4"
+    ffmpeg -i 001.mp4 -ss 00:07:30 -t 00:06:25 "001.2. Map Coloring.mp4"
+    ffmpeg -i 001.mp4 -ss 00:13:56 "001.3. Computational Paradigm I.mp4"
+    
+    ffmpeg -i 002.mp4 -ss 0 -t 00:03:44 "002.1. Computational Paradigm II.mp4" 
+    ffmpeg -i 002.mp4 -ss 00:03:44 -t 00:17:14 "002.2. Send More Money.mp4"
+    ffmpeg -i 002.mp4 -ss 00:20:57 "002.3. Arithmetic Constraints.mp4"
+    
+    ffmpeg -i 003.mp4 -ss 0 -t 00:06:52 "003.1. Magic Series and Reification.mp4"
+    ffmpeg -i 003.mp4 -ss 00:06:51 -t 00:06:18 "003.2. Stable Marriages.mp4"
+    ffmpeg -i 003.mp4 -ss 00:13:08 "003.3. The Basic Element Constraint.mp4"
+    
+    ffmpeg -i 004.mp4 -ss 0 -t 00:11:39.500 "004.1. Global Constraints, AllDifferent.mp4"
+    ffmpeg -i 004.mp4 -ss 00:11:39.200 -t 00:03:48.800 "004.2. Sudoku Example.mp4" 
+    ffmpeg -i 004.mp4 -ss 00:15:27 "004.3. Table Constraints, Optimal Solutions.mp4"
+    ffmpeg -i 005.mp4 -ss 0 -t 00:10:36 "005.1. Symmetry, BIBD.mp4"
+    ffmpeg -i 005.mp4 -ss 00:10:35  "005.2. Scene Allocation.mp4"
+    ffmpeg -i 006.mp4 -ss 0 -t 00:08:54 "006.1. Redundant Constraints, Magic Series.mp4"
+    ffmpeg -i 006.mp4 -ss 00:08:53  "006.2. Market Split, Surrogate Constraints.mp4"
+    
+    ffmpeg -i 007.mp4 -ss 0 -t 00:08:58 "007.1. Car Sequencing.mp4"
+    ffmpeg -i 007.mp4 -ss 00:08:57 -t 00:06:09.800 "007.2. Recursive Constraints.mp4"
+    ffmpeg -i 007.mp4 -ss 00:15:06 "007.3. Dual Modeling.mp4"
+    
+    ffmpeg -i 008.mp4 -ss 0 -t 00:08:34.500 "008.1. Binary Knapsack.mp4"
+    ffmpeg -i 008.mp4 -ss 00:08:34 -t 00:08:40.700 "008.2. AllDifferent, Maximum Matching I.mp4"
+    ffmpeg -i 008.mp4 -ss 00:17:14 -t 00:08:53 "008.3. Maximum Matching II.mp4"
+    ffmpeg -i 008.mp4 -ss 00:26:07 "008.4. Pruning.mp4"
+    
+    ffmpeg -i 009.mp4 -ss 0 -t 00:03:43 "009.1. Search, First-Fail I.mp4"
+    ffmpeg -i 009.mp4 -ss 00:03:43 -t 00:04:02 "009.2. Euler Knight.mp4"
+    ffmpeg -i 009.mp4 -ss 00:07:45 -t 00:12:31.800 "009.3. First-Fail II.mp4"
+    ffmpeg -i 009.mp4 -ss 00:20:17 "009.4. ESDS.mp4"
+    
+    ffmpeg -i 010.mp4 -ss 0 -t 00:07:07 "010.1. Value-Variable Labeling.mp4"
+    ffmpeg -i 010.mp4 -ss 00:07:07 -t 00:09:24.900 "010.2. Domain Splitting.mp4"
+    ffmpeg -i 010.mp4 -ss 00:16:32 -t 00:07:59 "010.3. Symmetry Breaking.mp4"
+    ffmpeg -i 010.mp4 -ss 00:24:31.200 "010.4. Randomization and Restarts.mp4"
+
+## Local Search
+
+**MD5 sums:**
+
+    6dd2837fdf80b32349acde16156adc5b *001.mp4
+    69da076fb7a234c0f968edf85d8db1bf *002.mp4
+    3717ef7482616caeaeeeb6a06dc472f5 *003.mp4
+    494872bdc9b1281cfdb3f19b741c43d9 *004.mp4
+    06335dc1b26a422569332c4f3dedfcd8 *005.mp4
+    d990d53ee4355b2714799bb29c9727f2 *006.mp4
+    d1dd7356a278699d5e3526e2bd5645c6 *007.mp4
+    2adb2551019bd415c21dbdc76d982c60 *008.mp4
+    2bc737205c8029cb2513aba0a624ccd6 *009.mp4
+
+**Edit commands:**
+
+    ffmpeg -i 001.mp4 -ss 0 -t 00:04:54.500 "001.1. Intuition.mp4"
+    ffmpeg -i 001.mp4 -ss 00:04:54 -t 00:04:41 "001.2. n-Queens.mp4"
+    ffmpeg -i 001.mp4 -ss 00:09:36 "001.3. Local Search.mp4"
+    
+    ffmpeg -i 002.mp4 -ss 0 -t 00:08:55.500 "002.1. Swaps - Car Sequencing.mp4"
+    ffmpeg -i 002.mp4 -ss 00:08:55 "002.2. Swaps - Magic Square.mp4"
+    
+    ffmpeg -i 003.mp4 -ss 0 -t 00:05:38.200 "003.1. Warehouse Location.mp4"
+    ffmpeg -i 003.mp4 -ss 00:05:38 -t 00:04:07 "003.2. Traveling Salesman Problem.mp4"
+    ffmpeg -i 003.mp4 -ss 00:09:45 "003.3. TSP K-OPT.mp4"
+    
+    ffmpeg -i 004.mp4 -ss 0 -t 00:06:04 "004.1. Optimization as Feasibility.mp4"
+    ffmpeg -i 004.mp4 -ss 00:06:03 -t 00:06:22 "004.2. Kemp Chains.mp4"
+    ffmpeg -i 004.mp4 -ss 00:12:26 "004.3. Graph Coloring - Combined.mp4"
+    
+    ffmpeg -i 005.mp4 -ss 0 -t 00:09:55.500 "005.1. Traveling Tournament Problem.mp4"
+    ffmpeg -i 005.mp4 -ss 00:09:55 "005.2. TTP - Moves.mp4"
+    
+    ffmpeg -i 006.mp4 -ss 0 -t 00:05:49.900 "006.1. Escaping Local Minima.mp4"
+    ffmpeg -i 006.mp4 -ss 00:05:49.500 -t 00:01:39.400 "006.2. Connectivity - Graph Coloring.mp4"
+    ffmpeg -i 006.mp4 -ss 00:7:28.100 -t 00:02:28.400 "006.3. Connectivity - Car Sequencing.mp4"
+    ffmpeg -i 006.mp4 -ss 00:09:56 "006.4. Connectivity - TSP, TTP.mp4"
+    
+    ffmpeg -i 007.mp4 -ss 0 -t 00:05:52.500 "007.1. Basic Local Search.mp4"
+    ffmpeg -i 007.mp4 -ss 00:05:52 -t 00:07:32 "007.2. Heuristics.mp4"
+    ffmpeg -i 007.mp4 -ss 00:13:24 -t 00:05:42.500 "007.3. Multi-Stage Heuristics.mp4"
+    ffmpeg -i 007.mp4 -ss 00:19:06.500 "007.4. Random Walk.mp4"
+    
+    ffmpeg -i 008.mp4 -ss 0 -t 00:02:59 "008.1. Iterated Local Search.mp4"
+    ffmpeg -i 008.mp4 -ss 00:02:59 -t 00:04:58 "008.2. Metropolis Heuristic.mp4"
+    ffmpeg -i 008.mp4 -ss 00:07:56 -t 00:04:54 "008.3. Simulated Annealing.mp4"
+    ffmpeg -i 008.mp4 -ss 00:12:50 "008.4. Tabu Search.mp4"
+    
+    ffmpeg -i 009.mp4 -ss 0 -t 00:05:29 "009.1. TS - Short-Term Memory.mp4"
+    ffmpeg -i 009.mp4 -ss 00:05:29 -t 00:12:11.800 "009.2. TS - Car Sequencing.mp4"
+    ffmpeg -i 009.mp4 -ss 00:17:40 -t 00:05:17.200 "009.3. TS - n-Queens Problem.mp4"
+    ffmpeg -i 009.mp4 -ss 00:22:57 "009.4. TS - Long-Term Memory.mp4"
+
+## Linear Programming
+
+**MD5 sums:**
+
+    5eac3dceac9f7898b298122a2c0440d0 *001.mp4
+    850f847a3ec2b3b0cedcb6dbaffb114d *002.mp4
+    ce8981d8a08aeb51cd0807e48dd3db8f *003.mp4
+    dfd5927cc584c7e5c7eecb8793e7a653 *004.mp4
+    3df9d2129aaf456ae3e033c878a80c25 *005.mp4
+    be4158a73e50d326a173bb904b2da054 *006.mp4
+
+**Edit commands:**
+
+    ffmpeg -i 001.mp4 -ss 0 -t 00:05:57 "001.1. Linear Programming.mp4"
+    ffmpeg -i 001.mp4 -ss 00:05:57 -t 00:10:52 "001.2. Geometry of Linear Programs.mp4"
+    ffmpeg -i 001.mp4 -ss 00:16:49 "001.3. Linear Programs - Vertices.mp4"
+    
+    ffmpeg -i 002.mp4 -ss 0 -t 00:06:00 "002.1. Simplex - Outline.mp4"
+    ffmpeg -i 002.mp4 -ss 00:06:00 "002.2. Algebraic View.mp4"
+    
+    ffmpeg -i 003.mp4 -ss 0 -t 00:11:45 "003.1. From BFS to BFS.mp4"
+    ffmpeg -i 003.mp4 -ss 00:11:45 -t 00:07:22 "003.2. The Simplex Algorithm.mp4"
+    ffmpeg -i 003.mp4 -ss 00:19:07 -t 00:07:31 "003.3. Leaving Variable, Termination.mp4"
+    ffmpeg -i 003.mp4 -ss 00:26:38 "003.4. Feasibility.mp4"
+    
+    ffmpeg -i 004.mp4 -ss 0 -t 00:04:31 "004.1. Matrix Notation.mp4"
+    ffmpeg -i 004.mp4 -ss 00:04:31 -t 00:10:26 "004.2. Feasible Solution.mp4"
+    ffmpeg -i 004.mp4 -ss 00:14:57 "004.3. The Tableau.mp4"
+    
+    ffmpeg -i 005.mp4 -ss 0 -t 00:07:56 "005.1. Duality Derivation.mp4"
+    ffmpeg -i 005.mp4 -ss 00:07:56 -t 00:07:40 "005.2. Duality, General Form.mp4"
+    ffmpeg -i 005.mp4 -ss 00:15:37 "005.3. Primal-Dual Properties.mp4"
+    
+    ffmpeg -i 006.mp4 -ss 0 -t 00:11:22 "006.1. Duality Interpretation.mp4"
+    ffmpeg -i 006.mp4 -ss 00:11:22 "006.2. Uses.mp4"
+
+
+## Mixed Integer Programming
+
+_Please note the videos come from the same section as Linear Programming, thus the source videos starts from 007._
+
+**MD5 sums:**
+
+    1c821a1c12ae4e591a245b0b6c09fb67 *007.mp4
+    03fe1417c559edf14ef31b6ae7749c21 *008.mp4
+    14917cbb3c4bfa396d91531ad791463c *009.mp4
+    c54c6f4173b043e1c59c59fadda6ebaa *010.mp4
+    b2b4cb15d2974aa49f5e40fc8393b81d *011.mp4
+
+**Edit commands:**
+
+    ffmpeg -i 007.mp4 -ss 0 -t 00:03:19 "001.1. MIP Introduction.mp4"
+    ffmpeg -i 007.mp4 -ss 00:03:19 -t 00:09:20 "001.2. Warehouse Location I.mp4"
+    ffmpeg -i 007.mp4 -ss 00:12:39 "001.3. Branch and Bound, Relaxation.mp4"
+    
+    ffmpeg -i 008.mp4 -ss 0 -t 00:08:54 "002.1. Warehouse Location II.mp4"
+    ffmpeg -i 008.mp4 -ss 00:08:54 -t 00:07:41 "002.2. Big-M Transformation.mp4"
+    ffmpeg -i 008.mp4 -ss 00:16:35 -t 00:08:09 "002.3. 0-1 Variables.mp4"
+    ffmpeg -i 008.mp4 -ss 00:24:43 "002.4. Combining Constraints.mp4"
+    
+    ffmpeg -i 009.mp4 -ss 0 -t 00:04:14 "003.1. Cutting Planes.mp4"
+    ffmpeg -i 009.mp4 -ss 00:04:14 -t 00:08:09 "003.2. Gomory Cuts.mp4"
+    ffmpeg -i 009.mp4 -ss 00:12:23 -t 00:05:02 "003.3. Gomory Cuts - Illustration.mp4"
+    ffmpeg -i 009.mp4 -ss 00:17:25 "003.4. Gomory Cuts - History.mp4"
+    
+    ffmpeg -i 010.mp4 -ss 0 -t 00:07:31 "004.1. Polyhedral Cuts, Facets.mp4"
+    ffmpeg -i 010.mp4 -ss 00:07:31 -t 00:07:41 "004.2. Node Packing.mp4"
+    ffmpeg -i 010.mp4 -ss 00:15:11 "004.3. Coloring a Map.mp4"
+    
+    ffmpeg -i 011.mp4 -ss 0 -t 00:05:31 "005.1. Cover Cuts.mp4"
+    ffmpeg -i 011.mp4 -ss 00:05:31 -t 00:08:31 "005.2. Separation for Cover Cuts.mp4"
+    ffmpeg -i 011.mp4 -ss 00:14:02 -t 00:02:22 "005.3. Seven Bridges of Königsberg.mp4"
+    ffmpeg -i 011.mp4 -ss 00:16:24 -t 00:05:59 "005.4. MIP for Traveling Salesman Problem.mp4"
+    ffmpeg -i 011.mp4 -ss 00:22:23 -t 00:05:00 "005.5. The Subtour Elimination Problem.mp4"     
+    ffmpeg -i 011.mp4 -ss 00:27:23 "005.6. Comb Constraints.mp4"
+
+
+## Advanced
+
+**MD5 sums:**
+
+    db51e5a8fa67c02212a102df17839331 *001.mp4
+    de9e1e74b68c1402d63264126145ba3b *002.mp4
+    a10676d056e96980741bf91443f84b18 *003.mp4
+
+**Edit commands:**
+
+    ffmpeg -i 001.mp4 -ss 0 -t 00:03:38 "001.1. Cutting Stock.mp4"
+    ffmpeg -i 001.mp4 -ss 00:03:38 -t 00:07:36 "001.2. MIP Models.mp4"
+    ffmpeg -i 001.mp4 -ss 00:11:14 -t 00:07:28 "001.3. Configurations and Linear Programming.mp4"
+    ffmpeg -i 001.mp4 -ss 00:18:41 "001.4. Column Generation, Branch and Price.mp4"
+    
+    ffmpeg -i 002.mp4 -ss 0 -t 00:03:40 "002.1. Project Scheduling.mp4"
+    ffmpeg -i 002.mp4 -ss 00:03:40 -t 00:11:14 "002.2. Jobshop Scheduling.mp4"
+    ffmpeg -i 002.mp4 -ss 00:14:54 -t 00:16:00 "002.3. Disjunctive Constraint.mp4"
+    ffmpeg -i 002.mp4 -ss 00:30:54 -t 00:04:41 "002.4. Disjunctive Pruning.mp4"                 
+    ffmpeg -i 002.mp4 -ss 00:35:35 "002.5. Search for Disjunctive Scheduling.mp4"
+    
+    ffmpeg -i 003.mp4 -ss 0 -t 00:06:24 "003.1. Limited Discrepancy Search.mp4"
+    ffmpeg -i 003.mp4 -ss 00:06:24 -t 00:02:48 "003.2. Large Neighborhood Search.mp4"
+    ffmpeg -i 003.mp4 -ss 00:09:12 "003.3. Asymmetric TSP with Time Windows.mp4"

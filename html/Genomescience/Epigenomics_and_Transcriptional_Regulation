@@ -1,0 +1,235 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Genomescience:Epigenomics and Transcriptional Regulation</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Waddington.E2.80.99s_Epigenetic_Landscape"><span class="tocnumber">1.1</span> <span class="toctext">Waddington’s Epigenetic Landscape</span></a></li>
+<li class="toclevel-2"><a href="#Epigenetics_in_Time"><span class="tocnumber">1.2</span> <span class="toctext">Epigenetics in Time</span></a></li>
+<li class="toclevel-2"><a href="#Example:_Identical_Twins"><span class="tocnumber">1.3</span> <span class="toctext">Example: Identical Twins</span></a></li>
+<li class="toclevel-2"><a href="#Example:_Mice_with_a_Mutation_in_Axin"><span class="tocnumber">1.4</span> <span class="toctext">Example: Mice with a Mutation in Axin</span></a></li>
+<li class="toclevel-2"><a href="#Diet_Influence"><span class="tocnumber">1.5</span> <span class="toctext">Diet Influence</span></a></li>
+<li class="toclevel-2"><a href="#The_Same_Is_True_in_Humans"><span class="tocnumber">1.6</span> <span class="toctext">The Same Is True in Humans</span></a></li>
+<li class="toclevel-2"><a href="#Question_1"><span class="tocnumber">1.7</span> <span class="toctext">Question 1</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Major_Structures_in_DNA_Compaction"><span class="tocnumber">2.1</span> <span class="toctext">Major Structures in DNA Compaction</span></a></li>
+<li class="toclevel-2"><a href="#Mechanism"><span class="tocnumber">2.2</span> <span class="toctext">Mechanism</span></a></li>
+<li class="toclevel-2"><a href="#Chromatin_Structure"><span class="tocnumber">2.3</span> <span class="toctext">Chromatin Structure</span></a></li>
+<li class="toclevel-2"><a href="#Traditional_Approaches_to_Studying_Histone_Modifications"><span class="tocnumber">2.4</span> <span class="toctext">Traditional Approaches to Studying Histone Modifications</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#How_Are_These_Processes_Governed_at_a_Genome_Scale.3F"><span class="tocnumber">3</span> <span class="toctext">How Are These Processes Governed at a Genome Scale?</span></a>
+<ul>
+<li class="toclevel-2"><a href="#DNA_Methylation"><span class="tocnumber">3.1</span> <span class="toctext">DNA Methylation</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Global_for_Studying_Methylation"><span class="tocnumber">3.1.1</span> <span class="toctext">Global for Studying Methylation</span></a></li>
+<li class="toclevel-3"><a href="#Global_Method:_MeDIP_Sequencing"><span class="tocnumber">3.1.2</span> <span class="toctext">Global Method: MeDIP Sequencing</span></a></li>
+<li class="toclevel-3"><a href="#Genomic_Method:_Bi-Sulfite_Sequencing"><span class="tocnumber">3.1.3</span> <span class="toctext">Genomic Method: Bi-Sulfite Sequencing</span></a></li>
+<li class="toclevel-3"><a href="#Limitations"><span class="tocnumber">3.1.4</span> <span class="toctext">Limitations</span></a></li>
+<li class="toclevel-3"><a href="#Question_2"><span class="tocnumber">3.1.5</span> <span class="toctext">Question 2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Histone_Modifications"><span class="tocnumber">3.2</span> <span class="toctext">Histone Modifications</span></a>
+<ul>
+<li class="toclevel-3"><a href="#DNA_.E2.80.93_Protein_Interactions:_ChIP-Seq"><span class="tocnumber">3.2.1</span> <span class="toctext">DNA – Protein Interactions: ChIP-Seq</span></a></li>
+<li class="toclevel-3"><a href="#Mapping_Modifications_with_ChIP-Seq"><span class="tocnumber">3.2.2</span> <span class="toctext">Mapping Modifications with ChIP-Seq</span></a></li>
+<li class="toclevel-3"><a href="#Histone_Modification_Mapping_with_ChIP-Seq"><span class="tocnumber">3.2.3</span> <span class="toctext">Histone Modification Mapping with ChIP-Seq</span></a></li>
+<li class="toclevel-3"><a href="#Chromatin_Modifications:_On_and_Off"><span class="tocnumber">3.2.4</span> <span class="toctext">Chromatin Modifications: On and Off</span></a></li>
+<li class="toclevel-3"><a href="#Question_3"><span class="tocnumber">3.2.5</span> <span class="toctext">Question 3</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Proteomic_Can_Be_Used_as_Well"><span class="tocnumber">3.3</span> <span class="toctext">Proteomic Can Be Used as Well</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Question_4"><span class="tocnumber">3.3.1</span> <span class="toctext">Question 4</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Introduction">Introduction</span></h3>
+<p>Today we are going to talk about the field of epigenomics.</p>
+<h4> <span class="mw-headline" id="Waddington.E2.80.99s_Epigenetic_Landscape">Waddington’s Epigenetic Landscape</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/9/98/ExSciGen_L12_S02_WaddingtonsEpigeneticLandscape.png" class="image"><img alt="" src="/wiki/images/thumb/9/98/ExSciGen_L12_S02_WaddingtonsEpigeneticLandscape.png/160px-ExSciGen_L12_S02_WaddingtonsEpigeneticLandscape.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/9/98/ExSciGen_L12_S02_WaddingtonsEpigeneticLandscape.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Waddingtons Epigenetic Landscape (Slide 02)</div></div></div>
+<ul><li>[0:00:05][Slide 02]</p>
+</li></ul>
+<p>The field really got its start when Conrad Waddington described the epigenetic landscape. That was the idea that a single cell, a fertilized egg could become a blood cell, a bone cell, a neuron, or any of a hundred or more cell types depending on its developmental trajectory. </p>
+<p>Waddington pictured a ball rolling down a hill. If this particular ball headed down this path and settled into this valley the resulting attractant state would result in a blood cell, whereas if this cell travelled down another trajectory and settled in another valley it would become a bone cell, or in the third valley a neuron.</p>
+<p>The ideas was that these states were largely terminal that you could roll no further down the hill or back up the hill. We know now that that is wrong. For example, Yamanaka factors can reverse this developmental landscape. But the idea held true for the better part of fifty years.</p>
+<h4> <span class="mw-headline" id="Epigenetics_in_Time">Epigenetics in Time</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/0/0f/ExSciGen_L12_S03_EpigeneticsInTime.png" class="image"><img alt="" src="/wiki/images/thumb/0/0f/ExSciGen_L12_S03_EpigeneticsInTime.png/160px-ExSciGen_L12_S03_EpigeneticsInTime.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/0/0f/ExSciGen_L12_S03_EpigeneticsInTime.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Epigenetics in Time Magazine (Slide 03)</div></div></div>
+<ul><li>[0:01:15][Slide 03]</p>
+</li></ul>
+<p>The field has recently boomed. To remind you, ‘epi’ from the Greek meaning high or above genetics means transmittance of information through gene expression changes rather than changes in gene sequence. These expression changes are mediated by either direct modification of DNA through DNA methylation or by access to DNA through regulating histone modifications by methylation, acetylation, or phosphorylation. 
+This idea is that these epi-mutations—changes in the access or medication of DNA can occur much faster than mutations in DNA itself. The average generation time for humans is around 20 years. These epi-mutations can occur at a much, much faster rate.</p>
+<p>The other important point is that environmental factors can alter this epigenetic gene regulation.</p>
+<h4> <span class="mw-headline" id="Example:_Identical_Twins">Example: Identical Twins</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/7/7e/ExSciGen_L12_S04_ExampleIdenticalTwins.png" class="image"><img alt="" src="/wiki/images/thumb/7/7e/ExSciGen_L12_S04_ExampleIdenticalTwins.png/160px-ExSciGen_L12_S04_ExampleIdenticalTwins.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/7/7e/ExSciGen_L12_S04_ExampleIdenticalTwins.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Example – Identical Twins (Slide 04)</div></div></div>
+<ul><li>[0:02:11][Slide 04]</p>
+</li></ul>
+<p>Here is an example from humans. Here we have two super cute twin boys. Although these boys are genetically identical—we actually know they are not completely identical but largely identical—they may not have the same phenotypes—their hair may slightly different, the facial features or body features may be slightly different, one may be slightly taller or shorter than the other. These traits are thought to be under epigenetic regulation and influenced by the environment.</p>
+<h4> <span class="mw-headline" id="Example:_Mice_with_a_Mutation_in_Axin">Example: Mice with a Mutation in Axin</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/5/5b/ExSciGen_L12_S05_Example-MiceWithAxinMutation.png" class="image"><img alt="" src="/wiki/images/thumb/5/5b/ExSciGen_L12_S05_Example-MiceWithAxinMutation.png/160px-ExSciGen_L12_S05_Example-MiceWithAxinMutation.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/5/5b/ExSciGen_L12_S05_Example-MiceWithAxinMutation.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Example – Mice with a Mutation in Axin (Slide 05)</div></div></div>
+<ul><li>[0:02:48][Slide 05]</p>
+</li></ul>
+<p>Here is an example from mouse genetics. In this case, Emma Whitelaw from the Queensland Institute for Medical Research was studying a gene called axin. What she realized is the mutation in this particular gene causes a kinked tail phenotype. What she noticed was that certain mice from the same litters where you would get kink-tailed mice had straight tails. When they eventually worked out the details, they realized that this gene was under epigenetic regulation – with hyper-methylation and silencing of the axin allele you got the straight-tail phenotype and with hypo-methylation you got the kinked-tail phenotype to do expression of the mutant axin allele.</p>
+<h4> <span class="mw-headline" id="Diet_Influence">Diet Influence</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/2/29/ExSciGen_L12_S06_DietInfluence.png" class="image"><img alt="" src="/wiki/images/thumb/2/29/ExSciGen_L12_S06_DietInfluence.png/160px-ExSciGen_L12_S06_DietInfluence.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/2/29/ExSciGen_L12_S06_DietInfluence.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Diet Can Influence (Slide 06)</div></div></div>
+<ul><li>[0:03:38][Slide 06]</p>
+</li></ul>
+<p>Randy Jirtal and his colleagues from Duke have done a series of papers showing that this epigenetic state can be profoundly influenced by diet. Here is an example from the agouti mouse. We have animals that are yellow, slightly mottled, mottled, heavily mottled, and pseudo-agouti mice. If you do not supplement the diet you will see that the light bars many more yellow and slightly mottled mice than you do the heavily mottled and pseudo-agouti phenotype.</p>
+<p>If you do supplement the mother’s diet with folate (folic acid) then the color shifts toward pseudo-agouti and heavily mottled phenotypes rather than yellow and slightly mottled phenotypes.</p>
+<p>What is happening here is that the agouti locus is also subject to methylation. In this case folate supplementation reinforces the methylation while hypo-methylation stimulates expression of the agouti gene resulting in the yellow fur color.</p>
+<h4> <span class="mw-headline" id="The_Same_Is_True_in_Humans">The Same Is True in Humans</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/4f/ExSciGen_L12_S07_TheSameIsTrueInHumans.png" class="image"><img alt="" src="/wiki/images/thumb/4/4f/ExSciGen_L12_S07_TheSameIsTrueInHumans.png/160px-ExSciGen_L12_S07_TheSameIsTrueInHumans.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/4f/ExSciGen_L12_S07_TheSameIsTrueInHumans.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The Same Is True in Humans (Slide 07)</div></div></div>
+<ul><li>[0:05:10][Slide 07]</p>
+</li></ul>
+<p>The same is true in humans. One well studied example of this is the Dutch famine where during World War II a previously well-fed population was subject to about 14 months of starvation. Children exposed to these conditions have higher rates of metabolic syndrome and cardiovascular disease. You can see here that this includes traits like obesity, glucose tolerance level, and coronary arteries. While these complete starvation conditions are relatively rare in the western world, placental insufficiency is not—approximately 7% of all births in America are at some level influenced by placental insufficiency, meaning that the fetus does not get complete vascularization and nutrition from the mother. It is possible that many even western babies are in utero subject to nutrient deprived conditions and that can manifest in later adult phenotypes.</p>
+<h4> <span class="mw-headline" id="Question_1">Question 1</span></h4>
+<p>Q1: Epigenetic changes differ from genetic in that:
+<ul><li> A) They do not require a change in nucleotide sequence
+</li><li> B) They are not changeable
+</li><li> C) They happen fast
+</li><li> D) A and C
+</li><li> E) All of the above</p>
+</li></ul>
+
+<p>The answer is D (A and C). The epigenetic mutations are changeable and dynamic, so A and C are correct. </p>
+<h3> <span class="mw-headline" id="Overview">Overview</span></h3>
+<h4> <span class="mw-headline" id="Major_Structures_in_DNA_Compaction">Major Structures in DNA Compaction</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/45/ExSciGen_L12_S10_MajorStructuresInDNACompaction.png" class="image"><img alt="" src="/wiki/images/thumb/4/45/ExSciGen_L12_S10_MajorStructuresInDNACompaction.png/160px-ExSciGen_L12_S10_MajorStructuresInDNACompaction.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/45/ExSciGen_L12_S10_MajorStructuresInDNACompaction.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Major Structures in DNA Compaction (Slide 10)</div></div></div>
+<ul><li>[0:06:50][Slide 10]</p>
+</li></ul>
+<p>To remind you about DNA structure and function, we have a slide here that shows a naked DNA molecule, how core histones can help to organize this information in a sort tertiary structure, the beads on a string model of these forming higher order structures, additional histone proteins resulting in the 30 nanometer fiber and additional scaffold proteins eventually condensing into the meta-phase chromosome, the X-structure that we all know and appreciate.</p>
+<h4> <span class="mw-headline" id="Mechanism">Mechanism</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/a/aa/ExSciGen_L12_S11_Mechanism.png" class="image"><img alt="" src="/wiki/images/thumb/a/aa/ExSciGen_L12_S11_Mechanism.png/160px-ExSciGen_L12_S11_Mechanism.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/a/aa/ExSciGen_L12_S11_Mechanism.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Mechanism (Slide 11)</div></div></div>
+<ul><li>[0:07:29][Slide 11]</p>
+</li></ul>
+<p>Along the way information is being transmitted. We have the genomic DNA, the stored information. The chromatin represents the organized information of this DNA.  Then histone modifications, chromatin remodeling, nucleosome positioning, and variance in different types of histones and non-coding RNAs can influence the state of the DNA and result in hundreds of epigenomes. </p>
+<p>The stem cell that we talked about from the Waddington slide earlier in the talk can be reorganized and modeled into a blood cell, a neuron, etcetera. </p>
+<h4> <span class="mw-headline" id="Chromatin_Structure">Chromatin Structure</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/9/99/ExSciGen_L12_S12_ChromatinStructure.png" class="image"><img alt="" src="/wiki/images/thumb/9/99/ExSciGen_L12_S12_ChromatinStructure.png/160px-ExSciGen_L12_S12_ChromatinStructure.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/9/99/ExSciGen_L12_S12_ChromatinStructure.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Chromatin Structure (Slide 12)</div></div></div>
+<ul><li>[0:08:10][Slide 12]</p>
+</li></ul>
+<p>Here is a slide depicting chromosome structure. Here we have three different histones—H3, H4, H2A and H2B—and the various proteins that combine to them—for example this bromo domain containing proteins—and the types of biochemical modifications that are possible—methylation, acetylation, or phosphorylation.</p>
+<p>With all these different modifications possible and the potentially containing information, David Allis and colleagues postulated the histone code which is that specific post translational modifications on the end terminus of histones function as a binding platform for recruiting proteins leading to transcriptional activation or inactivation. </p>
+<h4> <span class="mw-headline" id="Traditional_Approaches_to_Studying_Histone_Modifications">Traditional Approaches to Studying Histone Modifications</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/9/9f/ExSciGen_L12_S13_TraditionalApproachesToStudyingHistoneModifications.png" class="image"><img alt="" src="/wiki/images/thumb/9/9f/ExSciGen_L12_S13_TraditionalApproachesToStudyingHistoneModifications.png/160px-ExSciGen_L12_S13_TraditionalApproachesToStudyingHistoneModifications.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/9/9f/ExSciGen_L12_S13_TraditionalApproachesToStudyingHistoneModifications.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Traditional Approaches to Studying Histone Modifications (Slide 13)</div></div></div>
+<ul><li>[0:09:01][Slide 13]</p>
+</li></ul>
+<p>Traditionally these modifications were studied using biochemistry. Here is an example of a Western blot on the left-hand side where you can study antibodies directed against this particular modification or another or from a different species, tetrahymena to yeast to flies to humans and mice.</p>
+<p>Here is another example of an antibody-based approach where we have synthetic peptides and a monoclonal antibody measuring the phosphorylation state of a particular histone modification, H3S10. </p>
+<p>While these methods tell you about histone levels and modifications throughout the cell, they don’t tell you what is happening at a particular locus.</p>
+<h3> <span class="mw-headline" id="How_Are_These_Processes_Governed_at_a_Genome_Scale.3F">How Are These Processes Governed at a Genome Scale?</span></h3>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/3/30/ExSciGen_L12_S15_TheEncodeProject.png" class="image"><img alt="" src="/wiki/images/thumb/3/30/ExSciGen_L12_S15_TheEncodeProject.png/160px-ExSciGen_L12_S15_TheEncodeProject.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/3/30/ExSciGen_L12_S15_TheEncodeProject.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The Encode Project (Slide 15)</div></div></div>
+<ul><li>[0:09:55][Slide 15]</p>
+</li></ul>
+<p>How are these processes governed at a genome scale? To begin to understand how this process is working researchers all over the world funded by the NHGRI (US National Human Genome Research Institute) has started the ENCODE Project. The project is to try to understand how genes are regulated.</p>
+<p>If you think about it from the 3’ end here, while RNA-seq and DNA arrays tell you what genes are expressed, you can learn about how that expression pattern emerges using computational predictions. In this case we could be looking at the appearance or absence of response elements in particular promoters. You can use a chip-seq to look at the residency of DNA binding transcription factors or histone modifications. You can use techniques like DNase-seq or DHA or FAIRE-seq to find which regions are under regulation through hypersensitivity. You can use techniques like 5C or HiC to study loner-range interactions. </p>
+<p>Using these various techniques we can learn about how, for example, how the blood cell becomes the blood cell and neuron becomes the neuron. In the case of a pathophysiological condition, when these processes go awry, how does that result, for example, in cancer or a poorly functioning neuron?</p>
+<h4> <span class="mw-headline" id="DNA_Methylation">DNA Methylation</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/c/c6/ExSciGen_L12_S16_DNAMethylation.png" class="image"><img alt="" src="/wiki/images/thumb/c/c6/ExSciGen_L12_S16_DNAMethylation.png/160px-ExSciGen_L12_S16_DNAMethylation.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/c/c6/ExSciGen_L12_S16_DNAMethylation.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>DNA Methylation (Slide 16)</div></div></div>
+<ul><li>[0:11:29][Slide 16]</p>
+</li></ul>
+<p>One of the processes that is very important in gene regulation is DNA methylation. Just to remind you, it is essential for development, it occurs at GpG sequences, and by effect it can directly block transcription factors from accessing a region or it can inhibit transcription by recruiting methyl-binding domain proteins which in turn recruit histone modifying enzymes and can regulate access to those particular genes.</p>
+<h5> <span class="mw-headline" id="Global_for_Studying_Methylation">Global for Studying Methylation</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/4f/ExSciGen_L12_S17_GlobalForStudyingMethylation.png" class="image"><img alt="" src="/wiki/images/thumb/4/4f/ExSciGen_L12_S17_GlobalForStudyingMethylation.png/160px-ExSciGen_L12_S17_GlobalForStudyingMethylation.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/4f/ExSciGen_L12_S17_GlobalForStudyingMethylation.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>X (Slide 17)</div></div></div>
+<ul><li>[0:12:00][Slide 17]</p>
+</li></ul>
+<p>In the last ten years or so there have been methods described for studying global methylation patterns. They take advantage of methylated DNA IP or MeDIP, in which case antibodies have been directed against 5-methylcytidine or 5mC. You can study the expression of methylated DNA regions at the single gene level using MeDIP-seq or MeDIP arrays. On the left-hand side here we have an example of MeDIP with the read out being DNA arrays where you have to know what regions so that you can deposit them on a glass slide and read out their expression.
+Or, more conventionally, you would precipitate the methylated DNA and subject them to high throughput sequencing. In this case you don’t need to know what sequences are methylated a priori, you just read them out by virtue of their sequence.</p>
+<h5> <span class="mw-headline" id="Global_Method:_MeDIP_Sequencing">Global Method: MeDIP Sequencing</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/a/a2/ExSciGen_L12_S18_GlobalMethod-MeDIP-Seq.png" class="image"><img alt="" src="/wiki/images/thumb/a/a2/ExSciGen_L12_S18_GlobalMethod-MeDIP-Seq.png/160px-ExSciGen_L12_S18_GlobalMethod-MeDIP-Seq.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/a/a2/ExSciGen_L12_S18_GlobalMethod-MeDIP-Seq.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Global Method – MeDIP Sequencing (Slide 18)</div></div></div>
+<ul><li>[0:13:05][Slide 18]</p>
+</li></ul>
+<p>Here is a depiction of this. In this case we have performed the amino precipitation, we have sequenced the DNA, and we have mapped the DNA sequences back to the genome. Here you can see we are having sequences pile up in this region over here and in this region over here. The idea is that methylation events are occurring here and here. By mapping these sequences throughout the genome we can find new regions that might be under methylation regulation.</p>
+<h5> <span class="mw-headline" id="Genomic_Method:_Bi-Sulfite_Sequencing">Genomic Method: Bi-Sulfite Sequencing</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/1/1d/ExSciGen_L12_S19_GenomicMethod-BiSulfiteSequencing.png" class="image"><img alt="" src="/wiki/images/thumb/1/1d/ExSciGen_L12_S19_GenomicMethod-BiSulfiteSequencing.png/160px-ExSciGen_L12_S19_GenomicMethod-BiSulfiteSequencing.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/1/1d/ExSciGen_L12_S19_GenomicMethod-BiSulfiteSequencing.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Genomic Method – Bi-Sulfite Sequencing (Slide 19)</div></div></div>
+<ul><li>[0:13:35][Slide 19]</p>
+</li></ul>
+<p>There is another method that you can use to study this process; it is called bi-sulfite sequencing. It takes advantage of the fact that bi-sulfite treatment results in alkylation and through spontaneous denaturation you have changes—in this case these CC sequences are converted into UU sequences, except in the case where these are methylated and protected from the alkylation. So if you have a methylated sequence you can see here the C is maintained whereas if the same C is un-methylated it becomes a U over here. By comparing DNA before or after the bi-sulfite treatment and then sequencing it, you can determine at the single gene or even single allele, single base pair level what types of methylation events are occurring globally.</p>
+<h5> <span class="mw-headline" id="Limitations">Limitations</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/6/6c/ExSciGen_L12_S20_Limitations.png" class="image"><img alt="" src="/wiki/images/thumb/6/6c/ExSciGen_L12_S20_Limitations.png/160px-ExSciGen_L12_S20_Limitations.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/6/6c/ExSciGen_L12_S20_Limitations.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Limitations (Slide 20)</div></div></div>
+<ul><li>[0:14:36][Slide 20]</p>
+</li></ul>
+<p>A bit about limitations of these methods. Obviously with MeDIP-seq you need clean antibodies that do not recognize a lot of non-methylated regions in DNA. By now those antibodies I think those antibodies by-in-large exist. </p>
+<p>In the case of MeDIP-seq you can see from the slide a couple slides ago that they enrich for sites but not the exact location of the site, so the exact location you cannot really get from MeDIP-seq, you sort of infer it by how the sequences pile up in a particular region.</p>
+<p>With bi-sulfite sequencing you can get the exact nucleotides that are sequenced, but the alkylation, the conversion is not always complete so there is a high degree of false negative possibilities. The DNA can also degrade during this alkylation. </p>
+<p>So both methods have their limitations. I should note that there are many other methods to study methylation already and many more currently are being developed.</p>
+<h5> <span class="mw-headline" id="Question_2">Question 2</span></h5>
+<p>Q2: A transcription factor binds TGACGTCA. Will it be adversely affected by methylation:
+<ul><li> A) Yes, that is a CREB site and it is blocked by methylation
+</li><li> B) No, why would it care?
+</li><li> C) Not enough information</p>
+</li></ul>
+
+<p>I will give you credit for A or C. Yes, that is CREB site and it is blocked by methylation. That is true, that is work by Mark Momeny’s lab. The other acceptable answer here is C. You do not really know enough about the situation to know whether or not the transcription factor is blocked by DNA methylation. Many are but it is possible some are not.</p>
+<h4> <span class="mw-headline" id="Histone_Modifications">Histone Modifications</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/c/cf/ExSciGen_L12_S23_HistoneModifications.png" class="image"><img alt="" src="/wiki/images/thumb/c/cf/ExSciGen_L12_S23_HistoneModifications.png/160px-ExSciGen_L12_S23_HistoneModifications.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/c/cf/ExSciGen_L12_S23_HistoneModifications.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Histone Modifications (Slide 23)</div></div></div>
+<ul><li>[0:16:24][Slide 23]</p>
+</li></ul>
+<p>Let’s talk for a bit about histone modifications. Just to remind you, histone modifications occur on lysine residues. There is acetylation which generally promotes transcription. It is catalyzed by histone acetyltransferase or HATs—examples of these are CBP and P300. It is also regulated by de-acetylation which generally stops or slows transcription at a locus. These de-acetylation events are catalyzed by HDACs—for example HDAC1, HDAC2, HDAC3, etcetera.</p>
+<h5> <span class="mw-headline" id="DNA_.E2.80.93_Protein_Interactions:_ChIP-Seq">DNA – Protein Interactions: ChIP-Seq</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/4c/ExSciGen_L12_S24_DNAProteinInteractionsChIP-Seq.png" class="image"><img alt="" src="/wiki/images/thumb/4/4c/ExSciGen_L12_S24_DNAProteinInteractionsChIP-Seq.png/160px-ExSciGen_L12_S24_DNAProteinInteractionsChIP-Seq.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/4c/ExSciGen_L12_S24_DNAProteinInteractionsChIP-Seq.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>DNA – Protein Interactions – ChIP-Seq (Slide 24)</div></div></div>
+<ul><li>[0:16:55][Slide 24]</p>
+</li></ul>
+<p>The way that many of these events are studied is by ChIP-seq or looking at DNA-protein interactions. </p>
+<h5> <span class="mw-headline" id="Mapping_Modifications_with_ChIP-Seq">Mapping Modifications with ChIP-Seq</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/7/75/ExSciGen_L12_S25_MappingModificationsWithChIP-Seq.png" class="image"><img alt="" src="/wiki/images/thumb/7/75/ExSciGen_L12_S25_MappingModificationsWithChIP-Seq.png/160px-ExSciGen_L12_S25_MappingModificationsWithChIP-Seq.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/7/75/ExSciGen_L12_S25_MappingModificationsWithChIP-Seq.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Mapping Modifications with ChIP-Seq (Slide 25)</div></div></div>
+<ul><li>[0:17:03][Slide 25]</p>
+</li></ul>
+<p>Similar to methylation, if you are mapping modifications with ChIP-seq you have developed an antibody against a particular acetylation event. Antibodies can be used to immune-precipitate DNA chunks that have that acetyl group. Then you can extract the DNA from this (?) and sequence it and figure out what exactly is sequencing.</p>
+<h5> <span class="mw-headline" id="Histone_Modification_Mapping_with_ChIP-Seq">Histone Modification Mapping with ChIP-Seq</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/4b/ExSciGen_L12_S26_HistoneModificationMappingWithChIP-Seq.png" class="image"><img alt="" src="/wiki/images/thumb/4/4b/ExSciGen_L12_S26_HistoneModificationMappingWithChIP-Seq.png/160px-ExSciGen_L12_S26_HistoneModificationMappingWithChIP-Seq.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/4b/ExSciGen_L12_S26_HistoneModificationMappingWithChIP-Seq.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Histone Modification Mapping with ChIP-Seq (Slide 26)</div></div></div>
+<ul><li>[0:17:30][Slide 26]</p>
+</li></ul>
+<p>Similar to methylation, when we stack up these sequences along the genome, you can see that particular regions are enriched. In this case we have this region here of a particular gene which is highly acetylated and this region here which is highly acetylated, and the rest of the nearby locus are relatively not acetylated.</p>
+<p>Another thing to point out is that these sequences and this information, both from methylation and ChIP-seq can be saved and stored as reference data for future analysis. In fact the ENCODE Project has recently published a spat of papers and an enormous amount of data that will be increasingly important in beginning to untangle how this epigenetics and epigenomics phenomenon are regulated.</p>
+<h5> <span class="mw-headline" id="Chromatin_Modifications:_On_and_Off">Chromatin Modifications: On and Off</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/1/19/ExSciGen_L12_S27_ChromatinModificationsOnAndOff.png" class="image"><img alt="" src="/wiki/images/thumb/1/19/ExSciGen_L12_S27_ChromatinModificationsOnAndOff.png/160px-ExSciGen_L12_S27_ChromatinModificationsOnAndOff.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/1/19/ExSciGen_L12_S27_ChromatinModificationsOnAndOff.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Chromatin Modifications - On and Off (Slide 27)</div></div></div>
+<ul><li>[0:18:33][Slide 27]</p>
+</li></ul>
+<p>Here is an example of chromatin modification being exhaustively studied at a particular locus. Here is an active region which is STAT4. You can see that the modification of various histones—H3K4 methyl 3 for example or H3K4 methyl 1—are higher in this region than they are in this inactive gene MYO1B, ditto for Pol II binding RNA II binding, and these particular modifications down here. You can work out the relationship between various modification states and the expressed or unexpressed state.</p>
+<h5> <span class="mw-headline" id="Question_3">Question 3</span></h5>
+<p>Q3: What advantages do the ChIP-seq methods have over population-based methods?
+They have gene and even base-pair resolution. So unlike the biochemical Western blot methods which are taking all the histones expressed in a cell or tissue or sample and analyzing them all at once in a particular band, these ChIP-seq methods have individual gene and even sometimes base-pair level resolution.</p>
+<h4> <span class="mw-headline" id="Proteomic_Can_Be_Used_as_Well">Proteomic Can Be Used as Well</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/5/5a/ExSciGen_L12_S30_ProteomicCanBeUsedAsWell.png" class="image"><img alt="" src="/wiki/images/thumb/5/5a/ExSciGen_L12_S30_ProteomicCanBeUsedAsWell.png/160px-ExSciGen_L12_S30_ProteomicCanBeUsedAsWell.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/5/5a/ExSciGen_L12_S30_ProteomicCanBeUsedAsWell.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Proteomic Can Be Used as Well (Slide 30)</div></div></div>
+<ul><li>[0:19:58][Slide 30]</p>
+</li></ul>
+<p>This is not to say that sequencing is the only way to that you can study these processes. Here is an example of work from a colleague here at Penn, Ben Garcia. Ben’s lab is a proteomics lab and has worked out methods to study how histones can be modified using more modern proteomics. </p>
+<p>In this case they have used a method called SILAC in which one of his samples is labeled with a carbon<sup>12</sup> amino acids and another sample is labeled with carbon<sup>13</sup>. After several doublings you can extract the proteins, subject them to mass spectrometry and begin to read out the modification state of histones. In this case they were able to quantify all histone H3 and H4 post-translational modifications and expression levels on H2A, H2B, and H1 in a single experiment.</p>
+<h5> <span class="mw-headline" id="Question_4">Question 4</span></h5>
+<p>Q4: What advantages would proteomics approaches have?
+<ul><li> A) Many modifications at the same time
+</li><li> B) Easy to do in vivo
+</li><li> C) Discovery potential
+</li><li> D) All of the above
+</li><li> E) A and C </p>
+</li></ul>
+
+<p>The answer is E (A and C).  In this case you can study many modifications at the same time and you have the potential for discovery which is extremely valuable thing, but it is not exactly easy to do in vivo situations. If you have to metabolically label the amino acids in an organism that obviously takes quite a lot of resources and a lot of time. So it is not exactly great for in vivo experiments but it is great for the vitro experiments.</p>
+<p>I would like to thank Jason Lieb from UNC Chapel-Hill and Ben Garcia for helping me put together this talk and Teresa Reyes, also from Penn, for slides presented in the talk and invaluable advice.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Genomescience:Epigenomics_and_Transcriptional_Regulation&amp;oldid=5387">https://share.coursera.org/wiki/index.php?title=Genomescience:Epigenomics_and_Transcriptional_Regulation&amp;oldid=5387</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

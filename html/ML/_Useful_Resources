@@ -1,0 +1,169 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Useful Resources</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Below is a compilation of web links.  Hopefully these resources will help improve your learning experience.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Informative_Web_Sites"><span class="tocnumber">1</span> <span class="toctext">Informative Web Sites</span></a></li>
+<li class="toclevel-1"><a href="#Linear_Algebra"><span class="tocnumber">2</span> <span class="toctext">Linear Algebra</span></a></li>
+<li class="toclevel-1"><a href="#Writing_Equations_in_Forum_Posts"><span class="tocnumber">3</span> <span class="toctext">Writing Equations in Forum Posts</span></a></li>
+<li class="toclevel-1"><a href="#Online_E-Books"><span class="tocnumber">4</span> <span class="toctext">Online E-Books</span></a></li>
+<li class="toclevel-1"><a href="#Textbook_information"><span class="tocnumber">5</span> <span class="toctext">Textbook information</span></a></li>
+<li class="toclevel-1"><a href="#Advanced_classes_online"><span class="tocnumber">6</span> <span class="toctext">Advanced classes online</span></a></li>
+<li class="toclevel-1"><a href="#Machine_Learning_frameworks_and_libraries_in_Python"><span class="tocnumber">7</span> <span class="toctext">Machine Learning frameworks and libraries in Python</span></a></li>
+<li class="toclevel-1"><a href="#Machine_Learning_frameworks_and_libraries_in_C.2B.2B"><span class="tocnumber">8</span> <span class="toctext">Machine Learning frameworks and libraries in C++</span></a></li>
+<li class="toclevel-1"><a href="#Machine_Learning_frameworks_and_libraries_in_Java"><span class="tocnumber">9</span> <span class="toctext">Machine Learning frameworks and libraries in Java</span></a></li>
+<li class="toclevel-1"><a href="#Machine_Learning_Data_Sets"><span class="tocnumber">10</span> <span class="toctext">Machine Learning Data Sets</span></a></li>
+<li class="toclevel-1"><a href="#Octave_packages"><span class="tocnumber">11</span> <span class="toctext">Octave packages</span></a></li>
+<li class="toclevel-1"><a href="#Octave_online"><span class="tocnumber">12</span> <span class="toctext">Octave online</span></a></li>
+<li class="toclevel-1"><a href="#Translation_Projects"><span class="tocnumber">13</span> <span class="toctext">Translation Projects</span></a></li>
+<li class="toclevel-1"><a href="#Useful_papers"><span class="tocnumber">14</span> <span class="toctext">Useful papers</span></a>
+<ul>
+<li class="toclevel-2"><a href="#General"><span class="tocnumber">14.1</span> <span class="toctext">General</span></a></li>
+<li class="toclevel-2"><a href="#Boosting"><span class="tocnumber">14.2</span> <span class="toctext">Boosting</span></a></li>
+<li class="toclevel-2"><a href="#Outlier_and_Anomaly_Detection"><span class="tocnumber">14.3</span> <span class="toctext">Outlier and Anomaly Detection</span></a></li>
+<li class="toclevel-2"><a href="#SVM"><span class="tocnumber">14.4</span> <span class="toctext">SVM</span></a></li>
+<li class="toclevel-2"><a href="#Interesting_applications"><span class="tocnumber">14.5</span> <span class="toctext">Interesting applications</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Informative_Web_Sites">Informative Web Sites</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ml.inf.ethz.ch/education/lectures_and_seminars/annex_estat/index.html">Java Applets for Machine Learning</a>
+Note: The applets are in German ** Page not accesible. Message: The page you want to visit cannot be displayed.</li>
+<li><a rel="nofollow" class="external text" href="http://events.ccc.de/congress/2004/fahrplan/files/105-machine-learning-paper.pdf">A Brief Introduction to Machine Learning by Gunnar Ratsch</a></li>
+<li><a rel="nofollow" class="external text" href="http://cs229.stanford.edu/materials.html">CS229 Machine Learning - Stanford</a> - This is the Stanford CS course on Machine Learning that Prof Ng has taught for a number of years. The material parallels the Coursera course, but covers some additional topics and goes into much more depth on the mathematics.</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/hangtwenty/dive-into-machine-learning">Dive into Machine Learning</a> compiles a variety of resources, taking a hack-first approach so you can get "hooked." Prof. Ng's course is the centerpiece.</li>
+<li><a rel="nofollow" class="external text" href="https://cvw.cac.cornell.edu/default">Cornell Virtual Workshop</a> Training on programming languages, parallel computing, code improvement, and data analysis.</li>
+</ul>
+<h1> <span class="mw-headline" id="Linear_Algebra">Linear Algebra</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.eigenvector.com/Docs/LinAlg.pdf">Introduction to Linear Algebra</a></li>
+<li><a rel="nofollow" class="external text" href="http://cs229.stanford.edu/section/cs229-linalg.pdf">CS 229 Section notes on Linear Algebra</a></li>
+<li><a rel="nofollow" class="external text" href="http://joshua.smcvt.edu/linearalgebra/">Free linear algebra book with solutions</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Writing_Equations_in_Forum_Posts">Writing Equations in Forum Posts</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf">Short Guide to LaTex Math</a> 
+Here is a quick guide to entering equations using $$LaTeX$$. The directives are inserted between two dollar signs, $$\$\$$$ For example, the fraction for one half is entered as $$\$\$$$\frac{1}{2}$$\$\$$$, and displays as $$\frac{1}{2}$$.</li>
+<li><a rel="nofollow" class="external text" href="http://www.forkosh.com/mimetextutorial.html">LaTex Math Tutorial</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Online_E-Books">Online E-Books</span></h1>
+<ul>
+<li><p><a rel="nofollow" class="external text" href="http://robotics.stanford.edu/~nilsson/MLBOOK.pdf">Introduction to Machine Learning by Nils J. Nilsson</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="http://alex.smola.org/drafts/thebook.pdf">Introduction to Machine Learning by Alex Smola and S.V.N. Vishwanathan</a>  </p></li>
+<li><a rel="nofollow" class="external text" href="http://jsresearch.net/wiki/projects/teachdatascience/Teach_Data_Science.html">Introduction to Data Science by Jeffrey Stanton</a> The link appears to be dead, <a rel="nofollow" class="external text" href="http://surface.syr.edu/cgi/viewcontent.cgi?article=1165&amp;context=istpub">here is another</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://web4.cs.ucl.ac.uk/staff/D.Barber/pmwiki/pmwiki.php?n=Brml.Online">Bayesian Reasoning and Machine Learning by David Barber</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/copy.html">Understanding Machine Learning, © 2014 by Shai Shalev-Shwartz and Shai Ben-David</a>  </li>
+<li><a rel="nofollow" class="external text" href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">Elements of Statistical Learning, by Hastie, Tibshirani, and Friedman</a></li>
+<li><a rel="nofollow" class="external text" href="http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf">Pattern Recognition and Machine Learning, by Christopher M. Bishop</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Textbook_information">Textbook information</span></h1>
+<ul>
+<li>(none)</li>
+</ul>
+<h1> <span class="mw-headline" id="Advanced_classes_online">Advanced classes online</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/course?list=ECA89DCFA6ADACE599">Andrew Ng's advanced lectures - YouTube</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cosmolearning.com/courses/machine-learning/">Machine Learning - CosmoLearning</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.academicearth.org/courses/machine-learning/">Machine Learning - AcademicEarth</a></li>
+<li><a rel="nofollow" class="external text" href="http://work.caltech.edu/previous.html">Learning from Data - Caltech</a></li>
+<li><a rel="nofollow" class="external text" href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-867-machine-learning-fall-2006/">Machine Learning - MIT</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.coursera.org/course/machlearning">Machine Learning - U. of Washington - via Coursera</a></li>
+<li><a rel="nofollow" class="external text" href="http://cilvr.cs.nyu.edu/doku.php?id=courses:bigdata:start">Big Data, Large Scale Machine Learning - NYU (not a MOOC)</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/playlist?list=PLE6Wd9FR--EdyJ5lbFl8UuGjecvVw66F6">Machine Learning UBC 2013 - Youtube</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/playlist?list=PLiaHhY2iBX9hdHaRr6b7XevZtgZRa1PoU">Neural Networks Demystified</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Machine_Learning_frameworks_and_libraries_in_Python">Machine Learning frameworks and libraries in Python</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://pybrain.org/">PyBrain</a>: Various machine learning algorithms for Python programmers.  Focuses on neural networks.</li>
+<li><a rel="nofollow" class="external text" href="http://pyml.sourceforge.net/">PyML</a>: Machine Learning object oriented framework for Linux and Mac OS X focused on classification and regression by Asa Ben-Hur.</li>
+<li><a rel="nofollow" class="external text" href="http://scikit-learn.org/stable/">scikit-learn</a>: Comprehensive Machine Learning toolkit for Python (based on SciPy with numpy and mathplotlib). "Ipython -pylab" provides interactive environment like Octave - scikit-learn provides optimized implementations of pretty well everything (using fast libraries like liblinear and libsvm). Should be used instead of Octave for research prototyping, production and especially for education.</li>
+</ul>
+<h1> <span class="mw-headline" id="Machine_Learning_frameworks_and_libraries_in_C.2B.2B">Machine Learning frameworks and libraries in C++</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.mlpack.org/">mlpack</a>: a scalable C++ machine learning library.</li>
+<li><a rel="nofollow" class="external text" href="http://image.diku.dk/shark/sphinx_pages/build/html/index.html">SHARK</a>: a fast, modular, feature-rich open-source C++ machine learning library.</li>
+<li><a rel="nofollow" class="external text" href="http://dlib.net/ml.html">Dlib-ml</a>: A Machine Learning Toolkit.</li>
+<li><a rel="nofollow" class="external text" href="http://waffles.sourceforge.net">Waffles</a>: A collection of command-line tools for researchers in machine learning, data mining, and related fields. All of the functionality is also provided in a clean C++ class library.</li>
+<li><a rel="nofollow" class="external text" href="http://www.sgi.com/tech/mlc/">MLC++</a>: a library of C++ classes for supervised machine learning.</li>
+</ul>
+<h1> <span class="mw-headline" id="Machine_Learning_frameworks_and_libraries_in_Java">Machine Learning frameworks and libraries in Java</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>: A collection of machine learning algorithms for data mining tasks.</li>
+<li><a rel="nofollow" class="external text" href="http://mahout.apache.org/">Apache Mahout</a>: A scalable machine learning library .</li>
+<li><a rel="nofollow" class="external text" href="http://www.csie.ntu.edu.tw/~cjlin/liblinear/">LIBLINEAR </a>: LIBLINEAR -- A Library for Large Linear Classification. I think this link was mentioned in one of the lectures.</li>
+<li><a rel="nofollow" class="external text" href="http://deeplearning4j.org/">Deeplearning4j</a>: Open-source, distributed, deep-learning library for the JVM. Integrated with Hadoop and Spark, DL4J is designed to be used on distributed GPUs and CPUs.</li>
+</ul>
+<h1> <span class="mw-headline" id="Machine_Learning_Data_Sets">Machine Learning Data Sets</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.kdnuggets.com/datasets/">Links to many ML data repositories</a></li>
+<li><a rel="nofollow" class="external text" href="http://archive.ics.uci.edu/ml/">UCI Machine Learning Repository - Univ of California Irvine</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.kaggle.com/">Kaggle: Machine Learning and data mining activities</a></li>
+<li><a rel="nofollow" class="external text" href="http://vision.cornell.edu/se3/coco-text/">COCO-Text: Dataset for Text Detection and Recognition</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Octave_packages">Octave packages</span></h1>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://octave.sourceforge.net/">http://octave.sourceforge.net/</a> GNU Octave packages development and repository.</li>
+</ul>
+<h1> <span class="mw-headline" id="Octave_online">Octave online</span></h1>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://octave-online.net/">http://octave-online.net/</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Translation_Projects">Translation Projects</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php?title=ML:spanishMain">Mexico Study Group Notes </a></li>
+</ul>
+<h1> <span class="mw-headline" id="Useful_papers">Useful papers</span></h1>
+<ul>
+<li>Massive collection of academic papers are available here: <a rel="nofollow" class="external text" href="http://www.bradblock.com.s3-website-us-west-1.amazonaws.com/mll.html">Machine Learning Library</a>.</li>
+</ul>
+<h2> <span class="mw-headline" id="General">General</span></h2>
+<ul>
+<li>Domingos, Pedro. <a rel="nofollow" class="external text" href="http://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf">"A few useful things to know about machine learning."</a> Communications of the ACM 55, no. 10 (2012): 78-87</li>
+<li>Shewchuk, Jonathan Richard. <a rel="nofollow" class="external text" href="http://www.cs.cmu.edu/~quake-papers/painless-conjugate-gradient.pdf">"An Introduction to the Conjugate Gradient Method Without the Agonizing Pain."</a> 1994</li>
+<li>To understand cost functions better <a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=euhATa4wgzo">An Introduction To Understanding Cost Functions</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Boosting">Boosting</span></h2>
+<ul>
+<li>Friedman, J. H. <a rel="nofollow" class="external text" href="http://docs.salford-systems.com/GreedyFuncApproxSS.pdf">"Greedy Function Approximation: A Gradient Boosting Machine."</a> (Feb. 1999a)</li>
+<li>Ridgeway, Greg. <a rel="nofollow" class="external text" href="http://gradientboostedmodels.googlecode.com/git-history/c532a997943c634ead7e27cdf54dbe343c2c7110/svn/pkg/inst/doc/gbm.pdf">"Generalized Boosted Models: A guide to the gbm package."</a> Update 1 (2007): 1.</li>
+<li>Rojas, Raúl. <a rel="nofollow" class="external text" href="http://www.inf.fu-berlin.de/inst/ag-ki/adaboost4.pdf">"AdaBoost and the Super Bowl of Classifiers A Tutorial Introduction to Adaptive Boosting."</a> Freie University, Berlin (2009).</li>
+</ul>
+<h2> <span class="mw-headline" id="Outlier_and_Anomaly_Detection">Outlier and Anomaly Detection</span></h2>
+<ul>
+<li>Chandola, Varun, Arindam Banerjee, and Vipin Kumar. <a rel="nofollow" class="external text" href="http://www.bradblock.com.s3-website-us-west-1.amazonaws.com/Outlier_Detection_A_Survey.pdf">"Outlier detection: A survey."</a> ACM Computing Surveys, to appear (2007).</li>
+<li>Kriegel, Hans-Peter, Peer Kröger, and Arthur Zimek. <a rel="nofollow" class="external text" href="http://www.dbs.ifi.lmu.de/~zimek/publications/KDD2010/kdd10-outlier-tutorial.pdf">"Outlier detection techniques."</a> In Tutorial at the 13th Pacific-Asia Conference on Knowledge Discovery and Data Mining. 2009.</li>
+</ul>
+<h2> <span class="mw-headline" id="SVM">SVM</span></h2>
+<ul>
+<li>"An Idiot's Guide to Support Vector Machines" </li>
+</ul>
+<p><a rel="nofollow" class="external free" href="http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf">http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf</a></p>
+<h2> <span class="mw-headline" id="Interesting_applications">Interesting applications</span></h2>
+<ul>
+<li>Castillo, Carlos, Marcelo Mendoza, and Barbara Poblete. <a rel="nofollow" class="external text" href="http://www.ra.ethz.ch/cdstore/www2011/proceedings/p675.pdf">"Information credibility on Twitter."</a> In Proceedings of the 20th international conference on World wide web, pp. 675-684. ACM, 2011.</li>
+<li>Norman, Kenneth A., Sean M. Polyn, Greg J. Detre, and James V. Haxby. <a rel="nofollow" class="external text" href="http://www.cs.princeton.edu/courses/archive/spr07/cos424/papers/NormanEtAlTICS.pdf">"Beyond mind-reading: multi-voxel pattern analysis of fMRI data."</a> Trends in cognitive sciences 10, no. 9 (2006): 424-430.</li>
+<li>Pereira, Francisco, Tom Mitchell, and Matthew Botvinick. <a rel="nofollow" class="external text" href="http://www.stanford.edu/group/bad/talks/classification_fmri.pdf">"Machine learning classifiers and fMRI: a tutorial overview."</a> Neuroimage 45, no. 1 Suppl (2009): S199.</li>
+<li>Dean Pomerleau Autonomous Driving <a rel="nofollow" class="external text" href="http://www.ri.cmu.edu/research_project_detail.html?type=publication&amp;project_id=160&amp;menu_id=261">(link)</a></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Useful_Resources&amp;oldid=34291">https://share.coursera.org/wiki/index.php?title=ML:Useful_Resources&amp;oldid=34291</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML" title="Category:ML">ML</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

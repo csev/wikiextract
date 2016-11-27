@@ -1,0 +1,5 @@
+I've already put this information elsewhere but probably not in the right place...
+
+Anyway, my data source is Transport for London (Tfl). TfL publishes an api (https://api.tfl.gov.uk/) where you can find all sorts of interesting data. The one I'm interested in is cycling accidents. I want to find out the areas in London where the most accidents occur, and visualise it using visualisation software like we did for the geolocation assignment.
+
+I don't live in London and I'm not a particularly keen cyclist, but this is data that is of interest for those who do cycle in London, and it's in a recognisable format (Json) which should not be too intimidating to use.

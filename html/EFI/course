@@ -1,0 +1,55 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">EFI:course</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Here is how to get data from the text of the quiz into R:</p>
+<p>This is Roses Examples from Quiz 5</p>
+<p>Rishat is interested in maximizing the life of cut roses. Therefore, his outcome variable will be the number of days his roses looked presentable in their vase, after he has cut them.</p>
+<p>Flickr: judybaxter</p>
+<p>To investigate this Rishat has considered the following two factors:</p>
+<code><pre>S = Quantity of sugar in vase water: low level was 0 g/ml, and high level was 3 g/ml.
+V = Quantity of vodka in vase water: low level was 0 g/ml, and high level was 3 g/ml.
+</pre></code>
+<p>A full factorial experiment was run in random order and Rishat noted that the flowers had a life as shown in the standard order table:</p>
+<p>Experiment number   S   V   y = Life of flowers (Days)</p>
+<p>1   0   0   4</p>
+<p>2   3   0   5</p>
+<p>3   0   3   12</p>
+<p>4   3   3   13</p>
+<p>In addition to the full factorial, a 5th experiment was run at the center point:</p>
+<p>Experiment number   S   V   y = Life of flowers (Days)</p>
+<p>5   1.5     1.5     8</p>
+<p>From Rishat's results above, select the following correct options. </p>
+<p>Here is R Code</p>
+<p>```{r Q04}</p>
+<p>str_data="</p>
+<p>Ex   S  V   Life</p>
+<p>1   0   0   4</p>
+<p>2   3   0   5</p>
+<p>3   0   3   12</p>
+<p>4   3   3   13</p>
+<p>5   1.5     1.5     8</p>
+<p>"</p>
+<p>con &lt;- textConnection(str_data)</p>
+<p>roses=read.table(con, sep="", header=T)</p>
+<p>fS = with(roses, scale(S))</p>
+<p>fV = with(roses, scale(V))</p>
+<p>```</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=EFI:course&amp;oldid=28441">https://share.coursera.org/wiki/index.php?title=EFI:course&amp;oldid=28441</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

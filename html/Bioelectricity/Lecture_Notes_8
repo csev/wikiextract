@@ -1,0 +1,127 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Lecture Notes 8</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Bioelectricity_-_Week_8_-_Stimulation"><span class="tocnumber">1</span> <span class="toctext">Bioelectricity - Week 8 - Stimulation</span></a>
+<ul>
+<li class="toclevel-2"><a href="#What_is_meant_by_.E2.80.9Cstimulation.E2.80.9D.3F"><span class="tocnumber">1.1</span> <span class="toctext">What is meant by “stimulation”?</span></a></li>
+<li class="toclevel-2"><a href="#Why_analyze_stimulation.3F"><span class="tocnumber">1.2</span> <span class="toctext">Why analyze stimulation?</span></a></li>
+<li class="toclevel-2"><a href="#Analyze_Passive_instead_of_Active.3F"><span class="tocnumber">1.3</span> <span class="toctext">Analyze Passive instead of Active?</span></a></li>
+<li class="toclevel-2"><a href="#Single_Spherical_Cell."><span class="tocnumber">1.4</span> <span class="toctext">Single Spherical Cell.</span></a></li>
+<li class="toclevel-2"><a href="#Strength-Duration_Curves"><span class="tocnumber">1.5</span> <span class="toctext">Strength-Duration Curves</span></a></li>
+<li class="toclevel-2"><a href="#Stimulation_of_a_cylinder_with_cuff_electrodes"><span class="tocnumber">1.6</span> <span class="toctext">Stimulation of a cylinder with cuff electrodes</span></a></li>
+<li class="toclevel-2"><a href="#Stimulation_.2C_the_Tiger_function"><span class="tocnumber">1.7</span> <span class="toctext">Stimulation , the Tiger function</span></a></li>
+<li class="toclevel-2"><a href="#Field_stimulation.2C_the_field"><span class="tocnumber">1.8</span> <span class="toctext">Field stimulation, the field</span></a></li>
+<li class="toclevel-2"><a href="#Field_stimulation.2C_the_consequences"><span class="tocnumber">1.9</span> <span class="toctext">Field stimulation, the consequences</span></a></li>
+<li class="toclevel-2"><a href="#Week_8_in_review"><span class="tocnumber">1.10</span> <span class="toctext">Week 8 in review</span></a></li>
+<li class="toclevel-2"><a href="#Good-bye_and_Special_Thanks"><span class="tocnumber">1.11</span> <span class="toctext">Good-bye and Special Thanks</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Bioelectricity_-_Week_8_-_Stimulation">Bioelectricity - Week 8 - Stimulation</span></h1>
+<p>A) Galvani’s observations<br />
+B) Spherical cell<br />
+C) Cylindrical fiber, with time<br />
+D) Field stimulation  </p>
+<p>Train system: -- Control  </p>
+<ol>
+<li>Introduction to week 8  </li>
+<li>What is meant by “stimulation”?  </li>
+<li>Why analyze stimulation?  </li>
+<li>Analyze Passive instead of Active?  </li>
+<li>Single Spherical Cell.  </li>
+<li>Strength-Duration Curves  </li>
+<li>Stimulation of a cylinder with cuff electrodes  </li>
+<li>Stimulation , the Tiger function  </li>
+<li>Field stimulation, the field  </li>
+<li>Field stimulation, the consequences  </li>
+<li>Week 8 in review  </li>
+<li>Good-bye and Special Thanks  </li>
+</ol>
+<h3> <span class="mw-headline" id="What_is_meant_by_.E2.80.9Cstimulation.E2.80.9D.3F">What is meant by “stimulation”?</span></h3>
+<ul>
+<li>Control, in the bioelectric sense, usually means electrical stimulation.  </li>
+</ul>
+<p><strong>Stimulation by Galvani</strong><br />
+<dl><dd><ul><li> Stimulation produced contraction.<br />
+</li><li> Historically, the significance of this is not entirely what you would think. At the time it was done there were no meters of the modern type, no voltmeters, or oscilloscopes, or computerized instruments of course, so the twitch of the frog leg itself became a meter that showed whether or not an electrical charge was present. It was, if you will, the original voltmeter.    </p>
+</li></ul>
+</dd></dl>
+
+<p><strong>Galvani experiment, more modern view</strong><br />
+<ul><li> With a probe, he did field stimulation. That is, his probe established an electric field, and his probe was out in the field, away from the nerve.<br />
+</li><li> It nonetheless stimulated a nerve. The nerve propagated a series of action potentials.   * As the action potentials reach the end of the nerve, they release neurotransmitters, which are chemical elements.<br />
+</li><li> The neurotransmitters produced additional action potentials, and then resulted in contraction of the muscles of the frog's leg.<br />
+</li><li> Quite a complicated process, but all controlled, that is, initiated, by the probe and by the electrical stimulus. People do essentially the equivalent of that right up until the present day.  </p>
+</li></ul>
+
+<p><strong>In bioelectricity, stimulation means</strong><br />
+<ul><li> The use of electrical currents to influence the action of excitable tissue.<br />
+</li><li> Often it is used to initiate action potentials.<br />
+</li><li> On other occasions it is used to stop action potentials.<br />
+</li><li> And it can be used to modify function, as done by Galvani  </p>
+</li></ul>
+
+<hr />
+<h3> <span class="mw-headline" id="Why_analyze_stimulation.3F">Why analyze stimulation?</span></h3>
+<p><strong>Why analyze stimulation?</strong><br />
+<ul><li> Why not just turn it on and see what works? Just to know how it works.<br />
+</li><li> Extremely helpful to be able to predict what will work and what will not before trying it.<br />
+</li><li> Allows one to know what is a critical value, and what is not so much.<br />
+</li></ul>
+<dl><dd><ul><li> How critical is it that you have exactly the right distance of the stimulator from the tissue? How critical is it that you anticipate the conductivity of the solution? How critical is it that you stimulate with just the right amount of current?<br />
+</li><li> You can explore them experimentally, but it is very helpful to have a theory to go along with that and tell you what it, to expect.<br />
+</li></ul>
+</dd></dl>
+<ul><li> Leads to an understanding of natural mechanisms of stimulation. These are most of the mechanisms, most of the time.<br />
+</li></ul>
+<dl><dd><ul><li> Because, after all, most tissue, most of the time is stimulated from a natural source, not a man made source. And, we would like to understand those natural sources, too.  </p>
+</li></ul>
+</dd></dl>
+
+<hr />
+<h3> <span class="mw-headline" id="Analyze_Passive_instead_of_Active.3F">Analyze Passive instead of Active?</span></h3>
+<p>**Why is the analysis based on passive membrane rather than active?<br />
+Definitely not because there is no interest in active tissue<br />
+1. When stimulation is for the purpose of initiating excitation, the tissue starts out
+in the passive state, and its most important function is while the tissue is passive.
+<dl><dd><ul><li> When the tissue has become active, the purpose is fulfilled. 
+</li><li><br />
+</li></ul>
+</dd></dl>
+2. Many modern stimuli are short. That means that the tissue does not have
+time to change its state very much, except for Vm, during the course of the
+stimulus.<br />
+3. Linearity.
+<ul><li>  </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Single_Spherical_Cell.">Single Spherical Cell.</span></h3>
+<h3> <span class="mw-headline" id="Strength-Duration_Curves">Strength-Duration Curves</span></h3>
+<h3> <span class="mw-headline" id="Stimulation_of_a_cylinder_with_cuff_electrodes">Stimulation of a cylinder with cuff electrodes</span></h3>
+<h3> <span class="mw-headline" id="Stimulation_.2C_the_Tiger_function">Stimulation , the Tiger function</span></h3>
+<h3> <span class="mw-headline" id="Field_stimulation.2C_the_field">Field stimulation, the field</span></h3>
+<h3> <span class="mw-headline" id="Field_stimulation.2C_the_consequences">Field stimulation, the consequences</span></h3>
+<h3> <span class="mw-headline" id="Week_8_in_review">Week 8 in review</span></h3>
+<h3> <span class="mw-headline" id="Good-bye_and_Special_Thanks">Good-bye and Special Thanks</span></h3>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 28/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes_8&amp;oldid=7129">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes_8&amp;oldid=7129</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

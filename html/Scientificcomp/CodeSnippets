@@ -1,0 +1,201 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Scientificcomp:CodeSnippets</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Code_Snippets"><span class="tocnumber">1</span> <span class="toctext">Code Snippets</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lecture_4_-_Implementation_of_Shooting_and_Convergence_Studies"><span class="tocnumber">1.1</span> <span class="toctext">Lecture 4 - Implementation of Shooting and Convergence Studies</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Take_1"><span class="tocnumber">1.1.1</span> <span class="toctext">Take 1</span></a></li>
+<li class="toclevel-3"><a href="#Take_2"><span class="tocnumber">1.1.2</span> <span class="toctext">Take 2</span></a></li>
+<li class="toclevel-3"><a href="#Take_3"><span class="tocnumber">1.1.3</span> <span class="toctext">Take 3</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Lecture_21_-_Spectral_method_implementation"><span class="tocnumber">1.2</span> <span class="toctext">Lecture 21 - Spectral method implementation</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Code_Snippets">Code Snippets</span></h1>
+<h2> <span class="mw-headline" id="Lecture_4_-_Implementation_of_Shooting_and_Convergence_Studies">Lecture 4 - Implementation of Shooting and Convergence Studies</span></h2>
+<h3> <span class="mw-headline" id="Take_1">Take 1</span></h3>
+<p><strong>all&#95;581&#95;rhs.m</strong></p>
+<code><pre>function rhs=all_581_rhs(x,ic,dummy,beta)
+ y1 = ic(1);
+ y2 = ic(2);
+
+ rhs = [ y2&#160;; (beta-100)*y1 ];
+end
+</pre></code>
+<p><strong>main.m</strong></p>
+<code><pre>function main()
+  xspan = [-1 +1]; 
+
+  A = 1;
+ &#160;% initial conditions in form [ y1 y2 ]
+ &#160;% y1 = Psi(x) = Psi(x=-1) = 0
+ &#160;% y2 = A is just a guess
+  ic = [0 A];   
+
+  beta = 99;
+
+  [t,y] = ode45('all_581_rhs',xspan,ic,
+                [],&#160;% tolerance goes here
+                beta);&#160;% free parameters go here 
+
+  plot(t,y(:,1));
+end
+</pre></code>
+<p>Just call <code>main</code> in Matlab/Octave console.</p>
+<h3> <span class="mw-headline" id="Take_2">Take 2</span></h3>
+<p><strong>main.m</strong></p>
+<code><pre>function main()
+  tol = 10^(-4); &#160;% numeric error tolerance
+
+ &#160;% constraints
+  xspan = [-1 +1]; 
+  Psi = [ 0 0 ]; &#160;% corresponding values for Psi, just to avoid magic numbers in code
+
+  A = 1;
+  ic = [Psi(1) A];   
+
+  beta = 99;
+  dbeta = 1;
+
+  for j=1:1000
+
+    [t,y] = ode45('all_581_rhs',xspan,ic,[], beta); 
+
+    if abs(y(end,1)-Psi(2))&lt;tol&#160;% stop searching for beta if the end value is equal (within tolerance) to end value of Psi 
+      break;
+    end
+
+    if y(end,1)&gt;Psi(2)
+      beta = beta-dbeta;
+    else
+      dbeta = dbeta / 2;
+      beta = beta+dbeta;
+    end
+
+  end
+
+  plot(t,y(:,1));
+  fprintf('beta:&#160;%f, j:&#160;%d\n',beta,j);
+end
+</pre></code>
+<h3> <span class="mw-headline" id="Take_3">Take 3</span></h3>
+<p><strong>main.m</strong></p>
+<code><pre>function main()
+  n0 = 100;&#160;% another constant to avoid magic numbers, how to declare global const for both functions?
+
+  tol = 10^(-4);  
+
+  xspan = [-1 +1]; 
+  Psi = [ 0 0 ];  
+
+  A = 1;
+  ic = [Psi(1) A];   
+
+  beta = n0-1;
+
+  for jj=1:5&#160;% we want to find 5 solutions
+
+    dbeta = 1;
+
+    for j=1:1000
+
+      [t,y] = ode45('all_581_rhs',xspan,ic,[], beta); 
+
+      if abs(y(end,1)-Psi(2))&lt;tol 
+        break;
+      end
+
+      if y(end,1)*(-1)^(jj+1)&gt;Psi(2)&#160;% every second time we go from top, and every second (even) time we go from bottom
+        beta = beta-dbeta;          &#160;% continue search here
+      else
+        dbeta = dbeta / 2;          &#160;% not a search here; correct it back a little
+        beta = beta+dbeta;
+      end
+
+    end
+
+    plot(t,y(:,1));
+    hold on;       &#160;% dont reset the plot at next iteration
+    fprintf('beta:&#160;%f, j:&#160;%d\n',beta,j);
+
+    beta = beta -1&#160;;&#160;% start next iteration with something smaller
+  end
+
+end
+</pre></code>
+<h2> <span class="mw-headline" id="Lecture_21_-_Spectral_method_implementation">Lecture 21 - Spectral method implementation</span></h2>
+<p><strong>vort.m</strong></p>
+<code><pre>clear all; close all; clc;
+
+tspan = 0:2:50;&#160;% lecture had 1:10
+
+nu = 0.001;
+L = 20; n = 256;&#160;% lecture had n=64
+x2 = linspace(-L/2,L/2,n+1);
+x = x2(1:n);
+y = x;
+[X,Y] = meshgrid(x,y);
+
+kx=(2*pi/L)*[0:(n/2-1) (-n/2):-1];
+kx(1)=10^(-6);
+ky=kx;
+[KX,KY] = meshgrid(kx,ky);
+
+K=KX.^2+KY.^2;
+K2=reshape(K,n^2,1);
+
+w=exp(-0.25*X.^2 -2*Y.^2);
+wt=fft2(w);
+wt2=reshape(wt,n^2,1);
+
+[t,wt2_sol]=ode45('vort_rhs',tspan,wt2,[],nu,K,K2,n,KX,KY);
+
+% Display the outputs
+for j=1:(size(wt2_sol,1))
+  w = real(ifft2(reshape(wt2_sol(j,:), n, n)));
+  pcolor(X,Y,w), shading interp
+  drawnow
+  pause(0.2)
+end
+</pre></code>
+<p><strong>vort_rhs.m</strong></p>
+<code><pre>function rhs=vort_rhs(t,wt2,dummy,nu,K,K2,n,KX,KY)
+% the suffix t is used to indicate transformed
+% 2 indicates a 2D vector reshaped into a 1D vector
+
+% (i) solve the Laplacian to get psi_x and psi_y
+wt=reshape(wt2,n,n);
+psit=-wt./K;
+psix=real(ifft2(1i*KX.*psit));
+psiy=real(ifft2(1i*KY.*psit));
+% (ii) now get omega_x and omega_y
+wx=real(ifft2(1i*KX.*wt));
+wy=real(ifft2(1i*KY.*wt));
+% (iii) return the derivative wrt time in fourier space
+rhs = -nu*K2.*wt2 + reshape(fft2(wx.*psiy - wy.*psix), n^2,1);
+</pre></code>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 56/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Scientificcomp:CodeSnippets&amp;oldid=19073">https://share.coursera.org/wiki/index.php?title=Scientificcomp:CodeSnippets&amp;oldid=19073</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

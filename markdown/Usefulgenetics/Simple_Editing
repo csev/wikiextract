@@ -1,0 +1,96 @@
+[[Usefulgenetics:Main | Back to Useful Genetics Wiki home page]]
+
+#What is Markdown? 
+
+Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people "to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)". The language takes many cues from existing conventions for marking up plain text in email. Source: http://daringfireball.net
+
+The following is taken from http://daringfireball.net/projects/markdown/syntax. Refer to the link for a detailed guide on markdown.
+
+##Headers
+
+To make headers for markdown, you can use hash tags to denote how big you want the header to be. We use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:
+
+\# This is an H1
+
+\## This is an H2
+
+\###### This is an H6
+
+produces
+
+# This is an H1
+
+## This is an H2
+
+###### This is an H6
+
+
+##Lists
+
+Markdown supports ordered (numbered) and unordered (bulleted) lists.
+
+###Unordered lists 
+
+Unordered lists use asterisks, pluses, and hyphens — interchangably — as list markers. For instance, this is how you use asterisks.
+
+\*   Red
+
+\*   Green
+
+\*   Blue
+
+produces
+
+*   Red
+
+*   Green
+
+*   Blue
+
+###Ordered lists 
+
+Ordered lists use numbers followed by periods.  Just type:
+
+1.  Bird
+
+2.  McHale
+
+3.  Parish
+
+##Links
+
+###Links to pages within the Useful Genetics Wiki
+
+Type \[[Usefulgenetics:name-of-page]]
+
+For example, typing \[[Usefulgenetics:Main]] creates a link to our wiki home page: [[Usefulgenetics:Main]]
+
+And typing \[[Usefulgenetics:Main | Useful Genetics Wiki Home]] creates the same link with only the page name showing: [[Usefulgenetics:Main | Useful Genetics Wiki Home]]
+
+To link to a glossary entry (useful to cross reference entries) use for example:-
+
+\[[Usefulgenetics:Glossary#Haplotype: | Haplotype]]
+
+Which reders as:-
+
+[[Usefulgenetics:Glossary#Haplotype: | Haplotype]]
+
+###Links to external pages
+
+Simple links to external pages are created just by typing the url:
+
+    http://joshreads.com/
+
+If you want to show the page's title instead of the url, put the page title in square brackets before the url in round brackets:
+
+    \[Comics Curmudgeon](http://joshreads.com/) displays as [Comics Curmudgeon](http://joshreads.com/)
+
+##New Pages
+
+ To create a new page just create a link to it, as if it existed.  When you save the page you're on, it will have a link to the empty new page, and clicking on that link will take you to your new page's Edit page.
+
+##Source
+
+Taken from a Coursera Instructor Support document; original source http://daringfireball.net/projects/markdown/syntax
+
+[[Usefulgenetics:Main | Back to Useful Genetics Wiki home page]]

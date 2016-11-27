@@ -1,0 +1,36 @@
+# Lecture 2-10 Why is Cm so big?  
+**Bioelectricity week 2.10 (slide 47)**  
+* Hello again. This is Roger Coke Barr the instructor for bio electricity and we're in week two and this is the ten lecture. The question for this lecture is why is Cm the membrane capacitance so big? Way, way bigger than your would normally expect.  
+  
+---  
+**Why is Cm so big? (slide 48)**  
+* And the answer very briefly is because the membrane is so thin. In biological membranes, the membrane capacitance is about one microfarad  for each square centimeter. Now, there is a lot of centimeters^2 of membrane surface in just one person. So if you were to say that, in a person, there's a million centimeters^2, that would say the total capacitance within a person would be one farad.  
+* When I was in school, I remember a teacher telling me that one farad is so much capacitance that you could not imagine it existing in the whole entire world. Well, he meant that, as a good illustration. But he was not thinking in terms of bioelectricity.  
+* If you think in terms of body electricity, each of us may carry around a whole farad of capacitance, which is an enormous amount.  
+* To think about why Cm is so big, you have to think about why is the membrane so thin?  
+  
+---  
+**Membrane’s thickness versus paper’s (slide 49)**  
+* Let's just think about the following experiment. We would say for flat plates, the capacitance can be found by the formula c = epsilon zero, a over d, where epsilon zero or epsilon is a constant that has to do with the material. The material can be air, the material can be membrane, and epsilon changes accordingly, according to what the material is, but it has a value that is more or less known.  
+* The point of looking at the equation is to see that the capacitance gets bigger when the area gets bigger. And it also gets bigger when D gets smaller. So bigger capacitance occurs with a bigger A or a smaller D.  
+* So, you might, if you draw this out, you might say, okay, here's our capacitance. Here's the outside. Here's the inside. D is this thickness. A is the area, surface area. Now, lets do a little comparison with an ordinary object. Think about a stack of 1000 sheets of office paper. You can do this experiment yourself.  
+* Get two reams of ordinary office paper, like copier paper. Stack one ream on the other. You know, ream is a package that has 500 sheets. So get two packages of office paper, like copier paper. Put them on top of each other. And then measure how high the stack is. I did that. I mean I actually did it in preparation for this lecture and my stack was about 4 centimeters high.   
+  
+---  
+**Membrane’s thickness versus paper’s (slide 50)**  
+* That means that the thickness of one sheet of office paper can be found by going through this calculation, four centimeters for a 1000 sheets. And I think that results in about 400,000 Angstroms for one sheet. 400,000 angstroms for one sheet.  
+  
+---  
+**So what is the capacitance of conductors separated by paper as compared to separated by
+membrane? (slide 51)**  
+* So, if now we compare the thickness of paper to the thickness of membrane, we'd say well these things are quite different in thickness because with paper it is 400,000 angstroms. That's just a numeric conversion from 4cm into angstroms. One angstrom is 10^-10 meters. About 40 angstroms that miss 4 membrane. That is to say, the thickness of the non-conducting region is about 40 angstroms.  
+* So the ratio there is 10,000. Wow! Take a piece of office paper, hold it up in front of you, look at it on the edge. Now when I do that, my vision is not perfect, so I barely see anything when I hold it and look right at along the edge to see the thickness of a single sheet of paper. Nonetheless, it is 10,000 times the thickness of membrane. Well whether or not we've done the calculation exactly right, you get the point. It's thousands of times thicker, to have a sheet of office paper, than it is to have a sheet of membrane.  
+* So the, since the, capacitance, goes inversely as to thickness. The thinner the membrane, the greater the comparison, the capacitance, and the conclusion is, membranes have a lot of capacitance. I don't bring that up just as a random thought, the fact they have a lot of capacitance means that they can store a lot of charge, and that's very important to their electrical function.   
+  
+---  
+**Membrane capacitance, conclusion (slide 52)**  
+* Another fascinating item is that all electrically active membranes from whatever organ or system within you or people, or animals, or other elective, electrically active structures, they all seem to be built out of the same kind of lipid bilayer, more or less.  
+* And the corrollary area of that is all electrically active membranes from whatever organ system, have about the same amount of capacitance.  
+* So you read different problems, or different situations, and in those, you have to specify a lot of different parameters. Often times the membrane capacitance is one of them.  
+* You can almost think of it as a constant of nature, not quite like pi, or some other mathematical constant, but you can just be sure it's gonna come out to be a round-about one microfarad per centimeter square. Not too far from that.  
+* So thank you very much for your attention, and in the next segment we'll move onto a problem session.

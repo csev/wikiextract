@@ -1,0 +1,12 @@
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]] : [[Musicproduction:DAW:ohmstudio |OhmStudio]]
+==OhmStudio Starting Window==
+OhmStudio is a community based DAW, so once you open OhmStudio you will find a Starting Window like in the figure.
+[[File:OhmStudioStartingWindow.png|800x431px]]
+
+The main features are:
+*A Chatroom with connected users and contacts.
+*A New Project Button, for new projects.
+*A project list that allows to open, clone or share existing own and public projects.
+*Access to the Documentation and the OhmStudio Forum.
+==Creating a New Project==
+A new project could be created by cloning an existing project or by starting a completely new one. A completely ''new project'' is created using the ''New Project'' button. A ''cloned project'' could be created from a list of Cloneable projects or from an existing own project. Appropriate buttons for each of these tasks are available in the Starting Window.

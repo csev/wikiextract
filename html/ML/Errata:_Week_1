@@ -1,0 +1,73 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Errata: Week 1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Cost_Function"><span class="tocnumber">2</span> <span class="toctext">Cost Function</span></a></li>
+<li class="toclevel-1"><a href="#Linear_Regression_With_One_Variable"><span class="tocnumber">3</span> <span class="toctext">Linear Regression With One Variable</span></a></li>
+<li class="toclevel-1"><a href="#Gradient_Descent_for_Linear_Regression"><span class="tocnumber">4</span> <span class="toctext">Gradient Descent for Linear Regression</span></a></li>
+<li class="toclevel-1"><a href="#Linear_Algebra_Review"><span class="tocnumber">5</span> <span class="toctext">Linear Algebra Review</span></a></li>
+<li class="toclevel-1"><a href="#Addition_and_scalar_multiplication_video"><span class="tocnumber">6</span> <span class="toctext">Addition and scalar multiplication video</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction">Introduction</span></h1>
+<ul>
+<li>Supervised Learning: 1:25: Describing the curve as quadratic is confusing since the independent variable is price, but the plot's X-axis represents area.</li>
+<li>Unsupervised Learning: 5:01: 'surprisingly interesting useful theories of how galaxies are formed'.</li>
+<li>Unsupervised Learning: 6:56 - the mouse does not point to the correct audio sample being played on the slide. Each subsequent audio sample has the mouse pointing to the previous sample.</li>
+<li>Unsupervised Learning: 12:50 - the slide shows first option "Given email labelled as span/not spam, learn a spam filter" as one of the answers as well. Whereas, in the audio Professor puts it in Supervised Learning category.</li>
+<li>Unsupervised Learning: 12:50 - the slide shows fourth option 'Given a dataset of patients diagnosed.....having diabetes of not.' as one of the answers as well. Whereas, in the audio Professor puts it in Supervised Learning category.</li>
+</ul>
+<h1> <span class="mw-headline" id="Cost_Function">Cost Function</span></h1>
+<ul>
+<li>In the transcript, at 0:26: 'the parameters of the maldo' should be changed to 'the parameters of the model'.</li>
+<li>In the transcript, at 2:24: 'the parana state of zero and' should be changed to 'the parameters theta zero and'.</li>
+<li>In the transcript, at 2:50: 'the value we predict on equals x' should be changed to 'the value we predict on input x'.</li>
+<li>In the transcript, at 3:10: 'values for the perimeters so that' should be changed to 'values for the parameters so that'.</li>
+<li>In the transcript, at 3:21: 'so then regression' should be changed to 'so linear regression'.</li>
+<li>In the transcript, at 7:09 and 7:18: 'cause function' should be changed to 'cost function'.</li>
+<li>In the transcript, at 7:11: 'squares of the areas' should be changed to 'squares of the errors'.</li>
+</ul>
+<h1> <span class="mw-headline" id="Linear_Regression_With_One_Variable">Linear Regression With One Variable</span></h1>
+<ul>
+<li><p>A general note about the graphs that Prof Ng sketches when discussing the cost function. The vertical axis can be labeled either 'y' or 'h(x)' interchangeably. 'y' is the true value of the training example, and is indicated with a marker. 'h(x)' is the hypothesis, and is typically drawn as a curve. The scale of the vertical axis is the same, so both can be plotted on the same axis. </p></li>
+<li><p>In the video "Cost Function - Intuition I", at about 6:34, the value given for J(0.5) is incorrect.</p></li>
+<li><p>In the video "Cost Function - Intuition I", at about 6:52, the vertical axis name: "h(x)" is incorrect, it should be "y".</p></li>
+<li><p>Parameter Learning: Video "Gradient Descent for Linear Regression": At 6:15, the equation Prof Ng writes in blue "h(x) = -900 - 0.1x" is incorrect, it should use "+900".</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Gradient_Descent_for_Linear_Regression">Gradient Descent for Linear Regression</span></h1>
+<ul>
+<li><p>At Timestamp 3:27 of this video lecture, the equation for θ1 is wrong, please refer to first line of Page 6 of ex1.pdf (Week 2 programming Assignment) for model equation (The last x is X superscript i, subscript j (Which is 1 in this case, as it is of θ1)). θ0 is correct as it will be multiplied by 1 anyways(value of X superscript i, subscript 0 is 1), as per the model equation.</p></li>
+<li><p>At 6:30 there is a clarification that states j=0 and j=1. this statment is just confusing while the code is actualy clear/</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Linear_Algebra_Review">Linear Algebra Review</span></h1>
+<ul>
+<li>Matrix-Matrix Multiplication: 7:14 to 7:33 - While exploring a matrix multiplication, Andrew solved the problem correctly below, but when he tried to rewrite the answer in the original problem, one of the numbers was written incorrectly. The correct result was (matrix 9 15) and (matrix 7 12), but when it was rewritten above it was written as (matrix 9 15) and (matrix 4 12). The 4 should have been a 7. (Thanks to John Kemp and others). This has been partially corrected in the video - third subresult matrix shows 7 but the sound is still 4 for both subresult and result matrices. Subtitle at 6:48 should be “two is seven and two”, and subtitle at 7:14 should be “seven twelve and you”.</li>
+<li>3.4: Matrix-Matrix Multiplication: 8:12 - Andrew says that the matrix on the bottom left shows the housing prices, but those are the house sizes as written above</li>
+<li>3.6: Transpose and Inverse: 9:23 - While demonstrating a transpose, an example was used to identify B(subscript 12) and A(subscript 21). The correct number 3 was circled in both cases above, but when it was written below, it was written as a 2. The 2 should have been a 3. (Thanks to John Kemp and others)</li>
+</ul>
+<h1> <span class="mw-headline" id="Addition_and_scalar_multiplication_video">Addition and scalar multiplication video</span></h1>
+<ul>
+<li>Spanish subtitles for this video are wrong. Seems that those subtitles are from another video.</li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_1&amp;oldid=34462">https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_1&amp;oldid=34462</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Errata" title="Category:ML:Errata">ML:Errata</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

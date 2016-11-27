@@ -1,0 +1,57 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 4: 2.1 Definition and Classifying Price Elasticities of Demand
+
+<i>Why don't we increase the price of the sandwiches from the model in the first video?</i>
+Increasing the price of the product doesn’t necessarily increase revenue.
+
+<b>Two key points:</B>
+
+* If we sell the same amount of sandwiches after we increase the price as prior to the price increase, profits increase.
+* If we sell fewer sandwiches after we increase the price as prior to the price increase, profits decrease.
+
+##Elasticity is a measure of how consumption/quantity changes as a result of a change in price.
+(in other words, Price Elasticity of Demand is the measure of responsiveness of Qd, relative to the rate of change in a product's Price)
+
+##Elasticity is a measure of the rate of change.
+
+<b>To calculate the price elasticity of demand of x:</b>
+
+- $$\epsilon_x = \cfrac{\% change Q_x}{\% change P_x} = \cfrac{\% \Delta Q_x}{\% \Delta P_x}$$ <br>
+$$E_x$$=Price elasticity<br>
+$$Q_x$$=Quantity of x<br>
+$$P_x$$=Price of x<br>
+%change=percent in change<br>
+<br>
+If you increase the price, the quantity consumed goes down, and if you decrease the price, the quantity consumed goes up. The variables have an inverse relationship, therefore the answer is usually a negative number.
+<br>
+* Example 1: Say you increase the price of your product by 10%, and consumers respond by consuming 5% less.  Then:
+ * $$ \epsilon_x = \cfrac{\% \Delta Q_x}{\% \Delta P_x} = \cfrac{-5 \%}{10 \%} = -0.5 $$ <br>
+ * Note that elasticity is unitless <br>
+  * When elasticity is less than 1, we say the demand is not very responsive (inelastic) <br><br>
+
+- Example 2: Say you increase the price of your product by 10%, and consumers respond by consuming 15% less.  Then:
+ - $$ \epsilon_x = \cfrac{\% \Delta Q_x}{\% \Delta P_x} = \cfrac{-15 \%}{10 \%} = -1.5 $$ <br>
+  - When elasticity is greater than 1, we say the demand is responsive (elastic)
+
+<br>
+
+
+<b>Nomenclature for price elasticity of demand</b>
+
+- Elastic   (very responsive)     - Absolute value of e > 1
+- Inelastic (not very responsive) - Absolute value of e < 1
+- Unitary (without changes)       - Absolute value of e = 1
+
+<b>Working Definitions:</b><br>
+
+- Elastic:
+The price is elastic when the absolute value of the change in percentage of quantity over change in price is greater than 1.
+
+- Inelastic:
+The price is inelastic when the absolute value of the change in percentage of quantity over change in price is less than 1.
+
+- Unitary:
+The price is Unitary when the percentage of change in price is equal to the percentage change in quantity.

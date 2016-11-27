@@ -1,0 +1,190 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Octave Installation</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#General"><span class="tocnumber">1</span> <span class="toctext">General</span></a></li>
+<li class="toclevel-1"><a href="#Windows"><span class="tocnumber">2</span> <span class="toctext">Windows</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Version_4.0.3"><span class="tocnumber">2.1</span> <span class="toctext">Version 4.0.3</span></a></li>
+<li class="toclevel-2"><a href="#Version_4.0.1_.28and_later....29"><span class="tocnumber">2.2</span> <span class="toctext">Version 4.0.1 (and later...)</span></a></li>
+<li class="toclevel-2"><a href="#Version_4.0.0"><span class="tocnumber">2.3</span> <span class="toctext">Version 4.0.0</span></a></li>
+<li class="toclevel-2"><a href="#Version_3.8.2"><span class="tocnumber">2.4</span> <span class="toctext">Version 3.8.2</span></a></li>
+<li class="toclevel-2"><a href="#Historical_information_on_previous_Octave_versions..."><span class="tocnumber">2.5</span> <span class="toctext">Historical information on previous Octave versions...</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Version_3.6.4"><span class="tocnumber">2.5.1</span> <span class="toctext">Version 3.6.4</span></a></li>
+<li class="toclevel-3"><a href="#Version_3.6.2"><span class="tocnumber">2.5.2</span> <span class="toctext">Version 3.6.2</span></a></li>
+<li class="toclevel-3"><a href="#Version_3.6.1"><span class="tocnumber">2.5.3</span> <span class="toctext">Version 3.6.1</span></a></li>
+<li class="toclevel-3"><a href="#Version_3.2.4"><span class="tocnumber">2.5.4</span> <span class="toctext">Version 3.2.4</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Mac_OS_X"><span class="tocnumber">3</span> <span class="toctext">Mac OS X</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Version_3.8.1"><span class="tocnumber">3.1</span> <span class="toctext">Version 3.8.1</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Linux"><span class="tocnumber">4</span> <span class="toctext">Linux</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Ubuntu"><span class="tocnumber">4.1</span> <span class="toctext">Ubuntu</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Ubuntu_Software_Center"><span class="tocnumber">4.1.1</span> <span class="toctext">Ubuntu Software Center</span></a></li>
+<li class="toclevel-3"><a href="#Command_Line"><span class="tocnumber">4.1.2</span> <span class="toctext">Command Line</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Red_Hat_.2F_CentOS"><span class="tocnumber">4.2</span> <span class="toctext">Red Hat / CentOS</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Command_Line_2"><span class="tocnumber">4.2.1</span> <span class="toctext">Command Line</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#ArchLinux"><span class="tocnumber">4.3</span> <span class="toctext">ArchLinux</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Command_Line_3"><span class="tocnumber">4.3.1</span> <span class="toctext">Command Line</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Browser_.28any_OS.29"><span class="tocnumber">5</span> <span class="toctext">Browser (any OS)</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="General">General</span></h1>
+<p>Installation files for all platforms are available at the <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/octave/files">GNU Octave Repository</a> on SourceForge. </p>
+<p>The Gnu Octave Wiki has installation instructions for <a rel="nofollow" class="external text" href="http://wiki.octave.org/Octave_for_Windows">Windows</a> and <a rel="nofollow" class="external text" href="http://wiki.octave.org/Octave_for_MacOS_X">Mac OS X</a>.</p>
+<p>The present instance of the course was tested using Octave 3.8.2. Earlier versions of Octave are not guaranteed to work. Early versions are known to NOT work for the submit.m script.</p>
+<h1> <span class="mw-headline" id="Windows">Windows</span></h1>
+<h2> <span class="mw-headline" id="Version_4.0.3">Version 4.0.3</span></h2>
+<p>By using Octave 4.0.3, the GUI works with Windows 10 Pro (when installing 4.0.3 on Win10, expect a warning that the GUI may not work properly.)</p>
+<h2> <span class="mw-headline" id="Version_4.0.1_.28and_later....29">Version 4.0.1 (and later...)</span></h2>
+<p>If you don't want to use MATLAB, then Octave 4.0.1 is recommended. You will need the "peer certificate" patch, but the bug in printf() has been fixed.</p>
+<h2> <span class="mw-headline" id="Version_4.0.0">Version 4.0.0</span></h2>
+<p>Octave 4.0.0 has a bug in the printf() function, which makes the submit script throw a troubling error. Octave 4.0.0 is not recommended.</p>
+<h2> <span class="mw-headline" id="Version_3.8.2">Version 3.8.2</span></h2>
+<p>The course materials were tested using Octave 3.8.2. This is the oldest version of Octave which will work on the present version of the course (as of June 2015). Earlier versions of Octave are not guaranteed to work, and some early versions (such as 3.2.4, which Prof Ng uses in the video lectures) will not work at all.</p>
+<h2> <span class="mw-headline" id="Historical_information_on_previous_Octave_versions...">Historical information on previous Octave versions...</span></h2>
+<h3> <span class="mw-headline" id="Version_3.6.4">Version 3.6.4</span></h3>
+<ul>
+<li>The "Microsoft Visual Studio" or "Windows MinGW" version installers can be downloaded from <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/">Sourceforge</a>.</li>
+<li>On Windows 8, you may see a console-related problem whereby Octave crashes and disappears at any syntax error; fix is detailed at <a rel="nofollow" class="external text" href="http://stackoverflow.com/questions/17513864/problems-with-octave-on-windows-8">stackoverflow.com</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Version_3.6.2">Version 3.6.2</span></h3>
+<ul>
+<li>This bug-fix version was released on 5 June 2012. The "Microsoft Visual Studio 2010" version installer can be downloaded from <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/">Sourceforge</a>. It seems more reliable than the MinGW 3.6.1 version, although some annoying bugs have been retained. </li>
+<li>When installing this version from Cygwin, <code>urlread</code>/<code>urlwrite</code> may fail, resulting in an error message like: <code>/usr/lib/octave/3.6.2/oct/i686-pc-cygwin/urlwrite.oct: failed to load: No such process</code>. Thus the <code>submit</code> function provided with programming exercises also fails (<code>submitWeb</code> still works).<br />
+I successfully worked around this by replacing <code>urlwrite.oct</code> with the file from the Octave/Cygwin 3.6.1 binary <a rel="nofollow" class="external text" href="http://mirrors.kernel.org/sourceware/cygwin/release/octave/">distribution</a>. (Problem has also been mentioned in <a rel="nofollow" class="external text" href="https://class.coursera.org/ml-2012-002/forum/thread?thread_id=295">this thread</a> for ml-2012-002.)</li>
+</ul>
+<h3> <span class="mw-headline" id="Version_3.6.1">Version 3.6.1</span></h3>
+<ul>
+<li>The most recent version is from 3/5/2012, at the <a rel="nofollow" class="external text" href="http://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/Octave%203.6.1%20for%20Windows%20MinGW%20installer">Sourceforge</a> site. Installation instructions for <a rel="nofollow" class="external text" href="http://www.octave.org/wiki/index.php?title=Octave_for_Windows">Windows</a> and <a rel="nofollow" class="external text" href="http://www.octave.org/wiki/index.php?title=Octave_for_Windows#Octave_on_Cygwin">Cygwin</a> are on the Wiki.</li>
+<li><p>If you are having problems with crashes during (re-)plotting, see <a rel="nofollow" class="external text" href="http://lists.gnu.org/archive/html/octave-bug-tracker/2012-03/msg00110.html">this bug report</a> concerning libblas.dll versions. You can probably reproduce this problem by typing the command:</p>
+<code><pre>demo plotyy
+</pre></code></li>
+</ul>
+<p>If you have the wrong version of libblas.dll installed, this will generally crash Octave. The libblas.dll.ref version is a slow but stable version.</p>
+<h3> <span class="mw-headline" id="Version_3.2.4">Version 3.2.4</span></h3>
+<ul>
+<li>The tutorial on the <a rel="nofollow" class="external text" href="https://class.coursera.org/ml/wiki/view?page=OctaveInstallation">course website</a> is actually for version 3.2.4.  This version is considered "very old" by the Octave Wiki. This version has a bug in the readline.dll file that causes garbage characters to show up when attempting to use command line history editing. Versions 3.4 and higher fix this.</li>
+<li>Sometimes problems occur with Octave and gnuPlot if you have oct2mat module loaded. Try "pkg unload oct2mat' when you first run Octave. If that solves the problem you can make it permanent by either adding the line to your config file, or by executing "pkg uninstall oct2mat" command<a rel="nofollow" class="external autonumber" href="https://class.coursera.org/ml/forum/thread?thread_id=946">[1]</a>.</li>
+</ul>
+<h1> <span class="mw-headline" id="Mac_OS_X">Mac OS X</span></h1>
+<h2> <span class="mw-headline" id="Version_3.8.1">Version 3.8.1</span></h2>
+<p>If you are not afraid of the Terminal you can use <a rel="nofollow" class="external text" href="https://github.com/mxcl/homebrew">Homebrew</a>.  This is by far the easiest method of installing everything that is needed.  In fact, this may be the best option for versions of OSX prior to 10.9 Mavericks, because the <a rel="nofollow" class="external text" href="http://wiki.octave.org/Octave_for_MacOS_X">Octave wiki</a> states that the binary installer is to be used "at your own risk" and is "not guaranteed to work" with anything other than OSX 10.9 Mavericks.</p>
+<p>Let's install Homebrew as the easiest solution. Open Terminal and type the installation command below, which is listed on the Homebrew home page also, and then hit enter:</p>
+<code><pre>ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+</pre></code>
+<p>You will need a set of command line tools that are a subset of XCode.  If you're comfortable with the Terminal, then use the command below to install just what is needed.  Otherwise (or if you have issues), you need to install XCode from App Store, go to the XCode preferences -&gt; Downloads/Components section, and then select Command Line Tools to be installed.</p>
+<code><pre>xcode-select --install
+</pre></code>
+<p>Let's install an up to date gcc compiler:</p>
+<code><pre>brew install gcc
+</pre></code>
+<p>You will also need to install [MacTeX].  This can be done with Homebrew, as seen below using the Homebrew Cask project, or by downloading and installing from the website (<a rel="nofollow" class="external free" href="http://www.tug.org/mactex/">http://www.tug.org/mactex/</a>).</p>
+<code><pre>brew install caskroom/cask/brew-cask
+brew cask install mactex
+</pre></code>
+<p>Now let's install the plotting software, gnuplot, and have it use native Qt graphics (instead of the older X11 setup):</p>
+<code><pre>brew install gnuplot --with-qt
+</pre></code>
+<p>Finally, let's install Octave (note all build issues have been fixed, as of Nov 4th 2014):</p>
+<code><pre>brew tap homebrew/science
+brew install octave
+</pre></code>
+<p>And tell Octave to use Qt graphics with gnuplot when plotting:</p>
+<code><pre>echo &quot;setenv GNUTERM qt;&quot; &gt;&gt; ~/.octaverc
+</pre></code>
+<p>Now restart your Terminal and launch octave:</p>
+<code><pre>octave
+</pre></code>
+<p>Also, to avoid having to constantly change directories after starting octave, the following script will load octave with the Terminal's current working directory automatically set in octave.  Let's set it up:</p>
+<code><pre>echo '#!/bin/bash' &gt;&gt; /usr/local/bin/oct
+echo 'octave -p &quot;`pwd`&quot;' &gt;&gt; /usr/local/bin/oct
+chmod +x /usr/local/bin/oct
+</pre></code>
+<p>And to start octave using this script instead (for example when you are working in a project directory and want to load octave with the directory already set):</p>
+<code><pre>oct
+</pre></code>
+<p>Known Issues:
+Executing GNUPlot gives error message on Octave (v 3.4.0) with X11 installed on OS 10.6.8(Snow leopard).
+For example:  octave-3.4.0:10&gt; hist(w)
+warning: broken pipe -- some output may be lost
+"Reason: Incompatible library version: libfontconfig.1.dylib requires version 14.0.0 or later, but libfreetype.6.dylib provides version 13.0.0"  </p>
+<p>Fix:
+Open terminal window and type following 3 lines:
+cd /Applications/Gnuplot.app/Contents/Resources/lib 
+mv libfreetype.6.dylib libfreetype.6.dylib.bak 
+ln -s /usr/X11/lib/libfreetype.6.dylib .</p>
+<p>(Source and explanation&#160;: <a rel="nofollow" class="external free" href="http://stackoverflow.com/questions/19932161/incompatible-library-version-libfontconfig-1-dylib-13-instead-of-15">http://stackoverflow.com/questions/19932161/incompatible-library-version-libfontconfig-1-dylib-13-instead-of-15</a>)</p>
+<h1> <span class="mw-headline" id="Linux">Linux</span></h1>
+<h2> <span class="mw-headline" id="Ubuntu">Ubuntu</span></h2>
+<h3> <span class="mw-headline" id="Ubuntu_Software_Center">Ubuntu Software Center</span></h3>
+<p>Just search for GNU Octave in Ubuntu Software Center and click install. When the installation finishes, you're ready to use Octave.</p>
+<h3> <span class="mw-headline" id="Command_Line">Command Line</span></h3>
+<p>If you prefer using the command line or if you have an Ubuntu based version of Linux that comes without Ubuntu Software Center, you can install Octave by typing this command on a terminal:</p>
+<code><pre>sudo apt-get install octave
+</pre></code>
+<p>To update to a newer version (Octave 4.0.0 does not work), try these commands:</p>
+<code><pre>sudo apt-add-repository ppa:octave/stable
+sudo apt-get update
+sudo apt-get upgrade octave
+</pre></code>
+<p>If you get an error "E: Package 'octave3.2' has no installation candidate", then follow these steps</p>
+<code><pre>sudo apt-add-repository -y ppa:mtmiller/octave
+sudo apt-get update
+sudo apt-get install octave
+</pre></code>
+<p>This thread may be helpful with your Ubuntu installation:
+<a rel="nofollow" class="external free" href="http://askubuntu.com/questions/194151/how-do-you-install-the-latest-version-of-gnu-octave/206050#206050">http://askubuntu.com/questions/194151/how-do-you-install-the-latest-version-of-gnu-octave/206050#206050</a></p>
+<h2> <span class="mw-headline" id="Red_Hat_.2F_CentOS">Red Hat / CentOS</span></h2>
+<h3> <span class="mw-headline" id="Command_Line_2">Command Line</span></h3>
+<p>You can install Octave from the yum repository using the following command lines:</p>
+<code><pre>sudo yum install epel-release
+sudo yum install octave
+</pre></code>
+<h2> <span class="mw-headline" id="ArchLinux">ArchLinux</span></h2>
+<h3> <span class="mw-headline" id="Command_Line_3">Command Line</span></h3>
+<p>Octave can be installed from pacman.</p>
+<code><pre>sudo pacman -S octave
+</pre></code>
+<h1> <span class="mw-headline" id="Browser_.28any_OS.29">Browser (any OS)</span></h1>
+<p>It is possible to use Octave online, without installing it on local computer. Web interface has a code editor and REPL console with inline plots. It gives access to Octave 3.6.4.</p>
+<p>URL: <a rel="nofollow" class="external free" href="http://octave.im/">http://octave.im/</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 147/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Octave_Installation&amp;oldid=34419">https://share.coursera.org/wiki/index.php?title=ML:Octave_Installation&amp;oldid=34419</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML" title="Category:ML">ML</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

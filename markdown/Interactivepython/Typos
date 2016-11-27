@@ -1,0 +1,29 @@
+- Mini-project description - Rock-paper-scissors-lizard-Spock
+
+In this expanded list, each choice wins against the preceding two choices and loses against the following two choices.
+
+- Mini-project description - Spaceship
+
+For this mini-project, you will implement a working spaceship plus add ***as***ingle asteroid  
+While the right arrow is down, your spaceship should turn clockwise.  
+your ship should maintain its orientation  
+You will need to pick some reasonable angular velocity  
+The thrusters should be on when the up arrow is down and off when it is up.  
+Modify the draw method for the Ship class to draw the ship image (without thrust flames) instead of a circle.  
+Modify the update method for the ship to increment its angle by its angular velocity.  
+Add keydown and keyup handlers that check the left and right arrow keys.  
+Add methods to the Ship class to increment and decrement the angular velocity  
+and verify that you can turn your ship as you expect  
+Add a method to the Ship class to turn the thrusters on/off  
+which is True or False to decide if they should be on or off).  
+play the thrust sound when the thrust is on.  
+Adjust the constants as you would like to get it to fly how you want.  
+
+Part: Phase two - Rocks  
+theupdate ... ship'svelocity ... havethese ... velocity.Instead ... now,this ... wewill ... theactual ...  
+androtate ... spriteupdate ... Testthis ... itbehaves ... set"a_rock" ... angularvelocity ... randomnumbers ...  
+sureyou ... rocks.Missiles ... alifespan ... youwill ... ignorethat ... missileand ... newmissile ...  
+spriteconstructor ... shoota ...
+
+---
+[[Interactivepython:Main|Main]]

@@ -1,0 +1,25 @@
+Welcome to the ML3:Main wiki! This is a wiki set up for the third course in the University of Washington Machine Learning Specialization: [https://www.coursera.org/learn/ml-classification Machine Learning: Classification]
+
+Click [[ML3:Review|here]] for a review of some of the notation and mathematics used in the course.
+
+## Helpful links
+* [https://github.com/learnml/machine-learning-specialization The specialization's official GitHub repository]
+
+    You can find the data sets and latest Jupyter notebooks there.
+
+* [https://dato.com/products/create/docs/index.html GraphLab Create API Documentation]
+
+    * [https://dato.com/products/create/docs/generated/graphlab.SFrame.html `graphlab.SFrame`]
+    * [https://dato.com/products/create/docs/generated/graphlab.SArray.html `graphlab.SArray`]
+
+* [http://docs.scipy.org/doc/numpy/reference/ NumPy Reference]
+* [http://docs.scipy.org/doc/numpy/user/ NumPy User Guide]
+* [[ML3:Errata|Errata]]
+
+## Programming notes
+* [[ML3:Python notes|Python notes]]
+* [[ML3:R notes|R notes]]
+
+## Course notes written by students
+* [https://github.com/Ezward/machinelearningnotes Ed Murphy's machinelearningnotes]
+* [https://github.com/GretelDePaepe/MachineLearningCoursera/blob/master/Classifier%20-%20Model%201%20-%20Extra.ipynb Effects of coefficients on logistic regression model] by Gretel De Paepe

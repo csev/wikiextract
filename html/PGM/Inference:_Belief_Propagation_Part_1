@@ -1,0 +1,62 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Inference: Belief Propagation Part 1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>A cluster graph is an undirected graph:
+<ul><li> whose nodes (vertices) represent one or more variables (of an underlying <a href="/wiki/index.php?title=PGM:Markov_Network&amp;action=edit&amp;redlink=1" class="new" title="PGM:Markov Network (page does not exist)">Markov Network</a>)
+</li><li> whose edges represent a (potentially strict) subset of the variables found in both vertices the edge connects</p>
+</li></ul>
+
+<p>Each factor of the underlying Markov network is assigned to one cluster.</p>
+<p>The <strong>belief</strong> of a cluster is defined as the product of all the factors assigned to it.</p>
+<p><strong>sepsets</strong> are defined as set of variables common between clusters $$C&#95;j$$ and $$C&#95;i$$</p>
+<p>A cluster graph must satisfy two properties:</p>
+<ul>
+<li>family preservation: it must be possible to assign each factor of the Markov network to a cluster (i.e. for each factor, there must be a cluster which has all the variables of this factor)</li>
+<li>running intersection property: two equivalent definitions:
+<ul><li><ul><li> For each pair of clusters and any variable X which occurs in both clusters, there must be an unique path between these clusters for which all intermediate clusters and edges (sepsets) contain X. i.e. there must be a path and there must be only one path.
+</li><li> For any variable X, the set of clusters and edges (sepsets) containing X must form a tree</li>
+</li></ul>
+</li></ul>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h2>
+<h3> <span class="mw-headline" id="Belief_Propagation">Belief Propagation</span></h3>
+<p><pre>
+0:00    Message passing
+0:30    Cluster graph
+2:12    Passing messages
+6:23    Generalized cluster graph
+9:50    Example cluster graph
+12:12   A different cluster graph
+15:32   Belief propagation algorithm
+17:52   Belief propagation run: approximate algorithm
+19:00   Sample results
+20:09   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Properties_of_Cluster_Graphs">Properties of Cluster Graphs</span></h3>
+<p><pre>
+0:15    Cluster graphs
+0:34    Family preservation
+1:48    Running intersection property
+7:44    Example cluster graphs
+10:42   Bethe cluster graph
+13:44   Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Belief_Propagation_Part_1&amp;oldid=4199">https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Belief_Propagation_Part_1&amp;oldid=4199</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

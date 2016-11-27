@@ -1,0 +1,42 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:WorkingOnWindows</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><div style="border-left:15px solid darkred;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>This solution works for all assignments except the last one (code generation).</td></table></div>
+<h1> <span class="mw-headline" id="COOL_for_Windows_.E2.80.94_unofficial_guide">COOL for Windows — unofficial guide</span></h1>
+<p>Please follow those easy steps:</p>
+<ul>
+<li>download Cygwin setup from <a rel="nofollow" class="external free" href="http://www.cygwin.com/">http://www.cygwin.com/</a></li>
+<li>run Cygwin setup</li>
+<li>install all default packages and also <code>make</code>, <code>perl</code> and <code>wget</code> (allow Cygwin to install all dependencies)</li>
+<li>you should also install <code>csh</code> but currently it is not present -- instead install <code>tcsh</code></li>
+<li>download the required framework -- currently either C# or Java/C++ included in <a href="/wiki/index.php/Compilers:InstallingDirectlyonLinux" title="Compilers:InstallingDirectlyonLinux">COOL minimal package</a></li>
+</ul>
+<p>Unpack the framework and:
+<ul><li> with C# you are done
+</li><li> with Java/C++ you either have to modify provided makefiles to match Cygwin environment or copy manually needed files to create working environment</p>
+</li></ul>
+
+<p>You can develop COOL compiler using your favourite tools (MonoDevelop, Visual Studio, IntelliJ, Eclipse, etc.). When it comes to grading follow the assignment instructions however do not run Windows commandline, but instead Cygwin terminal.</p>
+<h2> <span class="mw-headline" id="PA5_.28code_generation.29">PA5 (code generation)</span></h2>
+<p>It is impossible (for now) to run grading script for PA5, but still you can make good progress on Windows. Run grading script once, so it unpacks all the reference files, and then run testsuite scripts as a rough comparison how well you are doing. Once you are satisfied with results, run VM and grading script for submission.</p>
+<p><br />
+<div style="border-left:15px solid darkgreen;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>You won't be able to run provided tools (<code>coolc</code>, <code>spim</code>, etc.) -- so you have to base solely on reference input and output files provided by grading script.</td></table></div></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 8/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:WorkingOnWindows&amp;oldid=9300">https://share.coursera.org/wiki/index.php?title=Compilers:WorkingOnWindows&amp;oldid=9300</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

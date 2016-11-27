@@ -1,0 +1,103 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">AIPLAN:Planners</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Edinburgh_AI_Planners"><span class="tocnumber">1</span> <span class="toctext">Edinburgh AI Planners</span></a></li>
+<li class="toclevel-1"><a href="#SRI_International_AI_Planners"><span class="tocnumber">2</span> <span class="toctext">SRI International AI Planners</span></a></li>
+<li class="toclevel-1"><a href="#University_of_Freiburg_Planners"><span class="tocnumber">3</span> <span class="toctext">University of Freiburg Planners</span></a></li>
+<li class="toclevel-1"><a href="#University_of_Basel_Planners"><span class="tocnumber">4</span> <span class="toctext">University of Basel Planners</span></a></li>
+<li class="toclevel-1"><a href="#University_of_Saarland_Planners"><span class="tocnumber">5</span> <span class="toctext">University of Saarland Planners</span></a></li>
+<li class="toclevel-1"><a href="#King.27s_College_London_Planners"><span class="tocnumber">6</span> <span class="toctext">King's College London Planners</span></a></li>
+<li class="toclevel-1"><a href="#University_of_Maryland_AI_Planners"><span class="tocnumber">7</span> <span class="toctext">University of Maryland AI Planners</span></a></li>
+<li class="toclevel-1"><a href="#University_of_Washington_AI_Planners"><span class="tocnumber">8</span> <span class="toctext">University of Washington AI Planners</span></a></li>
+<li class="toclevel-1"><a href="#PLANET_-_European_Planning_Network_of_Excellence"><span class="tocnumber">9</span> <span class="toctext">PLANET - European Planning Network of Excellence</span></a></li>
+<li class="toclevel-1"><a href="#NASA_Planners"><span class="tocnumber">10</span> <span class="toctext">NASA Planners</span></a></li>
+<li class="toclevel-1"><a href="#Other_AI_Planning_Resources"><span class="tocnumber">11</span> <span class="toctext">Other AI Planning Resources</span></a></li>
+<li class="toclevel-1"><a href="#Planners_and_Resources_Suggested_by_Class_Participants"><span class="tocnumber">12</span> <span class="toctext">Planners and Resources Suggested by Class Participants</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Edinburgh_AI_Planners">Edinburgh AI Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/project/plan/">Edinburgh AI Planners and Planning Projects</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/project/early-planners/">Early Edinburgh Planners</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/project/nonlin/">Nonlin Web Site</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/project/oplan/">O-Plan Web Site</a>
+(<a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/project/oplan/web-demo/index.html">O-Plan Demonstrations</a>.
+<a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/project/oplan/web-demo/volume-groups.html">O-Plan Unix Systems Administration Demo</a>)</li>
+<li><a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/project/ix/">I-X/I-Plan Web Site</a></li>
+</ul>
+<h1> <span class="mw-headline" id="SRI_International_AI_Planners">SRI International AI Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ai.sri.com/~sipe/">SIPE-2: System for Interactive Planning and Execution</a></li>
+</ul>
+<h1> <span class="mw-headline" id="University_of_Freiburg_Planners">University of Freiburg Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://prost.informatik.uni-freiburg.de/">PROST Probabilistic Planner</a> - based on UCT Algorithm</li>
+</ul>
+<h1> <span class="mw-headline" id="University_of_Basel_Planners">University of Basel Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.fast-downward.org/">Fast Downward Planner</a></li>
+</ul>
+<h1> <span class="mw-headline" id="University_of_Saarland_Planners">University of Saarland Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://fai.cs.uni-saarland.de/hoffmann/metric-ff.html">MetricFF Planner</a></li>
+</ul>
+<h1> <span class="mw-headline" id="King.27s_College_London_Planners">King's College London Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.dcs.kcl.ac.uk/staff/andrew/planning/">POPF, LPRPG-P</a></li>
+</ul>
+<h1> <span class="mw-headline" id="University_of_Maryland_AI_Planners">University of Maryland AI Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cs.umd.edu/projects/plus/Nonlin/">UM Nonlin</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.umd.edu/projects/plus/umcp/">UMCP: Universal Method Composition Planner</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.umd.edu/projects/shop/">SHOP/SHOP-2: Simple Hierarchical Ordered Planner</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.umd.edu/projects/shop/">JSHOP2: A Java implementation of SHOP2</a></li>
+</ul>
+<h1> <span class="mw-headline" id="University_of_Washington_AI_Planners">University of Washington AI Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cs.washington.edu/ai/ucpop.html">UCPOP Planner</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cs.washington.edu/ai/planning/glutton.html">Glutton</a> and <a rel="nofollow" class="external text" href="http://www.cs.washington.edu/ai/planning/gourmand.html">Gourmand</a></li>
+</ul>
+<h1> <span class="mw-headline" id="PLANET_-_European_Planning_Network_of_Excellence">PLANET - European Planning Network of Excellence</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://scom.hud.ac.uk/planet/repository/">PLANET AI Planning Repository</a></li>
+<li><a rel="nofollow" class="external text" href="http://scom.hud.ac.uk/planet/repository/source/choose.html">PLANET Planner Demo (FF or Blackbox)</a></li>
+</ul>
+<h1> <span class="mw-headline" id="NASA_Planners">NASA Planners</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://ti.arc.nasa.gov/tech/asr/planning-and-scheduling/">NASA Planning and Scheduling Software</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Other_AI_Planning_Resources">Other AI Planning Resources</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cs.umd.edu/projects/planning/domains.html">University of Maryland AI Planning and Scheduling Systems: Domain Repository</a></li>
+<li><a rel="nofollow" class="external text" href="http://www4.ncsu.edu/~stamant/planning-resources.html">Rob St. Amant Planning Resources</a></li>
+<li><a rel="nofollow" class="external text" href="http://www-cs-students.stanford.edu/~pdoyle/quail/notes/pdoyle/planning.html">Patrick Doyle's Stanford CS 1997 AI Planning Resources</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Planners_and_Resources_Suggested_by_Class_Participants">Planners and Resources Suggested by Class Participants</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/p/itsimple/">itSIMPLE: CASE tool for construction of real and complex planning domains in UML (supports PDDL and Petri Nets)</a></li>
+<li><a rel="nofollow" class="external text" href="http://amis.mff.cuni.cz/PDDLEditor/">PDDL Studio</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dcs.kcl.ac.uk/staff/andrew/planning/index.php?option=com_content&amp;view=article&amp;id=70&amp;Itemid=77">VAL: Plan Validator</a></li>
+<li>(AIPLAN-002) <a rel="nofollow" class="external text" href="http://www.optaplanner.org/">Red Hat / JBoss Optaplanner , integrates with Drools / KIE Rule Engine </a></li>
+<li>Add planners which can be downloaded and tried here with a suitable URL</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=AIPLAN:Planners&amp;oldid=20726">https://share.coursera.org/wiki/index.php?title=AIPLAN:Planners&amp;oldid=20726</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

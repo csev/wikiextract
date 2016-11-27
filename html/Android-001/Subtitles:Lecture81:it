@@ -1,0 +1,732 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture81:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="Sensors_-_Part_2_-_Italian_subtitles">Sensors - Part 2 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture79:it" title="Android-001:Subtitles:Lecture79:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture81:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture81:en (page does not exist)">en</a> <a href="/wiki/index.php/Android-001:Subtitles:Lecture81:es" title="Android-001:Subtitles:Lecture81:es">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture81:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture81:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture81:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture81:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture75:it" title="Android-001:Subtitles:Lecture75:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/tzqg0bxhp6vhm53/7%20-%202%20-%20Sensors%20-%20Part%202%20%2811-40%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:00,000 --&gt; 00:00:09,607
+[ _ ]
+
+2
+00:00:09,607 --&gt; 00:00:12,797
+Ciao, sono Adam Porter, e questo è
+
+3
+00:00:12,797 --&gt; 00:00:19,038
+&quot;Programming Mobile Applications for
+Android Handheld Systems.&quot;
+
+4
+00:00:19,038 --&gt; 00:00:22,134
+Nell'applicazione di esempio che abbiamo 
+appena visto,
+
+5
+00:00:22,134 --&gt; 00:00:26,000
+ho cercato di tenere il dispositivo 
+perfettamente verso l'alto.
+
+6
+00:00:26,000 --&gt; 00:00:29,000
+E se fossi stato in grado di farlo, 
+
+7
+00:00:29,000 --&gt; 00:00:34,800
+l'accelerometro avrebbe riportato 
+idealmente valori di 
+
+8
+00:00:34,800 --&gt; 00:00:39,600
+X uguali a 0 metri al secondo quadrato, 
+Y uguale a 9,81 metri al secondo quadrato
+
+9
+00:00:39,600 --&gt; 00:00:44,590
+e Z pari 0 metri al secondo quadrato.
+
+10
+00:00:45,810 --&gt; 00:00:52,200
+Ma come avete visto nell'esempio,
+i valori dell'accelerometro hanno oscillato.
+
+11
+00:00:52,200 --&gt; 00:00:55,270
+Tutte le applicazioni potranno 
+essere soggette a questo genere di cose
+
+12
+00:00:55,270 --&gt; 00:00:59,960
+dovute al movimento naturale dell'utente, 
+superfici non piane,
+
+13
+00:00:59,960 --&gt; 00:01:01,990
+rumore elettrico e così via.
+
+14
+00:01:04,710 --&gt; 00:01:09,150
+Durante la creazione di applicazioni con i sensori, 
+gli sviluppatori spesso applicano
+
+15
+00:01:09,150 --&gt; 00:01:13,350
+trasformazioni sui dati grezzi 
+per regolarli e filtrarli.
+
+16
+00:01:13,350 --&gt; 00:01:19,590
+Due tipi comuni di trasformazioni sono chiamati
+filtri passa-basso e filtri passa-alto.
+
+17
+00:01:19,590 --&gt; 00:01:22,275
+Parliamo di ognuno di questi 
+uno alla volta.
+
+18
+00:01:22,275 --&gt; 00:01:30,310
+I filtri passa-basso vengono utilizzati per attenuare
+piccoli cambiamenti transitori di forza, 
+
+19
+00:01:30,310 --&gt; 00:01:34,044
+sottolineando le forze costanti a lungo termine.
+
+20
+00:01:35,200 --&gt; 00:01:37,420
+E' possibile utilizzare un filtro passa-basso 
+quando l'applicazione
+
+21
+00:01:37,420 --&gt; 00:01:41,090
+ha la necessità di considerare 
+costante la forza di gravità
+
+22
+00:01:41,090 --&gt; 00:01:43,360
+ per esempio, e non si vuole
+
+23
+00:01:43,360 --&gt; 00:01:46,110
+essere condizionati solo perchè le mani 
+tremano un po'.
+
+24
+00:01:46,110 --&gt; 00:01:51,040
+Un esempio nella vita reale sarebbe qualcosa
+di simile a una livella di un carpentiere.
+
+25
+00:01:51,040 --&gt; 00:01:55,100
+La bolla ha bisogno di muoversi in base alla gravità,
+
+26
+00:01:55,100 --&gt; 00:01:57,240
+non influenzata da piccoli 
+movimenti della mano.
+
+27
+00:01:58,350 --&gt; 00:02:02,870
+Al contrario, si utilizza un filtro
+passa-alto quando si vuole sottolineare
+
+28
+00:02:02,870 --&gt; 00:02:05,030
+le modifiche di forza transitoria,
+
+29
+00:02:05,030 --&gt; 00:02:08,280
+e si vogliono attenuare le componenti 
+di forza costanti.
+
+30
+00:02:09,760 --&gt; 00:02:12,360
+E' possibile utilizzare un 
+filtro passa-alto quando
+
+31
+00:02:12,360 --&gt; 00:02:14,590
+l'applicazione dovrebbe ignorare 
+la forza di gravità
+
+32
+00:02:14,590 --&gt; 00:02:20,660
+costante per esempio, ma dovrebbe rispondere
+alle specifiche mosse che fa l'utente.
+
+33
+00:02:20,660 --&gt; 00:02:23,020
+Un esempio reale di questo potrebbe essere
+
+34
+00:02:23,020 --&gt; 00:02:26,390
+uno strumento a percussione come  
+le maracas.
+
+35
+00:02:26,390 --&gt; 00:02:28,780
+Non si deve considerare la gravità qui,
+
+36
+00:02:28,780 --&gt; 00:02:32,070
+ma porre l'attenzione su come l'utente 
+sta scuotendo lo strumento.
+
+37
+00:02:34,160 --&gt; 00:02:39,480
+La prossima applicazione si chiama 
+SensorFilteredAccelerometer.
+
+38
+00:02:39,480 --&gt; 00:02:44,570
+In questa applicazione si usano sia 
+un passa-basso che un passa-alto 
+
+39
+00:02:44,570 --&gt; 00:02:49,890
+sui valori grezzi dell' accelerometro 
+e poi visualizza i valori filtrati.
+
+40
+00:02:49,890 --&gt; 00:02:51,670
+Andiamo
+
+41
+00:02:53,580 --&gt; 00:02:55,240
+ecco il mio dispositivo.
+
+42
+00:02:55,240 --&gt; 00:02:59,560
+Eseguiamo l'applicazione 
+Sensor Filtered Accelerometer
+
+43
+00:03:00,650 --&gt; 00:03:06,380
+Come potete vedere, questa applicazione mostra
+9 TextViews con dentro dei numeri.
+
+44
+00:03:07,420 --&gt; 00:03:13,010
+Questi numeri corrispondono ai valori di
+x, y e z che vengono letti
+
+45
+00:03:13,010 --&gt; 00:03:18,750
+dall'accelerometro del dispositivo.
+I valori grezzi, dopo l'applicazione di un
+
+46
+00:03:18,750 --&gt; 00:03:24,490
+filtro passa-basso e quei valori grezzi dopo
+l'applicazione di un filtro passa-alto.
+
+47
+00:03:25,810 --&gt; 00:03:31,450
+Se lasciamo che l'applicazione giri per un po',
+vedremo che i valori di passa-basso cominciano
+
+48
+00:03:31,450 --&gt; 00:03:37,280
+ad approssimare le letture del nostro   
+accelerometro ideale verso lo 0
+
+49
+00:03:37,280 --&gt; 00:03:43,180
+per gli assi X e Z, e circa 9,81 per
+l'asse y.
+
+50
+00:03:44,210 --&gt; 00:03:50,130
+Allo stesso tempo, si può vedere che 
+i valori di passa-alto tendono tutti verso 0.
+
+51
+00:03:50,130 --&gt; 00:03:57,770
+Se ruoto il dispositivo in senso antiorario,
+si vede il valore x passa-alto che va in positivo .
+
+52
+00:03:57,770 --&gt; 00:04:00,640
+E se ruoto il dispositivo in senso orario,
+potrete
+
+53
+00:04:00,640 --&gt; 00:04:02,980
+vedere il valore x passa-alto andare negativo.
+
+54
+00:04:04,910 --&gt; 00:04:07,680
+Diamo un'occhiata al codice sorgente 
+di questa applicazione.
+
+55
+00:04:10,600 --&gt; 00:04:15,370
+Ecco l'applicazione SensorFilteredAccelerometer
+aperta nell'IDE.
+
+56
+00:04:16,480 --&gt; 00:04:19,430
+Ora apriamo l'activity principale.
+
+57
+00:04:19,430 --&gt; 00:04:21,030
+E notiamo ancora una volta che questa classe
+
+58
+00:04:21,030 --&gt; 00:04:24,810
+implementa l'interfaccia
+SensorEventListener.
+
+59
+00:04:24,810 --&gt; 00:04:28,240
+Così può ricevere i callback 
+dal SensorManager.
+
+60
+00:04:31,930 --&gt; 00:04:36,050
+in onCreate() l'applicazione ottiene un riferimento
+al SensorManager.
+
+61
+00:04:37,120 --&gt; 00:04:42,708
+Successivamente, ottiene un riferimento
+all'accelerometro del dispositivo chiamando 
+
+62
+00:04:42,708 --&gt; 00:04:47,120
+SensorManager.getDefaultSensor passandogli
+
+63
+00:04:47,120 --&gt; 00:04:50,810
+la costante del tipo che corrisponde
+all'accelerometro.
+
+64
+00:04:52,380 --&gt; 00:04:57,700
+Nel metodo onResume(), l'applicazione
+registra questa classe come un Listener
+
+65
+00:04:57,700 --&gt; 00:05:02,220
+eventi accelerometro chiamando il metodo
+registerListener.
+
+66
+00:05:03,450 --&gt; 00:05:08,170
+E poi, il metodo onPause() annulla la registrazione
+questa classe come
+
+67
+00:05:08,170 --&gt; 00:05:11,870
+listener per tutti i sensori di cui
+può essere in ascolto.
+
+68
+00:05:13,730 --&gt; 00:05:17,800
+Scorrendo, veniamo ora al metodo 
+onSensorChanged().
+
+69
+00:05:18,860 --&gt; 00:05:22,790
+E come prima, il primo controllo di metodo 
+è assicurarsi che questo
+
+70
+00:05:22,790 --&gt; 00:05:25,980
+evento sia una lettura accelerometro.
+
+71
+00:05:25,980 --&gt; 00:05:28,030
+E poi controlla che una certa quantità  di
+
+72
+00:05:28,030 --&gt; 00:05:31,550
+tempo sia passato dall'ultima lettura 
+che è stata visualizzata.
+
+73
+00:05:33,220 --&gt; 00:05:37,120
+In caso affermativo, il codice registra il
+valore di X,Y e Z dell'accelerometro,
+
+74
+00:05:37,120 --&gt; 00:05:40,690
+quindi applica il filtro passa-basso
+
+75
+00:05:40,690 --&gt; 00:05:44,390
+a ciascuno dei valori grezzi
+dopo di che
+
+76
+00:05:44,390 --&gt; 00:05:49,060
+il codice applica il filtro passa-alto
+a ciascuno dei valori grezzi.
+
+77
+00:05:49,060 --&gt; 00:05:52,428
+Vediamo il codice per i due filtri.
+
+78
+00:05:52,428 --&gt; 00:06:00,490
+Qui c'è il metodo lowPass(), 
+che calcola il filtro passa-basso.
+
+79
+00:06:00,490 --&gt; 00:06:06,160
+Questo metodo accetta due parametri: la lettura corrente
+e la media sul lungo termine.
+
+80
+00:06:07,250 --&gt; 00:06:12,330
+E poi calcola il valore filtrato, come,
+una sorta di media ponderata.
+
+81
+00:06:12,330 --&gt; 00:06:13,410
+In questo caso,
+
+82
+00:06:13,410 --&gt; 00:06:16,740
+il valore filtrato è pari all'80% della 
+
+83
+00:06:16,740 --&gt; 00:06:20,550
+media a lungo termine, più il 20% 
+della lettura corrente.
+
+84
+00:06:21,770 --&gt; 00:06:25,090
+Nel corso del tempo, questo calcolo si muove verso
+
+85
+00:06:25,090 --&gt; 00:06:27,250
+i valori ideali di cui abbiamo 
+parlato in precedenza.
+
+86
+00:06:29,030 --&gt; 00:06:32,260
+Scendendo, ecco il metodo highPass()
+
+87
+00:06:32,260 --&gt; 00:06:35,780
+che calcola i valori filtrati 
+con il passa-alto .
+
+88
+00:06:35,780 --&gt; 00:06:38,640
+E anche questo metodo usa due parametri
+
+89
+00:06:38,640 --&gt; 00:06:42,990
+la lettura corrente, e la media 
+sul lungo termine, che ora viene  
+
+90
+00:06:42,990 --&gt; 00:06:46,450
+calcolata nel metodo lowPass(), 
+di cui abbiamo appena parlato.
+
+91
+00:06:47,720 --&gt; 00:06:53,100
+Questo codice quindi sottrae la media 
+a lungo termine dalla lettura corrente e
+
+92
+00:06:53,100 --&gt; 00:06:57,530
+rappresenta quindi la parte della lettura
+che non è dovuta alla gravità.
+
+93
+00:07:01,270 --&gt; 00:07:05,450
+Questo esempio è chiamato
+SensorCompass
+
+94
+00:07:05,450 --&gt; 00:07:07,700
+e questa applicazione utilizza il dispositivo di
+
+95
+00:07:07,700 --&gt; 00:07:12,200
+accelerometro e il suo magnetometro 
+per orientare
+
+96
+00:07:12,200 --&gt; 00:07:15,280
+la freccia di una bussola 
+verso il nord magnetico.
+
+97
+00:07:16,740 --&gt; 00:07:17,860
+Quindi, ecco il mio dispositivo.
+
+98
+00:07:19,060 --&gt; 00:07:23,380
+Ora avviamo l'applicazione
+SensorCompass.
+
+99
+00:07:23,380 --&gt; 00:07:26,540
+Come potete vedere, questa applicazione 
+mostra un cerchio verde
+
+100
+00:07:26,540 --&gt; 00:07:31,600
+con una freccia bianca.
+Ora, questa freccia
+
+101
+00:07:31,600 --&gt; 00:07:36,446
+punta verso il nord magnetico.
+Tuttavia, se comincio a
+
+102
+00:07:36,446 --&gt; 00:07:41,550
+ruotare il dispositivo, si vede che la freccia
+continua a puntare verso
+
+103
+00:07:41,550 --&gt; 00:07:46,400
+nord, che, naturalmente, è esattamente ciò che
+una bussola dovrebbe fare.
+
+104
+00:07:52,400 --&gt; 00:07:54,490
+Diamo un'occhiata al codice sorgente
+
+105
+00:07:54,490 --&gt; 00:07:59,470
+di questa applicazione.
+
+106
+00:08:01,850 --&gt; 00:08:05,179
+Ecco l'applicazione SensorCompass
+aperto nell'IDE.
+
+107
+00:08:07,320 --&gt; 00:08:12,610
+Ora aprirò l'activity principale.
+Scendiamo al metodo onCreate().
+
+108
+00:08:14,390 --&gt; 00:08:19,540
+Come le altre applicazioni, comincia 
+impostando l'interfaccia utente,
+
+109
+00:08:19,540 --&gt; 00:08:25,040
+e, in particolare, crea una 
+CustomView che contiene
+
+110
+00:08:25,040 --&gt; 00:08:30,630
+la freccia della bussola e poi la aggiunge 
+alla MainView dell'activity.
+
+111
+00:08:32,050 --&gt; 00:08:32,380
+Poi
+
+112
+00:08:32,380 --&gt; 00:08:34,450
+ottiene un riferimento al SensorManager.
+
+113
+00:08:36,090 --&gt; 00:08:40,500
+Dopo di che, ottiene un riferimento
+all'accelerometro del dispositivo e
+
+114
+00:08:40,500 --&gt; 00:08:46,785
+al magnetometro del dispositivo chiamando il 
+SensorManager.getdefaultsensor.
+
+115
+00:08:46,785 --&gt; 00:08:51,160
+e passando le costanti del tipo appropriato.
+
+116
+00:08:53,960 --&gt; 00:08:59,450
+Nel metodo onResume(), il codice registra
+un listener per gli eventi accelerometro
+
+117
+00:08:59,450 --&gt; 00:09:04,850
+e per gli eventi del magnetometro, 
+chiamando il metodo registerListener.
+
+118
+00:09:06,180 --&gt; 00:09:11,080
+Il metodo onPause annulla la registrazione di questa classe
+come listener per tutti i sensori.
+
+119
+00:09:13,450 --&gt; 00:09:18,830
+Il metodo onSensorChanged elabora gli eventi
+dei sensori in ingresso.
+
+120
+00:09:18,830 --&gt; 00:09:22,460
+Questo metodo controlla prima che l'evento
+sia di un accelerometro o
+
+121
+00:09:22,460 --&gt; 00:09:27,340
+di un magnatometro e poi copia i dati
+degli eventi appropriati.
+
+122
+00:09:28,500 --&gt; 00:09:34,024
+Poi, se ci sono letture di ciascuno
+dei due sensori, il codice richiama
+
+123
+00:09:34,024 --&gt; 00:09:39,120
+il metodo SensorManager.getrotationmatrix
+
+124
+00:09:39,120 --&gt; 00:09:42,810
+passando le letture del sensore ed un
+
+125
+00:09:42,810 --&gt; 00:09:46,579
+array in cui memorizzare la 
+matrice di rotazione.
+
+126
+00:09:47,850 --&gt; 00:09:53,620
+Se questo metodo ha avuto successo, 
+allora il codice chiama il metodo
+
+127
+00:09:53,620 --&gt; 00:09:59,500
+SensorManager.getorientation passando la
+matrice di rotazione che abbiamo appena acquisito
+
+128
+00:09:59,500 --&gt; 00:10:04,254
+dalla chiamata per ottenere la matrice.
+Passa anche a
+
+129
+00:10:04,254 --&gt; 00:10:07,259
+un altro array chiamato matrice di orientamento.
+
+130
+00:10:08,530 --&gt; 00:10:12,130
+Quando questo metodo termina, 
+la matrice di orientamento
+
+
+131
+00:10:12,130 --&gt; 00:10:15,730
+conterrà le informazioni di cui
+l'applicazione ha bisogno
+
+132
+00:10:15,730 --&gt; 00:10:18,570
+per determinare come il dispositivo sia orientato
+
+133
+00:10:18,570 --&gt; 00:10:21,580
+rispetto al nord magnetico
+della terra.
+
+134
+00:10:23,370 --&gt; 00:10:25,370
+Il codice quindi recupera questo valore dalla
+
+135
+00:10:25,370 --&gt; 00:10:29,540
+matrice di orientamento e poichè 
+questo valore è espresso
+
+136
+00:10:29,540 --&gt; 00:10:33,910
+in radianti, il codice 
+converte il valore
+
+137
+00:10:34,990 --&gt; 00:10:39,480
+a gradi.
+Dopo di che, il codice chiama la
+
+138
+00:10:39,480 --&gt; 00:10:45,629
+CompassArrowView() e poi annulla gli
+array che contengono le letture del sensore.
+
+139
+00:10:46,810 --&gt; 00:10:49,900
+Guardiamo la CompassArrowView per
+
+140
+00:10:49,900 --&gt; 00:10:53,260
+vedere come utilizza le nuove 
+informazioni di orientamento.
+
+141
+00:10:56,000 --&gt; 00:11:00,870
+Scendendo al metodo onDraw(), il codice
+prima salva la canvas corrente
+
+142
+00:11:01,960 --&gt; 00:11:06,680
+e quindi ruota questa vista del canvas
+di un valore
+
+143
+00:11:06,680 --&gt; 00:11:11,450
+pari a meno 1 volta mRotation in gradi 
+
+144
+00:11:11,450 --&gt; 00:11:15,670
+Quindi, fondamentalmente, l'idea è che se
+
+145
+00:11:15,670 --&gt; 00:11:21,390
+il dispositivo punta 90 gradi 
+da nord, quindi la freccia della bussola
+
+146
+00:11:21,390 --&gt; 00:11:26,720
+deve ruotare indietro di 90 gradi in modo che
+la freccia della bussola mantenga la punta verso nord.
+
+147
+00:11:30,740 --&gt; 00:11:32,690
+Questo è tutto per questa lezione sui sensori.
+
+148
+00:11:32,690 --&gt; 00:11:38,560
+Ci vediamo la prossima volta quando parleremo
+posizione e mappe.
+
+149
+00:11:38,560 --&gt; 00:11:38,920
+Grazie.
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture81:it&amp;oldid=23588">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture81:it&amp;oldid=23588</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

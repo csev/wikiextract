@@ -1,0 +1,197 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Lecture Notes 7</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Bioelectricity_-_Week_7"><span class="tocnumber">1</span> <span class="toctext">Bioelectricity - Week 7</span></a>
+<ul>
+<li class="toclevel-2"><a href="#What_are_we_talking_about.3F"><span class="tocnumber">1.1</span> <span class="toctext">What are we talking about?</span></a></li>
+<li class="toclevel-2"><a href="#Finger_wave_forms"><span class="tocnumber">1.2</span> <span class="toctext">Finger wave forms</span></a></li>
+<li class="toclevel-2"><a href="#Single_Fiber_Extracellular_Wave_Forms"><span class="tocnumber">1.3</span> <span class="toctext">Single Fiber Extracellular Wave Forms</span></a></li>
+<li class="toclevel-2"><a href="#Wave_forms_at_starting_and_ending_sites"><span class="tocnumber">1.4</span> <span class="toctext">Wave forms at starting and ending sites</span></a></li>
+<li class="toclevel-2"><a href="#Origin_of_Ve.2C_An_Experiment"><span class="tocnumber">1.5</span> <span class="toctext">Origin of Ve, An Experiment</span></a></li>
+<li class="toclevel-2"><a href="#Single_Fiber_Spatial_Vm.2C_Im.2C_and_Sources"><span class="tocnumber">1.6</span> <span class="toctext">Single Fiber Spatial Vm, Im, and Sources</span></a></li>
+<li class="toclevel-2"><a href="#Magnitude_of_Io"><span class="tocnumber">1.7</span> <span class="toctext">Magnitude of Io</span></a></li>
+<li class="toclevel-2"><a href="#Cartoon_of_Extracellular_Potentials"><span class="tocnumber">1.8</span> <span class="toctext">Cartoon of Extracellular Potentials</span></a></li>
+<li class="toclevel-2"><a href="#Electrocardiograms"><span class="tocnumber">1.9</span> <span class="toctext">Electrocardiograms</span></a></li>
+<li class="toclevel-2"><a href="#Problem_session.2C_sources_as_dipoles"><span class="tocnumber">1.10</span> <span class="toctext">Problem session, sources as dipoles</span></a></li>
+<li class="toclevel-2"><a href="#Week_7_in_review"><span class="tocnumber">1.11</span> <span class="toctext">Week 7 in review</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Bioelectricity_-_Week_7">Bioelectricity - Week 7</span></h1>
+<p>A) Watching wave forms from a fiber<br />
+B) Watching cardiac wave forms<br />
+Train system: -- Watching  </p>
+<p>Extracellular Observations<br />
+Cardiac Wave Forms  </p>
+<ol>
+<li>Introduction to week 7  </li>
+<li>What are we talking about?  </li>
+<li>Finger wave forms  </li>
+<li>Single Fiber Extracellular Wave Forms  </li>
+<li>Wave forms at starting and ending sites  </li>
+<li>Origin of Ve, An Experiment  </li>
+<li>Single Fiber Spatial Vm, Im, and Sources  </li>
+<li>Magnitude of Io  </li>
+<li>Cartoon of Extracellular Potentials  </li>
+<li>Electrocardiograms  </li>
+<li>Problem session, sources as dipoles  </li>
+<li>Week 7 in review    </li>
+</ol>
+<h3> <span class="mw-headline" id="What_are_we_talking_about.3F">What are we talking about?</span></h3>
+<p>With all electrodes outside of cells, possibly on the skin:
+<ul><li> Observing voltages between these electrodes
+</li><li> Seeing that the voltages change with time.
+</li><li> Trying to make some sense of what is seen.  </p>
+</li></ul>
+
+<p>Augustus Waller, late 1800s
+<ul><li> Trained his bulldog, Jimmy, to stand in 4 buckets of water<br />
+</li><li> Measured the voltages between the buckets<br />
+</li><li> Observed that the signal was periodic
+</li><li> Observed that the biggest signal had a period that corresponded to the period of the dog's heart.<br />
+</li><li> Also observed the need to feed Jimmy periodically  </p>
+</li></ul>
+
+<hr />
+<h3> <span class="mw-headline" id="Finger_wave_forms">Finger wave forms</span></h3>
+<p><strong>Recording between finger on one hand and finger on the other (A simple experiment)</strong><br />
+Simple experiment: Place electrodes on a finger of each hand and record the voltages from one electrode to the other.  </p>
+<p><a href="/wiki/images/7/7f/BE-week7-finger-waveform.png" class="image"><img alt="BE-week7-finger-waveform.png" src="/wiki/images/7/7f/BE-week7-finger-waveform.png" width="665" height="233" /></a></p>
+<p><strong>Caution – Safety Issue</strong><br />
+Caution: Trying this experiment is not a part of this course. Please be aware that an approved experimental protocol may be required.<br />
+There can be a shock hazard because there are electrodes tightly coupled to the body. Be sure to use approved equipment to avoid any shock hazard.  </p>
+<p><strong>Noise, because signals are small.</strong><br />
+<ul><li> “Noise” is often defined as any unwanted signal.<br />
+</li><li> If our interest on the recording is the cardiac signal, there is a lot of noise on the recording from body electrodes.<br />
+</li><li> Noise is an issue in most kinds of extracellular recordings.  </p>
+</li></ul>
+
+<p><strong>Comments</strong><br />
+<ul><li> The recording shows a voltage that changes with time.<br />
+</li><li> There are periodic large signals perhaps 0.8 sec apart.<br />
+</li><li> There are a lot of lower level deflections.<br />
+</li><li> How do we begin to understand what is happening? Where is this stuff coming from?  </p>
+</li></ul>
+
+<hr />
+<h3> <span class="mw-headline" id="Single_Fiber_Extracellular_Wave_Forms">Single Fiber Extracellular Wave Forms</span></h3>
+<p>What is happening outside the fiber, for a single fiber?<br />
+First, let’s look at the wave forms that are observed.  </p>
+<p><strong>Experimental setup</strong>  </p>
+<p><a href="/wiki/images/8/8b/BE-week7-experiment-setup.png" class="image"><img alt="BE-week7-experiment-setup.png" src="/wiki/images/8/8b/BE-week7-experiment-setup.png" width="665" height="289" /></a>  </p>
+<ul>
+<li>Single fiber, uniform, so it has the most simple structure.  </li>
+<li>One stimulator, designated R (towards the left-hand of the fiber).  </li>
+<li>2 electrodes<br />
+<dl><dd><ul><li> 1 electrode is a penetrating electrode, will tell us the transmembrane voltage.<br />
+</li><li> The other electrode is an electrode outside the fiber, which will tell us the voltage outside, relative to a reference that's a long distance away.  </li>
+</li></ul>
+</dd></dl>
+</ul>
+<p><strong>Single Fiber Xmem and Extra-cellular</strong>  </p>
+<p><a href="/wiki/images/e/e1/BE-week7-single-fiber-waveform.png" class="image"><img alt="BE-week7-single-fiber-waveform.png" src="/wiki/images/e/e1/BE-week7-single-fiber-waveform.png" width="665" height="368" /></a>  </p>
+<hr />
+<h3> <span class="mw-headline" id="Wave_forms_at_starting_and_ending_sites">Wave forms at starting and ending sites</span></h3>
+<p><strong>Ends Setup</strong>  </p>
+<p><strong>Extra Ends Wave Forms</strong>  </p>
+<p><strong>Single Fiber Xmem and Extra-cellular</strong>  </p>
+<p><strong>Wave Shape as Discriminant</strong><br />
+<ul><li> Extra cellular wave forms can be used to determine the excitaiton sequence.<br />
+</li><li> The wave shape is useful, as well as wave timing.<br />
+</li><li> For biphasic waveforms, the upstroke of the action potential corresponds to the intrinsic deflection of the extracellular wave form.  </p>
+</li></ul>
+
+<hr />
+<h3> <span class="mw-headline" id="Origin_of_Ve.2C_An_Experiment">Origin of Ve, An Experiment</span></h3>
+<p><strong>Origin of Ve experiment, the Setup</strong>  </p>
+<p><strong>Origin of Ve, Vm(t) to Vm(x)</strong>  </p>
+<p><strong>Origin of Ve, Im(x) to Ve(t)</strong>  </p>
+<hr />
+<h3> <span class="mw-headline" id="Single_Fiber_Spatial_Vm.2C_Im.2C_and_Sources">Single Fiber Spatial Vm, Im, and Sources</span></h3>
+<p><strong>Sources and Sinks, Drawing</strong>  </p>
+<p><strong>Equation</strong>  </p>
+<p><strong>Straight-edge estimation from Vm(x)</strong>  </p>
+<hr />
+<h3> <span class="mw-headline" id="Magnitude_of_Io">Magnitude of Io</span></h3>
+<p><strong>Magnitude and Sign of Io</strong><br />
+<ul><li> We need<br />
+</li></ul>
+<dl><dd><ul><li> the resistivity [Ri = 30, Re=20 Ohm-cm here] the radius [a= 10 um in most cases here] 
+</li><li> the 2nd spatial derivative of Vm  </p>
+</li></ul>
+</dd></dl>
+
+<p>:* How does one find an actual number value for Io?<br />
+Or, we need a graph of Im(x). That is never available, experimentally, though sometimes it is, in a simulation.  </p>
+<hr />
+<h3> <span class="mw-headline" id="Cartoon_of_Extracellular_Potentials">Cartoon of Extracellular Potentials</span></h3>
+<p><strong>Cartoon 1</strong>  </p>
+<p><strong>Cartoon 2</strong>  </p>
+<p><strong>Cartoon 3</strong>  </p>
+<p><strong>Cartoon 4</strong>  </p>
+<hr />
+<h3> <span class="mw-headline" id="Electrocardiograms">Electrocardiograms</span></h3>
+<ul>
+<li>Electrocardiography is about obtaining and interpreting written records of the electrical signals of the heart.  </li>
+<li>Einthoven, in Holland, received the Nobel Prize in 1924 for demonstrating that the electrocardiogram was systematically different in patients with different kinds of heart problems.  </li>
+<li>The best way to interpret electrical signals from the heart remains a research topic even today.  </li>
+</ul>
+<p><strong>Heart within Body, Sketch</strong>  </p>
+<p><strong>Lead Waveforms</strong><br />
+<ul><li> ECGSIM is a fantastic computer tool for visualizing and connecting electrical signals in the heart with those on the body surface.<br />
+</li><li> It has been created and made available by Adriaan van Oosterom and colleagues, who are authorities in this field.<br />
+</li><li> www.ecgsim.org (Available for many purposes free of charge.)  </p>
+</li></ul>
+
+<hr />
+<h3> <span class="mw-headline" id="Problem_session.2C_sources_as_dipoles">Problem session, sources as dipoles</span></h3>
+<p><strong>Source pairs as dipoles - Q</strong><br />
+<ul><li> Derive an expression that gives the potential from a sourcesink pair in a single term.<br />
+</li><li> Assume that the distance between the source and sink is much smaller than the distance to the field point.  </p>
+</li></ul>
+
+<p><strong>Hints</strong><br />
+<ul><li> Derive an expression that gives the potential from a sourcesink pair in a single term.  * Assume that the distance between the source and sink is much smaller than the distance to the field point.<br />
+</li><li> Think of the distance from the sink to the source as a vector p. Think of the distance from the pair to the field point as another vector r.<br />
+</li><li> The result will depend on the dot product of these 2 vectors.  </p>
+</li></ul>
+
+<hr />
+<h3> <span class="mw-headline" id="Week_7_in_review">Week 7 in review</span></h3>
+<ol>
+<li><p>Extracellular voltages are present across fingers, with a complex wave shape, though a heartbeat is visible.  </p></li>
+<li><p>.A much simpler wave shape, largely biphasic, is seen from an extracellular electrode near a single fiber.  </p></li>
+<li><p>The leading edge of the excitation wave, seen outside the fiber, has positive potential and the trailing edge is negative.  </p></li>
+<li><p>Sources and sinks are readily identify from the curve of Vm(x) or Im(x)  </p></li>
+<li><p>Though the geometry is hugely different, wave shapes of similar polarity arise from excitation waves in the heart.  </p></li>
+</ol>
+<p><strong>An enormous and wide-ranging subject</strong><br />
+<ul><li> We have barely scratched the surface.<br />
+</li><li> The recording and interpretation of extracellular signals is an enormous and wide-ranging subject.<br />
+</li><li> The industry devoted to manufacture of specialized instruments for recording and display is large and varied.<br />
+</li><li> The modes and principles of wave form interpretation is highly developed by specialists in related medical fields, for example, by cardiologists for wave forms from the heart.  </p>
+</li></ul>
+
+<hr />
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 50/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes_7&amp;oldid=7128">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes_7&amp;oldid=7128</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

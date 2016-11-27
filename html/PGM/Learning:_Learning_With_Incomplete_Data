@@ -1,0 +1,86 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Learning: Learning With Incomplete Data</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">1</span> <span class="toctext">Lecture Video Table of Contents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Learning_With_Incomplete_Data_-_Overview"><span class="tocnumber">1.1</span> <span class="toctext">Learning With Incomplete Data - Overview</span></a></li>
+<li class="toclevel-2"><a href="#Expectation_Maximization_-_Intro"><span class="tocnumber">1.2</span> <span class="toctext">Expectation Maximization - Intro</span></a></li>
+<li class="toclevel-2"><a href="#Analysis_of_EM_Algorithm"><span class="tocnumber">1.3</span> <span class="toctext">Analysis of EM Algorithm</span></a></li>
+<li class="toclevel-2"><a href="#EM_In_Practice"><span class="tocnumber">1.4</span> <span class="toctext">EM In Practice</span></a></li>
+<li class="toclevel-2"><a href="#Latent_Variables"><span class="tocnumber">1.5</span> <span class="toctext">Latent Variables</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h1>
+<h2> <span class="mw-headline" id="Learning_With_Incomplete_Data_-_Overview">Learning With Incomplete Data - Overview</span></h2>
+<p><pre>
+0:18    Incomplete data
+1:01    Why latent variables?
+3:51    Treating missing data
+5:55    Modeling missing data mechanisms
+12:01   Identifiability
+13:38   Likelihood for complete data
+16:57   Multimodal likelihood
+18:15   Parameter correlations
+20:53   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Expectation_Maximization_-_Intro">Expectation Maximization - Intro</span></h2>
+<p><pre>
+0:21    Likelihood with incomplete data
+1:24    Gradient Ascent
+5:21    Gradient ascent summary
+6:39    Expectation maximization
+8:25    EM overview
+12:12   Example: Bayesian clustering
+14:49   EM summary
+</pre></p>
+<h2> <span class="mw-headline" id="Analysis_of_EM_Algorithm">Analysis of EM Algorithm</span></h2>
+<p><pre>
+0:30    More formal intuition
+10:01   EM guarantees
+</pre></p>
+<h2> <span class="mw-headline" id="EM_In_Practice">EM In Practice</span></h2>
+<p><pre>
+0:11    EM convergence in practice
+2:44    Overfitting
+5:01    Local optima
+7:05    Significance of local optima
+8:07    Initialization is critical
+10:09   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Latent_Variables">Latent Variables</span></h2>
+<p><pre>
+0:28    Discovering user clusters
+1:14    Example: MSNBC story clusters
+3:34    Example: Speech recognition HMM
+6:14    Example: 3D robot mapping
+8:52    Example: Body parts from point cloud scans
+9:51    Collective clustering model
+13:28   Example: Helicopter demo alignment
+14:25   Graphical model
+16:27   All expert demos
+17:31   Picking latent variable cardinality
+20:29   Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Learning:_Learning_With_Incomplete_Data&amp;oldid=5063">https://share.coursera.org/wiki/index.php?title=PGM:Learning:_Learning_With_Incomplete_Data&amp;oldid=5063</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

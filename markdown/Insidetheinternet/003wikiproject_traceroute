@@ -1,0 +1,26 @@
+How to do a Trace Route on a windows machine.
+=============================================
+
+777  **under development **  7777777777777777777
+
+888888888888888888888
+
+99999999999999999
+
+Introduction
+============
+
+
+In computing, traceroute is a computer network diagnostic tool for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network. The history of the route is recorded as the round-trip times of the packets received from each successive host (remote node) in the route (path); the sum of the mean times in each hop indicates the total time spent to establish the connection. Traceroute proceeds unless all (three) sent packets are lost more than twice, then the connection is lost and the route cannot be evaluated. Ping, on the other hand, only computes the final round-trip times from the destination point.
+
+
+Forum Thread
+============
+
+here is the thread==>https://class.coursera.org/insidetheinternet-003/forum/thread?thread_id=719
+
+Anna ZawilskaStaff  4 days ago 
+Why not have a try at doing your own Traceroute! How did it go? Share your experiences.
+
+...
+===

@@ -1,0 +1,42 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Quiz 5B help</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Q1: When you take multimeter and conect one probe to point before resistor $$R&#95;1$$ and other one just next to first one, you get $$~0 V$$ voltage (remember voltage is differenec between potentials). </p>
+<p>To solve part B you are plugging second probe to right electrode of resistor $$R&#95;1$$ and measureing $$U&#95;{R1}$$. For computing potential follow these steps:</p>
+<ol>
+<li>Compute I through capacitor path A as $$I&#95;{cap} = C&#95;m \frac{\partial Vm}{\partial x} \approx C&#95;m \frac{\bigtriangleup Vm}{\bigtriangleup t} = C&#95;m \frac{V&#95;{m1} - V&#95;{m2}}{\bigtriangleup t}$$, where $$V&#95;{mi}$$ is membrane voltage and $$C&#95;m$$ is membrane capacity.</li>
+<li>Compute membrane current as $$I&#95;{mem} = I&#95;{rez} + I&#95;{cap}$$ where $$I&#95;{rez}$$ is current through resistance path.</li>
+<li>Use Ohm's law to get voltage $$U&#95;{R1} = I&#95;{mem} R&#95;{1}$$.</li>
+<li>And finally to get potential compute $$ \phi' = \phi -  U&#95;{R1} = 0 - U&#95;{R1}$$</li>
+</ol>
+<p>Alternatively it is possible to use voltage loops.</p>
+<hr />
+<p>Q3: For computing specific membrane current use formula from videos $$I&#95;{C} = \frac{V&#95;{B} - 2 V&#95;{C} + V&#95;{D}}{R&#95;i + R&#95;e}$$</p>
+<hr />
+<p>Q4: For part A try to draw another segment before segment A, name it maybe AA. This virtual AA segment supplies $$0 A$$,. To compute membrane current $$I&#95;A$$ do:</p>
+<ol>
+<li>Compute intracellular current from AA as $$I&#95;{iAA} = - \frac{V&#95;A - V&#95;B}{R&#95;i + R&#95;e}$$</li>
+<li>Extracellular current is $$I&#95;{eA} = - I&#95;{iA}$$</li>
+<li>Then compute $$ I&#95;A = I&#95;{AA} + I&#95;{eA} = 0 + + I&#95;{eA}$$, where $$I&#95;{AA}$$ is membrane current of segment AA</li>
+</ol>
+<p>Use formula from Q3 to solve part B.</p>
+<hr />
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Quiz_5B_help&amp;oldid=9367">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Quiz_5B_help&amp;oldid=9367</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

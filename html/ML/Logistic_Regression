@@ -1,0 +1,287 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Logistic Regression</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Now we are switching from regression problems to <strong>classification problems</strong>. Don't be confused by the name "Logistic Regression"; it is named that way for historical reasons and is actually an approach to classification problems, not regression problems.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Binary_Classification"><span class="tocnumber">1</span> <span class="toctext">Binary Classification</span></a></li>
+<li class="toclevel-1"><a href="#Hypothesis_Representation"><span class="tocnumber">2</span> <span class="toctext">Hypothesis Representation</span></a></li>
+<li class="toclevel-1"><a href="#Decision_Boundary"><span class="tocnumber">3</span> <span class="toctext">Decision Boundary</span></a></li>
+<li class="toclevel-1"><a href="#Cost_Function"><span class="tocnumber">4</span> <span class="toctext">Cost Function</span></a></li>
+<li class="toclevel-1"><a href="#Simplified_Cost_Function_and_Gradient_Descent"><span class="tocnumber">5</span> <span class="toctext">Simplified Cost Function and Gradient Descent</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Gradient_Descent"><span class="tocnumber">5.1</span> <span class="toctext">Gradient Descent</span></a></li>
+<li class="toclevel-2"><a href="#Partial_derivative_of_.24.24J.28.5Ctheta.29.24.24"><span class="tocnumber">5.2</span> <span class="toctext">Partial derivative of $$J(\theta)$$</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Advanced_Optimization"><span class="tocnumber">6</span> <span class="toctext">Advanced Optimization</span></a></li>
+<li class="toclevel-1"><a href="#Multiclass_Classification:_One-vs-all"><span class="tocnumber">7</span> <span class="toctext">Multiclass Classification: One-vs-all</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Binary_Classification">Binary Classification</span></h1>
+<p>Instead of our output vector $$y$$ being a continuous range of values, it will only be 0 or 1.</p>
+<p>$$
+\large
+y \in \lbrace 0,1 \rbrace
+$$</p>
+<p>Where 0 is usually taken as the "negative class" and 1 as the "positive class", but you are free to assign any representation to it.</p>
+<p>We're only doing two classes for now, called a "Binary Classification Problem."</p>
+<p>One method is to use linear regression and map all predictions greater than 0.5 as a 1 and all less than 0.5 as a 0.  This method doesn't work well because classification is not actually a linear function.</p>
+<h1> <span class="mw-headline" id="Hypothesis_Representation">Hypothesis Representation</span></h1>
+<p>Our hypothesis should satisfy:</p>
+<p>$$
+\large
+0 \leq h&#95;\theta (x) \leq 1
+$$</p>
+<p>Our new form uses the "Sigmoid Function," also called the "Logistic Function":</p>
+<p>$$
+\large
+\begin{align&#42;}
+&amp; h&#95;\theta (x) =  g ( \theta^T x ) \newline \newline
+&amp; z = \theta^T x \newline
+&amp; g(z) = \dfrac{1}{1 + e^{-z}}
+\end{align&#42;}
+$$</p>
+<p><a href="/wiki/images/b/b9/Logistic_function.png" class="image"><img alt="Logistic function.png" src="/wiki/images/b/b9/Logistic_function.png" width="826" height="128" /></a></p>
+<p>The function $$g(z)$$, shown here, maps any real number to the (0, 1) interval, making it useful
+for transforming an arbitrary-valued function into a function better suited for classification. Try playing with interactive plot of sigmoid function <a rel="nofollow" class="external text" href="https://www.desmos.com/calculator/bgontvxotm">here</a>.</p>
+<p>We start with our old hypothesis (linear regression), except that we want to restrict the range to 0 and 1. This is accomplished by plugging $$\theta^T x $$ into the Logistic Function.</p>
+<p>$$h&#95;\theta$$ will give us the <strong>probability</strong> that our output is 1. For example, $$h&#95;\theta(x)=0.7$$ gives us the probability of 70% that our output is 1.</p>
+<p>$$
+\large
+\begin{align&#42;}
+&amp; h&#95;\theta(x) = P(y=1 | x&#160;; \theta) = 1 - P(y=0 | x&#160;; \theta) \newline
+&amp; P(y = 0 | x;\theta) + P(y = 1 | x&#160;; \theta) = 1
+\end{align&#42;}
+$$</p>
+<p>Our probability that our prediction is 0 is just the complement of our probability that it is 1 (e.g. if probability that it is 1 is 70%, then the probability that it is 0 is 30%).</p>
+<h1> <span class="mw-headline" id="Decision_Boundary">Decision Boundary</span></h1>
+<p>In order to get our discrete 0 or 1 classification, we can translate the output of the hypothesis function as follows:</p>
+<p>$$
+\begin{align&#42;}
+&amp; h&#95;\theta(x) \geq 0.5 \rightarrow y = 1 \newline
+&amp; h&#95;\theta(x) &lt; 0.5 \rightarrow y = 0 \newline
+\end{align&#42;}
+$$</p>
+<p>The way our logistic function $$g$$ behaves is that when its input is greater than or equal to zero, its output is greater than or equal to 0.5:</p>
+<p>$$
+\begin{align&#42;}
+&amp; g(z) \geq 0.5 \newline
+&amp; when \; z \geq 0
+\end{align&#42;}
+$$</p>
+<p>Remember.-</p>
+<p>$$
+\begin{align&#42;}
+z=0,  e^{0}=1 \Rightarrow  g(z)=1/2\newline 
+z \to \infty, e^{-\infty} \to 0 \Rightarrow g(z)=1 \newline
+ z \to -\infty, e^{\infty}\to \infty \Rightarrow g(z)=0 
+\end{align&#42;}
+$$</p>
+<p>So if our input to $$g$$ is $$\theta^T X$$, then that means:</p>
+<p>$$
+\begin{align&#42;}
+&amp; h&#95;\theta(x) = g(\theta^T x) \geq 0.5 \newline
+&amp; when \; \theta^T x \geq 0
+\end{align&#42;}
+$$</p>
+<p>From these statements we can now say:</p>
+<p>$$
+\begin{align&#42;}
+&amp; \theta^T x \geq 0 \Rightarrow y = 1 \newline
+&amp; \theta^T x &lt; 0 \Rightarrow y = 0 \newline
+\end{align&#42;}
+$$</p>
+<p>The <strong>decision boundary</strong> is the line that separates the area where y=0 and where y=1. It is created by our hypothesis function.</p>
+<p><strong>Example</strong>:</p>
+<p>$$
+\begin{align&#42;}
+&amp; \theta = \begin{bmatrix}5 \newline -1 \newline 0\end{bmatrix} \newline
+&amp; y = 1 \; if \; 5 + (-1) x&#95;1 + 0 x&#95;2 \geq 0 \newline
+&amp; 5 - x&#95;1 \geq 0 \newline
+&amp; - x&#95;1 \geq -5 \newline
+&amp; x&#95;1 \leq 5 \newline
+\end{align&#42;}
+$$</p>
+<p>In this case, our decision boundary is a straight vertical line placed on the graph where $$x&#95;1 = 5$$, and everything to the left of that denotes y=1, while everything to the right denotes y=0.</p>
+<p>Again, the input to the sigmoid function $$g(z)$$ (e.g. $$\theta^T X $$) doesn't need to be linear, and could be a function that describes a circle (e.g. $$z = \theta&#95;0 + \theta&#95;1 x&#95;1^2 +\theta&#95;2 x&#95;2^2 $$) or any shape to fit our data.</p>
+<h1> <span class="mw-headline" id="Cost_Function">Cost Function</span></h1>
+<p>We cannot use the same cost function that we use for linear regression because the Logistic Function will cause the output to be wavy, causing many local optima. In other words, it will not be a convex function.</p>
+<p>Instead, our cost function for logistic regression looks like:</p>
+<p>$$
+\large
+\begin{align&#42;}
+&amp; J(\theta) = \dfrac{1}{m} \sum&#95;{i=1}^m \mathrm{Cost}(h&#95;\theta(x^{(i)}),y^{(i)}) \newline
+&amp; \mathrm{Cost}(h&#95;\theta(x),y) = -\log(h&#95;\theta(x)) \; &amp; \text{if y = 1} \newline
+&amp; \mathrm{Cost}(h&#95;\theta(x),y) = -\log(1-h&#95;\theta(x)) \; &amp; \text{if y = 0}
+\end{align&#42;}
+$$</p>
+<p><a href="/wiki/images/0/0f/Logistic_regression_cost_function_positive_class.png" class="image"><img alt="Logistic regression cost function positive class.png" src="/wiki/images/0/0f/Logistic_regression_cost_function_positive_class.png" width="300" height="244" /></a>
+<a href="/wiki/images/4/4d/Logistic_regression_cost_function_negative_class.png" class="image"><img alt="Logistic regression cost function negative class.png" src="/wiki/images/4/4d/Logistic_regression_cost_function_negative_class.png" width="299" height="280" /></a></p>
+<p>The more our hypothesis is off from y, the larger the cost function output. If our hypothesis is equal to y, then our cost is 0:</p>
+<p>$$
+\begin{align&#42;}
+&amp; \mathrm{Cost}(h&#95;\theta(x),y) = 0 \text{  if  } h&#95;\theta(x) = y \newline
+&amp; \mathrm{Cost}(h&#95;\theta(x),y) \rightarrow \infty \text{  if  } y = 0 \; \mathrm{and} \; h&#95;\theta(x) \rightarrow 1 \newline
+&amp; \mathrm{Cost}(h&#95;\theta(x),y) \rightarrow \infty \text{  if  } y = 1 \; \mathrm{and} \; h&#95;\theta(x) \rightarrow 0 \newline
+\end{align&#42;}
+$$</p>
+<p>If our correct answer 'y' is 0, then the cost function will be 0 if our hypothesis function also outputs 0. If our hypothesis approaches 1, then the cost function will approach infinity.</p>
+<p>If our correct answer 'y' is 1, then the cost function will be 0 if our hypothesis function outputs 1. If our hypothesis approaches 0, then the cost function will approach infinity.</p>
+<p>Note that writing the cost function in this way guarantees that $$J(\theta)$$ is convex for logistic regression.</p>
+<h1> <span class="mw-headline" id="Simplified_Cost_Function_and_Gradient_Descent">Simplified Cost Function and Gradient Descent</span></h1>
+<p>We can compress our cost function's two conditional cases into one case:</p>
+<p>$$
+\mathrm{Cost}(h&#95;\theta(x),y) = - y \; \log(h&#95;\theta(x)) - (1 - y) \log(1 - h&#95;\theta(x))
+$$</p>
+<p>Notice that when y is equal to 1, then the second term ($$(1-y)\log(1-h&#95;\theta(x))$$) will be zero and will not affect the result. If y is equal to 0, then the first term ($$-y \log(h&#95;\theta(x))$$) will be zero and will not affect the result.</p>
+<p>We can fully write out our entire cost function as follows:</p>
+<p>$$
+\large
+J(\theta) = - \frac{1}{m} \displaystyle \sum&#95;{i=1}^m [y^{(i)}\log (h&#95;\theta (x^{(i)})) + (1 - y^{(i)})\log (1 - h&#95;\theta(x^{(i)}))]
+$$</p>
+<p>A vectorized implementation is:</p>
+<p>$$
+\begin{align&#42;}
+&amp; h = g(X\theta)\newline
+&amp; J(\theta)  = \frac{1}{m} \cdot \left(-y^{T}\log(h)-(1-y)^{T}\log(1-h)\right)
+\end{align&#42;}
+$$</p>
+<h3> <span class="mw-headline" id="Gradient_Descent">Gradient Descent</span></h3>
+<p>Remember that the general form of gradient descent is:</p>
+<p>$$
+\begin{align&#42;}
+&amp; Repeat \; \lbrace \newline
+&amp; \; \theta&#95;j&#160;:= \theta&#95;j - \alpha \dfrac{\partial}{\partial \theta&#95;j}J(\theta) \newline
+&amp; \rbrace
+\end{align&#42;}
+$$</p>
+<p>We can work out the derivative part using calculus to get:</p>
+<p>$$
+\begin{align&#42;}
+&amp; Repeat \; \lbrace \newline
+&amp; \; \theta&#95;j&#160;:= \theta&#95;j - \frac{\alpha}{m} \sum&#95;{i=1}^m (h&#95;\theta(x^{(i)}) - y^{(i)}) x&#95;j^{(i)} \newline &amp; \rbrace
+\end{align&#42;}
+$$</p>
+<p>Notice that this algorithm is identical to the one we used in linear regression. We still have to simultaneously update all values in theta.</p>
+<p>A vectorized implementation is:</p>
+<p>$$
+\large
+\theta&#160;:= \theta - \frac{\alpha}{m} X^{T} (g(X \theta ) - \vec{y})
+$$</p>
+<h3> <span class="mw-headline" id="Partial_derivative_of_.24.24J.28.5Ctheta.29.24.24">Partial derivative of $$J(\theta)$$</span></h3>
+<p>First calculate derivative of sigmoid function (it will be useful while finding partial derivative of $$J(\theta)$$):</p>
+<p>$$
+\begin{align&#42;}
+\sigma(x)'
+&amp;=\left(\frac{1}{1+e^{-x}}\right)'
+=\frac{-(1+e^{-x})'}{(1+e^{-x})^2}
+=\frac{-1'-(e^{-x})'}{(1+e^{-x})^2}
+=\frac{0-(-x)'(e^{-x})}{(1+e^{-x})^2}
+=\frac{-(-1)(e^{-x})}{(1+e^{-x})^2}
+=\frac{e^{-x}}{(1+e^{-x})^2} \newline
+&amp;=\left(\frac{1}{1+e^{-x}}\right)\left(\frac{e^{-x}}{1+e^{-x}}\right)
+=\sigma(x)\left(\frac{+1-1 + e^{-x}}{1+e^{-x}}\right)
+=\sigma(x)\left(\frac{1 + e^{-x}}{1+e^{-x}} - \frac{1}{1+e^{-x}}\right)
+=\sigma(x)(1 - \sigma(x))
+\end{align&#42;}
+$$</p>
+<p>Now we are ready to find out resulting partial derivative:</p>
+<p>$$
+\begin{align&#42;}
+\frac{\partial}{\partial \theta&#95;j} J(\theta) &amp;= 
+\frac{\partial}{\partial \theta&#95;j} \frac{-1}{m}\sum&#95;{i=1}^m \left [ y^{(i)} log (h&#95;\theta(x^{(i)})) + (1-y^{(i)}) log (1 - h&#95;\theta(x^{(i)})) \right ] \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    y^{(i)} \frac{\partial}{\partial \theta&#95;j} log (h&#95;\theta(x^{(i)})) 
+  + (1-y^{(i)}) \frac{\partial}{\partial \theta&#95;j} log (1 - h&#95;\theta(x^{(i)}))
+\right ] \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    \frac{y^{(i)} \frac{\partial}{\partial \theta&#95;j} h&#95;\theta(x^{(i)})}{h&#95;\theta(x^{(i)})} 
+  + \frac{(1-y^{(i)})\frac{\partial}{\partial \theta&#95;j} (1 - h&#95;\theta(x^{(i)}))}{1 - h&#95;\theta(x^{(i)})}
+\right ] \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    \frac{y^{(i)} \frac{\partial}{\partial \theta&#95;j} \sigma(\theta^T x^{(i)})}{h&#95;\theta(x^{(i)})} 
+  + \frac{(1-y^{(i)})\frac{\partial}{\partial \theta&#95;j} (1 - \sigma(\theta^T x^{(i)}))}{1 - h&#95;\theta(x^{(i)})}
+\right ] \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    \frac{y^{(i)} \sigma(\theta^T x^{(i)}) (1 - \sigma(\theta^T x^{(i)})) \frac{\partial}{\partial \theta&#95;j} \theta^T x^{(i)}}{h&#95;\theta(x^{(i)})} 
+  + \frac{- (1-y^{(i)}) \sigma(\theta^T x^{(i)}) (1 - \sigma(\theta^T x^{(i)})) \frac{\partial}{\partial \theta&#95;j} \theta^T x^{(i)}}{1 - h&#95;\theta(x^{(i)})}
+\right ] \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    \frac{y^{(i)} h&#95;\theta(x^{(i)}) (1 - h&#95;\theta(x^{(i)})) \frac{\partial}{\partial \theta&#95;j} \theta^T x^{(i)}}{h&#95;\theta(x^{(i)})} 
+  - \frac{(1-y^{(i)}) h&#95;\theta(x^{(i)}) (1 - h&#95;\theta(x^{(i)})) \frac{\partial}{\partial \theta&#95;j} \theta^T x^{(i)}}{1 - h&#95;\theta(x^{(i)})}
+\right ] \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    y^{(i)} (1 - h&#95;\theta(x^{(i)})) x^{(i)}&#95;j - (1-y^{(i)}) h&#95;\theta(x^{(i)}) x^{(i)}&#95;j
+\right ] \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    y^{(i)} (1 - h&#95;\theta(x^{(i)})) - (1-y^{(i)}) h&#95;\theta(x^{(i)}) 
+\right ] x^{(i)}&#95;j \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ 
+    y^{(i)} - y^{(i)} h&#95;\theta(x^{(i)}) - h&#95;\theta(x^{(i)}) + y^{(i)} h&#95;\theta(x^{(i)}) 
+\right ] x^{(i)}&#95;j \newline
+&amp;= - \frac{1}{m}\sum&#95;{i=1}^m \left [ y^{(i)} - h&#95;\theta(x^{(i)}) \right ] x^{(i)}&#95;j  \newline
+&amp;= \frac{1}{m}\sum&#95;{i=1}^m \left [ h&#95;\theta(x^{(i)}) - y^{(i)} \right ] x^{(i)}&#95;j
+\end{align&#42;}
+$$</p>
+<p>The vectorized version; </p>
+<p>$$ 
+\nabla J(\theta) = \frac{1}{m} \cdot  X^T \cdot \left(g\left(X\cdot\theta\right) - \vec{y}\right)
+$$ </p>
+<h1> <span class="mw-headline" id="Advanced_Optimization">Advanced Optimization</span></h1>
+<p>"Conjugate gradient", "BFGS", and "L-BFGS" are more sophisticated, faster ways to optimize $$\theta$$ that can be used instead of gradient descent. A. Ng suggests not to write these more sophisticated algorithms yourself (unless you are an expert in numerical computing) but use the libraries instead, as they're already tested and highly optimized. Octave provides them.</p>
+<p>We first need to provide a function that evaluates the following two functions for a given input value $$\theta$$:</p>
+<p>$$
+\large
+\begin{align&#42;} &amp; J(\theta) \newline &amp; \dfrac{\partial}{\partial \theta&#95;j}J(\theta)\end{align&#42;}
+$$</p>
+<p>We can write a single function that returns both of these:</p>
+<code><pre>function [jVal, gradient] = costFunction(theta)
+  jVal = [...code to compute J(theta)...];
+  gradient = [...code to compute derivative of J(theta)...];
+end
+</pre></code>
+<p>Then we can use octave's "fminunc()" optimization algorithm along with the "optimset()" function that creates an object containing the options we want to send to "fminunc()".
+(Note: the value for MaxIter should be an integer, not a character string - errata in the video at 7:30)</p>
+<code><pre>options = optimset('GradObj', 'on', 'MaxIter', 100);
+initialTheta = zeros(2,1);
+[optTheta, functionVal, exitFlag] = fminunc(@costFunction, initialTheta, options);
+</pre></code>
+<p>We give to the function "fminunc()" our cost function, our initial vector of theta values, and the "options" object that we created beforehand.</p>
+<h1> <span class="mw-headline" id="Multiclass_Classification:_One-vs-all">Multiclass Classification: One-vs-all</span></h1>
+<p>Now we will approach the classification of data into more than two categories. Instead of y = {0,1} we will expand our definition so that y = {0,1...n}.</p>
+<p>In this case we divide our problem into $$n+1$$ (+1 because the index starts at 0) binary classification problems; in each one, we predict the probability that 'y' is a member of one of our classes.</p>
+<p>$$
+\large
+\begin{align&#42;}
+&amp; y \in \lbrace0, 1 ... n\rbrace \newline
+&amp; h&#95;\theta^{(0)}(x) = P(y = 0 | x&#160;; \theta) \newline
+&amp; h&#95;\theta^{(1)}(x) = P(y = 1 | x&#160;; \theta) \newline
+&amp; \cdots \newline
+&amp; h&#95;\theta^{(n)}(x) = P(y = n | x&#160;; \theta) \newline
+&amp; \mathrm{prediction} = \max&#95;i( h&#95;\theta ^{(i)}(x) )\newline
+\end{align&#42;}
+$$</p>
+<p>We are basically choosing one class and then lumping all the others into a single second class. We do this repeatedly, applying binary logistic regression to each case, and then use the hypothesis that returned the highest value as our prediction.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Regularization" title="ML:Regularization">Regularization</a> Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Logistic_Regression&amp;oldid=34288">https://share.coursera.org/wiki/index.php?title=ML:Logistic_Regression&amp;oldid=34288</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

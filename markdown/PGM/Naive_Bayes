@@ -1,0 +1,65 @@
+Naive Bayes Models
+===
+Naive Bayes gives us a simplified approach to certain problems by making strong independence assumptions.
+
+Example
+---
+Naive Bayes Model is commonly used in context of text classification.
+
+Random variables:
+*  C: Class  (e.g. type of document)
+*  X1, X2,..., Xn: Features (e.g. word appears in that document)
+
+Dependencies graph:
+* C->X1
+* C->X2
+* ...
+* C->Xn
+
+**Question**: What independence assumption does the Naive Bayes model make?
+
+**Answer**: Given the class variable, each observed variable is independent of the other observed variables.
+
+$$\Rightarrow (X_i\perp X_j |C)$$ for all $$X_i, X_j $$ 
+
+$$\Rightarrow P(C, X1, X2,..., Xn) = P(C).\prod_i P(X_i|C)$$
+
+Bernoulli Naive Bayes for text classification
+---
+**Text classification**: We have some kinds of categories and we want to assign our document to one of those.
+
+In Bernoulli naive model, we have a binary random variable for every vocabulary in dictionary. It's 1 if appears in the document and 0 otherwise.
+
+Therefore, the CPD of these binary random variables is: P(vocabulary|document label). For example, P("cat" appears|document label)
+
+It's naive because it makes very strong assumption that event of one word appearing is independent of event of different word appearing given that we know the class of document.
+
+Multinomial Naive Bayes for Text
+---
+
+The variables for the features are words in the document, from the first to the last n position. Value of each variable is actual word, has the size of dictionary.
+
+We assume that probability distribution of word is the same over its position.
+
+It's naive because we make strong assumption that word in position 1 independent with word in 2 given the class variable.
+
+Summary
+===
+
+*  Simple approach for classification
+   -  Computationally efficient
+   -  Easy to construct
+*  Surprisingly effective in domains with many weakly relevant features
+*  Strong independence assumption reduces performance when many features are strongly correlated.
+
+Lecture Video Table of Contents
+===
+<pre>
+0:00	Definition
+0:27	Example
+1:09	Naive Bayes Model
+2:19	Naive Bayes Classifier
+3:16	Naive Bayes application: Text classification
+6:22	Multinomial Naive Bayes for Text
+9:14	Summary
+</pre>

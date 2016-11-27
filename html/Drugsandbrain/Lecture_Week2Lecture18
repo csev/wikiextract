@@ -1,0 +1,60 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week2Lecture18</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 18 Inhibitory G Proteins and their Effectors
+<ul><li> We are going to follow our description of the g protein pathway, and in particular today, we will talk about inhibitory G proteins and their effectors.  </p>
+</li></ul>
+
+<p><strong>Structure of a heterotrimeric G protein: a molecular switch</strong><br />
+<ul><li> We are following our map of the G protein pathway that we talked about the receptor last time. Now we are going to discuss the G protein. At this level of resolution, all gene proteins look alike, whether they're Gi, Gq, Gs, or Gt. They all have an &#945; subunit, a &#946; subunit, and a &#947; subunit. You can Google this structure {1GOT} yourself right here, but I will show it to you in just a moment.<br />
+</li><li> Here it is: a gene protein without the effector and without the receptor. We see a remarkable structure. We see the &#945; subunit in yellow, the &#946; subunit in blue, and the &#947; subunit in green. In the &#945; subunit, we see some solid depicted atoms. This is GDP, guanosine diphosphate, the bound nucleotide at the bound nucleotide site, putting the &#945; subunit in the inactive confirmation.  </p>
+</li></ul>
+
+<ul>
+<li>The &#946; subunit looks like a propeller or a dunce cap and in fact, this propeller apparently provides a cap for the &#945; subunit, preventing either the &#945;  subunit or the &amp;beta subunit from interacting with the effector, which is not shown in this structure. So a remarkable structure which tells us a great deal about signal transduction in the G protein system. We had seen the components of a heterotrimeric G protein. Remember it's heterotrimeric: it has an &#945;, a &#946;, and a &#947; subunit.  </li>
+</ul>
+<p><strong>Gi protein effectors include some K+ channels</strong><br />
+<ul><li> So let's see now how we can measure an effector or a G protein. We are now concentrating on Gi,  the inhibitory protein. And some Gi protein effectors include some potassium channels. Other Gi protein effectors are enzymes.<br />
+</li><li> A remarkable tool called the patch clamp allows us to measure these channels and how they activate. The patch clamp is a glass pipette, which is fire-polished at the end. It's about a micrometer in diameter. It makes a very tight seal, probably less than an angstrom or so with the cell membrane. And this allows us to gently pull the pipette back and a bit of the cell membrane stays with the pipette.  </p>
+</li></ul>
+
+<ul>
+<li><p>As a result we have two interesting phenomena. First, we can still do electrical measurements on currents that might flow as channels open and close. And second, we have compartmentalization. The contents inside the pipette don't mix with the contents outside the pipette. And so we have an inside-out patch.  </p></li>
+<li><p>We have the cytoplasmic surface of the patch to which we can add molecules. And when we have no additions that channels are closed, we see nothing very interesting. When we now add isolated purified &#946;&#947; subunits to the cytoplasmic face of the channel we see channels, potassium channels opening. They don't stay open all the time. As usual, they open and close at random. So this is direct and graphic proof that potassium channels can be effectors of G proteins, and they are mostly effectors of &#946;&#947; subunits released from Gi proteins.  </p></li>
+</ul>
+<p><strong>G protein-gated K channels inhibit neuronal (&amp; cardiac) firing</strong><br />
+<ul><li> So now we are going to do our final circuit diagram for a plasma membrane channel. I promise it will be our final one. Let's look at what we might see in an electrophysiological recording.  </p>
+</li></ul>
+
+<ul>
+<li><p>A normal cell gets an excitatory post-synaptic potential, exceeds threshold, which is about minus 50 millivolts, and fires an action potential. If the inhibitory Potassium channels are activated by Gi proteins, more of them are open, they push the membrane toward the equilibrium potential, the Nernst potential, for potassium, prevent the membrane from depolarizing enough to get it to the threshold and therefore they decrease the firing range.  </p></li>
+<li><p>So here is our equivalent circuit for a cell membrane. We're going to add just one more type of channel. This is another type of potassium channel, the G protein gated potassium channel and it will help the cell remain at the Nernst potential for potassium, and therefore decreased firing rates.  </p></li>
+<li><p>So as you can see, there are lots of different types of potassium channels. Probably a plurality of channels encoded by the genome are potassium channels, and they help to control the cell's membrane potential, both in neurons and in heart.  </p></li>
+<li><p>And in fact, the experiment that started us off at the beginning of the previous lecture, Otto Loewi's famous experiment on the frog heart, where either electrical stimulations or muscarinic receptors slowed down the frog heart. Why those were G protein gated potassium channels being opened by receptors that activated G proteins. activated Gi, and activated the potassium channel.  </p></li>
+</ul>
+<p><strong>Gi-coupled receptors usually inhibit neurons</strong><br />
+<ul><li> In general then, Gi-Coupled receptors usually inhibit neurons. Gi directly activates some potassium channels, which we have seen. Gi directly inhibits some voltage gated calcium channels, which we have not seen. But as you know, calcium is an intracellular messenger. And so inhibiting voltage gated calcium channels means there are fewer intracellular messengers available to trigger downstream effects. And finally Gi directly inhibits adenylyl cyclase. We'll discuss adenylyl cyclase in the next mini-lecture.  </p>
+</li></ul>
+
+<ul>
+<li>So all these actions slow neuronal firing and decrease the synaptic release of transmitters, and that's why we call it Gi inhibitory G protein. Next time we will continue discussing additional types of G proteins and their effectors.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 7/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture18&amp;oldid=6579">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture18&amp;oldid=6579</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

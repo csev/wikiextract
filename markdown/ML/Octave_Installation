@@ -1,0 +1,154 @@
+
+
+#General
+Installation files for all platforms are available at the [http://sourceforge.net/projects/octave/files GNU Octave Repository] on SourceForge. 
+
+The Gnu Octave Wiki has installation instructions for [Windows](http://wiki.octave.org/Octave_for_Windows) and [Mac OS X](http://wiki.octave.org/Octave_for_MacOS_X).
+
+The present instance of the course was tested using Octave 3.8.2. Earlier versions of Octave are not guaranteed to work. Early versions are known to NOT work for the submit.m script.
+
+#Windows
+##Version 4.0.3
+By using Octave 4.0.3, the GUI works with Windows 10 Pro (when installing 4.0.3 on Win10, expect a warning that the GUI may not work properly.)
+##Version 4.0.1 (and later...)
+If you don't want to use MATLAB, then Octave 4.0.1 is recommended. You will need the "peer certificate" patch, but the bug in printf() has been fixed.
+##Version 4.0.0
+Octave 4.0.0 has a bug in the printf() function, which makes the submit script throw a troubling error. Octave 4.0.0 is not recommended.
+##Version 3.8.2
+The course materials were tested using Octave 3.8.2. This is the oldest version of Octave which will work on the present version of the course (as of June 2015). Earlier versions of Octave are not guaranteed to work, and some early versions (such as 3.2.4, which Prof Ng uses in the video lectures) will not work at all.
+
+## Historical information on previous Octave versions...
+
+###Version 3.6.4
+* The "Microsoft Visual Studio" or "Windows MinGW" version installers can be downloaded from [Sourceforge](http://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/).
+* On Windows 8, you may see a console-related problem whereby Octave crashes and disappears at any syntax error; fix is detailed at [stackoverflow.com](http://stackoverflow.com/questions/17513864/problems-with-octave-on-windows-8)
+###Version 3.6.2
+* This bug-fix version was released on 5 June 2012. The "Microsoft Visual Studio 2010" version installer can be downloaded from [Sourceforge](http://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/). It seems more reliable than the MinGW 3.6.1 version, although some annoying bugs have been retained. 
+* When installing this version from Cygwin, `urlread`/`urlwrite` may fail, resulting in an error message like: `/usr/lib/octave/3.6.2/oct/i686-pc-cygwin/urlwrite.oct: failed to load: No such process`. Thus the `submit` function provided with programming exercises also fails (`submitWeb` still works).  
+I successfully worked around this by replacing `urlwrite.oct` with the file from the Octave/Cygwin 3.6.1 binary [distribution](http://mirrors.kernel.org/sourceware/cygwin/release/octave/). (Problem has also been mentioned in [this thread](https://class.coursera.org/ml-2012-002/forum/thread?thread_id=295) for ml-2012-002.)
+###Version 3.6.1
+* The most recent version is from 3/5/2012, at the [Sourceforge](http://sourceforge.net/projects/octave/files/Octave%20Windows%20binaries/Octave%203.6.1%20for%20Windows%20MinGW%20installer) site. Installation instructions for [Windows](http://www.octave.org/wiki/index.php?title=Octave_for_Windows) and [Cygwin](http://www.octave.org/wiki/index.php?title=Octave_for_Windows#Octave_on_Cygwin) are on the Wiki.
+* If you are having problems with crashes during (re-)plotting, see [this bug report](http://lists.gnu.org/archive/html/octave-bug-tracker/2012-03/msg00110.html) concerning libblas.dll versions. You can probably reproduce this problem by typing the command:
+
+        demo plotyy
+
+If you have the wrong version of libblas.dll installed, this will generally crash Octave. The libblas.dll.ref version is a slow but stable version.
+
+###Version 3.2.4
+
+* The tutorial on the [https://class.coursera.org/ml/wiki/view?page=OctaveInstallation course website] is actually for version 3.2.4.  This version is considered "very old" by the Octave Wiki. This version has a bug in the readline.dll file that causes garbage characters to show up when attempting to use command line history editing. Versions 3.4 and higher fix this.
+* Sometimes problems occur with Octave and gnuPlot if you have oct2mat module loaded. Try "pkg unload oct2mat' when you first run Octave. If that solves the problem you can make it permanent by either adding the line to your config file, or by executing "pkg uninstall oct2mat" command[https://class.coursera.org/ml/forum/thread?thread_id=946].
+
+#Mac OS X
+##Version 3.8.1
+
+If you are not afraid of the Terminal you can use [Homebrew](https://github.com/mxcl/homebrew).  This is by far the easiest method of installing everything that is needed.  In fact, this may be the best option for versions of OSX prior to 10.9 Mavericks, because the [Octave wiki](http://wiki.octave.org/Octave_for_MacOS_X) states that the binary installer is to be used "at your own risk" and is "not guaranteed to work" with anything other than OSX 10.9 Mavericks.
+
+Let's install Homebrew as the easiest solution. Open Terminal and type the installation command below, which is listed on the Homebrew home page also, and then hit enter:
+
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+You will need a set of command line tools that are a subset of XCode.  If you're comfortable with the Terminal, then use the command below to install just what is needed.  Otherwise (or if you have issues), you need to install XCode from App Store, go to the XCode preferences -> Downloads/Components section, and then select Command Line Tools to be installed.
+
+    xcode-select --install
+
+Let's install an up to date gcc compiler:
+
+    brew install gcc
+
+You will also need to install [MacTeX].  This can be done with Homebrew, as seen below using the Homebrew Cask project, or by downloading and installing from the website (http://www.tug.org/mactex/).
+
+    brew install caskroom/cask/brew-cask
+    brew cask install mactex
+
+Now let's install the plotting software, gnuplot, and have it use native Qt graphics (instead of the older X11 setup):
+
+    brew install gnuplot --with-qt
+
+Finally, let's install Octave (note all build issues have been fixed, as of Nov 4th 2014):
+
+    brew tap homebrew/science
+    brew install octave
+
+And tell Octave to use Qt graphics with gnuplot when plotting:
+
+    echo "setenv GNUTERM qt;" >> ~/.octaverc
+
+Now restart your Terminal and launch octave:
+
+    octave
+
+Also, to avoid having to constantly change directories after starting octave, the following script will load octave with the Terminal's current working directory automatically set in octave.  Let's set it up:
+
+    echo '#!/bin/bash' >> /usr/local/bin/oct
+    echo 'octave -p "`pwd`"' >> /usr/local/bin/oct
+    chmod +x /usr/local/bin/oct
+
+And to start octave using this script instead (for example when you are working in a project directory and want to load octave with the directory already set):
+
+    oct
+
+Known Issues:
+Executing GNUPlot gives error message on Octave (v 3.4.0) with X11 installed on OS 10.6.8(Snow leopard).
+For example:  octave-3.4.0:10> hist(w)
+warning: broken pipe -- some output may be lost
+"Reason: Incompatible library version: libfontconfig.1.dylib requires version 14.0.0 or later, but libfreetype.6.dylib provides version 13.0.0"  
+
+Fix:
+Open terminal window and type following 3 lines:
+cd /Applications/Gnuplot.app/Contents/Resources/lib 
+mv libfreetype.6.dylib libfreetype.6.dylib.bak 
+ln -s /usr/X11/lib/libfreetype.6.dylib .
+
+(Source and explanation : http://stackoverflow.com/questions/19932161/incompatible-library-version-libfontconfig-1-dylib-13-instead-of-15)
+
+#Linux
+
+##Ubuntu
+
+###Ubuntu Software Center
+Just search for GNU Octave in Ubuntu Software Center and click install. When the installation finishes, you're ready to use Octave.
+
+###Command Line
+If you prefer using the command line or if you have an Ubuntu based version of Linux that comes without Ubuntu Software Center, you can install Octave by typing this command on a terminal:
+
+    sudo apt-get install octave
+
+To update to a newer version (Octave 4.0.0 does not work), try these commands:
+
+    sudo apt-add-repository ppa:octave/stable
+    sudo apt-get update
+    sudo apt-get upgrade octave
+
+If you get an error "E: Package 'octave3.2' has no installation candidate", then follow these steps
+
+    sudo apt-add-repository -y ppa:mtmiller/octave
+    sudo apt-get update
+    sudo apt-get install octave
+
+This thread may be helpful with your Ubuntu installation:
+http://askubuntu.com/questions/194151/how-do-you-install-the-latest-version-of-gnu-octave/206050#206050
+
+
+## Red Hat / CentOS
+
+###Command Line
+You can install Octave from the yum repository using the following command lines:
+
+    sudo yum install epel-release
+    sudo yum install octave
+
+## ArchLinux
+
+###Command Line
+Octave can be installed from pacman.
+
+    sudo pacman -S octave
+
+#Browser (any OS)
+
+It is possible to use Octave online, without installing it on local computer. Web interface has a code editor and REPL console with inline plots. It gives access to Octave 3.6.4.
+
+URL: http://octave.im/
+
+[[Category:ML]]

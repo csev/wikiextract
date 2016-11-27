@@ -1,0 +1,14 @@
+As an avid gamer and someone who works in the computer games industry I was attracted to data involving computer games and the communities which grow around them. [Steam](http://store.steampowered.com/) is one of the biggest distributors of PC games whose members congregate into groups. The platform also provides a wealth of data through its API about these members, should they choose, its groups and games. 
+
+I plan on making a program which will do the following (subject to tweaking)
+
+*   Allow the user to enter the name or id of a group on steam (for instance the [PCGamer group](http://steamcommunity.com/groups/pcgamer/)
+*   Allow the user to select how many of the members of the group will have their information pulled (perhaps limit it to around 1000 max) 
+*   Pull the information about the members, including which games they have in their library
+*   Produce a visual representation of the most popular games owned
+
+Its a fairly simply program (hopefully). But the wealth of information allowed through the Steam API means there is certainly room for expansion (assuming I manage to achieve the above). 
+
+Comments/Feedback about this idea are welcome.
+
+-Michael

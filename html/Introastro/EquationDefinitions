@@ -1,0 +1,40 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Introastro:EquationDefinitions</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This page will give detailed explanations of the equations covered in the course. Please add/correct wherever needed.</p>
+<p><strong>Luminosity</strong></p>
+<p>$$L&#95;\odot$$ = 4$$\pi$$ $$D^2&#95;\odot$$$$b&#95;\odot = 3.83 \times 10^{26} \ W$$</p>
+<p>$$L&#95;\odot$$ is the value for luminosity. </p>
+<p>$$D&#95;\odot$$ is distance to the Sun.</p>
+<p>$$b&#95;\odot$$ is the Solar Constant (below).</p>
+<p>$$W$$ is Watts.</p>
+<p>In astronomy, luminosity measures the total amount of energy emitted by a star or other astronomical object in SI units of joules per second, which are watts (W above). A watt is one unit of power, and just as a light bulb is measured in watts, so too is the Sun, the latter having a total power output of 3.846*10^26 W. It is this number which constitutes the basic metric used in astronomy and is known as 1 solar luminosity, the symbol for which is $$L&#95;\odot$$. </p>
+<p><strong>Solar Constant</strong></p>
+<p>$$b&#95;\odot = 1361 \ W/m^2$$</p>
+<p>This is the value of the solar constant. The solar constant (the 'b') is equal to a particular number (1361) when we use a particular set of units (W/m^2, where 'W' stands for Watts, a unit of power, and 'm' stands for meters, a unit of length. m^2 means that the unit 'meter' is squared, and thus represents an area of 'square meters'.) Written out fully, we could say "the solar constant is equal to 1361 Watts per square meter".  To get this number you would compute from the above expression with $$L&#95;\odot$$ in Watts as above and $$D&#95;\odot$$ in meters.</p>
+<p>Usefully, if we drop all the $${}&#95;\odot$$ that make it specific, this formula gives us the brightness, i.e. intensity of the light (in W/m^2, say) of an object of luminosity (total radiated power in W) $$L$$ when observed at a distance (in m) $$D$$.</p>
+<p><strong>Zenith Angle</strong></p>
+<p>zenith.angle=Lattitude−declination</p>
+<p>The zenith angle is an angle measured from the -axis in spherical coordinates. It is also known as the polar angle and colatitude.</p>
+<p>In geography, latitude is a geographic coordinate that specifies the north-south position of a point on the Earth's surface. Lines of constant latitude, or parallels, run east–west as circles parallel to the equator. Latitude is an angle (defined below) which ranges from 0° at the Equator to 90° (North or South) at the poles.</p>
+<p>declination (abbreviated dec; symbol δ) is one of the two direction coordinates of a point on the celestial sphere in the equatorial coordinate system, the other being either right ascension or hour angle. Declination's angular distance is measured north or south of the celestial equator, along the hour circle passing through the point in question.</p>
+<p>For more: <a rel="nofollow" class="external free" href="http://geography101blog.wordpress.com/2006/07/10/zenith-and-sun-angle-calculations/">http://geography101blog.wordpress.com/2006/07/10/zenith-and-sun-angle-calculations/</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Introastro:EquationDefinitions&amp;oldid=5698">https://share.coursera.org/wiki/index.php?title=Introastro:EquationDefinitions&amp;oldid=5698</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

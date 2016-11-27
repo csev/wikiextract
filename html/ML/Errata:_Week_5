@@ -1,0 +1,87 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Errata: Week 5</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Errata_in_video_.22Cost_Function.22"><span class="tocnumber">1</span> <span class="toctext">Errata in video "Cost Function"</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_video_.22Backpropagation_Algorithm.22"><span class="tocnumber">2</span> <span class="toctext">Errata in video "Backpropagation Algorithm"</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_video_.22Backpropagation_Intuition.22"><span class="tocnumber">3</span> <span class="toctext">Errata in video "Backpropagation Intuition"</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_video_.22Implementation_Note:_Unrolling_Parameters.22"><span class="tocnumber">4</span> <span class="toctext">Errata in video "Implementation Note: Unrolling Parameters"</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_video_.22Gradient_Checking.22"><span class="tocnumber">5</span> <span class="toctext">Errata in video "Gradient Checking"</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_video_.22Random_Initialization.22"><span class="tocnumber">6</span> <span class="toctext">Errata in video "Random Initialization"</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_video_.22Putting_It_Together.22"><span class="tocnumber">7</span> <span class="toctext">Errata in video "Putting It Together"</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_the_lecture_slides_.28Lecture9.pdf.29"><span class="tocnumber">8</span> <span class="toctext">Errata in the lecture slides (Lecture9.pdf)</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_ex4.pdf"><span class="tocnumber">9</span> <span class="toctext">Errata in ex4.pdf</span></a></li>
+<li class="toclevel-1"><a href="#Errata_in_the_programming_exercise_scripts"><span class="tocnumber">10</span> <span class="toctext">Errata in the programming exercise scripts</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Errata_in_video_.22Cost_Function.22">Errata in video "Cost Function"</span></h1>
+<h1> <span class="mw-headline" id="Errata_in_video_.22Backpropagation_Algorithm.22">Errata in video "Backpropagation Algorithm"</span></h1>
+<ul>
+<li><p>Note: In this video, the NN diagrams omit the bias units in the input and hidden layers.</p></li>
+<li><p>At time 0:14-1.0, the indices for $$\Theta$$ should be $$\Theta&#95;{ij}^{(l)}$$ for both in the cost function and in the partial derivative.</p></li>
+<li><p>At 1:30, the first step of forward propagation omits adding the bias unit. The bias units are shown for a(2) and a(3), but not for a(1).</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_video_.22Backpropagation_Intuition.22">Errata in video "Backpropagation Intuition"</span></h1>
+<ul>
+<li>At time 4:39, the last term for the calculation for $$z^3&#95;1$$ (three-color handwritten formula) should be $$a^2&#95;2$$ instead of $$a^2&#95;1$$.</li>
+<li>At time 6:08 and after, the equation for cost(i) is incorrect. The first term is missing parentheses for the log() function, and the second term should be $$(1-y^{(i)})\log(1-h{&#95;\theta}{(x^{(i)}}))$$</li>
+<li>At time 7:10, the statement is given $$\delta&#95;j^{(l)} = \frac{\partial}{\partial z&#95;j^{(l)}} \text{cost}(t)$$
+This statement is not strictly correct, and is provided as an intuition for how the backpropagation process works. This video does not attempt to provide mathematical proofs.</li>
+<li>At time 8:50, Prof Ng writes on the slide that $$\delta^{(4)} = y - a^{(4)}$$. This is incorrect, it should be $$\delta^{(4)} = a^{(4)} - y$$</li>
+<li>At time 9:40, the descriptions of the $$\delta&#95;3$$ and $$\delta&#95;2$$ values are not correct. Again, this video provides intuitions, and is not intended to be used for either proofs or implementation of your NN. See the video "Backpropagation Algorithm" for the correct implementation.</li>
+<li>At time 11:09, Professor Ng correctly writes $$\Theta$$ but mistakenly says delta.</li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_video_.22Implementation_Note:_Unrolling_Parameters.22">Errata in video "Implementation Note: Unrolling Parameters"</span></h1>
+<ul>
+<li>Starting at 2:03, the image in the upper right corner of the slide is incorrect - it is missing a one of the hidden layers. The text of this lesson discusses a NN with two hidden layers.</li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_video_.22Gradient_Checking.22">Errata in video "Gradient Checking"</span></h1>
+<h1> <span class="mw-headline" id="Errata_in_video_.22Random_Initialization.22">Errata in video "Random Initialization"</span></h1>
+<ul>
+<li>At 1:00 Prof Ng provides the example of $$ \Theta&#95;{ij} = 0 $$ but his mathematical reasoning assumes $$ \Theta&#95;{ij} = n \neq 0 $$. Otherwise he would use that $$a^{(2)}&#95;{i} = 0.5$$, since the logistic function outputs 0.5 at input 0.</li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_video_.22Putting_It_Together.22">Errata in video "Putting It Together"</span></h1>
+<ul>
+<li>In minute 11 while Prof Ng is explaining gradient descent, the vertical axis on the graph of the cost function has a range (-3,+3) but the cost function is positive by definition</li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_the_lecture_slides_.28Lecture9.pdf.29">Errata in the lecture slides (Lecture9.pdf)</span></h1>
+<ul>
+<li><p>On page 5: The final term in the expression for $$J(\theta)$$ has a subscript i missing i.e. $$\theta&#95;{j}^{(l)}$$ becomes $$\theta&#95;{ij}^{(l)}$$, and i,j index allows every element in array l to contribute to the matrix norm. This matches the final equation on page 3.</p></li>
+<li><p>On page 6: The first line of forward propagation omits adding the bias units.</p></li>
+<li><p>On page 8: The equation for $$D$$ when $$j\neq0$$ should include $$\dfrac{\lambda}{m}\Theta$$.</p></li>
+<li><p>On page 8: Name collision! The loop/training example index "i" is overloaded with the node index for the next layer.</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_ex4.pdf">Errata in ex4.pdf</span></h1>
+<ul>
+<li><p>On page 3: Below Figure 1 text says "...5000 training examples in ex3data1.mat". The text should say "...in ex4data1.mat".</p></li>
+<li><p>On page 9: In Step 5, the text says "...by dividing the accumulated gradients by $$\frac{1}{m}$$:". The text should say "... by multiplying...".</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Errata_in_the_programming_exercise_scripts">Errata in the programming exercise scripts</span></h1>
+<ul>
+<li><p>In ex4.m at line 114 and 115, the vector of test values for sigmoidGradient() should start with '-1', not '1'.</p></li>
+<li><p>In ex4.m at line 168, the fprintf() statement is hard-coded to output "lambda = 10", even though the variable lambda is set to 3.</p></li>
+<li><p>checkNNGradients.m: Line 41 should read "'(<b>Right</b>-Your Numerical Gradient, <b>Left</b>-Analytical Gradient)\n\n']);"</p></li>
+<li><p>randInitializeWeights&#160;: line 19 "Note: The first row of W corresponds to the parameters for the bias units" it is column not row.
+also it's bias unit.</p></li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_5&amp;oldid=34186">https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_5&amp;oldid=34186</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Errata" title="Category:ML:Errata">ML:Errata</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

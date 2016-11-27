@@ -1,0 +1,15 @@
+[[Category:Computer Networks]]
+Many types of networks experience congestion. One that that many are familiar with is rush hour traffic.
+
+Highways in [American] metropolitan areas become congested during rush hours at the beginning and ending of the business day. Too many drivers are trying to use the highway at the same time. Researches have found that the highways can accommodate a certain amount of traffic without congestion and then there appears to be a tipping point where traffic slows almost to a halt. This will often occur at the sight of an acciden or a disabled car on the side of the road, but it can happen just as easily by someone tapping their breaks, and this starts a chain reaction through the cars behind leading to traffic jams that may take hours to ease. Modelers have found that flowing water exhibits similar behavior as its temperatures drop to freezing. Water will flow until the freezing breaking point where it converts to ice and locks up.
+
+Addressing congestion control on automobile highways is just as important as addressing it on internet highways.
+
+One technique measures the number of cars on the highway, and entrance ramps have drop down gates, as one would find in a parking garage. The gates only allow cars onto the highway during rush hours when there is sufficient capacity. This keeps traffic flowing smoothly by limiting the number of vehicles permitted at any given time. Cars may have to wait a minute or two before gaining access to the highway, but it's a small price to pay for free flowing traffic later. This technique is very similar to AIMD. Only allow traffic on the network when there is capacity to support it.
+
+Some highways have HOV lanes, which tend to occur in two variations:
+   <LI>Only cars with more than one passenger may use these lines. This encourages carpooling, which reduces the number of cars in general.
+   <LI>Drivers can pay a premium to ride in HOV lanes.
+
+
+The internet doesn't have a carpool equivalent, but the premium price is similar to "gold" service on the internet managed by [http://en.wikipedia.org/wiki/Token_bucket token buckets] and <a href="http://en.wikipedia.org/wiki/Weighted_fair_queuing">WFQs</a>].

@@ -1,0 +1,182 @@
+[[Category:Android]]
+[[Category:Android Apps]]
+[[Category:Computer Science]]
+[[Category:Coursera]]
+# Creative, Serious and Playful Science of Android Apps
+by [https://www.coursera.org/instructor/lawrenceangrave Lawrence Angrave]
+
+[https://class.coursera.org/androidapps101-001 Course Home Page]
+
+##Subtitles
+You can find translations of the subtitles [here](https://share.coursera.org/wiki/index.php/Android_Apps:Subtitles).
+
+#Introduction
+Setting up a programming environment for Android is complex for the novice. Also the basic initial tricks for the programmer are a steep pathway.
+
+Knowledge (and links) from the forum could end up correctly ordered here.
+
+#The course
+##Subtitles
+You can find translations of the subtitles [here](https://share.coursera.org/wiki/index.php/Android_Apps:Subtitles).
+##Other information
+
+#IDEs
+IDE stands for Integrated Development Environment. 
+
+You will need at least three major components:
+
+1. Java - JDK 7 or JDK 8 (NOT JRE or openJDK)
+2. Eclipse
+3. Android SDK
+
+NOTE:  Eclipse and Android SDK can either be installed separately as described in the steps below, or once a JDK is installed, Eclipse and Android Development Tools can be downloaded together in the form of the Android ADT bundle zip file available here: 
+[Android ADT Bundle download](https://developer.android.com/sdk/index.html?hl=i)
+
+
+##STEP 1:  Java Development Kit
+
+###Installation
+
+
+####Download link
+[Java 7 Development Kit download](http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html)
+
+Please take into account that Android does not support Java 8. Java 6 can be used as well without the need to upgrade to Java 7.
+
+Agree to the license terms
+
+####Operating System specific instructions:
+
+#####Windows procedure and issues
+
+ 1. Uninstall any previous versions of Java installed on your comptuter (Add Remove Programs)
+ 2. Open the link and save the MD5 checksum for the JDK installation file for your version of Windows (x86 for 32-bit or x64 for 64bit)  This number will help you verify your download in the next step completed properly.
+ 3. Select and download the appropriate JDK (not JRE) for your version of Windows (the JDK installation file that goes with the checksum above)
+ 4. Scan your download for viruses (completely optional, especially if the MD5 checksum matched, but a good habit)
+ 5. Check the integrity of  your download using [fciv](http://www.microsoft.com/en-us/download/details.aspx?id=11533) and compare the resulting hash code to the MD5 checksum number you downloaded above.  They should be identical.  If not, you may need to download again.  Personally I like the DownThemAll plugin for Firefox which is both a download manager and a file integrity checker if you give it a checksum to verify. 
+ 6. Install Java SDK using the JDK installation executable file you downloaded above.
+ 7. Set a Path variables for Java Path so Eclipse and Android can find Java more easily [How to set Java Path]http://java.com/en/download/help/path.xml
+ 8. Verify proper version of Java is installed by typing in the terminal window:
+
+    java -version
+ 9.  The screen should print out the current version of Java installed. If not, double check every step and then post a question.   
+ 10.  Move on to next step, download and install Eclipse
+
+#####Mac procedure and issues
+#####Linux procedures and issues (Debian/Ubuntu)
+
+#####Linux procedures and issues (Fedora/Mandriva/SUSE)
+
+
+##STEP 2: Eclipse
+###Installation
+
+NOTE: Eclipse and the Android SDK can be downloaded together in something called Android ADT (Android Developer Tools) which is a bundle including a version of Eclipse that includes the Android SDK.   Eclipse and Android Development Tools can be downloaded together in the form of the Android ADT bundle zip file available here: 
+[Android ADT Bundle download](https://developer.android.com/sdk/index.html?hl=i)  This Bundle method was described in the lecture video and will not be detailed here except to state that it is important to place files near the root of your main drive to avoid path errors. The introductory splash screen has changed from the time the video was made, otherwise the ADT Bundle result should be very similar to the IDE created by installing Eclipse and Android plugin separately.
+
+The following instructions assume you are installing Eclipse and SDK separately.
+
+####Download link
+ [Eclipse download](https://www.eclipse.org/downloads/).  Eclipse is not the easiest IDE to set up, but Eclipse is still the standard development environment for Android, although Android Studio (which is has a similar interface) is gaining traction.  We will be using Eclipse in this class.  Eclipse runs on top of Java and has a plugin for Android development which we will download later in the next section.
+
+####Operating System specific instructions:
+
+#####Windows procedure and issues
+
+Note that these instructions assume you are using Windows 7. Windows 8 wasn't in the supported OSs in the presentation: Some have reported that the Eclipse ADT loads with an error with Windows 8. So I had to use my previous laptop with Windows 7.
+
+ 1. Click the link for the proper version of Eclipse (32 or 64 bit) to correspond with your version of Java.
+ 2. Click the link for the MD5 (or SHA256 or SHA512 if you have a tool to use them) and save it for later use.
+ 3. Download Eclipse
+ 4. Scan your download for viruses (completely optional, especially if the MD5 checksum matched, but a good habit)
+ 5. Check the integrity of  your download using [fciv](http://www.microsoft.com/en-us/download/details.aspx?id=11533) and compare the resulting hash code to the MD5 checksum number you downloaded above.  They should be identical.  If not, you may need to download again.   Personally I like the DownThemAll plugin for Firefox which is both a download manager and a file integrity checker if you give it a checksum to verify. 
+ 6. Strangely, there is no installer for Eclipse.   You simply unzip a large collection of files to a folder.  It is strongly recommended that this be in your root (C:\) drive.   [UCBerkeley setup instructions](https://ist.berkeley.edu/as-ag/tools/howto/install-eclipse-win.html#Install+Eclipse) has some instructions for an older version on  how to configure memory management and these may be helpful to you.
+
+#####Mac procedure and issues
+#####Linux procedures and issues (Debian/Ubuntu)
+1. On the Eclipse download page you should see 2 download options, Linux 32 bit and Linux 64 bit. Choose the one appropriate for your operating system. If you're not sure, [here](http://mylinuxbook.com/5-ways-to-check-if-linux-is-32-bit-or-64-bit/) are a whole lot of different ways to find out whether your OS is 32- or 64-bit (the simplest technique is at the bottom).
+Note: Eclipse will probably also be available in your package manager, but the version in the package manager is usually out of date so the above procedure is reccommended instead.
+2. Before clicking the download button open the MD5 checksum link in a separate tab, you'll need it later.
+3. Once Eclipse has downloaded, open a terminal and navigate to the directory it downloaded to, then verify it by running `md5sum` on the file (the Eclipse checksum page includes the filename so you can copy and paste it into the terminal for this purpose). If the output checksum exactly matches the checksum in your browser, the download was successful. An easy way to check this is to copy the checksum from your terminal, then paste it into "find" in your browser on the checksum page.
+If the checksums don't match, the download was corrupted and you should discard it and download Eclipse again.
+4. Once you've verified the download, extract it to wherever you like. You will end up with a directory containing the eclipse executable, which you can double-click on to launch Eclipse.
+
+#####Linux procedures and issues (Fedora/Mandriva/SUSE)
+####Usage
+
+##STEP 3: Install Android Development Tools & SDK 
+The procedure for this is essentially the same across all operating systems.   Note that the latest versions of the SDK do not allow creation of hardware accelerated Intel Atom images without virtualization support in your computer's BIOS.   There are also issues with compatibility libraries.   Search the forum for details.  
+
+Some useful resources include:
+
+1. [YouTube explanation app compatibility libraries](https://www.youtube.com/watch?v=-Rcrpq11oww)
+2. [Forum thread 1](https://class.coursera.org/androidapps101-002/forum/thread?thread_id=751)
+3. [Forum thread 2](https://class.coursera.org/androidapps101-002/forum/thread?thread_id=1314)
+
+###Installation
+This is the software specific to Android and comes directly from Google.
+
+####Download link
+ [Android SDK](https://developer.android.com/sdk/index.html?hl=i) NOTE: For the non-bundle manual installation described here, be sure to click the link "Get the SDK for an existing IDE", not the Eclipse ADT bundle unless you have not installed Eclipse and want to install using the Bundle as discussed earlier.
+
+####Procedure and issues
+
+ 1. Download the Android SDK 
+ 2. Follow the directions as described [here](https://developer.android.com/sdk/installing/index.html?pkg=tools).
+ 3. You should be able to find an [SDK Manager menu] (https://developer.android.com/sdk/installing/adding-packages.html) item in Eclipse which will allow you to download whatever version(s) of Android for which you wish to develop.   They are large, so choose wisely.   A good choice for an older version is API level 10 (v.2.3.3 Gingerbread) and a newer one might be API level 17 (v.4.2, Jelly Bean) or even API level 19 (v.4.4, KitKat).  The numbering is confusing at first but you'll get used to it. 
+You should also install at least one emulator system image for each API level. Intel x86 Atom is a good choice as it's very fast.
+Trivia question:  What was the code dessert name for API 1 (ANSWER:  it did not have one!  The first named version was API level 3, v 1.5, which was Cupcake).
+
+
+#STEP 4:  Set up The Android Virtual Device Tool (ADT)
+
+##Installation notes
+####The Android Virtual Device (AVD) emulator configuration tool (ADT)
+
+Download and install the ADT.  This is done automatically if you installed the Android ADT bundle, however if you are simply adding Android functionality to an existing or newly installed stand-alone Eclipse IDE, you will need to install the ADT separately.  This is done in Eclipse using the following menu sequence:
+
+Help > Install New Software > Add
+
+Then enter:
+https://dl-ssl.google.com/android/eclipse/
+for the location and an arbitrary name (such as ADT plugin) for the Name.
+
+Once you do this, you should see "Developer Tools" listed in the large box below, and you can tick the small box in front of the package you need.   Click Finish when done and Eclipse should download and install the plug in, after which you will need to restart Eclipse.
+
+After restart, you will have two additional items under the Window menu in Eclipse:   Android SDK Manager & Android Virtual Device manager (AVD).  Click Window > Android SDK Manager and ensure that you have installed the SDK's you need.  You may need to tell the Eclipse plugin where the SDK files are if you have downloaded them separately, if not, go ahead and download them now.  It will take quite a while.
+
+#STEP 5:  Configure an Android Virtual Device (AVD) 
+Next click Window > Android Virtual Device Manager (From here on, the AVD Manager)  The AVD Manager allows you to create simulated phones or tablets and these must be configured individually.  In other words, there is no default device unless you create it.   The procedure for doing so is basically the same on all three platforms (Windows, Mac, and Linux).   
+
+Please keep in mind that each Android Virtual Device requires its own RAM (you choose how much) and this is at the expense of system RAM.   Device screen size also take additional RAM.
+
+###Virtualization
+The AVD can be more sluggish than a real device unless you use hardware acceleration.   For Mac and Windows, this requires an Intel chip and the HAXM accelerator. Installation details below.
+
+####Windows procedure and issues
+1.  Download and install [HAXM accelerator](https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager)
+2.  Your CPU must have virtualization capability, and it must be turned on in the bios (some computers have it turned off by default).  Attempting to install HAXM will give an error message if it is turned off.
+3. Note that HAXM only works with Intel Atom based AVD's
+
+####Mac procedure and issues
+1.  Download and install [HAXM accelerator](https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager)
+2. Note that HAXM only works with Intel Atom based AVD's
+
+####Linux procedures and issues (Debian/Ubuntu)
+
+The HAXM accelerator is not compatible with Linux, but there is an equivalent accelerator available:
+[KVM accelerator](https://software.intel.com/en-us/blogs/2012/03/12/how-to-start-intel-hardware-assisted-virtualization-hypervisor-on-linux-to-speed-up-intel-android-x86-gingerbread-emulator)
+
+####Linux procedures and issues (Fedora/Mandriva/SUSE)
+(If you have expertise with setting up Android emulator hardware acceleration under Fedora family of Linux, please feel free to edit this.)
+
+#Alternative IDE:   Android Studio
+####[Android Studio download](https://developer.android.com/sdk/installing/studio.html) If you don't mind working in Beta (very stable reportedly).  This IDE will not be covered in this course, but is reportedly very similar to Eclipse/Android SDK in function.
+
+#Programming
+
+#Resources
+- [http://android-developers.blogspot.com/ Android Developer Blog]
+- [http://www.vogella.com/articles/Android/article.html Lars Vogel Android Development Tutorial]
+
+#Categories

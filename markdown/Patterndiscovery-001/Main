@@ -1,0 +1,211 @@
+[[Category:Coursera]]
+
+<p style="font:bold 220% Arial, serif;">Pattern Discovery in Data Mining</p>
+
+[**Course Page**](https://www.coursera.org/course/patterndiscovery)
+<br />
+Offered by: [University of Illinois at Urbana-Champaign](https://www.coursera.org/illinois)  
+Instructor: [Jiawei Han](https://www.coursera.org/instructor/jiaweihan)
+
+<br />
+
+<H1>Resources</H1>
+
+<H2> Lecture module 2: Basic Concepts </H2>
+[Set Notation from Open Door](http://www.saburchill.com/math/chapters/0030020.html)
+
+<H2> Lecture module 3: Mining Methods</H2>
+[Structure of a FP-tree, from Wikibooks](http://en.wikibooks.org/wiki/Data_Mining_Algorithms_In_R/Frequent_Pattern_Mining/The_FP-Growth_Algorithm#FP-Tree_structure)
+
+<H2> Lecture module 4: Pattern Evaluation</H2>
+[Video of $$\chi^2$$, chi-squared, by Brian Caffo](https://www.youtube.com/watch?v=2pUPF6bSSaw)
+
+
+<H2> Lecture module 7: Sequential Pattern Mining</H2>
+[Step-by-step example of PrefixSpan algorithm](https://class.coursera.org/patterndiscovery-001/forum/thread?thread_id=1985)
+
+<H2> Lecture module 8: Graph pattern Mining</H2>
+[Graph theory definitions from Wikibooks](http://en.wikibooks.org/wiki/Graph_Theory/Definitions)
+
+<H2> Lecture module 10: Frequent Pattern Mining for Text Data</H2>
+[Intro to topic mining by Megan R. Brett Creative Commons License](http://journalofdigitalhumanities.org/2-1/topic-modeling-a-basic-introduction-by-megan-r-brett/)
+
+[The LDA buffet by Matthew L. Jockers Creative Commons License](http://www.matthewjockers.net/macroanalysisbook/lda/)
+
+[The ToPMine algorithm original paper](http://arxiv.org/pdf/1406.6312v2.pdf)
+
+[The ToPMine algorithm code and datasets](http://web.engr.illinois.edu/~elkishk2/)
+
+<H1> Definitions </H1>
+<H2> Lecture module 2: Basic Concepts </H2>
+Frequent pattern: a pattern (itemset in transaction databases) that occurs as often or more often than a minimum support level.
+
+Support level: symbolized by $$s$$ or $$\sigma$$, the minimum number of occurrences of a pattern for it to be considered frequent.
+
+Absolute support: the number of occurrences of an itemset in a transaction database.
+
+Relative support: the frequency of occurrences of an itemset in a transaction database. It is Number of transactions containing itemset/total number of transactions.
+
+$$k$$-itemset: an itemset that contains k items.
+
+confidence: a measure of the association of one item with another. $$p(A|B) = \frac{p(A\cup B)}{p(B)}$$ The conditional probability that a transaction containing B will also contain A.
+
+Closed pattern: a pattern is closed if the itemset is frequent and there does not exist any superset with the same support. This is a lossless compression of the list of frequent itemsets. 
+
+Max pattern: a pattern is max if the itemset is frequent and there does not exist any superset that is frequent. This is a lossy compression of the list of frequent itemsets, because information about support is lost.
+
+<H2> Lecture module 3: Mining Methods</H2>
+
+Apriori algorithm: Insight is that once a pattern falls below the support threshold, none of its superpatterns can be above the support threshold.
+
+ECLAT algorithm: Converts the data into a vertical format, where items are listed and associated transactions are treated as a set belonging to the item. Then forming the pattern can be done by grouping items that share transaction IDs.
+
+FPgrowth algorithm: Converts a group of patterns into a tree structure.
+
+<H2> Lecture module 4: Pattern Evaluation</H2>
+Many measures exist for characterization of possible correlation between events A and B.
+In pattern evaluation context these are so called "interestingness measures", which are applied for example to itemsets of transactional data. 
+  
+Note: almost there are two equivalent types of definition - in terms of set theory and in terms of the conditional probability.
+One can move from one to another using the following formula $$p(A|B) = \frac{p(A\cup B)}{p(B)}$$ .
+
+<b>Lift measure</b>: <br> 
+$$lift(A,B) \equiv \frac{sup(A\cup B)}{sup(A)*sup(B)} = \frac{p(A|B)}{p(A)}$$
+
+<b>Chi-squared measure</b>: <br> 
+$$\chi^2 \equiv \sum\frac{(observed-expected)^2}{expected},$$ where the summation of observed and expected values is over contingency table.
+
+<b>AllConfidence measure</b>: <br> 
+$$all\_conf(A,B) \equiv \frac{sup(A\cup B)}{max\left[ sup(A),sup(B)\right]} = min[p(A|B),p(B|A)]$$
+
+<b>MaxConfidence measure</b>: <br>
+$$max\_conf(A,B) \equiv max[p(A|B),p(B|A)]$$
+
+<b>Cosine measure</b> (sometimes called "harmonized lift"): <br>
+$$cosine(A,B) \equiv \frac{sup(A\cup B)}{\sqrt{sup(A)*sup(B})} = \sqrt{p(A|B)*p(B|A)}$$
+
+<b>Kulczynski measure</b>: <br>
+$$Kulc(A,B) \equiv \frac{1}{2}*(\frac{p(A\cup B)}{p(A)}+\frac{p(A\cup B)}{p(B)}) = \frac{p(A|B)+p(B|A)}{2}$$
+
+<b>Jaccard measure</b>: <br>
+$$Jaccard(A,B) \equiv \frac{p(A\cup B)}{p(A)+p(B)-p(A\cup B)} = \frac{1}{\frac{p(A|B)+p(B|A)}{p(A|B)*p(B|A)}-1}$$
+
+<H2> Lecture module 5: Mining Diverse Patterns</H2>
+<H3> MultiLevel patterns</H3>
+
+Level: Similar items form a higher level item, such as all types of milk. Lower levels might be specific types of milk (skim, 1%, 2%, whole)
+
+<H3> MultiDimensional patterns</H3>
+
+A dimension is a category along which data is collected. So there may be specific other things the store measures about the shopper in addition to the items in his/her basket.
+
+<H3> Compressed patterns</H3>
+
+$$\delta$$ is a measure of the closeness of two patterns. It is measured by the number of transactions they have in common divided by the total number of transactions belonging to either one of them. 
+
+<H3> Colossal patterns</H3>
+
+In a transaction database that contains a frequent colossal pattern, most frequent small patterns will be subpatterns of the colossal pattern. Therefore you can fuse together small patterns to generate the large pattern. 
+
+<H2> Lecture module 6: Constraint-Based Mining</H2>
+Pattern Space constraint: the pattern has to meet certain constraints, pruning takes place at the pattern level.
+
+Data Space constraint: the transaction has to meet certain constraints, pruning takes place in the database by removing transactions.
+
+Anti-monotonic constraint: A constraint that if violated for a set, will be violated for all supersets. Minimum support is an example of such a constraint. 
+
+Monotonic constraint: A constraint that if satisfied for a set, will be satisfied for all supersets. 
+
+Succinct constraint: A constraint that can be directly enforced by manipulating the data.
+
+Convertible constraint: a constraint that can be converted to either anti-monotonic or monotonic by manipulating the data.
+
+<H2> Lecture module 7: Sequential Pattern Mining</H2>
+
+GSP (Generalized Sequential Patterns): an algorithm for handling sequential patterns that uses the insights of the Apriori algorithm for non-sequential patterns.
+
+SPADE: an algorithm for handling sequential patterns that uses the insights of the ECLAT algorithm for non-sequential patterns.
+
+PrefixSpan: an algorithm for handling sequential patterns that uses the insights of the FPGrowth algorithm for non-sequential patterns. Creates projected databases for restricted searching to grow the pattern (a projected database contains only transactions that have the element projected upon).
+
+Prefix: a frequent element (single or pair of items). You project the database to only keep sequences where the prefix is the first item. Used with PrefixSpan.
+
+Suffix: the sequences in the projected database after the prefix has been removed. Used with PrefixSpan.
+
+Pseudo-Projection: Once the projected databases are small enough to fit into main memory, you can use pointers for converting the sequences to suffixes. This does not require disk access and speeds up the algorithm. This is used with PrefixSpan.
+
+<H2> Lecture module 8: Graph Pattern Mining</H2>
+
+There are two graph mining methods that are related to the Apriori pattern-mining algorithm. AGM grows by adding vertexes and FSG grows by adding edges. Adding edges is more efficient. 
+
+There is a method related to the pattern growth algorithms that is a graph-growing algorithm. gSpan.
+
+SpiderMine is similar to PatternFusion for colossal patterns. The insight is the same, that you will find the subgraphs of frequent colossal graphs much more frequently than you will find independent small patterns.
+
+<H2> Lecture module 9: Pattern-based Classification</H2>
+
+CBA: Classification-Based Associations
+
+CMAR: Classification based on Multiple Association Rules.
+
+overfitting: This occurs when a set of rules performs well on the training data set but poorly on the test data set. This can be caused by a small training set, or noise in the data, or a systematic difference between the training data set and the test data set. This is a situation where pattern discovery compares directly to machine learning. 
+
+<H2> Lecture module 10: Frequent Pattern Mining for Text Data</H2>
+
+corpus (corpora is plural): A curated collection of documents, sometimes pre-processed for text mining.
+
+Latent Dirichlet Allocation (LDA): this is a probability distribution that reflects the assignment of words (unigrams, N-grams) to topics (main subjects of a piece of text). This probability distribution has nice mathematical properties that allow it to be updated with the addition of each N-gram.
+
+N-gram: a number ($$N$$) of words.
+
+collocation: a measure of how often words occur together in excess of their distribution in the document.
+
+bag-of-words: A document is chopped up into its individual words and they are sampled randomly. 
+
+phrase intrusion: A method for testing the accuracy of text mining and topic classification. A phrase from another topic is inserted into the document and the algorithm is supposed to mark it as a different topic. The frequency of correct identification of the intruding phrase is a quality measure for the algorithm.
+
+stop-word: a frequently occurring word that doesn't contain topic information (the, and, but, a).
+
+token: a word after the grammatical markers have been removed (-ing, -ed, -s).
+
+Discriminativeness (Purity): how purely a word is associated with a topic, and doesn't appear in other topics.
+
+<H2> Lecture module 11: Advanced Topics</H2>
+<H3> Data Streams</H3>
+
+Error rate ($$\epsilon$$): A small number (typically a fraction of the relative support minimum) that is controlled to make sure that frequent patterns are detected.
+
+<H3> Spatiotemporal and Trajectory Mining</H3>
+
+Flock: at least $$m$$ objects within a circle of radius $$r$$, and move in the same direction.
+
+Convoy: Use density-based clustering at each timestamp, not rigid circle.
+
+Swarm: May not be together at each timestamp, but still moving in the same direction.
+
+Periodic patterns:
+
+<H3> Software Bug Mining</H3>
+
+Example of finding copy-paste errors in software. 
+
+<H3> Privacy Issues in Pattern Mining</H3>
+
+Three ways to preserve privacy
+
+1) Input privacy (data hiding): obscure the actual inputs, for example by adding a random number to birthdates. 
+
+Data supplier anonymizes the data.
+
+Third party anonymizes the data.
+
+$$k$$-anonymity: Group the information into classes that have at least $$k$$ members. 
+
+$$l$$-diversity: members of the group have $$l$$ different classes.
+
+2) Output privacy (knowledge hiding): Identify sensitive knowledge and don't disclose it.
+
+3) Owner privacy: Hide the source of the data.
+
+<H3> Invisible Pattern Mining</H3>
+Pattern Mining as part of another function.

@@ -1,0 +1,99 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Python notes</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Reference_links">Reference links</span></h1>
+<p>Here is a list of packages that allow programming PGM's in python:</p>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://pythonhosted.org/libpgm/">http://pythonhosted.org/libpgm/</a></li>
+<li><a rel="nofollow" class="external free" href="https://github.com/jsheek/probabilistic-graphical-models">https://github.com/jsheek/probabilistic-graphical-models</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Examples">Examples</span></h1>
+<p>Here is an example of how to use libpgm to calculate the President, Accident, and TrafficJam example from Quiz 1.</p>
+<pre>
+import json
+import os
+import tempfile
+from libpgm.discretebayesiannetwork import DiscreteBayesianNetwork
+from libpgm.nodedata import NodeData
+from libpgm.graphskeleton import GraphSkeleton
+from libpgm.tablecpdfactorization import TableCPDFactorization
+
+my_net = &quot;&quot;&quot;
+{
+  &quot;V&quot;&#160;:  [&quot;President&quot;, &quot;Accident&quot;, &quot;TrafficJam&quot;],
+  &quot;E&quot;&#160;:  [ [&quot;President&quot;, &quot;TrafficJam&quot;],
+           [&quot;Accident&quot;, &quot;TrafficJam&quot;] ],
+  &quot;Vdata&quot;&#160;: {
+    &quot;President&quot;: {
+      &quot;ord&quot;: 0,
+      &quot;numoutcomes&quot;:2,
+      &quot;parents&quot;:null,
+      &quot;children&quot;: [&quot;TrafficJam&quot;],
+      &quot;vals&quot;:[&quot;False&quot;,&quot;True&quot;],
+      &quot;cprob&quot;:[0.99,0.01]
+    },
+    &quot;Accident&quot;: {
+      &quot;ord&quot;: 0,
+      &quot;numoutcomes&quot;:2,
+      &quot;parents&quot;:null,
+      &quot;children&quot;: [&quot;TrafficJam&quot;],
+      &quot;vals&quot;:[&quot;False&quot;,&quot;True&quot;],
+      &quot;cprob&quot;:[0.9,0.1]
+    },
+    &quot;TrafficJam&quot;: {
+      &quot;ord&quot;:1,
+      &quot;numoutcomes&quot;:2,
+      &quot;parents&quot;: [&quot;President&quot;,&quot;Accident&quot;],
+      &quot;vals&quot;:[&quot;False&quot;,&quot;True&quot;],
+      &quot;cprob&quot;&#160;: {
+        &quot;['False', 'False']&quot;: [0.9,0.1],
+        &quot;['False', 'True']&quot;: [0.5,0.5],
+        &quot;['True', 'False']&quot;: [0.4,0.6],
+        &quot;['True', 'True']&quot;: [0.1,0.9]
+      }
+    }
+  }
+}
+&quot;&quot;&quot;
+
+# Can not load from strings, so we must make a temporary file
+net_filename = 'mynet.json'
+open(net_filename,'w').write(my_net)
+nd = NodeData()
+skel = GraphSkeleton()
+nd.load(net_filename)
+skel.load(net_filename)
+
+# load bayesian network
+bn = DiscreteBayesianNetwork(skel, nd)
+
+# Query
+# load factorization
+fn = TableCPDFactorization(bn)
+
+evidence = {'TrafficJam':'True','President':'True'}
+query = {'Accident':1}
+
+# calculate probability distribution
+result = fn.condprobve(query, evidence)
+print result.vals
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Python_notes&amp;oldid=10300">https://share.coursera.org/wiki/index.php?title=PGM:Python_notes&amp;oldid=10300</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

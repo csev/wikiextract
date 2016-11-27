@@ -1,0 +1,47 @@
+#Response and rater bias: excerpts from lecture transcript
+<sup>*by **Chrysanthi Tseloudi***, on **[4.09 Operationalization](https://share.coursera.org/wiki/index.php/Quantitativemethods:Main#4.09_Response_and_rater_bias)**</sup>
+
+
+###Response Bias
+
+When people respond to items, our hope is that their observed scores are determined mostly by their 'true' score on the measured property: The score we would obtain if we
+had a perfectly valid and reliable instrument. Of course no instrument is perfectly valid or reliable. There's always some degree of random and systematic error.
+
+A special type of systematic error occurs when respondents show a systematic bias in their responses to items. These biases are referred to as response sets or response styles. The most common response styles or biases that occur in self-report measurement are acquiescence, social desirability, extreme response styles and bias towards the middle.
+
+>####Acquiescence
+>A tendency to agree with all statements, regardless of their content.
+
+>An easy way to spot this bias is to include some negatively phrased items.
+>####Social Desirability
+>A social desirability bias affects the responses of people who tend to present themselves more favorably or in more socially acceptable ways. A social desirability bias can >occur if a scale measures a property that is considered socially sensitive, or measures a property that is relevant to someone's self-image.
+
+>Although harder to detect, it's still possible by adding 'social desirability' items such as: "I've never stolen anything in my life" or "I've never lied to anyone". The idea is that every one has stolen something or lied at least once in their lives, if only as a child stealing from or lying to their peers. If people strongly agree with these items there's a fair chance that their responses to other questions are biased towards responses that are more socially accepted.
+>####Extreme Response Style
+>It occurs when respondents always choose the most extreme option (strongly disagree or strongly agree).
+
+>>Example:
+>>Some respondents don't want to think about exactly how strongly they agree or disagree with an item, so they'll just choose the extremes. Unlike the acquiescence bias, participants' responses are consistent, just more extreme than their true value.
+
+>It is much harder to detect.
+>####Bias towards the Middle
+>A tendency to choose a less extreme response option (the opposite of the extreme response style).
+
+>For example, some respondents might never use the most extreme response options because they want to seem nuanced.
+
+###Rater Bias
+Biases due to the mere act of responding to a test or questionnaire can also occur when a rater observes and rates behavior of others. There are many rater biases. Some examples are the halo-effect, and the generosity and severity errors.
+
+>####Halo-Effect
+>It occurs when a positive or negative rating on one dimension spills over to other dimensions of behavior that are rated or evaluated.
+
+>A well-known example is that more attractive people are generally rated as more intelligent or better at their job.
+>####Generosity Error/ Leniency Effect
+>The rater is overly positive or kind in their ratings.
+>####Severity Error
+>The rater is overly negative or strict in their ratings.
+
+
+[[Category:Methods and Statistics in Social Sciences: Quantitative Methods]]
+[[Category:Measurement]]
+[[Category:Response and rater bias]]

@@ -1,0 +1,204 @@
+Glue code helpful in the course.  For example,
+* code connecting the solver.py to different languages 
+* file parses for different languages 
+
+## C ##
+
+## C++ ##
+a C++ parser for the knapsack data files.
+
+<pre>
+#include <iostream>
+#include <fstream>
+
+#define MAX_ELEMS    10000
+
+long count;
+long capacity; 
+long values[MAX_ELEMS];
+long weights[MAX_ELEMS];
+
+void read_data( char* file_name )
+{
+    std::ifstream ifs( file_name );
+    
+    ifs >> count >> capacity;
+    
+    for ( long i = 0; i < count; ++i ) {
+        long value;
+        long weight;
+        ifs >> value >> weight;
+        values[i]  = value;
+        weights[i] = weight;
+    }
+}  
+</pre>
+
+
+## Java ##
+
+a Java parser for the knapsack data files.
+
+<pre>
+List<String> lines = new ArrayList<String>();
+
+BufferedReader input =  new BufferedReader(new FileReader(fileName));
+try {
+    String line = null;
+    while (( line = input.readLine()) != null){
+        lines.add(line);
+    }
+}
+finally {
+    input.close();
+}
+
+String[] firstLine = lines.get(0).split("\\s+");
+int items = Integer.parseInt(firstLine[0]);
+int capacity = Integer.parseInt(firstLine[1]);
+
+int[] values = new int[items];
+int[] weights = new int[items];
+
+for(int i=1; i < items+1; i++){
+  String line = lines.get(i);
+  String[] parts = line.split("\\s+");
+
+  values[i-1] = Integer.parseInt(parts[0]);
+  weights[i-1] = Integer.parseInt(parts[1]);
+}
+</pre>
+
+## Matlab/Octave ##
+
+A place for Matlab and Octave suggestions.
+
+1. A suggestion for sending the assignment data to Octave via a mat file:
+
+<pre>
+Python side:
+
+import scipy.io as sci
+import subprocess as sp
+
+def solveIt(inputData):
+  # Modify this code to run your optimization algorithm
+  #
+  # save the data in a mat file
+  sci.savemat('indata.mat', {'indata':inputData})
+  # fire up the Octave process
+  process = sp.Popen(['octave','-q','octave.m'],stdout=sp.PIPE)
+  (stdout,stderr) = process.communicate()
+  # process the result
+  data = list(stdout.strip().split())
+  # store variables in knapsack context
+  value = data[0]
+  taken = data[1:]
+  # prepare the solution in the specified output format
+  outputData = str(value) + ' ' + str(0) + '\n'
+  outputData += ' '.join(map(str, taken))
+  return outputData
+
+In Octave file ("octave.m"):
+
+...
+load indata.mat;
+% prepare your data
+% process
+% output the answer
+printf(" ... \n");
+</pre>
+
+## Scala ##
+a Scala parser for the knapsack data files.
+
+<pre>
+object knapsack extends App {
+
+   val filename = args.head
+   val source = scala.io.Source.fromFile(filename)
+
+   // All lines in the data file as Strings
+   def lines:List[String] = source.mkString.split("\n").toList
+
+   // Input data converted to a List of Lists of Ints (blank lines removed)
+   def ints: List[List[Int]] = lines.map(_.split(" ").toList.filter(_.size>0).map(_.toInt))
+
+   // Input data converted to a List of Tuples (pairs) of Ints (empty lists removed)
+   def pairs: List[(Int, Int)] = ints.filter(_.size>0).map(x => (x.head, x.tail.head))
+
+   val data = pairs
+   val count = data.head._1
+   val capacity = data.head._2
+   val items = data.tail
+
+   def dumpData =
+     for ((weight, value) <- items) println((weight, value))
+
+   def solveIt = ???   // Your implementation goes here
+   
+   solveIt
+}
+</pre>
+
+##Common Lisp##
+a Lisp parser for the input files
+
+<pre>
+(defun solve (problem)                                                               
+  "improve me"                                                                       
+    nil)                                                                             
+                                                                                     
+(defun argv ()                                                                       
+  (or                                                                                
+   #+sbcl sb-ext:*posix-argv*                                                        
+   #+ccl (ccl::command-line-arguments)                                               
+   #+ecl (loop for i from 0 below (si:argc) collect (si:argv i))                     
+   nil))                                                                             
+                                                                                     
+(defun input-file-name ()                                                            
+  (second (argv)))                                                                   
+                                                                                     
+;; work through the infile, building a data list                                     
+(defun get-file-data (infile)                                                        
+  (with-open-file (stream infile)                                                    
+    (loop for line = (read-line stream nil nil)                                      
+          while (and line (with-input-from-string (y line) (read y nil nil)))        
+          collecting (with-input-from-string (in line)                               
+               (loop for x = (read in nil nil)                                       
+              while x collect x)))))                                                 
+                                                                                     
+;; preprocessing here,                                                               
+(defun setup-problem (infile)                                                        
+  (destructuring-bind (head . data) (get-file-data infile)                           
+    (list head data)                                                                 
+                                                                                     
+;; entry into program                                                                
+(defun main ()                                                                       
+  (let ((problem (setup-problem (input-file-name)))                                  
+        (solution (solve problem)))                                                  
+    (format 't "~a ~a~%~{~a~^ ~}~%" 0 0 solution)))                                  
+                                                                                     
+                                                                                     
+                                                                                     
+(defun dump (name)                                                                   
+  "save image as executable 'name',                                                  
+  e.g.                                                                               
+    $ sbcl --load tsp.lisp                                                           
+    ...                                                                              
+    * (dump \"./tsp\")                                                               
+    $ ./tsp data/problem"                                                            
+                                                                                     
+#+sbcl                                                                               
+  (sb-ext:save-lisp-and-die name                                                     
+                :toplevel #'main                                                     
+                :executable 't)                                                      
+#+ccl                                                                                
+  (ccl:save-application name                                                         
+                        :prepend-kernel 't                                           
+                        :toplevel-function #'main)                                   
+                                                                                     
+)                                    
+</pre>
+[[Category:Computer Science]] 
+[[Category:Coursera]]

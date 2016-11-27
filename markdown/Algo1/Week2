@@ -1,0 +1,19 @@
+[[Category:Algorithms]]
+## The Master Method
+
+The [http://en.wikipedia.org/wiki/Master_theorem Master Method] allows one to ascertain the performance of recursive functions through a template. NOTE: Master method only works when the recursive calls each take on an equal amount of work. Therefore, it does not work for QuickSort analysis, since the recursion pair steps in QuickSort may each work on arrays of different sizes.
+
+$$T(n) \le aT(\frac{n}{b}) + O(n^d)$$ then
+
+$$
+\large
+T(n) =
+\begin{cases}
+\Theta(n^d\ log(n)) & \text{if } a = b^d \text{ - Same amount of work at each level.} \\\
+\Theta(n^d) & \text{if } a \lt b^d \text{ - Less work at each level, most work at the root.} \\\
+\Theta(n^{log_b(a)}) & \text{if } a \gt b^d \text{ - More work at each level, most work at the leaves.} \\\
+\end{cases}
+$$
+
+## QuickSort
+[http://en.wikipedia.org/wiki/Quicksort QuickSort] is probably one of the most studied algorithms, if not the most studied. Almost every computer science student studies QuickSort. It's the go-to sorting algorithm on most systems.

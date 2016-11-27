@@ -1,0 +1,286 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:SONAR</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a>&#160;: <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW specifics</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Project_specifics"><span class="tocnumber">1</span> <span class="toctext">Project specifics</span></a></li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">2</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">3</span> <span class="toctext">Editing Audio</span></a></li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">4</span> <span class="toctext">Efficient Editing</span></a></li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">5</span> <span class="toctext">Editing MIDI</span></a></li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">6</span> <span class="toctext">Mixing</span></a></li>
+<li class="toclevel-1"><a href="#Useful_resources"><span class="tocnumber">7</span> <span class="toctext">Useful resources</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Project_specifics">Project specifics</span></h2>
+<p>details of file management
+<ul><li>Project Name
+</li><li>File type
+<ul><li>Cakewalk projects are generally saved with the .cwp extension.<br />
+</li><li>Cakewalk projects can also be saved as Cakewalk Bundles with a .cwb extension.<br />
+<ul><li>Bundles will store all the project data including audio in the file, and are useful for sharing entire projects between Cakewalk users.<br />
+</li><li>Cakewalk Bundles are not editable, if you open them in Sonar, they will be unpacked into Cakewalk projects.
+</li></ul>
+</li><li>Cakewalk projects can also be saved as Templates for creating new projects. They have the .cwt extension.<br />
+</li></ul>
+</li><li>Bit depth
+<ul><li>Bit depth can be set by clicking on <b>Edit, Preferences, Driver Settings</b>.
+</li></ul>
+</li><li>Sampling rate
+<ul><li>Sampling rate can be set by clicking on <b>Edit, Preferences, Driver Settings</b>.
+</li><li>If you import clips with a different sampling rate than the project, Sonar will automatically re-sample the clip to the current project.
+</li></ul>
+</li><li>Hardware
+<ul><li>Sonar is strictly PC (sorry Mac users). With the most recent version (X2a), touch screens are also supported.
+</li><li>Sonar X1 requires Windows XP or above.  Sonar X2 officially supports Windows 7 and 8, though many have reported running it under Windows Vista without issue.
+</li></ul>
+</li><li>Buffer size
+<ul><li>Buffer size can be set by clicking on <b>Edit, Preferences, Driver Settings</b>.
+</li></ul>
+</li><li>Project folders specifics
+<ul><li>Default folders for projects, templates, etc., can be changed by clicking <b>Edit, Preferences, Folder locations</b>.
+</li><li>If you change nothing in the settings, projects will be stored in <i>C:\Cakewalk Projects\Your Project Name\</i>
+</li><li>If you leave the "<b>Store project audio in its own folder</b>" checked when creating a project (recommended!) all audio data will be stored in an Audio sub directory under your project directory.  If you uncheck the "<b>Store project audio in its own folder</b>", all audio data will be stored in <i>C:\Cakewalk Projects\Audio</i> (unless you specify a different global audio directory in <b>Edit, Preferences, Folder locations</b>).  </p>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Recording">Recording</span></h2>
+<p>details of audio recording
+<ul><li>Metronome(click track)
+<ul><li>Metronome settings can be changed by clicking on the metronome icon, just to the right of the main transport.
+</li></ul>
+</li><li>Count in
+<ul><li>Count in settings can be changed by clicking on the metronome icon, just to the right of the main transport.
+</li></ul>
+</li><li>Audio recording tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h2>
+<p>details of editing audio
+<ul><li>Trimming
+<ul><li>If you mouseover the edge of a waveform display, you can drag the edge of the clip to extend it or trim it.
+</li></ul>
+</li><li>Cutting
+<ul><li>Select any region of an audio clip, right click on the selection and choose <b>Edit|Cut</b>
+</li><li>If you need to split an audio clip, click where you want it split and type 's', or press Alt and click where you want it split.
+<ul><li>(This is for X2; I'm not sure if it works the same in earlier versions.)
+</li></ul>
+</li></ul>
+</li><li>Grid
+</li><li>Change grid resolution
+<ul><li>In the Snap Module you can set the grid resolution to a specific note subdivision (example: 1/16th or Measure) or to a specific number of seconds.<br />
+</li></ul>
+</li><li>modifier key to toggle grid
+<ul><li>There is not a default key mapping to toggle grid, but you can set one in <b>Edit|Preferences|Key Mappings</b>
+<ul><li>In Sonar X2, you can hold down the 'n' key while dragging a clip to temporarily disable the "Snap to Grid" function.
+</li></ul>
+</li></ul>
+</li><li>add fades
+<ul><li>The easiest way to add a fade to an audio track is to click on the little triangle at the top right corner of the clip and drag it to the left. On MIDI tracks, add a volume envelope and add points at the beginning and end of the fade; drag the end point down to the bottom of the clip.
+</li></ul>
+</li><li>modify fades
+<ul><li>Right Click on the edge of a triangle representing a fade you have collected, and select <b>Linear</b>, <b>Slow Curve</b>, or <b>Fast Curve</b> to change the slope of the fade.<br />
+</li></ul>
+</li><li>efficient compiling of multiple takes
+<ul><li>In Sonar X2, you can choose to record to separate tracks or to "take lanes." Either way, just like in Louden's video, you can copy and paste the best takes to a new track, or if using take lanes, copy the best pieces to the main track lane.</p>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h2>
+<p>details of efficient editing
+<ul><li>Zoom
+<ul><li>In X2, move the mouse to the top of the timeline until the magnifier turns into a magnifying glass, then drag down to zoom out, or up to zoom in.
+</li></ul>
+</li><li>Nudge
+<ul><li>Select an audio clip and drag it with the mouse to the desired start point.  You can also drag a clip to a different track using this method.
+</li></ul>
+</li><li>Cycle
+<ul><li>In Sonar, this is Looping.  Select a region on the grid you wish to loop (or if you select an audio clip, that section of the song will be automatically selected) and in the Loop Module, click the "<b>Set Loop Points to Selection</b>" button (<i>keyboard shortcut <b>Shift-L</b></i>).  A big yellow bar with start and end points will appear on the measure display.  You can drag the start and end points to quickly change the select
+</li><li><i>Keyboard Shortcut <b>L</b></i> will toggle the loop on or off.<br />
+</li><li>If the <i>Now Time</i> is before the loop, Sonar will play until it reaches the loop, then repeat the loop endlessly.  If the now time is within the loop, it will play until the end of the loop and then loop endlessly.  If the now time is after the loop, it will immediately jump to the beginning of the loop.
+</li></ul>
+</li><li>Merge
+<ul><li>Clips:  Select the clips on a track you want to merge into one clip.  Right click and choose "<b>Bounce to clip(s)</b>"  This is a destructive edit, the new clip will replace the old clips.
+</li><li>Tracks:  Select the tracks you wish to merge, click the Tracks drop down menu in the Tracks pane and select Bounce to Tracks.<br />
+<ul><li>There are options to bounce selected tracks, the contents of selected busses, the main mix, etc.  You can bounce these to any existing audio track, or by default bounce them to a new track.  If you bounce busses, each buss will be bounced to its own new track.
+<ul><li>If you bounce to an existing track, this is a destructive edit.  The existing track will be overwritten by the bounce.  The original tracks will be untouched if they are not the destination for the bounce.
+</li><li>If you bounce to a new track, this is a non-destructive edit. The original tracks are untouched.<br />
+</li></ul>
+</li><li>With every track bounce or export, it is very important to note that only the selected audio region will be bounced or exported (so if your selection is from measure 5 through measure 8, only those four measures will be exported).  It's a good idea if you want to make sure to capture the entire track to select All (<i>keyboard shortcut <b>ctrl-A</b></i>) to get the start/stop times from 0:00 to the end of the project and then select the individual tracks you wish to bounce.
+</li></ul>
+</li></ul>
+</li><li>Name
+<ul><li>In the track view, double click the name on the track to edit it.  This does not always work in Console view.
+</li></ul>
+</li><li>Color
+</li><li>Markers
+<ul><li>Pressing <b>M</b> will open a marker dialogue at the <i>Now Time</i>.  You can put any text you want in the marker.<br />
+</li><li>Additionally, if you are taking advantage of Sonar's built in pitch shifting of groove clips, you can note chord changes with the marker.<br />
+</li><li>Use View, Markers to see a list of the markers and quickly edit any of them.
+</li></ul>
+</li><li>Change tempo
+<ul><li>For songs with the same tempo from start to finish, click the tempo in the tempo module and type in a new tempo.
+</li><li>For songs that change tempo throughout the song, set the <i>Now Time</i> to where you want the tempo to change.  From Sonar's main menu, select <b>Project|Insert Tempo Change</b> to bring up the Tempo change dialogue.<br />
+<ul><li>Be sure to check the box for <b>Insert a New Tempo</b> or it will change the tempo at the last tempo marker (or globally if there were no tempo markers present).
+</li><li>There is a handy "tap" button here where you can set the tempo by clicking quarter notes.  This is helpful if you're trying to match the tempo of prerecorded material where you do not know the tempo.
+</li></ul>
+</li><li>Alternatively, click View, Tempo to open a tempo editing pane. This allows you to draw in a tempo. To change between freehand and a straight line, etc., press F9 or click the drawing tool in the upper left corner of the screen.
+</li></ul>
+</li><li>Other efficient editing tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h2>
+<p>details of editing midi
+<ul><li>Velocity
+<ul><li>In the piano roll, click on a note and drag up or down to change the velocity. This can be done with one note or many selected at once.
+</li></ul>
+</li><li>Quantization
+</li><li>Control Change data
+</li><li>MIDI monitor(through)
+</li><li>Other MIDI editing tips
+</li><li>Adding software instruments
+<ul><li>In the browser, click the + button to choose from the list of installed DXi/VSTi instruments.
+</li></ul>
+</li><li>Other MIDI tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Mixing">Mixing</span></h2>
+<p>details of mixing
+<ul><li>Types of tracks
+<ul><li>Audio Track - These can contain one or many clips of audio.  Overlapping clips are automatically summed by Sonar in playback but stored as separate files.<br />
+<ul><li>Input:  Any audio interface source (usually a channel from your DI).<br />
+</li><li>Output: Any bus or audio device (Be very careful if your output is set to an audio device instead of a bus!)
+</li></ul>
+</li><li>Midi Track - Contains one or many clips of Midi data.  Can also be used as a pass through to receive/send midi data to external devices.
+<ul><li>Input:  Any external midi instrument (must be enabled in <b>Edit|Preferences|Midi Devices</b>)
+</li><li>Output: Any external midi instrument or internal software synth.  Note that a midi track will <i>never</i> create audio output on its own, only through an external midi instrument or internal software synth.
+</li></ul>
+</li><li>Audio Output Track - This is really just an Audio Track with its input set to receive the output of a software synth.
+<ul><li>Input:  Any synth.
+</li><li>Output: Any bus or audio device
+</li></ul>
+</li><li>Simple Instrument Track - This is a special hybrid track that can be created when inserting a software synth.  Data input to the track is midi, data output is the resulting output of the software synth.<br />
+<ul><li>Convenient if the software synth only outputs to one audio output and you only have one track of midi you will be sending to it.
+</li></ul>
+</li><li>Tracks of all types can be grouped together into folders to make it easier to organize.
+<ul><li>Select the tracks you wish to put in a folder.  Right click on the tracks in track view and select <b>Move To Folder</b>.  You can choose an existing folder or <b>Make New Folder</b>.
+</li><li>Folders can be collapsed in the track view to make room in the window for other tracks and expanded at any time.
+</li><li>Folders will not appear in the Console View
+</li></ul>
+</li></ul>
+</li><li>Adding effects
+<ul><li>Sonar can use most DirectX based effects, and virtually any VST effect.<br />
+<ul><li>If your installation of Sonar is 32 Bit, you must use 32 Bit DirectX and VST effects.  This is a limitation of the operating system.
+</li><li>If your installation of Sonar is 64 Bit, you may use 32 Bit or 64 Bit VST effects, but you may only use 64 Bit DirectX effects.  This is a limitation of the operating system.
+</li></ul>
+</li><li>Sonar cannot use AU or RTAS based effects.
+</li><li>Audio Track or Bus: In the console view, right click in the effects bin and select <b>Audio FX</b>
+</li><li>Midi Track: In the console view, right click in the effects bin and select <b>Midi FX.</b>
+</li><li>A submenu of available plugins will be available to select your effect.
+</li><li>Once your effect is inserted in a track or bus, its dialog box should open allowing you to modify the effect.  You can open the dialog box at any time for an individual track by double clicking on the effect in the effect bin.
+</li><li>To remove an effect, right click the effect in the effect bin and select <b>Delete.</b>
+</li><li>To temporarily disable an effect, click on/off button next to the effect name.
+</li><li>Effects on frozen tracks are temporarily disabled automatically by Sonar.
+</li><li>You can drag an effect from one track/bus effects bin to another.  If you hold down the control key while doing this, the effect will be copied instead of moved, and then both tracks will have the effect.
+</li></ul>
+</li><li>Channel strip layout
+</li><li>Configuring a Submix
+<ul><li>Submixes are accomplished using a bus.<br />
+<ul><li>Create a bus for your submix.  Be sure to name it appropriately.  (i.e. Guitars, Vocals, Drums, Gang, etc)
+</li><li>Set the output to the master bus or to an audio device.
+</li><li>Set the output of the tracks you wish to be in the submix to the new submix bus.
+</li><li>Now you can set a volume for your submix (or effects) without affecting the underlying tracks.
+</li></ul>
+</li></ul>
+</li><li>Configure reverb in a send and return scheme
+<ul><li>Sonar accomplishes the send and return scheme with inline effects that can be plugged into any track or bus. This includes reverb as well as others.
+<ul><li>FX Chains are special inline effects which are actually several inline effects combined in a way to make it easy to control all the effects with just a view controls.
+</li><li>You can also get Prochannel which has some nice inline effects.  Prochannel comes bundled with the Professional versions.
+</li></ul>
+</li><li>Sonar does not have a "return" feature.  Signals sent to a bus cannot be returned to a track or the bus that sent them.  They can, however be sent to any other bus.  A typical configuration would be to use a send for all tracks you want reverb to be on to a reverb bus, and have that wet output sent to the master or submixer bus.
+</li><li>Easy reverb configuration:
+<ul><li>Create a stereo bus.  Set its output to the master bus (or a submixing bus depending on your mix setup).
+</li><li>For each track or bus that you wish to have reverb, in the Console View, click on the + next to <b>Sends</b> in the send box for the track or bus.
+</li><li>From the drop down, select the new Reverb bus.
+</li><li>You can set the volume and panning here separately from the track panning and volume.  If you do so, uncheck the <b>Post</b> button.  If you leave the Post button checked, the send will be the same volume and pan as the track's volume and pan.  (Generally, this is easiest unless you're wanting to do some creative reverb).<br />
+</li><li>Add a reverb plugin to the Reverb bus, and adjust the settings.  Generally, within the reverb plugin you want the output to be 100% effect... This varies from plugin to plugin, but usually looks like Mix, or Wet/Dry.  We want a wet signal (just the reverb effect).  The tracks are already sending a perfectly good dry signal to the mix bus.
+</li><li>Adjust the volume of the reverb bus fader to blend the reverb in to your mix.<br />
+</li></ul>
+</li></ul>
+</li><li>Busses
+<ul><li>There are two types of busses available in Sonar:  Stereo and Surround.
+</li><li>Stereo Bus
+<ul><li>Inputs:  Any output from an audio track or bus.  Any send from an audio track or bus.  It's important to note that you don't set the input of a bus within the bus itself.  It will only have an output selection.  All inputs to a bus are set by setting your output or send on Audio tracks or other busses.
+</li><li>Outputs: Any other bus or any hardware output.
+</li></ul>
+</li><li>To create a stereo bus, right click in the bus section of the console or track view and select <b>Insert Stereo Bus</b>.  Alternatively, from the main menu, select <b>Insert|Stereo Bus</b>
+</li><li>Busses contain no audio or midi data.  Their output is the sum of the audio data sent by other busses in real time.
+</li><li>Using busses as submixers can give you tremendous mixing control.
+</li><li>Applying effects to a single bus with several tracks being sent to it is more efficient than applying individual effects on all the tracks being sent, if all those effects will be identical.
+</li><li>Sonar will not allow recursions, to prevent feedback loops internally.  You cannot send or output from Bus A to Bus B if Bus B sends or outputs to Bus A.  This appears to work with any number of bus configurations... so if you have 10 busses each sending to each other, Sonar will still limit the selections so that the output of no bus could ever reach that bus again.
+</li><li>Sends - Any audio track or bus can have multiple sends in addition to the main "output" of the track.
+<ul><li>In the Send bin of an audio track or bus, click on the + sign next to Send or right click in the send bin and select Add Send.
+</li><li>All sends must go to a bus or audio output.  (You can also send to certain plugins that accept sends, this is mostly used in sidechain compression)
+</li><li>You can have multiple sends.  It is not uncommon to send a drum, for instance, to a Reverb bus and a parallel compression bus.
+</li></ul>
+</li></ul>
+</li><li>Automation recording
+</li><li>Automation editing
+</li><li>Software Synths
+<ul><li>Midi tracks in Sonar produce no audio on their own.  They are merely containers for the midi data.  The real power behind a midi track comes when you couple it with a software synth.
+</li><li>Software synths are added from the Browser View, or from the main menu (<b>Insert|Software Synth</b>)
+</li><li>Generally a dialogue will open once you select the synth you wish to insert.  There are options to create a simple instrument track (see Tracks above), or to create a midi track and 1 or more Audio Output tracks.
+</li><li>Midi Tracks outputs should be set to the desired synth.  In the midi track's channel layout are options for midi channel and patch, though for most modern software synths, the patches are chosen within the synth's own dialog box.
+</li><li>Which synths come with Sonar vary from version to version.
+</li><li>Sonar can use virtually any software synth in DXiVSTi format installed on your system.
+</li></ul>
+</li><li>Track Freezing
+<ul><li>Both Midi and Audio tracks can be frozen to reduce CPU overhead while working on other tracks.<br />
+<ul><li>To Freeze a track, select the track you wish to freeze, right click the track in the Track View and select <b>Freeze|Freeze Track</b>.  Sonar will render the track and its background color will change to white.  Any plugins or other effects will be rendered into the track and the plugins or related synths will be dimmed.  Your underlying audio data will still be preserved, this is a non-destructive edit.
+</li><li>To Unfreeze (thaw) a track, select the track you wish to unfreeze, right click the track in Track View and select <b>Freeze|Unfreeze Track</b>.  The track will be restored to its original state.<br />
+</li><li>Quick Tip:  You can copy a clip from a frozen track and paste it in a new track.<br />
+</li><li>Changes made to underlying midi data or plugins will not be heard while a track is frozen.  When you thaw the track, any changes will be heard.
+</li><li>Freezing a track does not affect console controls such as volume, pan, sends, or track output.  Most automation is also ignored by track freezing, except for clip fades.
+</li><li>You cannot freeze a Bus.</p>
+</li></ul>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Useful_resources">Useful resources</span></h2>
+<p>additional resources
+<ul><li>Website
+<ul><li>Cakewalk has online tutorials: <a rel="nofollow" class="external free" href="http://www.cakewalk.com/CakeTV">http://www.cakewalk.com/CakeTV</a>
+</li></ul>
+</li><li>Manual
+<ul><li>PDF downloads for Sonar X1: <a rel="nofollow" class="external free" href="http://www.cakewalk.com/Support/kb/reader.aspx/2007013228">http://www.cakewalk.com/Support/kb/reader.aspx/2007013228</a>
+</li><li>PDF downloads for Sonar X2: <a rel="nofollow" class="external free" href="http://www.cakewalk.com/Support/kb/reader.aspx/2007013290">http://www.cakewalk.com/Support/kb/reader.aspx/2007013290</a>
+</li></ul>
+</li><li>Forums
+<ul><li>Cakewalk forums have always been very helpful. <a rel="nofollow" class="external free" href="http://forum.cakewalk.com/default.aspx">http://forum.cakewalk.com/default.aspx</a>
+</li></ul>
+</li><li>Links
+<ul><li>Support Knowledgebase for Sonar X1: <a rel="nofollow" class="external free" href="http://www.cakewalk.com/Support/product.aspx/SONAR-X1">http://www.cakewalk.com/Support/product.aspx/SONAR-X1</a>
+</li><li>Support Knowledgebase for Sonar X2: <a rel="nofollow" class="external free" href="http://www.cakewalk.com/Support/product.aspx/SONAR-X2">http://www.cakewalk.com/Support/product.aspx/SONAR-X2</a></p>
+</li></ul>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 24/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:SONAR&amp;oldid=9049">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:SONAR&amp;oldid=9049</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,76 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcript week2 lecture8</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Lecture_2-8_Membrane_Resistance_Rm">Lecture 2-8 Membrane Resistance Rm</span></h1>
+<p><strong>Bioelectricity week 2.8 (slide 34)</strong><br />
+<ul><li> So this is Roger Coke Barr for the Bioelectricity course. Week two segment eight. Thank you for being here. In the first set of lectures for week two, we were talking about energy as it's created across membrane patches. Now in this last set of lectures, we again talk about membrane patches but we'd like this time to talk about in a way more not, not so exciting, but still very necessary topics, membrane resistance and the membrane capacitance. Let's talk first about membrane resistance.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Resistance: Where does the membrane resistance come from? (slide 35)</strong><br />
+<ul><li> Where does the membrane resistance come from? Now this is not so obvious, because membranes are super, super insulators, insofar as they are a lipid bilayer. Lipid bilayers just don't let charged particles go through normally. So where does the membrane resistance come from?<br />
+</li><li> It's high, but it's not extraordinary and where it's coming from? If you think of a segment of membrane, it's coming from the holes in the membrane. And there are quite a few holes and they're scattered all around. And these holes are what give the membrane its resistance.<br />
+</li><li> So basically, the answer is holes. But there's a little bit further answer.<br />
+</li><li> These holes are not just ordinary holes. These are these channels that we were talking about before. Potassium channels, sodium channels, leakage channels, you know there are some leakage channels.<br />
+</li><li> It is these holes that are giving the membrane resistance its value.<br />
+</li><li> So we might take these holes and say actually this one is a potassium channel, and this one is a potassium channel, and this one is a potassium channel, but then this one is a sodium channel, and a sodium channel, and a sodium channel, and a sodium channel, and then we have one other, one other over here. And this one is just a leakage hole that has just happened to have got in there.<br />
+</li><li> So, these holes are holes in the membrane yes, but they're holes that exist because of these fairly big complicated structures that penetrate the membrane and that allow charged particles and other particles to some degree to come through the membrane from one side to another.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Resistance: What is membrane resistance as compared to resistivity? (slide 36)</strong><br />
+<ul><li> So what are people talking about when they talk about membrane resistance as compared to talking about membrane resistivity? Well this is a subject that's annoying, but on the other hand, essential.<br />
+</li><li> Let's again draw a diagram. So the idea here is to say, well to know the membrane resistance of this whole entire sheet, we'd have to know its dimensions because the dimensions will be an important part of the resistance. If it's a bigger sheet, it will require, it will have a lower resistance because there are more places for the current to go through.<br />
+</li><li> So if the resistance, if the sheet has dimensions, and just for discussion let's say it's 10 units this way and 6 units this way, then those dimensions 10 and 6 would become a part of the resistance. So, the resistance is based partly on the dimensions.<br />
+</li><li> Now for the resistivity. The idea of resistivity is to get rid of the dimensions. So you say to yourself, suppose we had some of this membrane and suppose the dimensions of the part we were measuring were just 1 unit in each direction. One and one. So, if we want to do it this with notation we might say R is the resistance of the whole sheet.<br />
+</li><li> On the other hand, RM which we're calling the resistivity, is the resistance for a unit area, as people say.<br />
+</li><li> Unit area means it has unit dimensions on each side. In other words, ohms per centimeter squared, instead of ohms. So, R might be in ohms or might be in ohms per centimeter square.<br />
+</li><li> The reason for resitivity, is to be able to characterize the material, rather than the dimensions, or at least to characterize the material separately from the dimensions. And then the thought is, if you know the resitivity, you know about the material, and then you can adjust the resitivity to find the resistance of a particular situation where the dimensions are important.  </p>
+</li></ul>
+
+<p><strong>Membrane Resistance: Why use resistivity anyway? (slide 37)</strong><br />
+<ul><li> Why use resistivity anyway? Well that's what we just said so as to have a number for the material. This is the material but not dimensions for that material to keep those two things separate.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Resistance: How does one get resistance R from resistivity Rm? (slide 38)</strong><br />
+<ul><li> So let's say we've done that, we know the resistivity Rm. How do we actually get the resistance R? So if we picture this process we would say, well the way we would do that, here's a surface. We know the value of RM, we want to know the value of R.<br />
+</li><li> So we would find R as equal to Rm divided by the area of the surface. I'll write surface area, capital A, lower case s, just to have a symbol for surface area.<br />
+</li><li> Notice that if we start with Rm to get R, we take Rm and divide, divide by the surface area, because the larger the surface area is, the smaller the resistance of the piece as a whole.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Resistance: Is membrane resistance a constant? (slide 39)</strong><br />
+<ul><li> Is the membrane resistance a constant? We, who come from a tradition of electric circuits are accustomed to resistances, things that are called resistances labeled resistances being constants.<br />
+</li><li> Membrane resistance is fairly constant when the tissue is passive. So I would say yes, if it's passive.<br />
+</li><li> It might change its value enormously if the tissue is active, so no, when it's active.<br />
+</li><li> Now, you recall living tissue can be passive or living tissue can be active. So whether you can use resistance as a constant or whether you have to forget about that, and just think of it as another variable depends on the state whether it's a passive state or an active state.   </p>
+</li></ul>
+
+<hr />
+<p><strong>Membrane Resistance (slide 40)</strong><br />
+<ul><li> Someone could say well why do we care then, if it changes around an active tissue? It's only useful for passive tissue and, and all the interesting things happen when it's active. Why do we care?<br />
+</li><li> And the answer is most of the time, the tissue is passive. So, the value of resistance in the passive state is actually the value that the tissue has most of the time.<br />
+</li><li> So, it, it, it turns out to be a very useful number. You just can't use that number all the time.<br />
+</li><li> So we'll conclude this segment with this comments on resistance and I'll see you next time.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 34/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcript_week2_lecture8&amp;oldid=7957">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcript_week2_lecture8&amp;oldid=7957</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

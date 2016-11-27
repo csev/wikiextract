@@ -1,0 +1,32 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Problem Set: Structured CPDs</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Question 1 has two forms&#160;:</p>
+<blockquote>
+  <p>I-maps. Suppose (A⊥B)∈I(P), and <strong>P</strong> is an I-map of <strong>G</strong>. Is it necessarily true that (A⊥B)∈I(G)?</p>
+</blockquote>
+<p>and </p>
+<blockquote>
+  <p>I-maps. Suppose (A⊥B)∈I(P), and <strong>G</strong> is an I-map of <strong>P</strong>. Is it necessarily true that (A⊥B)∈I(G)?</p>
+</blockquote>
+<p>Be careful!</p>
+<p>Also you may want to review the lecture "I-maps and Perfect Maps" to fully understand this one.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Problem_Set:_Structured_CPDs&amp;oldid=301">https://share.coursera.org/wiki/index.php?title=PGM:Problem_Set:_Structured_CPDs&amp;oldid=301</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

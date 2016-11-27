@@ -1,0 +1,971 @@
+[[Category:Android:Subtitles|it]]
+
+###The ContentProvider Class - Part 1 - Italian subtitles
+
+* [[Android-001:Subtitles:Lecture93:it|<< prev]] | [[Android-001:Subtitles:Lecture87:en|en]] [[Android-001:Subtitles:Lecture87:es|es]] [[Android-001:Subtitles:Lecture87:it|it]] [[Android-001:Subtitles:Lecture87:zh-tw|zh-tw]] [[Android-001:Subtitles:Lecture87:pt|pt]] | [[Android-001:Subtitles:Lecture89:it|next >>]]
+
+* [Direct download](https://www.dropbox.com/s/whsaq3sxzrds7gn/8%20-%203%20-%20The%20ContentProvider%20Class%20-%20Part%201%20%2815-24%29.srt)
+
+<pre>
+1
+00:00:09,564 --> 00:00:11,880
+Ciao, sono Adam Porter.
+
+2
+00:00:11,880 --> 00:00:18,030
+E questo è "Programming Mobile
+Applications for Android Handheld Systems".
+
+3
+00:00:19,340 --> 00:00:21,460
+Finora in questo corso abbiamo parlato
+solamente
+
+4
+00:00:21,460 --> 00:00:26,760
+di due delle quattro componenti fondamentali
+di Android.
+
+5
+00:00:26,760 --> 00:00:31,430
+Abbiamo parlato delle Activity e dei
+BroadcastReceiver.
+
+6
+00:00:31,430 --> 00:00:33,980
+Beh, in questa lezione discuteremo di
+
+7
+00:00:33,980 --> 00:00:38,210
+un'altra di queste componenti fondamentali:
+i ContentProvider.
+
+8
+00:00:40,260 --> 00:00:42,710
+In Android i ContentProvider rappresentano
+
+9
+00:00:42,710 --> 00:00:46,870
+"depositi" centralizzati di dati strutturati.
+
+10
+00:00:46,870 --> 00:00:50,450
+Incapsulano diversi set di dati e specificano
+
+11
+00:00:50,450 --> 00:00:54,490
+e impongono permessi necessari per accedere
+a tali dati.
+
+12
+00:00:56,580 --> 00:01:01,090
+La classe ContentProvider assomiglia molto
+ai database,
+
+13
+00:01:01,090 --> 00:01:05,020
+di cui abbiamo parlato nella lezione sulla
+memorizzazione dei dati.
+
+14
+00:01:05,020 --> 00:01:08,950
+I ContentProvider, tuttavia, servono
+soprattutto a permettere
+
+15
+00:01:08,950 --> 00:01:12,380
+la condivisione dei dati tra diverse
+applicazioni.
+
+16
+00:01:13,570 --> 00:01:17,350
+Le applicazioni che vogliono accedere a un
+paricolare ContentProvider,
+
+17
+00:01:17,350 --> 00:01:22,516
+possono farlo usando una classe associata
+chiamata ContentResolver.
+
+18
+00:01:22,516 --> 00:01:29,420
+I ContentResolver presentano un'interfaccia
+stile database, che permette alle applicazioni
+
+19
+00:01:29,420 --> 00:01:32,770
+di leggere e scrivere i dati che sono
+memorizzati
+
+20
+00:01:32,770 --> 00:01:35,910
+in un ContentProvider, e quindi supporta
+
+21
+00:01:35,910 --> 00:01:42,120
+metodi quali query, insert, update, delete e
+altri.
+
+22
+00:01:43,560 --> 00:01:48,540
+I ContentResolver forniscono anche ulteriori
+servizi, come notificare
+
+23
+00:01:48,540 --> 00:01:52,820
+gli osservatori registrati quando cambiano i
+dati in un ContentProvider.
+
+24
+00:01:54,630 --> 00:01:59,220
+Per usare un ContentResolver, la vostra
+applicazione prima otterrà un riferimento
+
+25
+00:01:59,220 --> 00:02:02,850
+al ContentResolver del Context corrente,
+
+26
+00:02:02,850 --> 00:02:07,000
+chiamando il metodo getContentResolver della
+classe Context.
+
+27
+00:02:07,000 --> 00:02:11,230
+E il risultato finale è che, insieme,
+
+28
+00:02:11,230 --> 00:02:14,690
+il ContentProvider e il ContentResolver
+rendono
+
+29
+00:02:14,690 --> 00:02:17,170
+possibile al codice eseguito in un
+
+30
+00:02:17,170 --> 00:02:21,360
+processo l'accesso ai dati gestiti in un
+altro processo.
+
+31
+00:02:23,750 --> 00:02:25,140
+Per fornire alcuni esempi,
+
+32
+00:02:25,140 --> 00:02:29,420
+Android possiede una certa quantità di
+ContentProvider standard.
+
+33
+00:02:29,420 --> 00:02:32,850
+Ad esempio, c'è un ContentProvider che
+memorizza le informazioni
+
+34
+00:02:32,850 --> 00:02:36,660
+del browser, come i segnalibri e la
+cronologia.
+
+35
+00:02:37,800 --> 00:02:42,000
+Ce n'è uno per tenere traccia delle
+telefonate che si fanno.
+
+36
+00:02:42,000 --> 00:02:45,730
+E ce n'è uno che gestisce le informazioni
+sui contatti, un altro
+
+37
+00:02:45,730 --> 00:02:49,340
+per tenere traccia di immagini, canzoni e
+video.
+
+38
+00:02:50,380 --> 00:02:54,380
+E un altro ancora per tener traccia delle
+parole che si digita in varie
+
+39
+00:02:54,380 --> 00:02:56,860
+applicazioni, in modo che il dispositivo
+possa fornire
+
+40
+00:02:56,860 --> 00:03:00,070
+una digitazione predittiva sempre migliore
+nel tempo.
+
+41
+00:03:00,070 --> 00:03:02,190
+E naturalmente ce ne sono molti altri.
+
+42
+00:03:04,770 --> 00:03:07,400
+Logicamente, i dati gestiti da un
+ContentProvider
+
+43
+00:03:07,400 --> 00:03:11,370
+sono rappresentati come una tabella di un
+database.
+
+44
+00:03:11,370 --> 00:03:16,200
+Ad esempio, un ContentProvider per gestire
+una lista di artisti
+
+45
+00:03:16,200 --> 00:03:20,560
+potrebbe avere elementi di dati o colonne
+per ciascun record.
+
+46
+00:03:20,560 --> 00:03:24,730
+Ad esempio un campo "ID" chiamato "_ID", e
+
+47
+00:03:24,730 --> 00:03:28,270
+un campo "nome artista", in questo caso
+chiamato "artist".
+
+48
+00:03:30,370 --> 00:03:33,580
+Le applicazioni identificano i dati che
+vogliono e il
+
+49
+00:03:33,580 --> 00:03:37,370
+ContentProvider che possiede tali dati
+attraverso un URI.
+
+50
+00:03:38,490 --> 00:03:42,890
+Il contenuto specifico di tale URI
+identifica un
+
+51
+00:03:42,890 --> 00:03:48,330
+set di dati specifico che viene gestito
+da uno specifico ContentProvider.
+
+52
+00:03:48,330 --> 00:03:49,420
+Diamo un'occhiata a tale formato.
+
+53
+00:03:51,670 --> 00:03:57,256
+Gli URI Content iniziano con la stringa
+content://.
+
+54
+00:03:58,480 --> 00:04:02,180
+Questo è lo schema dell'URI e indica che
+
+55
+00:04:02,180 --> 00:04:06,600
+l'URI si riferisce a dati che sono gestiti
+da un ContentProvider.
+
+56
+00:04:07,870 --> 00:04:12,740
+Successivamente, l'URI specifica l'authority,
+che essenzialmente dà un nome
+
+57
+00:04:12,740 --> 00:04:17,040
+allo specifico ContentProvider che ha i dati
+desiderati.
+
+58
+00:04:18,150 --> 00:04:21,800
+Dopodiché l'URI può contenere 0 o più
+segmenti
+
+59
+00:04:22,890 --> 00:04:27,100
+che indicano il set di dati specifico
+contenente i dati desiderati.
+
+60
+00:04:28,200 --> 00:04:32,640
+E infine l'URI può avere un ID facoltativo,
+che
+
+61
+00:04:32,640 --> 00:04:37,090
+indica un record specifico all'interno del
+set di dati desiderato.
+
+62
+00:04:39,320 --> 00:04:42,300
+Ad esempio, le applicazioni che volessero
+accedere al
+
+63
+00:04:42,300 --> 00:04:46,870
+ContentProvider dei contatti, potrebbero
+usare il seguente URI.
+
+64
+00:04:48,480 --> 00:04:51,028
+Questo URI specifica uno schema "content".
+
+65
+00:04:51,028 --> 00:04:57,980
+Specifica com.android.contacts come la sua
+authority.
+
+66
+00:04:59,360 --> 00:05:03,650
+Il suo percorso ha la singola stringa
+"contact", che fondamentalmente
+
+67
+00:05:03,650 --> 00:05:08,620
+corrisponde ad una tabella logica
+all'interno del database del ContentProvider.
+
+68
+00:05:10,100 --> 00:05:15,620
+E in questo caso non c'è un campo ID, quindi
+l'URI viene interpretato come riferimento
+
+69
+00:05:15,620 --> 00:05:20,410
+all'intera tabella, non a un singolo record
+all'interno della tabella.
+
+70
+00:05:23,180 --> 00:05:29,240
+Un'applicazione può utilizzare quest'URI con
+un metodo di ContentResolver, come il metodo
+
+71
+00:05:29,240 --> 00:05:32,470
+query, per ottenere alcuni o tutti
+
+72
+00:05:32,470 --> 00:05:36,450
+i record dei contatti gestiti dal
+ContentProvider.
+
+73
+00:05:36,450 --> 00:05:39,090
+Come potete vedere, il metodo query richiede
+vari
+
+74
+00:05:39,090 --> 00:05:42,970
+parametri, tra cui un URI,
+come quello che abbiamo appena visto,
+
+75
+00:05:42,970 --> 00:05:47,980
+un array di stringhe che specifica le
+colonne specifiche
+
+76
+00:05:47,980 --> 00:05:51,880
+all'interno del database che dovrebbero
+essere recuperate dal ContentProvider.
+
+77
+00:05:51,880 --> 00:05:55,550
+E diverse altre stringhe che vengono usate
+per eseguire
+
+78
+00:05:55,550 --> 00:05:59,800
+la query SQL da elaborare da parte del
+ContentProvider.
+
+79
+00:06:01,030 --> 00:06:04,320
+Ora, queste stringhe possono essere usate
+per recuperare sottoinsiemi particolari
+
+80
+00:06:04,320 --> 00:06:09,590
+dei dati, e per specificare un criterio di
+ordinamento per i risultati.
+
+81
+00:06:09,590 --> 00:06:15,150
+Diamo uno sguardo a un'applicazione che
+utilizza questo metodo. La nostra
+
+82
+00:06:15,150 --> 00:06:19,850
+prima applicazione di esempio si chiama
+ContentProviderWithCursorAdapter.
+
+83
+00:06:21,290 --> 00:06:23,480
+Quest'applicazione estrae le informazioni
+
+84
+00:06:23,480 --> 00:06:26,900
+sui contatti dal ContentProvider dei
+contatti.
+
+85
+00:06:27,980 --> 00:06:34,980
+E poi visualizza il nome di ogni contatto
+e la foto, se ce l'ha.
+
+86
+00:06:34,980 --> 00:06:36,880
+Vediamo tale applicazione in azione.
+
+87
+00:06:39,020 --> 00:06:39,840
+Dunque, ecco il mio dispositivo.
+
+88
+00:06:41,060 --> 00:06:45,670
+Ora avvio l'applicazione
+ContentProviderWithCursorAdapter.
+
+89
+00:06:47,100 --> 00:06:50,120
+Come potete vedere, quest'applicazione mostra
+
+90
+00:06:50,120 --> 00:06:54,960
+i nomi e le foto di alcuni dei miei contatti.
+
+91
+00:06:54,960 --> 00:06:57,140
+Diamo un'occhiata al codice sorgente
+di quest'applicazione.
+
+92
+00:06:59,610 --> 00:07:02,990
+Dunque, ecco l'applicazione aperta nell'IDE.
+
+93
+00:07:02,990 --> 00:07:05,110
+Ora apro la MainActivity.
+
+94
+00:07:06,325 --> 00:07:08,700
+Nell'onCreate il codice prima definisce le
+
+95
+00:07:08,700 --> 00:07:13,550
+colonne da richiedere al ContentProvider dei
+contatti.
+
+96
+00:07:14,660 --> 00:07:16,130
+Ora, ovviamente ci sono molti dati
+
+97
+00:07:16,130 --> 00:07:20,230
+differenti associati con ciascun contatto.
+
+98
+00:07:20,230 --> 00:07:23,129
+Ma quest'applicazione si interessa solamente
+dei
+
+99
+00:07:23,129 --> 00:07:26,760
+nomi dei contatti e della loro foto.
+
+100
+00:07:27,920 --> 00:07:33,460
+Poi, il codice ottiene un riferimento al
+ContentResolver del Context.
+
+101
+00:07:33,460 --> 00:07:38,930
+Dopodiché il codice definisce una stringa
+che usa per filtrare i contatti
+
+102
+00:07:38,930 --> 00:07:44,350
+con nomi mancanti o vuoti, o se non sono tra
+i preferiti.
+
+103
+00:07:45,690 --> 00:07:51,290
+Ora, il codice crea una stringa che definirà
+un ordinamento per i dati risultanti,
+
+104
+00:07:51,290 --> 00:07:53,920
+e questo significa che le registrazioni
+saranno
+
+105
+00:07:53,920 --> 00:07:58,300
+ordinate in ordine crescente del loro campo
+_ID.
+
+106
+00:08:01,020 --> 00:08:04,254
+Poi, il codice invia una chiamata al metodo
+query.
+
+107
+00:08:04,254 --> 00:08:09,600
+E i parametri di questa chiamata includono
+l'URI, che è
+
+108
+00:08:09,600 --> 00:08:14,990
+definito nella classe di contratto, chiamata
+Contacts, le colonne
+
+109
+00:08:14,990 --> 00:08:20,370
+da estrarre, la clausola where per filtrare
+specifici contatti,
+
+110
+00:08:22,670 --> 00:08:24,820
+e la stringa che definisce il
+metodo di ordinamento.
+
+111
+00:08:26,640 --> 00:08:29,730
+E questo metodo restituisce un Cursor, che
+permette
+
+112
+00:08:29,730 --> 00:08:33,350
+all'applicazione di iterare sui risultati di
+questa query.
+
+113
+00:08:35,010 --> 00:08:39,380
+E infine il codice crea e imposta un nuovo
+Adapter, che
+
+114
+00:08:39,380 --> 00:08:43,070
+verrà usato dalla ListView per mostrare le
+info dei contatti.
+
+115
+00:08:44,120 --> 00:08:46,740
+In questo caso l'Adapter è un
+
+116
+00:08:46,740 --> 00:08:51,480
+ContactInfoListAdapter, che è definito da
+quest'applicazione.
+
+117
+00:08:51,480 --> 00:08:52,710
+Ora apriamo quella classe.
+
+118
+00:08:56,100 --> 00:08:59,580
+Nel suo costruttore il codice trova e
+memorizza
+
+119
+00:08:59,580 --> 00:09:03,850
+un'immagine di default per i contatti che
+non hanno una foto.
+
+120
+00:09:05,390 --> 00:09:09,320
+Ora, quando la ListView ha bisogno di View
+da mostrare,
+
+121
+00:09:09,320 --> 00:09:12,570
+prima chiamerà il metodo newView per ottenere
+
+122
+00:09:12,570 --> 00:09:15,750
+una nuova View, e poi chiamerà
+
+123
+00:09:15,750 --> 00:09:19,940
+il metodo bindView per aggiungere dati a
+tale View.
+
+124
+00:09:19,940 --> 00:09:22,310
+Diamo un'occhiata a ciascuno di questi due
+metodi, uno per volta.
+
+125
+00:09:25,030 --> 00:09:29,150
+In primo luogo il metodo newView ottiene un
+riferimento al servizio LayoutInflater.
+
+126
+00:09:31,100 --> 00:09:33,400
+Poi chiama il metodo inflate per
+
+127
+00:09:33,400 --> 00:09:37,020
+creare la nuova View in base a una risorsa
+XML.
+
+128
+00:09:38,510 --> 00:09:42,390
+Ora, nel metodo bindView il codice riempie
+tale View.
+
+129
+00:09:43,400 --> 00:09:47,010
+In primo luogo mostra il nome del contatto
+all'interno di una TextView.
+
+130
+00:09:48,480 --> 00:09:52,070
+Poi memorizza un riferimento a un'ImageView
+all'interno di questa
+
+131
+00:09:52,070 --> 00:09:57,610
+View e memorizza la foto di default nella
+variabile photoBitmap.
+
+132
+00:09:59,190 --> 00:10:05,030
+Dopodiché il codice controlla se c'è una
+foto memorizzata per questo contatto.
+
+133
+00:10:05,030 --> 00:10:09,820
+In tal caso, ottiene l'URI associato a tale
+foto e
+
+134
+00:10:09,820 --> 00:10:14,230
+quindi apre un flusso di input per leggere i
+dati della foto in memoria.
+
+135
+00:10:16,010 --> 00:10:18,880
+Poi trasforma i dati in una Bitmap
+
+136
+00:10:18,880 --> 00:10:21,900
+che memorizza nella variabile photoBitmap.
+
+137
+00:10:23,100 --> 00:10:26,160
+E, infine, il codice imposta la photoBitmap
+
+138
+00:10:26,160 --> 00:10:30,540
+come l'immagine bitmap della ImageView che
+abbiamo visto prima.
+
+139
+00:10:33,950 --> 00:10:37,090
+Quando un'applicazione interroga un
+ContentProvider, tale
+
+140
+00:10:37,090 --> 00:10:39,830
+operazione può richiedere del tempo
+per essere completata.
+
+141
+00:10:41,040 --> 00:10:45,020
+E, come abbiamo detto in altri contesti,
+solitamente vogliamo evitare
+
+142
+00:10:45,020 --> 00:10:48,390
+operazioni intensive sul thread principale,
+
+143
+00:10:48,390 --> 00:10:52,010
+perché possono influire negativamente
+sulla reattività dell'applicazione.
+
+144
+00:10:53,320 --> 00:10:54,770
+Per evitare che ciò accada quando
+
+145
+00:10:54,770 --> 00:11:01,350
+usiamo i ContentProvider, Android fornisce
+la classe CursorLoader.
+
+146
+00:11:01,350 --> 00:11:05,060
+Il CursorLoader usa un AsyncTask in modo che
+le query vengano
+
+147
+00:11:05,060 --> 00:11:08,100
+eseguite su un thread in background e non
+sul main thread.
+
+148
+00:11:10,320 --> 00:11:13,260
+Per usare un CursorLoader, l'applicazione
+dovrà innanzitutto
+
+149
+00:11:13,260 --> 00:11:19,650
+creare un oggetto che implementa l'interfaccia
+LoaderCallback di LoaderManager.
+
+150
+00:11:19,650 --> 00:11:23,620
+E poi, in fase di esecuzione, sarà necessario
+creare e inizializzare
+
+151
+00:11:23,620 --> 00:11:25,760
+il CursorLoader con l'aiuto di
+
+152
+00:11:25,760 --> 00:11:28,980
+quell'oggetto che implementa le callback del
+loader.
+
+153
+00:11:30,490 --> 00:11:33,530
+Per fare questo, l'applicazione chiamerà il
+
+154
+00:11:33,530 --> 00:11:38,650
+metodo initLoader di LoaderManager per
+creare e inizializzare un Loader.
+
+155
+00:11:39,740 --> 00:11:44,260
+Questo metodo accetta diversi parametri,
+tra cui un ID,
+
+156
+00:11:44,260 --> 00:11:48,550
+degli argomenti e l'oggetto che implementa
+LoaderCallback.
+
+157
+00:11:50,450 --> 00:11:54,710
+Dopo la chiamata a initLoader, avvengono
+molte altre callback.
+
+158
+00:11:54,710 --> 00:11:59,010
+La prima callback sarà al metodo
+onCreateLoader.
+
+159
+00:11:59,010 --> 00:12:04,270
+In questo metodo creeremo e restituiremo un
+nuovo Loader per l'ID specificato.
+
+160
+00:12:04,270 --> 00:12:07,990
+E quando questo Loader finisce il
+caricamento dei suoi dati,
+
+161
+00:12:07,990 --> 00:12:13,050
+Android chiama il prossimo metodo di
+callback, onLoadFinished.
+
+162
+00:12:14,200 --> 00:12:17,440
+Questo metodo riceve il Loader appena creato
+
+163
+00:12:17,440 --> 00:12:20,470
+e un Cursor contenente i dati rilevanti.
+
+164
+00:12:22,250 --> 00:12:28,310
+Quando un Loader creato in precedenza viene
+resettato, viene chiamato il metodo onLoaderReset.
+
+165
+00:12:28,310 --> 00:12:31,550
+In questo metodo le applicazioni tipicamente
+rimuoveranno ogni
+
+166
+00:12:31,550 --> 00:12:35,150
+riferimento ai precedenti dati del Loader.
+
+167
+00:12:37,360 --> 00:12:43,330
+La nostra prossima applicazione di esempio
+si chiama ContentProviderWithCursorLoader.
+
+168
+00:12:43,330 --> 00:12:47,540
+Quest'applicazione produce lo stesso
+risultato del nostro precedente esempio.
+
+169
+00:12:47,540 --> 00:12:52,930
+Estrae le informazioni sui contatti dal
+ContentProvider dei contatti di Android
+
+170
+00:12:52,930 --> 00:12:58,770
+e poi mostra il nome e la foto di ciascun
+contatto se la foto è disponibile.
+
+171
+00:12:58,770 --> 00:13:02,960
+Tuttavia, quest'applicazione esegue la query
+del ContentProvider
+
+172
+00:13:02,960 --> 00:13:07,300
+in un thread in background utilizzando il
+CursorLoader.
+
+173
+00:13:07,300 --> 00:13:08,910
+Vediamo quest'applicazione in azione.
+
+174
+00:13:11,580 --> 00:13:14,390
+Dunque, ecco il mio dispositivo. Ora avvio
+
+175
+00:13:14,390 --> 00:13:18,150
+l'applicazione
+ContentProviderWithCursorLoader.
+
+176
+00:13:19,900 --> 00:13:24,510
+E, come promesso, vediamo gli stessi dati
+che vedevamo nella precedente applicazione.
+
+177
+00:13:25,640 --> 00:13:27,770
+Diamo un'occhiata al codice sorgente di
+quest'applicazione.
+
+178
+00:13:30,090 --> 00:13:33,320
+Dunque, ecco l'applicazione aperta nell'IDE.
+
+179
+00:13:34,820 --> 00:13:36,828
+Ora apro la MainActivity.
+
+180
+00:13:36,828 --> 00:13:40,860
+E dunque, nell'onCreate, vedete che
+
+181
+00:13:40,860 --> 00:13:46,140
+quest'applicazione crea e imposta un Adapter
+vuoto, poiché non ci sono
+
+182
+00:13:46,140 --> 00:13:50,230
+dati da visualizzare in questo momento. Poi
+il codice
+
+183
+00:13:50,230 --> 00:13:55,610
+ottiene il LoaderManager e quindi chiama il
+metodo initLoader su di esso,
+
+184
+00:13:55,610 --> 00:13:58,500
+passandovi l'ID zero,
+
+185
+00:13:58,500 --> 00:14:01,580
+passandovi null come parametro "arguments"
+
+186
+00:14:01,580 --> 00:14:04,940
+e passando il riferimento this come
+
+187
+00:14:04,940 --> 00:14:08,340
+l'oggetto su cui invocare le callback man
+mano che il Loader avanza.
+
+188
+00:14:10,290 --> 00:14:13,440
+Come abbiamo detto prima, il primo metodo
+callback ad essere chiamato sarà il
+
+189
+00:14:13,440 --> 00:14:20,060
+metodo onCreateLoader e questo codice
+imposta gli stessi filtri che abbiamo visto prima.
+
+190
+00:14:21,260 --> 00:14:24,440
+Non vogliamo contatti con nomi vuoti o
+mancanti
+
+191
+00:14:25,570 --> 00:14:28,610
+e non vogliamo contatti che non sono tra i
+preferiti.
+
+192
+00:14:28,610 --> 00:14:31,607
+Vogliamo anche che questi dati siano
+ordinati in ordine crescente
+
+193
+00:14:31,607 --> 00:14:36,510
+di ID. Poi il codice crea e restituisce un
+
+194
+00:14:36,510 --> 00:14:41,800
+nuovo CursorLoader, passandovi le
+informazioni che abbiamo appena impostato.
+
+195
+00:14:45,060 --> 00:14:46,800
+La query che fornisce i dati di questo
+
+196
+00:14:46,800 --> 00:14:49,520
+Loader sarà eseguita su un thread in
+background.
+
+197
+00:14:51,140 --> 00:14:55,740
+E quando tale query terminerà, verrà
+chiamato il metodo onLoadFinished.
+
+198
+00:14:57,250 --> 00:15:00,480
+Questo metodo prende il Cursor che gli è
+stato passato e
+
+199
+00:15:00,480 --> 00:15:04,460
+lo inserisce nel ListAdapter usato da
+quest'applicazione.
+
+200
+00:15:05,760 --> 00:15:07,610
+E infine, quando il Cursor sta per
+
+201
+00:15:07,610 --> 00:15:11,380
+essere chiuso, viene chiamato il metodo
+onLoaderReset.
+
+202
+00:15:12,640 --> 00:15:15,755
+In questo caso tale metodo semplicemente
+inserisce
+
+203
+00:15:15,755 --> 00:15:19,321
+un Cursor null nel ListAdapter della
+ListView.
+</pre>

@@ -1,0 +1,66 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+#Notes for Week 8: 2.1 How to Classify Goods
+##The two main characteristics for classifying goods are:
+
+* Is the good rival in *consumption*? That is, does the use of a good for a person reduce the ability of another person to use it?
+
+* Is the good *excludable*? That is, can people be prevented from using the good? 
+
+##Continuum of Good Placement:
+* A good can be placed along a continuum ranging from **rivalrous (rival)** to **non-rival**. A **rival (subtractable) good** is a good whose consumption by one consumer *prevents simultaneous consumption by other consumers*. Put differently, a good is considered **non-rival (non-subtractable)** if, for any level of production, the cost of providing it to a marginal (additional) individual is zero. (from: [Wikipedia:Rivalary]).
+
+* A good or service is called **excludable** if it is possible to *prevent* people (consumers) who have *not paid* for it from having *access to it*. By comparison, a good or service is **non-excludable** if *non-paying* consumers *cannot be prevented* from *accessing it*. (from: [Wikipedia:Excludability]).
+
+<table style="background:white; float: none; clear:right; text-align:center;" align="none" cellspacing="0" cellpadding="8" width="80%">
+<tr>
+  <td style="width:30%;"></td>
+  <td style="width:30%;"></td>
+  <td style="width:30%;"></td>
+  <td colspan="2" style="width:35%; border-bottom: solid black 1px;">Does the use of a good for a person reduces the ability of another person to use it?</td>
+  </tr>
+<tr>
+  <td style="width:30%;"></td>
+  <td style="width:30%;"></td>
+  <td style="width:30%;"></td>
+  <td style="width:35%; border-bottom: solid black 1px;">YES</td>
+  <td style="width:35%; border-bottom: solid black 1px;">NO</td>
+</tr>
+<tr>
+  <td style="width:30%;"></td>
+  <td style="width:30%;"></td>
+<td style="width:30%;"></td>
+<td style="width:35%; border-bottom: solid black 1px;"><strong class="selflink"><a href="http://en.wikipedia.org/wiki/Rivalry_(economics)" title="Rivalry (economics)">Rivalrous</a></strong></td>
+<td style="width:35%; border-bottom: solid black 1px;"><span style="border-right: solid black 1px;">Non-rivalrous</span></td>
+</tr>
+<tr>
+  <td rowspan="2" style="border-right: solid black 1px;">Can people be prevented from using the good?</td>
+  <td style="border-right: solid black 1px;">YES</td>
+<td style="border-right: solid black 1px;"><a href="http://en.wikipedia.org/wiki/Excludability" title="Excludability (economics)"><strong class="selflink">Excludable</strong></a></td>
+<td style="border-right: solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%;"><p><b><a href="http://en.wikipedia.org/wiki/Private_good" title="Private good">Private goods</a></b><br />
+  food, clothing, cars, personal electronics, congested toll roads</p>
+  <p><em>Free Markets</em>: <strong>Very good</strong> for allocating these goods</p></td>
+<td style="border-right: solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%;"><p><b><a href="http://en.wikipedia.org/wiki/Club_good" title="Club good">Club goods</a></b><br />
+cinemas, private parks, satellite television, uncongested toll roads</p>
+  <p><em>Free Markets</em>:  <strong>Good enough </strong>for allocating these goods</p></td>
+</tr>
+<tr>
+  <td style="border-right: solid black 1px;">NO</td>
+<td style="border-right: solid black 1px;"><span style="width:35%;">Non-excludable</span></td>
+<td style="border-right: solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%;"><p><b><a href="http://en.wikipedia.org/wiki/Common_good_(economics)" title="Common good (economics)">Common goods</a></b> (<b><a href="http://en.wikipedia.org/wiki/Common-pool_resource" title="Common-pool resource">Common-pool resources</a></b>)<br />
+  fish stocks, timber, coal, congested nontoll roads</p>
+  <p><em>Free Markets:</em> <strong>Bad</strong> for allocating these goods</p></td>
+<td style="border-right: solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%;"><p><b><a href="http://en.wikipedia.org/wiki/Public_good" title="Public good">Public goods</a></b><br />
+  free-to-air television, air, national defense, uncongested nontoll roads</p>
+  <p><em>Free Markets</em>: <strong>Very bad</strong> for allocating these goods</p></td>
+</tr>
+</table>
+
+[Wikipedia:Rivalary]:http://en.wikipedia.org/wiki/Rivalry_(economics)
+[Wikipedia:Excludability]:http://en.wikipedia.org/wiki/Excludability
+
+##This Week's Focus
+- This weeks focus will be on Common and Public goods, as the last 7 weeks have focused primarily on private goods.  
+- We will also touch on club goods like cable TV and internet content.

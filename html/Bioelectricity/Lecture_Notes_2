@@ -1,0 +1,400 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Lecture Notes 2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_2_Energy_into_Voltage"><span class="tocnumber">1</span> <span class="toctext">Week 2 Energy into Voltage</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Membrane_Patch.2C_the_idea_of_it_2-2"><span class="tocnumber">1.1</span> <span class="toctext">Membrane Patch, the idea of it 2-2</span></a></li>
+<li class="toclevel-2"><a href="#Energy_as_Trans-membrane_Voltage_Vm_.282-3.29"><span class="tocnumber">1.2</span> <span class="toctext">Energy as Trans-membrane Voltage Vm (2-3)</span></a></li>
+<li class="toclevel-2"><a href="#Sodium-Potassium_Pumps_.282-4.29"><span class="tocnumber">1.3</span> <span class="toctext">Sodium-Potassium Pumps (2-4)</span></a></li>
+<li class="toclevel-2"><a href="#Ionic_equilibrium_.282-5.29"><span class="tocnumber">1.4</span> <span class="toctext">Ionic equilibrium (2-5)</span></a></li>
+<li class="toclevel-2"><a href="#Energy:_Battery_Lifetime.3F_.282-6.29"><span class="tocnumber">1.5</span> <span class="toctext">Energy: Battery Lifetime? (2-6)</span></a></li>
+<li class="toclevel-2"><a href="#Problem_session_.282-7.29"><span class="tocnumber">1.6</span> <span class="toctext">Problem session (2-7)</span></a></li>
+<li class="toclevel-2"><a href="#Membrane_Resistance_Rm_.282-8.29"><span class="tocnumber">1.7</span> <span class="toctext">Membrane Resistance Rm (2-8)</span></a></li>
+<li class="toclevel-2"><a href="#Membrane_Capacitance_Cm_.282-9.29"><span class="tocnumber">1.8</span> <span class="toctext">Membrane Capacitance Cm (2-9)</span></a></li>
+<li class="toclevel-2"><a href="#Why_is_Cm_so_big.3F_.282-10.29"><span class="tocnumber">1.9</span> <span class="toctext">Why is Cm so big? (2-10)</span></a></li>
+<li class="toclevel-2"><a href="#Problem_Session.2C_R_and_C_.282-11.29"><span class="tocnumber">1.10</span> <span class="toctext">Problem Session, R and C (2-11)</span></a></li>
+<li class="toclevel-2"><a href="#Summary_.282-12.29"><span class="tocnumber">1.11</span> <span class="toctext">Summary (2-12)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_2_Energy_into_Voltage">Week 2 Energy into Voltage</span></h1>
+<p><a href="/wiki/index.php/Bioelectricity:Week_2_transcripts" title="Bioelectricity:Week 2 transcripts"> Edited Transcripts</a><br />
+<a href="/wiki/index.php/Bioelectricity:Main" title="Bioelectricity:Main"> Main Page</a>  </p>
+<p><strong>Learning Objectives</strong> 
+<ul><li> Describe the function of the sodium-potassium pump<br />
+</li><li> State from memory an approximate value for RT/F<br />
+</li><li> Be able to find the equilibrium potential from ionic concentrations and relative permeabilities.<br />
+</li><li> Explain the mechanism by which membranes use salt water to create negative or positive trans-membrane voltages.  </p>
+</li></ul>
+
+<p><strong>Lecture Outline</strong><br />
+1. Introduction to week 2<br />
+2. A Membrane Patch, the idea of it.<br />
+3. Energy as Trans-membrane Voltage Vm<br />
+4. Sodium-Potassium Pumps<br />
+5. Ionic equilibrium<br />
+6. Battery Lifetime<br />
+7. Problem session 1<br />
+8. Membrane Resistance Rm<br />
+9. Membrane Capacitance Cm<br />
+10. Why is Cm so big?<br />
+11. Problem session, R and C<br />
+12. Week 2 summary  </p>
+<hr />
+<h2> <span class="mw-headline" id="Membrane_Patch.2C_the_idea_of_it_2-2">Membrane Patch, the idea of it 2-2</span></h2>
+<p><strong>Membrane Patch, the idea of it (slide 4)</strong><br />
+<ul><li> What is a “patch”?<br />
+</li><li> Answer: A segment of membrane large enough to have all the pumps and channels present in their true proportions.<br />
+</li><li> How big is “a patch”?<br />
+</li><li> Answer: Maybe a rectangle 10 to 100 micrometers on a side, more or less.<br />
+</li><li> This week's discussion of a patch leads in 2 directions<br />
+</li></ul>
+<dl><dd><ul><li> First, a discussion of voltage across the patch (fascinating)<br />
+</li><li> Second, a discussion of patch resistance and capacitance (boring but necessary)  </p>
+</li></ul>
+</dd></dl>
+
+<p><strong>Membrane Patch in a Cell Sketch (slide 5)</strong><br />
+<ul><li> A Shocking Answer to the question: Where is the electrical “action” that drives the cell’s electrical system?<br />
+</li><li> It is in the membrane itself.  </p>
+</li></ul>
+
+<hr />
+<h2> <span class="mw-headline" id="Energy_as_Trans-membrane_Voltage_Vm_.282-3.29">Energy as Trans-membrane Voltage Vm (2-3)</span></h2>
+<p><strong>Vm Across the Membrane Patch (slide 8)</strong><br />
+<ul><li> What is the problem?<br />
+</li><li> Answer: How to get energy in the form of a trans-membrane voltage Vm.<br />
+</li><li> There is no voltage from one side to the other.<br />
+</li><li>  We have to get some voltages across the membrane or we do not have anything to work with to make anything happen electrically.  </p>
+</li></ul>
+
+<p><strong>How does the membrane charge itself up? (slide 9)</strong><br />
+<ul><li> Membranes can charge themselves up. They do it in two steps.<br />
+</li></ul>
+1. First the membrane pumps Potassium and Sodium Ions, both at the same time (potassium in and sodium out). 
+<dl><dd><ul><li> They do this pumping action so that both kinds of ions, potassium and sodium, move across the membrane at the same time.<br />
+</li></ul>
+</dd></dl>
+2. Then the membrane leaks the ions back out, selectively.<br />
+<dl><dd><ul><li> Potassium goes out, all by itself, with hardly any sodium leaking in.<br />
+</li><li> The potassium is pumped to have unequal concentrations, and then it's leaked out in order to create a voltage.  </p>
+</li></ul>
+</dd></dl>
+
+<hr />
+<h2> <span class="mw-headline" id="Sodium-Potassium_Pumps_.282-4.29">Sodium-Potassium Pumps (2-4)</span></h2>
+<p><strong>Sodium-Potassium Pump (slide 12)</strong>  </p>
+<p><a href="/wiki/images/b/b5/Bioelectricity-wk2-ion-concentrations.png" class="image"><img alt="Bioelectricity-wk2-ion-concentrations.png" src="/wiki/images/b/b5/Bioelectricity-wk2-ion-concentrations.png" width="612" height="162" /></a>  </p>
+<ul>
+<li>Shown on the top part are the results of the pumping action in frog muscle for potassium after pumping has reached a steady state.  </li>
+<li>These are just amazingly different values. It's not just a little bit off it's off hugely off not just ten percent but hundreds of percent.  </li>
+<li>How does this happen? The answer is little teeny tiny sodium potassium pumps that are scattered all through the membrane.  </li>
+<li>The goal of the pump is to take the sodium ions from the inside, and to fling them out of the interior into the exterior. Diffusion would bring them back in because there already is a lot of sodium outside. They want to stay inside, but the pump grabs those sodium ions and just flings them out.  </li>
+<li>At the same time it is doing that, the pump is attaching to potassium ions which are outside. If it finds some outside, then it is bringing them around into the interior.  </li>
+<li>The membrane is the wall by which they are separated, and the pump is the police that ensures that remains the case.  </li>
+<li>The result of all this pumping is taking place all the time from the moment of conception until the moment of death. And these pumps, there are billions of them in each of us, are pumping and their job is to keep these concentrations unequal.  </li>
+<li>Because these unequal concentrations are what is going to drive the membrane in such a way that it can have voltages.  </li>
+</ul>
+<hr />
+<h2> <span class="mw-headline" id="Ionic_equilibrium_.282-5.29">Ionic equilibrium (2-5)</span></h2>
+<p><strong>Nernst for Potassium, K+ permeable (slide 15)</strong><br />
+<ul><li> How does the membrane make use of these ionic differences that have been established by the sodium-potassium pumps in order to create a membrane voltage? It does so in the following series of steps.<br />
+</li><li> First, it adjusts itself so that it is permeable to potassium only; in other words, not sodium.<br />
+</li><li> It adjusts itself so that the permeability of potassium is much greater than the permeability of sodium or, in other words, ions of potassium can pass through the membrane relatively easily as compared to ions of sodium.<br />
+</li><li> Not an easy trick to do  </p>
+</li></ul>
+
+<p><strong>Nernst for Potassium, Diffusion (slide 16)</strong><br />
+<ul><li> Membrane permeable to K+ only<br />
+</li><li> Diffusion pushes K+ out<br />
+</li><li> Diffuses because of the random motion at the membrane temperature  </p>
+</li></ul>
+
+<p><strong>Nernst for Potassium, E field (slide 17)</strong><br />
+<ul><li> Membrane permeable to K+ only<br />
+</li><li> Diffusion pushes K out+<br />
+</li><li> Electric Field pushes K+ back in<br />
+</li><li> The positive charge created by K+ moving out creates the electric field pointing back in. 
+</li><li> The result of the potassium ion moving out is that there is excess positive outside, excess negative inside.<br />
+</li><li> An electric field is established, pointing inward, from higher potential to lower potential.<br />
+</li><li> Every time a potassium ion goes out, the electric field gets stronger.<br />
+</li><li> Both processes are occurring at the same time, to the degree that they are not in balance - there is a flux of potassium ions.      </p>
+</li></ul>
+
+<p><strong>Nernst for Potassium, Equilibrium (slide 18)</strong><br />
+<ul><li> Membrane permeable to K+ only (There's way more potassium inside then there is outside.) 
+</li><li> Diffusion pushes K+ out<br />
+</li><li> Electric Field pushes K+ back in<br />
+</li><li> Equilibrium occurs near the Nernst Vm for K+<br />
+</li><li> An equilibrium results when the flow from diffusion equals the flow because of the electric field.<br />
+</li><li> In a one-ion system (a system in which only one ion can move across the membrane), this equilibrium is called the Nernst Vm.  </p>
+</li></ul>
+
+<ul>
+<li>Vm = (RT/F) * ln(Ke/Ki)  </li>
+<li>Vm = 26*ln(20/397) squid  </li>
+<li>It is a dynamic equilibrium, not static equilibrium.  </li>
+<li>It occurs close to the Nernst Vm for K+, but not quite at that Vm, because the pearmeability to K alone is not quite perfect.  </li>
+<li>ln means the natural log, sometimes written just log, or sometimes log.  </li>
+</ul>
+<p><strong>Nernst for Potassium, Vm at equilibrium (slide 19)</strong><br />
+<ul><li> Membrane permeable to K+ only<br />
+</li><li> Diffusion pushes K+ out<br />
+</li><li> Electric Field pushes K+ in<br />
+</li><li> Dynamic equilibrium near the Nernst Vm  </p>
+</li></ul>
+
+<ul>
+<li>Vm at K+ equilibrium about -77mV (squid)  </li>
+<li>Given the special symbol EK.  </li>
+<li>Notably negative, even compared to standard battery.  </li>
+<li>EK is a constant, for fixed concentrations and temperature, but Vm moves around from time to time.  </li>
+<li>When Vm = EK there is Nernst equilibrium for K+  </li>
+<li><p>EK often is written with K subscript.  </p></li>
+<li><p>The membrane takes advantage of the fact that there is a potassium concentation difference.  </p></li>
+<li>The force of diffusion (the process of diffusion) is being used to create an electric field.  </li>
+</ul>
+<p><strong>Nernst for Sodium Ions Na+ (slide 20)</strong><br />
+<ul><li> Same but different than K+<br />
+</li><li> The sodium concentration starts outside instead of inside, but same thing, same equation.<br />
+</li><li> The result is different because the concentration inside and outside is at a different ratio.<br />
+</li><li> Membrane permeable to Na+<br />
+</li><li> No longer permeable to potassium, so that the system is now a sodium-ion system instead of a potassium-ion system.<br />
+</li><li> Diffusion pushes Na+ In<br />
+</li><li> Electric Field pushes Na+ Out<br />
+</li><li> Equilibrium near Nernst Vm for Na+<br />
+</li><li> Vm about +57 mV (note positive, not negative)<br />
+</li><li> Because the Na+ is mostly outside  </p>
+</li></ul>
+
+<p><strong>Nernst for Chlorine Ions Cl- (slide 21)</strong><br />
+<ul><li> Same but different than K+ 
+</li><li> Membrane permeable to Cl-<br />
+</li><li> Equation for equilibrium is slightly different<br />
+</li><li> Vm = (RT/F) ln (Cl<em>i/Cl</em>e)<br />
+</li><li> Vm about -68 mV<br />
+</li><li> Vm at equilibrium is called ECl<br />
+</li><li> Different because Cl- is a negatively charged ion  </p>
+</li></ul>
+
+<p><strong>Multi-ion expression (Goldman’s equation) (slide 22)</strong><br />
+With Im = 0<br />
+<ul><li> Then $$ V&#95;m = \frac{RT}{F} \ln (\frac{P&#95;k [K]&#95;e + P&#95;Na [Na]&#95;e + P&#95;Cl [Cl]&#95;i}{P&#95;k [K]&#95;i + P&#95;Na [Na]&#95;i + P&#95;Cl [Cl]&#95;e}) $$<br />
+</li><li> The P’s are permeability coefficients<br />
+</li><li> What is important is the permeability ratios, more than the permeabilities.  </p>
+</li></ul>
+
+<hr />
+<h2> <span class="mw-headline" id="Energy:_Battery_Lifetime.3F_.282-6.29">Energy: Battery Lifetime? (2-6)</span></h2>
+<p><strong>Energy: Battery Lifetime? (slide 25)</strong><br />
+<ul><li> What is the problem? Batteries we make discharge<br />
+</li><li> Die immediately in salt water<br />
+</li><li> Die in a few days in continuous use<br />
+</li><li> Die in a month to a year with infrequent use<br />
+</li><li> How to get 100 years?  </p>
+</li></ul>
+
+<p><strong>Energy: Battery Lifetime? (slide 26)</strong><br />
+<ul><li> Charges before birth, keeps on going, no matter how old<br />
+</li><li> Imagine billions of spinning Na-K pumps in each of these devices  </p>
+</li></ul>
+
+<hr />
+<h2> <span class="mw-headline" id="Problem_session_.282-7.29">Problem session (2-7)</span></h2>
+<p><strong>Problem session questions (slide 29)</strong><br />
+Using the ionic concentrations for frog muscle, what is the Nernst potential<br />
+(a) for K+ (b) for Na+<br />
+(c) the change in Vm from K+ to Na+ equilibrium?  </p>
+<p><strong>Problem session K+ (slide 30)</strong><br />
+Using the ionic concentrations for frog muscle, what is the Nernst potential<br />
+(a) for K+<br />
+$$E&#95;K = {\Large{\frac{RT}{F} &#42; ln(\frac{K&#95;e}{K&#95;i})}}$$<br />
+<ul><li> Units are not important here, as long as they are the same units.  </p>
+</li></ul>
+
+<p><strong>Problem session Na+ (slide 31)</strong><br />
+Using the ionic concentrations for frog muscle, what is the Nernst potential<br />
+(b) for Na+<br />
+$$E&#95;K = {\Large{\frac{RT}{F} &#42; ln(\frac{Na&#95;e}{Na&#95;i})}}$$  </p>
+<p><strong>Problem session, Vm shift (slide 32)</strong><br />
+Using the ionic concentrations for frog muscle, what is the Nernst potential<br />
+(c) the change in Vm from K+ to Na+ equilibrium?<br />
+Vm shift = ENa – EK<br />
+ENa =<br />
+EK =<br />
+Vm shift =  </p>
+<hr />
+<h2> <span class="mw-headline" id="Membrane_Resistance_Rm_.282-8.29">Membrane Resistance Rm (2-8)</span></h2>
+<p><strong>Membrane Resistance: Where does the membrane resistance come from? (slide 35)</strong><br />
+<ul><li> Membranes are super insulators, insofar as they are a lipid bilayer. Lipid bilayers just don't let charged particles go through normally.<br />
+</li><li> It comes from the holes in the memebrane → Na+/K+ pumps, leakage channels  </p>
+</li></ul>
+
+<p><strong>Membrane Resistance: What is membrane resistance as compared to resistivity? (slide 36)</strong><br />
+<ul><li> Resistance is partly based on the dimensions<br />
+</li><li> Resistivity = the resistance of a unit area<br />
+</li><li> unit area means it has unit dimensions on each side: ohms per cm^2 as opposed to just ohms<br />
+</li><li> The purpose of resistivity is to characterize the material rather than the dimensions, or to characterize the material separately from the dimensions.<br />
+</li><li> If you know the resitivity, you know about the material. And then, you can adjust the resitivity to find the resistance of a particular situation where the dimensions are important.  </p>
+</li></ul>
+
+<p><strong>Membrane Resistance: Why use resistivity anyway? (slide 37)</strong><br />
+<ul><li> To measure the material, but not the dimensions.<br />
+</li><li> To keep the material separate from the dimensions.  </p>
+</li></ul>
+
+<p><strong>Membrane Resistance: How does one get resistance (R) from resistivity (Rm)? (slide 38)</strong><br />
+<ul><li> R = Rm / surface area (Sa)<br />
+</li><li> The larger the surface area is, then the smaller the resistance as a whole.  </p>
+</li></ul>
+
+<p><strong>Membrane Resistance: Is membrane resistance a constant? (slide 39)</strong><br />
+<ul><li> Fairly constant when the tissue is passive.<br />
+</li><li> When the tissue is active, resistance might change its value enormously.<br />
+</li><li> Living tissue can be passive or living tissue can be active.<br />
+</li><li> Whether you can use resistance as a constant or whether you have to forget about that, and just think of it as another variable, depends on the state (whether it is a passive state or an active state).   </p>
+</li></ul>
+
+<p><strong>Membrane Resistance (slide 40)</strong><br />
+<ul><li> Why do we care about membrane resistance, if it changes around in active tissue?<br />
+</li><li> That is, it seems to be useful only for passive tissue, so do we care?<br />
+</li><li> The value of resistance in the passive state is actually the value of the tissue most of the time.<br />
+</li><li> So, it is a useful number, but it cannot be used all the time.  </p>
+</li></ul>
+
+<hr />
+<h2> <span class="mw-headline" id="Membrane_Capacitance_Cm_.282-9.29">Membrane Capacitance Cm (2-9)</span></h2>
+<p><strong>Membrane Capacitance: Why does membrane have capacitance? (slide 43)</strong><br />
+<ul><li> Answer: because 2 conductors are separated by an insulating region<br />
+</li><li> There is capacitance between one point and another when you have 2 conductors separated by an insulating region. So, membranes are certainly an insulating region.  </p>
+</li></ul>
+
+<p><strong>Membrane Capacitance: For membrane, where are the conductors? (slide 44)</strong><br />
+<ul><li> Answer: They are the conducting solutions inside and outside the membrane.  </p>
+</li></ul>
+
+<p><strong>Membrane Capacitance (slide 45)</strong><br />
+Cm = Q/Vm<br />
+Q = Cm V<br />
+dQ/dt = Cm dmV / dt<br />
+Ic = Cm dVm / dt  </p>
+<p>Q: charge<br />
+Ic: membrane current  </p>
+<hr />
+<h2> <span class="mw-headline" id="Why_is_Cm_so_big.3F_.282-10.29">Why is Cm so big? (2-10)</span></h2>
+<p><strong>Why is Cm so big? (slide 48)</strong><br />
+<ul><li> Because membrane is so thin.<br />
+</li><li> In biological membrane, Cm is about 1 microfarad per cm squared.<br />
+</li><li> That is a huge amount.<br />
+</li><li> That means that membrane has 10,000 times the capacitance of 2 flat conductors separated by a piece of paper, for the same surface area.<br />
+</li><li> The difference comes from the thickness of membrane as compared to the thickness of paper.  </p>
+</li></ul>
+
+<p><strong>Membrane’s thickness versus paper’s (slide 49)</strong><br />
+<ul><li> For flat plates, capacitance is C = eps A / d, where A is the area, and d is the separation between the plates.<br />
+</li><li> For membranes, d is the membrane thickness, only 40 angstroms.  </p>
+</li></ul>
+
+<p><strong>Membrane’s thickness versus paper’s (slide 50)</strong><br />
+<ul><li> In comparison, a stack of 1000 sheets of office paper is about 4cm high<br />
+</li><li> That means that the thickness of 1 sheet of office paper can be found as follows:<br />
+</li></ul>
+<dl><dd><ul><li> Thickness 1 sheet paper = 4cm for 1000 sheets / 100<br />
+</li><li> So thickness 1 sheet paper = 4e8 Angstroms / 1000 = 4e5 Angstroms<br />
+</li><li> So thickness 1 sheet paper = 400,000 Angstroms, approximately  </p>
+</li></ul>
+</dd></dl>
+
+<p><strong>So what is the capacitance of conductors separated by paper as compared to separated by membrane? (slide 51)</strong><br />
+<ul><li> Thickness paper / Thickness membrane = 400,000/40 = 10,000<br />
+</li><li> That is, paper is 10,000 times the thickness of membrane.<br />
+</li><li> That means that two flat conductors separated by membrane<br />
+</li><li> Would have 10,000 times the capacitance of two flat conductors separated by a piece of paper, for the same surface area.  </p>
+</li></ul>
+
+<p><strong>Membrane capacitance, conclusion (slide 52)</strong><br />
+<ul><li> Membranes have a lot of capacitance, about 1 micro-Farad per cm-squared.<br />
+</li><li> All electrically active membranes, from whatever organ or system, have about this much capacitance.<br />
+</li><li> You can almost think of it as a constant of nature, not quite like pi or some other mathematical constant, but you can just be sure it is going to come out to be 1 microfarad per cm^2.  </p>
+</li></ul>
+
+<hr />
+<h2> <span class="mw-headline" id="Problem_Session.2C_R_and_C_.282-11.29">Problem Session, R and C (2-11)</span></h2>
+<p><strong>Problem Session, R and C, a) (slide 54)</strong><br />
+<ul><li> Question: A cylindrical fiber 10um in diameter has segments that are 100um long. Cm is 1uF/cm2, and Rm is 1500 Ohms-cm2.<br />
+</li></ul>
+For one segment, what is R and C?  </p>
+<ul>
+<li>Solution
+a) Find the surface area (As) of one segment  </li>
+<li>As = diameter * pi * length  </li>
+<li>convert $$ \mu $$m to cm^2  </li>
+</ul>
+<p><strong>Problem Session, R and C, b) and c) (slide 55)</strong><br />
+<ul><li> find the actual resistance and the capacitance for this segment<br />
+</li><li> Resistance = membrane resistance / As<br />
+</li><li> Capacitance = 1 microfarad per cm^2 * As (cm^2)  </p>
+</li></ul>
+
+<p><strong>Problem Session, R and C, notes (slide 56)</strong><br />
+<ul><li> Notation that does not use super and subscripts, such as cm2, nonetheless means the same thing. It is a form brought on by computer programming.<br />
+</li><li> Note that the units of Rm, membrane resistivity, are Ohm-cm2 and not the same as those for the bulk resistivity, Ohm-cm as used in week 1.<br />
+</li><li> Note that one divides Rm by As to get R, while one multiplies Cm by As to get C.  </p>
+</li></ul>
+
+<hr />
+<h2> <span class="mw-headline" id="Summary_.282-12.29">Summary (2-12)</span></h2>
+<p><strong>Week 2 Summary-1 (slide 59)</strong><br />
+<ul><li> A membrane patch is small, but large enough to include pumps and channels in proportion to their presence in the whole membrane.<br />
+</li><li> If circular, it might be 25-50 microns in radius.  </p>
+</li></ul>
+
+<p><strong>Week 2 Summary-2 (slide 60)</strong><br />
+<ul><li> The Na-K pump moves Na+ ions outward across a patch membrane, and K+ ions inward, so that large concentration differences are established.  </p>
+</li></ul>
+
+<p><strong>Week 2 Summary-3 (slide 61)</strong><br />
+<ul><li> Concentration differences, result in electric fields across the membrane.<br />
+</li><li> Consequently, equilibrium voltages for K+ and for Na+ ions are well below and above 0 volts.  </p>
+</li></ul>
+
+<p><strong>Week 2 Summary-4 (slide 62)</strong><br />
+<ul><li> There is a trans-membrane voltage when the membrane is selectively permeable to one or the other of these ions.<br />
+</li><li> The transmembrane voltage is not a constant. It can be negative, it can be positive, and it can be in between, depending on whether the membrane is permeable to potassium or permeable to sodium.  </p>
+</li></ul>
+
+<p><strong>Week 2 Summary-5 (slide 63)</strong><br />
+<ul><li> These steps, taken as a whole, are a mechanism for using metabolic energy to run the membrane pumps.<br />
+</li><li> The concentration differences that result are used to create transmembrane voltages by selectively opening channels to either K+ or Na+.<br />
+</li><li> The trans-membrane voltages created in this way then drive currents across the membrane, as well as through and around the tissue structure.  </p>
+</li></ul>
+
+<p><strong>Week 2 Summary-6 (slide 64)</strong><br />
+<ul><li> Voltages created in this way mean that the membrane can “charge itself up."<br />
+</li><li> The mechanism is distributed and reliable, and lasts a lifetime.  </p>
+</li></ul>
+
+<hr />
+<p><a href="/wiki/index.php/Bioelectricity:Main" title="Bioelectricity:Main"> Main Page</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 180/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes_2&amp;oldid=7981">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes_2&amp;oldid=7981</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

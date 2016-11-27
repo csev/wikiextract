@@ -1,0 +1,290 @@
+[[Bioelectricity:Week 1 transcripts| Edited Transcripts]]  
+# Week 1 Foundations: including electricity in solutions  
+## Intro to Week 1 (1-1)  
+[[Bioelectricity:Transcripts Week1 Lecture1 | Edited Transcript 1-1]]  
+* lay the foundation for all eight weeks of the course  
+* talk a little bit about the history, so you know where we're starting from  
+* then, talk a little bit about some specialized terminology that is used in the field  
+  
+## Make Plans, electricity in solution (1-2)     
+[[Bioelectricity:Transcripts Week1 Lecture2 | Edited Transcript 1-2]]  
+### Week 1-­2 About Bioelectricity ( slide 2)  
+**What is Bioelectricity?**  
+* From an electrical point of view, by far the most sophisticated, complicated, and automatic, electrical devices, in this picture are the two people.  
+* Why do we care about bioelectricity? We care about bioelectricity because it is us.
+  
+### About Bioelectricity (slide 3)  
+* Usually refers to electricity flowing through living tissues
+* Includes electrophysiology, electricity that enters into living things (e.g. lightening)  
+* Why is this picture our course icon? It is because that picture shows eyes, a nose, ears and a mouth. And these are extremely sophisticated bioelectric sensors.
+  
+### When did the study of Bioelectricity begin? (slide 4)  
+* Bioelectricity was one of the subjects at the very beginning of the study of electricity in the 1700s.  
+* It is said to be the case that bioelectricity infused a competitive and exciting spirit into the study of electricity that was not biological because of a conflict between Galvani, who was a surgeon and who studied electricity in animals, and Volta, who was not medical and who instead studied electricity outside of the living context.  
+  
+### What was the Galvani-Volta conflict about? (5)  
+* Galvani thought that electricity and living tissue was a whole separate physical and physiological phenomenon.  
+* Volta thought it is all one thing and that these are different manifestations of one larger set of electrical events.  
+* We now recognize that Volta was the person who was right in the sense of electricity being unified.  
+* On the other hand, there are things that are really different about electricity in a biological context.  
+  
+### How is electricity in living tissue different from the “ordinary” electricity of batteries, wires, radios and computers? (6)  
+* If you throw a standard battery in the ocean, and leave it there for 3 days, the battery is utterly destroyed and of course its voltage has been reduced to zero.  
+  
+### What happens when you throw a fish in the ocean? (7)  
+* When you throw a fish in the ocean, the fish is very happy.  
+* The fish is highly electrical.  
+* It maintains voltages all the time, and yet it does not become corroded. It just continues to function.  
+* Biological system, exist in a solution that is similar to salt water.  
+* Galvani was in that sense correct: living systems are in many specific respects fundamentally different from those of standard electricity.   
+  
+## Major Sections (1-3)  
+[[Bioelectricity:Transcripts Week1 Lecture3 | Edited Transcript 1-3]]  
+### Week 1 (slide 10)  
+**Make Plans**  
+* background  
+* Rectificaton of Names  
+* Electricity in Solutions  
+  
+### Week 2 (slide 11)  
+**Energy, to get Vm**  
+* membrane patch
+* membrane resistance
+* membrane capacitance
+* ion pump
+* Nernst Vm
+
+### Week 3 (slide 12)  
+**Channels**  
+* Study of membrane channels.  
+* Membrane channels are where ions go through the membrane through special structures which are called channels. The membrane derives its power from this process.  
+  
+### Week 4 (slide 13)  
+**Action Potentials**  
+* The Hodgkin--‐Huxley model  
+* Different kinds of channels  
+* coopersating to create voltage pulses (action potentials)  
+  
+### Week 5 (slide 14)  
+**Currents within the tissue structure**  
+* axial current & trans-membrane current as determined from Vm by the tissue's structure  
+  
+### Week 6 (slide 15)  
+**Propogation**  
+* bringing together channels, action potentials, and structure so that electrical signals (action potentials) move along a fiber  
+  
+### Week 7 (slide 16)  
+* Watching: extracellular observation of action potentials moving through the structure  
+** example: electrocardiogram  
+  
+### Week 8 (slide 17)  
+**Control of Propogation**  
+* by means of trans--membrane or field stimulation  
+  
+### What are the weeks of the course? (slide 18)  
+* The first thing we do is to make plans.  
+* The next thing we do is to talk about where the energy to do anything comes from.  
+* Then, we do this group of 3 (channels, action potentials, and currents in structure).  
+* When we have done those 3, we can talk about propagation. Once propagation has been completed, then it is possible to talk about watching propagation from the outside of the active tissue and control the propagation so as to make it do what you want it to do.  
+  
+## Rectificaton of Names (aka terminology) (1-4)  
+[[Bioelectricity:Transcripts Week1 Lecture4 | Edited Transcript 1-4]]  
+### Rectification of Names (slide 21)  
+* The idea is taken from the Confucian doctrine that social harmony is achieved by using the proper designations for things.
+* Bioelectricity deals with invisible things (problem) and some conventions have been adopted to name the abstact things that are its elements.
+
+### Membranes (slide 22)  
+* The lipid bilayer is a thin material around cells.  
+* It is made of 2 layers of lipid molecules.  
+* One end (circles) is hydrophilic.  
+* The middle (lines) is hydrophobic.  
+* The lipid bilayer is thin in comparison to a cell diameter. In this illustration, the cell diameter is 200,000 Angstroms, while the lipid bilayer is only 80A.  
+**KEY ASPECT:** super good insulator and at the same time, is very very thin  
+  
+### Positive Membrane Voltage & Positive Membrane Current (23)    
+* Im positive means current is going from inside to outside.  
+* Vm: positive lead inside, so +1 mV means inside more positive than outside.     
+
+### Passive versus Active: same as dead versus alive? (slide 24)  
+* Passive means that electrical properties, such as resistance, are maintained without change as time passes.  
+* Active means that, following some trigger, properties such as resistance can change.  
+* A dead alligator is passive.  
+* A live alligator can be passive, but don’t count on it.  
+
+### Notation: E compared to e (slide 26)  
+  
+### The natural number e (slide 27)  
+* Lowercase e stands for the natural number e, and it is a specific number, 2.718.  
+* e is like pi, in the sense that both are symbols that stand for particular numbers and the numbers have an infinite number of significant digits. They're non-repeating, and so, it's really better to use the symbol because then, everybody's referring to the same number.  
+  
+### The natural number e (slide 28)  
+* Functionally, the letter e is associated with banking in a historical context.  
+  
+### The natural number e (slide 29)  
+* e shows up in equations or just calculations or results, whenever the rate of change of something is proportional to the amount which is there to start, and some version of this situation occurs frequently in bioelectricity, and most especially, it occurs with membranes.  
+  
+### The sizes of things, and E (slide 30)  
+* Uppercase E usually stands for an exponent, meaning a power of ten.  
+* We need to talk about powers of ten in this course because, in this course, the sizes of objects that we are working with varies across a very wide range.   
+* Notice the abbreviation μ (mu), meaning 10^-6 micrometers or 50E^-6 meters.   
+  
+### E notation (slide 31)  
+* If we look for example, at 1 millimeter, 1E^-3, that says this is a number that can be obtained by taking the number one multiplying it by ten raised to the three power. We take 1E^-3, 1E^-3 where we have it here, that's 1/10^3.   
+
+### E, e, and Ē (slide 32)  
+* capital E a s a power of ten  
+* e is the natural number and is equal to 2.7 etc  
+* $$\bar E$$ represents the electric field  
+* Can determine from the context which E is being used.    
+
+## Ions in Solutions (1-5)  
+[[Bioelectricity:Transcripts Week1 Lecture5 | Edited Transcript 1-5]]  
+  
+### Ions in Solution (slide 35)  
+* ion = an atom or molecule with a charge due to an unequal number of protons (+) and electrons (-)  
+* Presence of ions gives a solution electrical conductivity because ions move.  
+* For example, in water ordinary table salt (NaCl) divides into sodium and chloride ions, Na+ and Cl-­.  
+* Each is charged because an electron is taken from Na and added to Cl, leaving Na+ as net positive, and Cl-­ as net negative.  
+  
+### Ions and Conductivity σ (slide 36)  
+* Ions carry a charge and move.
+* Conductivity = the measure of how many or how easily a charge moves.
+* High concentration of ions → high conductivity
+* Sodium, potassium and choloride are most important in electrophysiology
+  
+### Resistivity and sea water (slide 37)  
+* Resistivity is the reciprocal of conductivity. (If you know one, you know the other.)   
+* In ocean water, resistivity is about 25 ohm-cm.
+* The conductivity is the reciprocal → 1/25 Siemens per cm.
+* Internal environment of animals is similar to sea water.
+
+### Resistivity and sea water (slide 37)  
+* To get the resistance of the walls of a cubical container filled with a solution of known resistivity, multiply the resistivity by the length and divide by the cross--‐sectional area. The result will be in Ohms.
+* For example, if the resistivity ρ is 25 Ohm-­‐cm, what is the resistance along a box with length 10cm if the cross section is square with each edge 5cm?
+* r = 25 Ohms-­‐cm /(5cm * 5cm) = 1 Ohm/cm  
+* R = r * L = 1 Ohm/cm * 10 cm = 10 Ohms  
+
+
+## RT/F and other physical constants (1-6)  
+[[Bioelectricity:Transcripts Week1 Lecture6 | Edited Transcript 1-6]]  
+  
+### RT/F (slide 41)  
+* RT/F is a kind of conversion factor between ionic concentrations and voltages  
+* R = the gas constant = 8.314 J/K*mole  
+* T = absolute temperature in Kelvin  
+: Celsius + 273.13 = Kelvin  
+* F = Farraday's constant = 96,487 Coulombs/mole
+  
+### RT/F (slide 42)  
+* RT/F = a natural constant = about 26 milivolts  (+/- 10%)
+    = a kind of conversion factor between ionic concentrations and volts
+
+### Farraday's constant (slide 43)  
+* Comes from multiplying Avogadro's number times the charge of one electron.
+* Avagadro’s number is 6.02e23 molecules per mole.  
+* The charge on one electron is 1.6E^‐19 Coulombs.  
+* Multiply them to get F.  
+  
+## Electricity in solutions (1-7)  
+[[Bioelectricity:Transcripts Week1 Lecture7 | Edited Transcript 1-7]]  
+  
+### Sources and sinks in a conductive medium, a sketch (slide 46)  
+[[File:Bioelectricity-wk1-sources-and-sinks.png]]  
+  
+* The universe is filled with a solution that has a conductivity (σ).
+* Often make the same assumption about animals in that they have a uniform volume conductor that is of infinite extent like the universe.
+* We are not going to take any electrical effects of the boundary into account. 
+* Will do analysis as if things are infinite and as if they are not being influenced by the boundary.
+* source = origin of current (flow of electricity)
+* sink = destination of current 
+* Can be many different pathways from source to sink.
+* More current will flow on the shorther pathways.
+* field point (p) = point in a selected, variable location located away from the source and the sink out in the field  
+  
+### Electricity in Solutions— The “Big 5” (slide 47)  
+[[File:Bioelectricity-wk1-the-big-five.png‎]]  
+  
+* The arrows indicate that each quantity can be found from the one before it, including 1 from 5. 
+
+### #1 of the Big 5---Potentials (slide 48)    
+* Potential = the measure of the electrical energy available at one point.  
+* If one moves from a location with high potential to one with low potential, it means that the electrical energy diminishes and is usually released to perform some other task. The energy is released in transit.  
+
+### More about potential (slide 49)  
+* Potential is a scalar function with a gradient proportional to the current.
+* Scalar = has a measure, but not a direction
+* Analogy: The height of a hill has a gradient (slope) proportional to the speed of water flow along the hill's surface.  
+** The electric field is like the slope of the hill.  
+** The slope of the hill is what allows the conversion of energy into movement of a car.
+
+### Second of the big 5—the electric field (slide 50)    
+* Electric field = a measure of the change in potential with distance.
+* Has both magnitude and direction.
+* Measured in Volts/meter.
+* Sign of indicates if the potential is increasing or decreasing  
+:* If potential is increasing → sign is positive  
+:* If potential is decreasing → sign is negative  
+  
+### Sign of E (slide 51)  
+* The electric field goes down the potential hill, not up.  
+* It's the negative of the gradient of potential.  
+* That is because change of potential with distance is given a positive sign when the potential is increasing. The electric field is in the downhill direction, toward lower potentials, so the sign reversal is needed.  
+
+### Third of the big 5, Force F (slide 52)    
+* The force F exerted on a charge q is equal to the electric field times the charge.
+* F = Eq
+* E and F often involve direction as well as magnitude, and the direction is often understood from the context.  
+* Can possibly be a very large number.  
+
+### Fourth of the big 5—the current flux (slide 53)  
+* The current flux J is proportional to the force, multiplied by the conductivity. 
+* Units: Ampere/cm^2
+* Sometimes I is used instead of J, which is confusing since I is also used for the current Amperes.
+* Current flux = the force per unit area
+* Because the electric field produces a force, the force can move the ions in solution, or in general, move charges from one place to another.  
+  
+### Fifth in the big 5— Sources (slide 54)  
+* Source = a point where current originates or disappears  
+* One takes the divergence of the current at a point to determine if it is a source.  
+* Can distinguish between sources and sinks.  
+* source = where current originates = positive value  
+* sink = where current disappears = negative value  
+* Sources occur where the current diverges.  
+* To determine if a point is a source, draw a closed surface around the point and total the current through the surface.  
+* If all the current that goes into the field point equals the current that goes out, then the point is not a source. Net current going in and going out both equal zero. 
+  
+### Where does divergence diverge from? (slide 55)  
+* Answer: From sources and sinks.  
+* The way you know if a point is a source is drawing a closed surface around the point and totaling the current through the surface.  
+* Is the field point a source?  
+* There is current at the field point, but no, there it is not a source because all of the current that comes into the envelope goes out of the envelope.  
+* So as a result, the total current coming out of the field point is equal to zero. Well, the total current going into the field point is equal to zero. Everything that comes in goes out.   
+  
+### What is the potential anywhere, for one source and one sink? (slide 56)  
+* For one source and one sink, the potential is given by  
+: {formula for potential}  
+
+### Electricity in solutions—Mathematical for of the 6-­‐step program (slide 57)  
+{more formulas!}  
+*  In this particular course, we don't do complex problems, especially complex problems. So generally speaking, we don't need this mathematics.   
+  
+### Electricity in solutions—Comments on the math form of the 6-­step program (slide 58)  
+* The ideas that are here, in this particular segment, are most important because you just have to have an idea of what these quantities are qualitatively because we talk about them all the time.  
+* And then furthermore, you have to have the concept in mind that when you know the potential, you can get the electric field.  
+* When you have the electric field you can get the forces on charges and other charge particles, molecules, ions.  
+* When you have the forces, you can get the currents.  
+* When you have the currents, you can get the sources.  
+* When you have the sources, you can get back to the potentials again.  
+* That's a very tight group of ideas which are all tied together.   
+  
+## Electric potentials as compared to voltages (1-8)  
+[[Bioelectricity:Transcripts Week1 Lecture8 | Edited Transcript 1-8]]
+  
+## Forces exerted by electric fields (1-9) 
+[[Bioelectricity:Transcripts Week1 Lecture9 | Edited Transcript 1-9]] 
+## First Problem Session (1-10)  
+[[Bioelectricity:Transcripts Week1 Lecture10 | Edited Transcript 1-10]]
+## Problem session (1-11)  
+[[Bioelectricity:Transcripts Week1 Lecture11 | Edited Transcript 1-11]]
+## Week in review (1-12)
+[[Bioelectricity:Transcripts Week1 Lecture12 | Edited Transcript 1-12]]

@@ -1,0 +1,52 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Wk4 L3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_4_Lecture_3:_HH_Replacement_for_Rm">Week 4 Lecture 3: HH Replacement for Rm</span></h1>
+<p><strong>Bioelectricity Week4_3 (slide 11)</strong><br />
+<ul><li> Well hello again. This is Roger Coke Barr for Bioelectricity. We are in week four and this is the third segment in week four. In this segment, we are talking about the specific way in which Hodgkin and Huxley replaced the membrane resistance with several ion channels. Let us get right into it.  </p>
+</li></ul>
+
+<p><strong>Replacing Rm with Ionic Currents (slide 12)</strong><br />
+<ul><li> In the Hodgkin and Huxley model, the Hodgkin and Huxley model observes that the passive model is limited in its representation of the pass through the membrane that are caused by holes and channels in the membrane. In the passive model, all of that is put together into a single equivalent resistance represented by RM.<br />
+</li><li> What Hodgkin and Huxley did is they replaced that composite resistive model with what it really is underneath the surface, so to speak.<br />
+</li><li> It is three different pathways or actually its thousands of each of three different kinds of channels: one for potassium, one for Sodium, and one for everything else (so called Leakage).<br />
+</li><li> Let us look at each of these pathways in a little bit more detail.  </p>
+</li></ul>
+
+<p><strong>Stored energy now comes into the model (slide 13)</strong><br />
+<ul><li> Each ionic pathway now comes into the representation with a battery in it. Wow, a battery. And these batteries have voltages that are the Nernst potential for the concentrations for that particular ion.
+</li><li> So, EK is the battery in the K path. ENa is the battery in the sodium path. El is the battery in the leakage path.<br />
+</li><li> As you know EK and ENa are the equilibrium voltages for potassium and for sodium. As you know from the work we did in the earlier week, EK is a negative number and ENa is a positive number.<br />
+</li><li> So these batteries have quite different voltages. That is to say, it may be so that the form of the path is similar. So this one, this one, this one, they all have the same elements. But the actual details of what's in there is quite different.<br />
+</li><li> So EK is not equal to ENa, and that's not equal to EL. These are three different numbers.<br />
+</li><li> We also need to notice that the resistance in each of these pathways is marked with a line through it. So here we have a line through that resistance, and that is a signifier that resistance is a variable resistance. It is not the same resistance all the time.<br />
+</li><li> So there is a line through GK. A line through GNa, and a line through GL. These resistances are not linked to each other. Because a part of the model is that each of these three lines is operating independently. It is the so called Independence Assumption.<br />
+</li><li> So that means that there has to be some other additional rules that tell us how these pathways operate.  </p>
+</li></ul>
+
+<p><strong>Stored energy now comes into the model (slide 14)</strong><br />
+<ul><li> You will notice in the way that these resistances are denoted here on the diagram. That each of them is not actually written as a resistance. It is written as a conductance (its reciprocal).<br />
+</li><li> So rather than having an RK, RNa and RL, there is instead a GK, GNa, GL, and at one level it is just notational. It could have been done the other way.<br />
+</li><li> But here it has a little bit further significance because there are further equations that are given for these conductenses.<br />
+</li><li> So what are exactly GK, GNa and GL? Well, we will come back in the next lecture and talk about those. Thank you for watching and I'll see you again in a few minutes.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 18/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L3&amp;oldid=8425">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L3&amp;oldid=8425</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

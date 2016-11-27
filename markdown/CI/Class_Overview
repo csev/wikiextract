@@ -1,0 +1,133 @@
+__Module 1 Class Overview__ (Lecture Video 1.1)
+
+_Note: Just copied notes from lecture slides and text from subtitles, needs tidying_
+
+* Due Date: October 28, Time for Completion: 8 minutes
+* [link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a "link") 
+* [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=35 "video")
+* [pdf](http://www.quantsoftware.org/CompInvestI-Presentations/011-CompInvestI.pdf "pdf")
+* [Subtitles](https://www.universalsubtitles.org/en/videos/xBCeOBkweEY4/info/class-overview/ "Subtitles")
+
+Coursera wiki: Computational Investing [Main Page](https://share.coursera.org/wiki/index.php/CI:Main "Main Page") and [next Lecture](https://share.coursera.org/wiki/index.php/CI:Module_2_Objectives "next Lecture") 
+
+
+
+# Goals and Objectives Of the Course
+* Understand electronic markets
+* Understand market data
+* Write software to visualize
+* Write software to discover
+* Create market simulator
+
+
+Hi. Welcome to Computational Investing, Part I. I'm your instructor, Tucker Balch.
+
+Let me start by telling you a little bit about the course, what our objectives are. First objective is, I want you to understand electronic markets. And, there's two parts to that. One is, how does computation make the markets work, and the other is computational models of how the markets work. And, by understanding those models, we can understand the markets a little bit more deeply.
+
+Below are at two stocks that are very similar, usually. That's Exxon Mobile and Chevron. Why are they different, sometimes? But the same, most of the other times? We'll look at computational models that help us understand that. Also below are are two companies in exactly the same market (Delta and Southwest Airlines), but their prices move dramatically differently. Why is that, how can we exploit it?
+
+In order to work with this information computationally, we need to understand, what is the data? It's not simple, it's actually complex. And we'll spend some time looking at how to get the data. How to process it. And how to use it computationally. 
+
+We're going to write software, software to visualizes market data. And understand how different stocks relate to one another. We're going to write software to discover. We wanna discover opportunities. We want to discover which stocks move closely together. Which ones move differently.
+
+And finally you're gonna create a simple market simulator that will let you test your own strategies on stock market data.
+
+
+## Example: Exxon Mobile and Chevron
+[[File:CI1-035a CompareXOMandCVX.png|400px|thumb|right|Exxon Mobile and Chevron stock prices on Google Finance]]
+
+Let me show you an example of the kind of thing I am talking about. And I'll show you couple of web pages here. Let's start by looking at two stocks that are very similar, usually. That's Exxon Mobile and Chevron. These are two oil company stocks. [Exxon Mobile and Chevron on Google Finance](https://www.google.com/finance?chdnp=1&chdd=1&chds=1&chdv=1&chvs=Linear&chdeh=1&chfdeh=0&chdet=1345752000000&chddm=49240&chls=IntervalBasedLine&cmpto=NYSE%3ACVX&cmptdms=0&q=NYSE%3AXOM&ntsp=0&fct=big&ei=ymO1UKj1GuONwAPqLg "Exxon Mobile and Chevron on Google Finance")
+
+
+Look how similarly their prices change over time. But they're not identical. And why is that? Why are they different, sometimes? But the same, most of the other times? We'll look at, computational models that help us understand that.
+
+
+## Example: Delta and Southwest Airlines.
+[[File:CI1-035a CompareLUVandDAL.png|400px|thumb|right|Delta and Southwest Airlines stock prices on Google Finance]]
+Here's one more example.
+
+This is, two airline stocks. The, blue line there is Delta. The red line is, Southwest Airlines. These are two companies in exactly the same market, but their prices move dramatically differently. Why is that, how can we exploit it? Those are all things that we'll look at in this course. [Delta and Southwest Airlines on Google Finance](https://www.google.com/finance?chdnp=1&chdd=1&chds=1&chdv=1&chvs=Linear&chdeh=1&chfdeh=0&chdet=1345233600000&chddm=49266&chls=IntervalBasedLine&cmpto=NYSE%3ALUV&cmptdms=0&q=NYSE%3ADAL&ntsp=0&fct=big&ei=u2m1UMiuPMStwAODbw "Delta and Southwest Airlines on Google Finance")
+	 	
+# Notes
+## Who Is this course is for?
+* Must be interested in stock markets.
+* Student1: Non-technical person
+** You are welcome!
+** Can watch lessons, take quizzes, but...
+** No certificate without completing projects.
+* Student2: Technical person
+** Undergraduate level programming
+** Certificate if quizzes & projects completed.
+
+
+Okay who is this course for.
+
+First of all, you need to be interested in the stock market.
+
+That's not a prerequisite, but. I'll tell you right now, this course is not going to be interesting for you unless you really are interested in stock markets. So that's something important.
+
+There's two types of students, that might take this course. One is a non-technical person, and we welcome you. But you're not going to get credit for the course unless you, complete the programming assignments. I still think it's valuable if you're a non technical person, to watch the presentations, and take the quizzes, but to get the, full credit, you'll need to, complete the programming assignments.
+
+The other kind of student this is for is a technically oriented person, who does have programming experience. We'll talk more in a moment about the programming projects themselves.
+
+## Course Logistics
+* 8 weeks, 2 modules per week.
+* About 5 to 10 short videos per module. 
+* Short quizzes throughout.
+* Projects in Excel and Python.
+* Students will grade each other.
+
+
+We're gonna have eight weeks of material. 
+
+There will be two modules per week. Each module is going to be about 5-10 short videos, like this one.
+
+There's going to be very short quizzes throughout to check your mastery of the material, No big deal, but in order to go forward through the course, you'll need to complete these quizzes, just to make sure you're paying attention, really.
+
+There will be projects, these are the ones that are required for getting the certificate. We'll have projects in Excel. And also in the Python programming language.
+
+Because we have so many people taking this course, we don't have the resources to grade all these programming assignments ourselves. And so we're going to ask students taking the course to grade each other. I think that's actually going to be useful because you'll see you'll learn by looking at other people's work.
+
+One thing I want to emphasize, plagiarism is not allowed. You need to do your own work.
+
+## About the Instructor
+* PhD in Robotics/Machine Learning. 
+* Professor at Georgia Tech.
+* Students: AQR, Citadel, GS, MS
+* Hedge fund quant.
+* Founder of Lucena Research.
+
+Let me tell you a little bit about me. I was once a fighter pilot. That doesn't make me much. That doesn't help me instruct you in
+finance, But people are always interested to know that I once was in the Airforce.
+
+Once I left the Airforce I got a PhD in Robotics and Machine Learning. And I'm from, a professor in George Tech in Robotics and Machine Learning.
+
+Recently over the last few years I've become very interested in finance and in the stock markets, And I've, I've shifted my work in that direction. I spent a year as a quantitative analyst at a hedge fund. I've also shifted the courses I teach at Georgia Tech to be in the direction of, of financing and, and machine learning applied to finance.
+
+Students who have taken my courses are at some of the top hedge funds in the world and, and top investment banks. So this material is, is useful and, and is helpful for that sort of a career path.
+
+I also recently founded a, a company that's a spin off from Georgia Tech. It's called Lucena Research and it's about
+applying these very same algorithms and software to understanding the stock market.
+
+## Course Resources
+* [wiki.quantsoftware.org](http://wiki.quantsoftware.org "wiki")
+* “Active Portfolio Management” by Grinold & Khan ([amazon.com](http://www.amazon.com/Active-Portfolio-Management-Quantitative-Controlling/dp/0070248826 "amazon"))
+* “All About Hedge Funds” by Jaeger ([amazon.com](http://www.amazon.com/All-About-Hedge-Funds-Started/dp/0071393935 "amazon"))
+
+In terms of, course resources, the, first stop for you to learn more about the course and, all the materials for the
+course will be [wiki.quantsoftware.org](http://wiki.quantsoftware.org "wiki.quantsoftware.org") If you go
+there, you'll discover everything you need to know about the course.
+
+There are two books that are not required, but I have found them very useful. The first one is "Active Portfolio Management" by Grenold and Khan. Much of the material that I'll present in this course is drawn from this book. And when appropriate, I'll mention in the in the SlideDex appropriate readings to look at. But that's really for deeper look. You're not, you don't have to own this book.
+
+Another book that's very useful, it's a little bit less expensive because it's a paperback, is all about hedge funds by Yeager. Even though it is about hedge funds it, it really very nicely comprehensively covers Stock pricing and strategies for taking advantage of stock pricing.
+
+## Next steps.
+Okay. Next steps. First thing to do is go take a look at that [wiki.quantsoftware.org](http://wiki.quantsoftware.org "wiki"). Also if after looking at that you have any questions please visit the course [Discussion Forums](https://class.coursera.org/compinvesting1-2012-001/forum/index "Discussion Forums") and [Q&A Forum](https://class.coursera.org/compinvesting1-2012-001/forum/list?forum_id=2 "Q&A Forum")  which is also linked to from that wiki. And again the, the address for that wiki is right there [wiki.quantsoftware.org](http://wiki.quantsoftware.org "wiki.quantsoftware.org").
+
+We'll be glad to answer any questions you have so that you can get a good feel for what's ahead in this course.
+And I think it's gonna be really exciting and fun and look forward to your participation.
+
+Thanks very much.
+
+[[Category:CI]]

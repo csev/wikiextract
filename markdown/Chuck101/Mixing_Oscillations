@@ -1,0 +1,23 @@
+<pre>
+//Sound network of two oscillations (a sinus and a square wave)
+SinOsc s => dac;
+SqrOsc t => dac;
+
+// define gain for the oscillations
+0.5 => s.gain;
+0.2 => t.gain;
+
+// play s and t oscillations at same time. The frequency each
+// oscillator is parametrized by the iteration of the for loop
+for (0 => int i; i<500; i++) 
+{
+    // assign i Hz frequency to t oscillator
+    i => t.freq;
+    // s oscillator has double frequency (2*i Hz frequency)
+    i*2 => s.freq;  
+    0.001::second => now;
+}
+</pre>
+
+
+[[Category:ChucK 101]]

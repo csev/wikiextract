@@ -1,0 +1,85 @@
+#Day-to-day life Knowlege vs Scientific Knowledge
+
+>>*Some simple notes and conceptual clarification*
+
+<sup>*by [Nuno Fernandes](https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778)*, on **[1.01 Non-scientific methods](https://share.coursera.org/wiki/index.php/Quantitativemethods:Main#1.01_Non-scientific_methods)**</sup>
+
+<sup>latest review by [Michael New](https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=1980493) (3 September 2014 0:13)</sup>
+
+
+##Intuition and belief
+
+Generally, people accept something based on **intuition** or **belief**. 
+
+
+>>>*What do these concepts really mean?*
+
+According to Marx (1857, 1848), **intuition** refers to "*thoughts and preferences that come to mind quickly and without much reflection*" <sup>([1][1])</sup> "*the word 'intuition' comes from the Latin word 'intueri', which is often roughly translated as meaning 'to look inside'’ or 'to contemplate'.*" <sup>([2][2])</sup>. Accepting Marx's definition, we can then assume that **beliefs** are provided by intuition, even though we cannot necessarily justify them, i.e., it refers to the attitude whenever we accept something as truth without necessarily reflecting on it <sup>([3][3])</sup>
+
+Because of their conceptual subjectivity, it is clear that intuition and belief don't create *valid* knowledge.
+
+_______
+> <sup>[**Note 1**](https://share.coursera.org/wiki/index.php/Solidsciencemethods-001:1.01nfernandes#Notes)</sup>
+
+>In "Thinking Fast and Slow," Daniel Kahneman metaphorically divides the mind into two parts.
+
+>>1.  System 1
+>>2.  System 2
+
+> System One does more of thinking.  It's fast.  It's often wrong, but it doesn't care as long as the mind survives the day.  System 1 is that part of the mind that others have called "intuitive."  Fast, and very good at many, many things.
+
+> System Two is slow, uses up a lot of energy; we rather not go there.  This is "rational" thought.
+
+> While System 1 thinking might be beautiful while your walking through the hills or watching a movie, for science to work, we need to rely heavily, also exclusively, on System 2 thinking, which, as I said, is hard 
+_______
+
+##Consensus and authority's opinion - a lazy way of defending our beliefs?
+
+Despite all that, some people defend their own beliefs by trying to get a **consensus**, i.e., a majority of opinions similar to their own or by supporting them on an **authority's opinion**. However, many people having the same opinion or an 'authority' or 'expert' stating something, doesn't make it necessarily true - they're stating their *opinion* based not only on their knowledge but also on their personal insights on it <sup>([4][4])</sup>.
+
+______
+
+> <sup>[**Note 2**](https://share.coursera.org/wiki/index.php/Solidsciencemethods-001:1.01nfernandes#Notes)</sup>
+
+> Authority is a difficult subject in science.  I think I understood that from stumbling over Bruno Latour.  While searching for the thought from Latour that I associated with the idea of authority, I found this in Steven Shapin's "The Scientific Life".  This is the level of authority that is both indispensable to science and a possible source of bias, if the scientist is not very careful.  We want to honor our mentors in the lab, but we can't let that stand in our way if the data doesn't logical support the conclusions.  Anyway, here's Shapin:  
+
+>>> *"There are pervasive mismatches between aspects of the external and internal accounts [of how scientists are thought of] . . . . And among the most telling of these mismatches is that between the attributed impersonality of late modern science-making and the rich repertoires of affect-saturated familiarity that one uncovers when looking closely at quotidian institutional practices."* (p. 2)
+
+_______
+
+##Obtaining evidence
+
+>>>*So, what do we need to create knowledge? Is it enough to observe?*
+
+Knowledge should be based on **evidence** and that evidence should be gathered through **observation**, but not just *casual observation*! Casual observation doesn't explain phenomena, it's just a statement of something *that happened*... We should question ourselves whether or not that observation is biased...
+
+So, **observation** creates evidence, but *casual observation* doesn't create very good evidence. 
+
+>>*Where do we stand? What can we do?*
+
+We need **scientific method** in order to produce valid knowledge, and this method is based on **systematic observation** combined with **consistently applied logic** <sup>([4][4])</sup>.
+
+
+#References
+
++ <sub> 1. Marx, Karl; Engels, Friedrich (2002) [1848]. The Communist Manifesto. Moore, Samuel (trans. 1888). Harmondsworth, UK: Penguin. p. 226. ISBN 0-14-044757-1.</sub>
++ <sub> 2. Marx, Karl (1993) [1857]. Grundrisse: Foundations of the Critique of Political Economy (rough draft). Nicolaus, Martin (trans. 1973). Harmondsworth, UK: Penguin. p. 750. ISBN 0-14-044575-7.</sub>
++ <sub> 3. Stanford Encyclopedia of Philosophy (http://plato.stanford.edu/entries/belief/)</sub>
++ <sub> 4. Solid Science: Research Methods - Origins: Non-scientific methods transcript (http://tinyurl.com/p7c2pnc)</sub>
+
+[1]: http://books.google.co.uk/books?id=CY3b0mcDF9QC "Marx, Karl; Engels, Friedrich (2002) [1848]. The Communist Manifesto. Moore, Samuel (trans. 1888). Harmondsworth, UK: Penguin. p. 226. ISBN 0-14-044757-1."
+
+[2]: http://books.google.co.uk/books?id=bDyemaqiZjUC "Marx, Karl (1993) [1857]. Grundrisse: Foundations of the Critique of Political Economy (rough draft). Nicolaus, Martin (trans. 1973). Harmondsworth, UK: Penguin. p. 750. ISBN 0-14-044575-7."
+
+**Notes**
+
++ <sub> Note 1 by [Michael New](https://www.coursera.org/user/i/658cba452ccdeaf86b6d6c6951359c13)</sub>
++ <sub> Note 2 by [Michael New](https://www.coursera.org/user/i/658cba452ccdeaf86b6d6c6951359c13)</sub>
+
+[3]: http://plato.stanford.edu/entries/belief/ "Stanford Encyclopedia of Philosophy"
+
+[4]: https://d396qusza40orc.cloudfront.net/solidsciencemethods/Video%20lecture%20transcripts/101_nonscientific_methods.pdf "Origins: Non-scientific methods transcript"
+
+[[Category: Methods and Statistics in Social Sciences: Quantitative Methods]]
+[[Category:Origins of the scientific method]]
+[[Category:Non-scientific methods]]

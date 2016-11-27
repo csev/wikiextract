@@ -1,0 +1,1008 @@
+[[Category:Android:Subtitles|it]]
+
+###Graphics and Animation - Part 1 - Italian subtitles
+
+* [[Android-001:Subtitles:Lecture55:it|<< prev]] | [[Android-001:Subtitles:Lecture61:en|en]] [[Android-001:Subtitles:Lecture61:es|es]] [[Android-001:Subtitles:Lecture61:it|it]] [[Android-001:Subtitles:Lecture61:zh-tw|zh-tw]] [[Android-001:Subtitles:Lecture61:pt|pt]] | [[Android-001:Subtitles:Lecture63:it|next >>]]
+
+* [Direct download](https://www.dropbox.com/s/3htzge2xeaoprne/6%20-%201%20-%20Graphics%20and%20Animation%20-%20Part%201%20%2817-08%29.srt)
+
+<pre>
+1
+00:00:00,000 --> 00:00:10,000
+[BLANK_AUDIO]
+
+2
+00:00:15,304 --> 00:00:18,175
+Hi, I'm Adam Porter, and this is
+
+3
+00:00:18,175 --> 00:00:23,770
+Programming Mobile Applications for
+Android Handheld Systems.
+
+4
+00:00:24,870 --> 00:00:30,270
+I dispositivi mobili di oggi montano CPU
+potenti ed efficienti,
+
+5
+00:00:30,270 --> 00:00:35,600
+display ad alta densit?, e le app
+possono usare queste funzionalit? per
+
+6
+00:00:35,600 --> 00:00:41,190
+presentare elementi grafici avanzati agli
+utenti e, persino, animare tali elementi
+
+7
+00:00:41,190 --> 00:00:45,930
+per dare all'utente un'esperienza visiva
+fluida e dinamica.
+
+8
+00:00:47,110 --> 00:00:51,340
+In questa lezione, parleremo di come le
+applicazioni fanno ci?
+
+9
+00:00:51,340 --> 00:00:55,720
+attarverso l'attento uso di grafica ed
+animazioni a due dimensioni.
+
+10
+00:00:57,220 --> 00:01:00,080
+Partir? col discutere del supporto
+che offre
+
+11
+00:01:00,080 --> 00:01:05,100
+Android alla grafica a due 
+dimensioni, o 2D.
+
+12
+00:01:05,100 --> 00:01:06,970
+Parlero di come le applicazioni
+
+13
+00:01:06,970 --> 00:01:12,940
+possono disegnare e mostrare elementi
+statici o dinamici sul display
+
+14
+00:01:12,940 --> 00:01:18,330
+usando la classe ImageView e usando
+la classe Canvas.
+
+15
+00:01:18,330 --> 00:01:23,340
+Successivamente, parlero dei vari modi
+da poter utilizzare per animare
+
+16
+00:01:23,340 --> 00:01:27,880
+una View in modo da applicare effetti
+semplici come cambiare
+
+17
+00:01:27,880 --> 00:01:33,390
+la dimensione e la posizione, o sfumare 
+una view.
+
+18
+00:01:33,390 --> 00:01:35,770
+Infine, trattero gran parte
+
+19
+00:01:35,770 --> 00:01:40,580
+delle propriet? delle animazioni, che 
+danno alle applicazioni
+
+20
+00:01:40,580 --> 00:01:44,530
+un framework per animare non
+solo una semplice
+
+21
+00:01:44,530 --> 00:01:48,890
+propriet? della view, ma essenzialmente
+ogni propriet?.
+
+22
+00:01:51,410 --> 00:01:54,180
+Quando la vostra applicazione vuole 
+mostrare grafica 2D sul
+
+23
+00:01:54,180 --> 00:01:57,990
+display, puo farlo in 
+diversi modi.
+
+24
+00:01:57,990 --> 00:02:05,620
+In particolare, puo mostrare la grafica su
+una View o su un Canvas.
+
+25
+00:02:05,620 --> 00:02:08,800
+Mostrarla su una View e' piu semplice, ma 
+meno flessibile.
+
+26
+00:02:08,800 --> 00:02:12,200
+Si fa questa scelta quando la grafica
+che si vuole mostrare
+
+27
+00:02:12,200 --> 00:02:16,410
+e' semplice, ma anche quando non sono 
+previsti suoi frequenti aggiornamenti
+
+28
+00:02:16,410 --> 00:02:16,910
+nel futuro.
+
+29
+00:02:17,990 --> 00:02:23,520
+Usare i Canvas e' piu difficile, ma e'
+anche piu potente e flessibile.
+
+30
+00:02:23,520 --> 00:02:27,320
+Si fa questa scelta quando si vuole
+usare grafica
+
+31
+00:02:27,320 --> 00:02:32,550
+pi? complessa e quando sono previsti
+frequenti aggiornamenti della stessa.
+
+32
+00:02:34,150 --> 00:02:36,910
+Ci sono modi diversi di usare le View.
+
+33
+00:02:36,910 --> 00:02:42,050
+In questa lezione ci focalizzeremo sull'uso
+della classe Drawable.
+
+34
+00:02:43,280 --> 00:02:46,830
+Un drawable rappresenta qualcosa
+che puo essere disegnato.
+
+35
+00:02:46,830 --> 00:02:52,090
+Cose come i bitmap, i colori, le forme
+e tanto altro.
+
+36
+00:02:52,090 --> 00:02:57,540
+Alcuni esempi di drawable sono la classe
+ShapeDrawable, che rappresenta
+
+37
+00:02:57,540 --> 00:03:01,090
+una forma come un rettangolo o
+un ovale
+
+38
+00:03:01,090 --> 00:03:05,640
+La classe BitmapDrawable che rappresenta
+una matrice di pixel.
+
+39
+00:03:06,650 --> 00:03:08,660
+E la classe ColorDrawable,
+
+40
+00:03:08,660 --> 00:03:10,430
+che rappresenta un colore.
+
+41
+00:03:12,830 --> 00:03:15,970
+Nell'applicazione di esempio di
+questa lezione,
+
+42
+00:03:15,970 --> 00:03:19,080
+creeremo spesso un oggetto drawable e
+lo allegheremo
+
+43
+00:03:19,080 --> 00:03:21,230
+ad un ImageView, per poi lasciare
+
+44
+00:03:21,230 --> 00:03:24,730
+che l'ImageView gestisca tutto
+per noi.
+
+45
+00:03:26,010 --> 00:03:30,530
+Come con le caratteristiche dell'Android
+User Interface che abbiamo visto, si puo
+
+46
+00:03:30,530 --> 00:03:36,170
+fare cio attraverso i files XML, oppure 
+programmaticamente (nel codice).
+
+47
+00:03:38,340 --> 00:03:43,770
+Le nostre prima applicazioni sono
+chiamate GraphicBubble XML
+
+48
+00:03:43,770 --> 00:03:49,350
+e GraphicsBubble Program.
+Queste semplici app mostrano entrambe una
+
+49
+00:03:49,350 --> 00:03:55,160
+singola ImageView, che contiene un'immagine
+bitmap di una bolla di sapone.
+
+50
+00:03:56,350 --> 00:03:57,306
+Diamo un'occhiata.
+
+51
+00:03:57,306 --> 00:04:00,493
+[BLANK_AUDIO]
+
+52
+00:04:00,493 --> 00:04:03,533
+Qui c'? il dispositivo.
+
+53
+00:04:03,533 --> 00:04:08,879
+Ora, lanciamo una delle app,
+GraphicsBubbleXML.
+
+54
+00:04:08,879 --> 00:04:10,501
+[BLANK_AUDIO]
+
+55
+00:04:10,501 --> 00:04:13,511
+E qui potete vedere l'immagine 
+della bolla.
+
+56
+00:04:13,511 --> 00:04:15,944
+[BLANK_AUDIO]
+
+57
+00:04:15,944 --> 00:04:23,381
+Okay, diamo un'occhiata al codice sorgente
+di queste applicazioni partendo
+
+58
+00:04:23,381 --> 00:04:30,190
+dal codice di GraphicsBubbleXML.
+Qui c'? l'applicazione aperta nell'IDE.
+
+59
+00:04:31,400 --> 00:04:34,730
+Apriamo l'activity principale di questa
+applicazione.
+
+60
+00:04:36,860 --> 00:04:43,998
+Come potete vedere, e' davvero semplice.
+Tutto quello che fa ? chiamare setContentView
+
+61
+00:04:43,998 --> 00:04:49,380
+usando il file main.xml.
+apriamo questo file.
+
+62
+00:04:51,290 --> 00:04:56,650
+Qui c'e il file XML.
+Esso specifica che il layout intero e'
+
+63
+00:04:56,650 --> 00:05:02,310
+un RelativeLayout.
+E innestato al suo interno c'e'
+
+64
+00:05:02,310 --> 00:05:07,660
+una ImageView.
+Questa immagine ha un altezza e una
+
+65
+00:05:07,660 --> 00:05:14,140
+larghezza di 250 DP (density Indipendent
+pixels).
+
+66
+00:05:16,010 --> 00:05:20,340
+L'ImageView e' anche centrata all'interno
+del suo parente, il RelativeLayout.
+
+67
+00:05:22,380 --> 00:05:26,644
+E finalmente, il bitmap per la bolla e'
+
+68
+00:05:26,644 --> 00:05:31,889
+in una delle cartelle drawable ed e'
+chiamata B128.
+
+69
+00:05:31,889 --> 00:05:34,471
+[BLANK_AUDIO]
+
+70
+00:05:34,471 --> 00:05:37,311
+guardiamo anche un'app che fa
+
+71
+00:05:37,311 --> 00:05:41,320
+la stessa cosa ma che costruisce la sua
+User Interface programmaticamente.
+
+72
+00:05:44,070 --> 00:05:49,200
+Qui c'e' l'app GraphicsBubbleProgram
+aperta nell'IDE.
+
+73
+00:05:50,940 --> 00:05:53,909
+Apriamo l'activity principale per questa 
+applicazione.
+
+74
+00:05:55,540 --> 00:05:58,213
+E anche questa applicazione chiama
+
+75
+00:05:58,213 --> 00:06:02,520
+setContentView usando il file di layout 
+main.XML layout.
+
+76
+00:06:03,610 --> 00:06:09,940
+Ma in questo caso, il layout include
+solo il relativeLayout esterno.
+
+77
+00:06:09,940 --> 00:06:13,640
+con nulla al suo interno.
+Apriamo questo file.
+
+78
+00:06:15,842 --> 00:06:20,840
+Qui c'e' il file XML, e come ho appena
+detto specifica che l'intero layout e'
+
+79
+00:06:20,840 --> 00:06:26,310
+un RelativeLayout, ma non ha alcuna
+View figlia al suo interno.
+
+80
+00:06:27,800 --> 00:06:34,290
+ritorniamo  all'activity principale,
+questo codice continua creando un ImageView
+
+81
+00:06:34,290 --> 00:06:41,080
+Poi setta il bitmap B128 come l'immagine
+drawable per l'ImageView.
+
+82
+00:06:42,700 --> 00:06:45,500
+Dopodiche, il codice continua settando
+tutte le
+
+83
+00:06:45,500 --> 00:06:50,510
+proprieta del layout che abbiamo visto
+prima.
+
+84
+00:06:50,510 --> 00:06:54,400
+Prima setta l'altezza e la larghezza 
+dell'ImageView.
+
+85
+00:06:57,100 --> 00:07:02,760
+Questi valori sono memorizzati in un
+altro file chiamato dimens.xml
+
+86
+00:07:02,760 --> 00:07:08,680
+che si trova nella cartella res/values.
+Poi
+
+87
+00:07:08,680 --> 00:07:13,230
+il codice crea un oggetto
+RelativeLayout.layoutParams
+
+88
+00:07:13,230 --> 00:07:18,340
+con le giuste altezza e larghezza.
+Dopodiche
+
+89
+00:07:18,340 --> 00:07:22,636
+il codice aggiunge una regola
+all'oggetto LayoutParams
+
+90
+00:07:22,636 --> 00:07:25,742
+che dice ad Android di centrare
+
+91
+00:07:25,742 --> 00:07:29,790
+questa ImageView all'interno
+del RelativeLayout che la contiene.
+
+92
+00:07:31,810 --> 00:07:36,950
+quindi il codice setta questi parametri (o
+proprieta) nell'ImageView.
+
+93
+00:07:38,410 --> 00:07:43,000
+E finalmente, aggiunge l'ImageView come
+figlio del RelativeLayout.
+
+94
+00:07:44,890 --> 00:07:48,790
+Parliamo ora di altri tipi di drawable.
+
+95
+00:07:48,790 --> 00:07:51,180
+Un tipo di drawable ? lo shape.
+
+96
+00:07:52,240 --> 00:07:55,739
+Il drawable Shape ? usato per disegnare
+forme semplici.
+
+97
+00:07:56,980 --> 00:08:01,900
+forme differenti sono rappresentate da
+diverse sottoclassi della classe Shape,
+
+98
+00:08:01,900 --> 00:08:06,530
+come PathShape per i segmenti e
+le curve
+
+99
+00:08:07,640 --> 00:08:13,080
+RectShape per i rettangoli, e OvalShape per
+le forme ovali.
+
+100
+00:08:14,660 --> 00:08:17,182
+Le prossime applicazioni di esempio
+
+101
+00:08:17,182 --> 00:08:23,980
+sono chiamate GraphicsShapeDrawXML,
+e GraphicsShapeDrawProgram.
+
+102
+00:08:23,980 --> 00:08:29,230
+Queste applicazioni mostra due ovali 
+all'interno di un RelativeLayout.
+
+103
+00:08:29,230 --> 00:08:32,380
+I due Shape hanno colori differenti.
+
+104
+00:08:32,380 --> 00:08:36,920
+e si coprono parzialmente a vicenda, e
+sono semitrasparente.
+
+105
+00:08:36,920 --> 00:08:38,908
+Lanciamo queste applicazioni.
+
+106
+00:08:38,908 --> 00:08:41,299
+[BLANK_AUDIO]
+
+107
+00:08:41,299 --> 00:08:46,717
+Qui c'? il mio dispositivo, e lanciamo ora
+una delle due
+
+108
+00:08:46,717 --> 00:08:51,790
+applicazioni, GraphicsShapeDrawXML.
+E come
+
+109
+00:08:51,790 --> 00:08:56,880
+potete vedere ci sono i due ovali.
+Quello a sinistra ? ciano.
+
+110
+00:08:57,910 --> 00:09:00,470
+Quello a destra ? magenta.
+
+111
+00:09:00,470 --> 00:09:05,740
+Inoltre, come potete vedere, gli ovali
+si sovrappongono parzialmente.
+
+112
+00:09:05,740 --> 00:09:07,410
+E in questa zona
+
+113
+00:09:07,410 --> 00:09:11,380
+i loro colori si mescolano e diventano
+una specie di viola.
+
+114
+00:09:12,730 --> 00:09:15,220
+guardiamo il codice sorgente.
+
+115
+00:09:19,010 --> 00:09:25,390
+Qui c'? l'applicazione GraphicsShapeDrawXML
+aperta nell'IDE.
+
+116
+00:09:25,390 --> 00:09:28,570
+Apriamo l'activity principale di questa 
+applicazione
+
+117
+00:09:29,830 --> 00:09:32,770
+Ancora una volta l'app chiama soltanto
+
+118
+00:09:32,770 --> 00:09:38,160
+setContentView usando il file di layout
+main.XML.
+
+119
+00:09:38,160 --> 00:09:39,130
+Apriamo questo file.
+
+120
+00:09:42,195 --> 00:09:48,990
+Qui c'e' un file XML, che specifica che il
+layout intero e' un RelativeLayout.
+
+121
+00:09:48,990 --> 00:09:54,020
+E annidato al suo interno ci sono due
+ImageView.
+
+122
+00:09:54,020 --> 00:10:00,200
+Entrambe hanno una larghezza e una
+altezza di 250DP.
+
+123
+00:10:01,710 --> 00:10:05,620
+Entrambe aggiungono dello spazio, o padding,
+attorno al loro contenuto.
+
+124
+00:10:06,840 --> 00:10:07,230
+Ed entrambe
+
+125
+00:10:07,230 --> 00:10:11,330
+sono centrate verticalmente all'interno
+del RelativeLayout padre.
+
+126
+00:10:13,140 --> 00:10:17,370
+La prima ImageView, comunque, e'
+allineata sulla sinistra del padre
+
+127
+00:10:17,370 --> 00:10:22,770
+mentre la seconda ImageView e'
+allineata sulla destra
+
+128
+00:10:24,310 --> 00:10:26,510
+E finalmente, il contenuto dell'ImageView 
+attuale
+
+129
+00:10:26,510 --> 00:10:31,910
+e' definito usando l'attributo
+Android:source.
+
+130
+00:10:33,560 --> 00:10:38,235
+Per la prima ImageView, il codice si
+riferisce a un drawable chiamato
+
+131
+00:10:38,235 --> 00:10:43,240
+cyan_shape.
+apriamo questo file.
+
+132
+00:10:43,240 --> 00:10:48,780
+Si trova nella cartella res\drawable.
+Questo
+
+133
+00:10:48,780 --> 00:10:54,045
+file specifica che questo drawable e' uno 
+Shape, che
+
+134
+00:10:54,045 --> 00:10:59,150
+specifica una forma ovale, ed 
+il colore
+
+135
+00:10:59,150 --> 00:11:01,400
+e' dato da un valore esadecimale.
+
+136
+00:11:03,130 --> 00:11:07,084
+Ovviamente, cio avviene anche per
+lo Shape magenta.
+
+137
+00:11:07,084 --> 00:11:10,110
+[BLANK_AUDIO]
+
+138
+00:11:10,110 --> 00:11:17,052
+E come prima, possiamo realizzare le stesse
+cose in modo programmatico.
+
+139
+00:11:17,052 --> 00:11:21,954
+Diamo un'occhiata all'app
+GraphicsShapeDrawProgram,
+
+140
+00:11:21,954 --> 00:11:24,670
+che abbiamo appena aperto nell'IDE.
+
+141
+00:11:26,600 --> 00:11:29,790
+Apriamo l'activity principale di 
+questa applicazione.
+
+142
+00:11:29,790 --> 00:11:35,341
+Ancora, l'app invoca soltanto
+setContentView usando il file
+
+143
+00:11:35,341 --> 00:11:36,480
+di layout main.XML
+
+144
+00:11:37,540 --> 00:11:41,940
+Questo file spcifica che l'intero layout
+e' un RelativeLayout.
+
+145
+00:11:43,100 --> 00:11:50,530
+Ora, il codice setta l'altezza, larghezza
+e padding del layout.
+
+146
+00:11:50,530 --> 00:11:54,170
+Poi, il codice ottiene un reference
+al RelativeLayout padre
+
+147
+00:11:56,270 --> 00:12:01,190
+dopodiche, crea un nuovo drawable Shape
+che ha uno Shape ovale.
+
+148
+00:12:02,580 --> 00:12:06,532
+Continua settando il colore dello Shape
+
+149
+00:12:06,532 --> 00:12:10,640
+la sua altezza e la sua larghezza, e
+la sua trasparenza.
+
+150
+00:12:12,670 --> 00:12:18,220
+Poi il codice crea un ImageView e
+inserisce un nuovo shape al suo interno.
+
+151
+00:12:18,220 --> 00:12:21,760
+setta anche il padding dell'ImageView.
+
+152
+00:12:23,830 --> 00:12:28,140
+successivamente, il codice setta alcuni 
+parametri per l'ImageView.
+
+153
+00:12:29,660 --> 00:12:35,290
+In particolare, centra l'ImageView
+verticalmente nel RelativeLayout, e
+
+154
+00:12:35,290 --> 00:12:39,040
+allinea questa ImageView sulla sinistra
+del padre.
+
+155
+00:12:40,480 --> 00:12:44,390
+Il codice poi finisce facendo le
+stesse cose per la view magenta.
+
+156
+00:12:46,390 --> 00:12:48,880
+Ora, se volete fare qualcosa
+di piu complesso
+
+157
+00:12:48,880 --> 00:12:54,030
+potete usare i Canvas,
+E facedo cio',
+
+158
+00:12:54,030 --> 00:12:59,350
+abbiamo bisogno di 4 cose: un bitmap,
+che essenzialmente la matrice
+
+159
+00:12:59,350 --> 00:13:04,560
+di pixel che si vuole mostrare; 
+un Canvas, che
+
+160
+00:13:04,560 --> 00:13:09,760
+ospita la chiamata che aggiorna
+il bitmap specificato.
+
+161
+00:13:09,760 --> 00:13:14,000
+un drawing primitive, che rappresenta
+la specifica
+
+162
+00:13:14,000 --> 00:13:20,250
+drawing operation che si vuole fare;
+un oggetto Paint, che permette
+
+163
+00:13:20,250 --> 00:13:26,530
+di settare vari colori e stili per la
+draw operation che si vuole fare.
+
+164
+00:13:26,530 --> 00:13:29,460
+Approfondiamo un po i dettagli della classe
+Canvas.
+
+165
+00:13:29,460 --> 00:13:35,100
+i Canvas forniscono una varieta
+di metodi drawing.
+
+166
+00:13:35,100 --> 00:13:37,718
+Per esempio, si possono mostrare testo,
+
+167
+00:13:37,718 --> 00:13:44,820
+punti, colori, ovali, e bitmap usando
+questi metodi.
+
+168
+00:13:45,940 --> 00:13:51,530
+Si puo usare la classe Paint per settare
+i parametri dello stile.
+
+169
+00:13:51,530 --> 00:13:56,730
+Per esempio, si possono specificare cose
+come lo spessore delle linee, la dimensione
+
+170
+00:13:56,730 --> 00:14:00,370
+del testo, il colore di cosa si vuole 
+mostrare
+
+171
+00:14:00,370 --> 00:14:03,430
+e se applicare o meno varie ottimizzazioni
+
+172
+00:14:03,430 --> 00:14:05,770
+come l'antialiasing
+
+173
+00:14:05,770 --> 00:14:09,080
+che e' usata per smussare i bordi di
+un'immagine.
+
+174
+00:14:10,920 --> 00:14:13,450
+Diamo un'occhiata ad una semplice app
+che mostra
+
+175
+00:14:13,450 --> 00:14:17,380
+vari rettangoli, ognuno dei quali ha
+del testo
+
+176
+00:14:17,380 --> 00:14:22,330
+ma dove ognuno usa differenti settaggi.
+
+177
+00:14:23,950 --> 00:14:25,050
+Qui c'e' il mio device.
+
+178
+00:14:26,940 --> 00:14:29,660
+lanciamo ora l'applicazione GraphicsPaint.
+
+179
+00:14:31,370 --> 00:14:35,500
+L'app esegue e visualizza quattro 
+rettangoli
+
+180
+00:14:35,500 --> 00:14:37,380
+disposti uno sopra l'altro.
+
+181
+00:14:38,920 --> 00:14:42,420
+ognuno di questi rettangoli ha del testo
+
+182
+00:14:42,420 --> 00:14:45,830
+e ciascun testo differisce per dimensione
+e stile.
+
+183
+00:14:47,150 --> 00:14:50,630
+Ogni rettangolo ha anche differenti
+larghezze dei bordi
+
+184
+00:14:50,630 --> 00:14:53,580
+e stili dei bordi, ed un differente
+colore di sfondo.
+
+185
+00:14:53,580 --> 00:14:58,730
+diamo un'occhiata al codice sorgente
+di questa applicazione.
+
+186
+00:14:58,730 --> 00:15:03,820
+Sceglieremo un paio di questi parametri e 
+vedremo come sono specificati.
+
+187
+00:15:05,880 --> 00:15:10,100
+Qui c'e' l'applicaizione GraphicsPaint
+aperta nell'IDE.
+
+188
+00:15:11,440 --> 00:15:17,200
+Come visto piu o meno prima, il metodo
+onCreate() di questa app invoca soltanto
+
+189
+00:15:17,200 --> 00:15:23,740
+setContentView, passandogli una referenza
+al file di layout main.XML
+
+190
+00:15:23,740 --> 00:15:24,670
+Apriamo questo file.
+
+191
+00:15:27,450 --> 00:15:28,550
+Qui c'e' il file XML.
+
+192
+00:15:29,740 --> 00:15:34,454
+Questo specifica che l'intero layout e'
+un LinearLayout, e
+
+193
+00:15:34,454 --> 00:15:40,350
+che questo LinearLayou ha quattro figli, 
+ognuno dei quali e' una TextView.
+
+194
+00:15:41,850 --> 00:15:46,460
+Se guardiamo il primo di queste 4
+TextView, possiamo vedere che setta
+
+195
+00:15:46,460 --> 00:15:52,722
+molti attributi stile. Per esempio,
+questo setta il suo colore del testo
+
+196
+00:15:52,722 --> 00:15:56,170
+con questo valore esadecimale.
+
+197
+00:15:56,170 --> 00:16:02,010
+La dimensione del testo e' settata a 
+32SP (scale indipendent pixel)
+
+198
+00:16:03,480 --> 00:16:09,310
+I suoi stili sono BOLD e ITALIC, e il suo
+Typeface ? settato su normal.
+
+199
+00:16:10,790 --> 00:16:12,530
+Se guardate questi altri,
+le altre TextView
+
+200
+00:16:12,530 --> 00:16:16,420
+potrete vedere che fanno scelte differenti
+riguardanti gli stili
+
+201
+00:16:17,830 --> 00:16:23,475
+Questa TextView specifica anche uno
+sfondo, che si trova in un file chiamato
+
+202
+00:16:23,475 --> 00:16:30,970
+SQ1.xml, memorizzato nella
+cartella res\drawable.
+
+203
+00:16:30,970 --> 00:16:31,930
+apriamo questo file.
+
+204
+00:16:34,510 --> 00:16:40,779
+Qui c'e' il file SQ1.xml come potete vedere
+definisce uno Shape.
+
+205
+00:16:41,990 --> 00:16:47,280
+Questo shape e' un rettangolo, e 
+ha un colore.
+
+206
+00:16:47,280 --> 00:16:51,360
+In questo caso e' bianco (deve essere 
+definito in Android).
+
+207
+00:16:52,810 --> 00:16:56,030
+E finalmente, lo Shape ha un bordo
+
+208
+00:16:56,030 --> 00:17:00,040
+largo tre pixel, e ha settato anche
+un colore di sfondo.
+
+209
+00:17:01,400 --> 00:17:04,285
+che in questo caso e' un nero 
+totalmente opaco.
+
+210
+00:17:04,285 --> 00:17:04,626
+[BLANK_AUDIO]
+</pre>

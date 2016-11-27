@@ -1,0 +1,42 @@
+Links to additional material that may be directly or tangentially related to AI Planning:
+
+---
+
+## Manual Creation of Plans
+
+- NETPlan - DARPA, US Air Force and Us Army SOFTools - A timeline tool for designing and communicating plans, explaining actions, and monitoring operations - by Doug Dyer of [http://activecomputing.us/ Active Computing]. [http://prezi.com/qg--5wdknazu/netplan/ Prezi Presentation]
+
+
+## Workflow/Process Control
+
+- Kepler Scientific Workflow System
+- ADAMS Workflow System
+- Proview Industrial Process Control system
+- Ptolemy
+
+
+## Agent-Based Modeling
+
+- Repast
+- NetLogo
+- many others...
+
+## Planning API
+
+- PyPlan - modular Monte Carlo planning library for Python ([https://github.com/shankarj/PyPlan Repository], [https://github.com/shankarj/PyPlan/wiki Wiki])
+
+## Machine Learning and Data Mining
+
+- Weka
+- RapidMiner
+- ELKI
+- MOA
+
+
+## Mailing Lists and Websites 
+
+This section is for various mailing lists and websites (outside coursera) that cater to AI in general. You can ask specific or generic questions about AI, AI planning or any other field of your interest. Please make sure that you are targeting a mailing list that is right for your question. Also see [http://www.catb.org/~esr/faqs/smart-questions.html How to ask]  before asking a question.
+Feel free to add to this list:
+
+- http://aitopics.org/ - Website for "information about the research, the people, and the applications of Artificial Intelligence"
+- [http://groups.google.com/group/planning-list/ Google groups - Planning List]  planning-list@googlegroups.com

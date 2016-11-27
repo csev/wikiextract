@@ -1,0 +1,45 @@
+# Cases, variables and Levels of Measurements
+##Cases
+A case is a subject or an object that is being studied and holds certain information or a collection of variables.
+One example could be a patient in a statistical study
+##Variables
+The characteristics that describe a particular case. Taking the Patient as a Case, Variables would be age, weight, blood type, smoking, etc.
+## Levels of Measurements
+There are four levels of measurements to measure characteristics of any case.
+
+###Categorical
+Subdivided into two groups:
+####Nominal variables
+A collection of categorical values where order has no meaning. Categories do not show which is better, worse, high or more.
+
+Examples:
+
+  * Eye color (brown, blue)
+  * Nationality (French, Japanese, Canadian)
+  * Gender (Male, Female)
+####Ordinal variables
+Similar to Nominal variables except that it has order. Ordinal variables can be observed using a rating scale or ranked. For example, in a marathon race, runners are ranked by winning positions (first, second, third, etc). However, it is hard to measure the performance of each runner for example how far was the first runner from the second.
+Another example, suppose you want to classify some people by their education experience. This can be done using three categorical values: High School, Vocational, Graduate or Higher.
+Ordinal variables as it sounds, show order, but it does not show precise quantitative measurement between categories values.
+###Quantitative
+Subdivided into two groups:
+####Interval variables
+Continuous variables that are broken down into a finite and equal spaced intervals with order.
+
+Example:
+
+  * Temperature
+     1. 0° - 9.9°
+     2. 10° - 19.9°
+     3. 20° - 39.9°
+     4. 40° - 49.9°
+
+Suppose a temperature observation is 36° from a statistical study, then this value falls into the third interval (20° - 39.9°).
+
+####Ratio variables
+An infinite set of decimal values that can be ordered.
+
+Example:
+
+   * Rain amount in a particular time differs from place to place.
+   * The salary income of employees.

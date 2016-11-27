@@ -1,0 +1,44 @@
+__Module 2 Common metrics for assessing fund performance 2__ (Lecture Video 2.3)
+
+_Note: Just copied notes from lecture slides, needs to be cleaned up_
+
+* Due Date: October 28, Time for Completion: 7 minutes
+* [link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a "link") 
+* [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=11 "video")
+* [powerpoint](http://www.quantsoftware.org/CompInvestI-Presentations/023-CompInvestI.pptx "powerpoint")
+
+
+# Objectives
+* Sharpe Ratio.
+
+	 	
+# Notes
+## How To Compare Similar Portfolios?
+* daily_rets[i] = (value[i]/value[i-1]) – 1
+* std_metric = stdev(daily_rets)
+
+
+
+## Sharpe Ratio	
+* Most “important” measure of asset performance.
+* How well does the return of an asset compensate the investor for the risk taken?
+* The higher the Sharpe ratio the better. 
+* When comparing two assets each with the same return, higher Sharpe ratio gives more return for the same risk.
+
+$$S =  \frac{E [R - R_f]}{\sigma} = \frac{E [R - R_f]}{\sqrt{var[R - R_f]}}$$  
+
+* Reward/Risk = How much reward are you getting for your risk?
+* metric = k * mean(daily_rets)/stdev(daily_rets))
+* k = sqrt(250) for daily returns
+
+## Example
+<pre>
+      Return  Sharpe   STDEV   D-down   Corr
+Fund     33%     .94   0.58%   -8.67%   0.89
+$DJI     43%     .63   1.23%  -27.38%   1.00
+</pre>
+
+
+
+
+[[Category:CI]]

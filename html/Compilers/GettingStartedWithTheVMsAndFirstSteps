@@ -1,0 +1,82 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:GettingStartedWithTheVMsAndFirstSteps</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Getting_started_with_the_VMs_and_first_steps"><span class="tocnumber">1</span> <span class="toctext">Getting started with the VMs and first steps</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Introduction"><span class="tocnumber">1.1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-2"><a href="#Setting_VM_up"><span class="tocnumber">1.2</span> <span class="toctext">Setting VM up</span></a></li>
+<li class="toclevel-2"><a href="#First_steps"><span class="tocnumber">1.3</span> <span class="toctext">First steps</span></a></li>
+<li class="toclevel-2"><a href="#A_user_video_about_getting_started_with_the_VM"><span class="tocnumber">1.4</span> <span class="toctext">A user video about getting started with the VM</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Getting_started_with_the_VMs_and_first_steps">Getting started with the VMs and first steps</span></h1>
+<h2> <span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>If you wish to write a compiler for the course, you will need an environment in which to do so. Due to the complexities of getting all of the tools working, it would be too difficult to support installing everything you need directly on your computer. Hence, we provide some options to use a pre-installed copy on a Linux operating system.</p>
+<p>If you would prefer to run the assignments on your own computer instead of on Amazon EC2, you will need to download our Linux virtual machine (VM).</p>
+<h2> <span class="mw-headline" id="Setting_VM_up">Setting VM up</span></h2>
+<p>If you have not used a VM before, the idea is that you will be running an entire operating system on inside a program (VirtualBox) that looks to the virtual guest operating system like real hardware. We provide downloadable image of the guest OS with everything installed, so that you only need to do minimal setup to get started.</p>
+<p>Note that since a VM contains a whole second operating system, the system requirements are high. <strong>The VM will take a bit over 512MB of ram (so you will probably want to have 2GB of total ram to keep Windows or Mac OS X running smoothly), plus a bit over 2GB of hard disk space</strong>. If your computer is not up to the task, consider using the Amazon EC2 option instead.</p>
+<p><strong>Getting VirtualBox</strong></p>
+<ul>
+<li><p>First, download Oracle's VirtualBox, either from the VirtualBox website at <a rel="nofollow" class="external free" href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>, or from Oracle's download page at <a rel="nofollow" class="external free" href="http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html">http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html</a>. Choose the version for the operating system you are running on your computer.</p></li>
+<li><p>Once the download completes, run the installer to install VirtualBox. You will need administrator access on your computer to do so.</p></li>
+</ul>
+<p><strong>Getting our VM image</strong></p>
+<ul>
+<li><p>Download our linux virtual machine image from <a rel="nofollow" class="external free" href="http://d2bk0s8yylvsxl.cloudfront.net/stanford-compilers/vm/compilers-vm.zip">http://d2bk0s8yylvsxl.cloudfront.net/stanford-compilers/vm/compilers-vm.zip</a>, or if you have a BitTorrent client installed, you can use the torrent at <a rel="nofollow" class="external free" href="http://spark-university.s3.amazonaws.com/stanford-compilers/vm/compilers-vm.zip?torrent">http://spark-university.s3.amazonaws.com/stanford-compilers/vm/compilers-vm.zip?torrent</a>. Note that this download is approximately 750MB.</p></li>
+<li><p>Unzip the file into a convenient directory. The unzipped files are about 2GB, so make sure you have enough disk space available. If you are a Windows XP user and have trouble opening the zip file, try WinZip (shareware) or 7-Zip (free, open source) instead of the built-in zip support in Windows.</p></li>
+<li><p>Once you have unzipped the VM, double-click on the file "Compilers.vbox" This should open the VM in VirtualBox.</p></li>
+</ul>
+<p><strong>Using the VM</strong></p>
+<ul>
+<li><p><strong>The provided account is "compilers" and the password is "cool".</strong></p></li>
+<li><p>To start the VM, click the green "Start" button. This should make the VM boot.</p></li>
+<li><p>To shut down the VM, click on the round "Bodhi" button at the bottom left and click System. Then choose Power Off.</p></li>
+<li><p>We have installed what you need to do the assignments, plus a few other programs, such as vim and emacs. If you want to install other packages, you can use the Aptitude graphical package manager (under the Bodhi menu-&gt;Applications-&gt;Preferences) or the apt-get command line tool. If you are not familiar with these, there are many tutorials online that you can find through a quick Google search.</p></li>
+<li><p>To get a terminal, click on the terminal icon at the bottom of the screen. This should get you to the point where you can start the assignments.</p></li>
+</ul>
+<p>This VM is based on Bodhi Linux, which is itself based on the popular linux distribution Ubuntu. We used Bodhi Linux in order to keep the download size more manageable, since a full Ubuntu install is quite large. However, since it is based on Ubuntu, most Ubuntu software packages can be installed on Bodhi Linux as well.</p>
+<p>If you have a problem that you cannot solve, please post on the Coursera forums. Unfortunately the TAs cannot provide personalized help to students in the public class, but we do monitor the forums, so we will try to post solutions to common problems when they come up.</p>
+<h2> <span class="mw-headline" id="First_steps">First steps</span></h2>
+<p>Once the VM is set up, you can compile the example programs. Once the assignments become available, you will be able to work on these inside the VM as well.</p>
+<p>To play around with the example cool programs, make a directory and copy over one or more examples from the /usr/class/cs143/examples directory. These examples are the same as the ones posted on the website. The coolc command will run the reference compiler to generate the assembly output (.s) file, which you can run using the spim simulator. For example, to compile and run "hello_world.cl", run in a terminal (where $ represents the prompt):</p>
+<code><pre>$ mkdir examples
+$ cd examples
+$ cp /usr/class/cs143/examples/hello_world.cl .
+$ coolc hello_world.cl
+$ spim hello_world.s
+SPIM Version 6.5 of January 4, 2003
+Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+All Rights Reserved.
+See the file README for a full copyright notice.
+Loaded: /usr/class/cs143/cool/lib/trap.handler
+Hello, World.
+COOL program successfully executed
+Stats -- #instructions&#160;: 152
+         #reads&#160;: 27  #writes 22  #branches 28  #other 75
+</pre></code>
+<h2> <span class="mw-headline" id="A_user_video_about_getting_started_with_the_VM">A user video about getting started with the VM</span></h2>
+<p><a rel="nofollow" class="external free" href="https://www.youtube.com/watch?v=2C7xRy_Ttp0">https://www.youtube.com/watch?v=2C7xRy_Ttp0</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:GettingStartedWithTheVMsAndFirstSteps&amp;oldid=24929">https://share.coursera.org/wiki/index.php?title=Compilers:GettingStartedWithTheVMsAndFirstSteps&amp;oldid=24929</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

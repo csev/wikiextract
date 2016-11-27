@@ -1,0 +1,23 @@
+
+
+Is Part 1 of the assignment, ComputeInitialPotentials, underspecified and rejecting correct answers submitted?
+
+Seems to me that the particular assignment of factors to cliques chosen can produce a different output from InitialPotentials.RESULT in PA4Sample.mat, but still be correct.
+
+Likewise the order in which the factors are multiplied in might affect the result.
+
+My output seems very similar to the required RESULT but with the .var of some factors permuted from those in the sample (same set, different order). Also .card and .val are same (multi)sets as for test sample RESULT (checked) and look like corresponding permutations (not checked).
+
+I notice that submit.m includes (unused) routines for sorting the order of factors before serializing. Perhaps something similar is needed to sort order of .val in each factor?
+
+Can anyone confirm that a particular assignment and variable order is required and can be deduced from the specifications?
+
+If not, could this please be fixed and an extension of time allowed.
+
+PS After writing above I found a work around solution in discussion formum:
+
+https://class.coursera.org/pgm/forum/thread?thread_id=1156
+
+I haven't verified that solution yet but the discussion there seems to confirm that it is a fault in the problem specification and grader so I am leaving this note here.
+
+PPS as background, it seems more natural to use C.nodes{i} directly instead of copying it to P.cliqueList(i).var as suggested, (but NOT specified) at the top of ComputeInitialPotential, since the simplest loop to simultaneously find a suitable node and multipy in the factor will end up overwriting what you put there. However this seemingly more "natural" code does not produce identical output to the sample.

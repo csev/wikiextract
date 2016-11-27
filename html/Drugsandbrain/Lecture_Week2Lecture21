@@ -1,0 +1,71 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week2Lecture21</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 21 “Outside-in” Mechanisms for Long-term Actions on G Protein Pathways<br />
+<ul><li> This is Thomas Hunt Morgan, founder of Fruit Fly Drosophila genetics on the world scene and also of Caltech's Division of Biology. This lecture discusses Seymour Benzer, another Caltech geneticist. This is the Thomas Hunt Morgan Memorial Library in the Kirchoff Building. The top window is just a few steps from my office. Much more distinguished are the six portraits on the back wall who are Caltech's Nobel laureates in Genetics, Molecular Biology, and Neuroscience.  </p>
+</li></ul>
+
+<ul>
+<li>Hello. This is our final lecture on the G Protein pathway. I call it the “Outside-In” mechanism for long term actions on G protein pathways and it finally brings us to the nucleus of a neuron.  </li>
+</ul>
+<p><strong>time scale of seconds and perhaps minutes, the language of the nervous system is still electricity</strong><br />
+<ul><li> A reminder that on a time scale of seconds and perhaps minutes, the language of the nervous system is still electricity and we're still describing a set of mechanisms that manipulate impulse frequencies, action potential frequencies, and individual neurons. Now, we're proceeding to effects on a longer time scale, hours to days.  </p>
+</li></ul>
+
+<p><strong>Seymour Benzer’s early Drosophila learning mutants</strong><br />
+<ul><li> We begin with experiments done by the late Seymour Benzer, about 40 years ago, on Drosophila, the same animal who's studiers have so many portraits in the Morgan library. Seymour was looking for a way to study learning and memory in a way that would be amenable to detailed reductionist analysis. So, he built an apparatus that would allow him to study learning in fruit flies.  </p>
+</li></ul>
+
+<ul>
+<li><p>Specifically, the apparatus allowed him to determine that Drosophila could learn to avoid an odorant associated with electric shock. The apparatus had six total test tubes, one of them stuck out the bottom here. At the beginning of the experiment, he tapped the apparatus so that all the flies fell to the bottom. Then, he put the apparatus near a fluorescent lamp and flies are attracted to fluorescent lamps.  </p></li>
+<li><p>In two of the test tubes, he put odorant A, so this was test tube two and four, and two of the test tubes he put in odorant B, which was three and five. He put these electric grids in each of the test tubes, but he only plugged in the electric grid into in one of the test tube. And he shocked the flies while they were moving toward the light and being exposed to odorant A. Then, a few hours later, he did the test in test tubes four and five so that there would be no scent of fear left behind by the flies. He asked whether the flies would more readily go to odorant A or to B.  </p></li>
+<li><p>Now, there were several controls built into this experiment. One of them is that sometimes, in some experiments, he shocked the flies going to odorant B rather than A. And in some experiments, he had no shock at all. So, there were a bunch of controls that satisfied everybody that, in fact, the flies were learning to avoid an odorant that had been associated with a shock.  </p></li>
+<li><p>Now, the next set of experiments he mutagenized flies typically by putting them in a x-ray machine so that some of the flies had mutations in various genes. But he did not yet know the name or the location of the genes that had been mutated. He then grew up the individual mutants so that he had lots of those particular flies. Then, he could study those flies and their descendants thereafter.  </p></li>
+<li><p>One particular set of mutated flies could not display the learning, even though they could sense the odorant. This was done with other experiments. And they could sense the electric shock. And they showed essentially normal, normal behavior in other respects. The early geneticists certainly had a playful way with words. So, he called this mutant, <em>dunce</em>, because it could not learn.  </p></li>
+</ul>
+<p><strong>Two of Seymour Benzer’s early Drosophila learning mutants involve the cAMP system</strong>  </p>
+<ul>
+<li><p>Now, the next set of experiments. Now, that Benzer had a whole line of flies which inherited this mutation was to ask what molecule was actually being produced by the gene that was mutated? Seymour found that the mutated gene could no longer operate as a phosphodiesterase. Phosphodiesterases, you'll remember, includes an enzyme that breaks down cyclic AMP into the inactive molecule AMP. So, <em>dunce</em> turned out to encode a phosphodiesterase. That wasn't all.   </p></li>
+<li><p>There were other mutants that really could not do much at all. They just sort of hung around the test tube like vegetables and so, they were called <em>rutabaga</em>. And it turned out that <em>rutabaga</em> coded for a cyclase protein, the cyclase that makes ATP for cyclic AMP. And <em>rutabaga</em> also could not learn.   </p></li>
+<li><p>So, in the early 70s', Benzer and his colleagues had found some molecules in some mutants that showed how the cyclic AMP system was involved in learning in a very simple animal, in a way that made it possible to study this entire process more rigorously.  </p></li>
+</ul>
+<p><strong>Some kinases can enter a neuron's nucleus, and phosphorylate proteins in the nucleus</strong>  </p>
+<ul>
+<li>Where are we here in our map of the G Protein pathway we produced in the intercellular messenger, cyclic AMP? The intracellular messenger binds to a kinase. The kinase phosphorylates a protein. Interestingly enough, some of the kinases can enter a neuron's nucleus, and phosphorylate proteins in the nucleus.  </li>
+</ul>
+<p><strong>Many genes have a DNA sequence called “cAMP-Ca2+ responsive element” (CRE)</strong>  </p>
+<ul>
+<li>Now, among the phosphorylated proteins in the nucleus are proteins called transcription factors. And we'll see why they're called transcription factors in a moment. This transcription factor is called cyclic AMP calcium responsive element binder or CREB. And so, phosphorylated CREB has a little p in front of it, phosphor CREB. Here's the phosphate group.   </li>
+<li><p>The element to which it binds on DNA, the sequence of DNA is called cyclic AMP calcium responsive element or CRE.  To study CRE, we put a target or a reporter gene downstream from CRE. Its natural gene would be the target. We substitute for the target, a reporter gene. In this case, as you can see from the bright green, the reporter gene is the green fluorescent protein or GFP. So now, the fluorescence from the cell enables us to tell that phospho CREB is bound to CRE and has activated the downstream pathway.  </p></li>
+<li><p>Another view of the system we've described is here. We have the cytosol out here. We have a kinase entering the nucleus. The kinase is PKA, protein kinase A. It's been activated by the binding of cyclic AMP. It is phosphorylating CREB; turning it from the inactive form to the active form. There's another protein called CREB-binding protein involved. We won't worry about that. The CREB binding element or CRE is red here, sorry, it's a dark blue here and the target gene or the reporter gene is yellow down here, but is green up here.   </p></li>
+<li>The DNA sequence is allowed to produce RNA, that's called transcription, and that's why we call CREB a transcription factor, and then the RNA undergoes translation into a protein. So, we have a phosphorylated protein binding to DNA, activating the new gene, a new protein.  </li>
+</ul>
+<p><strong>The “outside-in” pathway from G protein-coupled receptor to gene activation</strong>     </p>
+<ul>
+<li><p>So, what we have done here, over the last few lectures, is to show you how a ligand for a G protein-coupled receptor, if present for long enough, goes through the G Protein pathway to activate genes. We call this the “outside-in” pathway because it begins at the membrane, begins with a drug or hormone binding to the outside of the cell. Then, the next few steps take place in the cytosol, the intracellular messenger and the kinase. And the kinase enters the nucleus, phosphorylates a protein which is a transcription factor, and we get new genes activated which can change the functions of the cell, radically.  </p></li>
+<li><p>So, this is the “outside-in” pathway. And it's slower than the usual signal transduction pathway. In some cases, it's fast as ten seconds but usually it takes days of repeated activation to produce these changes. And messages can, in some cases, travel back along an axon for up to a meter and activate genes.  </p></li>
+</ul>
+<p><strong>A typical schematic drawing</strong>  </p>
+<ul>
+<li>Here is an example, experiments done by the author of the recommended textbook of a specific system. This involves a brain nucleus called a locus coeruleus. It involves morphine binding to opioid receptors which are G protein-coupled receptors. Specifically, the &#956; opioid receptor, &#956; stands for morphine here. A member of the Gi pathway then activates G protein activated potassium channels. We know all about that, we've seen that.  This changes the electrical excitability of the neuron, we know all about that. Gi also inhibits adenylyl cyclase, we know about that, which inhibits the production of cyclic AMP. We get less PKA formed. Ultimately, we get less CREB activated and we get altered gene expression, which then goes on to regulate numerous other cellular process. So, here is a diagram of another example of the so called “outside-in pathway”, from G Protein activation through changed protein synthesis.  </li>
+<li>And that completes our analysis of the G Protein pathway. We'll be drawing upon this analyses and our previous analysis of ion channel pathways in the next few weeks.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture21&amp;oldid=6609">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week2Lecture21&amp;oldid=6609</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

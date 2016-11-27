@@ -1,0 +1,21 @@
+Deck of Cards
+=============
+
+Problem #1
+----------
+
+Create a data structure that represent a card in a deck of French cards. A card has two elements: 
+
+* A "rank" which is one of: 2, 3, 4, 5, 6, 7, 8, 9, 10, Jack, Queen, King, Ace.
+* A "suit", which is one of: clubs (♣), diamonds (♦), spades (♠) or heart (♥).
+
+
+Problem #2
+----------
+
+Create a function that compares two cards and returns -1, 0 or 1 depending if the first card is less than, equal or greater than the second. A card is greater  than other if its rank is greater (Ace > King > Queen > Jack > 10 > ... 2). If their rank is equal, the card with the greatest suit is the greatest (heart > spades > diamonds > clubs).
+
+Problem #3
+----------
+
+Create a list that contains a full deck of cards.

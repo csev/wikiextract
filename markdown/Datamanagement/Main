@@ -1,0 +1,94 @@
+# General Reading Material
+
+## Books or Book Chapters
+
+**Practical Guide to Clinical Data Management** (Thanks M. Kuhlmann)  
+ISBN-10: 1439848297 | ISBN-13: 978-1439848296
+
+**Data Management Using Stata: A Practical Handbook** (Thanks David)  
+*Includes description of double data entry*  
+by Michael N. Michell, Stata Press.
+
+## Articles
+
+### Clinical Research Informatics
+
+[Clinical research informatics: a conceptual perspective](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3392857/)  
+J Am Med Inform Assoc. Jun 2012; 19(e1): e36–e42.  
+Michael G Kahn and Chunhua Weng
+
+### Terminologies and Standards
+
+[Representing thoughts, words, and things in the UMLS](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC61323/)  
+J Am Med Inform Assoc. 1998 Sep-Oct;5(5):421-31.  
+Campbell KE, Oliver DE, Spackman KA, Shortliffe EH.  
+
+[Desiderata for Controlled Medical Vocabularies in the Twenty-First Century](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3415631/)  
+Methods Inf Med. Author manuscript; available in PMC Aug 10, 2012.  
+James.J. Cimino, M.D.  
+
+[Data standards for clinical research data collection forms: current status and challenges](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3078665/)  
+J Am Med Inform Assoc. 2011 May-Jun; 18(3): 341–346.  
+Rachel L Richesson and Prakash Nadkarni
+
+### REDCap-Related References
+[Research Electronic Data Capture (REDCap) - A metadata-driven methodology and workflow process for providing translational research informatics support](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2700030/)  
+J Biomed Inform. Apr 2009; 42(2): 377–381.  
+Paul A. Harris, Ph.D, Robert Taylor, M.A., Robert Thielke, Ph.D., Jonathon Payne, B.S., Nathaniel Gonzalez, B.S.C.S., and Jose G. Conde, M.D.  
+
+[Procurement of Shared Data Instruments for Research Electronic Data Capture (REDCap)](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3600393/)  
+J Biomed Inform. Apr 2013; 46(2): 259–265.  
+Jihad S Obeid, Catherine A McGraw, Brenda L Minor, José G Conde, Robert Pawluk, Michael Lin, Janey Wang, Sean R Banks, Sheree A Hemphill, Rob Taylor, and Paul A Harris
+
+
+
+# Material Related to Weekly Lectures
+## Week 1 
+
+## Week 4 
+
+### Sharing Your Work
+
+[Good article: Ten Simple Rules for Reproducible Computational Research](http://www.ploscompbiol.org/article/info%3Adoi%2F10.1371%2Fjournal.pcbi.1003285). Sandve GK, Nekrutenko A, Taylor J, Hovig E (2013) Ten Simple Rules for Reproducible Computational Research. PLoS Comput Biol 9(10): e1003285. doi:10.1371/journal.pcbi.1003285
+
+[HowOpenIsIt?](http://www.plos.org/open-access/howopenisit/) - **Open Access Spectrum (OAS)**
+
+[Making your code citeable](http://thenextweb.com/dd/2014/03/17/mozilla-science-lab-github-figshare-team-fix-citation-code-academia/) and generaging a Digital Object Identifier (DOI) using Figshare, Mozilla, and GitHub.
+
+
+#### Code sharing websites
+* [GitHub](http://github.com/)
+* [Bitbucket](https://bitbucket.org/): offers private repositories in the free account tier
+* [SourceForge](http://sourceforge.net/)
+
+#### Data Publishing Websites
+See [here](http://oad.simmons.edu/oadwiki/Data_repositories) for a list. Includes:
+
+* [Figshare](http://figshare.com/)
+
+## Week 5
+
+### Neuroimaging
+
+Scott is answering questions on [this forum thread](https://class.coursera.org/datamanagement-001/forum/thread?thread_id=238)
+
+### Medical Terminologies and Standards
+
+We will post here a growing list of standards that may relevant to clinical research. Please visit this space often if you are interested in the this topic as we expected to be updated. Feel free to edit this page to add terminologies or standards that you think would be of interest to this class. The recommended way to do this is to dedicate a page to each one that can then be kept as a modular reference and then link to that page from here. If you want to add a new page and to avoid collision with pages from other courses on the Coursera wiki, please pre-pend the page title with **"DMCR:"**.
+
+#### List
+* Systematized Nomenclature of Medicine - Clinical Terms: [[DMCR:SNOMEDCT | SNOMED-CT]]
+* Clinical Data Interchange Standards Consortium: [[DMCR:CISC | CDISC-related standards]]
+* International Classification of Disease: [[DMCR:ICD9 | ICD-9]], [[DMCR:ICD10 | ICD-10]]
+* International Classification of Diseases for Oncology: [[DMCR:ICDO3 | ICD-O-3]]
+* Unified Medical Language System [[DMCR:UMLS | UMLS]]: The UMLS is not a single terminology, but a collection of many terminologies, classifications, or coding schemes with associated resources (like mappings between them.)
+* Logical Observation Identifiers Names and Codes: [[DMCR:LOINC | LOINC]]
+* Health Level 7 [[DMCR:HL7 | HL7]]
+* Current Procedural Terminology [[DMCR:CPT | CPT]]
+
+
+General principles for online forms.
+[[General principles]]
+
+[[Category:Coursera]]
+[[Category:Biology]]

@@ -1,0 +1,46 @@
+## Distributions
+
+'''A probability distribution function''' (AKA PDF, probability density function, probability function, or density) is a function that indicates the probability that a given random variable will take on a particular value.  If a random variable is discrete (i.e. the value of the random variable is contained in a countable set of values), then the probability density function, $$ f(x) $$ of a random variable $$ X $$ is:
+
+$$f(x) = P(X=x)$$.
+
+For example, if a random variable for weather, $$W$$, can be either "$$w^0$$(cloudy)", "$$w^1$$(rainy)", "$$w^2$$(snowy)", or "$$w^3$$(clear)" with probabilities 0.3, 0.2, 0.1, and 0.4 respectively, then the probability density function for $$W$$ would be
+
+$$f(w^0) = 0.3$$,
+$$f(w^1) = 0.2$$,
+$$f(w^2) = 0.1$$, and
+$$f(w^3) = 0.4$$.
+
+## Joint Distributions
+The multivariate form of a probability distributions function is a function that indicates the probability that a list of random variables will take on a list of values.  If the random variables are discrete, the joint probability density function, $$f(x_1, x_2, \ldots, x_n)$$ for random variables 
+
+$$X_1, X_2, \ldots, X_n$$ 
+
+is defined by 
+
+$$f(x_1, x_2, \ldots, x_n) = P(X_1=x_1, X_2=x_2, \ldots, X_n=x_n)$$.
+
+For example, if a random variable for a beverage of type $$B$$ can take on values $$b^0$$(coffee) and $$b^1$$(tea) and another random variable for taste $$T$$ can take on values $$t^0$$(bitter) and $$t^1$$(sweet), then the joint distribution function, $$f$$, for these random variables could have the form
+
+$$f(b^0, t^0) = 0.3$$, $$f(b^0, t^1) = 0.2$$,  $$f(b^1, t^0) = 0.05$$, and $$f(b^1, t^1) = 0.45$$
+
+indicating that coffee is more likely to be bitter than tea.  Note that for the above example, the probability that a random beverage is bitter coffee, $$P(B=b^0, T=t^0)$$ is 0.3 or 30 percent and the probability that a random beverage is sweet $$P(T=t^1)$$ is 65 percent because 
+
+$$P(T=t^1)= P(T=t^1,B=b^0) + P(T=t^1,B=b^1)= 0.2 + 0.45 = 0.65.$$
+
+
+## Lecture Video Table of Contents 
+
+[https://class.coursera.org/pgm-003/lecture/1 Link to Video]
+
+ <pre> 
+0:05	Joint Distribution
+0:53	Joint distribution table
+1:39	Independent parameters
+2:12	Conditioning
+2:51	Conditioning: Reduction
+3:12	Conditioning: Renormalization
+4:07	Marginalization
+ </pre>
+
+[[PGM:Main| Return to Main Page]]

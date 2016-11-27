@@ -1,0 +1,51 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compfinance:yahoo-data download instructions for assignment 1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>SO we will be at <a rel="nofollow" class="external free" href="http://finance.yahoo.com/----stick-">http://finance.yahoo.com/----stick-</a> abunch of stuff over here to tell it what data you want</p>
+<p>Description
+This article describes where you can find historical price and adjusted close data within Yahoo! Finance. This article also includes answers to the following questions:
+What is the adjusted close?
+How is the adjusted close determined?
+Do you include dividends in the adjusted close?</p>
+<p>Resolution
+Yahoo! Finance offers access to historical price data in tabular format for several timescales: "Daily", "Weekly", and "Monthly". "Dividends Only" is also provided as filtering option. The historical prices feature includes notations for all splits and dividend distributions during the date range selected. Open, high, low, and close values are not adjusted for splits or dividends. An additional column, Adjusted Close, is provided to show the close price adjusted for all splits and dividends.</p>
+<p>On a security's Historical Prices page, you can choose the date range of the data you would like to display, change the ticker symbol query, or switch to a different timeframe format. If the data requested is beyond the range of historical prices available through Yahoo! Finance, all available data within the range will be displayed. Historical prices typically do not go back further than 1970.</p>
+<p>There is currently no restriction to the amount of historical price data you can request, however, only 66 rows are displayed on a single page. To see all the data you've requested, either click the Next/Last links to view additional pages or the Download to Spreadsheet link at the bottom of the page. Note that dividend information is not included in the downloaded spreadsheet. It can, however, be downloaded separately when the Dividends Only radio button is selected.
+Daily historical prices provide you with the daily open, high, low, close, and volume for each trading day in the chosen date range.</p>
+<p>this page tells you what to write</p>
+<p><a rel="nofollow" class="external free" href="http://www.gummy-stuff.org/Yahoo-data.htm">http://www.gummy-stuff.org/Yahoo-data.htm</a></p>
+<blockquote>
+  <blockquote>
+    <ul>
+    <li>What do we want?</li>
+    <li>ticker = SBUX (starbucks)</li>
+    <li>monthly data March, 1993 to March, 2008</li>
+    <li>closing price (really, on last day of the month?  </li>
+    <li>that's my understanding anyway, (not weekly or daily price??)</li>
+    </ul>
+  </blockquote>
+</blockquote>
+<p>OK, now I'm going to see if I can figure it out myself.  Looks like futures are finally selling off for the fiscal cliff and I'm not flat yet myself.  Good luck all.</p>
+<ul>
+<li>example</li>
+<li><a rel="nofollow" class="external free" href="http://finance.yahoo.com/d/quotes.csv?s=SBUX+&amp;f=l1">http://finance.yahoo.com/d/quotes.csv?s=SBUX+&amp;f=l1</a>  //should give last close</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compfinance:yahoo-data_download_instructions_for_assignment_1&amp;oldid=5667">https://share.coursera.org/wiki/index.php?title=Compfinance:yahoo-data_download_instructions_for_assignment_1&amp;oldid=5667</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

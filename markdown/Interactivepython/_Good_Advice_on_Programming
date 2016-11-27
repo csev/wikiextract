@@ -1,0 +1,65 @@
+# Introduction and background
+
+This is an introductory course and there are plenty of seasoned programmers taking the course. I suggest that we use this page to pass on good advice on Programming in general as well as advice on python specific programming.
+
+So with that said: Happy editing and I hope people can benefit it
+
+## General Advice (Applicable to All Programming Languages)
+
+ - Google is your friend. Identify your problem and Google it. Chances are someone has had a similar problem and the problem has been solved.
+
+ - Find an editor you're comfortable with. Having the right editor can mean the difference between throwing teddy bears and rocks at your computer. 
+ - Make sure the editor you use has syntax highlighting, it makes reading code far easier.
+ - Use space indentation in code. It's the generally accepted way of indenting as it keeps the formatting from computer to computer.
+
+ - Write comments. When you do, assume you're writing it for someone who has never read a line of code. When you look at your code 3 months later, they will help you understand the code you've written. 
+
+    -- Include a short description, date (maybe time), how, and what the change is supposed to accomplish. Comment out the code to be changed, then enter the corrected code. Never DELETE the original code until the program is about to be released as a gold or platinum release.
+
+ - Make sure to indent rigidly. As far as Python goes this is a requirement but many other languages don't require it. It greatly helps readability of the code and makes it much easier to see where a block of code belongs.
+
+ - If you require to do something more than once, write a function for it. Again this enhances readability of the code as the code requires fewer lines. However you must also weigh the impact from loading the function's parameters along with the load and execution time. Over-functionalized programs can become poor performers and may become dificult to support particularly in a large developmental shop.
+
+ - When you're in doubt of where your error is, use distinguishable 'print()' calls. It'll help you figure out exactly where your problem arises. Or you can use built-in debug tools.
+
+ - Keep lines short. Many style guidelines suggest a maximum of 80 characters per line including spaces. 60 allows for sidebar comments
+
+## Python Specific Advice
+
+ - Use the documentation for Python. It can help you find and understand built-in functions thus, eliminating your need for reinventing it.
+
+### Useful Functions and Libraries
+It's nearly always a better choice to use the functions that are already implemented in Python, or any other language for that matter, rather than writing your own. So here's a section for useful libraries and functions.
+
+#### Libraries
++ random - This library is very useful for whenever you need to generate a random value.
++ math - This library contains a number of useful mathematical functions freeing you from coding them yourself.
+
+#### Functions
++ string.lower() - This function will turn your string into purely lower case letters. This is highly useful as you never know how a user will enter a string
+    
+    > foo = "BaR"
+
+    > print foo.lower()
+
+    > bar
+
++ string.upper() - This function will turn your string into purely upper case letters.
+    
+    > foo = "baR"
+
+    > print foo.upper()
+
+    > BAR
+
+
++ string.capitalize() - This will capitalize the first letter of your string.
+    
+    > foo = "bar"
+
+    > print foo.capitalize()
+
+    > Bar
+
+---
+[[Interactivepython:Main|Main]]

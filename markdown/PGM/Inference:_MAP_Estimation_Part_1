@@ -1,0 +1,23 @@
+#MAP Estimation Part 1
+
+##Video Lecture Table of Contents
+
+###Max Sum Message Passing
+<pre>
+0:00	Motivation
+0:59	Product to Summation
+3:04	Max-sum elimination in chains
+5:20	Factor summation
+6:08	Factor maximization
+9:31	Max-sum in clique trees
+11:49	Convergence of message passing
+13:05	Simple example
+17:16	Max-sum BP at convergence
+19:44	Summary
+</pre>
+
+###Finding a MAP Assignment
+<pre>
+0:17	Decoding a MAP assignment
+1:05	Non-unique max assignments
+</pre>

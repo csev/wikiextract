@@ -1,0 +1,48 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity: Transcript Wk3 L10</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_3_Lecture_10:_Channels:_Probability_of_Being_Open">Week 3 Lecture 10: Channels: Probability of Being Open</span></h1>
+<p><strong>Bioelectricity Week3_10 (slide 55)</strong><br />
+<ul><li> So, hello again. This is the Bioelectricity course, I'm Roger Coke Barr. And this is Week three, segment ten. We were talking about channels, and how channels go open and closed.  </p>
+</li></ul>
+
+<p><strong>So we have to define channel openings in terms of probabilities (slide 56)</strong>  </p>
+<ul>
+<li><p>Because they're just opening and closing seemingly randomly, the more frequently under some circumstances than others, we really need to think about channel openings in terms of probabilities.</p></li>
+<li><p>But first, let's just think about what we have said. It is really amazing that critical functions of humans depend on probabilities. There's not a mechanism, not a deterministic mechanism (A causes B) but rather probabilities. The channel is probably open, but then it may be closed. The channel is probably closed, but then it may be open. Of course, it'll work out in a statistical sense if there are enough channels because we can rely on their average behavior. But, it is still quite remarkable.  </p></li>
+<li><p>So, the issue is, how can this channels be understood quantitatively? Which turns into, how can these probabilities be determined quantitatively? So, I'll just make a little sketch here. We're not going to try to analyze this problem in detail right now. But, let's just make a little sketch as to how we might think about it. First, we can say that in some patch, there are a total of N channels, and at a certain moment, No are open and Nc are closed. </p></li>
+<li><p>Now, the number that are open and closed is dynamic and changing randomly. We can, we can write what is happening as an equation by saying that the number that are open is changing as a function of tab, dN0 / dt, the rate of change of the number that are opened by two processes.  </p></li>
+<li><p>First, there's a process where channels that are closed are reopening that's associated with this rate constant &#945;. And there's a process by which those that are open are going closed, and that's associated with this rate constant, &#946;. You notice that &#945; and &#946;, somehow are there built into the membrane. We are supposing that &#945; and &#946; are not constants, rather &#945; and &#946; change. And, in particular, they change when the transmembrane voltage changes but they're constant for a constant Vm.  </p></li>
+<li><p>So, let's go through that again. As long as the membrane potential is constant, &#945; and &#946; are constant. But, if the membrane voltage changes, then &#945; and &#946; change. They change with Vm. We're not working on this problem quantitatively right now, but if you do work on it quantitatively, solve the differential equation for constant Vm, that is to say, for &#945; and &#946; constants. Then, the fraction of channels that are open will become &#945; over &#945; plus &#946;. So, let me ask you, can you do that problem? Can you solve that, that differential equation and find what the actual solution is? If you do, you can see not only that ultimately the fraction becomes &#945; over &#945; plus &#946;, you can also see how long it takes for that to occur.  </p></li>
+</ul>
+<p><strong>So we have to define channel openings in terms of probabilities - Analytical beginning (slide 57)</strong><br />
+<ul><li> Now, how do we get specific values for &#945; and &#945; plus &#946;? We have not provided any way to do it. So, the fact is, up until now nobody has figured out how to get specific values for &#945; and &#946; except by measurement. So, what we have is we have measurements for different kinds of tissues and the different kinds of tissues; the measurements have been captured in equations that we can use for further analysis. But so far as I know, nobody yet knows how to find values for &#945; and &#946; based on some underlying principle. We will discuss this further as we go forward in the course.  </p>
+</li></ul>
+
+<p><strong>So we have to define channel openings in terms of probabilities - Analytical beginning 2(slide 58)</strong>  </p>
+<ul>
+<li>So, the crucial result here is if you framed it this way, the channels that are open will on the average be &#945; over &#945; plus &#946;. And &#945; over &#945; plus &#946; will be a function of Vm. Or, as we saw in the channel segment, if you have a higher voltage with a potassium channel, there's a higher fraction that will be open when the trans-membrane voltage is greater.  </li>
+</ul>
+<p><strong>NC tree in woods(slide 59)</strong>  </p>
+<ul>
+<li>Here's some trees in the North Carolina woods. I thought you might enjoy seeing them. Thank you for watching. See you in the next segment.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:_Transcript_Wk3_L10&amp;oldid=8321">https://share.coursera.org/wiki/index.php?title=Bioelectricity:_Transcript_Wk3_L10&amp;oldid=8321</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

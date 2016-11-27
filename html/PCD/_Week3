@@ -1,0 +1,134 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PCD: Week3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#WEEK_3:_The_conservation_of_the_apoptosis_pathway"><span class="tocnumber">1</span> <span class="toctext">WEEK 3: The conservation of the apoptosis pathway</span></a>
+<ul>
+<li class="toclevel-2"><a href="#3.1_-_The_identification_of_ced_mutants:_egl-1"><span class="tocnumber">1.1</span> <span class="toctext">3.1 - The identification of ced mutants: egl-1</span></a></li>
+<li class="toclevel-2"><a href="#3.2_-_Human_bcl-2_in_C._elegans"><span class="tocnumber">1.2</span> <span class="toctext">3.2 - Human bcl-2 in C. elegans</span></a></li>
+<li class="toclevel-2"><a href="#3.3_-_Cloning_of_C._elegans_ced-9_and_egl-1"><span class="tocnumber">1.3</span> <span class="toctext">3.3 - Cloning of C. elegans ced-9 and egl-1</span></a></li>
+<li class="toclevel-2"><a href="#3.4_-_More_on_ced-9_.28gain-of-function_mutation.2C_pro-apoptotic_function.29"><span class="tocnumber">1.4</span> <span class="toctext">3.4 - More on ced-9 (gain-of-function mutation, pro-apoptotic function)</span></a></li>
+<li class="toclevel-2"><a href="#3.5_-_C._elegans_ced-3_and_mammalian_ICE_.28The_caspase_story.29"><span class="tocnumber">1.5</span> <span class="toctext">3.5 - C. elegans ced-3 and mammalian ICE (The caspase story)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="WEEK_3:_The_conservation_of_the_apoptosis_pathway">WEEK 3: The conservation of the apoptosis pathway</span></h1>
+<h2> <span class="mw-headline" id="3.1_-_The_identification_of_ced_mutants:_egl-1">3.1 - The identification of ced mutants: egl-1</span></h2>
+<p><strong>Fully dominant</strong> A mutation is called fully dominant,  if 100% of animals heterozygous for the mutation exhibit the mutant phenotype.<br />
+<strong>Semi-dominant</strong> A mutation is called semi-dominant, if less than 100% of animals heterozygous for the mutation exhibit the mutant phenotype.<br />
+<strong>Double mutant or ‘epistasis’ analysis</strong> Double mutants were made between the genes that cause opposite phenotypes when inactivated. Double mutants were made basically carrying a ced-9 loss-of-function mutation and either a loss-of-function mutation of ced-3, ced-4 or egl-1.<br />
+<strong>Epistatic</strong>  Epistasis is a form of gene interaction in which a mutation in gene A masks the phenotype caused by a mutation in gene B. In this case, gene A is said to be epistatic to gene B.<br />
+<strong>On/off switch</strong><br />
+<strong>Precursor/product relationship</strong><br />
+<ul><li> The specification of which cells should live and die, the commitment of these cells to the apoptotic fate and their subsequent dismantling, engulfment and degradation are a sequence of cell biological and biochemical events, with one event being dependent on the successful completion of the previous one.<br />
+</li><li> A kind of precursor/product relationship exists between these different stages.</p>
+</li></ul>
+
+<p><strong>Downstream</strong> and <strong>Upstream</strong><br />
+<ul><li> The commitment step can be considered a regulatory pathway or cascade with two alternative states, apoptosis or no apoptosis, like an ON/OFF switch. In that case, "EPISTATIC" indicates "DOWNSTREAM". ced-4 and ced-3 are epistatic to ced-9.<br />
+</li><li> The ectopic apoptosis induced by the loss of ced-9 is dependent on a functional ced-3 gene and on a functional ced-4 gene. ced-3 and ced-4 therefore are required or act downstream of ced-9 to cause apoptosis.<br />
+</li><li> Furthermore, ced-9 normally acts to block the activity of ced-3 and ced-4. 
+</li><li> In contrast, ced-9 is  epistatic to egl-1. The ectopic apoptosis induced by the loss of ced-9 is not dependent on a functional egl-1 gene. egl-1 is therefore not required  downstream of ced-9 to cause apoptosis. Instead, it acts upstream of ced-9 to block its anti-apoptotic function.</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="3.2_-_Human_bcl-2_in_C._elegans">3.2 - Human bcl-2 in C. elegans</span></h2>
+<p><strong>Transgenic lines</strong><br />
+<a href="/wiki/images/5/5e/PCD-transgenic-lines-C-elegans.png" class="image"><img alt="PCD-transgenic-lines-C-elegans.png" src="/wiki/images/5/5e/PCD-transgenic-lines-C-elegans.png" width="616" height="254" /></a>  </p>
+<p><strong>Extra-chromosomal arrays</strong><br />
+<ul><li> Extra-chromosomal arrays are like mini chromosomes that can contain anywhere from 30-300 copies of the injected plasmids.<br />
+</li><li> Since the extra-chromosomal arrays do not have what normal chromosomes have, such as centromeres, they do not always get segregated properly into the daughter cells during cell division. They often get lost.<br />
+</li><li> That's why only a few of the progeny generated from the injected animals will actually carry the extra-chromosomal arrays and not all cells in these animals will actually carry it. The animals are therefore mosaic.  </p>
+</li></ul>
+
+<p><strong>Mosaism</strong><br />
+Mosaic - an individual who has two or more genetically different cell lines derived from a single zygote. The differences may be point mutations, chromosomal changes, etc. 
+from the glossary of <a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/books/NBK7584/">Human Molecular Genetics</a>. 2nd edition. Strachan T, Read AP. New York: Wiley-Liss; 1999.  </p>
+<h2> <span class="mw-headline" id="3.3_-_Cloning_of_C._elegans_ced-9_and_egl-1">3.3 - Cloning of C. elegans ced-9 and egl-1</span></h2>
+<p><strong>Mendel’s second law (the principle of independent assortment)</strong>
+<ul><li> The principle of independent assortment states that genes or alleles for different traits assort independently of one another in gamete formation.<br />
+</li><li> However, this is of course only true for genes that are located on different chromosomes.<br />
+</li><li> It is NOT true for genes that are located on the same chromosome. If genes are located on the same chromosome one refers to them as linked.</p>
+</li></ul>
+
+<p><strong>Linkage analysis</strong><br />
+<ul><li> Linkage analysis allows you to determine on which chromosome the mutation and the affected gene are located.<br />
+</li><li> Linkage analysis is based on Mendel's second law, the principle of independent assortment.<br />
+</li><li> To do linkage analysis, you cross your mutant with a strain that has one of the six  <em>C. elegans</em> chromosomes marked with a mutation that causes a phenotype that can easily be detected, such as an Unc phenotype or an Egl phenotype.<br />
+</li><li> This analysis you perform with marker strains for all six chromosomes, or at least for five of them because you can do other analyses to determine whether your mutation is on the sex chromosome, the X chromosome. Together, these  analyses should result in the identification of one chromosome, to which your mutation is linked.  </p>
+</li></ul>
+
+<p><strong>Non-independent assortment</strong>  </p>
+<p><strong>“Linked”</strong>  </p>
+<p><strong>Mapping experiments</strong>  </p>
+<p><strong>Three-factor mapping experiment</strong><br />
+<ul><li> Three-factor mapping experiments are called this because you determine where your mutation is located with respect to two known sites and therefore a specific interval on the chromosome.<br />
+</li><li> It will basically allow you to determine the order of those three factors, your mutation and the two known sites.<br />
+</li><li> Mapping experiments are not based on the principle of independent assortment, but on the fact that loci that are located on one chromosome do not assort independently.<br />
+</li><li> Loci that are located on one chromosome can only be separated from each other or newly combined through recombination.  </p>
+</li></ul>
+
+<p><strong>Recombination</strong><br />
+Genetic recombination is the production of new combinations of alleles, encoding a novel set of genetic information, e.g., by the pairing of homologous chromosomes in meiosis, or by the breaking and rejoining of DNA strands, which forms new molecules of DNA.<br />
+(from <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Genetic_recombination">Wikipedia</a>)  </p>
+<p><strong>Homologous chromosomes</strong><br />
+<ul><li> A pair of chromosomes that have the same length, centromer position, and staining pattern.<br />
+</li><li> The two chromosomes of each pair carry genes controlling the same inherited characters.<br />
+</li><li> One is inherited from the mother, and the other is inherited from the father.  </p>
+</li></ul>
+
+<p><strong>Genetic diversity</strong>  </p>
+<p><strong>Map units (Centimorgans)</strong><br />
+<ul><li> Map units or centimorgans are a genetic unit and are defined as 1% recombination.<br />
+</li><li> In 100 meiosis, one would expect to see one recombination event between two loci that are 1 map unit apart.<br />
+</li><li> The “distance” between two linked gene pairs where 1% of the products of meiosis are recombinant; a unit of distance in a linkage map. [Reference: Griffiths AJF, Miller JH, Suzuki DT, et al. <a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/books/NBK21819/">An Introduction to Genetic Analysis.</a> 7th edition. New York: W. H. Freeman; 2000. Accurate calculation of large map distances.]</p>
+</li></ul>
+
+<p><strong>Recombinants</strong>  </p>
+<p><strong>Transformation rescue</strong>  </p>
+<p><strong>Cosmids</strong>  </p>
+<p><strong>Minimal rescue fragment</strong>  </p>
+<p><strong>Genome sequence</strong>  </p>
+<p><strong>RNA-mediated interference (RNAi)</strong>  </p>
+<p><strong>Polymorphic strains</strong>  </p>
+<p><strong>Single nucleotide polymorphism (SNP) mapping</strong>  </p>
+<p><strong>Deep sequencing</strong><br />
+<ul><li> The way mutations that were identified in forward genetic screens are identified and the affected genes cloned now is that you cross your mutant to the Hawaii strain and in the F2 generation you identify your homozygous mutant animals. These F2 animals are pooled, their genomic DNA isolated and sequenced.
+</li><li> The sequence will reveal the chromosome, the region of the chromosome and the transcription unit or the gene where it is located and even identify the exact mutation.  </p>
+</li></ul>
+
+<p><strong>Homologous proteins</strong>  </p>
+<p><strong>Conservation</strong>  </p>
+<h2> <span class="mw-headline" id="3.4_-_More_on_ced-9_.28gain-of-function_mutation.2C_pro-apoptotic_function.29">3.4 - More on ced-9 (gain-of-function mutation, pro-apoptotic function)</span></h2>
+<p><strong>Mitochondria</strong><br />
+<ul><li> Their main function is to convert energy into chemical energy in the form of ATP, the energy currency of the cell. Mitochondria convert energy that we take up through our nutrition into ATP, and the enzymatic machinery that does this is the electron transport chain, which is located in the inner mitochondrial membrane.  </p>
+</li></ul>
+
+<p><strong>Receptor domain (Bcl-2 superfamily)</strong><br />
+The ced-9  gain-of-function mutation n1950, which causes a general block in apoptosis, is a missense mutation that changes a single amino acid in the ced-9 protein sequence. Specifically, it is a glycine to-glutamate substitution at position 169 of the ced-9 sequence. This amino acid is within a conserved region of the ced-9 protein that is referred to as the "receptor domain" of the guardians.  </p>
+<p><strong>Redundancy</strong>  </p>
+<h2> <span class="mw-headline" id="3.5_-_C._elegans_ced-3_and_mammalian_ICE_.28The_caspase_story.29">3.5 - C. elegans ced-3 and mammalian ICE (The caspase story)</span></h2>
+<p><strong>Protease</strong><br />
+<strong>Cysteine protease</strong><br />
+<strong>Protease substrate</strong><br />
+<strong>Caspase (cysteine-dependent aspartate-directed protease)</strong></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 41/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PCD:_Week3&amp;oldid=14705">https://share.coursera.org/wiki/index.php?title=PCD:_Week3&amp;oldid=14705</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,35 @@
+#Other measurement types
+
+<sup>*by Chrysanthi Tseloudi*, on [5.01 Other measurement types](https://share.coursera.org/wiki/index.php/Quantitativemethods:Main#5.01_External_validity_threats)</sup>
+
+External validity, or generalizability, refers to **whether the hypothesized relation holds for other persons, settings and times**. Just like with internal validity, there are a number of threats to external validity.
+###History Threat
+A history threat means that the observed effect **doesn't generalize to other time periods**.
+>Example:
+
+>Consider a compliance study performed in the nineteen fifties in the US. Results showed that participants were willing to comply with highly unethical directions provided by an authoritarian experimenter. These results would probably be less extreme if we repeated the study nowadays, for example because people are more highly educated and less sensitive to authority than in the nineteen fifties.
+###Setting Threat
+A setting threat to external validity means that the observed effect only holds in a specific setting. The findings **do not generalize to other environments or situations**.
+>Example:
+
+>Suppose we investigate the relation between violent imagery and aggression and find that children who watch a violent video are more aggressive afterwards in the school playground. A setting threat occurs if this effect depends on the surroundings, for example if children are not more aggressive when they play at home under their caregiver's supervision.
+
+There are **two setting threats associated with the artificiality of the research setting**
+specifically. These threats are pretesting and reactivity.
+####Pretesting Threat
+A pretesting threat means that **the observed effect is found only when a pretest is performed**. This threat is closely related to the internal validity threat of testing.
+
+>Example: Say we investigate a new therapy for treating depression and use a pretest. Suppose the depression pretest makes participants realize how serious their problems are, and thereby makes them more receptive to the treatment. The treatment is effective, but only if receptiveness is increased by the pretest first. In this case internal validity is threatened because 'receptiveness' is missing from our hypothesis. External validity is also threatened, because the hypothesis will only apply to situations where a pretest is part of the setting.
+####Reactivity
+A reactivity threat occurs when the participants or experimenter react to the fact that they are participating in a research study. Reactivity includes participant and experimenter expectancy and altered participant behavior, for example due to nervousness. This can cause the hypothesized relation to **occur only in a research setting and not in a in a natural setting**.
+>Example:
+
+>Say we investigate a new method for teaching high school math. The researcher is present during the lessons and measures math performance in class. What if students work harder because they know they are being studied and this makes the new method more effective? In a natural setting, without the researcher present, students might put less effort in their schoolwork, reducing the effectiveness of the new method.
+###Selection
+Selection is a very important threat to external validity. A selection threat occurs when **the hypothesized relation only holds for a specific subset of people** or if the results in our study are **biased due to over- or underrepresentation of a certain subset**.
+>Examples:
+
+>* Suppose that in our study on a new depression therapy, we recruited participants who actively volunteered. Say we find that the therapy method is effective. Of course our volunteers might be more proactive about solving their problems than the average person. It is entirely possible that the method is ineffective for people who are less proactive. The overrepresentation of volunteers might lead to an overestimation of the therapy's effectiveness.*
+>* Suppose we want to know people's opinion on women's right to vote and we interview people on a university campus. The sample is now so selective that it is highly unlikely that results will generalize to the general public's opinion.
+
+What can we do about these threats to external validity? History and setting threats to external validity can be reduced by replicating a study in a different time or by repeating a study in different settings. In the case of threats related to the artificiality of the research setting specifically, this means repeating a study in a more natural environment. Replication can also reduce the threat of selection to external validity, in this case by repeating a study with different groups of subjects. But there is another way to reduce the threat of selection. This is random sampling of the research sample, also referred to as probability sampling.

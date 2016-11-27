@@ -1,0 +1,13 @@
+Page 13.
+
+	forall(m in Men, w in Women)
+		wrank[m,w] < wrank[w,wife[m]] => mrank[w,husband[w]] < mrank[w,m];
+	forall(w in Women, m in Men)
+		mrank[w,m] < mrank[w,husband[m]] => wrank[m,wife[m]] < mrank[m,w];
+
+Three corrections, highlighted between dashes.
+
+	forall(m in Men, w in Women)
+		wrank[m,w] < wrank[-m-,wife[m]] => mrank[w,husband[w]] < mrank[w,m];
+	forall(w in Women, m in Men)
+		mrank[w,m] < mrank[w,husband[-w-]] => wrank[m,wife[m]] < -w-rank[m,w];

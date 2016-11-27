@@ -1,0 +1,32 @@
+* Secret key establishment
+* Secure communication
+
+#### Cryptography can do more
+
+* [Digital signatures](http://en.wikipedia.org/wiki/Digital_signatures)
+* Anonymous communication [Mix Net](http://en.wikipedia.org/wiki/Mix_net)
+* Anonymous [digital cash](http://en.wikipedia.org/wiki/Digital_cash)
+* Pseudonymous [digital cash](http://bitcoin.org/bitcoin.pdf)
+
+#### Protocols
+
+* Elections
+* Private auctions
+
+Anything that can be done with a trusted authority can also be done without. Instead of talking to the central authority the parties (voters) talk to each other using a protocol in a way that at the end the protocol reveals the outcome of the election without revealing the individual inputs
+
+#### Crypto Magic
+
+* Privately outsourcing computation [Verifiable computing](http://en.wikipedia.org/wiki/Verifiable_computing)
+* [Zero knowledge proof](http://en.wikipedia.org/wiki/Zero-knowledge_proof)
+
+#### A rigorous science
+
+The three steps in cryptography:
+*Precisely define threat model
+*Propose a construction
+*Prove that breaking construction under threat model will solve an underlying hard problem
+
+#### Thm
+
+Thm means theorem.

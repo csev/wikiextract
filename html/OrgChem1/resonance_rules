@@ -1,0 +1,76 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">OrgChem1:resonance rules</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Resonance_rules"><span class="tocnumber">1</span> <span class="toctext">Resonance rules</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Conditional_Rules"><span class="tocnumber">1.1</span> <span class="toctext">Conditional Rules</span></a></li>
+<li class="toclevel-2"><a href="#Priority_rules"><span class="tocnumber">1.2</span> <span class="toctext">Priority rules</span></a></li>
+<li class="toclevel-2"><a href="#Categorical_Rules"><span class="tocnumber">1.3</span> <span class="toctext">Categorical Rules</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Resonance_rules">Resonance rules</span></h1>
+<p>The resonance rules can be classified into three groups: the rules <strong>"conditional"</strong>, the <strong>"Priority"</strong> and <strong>"categorical"</strong>. The first let us establish whether the structures in question are not resonance structures, the latter lead us to determine which of them is the most abundant, and in subsequent order, those of lower contribution, while the latter, the "categorical" refer to the rules that allow us to substantiate the relative magnitude of the resonance energy different molecules through their respective groups resonant structures.</p>
+<h2> <span class="mw-headline" id="Conditional_Rules">Conditional Rules</span></h2>
+<p>They refer to the requirements for each of the structures to be considered or contributing resonance forms. This group includes the rules that allow to solve resolve the question:
+<em>The structures "A", "B", "C", ... etc. are resonance forms?</em></p>
+<p>These rules indicate that two or more structures are resonance forms if:</p>
+<ol>
+<li>They have the same molecular formula.</li>
+<li>They retain the same skeleton  sigma (all sigma bonds remain the same in different resonating ways), implying no change in the position of atoms within the molecule.</li>
+<li>retain the same number of paired electrons.</li>
+<li>The only difference is the different position of pi electrons and free electrons(contrast).</li>
+</ol>
+<p><a href="/wiki/images/3/34/Conditional_rules.png" class="image"><img alt="Conditional rules.png" src="/wiki/images/3/34/Conditional_rules.png" width="556" height="308" /></a></p>
+<blockquote>
+  <p><strong>Figure 1</strong> shows two structures that do meet the first rule as they have the same molecular formula, but violate the second rule, as in the structure 1 there are six carbon-hydrogen sigma bonds and no sigma bond oxygen-hydrogen, while in the structure 2 only there are five sigma bonds and carbon-hydrogen bond sigma oxygen-hydrogen, indicating that there was no change position of a hydrogen atom within the molecule (in the structure 1 is attached to the carbon and structure 3 is attached to oxygen). <strong>Figure 2</strong> also contains 1 attached to the frame with the frame 4 in a reaction of homolysis, both structures meet the first two rules, but the difference is in the number of electrons paired, since the second structure has two electrons unpaired and the first one. Finally <strong>figure 3</strong> illustrates a relationship of resonant structures,they comply with all the rules conditions. See Table 1.</p>
+</blockquote>
+<p><a href="/wiki/images/c/cd/Conditionalrulestable.png" class="image"><img alt="Conditionalrulestable.png" src="/wiki/images/c/cd/Conditionalrulestable.png" width="866" height="293" /></a></p>
+<h2> <span class="mw-headline" id="Priority_rules">Priority rules</span></h2>
+<p>Based on the premise that establishes the direct relationship between
+resonance energy magnitude and stability, that is, the greater the resonance energy the greater stability, expressed in different ways according to the author (Carey, 1999; Fessenden, 1994; Hendrickson, 1970, Loudon, 1995, March,1992) - these rules refer to features that
+define the relative order of stability resonance forms and consequently determine the magnitude of their relative contribution. These rules match
+the question: 
+<ul><li>which of resonant structures "A", "B", "C", etc., is in greater proportion?</p>
+</li></ul>
+
+<p>In this case the contribution order is increased if:</p>
+<ol>
+<li>There is a smaller total number of charges (real or formal, not partial). </li>
+<li>There is a greater number of atoms within the molecule that meet the octet rule (or octet expanded where feasible).</li>
+<li>The charges are mainly located in atoms better able to bear them, either by electronegativity, by type of substitution       (benzylic carbons, aryl,tertiary, secondary, primary) or atomic volume.</li>
+<li>Separation of opposite charges is minimal, being when there are implicit loads, the separation thereof is zero and so are the resonance forms important.</li>
+<li>The same charge separation is maximal.</li>
+</ol>
+<h2> <span class="mw-headline" id="Categorical_Rules">Categorical Rules</span></h2>
+<p>Are those with which you can define the relative resonance energy magnitude of several molecules.
+In this way the resonance energy is larger when:</p>
+<ol>
+<li>There are more equivalents of the structures higher priority (according to the rules 2-1 to 2-5), ie not only have the same number of links pi (isovalentes: Hendrickson, 1970), but also having the same constitution (type and number of bonds: Eliel, 1970).</li>
+<li>More isovalent structures exist (those with the same number of pi bonds).</li>
+<li>More planes are resonance systems in the molecule, ie atoms with pi electrons and atoms with free electrons involved in the resonance are coplanar, consequently resulting coplanarity the electron resonance.</li>
+<li>The resonance system more linear than crossover.</li>
+</ol>
+<p>Source: <a rel="nofollow" class="external text" href="http://educacionquimica.info/articulos.php?Id_articulo=814">Martínez, A. R. et al. Reglas de resonancia. Revista Educación Química UNAM 15, 446-450 (2004)</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=OrgChem1:resonance_rules&amp;oldid=7912">https://share.coursera.org/wiki/index.php?title=OrgChem1:resonance_rules&amp;oldid=7912</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

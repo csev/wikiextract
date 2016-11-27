@@ -1,0 +1,84 @@
+"Game" is a concept very difficult to define.
+
+
+Here are some definitions:
+
+**David Parlett**:
+"A game has “ends and means”: an objective, an outcome, and a set of rules to get there."
+
+**Clark C. Abt**:
+"A game is an activity involving player decisions, seeking objectives within a “limiting context” [i.e. rules]."
+
+**Roger Callois**:
+"A game has six properties: it is “free” (playing is optional and not obligatory); “separate” (fixed in space and time, in advance); has an uncertain outcome; is “unproductive” (in the sense of creating neither goods nor wealth — note that wagering transfers wealth between players but does not create it); is governed by rules; and is “make believe” (accompanied by an awareness that the game is not Real Life, but is some kind of shared separate “reality”)."
+
+**Bernard Suits**:
+"A game is a “voluntary effort to overcome unnecessary obstacles.” This is a favorite among my classroom students. It sounds a bit different, but includes a lot of concepts of former definitions: it is voluntary, it has goals and rules. The bit about “unnecessary obstacles” implies an inefficiency caused by the rules on purpose — for example, if the object of Tic Tac Toe is to get three symbols across, down or diagonally, the easiest way to do that is to simply write three symbols in a row on your first turn while keeping the paper away from your opponent. But you don’t do that, because the rules get in the way… and it is from those rules that the play emerges."
+
+**Chris Crawford**:
+"Games have four properties. They are a “closed, formal system” (this is a fancy way of saying that they have rules; “formal” in this case means that it can be defined, not that it involves wearing a suit and tie); they involve interaction; they involve conflict; and they offer safety… at least compared to what they represent (for example, American Football is certainly not what one would call perfectly safe — injuries are common — but as a game it is an abstract representation of warfare, and it is certainly more safe than being a soldier in the middle of combat)."
+
+**Greg Costikyan**:
+"Games are a “form of art in which the participants, termed Players, make decisions in order to manage resources through game tokens in the pursuit of a goal.” This definition includes a number of concepts not seen in earlier definitions: games are art, they involve decisions and resource management, and they have “tokens” (objects within the game). There is also the familiar concept of goals."
+
+**Eric Zimmerman and Katie Salen (in Rules of Playby)**:
+"Games are a “system in which players engage in an artificial conflict, defined by rules, that results in a quantifiable outcome” (“quantifiable” here just means, for example, that there is a concept of “winning” and “losing”)."
+
+**Ian Schreiber**:
+Some of the elements mentioned that seem to be common to many (if not all) games include:
+* Games are an activity.
+* Games have rules.
+* Games have conflict.
+* Games have goals.
+* Games involve decision making.
+* Games are artificial, they are safe, and they are outside ordinary life. This is sometimes referred to as the players stepping into the “Magic Circle” or sharing a “lusory attitude”.
+* Games involve no material gain on the part of the players.
+* Games are voluntary. If you are held at gunpoint and forced into an activity that would normally be considered a game, some would say that it is no longer a game for you. (Something to think about: if you accept this, then an activity that is voluntary for some players and compulsory for others may or may not be a game… depending on whose point of view you are looking at.)
+* Games have an uncertain outcome.
+* Games are a representation or simulation of something real, but they are themselves make believe.
+* Games are inefficient. The rules impose obstacles that prevent the player from reaching their goal through the most efficient means.
+* Games have systems. Usually, it is a closed system, meaning that resources and information do not flow between the game and the outside world.
+* Games are a form of art.
+
+**Jesper Juul, from "The Game, The Player, The World"**: http://www.jesperjuul.net/text/gameplayerworld/
+"The game definition I propose finally has 6 points: 
+* 1) Rules: Games are rule-based. 
+* 2) Variable, quantifiable outcome: Games have variable, quantifiable outcomes. 
+* 3) Value assigned to possible outcomes: That the different potential outcomes of the game are assigned different values, some being positive, some being negative. 
+* 4) Player effort: That the player invests effort in order to influence the outcome. (I.e. games are challenging.) 
+* 5) Player attached to outcome: That the players are attached to the outcomes of the game in the sense that a player will be the winner and "happy" if a positive outcome happens, and loser and "unhappy" if a negative outcome happens. 
+* 6) Negotiable consequences: The same game [set of rules] can be played with or without real-life consequences."
+
+**Jane McGonigal, from "Reality is Broken"**:
+She defines a game as having four essential traits: a goal, rules, a feedback system and voluntary participation.
+* The goal is what the players hope to achieve by playing the game. It provides the user with a sense of purpose and is used to focus their attention and continually orients their participation.
+* The rules place limitations on how players can achieve goals. Through the removal of the most obvious ways to reach the goal, it pushes the players to explore the solution space and unleash their creativity.
+* The feedback system tells the players how close they are to achieving their goals. Real-time feedback serves as a promise to the players that the goal is achievable and it provides motivation to continue playing. This usually takes on the form of points, levels or a progress bar.
+* Voluntary participation requires that everyone playing the game accepts the goals, the rules and the feedback. This knowingness establishes common ground between the players.
+
+
+## Jesse Schell, from ["The Art of Game Design: A Book of Lenses"](http://www.amazon.com/The-Art-Game-Design-lenses/dp/0123694965)
+
+> A game is a problem-solving activity, approached with a playful attitude.
+
+Jesse Schell also provides a list of important qualities of a game:
+
+> 1. Games are entered willfully.
+> 1. Games have goals.
+> 1. Games have conflict.
+> 1. Games have rules.
+> 1. Games can be won and lost.
+> 1. Games are interactive.
+> 1. Games have challenge.
+> 1. Games can create their own internal value.
+> 1. Games engage players.
+> 1. Games are closed, formal systems.
+
+Here are several related definitions from Jesse Schell:
+
+> * Fun is pleasure with surprises.
+> * Play is manipulation that satisfies curiosity.
+> * A toy is an object you play with.
+> * A good toy is an object that is fun to play with.
+
+Given the primacy  of rules, how possible is to design games that allow for, or encourage innovative solutions? The history of innovation reveals a lot of discovery 'by mistake or accident' and a lot of rule breaking. If gamification is to be an asset for addressing 'wicked problems' does it need to have the capacity for players to change (hack?) the rules?

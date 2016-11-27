@@ -1,0 +1,81 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:Information theoretic security and the one time pad</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Stream_Ciphers:_The_One_Time_Pad"><span class="tocnumber">1</span> <span class="toctext">Stream Ciphers: The One Time Pad</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Symmetric_Ciphers:_Definition"><span class="tocnumber">1.1</span> <span class="toctext">Symmetric Ciphers: Definition</span></a></li>
+<li class="toclevel-2"><a href="#The_One_Time_Pad_.28Vernam_1917.29"><span class="tocnumber">1.2</span> <span class="toctext">The One Time Pad (Vernam 1917)</span></a></li>
+<li class="toclevel-2"><a href="#Information_Theoretic_Security_.28Shannon_1949.29"><span class="tocnumber">1.3</span> <span class="toctext">Information Theoretic Security (Shannon 1949)</span></a></li>
+<li class="toclevel-2"><a href="#The_bad_news..."><span class="tocnumber">1.4</span> <span class="toctext">The bad news...</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Stream_Ciphers:_The_One_Time_Pad">Stream Ciphers: The One Time Pad</span></h2>
+<h3> <span class="mw-headline" id="Symmetric_Ciphers:_Definition">Symmetric Ciphers: Definition</span></h3>
+<p><u>Def:</u> a <strong>cipher</strong> defined over $$ (\mathcal{K, M, C}) $$</p>
+<p>A cipher is a pair of "efficient" algorithms $$ (E, D) $$ defined over a triple: the set of all possible keys $$\mathcal{K}$$, the set of all possible messages $$\mathcal{M}$$ and the set of all possible cipher texts $$\mathcal{C}$$.</p>
+<p>$$ E: \mathcal{K}\times \mathcal{M}\to \mathcal{C} $$</p>
+<p>The encryption algorithm E takes keys and messages and outputs cipher texts.</p>
+<p>$$ D: \mathcal{K}\times \mathcal{C}\to \mathcal{M} $$</p>
+<p>The decryption algorithm D takes keys and cipher texts and outputs messages</p>
+<p>$$ \forall m \in \mathcal{M}, k \in \mathcal{K} \to D(k, E(k,m)) = m $$</p>
+<p>s.t. for every message in the message space and every key in the key space, if I encrypt the message with the key k and then decrypt the resulting cipher text with the same key k I get back the original message.</p>
+<p>$$ D(k, E(k,m)) = m $$ is called the consistency equation</p>
+<ul>
+<li><strong>E</strong> is often randomized (will use random bits during encryption)</li>
+<li><strong>D</strong> is always deterministic</li>
+</ul>
+<h3> <span class="mw-headline" id="The_One_Time_Pad_.28Vernam_1917.29">The One Time Pad (Vernam 1917)</span></h3>
+<p>Our first example of a "secure" cipher is the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/One-time_pad">One-time pad</a></p>
+<p>$$ \mathcal{M} = \mathcal{C} = \lbrace 0,1 \rbrace^n $$<br />
+$$ \mathcal{K} = \lbrace 0,1 \rbrace^n $$</p>
+<p>The message space of the OTP is the set of all n bit binary strings. The key space is the same as the message space. A key in the OTP is a random sequence of bits that is as long as the message.</p>
+<p>$$ c = E(k,m)) = k \oplus m $$</p>
+<p>The cipher text is simply the <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Bitwise_operation#XOR">xor</a> of the message and the key.</p>
+<p><strong>Example:</strong> $$ (msg: 0110111) \oplus (key: 1011001) = cipher: 1101110 $$</p>
+<p>$$ m = D(k,c)) = k \oplus c $$</p>
+<p>To decrypt we xor the cipher text and the key again.</p>
+<p>We verify that it satisfies the consistency equation:</p>
+<p>$$ D(k, E(k,m)) = D(k, k \oplus m) = k \oplus (k \oplus m) = (k \oplus k) \oplus m = 0 \oplus m = m $$</p>
+<p>xor is addition modulo 2, and addition is <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Associative_property">associative</a> (the order of operands does not matter). XOR of a number and 0 is always the number itself.</p>
+<p>The one time pad is a very fast way to encrypt messages, but it needs very long keys (as long as the message). What makes the OTP difficult to use in practice is that if you have a secure way to transmit the key, you could as well use it to transmit the message itself.</p>
+<h3> <span class="mw-headline" id="Information_Theoretic_Security_.28Shannon_1949.29">Information Theoretic Security (Shannon 1949)</span></h3>
+<p>Basic idea: CT should reveal no information about the PT</p>
+<p><u>Def:</u> A cipher $$ (E, D) $$ over $$ (\mathcal{K, M, C)} $$ has <u><b>perfect secrecy</b></u> if</p>
+<p>$$ \forall m&#95;0,m&#95;1 \in \mathcal{M} (len(m&#95;0) = len(m&#95;1))\ and\ \forall c \in \mathcal{C} Pr[E(k,m&#95;0)=c] = Pr[E(k,m&#95;1)=c] $$</p>
+<p>For all messages m<sub>0</sub> and m<sub>1</sub> in the message space (with same length) and for all cipher texts in the cipher space, the probability to get cipher text c if we encrypt m<sub>0</sub> with key k is the same as the probability to get c if we encrypt m<sub>1</sub> with key k, where the key k is uniform in the keyspace $$ \mathcal{K}$$: $$ k \overset{R}{\leftarrow}  \mathcal{K} $$</p>
+<p>So if an attacker can intercept the cipher text c, the probability that it encrypts the message m<sub>0</sub> is exactly the same as that it encrypts m<sub>1</sub> for all messages in the message space. So he learns nothing about PT from CT.</p>
+<p>There is no CT only attack on a cipher that has perfect secrecy! (but other attacks may still be possible)</p>
+<p><u>Lemma:</u> OTP has pefect secrecy.</p>
+<p>Proof: $$ \forall m,c&#160;: Pr[E(k,m)=c] = \frac{\sharp keys\ k \in \mathcal{K}\ s.t.\ E(k,m)=c}{|\mathcal{K}|}$$</p>
+<p>For every message and cipher text, the probability if I choose a random key k to get cipher c is equal to the possible number of keys that map m to c <i>(s.t. if I encrypt m with this k and get c)</i> divided by the total number of keys.</p>
+<p>So: $$ \forall m,c&#160;: \sharp \lbrace k \in \mathcal{K}&#160;: E(k,m)=c \rbrace = const. $$</p>
+<p>For OTP: $$ k \oplus m = c \Rightarrow k = m \oplus c $$<br />
+$$ \Rightarrow\ \forall m,c\ \sharp \lbrace k \in \mathcal{K}&#160;: E(k,m)=c \rbrace = 1 $$<br />
+$$ \Rightarrow $$ OTP has perfect secrecy</p>
+<h3> <span class="mw-headline" id="The_bad_news...">The bad news...</span></h3>
+<p><u>Thm:</u> perfect secrecy $$ \Rightarrow |\mathcal{K}|\ \ge\ |\mathcal{M}| $$</p>
+<p>To have perfect secrecy, the number of possible keys (and therefore the length of the key) must be greater than or equal to the number of possible messages.</p>
+<p>And this reduces to $$|\mathcal{K}|\ \ge\ |\mathcal{M}| \Rightarrow 2^m \ge 2^n \Rightarrow m \ge n$$, in other words, each key must have the same bit string length as the message it encrypts. <i>This is what makes OTP inconvenient for real word security</i>.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:Information_theoretic_security_and_the_one_time_pad&amp;oldid=13732">https://share.coursera.org/wiki/index.php?title=Crypto:Information_theoretic_security_and_the_one_time_pad&amp;oldid=13732</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

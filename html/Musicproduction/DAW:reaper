@@ -1,0 +1,191 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:reaper</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a>&#160;: <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW specifics</a></p>
+<p>REAPER (Rapid Environment for Audio Production, Engineering, and Recording) is a digital audio workstation. It is distributed with an uncrippled evaluation license.  After a 60 day trial period, a nag screen explaining the license cost will appear on start up. It is currently available for Microsoft Windows (98/Me/2000/XP/Vista/7/8) and Mac OS X (10.4/10.5/10.6/10.7/10.8/10.9).  It has been tested, and shown to be stable, in several Linux builds using WINE. Version 4 of REAPER was released on August 3, 2011.  Version 4.71 was released on July 15, 2014. REAPER was created by a team led by Justin Frankel, the creator of Winamp.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Project_specifics"><span class="tocnumber">1</span> <span class="toctext">Project specifics</span></a></li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">2</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">3</span> <span class="toctext">Editing Audio</span></a></li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">4</span> <span class="toctext">Efficient Editing</span></a></li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">5</span> <span class="toctext">Editing MIDI</span></a></li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">6</span> <span class="toctext">Mixing</span></a></li>
+<li class="toclevel-1"><a href="#Useful_resources"><span class="tocnumber">7</span> <span class="toctext">Useful resources</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">8</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Project_specifics">Project specifics</span></h2>
+<p>details of file management
+<ul><li>Project Name
+<ul><li>Mac/PC: File - &gt; Save Project As - &gt; Pick a name and a place to save it (Be careful not to save a project within another project folder).
+</li></ul>
+</li><li>File type
+<ul><li>Mac/PC: File - &gt; Project Settings - &gt; Media - &gt; Audio format for new recordings (WAV or AIFF are good settings)
+</li></ul>
+</li><li>Bit depth
+<ul><li> Mac: File -&gt; Project Settings -&gt; Advanced -&gt; Track mixing bit depth
+</li><li> PC:  File -&gt; Project Settings -&gt; Media -&gt; WAV Bit Depth (24 bit is a good default)  (this sets your TRACK properties, you should also check your INPUT DEVICE properties under Options -&gt; Preferences -&gt; Device)
+</li></ul>
+</li><li>Sampling rate
+<ul><li> Mac: REAPER -&gt; Preferences -&gt;Device -&gt; Request sample rate 
+</li><li> PC:  File -&gt; Project Settings -&gt; Check box next to "Sample Rate" and set rate in combobox (48KHz is a good default) (this sets your TRACK properties, you should also check your INPUT DEVICE properties under Options -&gt; Preferences -&gt; Device)
+</li></ul>
+</li><li>Hardware
+</li><li>Buffer size
+<ul><li> Mac: REAPER -&gt; Preferences -&gt;Device -&gt; Request block size (default on 512)
+</li><li> PC:  Options -&gt; Preferences -&gt; Device (this sets the INPUT buffer size, the "Buffering" tab includes options for media read buffers)
+</li></ul>
+</li><li>Project folders specifics</p>
+</li></ul>
+
+<p>All of these settings can be set in the project settings (File -&gt; Project Settings...) in the "Project Settings" and "Media" tabs</p>
+<h2> <span class="mw-headline" id="Recording">Recording</span></h2>
+<p>details of audio recording
+<ul><li>Metronome(click track)
+<ul><li>Click on the metronome icon or check [Options]-&gt;[Metronome/pre-roll]-&gt;[Metronome enabled]
+</li></ul>
+</li><li>Count in
+<ul><li>Right-click on the metronome icon or go to [Options]-&gt;[Metronome/pre-roll]-&gt;[Metronome/pre-roll settings...]
+</li></ul>
+</li><li>Time Signature Changes
+<ul><li>Reaper handles this be indicating time signature CHANGES, rather than specifying a time signature for each measure. To indicate a time signature change, insert a Tempo / Time Signature Marker - this will give you an interface to specify the new time signature.
+</li></ul>
+</li><li>Audio recording tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h2>
+<p>NB. In Reaper a "region" is called an "item". In Reaper the term "region" has a completely different meaning. So in the section below, where "region" is mentioned, mentally substitute "item"</p>
+<p>details of editing audio
+<ul><li>Trimming
+<ul><li>Mouse over the left or right edge of an audio region.  When the mouse cursor changes to a bracket with arrows, left-click and drag to change the start or stop points of the region.
+</li></ul>
+</li><li>Cutting
+<ul><li>Click the desired point of separation on an audio track and hit 'S'. This splits the audio track into two tracks. You can also select a portion of the region (click and drag in the project timeline near the top), right-click the track and click "split items at time selection", to split where the time selection begins and ends.
+</li></ul>
+</li><li>Grid
+<ul><li>To toggle the grid display on or off, click on the Grid Lines icon in the toolbar or select the [Options]-&gt;[Snap/grid]-&gt;[Show grid] menu item.
+</li><li>To toggle snap to grid on or off, click on the Snap Enabled icon in the toolbar or select the [Options]-&gt;[Snap/grid]-&gt;[Enable Snapping] menu item.
+</li></ul>
+</li><li>Change grid resolution
+<ul><li>Right-click on either the Grid Lines or Snap Enabled icon in the tool bar or select the [Options]-&gt;[Snap/grid]-&gt;[Snap/grid settings...] menu item.
+</li></ul>
+</li><li>toggle grid display
+<ul><li>Alt-G
+</li></ul>
+</li><li>toggle snap to grid
+<ul><li>Alt-S
+</li></ul>
+</li><li>modifier key to toggle snap to grid
+<ul><li>Moving a track while holding Shift ignores snap and time selection.
+</li></ul>
+</li><li>add fades
+<ul><li>Mouse over the TOP left or right edge of an audio region.  When the mouse cursor changes to a curved line with arrows, left-click and drag to change the fade length or right-click to change the fade curve. You can split (see cutting above) a region in order to add fades at other locations.
+</li></ul>
+</li><li>modify fades
+<ul><li>Same procedure as adding fades
+</li></ul>
+</li><li>efficient compiling of multiple takes
+<ul><li>Select the part of recording you want to duplicate and drag it to a new track while pressing Ctrl. An alternative method is splitting the track (shortcut: S) and dragging it to the new track while pressing Ctrl.
+</li><li>Repeat until you have all the needed parts, then add crossfades between takes (see above).
+</li><li>Compile the track by selecting all the items, right click and Glue items.</p>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h2>
+<p>details of efficient editing
+<ul><li>Zoom
+<ul><li>The keyboard shortcuts for this are the + and - key on your keyboard
+</li><li>The mouse wheel also zooms in and out.
+</li><li>Selecting a time interval and pressing Ctrl+NumPadPlus or Ctrl+PageUp (on windows) will zoom in to that time interval.
+</li></ul>
+</li><li>Nudge
+<ul><li>The keyboard shortcuts for this is N.
+</li><li>You can also right click and select Nudge.
+</li><li>Either option will open a pop up screen that allows you to choose direction and amount of Nudge.
+</li></ul>
+</li><li>Cycle
+<ul><li>You must first select a time interval to cycle through.
+</li><li>The keyboard shortcut for this is R.
+</li><li>You can also click on the button to the right of the record button.
+</li></ul>
+</li><li>Merge
+<ul><li>In Reaper, this is known as gluing. You can find this option under the "Item" tab.
+</li></ul>
+</li><li>Name
+<ul><li>Select the track. Under the "Item" tab, select "Item Properties" and change the Take Name.
+</li></ul>
+</li><li>Color
+<ul><li>Under the "Track" tab, select "Track Color."
+</li></ul>
+</li><li>Markers
+<ul><li>Click on where you want to put a marker and hit the M key.
+</li></ul>
+</li><li>Change tempo
+</li><li>Other efficient editing tips
+<ul><li>Assign your own hotkeys to actions. Go to the "actions" tab and assign a hotkey to an important action. A good custom hotkey would be custom coloring a track. Search "color track" in the search bar in the actions list. Find it, then assign it to C. Then select a track and press C. A window will popup allowing you to change the color of the track.</p>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h2>
+<p>details of editing midi
+<ul><li>Velocity
+</li><li>Quantization
+</li><li>Control Change data
+</li><li>MIDI monitor(through)
+</li><li>Other MIDI editing tips
+</li><li>Adding software instruments
+</li><li>Other MIDI tips
+<ul><li>Open Virtual MIDI Keyboard: Alt+B. 
+</li><li>To keep the Virtual MIDI Keyboard active even if you click outside its window, right-click on the bottom of the virtual keyboard and check "Send all keyboard input to Virtual MIDI keyboard (even when other windows active)".</p>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Mixing">Mixing</span></h2>
+<p>details of mixing
+<ul><li>Types of tracks
+</li><li>Adding effects
+</li><li>Channel strip layout
+</li><li>Configuring a Submix
+<ul><li>(see the "Busses" section)
+</li></ul>
+</li><li>Configure reverb in a send and return scheme
+</li><li>Busses
+<ul><li>Reaper is more flexible than most DAWs when it comes to the concept of busses or submixes. You can actually route tracks directly to other tracks, and treat the parent track like a bus, by simply adding FX or by routing it to the master output or yet more bus tracks. Note that there's no distinction between a regular track and an auxiliary track.
+</li><li>A great way to edit track-routing is by looking at the Routing Matrix, which is a tab next to the Mixer. There's a convenient chart showing what routes to what.
+</li></ul>
+</li><li>Automation recording
+<ul><li> Automation is called Envelopes in Reaper and allows you to record automation by doing the following steps: Click on a track -&gt; V (to display the volume envelope) -&gt; arm that track and then use the fader to control the automation for volume. Right-click on an envelope-track you can select between Latch/Touch/Trim etc.
+</li></ul>
+</li><li>Automation editing</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Useful_resources">Useful resources</span></h2>
+<p>additional resources
+<ul><li>Website: <a rel="nofollow" class="external free" href="http://reaper.fm/">http://reaper.fm/</a>
+</li><li>Manual: The manual can be downloaded here: <a rel="nofollow" class="external free" href="http://reaper.fm/userguide.php">http://reaper.fm/userguide.php</a>
+</li><li>Reaper Wiki: <a rel="nofollow" class="external free" href="http://wiki.cockos.com/wiki/index.php/Reaper_Documentation">http://wiki.cockos.com/wiki/index.php/Reaper_Documentation</a>
+</li><li>Forums: <a rel="nofollow" class="external free" href="http://forum.cockos.com/forumdisplay.php?f=20">http://forum.cockos.com/forumdisplay.php?f=20</a>
+</li><li>Links</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Categories">Categories</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:reaper&amp;oldid=31721">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:reaper&amp;oldid=31721</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Music_Production" title="Category:Music Production">Music Production</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

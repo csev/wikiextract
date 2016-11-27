@@ -1,0 +1,45 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Symbols</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a rel="nofollow" class="external text" href="http://physics.info/symbols/">Special Symbols</a> (from the The Physics Hyper Textbook) - includes Unicode Decimal Values  </p>
+<p><table border="0">
+<tr><td><i>E</i></td><td>electromotive force (emf) [V]</td></tr>
+<tr><td>&#961;</td><td>resistivity [&#937;m]</td></tr>
+<tr><td>&#963;</td><td>conductivity [S/m]</td></tr>
+<tr><td>&#934;</td> <td>potential [V]</td></tr>
+<tr><td><i>C</i><sub>m</sub></td><td>membrane capacitance per unit area (specific capacitance) [µF/cm²]</td></tr>
+<tr><td>F</td><td>Faraday's constant [9.649·10<sup>4</sup> C/mol]</td></tr>
+<tr><td><i>I</i></td><td>electric current [A]</td></tr>
+<tr><td><i>I</i><sub>m</sub></td><td>membrane current per unit area [µA/cm<sup>2</sup>] (= <i>I</i><sub>mC</sub> + <i>I</i><sub>mR</sub>)</td></tr>
+<tr><td><i>J</i></td><td>current flux [A cm<sup>-2</sup>]</td></tr>
+<tr><td>q</td><td>charge[C]</td></tr>
+<tr><td>R</td><td>gas constant [8.314 J/(mol·K)]</td></tr>
+<tr><td><i>R</i></td><td>resistance [&#937;]</td></tr>
+<tr><td>RT/F</td><td>approx 26 mV at 20 &#176; C [mV]</td></tr>
+<tr><td><i>t</i></td><td>time [s]</td></tr>
+<tr><td><i>T</i></td><td>temperature [ &#176; C], absolute temperature [K]</td></tr>
+<tr><td><i>V</i></td><td>voltage [V]</td></tr>
+<tr><td><i>V</i><sub>K</sub>, <i>V</i><sub>Na</sub>, <i>V</i><sub>Cl</sub></td><td>Nernst voltages for potassium, sodium, and chloride ions [mV]</td></tr>
+<tr><td><i>V</i><sub>m</sub></td><td>membrane voltage [mV] (= &#934;<sub>i</sub> - &#934;<sub>o</sub>)</td></tr>&lt;/p&gt;
+<p>&lt;/table&gt;</p>
+</table>
+</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Symbols&amp;oldid=7234">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Symbols&amp;oldid=7234</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

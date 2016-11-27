@@ -1,0 +1,54 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity: Transcript Wk3 L6</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_3_Lecture_6:_Where_does_the_active_response_come_from">Week 3 Lecture 6: Where does the active response come from</span></h1>
+<p><strong>Bioelectricity Week3_6 (slide 35)</strong><br />
+<ul><li> Hello again. This is Roger Coke Barr for the Bioelectricity Course, Week three, Segment six. And our question for this segment is where does the active response come from? We saw on the last segment that when you stimulated active tissue, there was a big response.  </p>
+</li></ul>
+
+<p><strong>Where does the AP come from? (slide 36)</strong><br />
+<ul><li> Now, the question that we're asking now is where does that response come from? Where does that action potential, as it's called, how do we get it? Well, this is a mystery. Of course, it's not a mystery to everybody, but it's a mystery at this point in the course. The reason that it's a mystery is that the situation as we know it is as follows.<br />
+</li><li> The stimulus has come to an end.  That means this part is gone. The capacitance is charged, yes. So, that means we've got plus charges over here, we've got minus charges over there, some more plus charges over here, some more minus charges over there, within our membrane, up against our membrane because we have put them there with the membrane current, we have pushed those charges in.<br />
+</li><li> But now, the stimulus is turned off. Off. So, what we are expecting to happen and what happened in the passive tissue is that these charges just flow around through the resistance. It takes them a little while because that path has the resistance in it. They just flow around and the voltage goes back to zero.<br />
+</li><li> So, that's a nice picture. The question is how can the Vm be getting bigger instead of smaller? All we are saying is not the chargers are leaving that membrane capacitance, but the chargers are being added to that membrane capacitance. It just doesn't seem right and is certainly as not consistent with the way we have described things so far.   </p>
+</li></ul>
+
+<p><strong>Where does the AP come from? – algorithm? (slide 37)</strong><br />
+<ul><li> Of course, the results were showing you, while very close to experimental results, were actually coming from an algorithm. So, it must be that the algorithm is different for the active case than it is for the passive case.<br />
+</li><li> Let's look at the algorithm for the passive case step by step and see where there could possibly be a question. So, first of all, the membrane current is the capacitive current and the resistive current. That just has to be true. The membrane current has only got two places to go, either on the capacitive path or the resistive path, it has to still be the case. 
+</li><li> The second line is simply the first line rearranged. So, if the first line is true, the second line is true. That's got to be so. 
+</li><li> The third line is the rule for capacitive currents, how capacitive currents relate to change in potentials, or are capacitance is formed by the structure of the membrane itself? Really, there can't be any doubt about that, so that's got to be true. The membrane current is the same as the stimulus current, because here's a patch that's all isolated, it's an orphan. 
+</li><li> Membrane current comes from the neighbors normally, and the neighbors aren't there so it only comes from the stimulator. Well, we see from our stimulus, the stimulus goes on then the stimulus turns off, so we have it, the stimulus is zero. In any event, that line is just about beyond dispute.<br />
+</li><li> The next line says Ir is Vm / Rm. Now, that's Ohm's Law. Ohm is probably the most famous name in all of electricity. We certainly cannot argue with Ohm because we just cant. So, let's look at that a little bit more carefully. We're not arguing with Ohm, but we are looking at the values that we are putting in. We know we're putting in the right value of Vm. What we're not so sure about is that we're putting in the right value for Rm because the value that we're putting in for Rm is the value that is, the value we had at the beginning of the simulation, the value for passive tissue.<br />
+</li><li> This is where things are probably getting into trouble. Rm is probably doing something and whatever it is doing is really strange. Now, think about it this way.  If Rm is going to change in such a way that Cm gets bigger, Rm cannot just go down to zero, it has to even turn negative. Oh, that's almost too much to think about. How can that possibly happen?<br />
+</li><li> Well, it's going to require some further explanation. But that is the only line in this whole algorithm that even the least bit doubtful because this final line, this line is nothing more than an algebraic substitution. So, if the other lines are okay, that line is okay, too. </p>
+</li></ul>
+
+<p><strong>After the stimulus Im=0. Which ions are moving? Why? (slide 38)</strong><br />
+<ul><li> So, let me throw another little wrinkle into this picture. After the stimulus, the membrane current is equal to zero. So, which ions are now moving? Is it sodium? Is it potassium? Is it chloride? How do we decide it's one or the other?<br />
+</li><li> Well, it's fair enough to ask. What do ions have to do with it anyway? We've been just talking about electricity as if it's one electrical circuit, one happy electrical circuits. We haven't gotten over into ions. But surely, since we are utterly unable to explain the action potential otherwise, the model of the membrane has it's shown up here, this model in some fashion is defective or at least, it's insufficient because it's just not good enough to explain the observations that we see.  </p>
+</li></ul>
+
+<p><strong>A clue (slide 39)</strong><br />
+<ul><li> So, we need a clue in this mystery and a very substantial clue is given by examining behavior of channels in the membrane as it's done in the next lecture. Thank you for watching. We'll see you in the next segment.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 15/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:_Transcript_Wk3_L6&amp;oldid=8405">https://share.coursera.org/wiki/index.php?title=Bioelectricity:_Transcript_Wk3_L6&amp;oldid=8405</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

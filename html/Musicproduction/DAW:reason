@@ -1,0 +1,142 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:reason</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a>&#160;: <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW specifics</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Project_specifics"><span class="tocnumber">1</span> <span class="toctext">Project specifics</span></a></li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">2</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">3</span> <span class="toctext">Editing Audio</span></a></li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">4</span> <span class="toctext">Efficient Editing</span></a></li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">5</span> <span class="toctext">Editing MIDI</span></a></li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">6</span> <span class="toctext">Mixing</span></a></li>
+<li class="toclevel-1"><a href="#Useful_resources"><span class="tocnumber">7</span> <span class="toctext">Useful resources</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Project_specifics">Project specifics</span></h2>
+<p>details of file management
+<ul><li>Project Name
+<ul><li>You can set the project name when you save a project.
+</li></ul>
+</li></ul>
+<div class="center"><div class="floatnone"><a href="/wiki/images/3/3f/Reason_Project_Name.png" class="image" title="635×480px"><img alt="635×480px" src="/wiki/images/3/3f/Reason_Project_Name.png" width="784" height="521" /></a></div></div>
+<ul><li>File type
+<ul><li>The latest version of Reason, 6.5, saves projects as '.reason' files. You can open projects from older versions, but saving them will convert them to the '.reason' format.
+</li></ul>
+</li></ul>
+<div class="center"><div class="floatnone"><a href="/wiki/images/1/12/Reason_File_Type.png" class="image"><img alt="Reason File Type.png" src="/wiki/images/thumb/1/12/Reason_File_Type.png/635px-Reason_File_Type.png" width="635" height="480" /></a></div></div>
+<ul><li>Bit depth
+<ul><li>Bit depth can be set in your interface's control panel, reachable from 'Preferences...' under the Audio tab.
+</li></ul>
+</li></ul>
+<div class="center"><div class="floatnone"><a href="/wiki/images/5/5a/Reason-Bit-Depth.png" class="image" title="512×379px"><img alt="512×379px" src="/wiki/images/5/5a/Reason-Bit-Depth.png" width="512" height="379" /></a></div></div>
+<ul><li>Sampling rate
+<ul><li>You can set the sampling rate under 'Preferences...' on the Audio tab, unless your audio interface's control panel overrides it. In that case, use your interace's control panel located on the same tab.
+</li></ul>
+</li></ul>
+<div class="center"><div class="floatnone"><a href="/wiki/images/2/2d/Reason-Sample-Rate.png" class="image" title="544×230px"><img alt="544×230px" src="/wiki/images/2/2d/Reason-Sample-Rate.png" width="544" height="230" /></a></div></div>
+<ul><li>Hardware
+<ul><li>You can set the Input/Output audio device under 'Preferences...' on the Audio tab. 
+</li></ul>
+</li></ul>
+<div class="center"><div class="floatnone"><a href="/wiki/images/9/97/Hardware.png" class="image" title="512×379px"><img alt="512×379px" src="/wiki/images/9/97/Hardware.png" width="523" height="233" /></a></div></div>
+<ul><li>Buffer size
+<ul><li>You can set the buffer size under 'Preferences...' on the Audio tab.
+</li></ul>
+</li></ul>
+<div class="center"><div class="floatnone"><a href="/wiki/images/1/1c/Reason-buffer-size.png" class="image" title="492×200px"><img alt="492×200px" src="/wiki/images/1/1c/Reason-buffer-size.png" width="492" height="200" /></a></div></div>
+<ul><li>Project folders specifics</p>
+</li></ul>
+<h2> <span class="mw-headline" id="Recording">Recording</span></h2>
+<p>details of audio recording
+<ul><li>Metronome(click track)
+<ul><li>To turn on the metronome, simply press 'C', or click on the box labeled 'click' on the transport bar, located at the bottom of the user interface.
+</li><li>You can change the volume of the metronome using the Click Level knob located on the transport bar, under the Click and Pre checkboxes.
+</li></ul>
+</li><li>Count in
+<ul><li>To turn on the count in, press 'Ctrl+P', or click on the box labeled 'pre' on the transport bar.
+</li><li>You can change the number of precount bars under 'Options&gt;Number of Precount Bars'
+</li></ul>
+</li><li>Audio recording tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h2>
+<p>details of editing audio
+<ul><li>Trimming
+</li><li>Cutting
+</li><li>Grid
+</li><li>Change grid resolution
+</li><li>modifier key to toggle grid
+</li><li>add fades
+</li><li>modify fades
+</li><li>efficient compiling of multiple takes</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h2>
+<p>details of efficient editing
+<ul><li>Zoom
+</li><li>Nudge
+</li><li>Cycle
+</li><li>Merge
+</li><li>Name
+</li><li>Color
+</li><li>Markers
+</li><li>Change tempo
+</li><li>Other efficient editing tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h2>
+<p>details of editing midi
+<ul><li>Velocity
+</li><li>Quantization
+</li><li>Control Change data
+</li><li>MIDI monitor(through)
+</li><li>Other MIDI editing tips
+</li><li>Adding software instruments
+</li><li>Other MIDI tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Mixing">Mixing</span></h2>
+<p>details of mixing
+<ul><li>Types of tracks
+</li><li>Adding effects
+</li><li>Channel strip layout
+</li><li>Configuring a Submix
+</li><li>Configure reverb in a send and return scheme
+</li><li>Busses
+</li><li>Automation recording
+</li><li>Automation editing</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Useful_resources">Useful resources</span></h2>
+<p>additional resources
+<ul><li><a rel="nofollow" class="external text" href="http://www.propellerheads.se/">Website</a>
+</li><li><a rel="nofollow" class="external text" href="http://www.propellerheads.se/download/index.cfm?fuseaction=get_article&amp;article=reason_doc">Manual</a>
+</li><li><a rel="nofollow" class="external text" href="https://www.propellerheads.se/forum/">Forums</a>
+</li><li>Links
+</li><li><a rel="nofollow" class="external text" href="http://www.reason101.net/">Reason 101</a>
+</li><li><a rel="nofollow" class="external text" href="http://www.peff.com/">Peff</a>
+</li><li>Propellerhead's <a rel="nofollow" class="external text" href="https://www.youtube.com/user/PropellerheadSW">YouTube Channel</a>. Lots of tutorials in playlist form.
+</li><li><a rel="nofollow" class="external text" href="https://www.reddit.com/r/reasoners/">Reason on Reddit</a>
+</li><li><a rel="nofollow" class="external text" href="https://www.reddit.com/r/reasonrefills/">Reason Refills -legal- on Reddit</a></p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:reason&amp;oldid=30743">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:reason&amp;oldid=30743</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

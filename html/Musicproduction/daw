@@ -1,0 +1,85 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:daw</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#DAW_Wiki"><span class="tocnumber">1</span> <span class="toctext">DAW Wiki</span></a></li>
+<li class="toclevel-1"><a href="#Common_DAWs"><span class="tocnumber">2</span> <span class="toctext">Common DAWs</span></a></li>
+<li class="toclevel-1"><a href="#Free_DAW_Options"><span class="tocnumber">3</span> <span class="toctext">Free DAW Options</span></a></li>
+<li class="toclevel-1"><a href="#To_add_a_new_DAW"><span class="tocnumber">4</span> <span class="toctext">To add a new DAW</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">5</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="DAW_Wiki">DAW Wiki</span></h1>
+<p>We will need to work together to compile a resource that includes all major DAWs and the most common tasks in each. The structure is in place, just add a little bit. As a humble suggestion, for all of the DAWs listed below, it is extraordinarily helpful to read in-depth the software manufacturer's manual for the program, and most of the DAWs listed below should have links to their manufacturers' respective manuals. This is not to say that simply reading the manual is a replacement for actually using and getting familiar with your program, but it can be very useful to have something of a road map to navigate through what might be unfamiliar terrain. Another upside of this is that you can become familiar with the particular terms your DAW uses for certain procedures, tasks, etc., which might amount to the same thing as to their practical result, generally speaking, but be called several slightly different things between programs.</p>
+<h1> <span class="mw-headline" id="Common_DAWs">Common DAWs</span></h1>
+<p>inside each page add in the details of the most common DAW tasks.
+<ul><li><a href="/wiki/index.php/Musicproduction:DAW:live" title="Musicproduction:DAW:live"> Ableton Live</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:protools" title="Musicproduction:DAW:protools"> Pro Tools</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:cubase" title="Musicproduction:DAW:cubase"> Cubase</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:digitalperformer" title="Musicproduction:DAW:digitalperformer"> Digital Performer</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:logic" title="Musicproduction:DAW:logic"> Logic Pro</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:reason" title="Musicproduction:DAW:reason"> Reason</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:reaper" title="Musicproduction:DAW:reaper"> Reaper</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:SONAR" title="Musicproduction:DAW:SONAR"> SONAR</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:nuendo" title="Musicproduction:DAW:nuendo"> Nuendo</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:fl" title="Musicproduction:DAW:fl"> FL Studio</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:podium" title="Musicproduction:DAW:podium"> Podium</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:studioone" title="Musicproduction:DAW:studioone"> Studio One</a>
+</li><li><a href="/wiki/index.php?title=Musicproduction:DAW:maschine&amp;action=edit&amp;redlink=1" class="new" title="Musicproduction:DAW:maschine (page does not exist)"> Native Instruments Maschine Software</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:acid" title="Musicproduction:DAW:acid"> Acid Pro</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:audition" title="Musicproduction:DAW:audition"> Audition</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:mixcraft" title="Musicproduction:DAW:mixcraft"> Mixcraft</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:Harrison_Mixbus" title="Musicproduction:DAW:Harrison Mixbus"> Harrison Mixbus</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:Sequoia" title="Musicproduction:DAW:Sequoia"> Sequoia</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:Samplitude_Pro_X" title="Musicproduction:DAW:Samplitude Pro X"> Samplitude Pro X</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:n-Track" title="Musicproduction:DAW:n-Track"> n-Track</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:magix" title="Musicproduction:DAW:magix"> Samplitude Music Studio</a>
+</li><li><a href="/wiki/index.php?title=Musicproduction:DAW:storm&amp;action=edit&amp;redlink=1" class="new" title="Musicproduction:DAW:storm (page does not exist)"> Arturia's Storm</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:Tracktion_Software_Company" title="Musicproduction:DAW:Tracktion Software Company"> Tracktion 4</a>
+</li><li><a href="/wiki/index.php?title=Musicproduction:DAW:bitwig&amp;action=edit&amp;redlink=1" class="new" title="Musicproduction:DAW:bitwig (page does not exist)"> Bitwig Studio</a> (has Linux support)
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:MusicMaker" title="Musicproduction:DAW:MusicMaker"> Magix</a></p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="Free_DAW_Options">Free DAW Options</span></h1>
+<p>Here are a few free options:
+<ul><li><a href="/wiki/index.php/Musicproduction:DAW:garageband" title="Musicproduction:DAW:garageband"> Garage Band</a> (now available for free on the Mac App Store)
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:studioone" title="Musicproduction:DAW:studioone"> Studio One Free</a> (fully-functional, non-time-limited version)
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:ohmstudio" title="Musicproduction:DAW:ohmstudio"> Ohm Studio</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:ardour" title="Musicproduction:DAW:ardour"> Ardour</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:audacity" title="Musicproduction:DAW:audacity"> Audacity</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:rosegarden" title="Musicproduction:DAW:rosegarden"> Rosegarden</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:lmms" title="Musicproduction:DAW:lmms"> LMMS (Linux MultiMedia Studio)</a>
+</li><li><a href="/wiki/index.php/Musicproduction:DAW:soundation" title="Musicproduction:DAW:soundation"> Soundation</a></p>
+</li></ul>
+
+<p>Avid Protools provides a free 30 Day Trial for Protools. If you go to this link you can hopefully find what you're looking for. You will have to create an account with them (I believe it's an ILok account that you create) and can get started with a free 30 Days that would be great for this class
+<a rel="nofollow" class="external free" href="http://www.avid.com/US/products/Pro-Tools-Software">http://www.avid.com/US/products/Pro-Tools-Software</a></p>
+<p>Ableton Live has just launched Live 9 which is a top of the line DAW. They offer a free 30 day trial at <a rel="nofollow" class="external free" href="https://www.ableton.com/en/trial/">https://www.ableton.com/en/trial/</a></p>
+<p>Reaper offers 90-days "uncrippled" trial, this non-licensed version has 100% of the paid and licensed Reaper features. This fact helps to evaluate all the Reaper's functionalities.</p>
+<h1> <span class="mw-headline" id="To_add_a_new_DAW">To add a new DAW</span></h1>
+<p>create a link to the new page, like the ones above, then paste in the template information found here:<a href="/wiki/index.php/Musicproduction:DAW:template" title="Musicproduction:DAW:template">Musicproduction:DAW:template</a></p>
+<p>/*
+Although Storm is been discontinued it is really a notable DAW. The sounds are amazing.
+<a rel="nofollow" class="external free" href="http://www.soundonsound.com/sos/dec04/articles/arturiastorm3.htm">http://www.soundonsound.com/sos/dec04/articles/arturiastorm3.htm</a></p>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:daw&amp;oldid=31809">https://share.coursera.org/wiki/index.php?title=Musicproduction:daw&amp;oldid=31809</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:DAW" title="Category:DAW">DAW</a></li><li><a href="/wiki/index.php/Category:Music_Production" title="Category:Music Production">Music Production</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

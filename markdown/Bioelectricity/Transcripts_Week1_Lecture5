@@ -1,0 +1,38 @@
+# Ions in Solution 1-5  
+  
+* So this is the Bioelectricity course. I am Roger Cook Barr, welcome back. In this segment ions in solution.  
+  
+## Ions in Solution (slide 35)  
+* In solutions, one ask, why is there any current that flows? What is it that actually moves? Is it the water that's in the solution? Well, no. Water itself if it's very pure, is almost an insulator.  
+* Solutions are conductive because they have little tiny particles in them that are called ions, which is taken from the Greek word that means to go. And the ions are little charged particles that give a solution electrical conductivity.  
+* And in particular they give water electrical conductivity. So if you take a glass of distilled water, water with no ions, and you put into it a handful of salt, ordinary table salt (NaCl), a combination of sodiom and chloride, then the sodium chloride when it falls into the water will divide up into sodium ions, and chloride ions. Sodium chloride as a single molecule, has quite a few positive charges and quite a few negative charges, but they're the same number of each. When they divide up, however, they keep the protons and divide the electrons and they don't divide the electrons out quite in proportion to the number of protons.  
+* So as a result, a sodium ion is charged because it loses one more electron than would be required for it to be in balance and that extra electron goes with the chloride so that both of them are charged. Sodium is charged net positive. Chloride is charged net negative.  
+* So in the water we now have two quantities, both sodium ions and chloride ions. And both are free to move around because they can move from place to place in the water.  
+  
+## Ions and conductivity σ (slide 36)  
+* The conductivity is a measure of how many charges move and how easily those charges move. And as you'd expect the conductivity is greater when there more ions or when the ions can move more freely.  
+* So for electrophysiology, the concentrations are the ions of sodium, potassium, and chloride, and all these have a particular significance. Significant role, as do some others.  
+* In a certain sense you can think of conductivity as related to ions, in a way that's like traffic is related to cars. Where there's a lot of cars, and each of the cars is free to move, it's not in a parking garage, or turned off. There will be a lot of traffic. And there's a lot of capacity, perhaps for traffic to flow from place to place if you have a wide road.  
+* So conductivity is a measure of how easily these ions move from place to place.  
+  
+## Resistivity and sea water (slide 37)  
+* So when people talk about conductivity, they also talk about resistivity because they're the same thing. These are 2 terms for *almost* the same thing.  
+* The difference is that resisitivity is the reciprocal of the conductivity. So you could say rho (the resistivity) is 1/sigma, if sigma is the conductivity. If you know one, you know the other. That's why people use the terms almost, interchangeable.  
+* In ocean water, which is similar to, in its electrical characteristics to the solutions that are inside us, the resistivity is around 25 ohm centimeters. It's about that much in natural ocean water. So if you take the reciprocal of this, that says the conductivity, is about 1/25 Siemans per cm.  
+* You notice that the reciprocal unit of ohms is called Siemans. Once again they have this inverse relationship.  
+  
+## Resistivity and sea water (slide 38)  
+* Now, resistivity is not the same as resistance. Resistivity goes with the material, ocean water. Resistance has to do with the particular size and shape of the ocean water.  
+* So let's do an example. Let's say we want to get the resistance of a container and our container has the shape of a shoebox. A small shoebox. A little tiny shoe. It has a length of 10cm and it has a cross section that's square That has an edge of five centimeters. So it's a box just like this. This dimension is ten. This dimension on the edge is five.  
+* We're thinking about current that's flowing along the box in this direction. What will be the resistance from one end of the box to the other end? From here to there.  
+* So the way we do that is we say we'll take the resistivity, we' ll multiply times the length. Because the longer it is, the more resistance there is. And we'll divide by the cross-sectional area. That is to say, the area on the end of the box. And if I do that as a calculation, I can do it in 2 steps.  
+* First I'll take the resistivity, 25 Ohm cm, and I'll divide by the cross-sectional area. Then I'll get 25/25, and that will come out to be 1 Ohm/cm. This is called the resistance per unit length and is often denoted with a lowercase letter.  
+* Now I can convert that into the actual resistance in Ohms simply by multiplying By the length. So the resistance in ohms, is resistance per unit length the length, and so that will come out to be 10 Ohms.  
+* So now there are a couple things to think about in this slide.  
+* One is, it's important that you check my work. I might have gotten it right or then again I might not. Is this right? You must check and see, so please do check and please put a comment on the forum as to whether you agree with this calculation or if not what you get.  
+* The other is it's worth noticing here that we have done an interesting thing here, as far as resistence. We have 3 different ways of calling it.  
+* We have the resistivity, 25 Ohm-cm, and the units are Ohms  cm We have the resistance per unit length, which is denoted here by lower case r. And its units are ohms/cm. Then we have the resistance itself, the absolute resistance which I've denoted here with a capital R, and it's 10 ohms. These are really closely related and not hard, but you have to keep in mind what they are and where they come from.  
+  
+---  
+* So in this segment we've talked about little things, ions, and they're building up into big things which are resistances made in the resistance from one end to the other of a fairly large container relative to the size of odds.  
+* And here as we look at the picture of the Duke University chapel, which is the architectural centerpiece of the Duke University campus. We can stretch a little bit and make an analogy and say look, that struct ure is made of individual stones, assembled into a very large and rather graceful structure. Thank you for watching. I'll see you in the next segment.

@@ -1,0 +1,320 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Neural Networks: Representation</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Non-linear_Hypotheses"><span class="tocnumber">1</span> <span class="toctext">Non-linear Hypotheses</span></a></li>
+<li class="toclevel-1"><a href="#Neurons_and_the_Brain"><span class="tocnumber">2</span> <span class="toctext">Neurons and the Brain</span></a></li>
+<li class="toclevel-1"><a href="#Model_Representation_I"><span class="tocnumber">3</span> <span class="toctext">Model Representation I</span></a></li>
+<li class="toclevel-1"><a href="#Model_Representation_II"><span class="tocnumber">4</span> <span class="toctext">Model Representation II</span></a></li>
+<li class="toclevel-1"><a href="#Examples_and_Intuitions_I"><span class="tocnumber">5</span> <span class="toctext">Examples and Intuitions I</span></a></li>
+<li class="toclevel-1"><a href="#Examples_and_Intuitions_II"><span class="tocnumber">6</span> <span class="toctext">Examples and Intuitions II</span></a></li>
+<li class="toclevel-1"><a href="#Multiclass_Classification"><span class="tocnumber">7</span> <span class="toctext">Multiclass Classification</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Non-linear_Hypotheses">Non-linear Hypotheses</span></h1>
+<p>Performing linear regression with a complex set of data with many features is very unwieldy. Say you wanted to create a hypothesis from three (3) features that included all the quadratic terms:</p>
+<p>$$
+\begin{align&#42;}
+&amp; g(\theta&#95;0 + \theta&#95;1x&#95;1^2 + \theta&#95;2x&#95;1x&#95;2 + \theta&#95;3x&#95;1x&#95;3 \newline
+&amp; + \theta&#95;4x&#95;2^2 + \theta&#95;5x&#95;2x&#95;3 \newline
+&amp; + \theta&#95;6x&#95;3^2 )
+\end{align&#42;}
+$$</p>
+<p>That gives us $$6$$ features. The exact way to calculate how many features for all polynomial terms is <a rel="nofollow" class="external text" href="http://www.mathsisfun.com/combinatorics/combinations-permutations.html">the combination function with repetition</a>: $$\frac{(n+r-1)!}{r!(n-1)!}$$. In this case we are taking all two-element combinations of three features: $$\frac{(3 + 2 - 1)!}{(2!\cdot (3-1)!)} $$=$$\frac{4!}{4} = 6$$. (<strong>Note</strong>: you do not have to know these formulas, I just found it helpful for understanding).</p>
+<p>For 100 features, if we wanted to make them quadratic we would get $$\frac{(100 + 2 - 1)!}{(2\cdot (100-1)!)} = 5050$$ resulting new features.</p>
+<p>We can approximate the growth of the number of new features we get with all quadratic terms with $$\mathcal{O}(n^2/2)$$. And if you wanted to include all cubic terms in your hypothesis, the features would grow asymptotically at $$\mathcal{O}(n^3)$$. These are very steep growths, so as the number of our features increase, the number of quadratic or cubic features increase very rapidly and becomes quickly impractical.</p>
+<p>Example: let our training set be a collection of 50x50 pixel black-and-white photographs, and our goal will be to classify which ones are photos of cars. Our feature set size is then $$n=2500$$ if we compare every pair of pixels.</p>
+<p>Now let's say we need to make a quadratic hypothesis function. With quadratic features, our growth is $$\mathcal{O}(n^2 / 2)$$. So our total features will be about $$2500^2 / 2 = 3125000$$, which is very impractical.</p>
+<p>Neural networks offers an alternate way to perform machine learning when we have complex hypotheses with many features.</p>
+<h1> <span class="mw-headline" id="Neurons_and_the_Brain">Neurons and the Brain</span></h1>
+<p>Neural networks are limited imitations of how our own brains work. They've had a big recent resurgence because of advances in computer hardware.</p>
+<p>There is evidence that the brain uses only one "learning algorithm" for all its different functions. Scientists have tried cutting (in an animal brain) the connection between the ears and the auditory cortex and rewiring the optical nerve with the auditory cortex to find that the auditory cortex literally learns to see.</p>
+<p>This principle is called "neuroplasticity" and has many examples and experimental evidence. </p>
+<h1> <span class="mw-headline" id="Model_Representation_I">Model Representation I</span></h1>
+<p>Let's examine how we will represent a hypothesis function using neural networks.</p>
+<p>At a very simple level, neurons are basically computational units that take input (<strong>dendrites</strong>) as electrical input (called "spikes") that are channeled to outputs (<strong>axons</strong>).</p>
+<p>In our model, our dendrites are like the input features ($$x&#95;1\cdots x&#95;n$$), and the output is the result of our hypothesis function:</p>
+<p>In this model our $$x&#95;0$$ input node is sometimes called the "bias unit." It is always equal to 1.</p>
+<p>In neural networks, we use the same logistic function as in classification: $$\frac{1}{1 + e^{-\theta^Tx}}$$. In neural networks however we sometimes call it a sigmoid (logistic) <strong>activation</strong> function.</p>
+<p>Our "theta" parameters are sometimes instead called "weights" in the neural networks model.</p>
+<p>Visually, a simplistic representation looks like:</p>
+<p>$$
+\begin{bmatrix}
+x&#95;0 \newline
+x&#95;1 \newline
+x&#95;2 \newline
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+\ \ \ \newline
+\end{bmatrix}
+\rightarrow
+h&#95;\theta(x)
+$$</p>
+<p>Our input nodes (layer 1) go into another node (layer 2), and are output as the hypothesis function.</p>
+<p>The first layer is called the "input layer" and the final layer the "output layer," which gives the final value computed on the hypothesis.</p>
+<p>We can have intermediate layers of nodes between the input and output layers called the "hidden layer."</p>
+<p>We label these intermediate or "hidden" layer nodes $$a^2&#95;0 \cdots a^2&#95;n$$ and call them "activation units." </p>
+<p>$$
+\large
+\begin{align&#42;}
+&amp; a&#95;i^{(j)} = \text{"activation" of unit $i$ in layer $j$} \newline
+&amp; \Theta^{(j)} = \text{matrix of weights controlling function mapping from layer $j$ to layer $j+1$}
+\end{align&#42;}
+$$</p>
+<p>If we had one hidden layer, it would look visually something like:</p>
+<p>$$
+\begin{bmatrix}
+x&#95;0 \newline
+x&#95;1 \newline
+x&#95;2 \newline
+x&#95;3
+\end{bmatrix}
+\rightarrow
+\begin{bmatrix}
+a&#95;1^{(2)} \newline
+a&#95;2^{(2)} \newline
+a&#95;3^{(2)} \newline
+\end{bmatrix}
+\rightarrow
+h&#95;\theta(x)
+$$</p>
+<p>The values for each of the "activation" nodes is obtained as follows:</p>
+<p>$$
+\begin{align&#42;}
+a&#95;1^{(2)} = g(\Theta&#95;{10}^{(1)}x&#95;0 + \Theta&#95;{11}^{(1)}x&#95;1 + \Theta&#95;{12}^{(1)}x&#95;2 + \Theta&#95;{13}^{(1)}x&#95;3) \newline
+a&#95;2^{(2)} = g(\Theta&#95;{20}^{(1)}x&#95;0 + \Theta&#95;{21}^{(1)}x&#95;1 + \Theta&#95;{22}^{(1)}x&#95;2 + \Theta&#95;{23}^{(1)}x&#95;3) \newline
+a&#95;3^{(2)} = g(\Theta&#95;{30}^{(1)}x&#95;0 + \Theta&#95;{31}^{(1)}x&#95;1 + \Theta&#95;{32}^{(1)}x&#95;2 + \Theta&#95;{33}^{(1)}x&#95;3) \newline
+h&#95;\Theta(x) = a&#95;1^{(3)} = g(\Theta&#95;{10}^{(2)}a&#95;0^{(2)} + \Theta&#95;{11}^{(2)}a&#95;1^{(2)} + \Theta&#95;{12}^{(2)}a&#95;2^{(2)} + \Theta&#95;{13}^{(2)}a&#95;3^{(2)}) \newline
+\end{align&#42;}
+$$</p>
+<p>This is saying that we compute our activation nodes by using a $$3\times 4$$ matrix of parameters. We apply each row of the parameters to our inputs to obtain the value for one activation node. Our hypothesis output is the logistic function applied to the sum of the values of our activation nodes, which have been multiplied by yet another parameter matrix $$\Theta^{(2)}$$ containing the weights for our second layer of nodes.</p>
+<p>Each layer gets its own matrix of weights, $$\Theta^{(j)}$$.</p>
+<p>The dimensions of these matrices of weights is determined as follows:</p>
+<p>$$
+\text{If network has $s&#95;j$ units in layer $j$ and $s&#95;{j+1}$ units in layer $j+1$, then $\Theta^{(j)}$ will be of dimension $s&#95;{j+1} \times (s&#95;j + 1)$.}
+$$</p>
+<p>The +1 comes from the addition in $$\Theta^{(j)}$$ of the "bias nodes," $$x&#95;0$$ and $$\Theta&#95;0^{(j)}$$. In other words the output nodes will not include the bias nodes while the inputs will.</p>
+<p>Example: layer 1 has 2 input nodes and layer 2 has 4 activation nodes. Dimension of $$\Theta^{(1)}$$ is going to be $$4\times 3$$ where $$s&#95;j = 2$$ and $$s&#95;{j+1} = 4$$, so $$s&#95;{j+1} \times (s&#95;j + 1) = 4 \times 3$$.</p>
+<h1> <span class="mw-headline" id="Model_Representation_II">Model Representation II</span></h1>
+<p>In this section we'll do a vectorized implementation of the above functions. We're going to define a new variable $$z&#95;k^{(j)}$$ that encompasses the parameters inside our $$g$$ function. In our previous example if we replaced the variable $$z$$ for all the parameters we would get:</p>
+<p>$$
+\begin{align&#42;}
+a&#95;1^{(2)} = g(z&#95;1^{(2)}) \newline
+a&#95;2^{(2)} = g(z&#95;2^{(2)}) \newline
+a&#95;3^{(2)} = g(z&#95;3^{(2)}) \newline
+\end{align&#42;}
+$$</p>
+<p>In other words, for layer $$j=2$$ and node $$k$$, the variable $$z$$ will be:</p>
+<p>$$
+z&#95;k^{(2)} = \Theta&#95;{k,0}^{(1)}x&#95;0 + \Theta&#95;{k,1}^{(1)}x&#95;1 + \cdots + \Theta&#95;{k,n}^{(1)}x&#95;n
+$$</p>
+<p>The vector representation of $$x$$ and $$z^{(j)}$$ is:</p>
+<p>$$
+\begin{align&#42;}
+x = 
+\begin{bmatrix}
+x&#95;0 \newline
+x&#95;1 \newline
+\cdots \newline
+x&#95;n
+\end{bmatrix} &amp;
+z^{(j)} = 
+\begin{bmatrix}
+z&#95;1^{(j)} \newline
+z&#95;2^{(j)} \newline
+\cdots \newline
+z&#95;n^{(j)}
+\end{bmatrix}
+\end{align&#42;}
+$$</p>
+<p>Setting $$x = a^{(1)}$$, we can rewrite the equation as:</p>
+<p>$$
+\large
+z^{(j)} = \Theta^{(j-1)}a^{(j-1)}
+$$</p>
+<p>We are multiplying our matrix $$\Theta^{(j-1)}$$ with dimensions $$s&#95;j\times (n+1)$$ (where $$s&#95;j$$ is the number of our activation nodes) by our vector $$a^{(j-1)}$$ with height $$(n+1)$$. This gives us our vector $$z^{(j)}$$ with height $$s&#95;j$$.</p>
+<p>Now we can get a vector of our activation nodes for layer $$j$$ as follows:</p>
+<p>$$
+\large
+a^{(j)} = g(z^{(j)})
+$$</p>
+<p>Where our function $$g$$ can be applied element-wise to our vector $$z^{(j)}$$.</p>
+<p>We can then add a bias unit (equal to 1) to layer $$j$$ after we have computed $$a^{(j)}$$. This will be element $$a&#95;0^{(j)}$$ and will be equal to 1.</p>
+<p>To compute our final hypothesis, let's first compute another $$z$$ vector:</p>
+<p>$$
+z^{(j+1)} = \Theta^{(j)}a^{(j)}
+$$</p>
+<p>We get this final $$z$$ vector by multiplying the next theta matrix after $$\Theta^{(j-1)}$$ with the values of all the activation nodes we just got.</p>
+<p>This last theta matrix ($$\Theta^{(j)}$$) will have only <strong>one row</strong> so that our result is a single number.</p>
+<p>We then get our final result with:</p>
+<p>$$
+h&#95;\Theta(x) = a^{(j+1)} = g(z^{(j+1)})
+$$</p>
+<p>Notice that in this <strong>last step</strong>, between layer $$j$$ and layer $$j+1$$, we are doing <strong>exactly the same thing</strong> as we did in logistic regression.</p>
+<p>Adding all these intermediate layers in neural networks allows us to more elegantly produce interesting and more complex non-linear hypotheses. </p>
+<h1> <span class="mw-headline" id="Examples_and_Intuitions_I">Examples and Intuitions I</span></h1>
+<p>A simple example of applying neural networks is by predicting $$x&#95;1\ AND\ x&#95;2$$, which is the logical 'and' operator and is only true if both $$x&#95;1$$ and $$x&#95;2$$ are 1.</p>
+<p>The graph of our functions will look like:</p>
+<p>$$
+\begin{align&#42;}
+\begin{bmatrix}
+x&#95;0 \newline
+x&#95;1 \newline
+x&#95;2
+\end{bmatrix} \rightarrow
+\begin{bmatrix}
+g(z^{(2)})
+\end{bmatrix} \rightarrow
+h&#95;\Theta(x)
+\end{align&#42;}
+$$</p>
+<p>Remember that $$x&#95;0$$ is our bias variable and is always 1. </p>
+<p>Let's set our first theta matrix as:</p>
+<p>$$
+\Theta^{(1)} = 
+\begin{bmatrix}
+-30 &amp; 20 &amp; 20
+\end{bmatrix}
+$$</p>
+<p>This will cause the output of our hypothesis to only be positive if both $$x&#95;1$$ and $$x&#95;2$$ are 1. In other words:</p>
+<p>$$
+\begin{align&#42;}
+&amp; h&#95;\Theta(x) = g(-30 + 20x&#95;1 + 20x&#95;2) \newline
+\newline
+&amp; x&#95;1 = 0 \ \ and \ \ x&#95;2 = 0 \ \ then \ \ g(-30) \approx 0 \newline
+&amp; x&#95;1 = 0 \ \ and \ \ x&#95;2 = 1 \ \ then \ \ g(-10) \approx 0 \newline
+&amp; x&#95;1 = 1 \ \ and \ \ x&#95;2 = 0 \ \ then \ \ g(-10) \approx 0 \newline
+&amp; x&#95;1 = 1 \ \ and \ \ x&#95;2 = 1 \ \ then \ \ g(10) \approx 1
+\end{align&#42;}
+$$</p>
+<p>So we have constructed one of the fundamental operations in computers by using a small neural network rather than using an actual AND gate. Neural networks can also be used to simulate all the other logical gates.</p>
+<h1> <span class="mw-headline" id="Examples_and_Intuitions_II">Examples and Intuitions II</span></h1>
+<p>The $$\Theta^{(1)}$$ matrices for AND, NOR, and OR are:</p>
+<p>$$
+\begin{align&#42;}
+AND:\newline
+\Theta^{(1)} &amp;=
+\begin{bmatrix}-30 &amp; 20 &amp; 20\end{bmatrix} \newline
+NOR:\newline
+\Theta^{(1)} &amp;= 
+\begin{bmatrix}10 &amp; -20 &amp; -20\end{bmatrix} \newline
+OR:\newline
+\Theta^{(1)} &amp;= 
+\begin{bmatrix}-10 &amp; 20 &amp; 20\end{bmatrix} \newline
+\end{align&#42;}
+$$</p>
+<p>We can combine these to get the XNOR logical operator (which gives 1 if $$x&#95;1$$ and $$x&#95;2$$ are both 0 or both 1).</p>
+<p>$$
+\begin{align&#42;}
+\begin{bmatrix}
+x&#95;0 \newline
+x&#95;1 \newline
+x&#95;2
+\end{bmatrix} \rightarrow
+\begin{bmatrix}
+a&#95;1^{(2)} \newline
+a&#95;2^{(2)} 
+\end{bmatrix} \rightarrow
+\begin{bmatrix}
+a^{(3)}
+\end{bmatrix} \rightarrow
+h&#95;\Theta(x)
+\end{align&#42;}
+$$</p>
+<p>For the transition between the first and second layer, we'll use a $$\Theta^{(1)}$$ matrix that combines the values for AND and NOR:</p>
+<p>$$
+\Theta^{(1)} = 
+\begin{bmatrix}
+-30 &amp; 20 &amp; 20 \newline
+10 &amp; -20 &amp; -20
+\end{bmatrix}
+$$</p>
+<p>For the transition between the second and third layer, we'll use a $$\Theta^{(2)}$$ matrix that uses the value for OR:</p>
+<p>$$
+\Theta^{(2)} = 
+\begin{bmatrix}-10 &amp; 20 &amp; 20\end{bmatrix}
+$$</p>
+<p>Let's write out the values for all our nodes:</p>
+<p>$$
+\begin{align&#42;}
+&amp; a^{(2)} = g(\Theta^{(1)} \cdot x) \newline
+&amp; a^{(3)} = g(\Theta^{(2)} \cdot a^{(2)}) \newline
+&amp; h&#95;\Theta(x) = a^{(3)}
+\end{align&#42;}
+$$</p>
+<p>And there we have the XNOR operator using two hidden layers!</p>
+<h1> <span class="mw-headline" id="Multiclass_Classification">Multiclass Classification</span></h1>
+<p>To classify data into multiple classes, we let our hypothesis function return a vector of values. Say we wanted to classify our data into one of four final resulting classes:</p>
+<p>$$
+\begin{align&#42;}
+\begin{bmatrix}
+x&#95;0 \newline
+x&#95;1 \newline
+x&#95;2 \newline
+\cdots \newline
+x&#95;n
+\end{bmatrix} \rightarrow
+\begin{bmatrix}
+a&#95;0^{(2)} \newline
+a&#95;1^{(2)} \newline
+a&#95;2^{(2)} \newline
+\cdots
+\end{bmatrix} \rightarrow
+\begin{bmatrix}
+a&#95;0^{(3)} \newline
+a&#95;1^{(3)} \newline
+a&#95;2^{(3)} \newline
+\cdots
+\end{bmatrix} \rightarrow \cdots \rightarrow
+\begin{bmatrix}
+h&#95;\Theta(x)&#95;1 \newline
+h&#95;\Theta(x)&#95;2 \newline
+h&#95;\Theta(x)&#95;3 \newline
+h&#95;\Theta(x)&#95;4 \newline
+\end{bmatrix} \rightarrow
+\end{align&#42;}
+$$</p>
+<p>Our final layer of nodes, when multiplied by its theta matrix, will result in another vector, on which we will apply the $$g()$$ logistic function to get a vector of hypothesis values.</p>
+<p>Our resulting hypothesis for one set of inputs may look like:</p>
+<p>$$
+h&#95;\Theta(x) = 
+\begin{bmatrix}
+0 \newline
+0 \newline
+1 \newline
+0 \newline
+\end{bmatrix} 
+$$</p>
+<p>In which case our resulting class is the third one down, or $$h&#95;\Theta(x)&#95;3$$.</p>
+<p>We can define our set of resulting classes as $$y$$:</p>
+<p>$$
+y^{(i)} = \begin{bmatrix}1\newline 0\newline 0\newline 0\end{bmatrix},\ 
+\begin{bmatrix}0\newline 1\newline 0\newline 0\end{bmatrix},\ 
+\begin{bmatrix}0\newline 0\newline 1\newline 0\end{bmatrix},\
+\begin{bmatrix}0\newline 0\newline 0\newline 1\end{bmatrix},\
+$$</p>
+<p>Our final value of our hypothesis for a set of inputs will be one of the elements in y.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Neural_Networks:_Learning" title="ML:Neural Networks: Learning">Neural Networks: Learning</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Neural_Networks:_Representation&amp;oldid=34241">https://share.coursera.org/wiki/index.php?title=ML:Neural_Networks:_Representation&amp;oldid=34241</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,7 @@
+### Traffic Light Sequence Problem
+
+ I've found a problem in help desk (supplement material) and converted it to HTDF recipe question problem. -- Uros Poljanec‎
+
+Here it is:
+ 
+We have traffic light. Design a function that determines which light bulb is going to be turned on next (green is followed by yellow, yellow is followed by red)

@@ -1,0 +1,102 @@
+<table style="margin: 0 10%;border-collapse: collapse;background: #fbfbfb;border: 1px solid #aaa;border-left: 10px solid #609fc1;">
+<tr>
+<td style="padding: 2px 0px 2px 0.5em; text-align: center;"><div style="width: 52px;">[[File:Dan cartoon.png|50px]]</div></td>
+<td style="padding: 0.25em 0.5em;width: 100%;">
+
+'''EVERYONE IN THIS COURSE CAN ADD TO THIS PAGE!''' Help condense concepts from lecture videos, add questions and answers and to share information.
+
+'''Edit''' tab at the top right to begin editing. '''Save page''' button at the bottom when you have finished.
+
+While you can enter basic text into the editor, those who wish to add some formatting may wish to review this [[Markdown guide]]. Take advantage of these notes but also contribute to them!</td>
+</tr>
+</table>
+
+Definitions
+-----------
+
+SIV=Secured Investment vehicle.
+
+MONEY MARKET=A wholesale market for low-risk highly liquid short term debt securities(IOUs=US Treasuries, Federal agency securities, commercial paper, commercial securities, mortgage back securities, municipal securities, bank CDs and notes, banker acceptances, short-term participation in a bank loan.   
+
+'''BROKER'''
+: Makes market; but does not expand his balance sheet; just works for a commission for bringing the parties together. See also DEALER.
+
+'''CIP'''
+: Covered Interest Parity. See also UCIP.
+
+'''DEALER'''
+: Makes market, by expanding his own balance sheet. See also BROKER.
+
+'''EH'''
+: Expectations hypothesis of the term structure. Theory on the term structure that economists love but fails in practice for unknown reasons.
+
+'''EURODOLLAR MARKET'''
+: The world unsecured funding market in dollars used by global money dealers(banks). Does show up on balance sheet, c.f. Fed Funds market, which is a brokered system which doesn't. The irate charged is the LIBOR. The market is vulnerable to liquidity because it lacks access to the Fed’s balance sheet so they line up the in/out flows in time to minimize reserves. Also see FRA.
+
+'''EURODOLLARS'''
+: Dollar balances held by banks (money dealers) outside the US, which banks hold no reserves at the Fed and consequently have no direct access to settlement through Fedwire thus Eurodollar balances settle on the private CHIPS network.
+
+'''FED'''
+: Short for Federal Reserve Bank of the United States.
+
+'''FED FUNDS MARKET'''
+:Centred in NYC. The market where banks lend and borrow from each other; typically overnight loans.  Does not increase overall system reserves bc the loans just transfer excess reserves of one bank to the bank in need of additional reserves.  The market operates after business hours over the night until early morning the next day before business hours start.
+
+'''FED FUNDS RATE''' (Effective) 
+: The actual unsecured overnight interest rate used in FED FUNDS MARKET loans between banks to meet reserve requirements.
+
+'''FED FUNDS RATE''' (Target)
+: The target borrowing rate the Fed wants to see on the Fed Funds Market.  During business hours the Fed trades in the Repo market, adjusting the country's credit, using the targeted Federal Funds rate as a benchmark for the repo (reverse repo) rate.  During evening hours, the Federal Funds Market, using the repo rate as a benchmark for the effective Federal Funds rate. The effective rate (no collateral) will usually be slightly higher than the repo rate (collateralized).  The next day, the FOMC will review results from the previous day to see how well the effective rate met the targeted rate, and the Repo Rate "dance" starts all over again.
+
+'''FIP'''
+: Forward Interest Parity. [1+R(0,2)] [1+R(2,5)] = [1+R(0,5)], where R is the LIBOR.
+
+'''FOMC'''
+: Federal Open Market Committee. Committee within the Federal Reserve of US (FED); meets about 8 times a year; makes decisions on monetary policies.
+
+'''FRA'''
+: Forward Rate Agreement. Bet on the future value of the LIBOR by investors. Helps banks line up their balance sheet payments in time. 
+
+'''FUNDING LIQUIDITY'''
+: Ability to raise money to replace funds. See also market liquidity.
+
+'''FUNDING MARKET'''
+: ?
+
+'''INSIDE SPREAD'''
+:?
+
+'''LIBOR'''
+: London Interbank Offer Rate. Foreign Banks lend/borrow USD from each other in the Eurodollar market at this rate. Set by the Bank of England?
+
+'''MARKET LIQUIDITY'''
+: Ability to buy or sell quickly in volume without moving the price.  i.e. the more you can buy/sell without moving price, the more liquid the market for that asset is. See also funding liquidity.
+
+'''OUTSIDE SPREAD'''
+: ?
+
+'''REPO, RP'''
+: Repurchase agreement. A short term secured lending agreement whereby a security is loaned and repurchased at a later date for a higher amount representing the interest desired.  Also, used when the FOMC (Federal Open Market Committee) wants to adjust the country's money supply by way of adjusting the level of credit. To increase credit during a recession, the FOMC will loan funds to specific Treasury Dealers offering treasuries as collateral which is deposited (credited) to the dealers' banks, which will cause funds to be available for loans to the general public.
+
+'''REVERSE REPO'''
+: Same as the REPO transaction except that you are on lending side of the transaction.
+
+'''REPO RATE'''
+:The secured interest rate of the REPO.
+
+'''REVERSE REPO RATE'''
+: FOMC becomes the borrower, receiving loans from Treasury Dealers and issuing treasuries as collateral.
+
+'''SHADOW BANKING'''
+: Money market funding of capital market lending.
+
+'''TERM STRUCTURE'''
+:The banks have loans of varying terms and how these line up or overlap is the structure of the terms.
+
+'''UCIP'''
+: Uncovered Interest Parity.  Connection btw $ interest rates and interest rates in other currencies that shows up in exchange rates.  Economist thinks this makes sense and should be true, however, this connection fails all the time so current formula expressing this are not valid and the theory itself may not be valid also.  [Prof thinks it has to do with deep issues in monetary economics relating to liquidity and the price of liquidity so the money view is essential in figuring out these asset price anomalies.]
+
+'''VOLCKER RULE'''
+: Necessity of matched book.
+
+[[Category:Money|Definitions]]

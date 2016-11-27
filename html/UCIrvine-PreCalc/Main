@@ -1,0 +1,346 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">UCIrvine-PreCalc:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Pre-Calculus_by_UCIrvine">Pre-Calculus by UCIrvine</span></h1>
+<p><em>Go Peter the Anteater!</em></p>
+<h2> <span class="mw-headline" id="How_to_Enter_Math_Equations.2FExpressions_in_Quizzes.3F">How to Enter Math Equations/Expressions in Quizzes?</span></h2>
+<p><em>Note: The following directions relate to entering your answers/responses for the quizzes only. It DOES NOT relate to writing math equations, known as LaTex math notations, in the forum or in the wiki (as this one) to achieve brilliant typesetting in the browser. Although, both methods look very similar, there are subtle differences. Therefore, one will not work for the other.</em></p>
+<table border="1">
+<tr>
+<th>Ex#</th>
+<th>If your answer is</th>
+<th>Enter this</th>
+<th>Do NOT enter this</th>
+<th>Preview</th>
+<th>Wrong Entry/Comment</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>3</td>
+<td>3</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>27x</td>
+<td>27*x</td>
+<td>27x</td>
+<td></td>
+<td>Error parsing submission</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>86x+3</td>
+<td>86*x+3</td>
+<td>86x+3</td>
+<td></td>
+<td>Error parsing submission</td>
+</tr>
+
+<tr>
+<td>4</td>
+<td>4xyz+9</td>
+<td>4*x*y*z+9</td>
+<td>4*xyz+9</td>
+<td></td>
+<td>Error parsing submission</td>
+</tr>
+
+<tr>
+<td>5</td>
+<td>$$\frac{1}{2}$$</td>
+<td>1/2</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+
+<tr>
+<td>6</td>
+<td>$$\frac{1}{2}x$$</td>
+<td>1/2*x</td>
+<td>1/2x</td>
+<td></td>
+<td>Error parsing submission</td>
+</tr>
+
+<tr>
+<td>7</td>
+<td>$$\frac{1}{2}x+1$$</td>
+<td>1/2*x+1</td>
+<td>1/2x+1</td>
+<td></td>
+<td>Error parsing submission</td>
+</tr>
+
+
+<tr>
+<td>8</td>
+<td>$$\frac{1}{2}x+\frac{1}{2}$$</td>
+<td>1/2*x+1/2</td>
+<td>1/2x+1/2</td>
+<td></td>
+<td>Error parsing submission</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td>$$\frac{x+1}{2}$$</td>
+<td>(x+1)/2</td>
+<td>x+1/2</td>
+<td>$$\frac{1}{2}x+\frac{1}{2}$$</td>    
+<td>$$x+\frac{1}{2}$$</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td>$$\frac{1}{2}(x+1)$$</td>
+<td>(x+1)/2</td>
+<td>1/2*x+1</td>
+<td>$$\frac{1}{2}x+\frac{1}{2}$$</td>    
+<td>$$\frac{1}{2}x+1$$</td>
+</tr>
+
+
+
+<tr>
+<td>11</td>
+<td>$$\frac{x+1}{2}+\frac{x+1}{3}$$</td>
+<td>(x+1)/2 + (x+1)/3</td>
+<td>x+1/2+x+1/3</td>
+<td>$$\frac{5}{6}x$$+$$\frac{5}{6}$$</td>   
+<td>$$2x+\frac{5}{6}$$</td>
+</tr>
+
+
+
+<tr>
+<td>13</td>
+<td>$$\sqrt{x}$$</td>
+<td>sqrt(x)</td>
+<td></td>
+<td>$$\sqrt{x}$$</td>   
+<td>13 &amp; 13b are the same</td>
+</tr>
+
+<tr>
+<td>13b</td>
+<td>$$\sqrt{x}$$</td>
+<td>x^(1/2)</td>
+<td></td>
+<td>$$\sqrt{x}$$</td>   
+<td>**Preferred**</td>
+</tr>
+
+
+<tr>
+<td>14</td>
+<td>$$\sqrt[3]{x}$$</td>
+<td>root(x,3)</td>
+<td>sqrt(x,3)</td>
+<td>$$\sqrt[3]{x}$$</td>   
+<td>14 &amp; 14b are the same</td>
+</tr>
+
+<tr>
+<td>14b</td>
+<td>$$\sqrt[3]{x}$$</td>
+<td>x^(1/3)</td>
+<td>sqrt(x,3)</td>
+<td>$$\sqrt[3]{x}$$</td>   
+<td>**Preferred**</td>
+</tr>
+
+<tr>
+<td>15</td>
+<td>$$\sqrt[4]{x}$$</td>
+<td>root(x,4)</td>
+<td>sqrt(x,4)</td>
+<td>$$\sqrt[4]{x}$$</td>   
+<td>15 &amp; 15b are the same</td>
+</tr>
+
+<tr>
+<td>15b</td>
+<td>$$\sqrt[4]{x}$$</td>
+<td>x^(1/4)</td>
+<td>sqrt(x,4)</td>
+<td>$$\sqrt[4]{x}$$</td>   
+<td>**Preferred**</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td>$$x^{5/6}$$</td>
+<td>root(x,6/5)</td>
+<td>root(x,5/6)</td>
+<td>$$x^{5/6}$$</td>   
+<td>16 &amp; 16b are the same.   
+Caution: flipped fraction</td>
+</tr>
+
+<tr>
+<td>16b</td>
+<td>$$x^{5/6}$$</td>
+<td>x^{5/6}</td>
+<td>sqrt(x,5/6)</td>
+<td>$$x^{5/6}$$</td>   
+<td>**Preferred**</td>
+</tr>
+
+<tr>
+<td>17</td>
+<td>$$\frac{\sqrt{x}}{2}$$</td>
+<td>x^(1/2)/2</td>
+<td></td>
+<td>$$\frac{1}{2}\sqrt{x}$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>18</td>
+<td>$$\frac{x^{7/8}+x^{2/3}}{91}$$</td>
+<td>(x^(1/2)+x^(7/8))/91</td>
+<td></td>
+<td>$$\frac{1}{91}x^{7/8}+\frac{1}{91}x^{2/3}$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>19</td>
+<td>$$x^2$$</td>
+<td>x^2</td>
+<td></td>
+<td>$$x^2$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>20</td>
+<td>$$x^2+2xy+y^2$$</td>
+<td>x^2+2*x*y+y^2</td>
+<td></td>
+<td>$$x^2+2xy+y^2$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>21</td>
+<td>$$(x-y)^2$$</td>
+<td>(x-y)^2</td>
+<td></td>
+<td>$$(x-y)^2$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>22</td>
+<td>$$\frac{3(x^3-y^3)}{7}$$</td>
+<td>3*(x^3-y^3)/7</td>
+<td></td>
+<td>$$\frac{3}{7}x^3-\frac{3}{7}y^3$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>23</td>
+<td>$$x^y$$</td>
+<td>x^y</td>
+<td></td>
+<td>$$x^y$$</td>   
+<td></td>
+</tr>
+
+
+<tr>
+<td>24</td>
+<td>$$\frac{x^y}{5}$$</td>
+<td>x^y/5</td>
+<td></td>
+<td>$$\frac{1}{5}x^y$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>25</td>
+<td>$$\frac{x^a+y^b}{8}$$</td>
+<td>(x^a+y^b)/8</td>
+<td></td>
+<td>$$\frac{1}{8}x^a+\frac{1}{8}y^b$$</td>   
+<td></td>
+</tr>
+
+<tr>
+<td>26</td>
+<td>$$\frac{x^{a-2}+y^{b+2}}{2xy}$$</td>
+<td>(x^(a-2)+y^(b+2))/(2*x*y)</td>
+<td></td>
+<td>$$\frac{x^{a-2}+y^{b+2}}{2xy}$$</td>   
+<td>(2*x*y) must be inside parenthesis</td>
+</tr>
+
+
+<tr>
+<td>40</td>
+<td>$$\frac{-b+\sqrt{b^2-4ac}}{2a}$$</td>
+<td>(-b+(b^2-4*a*c)^(1/2))/(2*a)</td>
+<td></td>
+<td>$$\frac{-b+\sqrt{-4ac+b^2}}{2a}$$</td>   
+<td>(2*a) must be inside parenthesis</td>
+</tr>
+
+
+<tr>
+<td>41</td>
+<td>$$\frac{-b-\sqrt{b^2-4ac}}{2a}$$</td>
+<td>(-b-(b^2-4*a*c)^(1/2))/(2*a)</td>
+<td></td>
+<td>$$\frac{-b-\sqrt{-4ac+b^2}}{2a}$$</td>   
+<td>(2*a) must be inside parenthesis</td>
+</tr>
+
+<tr>
+<td>50</td>
+<td>$$|x|$$</td>
+<td>abs(a)</td>
+<td></td>
+<td>$$$$</td>   
+<td></td>
+</tr>
+
+
+
+</table>
+<h2> <span class="mw-headline" id="Algebraic.2FPre-Calc_Formulas">Algebraic/Pre-Calc Formulas</span></h2>
+<p>$$(a+b)^2 = a^2+2ab+b^2$$<br />
+$$(a-b)^2 = a^2-2ab+b^2$$ </p>
+<p>$$a^2-b^2 = (a+b)(a-b)$$</p>
+<p>$$a^3+b^3 = (a+b)(a^2-ab+b^2)$$<br />
+$$a^3-b^3 = (a-b)(a^2+ab+b^2)$$  </p>
+<p>&#42;&#42;Quadratic Equation&#42;&#42;<br />
+&#42; For $$ax^2+bx+c=0$$,<br />
+$$x = \frac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 7/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=UCIrvine-PreCalc:Main&amp;oldid=8522">https://share.coursera.org/wiki/index.php?title=UCIrvine-PreCalc:Main&amp;oldid=8522</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

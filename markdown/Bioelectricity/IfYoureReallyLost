@@ -1,0 +1,155 @@
+If You're Really Lost: A Guide to the Greek Letters, Symbols and Units You'll Encounter in This Course
+======================================================================================================
+Greek letters
+--------------
+
+$$\alpha$$ = pronounced alpha. When Professor Barr writes it by hand it'll look a lot like a fish facing west. In terms of this course, alpha functions measure how fast n, m, h particles are opening.
+
+$$\beta$$ = pronounced beta. A lot of the time it'll just be written like a slightly misshapen uppercase B. In terms of this course, beta functions measure how fast n, m and h particles are closing.
+
+$$\gamma$$ = pronounced gamma. According to Dr. Barr in Hints and Kinks: it's "used as the symbol...[for]conductance...because it is related to the Roman letter G or g, often used for conductance on a larger scale than one channel."
+
+$$\Delta$$ = pronounced delta. Just draw it like a normal triangle. It's a calculus thing, used to indicate 'change in' something.
+
+$$\mu$$ = pronounced mu - though you don't really need to know this - you'll know this one as <i>micro</i>. You'll be familiar with it from quiz 1B. It means you apply a factor of $$10^{-6}$$ - that is, whatever unit follows, it's a millionth of it. When written by hand or typed up without the benefit of $$LaTeX$$ people just use a normal lowercase u. *Be really careful not to mix up mV with $$\mu$$V - that's millivolts vs microvolts - it's happened a few times on the forums already.*
+
+$$\theta$$ = pronounced theta 
+
+$$\pi$$ = pronounced pie - 3.14159 - We're aware that you about know this one. It's just here for completeness. 
+
+$$\rho$$ = pronounced rho, for resistivity. This one looks like a P. Compare to resistance, the shorthand for which is actually just an uppercase $$R$$. Resistivity is measured in ohm-meters or ohm-centimeters ($$\omega-m$$, $$\omega-cm$$) and resistance is measured in ohms ($$omega$$). Yeah, it's a little confusing at first, but you'll get used to it soon enough. 
+
+$$\tau$$ = pronounced tau - interval of time
+
+$$\phi$$ = pronounced fi (as in fee-fi-fo-fum) - potential
+
+$$\Omega$$ = pronounced omega, but you'll hear it spoken as *Ohms*, the SI unit for the measurement of electric resistance.
+
+Symbols
+-------
+[Special Symbols](http://physics.info/symbols/) (from the The Physics Hyper Textbook) - includes Unicode Decimal Values  
+  
+[[Intro_MathThink:Latex | Latex reference]] from the course wiki for Intro to Mathematical Thinking  
+  
+[LaTex Mathematical Symbols](http://amath.colorado.edu/documentation/LaTeX/Symbols.pdf)
+
+$$E_K$$ - Nernst potential for K+   
+$$E_Na$$ - Nernst potential for Na+   
+$$E_Cl$$ - Nernst potential for Cl-   
+
+$$I_{stim}$$ - current introduced into the system (either intracellularly or extracellularly) by experimenter   
+$$I_c$$ - capacitive portion of the membrane current   
+$$I_m$$ - current flowing across the membrane   
+
+
+Units 
+-----
+*(if you need these for a computer-based calculator, just copy and paste. They've been checked and rechecked for accuracy)*
+
+- Pico - $$\gamma$$. looks like a y. See this, multiply what comes after by  $$10^{−12}$$/10E-12 or 0.000000000001.
+
+- Micro - $$\mu$$. See this, multiply what comes after by $$10^{-6}$$/10E-6 or 0.000001
+
+- Milli - abbreviated m. Multiply what comes after by $$10^-3$$/10E-3 or 0.001. Usually as part of millivolts (mV) or milliseconds (ms).
+
+
+-----------
+
+Temporary working area for formulas and equations
+---------
+R=1/G
+
+RT/F
+
+Nernst
+
+$$alpha_n/(alpha_n+ beta_n) = n$$  
+  
+multi-ion expression (Goldman's Equation)  
+  
+---  
+  
+$$\begin{array}{|c|c|c|c|c|c|c|}     
+Quantity & Symbol & Unit & Value & Formula & Link \\\ \hline  
+l1 & l2 & Angstrom & l4 & l5 & l6 \\\   
+Resistivity & \rho & ohm-cm & c4 & \rho = R \frac{A}{\ell} & c6 \\\   
+Conductivity & \sigma & S.m^{-1} & c4 & \sigma=\frac{1}{\rho} & c6 \\\   
+Avogadro’s \ constant & N & c3 & 6.02214129(27)×10^{23}mol^{-1} & c5 & c6 \\\   
+Gas \ constant & R & c3 & 8.314\,4621(75)~\frac{\mathrm{J}}{\mathrm{mol~K}} &  & c6 \\\   
+Faraday’s \ constant & F & c3 & F = 96485.3365C/mol &  & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\  
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+\end{array}$$
+
+Table 2 
+
+$$\begin{array}{|c|c|c|c|c|c|c|}     
+h1 & h2 & h3 & h4 & h5 & h6 \\\ \hline  
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\  
+\end{array}$$
+
+Table 3 
+
+$$\begin{array}{|c|c|c|c|c|c|c|}     
+What & h2 & h3 & h4 & h5 & h6 \\\ \hline  
+Action Potential & [Action potential](http://www.youtube.com/watch?NR=1&v=7tBWl4GE8rk&feature=endscreen) & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\   
+c1 & c2 & c3 & c4 & c5 & c6 \\\  
+\end{array}$$
+
+Temporary working area: Action potential @ the heart of Bioelelectricity
+------------------------------------------------
+
+[Passive tissue vs Active tissue](https://share.coursera.org/wiki/index.php/Bioelectricity:Glossary)
+
+[V Basic nervous system](http://www.youtube.com/watch?v=uaiACDqqZhA); 2:45 min with Leslie Samuel, man, (*)
+
+[Action potential](http://www.youtube.com/watch?v=POSPO8QbZI4); 5:25 min with Leslie Samuel,  man, (*)
+
+[Depolarization](http://www.youtube.com/watch?v=pnAwtX_UCbg&playnext=1&list=PLjToEtjH1Eix3AAAmxnZYjUkb2l1--PVu&feature=results_main); 4:14 min with Leslie Samuel,  man, (*)
+
+[Repolarization](http://www.youtube.com/watch?v=xmn0Vcd_wLA&list=PLDC6BD324C48FE44E); 2:50 min with Leslie Samuel,  man, (*)
+
+[Hyper polarization](http://www.youtube.com/watch?v=JbCIvMz0yvc&list=PLDC6BD324C48FE44E); 2:33 min with Leslie Samuel,  man, (*)
+
+[Action potential - funky short animation](http://www.youtube.com/watch?NR=1&v=7tBWl4GE8rk&feature=endscreen)
+
+
+[Equilibrium potential as Driving force](http://www.youtube.com/watch?v=BYAMUfh1dDE), 
+8:21 min of life-inspired story telling, with ThePenguinProf, (**)
+
+[Action Potential](http://www.youtube.com/watch?feature=endscreen&v=lHnBL5eifhA&NR=1), 15:56 min of passionate tango-like AP, with ThePenguinProf,  abit blurry, but good stuff (**)
+
+|Action potential| [funky short animation](http://www.youtube.com/watch?NR=1&v=7tBWl4GE8rk&feature=endscreen)
+
+(http://akciospotencial.blog.hu/2011/12/15/bortonbe_zart_molekulak) - Hungarian?| [Leslie Samuel on AP](http://www.youtube.com/watch?v=POSPO8QbZI4)

@@ -1,0 +1,70 @@
+#Programming Assignment #3 - The Echo server using Java Netty NIO framework.
+
+This is a guideline to implement the Echo server in Netty 
+[Programming Assignment #3](https://class.coursera.org/posa-001/human_grading/view/courses/970268/assessments/30/submissions).
+
+##Overview
+While Netty framework already provides some sample code for Echo, it's very important that you realize 
+that **those patterns are not implemented in this code** since Netty provide a high level interface. 
+Indeed, the implementation of the [Reactor](http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf),
+[Wrapper facade](http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf), or the [Acceptor-Connector](http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf) patterns are not visible to users of Netty. 
+
+Therefore, it's important to understand how those patterns are implemented in Netty. In this regard, it's worth it to mention some key aspects of Netty framework.
+
+1. Netty implementation abstracts away the details of the implementation of the Reactor, Connector and Acceptor.
+2. The [Channel](http://docs.jboss.org/netty/3.2/api/org/jboss/netty/channel/Channel.html) is the main interface 
+in Netty and separate your code form the different backends supported (NIO, OIO, Http, local).
+the rest of this document will assume NIO backend.
+3. Each [NioServerSocketChannel](http://docs.jboss.org/netty/3.2/api/org/jboss/netty/channel/socket/nio/NioServerSocketChannelFactory.html) when bound has two type of threads: boss and worker.
+4. The Dispatching and Event Demultiplexing is managed by the Boss thread. The Event handling is done by one or more Worker threads. 
+5. It uses the ExecutorService interface as opposed to Runnable or Thread class for concurrency.
+6. There are two help classes for creating server and client. ServerBoostrap and ClientBootstrap.
+7. Also, in Netty, Handlers are in a ChannelPipeline that follows the Interceptor pattern.
+
+ 
+
+## My recipe
+This is what I'm doing or done to implement it. I just hope that it can be useful for you and you can use it but this is not guaranteed if you are cooking a different dish!
+
+### Step 1. Start with the [Telnet Server](http://docs.jboss.org/netty/3.2/xref/org/jboss/netty/example/telnet/package-summary.html) example from Netty.
+Although there is an [Echo server](http://docs.jboss.org/netty/3.2/xref/org/jboss/netty/example/echo/package-summary.html) example, don't use it. Use the Telnet server instead as the plumbing provided is closer to what you need. The Telnet server already has code for the String encoder/decoder handler and the Line delimiter handler needed to support Text-based protocols (hence makes easy the use of telnet tools such as putty for testing). In addition, it provides session termination once a string "bye" is detected on the channel.
+
+If you have you code already, don't worry, it can be added. Just check in the telnet code the following lines 
+    
+    // Add the text line codec combination first,
+    pipeline.addLast("framer", new DelimiterBasedFrameDecoder(
+              8192, Delimiters.lineDelimiter()));
+    pipeline.addLast("decoder", new StringDecoder());
+    pipeline.addLast("encoder", new StringEncoder());
+
+that need to be added to your pipeline. Next, use the version of the *messageReceived* method from the ServerHandler.
+This is because the request/response is processing directly as String instead of Byte arrays since the codec/decoder did the conversion already.
+
+### Step 2. Update the *messageReceived* in the ServerHandler
+Make the *messageReceived* method to send back as response the same request message received.
+
+At this point you should have a working project in place already and not only the server but also a decent client. 
+However, with this, is difficult to see how the patterns mentioned above are working in the framework.
+Besides, it's kind of too easy and there's no much to say about what was learned. So, my idea is to implement my own version of those pattern on top of Netty using in addition Facade and Adapter patterns mainly.
+  
+### Step 3. Map participants of the Reactor and Acceptor-Connector to Netty framework.
+Working on it...
+
+### Step 4. Hide Netty framework.
+Working on it...
+
+
+### Step 5. Implement a CLI interface.
+
+I posted about this a few days ago. This is the original thread: 
+[CLI interface for PA#3 (and PA#4)](https://class.coursera.org/posa-001/forum/thread?thread_id=927)
+
+The implementation of the CLI will require the addition of these patterns:
+* **Interpreter**:  To parse and process the different inputs of commands.
+* **Command processor and/or Command pattern**: To implement the command actions. 
+* **Proxy**: the Client to execute commands remotely.
+* **Strategy**. Allow the server to switch from **Simple mode** to **Advance mode** once the **startcli** command is sent by the client. notice that this switch is one way.
+
+
+### Step 6: Test it!
+By now we should have a pretty decent client and server up and running. Test and enjoy!

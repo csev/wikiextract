@@ -1,0 +1,55 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">DataSciSpec:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This site is a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Wiki">wiki</a>, meaning that anyone can edit any page and improve it for all readers.  Don't be afraid to contribute and add to what others have already written on any page.  If you make any mistakes, it's easy to undo your changes.  If you want, you can first play around in the <a href="/wiki/index.php/Sandbox" title="Sandbox">Sandbox</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Data_Science_Specialization"><span class="tocnumber">1</span> <span class="toctext">Data Science Specialization</span></a></li>
+<li class="toclevel-1"><a href="#Course_Dependency_Information"><span class="tocnumber">2</span> <span class="toctext">Course Dependency Information</span></a></li>
+<li class="toclevel-1"><a href="#Data_Science_Methodology"><span class="tocnumber">3</span> <span class="toctext">Data Science Methodology</span></a></li>
+<li class="toclevel-1"><a href="#Resources"><span class="tocnumber">4</span> <span class="toctext">Resources</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Data_Science_Specialization">Data Science Specialization</span></h2>
+<p>Welcome!</p>
+<blockquote>
+  <p>We believe that the key word in Data Science is "science". Our course track is focused on providing you with three things: (1) an introduction to the key ideas behind working with data in a scientific way that will produce new and reproducible insight, (2) an introduction to the tools that will allow you to execute on a data analytic strategy, from raw data in a database to a completed report with interactive graphics, and (3) on giving you plenty of hands on practice so you can learn the techniques for yourself. <em>Jeff Leek and the Data Science Track Team</em></p>
+</blockquote>
+<p>The <a rel="nofollow" class="external text" href="https://www.coursera.org/course/datascitoolbox">Data Scientist's Toobox</a> course is a high-level overview of the core courses in the data science specialization and lays the groundwork for the tools we'll use throughout the <a rel="nofollow" class="external text" href="https://www.coursera.org/specialization/jhudatascience/1?utm_medium=dashboard">specialization</a>. This is the primary wiki for all courses in the specialization including <a rel="nofollow" class="external text" href="https://www.coursera.org/course/datascitoolbox">Data Scientist's Toolbox</a> with instructor Jeff Leek, <a rel="nofollow" class="external text" href="https://www.coursera.org/course/rprog">R Programming</a> with instructor Roger D. Peng, <a rel="nofollow" class="external text" href="https://www.coursera.org/course/getdata">Getting and Cleaning Data</a> with instructor Jeff Leek, <a rel="nofollow" class="external text" href="https://www.coursera.org/course/exdata">Exploratory Data Analysis</a> with instructor Roger D. Peng, <a rel="nofollow" class="external text" href="https://www.coursera.org/course/repdata">Reproducible Research</a> with instructor Roger D. Peng, <a rel="nofollow" class="external text" href="https://www.coursera.org/course/statinference">Statistical Inference</a> with instructor Brian Caffo, <a rel="nofollow" class="external text" href="https://www.coursera.org/course/regmods">Regression Models</a> with instructor Brian Caffo, <a rel="nofollow" class="external text" href="https://www.coursera.org/course/predmachlearn">Practical Machine Learning</a> with instructor Jeff Leek, and <a rel="nofollow" class="external text" href="https://www.coursera.org/course/devdataprod">Developing Data Products</a> with instructor Brian Caffo.</p>
+<h2> <span class="mw-headline" id="Course_Dependency_Information">Course Dependency Information</span></h2>
+<p><div class="floatright"><a href="/wiki/images/a/ab/Data_Science_Course_Order.png" class="image" title="A visual representation of suggested course order in the Data Science Specialization"><img alt="A visual representation of suggested course order in the Data Science Specialization" src="/wiki/images/thumb/a/ab/Data_Science_Course_Order.png/600px-Data_Science_Course_Order.png" width="600" height="228" /></a></div></p>
+<p>There are nine courses in the <a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/rprog/doc/JHDSS_CourseDependencies.pdf">sequence</a> plus a capstone project course. For the courses, we consider two forms of dependency.</p>
+<p><strong>Hard dependency</strong>: Students will be required to know material from the prerequisite course. Taking the dependent course simultaneously will be challenging and only possible for highly motivated students willing to work ahead of the course schedule for the prerequisite. Taking hard dependent courses out of order is not possible unless the student already knows the material covered in the prerequisite course. </p>
+<p><strong>Soft dependency</strong>: Knowledge of material from the prerequisite course is recommended and useful. Concurrently taking the prerequisite course and the dependent course is possible. It is not recommended to take them out of order, but would be possible for highly motivated students willing to self teach components of the prerequisite course as needed.</p>
+<p>Using the course dependency information, I was able to determine that, if you adhere to hard dependencies, it takes a minimum of 24 weeks to complete the 9 courses.</p>
+<h2> <span class="mw-headline" id="Data_Science_Methodology">Data Science Methodology</span></h2>
+<p><a rel="nofollow" class="external text" href="https://www.coursera.org/course/datascitoolbox">Data Scientist's Toolbox</a>, the foundational course in the Data Science Specialization, "introduces <a rel="nofollow" class="external text" href="http://www.jhu.edu">John Hopkins University's</a> comprehensive approach to data science, which makes this series unique and more valuable. The courses in the specialization track emphasise <a rel="nofollow" class="external text" href="http://datascience101.wordpress.com/2014/03/13/the-data-science-methology/">data science methodology</a> rather than focusing primarily on data science technique.  In this course, they have taken care throughout to demonstrate a responsible, scientifically-based approach to collecting, curating and analyzing data sources." (Quoting and paraphrasing a comment by Data Science Specialization participant John Frederick Thiels)</p>
+<p>The keyword in "data science" is <a rel="nofollow" class="external text" href="http://simplystatistics.org/2013/12/12/the-key-word-in-data-science-is-not-data-it-is-science/">science</a> not data. The methodology is not dependent upon the dataset size; it scales from tiny data to big data. Data science methodology can be equated to the scientific method used in the natural sciences. In fact, JT Leek emphasises the importance of the science component of data science early in the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/datascitoolbox">Data Scientist's Toolbox</a> course.</p>
+<p>An article <a rel="nofollow" class="external text" href="http://datascience101.wordpress.com/2014/03/13/the-data-science-methology/">"The Data Science Methodology"</a> on the Data Science 101 blog reiterates the four-step process familiar to scientists in the natural sciences although worded in terms appropriate for the emerging field called data science. An argument supporting the need for a rigorous methodology is featured in in the Financial Times article <a rel="nofollow" class="external text" href="http://www.ft.com/cms/s/2/21a6e7d8-b479-11e3-a09a-00144feabdc0.html#axzz2yoaf4K76">"Big data: are we making a big mistake?"</a></p>
+<h2> <span class="mw-headline" id="Resources">Resources</span></h2>
+<p>Please contribute any course related information you like. And by the way - it's easy to contribute your valuable information, just don't think you are not able to do so, or might break things. Please read these instructions and guidelines about <a href="/wiki/index.php/Help:Editing" title="Help:Editing"> editing</a> wiki pages on this platform.</p>
+<ul>
+<li><a href="/wiki/index.php/DataSciSpec:FAQ" title="DataSciSpec:FAQ">FAQ</a> provides answers to Frequently Asked Questions</li>
+<li><a href="/wiki/index.php/DataSciSpec:Useful_Resources" title="DataSciSpec:Useful Resources">Resources</a> gives you links to all the helpful stuff collected by your co-students</li>
+<li><a href="/wiki/index.php/DataSciSpec:Courses" title="DataSciSpec:Courses">Courses</a> is a summary page where you can find further material concerning each of the courses</li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=DataSciSpec:Main&amp;oldid=32215">https://share.coursera.org/wiki/index.php?title=DataSciSpec:Main&amp;oldid=32215</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Machine_Learning" title="Category:Machine Learning">Machine Learning</a></li><li><a href="/wiki/index.php?title=Category:Statistics&amp;action=edit&amp;redlink=1" class="new" title="Category:Statistics (page does not exist)">Statistics</a></li><li><a href="/wiki/index.php/Category:R" title="Category:R">R</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php?title=Category:DataSci&amp;action=edit&amp;redlink=1" class="new" title="Category:DataSci (page does not exist)">DataSci</a></li><li><a href="/wiki/index.php/Category:DataSciSpec" title="Category:DataSciSpec">DataSciSpec</a></li><li><a href="/wiki/index.php/Category:Data_Scientist%27s_Toolbox" title="Category:Data Scientist's Toolbox">Data Scientist's Toolbox</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

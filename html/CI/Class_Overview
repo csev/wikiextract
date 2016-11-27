@@ -1,0 +1,140 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">CI:Class Overview</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><strong>Module 1 Class Overview</strong> (Lecture Video 1.1)</p>
+<p><em>Note: Just copied notes from lecture slides and text from subtitles, needs tidying</em></p>
+<ul>
+<li>Due Date: October 28, Time for Completion: 8 minutes</li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a> </li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=35">video</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/011-CompInvestI.pdf">pdf</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.universalsubtitles.org/en/videos/xBCeOBkweEY4/info/class-overview/">Subtitles</a></li>
+</ul>
+<p>Coursera wiki: Computational Investing <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/CI:Main">Main Page</a> and <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/CI:Module_2_Objectives">next Lecture</a> </p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Goals_and_Objectives_Of_the_Course"><span class="tocnumber">1</span> <span class="toctext">Goals and Objectives Of the Course</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Example:_Exxon_Mobile_and_Chevron"><span class="tocnumber">1.1</span> <span class="toctext">Example: Exxon Mobile and Chevron</span></a></li>
+<li class="toclevel-2"><a href="#Example:_Delta_and_Southwest_Airlines."><span class="tocnumber">1.2</span> <span class="toctext">Example: Delta and Southwest Airlines.</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Who_Is_this_course_is_for.3F"><span class="tocnumber">2.1</span> <span class="toctext">Who Is this course is for?</span></a></li>
+<li class="toclevel-2"><a href="#Course_Logistics"><span class="tocnumber">2.2</span> <span class="toctext">Course Logistics</span></a></li>
+<li class="toclevel-2"><a href="#About_the_Instructor"><span class="tocnumber">2.3</span> <span class="toctext">About the Instructor</span></a></li>
+<li class="toclevel-2"><a href="#Course_Resources"><span class="tocnumber">2.4</span> <span class="toctext">Course Resources</span></a></li>
+<li class="toclevel-2"><a href="#Next_steps."><span class="tocnumber">2.5</span> <span class="toctext">Next steps.</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Goals_and_Objectives_Of_the_Course">Goals and Objectives Of the Course</span></h1>
+<ul>
+<li>Understand electronic markets</li>
+<li>Understand market data</li>
+<li>Write software to visualize</li>
+<li>Write software to discover</li>
+<li>Create market simulator</li>
+</ul>
+<p>Hi. Welcome to Computational Investing, Part I. I'm your instructor, Tucker Balch.</p>
+<p>Let me start by telling you a little bit about the course, what our objectives are. First objective is, I want you to understand electronic markets. And, there's two parts to that. One is, how does computation make the markets work, and the other is computational models of how the markets work. And, by understanding those models, we can understand the markets a little bit more deeply.</p>
+<p>Below are at two stocks that are very similar, usually. That's Exxon Mobile and Chevron. Why are they different, sometimes? But the same, most of the other times? We'll look at computational models that help us understand that. Also below are are two companies in exactly the same market (Delta and Southwest Airlines), but their prices move dramatically differently. Why is that, how can we exploit it?</p>
+<p>In order to work with this information computationally, we need to understand, what is the data? It's not simple, it's actually complex. And we'll spend some time looking at how to get the data. How to process it. And how to use it computationally. </p>
+<p>We're going to write software, software to visualizes market data. And understand how different stocks relate to one another. We're going to write software to discover. We wanna discover opportunities. We want to discover which stocks move closely together. Which ones move differently.</p>
+<p>And finally you're gonna create a simple market simulator that will let you test your own strategies on stock market data.</p>
+<h2> <span class="mw-headline" id="Example:_Exxon_Mobile_and_Chevron">Example: Exxon Mobile and Chevron</span></h2>
+<p><div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/4/44/CI1-035a_CompareXOMandCVX.png" class="image"><img alt="" src="/wiki/images/thumb/4/44/CI1-035a_CompareXOMandCVX.png/400px-CI1-035a_CompareXOMandCVX.png" width="400" height="196" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/44/CI1-035a_CompareXOMandCVX.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Exxon Mobile and Chevron stock prices on Google Finance</div></div></div></p>
+<p>Let me show you an example of the kind of thing I am talking about. And I'll show you couple of web pages here. Let's start by looking at two stocks that are very similar, usually. That's Exxon Mobile and Chevron. These are two oil company stocks. <a rel="nofollow" class="external text" href="https://www.google.com/finance?chdnp=1&amp;chdd=1&amp;chds=1&amp;chdv=1&amp;chvs=Linear&amp;chdeh=1&amp;chfdeh=0&amp;chdet=1345752000000&amp;chddm=49240&amp;chls=IntervalBasedLine&amp;cmpto=NYSE%3ACVX&amp;cmptdms=0&amp;q=NYSE%3AXOM&amp;ntsp=0&amp;fct=big&amp;ei=ymO1UKj1GuONwAPqLg">Exxon Mobile and Chevron on Google Finance</a></p>
+<p>Look how similarly their prices change over time. But they're not identical. And why is that? Why are they different, sometimes? But the same, most of the other times? We'll look at, computational models that help us understand that.</p>
+<h2> <span class="mw-headline" id="Example:_Delta_and_Southwest_Airlines.">Example: Delta and Southwest Airlines.</span></h2>
+<p><div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/5/5a/CI1-035a_CompareLUVandDAL.png" class="image"><img alt="" src="/wiki/images/thumb/5/5a/CI1-035a_CompareLUVandDAL.png/400px-CI1-035a_CompareLUVandDAL.png" width="400" height="183" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/5/5a/CI1-035a_CompareLUVandDAL.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Delta and Southwest Airlines stock prices on Google Finance</div></div></div>
+Here's one more example.</p>
+<p>This is, two airline stocks. The, blue line there is Delta. The red line is, Southwest Airlines. These are two companies in exactly the same market, but their prices move dramatically differently. Why is that, how can we exploit it? Those are all things that we'll look at in this course. <a rel="nofollow" class="external text" href="https://www.google.com/finance?chdnp=1&amp;chdd=1&amp;chds=1&amp;chdv=1&amp;chvs=Linear&amp;chdeh=1&amp;chfdeh=0&amp;chdet=1345233600000&amp;chddm=49266&amp;chls=IntervalBasedLine&amp;cmpto=NYSE%3ALUV&amp;cmptdms=0&amp;q=NYSE%3ADAL&amp;ntsp=0&amp;fct=big&amp;ei=u2m1UMiuPMStwAODbw">Delta and Southwest Airlines on Google Finance</a></p>
+<h1> <span class="mw-headline" id="Notes">Notes</span></h1>
+<h2> <span class="mw-headline" id="Who_Is_this_course_is_for.3F">Who Is this course is for?</span></h2>
+<ul>
+<li>Must be interested in stock markets.</li>
+<li>Student1: Non-technical person
+<ul><li><ul><li> You are welcome!
+</li><li> Can watch lessons, take quizzes, but...
+</li><li> No certificate without completing projects.</li>
+</li></ul>
+</li></ul>
+<li>Student2: Technical person
+<ul><li><ul><li> Undergraduate level programming
+</li><li> Certificate if quizzes &amp; projects completed.</li>
+</li></ul>
+</li></ul>
+</ul>
+<p>Okay who is this course for.</p>
+<p>First of all, you need to be interested in the stock market.</p>
+<p>That's not a prerequisite, but. I'll tell you right now, this course is not going to be interesting for you unless you really are interested in stock markets. So that's something important.</p>
+<p>There's two types of students, that might take this course. One is a non-technical person, and we welcome you. But you're not going to get credit for the course unless you, complete the programming assignments. I still think it's valuable if you're a non technical person, to watch the presentations, and take the quizzes, but to get the, full credit, you'll need to, complete the programming assignments.</p>
+<p>The other kind of student this is for is a technically oriented person, who does have programming experience. We'll talk more in a moment about the programming projects themselves.</p>
+<h2> <span class="mw-headline" id="Course_Logistics">Course Logistics</span></h2>
+<ul>
+<li>8 weeks, 2 modules per week.</li>
+<li>About 5 to 10 short videos per module. </li>
+<li>Short quizzes throughout.</li>
+<li>Projects in Excel and Python.</li>
+<li>Students will grade each other.</li>
+</ul>
+<p>We're gonna have eight weeks of material. </p>
+<p>There will be two modules per week. Each module is going to be about 5-10 short videos, like this one.</p>
+<p>There's going to be very short quizzes throughout to check your mastery of the material, No big deal, but in order to go forward through the course, you'll need to complete these quizzes, just to make sure you're paying attention, really.</p>
+<p>There will be projects, these are the ones that are required for getting the certificate. We'll have projects in Excel. And also in the Python programming language.</p>
+<p>Because we have so many people taking this course, we don't have the resources to grade all these programming assignments ourselves. And so we're going to ask students taking the course to grade each other. I think that's actually going to be useful because you'll see you'll learn by looking at other people's work.</p>
+<p>One thing I want to emphasize, plagiarism is not allowed. You need to do your own work.</p>
+<h2> <span class="mw-headline" id="About_the_Instructor">About the Instructor</span></h2>
+<ul>
+<li>PhD in Robotics/Machine Learning. </li>
+<li>Professor at Georgia Tech.</li>
+<li>Students: AQR, Citadel, GS, MS</li>
+<li>Hedge fund quant.</li>
+<li>Founder of Lucena Research.</li>
+</ul>
+<p>Let me tell you a little bit about me. I was once a fighter pilot. That doesn't make me much. That doesn't help me instruct you in
+finance, But people are always interested to know that I once was in the Airforce.</p>
+<p>Once I left the Airforce I got a PhD in Robotics and Machine Learning. And I'm from, a professor in George Tech in Robotics and Machine Learning.</p>
+<p>Recently over the last few years I've become very interested in finance and in the stock markets, And I've, I've shifted my work in that direction. I spent a year as a quantitative analyst at a hedge fund. I've also shifted the courses I teach at Georgia Tech to be in the direction of, of financing and, and machine learning applied to finance.</p>
+<p>Students who have taken my courses are at some of the top hedge funds in the world and, and top investment banks. So this material is, is useful and, and is helpful for that sort of a career path.</p>
+<p>I also recently founded a, a company that's a spin off from Georgia Tech. It's called Lucena Research and it's about
+applying these very same algorithms and software to understanding the stock market.</p>
+<h2> <span class="mw-headline" id="Course_Resources">Course Resources</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org">wiki.quantsoftware.org</a></li>
+<li>“Active Portfolio Management” by Grinold &amp; Khan (<a rel="nofollow" class="external text" href="http://www.amazon.com/Active-Portfolio-Management-Quantitative-Controlling/dp/0070248826">amazon.com</a>)</li>
+<li>“All About Hedge Funds” by Jaeger (<a rel="nofollow" class="external text" href="http://www.amazon.com/All-About-Hedge-Funds-Started/dp/0071393935">amazon.com</a>)</li>
+</ul>
+<p>In terms of, course resources, the, first stop for you to learn more about the course and, all the materials for the
+course will be <a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org">wiki.quantsoftware.org</a> If you go
+there, you'll discover everything you need to know about the course.</p>
+<p>There are two books that are not required, but I have found them very useful. The first one is "Active Portfolio Management" by Grenold and Khan. Much of the material that I'll present in this course is drawn from this book. And when appropriate, I'll mention in the in the SlideDex appropriate readings to look at. But that's really for deeper look. You're not, you don't have to own this book.</p>
+<p>Another book that's very useful, it's a little bit less expensive because it's a paperback, is all about hedge funds by Yeager. Even though it is about hedge funds it, it really very nicely comprehensively covers Stock pricing and strategies for taking advantage of stock pricing.</p>
+<h2> <span class="mw-headline" id="Next_steps.">Next steps.</span></h2>
+<p>Okay. Next steps. First thing to do is go take a look at that <a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org">wiki.quantsoftware.org</a>. Also if after looking at that you have any questions please visit the course <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/forum/index">Discussion Forums</a> and <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/forum/list?forum_id=2">Q&amp;A Forum</a>  which is also linked to from that wiki. And again the, the address for that wiki is right there <a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org">wiki.quantsoftware.org</a>.</p>
+<p>We'll be glad to answer any questions you have so that you can get a good feel for what's ahead in this course.
+And I think it's gonna be really exciting and fun and look forward to your participation.</p>
+<p>Thanks very much.</p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=CI:Class_Overview&amp;oldid=5214">https://share.coursera.org/wiki/index.php?title=CI:Class_Overview&amp;oldid=5214</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:CI" title="Category:CI">CI</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

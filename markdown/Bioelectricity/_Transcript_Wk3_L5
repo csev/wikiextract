@@ -1,0 +1,46 @@
+# Week 3 Lecture 5: The Active Simulation  
+  
+**Bioelectricity Week3_5 (slide 25)**  
+* Hello again. This is Roger Coke Barr for the bioelectricity course. We are in week three, and today we talk about the simulation of active tissue. You will enjoy this. I'm sure you will.   
+  
+**Active simulation (only tissue changes) (slide 26)**  
+* So the active simulation is done just like the passive simulation. Everything is the same. Except that the membrane resistance corresponds to active tissue rather than passive tissue. The sequence of steps, however going through are the same, is the same basic sequence that was done before.  
+* Essentially, over and over we use this equation. We inserted DT. Normally, that's kept fixed. So here let's say that's one microsecond, and in that one microsecond, we compute a change in VM. Now with the new VM, we do the same process all over again.  
+* Everything will be exactly the same except that VM had been modified so that the process accumulates each time you go around the cycle it computes a new change in VM, you modify VM then you go around the cycle again over and over and over for however long you would like to.  
+* So if the simulation goes on for a millisecond, that means it's gone around the cycle a thousand times, accumulated a millisecond's worth of results. Through a series of one micro-second steps.   
+  
+**Active tissue - stimulus (slide 27)**  
+* Now let's look at what happens. Is it ever different?  
+* So the passive stimulation, just to remind you, has a stimulus, that, just this pulse, 400 microseconds long.  
+* And in the active simulation, it is just exactly the same. The stimulus is again, this pulse. 400 microseconds long, the very same amplitude.  
+  
+**Active tissue – response during stimulus (slide 28)**  
+* If we now focus on the response during the stimulus, you'll recall that what the passive stimulation, curve of transmembrane potential versus time, goes up almost in a straight line.  
+* And when we look at the active tissue, active tissue does, Largely the same thing. The slope may be a little bit higher, however, so things are not quite exactly the same thing but very close.  
+  
+**Active tissue – response following stimulus, going where? (slide 29)**  
+* But now let's look at what happens when the stimulus is over. When the stimulus is over, the transmembrane voltage in the passive tissue declines, and it will, over time, gradually go back to the baseline in an exponential fashion.  
+* In active tissue, that just does not happen. What happens is at the end of the stimulus, there's this little resting period and then the potential goes up and up and up. It's just totally different, and that's why I put this asterisk here, the star here to bring your attention to the fact, that when that stimulus is over, active tissue is off and running and doing it's own thing.  
+  
+**Active tissue – response again: vm and time axes longer than before (slide 30)**  
+* If we now look at the same graph, but on a different time scale, so now it extends out to 6,000 microseconds (or in other words, to six milliseconds) and it extends up to a VM of 100, meaning 100 millivolts off the baseline. And we have that both on the passive curve and on the active curve, so they correspond.  
+* First let's look at the stimulus. The stimulus down here is exactly the same, 400 microseconds long, same amplitude. It does just what we said before on the passive side. Bumps up a little bit, turn the stimulus and then comes right on back down to the baseline. That's just the response of a piece of plastic. That's just the response of a piece of cloth. That's the response of any ordinary material. You put in the pulse and it then gradually charges whatever capacitance there is, but that capacitance discharges during this interval. 
+* Now on the other hand, if we look at the active tissue. The active tissue bumps up during the stimulus. Just that little bit. Just the little bit shown by this green line. That's all that happens. And then what happens?  
+* Then what happens is the active tissue takes off on its own and here it goes. Well, just going up slowly, slowly, slowly, and whoom. Whoom. It goes way, way up. Way, way up. Over a 100 millivolts off of the baseline. You can see that over here I had to bring the whole trace down by ten. Just move the whole entire trace down so that on a hundred millivolt scale, it could all fit on the scale. So it really goes up there about a hundred millivolts or so. That's more than ten times the amount that was the displacement in the passive tissue.  
+* Now look what else happens in the active tissue. It takes a long, long, long, long time to come back down; and then when it does, wow its down here even below. Here, see from below there, it comes back down to zero and goes past it. Oh wowzer. If we look at the curve here (undistorted by my earlier marks), you'd say look here's where it is when it starts, here's where it is when it ends. It actually goes negative for a while.  
+* So it goes up. Way up, then it comes down, goes up, comes down, and even plunges all the way down underneath the baseline. Now our, our graph is not long enough at six milliseconds to show getting back to the baseline level but eventually it will come back. It will take about ten or fifteen milliseconds, but it will get back to the baseline but very, very slowly.  
+* So I put a big star by this. You can see what happens if we are going to use analogies here. We could say over here on the left what happened is I lit a match. I struck a match. And after a while it went out. Over here I struck a match. And it started a huge raging fire, and this whole entire active process, which is called an action potential because there's a lot of action in it, the action potential occurs thereafter.  
+  
+**Comparison of Active and Passive (slide 31)**  
+* So I just say it in words. There's a different story in the stimulus, but in this case, it's a small difference. But there is a huge, huge, huge difference in what happens after the stimulus is over. Some of my faculty colleagues work on ancient manuscripts. And they tell me that in ancient manuscripts, emphasis was given by repeating the word. So if you fell into a pit, that was a little pit. If you fell into a pit, pit, pit, that was a really deep pit.  
+* Well, here I'm saying there's a huge, huge, huge difference, and through repetition saying it's just different. Once it gets going, it does it's own thing and it's entirely different than before.  
+  
+**Comparison of Active and Passive Vm Responses (to the very same stimulus)(slide 32)**   
+* Let's just think about how it's different. It's different because it's bigger, maybe ten times the size.  
+* And it's different because it goes on for a long time. The difference is not just a something that happens for a few microseconds, it continues and continues and continues for thousands of microseconds before it settles back down again.  
+  
+**Striking a match… (slide 33)**  
+* So to restate the striking the match analogy, in the passive case, I struck my match, the match flying and there was a displacement in the end, but it gradually died away.  
+* With active tissue, it's like I strike a match and wave it over a puddle of gasoline. Boom, that's what happens to the puddle. I put the match out there as the ignition source and boom, I've got a big flame that results. 
+*  I certainly better, better not hold that match in my hand. I can hold it on a long pole, if I'm actually gonna hold it over a puddle of gasoline. Cause it's gonna go boom and make a big flame.  
+* So with that observation, and looking at this tree behind Orange Church in Orange County, North Carolina near to our campus, we will end this segment and think this over and come back again shortly. Thank you for watching.

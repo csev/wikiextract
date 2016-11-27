@@ -1,0 +1,70 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:Real-world stream ciphers</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Old_example_.28software.29:_RC4_.281987.29"><span class="tocnumber">1</span> <span class="toctext">Old example (software): RC4 (1987)</span></a></li>
+<li class="toclevel-1"><a href="#Old_example_.28hardware.29:_CSS_.28badly_broken.29"><span class="tocnumber">2</span> <span class="toctext">Old example (hardware): CSS (badly broken)</span></a></li>
+<li class="toclevel-1"><a href="#Modern_stream_ciphers:_eStream_.282008.29"><span class="tocnumber">3</span> <span class="toctext">Modern stream ciphers: eStream (2008)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#eStream:_Salsa20_.28hw.2Bsw.29"><span class="tocnumber">3.1</span> <span class="toctext">eStream: Salsa20 (hw+sw)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Old_example_.28software.29:_RC4_.281987.29">Old example (software): <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/RC4">RC4</a> (1987)</span></h3>
+<p>RC4 takes a 128 bit seed to generate a 2048 bit key</p>
+<ul>
+<li>It's used in HTTPS and WEP</li>
+</ul>
+<p><strong>Weaknesses:</strong></p>
+<ol>
+<li>Bias in initial output: Pr[2<sup>nd</sup> byte = 0] = 2/256<br />
+The prob. that the 2<sup>nd</sup> byte is 0 is twice as high as it should be. In fact this is the same for the first couple of bytes and using RC4 you should ignore the first 256 bytes of the key.  </li>
+<li>Probability of (0,0) = 1/256<sup>2</sup> + 1/256<sup>3</sup><br />
+After several GB of data the sequence (0,0) will appear more often than it should</li>
+<li>Related key attacks  </li>
+</ol>
+<p>You should not use RC4 in new systems and instead choose a modern generator.</p>
+<h3> <span class="mw-headline" id="Old_example_.28hardware.29:_CSS_.28badly_broken.29">Old example (hardware): <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Content_Scramble_System">CSS</a> (badly broken)</span></h3>
+<p>DVDs are encrypted using the Content Scramble System (CSS).</p>
+<p>Linear feedback shift register (<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/LFSR">LFSR</a>):</p>
+<p>The LFSR consists of a row of cells. For each iteration the content of these cells is combined with a xor. Then the cells are shifted one step, the last cells content is dropped and the result of the xor becomes the content for the now empty first cell.</p>
+<p>The seed is the initial state of the LFSR.</p>
+<ul>
+<li>DVD encryption CSS: uses 2 LFSRs</li>
+<li>GSM encryption (<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/A5/1">A5/1,2</a>): 3 LFSRs</li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Bluetooth">Bluetooth</a> (E0): 4 LFSRs
+(all are broken)</li>
+</ul>
+<p>CSS: seed = 5 bytes = 40 bits (because at the time it was designed, US export regulations prohibited the export of crypto algorithms with longer keys)</p>
+<p>CSS uses one 17 bit LFSR and one 25 bit LFSR. To seed the LFSRs the first two bytes of the key are loaded into the 17 bit LFSR (together with a leading 1) and the last three bytes of the key are loaded into the 25 bit LFSR (again together with a leading 1).</p>
+<p>Each LFSR then generates 8 bits, those are added (modulo 256) and this byte is used to encrypt one byte of the DVD movies data by a xor operation.</p>
+<p>Again it is easy to break. Since we know the header structure of the underlying movie format we can use this information to find the initial state of both LFSRs.</p>
+<h3> <span class="mw-headline" id="Modern_stream_ciphers:_eStream_.282008.29">Modern stream ciphers: eStream (2008)</span></h3>
+<p>PRG: $$ \lbrace 0,1 \rbrace^s \times R \rightarrow \lbrace 0,1 \rbrace^n $$</p>
+<p>Nonce R: a non repeating value for a give key.</p>
+<p>$$ E(k,m;r) = m \oplus PRG(k;r) $$</p>
+<p>The pair (k,r) is never used more than once. So you can reuse the key, because (k,r) are unique.</p>
+<h4> <span class="mw-headline" id="eStream:_Salsa20_.28hw.2Bsw.29">eStream: Salsa20 (hw+sw)</span></h4>
+<p>$$ Salsa20: \lbrace 0,1 \rbrace^{128\ or\ 256} \times \lbrace 0,1 \rbrace^{64} \rightarrow \lbrace 0,1 \rbrace^n\ \ \ &#40;max\ n=2^{73}\ bits)$$</p>
+<p>$$ Salsa20(k;r):=H(k,(r,0))\|H(k,(r,1))\|...$$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:Real-world_stream_ciphers&amp;oldid=10274">https://share.coursera.org/wiki/index.php?title=Crypto:Real-world_stream_ciphers&amp;oldid=10274</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,120 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 1:Linear Regression</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>If you can't find what you're looking for here, try the Forum areas for Programming Exercise 1.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Debugging_Tip"><span class="tocnumber">1</span> <span class="toctext">Debugging Tip</span></a></li>
+<li class="toclevel-1"><a href="#Note_for_OS_X_users"><span class="tocnumber">2</span> <span class="toctext">Note for OS X users</span></a></li>
+<li class="toclevel-1"><a href="#How_to_check_format_of_function_arguments"><span class="tocnumber">3</span> <span class="toctext">How to check format of function arguments</span></a></li>
+<li class="toclevel-1"><a href="#Testing_matrix_operations_in_Octave"><span class="tocnumber">4</span> <span class="toctext">Testing matrix operations in Octave</span></a></li>
+<li class="toclevel-1"><a href="#Repeating_previous_operations_in_Octave"><span class="tocnumber">5</span> <span class="toctext">Repeating previous operations in Octave</span></a></li>
+<li class="toclevel-1"><a href="#Warm_up_exercise"><span class="tocnumber">6</span> <span class="toctext">Warm up exercise</span></a></li>
+<li class="toclevel-1"><a href="#Compute_cost_for_one_variable"><span class="tocnumber">7</span> <span class="toctext">Compute cost for one variable</span></a></li>
+<li class="toclevel-1"><a href="#Gradient_descent_for_one_variable"><span class="tocnumber">8</span> <span class="toctext">Gradient descent for one variable</span></a></li>
+<li class="toclevel-1"><a href="#Feature_normalization"><span class="tocnumber">9</span> <span class="toctext">Feature normalization</span></a></li>
+<li class="toclevel-1"><a href="#Compute_cost_for_multiple_variables"><span class="tocnumber">10</span> <span class="toctext">Compute cost for multiple variables</span></a></li>
+<li class="toclevel-1"><a href="#Gradient_descent_for_multiple_variables"><span class="tocnumber">11</span> <span class="toctext">Gradient descent for multiple variables</span></a></li>
+<li class="toclevel-1"><a href="#Normal_Equations"><span class="tocnumber">12</span> <span class="toctext">Normal Equations</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex1/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+<h3> <span class="mw-headline" id="Note_for_OS_X_users">Note for OS X users</span></h3>
+<p>If you are using OS X and get this error message when you run ex1.m and expect to see a plot figure:</p>
+<code><pre>gnuplot&gt; set terminal aqua enhanced title &quot;Figure 1&quot; size 560 420  font &quot;*,6&quot; dashlength 1                     
+                  ^
+     line 0: unknown or ambiguous terminal type; type just 'set terminal' for a list
+</pre></code>
+<p>... try entering this command in the workspace console to change the terminal type:</p>
+<code><pre>setenv(&quot;GNUTERM&quot;,&quot;qt&quot;)
+</pre></code>
+<h3> <span class="mw-headline" id="How_to_check_format_of_function_arguments">How to check format of function arguments</span></h3>
+<p>So that you may print the argument just by typing its name in the body of the function on a distinct line and call submit() in Octave.</p>
+<p>For example I may print the theta argument in the "Compute cost for one variable" exercise by writing this in my computeCost.m file. Of course, it will fail because 5 is just random number, but it will show me the value of theta:</p>
+<code><pre>function J = computeCost(X, y, theta)
+    m = length(y);
+    J = 0
+    theta
+    J = 5  &#160;% I have added this line just to show that the argument you want to print doesn't have to be on the last line
+end
+</pre></code>
+<h1> <span class="mw-headline" id="Testing_matrix_operations_in_Octave">Testing matrix operations in Octave</span></h1>
+<p>In our programming exercises, there are many complex matrix operations where it may not be clear what form the result is in. I find it helpful to create a few basic matrices and vectors to test out my operations. For instance the following commands can be copied to a file to be used at any time for testing an operation.</p>
+<code><pre>X = [1 2 3; 1 2 3; 1 2 3; 1 2 3; 1 5 6]&#160;% Make sure X has more rows than theta and isn't square
+y = [1; 2; 3; 4; 5]
+theta = [1; 1; 1]
+</pre></code>
+<p>With these basic matrices and vectors you can model most of the programming exercises. If you don't know what form specific operations in the exercises take, you can test it in the Octave shell.  </p>
+<p>One thing that got me was using formulas like theta' * x where x was a single row in X.  All the notes show x as being a mX1 vector, but X(i,:) is a 1xm vector. Using the terminal, I figured out that I had to transpose x. It is very helpful.</p>
+<h1> <span class="mw-headline" id="Repeating_previous_operations_in_Octave">Repeating previous operations in Octave</span></h1>
+<p>When using the great unit tests by Vinh, if your function doesn't work the first time -- after you to edit and save your function file, then in your Octave window - just type ctrl-p to back up to what you typed previously, then enter to run it. (once you've gone back, can use ctrl-n for next)  (more info @ <a rel="nofollow" class="external free" href="https://www.gnu.org/software/octave/doc/interpreter/Commands-For-History.html">https://www.gnu.org/software/octave/doc/interpreter/Commands-For-History.html</a>)</p>
+<p>You should also be able to use the up and down arrow keys to get the same effect. This works in both Octave and Matlab.</p>
+<h1> <span class="mw-headline" id="Warm_up_exercise">Warm up exercise</span></h1>
+<p>If you type "ex1.m" you will get an error - just use "ex1". Press 'Run' in Matlab editor.</p>
+<h1> <span class="mw-headline" id="Compute_cost_for_one_variable">Compute cost for one variable</span></h1>
+<p>theta is a matrix of size 2x1; first row is theta[0] and second one is theta[1] (I following index convention of videos here)
+Also fill arbitrary (non-zero) initial values to theta[0] and theta[1].</p>
+<h1> <span class="mw-headline" id="Gradient_descent_for_one_variable">Gradient descent for one variable</span></h1>
+<p>See the 5th segment of Week 1 Video II ("Gradient Descent") for a key tip on simultaneous updates of theta.</p>
+<h1> <span class="mw-headline" id="Feature_normalization">Feature normalization</span></h1>
+<p>Use the zscore function to normalize:  <a rel="nofollow" class="external free" href="http://www.gnu.org/software/octave/doc/interpreter/Basic-Statistical-Functions.html#XREFzscore">http://www.gnu.org/software/octave/doc/interpreter/Basic-Statistical-Functions.html#XREFzscore</a></p>
+<p>repmat function can be used here.</p>
+<p>The bsxfun is helpful for applying a function (limited to two arguments) in an element-wise fashion to rows of a matrix using a vector of source values.  This is useful for feature normalization.  An example you can enter at the octave command line:</p>
+<code><pre>Z=[1 1 1; 2 2 2;];
+v=[1 1 1];
+bsxfun(@minus,Z,v);
+ans =
+    0   0   0
+    1   1   1
+</pre></code>
+<p>In this case, the corresponding elements of v are subtracted from each row of Z. The minus(a,b) function is equivalent to computing (a-b).</p>
+<p>(other mathematical functions: @plus, @rdivide)</p>
+<p>In Octave &gt;= 3.0.6 you can use broadcast feature to abbreviate: <a rel="nofollow" class="external free" href="https://www.gnu.org/software/octave/doc/interpreter/Broadcasting.html#Broadcasting">https://www.gnu.org/software/octave/doc/interpreter/Broadcasting.html#Broadcasting</a></p>
+<code><pre>Z=[1 1 1; 2 2 2;];
+v=[1 1 1];
+Z - v   &#160;% or Z .- v
+ans =
+   0   0   0
+   1   1   1
+</pre></code>
+<p>A note regarding Feature Normalization when a feature is a constant: &lt;provided by a ML-005 student&gt;</p>
+<p>When I used the feature normalization routine we used in class it did not occur to me that some features of the training examples may have constant values, which means that the sigma vector has zeroes for those features. Thus when I divide by sigma to normalize the matrix NaNs filled in some slots. This causes gradient descent to get lost wandering through a NaN wasteland, but never reporting why.<br /><br />The fix is easy. In featureNormalize, after sigma is calculated but before the division takes place, insert <br /><pre>sigma( sigma == 0 ) = 1;         &#160;% to keep away the NaN's and Inf's</pre>Once this was done, gradient descent ran fine.</p>
+<p>TA note: for the ML class exercises, you do not need this trick, because the scripts add the column of bias units after the features are normalized. But for your use outside of the class exercises, this may be a useful technique.</p>
+<h1> <span class="mw-headline" id="Compute_cost_for_multiple_variables">Compute cost for multiple variables</span></h1>
+<h1> <span class="mw-headline" id="Gradient_descent_for_multiple_variables">Gradient descent for multiple variables</span></h1>
+<p>The Wiki page "ML:Linear Regression with Multiple Variables" under section <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/ML:Linear_Regression_with_Multiple_Variables#Matrix_Notation">Matrix Notation</a> basically spells out one line solution to the problem. </p>
+<p>When predicting prices using theta derived from gradient descent, do not forget to normalize input x or you'll get multimillion house value (wrong one).</p>
+<h1> <span class="mw-headline" id="Normal_Equations">Normal Equations</span></h1>
+<p>I found that the line  "data = csvread('ex1data2.txt');" in ex1_multi.m is not needed as we previously load this data via "data = load('ex1data2.txt');"</p>
+<p>Prior steps normalized X, this line sets X back to the original values. To have theta from gradient descent and from the normal equations to be close run the normal equations using normalized features as well.  Therefor do not reload X.</p>
+<p>Comment: I think the point in reloading is to show that you actually get the same results even without doing anything with the data beforehand. Of course for this script its not effective, but in a real application you would use only one of the approaches. 
+Similar considerations would argue against feature normalisation.
+Therefore do reload X  </p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 83/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_1:Linear_Regression&amp;oldid=34463">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_1:Linear_Regression&amp;oldid=34463</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Programming_Exercises" title="Category:ML:Programming Exercises">ML:Programming Exercises</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

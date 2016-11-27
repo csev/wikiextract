@@ -1,0 +1,23 @@
+<pre>
+// Sinus oscillator with 222.45 Hz (cycles/sec) and amplitude/gain 0.2.
+SinOsc s=>dac;
+222.45 => s.freq;
+0.2 => s.gain;
+
+// variable chance;
+1 => int chance;
+
+// if chance is 1 then play the 222.45Hz sinus for 1 second
+if (chance==1) 
+{
+   1::second => now;
+}
+// if chance is not 1 play the 440.32Hz sinus for 3 seconds
+else 
+{
+   440.32 => s.freq;
+   3::second => now;
+}
+</pre>
+
+[[Category:ChucK 101]]

@@ -1,0 +1,24 @@
+# Week 3 Lecure 7: Problem Session passive vs active  
+  
+**Bioelectricity Week3_7 (slide 41)**  
+* So, hello again. This is Roger Coke Barr for the Bioelectricity course. This is Week three, segment seven. This is a problem session, this segment.  
+  
+**Problem Session – Examining the results (slide 42)**  
+* And I thought, for this problem session, be useful to examine the results. Let's just try to quantify some important details by looking at the graphs for the simulations.  
+  
+**What is the peak vm with a Passive patch? Active? (slide 43)**  
+* First, what are the peak values? We'd like to know the peak voltage relative to the baseline, that's what we're calling vm.  
+* We're using vm with a lowercase v as voltage gets the baseline. What is the peak vm with a passive patch? And what is the peak vm with an active patch? Let's divide that up into two time periods, during the stimulus and after the stimulus.  
+* So, what I'm asking you to do here is to go back, look at the graphs and say what was the peak vm for passive tissue during the stimulus? Well, it's something in the range of ten millivolts. Go back and look and check and see if that's right.  
+* For passive tissue, for any time following the stimulus onset, that is to say throughout the whole entire waveform. What was the peak vm? Again, maybe ten millivolts. Go back and check by looking at it.  
+* But in any event, these two answers are going to be the same because the highest voltage in passive tissue occurs just at the end of the stimulus. 
+* Now, for active tissue, go back and look. And say, during the stimulus, that is towards the end of the stimulus, what is the peak voltage there? I thought looking at our curve that it was just a little bit higher. Please go back and check but it's something like maybe eleven millivolts, maybe it's twelve, fifteen, would you look please and see if you can get that. 
+* And then, the active tissue at any time following the stimulus onset, wow, this number is now a lot bigger, so maybe it's 100 millivolts. If you'll go back and look please, carefully, and fill in those numbers, as they ought to be, try to get them within the nearest millivolt.  
+* Although on the graph, sometimes it can be hard to resolve it but try as best as you can to get them within the nearest millivolt. If we look at these results taken as a whole, of course, the striking thing, the very striking thing is what this difference is, ten as compared to a hundred. Wow, active tissue. Ten times as big, more or less.   
+  
+**What is the wave form duration passive? Active? (slide 44)**  
+* We'd like to also ask the question for the duration, the time duration of each deflection on the wave form. The individual phases in this kind of work are often referred to as deflections, so that's why I use that word. 
+* First of all, what is the time duration of the stimulus current? That's fixed and in this case, it's 400 microseconds. What is the total duration of the passive waveform? Not just the stimulus phase, but the whole entire wave form? Now, that's a questions that's a little bit trickier than it seems because the ending is not very sharply defined. 
+* Let us suppose we just define it arbitrarily by definition as about ten percent of the peak value. So, when the, the wave form falls back to within ten percent of the peak value, we will say that's it over. So, for the passive vm duration, look at the curve and see how long you would say that would be. Maybe it's around 2,000 microseconds. What could be longer than that? Look at it please and see what you think. And then, for the active way form, how long does it last? Now, that's a tricky question again because it lasts a while above the baseline and it goes down below the baseline and comes back up.  
+* Let's suppose for the purpose of this question, we take only the part that's above the baseline. How long does it last until it comes back down to within ten percent of the peak value? Please look back and see and figure that number out and put in here.  
+* So, with this peaceful view of the cemetery at Orange Church, I will say that I think we should have some satisfaction at completing this segment because we have seen some numbers that we can count on for action potentials and on the other hand, we still have not solved the mystery. Thank you for watching.  We'll see you next time.

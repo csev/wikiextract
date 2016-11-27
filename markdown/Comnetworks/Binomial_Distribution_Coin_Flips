@@ -1,0 +1,20 @@
+Binomial Distribution as it applies to Statistical Multiplexing.
+
+A lot of probability and statistics involves the distribution of data. Binomial distribution is one of the most basic. It deals with the probability of how many independent events will occur out of a fixed number of attempts, assuming that you know the probability of one event occurring.
+
+The easiest example is a coin toss. A fair coin will be heads with a probability of 0.5 (or 1/2 or 50%). A fair coin tossed two times will be heads on both tosses with a probability of 0.25. It will be tails both times 0.25. And one of each with 0.5 probability.
+
+Figuring this out for 3 coin tosses, 4, 5 or 100, can be done, but the math, which is the same in all cases, requires more number crunching. Here are two sources:
+* [http://en.wikipedia.org/wiki/Binomial_distribution Wikipedia Binomial Distribution]
+* [http://mathworld.wolfram.com/BinomialDistribution.html Wolfram Binomial Distribution]
+It can be intimidating, but it's not as scary as these two sources show.
+
+Let's go back to the coin toss. Let's assume that you have 30 coins (or 1 coin tossed 30 times). What's the probability that it will have greater than 20 heads? It's the probability of 21 heads, plus 22 heads, plus ... 30 heads. That's a lot of number crunching, but there are online binomial calculators that will do it for you. Try: [http://www.vassarstats.net/textbook/ch5apx.html Vassar Stats]
+
+For the 21+ heads probability, it turns that that this probability is about 2%.
+
+Now let's rephrase the same question in a different context. What's the probability that out of 30 internet users, who use the connection 50% of the time, that more than 20 will be using the connection at the same time? This is basically the same question as the coin toss above. The math will  be the same, and the answer is 2%.
+
+So with statistical multiplexing, we don't have to have a full dedicated connection for each of the 30 users. Enough capacity for 20 full time users will be enough for 30 users who use the system at 50% in 98% of the time. For those 2% times when it isn't enough capacity, the users may notice slightly slower response times but that's about it.
+
+By doing this math, we can install minimal resources and have a pretty good idea of how it will affect performance most of the time.

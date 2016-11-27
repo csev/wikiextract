@@ -1,0 +1,141 @@
+# Functional Programming Principles in Scala (Martin Odersky)
+
+This course has been run the following times:
+
+* [progfun-2012-001](https://class.coursera.org/progfun-2012-001/class/index)
+* [progfun-2013-002](https://class.coursera.org/progfun-002/class)
+
+## Useful information
+
+* [[Progfun:AssignmentMarkingCriteria]]
+* [[Progfun:Emacs]]
+* [[Progfun:sbt]]
+
+## Tips and Tricks
+
+* [[Cloud Drive]]
+
+## Lecture Notes
+
+* [[Lecture 1.1 - Programming Paradigms]]
+* [[Lecture 7.5 - Case Study: the Water Pouring Problem]]
+* [[Lecture 7.6 - Course Conclusion]]
+
+## FAQs (Spring 2013)
+
+* [[Example Assignment]]
+* [[Assignment1 - Functions And Evaluations]]
+* [[Assignment2 - Higher Order Functions]]
+* [[Assignment3 - Data and Abstractions]]
+* [[Assignment4 - Types and Pattern Matching]]
+* [[Assignment5 - Collections]]
+* [[Assignment6 - Lazy Evaluation]]
+
+## Errata (Fall 2013)
+* General
+
+   0.1. `Each assignment is only allowed a maximum of 5 submissions`.
+
+   0.2. Some general remarks with in-lecture quizzes by Heather Miller (Staff from previous iteration): The issue is with how we are able to check your results on in-lecture quizzes on Coursera. There's no (reasonable) way for us to take your response, compile it, evaluate it, and return feedback.
+So, for the first one or two weeks of the course, we check your answers in the in-lecture quizzes using regular expressions. In many cases, it's possible to provide correct answers that get evaluated as being incorrect with the regular expression.
+For that reason, after week two, we've abandoned checking answers in the in-lecture quizzes and instead allow you time to prepare a response, and then show you the result (without any evaluation).
+That said, take the feedback you receive in the in-lecture quizzes with a grain of salt for now :)
+
+   0.3. There is a penalty of 20% for each day passed the soft deadline (please pay close attention to timezone). If you have already passed  more than 4 days (= 4*24 hours = 96 hours), then your penalty will be 100%. You will get 0% even if your overall score is 10/10, your score for grade purposes is 0/10. To spell out clearly, if you are (0, 24 hours] over due, your actual score will be 20% off, if you are (24hrs, 48hrs] over due, your actual score will be 40% off, if you are (48hrs, 72hrs] over due, your actual score will be 60% off, if you are (72hrs, 96hrs] over due, your actual score will be 80% off, if you are over 96 hours late, your actual score will be 100% off. Notice also the maximum of 5 submissions are still observed during this period.
+
+   0.4. Staff Heather Miller's comment on score calculation, "Update on score calculation: Hi all, we've recently decided upon an equal-points policy for all assignments. The decision was made ultimately due to the fact that all assignments were weighted equally (that is, the max # of points as visible to students was the same, 10pts, for all assignments), regardless of the actual difficulty of each assignment. Given that all students couldn't possibly know how we weighted assignments in the previous semester, it would be unfair to use the same weighting as the last time around (there was a rationale for the weighting the last time around which would not apply for this iteration).
+So it was decided that we'd weight all assignments equally, since most students probably assumed this would be the case and planned for this. 
+That said, since there were a total of 6 assignments, we'll keep with the score of 10pts per assignment, which means a maximum of 60pts for the entire course. The same rules still stand as announced at the beginning of the course- those who have a 60% or higher (36pts) will receive a certificate of completion. Those with scores of 80% or higher (48pts) will receive a certificate with distinction. "
+
+(Ref: https://class.coursera.org/progfun-002/forum/thread?thread_id=1515#post-6374)
+
+
+* Week 1
+
+  1.0. Due Date for Hard Deadline should be: `Sun 29` Sep 2013 4:00 AM PDT (UTC -0700)
+
+* Week 2
+
+  2.0. Due Date for Hard Deadline should be: `Sun 6` Oct 2013 4:00 AM PDT (UTC -0700)
+
+  2.1. Lecture 2.1 Slide 4: At the bottom of the slide it says:
+def fact (x: Int): Int = if (x == 0) 1 else fact(x-1)
+while it should say:
+def fact (x: Int): Int = if (x == 0) 1 else x*fact(x-1)
+
+  2.2. Lecture 2.6 quiz asks:
+"Modify the Rational class so that rational numbers are kept unsimplified internally, but the simplification is applied when numbers are converted to strings. Do clients observe the same behavior when interacting with the rational class?" The answer should be no because the numer and denom methods are public. (Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=309)
+
+  2.3. Lecture 2.6 modify gcd definition to always return positive integer
+private def gcd(a: Int, b: Int): Int = if (b == 0) a.abs else gcd(b, a % b)
+(Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=377)
+
+  2.4. Lecture 2.7: Order of Execution (Lecture Slides Week3-3, Page 10) also affect video as well
+new Rational(1, 2).less(new Rational(2, 3))
+[1/x;2/y] [newRational(2;3)/that] [new Rational(1;2)/this]
+Should be changed to 
+ [newRational(2;3)/that][1/x;2/y] [new Rational(1;2)/this]
+(Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=695)
+
+
+* Week 3
+
+   3.0. Due Date for Hard Deadline should be: `Sun 13` Oct 2013 4:00 AM PDT (UTC -0700)
+
+* Week 4
+
+   4.1. Lecture 4.6 (19:30-36) Exercises should be Sum(Prod(Number(2), Var("x")), Var("y")) and Prod(Sum(Number(2), Var("x")), Var("y")), and second answer should print as "(2+x)*y" (Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=1045)
+
+* Week 5
+
+   5.1. Lecture 5.5 Slide 20, the function reverse definition should be changed to: `def reverse[T](xs: List[T]): List[T] = (xs foldLeft List[T]() )((xs, x) => x :: xs )` (Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=1190)
+
+* Week 6
+
+   6.1. Handwritten translation in Lecture 6.5, slide 7 does not compile in Worksheet, change to this: `books flatMap( b => b.authors.withFilter(_ startsWith "Bird,") map (_ =>b.title))` (Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=660)
+
+   6.2. Lecture 6.2 (Slide 4): the type of the 1st foldRight parameter is wrong, should be changed as follows: `(xss foldRight Seq[(Int,Int)]())(_ ++ _)` (Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=1236)
+
+   6.3. Lecture 6.2 (Slide 2): the fruit filter example should be changed as: `fruit filter (_ startsWith "app")` (Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=1267)
+
+   6.4. Lecture 6.4 (Slide 4): fix: `for (b <- books if b.title.indexOf("Program") >= 0)` (Ref: https://class.coursera.org/progfun-003/forum/thread?thread_id=1311)
+
+* Week 7
+
+## Scala Link
+
+* [Effective Scala](http://twitter.github.com/effectivescala/)
+* [Learning Scala in Small Bites](http://matt.might.net/articles/learning-scala-in-small-bites/)
+
+## Additional Scala resources
+
+* Scala by Example http://www.scala-lang.org/sites/default/files/linuxsoft_archives/docu/files/ScalaByExample.pdf
+
+* Scala for the Impatient http://horstmann.com/scala/
+
+* Functional Programming in Scala http://www.manning.com/bjarnason/
+
+* Programming in Scala, First Edition http://www.artima.com/pins1ed/
+
+The above are the books you may read. Others listed at http://www.scala-lang.org/node/959
+
+FP:
+* Structure and Interpretation of Computer Programs http://mitpress.mit.edu/sicp/
+
+* Introduction to Functional Programming (Bird & Wadler) http://www.nlda-tw.nl/janmartin/vakken/TFIT/Extra%20materiaal/Bird_Wadler.%20Introduction%20to%20Functional%20Programming.1ed.pdf
+
+* Haskell: The Craft of Functional Programming http://www.haskellcraft.com/craft3e/Home.html
+
+* ML for the Working Programmer http://www.cl.cam.ac.uk/~lp15/MLbook/
+
+* Programming in Scheme http://www.amazon.com/Programming-Scheme-Michael-Eisenberg/dp/0894261150
+
+* Applicative High Order Programming: The Standard ML Perspective http://www.amazon.com/Applicative-High-Order-Programming-M-L-Perspective/dp/0412392402
+
+* Functional Programming: Application and Implementation (Peter Henderson)
+
+* Thinking Recursively http://www-cs-faculty.stanford.edu/~eroberts/books/ThinkingRecursively/
+
+* (Russian) [Scala. Введение](http://habrahabr.ru/post/77750/) (a short introduction)
+
+  Thank you, qu1j0t3 @ #scala:freenode for this collection

@@ -1,0 +1,58 @@
+[[Category:Coursera]] 
+[[Category:PCD]]
+[[Category:Biology]]
+#Week 5, Lecture 2B - Regulation of <i>C. elegans</i> <i>egl-1</i> (Part B) 
+
+* <i>n1084</i> affects a <i>cis</i>-regulatory region of the <i>egl-1</i> gene that is located 5.6 kb downstream of the <i>egl-1</i> transcription unit and that alters <i>egl-1</i> transcription in such a way that the HSN neurons in hermaphrodites inappropriately die by apoptosis.  
+
+* What does <i>n1084</i> actually affect? It affects a nine base pair long motif (CGGGTGGTC) and this motif is conserved in other Caenorhabditis species such as <i>C. briggsae</i> or <i>C. remanei</i>.
+
+*  What does “conservation” mean in this context? It means that several kb downstream of the <i>C. briggsae</i> or <i>C. remanei</i>  <i>egl-1</i> transcription unit, the same motif can be found. Such conservation across <i>Caenorhabditis</i> species in general suggests functional importance, in particular,when the region or motif of interest is located between transcription units and therefore in regions that are non-coding.  
+
+* Functional importance was furthermore suggested by the finding that the other six dominant <i>egl-1</i> mutations identified in independent screens all affected the same small motif. Basically, all seven dominant <i>egl-1</i> mutations are G-to-A transitions within this nine base pair long motif. And this motif turns out to be the binding site for a transcriptional repressor, a protein that can block transcription.  
+
+* This transcriptional repressor is TRA-1, and TRA stands for “transformer”. TRA-1 is a zinc-finger DNA binding protein most similar to the Gli-family of transcriptional regulators in mammals. And TRA-1 has a very important role during <i>C. elegans</i> development. TRA-1 is the terminal and global regulator of somatic sexual fate.  
+
+* What does this mean?  It means that the activity of TRA-1 determines whether a worm differentiates into a hermaphrodite or a male. In embryos that carry two X chromosomes, TRA-1 activity is high.  TRA-1’s function is to suppress the transcription of genes required for male development and to promote the transcription of genes required for female development.  For this reason, an embryo with high levels of TRA-1 activity will differentiate into a hermaphrodite. Conversely, in embryos with only one X chromosome, TRA-1 activity is low. For this reason, genes required for male development can be transcribed. Consequently, such an embryo will differentiate into a male.  
+
+* Why sex determination? Why is a factor involved in sex determination involved in controlling <i>egl-1</i> transcription? Remember, the HSNs are sexually dimorphic! It made perfect sense. <i>in vitro</i>, TRA-1 protein indeed can tightly bind to a DNA fragment that contains the nine base pair long TRA-1 binding site as found downstream of the <i>egl-1</i> transcription unit in wild-type animals. However, it fails to bind tightly to a DNA fragment that contains the TRA-1 binding site as found downstream of the <i>egl-1</i> transcription unit in animals that are homozygous for any of the dominant <i>egl-1</i> mutations.  
+
+* But remember, there are dominant and semi-dominant <i>egl-1</i> mutations. When compared to its binding to a DNA fragment with a dominant mutation, TRA-1 binds relatively stronger to a DNA fragment that contains a semi-dominant mutation. In other words, the ability of TRA-1 to bind to the motif <i>in vitro</i>, positively correlates with HSN survival <i>in vivo</i>, at least in the context of heterozygous animals. Less binding <i>in vitro</i> means less survival <i>in vivo</i>.  For this reason, we put forward the following model of how TRA-1 controls <i>egl-1</i> transcription in the HSN neurons:  
+
+* In hermaphrodites, the level of TRA-1 activity is high. For this reason, TRA-1 binds to the TRA-1 binding site downstream of the <i>egl-1</i> transcription unit, thereby repressing <i>egl-1</i> transcription in the HSNs.  Consequently, the HSNs survive in hermaphrodites.  
+
+* In males, the level of TRA-1 activity is too low to bind to the TRA-1 binding site downstream of the <i>egl-1</i> transcription unit. Consequently, <i>egl-1</i> transcription is activated, most likely through the action of a HSN-specific transcriptional activator of <i>egl-1</i>. By the way, this HSN-specific activator has so far not been identified. In the context of <i>egl-1</i> transcriptional regulation, TRA-1 therefore has anti-apoptotic function. Genetically speaking, it acts to block the activity of the pro-apoptotic <i>egl-1</i> gene in a specific type of cell, the HSNs, and, hence, has anti-apoptotic activity.  
+
+* Now what happens in <i>n1084</i> hermaphrodites?  The level of TRA-1 activity is high but because of the <i>n1084</i> mutation in the TRA-1 binding site, TRA-1 is unable to bind well. For this reason, TRA-1 is unable to repress <i>egl-1</i> transcription, which results in the inappropriate activation of <i>egl-1</i> transcription and the inappropriate death of the HSNs in hermaphrodites.  
+
+* This would also explain why the dominant <i>egl-1</i> mutations are dominant in the first place. Having one of the two <i>egl-1</i> loci carrying the <i>n1084</i> mutation is sufficient to get inappropriate activation of <i>egl-1</i> transcription from the <i>egl-1</i> transcription unit in <i>cis</i> and, hence, inappropriate HSN death.  
+
+* Finally, in <i>n1084</i> <i>n3082</i> hermaphrodites, the <i>egl-1</i> transcription unit is also inappropriately activated however, since there is a second mutation in exon 2, <i>n3082</i>, a truncated, non-functional EGL-1 protein is made, which is unable to activate the central apoptosis pathway. Consequently the HSNs survive.  
+
+* In support of this model, an <i>egl-1</i> reporter is expressed in the HSNs in males but not hermaphrodites. However, the introduction of the <i>n1084</i> mutation into the TRA-1 binding site 5.6 kb downstream of the <i>egl-1</i> transcription unit in this reporter results in the expression of the reporter in the HSNs of both males and hermaphrodites.  
+
+* In the HSN neurons, <i>egl-1</i> activity appears to be regulated at the transcriptional level. Is this true for the 131 cells that normally die during hermaphrodite development as well? The nine base pair long TRA-1 binding site is specifically involved in controlling <i>egl-1</i> transcription in the HSNs. We now know that there are many such conserved motifs downstream and also upstream of the <i>egl-1</i> transcription unit.  These motifs most likely represent binding sites for additional regulators of <i>egl-1</i> transcription and, hence, <i>cis</i>-regulatory elements of the <i>egl-1</i> locus.  
+
+* Based on genetic analyses, we suspect that <i>egl-1</i> transcription is the target of 60-70 different transcriptional regulators that act through these <i>cis</i>-regulatory elements and that each controls <i>egl-1</i> transcription in a subset of the 131 cells that die during <i>C. elegans</i> development.  The <i>egl-1</i> locus therefore acts as an integrator of all the signals that control apoptosis during <i>C. elegans</i> development.  
+
+* Not only have extensive <i>cis</i>-regulatory elements of the <i>egl-1</i> locus been identified but also some of the transcriptional regulators or “trans-acting factors” of the <i>egl-1</i> locus.  TRA-1 was the first one to be identified and a number of investigators have since identified additional ones.  Interestingly, each one of these transcriptional regulators identified to date has a homolog in humans.  
+
+* Not only does each one of them have a homolog in humans but for each one of them, the human homolog has been implicated in tumorigenesis.  For example, Gli, the human homolog of <i>C. elegans</i> TRA-1, was originally found associated with glioma, which is a type of cancer that arises from glial cells.  
+
+* Glial cells are non-neuronal cells that provide support for neurons in the brain. And that’s where Gli got its name from, from “glioma”.  Gliomas make up about 80% of all malignant brain tumors.  
+
+* Since its identification, Gli has also been found transcriptionally upregulated or over-expressed in many other types of tumors. Like Bcl-2, Gli is therefore a proto-oncogene. This is an important point.  
+
+* In analogy to <i>C. elegans</i> TRA-1, the Gli transcription factor may normally block the transcription of a pro-apoptotic gene, for example one of the mammalian BH3-only genes. In tumors, in which Gli is upregulated or over-expressed, this would lead to the transcriptional repression of the BH3-only gene and, consequently, a block in apoptosis. This block in apoptosis could be the first step towards tumorigenesis.   
+
+* Transcriptional repressors of pro-apoptotic genes, such as BH3-only genes, potentially are proto-oncogenes. Proto-oncogenes are genes, whose overexpression or inappropriate activation can cause tumorigenesis. Bcl-2 and Gli are examples of such proto-oncogenes.  
+
+* Conversely, transcriptional activators of pro-apoptotic genes potentially are tumor suppressor genes. And tumor suppressor genes are genes, whose loss can cause tumorigenesis. For example, the loss of a transcriptional activator of a BH3-only gene, potentially leads to the inappropriate survival of cells, which then can acquire additional defects or mutations and give rise to a tumor.  
+
+* An example of a transcriptional activator of <i>egl-1</i> is the transcription factor CEP-1. CEP-1 is required to activate <i>egl-1</i> transcription in germ cells in response to DNA damage.  In animals lacking CEP-1 function, <i>egl-1</i> is not transcriptionally upregulated in response to DNA damage, which leads to the inappropriate survival of germ cells that would otherwise die.  
+
+* The mammalian homolog of CEP-1 is p53, an important tumor suppressor that is  found inactivated in more than 85% of all human cancers. One important target of p53 is the BH3-only gene <i>PUMA</i> (p53 upregulated modulator of apoptosis), which demonstrates the importance of being able to eliminate damaged cells in response to insults such as DNA damage. Like in the case of <i>C. elegans</i> <i>egl-1</i>, the activity of the mammalian BH3-only gene <i>PUMA</i> is regulated predominantly at transcriptional level. Other mammalian BH3-only genes that are transcriptionally regulated are <i>Noxa</i>, <i>HRK</i>, and <i>BIM</i>.  
+
+[[PCD:Main | PCD Main Page]]  
+[[PCD: Week5 | Week 5 Keywords]]  
+[[PCD: Week5LectureList | Week 5 Lecture Transcripts]]

@@ -1,0 +1,507 @@
+#Introduction
+
+This is the wiki for the course Data Analysis with instructor Jeff Leek.  
+
+This is a class resource for the use of all participants in the course, so please feel free to add items of interest, or clean up existing entries. Don't get upset if your entries get edited or moved as that is part and parcel of an open wiki and the goal is to make a useful and well organised resource for all students.
+
+#Lecture Notes
+
+##Week 1
+* Introduction and getting help
+* What is data?
+* Representing data
+* Representing data in R
+* Simulation basics
+* Types of data analysis questions
+* Sources of data sets
+
++ [[Dataanalysis:Transcripts#Week_1 | Edited Transcripts]]
+
+##Week 2
+* Structure of a data analysis
+* Organizing a data analysis
+* Getting data
+* Data resources
+* Summarizing data
+* Data munging basics
+
++ [[Dataanalysis:Transcripts#Week_2 | Edited Transcripts]]
+
+##Week 3
+* Example analysis report
+* Graphs: Exploratory and expository
+* Clustering: hierarchical and K-means
+* Dimension reduction
+
+To explore the data, ggobi [[http://www.ggobi.org/]]
+could be worth a try.
+
+##Week 4
+* Basic least squares
+* Inference basics
+* P-values
+* Regression with factor variables
+* Multiple variable regression
+
+##Week 5
+* ANOVA
+* Binary outcomes
+* Count outcomes
+* Model checking and selection
+
+##Week 6
+* Prediction study design
+* Cross-validation
+* Prediction with regression
+* Predicting with trees
+
+##Week 7
+* Smoothing
+* Bootstrap
+* Bootstrapping for prediction
+* Combining predictors
+
+##Week 8
+* Multiple testing
+* Simulation for  model checking
+* Wrap-up
+
+#Course Transcripts
+[[Dataanalysis:Transcripts | Edited Transcripts]] 
+
+#Supplementary Lecture Summary Notes ( compiled by Students )
+###[[Lecture 2 | Lecture 2 (Example of an Exploratory Data Analysis)]]
+###Lecture 3
+##### Lecture 3 as.Rmd
+Here is [https://s3.amazonaws.com/mckenna.tim/week3.Rmd .Rmd] and its [https://s3.amazonaws.com/mckenna.tim/week3.html .html] for then code that Jeff runs in the lecture for week 3. Data should load if you have a /data directory under where you run the code.
+
+###Lecture 4
+##### Lecture 4 as.Rmd
+Here is [https://s3.amazonaws.com/mckenna.tim/week4.Rmd .Rmd] and its [https://s3.amazonaws.com/mckenna.tim/week4.html .html] for then code that Jeff runs in the lecture for week 4. Data should load if you have a /data directory under where you run the code.
+
+###Lecture 5
+##### Lecture 5 as.Rmd
+Here is [https://s3.amazonaws.com/mckenna.tim/week5Rmd .Rmd] and its [https://s3.amazonaws.com/mckenna.tim/week5.html .html] for then code that Jeff runs in the lecture for week 5. Data should load if you have a /data directory under where you run the code. You need libraries sandwich & leaps & BMA
+
+###Other Notes by students
+There are some notes in this [Google Docs folder](http://bit.ly/URw1IZ) which has read/write access to anyone with the link. At the moment there are notes on **Exploratory Graphs, Expository Graphs**, and **Hierarchical Clustering**. (I'd like to put them directly into the wiki, but it is so much easier to put graphics into Google Docs!)
+
+#R Notes
+
+##Getting Help in R
+
+R has extensive built-in help. Here is a summary of ways to access it.
+
+    help("functionName")            # will display help on the named function
+    ?functionName                   # same as above
+    help.search("aString")          # search help system for entries containing "aString"
+    ??aString                       # same as above
+    help(package=base)              # get a list of all functions, datasets, etc in package base
+    example("functionName)"         # display examples of the use of function functionName
+    demo()                          # list all demos in loaded packages
+    demo(Hershey)                   # run the Hershey demo
+    RSiteSearch("topic")            # search for the string topic in online documentation
+    apropos("foo", mode="function") # list all functions with foo in their name
+    data()                          # list all available datasets
+    args("functionName")            # will list the arguments accepted by function functionName
+    help.start()                    # access to R manuals in a browser window.
+    vignette()                      # list the names of all introductory articles available in PDF format
+    vignette("name")                # display the name vignette in a PDF reader
+
+## Installing a Package
+
+The `library` command is used to load a local package into your current R workspace.  It can only load packages that are already downloaded to your machine.
+
+If when running `library` you get an error saying that the package couldn't be found you need to run `install.packages`  eg. suppose you want to load the kernlab library which you haven't downloaded,  you need to enter the following commands:
+
+    install.packages("kernlab") # quotes are required
+    library( kernlab )   # load the package into the workspace.
+
+NOTE: the `install.packages` command will display a list of sites ordered by country and ask you to select one to download the file from, pick a site that is close to you as this might speed things up.  If the download fails, first try the install.packages again but pick a different site.
+
+
+##Listing Packages
+
+To list the packages that are installed on your machine use `library()`, to see which libraries are loaded in your workspace use `search()`.
+
+##Removing a Package
+
+`rm(list=ls())` doesn't totally empty your workspace in that it doesn't remove packages from your workspace. if you need to remove a package use `detach( "package:packageName" )`, replacing `packageName` with the name of the directory you want to remove eg, `detach( "package:downloader" )`.
+
+`detach()` will remove a package from your workspace but it does not uninstall the package from your machine, for that you need to use `remove.packages()`. So to totally remove the downloader package from your current workspace and from your machine package library you need to do:
+
+    detach( "package:downloader" )
+    remove.packages( "downloader" )
+
+##library() vs require()
+
+There are two functions to load a package into your current R workspace, `library()` and `require()`.  The difference between the two is that if the function can't find the package (because it's not yet installed)  `library()` will generate an error where as 'require()` will generate a warning and return FALSE. 
+
+So with require you could try to be a bit fancy in your scripts in the way you load packages:
+   
+    repoSite <- "http://cran.us.r-project.org"
+    needPackage <- "downloader"
+    if( ! require( needPackage, character.only = TRUE )  ) {
+        install.packages( needPackage, repos= repoSite )
+        library( needPackage, character.only = TRUE )
+    }
+
+This will first attempt to load the package with require if this returns FALSE then an attempt is made to install the package, and then load it into the workspace.
+
+NOTE: the `character.only=TRUE` is required else library/require will attempt to load a package with the same name as the variable,  i.e. `needPackage`, rather than the name in the character vector which the variable contains i.e.. `downloader`.
+
+
+
+
+## Configure R on Windows to use --internet2
+
+R out of the box will attempt to access the web directly. This causes problems when the machine being used makes use of a proxy server in its web browsers; such as when it is behind a corporate firewall. You won't be able to download files or install.packages.
+
+To enable R to pick up the proxy server used by your browser you need to enable the internt2 option in R.
+
+setInternet2(use = TRUE)  # this will have to be done each time your run R
+
+Another option is to right click on the icon you use to launch R and select "Properties", this will display a dialog, select the Shortcut tab, then at the end of the entry in the "Target:" text entry box enter --internet2 NOTE: that is two dashes. Click Apply and then OK. From now on when you launch R it will use the same proxy as your browser.
+
+## Downloading Files on Windows
+
+
+ - make sure you have enabled the internet2 option.
+ - when using download.file **don't** include the `method="curl"` option that is only for Linux/Mac users.
+ - if your getting warnings starting with "Warning: unable to move temporary installation ". You likely have a problem where the firewall running on your PC is blocking the action. Try disabling the firewall, run the command again, then re-enable the firewall. 
+
+
+
+**Examples**
+
+- **.csv file**
+
+        fileUrl = "https://dl.dropbox.com/u/7710864/data/csv_hid/ss06hid.csv"
+        fileCsv = "C:/YourPath/ss06hid.csv"
+        
+        download.file( fileUrl, fileCsv )
+
+- **.xlsx file** Compressed files should be downloaded as binary "wb"
+
+        fileUrl = "http://data.baltimorecity.gov/api/views/dz54-2aru/rows.xlsx?accessType=DOWNLOAD"
+        fileXls = "C:/YourPath/camera.xlsx"
+        
+        download.file( fileUrl, fileXls,,,"wb" )
+
+- **.pdf file**
+
+        fileUrl = "http://www.census.gov/acs/www/Downloads/data_documentation/pums/DataDict/PUMSDataDict06.pdf"
+        filePdf = "C:/YourPath/cegov.pdf"
+
+        download.file( fileUrl, filePdf,,,"wb" )
+
+
+##Downloading Files On Mac/Linux
+
+ - in the download.file call make sure you do include the `method="curl"` option
+ - Linux: install the Linux curl package: from a bash/shell window enter `sudo apt-get install curl`
+ - Linux: It is worth to install the Linux R devtools library `sudo apt-get install r-base-dev`
+
+**Examples**
+
+- **.csv file**
+
+        fileUrl = "https://dl.dropbox.com/u/7710864/data/csv_hid/ss06hid.csv"
+        fileCsv = "/home/YourPath/ss06hid.csv"
+        
+        download.file( fileUrl, fileCsv, "curl" )
+
+- **.xlsx file** Compressed files should be downloaded as binary "wb"
+
+        fileUrl = "http://data.baltimorecity.gov/api/views/dz54-2aru/rows.xlsx?accessType=DOWNLOAD"
+        fileXls = "/home/YourPath/camera.xlsx"
+
+        download.file( fileUrl, fileXls, "curl",,"wb" )
+
+- **.pdf file**
+
+        fileUrl = "http://www.census.gov/acs/www/Downloads/data_documentation/pums/DataDict/PUMSDataDict06.pdf"
+        filePdf = "/home/YourPath/cegov.pdf"
+
+        download.file( fileUrl, filePdf, "curl",,"wb" )
+
+## Subsetting a Dataframe
+
+In the examples we will use a dataset, `df`, with 3 columns (`nums`, `lets`, `moreLets`) which is constructed as follows:
+
+
+    n <- rnorm(20)
+    l <- letters[1:20]
+    m <- letters[7:26]
+    df <- data.frame( nums=n, lets=l, moreLets=m, stringsAsFactors = FALSE)
+
+The following examples won't use the convenience function `subset` which while useful for interactive work in the R console it's use in R program scripts is not considered good practice. Also in the following pay attention to the `,` a common error is to forget it's inclusion when it is required.
+
+    df[ 1, ]     # returns the first row of df in a data.frame
+    df[ 1:10, ]  # returns the first 10 rows of df in a data.frame
+    df[ c(3,7,9), ]# returns rows 3, 7 and 9 in a data.frame
+    df[ 1 ]      # returns the first column (nums) of df in a data.frame
+    df[ 2:3 ]    # returns columns lets and morelets in a data.frame
+    df[ c(1,3) ] # returns columns nums and morelets in a data.frame 
+    df[ "nums" ] # returns column nums in a data.frame
+    df[[ 1 ]]    # returns the first column (nums) as a vector
+    df[[ "nums" ]] # as above
+    df$nums      # as above
+    df[ , 1]     # as above
+    df[ , "nums" ] # as above
+    df[ , 2:3 ]   # returns columns lets and moreLets as a data.frame
+    df[ , c(1, 3) ] # returns columns nums and moreLets as a data.frame
+    df[ , c("nums", "moreLets") ] # as above
+    df[ df$nums > 0, ] # returns all rows where nums is greater than 0
+    df[ df[1] > 0, ] # as above
+    df[ df[[ 1 ]] > 0, ] # as above
+    df[ df$nums > 0, 2:3] # returns columns lets, morelets were nums > 0
+    df[ df$nums > 0, ][ 2:3 ] # as above
+
+The conditional expressions used above (e.g. `nums > 0`) can be extended to include multiple conditions joined by `&` for AND and `|` for OR e.g.
+
+    df[ nums > 0 | lets == "a", ]  
+
+will return all rows where `nums` is greater than 0 OR `lets` equals "a"
+
+All the above will in interactive mode print the results to the screen. If you need to save the subset for additional work you need to use the assignment operator e.g.,
+
+    subDF <- df[nums > 0 | lets == "a",]
+
+**Note on use of logical vector to choose rows**
+
+Assume same dataframe, `df`, as above, then
+
+    choose <- rep(FALSE, 20)
+    choose[1] <- TRUE
+    choose[4] <- TRUE
+    choose
+    df[ choose,  ]  # will  only return rows 1 and 4
+
+Be careful that the choose vector is the same length as the number of rows as your data.frame. The following will return rows, 1, 4, 5, 8, 9, 12, 13, 16, 17, 20. Essentially the choose vector gets repeated until it is long enough to match the number of rows in the dataframe. It won't just return rows 1 and 4 as you might expect.
+
+    choose <- c(TRUE, FALSE, FALSE, TRUE)
+    df[ choose, ]  
+
+#Links
+
++		http://www.r-tutor.com/r-introduction
++		http://www.statmethods.net/
++		http://www.burns-stat.com/pages/Tutor/R_inferno.pdf
++		http://freecomputerbooks.com/langRBooks.html
++		http://freecomputerbooks.com/mathStatisticsBooks.html
++		http://pluto.huji.ac.il/~msby/StatThink/IntroStat.pdf
++		http://www.stat.auckland.ac.nz/~stat782/?Lecture_Slides
++		http://tryr.codeschool.com/
++		http://pj.freefaculty.org/R/Rtips.html
++		http://cran.r-project.org/
++		http://cran.r-project.org/doc/contrib/Owen-TheRGuide.pdf
++		http://cran.r-project.org/doc/contrib/Short-refcard.pdf
++		http://research.stowers-institute.org/efg/R/Color/Chart/ColorChart.pdf
++		http://www.cookbook-r.com/
++		http://blog.revolutionanalytics.com/2011/11/three-free-books-on-r-for-statistics.html
++		http://www.network-theory.co.uk/R/intro/
++		http://en.wikibooks.org/wiki/R_Programming
++		http://www.r-statistics.com/2009/10/free-statistics-e-books-for-download/
++		http://www.r-bloggers.com/free-online-statistics-books/
++		http://statpages.org/javasta3.html#Specific
++		http://home.ubalt.edu/ntsbarsh/
++		https://github.com/jtleek/dataanalysis/
++		http://simplystatistics.org/2013/01/16/review-of-r-graphics-cookbook-by-winston-chang/
++		http://it-ebooks.info/book/318/
++		http://www.rdatamining.com/books/rdm
++		https://2780fa3c-a-62cb3a1a-s-sites.googlegroups.com/site/rdatamining/docs/RDataMining.pdf?attachauth=ANoY7crpCKRugQEhxk5jbRs1DQZbuwU0icWYM9m7bG82f2r-k7gOH_MwCHnpPtoy9pWrB4LBfeIKn9aIjpbAwSB3-DE8mNlYMLYfQeC6bYwQ7nVKUVCVWyB5ar_-67LcuUMjWXqlO0pxoJd7jybmktMYCpwYF4I1VAgtMnLaygBjc2tWwq8QrHbIqTUvpggr08QCKKAeze0zQMUwxl7kzrsM2dVrwDqMcG0d1pX1bEJh0z6hbNwwme0%3D&attredirects=0
++		http://www.dcc.fc.up.pt/~ltorgo/DataMiningWithR/
++		http://maths-people.anu.edu.au/~johnm/aboutR.html
++		http://www.statpower.net/Teaching.html
++		http://people.stat.sfu.ca/~cschwarz/CourseNotes/
++		http://socserv.socsci.mcmaster.ca/jfox/
++		https://sites.google.com/a/lakeheadu.ca/bweaver/Home/statistics
++               http://decisionstats.com/2013/02/04/r-in-oracle-java-cloud-existing-r-java-integration-rstats/#more-10857
++               http://ropensci.org/   
++               http://pairach.com/2012/06/17/r_tutorials_non-uni/
++               http://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/
++               http://www.edwardtufte.com/tufte/dapp/
+## Course Related
+
++ [[Compdata:Main | Wiki for the Computing for Data Analysis course]]. Contains lists of R books and and sites which students of the course found useful or were recommend by the instructor. 
++ [Lecture Notes on Github](https://github.com/jtleek/dataanalysis/) with course notes / lecture slides.
++ [Mindmap of course notes on Mindmeister](http://www.mindmeister.com/271942668/coursera-data-analysis/) with editable [file](http://fontanon.org/Dataanalysis.mm/) from J. Félix Ontañón
+
+
+##Data Sources
+
+A list of websites which either host data or catalogue sites that do is available on the [[Dataanalysis:DataSources]] page.
+
++ [Statistical Analysis of Massive Datastreams: Proceedings of A Workshop National Academy Press](http://www.nap.edu/catalog/11098.html) see what NASA, LANL are doing with massive data sets including use of R
+
+##Learn R
+
++ [This courses' R self-quiz](http://www.biostat.jhsph.edu/~rpeng/coursera/selfquiz/)R self-quiz, with solutions
++ [Try R](http://tryr.codeschool.com) Easy interactive R tutorial from CodeSchool.com
++ [R at TwoTutorials.com](http://www.twotorials.com) Two-minute R video tutorials
++ [R at StackOverflow.com](http://stackoverflow.com/questions/tagged/r) R questions answered
++ [Youtube videos from the Coursera Computing for Data Analysis course](http://bit.ly/Ufaadn)
++ [R tutorials on FlowingData.com ](http://flowingdata.com/category/tutorials/)in-depth R tutorials
++ [aRrgh: a newcomer's (angry) guide to data types in R](https://github.com/tdsmith/aRrgh)sarcastic & profane R pedagogy
++ [DG Rossiter' lecture notes on R](http://www.itc.nl/~rossiter/teach/lecnotes.html#R)
++ [ The R User Conference 2013](http://www3.uclm.es/congresos/useR-2013/) at University of Castilla-La Mancha, Albacete, Spain July 10-12 2013
+##R Graphical User Interface (GUI) Software
++ [R Studio](http://www.rstudio.com/)
++ [Revolution R](http://www.revolutionanalytics.com/products/revolution-r.php). Compiled from a modified form of Visual Studio 2008 (via a Microsoft SDK). Offers good support for debugging and support for extremely large datasets. There is a free version for academic use.
++ The Computing for Data Analytics course wiki also [lists a number of R IDEs](https://share.coursera.org/wiki/index.php/Compdata:Main#Tools.2C_Editors.2C_IDEs).
++ [RPubs](http://rpubs.com/) Reproducible Research published using R Markdown
+
+
+##Markdown, R Markdown
+
+Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats. *R Markdown* is an integration of Markdown with R which can be used to easily produce nicely formatted documentation that includes R code along with its output (including graphics), all packaged into a single HTML file. This is discussed in the video lecture, [Example Analysis Assignment](https://class.coursera.org/dataanalysis-001/lecture/83). See also the Sweave section below on this page (apparently Sweave is even more capable but more complex to learn).
+
+See the *Further References* below for more information, but for a very quick start:
+
++ Install [RStudio](http://rstudio.org/download/)
++ Run RStudio
++ Install the knitr package: install.packages("knitr").
++ Select from the main menu "File -> New -> R Markdown". You'll get a window with a sample file.
++ Save the sample file as "test.Rmd"
++ Now you should see a button labeled "Knit HTML" on the menu bar. Click that button.
++ You should see a finished web page that includes the text, R commands, output, and graph.
+
+###Further References
+
++ [Using Markdown with RStudio](http://www.rstudio.com/ide/docs/authoring/using_markdown)
++ [Jeromy Anglim's video and slides on producing reproducible analysis](http://jeromyanglim.blogspot.ca/2012/07/video-knitr-rmarkdown-rstudio.html)
+
+###Command line using
+Install the knitr package: install.packages("knitr",'markdown').
+
+    library(knitr) 
+    library(markdown)  
+    knit('test.rmd', 'test.md') # creates md file 
+    markdownToHTML('test.md', 'test.html') # creates html file
+    browseURL( paste0( 'file://', getwd(), "/", "test.html"))) # should display HTML file in browser.
+
+
+##Sweave
+
+Sweave is a tool that allows R code to be embedded for complete data analyses in $$\LaTeX$$ documents.
+
++ [A Sweave Demo](http://users.stat.umn.edu/~geyer/Sweave/)
++ [CRAN Task View: Reproducible Research. List of useful links and packages](http://cran.r-project.org/web/views/ReproducibleResearch.html) 
++ [Kevin Coombes presentation: Sweave: First Steps to Reproducible Analysis](http://www.johndcook.com/coombes.html)
++ [Sweave Templates](http://biostat.mc.vanderbilt.edu/wiki/Main/SweaveTemplate)
++ [$$\LaTeX$$ Wikibook](http://en.wikibooks.org/wiki/LaTeX)
++ [$$\LaTeX$$ Math Symbols: Wikibook](http://en.wikibooks.org/wiki/LaTeX/Mathematics )
+
+##R Reference documents
+
++ [R cheat sheet](http://cran.r-project.org/doc/contrib/Short-refcard.pdf)
++ [The CRAN documentation page](http://cran.r-project.org/manuals.html). Includes the R Language Reference manual. Make sure you follow the link to contributed documentation page.
+
+##R Style Guides
++ [Style Guide for R from Google](http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html)
++ [Style Guide for R from Google from 4D Pie Charts](http://4dpiecharts.com/r-code-style-guide)
++ [Coding Standards for R from BioConductor](http://wiki.fhcrc.org/bioc/Coding_Standards) 
+
+##Statistics
++ [OpenIntro Statistics](http://www.openintro.org/stat/)
++ [Professor Leek's website](http://simplystatistics.org)
++ [Cross Validated](http://stats.stackexchange.com) statistics questions
++ [The Unreasonable Effectiveness of Data](http://www.csee.wvu.edu/~gidoretto/courses/2011-fall-cp/reading/TheUnreasonable%20EffectivenessofData\_IEEE\_IS2009.pdf) an article (PDF) written by Alon Halevy, Peter Norvig, and Fernando Pereira, of Google. 
++ [The Unreasonable Effectiveness of Data](http://www.youtube.com/watch?v=yvDCzhbjYWs) video lecture by Peter Norvig.
++ [Davido Donoho address to US Naval Academy 2001](http://www.usna.edu/MathSci/Michelson2x2.pdf)
++ [David Donoho American Math Association: Math Challenges for 21st century... 2000](http://www-stat.stanford.edu/~donoho/Lectures/AMS2000/AMS2000.html)
++ [John Tukey, The Future of Data Analysis 1961](http://www.stanford.edu/~gavish/documents/Tukey_the_future_of_data_analysis.pdf)]
++ [What is Data Analysis](http://www.dartmouth.edu/~mss/data%20analysis/Volume%20I%20pdf%20/006%20Intro%20%28What%20is%20the%20weal.pdf) from Dartmouth University Department of Math and Statistics
++ [Persi Diacosis Theories of Data Analysis: From Magical Thinking Through Classical Statistic 1985](http://www-stat.stanford.edu/~cgates/PERSI/papers/magicalthinking.pdf)
++ [Qualtrics University Data Analysis Guide](http://www.qualtrics.com/university/researchsuite/data-analysis-guides)
++ [Mike Baxter's CINEMETRICS DATA ANALYSIS 2012](http://www.mikemetrics.com/#/cinemetrics-data-analysis/4569975605) interesting online book on the use of R and Cinemetrics
++ [Nick Fern's blog on Cinemetrics/Statistics](http://nickredfern.wordpress.com/category/statistics/)
+with some great links to Daniel Judge's online Statistics lectures
++ [Multivariate Adaptive Regression Analysis report by James Stevens and Peter Lewis Naval War College 1990](http://archive.org/details/nonlinearmodelin00lewi)
++ [Multivariate Adaptive Regression Analysis for flexible regression modeling James Friedman Stanford University 1990](http://projecteuclid.org/euclid.aos/1176347963)
+ at project Euclid)
++ [Project Euclid Open Access Journals including Statistics and Probability Journals](http://projecteuclid.org/DPubS?Service=UI&version=1.0&verb=Display&handle=euclid&page=about&aboutArea=librarians&aboutPage=about_open)
++ [Learn Data Analysis](http://learndataanalysis.com/) a good site for various data analysis links including R
++ [Free books from Springer Publishing on Data Analysis](http://learndataanalysis.com/free-e-books-springerlink) at Learn Data Analysis site
++ [Jeromy Anglim's sitemap](http://jeromyanglim.blogspot.ca/p/site-map-jeromy-anglims-blog-psychology.html) with many links and advice
++ [J H Maindonald's  The Design of Research Studies - A Statistical Perspective](http://www.maths.anu.edu.au/~johnm/Docs/planning/protgs2002.pdf)
++ [Advanced Data Analysis from an Elementary Point of View by Cosma R. Shalizi at Carnegie Mellon University](http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/) 
++ [ Basic Data Analysis and More - A Guided Tour Using Python by Oliver Melchert](http://arxiv.org/abs/1207.6002) arXiv paper using Python code but the code can easily be reproduced in R 
++ [Modeling with Data by Ben Klemens](http://modelingwithdata.org/about_the_book.html) while the statistical methods in the book are bases on the language C source code can easily be rewritten in R
+
+##Version Control
+
++ [Git](http://git-scm.com/)
++ [Github](https://github.com/)
++ [Bitbucket][https://bitbucket.org]
++ [Source Control in 10 Minutes: an SVN tutorial](http://www.clear.rice.edu/comp314/svn.html)
++ [Subversion (SVN) ](http://subversion.apache.org/)
++ [Top 10 Git Tutorials for Beginners](http://sixrevisions.com/resources/git-tutorials-beginners/)
++ [Using Version Control with RStudio](http://www.rstudio.com/ide/docs/version_control/overview)
+
+## Reproducible Analysis Navigation Template (rant)
+
+[rant](https://github.com/vinomaster/dawn/tree/master/guides/rant) is a general purpose workflow template that will help navigate a data analysis project. The template is designed to serve as guides for a research project. The template is designed to help others organize data analysis projects and the artifacts (insights, plots, code, etc) of the endeavor. 
+
+#Books
+
+Books that students find useful.
+
++ Adler, Joseph: [R in a Nutshell. 2nd edition 2012](http://shop.oreilly.com/product/0636920022008.do). Comprehensive introduction into R as a programming language and its use in statistics and data analysis with lots of examples.
+
++ Avril, Coghlan [A Little Book of R for Time Series](http://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/). This is a simple introduction to time series analysis using the R Statistics software
+
++ Avril, Coghlan [A Little Book of R for Multivariate Analysis](http://little-book-of-r-for-multivariate-analysis.readthedocs.org/en/latest/). This is a simple introduction to multivariate analysis using the R Statistics software.
+
++ Diez, David M &  Barr, Christopher D & Cetinkaya-Rundel, Mine (2012). [OpenIntro Statistics](http://www.openintro.org/stat/textbook.php), openintro.org. OpenIntro Statistics is a free textbook for introductory statistics. The book can be downloaded for free as a PDF or purchased on [Amazon.com](http://www.amazon.com/dp/1478217200/).
+
++ Hastie, Trevor & Tibshirani, Robert  & Friedman, Jerome  (2008) [Elements of Statistical Learning, Second Edition](http://www.stanford.edu/~hastie/local.ftp/Springer/OLD//ESLII_print4.pdf), Springer. Free PDF download.
+
++ Kenny, David A. [Correlation and Casuality](http://davidakenny.net/doc/cc_v1.pdf)
+
++ Kruschke, John [Doing Bayesian Data Analysis: A Tutorial with R and BUGS](http://www.indiana.edu/~kruschke/DoingBayesianDataAnalysis/) 
+
++ Marcus, Gary & Davis, Ernst[The New Yorker, "What Nate Silver Gets Wrong"](http://www.newyorker.com/online/blogs/books/2013/01/what-nate-silver-gets-wrong.html)
+
++ Matloff, N. [Art of R Programming](http://nostarch.com/artofr.htm), No Starch Press.  A good book on learning the R programming language for those with some prior programming background.
+
++ Meys, Joris & de Vries, Andrie. [R for Dummies](http://www.amazon.com/R-For-Dummies-Joris-Meys/dp/1119962846), For Dummies, 2012. A good quick start. 
+
++ Pearl, Judea [Casuality: Models, Reasoning and Inference](http://bayes.cs.ucla.edu/jp_home.html)
+
++ Raja,Prasenjit [Principles of Data Analysis](http://www.physik.uzh.ch/~psaha/pda/)
+
++ Ramsay, James [Functional Data Analysis with R and MATLAB](http://www.springer.com/statistics/computational+statistics/book/978-0-387-98184-0)
++ Ramsay, James [Functional Data Analysis](http://www.psych.mcgill.ca/misc/fda/)
+
+
++ Shalizi, Cosma Rohilla (2013). [Advanced Data Analysis from an Elementary Point of View](http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf). Free PDF download. 
+
++ Venables & Ripley (2010). [Modern Applied Statistics with S](http://www.amazon.com/Modern-Applied-Statistics-Computing/dp/1441930086/ref=sr\_1\_1?s=books&amp;ie=UTF8&amp;qid=1358968453&amp;sr=1-1&amp;keywords=modern+applied+statistics+with+s), Springer. Ripley is by far the largest contributor to the R-Core codebase.
+
++ Wickham, Hadley  [ggplot2: Elegant Graphics for Data Analysis](http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/ref=sr\_1\_1?ie=UTF8&amp;qid=1358968404&amp;sr=8-1&amp;keywords=ggplot2), Springer. Book on ggplot2 written by the author of the ggplot2 and plyr, R packages. This book is part of Springer's [Use R!](http://www.springer.com/series/6991) series.
+
+
+
+#FAQ
+
+Answers to common platform related questions and issues. Also see the [Coursera FAQ](http://help.coursera.org/)
+
+## Late Days
+
+A large number of discussion forum posts have indicated that late days are broken. Not all are due to user error. A likely cause is that when deadlines were extended late days that had already been used unnecessarily were not refunded. Result was that student had less than the 5 late days supposed to be available. This could either be a Coursera platform issue or course staff failing to update late days correctly when adusting deadlines. Ultimately a platform issue since should be done automatically without staff intervention as a result of the deadline adjustment. Anyway it was NOT fixed by the end of the course. Hopefully will be noticed by staff in this FAQ.
+
+
+## Fix Problems with video play back
+
+See this [entry](http://help.coursera.org/customer/portal/articles/912521-why-do-my-lecture-videos-play-incorrectly-) in the Coursera FAQ.
+
+
+## How to Watch Course Videos (and YouTube) at 2x Speed
+
+[VLC Media Player](http://www.videolan.org/vlc/) is a free video player with excellent support for watching at 2x speed. You can watch one hour of lectures in 30 minutes, and at fast playback speeds the sound quality tends to be much better compared with the default web based playback.
+
+To raise the playback speed, download the video to your local computer, open the file in VLC Media Player, then select "Playback..Speed" (or the "+" button on the numeric keypad on the right hand side of your keyboard).
+T
+You can also [use VLC Media Player to watch YouTube videos at 2x playback speed](http://www.labnol.org/software/youtube-videos-in-vlc-player/26829/). Select "Open..Network Stream", paste in the YouTube URL, then select the playback speed using "Playback..Speed". This is particularly useful when watching lectures referred to in Professor Leek's videos, such as [The Unreasonable Effectiveness of Data by Peter Norvig](http://www.youtube.com/watch?v=yvDCzhbjYWs).

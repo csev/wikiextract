@@ -1,0 +1,300 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Genomescience:Plasmodium Genomics I</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Heading_01"><span class="tocnumber">1</span> <span class="toctext">Heading 01</span></a></li>
+<li class="toclevel-1"><a href="#Heading_02"><span class="tocnumber">2</span> <span class="toctext">Heading 02</span></a></li>
+<li class="toclevel-1"><a href="#Heading_03"><span class="tocnumber">3</span> <span class="toctext">Heading 03</span></a></li>
+<li class="toclevel-1"><a href="#Heading_04"><span class="tocnumber">4</span> <span class="toctext">Heading 04</span></a></li>
+<li class="toclevel-1"><a href="#Heading_05"><span class="tocnumber">5</span> <span class="toctext">Heading 05</span></a></li>
+<li class="toclevel-1"><a href="#Heading_06"><span class="tocnumber">6</span> <span class="toctext">Heading 06</span></a></li>
+<li class="toclevel-1"><a href="#Heading_07"><span class="tocnumber">7</span> <span class="toctext">Heading 07</span></a></li>
+<li class="toclevel-1"><a href="#Heading_08"><span class="tocnumber">8</span> <span class="toctext">Heading 08</span></a></li>
+<li class="toclevel-1"><a href="#Heading_09"><span class="tocnumber">9</span> <span class="toctext">Heading 09</span></a></li>
+<li class="toclevel-1"><a href="#Heading_10"><span class="tocnumber">10</span> <span class="toctext">Heading 10</span></a></li>
+<li class="toclevel-1"><a href="#Heading_11"><span class="tocnumber">11</span> <span class="toctext">Heading 11</span></a></li>
+<li class="toclevel-1"><a href="#Heading_12"><span class="tocnumber">12</span> <span class="toctext">Heading 12</span></a></li>
+<li class="toclevel-1"><a href="#Heading_13"><span class="tocnumber">13</span> <span class="toctext">Heading 13</span></a></li>
+<li class="toclevel-1"><a href="#Heading_14"><span class="tocnumber">14</span> <span class="toctext">Heading 14</span></a></li>
+<li class="toclevel-1"><a href="#Heading_15"><span class="tocnumber">15</span> <span class="toctext">Heading 15</span></a></li>
+<li class="toclevel-1"><a href="#Heading_16"><span class="tocnumber">16</span> <span class="toctext">Heading 16</span></a></li>
+<li class="toclevel-1"><a href="#Heading_17"><span class="tocnumber">17</span> <span class="toctext">Heading 17</span></a></li>
+<li class="toclevel-1"><a href="#Gene_Products_Assembled_into_Pathways"><span class="tocnumber">18</span> <span class="toctext">Gene Products Assembled into Pathways</span></a></li>
+<li class="toclevel-1"><a href="#Question_Set_1:_Malaria_.28Plasmodium.29_and_Pathogen_Biology"><span class="tocnumber">19</span> <span class="toctext">Question Set 1: Malaria (Plasmodium) and Pathogen Biology</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Question_1.1"><span class="tocnumber">19.1</span> <span class="toctext">Question 1.1</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Question_1.2"><span class="tocnumber">19.1.1</span> <span class="toctext">Question 1.2</span></a></li>
+<li class="toclevel-3"><a href="#Question_1.3"><span class="tocnumber">19.1.2</span> <span class="toctext">Question 1.3</span></a></li>
+<li class="toclevel-3"><a href="#Question_1.4"><span class="tocnumber">19.1.3</span> <span class="toctext">Question 1.4</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Anti-bacterial_Protein_Synthesis_Inhibitors_Kill_These_Eukaryotic_Parasites"><span class="tocnumber">20</span> <span class="toctext">Anti-bacterial Protein Synthesis Inhibitors Kill These Eukaryotic Parasites</span></a></li>
+<li class="toclevel-1"><a href="#Mysterious_Episomal_DNA"><span class="tocnumber">21</span> <span class="toctext">Mysterious Episomal DNA</span></a></li>
+<li class="toclevel-1"><a href="#Episomal_DNA_with_a_Peculiar_History"><span class="tocnumber">22</span> <span class="toctext">Episomal DNA with a Peculiar History</span></a></li>
+<li class="toclevel-1"><a href="#Endosymbiotic_Process"><span class="tocnumber">23</span> <span class="toctext">Endosymbiotic Process</span></a></li>
+<li class="toclevel-1"><a href="#Plasmodium_Organelles"><span class="tocnumber">24</span> <span class="toctext">Plasmodium Organelles</span></a></li>
+<li class="toclevel-1"><a href="#What_Does_the_Apicoplast_Do.3F"><span class="tocnumber">25</span> <span class="toctext">What Does the Apicoplast Do?</span></a></li>
+<li class="toclevel-1"><a href="#Apicoplast_Metabolic_Functions"><span class="tocnumber">26</span> <span class="toctext">Apicoplast Metabolic Functions</span></a></li>
+<li class="toclevel-1"><a href="#Protein_Identification"><span class="tocnumber">27</span> <span class="toctext">Protein Identification</span></a></li>
+<li class="toclevel-1"><a href="#Candidate_Proteins_.E2.80.93_Toxoplasma_gondii"><span class="tocnumber">28</span> <span class="toctext">Candidate Proteins – Toxoplasma gondii</span></a></li>
+<li class="toclevel-1"><a href="#Candidate_Proteins_.E2.80.93_Plasmodium_falciparum"><span class="tocnumber">29</span> <span class="toctext">Candidate Proteins – Plasmodium falciparum</span></a></li>
+<li class="toclevel-1"><a href="#Fine_Mapping_of_Apicoplast_Targeting_Signals"><span class="tocnumber">30</span> <span class="toctext">Fine Mapping of Apicoplast Targeting Signals</span></a></li>
+<li class="toclevel-1"><a href="#Bipartite_Apicoplast_Targeting_Signal"><span class="tocnumber">31</span> <span class="toctext">Bipartite Apicoplast Targeting Signal</span></a></li>
+<li class="toclevel-1"><a href="#Question_Set_2:_Discovery_of_the_Apicoplast"><span class="tocnumber">32</span> <span class="toctext">Question Set 2: Discovery of the Apicoplast</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Question_2.1:"><span class="tocnumber">32.1</span> <span class="toctext">Question 2.1:</span></a></li>
+<li class="toclevel-2"><a href="#Question_2.2:"><span class="tocnumber">32.2</span> <span class="toctext">Question 2.2:</span></a></li>
+<li class="toclevel-2"><a href="#Question_2.3:"><span class="tocnumber">32.3</span> <span class="toctext">Question 2.3:</span></a></li>
+<li class="toclevel-2"><a href="#Question_2.4:_Short_Essay_Question"><span class="tocnumber">32.4</span> <span class="toctext">Question 2.4: Short Essay Question</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h4> <span class="mw-headline" id="Heading_01">Heading 01</span></h4>
+<p>[00:05]</p>
+<p>Hello, my name is David Roos and I am a professor of Biology in the University of Pennsylvania and the Penn Genome Frontiers Institute of USA.
+It is my pleasure to be here with you today aside for the fact that i am getting over a ¿head cold? which I hope does not make my voice too congested to be inteligible because it is exciting to be able to talk to you about the new discipline of genomics which I understand from my colleges John Hogenesch and John Murray that divert quite a lot about over the course of these lecture series.</p>
+<h4> <span class="mw-headline" id="Heading_02">Heading 02</span></h4>
+<p>[00:46]</p>
+<p>But I like to talk you today about the slightly different aspects of genomics of genes or pathogens which differes only slightly from the genomics of humans and model organisms that you heard about before, in the same way that you heard over the course on previous lectures with interest in genome of these organisms, the expression profile and the ¿imaging? data, all the other very rich datasets that you have been hearing all course long.</p>
+<h4> <span class="mw-headline" id="Heading_03">Heading 03</span></h4>
+<p>[01:16]</p>
+<p>But in contrast to the application of those genome problems in genetic disorders and developmental disorders where is often very challenging to try to even identify the bases of the problem, and much more challenging to try to correct it. Our goal in pathogen genomics is in someways a much simpler one. Our goal is usually to try to kill these organisms which are the source of much human disease and suffering. And because our goal is simply to try to kill them, we usually care quite a lot about what the organisms do a lot ¿? and that is often easier to address and I will give you some examples of that.</p>
+<p>[01:55] Slide 2</p>
+<p>Today's lecture will be divided in four segments, an introduction to the biology of malaria, caused by the plasmodium species, responsible for this disease, and introduction to the genomics of these organisms, a discussion of the discovery and characterization of the apicomplexan plastid, or apicoplast, and a more general discussion of the use of genomes to identify therapeutic targets, moving towards the development of new drugs and vaccines.</p>
+<p>Each of these sections will be associated to a serie of questions at the end. Because the lectures are a little bit long, in order to try to minimize the bandwidth for downloading, we will break it into sections, but it is all part of one whole presentation.</p>
+<h4> <span class="mw-headline" id="Heading_04">Heading 04</span></h4>
+<p>[02:53]</p>
+<p>So let's get started.</p>
+<h4> <span class="mw-headline" id="Heading_05">Heading 05</span></h4>
+<p>[02:56] Slide 3</p>
+<p>Malaria is a serious disease that is caused by species in the ¿filem in the gene? plasmodium. We do not hear much about malaria in the US or in Europe these days, because it has been eliminated over the preceeding centuries through a series of public ¿alpha? measures and drug treatments and other interventions.</p>
+<p>Malaria is still very much with us and still very much a problem in much of the tropical world, particularly in Africa, South Asia and in part of Amazonia, as you see in these maps, produced by the Malaria Atlas Project, accessible online. Still very much a problem, depending on who you are and where you live.</p>
+<h4> <span class="mw-headline" id="Heading_06">Heading 06</span></h4>
+<p>[03:52] Slide 4</p>
+<p>The reason is still a problem, is that, as we can see, a dramatic decrease in global Malaria over the range period from the thirties through the sixties, this bottom out in sixties early seventies, largely because of the variety of reasons: economical reasons, political reasons, the development of resistance on the part both the parasites and insects factors, that transmit them.</p>
+<p>We can see that in the graph over the left, where Chloroquine which was one of mainstream antimalarial drug by the time this graph was ¿enshaded? in 1976, was of greatly declining efficacy to the point that in much of the world that is now essentially useless. That led to the application of a combination of antifolates, sulfathamines and pyrimethanine which was once very effective, but have been declining efficacy such by mid eighties. These drugs were again not very useful in much of the world.
+Other antimalarials are also available, drugs such as Mefloquine, for example, were introduced in the mid eighties, but you can see the declining efficacy of Mefloquine over much of the world. And even quinine, a drug whose mechanism of action is still purely understood, was the first antimalarial identified as a natural product, is declining efficacy. As a result current therapeutics for malaria relies on a novel remedy derived originally from early medicine ¿? compounds based on chinese older remedies, are now the mainstream of antimalarial treatment and there have been reports of treatment failures that are very worrysome. You can certainly see that the dramatic improvement in antimalarial control in fifties and sixties were hosted and even reversed most notably in Africa, where malaria is on the rise.</p>
+<h4> <span class="mw-headline" id="Heading_07">Heading 07</span></h4>
+<p>[06:20]
+This disease is caused by parasites in the genus plasmodium within the phylum apicomplexa, a large group of eukaryotes pathogens, comprised  more than five thousand named species, all of which are parasites. And this slide makes the point that among the great domains of life, the bacteria, the archaea, and the eukaryots, well most of the microbial diseases we are most familiar with, fall in the bacteria, even within the eukaryotes, the nucleated cells. The vast majority of eukaryotic life is microbial eukaryots indicated in pink.
+Humans are just a twig on the end of this branch, and even animals and plants and fungi are relatively recently emerging branches on this tree of life. 
+Among the microbial eukaryotes shown in pink, are many many thousands of species, several of which we care quite a bit about, because of human's disease, the apicomplexa phylum are indicated in red, and just as you've heard that the model organisms have been informative for understanding the biology and development of humans, other ¿vary species may be complexant conservative? models for each other. On the right, are indicated several genera of apicomplexa parasites including the plasmodium species that cause human malaria, toxoplasma parasites that causes toxoplasmosis, and general diseases of inmunosupresant in humans and various animal species. Cryptosporidium parasites that are also responsible in inmunosupressed individuals. Theiliria parasites which causes a fascinating and devastating linfoma in cattle.</p>
+<h4> <span class="mw-headline" id="Heading_08">Heading 08</span></h4>
+<p>[08:35]
+These organisms have very different life cycles. Plasmodium parasites are carried by mosquitoes, for example, toxoplasma parasites are carried by cats. They are closed related evolutionary, and we can therefore use one as a model for understanding the biology of others in ways that you will see in a moment.</p>
+<h4> <span class="mw-headline" id="Heading_09">Heading 09</span></h4>
+<p>[08:57]
+Let's take a look at the biology of plasmodium, a fascinating topic that I won't be going into deep detail, I direct you to the reference shown in your screen, and many other references that you can find online if you are interested in more the biology of malaria parasites.</p>
+<h4> <span class="mw-headline" id="Heading_10">Heading 10</span></h4>
+<p>[08:16]
+Malaria parasites are carried by mosquitoes, and when a mosquitoes bites a human, a infected mosquito bites a human, it releases sporozoites stage parasites, long slender parasites that move through the blood, and in the space of minutes, enter into the liver where they invade, the parasites, and transform themselves into a completely different looking organism with very different biology. And this is one of the challenges of dealing with microbes, and in particular eukaryotic microbes of this degree of complexity that change themselves into a very different form. In fact it took many many years before biologists even discovered that the parasites observed in the gut of mosquitoes where responsible of the disease observed in the blood of humans. </p>
+<h4> <span class="mw-headline" id="Heading_11">Heading 11</span></h4>
+<p>[10:10]
+In the liver, over the course of several weeks, malaria parasites transform themselves into yet another form. They replicated and burst out of liver cells in the form of merozoites, that infect red blood cells in the circulation. And we will be talking today solely about the intra-¿? cycle, the human blood cell cycle of malaria, because this is the responsible  of all the pathogenesis in humans. Merozoites invade red blood cells and transform themselves into yet another form, ¿? ring stage parasites, because they look a little bit like a ring here. They invade into cells, red blood cells, a very inhospitable home, which is not used by very many pathogens, where they stablish their intracellular home and gobble up  the haemaglobine inside the red blood cell, degrating the protein as their source of nutrients, polimerizing the ¿? into a essentially indigestible rock ¿? as ¿hemazone?, and proceed to grow in the form of trophozoites, indicated here, with the ¿hemazone? polimerized in a wasted part that will be left behind. </p>
+<h4> <span class="mw-headline" id="Heading_12">Heading 12</span></h4>
+<p>[11:35]
+Having exhausted the resources of red blood cells, the parasites transform themselves, yet again, into another form known as schizonts. Replicated parasite form, parasites in which they assembled ¿daughters? essentially de novo within the mother, which burst out as merozoites again, and you can see multiple merozoites here, released from malaria parasites leaving behind this indigestible polimerized ¿? as ¿hemazone?</p>
+<h4> <span class="mw-headline" id="Heading_13">Heading 13</span></h4>
+<p>[12:04]
+This human red blood cells cycle can preceed over many phases, leadint to anemia, leading to many sorts of other disorders in the blood. The parasites infect red blood cells themselves, and can ¿arrest? ¿clod? within the ¿? blood vessels of blood-barrier of brain, causing ¿? and diseases similar to stroke, many sorts of symptons that can be to the devastating biology of plasmodium ¿? malaria, the most lethal form of human malaria, and other aspects, and other forms of other biological ramifications in the other forms of species of malaria that give plasmodium gives rise to human malaria.</p>
+<h4> <span class="mw-headline" id="Heading_14">Heading 14</span></h4>
+<p>[12:54]
+Some of those parasites will differentiate yet again into another form, in fact, two different forms: male and female gametocytes, boys and girls, which are taken up by the mosquitoe and in the gut of the mosquitoe then undergo sexual recombination differentation through a series of other forms that we won't be talking about today, again, a fascinating form of biology, that those parasites undergo sexual recombination where upon they produced new sporozoites that migrated up to the salivary glands, where they are available to be injected in the next blood meal, taken by malaria parasites.</p>
+<h4> <span class="mw-headline" id="Heading_15">Heading 15</span></h4>
+<p>[13:35]
+Now, these organisms, these eukaryotic cells, have nuclei, and those nuclei harbour DNA, and those DNA genome, very much like the genome you heard about before other organisms. It consists of a variety of chromosomes, fourteen chromosomes, in malaria parasites. Those individual chromosomes, like chromosome four, shown here, consists of many hundreds, even thousands of genes, and those genes are similar to, but yet different from one species of malaria to another. Here plasmodium falciparum, the most lethal form of human malaria. Plasmodium vivax, which is perhaps even more wide spread, but less commonly lethal. And other malaria parasites such as the ¿? malaria parasite plasmodium yoelli indicated here. We can see that many of these genes are conserved between species, but not all of them.</p>
+<h4> <span class="mw-headline" id="Heading_16">Heading 16</span></h4>
+<p>[14:52]
+In the telomeric regions we see a variety of genes that are distinct, different parasite species. And there are others genes including amplified clusters of genes variance surface antigens responsibles for secuestration of tissues for plasmodium falciperum. Other genes that are amplified by the plasmodium vivax, as these vir genes as indicated here, there are also the subject of great interest. </p>
+<h4> <span class="mw-headline" id="Heading_17">Heading 17</span></h4>
+<p>[15:27]
+We can see that the side of genomics allows us to be able to ¿insome? inside into the function of these by looking at ¿outrageous? genes accross species, and even for genomes that are not very well assembled, as indicated by the many fragments of genes on the plasmodium yoelli genome, we can still learn quite a lot about many of the proteins they encode.</p>
+<h4> <span class="mw-headline" id="Gene_Products_Assembled_into_Pathways">Gene Products Assembled into Pathways</span></h4>
+<ul>
+<li>[0:15:54][Slide 08]</li>
+</ul>
+<p>Those proteins can be assembled into putative metabolic pathways by analogy to other organisms. We can see here the metabolic pathway of glycolysis where glucose is converted into pyruvic acid. Acetyl-CoA in the mitochondrion is used through the Krebs cycle for the production of ATP, the energy requirement for cells.</p>
+<p>We can also see various parasite specific functions such as the digestive vacuole here that is used for the degradation of hemoglobin and an intriguing organelle known as the apicoplast that we will be talking about in the next section of this lecture.</p>
+<h4> <span class="mw-headline" id="Question_Set_1:_Malaria_.28Plasmodium.29_and_Pathogen_Biology">Question Set 1: Malaria (Plasmodium) and Pathogen Biology</span></h4>
+<ul>
+<li>[0:16:41][Slide 09]</li>
+</ul>
+<h5> <span class="mw-headline" id="Question_1.1">Question 1.1</span></h5>
+<p>When was malaria eliminated in the U.S., in Europe, in Africa?
+a) In the 1800s
+b) In the 1940s
+c) In the 1960s
+d) In the 1980s
+e) It has not yet been eliminated</p>
+<h6> <span class="mw-headline" id="Question_1.2">Question 1.2</span></h6>
+<ul>
+<li>[0:17:20][Slide 10]</li>
+</ul>
+<p>What factor(s) might pose a serious challenge(s) for malaria eradication?
+a) The emergence of drug resistance in malaria parasites
+b) The emergence of insecticide resistance in the mosquitos that carry malaria
+c) The complicated lifecycle of these parasites
+d) Any two of the above
+e) All three of the above</p>
+<h6> <span class="mw-headline" id="Question_1.3">Question 1.3</span></h6>
+<ul>
+<li>[0:17:52][Slide 11]</li>
+</ul>
+<p>Among the following species plasmodium parasites are closely related to…
+a) Humans
+b) Fungi
+c) Plants
+d) Bacteria
+e) Equidistant to humans, plants and fungi</p>
+<h6> <span class="mw-headline" id="Question_1.4">Question 1.4</span></h6>
+<ul>
+<li>[0:18:24][Slide 12]</li>
+</ul>
+<p>And finally some thought questions that we won’t be answering but you should keep in mind through the remainder of this lecture.
+What features of parasite biology are unusual, by which we mean distinct from the more familiar organisms such as humans?
+What criteria might be most useful for identifying candidate therapeutic targets in the parasite genome?</p>
+<p>I’ll give you a moment to answer those questions and we’ll continue with the rest of the lecture.</p>
+<h4> <span class="mw-headline" id="Anti-bacterial_Protein_Synthesis_Inhibitors_Kill_These_Eukaryotic_Parasites">Anti-bacterial Protein Synthesis Inhibitors Kill These Eukaryotic Parasites</span></h4>
+<ul>
+<li>[0:19:00][Slide 13]</li>
+</ul>
+<p>In the second part of this lecture I would like to tell you a specific story about the discovery of an unusual aspect of malaria biology that has proved to be significant from a chemotherapeutic standpoint. This story got its start from work by Maria Fichera when she was a graduate student in my laboratory.</p>
+<p>She sought to identify why these antibiotics shown at the top of the page, structurally dissimilar antibiotics but which many of you are familiar with. You may have taken them to treat an ear infection as a child or to treat a helicobacter infection that is giving rise to incipient ulcers or many other bacterial diseases.</p>
+<p>But as I have already told you and as you have already seen from the evolutionary tree that we looked at earlier, malaria parasites are not bacteria. One might therefore be surprised that these antibacterial antibiotics, which after all kill bacteria but not eukaryotes such as humans, for malaria parasites these antibiotics would kill malarial parasites but indeed they do and by a very peculiar means that I don’t have time to go into but which you are welcome to look at in the references sited.</p>
+<h4> <span class="mw-headline" id="Mysterious_Episomal_DNA">Mysterious Episomal DNA</span></h4>
+<ul>
+<li>[0:20:23][Slide 14]</li>
+</ul>
+<p>Through a long series of studies, we and others identified the only plausible target for these antibiotics as a previously mysterious episomal (that is to say, non-chromosomal) DNA in toxoplasma and plasmodium parasites.</p>
+<p>This DNA was not shown on the 14 chromosomes that I showed you earlier from the plasmodium parasites. It is a small 35k nucleotide circular DNA that was originally assumed to be the mitochondrial genome of these parasites. But when the true mitochondrial genome was discovered that left this episomal DNA as something as a molecular biological mystery, a DNA without a home or without any function.</p>
+<p>But because the ribosomal genes encoded on this circular DNA our plausible targets for macrolide antibiotics, lincosamide antibiotics, such as the clindamycin and the azithromycin, and chloramphenicol that I showed you before which might be expected to target the protein synthesis on the large subunit ribosomal RNA. We were interested in exploring whether this might prove to indeed be the target for such antibiotics in these parasites.</p>
+<p>Having identified this as a target for these antibiotics made it much more than a molecular biological mystery and a mystery that was important to try to define whose function would be important to define. We can use the genes encoded by this genome, not only the ribosomal genes but the genes predicted to encode ribosomal proteins indicated over in this region. Or genes such as elongation factor Tu which is very well conserved across evolution to try to identify the origin of this mysterious episomal DNA.</p>
+<h4> <span class="mw-headline" id="Episomal_DNA_with_a_Peculiar_History">Episomal DNA with a Peculiar History</span></h4>
+<ul>
+<li>[0:22:45][Slide 15]</li>
+</ul>
+<p>The molecular phylogeny, the evolutionary tree indicated at right, gives us an answer to this question. It tells us first and foremost that the phylogeny of this episomal DNA in plasmodium is closely related to toxoplasma and eimeria, another veterinary pathogen of importance in the poultry industry.</p>
+<p>It tells us that it bears indeed no similarity to mitochondrial genomes which are in fact of bacterial origin as we know from many studies over the years. It tells us in fact that they are much more closely related to the genomes of cyanobacteria, the ancestor of chloroplasts in plants and algae.</p>
+<p>What was really quite a surprise was that in fact the apicomplexan plastid—or apicoplast as it has come to be known—emerges not as an independent colonization from a cyanobacterial or other bacterial ancestor but grows out of the tree from the plants and algae themselves.</p>
+<p>If we look at the diagram of an evolutionary tree over at left which symbolizes much of what we know about eukaryotic evolution. We know that mitochondria arose by an endosymbiotic colonization when an ancestral alphaproteobacterium invaded the ancestor of all eukaryotes, although some eukaryotes such as the pathogen giardia has subsequently has lost their mitochondrial genome.</p>
+<p>We know that the origins of chloroplasts arose when a cyanobacterial ancestor colonized the ancestor of all plants and algae. But the placement of plasmodium in this tree emerging as we see in the tree at right from the plant and algal clade argues for a secondary endosymbiotic process. That is to say the ancestor of these parasites was invaded by or ate—depending on your perspective—a eukaryotic alga which had previously acquired its plastid by that primary endosymbiotic transfer from a cyanobacterium.</p>
+<h4> <span class="mw-headline" id="Endosymbiotic_Process">Endosymbiotic Process</span></h4>
+<ul>
+<li>[0:25:19][Slide 16]</li>
+</ul>
+<p>It is a little bit confusing. Here is a cartoon diagram illustrating the same process. The origin of the chloroplast when an ancestral eukaryote—with its nucleus indicated here—ate or was invaded by a cyanobacterium giving rise to the chloroplast surrounded by a double membrane.</p>
+<p>In pink along comes the ancestor of these parasites or an ancestor of these parasites which ate a eukaryotic alga retaining the algal plastid which we might expect would be surrounded by a complicated membranous structure.</p>
+<p>If this were the case we ought to be able to see that organelle and indeed we can—shown here, not in plasmodium parasites, but in toxoplasma parasites, which are a more experimentally accessible organism, certainly exhibiting better ultrastructure. We can see in this fortuitous electron microscopic section an image that identifies an organelle distinct from the parasite mitochondrial nucleus or other intercellular organelles, such as the Golgi apparatus. </p>
+<h4> <span class="mw-headline" id="Plasmodium_Organelles">Plasmodium Organelles</span></h4>
+<ul>
+<li>[0:26:28][Slide 17]</li>
+</ul>
+<p>In situ hybridization experiments have labeled this organelle as the definitive home for the apicoplast genome. Here in plasmodium parasites the nucleus indicated in yellow, the Golgi apparatus indicated in purple, the specialized secretory organelles that this parasite uses for invasion—this particular one known as the rhoptries—the mitochondria indicated in red, and the apicoplast indicated in green of this plasmodium knowlesi parasite.</p>
+<h4> <span class="mw-headline" id="What_Does_the_Apicoplast_Do.3F">What Does the Apicoplast Do?</span></h4>
+<ul>
+<li>[0:27:12][Slide 18]</li>
+</ul>
+<p>The big question of course is, what is it that the apicoplast does? Here is another electron micrograph of toxoplasma we can see the apicoplast. This is now not just a molecular biological curiosity or a cell biological curiosity or a pharmacological curiosity but a validated therapeutic target, the target for chloramphenicol or clindamycin which used clinically to treat toxoplasmosis. </p>
+<p>If we could identify what this organelle does, we can perhaps identify new drugs to deal with the growing problem of malaria and the emergence of resistance to existing drugs.</p>
+<h4> <span class="mw-headline" id="Apicoplast_Metabolic_Functions">Apicoplast Metabolic Functions</span></h4>
+<ul>
+<li>[0:27:58][Slide 19]</li>
+</ul>
+<p>Here unfortunately the apicoplast genome which was so informative from the standpoint of understanding the location and replication of this apicoplast genome, transcription into RNA and translation into proteins, the metabolic functions are essentially a mystery. </p>
+<p>There is no clue from the apicoplast genome. That is presumably because most of the functions of this organelle, as indeed most of the functions of the chloroplasts in plants or the mitochondria in most eukaryotic cells, are encoded in the nucleus and post-translationally imported into the organelle.</p>
+<p>How can we identify what those functions might be? To answer this question we turn to the parasite genome.</p>
+<h4> <span class="mw-headline" id="Protein_Identification">Protein Identification</span></h4>
+<ul>
+<li>[0:28:57][Slide 20]</li>
+</ul>
+<p>Initially random cDNA sequences, expressed sequence tags or ESTs, from the toxoplasma and plasmodium genome and as genome sequences emerged over the past decade or more, the genome sequences of these parasites themselves. We could look in those genomes, for example, for ribosomal proteins necessary for function but which were not encoded by the ribosomal protein genes of the apicoplast genome as indicated in yellow.</p>
+<p>Here we can identify some proteins such as ribosomal small subunit protein S9 without which you cannot make a functional ribosome or the large subunit protein 28 and antibodies to these proteins identified proteins on Western blots from toxoplasma and plasmodium parasites. </p>
+<p>What’s more, those proteins in the genome were predicted to contain a long N-terminal extension which one might imagine would be involved in targeting to the organelle. On Western blots they could be identified as having what looked like both precursor and mature forms of those proteins. This is from work largely done by Ross Waller and Jeff McFadden’s lab at the University of Melbourne.</p>
+<h4> <span class="mw-headline" id="Candidate_Proteins_.E2.80.93_Toxoplasma_gondii">Candidate Proteins – Toxoplasma gondii</span></h4>
+<ul>
+<li>[0:30:20][Slide 21]</li>
+</ul>
+<p>We can use those antibodies to identify the apicoplast itself. In toxoplasma parasites we can see that indeed immunofluorescence staining labels the apicoplast organelle distinct from the nucleus, shown in red in these images. By electron microscopy we can once again see the apicoplast as distinct from the mitochondrion or the nucleus of these parasites.</p>
+<h4> <span class="mw-headline" id="Candidate_Proteins_.E2.80.93_Plasmodium_falciparum">Candidate Proteins – Plasmodium falciparum</span></h4>
+<ul>
+<li>[0:30:47][Slide 22]</li>
+</ul>
+<p>Similarly in plasmodium by labeling with a fluorescent protein reporter we can see the parasite as it transits from those ring stage parasites to the trophozoites and on to schizont stage parasites that now must assemble multiple daughters within the infected red blood cell using in this bizarre snake-like structure before assembling here sixteen daughter merozoites that will burst out of the parasite leaving behind that crystalline hemazoin as they go on to infect new red blood cells.</p>
+<h4> <span class="mw-headline" id="Fine_Mapping_of_Apicoplast_Targeting_Signals">Fine Mapping of Apicoplast Targeting Signals</span></h4>
+<ul>
+<li>[0:31:24][Slide 23]</li>
+</ul>
+<p>Because we now know that this long N-terminal extension is likely to mediate targeting to the apicoplast, we can test that hypothesis by truncating that N-terminal extension, removing that N-terminal extension and fusing it to a fluorescent protein reporter such as GFP and following that targeting to the apicoplast.</p>
+<p>Here in work carried out in my laboratory by Boris Striepen and later Omar Harb we can see this targeting signal indicated (in this case in blue and green) it properly targets a fluorescent protein into the apicoplast.</p>
+<p>When we remove one piece of it, when we truncate part of that protein we see that in fact the protein remains within the parasites. When we truncate other parts of the protein we see that they are secreted outside of the parasites. We can use these proteins to do more extensive cut-and-paste molecular genetics to distinguish between the parts of the targeting signal that are responsible for trafficking to the membrane or into the lumen of the apicoplast.</p>
+<h4> <span class="mw-headline" id="Bipartite_Apicoplast_Targeting_Signal">Bipartite Apicoplast Targeting Signal</span></h4>
+<ul>
+<li>[0:32:43][Slide 24]</li>
+</ul>
+<p>In summary we now know that targeting to the apicoplast involves a remarkable bipartite targeting signal (a pink bit here) which mediates co-translation translocation across the endoplasmic reticulum membrane where upon signal peptidase cleaves that signal sequence exposing the yellow bit which is in fact a chloroplast targeting domain betraying the plastid ancestry of this organelle. </p>
+<p>That yellow bit now mediates translocation across the remaining membranes into the apicoplast where upon a plastid processing protease removes the yellow bit to leave the mature protein that remains within that organelle.</p>
+<h4> <span class="mw-headline" id="Question_Set_2:_Discovery_of_the_Apicoplast">Question Set 2: Discovery of the Apicoplast</span></h4>
+<ul>
+<li>[0:33:30][Slide 25]</li>
+</ul>
+<p>That brings us to the second set of questions for this lecture.</p>
+<h6> <span class="mw-headline" id="Question_2.1:">Question 2.1:</span></h6>
+<p>It is surprising that drugs like clindamycin kill malaria parasites because…
+a) Plasmodium is a plant
+b) These drugs are antifungal agents
+c) These drugs are antibacterial agents
+d) These drugs do not enter into the red blood cells
+e) Malarial parasites are resistant to known drugs</p>
+<h6> <span class="mw-headline" id="Question_2.2:">Question 2.2:</span></h6>
+<ul>
+<li>[0:34:07][Slide 26]</li>
+</ul>
+<p>Why does the phylogeny of apicoplast genes suggest secondary endosymbiosis?
+a) They are related to mitochondria
+b) They are related to toxoplasma
+c) They branch off the evolutionary tree from the algal lineage
+d) They branch off the evolutionary tree from the cyanobacterial lineage
+e) They are unrelated to anything else we know about</p>
+<h6> <span class="mw-headline" id="Question_2.3:">Question 2.3:</span></h6>
+<ul>
+<li>[0:34:48][Slide 27]</li>
+</ul>
+<p>What does the apicoplast genome encode?
+a) Machinery for RNA transcription
+b) Enzymes for protein translation
+c) Metabolic enzymes
+d) Two of the above
+e) All of the above</p>
+<h6> <span class="mw-headline" id="Question_2.4:_Short_Essay_Question">Question 2.4: Short Essay Question</span></h6>
+<ul>
+<li>[0:35:12][Slide 28]</li>
+</ul>
+<p>How does the distinctive bipartite apicoplast targeting signal mediate trafficking of nuclear-encoded proteins into this organelle?</p>
+<p>I will give you a few moments to think about that and we will move on to the third part of this lecture which will be in a different file to download in the interest of saving bandwidth.</p>
+<ul>
+<li>[0:35:49] END</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Genomescience:Plasmodium_Genomics_I&amp;oldid=6221">https://share.coursera.org/wiki/index.php?title=Genomescience:Plasmodium_Genomics_I&amp;oldid=6221</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

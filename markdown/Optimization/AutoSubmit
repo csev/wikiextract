@@ -1,0 +1,22 @@
+# Auto submit
+
+The provided `submit.pyc` script does not store login and password, but luckily it reads those data from `stdin`. This makes such additional script possible — create `credentials` file with your login (1 line) and password (2 line). Save the following script as `autosubmit`:
+
+    #!/bin/sh
+    
+    if [ ! -e credentials ]
+    then
+      echo No credentials found.
+      exit 1
+    fi
+    
+    for TASK in $@
+    do
+      ( cat credentials ; echo $TASK ) | python submit.pyc
+    done
+
+Now run the `autosubmit` with task numbers given directly in command line, for example:
+
+    autosubmit 1 3
+
+This will run `submit.pyc` for task (**task**, not project) 1 and 3.

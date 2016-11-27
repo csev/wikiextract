@@ -1,0 +1,174 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 5: 3.3 Cost Curves
+
+To illustrate the different [Cost Curves][] the hypothetical example give us the following data:
+
+<table border="1">
+  <tr>
+    <td># of Cooks</td>
+    <td># of Sandwiches</td>
+    <td>Marginal Product</td>
+    <td>Fixed Costs</td>
+    <td>Variable Costs</td>
+    <td>Total Costs</td>
+    <td>Marginal Costs</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>$100</td>
+    <td>$0</td>
+    <td>$100</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>40</td>
+    <td>40</td>
+    <td>$100</td>
+    <td>$80</td>
+    <td>$180</td>
+    <td>$2.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>90</td>
+    <td>50</td>
+    <td>$100</td>
+    <td>$160</td>
+    <td>$260</td>
+    <td>$1.60</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>120</td>
+    <td>30</td>
+    <td>$100</td>
+    <td>$240</td>
+    <td>$340</td>
+    <td>$2.70</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>135</td>
+    <td>15</td>
+    <td>$100</td>
+    <td>$320</td>
+    <td>$420</td>
+    <td>$5.30</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>140</td>
+    <td>5</td>
+    <td>$100</td>
+    <td>$400</td>
+    <td>$500</td>
+    <td>$16.00</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>142</td>
+    <td>2</td>
+    <td>$100</td>
+    <td>$480</td>
+    <td>$580</td>
+    <td>$40.00</td>
+  </tr>
+</table>
+
+<br />
+
+<table border="1">
+  <tr>
+    <td># of Cooks</td>
+    <td># of Sandwiches</td>
+    <td><p>Average FC</p>
+    <p>FC/Q</p></td>
+    <td><p>Average VC</p>
+    <p>VC/Q</p></td>
+    <td><p>Average TC</p>
+    <p>TC/Q</p></td>
+    <td><p>Marginal Costs</p>
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>40</td>
+    <td>$2.50</td>
+    <td>$2.00</td>
+    <td>$4.50</td>
+    <td>$2.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>90</td>
+    <td>$1.11</td>
+    <td>$1.78</td>
+    <td>$2.89</td>
+    <td>$1.60</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>120</td>
+    <td>$0.83</td>
+    <td>$2.00</td>
+    <td>$2.83</td>
+    <td>$2.70</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>135</td>
+    <td>$0.74</td>
+    <td>$2.37</td>
+    <td>$3.11</td>
+    <td>$5.30</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>140</td>
+    <td>$0.71</td>
+    <td>$2.86</td>
+    <td>$3.57</td>
+    <td>$16.00</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>142</td>
+    <td>$0.70</td>
+    <td>$3.38</td>
+    <td>$4.08</td>
+    <td>$40.00</td>
+  </tr>
+</table>
+
+The **[Average Fixed Cost][] Curve** is a L-shape curve because the *Fixed Costs* are **fixed** then the AFC **decrease** when the *Quantity of Output* **increase**. This has an important application in the study of [natural monopolies][]. 
+
+The **[Average Variable Cost][] Curve** is a J-shape curve because the *[diminishing marginal product]*. The marginal cost increases with the quantity produced. When a **small amount** is produced, *few workers* are involved, and much of the *equipment is not used*. Because you can easily put these *idle resources to use*, the marginal product of *an additional worker* is **large**, and the marginal cost of *an additional output* is **small**. By contrast, when a **large amount** is produced, the *space is filled with workers*, and most of the *equipment is fully utilized*. It can produce more by*(adding workers*, but these new workers have to work in crowed conditions and may have to wait to use the equipment. Therefore, when the *amount produced is already high*, the marginal product of *an additional worker* is **low**, and the marginal cost of *an extra output* is **large**.
+
+The **[Average Total Cost][] Curve** is a U-shape curve because [Average Fixed Cost][] always declines as output rises because the fixed cost is spread over a larger number of units and [Average Variable Cost][] typically rises as output increases because of [diminishing marginal product][].
+
+The **lowest point of the average total cost** is the most efficient point to perform the production. Sometimes this is called, **[efficient scale][]** because is the quantity of output that minimizes average total cost. The [Marginal Cost][] Curve intersect the [Average Total Cost][] Curve precisely at that point. Whenever [Marginal Cost][] is **less than** [Average Total Cost][], [Average Total Cost][] is **falling**. Whenever [Marginal Cost][] is **greater than** [Average Total Cost][], [Average Total Cost][] is **rising**. At low levels of production, the [Marginal Cost][] is *below* [Average Total Cost][], so [Average Total Cost][] is **falling**. But after the two curves cross, [Marginal Cost][]  increases *above* the [Average Total Cost][]. For the reason just discussed,  [Average Total Cost][] should begin to *rise* to that level of production. Therefore, this point of intersection is
+the **minimum average total cost**.
+
+
+[Cost Curves]: http://en.wikipedia.org/wiki/Cost_curve
+[Average Fixed Cost]: http://en.wikipedia.org/wiki/Average_fixed_cost
+[natural monopolies]: http://en.wikipedia.org/wiki/Natural_monopoly
+[Average Variable Cost]: http://en.wikipedia.org/wiki/Average_variable_cost
+[diminishing marginal product]: http://en.wikipedia.org/wiki/Diminishing_returns
+[efficient scale]: http://en.wikipedia.org/wiki/Minimum_efficient_scale
+[Average Total Cost]: http://en.wikipedia.org/wiki/Average_total_cost
+[Marginal Cost]: http://en.wikipedia.org/wiki/Marginal_cost

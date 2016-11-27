@@ -1,0 +1,79 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Scientificcomp:GraderNumericalErrors</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Known_Assignment_and_Quiz_Grader_Numerical_Errors:"><span class="tocnumber">1</span> <span class="toctext">Known Assignment and Quiz Grader Numerical Errors:</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Quiz_2"><span class="tocnumber">1.1</span> <span class="toctext">Quiz 2</span></a></li>
+<li class="toclevel-2"><a href="#Quiz_3"><span class="tocnumber">1.2</span> <span class="toctext">Quiz 3</span></a></li>
+<li class="toclevel-2"><a href="#Quiz_6"><span class="tocnumber">1.3</span> <span class="toctext">Quiz 6</span></a></li>
+<li class="toclevel-2"><a href="#Quiz_8"><span class="tocnumber">1.4</span> <span class="toctext">Quiz 8</span></a></li>
+<li class="toclevel-2"><a href="#Quiz_10"><span class="tocnumber">1.5</span> <span class="toctext">Quiz 10</span></a></li>
+<li class="toclevel-2"><a href="#Quiz_11"><span class="tocnumber">1.6</span> <span class="toctext">Quiz 11</span></a></li>
+<li class="toclevel-2"><a href="#Homework_2"><span class="tocnumber">1.7</span> <span class="toctext">Homework 2</span></a></li>
+<li class="toclevel-2"><a href="#Homework_4"><span class="tocnumber">1.8</span> <span class="toctext">Homework 4</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Known_Assignment_and_Quiz_Grader_Numerical_Errors:">Known Assignment and Quiz Grader Numerical Errors:</span></h1>
+<h2> <span class="mw-headline" id="Quiz_2">Quiz 2</span></h2>
+<ul>
+<li>Q11 — assume t=0 as starting point for iteration (not stated in the problem)</li>
+<li>Q12 — assume t=0 as starting point for iteration (not stated in the problem)</li>
+</ul>
+<h2> <span class="mw-headline" id="Quiz_3">Quiz 3</span></h2>
+<ul>
+<li>Q4 — assume c1 = 0 and c2 = 1 (not stated in the problem) </li>
+<li>Q5 — assume c1 = 0 and c2 = 1 (not stated in the problem)  </li>
+<li>Q6 — + 0.1 to the correctly rounded answer for no apparent reason.</li>
+</ul>
+<h2> <span class="mw-headline" id="Quiz_6">Quiz 6</span></h2>
+<ul>
+<li>Q3 — assume the range is [0,1] not [-1,1] as in the description.</li>
+</ul>
+<h2> <span class="mw-headline" id="Quiz_8">Quiz 8</span></h2>
+<ul>
+<li>Q3 — assume $$\delta^2=1$$.</li>
+</ul>
+<h2> <span class="mw-headline" id="Quiz_10">Quiz 10</span></h2>
+<p>All iterations start at 1, example 1-9 == 8 iterations</p>
+<h2> <span class="mw-headline" id="Quiz_11">Quiz 11</span></h2>
+<ul>
+<li><p>Q3 — correct operation count for FFT would use log base 2 since you split the problem
+into a binary tree with FFT, grader expects natural log (also rounded down instead of up??!), 
+I believe because matlab uses natural log by default but this is an error.
+(Technically, O() ignores constant factors, and there are plenty of factors in the FFT operation count. The unit operation has a complex multiply, complex add, and complex subtract. Does that count as ten or one or some other number?)</p></li>
+<li><p>Q4 — correct answer requires $$f\prime(x)$$ = (-i<em>k)^n</em>f(x) not (i<em>k)^n</em>f(x) like in the lectures.</p></li>
+</ul>
+<h2> <span class="mw-headline" id="Homework_2">Homework 2</span></h2>
+<ul>
+<li>B — do not actually use the same shooting method for Beta, it does not pass the grader.<br />
+hard code eps_n =1</li>
+<li>BQA — solution correct with either method</li>
+<li>BQB — off +/-&#160;??</li>
+<li>BQC — solution correct with either method</li>
+<li>BQD — off +/-&#160;??</li>
+</ul>
+<h2> <span class="mw-headline" id="Homework_4">Homework 4</span></h2>
+<p>Equation 4 of faqHW4.pdf should be $$\omega&#95;t = \nu A\omega - B\psi C\omega +C\psi B\omega$$, i.e. the Laplacian matrix $$A$$ is applied to $$\omega$$ not $$\psi$$.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Scientificcomp:GraderNumericalErrors&amp;oldid=18968">https://share.coursera.org/wiki/index.php?title=Scientificcomp:GraderNumericalErrors&amp;oldid=18968</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

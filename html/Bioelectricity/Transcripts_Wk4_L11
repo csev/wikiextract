@@ -1,0 +1,27 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Wk4 L11</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_4_Lecture_11:_4-11_Problem_Session:_a_vm_step">Week 4 Lecture 11: 4-11 Problem Session: a vm step</span></h1>
+<p>So, hello again. This is Roger Coke Barr for the Bioelectricity course. This is Week four, segment number eleven. And, I thought it would be good here to have a bit of a problem session. Suppose we consider this question. We begin with the standard conditions, the tissue is active. At the moment, the state variables are those of set one, so there is no stimulus.</p>
+<p>Here are our questions. What is Vm after one time step if each time step is 50 marker seconds? What are n, m, and h after one time step? And then, what is Vm after two time steps? Question A, this is very similar to the question, may be the same as the question asked in the previous problem session. So, I'm sure you can work it out and get Vm1, so go ahead please and read that back or get it again and write down what Vm1 is equal to. N, m, and h were not done before, but a earlier lecture outlined the algorithm. Follow those steps and get n1, m1, and h1. You will have to evaluate the alphas and betas, all six of them, in order to get dN / dt, dM / dt, and dH/dt. Now, here's the tricky part of this question. What is Vm after two time steps? So, it is tempting, very tempting to just do the force calculation again. So, I write down, do part A again with a question mark. And the answer is, well, no. Not quite. So, I'll make a note, not quite. To go from Vm1 to Vm2, go from Vm1. To Vm2. You need use n1, n1, and h1. That is to say, not the original values of n, m and h, but the new values of n, m, and h. And if you do that, you should be able to get it just fine. Let me say another word here just about the synchronization of all these calculiza, calculations. You will find, I believe that if you start off with Vm, start off with Vm, n, m, and h, and use this set of values to get Vm1. And use start with these values, get Vm1. Start with these same values, get n1, m1, and h1. Your life will work out a lot better than if you do the following algorithm starting with Vm, n, m, and h to get Vm1, and then use Vm1 to get n1, m1, h1. Because if you start with these original values, get a new Vm, then you might use that new Vm to get new values for n, m, and h. 
+So, I'm suggesting to you that you not do that, because if you do, you'll get very confused. This is just what comes from what. Your program will have errors in it or calculations will have errors in it. You'll get all confused in trying to figure out what came from what. Just keep it simple. Let everything new come from the set, drom this set.
+Don't intermix changes in one thing with changes in the other. I think you'll find that works out a whole lot better in the long term. Thank you for watching. I'll see you in the next week's work.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L11&amp;oldid=8422">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L11&amp;oldid=8422</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

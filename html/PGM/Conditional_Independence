@@ -1,0 +1,122 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Conditional Independence</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Independence"><span class="tocnumber">1</span> <span class="toctext">Independence</span></a></li>
+<li class="toclevel-1"><a href="#Conditional_Independence"><span class="tocnumber">2</span> <span class="toctext">Conditional Independence</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Fair_Coin_Toss_Example"><span class="tocnumber">2.1</span> <span class="toctext">Fair Coin Toss Example</span></a></li>
+<li class="toclevel-2"><a href="#Student_Example"><span class="tocnumber">2.2</span> <span class="toctext">Student Example</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Check_for_Independencies_from_Joint_Distribution_table"><span class="tocnumber">3</span> <span class="toctext">Check for Independencies from Joint Distribution table</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Video_Lecture_Table_of_Contents"><span class="tocnumber">3.1</span> <span class="toctext">Video Lecture Table of Contents</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Independence">Independence</span></h1>
+<p>Independence is defined as:</p>
+<p>Definition: For <i>events</i> $$\alpha$$ and $$\beta$$, $$\alpha$$ and $$\beta$$ are <b>independent</b> (a.k.a. <b>marginally independent</b>) if
+$$P(\alpha \cap \beta)=P(\alpha)&#42;P(\beta)$$.</p>
+<p>Notation:  We will use the notation $$P \models  \alpha \perp \beta $$ to indicate that $$\alpha$$ and $$\beta$$ are independent in the probability space defined by $$P$$.</p>
+<p>Theorem: 
+If $$P( \beta) \neq 0$$, then </p>
+<p>$$P(\alpha)=P(\alpha\mid \beta)$$</p>
+<p>if and only if $$\alpha$$ and $$\beta$$ are independent.  Similarly, if $$P( \alpha) \neq 0$$, then </p>
+<p>$$P(\beta)=P(\beta\mid \alpha)$$ if and only if $$\alpha$$ and $$\beta$$ are independent.</p>
+<p>Question: Must <b>all</b> these rules be satisfied, or just <b>one</b> is enough for independence?</p>
+<p>Answer: If $$P( \alpha)$$ and  $$P( \beta)$$ are non-zero, then when one of these rules is satisfied, the other two are also satisfied.  In fact, since 
+<ul><li>$$P(\alpha\mid \beta)= \Large \frac{P(\alpha \cap \beta)}{P(\beta)}$$
+</li></ul>
+the second and the third equation follow from the first one.</p>
+<p>Likewise, for random variables X, Y, P satisfies X indep of Y if</p>
+<ul>
+<li>P(X,Y) = P(X)P(Y)</li>
+<li>P(X|Y) = P(X)</li>
+<li>P(Y|X) = P(Y)</li>
+</ul>
+<p>Interpretation:
+"universal": for all x, y P(x,y) = P(x)P(y)
+"factors": events are factors of r.v.'s</p>
+<h1> <span class="mw-headline" id="Conditional_Independence">Conditional Independence</span></h1>
+<p>Analogous to independence </p>
+<p>For r.v.'s X,Y,Z</p>
+<p>P satisfies X indep Y given Z if
+<ul><li> P(X,Y|Z) = P(X|Z)P(Y|Z)
+</li><li> P(X|Y,Z) = P(X|Z)
+</li><li> P(Y|X,Z) = P(Y|Z)
+</li><li> P(X,Y,Z) proportional Psi(X,Z)Psi(Y,Z)</p>
+</li></ul>
+
+<p>Conversely, conditioning can lose independences.</p>
+<h2> <span class="mw-headline" id="Fair_Coin_Toss_Example">Fair Coin Toss Example</span></h2>
+<p>Q: Pick a coin, with a certain probability that its fair C and toss it twice. How does your first toss X1 affect your belief about your second toss X2?</p>
+<p>A: P does not satisfy X1 indep X2, but</p>
+<p>P satisfies X1 indep X2 | C</p>
+<h2> <span class="mw-headline" id="Student_Example">Student Example</span></h2>
+<p>Distribution P(I,S,G).</p>
+<p>Q: Look at $$P(S,G|i&#95;0)$$. Does it satisfy S indep G when we look at $$P(S|i&#95;0)$$, $$P(G|i&#95;0)$$? </p>
+<p>A: Nope need to look at all i_i as well.</p>
+<h1> <span class="mw-headline" id="Check_for_Independencies_from_Joint_Distribution_table">Check for Independencies from Joint Distribution table</span></h1>
+<p>Consider the following Joint Distribution tables of random variables I and D:</p>
+<p>$$ Table&#95;1 = \begin{array}{|c|c|}
+ I &amp; D &amp; Probability &#92;\ \hline
+i^0 &amp; d^0 &amp; 0.42 &#92;\ \hline
+i^0 &amp; d^1 &amp; 0.18 &#92;\ \hline
+i^1 &amp; d^0 &amp; 0.28 &#92;\ \hline
+i^1 &amp; d^1 &amp; 0.12 &#92;\ \hline
+\end{array}$$</p>
+<p>$$ Table&#95;1 = \begin{array}{|c|c|}
+ I &amp; D &amp; Probability &#92;\ \hline
+i^0 &amp; d^0 &amp; 0.282&#92;\ \hline
+i^0 &amp; d^1 &amp; 0.02 &#92;\ \hline
+i^1 &amp; d^0 &amp; 0.564 &#92;\ \hline
+i^1 &amp; d^1 &amp; 0.134 &#92;\ \hline
+\end{array}$$</p>
+<p>We check for $$Table&#95;1$$. First we marginalize over $$i$$ and $$d$$:</p>
+<p>$$ I&#95;{table&#95;1} = \begin{array}{|c|c|}
+ I  &amp; Probability &#92;\ \hline
+i^0 &amp; 0.42 + 0.18 = 0.6 &#92;\ \hline
+i^1 &amp; 1 - 0.6 = 0.4 &#92;\ \hline
+\end{array}$$</p>
+<p>and</p>
+<p>$$ D&#95;{table&#95;1} = \begin{array}{|c|c|}
+ D  &amp; Probability &#92;\ \hline
+d^0 &amp; 0.42 + 0.28 = 0.7 &#92;\ \hline
+d^1 &amp; 1 - 0.7 = 0.3 &#92;\ \hline
+\end{array}$$</p>
+<p>Now we can check whether $$P(I,D) = P(I)\cdot P(D)$$ for the different values of I and D. For example from Table-1 we have that $$P(i^0,d^1) = 0.18$$ and from the two new tables we get $$P(i^0)\cdot P(d^1) = 0.6 \cdot 0.3 =0.18$$.</p>
+<p>By checking for the other values we see that for Table-1: $$P \models I \perp D$$. If we do the same for Table-2 we see that $$P \not\models I \perp D$$.</p>
+<p>More at: <a rel="nofollow" class="external text" href="https://class.coursera.org/pgm/forum/thread?thread_id=152">Independencies in Bayesian Networks I-Maps slide 11:00</a></p>
+<h2> <span class="mw-headline" id="Video_Lecture_Table_of_Contents">Video Lecture Table of Contents</span></h2>
+<p><pre>
+0:00    Independencies
+0:45    Definition of independence
+4:03    Example of independence
+5:25    Conditional independence
+8:25    Conditional independence: example
+10:25   Conditional independence: example 2
+11:33   Conditioning can lose independences
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Conditional_Independence&amp;oldid=2530">https://share.coursera.org/wiki/index.php?title=PGM:Conditional_Independence&amp;oldid=2530</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

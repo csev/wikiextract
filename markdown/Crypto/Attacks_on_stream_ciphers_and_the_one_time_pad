@@ -1,0 +1,43 @@
+### Attack 1: **two time** pad is insecure!
+
+Never use stream cipher key more than once
+
+If the OTP is used to encrypt more than one message, then security goes out the window and an eavesdropper can completely decrypt the cipher text.
+
+$$ C_1 \leftarrow m_1 \oplus PRG(k)$$  
+$$ C_2 \leftarrow m_2 \oplus PRG(k)$$
+
+$$ C_1 \oplus C_2 \rightarrow m_1 \oplus m_2 $$
+
+English has already enough redundancy that this would help to decrypt the messages. If the text is encoded in ASCII, ASCII has enough redundancy to recover the encoded messages.
+
+$$ m_1 \oplus m_2 \rightarrow m_1,m_2 $$
+
+### Real world examples
+
+* [Project Venona (1941-1946)](https://en.wikipedia.org/wiki/Venona_project)
+* MS-PPTP (Windows NT)
+* 802.11b WEP
+
+### Attack 2: no integrity (OTP is [malleable](http://en.wikipedia.org/wiki/Malleability_(cryptography)))
+
+$$ m \xrightarrow{enc(\oplus k)} m\oplus k $$
+
+An active attacker could now modify the cipher text by xor with a pad p
+
+$$ ((m \oplus k)\oplus p) \xrightarrow{dec(\oplus k)} m\oplus p $$
+
+Modifications to the cipher text are undetected and have a **predictable** impact on the plaintext.
+
+$$ From:Bob \xrightarrow{enc(\oplus k)} \mathfrak{From:Bob} $$
+
+All the attacker knows is, that this message is from Bob (and maybe some minor details about the mail protocols header structure). He can now modify the cipher text so that it looks like it comes from somebody else (Eve). All he needs to to is to xor the cipher text with a set of three characters.
+
+$$ \mathfrak{From:Eve} \xrightarrow{dec(\oplus k)} From:Eve $$
+
+What are those three characters?
+
+* Bob in ASCII(hex): x42 x6F x62
+* Eve in ASCII(hex): x45 x76 x65
+
+* Bob $$\oplus$$ Eve: x07 x19 x07 and these are the three chars we would use to xor the cipher text

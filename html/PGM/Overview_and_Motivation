@@ -1,0 +1,60 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Overview and Motivation</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Motivation"><span class="tocnumber">1</span> <span class="toctext">Motivation</span></a></li>
+<li class="toclevel-1"><a href="#Probabilistic_Graphical_Models"><span class="tocnumber">2</span> <span class="toctext">Probabilistic Graphical Models</span></a></li>
+<li class="toclevel-1"><a href="#Overview"><span class="tocnumber">3</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lecture_Table_of_Contents"><span class="tocnumber">3.1</span> <span class="toctext">Lecture Table of Contents</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Motivation">Motivation</span></h2>
+<p>Uncertainty is present everywhere in life. When you flip a coin to determine who wins a bet, or choose a specific road because you think it's the fastest way to reach your destination, you're experiencing an event where you don't know the specific outcome. In the case of the road maybe you know that at some times of day it's better to take road 'A' because the traffic is lighter, but one day road 'A' turns out to be a bad decision because there's a big traffic jam. Does that mean that you should avoid road 'A' from now on? Or is there some relation between the date and the traffic? It's useful to be able to analyze this kind of event, and for that we can use Probability Theory, which is the branch of mathematics concerned with the analysis of random phenomena.</p>
+<p>In many random events, the outcome depends on a large number of different factors. Taking an example discussed in the video "Overview and Motivation", consider a doctor who is faced with a patient. The doctor has a fair amount of information at her disposal when she looks at the patient. Predisposing factors, symptoms, the results of various tests. And, from that, the doctor is supposed to figure out what diseases the patient might have, and what the response to different treatments might be. This is a perfect example where one can see that the presence of some factors can greatly affect how likely an outcome is. At first it's really difficult to know  what kind of diseases the patient might have without the extra information, but if for example the patient sneezes, then with only this information the doctor can start to think that the patient might just have a cold. In problems like this Probabilistic Graphical Models can be applied.</p>
+<h2> <span class="mw-headline" id="Probabilistic_Graphical_Models">Probabilistic Graphical Models</span></h2>
+<h2> <span class="mw-headline" id="Overview">Overview</span></h2>
+<h3> <span class="mw-headline" id="Lecture_Table_of_Contents">Lecture Table of Contents</span></h3>
+<p><pre> 
+0:00    Introduction: Uses of PGMs
+1:43    Definition of a PGM
+1:57    &quot;Model&quot;
+3:20    &quot;Probabilistic&quot; - Uncertainty
+4:45    Probability Theory
+5:55    &quot;Graphical&quot; - Complex Systems
+8:20    Graphical Models - Bayesian networks
+9:56    Markov networks
+10:22   Actual bayesian network (CPCS)
+11:26   Graphical representation
+12:19   Many Applications
+12:43   Image Segmentation
+13:58   Medical Diagnosis
+14:35   Textual information extraction
+16:08   Multi-sensor integration (traffic)
+17:04   Biological network reconstruction
+17:41   Overview of the class (inference, representation, and learning)
+ </pre></p>
+<p><a href="/wiki/index.php/PGM" title="PGM" class="mw-redirect"> Return to Main Page </a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Overview_and_Motivation&amp;oldid=13633">https://share.coursera.org/wiki/index.php?title=PGM:Overview_and_Motivation&amp;oldid=13633</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Probabilistic_Graphical_Models" title="Category:Probabilistic Graphical Models">Probabilistic Graphical Models</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

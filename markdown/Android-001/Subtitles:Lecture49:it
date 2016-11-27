@@ -1,0 +1,1026 @@
+[[Category:Android:Subtitles|it]]
+
+###Threads, AsynTasks & Handlers - Part 2 - Italian subtitles
+
+* [[Android-001:Subtitles:Lecture47:it|<< prev]] | [[Android-001:Subtitles:Lecture49:en|en]] [[Android-001:Subtitles:Lecture49:es|es]] [[Android-001:Subtitles:Lecture49:it|it]] [[Android-001:Subtitles:Lecture49:zh-tw|zh-tw]] [[Android-001:Subtitles:Lecture49:pt|pt]] | [[Android-001:Subtitles:Lecture51:it|next >>]]
+
+* [Direct download](https://www.dropbox.com/s/baa9j77od45pdnv/5%20-%206%20-%20Threads%2C%20AsynTasks%20%26%20Handlers%20-%20Part%202%20%2816-25%29.srt)
+
+<pre>
+1
+00:00:00,128 --> 00:00:08,580
+[BLANK_AUDIO]
+
+2
+00:00:08,580 --> 00:00:11,685
+Ciao, mi chiamo Adam Porter
+ e questo è
+
+3
+00:00:11,685 --> 00:00:18,170
+Programmazione di applicazioni mobile
+per Sistemi palmari Android.
+
+4
+00:00:20,730 --> 00:00:27,240
+La prossima classe di supporto al threading
+di cui discuteremo è la classe AsyncTask.
+
+5
+00:00:27,240 --> 00:00:29,500
+Questa classe fornisce
+una struttura generale per
+
+6
+00:00:29,500 --> 00:00:33,580
+gestire le attività, che, come
+nei nostri esempi precedenti,
+
+7
+00:00:33,580 --> 00:00:39,140
+comporta un lavoro che deve essere condiviso tra un
+thread in background e il thread dell'interfaccia utente.
+
+8
+00:00:40,800 --> 00:00:44,930
+Il flusso di lavoro generale che si segue quando
+si esegue un AsyncTask (compito asincrono),
+
+9
+00:00:45,960 --> 00:00:51,410
+è che il lavoro è diviso tra un thread in
+background e il thread dell'interfaccia utente.
+
+10
+00:00:51,410 --> 00:00:53,820
+Il thread in background
+esegue le operazioni lunghe,
+
+11
+00:00:53,820 --> 00:00:57,950
+e opzionalmente può
+indicare il suo avanzamento.
+
+12
+00:00:59,100 --> 00:01:02,370
+Il thread UI invece,
+è responsabile
+
+13
+00:01:02,370 --> 00:01:06,470
+dell'impostazione iniziale
+delle operazioni lunghe.
+
+14
+00:01:06,470 --> 00:01:10,890
+E' responsabile della pubblicazione di
+informazioni di avanzamento intermedie,
+
+15
+00:01:10,890 --> 00:01:14,780
+se il thread in background ne
+segnala, ed è responsabile
+
+16
+00:01:14,780 --> 00:01:19,530
+del completamento delle operazioni dopo che il
+thread in background ha finito il suo lavoro.
+
+17
+00:01:21,510 --> 00:01:23,930
+AsyncTask è una classe generica.
+
+18
+00:01:23,930 --> 00:01:30,090
+Prende tre tipi di parametri,
+Params, Progress, e Result.
+
+19
+00:01:31,350 --> 00:01:37,758
+Params è il tipo dei parametri
+in input per AsyncTask.
+
+20
+00:01:37,758 --> 00:01:43,500
+Progress è il tipo di ogni report
+di avanzamento intermedio e
+
+21
+00:01:43,500 --> 00:01:47,000
+Result è il tipo del risultato che
+viene calcolato dall'AsyncTask.
+
+22
+00:01:48,980 --> 00:01:55,750
+Il flusso di lavoro di AsyncTask è il seguente:
+in primo luogo, il metodo onPreExecute()
+
+23
+00:01:55,750 --> 00:02:02,612
+viene eseguito nel thread UI prima
+che il metodo doInBackground inizi.
+
+24
+00:02:02,612 --> 00:02:06,680
+OnPreExecute solitamente imposterà
+le operazioni lunghe da eseguire.
+
+25
+00:02:07,810 --> 00:02:11,140
+Dopo di che, il metodo
+doInBackground fa il
+
+26
+00:02:11,140 --> 00:02:14,070
+grosso dell'operazione
+nel thread in background.
+
+27
+00:02:15,240 --> 00:02:17,810
+E questo metodo richiede un elenco
+variabile di parametri in ingresso
+
+28
+00:02:17,810 --> 00:02:21,770
+e restituisce un risultato
+di tipo Result.
+
+29
+00:02:22,808 --> 00:02:27,910
+Ora, mentre doInBackground è in
+esecuzione, può facoltativamente chiamare
+
+30
+00:02:27,910 --> 00:02:33,190
+il metodo publishProgress, passando
+un elenco variabile di valori che
+
+31
+00:02:33,190 --> 00:02:38,310
+presumibilmente fornisce indicazioni
+sul progresso delle operazioni lunghe.
+
+32
+00:02:39,860 --> 00:02:41,965
+Se il thread in background
+effettua chiamate a
+
+33
+00:02:41,965 --> 00:02:48,560
+publishProgress, allora nel thread UI
+vengono fatte normalmente alcune chiamate
+
+34
+00:02:48,560 --> 00:02:52,998
+a onProgressUpdate, finché il thread
+in background è ancora in esecuzione.
+
+35
+00:02:52,998 --> 00:02:59,520
+E infine, sarà chiamato
+onPostExecute nel thread UI
+
+36
+00:02:59,520 --> 00:03:04,130
+con il risultato restituito dal thread
+di background come suo parametro.
+
+37
+00:03:05,180 --> 00:03:07,030
+Diamo un'occhiata a una
+versione della nostra
+
+38
+00:03:07,030 --> 00:03:10,745
+applicazione di caricamento icona
+implementata con AsyncTask.
+
+39
+00:03:10,745 --> 00:03:17,604
+[BLANK_AUDIO]
+
+40
+00:03:17,604 --> 00:03:21,970
+Qui avvio l'applicazione
+ThreadAsyncTask.
+
+41
+00:03:21,970 --> 00:03:27,820
+È simile agli esempi precedenti, ma
+ho aggiunto un nuovo elemento UI,
+
+42
+00:03:27,820 --> 00:03:34,990
+una barra di avanzamento che rappresenta la
+parte di bitmap che è già stata caricata.
+
+43
+00:03:34,990 --> 00:03:39,170
+Così, qui io premo il
+pulsante Load Icon, e
+
+44
+00:03:39,170 --> 00:03:42,915
+possiamo vedere che una piccola
+barra di avanzamento è apparsa e
+
+45
+00:03:42,915 --> 00:03:44,290
+si sta lentamente riempiendo.
+
+46
+00:03:44,290 --> 00:03:47,405
+Io ora premo il pulsante
+Other Button e vediamo
+
+47
+00:03:47,405 --> 00:03:52,130
+che appare il consueto testo,
+e infine, c'è il bitmap.
+
+48
+00:03:53,345 --> 00:03:56,750
+Diamo un'occhiata al codice
+sorgente di questa applicazione.
+
+49
+00:03:56,750 --> 00:04:00,780
+Qui avviamo l'applicazione
+ThreadAsyncTask.
+
+50
+00:04:02,910 --> 00:04:04,670
+Ora aprirò il file
+dell'Activity principale.
+
+51
+00:04:06,840 --> 00:04:11,290
+E qui vediamo il  listener
+per il pulsante Load Icon.
+
+52
+00:04:12,410 --> 00:04:16,500
+Questo codice crea una nuova
+istanza del LoadIconTask().
+
+53
+00:04:16,500 --> 00:04:17,000
+E
+
+54
+00:04:19,380 --> 00:04:25,040
+poi chiama "execute" su di esso, passando
+l'ID della risorsa icona come parametro.
+
+55
+00:04:26,190 --> 00:04:30,176
+Quindi guardiamo la classe
+LoadIconTask più in dettaglio.
+
+56
+00:04:30,176 --> 00:04:36,570
+LoadIconTask è un AsyncTask
+e i suoi tipi di parametri
+
+57
+00:04:36,570 --> 00:04:43,230
+sono Integer per Params, Integer
+per Progress e Bitmap per Result.
+
+58
+00:04:44,630 --> 00:04:48,050
+Il primo metodo che
+vedremo è onPreExecute.
+
+59
+00:04:49,910 --> 00:04:53,220
+Questo metodo viene
+eseguito nel thread UI, e
+
+60
+00:04:53,220 --> 00:04:57,570
+il suo scopo è di rendere visibile una
+barra di avanzamento sul display.
+
+61
+00:04:59,080 --> 00:05:01,880
+Il metodo successivo
+è doInBackground.
+
+62
+00:05:03,200 --> 00:05:06,240
+Questo metodo riceve un
+intero come parametro.
+
+63
+00:05:07,750 --> 00:05:09,630
+Questo numero intero è
+
+64
+00:05:09,630 --> 00:05:15,694
+l'ID della risorsa per la bitmap che è stata passata
+al metodo execute() del LoadIconTask().
+
+65
+00:05:18,065 --> 00:05:21,460
+DoInBackground() fa il
+lavoro di caricamento della bitmap.
+
+66
+00:05:23,440 --> 00:05:28,270
+Come lo fa: chiama periodicamente
+publishProgress, passando un
+
+67
+00:05:28,270 --> 00:05:33,520
+Integer che rappresenta la percentuale
+del carico che è stato fatto finora.
+
+68
+00:05:33,520 --> 00:05:39,880
+Di nuovo, questo esempio è un po' artificioso
+nella speranza di mantenere le cose semplici.
+
+69
+00:05:39,880 --> 00:05:43,220
+L'esempio avrebbe potuto essere
+un po' più realistico però,
+
+70
+00:05:43,220 --> 00:05:44,790
+se avessimo scaricato
+un'immagine da
+
+71
+00:05:44,790 --> 00:05:47,720
+Internet, o se avessimo
+aspettato il risultato
+
+72
+00:05:47,720 --> 00:05:50,860
+da una query di database, ma
+spero che questo dia ugualmente
+
+73
+00:05:50,860 --> 00:05:54,220
+il senso di come funzioni
+un AsyncTask.
+
+74
+00:05:57,120 --> 00:05:59,635
+Il metodo successivo
+è onProgressUpdate.
+
+75
+00:06:00,760 --> 00:06:06,585
+Questo metodo viene eseguito nel thread UI,
+riceve il numero intero che gli viene passato in
+
+76
+00:06:06,585 --> 00:06:11,220
+publishProgress, e poi imposta
+la barra di avanzamento
+
+77
+00:06:11,220 --> 00:06:13,850
+che riflette la percentuale
+di lavoro svolto.
+
+78
+00:06:15,220 --> 00:06:20,260
+Infine, l'ultimo metodo
+è onPostExecute.
+
+79
+00:06:20,260 --> 00:06:22,200
+Questo metodo, di nuovo,
+viene eseguito nel
+
+80
+00:06:22,200 --> 00:06:27,310
+Thread dell'interfaccia utente, e riceve
+come parametro la bitmap appena caricata.
+
+81
+00:06:28,720 --> 00:06:33,030
+Per prima cosa rende la barra di avanzamento
+invisibile, dal momento che non è più
+
+82
+00:06:33,030 --> 00:06:38,490
+necessaria, quindi imposta la
+bitmap caricata sulla ImageView.
+
+83
+00:06:40,640 --> 00:06:44,460
+L'ultima cosa di cui voglio parlare in questa
+lezione è la classe Handler (gestore).
+
+84
+00:06:45,730 --> 00:06:48,690
+Come AsyncTask,
+la classe Handler è
+
+85
+00:06:48,690 --> 00:06:54,060
+progettata per supportare la
+condivisione del lavoro tra due thread.
+
+86
+00:06:54,060 --> 00:06:57,920
+La classe Handler è più flessibile,
+tuttavia, e funzionerà per
+
+87
+00:06:57,920 --> 00:07:02,290
+due thread qualsiassi, non solo fra un thread di
+background e il thread dell'interfaccia utente.
+
+88
+00:07:03,780 --> 00:07:05,650
+Un Handler è associato ad un
+
+89
+00:07:05,650 --> 00:07:06,910
+thread specifico.
+
+90
+00:07:08,210 --> 00:07:13,910
+Un thread può consegnare del lavoro
+ad un altro thread inviando messaggi
+
+91
+00:07:13,910 --> 00:07:19,230
+o inviando Runnables a un Handler
+che è associato con l'altro thread.
+
+92
+00:07:20,990 --> 00:07:25,810
+Quindi in primo luogo, parliamo
+di messaggi e runnables, e quindi
+
+93
+00:07:25,810 --> 00:07:29,380
+arriveremo all'architettura della
+classe Handler stessa.
+
+94
+00:07:30,540 --> 00:07:32,460
+Ora, conoscete già i runnables (eseguibile).
+
+95
+00:07:33,770 --> 00:07:38,598
+È possibile utilizzarli quando il
+mittente sa esattamente quali passi
+
+96
+00:07:38,598 --> 00:07:43,360
+dovrà eseguire, ma vuole che il lavoro
+sia eseguito sul thread del Handler.
+
+97
+00:07:43,360 --> 00:07:48,730
+Un Message, d'altra parte, è una
+classe che può contenere dati
+
+98
+00:07:48,730 --> 00:07:54,880
+ad esempio un codice, un oggetto
+dato qualsiasi, o alcuni valori interi.
+
+99
+00:07:54,880 --> 00:07:55,560
+E si utilizzano i messaggi
+
+100
+00:07:55,560 --> 00:08:01,730
+quando il thread mittente vuole indicare
+un'operazione che dovrebbe essere fatta
+
+101
+00:08:01,730 --> 00:08:04,840
+in un altro thread, ma lascia
+
+102
+00:08:04,840 --> 00:08:08,690
+l'esecuzione di tale
+operazione all'Handler stesso.
+
+103
+00:08:10,190 --> 00:08:15,310
+Così, ora parliamo di come gli Handler
+utilizzano questi Message e i Runnable.
+
+104
+00:08:16,670 --> 00:08:22,250
+Ogni thread Android è associato
+a una MessageQueue e un Looper.
+
+105
+00:08:22,250 --> 00:08:26,640
+La MessageQueue è una struttura dati.
+Contiene messaggi e runnables.
+
+106
+00:08:27,860 --> 00:08:31,178
+Il Looper prende questi
+messaggi e runnables
+
+107
+00:08:31,178 --> 00:08:35,040
+dalla MessageQueue e li
+esegue nel modo appropriato.
+
+108
+00:08:36,890 --> 00:08:41,330
+Ora questo grafico raffigura un
+thread A, che ha creato un Runnable.
+
+109
+00:08:42,380 --> 00:08:48,860
+E che ha usato un oggetto Handler per inviare
+questo runnable al thread dell'Handler.
+
+110
+00:08:48,860 --> 00:08:52,200
+Quando thread A fa questo,
+un runnable viene posto
+
+111
+00:08:52,200 --> 00:08:57,060
+sulla MessageQueue del
+thread associato all'Handler.
+
+112
+00:08:58,860 --> 00:09:02,410
+Ora, qualcosa di molto
+simile accade con i Message.
+
+113
+00:09:02,410 --> 00:09:07,230
+E questo grafico raffigura un thread
+B che ha creato un Message, e cioè
+
+114
+00:09:07,230 --> 00:09:11,900
+ha utilizzato un metodo
+sendMessage di un Handler
+
+115
+00:09:11,900 --> 00:09:14,720
+per inviare il messaggio
+al gestore del thread.
+
+116
+00:09:15,910 --> 00:09:18,580
+Quando il thread B fa
+questo, il messaggio è
+
+117
+00:09:18,580 --> 00:09:22,440
+messo in cima alla MessageQueue
+associata all'Handler.
+
+118
+00:09:24,160 --> 00:09:27,470
+Ora, mentre tutto questo sta
+succedendo, l'oggetto Looper è
+
+119
+00:09:27,470 --> 00:09:31,975
+fermo lì, aspettando solo che appaia del
+lavoro nella MessageQueue.
+
+120
+00:09:33,600 --> 00:09:37,690
+E quando questo succede, il
+Looper reagisce in uno di
+
+121
+00:09:37,690 --> 00:09:42,280
+due modi, a seconda del tipo di
+lavoro che è appena arrivato.
+
+122
+00:09:42,280 --> 00:09:47,440
+Ora, se il lavoro è un messaggio,
+il Looper gestirà il messaggio
+
+123
+00:09:47,440 --> 00:09:52,650
+chiamando il metodo handleMessage del
+Handler, e passando come parametro
+
+124
+00:09:52,650 --> 00:09:58,130
+il messaggio stesso. Se, invece,
+il lavoro è un runnable,
+
+125
+00:09:58,130 --> 00:10:03,280
+allora il Looper lo gestirà semplicemente
+chiamando il metodo run() del runnable stesso.
+
+126
+00:10:04,540 --> 00:10:07,670
+Ora, qui ci sono alcuni dei
+metodi da utilizzare quando
+
+127
+00:10:07,670 --> 00:10:09,740
+si passa un runnables
+a un Handler.
+
+128
+00:10:11,080 --> 00:10:14,360
+Abbiamo già visto il metodo post(),
+ci sono un certo numero di altri
+
+129
+00:10:14,360 --> 00:10:19,940
+metodi che consentono di pianificare il
+lavoro per l'esecuzione in tempi diversi.
+
+130
+00:10:19,940 --> 00:10:24,610
+Ad esempio, è possibile utilizzare il
+metodo postAtTime per aggiungere un
+
+131
+00:10:24,610 --> 00:10:30,000
+runnable alla MessageQueue, per farlo
+eseguire in un momento specifico.
+
+132
+00:10:30,000 --> 00:10:33,400
+Vi è anche un
+metodo postDelayed,
+
+133
+00:10:33,400 --> 00:10:38,100
+che permette di aggiungere un
+runnable alla MessageQueue, ma per
+
+134
+00:10:38,100 --> 00:10:42,560
+eseguirlo dopo un
+ritardo prestabilito.
+
+135
+00:10:42,560 --> 00:10:46,910
+Se si vogliono inviare messaggi, è
+necessario prima creare il messaggio.
+
+136
+00:10:46,910 --> 00:10:52,870
+Un modo per farlo è quello di utilizzare
+il metodo obtainMessage, che dà
+
+137
+00:10:52,870 --> 00:10:58,678
+un messaggio con l'Handler già impostato. È
+inoltre possibile utilizzare il metodo
+
+138
+00:10:58,678 --> 00:11:01,420
+obtain() della classe Message.
+
+139
+00:11:01,420 --> 00:11:07,020
+E una volta creato il messaggio, si
+devono impostare i dati per il messaggio.
+
+140
+00:11:07,020 --> 00:11:09,040
+Ci sono un certo numero
+di modi diversi per
+
+141
+00:11:09,040 --> 00:11:11,690
+farlo, quindi si prega di
+controllare la documentazione.
+
+142
+00:11:14,090 --> 00:11:16,080
+Come con i runnables,
+ci sono una serie di
+
+143
+00:11:16,080 --> 00:11:19,580
+metodi che è possibile utilizzare
+per inviare il messaggio.
+
+144
+00:11:19,580 --> 00:11:22,370
+Vi è il metodo sendMessage di
+cui abbiamo appena parlato.
+
+145
+00:11:23,950 --> 00:11:26,410
+C'è anche una versione che
+consente di mettere il messaggio
+
+146
+00:11:26,410 --> 00:11:30,670
+nella parte superiore della MessageQueue per
+poterlo eseguire il più presto possibile.
+
+147
+00:11:31,670 --> 00:11:34,712
+C'è un metodo sendMessageAtTime
+per accodare
+
+148
+00:11:34,712 --> 00:11:38,690
+il messaggio secondo la
+specificata tempistica.
+
+149
+00:11:38,690 --> 00:11:39,200
+C'è anche
+
+150
+00:11:39,200 --> 00:11:44,310
+un metodo sendMessageDelayed
+che accoda il messaggio ora
+
+151
+00:11:44,310 --> 00:11:48,805
+più il ritardo specificato. Diamo
+un'occhiata al codice sorgente
+
+152
+00:11:48,805 --> 00:11:54,400
+per le versioni del nostro esempio, che
+sono state implementate usando Handlers.
+
+153
+00:11:56,170 --> 00:11:59,190
+Ecco l'applicazione
+ThreadingHandlerRunnable.
+
+154
+00:12:00,650 --> 00:12:03,070
+Ora apro l'Activity principale
+di questa applicazione.
+
+155
+00:12:04,580 --> 00:12:07,640
+E in primo luogo, si vede che
+crea di un nuovo Handler.
+
+156
+00:12:08,870 --> 00:12:12,890
+Questo Handler viene creato
+dal Thread UI principale.
+
+157
+00:12:12,890 --> 00:12:16,980
+Così i runnables che
+questo Handler riceve
+
+158
+00:12:16,980 --> 00:12:19,490
+verranno eseguiti nel thread
+dell'interfaccia utente.
+
+159
+00:12:20,990 --> 00:12:25,120
+Ora, qui sto mostrando il listener
+per il pulsante Load Icon.
+
+160
+00:12:26,560 --> 00:12:29,700
+Quando l'utente preme
+il pulsante Load Icon,
+
+161
+00:12:29,700 --> 00:12:33,320
+questo codice crea e avvia
+un nuovo thread, il cui
+
+162
+00:12:33,320 --> 00:12:38,350
+metodo run è definito dal
+runnable LoadIconTask().
+
+163
+00:12:38,350 --> 00:12:39,450
+Diamo un'occhiata
+a quella classe.
+
+164
+00:12:40,920 --> 00:12:44,245
+Ora, questo metodo run() inizia
+con la pubblicazione di un nuovo
+
+165
+00:12:44,245 --> 00:12:48,920
+runnable che, quando eseguito, renderà
+la barra di avanzamento visibile.
+
+166
+00:12:50,150 --> 00:12:54,880
+Si prosegue caricando la bitmap.
+E mentre sta facendo questo,
+
+167
+00:12:54,880 --> 00:12:59,080
+pubblica periodicamente lo stato
+di avanzamento postando un altro
+
+168
+00:12:59,080 --> 00:13:03,380
+runnable che chiama setProgress
+sulla barra di avanzamento.
+
+169
+00:13:05,180 --> 00:13:09,760
+E poi invia un runnable che imposta il
+bitmap appena caricato sul display.
+
+170
+00:13:09,760 --> 00:13:14,195
+E termina inviando un ultimo
+
+171
+00:13:14,195 --> 00:13:17,830
+runnable, poi rende la barra
+di avanzamento invisibile.
+
+172
+00:13:19,870 --> 00:13:21,700
+Diamo anche un'occhiata a
+una seconda versione di
+
+173
+00:13:21,700 --> 00:13:25,942
+questa applicazione che invia messaggi,
+invece di inviare runnables.
+
+174
+00:13:28,890 --> 00:13:32,080
+Ecco l'applicazione
+ThreadingHandlerMessages.
+
+175
+00:13:33,930 --> 00:13:36,170
+Io ora apro l'Activity principale
+di questa applicazione.
+
+176
+00:13:38,170 --> 00:13:41,300
+E in primo luogo, si vede che questo
+codice crea un nuovo Handler.
+
+177
+00:13:41,300 --> 00:13:45,730
+Di nuovo, questo Handler verrà
+creato dal thread UI principale.
+
+178
+00:13:45,730 --> 00:13:51,210
+Il lavoro di questo Handler sarà eseguito
+nel thread dell'interfaccia utente.
+
+179
+00:13:52,530 --> 00:13:53,800
+Come si può vedere,
+
+180
+00:13:53,800 --> 00:13:57,420
+Questo Handler ha un
+metodo handleMessage,
+
+181
+00:13:57,420 --> 00:14:01,300
+che implementa i
+vari tipi di lavoro.
+
+182
+00:14:01,300 --> 00:14:05,410
+Questo metodo inizia controllando il
+codice che è nel messaggio.
+
+183
+00:14:06,770 --> 00:14:11,230
+E poi, intraprende l'azione appropriata
+per tale codice messaggio.
+
+184
+00:14:11,230 --> 00:14:18,780
+Per esempio, se il codice è
+set_progress_bar_visibility,
+
+185
+00:14:18,780 --> 00:14:22,950
+allora questo codice imposta lo stato
+di visibilità della Progress Bar
+
+186
+00:14:22,950 --> 00:14:27,980
+Se il codice è invece
+progress_update,
+
+187
+00:14:27,980 --> 00:14:31,480
+allora questo codice imposta lo stato di
+avanzamento sulla barra di avanzamento.
+
+188
+00:14:33,310 --> 00:14:39,370
+Se il codice è set_bitmap, allora il
+codice imposta la bitmap sul display.
+
+189
+00:14:40,730 --> 00:14:44,540
+Ora, andiamo al listener
+per il pulsante Load Icon.
+
+190
+00:14:45,920 --> 00:14:51,400
+Come prima, quando l'utente preme
+il pulsante Load Icon, questo
+
+191
+00:14:51,400 --> 00:14:56,510
+codice crea e avvia un nuovo
+thread il cui metodo run è
+
+192
+00:14:56,510 --> 00:15:01,230
+definito nel runnable LoadIconTask() .
+E questo metodo run()
+
+193
+00:15:01,230 --> 00:15:06,245
+inizia ottenendo un messaggio
+con il codice impostato a
+
+194
+00:15:06,245 --> 00:15:12,620
+set_progress_bar_visibility,
+
+195
+00:15:12,620 --> 00:15:17,140
+e con un argomento che indica che la barra
+di avanzamento deve essere resa visibile.
+
+196
+00:15:19,160 --> 00:15:24,480
+Quindi invia il messaggio all'Handler,
+che si occuperà di esso, e
+
+197
+00:15:24,480 --> 00:15:29,830
+renderà visibile la barra di avanzamento.
+Continua poi caricando la bitmap.
+
+198
+00:15:31,340 --> 00:15:37,030
+E mentre lo sta facendo, periodicamente
+pubblica i progressi creando e
+
+199
+00:15:37,030 --> 00:15:44,190
+inviando un messaggio con il codice
+progress_update, e con un argomento
+
+200
+00:15:44,190 --> 00:15:47,420
+che indica la percentuale
+di lavoro fatto.
+
+201
+00:15:48,740 --> 00:15:53,420
+Ciò funzionerà nell'Handler chiamando
+setProgress sulla barra di avanzamento.
+
+202
+00:15:54,960 --> 00:16:01,000
+Quindi ottiene e invia un messaggio per impostare
+il bitmap appena caricato sul display.
+
+203
+00:16:02,730 --> 00:16:08,080
+E, infine, invia un ultimo messaggio per
+rendere la barra di avanzamento invisibile.
+
+204
+00:16:10,440 --> 00:16:15,620
+Dunque, è tutto per questa lezione
+sui thread, AsyncTasks, e Handlers.
+
+205
+00:16:15,620 --> 00:16:19,238
+Unitevi a me la prossima volta
+quando parleremo degli Alarm.
+
+206
+00:16:19,238 --> 00:16:20,447
+Grazie.
+
+207
+00:16:20,447 --> 00:16:25,260
+[BLANK_AUDIO]
+</pre>

@@ -1,0 +1,69 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">AIPLAN:Links</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Links to additional material that may be directly or tangentially related to AI Planning:</p>
+<hr />
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Manual_Creation_of_Plans"><span class="tocnumber">1</span> <span class="toctext">Manual Creation of Plans</span></a></li>
+<li class="toclevel-1"><a href="#Workflow.2FProcess_Control"><span class="tocnumber">2</span> <span class="toctext">Workflow/Process Control</span></a></li>
+<li class="toclevel-1"><a href="#Agent-Based_Modeling"><span class="tocnumber">3</span> <span class="toctext">Agent-Based Modeling</span></a></li>
+<li class="toclevel-1"><a href="#Planning_API"><span class="tocnumber">4</span> <span class="toctext">Planning API</span></a></li>
+<li class="toclevel-1"><a href="#Machine_Learning_and_Data_Mining"><span class="tocnumber">5</span> <span class="toctext">Machine Learning and Data Mining</span></a></li>
+<li class="toclevel-1"><a href="#Mailing_Lists_and_Websites"><span class="tocnumber">6</span> <span class="toctext">Mailing Lists and Websites</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Manual_Creation_of_Plans">Manual Creation of Plans</span></h2>
+<ul>
+<li>NETPlan - DARPA, US Air Force and Us Army SOFTools - A timeline tool for designing and communicating plans, explaining actions, and monitoring operations - by Doug Dyer of <a rel="nofollow" class="external text" href="http://activecomputing.us/">Active Computing</a>. <a rel="nofollow" class="external text" href="http://prezi.com/qg--5wdknazu/netplan/">Prezi Presentation</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Workflow.2FProcess_Control">Workflow/Process Control</span></h2>
+<ul>
+<li>Kepler Scientific Workflow System</li>
+<li>ADAMS Workflow System</li>
+<li>Proview Industrial Process Control system</li>
+<li>Ptolemy</li>
+</ul>
+<h2> <span class="mw-headline" id="Agent-Based_Modeling">Agent-Based Modeling</span></h2>
+<ul>
+<li>Repast</li>
+<li>NetLogo</li>
+<li>many others...</li>
+</ul>
+<h2> <span class="mw-headline" id="Planning_API">Planning API</span></h2>
+<ul>
+<li>PyPlan - modular Monte Carlo planning library for Python (<a rel="nofollow" class="external text" href="https://github.com/shankarj/PyPlan">Repository</a>, <a rel="nofollow" class="external text" href="https://github.com/shankarj/PyPlan/wiki">Wiki</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Machine_Learning_and_Data_Mining">Machine Learning and Data Mining</span></h2>
+<ul>
+<li>Weka</li>
+<li>RapidMiner</li>
+<li>ELKI</li>
+<li>MOA</li>
+</ul>
+<h2> <span class="mw-headline" id="Mailing_Lists_and_Websites">Mailing Lists and Websites</span></h2>
+<p>This section is for various mailing lists and websites (outside coursera) that cater to AI in general. You can ask specific or generic questions about AI, AI planning or any other field of your interest. Please make sure that you are targeting a mailing list that is right for your question. Also see <a rel="nofollow" class="external text" href="http://www.catb.org/~esr/faqs/smart-questions.html">How to ask</a>  before asking a question.
+Feel free to add to this list:</p>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://aitopics.org/">http://aitopics.org/</a> - Website for "information about the research, the people, and the applications of Artificial Intelligence"</li>
+<li><a rel="nofollow" class="external text" href="http://groups.google.com/group/planning-list/">Google groups - Planning List</a>  planning-list@googlegroups.com</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=AIPLAN:Links&amp;oldid=32239">https://share.coursera.org/wiki/index.php?title=AIPLAN:Links&amp;oldid=32239</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

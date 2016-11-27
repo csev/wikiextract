@@ -1,0 +1,35 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:Semantic security</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h3> <span class="mw-headline" id="What_makes_a_secure_cipher.3F">What makes a secure cipher?</span></h3>
+<p>Attackers abilities: <strong>Obtain one ciphertext</strong> (for now)</p>
+<p>Possible security requirements:</p>
+<p>attempt #1: <strong>Attacker can not recover secret key</strong></p>
+<p>If we take a very simple encryption algorithm, E(k,m)=m that simply outputs the message itself, the attacker could not learn anything about the key but know the message anyway.</p>
+<p>attempt #2: <strong>attacker can not recover all of plaintext</strong></p>
+<p>The attacker may recover most of the plaintext, which already may be problematic enough.</p>
+<p>Shannon's idea: <strong>CT should reveal no "info" about PT</strong></p>
+<p>Even though semantic security is weaker than Shannon's perfect security it still seems to be really demanding. Boneh demonstrates this with the example that the recovery of a one mere bit from the CT already makes the encryption fail to be semantically secure. However, it is not so demanding in the sense that stream ciphers with much smaller keylengths than the messagelength satisfy semantic security (provided the PRG is secure, i.e. unpredictable) as opposed to perfectly secure ciphers where the key must be at least as long as the message.</p>
+<h3> <span class="mw-headline" id="Definition_of_semantic_security">Definition of semantic security</span></h3>
+<p>For $$b = 0, 1$$ define $$\text{EXP}(b)$$ as the guess $$b'$$ about the value of $$b$$ of an adversary $$A$$ who sent two messages $$m&#95;0, m&#95;1 \in \mathcal{M}: \lvert m&#95;0 \rvert = \lvert m&#95;1 \rvert$$ and received $$c \leftarrow E(k, m&#95;b)$$ in response.</p>
+<p>With $$W&#95;b:= [ \text{event that EXP}(b) = 1 ]$$ and $$\text{Adv}&#95;{\scriptsize \text{SS}}[A, E]:= \lvert \text{Pr}[W&#95;0] - \text{Pr}[W&#95;1] \rvert \in [0, 1]$$, $$E$$ is defined as <em>semantically secure</em> if for all "efficient" $$A$$ $$\text{Adv}&#95;{\scriptsize \text{SS}}[A, E]$$ is negligible</p>
+<p>$$\Rightarrow$$ for all explicit $$m&#95;0, m&#95;1 \in \mathcal{M}:\; \left\lbrace E(k, m&#95;0) \right\rbrace \approx&#95;{\scriptsize P} \left\lbrace E(k, m&#95;1) \right\rbrace$$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:Semantic_security&amp;oldid=12966">https://share.coursera.org/wiki/index.php?title=Crypto:Semantic_security&amp;oldid=12966</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,31 @@
+## Directed Separation (d-separation)
+In the following we denote Probability Distribution with P and a Graph with G.
+
+'''Definition 1''': We say that a set of nodes $$\mathbf{X}$$ and a set of nodes $$\mathbf{Y}$$ are d-separated in G given a set of nodes $$\mathbf{Z}$$ if there is no active trail in G between $$\mathbf{X}$$ and $$\mathbf{Y}$$ given $$\mathbf{Z}$$. (Notation: $$d-sep_{G}(\mathbf{X,Y}|\mathbf{Z})$$)
+
+<br />
+
+'''Theorem 1''': If P factorizes over G, and $$d-sep_{G}(\mathbf{X,Y}|\mathbf{Z})$$ then P satisfies $$\mathbf{X} \perp\mathbf{Y} | \mathbf{Z}$$.
+
+<br />
+
+'''Definition 2''': If P satisfies $$I(G)$$, we say that G is an I-map (independency map) of P, where $$I(G)$$ denotes the set of independencies that are implicit in the Graph, i.e.: $$I(G) = \\{(\mathbf{X}\perp\mathbf{Y}|\mathbf{Z}): d-sep_{G}(\mathbf{X,Y}|\mathbf{Z})\\}$$
+
+Note that this definition requires that any independence that is implied by G must hold for the distribution. In other words it doesn't require that the graph G represents all the independencies of the distribution. P may satisfy more independencies.
+<br />
+
+See this thread on the forum for the proof of the d-separation theorem: https://class.coursera.org/pgm/forum/thread?thread_id=296
+
+
+Lecture Video Table of Contents
+----
+<pre>
+0:20	Independence and Factorization
+1:18	Flow of influence and d-separation
+2:36	Factorization -> Independence: BNs
+6:18	Any node is d-separated from its non-descendants given its parents
+9:34	I-maps
+10:51	I-map example
+14:43	Chain rule for probabilities
+17:12	Summary
+</pre>

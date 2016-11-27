@@ -1,0 +1,85 @@
+Let's consider what one needs to do to make a phone call. Let's also assume that this is in the age before cell phone, and everyone has a land line.
+
+First you would contact your local phone company/agency to order a phone. A technician would run a wire from the local pole your home and connect it to your new phone. You would also get a new phone number.
+
+Once you have a new phone, you have to try it out. Being a good child, you call your parents.
+
+You pick up the phone and wait for the dial tone. Then you enter in your childhood phone number. The number rings a few times, and then you hear a click and your mother’s voice say, “Hello.”
+
+You say, “Hello mom. I’m calling from my new phone.”
+
+“Oh that’s wonderful,” she says.
+
+You chit-chat for awhile, and then you say, “It’s been great talking to you mom, but I have a few more people to call. I wanted to call you first.”
+
+“That’s lovely Junior. Thanks for calling. Good-bye.”
+
+“Good-bye.”
+
+And you both hang up.
+
+Computer applications use Sockets in much the same way that people use telephones. In both cases people and computers connect using a network. The underlying network mechanism is unknown. There’s a set protocol for establishing a connection each network. The network, for the most part, doesn’t care about the content being communicated.
+
+Let’s compare the telephone model API with the Socket API. It’s not an exact match, but it’s reasonably close.
+
+First the caller/client API:
+<TABLE BORDER>
+<TR>
+<TH>Caller
+<TH>Client
+<TR>
+<TD>Install the phone
+<TD>SOCKET
+<TR>
+<TD>Look up a phone number in the phone book.
+<TD>GETADDRINFO
+<TR>
+<TD>Dial the number
+<TD>CONNECT
+<TR>
+<TD>Talking
+<TD>SEND
+<TR>
+<TD>Listening
+<TD>RECV
+<TR>
+<TD>Hang up
+<TD>CLOSE
+</TABLE>
+<p>
+Now the person being called/server API:
+<TABLE BORDER>
+   <TR>
+      <TH>Person being called
+      <TH>Server
+   <TR>
+      <TD>Install the phone
+      <TD>SOCKET
+   <TR>
+      <TD>Register the phone with the phone number – done by a technician.
+      <TD>GETADDRINFO
+   <TR>
+      <TD>Continue the registration.
+      <TD>BIND
+   <TR>
+      <TD>Wait for the phone to ring
+      <TD>LISTEN
+   <TR>
+      <TD>Pick up a ringing phone.
+      <TD>ACCEPT
+   <TR>
+      <TD>Talking
+      <TD>SEND
+   <TR>
+      <TD>Listening
+      <TD>RECV
+   <TR>
+      <TD>Hang up
+      <TD>CLOSE
+</TABLE>
+<p>
+The Socket API concept isn’t that much different from concepts that most of us has been using all of our lives.
+
+Human protocols even predate technology. We just don’t tend to call them protocols. We tend to call them social formalities. When you meet someone new, we often first say "Hello," present names and shake hands. Once we are through these formalities, conversation may begin.
+
+Computers have the same kind of formalities, but we call them protocols, and sockets is just one of them.

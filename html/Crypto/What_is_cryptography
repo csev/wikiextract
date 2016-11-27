@@ -1,0 +1,62 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:What is cryptography</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><ul>
+<li>Secret key establishment</li>
+<li>Secure communication</li>
+</ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Cryptography_can_do_more"><span class="tocnumber">1</span> <span class="toctext">Cryptography can do more</span></a></li>
+<li class="toclevel-1"><a href="#Protocols"><span class="tocnumber">2</span> <span class="toctext">Protocols</span></a></li>
+<li class="toclevel-1"><a href="#Crypto_Magic"><span class="tocnumber">3</span> <span class="toctext">Crypto Magic</span></a></li>
+<li class="toclevel-1"><a href="#A_rigorous_science"><span class="tocnumber">4</span> <span class="toctext">A rigorous science</span></a></li>
+<li class="toclevel-1"><a href="#Thm"><span class="tocnumber">5</span> <span class="toctext">Thm</span></a></li>
+</ul>
+</td></tr></table>
+<h4> <span class="mw-headline" id="Cryptography_can_do_more">Cryptography can do more</span></h4>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Digital_signatures">Digital signatures</a></li>
+<li>Anonymous communication <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Mix_net">Mix Net</a></li>
+<li>Anonymous <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Digital_cash">digital cash</a></li>
+<li>Pseudonymous <a rel="nofollow" class="external text" href="http://bitcoin.org/bitcoin.pdf">digital cash</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Protocols">Protocols</span></h4>
+<ul>
+<li>Elections</li>
+<li>Private auctions</li>
+</ul>
+<p>Anything that can be done with a trusted authority can also be done without. Instead of talking to the central authority the parties (voters) talk to each other using a protocol in a way that at the end the protocol reveals the outcome of the election without revealing the individual inputs</p>
+<h4> <span class="mw-headline" id="Crypto_Magic">Crypto Magic</span></h4>
+<ul>
+<li>Privately outsourcing computation <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Verifiable_computing">Verifiable computing</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Zero-knowledge_proof">Zero knowledge proof</a></li>
+</ul>
+<h4> <span class="mw-headline" id="A_rigorous_science">A rigorous science</span></h4>
+<p>The three steps in cryptography:
+<ul><li>Precisely define threat model
+</li><li>Propose a construction
+</li><li>Prove that breaking construction under threat model will solve an underlying hard problem</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="Thm">Thm</span></h4>
+<p>Thm means theorem.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:What_is_cryptography&amp;oldid=25054">https://share.coursera.org/wiki/index.php?title=Crypto:What_is_cryptography&amp;oldid=25054</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

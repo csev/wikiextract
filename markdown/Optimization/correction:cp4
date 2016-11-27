@@ -1,0 +1,3 @@
+In the model of Sudoku -- at about 12:36 in CP 4 (slide 30) -- there seems to be a typo.
+
+In the third constraint (the one on 3x3 blocks) it appears that $$s[i,j]$$ should be replaced with $$s[r,c]$$.

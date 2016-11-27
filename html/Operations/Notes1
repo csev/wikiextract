@@ -1,0 +1,119 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Operations:Notes1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Performance_Measures_of_an_Operation"><span class="tocnumber">1</span> <span class="toctext">Performance Measures of an Operation</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Demand"><span class="tocnumber">1.1</span> <span class="toctext">Demand</span></a></li>
+<li class="toclevel-2"><a href="#Inventory"><span class="tocnumber">1.2</span> <span class="toctext">Inventory</span></a></li>
+<li class="toclevel-2"><a href="#Processing_time"><span class="tocnumber">1.3</span> <span class="toctext">Processing time</span></a></li>
+<li class="toclevel-2"><a href="#Capacity"><span class="tocnumber">1.4</span> <span class="toctext">Capacity</span></a></li>
+<li class="toclevel-2"><a href="#Bottleneck"><span class="tocnumber">1.5</span> <span class="toctext">Bottleneck</span></a></li>
+<li class="toclevel-2"><a href="#Process_Capacity"><span class="tocnumber">1.6</span> <span class="toctext">Process Capacity</span></a></li>
+<li class="toclevel-2"><a href="#Flow_rate"><span class="tocnumber">1.7</span> <span class="toctext">Flow rate</span></a></li>
+<li class="toclevel-2"><a href="#Utilization"><span class="tocnumber">1.8</span> <span class="toctext">Utilization</span></a></li>
+<li class="toclevel-2"><a href="#Cycle_Time"><span class="tocnumber">1.9</span> <span class="toctext">Cycle Time</span></a></li>
+<li class="toclevel-2"><a href="#Idle_Time"><span class="tocnumber">1.10</span> <span class="toctext">Idle Time</span></a></li>
+<li class="toclevel-2"><a href="#Flow_time"><span class="tocnumber">1.11</span> <span class="toctext">Flow time</span></a></li>
+<li class="toclevel-2"><a href="#Per_Unit_Inventory_Costs"><span class="tocnumber">1.12</span> <span class="toctext">Per Unit Inventory Costs</span></a></li>
+<li class="toclevel-2"><a href="#Little.27s_Law"><span class="tocnumber">1.13</span> <span class="toctext">Little's Law</span></a></li>
+<li class="toclevel-2"><a href="#Inventory_turn"><span class="tocnumber">1.14</span> <span class="toctext">Inventory turn</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Labour_Measures"><span class="tocnumber">2</span> <span class="toctext">Labour Measures</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Labour_Content"><span class="tocnumber">2.1</span> <span class="toctext">Labour Content</span></a></li>
+<li class="toclevel-2"><a href="#Average_Labour_Utilization"><span class="tocnumber">2.2</span> <span class="toctext">Average Labour Utilization</span></a></li>
+<li class="toclevel-2"><a href="#Direct_labour_cost"><span class="tocnumber">2.3</span> <span class="toctext">Direct labour cost</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Balancing_the_Line"><span class="tocnumber">3</span> <span class="toctext">Balancing the Line</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Takt_Time"><span class="tocnumber">3.1</span> <span class="toctext">Takt Time</span></a></li>
+<li class="toclevel-2"><a href="#Target_Manpower"><span class="tocnumber">3.2</span> <span class="toctext">Target Manpower</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Queue_Analysis"><span class="tocnumber">4</span> <span class="toctext">Queue Analysis</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Utilization_2"><span class="tocnumber">4.1</span> <span class="toctext">Utilization</span></a></li>
+<li class="toclevel-2"><a href="#Time_in_queue"><span class="tocnumber">4.2</span> <span class="toctext">Time in queue</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Performance_Measures_of_an_Operation">Performance Measures of an Operation</span></h2>
+<h3> <span class="mw-headline" id="Demand">Demand</span></h3>
+<p>For services: $$\frac{\displaystyle{\mathbf{\text{1}}}}{\displaystyle{\mathbf{\text{a}}}}$$, where a = inter-arrival time</p>
+<h3> <span class="mw-headline" id="Inventory">Inventory</span></h3>
+<p>The number of flow units in the process at a given moment in time [units]</p>
+<h3> <span class="mw-headline" id="Processing_time">Processing time</span></h3>
+<p>How long a worker spends on a task [units of time]</p>
+<h3> <span class="mw-headline" id="Capacity">Capacity</span></h3>
+<p>How many units a worker can produce or how many customers a server can serve in a given time</p>
+<p>Cap = $$\frac{\displaystyle{\mathbf{\text{1}}}}{\displaystyle{\mathbf{\text{Processing Time}}}}$$</p>
+<p>If there are m workers/servers: Capacity = m / processing time</p>
+<h3> <span class="mw-headline" id="Bottleneck">Bottleneck</span></h3>
+<p>Process step with lowest capacity</p>
+<h3> <span class="mw-headline" id="Process_Capacity">Process Capacity</span></h3>
+<p>Capacity of the bottleneck OR min{Capacity}</p>
+<h3> <span class="mw-headline" id="Flow_rate">Flow rate</span></h3>
+<p>= Minimum between demand and process capacity [units/time]</p>
+<h3> <span class="mw-headline" id="Utilization">Utilization</span></h3>
+<p>= $$\frac{\displaystyle{\mathbf{\text{Flow Rate}}}}{\displaystyle{\mathbf{\text{Capacity}}}}$$</p>
+<p><em>Implied Utilization</em> = Demand / Capacity [%] (differently from simple utilization, <em>implied utilization</em> can be more than 100%)</p>
+<p>In a <em>service operation</em> the flow rate is typically given by the demand. Since demand = 1/a (where a is the inter-arrival time) and capacity = m/p (where m is the number of workers and p is the processing time):</p>
+<p>u = 1/a / m/p =&gt; u = 1/a × p/m =&gt; <strong>u = p/a×m</strong></p>
+<h3> <span class="mw-headline" id="Cycle_Time">Cycle Time</span></h3>
+<p>= 1/Flow Rate [units of time]</p>
+<h3> <span class="mw-headline" id="Idle_Time">Idle Time</span></h3>
+<p>= Cycle Time - Processing Time [units of time]</p>
+<h3> <span class="mw-headline" id="Flow_time">Flow time</span></h3>
+<p>The amount of time it takes a flow unit to go through the process [units of time/units of product or # of customers being served]</p>
+<h3> <span class="mw-headline" id="Per_Unit_Inventory_Costs">Per Unit Inventory Costs</span></h3>
+<p>= Anual Inventory Costs / Inventory Turns [%]</p>
+<h3> <span class="mw-headline" id="Little.27s_Law">Little's Law</span></h3>
+<p>Inventory = Flow Rate × Flow Time  [units of product]</p>
+<h3> <span class="mw-headline" id="Inventory_turn">Inventory turn</span></h3>
+<p>= Cost of goods sold / Inventory [adimensional]</p>
+<h2> <span class="mw-headline" id="Labour_Measures">Labour Measures</span></h2>
+<h3> <span class="mw-headline" id="Labour_Content">Labour Content</span></h3>
+<p>Total amount of labour (in units of time) required by a process</p>
+<h3> <span class="mw-headline" id="Average_Labour_Utilization">Average Labour Utilization</span></h3>
+<p>Total Labour Content / (Total Labour Content + Total Idle Time) </p>
+<h3> <span class="mw-headline" id="Direct_labour_cost">Direct labour cost</span></h3>
+<p>= Wage rate per time unit / Flow rate per time unit</p>
+<h2> <span class="mw-headline" id="Balancing_the_Line">Balancing the Line</span></h2>
+<h3> <span class="mw-headline" id="Takt_Time">Takt Time</span></h3>
+<p>= available time / demand</p>
+<h3> <span class="mw-headline" id="Target_Manpower">Target Manpower</span></h3>
+<p>= Labour Content / Takt Time [adimensional]</p>
+<p><em>Note: Make sure the same unit of time (s/m/h/etc) is used for both labour content and takt time</em></p>
+<h2> <span class="mw-headline" id="Queue_Analysis">Queue Analysis</span></h2>
+<h3> <span class="mw-headline" id="Utilization_2">Utilization</span></h3>
+<p>u = p/a×m, where p is the processing time, a is the inter-arrival time (the reciprocal of the flow rate) and m is the number of resources</p>
+<p><em>Note: u must be &lt;= 1; any value of u &gt; 1 is implied, not actual, utilization, as a resource cannot be utilized at more than 100%</em></p>
+<h3> <span class="mw-headline" id="Time_in_queue">Time in queue</span></h3>
+<p>Tq = p/m × u^{sqrt[2(m+1)]-1}/1-u × [(CVa^2+CVp^2)/2]</p>
+<p>or $${T&#95;q} = \frac{p}{m} \times \frac{{u\sqrt {2(m + 1)}  - 1}}{1 - u} \times \frac{{C{V&#95;a}^2 \times C{V&#95;p}^2}}{2}$$</p>
+<p>where CVa = stdev(inter-arrival times)/average(arrival times)
+CVp = stdev(processing times)/average(processing times)</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 8/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Operations:Notes1&amp;oldid=10473">https://share.coursera.org/wiki/index.php?title=Operations:Notes1&amp;oldid=10473</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

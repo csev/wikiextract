@@ -1,0 +1,111 @@
+# WEEK 3: The conservation of the apoptosis pathway
+
+## 3.1 - The identification of ced mutants: egl-1  
+**Fully dominant** A mutation is called fully dominant,  if 100% of animals heterozygous for the mutation exhibit the mutant phenotype.  
+**Semi-dominant** A mutation is called semi-dominant, if less than 100% of animals heterozygous for the mutation exhibit the mutant phenotype.  
+**Double mutant or ‘epistasis’ analysis** Double mutants were made between the genes that cause opposite phenotypes when inactivated. Double mutants were made basically carrying a ced-9 loss-of-function mutation and either a loss-of-function mutation of ced-3, ced-4 or egl-1.    
+**Epistatic**  Epistasis is a form of gene interaction in which a mutation in gene A masks the phenotype caused by a mutation in gene B. In this case, gene A is said to be epistatic to gene B.  
+**On/off switch**   
+**Precursor/product relationship**  
+* The specification of which cells should live and die, the commitment of these cells to the apoptotic fate and their subsequent dismantling, engulfment and degradation are a sequence of cell biological and biochemical events, with one event being dependent on the successful completion of the previous one.  
+* A kind of precursor/product relationship exists between these different stages.
+  
+**Downstream** and **Upstream**  
+* The commitment step can be considered a regulatory pathway or cascade with two alternative states, apoptosis or no apoptosis, like an ON/OFF switch. In that case, "EPISTATIC" indicates "DOWNSTREAM". ced-4 and ced-3 are epistatic to ced-9.  
+* The ectopic apoptosis induced by the loss of ced-9 is dependent on a functional ced-3 gene and on a functional ced-4 gene. ced-3 and ced-4 therefore are required or act downstream of ced-9 to cause apoptosis.   
+* Furthermore, ced-9 normally acts to block the activity of ced-3 and ced-4. 
+* In contrast, ced-9 is  epistatic to egl-1. The ectopic apoptosis induced by the loss of ced-9 is not dependent on a functional egl-1 gene. egl-1 is therefore not required  downstream of ced-9 to cause apoptosis. Instead, it acts upstream of ced-9 to block its anti-apoptotic function.
+  
+## 3.2 - Human bcl-2 in C. elegans  
+**Transgenic lines**  
+[[File:PCD-transgenic-lines-C-elegans.png]]  
+  
+  
+**Extra-chromosomal arrays**  
+* Extra-chromosomal arrays are like mini chromosomes that can contain anywhere from 30-300 copies of the injected plasmids.  
+* Since the extra-chromosomal arrays do not have what normal chromosomes have, such as centromeres, they do not always get segregated properly into the daughter cells during cell division. They often get lost.  
+* That's why only a few of the progeny generated from the injected animals will actually carry the extra-chromosomal arrays and not all cells in these animals will actually carry it. The animals are therefore mosaic.  
+  
+**Mosaism**  
+Mosaic - an individual who has two or more genetically different cell lines derived from a single zygote. The differences may be point mutations, chromosomal changes, etc. 
+from the glossary of [Human Molecular Genetics](http://www.ncbi.nlm.nih.gov/books/NBK7584/). 2nd edition. Strachan T, Read AP. New York: Wiley-Liss; 1999.  
+  
+  
+## 3.3 - Cloning of C. elegans ced-9 and egl-1  
+**Mendel’s second law (the principle of independent assortment)**
+* The principle of independent assortment states that genes or alleles for different traits assort independently of one another in gamete formation.  
+* However, this is of course only true for genes that are located on different chromosomes.  
+* It is NOT true for genes that are located on the same chromosome. If genes are located on the same chromosome one refers to them as linked.
+  
+**Linkage analysis**  
+* Linkage analysis allows you to determine on which chromosome the mutation and the affected gene are located.  
+* Linkage analysis is based on Mendel's second law, the principle of independent assortment.  
+* To do linkage analysis, you cross your mutant with a strain that has one of the six  *C. elegans* chromosomes marked with a mutation that causes a phenotype that can easily be detected, such as an Unc phenotype or an Egl phenotype.  
+* This analysis you perform with marker strains for all six chromosomes, or at least for five of them because you can do other analyses to determine whether your mutation is on the sex chromosome, the X chromosome. Together, these  analyses should result in the identification of one chromosome, to which your mutation is linked.  
+  
+**Non-independent assortment**  
+
+**“Linked”**  
+  
+**Mapping experiments**  
+  
+**Three-factor mapping experiment**  
+* Three-factor mapping experiments are called this because you determine where your mutation is located with respect to two known sites and therefore a specific interval on the chromosome.  
+* It will basically allow you to determine the order of those three factors, your mutation and the two known sites.  
+* Mapping experiments are not based on the principle of independent assortment, but on the fact that loci that are located on one chromosome do not assort independently.  
+* Loci that are located on one chromosome can only be separated from each other or newly combined through recombination.  
+  
+**Recombination**  
+Genetic recombination is the production of new combinations of alleles, encoding a novel set of genetic information, e.g., by the pairing of homologous chromosomes in meiosis, or by the breaking and rejoining of DNA strands, which forms new molecules of DNA.  
+(from [Wikipedia](http://en.wikipedia.org/wiki/Genetic_recombination))  
+    
+**Homologous chromosomes**  
+* A pair of chromosomes that have the same length, centromer position, and staining pattern.  
+* The two chromosomes of each pair carry genes controlling the same inherited characters.  
+* One is inherited from the mother, and the other is inherited from the father.  
+     
+**Genetic diversity**  
+  
+**Map units (Centimorgans)**  
+* Map units or centimorgans are a genetic unit and are defined as 1% recombination.  
+* In 100 meiosis, one would expect to see one recombination event between two loci that are 1 map unit apart.   
+* The “distance” between two linked gene pairs where 1% of the products of meiosis are recombinant; a unit of distance in a linkage map. [Reference: Griffiths AJF, Miller JH, Suzuki DT, et al. [An Introduction to Genetic Analysis.](http://www.ncbi.nlm.nih.gov/books/NBK21819/) 7th edition. New York: W. H. Freeman; 2000. Accurate calculation of large map distances.]
+  
+**Recombinants**  
+  
+**Transformation rescue**  
+  
+**Cosmids**  
+  
+**Minimal rescue fragment**  
+  
+**Genome sequence**  
+  
+**RNA-mediated interference (RNAi)**  
+  
+**Polymorphic strains**  
+  
+**Single nucleotide polymorphism (SNP) mapping**  
+  
+**Deep sequencing**  
+* The way mutations that were identified in forward genetic screens are identified and the affected genes cloned now is that you cross your mutant to the Hawaii strain and in the F2 generation you identify your homozygous mutant animals. These F2 animals are pooled, their genomic DNA isolated and sequenced.
+* The sequence will reveal the chromosome, the region of the chromosome and the transcription unit or the gene where it is located and even identify the exact mutation.  
+
+**Homologous proteins**  
+  
+**Conservation**  
+  
+## 3.4 - More on ced-9 (gain-of-function mutation, pro-apoptotic function)  
+**Mitochondria**  
+* Their main function is to convert energy into chemical energy in the form of ATP, the energy currency of the cell. Mitochondria convert energy that we take up through our nutrition into ATP, and the enzymatic machinery that does this is the electron transport chain, which is located in the inner mitochondrial membrane.  
+  
+**Receptor domain (Bcl-2 superfamily)**  
+The ced-9  gain-of-function mutation n1950, which causes a general block in apoptosis, is a missense mutation that changes a single amino acid in the ced-9 protein sequence. Specifically, it is a glycine to-glutamate substitution at position 169 of the ced-9 sequence. This amino acid is within a conserved region of the ced-9 protein that is referred to as the "receptor domain" of the guardians.  
+  
+**Redundancy**  
+  
+## 3.5 - C. elegans ced-3 and mammalian ICE (The caspase story)  
+**Protease**  
+**Cysteine protease**  
+**Protease substrate**  
+**Caspase (cysteine-dependent aspartate-directed protease)**

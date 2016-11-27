@@ -1,0 +1,635 @@
+
+
+[[Android-001:Subtitles:Lecture75:es |<< prev subtitle]] | [[Android-001:Subtitles | course's subtitles >>]]
+
+### Location and Maps - Part 2 (Spanish subtitles, ES_ES)
+Spanish translation from the original english subtitles.<br>
+* **Translated by:**    Fedros G.R.<br>
+* **Instructions:**
+<ol>
+<li>Create a txt file by using Notepad app (or other text editor), then change its extension from .txt to .srt.<BR>
+    *IMPORTANT!: Make sure the name of your video lecture has the exact same name as your subtitle file.*</li>
+<li> Copy and Paste the following text into the SRT file.</li>
+</ol>
+
+<pre>
+1
+00:00:09,880 --> 00:00:11,880
+Hola, Soy Adam Porter, y esto es,
+
+2
+00:00:11,880 --> 00:00:18,030
+<i><font color="#0080ff">Programación de Aplicaciones Móviles para
+Sistemas Portátiles Android.</font></i>
+
+3
+00:00:19,320 --> 00:00:24,440
+Las localizaciones indican lugares reales alrededor
+de nosotros y a menudo tiene sentido visualizar
+
+4
+00:00:24,440 --> 00:00:30,440
+localizaciones usando mapas, los cuales
+son representaciones visuales de área.
+
+5
+00:00:31,640 --> 00:00:36,801
+Android proporciona soporte para la representación
+de mapas a través de Android Google Maps
+
+6
+00:00:36,801 --> 00:00:42,280
+(API v2).
+Esta API proporciona varios tipos diferentes
+
+7
+00:00:42,280 --> 00:00:47,670
+de mapas -concretamente mapas normales-, los
+cuales se asemejan a los mapas de carreteras tradicionales.
+
+8
+00:00:48,860 --> 00:00:53,050
+Mapas de satélite, los cuales muestran
+fotografías aéreas de una zona.
+
+9
+00:00:54,090 --> 00:00:59,500
+Mapas híbridos, los cuales combinan fotografía
+de satélite y mapas de carreteras.
+
+10
+00:00:59,500 --> 00:01:02,020
+Y mapas de terreno,  los cuales
+muestran detalles topográficos
+
+11
+00:01:02,020 --> 00:01:04,150
+tales como la elevación.
+
+12
+00:01:05,950 --> 00:01:10,250
+Android permite a tu aplicación personalizar
+mapas de diversas maneras.
+
+13
+00:01:10,250 --> 00:01:16,360
+Por ejemplo, puedes cambiar el área
+del mapa que es visible para otro usuario.
+
+14
+00:01:16,360 --> 00:01:22,100
+puedes añadir iconos (llamados marcadores),
+a lugares específicos del mapa.
+
+15
+00:01:22,100 --> 00:01:25,430
+Y puedes añadir imágenes superpuestas encima
+del mapa.
+
+16
+00:01:27,040 --> 00:01:30,280
+Puedes hacer que el mapa responda a los gestos,
+tales como
+
+17
+00:01:30,280 --> 00:01:32,710
+la presión de dos dedos, estirar y pellizcar para hacer zoom.
+
+18
+00:01:32,710 --> 00:01:35,800
+y la rotación de dos dedos para girar el mapa.
+
+19
+00:01:36,960 --> 00:01:41,030
+Y también puedes tener la localización
+actual del usuario indicada en el mapa.
+
+20
+00:01:41,030 --> 00:01:44,070
+Por ejemplo, colocando un marcador
+especial en el mapa.
+
+21
+00:01:45,670 --> 00:01:47,690
+Para mostrar mapas, tu aplicación, tendrá
+
+22
+00:01:47,690 --> 00:01:50,670
+probablemente que usar alguna de
+las siguientes clases:
+
+23
+00:01:51,710 --> 00:01:52,810
+GoogleMap,
+
+24
+00:01:52,810 --> 00:01:55,160
+la cual representa, y gestiona,
+el mapa en sí mismo.
+
+25
+00:01:56,540 --> 00:02:00,680
+MapFragment, el cual muestra el GoogleMap
+dentro de un Fragment.
+
+26
+00:02:01,710 --> 00:02:06,540
+Camera, la cual define la parte del mapa
+que es visible en la pantalla.
+
+27
+00:02:06,540 --> 00:02:10,710
+Y define el punto de vista desde el cual
+el usuario está viendo el mapa.
+
+28
+00:02:11,780 --> 00:02:15,070
+y Marker, la cual representa iconos
+, a veces
+
+29
+00:02:15,070 --> 00:02:17,960
+con ventanas emergentes, que indican
+localizaciones
+
+30
+00:02:17,960 --> 00:02:19,060
+en el mapa
+
+31
+00:02:19,060 --> 00:02:20,980
+y luego permiten a tu aplicación
+
+32
+00:02:20,980 --> 00:02:24,990
+mostrar información asociada a esas
+localizaciones.
+
+33
+00:02:26,670 --> 00:02:32,500
+Para configurar y ejecutar una aplicación de mapas
+necesitarás seguir algunos pasos extra.
+
+34
+00:02:32,500 --> 00:02:36,710
+Por ejemplo, necesitarás configurar el
+SDK de servicios de GooglePlay.
+
+35
+00:02:37,710 --> 00:02:42,370
+Necesitarás obtener una clave de API,
+que identifique tu aplicación.
+
+36
+00:02:42,370 --> 00:02:43,510
+Necesitarás especificar
+
+37
+00:02:43,510 --> 00:02:49,180
+permisos, configuraciones y la clave API
+en el archivo AndroidManifest.xml.
+
+38
+00:02:50,230 --> 00:02:54,460
+Y después necesitarás añadir
+el mapa a tu aplicación
+
+39
+00:02:54,460 --> 00:02:57,030
+Estos pasos son descritos en más detalle
+
+40
+00:02:57,030 --> 00:02:58,130
+.en la siguiente URL.
+
+41
+00:03:01,910 --> 00:03:05,780
+Con el fin de usar los mapas, necesitarás
+incluir varios permisos.
+
+42
+00:03:05,780 --> 00:03:08,840
+Necesitarás el permiso de Internet,
+para que de esta forma las
+
+43
+00:03:08,840 --> 00:03:13,000
+imágenes del mapa puedan ser descargadas de
+los servidores de Google Maps.
+
+44
+00:03:13,000 --> 00:03:17,759
+También necesitarás el permiso ACCESS_NETWORK_STATE.
+
+45
+00:03:19,270 --> 00:03:23,910
+El cuál es usado por la API de mapas para
+determinar si puede descargar datos.
+
+46
+00:03:25,410 --> 00:03:28,850
+Necesitarás  el permiso WRITE_EXTERNAL_STORAGE
+
+47
+00:03:28,850 --> 00:03:31,320
+porque los datos del mapa necesitan ser
+
+48
+00:03:31,320 --> 00:03:35,060
+escritos para el área de almacenamiento
+externo del dispositivo.
+
+49
+00:03:35,060 --> 00:03:45,180
+Y necesitarás el permiso
+google.android.providers.gsf.permission.READ_GSERVICES
+
+50
+00:03:45,340 --> 00:03:50,220
+debido a que las APIS de mapas
+pueden acceder a los servicios de Google Web.
+
+51
+00:03:52,590 --> 00:03:55,770
+Y si tu mapa implica requerir información
+de localización,
+
+52
+00:03:55,770 --> 00:03:59,650
+Por ejemplo, para mostrar la localización
+actual del usuario, entonces también
+
+53
+00:03:59,650 --> 00:04:05,080
+necesitarás especificar uno o más de los
+permisos ACCESS_COARSE_LOCATION
+
+54
+00:04:05,080 --> 00:04:10,920
+y ACESS_FIND_LOCATION.
+
+55
+00:04:12,890 --> 00:04:17,230
+Nuestra siguiente aplicación de ejemplo
+se llama "MapEarthQuakeMap" (MapaTerremotoMapa)
+
+56
+00:04:18,280 --> 00:04:22,070
+y esta adquiere datos de un terremoto
+desde un servidor,
+
+57
+00:04:22,070 --> 00:04:27,160
+y después muestra dichos datos en un
+mapa usando marcadores seleccionables.
+
+58
+00:04:27,160 --> 00:04:28,270
+Vamos a echar un vistazo.
+So
+
+59
+00:04:30,430 --> 00:04:31,190
+Aquí está mi dispositivo.
+
+60
+00:04:31,190 --> 00:04:36,660
+Y, antes de mostrarte la aplicación,
+
+61
+00:04:36,660 --> 00:04:39,480
+déjame volver de nuevo a la lección
+sobre la red.
+
+62
+00:04:40,630 --> 00:04:45,990
+Si recuerdas en dicha lección
+te mostré la aplicación, de red Android,
+
+63
+00:04:45,990 --> 00:04:51,370
+ciente HTTP, JASSON. El cual
+
+64
+00:04:51,370 --> 00:04:55,667
+lanza una petición de red de datos
+del terremoto desde
+
+65
+00:04:55,667 --> 00:05:00,605
+el servicio web api.geonames.org.
+
+66
+00:05:01,910 --> 00:05:03,770
+Y esta devuelve una lista de
+
+67
+00:05:03,770 --> 00:05:07,010
+terremotos que han tenido lugar
+en una
+
+68
+00:05:07,010 --> 00:05:10,780
+región geográfica concreta, y tras esto
+la aplicación muestra
+
+69
+00:05:10,780 --> 00:05:13,490
+dichos datos en una sencilla ListView.
+
+70
+00:05:15,190 --> 00:05:17,670
+Ahora iniciaré la aplicación, así
+
+71
+00:05:17,670 --> 00:05:20,010
+puedes recordar que aspecto tenía
+su interfaz.
+
+72
+00:05:21,070 --> 00:05:21,690
+Ahí vamos.
+
+73
+00:05:24,420 --> 00:05:27,120
+Como puedes observar, la aplicación
+obtiene los datos del terremoto
+
+74
+00:05:27,120 --> 00:05:30,130
+y los muestra en una ListView.
+
+75
+00:05:32,060 --> 00:05:34,230
+Esto está indudablemente bien.
+
+76
+00:05:34,230 --> 00:05:37,010
+Los datos que yo quería están ahí,
+en la pantalla.
+
+77
+00:05:38,150 --> 00:05:41,520
+Pero la interfaz de usuario no me es del
+todo útil.
+
+78
+00:05:41,520 --> 00:05:44,610
+Por ejemplo, no puedo visualizar
+donde
+
+79
+00:05:44,610 --> 00:05:47,680
+están realmente esas localizaciones
+en la Tierra.
+
+80
+00:05:47,680 --> 00:05:49,770
+Y no puedo distinguir fácilmente
+
+81
+00:05:49,770 --> 00:05:52,800
+los terremotos grandes de los terremotos
+de menor fuerza.
+
+82
+00:05:54,960 --> 00:05:58,900
+Entonces, vamos ahora a ver la aplicación
+de terremotos "MapEarthQuakeMap"
+
+83
+00:05:58,900 --> 00:06:03,790
+Y veremos los mismos datos, pero esta vez
+presentados en un mapa.
+
+84
+00:06:06,060 --> 00:06:06,560
+Ahí vamos,
+
+85
+00:06:09,410 --> 00:06:13,880
+Como puedes ver, en lugar de una ListView
+mostrando cantidad de texto los
+
+86
+00:06:13,880 --> 00:06:18,380
+datos del terremoto ahora aparecen como
+un conjunto de marcadores en un mapamundi.
+
+87
+00:06:19,630 --> 00:06:23,900
+La localización del marcador nos dice
+donde tuvo lugar el terremoto.
+
+88
+00:06:24,960 --> 00:06:29,640
+Y el color del marcador indica la magnitud
+del mismo.
+
+89
+00:06:29,640 --> 00:06:34,660
+Los marcadores que tiene un tono más rojo,
+indican terremotos de mayor magnitud.
+
+90
+00:06:34,660 --> 00:06:38,790
+Los marcadores que tienen un tono azul
+indican terremotos de magnitud menor.
+
+91
+00:06:40,120 --> 00:06:42,465
+Y además, si toco un marcador, una
+
+92
+00:06:42,465 --> 00:06:47,070
+una ventana emergente aparecerá,
+mostrando la magnitud de ese terremoto.
+
+93
+00:06:47,070 --> 00:06:51,140
+Ahora, permíteme hacer zoom en ella
+y tocar unos pocos marcadores.
+
+94
+00:07:00,860 --> 00:07:04,310
+De acuerdo, vamos a echarle un vistazo al código
+fuente de esta aplicación.
+
+95
+00:07:06,960 --> 00:07:13,080
+Aquí tenemos la aplicación abierta en el IDE.
+Ahora abriré la actividad principal.
+
+96
+00:07:13,080 --> 00:07:20,340
+En onCreate, fija la vista contenido
+al archivo main.xml
+
+97
+00:07:20,340 --> 00:07:25,380
+en el directorio res/layout.
+Vamos a abrir dicho archivo.
+
+98
+00:07:28,840 --> 00:07:31,990
+Y aquí puedes ver que el layout está
+compuesto de
+
+99
+00:07:31,990 --> 00:07:35,645
+un solo fragmento que es proporcionado
+por la clase
+
+100
+00:07:35,645 --> 00:07:43,390
+com.google.android.gms.maps.mapfragment.
+
+101
+00:07:46,590 --> 00:07:51,610
+Volviendo hacia atrás, a la actividad principal,
+la aplicación crea e inicia una
+
+102
+00:07:51,610 --> 00:07:57,040
+tarea asíncrona, la cual consigue los
+datos del terremoto en el método doInBackground.
+
+103
+00:07:59,210 --> 00:08:06,600
+Y después lo disecciona y actualiza
+el mapa en el método onPostExecute.
+
+104
+00:08:06,600 --> 00:08:09,370
+Luego, vamos desplazarnos hacia abajo,
+hasta el método onPostExecute.
+
+105
+00:08:10,950 --> 00:08:12,990
+Este método comienza obteniendo una referencia
+
+106
+00:08:12,990 --> 00:08:16,040
+al fragmento al mapa de Google contenido en el
+fragmento de mapa (MapFragment).
+
+107
+00:08:17,040 --> 00:08:20,400
+Después, itera através de los
+datos resultantes.
+
+108
+00:08:20,400 --> 00:08:24,220
+y por cada objeo EarthQuakeRec en dichos
+datos.
+
+109
+00:08:24,220 --> 00:08:25,900
+Este código añade un nuevo marcador.
+
+110
+00:08:27,080 --> 00:08:33,230
+Y cada marcador es creado mediante
+la creación de un objeto de opciones de marcador
+
+111
+00:08:33,230 --> 00:08:38,090
+y pasándole, después, dicho objeto al
+método addMarker.
+
+112
+00:08:39,950 --> 00:08:42,280
+Y, como hemos visto con otras API's,
+
+113
+00:08:42,280 --> 00:08:46,080
+la clase MarkerOptions usa interfaz agradecida.
+
+114
+00:08:46,080 --> 00:08:49,290
+y luego el código crea un nuevo
+
+115
+00:08:49,290 --> 00:08:54,520
+objeto MarkerOption vacío, y luego
+fija la posición del marcador, llamando
+
+116
+00:08:54,520 --> 00:08:59,540
+el método position, and luego  clava con una
+chincheta el texto que
+
+117
+00:08:59,540 --> 00:09:05,360
+aparecerá en una ventana de información emergente
+cuando el usuario toque el marcador.
+
+118
+00:09:05,360 --> 00:09:06,950
+Llamando al método title.
+
+119
+00:09:08,060 --> 00:09:12,200
+En este caso este simplemente
+muestra la magnitud del terremoto.
+
+120
+00:09:13,440 --> 00:09:14,660
+Y después de eso
+
+121
+00:09:14,660 --> 00:09:20,100
+el código fija el color del marcador por medio
+de una llamada al método icon,
+
+122
+00:09:20,100 --> 00:09:23,050
+pasándole el marcador por defecto;
+pero configurando
+
+123
+00:09:23,050 --> 00:09:26,640
+su color para reflejar la magnitud del terremoto.
+
+124
+00:09:28,390 --> 00:09:32,580
+Finalmente el código llama al método moveCamera
+
+125
+00:09:32,580 --> 00:09:35,400
+para centrar el mapa a una localización
+particular.
+
+126
+00:09:36,670 --> 00:09:39,710
+Ahora para mantener la simplicidad de este
+ejemplo, He precalculado
+
+127
+00:09:39,710 --> 00:09:41,320
+el centro del mapa.
+
+128
+00:09:41,320 --> 00:09:44,820
+Pero, por supuesto, podría ser mucho mejor
+(y más robusto)
+
+129
+00:09:44,820 --> 00:09:49,280
+calcular el centro en base a los datos
+actuales devueltos por el servicio web.
+
+130
+00:09:54,130 --> 00:09:58,500
+Bueno, eso fue todo para nuestra
+lección de localización y mapas.
+
+131
+00:09:58,500 --> 00:10:02,760
+Por favor, únete a mí en la próxima clase,
+cuando hablemos sobre el manejo de datos.
+
+132
+00:10:02,760 --> 00:10:03,210
+¡Hasta entonces!.
+</pre>

@@ -1,0 +1,77 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:Pitfalls</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><strong>Common pitfalls and source of frustration</strong> -- please note that some information given here can be outdated by the time you read them.</p>
+<p>You should follow manual but you will be graded by automatic grader based on reference tools (lexer, parser, etc.). If you see that reference tool does not follow the COOL manual, take a reference tool side -- this will get you the points (also bring such case to Staff attention).</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Assignments"><span class="tocnumber">1</span> <span class="toctext">Assignments</span></a>
+<ul>
+<li class="toclevel-2"><a href="#PA2_.28lexer.29"><span class="tocnumber">1.1</span> <span class="toctext">PA2 (lexer)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#C.2B.2B_framework"><span class="tocnumber">1.1.1</span> <span class="toctext">C++ framework</span></a></li>
+<li class="toclevel-3"><a href="#Java_framework"><span class="tocnumber">1.1.2</span> <span class="toctext">Java framework</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#PA3_.28parser.29"><span class="tocnumber">1.2</span> <span class="toctext">PA3 (parser)</span></a></li>
+<li class="toclevel-2"><a href="#PA5_.28code_generation.29"><span class="tocnumber">1.3</span> <span class="toctext">PA5 (code generation)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Deduce_It"><span class="tocnumber">2</span> <span class="toctext">Deduce It</span></a>
+<ul>
+<li class="toclevel-2"><a href="#DI_5_.28Operational_Semantics_I.29"><span class="tocnumber">2.1</span> <span class="toctext">DI 5 (Operational Semantics I)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Assignments">Assignments</span></h1>
+<h2> <span class="mw-headline" id="PA2_.28lexer.29">PA2 (lexer)</span></h2>
+<ul>
+<li><p><code>LET_STMT</code> token -- ignore it, this is some kind of leftover after building COOL framework</p></li>
+<li><p>escaping strings -- if you see too many backslashes or too few in your output it is most likely you don't process the input they way COOL manual describes it. You have to read a string, and <strong>convert</strong> it to store data internally, so then after converting it back (this is done by provided code), you will get the same string as you saw at input (with exception of the characters which have double mapping). Pay extra attention to how newline (linefeed) can be written in source COOL program -- it is nothing out of order to have several backslashes in a row in your rules.</p></li>
+<li><p>What value in <code>TokenConstants</code> should one use for <code>~</code>, the integer complement symbol?  There is no <code>TokenConstants.COMP</code> as one might expect.  For <code>~</code> you must use <code>TokenConstants.NEG</code>.</p></li>
+</ul>
+<h3> <span class="mw-headline" id="C.2B.2B_framework">C++ framework</span></h3>
+<ul>
+<li>missing tokens -- indeed in C++ framework tokens for single characters are not defined, define them yourself or use single characters directly as tokens, since framework assumes the token value of single character to be its ASCII code and all other tokens are above 255 value, you can
+safely do this</li>
+</ul>
+<h3> <span class="mw-headline" id="Java_framework">Java framework</span></h3>
+<ul>
+<li><p>JLex states -- JLex does not have inclusive/exclusive state distinction, so look carefully if you didn't omit a state in some rule (this would mean -- all states apply).</p></li>
+<li><p>JLex metacharacters -- dot metacharacter does not match newline (<code>\n</code>) <strong>and also</strong> does not match carriage return (<code>\r</code>). JLex does not know what <code>\v</code> means so use numeric code for it.</p></li>
+</ul>
+<h2> <span class="mw-headline" id="PA3_.28parser.29">PA3 (parser)</span></h2>
+<ul>
+<li><p><code>nonterminal</code> vs. <code>non terminal</code> - both are correct as of CUP 0.10j. This can be confusing because the <a rel="nofollow" class="external text" href="http://www2.cs.tum.edu/projects/cup/manual.html">CUP manual</a> almost exclusively uses <code>non terminal</code> but <code>cool.cup</code> uses <code>nonterminal</code>.</p></li>
+<li><p>Cool uses the tilde (<code>~</code>) symbol to indicate integer complement, but as stated above, the entry in <code>TokenConstants</code> for this is <code>NEG</code> and so it is also the terminal symbol to use in the parser assignment. Also, the constructor that is needed in cool.cup is <a rel="nofollow" class="external text" href="http://www.stanford.edu/class/archive/cs/cs143/cs143.1112/javadoc/cool_ast/neg.html">neg()</a>.</p></li>
+<li><p>The <code>not</code> keyword is used in Cool for boolean complement.  What's confusing here is what constructor to use for this as a not() constructor does not exist: you must use the <a rel="nofollow" class="external text" href="http://www.stanford.edu/class/archive/cs/cs143/cs143.1112/javadoc/cool_ast/comp.html">comp()</a> constructor.</p></li>
+</ul>
+<h2> <span class="mw-headline" id="PA5_.28code_generation.29">PA5 (code generation)</span></h2>
+<ul>
+<li>spim -- before you post any report about spim, make sure you use spim provided by Staff, not spim distributed through your distro channels. The former is customized to work with COOL library, so no surprise the latter one will give you errors.</li>
+</ul>
+<h1> <span class="mw-headline" id="Deduce_It">Deduce It</span></h1>
+<h2> <span class="mw-headline" id="DI_5_.28Operational_Semantics_I.29">DI 5 (Operational Semantics I)</span></h2>
+<ul>
+<li>when using sequencing rule enclose more complex expressions in parenthesis (not braces)</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:Pitfalls&amp;oldid=10859">https://share.coursera.org/wiki/index.php?title=Compilers:Pitfalls&amp;oldid=10859</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

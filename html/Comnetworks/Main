@@ -1,0 +1,849 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Comnetworks:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Computer_Networks"><span class="tocnumber">1</span> <span class="toctext">Computer Networks</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Background"><span class="tocnumber">1.1</span> <span class="toctext">Background</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Topic:_Unit_Conversion"><span class="tocnumber">1.1.1</span> <span class="toctext">Topic: Unit Conversion</span></a></li>
+<li class="toclevel-3"><a href="#Topic:_Logarithms_.28Used_in_Week_2_.28Nyquist.2C_Shannon.29.29"><span class="tocnumber">1.1.2</span> <span class="toctext">Topic: Logarithms (Used in Week 2 (Nyquist, Shannon))</span></a></li>
+<li class="toclevel-3"><a href="#Topic:_Binary_Representation_of_Numbers_.28Used_in_Week_2_.28Hamming.29.29"><span class="tocnumber">1.1.3</span> <span class="toctext">Topic: Binary Representation of Numbers (Used in Week 2 (Hamming))</span></a></li>
+<li class="toclevel-3"><a href="#Topic:_Hexadecimal_Representation_of_Numbers_.28Used_in_Week_2_.28Internet_checksum.29.29"><span class="tocnumber">1.1.4</span> <span class="toctext">Topic: Hexadecimal Representation of Numbers (Used in Week 2 (Internet checksum))</span></a></li>
+<li class="toclevel-3"><a href="#Topic:_XOR_.28exclusive_OR.29_and_Modulo_Addition_.28Used_in_Week_2_.28CRCs.29.29"><span class="tocnumber">1.1.5</span> <span class="toctext">Topic: XOR (exclusive OR) and Modulo Addition (Used in Week 2 (CRCs))</span></a></li>
+<li class="toclevel-3"><a href="#Topic:_Finite_State_Machines"><span class="tocnumber">1.1.6</span> <span class="toctext">Topic: Finite State Machines</span></a></li>
+<li class="toclevel-3"><a href="#Topic:_Distributed_Computing"><span class="tocnumber">1.1.7</span> <span class="toctext">Topic: Distributed Computing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_1:_Introduction.2C_Layered_Model"><span class="tocnumber">1.2</span> <span class="toctext">Week 1: Introduction, Layered Model</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Course_goals"><span class="tocnumber">1.2.1</span> <span class="toctext">Course goals</span></a></li>
+<li class="toclevel-3"><a href="#Uses_of_networks"><span class="tocnumber">1.2.2</span> <span class="toctext">Uses of networks</span></a></li>
+<li class="toclevel-3"><a href="#Network_components.2C_with_example_networks"><span class="tocnumber">1.2.3</span> <span class="toctext">Network components, with example networks</span></a></li>
+<li class="toclevel-3"><a href="#Socket_API"><span class="tocnumber">1.2.4</span> <span class="toctext">Socket API</span></a></li>
+<li class="toclevel-3"><a href="#Traceroute"><span class="tocnumber">1.2.5</span> <span class="toctext">Traceroute</span></a></li>
+<li class="toclevel-3"><a href="#Protocols_and_layering"><span class="tocnumber">1.2.6</span> <span class="toctext">Protocols and layering</span></a></li>
+<li class="toclevel-3"><a href="#History_of_the_internet"><span class="tocnumber">1.2.7</span> <span class="toctext">History of the internet</span></a></li>
+<li class="toclevel-3"><a href="#Lecture_Notes"><span class="tocnumber">1.2.8</span> <span class="toctext">Lecture Notes</span></a></li>
+<li class="toclevel-3"><a href="#References"><span class="tocnumber">1.2.9</span> <span class="toctext">References</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_2:_Physical_and_Link_Layers"><span class="tocnumber">1.3</span> <span class="toctext">Week 2: Physical and Link Layers</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Message_latency_model"><span class="tocnumber">1.3.1</span> <span class="toctext">Message latency model</span></a></li>
+<li class="toclevel-3"><a href="#Signals"><span class="tocnumber">1.3.2</span> <span class="toctext">Signals</span></a></li>
+<li class="toclevel-3"><a href="#Modulation_schemes"><span class="tocnumber">1.3.3</span> <span class="toctext">Modulation schemes</span></a></li>
+<li class="toclevel-3"><a href="#Bandwidth.2C_Shannon"><span class="tocnumber">1.3.4</span> <span class="toctext">Bandwidth, Shannon</span></a></li>
+<li class="toclevel-3"><a href="#Clocking_and_framing"><span class="tocnumber">1.3.5</span> <span class="toctext">Clocking and framing</span></a></li>
+<li class="toclevel-3"><a href="#Error_detection_schemes"><span class="tocnumber">1.3.6</span> <span class="toctext">Error detection schemes</span></a></li>
+<li class="toclevel-3"><a href="#Error_correction_schemes"><span class="tocnumber">1.3.7</span> <span class="toctext">Error correction schemes</span></a></li>
+<li class="toclevel-3"><a href="#Bandwidth-delay_product"><span class="tocnumber">1.3.8</span> <span class="toctext">Bandwidth-delay product</span></a></li>
+<li class="toclevel-3"><a href="#Lecture_Notes_2"><span class="tocnumber">1.3.9</span> <span class="toctext">Lecture Notes</span></a></li>
+<li class="toclevel-3"><a href="#References_2"><span class="tocnumber">1.3.10</span> <span class="toctext">References</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_3:_Retransmissions.2C_Multiple_access.2C_Switching"><span class="tocnumber">1.4</span> <span class="toctext">Week 3: Retransmissions, Multiple access, Switching</span></a>
+<ul>
+<li class="toclevel-3"><a href="#ARQ"><span class="tocnumber">1.4.1</span> <span class="toctext">ARQ</span></a></li>
+<li class="toclevel-3"><a href="#Multiplexing_schemes_.28TDM._FDM.29"><span class="tocnumber">1.4.2</span> <span class="toctext">Multiplexing schemes (TDM. FDM)</span></a></li>
+<li class="toclevel-3"><a href="#Random_access_.2F_Ethernet"><span class="tocnumber">1.4.3</span> <span class="toctext">Random access / Ethernet</span></a></li>
+<li class="toclevel-3"><a href="#Wireless_multi-access_.2F_802.11"><span class="tocnumber">1.4.4</span> <span class="toctext">Wireless multi-access / 802.11</span></a></li>
+<li class="toclevel-3"><a href="#Contention_free_.2F_Token_Ring"><span class="tocnumber">1.4.5</span> <span class="toctext">Contention free / Token Ring</span></a></li>
+<li class="toclevel-3"><a href="#Basic_switch_vs_hub_model"><span class="tocnumber">1.4.6</span> <span class="toctext">Basic switch vs hub model</span></a></li>
+<li class="toclevel-3"><a href="#LAN_switching_.28spanning_tree.2C_backward_learning.29"><span class="tocnumber">1.4.7</span> <span class="toctext">LAN switching (spanning tree, backward learning)</span></a></li>
+<li class="toclevel-3"><a href="#Lecture_Notes_3"><span class="tocnumber">1.4.8</span> <span class="toctext">Lecture Notes</span></a></li>
+<li class="toclevel-3"><a href="#References_3"><span class="tocnumber">1.4.9</span> <span class="toctext">References</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_4:_Network_layer.2C_Internetworking.2C_and_NAT"><span class="tocnumber">1.5</span> <span class="toctext">Week 4: Network layer, Internetworking, and NAT</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Datagram_and_virtual_circuit_models"><span class="tocnumber">1.5.1</span> <span class="toctext">Datagram and virtual circuit models</span></a></li>
+<li class="toclevel-3"><a href="#IP_addresses_and_prefixes"><span class="tocnumber">1.5.2</span> <span class="toctext">IP addresses and prefixes</span></a></li>
+<li class="toclevel-3"><a href="#IP_forwarding_.28longest_matching_prefix.29_and_MPLS"><span class="tocnumber">1.5.3</span> <span class="toctext">IP forwarding (longest matching prefix) and MPLS</span></a></li>
+<li class="toclevel-3"><a href="#IPv4_and_IPv6"><span class="tocnumber">1.5.4</span> <span class="toctext">IPv4 and IPv6</span></a></li>
+<li class="toclevel-3"><a href="#Helpers:_ARP.2C_DHCP"><span class="tocnumber">1.5.5</span> <span class="toctext">Helpers: ARP, DHCP</span></a></li>
+<li class="toclevel-3"><a href="#Internetworking"><span class="tocnumber">1.5.6</span> <span class="toctext">Internetworking</span></a></li>
+<li class="toclevel-3"><a href="#Fragmentation_and_PMTU_discovery"><span class="tocnumber">1.5.7</span> <span class="toctext">Fragmentation and PMTU discovery</span></a></li>
+<li class="toclevel-3"><a href="#Errors:_ICMP.2C_and_traceroute"><span class="tocnumber">1.5.8</span> <span class="toctext">Errors: ICMP, and traceroute</span></a></li>
+<li class="toclevel-3"><a href="#NAT"><span class="tocnumber">1.5.9</span> <span class="toctext">NAT</span></a></li>
+<li class="toclevel-3"><a href="#Lecture_Notes_4"><span class="tocnumber">1.5.10</span> <span class="toctext">Lecture Notes</span></a></li>
+<li class="toclevel-3"><a href="#References_4"><span class="tocnumber">1.5.11</span> <span class="toctext">References</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_5:_Routing.2C_Intra-_and_Inter-_Domain"><span class="tocnumber">1.6</span> <span class="toctext">Week 5: Routing, Intra- and Inter- Domain</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Shortest_cost_routing_model"><span class="tocnumber">1.6.1</span> <span class="toctext">Shortest cost routing model</span></a></li>
+<li class="toclevel-3"><a href="#Distance_vector"><span class="tocnumber">1.6.2</span> <span class="toctext">Distance vector</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Distance_vector:_tool_for_experimenting_with_a_RIP-like_protocol"><span class="tocnumber">1.6.2.1</span> <span class="toctext">Distance vector: tool for experimenting with a RIP-like protocol</span></a>
+<ul>
+<li class="toclevel-5"><a href="#On_the_subject_of_the_.22count-to-infinity.22_problem:"><span class="tocnumber">1.6.2.1.1</span> <span class="toctext">On the subject of the "count-to-infinity" problem:</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Flooding"><span class="tocnumber">1.6.3</span> <span class="toctext">Flooding</span></a></li>
+<li class="toclevel-3"><a href="#Link_state"><span class="tocnumber">1.6.4</span> <span class="toctext">Link state</span></a></li>
+<li class="toclevel-3"><a href="#Equal-cost_multi-path_routing"><span class="tocnumber">1.6.5</span> <span class="toctext">Equal-cost multi-path routing</span></a></li>
+<li class="toclevel-3"><a href="#Hierarchical_routing"><span class="tocnumber">1.6.6</span> <span class="toctext">Hierarchical routing</span></a></li>
+<li class="toclevel-3"><a href="#IP_prefix_aggregation_and_subnetting"><span class="tocnumber">1.6.7</span> <span class="toctext">IP prefix aggregation and subnetting</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Tool_for_learning_about_prefix_aggregation"><span class="tocnumber">1.6.7.1</span> <span class="toctext">Tool for learning about prefix aggregation</span></a>
+<ul>
+<li class="toclevel-5"><a href="#Further_questions_to_think_about"><span class="tocnumber">1.6.7.1.1</span> <span class="toctext">Further questions to think about</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Interdomain_routing_with_BGP"><span class="tocnumber">1.6.8</span> <span class="toctext">Interdomain routing with BGP</span></a></li>
+<li class="toclevel-3"><a href="#Lecture_Notes_5"><span class="tocnumber">1.6.9</span> <span class="toctext">Lecture Notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_6:_Midterm_and_break"><span class="tocnumber">1.7</span> <span class="toctext">Week 6: Midterm and break</span></a></li>
+<li class="toclevel-2"><a href="#Week_7:_Transport_Layer.2C_Reliable_Transport"><span class="tocnumber">1.8</span> <span class="toctext">Week 7: Transport Layer, Reliable Transport</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Lecture_Notes_6"><span class="tocnumber">1.8.1</span> <span class="toctext">Lecture Notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_8:_Congestion_Control"><span class="tocnumber">1.9</span> <span class="toctext">Week 8: Congestion Control</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Lecture_Notes_7"><span class="tocnumber">1.9.1</span> <span class="toctext">Lecture Notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_9:_DNS.2C_HTTP.2FWeb.2C_Content_Distribution"><span class="tocnumber">1.10</span> <span class="toctext">Week 9: DNS, HTTP/Web, Content Distribution</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Lecture_Notes_8"><span class="tocnumber">1.10.1</span> <span class="toctext">Lecture Notes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_10:_QOS_and_Real-Time_Apps"><span class="tocnumber">1.11</span> <span class="toctext">Week 10: QOS and Real-Time Apps</span></a>
+<ul>
+<li class="toclevel-3"><a href="#LECTURE_NOTES_9"><span class="tocnumber">1.11.1</span> <span class="toctext">LECTURE NOTES</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_11:_Network_Security"><span class="tocnumber">1.12</span> <span class="toctext">Week 11: Network Security</span></a>
+<ul>
+<li class="toclevel-3"><a href="#LECTURE_NOTES_10"><span class="tocnumber">1.12.1</span> <span class="toctext">LECTURE NOTES</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#List_of_ACRONYMS_for_the_course"><span class="tocnumber">1.13</span> <span class="toctext">List of ACRONYMS for the course</span></a></li>
+<li class="toclevel-2"><a href="#COURSE_CONTENT"><span class="tocnumber">1.14</span> <span class="toctext">COURSE CONTENT</span></a></li>
+<li class="toclevel-2"><a href="#Optional"><span class="tocnumber">1.15</span> <span class="toctext">Optional</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Short_Guide_to_LaTeX"><span class="tocnumber">1.15.1</span> <span class="toctext">Short Guide to LaTeX</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Step_1:_Find_the_Latex_syntax_for_each_Math_symbols"><span class="tocnumber">1.15.1.1</span> <span class="toctext">Step 1: Find the Latex syntax for each Math symbols</span></a></li>
+<li class="toclevel-4"><a href="#Step_2:_Piece_each_Latex_symbols_together"><span class="tocnumber">1.15.1.2</span> <span class="toctext">Step 2: Piece each Latex symbols together</span></a></li>
+<li class="toclevel-4"><a href="#Step_3:_Fill_in_the_symbols_with_values_and_variables"><span class="tocnumber">1.15.1.3</span> <span class="toctext">Step 3: Fill in the symbols with values and variables</span></a></li>
+<li class="toclevel-4"><a href="#Step_4:_Let_the_Internet_know_you.27ve_written_Latex.21"><span class="tocnumber">1.15.1.4</span> <span class="toctext">Step 4: Let the Internet know you've written Latex!</span></a></li>
+<li class="toclevel-4"><a href="#Step_5:_Just_keep_doing_it"><span class="tocnumber">1.15.1.5</span> <span class="toctext">Step 5: Just keep doing it</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">2</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Computer_Networks">Computer Networks</span></h1>
+<p>by Arvind Krishnamurthy, David Wetherall, John Zahorjan</p>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/comnetworks-2012-001/class/index">Course Home Page</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.amazon.com/gp/product/0132126958/">Optional Textbook</a></p>
+<p><a rel="nofollow" class="external text" href="http://computernetworks5e.org/blogs/">Textbook Blog</a></p>
+<p><a rel="nofollow" class="external text" href="http://media.pearsoncmg.com/ph/streaming/esm/tanenbaum5e_videonotes/tanenbaum_videoNotes.html">Lecture Videos</a></p>
+<h2> <span class="mw-headline" id="Background">Background</span></h2>
+<p>This section provides a helping hand on specific topics that are prerequisites for taking the course.</p>
+<h3> <span class="mw-headline" id="Topic:_Unit_Conversion">Topic: Unit Conversion</span></h3>
+<p>Unit conversions have been shown in lectures and requested in homework assignments. Here's a refresher for those who have forgotten or never learned the technique.</p>
+<p>Convert units of different measure, such as meters &lt;=&gt; feet or minutes &lt;=&gt; seconds, use a technique known as <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Units_conversion_by_factor-label">factor-label</a>.</p>
+<p>This technique multiplies known measures and units by ratios of equivalent measures, but different units, such that the undesired units cancel, and you're left the desired units.</p>
+<p>As an example, since light travels at 300,000,000 meters/second, as listed in class, and the earth is roughly 93,000,000 miles from the sun, how many minutes does it take for light from the sun to reach the earth?</p>
+<p>Time = Distance/Rate</p>
+<p>? minutes = (93,000,000 miles)/(300,000,000 meters/second)</p>
+<p>The units are all different like comparing apples to oranges. We'll use factor-label to bring them into alignment.</p>
+<p>We'll use a few equivalences:</p>
+<p>1 mile = 1609 meters</p>
+<p>1 minute = 60 seconds</p>
+<p>? minutes = (93,000,000 miles)/(300,000,000 meters/second) x (1609 meters/1 mile) x (1 minute/60 seconds)</p>
+<p>The units all cancel out leaving minutes. The numbers evaluate to: 8.31 minutes, or roughly 8 minutes and 20 seconds, which can be confirmed at <a rel="nofollow" class="external free" href="http://curious.astro.cornell.edu/question.php?number=197">http://curious.astro.cornell.edu/question.php?number=197</a></p>
+<h3> <span class="mw-headline" id="Topic:_Logarithms_.28Used_in_Week_2_.28Nyquist.2C_Shannon.29.29">Topic: Logarithms (Used in Week 2 (Nyquist, Shannon))</span></h3>
+<p>Most mathematical operations have an inverse, that is two operations that reverse each other. The inverse of addition is subtraction. The inverse of multiplication is division.</p>
+<p>The inverse of an exponent operation is the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Logarithm">logarithm</a>. Let's first review exponents. This is a fixed base number raised to a certain power. For example $$10^x$$ is an exponent expression, which is basically 10 multiplied by itself x times. $$10^1 = 10$$. $$10^2 = 10 &#42; 10 = 100$$. $$10^3 = 10 &#42; 10 &#42; 10 = 1000$$. </p>
+<p>The logarithm works reverses this. If you have $$10^x = 10,000$$, and you want to know what x is, you use logarithms. In this case log(10,000) = 4. That is you have to multiple 10 by itself 4 times to get 10,000.</p>
+<p>But were did the 10 go in log(10,000)? Traditionally log(x) represents base 10; however, the properties of logarithms work for any base. If you wish to specify a base, it's represented as a subscript to the lower right of "log". There are several other common log bases, ln() is the logarithm for base e. This is used in physics and life sciences, but it doesn't appear much in computer science. log() and ln() appear on most scientific calculators.</p>
+<p>However <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Binary_logarithm">log base 2</a> occurs very frequently in computer science. It is sometimes represented as lg(n), ld(n), or even sometimes as log(n), which can get confusing with the base 10 version. lg(n) occurs frequently in computer science because it's the number of steps needed to split a group of elements into two equal groups repeatedly until you're down to one. Think of the kid's game Hi/Lo. One person thinks of a number from 1 to 100. The player guesses and is told if his guess is too high or too low from the secret number. The player narrows his guesses until the secret number is guessed. If the range were 1 to 1000, how many guesses would be required? It's 10, because lg(1,000) is just under 10, so the 10th guess might be needed.</p>
+<p>But calculators don't have lg(x) on them. How do we calculate lg(x)? There's a logarithmic formula for this: lg(x) = log(x)/log(2). That is log(x) of any base is log(x)/log(base), or even ln(x)/ln(base) too.</p>
+<p>Logarithms are part of common language, at least in America. We often refer to salaries by the number of "figures" in total annual pay. For example, a person making a 5 figure salary is making between $10,000 and $99,999 per year. A person making a 6 figure salary is making between $100,000 and $999,000 per year, etc. Using the term "x figure salary" is logarithmic (base 10), and usually well understood, even by people who claim they know nothing about logarithms!</p>
+<p>To learn more about logarithms, please see:</p>
+<ul>
+<li><p><a rel="nofollow" class="external free" href="https://www.khanacademy.org/math/algebra/logarithms-tutorial">https://www.khanacademy.org/math/algebra/logarithms-tutorial</a></p></li>
+<li><p><em>LOGARITHMS&#160;:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyTUxpVmpaYi1kX3c/edit">https://docs.google.com/file/d/0B0soxwuAdqQyTUxpVmpaYi1kX3c/edit</a>?</p></li>
+</ul>
+<h3> <span class="mw-headline" id="Topic:_Binary_Representation_of_Numbers_.28Used_in_Week_2_.28Hamming.29.29">Topic: Binary Representation of Numbers (Used in Week 2 (Hamming))</span></h3>
+<p>Our number system is based upon 10, mostly assumed because most people have 10 fingers (including thumbs) on their hands. Each column of digits represents a power of 10. Each additional digit added at the front of the list of digit represents an additional base 10 added to the number. So 123 represents 1 * 100 + 2 * 10 + 3 * 1.</p>
+<p>We take this numerical representation for granted, since most of us learned it as young children, but think about how powerful it is. We can represent every integer from 0 to 999,999 with just a set of 6 digits. If you doubt the elegance of this system, consider doing some <a rel="nofollow" class="external text" href="http://www.math.com/students/calculators_pre_ti/roman/compvterromanvs.html">arithmetic</a> using the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Roman_numerals">Roman numerical system</a>. </p>
+<p>When the first electrical/mechanical computers were designed, the engineers realized that representing 10 individual digits would not be feasible. However, they could represent a single digit system using a relay that was either on or off, where the on could be interpreted as a 1 and an off could be interpreted as a 0. Numbers could be represented in <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Binary_number">binary</a>, which is a set of 1 and 0 digits.</p>
+<p>This has some definite advantages. Digits could be represented easily. If larger values are needed, add more relays, where each new relay represents an additional power of 2. We can also think of on and off as being True and False, which leads us into the mathematical world described by George Bool and Boolean Algebra (<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Boolean_algebra">http://en.wikipedia.org/wiki/Boolean_algebra</a>). Not only could these on/off, 1/0, and True/False concepts be used for numerical representation, but they would help us design hardware to process these bits/digits as well.</p>
+<p>However, there are disadvantages. One needs more binary digits to represent a number than base 10 digits. 999,999 can be represented with 6 digits, but in binary it's 011110100001000111111 with 21 digits. It's also not easy for humans to think in binary after a few bits. The 21 digits for 999,999 aren't much more comprehensible than Roman numbers.</p>
+<p>Using base 10 for a number system isn't universal. The Babylonians used a number system based upon 60 (<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Babylonian_numerals">http://en.wikipedia.org/wiki/Babylonian_numerals</a>), which still influences us today: 60 minutes in an hour and 60 seconds in a minute.</p>
+<p>Had humans ignored our thumbs and counted only with our fingers using base 8, or octal, life would have been so much easier for computer science students, because the conversion between binary and octal is trivial. Each 3 binary bits maps directly to one octal digit (0-7) and one octal digit maps directly to exactly 3 binary digits. There's an old computer science joke, which may not translate to non American cultures. Why do computer scientists confuse Halloween and Christmas? Because OCT31 = DEC25. Also in the cartoon show, The Simpsons, Bart or Lisa once asks why their number system is based upon 10 when they only have 8 fingers.</p>
+<p>For information about binary numbers see:</p>
+<ul>
+<li><a rel="nofollow" class="external free" href="https://www.khanacademy.org/science/computer-science/v/binary-numbers">https://www.khanacademy.org/science/computer-science/v/binary-numbers</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Topic:_Hexadecimal_Representation_of_Numbers_.28Used_in_Week_2_.28Internet_checksum.29.29">Topic: Hexadecimal Representation of Numbers (Used in Week 2 (Internet checksum))</span></h3>
+<p>Binary representation is great for computers, but not so easy for people as mentioned in the binary representation of numbers above. Since binary and decimal are just two different representation for a common number concept, can we continue to think of the numbers in decimal even if the computer is using binary? Well yes and no. We could (and do) think in terms of decimal, but the mapping isn't too clean. For example 12 equates to 1100. 21 equates to 10101. Going back and forth is possible, but it takes a bit mental computation to make it happen. NOTE: programming languages such as C++, Java and Python allow us to program using decimal numbers, and the lower layers of the compiler, operating system, etc. take care of the conversion for us.</p>
+<p>Even so, for computer networks, we're really interested in sets of bits more than we're interested in their decimal equivalents. Rather than seeing a dizzying number of 0s and 1s, can we bundle them? Let's group bits in sets of 4, such as 0000, 0001, 0010, ..., 1110, 1111. There will be 16 total possible permutations of these 4 bit sequences. We can give each one a symbol: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f. For 0-9, the mapping is simple. The decimal symbols is the same as the binary representation. Since 0101 is 5 in binary, we'll use "5" as its symbol too. However, when we get to 1010, this is the binary representation for 10. That's not a single symbol, it's two symbols. So we'll use the letters of the alphabet with 1010 mapping to a, 1011 to b, etc.  up to 1111 to f. Sometimes capital letters A-F are also used.</p>
+<p>Not only does this give us a clean mapping of 4 bits to and forth a single symbol, but it also is the basis for a base 16 numbering system, which is called <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Hexadecimal">hexadecimal</a> (hexa: Greek for 6; and decimal: Latin roots associated with 10, or 6 + 10 = 16). It's also called just "hex" as an abbreviation.</p>
+<p>Hexadecimal numbers are sometimes prefixed with "0x", such as 0x12, so as not to confuse decimal 12 with hexadecimal 12, which is a different number. 0x12 = 18.</p>
+<p>If hexadecimal arithmetic gets too confusing, convert to decimal do the arithmetic, and convert back. Most computer science calculators will allow this. For example, 0x10 / 0x2 is not 0x5. It's 16 / 2, which is 8, which is still 0x8.</p>
+<p>If hexadecimal logic operations, such as AND, OR, NOT, get too confusing, convert the symbols to their 4 bits, do the operations, and convert the 4 bit sets back to hexadecimal. For example 0xa3 AND 0xb4 become 1010 0011 AND 1011 0100 =&gt; 1010 0000 =&gt;  0xa0.</p>
+<ul>
+<li><em>Hexadecimal system:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyTEt4SmV2TTN5c2s/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyTEt4SmV2TTN5c2s/edit?usp=sharing</a>)</li>
+<li><em>Hexadecimal addition:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyaWo1TDhmV05GQ1E/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyaWo1TDhmV05GQ1E/edit?usp=sharing</a>)</li>
+</ul>
+<h3> <span class="mw-headline" id="Topic:_XOR_.28exclusive_OR.29_and_Modulo_Addition_.28Used_in_Week_2_.28CRCs.29.29">Topic: XOR (exclusive OR) and Modulo Addition (Used in Week 2 (CRCs))</span></h3>
+<p>The most common <a rel="nofollow" class="external text" href="http://www.columbia.edu/cu/lweb/help/clio/boolean_operators.html">Boolean operators</a> are AND, OR and NOT; however, there are more, including <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Exclusive_or">XOR</a>. XOR is eXclusive OR. A OR B is defined as at least one of the two operands (A,B) must be True. For A XOR B exactly one of the operands must be true. In a Truth Table:</p>
+<table border="BORDER">
+<tr>
+<th>A
+</th><th>B
+</th><th>A XOR B
+</tr><tr>
+<td>0
+</td><td>0
+</td><td>0
+</tr><tr>
+</td><td>0
+</td><td>1
+</td><td>1
+</tr><tr>
+</td><td>1
+</td><td>0
+</td><td>1
+</tr><tr>
+</td><td>1
+</td><td>1
+</td><td>0
+</table>
+<p>Sometimes restaurants will offer "Soup or Salad" with your meal. You only get to choose one. The menu should probably read "Soup xor Salad."</p>
+<p><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/Data_Coding_Theory/Modulo-2_Arithmetic">Modulo 2 addition</a> for two bits is identical to XOR. Modulo is the same as the remainder in long division. So 13 mod 3 is 1, since 3 divides into 13 evenly 4 times, but there's a 1 remainder left over. In dealing with binary and mod 2,  we get the following table:</p>
+<table border="BORDER">
+<tr>
+<th>A
+</th><th>B
+</th><th>(A + B) mod 2
+</tr><tr>
+<td>0
+</td><td>0
+</td><td>0
+</tr><tr>
+</td><td>0
+</td><td>1
+</td><td>1
+</tr><tr>
+</td><td>1
+</td><td>0
+</td><td>1
+</tr><tr>
+</td><td>1
+</td><td>1
+</td><td>0
+</table>
+<p>Notice that the tables are identical except for the headers.</p>
+<p>Either XOR or mod 2 addition can be used in parity checks. Consider the following as each pair of bits is XORed in succession left to right until one bit remains: </p>
+<p>101101 =&gt; (1 XOR 0) 1101 =&gt; </p>
+<p>11101 =&gt; (1 XOR 1) 101 =&gt; </p>
+<p>0101 =&gt; (0 XOR 1) 01 =&gt; </p>
+<p>101 =&gt; (1 XOR 0) 1 =&gt; </p>
+<p>11 =&gt; 1 XOR 1 =&gt; </p>
+<p>0</p>
+<p>But what does all of this mean? It simply means that there were an even number of 1 bits in the original sequence of 101101. That's the essence of parity. This seems like a lot of work to determine whether there is an even or odd number of 1s in a bit sequence. While counting the number of 1s to determine even or odd is easier for people than repeated XOR or Mod 2 Addition, it's just the opposite for computers. XOR circuitry is nearly trivial for a computer.</p>
+<p>Transmit a sequence of bits such that the number of 1 bits is always even. If the original sequence is already even, then add 0. If the original sequence is odd, then add a 1.</p>
+<p>The receiver checks the parity, and if the number of 1s in the sequence is odd (as determined by XOR or Mod 2 Addition), then the receiver knows that there was corruption.</p>
+<h3> <span class="mw-headline" id="Topic:_Finite_State_Machines">Topic: Finite State Machines</span></h3>
+<p><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Finite-state_machine">Finite State Machines</a> are a major topic in computation. These relatively simple machines can be used in many situations - often where there's a series of steps involving events from an outside source. State machines are used in the implementation of regular expressions, which are used by compilers and interpreters.</p>
+<p>The Classic iPod thumb wheel interface is a good example of a state machine. There are several events:
+<ul>
+   <li>Center button
+   <li>Left/Right/Up/Down buttons
+   <li>"Spinning" the wheel clockwise and counterclockwise.
+</ul></p>
+<p>The wheel interface behaves differently depending upon what mode the iPod is in. For example spinning clockwise can move fast forward through a track or turn up the volume depending upon being in playback mode or not. The modes are chosen by clicking the center button.</p>
+<p>Finite State Machines have several defined elements, but the most important ones are:
+<ul>
+   <li>State - which can be thought of as stages through a process, or modes of a system.
+   <li>Event - which is, usually, an external stimulus to the state telling it that something has occurred that will affect it. NOTE: An event may also have a condition associated with it, but we have not seen this in lectures (up to Week 7).
+   <li>Transition - which connects state in a one-way direction based upon an event. A transition means that the process can move from one state to another when that event occurs. Transitions should be thought of as happening instantaneously. They define the movement from one state to another, but there is not concept of "in transit." Take note that the same event may be associated with more than one transition. This means that state machine may exhibit different behaviors on the same event, based upon its current state.
+   <li>Action - which is an optional element of a transition. An action lists behavior the state machine will do when the transition occurs. Take note that the action of one state machine may be the event of another state machine, as is observed in the client/server TCP state machine interactions.
+</ul></p>
+<p>State machines work well in event driven systems where requests for "sessions" are discrete events, between which there may be lengthy gaps in between which there may also reside requests for other sessions. Since each session has state, the each event/request will be handled within the context of that session's state, picking up where it left off, without interfering with other sessions.</p>
+<p>This works well in the client/server paradigm, which is primary paradigm for computer networks.</p>
+<p>State machines can model different behaviors, such as a Automated Teller Machine, a Soda/Snack Vending Machine, a Pay Phone (for those who remember these relics) or natural behaviors, such as the transition of states of matter.</p>
+<h3> <span class="mw-headline" id="Topic:_Distributed_Computing">Topic: Distributed Computing</span></h3>
+<p>Computer networks and the Internet in general is based upon a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Distributed_computing">distributed computing</a> paradigm. Distributed computing usually has the following properties:
+<ul>
+   <li>Processes run independently of each other, possibly on separate hardware.
+   <li>Processes run simultaneously.
+   <li>There is no managing process.
+</ul></p>
+<p>Proper distributed computing is challenging, but if done properly the the application scales and it has built in redundancies. Complexity can make doom a distributed computing system, so the more simple the rules followed by each set of processes the better.</p>
+<p><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Ant">Ants</a> are a good natural model for distributed computing. A nest may be very complex, but no individual ant is complex. The ants work independently, simultaneously and without a management structure.</p>
+<p>In TV fiction, the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Borg_(Star_Trek)">Borg</a> from Star Trek: The Next Generation are an excellent example of distributed computing.</p>
+<h2> <span class="mw-headline" id="Week_1:_Introduction.2C_Layered_Model">Week 1: Introduction, Layered Model</span></h2>
+<h3> <span class="mw-headline" id="Course_goals">Course goals</span></h3>
+<p>Learn how computer networks work, and the internet specifically.</p>
+<h3> <span class="mw-headline" id="Uses_of_networks">Uses of networks</span></h3>
+<p>Computer networks have existed for only a few decades, but their presence has intertwined with almost every aspect of our lives. They first appeared at the work office through networking shared file servers and printers. Email and instant messaging allowed us to stay in contact with co-workers across the hall or across the country. The Internet allowed instant access of almost any information one could desire. These features were soon delivered to the home and have added social networking and streaming audio and video. Networks have cut the cable and gone wireless with mobile networking.</p>
+<p>It's easy to take these networks for granted, but their design and execution is a marvel of engineering.</p>
+<p><a href="/wiki/index.php/Comnetworks:Binomial_Distribution_Coin_Flips" title="Comnetworks:Binomial Distribution Coin Flips"> How Binomial Distribution applies to Statistical Multiplexing</a> - Easy as flipping a coin.</p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/149RpNE-bmed3BwUWbWiNHqJiYDVRGRWTJ6hBotqSbK8/edit?usp=sharing">Statistical Multiplexing in the Army</a> - How many latrines to dig.</p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/15Y51N7V4rtKxF3Z2ZkkCpL8qZ1zakp_DXpOPdBw3RxA/edit?usp=sharing">Statistical Multiplexing Limits</a> - What happens when everyone wants to use the network at once?</p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/15Iv8-SxCz0ZF2MYnXaI4TXXy6TMGWaeD14jSWHPvlss/edit?usp=sharing">Metcalfe's Law</a> - How the network value quadruples when the size doubles.</p>
+<h3> <span class="mw-headline" id="Network_components.2C_with_example_networks">Network components, with example networks</span></h3>
+<p>Networks are an application of graph theory - a branch of discrete mathematics. Networks (as well as graphs) are comprised of nodes connected to each other via edges/links/vertices.</p>
+<p>This course deals with computer networks for sharing information, such as email, webpages, voice, video, etc. However, networks exist all around us and well before computers. Some examples include: postal networks, roads or rails connecting cities, social networks and gossip circles.</p>
+<p>Computer network nodes generally computers performing different roles in the network, such as hosts, routers, switches and hubs.</p>
+<p>These nodes can be connected directly via electrical wires and optical fiber, or indirectly via wireless. Wired and wireless links display different behaviors.</p>
+<p>Applications connect to host components to gain access to the network.</p>
+<h3> <span class="mw-headline" id="Socket_API">Socket API</span></h3>
+<p><a href="/wiki/index.php/Comnetworks:Phone_Calls_are_like_Sockets" title="Comnetworks:Phone Calls are like Sockets"> Phone Calls are like Sockets</a> - or Call Your Mother.</p>
+<h3> <span class="mw-headline" id="Traceroute"><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Traceroute">Traceroute</a></span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1OCYolAPnIc8gHoYaMpZ1wGJFfBtLU3n20KODlmumCqM/edit?usp=sharing">In Hot Pursuit</a> - How a car chase is like traceroute.</p>
+<h3> <span class="mw-headline" id="Protocols_and_layering">Protocols and layering</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1Tcd6pEepccKxKjwV3E2u16qt3OCkGHuro1HW5s3MYJo/edit?usp=sharing">Why even use layers</a> - An analogy using computer programming languages.</p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/file/d/0B4gPJJ2Vq6m2Qlp1cHJnbGd4SUE/edit?usp=sharing">Steampunk Protocol Layers</a> - A 19th Century Fantasy Example</p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1SD60OISHAk71nCI0d8Neuv6fk95EU-KwsZinp1apkEQ/edit?usp=sharing">Absentee Voting as Protocol Layers</a> - A non-technical description.</p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1pD9A1gPa2yvJC1ZHqJj8RGA0n9UieKIlYGUJgYqqmGA/edit?usp=sharing">Protocol Stack in the Postal Service</a> - Sending a package.</p>
+<h3> <span class="mw-headline" id="History_of_the_internet">History of the internet</span></h3>
+<p><a rel="nofollow" class="external text" href="http://som.csudh.edu/cis/lpress/history/arpamaps/">ARPANET Maps from 1969-1977</a> See how the early internet grew.</p>
+<h3> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h3>
+<ul>
+<li><p><a rel="nofollow" class="external text" href="https://class.coursera.org/comnetworks-003/wiki/FrequentlyAskedQuestions">Frequently Asked Questions</a></p></li>
+<li><p><a href="/wiki/images/b/ba/ICONS.png" class="internal" title="ICONS.png"> How to download course materials</a>.</p></li>
+<li><p><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQydkhoVnJUWkp6bUk/edit?usp=sharing">Content list</a></p></li>
+<li><p><a href="/wiki/images/f/fc/Comnetworks-003-ConceptMap-W1.png" class="internal" title="Comnetworks-003-ConceptMap-W1.png"> Introduction</a> - A concept map.</p></li>
+<li><p><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQyRk1qWHA5dFROREE/edit?usp=sharing">Notes</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQyenBSWU5wbFF5Zzg/edit?usp=sharing">Peer to Peer communication</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQySDh3RnJvSWM4UFk/edit?usp=sharing">Some terms explained</a></p></li>
+</ul>
+<h3> <span class="mw-headline" id="References">References</span></h3>
+<h2> <span class="mw-headline" id="Week_2:_Physical_and_Link_Layers">Week 2: Physical and Link Layers</span></h2>
+<h3> <span class="mw-headline" id="Message_latency_model">Message latency model</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1PE5Y-A_m0F4uMsQPqf4mCNVQ3BTsJi1P1hbBgo_PoSU/edit?usp=sharing">The Latency of the Cattle Rancher</a> - How long to ship that herd of longhorns.</p>
+<h3> <span class="mw-headline" id="Signals">Signals</span></h3>
+<p>A signal has many frequencies, each of which shape the signal, and its shape contains information. The lower frequencies tend to give foundational shape. The higher frequencies tend to provide the details and accents. With enough frequencies, almost any signal shape can be reproduced. However, the lower frequencies are stronger than the higher frequencies. When there's attenuation through the signal's medium, the higher frequencies will drop out before the lower ones. The signal will retain the nature of its basic shape, but it will begin to morph. The details will smooth out. There will be less detail. There may be enough detail for the receiver to recognize the original. There may not.</p>
+<p>Imagine you're sitting a concert hall about to hear a symphony. The orchestra takes the stage and sounds great. You always loved Beethoven. You notice that there are a dozen or more musicians in the violin section. But there are about five trumpets, and only three trombones and one tuba.</p>
+<p>Half of the violins leave, as well as two trumpets and one trombone. There's been a contract dispute and they walk out mid-concert. We've lost the upper range instruments. It still kind of sounds like Beethoven, but something's different. Then all of the violins and trumpets and one more trombone leave. We're left with one trombone and one tuba. They're still playing their Beethoven parts, but the performance is unrecognizable.</p>
+<p>Losing too many upper frequencies will lead to the same problem.</p>
+<p>Imagine you're an oil painter. You have brushes of all shapes and sizes from wide brushes to very thin ones. You're a realist and you can paint almost anything such that it's almost impossible to distinguish your work from a photograph. Then you suffer an accident that prevents you from using thin brushes. You no longer have the hand control for them, but you can still paint with wide brushes. The nature of your paintings will change. You won't be able to paint as a realist, but you might be able to paint as abstractionist or impressionist. Your painting will have less detail.</p>
+<p>Losing too many upper frequencies is similar. Less detail.</p>
+<p>By the way, this description happened to artist <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Chuck_Close">Chuck Close</a>, who suffered a spinal arterial collapse that left him paralyzed. He is famous for his portraits both before and after his medical condition. View his <a rel="nofollow" class="external text" href="http://chuckclose.com/work_timeline.html">work</a>, but be warned, that the first painting is a realistic female nude. Another interesting fact about Mr. Close is that he has <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Prosopagnosia">prosopagnosia</a>, or face blindness. He may not be able to recognize the people in his portraits of them.</p>
+<p>Finally, losing higher frequencies is similar to a camera taking a picture when out of focus. The basic colors and composition will be there, but the details will be lost.</p>
+<h3> <span class="mw-headline" id="Modulation_schemes">Modulation schemes</span></h3>
+<p>Information is passed across signals using modulation.</p>
+<p>A carrier signal is when we we're not so much interested about the content of the signal than we are the nature of the signal. For our circumstances, the nature being the "shape" of the signal. The shape is the data.</p>
+<p>For Amplitude Modulation, we're interested in how large the signal gets. Imagine you're hearing my words rather than reading them. <b>I MAY TALK REAL LOUD</b>. or <i>i may talk real soft</i>. <b>OR</b> <i>i could</i> <b>MIX</b> <i>up</i> <b>WHEN I</b> <i>talk</i> <b>REAL LOUD</b> <i>or</i> <b>REAL</b> <i>soft</i>.</p>
+<p>In the above I'm not only speaking words, but my simulated volume indicates another signal, where the <b>BOLD</b> is 1 and <i>soft</i> is 0. We, in English, do this in normal conversation. When a speaker wants to make sure a word or phrase has more emphases he will raise his voice during those words. That's sends an additional signal to the listener.</p>
+<p>For Frequency Modulation, we're interested in <em>pitch</em> of the signal. Imagine Iamtalkinginahighpitchedvoicerightnow. And ... now ... I ... am ... talking ... in ... a ... looooow ... pitched ... voice. That change is sending a signal too. As people get more excited or passionate about a topic, the pitch of their voice might rise.</p>
+<p>Amplitude Modulation and Frequency Modulation doing the same thing, but just in terms, but just in the electrical magnetic spectrum rather than acoustics. By the way, this is exactly how radio AM and FM signals work.</p>
+<h3> <span class="mw-headline" id="Bandwidth.2C_Shannon">Bandwidth, Shannon</span></h3>
+<h3> <span class="mw-headline" id="Clocking_and_framing">Clocking and framing</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1DItZ3rachHexJwLqKizvEnMgduWAv6--NV53omfhSd4/edit?usp=sharing">Clocking and Framing via Music</a> - Dueling Banjos</p>
+<h3> <span class="mw-headline" id="Error_detection_schemes">Error detection schemes</span></h3>
+<h3> <span class="mw-headline" id="Error_correction_schemes">Error correction schemes</span></h3>
+<p><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=gGf8eDK7q9k">Hamming Visualization Video</a></p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/17awGSPWtcscRUJqnMDcMkwzYqXiQyExUcCwOCjuK-gc/edit?usp=sharing">Hamming Codes as Ping-Pong Balls and Chopsticks</a></p>
+<h3> <span class="mw-headline" id="Bandwidth-delay_product"><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Bandwidth-delay_product">Bandwidth-delay product</a></span></h3>
+<h3> <span class="mw-headline" id="Lecture_Notes_2">Lecture Notes</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQyQjZSdWhydi1PNVk/edit?usp=sharing">Content list</a></li>
+<li><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQyTEt4SmV2TTN5c2s/edit?usp=sharing">Hexadecimal system</a></li>
+<li><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQybi1FSlExMnR0aTg/edit?usp=sharing">Hexadecimal addition</a></li>
+<li><a href="/wiki/images/f/f2/Comnetworks-003-ConceptMap-W2-P1.png" class="internal" title="Comnetworks-003-ConceptMap-W2-P1.png"> Physical layer</a></li>
+<li><a href="/wiki/images/5/50/Slevel.JPG" class="internal" title="Slevel.JPG"> Signal levels</a></li>
+<li><a href="/wiki/images/a/a3/Comnetworks-003-ConceptMap-W2-P2.png" class="internal" title="Comnetworks-003-ConceptMap-W2-P2.png"> Modulation</a></li>
+<li><a href="/wiki/images/9/90/Comnetworks-003-ConceptMap-W2-L1.png" class="internal" title="Comnetworks-003-ConceptMap-W2-L1.png"> Link layer</a></li>
+<li><a href="/wiki/images/6/6d/Comnetworks-003-ConceptMap-W2-L2.png" class="internal" title="Comnetworks-003-ConceptMap-W2-L2.png"> Framing</a></li>
+<li><a href="/wiki/images/4/4a/Comnetworks-003-ConceptMap-W2-L3.png" class="internal" title="Comnetworks-003-ConceptMap-W2-L3.png"> Error Coding</a></li>
+<li><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQyMDdSSTR0UXRMcDA/edit?usp=sharing">Notes</a></li>
+<li><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQyVzJNbGt6NEhySUU/edit?usp=sharing">Some terms explained</a></li>
+</ul>
+<h3> <span class="mw-headline" id="References_2">References</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Physical_layer">Physical layer</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Data_link_layer">Link layer</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_3:_Retransmissions.2C_Multiple_access.2C_Switching">Week 3: Retransmissions, Multiple access, Switching</span></h2>
+<h3> <span class="mw-headline" id="ARQ">ARQ</span></h3>
+<p><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Automatic_repeat_request">Automatic Repeat reQuest</a> is repeating a request after a timeout until receiving an acknowledgement. Sheldon Cooper <a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1NYByPdeTEiwyv1B0WR-0ejJjAZATLhiRzkyVAcjp-tY/edit?usp=sharing">knocks for Penny</a> using ARQ... really it's his OCD.</p>
+<h3> <span class="mw-headline" id="Multiplexing_schemes_.28TDM._FDM.29">Multiplexing schemes (TDM. FDM)</span></h3>
+<p><a href="/wiki/index.php/Comnetworks:Multiplexing_Jugglers" title="Comnetworks:Multiplexing Jugglers"> Multiplexing is like Multitasking</a> - FDM and TDM as Juggling and Plate Spinning</p>
+<p>Imagine you're spending a night at the opera. A soprano, alto, tenor and bass are singing simultaneously each with different words and melodies. If you listen carefully, you can pick out each singer individually based upon his or her pitch.</p>
+<p>Next three tenors try the same trick, but because all of their voices are in the same range, you can't pick out one individually from the other, but then the nature of the piece changes. Each tenor sings a short phrase, which the other two rest, and they take turns without any two singing at the same time.</p>
+<p>The four singers are multiplexing. They all sing at the same time. It's challenging to isolate them, but it's possible because of their different pitch range (that is their frequencies).</p>
+<p>The three tenors are multitasking. It's easier to isolate them. In fact you don't have to isolate them, since only one is singing at any one time; however, it takes him three times longer to finish all of his phrases.</p>
+<h3> <span class="mw-headline" id="Random_access_.2F_Ethernet">Random access / Ethernet</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/139ny_HfUEnll9oGH-TXvO-WVcjbqkX_q40skkh-Cz9o/edit?usp=sharing">Shouting from the hilltops</a> - A non-technical Ethernet.</p>
+<h3> <span class="mw-headline" id="Wireless_multi-access_.2F_802.11">Wireless multi-access / 802.11</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1yhNhVZxgWZrWWU3RCV2TwSZqd0jkZ_ON-eHN-2oG3sg/edit?usp=sharing">Bugle "wireless" multi-access</a> - Blow that horn.</p>
+<h3> <span class="mw-headline" id="Contention_free_.2F_Token_Ring">Contention free / Token Ring</span></h3>
+<p>A <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Token_ring">Token Ring</a> is like a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Talking_stick">Talking Stick</a>. Only the person holding it may talk, but it is passed for person to person.</p>
+<h3> <span class="mw-headline" id="Basic_switch_vs_hub_model">Basic <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Network_switch">switch</a> vs <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Ethernet_hub">hub</a> model</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/131kKZLyjjCMGkBAqpNH2M8IaSBra8P_Ep01T_icniFo/edit?usp=sharing">Switch vs Hub</a> - A telephone example</p>
+<h3> <span class="mw-headline" id="LAN_switching_.28spanning_tree.2C_backward_learning.29">LAN switching (spanning tree, backward learning)</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1_wvinhjOAmxEuIPfZz-8tSRUTvvI9PzCTPvJ10wLdUI/edit?usp=sharing">Ants Build Networks Too</a> - Anyone know of a good picnic?</p>
+<h3> <span class="mw-headline" id="Lecture_Notes_3">Lecture Notes</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://drive.google.com/file/d/0B0soxwuAdqQyMlBNa2xtTkRTMW8/edit?usp=sharing">Content list</a></li>
+<li><a href="/wiki/images/a/ad/Comnetworks-003-ConceptMap-W3-Multiplexing.png" class="internal" title="Comnetworks-003-ConceptMap-W3-Multiplexing.png"> Multiplexing</a></li>
+<li><a href="/wiki/images/f/fa/Comnetworks-003-ConceptMap-W3-Evolution.png" class="internal" title="Comnetworks-003-ConceptMap-W3-Evolution.png"> Classic Ethernet</a></li>
+<li><em>Wireless Multiple access:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/7/7d/CMAP3%286%29.WIRELESSMAC.jpg">https://share.coursera.org/wiki/images/7/7d/CMAP3%286%29.WIRELESSMAC.jpg</a>) </li>
+<li><em>Contention free multiple access:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/8/81/CMAP3%287%29.CONTENTIONFREEMAC.jpg">https://share.coursera.org/wiki/images/8/81/CMAP3%287%29.CONTENTIONFREEMAC.jpg</a>)</li>
+<li><em>Hubs&#160;:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/d/d4/CMAP3%288%29HUBS.jpg">https://share.coursera.org/wiki/images/d/d4/CMAP3%288%29HUBS.jpg</a>)</li>
+<li><em>LAN Switches&#160;:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/6/60/CMAP3%289%29LAN_SWITCHES.jpg">https://share.coursera.org/wiki/images/6/60/CMAP3%289%29LAN_SWITCHES.jpg</a>)</li>
+<li><em>Spanning Tree algorithm</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/8/86/CMAP3%2810%29SPANTREE_ALGORITHM.jpg">https://share.coursera.org/wiki/images/8/86/CMAP3%2810%29SPANTREE_ALGORITHM.jpg</a>)</li>
+</ul>
+<h3> <span class="mw-headline" id="References_3">References</span></h3>
+<h2> <span class="mw-headline" id="Week_4:_Network_layer.2C_Internetworking.2C_and_NAT">Week 4: Network layer, Internetworking, and NAT</span></h2>
+<h3> <span class="mw-headline" id="Datagram_and_virtual_circuit_models">Datagram and virtual circuit models</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1_PDTPSInyLkYUgGNee0HsKMU_vFnU46OoZwvKd_Oc-8/edit?usp=sharing">Datagrams and Virtual Circuits are like Telegraph and Telephone</a></p>
+<h3> <span class="mw-headline" id="IP_addresses_and_prefixes">IP addresses and prefixes</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/14zQflI12LLh30ed2vRkbvQvb5TLk9OhlIjtRb7zv1Bk/edit?usp=sharing">IP addresses are like ZIP codes</a> - Zip it!</p>
+<p>Think of your phone number as like an IP Address. It uniquely identifies your phone such that anyone on almost an phone in the world should be able to call you. However, your phone number and phone are not known all around the world. Your phone number's identity is organized in sets of prefix numbers, which identify regions. This concept is similar to IP address prefixes.</p>
+<p>For internal use, someone would first dial your country code, assume they are in a different country. This would direct the number to a telephone system switch in the United States. Next would be the area code, which roughly identifies a state, county or metropolitan region, usually based upon population size. This will direct the call to a switch in that area. Next comes the exchange, which identifies the local switch that's manages your phone. Finally the last digits identify your specific call to create a connection from the caller to your phone.</p>
+<p>The use of prefixes in phone networks reduces overhead, since telephone switches only need to know where to direct the call for completion based upon a prefix, not the entire phone number. Computer networks take advantage of the same technique with IP prefixes.</p>
+<h3> <span class="mw-headline" id="IP_forwarding_.28longest_matching_prefix.29_and_MPLS">IP forwarding (longest matching prefix) and MPLS</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1RfZqXK3Ji8RoKKgi1LyqxuXIW9Wnkn3xQ-S42pOEEmw/edit?usp=sharing">Longest Matching Prefix compared to guys picking up women at a bar</a> - If <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=2d_dtTZQyUM">"A Beautiful Mind"</a> can use the analogy to explain an aspect of Game Theory, then we can use it too.</p>
+<h3> <span class="mw-headline" id="IPv4_and_IPv6">IPv4 and IPv6</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1KPMpr1AWCtldAXohhZFAdhcYF1tKFBzAU7XTd1pKX_0/edit?usp=sharing">IPv4 and IPv6 is similar to 5 digit and 9 digit US Postal Service ZIP codes</a></p>
+<h3> <span class="mw-headline" id="Helpers:_ARP.2C_DHCP">Helpers: ARP, DHCP</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1Ye5vGQ9kgz9p9GC3Tw9fi0YblfyWg83gWUbgDHw5lps/edit?usp=sharing">ARP and DHCP are similar to Phone books</a> - <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=UCsgZ9zU7IA">You Know My Name (Look Up the Number)</a></p>
+<h3> <span class="mw-headline" id="Internetworking">Internetworking</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1o8nw7bzyrZ3QDkXkQcO4SC0Cs8etA_8XmjB8-eBCs0E/edit?usp=sharing">IPv4/IPv6 Tunneling is like Smuggling</a></p>
+<h3> <span class="mw-headline" id="Fragmentation_and_PMTU_discovery">Fragmentation and PMTU discovery</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/15GHZrli3X7HET_cV8SnOXXggi3duN3E3k-t0mk4RRpw/edit?usp=sharing">Airport Security and Fragmentation</a></p>
+<h3> <span class="mw-headline" id="Errors:_ICMP.2C_and_traceroute">Errors: ICMP, and traceroute</span></h3>
+<h3> <span class="mw-headline" id="NAT">NAT</span></h3>
+<h3> <span class="mw-headline" id="Lecture_Notes_4">Lecture Notes</span></h3>
+<ul>
+<li><em>Network Layer:</em> (<a rel="nofollow" class="external free" href="https://drive.google.com/file/d/0B0soxwuAdqQydExLM0lBSUlkODg/edit?usp=sharing">https://drive.google.com/file/d/0B0soxwuAdqQydExLM0lBSUlkODg/edit?usp=sharing</a>)</li>
+<li><em>Network services:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/5/5b/CMAT4%282%29DATAGRAMV.jpg">https://share.coursera.org/wiki/images/5/5b/CMAT4%282%29DATAGRAMV.jpg</a>)</li>
+<li><em>Internetworking-IP protocol:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/e/e1/CMAT4%283%29INTERNETWORK.jpg">https://share.coursera.org/wiki/images/e/e1/CMAT4%283%29INTERNETWORK.jpg</a>)</li>
+<li><em>IPv4 address:</em>(<a rel="nofollow" class="external free" href="https://drive.google.com/file/d/0B0soxwuAdqQyVWtBNU15LXp4WGs/edit?usp=sharing">https://drive.google.com/file/d/0B0soxwuAdqQyVWtBNU15LXp4WGs/edit?usp=sharing</a>)</li>
+<li><em>IPv6 address:</em>(<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/IPv6">http://en.wikipedia.org/wiki/IPv6</a>)</li>
+<li>
+<ul>
+<li>:*(<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/IPv6_address">http://en.wikipedia.org/wiki/IPv6_address</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>:*(<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/File:Ipv6_address_leading_zeros.svg">http://en.wikipedia.org/wiki/File:Ipv6_address_leading_zeros.svg</a>)</li>
+</ul></li>
+<li><em>IPv6 Tunneling:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/0/07/IPv6.jpg">https://share.coursera.org/wiki/images/0/07/IPv6.jpg</a>)</li>
+<li><em>IP Helpers DHCP/ARP:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/7/72/ARPDHCP.jpg">https://share.coursera.org/wiki/images/7/72/ARPDHCP.jpg</a>)</li>
+<li><em>Why two addresses&#160;: link layer address &amp; IP address:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/e/e7/ADDRESSES.jpg">https://share.coursera.org/wiki/images/e/e7/ADDRESSES.jpg</a>)
+(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/0/02/IPLINKADD.jpg">https://share.coursera.org/wiki/images/0/02/IPLINKADD.jpg</a>)</li>
+<li><em>Packet Fragmentation Vs Path MTU Discovery</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/3/35/MTU.jpg">https://share.coursera.org/wiki/images/3/35/MTU.jpg</a>)</li>
+<li><em>ICMP - Managing problems in packet forwarding</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/f/f9/ICMP.jpg">https://share.coursera.org/wiki/images/f/f9/ICMP.jpg</a>)</li>
+<li><em>NAT - Solves scarcity of IPv4 addresses:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/c/c5/NAT.jpg">https://share.coursera.org/wiki/images/c/c5/NAT.jpg</a>)</li>
+</ul>
+<h3> <span class="mw-headline" id="References_4">References</span></h3>
+<ul>
+<li><em>Network layer:</em>(<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Network_layer">http://en.wikipedia.org/wiki/Network_layer</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_5:_Routing.2C_Intra-_and_Inter-_Domain">Week 5: Routing, Intra- and Inter- Domain</span></h2>
+<h3> <span class="mw-headline" id="Shortest_cost_routing_model">Shortest cost routing model</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1GW_UsfX0Fn4sctOS5E3_29KuoBP4Zx0_ORcOTycMtEc/edit?usp=sharing">GPS computes shortest distance</a> - Probably using Dijkstra's algorithm.</p>
+<h3> <span class="mw-headline" id="Distance_vector">Distance vector</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1TqEeJQpmkz9ySnLLq38-vMTO7i3XeoPRw9MeZp92cFw/edit?usp=sharing">Distance Vector is similar to Gossip</a> - I heard it from a very reliable source.</p>
+<h4> <span class="mw-headline" id="Distance_vector:_tool_for_experimenting_with_a_RIP-like_protocol">Distance vector: tool for experimenting with a RIP-like protocol</span></h4>
+<p>Here's a miniature RIP simulator: <a rel="nofollow" class="external autonumber" href="http://ioctl.org/jan/simulator.zip">[1]</a></p>
+<p>Unpack it and run ./rip-ui (you'll need python 2.7 installed).</p>
+<p>There are some pre-programmed commands that are queued up that'll generate a simple, linear network. You can try plugging new nodes in, unplugging them, and so on.</p>
+<p>The routing protocol currently doesn't have a notion of "infinity", though, which means you can see the "count to infinity" problem directly. Here's how:</p>
+<ol>
+<li><p>Start by typing</p>
+<code><pre>./rip-ui
+</pre></code></li>
+<li>You'll see the network in its initial state.</li>
+<li>Either press return repeatedly until the network routing tables stabilise, or type "run" which does the same.</li>
+<li><p>Unplug router A! Type</p>
+<code><pre>unplug A 1
+</pre></code>
+<p>to do this.</p></li>
+<li><p>Trigger another round of timer ticks.</p>
+<code><pre>tick
+</pre></code>
+<p>The "periodic processing" at each node will occur and a new slew of packets will be generated.</p></li>
+<li>Hit return a few times and watch what happens:
+
+<ul>
+<li>B loses its initial route to A,</li>
+<li>then C advertises that route to B,</li>
+<li>so B learns a new, higher-cost "route to A",</li>
+<li>and so on.</li>
+</ul></li>
+<li><p>You can run this for 100 steps by typing:</p>
+<code><pre>run
+</pre></code>
+<p>which will show you routing counts at the end of that process. Typically, a node stops advertising a route when the cost it has becomes "infinite" - for some value of infinity. RIP2 used 16 as that value, where each link cost was 1&#46; (That behaviour isn't implemented in rip.py.)</p></li>
+<li><p>If the link comes back up:</p>
+<code><pre>plug A 1 B 1
+run
+</pre></code>
+<p>then you'll see the routing table stabilise again.</p></li>
+</ol>
+<p>Other things to try:</p>
+<ul>
+<li><p>make a "circular" network and see what happens (you ought to be able to predict this)</p>
+<code><pre>add E
+plug D 2 E 1
+plug E 2 A 2
+run
+</pre></code></li>
+</ul>
+<h5> <span class="mw-headline" id="On_the_subject_of_the_.22count-to-infinity.22_problem:">On the subject of the "count-to-infinity" problem:</span></h5>
+<p>You might ask if there are tricks you might use to stop this happening.</p>
+<p>One thing to observe is that the count-to-infinity problem happens because, say, C advertises its route to A (via B) <em>back</em> to B. If, instead, nodes used a "split horizon", then B would never receive route advertisements for A from C.</p>
+<p>It's worthwhile looking up "poison reverse" too. That's even harsher: the idea here is that when nodes get a "lost route" advertisement from their neighbour, they immediately broadcast an infinite-cost route to all their neighbours.</p>
+<p>Hopefully this simulator'll give you a better picture of what goes on - the code in rip.py is also not too complicated (there are only four important methods) so you could have a go at implementing "split horizon" or "poison reverse" yourself. (I'd recommend you try that in that order - split horizon first.)</p>
+<h3> <span class="mw-headline" id="Flooding">Flooding</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1-kvLduyaThKH2mdn5dv95c3wcn1iPaI4BkBxsb4rXeM/edit?usp=sharing">Flooding is like telling a Joke</a> - I heard this great joke on TV last night. Stop me if you already heard it ...</p>
+<h3> <span class="mw-headline" id="Link_state">Link state</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1_DDFKNZKW7nz_4FKhdWxEX5CBX8Yf9rtL_s__dblTHc/edit?usp=sharing">Link state is like blind men understanding an elephant</a></p>
+<h3> <span class="mw-headline" id="Equal-cost_multi-path_routing">Equal-cost multi-path routing</span></h3>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1V5iD1eDx2BZZtgpGvtdCIhV_wuUlIXLePlSVfpi6WRc/edit?usp=sharing">Equal-Cost Multipath Routing is like sending out the posse.</a> - Hang 'em high.</p>
+<h3> <span class="mw-headline" id="Hierarchical_routing">Hierarchical routing</span></h3>
+<h3> <span class="mw-headline" id="IP_prefix_aggregation_and_subnetting">IP prefix aggregation and subnetting</span></h3>
+<h4> <span class="mw-headline" id="Tool_for_learning_about_prefix_aggregation">Tool for learning about prefix aggregation</span></h4>
+<p>Here's a small toy/game to get the idea of prefix routing: <a rel="nofollow" class="external autonumber" href="http://ioctl.org/jan/prefix-routing.zip">[2]</a></p>
+<p>You'll need python 2.7 to play with this. Unzip it (it's just one file this time) and run it thus:</p>
+<code><pre>./prefix-routing
+</pre></code>
+<p>A demonstration follows. We'll write a routing table, using prefix routes, to sort out miniature "IP addresses" (that are actually only two bits long!) To begin with, request a new game. We want to simulate a router with two possible links, so ask it:</p>
+<code><pre>Enter command: new 2 2
+New game starting with bitstrings of length 2 and 2 randomly-selected links
+------------------------------------------------------------
+Desired routes:
+00 -&gt; 1 no route computed
+01 -&gt; 1 no route computed
+10 -&gt; 1 no route computed
+11 -&gt; 2 no route computed
+
+Routing rules:
+------------------------------------------------------------
+</pre></code>
+<p>We could clearly write a routing table that has four rules (one for each destination we're given). However, it's possible to do better. Since most of the destinations use link 1, we can begin by writing a catch-all route that points at that.</p>
+<code><pre>Enter command: 00/0 1
+Adding rule #0
+------------------------------------------------------------
+Desired routes:
+00 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+01 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+10 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+11 -&gt; 2&#160;: incorrect route selected from [#0: 00/0 -&gt; 1]
+
+Routing rules:
+[#0: 00/0 -&gt; 1]
+------------------------------------------------------------
+</pre></code>
+<p>Almost done! We can add a single rule to get the last item:</p>
+<code><pre>Enter command: 11/1 2
+Adding rule #1
+------------------------------------------------------------
+Desired routes:
+00 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+01 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+10 -&gt; 1&#160;: incorrect route selected from [#1: 11/1 -&gt; 2]; [#0: 00/0 -&gt; 1]
+11 -&gt; 2&#160;: CORRECT ROUTE SELECTED FROM [#1: 11/1 -&gt; 2]; [#0: 00/0 -&gt; 1]
+
+Routing rules:
+[#0: 00/0 -&gt; 1]
+[#1: 11/1 -&gt; 2]
+------------------------------------------------------------
+</pre></code>
+<p>Whoops! The problem here was that the rule, 11/1 -&gt; 2, only matches the first bit (the /1 prefix), so it's matched the "ip" 10 and routed it to link 2. The various rules that match are visible on each line, sorted by most-specific (ie, the one that counts) first to least-specific (ie, ones that've been over-ridden) last.</p>
+<p>We add the correct rule:</p>
+<code><pre>Enter command: 11/2 2
+Adding rule #2
+------------------------------------------------------------
+Desired routes:
+00 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+01 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+10 -&gt; 1&#160;: incorrect route selected from [#1: 11/1 -&gt; 2]; [#0: 00/0 -&gt; 1]
+11 -&gt; 2&#160;: CORRECT ROUTE SELECTED FROM [#2: 11/2 -&gt; 2]; [#1: 11/1 -&gt; 2]; [#0: 00/0 -&gt; 1]
+
+Routing rules:
+[#0: 00/0 -&gt; 1]
+[#1: 11/1 -&gt; 2]
+[#2: 11/2 -&gt; 2]
+------------------------------------------------------------
+</pre></code>
+<p>Almost there. You can see now that 11 is matched by three rules, in decreasing order of specificity. 10 is still routed incorrectly, so we can remove the erroneous rule to fix the routing table:</p>
+<code><pre>Enter command: del 1
+------------------------------------------------------------
+Desired routes:
+00 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+01 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+10 -&gt; 1&#160;: CORRECT ROUTE SELECTED FROM [#0: 00/0 -&gt; 1]
+11 -&gt; 2&#160;: CORRECT ROUTE SELECTED FROM [#1: 11/2 -&gt; 2]; [#0: 00/0 -&gt; 1]
+
+Routing rules:
+[#0: 00/0 -&gt; 1]
+[#1: 11/2 -&gt; 2]
+
+The routing table is correct!
+------------------------------------------------------------
+</pre></code>
+<p>There you have it. We've managed to sort between four different possible "IP addresses" using only two rules, by the clever application of prefix routes.</p>
+<p>The program can generate longer bit strings and more possible links to route between, if you fancy testing your wits. It quickly becomes apparent that forming efficient prefix aggregates "by inspection" is a difficult task.</p>
+<h5> <span class="mw-headline" id="Further_questions_to_think_about">Further questions to think about</span></h5>
+<p>The algorithmically-minded are probably wondering how one might go about optimising the number of rules required to correctly route according to a given, desired table.</p>
+<p>(If you're a little more mathematically inclined, you might ask what the size of the prefix-routing table would be on average.)</p>
+<h3> <span class="mw-headline" id="Interdomain_routing_with_BGP">Interdomain routing with BGP</span></h3>
+<h3> <span class="mw-headline" id="Lecture_Notes_5">Lecture Notes</span></h3>
+<ul>
+<li><em>Content List:</em>(<a rel="nofollow" class="external free" href="https://drive.google.com/file/d/0B0soxwuAdqQyZnBGV3JQTVUyNDg/edit?usp=sharing">https://drive.google.com/file/d/0B0soxwuAdqQyZnBGV3JQTVUyNDg/edit?usp=sharing</a>)</li>
+<li><em>ROUTING ALGORITHMS:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/6/63/ROUTINGALGOR.jpg">https://share.coursera.org/wiki/images/6/63/ROUTINGALGOR.jpg</a>)</li>
+<li><em>SHORTEST PATH ROUTING:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/e/e6/SHORTESTPATH.jpg">https://share.coursera.org/wiki/images/e/e6/SHORTESTPATH.jpg</a>)</li>
+<li><em>DIJKSTRAS ROUTING ALGORITHM:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/5/56/DIJKSTRAS.jpg">https://share.coursera.org/wiki/images/5/56/DIJKSTRAS.jpg</a>)</li>
+<li><em>DISTANCE VECTOR ROUTING:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/7/73/DVROUTING.jpg">https://share.coursera.org/wiki/images/7/73/DVROUTING.jpg</a>)</li>
+<li><em>FLOODING&#160;:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/d/de/FLOODING.jpg">https://share.coursera.org/wiki/images/d/de/FLOODING.jpg</a>)</li>
+<li><em>LINK STATE ROUTING:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/1/1f/LINKSTATE.jpg">https://share.coursera.org/wiki/images/1/1f/LINKSTATE.jpg</a>)</li>
+<li><em>EQUAL COST MULTI-PATH(ECMP):</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/e/e9/ECMP.jpg">https://share.coursera.org/wiki/images/e/e9/ECMP.jpg</a>)</li>
+<li><em>HOST &amp; ROUTER ON THE NETWORK:</em> (<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/1/19/HOSTROUTER.jpg">https://share.coursera.org/wiki/images/1/19/HOSTROUTER.jpg</a>)</li>
+<li><em>HIERARCHICAL ROUTING:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/6/6e/HIRARCHICAL.jpg">https://share.coursera.org/wiki/images/6/6e/HIRARCHICAL.jpg</a>)</li>
+<li><em>PREFIX AGGREGATION:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/1/1e/PREFIXAGGREGATION.jpg">https://share.coursera.org/wiki/images/1/1e/PREFIXAGGREGATION.jpg</a>)</li>
+<li><em>BGP ROUTING:</em>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/e/e8/BGPROUTING.jpg">https://share.coursera.org/wiki/images/e/e8/BGPROUTING.jpg</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_6:_Midterm_and_break">Week 6: Midterm and break</span></h2>
+<h2> <span class="mw-headline" id="Week_7:_Transport_Layer.2C_Reliable_Transport">Week 7: Transport Layer, Reliable Transport</span></h2>
+<ul>
+<li>Ports and service models</li>
+<li>Socket API revisited</li>
+<li>UDP</li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Transmission"><em>Control</em>Protocol TCP</a>
+
+<ul>
+<li>TCP is like a phone call <a href="/wiki/index.php/Comnetworks:TCPPhoneCall" title="Comnetworks:TCPPhoneCall"> Phone Call</a></li>
+</ul></li>
+<li>Connection establishment and teardown</li>
+<li>ARQ reminder, sliding window</li>
+<li>Retransmission timeouts</li>
+<li>Flow control</li>
+</ul>
+<h3> <span class="mw-headline" id="Lecture_Notes_6">Lecture Notes</span></h3>
+<ul>
+<li>
+<ul>
+<li>CONTENT LIST&#160;:*(<a rel="nofollow" class="external free" href="https://drive.google.com/file/d/0B0soxwuAdqQybmFPNlEtT2tnRU0/edit?usp=sharing">https://drive.google.com/file/d/0B0soxwuAdqQybmFPNlEtT2tnRU0/edit?usp=sharing</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>TRANSPORT LAYER SERVICES:*(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/9/9b/TPTSERV.jpg">https://share.coursera.org/wiki/images/9/9b/TPTSERV.jpg</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>FUNCTIONS OF TRANSPORT LAYER:*(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/images/c/ce/Cmap5.jpg">https://share.coursera.org/wiki/images/c/ce/Cmap5.jpg</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>SLIDING WINDOW – GO BACK N:*(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyMXNJN3lLTGpCTWc/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyMXNJN3lLTGpCTWc/edit?usp=sharing</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>SLIDING WINDOW – SELECTIVE REPEAT:*(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyRk5JNHUtRjZQVkE/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyRk5JNHUtRjZQVkE/edit?usp=sharing</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>SLIDING WINDOW&#160;:*(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyZ3RLbS1NcVctelU/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyZ3RLbS1NcVctelU/edit?usp=sharing</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>FLOW CONTROL&#160;:*(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyT0RoTXRBNlBRZmc/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyT0RoTXRBNlBRZmc/edit?usp=sharing</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>RETRANSMISSIONS:*(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyRG5zaFZRcUplNms/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyRG5zaFZRcUplNms/edit?usp=sharing</a>)</li>
+</ul></li>
+<li>
+<ul>
+<li>TCP FEATURES:*(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyZFBob2JqUXVLNFk/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyZFBob2JqUXVLNFk/edit?usp=sharing</a>)</li>
+</ul></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_8:_Congestion_Control">Week 8: Congestion Control</span></h2>
+<ul>
+<li>Nature of congestion
+
+<ul>
+<li><a href="/wiki/index.php/Comnetworks:CommuterTrafficJams" title="Comnetworks:CommuterTrafficJams"> Commuter Traffic Jams</a></li>
+</ul></li>
+<li>Simple / FIFO router model</li>
+<li>Efficiency and fairness</li>
+<li>Congestion control models</li>
+<li>AIMD game</li>
+<li>Slow-start</li>
+<li>Fast retransmission</li>
+<li>Fast recovery</li>
+<li>Story of TCP congestion collapse</li>
+</ul>
+<h3> <span class="mw-headline" id="Lecture_Notes_7">Lecture Notes</span></h3>
+<ul>
+<li><em>CONGESTION CONTROL:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyY0hxeW9PWE54ZDg/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyY0hxeW9PWE54ZDg/edit?usp=sharing</a>)</li>
+<li><em>BANDWIDTH ALLOCATION – FAIRNESS &amp; EFFICIENCY:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyT3U1SFlMZzhTdmc/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyT3U1SFlMZzhTdmc/edit?usp=sharing</a>)</li>
+<li><em>AIMD CONTROL LAW FOR CONGESTION CONTROL:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyV0dSbmRFRkdWVkU/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyV0dSbmRFRkdWVkU/edit?usp=sharing</a>)</li>
+<li><em>TCP BEHAVIOURS USED FOR AIMD IMPLEMENTATION:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyU0Y1Vk0zejhzbVE/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyU0Y1Vk0zejhzbVE/edit?usp=sharing</a>)</li>
+<li><em>ACK CLOCKING:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyaGtJSmJiUFMxcnM/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyaGtJSmJiUFMxcnM/edit?usp=sharing</a>)</li>
+<li><em>SLOW START:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQycFJLUGxmVE9sU3M/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQycFJLUGxmVE9sU3M/edit?usp=sharing</a>)</li>
+<li><em>FAST RETRANSMIT &amp; FAST RECOVERY:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyWTI0djBkQmtjZTQ/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyWTI0djBkQmtjZTQ/edit?usp=sharing</a>)</li>
+<li><em>EXPLICIT CONGESTION NOTIFICATION:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyazBCZ1VEdkJIcDQ/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyazBCZ1VEdkJIcDQ/edit?usp=sharing</a>)</li>
+<li><em>ADAPTIVE TIMEOUT:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyRG5zaFZRcUplNms/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyRG5zaFZRcUplNms/edit?usp=sharing</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_9:_DNS.2C_HTTP.2FWeb.2C_Content_Distribution">Week 9: DNS, HTTP/Web, Content Distribution</span></h2>
+<ul>
+<li>Naming and DNS</li>
+<li>HTTP, persistent connections</li>
+<li>Caching, Zipf workloads</li>
+<li>CDN workings</li>
+</ul>
+<h3> <span class="mw-headline" id="Lecture_Notes_8">Lecture Notes</span></h3>
+<ul>
+<li><em>APPLICATIONS LAYER:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyN2JQbklRY3JfQnc/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyN2JQbklRY3JfQnc/edit?usp=sharing</a>)</li>
+<li><em>DNS&#160;:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyYWNSOGxXaE5WSzA/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyYWNSOGxXaE5WSzA/edit?usp=sharing</a>)</li>
+<li><em>HTTP&#160;:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQybElsR0dlQWpUb2M/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQybElsR0dlQWpUb2M/edit?usp=sharing</a>)</li>
+<li><em>HTTP PERFORMANCE&#160;:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyU2tDY3R3VlBfaG8/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyU2tDY3R3VlBfaG8/edit?usp=sharing</a>)</li>
+<li><em>EVOLUTION OF HTTP&#160;:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyM1JieDBKWEZYeUU/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyM1JieDBKWEZYeUU/edit?usp=sharing</a>)</li>
+<li><em>WEB CACHING AND WEB PROXIES:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyRzdVc2tTN2RWZ0U/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyRzdVc2tTN2RWZ0U/edit?usp=sharing</a>)</li>
+<li><em>CONTENT DELIVERY NETWORK – CDN:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyZy1XZ1JEUzVEMEE/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyZy1XZ1JEUzVEMEE/edit?usp=sharing</a>)</li>
+<li><em>PEER TO PEER CONTENT DELIVERY – P2P:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyeXBleEdiNlJCa00/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyeXBleEdiNlJCa00/edit?usp=sharing</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_10:_QOS_and_Real-Time_Apps">Week 10: QOS and Real-Time Apps</span></h2>
+<ul>
+<li>Bufferbloat and congestion avoidance</li>
+<li>RED and ECN</li>
+<li>Fair queuing and WFQ</li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Token_bucket">Token buckets</a>
+
+<ul>
+<li><a href="/wiki/index.php/Comnetworks:Token_Buckets" title="Comnetworks:Token Buckets"> Token Bucket Descriptions</a></li>
+</ul></li>
+<li>Application needs</li>
+<li>Streaming app and buffering</li>
+<li>Conferencing app</li>
+<li>Differentiated service model</li>
+<li>GPS construction and integrated service model</li>
+</ul>
+<h3> <span class="mw-headline" id="LECTURE_NOTES_9">LECTURE NOTES</span></h3>
+<ul>
+<li><em>LIST OF ACRONYMS:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyeFpndTF2VEdDdTg/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyeFpndTF2VEdDdTg/edit?usp=sharing</a>)</li>
+<li><em>QUALITY OF SERVICE:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyUXNieENTY1hrZ3M/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyUXNieENTY1hrZ3M/edit?usp=sharing</a>)</li>
+<li><em>REAL TIME MEDIA (SKYPE):</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyQ1hXTkJmcmptTGM/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyQ1hXTkJmcmptTGM/edit?usp=sharing</a>)</li>
+<li><em>STREAMING MEDIA (VIDEO):</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyTmpJQ2FyWDRrblU/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyTmpJQ2FyWDRrblU/edit?usp=sharing</a>)</li>
+<li><em>FAIR QUEUING:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyMjJqejB2LVc4SjQ/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyMjJqejB2LVc4SjQ/edit?usp=sharing</a>)</li>
+<li><em>TOKEN BUCKET ALGORITHM (TRAFFIC SHAPING &amp; POLICING):</em>
+(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyRGE2d1RCYzhQM1E/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyRGE2d1RCYzhQM1E/edit?usp=sharing</a>)</li>
+<li><em>DIFFERENTIATED SERVICES:</em>
+(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyR3JONEJsRFY4V2c/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyR3JONEJsRFY4V2c/edit?usp=sharing</a>)</li>
+<li><em>RATE &amp; DELAY GUARANTEES (HARD QOS):</em>
+(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyVEFtZDVWZjZuVUU/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyVEFtZDVWZjZuVUU/edit?usp=sharing</a>)</li>
+<li><em>QOS SHEET 1:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQydnJ0VUNBdHhfTXc/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQydnJ0VUNBdHhfTXc/edit?usp=sharing</a>)</li>
+<li><em>QOS SHEET 2:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyeUt1d2VIRkJYZk0/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyeUt1d2VIRkJYZk0/edit?usp=sharing</a>)</li>
+<li><em>QOS SHEET 3:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyZDdXS2pyWThYR1U/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyZDdXS2pyWThYR1U/edit?usp=sharing</a>)</li>
+<li><em>QOS SHEET 4:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyZ183QWpYd1RuUkk/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyZ183QWpYd1RuUkk/edit?usp=sharing</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_11:_Network_Security">Week 11: Network Security</span></h2>
+<ul>
+<li>VPNs</li>
+<li>SSL</li>
+<li>802.11i</li>
+</ul>
+<h3> <span class="mw-headline" id="LECTURE_NOTES_10">LECTURE NOTES</span></h3>
+<ul>
+<li><em>INTRODUCTION TO NETWORK SECURITY:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQycnREYUstWS1semM/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQycnREYUstWS1semM/edit?usp=sharing</a>)</li>
+<li><em>MESSAGE CONFIDENTIALITY – HOW TO ENSURE?:</em>
+(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQydlllZHlmZnU0Z00/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQydlllZHlmZnU0Z00/edit?usp=sharing</a>)</li>
+<li><em>WHAT ARE THE OTHER ASPECTS OF SECURITY OTHER THAN CONFIDENTIALITY?&#160;:</em>
+<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyYlBENThaWk4xLUk/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyYlBENThaWk4xLUk/edit?usp=sharing</a></li>
+<li><em>MESSAGE AUTHENTICATION:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyMnpucHRuVDYzZVk/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyMnpucHRuVDYzZVk/edit?usp=sharing</a>)</li>
+<li><em>DIGITAL SIGNATURE:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyNG5kdjU3d1dRd2s/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyNG5kdjU3d1dRd2s/edit?usp=sharing</a>)</li>
+<li><em>MESSAGE DIGEST OR CRYPTOGRAPHIC HASH:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyYjdLcW9JS3k3bTQ/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyYjdLcW9JS3k3bTQ/edit?usp=sharing</a>)</li>
+<li><em>WIRELESS SECURITY:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQySnU4b3JhWFF4R2c/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQySnU4b3JhWFF4R2c/edit?usp=sharing</a>)</li>
+<li><em>WEB SECURITY:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyUXRSWXBIVmtOTDA/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyUXRSWXBIVmtOTDA/edit?usp=sharing</a>)</li>
+<li><em>DNS SECURITY:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyOEhJcW04dUcwSFE/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyOEhJcW04dUcwSFE/edit?usp=sharing</a>)</li>
+<li><em>FIREWALLS:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyR1ViaEJrdDZnSGs/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyR1ViaEJrdDZnSGs/edit?usp=sharing</a>)</li>
+<li><em>VIRTUAL PRIVATE NETWORK – VPN:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyY1Bvc1lTVVc3OVU/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyY1Bvc1lTVVc3OVU/edit?usp=sharing</a>)</li>
+<li><em>DISTRIBUTED DENIAL OF SERVICE:</em>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyNHY1SzBqcDRqUzQ/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyNHY1SzBqcDRqUzQ/edit?usp=sharing</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="List_of_ACRONYMS_for_the_course">List of ACRONYMS for the course</span></h2>
+<ul>
+<li>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyeFpndTF2VEdDdTg/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyeFpndTF2VEdDdTg/edit?usp=sharing</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="COURSE_CONTENT">COURSE CONTENT</span></h2>
+<ul>
+<li>(<a rel="nofollow" class="external free" href="https://docs.google.com/file/d/0B0soxwuAdqQyZ2QwMFdsYVNzVkE/edit?usp=sharing">https://docs.google.com/file/d/0B0soxwuAdqQyZ2QwMFdsYVNzVkE/edit?usp=sharing</a>)</li>
+</ul>
+<h2> <span class="mw-headline" id="Optional">Optional</span></h2>
+<h3> <span class="mw-headline" id="Short_Guide_to_LaTeX">Short Guide to LaTeX</span></h3>
+<p>As the course goes deeper into computer networking, more mathematics will most likely be encountered such that you may want to discuss more about it in the forums or write on this wiki. Math and keyboard typing just don't get along very well. For an easier discussion, it's better to use Latex to type up mathematical symbols than do your best to "draw" it using keyboard keys. </p>
+<p>For example, suppose I want to write in Latex: $$\frac{1}{2}c + \sum&#95;{n=1}^{\infty}a&#95;{n}\sin(2 \pi nft) + \sum&#95;{n=1}^{\infty}b&#95;{n}\cos(2 \pi nft)$$ </p>
+<h4> <span class="mw-headline" id="Step_1:_Find_the_Latex_syntax_for_each_Math_symbols">Step 1: Find the Latex syntax for each Math symbols</span></h4>
+<p>How: You can find most of the symbol's syntax here: <a rel="nofollow" class="external free" href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">http://en.wikibooks.org/wiki/LaTeX/Mathematics</a>. Don't bother reading the first few sections, just keep going down. On the left side are the syntax and format for you to write the symbols and on the right side is what your readers will see. </p>
+<p>You notice the syntax are colored:</p>
+<p><span style="color:Green">Green</span>: Comments for other writers or yourself; Readers will never see this.</p>
+<p><span style="color:red">Red</span>: Programming function so you won't have to write a lot, just making it look beautiful (or ugly) to the writer. Begins with '\'. Readers will never see this.</p>
+<p><span style="color:Brown">Brown</span>: These syntax will draw a certain math symbol. Most begin with '\' and most of them are attached with series of '{ }'.
+<ul><li>Example: <span style="color:Brown">\frac{}{}</span> has two '{}', one for the numerator and the other for the denominator
+</li><li>Example: <span style="color:Brown">a_{}^{}</span> has one for the subscript, and the other for exponents</p>
+</li></ul>
+
+<p><span style="color:Blue">Blue</span>: This is where you put in your own variables and values
+<ul><li>Example: \frac{<span style="color:Blue">5</span>}{<span style="color:Blue">3</span>} would be shown as $$\frac{5}{3}$$ to the readers
+</li><li>Example: a_{<span style="color:Blue">5</span>}^{<span style="color:Blue">3</span>} would be shown as $$a&#95;{5}^{3}$$ to the readers</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="Step_2:_Piece_each_Latex_symbols_together">Step 2: Piece each Latex symbols together</span></h4>
+<p>For our example, I identified the syntax needed were:
+<ul><li>\frac{}{} for ($$\frac{num}{denom}$$)
+</li><li>\infty for $$\infty$$
+</li><li>\sum_{}^{} for $$\sum{}^{}$$
+</li><li>\sin for $$\sin$$ and \cos for $$\cos$$
+</li><li>\pi for $$\pi$$
+</li><li>a&#95;{} and b&#95;{} for $$a&#95;{n}$$ and $$b&#95;{n}$$
+</li><li>Symbols like alphabets, +, -, ( ), = don't need special syntax; just write them out. </p>
+</li></ul>
+
+<p>Piecing all of them together as best as possible, we get: \frac{}{}c + \sum<em>{}^{}a</em>{}\sin() + \sum<em>{}^{}b</em>{}\cos() which looks like: $$\frac{}{}c + \sum&#95;{}^{}a&#95;{}\sin() + \sum&#95;{}^{}b&#95;{}\cos()$$</p>
+<h4> <span class="mw-headline" id="Step_3:_Fill_in_the_symbols_with_values_and_variables">Step 3: Fill in the symbols with values and variables</span></h4>
+<p>This takes some trial and error. Most of the time, you'll know what each {} and () just by which symbol it's attached to. For example, from the Latex Wiki reference, I know for \sum<em>{}^{}, whatever I write in the first {} will be shown in the bottom of the symbol while whatever I write in the second {} will be shown on the top of the symbol: \sum</em>{bottom}^{top} will then look like $$\sum&#95;{bottom}^{top}$$ </p>
+<p>For beginners, this step will often be the most time consuming process as you figure out from trial and error which variable and {} corresponds to which part of the symbol. You'll also encounter some oddities you're better off not asking for what little patience you have left such as "why is $$\infty$$ written as \infty as opposed to \infinity?" or how for me to write '$$\$\$$$', I needed to write '$$\$\$\backslash$\backslash$\$\$$$' (look in this page editor of what I had to write for the one). </p>
+<p>For example, the end result should look something like this: \frac{1}{2}c + \sum<em>{n=1}^{\infty}a</em>{n}\sin(2 \pi nft) + \sum<em>{n=1}^{\infty}b</em>{n}\cos(2\pinft) showing as $$\frac{1}{2}c + \sum&#95;{n=1}^{\infty}a&#95;{n}\sin(2 \pi nft) + \sum&#95;{n=1}^{\infty}b&#95;{n}\cos(2 \pi nft)$$ </p>
+<h4> <span class="mw-headline" id="Step_4:_Let_the_Internet_know_you.27ve_written_Latex.21">Step 4: Let the Internet know you've written Latex!</span></h4>
+<p>There's several ways to do this:</p>
+<p>Method 1: Just write $$\$\$$$ at the beginning and the end of the Latex</p>
+<p>Method 2: Write it in the built in Equation Builder which automatically adds $$\$\$$$ to the Latex statement</p>
+<p>$$\$\$$$ can be seen as the quotation mark for Latex statements. Just how "I hate writing this guide" implies it's a quote written by someone else (not me), $$\$\$$$ Latex Statements $$\$\$$$ can be seen as a quote written in Latex for the text editor to recognize. You also have to do this in order to see for yourself how the Latex statement turned out for further modifications and corrections. </p>
+<h4> <span class="mw-headline" id="Step_5:_Just_keep_doing_it">Step 5: Just keep doing it</span></h4>
+<p>This guide was intentionally short so you could be on your way to start writing in Latex in the forums. The best way to learn Latex is to just keep writing, learning more Latex symbols as you need them, and troubleshooting issues than just by reading a whole on it. As an example, just from writing this guide, I learned few more things about Latex formatting and symbols. Eventually, you're not even going to bother going through these steps. </p>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 122/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Comnetworks:Main&amp;oldid=24731">https://share.coursera.org/wiki/index.php?title=Comnetworks:Main&amp;oldid=24731</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Computer_Networks" title="Category:Computer Networks">Computer Networks</a></li><li><a href="/wiki/index.php/Category:Computer_Science" title="Category:Computer Science">Computer Science</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

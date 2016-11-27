@@ -1,0 +1,231 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Linear Regression with Multiple Variables</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Multiple_Features"><span class="tocnumber">1</span> <span class="toctext">Multiple Features</span></a></li>
+<li class="toclevel-1"><a href="#Cost_function"><span class="tocnumber">2</span> <span class="toctext">Cost function</span></a></li>
+<li class="toclevel-1"><a href="#Gradient_Descent_for_Multiple_Variables"><span class="tocnumber">3</span> <span class="toctext">Gradient Descent for Multiple Variables</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Matrix_Notation"><span class="tocnumber">3.1</span> <span class="toctext">Matrix Notation</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Feature_Normalization"><span class="tocnumber">4</span> <span class="toctext">Feature Normalization</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Quiz_question_.231_on_Feature_Normalization_.28Week_2.2C_Linear_Regression_with_Multiple_Variables.29"><span class="tocnumber">4.1</span> <span class="toctext">Quiz question #1 on Feature Normalization (Week 2, Linear Regression with Multiple Variables)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Gradient_Descent_Tips"><span class="tocnumber">5</span> <span class="toctext">Gradient Descent Tips</span></a></li>
+<li class="toclevel-1"><a href="#Features_and_Polynomial_Regression"><span class="tocnumber">6</span> <span class="toctext">Features and Polynomial Regression</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Polynomial_Regression"><span class="tocnumber">6.1</span> <span class="toctext">Polynomial Regression</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Normal_Equation"><span class="tocnumber">7</span> <span class="toctext">Normal Equation</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Normal_Equation_Noninvertibility"><span class="tocnumber">7.1</span> <span class="toctext">Normal Equation Noninvertibility</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Multiple_Features">Multiple Features</span></h1>
+<p>Linear regression with multiple variables is also known as "multivariate linear regression".</p>
+<p>We now introduce notation for equations where we can have any number of input variables.</p>
+<p>$$
+\begin{align&#42;}
+x&#95;j^{(i)} &amp;= \text{value of feature } j \text{ in the }i^{th}\text{ training example} \newline
+x^{(i)}&amp; = \text{the column vector of all the feature inputs of the }i^{th}\text{ training example} \newline
+m &amp;= \text{the number of training examples} \newline
+n &amp;= \left| x^{(i)} \right|&#160;; \text{(the number of features)} 
+\end{align&#42;}
+$$</p>
+<p>Now define the multivariable form of the hypothesis function as follows, accomodating these multiple features:</p>
+<p>$$
+h&#95;\theta (x) = \theta&#95;0 + \theta&#95;1 x&#95;1 + \theta&#95;2 x&#95;2 + \theta&#95;3 x&#95;3 + \cdots + \theta&#95;n x&#95;n
+$$</p>
+<p>In order to develop intuition about this function, we can think about $$\theta&#95;0$$ as the basic price of a house, $$\theta&#95;1$$ as the price per square meter, $$\theta&#95;2$$ as the price per floor, etc.
+$$x&#95;1$$ will be the number of square meters in the house, $$x&#95;2$$ the number of floors, etc.</p>
+<p>Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:</p>
+<p>$$
+\begin{align&#42;}
+h&#95;\theta(x) =
+\begin{bmatrix}
+\theta&#95;0 \hspace{2em}  \theta&#95;1 \hspace{2em}  ...  \hspace{2em}  \theta&#95;n
+\end{bmatrix}
+\begin{bmatrix}
+x&#95;0 \newline
+x&#95;1 \newline
+\vdots \newline
+x&#95;n
+\end{bmatrix}
+= \theta^T x
+\end{align&#42;}
+$$</p>
+<p>This is a vectorization of our hypothesis function for one training example; see the lessons on vectorization to learn more.</p>
+<p>Remark: Note that for convenience reasons in this course Mr. Ng assumes $$x&#95;{0}^{(i)}  =1 &#92;text{ for }  (i\in &#123; 1,\dots, m &#125; )$$  </p>
+<p>[<strong>Note</strong>: So that we can do matrix operations with theta and x, we will set $$x^{(i)}&#95;0 = 1$$, for all values of $$i$$. This makes the two vectors 'theta' and $$x^{(i)}$$ match each other element-wise (that is, have the same number of elements: $$n + 1$$).]</p>
+<p>The training examples are stored in $$X$$ row-wise, like such:</p>
+<p>$$
+\begin{align&#42;}
+X = 
+\begin{bmatrix}
+x^{(1)}&#95;0 &amp; x^{(1)}&#95;1  \newline
+x^{(2)}&#95;0 &amp; x^{(2)}&#95;1  \newline
+x^{(3)}&#95;0 &amp; x^{(3)}&#95;1<br />
+\end{bmatrix}
+&amp;
+,\theta = 
+\begin{bmatrix}
+\theta&#95;0 \newline
+\theta&#95;1 \newline
+\end{bmatrix}
+\end{align&#42;}
+$$</p>
+<p>You can calculate the hypothesis as a column vector of size (m x 1) with:</p>
+<p>$$
+h&#95;\theta(X) = X \theta
+$$</p>
+<p><strong>For the rest of this page, and other pages of the wiki, $$X$$ will represent a matrix of training examples $$x^{(i)}$$ stored row-wise.</strong></p>
+<h1> <span class="mw-headline" id="Cost_function">Cost function</span></h1>
+<p>For the parameter vector $$\theta$$ (of type $$\mathbb{R}^{n+1}$$ or in $$\mathbb{R}^{(n+1) \times 1}$$), the cost function is:</p>
+<p>$$J(\theta) = \dfrac {1}{2m} \displaystyle \sum&#95;{i=1}^m \left (h&#95;\theta (x^{(i)}) - y^{(i)} \right)^2$$</p>
+<p>The vectorized version is:</p>
+<p>$$J(\theta) = \dfrac {1}{2m} (X\theta - \vec{y})^{T} (X\theta - \vec{y})$$</p>
+<p>Where $$\vec{y}$$ denotes the vector of all y values.</p>
+<h1> <span class="mw-headline" id="Gradient_Descent_for_Multiple_Variables">Gradient Descent for Multiple Variables</span></h1>
+<p>The gradient descent equation itself is generally the same form; we just have to repeat it for our 'n' features:</p>
+<p>$$\begin{align&#42;}
+&amp; \text{repeat until convergence:} \; \lbrace \newline 
+\; &amp; \theta&#95;0&#160;:= \theta&#95;0 - \alpha \frac{1}{m} \sum\limits&#95;{i=1}^{m} (h&#95;\theta(x^{(i)}) - y^{(i)}) \cdot x&#95;0^{(i)}\newline
+\; &amp; \theta&#95;1&#160;:= \theta&#95;1 - \alpha \frac{1}{m} \sum\limits&#95;{i=1}^{m} (h&#95;\theta(x^{(i)}) - y^{(i)}) \cdot x&#95;1^{(i)} \newline
+\; &amp; \theta&#95;2&#160;:= \theta&#95;2 - \alpha \frac{1}{m} \sum\limits&#95;{i=1}^{m} (h&#95;\theta(x^{(i)}) - y^{(i)}) \cdot x&#95;2^{(i)} \newline
+&amp; \cdots
+\newline \rbrace
+\end{align&#42;}$$</p>
+<p>In other words:</p>
+<p>$$\begin{align&#42;}
+&amp; \text{repeat until convergence:} \; \lbrace \newline 
+\; &amp; \theta&#95;j&#160;:= \theta&#95;j - \alpha \frac{1}{m} \sum\limits&#95;{i=1}^{m} (h&#95;\theta(x^{(i)}) - y^{(i)}) \cdot x&#95;j^{(i)} \;  &amp; \text{for j&#160;:= 0..n}
+\newline \rbrace
+\end{align&#42;}$$</p>
+<h2> <span class="mw-headline" id="Matrix_Notation">Matrix Notation</span></h2>
+<p>The Gradient Descent rule can be expressed as:</p>
+<p>$$
+\large
+\theta&#160;:= \theta - \alpha \nabla J(\theta)
+$$</p>
+<p>Where $$\nabla J(\theta)$$ is a column vector of the form:</p>
+<p>$$\large
+\nabla J(\theta)  = \begin{bmatrix}
+\frac{\partial J(\theta)}{\partial \theta&#95;0}   \newline
+\frac{\partial J(\theta)}{\partial \theta&#95;1}   \newline
+\vdots   \newline
+\frac{\partial J(\theta)}{\partial \theta&#95;n} 
+\end{bmatrix}
+$$</p>
+<p>The j-th component of the gradient is the summation of the product of two terms:</p>
+<p>$$\begin{align&#42;}
+\; &amp;\frac{\partial J(\theta)}{\partial \theta&#95;j} &amp;=&amp;  \frac{1}{m} \sum\limits&#95;{i=1}^{m}  \left(h&#95;\theta(x^{(i)}) - y^{(i)} \right) \cdot x&#95;j^{(i)} \newline
+\; &amp; &amp;=&amp; \frac{1}{m} \sum\limits&#95;{i=1}^{m}   x&#95;j^{(i)} \cdot \left(h&#95;\theta(x^{(i)}) - y^{(i)}  \right) 
+\end{align&#42;}$$</p>
+<p>Sometimes, the summation of the product of two terms can be expressed as the product of two vectors. </p>
+<p>Here, $$x&#95;j^{(i)}$$, for $$i=1,...,m$$, represents the $$m$$ elements of the $$j$$-th column, $$\vec{x&#95;j}$$, of the training set $$X$$. </p>
+<p>The other term $$\left(h&#95;\theta(x^{(i)}) - y^{(i)}  \right)$$ is the vector of the deviations between the predictions $$h&#95;\theta(x^{(i)})$$ and the true values $$y^{(i)}$$. Re-writing $$\frac{\partial J(\theta)}{\partial \theta&#95;j}$$, we have:</p>
+<p>$$\begin{align&#42;}
+\; &amp;\frac{\partial J(\theta)}{\partial \theta&#95;j} &amp;=&amp; \frac1m  \vec{x&#95;j}^{T} (X\theta - \vec{y}) \newline
+\newline
+\newline
+\; &amp;\nabla J(\theta) &amp; = &amp; \frac 1m X^{T} (X\theta - \vec{y}) \newline
+\end{align&#42;}$$</p>
+<p>Finally, the matrix notation (vectorized) of the Gradient Descent rule is:</p>
+<p>$$
+\large
+\theta&#160;:= \theta - \frac{\alpha}{m} X^{T} (X\theta - \vec{y})
+$$</p>
+<h1> <span class="mw-headline" id="Feature_Normalization">Feature Normalization</span></h1>
+<p>We can speed up gradient descent by having each of our input values in roughly the same range. This is because $$\theta$$ will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven.</p>
+<p>The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:</p>
+<p>$$ -1 \le x&#95;i \le 1 $$</p>
+<p>or</p>
+<p>$$ -0.5 \le x&#95;i \le 0.5 $$</p>
+<p>These aren't exact requirements; we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges, give or take a few.</p>
+<p>Two techniques to help with this are <strong>feature scaling</strong> and <strong>mean normalization</strong>.  Feature scaling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1.  Mean normalization involves subtracting the average value for an input variable from the values for that input variable, resulting in a new average value for the input variable of just zero.  To implement both of these techniques, adjust your input values as shown in this formula:</p>
+<p>$$
+x&#95;i&#160;:= \dfrac{x&#95;i - \mu&#95;i}{s&#95;i}
+$$</p>
+<p>Where $$\mu&#95;i$$ is the <strong>average</strong> of all the values for feature (i) and $$s&#95;i$$ is the range of values (max - min), or $$s&#95;i$$ is the standard deviation. </p>
+<p>Note that dividing by the range, or dividing by the standard deviation, give different results. The quizzes in this course use range - the programming exercises use standard deviation.</p>
+<p>Example: $$x&#95;i$$ is size of the house in square meters with range of 100 to 2000, with a mean value of 1000. Then, $$x&#95;i&#160;:= \dfrac{size-1000}{1900}$$.</p>
+<p><strong>Take into account</strong> that if we want to do a new prediction based in the hypothesis function with the thetas we have obtained from a normalized set of input values, we will have to normalize as well the input parameters:</p>
+<p>Example: After we normalized the size of the housing as in the previous example we obtained a function h(x). If we want to predict the price of a house in which the size is 1500, when implementing h(x) we will have to apply it not to the <strong>size</strong> but to its <strong>normalized</strong> value:
+$$
+h&#95;\theta (x) = \theta&#95;0 + \theta&#95;1 x&#95;1 +  \cdots + \theta&#95;i x&#95;i + \cdots + \theta&#95;n x&#95;n = \theta&#95;0 + \theta&#95;1 x&#95;1 +  \cdots + \theta&#95;i \dfrac{size-1000}{1900} + \cdots + \theta&#95;n x&#95;n
+$$ </p>
+<h2> <span class="mw-headline" id="Quiz_question_.231_on_Feature_Normalization_.28Week_2.2C_Linear_Regression_with_Multiple_Variables.29">Quiz question #1 on Feature Normalization (Week 2, Linear Regression with Multiple Variables)</span></h2>
+<p>Your answer should be rounded to exactly two decimal places. Use a '.' for the decimal point, not a ','. The tricky part of this question is figuring out which feature of which training example you are asked to normalize. Note that the mobile app doesn't allow entering a negative number (Jan 2016), so you will need to use a browser to submit this quiz if your solution requires a negative number.</p>
+<h1> <span class="mw-headline" id="Gradient_Descent_Tips">Gradient Descent Tips</span></h1>
+<p><strong>Debugging gradient descent.</strong> Make a plot with <em>number of iterations</em> on the x-axis. Now plot the cost function, $$J(\theta)$$ over the number of iterations of gradient descent. If $$J(\theta)$$ ever increases, then you probably need to decrease $$\alpha$$.</p>
+<p><strong>Automatic convergence test.</strong> Declare convergence if $$J(\theta)$$ decreases by less than $$E$$ in one iteration, where $$E$$ is some small value such as $$10^{-3}$$. However in practice it's difficult to choose this threshold value.</p>
+<p>It has been proven that if learning rate $$\alpha$$ is sufficiently small, then $$J(\theta)$$ will decrease on every iteration. Andrew Ng recommends decreasing $$\alpha$$ by multiples of 3.</p>
+<h1> <span class="mw-headline" id="Features_and_Polynomial_Regression">Features and Polynomial Regression</span></h1>
+<p>We can improve our features and the form of our hypothesis function in a couple different ways.</p>
+<p>We can <strong>combine</strong> multiple features into one. For example, we can combine $$x&#95;1$$ and $$x&#95;2$$ into a new feature $$x&#95;3$$ by taking $$x&#95;1 \cdot x&#95;2$$. </p>
+<h3> <span class="mw-headline" id="Polynomial_Regression">Polynomial Regression</span></h3>
+<p>Our hypothesis function need not be linear (a straight line) if that does not fit the data well.</p>
+<p>We can <strong>change the behavior or curve</strong> of our hypothesis function by making it a quadratic, cubic or square root function (or any other form). </p>
+<p>For example, if our hypothesis function is $$h&#95;\theta(x) = \theta&#95;0 + \theta&#95;1 x&#95;1$$ then we can create additional features based on $$x&#95;1$$, to get the quadratic function $$h&#95;\theta(x) = \theta&#95;0 + \theta&#95;1 x&#95;1 + \theta&#95;2 x&#95;1^2$$ or the cubic function  $$h&#95;\theta(x) = \theta&#95;0 + \theta&#95;1 x&#95;1 + \theta&#95;2 x&#95;1^2 + \theta&#95;3 x&#95;1^3$$</p>
+<p>In the cubic version, we have created new features $$x&#95;2$$ and $$x&#95;3$$ where $$x&#95;2 = x&#95;1^2$$ and $$x&#95;3 = x&#95;1^3$$.</p>
+<p>To make it a square root function, we could do: $$h&#95;\theta(x) = \theta&#95;0 + \theta&#95;1 x&#95;1 + \theta&#95;2 \sqrt{x&#95;1}$$</p>
+<p>Note that at 2:52 and through 6:22 in the "Features and Polynomial Regression" video, the curve that Prof Ng discusses about "doesn't ever come back down" is in reference to the hypothesis function that uses the sqrt() function (shown by the solid purple line), not the one that uses $${size}^2$$ (shown with the dotted blue line). The quadratic form of the hypothesis function would have the shape shown with the blue dotted line if $$\theta&#95;2$$ was negative.</p>
+<p>One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important.</p>
+<p>eg. if $$x&#95;1$$ has range 1 - 1000 then range of $$x&#95;1^2$$ becomes 1 - 1000000 and that of $$x&#95;1^3$$ becomes 1 - 1000000000 </p>
+<h1> <span class="mw-headline" id="Normal_Equation">Normal Equation</span></h1>
+<p>The "Normal Equation" is a method of finding the optimum theta <strong>without iteration.</strong></p>
+<p>$$
+\theta = (X^T X)^{-1}X^T y
+$$</p>
+<p>There is <strong>no need</strong> to do feature scaling with the normal equation.</p>
+<p>Mathematical proof of the Normal equation requires knowledge of linear algebra and is fairly involved, so you do not need to worry about the details.</p>
+<p>Proofs are available at these links for those who are interested:
+  <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Linear_least_squares_(mathematics)">Wikipedia</a> 
+  <a rel="nofollow" class="external text" href="http://eli.thegreenplace.net/2014/derivation-of-the-normal-equation-for-linear-regression">Eli Bendersky</a>
+  <a href="/wiki/index.php/ML:Proof_of_Normal_Equation" title="ML:Proof of Normal Equation"> A proof easy to understand</a></p>
+<p>The following is a comparison of gradient descent and the normal equation:</p>
+<table border="1">
+<tr><th>Gradient Descent</th><th>Normal Equation</th></tr>
+<tr><td>Need to choose alpha</td><td>No need to choose alpha</td></tr>
+<tr><td>Needs many iterations</td><td>No need to iterate</td></tr>
+<tr><td>$$O~(kn^2)$$</td><td>$$O~(n^3)$$, need to calculate inverse of $$X^TX$$ </td></tr>
+<tr><td>Works well when n is large</td><td>Slow if n is very large</td></tr>
+</table>
+<p>With the normal equation, computing the inversion has complexity $$\mathcal{O}(n^3)$$. So if we have a very large number of features, the normal equation will be slow. In practice, when n exceeds 10,000 it might be a good time to go from a normal solution to an iterative process.</p>
+<h3> <span class="mw-headline" id="Normal_Equation_Noninvertibility">Normal Equation Noninvertibility</span></h3>
+<p>When implementing the normal equation in octave we want to use the 'pinv' function rather than 'inv.'</p>
+<p>$$X^T X$$ may be <strong>noninvertible</strong>. The common causes are:</p>
+<ul>
+<li>Redundant features, where two features are very closely related (i.e. they are linearly dependent)</li>
+<li>Too many features (e.g. $$m \leq n$$). In this case, delete some features or use "regularization" (to be explained in a later lesson).</li>
+</ul>
+<p>Solutions to the above problems include deleting a feature that is linearly dependent with another or deleting one or more features when there are too many features.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Octave_Tutorial" title="ML:Octave Tutorial">Octave Tutorial</a> Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Linear_Regression_with_Multiple_Variables&amp;oldid=34349">https://share.coursera.org/wiki/index.php?title=ML:Linear_Regression_with_Multiple_Variables&amp;oldid=34349</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

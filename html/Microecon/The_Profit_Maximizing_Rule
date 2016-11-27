@@ -1,0 +1,451 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:The Profit Maximizing Rule</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<h2> <span class="mw-headline" id="Notes_for_Week_6:_2.3_The_Profit_Maximizing_Rule">Notes for Week 6: 2.3 The Profit Maximizing Rule</span></h2>
+<h1> <span class="mw-headline" id="Marginal_Revenue">Marginal Revenue</span></h1>
+<p><em>Marginal Revenue</em> is the change in total revenue from an additional unit sold.</p>
+<p><em>Average Revenue</em> is the total revenue divided by the quantity sold.</p>
+<p><em>Change in Profit</em> is the difference between Marginal Revenue minus Marginal Cost</p>
+<table border="1">
+
+                <tr>
+                    <td style="text-align: center;">
+                        # of Cooks</td>
+                    <td style="text-align: center;">
+                        <p>
+                            # of Sandwiches</p>
+                        <p>
+                            Q</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>
+                            Marginal Product</p>
+                        <p>
+                            &#916;Q = Q<sub>n</sub> - Q<sub>n-1</sub></p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>
+                            Fixed Costs</p>
+                        <p>
+                            FC</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>
+                            Variable Costs</p>
+                        <p>
+                            VC</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>
+                            Total Costs</p>
+                        <p>
+                            TC = FC + VC</p>
+                    </td>
+                    <td style="text-align: center;">
+                        <p>
+                            Marginal Costs</p>
+                        <p>
+                            &#916;TC / &#916;Q</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        0</td>
+                    <td style="text-align: center;">
+                        0</td>
+                    <td style="text-align: center;">
+                        0</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        $0</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        -</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        1</td>
+                    <td style="text-align: center;">
+                        40</td>
+                    <td style="text-align: center;">
+                        40</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        $80</td>
+                    <td style="text-align: center;">
+                        $180</td>
+                    <td style="text-align: center;">
+                        $2.00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        2</td>
+                    <td style="text-align: center;">
+                        90</td>
+                    <td style="text-align: center;">
+                        50</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        $160</td>
+                    <td style="text-align: center;">
+                        $260</td>
+                    <td style="text-align: center;">
+                        $1.60</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        3</td>
+                    <td style="text-align: center;">
+                        120</td>
+                    <td style="text-align: center;">
+                        30</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        $240</td>
+                    <td style="text-align: center;">
+                        $340</td>
+                    <td style="text-align: center;">
+                        $2.70</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        4</td>
+                    <td style="text-align: center;">
+                        135</td>
+                    <td style="text-align: center;">
+                        15</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        $320</td>
+                    <td style="text-align: center;">
+                        $420</td>
+                    <td style="text-align: center;">
+                        $5.30</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        5</td>
+                    <td style="text-align: center;">
+                        140</td>
+                    <td style="text-align: center;">
+                        5</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        $400</td>
+                    <td style="text-align: center;">
+                        $500</td>
+                    <td style="text-align: center;">
+                        $16.00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        6</td>
+                    <td style="text-align: center;">
+                        142</td>
+                    <td style="text-align: center;">
+                        2</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        $480</td>
+                    <td style="text-align: center;">
+                        $580</td>
+                    <td style="text-align: center;">
+                        $40.00</td>
+                </tr>
+
+        </table>
+<p><br /></p>
+<table border="1">
+            
+                <tr>
+                    <td style="text-align: center;">
+                        # of Cooks</td>
+                    <td>
+                        <p style="text-align: center;">
+                            # of Sandwiches</p>
+                        <p style="text-align: center;">
+                            Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Total Costs</p>
+                        <p style="text-align: center;">
+                            TC</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Average FC</p>
+                        <p style="text-align: center;">
+                            FC/Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Average VC</p>
+                        <p style="text-align: center;">
+                            VC/Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Average TC</p>
+                        <p style="text-align: center;">
+                            TC/Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Marginal Costs</p>
+                        <p style="text-align: center;">
+                            &#916;TC / &#916;Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Price</p>
+                        <p style="text-align: center;">
+                            P</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Total Revenue</p>
+                        <p style="text-align: center;">
+                            P * Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Profits</p>
+                        <p style="text-align: center;">
+                            TR - TC</p>
+                        <p style="text-align: center;">
+                            (P -ATC)*Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Marginal Revenue</p>
+                        <p style="text-align: center;">
+                            &#916;TR / &#916;Q</p>
+                    </td>
+                    <td>
+                        <p style="text-align: center;">
+                            Change in Profit</p>
+                        <p style="text-align: center;">
+                            MR-MC</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        0</td>
+                    <td style="text-align: center;">
+                        0</td>
+                    <td style="text-align: center;">
+                        $100</td>
+                    <td style="text-align: center;">
+                        -</td>
+                    <td style="text-align: center;">
+                        -</td>
+                    <td style="text-align: center;">
+                        -</td>
+                    <td style="text-align: center;">
+                        -</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $0.00</td>
+                    <td style="text-align: center;">
+                        -</td>
+                    <td style="text-align: center;">
+                        -</td>
+                    <td style="text-align: center;">
+                        -</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        1</td>
+                    <td style="text-align: center;">
+                        40</td>
+                    <td style="text-align: center;">
+                        $180</td>
+                    <td style="text-align: center;">
+                        $2.50</td>
+                    <td style="text-align: center;">
+                        $2.00</td>
+                    <td style="text-align: center;">
+                        $4.50</td>
+                    <td style="text-align: center;">
+                        $2.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $320.00</td>
+                    <td style="text-align: center;">
+                        $140.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $6.00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        2</td>
+                    <td style="text-align: center;">
+                        90</td>
+                    <td style="text-align: center;">
+                        $260</td>
+                    <td style="text-align: center;">
+                        $1.11</td>
+                    <td style="text-align: center;">
+                        $1.78</td>
+                    <td style="text-align: center;">
+                        $2.89</td>
+                    <td style="text-align: center;">
+                        $1.60</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $720.00</td>
+                    <td style="text-align: center;">
+                        $460.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $6.40</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        3</td>
+                    <td style="text-align: center;">
+                        120</td>
+                    <td style="text-align: center;">
+                        $340</td>
+                    <td style="text-align: center;">
+                        $0.83</td>
+                    <td style="text-align: center;">
+                        $2.00</td>
+                    <td style="text-align: center;">
+                        $2.83</td>
+                    <td style="text-align: center;">
+                        $2.70</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $960.00</td>
+                    <td style="text-align: center;">
+                        $620.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $5.30</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        4</td>
+                    <td style="text-align: center;">
+                        135</td>
+                    <td style="text-align: center;">
+                        $420</td>
+                    <td style="text-align: center;">
+                        $0.74</td>
+                    <td style="text-align: center;">
+                        $2.37</td>
+                    <td style="text-align: center;">
+                        $3.11</td>
+                    <td style="text-align: center;">
+                        $5.30</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $1,080.00</td>
+                    <td style="text-align: center;">
+                        $660.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $2.70</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        5</td>
+                    <td style="text-align: center;">
+                        140</td>
+                    <td style="text-align: center;">
+                        $500</td>
+                    <td style="text-align: center;">
+                        $0.71</td>
+                    <td style="text-align: center;">
+                        $2,86</td>
+                    <td style="text-align: center;">
+                        $3.57</td>
+                    <td style="text-align: center;">
+                        $16.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $1,120.00</td>
+                    <td style="text-align: center;">
+                        $620.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        -$8.00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">
+                        6</td>
+                    <td style="text-align: center;">
+                        142</td>
+                    <td style="text-align: center;">
+                        $580</td>
+                    <td style="text-align: center;">
+                        $0.70</td>
+                    <td style="text-align: center;">
+                        $3.38</td>
+                    <td style="text-align: center;">
+                        $4.08</td>
+                    <td style="text-align: center;">
+                        $40.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        $1,136.00</td>
+                    <td style="text-align: center;">
+                        $556.00</td>
+                    <td style="text-align: center;">
+                        $8.00</td>
+                    <td style="text-align: center;">
+                        -$32.00</td>
+                </tr>
+            
+        </table>
+<h2> <span class="mw-headline" id="The_Profit_Maximizing_Rule">The Profit Maximizing Rule</span></h2>
+<p>If <strong>MR &gt; MC</strong> then you should <strong>produce more</strong></p>
+<p>If <strong>MR &lt; MC</strong> then you should <strong>produce less</strong></p>
+<p>When <strong>MR = MC</strong> then you have the <strong>highest profits</strong></p>
+<p>This is the rule that you will use to decide how much to produce and maximize profits</p>
+<p>NOTE: This has a big assumption that the price has been kept constant, in the example at $8.00</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 168/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:The_Profit_Maximizing_Rule&amp;oldid=18719">https://share.coursera.org/wiki/index.php?title=Microecon:The_Profit_Maximizing_Rule&amp;oldid=18719</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

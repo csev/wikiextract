@@ -1,0 +1,56 @@
+[[ML3:Main|« Back to the main page]]
+
+## Avoiding explicit loops
+In general, code involving SFrames/SArrays and NumPy ndarrays is more performant if explicit Python loops are avoided. Explicit loops include `for` and `while` loops over the array, such as:
+
+<pre>
+num_positive_predictions = 0
+for i in range(len(predictions)):
+    if predictions[i] == +1:
+        num_positive_predictions += 1
+</pre>
+
+.. and Python list comprehensions, such as:
+
+<pre>
+num_positive_predictions = sum([p == +1 for p in predictions])
+</pre>
+
+SFrame/SArray supports a feature called "logical filters" that can be used to select rows of an SFrame or values of an SArray that satisfy a predicate. For example, if `test_data` is an SFrame of the test dataset and `predictions` is an SArray of the test predictions, we can select the test examples that are predicted to be positive with:
+
+<pre>
+predicted_positive = test_data[predictions == +1]
+</pre>
+
+We can count the number of positive predictions with:
+
+<pre>
+num_positive_predictions = len(predictions[predictions == +1])
+</pre>
+
+Assuming that the true label field of `test_data` is named 'true_label', we can count the number of positive test examples with:
+
+<pre>
+num_positive = len(test_data[test_data['true_label'] == +1])
+</pre>
+
+**NOTE** Within the predicate expression, boolean AND is represented using the `&` operator rather than the `and` operator. Similarly, boolean OR is represented using the `|` operator rather than the `or` operator. In addition, because `&` and `|` have higher operator precedence than `and` and `or`, you should generally surround both operands with parentheses. For example:
+
+<pre>
+false_negatives = test_data[(test_data['true_label'] == +1) & (predictions == -1)]
+</pre>
+
+If you see error messages like "TypeError: unsupported operand type(s) for &: 'int' and 'SArray'", then try surrounding the operands with parentheses.
+
+## `from __future__ import division`
+The effect of this import is to modify the behavior of the division operator `/` to be like Python 3. In Python 2, dividing two integers results in integer division by default. This has led to unexpected results and confusion. For example, when calculating the classification error, the formula is #incorrect / #examples. Because #incorrect is less than #examples, the result of the division would always be 0 by default in Python 2 without taking steps to cast either the numerator or denominator to a float.
+
+Here is a demo:
+
+    >>> 1 / 2
+    0
+    >>> from __future__ import division
+    >>> 1 / 2
+    0.5
+
+See also: [PEP 238 -- Changing the Division Operator](https://www.python.org/dev/peps/pep-0238/)

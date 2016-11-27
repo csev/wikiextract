@@ -1,0 +1,818 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture55:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="Networking_-_Part_2_-_Italian_subtitles">Networking - Part 2 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture53:it" title="Android-001:Subtitles:Lecture53:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture55:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture55:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture55:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture55:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture55:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture55:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture55:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture55:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture61:it" title="Android-001:Subtitles:Lecture61:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/zf52z7fuxd17xdd/5%20-%209%20-%20Networking%20-%20Part%202%20%2812-43%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:08,763 --&gt; 00:00:10,940
+Salve, sono Adam Porter.
+
+2
+00:00:10,940 --&gt; 00:00:18,170
+E questo è &quot;Programming Mobile
+Applications for Android Handheld Systems&quot;.
+
+3
+00:00:20,260 --&gt; 00:00:24,390
+Finora le nostre applicazioni di esempio
+hanno richiesto dati
+
+4
+00:00:24,390 --&gt; 00:00:27,968
+e quindi hanno semplicemente mostrato tali
+dati in una TextView.
+
+5
+00:00:29,080 --&gt; 00:00:33,560
+Ma, come avete visto, tali dati hanno un
+formato complesso che è
+
+6
+00:00:33,560 --&gt; 00:00:39,150
+destinato in realtà al processing da parte
+della macchina e non per gli esseri umani.
+
+7
+00:00:39,150 --&gt; 00:00:42,170
+Infatti, questo è un modo sempre più
+popolare
+
+8
+00:00:42,170 --&gt; 00:00:45,560
+per trasportare i dati su Internet e molti
+
+9
+00:00:45,560 --&gt; 00:00:49,980
+servizi web ora forniscono i dati in questi
+formati.
+
+10
+00:00:49,980 --&gt; 00:00:55,430
+In particolare, i due formati di cui parlerò
+ora sono il JavaScript Object
+
+11
+00:00:55,430 --&gt; 00:01:01,950
+Notation, JSON e l'Extensible Markup
+Language, XML.
+
+12
+00:01:01,950 --&gt; 00:01:04,730
+Parliamo di entrambi, uno per volta.
+
+13
+00:01:06,100 --&gt; 00:01:10,440
+Il primo formato di cui parleremo è
+JavaScript Object Notation,
+
+14
+00:01:10,440 --&gt; 00:01:11,710
+JSON.
+
+15
+00:01:11,710 --&gt; 00:01:14,440
+Questo formato mira ad essere leggero e
+
+16
+00:01:14,440 --&gt; 00:01:20,020
+ricorda le strutture dati trovate nei
+linguaggi di programmazione tradizionali.
+
+17
+00:01:20,020 --&gt; 00:01:24,450
+I dati JSON vengono impacchettati in due
+diversi tipi di strutture dati.
+
+18
+00:01:24,450 --&gt; 00:01:30,476
+Una, le mappe, che sono essenzialmente
+insiemi di coppie chiave-valore.
+
+19
+00:01:30,476 --&gt; 00:01:35,540
+E due, le liste ordinate.
+Se volete maggiori dettagli
+
+20
+00:01:35,540 --&gt; 00:01:38,280
+sul JSON, date un'occhiata a questo sito.
+
+21
+00:01:41,950 --&gt; 00:01:44,900
+Ora, torniamo alla nostra applicazione di
+esempio.
+
+22
+00:01:46,190 --&gt; 00:01:48,880
+Come ricorderete, tale applicazione
+richiedeva
+
+23
+00:01:48,880 --&gt; 00:01:53,420
+a un servizio Web alcuni dati sui terremoti.
+
+24
+00:01:53,420 --&gt; 00:01:58,500
+Beh, la risposta che veniva restituita era
+effettivamente formattata in JSON.
+
+25
+00:01:58,500 --&gt; 00:02:01,860
+Quindi ecco tali dati e dividiamoli.
+
+26
+00:02:01,860 --&gt; 00:02:07,610
+In primo luogo, i dati comprendono un
+oggetto JSON e tale oggetto
+
+27
+00:02:07,610 --&gt; 00:02:13,550
+è una mappa e tale mappa ha una coppia
+chiave-valore.
+
+28
+00:02:13,550 --&gt; 00:02:18,840
+La chiave si chiama &quot;earthquakes&quot;.
+E il valore è una
+
+29
+00:02:18,840 --&gt; 00:02:24,328
+lista ordinata. Ora, tale lista ha molti
+oggetti al suo interno.
+
+30
+00:02:24,328 --&gt; 00:02:29,608
+E ciascuno di questi oggetti è a sua volta
+una mappa.
+
+31
+00:02:29,608 --&gt; 00:02:33,689
+E di nuovo ciascuna di tali mappe contiene
+coppie chiave-valore.
+
+32
+00:02:34,860 --&gt; 00:02:41,670
+Per esempio, c'è una chiave chiamata &quot;eqid&quot;
+e il suo valore è l'ID di un terremoto.
+
+33
+00:02:41,670 --&gt; 00:02:45,680
+C'è anche una chiave chiamata &quot;lng&quot; e il suo
+valore
+
+34
+00:02:45,680 --&gt; 00:02:49,010
+è la longitudine dell'epicentro del
+terremoto.
+
+35
+00:02:49,010 --&gt; 00:02:52,790
+E ci sono un sacco di altre chiavi.
+
+36
+00:02:52,790 --&gt; 00:02:57,120
+E insieme, tutti questi valori forniscono
+i dati di un terremoto.
+
+37
+00:02:58,410 --&gt; 00:03:00,050
+Diamo un'occhiata a un'applicazione
+
+38
+00:03:00,050 --&gt; 00:03:03,350
+di esempio che ottiene questi dati da
+Internet e
+
+39
+00:03:03,350 --&gt; 00:03:07,670
+poi li elabora per visualizzarli in maniera
+più leggibile dagli umani.
+
+40
+00:03:10,450 --&gt; 00:03:14,030
+Quindi, ecco il mio dispositivo e adesso
+
+41
+00:03:14,030 --&gt; 00:03:19,870
+avvio l'applicazione
+NetworkingAndroidHttpClientJSON.
+
+42
+00:03:21,580 --&gt; 00:03:24,320
+Come prima, quest'applicazione inizialmente
+mostra
+
+43
+00:03:24,320 --&gt; 00:03:27,010
+un singolo pulsante etichettato &quot;Load Data&quot;.
+
+44
+00:03:28,950 --&gt; 00:03:31,860
+E come prima, quando si preme il pulsante,
+
+45
+00:03:31,860 --&gt; 00:03:35,990
+l'applicazione emette una richiesta HTTPGet
+
+46
+00:03:35,990 --&gt; 00:03:37,830
+a un server esterno.
+
+47
+00:03:37,830 --&gt; 00:03:40,340
+E quel server risponderà con del
+
+48
+00:03:40,340 --&gt; 00:03:44,150
+testo complesso, contenente i dati dei
+terremoti richiesti.
+
+49
+00:03:45,240 --&gt; 00:03:50,700
+Questa volta, però, i dati saranno
+riassunti e presentati in una ListView.
+
+50
+00:03:52,480 --&gt; 00:03:55,350
+Ok, quindi ora premo il pulsante &quot;Load Data&quot;.
+
+51
+00:03:56,860 --&gt; 00:04:01,190
+E si possono vedere i dati richiesti,
+riassunti e presentati
+
+52
+00:04:01,190 --&gt; 00:04:02,650
+in una ListView.
+
+53
+00:04:04,010 --&gt; 00:04:06,950
+Diamo un'occhiata al codice sorgente,
+per vedere come funziona.
+
+54
+00:04:08,260 --&gt; 00:04:11,170
+Qui ho aperto l'applicazione dell'IDE.
+
+55
+00:04:12,540 --&gt; 00:04:17,010
+E ora apro il file che scarica i dati e li
+mostra.
+
+56
+00:04:17,010 --&gt; 00:04:20,800
+E ho intenzione di passare direttamente
+alla classe HttpGetTask.
+
+57
+00:04:20,800 --&gt; 00:04:21,300
+Ora
+
+58
+00:04:23,270 --&gt; 00:04:29,080
+qui, il metodo doInBackground è simile
+a quello che abbiamo visto prima, ma stavolta
+
+59
+00:04:29,080 --&gt; 00:04:35,170
+utilizza la classe JSONResponseHandler per
+processare la risposta.
+
+60
+00:04:35,170 --&gt; 00:04:37,900
+Scorriamo in basso e guardiamo tale classe.
+
+61
+00:04:39,200 --&gt; 00:04:43,140
+Il metodo chiave in questa classe è il
+metodo handleResponse.
+
+62
+00:04:44,180 --&gt; 00:04:48,700
+Questo metodo inizia passando la risposta
+grezza in un BasicResponseHandler,
+
+63
+00:04:48,700 --&gt; 00:04:53,820
+che restituisce solo il corpo della risposta
+senza
+
+64
+00:04:53,820 --&gt; 00:04:58,750
+gli header della risposta HTTP. Poi, il
+codice usa
+
+65
+00:04:58,750 --&gt; 00:05:03,710
+un JSONTokener per parsare la JSONResponse
+in un oggetto Java
+
+66
+00:05:04,830 --&gt; 00:05:09,690
+e quindi restituire l'oggetto le livello più
+alto che in questo caso è una mappa.
+
+67
+00:05:12,280 --&gt; 00:05:17,970
+Poi il codice estrae il valore
+associato alla chiave &quot;earthquakes&quot;.
+
+68
+00:05:17,970 --&gt; 00:05:20,140
+E in questo caso, è una lista ordinata.
+
+69
+00:05:21,830 --&gt; 00:05:27,170
+Poi, il codice itera sulla lista dei
+terremoti e per ogni elemento
+
+70
+00:05:27,170 --&gt; 00:05:32,250
+di tale lista, ottiene i dati associati a un
+singolo terremoto.
+
+71
+00:05:33,260 --&gt; 00:05:35,720
+E questi dati sono memorizzati in mappe.
+
+72
+00:05:37,230 --&gt; 00:05:42,750
+Quindi il codice riassume i vari pezzi
+dei dati di terremoto, li converte
+
+73
+00:05:42,750 --&gt; 00:05:47,100
+in una singola stringa e aggiunge tale
+stringa a una lista, chiamata &quot;result&quot;.
+
+74
+00:05:47,100 --&gt; 00:05:52,160
+E infine il risultato viene restituito
+al metodo chiamante.
+
+75
+00:05:53,500 --&gt; 00:05:55,975
+Ora, dopo che il metodo doInBackground
+
+76
+00:05:55,975 --&gt; 00:05:59,760
+termina, viene chiamato il metodo
+onPostExecute.
+
+77
+00:05:59,760 --&gt; 00:06:03,580
+E gli viene fornito il risultato come
+parametro.
+
+78
+00:06:03,580 --&gt; 00:06:09,390
+E come potete vedere, questo metodo crea
+e imposta un ListAdapter per la ListView,
+
+79
+00:06:09,390 --&gt; 00:06:15,080
+passando la lista dei risultati che è stata
+calcolata prima in handleResponse.
+
+80
+00:06:17,630 --&gt; 00:06:19,410
+Il secondo formato di dati di cui parleremo
+
+81
+00:06:19,410 --&gt; 00:06:23,860
+è l'Extensible Markup Language, XML.
+
+82
+00:06:23,860 --&gt; 00:06:27,950
+XML è un linguaggio di markup per la
+creazione di documenti XML.
+
+83
+00:06:27,950 --&gt; 00:06:32,300
+I documenti XML contengono markup e
+contenuto.
+
+84
+00:06:32,300 --&gt; 00:06:34,590
+Il markup codifica una descrizione del
+
+85
+00:06:34,590 --&gt; 00:06:38,670
+layout di memorizzazione del documento e la
+sua struttura logica.
+
+86
+00:06:38,670 --&gt; 00:06:40,530
+Il contenuto è tutto il resto.
+
+87
+00:06:41,590 --&gt; 00:06:42,740
+E in particolare,
+
+88
+00:06:42,740 --&gt; 00:06:46,740
+il contenuto comprende i dati risposta quando
+
+89
+00:06:46,740 --&gt; 00:06:50,980
+l'XML viene utilizzato per codificare una
+risposta HTTP.
+
+90
+00:06:50,980 --&gt; 00:06:55,030
+Ora, se volete maggiori dettagli sull'XML,
+date un'occhiata a questo sito.
+
+91
+00:06:58,320 --&gt; 00:07:01,590
+Ora, torniamo alla nostra applicazione di
+esempio.
+
+92
+00:07:01,590 --&gt; 00:07:06,980
+Se diamo un URL leggermente diverso, il
+servizio web
+
+93
+00:07:06,980 --&gt; 00:07:13,330
+restituirà i dati del terremoto in formato
+XML, piuttosto che in formato JSON.
+
+94
+00:07:13,330 --&gt; 00:07:15,910
+Quindi ecco tali dati, dividiamoli.
+
+95
+00:07:17,160 --&gt; 00:07:20,400
+Per prima cosa c'è un elemento chiamato
+&quot;geonames&quot;.
+
+96
+00:07:20,400 --&gt; 00:07:24,680
+Annidata all'interno di tale elemento, c'è
+una serie di elementi &quot;earthquake&quot;.
+
+97
+00:07:25,800 --&gt; 00:07:30,220
+E ognuno degli elementi &quot;earthquake&quot;
+contiene altri elementi che forniscono i
+
+98
+00:07:30,220 --&gt; 00:07:35,540
+dati di un terremoto. Quindi similmente
+a quello che abbiamo visto con il formato
+
+99
+00:07:35,540 --&gt; 00:07:42,040
+JSON, c'è un elemento chiamato &quot;eqid&quot; e il
+suo valore è l'ID di un terremoto.
+
+100
+00:07:42,040 --&gt; 00:07:45,170
+C'è anche l'elemento di &quot;lng&quot;, e il suo
+valore
+
+101
+00:07:45,170 --&gt; 00:07:48,620
+è la longitudine dell'epicentro del
+terremoto.
+
+102
+00:07:48,620 --&gt; 00:07:51,060
+E proprio come nell'esempio JSON, ci sono un
+sacco
+
+103
+00:07:51,060 --&gt; 00:07:52,840
+di altri elementi.
+
+104
+00:07:53,860 --&gt; 00:07:59,030
+Quindi, se la nostra applicazione ottiene i
+dati XML da Internet, si dovrà analizzare
+
+105
+00:07:59,030 --&gt; 00:08:04,200
+il documento XML in modo da poter creare
+la ListView che abbiamo visto prima.
+
+106
+00:08:04,200 --&gt; 00:08:10,840
+Android offre diversi tipi
+di parser XML, inclusi i parser DOM.
+
+107
+00:08:10,840 --&gt; 00:08:16,130
+DOM sta per Document Object Model. E i parser
+DOM leggono l'intero
+
+108
+00:08:16,130 --&gt; 00:08:22,940
+documento XML e lo convertono in una
+&quot;Document model structure&quot;, un albero.
+
+109
+00:08:22,940 --&gt; 00:08:27,690
+Poi l'applicazione processa questa struttura
+ad albero.
+
+110
+00:08:27,690 --&gt; 00:08:32,200
+Ora, questo tipo di parser richiede più
+memoria, ma non consente
+
+111
+00:08:32,200 --&gt; 00:08:36,470
+all'applicazione di fare cose come elaborare
+in più passaggi del documento.
+
+112
+00:08:37,730 --&gt; 00:08:41,390
+I parser SAX.
+Questi parser leggono il documento
+
+113
+00:08:41,390 --&gt; 00:08:46,310
+XML come se fosse un flusso e quando
+incontrano le varie entità del documento,
+
+114
+00:08:46,310 --&gt; 00:08:51,870
+richiamano una callback nell'applicazione, che può
+quindi processare le informazioni del documento.
+
+115
+00:08:51,870 --&gt; 00:08:55,480
+Ora, questi parser utilizzano meno memoria
+rispetto ai parser DOM, ma sono
+
+116
+00:08:55,480 --&gt; 00:08:59,229
+limitati a processare il documento in un
+singolo passaggio.
+
+117
+00:09:00,420 --&gt; 00:09:05,800
+I parser Pull leggono il documento come un
+flusso, come i parser SAX.
+
+118
+00:09:05,800 --&gt; 00:09:06,870
+Ma i parser Pull
+
+119
+00:09:06,870 --&gt; 00:09:11,370
+usano un approccio iterativo, in cui
+l'applicazione, invece
+
+120
+00:09:11,370 --&gt; 00:09:16,510
+del parser, decide quando portare avanti il
+processo di parsing.
+
+121
+00:09:16,510 --&gt; 00:09:22,810
+E come i parser SAX, anche i parser Pull
+usano meno memoria dei parser DOM.
+
+122
+00:09:22,810 --&gt; 00:09:25,790
+Ma i parser Pull danno anche
+all'applicazione un maggiore
+
+123
+00:09:25,790 --&gt; 00:09:29,600
+controllo sul processo di analisi rispetto
+ai parser SAX.
+
+124
+00:09:31,410 --&gt; 00:09:31,910
+Ora,
+
+125
+00:09:31,910 --&gt; 00:09:34,910
+l'applicazione di esempio ha esattamente lo
+stesso aspetto di
+
+126
+00:09:34,910 --&gt; 00:09:38,270
+quella che abbiamo mostrato per il parsing
+delle risposte in JSON.
+
+127
+00:09:38,270 --&gt; 00:09:41,810
+Quindi non vi mostrerò quest'applicazione
+ora.
+
+128
+00:09:41,810 --&gt; 00:09:44,640
+Invece, diamo un'occhiata al codice
+sorgente di quest'applicazione.
+
+129
+00:09:49,740 --&gt; 00:09:52,500
+Ora qui ho aperto l'applicazione
+nell'IDE.
+
+130
+00:09:52,500 --&gt; 00:09:58,700
+E ora apro il file responsabile del download
+e della visualizzazione.
+
+131
+00:09:58,700 --&gt; 00:10:03,400
+E salterò di nuovo direttamente alla classe
+HttpGetTask.
+
+132
+00:10:05,202 --&gt; 00:10:09,110
+Il metodo doInBackground è simile a quello
+che abbiamo visto prima, ma
+
+133
+00:10:09,110 --&gt; 00:10:15,390
+ora usa la classe XMLResponseHandler, per
+processare la risposta.
+
+134
+00:10:15,390 --&gt; 00:10:18,490
+Quindi apriamo tale classe e vediamo come
+funziona.
+
+135
+00:10:21,620 --&gt; 00:10:26,920
+Ora, come prima, il metodo chiave in questa
+classe è il metodo handleResponse.
+
+136
+00:10:26,920 --&gt; 00:10:30,090
+E questo metodo inizia con la
+creazione dell'oggetto PullParser.
+
+137
+00:10:31,630 --&gt; 00:10:35,710
+Poi, il codice imposta il documento che è
+stato restituito nel corpo della
+
+138
+00:10:35,710 --&gt; 00:10:40,370
+risposta HTTP come l'input del parser.
+
+139
+00:10:41,620 --&gt; 00:10:43,820
+Dopo di che, il codice ottiene il primo
+
+140
+00:10:43,820 --&gt; 00:10:47,020
+evento parser, e quindi comincia a iterare
+
+141
+00:10:47,020 --&gt; 00:10:48,229
+sul documento XML.
+
+142
+00:10:50,350 --&gt; 00:10:52,310
+Ora, all'interno del ciclo while, ci sono tre
+
+143
+00:10:52,310 --&gt; 00:10:56,340
+eventi che questo codice controlla: vedere
+
+144
+00:10:56,340 --&gt; 00:11:03,300
+l'inizio di un tag XML, vedere la fine di un
+tag XML e vedere il contenuto dell'elemento.
+
+145
+00:11:03,300 --&gt; 00:11:07,650
+Ora, quando l'evento è un evento START,
+viene chiamato il
+
+146
+00:11:07,650 --&gt; 00:11:11,200
+metodo startTag, passandogli l'elemento che
+sta per iniziare.
+
+147
+00:11:12,700 --&gt; 00:11:16,000
+Questo metodo controlla se questo elemento
+
+148
+00:11:16,000 --&gt; 00:11:18,290
+deve essere salvato.
+
+149
+00:11:18,290 --&gt; 00:11:21,770
+E in tal caso, lo memorizza impostando
+alcune variabili.
+
+150
+00:11:23,380 --&gt; 00:11:27,580
+Quando l'evento è un evento END, viene
+chiamato il metodo endTag,
+
+151
+00:11:27,580 --&gt; 00:11:33,110
+passandovi l'elemento che sta per terminare
+e, di nuovo, questo metodo verifica
+
+152
+00:11:33,110 --&gt; 00:11:39,268
+se questo è un elemento di quelli da
+salvare, e in tal caso lo memorizza.
+
+153
+00:11:39,268 --&gt; 00:11:41,250
+Inoltre, se questa è la fine di un
+
+154
+00:11:41,250 --&gt; 00:11:45,430
+tag &quot;earthquake&quot;, allora la stringa del
+risultato di questa parte
+
+155
+00:11:45,430 --&gt; 00:11:47,989
+dei dati del terremoto viene aggiunta alla
+lista del risultato.
+
+156
+00:11:49,660 --&gt; 00:11:52,100
+Quando l'evento è un evento TEXT, viene
+
+157
+00:11:52,100 --&gt; 00:11:55,620
+chiamato il metodo text, passandovi il
+contenuto dell'elemento.
+
+158
+00:11:56,970 --&gt; 00:11:59,570
+Questo metodo verifica quale tag è
+attualmente in fase di
+
+159
+00:11:59,570 --&gt; 00:12:03,680
+analisi e quindi ne salva il contenuto per
+un uso successivo.
+
+160
+00:12:05,310 --&gt; 00:12:06,790
+E, come prima,
+
+161
+00:12:06,790 --&gt; 00:12:12,050
+dopo la terminazione del metodo
+doInBackground, viene chiamato il metodo
+
+162
+00:12:12,050 --&gt; 00:12:16,280
+onPostExecute con il risultato passato come
+parametro.
+
+163
+00:12:18,420 --&gt; 00:12:22,438
+E tale metodo crea e imposta un ListAdapter
+per la ListView
+
+164
+00:12:22,438 --&gt; 00:12:27,649
+passandovi la lista del risultato che è
+stata calcolata prima in handleResponse.
+
+165
+00:12:31,507 --&gt; 00:12:34,490
+Dunque, è tutto per la nostra lezione sul
+networking.
+
+166
+00:12:34,490 --&gt; 00:12:38,370
+Ci vediamo la prossima volta per una lezione
+su grafica e animazioni.
+
+167
+00:12:38,370 --&gt; 00:12:39,277
+Ciao per ora.
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture55:it&amp;oldid=23373">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture55:it&amp;oldid=23373</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

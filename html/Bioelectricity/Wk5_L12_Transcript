@@ -1,0 +1,24 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Wk5 L12 Transcript</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="5-12_Week_5_In_Review">5-12 Week 5 In Review</span></h1>
+<p>So hello again. This is Roger Coke Barr for the Bioelectricity course, Week number five, and we're doing the week in review in segment twelve. We begin this week with the realization that we needed to know the membrane current, we needed it because it's the starting term in our equation Im equals Ic plus Iion. So we set out to get a value for Im and to get this from the set of vm's up and down our structure. In order to find the membrane current, we have to know what the structure is. We chose in particular the core conductor model, for a simple, uniform, cylindrical fiber. What we found was that at a home site,that is to say, in a particular site on the fiber. The membrane current depends on the pattern of vm in that neighborhood that is to say, all around our site. And especially, it depends on the second spatial derivative of vm, a fact that seemed obvious in retrospect, but was no means obvious before we did the derivation. We found finally, that even though IM is equal to the capacity of current plus the Ionic current, the membrane current could be found, and was found, without the need of any calculations of either the Iion current or the capacity current. So I posed the question is that really true?" Even the llamas were sceptical. But yes, it is really true. And I thought you just probably doubted that llamas really lived in the wild in North Carolina, yes really they do,there's a picture of one of them. So taking the week as a whole,It hasn't been technically extremely complicated but there have been a series of individual small items that had to be put together. We needed to know the membrane current. We needed to have a structure. We found that the membrane current depends on the pattern in the neighborhood, Notice that says you don't find IM by VM at the same place. You find it by the pattern of Vms in the neighborhood and especially the second spatial derivative. But, the good news is, the membrane current can be found without need for any calculations of either the ionic current,or the capacity current. So we're in a bright spot now. We have all the components of our train system. We have the engine, we know about channels, we have the track. We can put them all together and watch our trains go some place. In the next week's work, that's exactly what we will do. Thank you for watching.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Wk5_L12_Transcript&amp;oldid=8687">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Wk5_L12_Transcript&amp;oldid=8687</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

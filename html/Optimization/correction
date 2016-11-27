@@ -1,0 +1,83 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:correction</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This page contains details about known errors in the course videos.  Most often the corrections have been applied to the slides that are available for download.  The organization of this page should be maintained to be in sync with the video lectures in the course.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Preliminaries"><span class="tocnumber">1</span> <span class="toctext">Preliminaries</span></a></li>
+<li class="toclevel-1"><a href="#Constraint_Programming"><span class="tocnumber">2</span> <span class="toctext">Constraint Programming</span></a></li>
+<li class="toclevel-1"><a href="#Local_Search"><span class="tocnumber">3</span> <span class="toctext">Local Search</span></a></li>
+<li class="toclevel-1"><a href="#Linear_.26_Integer_Programming"><span class="tocnumber">4</span> <span class="toctext">Linear &amp; Integer Programming</span></a></li>
+<li class="toclevel-1"><a href="#Assignments"><span class="tocnumber">5</span> <span class="toctext">Assignments</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Preliminaries">Preliminaries</span></h3>
+<p><a href="/wiki/index.php?title=Optimization:correction:motivation&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:motivation (page does not exist)"> Course Motivation</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:intro&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:intro (page does not exist)"> Course Introduction</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ks1_002&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ks1 002 (page does not exist)"> Knapsack 1</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ks2_002&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ks2 002 (page does not exist)"> Knapsack 2</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ks3_002&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ks3 002 (page does not exist)"> Knapsack 3</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ks4_002&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ks4 002 (page does not exist)"> Knapsack 4</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ks5_002&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ks5 002 (page does not exist)"> Knapsack 5</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ks6_002&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ks6 002 (page does not exist)"> Knapsack 6</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:explore&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:explore (page does not exist)"> Exploring the Material</a></p>
+<h3> <span class="mw-headline" id="Constraint_Programming">Constraint Programming</span></h3>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp1&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp1 (page does not exist)"> CP 1</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp2&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp2 (page does not exist)"> CP 2</a></p>
+<p><a href="/wiki/index.php/Optimization:correction:cp3" title="Optimization:correction:cp3"> CP 3</a></p>
+<p><a href="/wiki/index.php/Optimization:correction:cp4" title="Optimization:correction:cp4"> CP 4</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp5&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp5 (page does not exist)"> CP 5</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp6&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp6 (page does not exist)"> CP 6</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp7&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp7 (page does not exist)"> CP 7</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp8&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp8 (page does not exist)"> CP 8</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp9&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp9 (page does not exist)"> CP 9</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:cp10&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:cp10 (page does not exist)"> CP 10</a></p>
+<h3> <span class="mw-headline" id="Local_Search">Local Search</span></h3>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls1&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls1 (page does not exist)"> LS 1</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls2&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls2 (page does not exist)"> LS 2</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls3&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls3 (page does not exist)"> LS 3</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls4&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls4 (page does not exist)"> LS 4</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls5&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls5 (page does not exist)"> LS 5</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls6&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls6 (page does not exist)"> LS 6</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls7&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls7 (page does not exist)"> LS 7</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls8&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls8 (page does not exist)"> LS 8</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:ls9&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:ls9 (page does not exist)"> LS 9</a></p>
+<h3> <span class="mw-headline" id="Linear_.26_Integer_Programming">Linear &amp; Integer Programming</span></h3>
+<p><a href="/wiki/index.php/Optimization:correction:lp1" title="Optimization:correction:lp1"> LP 1</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:lp2&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:lp2 (page does not exist)"> LP 2</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:lp3&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:lp3 (page does not exist)"> LP 3</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:lp4&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:lp4 (page does not exist)"> LP 4</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:lp5&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:lp5 (page does not exist)"> LP 5</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:lp6&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:lp6 (page does not exist)"> LP 6</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:mip1&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:mip1 (page does not exist)"> MIP 1</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:mip2&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:mip2 (page does not exist)"> MIP 2</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:mip3&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:mip3 (page does not exist)"> MIP 3</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:mip4&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:mip4 (page does not exist)"> MIP 4</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:mip5&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:mip5 (page does not exist)"> MIP 5</a></p>
+<h3> <span class="mw-headline" id="Assignments">Assignments</span></h3>
+<p><a href="/wiki/index.php?title=Optimization:correction:screenname&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:screenname (page does not exist)"> Screen Name</a></p>
+<p><a href="/wiki/index.php/Optimization:correction:knapsack" title="Optimization:correction:knapsack"> Knapsack</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:graphcoloring&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:graphcoloring (page does not exist)"> Graph Coloring</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:travelingsalesman&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:travelingsalesman (page does not exist)"> Traveling Salesman</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:warehouselocation&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:warehouselocation (page does not exist)"> Warehouse Location</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:vehiclerouting&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:vehiclerouting (page does not exist)"> Vehicle Routing</a></p>
+<p><a href="/wiki/index.php?title=Optimization:correction:optimizationtools&amp;action=edit&amp;redlink=1" class="new" title="Optimization:correction:optimizationtools (page does not exist)"> Optimization Tools</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:correction&amp;oldid=23154">https://share.coursera.org/wiki/index.php?title=Optimization:correction&amp;oldid=23154</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

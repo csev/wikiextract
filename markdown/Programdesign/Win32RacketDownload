@@ -1,0 +1,58 @@
+Downloading Racket for Windows (x86, 32-bit)
+============================================
+
+[[Programdesign:InstallingRacket | Finding the download]] for a Windows x86 desktop platform is the same as for the x64 platform.
+
+The Windows (x86, 32-bit) platform is selected.
+
+<center>
+[[File:Racket-5.3.6-2013-09-05-1152-x86-download.png]]
+</center>
+
+The request to select a download site confirms the selection.
+
+<center>
+[[File:Racket-5.3.6-2013-09-05-1153-x86-download.png]]
+</center>
+
+On selecting the download site, the download process is ready to start.  
+
+On Windows 7 and Windows 8, the download proceeds the same as for the x64 download.
+
+Here, the illustration is with Microsoft Internet Explorer 8 on Windows XP SP3.  The download initiation is different from that with more-recent versions of Internet Explorer.
+
+<center>
+'''TO BE CONTINUED'''
+</center>
+
+<center>
+[[File:Racket-5.3.6-2013-09-05-1155-x86-download.png]]
+</center>
+
+It is recommended that the file be saved.  This allows installation when off-line.  It is useful if the installation needs to be repeated, put on more than one machine, etc.  It is important to notice where it is going to be stored.  Not running the file immediately is also better as a security precaution.
+
+<center>
+[[File:Racket-5.3.6-2013-09-05-1207-x86-download.png]]
+</center>
+
+On Windows XP, the Downloads folder is inside the My Documents folder.  Double-clicking the Downloads folder in the Save As dialog will open it for saving the new download.
+
+<center>
+[[File:Racket-5.3.6-2013-09-05-1208-x86-download.png]]
+</center>
+
+The download of Racket for Windows (x86, 32-bit) can then be saved into the Downloads folder.
+
+The download will then proceed.  When it is completed, there will be a security check and confirmation of successful download.
+
+<center>
+[[File:Racket-5.3.6-2013-09-05-1209-x86-download.png]]
+</center>
+
+Now that there is a downloaded copy, there is still the option to begin the installation at once.
+
+And, if not, it can be installed later, even when the computer is off-line from the Internet.  Some prefer to verify the security of the download and perform the installation off-line.
+
+<center>
+'''TO BE CONTINUED'''
+</center>

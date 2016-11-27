@@ -1,0 +1,273 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Support Vector Machines (SVMs)</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Optimization_Objective"><span class="tocnumber">1</span> <span class="toctext">Optimization Objective</span></a></li>
+<li class="toclevel-1"><a href="#Large_Margin_Intuition"><span class="tocnumber">2</span> <span class="toctext">Large Margin Intuition</span></a></li>
+<li class="toclevel-1"><a href="#Mathematics_Behind_Large_Margin_Classification_.28Optional.29"><span class="tocnumber">3</span> <span class="toctext">Mathematics Behind Large Margin Classification (Optional)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Vector_Inner_Product"><span class="tocnumber">3.1</span> <span class="toctext">Vector Inner Product</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Kernels_I"><span class="tocnumber">4</span> <span class="toctext">Kernels I</span></a></li>
+<li class="toclevel-1"><a href="#Kernels_II"><span class="tocnumber">5</span> <span class="toctext">Kernels II</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Choosing_SVM_Parameters"><span class="tocnumber">5.1</span> <span class="toctext">Choosing SVM Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Using_An_SVM"><span class="tocnumber">6</span> <span class="toctext">Using An SVM</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Multi-class_Classification"><span class="tocnumber">6.1</span> <span class="toctext">Multi-class Classification</span></a></li>
+<li class="toclevel-2"><a href="#Logistic_Regression_vs._SVMs"><span class="tocnumber">6.2</span> <span class="toctext">Logistic Regression vs. SVMs</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Additional_references"><span class="tocnumber">7</span> <span class="toctext">Additional references</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Optimization_Objective">Optimization Objective</span></h1>
+<p>The <strong>Support Vector Machine</strong> (SVM) is yet another type of <em>supervised</em> machine learning algorithm. It is sometimes cleaner and more powerful.</p>
+<p>Recall that in logistic regression, we use the following rules:</p>
+<p>if $$y = 1$$, then $$h&#95;\theta(x) \approx 1$$ and $$\Theta^Tx \gg 0$$</p>
+<p>if $$y = 0$$, then $$h&#95;\theta(x) \approx 0$$ and $$\Theta^Tx \ll 0$$</p>
+<p>Recall the cost function for (unregularized) logistic regression:</p>
+<p>$$
+\begin{align&#42;}
+J(\theta) &amp; = \frac{1}{m}\sum&#95;{i=1}^m -y^{(i)} \log(h&#95;\theta(x^{(i)})) - (1 - y^{(i)})\log(1 - h&#95;\theta(x^{(i)}))
+&#92;&#92;
+ &amp; = \frac{1}{m}\sum&#95;{i=1}^m -y^{(i)} \log\Big(\dfrac{1}{1 + e^{-\theta^Tx^{(i)}}}\Big) - (1 - y^{(i)})\log\Big(1 - \dfrac{1}{1 + e^{-\theta^Tx^{(i)}}}\Big)
+\end{align&#42;}
+$$</p>
+<p>To make a support vector machine, we will modify the first term of the cost function ($$-\log(h&#95;{\theta}(x)) = -\log\Big(\dfrac{1}{1 + e^{-\theta^Tx}}\Big)$$) so that when $$\theta^Tx$$ (from now on, we shall refer to this as $$z$$) is <strong>greater than</strong> 1, it outputs 0. Furthermore, for values of $$z$$ less than 1, we shall use a straight decreasing line instead of the sigmoid curve.(In the literature, this is called a <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Hinge_loss">hinge loss</a> function.)</p>
+<p><a href="/wiki/images/a/a7/Svm_hing.png" class="image"><img alt="Svm hing.png" src="/wiki/images/a/a7/Svm_hing.png" width="302" height="254" /></a></p>
+<p>Similarly, we modify the second term of the cost function ($$-\log(1 - h&#95;{\theta(x)}) = -\log\Big(1 - \dfrac{1}{1 + e^{-\theta^Tx}}\Big)$$) so that when $$z$$ is <strong>less than</strong> -1, it outputs 0. We also modify it so that for values of $$z$$ greater than -1, we use a straight increasing line instead of the sigmoid curve.</p>
+<p><a href="/wiki/images/d/dd/Svm_hinge_negative_class.png" class="image"><img alt="Svm hinge negative class.png" src="/wiki/images/d/dd/Svm_hinge_negative_class.png" width="302" height="254" /></a></p>
+<p>We shall denote these as $$\text{cost}&#95;1(z)$$ and $$\text{cost}&#95;0(z)$$ (respectively, note that $$\text{cost}&#95;1(z)$$ is the cost for classifying when y=1, and $$\text{cost}&#95;0(z)$$ is the cost for classifying when $$y=0$$), and we may define them as follows (where k is an arbitrary constant defining the magnitude of the slope of the line):</p>
+<blockquote>
+  <p>$$z = \theta^Tx$$</p>
+  <p>$$\text{cost}&#95;0(z) = \max(0, k(1+z))$$</p>
+  <p>$$\text{cost}&#95;1(z) = \max(0, k(1-z))$$</p>
+</blockquote>
+<p>Recall the full cost function from (regularized) logistic regression:</p>
+<p>$$
+J(\theta) = \frac{1}{m} \sum&#95;{i=1}^m y^{(i)}(-\log(h&#95;\theta(x^{(i)}))) + (1 - y^{(i)})(-\log(1 - h&#95;\theta(x^{(i)}))) + \dfrac{\lambda}{2m}\sum&#95;{j=1}^n \Theta^2&#95;j
+$$</p>
+<p>Note that the negative sign has been distributed into the sum in the above equation.</p>
+<p>We may transform this into the cost function for support vector machines by substituting $$\text{cost}&#95;0(z)$$ and $$\text{cost}&#95;1(z)$$:</p>
+<p>$$
+J(\theta) = \frac{1}{m} \sum&#95;{i=1}^m y^{(i)} \ \text{cost}&#95;1(\theta^Tx^{(i)}) + (1 - y^{(i)}) \ \text{cost}&#95;0(\theta^Tx^{(i)}) + \dfrac{\lambda}{2m}\sum&#95;{j=1}^n \Theta^2&#95;j
+$$</p>
+<p>We can optimize this a bit by multiplying this by $$m$$ (thus removing the $$m$$ factor in the denominators). Note that this does not affect our optimization, since we're simply multiplying our cost function by a  positive constant (for example, minimizing $$(u-5)^2 + 1$$ gives us 5; multiplying it by 10 to make it $$10(u-5)^2 + 10$$ still gives us 5 when minimized).</p>
+<p>$$
+J(\theta) = \sum&#95;{i=1}^m y^{(i)} \ \text{cost}&#95;1(\theta^Tx^{(i)}) + (1 - y^{(i)}) \ \text{cost}&#95;0(\theta^Tx^{(i)}) + \dfrac{\lambda}{2}\sum&#95;{j=1}^n \Theta^2&#95;j
+$$</p>
+<p>Furthermore, convention dictates that we regularize using a factor $$C$$, instead of $$\lambda$$, like so:</p>
+<p>$$
+J(\theta) = C\sum&#95;{i=1}^m y^{(i)} \ \text{cost}&#95;1(\theta^Tx^{(i)}) + (1 - y^{(i)}) \ \text{cost}&#95;0(\theta^Tx^{(i)}) + \dfrac{1}{2}\sum&#95;{j=1}^n \Theta^2&#95;j
+$$</p>
+<p>This is equivalent to multiplying the equation by $$C = \dfrac{1}{\lambda}$$, and thus results in the same values when optimized. Now, when we wish to regularize more (that is, reduce overfitting), we <em>decrease</em> $$C$$, and when we wish to regularize less (that is, reduce underfitting), we <em>increase</em> $$C$$.</p>
+<p>Finally, note that the hypothesis of the Support Vector Machine is <em>not</em> interpreted as the probability of $$y$$ being 1 or 0 (as it is for the hypothesis of logistic regression). Instead, it outputs either 1 or 0. (In technical terms, it is a discriminant function.)</p>
+<p>$$
+h&#95;\theta(x) = 
+\begin{cases}
+    1 &amp; \text{if} \ \Theta^Tx \geq 0 &#92;&#92;
+    0 &amp; \text{otherwise}
+\end{cases}
+$$</p>
+<h1> <span class="mw-headline" id="Large_Margin_Intuition">Large Margin Intuition</span></h1>
+<p>A useful way to think about Support Vector Machines is to think of them as <em>Large Margin Classifiers</em>.</p>
+<blockquote>
+  <p>If $$y = 1$$, we want $$\Theta^Tx \geq 1$$ (not just $$\geq 0$$)</p>
+  <p>If $$y = 0$$, we want $$\Theta^Tx \leq -1$$ (not just $$&lt; 0$$)</p>
+</blockquote>
+<p>Now when we set our constant $$C$$ to a very <strong>large</strong> value (e.g. 100,000), our optimizing function will constrain $$\Theta$$ such that the equation $$A$$ (the summation of the cost of each example) equals 0. We impose the following constraints on $$\Theta$$: </p>
+<p>$$
+\Theta^Tx \geq 1$$ if $$y = 1$$ and $$\Theta^Tx \leq -1$$ if $$y=0
+$$.</p>
+<p>If $$C$$ is very large, we must choose $$\Theta$$ parameters such that:</p>
+<p>$$
+\sum&#95;{i=1}^m y^{(i)}\text{cost}&#95;1(\Theta^Tx) + (1 - y^{(i)})\text{cost}&#95;0(\Theta^Tx) = 0
+$$</p>
+<p>This reduces our cost function to:</p>
+<p>$$
+\large
+\begin{align&#42;}
+J(\theta) = C \cdot 0 + \dfrac{1}{2}\sum&#95;{j=1}^n \Theta^2&#95;j \newline
+= \dfrac{1}{2}\sum&#95;{j=1}^n \Theta^2&#95;j
+\end{align&#42;}
+$$</p>
+<p>Recall the decision boundary from logistic regression (the line separating the positive and negative examples). In SVMs, the decision boundary has the special property that it is <strong>as far away as possible</strong> from both the positive and the negative examples. </p>
+<p>The distance of the decision boundary to the nearest example is called the <strong>margin</strong>. Since SVMs maximize this margin, it is often called a <em>Large Margin Classifier</em>.</p>
+<p>The SVM will separate the negative and positive examples by a <strong>large margin</strong>.</p>
+<p>This large margin is only achieved when <strong>$$C$$ is very large</strong>.</p>
+<p>Data is <strong>linearly separable</strong> when a <strong>straight line</strong> can separate the positive and negative examples.</p>
+<p>If we have <strong>outlier</strong> examples that we don't want to affect the decision boundary, then we can <strong>reduce</strong> $$C$$.</p>
+<p>Increasing and decreasing $$C$$ is similar to respectively decreasing and increasing $$\lambda$$, and can simplify our decision boundary.</p>
+<h1> <span class="mw-headline" id="Mathematics_Behind_Large_Margin_Classification_.28Optional.29">Mathematics Behind Large Margin Classification (Optional)</span></h1>
+<h3> <span class="mw-headline" id="Vector_Inner_Product">Vector Inner Product</span></h3>
+<p>Say we have two vectors, $$u$$ and $$v$$:</p>
+<p>$$
+\begin{align&#42;}
+u = 
+\begin{bmatrix}
+u&#95;1 \newline u&#95;2
+\end{bmatrix}
+&amp; v = 
+\begin{bmatrix}
+v&#95;1 \newline v&#95;2
+\end{bmatrix}
+\end{align&#42;}
+$$</p>
+<p>The <strong>length of vector $$v$$</strong> is denoted $$||v||$$, and it describes the line on a graph from origin (0,0) to $$(v&#95;1,v&#95;2)$$.</p>
+<p>The length of vector $$v$$ can be calculated with $$\sqrt{v&#95;1^2 + v&#95;2^2}$$ by the Pythagorean theorem. </p>
+<p>The <strong>projection</strong> of vector $$v$$ onto vector $$u$$ is found by taking a right angle from $$u$$ to the end of $$v$$, creating a right triangle.</p>
+<blockquote>
+  <p>$$p = $$ length of projection of $$v$$ onto the vector $$u$$.</p>
+  <p>$$u^Tv= p \cdot ||u||$$</p>
+</blockquote>
+<p>Note that $$ u^Tv = ||u|| \cdot ||v|| \cos \theta $$ where $$ \theta $$ is the angle between $$u$$ and $$v$$. Also, $$ p = ||v|| \cos \theta $$. If you substitute $$p$$ for $$ ||v|| \cos \theta $$, you get $$u^Tv= p \cdot ||u||$$.</p>
+<p>So the product $$u^Tv$$ is equal to the length of the projection times the length of vector $$u$$.</p>
+<p>In our example, since $$u$$ and $$v$$ are vectors of the same length, $$u^Tv = v^Tu$$.</p>
+<blockquote>
+  <p>$$u^Tv = v^Tu = p \cdot ||u|| = u&#95;1v&#95;1 + u&#95;2v&#95;2 $$</p>
+</blockquote>
+<p>If the <strong>angle</strong> between the lines for $$v$$ and $$u$$ is <strong>greater than 90 degrees</strong>, then the projection $$p$$ will be <strong>negative</strong>.</p>
+<p>$$
+\begin{align&#42;}
+&amp;\min&#95;\Theta \dfrac{1}{2}\sum&#95;{j=1}^n \Theta&#95;j^2 \newline
+&amp;= \dfrac{1}{2}(\Theta&#95;1^2 + \Theta&#95;2^2 + \dots + \Theta&#95;n^2) \newline
+&amp;= \dfrac{1}{2}(\sqrt{\Theta&#95;1^2 + \Theta&#95;2^2 + \dots + \Theta&#95;n^2})^2 \newline
+&amp;= \dfrac{1}{2}||\Theta ||^2 \newline
+\end{align&#42;}
+$$</p>
+<p>We can use the same rules to rewrite $$\Theta^Tx^{(i)}$$:</p>
+<p>$$
+\Theta^Tx^{(i)} = p^{(i)} \cdot ||\Theta || = \Theta&#95;1x&#95;1^{(i)} + \Theta&#95;2x&#95;2^{(i)} + \dots + \Theta&#95;nx&#95;n^{(i)}
+$$</p>
+<p>So we now have a new <strong>optimization objective</strong> by substituting $$p^{(i)} \cdot ||\Theta ||$$ in for $$\Theta^Tx^{(i)}$$:</p>
+<blockquote>
+  <p>If $$y = 1$$, we want $$p^{(i)} \cdot ||\Theta || \geq 1$$</p>
+  <p>If $$y = 0$$, we want $$p^{(i)} \cdot ||\Theta || \leq -1$$</p>
+</blockquote>
+<p>The reason this causes a "large margin" is because: the vector for $$\Theta $$ is perpendicular to the decision boundary. In order for our optimization objective (above) to hold true, we need the absolute value of our projections $$p^{(i)}$$ to be as large as possible.</p>
+<p>If $$\Theta&#95;0 = 0$$, then all our decision boundaries will intersect (0,0). If $$ \Theta&#95;0 \neq 0 $$, the support vector machine will still find a large margin for the decision boundary.</p>
+<h1> <span class="mw-headline" id="Kernels_I">Kernels I</span></h1>
+<p><strong>Kernels</strong> allow us to make complex, non-linear classifiers using Support Vector Machines.</p>
+<blockquote>
+  <p>Given $$x$$, compute new feature depending on proximity to landmarks $$l^{(1)},\ l^{(2)},\ l^{(3)}$$.</p>
+</blockquote>
+<p>To do this, we find the "similarity" of $$x$$ and some landmark $$l^{(i)}$$:</p>
+<p>$$
+f&#95;i = similarity(x, l^{(i)}) = \exp(-\dfrac{||x - l^{(i)}||^2}{2\sigma^2})
+$$</p>
+<p>This "similarity" function is called a <strong>Gaussian Kernel</strong>. It is a specific example of a kernel.</p>
+<p>The similarity function can also be written as follows:</p>
+<p>$$
+f&#95;i = similarity(x, l^{(i)}) = \exp(-\dfrac{\sum^n&#95;{j=1}(x&#95;j-l&#95;j^{(i)})^2}{2\sigma^2})
+$$</p>
+<p>There are a couple properties of the similarity function:</p>
+<blockquote>
+  <p>If $$x \approx l^{(i)}$$, then $$f&#95;i = \exp(-\dfrac{\approx 0^2}{2\sigma^2}) \approx 1$$</p>
+  <p>If $$x$$ is far from $$l^{(i)}$$, then $$f&#95;i = \exp(-\dfrac{(large\ number)^2}{2\sigma^2}) \approx 0$$</p>
+</blockquote>
+<p>In other words, if $$x$$ and the landmark are close, then the similarity will be close to 1, and if $$x$$ and the landmark are far away from each other, the similarity will be close to 0.</p>
+<p>Each landmark gives us the features in our hypothesis:</p>
+<p>$$
+\begin{align&#42;}
+l^{(1)} \rightarrow f&#95;1 \newline
+l^{(2)} \rightarrow f&#95;2 \newline
+l^{(3)} \rightarrow f&#95;3 \newline
+\dots \newline
+h&#95;\Theta(x) = \Theta&#95;1f&#95;1 + \Theta&#95;2f&#95;2 + \Theta&#95;3f&#95;3 + \dots
+\end{align&#42;}
+$$</p>
+<p>$$\sigma^2$$ is a parameter of the Gaussian Kernel, and it can be modified to increase or decrease the <strong>drop-off</strong> of our feature $$f&#95;i$$. </p>
+<p>Combined with looking at the values inside $$\Theta$$, we can choose these landmarks to get the general shape of the decision boundary. </p>
+<h1> <span class="mw-headline" id="Kernels_II">Kernels II</span></h1>
+<p>One way to get the landmarks is to put them in the <strong>exact same</strong> locations as all the training examples. This gives us $$m$$ landmarks, with one landmark per training example. </p>
+<blockquote>
+  <p>Given example $$x$$:</p>
+  <p>$$f&#95;1 = similarity(x,l^{(1)})$$, $$f&#95;2 = similarity(x,l^{(2)})$$, $$f&#95;3 = similarity(x,l^3)$$, and so on.</p>
+</blockquote>
+<p>This gives us a "feature vector," $$f^{(i)}$$ of all our features for example $$x^{(i)}$$. We may also set $$f&#95;0 = 1$$ to correspond with $$\Theta&#95;0$$. Thus given training example $$x^{(i)}$$:</p>
+<p>$$
+x^{(i)} \rightarrow \begin{bmatrix}
+f&#95;1^{(i)} = similarity(x^{(i)}, l^{(1)}) \newline
+f&#95;2^{(i)} = similarity(x^{(i)}, l^{(2)}) \newline
+\vdots \newline
+f&#95;m^{(i)} = similarity(x^{(i)}, l^{(m)}) \newline
+\end{bmatrix}
+$$</p>
+<p>Now to get the parameters $$\Theta$$ we can use the SVM minimization algorithm but with $$f^{(i)}$$ substituted in for $$x^{(i)}$$:</p>
+<p>$$
+\large
+\min&#95;{\Theta} C \sum&#95;{i=1}^m y^{(i)}\text{cost}&#95;1(\Theta^Tf^{(i)}) + (1 - y^{(i)})\text{cost}&#95;0(\theta^Tf^{(i)}) + \dfrac{1}{2}\sum&#95;{j=1}^n \Theta^2&#95;j
+$$</p>
+<p>Using kernels to generate $$f^{(i)}$$ is not exclusive to SVMs and may also be applied to logistic regression. However, because of computational optimizations on SVMs, kernels combined with SVMs is much faster than with other algorithms, so kernels are almost always found combined only with SVMs.</p>
+<h3> <span class="mw-headline" id="Choosing_SVM_Parameters">Choosing SVM Parameters</span></h3>
+<p>Choosing $$C$$ (recall that $$C = \dfrac{1}{\lambda}$$)</p>
+<blockquote>
+  <p>If $$C$$ is large, then we get higher variance/lower bias</p>
+  <p>If $$C$$ is small, then we get lower variance/higher bias</p>
+</blockquote>
+<p>The other parameter we must choose is $$\sigma^2$$ from the Gaussian Kernel function:</p>
+<blockquote>
+  <p>With a large $$\sigma^2$$, the features $$f&#95;i$$ vary more smoothly, causing higher bias and lower variance.</p>
+  <p>With a small $$\sigma^2$$, the features $$f&#95;i$$ vary less smoothly, causing lower bias and higher variance.</p>
+</blockquote>
+<h1> <span class="mw-headline" id="Using_An_SVM">Using An SVM</span></h1>
+<p>There are lots of good SVM libraries already written. A. Ng often uses 'liblinear' and 'libsvm'. In practical application, you should use one of these libraries rather than rewrite the functions.</p>
+<p>In practical application, the choices you <em>do</em> need to make are:</p>
+<ul>
+<li>Choice of parameter C</li>
+<li>Choice of kernel (similarity function)
+
+<ul>
+<li>No kernel ("linear" kernel) -- gives standard linear classifier</li>
+<li>Choose when $$n$$ is <strong>large</strong> and when $$m$$ is <strong>small</strong></li>
+<li>Gaussian Kernel (above) -- need to choose $$\sigma^2$$</li>
+<li>Choose when $$n$$ is <strong>small</strong> and $$m$$ is <strong>large</strong></li>
+</ul></li>
+</ul>
+<p>The library may ask you to provide the kernel function.</p>
+<p><strong>Note</strong>: do perform feature scaling before using the Gaussian Kernel.</p>
+<p><strong>Note</strong>: not all similarity functions are valid kernels. They must satisfy "Mercer's Theorem" which guarantees that the SVM package's optimizations run correctly and do not diverge.</p>
+<p>You want to train $$C$$ and the parameters for the kernel function using the <strong>training</strong> and <strong>cross-validation</strong> datasets.</p>
+<h3> <span class="mw-headline" id="Multi-class_Classification">Multi-class Classification</span></h3>
+<p>Many SVM libraries have multi-class classification built-in.</p>
+<p>You can use the <em>one-vs-all</em> method just like we did for logistic regression, where $$y \in {1,2,3,\dots,K}$$ with $$\Theta^{(1)}, \Theta^{(2)}, \dots,\Theta{(K)}$$. We pick class $$i$$ with the largest $$(\Theta^{(i)})^Tx$$.</p>
+<h3> <span class="mw-headline" id="Logistic_Regression_vs._SVMs">Logistic Regression vs. SVMs</span></h3>
+<blockquote>
+  <p>If $$n$$ is large (relative to $$m$$), then use logistic regression, or SVM without a kernel (the "linear kernel")</p>
+  <p>If $$n$$ is small and $$m$$ is intermediate, then use SVM with a Gaussian Kernel</p>
+  <p>If $$n$$ is small and $$m$$ is large, then manually create/add more features, then use logistic regression or SVM without a kernel.</p>
+</blockquote>
+<p>In the first case, we don't have enough examples to need a complicated polynomial hypothesis. In the second example, we have enough examples that we may need a complex non-linear hypothesis. In the last case, we want to increase our features so that logistic regression becomes applicable.</p>
+<p><strong>Note</strong>: a neural network is likely to work well for any of these situations, but may be slower to train.</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Clustering" title="ML:Clustering">Clustering</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<h1> <span class="mw-headline" id="Additional_references">Additional references</span></h1>
+<ul>
+<li>"An Idiot's Guide to Support Vector Machines"</li>
+</ul>
+<p><a rel="nofollow" class="external free" href="http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf">http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Support_Vector_Machines_(SVMs)&amp;oldid=34211">https://share.coursera.org/wiki/index.php?title=ML:Support_Vector_Machines_(SVMs)&amp;oldid=34211</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

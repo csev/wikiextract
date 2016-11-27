@@ -1,0 +1,94 @@
+
+
+## Message Passing in Clique Trees
+
+* Once a cluster receives a **final** message from all its neighbours except one,
+  then the message which is to be sent to this remaining neighbour is also final.
+* From this follows an optimal message passing order from 'leaves inward'
+** start with clusters which are connected to only one edge
+** for each such leaf, propagate the message to its parent (the only cluster connected to it)
+** repeat for those nodes which now have messages from all but one neighbour (i.e. from all children) until the root node is reached
+
+This belief propagation scheme is a variant of [[PGM:variable elimination|variable elimination]]. The resulting beliefs are guaranteed to be **correct marginals**.
+
+##Lecture Video Table of Contents
+###Properties of Belief Propagation
+<pre>
+0:00	Calibration
+1:26	Convergence Implies Calibration
+4:51	Reparameterization
+8:51	Summary
+</pre>
+
+###Clique Tree Algorithm - Correctness
+<pre>
+0:49	Message passing in trees
+4:01	Correctness
+7:48	Clique tree
+8:38	Family preservation
+9:36	Running intersection property
+11:23	More complex clique tree
+12:51	Clique tree message passing
+13:57	RIP implies clique tree correctness
+16:21	Clique tree correctness
+17:54	Summary
+</pre>
+
+###Clique Tree Algorithm - Computation
+<pre>
+0:24	Message passing in trees
+4:49	Convergence of message passing
+6:39	Message passing order I
+8:36	Message passing order II
+9:00	Answering queries
+12:01	And more queries
+15:06	Summary
+</pre>
+
+###Clique Tree and Independence
+<pre>
+0:41	RIP and Independence
+3:05	Concrete example
+6:09	Proof by contradiction
+9:40	Implications
+14:15	Summary
+</pre>
+
+###Clique Trees and Variable Elimination
+<pre>
+0:00	Introduction
+0:30	Variable Elimination & Clique Trees
+2:08	Clique tree from variable elimination
+2:52	Example
+7:41	Properties of the tree
+10:41	RIP theorem
+13:40	Summary
+</pre>
+
+###BP In Practice
+<pre>
+0:29	Misconception revisited
+3:30	Nonconvergent BP run
+3:41	Different variants of BP
+4:01	What Not To Do: Synchronous BP
+5:07	Asynchronous BP: order matters
+6:17	Observations
+7:24	Informed message scheduling
+10:33	Smoothing (damping) messages
+11:49	Convergence comparison graph
+14:34	Summary
+</pre>
+
+###Loopy BP and Message Decoding
+<pre>
+0:00	Introduction
+0:22	Message coding and decoding
+1:55	Channel capacity
+4:26	Shannon's theorem
+6:36	How close to C can we get?
+7:58	Turbocodes
+16:25	Low-density parity checking codes
+19:37	Decoding as loopy BP
+20:01	Turbo-codes and LDPCs
+20:43	Summary
+</pre>

@@ -1,0 +1,59 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+## Notes for Week 2: 2.2. The Demand Function, Schedule, and Curve
+
+Use math to organize thinking
+
+$$Q_x = f(P_x, P_y,I, T)$$
+
+$$Q_x$$ - Quantity demand for x (Tomatoes) <br>
+$$P_x$$ - Price of x (Tomatoes) <br>
+$$P_y$$ - Price of related good y (e.g., bread or red bell peppers) <br> 
+I  - Income of consumers <br>
+T  - Tastes or preferences of consumers
+<br>
+
+###Demand Schedule###
+**Relationship of Demand to Price** <br>
+Px Qx <br>
+0  12 <br>
+2  10 <br>
+4  8 <br>
+6  6 <br>
+8  4 <br>
+10 2 <br>
+12 0
+
+All other things equal/unchanged
+
+Tomato Example 
+Diagram (graph) 
+X = Qx
+Y - Px
+
+forms straight line (demand curve) with negative slope
+
+[[File:Demand_graph.jpg‎]]
+
+*****
+Qx = f(Px,Py, I, T)
+
+where...
+Qx = quantity of "x" supply; Px = x's price; Py = price of related goods; I = income; T = preferences
+
+Demand Scale: 
+-inverse proportion
+-as Px (price) rises, Qd (quantity of demand) falls, and vice versa
+
+For those familiar with graphs: 
+The demand curve is a line of y = -x + b; where b is the Qd (quantity of demand), while the Px (price) is 0
+*****
+
+In conclusion, the demand graph is one of the key fundamentals that should be learned in Economics. It compares **<i>quantity</i> demanded for a particular good with the price of that particular good**.
+
+### Law of Demand ###
+When the price of a given good goes up and all the other things stay the same, the consumption of this good decreases. And vice-versa.
+
+[[Category:Microecon|The Demand Function, the Demand Schedule and the Demand Curve]]

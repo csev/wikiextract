@@ -1,0 +1,29 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Wk4 L8</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_4_Lecture_8:_4-8_Putting_it_all_together">Week 4 Lecture 8: 4-8 Putting it all together</span></h1>
+<p>Well, hello again. This is the Bioelectricity course, Week number four, Segment number eight. Here, we want to talk a little bit about reviewing where we are so far in the Hodgkin-Huxley model. It has lots of different parts, we want to talk about putting these all together. Let's see what we got.</p>
+<p>What were Hodgkin and Huxley trying to do? They were trying to explain the big response that occurs in active tissue after a very small stimulus. So, they had observed that with a little stimulus, you get a big response. They were trying to explain, where does all that come from. They provided us with a mechanism by which a single current, a single current through the tissue, single current through a resistant tissue. Or was, in fact, replaced with three currents, okay Na, iL and these three currents together were the components of the actual current flow in the model. Hodgkin and Huxley said the total of these three components. These three altogether, should be thought of as the ionic current because each of them is an ion and they add to be the total current. So, if you look at this diagrammatically, we start off with ir, a resistive current, and what we wound up doing is we wound up replacing ir over here with i ionic and I ionic was found in a completely different way. All the currents are dependent on the probabilities of particle openings. And the probabilities were designated n, m, and h. So, let's just say that one more time, for INa, we have a channel. Channel has four particles. Three of them are m particles and the fourth one is an h particle. Probabilities that each of these particles will be open at the same time is the probability that the channel will be open. Now, here's the power. What we are trying to do, is we are trying to be here at our present time. You're trying to project over into the future. So, I've drawn a dot indicating present time, and then an arrow over to another dot, indicating a time in the future.
+We think of that time shift, delta T, as being short, a microsecond or just a few
+microseconds.  </p>
+<p>What Hodgkin actually showed us was that to make that projection from present time into future time we have to know, at the present time, we have to know Vm, n, m and h. We also know, have to know about current conditions in terms of membrane current I'm, or stimulus current, I-stem. So, if we know about the stimuli, we know about Vm, n, m, and h, then we can project over to a future time as long as delta T is short. Because if delta T is short, our projection will be fairly accurate. If you think about the meaning of this process as a whole, you would say, look, finding individual currencies are a nice thing to do, because it allows us to understand the tissue and its mechanisms and we want to do that. However, you would say being able to project forward from one time to the next, time shifting is absolutely essential. That is really the big jump that we have made in our understanding because now, for active tissue, we can move forward from one time to the next time. So, if we repeat that process over and over, we can move forward step by step throughout a, a long time. We can move forward for a millisecond or a second, or hours and hours as long as we're willing to keep going, keep computing. You might think, well that's a big job. On the other hand, that's what we are doing in our tissues every second of our
+lives. Over and over and over, we're taking our state variables and Vm and projecting forward into the future. Thank you for watching this segment. We'll come back and talk about that projection in a little more detail.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L8&amp;oldid=8419">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L8&amp;oldid=8419</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

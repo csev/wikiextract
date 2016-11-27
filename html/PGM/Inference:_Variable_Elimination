@@ -1,0 +1,115 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Inference: Variable Elimination</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Variable_elimination"><span class="tocnumber">1</span> <span class="toctext">Variable elimination</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">2</span> <span class="toctext">Lecture Video Table of Contents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Knowledge_Engineering_.28Representation_wrap-up.29"><span class="tocnumber">2.1</span> <span class="toctext">Knowledge Engineering (Representation wrap-up)</span></a></li>
+<li class="toclevel-2"><a href="#Overview:_Conditional_Probability_Queries"><span class="tocnumber">2.2</span> <span class="toctext">Overview: Conditional Probability Queries</span></a></li>
+<li class="toclevel-2"><a href="#Overview:_MAP_Inference"><span class="tocnumber">2.3</span> <span class="toctext">Overview: MAP Inference</span></a></li>
+<li class="toclevel-2"><a href="#Variable_Elimination_Algorithm"><span class="tocnumber">2.4</span> <span class="toctext">Variable Elimination Algorithm</span></a></li>
+<li class="toclevel-2"><a href="#Complexity_Analysis"><span class="tocnumber">2.5</span> <span class="toctext">Complexity Analysis</span></a></li>
+<li class="toclevel-2"><a href="#Graph-Based_Perspective"><span class="tocnumber">2.6</span> <span class="toctext">Graph-Based Perspective</span></a></li>
+<li class="toclevel-2"><a href="#Finding_Elimination_Orderings"><span class="tocnumber">2.7</span> <span class="toctext">Finding Elimination Orderings</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Variable_elimination">Variable elimination</span></h1>
+<p>Variable elimination is one of the simplest and most fundamental algorithms for inference in probabilistic graphical models.</p>
+<ul>
+<li>algebraically, variable elimination is 'pushing in the summations' in the expression obtained from the chain rule for Bayesian networks.</li>
+<li>rather than working with the conditional probabilities (as prescribed by the chain rule), one can work with <strong>(unnormalized) factors</strong>, e.g. instead of using the conditional probability $$P(J|L,S)$$ one can use the corresponding factor $$\Phi(J,L,S)$$ and properly normalize at the end (after all necessary variables have been eliminated) by making sure the sum over the remaining variables is one.</li>
+</ul>
+<h1> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h1>
+<h2> <span class="mw-headline" id="Knowledge_Engineering_.28Representation_wrap-up.29">Knowledge Engineering (Representation wrap-up)</span></h2>
+<p><pre>
+0:00    Introduction
+0:39    Important distinctions
+1:57    Template verus specific
+5:28    Generative versus discriminative
+7:42    Variable types
+10:33   Structure
+14:22   Extending the conversation
+17:44   Parameters: Values
+19:39   Parameters: Structured CPDs
+21:34   Iterative refinement
+</pre></p>
+<h2> <span class="mw-headline" id="Overview:_Conditional_Probability_Queries">Overview: Conditional Probability Queries</span></h2>
+<p><pre>
+0:00    Introduction
+0:29    Definition
+1:35    NP-hardness
+4:49    Sum-Product
+8:44    Evidence: reduced factors
+12:54   Sum-product again
+14:03   Algorithms: Conditional Probability
+</pre></p>
+<h2> <span class="mw-headline" id="Overview:_MAP_Inference">Overview: MAP Inference</span></h2>
+<p><pre>
+0:21    Maximum a Posteriori
+2:28    MAP ≠ Max over Marginals
+3:40    NP-hardness
+4:44    Max-product
+7:22    Algorithms: MAP
+9:14    Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Variable_Elimination_Algorithm">Variable Elimination Algorithm</span></h2>
+<p><pre>
+0:12    Elimination in chains
+3:23    Variable elimination example
+9:12    Variable elimination with evidence
+11:54   Variable elimination in Markov networks
+13:25   Eliminate-Var Z from Phi
+14:42   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Complexity_Analysis">Complexity Analysis</span></h2>
+<p><pre>
+0:00    Eliminating Z
+0:30    Reminder: Factor product
+1:39    Reminder: Factor marginalization
+2:44    Complexity of variable elimination
+7:39    Complexity example
+8:43    Complexity and elimination order
+12:05   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Graph-Based_Perspective">Graph-Based Perspective</span></h2>
+<p><pre>
+0:15    Initial graph
+1:36    Elimination as graph operation
+5:44    Induced graph
+6:49    Cliques in the induced graph
+13:28   Induced width
+14:35   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Finding_Elimination_Orderings">Finding Elimination Orderings</span></h2>
+<p><pre>
+0:00    Introduction
+0:44    Theorem: NP-hard
+1:59    Greedy search using heuristic cost functions
+4:40    Theorem: Low-width triangulation
+7:11    Robot localization example
+11:15   Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 65/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Variable_Elimination&amp;oldid=13641">https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Variable_Elimination&amp;oldid=13641</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Probabilistic_Graphical_Models" title="Category:Probabilistic Graphical Models">Probabilistic Graphical Models</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,11 @@
+The when running the MAP inference algorithm, two clusters $$C_i$$ and $$C_j$$ joined by sepset $$S_{i,j}$$ are said to be "max-calibrated" if
+
+$$\max_{C_i - S_{i,j}} \beta_i = \max_{C_j - S_{i,j}} \beta_j $$.  
+
+Above 
+
+$$ \beta_j = \theta_{C_j} + \sum_k \lambda_{k\rightarrow j}$$ 
+
+where $$\theta_{C_j}$$ is the logarithm of the product of the factors assigned to cluster $$j$$ and $$\lambda_{k\rightarrow j}$$ is the message passed from cluster $$k$$ to cluster $$j$$.
+
+See the second to last slide titled "Max-Sum BP at Convergence" of the "MAP Exact Inference" lecture or Chapter 13.3.1 in Koller and Friedman.

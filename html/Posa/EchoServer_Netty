@@ -1,0 +1,95 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Posa:EchoServer Netty</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Programming_Assignment_.233_-_The_Echo_server_using_Java_Netty_NIO_framework."><span class="tocnumber">1</span> <span class="toctext">Programming Assignment #3 - The Echo server using Java Netty NIO framework.</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Overview"><span class="tocnumber">1.1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-2"><a href="#My_recipe"><span class="tocnumber">1.2</span> <span class="toctext">My recipe</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Step_1._Start_with_the_Telnet_Server_example_from_Netty."><span class="tocnumber">1.2.1</span> <span class="toctext">Step 1. Start with the Telnet Server example from Netty.</span></a></li>
+<li class="toclevel-3"><a href="#Step_2._Update_the_messageReceived_in_the_ServerHandler"><span class="tocnumber">1.2.2</span> <span class="toctext">Step 2. Update the messageReceived in the ServerHandler</span></a></li>
+<li class="toclevel-3"><a href="#Step_3._Map_participants_of_the_Reactor_and_Acceptor-Connector_to_Netty_framework."><span class="tocnumber">1.2.3</span> <span class="toctext">Step 3. Map participants of the Reactor and Acceptor-Connector to Netty framework.</span></a></li>
+<li class="toclevel-3"><a href="#Step_4._Hide_Netty_framework."><span class="tocnumber">1.2.4</span> <span class="toctext">Step 4. Hide Netty framework.</span></a></li>
+<li class="toclevel-3"><a href="#Step_5._Implement_a_CLI_interface."><span class="tocnumber">1.2.5</span> <span class="toctext">Step 5. Implement a CLI interface.</span></a></li>
+<li class="toclevel-3"><a href="#Step_6:_Test_it.21"><span class="tocnumber">1.2.6</span> <span class="toctext">Step 6: Test it!</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Programming_Assignment_.233_-_The_Echo_server_using_Java_Netty_NIO_framework.">Programming Assignment #3 - The Echo server using Java Netty NIO framework.</span></h1>
+<p>This is a guideline to implement the Echo server in Netty 
+<a rel="nofollow" class="external text" href="https://class.coursera.org/posa-001/human_grading/view/courses/970268/assessments/30/submissions">Programming Assignment #3</a>.</p>
+<h2> <span class="mw-headline" id="Overview">Overview</span></h2>
+<p>While Netty framework already provides some sample code for Echo, it's very important that you realize 
+that <strong>those patterns are not implemented in this code</strong> since Netty provide a high level interface. 
+Indeed, the implementation of the <a rel="nofollow" class="external text" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">Reactor</a>,
+<a rel="nofollow" class="external text" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf">Wrapper facade</a>, or the <a rel="nofollow" class="external text" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf">Acceptor-Connector</a> patterns are not visible to users of Netty. </p>
+<p>Therefore, it's important to understand how those patterns are implemented in Netty. In this regard, it's worth it to mention some key aspects of Netty framework.</p>
+<ol>
+<li>Netty implementation abstracts away the details of the implementation of the Reactor, Connector and Acceptor.</li>
+<li>The <a rel="nofollow" class="external text" href="http://docs.jboss.org/netty/3.2/api/org/jboss/netty/channel/Channel.html">Channel</a> is the main interface 
+in Netty and separate your code form the different backends supported (NIO, OIO, Http, local).
+the rest of this document will assume NIO backend.</li>
+<li>Each <a rel="nofollow" class="external text" href="http://docs.jboss.org/netty/3.2/api/org/jboss/netty/channel/socket/nio/NioServerSocketChannelFactory.html">NioServerSocketChannel</a> when bound has two type of threads: boss and worker.</li>
+<li>The Dispatching and Event Demultiplexing is managed by the Boss thread. The Event handling is done by one or more Worker threads. </li>
+<li>It uses the ExecutorService interface as opposed to Runnable or Thread class for concurrency.</li>
+<li>There are two help classes for creating server and client. ServerBoostrap and ClientBootstrap.</li>
+<li>Also, in Netty, Handlers are in a ChannelPipeline that follows the Interceptor pattern.</li>
+</ol>
+<h2> <span class="mw-headline" id="My_recipe">My recipe</span></h2>
+<p>This is what I'm doing or done to implement it. I just hope that it can be useful for you and you can use it but this is not guaranteed if you are cooking a different dish!</p>
+<h3> <span class="mw-headline" id="Step_1._Start_with_the_Telnet_Server_example_from_Netty.">Step 1. Start with the <a rel="nofollow" class="external text" href="http://docs.jboss.org/netty/3.2/xref/org/jboss/netty/example/telnet/package-summary.html">Telnet Server</a> example from Netty.</span></h3>
+<p>Although there is an <a rel="nofollow" class="external text" href="http://docs.jboss.org/netty/3.2/xref/org/jboss/netty/example/echo/package-summary.html">Echo server</a> example, don't use it. Use the Telnet server instead as the plumbing provided is closer to what you need. The Telnet server already has code for the String encoder/decoder handler and the Line delimiter handler needed to support Text-based protocols (hence makes easy the use of telnet tools such as putty for testing). In addition, it provides session termination once a string "bye" is detected on the channel.</p>
+<p>If you have you code already, don't worry, it can be added. Just check in the telnet code the following lines </p>
+<code><pre>// Add the text line codec combination first,
+pipeline.addLast(&quot;framer&quot;, new DelimiterBasedFrameDecoder(
+          8192, Delimiters.lineDelimiter()));
+pipeline.addLast(&quot;decoder&quot;, new StringDecoder());
+pipeline.addLast(&quot;encoder&quot;, new StringEncoder());
+</pre></code>
+<p>that need to be added to your pipeline. Next, use the version of the <em>messageReceived</em> method from the ServerHandler.
+This is because the request/response is processing directly as String instead of Byte arrays since the codec/decoder did the conversion already.</p>
+<h3> <span class="mw-headline" id="Step_2._Update_the_messageReceived_in_the_ServerHandler">Step 2. Update the <em>messageReceived</em> in the ServerHandler</span></h3>
+<p>Make the <em>messageReceived</em> method to send back as response the same request message received.</p>
+<p>At this point you should have a working project in place already and not only the server but also a decent client. 
+However, with this, is difficult to see how the patterns mentioned above are working in the framework.
+Besides, it's kind of too easy and there's no much to say about what was learned. So, my idea is to implement my own version of those pattern on top of Netty using in addition Facade and Adapter patterns mainly.</p>
+<h3> <span class="mw-headline" id="Step_3._Map_participants_of_the_Reactor_and_Acceptor-Connector_to_Netty_framework.">Step 3. Map participants of the Reactor and Acceptor-Connector to Netty framework.</span></h3>
+<p>Working on it...</p>
+<h3> <span class="mw-headline" id="Step_4._Hide_Netty_framework.">Step 4. Hide Netty framework.</span></h3>
+<p>Working on it...</p>
+<h3> <span class="mw-headline" id="Step_5._Implement_a_CLI_interface.">Step 5. Implement a CLI interface.</span></h3>
+<p>I posted about this a few days ago. This is the original thread: 
+<a rel="nofollow" class="external text" href="https://class.coursera.org/posa-001/forum/thread?thread_id=927">CLI interface for PA#3 (and PA#4)</a></p>
+<p>The implementation of the CLI will require the addition of these patterns:
+<ul><li> <strong>Interpreter</strong>:  To parse and process the different inputs of commands.
+</li><li> <strong>Command processor and/or Command pattern</strong>: To implement the command actions. 
+</li><li> <strong>Proxy</strong>: the Client to execute commands remotely.
+</li><li> <strong>Strategy</strong>. Allow the server to switch from <strong>Simple mode</strong> to <strong>Advance mode</strong> once the <strong>startcli</strong> command is sent by the client. notice that this switch is one way.</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Step_6:_Test_it.21">Step 6: Test it!</span></h3>
+<p>By now we should have a pretty decent client and server up and running. Test and enjoy!</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Posa:EchoServer_Netty&amp;oldid=10583">https://share.coursera.org/wiki/index.php?title=Posa:EchoServer_Netty&amp;oldid=10583</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

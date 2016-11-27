@@ -1,0 +1,48 @@
+#Introduction to Systems Biology
+Course Instructor : Prof. Ravi Iyengar
+
+##About the Course
+This course will introduce the student to contemporary Systems Biology focused on mammalian cells, their constituents and their functions.  
+
+Biology is moving from molecular to modular. As our knowledge of our genome and gene expression deepens and we develop lists of molecules (proteins, lipids, ions) involved in cellular processes, we need to understand how these molecules interact with each other to form modules that act as discrete functional systems.  These systems underlie core subcellular processes such as signal transduction, transcription, motility and electrical excitability. In turn these processes come together to exhibit cellular behaviors such as secretion, proliferation and action potentials. 
+
+What are the properties of such subcellular and cellular systems?   
+What are the mechanisms by which emergent behaviors of systems arise?  
+What types of experiments inform systems-level thinking? 
+Why do we need computation and simulations to understand these systems? 
+
+The course will develop multiple lines of reasoning to answer the questions listed above. Two major reasoning threads are: the design, execution and interpretation of multivariable experiments that produce large data sets; and quantitative reasoning using computational models and simulations.  Examples will be discussed to demonstrate “how” cell- level functions arise and “why” mechanistic knowledge allows us to predict cellular behaviors leading to disease states and drug responses. 
+
+##Topics covered include
+* Systems Level Reasoning : Bottom-Up and Top-Down Approaches for Complex Systems
+* Cell Signaling Pathways : Molecules to Pathways, cAMP and MAP-kinase Pathways
+* Signal Flow : Pathways to Networks
+* The Actin Cytoskeleton & the Cell Motility Machine ; Cellular Electrical Machinery
+* Mathematical Representations of Cell Biological Systems in Time and Space
+* Gathering Large Data Sets in Genomics and Proteomics
+* Inferring Modules: Computational Analysis of Large Data Sets; Building Networks
+* Small Scale Systems Biology Experiments
+* Identifying Emergent Properties by Computation:  Dynamical Models
+* Emergent Properties: Ultrasensitivity, Bistability, Robustness & Fragility
+* Modules to Functions: Control Systems
+* Module-Boundaries: Sharp and Fuzzy, Interactions between Subcellular Modules
+* Emergence of Cellular Functions from Subcellular Modules
+* Systems Analysis of Complex Diseases
+* Systems Pharmacology: Understanding Drug Action from a Systems Perspective
+
+##Recommended Background 
+Undergraduate introductory cell biology; familiarity with statistics and quantitative reasoning 
+
+##Reading Material 
+* Information from some chapters in Molecular Biology of the Cell (4th Edition), review articles and selected original research articles are discussed in the lectures. 
+* List of all materials used to develop the lectures are available.  These will be optional reading. 
+* Each week one paper will be assigned as required reading. The required reading will be discussed in the discussion forum. All assigned reading and most source materials will be freely accessible so there will be no cost to the student. 
+
+##Grading Policy
+* Quizzes - 45% of total grade 
+* Discussion Forum - 20% of total grade 
+* Midterm Exam - 10% of total grade 
+* Final Exam - 25% of total grade
+
+[[Category:Coursera]]
+[[Category:Biology]]

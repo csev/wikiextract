@@ -1,0 +1,89 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Factors</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Factors"><span class="tocnumber">1</span> <span class="toctext">Factors</span></a></li>
+<li class="toclevel-1"><a href="#Factor_Operations"><span class="tocnumber">2</span> <span class="toctext">Factor Operations</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Factor_Product"><span class="tocnumber">2.1</span> <span class="toctext">Factor Product</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">3</span> <span class="toctext">Lecture Video Table of Contents</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Factors">Factors</span></h2>
+<p>For any given probability space, a factor is just a real valued random variable defined in terms of other random variables.  For example, if a random variable for a beverage of type $$B$$ can take on values $$b^0$$(coffee) and $$b^1$$(tea) and another random variable for taste $$T$$ can take on values $$t^0$$(bitter) and $$t^1$$(sweet), then the we could create a factor, $$c$$, for the number of calories in the beverage with the following definition</p>
+<p>$$c(b^0, t^0) = 10$$, $$c(b^0, t^1) = 70$$, $$c(b^1, t^0) = 0$$, and $$c(b^1, t^1) = 65$$.</p>
+<p>Perhaps the most common use of the term factor comes from the factorization of the joint probability function of a Bayesian network. For example, if a Bayesian network has the form $$A\rightarrow B\rightarrow C$$, then the joint pdf for $$A, B,$$ and $$C$$ has the form</p>
+<p>$$P(A,B,C) = P(A) P(B|A) P(C|B)$$</p>
+<p>and the functions $$f(a) = P(A=a)$$, $$g(a, b) = P(B=b|A=a)$$, and $$h(b, c) = P(C=c|B=b)$$ are factors.</p>
+<h2> <span class="mw-headline" id="Factor_Operations">Factor Operations</span></h2>
+<h3> <span class="mw-headline" id="Factor_Product">Factor Product</span></h3>
+<p>If $$\phi&#95;1(X,Y)$$ and $$\phi&#95;2(Y,Z)$$ are two factors then we compute their product of $$\phi(X,Y,Z)$$ by multiplying $$\phi(X,Y)\cdot\phi(Y,Z)$$ for all common values of Y.</p>
+<p>Example 1: Let's assume that $$A = \phi(X&#95;1)$$ and $$B = \phi(X&#95;2,X&#95;1)$$ with the values defined in the following tables:
+(This is the example from FactorTutorial.m $$A =$$ FACTORS.INPUT(1). $$B =$$  FACTORS.INPUT(2) and $$C =$$ FACTORS.PRODUCT)</p>
+<p>$$ A = \begin{array}{|c|c|}
+ x&#95;1^1 &amp; 0.11 &#92;\ \hline
+ x&#95;1^2 &amp; 0.89 
+\end{array}$$</p>
+<p>$$ B = \begin{array}{|c|c|}
+ x&#95;2^1 &amp; x&#95;1^1 &amp; 0.59 &#92;\ \hline
+ x&#95;2^2 &amp; x&#95;1^1 &amp; 0.41 &#92;\ \hline
+x&#95;2^1 &amp; x&#95;1^2 &amp; 0.22 &#92;\ \hline
+x&#95;2^2 &amp; x&#95;1^2 &amp; 0.78
+\end{array}$$</p>
+<p>Then their product $$C = \phi(X&#95;1)\cdot \phi(X&#95;2, X&#95;1)$$ is:</p>
+<p>$$ C = \begin{array}{|c|c|}
+ x&#95;1^1 &amp; x&#95;2^1 &amp; 0.0649 (=0.11&#42;0.59)&#92;\ \hline
+ x&#95;1^2 &amp; x&#95;2^1 &amp; 0.1958 (=0.89&#42;0.22)&#92;\ \hline
+x&#95;1^1 &amp; x&#95;2^2 &amp; 0.0451 (= 0.11&#42;0.41)&#92;\ \hline
+x&#95;1^2 &amp; x&#95;2^2 &amp; 0.6942 (= 0.89&#42;0.78)
+\end{array}$$</p>
+<p><br />
+Example 2: This is the example from the Lectures</p>
+<p><div class="center"><div class="thumb tnone"><div class="thumbinner" style="width:642px;"><a href="/wiki/images/e/e3/Pgm_w1_factor_product_ex1.jpg" class="image"><img alt="An example of how to compute a Factor Product from Lecture &quot;Factors&quot;." src="/wiki/images/thumb/e/e3/Pgm_w1_factor_product_ex1.jpg/640px-Pgm_w1_factor_product_ex1.jpg" width="640" height="374" class="thumbimage" /></a>  <div class="thumbcaption"></div></div></div></div></p>
+<p>Note to Example 2: Some confusion may arise while using the tables in Example 2 in octave.</p>
+<p>From FactorTutorial.m, "A factor's values are stored in a row vector in the .val field 
+ using an ordering such that the left-most variables as defined in the 
+ .var field cycle through their values the fastest". This order is dictated by how the  AssignmentToIndex and IndexToAssignment functions are implemented.</p>
+<p>Letting variable A=1, Variable B = 2, and Variable C = 3, we should express the factors shown as follows.</p>
+<p>phi1 = struct('var', [2, 1], 'card', [2, 3], 'val', [0.5,0.8,0.1,0.0,0.3,0.9]);&#160;% the fastest cycling variable is B, so B should be leftmost</p>
+<p>phi2 = struct('var', [3, 2], 'card', [2, 2], 'val', [0.5,0.7,0.1,0.2]);&#160;% the fastest cycling variable is C, so C should be leftmost</p>
+<p>product_shown = struct('var', [3,2,1],'card', [2,2,3],'val',[.25,.35,.08,.16,0.05,0.07,0.0,0.0,0.15,0.21,0.09,0.18]);&#160;% fastest cycling variable is C, followed by B, then A</p>
+<p>However the FactorProduct function will not return product_shown, as it reorders the variables by sort, so the actual product will be returned in the following struct, which is identical (within tolerance) to the result of FactorProduct(phi1,phi2).</p>
+<p>product = struct('var',[1,2,3],'card', [3,2,2], 'val', [0.25, 0.05, 0.15, 0.08, 0, 0.09, 0.35, 0.07, 0.21, 0.16, 0, 0.18]);</p>
+<p>It is all too easy to incorrectly define the product table as follows, assuming that A=1,B=2,C=3 are shown in the order octave requires - which is false.</p>
+<p>incorrect_product = struct('var', [1,2,3],'card', [3,2,2],'val',[.25,.35,.08,.16,0.05,0.07,0.0,0.0,0.15,0.21,0.09,0.18]);</p>
+<h2> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h2>
+<p><pre>
+0:00    Introduction
+0:15    Factors
+0:59    Example: Joint distribution
+1:22    Example: Unnormalized measure
+2:01    Example: Conditional probability distribution
+3:09    Example: General factor
+3:39    Factor operations: Product
+4:41    Factor operations: Marginalization
+5:35    Factor operations: Reduction
+6:05    Why factors?
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 12/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Factors&amp;oldid=4429">https://share.coursera.org/wiki/index.php?title=PGM:Factors&amp;oldid=4429</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,136 @@
+[[Category:Biostatistics]]
+[[Category:Coursera]]
+[[Category:Biology]]
+[[Category:Probability|B]]
+This is the page where we will be putting important stuff of the course.
+
+[Course Home](https://class.coursera.org/biostats-003/class/index)
+
+## Lecture Notes
+
+Lets write important notes about each lecture here, especially those issues, which were discussed in the forum and not covered by video! This will save a lot of time for everybody and your efforts won't dissappear in the depths of the forum:)
+
+### Week 1
+
+#### Introduction
+* [[Biostats:Welcome to the course|Welcome to the course]]  
+* [[Biostats:Biostatistics and Experiments|Biostatistics and Experiments]]  
+* [[Biostats:Set Notation and Probability|Set Notation and Probability]]
+
+#### Probability
+
+* [[Biostats:Probability|Probability]]  
+* [[Biostats:Random variables|Random variables]]  
+* [[Biostats:PMFs and PDFs|PMFs and PDFs]]
+* [[Biostats:CDFs Survival Functions and Quantiles|CDFs Survival Functions and Quantiles]]
+
+### Week 2
+
+#### Expected values
+
+* [[Biostats:Expected values|Expected values]]  
+* [[Biostats:Expected values#Rules about expected values|Rules About Expected values]]  
+* [[Biostats:Expected values#Variances and Chebyshevs Inequality|Variances and Chebyshevs Inequality]]  
+
+#### Random Vectors
+
+* [[Biostats:Random Vectors and Independence|Random Vectors and Independence]]  
+* [[Biostats:Correlation|Correlation]]  
+* [[Biostats:Variance Properties and Sample Variance|Variance Properties and Sample Variance]]  
+
+### Week 3
+
+#### Conditional Probability
+
+* [[Biostats:Conditional Probabilities and Densities|Conditional Probabilities and Densities]]  
+* [[Biostats:Bayes Rule and DLRs|Bayes Rule and DLRs]]  
+
+#### Likelihood
+
+* [[Biostats:Likelihood|Likelihood]]  
+
+### Week 4
+
+#### Some Common Distribution
+
+* [[Biostats:Bernoulli Distribution and Binomial Trials|Bernoulli Distribution and Binomial Trials]]  
+* [[Biostats:The Normal Distribution|The Normal Distribution]]  
+
+#### Asymptotics
+
+* [[Biostats:Limits and LLN|Limits and LLN]]  
+* [[Biostats:CLT and Confidence Intervals|CLT and Confidence Intervals]]  
+
+### Week 5
+
+#### Confidence Intervals
+* [[Biostats:Confidence Intervals and CI for Normal Variance|Confidence Intervals and CI for Normal Variance]]  
+* [[Biostats:Students t Distribution and CI for Normal Means|Students t Distribution and CI for Normal Means]]  
+* [[Biostats:Profile Likelihoods|Profile Likelihoods]]  
+
+#### T Confidence Intervals
+
+* [[Biostats:T Confidence Intervals|T Confidence Intervals]]  
+
+### Week 6
+
+#### Bootstrapping and Plotting
+
+* [[Biostats:Plotting|Plotting]]  
+* [[Biostats:The Jackknife|The Jackknife]]  
+* [[Biostats:Bootstrapping|Bootstrapping]]  
+
+### Week 7
+
+#### Binomial Proportions
+
+* [[Biostats:Binomial Proportions|Binomial Proportions]]  
+* [[Biostats:Logs|Logs]]  
+
+## Math notes
+
+Place here short calculus tutorials, which can revive hidden math knowledge in the students:)
+
+* [[Biostats:Basic integration techniques|Basic integration techniques]]
+
+## Programming notes
+
+Lets make this course more practical. Post here your R tips and tricks when solving biostats problems.
+
+### Using LaTex
+
+* [[Biostats:Using LaTex|Using LaTex]]
+
+## Useful online resources
+
+Here are some online resources to help us all get up to speed on statistics in general - some of us haven't used what we learned in years!
+
+[Methods in Biostatistics I](http://ocw.jhsph.edu/index.cfm/go/viewCourse/course/MethodsInBiostatisticsI/coursePage/index/) - professor Caffo course from Johns Hopkins, there you will find a lot of useful information like suggested readings and so on.
+
+[Rice Virtual Lab in Statistics](http://onlinestatbook.com/rvls/) - interactive and hyper-text (online only)
+
+[The Elements of Statistical Learning](http://www.stanford.edu/~hastie/Papers/ESLII.pdf) - a large (~22 MB) PDF download of a book from the Springer Series in Statistics
+
+[Introduction to Statistical Thought](https://www.math.umass.edu/~lavine/Book/book.pdf) by Michael Lavine - a larger (~42 MB) download of a text focused more on the theoretic/mathematical underpinnings of statistics.
+
+[StatSoft Statistics: Methods & Applications](http://www.statsoft.com/textbook/) - totally online, though a physical book is available from StatSoft directly for $80 plus shipping.
+
+[R-Bloggers](http://www.r-bloggers.com/) is a site that aggregates blogs from all over that are focused on the use of the R language, but there are plenty of interesting examples that are understandable even if you don't know R.
+
+[Khan Academy](http://www.youtube.com/playlist?list=PL17567A1A3F5DB5E4) YouTube videos on math and statistics
+
+[Freemath](http://freemath.wikia.com/wiki/Free_Math_Sources#Probability_.26_Statistics) - contains currently 10 free books on the probability & statistics including some of the above
+
+## Useful readings
+
+[John A. Rice. Mathematical Statistics And Data Analysis](http://books.google.com.au/books/about/Mathematical_Statistics_And_Data_Analysi.html?id=EKA-yeX2GVgC&redir_esc=y)
+
+[Freedman, Pisani and Purves. Statistics](http://books.google.com.ua/books?id=mviJQgAACAAJ&dq=Freedman,+Pisani+and+Purves+Statistics&hl=uk&sa=X&ei=6Xj2UYCKJaeK4ASB94GgBQ&ved=0CC8Q6AEwAA)
+
+[Morris H. DeGroot, Mark J. Schervish. Probability and Statistics](http://books.google.com.ua/books?id=4TlEPgAACAAJ&dq=Morris+H.+DeGroot,+Mark+J.+Schervish.+Probability+and+Statistics&hl=uk&sa=X&ei=K3n2Ue_VMKKF4AS9uYG4Cg&ved=0CC8Q6AEwAA)
+
+## Notations and Definitions
+
+**log** - if not stated opposite assume that log represents natural logarithm
+
+##Categories

@@ -1,0 +1,151 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:audition</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a>&#160;: <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW specifics</a></p>
+<p>If you don't find the info you need on this wiki, try looking in the <a rel="nofollow" class="external text" href="http://helpx.adobe.com/audition/topics.html">official online help</a>.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Project_specifics"><span class="tocnumber">1</span> <span class="toctext">Project specifics</span></a></li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">2</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">3</span> <span class="toctext">Editing Audio</span></a></li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">4</span> <span class="toctext">Efficient Editing</span></a></li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">5</span> <span class="toctext">Editing MIDI</span></a></li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">6</span> <span class="toctext">Mixing</span></a></li>
+<li class="toclevel-1"><a href="#Useful_resources"><span class="tocnumber">7</span> <span class="toctext">Useful resources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Website"><span class="tocnumber">7.1</span> <span class="toctext">Website</span></a></li>
+<li class="toclevel-2"><a href="#Manual"><span class="tocnumber">7.2</span> <span class="toctext">Manual</span></a></li>
+<li class="toclevel-2"><a href="#Forums"><span class="tocnumber">7.3</span> <span class="toctext">Forums</span></a></li>
+<li class="toclevel-2"><a href="#Links"><span class="tocnumber">7.4</span> <span class="toctext">Links</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Project_specifics">Project specifics</span></h2>
+<p>details of file management
+<ul><li>Project Name
+</li><li>File type
+</li><li>Bit depth
+</li><li>Sampling rate
+</li><li>Hardware
+</li><li>Buffer size
+</li><li>Project folders specifics</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Recording">Recording</span></h2>
+<p>details of audio recording
+<ul><li>Metronome(click track)
+</li><li>Count in
+</li><li>Audio recording tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h2>
+<p>details of editing audio
+<ul><li>Trimming
+</li><li>Cutting
+</li></ul>
+To split clips in Audition CS6, click on the "Razor Tool" button (or press R) to activate the Razor mode. Then, just click on a clip to split it. Note that the position of the mouse does affect where the clip is split (i.e. click the clip in the middle to split it into halves).<div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/c/ce/Musicproduction_dawwiki_audition_razor.png" class="image"><img alt="" src="/wiki/images/thumb/c/ce/Musicproduction_dawwiki_audition_razor.png/400px-Musicproduction_dawwiki_audition_razor.png" width="400" height="77" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/c/ce/Musicproduction_dawwiki_audition_razor.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The Razor Tool</div></div></div></p>
+<p>If you click and hold the Razor Tool button, you'll see two options pop up, "Razor Selected Clips Tool" and "Razor All Clips Tool." Selected Clips is selected by default. If you choose Selected Clips, only the clip your mouse is hovering over will be cut by the Razor. If you choose All Clips, the Razor will cut any clip (in any track) overlapping that time point. These differences are more obvious when you try them out, because there is a yellow line that shows you what will be cut and where, before you click.</p>
+<p>You can also choose Clip &gt; Split (or press Ctrl+K) to split the selected clip at the current-time indicator.
+<ul><li>Grid
+</li><li>Change grid resolution
+</li><li>modifier key to toggle grid
+</li><li>add fades
+</li><li>modify fades
+</li><li>efficient compiling of multiple takes</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h2>
+<p>details of efficient editing
+<ul><li>Zoom
+</li></ul>
+There are quite a few ways to zoom in Audition CS6. Here's a (probably not complete) list of ways to do it:<br />
+1) Scroll the mouse wheel while hovering over the time ruler.<br />
+2) Hold Ctrl while scrolling the mouse wheel anywhere in the editor.<br />
+3) Right-click and drag on the time ruler to zoom into a specific region.<br />
+4) Press + and - on the keyboard (uses the current-time indicator as the zoom-center).
+<ul><li>Nudge
+</li><li>Cycle
+</li></ul>
+Choose the Time Selection Tool (or press T) and click and drag in the editor workspace to choose a region of time. Now, the playback will stop when it reaches the endpoint of the region. To cycle, hit the "Loop Playback" button next to the Record button (or press Ctrl+L), and the playback will loop when it reaches the endpoint.
+Note that you can also select a region of time by pressing I and O to set in- and out-points, respectively, at the current-time indicator.
+<ul><li>Merge
+</li><li>Name
+</li></ul>
+Right-click on a clip and select Clip Properties (or click on a clip and show the Properties tab). You can change the clip name in the text field at the top.
+<ul><li>Color
+</li></ul>
+Right-click on a clip and select Clip Properties (or click on a clip and show the Properties tab). You can change the clip color in Basic Settings.
+<ul><li>Markers
+</li></ul>
+Pull up the "Markers" tab. Here you can add and edit markers. Also, you can add a marker just by pressing M.
+Note that (at least in Audition CS6) you can have a marker be a "marker point" (which is default) or a "marker range." You can change the marker type by right-clicking the marker above the time-ruler and select "Convert to Range" (or "Convert to Point" if it's already a range).
+<ul><li>Change tempo
+</li><li>Other efficient editing tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h2>
+<p>Audition CS6 does not support MIDI tracks and instruments.</p>
+<p>details of editing midi
+<ul><li>Velocity
+</li><li>Quantization
+</li><li>Control Change data
+</li><li>MIDI monitor(through)
+</li><li>Other MIDI editing tips
+</li><li>Adding software instruments
+</li><li>Other MIDI tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Mixing">Mixing</span></h2>
+<p>details of mixing
+<ul><li>Types of tracks
+</li><li>Adding effects
+</li><li>Channel strip layout
+</li><li>Configuring a Submix
+</li><li>Configure reverb in a send and return scheme
+</li><li>Busses
+</li><li>Automation recording
+</li><li>Automation editing</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Useful_resources">Useful resources</span></h2>
+<p>additional resources</p>
+<h3> <span class="mw-headline" id="Website">Website</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.adobe.com/products/audition.html">Adobe Audition</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Manual">Manual</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://helpx.adobe.com/audition/topics.html">Audition online manual</a></li>
+<li><a rel="nofollow" class="external text" href="http://helpx.adobe.com/pdf/audition_reference.pdf">Audition PDF manual</a></li>
+<li><a rel="nofollow" class="external text" href="http://helpx.adobe.com/content/help/en/audition/using/default-keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Forums">Forums</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://forums.adobe.com/community/audition">Adobe Audition Forums</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Links">Links</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://blogs.adobe.com/audition/">Adobe Audio Blog</a></li>
+<li>Twitter <a rel="nofollow" class="external text" href="http://twitter.com/audition">@audition</a></li>
+<li>Facebook <a rel="nofollow" class="external text" href="https://www.facebook.com/AdobeAudition">AdobeAudition</a></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:audition&amp;oldid=9445">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:audition&amp;oldid=9445</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

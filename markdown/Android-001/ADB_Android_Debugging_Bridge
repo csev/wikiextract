@@ -1,0 +1,97 @@
+[[Category:Android]]
+[[Category:ADB]]
+[[Category:Debugging]]
+## Introduction
+This is a student created page explaining how to use the ADB (Android Debugging Bridge) to interface your computer with an Android device via a USB cable or an Emulator.
+
+## Requirements
+These steps require that the user has successfully installed the Android SDK/Eclipse/Java SDK. In addition the user will have opened a project and loaded it to an emulator or device.
+
+##Enable the USB mode in Android device.
+1. Connect the device to computer
+2. Tap the 'Connected as a media device' to enter USB mode
+3. Navigate to Settings->Developer Options
+4. Check 'Stay awake' and 'USB debugging' options
+
+In addition, the user should be familiar with starting a command window (cmd) and navigating through the folder structure.
+
+##Starting/Stopping ADB Shell (many variations, we'll start with connecting a physical device)
+1. Close Eclipse and all emulators.
+2. Disconnect your Android device from your computer.
+3. Start the 'cmd' window.
+4. Navigate to the folder containing your Android SDK.  I'll refer to this alias as the path:  [android sdk]  Located inside this folder are two subfolders on my install( eclipse and sdk).
+5. Navigate to [android sdk]/sdk/platform-tools
+6. Type 'adb' [Enter].
+   You should see lots of stuff scrolling very quickly. These are adb   parameters.
+7. Type 'adb devices' [Enter]
+  Message "List of devices attached" appears. You should see a couple of blank lines if you have no connected device and are not running an emulator.
+8. With your device powered up, connect the USB cable between it and the computer. (NOTE: I have not logged into my device).
+9. Type 'adb devices' [Enter]
+  I now see this in the list: '028841454180e097 device'. This number is the name/id of my device.
+10. Type adb -s <the name without brackets> shell [Enter]
+  I typed: adb -s 028841454180e097 shell [Enter]
+  This starts the ADB shell. In my 'cmd' window I now see:
+  "shell@android:/ $"
+11. Congrats! You have entered the ADB shell.
+12. Type 'exit' [Enter].
+  This closes the ADB shell and returns  to the 'cmd' prompt.
+
+##Optional: Start/Stop ADB Shell with an Emulator
+1. Navigate in the 'cmd' window to the following folder.
+   [android sdk]/sdk/tools
+2. Type 'android list avd' [Enter]
+   This will list 'Android Virtual Devices' (emulators). I note a name 'Nexus7'.
+3. Type 'emulator -avd <emulator name without brackets>' [Enter]
+  I typed: emulator -avd Nexus7 [Enter]
+ 
+  After a couple of moments the Emulator window pops up. This might take longer if you have not followed the recommendations within these forums to speed that up.
+
+4. Navigate to [android sdk]/sdk/platform-tools
+5. Type 'adb devices' [Enter]
+  At this point I see two devices. The first one is the actual Android device referenced above. The second one is the emulator.
+6. Type 'adb -s <emulator name without brackets> shell [Enter]
+  I typed: adb -s emulator-5554 shell [Enter]
+  A number sign appears (#)
+7. Type 'exit' [Enter]
+
+##Basic Android Navigation Commands
+If you're a Linux user you'll be very comfortable with these commands.
+Note: a couple of commands used later produce errors with the emulator. These definitely work with the device.
+
+1. Connect to a device or an emulator using ADB shell.
+2. Type 'ls' [Enter]   //Lists folders and files.
+3. Type 'ls *.rc' [Enter]  //Lists all files with an 'rc' extension
+ 
+NOTE: Use Up/Down arrows to scroll previously entered commands.
+
+4. Type 'cat <filename without brackets.' [Enter] //Shows content of a file.
+  I typed: cat init.rc [Enter]
+5. Type 'ls' [Enter]
+6. Type 'cd etc' [Enter]  //changes directory to /etc
+7.  Type 'ls' [Enter]
+8.  Type 'cd /' [Enter] //changes back to main directory
+
+So, 'cat', 'ls', and 'cd' are several useful commands for exploring your device or emulator.
+
+##Other Commands
+Try typing these following by the [Enter] key.
+
+date                //displays date and time
+printenv            //displays environmental variables, could be useful in future
+dumpsys meminfo     //shows apps by memory usage
+
+##Start/Stop Programs on Device/Emulator via ADB
+
+pm list packages       //lists all packages (think android programs) You should recognize this from Lesson 1.
+From the list created I see several packages. One in particular is 'com.android.browser'.
+
+am start com.android.browser
+  Browser should start.
+am force-stop com.android.browser
+  Browser closes
+
+##Wrap Up
+
+You can play with variations on these commands. If you have other commands that you find useful, please post them. There are so many things that may be done from your computer via the ADB (Android Debugging Bridge) command and shell.
+
+##Categories

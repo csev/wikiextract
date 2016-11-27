@@ -1,0 +1,79 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Programming Assignment 1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Installing_SAMIAM"><span class="tocnumber">1</span> <span class="toctext">Installing SAMIAM</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Mac_installation_instructions"><span class="tocnumber">1.1</span> <span class="toctext">Mac installation instructions</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Using_SAMIAM"><span class="tocnumber">2</span> <span class="toctext">Using SAMIAM</span></a></li>
+<li class="toclevel-1"><a href="#Constructing_a_Credit_Network"><span class="tocnumber">3</span> <span class="toctext">Constructing a Credit Network</span></a></li>
+<li class="toclevel-1"><a href="#Factor_Product"><span class="tocnumber">4</span> <span class="toctext">Factor Product</span></a></li>
+<li class="toclevel-1"><a href="#Factor_Marginalization"><span class="tocnumber">5</span> <span class="toctext">Factor Marginalization</span></a></li>
+<li class="toclevel-1"><a href="#Observing_Evidence"><span class="tocnumber">6</span> <span class="toctext">Observing Evidence</span></a></li>
+<li class="toclevel-1"><a href="#Computing_the_Joint_Distribution"><span class="tocnumber">7</span> <span class="toctext">Computing the Joint Distribution</span></a></li>
+<li class="toclevel-1"><a href="#Computing_Marginals"><span class="tocnumber">8</span> <span class="toctext">Computing Marginals</span></a></li>
+<li class="toclevel-1"><a href="#Monitor_Assignment"><span class="tocnumber">9</span> <span class="toctext">Monitor Assignment</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Installing_SAMIAM">Installing SAMIAM</span></h3>
+<p>SAMIAM has no installation; you only have to unzip it to a directory. But you do need to install Java, and usually also to edit <code>samiam.bat</code> in the directory of SAMIAM. </p>
+<p>Look for java.exe. If there is no such file on your computer, you need to install Java.</p>
+<p>Open a command prompt and type <code>java</code>. If the message you see is <code>Bad command or file name</code>, it means that java.exe is not in your path. In that case, edit <code>samiam.bat</code> and replace the line </p>
+<code><pre>call&#160;:which java.exe
+</pre></code>
+<p>by</p>
+<code><pre>set EXECCMD=&quot;C:\Program Files (x86)\Java\jre6\bin\java.exe&quot;
+</pre></code>
+<p>(or whatever the path to java.exe is).
+Probably you won't be always running this batch from SAMIAM's directory. Therefore, add this line at the beginning:</p>
+<code><pre>cd/d&#160;%~d0%~f0
+</pre></code>
+<p>Now try running <code>samiam.bat</code>. If you get an error message that includes the words <code>Could not find agent library calljvmti</code>, then delete <code>-Xruncalljvmti</code>.  Alternatively, you may be getting the error regarding -Xruncalljvmti due to not having the correct version of Java for your operating system; having a 32-bit version of Java on 64-bit Windows 7, for instance, may produce this error; in this case, installing the correct version of java for Windows 7 64-bit may solve your problem.</p>
+<p>Or in Windows XP and perhaps many other Windows versions,</p>
+<p>Generally you can make Java (or any executable) working for any program that uses it by editing the path variable in Windows. Follow the instructions below,</p>
+<p>Go to my computer --&gt; Right click inside it --&gt; Select "Properties" from the right click menu --&gt; Select "Advanced" tab from the "System Properties" menu you get --&gt; Select "Environment Variables" tab you will get the "Environment Variables" menu look for "System Variables" sub-menu --&gt; Select "Path" and click "Edit" tab below --&gt; Under the "Edit System Variables" menu check for the correct Java path inside "Variable Value" --&gt; If it is not there put the correct path to the Java executable like ";C:\Program Files (x86)\Java\jre6\bin" at the end of the line of the "Variable Value" otherwise replace the incorrect one.  </p>
+<p>Note: if after changing the java path, you are unable to run "java.exe" from the command prompt, ensure that you do NOT have a space between the semicolon and "C:\" in the path to your java installation; having a space here may cause the path not to work properly.  You may have to close the command prompt and re-open it after you change your system path list as described in the previous example.  Also ensure that your path list does not exceed 255 characters, as in some versions of Windows this will cause truncation of the path to occur and your path, if it's at the end, may not take..</p>
+<p>Still no luck? Reinstall Java and follow above steps.  Make sure to use the correct version of java for your operating system (e.g. Windows 32 bit vs Windows 64-bit).</p>
+<p>** Do not make any other changes to "Variable Value" or you will risk your systems stability</p>
+<h4> <span class="mw-headline" id="Mac_installation_instructions">Mac installation instructions</span></h4>
+<p>Download SAMIAM and unzip it to a convenient directory. Mac OS X usually comes with Java, but the latest versions may not so in that case you will need to install it.</p>
+<p>To run SAMIAM you can open the SAMIAM directory in the Finder and double-click on the "runsamiam" Unix Executable file. Alternatively you can use the Terminal and cd to the SAMIAM directory and run this command:</p>
+<code><pre>./runsamiam
+</pre></code>
+<h3> <span class="mw-headline" id="Using_SAMIAM">Using SAMIAM</span></h3>
+<p>Bug alert:
+When editing CPD:s on locales that use ',' as a decimal point marker instead of '.', note that the program gives values as separated by ',':  '0,5', '0,5', etc., but SAMIAM requires that the values are given using period as a decimal marker, so you need to rewrite the whole number. '0,5' -&gt; '0.3' or SAMIAM won't accept it.   </p>
+<h3> <span class="mw-headline" id="Constructing_a_Credit_Network">Constructing a Credit Network</span></h3>
+<p>Maybe someone could clarify the 4th point it seems ambiguous. Is good payment history = acceptable payment history OR good payment history = excellent payment history OR  good payment history = acceptable payment history AND  excellent payment history&#160;?</p>
+<p>4) It says if a person has high debt ratio (a variable/node defined in the network already) then the probability of his payment history being acceptable/excellent is low while the probability of it being unacceptable is high. P(PH<em>excel|DR</em>high) &lt; P(PH<em>unaccep|DR</em>high). </p>
+<h3> <span class="mw-headline" id="Factor_Product">Factor Product</span></h3>
+<p>indxA and indxB is convenient for calculating the factor product but not necessary, in fact they are actually obscuring a bit what kind of computation you actually are doing.  </p>
+<h3> <span class="mw-headline" id="Factor_Marginalization">Factor Marginalization</span></h3>
+<p>The matlab/octave command "accumarray" may be helpful in this part for a vectorized implementation.</p>
+<h3> <span class="mw-headline" id="Observing_Evidence">Observing Evidence</span></h3>
+<h3> <span class="mw-headline" id="Computing_the_Joint_Distribution">Computing the Joint Distribution</span></h3>
+<h3> <span class="mw-headline" id="Computing_Marginals">Computing Marginals</span></h3>
+<h3> <span class="mw-headline" id="Monitor_Assignment">Monitor Assignment</span></h3>
+<p>A function that pretty prints all the marginals for a given assignment, the function can be found here: <a rel="nofollow" class="external free" href="https://gist.github.com/3813686">https://gist.github.com/3813686</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 38/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Programming_Assignment_1&amp;oldid=3217">https://share.coursera.org/wiki/index.php?title=PGM:Programming_Assignment_1&amp;oldid=3217</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

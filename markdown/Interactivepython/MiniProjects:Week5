@@ -1,0 +1,39 @@
+#Week 5 Mini-project
+##Memory
+<a href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=17">original source</a>
+
+Memory is a card game in which the player deals out a set of cards face down.  In one turn, the player flips over two cards.  If they match, the player leaves them face up.  If they don't match, the player flips the cards back face down.  The goal of Memory is to end up with all of the cards flipped face up in the minimum number of turns. For this project, we will keep our model for Memory fairly simple.  A Memory deck consists of eight pairs of matching cards.  
+### Mini-project development process ###
+As usual, I suggest that you start from the <a href="http://www.codeskulptor.org/#examples-memory_template.py">program template</a> for this mini-project.
+
+1. Model the deck of cards used in Memory as a list consisting of 16 numbers with each number lying in the range [0,8) and appearing twice.  I suggest that you create this list using a <em>list comprehension</em> of the form <code>[... for i in range(16)]</code> where the expression <code>...</code> should be replaced by a Python expression depending on <code>i</code> that yields numbers in the range [0,8).
+1. Write a draw handler that iterates through the Memory deck and uses <code>draw\_text</code> to draw the number associated with each card on the canvas.  The result should be a horizontal sequence of evenly-spaced numbers drawn on the canvas.
+1. Shuffle the deck using <code>random.shuffle()</code>. Remember to debug your canvas drawing code before shuffling to make debugging easier.
+1. Next, modify the draw handler to either draw a blank rectangle or the card's value. To implement this behavior, we suggest that you create a second list called <code>exposed</code> whose i<sup>th</sup> entry is <code>True</code> if the card is flipped over and its value is visible and <code>False</code> if the card's value is hidden. We suggest that you initialize <code>exposed</code> to some known values while testing your drawing code with this modification
+1. Now, add functionality to determine which card you have clicked on with your mouse.  Add an event handler for mouseclick that takes the position of the mouseclick and prints the index of the card that you have clicked on to the console.  To make determining which card you have clicked on easy, we suggest sizing the canvas so that the sequence of cards entirely fills the canvas.
+1. Modify the event handler for mouseclick to flip cards based on mouseclicks.  If the player clicked on the <code>i</code><sup>th</sup> card, you can change the value of <code>exposed[i]</code> from <code>False</code> to <code>True</code>.  <b>If the card is already exposed, you should ignore the mouseclick</b>.  At this point, the basic infrastructure for Memory is done.
+1. You now need to add game logic for selecting two cards and determining if they match.  We suggest following the structure in the program template, which explicitly keeps track of the state of the game.  State 0 corresponds to the start of the game.  In state 0, if you click on a card, that card is exposed, and you switch to state 1.  State 1 corresponds to a single exposed unpaired card.  In state 1, if you click on an unexposed card, that card is exposed and you switch to state 2.  State 2 corresponds to the end of a turn.  In state 2, if you click on an unexposed card, that card is exposed and you switch to state 1.
+1. Note that in state 2, you also have to determine if the previous two cards are paired or unpaired.  If they are unpaired, you have to flip them back over so that they are hidden before moving to state 1.  We suggest that you use two global variables to store the index of each of the two cards that were clicked in the previous turn.
+1. Add a counter that keeps track of the number of turns and uses <code>set\_text</code> to update this counter as a label in the control panel. (BTW, Joe's record is 12 turns.)
+1. Finally, add a "Reset" button that reshuffles the cards, resets the turn counter and restarts the game.  All cards should start the game hidden.
+1. (Optional) You may replace the draw\_text for each card by a draw\_image that uses one of eight different images.
+
+Once the run button is clicked in CodeSkulptor, the game should start.  You should not have to hit the "Reset" button to start.  Once the game is over, you should hit the "Reset" button to restart the game.  While this project may seem daunting at first glance, the size of your program should remain well under 100 lines.  Our full implementation took 60 lines with comments and spaces.  If you feel a little bit intimidated, focus on developing your project to step six.  Our experience is that, at this point, you will begin to see your game come together and the going will get much easier.
+### Grading Rubric - 11 pts total (scaled to 100) ###
+
+* 1 pt - The game correctly draws 16 cards on the canvas (horizontally or as a grid). Using images in place of textual numbers is fine.  <b>However, it is the submitter's responsibility to ensure that custom images load during peer assessment.</b>
+* 1 pt - The cards appear in eight unique pairs.
+* 1 pt - The game ignores clicks on exposed cards.
+* 1 pt - At the start of the game, a click on an unexposed card exposes the card that was clicked on.
+* 1 pt - If one upaired card is exposed, a click on a second unexposed card exposes the card that was clicked on.
+* 1 pt - If two unpaired cards are exposed, a click on an unexposed card exposes the card that was clicked on and flips the two unpaired cards over.
+* 1 pt - If all exposed cards are paired,  a click on an unexposed card exposes the card that was clicked on and does not flip any other cards.
+* 1 pt - Cards paired by two clicks in the same turn remain exposed on subsequent turns.
+* 1 pt - The game correctly updates and displays the number of turns in the current game in a label displayed in the control area.
+* 1 pt - The game includes a "Reset" button that resets the turn counter and restarts the game.
+* 1 pt - The deck is also randomly shuffled each time the "Reset" button is pressed, so that the cards are in a different order each game.
+
+---
+[[Interactivepython:MiniProjects|MiniProjects]]
+
+[[Interactivepython:Main|Main]]

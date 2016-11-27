@@ -1,0 +1,31 @@
+Week 3, Lecture 4 - More on <i>ced-9</i> (gain-of-function mutation pro-apoptotic function)
+
+* The Bcl-2 superfamily in mammals has three subgroups, the pro-apoptotic BH3-only proteins, also referred to as the sensors, the anti-apoptotic Bcl-2-like proteins, also referred to as the guardians, and the pro-apoptotic Bax-like proteins, also referred to as the effectors.  
+
+* The sensors induce apoptosis by binding to and negatively regulating the guardians, thereby blocking the ability of the guardians to inhibit the effectors. Some sensors can also induce apoptosis by directly binding to and activating the effectors.  
+
+* Once active, the effectors induce the processes necessary to irreversibly commit a cell to the apoptotic fate. <i>ced-9</i> encodes the <i>C. elegans</i> homolog of Bcl-2, one of the guardians, and <i>egl-1 </i> encodes a <i>C. elegans</i> BH3-only protein, one of the sensors.  Like the Bcl-2 protein, the <i>ced-9 </i> protein has a hydrophobic tail through which it is associated with mitochondria. Furthermore, the <i>ced-9</i> protein interacts with the EGL-1 protein and this interaction inhibits CED-9 function. This notion is supported by the following finding.  
+
+* The <i>ced-9 </i> gain-of-function mutation <i>n1950</i>, which causes a general block in apoptosis, is a missense mutation that changes a single amino acid in the CED-9 protein sequence. Specifically, it is a glycine (G)to glutamate (E) substitution at position 169 of the CED-9 sequence. This amino acid is within a conserved region of the CED-9 protein that is referred to as the "receptor domain" of the guardians. Based on studies performed with the mammalian guardians, this domain is important for the ability of the guardians to bind to the sensors. And indeed, the <i>n1950</i> mutation affects the interaction between CED-9 and EGL-1, the sensor. It reduces the strength of the interaction several fold when analyzed in vitro and it might completely abolish it in vivo, in the worm.  
+
+* This suggests that a mutant CED-9 protein that can only weakly bind to EGL-1 or that can no longer bind to EGL-1 escapes the negative control that the sensor EGL-1 normally exerts on it, thereby rendering it into a “constitutively active” protein.  
+
+* Apart from CED-9 and EGL-1, are there additional members of the Bcl-2 superfamily encoded in the <i>C. elegans</i> genome? There is one more BH3-only protein called CED-13, but it does not appear to play a role in apoptosis during development. However, it turns out that there are no additional guardians and there also does not appear to be an effector. So in <i>C. elegans</i>, the Bcl-2 superfamily shows much less redundancy and this is one of the reasons, why it was possible to identify members of this superfamily in <i>C. elegans </i> using forward genetic screens.  
+
+* But why is there no effector in <i>C. elegans </i>? Once activated by the sensors, either indirectly or directly, mammalian effectors induce the processes that are necessary to commit cells to the apoptotic fate. How can these critical processes be induced in <i>C. elegans</i> if there are no effectors? CED-9 might actually not only be a guardian but, in certain contexts, also an effector.  
+
+* In 1994, Michael Hengartner and Bob Horvitz published another paper in the journal Nature, in which they reported the identification of the <i>n1950</i> gain-of-function mutation. In their publication, they also present data that CED-9 might have pro-apoptotic activity in cells that are programmed to die, basically in those 131 cells that are programmed to die during <i>C. elegans </i> development. What was that data?  
+
+* Remember the pharynx assay that I talked about in one of the last sections? This is an assay that allows one to detect and also quantify a general defect in apoptosis. Animals homozygous for strong loss-of-function mutations of, for example, the <i>ced-3</i> gene, have on average 12 extra cells in the anterior pharynx. At the time <i>ced-9</i> was cloned, a lot of additional <i>ced-3</i> loss-of-function mutations had been identified in various screens, among them also weak loss-of-function mutations, such as <i>n2427</i>.  
+
+* In the pharynx assay, <i>n2427</i> only causes on average 2.8 extra cells. However, <i>n2427</i> suppresses apoptosis in <i>ced-9</i> loss-of-function mutants enough to cause these animals, which would normally die, instead to survive. Interestingly, in these rescued <i>ced-9</i> loss-of-function; <i>ced-3(n2427)</i> double mutant animals, there are on average 8.6 extra cells in the anterior pharynx. Think about that. 
+
+* During the development of the anterior pharynx, 16 cells are eliminated by apoptosis. In animals that carry the weak <i>ced-3</i> loss-of-function mutation <i>n2427</i>, 2.8 of those, not quite 20%, fail to die. By introducing a <i>ced-9</i> loss-of-function mutation into the <i>n2427</i> strain, you are now taking out the gene that normally protects cells from apoptosis. What would you expect to happen?  
+
+* You probably would expect that more cells die. The number of extra, undead cells should go down, maybe to 0, but that’s not what’s happening, the number actually goes up significantly. The number increases three-fold from 2.8 to 8.6.  
+
+* One model that could explain this is that in those 131 cells that are programmed to undergo apoptosis during development, <i>ced-9</i> actually acquires a function that is necessary for the death of these cells. In that case, removing <i>ced-9 </i>function in the <i>n2427</i> background should result in even fewer cells dying and therefore more extra cells and that’s what was observed.  
+
+* How could <i>ced-9</i> acquire a pro-apoptotic function in those 131 cells that are programmed to die? What makes them different from the 959 cells that are programmed to survive and in which the <i>ced-9</i> gene is clearly necessary for survival? As we will see later, it is the activity of the <i>egl-1 </i> gene, which is different.  
+
+* We speculate that the binding of the EGL-1 protein, a sensor, to the CED-9 protein, a guardian, not only blocks the anti-apoptotic function of CED-9 but turns it into an effector-like protein with pro-apoptotic activity.

@@ -1,0 +1,18 @@
+<pre>
+<<< "Welcome to ChucK 101!" >>>;
+</pre>
+
+#ChucK Examples
+* [[Chuck101:Hello World | Hello World]]
+* [[Chuck101:Basic Oscillations | Basic Oscillations]] 
+* [[Chuck101:Control Structures | Control Structures]]
+* [[Chuck101:For and While Loop | For and While Loop]]
+* [[Chuck101:Mixing Oscillations | Mixing Oscillations]]
+
+#ChucK Instalation
+* [[Chuck101:Ubuntu 12.04 LTS Installation|Ubuntu 12.04 LTS Installation]]
+
+#Useful data for sound design, synthesis, and music
+* [[Chuck101:Useful data|Useful data]]
+
+[[Category:ChucK 101]]

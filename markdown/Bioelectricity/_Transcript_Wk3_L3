@@ -1,0 +1,36 @@
+# Week 3 Lecture 3: The Simulation Set-up  
+  
+**Bioelectricity Week3_3 (slide 8)**  
+So, hello again. This is Roger Coke Barr for the Bioelectricity course. This is Week three, Lecture three. In this lecture, we're talking about the simulation and how the simulation has set up.  
+  
+**Simulation of Patch, Equations-1 (slide 9)**  
+* So, since it's a simulation, the setup is mathematical. I thought I would go through the rules, mainly they are just some Algebra. And so, that you could see how each step is done.  
+* The first step is concerned with the total current as compared to the currents through the resistive channels, and through the capacitance. Well, as we see from the diagram, total current here just divides into the two path, the current through the resistance, and the current through the capacitance. So, the total current has to go one way or the other since current is conserved. Total current is equal to the capacitive current plus the resistive current.  
+* You might think how obvious can that be. Well, I agree it's pretty obvious. But on the other hand, worth writing down. If we now just turn that around algebraically, that means that the capacitive current is the total current, the membrane current, minus the current that goes through the resistance.  
+  
+**Simulation of Patch, Equations-2 (slide 10)**  
+ This is the step that is the least obvious step in this whole sequence of about ten steps. If you talk to people trying to work this problem out on the blackboard, this is the step that they don't realize is the right step to do.  
+* So, in this step, we say, well, the capacitive current, Ic, can be written as Cm dVm / dt. So, it's simply a substitution using the rules of current flow for capacitors. We did those in our earlier segment. Not a very hard rule, it is substituted here, but wow, does it ever change our problem?  
+* All of the sudden, we take equations that have to do with currents flowing at a given moment and we turned it into a rule that involves, first, voltages. Voltages, not current.  
+* And now, all of a sudden time has gotten involved in our equation. So, in the first two equations, these are very nice equations and they existed at a particular time. Now, all of the sudden time itself has become a part of our equation (right there) and the consequence is that we will be able to see what happens at different times all because of that one little substitution for Ic.  
+  
+**Simulation of Patch, Equations-3 (slide 11)**  
+* Now, let's talk about the total membrane current Im. Generally speaking, in bioelectricity, the total membrane current (Im) is coming from the tissue structure, what's happening in other cells all around you.  
+* In this case, we have a tissue segment that is isolated so it's not getting anything from its brothers and sisters nearby. It's dependent solely on the stimulus. That's all it's got.  
+* So, as a result the stimulus current is the total membrane current. And the total membrane current is the stimulus current. And that's all there is. Poor little segment is orphaned all alone in the world.  
+* But let's look at something else that happens. The stimulus current starts off zero. Then, the stimulus current becomes non-zero. Then, it becomes zero again. So, I've had people tell me, you put in a stimulus and then it goes down the fiber. And that's all there is to bioelectricity. It's a tempting idea, but it's just not so.  
+* So, we can look at this idea and first, to say, what happens in this fiber? What happens in this membrane patch when the stimulus has returned to zero? So, we are looking with particular care in this part, the part when the stimulus has returned to zero (this part). And we'll see what happens there.  
+  
+**Simulation of Patch, Equations-4 (slide 12)**  
+* We're now moving through our set of equations. We started of with the idea that total membrane current was the capacitance plus the resistance. Then, we substituted for Ic, according to the rule for capacitors, then we substituted for Im, making Im equivalent to the stimulus current. And now we want to substitute for Ir.  
+* Well, we can say, look, as long as it's just a regular resistor or even if it's not, Ir is going to follow Ohm's law. Now, Ohm's law is mainly useful when Rm is a constant. And that's true if the tissue is passive.  
+* This substitution, while still mathematically okay, is much less useful when Rm becomes a variable and that's what happens with active tissue, but we won't worry about that right at this moment.  
+  
+**Simulation of Patch, Equations-5 (slide 13)**  
+* So now, if we do our substitutions, we do that for Ir, this for Im, this for Ic. Put all of them back into the previous equation, we substitute each of those into here. The result that we get is this result. It doesn't seem very much like the starting point although, it only took four simple steps to go from the beginning to here.  
+* The reason it doesn't seem much like the starting point is that we have time and we have voltage changes and we have the stimulus, the stuff in here with opposite signs. Well, we saw it come out of the aAlgebra, so we know where it came from, but it's certainly doesn't look much like where we started.  
+  
+**Simulation of Patch, Equations-6 (slide 14)**  
+* There are various ways we could approach, using the equation dVm equals and so forth. But if we use it computationally, what we could do is we could say, let's use this equation computationally, take a series of discrete steps dt, rather than infinitesimal steps dt, we'll approximate it and take a series of discrete steps dt, and then see for a series of discrete time steps what the resulting changes are in the trans-membrane voltage.  
+* I can tell you from previous experience with this particular problem that you want the discrete steps to be about a microsecond in duration. It doesn't seem like very much, but that's where you want it to be, about a microsecond. Just to see the general idea of what's happening, you can use much larger steps, say, ten microseconds or maybe even fifty microseconds but you can't go much above that or what you will get is so bad as to be just gibberish.  
+* So, thank you for watching this segment. It's a bunch of little technical details, substituting this and substituting that but the end result is a very useful expression that can be the basis for most interesting computations.

@@ -1,0 +1,103 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 5: 3.1 Fixed, Variable, and Total Costs
+
+# Measures of Costs
+
+**[Fixed Costs][] (FC)**:  costs that do not vary with the quantity of output produced. They are expended even if nothing is produced at all.
+
+**[Variable Costs][] (VC)**: costs that vary with the quantity of output produced.
+
+**[Total Cost][] (TC)** is the sum of fixed and variable costs $$TC = FC + VC$$
+
+Using this concepts the table for the hypothetical example is updated as:
+
+<table border="1">
+  <tr>
+    <td># of Cooks</td>
+    <td># of Sandwiches</td>
+    <td>Marginal Product</td>
+    <td>Fixed Costs</td>
+    <td>Variable Costs</td>
+    <td>Total Costs</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>$100</td>
+    <td>$0</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>40</td>
+    <td>40</td>
+    <td>$100</td>
+    <td>$80</td>
+    <td>$180</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>90</td>
+    <td>50</td>
+    <td>$100</td>
+    <td>$160</td>
+    <td>$260</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>120</td>
+    <td>30</td>
+    <td>$100</td>
+    <td>$240</td>
+    <td>$340</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>135</td>
+    <td>15</td>
+    <td>$100</td>
+    <td>$320</td>
+    <td>$420</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>140</td>
+    <td>5</td>
+    <td>$100</td>
+    <td>$400</td>
+    <td>$500</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>142</td>
+    <td>2</td>
+    <td>$100</td>
+    <td>$480</td>
+    <td>$580</td>
+  </tr>
+</table>
+
+The [Total Cost Curve][] is the mirror image of the [Total Product Curve][] because this the slope of the curve is driven by the Marginal Product Labor, in the [Total Cost Curve] this slope is called the [Marginal Cost of Production][]. The **marginal cost** is the **increase** in *total cost* that arises from an **extra unit of production**. $$MC = \Delta TC / \Delta Q$$
+
+Other related concepts are:
+
+  * **average total cost** which is the *total cost* divided by the quantity of output. Shows the cost of the typical unit, but it does not show how much total cost will change as the level of production is increased. $$ATC = TC / Q$$
+
+  * **average fixed cost** which is the *fixed cost* divided by the quantity of output. $$AFC = FC / Q$$
+
+  * **average variable cost** which is the *variable cost* divided by the quantity of output. $$AVC = VC / Q$$
+
+
+[Fixed Costs]: http://en.wikipedia.org/wiki/Fixed_cost
+[Variable Costs]: http://en.wikipedia.org/wiki/Variable_costs
+[Total Cost]: http://en.wikipedia.org/wiki/Total_cost
+[Total Cost Curve]: http://en.wikipedia.org/wiki/Cost_curve
+[Total Product Curve]: http://en.wikipedia.org/wiki/Total_product#Total.2C_average.2C_and_marginal_product
+[Marginal Cost of Production]: http://en.wikipedia.org/wiki/Marginal_cost
+
+## Related Video:
+[Youtube: Cost of Production](https://www.youtube.com/watch?v=FBkfTZikIdU)

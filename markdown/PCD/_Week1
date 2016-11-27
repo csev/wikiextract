@@ -1,0 +1,187 @@
+[[Category:PCD]]
+[1]: https://class.coursera.org/pcd-001/class/index
+[2]: https://class.coursera.org/pcd-001/lecture/index
+# [Programmed Cell Death][1] 
+
+
+## Keywords  
+
+ 
+**Week 1: Introduction to apoptosis and Bcl-2 superfamily**   
+
+### 1.2 - What is [programmed cell death][2]?  
+**Cell death:** CD either triggered by cell itself, ie intrinsic or cell-autonomous or triggered by other cells or microenvironment ie extrinsic or cell non-autonomous.
+
+**Programmed cell death:** PCD occurs in a programmed and controlled manner. Its main purpose is to remove unwanted cells.
+
+**Necrosis:** Necrosis does not occur in a programmed and controlled manner. The cells die in response to acute injury or massive physical damage. 
+  
+
+### 1.3 - Hallmarks of apoptosis  
+**Programmed cell death type I (apoptosis)**  
+**Programmed cell death type II (autophagic cell death)**  
+**Pyknotic nuclei**  
+
+**Phagocytosis (engulfment)**  
+**Phagocytes**  
+**Macrophages**  
+**Lysosomes**  
+**DNA ladder (nucleosomal ladder)**  
+**TUNEL assay**  
+**Endonucleases**  
+
+**Phosphatidyl serine (PS)**  
+
+- "The lipid bilayer has been firmly established as the universal basis for cell-membrane structure."   ....  
+
+- "The most abundant membrane lipids are the phospholipids. These have a polar head group and two hydrophobic hydrocarbon tails." ....  
+
+- "Four major phospholipids predominate in the plasma membrane of many mammalian cells: phosphatidylcholine, phosphatidylethanolamine, phosphatidylserine, and sphingomyelin. The structures of these molecules are shown in Figure 10-12. Note that only phosphatidylserine carries a net negative charge, the importance of which we discuss later; the other three are electrically neutral ...."  
+Reference [The Lipid Bilayer](http://www.ncbi.nlm.nih.gov/books/NBK26871/) from
+Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002.  
+
+  
+**"Eat-me signal" PS externalization**   
+- "When animal cells undergo programmed cell death, or apoptosis (discussed in Chapter 17), phosphatidylserine, which is normally confined to the cytosolic monolayer of the plasma membrane lipid bilayer, rapidly translocates to the extracellular monolayer. The phosphatidylserine exposed on the cell surface serves as a signal to induce neighboring cells, such as macrophages, to phagocytose the dead cell and digest it."  
+Reference [The Lipid Bilayer](http://www.ncbi.nlm.nih.gov/books/NBK26871/) from
+Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. 
+  
+**Annexin V** A protein used in the Annexin V assay that binds to negatively charged phospholipids such as PS. Annexin V-coupled to a fluorophore when added, for example, to cells grown in culture, will bind to cells that exhibit PS on the outer leaflet of the plasma-membrane and therefore on their cell surface.
+  
+**Flippases** Enzymes that are located in the plasma membrane and that can transfer phospholipids from the inner to the outer leaflet of the plasma membrane.
+
+### 1.4 - The Bcl-2 story  
+**Somatic mutation**   
+ 
+**Germ line mutation**  
+  
+**Follicular lymphoma**  
+
+**immunoglobulin (Ig)**   
+
+- "Synthesized exclusively by B cells, antibodies are produced in billions of forms, each with a different amino acid sequence and a different antigen-binding site. Collectively called immunoglobulins (abbreviated as Ig), they are among the most abundant protein components in the blood, constituting about 20% of the total protein in plasma by weight."  
+
+- "The basic structural unit of an antibody molecule consists of four polypeptide chains, two identical light (L) chains (each containing about 220 amino acids) and two identical heavy (H) chains (each usually containing about 440 amino acids)."  
+Reference [B Cells and Antibodies](http://www.ncbi.nlm.nih.gov/books/NBK26884/) Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002.
+ 
+  
+**Gene (locus)**  
+- A gene encodes information to make one (or more than one) protein at the right time and place.  The components of a gene consists of the transcription unit, a promoter, and Cis-acting regulatory regions   
+
+**Transcription unit**  
+
+- The transcription unit consist of a segment of DNA that contains exons, introns, and UTRs (Untranslated regions) 
+
+- There is a tremendous amount of detail that underlies this process, here are a couple of brief excerpts from Molecular Biology of the Cell. 4th edition. which is available online. 
+ 
+- "Each transcribed segment of DNA is called a transcription unit. In eucaryotes, a transcription unit typically carries the information of just one gene, and therefore codes for either a single RNA molecule or a single protein ..."
+
+- "In eucaryotic cells the RNA molecule produced by transcription alone (sometimes referred to as the primary transcript) would contain both coding (exon) and noncoding (intron) sequences. Before it can be translated into protein, the two ends of the RNA are modified, the introns are removed by an enzymatically catalyzed RNA splicing reaction, and the resulting mRNA is transported from the nucleus to the cytoplasm. " 
+from Figure 6-21 Summary of the steps leading from gene to protein in eucaryotes and bacteria of reference
+
+- Reference is [From DNA to RNA](http://www.ncbi.nlm.nih.gov/books/NBK26887/) from
+Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. 
+ 
+**Promoter**    
+
+- This is the DNA site where the enzyme RNA polymerase docks to start transcription. Often located just before the start of the transcription unit. For more detail, see Figure 6-8 DNA is transcribed by the enzyme RNA polymerase of [From DNA to RNA](http://www.ncbi.nlm.nih.gov/books/NBK26887/) Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. 
+
+**Cis-acting regulatory regions** 
+  
+- These are protein that bind to DNA to provide control functions that regulate gene expression.
+- Enhancers are sites where proteins can bind to activate enzymatic machinery that causes transcription. 
+- Silencers are sites where proteins can bind to block enzymatic machinery that causes transcription.  
+- These sites can be located far away from the transcription unit both before (5' or upstream) or after (3' or downstream) of the transcription unit. In addition, they can be located within the transcription unit. 
+- Enhancers and silencers determine at what time and in what cells transcription takes place. This is the expression pattern of the gene.
+
+- A reference is [How Genetic Switches Work](http://www.ncbi.nlm.nih.gov/books/NBK26872/) from Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002.   
+
+**Chromosomal translocation**    
+
+**Bcl-2**  
+Protein that blocks apoptosis (anti-apoptotic activity)
+
+
+**gain-of-function mutation**  
+
+- "Such mutations may confer a novel activity on a particular protein, or they may cause a protein with normal activity to be expressed at an inappropriate time or in the wrong tissue in an animal. Regardless of the mechanism, gain-of-function mutations can produce a new phenotype in a cell, tissue, or organism. Often, gain-of-function mutants are generated by expressing a gene at a much higher level than normal in cells."  
+Reference: [Gain-of-Function Mutations Provide Clues to the Role Genes Play in a Cell or Organism](http://www.ncbi.nlm.nih.gov/books/NBK26818/#A1644) from Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002.
+
+**Proto-oncogene and Oncogene**  
+- An oncogene is a gene which when overexpressed or hyperactivated causes tumorigenesis. (lecture)  
+- "Cancer-critical genes are grouped into two broad classes, according to whether the cancer risk arises from too much activity of the gene product, or too little. Genes of the first class, for which a gain-of-function mutation drives a cell toward cancer, are called proto-oncogenes; their mutant, overactive forms are called oncogenes. Genes of the second class, for which a loss-of-function mutation creates the danger, are called tumor suppressor genes."  
+Reference: [Finding the Cancer-Critical Genes](http://www.ncbi.nlm.nih.gov/books/NBK26816/) from Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002.
+
+### 1.5 - Bax and Bad  
+
+**Mitochondria**  
+
+- Mitochondria are divided into the matrix, inner membrane, the intermembrane space and the outer membrane. See Figure 14-8 The general organization of a mitochondrion. Mitochondria convert energy to generate ATP, store calcium ions, synthesize iron-sulfur clusters, act as a hub for cellular signaling and regulate metabolism.  
+Reference: [The Mitochondrion](http://www.ncbi.nlm.nih.gov/books/NBK26894/) from Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. 
+
+**Co-immunoprecipitations**  
+
+- method is used to isolate protein of interest along with any other protein that binds or interacts with it.
+
+- "Perhaps the simplest method for identifying proteins that bind to one another tightly is co-immunoprecipitation. In this case, an antibody is used to recognize a specific target protein; affinity reagents that bind to the antibody and are coupled to a solid matrix are then used to drag the complex out of solution to the bottom of a test tube. If this protein is associated tightly enough with another protein when it is captured by the antibody, the partner precipitates as well. This method is useful for identifying proteins that are part of a complex inside cells, including those that interact only transiently—for example when cells are stimulated by signal molecules."  
+Reference: [Affinity Chromatography and Immunoprecipitation Allow Identification of Associated Proteins](http://www.ncbi.nlm.nih.gov/books/NBK26820/#A1608) from Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002.
+
+**polyacrylamide-gel electrophoresis**  
+
+- "Proteins usually possess a net positive or negative charge, depending on the mixture of charged amino acids they contain. When an electric field is applied to a solution containing a protein molecule, the protein migrates at a rate that depends on its net charge and on its size and shape. "
+
+- "SDS polyacrylamide-gel electrophoresis is a more powerful procedure than any previous method of protein analysis principally because it can be used to separate all types of proteins, including those that are insoluble in water."  
+Reference: [The Size and Subunit Composition of a Protein Can Be Determined by SDS Polyacrylamide-Gel Electrophoresis](http://www.ncbi.nlm.nih.gov/books/NBK26936/#A1537) from Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002.
+  
+**Bax**  
+
+**Pro-apoptotic**  
+
+**Anti-apoptotic**  
+
+**Transcriptional activator**  
+
+- A protein that binds to a cis-regulatory enhancer to activate the RNA machinery that enable transcription. Often divided into two parts; which can be separated:
+
+- DNA-binding domain - binds to enhancer DNA
+
+- activation domain - communicates with general RNA machinery
+
+**Yeast two-hybrid system**  
+
+- "uses a reporter gene to detect the physical interaction of a pair of proteins inside a yeast cell nucleus. This system has been designed so that when a target protein binds to another protein in the cell, their interaction brings together two halves of a transcriptional activator, which is then able to switch on the expression of the reporter gene."  
+Reference: [Protein-Protein Interactions Can Be Identified by Use of the Two-Hybrid System](http://www.ncbi.nlm.nih.gov/books/NBK26820/#A1609) from Alberts B, Johnson A, Lewis J, et al. Molecular Biology of the Cell. 4th edition. New York: Garland Science; 2002. 
+
+ 
+ 
+**Bad**  
+
+### 1.6 - The Bcl-2 superfamily  
+
+**Bcl-2 superfamily**  
+**Sensors (in the context of Bcl-2 superfamily)**  
+**Guardians (in the context of Bcl-2 superfamily)**  
+**Effectors (in the context of Bcl-2 superfamily)**  
+**Redundancy**
+
+
+## References
+[Kerr, Wylie, and Currie 1972](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2008650/) (Lecture 1.3)  
+Kerr JF, Wyllie AH, Currie AR. Apoptosis: a basic biological phenomenon with wide-ranging implications in tissue kinetics. Br J Cancer. 1972 Aug;26(4):239-57. Review. PubMed PMID: 4561027; PubMed Central PMCID: PMC2008650.  
+  
+[Henson et. al. 1992 PubMed Abstract](http://www.ncbi.nlm.nih.gov/pubmed/1545126)  (Lecture 1.3) no open source paper available  
+  
+Fadok VA, Voelker DR, Campbell PA, Cohen JJ, Bratton DL, Henson PM. Exposure of phosphatidylserine on the surface of apoptotic lymphocytes triggers specific recognition and removal by macrophages. J Immunol. 1992 Apr 1;148(7):2207-16.
+PubMed PMID: 1545126.  
+  
+[Vaux, Cory and Adams 1988 PubMed Abstract](http://www.ncbi.nlm.nih.gov/pubmed/3262202)  (Lecture 1.4b) no open source paper available  
+Vaux DL, Cory S, Adams JM. Bcl-2 gene promotes haemopoietic cell survival and cooperates with c-myc to immortalize pre-B cells. Nature. 1988 Sep
+29;335(6189):440-2. PubMed PMID: 3262202.  
+  
+[Oltvai, Z.N. et al. (1993)](http://biochem3c03.wikispaces.com/file/view/paper.pdf)  (Lecture 1.5)  
+Oltvai ZN, Milliman CL, Korsmeyer SJ. Bcl-2 heterodimerizes in vivo with a conserved homolog, Bax, that accelerates programmed cell death. Cell. 1993 Aug 27;74(4):609-19. PubMed PMID: 8358790.  
+  
+[Korsmeyer SJ.et al Cell 1995](http://www.ncbi.nlm.nih.gov/pubmed/7834748)  (Lecture 1.4b) Link to Cell Press provided paper  
+Yang E, Zha J, Jockel J, Boise LH, Thompson CB, Korsmeyer SJ. Bad, a heterodimeric partner for Bcl-XL and Bcl-2, displaces Bax and promotes cell death. Cell. 1995 Jan 27;80(2):285-91. PubMed PMID: 7834748.  
+  
+# Categories

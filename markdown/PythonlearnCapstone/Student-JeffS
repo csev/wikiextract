@@ -1,0 +1,32 @@
+## Introduction
+
+My project will use the AddHealth data set to explore the impact of "religiousity" (the degree to which religion is important to an individual) on a teenager's motivation/attitude toward, and/or engagement in, sexual activity.
+
+## Data Set Description
+
+*Required disclaimer:*
+>This research uses data from Add Health, a program project directed by Kathleen Mullan Harris and designed by J. Richard Udry, Peter S. Bearman, and Kathleen Mullan Harris at the University of North Carolina at Chapel Hill, and funded by grant P01-HD31921 from the Eunice Kennedy Shriver National Institute of Child Health and Human Development, with cooperative funding from 23 other federal agencies and foundations. Special acknowledgment is due Ronald R. Rindfuss and Barbara Entwisle for assistance in the original design. Information on how to obtain the Add Health data files is available on the Add Health website (http://www.cpc.unc.edu/addhealth). No direct support was received from grant P01-HD31921 for this analysis. 
+
+Add Health (or AddHealth) is a short name for the National Longitudinal Study of Adolescent to Adult Health; a longitudinal study of a nationally representative sample of 12,105 adolescents in grades 7-12 from 80 high schools and 52 middle schools in the United States during the 1994-95 school year. Add Health combines survey data on respondents’ social, economic, psychological and physical well-being with contextual data on the family, neighborhood, community, school, friendships, peer groups, and romantic relationships. It was developed as a result of a U.S. congressional mandate to study adolescent health, especially to identify the forces that may influence adolescents’ health and risk behaviors.
+
+The high schools and middle schools from which the respondents were drawn were selected with unequal probability of selection. Systematic sampling methods and implicit stratification into the Add Health study design ensured this sample is representative of U.S. schools with respect to region of country, urbanicity, school size, school type, and ethnicity.
+
+The study procedure consisted of a self-administered, in-school questionnaire and a follow-up in-home interview. The in-school questionnaire was given to 90,000+ students in grades 7 through 12 between September 1994 and April 1995. Based on school, gender, and grade, the final representative study sample was selected for the in-home interview. These interviews were conducted between April and December 1995.
+
+The Add Health data is organized into 41 sections covering various survey topics and augmented by interviewer notes. Section 17 “Motivations to Engage in Risky Behavior” contains questions measuring a respondents feelings/attitude toward sexual activity. Section 24 “Contraception” contains questions regarding sexual activity, use of contraception, and sexually transmitted diseases. Section 37 “Religion” contains questions regarding religious preference, activities, and perceived importance. All of the data is coded as discrete numeric values covering simple yes/no responses, degree responses (”strongly agree”, “agree”, etc.), and skipped/not applicable conditions.
+
+Although additional follow-up investigations (Waves II thru V) have been conducted with the original study respondents, the specific data sample for this analysis/report will use only Wave I of the study, which is the original data collected in 1994/1995. Additionally, the original study sample population will be subset to those unmarried respondents age 15 and older at the time, resulting in 4,428 observations (2,210 male, 2,218 female) for this analysis. This is necessary because the sexual activity related questions that are key to this analysis were only posed to this particular subset of the survey population.
+
+**NOTE:** All information about the Add Health study was obtained from - and is used with permission of - the [Add Health study web site](http://www.cpc.unc.edu/projects/addhealth).
+
+## Analysis Options
+
+The intended analysis will attempt to provide answers to any or all of the following questions:
+
+* Does the stated importance of religion to an individual correlate with their motivation/attitude toward sexual activity?
+* Do the importance of religion and stated religious activity pair to make a stronger correlation?
+* Do either of the above correlate to sexual activity?
+* Is either factor a moderator of the other regarding motivation or sexual activity?
+* Does motivation/attitude toward sexual activity correlate to actual sexual activity?
+* Is motivation/attitude a moderating factor to religion, or vice versa?
+* Is gender a moderating factor in any correlation?

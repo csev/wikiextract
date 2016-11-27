@@ -1,0 +1,67 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Programdesign:Win32RacketDownload</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Downloading_Racket_for_Windows_.28x86.2C_32-bit.29">Downloading Racket for Windows (x86, 32-bit)</span></h1>
+<p><a href="/wiki/index.php/Programdesign:InstallingRacket" title="Programdesign:InstallingRacket"> Finding the download</a> for a Windows x86 desktop platform is the same as for the x64 platform.</p>
+<p>The Windows (x86, 32-bit) platform is selected.</p>
+<p><center>
+<p><a href="/wiki/images/0/09/Racket-5.3.6-2013-09-05-1152-x86-download.png" class="image"><img alt="Racket-5.3.6-2013-09-05-1152-x86-download.png" src="/wiki/images/0/09/Racket-5.3.6-2013-09-05-1152-x86-download.png" width="404" height="258" /></a>
+</p>
+</center></p>
+<p>The request to select a download site confirms the selection.</p>
+<p><center>
+<p><a href="/wiki/images/5/5d/Racket-5.3.6-2013-09-05-1153-x86-download.png" class="image"><img alt="Racket-5.3.6-2013-09-05-1153-x86-download.png" src="/wiki/images/5/5d/Racket-5.3.6-2013-09-05-1153-x86-download.png" width="678" height="261" /></a>
+</p>
+</center></p>
+<p>On selecting the download site, the download process is ready to start.  </p>
+<p>On Windows 7 and Windows 8, the download proceeds the same as for the x64 download.</p>
+<p>Here, the illustration is with Microsoft Internet Explorer 8 on Windows XP SP3.  The download initiation is different from that with more-recent versions of Internet Explorer.</p>
+<p><center>
+<p><b>TO BE CONTINUED</b>
+</p>
+</center></p>
+<p><center>
+<p><a href="/wiki/images/d/d0/Racket-5.3.6-2013-09-05-1155-x86-download.png" class="image"><img alt="Racket-5.3.6-2013-09-05-1155-x86-download.png" src="/wiki/images/d/d0/Racket-5.3.6-2013-09-05-1155-x86-download.png" width="428" height="340" /></a>
+</p>
+</center></p>
+<p>It is recommended that the file be saved.  This allows installation when off-line.  It is useful if the installation needs to be repeated, put on more than one machine, etc.  It is important to notice where it is going to be stored.  Not running the file immediately is also better as a security precaution.</p>
+<p><center>
+<p><a href="/wiki/images/6/66/Racket-5.3.6-2013-09-05-1207-x86-download.png" class="image"><img alt="Racket-5.3.6-2013-09-05-1207-x86-download.png" src="/wiki/images/6/66/Racket-5.3.6-2013-09-05-1207-x86-download.png" width="563" height="419" /></a>
+</p>
+</center></p>
+<p>On Windows XP, the Downloads folder is inside the My Documents folder.  Double-clicking the Downloads folder in the Save As dialog will open it for saving the new download.</p>
+<p><center>
+<p><a href="/wiki/images/9/94/Racket-5.3.6-2013-09-05-1208-x86-download.png" class="image"><img alt="Racket-5.3.6-2013-09-05-1208-x86-download.png" src="/wiki/images/9/94/Racket-5.3.6-2013-09-05-1208-x86-download.png" width="563" height="419" /></a>
+</p>
+</center></p>
+<p>The download of Racket for Windows (x86, 32-bit) can then be saved into the Downloads folder.</p>
+<p>The download will then proceed.  When it is completed, there will be a security check and confirmation of successful download.</p>
+<p><center>
+<p><a href="/wiki/images/7/75/Racket-5.3.6-2013-09-05-1209-x86-download.png" class="image"><img alt="Racket-5.3.6-2013-09-05-1209-x86-download.png" src="/wiki/images/7/75/Racket-5.3.6-2013-09-05-1209-x86-download.png" width="419" height="335" /></a>
+</p>
+</center></p>
+<p>Now that there is a downloaded copy, there is still the option to begin the installation at once.</p>
+<p>And, if not, it can be installed later, even when the computer is off-line from the Internet.  Some prefer to verify the security of the download and perform the installation off-line.</p>
+<p><center>
+<p><b>TO BE CONTINUED</b>
+</p>
+</center></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Programdesign:Win32RacketDownload&amp;oldid=16128">https://share.coursera.org/wiki/index.php?title=Programdesign:Win32RacketDownload&amp;oldid=16128</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

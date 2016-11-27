@@ -1,0 +1,66 @@
+Data Analysis, Week 2, Lecture 6 Data Resources  
+
+* This is going to be a very brief video about data resources. Many of you who are taking the class already have some data that you have in your hands that you'd like to be able to analyze, but it's a good idea always to have in the back of your mind other data sets that you might be able to use or be able to access that can be useful for you and either practicing your data analysis or to integrate with your own resources.  
+
+**Open Government Data (U.S.)**  
+
+* So, the first thing to keep in mind is that many governments including the government of the United States have decided to put a lot of the data about the, the workings of the civic organization affiliated with the Government online.  
+
+* So, this is the, example for the United States. It's called [data.gov]( http://www.data.gov/). And, there are a bunch of data sites that you can get from this, website. You can also access their data through APIs, so that you can build tools that are based on open government data.  
+
+**Open Government Data (France)**  
+
+* Similarly, other governments have other, have equivalent data resources. So for example, this is the equivalent to data.gov, but from [France]( http://www.data.gouv.fr/). And so they have again a large number of government related data sets that are available for download, and, and, and analysis.   
+
+**Open Government Data (UK)**  
+
+* And there's another data.gov for the [United Kingdom]( http://data.gov.uk/). And it's currently in the works for the entire European Union to have a data portal that will allow you to access all the data for, the European Union, at least that's my understanding. You should also take a look at the, course wiki, where we actually have an [ongoing thread about all sorts of available open data sets](https://share.coursera.org/wiki/index.php/Dataanalysis:Main#Online_Data_Sources).  
+
+**Gapminder**  
+
+* Another really exciting data set is the [Gapminder]( http://www.gapminder.org/) data set. This is put together by the folks who support [Hans Rosling]( http://en.wikipedia.org/wiki/Hans_Rosling), who is one of the more famous statisticians. You may have seen him in his very enthusiastic and exciting TED talks.  
+
+* They've actually put together a lot of data. These are I would say that they are data about the world in particular about public health and global health. And are very useful data for exploring those, such a trend if that's something that's interesting to you. They're also very easily accessible, and can be downloaded and analyzed locally, as well as using the software that they've created for visualizing data on the web.  
+
+**More open government data (possibly overlapping)**  
+
+* There’s also a lot of other open government data, so here I've linked to three other places where people have tried to sort of come together and bring out collections of open government data. So there's a catalog here this is a civic commons list. This would, I think, one is the most comprehensive that I've seen, of governments, both local, state in the United States, and federal information when we've done on our blog another sort of lists of open data. I think there are a few that we've caught that other people haven't seen.  
+
+* To be fair this is sort of, an area in flux and so it's, as more and more governments put their data online eventually they'll easily be consolidated all in one place but that's sort of just starting now. You an also check out, like I said, of course Wiki where people are already, sort of, contributing data set including open government data sets  
+
+**Survey data from the United States**  
+
+* This is a really nice [website](http://www.asdfree.com/) that's put together by the same individual who does the tutorials for R. So he's actually put together R scripts that allow you to analyze several of the largest survey data sets that are available from the United States. So things like the American Community survey or {In Haynes???}. And so he actually has all these data along with R scripts for collecting and processing those data available. It's, it's very nice, so that's another place to collect some data if you need some for analysis.  
+
+**Infochimps Marketplace** 
+
+* Then there's the [Infochimps Marketplace]( http://www.infochimps.com/marketplace), so Infochimps is actually a company and they offer sort of a platform for data analytics. But they also have a marketplace where they've collected a bunch of datasets that you can use for analysis and they include datasets that are sort of geotagged, they have datasets about businesses and locations, and they have information about sort of facilities, and schools, and communities, and so forth. Some of these data are free and so that you can access them, directly. Some you can access through an API either free or for a cost and some of the data set you actually have to pay for; I mean they are a company and so they're trying to make money. So you should pay attention to which data set you're trying to access and they'll of course, let you know before they charge you.  
+
+**Kaggle**  
+
+* Another example of a place that you can get data is [Kaggle]( http://www.kaggle.com/) contests. So Kaggle is a company that hosts data science or predictive analytics competitions and many of these competitions have datasets that you can download and analyze and try to discover an instruction. You can also participate in the competitions themselves or you can just sign up for an account just to download the data. Either way there's a lot of really cool projects and really cool data that are there available through Kaggle.  
+
+**More specialized collections**  
+
+* There's also some more specialized collections of data sets that might be useful for people. So these are sort of, I would say aggregators of data sets.  
+
+* So the first is [Hilary Mason's research quality data aggregator](http://bitly.com/bundles/hmason/1). She has collected a bunch of really interesting datasets. I would say they are very diverse, and include some of the other datasets I list here below.  
+
+* The [Stanford Large Network Data](http://snap.stanford.edu/data/) collection has a bunch of datasets on networks.  
+
+* The [UCI Machine Learning](http://archive.ics.uci.edu/ml/) data set collection has datasets that might be useful for practicing prediction type problems, similar, sort of, to the KDD Nuggets Datasets although, that also has a relatively large group of datasets. 
+
+* Finally there is the CMU Statlib, Gene expression omnibus and ArXiv datasets. The Statlib datasets are datasets used for illustrating particular statistical methods, Gene expression omnibus are datasets that are specific to Gene expression analysis. And then, ArXiv Data is data about the papers that have been published in this database called ArXiv, and it's a huge amount of data that you can access about all of those papers, including the full text of those papers, if you are able to access them.  
+
+**Some APIs**  
+
+* You can also access data through APIs. So I'm just going to give you a couple of examples. And I've picked these examples because I know about the R packages for these API's.  
+
+* So, for example, if you click on this link, you'll go to the twitter API, which allows you to interact with and download and use twitter Data. And there's a corresponding [twitter]( http://cran.r-project.org/web/packages/twitteR/index.html) package with the capital R here at the end that allows you to access that API and download some data and do some analyzes with it.  
+* Similarly figshare is an open science initiative that allows you to put data sets online and share them and sight them. And there's a nice R package [rfigshare](http://cran.r-project.org/web/packages/rfigshare/index.html) that allows you to access the API for the figshare. And you can download the data and interact with them as well.  
+
+* The Public Library of Science is a journal. Well, it's more than a journal. It's sort of an organization that is dedicated to publishing scientific papers in a way that they're free to access. And you can access a bunch of information about those papers using the [rplos](http://cran.r-project.org/web/packages/rplos/rplos.pdf)  package in R.  
+
+* Finally, if you go to [rOpenSci](http://ropensci.org/packages/index.html) this is a, a collection of packages of which the rfigshare package and I think the rplos package are both components of rOpenSci. And these are a bunch of R packages that allow you to access all sorts of scientific data that is free and available on the web.  
+
+* So that's like I said just a quick tour of some of the places you can get data if you don't have some already. There are obviously way more examples than I could possibly talk about here. And like I said on the [course Wiki]( https://share.coursera.org/wiki/index.php/Dataanalysis:Main#Online_Data_Sources) we've already started a collection that's much, much larger than this, set of data resources that I've talked about here. So if you want to learn more about where you can get data, you can check that out.

@@ -1,0 +1,312 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Inforiskman:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Information_Security_and_Risk_Management_in_Context"><span class="tocnumber">1</span> <span class="toctext">Information Security and Risk Management in Context</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Barbara_Endicott-Popovsky.2C_Ph.D..2C_Director_of_the_Center_for_Information_Assurance_and_Cybersecurity"><span class="tocnumber">1.1</span> <span class="toctext">Barbara Endicott-Popovsky, Ph.D., Director of the Center for Information Assurance and Cybersecurity</span></a>
+<ul>
+<li class="toclevel-3"><a href="#University_of_Washington_Institute_of_Technology"><span class="tocnumber">1.1.1</span> <span class="toctext">University of Washington Institute of Technology</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Course_Outline"><span class="tocnumber">1.2</span> <span class="toctext">Course Outline</span></a></li>
+<li class="toclevel-2"><a href="#Implications_of_Information_Assurance_and_GRC_from_real_CISO.27s"><span class="tocnumber">1.3</span> <span class="toctext">Implications of Information Assurance and GRC from real CISO's</span></a></li>
+<li class="toclevel-2"><a href="#Definitions_and_the_roles_within_GRC"><span class="tocnumber">1.4</span> <span class="toctext">Definitions and the roles within GRC</span></a></li>
+<li class="toclevel-2"><a href="#Laws.2C_Regulations.2C_and_Policy-making"><span class="tocnumber">1.5</span> <span class="toctext">Laws, Regulations, and Policy-making</span></a></li>
+<li class="toclevel-2"><a href="#IA_Draft_Planning"><span class="tocnumber">1.6</span> <span class="toctext">IA Draft Planning</span></a></li>
+<li class="toclevel-2"><a href="#Technologies_and_Vulnerabilities"><span class="tocnumber">1.7</span> <span class="toctext">Technologies and Vulnerabilities</span></a></li>
+<li class="toclevel-2"><a href="#Human_Factors_and_Security_Awareness"><span class="tocnumber">1.8</span> <span class="toctext">Human Factors and Security Awareness</span></a></li>
+<li class="toclevel-2"><a href="#Risks_and_Business_Continuity_Planning"><span class="tocnumber">1.9</span> <span class="toctext">Risks and Business Continuity Planning</span></a></li>
+<li class="toclevel-2"><a href="#Auditing.2C_Compliance.2C_and_Monitoring"><span class="tocnumber">1.10</span> <span class="toctext">Auditing, Compliance, and Monitoring</span></a></li>
+<li class="toclevel-2"><a href="#Reporting_and_Public_Relations"><span class="tocnumber">1.11</span> <span class="toctext">Reporting and Public Relations</span></a></li>
+<li class="toclevel-2"><a href="#Social_Media_in_Security_Dynamics"><span class="tocnumber">1.12</span> <span class="toctext">Social Media in Security Dynamics</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Information_Security_and_Risk_Management_in_Context">Information Security and Risk Management in Context</span></h1>
+<h4> <span class="mw-headline" id="Barbara_Endicott-Popovsky.2C_Ph.D..2C_Director_of_the_Center_for_Information_Assurance_and_Cybersecurity">Barbara Endicott-Popovsky, Ph.D., Director of the Center for Information Assurance and Cybersecurity</span></h4>
+<h5> <span class="mw-headline" id="University_of_Washington_Institute_of_Technology">University of Washington Institute of Technology</span></h5>
+<h2> <span class="mw-headline" id="Course_Outline">Course Outline</span></h2>
+<ol>
+<li>Implications of Information Assurance and GRC from real CISO's</li>
+<li>Definitions and the roles within GRC</li>
+<li>Laws, Regulations, and Policy-making</li>
+<li>IA Draft Planning</li>
+<li>Technologies and Vulnerabilities </li>
+<li>Human Factors and Security Awareness</li>
+<li>Risks and Business Continuity Planning</li>
+<li>Auditing, Compliance, and Monitoring</li>
+<li>Reporting and Public Relations</li>
+<li>Social Media in Security Dynamics</li>
+</ol>
+<h2> <span class="mw-headline" id="Implications_of_Information_Assurance_and_GRC_from_real_CISO.27s">Implications of Information Assurance and GRC from real CISO's</span></h2>
+<p>Ernie Hayden, CISO of Port Seattle and Kirk Bailey, CISO of University of Washington</p>
+<p>Landscape of Infosec:
+<ul><li>Technical Security - firewalls, network architecture
+</li><li>Information Security - Risk Management, Business Continuity/Disaster Recovery 
+</li><li>Strategic Security - Cybersecurity, Natural Disasters
+</li><li>Remember: 1 out of 25 people are Sociopaths, Internet is perfect medium for sociopaths
+</li><li>Trusted relationships are critical</p>
+</li></ul>
+
+<p>Key Skills of the CISO:<br />
+<ul><li>READ!  Lots of diverse sources of current and rapidly changing security developments
+</li><li>Prioritize:  Must respond quickly and communicate efficiently
+<ul><li>Contract Reviews
+</li><li>Spam Complaints
+</li><li>Forensic response to breach
+</li><li>Employee Safety -- <b>#1 due to PR and Liability</b> 
+</li><li>Credit Card Processing System
+</li><li>Email Service Interruptions</p>
+</li></ul>
+</li></ul>
+
+<p>"The CISO of the future is the one who can run the risk-management organization" - Paul Proctor</p>
+<p>Jobs in Information Security 
+<ul><li> Roles
+<ul><li> Practitioners
+</li><li> Auditors
+</li><li> Security Project Manager
+</li><li> Application Security Specialist
+</li><li> Consultant
+</li><li> Vendor/Entrepreneur
+</li><li> Sales/Sales Engineer
+</li><li> Executive</p>
+</li></ul>
+</li></ul>
+
+<p>Education
+<ul><li> Certifications: CISSP, CISM, CISA, GIAC, CEH
+</li><li> Experience: Internships, Apprenticeships, Entry-level jobs, Public Service</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Definitions_and_the_roles_within_GRC">Definitions and the roles within GRC</span></h2>
+<p>From "Unintended Consequences: Digital Evidence in Our Legal System"</p>
+<p>M = f[P*v – (c1 + c2)]
+<ul><li>M is online criminal activity motivation
+</li><li>P is the probability of not failing to successfully commit an online crime
+</li><li>v is the value of success to the perpetrator
+</li><li>c1 is the cost to the perpetrator
+</li><li>c2 is the consequences to the perpetrator.</p>
+</li></ul>
+
+<p>GRC = Governance, Risk Management, and Compliance</p>
+<p>McCumber Cube:  A Framework for IA professionals to comprehensively evaluate an IT system's security </p>
+<p>*Information States - 
+<ul><li><ul><li>Storage
+</li><li>Processing
+</li><li>Transmission</p>
+</li></ul>
+</li></ul>
+
+<p>*Security Services or "the CIA" - 
+<ul><li><ul><li>Confidentiality - who can see data?
+</li><li>Integrity - How do we verify changes?
+</li><li>Availability - Can information be accessed when needed.
+</li><li>Authentication - verification of ID
+</li><li>Non-repudiation - you are who you say you are </p>
+</li></ul>
+</li></ul>
+
+<p>*Security Countermeasures/Controls - Mapped to the inner part our conceptual framework of NFR
+<ul><li><ul><li>Human Factors
+</li><li>Policies/Practices
+</li><li>Technology</p>
+</li></ul>
+</li></ul>
+
+<p>From Agricultural Age to Industrial Age to Information Age
+<ul><li> World is dominated by the Internet and our interactions through the web.<br />
+</li><li> Wealth was defined by Land ownership --&gt; Capital --&gt; Now it is based on knowledge. 
+</li><li> Time was the sun/seasons --&gt; Factory whistle --&gt; Conceptualized as time zones and communication exchange factors
+</li><li> Workplace was the farm --&gt; Capital equipment --&gt; Now, it is networks
+</li><li> Knowledge was generalized --&gt; specialized --&gt; now it is interdisciplinary and fluid
+</li><li> See slide for more</p>
+</li></ul>
+
+<p>Our new direction begins with smashing the Industrial Age Infrastructure.  </p>
+<p>The Sociopath Next Door by Stout, M. - "1 in 25 people are sociopathic"
+Dan Geer - "In the world of networked computers every sociopath is your neighbor"</p>
+<p>Threat Spectrum is growing. 
+<ul><li> Local Threats to Organizational/Shared Threats to National Security.<br />
+</li><li> Example, Russia's invasion of Georgia.<br />
+</li><li> Fundamentally, we must protect critical infrastructure.</p>
+</li></ul>
+
+<p>Cybercrime is a $105 Billion industry.</p>
+<p>Consequences:
+<ul><li> Student fines for illegal downloads
+</li><li> Outsourcing is becoming a network security
+</li><li> Amero case - poor digital forensic knowledge in the courts leads to a false conviction of an innocent bystander
+</li><li> Interdependence of Critical Infrastructure</p>
+</li></ul>
+
+<p>Security and Privacy - Two sides of the same coin
+<ul><li> Security Revolution - Computers --&gt; Infosec --&gt; Information Assurance
+</li><li> Castle Approach:: Firewalls = perimeter, Layers of Walls = AV, Intrusion Detection, IPS
+</li><li> Assumption of breach
+</li><li> Poor Assumptions:
+<ul><li> Design will implements your goals
+</li><li> The sum total of control will implement ALL goals
+</li><li> Implementation is correct
+</li><li> Systems are are correctly installed AND maintained</p>
+</li></ul>
+</li></ul>
+
+<p>Individual Strategy: 
+<ul><li> Awareness
+</li><li> Layered Defense at home - tools, patches, and upgrades
+</li><li> Social media privacy options
+</li><li> Data storage control must be deliberate
+</li><li> Think like a "bad guy!"
+</li><li> Limit child's access/Kid Nation - More prone to Blind trust, Cyberbullying, disrespect of privacy</p>
+</li></ul>
+
+<p>How to grow expertise?
+<ul><li> "OJT" vs Certifications vs Education/Academia
+</li><li> NSA/DHS NIETP Program
+</li><li> Cybercorps Education - map of programs</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Laws.2C_Regulations.2C_and_Policy-making">Laws, Regulations, and Policy-making</span></h2>
+<p><u>Governance, Risk Management, and Compliance</u></p>
+<p>Governance Framework is not a revolution, its an evolution
+<ul><li> Difficult, cumbersome, not fully mature, fragmented with risk information, poorly defined
+</li><li> Solution: Keep flexible, articulate roles and functions of stakeholders, supports compliance, scalable, and integrated
+</li><li> Example: Microsoft - has evolved in order to reflect "decision making posture"
+</li><li> Risk management is about planning and predicting the future
+</li><li> ISO 31000 - risk assessment process
+<ul><li> Scoping &amp; Planning
+</li><li> Risk ID: keep an eye on the ball, listen and look, logical risk buckets/ missing key aspects  (E.g. New Orleans in Katrina- good plan, NEVER used)
+</li><li> Risk Analysis: analyze bottom-up AND top-down, document / Poor consistancy, limited methods/views, Risk assessment too late
+</li><li> Risk Evaluation:  Optimizing risk and tactics, /scope is inadequate, NO accountability, Lack of Funding, Failure to account human element
+</li><li> Control &amp; Compliance - Preventative controls - process/human capital /poor design and resource allocation (i.e. firewalls); Detective controls - (i.e. - intrusion detection)</p>
+</li></ul>
+</li></ul>
+
+<p>Incident Response</p>
+<ul>
+<li>Old cases - NZ Hacker (DoS attack script kiddie) and Russian Hacker (automated card scheme)</li>
+<li>Network Defense Strategy ==&gt; Network Forensic Readiness (NFR)</li>
+<li>NFRDLC (Development Life Cycle)</li>
+</ul>
+<p>Compliance Management: Policy Management</p>
+<p>Legal System:  Common Law vs Code Law vs Religious Law
+<ul><li> Rule of Law Indicator - government rankings of countries, decreases risk in business</p>
+</li></ul>
+
+<p>Policy - form of business communication
+<ul><li> Guiding principle for decisions
+</li><li> Manages expectations
+</li><li> Foundation in Infosec</p>
+</li></ul>
+
+<p>Good Policy -
+<ul><li> Clear
+</li><li> Describe and explain
+</li><li> Basis for rules/procedures
+</li><li> Flexible and reevaluated
+</li><li> Tips: clear, concise, simple language.  "Must" vs "Should"</p>
+</li></ul>
+
+<p>Policy Template
+<ul><li> Title and Date
+</li><li> Rationale/Purpose
+</li><li> Scope
+</li><li> Policy Statement
+</li><li> Roles and Responsibility
+</li><li> Implementation
+</li><li> Evaluation and review
+</li><li> Definitions
+</li><li> References
+</li><li> Ratified and dated</p>
+</li></ul>
+
+<p>Policy Lifecycle - Write --&gt; Communicate --&gt; Monitor --&gt; Modify</p>
+<p>Digital Forensics
+<ul><li> Incedent response - response to an intrusion, can be costly
+</li><li> Old method: 3R's of Accountable Systems = Resistance (e.g Firewalls), Recognition (e..g IDS, integrity checks), Recovery (e..g backup, replication) ==&gt; Defense only
+</li><li> New Method: Redress - Computer Forensics, Legal remedies, active defense ==&gt; Offense
+</li><li> Price of all defense, no offense = no points and invites attack
+</li><li> The State of the Target &lt;==&gt; THe State of Malicious Intruder Capabilities
+</li><li> A problem of escalation of cyberwarfar i.e. As the target grows capabilities, so does the malicious intruder
+</li><li> Espionage, Patents/Trade Secrets, Malware, and ID Theft are BIG business:  Well-financed, organized
+</li><li> Attacks: Vulnerabilities are increasing Network --&gt; OS --&gt; Applications
+</li><li> Difficult to originate attacks, but (see graph) we do have info on international distribution
+</li><li> Modern Malware Trends:  Evasive (e..g rootkits), Self-Defense, Multi-channelled, Flexible, High-Quality Software (Rapid improvent)
+</li><li> Re-imaging &gt; Cleaning: due to persistence of malware</p>
+</li></ul>
+
+<p><u>"Elements of Good Policy" by Michael Simon, CTO, Creation Logic  </u></p>
+<p>Introduction to Policy
+<ul><li> Policy: Unambiguous guiding principle(E.g. Do not share employee data) 
+</li><li> Standard: Specific and required methods/data/processes to direct overall implementation of policy
+</li><li> Guidelines: NON-mandatory principles of guidance
+</li><li> Procedures:  Specific process that implements policy (e.g. directions on how to place laptop in car)
+</li></ul>
+<ol>
+<li> Should reflect business requirements, should be drive by&#160;???? (couldn't hear)
+<li> Enable productivity through access to resources
+<li> Clear and concise
+<li> Compliance should be measurable - Complexity and Inconvenience reduce compliance
+<li> Enforcable
+<li> Reflects regulations that drive business model
+<li> Regular Review
+<li> Accessibility to shareholders
+<li> Require/Track/Train the comprehension and retention of policy - very difficult to implement </li>
+</ol>
+<p>Reviewing Policy
+</p>
+<ol>
+<li> Decide on a framework 
+<li> ISO 17799, ISO 27001, COBIT, ITIL, ... Know these frameworks
+<li> Gap Analysis vs Risk Assessment - 
+<ul><li> GA - compares the policy to a specific framework without risk and finds the gaps between the two
+<li>RA - compares the policy to perceived risk within a given policy
+<li>RA usually influences decision makers more powerfully due to more immediate threat, but potential liabilities can be identified proactively through GA</ul>
+</ol></p>
+<p>Capability Maturity Model (<a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Capability_Maturity_Model">CMM</a>) - detailed analysis of technology development, identifies 6 levels of Maturity
+<ul><li>Level 0 - Nonexistent - nearly impossible
+</li><li>Level 1 - Ad hoc
+</li><li>Level 2 - Defined
+</li><li>Level 3 - Repeatable/Recorded
+</li><li>Level 4 - Managed and measurable
+</li><li>Level 5 - Optimized</p>
+</li></ul>
+
+<p>How do you get policy?
+<ul><li> Read what they have
+</li><li> Interviews
+</li><li> Aim for business drivers
+</li><li> Reassess interpretation and implementation of policies
+</li><li> Attend post-mortem events</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="IA_Draft_Planning">IA Draft Planning</span></h2>
+<h2> <span class="mw-headline" id="Technologies_and_Vulnerabilities">Technologies and Vulnerabilities</span></h2>
+<h2> <span class="mw-headline" id="Human_Factors_and_Security_Awareness">Human Factors and Security Awareness</span></h2>
+<h2> <span class="mw-headline" id="Risks_and_Business_Continuity_Planning">Risks and Business Continuity Planning</span></h2>
+<h2> <span class="mw-headline" id="Auditing.2C_Compliance.2C_and_Monitoring">Auditing, Compliance, and Monitoring</span></h2>
+<h2> <span class="mw-headline" id="Reporting_and_Public_Relations">Reporting and Public Relations</span></h2>
+<h2> <span class="mw-headline" id="Social_Media_in_Security_Dynamics">Social Media in Security Dynamics</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 6/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Inforiskman:Main&amp;oldid=20477">https://share.coursera.org/wiki/index.php?title=Inforiskman:Main&amp;oldid=20477</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

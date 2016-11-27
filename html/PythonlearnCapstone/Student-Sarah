@@ -1,0 +1,25 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PythonlearnCapstone:Student-Sarah</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>I've already put this information elsewhere but probably not in the right place...</p>
+<p>Anyway, my data source is Transport for London (Tfl). TfL publishes an api (<a rel="nofollow" class="external free" href="https://api.tfl.gov.uk/">https://api.tfl.gov.uk/</a>) where you can find all sorts of interesting data. The one I'm interested in is cycling accidents. I want to find out the areas in London where the most accidents occur, and visualise it using visualisation software like we did for the geolocation assignment.</p>
+<p>I don't live in London and I'm not a particularly keen cyclist, but this is data that is of interest for those who do cycle in London, and it's in a recognisable format (Json) which should not be too intimidating to use.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-Sarah&amp;oldid=33422">https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-Sarah&amp;oldid=33422</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

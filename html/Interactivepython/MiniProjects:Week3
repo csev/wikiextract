@@ -1,0 +1,52 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Interactivepython:MiniProjects:Week3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_3_Mini-project"><span class="tocnumber">1</span> <span class="toctext">Week 3 Mini-project</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.22Stopwatch:_The_Game.22"><span class="tocnumber">1.1</span> <span class="toctext">"Stopwatch: The Game"</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Mini-project_development_process"><span class="tocnumber">1.1.1</span> <span class="toctext">Mini-project development process</span></a></li>
+<li class="toclevel-3"><a href="#Grading_Rubric_.C2.A0-_13_pts_total_.28scaled_to_100_pts.29"><span class="tocnumber">1.1.2</span> <span class="toctext">Grading Rubric &#160;- 13 pts total (scaled to 100 pts)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_3_Mini-project">Week 3 Mini-project</span></h1>
+<h2> <span class="mw-headline" id=".22Stopwatch:_The_Game.22">"Stopwatch: The Game"</span></h2>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=13">original source</a></p>
+<p>Our mini-project for this week will focus on combining text drawing in the canvas with timers to build a simple digital stopwatch that keep track of the time in tenths of a second. &#160;The stopwatch should contain "Start", "Stop" and "Reset" buttons. &#160;To help guide you through this project, we suggest that you download the provided <a rel="nofollow" class="external text" href="http://www.codeskulptor.org/#examples-stopwatch_template.py">program template</a> for this mini-project and build your stopwatch program as follows:
+<h3> <span class="mw-headline" id="Mini-project_development_process"> Mini-project development process </span></h3>
+<ol><li>Construct a timer with an associated interval of 0.1 seconds whose event handler increments a global integer. &#160;This integer will keep track of the time in tenths of seconds. &#160;Test your timer by printing the global integer to the console. To stop the timer and print statements, use the reset button in upper left. <b>Important:</b> Do not use floating point numbers to keep track of tenths of a second! &#160;While it's certainly possible to get it working, the imprecision of floating point can make your life miserable. &#160;Use an integer instead, i.e., 12 represents 1.2 seconds.
+</li><li> Write the event handler function for the canvas that draws the current time(simply as an integer, you should not worry about formating it yet) in the middle of the canvas. Remember that you will need to convert the current time into a string using <code>str</code> before drawing it.
+</li><li> Add "Start" and "Stop" buttons whose event handlers start and stop the timer. &#160;Next, add a "Reset" button that stops the timer and reset the current time to zero.
+</li><li> Next, write a helper function <code> format(t) </code> that returns a string of the form <code>A:BC.D</code> where <code>A, B, C</code> and <code> D</code> are digits in the range 0-9. &#160;Test this function independent of your project. &#160;Note that your helper function <code>format</code> should always draw leading zeros correctly. &#160;For example<ul><li> <code> format(0) == 0:00.0 </code></li><li> <code> format(11) = 0:01.1 </code></li><li> <code> format(321) = 0:32.1 </code></li><li> <code> format(613) = 1:01.3 </code></li></ul>
+<p><b>Hint:</b> Use integer division and remainder (modular arithmetic) to extract various digits for the formatted time from the global integer timer.
+</p>
+</li><li> Insert the <code>format</code> function into your canvas event handler will complete the stopwatch. </li><li> Finally, to turn your stopwatch into a test of reflexes, add to two numerical counters that keep track of the number of times that you have stopped the watch and how many times you manage to stop the watch on a whole second. These counters should be drawn in the upper lefthand part of the stopwatch canvas in the <code>"x/y"</code> where <code>x</code> is the number of successful stops and <code>y</code> is number of total stops. &#160;My best effort at this simple game is around a 25% success rate. &#160;Note that hitting the "Stop" button when the timer is already stopped should not change your score.</li><li> Modify "Reset" so as to set these number back to zero when clicked.</li></ol>Steps 1-3 and 5-7 above are relatively straightforward. &#160;However, step 4 requires some adept &#160;use of integer division and modular arithmetic. &#160;So, we again emphasize that you build and debug the helper function <code>format(t)</code> separately. &#160;Following this process will save you time. &#160;For an example of a full implementation, we suggest that you watch the video lecture on this mini-project.
+<h3> <span class="mw-headline" id="Grading_Rubric_.C2.A0-_13_pts_total_.28scaled_to_100_pts.29">Grading Rubric &#160;- 13 pts total (scaled to 100 pts) </span></h3><ul><li> 1 pt - The program successfully opens a frame.</li><li> 1 pt - The program has a working "Start" button that starts the timer.</li><li> 1 pt - The program has a working "Stop" button that stops the timer.</li><li> 1 pt - The program has a working "Reset" button that stops the timer (if running) and resets the timer to 0.</li><li> 2 pts - The "Stop" button correctly updates the success/attempts counters. &#160;Give only one point if hitting the "Stop" button changes the score when the timer is already stopped.</li><li> 1 pt - The "Reset" button clears the success/attempts counters.</li><li> 4 pts - The time is formatted according to the description in step 4 above. &#160;Award partial credit corresponding to 1 pt per correct digit. &#160;For example, a version that just draw tenths of seconds as a whole number should recieve 1 pt. A version that draws the time with correctly placed decimal point (but no leading zeros) only should receive 2 pts. &#160;A version that draws minutes, seconds and tenths of seconds but fails to always allocate two digits to seconds should receive 3 pts.</li><li> 2 pts - The program correctly draws the number of successful stops at a whole second versus total stops. &#160;You should give one point each for successful and total stops. &#160;If the score is correctly reported as a percentage instead, give only one point.</li></ul></p>
+<hr />
+<p><a href="/wiki/index.php/Interactivepython:MiniProjects" title="Interactivepython:MiniProjects">MiniProjects</a></p>
+<p><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week3&amp;oldid=5715">https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week3&amp;oldid=5715</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

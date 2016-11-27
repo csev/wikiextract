@@ -1,0 +1,1027 @@
+[[Category:Android:Subtitles|it]]
+
+###BroadcastReceiver - Part 2 - Italian subtitles
+
+* [[Android-001:Subtitles:Lecture43:it|<< prev]] | [[Android-001:Subtitles:Lecture45:en|en]] [[Android-001:Subtitles:Lecture45:es|es]] [[Android-001:Subtitles:Lecture45:it|it]] [[Android-001:Subtitles:Lecture45:zh-tw|zh-tw]] [[Android-001:Subtitles:Lecture45:pt|pt]] | [[Android-001:Subtitles:Lecture47:it|next >>]]
+
+* [Direct download](https://www.dropbox.com/s/lvqdfbbx448pkrj/5%20-%204%20-%20BroadcastReceiver%20-%20Part%202%20%2816-24%29.srt)
+
+<pre>
+1
+00:00:08,593 --> 00:00:11,347
+Ciao, sono Adam Porter e questo è
+
+2
+00:00:11,347 --> 00:00:17,090
+"Programming Mobile Applications for
+Android Handheld Systems".
+
+3
+00:00:19,000 --> 00:00:23,870
+Ora, dopo che un Intent viene trasmesso,
+viene infine consegnato al BroadcastReceiver
+
+4
+00:00:23,870 --> 00:00:30,210
+appropriato, tramite una chiamata al metodo
+onReceive del BroadcastReceiver.
+
+5
+00:00:31,250 --> 00:00:33,980
+E questo metodo ha due parametri.
+
+6
+00:00:33,980 --> 00:00:37,360
+Uno, il Context in cui il Receiver è in
+esecuzione.
+
+7
+00:00:38,390 --> 00:00:41,590
+E due, l'Intent che è stato trasmesso.
+
+8
+00:00:43,140 --> 00:00:47,250
+Quindi ci sono alcune cose da considerare
+quando si scrive il codice che gestisce
+
+9
+00:00:47,250 --> 00:00:53,150
+broadcast in arrivo. In primo luogo, per
+inviare un broadcast, Android può
+
+10
+00:00:53,150 --> 00:00:59,010
+dover avviare il processo dell'applicazione
+del Receiver, perché potrebbe non
+
+11
+00:00:59,010 --> 00:01:03,600
+essere attualmente in esecuzione quando
+l'Intent viene trasmesso, e
+
+12
+00:01:03,600 --> 00:01:09,080
+mentre è in esecuzione onReceive, tale
+processo ha una priorità alta.
+
+13
+00:01:09,080 --> 00:01:12,160
+Quindi inviare un Intent, specialmente se
+raggiunge
+
+14
+00:01:12,160 --> 00:01:16,880
+molteplici applicazioni, può essere
+un'operazione relativamente costosa.
+
+15
+00:01:18,398 --> 00:01:21,150
+In secondo luogo, il metodo onReceive viene
+eseguito nel
+
+16
+00:01:21,150 --> 00:01:24,800
+thread principale del suo processo
+hosting, e come
+
+17
+00:01:24,800 --> 00:01:28,010
+tutto ciò che si fa sul thread principale
+dovrebbe
+
+18
+00:01:28,010 --> 00:01:31,480
+avere una durata abbastanza breve
+e non dovrebbe bloccare il thread principale.
+
+19
+00:01:31,480 --> 00:01:35,550
+In particolare, se il processo che hai
+bisogno di
+
+20
+00:01:35,550 --> 00:01:39,480
+fare in risposta al broadcast richiede molto
+tempo,
+
+21
+00:01:39,480 --> 00:01:41,600
+allora si dovrebbe considerare l'avvio di un
+Service per fare
+
+22
+00:01:41,600 --> 00:01:44,840
+quel lavoro piuttosto che fare il lavoro in
+onReceive.
+
+23
+00:01:44,840 --> 00:01:49,850
+In realtà, questo è esattamente ciò che fa
+l'applicazione MMS quando
+
+24
+00:01:49,850 --> 00:01:51,700
+arriva un messaggio MMS.
+
+25
+00:01:51,700 --> 00:01:56,310
+Un BroadcastReceiver riceve un broadcast che
+informa
+
+26
+00:01:56,310 --> 00:01:58,150
+è che il messaggio MMS è arrivato.
+
+27
+00:01:59,370 --> 00:02:02,200
+E nel suo metodo onReceive, quando viene
+
+28
+00:02:02,200 --> 00:02:07,600
+chiamato, passa immediatamente il messaggio
+a un altro servizio
+
+29
+00:02:07,600 --> 00:02:09,370
+che gestisce tutto il lavoro di scaricare il
+
+30
+00:02:09,370 --> 00:02:13,650
+messaggio, riporlo in un database e così via.
+
+31
+00:02:13,650 --> 00:02:14,950
+Ovviamente, non abbiamo parlato
+
+32
+00:02:14,950 --> 00:02:18,210
+ancora molto dei Service, ma ci arriveremo
+in una lezione successiva.
+
+33
+00:02:21,210 --> 00:02:24,580
+Un ultimo aspetto da considerare è che il
+BroadcastReceiver
+
+34
+00:02:24,580 --> 00:02:29,510
+è considerato valido solo fintanto che
+onReceive è in esecuzione.
+
+35
+00:02:29,510 --> 00:02:32,640
+Infatti, una volta terminato OnReceive,
+Android
+
+36
+00:02:32,640 --> 00:02:37,810
+a volte terminerà il BroadcastReceiver
+sottostante.
+
+37
+00:02:37,810 --> 00:02:42,180
+In particolare, questo significa che i
+BroadcastReceiver non possono avviare
+
+38
+00:02:42,180 --> 00:02:46,940
+operazioni che avranno bisogno di richiamare
+il Receiver asincronamente
+
+39
+00:02:46,940 --> 00:02:47,850
+in un secondo momento.
+
+40
+00:02:47,850 --> 00:02:52,940
+E, naturalmente, questo ha un senso, perché
+non c'è alcuna garanzia che
+
+41
+00:02:52,940 --> 00:02:58,090
+il BroadcastReceiver esisterà quando avverrà
+tale callback.
+
+42
+00:02:59,400 --> 00:03:03,380
+Ora, esempi di queste callback asincrone
+includono cose come avviare un
+
+43
+00:03:03,380 --> 00:03:09,920
+Dialog, o avviare un'Activity con il
+metodo startActivityForResult.
+
+44
+00:03:11,120 --> 00:03:11,730
+Quindi,
+
+45
+00:03:11,730 --> 00:03:16,270
+diamo un'occhiata ad alcuni esempi di
+applicazioni che usano BroadcastReceiver.
+
+46
+00:03:21,180 --> 00:03:25,490
+Qui avvio l'applicazione CompoundBroadcast.
+
+47
+00:03:26,850 --> 00:03:32,210
+Ha un pulsante "Broadcast Intent",
+che se premuto
+
+48
+00:03:32,210 --> 00:03:37,900
+userà il metodo sendBroadcast per
+trasmettere un Intent show_toast.
+
+49
+00:03:38,960 --> 00:03:41,640
+Questa volta, però, ci sono tre
+
+50
+00:03:41,640 --> 00:03:44,710
+BroadcastReceiver che riceveranno questo
+Intent.
+
+51
+00:03:46,000 --> 00:03:46,600
+Quindi ora
+
+52
+00:03:46,600 --> 00:03:47,470
+premo il pulsante.
+
+53
+00:03:49,720 --> 00:03:54,840
+E sotto vedete un messaggio Toast
+proveniente dal Receiver uno, un
+
+54
+00:03:54,840 --> 00:04:00,250
+secondo dal Receiver due, e il
+terzo dal Receiver tre.
+
+55
+00:04:05,800 --> 00:04:08,526
+Poiché l'applicazione CompoundBroadcast
+ha usato
+
+56
+00:04:08,526 --> 00:04:11,780
+sendBroadcast, i broadcast sono stati inviati
+
+57
+00:04:11,780 --> 00:04:14,240
+normalmente e ciò significa che
+
+58
+00:04:14,240 --> 00:04:17,560
+l'arrivo e l'ordine di elaborazione erano
+indefiniti.
+
+59
+00:04:18,840 --> 00:04:24,180
+In questo caso, il broadcast è stato
+manipolato in un ordine particolare.
+
+60
+00:04:24,180 --> 00:04:27,830
+In altri casi o su un dispositivo diverso
+
+61
+00:04:27,830 --> 00:04:31,440
+o Android cambierà in futuro, tale
+l'ordine
+
+62
+00:04:31,440 --> 00:04:33,150
+potrebbe essere diverso.
+
+63
+00:04:33,150 --> 00:04:37,650
+Quindi, se si vuole che i BroadcastReceiver
+ricevano davvero il broadcast
+
+64
+00:04:37,650 --> 00:04:41,820
+in un particolare ordine, o se si vuole che
+ciascun BroadcastReceiver
+
+65
+00:04:41,820 --> 00:04:46,370
+abbia accesso esclusivo all'Intent mentre
+viene processato,
+
+66
+00:04:46,370 --> 00:04:50,210
+allora si vuole che il broadcast sia
+ordinato.
+
+67
+00:04:51,380 --> 00:04:55,620
+E lo si fa usando il metodo
+sendOrderedBroadcast.
+
+68
+00:04:55,620 --> 00:04:56,120
+E
+
+69
+00:04:57,750 --> 00:04:59,500
+puoi farlo utilizzando alcuni dei metodi,
+
+70
+00:04:59,500 --> 00:05:03,030
+alcuni dei seguenti metodi della classe
+Context.
+
+71
+00:05:03,030 --> 00:05:07,020
+Il primo invia un Intent ai BroadcastReceiver
+
+72
+00:05:07,020 --> 00:05:10,590
+che hanno uno specifico permesso in
+ordine di priorità.
+
+73
+00:05:11,670 --> 00:05:13,700
+Il secondo fa la stessa cosa,
+
+74
+00:05:13,700 --> 00:05:17,530
+ma fornisce parametri aggiuntivi per
+un maggiore controllo.
+
+75
+00:05:17,530 --> 00:05:22,930
+Guardiamo alcune applicazioni che usano
+questi metodi per inviare broadcast ordinati.
+
+76
+00:05:25,830 --> 00:05:30,850
+Ora avvio l'applicazione
+CompoundOrderedBroadcast.
+
+77
+00:05:32,360 --> 00:05:35,970
+Quest'applicazione mostra un pulsante,
+etichettato "Broadcast Intent".
+
+78
+00:05:37,110 --> 00:05:43,180
+E quando si preme il pulsante, viene
+trasmesso un Intent show_toast.
+
+79
+00:05:43,180 --> 00:05:46,373
+Per questa applicazione ci sono tre
+
+80
+00:05:46,373 --> 00:05:50,905
+BroadcastReceiver registrati, di tipo
+
+81
+00:05:50,905 --> 00:05:58,160
+Reveiver1, Receiver2 e Receiver3.
+E ciascuno di essi ha una diversa
+
+82
+00:05:58,160 --> 00:06:04,270
+priorità per la ricezione del broadcast.
+Receiver2 ha la massima priorità,
+
+83
+00:06:07,650 --> 00:06:13,430
+Receiver1 la successiva più alta, e
+Receiver3 ha la priorità più bassa.
+
+84
+00:06:13,430 --> 00:06:18,850
+Quindi ci aspettiamo che i Receiver ricevano
+il broadcast in tale ordine.
+
+85
+00:06:18,850 --> 00:06:22,560
+Receiver2, Receiver1 e Receiver3.
+
+86
+00:06:22,560 --> 00:06:27,940
+Tuttavia, ho messo del codice
+nel Receiver1 che
+
+87
+00:06:27,940 --> 00:06:32,990
+interrompe il broadcast. Quindi,
+in questo caso solo Receiver2 e
+
+88
+00:06:32,990 --> 00:06:37,290
+poi Receiver1 dovrebbero ricevere il
+broadcast.
+
+89
+00:06:37,290 --> 00:06:39,380
+Dunque, vediamolo in azione.
+
+90
+00:06:40,810 --> 00:06:44,690
+Ora io premo il pulsante "Broadcast Intent" e
+
+91
+00:06:44,690 --> 00:06:47,680
+si può vedere un messaggio Toast che dice che
+
+92
+00:06:47,680 --> 00:06:51,420
+l'Intent è stato ricevuto da Receiver2,
+e
+
+93
+00:06:51,420 --> 00:06:54,980
+poi un altro che dice che è stato ricevuto
+da Receiver1.
+
+94
+00:06:54,980 --> 00:06:57,990
+E a quanto pare, il povero Receiver3 è stato
+lasciato
+
+95
+00:06:57,990 --> 00:06:59,420
+fuori al freddo.
+
+96
+00:06:59,420 --> 00:07:02,150
+Diamo un'occhiata al codice sorgente di
+quest'applicazione.
+
+97
+00:07:04,310 --> 00:07:07,420
+Ora qui ho l'applicazione aperta
+nell'IDE.
+
+98
+00:07:08,620 --> 00:07:12,750
+E inizio aprendo il file AndroidManifest.xml.
+
+99
+00:07:15,030 --> 00:07:22,060
+E come potete vedere ho registrato
+staticamente il Receiver2 con priorità 10.
+
+100
+00:07:24,120 --> 00:07:28,380
+E ho registrato il Receiver3 con priorità 1.
+
+101
+00:07:28,380 --> 00:07:28,880
+Ora
+
+102
+00:07:30,490 --> 00:07:34,915
+tornando nell'Activity principale, il codice
+crea un'istanza di
+
+103
+00:07:34,915 --> 00:07:40,160
+Receiver1, quindi crea un IntentFilter
+per l'Intent
+
+104
+00:07:40,160 --> 00:07:45,580
+show_toast e quindi imposta la priorità a 3.
+
+105
+00:07:45,580 --> 00:07:50,030
+Quindi, qualsiasi istanza Receiver2
+ha priorità dieci.
+
+106
+00:07:50,030 --> 00:07:54,270
+Questa istanza di Receiver1 ha priorità
+tre,
+
+107
+00:07:55,570 --> 00:07:58,610
+e qualsiasi istanza di Receiver3 ha
+priorità uno.
+
+108
+00:08:00,180 --> 00:08:05,550
+Ora, quando viene premuto il pulsante
+"Broadcast Intent", il listener chiama
+
+109
+00:08:05,550 --> 00:08:10,330
+sendOrderedBroadcast, passando un nuovo
+Intent show_toast.
+
+110
+00:08:11,910 --> 00:08:16,980
+Questo Intent viene prima ricevuto da
+un'istanza di Receiver2, e
+
+111
+00:08:16,980 --> 00:08:20,530
+poi da un'istanza di Receiver1, che è stata
+creata in questo file.
+
+112
+00:08:21,960 --> 00:08:27,284
+Apriamo il codice di Receiver1. Ora qui in
+onReceive si vede che il
+
+113
+00:08:27,284 --> 00:08:33,310
+codice verifica se questo è un
+broadcast ordinato.
+
+114
+00:08:33,310 --> 00:08:38,910
+E se sì, chiama abortBroadcast, che consuma
+il
+
+115
+00:08:38,910 --> 00:08:44,820
+broadcast, e in questo caso, impedisce
+che venga inviato a Receiver3.
+
+116
+00:08:47,480 --> 00:08:52,470
+Ora diamo un'occhiata anche ad un uso un po'
+più complicato di un broadcast ordinato.
+
+117
+00:08:52,470 --> 00:08:58,360
+In questa applicazione, chiamata
+OrderedBroadcastWithResultReceiver,
+
+118
+00:08:58,360 --> 00:09:01,450
+vedremo che viene visualizzato un singolo
+messaggio Toast, che
+
+119
+00:09:02,820 --> 00:09:07,520
+mostra tutti i BroadcastReceiver che
+ricevono questo Intent
+
+120
+00:09:07,520 --> 00:09:10,740
+e che indica l'ordine in cui l'hanno
+ricevuto.
+
+121
+00:09:12,380 --> 00:09:12,900
+Ora qui,
+
+122
+00:09:12,900 --> 00:09:14,160
+avvio l'applicazione.
+
+123
+00:09:15,990 --> 00:09:22,660
+Ora premo il suo pulsante "Broadcast Intent"
+ed ecco il messaggio Toast.
+
+124
+00:09:22,660 --> 00:09:27,950
+Mostra che Receiver2 ha ricevuto l'Intent,
+poi Receiver1,
+
+125
+00:09:27,950 --> 00:09:32,870
+e quindi Receiver3. Guardiamo il codice
+sorgente.
+
+126
+00:09:35,500 --> 00:09:38,410
+Ora ecco l'applicazione aperta nell'IDE.
+
+127
+00:09:40,170 --> 00:09:43,400
+Ora apro la MainActivity e vado
+
+128
+00:09:43,400 --> 00:09:46,090
+al listener del Button "Broadcast Intent".
+
+129
+00:09:46,090 --> 00:09:46,590
+Come
+
+130
+00:09:48,830 --> 00:09:54,062
+potete vedere, questo codice usa la seconda
+forma del metodo sendBroadcast.
+
+131
+00:09:55,300 --> 00:09:57,986
+Uno dei parametri interessanti
+di questo metodo è
+
+132
+00:09:57,986 --> 00:10:03,390
+un BroadcastReceiver, lo chiamerò il
+"resultReceiver" (ricevitore del risultato),
+
+133
+00:10:03,390 --> 00:10:06,270
+che riceverà l'Intent dopo tutti gli altri
+
+134
+00:10:06,270 --> 00:10:10,180
+BroadcastReceiver che hanno avuto la
+possibilità di riceverlo.
+
+135
+00:10:11,380 --> 00:10:14,100
+Questo è utile se i BroadcastReceiver
+
+136
+00:10:14,100 --> 00:10:16,295
+iniziali calcolano un risultato,
+
+137
+00:10:17,740 --> 00:10:23,020
+perché tale risultato sarà quindi disponibile
+a quest'ultimo ricevitore, che può ottenere
+
+138
+00:10:23,020 --> 00:10:28,090
+tale risultato chiamando getResultData, come
+vediamo qui.
+
+139
+00:10:30,130 --> 00:10:34,260
+Ora diamo uno sguardo ad una delle classi
+BroadcastReceiver per vedere
+
+140
+00:10:34,260 --> 00:10:36,980
+come calcolano il risultato che questo
+
+141
+00:10:36,980 --> 00:10:41,100
+resultReceiver mostra alla fine nel
+messaggio Toast.
+
+142
+00:10:43,610 --> 00:10:48,590
+Ora, ecco la classe Receiver1.
+E come potete vedere, il suo metodo
+
+143
+00:10:48,590 --> 00:10:55,370
+onReceive chiama getResultData, per ottenere
+i dati del risultato corrente.
+
+144
+00:10:55,370 --> 00:10:58,510
+E poi concatena la sua stringa alla fine.
+
+145
+00:10:59,550 --> 00:11:05,070
+Quindi salva la nuova stringa chiamando
+setResultData. Ora,
+
+146
+00:11:05,070 --> 00:11:10,240
+dal momento che tutti i BroadcastReceiver
+lo fanno a loro volta, il dato finale
+
+147
+00:11:10,240 --> 00:11:15,180
+del risultato è una singola stringa che
+mostra quali ricevitori hanno ricevuto
+
+148
+00:11:15,180 --> 00:11:19,610
+l'Intent e l'ordine in cui l'hanno ricevuto.
+
+149
+00:11:19,610 --> 00:11:27,800
+L'ultimo tipo di broadcast di cui parlerò
+oggi sono i broadcast sticky.
+
+150
+00:11:27,800 --> 00:11:31,442
+Come ho detto in precedenza, i broadcast non
+sticky indicano che
+
+151
+00:11:31,442 --> 00:11:34,870
+è successo qualcosa in uno specifico momento.
+
+152
+00:11:35,940 --> 00:11:37,970
+Annunciano eventi.
+
+153
+00:11:37,970 --> 00:11:41,210
+Quindi, una volta che l'evento è finito,
+è finito.
+
+154
+00:11:41,210 --> 00:11:43,770
+Android si disfa dell'evento e va avanti.
+
+155
+00:11:46,500 --> 00:11:51,020
+Se un BroadcastReceiver non era stato
+registrato per ricevere un Intent quando
+
+156
+00:11:51,020 --> 00:11:56,720
+è successo, diciamo ieri, allora non gli
+dovrebbe essere comunicato.
+
+157
+00:11:56,720 --> 00:12:00,740
+Perché, ad esempio, si potrebbe pensare che
+l'evento sia appena accaduto.
+
+158
+00:12:00,740 --> 00:12:04,580
+E questo potrebbe portare a tutta una tipologia
+di problemi temporali e altre difficoltà.
+
+159
+00:12:05,620 --> 00:12:11,640
+Altri eventi tuttavia, indicano cambiamenti
+di stato che potrebbero persistere nel tempo.
+
+160
+00:12:12,900 --> 00:12:15,360
+I BroadcastReceiver che vogliono sapere dello
+
+161
+00:12:15,360 --> 00:12:19,210
+stato corrente del dispositivo, ad esempio,
+vorranno ancora
+
+162
+00:12:19,210 --> 00:12:22,810
+quelle informazioni, anche se non erano
+registrati
+
+163
+00:12:22,810 --> 00:12:26,640
+per essere avvisati quando è cambiato quel
+particolare stato.
+
+164
+00:12:26,640 --> 00:12:29,600
+Ad esempio, se il livello della batteria
+diventa
+
+165
+00:12:29,600 --> 00:12:33,798
+molto basso, Android trasmetterà tale evento
+al sistema.
+
+166
+00:12:33,798 --> 00:12:38,680
+Le buoen applicazioni vorranno essere brave
+"cittadine" del dispositivo e
+
+167
+00:12:38,680 --> 00:12:45,420
+non faranno operazioni che consumano batteria
+quando il dispositivo è in tale stato.
+
+168
+00:12:45,420 --> 00:12:47,470
+Quindi, in questo caso, se una nuova applicazione
+
+169
+00:12:47,470 --> 00:12:50,880
+si avvia e si  registra per ascoltare lo
+stato della
+
+170
+00:12:50,880 --> 00:12:54,970
+batteria, tale applicazione ha bisogno di
+sapere adesso
+
+171
+00:12:54,970 --> 00:12:57,300
+se il dispositivo si trova nello stato
+di batteria scarica.
+
+172
+00:12:57,950 --> 00:13:03,940
+E per questo, Android trasmette l'Intent di
+batteria scarica come
+
+173
+00:13:03,940 --> 00:13:08,820
+un broadcast sticky, così gli Intent sticky
+vengono memorizzati in cache da Android,
+
+174
+00:13:09,820 --> 00:13:14,770
+e i broadcast sticky di un certo Intent
+sovrascrivono ogni altro valore in
+
+175
+00:13:14,770 --> 00:13:19,250
+cache di un precedente broadcast sticky di
+un Intent corrispondente.
+
+176
+00:13:20,500 --> 00:13:24,770
+Quando un BroadcastReceiver viene registrato
+dinamicamente, ogni
+
+177
+00:13:24,770 --> 00:13:29,110
+Intent in cache che corrisponde al suo
+IntentFilter gli
+
+178
+00:13:29,110 --> 00:13:31,150
+verrà trasmesso.
+
+179
+00:13:31,150 --> 00:13:34,730
+Inoltre, un Intent in cache corrispondente
+verrà
+
+180
+00:13:34,730 --> 00:13:37,970
+restituito al chiamante di registerReceiver.
+
+181
+00:13:37,970 --> 00:13:43,300
+Ora, in maniera simile a come abbiamo visto
+con i broadcast non sticky, i broadcast
+
+182
+00:13:43,300 --> 00:13:49,090
+sticky possono essere inviati normalmente,
+cioè senza un ordine definito, oppure
+
+183
+00:13:49,090 --> 00:13:54,340
+sequenzialmente, in ordine di priorità.
+i Broadcast sticky normali possono
+
+184
+00:13:54,340 --> 00:13:59,450
+usare questo metodo. E i broadcast sticky
+ordinati
+
+185
+00:13:59,450 --> 00:14:04,490
+possono usare questo metodo. E infine, le
+applicazioni che vogliono
+
+186
+00:14:04,490 --> 00:14:12,050
+trasmettere Intent sticky devono avere il
+permesso BROADCAST_STICKY.
+
+187
+00:14:12,050 --> 00:14:16,210
+Vediamo un esempio di applicazione che
+usa broadcast sticky.
+
+188
+00:14:16,210 --> 00:14:19,720
+Ora avvio l'applicazione StickyIntent
+
+189
+00:14:19,720 --> 00:14:24,430
+nell'emulatore. Ho anche aperto
+
+190
+00:14:24,430 --> 00:14:29,120
+una finestra di terminale, e ho iniziato una
+sessione Telnet con tale emulatore.
+
+191
+00:14:30,720 --> 00:14:35,610
+Ora avvio l'applicazione, che
+
+192
+00:14:35,610 --> 00:14:39,710
+mostra il livello attuale della batteria, e
+mostra la
+
+193
+00:14:39,710 --> 00:14:44,760
+stringa "La lettura potrebbe essere
+vecchia". E quest'ultima stringa indica
+
+194
+00:14:44,760 --> 00:14:47,910
+semplicemente che la lettura del livello
+della batteria proviene da
+
+195
+00:14:47,910 --> 00:14:52,150
+un broadcast sticky in cache, non da un
+broadcast fresco.
+
+196
+00:14:53,890 --> 00:14:57,300
+Se ora vado nella finestra di terminale e
+cambio il livello della
+
+197
+00:14:57,300 --> 00:15:03,820
+batteria, verrà trasmesso un nuovo Intent
+che riflette il livello di batteria aggiornato.
+
+198
+00:15:03,820 --> 00:15:11,440
+Quindi ora digito "power capacity 95" e
+
+199
+00:15:13,200 --> 00:15:13,820
+premo "Invio".
+
+200
+00:15:16,760 --> 00:15:19,640
+Come potete vedere il display si è
+aggiornato.
+
+201
+00:15:20,900 --> 00:15:24,830
+E il testo mostrato è cambiato per indicare
+che il BroadcastReceiver
+
+202
+00:15:24,830 --> 00:15:30,570
+può distinguere tra broadcast freschi e in
+cache.
+
+203
+00:15:31,960 --> 00:15:33,930
+Diamo un'occhiata al codice sorgente
+di quest'applicazione.
+
+204
+00:15:33,930 --> 00:15:34,430
+Ora
+
+205
+00:15:36,390 --> 00:15:37,920
+eccomi qui nell'IDE.
+
+206
+00:15:39,380 --> 00:15:43,100
+E ora apro l'Activity principale di
+quest'applicazione.
+
+207
+00:15:43,100 --> 00:15:49,950
+Chiama registerReceiver e vi passa un
+BroadcastReceiver definito inline.
+
+208
+00:15:51,830 --> 00:15:56,118
+Guardiamo il metodo onReceive di quel
+BroadcastReceiver.
+
+209
+00:15:56,118 --> 00:16:04,052
+In primo luogo, controlla se sta ricevendo
+un Intent BATTERY_CHANGED.
+
+210
+00:16:04,052 --> 00:16:08,498
+Se è così, determina se il broadcast è
+
+211
+00:16:08,498 --> 00:16:14,960
+nuovo o in cache, chiamando
+isInitialStickyBroadcast.
+
+212
+00:16:14,960 --> 00:16:18,830
+Questo metodo restituisce true se l'Intent è
+un valore memorizzato nella cache.
+
+213
+00:16:18,830 --> 00:16:23,380
+E dopo di che, il codice imposta il testo da
+visualizzare.
+
+214
+00:16:29,720 --> 00:16:33,320
+Dunque, è tutto per questa lezione sui
+BroadcastReceiver.
+
+215
+00:16:33,320 --> 00:16:39,880
+Unitevi a me la prossima volta, quando
+parleremo di Thread, AsyncTask, e Handler.
+
+216
+00:16:39,880 --> 00:16:41,606
+Ci vediamo allora.
+</pre>

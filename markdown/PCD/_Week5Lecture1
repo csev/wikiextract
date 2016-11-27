@@ -1,0 +1,53 @@
+[[Category:Coursera]] 
+[[Category:PCD]]
+[[Category:Biology]]
+
+#Week 5, Lecture 1 - Regulation of protein activity
+
+* In the last section, we talked about the pathway that is involved in irreversibly committing cells to the apoptotic fate. I also call this the “central pathway” because it is involved in many of the apoptotic cell deaths that occur in <i>C. elegans</i> or mammals. Much of this central pathway is conserved from worms to humans. However, in the last section, we also talked about the differences between the <i>C. elegans</i> pathway and the mammalian pathway.  
+
+* In <i>C. elegans</i>, there is no dedicated Bax homolog. In <i>C. elegans</i>, there is also (at least so far) no role for cytochrome c and it is unclear to what extent the outer mitochondrial membrane becomes permeabilized. The way the assembly of the apoptosome is controlled also differs between <i>C. elegans</i> and mammals. And finally, in contrast to mammals, in which cascades of caspases function, in <i>C. elegans</i> there appears to be a sole caspase, ced-3.  
+
+* One aspect that is, however, quite conserved is the role of the sensors. Remember, the sensors form a subgroup among the Bcl-2 superfamily.  They are pro-apoptotic and often referred to as BH3-only proteins. They are called BH3-only proteins because - of the four Bcl-2-homology or BH domains - they only have the BH3 domain. Otherwise, the BH3-only proteins, in general, do not show any sequence homology to other proteins or to themselves.  
+
+* In the central pathway, the BH3-only proteins have a special function. Because they are the factors that act most upstream, their activities determine the activities of the factors that act downstream of them. When the BH3-only proteins are active, the guardians become inactive and the effectors become active, which leads to cytochrome c release, apoptosome assembly, caspase activation and the irreversible commitment to the apoptotic fate.  
+
+* In contrast, when the BH3-only proteins are inactive, the guardians are active and the effectors inactive. For this reason, no cytochrome c is released, no apoptosome is assembled and no caspases are activated. Consequently, the cell stays alive.  
+
+* The activities of the BH3-only proteins are therefore crucial for the proper functioning of the central pathway. For this reason, their activities are highly regulated. And they are regulated by diverse stimuli that have one thing in common and that is that they are involved in specifying which cells should live and which cells should die.  
+
+* BH3-only proteins act as integrators of these diverse signals.  They therefore represent a link between the pathways that specify the apoptotic fate and the central pathway that then acts to irreversibly commit a cell to the apoptotic fate.  
+
+* How can you control the activities of BH3-only proteins? How can you control the activity of a protein in a particular cell in general? What possibilities are there?  There are two fundamentally different ways to do this.  
+
+* First, you can regulate the overall activity of a protein in a particular cell by changing its amount. In general, more protein will give you increased overall activity and less protein will give you decreased overall activity.  
+
+* Second, you can regulate the overall activity of a protein in a particular cell by changing its activity per se. In general, a protein with higher activity will give you increased overall activity and a protein with lower activity will give you decreased overall activity.  
+
+* How can you change the amount of protein and get either more or less of it? You can change the amount of protein by changing its synthesis OR by changing its stability.  
+
+* A change in synthesis can be brought about by a change at the transcriptional level OR a change at the post-transcriptional level. At the transcriptional level, mRNA production can either be increased or decreased. At the post-transcriptional level, mRNA stability, for example, can be increased or decreased. Both mechanisms result in more or less mRNA available for translation and therefore protein synthesis.  
+
+* A change in stability can be brought about by a change at the post-translational level. This can be accomplished through modifications of the protein that can increase or decrease its stability. And those modifications could either be covalent or non-covalent modifications.  
+
+* Covalent modification refers to a modification that is through covalent bonds. And covalent bonds are stable chemical bonds that involve the sharing of a pair of electrons between the atoms of two molecules. Covalent modifications that can lead to a change in protein stability are, for example, phosphorylation or ubiquitinylation.  
+
+* In contrast, non-covalent modification refers to a modification that does not involve the sharing of pairs of electrons, but that – instead - involves interactions such as hydrogen bonds, ionic bonds, van der Waals forces, or hydrophobic interactions.  Non-covalent modifications that can lead to a change in protein stability are, for instance, protein-protein interactions or the binding of co-factors.  
+
+* Moving from how you can change the amount of a protein to how can you change the activity of a protein per se. You can change the activity of a protein through covalent or non-covalent modifications. And this occurs at the post translational level as well.  
+
+* For example, phosphorylation, the covalent attachment of a phosphogroup to specific amino acid residues, is a commonly used modification to change the activity of a protein, to either increase or decrease its activity.  
+
+* Another covalent modification that can change activity is proteolytic cleavage. For example, the proteolytic cleavage or maturation of pro-caspases results in enzymes with an increased proteolytic activity.  
+
+* Non-covalent modifications again can be protein-protein interactions or binding of co-factors such as ATP, GTP or ions, such as Calcium cations.  
+
+* So, we talked about different ways to change the amount of a protein. This can occur at the transcriptional, post-transcriptional, or post-translational level. And we talked about different ways to change the activity of a protein. This can occur through covalent or non-covalent modifications at the post-translational level.  
+
+* If you want to change the overall activity of a BH3-only protein within a cell really fast, which mechanism of regulation would you use? Would you increase its amount or would you increase its activity? What is faster?  The fastest way would probably be to increase its activity, either through covalent or non-covalent modifications.  And the slowest way would probably be to increase its synthesis at the transcriptional level.  
+
+* In order to control the activities of BH3-only proteins, many of these different mechanisms that I just discussed are used. Depending on the BH3-only protein, their activities are regulated at the level of protein synthesis or at the level of activity. Since the control of the activities of BH3-only proteins is a very important aspect of the control of apoptosis and since this is a very active area of research, in the next couple of sections, I will discuss how the overall activity of three different BH3-only proteins is controlled: <i>C. elegans</i> EGL-1, and mammalian Bad and Bid.  
+  
+[[PCD:Main | PCD Main Page]]  
+[[PCD: Week5 | Week 5 Keywords]]  
+[[PCD: Week5LectureList | Week 5 Lecture Transcripts]]

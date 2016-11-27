@@ -1,0 +1,85 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Wk4 L2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_4_Lecture_2:_What_is_the_problem.3F">Week 4 Lecture 2: What is the problem?</span></h1>
+<p><strong>Bioelectricity week 4 (slide 1)</strong><br />
+<ul><li> Hello, again. This is Roger Coke Barr for the Bioelectricity course, And we have reached Week number four. And in this week, we unravel the mystery of where action potentials come from. So, here we are. 
+</li><li> And I have used as the analogy for this week, building train cars. Now, the reason I chose this analogy is that, a train can have lots of different kinds of cars. Passenger cars, dining cars, mail cars, freight cars, all sorts of cars.<br />
+</li><li> Action potentials are the same way. They may seem to be one event, like the whole train, but they have a series of things that happen one after another in a synchronized and linked way, and that's how it all comes about. </p>
+</li></ul>
+
+<p><strong>Bioelectricity -- Week 4 (slide 2)</strong><br />
+<ul><li> Within this week, we will talk in some detail about the Hodgkin-Huxley membrane model. The Hodgkin-Huxley membrane model is the original membrane model that showed in a carefully integrated way how the different parts of the action potential come together.<br />
+</li><li> Hodgkin and Huxley put their model together from experimental data. So, in that sense, it is an experimental model. However, they went further and they, they represented their findings and explained the model in mathematical terms. So, the Hodgkin-Huxley membrane model is very strongly based experimentally, but it also is a mathematical and a conceptual model and we want to see it from all its different dimensions.<br />
+</li><li> An important part of the Hodgkin-Huxley model is that, it provides the basis for numerical calculations. So, we'll talk about those some too. </p>
+</li></ul>
+
+<p><strong>Bioelectricity -- Week 4 (slide 3)</strong><br />
+<ul><li> Generally speaking, within this week, in the first group of topics. These topics, we'll talk about the need to explain the action potential. That is to say, to explain the mechanism by which the action potential comes about.<br />
+</li><li> And then, in the later half of the week, this part, we'll talk primarily about the numerical model that one can use.  </p>
+</li></ul>
+
+<p><strong>Active tissue – “the problem” (slide 4)</strong><br />
+<ul><li> So, let's review what is the problem exactly. It's easy that lots of times in bioelectricity to get lost in individual topics and forget what the problem is that one is trying to solve. Well, here, we have a rather clear-cut problem.<br />
+</li><li> If we look at passive tissue and we apply stimulus to it, in this case, we're applying a stimulus from outside the tissue but it would be equal, equally true for a naturally occurring stimulus. In passive tissue, there's a little bump in response to the tissue, and then nothing more.<br />
+</li><li> Now, the problem is, but also the wonderful feature is, that in active tissue, after that little bump, there is a huge, a huge response thereafter, which is called an action potential.  </p>
+</li></ul>
+
+<p><strong>Where does the AP come from? – algorithm? (slide 5)</strong><br />
+<ul><li> However, the model that we had, this model, did not explain where that action potential came from. And, in fact, it seemed to even rule it out because at the end of the stimulus, we had a charge capacitor.<br />
+</li><li> So we had charges here and here, minuses there and there. We understood passive tissue because we understood how the charges could flow through the resistor and come back over here. And as a result, how the capacitance could discharge over time.<br />
+</li><li> But there's just no way here that one can possibly explain a large secondary or large subsequent deflection which we call the action potential.
+</li><li> So, our problem is we've got to explain that. So, Hodgkin and Huxley in the mid nineteen, 1900s, provided such an explanation.  </p>
+</li></ul>
+
+<p><strong>Hodgkin and Huxley Giant Squid (slide 6)</strong><br />
+<ul><li> Let's talk about what they did a little bit just historically. First of all, they recorded data from the nerve axon of the giant squid.
+</li><li> So, a giant squid is probably the creature for whom the ancient sea monsters were modeled after. If you think of a basketball court, the size of a basketball court, then a squid is enormous even in relation to the size of a basketball court. So it's, you know, a giant squid is something like what people call an octopus in cartoons. It's a giant octopus.<br />
+</li><li> And within that squid, there is a large nerve that goes from the head, down here to the bottom of the body. It's a nerve that has a very large diameter. Giant squids are rarely, rarely seen, but occasionally, they are brought up from the ocean. And, Hodgkin and Huxley studied the nerve of the giant squid when giant squids were brought into shore at the Wood's Hole Institute in the North Eastern United States. They studied the giant squid because the axon itself was giant.  </p>
+</li></ul>
+
+<p><strong>Hodgkin and Huxley Squid Axon, Electrodes (slide 7)</strong><br />
+<ul><li> We look at a sketch, we'd say the thing that made the giant squid nerve different from other nerves was the fact that its diameter, the diameter of the nerve, was large enough that it was possible to place, within that nerve, some wires. You could actually push wires down the center so they would push at least two wires. So here, there's a wire that I have is a red wire. And another wire that I have is a green wire.<br />
+</li><li> There are wonderful descriptions of this in the literature if you have time to look them up that show pictures and show exactly step-by-step. Really well worth reading.<br />
+</li><li> So, if you think about now what they do with the wires, they put corresponding wires outside and they can use them to pairs of wires to measure the voltage from the inside to the outside. They could use other pairs of wires. Here, I've used the green wires.<br />
+</li><li> They can use the second pair of wires to pass currents through the membrane. And by doing combinations of voltages and currents, they can deduce how the membrane is working. At least, that was their goal. It wasn't easy so they had to do it carefully and repetitively.<br />
+</li><li> Additionally, the fact that the wires went from one end to the other was for the purpose of understanding an advantage. Because it meant that the same thing was happening all up and down the whole entire fiber.<br />
+</li><li> So, this entire fiber is, as people call it now, space clamped. I'll write that, space clamped. Which means, there can be new variation as you move from place to place. It's all clamped together, as far as sites.<br />
+</li><li> So, any changes that they saw, since it was space clamped, had to be changes that were occurring, somehow or other, across the membrane.  </p>
+</li></ul>
+
+<p><strong>Hodgkin and Huxley Squid Axon, Electrodes (slide 8)</strong><br />
+<ul><li> The fact that they had this squid axon in an experimental apparatus gave them a number of advantages. But, two advantages that were important to the experiments were, first, they could change the composition of the solution. I'll just draw it as if it's coming out on a fire hose here.<br />
+</li><li> They could change the composition of the solution outside the axon. And by changing the composition of the solution, they could introduce solutions that add more sodium ions, or fewer sodium ions, or more potassium or less potassium, or whatever compositional changes they wanted to have.<br />
+</li><li> As you know, when you change the concentration of the ions, you change the Nernst Potential across the membrane.<br />
+</li><li> Then, the second thing they could do, correlated with the first. They knew the compositions of the solutions so they could set the voltages to the equilibrium potentials, the Nernst Potentials of different ions. And watch what happened, which then had to be coming from other ions.<br />
+</li><li> So, if they set the potential to the Nernst Potential for sodium, they knew that sodium ions wouldn't move and the movements that were observed, whatever they were, had to be from potassium, and vice versa. So, that gave them some degree of flexibility in figuring out what was going on.  </p>
+</li></ul>
+
+<p><strong>Hodgkin and Huxley Squid Axon, Model (slide 9)</strong><br />
+<ul><li> The core idea of the Hodgkin-Huxley model was to do the following thing. To say look, the problem with the passing model is this current, that's the resistive current, because this axon is not just a resistor. Rather, what we will do is replace that resistive current with a set of three currents: one for sodium, one for potassium, and one for everything else put together (chlorine ions plus all other irons). So, they have one for sodium, one for potassium, one for all others which they call leakage. And determine what happens on each of these pathways separately.<br />
+</li><li> And by doing that, they created a model that could explain action potentials.<br />
+</li><li> We will come back and study this model in more detail. The important thing they did, from our point of view, is not only did they describe their experimental findings, but they described them mathematically. That is to say, in equations. So, we can pick up the equations and use them in other contexts.<br />
+</li><li> For the mathematical theory and for the work as a whole, Hodgkin and Huxley actually received the Nobel Prize. At that point they were already very famous and the work itself, not the prize, but the work itself was so meritorious (in the sense of introducing so many ideas that explained what was seen on experiments), was so meritorious that it became the basis of quite a lot of work in understanding the squid exon and understanding other axons. And then, by creating new models as extensions of the Hodgkin-Huxley model in understanding other kinds of excitable tissue.<br />
+</li><li> Thank you for watching this segment and we'll come back and talk in somewhat more detail about the Hodgkin-Huxley model and the ideas underneath it.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 34/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L2&amp;oldid=8424">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L2&amp;oldid=8424</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

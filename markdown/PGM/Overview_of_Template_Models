@@ -1,0 +1,55 @@
+[[Category:Probabilistic Graphical Models]]
+Template models are a convenient way of representing Bayesian networks that have a high amount of parameter sharing and structure. There are merely compact versions of a fully unrolled Bayesian model. <br>
+
+One example of a Template Model:<br>
+
+ - Genetic Inheritance
+     - Pedigree Tree 
+         - Sharing between models
+         - Sharing within models (for example, inheritance model that applies to Bart also applies to Lisa and Maggie)
+<br>
+
+We'd like to have some way of constructing models that have this large amount of shared structure that allows us to: <br>
+
+ - construct large models from sparse parametrization
+ - construct families of models from a single concise representation
+<br>
+
+Other examples of template models: <br>
+
+ - NLP (Natural Language Processing) Sequence Models.  for example Named Entity Recognition
+ - Image Segmentation (sharing across pixels and pairs of superpixels).  Sharing between and within a model.
+ - Robot Localization.  An example of a time series.  Although the position at time t is different/changes over time we expect that the dynamics of the robot are fixed.
+<br>
+
+Returning to the university example where a student takes a class and gets a grade that depends on the course difficulty and the intelligence of the student.<br>
+To think of this problem across a university, multiple difficulty variables (one for each course) and multiple intelligence variables (depending on intelligence of individual students) <br>
+
+###Template Variables
+<br>
+
+ - Template variable X(U1,..,Uk) is instantiated (duplicated) multiple times.  For example:
+   - Location(t), Sonar(t)
+   - Genotype (person), Phenotype (person)
+   - Label (pixel)
+   - Difficulty (course), Intelligence (student), Grade (course, student)
+
+
+ - Languages that specify how (ground) variables inherit dependency model from template
+ - Different types
+    - Dynamic Bayesian networks have been developed for temporal processes
+    - Object relational models.  These can be directed (i.e. plate models) or undirected.  For example, people, courses, pixels...
+
+
+Lecture Video Table of Contents
+----
+<pre>
+0:00	Overview
+0:31	Genetic inheritance example
+2:47	NLP sequence models
+4:24	Image segmentation model
+5:45	Student example
+7:38	Robot localization
+8:55	Template variables
+9:54	Template models
+</pre>

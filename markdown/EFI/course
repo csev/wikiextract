@@ -1,0 +1,66 @@
+Here is how to get data from the text of the quiz into R:
+
+This is Roses Examples from Quiz 5
+
+Rishat is interested in maximizing the life of cut roses. Therefore, his outcome variable will be the number of days his roses looked presentable in their vase, after he has cut them.
+
+Flickr: judybaxter
+
+To investigate this Rishat has considered the following two factors:
+
+    S = Quantity of sugar in vase water: low level was 0 g/ml, and high level was 3 g/ml.
+    V = Quantity of vodka in vase water: low level was 0 g/ml, and high level was 3 g/ml.
+
+A full factorial experiment was run in random order and Rishat noted that the flowers had a life as shown in the standard order table:
+
+Experiment number 	S 	V 	y = Life of flowers (Days)
+
+1 	0 	0 	4
+
+2 	3 	0 	5
+
+3 	0 	3 	12
+
+4 	3 	3 	13
+
+
+In addition to the full factorial, a 5th experiment was run at the center point:
+
+Experiment number 	S 	V 	y = Life of flowers (Days)
+
+5 	1.5 	1.5 	8
+
+From Rishat's results above, select the following correct options. 
+
+
+Here is R Code
+
+```{r Q04}
+
+str_data="
+
+Ex   S 	V 	Life
+
+1 	0 	0 	4
+
+2 	3 	0 	5
+
+3 	0 	3 	12
+
+4 	3 	3 	13
+
+5   1.5 	1.5 	8
+
+"
+
+con <- textConnection(str_data)
+
+
+roses=read.table(con, sep="", header=T)
+
+fS = with(roses, scale(S))
+
+fV = with(roses, scale(V))
+
+
+```

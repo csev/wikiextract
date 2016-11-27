@@ -1,0 +1,72 @@
+[[Category:Coursera]]
+[[Category:Cryptography I]]
+Opportunity to post resources for your classmates based on lectures and subjects.
+
+* [[Crypto:Definitions]] A page to list terms defined in the course.  
+* [[Crypto:Complementary]] A page to list complementary resources for learning math or programming.  
+* [[Crypto:Tools]] Tools you may want to use.
+* [[Crypto:Homework]] A page about the homework not meant for spoilers.
+* [[Crypto:Abbreviations]] A list of abbreviations used in the course.
+
+
+## Lecture Notes
+
+### Week 1
+
+#### Introduction
+
+* [[Crypto:Course Overview|Course overview]]
+* [[Crypto:What is cryptography|What is cryptography?]]
+* [[Crypto:History of cryptography|History of cryptography]]
+* [[Crypto:Discrete probability crash course|Discrete probability (crash course, 2 parts)]]
+
+#### Stream Ciphers
+
+* [[Crypto:Information theoretic security and the one time pad|Information theoretic security and the one time pad]]
+* [[Crypto:Stream ciphers and pseudo random generators|Stream ciphers and pseudo random generators]]
+* [[Crypto:Attacks on stream ciphers and the one time pad|Attacks on stream ciphers and the one time pad]]
+* [[Crypto:Real-world stream ciphers|Real-world stream ciphers]]
+* [[Crypto:PRG security definitions|PRG security definitions]]
+* [[Crypto:Semantic security|Semantic security]]
+* [[Crypto:Stream ciphers are semantically secure|Stream ciphers are semantically secure]]
+
+## Week 2
+
+    Block ciphers and pseudorandom functions.
+    Chosen plaintext security and modes of operation.
+    The DES and AES block ciphers.
+
+* Errata for "The Data Encryption Standard" approx. 6 minutes into the lecture:
+  The formula for the Feistel Network $$R_i$$ is missing $$-1$$; the formula
+  should read $$R_i = f_i(R_{i-1}) \oplus L_{i-1}$$.
+
+## Week 3
+
+    Message integrity. CBC-MAC, HMAC, PMAC, and CW-MAC.
+    Collision resistant hashing.
+
+## Week 4
+
+    Authenticated encryption. CCM, GCM, TLS, and IPsec.
+    Key derivation functions.
+    Odds and ends: deterministic encryption, non-expanding encryption,
+    and format preserving encryption.
+
+## Week 5
+
+    Basic key exchange: Diffie-Hellman, RSA, and Merkle puzzles.
+    A crash course in computational number theory.
+    Number theoretic hardness assumptions.
+
+## Week 6
+
+    Public key encryption.
+    Trapdoor permutations and RSA.
+    The ElGamal system and variants.
+
+## Further Reading
+*  [[Crypto:Further Reading|Links to Further Reading material from the lectures]]
+
+## Sandbox
+
+Thought I'd add a [[Sandbox]], and use it to share notes and elucidate course experience

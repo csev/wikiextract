@@ -1,0 +1,61 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Programdesign:Design Cheat Sheet</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>The Design Cheat Sheet lays out each step you take when using the How to Design Programs recipe. If you have only learned <a rel="nofollow" class="external text" href="https://class.coursera.org/programdesign-002/wiki/view?page=HtDFunctions">HtDF</a> or <a rel="nofollow" class="external text" href="https://class.coursera.org/programdesign-002/wiki/view?page=HtDData">HtDD</a> you may be better off visiting their respective pages. </p>
+<h2> <span class="mw-headline" id="HtDW">HtDW</span></h2>
+<ol>
+<li>Domain analysis (use a piece of paper!)
+
+<ol>
+<li>Sketch program scenarios</li>
+<li>Identify constant information</li>
+<li>Identify changing information</li>
+<li>Identify big-bang options</li>
+</ol></li>
+<li>Build the actual program
+
+<ol>
+<li>Constants (based on 1.2 above)</li>
+<li><a href="/wiki/index.php/Data_definition" title="Data definition">Data definition</a> (based on 1.3 above)</li>
+<li>Functions
+<ul><li>. main first (based on 1.3, 1.4 and 2.2 above)
+</li><li>. wish list entries for <a href="/wiki/index.php?title=Big-bang&amp;action=edit&amp;redlink=1" class="new" title="Big-bang (page does not exist)">big-bang</a> handlers</li>
+</li></ul>
+<li>Work through wish list until done</li>
+</ol></li>
+</ol>
+<h2> <span class="mw-headline" id="HtDD">HtDD</span></h2>
+<ol>
+<li>A possible <a href="/wiki/index.php?title=Structure_definition&amp;action=edit&amp;redlink=1" class="new" title="Structure definition (page does not exist)">structure definition</a>.</li>
+<li>A <a href="/wiki/index.php?title=Type_comment&amp;action=edit&amp;redlink=1" class="new" title="Type comment (page does not exist)">type comment</a> that defines a new type name and describes how to form data of that type.</li>
+<li>An interpretation that describes the correspondence between information and data.</li>
+<li>One or more examples of the data.</li>
+<li>A <a href="/wiki/index.php/Template" title="Template">template</a> for a 1 argument function operating on data of this type.</li>
+</ol>
+<h2> <span class="mw-headline" id="HtDF">HtDF</span></h2>
+<ol>
+<li><a href="/wiki/index.php/Signature" title="Signature">Signature</a>, <a href="/wiki/index.php/Purpose" title="Purpose">purpose</a> and <a href="/wiki/index.php/Stub" title="Stub">stub</a>.</li>
+<li>Define examples, wrap each in check-expect.</li>
+<li>Template and inventory.</li>
+<li>Code the function body.</li>
+<li>Test and debug until correct</li>
+</ol>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Programdesign:Design_Cheat_Sheet&amp;oldid=17146">https://share.coursera.org/wiki/index.php?title=Programdesign:Design_Cheat_Sheet&amp;oldid=17146</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

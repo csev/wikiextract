@@ -1,0 +1,59 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Introduction</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="What_is_Machine_Learning.3F">What is Machine Learning?</span></h1>
+<p>Two definitions of Machine Learning are offered. Arthur Samuel described it as: "the field of study that gives computers the ability to learn without being explicitly programmed." This is an older, informal definition.</p>
+<p>Tom Mitchell provides a more modern definition: "A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E."</p>
+<p>Example: playing checkers.
+<ul><li> E = the experience of playing many games of checkers
+</li><li> T = the task of playing checkers.
+</li><li> P = the probability that the program will win the next game.</p>
+</li></ul>
+
+<p>In general, any machine learning problem can be assigned to one of two broad classifications:<br />
+<ul><li> supervised learning, OR
+</li><li> unsupervised learning.</p>
+</li></ul>
+
+<h1> <span class="mw-headline" id="Supervised_Learning">Supervised Learning</span></h1>
+<p>In supervised learning, we are given a data set and already know what our correct output should look like, having the idea that there is a relationship between the input and the output. </p>
+<p>Supervised learning problems are categorized into "<strong>regression</strong>" and "<strong>classification</strong>" problems. In a <strong>regression</strong> problem, we are trying to predict results within a <strong>continuous</strong> output, meaning that we are trying to map input variables to some <strong>continuous</strong> function. In a <strong>classification</strong> problem, we are instead trying to predict results in a <strong>discrete</strong> output. In other words, we are trying to map input variables into <strong>discrete</strong> categories. Here is a description on Math is Fun on <a rel="nofollow" class="external text" href="https://www.mathsisfun.com/data/data-discrete-continuous.html">Continuous and Discrete Data</a>.</p>
+<p><strong>Example 1</strong>: </p>
+<p>Given data about the size of houses on the real estate market, try to predict their price. Price as a function of size is a <em>continuous</em> output, so this is a regression problem. </p>
+<p>We could turn this example into a classification problem by instead making our output about whether the house "sells for more or less than the asking price." Here we are classifying the houses based on price into two <em>discrete</em> categories.</p>
+<p><strong>Example 2</strong>:
+       (a)Regression     - Given a picture of Male/Female, We have to predict his/her age on the basis of given picture.
+       (b)Classification - Given a picture of Male/Female, We have to predict Whether He/She is of High school, College, Graduate age.
+       Another Example for Classification - Banks have to decide whether or not to give a loan to someone on the basis
+                                            of his credit history.</p>
+<h1> <span class="mw-headline" id="Unsupervised_Learning">Unsupervised Learning</span></h1>
+<p>Unsupervised learning, on the other hand, allows us to approach problems with little or no idea what our results should look like. We can derive structure from data where we don't necessarily know the effect of the variables.</p>
+<p>We can derive this structure by <strong>clustering</strong> the data based on relationships among the variables in the data.</p>
+<p>With unsupervised learning there is no feedback based on the prediction results, i.e., there is no teacher to correct you.</p>
+<p><strong>Example</strong>:</p>
+<p><em>Clustering</em>: Take a collection of 1000 essays written on the US Economy, and find a way to automatically group these essays into a small number that are somehow similar or related by different variables, such as word frequency, sentence length, page count, and so on.</p>
+<p><em>Non-clustering</em>: The "Cocktail Party Algorithm", which can find structure in messy data (such as the identification of individual voices and music from a mesh of sounds at a <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Cocktail_party_effect">cocktail party</a>).
+Here is an answer on Quora to enhance your understanding.&#160;: <a rel="nofollow" class="external text" href="https://www.quora.com/What-is-the-difference-between-supervised-and-unsupervised-learning-algorithms">What is the difference between supervised and unsupervised learning algorithms?</a></p>
+<p><hr />
+Next:  <a href="/wiki/index.php/ML:Linear_Regression_with_One_Variable" title="ML:Linear Regression with One Variable">Linear Regression with One Variable</a></p>
+<p>Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Introduction&amp;oldid=33887">https://share.coursera.org/wiki/index.php?title=ML:Introduction&amp;oldid=33887</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

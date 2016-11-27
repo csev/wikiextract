@@ -1,0 +1,166 @@
+Here you'll find all transcripts of the python sessions shown in the videos
+
+#Week 0
+## The Field: Introduction to complex numbers
+
+    >>> 3j
+    3j
+    >>> j
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+    NameError: name 'j' is not defined
+    >>> 1j
+    1j
+    >>> 1+3j
+    (1+3j)
+    >>> 1+3j + (10+20j)
+    (11+23j)
+    >>> x = 1+3j
+    >>> (x-1)**2
+    (-9+0j)
+    >>> x.real
+    1.0
+    >>> x.imag
+    3.0
+    >>> type(1+2j)
+    <class 'complex'>
+
+## The Field: Playing with C
+
+    >>> L = [2+2j, 3+2j, 1.75+1j, 2+1j, 2.25+1j, 2.5+1j, 2.75+1j, 3+1j, 3.25+1j]
+    >>> from plotting import plot
+    >>> plot(L)
+    >>> from image import *
+    >>> I = color2gray(file2image('img01.png'))
+    >>> r = len(I)
+    >>> c = len(I[0])
+    >>> M = [x + y*1j for x in range(c) for y in range(r) if I[r-y-1][x] < 120]
+    >>> plot(M, max(r,c), 1)
+    >>> abs(1+1j)
+    1.4142135623730951
+    >>> plot({z + (1+2j) for z in L})
+    >>> plot([z - (c/2 + (r/2)*1j) for z in M], max(r,c), 1)
+    >>> plot({0.5 * z for z in L})
+    >>> plot([.5*z for z in M], r, 1)
+    >>> plot({(-1)*z for z in L})
+    >>> plot([-z for z in M], r, 1)
+    >>> from math import e, pi
+    >>> plot([e**(t*2*pi*1j/20) for t in range(20)])
+    >>> plot([2 * e**(t*2*pi*1j/20) for t in range(20)])
+    >>> plot([e**(pi*1j/4)* z for z in L])
+    >>> plot([e**(pi*1j/4) * z for z in M], r, 1)
+
+## The Field: Playing with GF(2)
+
+    >>> def encrypt(p,k): return p+k
+    ... 
+    >>> from GF2 import one
+    >>> k = one
+    >>> p = one
+    >>> c = encrypt(p, k)
+    >>> c
+    0
+
+#Week 1
+## The Vector: What is a vector?
+
+    >>> from plotting import plot
+    >>> L = [[2, 2], [3, 2], [1.75, 1], [2, 1], [2.25, 1], [2.5, 1], [2.75, 1], [3, 1], [3.25, 1]]                                                                  
+    >>> plot(L)
+
+## The Vector: Vector addition and scala-vector multiplication
+
+    >>> def scalar_vector_mult(alpha, v): return [alpha*x for x in v]  # from in-video quiz
+    >>> v = [3, 2]
+    >>> plot([scalar_vector_mult(i/10, v) for i in range(11)], 5)
+    >>> plot([scalar_vector_mult(i/100, v) for i in range(100)], 5)
+    >>> plot([scalar_vector_mult(i/100, v) for i in range(-1000, 1000)], 5)
+
+#Week 3
+## The Matrix: Matrix-vector and vector-matrix multiplication
+
+    >>> n = 2
+    >>> D = {(i, j) for i in range(n) for j in range(n)}
+    >>> from vec import Vec
+    >>> from GF2 import one
+    >>> b00 = Vec(D, {(0, 0): one, (0, 1): one, (1, 0): one})
+    >>> b01 = Vec(D, {(0, 0): one, (0, 1): one, (1, 1): one})
+    >>> b02 = Vec(D, {(0, 0): one, (0, 1): one, (1, 1): one})
+    >>> b10 = Vec(D, {(0, 0): one, (1, 0): one, (1, 1): one})
+    >>> b11 = Vec(D, {(0, 1): one, (1, 0): one, (1, 1): one})
+    >>> from matutil import coldict2mat
+    >>> A = coldict2mat({(0, 0): b00, (0, 1): b01, (1, 0): b10, (1, 1): b11})
+    >>> b = Vec(D, {(0, 0): one, (1, 0): one})
+    >>> from solver import solve
+    >>> x = solve(A, b)
+    >>> A * x == b
+    True
+    >>> x
+    Vec({(0, 1), (1, 0), (0, 0), (1, 1)},{(0, 1): one, (1, 0): 0, (0, 0): 0, (1, 1): one})
+    >>> print(x)
+    
+     (0, 0) (0, 1) (1, 0) (1, 1)
+    ----------------------------
+          0    one      0    one
+    >>> from mat import Mat
+    >>> row_labels = {'gnome', 'hoop', 'slinky', 'putty', 'shooter'}
+    >>> col_labels = {'metal', 'concrete', 'plastic', 'water', 'electricity'}
+    >>> M = Mat((row_labels, col_labels),
+    ... {('gnome', 'concrete'): 1.3, ('gnome', 'plastic'): .2, ('gnome', 'water'): .8, ('gnome', 'electricity'): .4,
+    ... ('hoop', 'plastic'): 1.5, ('hoop', 'water'): .4, ('hoop', 'electricity'): .3,
+    ... ('slinky', 'metal'): .25, ('slinky', 'water'): .2, ('slinky', 'electricity'): .7,
+    ... ('putty', 'plastic'): .3, ('putty', 'water'): .7, ('putty', 'electricity'): .5,
+    ... ('shooter', 'metal'): .15, ('shooter', 'plastic'): .5, ('shooter', 'water'): .4, ('shooter', 'electricity'): .8})
+    >>> b = Vec(col_labels, {'electricity': 1409.5, 'water': 1485.0, 'concrete': 1300.0, 'metal': 226.25, 'plastic': 677.0})
+    >>> u = solve(M.transpose(), b)
+    >>> print(u)
+
+     gnome hoop putty shooter slinky
+    --------------------------------
+     1E+03  175   590      75    860
+    >>> u
+    Vec({'slinky', 'gnome', 'shooter', 'hoop', 'putty'},{'shooter': 75.0000000000432, 'slinky': 859.9999999999636, 'putty': 589.9999999999914, 'hoop': 174.99999999998727, 'gnome': 1000.0})
+    >>> u*M
+    Vec({'metal', 'plastic', 'water', 'concrete', 'electricity'},{'plastic': 676.9999999999999, 'water': 1488.9999999999989, 'metal': 226.24999999999739, 'electricity': 1409.500000000001, 'concrete': 1300.0})
+    >>> res = b - u*M
+    >>> res*res
+    8.969739767371894e-24
+
+## The Matrix: Matrix-vector multiplication in terms of dot-products
+
+    >>> D = {'radio', 'sensor', 'memory', 'CPU'}
+    >>> duration1 = Vec(D, {'radio': .1, 'CPU': .3})
+    >>> duration2 = Vec(D, {'sensor': .2, 'CPU': .4})
+    >>> duration3 = Vec(D, {'memory': .3, 'CPU': .1})
+    >>> duration4 = Vec(D, {'memory': .5, 'CPU': .4})
+    >>> from matutil import rowdict2mat
+    >>> A = rowdict2mat({1: duration1, 2: duration2, 3: duration3, 4: duration4})
+    >>> print(A)
+    
+            CPU memory radio sensor
+         --------------------------
+     1  |   0.3      0   0.1      0
+     2  |   0.4      0     0    0.2
+     3  |   0.1    0.3     0      0
+     4  |   0.4    0.5     0      0
+
+    >>> b = Vec({1, 2, 3, 4}, {1: 140.0, 2: 170.0, 3: 60.0, 4: 170.0})
+    >>> rate = solve(A, b)
+    >>> print(rate)
+    
+     CPU memory radio sensor
+    ------------------------
+     300    100   500    250
+    >>> res = b - A*rate
+    >>> res*res
+    1.666074231826777e-27
+    >>> rate
+    Vec({'CPU', 'radio', 'sensor', 'memory'},{'CPU': 300.0, 'radio': 500.0000000000002, 'sensor': 249.9999999999999, 'memory': 100.00000000000003})
+
+
+
+
+
+
+
+[[Category:Coding the Matrix|Tr]]

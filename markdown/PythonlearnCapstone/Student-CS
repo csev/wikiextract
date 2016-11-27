@@ -1,0 +1,27 @@
+I am interested in crawling criminal docket sheets for the Court of Common Pleas of Philadelphia County. These are available to the public through a search interface here:
+
+https://ujsportal.pacourts.us/DocketSheets/CP.aspx
+
+The interface is somewhat clunky and does not provide for in-depth data analysis, however the information is organized in a way that does facilitate web crawling and docket parsing.
+
+Docket sheets are available in PDF format at URLs that incorporate the docket number. Part of the docket numbers are sequential. For instance, see the following URL:
+
+https://ujsportal.pacourts.us/DocketSheets/CPReport.ashx?docketNumber=CP-51-CR-0000001-2012
+
+The docket number is at the end: CP-51-CR-0000001-2012. This docket was filed in the Common Pleas (CP) court of Philadelphia (51) in the Criminal Division (CR) in 2012. The '0000001' number iterates sequentially. In 2012, there were 15,377 dockets filed in this division, so the last docket number for that year is CP-51-CR-0015377-2012. My first step is to write code to parse the URL, extract the numerical portion of the docket number, and build a loop to pull the file, search for information, and then add +1 to that numerical portion to continue onto the next docket number. I'm working on the code for this and can share if anyone is interested.
+
+Ultimately, I intend to parse the PDFs using PDFminer, search through them for a particular phrase, and if the phrase appears I will extract additional data from the PDF into a SQLite database for analysis. PDFs are notoriously difficult to work with, but luckily these are OCR'd and the data is formatted in a way that seems dependable, so far!
+
+For the purposes of this project, I'm only planning to concentrate on dockets from 2012 that contain the phrase 'Post-Conviction Relief Act Petition Filed'. I want to explore the length of time between when that petition is filed and the next 'Entry of Appearance' (i.e. when an attorney is assigned to the case), how many attorneys are taking Post-Conviction Relief Act cases in Philadelphia, and how many of these cases each attorney is assigned to, on average.
+
+If the phrase 'Post-Conviction Relief Act Petition Filed' does appear, I intend to pull the following into SQLite database(s):
+- Docket number (from the sheet or URL)
+- Date listed in the line immediately above the term "Post-Conviction Relief Act Petition Filed"
+- Search for the first time this phrase appears after the petition was filed: "Entry of Appearance"
+- Date listed in the line immediately above the term "Entry of Appearance"
+- Attorney's name listed in the line immediately above the term "Entry of Appearance"
+
+Here is the PDFMiner download: http://www.unixuser.org/~euske/python/pdfminer/index.html#download
+And a link to the API: http://www.unixuser.org/~euske/python/pdfminer/programming.html
+
+I've made some progress on this and can share if anyone is interested in working together. Please contact me if so.

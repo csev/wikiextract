@@ -1,0 +1,64 @@
+
+
+#Lecture Video Table of Contents
+
+##ML Class Review (Dr. Andrew Ng)
+
+###Regularization: The Problem of Overfitting
+<pre>
+0:39	What is overfitting?
+4:24	Logistic regression example
+6:03	Addressing overfitting
+</pre>
+
+###Regularization: Cost Function
+<pre>
+0:35	Intuition
+2:44	Regularization
+8:01	Ajusting the regularization coefficient
+</pre>
+
+###Evaluting a Hypothesis
+<pre>
+0:45	How to recognize overfitting
+3:26	Training/testing procedure for linear regression
+4:49	Procedure for logistic regression
+</pre>
+
+###Model Selection and Train Validation Test Sets
+<pre>
+0:35	Overfitting example
+1:37	Model selection
+6:25	Evaluating your hypothesis
+8:09	Train/validation/test error
+11:01	Keeping the cross validation set separate from the test set
+</pre>
+
+###Diagnosing Bias versus Variance
+<pre>
+0:51	Bias/variance
+4:15	Diagnosing bias and variance
+</pre>
+
+###Regularization and Bias Variance
+<pre>
+0:24	Linear regression with regularization
+2:19	Choosing the regularization parameter lambda
+6:40	Bias/variance as a function of lambda
+</pre>
+
+## Learning: Overview
+
+###Learning: Overview
+<pre>
+0:24	Learning
+2:12	Unknown structure, complete data
+2:31	Known structure, incomplete data
+2:54	Unknown structure, incomplete data
+3:26	PGM learning tasks 1
+6:08	PGM learning tasks 2
+8:06	PGM learning tasks 3
+10:20	Avoiding overfitting
+11:40	Selecting hyperparameters
+13:45	Why PGM learning?
+</pre>

@@ -1,0 +1,84 @@
+Please note these notes are provided by a fellow student on a best effort basis. There may be mistakes in the in the text or parts may have been left out.
+
+##Lecture 3A: What is Epidemiology?
+Epidemiology 	→ Study of disease in populations
+		→ Study of rates (Langmuir)
+Prevalence (burden and demand)
+Incidence (force of morbidity)
+		→The study of disease occurrence by time place and person (Lilienfeld and Stolley)
+Etiology	→ The study of causes of disease
+
+Seven uses of epidemiology (Morris 1976):
+1. The study of the history of health of populations, facilitating projections into the future
+2. To diagnose the health of the community, which facilitates prioritizing health problems
+3. To study the working of health services, with a view towards their improvement
+4. To estimate individual risks, and how to avoid the, which can be communicated to individuals
+5. To identify syndromes (collections of signs and symptoms)
+6. To complete the clinical picture of chronic disease, especially as regards natural history
+7. To search for causes of health and disease. 
+
+Mostly first discover how to prevent a disease first and (much) later find exactly why that prevents a disease (ie. Epidemiology first, etiology catches up later).
+Prevention has a very strong effect, a cure is great but better not to get something.
+
+##Lecture 3B: Time, Space and Disease: The Ecological Approach 
+
+Example of a Cholera epidemic in London late 1854. John Snow did lots of research to determine where Cholera came from. Found that it came from a specific pump. 
+He looked at exceptions. For example, little deaths in the brewery or the workhouse (ie. probably not in the air).
+
+Hard to do a similar study on depression. But Messias et al, PS, 2011 tried. Found, higher rates of social inequality give higher depression rates.  
+
+##Cohort studies
+Cohort studies look forward, case control studies look backward. 
+
+
+Relative risk for Cohort studies
+Relative odds for Case Control studies
+
+Lung cancer research. First find a group/cohort then track them. 
+
+Strength cohort studies:
+* No recall bias
+* Estimate incidence
+* Estimates relative risks
+Weaknesses:
+* Expensive
+* Many controls (ie. Few people with the disease lots of people without)
+* Can take a long time
+* Attrition bias (you may lose more or less people with the disease due to the disease) 
+
+##Lecture 3C: Case Control Study
+You find people with the disease (ex. Lung cancer) and a number of people without, but other as similar as possible. 
+Can't calculate incidence. 
+
+Brown and Harris (1987) Importance of live events on onset depression. Relative odds 8.72
+
+Strength case control studies:
+* Requires no hypothesis
+* Cases can come from clinics
+* Small number of controls
+Weaknesses:
+* Biased recall (strength) (effort after reason)
+* Temporality → which came first?
+* Controls may not match cases (consistency)
+
+##Lecture 3D: The web of Causation
+“The web of causation, has anybody seen the spider?” (Krieger, Social Science and Medicine, 1994)
+Can we really know what causes what?
+* Association, risk and cause
+
+Why is causality important? → It can lead to prevention
+
+How do we evaluate evidence on cause?
+* Strength (of causation)
+* Dose-response (more smoking leads to more lung cancer)
+* Consistency (across studies, locations, era, race)
+* Temporality (cause occurs before disease)
+* Specificity (more convincing if one cause has one outcome. Doesn't need to be there, but helps)
+* Plausibility (have a physical logical theory)
+
+Confounding. More deaths in Florida. Does Florida cause more deaths? Or is there another reason. 
+Death rate is confounded by age. 
+Fix confounding by Age adjustment
+There are a large number of way to adjust for confounding variables. 
+
+Hence, the web of causation. Which of these causes is 'the' cause. And often there is no 1 cause. Epidemiology suggests clues to etiology.

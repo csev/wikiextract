@@ -1,0 +1,74 @@
+This class covers a collection of principles that are fundamental to Computer Science. As a motivating application of these principles, we will examine a collection of strategy games and apply these principles in the analysis/solution of these games.
+
+Each week, you will watch a set of 6-8 videos and then complete homework on the mathematical aspects of these concepts. Your main weekly task is to complete a mini-project that furthers your practical understanding of the material. Both assignments have a soft deadline of Monday and a hard deadline of Thursday. An optional collection of practice activities is also available to further reinforce the concepts introduced in the videos.
+
+Below is a tentative syllabus for the class. Please note that the topics and mini-projects listed below are subject to change.
+
+<table align="center">
+<tr>
+<th>Week</th>
+    <th>Concepts</th>
+    <th>Mini-project</th>
+  </tr>
+<tr>
+<td>0</td>
+    <td> Introduction, coding standards </td>
+    <td> 2048 </td>
+  </tr>
+<tr>
+<td>1</td>
+    <td> Counting, growth of functions, lambda </td>
+   <td> Cookie Clicker </td>
+ 
+  </tr>
+<tr>
+<td>2</td>
+    <td> Probability, randomness, objects/references</td>
+   <td> Tic-Tac-Toe (Monte-Carlo) </td>
+  </tr>
+<tr>
+<td>3</td>
+    <td> Combinatorics, generators, debugging </td>
+   <td> Yahtzee </td>
+  </tr>
+<tr>
+<td>4</td>
+    <td> Searching, data structures, inheritance </td>
+    <td> Zombie Apocalypse (BFS) </td>
+  </tr>
+<tr>
+<td>5</td>
+    <td> Recursion, sorting, reading files </td>
+    <td> Word Wrangler </td>
+  </tr>
+<tr>
+<td>6</td>
+    <td> Trees, game tree search, testing </td>
+    <td> Tic-Tac-Toe (Tree search) </td>
+  </tr>
+<tr>
+<td>7</td>
+    <td> Design of abstractions, models, invariants</td>
+    <td> The "Fifteen" puzzle</td>
+  </tr>
+</table>
+
+##Course Staff
+
+**Joe Warren**, Professor, Department of Computer Science at Rice University. His main area of research interest is computer graphics and geometric modeling, where he has published extensively. Does not wear ties
+
+**Scott Rixner**, Associate Professor, Department of Computer Science at Rice University. His research focuses on systems software and computer architecture. Wears ties of various colors.
+
+**Luay Nakhleh**, Associate Professor, Department of Computer Science.
+
+##Miscellaneous (Bugs,Errors,Etc)
+
+[[Principlescomputing:Resources|Resources (books and websites)]]
+
+- Created Wed 12 Mar 2014 1:34 PM EDT
+
+- Last Modified Wed 4 Jun 2014 2:34 PM EDT
+
+[[Category:Computer Science]]
+[[Category:Coursera]]
+[[Category:Python]]

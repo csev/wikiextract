@@ -1,0 +1,859 @@
+[[Category:Computer Networks]]
+[[Category:Computer Science]]
+[[Category:Coursera]]
+# Computer Networks #
+by Arvind Krishnamurthy, David Wetherall, John Zahorjan
+
+[https://class.coursera.org/comnetworks-2012-001/class/index Course Home Page]
+
+[http://www.amazon.com/gp/product/0132126958/ Optional Textbook]
+
+[http://computernetworks5e.org/blogs/ Textbook Blog]
+
+<a href="http://media.pearsoncmg.com/ph/streaming/esm/tanenbaum5e_videonotes/tanenbaum_videoNotes.html">Lecture Videos</a>
+
+## Background 
+
+This section provides a helping hand on specific topics that are prerequisites for taking the course.
+
+### Topic: Unit Conversion
+
+Unit conversions have been shown in lectures and requested in homework assignments. Here's a refresher for those who have forgotten or never learned the technique.
+
+Convert units of different measure, such as meters <=> feet or minutes <=> seconds, use a technique known as <a href="http://en.wikipedia.org/wiki/Units_conversion_by_factor-label">factor-label</a>.
+
+This technique multiplies known measures and units by ratios of equivalent measures, but different units, such that the undesired units cancel, and you're left the desired units.
+
+As an example, since light travels at 300,000,000 meters/second, as listed in class, and the earth is roughly 93,000,000 miles from the sun, how many minutes does it take for light from the sun to reach the earth?
+
+Time = Distance/Rate
+
+? minutes = (93,000,000 miles)/(300,000,000 meters/second)
+
+The units are all different like comparing apples to oranges. We'll use factor-label to bring them into alignment.
+
+We'll use a few equivalences:
+
+1 mile = 1609 meters
+
+1 minute = 60 seconds
+
+? minutes = (93,000,000 miles)/(300,000,000 meters/second) x (1609 meters/1 mile) x (1 minute/60 seconds)
+
+The units all cancel out leaving minutes. The numbers evaluate to: 8.31 minutes, or roughly 8 minutes and 20 seconds, which can be confirmed at <http://curious.astro.cornell.edu/question.php?number=197>
+
+### Topic: Logarithms (Used in Week 2 (Nyquist, Shannon))
+
+Most mathematical operations have an inverse, that is two operations that reverse each other. The inverse of addition is subtraction. The inverse of multiplication is division.
+
+The inverse of an exponent operation is the <a href="http://en.wikipedia.org/wiki/Logarithm">logarithm</a>. Let's first review exponents. This is a fixed base number raised to a certain power. For example $$10^x$$ is an exponent expression, which is basically 10 multiplied by itself x times. $$10^1 = 10$$. $$10^2 = 10 * 10 = 100$$. $$10^3 = 10 * 10 * 10 = 1000$$. 
+
+The logarithm works reverses this. If you have $$10^x = 10,000$$, and you want to know what x is, you use logarithms. In this case log(10,000) = 4. That is you have to multiple 10 by itself 4 times to get 10,000.
+
+But were did the 10 go in log(10,000)? Traditionally log(x) represents base 10; however, the properties of logarithms work for any base. If you wish to specify a base, it's represented as a subscript to the lower right of "log". There are several other common log bases, ln() is the logarithm for base e. This is used in physics and life sciences, but it doesn't appear much in computer science. log() and ln() appear on most scientific calculators.
+
+However <a href="http://en.wikipedia.org/wiki/Binary_logarithm">log base 2</a> occurs very frequently in computer science. It is sometimes represented as lg(n), ld(n), or even sometimes as log(n), which can get confusing with the base 10 version. lg(n) occurs frequently in computer science because it's the number of steps needed to split a group of elements into two equal groups repeatedly until you're down to one. Think of the kid's game Hi/Lo. One person thinks of a number from 1 to 100. The player guesses and is told if his guess is too high or too low from the secret number. The player narrows his guesses until the secret number is guessed. If the range were 1 to 1000, how many guesses would be required? It's 10, because lg(1,000) is just under 10, so the 10th guess might be needed.
+
+But calculators don't have lg(x) on them. How do we calculate lg(x)? There's a logarithmic formula for this: lg(x) = log(x)/log(2). That is log(x) of any base is log(x)/log(base), or even ln(x)/ln(base) too.
+
+Logarithms are part of common language, at least in America. We often refer to salaries by the number of "figures" in total annual pay. For example, a person making a 5 figure salary is making between $10,000 and $99,999 per year. A person making a 6 figure salary is making between $100,000 and $999,000 per year, etc. Using the term "x figure salary" is logarithmic (base 10), and usually well understood, even by people who claim they know nothing about logarithms!
+
+To learn more about logarithms, please see:
+
+* https://www.khanacademy.org/math/algebra/logarithms-tutorial
+
+* *LOGARITHMS :*(https://docs.google.com/file/d/0B0soxwuAdqQyTUxpVmpaYi1kX3c/edit?
+
+### Topic: Binary Representation of Numbers (Used in Week 2 (Hamming))
+
+Our number system is based upon 10, mostly assumed because most people have 10 fingers (including thumbs) on their hands. Each column of digits represents a power of 10. Each additional digit added at the front of the list of digit represents an additional base 10 added to the number. So 123 represents 1 * 100 + 2 * 10 + 3 * 1.
+
+We take this numerical representation for granted, since most of us learned it as young children, but think about how powerful it is. We can represent every integer from 0 to 999,999 with just a set of 6 digits. If you doubt the elegance of this system, consider doing some <a href="http://www.math.com/students/calculators_pre_ti/roman/compvterromanvs.html">arithmetic</a> using the <a href="http://en.wikipedia.org/wiki/Roman_numerals">Roman numerical system</a>. 
+
+When the first electrical/mechanical computers were designed, the engineers realized that representing 10 individual digits would not be feasible. However, they could represent a single digit system using a relay that was either on or off, where the on could be interpreted as a 1 and an off could be interpreted as a 0. Numbers could be represented in <a href="http://en.wikipedia.org/wiki/Binary_number">binary</a>, which is a set of 1 and 0 digits.
+
+This has some definite advantages. Digits could be represented easily. If larger values are needed, add more relays, where each new relay represents an additional power of 2. We can also think of on and off as being True and False, which leads us into the mathematical world described by George Bool and Boolean Algebra (http://en.wikipedia.org/wiki/Boolean_algebra). Not only could these on/off, 1/0, and True/False concepts be used for numerical representation, but they would help us design hardware to process these bits/digits as well.
+
+However, there are disadvantages. One needs more binary digits to represent a number than base 10 digits. 999,999 can be represented with 6 digits, but in binary it's 011110100001000111111 with 21 digits. It's also not easy for humans to think in binary after a few bits. The 21 digits for 999,999 aren't much more comprehensible than Roman numbers.
+
+Using base 10 for a number system isn't universal. The Babylonians used a number system based upon 60 (http://en.wikipedia.org/wiki/Babylonian_numerals), which still influences us today: 60 minutes in an hour and 60 seconds in a minute.
+
+Had humans ignored our thumbs and counted only with our fingers using base 8, or octal, life would have been so much easier for computer science students, because the conversion between binary and octal is trivial. Each 3 binary bits maps directly to one octal digit (0-7) and one octal digit maps directly to exactly 3 binary digits. There's an old computer science joke, which may not translate to non American cultures. Why do computer scientists confuse Halloween and Christmas? Because OCT31 = DEC25. Also in the cartoon show, The Simpsons, Bart or Lisa once asks why their number system is based upon 10 when they only have 8 fingers.
+
+For information about binary numbers see:
+
+* https://www.khanacademy.org/science/computer-science/v/binary-numbers
+
+
+### Topic: Hexadecimal Representation of Numbers (Used in Week 2 (Internet checksum))
+Binary representation is great for computers, but not so easy for people as mentioned in the binary representation of numbers above. Since binary and decimal are just two different representation for a common number concept, can we continue to think of the numbers in decimal even if the computer is using binary? Well yes and no. We could (and do) think in terms of decimal, but the mapping isn't too clean. For example 12 equates to 1100. 21 equates to 10101. Going back and forth is possible, but it takes a bit mental computation to make it happen. NOTE: programming languages such as C++, Java and Python allow us to program using decimal numbers, and the lower layers of the compiler, operating system, etc. take care of the conversion for us.
+
+Even so, for computer networks, we're really interested in sets of bits more than we're interested in their decimal equivalents. Rather than seeing a dizzying number of 0s and 1s, can we bundle them? Let's group bits in sets of 4, such as 0000, 0001, 0010, ..., 1110, 1111. There will be 16 total possible permutations of these 4 bit sequences. We can give each one a symbol: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f. For 0-9, the mapping is simple. The decimal symbols is the same as the binary representation. Since 0101 is 5 in binary, we'll use "5" as its symbol too. However, when we get to 1010, this is the binary representation for 10. That's not a single symbol, it's two symbols. So we'll use the letters of the alphabet with 1010 mapping to a, 1011 to b, etc.  up to 1111 to f. Sometimes capital letters A-F are also used.
+
+Not only does this give us a clean mapping of 4 bits to and forth a single symbol, but it also is the basis for a base 16 numbering system, which is called <a href="http://en.wikipedia.org/wiki/Hexadecimal">hexadecimal</a> (hexa: Greek for 6; and decimal: Latin roots associated with 10, or 6 + 10 = 16). It's also called just "hex" as an abbreviation.
+
+Hexadecimal numbers are sometimes prefixed with "0x", such as 0x12, so as not to confuse decimal 12 with hexadecimal 12, which is a different number. 0x12 = 18.
+
+If hexadecimal arithmetic gets too confusing, convert to decimal do the arithmetic, and convert back. Most computer science calculators will allow this. For example, 0x10 / 0x2 is not 0x5. It's 16 / 2, which is 8, which is still 0x8.
+
+If hexadecimal logic operations, such as AND, OR, NOT, get too confusing, convert the symbols to their 4 bits, do the operations, and convert the 4 bit sets back to hexadecimal. For example 0xa3 AND 0xb4 become 1010 0011 AND 1011 0100 => 1010 0000 =>  0xa0.
+
+* *Hexadecimal system:*(https://docs.google.com/file/d/0B0soxwuAdqQyTEt4SmV2TTN5c2s/edit?usp=sharing)
+* *Hexadecimal addition:*(https://docs.google.com/file/d/0B0soxwuAdqQyaWo1TDhmV05GQ1E/edit?usp=sharing)
+
+### Topic: XOR (exclusive OR) and Modulo Addition (Used in Week 2 (CRCs))
+
+The most common <a href="http://www.columbia.edu/cu/lweb/help/clio/boolean_operators.html">Boolean operators</a> are AND, OR and NOT; however, there are more, including <a href="https://en.wikipedia.org/wiki/Exclusive_or">XOR</a>. XOR is eXclusive OR. A OR B is defined as at least one of the two operands (A,B) must be True. For A XOR B exactly one of the operands must be true. In a Truth Table:
+
+<TABLE BORDER>
+<TR>
+<TH>A
+<TH>B
+<TH>A XOR B
+<TR>
+<TD>0
+<TD>0
+<TD>0
+<TR>
+<TD>0
+<TD>1
+<TD>1
+<TR>
+<TD>1
+<TD>0
+<TD>1
+<TR>
+<TD>1
+<TD>1
+<TD>0
+</TABLE>
+
+Sometimes restaurants will offer "Soup or Salad" with your meal. You only get to choose one. The menu should probably read "Soup xor Salad."
+
+<a href="http://en.wikibooks.org/wiki/Data_Coding_Theory/Modulo-2_Arithmetic">Modulo 2 addition</a> for two bits is identical to XOR. Modulo is the same as the remainder in long division. So 13 mod 3 is 1, since 3 divides into 13 evenly 4 times, but there's a 1 remainder left over. In dealing with binary and mod 2,  we get the following table:
+
+<TABLE BORDER>
+<TR>
+<TH>A
+<TH>B
+<TH>(A + B) mod 2
+<TR>
+<TD>0
+<TD>0
+<TD>0
+<TR>
+<TD>0
+<TD>1
+<TD>1
+<TR>
+<TD>1
+<TD>0
+<TD>1
+<TR>
+<TD>1
+<TD>1
+<TD>0
+</TABLE>
+
+Notice that the tables are identical except for the headers.
+
+Either XOR or mod 2 addition can be used in parity checks. Consider the following as each pair of bits is XORed in succession left to right until one bit remains: 
+
+101101 => (1 XOR 0) 1101 => 
+
+11101 => (1 XOR 1) 101 => 
+
+0101 => (0 XOR 1) 01 => 
+
+101 => (1 XOR 0) 1 => 
+
+11 => 1 XOR 1 => 
+
+0
+
+But what does all of this mean? It simply means that there were an even number of 1 bits in the original sequence of 101101. That's the essence of parity. This seems like a lot of work to determine whether there is an even or odd number of 1s in a bit sequence. While counting the number of 1s to determine even or odd is easier for people than repeated XOR or Mod 2 Addition, it's just the opposite for computers. XOR circuitry is nearly trivial for a computer.
+
+Transmit a sequence of bits such that the number of 1 bits is always even. If the original sequence is already even, then add 0. If the original sequence is odd, then add a 1.
+
+The receiver checks the parity, and if the number of 1s in the sequence is odd (as determined by XOR or Mod 2 Addition), then the receiver knows that there was corruption.
+
+### Topic: Finite State Machines
+
+<a href="https://en.wikipedia.org/wiki/Finite-state_machine">Finite State Machines</a> are a major topic in computation. These relatively simple machines can be used in many situations - often where there's a series of steps involving events from an outside source. State machines are used in the implementation of regular expressions, which are used by compilers and interpreters.
+
+The Classic iPod thumb wheel interface is a good example of a state machine. There are several events:
+<UL>
+   <LI>Center button
+   <LI>Left/Right/Up/Down buttons
+   <LI>"Spinning" the wheel clockwise and counterclockwise.
+</UL>
+
+The wheel interface behaves differently depending upon what mode the iPod is in. For example spinning clockwise can move fast forward through a track or turn up the volume depending upon being in playback mode or not. The modes are chosen by clicking the center button.
+
+Finite State Machines have several defined elements, but the most important ones are:
+<UL>
+   <LI>State - which can be thought of as stages through a process, or modes of a system.
+   <LI>Event - which is, usually, an external stimulus to the state telling it that something has occurred that will affect it. NOTE: An event may also have a condition associated with it, but we have not seen this in lectures (up to Week 7).
+   <LI>Transition - which connects state in a one-way direction based upon an event. A transition means that the process can move from one state to another when that event occurs. Transitions should be thought of as happening instantaneously. They define the movement from one state to another, but there is not concept of "in transit." Take note that the same event may be associated with more than one transition. This means that state machine may exhibit different behaviors on the same event, based upon its current state.
+   <LI>Action - which is an optional element of a transition. An action lists behavior the state machine will do when the transition occurs. Take note that the action of one state machine may be the event of another state machine, as is observed in the client/server TCP state machine interactions.
+</UL>
+
+State machines work well in event driven systems where requests for "sessions" are discrete events, between which there may be lengthy gaps in between which there may also reside requests for other sessions. Since each session has state, the each event/request will be handled within the context of that session's state, picking up where it left off, without interfering with other sessions.
+
+This works well in the client/server paradigm, which is primary paradigm for computer networks.
+
+State machines can model different behaviors, such as a Automated Teller Machine, a Soda/Snack Vending Machine, a Pay Phone (for those who remember these relics) or natural behaviors, such as the transition of states of matter.
+
+### Topic: Distributed Computing
+
+Computer networks and the Internet in general is based upon a <a href="https://en.wikipedia.org/wiki/Distributed_computing">distributed computing</a> paradigm. Distributed computing usually has the following properties:
+<UL>
+   <LI>Processes run independently of each other, possibly on separate hardware.
+   <LI>Processes run simultaneously.
+   <LI>There is no managing process.
+</UL>
+
+Proper distributed computing is challenging, but if done properly the the application scales and it has built in redundancies. Complexity can make doom a distributed computing system, so the more simple the rules followed by each set of processes the better.
+
+<a href="https://en.wikipedia.org/wiki/Ant">Ants</a> are a good natural model for distributed computing. A nest may be very complex, but no individual ant is complex. The ants work independently, simultaneously and without a management structure.
+
+In TV fiction, the <a href="http://en.wikipedia.org/wiki/Borg_(Star_Trek)">Borg</a> from Star Trek: The Next Generation are an excellent example of distributed computing.
+
+## Week 1: Introduction, Layered Model
+
+### Course goals
+
+Learn how computer networks work, and the internet specifically.
+
+### Uses of networks
+
+Computer networks have existed for only a few decades, but their presence has intertwined with almost every aspect of our lives. They first appeared at the work office through networking shared file servers and printers. Email and instant messaging allowed us to stay in contact with co-workers across the hall or across the country. The Internet allowed instant access of almost any information one could desire. These features were soon delivered to the home and have added social networking and streaming audio and video. Networks have cut the cable and gone wireless with mobile networking.
+
+It's easy to take these networks for granted, but their design and execution is a marvel of engineering.
+
+[[Comnetworks:Binomial Distribution Coin Flips | How Binomial Distribution applies to Statistical Multiplexing]] - Easy as flipping a coin.
+
+<a href="https://docs.google.com/document/d/149RpNE-bmed3BwUWbWiNHqJiYDVRGRWTJ6hBotqSbK8/edit?usp=sharing">Statistical Multiplexing in the Army</a> - How many latrines to dig.
+
+<a href="https://docs.google.com/document/d/15Y51N7V4rtKxF3Z2ZkkCpL8qZ1zakp_DXpOPdBw3RxA/edit?usp=sharing">Statistical Multiplexing Limits</a> - What happens when everyone wants to use the network at once?
+
+<a href="https://docs.google.com/document/d/15Iv8-SxCz0ZF2MYnXaI4TXXy6TMGWaeD14jSWHPvlss/edit?usp=sharing">Metcalfe's Law</a> - How the network value quadruples when the size doubles.
+
+### Network components, with example networks
+
+Networks are an application of graph theory - a branch of discrete mathematics. Networks (as well as graphs) are comprised of nodes connected to each other via edges/links/vertices.
+
+This course deals with computer networks for sharing information, such as email, webpages, voice, video, etc. However, networks exist all around us and well before computers. Some examples include: postal networks, roads or rails connecting cities, social networks and gossip circles.
+
+Computer network nodes generally computers performing different roles in the network, such as hosts, routers, switches and hubs.
+
+These nodes can be connected directly via electrical wires and optical fiber, or indirectly via wireless. Wired and wireless links display different behaviors.
+
+Applications connect to host components to gain access to the network.
+
+### Socket API
+
+[[Comnetworks:Phone Calls are like Sockets | Phone Calls are like Sockets]] - or Call Your Mother.
+
+### <a href="https://en.wikipedia.org/wiki/Traceroute">Traceroute</a>
+
+<a href="https://docs.google.com/document/d/1OCYolAPnIc8gHoYaMpZ1wGJFfBtLU3n20KODlmumCqM/edit?usp=sharing">In Hot Pursuit</a> - How a car chase is like traceroute.
+
+### Protocols and layering
+
+<a href="https://docs.google.com/document/d/1Tcd6pEepccKxKjwV3E2u16qt3OCkGHuro1HW5s3MYJo/edit?usp=sharing">Why even use layers</a> - An analogy using computer programming languages.
+
+<a href="https://docs.google.com/file/d/0B4gPJJ2Vq6m2Qlp1cHJnbGd4SUE/edit?usp=sharing">Steampunk Protocol Layers</a> - A 19th Century Fantasy Example
+
+<a href="https://docs.google.com/document/d/1SD60OISHAk71nCI0d8Neuv6fk95EU-KwsZinp1apkEQ/edit?usp=sharing">Absentee Voting as Protocol Layers</a> - A non-technical description.
+
+<a href="https://docs.google.com/document/d/1pD9A1gPa2yvJC1ZHqJj8RGA0n9UieKIlYGUJgYqqmGA/edit?usp=sharing">Protocol Stack in the Postal Service</a> - Sending a package.
+
+### History of the internet
+
+<a href="http://som.csudh.edu/cis/lpress/history/arpamaps/">ARPANET Maps from 1969-1977</a> See how the early internet grew.
+
+### Lecture Notes
+* [Frequently Asked Questions](https://class.coursera.org/comnetworks-003/wiki/FrequentlyAskedQuestions)
+
+* [[:Media:ICONS.png | How to download course materials]].
+
+* [Content list](https://drive.google.com/file/d/0B0soxwuAdqQydkhoVnJUWkp6bUk/edit?usp=sharing)
+
+* [[Media:Comnetworks-003-ConceptMap-W1.png | Introduction]] - A concept map.
+
+* [Notes](https://drive.google.com/file/d/0B0soxwuAdqQyRk1qWHA5dFROREE/edit?usp=sharing)
+
+* [Peer to Peer communication](https://drive.google.com/file/d/0B0soxwuAdqQyenBSWU5wbFF5Zzg/edit?usp=sharing)
+
+* [Some terms explained](https://drive.google.com/file/d/0B0soxwuAdqQySDh3RnJvSWM4UFk/edit?usp=sharing)
+
+
+### References
+
+## Week 2: Physical and Link Layers
+
+### Message latency model
+
+<a href="https://docs.google.com/document/d/1PE5Y-A_m0F4uMsQPqf4mCNVQ3BTsJi1P1hbBgo_PoSU/edit?usp=sharing">The Latency of the Cattle Rancher</a> - How long to ship that herd of longhorns.
+
+### Signals
+
+A signal has many frequencies, each of which shape the signal, and its shape contains information. The lower frequencies tend to give foundational shape. The higher frequencies tend to provide the details and accents. With enough frequencies, almost any signal shape can be reproduced. However, the lower frequencies are stronger than the higher frequencies. When there's attenuation through the signal's medium, the higher frequencies will drop out before the lower ones. The signal will retain the nature of its basic shape, but it will begin to morph. The details will smooth out. There will be less detail. There may be enough detail for the receiver to recognize the original. There may not.
+
+Imagine you're sitting a concert hall about to hear a symphony. The orchestra takes the stage and sounds great. You always loved Beethoven. You notice that there are a dozen or more musicians in the violin section. But there are about five trumpets, and only three trombones and one tuba.
+
+Half of the violins leave, as well as two trumpets and one trombone. There's been a contract dispute and they walk out mid-concert. We've lost the upper range instruments. It still kind of sounds like Beethoven, but something's different. Then all of the violins and trumpets and one more trombone leave. We're left with one trombone and one tuba. They're still playing their Beethoven parts, but the performance is unrecognizable.
+
+Losing too many upper frequencies will lead to the same problem.
+
+Imagine you're an oil painter. You have brushes of all shapes and sizes from wide brushes to very thin ones. You're a realist and you can paint almost anything such that it's almost impossible to distinguish your work from a photograph. Then you suffer an accident that prevents you from using thin brushes. You no longer have the hand control for them, but you can still paint with wide brushes. The nature of your paintings will change. You won't be able to paint as a realist, but you might be able to paint as abstractionist or impressionist. Your painting will have less detail.
+
+Losing too many upper frequencies is similar. Less detail.
+
+By the way, this description happened to artist <a href="http://en.wikipedia.org/wiki/Chuck_Close">Chuck Close</a>, who suffered a spinal arterial collapse that left him paralyzed. He is famous for his portraits both before and after his medical condition. View his <a href="http://chuckclose.com/work_timeline.html">work</a>, but be warned, that the first painting is a realistic female nude. Another interesting fact about Mr. Close is that he has <a href="http://en.wikipedia.org/wiki/Prosopagnosia">prosopagnosia</a>, or face blindness. He may not be able to recognize the people in his portraits of them.
+
+Finally, losing higher frequencies is similar to a camera taking a picture when out of focus. The basic colors and composition will be there, but the details will be lost.
+
+###Modulation schemes
+
+Information is passed across signals using modulation.
+
+A carrier signal is when we we're not so much interested about the content of the signal than we are the nature of the signal. For our circumstances, the nature being the "shape" of the signal. The shape is the data.
+
+For Amplitude Modulation, we're interested in how large the signal gets. Imagine you're hearing my words rather than reading them. <b>I MAY TALK REAL LOUD</b>. or <i>i may talk real soft</i>. <b>OR</b> <i>i could</i> <b>MIX</b> <i>up</i> <b>WHEN I</b> <i>talk</i> <b>REAL LOUD</b> <i>or</i> <b>REAL</b> <i>soft</i>.
+
+In the above I'm not only speaking words, but my simulated volume indicates another signal, where the <b>BOLD</b> is 1 and <i>soft</i> is 0. We, in English, do this in normal conversation. When a speaker wants to make sure a word or phrase has more emphases he will raise his voice during those words. That's sends an additional signal to the listener.
+
+For Frequency Modulation, we're interested in *pitch* of the signal. Imagine Iamtalkinginahighpitchedvoicerightnow. And ... now ... I ... am ... talking ... in ... a ... looooow ... pitched ... voice. That change is sending a signal too. As people get more excited or passionate about a topic, the pitch of their voice might rise.
+
+Amplitude Modulation and Frequency Modulation doing the same thing, but just in terms, but just in the electrical magnetic spectrum rather than acoustics. By the way, this is exactly how radio AM and FM signals work.
+
+### Bandwidth, Shannon
+### Clocking and framing
+
+<a href="https://docs.google.com/document/d/1DItZ3rachHexJwLqKizvEnMgduWAv6--NV53omfhSd4/edit?usp=sharing">Clocking and Framing via Music</a> - Dueling Banjos
+
+### Error detection schemes
+### Error correction schemes
+
+<a href="https://www.youtube.com/watch?v=gGf8eDK7q9k">Hamming Visualization Video</a>
+
+<a href="https://docs.google.com/document/d/17awGSPWtcscRUJqnMDcMkwzYqXiQyExUcCwOCjuK-gc/edit?usp=sharing">Hamming Codes as Ping-Pong Balls and Chopsticks</a>
+
+### <a href="http://en.wikipedia.org/wiki/Bandwidth-delay_product">Bandwidth-delay product</a>
+
+### Lecture Notes
+* [Content list](https://drive.google.com/file/d/0B0soxwuAdqQyQjZSdWhydi1PNVk/edit?usp=sharing)
+* [Hexadecimal system](https://drive.google.com/file/d/0B0soxwuAdqQyTEt4SmV2TTN5c2s/edit?usp=sharing)
+* [Hexadecimal addition](https://drive.google.com/file/d/0B0soxwuAdqQybi1FSlExMnR0aTg/edit?usp=sharing)
+* [[Media:Comnetworks-003-ConceptMap-W2-P1.png | Physical layer]]
+* [[Media:Slevel.JPG | Signal levels]]
+* [[Media:Comnetworks-003-ConceptMap-W2-P2.png | Modulation]]
+* [[Media:Comnetworks-003-ConceptMap-W2-L1.png | Link layer]]
+* [[Media:Comnetworks-003-ConceptMap-W2-L2.png | Framing]]
+* [[Media:Comnetworks-003-ConceptMap-W2-L3.png | Error Coding]]
+* [Notes](https://drive.google.com/file/d/0B0soxwuAdqQyMDdSSTR0UXRMcDA/edit?usp=sharing)
+* [Some terms explained](https://drive.google.com/file/d/0B0soxwuAdqQyVzJNbGt6NEhySUU/edit?usp=sharing)
+
+### References
+* [Physical layer](http://en.wikipedia.org/wiki/Physical_layer)
+* [Link layer](http://en.wikipedia.org/wiki/Data_link_layer)
+
+## Week 3: Retransmissions, Multiple access, Switching
+
+### ARQ
+
+<a href="http://en.wikipedia.org/wiki/Automatic_repeat_request">Automatic Repeat reQuest</a> is repeating a request after a timeout until receiving an acknowledgement. Sheldon Cooper <a href="https://docs.google.com/document/d/1NYByPdeTEiwyv1B0WR-0ejJjAZATLhiRzkyVAcjp-tY/edit?usp=sharing">knocks for Penny</a> using ARQ... really it's his OCD.
+
+### Multiplexing schemes (TDM. FDM)
+
+[[Comnetworks:Multiplexing Jugglers | Multiplexing is like Multitasking]] - FDM and TDM as Juggling and Plate Spinning
+
+Imagine you're spending a night at the opera. A soprano, alto, tenor and bass are singing simultaneously each with different words and melodies. If you listen carefully, you can pick out each singer individually based upon his or her pitch.
+
+Next three tenors try the same trick, but because all of their voices are in the same range, you can't pick out one individually from the other, but then the nature of the piece changes. Each tenor sings a short phrase, which the other two rest, and they take turns without any two singing at the same time.
+
+The four singers are multiplexing. They all sing at the same time. It's challenging to isolate them, but it's possible because of their different pitch range (that is their frequencies).
+
+The three tenors are multitasking. It's easier to isolate them. In fact you don't have to isolate them, since only one is singing at any one time; however, it takes him three times longer to finish all of his phrases.
+
+### Random access / Ethernet
+
+<a href="https://docs.google.com/document/d/139ny_HfUEnll9oGH-TXvO-WVcjbqkX_q40skkh-Cz9o/edit?usp=sharing">Shouting from the hilltops</a> - A non-technical Ethernet.
+
+### Wireless multi-access / 802.11
+
+<a href="https://docs.google.com/document/d/1yhNhVZxgWZrWWU3RCV2TwSZqd0jkZ_ON-eHN-2oG3sg/edit?usp=sharing">Bugle "wireless" multi-access</a> - Blow that horn.
+
+### Contention free / Token Ring
+
+A <a href="http://en.wikipedia.org/wiki/Token_ring">Token Ring</a> is like a <a href="http://en.wikipedia.org/wiki/Talking_stick">Talking Stick</a>. Only the person holding it may talk, but it is passed for person to person.
+
+### Basic <a href="http://en.wikipedia.org/wiki/Network_switch">switch</a> vs <a href="http://en.wikipedia.org/wiki/Ethernet_hub">hub</a> model
+
+<a href="https://docs.google.com/document/d/131kKZLyjjCMGkBAqpNH2M8IaSBra8P_Ep01T_icniFo/edit?usp=sharing">Switch vs Hub</a> - A telephone example
+
+### LAN switching (spanning tree, backward learning)
+
+<a href="https://docs.google.com/document/d/1_wvinhjOAmxEuIPfZz-8tSRUTvvI9PzCTPvJ10wLdUI/edit?usp=sharing">Ants Build Networks Too</a> - Anyone know of a good picnic?
+
+### Lecture Notes
+
+* [Content list]( https://drive.google.com/file/d/0B0soxwuAdqQyMlBNa2xtTkRTMW8/edit?usp=sharing)
+* [[Media:Comnetworks-003-ConceptMap-W3-Multiplexing.png | Multiplexing]]
+* [[Media:Comnetworks-003-ConceptMap-W3-Evolution.png | Classic Ethernet]]
+* *Wireless Multiple access:*(https://share.coursera.org/wiki/images/7/7d/CMAP3%286%29.WIRELESSMAC.jpg) 
+* *Contention free multiple access:* (https://share.coursera.org/wiki/images/8/81/CMAP3%287%29.CONTENTIONFREEMAC.jpg)
+* *Hubs :* (https://share.coursera.org/wiki/images/d/d4/CMAP3%288%29HUBS.jpg)
+* *LAN Switches :* (https://share.coursera.org/wiki/images/6/60/CMAP3%289%29LAN_SWITCHES.jpg)
+* *Spanning Tree algorithm* (https://share.coursera.org/wiki/images/8/86/CMAP3%2810%29SPANTREE_ALGORITHM.jpg)
+
+### References
+
+## Week 4: Network layer, Internetworking, and NAT
+### Datagram and virtual circuit models
+
+<a href="https://docs.google.com/document/d/1_PDTPSInyLkYUgGNee0HsKMU_vFnU46OoZwvKd_Oc-8/edit?usp=sharing">Datagrams and Virtual Circuits are like Telegraph and Telephone</a>
+
+### IP addresses and prefixes
+
+<a href="https://docs.google.com/document/d/14zQflI12LLh30ed2vRkbvQvb5TLk9OhlIjtRb7zv1Bk/edit?usp=sharing">IP addresses are like ZIP codes</a> - Zip it!
+
+Think of your phone number as like an IP Address. It uniquely identifies your phone such that anyone on almost an phone in the world should be able to call you. However, your phone number and phone are not known all around the world. Your phone number's identity is organized in sets of prefix numbers, which identify regions. This concept is similar to IP address prefixes.
+
+For internal use, someone would first dial your country code, assume they are in a different country. This would direct the number to a telephone system switch in the United States. Next would be the area code, which roughly identifies a state, county or metropolitan region, usually based upon population size. This will direct the call to a switch in that area. Next comes the exchange, which identifies the local switch that's manages your phone. Finally the last digits identify your specific call to create a connection from the caller to your phone.
+
+The use of prefixes in phone networks reduces overhead, since telephone switches only need to know where to direct the call for completion based upon a prefix, not the entire phone number. Computer networks take advantage of the same technique with IP prefixes.
+
+### IP forwarding (longest matching prefix) and MPLS
+
+<a href="https://docs.google.com/document/d/1RfZqXK3Ji8RoKKgi1LyqxuXIW9Wnkn3xQ-S42pOEEmw/edit?usp=sharing">Longest Matching Prefix compared to guys picking up women at a bar</a> - If <a href="http://www.youtube.com/watch?v=2d_dtTZQyUM">"A Beautiful Mind"</a> can use the analogy to explain an aspect of Game Theory, then we can use it too.
+
+### IPv4 and IPv6
+
+<a href="https://docs.google.com/document/d/1KPMpr1AWCtldAXohhZFAdhcYF1tKFBzAU7XTd1pKX_0/edit?usp=sharing">IPv4 and IPv6 is similar to 5 digit and 9 digit US Postal Service ZIP codes</a>
+
+### Helpers: ARP, DHCP
+
+<a href="https://docs.google.com/document/d/1Ye5vGQ9kgz9p9GC3Tw9fi0YblfyWg83gWUbgDHw5lps/edit?usp=sharing">ARP and DHCP are similar to Phone books</a> - <a href="http://www.youtube.com/watch?v=UCsgZ9zU7IA">You Know My Name (Look Up the Number)</a>
+
+### Internetworking
+
+<a href="https://docs.google.com/document/d/1o8nw7bzyrZ3QDkXkQcO4SC0Cs8etA_8XmjB8-eBCs0E/edit?usp=sharing">IPv4/IPv6 Tunneling is like Smuggling</a>
+
+### Fragmentation and PMTU discovery
+
+<a href="https://docs.google.com/document/d/15GHZrli3X7HET_cV8SnOXXggi3duN3E3k-t0mk4RRpw/edit?usp=sharing">Airport Security and Fragmentation</a>
+
+### Errors: ICMP, and traceroute
+### NAT
+
+### Lecture Notes
+
+* *Network Layer:* (https://drive.google.com/file/d/0B0soxwuAdqQydExLM0lBSUlkODg/edit?usp=sharing)
+* *Network services:* (https://share.coursera.org/wiki/images/5/5b/CMAT4%282%29DATAGRAMV.jpg)
+* *Internetworking-IP protocol:*(https://share.coursera.org/wiki/images/e/e1/CMAT4%283%29INTERNETWORK.jpg)
+* *IPv4 address:*(https://drive.google.com/file/d/0B0soxwuAdqQyVWtBNU15LXp4WGs/edit?usp=sharing)
+* *IPv6 address:*(http://en.wikipedia.org/wiki/IPv6)
+* *            :*(http://en.wikipedia.org/wiki/IPv6_address)
+* *            :*(http://en.wikipedia.org/wiki/File:Ipv6_address_leading_zeros.svg)
+* *IPv6 Tunneling:*(https://share.coursera.org/wiki/images/0/07/IPv6.jpg)
+* *IP Helpers DHCP/ARP:*(https://share.coursera.org/wiki/images/7/72/ARPDHCP.jpg)
+* *Why two addresses : link layer address & IP address:* (https://share.coursera.org/wiki/images/e/e7/ADDRESSES.jpg)
+(https://share.coursera.org/wiki/images/0/02/IPLINKADD.jpg)
+* *Packet Fragmentation Vs Path MTU Discovery*(https://share.coursera.org/wiki/images/3/35/MTU.jpg)
+* *ICMP - Managing problems in packet forwarding* (https://share.coursera.org/wiki/images/f/f9/ICMP.jpg)
+* *NAT - Solves scarcity of IPv4 addresses:*(https://share.coursera.org/wiki/images/c/c5/NAT.jpg)
+
+### References
+* *Network layer:*(http://en.wikipedia.org/wiki/Network_layer)
+
+## Week 5: Routing, Intra- and Inter- Domain
+### Shortest cost routing model
+
+<a href="https://docs.google.com/document/d/1GW_UsfX0Fn4sctOS5E3_29KuoBP4Zx0_ORcOTycMtEc/edit?usp=sharing">GPS computes shortest distance</a> - Probably using Dijkstra's algorithm.
+
+### Distance vector
+
+<a href="https://docs.google.com/document/d/1TqEeJQpmkz9ySnLLq38-vMTO7i3XeoPRw9MeZp92cFw/edit?usp=sharing">Distance Vector is similar to Gossip</a> - I heard it from a very reliable source.
+
+#### Distance vector: tool for experimenting with a RIP-like protocol
+
+Here's a miniature RIP simulator: [http://ioctl.org/jan/simulator.zip]
+
+Unpack it and run ./rip-ui (you'll need python 2.7 installed).
+
+There are some pre-programmed commands that are queued up that'll generate a simple, linear network. You can try plugging new nodes in, unplugging them, and so on.
+
+The routing protocol currently doesn't have a notion of "infinity", though, which means you can see the "count to infinity" problem directly. Here's how:
+
+1. Start by typing
+
+        ./rip-ui
+1. You'll see the network in its initial state.
+1. Either press return repeatedly until the network routing tables stabilise, or type "run" which does the same.
+1. Unplug router A! Type
+
+        unplug A 1
+
+    to do this.
+1. Trigger another round of timer ticks.
+
+        tick
+
+    The "periodic processing" at each node will occur and a new slew of packets will be generated.
+1. Hit return a few times and watch what happens:
+    - B loses its initial route to A,
+    - then C advertises that route to B,
+    - so B learns a new, higher-cost "route to A",
+    - and so on.
+1. You can run this for 100 steps by typing:
+
+        run
+
+    which will show you routing counts at the end of that process. Typically, a node stops advertising a route when the cost it has becomes "infinite" - for some value of infinity. RIP2 used 16 as that value, where each link cost was 1\. (That behaviour isn't implemented in rip.py.)
+1. If the link comes back up:
+
+        plug A 1 B 1
+        run
+
+    then you'll see the routing table stabilise again.
+
+Other things to try:
+
+- make a "circular" network and see what happens (you ought to be able to predict this)
+
+        add E
+        plug D 2 E 1
+        plug E 2 A 2
+        run
+
+
+##### On the subject of the "count-to-infinity" problem:
+
+You might ask if there are tricks you might use to stop this happening.
+
+One thing to observe is that the count-to-infinity problem happens because, say, C advertises its route to A (via B) _back_ to B. If, instead, nodes used a "split horizon", then B would never receive route advertisements for A from C.
+
+It's worthwhile looking up "poison reverse" too. That's even harsher: the idea here is that when nodes get a "lost route" advertisement from their neighbour, they immediately broadcast an infinite-cost route to all their neighbours.
+
+Hopefully this simulator'll give you a better picture of what goes on - the code in rip.py is also not too complicated (there are only four important methods) so you could have a go at implementing "split horizon" or "poison reverse" yourself. (I'd recommend you try that in that order - split horizon first.)
+
+### Flooding
+
+<a href="https://docs.google.com/document/d/1-kvLduyaThKH2mdn5dv95c3wcn1iPaI4BkBxsb4rXeM/edit?usp=sharing">Flooding is like telling a Joke</a> - I heard this great joke on TV last night. Stop me if you already heard it ...
+
+### Link state
+
+<a href="https://docs.google.com/document/d/1_DDFKNZKW7nz_4FKhdWxEX5CBX8Yf9rtL_s__dblTHc/edit?usp=sharing">Link state is like blind men understanding an elephant</a>
+
+### Equal-cost multi-path routing
+
+<a href="https://docs.google.com/document/d/1V5iD1eDx2BZZtgpGvtdCIhV_wuUlIXLePlSVfpi6WRc/edit?usp=sharing">Equal-Cost Multipath Routing is like sending out the posse.</a> - Hang 'em high.
+
+### Hierarchical routing
+### IP prefix aggregation and subnetting
+
+#### Tool for learning about prefix aggregation
+
+Here's a small toy/game to get the idea of prefix routing: [http://ioctl.org/jan/prefix-routing.zip]
+
+You'll need python 2.7 to play with this. Unzip it (it's just one file this time) and run it thus:
+
+    ./prefix-routing
+
+A demonstration follows. We'll write a routing table, using prefix routes, to sort out miniature "IP addresses" (that are actually only two bits long!) To begin with, request a new game. We want to simulate a router with two possible links, so ask it:
+
+    Enter command: new 2 2
+    New game starting with bitstrings of length 2 and 2 randomly-selected links
+    ------------------------------------------------------------
+    Desired routes:
+    00 -> 1 no route computed
+    01 -> 1 no route computed
+    10 -> 1 no route computed
+    11 -> 2 no route computed
+    
+    Routing rules:
+    ------------------------------------------------------------
+
+We could clearly write a routing table that has four rules (one for each destination we're given). However, it's possible to do better. Since most of the destinations use link 1, we can begin by writing a catch-all route that points at that.
+
+    Enter command: 00/0 1
+    Adding rule #0
+    ------------------------------------------------------------
+    Desired routes:
+    00 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    01 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    10 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    11 -> 2 : incorrect route selected from [#0: 00/0 -> 1]
+    
+    Routing rules:
+    [#0: 00/0 -> 1]
+    ------------------------------------------------------------
+
+Almost done! We can add a single rule to get the last item:
+
+    Enter command: 11/1 2
+    Adding rule #1
+    ------------------------------------------------------------
+    Desired routes:
+    00 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    01 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    10 -> 1 : incorrect route selected from [#1: 11/1 -> 2]; [#0: 00/0 -> 1]
+    11 -> 2 : CORRECT ROUTE SELECTED FROM [#1: 11/1 -> 2]; [#0: 00/0 -> 1]
+    
+    Routing rules:
+    [#0: 00/0 -> 1]
+    [#1: 11/1 -> 2]
+    ------------------------------------------------------------
+
+Whoops! The problem here was that the rule, 11/1 -> 2, only matches the first bit (the /1 prefix), so it's matched the "ip" 10 and routed it to link 2. The various rules that match are visible on each line, sorted by most-specific (ie, the one that counts) first to least-specific (ie, ones that've been over-ridden) last.
+
+We add the correct rule:
+
+    Enter command: 11/2 2
+    Adding rule #2
+    ------------------------------------------------------------
+    Desired routes:
+    00 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    01 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    10 -> 1 : incorrect route selected from [#1: 11/1 -> 2]; [#0: 00/0 -> 1]
+    11 -> 2 : CORRECT ROUTE SELECTED FROM [#2: 11/2 -> 2]; [#1: 11/1 -> 2]; [#0: 00/0 -> 1]
+    
+    Routing rules:
+    [#0: 00/0 -> 1]
+    [#1: 11/1 -> 2]
+    [#2: 11/2 -> 2]
+    ------------------------------------------------------------
+
+Almost there. You can see now that 11 is matched by three rules, in decreasing order of specificity. 10 is still routed incorrectly, so we can remove the erroneous rule to fix the routing table:
+
+    Enter command: del 1
+    ------------------------------------------------------------
+    Desired routes:
+    00 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    01 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    10 -> 1 : CORRECT ROUTE SELECTED FROM [#0: 00/0 -> 1]
+    11 -> 2 : CORRECT ROUTE SELECTED FROM [#1: 11/2 -> 2]; [#0: 00/0 -> 1]
+    
+    Routing rules:
+    [#0: 00/0 -> 1]
+    [#1: 11/2 -> 2]
+    
+    The routing table is correct!
+    ------------------------------------------------------------
+
+There you have it. We've managed to sort between four different possible "IP addresses" using only two rules, by the clever application of prefix routes.
+
+The program can generate longer bit strings and more possible links to route between, if you fancy testing your wits. It quickly becomes apparent that forming efficient prefix aggregates "by inspection" is a difficult task.
+
+##### Further questions to think about
+
+The algorithmically-minded are probably wondering how one might go about optimising the number of rules required to correctly route according to a given, desired table.
+
+(If you're a little more mathematically inclined, you might ask what the size of the prefix-routing table would be on average.)
+
+### Interdomain routing with BGP
+
+### Lecture Notes
+* *Content List:*(https://drive.google.com/file/d/0B0soxwuAdqQyZnBGV3JQTVUyNDg/edit?usp=sharing)
+* *ROUTING ALGORITHMS:* (https://share.coursera.org/wiki/images/6/63/ROUTINGALGOR.jpg)
+* *SHORTEST PATH ROUTING:* (https://share.coursera.org/wiki/images/e/e6/SHORTESTPATH.jpg)
+* *DIJKSTRAS ROUTING ALGORITHM:* (https://share.coursera.org/wiki/images/5/56/DIJKSTRAS.jpg)
+* *DISTANCE VECTOR ROUTING:* (https://share.coursera.org/wiki/images/7/73/DVROUTING.jpg)
+* *FLOODING :*(https://share.coursera.org/wiki/images/d/de/FLOODING.jpg)
+* *LINK STATE ROUTING:*(https://share.coursera.org/wiki/images/1/1f/LINKSTATE.jpg)
+* *EQUAL COST MULTI-PATH(ECMP):*(https://share.coursera.org/wiki/images/e/e9/ECMP.jpg)
+* *HOST & ROUTER ON THE NETWORK:* (https://share.coursera.org/wiki/images/1/19/HOSTROUTER.jpg)
+* *HIERARCHICAL ROUTING:*(https://share.coursera.org/wiki/images/6/6e/HIRARCHICAL.jpg)
+* *PREFIX AGGREGATION:*(https://share.coursera.org/wiki/images/1/1e/PREFIXAGGREGATION.jpg)
+* *BGP ROUTING:*(https://share.coursera.org/wiki/images/e/e8/BGPROUTING.jpg)
+
+
+## Week 6: Midterm and break
+
+## Week 7: Transport Layer, Reliable Transport
+* Ports and service models
+* Socket API revisited
+* UDP
+* [http://en.wikipedia.org/wiki/Transmission_Control_Protocol TCP]
+  * TCP is like a phone call [[Comnetworks:TCPPhoneCall | Phone Call]]
+* Connection establishment and teardown
+* ARQ reminder, sliding window
+* Retransmission timeouts
+* Flow control
+
+### Lecture Notes
+* * CONTENT LIST :*(https://drive.google.com/file/d/0B0soxwuAdqQybmFPNlEtT2tnRU0/edit?usp=sharing)
+* * TRANSPORT LAYER SERVICES:*(https://share.coursera.org/wiki/images/9/9b/TPTSERV.jpg)
+* * FUNCTIONS OF TRANSPORT LAYER:*(https://share.coursera.org/wiki/images/c/ce/Cmap5.jpg)
+* * SLIDING WINDOW – GO BACK N:*(https://docs.google.com/file/d/0B0soxwuAdqQyMXNJN3lLTGpCTWc/edit?usp=sharing)
+* * SLIDING WINDOW – SELECTIVE REPEAT:*(https://docs.google.com/file/d/0B0soxwuAdqQyRk5JNHUtRjZQVkE/edit?usp=sharing)
+* * SLIDING WINDOW :*(https://docs.google.com/file/d/0B0soxwuAdqQyZ3RLbS1NcVctelU/edit?usp=sharing)
+* * FLOW CONTROL :*(https://docs.google.com/file/d/0B0soxwuAdqQyT0RoTXRBNlBRZmc/edit?usp=sharing)
+* * RETRANSMISSIONS:*(https://docs.google.com/file/d/0B0soxwuAdqQyRG5zaFZRcUplNms/edit?usp=sharing)
+* * TCP FEATURES:*(https://docs.google.com/file/d/0B0soxwuAdqQyZFBob2JqUXVLNFk/edit?usp=sharing)
+
+## Week 8: Congestion Control
+* Nature of congestion
+  * [[Comnetworks:CommuterTrafficJams | Commuter Traffic Jams]]
+* Simple / FIFO router model
+* Efficiency and fairness
+* Congestion control models
+* AIMD game
+* Slow-start
+* Fast retransmission
+* Fast recovery
+* Story of TCP congestion collapse
+
+### Lecture Notes
+* *CONGESTION CONTROL:*(https://docs.google.com/file/d/0B0soxwuAdqQyY0hxeW9PWE54ZDg/edit?usp=sharing)
+* *BANDWIDTH ALLOCATION – FAIRNESS & EFFICIENCY:*(https://docs.google.com/file/d/0B0soxwuAdqQyT3U1SFlMZzhTdmc/edit?usp=sharing)
+* *AIMD CONTROL LAW FOR CONGESTION CONTROL:*(https://docs.google.com/file/d/0B0soxwuAdqQyV0dSbmRFRkdWVkU/edit?usp=sharing)
+* *TCP BEHAVIOURS USED FOR AIMD IMPLEMENTATION:*(https://docs.google.com/file/d/0B0soxwuAdqQyU0Y1Vk0zejhzbVE/edit?usp=sharing)
+* *ACK CLOCKING:*(https://docs.google.com/file/d/0B0soxwuAdqQyaGtJSmJiUFMxcnM/edit?usp=sharing)
+* *SLOW START:*(https://docs.google.com/file/d/0B0soxwuAdqQycFJLUGxmVE9sU3M/edit?usp=sharing)
+* *FAST RETRANSMIT & FAST RECOVERY:*(https://docs.google.com/file/d/0B0soxwuAdqQyWTI0djBkQmtjZTQ/edit?usp=sharing)
+* *EXPLICIT CONGESTION NOTIFICATION:*(https://docs.google.com/file/d/0B0soxwuAdqQyazBCZ1VEdkJIcDQ/edit?usp=sharing)
+* *ADAPTIVE TIMEOUT:*(https://docs.google.com/file/d/0B0soxwuAdqQyRG5zaFZRcUplNms/edit?usp=sharing)
+
+## Week 9: DNS, HTTP/Web, Content Distribution
+* Naming and DNS
+* HTTP, persistent connections
+* Caching, Zipf workloads
+* CDN workings
+
+### Lecture Notes
+* *APPLICATIONS LAYER:*(https://docs.google.com/file/d/0B0soxwuAdqQyN2JQbklRY3JfQnc/edit?usp=sharing)
+* *DNS :*(https://docs.google.com/file/d/0B0soxwuAdqQyYWNSOGxXaE5WSzA/edit?usp=sharing)
+* *HTTP :*(https://docs.google.com/file/d/0B0soxwuAdqQybElsR0dlQWpUb2M/edit?usp=sharing)
+* *HTTP PERFORMANCE :*(https://docs.google.com/file/d/0B0soxwuAdqQyU2tDY3R3VlBfaG8/edit?usp=sharing)
+* *EVOLUTION OF HTTP :*(https://docs.google.com/file/d/0B0soxwuAdqQyM1JieDBKWEZYeUU/edit?usp=sharing)
+* *WEB CACHING AND WEB PROXIES:*(https://docs.google.com/file/d/0B0soxwuAdqQyRzdVc2tTN2RWZ0U/edit?usp=sharing)
+* *CONTENT DELIVERY NETWORK – CDN:*(https://docs.google.com/file/d/0B0soxwuAdqQyZy1XZ1JEUzVEMEE/edit?usp=sharing)
+* *PEER TO PEER CONTENT DELIVERY – P2P:*(https://docs.google.com/file/d/0B0soxwuAdqQyeXBleEdiNlJCa00/edit?usp=sharing)
+
+## Week 10: QOS and Real-Time Apps
+* Bufferbloat and congestion avoidance
+* RED and ECN
+* Fair queuing and WFQ
+* [http://en.wikipedia.org/wiki/Token_bucket Token buckets]
+  * [[Comnetworks:Token Buckets | Token Bucket Descriptions]]
+* Application needs
+* Streaming app and buffering
+* Conferencing app
+* Differentiated service model
+* GPS construction and integrated service model
+
+### LECTURE NOTES
+
+* *LIST OF ACRONYMS:*(https://docs.google.com/file/d/0B0soxwuAdqQyeFpndTF2VEdDdTg/edit?usp=sharing)
+* *QUALITY OF SERVICE:*(https://docs.google.com/file/d/0B0soxwuAdqQyUXNieENTY1hrZ3M/edit?usp=sharing)
+* *REAL TIME MEDIA (SKYPE):*(https://docs.google.com/file/d/0B0soxwuAdqQyQ1hXTkJmcmptTGM/edit?usp=sharing)
+* *STREAMING MEDIA (VIDEO):*(https://docs.google.com/file/d/0B0soxwuAdqQyTmpJQ2FyWDRrblU/edit?usp=sharing)
+* *FAIR QUEUING:*(https://docs.google.com/file/d/0B0soxwuAdqQyMjJqejB2LVc4SjQ/edit?usp=sharing)
+* *TOKEN BUCKET ALGORITHM (TRAFFIC SHAPING & POLICING):*
+(https://docs.google.com/file/d/0B0soxwuAdqQyRGE2d1RCYzhQM1E/edit?usp=sharing)
+* *DIFFERENTIATED SERVICES:*
+(https://docs.google.com/file/d/0B0soxwuAdqQyR3JONEJsRFY4V2c/edit?usp=sharing)
+* *RATE & DELAY GUARANTEES (HARD QOS):*
+(https://docs.google.com/file/d/0B0soxwuAdqQyVEFtZDVWZjZuVUU/edit?usp=sharing)
+* *QOS SHEET 1:*(https://docs.google.com/file/d/0B0soxwuAdqQydnJ0VUNBdHhfTXc/edit?usp=sharing)
+* *QOS SHEET 2:*(https://docs.google.com/file/d/0B0soxwuAdqQyeUt1d2VIRkJYZk0/edit?usp=sharing)
+* *QOS SHEET 3:*(https://docs.google.com/file/d/0B0soxwuAdqQyZDdXS2pyWThYR1U/edit?usp=sharing)
+* *QOS SHEET 4:*(https://docs.google.com/file/d/0B0soxwuAdqQyZ183QWpYd1RuUkk/edit?usp=sharing)
+
+## Week 11: Network Security
+* VPNs
+* SSL
+* 802.11i
+
+### LECTURE NOTES
+
+* *INTRODUCTION TO NETWORK SECURITY:*(https://docs.google.com/file/d/0B0soxwuAdqQycnREYUstWS1semM/edit?usp=sharing)
+* *MESSAGE CONFIDENTIALITY – HOW TO ENSURE?:*
+(https://docs.google.com/file/d/0B0soxwuAdqQydlllZHlmZnU0Z00/edit?usp=sharing)
+* *WHAT ARE THE OTHER ASPECTS OF SECURITY OTHER THAN CONFIDENTIALITY? :*
+https://docs.google.com/file/d/0B0soxwuAdqQyYlBENThaWk4xLUk/edit?usp=sharing
+* *MESSAGE AUTHENTICATION:*(https://docs.google.com/file/d/0B0soxwuAdqQyMnpucHRuVDYzZVk/edit?usp=sharing)
+* *DIGITAL SIGNATURE:*(https://docs.google.com/file/d/0B0soxwuAdqQyNG5kdjU3d1dRd2s/edit?usp=sharing)
+* *MESSAGE DIGEST OR CRYPTOGRAPHIC HASH:*(https://docs.google.com/file/d/0B0soxwuAdqQyYjdLcW9JS3k3bTQ/edit?usp=sharing)
+* *WIRELESS SECURITY:*(https://docs.google.com/file/d/0B0soxwuAdqQySnU4b3JhWFF4R2c/edit?usp=sharing)
+* *WEB SECURITY:*(https://docs.google.com/file/d/0B0soxwuAdqQyUXRSWXBIVmtOTDA/edit?usp=sharing)
+* *DNS SECURITY:*(https://docs.google.com/file/d/0B0soxwuAdqQyOEhJcW04dUcwSFE/edit?usp=sharing)
+* *FIREWALLS:*(https://docs.google.com/file/d/0B0soxwuAdqQyR1ViaEJrdDZnSGs/edit?usp=sharing)
+* *VIRTUAL PRIVATE NETWORK – VPN:*(https://docs.google.com/file/d/0B0soxwuAdqQyY1Bvc1lTVVc3OVU/edit?usp=sharing)
+* *DISTRIBUTED DENIAL OF SERVICE:*(https://docs.google.com/file/d/0B0soxwuAdqQyNHY1SzBqcDRqUzQ/edit?usp=sharing)
+
+## List of ACRONYMS for the course
+* (https://docs.google.com/file/d/0B0soxwuAdqQyeFpndTF2VEdDdTg/edit?usp=sharing)
+## COURSE CONTENT
+* (https://docs.google.com/file/d/0B0soxwuAdqQyZ2QwMFdsYVNzVkE/edit?usp=sharing)
+
+## Optional ##
+
+###Short Guide to LaTeX###
+
+As the course goes deeper into computer networking, more mathematics will most likely be encountered such that you may want to discuss more about it in the forums or write on this wiki. Math and keyboard typing just don't get along very well. For an easier discussion, it's better to use Latex to type up mathematical symbols than do your best to "draw" it using keyboard keys. 
+
+For example, suppose I want to write in Latex: $$\frac{1}{2}c + \sum_{n=1}^{\infty}a_{n}\sin(2 \pi nft) + \sum_{n=1}^{\infty}b_{n}\cos(2 \pi nft)$$ 
+
+####Step 1: Find the Latex syntax for each Math symbols####
+
+How: You can find most of the symbol's syntax here: http://en.wikibooks.org/wiki/LaTeX/Mathematics. Don't bother reading the first few sections, just keep going down. On the left side are the syntax and format for you to write the symbols and on the right side is what your readers will see. 
+
+You notice the syntax are colored:
+
+<span style="color:Green">Green</span>: Comments for other writers or yourself; Readers will never see this.
+
+<span style="color:red">Red</span>: Programming function so you won't have to write a lot, just making it look beautiful (or ugly) to the writer. Begins with '\'. Readers will never see this.
+
+<span style="color:Brown">Brown</span>: These syntax will draw a certain math symbol. Most begin with '\' and most of them are attached with series of '{ }'.
+*Example: <span style="color:Brown">\frac{}{}</span> has two '{}', one for the numerator and the other for the denominator
+*Example: <span style="color:Brown">a_{}^{}</span> has one for the subscript, and the other for exponents
+
+<span style="color:Blue">Blue</span>: This is where you put in your own variables and values
+*Example: \frac{<span style="color:Blue">5</span>}{<span style="color:Blue">3</span>} would be shown as $$\frac{5}{3}$$ to the readers
+*Example: a_{<span style="color:Blue">5</span>}^{<span style="color:Blue">3</span>} would be shown as $$a_{5}^{3}$$ to the readers
+
+
+####Step 2: Piece each Latex symbols together####
+
+For our example, I identified the syntax needed were:
+*\frac{}{} for ($$\frac{num}{denom}$$)
+*\infty for $$\infty$$
+*\sum_{}^{} for $$\sum{}^{}$$
+*\sin for $$\sin$$ and \cos for $$\cos$$
+*\pi for $$\pi$$
+*a\_{} and b\_{} for $$a_{n}$$ and $$b_{n}$$
+*Symbols like alphabets, +, -, ( ), = don't need special syntax; just write them out. 
+
+
+Piecing all of them together as best as possible, we get: \frac{}{}c + \sum_{}^{}a_{}\sin() + \sum_{}^{}b_{}\cos() which looks like: $$\frac{}{}c + \sum_{}^{}a_{}\sin() + \sum_{}^{}b_{}\cos()$$
+
+####Step 3: Fill in the symbols with values and variables####
+
+This takes some trial and error. Most of the time, you'll know what each {} and () just by which symbol it's attached to. For example, from the Latex Wiki reference, I know for \sum_{}^{}, whatever I write in the first {} will be shown in the bottom of the symbol while whatever I write in the second {} will be shown on the top of the symbol: \sum_{bottom}^{top} will then look like $$\sum_{bottom}^{top}$$ 
+
+
+For beginners, this step will often be the most time consuming process as you figure out from trial and error which variable and {} corresponds to which part of the symbol. You'll also encounter some oddities you're better off not asking for what little patience you have left such as "why is $$\infty$$ written as \infty as opposed to \infinity?" or how for me to write '$$\$\$$$', I needed to write '$$\$\$\backslash$\backslash$\$\$$$' (look in this page editor of what I had to write for the one). 
+
+
+For example, the end result should look something like this: \frac{1}{2}c + \sum_{n=1}^{\infty}a_{n}\sin(2 \pi nft) + \sum_{n=1}^{\infty}b_{n}\cos(2\pinft) showing as $$\frac{1}{2}c + \sum_{n=1}^{\infty}a_{n}\sin(2 \pi nft) + \sum_{n=1}^{\infty}b_{n}\cos(2 \pi nft)$$ 
+
+####Step 4: Let the Internet know you've written Latex!####
+
+There's several ways to do this:
+
+Method 1: Just write $$\$\$$$ at the beginning and the end of the Latex
+
+Method 2: Write it in the built in Equation Builder which automatically adds $$\$\$$$ to the Latex statement
+
+$$\$\$$$ can be seen as the quotation mark for Latex statements. Just how "I hate writing this guide" implies it's a quote written by someone else (not me), $$\$\$$$ Latex Statements $$\$\$$$ can be seen as a quote written in Latex for the text editor to recognize. You also have to do this in order to see for yourself how the Latex statement turned out for further modifications and corrections. 
+
+####Step 5: Just keep doing it####
+
+This guide was intentionally short so you could be on your way to start writing in Latex in the forums. The best way to learn Latex is to just keep writing, learning more Latex symbols as you need them, and troubleshooting issues than just by reading a whole on it. As an example, just from writing this guide, I learned few more things about Latex formatting and symbols. Eventually, you're not even going to bother going through these steps. 
+
+#Categories

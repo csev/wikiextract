@@ -1,0 +1,22 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 4: 3.2 Cross-Price Elasticity of Demand
+
+
+Cross-price elasticity of demand= % change of quantity of product X demanded / % change in price of related product Y
+- $$\epsilon_x = \cfrac{\% change Q_x}{\% change P_y} = \cfrac{\% \Delta Q_x}{\% \Delta P_y}$$ <br>
+
+
+* For products that are complements, E. is negative: if price of a complement Y goes up, consumed quantity of good X decreases.
+ * Example: pizza and beer are complements.  
+  * y = pizza
+  * x = beer
+  * So if the price of pizza goes up (say 10%), then $$\Delta P_y = 10 \%$$ <br>
+  * Since pizza is a complement of beer,demand for beer goes down when price of pizza goes up, so $$Q_x = -10 \%$$ <br>
+  * Therefore, the cross-price elasticity, $$\cfrac{\% \Delta Q_x}{\% \Delta P_y}$$, is negative
+
+
+<br>
+* For products that are substitutes, E. is positive: if price of substitute Y goes up, demanded quantity if good X increases.

@@ -1,0 +1,11 @@
+## Simple Returns ##
+
+Let $$P_t$$ denote the price in month $$t$$ of an asset that pays no dividends and let $$P_{t−1}$$ denote the price in month $$t − 1$$.
+
+$$R = \frac{(P_t - P_{t-1})}{P_{t-1}}$$
+
+## Continuously Compounded Returns ##
+
+Let $$P_t$$ denote the price in month $$t$$ of an asset that pays no dividends and let $$P_{t−1}$$ denote the price in month $$t − 1$$.
+
+$$r = \ln\left(\frac{P_t}{P_{t-1}}\right)$$

@@ -1,0 +1,253 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android Apps:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Creative.2C_Serious_and_Playful_Science_of_Android_Apps"><span class="tocnumber">1</span> <span class="toctext">Creative, Serious and Playful Science of Android Apps</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Subtitles"><span class="tocnumber">1.1</span> <span class="toctext">Subtitles</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">2</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#The_course"><span class="tocnumber">3</span> <span class="toctext">The course</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Subtitles_2"><span class="tocnumber">3.1</span> <span class="toctext">Subtitles</span></a></li>
+<li class="toclevel-2"><a href="#Other_information"><span class="tocnumber">3.2</span> <span class="toctext">Other information</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#IDEs"><span class="tocnumber">4</span> <span class="toctext">IDEs</span></a>
+<ul>
+<li class="toclevel-2"><a href="#STEP_1:_Java_Development_Kit"><span class="tocnumber">4.1</span> <span class="toctext">STEP 1:  Java Development Kit</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Installation"><span class="tocnumber">4.1.1</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Download_link"><span class="tocnumber">4.1.1.1</span> <span class="toctext">Download link</span></a></li>
+<li class="toclevel-4"><a href="#Operating_System_specific_instructions:"><span class="tocnumber">4.1.1.2</span> <span class="toctext">Operating System specific instructions:</span></a>
+<ul>
+<li class="toclevel-5"><a href="#Windows_procedure_and_issues"><span class="tocnumber">4.1.1.2.1</span> <span class="toctext">Windows procedure and issues</span></a></li>
+<li class="toclevel-5"><a href="#Mac_procedure_and_issues"><span class="tocnumber">4.1.1.2.2</span> <span class="toctext">Mac procedure and issues</span></a></li>
+<li class="toclevel-5"><a href="#Linux_procedures_and_issues_.28Debian.2FUbuntu.29"><span class="tocnumber">4.1.1.2.3</span> <span class="toctext">Linux procedures and issues (Debian/Ubuntu)</span></a></li>
+<li class="toclevel-5"><a href="#Linux_procedures_and_issues_.28Fedora.2FMandriva.2FSUSE.29"><span class="tocnumber">4.1.1.2.4</span> <span class="toctext">Linux procedures and issues (Fedora/Mandriva/SUSE)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#STEP_2:_Eclipse"><span class="tocnumber">4.2</span> <span class="toctext">STEP 2: Eclipse</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Installation_2"><span class="tocnumber">4.2.1</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Download_link_2"><span class="tocnumber">4.2.1.1</span> <span class="toctext">Download link</span></a></li>
+<li class="toclevel-4"><a href="#Operating_System_specific_instructions:_2"><span class="tocnumber">4.2.1.2</span> <span class="toctext">Operating System specific instructions:</span></a>
+<ul>
+<li class="toclevel-5"><a href="#Windows_procedure_and_issues_2"><span class="tocnumber">4.2.1.2.1</span> <span class="toctext">Windows procedure and issues</span></a></li>
+<li class="toclevel-5"><a href="#Mac_procedure_and_issues_2"><span class="tocnumber">4.2.1.2.2</span> <span class="toctext">Mac procedure and issues</span></a></li>
+<li class="toclevel-5"><a href="#Linux_procedures_and_issues_.28Debian.2FUbuntu.29_2"><span class="tocnumber">4.2.1.2.3</span> <span class="toctext">Linux procedures and issues (Debian/Ubuntu)</span></a></li>
+<li class="toclevel-5"><a href="#Linux_procedures_and_issues_.28Fedora.2FMandriva.2FSUSE.29_2"><span class="tocnumber">4.2.1.2.4</span> <span class="toctext">Linux procedures and issues (Fedora/Mandriva/SUSE)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4"><a href="#Usage"><span class="tocnumber">4.2.1.3</span> <span class="toctext">Usage</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#STEP_3:_Install_Android_Development_Tools_.26_SDK"><span class="tocnumber">4.3</span> <span class="toctext">STEP 3: Install Android Development Tools &amp; SDK</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Installation_3"><span class="tocnumber">4.3.1</span> <span class="toctext">Installation</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Download_link_3"><span class="tocnumber">4.3.1.1</span> <span class="toctext">Download link</span></a></li>
+<li class="toclevel-4"><a href="#Procedure_and_issues"><span class="tocnumber">4.3.1.2</span> <span class="toctext">Procedure and issues</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#STEP_4:_Set_up_The_Android_Virtual_Device_Tool_.28ADT.29"><span class="tocnumber">5</span> <span class="toctext">STEP 4:  Set up The Android Virtual Device Tool (ADT)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Installation_notes"><span class="tocnumber">5.1</span> <span class="toctext">Installation notes</span></a>
+<ul>
+<li class="toclevel-3"><a href="#The_Android_Virtual_Device_.28AVD.29_emulator_configuration_tool_.28ADT.29"><span class="tocnumber">5.1.1</span> <span class="toctext">The Android Virtual Device (AVD) emulator configuration tool (ADT)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#STEP_5:_Configure_an_Android_Virtual_Device_.28AVD.29"><span class="tocnumber">6</span> <span class="toctext">STEP 5:  Configure an Android Virtual Device (AVD)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Virtualization"><span class="tocnumber">6.1</span> <span class="toctext">Virtualization</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Windows_procedure_and_issues_3"><span class="tocnumber">6.1.1</span> <span class="toctext">Windows procedure and issues</span></a></li>
+<li class="toclevel-3"><a href="#Mac_procedure_and_issues_3"><span class="tocnumber">6.1.2</span> <span class="toctext">Mac procedure and issues</span></a></li>
+<li class="toclevel-3"><a href="#Linux_procedures_and_issues_.28Debian.2FUbuntu.29_3"><span class="tocnumber">6.1.3</span> <span class="toctext">Linux procedures and issues (Debian/Ubuntu)</span></a></li>
+<li class="toclevel-3"><a href="#Linux_procedures_and_issues_.28Fedora.2FMandriva.2FSUSE.29_3"><span class="tocnumber">6.1.4</span> <span class="toctext">Linux procedures and issues (Fedora/Mandriva/SUSE)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Alternative_IDE:_Android_Studio"><span class="tocnumber">7</span> <span class="toctext">Alternative IDE:   Android Studio</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Android_Studio_download_If_you_don.27t_mind_working_in_Beta_.28very_stable_reportedly.29._This_IDE_will_not_be_covered_in_this_course.2C_but_is_reportedly_very_similar_to_Eclipse.2FAndroid_SDK_in_function."><span class="tocnumber">7.1</span> <span class="toctext">Android Studio download If you don't mind working in Beta (very stable reportedly).  This IDE will not be covered in this course, but is reportedly very similar to Eclipse/Android SDK in function.</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Programming"><span class="tocnumber">8</span> <span class="toctext">Programming</span></a></li>
+<li class="toclevel-1"><a href="#Resources"><span class="tocnumber">9</span> <span class="toctext">Resources</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">10</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Creative.2C_Serious_and_Playful_Science_of_Android_Apps">Creative, Serious and Playful Science of Android Apps</span></h1>
+<p>by <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/lawrenceangrave">Lawrence Angrave</a></p>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/androidapps101-001">Course Home Page</a></p>
+<h2> <span class="mw-headline" id="Subtitles">Subtitles</span></h2>
+<p>You can find translations of the subtitles <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Android_Apps:Subtitles">here</a>.</p>
+<h1> <span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>Setting up a programming environment for Android is complex for the novice. Also the basic initial tricks for the programmer are a steep pathway.</p>
+<p>Knowledge (and links) from the forum could end up correctly ordered here.</p>
+<h1> <span class="mw-headline" id="The_course">The course</span></h1>
+<h2> <span class="mw-headline" id="Subtitles_2">Subtitles</span></h2>
+<p>You can find translations of the subtitles <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Android_Apps:Subtitles">here</a>.</p>
+<h2> <span class="mw-headline" id="Other_information">Other information</span></h2>
+<h1> <span class="mw-headline" id="IDEs">IDEs</span></h1>
+<p>IDE stands for Integrated Development Environment. </p>
+<p>You will need at least three major components:</p>
+<ol>
+<li>Java - JDK 7 or JDK 8 (NOT JRE or openJDK)</li>
+<li>Eclipse</li>
+<li>Android SDK</li>
+</ol>
+<p>NOTE:  Eclipse and Android SDK can either be installed separately as described in the steps below, or once a JDK is installed, Eclipse and Android Development Tools can be downloaded together in the form of the Android ADT bundle zip file available here: 
+<a rel="nofollow" class="external text" href="https://developer.android.com/sdk/index.html?hl=i">Android ADT Bundle download</a></p>
+<h2> <span class="mw-headline" id="STEP_1:_Java_Development_Kit">STEP 1:  Java Development Kit</span></h2>
+<h3> <span class="mw-headline" id="Installation">Installation</span></h3>
+<h4> <span class="mw-headline" id="Download_link">Download link</span></h4>
+<p><a rel="nofollow" class="external text" href="http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html">Java 7 Development Kit download</a></p>
+<p>Please take into account that Android does not support Java 8. Java 6 can be used as well without the need to upgrade to Java 7.</p>
+<p>Agree to the license terms</p>
+<h4> <span class="mw-headline" id="Operating_System_specific_instructions:">Operating System specific instructions:</span></h4>
+<h5> <span class="mw-headline" id="Windows_procedure_and_issues">Windows procedure and issues</span></h5>
+<ol>
+<li>Uninstall any previous versions of Java installed on your comptuter (Add Remove Programs)</li>
+<li>Open the link and save the MD5 checksum for the JDK installation file for your version of Windows (x86 for 32-bit or x64 for 64bit)  This number will help you verify your download in the next step completed properly.</li>
+<li>Select and download the appropriate JDK (not JRE) for your version of Windows (the JDK installation file that goes with the checksum above)</li>
+<li>Scan your download for viruses (completely optional, especially if the MD5 checksum matched, but a good habit)</li>
+<li>Check the integrity of  your download using <a rel="nofollow" class="external text" href="http://www.microsoft.com/en-us/download/details.aspx?id=11533">fciv</a> and compare the resulting hash code to the MD5 checksum number you downloaded above.  They should be identical.  If not, you may need to download again.  Personally I like the DownThemAll plugin for Firefox which is both a download manager and a file integrity checker if you give it a checksum to verify. </li>
+<li>Install Java SDK using the JDK installation executable file you downloaded above.</li>
+<li>Set a Path variables for Java Path so Eclipse and Android can find Java more easily [How to set Java Path]<a rel="nofollow" class="external free" href="http://java.com/en/download/help/path.xml">http://java.com/en/download/help/path.xml</a></li>
+<li><p>Verify proper version of Java is installed by typing in the terminal window:</p>
+<p>java -version</p></li>
+<li>The screen should print out the current version of Java installed. If not, double check every step and then post a question.   </li>
+<li>Move on to next step, download and install Eclipse</li>
+</ol>
+<h5> <span class="mw-headline" id="Mac_procedure_and_issues">Mac procedure and issues</span></h5>
+<h5> <span class="mw-headline" id="Linux_procedures_and_issues_.28Debian.2FUbuntu.29">Linux procedures and issues (Debian/Ubuntu)</span></h5>
+<h5> <span class="mw-headline" id="Linux_procedures_and_issues_.28Fedora.2FMandriva.2FSUSE.29">Linux procedures and issues (Fedora/Mandriva/SUSE)</span></h5>
+<h2> <span class="mw-headline" id="STEP_2:_Eclipse">STEP 2: Eclipse</span></h2>
+<h3> <span class="mw-headline" id="Installation_2">Installation</span></h3>
+<p>NOTE: Eclipse and the Android SDK can be downloaded together in something called Android ADT (Android Developer Tools) which is a bundle including a version of Eclipse that includes the Android SDK.   Eclipse and Android Development Tools can be downloaded together in the form of the Android ADT bundle zip file available here: 
+<a rel="nofollow" class="external text" href="https://developer.android.com/sdk/index.html?hl=i">Android ADT Bundle download</a>  This Bundle method was described in the lecture video and will not be detailed here except to state that it is important to place files near the root of your main drive to avoid path errors. The introductory splash screen has changed from the time the video was made, otherwise the ADT Bundle result should be very similar to the IDE created by installing Eclipse and Android plugin separately.</p>
+<p>The following instructions assume you are installing Eclipse and SDK separately.</p>
+<h4> <span class="mw-headline" id="Download_link_2">Download link</span></h4>
+<p><a rel="nofollow" class="external text" href="https://www.eclipse.org/downloads/">Eclipse download</a>.  Eclipse is not the easiest IDE to set up, but Eclipse is still the standard development environment for Android, although Android Studio (which is has a similar interface) is gaining traction.  We will be using Eclipse in this class.  Eclipse runs on top of Java and has a plugin for Android development which we will download later in the next section.</p>
+<h4> <span class="mw-headline" id="Operating_System_specific_instructions:_2">Operating System specific instructions:</span></h4>
+<h5> <span class="mw-headline" id="Windows_procedure_and_issues_2">Windows procedure and issues</span></h5>
+<p>Note that these instructions assume you are using Windows 7. Windows 8 wasn't in the supported OSs in the presentation: Some have reported that the Eclipse ADT loads with an error with Windows 8. So I had to use my previous laptop with Windows 7.</p>
+<ol>
+<li>Click the link for the proper version of Eclipse (32 or 64 bit) to correspond with your version of Java.</li>
+<li>Click the link for the MD5 (or SHA256 or SHA512 if you have a tool to use them) and save it for later use.</li>
+<li>Download Eclipse</li>
+<li>Scan your download for viruses (completely optional, especially if the MD5 checksum matched, but a good habit)</li>
+<li>Check the integrity of  your download using <a rel="nofollow" class="external text" href="http://www.microsoft.com/en-us/download/details.aspx?id=11533">fciv</a> and compare the resulting hash code to the MD5 checksum number you downloaded above.  They should be identical.  If not, you may need to download again.   Personally I like the DownThemAll plugin for Firefox which is both a download manager and a file integrity checker if you give it a checksum to verify. </li>
+<li>Strangely, there is no installer for Eclipse.   You simply unzip a large collection of files to a folder.  It is strongly recommended that this be in your root (C:&#41; drive.   <a rel="nofollow" class="external text" href="https://ist.berkeley.edu/as-ag/tools/howto/install-eclipse-win.html#Install+Eclipse">UCBerkeley setup instructions</a> has some instructions for an older version on  how to configure memory management and these may be helpful to you.</li>
+</ol>
+<h5> <span class="mw-headline" id="Mac_procedure_and_issues_2">Mac procedure and issues</span></h5>
+<h5> <span class="mw-headline" id="Linux_procedures_and_issues_.28Debian.2FUbuntu.29_2">Linux procedures and issues (Debian/Ubuntu)</span></h5>
+<ol>
+<li>On the Eclipse download page you should see 2 download options, Linux 32 bit and Linux 64 bit. Choose the one appropriate for your operating system. If you're not sure, <a rel="nofollow" class="external text" href="http://mylinuxbook.com/5-ways-to-check-if-linux-is-32-bit-or-64-bit/">here</a> are a whole lot of different ways to find out whether your OS is 32- or 64-bit (the simplest technique is at the bottom).
+Note: Eclipse will probably also be available in your package manager, but the version in the package manager is usually out of date so the above procedure is reccommended instead.</li>
+<li>Before clicking the download button open the MD5 checksum link in a separate tab, you'll need it later.</li>
+<li>Once Eclipse has downloaded, open a terminal and navigate to the directory it downloaded to, then verify it by running <code>md5sum</code> on the file (the Eclipse checksum page includes the filename so you can copy and paste it into the terminal for this purpose). If the output checksum exactly matches the checksum in your browser, the download was successful. An easy way to check this is to copy the checksum from your terminal, then paste it into "find" in your browser on the checksum page.
+If the checksums don't match, the download was corrupted and you should discard it and download Eclipse again.</li>
+<li>Once you've verified the download, extract it to wherever you like. You will end up with a directory containing the eclipse executable, which you can double-click on to launch Eclipse.</li>
+</ol>
+<h5> <span class="mw-headline" id="Linux_procedures_and_issues_.28Fedora.2FMandriva.2FSUSE.29_2">Linux procedures and issues (Fedora/Mandriva/SUSE)</span></h5>
+<h4> <span class="mw-headline" id="Usage">Usage</span></h4>
+<h2> <span class="mw-headline" id="STEP_3:_Install_Android_Development_Tools_.26_SDK">STEP 3: Install Android Development Tools &amp; SDK</span></h2>
+<p>The procedure for this is essentially the same across all operating systems.   Note that the latest versions of the SDK do not allow creation of hardware accelerated Intel Atom images without virtualization support in your computer's BIOS.   There are also issues with compatibility libraries.   Search the forum for details.  </p>
+<p>Some useful resources include:</p>
+<ol>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=-Rcrpq11oww">YouTube explanation app compatibility libraries</a></li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/androidapps101-002/forum/thread?thread_id=751">Forum thread 1</a></li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/androidapps101-002/forum/thread?thread_id=1314">Forum thread 2</a></li>
+</ol>
+<h3> <span class="mw-headline" id="Installation_3">Installation</span></h3>
+<p>This is the software specific to Android and comes directly from Google.</p>
+<h4> <span class="mw-headline" id="Download_link_3">Download link</span></h4>
+<p><a rel="nofollow" class="external text" href="https://developer.android.com/sdk/index.html?hl=i">Android SDK</a> NOTE: For the non-bundle manual installation described here, be sure to click the link "Get the SDK for an existing IDE", not the Eclipse ADT bundle unless you have not installed Eclipse and want to install using the Bundle as discussed earlier.</p>
+<h4> <span class="mw-headline" id="Procedure_and_issues">Procedure and issues</span></h4>
+<ol>
+<li>Download the Android SDK </li>
+<li>Follow the directions as described <a rel="nofollow" class="external text" href="https://developer.android.com/sdk/installing/index.html?pkg=tools">here</a>.</li>
+<li>You should be able to find an [SDK Manager menu] (<a rel="nofollow" class="external free" href="https://developer.android.com/sdk/installing/adding-packages.html">https://developer.android.com/sdk/installing/adding-packages.html</a>) item in Eclipse which will allow you to download whatever version(s) of Android for which you wish to develop.   They are large, so choose wisely.   A good choice for an older version is API level 10 (v.2.3.3 Gingerbread) and a newer one might be API level 17 (v.4.2, Jelly Bean) or even API level 19 (v.4.4, KitKat).  The numbering is confusing at first but you'll get used to it. 
+You should also install at least one emulator system image for each API level. Intel x86 Atom is a good choice as it's very fast.
+Trivia question:  What was the code dessert name for API 1 (ANSWER:  it did not have one!  The first named version was API level 3, v 1.5, which was Cupcake).</li>
+</ol>
+<h1> <span class="mw-headline" id="STEP_4:_Set_up_The_Android_Virtual_Device_Tool_.28ADT.29">STEP 4:  Set up The Android Virtual Device Tool (ADT)</span></h1>
+<h2> <span class="mw-headline" id="Installation_notes">Installation notes</span></h2>
+<h4> <span class="mw-headline" id="The_Android_Virtual_Device_.28AVD.29_emulator_configuration_tool_.28ADT.29">The Android Virtual Device (AVD) emulator configuration tool (ADT)</span></h4>
+<p>Download and install the ADT.  This is done automatically if you installed the Android ADT bundle, however if you are simply adding Android functionality to an existing or newly installed stand-alone Eclipse IDE, you will need to install the ADT separately.  This is done in Eclipse using the following menu sequence:</p>
+<p>Help &gt; Install New Software &gt; Add</p>
+<p>Then enter:
+<a rel="nofollow" class="external free" href="https://dl-ssl.google.com/android/eclipse/">https://dl-ssl.google.com/android/eclipse/</a>
+for the location and an arbitrary name (such as ADT plugin) for the Name.</p>
+<p>Once you do this, you should see "Developer Tools" listed in the large box below, and you can tick the small box in front of the package you need.   Click Finish when done and Eclipse should download and install the plug in, after which you will need to restart Eclipse.</p>
+<p>After restart, you will have two additional items under the Window menu in Eclipse:   Android SDK Manager &amp; Android Virtual Device manager (AVD).  Click Window &gt; Android SDK Manager and ensure that you have installed the SDK's you need.  You may need to tell the Eclipse plugin where the SDK files are if you have downloaded them separately, if not, go ahead and download them now.  It will take quite a while.</p>
+<h1> <span class="mw-headline" id="STEP_5:_Configure_an_Android_Virtual_Device_.28AVD.29">STEP 5:  Configure an Android Virtual Device (AVD)</span></h1>
+<p>Next click Window &gt; Android Virtual Device Manager (From here on, the AVD Manager)  The AVD Manager allows you to create simulated phones or tablets and these must be configured individually.  In other words, there is no default device unless you create it.   The procedure for doing so is basically the same on all three platforms (Windows, Mac, and Linux).   </p>
+<p>Please keep in mind that each Android Virtual Device requires its own RAM (you choose how much) and this is at the expense of system RAM.   Device screen size also take additional RAM.</p>
+<h3> <span class="mw-headline" id="Virtualization">Virtualization</span></h3>
+<p>The AVD can be more sluggish than a real device unless you use hardware acceleration.   For Mac and Windows, this requires an Intel chip and the HAXM accelerator. Installation details below.</p>
+<h4> <span class="mw-headline" id="Windows_procedure_and_issues_3">Windows procedure and issues</span></h4>
+<ol>
+<li>Download and install <a rel="nofollow" class="external text" href="https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager">HAXM accelerator</a></li>
+<li>Your CPU must have virtualization capability, and it must be turned on in the bios (some computers have it turned off by default).  Attempting to install HAXM will give an error message if it is turned off.</li>
+<li>Note that HAXM only works with Intel Atom based AVD's</li>
+</ol>
+<h4> <span class="mw-headline" id="Mac_procedure_and_issues_3">Mac procedure and issues</span></h4>
+<ol>
+<li>Download and install <a rel="nofollow" class="external text" href="https://software.intel.com/en-us/android/articles/intel-hardware-accelerated-execution-manager">HAXM accelerator</a></li>
+<li>Note that HAXM only works with Intel Atom based AVD's</li>
+</ol>
+<h4> <span class="mw-headline" id="Linux_procedures_and_issues_.28Debian.2FUbuntu.29_3">Linux procedures and issues (Debian/Ubuntu)</span></h4>
+<p>The HAXM accelerator is not compatible with Linux, but there is an equivalent accelerator available:
+<a rel="nofollow" class="external text" href="https://software.intel.com/en-us/blogs/2012/03/12/how-to-start-intel-hardware-assisted-virtualization-hypervisor-on-linux-to-speed-up-intel-android-x86-gingerbread-emulator">KVM accelerator</a></p>
+<h4> <span class="mw-headline" id="Linux_procedures_and_issues_.28Fedora.2FMandriva.2FSUSE.29_3">Linux procedures and issues (Fedora/Mandriva/SUSE)</span></h4>
+<p>(If you have expertise with setting up Android emulator hardware acceleration under Fedora family of Linux, please feel free to edit this.)</p>
+<h1> <span class="mw-headline" id="Alternative_IDE:_Android_Studio">Alternative IDE:   Android Studio</span></h1>
+<h4> <span class="mw-headline" id="Android_Studio_download_If_you_don.27t_mind_working_in_Beta_.28very_stable_reportedly.29._This_IDE_will_not_be_covered_in_this_course.2C_but_is_reportedly_very_similar_to_Eclipse.2FAndroid_SDK_in_function."><a rel="nofollow" class="external text" href="https://developer.android.com/sdk/installing/studio.html">Android Studio download</a> If you don't mind working in Beta (very stable reportedly).  This IDE will not be covered in this course, but is reportedly very similar to Eclipse/Android SDK in function.</span></h4>
+<h1> <span class="mw-headline" id="Programming">Programming</span></h1>
+<h1> <span class="mw-headline" id="Resources">Resources</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://android-developers.blogspot.com/">Android Developer Blog</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.vogella.com/articles/Android/article.html">Lars Vogel Android Development Tutorial</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android_Apps:Main&amp;oldid=29477">https://share.coursera.org/wiki/index.php?title=Android_Apps:Main&amp;oldid=29477</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Android" title="Category:Android">Android</a></li><li><a href="/wiki/index.php/Category:Android_Apps" title="Category:Android Apps">Android Apps</a></li><li><a href="/wiki/index.php/Category:Computer_Science" title="Category:Computer Science">Computer Science</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

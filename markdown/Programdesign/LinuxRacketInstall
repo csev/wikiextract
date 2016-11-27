@@ -1,0 +1,117 @@
+Choosing Linux OS Racket Downloads
+==================================
+
+Linux distributions tend to make extensive collections of material available for optional download as part  of the distribution.  These downloads are customize to the Linux OS release that is being used.  Updates are also available by simple request.
+
+If possible, use the provision of downloads that is part of a Linux OS distribution.  
+
+It is possible to obtain the downloads directly, and install them manually.  It takes more experience to do that.  There are possible conflicts with the distribution-provided download system to avoid.
+
+Finding a Distribution Download
+-------------------------------
+
+The DrRacket used in Systematic Program Design 1 must be operated in your graphical interface.  The easiest way to find a version of DrRacket is via that interface.
+
+Use the graphical-interface menu to find the software manager or similar application program (here illustrated with the Linux Mint Debian distribution).
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2024-MintPackage.png]]
+</center>
+
+On the illustrated menu, the Software Manager is listed among the programs under System Tools.
+
+On entering the software manager, find the Programming category, if there is one.  You might be able to use a search panel to search directly for "Racket" also.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2026-MintPackage.png]]
+</center>
+
+Installed or Available
+----------------------
+
+If the software manager shows few programming resources, it is possible that only the already-installed packages are listed.  Switch to available packages, if necessary.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2028-MintPackage.png]]
+</center>
+
+Once the full list, is obtained, it may be too extensive to scroll through to find Racket.  For this stage, using a search panel is far preferable.
+
+Choosing the Installation
+-------------------------
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2030-MintPackage.png]]
+</center>
+
+Of the choices available, such as those found above, it is the racket package that you want first.  This will generally take care of any dependencies on other material that also needs to be installed.
+
+Select the full racket package, however that is done with a given software manager.  In the illustrated case, double-clicking at the cursor position switches to detailed information about the full package.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2032-MintPackage.png]]
+</center>
+
+The description confirms that this is the Racket package and it appears to provide everything needed, especially DrRacket and documentation.  There is also confirmation that Racket is not installed.  The Install button is clicked.
+
+The Installation Process
+------------------------
+
+When a software manager is used, the entire install process is managed silently, typically, with a visual indication of progress.  Some install processes are chatty.  Not this one.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2033-MintPackage.png]]
+</center>
+
+When the software package has been installed successfully, that is reported.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2034-MintPackage.png]]
+</center>
+
+There's nothing more to do.  Racket is now available to be used.
+
+Initial Setup of DrRacket
+=========================
+
+Finding DrRacket
+----------------
+
+For Systematic Program Design 1, all that's needed is DrRacket, the graphical and interactive software that will be used throughout the course.  There are other components to Racket, but DrRacket is all that is needed.
+
+With the Linux OS that was used for demonstration here, it is easy to find DrRacket.  It is already on the menu of the account used to install the package.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2036-MintMenu.png]]
+</center>
+
+Click on the DrRacket menu entry to start the DrRacket program.
+
+First-Time Setup
+----------------
+
+The first time DrRacket starts, it is necessary to choose a programming language.  DrRacket provides several languages for use.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2038-MintStartup.png]]
+</center>
+
+Select the Choose Language... option of the Language menu item in the DrRacket window.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2040-MintStartup.png]]
+</center>
+
+For the first work with DrRacket, the Beginning Student language (BSL) is used.  In the Choose Language dialog, select the Choose a language radio button.  Then click the expansion pointer under Teaching Languages, How to Design Programs.  Finally, select Beginning Student, and click OK.
+
+<center>
+[[File:Racket-5.2.1-2013-09-07-2041-MintLanguage.png]]
+</center>
+
+The selection of particular programming language is shown in the bottom left corner of the DrRacket window.  This setting will be retained until it is to be changed in later parts of the course.
+
+That's all that's necessary for the usual first-operation of DrRacket.  
+
+<center>
+'''TO BE CONTINUED'''
+</center>

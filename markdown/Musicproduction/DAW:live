@@ -1,0 +1,122 @@
+[[Category:Music Production|live]]
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project specifics
+details of file management
+*Project Name
+**Aiff or wav
+Ableton Live projects are folders that contain the ".als" file and the associated samples within subfolders.
+*File type
+*Bit depth
+**Live Bar Menu (or cmd+, for Mac users)>Record,Warp,Launch>Resolution>then choose between 16 to 32
+*Sampling rate
+**Live Bar Menu (or cmd+, for Mac users)>Audio>Sampling rate>then choose between 44 100 to 96 000
+*Hardware
+*Buffer size
+**Live Bar Menu (or cmd+, for Mac users)>Audio>Buffer size>then choose between 14 to 2048
+*Project folders specifics
+
+##Current Version
+As of Apr 22 2015 the latest version is: Version 9.1.8
+
+##Workflows
+Details of visual layout/GUI of software environment
+*Session View
+*Arrangement View
+
+##Recording
+Details of audio recording
+*Metronome(click track)
+**The metronome (click track) may be enabled by clicking the metronome switch (see section 16.4 of Ableton Live User Manual): [[File:SettingMetronomeAbletonLive.jpg]]
+*Count in
+**Set the count in by clicking the down arrow button next to the metronome button, and select the number of bars for the count in.  None (default), 1, 2 or 4 bars may be selected.
+[[File:SettingCountInAbletonLive.jpg]]
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting - "Split" In Ableton Live - Left click on the audio where you would like to cut, right click and select "split" - Short cut Ctrl+E
+*Grid
+*Change grid resolution
+**CTRL-4 (CMD-4 on a Mac) toggles the note grid on and off. CTRL-1 and CTRL-2 (CMD-1 and CMD-2 on a Mac) make the note grid wider or narrower. CTRL-3 (CMD-3 on a Mac) toggles the triplet grid. CTRL-5 (CMD-5 on a Mac) toggles between the fixed and adaptive grid, which automatically adjusts as you zoom in and out (I find it easiest to stay with the fixed grid). These shortcuts are under the Option menu at the top of Live if you forget them. You can also right click over the note editing grid and there is a pop-up menu where you can adjust the same grid settings.
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+**Simple Zoom out - key
+** Simple Zoom in + key
+** Pan Zoom via Crl+Alt (PC) / Cmd+Alt (Mac) while click and drag
+** For more complete coverage of zoom and navigation, see section 6.1 of Ableton Live Manual
+*Nudge
+*Cycle - "Loop" in Ableton - Shortcut - Ctrl+L
+*Merge - "Consolidate" in Ableton - Shortcut - Ctrl+J
+*Name - "Rename" in Ableton - Shortcut - Ctrl+R
+*Color
+** 
+*Markers
+** Markers are called Locators in Ableton Live. See Section 6.3 of the Live 9 user manual for all the details. To name a locator, select it by clicking its triangular marker, and choose the Rename Edit menu command (or use the [CTRL][R](PC) / [CMD][R](Mac) shortcut). You can also enter your own info text (page 9) for a locator via the Edit Info Text command in the Edit menu or in the locator’s [right-click](PC) / [CTRL-click](Mac) context menu. Locators can be removed with your computer’s [Backspace] or [Delete] key , the Create menu, or the Delete Locator button.
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+###Channel strip layout
+
+**Channel Strip from Ableton Live 9**
+
+[[File:MusicProd\_Ableton\_ChanStrip.jpg]]
+
+**Sections of the Channel Strip**
+
+1. Track Name - Ctrl (Cmd)-R is the shortcut key for renaming the track
+2. Scene Area - Ableton Live accepts multiple clips for each track.  This area shows a list of those clips
+3. Track mini-view - A bar graph representation of the clip.  Vertical bars mark loop points and current position in the clip
+4. I/O Panel - Input and output for the track is set here.  Also the monitor output is controlled from this panel
+5. Sends - Each track has a send fader for each return track in the project.
+6. Fader - This section contains the track fader and down the left side the pan knob, mute, solo and track arm buttons.
+7. Delay - Each track has an optional delay value
+8. Crossfade bank - Ableton’s master fader has a crossfade slider that switches between groups A and B.  Tracks are associated with a group here.
+
+
+###Configuring a Submix
+
+There are three main ways to set up a submix in Live.  It is easier to do this in Session mode.
+
+1. **Group Tracks**
+Select multiple tracks and hit Ctrl (CMD) - G.  The output of all the tracks will be set to 'Group' and a new track will be created.  You can rename this track to an appropriate name for the submix.  Another UI feature in Live is you can fold up the group track to hide all the component tracks of the submix.
+
+2. **Create an aux track**
+Aux tracks are not called aux tracks in Live.  But you can create one by adding a new track ( Ctrl (CMD) - T ) and setting the 'In' button on the 'Monitor' section of the track I/O panel.  You can then route the output of all the tracks in the submix to that track.
+
+3.  **Create a return track**
+You can create a return track from the Live Create menu.  A new send fader will be added to the Send area of the Channel Strip.  You will want to set the output of the tracks in the submix to say 'Sends only'
+
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+Additional Resources
+*[https://www.ableton.com/ Ableton Homepage]
+*[https://www.ableton.com/manual Ableton Manual]
+*[https://forum.ableton.com/ Ableton Forum]
+*[Ableton Live Producer Facebook Group](https://www.facebook.com/groups/AbletonLiveResourceGroup/ "Ableton Live Producer Facebook Group")
+*[Ableton Live keyboard shortcuts quick reference page](http://www.synthtopia.com/content/2009/06/08/50-ableton-live-shortcuts/)

@@ -1,0 +1,44 @@
+Week 5 Projects
+===============
+
+Here are some projects and exercises to do with week 5 subjects.
+
+
+Topics arising from the videos.
+===============================
+
+Topics include trace route and ping.
+The Link Layer
+Networks
+
+[[Insidetheinternet:003wikiproject_layers|Network Layers]]
+
+
+Trace Route
+===========
+
+How to do a trace route on a windows machine.
+[[Insidetheinternet:003wikiproject_traceroute|Traceroute]]
+
+wikipedia:
+In computing, traceroute is a computer network diagnostic tool for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network. The history of the route is recorded as the round-trip times of the packets received from each successive host (remote node) in the route (path); the sum of the mean times in each hop indicates the total time spent to establish the connection. Traceroute proceeds unless all (three) sent packets are lost more than twice, then the connection is lost and the route cannot be evaluated.
+
+Ping
+====
+
+wikipedia: Ping is a computer network administration utility used to test the reachability of a host on an Internet Protocol (IP) network and to measure the round-trip time for messages sent from the originating host to a destination computer. The name comes from active sonar terminology which sends a pulse of sound and listens for the echo to detect objects underwater.[1]
+
+Ping operates by sending Internet Control Message Protocol (ICMP) echo request packets to the target host and waiting for an ICMP response. In the process it measures the time from transmission to reception (round-trip time)[1] and records any packet loss. The results of the test are printed in the form of a statistical summary of the response packets received, including the minimum, maximum, and the mean round-trip times, and sometimes the standard deviation of the mean. Ping does not evaluate or compute the time to establish the connection; it only gives the mean round-trip times of an established connection with an open session.
+
+
+Main Page
+=========
+
+[[Insidetheinternet:003wikiproject |  **Wiki Project Main Page**]]
+
+
+====================================================
+
+page commenced Tuesday July 2 2013 14:34 FB
+
+page was updated Tuesday July 02 2013 23:06UTC+10 FB

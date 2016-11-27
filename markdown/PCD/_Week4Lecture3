@@ -1,0 +1,55 @@
+[[Category:Coursera]] 
+[[Category:PCD]]
+[[Category:Biology]]
+
+#Week 4, Lecture 3 - Structural analyses of Bcl-2 family members
+
+* Within a couple of years, the mammalian apoptosis pathway had changed dramatically, with cytochrome c, Apaf-1 and caspase-9 filling in critical gaps between the Bcl-2 superfamily and caspase-3. However what was still an enigma was the mechanism through which cytochrome c is released and the role that Bcl-2 family members played in this.  
+
+* In the last section, I mentioned that the release of cytochrome c can be blocked by Bcl-2 overexpression or, more general, by the overexpression of guardians. The guardians act to negatively regulate the pro-apoptotic effectors, such as Bax. If Bcl-2 overexpression can block cytochrome c, could it be that Bax can induce cytochrome c release?  
+
+* Indeed soon after it was shown that Bcl-2 overexpression can block cytochrome c release it was demonstrated that Bax expression can induce cytochrome c  release in the absence of apoptotic stimuli. In order to cause cytochrome c release from the inter-membrane space, the outer mitochondrial membrane has to be selectively permeabilized. How can Bax do that?  
+
+* Let’s go back to the Bcl-2 superfamily. Members of the Bcl-2 superfamily have either pro- or anti-apoptotic functions, they are either sensors, guardians, or effectors, and they can interact with each other thereby affecting each others’ functions.  Members of the family furthermore share homology domains, the Bcl-2 homology or BH domains, but apart from that (at least at the time they were identified and functionally characterized) their sequences did not reveal any known motifs or enzymatic functions.  
+
+* However, what did turn out to reveal a potential mechanism of action were structural studies. Structural studies revealed structural features of members of the Bcl-2 superfamily that were similar to the structural features of proteins of known functions and/or known activities.  
+
+* The first structure solved was that of Bcl-XL, one of the guardians. The solution structure of Bcl-XL was solved by Stephen Fesik and co-workers using both X-ray crystallography as well as nuclear magnetic resonance or “NMR” spectroscopy. And solution structure refers to the fact that the structure of Bcl-XL in aqueous solution rather than associated with membranes was solved. This work was published in 1996 in the journal Nature.  
+
+* What Fesik and co-workers found is that Bcl-XL consists of two central hydrophobic &alpha;-helices, helices 5 and 6, which are surrounded by amphipathic &alpha; helices, helices that possess both lipophilic as well as hydrophilic properties.  
+
+* Furthermore, they found that the BH1, BH2, and BH3 domains are close to each other in the structure and that they form an elongated hydrophobic cleft. This cleft, they speculated, might represent the binding site for other Bcl-2 family members. And this turned out to be the case.  This cleft is the receptor domain of the guardians through which the guardians interact with the sensors.  
+
+* What came as a complete surprise was  that the arrangement of the helices in Bcl-XL, the “fold” of Bcl-XL, was reminiscent of the fold of the membrane translocation domain of bacterial toxins and, in particular, that of diphtheria toxin and the colicins. Diphtheria toxin is a toxin  that is secreted by the pathogenic bacterium <i> Corynebacterium diphtheria </i>, which causes diphtheria. At the time, it was thought that Diphtheria toxin permeabilizes membranes by forming a dimer, which then could form a pH-dependent membrane pore or channel.  
+
+* However, how Diphtheria toxin actually permeabilizes membranes has still not been solved. What was the significance of that? Bcl-XL, like many of the guardians, has a hydrophobic tail at its C-terminus through which it can associate with membranes and, with the outer mitochondrial membrane, in particular. The structural similarities to the bacterial toxins now suggested that under certain circumstances, Bcl-XL may insert helices 5 and 6 and some of the surrounding amphipathic alpha helices into the outer mitochondrial membrane. Such an insertion of major helices represents a major conformational or structural change.  
+
+* The solution structures of additional members of the Bcl-2 superfamily were solved in the following years, first that of Bid, one of the sensors, and then of Bax, one of the effectors. And others followed as well. Remember, the overall sequence identity between Bcl-2 and Bax is only about 20% and Bid only shows sequence similarity to other members of the Bcl-2 superfamily in the BH3 domain but not in other regions of its sequence.  
+
+* However, the solution structures of Bid and Bax revealed that they had overall structures and folds that were very similar to that of Bcl-XL. Not only that, their folds also resembled the folds of pore-forming bacterial toxins such as Diphtheria toxin. That was a real surprise,  especially in the case of Bid!  Proteins that exhibit almost no sequence similarity at the level of amino acid sequence, such as Bcl-XL and Bid, exhibit substantial similarity at the level of their 3-dimentional structure!  
+
+* In 1997, a year after the Bcl-XL structure was published, four different groups independently reported that Bcl-XL, Bcl-2 as well as Bax possess channel-forming activity in synthetic lipid membranes or bilayers. The requirements for channel formation and the properties reported for the channels differed between the anti- and pro-apoptotic Bcl-2-like proteins; however, the fact was that all of them were able to permeabilize synthetic lipid membranes.  
+
+* Could it be that the Bcl-2-like proteins form channels in the outer mitochondrial membrane through which cytochrome c is released in response to apoptotic stimuli? If so, why do all types of Bcl-2-like proteins, sensors, guardians and effectors, appear to have the ability to form such channels?  
+
+* Subsequent studies performed with liposomes suggested that several molecules of Bax can come together in a lipid bilayer to form channels of varying sizes, and the more Bax molecules come together, the larger the channel was. The pore size of these “Bax channels” could even be big enough to accommodate cytochrome c.  
+
+* Additional studies with the guardian Bcl-XL suggested that Bcl-XL can block the ability of Bax to form channels and therefore to permeabilize membranes.  
+
+* And finally, it was found that the ability of Bax or Bak, the other effector, to form channels in liposomes could be triggered or activated by certain sensors such as Bid and even peptides that cover the BH3 domain of these sensors.  
+
+* So, a model was put forward  that several Bax molecules oligomerize to form a channel in the outer membrane through which cytochrome c is released from the inter membrane space and that the formation of this channel is blocked by the guardians and activated by the sensors. In support of this model, it was reported in 2009, that an inhibitor of the Bax channel could block apoptosis. However, this inhibitor wasn’t thoroughly enough characterized to exclude the possibility that it didn’t only affect the ability of Bax to form channels but other functions of the Bax protein as well. This work therefore did not provide proof for the model that the ability of Bax to form channels is essential for its role in apoptosis.  
+
+* The bottom line is that the model that Bax forms a channel through which cytochrome c is released is still only a model. What I find a bit annoying is that in many apoptosis reviews, this is stated as a fact.  You can read that yes, Bax forms channels through which cytochrome c is released. As I just mentioned, the ultimate evidence for this is still missing and until then, it is just a model. Bax clearly is required for cytochrome c release but how Bax causes permeabilization of the outer mitochondrial membrane is still an enigma.  It is not as simple as Bax forming a cytochrome c conducting channel.  
+
+* Other models that have been proposed suggest that Bax acts with cardiolipin to form a lipidic pore. Or that Bax activates known transporters in the outer mitochondrial membrane such as VDAC, which stands for “Voltage-dependent anion channel” and which belongs to the porin class of ion channels.   
+
+* Recently it has also been proposed that Bax acts with factors that control mitochondrial dynamics, the ability of mitochondria to fuse and divide, to cause cytochrome c release. And these factors are dynamin-related GTPases.  
+
+* Why has it been so challenging to determine how cytochrome c is released or what the mechanism of action of Bax and of Bcl-2-like proteins, in general, is? One clear reason is the fact that upon association with membranes or other members of the Bcl-2 superfamily Bcl-2-like proteins dramatically change their conformation.  And unfortunately, we so far have only solution structures but not structures of Bcl-2-like proteins associated with membranes or with each other. And often, the solution structures were done with parts of the proteins and not with the full-length proteins. This is technically all very challenging, which is the reason that such structures have not been generated yet.  
+
+* Actually, only this January [2013] a paper was published in the journal Cell by Peter Colman and co-workers on new structures of Bax. These structures were generated in the presence of detergents and in the presence of BH3 peptides, and these structures represent Bax dimers.  These new structures challenge some of the previous findings and models, including the role of the central helices 5 and 6.  
+
+* And last September, 2012 a paper was published in the journal PLoS Biology by Donald Newmeyer and colleagues on Bax activation in isolated mitochondrial outer membrane vesicles. These vesicles are not artificial as liposomes or synthetic lipid membranes are and they represent more the in vivo environment of the Bcl-2-like proteins. The data obtained with these outer membrane vesicles challenges the model that Bax oligomerization is essential for its role in cytochrome c release. Furthermore, the work suggests that Bax monomers promote the oligomerization of another, yet unknown factor in the outer mitochondrial membrane; however, this factor does not appear to be a dynamin-related GTPase as was suggested before.  
+
+* I started out this section by stating that after the identification of cytochrome c, Apaf-1 and pro- caspase-9, that it was still an enigma what the mechanism was through which cytochrome c was released and what the role was that the Bcl-2 family members played in this. Almost 20 years later, this is still an enigma. Considering the importance of cytochrome c release in apoptosis, this is clearly something that needs to be figured out in the future.

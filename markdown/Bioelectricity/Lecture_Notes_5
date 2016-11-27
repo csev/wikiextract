@@ -1,0 +1,311 @@
+# Bioelectricity week 5  
+[[Bioelectricity:Week 5 transcripts | Edited Transcripts]]  
+[[Bioelectricity:Main | Main Page]]  
+    
+**Learning Objectives**  
+* Select the characteristics that distinguish core-conductor from other models.  
+* Identify the differences between axial and trans-membrane currents.  
+* Given a list of trans-membrane potentials, decide where axial and trans-menbrane currents can be found.  
+* Compute axial currents in multiple fiber sigments from trans-membrane potentials and fiber parameters.  
+* Compute membrane currents at multiple sites from trans-mebrane potentials.  
+  
+---    
+
+There are 2 aspects for which we need quantitative results:
+* The first, which I have called Axial currents inside and outside, are the currents that flow from one place to another, either in the space inside the cells or in the space outside the cells.  
+* The 2nd is a consequence of the 1st.  
+* At some point along the fiber, the fact that the current stops flowing inside, forces them outside.  
+* At other points along the fiber, are in a group of cells, the fact that currents start flowing inside means that current has to come through the membrane from the outside.  
+* What about these membrane currents that are forced to be present by the need to supply or get rid of the axial currents?  
+  
+These are our 2 topics of this week.  
+A) Axial currents inside and outside t  
+B) Membrane currents forced by axial currents.
+  
+Train system: -- The track..  
+  
+**Hodgkin-Huxley Membrane Model**
+HH Numerical Calculations.
+
+1. Introduction to week 5
+2. And now for something a little different…
+3. Alternative tissue structures
+4. A 1D uniform cable model
+5. Grid divisions of a 1D model
+6. The local current loop
+7. Problem session , around the loop.
+8. Determining axial current
+9. Determining trans-membrane current
+10. How does one know, without Iion?
+11. Problem session, getting Ia and I m
+12. Week 5 in review  
+  
+Train system: Lay the track..  
+  
+## And now for something a little different… (5-2)  
+**A different term in the starting equation**  
+Im = Ic + Iion  
+* Frequently start with this equation.
+* The total membrane current equals the capacity current plus the sum of the ionic currents for active tissue.
+Ic: done  
+Iion: done  
+Im: examined this week  
+
+**Now the patch is not isolated from its friends nearby**  
+* Until now we have always assigned Im = 0.  
+* A short stimulus was introduced for a little while, but this had nothng to do with the neighbors.  
+* One patch has a strong effect on what happens in the next patch.
+* Each one has an effect in all the neighbors.
+* There is a chain reaction from one patch to the next.
+* That’s because we were considering one patch in isolation.  
+* When there is more than one patch, each has an effect on the others.  
+* We are examing how each patch interacts with its neighbors, and we have to do that by examing a particular tissue structure.  
+* The effect is expressed by changes in Im.  
+  
+---
+**The need to define the tissue’s structure**
+* Until now we have never worried about the tissue structure. A patch was a patch, wherever it was.  
+* Now we are examining a patch’s interactions with neighbors.  
+* We have to select a particular structure, so as to know who the neighbors are.  
+* We want to know how currents are moving from one structure to another.
+  
+## Alternative tissue structures (5-3)  
+**Cylindrical tissue structures**  
+* Uniform cylindrical fiber  
+:* Simplest structure  
+
+* Bundle of cylindrical fibers  
+:* Contains many individual cylindrical fibers inside it wrapped in a sheath.  
+:* Each fiber inside acts as if they were independent fibers, but their performance may be affected by the others.  
+  
+**Branching and diameter changes**  
+* Fiber branching  
+:* Diameter might change. 
+:* Size of the diameter affects how current flows.  
+  
+**2D or 3D cell clusters**  
+* 2D or 3D cells close together  
+:* In the heart and the brain, especially, but also in other places, there may be large numbers of small cells clustered together in a very tight packing.  
+:* May be 2D sheets of cells, as in the cardiac atrium.  
+:* May also be a big 3D mass of cells in an entire volume of space, which occurs in the brain and other tissues  
+    
+**Selected for analysis here**  
+* Uniform cylindrical fiber, without myelination, in an infinite volume.  
+:* Myelin is a material surrounding a fiber that makes it conduct faster.  
+:* Fiber is located in an infinite volume.  
+:* It is the simplest model that incorporates all of the major structural features the must be present.   
+  
+* 2 Reasons for selection:   
+:* Most other tissue models start here, and it is the easiest to understand
+:* People first learn this model, then build on it. 
+:* Want the structure to be present, but not be so complicated it gets in the way of gaining that initial understanding.  
+  
+---
+##  A 1D uniform cable model (5-4)   
+**a, b, L**  
+* Called 1D because the spatial change all occurs along the x axis.  
+* a = radius from center of fiber to membrane
+* b = radius from center to a limit where currents can be conducted
+:* The limit is a large number.  
+* L = length of a segment
+:* Segments can also be divided further.  
+:* Length of a segment is called Δx.  
+  
+**x, Ii, Ie, Im(x)**  
+* Along axis x, there are curents.  
+* The intracellular current is positive, which meant that it is going in the same direction as x.  
+* The extracellular (or interstitial) current it also flows in the direction of x.  
+* The extracellular volume is quite large, and currents outside the cell can flow along many different pathways. Here is it restricted to only flow along the x axis.  
+* The membrane current flows across the boundary. 
+* When the membrane current is positive, it is flowing from the outside to the inside.  
+  
+**ri and re**  
+* Bulk conductivity of the inside is rho i, and the conductivity of the outside is rho e.  
+* Conductivity is in ohm/cm.  
+* Bulk conductivity can be transformed into  
+:: ri = rho i/area  
+:: area = pi * radius squared  
+* ri can be transformed into resisitivity (R)  
+:: Ri = ri * Δx  
+* A similar thing is done with rho e, using the radius b.  
+  
+**A Uniform cable model**  
+* The “core-conductor model” of Kelvin and others  
+* The core-conductor model was used to explain the failure of the original trans-Atlantic cable, and to make another one that actually worked.  
+* Called a 1D model, even though there is membrane current.  
+* Uniform cylindrical cable with intracellular intra-cellular longitudinal (axial) current, extra-cellular longitudinal current, and trans-membrane currents jumping back and forth.  
+  
+---  
+## Grid divisions of a 1D model (5-5)  
+* Have to compute the current going in and out of the fiber and the current going along the fiber. (compute x and y)  
+* It is helpful to think of the fiber as broken up into segments for purposes of calculations.  
+* Can calculate membrane resistance for currents for going out of the wall of this segment, a membrane capacitance for currents going out of the wall of this segment, and a single value of Vm that is present.  
+* Across the length of a segment, the trans-membrane voltage is equal to a constant.  
+
+* A patch (from week 2) needs to be big enough that all the different pumps and channels are represented in proportion to their true numbers.  
+* A patch also needs to be small enough to assume, with good accuracy, that there is no variation in the trans-membrane potential across the patch.  
+* Vm = constant  
+  
+* The membrane itself is continuous.  
+* The division into patches is something we put on it to do our analysis.  
+  
+---  
+  
+## The local current loop (5-6)   
+* Potentials at all points  
+Vab =  Φa - Φb 
+0 = Vab + Vbc + Vcd + Vda  
+* True without need for simultaneous equations.  
+  
+---
+## Problem session, around the loop (5-7)    
+**Axial current, Ii versus Ie**  
+Suppose Ii2 is as shown.  
+What is Ie2?  
+Ie2 = - Ii2  
+  
+---  
+  
+## Determining axial current (5-8)   
+**Axial current, Ii**  
+0 = Vab + Vbc + Vcd + Vda  
+Vab = Ie1 Re  
+Vbc = -Vm2  
+Vcd = -Ii1 Ri  
+Vda = Vm1  
+  
+0 = Vm1 – Vm2 –Ii1 Ri + Ie1 Re  
+* Same as 0 = Vab + Vbc + Vcd + Vda, but substituted the other equations.  
+* Substiture -Ii1 for Ie1  
+:: Ie1 = -Ii1  
+* Rearrange the equation 0 = (Vm1 – Vm2) / (Ri + Re) 
+:: to get Ii1 = (Vm1 – Vm2) / (Ri + Re)  
+* Do not have to worry about the membrane resistance because Vm1 and Vm2 are the result of the membrane resistance. 
+  
+* If Re is virtually zero relative to Ri,  
+:: then Ii1 = (Vm1-Vm2) / Ri  
+     
+**Units ok?**  
+* Ri is in ohms.  
+* Vm1 and Vm2 are in volts or milivolts. 
+* Ii1 is in amperes.  
+* 1 A = 1 V / 1 ohms
+* 1 nA = 1 mV / kohms  
+   
+---  
+  
+## Determining trans-membrane current (5-9) 
+**Membrane current, Im**  
+* If Ii1 = (Vm1-Vm2) / Ri  
+* Then Ii2 = (Vm2 – Vm3) / Ri  
+  
+* Conservation of current requires  
+Im2 = Ii1 – Ii2  
+So  Im2 = (Vm1 – 2*Vm2 + Vm3) / Ri  
+
+**Im Units?**  
+Im2 = (Vm1 – 2*Vm2 + Vm3) / Ri  
+  
+But in Im= Ic + Iion the units were A/m2 (not just A)    
+So conversion is required.  
+  
+**Im units conversion**  
+Im2 = (Vm1 – 2*Vm2 + Vm3) / Ri  
+  
+* Divide by the surface area of one segment, As, and show  
+: Ri as equal to ri dx  
+  
+* Im = Im2 / As = (Vm1-2*Vm2+Vm3)/(ri dx 2 pi a dx)  
+So, in the limit, we have:  
+
+## How does one know, without Iion? (5-10)   
+**Im without Iion. Really?**  
+Skepticism--  
+The preceding sections claimed to show that Im can be determined directly from the set of Vm values.  
+Can this claim really be true?  
+  
+Basis for skepticism--  
+* The fundamental definition that has been used over and over is Im = Ic + Iion  
+* It is obvious that to get Im one needs to first find Iion and then add it to Ic.  
+  
+**Im without Iion. Really? Yes, turn eqn around.**  
+Response to skepticism-  
+Accepting the definition:  
+* To accept Im = Ic + Iion as true is also to accept the equation Ic = Im - Iion  
+* So one can proceed (and the membrane does proceed) to use the equation in this order:  
+1. Get Iion from the state variables.  
+2. Get Im from the set of Vm’s from the neighboring and home cells.  
+3. Use these to get Ic, which is dVm / dt    
+  
+**Yes, really.**  
+A way of thinking about what is happening is this:  
+* The membrane finds the Im that is forced upon it by its neighbors.  
+* Some of that current flows as Iion.  
+* The rest is pushed on the membrane capacitance, with a change in Vm as the consequence.  
+  
+---  
+  
+## Problem session, getting Ia and I m (5-11)   
+**Ii and Im -- Q**  
+Consecutive sites along a membrane have transmembrane potentials with these values of vm  
+x vm  
+0 0  
+1 0  
+2 0  
+3 50  
+4 100  
+5 90  
+6 80  
+A. In each interval (0-1), (1-2), etc, what is the sign of the intracellular axial current?  
+Can be plus, minus, or 0  
+B. At each of the sites 1 to 5, what is the sign of the trans-membrane current?  
+Can be plus, minus, or 0  
+  
+**Ii and Im -- A**  
+Consecutive sites along a membrane have transmembrane potentials with these values of vm  
+x vm  
+0 0  
+1 0  
+2 0  
+3 50  
+4 100  
+5 90  
+6 80  
+A. In each interval (0-1), (1-2), etc, what is the sign of the intracellular axial current?  
+Can be plus, minus, or 0  
+
+**Ii and Im -- B**  
+Consecutive sites along a membrane have transmembrane potentials with these values of vm  
+x vm  
+0 0  
+1 0  
+2 0  
+3 50  
+4 100  
+5 90  
+6 80  
+B. At each of the sites 1 to 5, what is the sign of the trans-membrane current?  
+Can be plus, minus, or 0  
+  
+---  
+  
+## Week 5 in review (5-12)   
+We need to know the membrane current.  
+That’s because it is the Im term in our starting equation  
+Im = Ic + Iion  
+  
+We need to know the membrane current.  
+For a **known** structure it can be found.  
+We found it for a cable using the **core-conductor model**.  
+  
+We found that at a home site, membrane current (Im) depends on the **pattern of vm** values in the neighborhood, especially the **2nd spatial derivative** of vm.  
+  
+Even though Im = Ic + Iion  
+The membrane current is found without need for any calculations of Iion or Ic.  
+  
+We need to know the membrane current.  
+For a known structure membrane can be found, and we found it, for a cable.  
+Membrane current im depends on the pattern of vm values in the neighborhood, especially the 2nd spatial derivative of the vm values.  
+The membrane current is found without need for any calculations of Iion or Ic.  
+  
+[[Bioelectricity:Main | Main Page]]

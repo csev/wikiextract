@@ -1,0 +1,50 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:Attacks on stream ciphers and the one time pad</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h3> <span class="mw-headline" id="Attack_1:_two_time_pad_is_insecure.21">Attack 1: <strong>two time</strong> pad is insecure!</span></h3>
+<p>Never use stream cipher key more than once</p>
+<p>If the OTP is used to encrypt more than one message, then security goes out the window and an eavesdropper can completely decrypt the cipher text.</p>
+<p>$$ C&#95;1 \leftarrow m&#95;1 \oplus PRG(k)$$<br />
+$$ C&#95;2 \leftarrow m&#95;2 \oplus PRG(k)$$</p>
+<p>$$ C&#95;1 \oplus C&#95;2 \rightarrow m&#95;1 \oplus m&#95;2 $$</p>
+<p>English has already enough redundancy that this would help to decrypt the messages. If the text is encoded in ASCII, ASCII has enough redundancy to recover the encoded messages.</p>
+<p>$$ m&#95;1 \oplus m&#95;2 \rightarrow m&#95;1,m&#95;2 $$</p>
+<h3> <span class="mw-headline" id="Real_world_examples">Real world examples</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Venona_project">Project Venona (1941-1946)</a></li>
+<li>MS-PPTP (Windows NT)</li>
+<li>802.11b WEP</li>
+</ul>
+<h3> <span class="mw-headline" id="Attack_2:_no_integrity_.28OTP_is_malleable.29">Attack 2: no integrity (OTP is <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Malleability_(cryptography)">malleable</a>)</span></h3>
+<p>$$ m \xrightarrow{enc(\oplus k)} m\oplus k $$</p>
+<p>An active attacker could now modify the cipher text by xor with a pad p</p>
+<p>$$ ((m \oplus k)\oplus p) \xrightarrow{dec(\oplus k)} m\oplus p $$</p>
+<p>Modifications to the cipher text are undetected and have a <strong>predictable</strong> impact on the plaintext.</p>
+<p>$$ From:Bob \xrightarrow{enc(\oplus k)} \mathfrak{From:Bob} $$</p>
+<p>All the attacker knows is, that this message is from Bob (and maybe some minor details about the mail protocols header structure). He can now modify the cipher text so that it looks like it comes from somebody else (Eve). All he needs to to is to xor the cipher text with a set of three characters.</p>
+<p>$$ \mathfrak{From:Eve} \xrightarrow{dec(\oplus k)} From:Eve $$</p>
+<p>What are those three characters?</p>
+<ul>
+<li>Bob in ASCII(hex): x42 x6F x62</li>
+<li><p>Eve in ASCII(hex): x45 x76 x65</p></li>
+<li><p>Bob $$\oplus$$ Eve: x07 x19 x07 and these are the three chars we would use to xor the cipher text</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:Attacks_on_stream_ciphers_and_the_one_time_pad&amp;oldid=13735">https://share.coursera.org/wiki/index.php?title=Crypto:Attacks_on_stream_ciphers_and_the_one_time_pad&amp;oldid=13735</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

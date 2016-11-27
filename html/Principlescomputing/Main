@@ -1,0 +1,83 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Principlescomputing:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This class covers a collection of principles that are fundamental to Computer Science. As a motivating application of these principles, we will examine a collection of strategy games and apply these principles in the analysis/solution of these games.</p>
+<p>Each week, you will watch a set of 6-8 videos and then complete homework on the mathematical aspects of these concepts. Your main weekly task is to complete a mini-project that furthers your practical understanding of the material. Both assignments have a soft deadline of Monday and a hard deadline of Thursday. An optional collection of practice activities is also available to further reinforce the concepts introduced in the videos.</p>
+<p>Below is a tentative syllabus for the class. Please note that the topics and mini-projects listed below are subject to change.</p>
+<table align="center">
+<tr>
+<th>Week</th>
+    <th>Concepts</th>
+    <th>Mini-project</th>
+  </tr>
+<tr>
+<td>0</td>
+    <td> Introduction, coding standards </td>
+    <td> 2048 </td>
+  </tr>
+<tr>
+<td>1</td>
+    <td> Counting, growth of functions, lambda </td>
+   <td> Cookie Clicker </td>
+  </tr>
+<tr>
+<td>2</td>
+    <td> Probability, randomness, objects/references</td>
+   <td> Tic-Tac-Toe (Monte-Carlo) </td>
+  </tr>
+<tr>
+<td>3</td>
+    <td> Combinatorics, generators, debugging </td>
+   <td> Yahtzee </td>
+  </tr>
+<tr>
+<td>4</td>
+    <td> Searching, data structures, inheritance </td>
+    <td> Zombie Apocalypse (BFS) </td>
+  </tr>
+<tr>
+<td>5</td>
+    <td> Recursion, sorting, reading files </td>
+    <td> Word Wrangler </td>
+  </tr>
+<tr>
+<td>6</td>
+    <td> Trees, game tree search, testing </td>
+    <td> Tic-Tac-Toe (Tree search) </td>
+  </tr>
+<tr>
+<td>7</td>
+    <td> Design of abstractions, models, invariants</td>
+    <td> The "Fifteen" puzzle</td>
+  </tr>
+</table>
+<h2> <span class="mw-headline" id="Course_Staff">Course Staff</span></h2>
+<p><strong>Joe Warren</strong>, Professor, Department of Computer Science at Rice University. His main area of research interest is computer graphics and geometric modeling, where he has published extensively. Does not wear ties</p>
+<p><strong>Scott Rixner</strong>, Associate Professor, Department of Computer Science at Rice University. His research focuses on systems software and computer architecture. Wears ties of various colors.</p>
+<p><strong>Luay Nakhleh</strong>, Associate Professor, Department of Computer Science.</p>
+<h2> <span class="mw-headline" id="Miscellaneous_.28Bugs.2CErrors.2CEtc.29">Miscellaneous (Bugs,Errors,Etc)</span></h2>
+<p><a href="/wiki/index.php/Principlescomputing:Resources" title="Principlescomputing:Resources">Resources (books and websites)</a></p>
+<ul>
+<li><p>Created Wed 12 Mar 2014 1:34 PM EDT</p></li>
+<li><p>Last Modified Wed 4 Jun 2014 2:34 PM EDT</p></li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Principlescomputing:Main&amp;oldid=32084">https://share.coursera.org/wiki/index.php?title=Principlescomputing:Main&amp;oldid=32084</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Computer_Science" title="Category:Computer Science">Computer Science</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Python" title="Category:Python">Python</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

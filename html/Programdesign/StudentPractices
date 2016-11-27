@@ -1,0 +1,65 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Programdesign:StudentPractices</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#The_Great_Student_Practice_Explosion_Page"><span class="tocnumber">1</span> <span class="toctext">The Great Student Practice Explosion Page</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Creating_Practice_Problems"><span class="tocnumber">1.1</span> <span class="toctext">Creating Practice Problems</span></a></li>
+<li class="toclevel-2"><a href="#The_Student_Practice_Problems_Catalog"><span class="tocnumber">1.2</span> <span class="toctext">The Student Practice Problems Catalog</span></a></li>
+<li class="toclevel-2"><a href="#Requests"><span class="tocnumber">1.3</span> <span class="toctext">Requests</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="The_Great_Student_Practice_Explosion_Page">The Great Student Practice Explosion Page</span></h1>
+<p>In the Week 2 Office Hours, Gregor Kiczales suggests a way to have more practice problems: the students can create their own practice problems on the Wiki.  The staff could select interesting ones for future addition to the course.  Either way, there will be more practice problems for us.  And having students collaborate in their development is very much in line with the social aspects of computing.</p>
+<p>This page is offered as a location for adding <em>links</em> to individual student-generated practice problems.  Rather than have everything intermingled on the same page, each practice can have its own wiki page and whatever discussion and refinement that goes with it.  The Discussion Forums can be used for development and discussion too.  </p>
+<p>Wiki pages are nice because they "stand still" to be found although they can be refined and edited in place by everyone.  A student created this page.  Other students and staff can refine it and add more pages by linking, and so on.  </p>
+<p>There is some etiquette and politeness required.  Sometimes, rather than cluttering a page with discussion about the right-and-wrong of it, it can be useful to link to a separate page for discussion.  Communities that work on wikis can evolve friendly ways of working on the same material without causing friction.  A community around Student Practice Problems might have their own informal customs for developing practice problems by collaboration.</p>
+<p>[<strong><em>Ed.Note: The above should be shorter and crisper when there is more useful material provided below.</em></strong>]</p>
+<p>Having said this much, there are probably some topics to help us get going.</p>
+<h2> <span class="mw-headline" id="Creating_Practice_Problems">Creating Practice Problems</span></h2>
+<ul>
+<li><p><a href="/wiki/index.php/Programdesign:AddingPracticeProblems" title="Programdesign:AddingPracticeProblems"> Adding Practice Problems</a></p>
+<p><em>How to create a link to a new practice problem and fill in the practice problem page(s)</em></p></li>
+<li><p><a href="/wiki/index.php?title=Programdesign:LinkingWikiMaterials&amp;action=edit&amp;redlink=1" class="new" title="Programdesign:LinkingWikiMaterials (page does not exist)"> Linking To, From, and Among Wiki Pages</a></p>
+<p><em>Ways to cross-reference among pages on the wiki, refer to the wiki from the forums, and vice versa</em></p></li>
+<li><p><a href="/wiki/index.php?title=Programdesign:ProblemConventions&amp;action=edit&amp;redlink=1" class="new" title="Programdesign:ProblemConventions (page does not exist)"> Conventions for Practice Problems</a></p>
+<p><em>Where to find practice problems?  What should go in a practice problem statement?  What about discussion and refinement of practice problems?  Using the wiki to play around with practice problems.  Oh, and what should not be used for practice problems?</em></p></li>
+<li><p><a href="/wiki/index.php?title=Programdesign:MetaPracticeProblems&amp;action=edit&amp;redlink=1" class="new" title="Programdesign:MetaPracticeProblems (page does not exist)"> Practice Problem Meta-Discussion</a></p>
+<p><em>Talking about Practice Problems and having them, rather than actually making and discussing Practice Problems themselves</em></p></li>
+</ul>
+<h2> <span class="mw-headline" id="The_Student_Practice_Problems_Catalog">The Student Practice Problems Catalog</span></h2>
+<blockquote>
+  <p><em>Links to individual problems go below here.</em></p>
+</blockquote>
+<ul>
+<li><a href="/wiki/index.php/Programdesign:StudentTrafficLightProblem" title="Programdesign:StudentTrafficLightProblem"> Traffic Light Sequence Problem</a></li>
+<li><a href="/wiki/index.php/Programdesign:DeckOfCards" title="Programdesign:DeckOfCards"> Deck Of Cards</a></li>
+<li><a href="/wiki/index.php/Programdesign:LargestNumber" title="Programdesign:LargestNumber"> Largest Number</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Requests">Requests</span></h2>
+<ul>
+<li><p>Programming problems on basic mathematics and pre-calculus</p>
+<p><em>I'm hoping someone has a juicy link set of interesting problems besides the ones found on htdp.org. Both pure and applied problems would be welcome.</em></p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Programdesign:StudentPractices&amp;oldid=13563">https://share.coursera.org/wiki/index.php?title=Programdesign:StudentPractices&amp;oldid=13563</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

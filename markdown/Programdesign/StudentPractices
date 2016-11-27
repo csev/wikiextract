@@ -1,0 +1,51 @@
+The Great Student Practice Explosion Page
+=========================================
+
+In the Week 2 Office Hours, Gregor Kiczales suggests a way to have more practice problems: the students can create their own practice problems on the Wiki.  The staff could select interesting ones for future addition to the course.  Either way, there will be more practice problems for us.  And having students collaborate in their development is very much in line with the social aspects of computing.
+
+This page is offered as a location for adding *links* to individual student-generated practice problems.  Rather than have everything intermingled on the same page, each practice can have its own wiki page and whatever discussion and refinement that goes with it.  The Discussion Forums can be used for development and discussion too.  
+
+Wiki pages are nice because they "stand still" to be found although they can be refined and edited in place by everyone.  A student created this page.  Other students and staff can refine it and add more pages by linking, and so on.  
+
+There is some etiquette and politeness required.  Sometimes, rather than cluttering a page with discussion about the right-and-wrong of it, it can be useful to link to a separate page for discussion.  Communities that work on wikis can evolve friendly ways of working on the same material without causing friction.  A community around Student Practice Problems might have their own informal customs for developing practice problems by collaboration.
+
+[***Ed.Note: The above should be shorter and crisper when there is more useful material provided below.***]
+
+Having said this much, there are probably some topics to help us get going.
+
+
+
+Creating Practice Problems
+--------------------------
+
+ *  [[Programdesign:AddingPracticeProblems | Adding Practice Problems]]
+
+    *How to create a link to a new practice problem and fill in the practice problem page(s)*
+
+ *  [[Programdesign:LinkingWikiMaterials | Linking To, From, and Among Wiki Pages]]
+
+    *Ways to cross-reference among pages on the wiki, refer to the wiki from the forums, and vice versa*
+
+ *  [[Programdesign:ProblemConventions | Conventions for Practice Problems]]
+
+    *Where to find practice problems?  What should go in a practice problem statement?  What about discussion and refinement of practice problems?  Using the wiki to play around with practice problems.  Oh, and what should not be used for practice problems?*
+
+ *  [[Programdesign:MetaPracticeProblems | Practice Problem Meta-Discussion]]
+
+    *Talking about Practice Problems and having them, rather than actually making and discussing Practice Problems themselves*
+
+The Student Practice Problems Catalog
+-------------------------------------
+
+> *Links to individual problems go below here.*
+
+ * [[Programdesign:StudentTrafficLightProblem | Traffic Light Sequence Problem]]
+ * [[Programdesign:DeckOfCards | Deck Of Cards]]
+ * [[Programdesign:LargestNumber | Largest Number]]
+
+Requests
+--------
+
+ * Programming problems on basic mathematics and pre-calculus
+
+   *I'm hoping someone has a juicy link set of interesting problems besides the ones found on htdp.org. Both pure and applied problems would be welcome.*

@@ -1,0 +1,42 @@
+**Common pitfalls and source of frustration** -- please note that some information given here can be outdated by the time you read them.
+
+You should follow manual but you will be graded by automatic grader based on reference tools (lexer, parser, etc.). If you see that reference tool does not follow the COOL manual, take a reference tool side -- this will get you the points (also bring such case to Staff attention).
+
+# Assignments
+
+## PA2 (lexer)
+
+* `LET_STMT` token -- ignore it, this is some kind of leftover after building COOL framework
+
+* escaping strings -- if you see too many backslashes or too few in your output it is most likely you don't process the input they way COOL manual describes it. You have to read a string, and **convert** it to store data internally, so then after converting it back (this is done by provided code), you will get the same string as you saw at input (with exception of the characters which have double mapping). Pay extra attention to how newline (linefeed) can be written in source COOL program -- it is nothing out of order to have several backslashes in a row in your rules.
+
+* What value in `TokenConstants` should one use for `~`, the integer complement symbol?  There is no `TokenConstants.COMP` as one might expect.  For `~` you must use `TokenConstants.NEG`.
+
+### C++ framework
+
+* missing tokens -- indeed in C++ framework tokens for single characters are not defined, define them yourself or use single characters directly as tokens, since framework assumes the token value of single character to be its ASCII code and all other tokens are above 255 value, you can
+safely do this
+
+### Java framework
+
+* JLex states -- JLex does not have inclusive/exclusive state distinction, so look carefully if you didn't omit a state in some rule (this would mean -- all states apply).
+
+* JLex metacharacters -- dot metacharacter does not match newline (`\n`) **and also** does not match carriage return (`\r`). JLex does not know what `\v` means so use numeric code for it.
+
+## PA3 (parser)
+
+* `nonterminal` vs. `non terminal` - both are correct as of CUP 0.10j. This can be confusing because the [CUP manual](http://www2.cs.tum.edu/projects/cup/manual.html) almost exclusively uses `non terminal` but `cool.cup` uses `nonterminal`.
+
+* Cool uses the tilde (`~`) symbol to indicate integer complement, but as stated above, the entry in `TokenConstants` for this is `NEG` and so it is also the terminal symbol to use in the parser assignment. Also, the constructor that is needed in cool.cup is [neg()](http://www.stanford.edu/class/archive/cs/cs143/cs143.1112/javadoc/cool_ast/neg.html).
+
+* The `not` keyword is used in Cool for boolean complement.  What's confusing here is what constructor to use for this as a not() constructor does not exist: you must use the [comp()](http://www.stanford.edu/class/archive/cs/cs143/cs143.1112/javadoc/cool_ast/comp.html) constructor.
+
+## PA5 (code generation)
+
+* spim -- before you post any report about spim, make sure you use spim provided by Staff, not spim distributed through your distro channels. The former is customized to work with COOL library, so no surprise the latter one will give you errors.
+
+# Deduce It
+
+## DI 5 (Operational Semantics I)
+
+* when using sequencing rule enclose more complex expressions in parenthesis (not braces)

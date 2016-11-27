@@ -1,0 +1,76 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Programming Assignment 2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Background_information_on_genetics"><span class="tocnumber">1</span> <span class="toctext">Background information on genetics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Online_Information"><span class="tocnumber">1.1</span> <span class="toctext">Online Information</span></a></li>
+<li class="toclevel-2"><a href="#Basic_genetics_tutorial"><span class="tocnumber">1.2</span> <span class="toctext">Basic genetics tutorial</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Definitions_of_genetic_terms"><span class="tocnumber">1.2.1</span> <span class="toctext">Definitions of genetic terms</span></a></li>
+<li class="toclevel-3"><a href="#Inheritance"><span class="tocnumber">1.2.2</span> <span class="toctext">Inheritance</span></a></li>
+<li class="toclevel-3"><a href="#Mendelian_Inheritance"><span class="tocnumber">1.2.3</span> <span class="toctext">Mendelian Inheritance</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Programming_Assignment_2"><span class="tocnumber">2</span> <span class="toctext">Programming Assignment 2</span></a>
+<ul>
+<li class="toclevel-2"><a href="#General_information_about_the_factor_struct"><span class="tocnumber">2.1</span> <span class="toctext">General information about the factor struct</span></a></li>
+<li class="toclevel-2"><a href="#Note_about_sendToSamiamInfoDecoupled"><span class="tocnumber">2.2</span> <span class="toctext">Note about sendToSamiamInfoDecoupled</span></a></li>
+<li class="toclevel-2"><a href="#The_GeneCopy_variables_in_constructDecoupledGeneticNetwork"><span class="tocnumber">2.3</span> <span class="toctext">The GeneCopy variables in constructDecoupledGeneticNetwork</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Programming_Assignment_2_Quiz"><span class="tocnumber">3</span> <span class="toctext">Programming Assignment 2 Quiz</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Background_information_on_genetics">Background information on genetics</span></h3>
+<h4> <span class="mw-headline" id="Online_Information">Online Information</span></h4>
+<p>Many people in the forums recommend the <a rel="nofollow" class="external text" href="http://www.khanacademy.org/science/biology/v/introduction-to-heredity">Khan Academy videos</a>.</p>
+<h4> <span class="mw-headline" id="Basic_genetics_tutorial">Basic genetics tutorial</span></h4>
+<h5> <span class="mw-headline" id="Definitions_of_genetic_terms">Definitions of genetic terms</span></h5>
+<ul>
+<li><strong>Gene:</strong> A gene is a unit of inheritance. For the purposes of the class, every person has two copies of each gene, one copy inherited from each parent.</li>
+<li><strong>Allele:</strong> Alleles are the individual types that can be inherited for a given gene. A gene can have one or more alleles.</li>
+<li><strong>Genotype:</strong> A genotype is a collective term for the set of copies that a person has for one or more genes. For the purposes of the homework, the genotype is determined solely by the number and type of alleles that the person has and not the parent from which an individual allele originates. So if a gene has two alleles B and b there are three possible genotypes BB, Bb, and bb.</li>
+<li><strong>Phenotype:</strong> A phenotype is an observable trait, such as the presence or absence of a disease or eye color. For the purposes of this homework the phenotype of a person is influenced by the genotype of the relevant causal genes.</li>
+</ul>
+<h5> <span class="mw-headline" id="Inheritance">Inheritance</span></h5>
+<p>If the genotype of a parent is known, then the child inherits one randomly determined copy from the two copies the parent has. If the parent's genotype is unknown or the parent is not in the model, the copy inherited from that parent is nominally determined by the population allele distribution in the absence of relevant observations.</p>
+<h5> <span class="mw-headline" id="Mendelian_Inheritance">Mendelian Inheritance</span></h5>
+<p>Mendelian inheritance is a simple mode of inheritance governed by a single gene with two alleles, one dominant and one recessive. If a person has one or two dominant alleles he or she will have the phenotype associated with the dominant allele. Only if both copies are the recessive will the person have the phenotype associated with the recessive allele. </p>
+<h3> <span class="mw-headline" id="Programming_Assignment_2">Programming Assignment 2</span></h3>
+<h4> <span class="mw-headline" id="General_information_about_the_factor_struct">General information about the factor struct</span></h4>
+<p>For the various factor structs that are created by the model, the first listed variable is the 'target' (the variable to the left of the conditioning bar) and the variables that follow are the 'inputs' (the variables to the right of the conditioning bar). The phenotype variables can take two values, the first (var == 1) denotes the presence of disease, the second (var == 2) denotes the absence of disease.</p>
+<h4> <span class="mw-headline" id="Note_about_sendToSamiamInfoDecoupled">Note about sendToSamiamInfoDecoupled</span></h4>
+<p>The original version of sendToSamiamInfoDecoupled.m has a bug where it is missing this line at the start:</p>
+<code><pre>pedigree = struct('parents', [0,0;1,3;0,0;1,3;2,6;0,0;2,6;4,9;0,0]);
+</pre></code>
+<p>The solution is to either paste in that line at the start if it is not there or to redownload the homework materials.</p>
+<h4> <span class="mw-headline" id="The_GeneCopy_variables_in_constructDecoupledGeneticNetwork">The GeneCopy variables in constructDecoupledGeneticNetwork</span></h4>
+<p>The GeneCopy variables in the constructDecoupledGeneticNetwork exercise are designed to simulate the process of inheriting a single copy of a gene from a single parent. However, instead of representing the two copies from a parent as a single node in the graph, each copy of a gene from a parent has its own node. So the conditional probability for the CPD is as follows:</p>
+<code><pre>P(&lt;child copy of gene from parent 1&gt;|&lt;copy 1 of gene in parent 1&gt;, &lt;copy 2 of gene in parent 1&gt;)
+</pre></code>
+<h3> <span class="mw-headline" id="Programming_Assignment_2_Quiz">Programming Assignment 2 Quiz</span></h3>
+<p>Questions 4 and 5: Beware that although the text refers to sections 2.4 and 3.3 and in the pdf the graphics show a network with 3 people, the question is referred to the full networks loaded in Samian with 9 people.</p>
+<p>The number of persons is not important, because this is a template model.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Programming_Assignment_2&amp;oldid=10752">https://share.coursera.org/wiki/index.php?title=PGM:Programming_Assignment_2&amp;oldid=10752</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

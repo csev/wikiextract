@@ -1,0 +1,31 @@
+Back to the [Climate Literacy Main Wiki Page](https://share.coursera.org/wiki/index.php/Climateliteracy:Main)
+
+This page is meant to be a place to collect links to data portals where you can download and analyze climate data yourself.  There is a ton of data freely available to you.  Some of the portals are fairly complex; others provide pretty easy access.  Feel free to add to this page, and please include a description.  
+
+**LIST OF OPEN-ACCESS DATA SOURCES**
+
+* **[Atmospheric CO2 data from Mauna Loa (Earth System Research Laboratory)](http://www.esrl.noaa.gov/gmd/ccgg/trends/#mlo_data)**  On this page are links to the atmospheric CO2 data measured at Mauna Loa, Hawaii, since the late 1950s.  
+
+* **[Temperature anomaly data from NASA-GISS](http://data.giss.nasa.gov/gistemp/#tabledata)**
+On this page are links to global, hemispheric, and latitudinal temperature measurements compiled by NASA-GISS.
+
+* **[World Data Center for Paleoclimatology](http://www.ncdc.noaa.gov/paleo/wdc-paleo.html)**
+This is the main page for this database with lots of freely available paleoclimate data.  Click "Data" on the bar near the top to get a list of what's available.  Here are some more specific links:
+
+* [Cenozoic Global Deep-Sea Stable Isotope Data](ftp://ftp.ncdc.noaa.gov/pub/data/paleo/contributions_by_author/zachos2001/zachos2001.txt) from Zachos et al., 2001
+
+* [CO2 data from Antarctic Ice Cores](ftp://ftp.ncdc.noaa.gov/pub/data/paleo/icecore/antarctica/epica_domec/edc-co2-2008.txt) from EPICA (data from various references combined - this one is from Luthi et al., 2008)
+
+* [Atmospheric Radiation Measurement Program](http://www.archive.arm.gov) Radiation, Aerosol, Cloud Property, Surface Data for certain sites up to 20 years.
+
+* [The World Bank: Open Data Resources For Climate Change](http://data.worldbank.org/climate-change)
+
+* [International Council of Science (ICSU) World Data System (WDS)](http://www.icsu-wds.org/services/data-portal)
+
+* [World Data Center (WDC) for Meteorology - Asheville](http://www.ncdc.noaa.gov/oa/wdc/index.php) Maintained as the U.S. National Climatic Data Center (NCDC) by the U.S. National Oceanic and Atmospheric Administration (NOAA).
+
+* [World Data Center (WDC) for Glaciology - Boulder](http://nsidc.org/data/search/data-search.html)  Cryosphere data - joint partnership of the University of Colorado, Cooperative Institute for Research in Environmental Sciences (CIRES), and the National Oceanic Atmospheric Administration (NOAA). The WDC for Glaciology, Boulder (WDC-Glaciology Boulder) is collocated with the National Snow and Ice Data Center (NSIDC).
+
+* [Climate Data Guide](https://climatedataguide.ucar.edu/) A database of 145 data sets covering various aspects of climate science.
+
+* [My NASA Data](http://mynasadata.larc.nasa.gov/) A tool to view NASA satellite data using easily understandable graphics.

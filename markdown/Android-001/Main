@@ -1,0 +1,48 @@
+[[Category:Android]]
+[[Category:Android Apps]]
+[[Category:Computer Science]]
+[[Category:Coursera]]
+[[Category:Android Dev]]
+[[File:slide1.jpg]]
+### Programming Mobile Applications for Android Handheld Systems
+
+* https://www.coursera.org/course/android
+* https://class.coursera.org/android-001
+* https://class.coursera.org/android-001/lecture/preview
+
+[[Android-001:Additional Course Resources | Additional Course Resources]]
+
+[[Android-001:External Android Resources | External Android Resources]]
+
+[[Android-001:Tips for Setting Up the Android SDK |  Setting Up Android the SDK ]]
+
+[[Android-001:Subtitles | Video Subtitles page]]
+
+[[Android-001:ADB Android Debugging Bridge | Using the ADB Command Shell to Connect to an Android Emulator or Device ]]
+
+[[Android-001:Java for Beginners  | Java Beginners ]]
+
+[[Android-001:Eclipse Shortcuts  | Eclipse Shortcuts ]]
+
+[[Android-001:Android UML Class Diagrams | Android UML Class Diagrams ]]
+
+Community Contributions:
+* [[Android-001:Setting up IntelliJ for the course | Intellij/Android setup ]]
+
+* [A useful strategy to dissect a crash log](https://class.coursera.org/android-001/forum/thread?thread_id=7612)
+
+* [How to generate Google Map API key from A to Z](https://class.coursera.org/android-001/forum/thread?thread_id=10893)
+
+* [Mind Maps of the Lectures (scheme summary)](https://class.coursera.org/android-001/forum/thread?thread_id=6337)
+
+Study tools
+* If you wish you could capture some of Dr. Porter's video commentary without having to maintain yet another set of notes, try annotating the PDF lecture slides. There seem to be a number of tools to do this. I recommend the *Xournal* application for Linux. It works well on Ubuntu 12.04 (Gnome). Text annotation and highlighting are the capabilities I use, but there are others. 
+
+Lecture Notes
+* [Week 4](https://class.coursera.org/android-001/forum/thread?thread_id=8386#post-28727)
+
+More Lecture Notes
+* [Weeks 1 - 8](https://drive.google.com/folderview?id=0B7qJNiTJnbS3WmdDQzdyVlJXZ2s&usp=sharing)
+
+Tips and Tricks
+* View SQLite statements in LogCat (https://plus.google.com/u/0/+SebastianEngel/posts/jfBGygnDh6R)

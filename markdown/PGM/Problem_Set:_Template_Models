@@ -1,0 +1,15 @@
+Problem set 2, Question 3. 
+
+In my opinion, the expression "Consider each location to be a time slice, and order the locations from East to West. Viewed in this way, this data satisfies the Markov assumption." is not correct. ESPECIALLY if one takes each location as a time slice, the location to the East may become, DE FACTO, a time <> X(t), depending on the way the path leads. if the path is on the north-south axis, then an observation in an eastern location takes place at time T=t, because it will be perpendicular to the time flow and therefore simultaneous to T=t. (By the way, the additional information "order the locations from East to West" was not included in the question, therefore it cannot be accepted to be part of the answer.)
+
+However, if one moves from East to West, an observation of the Eastward location becomes an observation of X(t-1), i.e. of the previous state, i.e. the Markov property is not satisfied. In the same rationale, if one moves from West to East, an Eastward observation would be an observation of the future (T=t+1), again not satisfying the Markov property. 
+
+(Apologies for my unfamiliarity with the Markdown language. I intend to overcome this.)   
+
+The same holds with the generation example. If each generation is a time-slice, then observing the generation of our parents means that we observe X(t-1), again not satisfying the Markov assumption. 
+
+All of the above are conditioned on the assumption that I have understood the Markov assumption correctly, namely that each decision/observation is related to T=t only (the present) and we do not take into consideration the past (T=t-1) or the future (T=t+1). If not, my humble apologies!
+
+<b>My humble suggestion:</b> From what I saw of your reasoning, you've understood the Markov assumption in part.  Another way of understanding what is going on is to thing of the discrete variable t as just some way of chopping up your states.  That's why "order the locations from East to West" is not additional information - it's a way of chopping up your state space.  Basically, you can apply the Markov chain model so long as you can chop up your state space in such a way that the Markov assumption is a reasonable approximation of what's going on.  I suspect the intention of the question is to get you to think about ways of chopping up the state space - in my one, it asked about "behaviour of a generation" where the behaviour of the generation depended only on the behaviour of their parents.  That suggests a kind of discretisation as well.  One thing that would NOT work so well would be the addition of a North-South model - Even if what happens in your square only depends on what happened to the East, and what happened to the South, you would still have 2 sets of inputs, not one.
+
+So think of the Markov assumption as saying that you depend only on the immediately preceding state, where you have defined what it means for a state to "immediately precede".  Of course, this maps relatively well onto time, which is the reason for that particular example being used.

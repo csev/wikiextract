@@ -1,0 +1,95 @@
+## Dynamic Bayesian Networks<br>
+
+
+A system that evolves over time <br>
+Distribution over trajectories.  Continuous time can be difficult to deal with so we <b>discretize time</b>. <br>
+
+ - Pick time granularity delta
+ - X(t) - variable X, with t being a specific instantiation at time tdelta
+ - X(t:t') = {X(t),...X(t')} (t <= t')
+
+We want to have a concise representation that allows to represent this probability distribution P(X(t:t')) for any t, t' - trajectory of the system over any duration (trajectories of arbitrary length)
+
+How do we make representation more concise?
+
+  - Markov assumption - independence assumption, next step is independent of the past, given the present.  This is a forgetting assumption.  Once you know the current state you don't care anymore about the past.  We can simplify the chain rule.
+    - Example - location of a robot - this is probably too strong of an assumption because it ignores velocity.  We can enrich the state by adding v(t) into the state at that point the Markov assumption becomes much more warranted
+
+<br>
+
+- Time Invariance
+    - Template probability model P(X'|X) where X' is the next time point and X is the current time point.  The dynamics of the system do not depend on t.
+    - For all t P(X(t+1)|X(t) = P(X'|X)
+    - For example, traffic along a road will probably depend on dynamics of the system.  We can correct inaccuracies in our assumption by enriching the model including time of day, day of week, football game,....
+
+### Template Transition Model
+
+How do we represent this using a graphical model?
+
+ - The network fragment represents a conditional distribution
+ - Can use the chain rule as before
+ - Dependencies between and across time
+    - intra-time-slice edges
+    - inter-time slice edges, some of these are persistence edges
+
+Parameterization of the model - what CPD do we need to include in this model? 
+
+###Initial State Distribution
+
+Represent state at time 0
+
+###Ground Bayesian Network
+
+Can represent probability distributions at arbitrarily long trajectories
+
+### 2-time-slice Bayesian network (TBN)
+
+A transition model (2TBN) over X1,...,Xn template variables is specified as a BN fragment such that:
+ - The nodes include X'1,...,X'n and a subset of X1,...,Xn (the time variables that directly affect a state at t)
+ - Only the nodes X'1,...,X'n have parents and a CPD
+
+The 2TBN defines a conditional distribution using the chain rule
+
+
+###Dynamic Bayesian Network
+
+A dynamic Bayesian network (DBN) over X1,...,Xn is defined by: 
+ - A 2TBN Bayesian network over X1,...,Xn 
+ - A Bayesian network BN(0) over X1(0),...,Xn(0)
+
+
+###Ground Network
+
+For a trajectory over 0,...,T we define a ground (unrolled network) such that:
+ - The dependency model for X1(0),...,Xn(0) is copied from BN(0) (time 0)
+ - The dependency model for X1(t),...,Xn(t) for all t>0 is copied from BN (transition)
+
+
+Example of a realistic network
+
+###Summary
+
+DBN are a compact representation for encoding structured distributions over arbitrarily long temporal trajectories
+
+We use the Markovian and Time Invariance assumptions to make this possible, but this may require model redesign to enrich the model by adding variables.
+
+
+Lecture Video Table of Contents
+----
+<pre>
+0:31	Distributions over Trajectories
+1:18	Time granularity
+2:00	Notation for trajectories
+2:46	Markov assumption
+4:50	Independence assumptions - "forgetting"
+5:27	Simplification
+8:22	Time invariance assumption
+10:50	Template transition models
+11:04	Dependency properties of template transition models
+16:30	Initial state distribution
+16:54	Ground Bayesian network
+17:51	Two-timeslice Bayesian network (2TBN)
+19:25	Dynamic Bayesian networks
+20:19	DBN example
+22:04	Summary
+</pre>

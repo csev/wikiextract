@@ -1,0 +1,39 @@
+This is shared wiki among all installments of the “Compilers” course. Please visit [https://www.coursera.org/course/compilers the central page] of the “Compilers” course to learn more (don’t miss [https://class.coursera.org/compilers-selfservice self-study course] allowing you to study at any time, at your own pace).
+
+# Course materials
+
+## Supplement
+
+* [[Compilers:Certificate|Certificate]] (statement of accomplishment)
+* [[Compilers:Errata|Lectures errata]]
+* [[Compilers:LecturesWithQuizzes|Lectures with quizzes]]
+
+## COOL setup
+
+* [[Compilers:GettingStartedWithTheVMsAndFirstSteps|Getting started with the VMs and first steps]]
+* [[Compilers:InstallingDirectlyonLinux|Installing directly on Linux]] (no VM is required)
+* [[Compilers:WorkingOnWindows|COOL for Windows]] 
+
+**Pages to delete (either outdated or merged into other pages)**
+
+* [[Compilers:GettingStartedWithTheVMs|Getting started with the VMs]]
+* [[Compilers:VirtualBoxVMsetup|Virtual Box VM setup]] 
+
+## Assignment-specific pages
+
+* [[Compilers:PA2|Assignment 1 (building lexer)]]
+
+* [[Compilers:Pitfalls|Common pitfalls]]
+
+## COOL frameworks
+
+* unofficial [https://www.assembla.com/spaces/cool-csharp-framework/ COOL C# framework] by [https://www.coursera.org/user/i/6086d41e8041582356104a01a7b7cfd5 Maciej Pilichowski].
+
+## Additional tools
+
+* [[Compilers:Testsuites|Running testsuites]]
+* [[Compilers:OnlineResources|Online resources]]
+
+# Miscellaneous
+
+* students’ projects made [[Compilers:AfterCourse|after course]],

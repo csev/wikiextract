@@ -1,0 +1,38 @@
+# Some symbols
+
+All the given examples of historic ciphers are symmetric ciphers. All badly broken by statistical analysis.
+
+- A symmetric cipher has three elements $$ \{ \mathcal{K, M, C} \} $$, where $$\mathcal{K}$$ is the set of all possible keys, $$\mathcal{M}$$ is the set of all possible messages, and $$\mathcal{C}$$ is the set of all possible cipher-texts.
+
+# Substitution Cipher
+
+The key-space is just a 1-to-1 correspondence between letters. $$k \in \mathcal{K}$$ maps the alphabet to itself. For instance, a key $$k := \\{ a \rightarrow p, b \rightarrow w, c \rightarrow c \ldots \\}$$, given to a substitution cipher will encrypt the message *abc* to the cipher-text *pwc*. Note that $$\mathcal{M} = \mathcal{C}$$.
+
+The Caesar cipher is basically a substitution cipher where the substitution is a fixed shift (by 3). So it is not an actual cipher, since it has no key.
+
+## How to break a substitution cipher?
+
+The keyspace $$|\mathcal{K}|$$ for 26 letters is 26! (that's 26 factorial = $$1 \times 2 \times 3 \times 4 \times \ldots \times 25 \times 26$$) that's about $$2^{88}$$ possible keys. By itself a decent enough key-space size.
+
+[[1]] Use frequency of english letters. "e" is the most frequent letter and appears 12.7% times in standard English text, followed by "t" and "a". We just count the appearance of letters in the cipher-text and assume with high probability that the most often used is the substitution for "e".
+
+[[2]] Use frequency of pairs of letters (digrams), trigrams or word frequency.
+
+This attack is of the worst kind. A cipher-text only attack. An attacker only needs enough cipher-text to get the message.
+
+# Vigener cipher (Rome, 16th century)
+
+[[1]] Repeat $$k$$ until same length as message  
+[[2]] add the letters modulo 26
+
+Example:
+* $$k = \tt{CRYPTO}$$ is the key
+* $$m = \tt{WHAT\,A\,NICE\,DAY\,TODAY}$$ is the message
+
+* $$\tt{\color{green}{CRYP\,T\,O}\color{red}{CRY\,PTO} \color{blue}{CRYPT}}$$ (the key, repeated as long as necessary)
+* $$\tt{WHAT\,A\,NICE\,DAY\,TODAY}$$ (the message)
+* $$\color{magenta}{\tt{ZZZJ\,U\,CLUD\,TUN\,WGCQS}}$$ (the cipher text)
+
+# Rotor machines
+
+The key is embedded in one or more physical disks or cylinders. The statistical analysis is harder but it is doable. The enigma machine (used in WWII) was a 3-5 rotor cipher, and was cracked by Polish and English scientists.

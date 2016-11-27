@@ -1,0 +1,27 @@
+*  In a Bayesian network, if there is a [[path]] from one random variable to another, then the variable at the root of the path is said to affect the other random variables in the path via causal reasoning.  For example, if $$A\rightarrow B\rightarrow C$$, then $$A$$ affects $$B$$ and $$C$$ via causal reasoning and $$P(C)$$ is generally not equal to $$P(C|A)$$.
+*  In a Bayesian network, if there is a [[path]] from one random variable to another, then the variable at the end of the path is said to affect the other random variables in the path via evidential reasoning.  For example, if $$A\rightarrow B\rightarrow C$$, then $$C$$ affects $$A$$ and $$B$$ via evidential reasoning and $$P(A)$$ is generally not equal to $$P(A|C)$$.
+
+
+Causal Reasoning
+----
+intuitively, inference goes in causal direction (direction of edges). *Top down*.
+
+Evidential Reasoning
+----
+condition the result, ask what the probability of the initial variables was (back from the cause), using Bayes' rule . Hence it is a *bottom up*.
+
+Intercausal Reasoning
+----
+Flow of information between (for example) two causes of a single effect. When you condition the result, the causes are no longer independent. If you condition one of them again, you "explain away" the original condition. This also works across several edges and nodes
+
+
+Video Lecture Table of Contents
+----
+<pre>
+0:17	Causal reasoning
+2:06	Evidential reasoning
+2:59	Intercausal reasoning
+4:02	Intercausal Reasoning II
+4:53	Intercausal Reasoning explained
+8:50	"Student aces SAT"
+</pre>

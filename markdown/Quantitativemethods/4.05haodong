@@ -1,0 +1,30 @@
+>>*A table representation of Convergent and Discriminant Validity*
+
+<sup>by [Hao Dong](https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5963098) Credit to [Mirjam](https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=3780448), on **[4.05 Measurement validity](https://share.coursera.org/wiki/index.php/Quantitativemethods:Main#4.05_Measurement_validity)**</sup>
+
+
+<table  class="validity">
+<tr class="header">
+<th align="center">Validity</th>
+<th align="center">Variable</th>
+<th align="center">Methods</th>
+<th align="center">Result</th>
+</tr>
+<tr class="odd">
+<td align="center">Convergent</td>
+<td align="center">Same</td>
+<td align="center">Different</td>
+<td align="center">Same (=convergent)</td>
+</tr>
+<tr class="even">
+<td align="center">Discriminant</td>
+<td align="center">Different</td>
+<td align="center">Same</td>
+<td align="center">Different (=discriminant)</td>
+</tr>
+</table>
+
+
+[[Category: Methods and Statistics in Social Sciences: Quantitative Methods]]
+[[Category:Measurement]]
+[[Category:Measurement validity]]

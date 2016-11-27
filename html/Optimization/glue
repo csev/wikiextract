@@ -1,0 +1,224 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:glue</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Glue code helpful in the course.  For example,
+<ul><li> code connecting the solver.py to different languages 
+</li><li> file parses for different languages </p>
+</li></ul>
+
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#C"><span class="tocnumber">1</span> <span class="toctext">C</span></a></li>
+<li class="toclevel-1"><a href="#C.2B.2B"><span class="tocnumber">2</span> <span class="toctext">C++</span></a></li>
+<li class="toclevel-1"><a href="#Java"><span class="tocnumber">3</span> <span class="toctext">Java</span></a></li>
+<li class="toclevel-1"><a href="#Matlab.2FOctave"><span class="tocnumber">4</span> <span class="toctext">Matlab/Octave</span></a></li>
+<li class="toclevel-1"><a href="#Scala"><span class="tocnumber">5</span> <span class="toctext">Scala</span></a></li>
+<li class="toclevel-1"><a href="#Common_Lisp"><span class="tocnumber">6</span> <span class="toctext">Common Lisp</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="C">C</span></h2>
+<h2> <span class="mw-headline" id="C.2B.2B">C++</span></h2>
+<p>a C++ parser for the knapsack data files.</p>
+<pre>
+#include &lt;iostream&gt;
+#include &lt;fstream&gt;
+
+#define MAX_ELEMS    10000
+
+long count;
+long capacity; 
+long values[MAX_ELEMS];
+long weights[MAX_ELEMS];
+
+void read_data( char* file_name )
+{
+    std::ifstream ifs( file_name );
+    
+    ifs &gt;&gt; count &gt;&gt; capacity;
+    
+    for ( long i = 0; i &lt; count; ++i ) {
+        long value;
+        long weight;
+        ifs &gt;&gt; value &gt;&gt; weight;
+        values[i]  = value;
+        weights[i] = weight;
+    }
+}  
+</pre>
+<h2> <span class="mw-headline" id="Java">Java</span></h2>
+<p>a Java parser for the knapsack data files.</p>
+<pre>
+List&lt;String&gt; lines = new ArrayList&lt;String&gt;();
+
+BufferedReader input =  new BufferedReader(new FileReader(fileName));
+try {
+    String line = null;
+    while (( line = input.readLine())&#160;!= null){
+        lines.add(line);
+    }
+}
+finally {
+    input.close();
+}
+
+String[] firstLine = lines.get(0).split(&quot;\\s+&quot;);
+int items = Integer.parseInt(firstLine[0]);
+int capacity = Integer.parseInt(firstLine[1]);
+
+int[] values = new int[items];
+int[] weights = new int[items];
+
+for(int i=1; i &lt; items+1; i++){
+  String line = lines.get(i);
+  String[] parts = line.split(&quot;\\s+&quot;);
+
+  values[i-1] = Integer.parseInt(parts[0]);
+  weights[i-1] = Integer.parseInt(parts[1]);
+}
+</pre>
+<h2> <span class="mw-headline" id="Matlab.2FOctave">Matlab/Octave</span></h2>
+<p>A place for Matlab and Octave suggestions.</p>
+<ol>
+<li>A suggestion for sending the assignment data to Octave via a mat file:</li>
+</ol>
+<pre>
+Python side:
+
+import scipy.io as sci
+import subprocess as sp
+
+def solveIt(inputData):
+  # Modify this code to run your optimization algorithm
+  #
+  # save the data in a mat file
+  sci.savemat('indata.mat', {'indata':inputData})
+  # fire up the Octave process
+  process = sp.Popen(['octave','-q','octave.m'],stdout=sp.PIPE)
+  (stdout,stderr) = process.communicate()
+  # process the result
+  data = list(stdout.strip().split())
+  # store variables in knapsack context
+  value = data[0]
+  taken = data[1:]
+  # prepare the solution in the specified output format
+  outputData = str(value) + ' ' + str(0) + '\n'
+  outputData += ' '.join(map(str, taken))
+  return outputData
+
+In Octave file (&quot;octave.m&quot;):
+
+...
+load indata.mat;
+% prepare your data
+% process
+% output the answer
+printf(&quot; ... \n&quot;);
+</pre>
+<h2> <span class="mw-headline" id="Scala">Scala</span></h2>
+<p>a Scala parser for the knapsack data files.</p>
+<pre>
+object knapsack extends App {
+
+   val filename = args.head
+   val source = scala.io.Source.fromFile(filename)
+
+   // All lines in the data file as Strings
+   def lines:List[String] = source.mkString.split(&quot;\n&quot;).toList
+
+   // Input data converted to a List of Lists of Ints (blank lines removed)
+   def ints: List[List[Int]] = lines.map(_.split(&quot; &quot;).toList.filter(_.size&gt;0).map(_.toInt))
+
+   // Input data converted to a List of Tuples (pairs) of Ints (empty lists removed)
+   def pairs: List[(Int, Int)] = ints.filter(_.size&gt;0).map(x =&gt; (x.head, x.tail.head))
+
+   val data = pairs
+   val count = data.head._1
+   val capacity = data.head._2
+   val items = data.tail
+
+   def dumpData =
+     for ((weight, value) &lt;- items) println((weight, value))
+
+   def solveIt =&#160;???   // Your implementation goes here
+   
+   solveIt
+}
+</pre>
+<h2> <span class="mw-headline" id="Common_Lisp">Common Lisp</span></h2>
+<p>a Lisp parser for the input files</p>
+<pre>
+(defun solve (problem)                                                               
+  &quot;improve me&quot;                                                                       
+    nil)                                                                             
+                                                                                     
+(defun argv ()                                                                       
+  (or                                                                                
+   #+sbcl sb-ext:*posix-argv*                                                        
+   #+ccl (ccl::command-line-arguments)                                               
+   #+ecl (loop for i from 0 below (si:argc) collect (si:argv i))                     
+   nil))                                                                             
+                                                                                     
+(defun input-file-name ()                                                            
+  (second (argv)))                                                                   
+                                                                                     
+;; work through the infile, building a data list                                     
+(defun get-file-data (infile)                                                        
+  (with-open-file (stream infile)                                                    
+    (loop for line = (read-line stream nil nil)                                      
+          while (and line (with-input-from-string (y line) (read y nil nil)))        
+          collecting (with-input-from-string (in line)                               
+               (loop for x = (read in nil nil)                                       
+              while x collect x)))))                                                 
+                                                                                     
+;; preprocessing here,                                                               
+(defun setup-problem (infile)                                                        
+  (destructuring-bind (head . data) (get-file-data infile)                           
+    (list head data)                                                                 
+                                                                                     
+;; entry into program                                                                
+(defun main ()                                                                       
+  (let ((problem (setup-problem (input-file-name)))                                  
+        (solution (solve problem)))                                                  
+    (format 't &quot;~a ~a~%~{~a~^ ~}~%&quot; 0 0 solution)))                                  
+                                                                                     
+                                                                                     
+                                                                                     
+(defun dump (name)                                                                   
+  &quot;save image as executable 'name',                                                  
+  e.g.                                                                               
+    $ sbcl --load tsp.lisp                                                           
+    ...                                                                              
+    * (dump \&quot;./tsp\&quot;)                                                               
+    $ ./tsp data/problem&quot;                                                            
+                                                                                     
+#+sbcl                                                                               
+  (sb-ext:save-lisp-and-die name                                                     
+               &#160;:toplevel #'main                                                     
+               &#160;:executable 't)                                                      
+#+ccl                                                                                
+  (ccl:save-application name                                                         
+                       &#160;:prepend-kernel 't                                           
+                       &#160;:toplevel-function #'main)                                   
+                                                                                     
+)                                    
+</pre>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:glue&amp;oldid=13617">https://share.coursera.org/wiki/index.php?title=Optimization:glue&amp;oldid=13617</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Computer_Science" title="Category:Computer Science">Computer Science</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,33 @@
+SO we will be at http://finance.yahoo.com/----stick- abunch of stuff over here to tell it what data you want
+
+
+Description
+This article describes where you can find historical price and adjusted close data within Yahoo! Finance. This article also includes answers to the following questions:
+What is the adjusted close?
+How is the adjusted close determined?
+Do you include dividends in the adjusted close?
+
+Resolution
+Yahoo! Finance offers access to historical price data in tabular format for several timescales: "Daily", "Weekly", and "Monthly". "Dividends Only" is also provided as filtering option. The historical prices feature includes notations for all splits and dividend distributions during the date range selected. Open, high, low, and close values are not adjusted for splits or dividends. An additional column, Adjusted Close, is provided to show the close price adjusted for all splits and dividends.
+
+On a security's Historical Prices page, you can choose the date range of the data you would like to display, change the ticker symbol query, or switch to a different timeframe format. If the data requested is beyond the range of historical prices available through Yahoo! Finance, all available data within the range will be displayed. Historical prices typically do not go back further than 1970.
+
+There is currently no restriction to the amount of historical price data you can request, however, only 66 rows are displayed on a single page. To see all the data you've requested, either click the Next/Last links to view additional pages or the Download to Spreadsheet link at the bottom of the page. Note that dividend information is not included in the downloaded spreadsheet. It can, however, be downloaded separately when the Dividends Only radio button is selected.
+Daily historical prices provide you with the daily open, high, low, close, and volume for each trading day in the chosen date range.
+
+this page tells you what to write
+
+
+
+
+[http://www.gummy-stuff.org/Yahoo-data.htm](http://www.gummy-stuff.org/Yahoo-data.htm "Yahoo Data Download")
+>>+ What do we want?
+>>+ ticker = SBUX (starbucks)
+>>+ monthly data March, 1993 to March, 2008
+>>+ closing price (really, on last day of the month?  
+>>+ that's my understanding anyway, (not weekly or daily price??)
+
+OK, now I'm going to see if I can figure it out myself.  Looks like futures are finally selling off for the fiscal cliff and I'm not flat yet myself.  Good luck all.
+
++ example
++ http://finance.yahoo.com/d/quotes.csv?s=SBUX+&f=l1  //should give last close

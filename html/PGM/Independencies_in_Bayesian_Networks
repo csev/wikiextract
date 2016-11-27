@@ -1,0 +1,43 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Independencies in Bayesian Networks</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h2> <span class="mw-headline" id="Directed_Separation_.28d-separation.29">Directed Separation (d-separation)</span></h2>
+<p>In the following we denote Probability Distribution with P and a Graph with G.</p>
+<p><b>Definition 1</b>: We say that a set of nodes $$\mathbf{X}$$ and a set of nodes $$\mathbf{Y}$$ are d-separated in G given a set of nodes $$\mathbf{Z}$$ if there is no active trail in G between $$\mathbf{X}$$ and $$\mathbf{Y}$$ given $$\mathbf{Z}$$. (Notation: $$d-sep&#95;{G}(\mathbf{X,Y}|\mathbf{Z})$$)</p>
+<p><br /></p>
+<p><b>Theorem 1</b>: If P factorizes over G, and $$d-sep&#95;{G}(\mathbf{X,Y}|\mathbf{Z})$$ then P satisfies $$\mathbf{X} \perp\mathbf{Y} | \mathbf{Z}$$.</p>
+<p><br /></p>
+<p><b>Definition 2</b>: If P satisfies $$I(G)$$, we say that G is an I-map (independency map) of P, where $$I(G)$$ denotes the set of independencies that are implicit in the Graph, i.e.: $$I(G) = &#92;{(\mathbf{X}\perp\mathbf{Y}|\mathbf{Z}): d-sep&#95;{G}(\mathbf{X,Y}|\mathbf{Z})&#92;}$$</p>
+<p>Note that this definition requires that any independence that is implied by G must hold for the distribution. In other words it doesn't require that the graph G represents all the independencies of the distribution. P may satisfy more independencies.
+<br /></p>
+<p>See this thread on the forum for the proof of the d-separation theorem: <a rel="nofollow" class="external free" href="https://class.coursera.org/pgm/forum/thread?thread_id=296">https://class.coursera.org/pgm/forum/thread?thread_id=296</a></p>
+<h2> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h2>
+<p><pre>
+0:20    Independence and Factorization
+1:18    Flow of influence and d-separation
+2:36    Factorization -&gt; Independence: BNs
+6:18    Any node is d-separated from its non-descendants given its parents
+9:34    I-maps
+10:51   I-map example
+14:43   Chain rule for probabilities
+17:12   Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 14/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Independencies_in_Bayesian_Networks&amp;oldid=2535">https://share.coursera.org/wiki/index.php?title=PGM:Independencies_in_Bayesian_Networks&amp;oldid=2535</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

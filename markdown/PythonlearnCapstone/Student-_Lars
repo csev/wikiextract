@@ -1,0 +1,3 @@
+I am working with data from http://data.worldbank.org/. The site has a reasonably functional API and contains time series data of some 1400 indicators for 250 countries and regions. The wealth of data is a little overwhelming, so at the start I have focused on getting data into an SQLlite database (mostly for convenience as right now there is only one table). Right now, I am looking at a few indicators to visualize as bubble/scatter plots. Would be great if I could figure out how to make the indicator selection dynamic and include the time dimension as animation.
+
+Either way, it's lots of fun, slightly addictive and incredibly educational.

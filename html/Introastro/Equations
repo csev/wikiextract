@@ -1,0 +1,141 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Introastro:Equations</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#General:"><span class="tocnumber">1</span> <span class="toctext">General:</span></a></li>
+<li class="toclevel-1"><a href="#Week_1:_Positional_Astronomy"><span class="tocnumber">2</span> <span class="toctext">Week 1: Positional Astronomy</span></a></li>
+<li class="toclevel-1"><a href="#Week_2:_Newton.27s_Universe"><span class="tocnumber">3</span> <span class="toctext">Week 2: Newton's Universe</span></a></li>
+<li class="toclevel-1"><a href="#Week_3:_Modern_Physics"><span class="tocnumber">4</span> <span class="toctext">Week 3: Modern Physics</span></a></li>
+<li class="toclevel-1"><a href="#Week_5:_Solar_System.28s.29"><span class="tocnumber">5</span> <span class="toctext">Week 5: Solar System(s)</span></a></li>
+<li class="toclevel-1"><a href="#Week_6:_Stars"><span class="tocnumber">6</span> <span class="toctext">Week 6: Stars</span></a></li>
+<li class="toclevel-1"><a href="#Week_7:_Stellar_Evolution"><span class="tocnumber">7</span> <span class="toctext">Week 7: Stellar Evolution</span></a></li>
+<li class="toclevel-1"><a href="#Week_8:_Relativity_and_Black_Holes"><span class="tocnumber">8</span> <span class="toctext">Week 8: Relativity and Black Holes</span></a></li>
+<li class="toclevel-1"><a href="#Week_10:_Galaxies"><span class="tocnumber">9</span> <span class="toctext">Week 10: Galaxies</span></a></li>
+<li class="toclevel-1"><a href="#Week_11:_Cosmology_Theory"><span class="tocnumber">10</span> <span class="toctext">Week 11: Cosmology Theory</span></a></li>
+<li class="toclevel-1"><a href="#Week_12:_Cosmology_Experiments"><span class="tocnumber">11</span> <span class="toctext">Week 12: Cosmology Experiments</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="General:">General:</span></h1>
+<ul>
+<li>Sphere: $$A=4\pi R^2$$, $$V=\frac{4}{3}\pi R^3$$</li>
+</ul>
+<h1> <span class="mw-headline" id="Week_1:_Positional_Astronomy">Week 1: Positional Astronomy</span></h1>
+<ul>
+<li>Distance subtended by small angle at distance D:  $$AB=\dfrac{\alpha}{57.3}D$$ ($$\alpha$$ in degrees)</li>
+<li><p>$$AB=\dfrac{\alpha}{206265}D$$ ($$\alpha$$ in arc seconds)</p></li>
+<li><p>or for: $$\alpha$$ arcseconds  $$ AB=\dfrac{\alpha}{3600} \cdot \dfrac{\pi}{180} \cdot \text{D} $$ &gt; $$ AB={\alpha} \cdot \text{D} \cdot 4.848e-6 $$</p></li>
+<li><p>Sidereal time:  $$ST=LT \pm D \cdot 4\text{min.}$$  and  $$ST=LT + \text{(Dec)6/(March)12/(June)18h}$$</p></li>
+<li><p>Zenith Angle:  $$\mbox{Zenith Angle}= |\text{Latitude Observer} - \text{Declination Object}|$$                                               </p></li>
+<li><p>Altitude:  $$\text{Alt} = 90^o - \text{Zenith Angle}$$</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Week_2:_Newton.27s_Universe">Week 2: Newton's Universe</span></h1>
+<ul>
+<li><p>Synodic period $$\dfrac{S}{P&#95;2}=\dfrac{S}{P&#95;1}-1$$ , or $$ S=\dfrac{P&#95;1P&#95;2}{P&#95;2-P&#95;1}$$; you will get $$S$$ in days</p></li>
+<li><p>Kepler's third law $$P^2=Ka^3$$ (with: a=Semimajor axis, $$K=\dfrac{4\pi^2}{GM&#95;{total}}$$), or $$v^2=\dfrac{4\pi^2}{KR}$$ for circular orbit.</p></li>
+<li><p>Gravity force between two objects $$F&#95;{\text{Gravity}}=\dfrac{Gm&#95;1m&#95;2}{r^2}$$</p></li>
+<li><p>Gravity acceleration due to another object $$a=\dfrac{Gm'}{r^2}$$</p></li>
+<li><p>Centripetal acceleration  $$a=\dfrac{v^2}{R}$$</p></li>
+<li><p>Force $$ F=ma$$</p></li>
+<li><p>momentum $$p=mv$$</p></li>
+<li><p>(Value of) angular momentum $$L=mvR$$</p></li>
+<li><p>Kinetic energy $$ E&#95;k =\frac{1}{2}mv^2$$</p></li>
+<li><p>Gravitational potential energy $$E&#95;p=-\dfrac{Gm&#95;1m&#95;2}{r}$$</p></li>
+<li><p>Newton's approximation for small values of $$|ap|\ll 1$$:  $$(1+a)^{p} \approx 1+p \times a$$</p></li>
+<li><p>Tidal acceleration, body 2 with mass $$M&#95;2$$ on body 1; nominal distance is $$D$$; change in distance of body 1 is $$R&#95;1$$:  $$a&#95;T=\frac{2 G M&#95;2 R&#95;1}{D^3}$$</p></li>
+<li><p>Gravitational potential energy near ground $$E&#95;p=mgh$$</p></li>
+<li><p>Mechanical energy $$E=E&#95;k+E&#95;p$$</p></li>
+<li><p>Near star orbiting calculations: $$V&#95;s= \sqrt{\frac{Gm}{R}}\left ( \frac{M&#95;p}{M&#95;p} \right )$$ , where: $$R=R&#95;s \left ( 1+\frac{M&#95;s}{M&#95;p} \right )$$</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Week_3:_Modern_Physics">Week 3: Modern Physics</span></h1>
+<ul>
+<li><p>Dependence of frequency on wavelength: $$f=\frac{c}{\lambda}$$; $$c$$ is wave speed</p></li>
+<li><p>Wien's displacement law: $$\lambda&#95;{\max} = b/T$$, where $$b=0.0029[mK]$$</p></li>
+<li><p>Flux: $$F = \sigma T^4$$, where: $$\sigma = 5.670\cdot 10^{-8} \left [ \frac{W}{m^2 K^4} \right ]$$ (Stefan–Boltzmann constant).</p></li>
+<li><p>Luminosity $$L=4 \pi R^2 &#42; F$$, R is radius of the sphere
+$$L = 4\pi D&#95;\bigodot^2&#42;b&#95;\bigodot$$; $$D&#95;\bigodot$$ is distance to Sun, $$b&#95;\bigodot$$ is solar flux at Earth (solar constant of $$1361 W/m^2$$)</p></li>
+<li><p>Brightness is the Flux measured at a distance $$D$$ from a spherical source with luminosity $$L$$: $$b = \dfrac{L}{4\pi D^2}$$</p></li>
+<li><p>Flux (F) is related to Brightness (b) by the scaling equation: $$F = b&#95;\bigodot ( \dfrac{D&#95;\bigodot}{R&#95;\bigodot})^2$$</p></li>
+<li><p>Coulomb force: $$F=\dfrac{k q&#95;1 q&#95;2}{R^2}$$</p></li>
+<li><p>Doppler effect approaching $$\lambda=\lambda&#95;{0}(1-\dfrac{v}{c})$$ </p></li>
+<li><p>Doppler effect receding $$\lambda=\lambda&#95;{0}(1+\dfrac{v}{c})$$ </p></li>
+<li><p>Average kinetic energy in an ideal gas $$\frac{mv^2}{2} = \frac{3}{2} k&#95;BT$$ with $$k&#95;B = 1.381 \times 10^{-23} J \: K^{-1}$$</p></li>
+<li><p>In ideal gas: $$PV=Nk&#95;BT$$</p></li>
+<li><p>Potential energy - $$U=-G&#42;M&#42;m/R$$</p></li>
+<li><p>Total energy - $$E= m&#42;v^2/2 - GMm/R$$</p></li>
+<li><p>Energy = $$hf=K(1/m^2-1/n^2)$$</p></li>
+<li>Energy level $$K=lowest energy level$$; $$K = h&#42;c&#42;R&#95;H = 2.17869 x 10^{-18} J$$</li>
+<li>Planck constant - $$h = 6.626069 x 10^{-34} J&#42;s$$</li>
+</ul>
+<h1> <span class="mw-headline" id="Week_5:_Solar_System.28s.29">Week 5: Solar System(s)</span></h1>
+<ul>
+<li><p>Number of isotopes left after time t: $$N(t) = 2^\frac{-t}{t&#95;½} N(0)$$</p></li>
+<li><p>Time elapsed from isotope concentration ratio: $$\frac{N&#95;D}{N&#95;P(t)} = 2^\frac{t}{t&#95;½}-1$$</p></li>
+<li><p>Jean's Relationship - $$k&#95;BT=GMm/R$$ (collapse of a cloud).</p></li>
+<li><p>Orbital resonance: $$n P&#95;1 = m P&#95;2$$ for small integer values of n and m</p></li>
+<li><p>Energy received from a star on a black body planet at distance D: $$I&#95;\text{in} = b&#95;\text{star} \pi R^2$$ or $$I&#95;\text{in} = \frac{1}{4} L&#95;\text{star} \left(\frac{R&#95;\text{planet}}{D}\right)^2$$ or $$I&#95;\text{in} = \pi  R&#95;\text{planet}^2 \sigma T&#95;\text{star}^4 \left(\frac{R&#95;\text{star}}{D}\right)^2$$</p></li>
+<li><p>Energy emitted by this same black body planet: $$I&#95;\text{out} = 4 \pi R^2 F$$</p></li>
+<li><p>Expected temperature of this black body planet: $$T&#95;\text{planet(no-gh)} = T&#95;\text{star} \sqrt{\frac{R&#95;\text{star}}{2 D&#95;\text{star}}}$$</p></li>
+<li><p>Expected temperature with an atmosphere with IR absorption g and albedo a: $$T&#95;\text{planet} = (1-\frac{g}{2})^{-1/4} \cdot (1-a)^{1/4} \cdot  T&#95;\text{planet(no-gh)}$$</p></li>
+<li><p>Roche limit: $$D = R&#95;p \left(\frac{2 \rho&#95;p}{\rho&#95;m}\right)^\frac{1}{3}$$</p></li>
+</ul>
+<h1> <span class="mw-headline" id="Week_6:_Stars">Week 6: Stars</span></h1>
+<ul>
+<li>$$D=\frac {1"} {p} $$ [pc], where: D[ps]=distance to star in parsec,  p=parallax angle p" [in arcsec]</li>
+<li>Tangential velocity (km/s, D in parsecs): $$ v&#95;T =4.74\mu D$$</li>
+<li>Tangential velocity&#160;: $$ v&#95;T =\mu&#42;D$$ ["/yr], where: $$\mu$$=angular/proper motion, D = distance in [AU]</li>
+<li>Radial velocity&#160;:
+$$ v&#95;r = c\left(\frac {\lambda} {\lambda&#95;0} -1\right)$$</li>
+<li>Luminosity, brightness and distance to star relation&#160;:
+$$\frac {L} {L&#95;\odot} = \frac {b} {b&#95;\odot} \left(\frac {D} {1\ AU}\right)^{2}$$</li>
+<li>Radius, luminosity and temperature of star relation&#160;:
+$$\frac {R} {R&#95;\odot} = \left(\frac {L} {L&#95;\odot}\right)^{1/2} \left(\frac {T} {T&#95;\odot}\right)^{-2}$$</li>
+<li>Binary stars&#160;: $$M&#95;1 R&#95;1 = M&#95;2 R&#95;2$$ and $$m&#95;1 V&#95;1 = m&#95;2 V&#95;2$$</li>
+<li>Spectroscopic Binary: $$M&#95;1=(V&#95;2P/2\pi G)(V&#95;1+V&#95;2)^2$$</li>
+<li>Mass and luminosity relation&#160;: $$\frac{L} {L&#95;\odot} = \left(\frac {M} {M&#95;\odot}\right)^{3.5}$$</li>
+<li>Mass, radius and period relation for two orbiting objects: $$\frac{M&#95;\text{total}}{M&#95;\odot}=(\frac{R}{1AU})^3(\frac{P}{1y})^{-2}$$; R is distance between objects, P is period; for binary system of stars: $$M&#95;\text{total}=M&#95;1+M&#95;2$$</li>
+</ul>
+<h1> <span class="mw-headline" id="Week_7:_Stellar_Evolution">Week 7: Stellar Evolution</span></h1>
+<h1> <span class="mw-headline" id="Week_8:_Relativity_and_Black_Holes">Week 8: Relativity and Black Holes</span></h1>
+<ul>
+<li>Lorentz Factor:  $$\gamma = \frac {1} {\sqrt{1-\frac{v^2}{c^2}}} \ge 1$$</li>
+<li>Lorentz Transformations:
+$$ x' = \frac {x-vt} {\sqrt{1-\frac{v^2}{c^2}}} = \gamma (x-vt)$$, 
+$$ t' = \frac {t- \frac {vx} {c^2}} {\sqrt {1- \frac {v^2} {c^2}}} = \gamma (t-\frac {vx} {c^2})$$</li>
+<li>Invariant Interval: 
+$$ s^2 = c^2t'^2 - x'^2 = c^2t^2-x^2 $$</li>
+<li>Momentum Invariant: 
+$$ P = \frac {mv} {\sqrt{1- \frac{v^2}{c^2}}} = \gamma mv$$</li>
+<li>Energy Invariant: 
+$$ E = \frac {mc^2} {\sqrt{1- \frac {v^2}{c^2}}} = \gamma mc^2$$</li>
+<li>Length Contraction
+$$ L' = L \sqrt{ 1- \frac {v^2}{c^2}} = \frac{L }{\gamma}$$</li>
+<li>Time Dilation
+$$ T' = \frac {T} {\sqrt{1- \frac {v^2}{c^2}}} = \gamma T$$</li>
+</ul>
+<h1> <span class="mw-headline" id="Week_10:_Galaxies">Week 10: Galaxies</span></h1>
+<ul>
+<li>Scale factor: $$a(t)=\frac{1}{1+z}$$</li>
+</ul>
+<h1> <span class="mw-headline" id="Week_11:_Cosmology_Theory">Week 11: Cosmology Theory</span></h1>
+<h1> <span class="mw-headline" id="Week_12:_Cosmology_Experiments">Week 12: Cosmology Experiments</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Introastro:Equations&amp;oldid=30541">https://share.coursera.org/wiki/index.php?title=Introastro:Equations&amp;oldid=30541</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Introastro" title="Category:Introastro">Introastro</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

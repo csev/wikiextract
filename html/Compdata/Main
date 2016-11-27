@@ -1,0 +1,171 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compdata:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Welcome to the 'Computing for Data Analysis' wiki!</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_1_Topics"><span class="tocnumber">1</span> <span class="toctext">Week 1 Topics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Terms_Covered"><span class="tocnumber">1.1</span> <span class="toctext">Terms Covered</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_2_Topics"><span class="tocnumber">2</span> <span class="toctext">Week 2 Topics</span></a></li>
+<li class="toclevel-1"><a href="#Week_3_Topics"><span class="tocnumber">3</span> <span class="toctext">Week 3 Topics</span></a></li>
+<li class="toclevel-1"><a href="#Week_4_Topics"><span class="tocnumber">4</span> <span class="toctext">Week 4 Topics</span></a></li>
+<li class="toclevel-1"><a href="#Links"><span class="tocnumber">5</span> <span class="toctext">Links</span></a></li>
+<li class="toclevel-1"><a href="#Books_about_Data_Analysis"><span class="tocnumber">6</span> <span class="toctext">Books about Data Analysis</span></a></li>
+<li class="toclevel-1"><a href="#Books_about_applications_of_Data_Analysis"><span class="tocnumber">7</span> <span class="toctext">Books about applications of Data Analysis</span></a></li>
+<li class="toclevel-1"><a href="#Tools.2C_Editors.2C_IDEs"><span class="tocnumber">8</span> <span class="toctext">Tools, Editors, IDEs</span></a>
+<ul>
+<li class="toclevel-2"><a href="#RStudio"><span class="tocnumber">8.1</span> <span class="toctext">RStudio</span></a></li>
+<li class="toclevel-2"><a href="#ESS_.28Emacs_Speaks_Statistics.29"><span class="tocnumber">8.2</span> <span class="toctext">ESS (Emacs Speaks Statistics)</span></a></li>
+<li class="toclevel-2"><a href="#Open_Analytics.27_Architect"><span class="tocnumber">8.3</span> <span class="toctext">Open Analytics' Architect</span></a></li>
+<li class="toclevel-2"><a href="#r4intellij_-_R_plugin_for_the_IntelliJ_IDE"><span class="tocnumber">8.4</span> <span class="toctext">r4intellij - R plugin for the IntelliJ IDE</span></a></li>
+<li class="toclevel-2"><a href="#Rattle_-_A_Graphical_User_Interface_for_Data_Mining_using_R"><span class="tocnumber">8.5</span> <span class="toctext">Rattle - A Graphical User Interface for Data Mining using R</span></a></li>
+<li class="toclevel-2"><a href="#Revolution_R_Community"><span class="tocnumber">8.6</span> <span class="toctext">Revolution R Community</span></a></li>
+<li class="toclevel-2"><a href="#RKWard"><span class="tocnumber">8.7</span> <span class="toctext">RKWard</span></a></li>
+<li class="toclevel-2"><a href="#R_Unit_Testing_frameworks"><span class="tocnumber">8.8</span> <span class="toctext">R Unit Testing frameworks</span></a></li>
+<li class="toclevel-2"><a href="#StatET_for_R_-_R_plugin_for_Eclipse"><span class="tocnumber">8.9</span> <span class="toctext">StatET for R - R plugin for Eclipse</span></a></li>
+<li class="toclevel-2"><a href="#Tinn-R"><span class="tocnumber">8.10</span> <span class="toctext">Tinn-R</span></a></li>
+<li class="toclevel-2"><a href="#Vim-R-plugin"><span class="tocnumber">8.11</span> <span class="toctext">Vim-R-plugin</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_1_Topics">Week 1 Topics</span></h1>
+<ul>
+<li>Introduction and overview</li>
+<li>Installing R</li>
+<li>Data types, subsetting</li>
+<li>Reading/writing data</li>
+</ul>
+<h3> <span class="mw-headline" id="Terms_Covered">Terms Covered</span></h3>
+<p><strong>Links to pages providing a quick reference for terms covered in class lectures:</strong>
+<em>(see the help page for simple instructions on adding your own page to this list)</em></p>
+<ul>
+<li><a href="/wiki/index.php/PGM:Operators" title="PGM:Operators"> Operators</a>  </li>
+<li><a href="/wiki/index.php/PGM:Functions" title="PGM:Functions"> Functions</a>  </li>
+<li><a href="/wiki/index.php/PGM:Objects" title="PGM:Objects"> Classes of Objects</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Week_2_Topics">Week 2 Topics</span></h1>
+<ul>
+<li><a href="/wiki/index.php/PGM:ControlStructures" title="PGM:ControlStructures"> Control structures</a></li>
+<li><a href="/wiki/index.php/PGM:Functions" title="PGM:Functions"> Functions</a></li>
+<li><a href="/wiki/index.php/PGM:Scoping" title="PGM:Scoping"> Scoping Rules in R</a></li>
+<li>Loop functions</li>
+<li><a href="/wiki/index.php/PGM:Debugging" title="PGM:Debugging">Debugging </a></li>
+</ul>
+<h1> <span class="mw-headline" id="Week_3_Topics">Week 3 Topics</span></h1>
+<ul>
+<li>Simulation</li>
+<li>Plotting, visualizing data</li>
+<li>Priniciples of data graphics</li>
+</ul>
+<h1> <span class="mw-headline" id="Week_4_Topics">Week 4 Topics</span></h1>
+<ul>
+<li>Objected oriented programming</li>
+<li>Data abstraction</li>
+<li>Regular expressions</li>
+</ul>
+<h1> <span class="mw-headline" id="Links">Links</span></h1>
+<p>Links to sites with tricks, tutorials and helpful articles, provided by various users on the discussion forum.</p>
+<p><a rel="nofollow" class="external text" href="http://wiki.stdout.org/rcookbook/">Cookbook for R</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.statmethods.net/">Quick R</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.r-statistics.com/2013/01/100-most-read-r-posts-for-2012-stats-from-r-bloggers-big-data-visualization-data-manipulation-and-other-languages/">100 most read R posts on R-statistics.com</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.twotorials.com/">R Twotorials</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.cyclismo.org/tutorial/R/">R Tutorial</a></p>
+<p><a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/manuals/R-intro.html">An introduction to R</a></p>
+<p><a rel="nofollow" class="external text" href="http://pairach.com/2012/06/06/r-style-guide/">R style guide</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.r-tutor.com">R tutor</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.codeschool.com/courses/try-r">Try-R</a>. A free self-paced introductory R course from CodeSchool.com.</p>
+<p><a rel="nofollow" class="external text" href="http://flowingdata.com/2012/11/20/archive-of-datasets-bundled-with-r/">Archive for datasets bundled with R</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.r-bloggers.com/">R-bloggers</a> R news and tutorials sourced from over 400 R bloggers.</p>
+<p><a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/available_packages_by_name.html">CRAN Packages</a> List of R packages available from The Comprehensive R Archive Network (CRAN).</p>
+<p><a rel="nofollow" class="external text" href="http://www.fernandohrosa.com.br/br/P/aprenda-a-usar-o-r/">Aprenda a usar o R</a> Tutorial in portuguese</p>
+<p><a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf">R Quick Reference Card</a></p>
+<p><a rel="nofollow" class="external text" href="http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html">10 R Packages</a> 10 R packages I wish I knew about earlier, by Yhat</p>
+<h1> <span class="mw-headline" id="Books_about_Data_Analysis">Books about Data Analysis</span></h1>
+<p>Provided by various users on the discussion forum and taken from the last slide in the 'Overview and history of R' lecture.</p>
+<p>Kabacoff, Robert. 2011. <strong><a rel="nofollow" class="external text" href="http://www.manning.com/kabacoff/">R in Action. 1st ed</a></strong>. Manning Publications. Publishers site has two free sample chapters and source code available as downloads - may have to register first.</p>
+<p>Braun, W. John, and Duncan J. Murdoch. 2008. <a rel="nofollow" class="external text" href="http://www.cambridge.org/gb/knowledge/isbn/item1163939/?site_locale=en_GB">A First Course in Statistical Programming with R</a>. 1st ed. Cambridge University Press.</p>
+<p>Burns, Patrick. 2011. <a rel="nofollow" class="external text" href="http://www.burns-stat.com/pages/Tutor/R_inferno.pdf">The R Inferno</a>, this is a free PDF download.</p>
+<p>Chambers (2008). <a rel="nofollow" class="external text" href="http://www.springer.com/statistics/computational+statistics/book/978-0-387-75935-7">Software for Data Analysis</a>, Springer. </p>
+<p>(your textbook) Chambers (1998). <a rel="nofollow" class="external text" href="http://books.google.com.au/books/about/Programming_with_Data.html?id=Km1IBFZCRPUC&amp;redir_esc=y">Programming with Data</a>, Springer.</p>
+<p>The link originally came from here, which also has a description of the book and links to the R packages associated with the book.</p>
+<p>Matloff, Norman. 2011. <a rel="nofollow" class="external text" href="http://books.google.com.au/books?id=4jL3sfmP1l8C&amp;printsec=frontcover&amp;dq=The+Art+of+R+Programming:+A+Tour+of+Statistical+Software+Design&amp;hl=en&amp;sa=X&amp;ei=jcHqUJGTBsTKmgW-34CABQ&amp;ved=0CDYQ6AEwAA">The Art of R Programming: A Tour of Statistical Software Design</a>. 1st ed. No Starch Press.</p>
+<p>Murrell (2005). <a rel="nofollow" class="external text" href="http://www.stat.auckland.ac.nz/~paul/RGraphics/rgraphics.html">R Graphics</a>, Chapman &amp; Hall/CRC Press. The book's web page has three free chapters (PDF) and the R source for all the diagrams used in the book.</p>
+<p>Pinheiro &amp; Bates (2000). <a rel="nofollow" class="external text" href="http://www.springer.com/statistics/statistical+theory+and+methods/book/978-1-4419-0317-4">Mixed-Effects Models in S and S-PLUS</a>, Springer. </p>
+<p>Sakar, Deepayan. <a rel="nofollow" class="external text" href="http://www.springer.com/statistics/computational+statistics/book/978-0-387-75968-5">Lattice: Multivariate Data Visualization with R</a>, Springer. This <a rel="nofollow" class="external text" href="http://lmdvr.r-forge.r-project.org/figures/figures.html">site</a>  has all the figures and the code to generate them from the book.</p>
+<p>Venables &amp; Ripley (2000). <a rel="nofollow" class="external text" href="http://books.google.com.au/books/about/S_Programming.html?id=-rKWRH0fglMC">S Programming</a>, Springer.</p>
+<p>Yau, Nathan (2011), <a rel="nofollow" class="external text" href="http://au.wiley.com/WileyCDA/WileyTitle/productCd-0470944889.html">Visualize This: The FlowingData Guide to Design, Visualization, and Statistics</a>, Wiley. There is a <a rel="nofollow" class="external text" href="http://flowingdata.com/">blog</a> associated with this book dedicated to data visualisation, it has some stunning graphs and data representation diagrams.</p>
+<p>Springer has a series of books called <a rel="nofollow" class="external text" href="http://www.springer.com/series/6991">Use R!</a>.</p>
+<p>A longer list of books is at available at <a rel="nofollow" class="external text" href="http://www.r-project.org/doc/bib/R-books.html">R-project.org</a></p>
+<h1> <span class="mw-headline" id="Books_about_applications_of_Data_Analysis">Books about applications of Data Analysis</span></h1>
+<p>Conway &amp; White. (2012). <a rel="nofollow" class="external text" href="http://shop.oreilly.com/product/0636920018483.do">Machine Learning for Hackers</a>, O'Reilly</p>
+<p>Hastie &amp; Tibshirani &amp; Friedman (2011) <a rel="nofollow" class="external text" href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">The Elements of Statistical Learning: Data Mining, Inference, and Prediction, 2nd edition</a>, Spring.  The book can be downloaded for free from the supplied link, R code is also avaiable.</p>
+<p>Venables &amp; Ripley (2002). <a rel="nofollow" class="external text" href="http://www.springer.com/statistics/computational+statistics/book/978-0-387-95457-8">Modern Applied Statistics with S</a>, Springer. </p>
+<h1> <span class="mw-headline" id="Tools.2C_Editors.2C_IDEs">Tools, Editors, IDEs</span></h1>
+<p>Links to tools, editor extensions and IDEs that are mentioned in the user forums.</p>
+<h3> <span class="mw-headline" id="RStudio">RStudio</span></h3>
+<p>RStudio is a free and open source integrated development environment for R.</p>
+<p><a rel="nofollow" class="external free" href="http://www.rstudio.com/ide/">http://www.rstudio.com/ide/</a></p>
+<h3> <span class="mw-headline" id="ESS_.28Emacs_Speaks_Statistics.29">ESS (Emacs Speaks Statistics)</span></h3>
+<p>Emacs Speaks Statistics (ESS) is an add-on package for Emacs text editors. It is designed to support editing of scripts and interaction with various statistical analysis programs such as R, S-Plus, SAS, Stata and JAGS.</p>
+<p><a rel="nofollow" class="external free" href="http://ess.r-project.org/">http://ess.r-project.org/</a></p>
+<h3> <span class="mw-headline" id="Open_Analytics.27_Architect">Open Analytics' Architect</span></h3>
+<p>R IDE based on the Eclipse + StatET software. Currently only availabe for windows.</p>
+<p><a rel="nofollow" class="external free" href="http://www.openanalytics.eu/architect">http://www.openanalytics.eu/architect</a></p>
+<h3> <span class="mw-headline" id="r4intellij_-_R_plugin_for_the_IntelliJ_IDE">r4intellij - R plugin for the IntelliJ IDE</span></h3>
+<p>r4intellij is an R plugin fro the IntelliJ IDE, the plugin allows for syntax highlighting, intelligent code folding and completion, refactorings, and more. </p>
+<p><a rel="nofollow" class="external free" href="https://code.google.com/p/r4intellij/">https://code.google.com/p/r4intellij/</a></p>
+<h3> <span class="mw-headline" id="Rattle_-_A_Graphical_User_Interface_for_Data_Mining_using_R">Rattle - A Graphical User Interface for Data Mining using R</span></h3>
+<p>Rattle (the R Analytical Tool To Learn Easily) presents statistical and visual summaries of data, transforms data into forms that can be readily modelled, builds both unsupervised and supervised models from the data, presents the performance of models graphically, and scores new datasets. </p>
+<p>It is open source and available for Linux, Windows and MacOS.</p>
+<p><a rel="nofollow" class="external free" href="http://rattle.togaware.com/">http://rattle.togaware.com/</a></p>
+<h3> <span class="mw-headline" id="Revolution_R_Community">Revolution R Community</span></h3>
+<p>Revolution R Community is Revolution Analytics' free distribution of the open source R programming language -- enhanced for users looking for faster performance and greater stability. It's perfect for learning R and basic analysis.</p>
+<p><a rel="nofollow" class="external free" href="http://www.revolutionanalytics.com/products/revolution-r.php">http://www.revolutionanalytics.com/products/revolution-r.php</a></p>
+<h3> <span class="mw-headline" id="RKWard">RKWard</span></h3>
+<p>is an easy to use and easily extensible IDE/GUI for R. It aims to combine the power of the R-language with the ease of use of commercial statistics tools. </p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://rkward.sourceforge.net/">RKWard</a></li>
+</ul>
+<h3> <span class="mw-headline" id="R_Unit_Testing_frameworks">R Unit Testing frameworks</span></h3>
+<p>A list of known testing tools for R. Such tools are useful when developing and supporting large R projects.</p>
+<ul>
+<li><p><a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/RUnit/index.html">RUnit</a> is based on xunit so will be familiar to programmers who have used xunit based testing frameworks for other languages e.g. Junit, Nunit, etc.</p></li>
+<li><p><a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/svUnit/index.html">Svunit</a> uses same test syntax as RUnit but includes a GUI.</p></li>
+<li><p><a rel="nofollow" class="external text" href="http://cran.r-project.org/web/packages/testthat/index.htm">Testthat</a> not compatible with the two above, but does have a possible useful feature that it can be made to only run tests on files that have not changed.</p></li>
+</ul>
+<h3> <span class="mw-headline" id="StatET_for_R_-_R_plugin_for_Eclipse">StatET for R - R plugin for Eclipse</span></h3>
+<p>StatET is an R plugin for the Eclipse development environment.  It offers a set of mature tools for R coding and package building. This includes a fully integrated R Console, Object Browser and R Help System, whereas multiple local and remote installations of R are supported.</p>
+<p>StatET is provided as plug-in for the Eclipse IDE. Therefore the user can combine it with a wide range set of tools working on top of the Eclipse Platform. Like R and Eclipse, StatET is open source software, and works on many operating systems.</p>
+<p><a rel="nofollow" class="external free" href="http://www.walware.de/goto/statet">http://www.walware.de/goto/statet</a></p>
+<h3> <span class="mw-headline" id="Tinn-R">Tinn-R</span></h3>
+<p>Tinn-R is free, simple but efficient replacement for the basic code editor provided by Rgui. Only available for Windows</p>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.sciviews.org/Tinn-R/">http://www.sciviews.org/Tinn-R/</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Vim-R-plugin">Vim-R-plugin</span></h3>
+<p>This plugin improves Vim's support for editing R code and makes it possible to integrate Vim with R. The functionality is similar to what you can find in Tinn-R and ESS mode of Emacs.</p>
+<p><a rel="nofollow" class="external free" href="http://www.vim.org/scripts/script.php?script_id=2628">http://www.vim.org/scripts/script.php?script_id=2628</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compdata:Main&amp;oldid=17526">https://share.coursera.org/wiki/index.php?title=Compdata:Main&amp;oldid=17526</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Computing_for_Data_Analysis" title="Category:Computing for Data Analysis">Computing for Data Analysis</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

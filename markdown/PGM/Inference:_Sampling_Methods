@@ -1,0 +1,45 @@
+#Inference: Sampling Methods
+
+##Lecture Video Table of Contents
+
+###Simple Sampling
+<pre>
+0:34	Sampling-based estimation
+3:58	Sampling from discrete distribution
+14:02	Forward sampling from a Bayes network
+17:02	Forward sampling for query
+18:16	Queries with evidence (rejection sampling)
+22:06	Summary
+</pre>
+
+###Using a Markov Chain
+<pre>
+0:17	Goal
+1:40	The "sticky" issue
+2:25	Mixing
+5:08	Example run graphs
+9:09	Using the samples
+11:49	MCMC algorithm Summary I
+13:29	Summarizing the implications
+</pre>
+
+###Gibbs Sampling
+<pre>
+0:42	Gibbs chain
+4:35	Example
+7:25	Computational cost
+9:12	Another example
+12:02	Computational cost revisited
+13:03	Gibbs chain and regularity
+17:59	Summary
+</pre>
+
+###Metropolis-Hastings Algorithm
+<pre>
+1:17	Reversible chains
+6:16	Metropolis-Hastings chain
+9:59	Acceptance probability
+17:19	MCMC for matching
+21:39	MH for matching: augmenting path
+25:54	Summary
+</pre>

@@ -1,0 +1,72 @@
+[[Category:Coursera]]
+
+<p style="font:bold 220% Arial, serif;">Data Visualization</p>
+
+Offered by: [University of Illinois at Urbana-Champaign](https://www.coursera.org/illinois)  
+Instructor: [John Hart](https://www.coursera.org/instructor/johnhart)
+
+
+Welcome to the wiki page for Data Visualization!
+
+
+
+## Week 1
+
+Topic: [[Datavisualization:The Computer and the Human|The Computer and the Human]]
+
+After you actively engage in the learning experiences in this module, you should be able to:
+
+* Understand what data visualization is and the different kinds of data visualization.
+* Understand how computer graphics are used to display shapes in 2-D and 3-D, and draw simple 2-D shapes on a web page using Scalable Vector Graphics
+* Understand how we perceive, learn, and reason about information.
+
+
+## Week 2 
+
+Topic: [[Datavisualization:Visualization of Numerical Data|Visualization of Numerical Data]]
+
+After you actively engage in the learning experiences in this module, you should be able to:
+
+* Select an appropriate chart time, and assign data to appropriate chart elements, to visualize data effectively.
+* Understand basic charts and how their elements imply certain characteristics of the data they display.
+* Plot more data variables using higher dimensional visualization methods including glyphs, parallel coordinates, and streamgraphs.
+* Apply principles of design and color to make a data visualization more compelling, engaging, and effective.
+
+
+## Week 3
+
+Topic: [[Datavisualization:Visualization of Non-Numerical Data|Visualization of Non-Numerical Data]]
+
+After you actively engage in the learning experiences in this module, you should be able to:
+
+* Visualize graphs that depict relationships between data items.
+* Layout data using coordinates that are not explicitly provided by the data.
+
+
+## Week 4
+
+Topic: [[Datavisualization:The Visualization Dashboard|The Visualization Dashboard]]
+
+After you actively engage in the learning experiences in this module, you should be able to:
+
+* Design a visualization system for large datasets and dashboards to support informed decision making.
+* Create an initial overview of a large dataset, and then find interesting elements through zooming, filtering, and requesting details when needed.
+* Use visualization as a method for forming effective queries that reveal structure in a database.
+* Apply techniques from user-interface design to create effective visualization systems.
+
+
+## Glossary
+
+
+
+## Useful Resources
+The following resources were recommended in the week 1 video lecture: "1.1.2. Some Books on Data Visualization":
+
+* [The Visual Display of Quantitative Information by Ed Tufte](http://www.amazon.com/The-Visual-Display-Quantitative-Information/dp/0961392142)
+* [The Visualization Handbook](http://www.amazon.com/Visualization-Handbook-Charles-D-Hansen/dp/012387582X)
+* [Readings in Information Visualization](http://www.amazon.com/Readings-Information-Visualization-Interactive-Technologies/dp/1558605339)
+* [Information Visualization](http://www.amazon.com/Information-Visualization-Third-Interactive-Technologies/dp/0123814642)
+* [Visualization Analysis and Design](http://www.amazon.com/Visualization-Analysis-Design-AK-Peters/dp/1466508914)
+
+
+[[Category:Coursera]]

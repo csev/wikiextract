@@ -1,0 +1,20 @@
+Rosegarden is a more full featured DAW (compared to Audacity) with MIDI capability for Linux machines.
+It also has very advanced music score production and editing functions.
+
+## Companion applications
+Rosegarden runs very well on Opensuse 12.2 with Qsynth (a frontend for fluidsynth) as a synthesizer for MIDI. In turn Fluidsynth runs well with soundfonts from Chris Collins' GeneraluserGS (the fluidsynth version).
+
+## Getting it to run on a Linux box
+One of the problems that Rosegarden can present is that it likes to run with Jack. Indeed for a professional DAW this is the preferred configuration since Jack is much more of a single use highly specialized tool, and many advanced plugins will not work without Jack. However many general-purpose Linux boxes use Pulseaudio to control sound since while it is not quite as good a dedicated professional tool as Jack, it is more adaptable in the management of multiple audio devices.
+
+On a system which principally uses Pulseaudio with one audio device (say onboard sound chip only), if Jack loads into the system there can be a conflict, with the result that there is no sound in anything. So it is helpful to be able to watch the system processes and kill Jack if Rosegarden loads it. Even better is to make sure that Jack is not on the system so that Rosegarden cannot load it even if it wanted to. The result is a system which is not quite as good as it could be with Jack, but still functions well for an open source no-cost Linux solution under Pulseaudio.
+
+##Useful resources
+additional resources
+*[Rosegarden Website](http://www.rosegardenmusic.com)
+*[Qsynth Website](http://qsynth.sourceforge.net)
+*[Fluidsynth Website](http://sourceforge.net/apps/trac/fluidsynth/)
+*[Generaluser soundfonts Website](http://www.schristiancollins.com/generaluser.php)
+*[A how-to on Jack and Pulseaudio from the Jack website](http://jackaudio.org/pulseaudio_and_jack)
+
+Back to *[IMPMOOC mainpage](https://share.coursera.org/wiki/index.php/Musicproduction:Main)

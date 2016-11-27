@@ -1,0 +1,40 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Glossary</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><strong>active tissue</strong> Tissue in which, following some trigger, electrical properties such as resistance can change. </p>
+<p><strong>conductivity</strong> The measure of how many or how easily a charge moves.  </p>
+<p><strong>ion</strong> An atom or molecule with a charge due to an unequal number of protons (+) and electrons (-).  </p>
+<p><strong>current flux (J)</strong> The force per unit area. Is proportional to the force, multiplied by the conductivity.  </p>
+<p><strong>electric field (E)</strong> A measure of the change in potential with distance.  </p>
+<p><strong>field point (p)</strong> A point in a selected, variable location located away from the source and the sink out in the field.  </p>
+<p><strong>force (F)</strong> Equal to the electric field times the charge (q).  </p>
+<p><strong>membrane</strong> A thin material around cells composed of a lipid bilayer with hydrophilic heads and hydrophobic tails. A membrane is a super good conductor.  </p>
+<p><strong>passive tissue</strong> Tissue in which electrical properties, such as resistance, are maintained without change as time passes.  </p>
+<p><strong>potential</strong> The measure of the electrical energy available at one point.   </p>
+<p><strong>resistance</strong>  </p>
+<p><strong>resisitivity</strong>  </p>
+<p><strong>source</strong> Origin of current (flow of electricity).  </p>
+<p><strong>sink</strong> Destination of current.</p>
+<p><strong>voltage clamp</strong> In bioelectricity, a voltage clamp is an experimental technique. An electrode is placed inside the membrane, and another electrode outside. The voltage between the two electrodes is set ("clamped") to a certain value and held constant for the duration of the clamp. In most cases there is a variable current thereafter, and the "experimental data" is the record of the current that follows the onset of the clamp.</p>
+<p>The idea of a voltage clamp is to create situations where the values of alpha and beta are not changing and Vm is known, so that what is being measured, the current, reflects changes in the ionic probabilities with time, but not other things.</p>
+<p>The majority of situations involve a transitio between two or more clamped voltages. 
+Voltage clamps do not occur naturally, except that one might consider the membrane at rest "clamped" by nature. (edited from prof RC Barr's note on Voltage clamps in Hints and Kinks)</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Glossary&amp;oldid=8521">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Glossary&amp;oldid=8521</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,48 @@
+This site is a [wiki](http://en.wikipedia.org/wiki/Wiki), meaning that anyone can edit any page and improve it for all readers.  Don't be afraid to contribute and add to what others have already written on any page.  If you make any mistakes, it's easy to undo your changes.  If you want, you can first play around in the [[Sandbox]]
+
+##Data Science Specialization
+
+Welcome!
+
+>We believe that the key word in Data Science is "science". Our course track is focused on providing you with three things: (1) an introduction to the key ideas behind working with data in a scientific way that will produce new and reproducible insight, (2) an introduction to the tools that will allow you to execute on a data analytic strategy, from raw data in a database to a completed report with interactive graphics, and (3) on giving you plenty of hands on practice so you can learn the techniques for yourself. _Jeff Leek and the Data Science Track Team_
+
+The [Data Scientist's Toobox](https://www.coursera.org/course/datascitoolbox) course is a high-level overview of the core courses in the data science specialization and lays the groundwork for the tools we'll use throughout the [specialization](https://www.coursera.org/specialization/jhudatascience/1?utm_medium=dashboard). This is the primary wiki for all courses in the specialization including [Data Scientist's Toolbox](https://www.coursera.org/course/datascitoolbox) with instructor Jeff Leek, [R Programming](https://www.coursera.org/course/rprog) with instructor Roger D. Peng, [Getting and Cleaning Data](https://www.coursera.org/course/getdata) with instructor Jeff Leek, [Exploratory Data Analysis](https://www.coursera.org/course/exdata) with instructor Roger D. Peng, [Reproducible Research](https://www.coursera.org/course/repdata) with instructor Roger D. Peng, [Statistical Inference](https://www.coursera.org/course/statinference) with instructor Brian Caffo, [Regression Models](https://www.coursera.org/course/regmods) with instructor Brian Caffo, [Practical Machine Learning](https://www.coursera.org/course/predmachlearn) with instructor Jeff Leek, and [Developing Data Products](https://www.coursera.org/course/devdataprod) with instructor Brian Caffo.
+
+##Course Dependency Information
+
+
+[[File:Data Science Course Order.png|600px|right|A visual representation of suggested course order in the Data Science Specialization]]
+
+
+
+There are nine courses in the [sequence](https://d396qusza40orc.cloudfront.net/rprog/doc/JHDSS_CourseDependencies.pdf) plus a capstone project course. For the courses, we consider two forms of dependency.
+ 
+__Hard dependency__: Students will be required to know material from the prerequisite course. Taking the dependent course simultaneously will be challenging and only possible for highly motivated students willing to work ahead of the course schedule for the prerequisite. Taking hard dependent courses out of order is not possible unless the student already knows the material covered in the prerequisite course. 
+ 
+__Soft dependency__: Knowledge of material from the prerequisite course is recommended and useful. Concurrently taking the prerequisite course and the dependent course is possible. It is not recommended to take them out of order, but would be possible for highly motivated students willing to self teach components of the prerequisite course as needed.
+
+Using the course dependency information, I was able to determine that, if you adhere to hard dependencies, it takes a minimum of 24 weeks to complete the 9 courses.
+
+##Data Science Methodology
+
+[Data Scientist's Toolbox](https://www.coursera.org/course/datascitoolbox), the foundational course in the Data Science Specialization, "introduces [John Hopkins University's](http://www.jhu.edu) comprehensive approach to data science, which makes this series unique and more valuable. The courses in the specialization track emphasise [data science methodology](http://datascience101.wordpress.com/2014/03/13/the-data-science-methology/) rather than focusing primarily on data science technique.  In this course, they have taken care throughout to demonstrate a responsible, scientifically-based approach to collecting, curating and analyzing data sources." (Quoting and paraphrasing a comment by Data Science Specialization participant John Frederick Thiels)
+
+The keyword in "data science" is [science](http://simplystatistics.org/2013/12/12/the-key-word-in-data-science-is-not-data-it-is-science/) not data. The methodology is not dependent upon the dataset size; it scales from tiny data to big data. Data science methodology can be equated to the scientific method used in the natural sciences. In fact, JT Leek emphasises the importance of the science component of data science early in the [Data Scientist's Toolbox](https://www.coursera.org/course/datascitoolbox) course.
+
+An article ["The Data Science Methodology"](http://datascience101.wordpress.com/2014/03/13/the-data-science-methology/) on the Data Science 101 blog reiterates the four-step process familiar to scientists in the natural sciences although worded in terms appropriate for the emerging field called data science. An argument supporting the need for a rigorous methodology is featured in in the Financial Times article ["Big data: are we making a big mistake?"](http://www.ft.com/cms/s/2/21a6e7d8-b479-11e3-a09a-00144feabdc0.html#axzz2yoaf4K76)
+
+## Resources
+
+Please contribute any course related information you like. And by the way - it's easy to contribute your valuable information, just don't think you are not able to do so, or might break things. Please read these instructions and guidelines about [[Help:Editing| editing]] wiki pages on this platform.
+
+* [[DataSciSpec:FAQ|FAQ]] provides answers to Frequently Asked Questions
+* [[DataSciSpec:Useful_Resources|Resources]] gives you links to all the helpful stuff collected by your co-students
+* [[DataSciSpec:Courses|Courses]] is a summary page where you can find further material concerning each of the courses
+
+[[Category:Machine Learning]]
+[[Category:Statistics]]
+[[Category:R]]
+[[Category:Coursera]]
+[[Category:DataSci]]
+[[Category:DataSciSpec]]
+[[Category:Data Scientist's Toolbox]]

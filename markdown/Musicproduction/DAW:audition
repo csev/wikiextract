@@ -1,0 +1,98 @@
+
+
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+If you don't find the info you need on this wiki, try looking in the [official online help](http://helpx.adobe.com/audition/topics.html).
+
+##Project specifics
+details of file management
+*Project Name
+*File type
+*Bit depth
+*Sampling rate
+*Hardware
+*Buffer size
+*Project folders specifics
+
+##Recording
+details of audio recording
+*Metronome(click track)
+*Count in
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+To split clips in Audition CS6, click on the "Razor Tool" button (or press R) to activate the Razor mode. Then, just click on a clip to split it. Note that the position of the mouse does affect where the clip is split (i.e. click the clip in the middle to split it into halves).[[File:musicproduction_dawwiki_audition_razor.png|400px|thumb|right|The Razor Tool]]
+
+If you click and hold the Razor Tool button, you'll see two options pop up, "Razor Selected Clips Tool" and "Razor All Clips Tool." Selected Clips is selected by default. If you choose Selected Clips, only the clip your mouse is hovering over will be cut by the Razor. If you choose All Clips, the Razor will cut any clip (in any track) overlapping that time point. These differences are more obvious when you try them out, because there is a yellow line that shows you what will be cut and where, before you click.
+
+You can also choose Clip > Split (or press Ctrl+K) to split the selected clip at the current-time indicator.
+*Grid
+*Change grid resolution
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+There are quite a few ways to zoom in Audition CS6. Here's a (probably not complete) list of ways to do it:<br>
+1) Scroll the mouse wheel while hovering over the time ruler.<br>
+2) Hold Ctrl while scrolling the mouse wheel anywhere in the editor.<br>
+3) Right-click and drag on the time ruler to zoom into a specific region.<br>
+4) Press + and - on the keyboard (uses the current-time indicator as the zoom-center).
+*Nudge
+*Cycle
+Choose the Time Selection Tool (or press T) and click and drag in the editor workspace to choose a region of time. Now, the playback will stop when it reaches the endpoint of the region. To cycle, hit the "Loop Playback" button next to the Record button (or press Ctrl+L), and the playback will loop when it reaches the endpoint.
+Note that you can also select a region of time by pressing I and O to set in- and out-points, respectively, at the current-time indicator.
+*Merge
+*Name
+Right-click on a clip and select Clip Properties (or click on a clip and show the Properties tab). You can change the clip name in the text field at the top.
+*Color
+Right-click on a clip and select Clip Properties (or click on a clip and show the Properties tab). You can change the clip color in Basic Settings.
+*Markers
+Pull up the "Markers" tab. Here you can add and edit markers. Also, you can add a marker just by pressing M.
+Note that (at least in Audition CS6) you can have a marker be a "marker point" (which is default) or a "marker range." You can change the marker type by right-clicking the marker above the time-ruler and select "Convert to Range" (or "Convert to Point" if it's already a range).
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+Audition CS6 does not support MIDI tracks and instruments.
+
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+###Website
+* [Adobe Audition](http://www.adobe.com/products/audition.html)
+###Manual
+* [Audition online manual](http://helpx.adobe.com/audition/topics.html)
+* [Audition PDF manual](http://helpx.adobe.com/pdf/audition_reference.pdf)
+* [Keyboard Shortcuts](http://helpx.adobe.com/content/help/en/audition/using/default-keyboard-shortcuts.html)
+###Forums
+* [Adobe Audition Forums](http://forums.adobe.com/community/audition)
+###Links
+* [Adobe Audio Blog](http://blogs.adobe.com/audition/)
+* Twitter [@audition](http://twitter.com/audition)
+* Facebook [AdobeAudition](https://www.facebook.com/AdobeAudition)

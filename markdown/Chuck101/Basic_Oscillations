@@ -1,0 +1,23 @@
+<pre>
+// SinOsc is a sinus oscillator
+// s is the variable/object of the SinOsc
+// dac is the digital analog converter (the sound output - loudspeakers).
+SinOsc s => dac;
+
+// usually we assign values between 0 to 1 (values over 1 create distortions).
+0.6 => s.gain;
+// we assign 220 Hz (220 cycles/sec) to our sinus oscillator.
+220 => s.freq;
+
+// runs the oscillator that we created for 1 second
+1::second => now;
+</pre>
+
+#Oscillators
+
+* '''SinOsc''': sinus oscillator.
+* '''SqrOsc''': square wave oscillator.
+* '''TriOsc''': triangular wave oscillator.
+* '''SawOSc''': Sawtooth wave oscillator.
+
+[[Category:ChucK 101]]

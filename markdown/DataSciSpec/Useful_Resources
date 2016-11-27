@@ -1,0 +1,204 @@
+[[Category:DataSciSpec]]
+
+<!-- <pre style="color:red">
+Suggestion Only: Build an FAQ page separate from this resources page.
+</pre> -->
+
+Please feel free to contribute anything you might find usefull, like free eBooks, tutorials and other stuff like tools.
+
+Return to [[DataSciSpec:Main| Data Science Specialization]]
+
+##Search Engines/Sites (dedicated to problem solutions; question/answer)
+If you are lost with a problem and looking for answers...
+* [CrossValidated](http://stats.stackexchange.com)
+* [Rseek](http://rseek.org)
+* [Stack Overflow](http://stackoverflow.com/tags/r/info)
+
+##Git
+###Tools
+* [Git](http://git-scm.com) - Apple Mac OS X, GNU/Linux, Microsoft Windows, or from your GNU/Linux distribution's application repository
+* [GitX](http://gitx.frim.nl) - Apple Mac OS X
+* [SourceTree](http://www.sourcetreeapp.com/) - Apple Mac OS X, Microsoft Windows
+* [Tortoise Git](http://code.google.com/p/tortoisegit/) - Microsoft Windows
+* [Tower](http://www.git-tower.com) - Apple Mac OS X
+###Find help
+* [Git Cheat Sheet](http://www.terminally-incoherent.com/blog/2012/01/16/git-cheat-sheet/)
+* [Git quick reference for beginners](http://www.dataschool.io/git-quick-reference-for-beginners/)
+* [Visual Git Data Transport Commands, Commit Policies, and Workflow](http://blog.osteele.com/posts/2008/05/commit-policies)
+* [Git quick search commands](http://www.cheetyr.com/git) 
+### Git and GitHub
+* [Introduction to Git and GitHub](https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD): 10 HD videos, 27 minutes total, transcripts included - created specifically to assist students in the Data Science Specialization
+* GitHub For Beginners: Don't Get Scared, Get Started: [Part 1](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/) and [Part 2](http://readwrite.com/2013/10/02/github-for-beginners-part-2/)
+* [Git Immersion (A Guided Tour)](http://gitimmersion.com)
+* [Git Interactive](http://ndpsoftware.com/git-cheatsheet.html)
+* [GitHub Bootcamp](https://help.github.com/categories/54/articles/)
+* [Git Tutorials from Atlassian](https://www.atlassian.com/git/tutorial/)
+* [Git for the Lazy](http://wiki.spheredev.org/Git_for_the_lazy)
+* [Simple guide to forks in GitHub and Git](http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/)
+* [Learn Git Branching](http://pcottle.github.io/learnGitBranching/)
+### Free eBooks
+* [Git Pocket Guide](http://www.gitpocketguide.com)
+* [Learn Version Control with Git: A step-by-step course for the complete beginner](http://www.git-tower.com/learn/)
+* [Pro Git](http://git-scm.com/book/)
+* [Software Carpentry: Version Control with Git](http://software-carpentry.org/v5/novice/git/index.html)
+
+##R
+
+[[File:RoadToDataScientist1-1024x831.png|thumb|400px|right|Data Scientist Skillset layed out as metromap]]
+
+### R Download
+* [R](http://r-project.org) - Apple OS X, GNU/Linux, Microsoft Windows
+* [R](http://cran.rstudio.com) - Apple OS X, GNU/Linux, Microsoft Windows
+* [The Comprehensive R Archive Network](http://cran.r-project.org)
+### (Integrated) Development Environment
+* [RStudio](http://www.rstudio.com) - Apple OS X, GNU/Linux, Microsoft Windows
+* [StatET for R (eclipse plug-in)](http://www.walware.de/goto/statet/) plus a [Markdown viewer/editor for eclipse](http://www.winterwell.com/software/markdown-editor.php) 
+* [RStudio Server Amazon Machine Image (AMI) in the Cloud](http://www.louisaslett.com/RStudio_AMI/)
+### Find help
+* [R Reference Card 2.0](http://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf‎)
+* [Troubleshooting downloading files with R problems](http://rpubs.com/thoughtfulbloke/downloadtips)
+### R Style Guides
+* [Coding Standards for R](http://wiki.fhcrc.org/bioc/Coding_Standards)
+* [Style Guide for R](http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html)
+* [Style Guide for R](http://4dpiecharts.com/r-code-style-guide)
+### Tutorials
+* [Cookbook R](http://www.cookbook-r.com)
+* [Coastal Carolina University / William B. King, PhD](http://ww2.coastal.edu/kingw/statistics/R-tutorials/)
+* [Code School](https://www.codeschool.com/courses/try-r/)
+* [Crowdsourced list of R tutorials and resources](http://tutorialr.com)
+* [DataCamp](https://www.datacamp.com/)
+* [Essential Tools for R - Webinar Series](http://pages.rstudio.net/Webniar-Series-Essential-Tools-for-R.html)
+* [Flowing Data](http://flowingdata.com)
+* [The Friendly Beginners' R Course](http://www.stat.wisc.edu/~st571-1/BeginnersRcourse.pdf)
+* [Google Developers R Programming Video Lectures](http://www.r-bloggers.com/google-developers-r-programming-video-lectures/)
+* [Quick-R](http://www.statmethods.net/index.html)
+* [R: A self-learn tutorial](http://www.nceas.ucsb.edu/files/scicomp/Dloads/RProgramming/BestFirstRTutorial.pdf)
+* [R for absolute beginners](http://duncanjg.files.wordpress.com/2008/11/rcoursedraft1.pdf)
+* [R Guide for Beginners](http://rpubs.com/neolinski/R1)
+* [School of Data](http://schoolofdata.org/)
+* [SWIRL: Statistics with Interactive R Learning](http://swirlstats.com/)
+### Graphs and data visualization
+* [Introduction to R Graphics with ggplot2](http://www.slideshare.net/izahn/rgraphics-12040991)
+* [Data Visualization with R & ggplot2](https://speakerdeck.com/karthik/introduction-to-ggplot2)
+* [Plotly Beta: Collaborative Plotting with R](http://www.r-statistics.com/2013/12/plotly-beta-collaborative-plotting-with-r/)
+* [ggplot2 Help Topics](http://docs.ggplot2.org/current/index.html)
+### Packages used in the Data Science Specialization
+* lubridate
+* XML
+* xlsx
+* xlsxjars
+* rJava
+* lattice
+* ggplot2
+* stringr
+* swirl
+* Hmisc
+* data.table
+* manipulate
+* plyr
+* MASS
+* jpeg
+* httr
+* reshape2
+* knitr (which is built into RStudio)
+### eBooks and Reading
+* [Discovering Statistics Using R](http://www.amazon.co.uk/gp/product/1446200469)
+* [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
+* [Introduction to Statistical Thought](http://www.math.umass.edu/~lavine/Book/book.pdf)
+* [Introduction to Probability and Statistics Using R ](http://ipsur.org)
+* [Introductory R: A Beginner's Guide to Data Visualisation and Analysis using R](http://www.introductoryr.co.uk/)
+* [Multivariate Statistics with R](http://knowledgeforge.net/opentextbook/svn/multivariatestatistics/notes.pdf)
+* [Online R resources for Beginners](http://www.introductoryr.co.uk/R_Resources_for_Beginners.html)
+* [Practical Data Science with R](http://www.manning.com/zumel/)
+* [R Statistics Blog](http://www.r-statistics.com/)
+* [Software for Data Analysis: Programming with R](http://www.springer.com/statistics/computational+statistics/book/978-0-387-75935-7)
+* [S Programming](http://www.springer.com/statistics/computational+statistics/book/978-0-387-98966-2)
+* [R Bloggers](http://www.r-bloggers.com)
+* [R in Action](http://www.manning.com/kabacoff/)
+* [The R Inferno](http://www.burns-stat.com/documents/books/the-r-inferno/)
+* [R Intro](http://cran.r-project.org/doc/manuals/R-intro.pdf)
+* [R for SAS and SSPS users](https://science.nature.nps.gov/im/datamgmt/statistics/R/documents/R_for_SAS_SPSS_users.pdf)
+* [Reproducible Analysis Navigation Template (rant)](https://github.com/vinomaster/dawn/tree/master/guides/rant)
+* [Statistical Analysis with R](http://www.packtpub.com/statistical-analysis-with-r-beginners-guide/book)
+* [Statistics (Probability and Data Analysis)](http://upload.wikimedia.org/wikipedia/commons/8/82/Statistics.pdf)
+* [Using R](http://cran.r-project.org/doc/contrib/usingR.pdf)
+* [Using R for Introductory Statistics](http://cran.r-project.org/doc/contrib/Verzani-SimpleR.pdf)
+
+## Programming in common
+### Regexp
+* [Online Tutorial with possibility to try things out](http://regexone.com/)
+* [Regular Expression Playground by Lea Verou](http://leaverou.github.io/regexplained/)
+* [Lea Verou's talk on Regular Expressions at Fluent](http://youtu.be/EkluES9Rvak) - this talk focuses on JavaScript Regular Expressions, but the syntax is equivalent to R Regular Exprssions.
+* [Regular Expression Tutorial](http://www.regular-expressions.info/tutorial.html) - focuses on a popular Regular Expression tool, RegExp Buddy.  Lots of general information about Regular Expressions 
+### Functional Programming
+* [Definition for functional Programming](http://en.wikipedia.org/wiki/Functional_programming), also see [[DataSciSpec:Functional\_Progr\_in\_R]]
+### LaTeX
+* [PDF document](https://www.tug.org/twg/mactex/tutorials/ltxprimer-1.0.pdf)
+###Markdown (md)
+* [Interactive Markdown Tutorial](http://markdowntutorial.com)
+
+## Course Lecture Notes (single PDF document per course)
+* [Data Scientist's Toolbox](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [Developing Data Products](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [Exploratory Data Analysis](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [Getting and Cleaning Data](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [Practical Machine Learning](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [R Programming](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [Regression Models](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [Reproducible Research](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+* [Statistical Inference](https://share.coursera.org/wiki/index.php/DataSciSpec:Courses)
+
+## Unix shell - Don't be Afraid of the Command-line
+* [Basic Unix Shell Commands for the Data Scientist](http://practical-data-science.blogspot.ca/2012/09/basic-unix-shell-commands-for-data.html)
+* [The Command Line Crash Course](http://cli.learncodethehardway.org/book/)
+* [Software Carpentry: The Unix Shell](http://software-carpentry.org/v5/novice/shell/index.html)
+
+## Data Science / Statistics
+
+### Free eBooks
+* [An Introduction to Statistical Learning: with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/)
+* [Collaborative Statistics](http://cnx.org/content/col10522/1.40/pdf)
+* [The Elements of Statistical Learning](http://statweb.stanford.edu/~tibs/ElemStatLearn/)
+* [http://freecomputerbooks.com/ with many different sections including Maths](http://freecomputerbooks.com/)
+### Tutorials and Blogs
+* [Data Analysis Introduction](http://www.mysliderule.com/data-analysis-intro)
+* [Data Science Starter Kit](http://shop.oreilly.com/category/get/data-science-kit.do)
+* [Data School](http://www.dataschool.io)
+* [Data Science 101: Learning to be a Data Scientist](https://datascience101.wordpress.com)
+* [The Quintessential Data Scientist](http://thequintessentialdatascientist.blogspot.ca)
+* [Simply Statistics](http://simplystatistics.org)
+* [Six Types Of Analyses Every Data Scientist Should Know](http://datascientistinsights.com/2013/01/29/six-types-of-analyses-every-data-scientist-should-know/)
+* [Taming the Fierce Beast](http://schoolofdata.org/handbook/courses/the-math-you-need-to-start/#sthash.UYZFhYmX.dpuf)
+### More MOOC course material on the topic
+* [Statistics in Medicine, Stanford](https://class.stanford.edu/courses/Medicine/MedStats/Summer2014/about)
+* [OpenIntro: Stats primer with labs in R](http://www.openintro.org/)
+* [Caltech on Learning from Data](http://work.caltech.edu/telecourse.html)
+* [Stanford Statistical Learning videos on youtube](https://www.youtube.com/channel/UC4OWDcPB1peiBXDfCSZ3h-w/playlists)
+* [Street-Fighting Mathematics](http://mitpress.mit.edu/sites/default/files/titles/content/9780262514293_Creative_Commons_Edition.pdf)
+* [Khanacademy on Statistics](https://www.khanacademy.org/math/probability) Unbelievable Sal Khan offering free lectures, suitable for "Statistical Inference"
+
+## Open data sources
+### Official statistics
+* [Eurostat Statistics Database:](http://epp.eurostat.ec.europa.eu/portal/page/portal/statistics/search_database) Statistics for all countries of the European Union.
+* [OECD.Stat Extracts:](http://stats.oecd.org/)
+* [United Nations UNdata:](http://data.un.org/)
+### Other public sources
+* [European Union Open Data Portal:](https://open-data.europa.eu/en/data/) Besides Eurostat statistics, includes datasets from public authorities at European level.
+* [U.S. Government’s open data:](http://www.data.gov/)
+
+## Misc Information
+### Related (older) Coursera Wikis Pages
+* [[Comp4Data:Main | Computing for Data Analysis]]
+* [[Dataanalysis:Main | Data Analysis]]
+* [[ML:Main | Machine Learning]]
+### Other peoples contribution elsewhere on the Web
+* [A pinterest board started by course member ](https://www.pinterest.com/lewis2387/coursera-data-science/)
+### Working with coursera
+* [How to download course material for offline usage, Firefox add-on](http://www.addictivetips.com/windows-tips/how-to-batch-download-coursera-lecture-videos/)
+* [Coursera Android App](https://play.google.com/store/apps/details?id=org.coursera.android)
+
+## Networking with fellow students
+* [Unofficial FB group for Data Science Specialisation](https://www.facebook.com/groups/datasciencespl/) 
+* [Global study group for R Programming](https://www.facebook.com/groups/1494965447391145/)
+* [facebook group](https://www.facebook.com/groups/381769045298227/)
+* [LinkedIn group](https://www.linkedin.com/groups?home=&gid=7495000&trk=anet_ug_hm)

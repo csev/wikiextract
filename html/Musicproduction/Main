@@ -1,0 +1,525 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction_to_Music_Production"><span class="tocnumber">1</span> <span class="toctext">Introduction to Music Production</span></a></li>
+<li class="toclevel-1"><a href="#DAW_specifics"><span class="tocnumber">2</span> <span class="toctext">DAW specifics</span></a></li>
+<li class="toclevel-1"><a href="#Topics_by_week"><span class="tocnumber">3</span> <span class="toctext">Topics by week</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1:_Sound_and_Signal_Flow"><span class="tocnumber">3.1</span> <span class="toctext">Week 1: Sound and Signal Flow</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Propagation_of_sound"><span class="tocnumber">3.1.1</span> <span class="toctext">Propagation of sound</span></a></li>
+<li class="toclevel-3"><a href="#Perception_of_sound"><span class="tocnumber">3.1.2</span> <span class="toctext">Perception of sound</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Human_ear"><span class="tocnumber">3.1.2.1</span> <span class="toctext">Human ear</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Physics_of_sound"><span class="tocnumber">3.1.3</span> <span class="toctext">Physics of sound</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Spherical_compression_waves"><span class="tocnumber">3.1.3.1</span> <span class="toctext">Spherical compression waves</span></a></li>
+<li class="toclevel-4"><a href="#Longitudinal_and_transverse_waves"><span class="tocnumber">3.1.3.2</span> <span class="toctext">Longitudinal and transverse waves</span></a></li>
+<li class="toclevel-4"><a href="#Sound_wave_properties_and_characteristics"><span class="tocnumber">3.1.3.3</span> <span class="toctext">Sound wave properties and characteristics</span></a></li>
+<li class="toclevel-4"><a href="#Speed_of_sound"><span class="tocnumber">3.1.3.4</span> <span class="toctext">Speed of sound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Main_article:_Speed_of_sound"><span class="tocnumber">3.1.4</span> <span class="toctext">Main article: Speed of sound</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_2:_DAW_.28Editing.29"><span class="tocnumber">3.2</span> <span class="toctext">Week 2: DAW (Editing)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Reference_Check_List"><span class="tocnumber">3.2.1</span> <span class="toctext">Reference Check List</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Project_start"><span class="tocnumber">3.2.1.1</span> <span class="toctext">Project start</span></a></li>
+<li class="toclevel-4"><a href="#Recording"><span class="tocnumber">3.2.1.2</span> <span class="toctext">Recording</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Buffer_Size"><span class="tocnumber">3.2.2</span> <span class="toctext">Buffer Size</span></a></li>
+<li class="toclevel-3"><a href="#File_Types"><span class="tocnumber">3.2.3</span> <span class="toctext">File Types</span></a></li>
+<li class="toclevel-3"><a href="#Comping"><span class="tocnumber">3.2.4</span> <span class="toctext">Comping</span></a></li>
+<li class="toclevel-3"><a href="#MIDI"><span class="tocnumber">3.2.5</span> <span class="toctext">MIDI</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Quantization"><span class="tocnumber">3.2.5.1</span> <span class="toctext">Quantization</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_3:_Mixer_.28Summing.29"><span class="tocnumber">3.3</span> <span class="toctext">Week 3: Mixer (Summing)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Parts_of_a_mixer"><span class="tocnumber">3.3.1</span> <span class="toctext">Parts of a mixer</span></a></li>
+<li class="toclevel-3"><a href="#Effects_Categories"><span class="tocnumber">3.3.2</span> <span class="toctext">Effects Categories</span></a></li>
+<li class="toclevel-3"><a href="#Inserts_and_Sends"><span class="tocnumber">3.3.3</span> <span class="toctext">Inserts and Sends</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_4:_Dynamics_Processing"><span class="tocnumber">3.4</span> <span class="toctext">Week 4: Dynamics Processing</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Dynamic_Range"><span class="tocnumber">3.4.1</span> <span class="toctext">Dynamic Range</span></a></li>
+<li class="toclevel-3"><a href="#Dynamic_Range_Manipulation"><span class="tocnumber">3.4.2</span> <span class="toctext">Dynamic Range Manipulation</span></a></li>
+<li class="toclevel-3"><a href="#Compression_and_Expansion"><span class="tocnumber">3.4.3</span> <span class="toctext">Compression and Expansion</span></a></li>
+<li class="toclevel-3"><a href="#Dynamic_Processor_Parameters"><span class="tocnumber">3.4.4</span> <span class="toctext">Dynamic Processor Parameters</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_5:_Delay_and_Filters"><span class="tocnumber">3.5</span> <span class="toctext">Week 5: Delay and Filters</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Delays"><span class="tocnumber">3.5.1</span> <span class="toctext">Delays</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Basic_components_of_delay"><span class="tocnumber">3.5.1.1</span> <span class="toctext">Basic components of delay</span></a></li>
+<li class="toclevel-4"><a href="#Some_types_of_delay"><span class="tocnumber">3.5.1.2</span> <span class="toctext">Some types of delay</span></a></li>
+<li class="toclevel-4"><a href="#Slap_Back"><span class="tocnumber">3.5.1.3</span> <span class="toctext">Slap Back</span></a></li>
+<li class="toclevel-4"><a href="#Long_Delays"><span class="tocnumber">3.5.1.4</span> <span class="toctext">Long Delays</span></a></li>
+<li class="toclevel-4"><a href="#Reverb"><span class="tocnumber">3.5.1.5</span> <span class="toctext">Reverb</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Filters"><span class="tocnumber">3.5.2</span> <span class="toctext">Filters</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Overview"><span class="tocnumber">3.5.2.1</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-4"><a href="#EQ_tips"><span class="tocnumber">3.5.2.2</span> <span class="toctext">EQ tips</span></a></li>
+<li class="toclevel-4"><a href="#Stereo_Width_and_the_perception_of_Space_in_a_mix"><span class="tocnumber">3.5.2.3</span> <span class="toctext">Stereo Width and the perception of Space in a mix</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_6:_Synthesizer"><span class="tocnumber">3.6</span> <span class="toctext">Week 6: Synthesizer</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Signal_Flow"><span class="tocnumber">3.6.1</span> <span class="toctext">Signal Flow</span></a></li>
+<li class="toclevel-3"><a href="#Wave_Forms"><span class="tocnumber">3.6.2</span> <span class="toctext">Wave Forms</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Sawtooth_wave"><span class="tocnumber">3.6.2.1</span> <span class="toctext">Sawtooth wave</span></a></li>
+<li class="toclevel-4"><a href="#Sine_Wave"><span class="tocnumber">3.6.2.2</span> <span class="toctext">Sine Wave</span></a></li>
+<li class="toclevel-4"><a href="#Square_Wave"><span class="tocnumber">3.6.2.3</span> <span class="toctext">Square Wave</span></a></li>
+<li class="toclevel-4"><a href="#Triangle_Wave"><span class="tocnumber">3.6.2.4</span> <span class="toctext">Triangle Wave</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">4</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction_to_Music_Production">Introduction to Music Production</span></h1>
+<h1> <span class="mw-headline" id="DAW_specifics"><a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw"> DAW specifics</a></span></h1>
+<p>All DAW information is collected and organized in the <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW wiki</a>  </p>
+<h1> <span class="mw-headline" id="Topics_by_week">Topics by week</span></h1>
+<h2> <span class="mw-headline" id="Week_1:_Sound_and_Signal_Flow">Week 1: Sound and Signal Flow</span></h2>
+<h3> <span class="mw-headline" id="Propagation_of_sound">Propagation of sound</span></h3>
+<p>Sound is a sequence of waves of pressure that propagates through compressible media such as air or water. (Sound can propagate through solids as well, but there are additional modes of propagation). Sound that is perceptible by humans has frequencies from about 20 Hz to 20,000 Hz. In air at standard temperature and pressure, the corresponding wavelengths of sound waves range from 17 m to 17 mm. During propagation, waves can be reflected, refracted, or attenuated by the medium.[2]</p>
+<p>The behavior of sound propagation is generally affected by three things:</p>
+<ol>
+<li>A relationship between density and pressure. This relationship, affected by temperature, determines the speed of sound within the medium.</li>
+<li>The propagation is also affected by the motion of the medium itself. For example, sound moving through wind. Independent of the motion of sound through the medium, if the medium is moving, the sound is further transported.</li>
+<li>The viscosity of the medium also affects the motion of sound waves. It determines the rate at which sound is attenuated. For many media, such as air or water, attenuation due to viscosity is negligible.</li>
+</ol>
+<p>When sound is moving through a medium that does not have constant physical properties, it may be refracted (either dispersed or focused).[2]</p>
+<h3> <span class="mw-headline" id="Perception_of_sound">Perception of sound</span></h3>
+<h4> <span class="mw-headline" id="Human_ear">Human ear</span></h4>
+<p>The perception of sound in any organism is limited to a certain range of frequencies. For humans, hearing is normally limited to frequencies between about 20 Hz and 20,000 Hz (20 kHz),[3] although these limits are not definite. The upper limit generally decreases with age. Other species have a different range of hearing. For example, dogs can perceive vibrations higher than 20 kHz, but are deaf to anything below 40 Hz. As a signal perceived by one of the major senses, sound is used by many species for detecting danger, navigation, predation, and communication. Earth's atmosphere, water, and virtually any physical phenomenon, such as fire, rain, wind, surf, or earthquake, produces (and is characterized by) its unique sounds. Many species, such as frogs, birds, marine and terrestrial mammals, have also developed special organs to produce sound. In some species, these produce song and speech. Furthermore, humans have developed culture and technology (such as music, telephone and radio) that allows them to generate, record, transmit, and broadcast sound. The scientific study of human sound perception is known as psychoacoustics.</p>
+<h3> <span class="mw-headline" id="Physics_of_sound">Physics of sound</span></h3>
+<h4> <span class="mw-headline" id="Spherical_compression_waves">Spherical compression waves</span></h4>
+<p>The mechanical vibrations that can be interpreted as sound are able to travel through all forms of matter: gases, liquids, solids, and plasmas. The matter that supports the sound is called the medium. Sound cannot travel through a vacuum.</p>
+<h4> <span class="mw-headline" id="Longitudinal_and_transverse_waves">Longitudinal and transverse waves</span></h4>
+<p>Sound is transmitted through gases, plasma, and liquids as longitudinal waves, also called compression waves. Through solids, however, it can be transmitted as both longitudinal waves and transverse waves. Longitudinal sound waves are waves of alternating pressure deviations from the equilibrium pressure, causing local regions of compression and rarefaction, while transverse waves (in solids) are waves of alternating shear stress at right angle to the direction of propagation.</p>
+<p>Matter in the medium is periodically displaced by a sound wave, and thus oscillates. The energy carried by the sound wave converts back and forth between the potential energy of the extra compression (in case of longitudinal waves) or lateral displacement strain (in case of transverse waves) of the matter and the kinetic energy of the oscillations of the medium.</p>
+<h4> <span class="mw-headline" id="Sound_wave_properties_and_characteristics">Sound wave properties and characteristics</span></h4>
+<p>Sinusoidal waves of various frequencies; the bottom waves have higher frequencies than those above. The horizontal axis represents time.</p>
+<p>Sound waves are often simplified to a description in terms of sinusoidal plane waves, which are characterized by these generic properties:</p>
+<ul>
+<li>Frequency, or its inverse, the period</li>
+<li>Wavelength</li>
+<li>Wavenumber</li>
+<li>Amplitude</li>
+<li>Sound pressure</li>
+<li>Sound intensity</li>
+<li>Speed of sound</li>
+<li>Direction</li>
+</ul>
+<p>Sometimes speed and direction are combined as a velocity vector; wavenumber and direction are combined as a wave vector.</p>
+<p>Transverse waves, also known as shear waves, have the additional property, polarization, and are not a characteristic of sound waves.</p>
+<h4> <span class="mw-headline" id="Speed_of_sound">Speed of sound</span></h4>
+<p>U.S. Navy F/A-18 approaching the sound barrier. The white halo is formed by condensed water droplets thought to result from a drop in air pressure around the aircraft (see Prandtl-Glauert Singularity).[4][5]</p>
+<h3> <span class="mw-headline" id="Main_article:_Speed_of_sound">Main article: Speed of sound</span></h3>
+<p>The speed of sound depends on the medium the waves pass through, and is a fundamental property of the material. In general, the speed of sound is proportional to the square root of the ratio of the elastic modulus (stiffness) of the medium to its density. Those physical properties and the speed of sound change with ambient conditions. For example, the speed of sound in gases depends on temperature. In 20 °C (68 °F) air at sea level, the speed of sound is approximately 343 m/s (1,230 km/h; 767 mph) using the formula "v = (331 + 0.6 T) m/s". In fresh water, also at 20 °C, the speed of sound is approximately 1,482 m/s (5,335 km/h; 3,315 mph). In steel, the speed of sound is about 5,960 m/s (21,460 km/h; 13,330 mph).[6] The speed of sound is also slightly sensitive (a second-order anharmonic effect) to the sound amplitude, which means that there are nonlinear propagation effects, such as the production of harmonics and mixed tones not present in the original sound (see parametric array).</p>
+<h2> <span class="mw-headline" id="Week_2:_DAW_.28Editing.29">Week 2: DAW (Editing)</span></h2>
+<p><a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw"> DAW specifics</a></p>
+<h3> <span class="mw-headline" id="Reference_Check_List">Reference Check List</span></h3>
+<h4> <span class="mw-headline" id="Project_start">Project start</span></h4>
+<p>As you start any new project in your DAW make sure you take the following in consideration.</p>
+<ul>
+<li>Proper project name and location
+
+<ul>
+<li>Preferentially create a folder on your computer that will have all different projects within it so it's easy to track where everything is.</li>
+</ul></li>
+<li>Set digital audio preferences
+
+<ul>
+<li>Sample Rate (recommended: 48kHz)</li>
+<li>Bit depth (recommended: 24bit)</li>
+<li>File type (recommended: bwf, wav or aiff)</li>
+</ul></li>
+<li>Set hardware preferences
+
+<ul>
+<li>Make sure your in/out devices are set to whichever audio interface you want to be using.</li>
+</ul></li>
+<li>Set buffer size
+
+<ul>
+<li>Record at 128 samples per second</li>
+<li>Post-production at higher rates (1024 samples per second for example)</li>
+</ul></li>
+</ul>
+<h4> <span class="mw-headline" id="Recording">Recording</span></h4>
+<ul>
+<li><p>Create a track</p>
+<ul>
+<li>Normally you want to set it as mono, but if recording with two mics or a stereo synth set it to stereo.</li>
+</ul></li>
+<li><p>Name the track</p>
+<ul>
+<li>This will help you recognize the files in your hard disk that are produced during recording</li>
+</ul></li>
+<li><p>Record enable the track (arm the track)</p></li>
+<li><p>Set the levels using the audio interface pre-amp</p>
+<ul>
+<li>If using an instrument plugged to your interface, set its volume to maximum to make sure you have the best possible signal arriving at your interface.</li>
+</ul></li>
+<li><p>Enable the click (metronome) and countoff (how many clicks before starting to record)</p></li>
+<li><p>Record!</p></li>
+</ul>
+<h3> <span class="mw-headline" id="Buffer_Size">Buffer Size</span></h3>
+<p>Is how much cache memory is dedicated to handle the tracks being processed in the DAW.</p>
+<p>In practice this means:
+<ul><li> Bigger buffer --&gt; more plugins can be used at the same time BUT more latency when converting from digital to analog
+</li><li> Smaller buffer --&gt; less plugins can be used BUT less latency</p>
+</li></ul>
+
+<p>Therefore a low buffer size is good for recording and a high buffer size for post-production.</p>
+<p>Rule of thumb:
+<ul><li> Recording: buffer size of 128 samples
+<ul><li> If sample rate is 48kHz (48000samples per second) and buffer size is 128 samples, then the delay will be 128/48000 = 2.6ms (hardly noticeable by our ear)
+</li></ul>
+</li><li> Post-production: buffer size of 1024
+<ul><li> If sample rate is 48kHz and buffer size is 1024 then delay will be 1024/48000=21.3ms which is very noticeable.</p>
+</li></ul>
+</li></ul>
+
+<p>Note: when many tracks with many plugins are in a project and, later, you want to record another instrument but can't lower the buffer size (or else the plugins will glitch for example), one solution is to convert the project to audio and then record with lower buffer size. Most DAW should have an option for doing this automatically (usually it's called freezing a track).</p>
+<h3> <span class="mw-headline" id="File_Types">File Types</span></h3>
+<ul>
+<li><p>For recording use lossless filetypes</p>
+<ul>
+<li>aiff</li>
+<li>wav</li>
+<li>bwf (broadcast wav files, which store metadata useful for recovering if there is a crash).</li>
+</ul></li>
+<li><p>Interleaved or non-interleaved: this means either that the left and right channels are in the same file or different files.</p>
+<ul>
+<li>Recomended: interleaved, since it's easier to work with.</li>
+</ul></li>
+</ul>
+<h3> <span class="mw-headline" id="Comping">Comping</span></h3>
+<p>Comping consists of taking parts of different tracks and putting them together in a single compiled track.</p>
+<p>This is often used for putting together the best parts out of several recorded takes, thus getting the best-possible performance.</p>
+<p>During comping you'll be putting clips from different tracks together and this often results in a click between clips. To resolve this use a cross fade between clips, usually a short cross-fade is best, so it's imperceptible to our ears.</p>
+<p>Finally, when you finish compiling the new track it's good to merge the clips together to a single clip.</p>
+<h3> <span class="mw-headline" id="MIDI">MIDI</span></h3>
+<p>MIDI (Musical Instrument Digital Interface) contains information about sound, but is not sound in itself.</p>
+<p>Each MIDI message contains:
+<ul><li> Channel number
+<ul><li> 16 channels available
+</li></ul>
+</li><li> Type of message sent
+<ul><li> note on/note off
+</li><li> control change (sustain pedals or knobs control this)
+</li><li> pitch bend
+</li><li> channel pressure or aftertouch (how hard you press the key)
+</li></ul>
+</li><li> Data words (gives the parameters for the messages)
+<ul><li> Note
+</li><li> Velocity (how hard you hit the key)</p>
+</li></ul>
+</li></ul>
+
+<p>MIDI messages can be interpreted by samplers and synthesizers.
+<ul><li> Synthesizers create sound out of pre-determined wave-forms (e.g. a sawtooth wave form)
+</li><li> Samplers playback pre-recorded sound (e.g. the recorded sound of a kick drum)</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="Quantization">Quantization</span></h4>
+<p>Quantization is the process of adjusting the midi events to match the metric of the performance.</p>
+<p>For quantization:
+<ul><li> Adjust the grid (e.g. 4th note, 8th note, etc...)
+</li><li> Adjust the quantization strength (advice: adjust it to 20%, listen to performance and if still not happy repeat it, until you're happy with the result).</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Week_3:_Mixer_.28Summing.29">Week 3: Mixer (Summing)</span></h2>
+<h3> <span class="mw-headline" id="Parts_of_a_mixer">Parts of a mixer</span></h3>
+<p>A typical mixer contains several channel strips, each of them similar to each other. Each channel strip contains, from top to bottom:
+<ul><li> Input section (to plug mics or instruments) including trimming knob
+</li><li> Insert (to send signal to an external device, modify it in some way and bring it back into the mixer)
+</li><li> Aux sends (auxiliary sends allow you to send signal to another output)
+</li><li> EQ
+</li><li> Pan knob
+</li><li> Mute and Solo buttons
+</li><li> Volume fader</p>
+</li></ul>
+
+<p>The sound from all the channels in the mixer gets combined and can be monitored in another section of the mixer called the master bus. The master bus has its own volume fader.</p>
+<h3> <span class="mw-headline" id="Effects_Categories">Effects Categories</span></h3>
+<ul>
+<li>Dynamic effects (control amplitude)
+
+<ul>
+<li>Compressors</li>
+<li>Expanders</li>
+<li>Limiters</li>
+<li>Noise Gates</li>
+</ul></li>
+<li>Time-based effects (control propagation)
+
+<ul>
+<li>Delay</li>
+<li>Reverb</li>
+<li>Chorus</li>
+<li>Phasers</li>
+<li>Flangers</li>
+</ul></li>
+<li>Filter effects (control timbre)
+
+<ul>
+<li>High Pass Filter (HPF)</li>
+<li>Low Pass Filter (LPF)</li>
+<li>Band Pass Filter (BPF)</li>
+<li>EQ (parametric or graphic)</li>
+</ul></li>
+</ul>
+<h3> <span class="mw-headline" id="Inserts_and_Sends">Inserts and Sends</span></h3>
+<p>The signal going along the mixer can be routed to different buses/effects boxes.</p>
+<p>An insert sends the signal to an external device (or plugin in the DAW), modifies it in some way and brings it back into the mixer.</p>
+<p>A send sends the signal to another bus, where it can be further modified and mixed with the other tracks.</p>
+<p>In practice, for mixing purposes:
+<ul><li> Inserts are useful to apply an effect to a particular track without affecting other tracks. For example, you may want to EQ each track separately.
+</li><li> Sends are useful to apply an effect to several tracks at once. For example you may want to apply the same reverb to multiple tracks. Instead of applying an insert to each track individually, you can send their signal to an auxiliary bus and apply the effect there.</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Week_4:_Dynamics_Processing">Week 4: Dynamics Processing</span></h2>
+<h3> <span class="mw-headline" id="Dynamic_Range">Dynamic Range</span></h3>
+<ul>
+<li><p>Ratio between the loudest and quietest volume a sound signal can have.</p></li>
+<li><p>Volume (and therefore the dynamic range) of sound is measured in decibels (dB).</p></li>
+<li><p>Decibels are a measure of sound amplitude relative to a reference level. </p>
+<ul>
+<li>It should always be specified what the decibels are relative to. For example when referring to sound propagating in the air it is common to use db SPL (sound pressure level).</li>
+</ul></li>
+<li><p>The human ear's dynamic range is between 0-120 db SPL. In this context, 0db SPL is the quietest sound humans can hear and 120 db SPL the threshold of pain.</p></li>
+<li>The dynamic range of a microphone, for example, will be defined by the interval between noise and distortion.</li>
+</ul>
+<p>For mixing purposes it is important to recognize that:
+<ul><li> Our brains adjust the perceived sensitivity to sound sources depending on the sounds in the surrounding environment.
+<ul><li> For example, you may not hear the ticking of a clock in a busy room, but clearly hear it when the room is quieter.
+</li></ul>
+</li><li> Our sense of timbre changes with the amplitude of sound. This is because our brains' EQ changes with amplitude.
+<ul><li> For example, when things get quiet we hear the mid range more; when things get louder our response flattens out more. Because of this we should be careful when setting the gain during mixing.</p>
+</li></ul>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Dynamic_Range_Manipulation">Dynamic Range Manipulation</span></h3>
+<p>Generally when manipulating the dynamics of a song stay true to the music and make sure the changes are smooth and non-perceptible, so they feel natural to the listener.</p>
+<ul>
+<li>Some dynamic range manipulation happens during the actual performance: musicians may play louder or quieter in different parts of the piece.</li>
+<li>Macro Scale: use volume fader to automate differences between different parts of the whole piece, e.g., make verse quieter and chorus louder.</li>
+<li>Smaller Scale: adjusting the dynamics of a single track. </li>
+<li>Micro scale: control dynamics of individual events.
+
+<ul>
+<li>Transient: when amplitude changes very fast. For example drums, claps, etc... There are many automation tools in DAW to manipulate transients.</li>
+</ul></li>
+</ul>
+<h3> <span class="mw-headline" id="Compression_and_Expansion">Compression and Expansion</span></h3>
+<ul>
+<li>Compression - reducing the dynamic range
+
+<ul>
+<li>Either by increasing the quietest or decreasing the loudest</li>
+</ul></li>
+<li>Expansion - increasing the dynamic range
+
+<ul>
+<li>Either by decreasing the quietest or increasing the loudest</li>
+</ul></li>
+</ul>
+<p>A common case is compressing the vocals, i.e., adjusting the levels of the vocals to make sure they are not lost behind other instruments. </p>
+<p>There's a technique called riding the vocal: when voice gets quieter bring the volume up, when voice gets louder get the volume down. It is in fact a type of manual compression.</p>
+<h3> <span class="mw-headline" id="Dynamic_Processor_Parameters">Dynamic Processor Parameters</span></h3>
+<p>A dynamic processor device/plugin will analyze the sound signal and, following certain rules, changes the input level.</p>
+<p>Some dynamic processors are:
+<ul><li> Compressor - reduces input level going above a certain threshold.
+<ul><li> Limiter - is a type of compressor where the ratio (amount of gain reduction) is high, usually above 10:1
+</li></ul>
+</li><li> Expander - reduces input level going bellow a certain threshold
+<ul><li> Noise Gate - is a type of expander</p>
+</li></ul>
+</li></ul>
+
+<p>Parameters of dynamic processors:
+<ul><li> Threshold - the value of the input signal at which the dynamic processor will be triggered.
+</li><li> Attack - how fast the change in volume is when the device is triggered.
+</li><li> Decay - how fast the volume goes back to input level after the device is released.
+</li><li> Ratio - how much the volume change should be in relation to the input level.
+<ul><li> For example a 2:1 ratio in a compressor means that for every 2db of input only 1db will go through the output.
+</li><li> Ratios greater than 10:1 in a compressor are said to be limiting
+</li></ul>
+</li><li> Knees - how abrupt is the compression ratio applied. A soft knee will progressively increase the ratio of compression as the gain input increases, so the compression is smoother.</p>
+</li></ul>
+
+<p>See <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Dynamic_range_compression">this article</a> for a more detailed description.</p>
+<h2> <span class="mw-headline" id="Week_5:_Delay_and_Filters">Week 5: Delay and Filters</span></h2>
+<h3> <span class="mw-headline" id="Delays">Delays</span></h3>
+<h4> <span class="mw-headline" id="Basic_components_of_delay">Basic components of delay</span></h4>
+<ul>
+<li>Delay time - amount of time delay between the input and output</li>
+<li>Dry/Wet - dry is signal without delay; wet is signal with the delay.</li>
+<li>Feedback - how much of the wet signal goes back into the effect.</li>
+</ul>
+<h4> <span class="mw-headline" id="Some_types_of_delay">Some types of delay</span></h4>
+<ul>
+<li>Comb filter: adding a short delay of a signal to itself. <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Comb_filter">More on comb filters</a></li>
+<li>Flanger: adding a changing short delay of a signal to itself. Really, it's a comb filter moving under the control of a LFO. <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Flanger">More on flanging</a></li>
+<li>Phaser: splits the signal in two and one of them goes through an all-pass filter which alters the phase of the signal. When the two signals become mixed a series of notches are formed. This effect is also modulated by a LFO giving an effect similar to flanging. <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Phaser_%28effect%29">More on phasers</a></li>
+<li>Chorus: multiple signals are delayed and their pitch modulated by an LFO. The signals are then mixed creating a chorus effect. <a rel="nofollow" class="external text" href="https://en.wikipedia.org/wiki/Chorus_effect#Electronic_effect">More on chorus</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Slap_Back">Slap Back</span></h4>
+<ul>
+<li>Medium delay with no feedback and single repetition.</li>
+<li>Gives an effect similar to reverb, but less pronounced. It's similar to what happens in a room when the sound hits a wall and bounces back.</li>
+<li>Works well on guitars and vocals for example.
+Example of a slap back delay:</li>
+<li>Delay time: 80ms</li>
+<li>Wet signal: 20%
+Tip: set delay time differently in left and right channels (e.g. 80ms in one and 90ms in the other) to get a wider sound.</li>
+</ul>
+<h4> <span class="mw-headline" id="Long_Delays">Long Delays</span></h4>
+<p>Long delays are quite evident in a mix. They can result well but careful because they can get in the way of the harmony and clash with other instruments in the mix.</p>
+<p>Some characteristics/tips of long delays:</p>
+<ul>
+<li>Delay time is often set not in ms but according to the tempo of the song. This helps synchronize the delay with the progression of the song.</li>
+<li>Panning the wet signal often helps keeping the dry signal in focus and make the effect less overwhelming.</li>
+<li>Setting a different delay time on left and right channels can result in a "ping-pong" effect.</li>
+<li>Filtering the wet signal helps the listener distinguish between the dry and wet signals (often HPF and LPF options are available in delay plugins).</li>
+</ul>
+<h4> <span class="mw-headline" id="Reverb">Reverb</span></h4>
+<p>Generally there are two ways of mixing with reverb:
+<ul><li> Giving a sense that all instruments were recorded in the same space - use an aux send to route signal through a track where reverb is applied. In this case the aux track will only carry wet signal, since the dry signal is comming from each instrument's track.
+</li><li> Using reverb as a more evident effect - use inserts on each track, and adjust the parameters individually for each one.</p>
+</li></ul>
+
+<p>There are two types of reverb plugins:
+<ul><li> Algorithmic reverb - uses an algorithm to change the signal. Not as realistic as a convoluted reverb, but much more customizable.
+</li><li> Convoluted reverb - uses recordings of actual spaces which are then "mixed" (more precisely convoluted) with the signal. It's more realistic, but one is limited to the spaces sampled.</p>
+</li></ul>
+
+<p>Tip: usually it's a good idea to be subtle on using reverb. Often it's good to set the reverb level up to a noticeable point and then bring it back down so it's hardly noticeable.</p>
+<h3> <span class="mw-headline" id="Filters">Filters</span></h3>
+<h4> <span class="mw-headline" id="Overview">Overview</span></h4>
+<p>Filters let certain frequencies of the signal pass through while attenuating other frequencies. There are several types, including:
+<ul><li> High pass filter - frequencies above threshold pass through; frequencies bellow the threshold are attenuated.
+</li><li> Low pass filter - frequencies bellow threshold pass through; frequencies above the threshold are attenuated.
+</li><li> Band pass filter - frequencies within a range pass through; frequencies outside that range are attenuated.</p>
+</li></ul>
+
+<p>All these three are quite extreme filters, in the sense that the attenuation of the frequencies is quite high. There are less extreme types of filter, namely:
+<ul><li> Shelving filter - similar to a high-pass or low-pass but the attenuation of frequencies is not complete, instead it's set at a certain level.
+</li><li> Parametric EQ - allows to attenuate or boost frequencies, with high flexibility across the frequency spectrum.</p>
+</li></ul>
+
+<h4> <span class="mw-headline" id="EQ_tips">EQ tips</span></h4>
+<p>High end and low end:
+<ul><li> High pass filter - most frequencies bellow the fundamental (lowest) frequency of the instrument will be noise so removing those is always good practice.
+</li><li> Low shelving filter - useful to emphasise the low end (after applying the HPF). Useful for bass tracks or give more body to a piano track for example. 
+</li><li> High shelving filter - we are naturally attracted to brighter sounds, so slightly boosting the high end of the instrument you want to focus on (e.g. vocals) while slightly cutting the high end of all other instruments is quite effective.</p>
+</li></ul>
+
+<p>Mid range: mixing in the mid range is the most challenging. Usually boosting in the mid range can be quite obvious and sound unnatural. Cutting can be quite useful though, for example to remove unwanted resonances.</p>
+<p>Suggestion of a preset for the equalizer in a DAW (all parameters can be changed depending on instrument to be mixed!):
+<ul><li> High pass filter - threshold at 75Hz; high Q (e.g. 24)
+</li><li> Low Shelving filter - threshold at 80Hz; Q adjustable.
+</li><li> Low mid-range EQ - sweepable between 100-2000Hz; Q adjustable
+</li><li> High mid-range EQ - sweep between 400-8000Hz; Q adjustable
+</li><li> High Shelving filter - threshold at 12kHz; Q adjustable</p>
+</li></ul>
+
+<p>When mixing a piece with multiple instruments it's sometimes necessary to do the EQ not on tracks individually but together. For example, a piano and guitar occupy the same frequency space, so mixing them together is a good idea.</p>
+<h4> <span class="mw-headline" id="Stereo_Width_and_the_perception_of_Space_in_a_mix">Stereo Width and the perception of Space in a mix</span></h4>
+<p>Usually, when mixing, the idea is to create a sense that the instruments are being played in a space. So sound should be perceived as coming from the right, left, from far away or close by. Creating this sense of space is challenging, but here are some tips. Don't forget: these are general rule-of-thumb tips, NOT RULES.</p>
+<p><b>Spread your instruments around the stereo space</b></p>
+<p>Generally what's in the middle of a mix is the point of focus of the listener.</p>
+<p>In a typical mix, the middle would contain the following, in order from the most perceptible (or loud) to least perceptible:
+<ul><li> Hi-hat
+</li><li> Vocals
+</li><li> Snare Drum
+</li><li> Bass
+</li><li> Kick Drum</p>
+</li></ul>
+
+<p>Instruments occupying the same frequency space as the vocals should be panned or have some effect that spreads them around the stereo field (e.g. chorus, flanger, etc...). Typical instruments where this happens are guitars and pianos.</p>
+<ul>
+<li>Balancing the left and right signals is always important</li>
+<li>It may be a good idea to pan different instruments to different sides of the stereo field so they don't clash into each other.
+
+<ul>
+<li>For example it's a good idea to pan the piano track to one channel and the guitar to the other.</li>
+</ul></li>
+</ul>
+<p><b>Create a Sense of Space</b></p>
+<p>To create a sense of space one has to think about where each instrument should be, as if it where really on a space: what's left, what's right, what's near or far from the listener?</p>
+<p>To create a sense of direction, using delays can be quite effective. For example, if a track is panned to the right channel, applying a slight delay going into the left channel can be quite effective at creating the sense of spatial location of that instrument.</p>
+<p>To create a sense of depth (how far each instrument is):
+<ul><li> Use volume faders - the further an instrument is, the quieter it should be relative to other instruments.
+</li><li> Use reverb - the further an instrument is, the more reverb it will have. Adjust the dry/wet proportion or the send knobs for those instruments that are further away in the mix.
+</li><li> Use a high shelving filter - instruments further away tend to have less high end than instruments near by, which sound brighter. Playing around with a high shelving filter of different tracks can help.
+</li><li> Play with stereo width - playing with how much an instrument is spread over the stereo field can give a sense of where it is relative to the listener.</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Week_6:_Synthesizer">Week 6: Synthesizer</span></h2>
+<h3> <span class="mw-headline" id="Signal_Flow">Signal Flow</span></h3>
+<p>Subtractive synthesis:
+Oscillator --&gt; Filter --&gt; Amplifier</p>
+<p>Each of these are typically modulated by:
+<ul><li> Keyboard input (which note is being played)
+</li><li> Envelopes (dynamics and timbre variations as the note is played)
+</li><li> Low-frequency oscillators (LFO) (tremolo, vibrato)</p>
+</li></ul>
+
+<p>See <a rel="nofollow" class="external text" href="https://d396qusza40orc.cloudfront.net/musicproduction/L06_a_overview-synthblock-01.png">Loudon's schematic</a></p>
+<p>Other modulations are possible for effects. E.g. Noise/random, siren or sweeping effects using the LFO, inter-modulation between oscillators.</p>
+<h3> <span class="mw-headline" id="Wave_Forms">Wave Forms</span></h3>
+<h4> <span class="mw-headline" id="Sawtooth_wave">Sawtooth wave</span></h4>
+<p>A <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Sawtooth_wave">sawtooth wave's</a> sound is harsh and clear and its spectrum contains both even and odd harmonics of the fundamental frequency.</p>
+<h4> <span class="mw-headline" id="Sine_Wave">Sine Wave</span></h4>
+<p><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Sine_wave">Sine waves</a> are representations of a single frequency with no harmonics</p>
+<h4> <span class="mw-headline" id="Square_Wave">Square Wave</span></h4>
+<p>A <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Square_wave">Square Wave</a> will have only odd-integer harmonic frequencies. In musical terms, they are often described as sounding hollow, and are therefore used as the basis for wind instrument sounds created using subtractive synthesis.Additionally, the distortion effect used on electric guitars clips the outermost regions of the waveform, causing it to increasingly resemble a square wave as more distortion is applied.</p>
+<h4> <span class="mw-headline" id="Triangle_Wave">Triangle Wave</span></h4>
+<p>Like Square wave, the <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Triangle_wave">triangle wave</a> contains only odd harmonics. However, the higher harmonics roll off much faster than in a square wave (proportional to the inverse square of the harmonic number as opposed to just the inverse).</p>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:Main&amp;oldid=14458">https://share.coursera.org/wiki/index.php?title=Musicproduction:Main&amp;oldid=14458</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Music_Production" title="Category:Music Production">Music Production</a></li><li><a href="/wiki/index.php/Category:Music" title="Category:Music">Music</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

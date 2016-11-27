@@ -1,0 +1,17 @@
+Multiplexing is like multitasking. Both are associated with doing more than one thing at the same time.
+
+The [http://en.wikipedia.org/wiki/The_Ed_Sullivan_Show Ed Sullivan Show] was a popular entertainment TV show in America popular in the 1940s into the 1970s. The show featured all kinds of performing acts from singers to magicians to comics, each getting about five to ten minutes to perform. The show was well known for its variety of juggling acts.
+
+Some acts were traditional [https://en.wikipedia.org/wiki/Juggling jugglers] using balls or clubs. But the show would also feature [http://en.wikipedia.org/wiki/Plate_spinning plate spinners].
+
+Consider what each does. A ball/club juggler keeps three or more items aloft in the air while only able to hold one a hand at any given time. Juggling more items increases the difficulty quickly. [https://www.youtube.com/watch?v=r3CsDGOBAdk Non Ed Sullivan Juggler Video - 7 balls!]
+
+A plate spinner places a plate on a vertical stick and give it a spin. The angular momentum of the plate keeps it on the stick. Eventually the plate’s momentum will wain, and the plate will begin to wobble and eventually fall. But before it falls, the spinner can get to the stick, give it a few whirls adding momentum back into the plate, and it will continue spinning. The challenge for the plate spinner is to see who many sets of plates he can keep spinning without them crashing to the floor. [https://www.youtube.com/watch?v=Zhoos1oY404 Ed Sullivan Plate Spinning Video].
+
+The ball/club juggler has to manage all of the objects in parallel. This is similar to [http://en.wikipedia.org/wiki/Frequency-division_multiplexing Frequency Division Multiplexing] where all of the signals are being propagated in the analog medium in parallel.
+
+The plate spinner has to manage all of the objects sequentially. The spinner can only manage one plate at a time. The spinner must repeatedly revisit each plate and give it some additional spin. This is similar to [http://en.wikipedia.org/wiki/Time-division_multiplexing Time Division Multiplexing] where the signals are propagated in short bursts in the analog medium sequentially.
+
+Just as jugglers and plate spinners can both be equally entertaining FDM and TDM can both be equally effective in propagating multiple signals across the same medium.
+
+And just for fun, an Ed Sullivan video of [https://www.youtube.com/watch?v=HqhM6uCaINE sisters spinning tables on their feet].

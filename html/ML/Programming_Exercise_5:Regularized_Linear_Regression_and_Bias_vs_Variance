@@ -1,0 +1,41 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 5:Regularized Linear Regression and Bias vs Variance</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Proposed erratum: the Optional exercise (Section 3.5) instructs you to select $$i$$ examples from the cross-validation set. Shouldn't you always validate on the full cross-validation set as in section 2.1?</p>
+<p>Other miscellany:</p>
+<ul>
+<li>shouldn't it be "vs." instead of "v.s."?</li>
+<li>p. 3 "overal"</li>
+<li>p. 6 "wil"</li>
+<li>p. 7 "For use polynomial regression [sic]"</li>
+<li>p. 7 "zero-eth" - shouldn't this be "zero-th"?</li>
+<li>p. 9 "where the low training error is low [sic]"</li>
+</ul>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex5/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_5:Regularized_Linear_Regression_and_Bias_vs_Variance&amp;oldid=33726">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_5:Regularized_Linear_Regression_and_Bias_vs_Variance&amp;oldid=33726</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

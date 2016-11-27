@@ -1,0 +1,340 @@
+# Bioelectricity Week 3  
+[[Bioelectricity:Week 3 transcripts | Edited Transcripts]]  
+[[Bioelectricity:Main | Main Page]]    
+  
+1. Introduction to week 3
+2. Why are passive and active so different?
+3. The simulation set-up
+4. The Passive simulation
+5. The Active Simulation
+6. Where does the active response come from?
+7. Problem session , passive v active
+8. Channels: Experimental isolation of a channel
+9. Channels: Observed currents, voltage step
+10. Channels: Probability of being open
+11. Problem session, Channel probabilities
+12. Week 3 conclusions
+
+## Introduction to week 3 (3-1)  
+A) Passive and Active simulations
+* passive = the channels are not doing anything special, just like holes in plastic, or pinholes in any other kind of material  
+* active = things are definitely different  
+ 
+B) Channels  
+not expected to be there like they are  
+Engine has to be built within the membrane, 100 Angstroms! Really tiny.  
+Observe passive & active simulations.
+Observe channels.
+
+## Why are the passive and active responses to a trans-membrane stimulus so different? (3-2)   
+* “Stimulus” means a current of a fixed magnitude that is forced through the patch.  
+* “Response” means the voltage across the membrane that occurs during or after the stimulus.   
+* What voltage does that create?  
+* What voltage does it take to push that current across?  
+* What voltages develop?  
+* Voltage is measured on the inside edge and the outside edge of the membrane.  
+*“Passive response” means the response for membrane patch that is passive. Passive means that properties do not change as time goes by, or as the voltage changes.
+* Most ordinary material is passive, for example, wood or plastic  
+* In this case, the stimulus current is the same as the membrane current because there is no place else for it to go.    
+* The resistance is because the membrane has holes.  
+* “Active response” means the response from living tissue, in this case tissue that follows the Hodgkin-Huxley model for nerve membrane.  
+* The simulation is the same, but the response of the tissue is what is so different.  
+* “so different” means that the trans-membrane voltage, following the very same stimulus pulse, is so different from passive.  
+* But how? Well you will just have to wait and see.  
+
+
+## The simulation set-up (3-3)  
+**Simulation of Patch, Equations**  
+* Im = Ic + Ir  
+* Ic = Im – Ir  
+* Cm dVm / dt = Im – Ir  
+  
+* Note that time is now a part of the equation.  
+* Will be able to see what happens at different times.  
+  
+* Im starts at 0, then becomes not equal to 0, and then returns to 0.  
+* Im comes from the tissue structure, i.e. other cells.  
+* In the simulation, an isolated tissue segment is used and it is solely dependent on the stimulus. That's all there is.   
+* We will be looking at what happens in the tissue when the stimulus returns to 0.   
+* Ir is Vm / Rm (Ohm’s law)  
+* Ohm's law is mainly useful when Rm is constant.  
+* Rm is constant when the tissue is passive.  
+* So,  
+:dVm = ( Istim – Vm/Rm) *dt / Cm
+* Computation: Using discrete steps, dt is a time step, and dVm is the resulting trans-membrane voltage change occurring during that time step, assuming the time step is very small. 
+
+## The Passive simulation (3-4) 
+* Use it as a reference point to see the change that happens when active tissue is used.  
+
+Im Clamp ON – means that all the spatial variation (or change) has been eliminated  
+   
+[[File:Be-week3-stimulus_graph.jpg]]  
+  
+**Stimulus**  
+* Graph labelled I (the lower curve).  
+* Time is in microseconds.  
+* Zero on the x-axis is offset to show that before the stimulus is 0, and it is 0 after the stimulus also.    
+* Duration of the stimulus is 400 usec (microseconds)  
+  
+**Response during stimulus**  
+* During the stimulus, the response curve for the response of the tissue is more or less a straignt line.  
+* If it contiunued to rise, which it does not, it would make more of a curve. 
+    
+**Response after stimulus** (not zero immediately, but falling exponentially)  
+* Im = 0  
+* Why does the tissue response go back to 0 *right away* when the stimulus goes to 0?  
+* Within the membrane, there is a resistance path and a capacitance path.  
+* In this simulator, we were putting charges on this capacitor, and as we did so, the voltage was rising.  
+	
+**Simulation of Passive Patch, Results**   
+Summary  
+* There is a stimulus for 400 microseconds, and as a result, the voltage goes up. 
+* When the stimulus goes back to zero, the voltage declines.
+* The decline in voltage is associated with the membrane capacitance now discharging through the membrane resistance.
+  
+**Conclusions**  
+That is, what happens?  
+* The stimulus causes an abrupt rise in trans- membrane voltage Vm  
+* The change in Vm lasts after the stimulus pulse ends.  
+* After the stimulus Vm returns slowly to its baseline value  
+* The energy in the stimulus pulse is dissipated in the resistance.  
+  
+**Talk about what happens**  
+* Loosely, one puts the pulse in. That changes Vm markedly at the
+start of the stimulus, but Vm decays until the resistance uses up the
+pulse’s energy.  
+* Vm is a distorted version of the stimulator’s current pulse.  
+* Vm is technically interesting but otherwise unsurprising.  
+
+##  The Active Simulation (3-5)  
+* only tissue changes  
+* Same sketch  
+* Same mathematical model, except Rm active.  
+* Everything just the same except that now the tissue is active.  
+:Im = Ic + Ir  
+:Ic = Im – Ir  
+:Cm dVm / dt = Im – Ir  
+:Im is Istim and then zero  
+:Ir is Vm / Rm (Ohm’s law)  
+:dVm = ( Istim – Vm/Rm) *dt / Cm  
+  
+**Stimulus**  
+* The same stimulus as in the passive simulation is used.
+* The stimulus lasts for 400 microseconds and has the same amplitude.
+  
+**Response during stimulus**  
+* Slope of the active tissue is largely the same, although not exact.
+* Slope of active simulation might be a little bit higher, so they are not exactly the same. They are very close though.   
+
+**Response following stimulus, going where?**  
+* Active tissue is totally different from passive tissue.
+* There is a short resting period, then the graph goes up and up and up. 
+* Active tissue is off and running, and doing its own thing.  
+
+vm and time axes longer than before  
+* Voltage goes up to 100 milivolts.
+* Comes down sharply, then goes below 0.
+* It goes negative for a while, underneath the baseline.
+* It will take about 10-15 more miliseconds to come back to the baseline (not shown on the graph).
+* Analogy
+:On the left, lit a match and after a while, it went out. On the right, lit a match and it started a huge raging fire (an action potential).
+
+**Comparison of Active and Passive Vm Responses**  
+:(to the very same stimulus)  
+* There is a difference during the stimulus, but in this case it is a small
+difference.  
+* There is a **huge huge huge** difference in what happens after the stimulus is over.  
+After the stimulus  
+* The vm curve for passive tissue decays back to the baseline.  
+* Vm for active tissue gets bigger and bigger --- 10x--- and the wave form goes on for a long time –several milliseconds –coming back to and even below the original vm baseline.   Wow!  
+
+**Striking a match…**  
+* The difference is like what happens if one strikes a match  
+* With passive tissue, the match flames but then gradually dies.  
+* With active tissue, it is as if one strikes the match and then waves it over a puddle of gasoline…. Match --- Flame – BOOM  
+
+## Where does the active response come from? (3-6)  
+* This is a mystery.  
+: ( Not a mystery to everyone but a mystery to us at this point in this course)
+* Stimulus is zero  
+* Cm is charged, but discharging through Rm?  
+* So how can Vm be getting bigger?  
+     * The charges are being added to that membrane capacitance.  
+     * Charges are not leaving that membrane capacitance.  
+     * The algorithm is different for the active case than it is for the passive case.  
+  
+**algorithm?**  
+  
+Im = Ic + Ir  
+:* The membrane current is the capacitive current and the resistive current.
+:* The membrane current has only got two places to go, either on the capacitive path or the resistive path, it has to still be the case.  
+
+Ic = Im – Ir  
+:* Simply the first line rearranged.
+  
+Cm dVm / dt = Im – Ir  
+:* The rule for capacitive currents.  
+  
+Im is Istim and then zero  
+:* The membrane current is the same as the stimulus current, because here's a patch that's all isolated, it's an orphan.  
+:* Membrane current comes from the neighbors normally, and the neighbors aren't there
+so it only comes from the stimulator.  
+:* The stimulus goes on then the stimulus turns off, so the stimulus is zero.  
+  
+Ir is Vm / Rm  
+:* Ohm's Law  
+:* Putting in the right value of Vm.  
+:* Not so sure about is that we're putting in the right value for Rm because the value that we're putting in for Rm is the value that is the value we had at the beginning of the simulation, the value for passive tissue.
+:* Rm is probably doing something and whatever it is doing is really strange.  
+:* If Rm is going to change in such a way that Cm gets bigger, Rm cannot just go down to zero, it has to even turn negative.  
+  
+dVm = ( Istim – Vm/Rm) *dt / Cm  
+  
+**After the stimulus Im=0. Which ions are moving? Why?**  
+* What does “ions” have to do with it?  
+* The model of the membrane must be defective, or at least insufficient.  
+  
+**A clue**  
+A very substantial clue is given by examining the behavior of channels, as is done in the next lectures.  
+
+## Problem session , passive v active (3-7)  
+**Examining the results**  
+* The questions ask about some important details.  
+* Look back at the graphs to answer each question.  
+  
+**What is the peak vm with a Passive patch? Active?**  
+In each case measure vm against baseline.  
+* Passive tissue, during the stimulus: 10 mv
+* Passive tissue, anytime following the stimulus onset: 10 mv  
+:These two answers are going to be the same because the highest voltage in passive tissue occurs just at the end of the stimulus.  
+  
+* Active tissue, during the stimulus: 11 mv
+* Active tissue, anytime following the stimulus onset: 100 mv  
+:The very striking thing is what this difference is, 10 as compared to 100. 
+  
+**What is the wave form duration (the time duration of each deflection on the wave form) in passive? Active?**  
+* The individual phases in this kind of work are often referred to as deflections.
+* The duration has to be determined by a workable definition.  
+
+Suppose we define the waveform to have ended when vm returns to about 10% of its peak value. (Give results in microseconds)  
+* Stimulus current duration? 400 microseconds
+:That's fixed.
+  
+* Passive vm duration? 2,000 microseconds?  
+:A little bit trickier than it seems because the ending is not very sharply defined.  
+  
+* Active vm duration?  _____ ?  
+:* A tricky question again because it lasts a while above the baseline and it goes down below the baseline and comes back up.
+:* Let's suppose for the purpose of this question, we take only the part that's above the baseline.
+:* How long does it last until it comes back down to within ten percent of the peak value?  
+  
+## Channels: Experimental isolation of a channel (3-8)  
+**Pull pipette**  
+* With center of a glass tube heated over flame, it can be pulled apart, with the center section necking down into a very tiny opening.  
+  
+**Use suction to grab tissue**  
+* Applying gentle suction, a membrane sample can be attached and pulled away from a larger membrane.  
+* If the tip is small enough, only a single channel will be contained within the membrane sample.  
+  
+[[File:BE-week 3-pull pipette.png]]
+  
+* First, fill the tube with salt water. (A solution that is similar to the composition of real tissue.)  
+* Put the end of the tip right down on the membrane.
+* And then up the top, apply suction.
+* The suction will pull the tissue back up into the tube.
+* Will get a little teeny tiny piece of membrane right in the end of that tube.
+* Lift the pipette away from the tissue carefully, and break off that little portion of the membrane that's sucked up into the pipette from the rest of the larger membrane surface.
+* Go over into a different chamber and perform an experiment.
+
+**Apply voltage and measure current**  
+* In this now new chamber, we insert the pipette.
+* With the pipette in another solution, a voltage step can be applied and the currents required to maintain that voltage can be measured.  
+* Pipette still has a membrane attached, right there.
+* We have added some electrical apparatus  
+:meter V1
+:meter V2  
+:a resistor  
+:the wire comes over from the from the voltmeter, comes over down into the solution and into a metal plate on this side. (red line)  
+:And somewhat similarly, it comes around down into the solution and up to a metal plate on this side. (green line)
+* And now, this apparatus can be used to pass a stimulus current through that little tiny patch of tissue.  
+* Measure the current using the meters V1 and V2, and the resistor.  
+
+[[File:BE-week3-pipette-voltage.png]] 
+  
+## Channels: Observed currents, voltage step (3-9)  
+**Channel opening, what I would have expected**  
+* Low vm, partially open  
+* Higher voltage, mostly open  
+But I would have been wrong  
+  
+**Channel opening, what actually happened, K+**  
+* Random openings, bouncing back and forth between open and closed.  
+* With low vm, not so often  
+* With high vm, more often open.  
+* Still bouncing open and closed whether vm low or high.  
+* When the voltage is low, the channel is randomly opening, opening and closing, bouncing back and forth.  
+* But when the voltage is low, it comes open relatively speaking, infrequently.  
+* When the voltage is high in this region, the channel is still bouncing back and forth, open, closed, open, closed, open, closed, but more often it is in the open state.   
+* Even though when the voltage is high, the channel is still closed some of the time.    
+
+## Channels: Probability of being open (3-10)  
+**So we have to define channel openings in terms of probabilities**  
+* Amazing: critical functions of humans depend on probabilities.  
+* How can these probabilities be understood quantitatively?  
+
+**Analytical beginning**  
+* If there are N channels in a patch, suppose No are open and Nc are closed.  
+* The rate of change in the number of open channels can be expressed as:  
+* dNo / dt = α Nc - β No  
+:We can write what is happening as an equation by saying that the number that are open is changing as a function of dN0 / dt, the rate of change of the number that are opened by two processes.
+* Here α is the rate at which closed channels open, and β is the rate at which open channels close.  
+* A key point is that α and β are not constants. Rather they change with Vm (but not with time).  
+* Over time, the fraction of the N channels that are open will become α / α + β  
+:* First, there's a process where channels that are closed are reopening that's associated with this rate cost an alpha.
+:* And there's a process by which those that are open are going closed, and that's associated with this right constant, beta.
+:* Notice that alpha and beta, somehow are there built into the membrane.  
+:* As long as the membrane potential is constant, alpha and beta are constant.
+:* But, if the membrane voltage changes, then alpha and beta change. They change with vm. 
+  
+**Conclusion**
+* Over time, the fraction of the N channels that are open will become α / α + β  
+* How do we get specific values for α and β ?  
+* Until now, from measuring them.  
+* We will discuss further next week.  
+    
+## Problem session, Channel probabilities (3-11)  
+**Number open --Q**  
+* If there are 1000 channels in a patch.  
+* Suppose our initial measurement shows 100 are open and 900 are closed.  
+* The trans-membrane voltage changes to a new value.  
+* Now α is 0.8 per msec, and β is 0.2 per msec.  
+    
+* A) How many channels are expected to be open 1 msec after the initial measurement?  
+
+Use the equation dNo / dt = α Nc - β No
+  
+* B) How many channels are expected to be open 10 msec after the initial measurement?  
+:* Can't just do this like we did part A because there is too much of an
+extrapolation.  
+:* One alternative is to write a computer program and to do it as a whole bunch of
+short steps.
+:* But a better alternative is to look at our equation, dN0 / dt and then to solve that equation to get N0 as a function of time.
+:* When you solve the equation dN0/dt for N0 as a function of t, it should be that N0, after ten milliseconds, is approaching alpha over alpha plus beta.  
+:* In fact, is it close enough that alpha over alpha plus beta can be used as a good estimate of the answer?
+
+**Week 3 conclusions**  
+* We saw that a simulation of passive tissue produces a Vm change that decays back to baseline.  
+* In contrast, a simulation of active tissue produces a Vm change similar to the passive one, and then a HUGE longer change. While we can call than an “action potential”, we had no explanation of what made it go.  
+  
+Searching for clues, we examined the records of channel measurements.  
+* Amazingly, channels seem to open and close randomly!  
+* But, the channel statistics depend on the trans-membrane voltage.  
+* Which means that the steady-state number open is predictable, on the average  
+* But, the channel statistics depend on the trans-membrane voltage.  
+* Wow what a week!  
+  
+So next week  
+* We move on to a way to make sense out of these mysteries  
+* See you then.
+  
+[[Bioelectricity:Main | Main Page]]

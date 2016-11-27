@@ -1,0 +1,63 @@
+# Eclipse Shortcut Keys
+There are a lot of awesome shortcuts in Eclipse. I've summarized below some really awesome shortcuts that I like to use for both Mac and Windows.
+
+<p>Nicely space out all of your code, remove whitespace, make it nice and readable.</p>
+<ul>
+  <li>Cmd + Shift + F</li>
+  <li>Ctrl + Shift + F</li>
+</ul>
+
+<p>Fix imports. Delete unused ones and add the ones that you need.</p>
+<ul>
+  <li>Cmd + Shift + O</li>
+  <li>Ctrl + Shift + O</li>
+</ul>
+
+<p>Extract code to method. Highlight code in a method and this shortcut will remove that code and put it into the method that you name.</p>
+<ul>
+  <li>Alt + Cmd + M</li>
+  <li>Alt + Shift + M</li>
+</ul>
+
+<p>Change the name of selected element. Highlight the variable, method, etc. and this shortcut will replace that name with the new name.</p>
+<ul>
+  <li>Alt + Cmd + R</li>
+  <li>Alt + Shift + R</li>
+</ul>
+
+<p>Maximize/Minimize your pane.</p>
+<ul>
+  <li>Ctrl + M</li>
+  <li>Ctrl + M</li>
+</ul>
+
+<p>Shows you all of the keyboard shortcuts available.</p>
+<ul>
+  <li>Cmd + Shift + L</li>
+  <li>Ctrl + Shift + L</li>
+</ul>
+
+<p>Autocomplete with Ctrl + Space</p>
+<ul>
+  <li>For + Ctrl + Space gives you a choice of four for loops and will tab complete the rest of the data</li>
+  <li>sysout + Ctrl + Space gives you "System.out.println"</li>
+  <li>In a layout file, in a <Button/> definition, typing "heig" and pressing Ctrl+Space will pop up a dialog with 2 selections: "android:layout_height" and "android:height".</li>
+  <li>There are many examples where Ctrl + Space can help</li>
+</ul>
+
+<p>Automatically create getters, setters, and constructors with...</p>
+<ul>
+  <li>Source > Generate Getters and Setters</li>
+  <li>Source > Generate Constructor using Fields</li>
+</ul>
+
+<p>And here's one final one for that applies to this class. You may see the skeleton files include comments like "// TODO ...". Any comments of this type can be found in a list at Window > Show View > Tasks.</p>
+
+# Links
+As always there are many more great resources on the web:
+
+[10 Eclipse Navigation Shortcuts Every Java Programmer Should Know](http://rayfd.me/2007/05/20/10-eclipse-navigation-shortcuts-every-java-programmer-should-know/)
+
+[Top 30 Eclipse Keyboard Shortcuts for Java Programmer](http://javarevisited.blogspot.com/2010/10/eclipse-tutorial-most-useful-eclipse.html)
+
+[Eclipse Shortcut Keys Video](http://www.youtube.com/watch?v=C5glFtpuy0U)

@@ -1,0 +1,27 @@
+<h1>Getting SamIAM</h1>
+SAMIAM can be downloaded from [http://reasoning.cs.ucla.edu/samiam/ "HERE"]   
+Be sure to get the version compatiable with your operating system. Intel 64 bit users should be able to use the AMD-64 version.  
+If you are like me you want to edit the batch file to relfect your jvm installation. I have many of them installed.  
+You will not likely have java installed in C:\Windows\System32 as the documentation suggests. Rather, it will likely be found in one of the Program Files folders on your computer. Either Program Files or Program Files(x86).  
+Within that folder, if Java is installed, you will find a Java folder, and within that one or more other folders. In my case I have a jre6 folder.  
+For 64 bit windows, I actually have two, jre6 folders one in each Program Files variants. This is because the windows 64 bit version is in Program Files, and the 32 bit version is in the (x86) folder.  
+If you try to run the 64 bit version of SAMIAM on a 32 bit jvm you will get the following error:  
+>Error occurred during initialization of VM  
+>Could not find agent library calljvmti on the library path, with error: Can't lo  
+>ad AMD 64-bit .dll on a IA 32-bit platform  
+
+Change your path to load the 64 bit jvm and it will work. You can do this by editing the SAMIAM.BAT file.  
+Sun recommends the 32 bit version of Java in the download section and 64 bit may be difficult to find from the navigation choices Sun gives.  
+Currently you can find the 64 bit version [http://www.java.com/en/download/manual.jsp "here"].
+
+
+Lecture Video Table of Contents
+----
+<pre>
+0:23	SAMIAM
+0:45	Insurance example
+2:18	CPT monitor
+7:11	Adding nodes
+9:10	The full network
+10:45	Running queries
+</pre>

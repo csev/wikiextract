@@ -1,0 +1,48 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PCD: Gene names</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<p><strong><em>ced-1</em></strong>: <em>ced-1</em> encodes a transmembrane protein that functions to initiate a signaling pathway in phagocytic cells that promotes cell corpse engulfment and phagosome maturation. Loss of function mutation <strong><em>(e1375)</em></strong> results in persistent corpses. <em>e1735</em> was used for screening for supressors of cell death by Hillary Ellis. The screen by Hillary Ellis identified the two loss of function alleles of <em>ced-3:</em> <strong><em>n717</em></strong> and <strong><em>n718</em></strong> </p>
+<p><strong><em>ced-2</em></strong>: <em>ced-2</em> gene encodes a Src homology (SH) 2 and 3-containing adaptor protein, homologous to human CrkII, that is required for phagocytosis during programmed cell death. CED-2 functions in the engulfing cell during apoptosis. Loss of function mutation results in persistent corpses.  </p>
+<p><strong><em>ced-3</em></strong>: <em>ced-3</em> encodes a caspase, a cysteine-aspartate protease. CED-3 activity is required for execution of apoptosis and functions in a conserved genetic pathway with CED-4, CED-9, and EGL-1 to regulate apoptosis during <em>C. elegans</em> development. Loss of function mutations, as identified in the screen by Hillary Ellis <strong><em>(n717)</em></strong> and <strong><em>(n718)</em></strong>, results in defects in general apoptosis and causes inappropriate survival of cells that are destined to die. Weak loss of function allele <strong><em>(n2427)</em></strong> was used by Michael Hengartner to show that <em>ced-9</em> has pro-apoptotic activity. </p>
+<p><strong><em>ced-4</em></strong>: <em>ced-4</em> encodes a novel protein. CED-4 is required for the initiation of programmed cell death. Genetic analyses indicate that <em>ced-3</em> and <em>ced-4</em> function upstream of <em>ced-1, ced-2, and nuc-1</em> in the programmed cell death pathway. Loss of function mutation <strong><em>(n1162)</em></strong> results in defects in general apoptosis and causes inappropriate survival of cells that are destined to die.  </p>
+<p><strong><em>ced-9</em></strong>: <em>ced-9</em> encodes the sole <i>C. elegans</i> homolog of the mammalian cell-death inhibitor Bcl-2. <em>ced-9</em> activity is essential for preventing cells from undergoing programmed cell death; ced-9 also appears to have proapoptotic activity; CED-9 functions by binding and repressing the activity of CED-4, a protein similar to human APAF-1 and positive regulator of CED-3 caspase activity; CED-9 localizes to the mitochondrial outer membrane. Gain of function mutation of <em>ced-9 <b>(n1950)</b></em> results in inappropriate survival of cells that are destined to die. Loss of function mutation in <em>ced-9</em> causes ectopic cell death. 3 mutants were identified by Michael Hengartner (<strong><em>nDf40</em></strong> which is a deficiency carrying a huge deletion in <em>ced-9</em> locus, <strong><em>n2077</em></strong> and <strong><em>n2161</em></strong> that are recessive loss of function alleles). </p>
+<p><strong><em>ces-1</em></strong>:  <em>ces-1</em> (cell death specification) gene encodes a small family zinc finger protein which is similar to mammalian Snail protein. Gain of function mutation of <em>ces-1 <b>(n703) </b></em> results in specific cell death defect in NSM sister cell.</p>
+<p><strong><em>ces-2</em></strong>: <em>ces-2</em> encodes a bZIP transcription factor. Loss of function mutation of <em>ces-2 <b>(n732) </b></em> results in specific cell death defect in NSM sister cell.</p>
+<p><strong><em>egl-1</em></strong>:  <em>egl-1</em> encodes a novel protein that contains a region similar to the BH3 (Bcl-2 homology region 3) domain of mammalian cell death activators. EGL-1 functions as an upstream activator in the general programmed cell death pathway and positively regulates programmed cell death by interacting directly with CED-9 to induce CED-4 release from CED-4/CED-9 complexes and ultimately activate the CED-3 caspase. EGL-1 also induces WAH-1/apoptosis-inducing factor release from the mitochondria. In hermaphrodites, <em>egl-1</em> is transcriptionally repressed by TRA-1, permitting survival of the HSN neurons required for egg laying. Gain of function mutation <strong><em>(n1084)</em></strong> results in egg laying defective phenotype which causes inappropriate death of HSN neurons in hermaphrodites. <strong><em>n487</em></strong> is another allele with a gain of function mutation. Loss of function mutation <strong><em>(n3082)</em></strong> results a in block in cell death.</p>
+<p><strong><em>PUMA</em></strong>:  <em>PUMA</em> (p53 upregulated modulator of apoptosis)  mammalian BH3-only gene that is a target of p53 tumor suppressor protein. Like <i>C. elegans</i> <i>egl-1</i>, the activity of <i>PUMA</i> is regulated predominantly at transcriptional level. Other mammalian BH3-only genes that are transcriptionally regulated are <i>Noxa</i>, <i>HRK</i>, and <i>BIM</i>. </p>
+<h1> <span class="mw-headline" id="Allele_names">Allele names</span></h1>
+<p><strong><em>e1735</em></strong>: G to A substitution in <strong><em>ced-1</em></strong> gene. Loss of function mutation that results in persistent corpses. This mutation was used by Hillary Ellis for a supressor screen which resulted in two loss of function alleles of <strong><em>ced-3</em></strong> <em>n717</em> and <em>n718</em></p>
+<p><strong><em>n487</em></strong>: <strong><em>egl-1</em></strong> gain of function mutation. Results in inappropriate death of HSN neurons in hermaphrodites thereby leading to Egl phenotype. </p>
+<p><strong><em>n703</em></strong>: G to A substitution in <strong><em>ces-1</em></strong> gene. This gain of function mutation results in specific cell death defect in the NSM neurons.</p>
+<p><strong><em>n717</em></strong>: C to T substitution in <strong><em>ced-3</em></strong> gene. This loss of function mutation results in general block in cell death.</p>
+<p><strong><em>n718</em></strong>: This loss of function mutation in <strong><em>ced-3</em></strong> gene results in general block in cell death.</p>
+<p><strong><em>n732</em></strong>: This gain of function mutation in <strong><em>ces-2</em></strong> gene  results in specific cell death defect in the NSM neurons.</p>
+<p><strong><em>n1084</em></strong>: <strong><em>egl-1</em></strong> gain of function mutation. Results in inappropriate death of HSN neurons in hermaphrodites thereby leading to Egl phenotype. </p>
+<p><strong><em>n1162</em></strong>: C to T substitution in <strong><em>ced-4</em></strong> gene. This loss of function mutation results in general block in cell death.</p>
+<p><strong><em>n1950</em></strong>: G to A substitution in <strong><em>ced-9</em></strong> gene. This gain of function mutation results in general block in cell death.</p>
+<p><strong><em>n2077</em></strong>: C to T substitution in <strong><em>ced-9</em></strong> gene. This loss of function mutation identified by Michael Hengartner's screen results in ectopic cell death.</p>
+<p><strong><em>n2161</em></strong>: G to A substitution in <strong><em>ced-9</em></strong> gene. This loss of function mutation identified by Michael Hengartner's screen results in ectopic cell death.</p>
+<p><strong><em>n2427:</em></strong>: C to T substitution in <strong><em>ced-3</em></strong> gene. This weak loss of function mutation was used by Michael Hengartner to show that <em>ced-9</em> has pro-apoptotic activity. </p>
+<p><strong><em>n3082:</em></strong>: <strong><em>egl-1</em></strong> loss of function mutation. This mutation results in general block in cell death.</p>
+<p><strong><em>nDf40</em></strong>: A deficiency with a large deletion including the <strong><em>ced-9</em></strong> gene. </p>
+<p>Source: wormbase.org</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PCD:_Gene_names&amp;oldid=14858">https://share.coursera.org/wiki/index.php?title=PCD:_Gene_names&amp;oldid=14858</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:PCD" title="Category:PCD">PCD</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

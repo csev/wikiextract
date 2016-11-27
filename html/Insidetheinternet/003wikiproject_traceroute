@@ -1,0 +1,41 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Insidetheinternet:003wikiproject traceroute</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#How_to_do_a_Trace_Route_on_a_windows_machine."><span class="tocnumber">1</span> <span class="toctext">How to do a Trace Route on a windows machine.</span></a></li>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">2</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Forum_Thread"><span class="tocnumber">3</span> <span class="toctext">Forum Thread</span></a></li>
+<li class="toclevel-1"><a href="#..."><span class="tocnumber">4</span> <span class="toctext">...</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="How_to_do_a_Trace_Route_on_a_windows_machine.">How to do a Trace Route on a windows machine.</span></h1>
+<p>777  **under development **  7777777777777777777</p>
+<p>888888888888888888888</p>
+<p>99999999999999999</p>
+<h1> <span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>In computing, traceroute is a computer network diagnostic tool for displaying the route (path) and measuring transit delays of packets across an Internet Protocol (IP) network. The history of the route is recorded as the round-trip times of the packets received from each successive host (remote node) in the route (path); the sum of the mean times in each hop indicates the total time spent to establish the connection. Traceroute proceeds unless all (three) sent packets are lost more than twice, then the connection is lost and the route cannot be evaluated. Ping, on the other hand, only computes the final round-trip times from the destination point.</p>
+<h1> <span class="mw-headline" id="Forum_Thread">Forum Thread</span></h1>
+<p>here is the thread==&gt;<a rel="nofollow" class="external free" href="https://class.coursera.org/insidetheinternet-003/forum/thread?thread_id=719">https://class.coursera.org/insidetheinternet-003/forum/thread?thread_id=719</a></p>
+<p>Anna ZawilskaStaff  4 days ago 
+Why not have a try at doing your own Traceroute! How did it go? Share your experiences.</p>
+<h1> <span class="mw-headline" id="...">...</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Insidetheinternet:003wikiproject_traceroute&amp;oldid=13449">https://share.coursera.org/wiki/index.php?title=Insidetheinternet:003wikiproject_traceroute&amp;oldid=13449</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

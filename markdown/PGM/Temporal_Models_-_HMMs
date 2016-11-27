@@ -1,0 +1,57 @@
+Hidden Markov Models
+===
+Hidden Markov models (HMM) is simple yet extraordinarily useful class of probabilistic temporal models. It can be viewed as a subclass of Dynamic Bayesian networks (DBN).
+
+Its simplest form can be viewed as a probabilistic model that has a single state variable S and a single observation variable O. There is the transition model that tells us the transition from one state to the next over time (S to S'). And there is the observation model that tells us in a given state how likely we are to see different observation (S'->O')
+
+**Simple 2TBMs of HMMs**  
+<pre>
+   S -> S'
+         `>O'
+</pre>
+Unrolled network
+---
+From our 2TBM and started state at time zero, we can produce an unrolled network which has the same repeated structure:
+<pre>
+    S0 -> S1  -> S2   -> S3    ...
+           \`>O1   \`>O2    \`>O3
+</pre>          
+
+Markov models have a lot of internal structure that manifests most notably in the transition model (sometimes also in the observation model). The following image show an example of transition model. Each of these nodes in the transition model (S1, S2, S3, S4) is not a random variable rather it is particular assignment to the S variable (values of S). 
+[[File:Transition Model - HMM.png]]
+
+So, we can recognize that if we're currently at state S1, the model is likely to transition to S2 with probability 0.7 or stay in S1 with probability 0.3. Notice that all outgoing probabilities have to sum to one, because it's a probability distribution over the next state given that in current time point the model is in state S1.
+
+Applications of HMMs
+===
+
+*  Robot localization
+*  Speech recognition
+   -  HMMs are really the method of choice for all current speech recognition systems
+*  Biological sequence analysis
+*  Text annotation
+
+Summary
+===
+*  HMMs can be viewed as a subclass of the framework from Bayesian networks
+*  HMMs seem unstructured at the level of random variables. 
+*  HMMs structure typically manifests in sparsity and repeated elements within the transition model that
+really doesn't manifest in any way at the level of random variables
+*  HMMs are used in a wide variety of applications for sequence modeling and they're probably one of the most used
+forms of probabilistic graphical models out there. 
+
+Lecture Video Table of Contents
+===
+<pre>
+0:00	Hidden Markov Models
+1:02	Unrolled network
+2:41	Applications of HMMs
+3:18	Robot Localization
+5:02	Speech Recognition
+5:55	Segmentation of Acoustic Signal
+6:54	Phonetic alphabet
+7:37	Word HMM
+8:26	Phone HMM
+9:10	Recognition HMM
+11:01	Summary
+</pre>

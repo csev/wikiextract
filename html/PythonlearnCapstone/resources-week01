@@ -1,0 +1,50 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PythonlearnCapstone:resources-week01</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Week 1 - Placeholder</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#1_Data_set_resources_Wiki"><span class="tocnumber">1</span> <span class="toctext">1 Data set resources Wiki</span></a></li>
+<li class="toclevel-1"><a href="#1._City_of_Cincinnati_Open_Data"><span class="tocnumber">2</span> <span class="toctext">1. City of Cincinnati Open Data</span></a></li>
+<li class="toclevel-1"><a href="#2._DATA_USA"><span class="tocnumber">3</span> <span class="toctext">2. DATA USA</span></a></li>
+<li class="toclevel-1"><a href="#3._Quandl"><span class="tocnumber">4</span> <span class="toctext">3. Quandl</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="1_Data_set_resources_Wiki">1 Data set resources Wiki</span></h1>
+<p>Here is a link to the Wiki page with a list of Data sets </p>
+<p>(<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/index.php/PythonlearnCapstone-Datasets">https://share.coursera.org/wiki/index.php/PythonlearnCapstone-Datasets</a><em>for</em>projects. </p>
+<h1> <span class="mw-headline" id="1._City_of_Cincinnati_Open_Data">1. City of Cincinnati Open Data</span></h1>
+<p>The City's data belongs to our citizens and the public. The City of Cincinnati will provide access to government data to improve services, increase accountability and stimulate economic activity.
+Portal&#160;: (<a rel="nofollow" class="external free" href="https://data.cincinnati-oh.gov/">https://data.cincinnati-oh.gov/</a>)
+Description&#160;: Well curated data with clear APIs to access data
+Categories&#160;: Safer streets, Thriving neighbouhood, growing economy</p>
+<h1> <span class="mw-headline" id="2._DATA_USA">2. DATA USA</span></h1>
+<p>About&#160;: In 2014, Deloitte, Datawheel, and Cesar Hidalgo, Professor at the MIT Media Lab and Director of MacroConnections, came together to embark on an ambitious journey -- to understand and visualize the critical issues facing the United States in areas like jobs, skills and education across industry and geography. And, to use this knowledge to inform decision making among executives, policymakers and citizens.
+Portal: (<a rel="nofollow" class="external free" href="http://datausa.io">http://datausa.io</a>)
+Ideas for projects&#160;: (<a rel="nofollow" class="external free" href="http://datausa.io/story">http://datausa.io/story</a>)
+Categories&#160;: a variety of census data</p>
+<h1> <span class="mw-headline" id="3._Quandl">3. Quandl</span></h1>
+<p>I have found <a rel="nofollow" class="external text" href="https://www.quandl.com">Quandl</a> to be a good source of economic and financial data.  If you register (free!) you can create an account that will give you a "token" and then use their API scripts to pull data right from the website or use their Python module, "quandl".  This lets you get your dataset without having to do any copying and pasting or downloading of files.</p>
+<ul>
+<li>Home page URL: <a rel="nofollow" class="external free" href="https://www.quandl.com">https://www.quandl.com</a></li>
+<li>Python-specific URL: <a rel="nofollow" class="external free" href="https://www.quandl.com/tools/python">https://www.quandl.com/tools/python</a></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:resources-week01&amp;oldid=34429">https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:resources-week01&amp;oldid=34429</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,89 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:Errata</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Errata"><span class="tocnumber">1</span> <span class="toctext">Errata</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Cool_Example_III"><span class="tocnumber">1.1</span> <span class="toctext">Cool Example III</span></a></li>
+<li class="toclevel-2"><a href="#Finite_Automata_4-2"><span class="tocnumber">1.2</span> <span class="toctext">Finite Automata 4-2</span></a></li>
+<li class="toclevel-2"><a href="#Parsing_Completed_05-02:_Context_Free_Grammars"><span class="tocnumber">1.3</span> <span class="toctext">Parsing Completed 05-02: Context Free Grammars</span></a></li>
+<li class="toclevel-2"><a href="#Top-down_parsing_06-04:_Recursive_Descent_Algorithm"><span class="tocnumber">1.4</span> <span class="toctext">Top-down parsing 06-04: Recursive Descent Algorithm</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_09-09"><span class="tocnumber">1.5</span> <span class="toctext">Lecture 09-09</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_10-05"><span class="tocnumber">1.6</span> <span class="toctext">Lecture 10-05</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_15-02"><span class="tocnumber">1.7</span> <span class="toctext">Lecture 15-02</span></a></li>
+<li class="toclevel-2"><a href="#Java_Coercions_18-05"><span class="tocnumber">1.8</span> <span class="toctext">Java Coercions 18-05</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Errata">Errata</span></h1>
+<h2> <span class="mw-headline" id="Cool_Example_III">Cool Example III</span></h2>
+<p>The last change to list.cl includes definition of a variable i:</p>
+<p><code>i&#160;: Int &lt;- 42</code></p>
+<p>This variable is not used after being defined and initialized. Instead, a literal 42 is added to the list further down.</p>
+<h2> <span class="mw-headline" id="Finite_Automata_4-2">Finite Automata 4-2</span></h2>
+<ul>
+<li>15:05</li>
+</ul>
+<p>There is slide presented at this time — slide is correct, but Prof.Aiken (audio) says something like "NFAs are just those that are <strong>not deterministic</strong>". This is a bit misleading (refer to slides then), evet DFA is NFA as well.</p>
+<ul>
+<li>16:00</li>
+</ul>
+<p>The example at the bottom is a bit confusing. It is used to demonstrate that it is possible to use epsilon transitions to make "every state in the machine only have a single transition for every possible input". However, the example has two epsilon transitions for the starting state. I think it would be clearer to only use 4 states and a single epsilon transition to better illustrate this.</p>
+<h2> <span class="mw-headline" id="Parsing_Completed_05-02:_Context_Free_Grammars">Parsing Completed 05-02: Context Free Grammars</span></h2>
+<ul>
+<li>10:46</li>
+</ul>
+<p>There is: <code>if while id loop id pool then id else id</code>.</p>
+<p>There should be: <code>if while id loop id pool then id else id fi</code>.</p>
+<h2> <span class="mw-headline" id="Top-down_parsing_06-04:_Recursive_Descent_Algorithm">Top-down parsing 06-04: Recursive Descent Algorithm</span></h2>
+<ul>
+<li>13:27 quiz</li>
+</ul>
+<p>There is: <code>T1(), T2(), T3()</code> in lines 12,13,14.</p>
+<p>There should be: <code>E'1(), E'2(), E'3()</code> accordingly.</p>
+<h2> <span class="mw-headline" id="Lecture_09-09">Lecture 09-09</span></h2>
+<ul>
+<li>last slide (slide 4) </li>
+</ul>
+<p>There is:</p>
+<code><pre>TypeCheck(Environment, let x:T &lt;-e0 in e1) = { T0 = TypeCheck(Environment, e0); 
+T1 = TypeCheck(Environment.add(x:T), e1); 
+Check subtype(T0,T1); return T1}
+</pre></code>
+<p>It should be -- the 2nd last line read as <code>Check subtype(T0,T)</code> instead of <code>Check subtype(T0,T1)</code></p>
+<h2> <span class="mw-headline" id="Lecture_10-05">Lecture 10-05</span></h2>
+<ul>
+<li>slide 3</li>
+</ul>
+<p>Line 2 of rule for [ASSIGN] is shown as:</p>
+<p>O,M,C $$\vdash e{1}:T{0}$$</p>
+<p>It should be the following:</p>
+<p>O,M,C $$\vdash e{1}:T{1}$$</p>
+<h2> <span class="mw-headline" id="Lecture_15-02">Lecture 15-02</span></h2>
+<ul>
+<li>12:20 (rule 3)</li>
+</ul>
+<p>It should say that "<code>C(pi, x, c) for at least one i, and 'bottom' for the rest</code>. In current version it's possible to have <code>C(pi, x, 'bottom') for all i</code>.</p>
+<h2> <span class="mw-headline" id="Java_Coercions_18-05">Java Coercions 18-05</span></h2>
+<p>In Java, the literal 2.0 is not a float, it is a double. The integer added is widened to a 64-bit double, and not to a 32-bit float.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:Errata&amp;oldid=30425">https://share.coursera.org/wiki/index.php?title=Compilers:Errata&amp;oldid=30425</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,62 @@
+__Module 3 The Order Book__ (Lecture Video 3.2)
+
+_Note: Just copied notes from lecture slides, needs to be cleaned up and expanded_
+
+* Due Date: November 4, Time for Completion: 12 minutes
+	
+__Overview__
+* Order book recap
+* How orders flow from trader to execution
+* Collocated computing
+* Mechanics of short selling
+
+__Materials__
+* [https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a link]
+* [https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=41 video]
+* [http://www.quantsoftware.org/CompInvestI-Presentations/032-CompInvestI.pptx powerpoint]
+	 	
+# Notes
+## Types of Orders (at the Exchange)
+* Symbol
+* Buy, Sell
+* Market, Limit
+* Shares
+* Price (if Limit)
+
+## The Order Book (recap)
+<pre>
+* Ask	$100.10	  100
+* Ask	$100.05	  500
+* Ask	$100.00  1000
+* Bid	 $99.95	  100
+* Bid	 $99.90	   50
+* Bid	 $99.85	   50
+</pre>
+
+## How Brokers Connected to Exchanges
+
+
+## Types of Orders (with your Broker)
+* Additional possibilities:
+** Sell short (to open)
+** Buy (to close)
+* More complex orders (stop limit)
+
+## Mechanics of Short Selling
+* Borrow the shares
+* Sell them
+* You now have:
+** Asset: Cash
+** Liability: Shares owed
+
+## Short Selling Example
+
+
+
+
+
+
+
+
+
+[[Category:CI]]

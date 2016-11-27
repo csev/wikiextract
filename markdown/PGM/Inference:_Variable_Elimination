@@ -1,0 +1,85 @@
+[[Category:Probabilistic Graphical Models]]
+# Variable elimination
+
+Variable elimination is one of the simplest and most fundamental algorithms for inference in probabilistic graphical models.
+
+   * algebraically, variable elimination is 'pushing in the summations' in the expression obtained from the chain rule for Bayesian networks.
+   * rather than working with the conditional probabilities (as prescribed by the chain rule), one can work with **(unnormalized) factors**, e.g. instead of using the conditional probability $$P(J|L,S)$$ one can use the corresponding factor $$\Phi(J,L,S)$$ and properly normalize at the end (after all necessary variables have been eliminated) by making sure the sum over the remaining variables is one.
+
+
+#Lecture Video Table of Contents
+##Knowledge Engineering (Representation wrap-up)
+<pre>
+0:00	Introduction
+0:39	Important distinctions
+1:57	Template verus specific
+5:28	Generative versus discriminative
+7:42	Variable types
+10:33	Structure
+14:22	Extending the conversation
+17:44	Parameters: Values
+19:39	Parameters: Structured CPDs
+21:34	Iterative refinement
+</pre>
+
+##Overview: Conditional Probability Queries
+<pre>
+0:00	Introduction
+0:29	Definition
+1:35	NP-hardness
+4:49	Sum-Product
+8:44	Evidence: reduced factors
+12:54	Sum-product again
+14:03	Algorithms: Conditional Probability
+</pre>
+
+##Overview: MAP Inference
+<pre>
+0:21	Maximum a Posteriori
+2:28	MAP ≠ Max over Marginals
+3:40	NP-hardness
+4:44	Max-product
+7:22	Algorithms: MAP
+9:14	Summary
+</pre>
+
+##Variable Elimination Algorithm
+<pre>
+0:12	Elimination in chains
+3:23	Variable elimination example
+9:12	Variable elimination with evidence
+11:54	Variable elimination in Markov networks
+13:25	Eliminate-Var Z from Phi
+14:42	Summary
+</pre>
+
+##Complexity Analysis
+<pre>
+0:00	Eliminating Z
+0:30	Reminder: Factor product
+1:39	Reminder: Factor marginalization
+2:44	Complexity of variable elimination
+7:39	Complexity example
+8:43	Complexity and elimination order
+12:05	Summary
+</pre>
+
+##Graph-Based Perspective
+<pre>
+0:15	Initial graph
+1:36	Elimination as graph operation
+5:44	Induced graph
+6:49	Cliques in the induced graph
+13:28	Induced width
+14:35	Summary
+</pre>
+
+##Finding Elimination Orderings
+<pre>
+0:00	Introduction
+0:44	Theorem: NP-hard
+1:59	Greedy search using heuristic cost functions
+4:40	Theorem: Low-width triangulation
+7:11	Robot localization example
+11:15	Summary
+</pre>

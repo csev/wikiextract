@@ -1,0 +1,123 @@
+Data Analysis, Week 2, Lecture 4 Getting Data (Part 1)  
+
+* This is the first of two videos about getting data. So, the key point here is we're going to be talking about how to get data into R once you've identified the source of data that you'd like to be able to load in. This is the first step in performing really any data analysis. And so, it's the first sort of concrete step after we've talked about the more general overviews concepts of data analysis in the previous lectures.  
+
+**Get/set your working directory**  
+
+* So, the first thing that we need to talk about is getting and setting your working directory. A lot of the loading of files from R is focused around which directory that you're in, and knowing where files are, and which directories they're in as a critical component of being able to load them. So, I'm going to go over this pretty quickly in these lectures here. But there have been much more extensive descriptions of how to get and set your working directory. For example, Roger has lectures on how to get and set your working directory on Windows and Mac. Those are available on Youtube. Then, there's also Andrew Jaffe's lecture notes on how to get and set your working directory which I've linked to here as well. So, if you're uncomfortable with the concepts I'm going to be talking about with getting and setting your working directory, you should go and take a look at those deeper resources to be able to understand this a little bit better as it's fundamental to understanding how we're going to manipulate and work with data in R.  
+
+* So, the first thing that we can do is see what working directory we are in. And so, the way that we do that is we type getwd with an open and closed parentheses, and hit Return. And what you get is a character string that shows you the path to the directory that you're currently located in. So, for us, that's this gettingData1 folder, for the purposes of these slides. If you type getwd() and hit Return on your computer, depending on what directory you're in, you might see a different string here.  
+
+* So, suppose that we want to move from this directory to a sub folder of getting data one that is a, the data sub folder. The way to do that is to use the setwd command. And, so here, we type setwd and then in quotes we type the path to the new folder that we would like to move to. In this case, it ends with /data. And then, if we type getwd() and hit Return again, we end up seeing that we've moved from the original file, folder which was the gettingData1 folder to the sub-folder which is the gettingData1/data folder.  
+
+* So an important note here is the conventions I'll be using throughout these lectures are the conventions that work for a Macintosh computer. And that's because I will be performing all of the analyses on Mac. And I built these slides on Mac.  
+
+* And there are a few important differences when performing some of these commands on a Windows machine. So, first of all, the paths are formatted a little bit different. They start with this C:. And the other thing that is important to note is that, instead of using forward slashes, it's double backslash between the different folder names. So, it's Users\\Andrew instead of users/andrew like you would see on a Macintosh computer. So, throughout these lectures, when you see a file path that has these forward slashes in it, if you're working on a Windows machine, you'll have to edit those paths to reflect what the Windows machine would look like.  
+
+**Get/set your working directory (relative paths)**  
+
+* So, an important component of setting paths, particularly for data analysis, is that there is two ways that you can set them. One is that you can use what's called relative paths. So, if I type getwd(), I get the path of the folder that we're currently in, the gettingData1 directory. If I'd like to move down into the sub-directory data, I could type out the entire string including a /data here at the end, like we saw on the previous slide. Or, since R knows that we're in this directory, I could just type setwd("./data"), like this. So, the dot slash component of this string, and this should work either on Windows or Mac tells R that you want to look in the current directory where you're, where you're located. And then, see if there's a directory called data and move into that directory. So indeed, if I type getwd(), I see that I've now moved into the slash data sub-directory of the getting data one directory.  
+
+* The other thing that you can do is, suppose that I'm now in this data directory sub directory and I would like to move back up into the getting data one directory. In general, it might be easier, rather than typing out the whole set of directories that you have to type out to get this, this path right here, you can actually just type setwd("../")and that will say to R whatever directory I'm in, in this case the /data directory, move up one file folder. And so, in this case, I will move up into the getting data one directory. So, if I type getwd(), as you can see I've actually moved up to one directory up.  
+
+* So, this is called relative paths because in general, we're telling R where to move relative to the working directory that we're currently in. This is useful for data analysis when you're going to be sharing these analyses with other people, as you can move within the Data Analysis folder without having to know the complete path to the folder on somebody else's computer.  
+
+**Get/set your working directory (relative paths) {continued}**  
+
+* The other way that you can reference paths, is that instead of relative paths, you can use absolute paths. So in this case, we again type getwd() and we get the working directory gettingData1. And then, suppose that we want to move down into the data directory, we can type setwd and then type out the entire path. We saw this on the first slide. And then, when we type getwd(), you end up showing that you're, you've moved into the data directory.  
+
+* Similarly, we could then type setwd and remove the /data, just type everything before /data, and move back up into to gettingData1 directory. Sometimes absolute paths can be useful because they show you exactly where all the folders are and it can be more explicit. But again, it might be a little bit difficult to use absolute paths if you're going to be sharing the data analysis that you're performing with someone else.  
+
+**Types of files data may come from**  
+
+* So now that we know the very basics about get working directory, and setting working directories. we're going to move on to the types of data that you might want to be able to access and load into R. And so, these come in a few different file types. Now, I don't pretend, in any way, that this is the exhaustive list of file types. It's just a few of the kinds that we're going to be talking about briefly in these lectures. And we're going to be focusing primarily on these first few, we'll save the database as a more of an advanced topic, and I'll point to some resources for that later on.  
+
+* So, you might read files that are tab delimited text files, comma-separated text files, Excel files, JSON files, or HTML/XML files. And these are all different files that might store data in a particular format that which is sort of flat text. Later, we're going to talk briefly about a particular kind of binary file that goes with R that allows you to store R objects and load R objects directly.  
+
+**Where you can get data**  
+
+* So, where are the places that you can get data? There are a bunch of different places. And again, I'm not in any way, writing down the exhaustive list here. But, a few that are very common, at least for me are a colleague gives me a data set. So, I'm performing an analysis with a collaborator and they hand me a data set and I want to do something with it. I might try to download the data directly from the web, or I might access an application programming interface like the one that Twitter or other companies have that allows me to download some data directly from a data stream. Or I might want to actually just scrape data directly off of a webpage, and we'll talk a little bit about all of these throughout the course of this lecture and the next.  
+
+**Getting data from the internet -download.file()**  
+
+* So, one of the first, most important commands to know about is the download.file() command. And so, this does almost exactly what you would expect it to do. It downloads a file from the internet. Even if you can do this by hand, often you can go to the webpage that you're looking for and you can actually click on the file and it will download the file and then you'll be able to perform analysis on it.  
+
+* You might want to actually include the download.file() command in your analysis script because it makes it a little bit more reproducible. You can also very easily collect what time you've downloaded the file which is useful, in case those data that are on the internet or somewhere that you don't actually have control over might change. And you'll be able to tell people exactly when you downloaded the data, and they can figure out which version of the data you're using.  
+
+* So, the important parameters of this function are the URL where we're going to get the data from, destfile, which is the destination file where the file's going to end up on your computer and then, we'll talk a little bit about method, the way you actually download the file And so, this has to do with the back end. Normally, I'll try not to include these sorts of arguments in the important arguments, but this is one that is required for making downloading files from a particular type of URL possible on a Macintosh so I need to talk about it a little bit. It's useful for tab-delimited text files, for CSV files, for JSON files, for any of the sort of text files that we're going to be talking about.  
+
+**Example - Baltimore camera data**  
+
+* So, I'm going to use an example here and I'm going to use the Baltimore fixed camera data. So, these are cameras that are setup around Baltimore to monitor people's speed and I run frequently afoul of several of these monitors and contribute to Baltimore's tax revenue.  
+
+* And so anyway, the data are available from this website. I am telling you about these data, and I'm a little concerned about their website becoming overrun given the size of the class. So, if you all rush out to this website and you're unable to access it, it might be because you're all trying to get there at once. But I assure you that it exists and it's accessible, and hopefully, they'll be able to handle all of us going and checking it out.  
+
+**Example - Baltimore camera data,csv**  
+
+* So suppose that we want to download the locations of these so that I or someone else can learn a little bit more about where you need to be careful and where you might pick up a ticket. So the data are actually available in a ton of different formats. So, if you go up here on the webpage and click on export, it's up here in the sort of upper right-hand in the light blue. You’ll get a list of different ways that you can download the file so that there's a bunch of different file formats here. And we're going to start off looking at CSV files. So, if you go to the CSV file and right-click on that, you can copy the link address. That's one of the options that they give you. So, this is the actual link to the CSV file itself. And that will allow us to use download.file() to actually download the file from, directly from this website without having to first download it to our computer and then move it to the directory we want to use to perform the analysis.  
+
+**Download a file from the web**  
+
+* So, here's how we're going to do that. So, first of all, we need to get the URL, so this is file URL, is the URL where the CSV file is going to come from. And so, I've just copied this internet URL from that previous webpage just like I showed you before. And so, then what I can do is, I can send to download.file() that particular URL, and then tell it where I'd like that particular file to be stored. So, in this case, I am still in the gettingData1 directory. And so, what I would like to do is be able to move down into the data directory and store the file as cameras.csv in that directory.  
+
+* Here, I have to include this method=’curl’ because I'm accessing an HTTPS website, so this is a secure connection to this website. And Macintosh does not support download.file() with the defaults for HTTPS websites. It should be okay, you should be able to leave method=’curl’ off if you're on a Windows machine and you should be able to download this file. But on a Macintosh, you'll need to include it. If this was just HTTP and not HTTPS, both Macintosh and Windows work fine with the defaults for download.file. 
+
+* So now, I can use this command called list.files() and what list.files() does is: it tells me all of the files that exist in a particular directory. So again, I'm using relative paths, so I'm saying, go to the director that I'm in, the ./ directory which in this case is gettingData1. And then, move down one directory to data and list out all the files that appear there, and so you'll see that there's files of various different types. We're going to see those throughout the rest of the lecture.  
+
+* So, one is cameras.csv which was downloaded using download.file(). The other thing that I could do, and this I recommend if you're going to be downloading data from the internet, is one of the variables you can store is the date that you downloaded the file. And so, the way that you do that is you type date(), and that actually accesses the date and returns it. And then you store it in this date-downloaded variable the actual time and date when you downloaded that data set. This will be useful later. You can save this particular variable so that you can share with other people when you got the data in case that they've changed. 
+
+**Some notes about download.file()**  
+
+* So, a couple of notes about this download.file(). As I mentioned, if it starts with HTTP, you should be able to use download.file() without any sort of change to the parameters. You can use the defaults.  
+
+* If the URL, url starts with HTTPS on, Windows you are probably okay, although I haven't tried it on all possible versions of Windows. So if you're running into trouble you might want to think about changing the method as well.  
+
+* If the URL starts with HTTPS on a Mac, you're going to probably going to need to set the method=curl. And that's because the defaults won't allow you to access the secure connections on a Mac.  
+
+* And if the file is big, this might take awhile. A couple of notes here, like I said, one is that if a lot of people access one particular database all at once, it might s low down. Alternatively, if you have really big data sets, in the case of the cameras data set, it isn't very big, it won't take very long. But you can also, from that same Baltimore city website, download two million parking tickets that have been assigned to all the people in Baltimore that get parking tickets, and that data will take a little bit longer to download.  
+
+* And like I mentioned, you should to record when you downloaded the data, because it might change, particularly in terms of the parking tickets that will get updated regularly.  
+
+**Loading data you have saved - read.table()**  
+
+* So once you've downloaded the data to your directory, you want to be able to load it into R so that you can work with it. So, the main function for doing that in R the one that makes it the simplest at least, is the read.table() function. Now, there are other functions that do this. And we'll talk about a couple of them in a minute that handle different file types. But read.table() takes care of a lot of the difficulties that you might have in reading a data set into R in terms of assigning into a data frame, understanding how many rows and columns it has, setting up the row names and the column names for you and so forth. It's flexible and is robust but it requires a lot of parameters compared to maybe some of the other commands that we'll see in a minute.  
+
+* Something to remember about R in general is that the data is being read into RAM. So, that means that the amount of RAM on your computer is a limit to how much data that you can load into R. There are actually a number of different ways that you can deal with bigger data and I'll reference a few of those later. But, for the purposes of this class, we'll generally be dealing with data sets that, that shouldn't cause a problem In terms of loading it into RAM.  
+
+* And the important parameters here are the file that you're trying to load, whether it has a header line, what is the separation that is used to separate the data values, the row names, and the number of rows to read in. And the related functions read.csv() and read.csv2(), I'll talk about in just a minute, are basically versions of read.table() where some of the parameters are set in advance.  
+
+**Example: Baltimore camera data**  
+
+* So, for the Baltimore camera data, here's an example so we can, again, get our working directory. And we see that we're in the gettingData directory here. And so, if want to load in the camera data we can use read.table() and we can again use relative paths, so ./ refers to the getting data one directory. Then we want to look in the subdirectory data and load in the file cameras.csv. And if you do this directly without giving read.table() any parameters you'll get an error that says line one does not have thirteen elements.  
+
+* So, it turns out that the problem is, is that here we have a comma separated file, and read.table() we haven't told it what kind of separation is occurring between the data elements. And so, it just uses the default, which in this case is not a comma. And so, it tries to read all of the data elements into exactly one element because we have commas separating the values, we don't have whatever separation read.table() is looking for. So then, if we try to look at the top of the camera data set, it hasn't actually been loaded into R because of this error and so you get an error in looking at it.  
+
+**Example: Baltimore camera data {continued}**  
+
+* So, how can we fix that error? Well, what you can do is again if you know that you’re in this gettingData1 directory, we can try to read.table() of the same file. But now, we tell read.table() that the values are separated by a comma. And we also tell read.table() that there's a header line. So what, a header line is, is when data are stored, often they're stored with names for the columns. In this case, you can see that address, directions, street, and cross street are actually names of variables that are being loaded into R. And so if you tell read.table() that there's this header row, it'll automatically handle the header row and assign it to be, sort of, the column names of this data frame. And, so then, if we look at the head of the camera data, the top of the camera data, you can see that we see that's it's been loaded into R and it's been assigned to a data frame.  
+
+**Example: Baltimore camera data {continued}**  
+
+* So an example, in this case, the example is a CSV file, this comma separated file. This is one of the most common formats for data to be stored in. And so second function has been written called read.csv() which automatically sets the separation between variables to be comma, and automatically sets header to be equal to true. In all other respects, it's very similar to read.table().  
+
+* So, if I run the command read.csv on that same file, but here I don't actually include the separation argument and I don't include the header argument, they're already set by default. You can see that the data loads in just fine. I don't know if we look at the top of the data set,  the head of the data set, it's very similar, in fact it's identical to the data set that had been read in with read.table(). So, an advantage of using CSV files here, is you have this read.csv function which requires a few less parameters to be set. 
+
+**read.xlsx(), read.xlsx2() {xlsx package}**  
+
+Another type of data set that is very common is Excel files. And so, R can handle Excel files but you need the xlsx package to be able to do that. So, you're going to have to load install the xlsx package if you want to be able to read Excel files. So, it reads these files, but it's a little bit slow. And so you sometimes have to take a little bit more time to read them in if you want to read them directly from Excel files. One thing that I often do when dealing with excel files is read them in once with read.xlsx. And then write the back out as CSV files or something that R reads in a little bit faster.  
+
+* The important parameters here are the file, the Excel file that you're looking for, the sheet index, this tells you which sheet to read in. So, if it has multiple sheets, you just tell it the number of the sheet in order. You can also tell it the row index and the column index so that it knows which rows and columns to read in and tell it whether it has a header or not. read.xlsx2() is very, very similar to read.xlsx. it relies a little more on low level Java functions and it may be a little bit faster if you use it.  
+
+**read.xlsx() - Baltimore camera data**  
+
+* So, I'm going to use the same example for the Baltimore Camera Data. So again, I went to the Baltimore Camera Data website and I got the URL but this is not the URL for the Excel file for the same camera data. And so, what I can do is, again run download.file() on that URL and send it to a new file called camera.xlsx. Again, I'm using method=’curl’ because this is a Mac so that's what I need to do to, to be able to allow me to access an HTTPS site.  
+
+* And then, I can read in that data file using read.xlsx2. And, so here, I'm telling it sheetIndex=1, and the reason why I'm doing that is because it's the first sheet in that Excel file that I want to have read in. And then, if I look at the head of that camera data, again I get the exact same file that I've been seeing with read.csv() or read.table().  
+
+**Picking a file - less reproducible, but useful**  
+
+* So, another thing to keep in mind is that when you're performing these analyses, the most reproducible way to download files and to read in files is to write out the paths to those files. But, sometimes when you are performing your analysis, you don't want to have to type out the path every time. Or you want to be able to really quickly identify a file and you know which directory it's in but you don't want to type the whole thing out.  
+
+* And so, what you can do is you can run the same command, read.csv(). But instead of passing it the string that leads you to the path with the data R, you can type file.choose(). And so, what can it do is open up here a window, a finder window that you can use to try to find the file. And, in this case, I'll find the cameras.csv file. If I click Open, then that file will be read with read.csv() so I don't actually have to type out the whole directory. Again, this is less reproducible so it's not encouraged for the final version of the scripts you're going to be distributing to other people.  
+
+* Alright, that was the first video on getting data into R, and then we'll have one more video on a few other ways you can get data into R that are maybe a little bit more exotic.

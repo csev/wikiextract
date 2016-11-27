@@ -1,0 +1,389 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Octave Tutorial</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Basic_Operations"><span class="tocnumber">1</span> <span class="toctext">Basic Operations</span></a></li>
+<li class="toclevel-1"><a href="#Moving_Data_Around"><span class="tocnumber">2</span> <span class="toctext">Moving Data Around</span></a></li>
+<li class="toclevel-1"><a href="#Computing_on_Data"><span class="tocnumber">3</span> <span class="toctext">Computing on Data</span></a></li>
+<li class="toclevel-1"><a href="#Plotting_Data"><span class="tocnumber">4</span> <span class="toctext">Plotting Data</span></a></li>
+<li class="toclevel-1"><a href="#Control_statements:_for.2C_while.2C_if_statements"><span class="tocnumber">5</span> <span class="toctext">Control statements: for, while, if statements</span></a></li>
+<li class="toclevel-1"><a href="#Functions"><span class="tocnumber">6</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1"><a href="#Vectorization"><span class="tocnumber">7</span> <span class="toctext">Vectorization</span></a></li>
+<li class="toclevel-1"><a href="#Working_on_and_Submitting_Programming_Exercises"><span class="tocnumber">8</span> <span class="toctext">Working on and Submitting Programming Exercises</span></a></li>
+<li class="toclevel-1"><a href="#Video_Lecture_Table_of_Contents"><span class="tocnumber">9</span> <span class="toctext">Video Lecture Table of Contents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Basic_Operations_2"><span class="tocnumber">9.1</span> <span class="toctext">Basic Operations</span></a></li>
+<li class="toclevel-2"><a href="#Moving_Data_Around_2"><span class="tocnumber">9.2</span> <span class="toctext">Moving Data Around</span></a></li>
+<li class="toclevel-2"><a href="#Computing_on_Data_2"><span class="tocnumber">9.3</span> <span class="toctext">Computing on Data</span></a></li>
+<li class="toclevel-2"><a href="#Plotting_data_2"><span class="tocnumber">9.4</span> <span class="toctext">Plotting data</span></a></li>
+<li class="toclevel-2"><a href="#Control_statements"><span class="tocnumber">9.5</span> <span class="toctext">Control statements</span></a></li>
+<li class="toclevel-2"><a href="#Vectorization_2"><span class="tocnumber">9.6</span> <span class="toctext">Vectorization</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#External_Resources"><span class="tocnumber">10</span> <span class="toctext">External Resources</span></a></li>
+<li class="toclevel-1"><a href="#Frequently_Asked_Questions"><span class="tocnumber">11</span> <span class="toctext">Frequently Asked Questions</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Basic_Operations">Basic Operations</span></h1>
+<code><pre>%% Change Octave prompt  
+PS1('&gt;&gt; ');
+%% Change working directory in windows example:
+cd 'c:/path/to/desired/directory name'
+%% Note that it uses normal slashes and does not use escape characters for the empty spaces.
+
+%% elementary operations
+5+6
+3-2
+5*8
+1/2
+2^6
+1 == 2 &#160;% false
+1 ~= 2 &#160;% true.  note, not &quot;!=&quot;
+1 &amp;&amp; 0
+1 || 0
+xor(1,0)
+
+
+%% variable assignment
+a = 3;&#160;% semicolon suppresses output
+b = 'hi';
+c = 3&gt;=1;
+
+% Displaying them:
+a = pi
+disp(a)
+disp(sprintf('2 decimals:&#160;%0.2f', a))
+disp(sprintf('6 decimals:&#160;%0.6f', a))
+format long
+a
+format short
+a
+
+
+%%  vectors and matrices
+A = [1 2; 3 4; 5 6]
+
+v = [1 2 3]
+v = [1; 2; 3]
+v = 1:0.1:2   &#160;% from 1 to 2, with stepsize of 0.1. Useful for plot axes
+v = 1:6       &#160;% from 1 to 6, assumes stepsize of 1 (row vector)
+
+C = 2*ones(2,3) &#160;% same as C = [2 2 2; 2 2 2]
+w = ones(1,3)   &#160;% 1x3 vector of ones
+w = zeros(1,3)
+w = rand(1,3) &#160;% drawn from a uniform distribution 
+w = randn(1,3)&#160;% drawn from a normal distribution (mean=0, var=1)
+w = -6 + sqrt(10)*(randn(1,10000)); &#160;% (mean = -6, var = 10) - note: add the semicolon
+hist(w)    &#160;% plot histogram using 10 bins (default)
+hist(w,50) &#160;% plot histogram using 50 bins
+% note: if hist() crashes, try &quot;graphics_toolkit('gnu_plot')&quot; 
+
+I = eye(4)   &#160;% 4x4 identity matrix
+
+% help function
+help eye
+help rand
+help help
+</pre></code>
+<h1> <span class="mw-headline" id="Moving_Data_Around">Moving Data Around</span></h1>
+<p><em>Data files used in this section</em>: <a rel="nofollow" class="external text" href="https://raw.githubusercontent.com/tansaku/py-coursera/master/featuresX.dat">featuresX.dat</a>, <a rel="nofollow" class="external text" href="https://raw.githubusercontent.com/tansaku/py-coursera/master/priceY.dat">priceY.dat</a></p>
+<code><pre>%% dimensions
+sz = size(A)&#160;% 1x2 matrix: [(number of rows) (number of columns)]
+size(A,1) &#160;% number of rows
+size(A,2) &#160;% number of cols
+length(v) &#160;% size of longest dimension
+
+
+%% loading data
+pwd   &#160;% show current directory (current path)
+cd 'C:\Users\ang\Octave files'  &#160;% change directory 
+ls    &#160;% list files in current directory 
+load q1y.dat   &#160;% alternatively, load('q1y.dat')
+load q1x.dat
+who   &#160;% list variables in workspace
+whos  &#160;% list variables in workspace (detailed view) 
+clear q1y      &#160;% clear command without any args clears all vars
+v = q1x(1:10); &#160;% first 10 elements of q1x (counts down the columns)
+save hello.mat v;  &#160;% save variable v into file hello.mat
+save hello.txt v -ascii;&#160;% save as ascii
+% fopen, fread, fprintf, fscanf also work  [[not needed in class]]
+
+%% indexing
+A(3,2) &#160;% indexing is (row,col)
+A(2,:) &#160;% get the 2nd row. 
+       &#160;% &quot;:&quot; means every element along that dimension
+A(:,2) &#160;% get the 2nd col
+A([1 3],:)&#160;% print all  the elements of rows 1 and 3
+
+A(:,2) = [10; 11; 12]    &#160;% change second column
+A = [A, [100; 101; 102]];&#160;% append column vec
+A(:)&#160;% Select all elements as a column vector.
+
+% Putting data together 
+A = [1 2; 3 4; 5 6]
+B = [11 12; 13 14; 15 16]&#160;% same dims as A
+C = [A B] &#160;% concatenating A and B matrices side by side
+C = [A, B]&#160;% concatenating A and B matrices side by side
+C = [A; B]&#160;% Concatenating A and B top and bottom
+</pre></code>
+<h1> <span class="mw-headline" id="Computing_on_Data">Computing on Data</span></h1>
+<code><pre>%% initialize variables
+A = [1 2;3 4;5 6]
+B = [11 12;13 14;15 16]
+C = [1 1;2 2]
+v = [1;2;3]
+
+%% matrix operations
+A * C &#160;% matrix multiplication
+A .* B&#160;% element-wise multiplication
+% A .* C  or A * B gives error - wrong dimensions
+A .^ 2&#160;% element-wise square of each element in A
+1./v  &#160;% element-wise reciprocal
+log(v) &#160;% functions like this operate element-wise on vecs or matrices 
+exp(v)
+abs(v)
+
+-v &#160;% -1*v
+
+v + ones(length(v), 1)  
+% v + 1 &#160;% same
+
+A' &#160;% matrix transpose
+
+%% misc useful functions
+
+% max  (or min)
+a = [1 15 2 0.5]
+val = max(a)
+[val,ind] = max(a)&#160;% val -  maximum element of the vector a and index - index value where maximum occur
+val = max(A)&#160;% if A is matrix, returns max from each column
+
+% compare values in a matrix &amp; find
+a &lt; 3&#160;% checks which values in a are less than 3
+find(a &lt; 3)&#160;% gives location of elements less than 3
+A = magic(3)&#160;% generates a magic matrix - not much used in ML algorithms
+[r,c] = find(A&gt;=7) &#160;% row, column indices for values matching comparison
+
+% sum, prod
+sum(a)
+prod(a)
+floor(a)&#160;% or ceil(a)
+max(rand(3),rand(3))
+max(A,[],1) -  maximum along columns(defaults to columns - max(A,[]))
+max(A,[],2) - maximum along rows
+A = magic(9)
+sum(A,1)
+sum(A,2)
+sum(sum( A .* eye(9) ))
+sum(sum( A .* flipud(eye(9)) ))
+
+
+% Matrix inverse (pseudo-inverse)
+pinv(A)       &#160;% inv(A'*A)*A'
+</pre></code>
+<h1> <span class="mw-headline" id="Plotting_Data">Plotting Data</span></h1>
+<code><pre>%% plotting
+t = [0:0.01:0.98];
+y1 = sin(2*pi*4*t); 
+plot(t,y1);
+y2 = cos(2*pi*4*t);
+hold on; &#160;% &quot;hold off&quot; to turn off
+plot(t,y2,'r');
+xlabel('time');
+ylabel('value');
+legend('sin','cos');
+title('my plot');
+print -dpng 'myPlot.png'
+close;          &#160;% or,  &quot;close all&quot; to close all figs
+figure(1); plot(t, y1);
+figure(2); plot(t, y2);
+figure(2), clf; &#160;% can specify the figure number
+subplot(1,2,1); &#160;% Divide plot into 1x2 grid, access 1st element
+plot(t,y1);
+subplot(1,2,2); &#160;% Divide plot into 1x2 grid, access 2nd element
+plot(t,y2);
+axis([0.5 1 -1 1]); &#160;% change axis scale
+
+%% display a matrix (or image) 
+figure;
+imagesc(magic(15)), colorbar, colormap gray;
+% comma-chaining function calls.  
+a=1,b=2,c=3
+a=1;b=2;c=3;
+</pre></code>
+<h1> <span class="mw-headline" id="Control_statements:_for.2C_while.2C_if_statements">Control statements: <code>for</code>, <code>while</code>, <code>if</code> statements</span></h1>
+<code><pre>v = zeros(10,1);
+for i=1:10, 
+    v(i) = 2^i;
+end;
+% Can also use &quot;break&quot; and &quot;continue&quot; inside for and while loops to control execution.
+
+i = 1;
+while i &lt;= 5,
+  v(i) = 100; 
+  i = i+1;
+end
+
+i = 1;
+while true, 
+  v(i) = 999; 
+  i = i+1;
+  if i == 6,
+    break;
+  end;
+end
+
+if v(1)==1,
+  disp('The value is one!');
+elseif v(1)==2,
+  disp('The value is two!');
+else
+  disp('The value is not one or two!');
+end
+</pre></code>
+<h1> <span class="mw-headline" id="Functions">Functions</span></h1>
+<p>To create a function, type the function code in a text editor (e.g. gedit or notepad), and save the file as "functionName.m" </p>
+<p>Example function:</p>
+<code><pre>function y = squareThisNumber(x)
+
+y = x^2;
+</pre></code>
+<p>To call the function in Octave, do either:</p>
+<p>1) Navigate to the directory of the functionName.m file and call the function:</p>
+<code><pre>   &#160;% Navigate to directory:
+    cd /path/to/function
+
+   &#160;% Call the function:
+    functionName(args)
+</pre></code>
+<p>2) Add the directory of the function to the load path and save it:<br />
+<strong>You should not use addpath/savepath for any of the assignments in this course. Instead use 'cd' to change the current working directory. Watch the video on submitting assignments in week 2 for instructions.</strong> </p>
+<code><pre>   &#160;% To add the path for the current session of Octave:
+    addpath('/path/to/function/')
+
+   &#160;% To remember the path for future sessions of Octave, after executing addpath above, also do:
+    savepath
+</pre></code>
+<p>Octave's functions can return more than one value:</p>
+<code><pre>    function [y1, y2] = squareandCubeThisNo(x)
+    y1 = x^2;
+    y2 = x^3;
+</pre></code>
+<p>Call the above function this way:</p>
+<code><pre>    [a,b] = squareandCubeThisNo(x)
+</pre></code>
+<h1> <span class="mw-headline" id="Vectorization">Vectorization</span></h1>
+<p>Vectorization is the process of taking code that relies on <strong>loops</strong> and converting it into <strong>matrix operations</strong>. It is more efficient, more elegant, and more concise.</p>
+<p>As an example, let's compute our prediction from a hypothesis. Theta is the vector of fields for the hypothesis and x is a vector of variables.</p>
+<p>With loops:</p>
+<code><pre>prediction = 0.0;
+for j = 1:n+1,
+  prediction += theta(j) * x(j);
+end;
+</pre></code>
+<p>With vectorization:</p>
+<code><pre>prediction = theta' * x;
+</pre></code>
+<p>If you recall the definition multiplying vectors, you'll see that this one operation does the element-wise multiplication and overall sum in a very concise notation.</p>
+<h1> <span class="mw-headline" id="Working_on_and_Submitting_Programming_Exercises">Working on and Submitting Programming Exercises</span></h1>
+<ol>
+<li>Download and extract the assignment's zip file.</li>
+<li>Edit the proper file 'a.m', where a is the name of the exercise you're working on.</li>
+<li>Run octave and cd to the assignment's extracted directory</li>
+<li>Run the 'submit' function and enter the assignment number, your email, and a password (found on the top of the "Programming Exercises" page on coursera)</li>
+</ol>
+<h1> <span class="mw-headline" id="Video_Lecture_Table_of_Contents">Video Lecture Table of Contents</span></h1>
+<h3> <span class="mw-headline" id="Basic_Operations_2">Basic Operations</span></h3>
+<p><pre>
+0:00    Introduction
+3:15    Elementary and Logical operations
+5:12    Variables
+7:38    Matrices
+8:30    Vectors
+11:53   Histograms
+12:44   Identity matrices
+13:14   Help command
+</pre></p>
+<h3> <span class="mw-headline" id="Moving_Data_Around_2">Moving Data Around</span></h3>
+<p><pre>
+0:24    The size command
+1:39    The length command
+2:18    File system commands
+2:25    File handling
+4:50    Who, whos, and clear
+6:50    Saving data
+8:35    Manipulating data
+12:10   Unrolling a matrix
+12:35   Examples
+14:50   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Computing_on_Data_2">Computing on Data</span></h3>
+<p><pre>
+0:00    Matrix operations
+0:57    Element-wise operations
+4:28    Min and max
+5:10    Element-wise comparisons
+5:43    The find command
+6:00    Various commands and operations
+</pre></p>
+<h3> <span class="mw-headline" id="Plotting_data_2">Plotting data</span></h3>
+<p><pre>
+0:00    Introduction
+0:54    Basic plotting
+2:04    Superimposing plots and colors
+3:15    Saving a plot to an image
+4:19    Clearing a plot and multiple figures
+4:59    Subplots
+6:15    The axis command
+6:39    Color square plots
+8:35    Wrapping up
+</pre></p>
+<h3> <span class="mw-headline" id="Control_statements">Control statements</span></h3>
+<p><pre>
+0:10    For loops
+1:33    While loops
+3:35    If statements
+4:54    Functions
+6:15    Search paths
+7:40    Multiple return values
+8:59    Cost function example (machine learning)
+12:24   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Vectorization_2">Vectorization</span></h3>
+<p><pre>
+0:00    Why vectorize?
+1:30    Example
+4:22    C++ example
+5:40    Vectorization applied to gradient descent
+9:45    Python
+</pre></p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Logistic_Regression" title="ML:Logistic Regression">Logistic Regression</a> Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<h1> <span class="mw-headline" id="External_Resources">External Resources</span></h1>
+<p>Octave Quick Reference (<a rel="nofollow" class="external free" href="http://enacit1.epfl.ch/octave_doc/refcard/refcard-a4.pdf">http://enacit1.epfl.ch/octave_doc/refcard/refcard-a4.pdf</a>)</p>
+<p>An Introduction to Matlab (<a rel="nofollow" class="external free" href="http://www.maths.dundee.ac.uk/ftp/na-reports/MatlabNotes.pdf">http://www.maths.dundee.ac.uk/ftp/na-reports/MatlabNotes.pdf</a>)</p>
+<p><a rel="nofollow" class="external text" href="https://learnxinyminutes.com/docs/matlab/">Learn X in Y Minutes: Matlab</a></p>
+<h1> <span class="mw-headline" id="Frequently_Asked_Questions">Frequently Asked Questions</span></h1>
+<p><strong>Q: Where is the MATLAB tutorial?</strong></p>
+<p>A: Octave and MATLAB are mostly identical for the purposes of this course. The differences are minor and and are pointed-out in the lecture notes in the Wiki, and in the Tutorials for the programming exercises (see the Forum for a list of Tutorials).</p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 164/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Octave_Tutorial&amp;oldid=34332">https://share.coursera.org/wiki/index.php?title=ML:Octave_Tutorial&amp;oldid=34332</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

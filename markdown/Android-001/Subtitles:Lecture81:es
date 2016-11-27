@@ -1,0 +1,702 @@
+
+
+[[Android-001:Subtitles:Lecture79:es |<< prev subtitle]] | [[Android-001:Subtitles:Lecture75:es | next subtitle >>]]
+
+### Sensors - Part 2 (Spanish subtitles, ES_ES)
+Spanish translation from the original english subtitles.<br>
+* **Translated by:**    Fedros G.R.<br>
+* **Instructions:**
+<ol>
+<li>Create a txt file by using Notepad app (or other text editor), then change its extension from .txt to .srt.<BR>
+    *IMPORTANT!: Make sure the name of your video lecture has the exact same name as your subtitle file.*</li>
+<li> Copy and Paste the following text into the SRT file.</li>
+</ol>
+
+<pre>
+1
+00:00:09,607 --> 00:00:12,797
+Hola, soy Adam Porter y esto es
+
+2
+00:00:12,797 --> 00:00:19,038
+<i><font color="#0080ff">Programación de Aplicaciones Móviles para
+Sistemas Portátiles Android.</font></i>
+
+3
+00:00:19,038 --> 00:00:22,134
+En la aplicación de ejemplo que
+acabamos de ver,
+
+4
+00:00:22,134 --> 00:00:26,000
+traté de sostener el dispositivo
+perfectamente vertical...
+
+5
+00:00:26,000 --> 00:00:29,000
+Y si hubiese sido capaz de conseguirlo,
+
+6
+00:00:29,000 --> 00:00:34,800
+el acelerómetro -de manera ideal-, habría
+informado de valores cercanos a X igual a 0
+
+7
+00:00:34,800 --> 00:00:39,600
+metros por segundo al cuadrado,
+Y igual a 9.81 metros por
+
+8
+00:00:39,600 --> 00:00:44,590
+segundo al cuadrado y Z igual a cero
+por metros al segundo al cuadrado.
+
+9
+00:00:45,810 --> 00:00:52,200
+Pero -tal y como viste en la aplicación de
+ejemplo-, los valores del acelerómetro fluctuaban.
+
+10
+00:00:52,200 --> 00:00:55,270
+Todas las aplicaciones van a experimentar
+esto mismo
+
+11
+00:00:55,270 --> 00:00:59,960
+debido al movimiento natural del usuario,
+las superficies no planas,
+
+12
+00:00:59,960 --> 00:01:01,990
+el ruido eléctrico y demás...
+
+13
+00:01:04,710 --> 00:01:09,150
+Al crear aplicaciones con sensor habilitado,
+los desarrolladores a menudo
+
+14
+00:01:09,150 --> 00:01:13,350
+transforman los datos sin procesar
+para normalizarlas.
+
+15
+00:01:13,350 --> 00:01:19,590
+2 transformaciones habituales son las llamadas
+filtros de paso bajo y filtros de paso alto.
+
+16
+00:01:19,590 --> 00:01:22,275
+Hablaremos de cada una a su tiempo.
+
+17
+00:01:22,275 --> 00:01:30,310
+Los filtros de paso bajo son usados para restarle
+importancia a pequeños cambios de fuerza transitorios,
+
+18
+00:01:30,310 --> 00:01:34,044
+haciendo hincapié en las fuerzas
+constantes de larga duración.
+
+19
+00:01:35,200 --> 00:01:37,420
+Deberías usar filtros de paso bajo
+cuando
+
+20
+00:01:37,420 --> 00:01:41,090
+tu aplicación necesite poner atención
+a la fuerza constante de
+
+21
+00:01:41,090 --> 00:01:43,360
+la gravedad, por ejemplo, y no
+quieres que esta
+
+22
+00:01:43,360 --> 00:01:46,110
+se vea afectada solo porque
+tus manos tiemblan un poco.
+
+23
+00:01:46,110 --> 00:01:51,040
+Un ejemplo de esto en la vida real podría
+ser algo como el nivel de un carpintero.
+
+24
+00:01:51,040 --> 00:01:55,100
+La burbuja necesita moverse en base
+ a la gravedad,
+
+25
+00:01:55,100 --> 00:01:57,240
+y no a causa de ligeros temblores
+de la mano.
+
+26
+00:01:58,350 --> 00:02:02,870
+Por el contrario, usarás filtros de
+ paso alto cuando debes hacer hincapié en
+
+27
+00:02:02,870 --> 00:02:05,030
+los cambios de fuerza transitorios,
+y quieras
+
+28
+00:02:05,030 --> 00:02:08,280
+restarle importancia a los componentes
+de fuerza constante.
+
+29
+00:02:09,760 --> 00:02:12,360
+Podrías usar un filtro de paso alto cuando
+
+30
+00:02:12,360 --> 00:02:14,590
+tu aplicación deba ignorar la fuerza
+constante de
+
+31
+00:02:14,590 --> 00:02:20,660
+la gravedad, por ejemplo, pero deba responder
+a los movimientos específicos que el usuario realiza.
+
+32
+00:02:20,660 --> 00:02:23,020
+Un ejemplo de esto en la vida realidad
+podría ser
+
+33
+00:02:23,020 --> 00:02:26,390
+un instrumento de percusión; como
+un juego de maracas.
+
+34
+00:02:26,390 --> 00:02:28,780
+Realmente no te preocupas de la gravedad,
+
+35
+00:02:28,780 --> 00:02:32,070
+si no de como el usuario agita el instrumento.
+
+36
+00:02:34,160 --> 00:02:39,480
+La siguiente aplicación se llama "SensorFilteredAccelerometer"
+(Sensor Acelerómetro Filtrado).
+
+37
+00:02:39,480 --> 00:02:44,570
+Esta aplicación utiliza filtros,
+tanto de paso bajo como de paso alto,
+
+38
+00:02:44,570 --> 00:02:49,890
+a los datos sin procesar del acelerómetro,
+para después mostrar los valores filtrados.
+
+39
+00:02:49,890 --> 00:02:50,670
+Vamos a ejecutarla.
+
+40
+00:02:53,580 --> 00:02:55,240
+Luego, aquí está mi dispositivo.
+
+41
+00:02:55,240 --> 00:02:59,560
+Ahora iniciaré la aplicación.
+
+42
+00:03:00,650 --> 00:03:06,380
+Como puedes ver esta aplicación muestra
+9 TextViews (vistas de texto) con números en ellas.
+
+43
+00:03:07,420 --> 00:03:13,010
+Dichos números se corresponden con los
+valores de X, Y y Z que están siendo leídos
+
+44
+00:03:13,010 --> 00:03:18,750
+por el acelerómetro del dispositivo,
+Los valores brutos (tras de aplicar un
+
+45
+00:03:18,750 --> 00:03:24,490
+filtro de paso bajo) y los valores brutos
+tras aplicar un filtro de paso alto.
+
+46
+00:03:25,810 --> 00:03:31,450
+Si dejamos que la aplicación se ejecute durante
+un rato, veremos que los valores de paso bajo
+
+47
+00:03:31,450 --> 00:03:37,280
+comienzan a aproximarse a nuestras lecturas
+ideales del acelerómetro: aproximadamente 0
+
+48
+00:03:37,280 --> 00:03:43,180
+para los ejes X y Z, y aproximadamente 9.81
+para el eje Y.
+
+49
+00:03:44,210 --> 00:03:50,130
+Al mismo tiempo, puedes observar que
+todos los valores de paso alto tienden a 0.
+
+50
+00:03:50,130 --> 00:03:57,770
+Si giro el dispositivo en sentido contrario a las agujas del
+reloj, verás que el valor de paso alto X se vuelve positivo.
+
+51
+00:03:57,770 --> 00:04:00,640
+Y si lo roto en el sentido de las agujas del reloj,
+
+52
+00:04:00,640 --> 00:04:02,980
+observarás que el valor de paso alto X
+se vuelve negativo.
+
+53
+00:04:04,910 --> 00:04:07,680
+Vamos a echar un vistazo al código fuente
+para esta aplicación.
+
+54
+00:04:10,600 --> 00:04:15,370
+Aquí tenemos l aplicación "SensorFilterAccelerometer"
+abierta en nuestro entorno de desarrollo (IDE).
+
+55
+00:04:16,480 --> 00:04:19,430
+Ahora abriré la actividad principal.
+
+56
+00:04:19,430 --> 00:04:21,030
+Y notarás nuevamente que esta clase
+
+57
+00:04:21,030 --> 00:04:24,810
+implementa la interfaz " SensorEventListener".
+
+58
+00:04:24,810 --> 00:04:28,240
+De esta forma puede recibir 'callbacks' del gestor
+del sensor (SensorManager).
+
+59
+00:04:31,930 --> 00:04:36,050
+Ahora en onCreate la aplicación obtiene una
+referencia al SensorManager.
+
+60
+00:04:37,120 --> 00:04:42,708
+Después, obtiene una referencia al
+acelerómetro del dispositivo, llamando al
+
+61
+00:04:42,708 --> 00:04:47,120
+gestor del sensor .getDefaultSensor pasándole
+
+62
+00:04:47,120 --> 00:04:50,810
+el tipo constante que corresponde al acelerómetro.
+
+63
+00:04:52,380 --> 00:04:57,700
+En el método onResume, la aplicación
+registra esta clase como un 'listener'
+
+64
+00:04:57,700 --> 00:05:02,220
+de los eventos del acelerómetro, llamando
+al método registerListener.
+
+65
+00:05:03,450 --> 00:05:08,170
+Y después, el método onPause anula el registro
+de esta clase
+
+66
+00:05:08,170 --> 00:05:11,870
+como 'listener' de cualquier sensor que
+esta pueda estar escuchando.
+
+67
+00:05:13,730 --> 00:05:17,800
+Desplázandonos hacia abajo, llegamos al
+método onSensorChanged.
+
+68
+00:05:18,860 --> 00:05:22,790
+Y como antes, este método primero comprueba que
+
+69
+00:05:22,790 --> 00:05:25,980
+este evento es una lectura del acelerómetro.
+
+70
+00:05:25,980 --> 00:05:28,030
+Y después comprueba que haya trascurrido
+una cierta cantidad
+
+71
+00:05:28,030 --> 00:05:31,550
+de tiempo desde que la última lectura
+fue mostrada.
+
+72
+00:05:33,220 --> 00:05:37,120
+Y, si es así, el código guarda los valores de
+
+73
+00:05:37,120 --> 00:05:40,690
+X, Y y Z del acelerómetro, después
+aplica el filtro de paso bajo
+
+74
+00:05:40,690 --> 00:05:44,390
+a cada uno de los datos sin procesar,
+
+75
+00:05:44,390 --> 00:05:48,060
+tras lo cual, el código aplica el filtro
+de paso alto a cada uno de
+
+76
+00:05:48,060 --> 00:05:52,428
+los datos sin procesar. Vamos a echar
+un vistazo al código de los dos filtros.
+
+77
+00:05:52,428 --> 00:06:00,490
+Aquí tenemos al método lowPass,
+el cual calcula el filtro de paso bajo.
+
+78
+00:06:00,490 --> 00:06:06,160
+Este método recibe 2 parámetros: la lectura
+actual y la media prolongada.
+
+79
+00:06:07,250 --> 00:06:12,330
+Este, después, trata al valor del filtro  como, como
+una especie de media poderada.
+
+80
+00:06:12,330 --> 00:06:13,410
+En este caso,
+
+81
+00:06:13,410 --> 00:06:16,740
+el valor filtrado es igual al 80% de la media
+
+82
+00:06:16,740 --> 00:06:20,550
+de larga duración, más el 20% de la lectura actual.
+
+83
+00:06:21,770 --> 00:06:25,090
+Con el tiempo,  este cálculo se va aproximando a
+
+84
+00:06:25,090 --> 00:06:27,250
+los valores ideales de los que hemos hablado antes.
+
+85
+00:06:29,030 --> 00:06:32,260
+Desplazándonos hacia abajo nos encontramos
+con el método highPass.
+
+86
+00:06:32,260 --> 00:06:35,780
+el cual realiza el cálculo de los valores filtrados
+con paso alto.
+
+87
+00:06:35,780 --> 00:06:38,640
+Y este método también recibe dos parámetros
+
+88
+00:06:38,640 --> 00:06:42,990
+ La lectura actual y  la media prolongada,
+la cual -de hecho-, es
+
+89
+00:06:42,990 --> 00:06:46,450
+calculada por el método lowPass, del cual
+acabamos de hablar.
+
+90
+00:06:47,720 --> 00:06:53,100
+Este código obtiene la media prolongada
+a partir de la lectura actual y
+
+91
+00:06:53,100 --> 00:06:57,530
+y por consiguiente representa la parte de
+la lectura que no es debida a la gravedad.
+
+92
+00:07:01,270 --> 00:07:05,450
+Esta aplicación de ejemplo se llama
+"SensorCompass" (Sensor Brújula)
+
+93
+00:07:05,450 --> 00:07:07,700
+y utiliza el acelerómetro del dispositivo,
+
+94
+00:07:07,700 --> 00:07:12,200
+y su magnetómetro, para orientar una
+
+95
+00:07:12,200 --> 00:07:15,280
+aguja de brújula hacia el norte magnético.
+
+96
+00:07:16,740 --> 00:07:17,860
+Luego, aquí está mi dispositivo,
+
+97
+00:07:19,060 --> 00:07:23,380
+Voy a iniciar la aplicación.
+
+98
+00:07:23,380 --> 00:07:26,540
+Como puedes ver, esta aplicación muestra
+
+99
+00:07:26,540 --> 00:07:31,600
+un círculo verde con una flecha blanca.
+Ahora mismo, esta flecha
+
+100
+00:07:31,600 --> 00:07:36,446
+apunta hacia el norte magnético.
+No obstante, si comienzo a
+
+101
+00:07:36,446 --> 00:07:41,550
+girar el dispositivo, observarás que la flecha
+continua apuntando hacia
+
+102
+00:07:41,550 --> 00:07:46,400
+el norte, lo cual -por supuesto-, es lo que
+exactamente una brújula debe hacer.
+
+103
+00:07:46,400 --> 00:07:52,490
+Vamos a echar un vistazo al
+
+104
+00:07:52,490 --> 00:07:59,470
+ código fuente para esta aplicación.
+
+105
+00:08:01,850 --> 00:08:05,179
+Aquí tenemos la aplicación "SensorCompass" abierta
+en el entorno de desarrollo (IDE).
+
+106
+00:08:07,320 --> 00:08:12,610
+Ahora voy a abrir la actividad principal.
+Vamos a desplazarnos hasta el método onCreate.
+
+107
+00:08:14,390 --> 00:08:19,540
+Tal y como en las otras aplicaciones,
+este comenzará por inicializar la interfaz
+
+108
+00:08:19,540 --> 00:08:25,040
+y este, particularmente, crea una vista
+personalizada que contiene
+
+109
+00:08:25,040 --> 00:08:30,630
+la fecha de la brújula y después añade
+dicha vista a la vista principal de las actividades.
+
+110
+00:08:32,050 --> 00:08:32,380
+Este, después,
+
+111
+00:08:32,380 --> 00:08:34,450
+obtiene una referencia al gestor del sensor.
+
+112
+00:08:36,090 --> 00:08:40,500
+y tras esto, obtiene una referencia al acelerómetro
+del dispositivo y
+
+113
+00:08:40,500 --> 00:08:44,785
+obtiene otra referencia al magnetómetro del
+dispositivo llamando al
+
+114
+00:08:44,785 --> 00:08:51,160
+gestor del sensor .getdefaultsensor, pasándole los
+tipos de constante apropiados.
+
+115
+00:08:53,960 --> 00:08:59,450
+En el método onResume, el código registra
+esta clase como un 'listener' de los eventos
+
+116
+00:08:59,450 --> 00:09:04,850
+del acelerómetro y el magnetómetro, llamando al
+método registerListener.
+
+117
+00:09:06,180 --> 00:09:11,080
+El método onPause anula el registro de esta clase
+como un 'listener' de cualquier sensor.
+
+118
+00:09:13,450 --> 00:09:18,830
+El método onSensorChange procesa los eventos
+de sensor entrantes.
+
+119
+00:09:18,830 --> 00:09:22,460
+Este método primero comprueba de que tipo
+de evento se trata, un acelerómetro o
+
+120
+00:09:22,460 --> 00:09:27,340
+un evento de magnetómetro, para luego
+copiar la información de evento adecuada.
+
+121
+00:09:28,500 --> 00:09:34,024
+Después, si hay alguna lectura proveniente de cada uno
+de los 2 sensores, el código invoca al método
+
+122
+00:09:34,024 --> 00:09:39,120
+sensormanager.getrotationmatrix
+
+123
+00:09:39,120 --> 00:09:42,810
+pasándole las lecturas del sensor y
+
+124
+00:09:42,810 --> 00:09:46,579
+un array, el cual almacenará la matriz de rotación.
+
+125
+00:09:47,850 --> 00:09:53,620
+Si dicho método tuvo éxito, entonces
+el código llama al método
+
+126
+00:09:53,620 --> 00:09:59,500
+sensormanager.getorientation, pasándole la
+matriz de rotación, que acabamos de obtener
+
+127
+00:09:59,500 --> 00:10:04,254
+de la llamada a getRotationMatrix, y
+
+128
+00:10:04,254 --> 00:10:07,259
+además le pasa otro array denominado orientationMatrix
+(matriz de orientación).
+
+129
+00:10:08,530 --> 00:10:12,130
+Cuando este método finalicé, la matriz de orientación
+
+130
+00:10:12,130 --> 00:10:15,730
+contendrá la información que la aplicación necesita
+
+131
+00:10:15,730 --> 00:10:18,570
+para determinar cómo está orientado el dispositivo
+
+132
+00:10:18,570 --> 00:10:21,580
+con respecto al norte magnético de la Tierra.
+
+133
+00:10:23,370 --> 00:10:25,370
+Entonces, el código coge este valor de
+
+134
+00:10:25,370 --> 00:10:29,540
+la matriz de orientación y, ya que
+este valor esta medido en radianes,
+
+135
+00:10:29,540 --> 00:10:33,910
+después convierte el valor de radianes a grados
+
+136
+00:10:34,990 --> 00:10:39,480
+Tras esto, el código invalida la
+
+137
+00:10:39,480 --> 00:10:45,629
+vista de la flecha de la brújula y luego borra
+los arrays que almacenan las lecturas del sensor.
+
+138
+00:10:46,810 --> 00:10:49,900
+Vamos a echar un vistazo a la vista de la flecha
+de la brújula
+
+139
+00:10:49,900 --> 00:10:53,260
+para ver como usa la nueva información de orientación.
+
+140
+00:10:56,000 --> 00:11:00,870
+Desplazándonos hacia abajo, hasta el método onDraw,
+el código primero guarda el lienzo (canvas) actual
+
+141
+00:11:01,960 --> 00:11:06,680
+y después rota dicha vista en el lienzo una cantidad
+
+142
+00:11:06,680 --> 00:11:11,450
+igual a de -1 veces mRotacion en grados.
+
+143
+00:11:11,450 --> 00:11:15,670
+Así que, básicamente, la idea aquí es que
+
+144
+00:11:15,670 --> 00:11:21,390
+si el dispositivo que está apuntando dice: 90 grados
+desde el norte, entonces la flecha de la brújula
+
+145
+00:11:21,390 --> 00:11:26,720
+debe rotar nuevamente 90 grados con el fin de que
+la flecha de la brújula siga apuntado al norte.
+
+146
+00:11:30,740 --> 00:11:32,690
+Esto sobre los sensores para esta lección.
+
+147
+00:11:32,690 --> 00:11:38,560
+Te veo en la próxima clase, cuando vaya
+a hablar sobre la localización y mapas.
+
+148
+00:11:38,560 --> 00:11:38,920
+Gracias.
+</pre>

@@ -1,0 +1,81 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:LaTeX</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>A very quick tutorial:</p>
+<p>To insert $$\LaTeX$$ into the forum, enclose the $$\LaTeX$$ in two dollar signs either side, as demonstrated below... </p>
+<p><strong>Superscript</strong></p>
+<ul>
+<li>type <code>$$ x^y $$</code> to get $$ x^y $$</li>
+<li>type <code>$$ e^{z+w^i} $$</code> to get $$ e^{z+w^i} $$ (note the use of the curly brackets to tell $$\LaTeX$$ that the exponent is not just a single variable but is the expression $$z+w^i$$)</li>
+</ul>
+<p><strong>Subscript</strong></p>
+<ul>
+<li>type <code>$$ x&#95;y $$</code> to get $$ x&#95;y $$</li>
+</ul>
+<p><strong>Fractions</strong></p>
+<ul>
+<li>type <code>$$ \frac{x}{y} $$</code> to get $$ \frac{x}{y} $$</li>
+</ul>
+<p><strong>Sums and Products</strong></p>
+<ul>
+<li>type <code>$$ \sum&#95;{i=1}^{k} w&#95;iX&#95;i $$</code> to get $$ \sum&#95;{i=1}^{k} w&#95;iX&#95;i $$ (note that placing things beneath the sum uses a notation identical to subscript and placing things above the sum uses a notation identical to superscript)</li>
+<li>type <code>$$ \prod&#95;i \phi&#95;i $$</code> to get $$ \prod&#95;i \phi&#95;i $$</li>
+</ul>
+<p><strong>Equations</strong></p>
+<ul>
+<li>type <code>$$ O(x)={ {P(y^1|x)} \over {P(y^0|x)} } $$</code> to get $$ O(x)={ {P(y^1|x)} \over {P(y^0|x)} } $$</li>
+<li>On the line above, note the opening curly bracket immediately after the equals sign and its parter at the very end of the expression.  These curly brackets tell $$\LaTeX$$ to put the entire fraction after the equals sign.  If you omit these curley backets and write <code>$$ O(x)={P(y^1|x)} \over {P(y^0|x)} $$</code> then you get: $$ O(x)={P(y^1|x)} \over {P(y^0|x)} $$, which is probably not what you want!</li>
+</ul>
+<p><strong>Basic set notation</strong></p>
+<ul>
+<li><p>type <code>$$x \in &#92;{1, \dotsc, 10 &#92;} $$</code> to get $$ x \in &#92;{1, \dotsc, 10 &#92;} $$</p>
+<ul>
+<li><code>$$ \in $$</code> $$ \in $$&#160;; read <i>is observe</i></li>
+<li><code>$$ \phi $$</code> $$ \phi $$&#160;; read <i>product of x factors</i> </li>
+<li><code>$$ \Phi $$</code> $$ \Phi $$</li>
+<li><code>$$ \psi $$</code> $$ \psi $$</li>
+<li><code>$$ \alpha $$</code> $$ \alpha $$</li>
+<li><code>$$ \beta $$</code> $$ \beta $$</li>
+<li><code>$$ \lambda $$</code> $$ \lambda $$</li>
+<li><code>$$ \delta $$</code> $$ \delta $$</li>
+<li><code>$$ \rightarrow $$</code> $$ \rightarrow $$</li>
+<li><code>$$ \delta&#95;{ i \rightarrow j } $$</code> $$ \delta&#95;{ i \rightarrow j } $$</li>
+<li><code>$$ \mu $$</code> $$ \mu $$</li>
+<li><code>$$ \tilde{P} $$</code> $$ \tilde{P} $$</li>
+<li><code>$$ \models $$</code> $$ \models $$&#160;; read <i>satisfy</i></li>
+<li><code>$$ \perp $$</code> $$ \perp $$&#160;; read <i> independence </i></li>
+<li><code>$$ \lt \gt \ne $$</code> $$ \lt \gt \ne $$</li>
+<li><code>$$ \forall$$</code> $$ \forall$$&#160;; read  <i>for all </i> or <i>for every </i></li>
+<li>| read <i>given </i> and express a condition</li>
+<li><code>\propto</code> $$ \propto $$; read  <i>is proportional </i> </li>
+</ul></li>
+</ul>
+<p><strong>Modifying text</strong></p>
+<ul>
+<li><code>$$ \tilde{P} $$</code> $$ \tilde{P} $$</li>
+<li><code>$$ \mathbf{X} $$</code> $$ \mathbf{X} $$ (Bold Font for vectors or sets of random vars as in $$x \in \textit{Val}(\mathbf{X})$$)</li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><code>$$ P&#95;\Phi \models  (W&#95;{\lt(i,j)} \perp W&#95;{\lt(j,i)} \; | \; S&#95;{i,j})  $$</code> $$ P&#95;\Phi \models  (W&#95;{\lt(i,j)} \perp W&#95;{\lt(j,i)} \; | \; S&#95;{i,j})  $$</li>
+</ul>
+<p>There's an excellent guide to using $$\LaTeX$$ to layout maths on WikiBooks: <a rel="nofollow" class="external free" href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">http://en.wikibooks.org/wiki/LaTeX/Mathematics</a>  (you don't need to bother reading it from beginning to end.. instead just use it as a visual reference guide.  Quickly scroll through the page to find the expression you want.)</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 85/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:LaTeX&amp;oldid=2820">https://share.coursera.org/wiki/index.php?title=PGM:LaTeX&amp;oldid=2820</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

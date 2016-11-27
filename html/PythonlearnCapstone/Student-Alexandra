@@ -1,0 +1,40 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PythonlearnCapstone:Student-Alexandra</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Cheetah Conservation - 
+                    and the close linkage to Dr. Laurie Marker</p>
+<p>I’d like to data-mine websites concerned with the conservation of cheetahs worldwide. I’m especially interested in how one person, Dr. Laurie Marker, is connected with the general topic of Cheetah Conservation. She is a prominent and interesting character who dedicated her life to cheetahs in moving to Namibia 25 years ago to save this species from extinction. </p>
+<p>Data source evaluation: Of course, it would be easier to have a (raw) dataset already like in the given examples on the Coursera reading page. On the other side: I can imagine that in a real life work context you will also have to deal with the problem that you have access to gazillions of (useless) data sources and you are still being forced to look for your work related relevant ones… So, if I wanted to get my idea working, I had to build up my data set by scraping the web first.</p>
+<p>Possible analyses: The usage of data sources will also depend on my questions of interest. At the moment, it’s still brainstorming. Imaginable questions are:</p>
+<p>How often is the name of Dr. Laurie Marker mentioned on these websites?
+Which websites, which countries, which newspapers/magazines/… are most engaged in publishing articles regarding Dr. Laurie Marker and/or cheetah conservation? 
+How many different Conservation Funds do (co-)exist worldwide? Are theses Funds connected? 
+What are the main topics published in the last months?
+How have topics changed over the years?
+….</p>
+<p>Probable issues: Many.
+ I’m still unsure about what’s technically possible (with our tools, python, for me…) in this project.
+Some questions are more quantitative and related to data mining, others could be more qualitative.
+Is there ‘enough’ data I have access to?
+Am I able to arrange a data set by scraping? And do I have the data afterwards which I need to answer my questions?
+Do I miss the task with this project?</p>
+<p>Comment: Cheetah Conservation Fund is a hobby of mine. But please help me to modify my project. If you have a better idea that could practically work for me, please get in touch. It would be great to apply this python project for a ‘good’ purpose. All kinds of analyses are thinkable.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-Alexandra&amp;oldid=33403">https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-Alexandra&amp;oldid=33403</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

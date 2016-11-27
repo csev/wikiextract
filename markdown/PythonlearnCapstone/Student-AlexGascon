@@ -1,0 +1,6 @@
+
+
+## Week 3 project: Identifying a Data source
+I've been a huge Pokémon fan since I was a child, so when I found this dataset https://www.kaggle.com/abcsds/pokemon I instantly knew that I had to do something with it.
+
+I'm planning on focusing in a Data Visualization project. The first thing I want to do is to plot each Pokémon type according to the stats of its Pokémon, so we can easily see how the different types affect the stats. Then, if I still have time left, I'm planning on trying to use this stats to make an algorithm that can classify (or even predict!) the most adequate battling strategy for a Pokémon according to its stats (i.e. if it has high attack and speed, it should clearly be an attacker; if it has a huge defense and good HP, he may be a good defender).

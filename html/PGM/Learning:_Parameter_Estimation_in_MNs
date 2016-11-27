@@ -1,0 +1,62 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Learning: Parameter Estimation in MNs</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">1</span> <span class="toctext">Lecture Video Table of Contents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Learning:_Parameter_Estimation_in_MNs"><span class="tocnumber">1.1</span> <span class="toctext">Learning: Parameter Estimation in MNs</span></a></li>
+<li class="toclevel-2"><a href="#Maximum_Likelihood_for_Conditional_Random_Fields"><span class="tocnumber">1.2</span> <span class="toctext">Maximum Likelihood for Conditional Random Fields</span></a></li>
+<li class="toclevel-2"><a href="#MAP_Estimation_for_MRFs_and_CRFs"><span class="tocnumber">1.3</span> <span class="toctext">MAP Estimation for MRFs and CRFs</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h1>
+<h2> <span class="mw-headline" id="Learning:_Parameter_Estimation_in_MNs">Learning: Parameter Estimation in MNs</span></h2>
+<p>Maximum Likelihood for Log-Linear Models
+<pre>
+0:43    Log-likelihood for Markov networks
+5:03    Example: Log-likelihood function
+6:45    Log-likelihood for log-linear model
+9:46    The log-partition function
+18:17   Maximum likelihood estimation
+20:51   Computation: Gradient ascent
+23:24   Example: Ising model
+26:46   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Maximum_Likelihood_for_Conditional_Random_Fields">Maximum Likelihood for Conditional Random Fields</span></h2>
+<p><pre>
+0:27    Estimation for CRFs
+4:18    Example: Image segmentation
+8:14    Computation
+10:09   &quot;However . . .&quot; (mitigating factors for computational complexity of CRFs)
+12:21   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="MAP_Estimation_for_MRFs_and_CRFs">MAP Estimation for MRFs and CRFs</span></h2>
+<p><pre>
+0:00    Introduction
+2:00    Gaussian parameter prior
+3:20    Laplacian parameter prior
+4:39    MAP estimation and regularization
+8:42    Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 29/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Learning:_Parameter_Estimation_in_MNs&amp;oldid=4621">https://share.coursera.org/wiki/index.php?title=PGM:Learning:_Parameter_Estimation_in_MNs&amp;oldid=4621</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

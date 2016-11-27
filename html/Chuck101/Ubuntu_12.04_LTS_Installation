@@ -1,0 +1,113 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Chuck101:Ubuntu 12.04 LTS Installation</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Pre-required libraries/components need to be installed for the compilation of ChucK and miniAudicle software:</p>
+<p><pre>
+sudo apt-get update
+sudo apt-get install build-essential bison flex libsndfile1-dev libasound2-dev libqt4-dev libqscintilla2-dev
+</pre></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#ChucK_install"><span class="tocnumber">1</span> <span class="toctext">ChucK install</span></a></li>
+<li class="toclevel-1"><a href="#miniAudicle_install"><span class="tocnumber">2</span> <span class="toctext">miniAudicle install</span></a></li>
+<li class="toclevel-1"><a href="#Other_stuff"><span class="tocnumber">3</span> <span class="toctext">Other stuff</span></a></li>
+<li class="toclevel-1"><a href="#Links"><span class="tocnumber">4</span> <span class="toctext">Links</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="ChucK_install">ChucK install</span></h1>
+<p>Download the latest version of ChucK (in command line you can use the wget to fetch the zip file with ChucK source code):</p>
+<pre>
+cd ~
+wget http://chuck.stanford.edu/release/files/chuck-1.3.2.0.tgz
+tar -zxvf chuck-1.3.2.0.tgz
+rm chuck-1.3.2.0.tgz
+cd  chuck-1.3.2.0/src
+</pre>
+<p>Modifications of the source code. Use a text editor (ie. vim or kate or gedit) to edit the file:</p>
+<pre>
+vim RtAudio/RtAudio.cpp 
+</pre>
+<p>Find line number 5660:</p>
+<pre>
+sprintf( name, &quot;hw:%d,%d&quot;, card, subdevice );
+</pre>
+<p>Change/revise:</p>
+<pre>
+//sprintf( name, &quot;hw:%d,%d&quot;, card, subdevice );  // commented out
+sprintf( name, &quot;pulse&quot; );
+</pre>
+<p>Find line 5699:</p>
+<pre>
+int openMode = SND_PCM_ASYNC;
+</pre>
+<p>Change/Revise this to read:</p>
+<pre>
+int openMode = SND_PCM_ASYNC;
+printf( &quot;pcm name&#160;%s\n&quot;, name );  // line inserted
+</pre>
+<p>Compile ChucK with the command:</p>
+<pre>
+make linux-alsa
+</pre>
+<p>If this ends without errors, install ChucK as /usr/bin/chuck so that the whole system can use it:</p>
+<pre>
+sudo make install
+</pre>
+<p>Test installed ChucK:</p>
+<pre>
+cd ../examples
+chuck otf_05.ck
+</pre> 
+<p>You should hear some burbling.</p>
+<h1> <span class="mw-headline" id="miniAudicle_install">miniAudicle install</span></h1>
+<p>Download the latest version of miniAudicle (in command line you can use the wget to fetch the zip file with latest miniAudicle source code):</p>
+<pre>
+cd ~
+wget http://audicle.cs.princeton.edu/mini/release/files/miniAudicle-1.3.0a.tgz
+tar -zxvf miniAudicle-1.3.0a.tgz
+rm miniAudicle-1.3.0a.tgz
+cd miniAudicle-1.3.0a/src
+</pre>
+<p>The same edit needs to be made to the RtAudio.cpp file in this source tree, otherwise when you try to play something you will get an error like:</p>
+<p>ugen's of type 'DAC' have no input - cannot =&gt; from another ugen...</p>
+<pre>
+vim chuck/src/RtAudio/RtAudio.cpp
+</pre>
+<p>Make the same changes to lines 5660 and 5699 as above, save the file, and exit the editor.</p>
+<p>Start the compile:</p>
+<pre>
+make linux-alsa
+</pre>
+<p>If this ends without errors, you should have a new program, miniAudicle, in the src directory.</p>
+<p>Click on miniAudicle (you can make a link to it, or move it to another location if you want) and three windows will open:
+miniAudicle - where you write and test your sound programs
+VirtualMachine - where you control the ChucK sound-server
+Console - where you can see error messages</p>
+<p>In the miniAudicle window, select File -&gt; Open.  Navigate to chuck-1.3.2.0/examples, and load one of them (the ones in miniAudicle-1.3.0a/examples will not produce any sound as yet).  In the VirtualMachine window, click on Start Virtual Machine (or in the miniAudicle window, select ChucK -&gt; Start Virtual Machine). 
+The icons in the miniAudicle window should go from grey to coloured.  Click Add Shred and you should hear the example.  Click Clear Virtual Machine to stop the sound.</p>
+<h1> <span class="mw-headline" id="Other_stuff">Other stuff</span></h1>
+<p>When playing ChucK and the course video together, the former may sound too loud.  Open your Volume Control app, which should have an entry in it like ALSA plug-in [miniAudicle]: ALSA Playback, and pull the slider down a bit.</p>
+<h1> <span class="mw-headline" id="Links">Links</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/chuck101-001/forum/thread?thread_id=130">ChucK on Ubuntu 12.04: howto (forum post by Kevin Donnelly)</a>.</li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 119/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Chuck101:Ubuntu_12.04_LTS_Installation&amp;oldid=18332">https://share.coursera.org/wiki/index.php?title=Chuck101:Ubuntu_12.04_LTS_Installation&amp;oldid=18332</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ChucK_101" title="Category:ChucK 101">ChucK 101</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,58 @@
+
+
+
+#Lecture Video Table of Contents
+##Learning With Incomplete Data - Overview
+<pre>
+0:18	Incomplete data
+1:01	Why latent variables?
+3:51	Treating missing data
+5:55	Modeling missing data mechanisms
+12:01	Identifiability
+13:38	Likelihood for complete data
+16:57	Multimodal likelihood
+18:15	Parameter correlations
+20:53	Summary
+</pre>
+
+##Expectation Maximization - Intro
+<pre>
+0:21	Likelihood with incomplete data
+1:24	Gradient Ascent
+5:21	Gradient ascent summary
+6:39	Expectation maximization
+8:25	EM overview
+12:12	Example: Bayesian clustering
+14:49	EM summary
+</pre>
+
+##Analysis of EM Algorithm
+<pre>
+0:30	More formal intuition
+10:01	EM guarantees
+</pre>
+
+##EM In Practice
+<pre>
+0:11	EM convergence in practice
+2:44	Overfitting
+5:01	Local optima
+7:05	Significance of local optima
+8:07	Initialization is critical
+10:09	Summary
+</pre>
+
+##Latent Variables
+<pre>
+0:28	Discovering user clusters
+1:14	Example: MSNBC story clusters
+3:34	Example: Speech recognition HMM
+6:14	Example: 3D robot mapping
+8:52	Example: Body parts from point cloud scans
+9:51	Collective clustering model
+13:28	Example: Helicopter demo alignment
+14:25	Graphical model
+16:27	All expert demos
+17:31	Picking latent variable cardinality
+20:29	Summary
+</pre>

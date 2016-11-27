@@ -1,0 +1,142 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Posa:Philosophers problem</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Programming_Assignment_.232_-_The_Philosophers_problem."><span class="tocnumber">1</span> <span class="toctext">Programming Assignment #2 - The Philosophers problem.</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Analysis"><span class="tocnumber">1.1</span> <span class="toctext">Analysis</span></a></li>
+<li class="toclevel-2"><a href="#Solutions"><span class="tocnumber">1.2</span> <span class="toctext">Solutions</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Solution_.231"><span class="tocnumber">1.2.1</span> <span class="toctext">Solution #1</span></a></li>
+<li class="toclevel-3"><a href="#Solution_.232"><span class="tocnumber">1.2.2</span> <span class="toctext">Solution #2</span></a></li>
+<li class="toclevel-3"><a href="#Solution_.233."><span class="tocnumber">1.2.3</span> <span class="toctext">Solution #3.</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Programming_Assignment_.232_-_The_Philosophers_problem.">Programming Assignment #2 - The Philosophers problem.</span></h1>
+<p>This is an analysis of the Philosophers problem of the <a rel="nofollow" class="external text" href="https://class.coursera.org/posa-001/human_grading/view/courses/970268/assessments/21/submissions">Programming Assignment #2</a>.</p>
+<h2> <span class="mw-headline" id="Analysis">Analysis</span></h2>
+<p>The output presented in the problem caught my attention. I reproduce it here for clarity purpose.</p>
+<code><pre>... The program should create output that looks something like this:
+
+Dinner is starting!
+
+Philosopher 1 picks up left chopstick.
+Philosopher 1 picks up right chopstick.
+Philosopher 1 eats.
+Philosopher 3 picks up left chopstick
+Philosopher 1 puts down right chopstick.
+Philosopher 3 picks up right chopstick.
+Philosopher 2 picks up left chopstick.
+Philosopher 1 puts down left chopstick.
+Philosopher 3 eats.
+Philosopher 2 picks up right chopstick.
+Philosopher 2 eats.
+Philosopher 2 puts down right chopstick.
+Philosopher 2 puts down left chopstick.
+Philosopher 3 puts down right chopstick.
+Philosopher 3 puts down left chopstick.
+…
+Dinner is over!
+</pre></code>
+<p>Notice how:</p>
+<ol>
+<li>The philosophers 2 and 3 (adjacent philosophers) are eating at the same time.<br />
+...<br />
+<strong>Philosopher 3 eats.</strong><br />
+Philosopher 2 picks up right chopstick.<br />
+<strong>Philosopher 2 eats.</strong><br />
+...  </li>
+<li>Each philosopher takes only <strong>one</strong> chopstick every time.</li>
+</ol>
+<p>In the Philosophers problem, one fork or chopstick is between two philosophers. As a consequence, <strong>two adjacent philosophers cannot eat at the same time</strong>. Unless it is assumed that a philosopher can take any chopstick. For instance the chopstick are in the center of the table or a waiter assigns the chopsticks on demand. In the first case, 
+the chopsticks are seen as 5 different classes of resources with 1 instance each. In the second case,
+there is one class of resource with 5 instances available. </p>
+<p>Regarding the second point, we can see that philosophers take one chopstick per attempt. Thus, a typical solution where one philosopher take the two chopsticks at once <strong>is not feasible</strong> if we take this output as the expected results. </p>
+<h2> <span class="mw-headline" id="Solutions">Solutions</span></h2>
+<p>The solutions presented below are modeled using Petri Nets. Red transitions indicated that are enabled to fire.</p>
+<h3> <span class="mw-headline" id="Solution_.231">Solution #1</span></h3>
+<p>In this case, a chopstick or fork is between two philosophers, two adjacent philosophers cannot eat at the same time and a philosopher takes the two chopsticks in a single atomic operation (i.e. inside the monitor).</p>
+<p><strong>Figure 1. Philosophers in the Initial state.</strong></p>
+<p><center>
+<p><a href="/wiki/images/9/96/Philo1-1.png" class="image"><img alt="&quot;Solution #1: Philosophers in their Initial state&quot;" src="/wiki/images/9/96/Philo1-1.png" width="895" height="732" /></a>
+</p>
+</center></p>
+<p>Any Philosophers can take the chopsticks.</p>
+<p><strong>Figure 2: Philosopher 3 took forks.</strong></p>
+<p><center>
+<p><a href="/wiki/images/0/05/Philo1-2.png" class="image"><img alt="&quot;Solution #1: Philosopher 2 took forks&quot;" src="/wiki/images/0/05/Philo1-2.png" width="895" height="732" /></a>
+</p>
+</center></p>
+<p>Philosophers 2 and 4 are not able to eat.</p>
+<p><strong>Figure 3: Philosopher  1 and 3 are eating.</strong></p>
+<p><center>
+<p><a href="/wiki/images/d/d1/Philo1-3.png" class="image"><img alt="&quot;Solution #1: Philosopher  1 and 3 are eating&quot;" src="/wiki/images/d/d1/Philo1-3.png" width="895" height="732" /></a>
+</p>
+</center></p>
+<p>In this case, philosophers 1 and 3 are eating and therefore no other philosopher can eat.</p>
+<h3> <span class="mw-headline" id="Solution_.232">Solution #2</span></h3>
+<p>In this case, all the chopsticks are accessible to any philosopher, two adjacent philosophers can eat at the same time and a philosopher takes the two chopsticks in a single atomic operation (i.e. inside the monitor).</p>
+<p><strong>Figure 4. Philosophers in the Initial state.</strong></p>
+<p><center>
+<p><a href="/wiki/images/5/52/Philo2-1.png" class="image"><img alt="&quot;Solution #2: Philosophers in their Initial state&quot;" src="/wiki/images/5/52/Philo2-1.png" width="895" height="685" /></a>
+</p>
+</center></p>
+<p>Any Philosophers can take the chopsticks.</p>
+<p><strong>Figure 5: Philosopher 3 took forks.</strong></p>
+<p><center>
+<p><a href="/wiki/images/c/ca/Philo2-2.png" class="image"><img alt="&quot;Solution #2: Philosopher 2 took forks&quot;" src="/wiki/images/c/ca/Philo2-2.png" width="721" height="553" /></a>
+</p>
+</center></p>
+<p>Since there are still 3 chopsticks, any of the remaining philosophers can take then and
+eat.</p>
+<p><strong>Figure 6: Philosopher  3 and 5 are eating.</strong></p>
+<p><center>
+<p><a href="/wiki/images/4/4c/Philo2-3.png" class="image"><img alt="&quot;Solution #2: Philosopher  3 and 5 are eating&quot;" src="/wiki/images/4/4c/Philo2-3.png" width="895" height="685" /></a>
+</p>
+</center></p>
+<p>In this case, philosophers 3 and 5 are eating and therefore no other philosopher is able to do it.</p>
+<h3> <span class="mw-headline" id="Solution_.233.">Solution #3.</span></h3>
+<p>This solution is similar to solution 2 except that philosophers take the forks or chopsticks, first left and
+then right. in order to avoid deadlock, a philosopher is Hungry state when has taken the left fork but hasn't taken the right fork.</p>
+<p><strong>Figure 7. Philosophers in the Initial state.</strong></p>
+<p><center>
+<p><a href="/wiki/images/e/e8/Philo3-1.png" class="image"><img alt="&quot;Solution #3: Philosophers in their Initial state&quot;" src="/wiki/images/e/e8/Philo3-1.png" width="895" height="685" /></a>
+</p>
+</center></p>
+<p>Any Philosophers can take the chopsticks.</p>
+<p><strong>Figure 8: Philosopher 1-4 took left forks.</strong></p>
+<p><center>
+<p><a href="/wiki/images/b/bb/Philo3-2.png" class="image"><img alt="&quot;Solution #3: Philosopher 1-4 took left forks&quot;" src="/wiki/images/b/bb/Philo3-2.png" width="895" height="685" /></a>
+</p>
+</center></p>
+<p>Philosophers 1 to 4 took the forks. One fork is available.</p>
+<p><strong>Figure 9: Philosopher 3 is able to eat.</strong></p>
+<p><center>
+<p><a href="/wiki/images/2/2e/Philo3-3.png" class="image"><img alt="&quot;Solution #3: Philosopher  3 is able to eat&quot;" src="/wiki/images/2/2e/Philo3-3.png" width="895" height="685" /></a>
+</p>
+</center></p>
+<p>Since at least one philosopher is able to eat (philosopher 3), deadlock is avoided.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 16/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Posa:Philosophers_problem&amp;oldid=9898">https://share.coursera.org/wiki/index.php?title=Posa:Philosophers_problem&amp;oldid=9898</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

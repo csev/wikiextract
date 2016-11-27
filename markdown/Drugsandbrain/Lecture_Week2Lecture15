@@ -1,0 +1,53 @@
+An edited transcript of Drugs and the Brain Lecture 15  Glutamate-Gated Receptor Channels   
+
+We'll discuss glutamate-gated receptor channels in this lecture.  
+**The Hippocampus**  
+* As usual, we begin with highlighting a brain area that includes the molecule we're studying and that has an important function. In this case it's the hippocampus. Here's a rodent brain and here is the hippocampus in the cut away. Here it is in a cross section. And you can see why it's named after the seahorse. It certainly looks like a seahorse. The hippocampus is famous for hosting the so called tri-synaptic pathway, consisting of all glutamatergic synapses. Glutamate-gated excitatory receptors participate in these synapses.  
+
+* We have the input from the entorhinal cortex, the so-called perforant path pathway. In the dentate gyrus, we activate the dentate gyrus granule cells. These project to the CA3 region of the hippocampus where they activate pyramidal cells in the CA3 region. The Schaffer collateral pathway then goes to the pyramidal cells in the CA1 region, activates cells there and then out back to the rest of the brain.  
+
+* Now these, these are not simply relays, but there's a great deal of signal processing that goes on, and each of these cells have lots of inhibitory GABA receptors as well. So there's a great deal of adding and subtracting of signals.  
+
+**Electron micrograph of Hippocampal Synapse**  
+* Now if we zoom into one synapse on one of the pyramidal cells in the hippocampus, here is the dendrite containing microtubules. Here is a spine that projects from the dendrite. And here is the presynaptic terminal so there's a map of events right here. We have the two spines. We have the pre-synaptic terminal. And so we have glutamate in these synaptic vesicles, which gets liberated into the synaptic cleft. And we'll see what happens next. We're going to concentrate on blowing up the synapse even more in the next slide courtesy of my colleague Mary Kennedy.  
+
+**A postsynaptic density, with a cartoon of important proteins**  
+* So here is a presynaptic cell with its membrane. Here is a postsynaptic cell with its membrane. And Professor Kennedy has nicely drawn in some structures, some molecules whose 3-dimensional structures are known. So, we can see here that the, actual postsynaptic density, this darker part here in an electron micrograph, consists primarily of proteins. And two of the proteins here, this one that's colored light blue and this one, that's dark red are glutamate receptors. I want you to understand that this is a diagram and that's not a, these don't show up so nicely in the electron micrograph.  
+
+**Superfamilies of Vertebrate Ligand-gated Ion Channels / Synaptic Receptors**  
+* So moving on, we can see that we are talking about a new group of ligand-gated channels, the vertebrate glutamate receptors. There are three major types of vertebrate glutamate receptors, the AMPA type, the kainate type, and the NMDA type. We had been discussing until now the pentameric cys-loop receptors. Now we go to the B glutamate receptors. And there is another group, the ATP receptors, or so-called P2X receptors, which we won't be able to discuss in this course.  There seems to be no homology between the glutamate receptors and the pentameric receptors.  
+
+**Ionotropic Glutamate Receptors**  
+* And the key to understanding the activation of the glutamate receptors may be that each of the four subunits has three full transmembrane helices. And then a site with a motif which appears to project through the membrane that actually lines the ion conducting pathways.  
+
+* So, the way that the receptor is activated is thought to be a clamshell mechanism. The agonist comes and binds between two domains of a receptor. And this produces the conformational change that eventually gets propagated to the gating region which is somewhere around here. The channel opens and the sodium and potassium ions, again, think they're just flowing through water. And we have an excitatory post-synaptic potential.  
+
+* So, three transmembrane helices per subunit. Here's one subunit, four subunits, and we imagine that the whole thing looks like this. There are now high resolution x-ray crystallographic views of glutamate receptors.  
+* There are also G protein-gated glutamate receptors, not G protein-gated ion, ion channels, and we'll talk about those in a future lecture. But for the moment we're talking about the glutamate-gated ion channels. 
+
+**The Reversal Potential (Erev = E sub EPSP) for glutamate gated channels**  
+* You've seen a picture very similar to this when we talked about nicotinic receptors. We talked about the reversal potential and we talked about the fact that there's an equivalent circuit. And the fact that we can understand a little more by using an equation. And so all of those concepts also apply for glutamate gated channels. The reversal potential for glutamate-gated channels is around zero. And so, it's not a true equilibrium or Nernst potential, but it does depolarize cells and therefore, it does cause cells to fire spikes.  
+
+**NMDA receptors are “coincidence detectors” important for memory / learning**  
+
+* Now, a key member of the glutamate receptor channel, and the only one for the moment that is the target of drugs used by people, is the NMDA subtype of the glutamate receptor. The NMDA receptor is perhaps the most complicated of the glutamate receptors. It certainly has the largest intracellular region, and it has various motifs that we'll talk about in a moment.  
+
+* Here are the three transmembrane helices that go all the way and here is the folded, perhaps P region, the pore region that actually does the ion selectivity. Remember there are four subunits and so this is just one of them. So we have places on the outside, the extracellular region of the channel, that bind glutamate. Remember glutamate is the natural transmitter, NMDA is an exogenous blocker, that blocks only the NMDA type of glutamate channels. There is a site that can get oxidized or reduced. There are sites that can be glycosylated. There's a proton binding site. Some subunits of NMDA receptors also combine glycine. And this is required for activating the receptor. And then there are sites where polyamines combine.  
+
+* But in many ways, the hero of this story is the plain old magnesium ion. Because most of the time at the resting potential, the NMDA receptor is blocked by hosting a magnesium ion that gets stuck in the channel. And so, what is it that opens the channel?  
+
+* NMDA receptors are coincidence detectors. And as you learn from other neuroscience courses they are vastly important for memory and learning because of this coincidence detection. The channel opens when only two events happen concurrently. One of them is binding with the glutamate and the other is a change in the membrane potential so that the inside becomes less negative, more positive, with the result that the magnesium ion is repelled from the channel to the outside. These two events, when they happen concurrently, allow ions to flow through the channel, so that depolarization relieves block by magnesium. And one way to get this depolarization, this positive deviation, is if an action potential occurs in the cell.  
+
+* So this leads to what we call the coincidence readout. The NMDA receptors are very permeable to calcium. This is perhaps their most important function and calcium can enter cells and act as a second messenger. And so, NMDA receptors actually become the coincidence detector that Donald Hebb suggested more than 60 years ago would underlie memory and learning.  
+
+* So there are only a few good make receptor drugs in present practice. The pharmacology, the useful or the recreational part of pharmacology of glutamate receptors is rather limited.   
+
+**How Might Ketamine Act within 2 hours as an Antidepressant?**  
+
+* But here is an important aspect that's the topic of great interest. It’s the NMDA blocker ketamine. And we know that ketamine acts within two hours as an antidepressant. Current papers suggest that this is because ketamine comes in and blocks the NMDA receptor. And because the NMDA receptor is so permeable to calcium, this reduces basal levels of calcium flux into the cell. I should point out that this is all taking place in a dendrite because the dendrite contains endoplasmic reticulum and Golgi.  
+
+* So the decreased calcium flux changes the state of kinases. This changes the translation of mRNA for several proteins in the endoplasmic reticulum, particularly brain-derived neurotrophic factor {BDNF}. And the result is that we get an increased synthesis of BDNF. We get more BDNF passing through the exocytotic pathway. More BDNF gets secreted. And it's though that part of the basis for antidepressant action is increased secretion of brain derived neurotrophic factor and other growth factors.  
+
+* Now, you'll notice that there is a large blank area on this slide. And I'm not going to fill it on now. But, about two weeks from now, we'll fill it in, and I'll show you how I postulate antidepressants work slightly different from this mechanism.   
+
+* Another important aspect of this slide is that we have introduced the concept of channel blockers as important pharmacological entities. And we're going to spend the next lecture discussing channel blockers and how they work.

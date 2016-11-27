@@ -1,0 +1,28 @@
+# Lecture 2-7 Problem Session 1  
+**Bioelectricity week 2.7 (slide 28)**  
+* Hello again, this is Roger Cooke Barr talking about bioelectricity, and we are at week two, segment seven. I thought it might be useful in this segment to ask a few questions, first for me and then for you.  
+  
+---  
+**Problem session questions (slide 29)**  
+* Let's look at the ionic concentrations for frog muscle.  
+* What is the nernst potential for potassium? What is the nernst potential for sodium? And what is the difference?  
+* Now, I think, earlier in the lectures we were computing this values for the concentrations present in the nerve of the squid. But now we would like to do them in the muscle of the frog.  
+  
+---  
+**Problem session K+ (slide 30)**  
+* So, first what will be the equilibrium potential for potassium using the concentrations that are present in the frog? That's normally denoted EK so I'll write it that way. That will be RT over F times the logarithm concentration extracellular, concentration intracellular.  
+* Now, I've written ln as the logarithm so as to emphasize that this is the natural log, not the log base ten or some other log. So when we compute it we'll compute it that way. RT over F we've studied many times up until now, so we know that's 26 millivolts. It's now the logarithm extracellular over intracellular, so that would be 2.2 over 124.  
+* Units aren't important here, as long as they're the same units, so I won't write those in. If you look, if you think about taking the logarithm of 2.2 over 124, it's a number less than one. 
+* So you know right away that this is going to be = to -26 millivolts times the logarithm of 124 divided by 2.2. I'll leave that up to you to complete the calculation.   
+  
+---  
+**Problem session Na+ (slide 31)**  
+* If we ask the same question for sodium, then the question is answered by substitution of now the sodium concentrations for frog, 4 and 109, into the same basic equation. The equilibrium potential now is denoted ENa.  
+* It's the transmembrane potential at equilibrium for sodium. Mostly noted ENa and that will be RT over F. Algorithm. ENa extracellular, and ENa intracellular.  
+* I'll leave it up to you to determine the actual number. But we're expecting a positive number, this time. Because NaE is greater than NaI.  
+*  If we now ask, ask part C of the question, what is the change? Well that's easily obtained. That's simply the values we obtained in the previous two slides. ENA minus EK, so we found those and all.   
+  
+---  
+**Problem session, Vm shift (slide 32)**  
+* You'll fill this in and you'll fill this in and determine the shift.  
+* Thank you very much. We'll move on to the next segment after looking at this picture of the beautiful Duke University Library. Thank you.

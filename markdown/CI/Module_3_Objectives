@@ -1,0 +1,61 @@
+__Module 3 Objectives__ (Lecture Video 3.1)
+
+_Note: Just copied notes from lecture slides, needs expanding_
+
+Module 3 of [[CI:Main|Computational Investing, Part 1]] covers the "Mechanics of the markets". We need to understand this computationally in order to think about how we are going to apply computing to trading in the markets.
+
+* Due Date: November 4, Time for Completion: 10 minutes
+	
+__Overview__
+* Major order types
+* The order book
+* How market orders drive prices up and down
+* Live example
+
+__Materials__
+* [https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a link]
+* [https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=39 video]
+* [http://www.quantsoftware.org/CompInvestI-Presentations/031-CompInvestI.pptx powerpoint]
+
+# Objectives
+* Understand order types.
+* Understand order book at exchanges.
+* Understand how buy/sell orders drive prices up or down.
+* Understand the basic infrastructure of an exchange.
+* Understand the major computational components of a hedge fund.
+	 	
+# Notes
+
+## Types of Orders (at the Exchange)
+* Symbol
+* Buy, Sell
+* Market, Limit
+* Shares
+* Price (if Limit)
+
+## The Order Book
+<pre>
+* Ask	$100.10	  100
+* Ask	$100.05	  500
+* Ask	$100.00  1000
+* Bid	 $99.95	  100
+* Bid	 $99.90	   50
+* Bid	 $99.85	   50
+* Ask	$100.10	  100
+* Ask	$100.05	  500
+* Ask	$100.00	 1000
+* Bid	 $99.95	  100
+* Bid	 $99.90	   50
+* Bid	 $99.85	   50
+</pre>
+
+## Live Example
+
+
+
+
+
+
+
+
+[[Category:CI]]

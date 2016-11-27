@@ -1,0 +1,763 @@
+[[Category:Android:Subtitles|it]]
+
+###The ContentProvider Class - Part 2 - Italian subtitles
+
+* [[Android-001:Subtitles:Lecture87:it|<< prev]] | [[Android-001:Subtitles:Lecture89:en|en]] [[Android-001:Subtitles:Lecture89:es|es]] [[Android-001:Subtitles:Lecture89:it|it]] [[Android-001:Subtitles:Lecture89:zh-tw|zh-tw]] [[Android-001:Subtitles:Lecture89:pt|pt]] | [[Android-001:Subtitles:Lecture83:it|next >>]]
+
+* [Direct download](https://www.dropbox.com/s/azxpcgwsszy2fhh/8%20-%204%20-%20The%20ContentProvider%20Class%20-%20Part%202%20%2811-55%29.srt)
+
+<pre>
+1
+00:00:09,749 --> 00:00:15,461
+Ciao, sono Adam Porter e questo è
+"Programming Mobile Applications
+
+2
+00:00:15,461 --> 00:00:20,230
+for Android Handheld systems".
+In aggiunta
+
+3
+00:00:20,230 --> 00:00:23,200
+al metodo query, alcuni metodi comuni
+
+4
+00:00:23,200 --> 00:00:27,690
+di ContentResolver sono: i metodi delete,
+insert e update.
+
+5
+00:00:28,780 --> 00:00:33,920
+Il metodo delete prende tre parametri e un
+URI specificando i dati da
+
+6
+00:00:33,920 --> 00:00:39,560
+cancellare, una stringa che specifica il
+pattern per scegliere quali righe eliminare.
+
+7
+00:00:40,610 --> 00:00:45,660
+E un altro array di stringhe, che fornisce
+gli argomenti di questo pattern di selezione.
+
+8
+00:00:46,920 --> 00:00:50,890
+Questo metodo restituisce il numero di righe
+che sono state cancellate.
+
+9
+00:00:52,400 --> 00:00:56,090
+Il metodo insert prende un URI che indica il
+set di dati
+
+10
+00:00:56,090 --> 00:00:59,139
+in cui si vuole inserire una nuova riga.
+
+11
+00:01:00,700 --> 00:01:04,300
+Prende anche un oggetto di tipo
+ContentValues,
+
+12
+00:01:04,300 --> 00:01:08,680
+che mantiene i campi di quella nuova riga.
+
+13
+00:01:08,680 --> 00:01:14,427
+E questo metodo restituisce l'URI della riga
+appena inserita.
+
+14
+00:01:14,427 --> 00:01:17,000
+E anche il metodo update prende un URI
+
+15
+00:01:17,000 --> 00:01:21,410
+e un oggetto ContentValues, proprio come
+insert.
+
+16
+00:01:21,410 --> 00:01:27,040
+Ma, come il metodo delete, prende anche una
+stringa come pattern di selezione e un
+
+17
+00:01:27,040 --> 00:01:33,450
+array di argomenti della selezione, per
+indicare le specifiche righe da aggiornare.
+
+18
+00:01:33,450 --> 00:01:36,910
+E questo metodo restituisce il numero di
+righe che sono state aggiornate.
+
+19
+00:01:39,690 --> 00:01:45,690
+La nostra prossima applicazione di esempio
+si chiama ContentProviderInsertContacts.
+
+20
+00:01:45,690 --> 00:01:48,250
+Quest'applicazione legge diversi contatti
+
+21
+00:01:48,250 --> 00:01:52,110
+dal ContentProvider dei contatti di Android.
+
+22
+00:01:52,110 --> 00:01:56,880
+Poi inserisce diversi nuovi contatti in tale
+ContentProvider.
+
+23
+00:01:56,880 --> 00:01:59,080
+Quindi mostra i contatti vecchi e quelli
+nuovi.
+
+24
+00:02:00,340 --> 00:02:04,780
+Infine, quando l'applicazione termina,
+cancella tutti questi nuovi contatti.
+
+25
+00:02:05,910 --> 00:02:07,135
+Eseguiamo quest'applicazione.
+
+26
+00:02:07,135 --> 00:02:08,590
+[SUONO].
+
+27
+00:02:08,590 --> 00:02:10,330
+Dunque, ecco il mio dispositivo.
+
+28
+00:02:10,330 --> 00:02:15,252
+Ora avvio l'applicazione
+ContentProviderInsertContacts.
+
+29
+00:02:16,164 --> 00:02:18,534
+Come potete vedere, quest'applicazione
+
+30
+00:02:18,534 --> 00:02:22,190
+mostra un singolo pulsante chiamato "Insert
+Contacts" ("Inserisci contatti").
+
+31
+00:02:23,630 --> 00:02:27,100
+Ora premo il tasto Home e avvio
+l'applicazione dei Contatti.
+
+32
+00:02:28,420 --> 00:02:31,980
+Ora qui potete vedere alcuni contatti che ho
+su questo dispositivo.
+
+33
+00:02:33,330 --> 00:02:39,050
+Ok, ora esco da quest'applicazione e riavvio
+la
+
+34
+00:02:39,050 --> 00:02:43,820
+nostra applicazione di esempio, e potete di
+nuovo vedere il pulsante "Insert Contacts".
+
+35
+00:02:45,250 --> 00:02:47,970
+Quando premo questo pulsante, alcuni
+nuovi contatti
+
+36
+00:02:47,970 --> 00:02:51,400
+saranno inseriti nel ContentProvider dei
+contatti.
+
+37
+00:02:52,700 --> 00:02:53,430
+Ecco.
+
+38
+00:02:55,210 --> 00:02:57,982
+E qui potete vedere che ho inserito
+
+39
+00:02:57,982 --> 00:03:01,979
+quattro nuovi contatti nel ContentProvider
+dei contatti.
+
+40
+00:03:01,979 --> 00:03:03,750
+Ora, giusto per essere certi, premo
+
+41
+00:03:03,750 --> 00:03:07,640
+di nuovo il tasto home e riavvio
+l'applicazione dei contatti.
+
+42
+00:03:09,890 --> 00:03:14,030
+Ora, come potete vedere, l'applicazione
+mostra in effetti quei
+
+43
+00:03:14,030 --> 00:03:16,750
+nuovi contatti che inseriamo
+
+44
+00:03:16,750 --> 00:03:19,650
+via codice nel ContentProvider dei contatti.
+
+45
+00:03:22,050 --> 00:03:23,860
+Quindi ciò significa che le altre
+applicazioni possono
+
+46
+00:03:23,860 --> 00:03:28,340
+vedere, visualizzare e anche modificare
+questi nuovi contatti.
+
+47
+00:03:30,160 --> 00:03:32,240
+Diamo uno sguardo al codice sorgente di
+quest'applicazione.
+
+48
+00:03:34,500 --> 00:03:37,580
+Dunque, ecco l'applicazione aperta nell'IDE.
+
+49
+00:03:37,580 --> 00:03:39,670
+Ora apro la MainActivity.
+
+50
+00:03:41,550 --> 00:03:44,400
+Nell'onCreate il codice prima ottiene
+informazioni
+
+51
+00:03:44,400 --> 00:03:47,150
+sugli account registrati su questo
+dispositivo.
+
+52
+00:03:48,300 --> 00:03:51,240
+Poi il codice chiama il metodo
+insertAllNewContacts,
+
+53
+00:03:51,240 --> 00:03:55,290
+che inserisce i quattro contatti nuovi.
+
+54
+00:03:57,150 --> 00:04:00,040
+Dopodiché il codice prepara e usa un
+
+55
+00:04:00,040 --> 00:04:04,600
+CursorLoader per ottenere e mostrare le
+informazioni appropriate sui contatti.
+
+56
+00:04:05,830 --> 00:04:09,150
+Guardiamo come quest'applicazione inserisce
+i nuovi contatti.
+
+57
+00:04:11,490 --> 00:04:16,970
+Il metodo insertAllNewContacts prepara
+un'operazione batch,
+
+58
+00:04:16,970 --> 00:04:20,300
+in cui inserisce tutti i nuovi contatti
+contemporaneamente.
+
+59
+00:04:21,430 --> 00:04:27,827
+Quindi inizia creando un ArrayList di
+ContentProviderOperation.
+
+60
+00:04:27,827 --> 00:04:30,632
+Poi chiama il metodo
+addRecordToBatchInsertOperation
+
+61
+00:04:30,632 --> 00:04:34,620
+per ciascuno dei nuovi contatti.
+
+62
+00:04:35,970 --> 00:04:37,920
+Ora, in questo metodo, il codice prima
+
+63
+00:04:37,920 --> 00:04:41,320
+aggiunge alcune informazioni alla tabella
+RawContacts,
+
+64
+00:04:42,410 --> 00:04:44,830
+come il nome e il tipo dell'account, e
+
+65
+00:04:44,830 --> 00:04:47,890
+il fatto che tale contatto deve essere tra i
+preferiti,
+
+66
+00:04:47,890 --> 00:04:49,890
+che significa che viene trattato come un
+contatto preferito.
+
+67
+00:04:51,980 --> 00:04:56,140
+Successivamente, il metodo aggiunge il nome
+del nuovo contatto alla tabella dei dati.
+
+68
+00:04:57,660 --> 00:05:03,400
+E dopo che tutti i nuovi contatti sono stati
+aggiunti all'operazione batch, il metodo
+
+69
+00:05:03,400 --> 00:05:07,110
+insertAllNewContacts chiama quindi
+
+70
+00:05:07,110 --> 00:05:11,440
+il metodo applyBatch per avviare l'intera
+operazione batch.
+
+71
+00:05:14,430 --> 00:05:17,380
+Infine, se si desidera creare un proprio
+ContentProvider
+
+72
+00:05:17,380 --> 00:05:21,000
+allora bisogna fare le seguenti cose.
+
+73
+00:05:21,000 --> 00:05:24,680
+Primo, implementare un sistema di
+memorizzazione dei dati.
+
+74
+00:05:24,680 --> 00:05:27,930
+E lo si fa spesso creando un database SQLite,
+
+75
+00:05:27,930 --> 00:05:31,720
+ma, come vedremo in seguito, possono
+funzionare anche altri approcci.
+
+76
+00:05:32,900 --> 00:05:36,980
+Poi bisogna definire una cosiddetta
+Contract Class,
+
+77
+00:05:36,980 --> 00:05:41,450
+che definisce costanti e altre informazioni
+di cui altre applicazioni
+
+78
+00:05:41,450 --> 00:05:44,514
+hanno bisogno per usare il vostro
+ContentProvider.
+
+79
+00:05:45,560 --> 00:05:49,538
+Dopo di che, si definisce una sottoclasse di
+ContentProvider,
+
+80
+00:05:49,538 --> 00:05:54,650
+implementando, ad esempio, metodi come
+delete e insert.
+
+81
+00:05:54,650 --> 00:05:59,111
+E, infine, si dichiara e si configura
+il ContentProvider
+
+82
+00:05:59,111 --> 00:06:03,736
+nel file AndroidManifest.xml della sua
+applicazione.
+
+83
+00:06:05,283 --> 00:06:10,210
+La prossima applicazione di esempio si
+chiama ContentProviderCustom.
+
+84
+00:06:10,210 --> 00:06:15,420
+Quest'applicazione definisce un ContentProvider
+per delle semplici coppie ID-stringa.
+
+85
+00:06:16,500 --> 00:06:19,963
+Diamo prima uno sguardo al codice sorgente
+di questa applicazione.
+
+86
+00:06:25,380 --> 00:06:30,710
+Dunque, ecco l'applicazione
+ContentProviderCustom aperta nell'IDE.
+
+87
+00:06:30,710 --> 00:06:34,570
+Per prima cosa apro il ContentProvider
+stesso,
+
+88
+00:06:34,570 --> 00:06:38,379
+che si trova nel file
+StringsContentProvider.java.
+
+89
+00:06:39,960 --> 00:06:44,158
+Qui potete vedere che questa classe
+estende la classe ContentProvider.
+
+90
+00:06:45,944 --> 00:06:48,644
+Ora, per prima cosa potete vedere che i dati
+sono
+
+91
+00:06:48,644 --> 00:06:52,420
+memorizzati in una semplice struttura dati
+di tipo SparseArray.
+
+92
+00:06:53,480 --> 00:06:58,340
+Quindi il vostro ContentProvider non deve
+essere sempre implementato usando un database.
+
+93
+00:06:59,490 --> 00:07:02,820
+Poi il codice definisce alcuni metodi.
+
+94
+00:07:02,820 --> 00:07:05,280
+In primo luogo c'è il metodo delete.
+
+95
+00:07:05,280 --> 00:07:07,660
+Ora, questo metodo rimuove o un singolo
+record dal
+
+96
+00:07:07,660 --> 00:07:10,400
+database o rimuove tutti i record.
+
+97
+00:07:11,710 --> 00:07:16,750
+Inoltre questo metodo non processa
+nessuno dei costrutti SQL.
+
+98
+00:07:16,750 --> 00:07:19,970
+Ora, questo metodo testa se l'URI
+
+99
+00:07:19,970 --> 00:07:22,370
+che gli è stato passato si riferisce
+all'intera
+
+100
+00:07:22,370 --> 00:07:25,320
+tabella o a un singolo record all'interno
+della tabella.
+
+101
+00:07:26,350 --> 00:07:30,720
+Se si riferisce a tutta la tabella, allora
+il codice svuota l'intero SparseArray.
+
+102
+00:07:32,140 --> 00:07:35,290
+E se si riferisce solo a un singolo record,
+allora
+
+103
+00:07:35,290 --> 00:07:38,515
+il codice rimuove quel singolo record
+dello SparseArray.
+
+104
+00:07:38,515 --> 00:07:41,070
+[SUONO].
+
+105
+00:07:41,070 --> 00:07:44,870
+E infine il codice restituisce il numero di
+record che sono stati cancellati.
+
+106
+00:07:46,630 --> 00:07:52,540
+Poi il codice implementa il metodo getType.
+Questo metodo usa la classe DataContract
+
+107
+00:07:52,540 --> 00:07:57,940
+per restituire il tipo MIME dei dati
+associati a
+
+108
+00:07:57,940 --> 00:08:04,300
+un dato URI. Poi il codice implementa il
+metodo insert.
+
+109
+00:08:04,300 --> 00:08:08,600
+Questo metodo estrae i dati di un dato
+record, li mette in un
+
+110
+00:08:08,600 --> 00:08:13,820
+oggetto DataRecord, e poi memorizza
+l'oggetto dataRecord nello SparseArray.
+
+111
+00:08:15,060 --> 00:08:20,250
+Infine restituisce un nuovo URI, che può
+essere usato per recuperare questo nuovo record.
+
+112
+00:08:22,010 --> 00:08:24,880
+Poi il codice implementa il metodo query.
+
+113
+00:08:26,460 --> 00:08:31,523
+Questo metodo inizia con la creazione di un
+oggetto MatrixCursor. Ora, questo è solo un
+
+114
+00:08:31,523 --> 00:08:36,886
+semplice Cursor che restituirà tutti i dati
+associati a ogni record.
+
+115
+00:08:36,886 --> 00:08:41,911
+E ancora, se l'URI si riferisce a tutti
+i record, il codice inserirà
+
+116
+00:08:41,911 --> 00:08:47,090
+ogni record in questo Cursor. Se invece
+l'URI si riferisce ad un
+
+117
+00:08:47,090 --> 00:08:52,538
+singolo record, allora il codice aggiungerà
+solamente tale record nel Cursor.
+
+118
+00:08:52,538 --> 00:08:56,495
+Infine il codice restituisce il Cursor che
+ha appena creato.
+
+119
+00:08:57,416 --> 00:09:00,204
+L'ultimo metodo è l'onCreate e normalmente
+
+120
+00:09:00,204 --> 00:09:04,670
+qui si dovrebbe inizializzare il sistema
+di archiviazione dei dati.
+
+121
+00:09:04,670 --> 00:09:09,794
+Ma per questo semplice esempio non è
+necessaria alcuna inizializzazione. Il codice
+
+122
+00:09:09,794 --> 00:09:15,547
+restituisce semplicemente true per indicare
+che l'inizializzazione è stata completata con successo.
+
+123
+00:09:15,547 --> 00:09:18,213
+E, prima di continuare, apriamo
+
+124
+00:09:18,213 --> 00:09:21,977
+il file AndroidManifest.xml di
+quest'applicazione.
+
+125
+00:09:25,567 --> 00:09:28,410
+Qui potete vedere che abbiamo
+aggiunto un tag "provider".
+
+126
+00:09:29,560 --> 00:09:32,790
+E all'interno di questo tag abbiamo
+specificato il nome
+
+127
+00:09:32,790 --> 00:09:37,670
+della classe che implementa questo
+ContentProvider. Abbiamo aggiunto
+
+128
+00:09:37,670 --> 00:09:40,700
+la porzione authority dell'URI che
+
+129
+00:09:40,700 --> 00:09:44,469
+dovrà essere utilizzato per accedere
+a questo ContentProvider.
+
+130
+00:09:45,650 --> 00:09:48,110
+E abbiamo impostato l'attributo "exported"
+su true
+
+131
+00:09:48,110 --> 00:09:52,570
+per consentire ad altre applicazioni di
+accedere a questo ContentProvider.
+
+132
+00:09:54,620 --> 00:10:00,430
+La nostra ultima applicazione di esempio si
+chiama ContentProviderCustomUser.
+
+133
+00:10:00,430 --> 00:10:03,000
+Quest'applicazione è separata
+dall'applicazione
+
+134
+00:10:03,000 --> 00:10:06,520
+ContentProviderCustom che abbiamo appena
+visto.
+
+135
+00:10:06,520 --> 00:10:09,990
+Tuttavia legge dati da tale ContentProvider
+
+136
+00:10:09,990 --> 00:10:13,680
+e mostra i record in una ListView.
+
+137
+00:10:13,680 --> 00:10:15,856
+Vediamo quest'applicazione in azione.
+
+138
+00:10:17,188 --> 00:10:19,190
+Dunque, ecco il mio dispositivo.
+
+139
+00:10:19,190 --> 00:10:23,270
+Ora avvio l'applicazione
+ContentProviderCustomUser.
+
+140
+00:10:24,830 --> 00:10:27,890
+E, come vedete, l'applicazione mostra due
+record dati.
+
+141
+00:10:29,030 --> 00:10:31,046
+Diamo un'occhiata al codice sorgente di
+
+142
+00:10:31,046 --> 00:10:33,504
+quest'applicazione per vedere da dove
+vengono questi dati.
+
+143
+00:10:36,132 --> 00:10:41,620
+Quindi ecco l'applicazione
+ContentProviderCustomUser aperta nell'IDE.
+
+144
+00:10:41,620 --> 00:10:43,350
+Ora apro la MainActivity.
+
+145
+00:10:44,822 --> 00:10:46,590
+Il metodo onCreate inizia ottenendo un
+
+146
+00:10:46,590 --> 00:10:49,990
+riferimento al ContentResolver di questo
+Context.
+
+147
+00:10:51,290 --> 00:10:54,110
+Poi crea un oggetto ContentValues.
+
+148
+00:10:56,840 --> 00:11:01,650
+Dopo di che il codice aggiunge un valore per
+Record1.
+
+149
+00:11:01,650 --> 00:11:06,550
+Quindi chiama il metodo insert per inserire
+tale record nel ContentProvider.
+
+150
+00:11:07,890 --> 00:11:12,130
+Il codice poi fa la stessa cosa per un
+secondo e per un terzo record.
+
+151
+00:11:14,150 --> 00:11:16,550
+Poi, elimina il primo record che
+
+152
+00:11:16,550 --> 00:11:19,680
+aveva precedentemente inserito,
+chiamando il metodo delete.
+
+153
+00:11:21,560 --> 00:11:24,483
+E dopo tutto questo, il codice poi interroga
+il
+
+154
+00:11:24,483 --> 00:11:27,801
+ContentProvider per estrarre tutti i record
+
+155
+00:11:27,801 --> 00:11:31,356
+che sono attualmente memorizzati nel
+ContentProvider e
+
+156
+00:11:31,356 --> 00:11:34,506
+quindi li mostra in una ListView.
+
+157
+00:11:39,221 --> 00:11:43,190
+Dunque, è tutto per la nostra lezione sui
+ContentProvider.
+
+158
+00:11:43,190 --> 00:11:45,540
+Unitevi a me la prossima volta per una
+discussione
+
+159
+00:11:45,540 --> 00:11:50,040
+sull'ultima componente fondamentale di
+Android, la classe Service.
+
+160
+00:11:50,040 --> 00:11:50,770
+Arrivederci.
+</pre>

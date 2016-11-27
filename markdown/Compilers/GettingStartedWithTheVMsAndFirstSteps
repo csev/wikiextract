@@ -1,0 +1,69 @@
+# Getting started with the VMs and first steps
+
+## Introduction
+
+If you wish to write a compiler for the course, you will need an environment in which to do so. Due to the complexities of getting all of the tools working, it would be too difficult to support installing everything you need directly on your computer. Hence, we provide some options to use a pre-installed copy on a Linux operating system.
+
+If you would prefer to run the assignments on your own computer instead of on Amazon EC2, you will need to download our Linux virtual machine (VM).
+
+## Setting VM up
+
+If you have not used a VM before, the idea is that you will be running an entire operating system on inside a program (VirtualBox) that looks to the virtual guest operating system like real hardware. We provide downloadable image of the guest OS with everything installed, so that you only need to do minimal setup to get started.
+
+Note that since a VM contains a whole second operating system, the system requirements are high. **The VM will take a bit over 512MB of ram (so you will probably want to have 2GB of total ram to keep Windows or Mac OS X running smoothly), plus a bit over 2GB of hard disk space**. If your computer is not up to the task, consider using the Amazon EC2 option instead.
+
+**Getting VirtualBox**
+
+* First, download Oracle's VirtualBox, either from the VirtualBox website at https://www.virtualbox.org/wiki/Downloads, or from Oracle's download page at http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html. Choose the version for the operating system you are running on your computer.
+
+* Once the download completes, run the installer to install VirtualBox. You will need administrator access on your computer to do so.
+
+**Getting our VM image**
+
+* Download our linux virtual machine image from http://d2bk0s8yylvsxl.cloudfront.net/stanford-compilers/vm/compilers-vm.zip, or if you have a BitTorrent client installed, you can use the torrent at http://spark-university.s3.amazonaws.com/stanford-compilers/vm/compilers-vm.zip?torrent. Note that this download is approximately 750MB.
+
+* Unzip the file into a convenient directory. The unzipped files are about 2GB, so make sure you have enough disk space available. If you are a Windows XP user and have trouble opening the zip file, try WinZip (shareware) or 7-Zip (free, open source) instead of the built-in zip support in Windows.
+
+* Once you have unzipped the VM, double-click on the file "Compilers.vbox" This should open the VM in VirtualBox.
+
+**Using the VM**
+
+* **The provided account is "compilers" and the password is "cool".**
+
+* To start the VM, click the green "Start" button. This should make the VM boot.
+
+* To shut down the VM, click on the round "Bodhi" button at the bottom left and click System. Then choose Power Off.
+
+* We have installed what you need to do the assignments, plus a few other programs, such as vim and emacs. If you want to install other packages, you can use the Aptitude graphical package manager (under the Bodhi menu->Applications->Preferences) or the apt-get command line tool. If you are not familiar with these, there are many tutorials online that you can find through a quick Google search.
+
+* To get a terminal, click on the terminal icon at the bottom of the screen. This should get you to the point where you can start the assignments.
+
+This VM is based on Bodhi Linux, which is itself based on the popular linux distribution Ubuntu. We used Bodhi Linux in order to keep the download size more manageable, since a full Ubuntu install is quite large. However, since it is based on Ubuntu, most Ubuntu software packages can be installed on Bodhi Linux as well.
+
+If you have a problem that you cannot solve, please post on the Coursera forums. Unfortunately the TAs cannot provide personalized help to students in the public class, but we do monitor the forums, so we will try to post solutions to common problems when they come up.
+
+## First steps
+
+
+Once the VM is set up, you can compile the example programs. Once the assignments become available, you will be able to work on these inside the VM as well.
+
+To play around with the example cool programs, make a directory and copy over one or more examples from the /usr/class/cs143/examples directory. These examples are the same as the ones posted on the website. The coolc command will run the reference compiler to generate the assembly output (.s) file, which you can run using the spim simulator. For example, to compile and run "hello_world.cl", run in a terminal (where $ represents the prompt):
+
+    $ mkdir examples
+    $ cd examples
+    $ cp /usr/class/cs143/examples/hello_world.cl .
+    $ coolc hello_world.cl
+    $ spim hello_world.s
+    SPIM Version 6.5 of January 4, 2003
+    Copyright 1990-2003 by James R. Larus (larus@cs.wisc.edu).
+    All Rights Reserved.
+    See the file README for a full copyright notice.
+    Loaded: /usr/class/cs143/cool/lib/trap.handler
+    Hello, World.
+    COOL program successfully executed
+    Stats -- #instructions : 152
+             #reads : 27  #writes 22  #branches 28  #other 75
+
+## A user video about getting started with the VM
+
+https://www.youtube.com/watch?v=2C7xRy_Ttp0

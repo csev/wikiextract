@@ -1,0 +1,799 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture41:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="User_Notifications_-_Part_2_-_Italian_subtitles">User Notifications - Part 2 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture39:it" title="Android-001:Subtitles:Lecture39:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture41:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture41:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture41:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture41:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture41:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture41:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture41:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture41:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture43:it" title="Android-001:Subtitles:Lecture43:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/hylh85hjjk63jci/5%20-%202%20-%20User%20Notifications%20-%20Part%202%20%2812_38%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:00,000 --&gt; 00:00:08,668
+[BLANK_AUDIO]
+
+2
+00:00:08,668 --&gt; 00:00:09,650
+Ciao.
+
+3
+00:00:09,650 --&gt; 00:00:12,250
+Sono Adam Porter, e questo è
+
+4
+00:00:12,250 --&gt; 00:00:18,160
+Programming Mobile Applications for
+Android Handheld Systems.
+
+5
+00:00:19,780 --&gt; 00:00:22,300
+L'altro tipo di notifica all'utente che
+parleremo
+
+6
+00:00:22,300 --&gt; 00:00:27,750
+in questa lezione sono notifiche che
+appaiono nell'area di notifica.
+
+7
+00:00:27,750 --&gt; 00:00:29,800
+E come ho detto prima, questo tipo di
+
+8
+00:00:29,800 --&gt; 00:00:34,130
+notifica utente viene visualizzato nell'area sistema
+controllato,
+
+9
+00:00:34,130 --&gt; 00:00:38,970
+nella parte superiore del dispositivo, chiamato
+area di notifica o
+
+10
+00:00:38,970 --&gt; 00:00:43,900
+barra di stato .
+Applicazioni e il sistema Android in sé
+
+11
+00:00:43,900 --&gt; 00:00:50,750
+possono utilizzare quest'area per informare gli utenti circa
+il verificarsi di vari eventi.
+
+12
+00:00:50,750 --&gt; 00:00:57,090
+L'area di notifica fornisce inoltre un elemento dell'interfaccia utente chiamato drawer.
+
+13
+00:00:57,090 --&gt; 00:00:59,550
+E l'utente può tirare verso il basso la zona notifica
+
+14
+00:00:59,550 --&gt; 00:01:01,570
+per aprire il drawer
+
+15
+00:01:02,670 --&gt; 00:01:05,800
+E una volta che si è aperto, è possibile vedere ulteriori informazioni su
+
+
+16
+00:01:05,800 --&gt; 00:01:11,460
+Le varie notifiche che sono state
+collocate nell'area di notifica.
+
+17
+00:01:11,460 --&gt; 00:01:15,460
+Vediamo un esempio di come queste notifiche
+vengono utilizzate in Android.
+
+18
+00:01:18,060 --&gt; 00:01:24,151
+Quindi, ecco il mio dispositivo.
+E io apro l'applicazione telefono.
+
+19
+00:01:24,151 --&gt; 00:01:26,470
+E ora inizierò comporre un numero telefonico.
+
+20
+00:01:28,590 --&gt; 00:01:30,930
+Ed ora, io colpirò il pulsante di selezione.
+
+21
+00:01:32,590 --&gt; 00:01:36,140
+E il telefono inizierà a comporre il numero, e collegare la telefonata.
+
+22
+00:01:37,410 --&gt; 00:01:39,920
+Ora diciamo che a metà di questa telefonata
+
+23
+00:01:39,920 --&gt; 00:01:44,450
+ho bisogno di alcune informazioniin internet.
+
+24
+00:01:44,450 --&gt; 00:01:47,800
+Così, colpisco il tasto home per tornare alla home screen
+
+25
+00:01:47,800 --&gt; 00:01:54,300
+e da lì aprirò l'applicazione del browser
+e ora
+
+26
+00:01:54,300 --&gt; 00:02:00,300
+notate nella parte superiore sinistra del mio dispositivo che una nuova Icona è apparsa.
+
+27
+00:02:00,300 --&gt; 00:02:02,440
+Questa è una notifica.
+
+28
+00:02:02,440 --&gt; 00:02:06,650
+Quando sono uscito fuori dall'applicazione telefono, Android ha creato
+
+29
+00:02:06,650 --&gt; 00:02:11,630
+Questo oggetto di notifica, e messo
+nell'area di notifica.
+
+30
+00:02:11,630 --&gt; 00:02:15,480
+E questa notifica serve come promemoria
+per me che la
+
+31
+00:02:15,480 --&gt; 00:02:19,660
+telefonata è ancora connessa, e 
+serve anche per me come un modo
+
+32
+00:02:19,660 --&gt; 00:02:22,430
+tornare rapidamente a quella telefonata.
+
+33
+00:02:23,890 --&gt; 00:02:31,638
+Ora, tornando nel browser, andrò a
+www.google.com e io eseguirò una ricerca.
+
+34
+00:02:31,638 --&gt; 00:02:39,867
+[BLANK_AUDIO]
+
+35
+00:02:39,867 --&gt; 00:02:44,565
+Supponiamo che a questo punto mi sono armato con l'
+informazioni che
+
+36
+00:02:44,565 --&gt; 00:02:47,834
+avevo bisogno e voglio tornare al mia telefonata
+
+37
+00:02:47,834 --&gt; 00:02:54,260
+Così ora, mi tirerò verso il basso l'area di notifica
+per aprire il notification drawer
+
+38
+00:02:54,260 --&gt; 00:02:56,010
+E una volta che si è aperta, vedo una view
+
+39
+00:02:56,010 --&gt; 00:02:59,630
+che mi mostra alcune informazioni
+sulla chiamata.
+
+40
+00:03:00,660 --&gt; 00:03:04,700
+E, mi permette di riconnetermi alla chiamata, o di riagganciare.
+
+41
+00:03:05,800 --&gt; 00:03:07,210
+Ora, in questo caso voglio continuare la
+
+42
+00:03:07,210 --&gt; 00:03:10,040
+chiamata così clicco sull'area notifica.
+
+43
+00:03:11,540 --&gt; 00:03:14,230
+E che porta in primo piano l'applicazione Telefono,
+la riporta
+
+44
+00:03:14,230 --&gt; 00:03:17,070
+in primo piano, e mi permette di
+continuare a parlare.
+
+45
+00:03:20,100 --&gt; 00:03:22,100
+Quando si desidera inviare la notifica, ci
+
+46
+00:03:22,100 --&gt; 00:03:24,770
+sono diverse cose che dovete considerare
+
+47
+00:03:24,770 --&gt; 00:03:29,510
+Primo luogo, c'è la notifica di base 
+che deve avere almeno
+
+48
+00:03:29,510 --&gt; 00:03:35,340
+testo per il titolo e dettagli, e anche una piccola icona
+
+49
+00:03:35,340 --&gt; 00:03:38,910
+Quando viene inviata la notifica, esso
+alla fine arriverà a
+
+50
+00:03:38,910 --&gt; 00:03:43,050
+nell'area di notifica in cui la piccola icona sarà visualizzata
+
+51
+00:03:44,120 --&gt; 00:03:45,300
+Inoltre,
+
+52
+00:03:45,300 --&gt; 00:03:50,320
+è possibile impostare il testo delle notifiche ticker,
+in questo caso, il testo sarà
+
+53
+00:03:50,320 --&gt; 00:03:55,350
+inoltre visualizzato nell'area di notifica quando la notifica
+compare .
+
+54
+00:03:56,830 --&gt; 00:04:01,800
+Infine, se l'utente apre il drawer di notifica, c'è una view che vedranno.
+
+55
+00:04:02,880 --&gt; 00:04:06,080
+Ora, per impostazione predefinita, questo include il titolo, il
+
+
+56
+00:04:06,080 --&gt; 00:04:10,630
+Dettaglio o il contenuto del testo, l'icona piccola,
+
+57
+00:04:10,630 --&gt; 00:04:11,450
+e data e ora
+
+58
+00:04:12,450 --&gt; 00:04:15,370
+Sarà inoltre necessario definire ogni azione che verrà eseguita
+
+59
+00:04:15,370 --&gt; 00:04:19,680
+qualora l'utente clicca su notification drawer view.
+
+60
+00:04:19,680 --&gt; 00:04:24,540
+Ora, una volta che hai creato la notifica,
+potreste volere
+
+61
+00:04:24,540 --&gt; 00:04:29,950
+inviare, aggiornare, cancellare, o cose del genere
+
+62
+00:04:29,950 --&gt; 00:04:32,000
+Queste operazioni sono gestite da un
+
+63
+00:04:32,000 --&gt; 00:04:37,320
+servizio  sistema Android chiamato
+notification manager.
+
+64
+00:04:37,320 --&gt; 00:04:42,210
+Quindi diamo un'occhiata a due applicazioni
+che inviano notifiche, e quindi
+
+65
+00:04:42,210 --&gt; 00:04:46,230
+noi daremo un'occhiata ad alcuni di codice sorgente per vedere come tutto questo viene implementato.
+
+66
+00:04:51,270 --&gt; 00:04:55,030
+Ecco, io apro l'applicazione notification status
+bar.
+
+67
+00:04:55,030 --&gt; 00:05:00,560
+E la sua interfaccia utente visualizza un solo pulsante, etichettato Notify.
+
+68
+00:05:01,970 --&gt; 00:05:07,380
+Quando faccio clic su questo pulsante, una notifica verrà creata ed inviata, e
+
+69
+00:05:07,380 --&gt; 00:05:11,620
+Finirà visualizzata nell'area di notifica
+nella parte superiore del telefono.
+
+70
+00:05:13,070 --&gt; 00:05:14,430
+Quindi, permettimi di fare clic sul pulsante ora.
+
+71
+00:05:16,010 --&gt; 00:05:18,080
+[AUDIO] E la notifica è ormai
+arrivata.
+
+72
+00:05:19,700 --&gt; 00:05:21,380
+E questo canto del gallo che si sente è
+
+73
+00:05:21,380 --&gt; 00:05:25,030
+il suono che ho allegato a quella notifica.
+
+74
+00:05:25,030 --&gt; 00:05:29,230
+Potete anche vedere il ticker di testo scorrevole
+apparire nell'area di notifica.
+
+75
+00:05:30,460 --&gt; 00:05:34,760
+Ora, dopo che lo scorrimento del testo ticker finisce
+andrà via e
+
+76
+00:05:34,760 --&gt; 00:05:40,830
+l'icona di notifica rimarrà visibile.
+Così, ora aprirò il drawer di notifica.
+
+77
+00:05:42,340 --&gt; 00:05:47,420
+Potete vedere il drawer view che  mostra l'icona, il titolo di notifica
+
+78
+00:05:47,420 --&gt; 00:05:52,800
+testo, il testo dettaglio di notifica, che
+mostra il numero uno
+
+79
+00:05:52,800 --&gt; 00:05:57,900
+tra parentesi, indicando che il pulsante di notifica
+è stato premuto una volta .
+
+80
+00:05:59,180 --&gt; 00:06:01,730
+E, infine, c'è anche data e ora
+
+81
+00:06:01,730 --&gt; 00:06:07,350
+Ora, a questo punto, mi limiterò a chiudere il notification drawer e vado
+
+82
+00:06:07,350 --&gt; 00:06:10,875
+indietro, e premo il pulsante  notify ancora una volta
+
+83
+00:06:10,875 --&gt; 00:06:13,780
+[SOUND]
+
+84
+00:06:13,780 --&gt; 00:06:16,670
+Ora aprirò il notification drawer ancora una volta.
+
+85
+00:06:18,490 --&gt; 00:06:22,070
+E si può vedere che il testo dettagliato è
+stato aggiornata per mostrare
+
+86
+00:06:22,070 --&gt; 00:06:26,680
+che questa è la seconda volta che il pulsante notify 
+è stato premuto
+
+87
+00:06:26,680 --&gt; 00:06:30,280
+A questo punto farò click sulla notifica, e
+
+88
+00:06:30,280 --&gt; 00:06:32,800
+si può vedere che una nuova activity è iniziata,
+
+89
+00:06:32,800 --&gt; 00:06:35,120
+stampando le parole Got The Intent.
+
+90
+00:06:36,180 --&gt; 00:06:38,080
+E il punto qui, naturalmente, è che si può
+
+91
+00:06:38,080 --&gt; 00:06:42,430
+allegare un intent alla notification
+drawer view per
+
+92
+00:06:42,430 --&gt; 00:06:46,320
+portare l'utente alla applicazione che dovrebbe gestire
+
+93
+00:06:46,320 --&gt; 00:06:50,870
+tutto ciò che segue sull'azione che la 
+notifica era destinato a provocare.
+
+94
+00:06:53,450 --&gt; 00:06:58,630
+Vediamo una seconda applicazione.
+Notification status bar with custom view.
+
+95
+00:06:59,660 --&gt; 00:07:04,050
+Questa applicazione fa la stessa cosa come
+l'ultimo esempio.
+
+96
+00:07:04,050 --&gt; 00:07:08,980
+Tuttavia, mostra una visualizzazione personalizzata quando il notification drawer è aperto.
+
+97
+00:07:08,980 --&gt; 00:07:13,940
+Ora, vorrei avviare l'applicazione e premere il pulsante Notify come prima.
+
+98
+00:07:15,260 --&gt; 00:07:19,565
+Viene creata la notifica e alla fine
+appare [SOUND] nell'area di notifica.
+
+99
+00:07:21,580 --&gt; 00:07:26,640
+Tuttavia, quando apro notification
+drawer, non sto andando a vedere lo standard
+
+100
+00:07:26,640 --&gt; 00:07:32,020
+view, vedrò la mia view personalizzata.
+Lasciatemi aprire il notification drawer ora
+
+101
+00:07:33,450 --&gt; 00:07:36,360
+E, c'è il nostro eyeball, e le parole,
+
+102
+00:07:36,360 --&gt; 00:07:39,690
+sei stato notificato, con il numero in
+parentesi.
+
+103
+00:07:41,190 --&gt; 00:07:44,855
+Ora voglio chiudere il drawer, e colpisco 
+il pulsante Notify di nuovo.
+
+104
+00:07:44,855 --&gt; 00:07:47,440
+[SOUND]
+
+105
+00:07:47,440 --&gt; 00:07:49,860
+aprirò di nuovo il drawer e si può
+
+106
+00:07:49,860 --&gt; 00:07:53,410
+vedere che è tutto lo stesso, tranne che
+il numero uno
+
+107
+00:07:53,410 --&gt; 00:07:56,330
+è diventato il numero due per dimostrare che questo
+
+108
+00:07:56,330 --&gt; 00:07:59,830
+È la seconda notifica, che ha aggiornato il primo.
+
+109
+00:08:01,190 --&gt; 00:08:04,800
+E, infine, farò fare clic sul
+notification drawer view, che
+
+110
+00:08:04,800 --&gt; 00:08:08,850
+avvia una nuova activity visualizza le
+parole, Got The Intent.
+
+111
+00:08:11,960 --&gt; 00:08:12,680
+Ok.
+
+112
+00:08:12,680 --&gt; 00:08:14,074
+Quindi cerchiamo di guardare il
+
+113
+00:08:14,074 --&gt; 00:08:19,445
+codice  per quella seconda applicazione
+NotificationStatusBarWithCustomView.
+
+114
+00:08:19,445 --&gt; 00:08:22,078
+[BLANK_AUDIO]
+
+115
+00:08:22,078 --&gt; 00:08:26,590
+E qui sono tornato nell'IDE, e io
+aprirò  main activity dell'applicazione.
+
+116
+00:08:27,850 --&gt; 00:08:30,790
+Partendo dall'alto, questo codice crea un ID
+
+117
+00:08:30,790 --&gt; 00:08:34,390
+per la notifica che si ha intenzione di inviare.
+
+118
+00:08:36,300 --&gt; 00:08:38,220
+E questo consente al gestore di notifica
+
+119
+00:08:38,220 --&gt; 00:08:42,650
+di aggiornare la notifica dopo che è stata prenventivamente inviata
+
+120
+00:08:42,650 --&gt; 00:08:47,450
+E accanto ci sono alcune variabili che tengono
+gli elementi di testo della notifica,
+
+121
+00:08:47,450 --&gt; 00:08:53,520
+tra cui testo ticker, titolo e
+contenuto.
+
+122
+00:08:53,520 --&gt; 00:08:57,530
+Dopo di che, il codice imposta alcune informazioni
+utilizzati per
+
+123
+00:08:57,530 --&gt; 00:09:02,560
+riprodurre un suono e vibrare il dispositivo
+quando questa notifica arriva.
+
+124
+00:09:03,900 --&gt; 00:09:07,130
+Avanti, il codice crea la view personalizzata
+
+125
+00:09:07,130 --&gt; 00:09:09,530
+che verrà visualizzato nella  notification
+drawer.
+
+126
+00:09:10,580 --&gt; 00:09:12,470
+Il layout di questa view è
+
+127
+00:09:12,470 --&gt; 00:09:18,200
+the custom_notification.xml file.
+Diamo uno sguardo a questo.
+
+128
+00:09:20,720 --&gt; 00:09:24,890
+Come potete vedere questa view è linear
+layou con dueview figli
+
+129
+00:09:26,140 --&gt; 00:09:28,990
+Uno è  image view, quella che visualizza
+
+130
+00:09:28,990 --&gt; 00:09:31,720
+eyeball, e l'altro è una text view
+
+131
+00:09:31,720 --&gt; 00:09:35,320
+E si visualizza il testo che hai notificato.
+
+132
+00:09:37,340 --&gt; 00:09:41,345
+Torno  a main activity, diamo un'occhiata al metodo onCreate
+
+133
+00:09:41,345 --&gt; 00:09:48,690
+E qui il codice crea un intent chiamato
+M notification intent.
+
+134
+00:09:48,690 --&gt; 00:09:56,778
+Questo intent  attiverà in modo esplicito notification subactivity.
+
+135
+00:09:56,778 --&gt; 00:10:00,780
+La successiva riga di codice è qualcosa che
+non abbiamo parlato prima.
+
+136
+00:10:01,910 --&gt; 00:10:02,380
+Questa linea
+
+137
+00:10:02,380 --&gt; 00:10:05,050
+crea qualcosa chiamato pending intent.
+
+138
+00:10:05,050 --&gt; 00:10:09,450
+basato sull'intent M notification che
+è stato creato sulla linea precedente.
+
+139
+00:10:10,652 --&gt; 00:10:14,300
+intent pending è essenzialmente un modulo di autorizzazione che permette
+
+140
+00:10:14,300 --&gt; 00:10:18,920
+un pezzo di codice di sostituire un altro
+pezzo di codice.
+
+141
+00:10:18,920 --&gt; 00:10:22,460
+E quello che voglio dire, è che questa autorizzazione
+
+142
+00:10:22,460 --&gt; 00:10:27,710
+consente il secondo pezzo di codice di attivare il sottostante
+
+143
+00:10:27,710 --&gt; 00:10:31,820
+intent, come se fosse il primo pezzo di
+codice.
+
+144
+00:10:31,820 --&gt; 00:10:33,920
+E questo lo fa con
+
+145
+00:10:33,920 --&gt; 00:10:37,790
+autorizzazioni e identità di quel primo
+pezzo di codice.
+
+146
+00:10:39,260 --&gt; 00:10:40,660
+Quindi, andiamo avanti.
+
+147
+00:10:40,660 --&gt; 00:10:44,659
+il listener del pulsante notify  prima aggiorna il testo del contenuto.
+
+148
+00:10:44,659 --&gt; 00:10:48,776
+Per indicare il numero di volte in cui è stato premuto il pulsante
+
+149
+00:10:48,776 --&gt; 00:10:52,976
+Poi si costruisce la notifica effettiva
+utilizzando
+
+150
+00:10:52,976 --&gt; 00:10:57,807
+la classe notification.builder.
+Il codice crea un nuovo
+
+151
+00:10:57,807 --&gt; 00:11:03,315
+oggetto notification.builder, e poi
+imposta testo ticker
+
+152
+00:11:03,315 --&gt; 00:11:09,390
+l'icona, e set auto-cancel  true..
+
+153
+00:11:09,390 --&gt; 00:11:12,640
+Ora questo dice Android di annullare la notifica
+
+154
+00:11:12,640 --&gt; 00:11:14,430
+se l'utente fa clic sul drawer view.
+
+155
+00:11:15,430 --&gt; 00:11:18,670
+dopo, imposta content intent, e
+
+156
+00:11:18,670 --&gt; 00:11:21,660
+questo è pending inten che definisce l'azione
+
+157
+00:11:21,660 --&gt; 00:11:24,720
+da intraprendere quando l'utente fa clic sul  drawer
+view.
+
+158
+00:11:25,740 --&gt; 00:11:28,740
+Avanti, imposta il suono e la vibrazione
+
+159
+00:11:28,740 --&gt; 00:11:32,520
+che dovrebbe svolgere quando il
+notifica arriva.
+
+160
+00:11:33,690 --&gt; 00:11:38,960
+E, infine, imposta la  view personalizzata che
+dovrebbe essere visualizzato quando l'utente
+
+161
+00:11:38,960 --&gt; 00:11:43,720
+tira verso il basso sul notification drawer.
+Ora, la notifica è impostata,
+
+162
+00:11:44,770 --&gt; 00:11:49,885
+Il codice quindi ottiene un riferimento al
+notification manager chiamando
+
+163
+00:11:49,885 --&gt; 00:11:56,710
+getSystemService passando l'ID del
+servizio di notifica.
+
+164
+00:11:56,710 --&gt; 00:12:00,470
+E, infine, le chiamate  di codice comunicano sul
+
+165
+00:12:00,470 --&gt; 00:12:04,350
+notification manager passando l'ID della
+notifica.
+
+166
+00:12:05,490 --&gt; 00:12:09,930
+Che permette le notifiche esistenti di
+aggiornarsi, e passa anche
+
+167
+00:12:09,930 --&gt; 00:12:17,787
+il risultato della chiamata build  sull'
+oggetto notification.builder.
+
+168
+00:12:17,787 --&gt; 00:12:23,120
+E che il metodo build è quello che effettivamente
+genera l'oggetto di notifica vera e propria.
+
+169
+00:12:23,120 --&gt; 00:12:28,220
+Così  è tutto per la nostra lezione sulle notifiche degli utenti
+
+170
+00:12:28,220 --&gt; 00:12:32,690
+Unitevi a me la prossima volta quando 
+discuteremo la classe BroadcastReceiver.
+
+171
+00:12:32,690 --&gt; 00:12:34,092
+A presto
+
+172
+00:12:34,092 --&gt; 00:12:38,350
+[BLANK_AUDIO]
+
+
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture41:it&amp;oldid=23046">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture41:it&amp;oldid=23046</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

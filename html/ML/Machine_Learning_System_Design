@@ -1,0 +1,115 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Machine Learning System Design</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Prioritizing_What_to_Work_On"><span class="tocnumber">1</span> <span class="toctext">Prioritizing What to Work On</span></a></li>
+<li class="toclevel-1"><a href="#Error_Analysis"><span class="tocnumber">2</span> <span class="toctext">Error Analysis</span></a></li>
+<li class="toclevel-1"><a href="#Error_Metrics_for_Skewed_Classes"><span class="tocnumber">3</span> <span class="toctext">Error Metrics for Skewed Classes</span></a></li>
+<li class="toclevel-1"><a href="#Trading_Off_Precision_and_Recall"><span class="tocnumber">4</span> <span class="toctext">Trading Off Precision and Recall</span></a></li>
+<li class="toclevel-1"><a href="#Data_for_Machine_Learning"><span class="tocnumber">5</span> <span class="toctext">Data for Machine Learning</span></a></li>
+<li class="toclevel-1"><a href="#Quiz_instructions"><span class="tocnumber">6</span> <span class="toctext">Quiz instructions</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Prioritizing_What_to_Work_On">Prioritizing What to Work On</span></h1>
+<p>Different ways we can approach a machine learning problem:
+<ul><li> Collect lots of data (for example "honeypot" project but doesn't always work)
+</li><li> Develop sophisticated features (for example: using email header data in spam emails)
+</li><li> Develop algorithms to process your input in different ways (recognizing misspellings in spam).</p>
+</li></ul>
+
+<p>It is difficult to tell which of the options will be helpful.</p>
+<h1> <span class="mw-headline" id="Error_Analysis">Error Analysis</span></h1>
+<p>The recommended approach to solving machine learning problems is:</p>
+<ul>
+<li>Start with a simple algorithm, implement it quickly, and test it early.</li>
+<li>Plot learning curves to decide if more data, more features, etc. will help</li>
+<li>Error analysis: manually examine the errors on examples in the cross validation set and try to spot a trend.</li>
+</ul>
+<p>It's important to get error results as a single, numerical value. Otherwise it is difficult to assess your algorithm's performance.</p>
+<p>You may need to process your input before it is useful. For example, if your input is a set of words, you may want to treat the same word with different forms (fail/failing/failed) as one word, so must use "stemming software" to recognize them all as one.</p>
+<h1> <span class="mw-headline" id="Error_Metrics_for_Skewed_Classes">Error Metrics for Skewed Classes</span></h1>
+<p>It is sometimes difficult to tell whether a reduction in error is actually an improvement of the algorithm.</p>
+<ul>
+<li>For example: In predicting a cancer diagnoses where 0.5% of the examples have cancer, we find our learning algorithm has a 1% error. However, if we were to simply classify every single example as a 0, then our error would reduce to 0.5% even though we did not improve the algorithm.</li>
+</ul>
+<p>This usually happens with <strong>skewed classes</strong>; that is, when our class is very rare in the entire data set.</p>
+<p>Or to say it another way, when we have lot more examples from one class than from the other class.</p>
+<p>For this we can use <strong>Precision/Recall</strong>.</p>
+<blockquote>
+  <p>Predicted: 1, Actual: 1 --- True positive</p>
+  <p>Predicted: 0, Actual: 0 --- True negative</p>
+  <p>Predicted: 0, Actual, 1 --- False negative</p>
+  <p>Predicted: 1, Actual: 0 --- False positive</p>
+</blockquote>
+<p><strong>Precision</strong>: of all patients we predicted where $$y = 1$$, what fraction actually has cancer?</p>
+<p>$$
+\dfrac{\text{True Positives}}{\text{Total number of predicted positives}}
+= \dfrac{\text{True Positives}}{\text{True Positives}+\text{False positives}}
+$$</p>
+<p><strong>Recall</strong>: Of all the patients that actually have cancer, what fraction did we correctly detect as having cancer?</p>
+<p>$$
+\dfrac{\text{True Positives}}{\text{Total number of actual positives}}
+= \dfrac{\text{True Positives}}{\text{True Positives}+\text{False negatives}}
+$$</p>
+<p>These two metrics give us a better sense of how our classifier is doing. We want both precision and recall to be high.</p>
+<p>In the example at the beginning of the section, if we classify all patients as 0, then our <strong>recall</strong> will be $$\dfrac{0}{0 + f} = 0$$, so despite having a lower error percentage, we can quickly see it has worse recall.</p>
+<p>Note 1: if an algorithm predicts only negatives like it does in one of exercises, the precision is not defined, it is impossible to divide by 0. F1 score will not be defined too. </p>
+<p>Note 2: a manual calculation of precision and other functions is a error prone process. it is very easy though to create an Excel file for this. Put into it a table 2*2 for all necessary input values, label them like "TruePositives", "FalsePositives", and on other cells of Excel add formulas like =SUM(TruePositive, FalsePositive, TrueNegative, FalseNegative), label this one AllExamples. Then on another cell label Accuracy and a formula: =SUM(TruePositive,TrueNegative)/AllExamples. The same with others. After 10 minutes you will have a spreadsheet for all examples and questions. [Snap shot <a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/index.php/File:Spreadsheetquiz6.GIF">https://share.coursera.org/wiki/index.php/File:Spreadsheetquiz6.GIF</a> ]</p>
+<h1> <span class="mw-headline" id="Trading_Off_Precision_and_Recall">Trading Off Precision and Recall</span></h1>
+<p>We might want a <strong>confident</strong> prediction of two classes using logistic regression. One way is to increase our threshold:</p>
+<blockquote>
+  <p>Predict 1 if: $$h&#95;\theta(x) \geq 0.7$$</p>
+  <p>Predict 0 if: $$h&#95;\theta(x) &lt; 0.7$$</p>
+</blockquote>
+<p>This way, we only predict cancer if the patient has a 70% chance.</p>
+<p>Doing this, we will have <strong>higher precision</strong> but <strong>lower recall</strong> (refer to the definitions in the previous section).</p>
+<p>In the opposite example, we can lower our threshold:</p>
+<blockquote>
+  <p>Predict 1 if: $$h&#95;\theta(x) \geq 0.3$$</p>
+  <p>Predict 0 if: $$h&#95;\theta(x) &lt; 0.3$$</p>
+</blockquote>
+<p>That way, we get a very <strong>safe</strong> prediction. This will cause <strong>higher recall</strong> but <strong>lower precision</strong>.</p>
+<blockquote>
+  <p>The greater the threshold, the greater the precision and the lower the recall.</p>
+  <p>The lower the threshold, the greater the recall and the lower the precision.</p>
+</blockquote>
+<p>In order to turn these two metrics into one single number, we can take the <strong>F value</strong>. </p>
+<p>One way is to take the <strong>average</strong>:</p>
+<p>$$\dfrac{P+R}{2}$$</p>
+<p>This does not work well. If we predict all $$y = 0$$ then that will bring the average up despite having 0 recall. If we predict all examples as $$y = 1$$, then the very high recall will bring up the average despite having 0 precision.</p>
+<p>A better way is to compute the <strong>F Score</strong> (or $$F&#95;1\ score$$):</p>
+<p>$$
+\text{F Score} = 2\dfrac{PR}{P + R}
+$$</p>
+<p>In order for the F Score to be large, both precision and recall must be large.</p>
+<p>We want to train precision and recall on the <strong>cross validation set</strong> so as not to bias our test set.</p>
+<h1> <span class="mw-headline" id="Data_for_Machine_Learning">Data for Machine Learning</span></h1>
+<p>How much data should we train on?</p>
+<p>In certain cases, an "inferior algorithm," if given enough data, can outperform a superior algorithm with less data.</p>
+<p>We must choose our features to have <strong>enough</strong> information. A useful test is: Given input $$x$$, would a human expert be able to confidently predict $$y$$?</p>
+<p><strong>Rationale for large data</strong>: if we have a <strong>low bias</strong> algorithm (many features or hidden units making a very complex function), then the larger the training set we use, the less we will have overfitting (and the more accurate the algorithm will be on the test set).</p>
+<h1> <span class="mw-headline" id="Quiz_instructions">Quiz instructions</span></h1>
+<p>When the quiz instructions tell you to enter a value to "two decimal digits", what it really means is "two significant digits". So, just for example, the value 0.0123 should be entered as "0.012", not "0.01".</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Support_Vector_Machines_(SVMs)" title="ML:Support Vector Machines (SVMs)">Support Vector Machines (SVMs)</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Machine_Learning_System_Design&amp;oldid=34112">https://share.coursera.org/wiki/index.php?title=ML:Machine_Learning_System_Design&amp;oldid=34112</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

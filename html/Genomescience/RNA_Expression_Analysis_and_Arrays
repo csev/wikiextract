@@ -1,0 +1,312 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Genomescience:RNA Expression Analysis and Arrays</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#RNA_Expression_Analysis_Background"><span class="tocnumber">2</span> <span class="toctext">RNA Expression Analysis Background</span></a></li>
+<li class="toclevel-1"><a href="#Basic_Principles"><span class="tocnumber">3</span> <span class="toctext">Basic Principles</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Descended_from_the_Northern_Blot"><span class="tocnumber">3.1</span> <span class="toctext">Descended from the Northern Blot</span></a></li>
+<li class="toclevel-2"><a href="#DNA_Arrays_as_Reverse_Northerns"><span class="tocnumber">3.2</span> <span class="toctext">DNA Arrays as Reverse Northerns</span></a></li>
+<li class="toclevel-2"><a href="#Question_1"><span class="tocnumber">3.3</span> <span class="toctext">Question 1</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Sample_Preparation"><span class="tocnumber">4</span> <span class="toctext">Sample Preparation</span></a>
+<ul>
+<li class="toclevel-2"><a href="#T7_Polymerase_Is_Not_Perfect"><span class="tocnumber">4.1</span> <span class="toctext">T7 Polymerase Is Not Perfect</span></a></li>
+<li class="toclevel-2"><a href="#Question_2"><span class="tocnumber">4.2</span> <span class="toctext">Question 2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Types_of_DNA_Arrays"><span class="tocnumber">5</span> <span class="toctext">Types of DNA Arrays</span></a>
+<ul>
+<li class="toclevel-2"><a href="#High_Density_Oligonucleotide_Arrays"><span class="tocnumber">5.1</span> <span class="toctext">High Density Oligonucleotide Arrays</span></a></li>
+<li class="toclevel-2"><a href="#The_Density_Affords_Redundancy"><span class="tocnumber">5.2</span> <span class="toctext">The Density Affords Redundancy</span></a></li>
+<li class="toclevel-2"><a href="#Question_3"><span class="tocnumber">5.3</span> <span class="toctext">Question 3</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Image_Analysis"><span class="tocnumber">6</span> <span class="toctext">Image Analysis</span></a>
+<ul>
+<li class="toclevel-2"><a href="#From_Pixels_to_Probe_Intensity"><span class="tocnumber">6.1</span> <span class="toctext">From Pixels to Probe Intensity</span></a></li>
+<li class="toclevel-2"><a href="#From_Probe_to_Transcript_Intensity"><span class="tocnumber">6.2</span> <span class="toctext">From Probe to Transcript Intensity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Use_Cases"><span class="tocnumber">7</span> <span class="toctext">Use Cases</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Use_Case:_A_versus_B"><span class="tocnumber">7.1</span> <span class="toctext">Use Case: A versus B</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Sources_of_Error"><span class="tocnumber">7.1.1</span> <span class="toctext">Sources of Error</span></a></li>
+<li class="toclevel-3"><a href="#The_Solution"><span class="tocnumber">7.1.2</span> <span class="toctext">The Solution</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Use_Case:_A_versus_B_versus_N"><span class="tocnumber">7.2</span> <span class="toctext">Use Case: A versus B versus N</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Tissue_Specific_Gene_Expression"><span class="tocnumber">7.2.1</span> <span class="toctext">Tissue Specific Gene Expression</span></a></li>
+<li class="toclevel-3"><a href="#Data_Validation"><span class="tocnumber">7.2.2</span> <span class="toctext">Data Validation</span></a></li>
+<li class="toclevel-3"><a href="#Pitfalls_and_Limitations"><span class="tocnumber">7.2.3</span> <span class="toctext">Pitfalls and Limitations</span></a></li>
+<li class="toclevel-3"><a href="#Question_4"><span class="tocnumber">7.2.4</span> <span class="toctext">Question 4</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Use_Case:_Time_Series_Analysis"><span class="tocnumber">7.3</span> <span class="toctext">Use Case: Time Series Analysis</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Use_Case:_Analysis_of_Circadian_Rhythms_in_Transcription"><span class="tocnumber">7.3.1</span> <span class="toctext">Use Case: Analysis of Circadian Rhythms in Transcription</span></a></li>
+<li class="toclevel-3"><a href="#Temporal_Resolution_and_Statistical_Power"><span class="tocnumber">7.3.2</span> <span class="toctext">Temporal Resolution and Statistical Power</span></a></li>
+<li class="toclevel-3"><a href="#Mouse_Liver_Profiling"><span class="tocnumber">7.3.3</span> <span class="toctext">Mouse Liver Profiling</span></a></li>
+<li class="toclevel-3"><a href="#Pitfalls_and_Limitations_2"><span class="tocnumber">7.3.4</span> <span class="toctext">Pitfalls and Limitations</span></a></li>
+<li class="toclevel-3"><a href="#Question_5"><span class="tocnumber">7.3.5</span> <span class="toctext">Question 5</span></a></li>
+<li class="toclevel-3"><a href="#Question_6"><span class="tocnumber">7.3.6</span> <span class="toctext">Question 6</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Limitations_of_RNA_Expression_Analysis_by_DNA_Arrays"><span class="tocnumber">8</span> <span class="toctext">Limitations of RNA Expression Analysis by DNA Arrays</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Introduction">Introduction</span></h3>
+<p>[0:00:00][No Slide] <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=Y8ZYe0zFBO4">Link to Video Segment 01</a></p>
+<p>Today we are going to talk about RNA Analysis Part 1.</p>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/45/ExSciGen_L10_S02_RNAExpressionAnalysis.png" class="image"><img alt="" src="/wiki/images/thumb/4/45/ExSciGen_L10_S02_RNAExpressionAnalysis.png/160px-ExSciGen_L10_S02_RNAExpressionAnalysis.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/45/ExSciGen_L10_S02_RNAExpressionAnalysis.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>RNA expression analysis (Slide 02)</div></div></div>
+<ul><li>[0:00:07][Slide 02]
+</li></ul>
+In this lecture we are going to talk about approaches and principles. We are going to zoom in on RNA expression analysis use cases. And then we are going to talk about limitations and pitfalls.</p>
+<h3> <span class="mw-headline" id="RNA_Expression_Analysis_Background">RNA Expression Analysis Background</span></h3>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/46/ExSciGen_L10_S03_RNAExpressionAnalysisTranscriptome.png" class="image"><img alt="" src="/wiki/images/thumb/4/46/ExSciGen_L10_S03_RNAExpressionAnalysisTranscriptome.png/160px-ExSciGen_L10_S03_RNAExpressionAnalysisTranscriptome.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/46/ExSciGen_L10_S03_RNAExpressionAnalysisTranscriptome.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>RNA expression analysis: Transcriptome (Slide 03)</div></div></div>
+<ul><li>[0:00:18][Slide 03] <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=casS1uv-P5E">Link to Video Segment 02</a></p>
+</li></ul>
+<p>First some background, with RNA expression analysis our real goal is to understand the transcriptome, which can be loosely defined as all of the expressed RNAs in a cell.</p>
+<p>The transcriptome varies by cell type, tissue and organ, environment and by treatment, time of day and age.</p>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/d/d1/ExSciGen_L10_S04_DNAArrays.png" class="image"><img alt="" src="/wiki/images/thumb/d/d1/ExSciGen_L10_S04_DNAArrays.png/160px-ExSciGen_L10_S04_DNAArrays.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/d/d1/ExSciGen_L10_S04_DNAArrays.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>DNA arrays (Slide 04)</div></div></div>
+<ul><li>[0:00:39][Slide 04]  <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=Bu-7Ii5nTaM">Link to Video Segment 03</a>
+</li></ul>
+Traditionally DNA arrays have been used to understand the transcriptome. RNA expression is older than DNA arrays but really took off with DNA arrays in the late 90s and early 2000s. The big advantage DNA arrays had were that they were physically addressable and spatially defined. Most of these DNAs could be cDNAs or short or long oligonucleotides.</p>
+<p>DNA arrays are also used for things other than RNA expression analysis. For example for chromatin immunoprecipitation on-chip or ChIP on-chip to understand where transcription factors are binding on promoters. They have been used for resequencing or genotyping—for example, to find SNPs and genomic sequence. They have been used extensively for DNA copy number analysis and as a generic readout technology.</p>
+<h3> <span class="mw-headline" id="Basic_Principles">Basic Principles</span></h3>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/0/08/ExSciGen_L10_S05_BasicPrinciples.png" class="image"><img alt="" src="/wiki/images/thumb/0/08/ExSciGen_L10_S05_BasicPrinciples.png/160px-ExSciGen_L10_S05_BasicPrinciples.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/0/08/ExSciGen_L10_S05_BasicPrinciples.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Basic principles (Slide 05)</div></div></div>
+<ul><li>[0:01:35][Slide 05]  <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=fhXJQJWagiY">Link to Video Segment 04</a></p>
+</li></ul>
+<p>The basic principles of DNA arrays involve Watson and Crick Hybridization, or base pairing. For example the Northern or the Southern blot; but instead of the probes being fixed on a membrane, now they are fixed on a solid surface—for example a glass slide. </p>
+<p>Here you can see we have fixed probes here that are aligned on this particular solid matrix and then a labeled target. When the labeled target hybridizes to its cognate probe—for example down here—you can actually read that signal off and get an understanding of what the intensity and expression level of that target RNA is.</p>
+<h4> <span class="mw-headline" id="Descended_from_the_Northern_Blot">Descended from the Northern Blot</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/a/ae/ExSciGen_L10_S06_DecendedFromNorthernBlot.png" class="image"><img alt="" src="/wiki/images/thumb/a/ae/ExSciGen_L10_S06_DecendedFromNorthernBlot.png/160px-ExSciGen_L10_S06_DecendedFromNorthernBlot.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/a/ae/ExSciGen_L10_S06_DecendedFromNorthernBlot.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Descended from the Northern blot (Slide 06)</div></div></div>
+<ul><li>[0:02:21][Slide 06]</p>
+</li></ul>
+<p>The technology is in fact descended from the Northern blot. To remind you, in Northern blot you have samples here and you run them on a gel and then you probe with a radioactive labeled DNA or RNA probe. For example, in these two conditions we have relatively low levels of a particular RNA in this sample and higher levels of a particular RNA in this sample.</p>
+<p>Many RNA are separated. In each lane there are many, many thousands upon thousands of different RNAs, but you are only detecting one or a few species. </p>
+<p>Typically you would probe each Northern blot with one or a few probes. The read out is typically on an x-ray film or a related imaging technology. In addition to getting the intensity of the RNA expression—for example, lane two is brighter than lane one—you also get size of the RNA.</p>
+<h4> <span class="mw-headline" id="DNA_Arrays_as_Reverse_Northerns">DNA Arrays as Reverse Northerns</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/8/88/ExSciGen_L10_S07_DNAArraysAreReverseNortherns.png" class="image"><img alt="" src="/wiki/images/thumb/8/88/ExSciGen_L10_S07_DNAArraysAreReverseNortherns.png/160px-ExSciGen_L10_S07_DNAArraysAreReverseNortherns.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/8/88/ExSciGen_L10_S07_DNAArraysAreReverseNortherns.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>DNA arrays are ‘reverse’ Northern blots in parallel (Slide 07)</div></div></div>
+<ul><li>[0:03:19][Slide 07]</p>
+</li></ul>
+<p>You can think about DNA arrays as reverse Northerns that are done in parallel. In this case you start with total RNA, convert the total RNA to cRNA, and then amplify the antisense RNA and hybridize to an array matrix where each well here would have a different cDNA already physically bound.</p>
+<p>So the cDNAs are spotted on a solid membrane or glass slide. One or two samples are labeled and hybridized to this array, they can be read out with an array scanner. What you do not get is size, but what you do get is the intensities of hundreds or even thousands of different RNA species.</p>
+<h4> <span class="mw-headline" id="Question_1">Question 1</span></h4>
+<ul>
+<li>[0:04:09][Question 1]</li>
+</ul>
+<p>So our first question. 
+Q1: True or false
+<ul><li> DNA arrays test the mRNA size and expression of several hundred genes in a single sample.</p>
+</li></ul>
+
+<p>The answer to this is false.
+False: they test the expression but don’t give the size of the messages.</p>
+<h3> <span class="mw-headline" id="Sample_Preparation">Sample Preparation</span></h3>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/5/52/ExSciGen_L10_S09_SamplePreparation.png" class="image"><img alt="" src="/wiki/images/thumb/5/52/ExSciGen_L10_S09_SamplePreparation.png/160px-ExSciGen_L10_S09_SamplePreparation.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/5/52/ExSciGen_L10_S09_SamplePreparation.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Sample preparation (Slide 09)</div></div></div>
+<ul><li>[0:04:22][Slide 09]</p>
+</li></ul>
+<p>A bit about sample preparation. In DNA arrays the real enabling technology for RNA expression was linear amplification. In this case you could add a DT probe with a bacterial polymerase T7 tag at the end. Then using the T7 RNA polymerase, you could amplify the cDNA many thousands of fold and end up with amplified antisense RNA. Finally you would hybridize this RNA to cDNAs (?). This paper is actually published in PNAs in 1990 (<a rel="nofollow" class="external text" href="http://www.pnas.org/content/87/5/1663.full.pdf">Van Gelder et al., PNAs, 1990</a>).</p>
+<h4> <span class="mw-headline" id="T7_Polymerase_Is_Not_Perfect">T7 Polymerase Is Not Perfect</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/1/14/ExSciGen_L10_S10_T7PolymeraseNotPerfect.png" class="image"><img alt="" src="/wiki/images/thumb/1/14/ExSciGen_L10_S10_T7PolymeraseNotPerfect.png/160px-ExSciGen_L10_S10_T7PolymeraseNotPerfect.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/1/14/ExSciGen_L10_S10_T7PolymeraseNotPerfect.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>T7 Polymerase Is Not Perfect (Slide 10)</div></div></div>
+<ul><li>[0:05:01][Slide 10]</p>
+</li></ul>
+<p>T7 polymerase is not perfect. The average human nRNA is about 2 kb. T7 has a long way to go to reach the 5-prime end of the average message. So the amplified RNA or the aRNA gets shorter with each round of amplification.</p>
+<h4> <span class="mw-headline" id="Question_2">Question 2</span></h4>
+<p>Q2: What is the effect of labeling bias?
+<ul><li> A) Loss of signal from probe sets designed against the 5’ end of long transcripts
+</li><li> B) Enhanced detection of probe sets designed to the 3’ end of transcripts
+</li><li> C) Both
+</li><li> D) Neither</p>
+</li></ul>
+
+<p>The answer is C, both. You both get loss of signal from probe sets designed against the 5’ end and because of this you also get enhanced detection of probe sets designed to the 3’ end of transcripts.</p>
+<h3> <span class="mw-headline" id="Types_of_DNA_Arrays">Types of DNA Arrays</span></h3>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/7/7b/ExSciGen_L10_S12_TypesOfDNAArrays.png" class="image"><img alt="" src="/wiki/images/thumb/7/7b/ExSciGen_L10_S12_TypesOfDNAArrays.png/160px-ExSciGen_L10_S12_TypesOfDNAArrays.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/7/7b/ExSciGen_L10_S12_TypesOfDNAArrays.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Types of DNA Arrays (Slide 12)</div></div></div>
+<ul><li>[0:05:49][Slide 12]</p>
+</li></ul>
+<p>There are several different types of DNA arrays. The first and maybe the most popular type used to be the cDNA array as developed by Ron Davis and Pat Brown.  The advantages to the cDNA array are that they are sensitive, open source, and relatively low cost to produce. </p>
+<p>The disadvantages are because the cDNAs use chunks of the cDNA there is a higher possibility of including a region that could cross hybridize to another gene. There is also production issues involved in producing these cDNA arrays. You have to amplify either bacterial clones or PCR products, normalize them so you have roughly the same amount for each spot, and then deposit them.</p>
+<p>Another technology is the long oligonucleotide arrays. These are produced synthetically. The advantage of this type is that they are sensitive, they can be commercially sourced and they are high density. </p>
+<p>The disadvantages are that because they are typically longer than the very short oligonucleotide arrays, there is a chance of cross hybridization, that the density is not quite as dense as the very short photolithography base arrays, and the cost is higher than cDNA arrays.</p>
+<p>Finally there is probably the most popular type which is the small oligonucleotide array. For example, as produced by Affymetrics. The advantages here is that they are extremely high density, there are multiple independent measures for each transcript’s expression, there is a litany of open-source analysis algorithms available to analyze these arrays, and you also have base level discriminants.</p>
+<p>The disadvantage of using these commercial arrays is obviously cost, because they are more expensive to produce than typically cDNA arrays and sensitivity, because as the probes are small, they are not as sensitive as some of the long oligonucleotide arrays or cDNA arrays. </p>
+<h4> <span class="mw-headline" id="High_Density_Oligonucleotide_Arrays">High Density Oligonucleotide Arrays</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/b/b1/ExSciGen_L10_S13_HighDensityOligonucleotideArrays.png" class="image"><img alt="" src="/wiki/images/thumb/b/b1/ExSciGen_L10_S13_HighDensityOligonucleotideArrays.png/160px-ExSciGen_L10_S13_HighDensityOligonucleotideArrays.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/b/b1/ExSciGen_L10_S13_HighDensityOligonucleotideArrays.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>High Density Oligonucleotide Arrays (Slide 13)</div></div></div>
+<ul><li> [0:07:59][Slide 13]</p>
+</li></ul>
+<p>Here is an example of a high-density oligonucleotide array, it is an Affymetrix array. These are physically addressable, high-density arrays with current technology more than two million probes per array. Here is a blown-up figure of approximately 1cm x 1cm. What you can see is that extremely small spot enabled by photolithography where we have deposited both perfect match and mismatch oligonucleotides.</p>
+<h4> <span class="mw-headline" id="The_Density_Affords_Redundancy">The Density Affords Redundancy</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/4/42/ExSciGen_L10_S14_DensityAffordsRedundancy.png" class="image"><img alt="" src="/wiki/images/thumb/4/42/ExSciGen_L10_S14_DensityAffordsRedundancy.png/160px-ExSciGen_L10_S14_DensityAffordsRedundancy.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/4/42/ExSciGen_L10_S14_DensityAffordsRedundancy.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>The Density Affords Redundancy (Slide 14)</div></div></div>
+<ul><li> [0:08:28][Slide 14]</p>
+</li></ul>
+<p>You have two million probes and they can be distributed randomly throughout the chip and this affords a lot of redundancy because obviously there are not two million genes there is only about 25,000 or so protein encoding human genes. This allows you to measure each transcript multiple times. You can also include transcripts randomly throughout the array that can allow for background subtraction. It also allows you to toss out outliers. It enables really sophisticated array normalization schemes.</p>
+<h4> <span class="mw-headline" id="Question_3">Question 3</span></h4>
+<p>Q3: High density arrays afford:
+<ul><li> A) Resistance to outliers – for example a small scratch on a portion of the array
+</li><li> B) Built in normalization controls – for example Gapdh
+</li><li> C) Base level discrimination
+</li><li> D) All of the above
+</li><li> E) A &amp; B</p>
+</li></ul>
+
+<p>The answer here is A &amp; B [E] because while it is true that base level discrimination is possible using these high density arrays, it is not a product of the redundancy, it is really a product of the size of the array.</p>
+<h3> <span class="mw-headline" id="Image_Analysis">Image Analysis</span></h3>
+<h4> <span class="mw-headline" id="From_Pixels_to_Probe_Intensity">From Pixels to Probe Intensity</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/e/e4/ExSciGen_L10_S16_ImageAnalysisFromPixelsToProbeIntensity.png" class="image"><img alt="" src="/wiki/images/thumb/e/e4/ExSciGen_L10_S16_ImageAnalysisFromPixelsToProbeIntensity.png/160px-ExSciGen_L10_S16_ImageAnalysisFromPixelsToProbeIntensity.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/e/e4/ExSciGen_L10_S16_ImageAnalysisFromPixelsToProbeIntensity.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Image Analysis from Pixels to Probe Intensity (Slide 16)</div></div></div>
+<ul><li> [0:09:44][Slide 16]</p>
+</li></ul>
+<p>Next we are going to move on to image analysis from pixels to probe intensities. After scanning these high density arrays, each array is basically an image file that is several hundred megabytes in size. Each probe that is deposited on the array takes up approximately 100 pixels. From these pixels a single measurement of the expression of that probe is determined. The expression values for all the probes on the array are condensed into something called a CEL file.</p>
+<h4> <span class="mw-headline" id="From_Probe_to_Transcript_Intensity">From Probe to Transcript Intensity</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/7/7e/ExSciGen_L10_S17_ImageAnalysisFromProbeToTranscriptIntensity.png" class="image"><img alt="" src="/wiki/images/thumb/7/7e/ExSciGen_L10_S17_ImageAnalysisFromProbeToTranscriptIntensity.png/160px-ExSciGen_L10_S17_ImageAnalysisFromProbeToTranscriptIntensity.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/7/7e/ExSciGen_L10_S17_ImageAnalysisFromProbeToTranscriptIntensity.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Image Analysis from Probe to Transcript Intensity (Slide 17)</div></div></div>
+<ul><li> [0:10:14][Slide 17]</p>
+</li></ul>
+<p>Next you want to take the CEL file and go from probe to transcript intensity. To do this each transcript is represented by somewhere between 20 and 30, 25-mer perfect match (PM) probes called the probe set. </p>
+<p>Sometimes mismatch (MM) probes are also included. These are designed to reduce specific cross hybridization events and you can arrive at expression of the transcript by subtracting the perfect match from the mismatch signals. There is significant debate about the usefulness of these mismatch arrays.</p>
+<p>For each transcript expression is a product of the probe set intensities. This step is called condensation. There are many condensation algorithms available. For example, MAS5 or PLIER which are products of Affymetrix, but also open-source algorithms like RMA, GCRMA, and DCHIP. Many of these, if not all of the above methods, have been implemented in the R project with the BioConductor group. You can download the BioConductor code and there are implementations of many if not all of these algorithms within it already done for you.</p>
+<h3> <span class="mw-headline" id="Use_Cases">Use Cases</span></h3>
+<p>[0:11:23]
+Let’s switch gears and go onto talk about use cases.</p>
+<h4> <span class="mw-headline" id="Use_Case:_A_versus_B">Use Case: A versus B</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/5/54/ExSciGen_L10_S19_UseCaseAVersusB.png" class="image"><img alt="" src="/wiki/images/thumb/5/54/ExSciGen_L10_S19_UseCaseAVersusB.png/160px-ExSciGen_L10_S19_UseCaseAVersusB.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/5/54/ExSciGen_L10_S19_UseCaseAVersusB.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Use Case - A Versus B (Slide 19)</div></div></div>
+<ul><li> [0:11:28][Slide 19]</p>
+</li></ul>
+<p>Maybe one of the most common use cases is looking at the difference between two samples. This starts with a biological question. For example: What are the differences between normal and tissues in humans? What is the difference between a wild type and knock out mouse or fly or yeast? What are the differences between a control and drug treated sample?</p>
+<p>An example of such an experiment would be from 30 separate age, gender, and ethnic group matched patients we get tumor and healthy tissue biopsies. We take 60 arrays and normalize them. You could use a t-test to define differences at the individual gene level, correct for false discovery rates to account for multiple testing, and the end product could be a graph or a table of the differential gene expression.</p>
+<p>These data would then typically be validated by an RT-PCR assay, an independent measure of the gene expression, ideally with an independent set of issues or tumors.</p>
+<h5> <span class="mw-headline" id="Sources_of_Error">Sources of Error</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/0/05/ExSciGen_L10_S20_SourcesOfError.png" class="image"><img alt="" src="/wiki/images/thumb/0/05/ExSciGen_L10_S20_SourcesOfError.png/160px-ExSciGen_L10_S20_SourcesOfError.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/0/05/ExSciGen_L10_S20_SourcesOfError.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Source of Error (Slide 20)</div></div></div>
+<ul><li> [0:12:24][Slide 20]</p>
+</li></ul>
+<p>There are sources of error in these experiments as there are in almost any experimental method. Some of these sources of error are biological. For example, patients could have significant genetic differences. Tumors can be very different from one another depending upon the type of tumor and whether or not it has been identified properly. </p>
+<p>Animal models can be very different from one another. There can be genetic strain differences in the background, etcetera. </p>
+<p>There are many environmental issues that could impact the experiment. For example, the diet, the time of day, seasonal animals could impact the gene expression levels that are observed in these types of experiments.</p>
+<p>You also can have issues like classification—I mentioned earlier the pathologist can stage tissues and what one pathologist may call a stage 3A another pathologist may call a different stage.</p>
+<p>There can also be technical differences in sample preparation or batch-to-batch variation in arrays. Ozone levels can even vary from day to day. That is actually a published paper from the Rosetta group which used to be a part of Merck.</p>
+<p>There are also many differences in how people analyze these data. So connotation algorithms can influence the end result. Statistical methods and cutoffs can have a major impact on what the end result of a particular experiment can be. </p>
+<h5> <span class="mw-headline" id="The_Solution">The Solution</span></h5>
+<p>[0:13:55]
+The solution to most of these problems is biological and technical replication. </p>
+<h4> <span class="mw-headline" id="Use_Case:_A_versus_B_versus_N">Use Case: A versus B versus N</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/1/11/ExSciGen_L10_S22_UseCaseAVersusBVersusN.png" class="image"><img alt="" src="/wiki/images/thumb/1/11/ExSciGen_L10_S22_UseCaseAVersusBVersusN.png/160px-ExSciGen_L10_S22_UseCaseAVersusBVersusN.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/1/11/ExSciGen_L10_S22_UseCaseAVersusBVersusN.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Use Case – A versus B versus N (Slide 22)</div></div></div>
+<ul><li> [0:14:01][Slide 22]</p>
+</li></ul>
+<p>So here is another common use case the A versus B versus C versus… to N—for example, tissue specific gene expression. One of the experiments we did in my group about ten years ago was looking at tissue specific gene expression in the mouse, and human, and rat genomes. The basic reason we did this was that knowing where a gene is expressed can shed light on its physiological function. </p>
+<p>Constructed a gene expression atlas with an array designed against human transcripts from Refseq, Unigene, Ensembl, and a proprietary company’s gene models, called Celera. Mouse transcripts were assembled from Refseq, Unigene, Ensembl, Celera, and the Riken Project in Japan. In total we looked at about 35,000 putative protein encoding genes from both species. We looked at their expression in 80+ human tissues and 60+ mouse tissues.</p>
+<p>Because we were shackled by the type of human samples we could get a hold of, we basically were able to test what we could test, but with the mouse experiments we did all the dissections ourselves. Because of many of the issues I mentioned on the previous slide, we controlled for age, gender, diet and time of day in our dissections and where possible duplicate or more dissections, duplicate or more labeling, and duplicate or more hybridizations were performed.</p>
+<h5> <span class="mw-headline" id="Tissue_Specific_Gene_Expression">Tissue Specific Gene Expression</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/3/36/ExSciGen_L10_S23_TissueSpecificGeneExpression.png" class="image"><img alt="" src="/wiki/images/thumb/3/36/ExSciGen_L10_S23_TissueSpecificGeneExpression.png/160px-ExSciGen_L10_S23_TissueSpecificGeneExpression.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/3/36/ExSciGen_L10_S23_TissueSpecificGeneExpression.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Tissue Specific Gene Expression (Slide 23)</div></div></div>
+<ul><li> [0:15:35][Slide 23]</p>
+</li></ul>
+<p>Hear is sort of a global view of the data. On this axis you have different tissues of the mouse and on this axis you have different genes expressed. Here is a chunk of genes that are expressed at a high level or red means higher and green means lower in for example brain tissues.</p>
+<p>Here is another chunk where you have a very tight cluster of genes that are expressed specifically in liver and gall bladder. Here is a chunk where you have genes that are expressed in bone and bone marrows. But you can see there are chunks of genes and they tend to be tissue specific. </p>
+<p>To identify these genes we used ANOVA to define values that varied by tissues and FDR statistics to account for multiple testing. We used Mike Eisens cluster and treeview programs to cluster and visualize expression values. We found that about 70% of the genome was expressed somewhere in the 60 or so tissues. We found 90% of genes were found to vary according to tissue type. So the vast majority of genes have some element of tissue specificity to their expression.</p>
+<h5> <span class="mw-headline" id="Data_Validation">Data Validation</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/0/0b/ExSciGen_L10_S24_DataValidation.png" class="image"><img alt="" src="/wiki/images/thumb/0/0b/ExSciGen_L10_S24_DataValidation.png/160px-ExSciGen_L10_S24_DataValidation.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/0/0b/ExSciGen_L10_S24_DataValidation.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Data Validation (Slide 24)</div></div></div>
+<ul><li> [0:16:48][Slide 24]</p>
+</li></ul>
+<p>We also wanted to validate this type of data. To do this we performed about 2000 PCR reaction. We were able to confirm 82% of the expression observations by amplifying the entire open reading frame. We also performed Northerns, in situ hybridization to validate a lower number of expression profiles. </p>
+<p>Finally as a very large-scale experiment, we were able to compare our results on the Affymetrix array with results from Tim Hughes and his colleagues at the University of Toronto in 31 tissues and 12,000 genes in common with their mouse atlas. We were able to confirm about 75% of expressed genes matched across the two separate platforms.</p>
+<h5> <span class="mw-headline" id="Pitfalls_and_Limitations">Pitfalls and Limitations</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/d/d8/ExSciGen_L10_S25_PitfallsAndLimitations.png" class="image"><img alt="" src="/wiki/images/thumb/d/d8/ExSciGen_L10_S25_PitfallsAndLimitations.png/160px-ExSciGen_L10_S25_PitfallsAndLimitations.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/d/d8/ExSciGen_L10_S25_PitfallsAndLimitations.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Pitfalls and Limitations (Slide 25)</div></div></div>
+<ul><li> [0:17:41][Slide 25]</p>
+</li></ul>
+<p>There are also pitfalls and limitations to the A versus B versus N design, including all of the pitfalls in the A versus B design I mentioned earlier—for example, human tissue donors are harvested at different times of the day, after different time periods, from different people who ate different things; they are also harvested by different people.</p>
+<p>Even in the mouse, in controlled circumstances, certain tissues are troublesome to get high-quality RNA from—for example the pancreas which expresses many different RNAs.</p>
+<h5> <span class="mw-headline" id="Question_4">Question 4</span></h5>
+<p>Q4: An atlas of 10 tissues from 3 outbred animals was done. Which of the following sources of error <em>definitely</em> apply:
+<ul><li> A) Genetic
+</li><li> B) Time of day
+</li><li> C) Dissection errors
+</li><li> D) A &amp; C
+</li><li> E) All of the above</p>
+</li></ul>
+
+<p>The answer is A. Pay attention to the word <em>definitively</em>. So time of day may apply to how this atlas study was done but you would need more info to know about that. The dissection errors could also apply but you need to know more information. A definitively applies. Outbred animals are genetically distinct and you could very well have a source of error introduced by that.</p>
+<h4> <span class="mw-headline" id="Use_Case:_Time_Series_Analysis">Use Case: Time Series Analysis</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/8/8a/ExSciGen_L10_S27_UseCaseTimeSeriesAnalysis.png" class="image"><img alt="" src="/wiki/images/thumb/8/8a/ExSciGen_L10_S27_UseCaseTimeSeriesAnalysis.png/160px-ExSciGen_L10_S27_UseCaseTimeSeriesAnalysis.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/8/8a/ExSciGen_L10_S27_UseCaseTimeSeriesAnalysis.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Use Case – Time Series Analysis (Slide 27)</div></div></div>
+<ul><li> [0:19:03][Slide 27]</p>
+</li></ul>
+<p>A final use case is a time series expression analysis. The impetus for this design is that many important processes occur over time—for example, during development, during a tumors growth, during aging, over time of day, etcetera.</p>
+<p>These designs can be accommodated, as in the previous section, analyzed using ANOVA or a two-way ANOVA. Some of these processes are in fact periodic—for example the cell cycle, the circadian clock, the somite clock, etcetera. These processes require different experimental designs and analytic methods.</p>
+<h5> <span class="mw-headline" id="Use_Case:_Analysis_of_Circadian_Rhythms_in_Transcription">Use Case: Analysis of Circadian Rhythms in Transcription</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/1/12/ExSciGen_L10_S28_UseCaseAnalysisOfCircadianRhythms.png" class="image"><img alt="" src="/wiki/images/thumb/1/12/ExSciGen_L10_S28_UseCaseAnalysisOfCircadianRhythms.png/160px-ExSciGen_L10_S28_UseCaseAnalysisOfCircadianRhythms.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/1/12/ExSciGen_L10_S28_UseCaseAnalysisOfCircadianRhythms.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Use Case – Analysis of Circadian Rhythms in Transcription (Slide 28)</div></div></div>
+<ul><li> [0:19:41][Slide 28]</p>
+</li></ul>
+<p>Here is a case of looking at circadian rhythms in transcription. Typically if we are doing a study like this we would take a genetically identical mouse, like a C57-Black 6J mouse strain. Keep the animals in 12 hour light-dark conditions. Here on this graph you can see the light bars indicate twelve hours of light and the dark bars indicate 12 hours of darkness.</p>
+<p>After two weeks of this we would put the animals in constant conditions and allow them to drift. You can see they are going to start to drift their locomotor activity here. While in LD conditions, they have a very precise onset of activity. During dark conditions they start to get up a little bit earlier every day. Their clock is running at 23.6, not exactly 24 hours.</p>
+<p>Typically we would collect tissue from three to five independent mice per time period. We would look at expression every two hours for two full days, prepare the RNA, label it and hybridize it to high-density oligonucleotide arrays and then use a variety of statistical methods to identify periodic rather than simply changing gene expression.</p>
+<h5> <span class="mw-headline" id="Temporal_Resolution_and_Statistical_Power">Temporal Resolution and Statistical Power</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/e/e9/ExSciGen_L10_S29_TemporalResolutionAndStatPower.png" class="image"><img alt="" src="/wiki/images/thumb/e/e9/ExSciGen_L10_S29_TemporalResolutionAndStatPower.png/160px-ExSciGen_L10_S29_TemporalResolutionAndStatPower.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/e/e9/ExSciGen_L10_S29_TemporalResolutionAndStatPower.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Temporal Resolution and Statistical Power (Slide 29)</div></div></div>
+<ul><li> [0:20:59][Slide 29]</p>
+</li></ul>
+<p>One of the issues is that your temporal resolution really impacts your statistical power to detect genes. Here if you just concentrate on the upper left-hand panel, we have a set of gold standard genes that have been replicated in multiple studies. We are looking over a two day time period at various sampling resolutions, from one to two to three hours over this two day period. </p>
+<p>What you can see is that at two hour time resolution we capture about 70% of the gold standard set of circadian genes, with about a 20% false positive rate. Once we slip to even three hour time resolution we are now down around the 30% true positive rate and about a 25% false positive rate. And then four hour time resolution, which is unfortunately the historical experimental design that many groups including ours have used. We had a relatively low 20% detection rate of the gold standard set, and a relatively high, 20% false positive rate. 
+After doing the experiment and over-sampling, we were able to leave out some studies and determine the optimal time sampling from a cost benefit perspective—that is every two hours over two days for optimal detection of circadian rhythmicity. </p>
+<h5> <span class="mw-headline" id="Mouse_Liver_Profiling">Mouse Liver Profiling</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/7/7f/ExSciGen_L10_S30_MouseLiverProfiling.png" class="image"><img alt="" src="/wiki/images/thumb/7/7f/ExSciGen_L10_S30_MouseLiverProfiling.png/160px-ExSciGen_L10_S30_MouseLiverProfiling.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/7/7f/ExSciGen_L10_S30_MouseLiverProfiling.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Mouse Liver Profiling (Slide 30)</div></div></div>
+<ul><li> [0:22:32][Slide 30]</p>
+</li></ul>
+<p>When we did this we were able to fit all this data to a wide window of periods between 6 and 48 hours.  What we were able to find was, as expected, there's a huge chunk of genes that just display at approximately 24 hour signature of circadian gene expression. We thought about 10 times more genes were oscillating than we had previously found.  To our surprise we also found genes oscillating at the twelve-hour time frequency and at the eight-hour time frequency. Many fewer genes then at the 24 hour frequency, but still they existed and this was extremely interesting. </p>
+<p>Here's an example of RTPCR data validating the expression of genes from the 24-hour time frequency, the twelve-hour time frequency and the eight-hour time frequency. </p>
+<h5> <span class="mw-headline" id="Pitfalls_and_Limitations_2">Pitfalls and Limitations</span></h5>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/5/5f/ExSciGen_L10_S31_PitfallsAndLimitations.png" class="image"><img alt="" src="/wiki/images/thumb/5/5f/ExSciGen_L10_S31_PitfallsAndLimitations.png/160px-ExSciGen_L10_S31_PitfallsAndLimitations.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/5/5f/ExSciGen_L10_S31_PitfallsAndLimitations.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Pitfalls and Limitations (Slide 31)</div></div></div>
+<ul><li> [0:23:27][Slide 31]</p>
+</li></ul>
+<p>What are the pitfalls and limitations these sort of time-series studies?  Well, all the previous pitfalls also apply here. But also temporal resolution defines your statistical power to define periodic-gene expression. </p>
+<p>There are other parameters that you might be interested in studying periodic processes, like the cell cycle—for example the phase of the expression, when an event is occurring. Knowing something that occurs in G1 versus G2 has biological meaning, whereas just knowing it is periodic is less valuable. Informatic methods obviously have a big impact on your ability to detect rhythms. </p>
+<h5> <span class="mw-headline" id="Question_5">Question 5</span></h5>
+<p>Q5: Many early cell cycle and circadian studies were temporally under sampled, including ones from my lab. This produced:
+<ul><li> A) False positives
+</li><li> B) False negatives
+</li><li> C) Neither
+</li><li> D) Both</p>
+</li></ul>
+
+<p>The answer is both [D]. It produced false positives—noisy transcripts were called cycling even though they weren't—and false negatives—low amplitude or out of phase cycling transcripts were missed in the previous studies. </p>
+<h5> <span class="mw-headline" id="Question_6">Question 6</span></h5>
+<p>I'm going to leave off with a thought question. Design an experiment to measure periodic transcription in the cell cycle of an organism with a doubling time of 90 minutes. </p>
+<p>There are many correct answers to this but you should be thinking about the following issues. 
+<ul><li> Genetic background and number of organisms
+</li><li> Sampling resolution
+</li><li> Measuring over multiple cycles
+</li><li> Trying various analysis algorithms
+</li><li> Thinking about your validation strategy
+</li></ul>
+And of course, maybe most important, 
+<ul><li> What will you do with the data once you are done? </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Limitations_of_RNA_Expression_Analysis_by_DNA_Arrays">Limitations of RNA Expression Analysis by DNA Arrays</span></h3>
+<p><div class="thumb tright"><div class="thumbinner" style="width:162px;"><a href="/wiki/images/c/ce/ExSciGen_L10_S35_LimitationsOfRNAExpressionAnalysis.png" class="image"><img alt="" src="/wiki/images/thumb/c/ce/ExSciGen_L10_S35_LimitationsOfRNAExpressionAnalysis.png/160px-ExSciGen_L10_S35_LimitationsOfRNAExpressionAnalysis.png" width="160" height="120" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/c/ce/ExSciGen_L10_S35_LimitationsOfRNAExpressionAnalysis.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Pitfalls and Limitations (Slide 35)</div></div></div>
+<ul><li> [0:25:09][Slide 35]</p>
+</li></ul>
+<p>The limitations of RNA expression analysis by DNA arrays are generally a lack of sensitivity in any given tissue, about 50% of protein encoded genes are not detected from any one experiment. They have relatively low throughput. The technical nature of DNA Arrays—they are somewhat expensive, on the order of $300 to $500 per sample. And a hybridization signal is a really an indirect measure of mRNA abundance. </p>
+<p>In the next lecture, we're going to start talking about using RNA Seek to alleviate these limitations.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Genomescience:RNA_Expression_Analysis_and_Arrays&amp;oldid=5150">https://share.coursera.org/wiki/index.php?title=Genomescience:RNA_Expression_Analysis_and_Arrays&amp;oldid=5150</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

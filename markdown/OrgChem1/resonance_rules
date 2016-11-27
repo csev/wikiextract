@@ -1,0 +1,55 @@
+Resonance rules
+===============
+
+The resonance rules can be classified into three groups: the rules **"conditional"**, the **"Priority"** and **"categorical"**. The first let us establish whether the structures in question are not resonance structures, the latter lead us to determine which of them is the most abundant, and in subsequent order, those of lower contribution, while the latter, the "categorical" refer to the rules that allow us to substantiate the relative magnitude of the resonance energy different molecules through their respective groups resonant structures.
+
+Conditional Rules
+-----------------
+They refer to the requirements for each of the structures to be considered or contributing resonance forms. This group includes the rules that allow to solve resolve the question:
+*The structures "A", "B", "C", ... etc. are resonance forms?*
+
+These rules indicate that two or more structures are resonance forms if:
+
+1. They have the same molecular formula.
+2. They retain the same skeleton  sigma (all sigma bonds remain the same in different resonating ways), implying no change in the position of atoms within the molecule.
+3. retain the same number of paired electrons.
+4. The only difference is the different position of pi electrons and free electrons(contrast).
+
+[[file:conditional_rules.png]]
+> **Figure 1** shows two structures that do meet the first rule as they have the same molecular formula, but violate the second rule, as in the structure 1 there are six carbon-hydrogen sigma bonds and no sigma bond oxygen-hydrogen, while in the structure 2 only there are five sigma bonds and carbon-hydrogen bond sigma oxygen-hydrogen, indicating that there was no change position of a hydrogen atom within the molecule (in the structure 1 is attached to the carbon and structure 3 is attached to oxygen). **Figure 2** also contains 1 attached to the frame with the frame 4 in a reaction of homolysis, both structures meet the first two rules, but the difference is in the number of electrons paired, since the second structure has two electrons unpaired and the first one. Finally **figure 3** illustrates a relationship of resonant structures,they comply with all the rules conditions. See Table 1.
+
+[[file:Conditionalrulestable.png]]
+
+
+
+
+Priority rules
+--------------
+Based on the premise that establishes the direct relationship between
+resonance energy magnitude and stability, that is, the greater the resonance energy the greater stability, expressed in different ways according to the author (Carey, 1999; Fessenden, 1994; Hendrickson, 1970, Loudon, 1995, March,1992) - these rules refer to features that
+define the relative order of stability resonance forms and consequently determine the magnitude of their relative contribution. These rules match
+the question: 
+*which of resonant structures "A", "B", "C", etc., is in greater proportion?
+
+In this case the contribution order is increased if:
+
+1. There is a smaller total number of charges (real or formal, not partial). 
+2. There is a greater number of atoms within the molecule that meet the octet rule (or octet expanded where feasible).
+3. The charges are mainly located in atoms better able to bear them, either by electronegativity, by type of substitution       (benzylic carbons, aryl,tertiary, secondary, primary) or atomic volume.
+4. Separation of opposite charges is minimal, being when there are implicit loads, the separation thereof is zero and so are the resonance forms important.
+5. The same charge separation is maximal.
+
+Categorical Rules
+-----------------
+
+Are those with which you can define the relative resonance energy magnitude of several molecules.
+In this way the resonance energy is larger when:
+
+1. There are more equivalents of the structures higher priority (according to the rules 2-1 to 2-5), ie not only have the same number of links pi (isovalentes: Hendrickson, 1970), but also having the same constitution (type and number of bonds: Eliel, 1970).
+2. More isovalent structures exist (those with the same number of pi bonds).
+3. More planes are resonance systems in the molecule, ie atoms with pi electrons and atoms with free electrons involved in the resonance are coplanar, consequently resulting coplanarity the electron resonance.
+4. The resonance system more linear than crossover.
+
+ [1]: http://i.imgur.com/SLDqcfp.png
+
+Source: [Martínez, A. R. et al. Reglas de resonancia. Revista Educación Química UNAM 15, 446-450 (2004)](http://educacionquimica.info/articulos.php?Id_articulo=814)

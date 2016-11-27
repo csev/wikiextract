@@ -1,0 +1,146 @@
+Creating ANKI Foreign Language Flashcards From TED Talk Translations
+====================================================================
+
+Figure out a way to make the process of creating ANKI flashcards from publicly available translations as easy as possible using the Python and related tools taught in this Python for Everybody Specialization. I'm going to start by looking at the text translations available for TED talks, but does anyone know whether there's a way to get a hold of the text transcriptions of translations of Coursera lectures? I'm starting with Mandarin Chinese. For my Python script, I'm going to start by using [this script] (https://gist.github.com/DrLulz/fc802d43e310cec1ecd7) introduced in this [Reddit post] (https://www.reddit.com/r/Anki/comments/2zhdao/grab_html_and_make_anki_cards_directly/)
+
+
+Capstone Project Transport for London
+=====================================
+
+My idea is to use the data from the TfL api to visualise the worst areas of London for cycling accidents. The data is in Json which means it shouldn't be too intimidating to use and extract the information I'm looking for. 
+Sarah
+
+Capstone Project for Supporting Countries
+=========================================
+
+My idea is to use public data worldwide regarding which team in Football they support and color the world map accordingly using their location. Next is to see if a country or state unanimously support a team (It can be identified if a region of map is colored mostly with single color). This project can be used not only in respect to football but with tv shows like Game of Thrones - which House they support.
+
+This is Another Lost Student Page
+=================================
+
+My project is about how many hours a Coursera student can get sucked into a black hole of learning. I suspect most students spend more time on these classes than they anticipate. Can I visualize the number of hours logged into Coursera on a world map?
+
+I don't really have a good plan at this time as to how to do this.
+
+
+Possible Capstone Project - Network Traffic data set to analyze the network performance
+=======================================================================================
+My idea is to analyse one of the downloaded network traffic data sets from CIADA (http://data.caida.org/datasets/passive/passive-oc48/).  The original data sets are in pcap format.  I plan to use Wiresharke to covert required information into a csv format and then load into the Python for further analysis.  If possible, I will represent the 10~20 most busiest source/destination with their utilization, delay (RTD), packet size, applications, protocols, etc.
+
+
+Python Capstone Project - Crawl the web and find technologist resumes
+=======================================================================================
+My project will focus on targeted web crawling to find resumes (hopefully at least 1000) that I will convert into JSON format (https://github.com/TFMV/resume-schema).  Once the resumes are in JSON format, I will store them in MongoDB so that I can apply machine learning techniques (clustering, classification, feature extraction, anomaly detection) to find interesting relationships and create (hopefully) some interesting visualizations.  I'm hoping to use what I create as part of the capstone as the groundwork for a resume storage/matching/analysis product that uses machine learning and collaborative filtering to match open jobs to resumes.  The capstone will not include much of the planned functionality (analysis), but will include visualizations of the resume data.  The most difficult part will be automating the conversion of semi-structured data contained in PDF/Doc resumes into a specific JSON schema.  I've wanted to create such a product for years; as a professional consultant, with a resume in the public domain, a get dozens of emails each day from recruiters who are using naive tools (keyword searches) to find candidates for a given contract or statement of work role.  My frustration is the source of the idea.
+
+Python Capstone Project -- Create table of ATP Tennis Player rankings and visualize
+===================================================================================
+I extracted ATP tennis player ranking information from one of the web pages at www.tennis.com, saved the ranking-related data for the first 200 ranked players into a database. I used flat files to save the results of the intermediate steps that shaped the data before saving it as a database file. Next I visualized these data in a couple of ways: (i) used the player's country of origin and created a wordmap; and (ii) displayed the player's country using google maps. These visualizations are similar to the ones illustrated in the class lectures by Dr. Chuck. 
+
+My implementation of this assignment can be found at:
+https://onedrive.live.com/redir?resid=945ECD20C4C683B9!124&authkey=!AJrKNIbofoLstoE&ithint=folder%2ctxt
+
+Please read the 00_README_CAPSTONEPROJ.txt file to orient yourself with the workflow which essentially involving executing a sequence of Python scripts and observing the output within the command window and the visualizations. Appreciate receiving feedback. This version can obviously be improved and I would welcome any tips that you might provide. Thanks in advance for your help and time. --- SCNi
+
+Python Capstone Project -- Create Displays of Information about Trends in Baseball
+==================================================================================
+I have found a site called Retrosheet.org.  Volunteers and researchers have gone back in time and digitized information about baseball.  The information is free to use.  They only ask that the data be identified as coming from that site.  My initial idea is to look at year of year trends in baseball - such as homeruns hit.  The second level would be to look now just at year over year trends but to look at monthly trends of regular season games.  One such area of analysis would be the number of home runs hit in each month:  April, May, June, July, August, September.  The number hit can be normalized by dividing by the number of At Bats (ABs) and to get truly wonky can add the number of walks to get the "True" number of opportunities.  I could include March and October but there is only a small number of games during these months.  March is rare but October usually has up to a few days of the month.  A later project would go beyond this course and is more of a long term project is to look at players and their hitting by age.  What is the optimum age where players are the most productive in terms of Batting Average, Slugging, On Base Percentage.  This would create a big relational database that could be used to tell a story about how baseball has changed and remained the same over the years.  --- Alan J.
+
+
+Python Capstone Project -- Spidering an online Logfile 
+==================================================================================
+I need to visit once per day (or at most 3 times) the page:  https://alteraeon.com:8081/eventlog    
+Then get from the html only the log elements and store them in an sqlite database.
+Then the objective is to perform analysis on the associations between achievements.  Please note that whatever its in single quotes in log file has not to be further broken down, but treated as one entity.  Any help, especially to the first part for spidering and saving locally is appreciated! Thanks!   /CT
+
+Python Capstone Project -- Creating a database of direct links to resources from Internet Archive
+==================================================================================================
+I use internet archive on a regular basis, and besides we know html is a great thing, I still miss a simple interface to search things on their site, as for many others indeed, and I would like to work better on some kind of simple interface using their JSON API so I could search faster and store my search instead of keeping saving hundreds of searches in my bookmark , etc... save the links that goes directly to the videos,printed papers, softwares and etc would also help a lot.Let's see if it can be done. Thanks, Fabio Muller.
+
+Python Capstone Project -- FOREX Market Analysis
+=================================================
+My capstone project is about the Forex Market or Currency Market.
+I want to analize the diferencies between countries or Word Regions in the way to operating the currencies.
+I would like to analyze the volumen, the popularity, the average risk...
+
+The data will be obtained from the API web www.myfxbook.com/api
+This data will be loaded into a database.
+I will work over this data in order to get the ratios.
+I want to represent all of this over a interactive word map.
+Miguel Garcia
+
+Python Capstone Project - - Own you own professional development, or Lets Make Some Money
+=================================================
+I'm currently preparing to retire from Intel. One of the major requirements that was focused on during my career is that each of us are responsible for our own professional development. With that in mind I would like to take advantage of the data using the resumes mentioned above. Conceptually I would like to have a website where you could define your perfect job have it highlight resume that similar to what you want or a mashup of several resumes to get what you want. And based on this ideal resume develop a professional development plan that includes certifications, classes, degrees or work experience that would facilitate you being able to develop the skills to meet the requirements of that job. We can combine online courses like Coursera and others technical degrees from various colleges which we would be able to download directly. And the accomplishments that demonstrate a person is capable of doing their job so that we can develop those skills that allow you to perform those skills and tasks.
+
+Anybody want to work with me? This idea is very interesting. I did an Internship in Chandler, AZ back in 1992 or 1991. It was in RD. I believe I was interviewed by Mark Novak or Novik....Anyway, I would like to work on this but it looks to me like a big job and I wouldn't have the time required to invest on this. Are you planning using languages other than Python for this?
+
+Python Capstone Project -- Patent research through European Patent Office (EPO OPS) api 
+==================================================================================
+For the capstone project, I'd like to develop a program which:
+- Requests for a keyword to query the patent database (e.g. a technology or company), Optional: use OAUTH to get access to larger bandwidth
+- Stores the retrieved results in an SQL database (e.g. patent nr., year, inventor, company)
+- Analyzes the results (e.g. what companies have worked together, what companies have most patents, etc)
+- Optional: visualizes the results in D3.js
+
+Playing around with the API should allow for practicing much of the stuff we (should have) learned during the course. Let me know if you'd like to work on this as well! 
+
+Marijn Vervoorn
+
+Python Capstone Project -- Stock price analysis 
+==================================================================================
+For the capstone project, I'd like to develop a program which <strong>analyses stock charts</strong>. Details are as follows:<br />
+<ul><li>Program requests the user to enter a stock symbol and a duration for which the analysis is to be performed.</li>
+<li>The program will use a RESTful api (I am leaning towards google finance api since it is free) to acquire stock pricing
+available in the last n years on entered stock (5 years would be default) and store it in a Sqlite database for analysis.</li>
+<li>For this project, I intend to do a "GAP Analysis" on the daily charts and determine if there are any GAPs in the price of the stock throughout past n years that were not filled later. The unfilled price gaps are recorded in the database.</li>
+<li>I would then use a visualization api such as d3 to chart the stock and show the unfilled gaps on the chart.</li>
+<li>To extend this project, I may perform similar analysis on hourly charts and/or apply other chart analysis such as
+"Simple moving average", etc.</li></ul>
+I am not a financial analyst but find this area very interesting....<br />
+
+Kamran M (love to have collaborators to do this project!)
+
+
+Python Capstone Project -- UK Football Premier League match winner prediction
+==============================================================================
+In conjunction with my Data Science specialization, I would like to develop an application to predict whether a Premier League football team would win or not-win (lose or draw) a match. First I would need to collect data. This would be historical and current data of the results, taken from either a BBC website or a Premier League website, also additional information like club wealth (a wealthier club can afford more expensive=better players) , how many years in the Premier League etc. The data would be collected using Python web crawling service and stored in a relational database. Then I would use R or Python and machine learning algorithms to create a model. Data analysis may show that more data will be required hence it will be an iterative approach. When the model predicts the results correctly (about 95-99%) then I will try to create a model that predicts match scores.
+I do not know much about football so any football fans want to join me on this project?
+
+Anna Lenkiewicz
+
+
+Biological database summary display
+==============================================================
+
+[[File:PHInet.png|200px|thumb|left]]
+The Pathogen-host interactions database (http://www.phi-base.org) is a database listing molecular and biological information on genes proven to affect the outcome of pathogen-host interactions. There is currently information given on ~250 microbial pathogens. The project would visually display a part of the database content. Steps: (1) Database can be downloaded (2) For each pathogen species the taxonomy information needs to be retrieved from NCBI taxonomy. (3) A taxonomic tree for the 250 species needs to be generated. (4) The number of database records needs to be summarized for each species (5) Transform taxonomic tree and the total record number for each species into JSON (5) use D3.js to visualize. (6) Expected output: bubble diagram of species in a tree, the size of the bubbles reflecting the number of records for each species.
+
+Martin
+
+
+
+Economic & Financial Data on Quandl
+===================================
+
+I have found [Quandl](https://www.quandl.com) to be a good source of economic and financial data. If you register (free!) you can create an account that will give you a "token" and then use their API scripts to pull data right from the sight or use their Python module, "quandl". This lets you get your dataset without having to do any copying and pasting or downloading of files.
+
+Home page URL: (https://www.quandl.com)
+
+Python-specific URL: (https://www.quandl.com/tools/python)
+
+Rich Carpenter
+
+Python Capstone Project - Image Inter-relationships
+=======================================================================================
+I've started looking into how images are stored in the Google Photos site and found that Google Photos and Google+ all use the Picasa API. The Picasa service was shut down by Google some time ago but the API is still the official gateway to photograph storage within the Google ecosystem. There is much more to how photos are stored in Google than would appear from the http://photos.google.com web site and digging the system programmatically can become confusing. For example all photos are automatically uploaded are put into a group by date, but that group isn't visible through the Google Photos web site.
+
+My main interest in delving into Googles photo storage is to I can identify which images have been assigned to groups (or albums, or collections) besides the automatic filing and which have not. As part of this I would like to see how I can visualize the relationship between photos and the groups of which they are members, and also if I can visualize how People have been identified are connected together. This is a big reach to be working before the end of the course but I'll share my progress as I go along.
+
+Sean Schluntz
+
+Python Capstone Project - Formula 1 Race Standings
+=======================================================================================
+The Ergast Developer API (http://ergast.com/mrd/) is a web service providing historical data for the Formula One racing series. You can find information by entire season, single races and by constructor or driver using GET requests, with responses provided as XML and JSON. Another option is to download the provided database (MySQL) image.
+
+I plan on selecting one race and graph (line graph) all driver (22 drivers) positions per lap (50+ laps).
+I can also graph (bar graph) a single drivers lap times (50+ laps) in a single race.

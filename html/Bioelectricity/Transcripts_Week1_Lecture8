@@ -1,0 +1,47 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Week1 Lecture8</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Electric_Potentials_as_Compared_to_Voltages_1-8">Electric Potentials as Compared to Voltages 1-8</span></h1>
+<ul>
+<li>So, hello again. I am Roger Coke Barr. And this is week one segment eight. In this segment we'll talk about electric potentials as compared to voltages. This is an issue of terminology or in the way I was saying it before an issue of rectification of names. Sometimes people talk about potentials, sometimes they talk about voltages. It's nice to know what they're talking about.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Potentials_versus_Voltages_.28slide_61.29">Potentials versus Voltages (slide 61)</span></h2>
+<ul>
+<li>It's not quite the same thing even though both are in units of volts, which makes it even more confusing. The confusion comes up when people begin to talk about a set of potentials as compared to a set of voltages.  </li>
+<li>In other words, you've got a list of numbers. And what do you make of this list of numbers? So a set of potentials, people call it that if all of the measurements are against a common reference point. People like to describe the common reference point as being at infinity because, conceptually it's nice to think of a common reference point as being a long way away, and thus not affected by being in any particular place. That doesn't have to be true.  </li>
+<li>The common reference point can be anywhere, but it is at some particular place and all the common potentials are measured against that common reference point.  </li>
+<li>Now in contrast, a set of voltages is measured in independent pairs. Each voltage is a different measurement than the other voltages and so they don't have any special relationship to each other.  </li>
+<li>So if you have a list of voltages, that's what you got, a list of voltages, but there's no implied relationship. Whereas with potentials, there is an implied relationship because they're all measured against a common reference point.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Potentials_versus_Voltages_.28slide_62.29">Potentials versus Voltages (slide 62)</span></h2>
+<ul>
+<li>Maybe this becomes a little more clear with an example. Suppose I make this point our reference point. And now suppose I want to think about 3 or 4 other points. So I'll just draw me some points up here arbitrarily. Point one, point two, point three, point four, point five.  </li>
+<li>Now if I want to talk about the potentials, I will always take the negative lead of my meter. Here's my volt meter. We'll take the negative lead, and now attach it to the reference point. I'll take the positive lead, and I'll go out to point one, and what I'll get will be phi one.  </li>
+<li>And I'll move the positive lead to point two, and what I'll get, the measurement, will be called phi two. And I'll do the same for each of these in turn. What I'll get for the last point, would be called phi five.  </li>
+<li>People normally used this phi symbol for potential and it implies that the measurement isn't made against the common reference point.  </li>
+<li>On the other hand, now suppose I want to talk about voltages. I might say what is the voltage between .3 and .4? So I might want to put the negative lead on .3 and the positive lead on .4 and then I can get the four, three. Maybe I want to call it that, equals phi four minus phi three. That is V four, three is simply the voltage in between two arbitrarily chosen points. Here I happened to chose V four, three. Point four minus point three.  </li>
+<li>Now the amazing thing is I can get V 4, 3 by subtracting phi 4 from phi 3 because you could say, well, what I've done is I have phi four minus phi three in effect it takes away the reference point from the conceptual and the mathematical operation. So once I know phi four and phi three, I can subtract them and then I find the voltage between the four, three.  </li>
+<li>If I have now, suppose I have now, V one, two In the same fashion. Negative on one, positive on two V one, two and V four, three have no particular relationship to each other.  </li>
+<li>They're just two measurements that are made. There's nothing profound here in terms of bioelectricity, it's simply the terminology that's used. But because people go back and forth and they use it as if everybody knows it, I tought it would be worth while to take a moment and talk about it explicitly. So, that's why I've put it in this, in this independent segment.  </li>
+</ul>
+<hr />
+<p>Once again, we close with the picture of a new chapel. Thank you for listening and I look forward to talking to you in the next segment.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture8&amp;oldid=7416">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture8&amp;oldid=7416</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

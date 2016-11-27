@@ -1,0 +1,59 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Wk4 L5</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_4_Lecture_5:_4-5_Changes_in_n.2C_m.2C_h">Week 4 Lecture 5: 4-5 Changes in n, m, h</span></h1>
+<p><strong>Bioelectricity Week4_5 (slide 23)</strong><br />
+<ul><li> So, hello again. This is Roger Coke Barr for the bioelectricity course. We're in week four, lecture five. Let's talk about where we are just for a moment. We're trying explain action potentials.<br />
+</li><li> We saw that Hodgkin and Huxley replaced the membrane resistance, with three paths, a path for each ion, potassium, sodium, and leakage. We saw the equation for each path. So the equation was something like g bar K, n to the fourth.<br />
+</li><li> Now, we are want to talk about this n business, the probabilities and how they change, how these probabilities change as the voltage across the membrane changes. </p>
+</li></ul>
+
+<p><strong>Changes in n, m, h (slide 24)</strong>
+<ul><li> Hodgkin and Huxley taught us that each of these probabilities changes in one of these right changing equations. Let's look at what the terms are.<br />
+</li><li> It says, if we want for a moment to think of n as being the number of channels that are open, it's a probability, but let's say it's the probability out of a million channels, how many are open? So the number that are open, changing with the time, dn/dt is equal to this coefficient alpha which tells us what is the rate at which the closed channels are opening.<br />
+</li><li> So if n is the number open, one minus n is the number closed, n will be the number open and beta, this coefficient, beta is the coefficient that tells us how rapidly channels that are open are going closed.<br />
+</li><li> So beta is the rate of closings, alpha is the rate of opening. And if we look at the effect as a whole, we'd say the rate at which the number of channels (number of n type particles) is opening is equal to the rate of opening, alpha n times the number of closed channels, one minus n, subtracting the rate of closing (beta n), that rate times the number of channels that are open.<br />
+</li><li> When you think about this as a mental picture, it seems pretty simple. You have a lot of channels that are open. As time goes by, some of the open channels close. And as time goes by, some of the closed channels open. Think back to the pictures that we were seeing of individual channel function. We saw those last week. You remember that they were up and down and up and down. Just going across you remember, up down up, there'd be a wall. Up, up, up. I'm not drawing it too well, but you remember the randomness.<br />
+</li><li> So channels that were open closed, channels that were closed opened. And so the number that is open or that is closed depends on the average on the values of alpha and beta, but for individual channels, they continue to go to this opening and closing process.<br />
+</li><li> Now there's a very important thing here. All the alphas and betas change when Vm changes.<br />
+</li><li> There is an equation for alphas and betas that all change when Vm changes. So this equation on the top for dn/dt. That's a pretty simple equation as long as the alphas and betas are constants. But as you can imagine, things can change around considerably, if the alphas and betas change.  </p>
+</li></ul>
+
+<ul>
+<li>Now we'll look at another part of the slide.  </li>
+<li>You remember the sodium channel was controlled by two probabilities, m and h. These probabilities have exactly the same form, as far as the form of the equation, as does the equation for n. So everything corresponds going down vertically, alpha n, alpha m, alpha h, beta n, beta, beta n, beta m, beta h. All those are pretty much the same.  </li>
+<li>That does not mean that the number values are the same. Do not kid yourself. The actual number values, for example, for alpha m are entirely different than the number values for alpha h.  </li>
+<li>In fact, as Vm increases, Vm is going up. Alpha m is going up. Alpha h is going down.  </li>
+<li>So they not only aren't the same value, they may not go in the same direction. They also may not change in the same degree.  </li>
+<li>So these values of alpha and beta, alpha m is not equal to alpha h. For that matter it's not equal to alpha n. They have similar form but entirely different values. So as a result you've really got to know what they are, before you can make any use at all out of these equations.  </li>
+<li>There is one more general result that can be determined however from looking at these equations, and that is what is the long term equilibrium value of n, or m, or h, if the voltage does not change.  </li>
+<li>So if Vm is a constant, then n goes to alpha n over alpha n plus beta n. Remember we saw this last week when we were talking about channels. Remember last week, I asked you to actually find the solution of an equation that had this form. I hope you did that, and I hope you can remember it, and use it again this week.   </li>
+</ul>
+<p><strong>Changes in n, m, h: estimates (slide 25)</strong><br />
+<ul><li> There's one other thing we should say about these equations. That's very, very helpful when it comes time to do calculations. In our original equations, they were written this way. If, when it comes time to do numerical calculations, people usually turn these equations around, and instead they write them like this. That is to say they take the dt and put it on the other side of the equation in each case. They do that because they want to use the following idea.<br />
+</li><li> In the top panel, dn and dt are infinitesimal in the sense of calculus. They are the limits as the changes are very, very, very, very short in a temporal sense. However, to make use of these equations and computation, the thought is, you say, well, delta t (a finite time interval) is about the same thing as dt, so as a result, delta n (the actual change in the probability, or the actual change in the number of open channels if you multiply it by the number of channels), delta n would be about equal to dn.<br />
+</li><li> That's a good thing to do and has been used successfully in millions and millions of calculations. So long as, so long as delta t must be short, it'll work.<br />
+</li><li> And how short is short? Well that's always the question. So when you say delta t must be short, you are thinking that delta t is perhaps one microsecond. I'll erase and write that again. Delta t about one microsecond. So sometimes under some circumstances people say oh, I can get away with delta t about ten microseconds. That is probably the case. But if somebody else pushes it on out there and says I want my delta t to be about a hundred microseconds. I can tell you that it will not work.<br />
+</li><li> So don't let your delta t's get anywhere near that big. So long as you keep them down near one microsecond, and maybe even up to ten microseconds, things will do okay. Once they get longer than that, you're going to have trouble on your hands in the form of results that are not just a little bit more off, but rather, results that are grossly incorrect.<br />
+</li><li> The part we've left out here is talking about the alphas and the betas so we'll have to come back and talk about those in the next lecture. Thank you for watching. See you next time well, we'll talk about those alphas and betas and all their twists and turns.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 18/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L5&amp;oldid=8427">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L5&amp;oldid=8427</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

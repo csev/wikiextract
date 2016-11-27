@@ -1,0 +1,5 @@
+### Slide 4 ###
+The abstract input format in this video ranges from 1 to n.  The assignment handout has been updated to be more consistent with 0-base convention of the course.  Hence, this value now ranges from 0 to n-1.
+
+### Slide 7 ###
+The Java example in this lecture passes the input data as a command line argument.  This is problematic for large inputs.  The example in the handout has been updated to use a temporary file for passing the input data to java.

@@ -1,0 +1,172 @@
+<h1>Overview</h1>
+
+
+Audacity is a freeware program mainly for audio editing.
+It was started by Dominic Mazzoni and Roger Dannenberg at Carnegie Mellon University, on May 28th 2000.
+
+
+<h3><b>Project Specifics</b></h3>
+
+
+Audacity uses "project" (.aup) files, a format native to the program.
+
+Projects can be moved from their location, provided both the .aup file *and* the corresponding "_data" folder gets moved with it.
+
+When working on a project, as in any DAW, it is always a good idea to save, <i>Save, <b>SAVE!!!</b></i>
+
+(Tip: Sometimes, while working on a project, after making *minor* edits
+(such as the position/layout of the tracks)
+...sometimes you'll find yourself unable to Save.
+If this is the case, "Save Project" will only appear 'greyed-out' in the "File..." menu.
+
+To get around this, simply perform a simple action, such as de-creasing and then in-creasing the gain to-and-from 0 dB on an individual track.
+This will allow you to save with your minor change, without having to resort to something like applying an effect, undoing, and <i>then</i> saving.
+
+
+<h3><b>File Type</b></h3>
+
+
+The file type Audacity uses, as aforementioned, is the .aup file-type. (A.U.dacity P.roject)
+It is a container format, containing project and track information data.
+When created, a '_data' folder gets made alongside it, containing .au files that represent all the audio data in your project.
+
+
+<h3><b>Bit depth</b></h3>
+
+
+Bit depths supported by Audacity are 16-bit (RedBook audio), 24-bit, and 32-bit floating point.
+
+To <i>change</i> a project's <b>Bit Depth,</b> simply navigate to Edit > Preferences, select <b>"Quality"</b> on the left-hand side, and choose your desired bit-depth from the dropdown menu next to <b>"Default Bit Rate".</b>
+
+
+<h3><b>Sampling rate</b></h3>
+
+
+Audacity can handle sample rates from 8000-96000 hZ. 192000 may be supported, depending on the hardware installed in the user's workstation.
+
+To <i>change</i> a project's <b>Sampling Rate,</b> navigate to <b>Edit > Preferences,</b> select <b>"Quality"</b> on the left, and then choose your desired Sample Rate from the dropdown menu next to <b>"Default Sample Rate."</b>
+
+
+<h1>Recording</h1>
+
+Audacity is primarily an audio recording application, editing can be done at the user's will with the plugins provided.
+Think "Sound Recorder" back from the Windows XP days, spruced up a bit and made to look ready for business.
+
+Recording in Audacity is a very basic operation.
+
+The interface provides the "Transport Toolbar", which has Pause, Play, Stop, Jump-To-Start, Jump-To-End, and <b>Record</b> buttons.
+
+You know which one to use. ;)
+
+If there are any issues that come up in the recording, such as...no sound showing up as recorded at all,
+don't throw out the track with the trash, rather, try <b>Amplification</b>. ( Effect > Amplify )
+
+Some recordings simply come out too quiet, either because<br>
+<ul>
+<li>The hardware you're using isn't powerful/dedicated enough to properly power the microphone and record from it</li>
+<li>Your recording level is too low</li>
+<li>Your device isn't functioning/properly setup.</li>
+</ul>
+<br>
+
+The 1st issue can be resolved simply by buying higher quality hardware, such as a <b>sound card</b>.
+
+The 2nd can be solved by adjusting the <a href="http://i.imgur.com/WeGEnej.png">"Mixer Toolbar"</a> and raising the Input Volume on the Microphone slider until a desired level is achieved.
+
+The 3rd issue will be the most difficult one to address; as the improper functioning of a device could be caused by one, if not several, factors, including the state of the computer, the condition of the hardware, the updates (or lack thereof) on the computer for the hardware itself, and any other number of various anomalies.
+
+<h3>Metronome(click track)</h3>
+
+To create a click track, select Generate > Click track... Adjust the tempo, beats per measure, and other parameters as desired. Note that the click track will begin at the cursor and will be a fixed length. You can change the length when you set the tempo and beats per measure. 
+
+<h3>Count in</h3>
+
+<h3>Audio recording tips</h3>
+
+<p><b>Check your Levels.</b></p>
+
+Done?<br>
+Good.<br>
+
+<p><i>Check them again.</i></p>
+
+<p>...nearing insanity yet?</p>
+Doesn't matter, because <i>the last thing you'll do before your audio-editing life blinks out is <b>check those levels and make sure they're set good.</b></i>
+
+
+You may find yourself asking, well, why is checking my levels so crucial?<br>
+I'll tell you why.
+Because if you <i>don't</i> do this, (<i>which you <b>should be</b></i>) you'll run into the bane of all audio known as <b>Clipping.</b>
+
+<p>
+There are endless articles, debates, and talks about this, but basically it is the distortion of sound.
+This should be what you fight against, as sound reproduction/recording/playback is at a *loss* when there is clipping present.
+</p>
+
+<i>Checking your levels at all times, whether recording, editing, exporting, applying gain/EQ/effects, is crucial to the preservation of recorded sound.</i>
+
+<h1>Editing Audio</h1>
+
+<a href="http://manual.audacityteam.org/o/man/audacity_tracks_and_clips.html">This manual page</a> describes how Audacity uses the terms "tracks" and "clips", and how to "split" (cut or delete), merge, and time-shift clips.
+
+<h3>Trimming</h3>
+<h3>Cutting</h3>
+<h3>Grid</h3>
+<h3>Change grid resolution</h3>
+<h3>modifier key to toggle grid</h3>
+<h3>add fades</h3>
+<h3>modify fades</h3>
+<h3>efficient compiling of multiple takes</h3>
+
+<h1>Efficient Editing</h1>
+
+[...Insert details of efficient editing here...]
+
+<h3><a href="http://manual.audacityteam.org/o/man/zooming.html">Zoom</a></h3>
+<h3>Nudge</h3>
+<h3>Cycle</h3>
+<h3>Merge</h3>
+<h3>Name</h3>
+<h3>Color</h3>
+<h3>Markers</h3>
+<h3>Change tempo</h3>
+<h3>Other efficient editing tips</h3>
+
+<h1>Editing MIDI</h1>
+
+[...Insert details of editing MIDI here...]
+
+<h3>Velocity</h3>
+<h3>Quantization</h3>
+<h3>Control Change data</h3>
+<h3>MIDI monitor(through)</h3>
+<h3>Other MIDI editing tips</h3>
+<h3>Adding software instruments</h3>
+<h3>Other MIDI tips</h3>
+
+<h1>Mixing</h1>
+
+[...Insert details of mixing here...]
+
+<h3>Types of Tracks</h3>
+<h3>Adding Effects</h3>
+<h3>Channel Strip Layout</h3>
+<h3>Configuring a Submix</h3>
+<h3>Configuring reverb in a send-and-return scheme</h3>
+<h3>Busses</h3>
+<h3>Automation recording</h3>
+<h3>Automation editing</h3>
+
+<h1>Useful resources</h1>
+
+<ul>
+<li><a href="http://audacity.sourceforge.net/">Audacity Website</a></li>
+<li><a href="http://manual.audacityteam.org/man/Main_Page">Audacity Manual</a></li>
+<li><a href="http://forum.audacityteam.org/">Audacity Forums</a></li>
+</ul>
+
+
+[...Insert additional resources here...]
+
+
+Back to --> *[IMPMOOC MainPage](https://share.coursera.org/wiki/index.php/Musicproduction:Main)

@@ -1,0 +1,143 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Dataanalysis:Transcripts Week2Lecture7</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Data Analysis, Week 2, Lecture 7 Summarizing data  </p>
+<ul>
+<li>This video is about summarizing data. In the previous videos, we talked a little bit about how we would get data from files either on the internet or files that we have on our local computer. Once we have the data loaded into R, then we want to do some sort of summarization to sort of see if the data have any problems or to identify characteristics of the data that might be useful for us during the analysis.  </li>
+</ul>
+<p><strong>Why summarize?</strong>  </p>
+<ul>
+<li><p>So, why do we summarize data? The first thing to keep in mind is that almost always, the data are too big to look at the whole thing. So, except in very extreme circumstances, it's very difficult to just eyeball the entire data set and see interesting patterns or see potential problems with the data.  </p></li>
+<li><p>So since the first step to find those problems or to find issues that are interesting to look at downstream, you definitely need to summarize the data in ways that are useful for you to be able to identify those patterns.  </p></li>
+<li><p>So, when you do these summaries, some things that you might be looking out for are missing values, values that are outside of the expected ranges. So, if you're defining temperature in Celsius and the measurements in Baltimore, if you see a measurement of 250, that's probably a little bit high, so you should look for those sorts of things. And it, lest you think that those sorts of things never happen, it's almost always at least one or two crazy values that occur in at least every data set that I've seen. You might look for values that seem to be in the wrong unit, so if most of the measurements are in Celsius and one measurement is in Fahrenheit. You also want to look for mislabeled variables or columns and variables that are the wrong class. So, variables that look like they should be quantitative but are actually labeled as character variables and so forth.  </p></li>
+<li><p>So, we're going to talk a little bit about the ways that you can summarize data. Again, this is not comprehensive, so there are a long number of ways that you can summarize data. And depending on the type of data that you’re looking at, some will be better than others. So, I'm going to sort of give you an overview of the basic and most useful ways to summarize data and if you need to summarize data in other ways, that the best way is to do that is to sort of look at the data type that you're summarizing and search on Google, I mean that's the best way to do it.  </p></li>
+</ul>
+<p><strong>Earthquake data</strong>  </p>
+<ul>
+<li><p>So this is an <a rel="nofollow" class="external text" href="https://explore.data.gov/Geography-and-Environment/Worldwide-M1-Earthquakes-Past-7-Days/7tag-iwnu">earthquake data set</a> that we're going to be using to illustrate some of these ideas. This is available from data.gov.  </p></li>
+<li><p>So, this is another one of those examples where the time that you download the data set really matters. So, this data set is actually updated every week. And it's only the earthquakes for the past seven days. So, if you're running these slides at some unspecified time in the future. And it's seven days after I created them; some of the exact numbers that you're going to be seeing are going to be a little bit different. So, that's just something to keep in mind when you're running these slides or when you're looking at these commands. If you get something slightly different, it might just be because you ran it at a different time.  </p></li>
+</ul>
+<p><strong>Earthquake data {second slide}</strong>  </p>
+<ul>
+<li><p>So, this is the URL for the dataset that we're going to be looking at. So, again, what we can do is we can use the download.file() command we learned about in getting lectures, in getting data lectures. And so, we can pass the file URL to download.file() and we could assign the dataset to the earthquakedata.csv file.  </p></li>
+<li><p>And then we could also look at the date that is was downloaded. So, these slides were created this time on Sunday January 27, 2013. So again, if it's seven days beyond, that you’re going to get a slightly different data set.  </p></li>
+<li><p>And then we can read the .csv file that results in using the read.csv() file and now we have that stored in the eData variable.  </p></li>
+</ul>
+<p><strong>Looking at data - the whole thing</strong>  </p>
+<ul>
+<li><p>So again the purpose, the purpose of summarizing is that it's very hard to look at the whole data set. So, if I just type eData and hit Return in R after loading it in, I get a very long data frame. So, it gives me sort of the variables here across the columns and in the rows are each of the observations and each one of these corresponding to a specific earthquake.  </p></li>
+<li><p>And so, we get the, the source, the earthquake ID, the version, the date, and time. And actually, you can't actually see all the other variables that are being collected or being output as well, they all actually fall off the screen here. So, when you get the full dataset, it is not a viable option for understanding potential patterns in the data.  </p></li>
+</ul>
+<p><strong>Looking at data - dim(),names(),nrow(),ncol()</strong>  </p>
+<ul>
+<li><p>So, here is some important first view, the very first things that you always run when you load a dataset into R. And so, they are, first, you look at the dimension in the data frame. So here, in this case, I did dim(eData) and I actually end up seeing that's there's 1,000 earthquakes, or 1,057 rows exactly, and there are ten columns.  </p></li>
+<li><p>One reason that I do this always as one of the first commands that I run is because if I know that there are eleven variables and I only see ten here, then there was a problem reading the data into R. Similarly, if I know there should be, you know, 10,000 rows and I only see a 1,057, which often will happen if the data are stored in a weird format, you can actually detect if the data had been read incorrectly from this very simple summary.  </p></li>
+<li><p>The only thing you can do is look at the names of the variables in the data frame and so again, you apply names() to eData and we get the list of names of the ten variables. And so, this should be the variable names that you're expecting, in this case, for the earthquake data in R.  </p></li>
+<li><p>And you could also look at specifically, the number of rows or the number of columns in the dataset. And dim() actually gives you both the row numbers, that's the first number, and the column numbers, that's the second number that you get from dim. Or you can get them individually using the nrow() or ncolumn() commands.  </p></li>
+</ul>
+<p><strong>Looking at the data - quantile(),summary()</strong>  </p>
+<ul>
+<li><p>So then there's some other ways that you can start summarizing the data once you've looked at the very basics is in terms of just the size and shape of the dataset that you've loaded in. And so, one of these is, for quantitative variables, you can look at the quantiles of that data set. So, the quantiles are sort of like the percentiles. You can imagine, if you took the SAT, and you were at the 99th percentile, then 99% of the people who took the SAT that year got a lower score than you did. This is the same sort of thing, for the quantiles.  </p></li>
+<li><p>So 0% of the values are less than -61 for the eData latitude variable. When I do the quantile() applied to the eData latitude. I get the zero, 25th percentile, 50th percentile, the 75th percentile, and the 100th percentile. So, I can see that this gives me an idea of the range of values that I observe. And sort of where the middle of the values are and so I can use this to identify if some of the values are really outside of the range. So, if I saw, for example, a latitude of 5,064, you know that, that was either measured on some scale that's very different or it's an incorrect value.  </p></li>
+<li><p>You can also apply the summary() command to the entire data frame. And so, when you do that, you get a quantile information for some of the quantitative variables but you also actually get some other information for the other variables, say, for qualitative variables. So, for example, for the source variable in the data frame, this is not a quantitative variable, it actually has these different characters corresponding to different detectors and in this case most of them were detected with this ak detector and there are 330 of them that corresponded to that. And so, it actually summarizes both the quantitative and qualitative variables for you so you can get a first glance look at what the dataset looks like in and if you notice any particular problems.  </p></li>
+</ul>
+<p><strong>Looking at data - class()</strong>  </p>
+<ul>
+<li><p>The other thing that's very useful is to determine if variables that should be characters are being loaded by R as numeric variables or vice versa. The more likely scenario is that a numeric variable is loaded as a character variable. So you can do that.  </p></li>
+<li><p>First, you can look at the class of the entire data frame and, of course, it comes up as a data frame. Then, what you can do is, you can look at the class of each individual column. So, to do this, there is sort of a tricky way of doing that. So what you do is you look at the first row of the data, the data frame. So, this is the eData frame and by selecting just the first row by the, this comma here tells you, if you put a number before the comma, it will select a row, if you put, put a number after the comma, it will select a column. And so here, we've selected the first row of that eData dataset and what we would like to do is apply that class() function to every single element of that first row and we can do that with this sapply() function.  </p></li>
+<li><p>So, what sapply() does is it basically runs along and to every value in this vector, it applies this function. So, we see that for the source variable <em>Src</em>, we get a factor, for the equation ID <em>Eqid</em>, we get a factor and so forth. For latitude <em>Lat</em> and longitude <em>Lon</em>, we get numeric variables, as well as for magnitude, we get a numeric variable. These are all sort of what we were expecting. So, this is another way to determine whether the data had been loaded in properly and whether the variables were loaded in a way that you expect them to be loaded.  </p></li>
+</ul>
+<p><strong>Looking at data - unique(),length(),table()</strong>  </p>
+<ul>
+<li><p>The next step is to start looking at the actual values that you see for different variables. And so, a couple of very useful functions are unique(), length(), and table().  </p></li>
+<li><p>So, one example is to look at the unique values. So, unique values: some variables, particularly qualitative variables, will only have a certain number of unique values. Quantitative variables might have entirely unique values. So, we're looking at this qualitative variable source and we're going to look at the unique values and you can see that it's listed here, all the values that the variable takes. This is our way of summarizing, very succinctly, a qualitative variable. And if you see that there are classes of that variable that should not be here, you can start exploring them further.  </p></li>
+<li><p>You can also look at the length of the unique values for particular variables. So again, we've taken the unique values for this variable source and we've looked at the length of that. And so, we see that there are eleven unique values for source. This is another way of succinctly summarizing how many values you see and if you expected to see more or less, you can quickly access that you have a problem with the data.  </p></li>
+<li><p>You can also do a table of the qualitative variables. If you do table of quantitative variable, you're going to get a very big table because every value will be unique and you'll get exactly one for each of the categories. But for a qualitative variable, if you do table of a qualitative variable in this case eData$Src, you can see that each of the unique values is listed and underneath the unique values is the number of times that it appears.  </p></li>
+<li><p>So, remember in summary, we saw that the <em>ak</em> appeared 330 times in the source variable and so again, when we take the table of that source variable, we see that it appears 330. But we also see that for all the other values that, that variable can take the number of times that it takes that value. So, this gives you an idea (a little bit) about the distribution of qualitative variables.  </p></li>
+</ul>
+<p><strong>Looking at data - table()</strong>  </p>
+<ul>
+<li><p>The table command is actually more flexible than just allowing you to look at single variables. So, suppose we want to look at the relationship between the source variable and the version variable for this data set, we can do table of the first variable, eData$Src, comma, the second variable, eData$Version, and we actually see a two-dimensional table now.  </p></li>
+<li><p>So, what this table shows is first along the rows here, we actually see the values of the source variable <em>ak</em>, <em>ci</em>, and so forth. And along the columns, we see the different versions that you can have. So, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, but also A, B, D and E. And then, what you see is the count for each cell of this table, of the number of times that the source variable is equal to <em>ak</em>, for one of the rows in the data frame. And the version variable is equal to two. So, 211 rows of the data frame have the source variable equal to <em>ak</em> and the version variable equal to two. And it's the same that you get for each of the cells.  </p></li>
+<li><p>So, there you can kind of see the relationship between these two variables and see that for example, most of the values seem to be occurring up here among these smaller number of detectors and these smaller number of versions. You can also see, for example, places where there are no values like this or places where these particular sources, <em>ak</em>, <em>ci</em>, and so forth, do not have any values that come from these versions.  </p></li>
+</ul>
+<p><strong>Looking at data - any(), all()</strong>  </p>
+<ul>
+<li><p>So, another way that you can look at data in addition to table() and unique(), is to look at any() and all(). So, any() and all() are particularly useful when looking at missing data. But also, if you want to see if there's some particular characteristic and see if it exists for any of the variables in a dataset.  </p></li>
+<li><p>So, for example, if we look at the latitude data, so if you go eData$Lat, and we look at the first 10 values, so this is just subsets to the first ten of those latitude values, we see that they're listed here. And so, suppose we want to see which of those values are greater than 40, it's kind of hard to eyeball it directly, but you can define sort of a logical variable.  </p></li>
+<li><p>And the way that you do that is: eData$Lat[1:10]&gt;40.  </p></li>
+<li><p>And so, what that does is for every value, it checks whether it's greater than 40 or not. And then, if it is greater than 40, it reports true. So, for example, the third value is 65, it's greater than 40, so it's TRUE. And if it's less than 40, here, in this case, 38.83, then it reports FALSE for that value.  </p></li>
+<li><p>And so now, we have a new vector that's the same length as this original 10 long vector of latitudes, and it tells us which of the ones are greater than 40. And then, if we want to see if any of them are greater than 40, we can just say, any of these values are greater than 40, and it tells us, TRUE. So sometimes, what you're looking for is for some variable, are there any of them that has some particular characteristic and you can use the any() command to be able to check and see if that's TRUE.  </p></li>
+</ul>
+<p><strong>Looking at data - all()</strong>  </p>
+<ul>
+<li><p>The all() command, on the other side hand, is looking to see if all values have the same properties. So, for example, we again define this eData$Lat latitude variable to be all the values that are greater than 40 and so what we can do is see if all of these values are greater than 40 by applying all() to that vector and in this case, we actually get FALSE because there are a large number of these that are actually equal to FALSE. The only way that this would return TRUE is if every single value of this vector was equal to TRUE.  </p></li>
+<li><p>So, these two functions, any() and all(), allow you to evaluate if there are particular patterns that you observe in the data set particularly, if there's patterns that affect all of the variable or affect even one of the variables. </p></li>
+</ul>
+<p><strong>Looking at subsets - &amp;</strong>  </p>
+<ul>
+<li><p>The other thing we can do is we can subset the values. And we can do this in more complicated ways than we saw in the original lectures. So, one example is that we can use the ampersand sign “&amp;” to do AND operations.  </p></li>
+<li><p>So, what we're going to do here is we're looking at the data frame eData, and we're going to take the columns that equal latitude and longitude for this dataset. And so, we actually just want to subset to those values that have the names latitude and longitude. Those are the columns that we're going to subset to because it's after the comma. Before the comma, we actually want to look at the rows that we're going to subset to.  </p></li>
+<li><p>And so, what we're going to do is, again, define these logical vectors so this is eData$Lat sign is greater than zero, will be all, will be equal to TRUE whenever the latitude is greater than zero and will be equal to FALSE whenever it's less than zero or equal to zero. Similarly, we can define the same sort of thing for longitude, we can say, we're going to define a logical vector that's equal to TRUE, whenever the longitude is greater than zero. And it's equal to FALSE whenever longitude is less than or equal to zero.   </p></li>
+<li><p>And then, we want to say, find all the cases where both latitude and longitude are greater than zero. So, to do that, we just stick an ampersand in between them and what you get out is a set of values where both the latitude and the longitude are greater than zero.  </p></li>
+</ul>
+<p><strong>Looking at subsets - |</strong>  </p>
+<ul>
+<li><p>Another case that you might want to look at is suppose you want to look at a case where either the latitude or the longitude is greater than zero but one of those two things has to be true. So here, we use the OR symbol  “|” here to be able to determine whether either the latitude or the longitude is greater than zero.  </p></li>
+<li><p>So, in this case, you see some cases where latitude is positive and longitude is negative and some cases, the other way, where longitude is positive and latitude is negative. But one or the other of these two conditions has to hold. Either the latitude is positive or the longitude is positive. So, you don't see any cases where both the latitude and longitude take on negative values.  </p></li>
+</ul>
+<p><strong>Peer review experiment data</strong>  </p>
+<ul>
+<li><p>So now after we've looked at a couple of different ways that we can subset the data, and look at unique values, and all sorts of other things, what we're going to do is we're going to actually look at a dataset. This is a dataset that actually was put together for a paper that I wrote a couple of years ago on submissions and reviews in an experiment.  </p></li>
+<li><p>So, in this experiment, people solved problems, like SAT problems. They were submitted to a computer. The computer then randomly assigned them to other people to review. And then, the other people that reviewed those problems could either say that it was correct or incorrect. And then, we can learn a little bit about the peer review system. This is particularly relevant because your data analyses will be graded on a peer review system. And we learned that cooperation between peer reviewers and people who are authors increase the accuracy of the review process.  </p></li>
+</ul>
+<p><strong>Peer review data</strong>  </p>
+<ul>
+<li><p>So, we're going to look at this data because it will show us a couple of others ways that we can manipulate data sets and look at summaries and figure out how they're working. So here, we need to download actually two data sets, and so they're on Dropbox.  </p></li>
+<li><p>And so, we've assigned here the two URLs for the two data sets. And then, we download the two files using the similar methodology that we've done before. Then, we can read them, they're both csv files, so we use read.csv() and read the two files in.  </p></li>
+<li><p>And we can look at a top of those files. So, here is the top of the reviews file, we see it has an ID, a solution ID, a reviewer ID, a start and stop time, and so forth, and you can see that they're all quantitative variables here. And then, we also look at the head() of the solutions file, again, it has an ID but now a problem ID and then some of the similar variables that we saw before.</p></li>
+</ul>
+<p><strong>Find if there are missing values - is.na()</strong>  </p>
+<ul>
+<li><p>So, one thing that we might want to do is determine if there are any missing values and one way to use that, to do that is to use the is.na() function.  </p></li>
+<li><p>So, suppose that we want to look at the reviews <em>time_left</em> variable, we can look at the first ten values of that variable and see which of them are NA. So, if you use is.na() applied to a vector, what it will do is it will look at every value one at a time and then tell you whether that value is NA or missing. So, in this case, the eighth value is a missing value of that <em>time_left</em> variable, and all the rest are FALSE because they're not NA values.  </p></li>
+<li><p>So then, the other thing that we can do is, if we have this logical vector defined by using is.na() on the entire time left vector, what we can do is just use sum() to calculate the total number of times that you see in NA value. So remember, TRUE means that it's an NA value. And so, if we do sum of a logical vector; what it does is it counts up the number of times that you see TRUE. And so you see 84 missing values for this reviews$time<em>left variable and indeed, if you do a table of is.na(reviews$ time</em>left)), you're now going to look at a table of this logical vector of whether it's TRUE a missing value or not. And you see that 84 of the times, it's missing and 115 of the times, it is not missing.  </p></li>
+</ul>
+<p><strong>Important table()/NA issue</strong>  </p>
+<ul>
+<li><p>So, an important issue about dealing with tables and missing values is going to be illustrated with this example. So here (this has nothing to do with the previous experiment) you can see I've created a vector and it has values 0,1,2,3,NA,3,3,2,2,3 (NA being the missing value).  </p></li>
+<li><p>If I type table of that vector, I actually see the number of times that 0, 1, 2, and 3 appear, but I don't see the number of times that the missing indicator appears. And that's because one of the options, the <em>useNA</em> option is defined by default, not to show NAs. So, if you run table on that exact same vector, but you set the <em>useNA</em> option to: “ifany”, then if there are NA values, you will see that the NA value appears here, as well. So, there's one missing value in that vector. So, that's just an important little trick to remember if you’re looking at the number of values in a vector and you want to make sure that you see the missing values as well, you need to change the <em>useNA</em> parameter that you're passing to the table function.  </p></li>
+</ul>
+<p><strong>Summarizing columns/rows -rowSums(),rowMeans(),colSums(),colMeans()</strong>  </p>
+<ul>
+<li><p>So, another thing that you can do is you can actually summarize by rows and columns. So, another way to summarize data rather than to summarize the individual variables at the level of a table is that you can actually just see what the sum of all the values are in particular column, or the mean of all the values in a particular column.  </p></li>
+<li><p>So, this could be useful when you're looking at, seeing if there's sort of any sort of variables that have an unusually high mean or unusually low mean. It should only apply really to values that are quantitative. And so, what you can see is, since we're using only quantitative variables in these reviews, we can do the column sums. The column sums tells you the sum of all the <em>reviewer_id</em>, in this case that might not be a necessarily very useful number.  </p></li>
+<li><p>But you see that here the column sums for reviews are NA for the <em>start</em>, <em>stop</em>, <em>time_left</em>, and <em>accept</em> parameters. And that's because if there are any NA values, the sum will always be equal to NA. So, you might need to use this na.rm parameter to be able to ignore the NA values.   </p></li>
+</ul>
+<p><strong>Summarizing columns/rows -rowSums(),rowMeans(),colSums(),colMeans()</strong>{more}  </p>
+<ul>
+<li><p>And so, for example, if you take the columnMeans() of the same reviews data frame and you set na.rm=TRUE, then what happens is actually it takes the means of each column. And it does that by completely skipping any columns where there is an NA for that variable.  </p></li>
+<li><p>So, for example, for the <em>start</em> variable, it takes the mean of the <em>start</em> variable, and it does it by completely ignoring any values that are equal to NA. And so, you end up with, these are the values that you end up getting for each of the columnMeans() ignoring the NA values.  </p></li>
+<li><p>You can also do the same thing for rowMeans. And so, all this does is, instead of getting a mean for each column, it gets a mean for each row. And again, you might need to set na.rm=TRUE, because otherwise, any row with an NA will get a value of NA when you apply rowMeans() to it.  </p></li>
+<li><p>So, I know this was a super quick summary of ways that you can summarize data. But this is the first pass in a data analysis, there's always to run one or more or several of these functions and sort of get a feel for what the shape, structure, number of NAs and so forth, exist in that data set. It also lets you summarize a little bit the quantitative distributions of variables using quantile and things like that.  </p></li>
+<li><p>So, the next thing that we're going to talk about is data munging and that's going to be the key component of any data analysis and it's usually performed after summarizing the datasets but can also be performed before summarizing the datasets.</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Dataanalysis:Transcripts_Week2Lecture7&amp;oldid=7232">https://share.coursera.org/wiki/index.php?title=Dataanalysis:Transcripts_Week2Lecture7&amp;oldid=7232</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

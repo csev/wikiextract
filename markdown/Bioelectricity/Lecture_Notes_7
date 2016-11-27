@@ -1,0 +1,183 @@
+# Bioelectricity - Week 7
+  
+A) Watching wave forms from a fiber  
+B) Watching cardiac wave forms  
+Train system: -- Watching  
+  
+Extracellular Observations  
+Cardiac Wave Forms  
+  
+1. Introduction to week 7  
+2. What are we talking about?  
+3. Finger wave forms  
+4. Single Fiber Extracellular Wave Forms  
+5. Wave forms at starting and ending sites  
+6. Origin of Ve, An Experiment  
+7. Single Fiber Spatial Vm, Im, and Sources  
+8. Magnitude of Io  
+9. Cartoon of Extracellular Potentials  
+10. Electrocardiograms  
+11. Problem session, sources as dipoles  
+12. Week 7 in review    
+  
+### What are we talking about?  
+With all electrodes outside of cells, possibly on the skin:
+* Observing voltages between these electrodes
+* Seeing that the voltages change with time.
+* Trying to make some sense of what is seen.  
+  
+Augustus Waller, late 1800s
+* Trained his bulldog, Jimmy, to stand in 4 buckets of water  
+* Measured the voltages between the buckets  
+* Observed that the signal was periodic
+* Observed that the biggest signal had a period that corresponded to the period of the dog's heart.  
+* Also observed the need to feed Jimmy periodically  
+  
+---  
+  
+### Finger wave forms  
+**Recording between finger on one hand and finger on the other (A simple experiment)**  
+Simple experiment: Place electrodes on a finger of each hand and record the voltages from one electrode to the other.  
+  
+[[File:BE-week7-finger-waveform.png‎]]
+  
+**Caution – Safety Issue**  
+Caution: Trying this experiment is not a part of this course. Please be aware that an approved experimental protocol may be required.  
+There can be a shock hazard because there are electrodes tightly coupled to the body. Be sure to use approved equipment to avoid any shock hazard.  
+  
+**Noise, because signals are small.**  
+* “Noise” is often defined as any unwanted signal.  
+* If our interest on the recording is the cardiac signal, there is a lot of noise on the recording from body electrodes.  
+* Noise is an issue in most kinds of extracellular recordings.  
+  
+**Comments**  
+* The recording shows a voltage that changes with time.  
+* There are periodic large signals perhaps 0.8 sec apart.  
+* There are a lot of lower level deflections.  
+* How do we begin to understand what is happening? Where is this stuff coming from?  
+
+---  
+  
+### Single Fiber Extracellular Wave Forms  
+What is happening outside the fiber, for a single fiber?  
+First, let’s look at the wave forms that are observed.  
+  
+**Experimental setup**  
+  
+  
+[[File:BE-week7-experiment-setup.png‎ ]]  
+  
+  
+* Single fiber, uniform, so it has the most simple structure.  
+* One stimulator, designated R (towards the left-hand of the fiber).  
+* 2 electrodes  
+:* 1 electrode is a penetrating electrode, will tell us the transmembrane voltage.  
+:* The other electrode is an electrode outside the fiber, which will tell us the voltage outside, relative to a reference that's a long distance away.  
+
+**Single Fiber Xmem and Extra-cellular**  
+  
+[[File:BE-week7-single-fiber-waveform.png‎]]  
+
+    
+---  
+  
+### Wave forms at starting and ending sites  
+**Ends Setup**  
+  
+**Extra Ends Wave Forms**  
+  
+**Single Fiber Xmem and Extra-cellular**  
+  
+**Wave Shape as Discriminant**  
+* Extra cellular wave forms can be used to determine the excitaiton sequence.  
+* The wave shape is useful, as well as wave timing.  
+* For biphasic waveforms, the upstroke of the action potential corresponds to the intrinsic deflection of the extracellular wave form.  
+  
+---  
+  
+### Origin of Ve, An Experiment  
+**Origin of Ve experiment, the Setup**  
+  
+**Origin of Ve, Vm(t) to Vm(x)**  
+  
+**Origin of Ve, Im(x) to Ve(t)**  
+  
+---  
+  
+### Single Fiber Spatial Vm, Im, and Sources  
+**Sources and Sinks, Drawing**  
+  
+**Equation**  
+  
+**Straight-edge estimation from Vm(x)**  
+
+---  
+  
+### Magnitude of Io 
+**Magnitude and Sign of Io**  
+* We need  
+:* the resistivity [Ri = 30, Re=20 Ohm-cm here] the radius [a= 10 um in most cases here] 
+:* the 2nd spatial derivative of Vm  
+  
+:* How does one find an actual number value for Io?  
+Or, we need a graph of Im(x). That is never available, experimentally, though sometimes it is, in a simulation.  
+
+  
+---  
+  
+### Cartoon of Extracellular Potentials  
+**Cartoon 1**  
+  
+**Cartoon 2**  
+  
+**Cartoon 3**  
+  
+**Cartoon 4**  
+  
+
+---  
+  
+### Electrocardiograms   
+* Electrocardiography is about obtaining and interpreting written records of the electrical signals of the heart.  
+* Einthoven, in Holland, received the Nobel Prize in 1924 for demonstrating that the electrocardiogram was systematically different in patients with different kinds of heart problems.  
+* The best way to interpret electrical signals from the heart remains a research topic even today.  
+  
+**Heart within Body, Sketch**  
+  
+**Lead Waveforms**  
+* ECGSIM is a fantastic computer tool for visualizing and connecting electrical signals in the heart with those on the body surface.  
+* It has been created and made available by Adriaan van Oosterom and colleagues, who are authorities in this field.  
+* www.ecgsim.org (Available for many purposes free of charge.)  
+  
+---  
+  
+### Problem session, sources as dipoles  
+**Source pairs as dipoles - Q**  
+* Derive an expression that gives the potential from a sourcesink pair in a single term.  
+* Assume that the distance between the source and sink is much smaller than the distance to the field point.  
+  
+**Hints**  
+* Derive an expression that gives the potential from a sourcesink pair in a single term.  * Assume that the distance between the source and sink is much smaller than the distance to the field point.  
+* Think of the distance from the sink to the source as a vector p. Think of the distance from the pair to the field point as another vector r.  
+* The result will depend on the dot product of these 2 vectors.  
+
+---  
+  
+### Week 7 in review  
+1. Extracellular voltages are present across fingers, with a complex wave shape, though a heartbeat is visible.  
+  
+2. .A much simpler wave shape, largely biphasic, is seen from an extracellular electrode near a single fiber.  
+  
+3. The leading edge of the excitation wave, seen outside the fiber, has positive potential and the trailing edge is negative.  
+  
+4. Sources and sinks are readily identify from the curve of Vm(x) or Im(x)  
+  
+5. Though the geometry is hugely different, wave shapes of similar polarity arise from excitation waves in the heart.  
+  
+**An enormous and wide-ranging subject**  
+* We have barely scratched the surface.  
+* The recording and interpretation of extracellular signals is an enormous and wide-ranging subject.  
+* The industry devoted to manufacture of specialized instruments for recording and display is large and varied.  
+* The modes and principles of wave form interpretation is highly developed by specialists in related medical fields, for example, by cardiologists for wave forms from the heart.  
+  
+---

@@ -1,0 +1,106 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Pmhdepression:week3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Please note these notes are provided by a fellow student on a best effort basis. There may be mistakes in the in the text or parts may have been left out.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_3A:_What_is_Epidemiology.3F"><span class="tocnumber">1</span> <span class="toctext">Lecture 3A: What is Epidemiology?</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_3B:_Time.2C_Space_and_Disease:_The_Ecological_Approach"><span class="tocnumber">2</span> <span class="toctext">Lecture 3B: Time, Space and Disease: The Ecological Approach</span></a></li>
+<li class="toclevel-1"><a href="#Cohort_studies"><span class="tocnumber">3</span> <span class="toctext">Cohort studies</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_3C:_Case_Control_Study"><span class="tocnumber">4</span> <span class="toctext">Lecture 3C: Case Control Study</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_3D:_The_web_of_Causation"><span class="tocnumber">5</span> <span class="toctext">Lecture 3D: The web of Causation</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Lecture_3A:_What_is_Epidemiology.3F">Lecture 3A: What is Epidemiology?</span></h2>
+<p>Epidemiology    → Study of disease in populations
+        → Study of rates (Langmuir)
+Prevalence (burden and demand)
+Incidence (force of morbidity)
+        →The study of disease occurrence by time place and person (Lilienfeld and Stolley)
+Etiology    → The study of causes of disease</p>
+<p>Seven uses of epidemiology (Morris 1976):
+1. The study of the history of health of populations, facilitating projections into the future
+2. To diagnose the health of the community, which facilitates prioritizing health problems
+3. To study the working of health services, with a view towards their improvement
+4. To estimate individual risks, and how to avoid the, which can be communicated to individuals
+5. To identify syndromes (collections of signs and symptoms)
+6. To complete the clinical picture of chronic disease, especially as regards natural history
+7. To search for causes of health and disease. </p>
+<p>Mostly first discover how to prevent a disease first and (much) later find exactly why that prevents a disease (ie. Epidemiology first, etiology catches up later).
+Prevention has a very strong effect, a cure is great but better not to get something.</p>
+<h2> <span class="mw-headline" id="Lecture_3B:_Time.2C_Space_and_Disease:_The_Ecological_Approach">Lecture 3B: Time, Space and Disease: The Ecological Approach</span></h2>
+<p>Example of a Cholera epidemic in London late 1854. John Snow did lots of research to determine where Cholera came from. Found that it came from a specific pump. 
+He looked at exceptions. For example, little deaths in the brewery or the workhouse (ie. probably not in the air).</p>
+<p>Hard to do a similar study on depression. But Messias et al, PS, 2011 tried. Found, higher rates of social inequality give higher depression rates.  </p>
+<h2> <span class="mw-headline" id="Cohort_studies">Cohort studies</span></h2>
+<p>Cohort studies look forward, case control studies look backward. </p>
+<p>Relative risk for Cohort studies
+Relative odds for Case Control studies</p>
+<p>Lung cancer research. First find a group/cohort then track them. </p>
+<p>Strength cohort studies:
+<ul><li> No recall bias
+</li><li> Estimate incidence
+</li><li> Estimates relative risks
+</li></ul>
+Weaknesses:
+<ul><li> Expensive
+</li><li> Many controls (ie. Few people with the disease lots of people without)
+</li><li> Can take a long time
+</li><li> Attrition bias (you may lose more or less people with the disease due to the disease) </p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Lecture_3C:_Case_Control_Study">Lecture 3C: Case Control Study</span></h2>
+<p>You find people with the disease (ex. Lung cancer) and a number of people without, but other as similar as possible. 
+Can't calculate incidence. </p>
+<p>Brown and Harris (1987) Importance of live events on onset depression. Relative odds 8.72</p>
+<p>Strength case control studies:
+<ul><li> Requires no hypothesis
+</li><li> Cases can come from clinics
+</li><li> Small number of controls
+</li></ul>
+Weaknesses:
+<ul><li> Biased recall (strength) (effort after reason)
+</li><li> Temporality → which came first?
+</li><li> Controls may not match cases (consistency)</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Lecture_3D:_The_web_of_Causation">Lecture 3D: The web of Causation</span></h2>
+<p>“The web of causation, has anybody seen the spider?” (Krieger, Social Science and Medicine, 1994)
+Can we really know what causes what?
+<ul><li> Association, risk and cause</p>
+</li></ul>
+
+<p>Why is causality important? → It can lead to prevention</p>
+<p>How do we evaluate evidence on cause?
+<ul><li> Strength (of causation)
+</li><li> Dose-response (more smoking leads to more lung cancer)
+</li><li> Consistency (across studies, locations, era, race)
+</li><li> Temporality (cause occurs before disease)
+</li><li> Specificity (more convincing if one cause has one outcome. Doesn't need to be there, but helps)
+</li><li> Plausibility (have a physical logical theory)</p>
+</li></ul>
+
+<p>Confounding. More deaths in Florida. Does Florida cause more deaths? Or is there another reason. 
+Death rate is confounded by age. 
+Fix confounding by Age adjustment
+There are a large number of way to adjust for confounding variables. </p>
+<p>Hence, the web of causation. Which of these causes is 'the' cause. And often there is no 1 cause. Epidemiology suggests clues to etiology.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Pmhdepression:week3&amp;oldid=19121">https://share.coursera.org/wiki/index.php?title=Pmhdepression:week3&amp;oldid=19121</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

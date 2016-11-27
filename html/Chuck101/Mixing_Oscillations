@@ -1,0 +1,43 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Chuck101:Mixing Oscillations</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><pre>
+//Sound network of two oscillations (a sinus and a square wave)
+SinOsc s =&gt; dac;
+SqrOsc t =&gt; dac;
+
+// define gain for the oscillations
+0.5 =&gt; s.gain;
+0.2 =&gt; t.gain;
+
+// play s and t oscillations at same time. The frequency each
+// oscillator is parametrized by the iteration of the for loop
+for (0 =&gt; int i; i&lt;500; i++) 
+{
+    // assign i Hz frequency to t oscillator
+    i =&gt; t.freq;
+    // s oscillator has double frequency (2*i Hz frequency)
+    i*2 =&gt; s.freq;  
+    0.001::second =&gt; now;
+}
+</pre>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Chuck101:Mixing_Oscillations&amp;oldid=18305">https://share.coursera.org/wiki/index.php?title=Chuck101:Mixing_Oscillations&amp;oldid=18305</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ChucK_101" title="Category:ChucK 101">ChucK 101</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,153 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">CI:Module 2 Objectives</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><strong>Module 2 Objectives</strong> (Lecture Video 2.1)</p>
+<p><em>Note: Just copied notes from lecture slides, needs to be cleaned up and expanded</em></p>
+<ul>
+<li><p>Due Date: October 28, Time for Completion: 12 minutes</p></li>
+<li><p><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a> </p></li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=3">video</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/021-CompInvestI.pptx">powerpoint</a></li>
+</ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Objectives"><span class="tocnumber">1</span> <span class="toctext">Objectives</span></a></li>
+<li class="toclevel-1"><a href="#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Viewpoint"><span class="tocnumber">2.1</span> <span class="toctext">Viewpoint</span></a></li>
+<li class="toclevel-2"><a href="#Portfolio_Manager_.2F_Hedge_Fund_Incentives"><span class="tocnumber">2.2</span> <span class="toctext">Portfolio Manager / Hedge Fund Incentives</span></a></li>
+<li class="toclevel-2"><a href="#How_to_Attract_Investors.3F"><span class="tocnumber">2.3</span> <span class="toctext">How to Attract Investors?</span></a></li>
+<li class="toclevel-2"><a href="#Two_Main_Types_of_Fund_Goals"><span class="tocnumber">2.4</span> <span class="toctext">Two Main Types of Fund Goals</span></a></li>
+<li class="toclevel-2"><a href="#Example:_Compare_with_Benchmark"><span class="tocnumber">2.5</span> <span class="toctext">Example: Compare with Benchmark</span></a></li>
+<li class="toclevel-2"><a href="#What_are_Investors_Looking_For.3F"><span class="tocnumber">2.6</span> <span class="toctext">What are Investors Looking For?</span></a></li>
+<li class="toclevel-2"><a href="#Common_Metrics"><span class="tocnumber">2.7</span> <span class="toctext">Common Metrics</span></a></li>
+<li class="toclevel-2"><a href="#Example"><span class="tocnumber">2.8</span> <span class="toctext">Example</span></a></li>
+<li class="toclevel-2"><a href="#Annual_Return"><span class="tocnumber">2.9</span> <span class="toctext">Annual Return</span></a></li>
+<li class="toclevel-2"><a href="#Standard_Deviation_of_Daily_Return"><span class="tocnumber">2.10</span> <span class="toctext">Standard Deviation of Daily Return</span></a></li>
+<li class="toclevel-2"><a href="#Max_Draw_Down"><span class="tocnumber">2.11</span> <span class="toctext">Max Draw Down</span></a></li>
+<li class="toclevel-2"><a href="#Sharpe_Ratio"><span class="tocnumber">2.12</span> <span class="toctext">Sharpe Ratio</span></a></li>
+<li class="toclevel-2"><a href="#Homework_1"><span class="tocnumber">2.13</span> <span class="toctext">Homework 1</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Objectives">Objectives</span></h1>
+<ul>
+<li>Understand course viewpoint: Portfolio Manger.</li>
+<li>Understand portfolio manager incentives.</li>
+<li>Understand two main types of funds.</li>
+<li>Understand benchmarks.</li>
+</ul>
+<h1> <span class="mw-headline" id="Notes">Notes</span></h1>
+<h2> <span class="mw-headline" id="Viewpoint">Viewpoint</span></h2>
+<ul>
+<li>I assume you want to be a portfolio manager.</li>
+</ul>
+<h2> <span class="mw-headline" id="Portfolio_Manager_.2F_Hedge_Fund_Incentives">Portfolio Manager / Hedge Fund Incentives</span></h2>
+<ul>
+<li>Expense ratio
+<ul><li><ul><li> Used by mutual funds &amp; ETFs.
+</li><li> Usually less than 1%.</li>
+</li></ul>
+</li></ul>
+<li>“Two and twenty”
+<ul><li><ul><li> Classic structure for hedge funds.
+</li><li> $1M with 20% / year = $60K/year.</li>
+</li></ul>
+</li></ul>
+<li>How/why different?</li>
+</ul>
+<h2> <span class="mw-headline" id="How_to_Attract_Investors.3F">How to Attract Investors?</span></h2>
+<p>Know your audience:
+<ul><li> Individuals
+</li><li> Institutions:
+<ul><li> Harvard Foundation
+</li><li> CalPERS
+</li></ul>
+</li><li> Funds of Funds
+</li><li> Must have track record, or
+</li><li> Very compelling story and back test.
+</li><li> Fit in a “pigeon hole?”
+</li><li> What do investors want to see?</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Two_Main_Types_of_Fund_Goals">Two Main Types of Fund Goals</span></h2>
+<ul>
+<li>Reference to a benchmark (pigeon hole).</li>
+<li>Absolute return.</li>
+</ul>
+<h2> <span class="mw-headline" id="Example:_Compare_with_Benchmark">Example: Compare with Benchmark</span></h2>
+<h2> <span class="mw-headline" id="What_are_Investors_Looking_For.3F">What are Investors Looking For?</span></h2>
+<h2> <span class="mw-headline" id="Common_Metrics">Common Metrics</span></h2>
+<ul>
+<li>Annual return.</li>
+<li>Risk: Standard deviation of return.</li>
+<li>Risk: Draw down.</li>
+<li>Reward/Risk: Sharpe Ratio.</li>
+<li>Reward/Risk: Sortino Ratio.</li>
+<li>Jensen’s Alpha.</li>
+</ul>
+<h2> <span class="mw-headline" id="Example">Example</span></h2>
+<p><pre>
+      Return  Sharpe   STDEV   D-down   Corr
+Fund     33%     .94   0.58%   -8.67%   0.89
+$DJI     43%     .63   1.23%  -27.38%   1.00
+</pre></p>
+<h2> <span class="mw-headline" id="Annual_Return">Annual Return</span></h2>
+<ul>
+<li>metric = (value[end]/value[start]) – 1</li>
+<li>Example: $100 to $110:
+<ul><li><ul><li> (110/100) – 1 = 0.10 = 10%</li>
+</li></ul>
+</li></ul>
+</ul>
+<h2> <span class="mw-headline" id="Standard_Deviation_of_Daily_Return">Standard Deviation of Daily Return</span></h2>
+<ul>
+<li>daily_rets[i] = (value[i]/value[i-1]) – 1</li>
+<li>std<em>metric = stdev(daily</em>rets)</li>
+</ul>
+<h2> <span class="mw-headline" id="Max_Draw_Down">Max Draw Down</span></h2>
+<h2> <span class="mw-headline" id="Sharpe_Ratio">Sharpe Ratio</span></h2>
+<p>$$S =  \frac{E [R - R&#95;f]}{\sigma} = \frac{E [R - R&#95;f]}{\sqrt{var[R - R&#95;f]}}$$<br />
+<ul><li> metric = (average(daily<em>rets)/stdev(daily</em>rets)) * sqrt(250)</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Homework_1">Homework 1</span></h2>
+<p><a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1">Homework 1 on wiki</a> - (<a rel="nofollow" class="external text" href="http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1_rubric">Marking</a>)</p>
+<ul>
+<li>Find online broker to “paper trade.”</li>
+<li>Invest $1M in 4 equities.</li>
+<li>Assess your portfolio for 2011:
+<ul><li><ul><li> Annual return
+</li><li> Average daily return
+</li><li> Stdev of daily return
+</li><li> Sharpe Ratio</li>
+</li></ul>
+</li></ul>
+<li>Compare with benchmark: SPY</li>
+<li>Submit 
+<ul><li><ul><li> .pdf printout of your spreadsheet.
+</li><li> Screenshot of your portfolio online.</li>
+</li></ul>
+</li></ul>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 12/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=CI:Module_2_Objectives&amp;oldid=4263">https://share.coursera.org/wiki/index.php?title=CI:Module_2_Objectives&amp;oldid=4263</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:CI" title="Category:CI">CI</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

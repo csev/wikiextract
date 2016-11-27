@@ -1,0 +1,85 @@
+# Bioelectricity - Week 8 - Stimulation  
+  
+A) Galvani’s observations  
+B) Spherical cell  
+C) Cylindrical fiber, with time  
+D) Field stimulation  
+  
+Train system: -- Control  
+  
+1. Introduction to week 8  
+2. What is meant by “stimulation”?  
+3. Why analyze stimulation?  
+4. Analyze Passive instead of Active?  
+5. Single Spherical Cell.  
+6. Strength-Duration Curves  
+7. Stimulation of a cylinder with cuff electrodes  
+8. Stimulation , the Tiger function  
+9. Field stimulation, the field  
+10. Field stimulation, the consequences  
+11. Week 8 in review  
+12. Good-bye and Special Thanks  
+  
+### What is meant by “stimulation”?  
+* Control, in the bioelectric sense, usually means electrical stimulation.  
+  
+**Stimulation by Galvani**  
+:* Stimulation produced contraction.  
+:* Historically, the significance of this is not entirely what you would think. At the time it was done there were no meters of the modern type, no voltmeters, or oscilloscopes, or computerized instruments of course, so the twitch of the frog leg itself became a meter that showed whether or not an electrical charge was present. It was, if you will, the original voltmeter.    
+  
+**Galvani experiment, more modern view**  
+* With a probe, he did field stimulation. That is, his probe established an electric field, and his probe was out in the field, away from the nerve.  
+* It nonetheless stimulated a nerve. The nerve propagated a series of action potentials.   * As the action potentials reach the end of the nerve, they release neurotransmitters, which are chemical elements.  
+* The neurotransmitters produced additional action potentials, and then resulted in contraction of the muscles of the frog's leg.  
+* Quite a complicated process, but all controlled, that is, initiated, by the probe and by the electrical stimulus. People do essentially the equivalent of that right up until the present day.  
+  
+**In bioelectricity, stimulation means**  
+* The use of electrical currents to influence the action of excitable tissue.  
+* Often it is used to initiate action potentials.  
+* On other occasions it is used to stop action potentials.  
+* And it can be used to modify function, as done by Galvani  
+  
+---  
+  
+### Why analyze stimulation?  
+**Why analyze stimulation?**  
+* Why not just turn it on and see what works? Just to know how it works.   
+* Extremely helpful to be able to predict what will work and what will not before trying it.  
+* Allows one to know what is a critical value, and what is not so much.  
+:* How critical is it that you have exactly the right distance of the stimulator from the tissue? How critical is it that you anticipate the conductivity of the solution? How critical is it that you stimulate with just the right amount of current?  
+:* You can explore them experimentally, but it is very helpful to have a theory to go along with that and tell you what it, to expect.  
+* Leads to an understanding of natural mechanisms of stimulation. These are most of the mechanisms, most of the time.  
+:* Because, after all, most tissue, most of the time is stimulated from a natural source, not a man made source. And, we would like to understand those natural sources, too.  
+
+---      
+  
+### Analyze Passive instead of Active?  
+**Why is the analysis based on passive membrane rather than active?  
+Definitely not because there is no interest in active tissue  
+1. When stimulation is for the purpose of initiating excitation, the tissue starts out
+in the passive state, and its most important function is while the tissue is passive.
+:* When the tissue has become active, the purpose is fulfilled. 
+:*  
+2. Many modern stimuli are short. That means that the tissue does not have
+time to change its state very much, except for Vm, during the course of the
+stimulus.  
+3. Linearity.
+*  
+  
+  
+### Single Spherical Cell.  
+
+### Strength-Duration Curves  
+  
+### Stimulation of a cylinder with cuff electrodes  
+  
+  
+### Stimulation , the Tiger function  
+  
+### Field stimulation, the field  
+  
+### Field stimulation, the consequences  
+  
+### Week 8 in review  
+  
+### Good-bye and Special Thanks

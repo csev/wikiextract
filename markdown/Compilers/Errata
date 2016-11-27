@@ -1,0 +1,70 @@
+# Errata
+
+## Cool Example III
+
+The last change to list.cl includes definition of a variable i:
+
+`i : Int <- 42`
+
+This variable is not used after being defined and initialized. Instead, a literal 42 is added to the list further down.
+
+## Finite Automata 4-2 
+
+* 15:05
+
+There is slide presented at this time — slide is correct, but Prof.Aiken (audio) says something like "NFAs are just those that are **not deterministic**". This is a bit misleading (refer to slides then), evet DFA is NFA as well.
+
+* 16:00
+
+The example at the bottom is a bit confusing. It is used to demonstrate that it is possible to use epsilon transitions to make "every state in the machine only have a single transition for every possible input". However, the example has two epsilon transitions for the starting state. I think it would be clearer to only use 4 states and a single epsilon transition to better illustrate this.
+
+
+## Parsing Completed 05-02: Context Free Grammars 
+
+* 10:46
+
+There is: `if while id loop id pool then id else id`.
+ 
+There should be: `if while id loop id pool then id else id fi`.
+
+## Top-down parsing 06-04: Recursive Descent Algorithm 
+
+* 13:27 quiz
+
+There is: `T1(), T2(), T3()` in lines 12,13,14.
+
+There should be: `E'1(), E'2(), E'3()` accordingly.
+
+## Lecture 09-09
+
+* last slide (slide 4) 
+
+There is:
+
+    TypeCheck(Environment, let x:T <-e0 in e1) = { T0 = TypeCheck(Environment, e0); 
+    T1 = TypeCheck(Environment.add(x:T), e1); 
+    Check subtype(T0,T1); return T1}
+
+It should be -- the 2nd last line read as `Check subtype(T0,T)` instead of `Check subtype(T0,T1)`
+
+## Lecture 10-05 
+
+* slide 3
+
+Line 2 of rule for [ASSIGN] is shown as:
+
+O,M,C $$\vdash e{1}:T{0}$$
+
+It should be the following:
+
+O,M,C $$\vdash e{1}:T{1}$$
+
+## Lecture 15-02
+
+* 12:20 (rule 3)
+
+It should say that "`C(pi, x, c) for at least one i, and 'bottom' for the rest`. In current version it's possible to have `C(pi, x, 'bottom') for all i`.
+
+## Java Coercions 18-05
+
+In Java, the literal 2.0 is not a float, it is a double. The integer added is widened to a 64-bit double, and not to a 32-bit float.

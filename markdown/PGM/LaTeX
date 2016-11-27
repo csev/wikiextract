@@ -1,0 +1,63 @@
+A very quick tutorial:
+
+To insert $$\LaTeX$$ into the forum, enclose the $$\LaTeX$$ in two dollar signs either side, as demonstrated below... 
+
+**Superscript**
+
+ - type <code><nowiki>$$ x^y $$</nowiki></code> to get $$ x^y $$
+ - type <code><nowiki>$$ e^{z+w^i} $$</nowiki></code> to get $$ e^{z+w^i} $$ (note the use of the curly brackets to tell $$\LaTeX$$ that the exponent is not just a single variable but is the expression $$z+w^i$$)
+
+**Subscript**
+
+ - type <code><nowiki>$$ x_y $$</nowiki></code> to get $$ x_y $$
+
+**Fractions**
+
+ - type <code><nowiki>$$ \frac{x}{y} $$</nowiki></code> to get $$ \frac{x}{y} $$
+
+**Sums and Products**
+
+ - type <code><nowiki>$$ \sum_{i=1}^{k} w_iX_i $$</nowiki></code> to get $$ \sum_{i=1}^{k} w_iX_i $$ (note that placing things beneath the sum uses a notation identical to subscript and placing things above the sum uses a notation identical to superscript)
+ - type <code><nowiki>$$ \prod_i \phi_i $$</nowiki></code> to get $$ \prod_i \phi_i $$
+
+**Equations**
+
+ - type <code><nowiki>$$ O(x)={ {P(y^1|x)} \over {P(y^0|x)} } $$</nowiki></code> to get $$ O(x)={ {P(y^1|x)} \over {P(y^0|x)} } $$
+ - On the line above, note the opening curly bracket immediately after the equals sign and its parter at the very end of the expression.  These curly brackets tell $$\LaTeX$$ to put the entire fraction after the equals sign.  If you omit these curley backets and write <code>$$ O(x)={P(y^1|x)} \over {P(y^0|x)} $$</code> then you get: $$ O(x)={P(y^1|x)} \over {P(y^0|x)} $$, which is probably not what you want!
+
+**Basic set notation**
+
+ - type <code><nowiki>$$x \in \\{1, \dotsc, 10 \\} $$</nowiki></code> to get $$ x \in \\{1, \dotsc, 10 \\} $$
+
+* <code><nowiki>$$ \in $$</nowiki></code> $$ \in $$ ; read <i>is observe</i>
+* <code><nowiki>$$ \phi $$</nowiki></code> $$ \phi $$ ; read <i>product of x factors</i> 
+* <code><nowiki>$$ \Phi $$</nowiki></code> $$ \Phi $$
+* <code><nowiki>$$ \psi $$</nowiki></code> $$ \psi $$
+* <code><nowiki>$$ \alpha $$</nowiki></code> $$ \alpha $$
+* <code><nowiki>$$ \beta $$</nowiki></code> $$ \beta $$
+* <code><nowiki>$$ \lambda $$</nowiki></code> $$ \lambda $$
+* <code><nowiki>$$ \delta $$</nowiki></code> $$ \delta $$
+* <code><nowiki>$$ \rightarrow $$</nowiki></code> $$ \rightarrow $$
+* <code><nowiki>$$ \delta_{ i \rightarrow j } $$</nowiki></code> $$ \delta_{ i \rightarrow j } $$
+* <code><nowiki>$$ \mu $$</nowiki></code> $$ \mu $$
+* <code><nowiki>$$ \tilde{P} $$</nowiki></code> $$ \tilde{P} $$
+* <code><nowiki>$$ \models $$</nowiki></code> $$ \models $$ ; read <i>satisfy</i>
+* <code><nowiki>$$ \perp $$</nowiki></code> $$ \perp $$ ; read <i> independence </i>
+* <code><nowiki>$$ \lt \gt \ne $$</nowiki></code> $$ \lt \gt \ne $$
+* <code><nowiki>$$ \forall$$</nowiki></code> $$ \forall$$ ; read  <i>for all </i> or <i>for every </i>
+* | read <i>given </i> and express a condition
+* <code><nowiki>\propto</nowiki></code> $$ \propto $$; read  <i>is proportional </i> 
+
+
+**Modifying text**
+
+* <code><nowiki>$$ \tilde{P} $$</nowiki></code> $$ \tilde{P} $$
+* <code><nowiki>$$ \mathbf{X} $$</nowiki></code> $$ \mathbf{X} $$ (Bold Font for vectors or sets of random vars as in $$x \in \textit{Val}(\mathbf{X})$$)
+
+
+**Examples**
+
+*  <code><nowiki>$$ P_\Phi \models  (W_{\lt(i,j)} \perp W_{\lt(j,i)} \; | \; S_{i,j})  $$</nowiki></code> $$ P_\Phi \models  (W_{\lt(i,j)} \perp W_{\lt(j,i)} \; | \; S_{i,j})  $$
+
+
+There's an excellent guide to using $$\LaTeX$$ to layout maths on WikiBooks: http://en.wikibooks.org/wiki/LaTeX/Mathematics  (you don't need to bother reading it from beginning to end.. instead just use it as a visual reference guide.  Quickly scroll through the page to find the expression you want.)

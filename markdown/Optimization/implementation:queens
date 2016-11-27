@@ -1,0 +1,22 @@
+# N-Queens #
+
+### Comet ###
+A constraint programming based implementation of the N-Queens problem
+
+<pre>
+import cotfd;
+
+Solver<CP> m();
+int n = 8;
+range S = 1..n;
+var<CP>{int} q[i in S](m,S);
+
+solve<m> {
+   m.post(alldifferent(all(i in S) q[i] + i));
+   m.post(alldifferent(all(i in S) q[i] - i));
+   m.post(alldifferent(q));
+} using {
+   label(q);
+   cout << q << endl;
+}
+</pre>

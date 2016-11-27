@@ -1,0 +1,61 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">AIPLAN:Credits</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Thanks to those providing images, movie clips and other resources for the AIPLAN MOOC.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Course_Logo"><span class="tocnumber">1</span> <span class="toctext">Course Logo</span></a></li>
+<li class="toclevel-1"><a href="#Course_Videos"><span class="tocnumber">2</span> <span class="toctext">Course Videos</span></a></li>
+<li class="toclevel-1"><a href="#Course_Slides"><span class="tocnumber">3</span> <span class="toctext">Course Slides</span></a></li>
+<li class="toclevel-1"><a href="#Resource_Usage_Requirements"><span class="tocnumber">4</span> <span class="toctext">Resource Usage Requirements</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Course_Logo">Course Logo</span></h2>
+<p>Course logo images courtesy of <a rel="nofollow" class="external text" href="http://www.jpl.nasa.gov/imagepolicy/">NASA</a>, ESA, ArianeSpace, machu, and <a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/projects.html">AIAI projects</a> at the University of Edinburgh.</p>
+<p><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/File:Asimo%26p3.jpg">ASIMO Image</a> from Wikipedia (Accessed: 31-Jul-2012; image taken by machu on August 16, 2005 and posted on Flickr by user "machu", originally from <a rel="nofollow" class="external autonumber" href="http://www.flickr.com/photos/machu/39761200/">[1]</a>).</p>
+<h2> <span class="mw-headline" id="Course_Videos">Course Videos</span></h2>
+<p>Planner demonstration video clips and Freddy-II robot footage from <a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/projects.html">AIAI projects</a> used with permission of Director of <a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/">AIAI</a> at the University of Edinburgh.</p>
+<p>Shakey Robot image and video clips used with permission of SRI International.</p>
+<p>Filming of Freddy-II robot at the National Museum of Scotland with permission of National Museum of Scotland (Kirsty Tough and Tacye Phillipson).</p>
+<p>"Story of A* and STRIPS" video and images used with permission of <a rel="nofollow" class="external text" href="http://ai.stanford.edu/~nilsson/">Nils Nilsson</a>.</p>
+<p>"SIPE-2" video from <a rel="nofollow" class="external text" href="http://www.ai.sri.com/people/wilkins/">David Wilkins</a>, SRI International.</p>
+<p>"Heuristic Search Planning" video from Jörg Hoffmann, Foundations of Artificial Intelligence Group, Saarland University, Saarbrücken, Germany.</p>
+<p>"AI Planning for Space" video from Brad Clement, Jet Propulsion Laboratory, NASA. Images: NASA, ESA, ArianeSpace.</p>
+<h2> <span class="mw-headline" id="Course_Slides">Course Slides</span></h2>
+<p>Images from <a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/projects.html">AIAI projects and web site</a> used with permission of Director of <a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/">AIAI</a> at the University of Edinburgh.</p>
+<p><a rel="nofollow" class="external text" href="http://commons.wikimedia.org/wiki/File%3AEinstein%5F1921%5Fby%5FF%5FSchmutzer.jpg">Albert Einstein Image</a> by Ferdinand Schmutzer from Wikimedia Commons (Accessed 13-Jan-2013).</p>
+<p>RoboCup Rescue Grand Challenge image copyright &#169; 2001, Association for the Advancement of Artificial Intelligence (<a rel="nofollow" class="external text" href="http://www.aaai.org">aaai.org</a>) and used with permisison. From Kitano, H. and Tadokoro, S. (2001) "RoboCup Rescue: A Grand Challenge for Multiagent and Intelligent Systems", AI Magazine, Vol.22, No. 1, pp 39-52, Spring, 2001. 
+<a rel="nofollow" class="external autonumber" href="http://www.aaai.org/ojs/index.php/aimagazine/article/view/1542">[2]</a></p>
+<p>NASA Deep Space 1 Remote Agent Experiment slides courtesy of NASA Ames and used with permission of David Kortencamp and Gregory Dorais (original source <a rel="nofollow" class="external autonumber" href="http://www.traclabs.com/~korten/tutorial/arc.pdf">[3]</a>).</p>
+<p>Other space mission images courtesy of <a rel="nofollow" class="external text" href="http://www.jpl.nasa.gov/imagepolicy/">NASA</a>, ESA and ArianeSpace.</p>
+<p><a rel="nofollow" class="external text" href="http://www.ai.sri.com/~sipe/">SIPE/SIPE-2</a> technical features list and screen shots from <a rel="nofollow" class="external text" href="http://www.ai.sri.com/people/wilkins/">David Wilkins</a>, SRI International.</p>
+<p><a rel="nofollow" class="external text" href="http://www.cs.umd.edu/projects/shop/">SHOP/SHOP-2</a> images of planner search tree, bridge play application and manufacturing automation machinery from <a rel="nofollow" class="external text" href="http://www.cs.umd.edu/class/spring2012/cmsc722/slides/chapter01.pdf">CMSC722 Planning Course</a> presentation by <a rel="nofollow" class="external text" href="http://www.cs.umd.edu/~nau/">Dana Nau</a>, University of Maryland, Creative Commons Attribution-NonCommercial-ShareAlike License (<a rel="nofollow" class="external text" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA</a>).</p>
+<h2> <span class="mw-headline" id="Resource_Usage_Requirements">Resource Usage Requirements</span></h2>
+<p>Images from <a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/projects.html">AIAI projects and web site</a> used for this course with permission of Director of <a rel="nofollow" class="external text" href="http://www.aiai.ed.ac.uk/">AIAI</a> at the University of Edinburgh. Many are copyright of their originators. No further reuse rights are implied.</p>
+<p>National Aeronautics and Space Administration (NASA) space mission image use policy is described at <a rel="nofollow" class="external free" href="http://www.jpl.nasa.gov/imagepolicy/">http://www.jpl.nasa.gov/imagepolicy/</a>.</p>
+<p>European Space Agency (ESA) images may be used for educational or informational purposes.
+The publicly released ESA images may be reproduced without fee, on the following conditions:
+<ul><li> Credit ESA as the source of the images: Examples: Photo: ESA; Photo: ESA/Cluster;
+</li><li> ESA images may not be used to state or imply the endorsement by ESA or any ESA employee of a commercial product, process or service, or used in any other manner that might mislead.
+</li><li> If an image includes an identifiable person, using that image for commercial purposes may infringe that person‘s right of privacy, and separate permission should be obtained from the individual.
+</li></ul>
+If these images are to be used in advertising or any commercial promotion, layout and copy must be submitted to ESA beforehand for approval to: multimedia@esa.int</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=AIPLAN:Credits&amp;oldid=33369">https://share.coursera.org/wiki/index.php?title=AIPLAN:Credits&amp;oldid=33369</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

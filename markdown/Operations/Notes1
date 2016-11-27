@@ -1,0 +1,113 @@
+
+
+## Performance Measures of an Operation
+
+
+###Demand
+
+For services: $$\frac{\displaystyle{\mathbf{\text{1}}}}{\displaystyle{\mathbf{\text{a}}}}$$, where a = inter-arrival time
+
+###Inventory 
+
+The number of flow units in the process at a given moment in time [units]
+
+###Processing time
+
+How long a worker spends on a task [units of time]
+
+###Capacity
+
+How many units a worker can produce or how many customers a server can serve in a given time
+
+Cap = $$\frac{\displaystyle{\mathbf{\text{1}}}}{\displaystyle{\mathbf{\text{Processing Time}}}}$$
+
+If there are m workers/servers: Capacity = m / processing time
+
+###Bottleneck
+
+Process step with lowest capacity
+
+###Process Capacity
+
+Capacity of the bottleneck OR min{Capacity}
+
+###Flow rate
+
+= Minimum between demand and process capacity [units/time]
+
+###Utilization
+
+= $$\frac{\displaystyle{\mathbf{\text{Flow Rate}}}}{\displaystyle{\mathbf{\text{Capacity}}}}$$
+
+_Implied Utilization_ = Demand / Capacity [%] (differently from simple utilization, _implied utilization_ can be more than 100%)
+
+In a _service operation_ the flow rate is typically given by the demand. Since demand = 1/a (where a is the inter-arrival time) and capacity = m/p (where m is the number of workers and p is the processing time):
+
+u = 1/a / m/p => u = 1/a × p/m => __u = p/a×m__
+
+###Cycle Time
+
+= 1/Flow Rate [units of time]
+
+###Idle Time
+
+= Cycle Time - Processing Time [units of time]
+
+###Flow time
+
+The amount of time it takes a flow unit to go through the process [units of time/units of product or # of customers being served]
+
+### Per Unit Inventory Costs
+
+= Anual Inventory Costs / Inventory Turns [%]
+
+###Little's Law
+
+Inventory = Flow Rate × Flow Time  [units of product]
+
+###Inventory turn
+
+= Cost of goods sold / Inventory [adimensional]
+
+## Labour Measures
+
+### Labour Content
+
+Total amount of labour (in units of time) required by a process
+
+### Average Labour Utilization
+
+Total Labour Content / (Total Labour Content + Total Idle Time) 
+
+###Direct labour cost 
+
+= Wage rate per time unit / Flow rate per time unit
+
+## Balancing the Line
+
+### Takt Time
+
+= available time / demand
+
+### Target Manpower
+
+= Labour Content / Takt Time [adimensional]
+
+_Note: Make sure the same unit of time (s/m/h/etc) is used for both labour content and takt time_
+
+##Queue Analysis
+
+###Utilization
+
+u = p/a×m, where p is the processing time, a is the inter-arrival time (the reciprocal of the flow rate) and m is the number of resources
+
+_Note: u must be <= 1; any value of u > 1 is implied, not actual, utilization, as a resource cannot be utilized at more than 100%_
+
+###Time in queue
+
+Tq = p/m × u^{sqrt[2(m+1)]-1}/1-u × [(CVa^2+CVp^2)/2]
+
+or $${T_q} = \frac{p}{m} \times \frac{{u\sqrt {2(m + 1)}  - 1}}{1 - u} \times \frac{{C{V_a}^2 \times C{V_p}^2}}{2}$$
+
+where CVa = stdev(inter-arrival times)/average(arrival times)
+CVp = stdev(processing times)/average(processing times)

@@ -1,0 +1,102 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Programdesign:InstallingRacket</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Installing_and_Working_with_.5BDr.5DRacket">Installing and Working with &#91;Dr&#93;Racket</span></h1>
+<p>For this course, you need to have the Racket software installed on a computer where you can perform your programming work:</p>
+<ol>
+<li>Download the version of Racket designed for your computer from the <a rel="nofollow" class="external text" href="http://racket-lang.org/">Racket</a> web site.</li>
+<li>Install the Racket software on your computer.</li>
+<li>Start up the DrRacket application (not Racket) for use in the course.</li>
+<li>Become familiar with the settings and the different parts of the DrRacket application.</li>
+<li>Explore the Web resources that are supplied for Racket</li>
+</ol>
+<p>The rest of this page and further pages go through those stages step-by-step.  Skip ahead to other topics, linked above, if you are familiar with this kind of download or want to review a different stage.</p>
+<h2> <span class="mw-headline" id="Choosing_Your_Download">Choosing Your Download</span></h2>
+<p>After reaching the Racket web site with your Web browser, use the Download button there to find the download choices.</p>
+<p><center>
+<p><a href="/wiki/images/9/93/Racket-5.3.6-2013-09-04-1832-DownloadButton.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1832-DownloadButton.png" src="/wiki/images/9/93/Racket-5.3.6-2013-09-04-1832-DownloadButton.png" width="235" height="141" /></a>
+</p>
+</center></p>
+<p>The Racket site will suggest a download for you based on information from the Web browser.</p>
+<p><center>
+<p><a href="/wiki/images/1/12/Racket-5.3.6-2013-09-04-1833-DownloadPage.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1833-DownloadPage.png" src="/wiki/images/1/12/Racket-5.3.6-2013-09-04-1833-DownloadPage.png" width="724" height="442" /></a>
+</p>
+</center></p>
+<p>To see what other downloads are available and determine what might be a better choice for you, click on the pull-down pointer next to the Platform recommendation.</p>
+<p><center>
+<p><a href="/wiki/images/6/61/Racket-5.3.6-2013-09-04-1835-x64-selection.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1835-x64-selection.png" src="/wiki/images/6/61/Racket-5.3.6-2013-09-04-1835-x64-selection.png" width="409" height="278" /></a>
+</p>
+</center></p>
+<p>The full list includes two flavors of Windows, three flavors of Mac OS X, and four flavors of Linux.  You'll need to decide which of these is most suitable for the computer you want to install Racket on.  Often the original recommendation will be appropriate.</p>
+<p>The Windows source, Mac OSX source, and Unix source are not programs to install.  Those three download provides the source code, the programming, that was used to create the Racket programs that the other downloads provide.  They are not needed for this course. </p>
+<h2> <span class="mw-headline" id="Choosing_Windows_Downloads">Choosing Windows Downloads</span></h2>
+<ul>
+<li>Choosing <a href="/wiki/index.php?title=Programdesign:MacOSXRacketInstall&amp;action=edit&amp;redlink=1" class="new" title="Programdesign:MacOSXRacketInstall (page does not exist)"> Macintosh OSX Downloads</a></li>
+<li>Choosing <a href="/wiki/index.php/Programdesign:LinuxRacketInstall" title="Programdesign:LinuxRacketInstall"> Linux OS Downloads</a></li>
+</ul>
+<p>All current desktop versions of Windows will accept, install, and operate Windows (x86, 32-bit) programs.  This is a safe choice for Windows XP, Windows Vista, Windows 7, and Windows 8 (but not Windows RT, which is not a desktop version).  A desktop version of Windows is required to use Racket on Windows at this time.  If you have one of those desktop versions, the x86 versions is always a safe choice.</p>
+<p>The hardware for recent desktop PC systems will also operate x64 programs.  If you have an x64 version of Windows on that PC hardware, the Windows (x64, 64-bit) download will install and operate.  That provides a version of Racket that can employ the full power of 64-bit systems.  The most common versions of x64 Windows are for Windows 7 and Windows 8.  </p>
+<p>An x64 download will not install on an x86 Windows system.  There is no harm done.  Windows will simply refuse to operate the x64 software.</p>
+<p>You can tell whether or not a Windows operating system is for x64 computers using the Control Panel basic System information display.  </p>
+<p>There's not much difference in the download procedure itself.  We'll choose x64 by way of example.</p>
+<ul>
+<li>Prefer the <a href="/wiki/index.php/Programdesign:Win32RacketDownload" title="Programdesign:Win32RacketDownload"> x86 Download</a>?</li>
+</ul>
+<p><center>
+<p><a href="/wiki/images/9/93/Racket-5.3.6-2013-09-04-1836-x64-download.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1836-x64-download.png" src="/wiki/images/9/93/Racket-5.3.6-2013-09-04-1836-x64-download.png" width="403" height="204" /></a>
+</p>
+</center></p>
+<p>Once a platform version is chosen and Download is clicked, the next step is to choose a location to use for the download.</p>
+<p><center>
+<p><a href="/wiki/images/1/1c/Racket-5.3.6-2013-09-04-1839-x64-download.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1839-x64-download.png" src="/wiki/images/1/1c/Racket-5.3.6-2013-09-04-1839-x64-download.png" width="658" height="210" /></a>
+</p>
+</center></p>
+<p>There is no difference in the languages that Racket and DrRacket will work in.  Choose any site that is close to you on the Internet.  If you are on a different continent from any of these sites, choose one on a continent that has the best Internet connectivity with yours.</p>
+<p>Once the download connection is made, your web browser may require additional decisions from you.  For the latest versions of Microsoft Internet Explorer, the download activity appears at the bottom of the browser window.</p>
+<p><center>
+<p><a href="/wiki/images/c/c0/Racket-5.3.6-2013-09-04-1841-x64-download.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1841-x64-download.png" src="/wiki/images/c/c0/Racket-5.3.6-2013-09-04-1841-x64-download.png" width="588" height="100" /></a>
+</p>
+</center></p>
+<p>Although it is possible to download and run the download in one step, it is valuable to download the software first.  That way, it is in a known place where it can be saved in a backup, installed while off-line from the Internet, reinstalled later, installed on more computers, etc.</p>
+<p>If you know where your browser will save the download, clicking Save is sufficient.  </p>
+<p>If you don't know where the download will go, or want to double-check or change the destination, click the pull-down pointer next to the "Save" button.</p>
+<p><center>
+<p><a href="/wiki/images/1/10/Racket-5.3.6-2013-09-04-1843-x64-download.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1843-x64-download.png" src="/wiki/images/1/10/Racket-5.3.6-2013-09-04-1843-x64-download.png" width="264" height="147" /></a>
+</p>
+</center></p>
+<p>When "Save as" is selected, your PC's operating system will offer you a dialog for choosing where the download should be saved.  It starts by showing where it would have saved it automatically.</p>
+<p><center>
+<p><a href="/wiki/images/f/f7/Racket-5.3.6-2013-09-04-1844-x64-download.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1844-x64-download.png" src="/wiki/images/f/f7/Racket-5.3.6-2013-09-04-1844-x64-download.png" width="786" height="451" /></a>
+</p>
+</center></p>
+<p>In this case, the default destination is the Downloads folder of my account on a Windows 8 x64 Desktop system.  I often put programming tools in a different place, but the Downloads folder (obviously unused, here) will be closer to what you might be doing.  </p>
+<p>It is now clear where the browser is going to put the downloaded file.  That's good enough and Save is clicked.</p>
+<p><center>
+<p><a href="/wiki/images/e/e4/Racket-5.3.6-2013-09-04-1846-x64-download.png" class="image"><img alt="Racket-5.3.6-2013-09-04-1846-x64-download.png" src="/wiki/images/e/e4/Racket-5.3.6-2013-09-04-1846-x64-download.png" width="562" height="94" /></a>
+</p>
+</center></p>
+<p>After the 52 MB download is delivered to the PC, there will be a security scan as well as verification of the download.  If all is well, there will be notification that the download completed.  </p>
+<p>It is now possible to go ahead and run the downloaded program and install Racket.  Alternatively, now that it is known where to find the file, it can be installed later.</p>
+<p><center>
+<p><b>To Be Continued</b>
+</p>
+</center></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Programdesign:InstallingRacket&amp;oldid=15854">https://share.coursera.org/wiki/index.php?title=Programdesign:InstallingRacket&amp;oldid=15854</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

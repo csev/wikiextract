@@ -1,0 +1,99 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Large Scale Machine Learning</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Learning_with_Large_Datasets"><span class="tocnumber">1</span> <span class="toctext">Learning with Large Datasets</span></a></li>
+<li class="toclevel-1"><a href="#Stochastic_Gradient_Descent"><span class="tocnumber">2</span> <span class="toctext">Stochastic Gradient Descent</span></a></li>
+<li class="toclevel-1"><a href="#Mini-Batch_Gradient_Descent"><span class="tocnumber">3</span> <span class="toctext">Mini-Batch Gradient Descent</span></a></li>
+<li class="toclevel-1"><a href="#Stochastic_Gradient_Descent_Convergence"><span class="tocnumber">4</span> <span class="toctext">Stochastic Gradient Descent Convergence</span></a></li>
+<li class="toclevel-1"><a href="#Online_Learning"><span class="tocnumber">5</span> <span class="toctext">Online Learning</span></a></li>
+<li class="toclevel-1"><a href="#Map_Reduce_and_Data_Parallelism"><span class="tocnumber">6</span> <span class="toctext">Map Reduce and Data Parallelism</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">7</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Learning_with_Large_Datasets">Learning with Large Datasets</span></h1>
+<p>We mainly benefit from a very large dataset when our algorithm has high variance when $$m$$ is small. Recall that if our algorithm has high bias, more data will not have any benefit.</p>
+<p>Datasets can often approach such sizes as $$m = 100,000,000$$. In this case, our gradient descent step will have to make a summation over all one hundred million examples. We will want to try to avoid this -- the approaches for doing so are described below.</p>
+<h1> <span class="mw-headline" id="Stochastic_Gradient_Descent">Stochastic Gradient Descent</span></h1>
+<p>Stochastic gradient descent is an alternative to classic (or batch) gradient descent and is more efficient and scalable to large data sets.</p>
+<p>Stochastic gradient descent is written out in a different but similar way:</p>
+<p>$$
+cost(\theta,(x^{(i)}, y^{(i)})) = \dfrac{1}{2}(h&#95;{\theta}(x^{(i)}) - y^{(i)})^2
+$$</p>
+<p>The only difference in the above cost function is the elimination of the $$m$$ constant within $$\dfrac{1}{2}$$.</p>
+<p>$$
+J&#95;{train}(\theta) = \dfrac{1}{m} \displaystyle \sum&#95;{i=1}^m cost(\theta, (x^{(i)}, y^{(i)}))
+$$</p>
+<p>$$J&#95;{train}$$ is now just the average of the cost applied to all of our training examples.</p>
+<p>The algorithm is as follows</p>
+<ol>
+<li>Randomly 'shuffle' the dataset</li>
+<li>For $$i = 1\dots m$$</li>
+</ol>
+<blockquote>
+  <p>$$\Theta&#95;j&#160;:= \Theta&#95;j - \alpha (h&#95;{\Theta}(x^{(i)}) - y^{(i)}) \cdot x^{(i)}&#95;j$$ (for $$j = 0,\dots,n$$)</p>
+</blockquote>
+<p>This algorithm will only try to fit one training example at a time.</p>
+<p>This way we can make progress in gradient descent without having to scan all $$m$$ training examples first. </p>
+<p>Stochastic gradient descent will be unlikely to converge at the global minimum and will instead wander around it randomly, but usually yields a result that is close enough.</p>
+<p>Stochastic gradient descent will usually take 1-10 passes through your data set to get near the global minimum.</p>
+<h1> <span class="mw-headline" id="Mini-Batch_Gradient_Descent">Mini-Batch Gradient Descent</span></h1>
+<p>Mini-batch gradient descent can sometimes be even faster than stochastic gradient descent. Instead of using all $$m$$ examples as in batch gradient descent, and instead of using only 1 example as in stochastic gradient descent, we will use some in-between number of examples $$b$$.</p>
+<p>Typical values for $$b$$ range from 2-100 or so.</p>
+<p>For example, with $$b = 10$$ and $$m = 1000$$:</p>
+<ul>
+<li>Repeat: 
+
+<ul>
+<li>For $$i = 1,11,21,31,\dots,991$$:</li>
+<li>$$\theta&#95;j&#160;:= \theta&#95;j - \alpha \dfrac{1}{10} \displaystyle \sum&#95;{k=i}^{i+9} (h&#95;\theta(x^{(k)}) - y^{(k)})x&#95;j^{(k)}$$ (for each $$j = 0, \dots, n$$)</li>
+</ul></li>
+</ul>
+<p>We're simply summing over ten examples at a time.</p>
+<p>The advantage of computing more than one example at a time is that we can use <strong>vectorized</strong> implementations over the $$b$$ examples.</p>
+<h1> <span class="mw-headline" id="Stochastic_Gradient_Descent_Convergence">Stochastic Gradient Descent Convergence</span></h1>
+<p>How do we choose the learning rate $$\alpha$$ for stochastic gradient descent? Also, how do we debug stochastic gradient descent to make sure it is getting as close as possible to the global optimum?</p>
+<p>One strategy is to plot the average cost of the hypothesis applied to every 1000 or so 
+ training examples. We can compute and save these costs during the gradient descent iterations.</p>
+<p>With a smaller learning rate, it is <strong>possible</strong> that you may get a slightly better solution with stochastic gradient descent. That is because stochastic gradient descent will oscillate and jump around the global minimum, and it will make smaller random jumps with a smaller learning rate.</p>
+<p>If you increase the number of examples you average over to plot the performance of your algorithm, the plot's line will become smoother. </p>
+<p>With a very small number of examples for the average, the line will be too noisy and it will be difficult to find the trend.</p>
+<p>One strategy for trying to actually converge at the global minimum is to <strong>slowly decrease $$\alpha$$ over time</strong>. For example $$\alpha = \dfrac{const1}{iterationNumber + const2}$$. </p>
+<p>However, this is not often done because people don't want to have to fiddle with even more parameters.</p>
+<h1> <span class="mw-headline" id="Online_Learning">Online Learning</span></h1>
+<p>With a continuous stream of users to a website, we can run an endless loop that gets $$(x,y)$$, where we collect some user actions for the features in $$x$$ to predict some behavior $$y$$.</p>
+<p>You can update $$\theta$$ for each individual $$(x,y)$$ pair as you collect them. This way, you can adapt to new pools of users, since you are continuously updating theta.</p>
+<h1> <span class="mw-headline" id="Map_Reduce_and_Data_Parallelism">Map Reduce and Data Parallelism</span></h1>
+<p>We can divide up batch gradient descent and dispatch the cost function for a subset of the data to many different machines so that we can train our algorithm in parallel.</p>
+<p>You can split your training set into $$z$$ subsets corresponding to the number of machines you have. On each of those machines calculate $$\displaystyle \sum&#95;{i=p}^{q}(h&#95;{\theta}(x^{(i)}) - y^{(i)}) \cdot x&#95;j^{(i)}$$, where we've split the data starting at $$p$$ and ending at $$q$$.</p>
+<p>MapReduce will take all these dispatched (or 'mapped') jobs and 'reduce' them by calculating:</p>
+<p>$$
+\Theta&#95;j&#160;:= \Theta&#95;j - \alpha \dfrac{1}{z}(temp&#95;j^{(1)} + temp&#95;j^{(2)} + \cdots + temp&#95;j^{(z)})$$</p>
+<p>For all $$j = 0, \dots, n$$. </p>
+<p>This is simply taking the computed cost from all the machines, calculating their average, multiplying by the learning rate, and updating theta.</p>
+<p>Your learning algorithm is MapReduceable if it can be <em>expressed as computing sums of functions over the training set</em>. Linear regression and logistic regression are easily parallelizable.</p>
+<p>For neural networks, you can compute forward propagation and back propagation on subsets of your data on many machines. Those machines can report their derivatives back to a 'master' server that will combine them.</p>
+<p><hr />
+Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Large_Scale_Machine_Learning&amp;oldid=32606">https://share.coursera.org/wiki/index.php?title=ML:Large_Scale_Machine_Learning&amp;oldid=32606</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li><li><a href="/wiki/index.php/Category:ML" title="Category:ML">ML</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,131 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Interactivepython:MiniProjects:Week8</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_8_Mini-project"><span class="tocnumber">1</span> <span class="toctext">Week 8 Mini-project</span></a>
+<ul>
+<li class="toclevel-2"><a href="#RiceRocks_.28Asteroids.29"><span class="tocnumber">1.1</span> <span class="toctext">RiceRocks (Asteroids)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Mini-project_development_process"><span class="tocnumber">1.1.1</span> <span class="toctext">Mini-project development process</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Phase_one_-_Multiple_rocks"><span class="tocnumber">1.1.1.1</span> <span class="toctext">Phase one - Multiple rocks</span></a></li>
+<li class="toclevel-4"><a href="#Phase_two_-_Collisions"><span class="tocnumber">1.1.1.2</span> <span class="toctext">Phase two - Collisions</span></a></li>
+<li class="toclevel-4"><a href="#Phase_three_-_Missiles"><span class="tocnumber">1.1.1.3</span> <span class="toctext">Phase three - Missiles</span></a></li>
+<li class="toclevel-4"><a href="#Phase_four_-_Collisions_revisited"><span class="tocnumber">1.1.1.4</span> <span class="toctext">Phase four - Collisions revisited</span></a></li>
+<li class="toclevel-4"><a href="#Phase_five_-_Finish_it_off"><span class="tocnumber">1.1.1.5</span> <span class="toctext">Phase five - Finish it off</span></a></li>
+<li class="toclevel-4"><a href="#Bonus"><span class="tocnumber">1.1.1.6</span> <span class="toctext">Bonus</span></a></li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Grading_rubric_-_13_pts_.28scaled_to_100_pts.29"><span class="tocnumber">1.1.2</span> <span class="toctext">Grading rubric - 13 pts (scaled to 100 pts)</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_8_Mini-project">Week 8 Mini-project</span></h1>
+<h2> <span class="mw-headline" id="RiceRocks_.28Asteroids.29">RiceRocks (Asteroids)</span></h2>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=24">original source</a></p>
+<p>For our last mini-project, we will complete the implementation of <em>RiceRocks</em>,
+an updated version of <em>Asteroids</em>, that we began last week. You may start with
+either your code or the <a rel="nofollow" class="external text" href="http://www.codeskulptor.org/#examples-ricerocks_template.py">template</a>
+which includes a full implementation of Spaceship and will be released immediately after the deadline for
+the Spaceship mini-project (by making the preceding link live). If you start with your own code,
+you should add the splash screen image that you dismiss with a mouse click before starting this
+mini-project. We strongly recommend using Chrome for this mini-project since Chrome's superior
+performance will become apparent when you program attempts to draw dozens of sprites.</p>
+<h3> <span class="mw-headline" id="Mini-project_development_process">Mini-project development process</span></h3>
+<p>At the end of this project, your game will have multiple rocks and multiple missiles. You will lose a life
+if your ship collides with a rock and you will score points if your missile collides with a rock. You will
+keep track of the score and lives remaining and end the game at the proper time. You may optionally add
+animated explosions when there is a collision.</p>
+<h4> <span class="mw-headline" id="Phase_one_-_Multiple_rocks">Phase one - Multiple rocks</span></h4>
+<p>For this phase, you will keep a set of rocks and spawn new rocks into this set. This requires the following steps:</p>
+<ol>
+<li>Remove "a&#95;rock" and replace it with "rock&#95;group". Initialize the rock group to an empty set. Modify your rock spawner to create a new rock (an instance of a Sprite object) and add it to the rock&#95;group.</li>
+<li>Limit the total number of rocks in the game at any one time. We suggest you limit it to 12. With too many rocks the game becomes less fun and the animation slows down significantly.</li>
+<li>Create a helper function "process&#95;sprite&#95;group". This function should take a set and a canvas and call the update and draw methods for each sprite in the group.</li>
+<li>Call process&#95;sprite&#95;group function on rock&#95;group in the draw handler.</li>
+</ol>
+<h4> <span class="mw-headline" id="Phase_two_-_Collisions">Phase two - Collisions</span></h4>
+<p>For this phase, you will detect collisions between the ship and a rock. Upon a collision, the rock should be
+destroyed and the player should lose a life. To implement ship-rock collisions, you need to do the following:</p>
+<ol>
+<li>Add a "collide" method to the Sprite class. This should take an"other&#95;object" as an argument and return True if there is a collision or False otherwise. For now, this other object will always be your ship, but we want to be able to use this collide method to detect collisions with missiles later, as well. Collisions can be detected using the radius of the two objects. This requires you to implement methods "get&#95;position" and "get&#95;radius" on both the Sprite and Ship classes.</li>
+<li>Implement a "group&#95;collide" helper function. This function should take a set "group" and an a sprite "other&#95;object". It should check for collisions between other&#95;object and every element of group. If there is a collision, the colliding object should be removed from the group. The function should return the number of collisions. Be sure to use the "collide" method from part 1 on the sprites in the group to accomplish this.</li>
+<li>In the draw handler, use the group&#95;collide helper to determine if the ship hit any of the rocks. If so, decrease the number of lives by one. Note that you could have negative lives at this point. Don't worry about that yet.</li>
+</ol>
+<p>At this point, you should have a game of "dodge 'em". You can fly around trying to avoid the rocks!</p>
+<h4> <span class="mw-headline" id="Phase_three_-_Missiles">Phase three - Missiles</span></h4>
+<p>For this phase, you will keep a set of missiles and spawn new missiles into this set when firing using the space bar. This requires the following steps:</p>
+<ol>
+<li>Remove "a&#95;missile" and replace it with "missile&#95;group". Initialize the missile group to an empty set. Modify your shoot method of my&#95;ship to create a new missile (an instance of the Sprite class) and add it to the missile&#95;group. Make sure that your firing sound plays each time a missile is spawned.</li>
+<li>In the draw handler, use your helper function process&#95;sprite&#95;group to process missile&#95;group. While you can now shoot multiple missiles, you will notice that they stick around forever. To fix this, we need to modify the Sprite class and the process&#95;sprite&#95;group function.</li>
+<li>In the update method of the Sprite class, increment the age of the sprite every time update is called. If the age is greater than or equal to the lifespan of the sprite, then we want to remove it. So, return True(meaning we want to keep it) if the age is less than the lifespan and False (meaning we want to remove it) otherwise.</li>
+<li>Modify process&#95;sprite&#95;group to check the return value of update. If it returns False, remove the sprite from the group.</li>
+</ol>
+<h4> <span class="mw-headline" id="Phase_four_-_Collisions_revisited">Phase four - Collisions revisited</span></h4>
+<p>Now, we want to destroy rocks when they are hit by a missile. We can't quite use group&#95;collide, because we want to check for collisions between two groups. All we need to do is add one more helper function:</p>
+<ol>
+<li>Implement a final helper function group&#95;group&#95;collide that takes two groups of objects as input. Group&#95;group&#95;collide should iterate through the elements of the first group using a for-loop and then call group&#95;collide with each of these elements on the second group. Group&#95;group&#95;collide should return the number of elements in the first group that collide with the second group as well as delete these elements in the first group.</li>
+<li>Call group&#95;group&#95;collide in the draw handler to detect missile/rock collisions. Increment the score by the number of missile collisions.</li>
+</ol>
+<h4> <span class="mw-headline" id="Phase_five_-_Finish_it_off">Phase five - Finish it off</span></h4>
+<p>You now have a mostly working version of <em>RiceRocks</em>!!! Let's add a few final touches.</p>
+<ol>
+<li>Start the number of lives at 3.</li>
+<li>When the number of lives becomes 0, reset the game. In particular, set the flag started to False, destroy all rocks and prevent any more rocks for spawning until the game is restarted.</li>
+<li>When the game restarts, make sure the lives and the score are properly reset.Starting spawning rocks again. Restart the soundtrack.</li>
+<li>When you spawn rocks, you want to make sure they are some distance away from the ship. Otherwise, you can die when a rock spawns on top of you, which isn't much fun. Experiment with varying the velocity of rocks based on the score to make gameplay get more difficult as the game progresses.</li>
+<li>Tweak any constants that you have to make the game play the way you want.</li>
+</ol>
+<p>Congratulations! You have completed the assignment. Enjoy playing your game!!!</p>
+<h4> <span class="mw-headline" id="Bonus">Bonus</span></h4>
+<p>The following will not be graded. Feel free to try this, but do not break any of the other game functionality. We strongly recommend that you save your work before doing this and keep track of it, so you can submit a working version of the first five phases if you end up breaking your game trying to add more features.One thing that is missing in your game is explosions when things collide. We have provided a tiled explosion image that you can use to create animated explosions. To get things working, you will need to do a few things:</p>
+<ol>
+<li>In the draw method of the Sprite class, check if "self.animated" is True. If so, then choose the correct tile in the image based on the age. The image is tiled horizontally. If self.animated is False, it should continue to draw the sprite as before.</li>
+<li>Create an "explosion&#95;group" global variable and initialize it to an empty set.</li>
+<li>In group&#95;collide, if there is a collision, create a new explosion (an instance of the Sprite class)and add it to the explosion&#95;group. Make sure that each explosion plays the explosion sound.</li>
+<li>In the draw handler, use process&#95;sprite&#95;group to process explosion&#95;group.</li>
+</ol>
+<p>You should now have explosions working!</p>
+<h3> <span class="mw-headline" id="Grading_rubric_-_13_pts_.28scaled_to_100_pts.29">Grading rubric - 13 pts (scaled to 100 pts)</span></h3>
+<p>Note that the animated explosions are not graded. However, please add comments concerning the quality of the explosions and general gameplay in the free comments at the bottom of the page. Please assess your peer's mini-projects in Chrome. <b>If, for some reason, you must use Firefox or another browser (or had issues playing sounds in Chrome), please give your peers full credit on the sound-related rubric items.</b>
+<ul><li> 1 pt - The program spawns multiple rocks.
+</li><li> 1 pt - The program correctly determines whether the ship collides with a rock.
+</li><li> 1 pt - The program removes a rock when the ship collides with a rock.
+</li><li> 1 pt - The number of lives decreases by one when the ship collides with a rock.
+</li><li> 1 pt - The program spawns multiple missiles.
+</li><li> 1 pt - The program plays the firing sound when each missile is spawned.
+</li><li> 1 pt - The program removes a missile after some fixed time period.
+</li><li> 1 pt - The program correctly determines whether a missile and a rock collide.
+</li><li> 1 pt - The program removes missiles and rocks that collide.
+</li><li> 1 pt - The score is updated appropriately after missile/rock collisions.
+</li><li> 1 pt - When the lives go to zero, the splash screen reappears and all rocks are removed.
+</li><li> 1 pt - When the splash screen is clicked, the lives are reset to 3, score is reset to zero and the soundtrack restarts.
+</li><li> 1 pt - The game spawns rocks only while the game is started.</p>
+</li></ul>
+
+<hr />
+<p><a href="/wiki/index.php/Interactivepython:MiniProjects" title="Interactivepython:MiniProjects">MiniProjects</a></p>
+<p><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week8&amp;oldid=18961">https://share.coursera.org/wiki/index.php?title=Interactivepython:MiniProjects:Week8&amp;oldid=18961</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

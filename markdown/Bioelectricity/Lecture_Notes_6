@@ -1,0 +1,193 @@
+# Bioelectricity Week 6: Propagation  
+[[Bioelectricity:Week 6 transcripts | Edited Transcripts]]  
+[[Bioelectricity:Main | Main Page]]  
+    
+**Learning Objectives**  
+* Identify the differences between the propagation pattern following sub-threshold versus threshold stimuli.
+* Compute the changes in transmembrane potentials and currents from one time to a short time later.  
+* Identify the outcome of stimulating a fiber at both ends.  
+* Quantify the interval after propagation following one stimulus to the time when there will be another excitation wave following a 2nd stimulus.  
+* Explain why "propagation" is different from "movement."  
+  
+---  
+  
+Topics this weeks:  
+A) Propagation in time and space  
+* Observe propogation  
+B) Propagation currents and velocity  
+* Analytical
+* Now that we see it, what do we make out of it?  
+  
+Train system: -- Train is moving  
+  
+1. Introduction to week 6  
+2. Sub-threshold stimulation  
+3. 2x threshold stimulation, time  
+4. 2x threshold stimulation, space  
+5. Stimulation at both ends  
+6. S1-S2 stimulation, varying interval  
+7. Problem session , excitation waves.  
+8. Propagation, not movement  
+9. Axial currents as stimulus currents  
+10. The equation for velocity changes.  
+11. Problem session, change in velocity  
+12. Week 6 in review  
+  
+### Introduction to week 6  
+A) Propagation in time and space  
+* Observe propogation  
+B) Propagation currents and velocity  
+* Analytical
+* Now that we see it, what do we make out of it?  
+  
+Train system: -- Train is moving    
+  
+---  
+### Sub-threshold stimulation  
+[[File:BE-week6-stimulation-setup.png]]
+**Experimental setup**  
+* Long cylinder with active membrane  
+* Stimulus electrodes R (on the left) and S (on the right)    
+* Measurement electrodes I (on the left) and J (in the middle of the fiber)    
+* If one stimulates at R, does one see a response at electrode I, and then a propagated response at electrode J?  
+  
+**Subthreshold vm response**  
+* Small stim makes a little blip at R and nothing at J  
+  
+---  
+### 2x threshold stimulation, time  
+**Stimulus sub threshold**    
+  
+**Stimulus just above threshold**  
+  
+**Stimulus 2x threshold**  
+* At electrode I,diminished latency.  
+* At electrode J, vm rises from baseline near 6000  
+* Stim amplitude x2 but AP about the same. What?  
+  
+**Sub Threshold, Simulation Duration 10K
+* Deflection at electrode I but nothing at J  
+* AP at electrode I and another AP at electrode J about 5.5 msec later.  
+* Does a bigger stimulus make propagation faster?  
+  
+**2x Threshold, Simulation Duration 10K**  
+Shorter latency at electrode I, Propagation to electrode J occurs after a similar interval, ie, not faster.  
+  
+---  
+### 2x threshold stimulation, space  
+**Vm(t) (temporal) review**  
+  
+**Vm(x) (spatial) along axis at 2 times**  
+* Why does the spatial wave form seem turned the wrong way?  
+  
+**Vm(x) with fiber sketch**  
+* Now there is vertical alignment  
+  
+**excitation waves?**  
+* How many excitation waves are present on the fiber?  
+  
+**Vm spatial along axis**  
+* Where is the peak axial current?  
+* In which direction is that current?  
+* Where are peak sources and sinks along the membrane?  
+  
+---  
+### Stimulation at both ends  
+**Stimulus at right end, S**  
+Red trace comes from electrode on left, at I  
+  
+**Simultaneous stimulus at both ends**   
+* Why is there no 2nd red AP at the later time?
+* Think string of firecrackers  
+  
+---  
+### S1-S2 stimulation, varying interval  
+**S1_S2_15 msec**  
+* As expected, each stimulus is followed by APs  
+  
+**S1_S2_9 msec**  
+* 1st stim gives APs 2nd gives none  
+* Why?  
+  
+**Why 2nd gives none**
+At end of 2nd stim:  
+  
+**No 2nd AP, summary**  
+* For the stimulus to produce an action potential, at the end of the stimulus INa has to be greater than IK, so that Vm keeps on rising.  
+* That occurs in the 1st stimulus.  
+  
+At the end of the 2nd stimulus, the situation is that
+* INa is lower than at the end of the 1st, because m is lower and h is about the same.  
+* IK is higher than at the end of the 1st stimulus, because n is higher  
+* So INa does not exceed IK at the end of the 2nd stimulus  
+* Consequently, there is no subsequent Vm rise nor is there a subsequent 2nd AP.  
+  
+**little question**  
+Why is m so much lower at the end of the 2nd stimulus, as compared to the end of the 1st?
+The 2 reasons are:  
+  
+---  
+### Problem session , excitation waves.  
+**How many Excitation Waves? A&B**  
+A. ..are present at the time of the green spatial plot?  
+B. .. are present at the time of the brown spatial plot?  
+  
+---  
+### Propagation, not movement  
+
+---  
+### Axial currents as stimulus currents  
+**Where is the peak axial I?**  
+* Where is the peak axial current?
+* In which direction is that current?
+  
+Ii = (Vm1 – Vm2) / Ri  
+  
+**Where are new APs being born?**  
+* Where are new APs being created?
+* That requires a stimulus current into tissue that is “ready” to excite.  
+  
+**Where is the stimulator?**  
+* If tissue out in the middle is being stimulated, then where is the stimulator?  
+* There are no wires going out there.  
+
+---  
+### The equation for velocity changes.  
+**Derivation of velocity’s relationship to diameter**  
+* Symbol θ is velocity.  
+* More detail in Plonsey-Barr Bioelectricity 3E, page 180  
+
+---  
+### Problem session, change in velocity  
+Movie of Giant Squid in Action  
+Start the imagination machine  
+Movie at museum of natural history, washington, dc, usa  
+  
+**velocity -Q**  
+A squid plans to find food in a more dangerous location. So as to be a little quicker in escaping from predators the squid wants to make propagation along its giant axon go 3 times as fast. Unfortunately, the squid has no ability to change the axon membrane itself, nor its surroundings, but the squid can change the axon’s diameter. To achieve 3x velocity, the squid needs to make the axon’s new diameter, in relation to the present one:
+I. (a) 1/9th as much (b) 1/3rd as much (c) 3x as much (d) 9x as much  
+II. Why wouldn’t this change be good for all squids, all the time?  
+  
+---  
+### Week 6 in review
+* A sub threshold rectangular current stimulus produces a voltage deflection at the site of stimulation, but there is nothing propagated.  
+  
+: “Put in a pulse and it goes down the fiber” is not (always) true.  
+  
+* A threshold (or larger) stimulus initiates propagated APs.  
+* Increasing the magnitude of the stimulus does not increase propagation velocity.  
+* Stimulating from both ends excites in both directions until collision in the center.  
+* There is no pass through (stored energy has been used)  
+* Stimuli at a15msec interval initiates an AP following a 2nd stimulus,  
+* but at an interval of 9 msec there is no AP following the 2nd.  
+* The velocity is higher in fibers that have a larger diameter, other things being the same.  
+  
+**All**  
+1. A sub threshold rectangular current stimulus produces a voltage deflection at the site of stimulation, but there is nothing propagated.  
+2. A threshold (or larger) stimulus initiates propagated APs.  
+3. Increasing the magnitude of the stimulus does not increase propagation velocity.  
+4. Stimulating from both ends excites in both directions until collision in the center.   There is no pass through (stored energy has been used)  
+5. Stimuli at 15msec intervals initiates an AP following each one, but at an interval of 9 msec there is no AP following the 2nd stimulus.  
+6. The velocity is higher in fibers that have a larger diameter, other things being the same.  
+  
+[[Bioelectricity:Main | Main Page]]

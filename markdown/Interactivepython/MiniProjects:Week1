@@ -1,0 +1,106 @@
+#Week 1 Mini-project
+##Rock-paper-scissors-lizard-Spock
+<a href="https://class.coursera.org/interactivepython-2012-001/human_grading/view?assessment_id=11">original source</a>
+
+Rock-paper-scissors is a hand game that is played by two people. The players count to three in unison and simultaneously "throw" one of three hand signals that correspond to rock, paper or scissors.  The winner is determined by the rules:
+
+<ul>
+<li> Rock smashes scissors
+</li><li> Scissors cuts paper
+</li><li> Paper covers rock
+</li></ul>
+
+ Rock-paper-scissors is a surprisingly popular game that many people play seriously (see the <a href="http://en.wikipedia.org/wiki/Rock_paper_scissors">Wikipedia article</a> for details).  Due to the fact that a tie happens around 1/3 of the time, several variants of Rock-Paper-Scissors exist that include more choices to make ties more unlikely.
+
+ Rock-paper-scissors-lizard-Spock (RPSLS) is a variant of Rock-paper-scissors that allows five choices.  Each choice wins against two other choices, loses against two other choices and ties against itself.  Much of RPSLS's popularity is that it has been featured in 3 episodes of the TV series "The Big Bang Theory".  The <a href="http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock">Wikipdeia entry</a> for RPSLS gives the complete description of the details of the game.
+
+ In our first mini-project, we will build a Python function <code>rpsls(guess)</code> that takes as input the string <code> guess</code>, which is one of  <code> "rock", "paper", "scissors", "lizard",</code> or <code>"Spock"</code>. The function then simulates playing a round of Rock-paper-scissors-lizard-Spock by generating its own  random choice from these alternatives and then determining the winner using a simple rule that I will next describe.
+
+ While Rock-paper-scissor-lizard-Spock has a set of ten rules that logically determine who wins a round of RPSLS, coding up these rules would require a large number (5x5=25) of <code> if/elif/else </code> clauses in your mini-project code.  A simpler method for determining the winner is to assign each of the five choices a number:
+
+<ul>
+<li> 0 - rock
+</li><li> 1 - Spock
+</li><li> 2 - paper
+</li><li> 3 - lizard
+</li><li> 4 - scissors
+</li></ul>
+
+ In this expanded list, each choice wins agains the preceding two choices and loses against the following two choices. In all of the mini-projects for this class, I will provide a walk through of the steps involved in building your project to aid its development.  A template for your mini-project is available <a href="http://www.codeskulptor.org/#examples-rpsls_template.py">here</a>.  Please work from this template. 
+
+<h3> Mini-project development process </h3>
+
+<ol>
+<li> Build a helper function <code> name_to_number(name)</code> that converts the string <code> name</code> into a number between 0 and 4 as described above.  This function should use an <code> if/elif/else </code> with 5 cases.  You can use conditions of the form <code>name == 'paper'</code>, etc to distinguish the cases.
+
+</li><li> Next, you should build a second helper function <code>number_to_name(num)</code> that converts a number in the range 0 to 4 into its corresponding guess as a string.
+
+</li><li> Build the first part of the main function <code> rpsls(guess)</code> that converts <code> guess</code> into the number <code>player_number</code> between 0 and 4 using the helper function <code>name_to_number</code>.
+
+</li><li> Build the second part of <code>rpsls(guess)</code> that generates a random number <code>comp_number</code> between 0 and 4 using the function <code>random.randrange()</code>.  I suggest experimenting with <code>randrange</code> in a separate CodeSkulptor window before deciding on how to call it to make sure that you do not accidently generate numbers in the wrong range.
+
+</li><li> Build the last part of <code>rpsls(guess)</code> that determines and prints out the winner.   This test is actually very simple if you apply modular arithmetic (<code>%</code> in Python) to the difference between <code>comp_number</code> and <code>player_number</code>.  If this is not immediately obvious to you, I would suggest reviewing our discussion of remainder / modular arithmetic and experimenting with the remainder operator <code>%</code> in a separate CodeSkulptor window to understand its behavior.
+
+</li><li> Using the helper function <code>number_to_name</code>, you should produce four <code>print</code> statements; print a blank line, print out the player's choice, print out the computer's choice and print out the winner.
+
+</li></ol>
+
+ 
+This will be the only mini-project in the class that is not an
+interactive game.  Since we have not yet learned enough to allow you
+to play the game interactively, you will simply call your
+<code>rpsls</code> function repeatedly in the program with different
+player choices.  You will see that we have provided five such calls at
+the bottom of the template.  Running your program repeatedly should generate different computer guesses and different winners each time. 
+While you are testing, feel free to
+modify those calls, but make sure they are restored when you hand in
+your mini-project, as your peer assessors will expect them to be
+there.
+
+The output of running your program should have the following form:
+
+<code>
+Player chooses rock <br>
+Computer chooses scissors <br>
+Player wins! <br>
+<br>
+Player chooses Spock <br>
+Computer chooses lizard <br>
+Computer wins! <br>
+<br>
+Player chooses paper <br>
+Computer chooses lizard <br>
+Computer wins! <br>
+<br>
+Player chooses lizard <br>
+Computer chooses scissors <br>
+Computer wins!<br>
+<br>
+Player chooses scissors<br>
+Computer chooses Spock<br>
+Computer wins!<br>
+</code>
+
+<h3> Grading rubric - 16 pts total (scaled to 100 pts) </h3> 
+
+Your peers will assess your mini-project according to the rubric given below.  To guide you in determining whether your project satisfies each 
+item in the rubric, please consult the video that demonstrates our implementation of "Rock-paper-scissors-lizard-Spock".  Small deviations from the textual output of our implementation are fine.  You should avoid large deviations (such as using the Python function <code>input</code> to input your guesses). Whether moderate deviations satisfy an item of the grading rubric is at your peers' discretion during their assessment.
+
+Here is a break down of the scoring:
+
+<ul>
+<li> 2 pts - Program implements the function <code>rpsls()</code> and the helper functions <code>name_to_number()</code> with plausible code.  Give partial credit of 1 pt if only the function <code>rpsls()</code> has plausible code. 
+</li><li> 1 pt  - Running program does not throw an error.
+</li><li> 1 pt - Program prints blank lines between games.
+</li><li> 2 pts - Program prints <code>"Player chooses player_guess"</code> where <code>player_guess</code> is a string of the form <code>"rock", "paper", "scissors", "lizard"</code> or <code>"Spock"</code>.  Give 1 pt if program prints out number instead of string.
+</li><li> 2 pts - Program prints <code>"Computer chooses computer_guess"</code> where <code>computer_guess</code> is a string of the form <code>"rock", "paper", "scissors", "lizard"</code> or <code>"Spock"</code>. Give 1 pt if program prints out number instead of string.
+</li><li> 1 pt - Computer's guesses vary between five calls to <code>rpsls()</code> in each run of the program. 
+</li><li> 1 pt - Computer's guesses vary between runs of the program.
+</li><li> 3 pts - Program prints either <code>"Player and computer tie!"</code>, <code>"Player wins!"</code> or <code>"Computer wins!"</code> to report outcome.  (1 pt for each message.)
+</li><li> 3 pts - Program chooses correct winner according to RPSLS rules.  Please manually examine 5 cases for correctness.  If all five cases are correct, award 3 pts; four cases correct award 2 pts; one to three cases correct award 1 pt; no cases correct award 0 pts.
+</li></ul>
+
+---
+[[Interactivepython:MiniProjects|MiniProjects]]
+
+[[Interactivepython:Main|Main]]

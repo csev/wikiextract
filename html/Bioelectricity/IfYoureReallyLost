@@ -1,0 +1,139 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:IfYoureReallyLost</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#If_You.27re_Really_Lost:_A_Guide_to_the_Greek_Letters.2C_Symbols_and_Units_You.27ll_Encounter_in_This_Course"><span class="tocnumber">1</span> <span class="toctext">If You're Really Lost: A Guide to the Greek Letters, Symbols and Units You'll Encounter in This Course</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Greek_letters"><span class="tocnumber">1.1</span> <span class="toctext">Greek letters</span></a></li>
+<li class="toclevel-2"><a href="#Symbols"><span class="tocnumber">1.2</span> <span class="toctext">Symbols</span></a></li>
+<li class="toclevel-2"><a href="#Units"><span class="tocnumber">1.3</span> <span class="toctext">Units</span></a></li>
+<li class="toclevel-2"><a href="#Temporary_working_area_for_formulas_and_equations"><span class="tocnumber">1.4</span> <span class="toctext">Temporary working area for formulas and equations</span></a></li>
+<li class="toclevel-2"><a href="#Temporary_working_area:_Action_potential_.40_the_heart_of_Bioelelectricity"><span class="tocnumber">1.5</span> <span class="toctext">Temporary working area: Action potential @ the heart of Bioelelectricity</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="If_You.27re_Really_Lost:_A_Guide_to_the_Greek_Letters.2C_Symbols_and_Units_You.27ll_Encounter_in_This_Course">If You're Really Lost: A Guide to the Greek Letters, Symbols and Units You'll Encounter in This Course</span></h1>
+<h2> <span class="mw-headline" id="Greek_letters">Greek letters</span></h2>
+<p>$$\alpha$$ = pronounced alpha. When Professor Barr writes it by hand it'll look a lot like a fish facing west. In terms of this course, alpha functions measure how fast n, m, h particles are opening.</p>
+<p>$$\beta$$ = pronounced beta. A lot of the time it'll just be written like a slightly misshapen uppercase B. In terms of this course, beta functions measure how fast n, m and h particles are closing.</p>
+<p>$$\gamma$$ = pronounced gamma. According to Dr. Barr in Hints and Kinks: it's "used as the symbol...[for]conductance...because it is related to the Roman letter G or g, often used for conductance on a larger scale than one channel."</p>
+<p>$$\Delta$$ = pronounced delta. Just draw it like a normal triangle. It's a calculus thing, used to indicate 'change in' something.</p>
+<p>$$\mu$$ = pronounced mu - though you don't really need to know this - you'll know this one as <i>micro</i>. You'll be familiar with it from quiz 1B. It means you apply a factor of $$10^{-6}$$ - that is, whatever unit follows, it's a millionth of it. When written by hand or typed up without the benefit of $$LaTeX$$ people just use a normal lowercase u. <em>Be really careful not to mix up mV with $$\mu$$V - that's millivolts vs microvolts - it's happened a few times on the forums already.</em></p>
+<p>$$\theta$$ = pronounced theta </p>
+<p>$$\pi$$ = pronounced pie - 3.14159 - We're aware that you about know this one. It's just here for completeness. </p>
+<p>$$\rho$$ = pronounced rho, for resistivity. This one looks like a P. Compare to resistance, the shorthand for which is actually just an uppercase $$R$$. Resistivity is measured in ohm-meters or ohm-centimeters ($$\omega-m$$, $$\omega-cm$$) and resistance is measured in ohms ($$omega$$). Yeah, it's a little confusing at first, but you'll get used to it soon enough. </p>
+<p>$$\tau$$ = pronounced tau - interval of time</p>
+<p>$$\phi$$ = pronounced fi (as in fee-fi-fo-fum) - potential</p>
+<p>$$\Omega$$ = pronounced omega, but you'll hear it spoken as <em>Ohms</em>, the SI unit for the measurement of electric resistance.</p>
+<h2> <span class="mw-headline" id="Symbols">Symbols</span></h2>
+<p><a rel="nofollow" class="external text" href="http://physics.info/symbols/">Special Symbols</a> (from the The Physics Hyper Textbook) - includes Unicode Decimal Values  </p>
+<p><a href="/wiki/index.php/Intro_MathThink:Latex" title="Intro MathThink:Latex"> Latex reference</a> from the course wiki for Intro to Mathematical Thinking  </p>
+<p><a rel="nofollow" class="external text" href="http://amath.colorado.edu/documentation/LaTeX/Symbols.pdf">LaTex Mathematical Symbols</a></p>
+<p>$$E&#95;K$$ - Nernst potential for K+<br />
+$$E&#95;Na$$ - Nernst potential for Na+<br />
+$$E&#95;Cl$$ - Nernst potential for Cl-   </p>
+<p>$$I&#95;{stim}$$ - current introduced into the system (either intracellularly or extracellularly) by experimenter<br />
+$$I&#95;c$$ - capacitive portion of the membrane current<br />
+$$I&#95;m$$ - current flowing across the membrane   </p>
+<h2> <span class="mw-headline" id="Units">Units</span></h2>
+<p><em>(if you need these for a computer-based calculator, just copy and paste. They've been checked and rechecked for accuracy)</em></p>
+<ul>
+<li><p>Pico - $$\gamma$$. looks like a y. See this, multiply what comes after by  $$10^{−12}$$/10E-12 or 0.000000000001.</p></li>
+<li><p>Micro - $$\mu$$. See this, multiply what comes after by $$10^{-6}$$/10E-6 or 0.000001</p></li>
+<li><p>Milli - abbreviated m. Multiply what comes after by $$10^-3$$/10E-3 or 0.001. Usually as part of millivolts (mV) or milliseconds (ms).</p></li>
+</ul>
+<hr />
+<h2> <span class="mw-headline" id="Temporary_working_area_for_formulas_and_equations">Temporary working area for formulas and equations</span></h2>
+<p>R=1/G</p>
+<p>RT/F</p>
+<p>Nernst</p>
+<p>$$alpha&#95;n/(alpha&#95;n+ beta&#95;n) = n$$  </p>
+<p>multi-ion expression (Goldman's Equation)  </p>
+<hr />
+<p>$$\begin{array}{|c|c|c|c|c|c|c|}<br />
+Quantity &amp; Symbol &amp; Unit &amp; Value &amp; Formula &amp; Link &#92;\ \hline<br />
+l1 &amp; l2 &amp; Angstrom &amp; l4 &amp; l5 &amp; l6 &#92;\<br />
+Resistivity &amp; \rho &amp; ohm-cm &amp; c4 &amp; \rho = R \frac{A}{\ell} &amp; c6 &#92;\<br />
+Conductivity &amp; \sigma &amp; S.m^{-1} &amp; c4 &amp; \sigma=\frac{1}{\rho} &amp; c6 &#92;\<br />
+Avogadro’s \ constant &amp; N &amp; c3 &amp; 6.02214129(27)×10^{23}mol^{-1} &amp; c5 &amp; c6 &#92;\<br />
+Gas \ constant &amp; R &amp; c3 &amp; 8.314\,4621(75)~\frac{\mathrm{J}}{\mathrm{mol~K}} &amp;  &amp; c6 &#92;\<br />
+Faraday’s \ constant &amp; F &amp; c3 &amp; F = 96485.3365C/mol &amp;  &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+\end{array}$$</p>
+<p>Table 2 </p>
+<p>$$\begin{array}{|c|c|c|c|c|c|c|}<br />
+h1 &amp; h2 &amp; h3 &amp; h4 &amp; h5 &amp; h6 &#92;\ \hline<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+\end{array}$$</p>
+<p>Table 3 </p>
+<p>$$\begin{array}{|c|c|c|c|c|c|c|}<br />
+What &amp; h2 &amp; h3 &amp; h4 &amp; h5 &amp; h6 &#92;\ \hline<br />
+Action Potential &amp; <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?NR=1&amp;v=7tBWl4GE8rk&amp;feature=endscreen">Action potential</a> &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+c1 &amp; c2 &amp; c3 &amp; c4 &amp; c5 &amp; c6 &#92;\<br />
+\end{array}$$</p>
+<h2> <span class="mw-headline" id="Temporary_working_area:_Action_potential_.40_the_heart_of_Bioelelectricity">Temporary working area: Action potential @ the heart of Bioelelectricity</span></h2>
+<p><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Bioelectricity:Glossary">Passive tissue vs Active tissue</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=uaiACDqqZhA">V Basic nervous system</a>; 2:45 min with Leslie Samuel, man, (*)</p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=POSPO8QbZI4">Action potential</a>; 5:25 min with Leslie Samuel,  man, (*)</p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=pnAwtX_UCbg&amp;playnext=1&amp;list=PLjToEtjH1Eix3AAAmxnZYjUkb2l1--PVu&amp;feature=results_main">Depolarization</a>; 4:14 min with Leslie Samuel,  man, (*)</p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=xmn0Vcd_wLA&amp;list=PLDC6BD324C48FE44E">Repolarization</a>; 2:50 min with Leslie Samuel,  man, (*)</p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=JbCIvMz0yvc&amp;list=PLDC6BD324C48FE44E">Hyper polarization</a>; 2:33 min with Leslie Samuel,  man, (*)</p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?NR=1&amp;v=7tBWl4GE8rk&amp;feature=endscreen">Action potential - funky short animation</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=BYAMUfh1dDE">Equilibrium potential as Driving force</a>, 
+8:21 min of life-inspired story telling, with ThePenguinProf, (**)</p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?feature=endscreen&amp;v=lHnBL5eifhA&amp;NR=1">Action Potential</a>, 15:56 min of passionate tango-like AP, with ThePenguinProf,  abit blurry, but good stuff (**)</p>
+<p>|Action potential| <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?NR=1&amp;v=7tBWl4GE8rk&amp;feature=endscreen">funky short animation</a></p>
+<p>(<a rel="nofollow" class="external free" href="http://akciospotencial.blog.hu/2011/12/15/bortonbe">http://akciospotencial.blog.hu/2011/12/15/bortonbe</a><em>zart</em>molekulak) - Hungarian?| <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=POSPO8QbZI4">Leslie Samuel on AP</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 56/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:IfYoureReallyLost&amp;oldid=10280">https://share.coursera.org/wiki/index.php?title=Bioelectricity:IfYoureReallyLost&amp;oldid=10280</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

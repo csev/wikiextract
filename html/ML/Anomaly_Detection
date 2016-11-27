@@ -1,0 +1,145 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Anomaly Detection</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Problem_Motivation"><span class="tocnumber">1</span> <span class="toctext">Problem Motivation</span></a></li>
+<li class="toclevel-1"><a href="#Gaussian_Distribution"><span class="tocnumber">2</span> <span class="toctext">Gaussian Distribution</span></a></li>
+<li class="toclevel-1"><a href="#Algorithm"><span class="tocnumber">3</span> <span class="toctext">Algorithm</span></a></li>
+<li class="toclevel-1"><a href="#Developing_and_Evaluating_an_Anomaly_Detection_System"><span class="tocnumber">4</span> <span class="toctext">Developing and Evaluating an Anomaly Detection System</span></a></li>
+<li class="toclevel-1"><a href="#Anomaly_Detection_vs._Supervised_Learning"><span class="tocnumber">5</span> <span class="toctext">Anomaly Detection vs. Supervised Learning</span></a></li>
+<li class="toclevel-1"><a href="#Choosing_What_Features_to_Use"><span class="tocnumber">6</span> <span class="toctext">Choosing What Features to Use</span></a></li>
+<li class="toclevel-1"><a href="#Multivariate_Gaussian_Distribution_.28Optional.29"><span class="tocnumber">7</span> <span class="toctext">Multivariate Gaussian Distribution (Optional)</span></a></li>
+<li class="toclevel-1"><a href="#Anomaly_Detection_using_the_Multivariate_Gaussian_Distribution_.28Optional.29"><span class="tocnumber">8</span> <span class="toctext">Anomaly Detection using the Multivariate Gaussian Distribution (Optional)</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">9</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Problem_Motivation">Problem Motivation</span></h1>
+<p>Just like in other learning problems, we are given a dataset $$&#123;x^{(1)}, x^{(2)},\dots,x^{(m)}&#125;$$. </p>
+<p>We are then given a new example, $$x&#95;{test}$$, and we want to know whether this new example is abnormal/anomalous. </p>
+<p>We define a "model" $$p(x)$$ that tells us the probability the example is not anomalous. We also use a threshold $$\epsilon$$ (epsilon) as a dividing line so we can say which examples are anomalous and which are not.</p>
+<p>A very common application of anomaly detection is detecting fraud:</p>
+<blockquote>
+  <p>$$x^{(i)} = $$ features of user $$i$$'s activities</p>
+  <p>Model $$p(x)$$ from the data. </p>
+  <p>Identify unusual users by checking which have $$p(x) &lt; \epsilon$$.</p>
+</blockquote>
+<p>If our anomaly detector is flagging <strong>too many</strong> anomalous examples, then we need to <strong>decrease</strong> our threshold $$\epsilon$$</p>
+<h1> <span class="mw-headline" id="Gaussian_Distribution">Gaussian Distribution</span></h1>
+<p>The Gaussian Distribution is a familiar bell-shaped curve that can be described by a function $$\mathcal{N}(\mu,\sigma^2)$$</p>
+<p>Let $$x \in \mathbb{R}$$. If the probability distribution of $$x$$ is Gaussian with mean $$\mu$$, variance $$\sigma^2$$, then:</p>
+<blockquote>
+  <p>$$ x \sim \mathcal{N}(\mu, \sigma^2)$$</p>
+</blockquote>
+<p>The little $$\sim$$ or 'tilde' can be read as "distributed as." </p>
+<p>The Gaussian Distribution is parameterized by a mean and a variance.</p>
+<p>Mu, or $$\mu$$, describes the center of the curve, called the mean. The width of the curve is described by sigma, or $$\sigma$$, called the standard deviation.</p>
+<p>The full function is as follows:</p>
+<p>$$\large p(x;\mu,\sigma^2) = \dfrac{1}{\sigma\sqrt{&#40;2\pi)}}e^{-\dfrac{1}{2}(\dfrac{x - \mu}{\sigma})^2}$$</p>
+<p>We can estimate the parameter $$\mu$$ from a given dataset by simply taking the average of all the examples:</p>
+<p>$$\mu = \dfrac{1}{m}\displaystyle \sum&#95;{i=1}^m x^{(i)}$$</p>
+<p>We can estimate the other parameter, $$\sigma^2$$, with our familiar squared error formula:</p>
+<p>$$\sigma^2 = \dfrac{1}{m}\displaystyle \sum&#95;{i=1}^m(x^{(i)} - \mu)^2$$</p>
+<h1> <span class="mw-headline" id="Algorithm">Algorithm</span></h1>
+<p>Given a training set of examples, $$\lbrace x^{(1)},\dots,x^{(m)}\rbrace$$ where each example is a vector, $$x \in \mathbb{R}^n$$.</p>
+<p>$$p(x) = p(x&#95;1;\mu&#95;1,\sigma&#95;1^2)p(x&#95;2;\mu&#95;2,\sigma^2&#95;2)\cdots p(x&#95;n;\mu&#95;n,\sigma^2&#95;n)$$</p>
+<p>In statistics, this is called an "independence assumption" on the values of the features inside training example $$x$$. </p>
+<p>More compactly, the above expression can be written as follows:</p>
+<p>$$ = \displaystyle \prod^n&#95;{j=1} p(x&#95;j;\mu&#95;j,\sigma&#95;j^2)$$</p>
+<p><strong>The algorithm</strong></p>
+<blockquote>
+  <p>Choose features $$x&#95;i$$ that you think might be indicative of anomalous examples.</p>
+  <p>Fit parameters $$\mu&#95;1,\dots,\mu&#95;n,\sigma&#95;1^2,\dots,\sigma&#95;n^2$$.</p>
+  <p>Calculate $$\mu&#95;j = \dfrac{1}{m}\displaystyle \sum&#95;{i=1}^m x&#95;j^{(i)}$$</p>
+  <p>Calculate $$\sigma^2&#95;j = \dfrac{1}{m}\displaystyle \sum&#95;{i=1}^m(x&#95;j^{(i)} - \mu&#95;j)^2$$</p>
+  <p>Given a new example $$x$$, compute $$p(x)$$:</p>
+  <p>$$p(x) = \displaystyle \prod^n&#95;{j=1} p(x&#95;j;\mu&#95;j,\sigma&#95;j^2) = \prod\limits^n&#95;{j=1} \dfrac{1}{\sqrt{2\pi}\sigma&#95;j}exp(-\dfrac{(x&#95;j - \mu&#95;j)^2}{2\sigma^2&#95;j})$$</p>
+  <p>Anomaly if $$p(x) &lt; \epsilon$$</p>
+</blockquote>
+<p>A vectorized version of the calculation for $$\mu$$ is $$\mu = \dfrac{1}{m}\displaystyle \sum&#95;{i=1}^m x^{(i)}$$. You can vectorize $$\sigma^2$$ similarly.</p>
+<h1> <span class="mw-headline" id="Developing_and_Evaluating_an_Anomaly_Detection_System">Developing and Evaluating an Anomaly Detection System</span></h1>
+<p>To evaluate our learning algorithm, we take some labeled data, categorized into anomalous and non-anomalous examples ($$y = 0$$ if normal, $$y = 1$$ if anomalous).</p>
+<p>Among that data, take a large proportion of <strong>good</strong>, non-anomalous data for the training set on which to train $$p(x)$$.</p>
+<p>Then, take a smaller proportion of mixed anomalous and non-anomalous examples (you will usually have many more non-anomalous examples) for your cross-validation and test sets.</p>
+<p>For example, we may have a set where 0.2% of the data is anomalous. We take 60% of those examples, all of which are good ($$y=0$$) for the training set. We then take 20% of the examples for the cross-validation set (with 0.1% of the anomalous examples) and another 20% from the test set (with another 0.1% of the anomalous).</p>
+<p>In other words, we split the data 60/20/20 training/CV/test and then split the anomalous examples 50/50 between the CV and test sets.</p>
+<p><strong>Algorithm evaluation:</strong></p>
+<blockquote>
+  <p>Fit model $$p(x)$$ on training set $$\lbrace x^{(1)},\dots,x^{(m)} \rbrace$$</p>
+  <p>On a cross validation/test example $$x$$, predict:</p>
+  <p>If $$p(x) &lt; \epsilon$$ (<strong>anomaly</strong>), then $$y = 1$$</p>
+  <p>If $$p(x) \geq \epsilon$$ (<strong>normal</strong>), then $$y = 0$$</p>
+</blockquote>
+<p>Possible evaluation metrics (see "Machine Learning System Design" section):</p>
+<ul>
+<li>True positive, false positive, false negative, true negative.</li>
+<li>Precision/recall</li>
+<li>$$F&#95;1$$ score</li>
+</ul>
+<p>Note that we use the cross-validation set to choose parameter $$\epsilon$$</p>
+<h1> <span class="mw-headline" id="Anomaly_Detection_vs._Supervised_Learning">Anomaly Detection vs. Supervised Learning</span></h1>
+<p>When do we use anomaly detection and when do we use supervised learning?</p>
+<p>Use anomaly detection when...</p>
+<ul>
+<li>We have a very small number of positive examples ($$y=1$$ ... 0-20 examples is common) and a large number of negative ($$y=0$$) examples.</li>
+<li>We have many different "types" of anomalies and it is hard for any algorithm to learn from positive examples what the anomalies look like; future anomalies may look nothing like any of the anomalous examples we've seen so far.</li>
+</ul>
+<p>Use supervised learning when...</p>
+<ul>
+<li>We have a large number of both positive and negative examples. In other words, the training set is more evenly divided into classes.</li>
+<li>We have enough positive examples for the algorithm to get a sense of what new positives examples look like. The future positive examples are likely similar to the ones in the training set.</li>
+</ul>
+<h1> <span class="mw-headline" id="Choosing_What_Features_to_Use">Choosing What Features to Use</span></h1>
+<p>The features will greatly affect how well your anomaly detection algorithm works.</p>
+<p>We can check that our features are <strong>gaussian</strong> by plotting a histogram of our data and checking for the bell-shaped curve.</p>
+<p>Some <strong>transforms</strong> we can try on an example feature $$x$$ that does not have the bell-shaped curve are:</p>
+<ul>
+<li>$$log(x)$$</li>
+<li>$$log(x+1)$$</li>
+<li>$$log(x + c)$$ for some constant</li>
+<li>$$\sqrt{x}$$</li>
+<li>$$x^{1/3}$$</li>
+</ul>
+<p>We can play with each of these to try and achieve the gaussian shape in our data.</p>
+<p>There is an <strong>error analysis procedure</strong> for anomaly detection that is very similar to the one in supervised learning.</p>
+<p>Our goal is for $$p(x)$$ to be large for normal examples and small for anomalous examples. </p>
+<p>One common problem is when $$p(x)$$ is similar for both types of examples. In this case, you need to examine the anomalous examples that are giving high probability in detail and try to figure out new features that will better distinguish the data.</p>
+<p>In general, choose features that might take on unusually large or small values in the event of an anomaly.</p>
+<h1> <span class="mw-headline" id="Multivariate_Gaussian_Distribution_.28Optional.29">Multivariate Gaussian Distribution (Optional)</span></h1>
+<p>The multivariate gaussian distribution is an extension of anomaly detection and may (or may not) catch more anomalies.</p>
+<p>Instead of modeling $$p(x&#95;1),p(x&#95;2),\dots$$ separately, we will model $$p(x)$$ all in one go. Our parameters will be: $$\mu \in \mathbb{R}^n$$ and $$\Sigma \in \mathbb{R}^{n \times n}$$</p>
+<p>$$p(x;\mu,\Sigma) = \dfrac{1}{(2\pi)^{n/2} |\Sigma|^{1/2}} exp(-1/2(x-\mu)^T\Sigma^{-1}(x-\mu))$$</p>
+<p>The important effect is that we can model oblong gaussian contours, allowing us to better fit data that might not fit into the normal circular contours.</p>
+<p>Varying $$\Sigma$$ changes the shape, width, and orientation of the contours. Changing $$\mu$$ will move the center of the distribution.</p>
+<p>Check also:</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cs229.stanford.edu/section/gaussians.pdf">The Multivariate Gaussian Distribution <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span></a>, Chuong B. Do, October 10, 2008. </li>
+</ul>
+<h1> <span class="mw-headline" id="Anomaly_Detection_using_the_Multivariate_Gaussian_Distribution_.28Optional.29">Anomaly Detection using the Multivariate Gaussian Distribution (Optional)</span></h1>
+<p>When doing anomaly detection with multivariate gaussian distribution, we compute $$\mu$$ and $$\Sigma$$ normally. We then compute $$p(x)$$ using the new formula in the previous section and flag an anomaly if $$p(x) &lt; \epsilon$$.</p>
+<p>The original model for $$p(x)$$ corresponds to a multivariate Gaussian where the contours of $$p(x;\mu,\Sigma)$$ are axis-aligned.</p>
+<p>The multivariate Gaussian model can automatically capture correlations between different features of x.</p>
+<p>However, the original model maintains some advantages: it is computationally cheaper (no matrix to invert, which is costly for large number of features) and it performs well even with small training set size (in multivariate Gaussian model, it should be greater than the number of features for $$\Sigma$$ to be invertible).</p>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Recommender_Systems" title="ML:Recommender Systems">Recommender Systems</a>  Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<h1> <span class="mw-headline" id="Categories">Categories</span></h1>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 8/1000000
+Post-expand include size: 226/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Anomaly_Detection&amp;oldid=33032">https://share.coursera.org/wiki/index.php?title=ML:Anomaly_Detection&amp;oldid=33032</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li><li><a href="/wiki/index.php/Category:ML" title="Category:ML">ML</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

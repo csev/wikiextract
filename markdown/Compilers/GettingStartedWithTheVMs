@@ -1,0 +1,9 @@
+<div style="border-left:15px solid darkred;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>EC2 option is no longer supported.</td></table></div>
+
+## Considerations for choosing between EC2 and VirtualBox
+
+* EC2 allows you to run your assignment in "the cloud" on one of Amazon's servers. Amazon is very generously providing $10 credits to students who choose this option, so you should not need to pay out of your own pocket for the server time you use. Instructions on setting up an EC2 instance are available [here](https://docs.google.com/document/pub?id=1yqdM0kzx-iiD4tvyyIne3KfpntK7TcwMJnxcVWqV2iE).
+
+* VirtualBox allows you to install the VM on your own computer instead of on Amazon's servers. If you will not have continuous internet access while working on the assignments this would be a better choice. Instructions on setting up VirtualBox are available [[Compilers:VirtualBoxVMsetup|here]].
+
+**If you decide to use EC2, don't forget to fill out the "Amazon EC2 Usage" quiz on Coursera so we can get you a $10 Amazon credit.**

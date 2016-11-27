@@ -1,0 +1,175 @@
+# Code Snippets
+
+## Lecture 4 - Implementation of Shooting and Convergence Studies
+
+### Take 1
+
+**all\_581\_rhs.m**
+
+    function rhs=all_581_rhs(x,ic,dummy,beta)
+     y1 = ic(1);
+     y2 = ic(2);
+
+     rhs = [ y2 ; (beta-100)*y1 ];
+    end
+
+**main.m**
+
+    function main()
+      xspan = [-1 +1]; 
+    
+      A = 1;
+      % initial conditions in form [ y1 y2 ]
+      % y1 = Psi(x) = Psi(x=-1) = 0
+      % y2 = A is just a guess
+      ic = [0 A];   
+    
+      beta = 99;
+    
+      [t,y] = ode45('all_581_rhs',xspan,ic,
+                    [], % tolerance goes here
+                    beta); % free parameters go here 
+    
+      plot(t,y(:,1));
+    end
+    
+Just call `main` in Matlab/Octave console.
+
+### Take 2
+
+**main.m**
+
+    function main()
+      tol = 10^(-4);  % numeric error tolerance
+      
+      % constraints
+      xspan = [-1 +1]; 
+      Psi = [ 0 0 ];  % corresponding values for Psi, just to avoid magic numbers in code
+    
+      A = 1;
+      ic = [Psi(1) A];   
+    
+      beta = 99;
+      dbeta = 1;
+      
+      for j=1:1000
+    
+        [t,y] = ode45('all_581_rhs',xspan,ic,[], beta); 
+        
+        if abs(y(end,1)-Psi(2))<tol % stop searching for beta if the end value is equal (within tolerance) to end value of Psi 
+          break;
+        end
+        
+        if y(end,1)>Psi(2)
+          beta = beta-dbeta;
+        else
+          dbeta = dbeta / 2;
+          beta = beta+dbeta;
+        end
+    
+      end
+      
+      plot(t,y(:,1));
+      fprintf('beta: %f, j: %d\n',beta,j);
+    end
+
+### Take 3
+
+**main.m**
+
+    function main()
+      n0 = 100; % another constant to avoid magic numbers, how to declare global const for both functions?
+      
+      tol = 10^(-4);  
+      
+      xspan = [-1 +1]; 
+      Psi = [ 0 0 ];  
+    
+      A = 1;
+      ic = [Psi(1) A];   
+    
+      beta = n0-1;
+      
+      for jj=1:5 % we want to find 5 solutions
+      
+        dbeta = 1;
+        
+        for j=1:1000
+      
+          [t,y] = ode45('all_581_rhs',xspan,ic,[], beta); 
+          
+          if abs(y(end,1)-Psi(2))<tol 
+            break;
+          end
+          
+          if y(end,1)*(-1)^(jj+1)>Psi(2) % every second time we go from top, and every second (even) time we go from bottom
+            beta = beta-dbeta;           % continue search here
+          else
+            dbeta = dbeta / 2;           % not a search here; correct it back a little
+            beta = beta+dbeta;
+          end
+      
+        end
+        
+        plot(t,y(:,1));
+        hold on;        % dont reset the plot at next iteration
+        fprintf('beta: %f, j: %d\n',beta,j);
+        
+        beta = beta -1 ; % start next iteration with something smaller
+      end
+    
+    end
+
+## Lecture 21 - Spectral method implementation
+
+**vort.m**
+
+    clear all; close all; clc;
+
+    tspan = 0:2:50; % lecture had 1:10
+
+    nu = 0.001;
+    L = 20; n = 256; % lecture had n=64
+    x2 = linspace(-L/2,L/2,n+1);
+    x = x2(1:n);
+    y = x;
+    [X,Y] = meshgrid(x,y);
+
+    kx=(2*pi/L)*[0:(n/2-1) (-n/2):-1];
+    kx(1)=10^(-6);
+    ky=kx;
+    [KX,KY] = meshgrid(kx,ky);
+
+    K=KX.^2+KY.^2;
+    K2=reshape(K,n^2,1);
+
+    w=exp(-0.25*X.^2 -2*Y.^2);
+    wt=fft2(w);
+    wt2=reshape(wt,n^2,1);
+
+    [t,wt2_sol]=ode45('vort_rhs',tspan,wt2,[],nu,K,K2,n,KX,KY);
+
+    % Display the outputs
+    for j=1:(size(wt2_sol,1))
+      w = real(ifft2(reshape(wt2_sol(j,:), n, n)));
+      pcolor(X,Y,w), shading interp
+      drawnow
+      pause(0.2)
+    end
+
+**vort_rhs.m**
+
+    function rhs=vort_rhs(t,wt2,dummy,nu,K,K2,n,KX,KY)
+    % the suffix t is used to indicate transformed
+    % 2 indicates a 2D vector reshaped into a 1D vector
+
+    % (i) solve the Laplacian to get psi_x and psi_y
+    wt=reshape(wt2,n,n);
+    psit=-wt./K;
+    psix=real(ifft2(1i*KX.*psit));
+    psiy=real(ifft2(1i*KY.*psit));
+    % (ii) now get omega_x and omega_y
+    wx=real(ifft2(1i*KX.*wt));
+    wy=real(ifft2(1i*KY.*wt));
+    % (iii) return the derivative wrt time in fourier space
+    rhs = -nu*K2.*wt2 + reshape(fft2(wx.*psiy - wy.*psix), n^2,1);

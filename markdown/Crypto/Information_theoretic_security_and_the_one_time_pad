@@ -1,0 +1,86 @@
+## Stream Ciphers: The One Time Pad
+
+### Symmetric Ciphers: Definition
+
+<u>Def:</u> a **cipher** defined over $$ (\mathcal{K, M, C}) $$
+
+A cipher is a pair of "efficient" algorithms $$ (E, D) $$ defined over a triple: the set of all possible keys $$\mathcal{K}$$, the set of all possible messages $$\mathcal{M}$$ and the set of all possible cipher texts $$\mathcal{C}$$.
+
+$$ E: \mathcal{K}\times \mathcal{M}\to \mathcal{C} $$
+
+The encryption algorithm E takes keys and messages and outputs cipher texts.
+
+$$ D: \mathcal{K}\times \mathcal{C}\to \mathcal{M} $$
+
+The decryption algorithm D takes keys and cipher texts and outputs messages
+
+$$ \forall m \in \mathcal{M}, k \in \mathcal{K} \to D(k, E(k,m)) = m $$
+
+s.t. for every message in the message space and every key in the key space, if I encrypt the message with the key k and then decrypt the resulting cipher text with the same key k I get back the original message.
+
+$$ D(k, E(k,m)) = m $$ is called the consistency equation
+
+* **E** is often randomized (will use random bits during encryption)
+* **D** is always deterministic
+
+### The One Time Pad (Vernam 1917)
+
+Our first example of a "secure" cipher is the [One-time pad](http://en.wikipedia.org/wiki/One-time_pad)
+
+$$ \mathcal{M} = \mathcal{C} = \lbrace 0,1 \rbrace^n $$  
+$$ \mathcal{K} = \lbrace 0,1 \rbrace^n $$
+
+The message space of the OTP is the set of all n bit binary strings. The key space is the same as the message space. A key in the OTP is a random sequence of bits that is as long as the message.
+
+$$ c = E(k,m)) = k \oplus m $$
+
+The cipher text is simply the [xor](https://en.wikipedia.org/wiki/Bitwise_operation#XOR) of the message and the key.
+
+**Example:** $$ (msg: 0110111) \oplus (key: 1011001) = cipher: 1101110 $$
+
+$$ m = D(k,c)) = k \oplus c $$
+
+To decrypt we xor the cipher text and the key again.
+
+We verify that it satisfies the consistency equation:
+
+$$ D(k, E(k,m)) = D(k, k \oplus m) = k \oplus (k \oplus m) = (k \oplus k) \oplus m = 0 \oplus m = m $$
+
+xor is addition modulo 2, and addition is [associative](http://en.wikipedia.org/wiki/Associative_property) (the order of operands does not matter). XOR of a number and 0 is always the number itself.
+
+The one time pad is a very fast way to encrypt messages, but it needs very long keys (as long as the message). What makes the OTP difficult to use in practice is that if you have a secure way to transmit the key, you could as well use it to transmit the message itself.
+
+
+### Information Theoretic Security (Shannon 1949)
+
+Basic idea: CT should reveal no information about the PT
+
+<u>Def:</u> A cipher $$ (E, D) $$ over $$ (\mathcal{K, M, C)} $$ has <u><b>perfect secrecy</b></u> if
+
+$$ \forall m_0,m_1 \in \mathcal{M} (len(m_0) = len(m_1))\ and\ \forall c \in \mathcal{C} Pr[E(k,m_0)=c] = Pr[E(k,m_1)=c] $$
+
+For all messages m<sub>0</sub> and m<sub>1</sub> in the message space (with same length) and for all cipher texts in the cipher space, the probability to get cipher text c if we encrypt m<sub>0</sub> with key k is the same as the probability to get c if we encrypt m<sub>1</sub> with key k, where the key k is uniform in the keyspace $$ \mathcal{K}$$: $$ k \overset{R}{\leftarrow}  \mathcal{K} $$
+
+So if an attacker can intercept the cipher text c, the probability that it encrypts the message m<sub>0</sub> is exactly the same as that it encrypts m<sub>1</sub> for all messages in the message space. So he learns nothing about PT from CT.
+
+There is no CT only attack on a cipher that has perfect secrecy! (but other attacks may still be possible)
+
+<u>Lemma:</u> OTP has pefect secrecy.
+
+Proof: $$ \forall m,c : Pr[E(k,m)=c] = \frac{\sharp keys\ k \in \mathcal{K}\ s.t.\ E(k,m)=c}{|\mathcal{K}|}$$
+
+For every message and cipher text, the probability if I choose a random key k to get cipher c is equal to the possible number of keys that map m to c <i>(s.t. if I encrypt m with this k and get c)</i> divided by the total number of keys.
+
+So: $$ \forall m,c : \sharp \lbrace k \in \mathcal{K} : E(k,m)=c \rbrace = const. $$
+
+For OTP: $$ k \oplus m = c \Rightarrow k = m \oplus c $$  
+$$ \Rightarrow\ \forall m,c\ \sharp \lbrace k \in \mathcal{K} : E(k,m)=c \rbrace = 1 $$  
+$$ \Rightarrow $$ OTP has perfect secrecy
+
+### The bad news...
+
+<u>Thm:</u> perfect secrecy $$ \Rightarrow |\mathcal{K}|\ \ge\ |\mathcal{M}| $$
+
+To have perfect secrecy, the number of possible keys (and therefore the length of the key) must be greater than or equal to the number of possible messages.
+
+And this reduces to $$|\mathcal{K}|\ \ge\ |\mathcal{M}| \Rightarrow 2^m \ge 2^n \Rightarrow m \ge n$$, in other words, each key must have the same bit string length as the message it encrypts. <i>This is what makes OTP inconvenient for real word security</i>.

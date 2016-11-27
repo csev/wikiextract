@@ -1,0 +1,58 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Programdesign:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Systematic_Program_Design_1"><span class="tocnumber">1</span> <span class="toctext">Systematic Program Design 1</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Using_the_Tools"><span class="tocnumber">1.1</span> <span class="toctext">Using the Tools</span></a></li>
+<li class="toclevel-2"><a href="#Diving_into_the_Course"><span class="tocnumber">1.2</span> <span class="toctext">Diving into the Course</span></a></li>
+<li class="toclevel-2"><a href="#IRC_channel"><span class="tocnumber">1.3</span> <span class="toctext">IRC channel</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Systematic_Program_Design_1">Systematic Program Design 1</span></h1>
+<blockquote>
+  <blockquote>
+    <p><em>This is the course wiki.  Information on many topics can be collected on pages of this wiki.  This Main page is a good place for a catalog of those topics, with further details on their own pages.</em></p>
+    <p><strong><em>CHOOSE MATERIAL CAREFULLY</em></strong> Do not use the Course Wiki to post about details of homework, quizzes, programming projects, and exams.  The Course Wiki persists from one offering of the course to the next.  Discussion Forums are specific to individual offerings of the course.  Use the Forums to discuss homework, quizzes, programming project, and exam details <strong><em>after their deadlines</em></strong>.</p>
+  </blockquote>
+</blockquote>
+<h2> <span class="mw-headline" id="Using_the_Tools">Using the Tools</span></h2>
+<ul>
+<li><p><a href="/wiki/index.php/Programdesign:InstallingRacket" title="Programdesign:InstallingRacket"> Installing and Working with [Dr]Racket</a></p></li>
+<li><p><a href="/wiki/index.php?title=Programdesign:UsingDrRacket&amp;action=edit&amp;redlink=1" class="new" title="Programdesign:UsingDrRacket (page does not exist)"> Using BSL, Saved Definitions (.rkt files) and Course Kits</a></p></li>
+<li><p><a href="/wiki/index.php?title=Programdesign:UsingForums&amp;action=edit&amp;redlink=1" class="new" title="Programdesign:UsingForums (page does not exist)"> Using the Discussion Forum</a></p></li>
+<li><p><a href="/wiki/index.php/Programdesign:UsingWiki" title="Programdesign:UsingWiki"> Using the Course Wiki</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="Diving_into_the_Course">Diving into the Course</span></h2>
+<ul>
+<li><p><a href="/wiki/index.php?title=Programdesign:QuirksAhahs&amp;action=edit&amp;redlink=1" class="new" title="Programdesign:QuirksAhahs (page does not exist)"> Quirks, Glitches, Gotchas, and Ahah!</a></p></li>
+<li><p><a href="/wiki/index.php/Programdesign:StudentPractices" title="Programdesign:StudentPractices"> The Great Student Practice Problem Explosion</a></p></li>
+<li><p><a href="/wiki/index.php/Programdesign:Glossary" title="Programdesign:Glossary"> Glossary</a></p></li>
+<li><p><a href="/wiki/index.php/Programdesign:Design_Cheat_Sheet" title="Programdesign:Design Cheat Sheet"> Design Cheat Sheet</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="IRC_channel"> IRC channel</span></h2>
+<p>/connect irc.freenode.net</p>
+<p>/join #coursera-spd1</p>
+<p>Online IRC client&#160;: <a rel="nofollow" class="external free" href="http://webchat.freenode.net/">http://webchat.freenode.net/</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Programdesign:Main&amp;oldid=17145">https://share.coursera.org/wiki/index.php?title=Programdesign:Main&amp;oldid=17145</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

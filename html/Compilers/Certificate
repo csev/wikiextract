@@ -1,0 +1,27 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Compilers:Certificate</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>According to <a rel="nofollow" class="external text" href="https://class.coursera.org/compilers-004/wiki/Syllabus">Syllabus</a>:</p>
+<p><em>The weight for the various assignments in the course will be: 20% electronic quizzes (all weighted equally), 15% midterm, 25% final, 40% programming assignments (weighted 8%, 8%, 12%, 12% from first to last). The DeduceIt assignments will be worth a total of 2.5% extra credit (each problem weighted equally). If you aren't doing the programming assignments then everything else is scaled proportionately: 33% electronic quizzes, 25% midterm, 42% for the final (but still 2.5% total extra for DeduceIt problems).</em></p>
+<div style="border-left:15px solid darkred;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>This is supplement of the syllabus, and the requirement may change in future.</td></table></div>
+<p>To qualify for a statement at the end of the course, you need to maintain a 70% average in the class. If you aren't doing the programming assignments they won't be counted in your average.</p>
+<p>For those doing the programming assignments, the situation is a bit more complicated. If you meet the 70% threshold on the non-programming portion of the course or if you meet the 70% threshold overall (considering all of your work, including the programming assignments) you will receive a statement of accomplishment. If you also maintain a 70% average on the programming assignments themselves (using the weights in the syllabus, so the last two programming assignments count 1.5 times as much as the first two) then your statement of accomplishment will also say that you successfully wrote a functioning Cool compiler as part of the course. To be eligible for this additional citation you also need to turn in all four programming assignments (though it would be difficult to meet the 70% threshold if you decided not to do an assignment).</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Compilers:Certificate&amp;oldid=25518">https://share.coursera.org/wiki/index.php?title=Compilers:Certificate&amp;oldid=25518</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

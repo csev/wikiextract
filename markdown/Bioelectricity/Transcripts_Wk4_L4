@@ -1,0 +1,37 @@
+# Week 4 Lecture 4: 4-4 The Equation for each Pathway  
+  
+**Bioelectricity Week4_4 (slide 16)**  
+* So far, we've noticed, that Hodgkin and Huxley replaced the composite resistance, composite membrane resistance RM, with separate pathways for each of the different ions.  
+* In this lecture, we consider what is the mathematical equation for each of these three pathways. Let's take them in turn. 
+  
+**The equations for the K pathway. (slide 17)**  
+* The equation for the potassium pathway, IK = gK (Vm - EK). There are a couple of important things to notice here.  
+* First, as we were saying last time around, pathway resistance has been replaced by the pathway conductance. That means that in this equation, we have the conductance that multiplies the voltage, the voltage term, rather than having the current divided by the resistance, as is normally the case for equations written as Ohm's law.  
+* But we see, in a different way, this is another form of Ohm's law, in the sense that it has the current equals the conductance times the voltage.  
+* However, this voltage is not just the voltage. It's not just Vm. It's Vm - EK. This whole entire composite effect, that is to say, the current that flows, IK, is depending on the Vm, Vm will be from here to there. Take away EK - EK. So the current that flows is Vm – EK, current that flows on the K pathway is proportional to Vm - EK.  
+* Now there's some things that are worth thinking about there. First of all. GK seems to be a variable rather than a constant. We have an equation here. Let's talk about that equation.  
+* That equation says the value of gK, at any particular moment, that value is equal to the maximum value of gK, the maximum it could ever have (that's signified by this bar over the gK) the maximum value times this other quantity, n to the fourth.  
+* How does one interpret that? Well very loosely, right here at the beginning, we would say, very loosely right here at the beginning, we would say what that means is that the potassium conductance, gK, is the conductance that would be present if the channel was completely open g bar K times the probability that the channel is open. Which is given as n to the fourth, that's a little mysterious but we'll get to it in a moment.  
+* So we really are thinking not for just one channel, but for a whole aggregate of channels, the thousands of channels that are present in a patch. So for that aggregate of channels, the conductivity is the maximum conductivity, the conductivity of all the channels were open, times the probability of a channel being open.  
+* Seems like a strange way to do it, but it works, so we like it. 
+  
+**K channel sketch, with n (slide 18)**  
+* Let's make a sketch of what's this n to the fourth idea is. So, the idea is not too hard, it says, suppose we have a channel. The channel is going from the inside to the outside of this membrane.  
+* How is the internal channel structured conceptually? We're not talking about how is it really built, but conceptually how is it. And what we're saying is, we're saying there are four gates the channel has to pass through. One, an ion has to pass through to get through the channel.  
+* The probability that one particle, as Hodgkin and Huxley called it, probability that one of these gates, one particle, is open is n. The probability four are open, is n to the fourth. That is to say, the product of the probabilities of each one separately.  
+* So you think of the whole pathway from inside to outside, the whole channel for potassium, as being a channel that has four units within it, four particles, each particle has to be in the open position, and when all four are open, then the channel as a whole is open. Thats where the n forth comes from.  
+* Now what is n? Well we haven't gotten there yet, but the probability is, once we know it, we know how to find out what the probability is that the whole channel is open. 
+  
+**The equations for the Na pathway (slide 19)**  
+* For the sodium pathway we have a similar structure. Once again, voltage term is the difference between trans-membrane potential and the sodium equilibrium potential. As you know, this is a hugely different combination than Vm - EK.  
+* If we look at gNa, we have a similar but not equivalent form. GNa, conductivity of sodium channels that exist at a particular moment, is the maximum value, the value if all were open, timed m cubed h. So m cubed h is again a probability and let's see if we can make a sketch.  
+  
+**Sketch of an Na channel, with m and h (slide 20)**  
+* We would say m cubed h that means we have three particles of the m type. Also we have one particle of the h type. Here's the inside, here's the outside.  
+* For the channel as a whole to be open, all four of these particles have to be open. So that says the probability that all four are open, what's the product of these probabilities? H for that channel times m cubed, and cube being because there are three m channels. So in other words it's equal to h times m times m times m.  
+* Why do you suppose there are two different kinds of gates that are built into this model? Two different kinds of particles. And the answer to that is it has to do with timing. This is a mechanism by which the right timing can be introduced. And, as you'll see later on, what happens is that the timing is such that m gates control the opening, control the timing of the opening and the h gates control the timing of the closing. We haven't shown that here, but you'll see that later on.
+  
+**The equations for the L pathway (slide 21)**  
+* That leaves us only with the L pathway. Well, good news, the L pathway (the leakage pathway) is like an ordinary hole in the membrane. There are not very many of these, so that means that gL is not a very big number. But it's an important number, even though small.  
+* And gL goes according to Vm - EL. EL is usually taken as the equilibrium potential for chlorine ions. So, we know, we have a number for that value once we know this EL ion concentration in the interior and the exterior.  
+* So that concludes our description of the equations for each of the pathways, but we haven't yet talked about how the probabilities are found. When we get to the next segment we'll talk about that. Thank you.

@@ -1,0 +1,71 @@
+__Module 2 Common metrics for assessing fund performance 1__ (Lecture Video 2.2)
+
+_Note: Just copied notes from lecture slides, needs to be cleaned up_
+
+* Due Date: October 28, Time for Completion: 10 minutes
+* [link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a "link") 
+* [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=9 "video")
+* [powerpoint](http://www.quantsoftware.org/CompInvestI-Presentations/022-CompInvestI.pptx "powerpoint")
+
+
+# Objectives
+* Annual Return.
+* Risk.
+* Reward/Risk.
+
+	 	
+# Notes
+## What are Investors Looking For?
+
+## Common Metrics
+* Annual return.
+* Risk: Standard deviation of return.
+* Risk: Draw down.
+* Reward/Risk: Sharpe Ratio.
+* Reward/Risk: Sortino Ratio.
+* Jensen’s Alpha.
+
+
+## Example
+<pre>
+      Return  Sharpe   STDEV   D-down   Corr
+Fund     33%     .94   0.58%   -8.67%   0.89
+$DJI     43%     .63   1.23%  -27.38%   1.00
+</pre>
+
+## Annual Return
+* metric = (value[end]/value[start]) – 1
+* Example: $100 to $110:
+** (110/100) – 1 = 0.10 = 10%
+
+## Standard Deviation of Daily Return
+* daily_rets[i] = (value[i]/value[i-1]) – 1
+* std_metric = stdev(daily_rets)
+
+## Max Draw Down
+
+## Sharpe Ratio
+$$S =  \frac{E [R - R_f]}{\sigma} = \frac{E [R - R_f]}{\sqrt{var[R - R_f]}}$$  
+* metric = (average(daily_rets)/stdev(daily_rets)) * sqrt(250)
+
+
+## Homework 1
+[Homework 1 on wiki](http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1 "Homework 1") - ([Marking](http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1_rubric "marking"))
+
+* Find online broker to “paper trade.”
+* Invest $1M in 4 equities.
+* Assess your portfolio for 2011:
+** Annual return
+** Average daily return
+** Stdev of daily return
+** Sharpe Ratio
+* Compare with benchmark: SPY
+* Submit 
+** .pdf printout of your spreadsheet.
+** Screenshot of your portfolio online.
+
+## Demo Using Excel
+
+
+
+[[Category:CI]]

@@ -1,0 +1,3 @@
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]] : [[Musicproduction:DAW:ohmstudio |OhmStudio]]
+==Project Name==
+Because OhmStudio is web-based and intended for collaborative music production it does not manage files like other common DAWs i.e. creating a particular folder in the hard-disk in which all project files are stored. OhmStudio uses a single name for each project inside the application, and stores project sound information and files in the cloud (their servers). Nevertheless a backup of the samples is created in a hard-disk location: ~\Documents\Ohm Force\Ohm Studio\samples. This folder could be changed in the Preferences Window.

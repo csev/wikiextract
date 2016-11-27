@@ -1,0 +1,125 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Inference: Belief Propagation Part 2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Message_Passing_in_Clique_Trees"><span class="tocnumber">1</span> <span class="toctext">Message Passing in Clique Trees</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Video_Table_of_Contents"><span class="tocnumber">2</span> <span class="toctext">Lecture Video Table of Contents</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Properties_of_Belief_Propagation"><span class="tocnumber">2.1</span> <span class="toctext">Properties of Belief Propagation</span></a></li>
+<li class="toclevel-2"><a href="#Clique_Tree_Algorithm_-_Correctness"><span class="tocnumber">2.2</span> <span class="toctext">Clique Tree Algorithm - Correctness</span></a></li>
+<li class="toclevel-2"><a href="#Clique_Tree_Algorithm_-_Computation"><span class="tocnumber">2.3</span> <span class="toctext">Clique Tree Algorithm - Computation</span></a></li>
+<li class="toclevel-2"><a href="#Clique_Tree_and_Independence"><span class="tocnumber">2.4</span> <span class="toctext">Clique Tree and Independence</span></a></li>
+<li class="toclevel-2"><a href="#Clique_Trees_and_Variable_Elimination"><span class="tocnumber">2.5</span> <span class="toctext">Clique Trees and Variable Elimination</span></a></li>
+<li class="toclevel-2"><a href="#BP_In_Practice"><span class="tocnumber">2.6</span> <span class="toctext">BP In Practice</span></a></li>
+<li class="toclevel-2"><a href="#Loopy_BP_and_Message_Decoding"><span class="tocnumber">2.7</span> <span class="toctext">Loopy BP and Message Decoding</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Message_Passing_in_Clique_Trees">Message Passing in Clique Trees</span></h2>
+<ul>
+<li>Once a cluster receives a <strong>final</strong> message from all its neighbours except one,
+then the message which is to be sent to this remaining neighbour is also final.</li>
+<li>From this follows an optimal message passing order from 'leaves inward'
+<ul><li><ul><li> start with clusters which are connected to only one edge
+</li><li> for each such leaf, propagate the message to its parent (the only cluster connected to it)
+</li><li> repeat for those nodes which now have messages from all but one neighbour (i.e. from all children) until the root node is reached</li>
+</li></ul>
+</li></ul>
+</ul>
+<p>This belief propagation scheme is a variant of <a href="/wiki/index.php?title=PGM:Variable_elimination&amp;action=edit&amp;redlink=1" class="new" title="PGM:Variable elimination (page does not exist)">variable elimination</a>. The resulting beliefs are guaranteed to be <strong>correct marginals</strong>.</p>
+<h2> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h2>
+<h3> <span class="mw-headline" id="Properties_of_Belief_Propagation">Properties of Belief Propagation</span></h3>
+<p><pre>
+0:00    Calibration
+1:26    Convergence Implies Calibration
+4:51    Reparameterization
+8:51    Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Clique_Tree_Algorithm_-_Correctness">Clique Tree Algorithm - Correctness</span></h3>
+<p><pre>
+0:49    Message passing in trees
+4:01    Correctness
+7:48    Clique tree
+8:38    Family preservation
+9:36    Running intersection property
+11:23   More complex clique tree
+12:51   Clique tree message passing
+13:57   RIP implies clique tree correctness
+16:21   Clique tree correctness
+17:54   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Clique_Tree_Algorithm_-_Computation">Clique Tree Algorithm - Computation</span></h3>
+<p><pre>
+0:24    Message passing in trees
+4:49    Convergence of message passing
+6:39    Message passing order I
+8:36    Message passing order II
+9:00    Answering queries
+12:01   And more queries
+15:06   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Clique_Tree_and_Independence">Clique Tree and Independence</span></h3>
+<p><pre>
+0:41    RIP and Independence
+3:05    Concrete example
+6:09    Proof by contradiction
+9:40    Implications
+14:15   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Clique_Trees_and_Variable_Elimination">Clique Trees and Variable Elimination</span></h3>
+<p><pre>
+0:00    Introduction
+0:30    Variable Elimination &amp; Clique Trees
+2:08    Clique tree from variable elimination
+2:52    Example
+7:41    Properties of the tree
+10:41   RIP theorem
+13:40   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="BP_In_Practice">BP In Practice</span></h3>
+<p><pre>
+0:29    Misconception revisited
+3:30    Nonconvergent BP run
+3:41    Different variants of BP
+4:01    What Not To Do: Synchronous BP
+5:07    Asynchronous BP: order matters
+6:17    Observations
+7:24    Informed message scheduling
+10:33   Smoothing (damping) messages
+11:49   Convergence comparison graph
+14:34   Summary
+</pre></p>
+<h3> <span class="mw-headline" id="Loopy_BP_and_Message_Decoding">Loopy BP and Message Decoding</span></h3>
+<p><pre>
+0:00    Introduction
+0:22    Message coding and decoding
+1:55    Channel capacity
+4:26    Shannon's theorem
+6:36    How close to C can we get?
+7:58    Turbocodes
+16:25   Low-density parity checking codes
+19:37   Decoding as loopy BP
+20:01   Turbo-codes and LDPCs
+20:43   Summary
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 65/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Belief_Propagation_Part_2&amp;oldid=3875">https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Belief_Propagation_Part_2&amp;oldid=3875</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

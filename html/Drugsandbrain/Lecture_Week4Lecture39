@@ -1,0 +1,54 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Week4Lecture39</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>An edited transcript of Drugs and the Brain Lecture 39 Parkinson’s Disease. Therapeutic approaches: protection by proteins or gene therapy</p>
+<ul>
+<li>This is our final lecture on Parkinson's disease. We are again discussing the prospects for neuro protection. That is once a person has been identified as having early stage Parkinson's disease or has been identified as carrying a mutation that puts him at risk for Parkinson's disease or has perhaps been exposed heavily to an environmental toxin. Is there a way that we can ensure against further neuro degeneration in the substantia nigra, and perhaps elsewhere, and provide a rewarding and happy life for that patient. Well, the problem is definitely not yet solved, but let’s talks about proteins, or gene therapy approaches to Parkinson's disease.  </li>
+</ul>
+<hr />
+<p><strong>Slide&gt;&gt;The “limiting neurotrophic factor” hypothesis for neuronal survival</strong><br />
+<ul><li> In this diagram we discussed the neurotrophic factor hypothesis for neuronal survival. Now this course does not treat the development of the nervous system in any great detail. But the word neurotrophic factor comes from the Greek word for nourishment that's the origin of trophic. And it is the hypothesis for the survival of neurons.<br />
+</li><li> One of the best established principles of developmental neuroscience is that too many neurons are born early in development, and some of them die away. And so, usually there are more neurons in a ganglion or a nucleus than are required to innervate the target cell. The excess neurons die, and in many cases this occurs because the target cell secretes a limited supply of a neurotrophic factor which as we'll see is a protein. Those neurons that do not get enough of this neurotrophic factor are unable to survive. The rest get more of the neurotrophic factor, and they do survive.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Slide&gt;&gt;GDNF, a neurotrophic factor</strong><br />
+<ul><li> Among the neurotrophic factors is glial derived neurotrophic factor or GDNF. It's derived originally from glial cells, and it is heavily localized in the substantia nigra, as well as in its target, the striatum. And experiments with animals and with cell culture indicated that GDNF would help dopaminergic neurons to survive. So it's a neurotrophic factor for dopaminergic neurons.<br />
+</li><li> Here is a diagram of a protein that is a GDNF homolog, a member of the same family as GDNF , complex with part of its receptor. One presumes that the rest of the receptor extends down here, anchoring the receptor in the membrane. The two molecules of GDNF homologue are here on the left and on the right. And here is the PDB file.<br />
+</li><li> Several drug companies tried to infuse GDNF into human brains, patients who had Parkinson's disease, with various pump arrangements, using cannulas, sometimes just in the spinal cord trying to localize the GDNF as near as possible to the striatum or to the substantial nigra. Those trials had been abandoned by some companies despite anecdotal stories of success by some patients. Other drug companies continue trying to give a protein for Parkinson's Disease. You'll remember at the very beginning of this course, we talked about botulinum toxin as one of the few examples of a protein drug for the nervous system. Unfortunately, it remains with ziconotide, a much smaller peptide, still the best example of protein drugs for the nervous system.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Slide&gt;&gt;Attempts at Gene therapy for PD</strong><br />
+<ul><li> Now we turn to the more ambitious topic of gene therapy for Parkinson's disease, and it is probably the neural disease for which gene therapy is furthest along. Gene therapy, one should indicate is an incremental science. People have been trying gene therapy for about twenty years. One needs to get all aspects right, and the hope is that eventually it will become an established therapeutic modality. But it is not yet an established therapeutic modality.<br />
+</li><li> A promising virus that can be modified to carrying genes is called adeno-associated virus. It often is found in patients with adenovirus that is with colds. it is relatively harmless by itself, and it can be modified to be completely harmless but also to have its coding region express the protein of interest. There are various subtypes of adeno-associated virus, AAV2, seems to be a lovely vector for the nervous system so a vector in this case is simply a virus that's been modified to express a protein.<br />
+</li><li> Another class of virus called lentivirus has also been used to try to establish gene therapy for the brain. So, one series of trials has been with GDNF again trying to get it as close as possible to the dopaminergic neurons by injecting the vector into the substantia nigra or into the striatum. Not in this simple diagram, into the arm. And then there's another growth factor, Neurotrophin called neurturin, also associated with dopaminergic neurons, also delivered by an adeno-associated virus. Also, unfortunately, insufficient encouraging results in the early treatments.<br />
+</li><li> Here's a diagram of the DNA getting inserted into the adenovirus. Getting injected into the patient. When in the cell the adenovirus releases the gene which expresses the protein, either GDNF or as we'll see on the next slide, glutamate decarboxylase. Gene therapy for the nervous system does not yet involve any production of new receptor proteins.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Slide&gt;&gt; Gene therapy with glutamate decarboxylase in subthalamic nucleus “AAV2-GAD”</strong><br />
+<ul><li> So, one of the more promising gene therapy trials with AAVs is called AAV2 GAD ( Adeno-associated virus type 2) with glutamate decarboxylase in the subthalamic nucleus. Here is our diagram of the basal ganglia and the mid brain. The subthalamic nucleus, is the only nucleus that has glutamatergic neurons, that is excitatory neurons. The other nuclei in this diagram are either inhibitory or they have the dopaminergic system which is both excitatory and inhibitory. And, in the subthalamic nucleus of Parkinson's patients, there is a lot of extra oscillations presumably correlated with the tremor and you'll also remember, that the subthalamic nucleus is a favorite target for deep brain stimulation.<br />
+</li><li> And so the question arises, could one suppress the tremor and retune the feedback loops that I've told you about by changing some number of STN neurons from glutamatergic to GABAergic (from excitatory to inhibitory) and glutamate decarboxylase is the enzyme that makes GABA. The neurons are then able to package the GABA into their synaptic vesicles and secrete that GABA to inhibit other neurons. And in this case it would be the globus pallidus pars internal or the substania nigra pars reticulata.<br />
+</li><li> The safety of the AAV2-GAD has been established. Its effectiveness is unknown at present, however, the phase two results are initially encouraging. And here's a paper describing those initial encouraging results. A Phase three trial needs to follow and further optimization presumably needs to follow also. But there is reason to keep one's eye on proteins and gene therapy, as promising therapies for Parkinson's disease. This concludes our series on Parkinson's disease.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 17/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week4Lecture39&amp;oldid=6214">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Week4Lecture39&amp;oldid=6214</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

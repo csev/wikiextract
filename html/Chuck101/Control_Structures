@@ -1,0 +1,44 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Chuck101:Control Structures</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><pre>
+// Sinus oscillator with 222.45 Hz (cycles/sec) and amplitude/gain 0.2.
+SinOsc s=&gt;dac;
+222.45 =&gt; s.freq;
+0.2 =&gt; s.gain;
+
+// variable chance;
+1 =&gt; int chance;
+
+// if chance is 1 then play the 222.45Hz sinus for 1 second
+if (chance==1) 
+{
+   1::second =&gt; now;
+}
+// if chance is not 1 play the 440.32Hz sinus for 3 seconds
+else 
+{
+   440.32 =&gt; s.freq;
+   3::second =&gt; now;
+}
+</pre>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Chuck101:Control_Structures&amp;oldid=18299">https://share.coursera.org/wiki/index.php?title=Chuck101:Control_Structures&amp;oldid=18299</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ChucK_101" title="Category:ChucK 101">ChucK 101</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

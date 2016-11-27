@@ -1,0 +1,102 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Wk4 L6</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_4_Lecture_6:_4-6_Equations_for_alphas_and_betas">Week 4 Lecture 6: 4-6 Equations for alphas and betas</span></h1>
+<p><strong>Bioelectricity Week4_6 (slide 27)</strong><br />
+<ul><li>So hello once again, this is Roger Coke Barr talking for the Bioelectricity course, in Week four Topic six. In this topic, we talk about equations for the alphas and the betas, but let's back up just a moment and say where we are. 
+</li><li> We are trying to explain the big deflection from active tissue into action potential. We saw that Hodgkin and Huxley performed a series of experiments in the giant axon of the squid. They expressed the result for individual ion channels in terms of probabilities. And the probabilities increased or decreased as time went by. And in particular they increased and decreased according to rate constants that were called alphas and betas. The alphas and betas were determined experimentally from the squid and that's what we're talking about in this segment.</p>
+</li></ul>
+
+<p><strong>First a matter of terminology: What is the difference between Vm and vm? sketch (slide 28)</strong><br />
+<ul><li> Before talking about the alphas and betas specifically, we need to go back and review what is the difference between Vm with a capital and vm with lowercase. This is important, because it comes into the way that alphas and betas are given to us by Hodgkin and Huxley, and how they expressed it in their experimental results. It's not very hard, but it is confusing if you don't understand the difference.<br />
+</li><li> vm with a lowercase. This vm is measured against the baseline of the recording. So this much is vm. So at point A, vm is equal to 40.<br />
+</li><li> Now on the other hand, capital Vm is measured with respect to a voltage of zero. So at point A, this much would be capital Vm. So at point A, lowercase vm the voltage off the base line is plus 40. While capital Vm (the voltage reference to zero) is minus 30.<br />
+</li><li> Now obviously one is related to the other. So that we have as a matter of mathematical fact, Vm relative to the baseline is capital Vm. The absolute Vm minus the voltage of the signal when the waveform is at rest, Vr.   </p>
+</li></ul>
+
+<p><strong>First a matter of terminology: What is the difference between Vm and vm? comments (slide 29)</strong><br />
+<ul><li> Here's a few comments on while there is both capital Vm and lower vm. vm with the lowercase v is much easier to measure experimentally because if you have the trace of voltage versus time, you can take the actual recording, mark the base line, mark another point and just find the voltage difference.<br />
+</li><li> Whereas, on the choice of voltage versus time recorded from the squid, there's not going to be any line for zero. The reason there is not any line for zero is that the baseline zero, or that is to say the zero value, is affected by the drift in the equipment in measuring DC voltages.<br />
+</li><li> In preparations, such as the squid, is notoriously difficult, so when you do try to measure capital Vm, it is often the case that it is affected the measurement by what is called DC drift. Or, in other words, for the value of voltage equal to zero to move up and down the page a little bit as time goes by.<br />
+</li><li> Then I should call your attention to the fact that here I am trying as much as possible to be consistent, and call voltages that are measured relative to the baseline with a lowercase vm, and the voltages that are absolute, to call those uppercase Vm. I'm trying to maintain that difference consistently. And I hope I do it without making too many mistakes.<br />
+</li><li> If you take the world around us, the big wide world. I would say everyone recognizes (everyone in electrophysiology) that sometimes measurements were given with respect to the baseline and sometimes are given absolute, but the way they are denoted changes from one author to another. So they may or may not follow this lower case capital VMI notation, notational difference.  </p>
+</li></ul>
+
+<p><strong>Alphas and Betas - 0 (slide 30)</strong><br />
+<ul><li> Now, in a minute, we're gonna look at the actual alpha and beta functions. But let me give you a few preliminaries.<br />
+</li><li>As we said, the basic idea of the alpha and beta functions are to measure how fast, for the alpha function is to measure how fast the n, m, and h particles are opening. Or, putting that a little bit differently, to measure the rate at which the probability is increasing. 
+</li><li> If you go to Washington D.C., and ride on the metro train in Washington D.C., one hears the phrase, "Doors are opening," each time the doors open. And in a way that's a corollary. Alpha is telling us, "Doors are opening," and here's the rate at which that's happening.<br />
+</li><li> In contrast, the beta function, we're telling about closing, and they're analogous to the subway is saying doors are closing. How fast is the probability that n, m, and h are moving into the closed position.<br />
+</li><li> In both cases, both alpha and beta these are quantities that have units, and as rates the units that are used there are per millisecond. Now they could be expressed in some other units, of course, but as Hodgkin and Huxley wrote them down, they are per millisecond, and most people have just copied the Hodgkin and Huxley expressions, so those are per millisecond too.<br />
+</li><li> The only thing is, when they copy the Hodgkin and Huxley expression, they don't always remember to copy the units. So you see these equations out there sometimes, as just free standing entities, as if they did not have units. But in fact, they do.  </p>
+</li></ul>
+
+<p><strong>Alphas and Betas - 1 (slide 31)</strong><br />
+<ul><li> It's worth making a note that although the alpha and beta functions are expressed as equations, even though they are presented as mathematical functions, they are, in fact, experimental results.<br />
+</li><li> You might say a part of the genius of Hodkin and Huxley is they took their experimental results and presented them to us as mathematical functions which allows us all to use them again very easily by copying those experimental functions.<br />
+</li><li> It is also true that these values of alpha and beta are ones that are measured for squid axon. That is, they're not the right opening and closing functions for say, electrically active muscle in the human heart. Those may have comparable functions of alpha and beta, but they won't be the same.</p>
+</li></ul>
+
+<p><strong>Alphas and Betas - 2 (slide 32)</strong><br />
+<ul><li> Saying once again, the alpha is the turn on function and their beta is the turn off function. There's an alpha and beta for each of the three probabilities n, m and h. The fact that there is an alpha and beta for each of them leads people to think in their minds that these actual functions are probably pretty similar. Well that's just not true at all.<br />
+</li><li> They're notably different, one from the other. Even when the expression looks somewhat similar, they really are quite different functions. That is to say the values of the functions, at different values of Vm, are, changes. Quite remarkably from one alpha to another alpha to another alpha.<br />
+</li><li> Since there's a turn on function for each of the particles and m and h and also a turn off function, then all together there have to be six functions in all and then indeed that's what's given.<br />
+</li><li> So we'll be looking at the expressions for all six functions putting them on slides, but then looking at them rather quickly.   </p>
+</li></ul>
+
+<p><strong>Alphas and Betas - 3 (slide 33)</strong><br />
+<ul><li> Now here's another little detail, which has ensnared many people in the modern era. It is important to realize that when Hodgkin and Huxley did numerical calculations, they did their numerical calculations manually. And that meant that when they did the calculation, the calculations have some singular points. Some points where the functions are undefined and they just fix that up. To them, it was not a big deal because they knew the values that should go there and they just put them in because they were doing it manually. They rarely even mention it.<br />
+</li><li> On the other hand, when one codes these functions for computer evaluation, as is now done most of the time (most alphas and betas nowadays come out of a computer program), you have to watch out for these singular points. And you have to be, in particular, sure that you code something in there to take care of the case where the denominator of the expression goes to zero, which from the time to time, it does.   </p>
+</li></ul>
+
+<p><strong>Alphas and betas use vm (slide 34)</strong><br />
+<ul><li> Finally, you have to keep in mind that the alpha and beta expressions as written, are done in terms of vm, little vm, the value off of the baseline.<br />
+</li><li> They are not done in terms of capital Vm, the value absolute.<br />
+</li><li>The reason for this, historically, is that Hodgkin and Huxley could not measure capital Vm. Their equipment was not stable enough to do that measurement. The ability to do that measurement reliably has been developed in the 50 years since they did that original work. Therefore, they did what they could, and that is to say what they could most reasonably and most readily. They wrote the expressions based on the data they had which were Vm displacements relative to the baseline. We talked about earlier what the difference was in capital Vm and lower vm. So you know what that is.  </p>
+</li></ul>
+
+<p><strong>Equation for $$alpha&#95;n$$, $$beta&#95;n$$ (slide 35)</strong><br />
+<ul><li> Okay, so now let's look for the specific equations for alpha n and beta n. As you know, n is the probability that a sodium channel is open, or out of a large number of sodium channels, a fraction of sodium channels that are open. And the alpha function is given, right here. The beta function, right there. <strong>This is not correct. n is the probability that a potassium channel is open, not sodium.</strong><br />
+</li><li> If we look at the alpha function in the sense that we were just describing it, we see that there is a point at which the denominator is going to go to zero and in particular is going to go to zero when vm is equal to ten.<br />
+</li><li> So when vm is equal to ten, the numerator there is zero, the, the e to the power goes to one, we subtract one so the denominator goes to zero, and all these other if statements, here are intended to take care of that fact. The beta function, which does not help that issue, is right there.  </p>
+</li></ul>
+
+<p><strong>Equation for $$alpha&#95;m$$, $$beta&#95;m$$ (slide 36)</strong><br />
+<ul><li> For alpha m and beta m, the expression is shown here. Here for our alpha. Here for beta, as given to us by Hodgkin and Huxley with this other code intended to take care of this special case, if present.  </p>
+</li></ul>
+
+<p><strong>Equation for $$alpha&#95;h$$, $$beta&#95;h$$ (slide 37)</strong><br />
+<ul><li> And for alpha h and beta h, we are very happy to see that there's no special case that has to be taken into account. Should say, no special case. So here we have the alpha expression, and here we have the beta expression. If you look at the actual expressions here for h, then you remember the vm is always a positive number during an action potential (well, almost always a positive number). The voltage rises out of the baseline.<br />
+</li><li> Then you say, what do these expressions mean, in terms of the channel? You'd say, well, what alpha h is telling us, looking at this argument, is that as h goes up, alpha h goes down. So it turns on less and less the higher the vms.<br />
+</li><li> And conversely for beta, we'd say, if you look at the way that expression is going to operate, as vm goes up, the denominator's going to get smaller and smaller, so as vm goes up, beta h is gonna go up.<br />
+</li><li> So the turn off function is going to get to be higher and higher with increasing vm. So you can see what the h channel is going to do. As the voltage grows higher, turning on grows less and turning off grows more. So more and more of the h channels are gonna turn off as vm gets bigger and bigger. And indeed, that is what happens.   </p>
+</li></ul>
+
+<p><strong>HH Parameters and State Variables (slide 38)</strong><br />
+<ul><li> While I am in this section of showing specific experimental details I thought it might also be useful to put in a slide that shows the parameters that normally are present in Hodgkin-Huxley membrane. By normally are present, I put these in as values that Hodgkin and Huxley associated with normal squid axon function. So you can use them as beginning points.<br />
+</li><li> Here are the conductivities, and here are the Nernst potentials. And the resting potential is usually about 60 millivolts absolute. In the slide, also, I've written in some other values which are interesting to think about in the context of various applications.<br />
+</li><li> If you ask in this tissue what is it that changes dynamically? Well what changes dynamically are the parameters Vm, n, m and h.<br />
+</li><li> Here are some sample values for those. Done under the conditions the stimulus currents are equal to zero.<br />
+</li><li> Here's another set of sample values. These are just put out as specific examples of two situations. And they are referred to later on in the sections of the course.<br />
+</li><li> Thank you for watching. We move on now, and talk about how this plan comes together. I look forward to talking to you again in the next segment.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 43/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L6&amp;oldid=8485">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Wk4_L6&amp;oldid=8485</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

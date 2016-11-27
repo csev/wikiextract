@@ -1,0 +1,41 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:AutoSubmit</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Auto_submit">Auto submit</span></h1>
+<p>The provided <code>submit.pyc</code> script does not store login and password, but luckily it reads those data from <code>stdin</code>. This makes such additional script possible — create <code>credentials</code> file with your login (1 line) and password (2 line). Save the following script as <code>autosubmit</code>:</p>
+<code><pre>#!/bin/sh
+
+if [&#160;! -e credentials ]
+then
+  echo No credentials found.
+  exit 1
+fi
+
+for TASK in $@
+do
+  ( cat credentials&#160;; echo $TASK ) | python submit.pyc
+done
+</pre></code>
+<p>Now run the <code>autosubmit</code> with task numbers given directly in command line, for example:</p>
+<code><pre>autosubmit 1 3
+</pre></code>
+<p>This will run <code>submit.pyc</code> for task (<strong>task</strong>, not project) 1 and 3.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:AutoSubmit&amp;oldid=13926">https://share.coursera.org/wiki/index.php?title=Optimization:AutoSubmit&amp;oldid=13926</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,885 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Posa:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">2</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">2.1</span> <span class="toctext">Week 1</span></a>
+<ul>
+<li class="toclevel-3"><a href="#URLs_cited_by_PowerPoint_file"><span class="tocnumber">2.1.1</span> <span class="toctext">URLs cited by PowerPoint file</span></a>
+<ul>
+<li class="toclevel-4"><a href="#course-overview_.28pdf.2C_pptx.29"><span class="tocnumber">2.1.1.1</span> <span class="toctext">course-overview (pdf, pptx)</span></a>
+<ul>
+<li class="toclevel-5"><a href="#Dynamic_Instrumentation_and_Static_Analysis"><span class="tocnumber">2.1.1.1.1</span> <span class="toctext">Dynamic Instrumentation and Static Analysis</span></a></li>
+<li class="toclevel-5"><a href="#Challenges_and_strategies_to_deal_with_multi-threaded_software"><span class="tocnumber">2.1.1.1.2</span> <span class="toctext">Challenges and strategies to deal with multi-threaded software</span></a></li>
+<li class="toclevel-5"><a href="#Apply_for_Vanderbilt"><span class="tocnumber">2.1.1.1.3</span> <span class="toctext">Apply for Vanderbilt</span></a></li>
+<li class="toclevel-5"><a href="#.28unclassified.29"><span class="tocnumber">2.1.1.1.4</span> <span class="toctext">(unclassified)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4"><a href="#1-concurrent-networked-software-intro_.28pdf.2C_pptx.29"><span class="tocnumber">2.1.1.2</span> <span class="toctext">1-concurrent-networked-software-intro (pdf, pptx)</span></a></li>
+<li class="toclevel-4"><a href="#2-middleware-overview_.28pdf.2C_pptx.29"><span class="tocnumber">2.1.1.3</span> <span class="toctext">2-middleware-overview (pdf, pptx)</span></a>
+<ul>
+<li class="toclevel-5"><a href="#Part_1"><span class="tocnumber">2.1.1.3.1</span> <span class="toctext">Part 1</span></a></li>
+<li class="toclevel-5"><a href="#Part_2"><span class="tocnumber">2.1.1.3.2</span> <span class="toctext">Part 2</span></a></li>
+</ul>
+</li>
+<li class="toclevel-4"><a href="#3-design-dimensions_.28pdf.2C_pptx.29"><span class="tocnumber">2.1.1.4</span> <span class="toctext">3-design-dimensions (pdf, pptx)</span></a>
+<ul>
+<li class="toclevel-5"><a href="#Part_1_2"><span class="tocnumber">2.1.1.4.1</span> <span class="toctext">Part 1</span></a></li>
+<li class="toclevel-5"><a href="#Part_2_2"><span class="tocnumber">2.1.1.4.2</span> <span class="toctext">Part 2</span></a></li>
+<li class="toclevel-5"><a href="#Part_3"><span class="tocnumber">2.1.1.4.3</span> <span class="toctext">Part 3</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-3"><a href="#Some_Terms"><span class="tocnumber">2.1.2</span> <span class="toctext">Some Terms</span></a></li>
+<li class="toclevel-3"><a href="#Books_cited"><span class="tocnumber">2.1.3</span> <span class="toctext">Books cited</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">2.2</span> <span class="toctext">Week 2</span></a>
+<ul>
+<li class="toclevel-3"><a href="#URLs_cited_by_PowerPoint_file_2"><span class="tocnumber">2.2.1</span> <span class="toctext">URLs cited by PowerPoint file</span></a>
+<ul>
+<li class="toclevel-4"><a href="#OS_Support_for_Programming_Concurrent_.26_Networked_Software"><span class="tocnumber">2.2.1.1</span> <span class="toctext">OS  Support for Programming Concurrent &amp; Networked Software</span></a></li>
+<li class="toclevel-4"><a href="#Android_Support_for_Programming_Concurrent_.26_Networked_Software"><span class="tocnumber">2.2.1.2</span> <span class="toctext">Android Support for Programming Concurrent &amp; Networked Software</span></a></li>
+<li class="toclevel-4"><a href="#Introduction_to_Patterns_.26_Frameworks_.28with_Emphasis_on_Concurrent_.26_Networked_Software.29"><span class="tocnumber">2.2.1.3</span> <span class="toctext">Introduction to Patterns &amp; Frameworks (with Emphasis on Concurrent &amp; Networked Software)</span></a></li>
+<li class="toclevel-4"><a href="#Overview_of_Patterns:_Part_1"><span class="tocnumber">2.2.1.4</span> <span class="toctext">Overview of Patterns: Part 1</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">2.3</span> <span class="toctext">Week 3</span></a>
+<ul>
+<li class="toclevel-3"><a href="#URLs_cited_by_PowerPoint_file_3"><span class="tocnumber">2.3.1</span> <span class="toctext">URLs cited by PowerPoint file</span></a>
+<ul>
+<li class="toclevel-4"><a href="#GoF_.26_POSA1_Pattern_Examples"><span class="tocnumber">2.3.1.1</span> <span class="toctext">GoF &amp; POSA1 Pattern Examples</span></a></li>
+<li class="toclevel-4"><a href="#Overview_of_Pattern_Relationships"><span class="tocnumber">2.3.1.2</span> <span class="toctext">Overview of Pattern Relationships</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">2.4</span> <span class="toctext">Week 4</span></a>
+<ul>
+<li class="toclevel-3"><a href="#URLs_cited_by_PowerPoint_file_4"><span class="tocnumber">2.4.1</span> <span class="toctext">URLs cited by PowerPoint file</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Overview_of_Frameworks"><span class="tocnumber">2.4.1.1</span> <span class="toctext">Overview of Frameworks</span></a></li>
+<li class="toclevel-4"><a href="#Framework_examples"><span class="tocnumber">2.4.1.2</span> <span class="toctext">Framework examples</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_5"><span class="tocnumber">2.5</span> <span class="toctext">Week 5</span></a>
+<ul>
+<li class="toclevel-3"><a href="#URLs_cited"><span class="tocnumber">2.5.1</span> <span class="toctext">URLs cited</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Benefits_.26_Limitations_of_Patterns_.26_Frameworks"><span class="tocnumber">2.5.1.1</span> <span class="toctext">Benefits &amp; Limitations of Patterns &amp; Frameworks</span></a></li>
+<li class="toclevel-4"><a href="#More_Info_on_Patterns_.26_Frameworks"><span class="tocnumber">2.5.1.2</span> <span class="toctext">More Info on Patterns &amp; Frameworks</span></a></li>
+<li class="toclevel-4"><a href="#Overview_of_JAWS_Web_Server_Case_Study"><span class="tocnumber">2.5.1.3</span> <span class="toctext">Overview of JAWS Web Server Case Study</span></a></li>
+<li class="toclevel-4"><a href="#Applying_Patterns_.26_Frameworks_to_Concurrent_.26_Networked_Software"><span class="tocnumber">2.5.1.4</span> <span class="toctext">Applying Patterns &amp; Frameworks to Concurrent &amp; Networked Software</span></a></li>
+<li class="toclevel-4"><a href="#Patterns_.26_Frameworks_for_Service_Access_.26_Communication"><span class="tocnumber">2.5.1.5</span> <span class="toctext">Patterns &amp; Frameworks for Service Access &amp; Communication</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_6"><span class="tocnumber">2.6</span> <span class="toctext">Week 6</span></a>
+<ul>
+<li class="toclevel-3"><a href="#URLs_cited_2"><span class="tocnumber">2.6.1</span> <span class="toctext">URLs cited</span></a>
+<ul>
+<li class="toclevel-4"><a href="#Patterns_.26_Frameworks_for_Synchronous_Event_Handling.2C_Connections.2C_.26_Service_Initialization"><span class="tocnumber">2.6.1.1</span> <span class="toctext">Patterns &amp; Frameworks for Synchronous Event Handling, Connections, &amp; Service Initialization</span></a></li>
+<li class="toclevel-4"><a href="#Patterns_.26_Frameworks_for_Service_Configuration_.26_Activation"><span class="tocnumber">2.6.1.2</span> <span class="toctext">Patterns &amp; Frameworks for Service Configuration &amp; Activation</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_7"><span class="tocnumber">2.7</span> <span class="toctext">Week 7</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Patterns_.26_Frameworks_for_Concurrency_.26_Synchronization"><span class="tocnumber">2.7.1</span> <span class="toctext">Patterns &amp; Frameworks for Concurrency &amp; Synchronization</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_8"><span class="tocnumber">2.8</span> <span class="toctext">Week 8</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Patterns_.26_Frameworks_for_Asynchronous_Event_Handling"><span class="tocnumber">2.8.1</span> <span class="toctext">Patterns &amp; Frameworks for Asynchronous Event Handling</span></a></li>
+<li class="toclevel-3"><a href="#Evaluating_Patterns_.26_Frameworks_for_Concurrent_.26_Networked_Software"><span class="tocnumber">2.8.2</span> <span class="toctext">Evaluating Patterns &amp; Frameworks for Concurrent &amp; Networked Software</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Final_exam"><span class="tocnumber">2.9</span> <span class="toctext">Final exam</span></a></li>
+<li class="toclevel-2"><a href="#Appendix"><span class="tocnumber">2.10</span> <span class="toctext">Appendix</span></a>
+<ul>
+<li class="toclevel-3"><a href="#URLs_cited_by_PowerPoint_file_5"><span class="tocnumber">2.10.1</span> <span class="toctext">URLs cited by PowerPoint file</span></a>
+<ul>
+<li class="toclevel-4"><a href="#A_Case_Study_of_.E2.80.9CGang_of_Four.E2.80.9D_.28GoF.29_Patterns:_Part_1"><span class="tocnumber">2.10.1.1</span> <span class="toctext">A Case Study of “Gang of Four” (GoF) Patterns: Part 1</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Glossary"><span class="tocnumber">2.11</span> <span class="toctext">Glossary</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Keywords_in_alphabetical_order_referencing_the_video_lectures"><span class="tocnumber">2.11.1</span> <span class="toctext">Keywords in alphabetical order referencing the video lectures</span></a></li>
+<li class="toclevel-3"><a href="#A"><span class="tocnumber">2.11.2</span> <span class="toctext">A</span></a></li>
+<li class="toclevel-3"><a href="#B"><span class="tocnumber">2.11.3</span> <span class="toctext">B</span></a></li>
+<li class="toclevel-3"><a href="#C"><span class="tocnumber">2.11.4</span> <span class="toctext">C</span></a></li>
+<li class="toclevel-3"><a href="#D"><span class="tocnumber">2.11.5</span> <span class="toctext">D</span></a></li>
+<li class="toclevel-3"><a href="#E"><span class="tocnumber">2.11.6</span> <span class="toctext">E</span></a></li>
+<li class="toclevel-3"><a href="#F"><span class="tocnumber">2.11.7</span> <span class="toctext">F</span></a></li>
+<li class="toclevel-3"><a href="#G"><span class="tocnumber">2.11.8</span> <span class="toctext">G</span></a></li>
+<li class="toclevel-3"><a href="#H"><span class="tocnumber">2.11.9</span> <span class="toctext">H</span></a></li>
+<li class="toclevel-3"><a href="#I"><span class="tocnumber">2.11.10</span> <span class="toctext">I</span></a></li>
+<li class="toclevel-3"><a href="#J"><span class="tocnumber">2.11.11</span> <span class="toctext">J</span></a></li>
+<li class="toclevel-3"><a href="#K"><span class="tocnumber">2.11.12</span> <span class="toctext">K</span></a></li>
+<li class="toclevel-3"><a href="#L"><span class="tocnumber">2.11.13</span> <span class="toctext">L</span></a></li>
+<li class="toclevel-3"><a href="#M"><span class="tocnumber">2.11.14</span> <span class="toctext">M</span></a></li>
+<li class="toclevel-3"><a href="#N"><span class="tocnumber">2.11.15</span> <span class="toctext">N</span></a></li>
+<li class="toclevel-3"><a href="#O"><span class="tocnumber">2.11.16</span> <span class="toctext">O</span></a></li>
+<li class="toclevel-3"><a href="#P"><span class="tocnumber">2.11.17</span> <span class="toctext">P</span></a></li>
+<li class="toclevel-3"><a href="#Q"><span class="tocnumber">2.11.18</span> <span class="toctext">Q</span></a></li>
+<li class="toclevel-3"><a href="#R"><span class="tocnumber">2.11.19</span> <span class="toctext">R</span></a></li>
+<li class="toclevel-3"><a href="#S"><span class="tocnumber">2.11.20</span> <span class="toctext">S</span></a></li>
+<li class="toclevel-3"><a href="#T"><span class="tocnumber">2.11.21</span> <span class="toctext">T</span></a></li>
+<li class="toclevel-3"><a href="#U"><span class="tocnumber">2.11.22</span> <span class="toctext">U</span></a></li>
+<li class="toclevel-3"><a href="#V"><span class="tocnumber">2.11.23</span> <span class="toctext">V</span></a></li>
+<li class="toclevel-3"><a href="#W"><span class="tocnumber">2.11.24</span> <span class="toctext">W</span></a></li>
+<li class="toclevel-3"><a href="#X"><span class="tocnumber">2.11.25</span> <span class="toctext">X</span></a></li>
+<li class="toclevel-3"><a href="#Y"><span class="tocnumber">2.11.26</span> <span class="toctext">Y</span></a></li>
+<li class="toclevel-3"><a href="#Z"><span class="tocnumber">2.11.27</span> <span class="toctext">Z</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>This is the wiki for the course Pattern-Oriented Software Architectures for Concurrent and Networked Software led by Douglas C. Schmidt.  </p>
+<p>This class resources are intended for the use of all participants in the course, so please feel free to add, edit and organize items of interest.</p>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<h2> <span class="mw-headline" id="Week_1">Week 1</span></h2>
+<h3> <span class="mw-headline" id="URLs_cited_by_PowerPoint_file">URLs cited by PowerPoint file</span></h3>
+<h4> <span class="mw-headline" id="course-overview_.28pdf.2C_pptx.29">course-overview (<a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/course-overview.pdf">pdf</a>, <a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/course-overview.pptx">pptx</a>)</span></h4>
+<h5> <span class="mw-headline" id="Dynamic_Instrumentation_and_Static_Analysis">Dynamic Instrumentation and Static Analysis</span></h5>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/DSIS.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/DSIS.pdf</a>   </li>
+<li><a rel="nofollow" class="external free" href="http://www.fluid.cs.cmu.edu/">http://www.fluid.cs.cmu.edu/</a></li>
+</ul>
+<h5> <span class="mw-headline" id="Challenges_and_strategies_to_deal_with_multi-threaded_software">Challenges and strategies to deal with multi-threaded software</span></h5>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/BC-schmidt.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/BC-schmidt.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/pdcp-editorial.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/pdcp-editorial.pdf</a></li>
+</ul>
+<h5> <span class="mw-headline" id="Apply_for_Vanderbilt">Apply for Vanderbilt</span></h5>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.isis.vanderbilt.edu/">http://www.isis.vanderbilt.edu/</a>  </li>
+<li><a rel="nofollow" class="external free" href="http://www.vanderbilt.edu/eecs">http://www.vanderbilt.edu/eecs</a>   </li>
+<li><a rel="nofollow" class="external free" href="http://www.vanderbilt.edu/">http://www.vanderbilt.edu/</a>  </li>
+</ul>
+<h5> <span class="mw-headline" id=".28unclassified.29">(unclassified)</span></h5>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://steve.vinoski.net/pdf/IEEE-Middleware_Dark_Matter.pdf">http://steve.vinoski.net/pdf/IEEE-Middleware_Dark_Matter.pdf</a>  </li>
+<li><p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/CACM-patterns.html">http://www.dre.vanderbilt.edu/~schmidt/CACM-patterns.html</a>  </p></li>
+<li><p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/CACM-frameworks.html">http://www.dre.vanderbilt.edu/~schmidt/CACM-frameworks.html</a>  </p></li>
+<li><a rel="nofollow" class="external free" href="http://www.meetup.com/Coursera">http://www.meetup.com/Coursera</a>  </li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/ACE">http://www.dre.vanderbilt.edu/ACE</a>   </li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/TAO">http://www.dre.vanderbilt.edu/TAO</a>  </li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/JAWS">http://www.dre.vanderbilt.edu/JAWS</a></li>
+<li><a rel="nofollow" class="external free" href="http://developer.android.com/guide/basics/what-is-android.html">http://developer.android.com/guide/basics/what-is-android.html</a>  </li>
+<li><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Unified_Modeling_Language">http://en.wikipedia.org/wiki/Unified_Modeling_Language</a>  </li>
+</ul>
+<h4> <span class="mw-headline" id="1-concurrent-networked-software-intro_.28pdf.2C_pptx.29">1-concurrent-networked-software-intro (<a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/1-concurrent-networked-software-intro.pdf">pdf</a>, <a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/1-concurrent-networked-software-intro.pptx">pptx</a>)</span></h4>
+<h4> <span class="mw-headline" id="2-middleware-overview_.28pdf.2C_pptx.29">2-middleware-overview (<a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/2-middleware-overview.pdf">pdf</a>, <a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/2-middleware-overview.pptx">pptx</a>)</span></h4>
+<h5> <span class="mw-headline" id="Part_1">Part 1</span></h5>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html">http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html</a> ( Slide 6 - 1:34 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/middleware-encyclopedia.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/middleware-encyclopedia.pdf</a> ( Slide 11 - 3:09 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.rtsj.org/">http://www.rtsj.org/</a> (Slide 19 - 7:25 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/ACE">http://www.dre.vanderbilt.edu/ACE</a> (Slide 19 - 7:25 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.omg.org/dds">http://www.omg.org/dds</a> ( Slide 21 - 9:00 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.omg.org/corba">http://www.omg.org/corba</a> ( Slide 21 - 9:00 )</li>
+</ul>
+<h5> <span class="mw-headline" id="Part_2">Part 2</span></h5>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.sei.cmu.edu/uls">http://www.sei.cmu.edu/uls</a> ( Slide 46 - 11:00 )</li>
+<li><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Ozymandias">http://en.wikipedia.org/wiki/Ozymandias</a> ( Slide 47 - 11:10 )</li>
+</ul>
+<h4> <span class="mw-headline" id="3-design-dimensions_.28pdf.2C_pptx.29">3-design-dimensions (<a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/3-design-dimensions.pdf">pdf</a>, <a rel="nofollow" class="external text" href="https://spark-public.s3.amazonaws.com/posa/slides/3-design-dimensions.pptx">pptx</a>)</span></h4>
+<h5> <span class="mw-headline" id="Part_1_2">Part 1</span></h5>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf</a> ( Slide 5 - 1:28 )</li>
+<li><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Communications_protocol">http://en.wikipedia.org/wiki/Communications_protocol</a> ( Slide 6 - 1:56 )</li>
+<li><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Connection-oriented_protocol">http://en.wikipedia.org/wiki/Connection-oriented_protocol</a> ( Slide 7 - 3:34 ) </li>
+<li><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Connectionless_protocol">http://en.wikipedia.org/wiki/Connectionless_protocol</a> ( Slide 8 - 4:26 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/RT-perf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/RT-perf.pdf</a> ( Slide 12 - 10:24 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ami1.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ami1.pdf</a> ( Slide 14 - 12:42 )</li>
+<li><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ami2.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ami2.pdf</a> ( Slide 14 - 12:42 )</li>
+</ul>
+<h5> <span class="mw-headline" id="Part_2_2">Part 2</span></h5>
+<table border="1">
+    <tr>
+        <td>URL</td>
+        <td>Title</td>
+        <td>Slide</td>
+        <td>Time</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf</a></td>
+        <td>Concurrent and Network Design</td>
+        <td>20</td>
+        <td>0:48</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</a></td>
+        <td>Static vs. Dynamic Linking and Configuration</td>
+        <td>40</td>
+        <td>9:48</td>
+    </tr>
+</table>
+<h5> <span class="mw-headline" id="Part_3">Part 3</span></h5>
+<table border="1">
+    <tr>
+        <td>URL</td>
+        <td>Title</td>
+        <td>Slide</td>
+        <td>Time</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf</a></td>
+        <td>Concurrent and Network Design</td>
+        <td>44</td>
+        <td>0:48</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor1-93.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor1-93.pdf</a></td>
+        <td>Iterative vs. Concurrent Servers</td>
+        <td>46</td>
+        <td>3:40</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://kircher-schwanninger.de/michael/publications/EagerAcquisition.pdf">http://kircher-schwanninger.de/michael/publications/EagerAcquisition.pdf</a></td>
+        <td>Thread/Process Pool Eager Spawning Strategies</td>
+        <td>49</td>
+        <td>7:50</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf</a></td>
+        <td>Thread/Process Pool Eager Spawning Strategies</td>
+        <td>51</td>
+        <td>10:58</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf</a></td>
+        <td>Thread/Process Pool Eager Spawning Strategies</td>
+        <td>51</td>
+        <td>10:58</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://kircher-schwanninger.de/michael/publications/LazyAcquisition.pdf">http://kircher-schwanninger.de/michael/publications/LazyAcquisition.pdf</a></td>
+        <td>On-demand Thread/Process Spawning Strategies</td>
+        <td>52</td>
+        <td>11:30</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/PDCP.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/PDCP.pdf</a></td>
+        <td>On-demand Thread/Process Spawning Strategies</td>
+        <td>53</td>
+        <td>12:55</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Scheduler_activations">http://en.wikipedia.org/wiki/Scheduler_activations</a></td>
+        <td>Hybrid Threading Model</td>
+        <td>58</td>
+        <td>17:20</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="ftp://crimson.ihg.uni-duisburg.de/Solaris/docs/multi_thread.pdf">ftp://crimson.ihg.uni-duisburg.de/Solaris/docs/multi_thread.pdf</a></td>
+        <td>Hybrid Threading Model</td>
+        <td>60</td>
+        <td>18:17</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Pipeline_(software)">http://en.wikipedia.org/wiki/Pipeline_(software)</a></td>
+        <td>Task- vs. Message-based Architectures</td>
+        <td>64</td>
+        <td>20:04</td>
+    </tr>
+    <tr>
+        <td><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/INFOCOM-94.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/INFOCOM-94.pdf</a></td>
+        <td>Task- vs. Message-based Architectures</td>
+        <td>64</td>
+        <td>21:50</td>
+    </tr>
+</table>
+<h3> <span class="mw-headline" id="Some_Terms">Some Terms</span></h3>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.businessdictionary.com/definition/commoditization.html">http://www.businessdictionary.com/definition/commoditization.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Commoditization">http://en.wikipedia.org/wiki/Commoditization</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Decomposition_(computer_science)">Decomposition</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Dynamic_dispatch">Dynamic dispatch/binding</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Books_cited">Books cited</span></h3>
+<ul>
+<li>Design Patterns: Elements of Reusable Object-Oriented Software. <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Design_Patterns">Wikipedia</a>, <a rel="nofollow" class="external text" href="http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1362891532&amp;sr=1-1&amp;keywords=Design+Patterns%3A+Elements+of+Reusable+Object-Oriented+Software">Amazon</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://www.amazon.com/Pattern-Oriented-Software-Architecture-System-Patterns/dp/0471958697">Pattern-Oriented Software Architecture Volume 1</a>, aka POSA 1.</li>
+<li><a rel="nofollow" class="external text" href="http://www.amazon.com/Pattern-Oriented-Software-Architecture-Concurrent-Networked/dp/0471606952">Pattern-Oriented Software Architecture Volume 2</a>, aka POSA 2.</li>
+<li><a rel="nofollow" class="external text" href="http://www.amazon.com/Network-Programming-Mastering-Complexity-Patterns/dp/0201604647/ref=sr_1_4?s=books&amp;ie=UTF8&amp;qid=1362891302&amp;sr=1-4&amp;keywords=douglas+c.+schmidt">C++ Network Programming, Volume 1</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.amazon.com/Network-Programming-Systematic-Reuse-Frameworks/dp/0201795256/ref=sr_1_3?s=books&amp;ie=UTF8&amp;qid=1362891302&amp;sr=1-3&amp;keywords=douglas+c.+schmidt">C++ Network Programming, Volume 2</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_2">Week 2</span></h2>
+<h3> <span class="mw-headline" id="URLs_cited_by_PowerPoint_file_2">URLs cited by PowerPoint file</span></h3>
+<h4> <span class="mw-headline" id="OS_Support_for_Programming_Concurrent_.26_Networked_Software">OS  Support for Programming Concurrent &amp; Networked Software</span></h4>
+<p><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Berkeley_sockets">http://en.wikipedia.org/wiki/Berkeley_sockets</a> (appears on slide: 4)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Select_(Unix)">http://en.wikipedia.org/wiki/Select_(Unix)</a> (appears on slide: 23)<br />
+<a rel="nofollow" class="external free" href="http://static.usenix.org/event/usenix99/full_papers/banga/banga_html/final2.html">http://static.usenix.org/event/usenix99/full_papers/banga/banga_html/final2.html</a> (appears on slide: 25)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/IPC_SAP-92.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/IPC_SAP-92.pdf</a> (appears on slide: 26)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization">http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization</a> (appears on slide: 68)  </p>
+<h4> <span class="mw-headline" id="Android_Support_for_Programming_Concurrent_.26_Networked_Software">Android Support for Programming Concurrent &amp; Networked Software</span></h4>
+<p><a rel="nofollow" class="external free" href="http://developer.android.com/guide/basics/what-is-android.html">http://developer.android.com/guide/basics/what-is-android.html</a> (appears on slide: 6)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Android_(operating_system)#Linux">http://en.wikipedia.org/wiki/Android_(operating_system)#Linux</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://tidsp.es.ncku.edu.tw/cinfon/resource/slides/11102012_02_final.pdf">http://tidsp.es.ncku.edu.tw/cinfon/resource/slides/11102012_02_final.pdf</a> (appears on slide: 10)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/tools/sdk/ndk/index.html">http://developer.android.com/tools/sdk/ndk/index.html</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Dalvik_(software)">http://en.wikipedia.org/wiki/Dalvik_(software)</a> (appears on slide: 15)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Comparison_of_Java_and_Android_API">http://en.wikipedia.org/wiki/Comparison_of_Java_and_Android_API</a> (appears on slide: 17)<br />
+<a rel="nofollow" class="external free" href="https://sites.google.com/site/io/inside-the-android-application-framework">https://sites.google.com/site/io/inside-the-android-application-framework</a> (appears on slide: 19)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 21)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/Activity.html">http://developer.android.com/reference/android/app/Activity.html</a> (appears on slide: 23)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/guide/components/services.html">http://developer.android.com/guide/components/services.html</a> (appears on slide: 26)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/guide/topics/providers/content-providers.html">http://developer.android.com/guide/topics/providers/content-providers.html</a> (appears on slide: 29)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/content/BroadcastReceiver.html">http://developer.android.com/reference/android/content/BroadcastReceiver.html</a> (appears on slide: 31)<br />
+<a rel="nofollow" class="external free" href="https://sites.google.com/site/io/anatomy--physiology-of-an-android">https://sites.google.com/site/io/anatomy--physiology-of-an-android</a> (appears on slide: 32)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/guide/components/fundamentals.html">http://developer.android.com/guide/components/fundamentals.html</a> (appears on slide: 33)<br />
+<a rel="nofollow" class="external free" href="http://source.android.com/">http://source.android.com/</a> (appears on slide: 34)<br />
+<a rel="nofollow" class="external free" href="http://www.nds.rub.de/media/attachments/files/2012/03/binder.pdf">http://www.nds.rub.de/media/attachments/files/2012/03/binder.pdf</a> (appears on slide: 37)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/training/basics/network-ops/connecting.html">http://developer.android.com/training/basics/network-ops/connecting.html</a> (appears on slide: 38)<br />
+<a rel="nofollow" class="external free" href="https://sites.google.com/site/io/anatomy--physiology-of-an-android">https://sites.google.com/site/io/anatomy--physiology-of-an-android</a> (appears on slide: 41)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/guide/components/aidl.html">http://developer.android.com/guide/components/aidl.html</a> (appears on slide: 45)<br />
+<a rel="nofollow" class="external free" href="http://www.vogella.com/tutorials.html">http://www.vogella.com/tutorials.html</a> (appears on slide: 51)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf</a> (appears on slide: 52)<br />
+<a rel="nofollow" class="external free" href="http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf">http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf</a> (appears on slide: 53)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/guide/components/processes-and-threads.html">http://developer.android.com/guide/components/processes-and-threads.html</a> (appears on slide: 57)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf</a> (appears on slide: 72)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/java/util/concurrent/package-summary.html">http://developer.android.com/reference/java/util/concurrent/package-summary.html</a> (appears on slide: 73)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/training/articles/perf-anr.html">http://developer.android.com/training/articles/perf-anr.html</a> (appears on slide: 74)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/os/AsyncTask.html">http://developer.android.com/reference/android/os/AsyncTask.html</a> (appears on slide: 77)<br />
+<a rel="nofollow" class="external free" href="https://developer.android.com/training/multiple-threads/communicate-ui.html">https://developer.android.com/training/multiple-threads/communicate-ui.html</a> (appears on slide: 78)<br />
+<a rel="nofollow" class="external free" href="http://www.vogella.com/articles/AndroidBackgroundProcessing/article.html">http://www.vogella.com/articles/AndroidBackgroundProcessing/article.html</a> (appears on slide: 79)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF">http://www.dre.vanderbilt.edu/~schmidt/PDF</a> (appears on slide: 83)<br />
+<a rel="nofollow" class="external free" href="http://gee.cs.oswego.edu/dl/cpj">http://gee.cs.oswego.edu/dl/cpj</a> (appears on slide: 84)  </p>
+<h4> <span class="mw-headline" id="Introduction_to_Patterns_.26_Frameworks_.28with_Emphasis_on_Concurrent_.26_Networked_Software.29">Introduction to Patterns &amp; Frameworks (with Emphasis on Concurrent &amp; Networked Software)</span></h4>
+<p><a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png">http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/ACE">http://www.dre.vanderbilt.edu/ACE</a> (appears on slide: 20)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/">http://developer.android.com/</a> (appears on slide: 21)<br />
+<a rel="nofollow" class="external free" href="http://blog.sei.cmu.edu/archives.cfm/category/reflections-on-software-architecture">http://blog.sei.cmu.edu/archives.cfm/category/reflections-on-software-architecture</a> (appears on slide: 23)  </p>
+<h4> <span class="mw-headline" id="Overview_of_Patterns:_Part_1">Overview of Patterns: Part 1</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/gperf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/gperf.pdf</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://www.gnu.org/software/gperf">http://www.gnu.org/software/gperf</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://www.ioccc.org/">http://www.ioccc.org/</a> (appears on slide: 9)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ECOOP-95.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ECOOP-95.pdf</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?PatternForms">http://c2.com/cgi/wiki?PatternForms</a> (appears on slide: 37)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/e/ec/Spiral_model_(Boehm,_1988).svg">http://upload.wikimedia.org/wikipedia/commons/e/ec/Spiral_model_(Boehm,_1988).svg</a> (appears on slide: 39)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf</a> (appears on slide: 42)<br />
+<a rel="nofollow" class="external free" href="http://www.research.ibm.com/designpatterns/pubs/ph-jun96.txt">http://www.research.ibm.com/designpatterns/pubs/ph-jun96.txt</a> (appears on slide: 48; link is broken, but here is an alternative: <a rel="nofollow" class="external free" href="http://allpatterns.blogspot.com/2006/12/to-kill-singleton.html">http://allpatterns.blogspot.com/2006/12/to-kill-singleton.html</a>)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Double-checked_locking">http://en.wikipedia.org/wiki/Double-checked_locking</a> (appears on slide: 52)  </p>
+<h2> <span class="mw-headline" id="Week_3">Week 3</span></h2>
+<h3> <span class="mw-headline" id="URLs_cited_by_PowerPoint_file_3">URLs cited by PowerPoint file</span></h3>
+<h4> <span class="mw-headline" id="GoF_.26_POSA1_Pattern_Examples">GoF &amp; POSA1 Pattern Examples</span></h4>
+<p><a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?HistoryOfPatterns">http://c2.com/cgi/wiki?HistoryOfPatterns</a> (appears on slide: 3)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?HistoryOfPatterns">http://c2.com/cgi/wiki?HistoryOfPatterns</a> (appears on slide: 4)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?HistoryOfPatterns">http://c2.com/cgi/wiki?HistoryOfPatterns</a> (appears on slide: 5)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?HistoryOfPatterns">http://c2.com/cgi/wiki?HistoryOfPatterns</a> (appears on slide: 6)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?HistoryOfPatterns">http://c2.com/cgi/wiki?HistoryOfPatterns</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/">http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?HistoryOfPatterns">http://c2.com/cgi/wiki?HistoryOfPatterns</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?HistoryOfPatterns">http://c2.com/cgi/wiki?HistoryOfPatterns</a> (appears on slide: 9)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Design_Patterns">http://en.wikipedia.org/wiki/Design_Patterns</a> (appears on slide: 10)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/POSA">http://www.dre.vanderbilt.edu/POSA</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 20)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 21)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 22)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 23)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 24)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Proxy_pattern">http://en.wikipedia.org/wiki/Proxy_pattern</a> (appears on slide: 31)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Proxy_pattern">http://en.wikipedia.org/wiki/Proxy_pattern</a> (appears on slide: 32)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 46)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/comm-foreword.html">http://www.dre.vanderbilt.edu/~schmidt/comm-foreword.html</a> (appears on slide: 50)<br />
+<a rel="nofollow" class="external free" href="http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf">http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf</a> (appears on slide: 61)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbit.edu/TAO">http://www.dre.vanderbit.edu/TAO</a> (appears on slide: 62)<br />
+<a rel="nofollow" class="external free" href="http://www.jacorb.org/">http://www.jacorb.org/</a> (appears on slide: 62)<br />
+<a rel="nofollow" class="external free" href="http://www.voelter.de/publications/books-rem.html">http://www.voelter.de/publications/books-rem.html</a> (appears on slide: 63)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 66)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/training/articles/perf-anr.html">http://developer.android.com/training/articles/perf-anr.html</a> (appears on slide: 68)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/IntentService.html">http://developer.android.com/reference/android/app/IntentService.html</a> (appears on slide: 70)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/IntentService.html">http://developer.android.com/reference/android/app/IntentService.html</a> (appears on slide: 71)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/IntentService.html">http://developer.android.com/reference/android/app/IntentService.html</a> (appears on slide: 72)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/IntentService.html">http://developer.android.com/reference/android/app/IntentService.html</a> (appears on slide: 73)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/IntentService.html">http://developer.android.com/reference/android/app/IntentService.html</a> (appears on slide: 74)<br />
+<a rel="nofollow" class="external free" href="http://wiki.hsr.ch/APF/files/CommandProcessor.pdf">http://wiki.hsr.ch/APF/files/CommandProcessor.pdf</a> (appears on slide: 75)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 85)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Observer_pattern">http://en.wikipedia.org/wiki/Observer_pattern</a> (appears on slide: 95)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ieee-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ieee-patterns.pdf</a> (appears on slide: 99)  </p>
+<h4> <span class="mw-headline" id="Overview_of_Pattern_Relationships">Overview of Pattern Relationships</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/">http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/</a> (appears on slide: 2)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png">http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png</a> (appears on slide: 3)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?SingletonsAreEvil">http://c2.com/cgi/wiki?SingletonsAreEvil</a> (appears on slide: 4)<br />
+<a rel="nofollow" class="external free" href="http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/">http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/</a> (appears on slide: 5)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png">http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png</a> (appears on slide: 13)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Pattern_language">http://en.wikipedia.org/wiki/Pattern_language</a> (appears on slide: 14)<br />
+<a rel="nofollow" class="external free" href="http://gee.cs.oswego.edu/dl/acs/acs/acs.html">http://gee.cs.oswego.edu/dl/acs/acs/acs.html</a> (appears on slide: 20)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 21)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 22)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 23)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 24)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 25)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 26)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 27)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 28)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern</a> (appears on slide: 31)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 33)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 34)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 35)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 36)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 37)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 38)<br />
+<a rel="nofollow" class="external free" href="http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf">http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf</a> (appears on slide: 39)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 42)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 43)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html</a> (appears on slide: 44)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf</a> (appears on slide: 47)<br />
+<a rel="nofollow" class="external free" href="http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html">http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html</a> (appears on slide: 48)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf</a> (appears on slide: 49)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Proxy_pattern">http://en.wikipedia.org/wiki/Proxy_pattern</a> (appears on slide: 50)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Adapter_pattern">http://en.wikipedia.org/wiki/Adapter_pattern</a> (appears on slide: 50)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</a> (appears on slide: 51)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Abstract_factory_pattern">http://en.wikipedia.org/wiki/Abstract_factory_pattern</a> (appears on slide: 52)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Strategy_pattern">http://en.wikipedia.org/wiki/Strategy_pattern</a> (appears on slide: 53)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF">http://www.dre.vanderbilt.edu/~schmidt/PDF</a> (appears on slide: 54)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf</a> (appears on slide: 55)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf</a> (appears on slide: 56)<br />
+<a rel="nofollow" class="external free" href="http://wiki.hsr.ch/APF/files/BeyondtheGangofFour.pdf">http://wiki.hsr.ch/APF/files/BeyondtheGangofFour.pdf</a> (appears on slide: 61)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/POA.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/POA.pdf</a> (appears on slide: 62)<br />
+<a rel="nofollow" class="external free" href="http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx">http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx</a> (appears on slide: 64)<br />
+<a rel="nofollow" class="external free" href="http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx">http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx</a> (appears on slide: 65)<br />
+<a rel="nofollow" class="external free" href="http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx">http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx</a> (appears on slide: 66)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png">http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png</a> (appears on slide: 79)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png">http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png</a> (appears on slide: 80)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png">http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png</a> (appears on slide: 81)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Strategy_pattern">http://en.wikipedia.org/wiki/Strategy_pattern</a> (appears on slide: 85)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Strategy_pattern">http://en.wikipedia.org/wiki/Strategy_pattern</a> (appears on slide: 86)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Abstract_factory_pattern">http://en.wikipedia.org/wiki/Abstract_factory_pattern</a> (appears on slide: 88)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</a> (appears on slide: 91)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</a> (appears on slide: 92)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png">http://upload.wikimedia.org/wikipedia/commons/9/97/DNA_Double_Helix.png</a> (appears on slide: 96)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Hyperlink_cinema">http://en.wikipedia.org/wiki/Hyperlink_cinema</a> (appears on slide: 103)<br />
+<a rel="nofollow" class="external free" href="http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html">http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html</a> (appears on slide: 105)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf</a> (appears on slide: 106)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf</a> (appears on slide: 107)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf</a> (appears on slide: 108)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf</a> (appears on slide: 109)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf</a> (appears on slide: 110)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Strategy_pattern">http://en.wikipedia.org/wiki/Strategy_pattern</a> (appears on slide: 111)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Abstract_factory_pattern">http://en.wikipedia.org/wiki/Abstract_factory_pattern</a> (appears on slide: 112)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</a> (appears on slide: 113)<br />
+<a rel="nofollow" class="external free" href="http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf">http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf</a> (appears on slide: 114)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf</a> (appears on slide: 129)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf</a> (appears on slide: 130)<br />
+<a rel="nofollow" class="external free" href="http://www.takeourword.com/images/persistence-of-memory.jpg">http://www.takeourword.com/images/persistence-of-memory.jpg</a> (appears on slide: 132)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf</a> (appears on slide: 133)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf</a> (appears on slide: 140)  </p>
+<h2> <span class="mw-headline" id="Week_4">Week 4</span></h2>
+<h3> <span class="mw-headline" id="URLs_cited_by_PowerPoint_file_4">URLs cited by PowerPoint file</span></h3>
+<h4> <span class="mw-headline" id="Overview_of_Frameworks">Overview of Frameworks</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/dedicate.html">http://www.dre.vanderbilt.edu/~schmidt/dedicate.html</a> (appears on slide: 5)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/comm-lessons.html">http://www.dre.vanderbilt.edu/~schmidt/comm-lessons.html</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/reuse-lessons.html">http://www.dre.vanderbilt.edu/~schmidt/reuse-lessons.html</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/CACM-frameworks.html">http://www.dre.vanderbilt.edu/~schmidt/CACM-frameworks.html</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/Coursera/articles/hollywood-principle.txt">http://www.dre.vanderbilt.edu/~schmidt/Coursera/articles/hollywood-principle.txt</a> (appears on slide: 13)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor1-93.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor1-93.pdf</a> (appears on slide: 14)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor2-93.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor2-93.pdf</a> (appears on slide: 15)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf</a> (appears on slide: 18)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/TAPOS.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/TAPOS.pdf</a> (appears on slide: 21)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/scoreboard">http://www.dre.vanderbilt.edu/scoreboard</a> (appears on slide: 26)<br />
+<a rel="nofollow" class="external free" href="http://w3.isis.vanderbilt.edu/projects/gme">http://w3.isis.vanderbilt.edu/projects/gme</a> (appears on slide: 27)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Library_(computing)">http://en.wikipedia.org/wiki/Library_(computing)</a> (appears on slide: 31)<br />
+<a rel="nofollow" class="external free" href="http://st-www.cs.illinois.edu/users/johnson/frameworks.html">http://st-www.cs.illinois.edu/users/johnson/frameworks.html</a> (appears on slide: 32)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/report-doc.html">http://www.dre.vanderbilt.edu/~schmidt/report-doc.html</a> (appears on slide: 33)<br />
+<a rel="nofollow" class="external free" href="http://www.laputan.org/drc/drc.html">http://www.laputan.org/drc/drc.html</a> (appears on slide: 36)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Strategy_pattern">http://en.wikipedia.org/wiki/Strategy_pattern</a> (appears on slide: 37)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Template_method">http://en.wikipedia.org/wiki/Template_method</a> (appears on slide: 38)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/os/AsyncTask.html">http://developer.android.com/reference/android/os/AsyncTask.html</a> (appears on slide: 42)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/os/AsyncTask.html">http://developer.android.com/reference/android/os/AsyncTask.html</a> (appears on slide: 46)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ICCDS.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ICCDS.pdf</a> (appears on slide: 48)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf</a> (appears on slide: 50)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Queue-04.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Queue-04.pdf</a> (appears on slide: 53)  </p>
+<h4> <span class="mw-headline" id="Framework_examples">Framework examples</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.sei.cmu.edu/productlines">http://www.sei.cmu.edu/productlines</a> (appears on slide: 5)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.iastate.edu/~cs309/references/CoplienHoffmanWeiss_CommonalityVariability.pdf">http://www.cs.iastate.edu/~cs309/references/CoplienHoffmanWeiss_CommonalityVariability.pdf</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/">http://developer.android.com/</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/ACE">http://www.dre.vanderbilt.edu/ACE</a> (appears on slide: 20)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/training/basics/activity-lifecycle/index.html">http://developer.android.com/training/basics/activity-lifecycle/index.html</a> (appears on slide: 34)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/Activity.html">http://developer.android.com/reference/android/app/Activity.html</a> (appears on slide: 40)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/reference/android/app/Activity.html">http://developer.android.com/reference/android/app/Activity.html</a> (appears on slide: 46)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/cs282">http://www.dre.vanderbilt.edu/~schmidt/cs282</a> (appears on slide: 48)<br />
+<a rel="nofollow" class="external free" href="http://developer.android.com/guide/components/services.html">http://developer.android.com/guide/components/services.html</a> (appears on slide: 50)<br />
+<a rel="nofollow" class="external free" href="http://www.androidpatterns.com/">http://www.androidpatterns.com/</a> (appears on slide: 60)<br />
+<a rel="nofollow" class="external free" href="http://www.androiddesignpatterns.com/">http://www.androiddesignpatterns.com/</a> (appears on slide: 60)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/reactor-rules.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/reactor-rules.pdf</a> (appears on slide: 63)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf</a> (appears on slide: 65)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf</a> (appears on slide: 67)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf</a> (appears on slide: 69)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ACE-concurrency.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ACE-concurrency.pdf</a> (appears on slide: 71)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/DSEJ-94.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/DSEJ-94.pdf</a> (appears on slide: 73)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/STREAMS">http://en.wikipedia.org/wiki/STREAMS</a> (appears on slide: 82)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/DSEJ-94.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/DSEJ-94.pdf</a> (appears on slide: 98)  </p>
+<h2> <span class="mw-headline" id="Week_5">Week 5</span></h2>
+<p><a href="/wiki/index.php/Posa:Philosophers_problem" title="Posa:Philosophers problem">Programming Assignment #2: The Dining Philosophers problem</a></p>
+<h3> <span class="mw-headline" id="URLs_cited">URLs cited</span></h3>
+<h4> <span class="mw-headline" id="Benefits_.26_Limitations_of_Patterns_.26_Frameworks">Benefits &amp; Limitations of Patterns &amp; Frameworks</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor2-93.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor2-93.pdf</a> (appears on slide: 3)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf</a> (appears on slide: 4)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/OM-01.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/OM-01.pdf</a> (appears on slide: 6)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/corba-research-design.html">http://www.dre.vanderbilt.edu/~schmidt/corba-research-design.html</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/GEI.pdf">http://www.dre.vanderbilt.edu/~schmidt/GEI.pdf</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://upload.wikimedia.org/wikipedia/commons/4/43/Punishment_sisyph.jpg">http://upload.wikimedia.org/wikipedia/commons/4/43/Punishment_sisyph.jpg</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Epoll">http://en.wikipedia.org/wiki/Epoll</a> (appears on slide: 14)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/patterns-experience.html">http://www.dre.vanderbilt.edu/~schmidt/patterns-experience.html</a> (appears on slide: 19)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf</a> (appears on slide: 23)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf</a> (appears on slide: 24)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/scoreboard">http://www.dre.vanderbilt.edu/scoreboard</a> (appears on slide: 25)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Queue-04.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Queue-04.pdf</a> (appears on slide: 32)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/patterns-ace.html">http://www.dre.vanderbilt.edu/~schmidt/patterns-ace.html</a> (appears on slide: 35)  </p>
+<h4> <span class="mw-headline" id="More_Info_on_Patterns_.26_Frameworks">More Info on Patterns &amp; Frameworks</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.hillside.net/patterns/books">http://www.hillside.net/patterns/books</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/">http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/writersworkshop.html">http://www.dre.vanderbilt.edu/~schmidt/writersworkshop.html</a> (appears on slide: 9)<br />
+<a rel="nofollow" class="external free" href="http://hillside.net/conferencesnavigation.htm">http://hillside.net/conferencesnavigation.htm</a> (appears on slide: 9)<br />
+<a rel="nofollow" class="external free" href="http://hillside.net/patterns/mailing.htm">http://hillside.net/patterns/mailing.htm</a> (appears on slide: 10)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/patterns.html">http://www.dre.vanderbilt.edu/~schmidt/patterns.html</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/courses.html">http://www.dre.vanderbilt.edu/~schmidt/courses.html</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/POSA">http://www.dre.vanderbilt.edu/~schmidt/POSA</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/ACE">http://www.dre.vanderbilt.edu/~schmidt/ACE</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/multimedia.html">http://www.dre.vanderbilt.edu/~schmidt/multimedia.html</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/ACE">http://www.dre.vanderbilt.edu/ACE</a> (appears on slide: 11)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/TAO">http://www.dre.vanderbilt.edu/TAO</a> (appears on slide: 11)  </p>
+<h4> <span class="mw-headline" id="Overview_of_JAWS_Web_Server_Case_Study">Overview of JAWS Web Server Case Study</span></h4>
+<p><a rel="nofollow" class="external free" href="http://download.dre.vanderbilt.edu/">http://download.dre.vanderbilt.edu/</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/JAWS">http://www.dre.vanderbilt.edu/JAWS</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/POSA">http://www.dre.vanderbilt.edu/POSA</a> (appears on slide: 19)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Pattern_language">http://en.wikipedia.org/wiki/Pattern_language</a> (appears on slide: 37)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/ACE.html">http://www.dre.vanderbilt.edu/ACE.html</a> (appears on slide: 47)  </p>
+<h4> <span class="mw-headline" id="Applying_Patterns_.26_Frameworks_to_Concurrent_.26_Networked_Software">Applying Patterns &amp; Frameworks to Concurrent &amp; Networked Software</span></h4>
+<p><a rel="nofollow" class="external free" href="http://download.dre.vanderbilt.edu/">http://download.dre.vanderbilt.edu/</a> (appears on slide: 7)  </p>
+<h4> <span class="mw-headline" id="Patterns_.26_Frameworks_for_Service_Access_.26_Communication">Patterns &amp; Frameworks for Service Access &amp; Communication</span></h4>
+<p><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Berkeley_sockets">http://en.wikipedia.org/wiki/Berkeley_sockets</a> (appears on slide: 4)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/C++-wrappers.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/C++-wrappers.pdf</a> (appears on slide: 19)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf</a> (appears on slide: 26)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Socket-Wrappers.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Socket-Wrappers.pdf</a> (appears on slide: 42)<br />
+<a rel="nofollow" class="external free" href="http://erdani.com/publications/traits.html">http://erdani.com/publications/traits.html</a> (appears on slide: 52)  </p>
+<h2> <span class="mw-headline" id="Week_6">Week 6</span></h2>
+<p><a href="/wiki/index.php/Posa:EchoServer_Netty" title="Posa:EchoServer Netty">Programming Assignment #3 - The Echo server using Java Netty NIO framework</a></p>
+<h3> <span class="mw-headline" id="URLs_cited_2">URLs cited</span></h3>
+<h4> <span class="mw-headline" id="Patterns_.26_Frameworks_for_Synchronous_Event_Handling.2C_Connections.2C_.26_Service_Initialization">Patterns &amp; Frameworks for Synchronous Event Handling, Connections, &amp; Service Initialization</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf</a> (appears on slide: 6)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf</a> (appears on slide: 12)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/reactor-rules.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/reactor-rules.pdf</a> (appears on slide: 37)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf</a> (appears on slide: 95)  </p>
+<h4> <span class="mw-headline" id="Patterns_.26_Frameworks_for_Service_Configuration_.26_Activation">Patterns &amp; Frameworks for Service Configuration &amp; Activation</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</a> (appears on slide: 33)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Activator.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Activator.pdf</a> (appears on slide: 77)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Inetd">http://en.wikipedia.org/wiki/Inetd</a> (appears on slide: 81)  </p>
+<h2> <span class="mw-headline" id="Week_7">Week 7</span></h2>
+<h4> <span class="mw-headline" id="Patterns_.26_Frameworks_for_Concurrency_.26_Synchronization">Patterns &amp; Frameworks for Concurrency &amp; Synchronization</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Active-Objects.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Active-Objects.pdf</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ACE-concurrency.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ACE-concurrency.pdf</a> (appears on slide: 30)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf</a> (appears on slide: 64)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf</a> (appears on slide: 99)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf</a> (appears on slide: 123)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf</a> (appears on slide: 135)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization">http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization</a> (appears on slide: 138)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf</a> (appears on slide: 142)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf</a> (appears on slide: 161)  </p>
+<h2> <span class="mw-headline" id="Week_8">Week 8</span></h2>
+<h4> <span class="mw-headline" id="Patterns_.26_Frameworks_for_Asynchronous_Event_Handling">Patterns &amp; Frameworks for Asynchronous Event Handling</span></h4>
+<p><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Input/output_completion_port">http://en.wikipedia.org/wiki/Input/output_completion_port</a> (appears on slide: 3)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Active-Objects.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Active-Objects.pdf</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf</a> (appears on slide: 33)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ACT.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ACT.pdf</a> (appears on slide: 77)  </p>
+<h4> <span class="mw-headline" id="Evaluating_Patterns_.26_Frameworks_for_Concurrent_.26_Networked_Software">Evaluating Patterns &amp; Frameworks for Concurrent &amp; Networked Software</span></h4>
+<p><a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/JAWS">http://www.dre.vanderbilt.edu/JAWS</a> (appears on slide: 8)<br />
+<a rel="nofollow" class="external free" href="http://scoreboard.theaceorb.nl/test_stats">http://scoreboard.theaceorb.nl/test_stats</a> (appears on slide: 15)<br />
+<a rel="nofollow" class="external free" href="http://www.ohloh.net/p/acetaociao">http://www.ohloh.net/p/acetaociao</a> (appears on slide: 16)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/Coverage">http://www.dre.vanderbilt.edu/Coverage</a> (appears on slide: 18)<br />
+<a rel="nofollow" class="external free" href="http://atcdstats.theaceorb.nl/index.shtml">http://atcdstats.theaceorb.nl/index.shtml</a> (appears on slide: 19)  </p>
+<h2> <span class="mw-headline" id="Final_exam">Final exam</span></h2>
+<h2> <span class="mw-headline" id="Appendix">Appendix</span></h2>
+<h3> <span class="mw-headline" id="URLs_cited_by_PowerPoint_file_5">URLs cited by PowerPoint file</span></h3>
+<h4> <span class="mw-headline" id="A_Case_Study_of_.E2.80.9CGang_of_Four.E2.80.9D_.28GoF.29_Patterns:_Part_1">A Case Study of “Gang of Four” (GoF) Patterns: Part 1</span></h4>
+<p>
+<a rel="nofollow" class="external free" href="http://www.cs.iastate.edu/~cs309/references/CoplienHoffmanWeiss_CommonalityVariability.pdf">http://www.cs.iastate.edu/~cs309/references/CoplienHoffmanWeiss_CommonalityVariability.pdf</a> (appears on slide: 5)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Binary_expression_tree">http://en.wikipedia.org/wiki/Binary_expression_tree</a> (appears on slide: 7)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Binary_expression_tree">http://en.wikipedia.org/wiki/Binary_expression_tree</a> (appears on slide: 14)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Design_Patterns">http://en.wikipedia.org/wiki/Design_Patterns</a> (appears on slide: 40)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/C++11">http://en.wikipedia.org/wiki/C++11</a> (appears on slide: 44)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Design_Patterns">http://en.wikipedia.org/wiki/Design_Patterns</a> (appears on slide: 52)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf</a> (appears on slide: 61)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classComponent__Node.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classComponent__Node.html</a> (appears on slide: 76)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classVisitor.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classVisitor.html</a> (appears on slide: 76)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html</a> (appears on slide: 94)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html">http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html</a> (appears on slide: 94)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Iterator.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Iterator.html</a> (appears on slide: 94)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html</a> (appears on slide: 94)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html</a> (appears on slide: 95)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html">http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html</a> (appears on slide: 95)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Iterator.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Iterator.html</a> (appears on slide: 95)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Smart_pointer">http://en.wikipedia.org/wiki/Smart_pointer</a> (appears on slide: 97)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html">http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html</a> (appears on slide: 111)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter__Context.html">http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter__Context.html</a> (appears on slide: 111)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classSymbol.html">http://www.dre.vanderbilt.edu/~schmidt/html/classSymbol.html</a> (appears on slide: 112)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html">http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html</a> (appears on slide: 112)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html">http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html</a> (appears on slide: 112)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter__Context.html">http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter__Context.html</a> (appears on slide: 112)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classSymbol.html">http://www.dre.vanderbilt.edu/~schmidt/html/classSymbol.html</a> (appears on slide: 113)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html">http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html</a> (appears on slide: 113)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter__Context.html">http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter__Context.html</a> (appears on slide: 113)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html">http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html</a> (appears on slide: 113)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression__Tree__Iterator.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression__Tree__Iterator.html</a> (appears on slide: 133)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression__Tree__Iterator__Impl.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression__Tree__Iterator__Impl.html</a> (appears on slide: 133)<br />
+C:\temp\WOOD\html\classExpression&#95;&#95;Tree&#95;&#95;Iterator&#95;&#95;Impl.html (appears on slide: 134)<br />
+C:\temp\WOOD\html\classExpression&#95;&#95;Tree.html (appears on slide: 134)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression__Tree__Iterator.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression__Tree__Iterator.html</a> (appears on slide: 134)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classLeaf__Node.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classLeaf__Node.html</a> (appears on slide: 146)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Negate__Node.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Negate__Node.html</a> (appears on slide: 146)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Add__Node.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Add__Node.html</a> (appears on slide: 146)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Subtract__Node.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Subtract__Node.html</a> (appears on slide: 146)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Divide__Node.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Divide__Node.html</a> (appears on slide: 146)<br />
+<a rel="nofollow" class="external free" href="http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Multiply__Node.html">http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite__Multiply__Node.html</a> (appears on slide: 146)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Iterator__Impl.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Iterator__Impl.html</a> (appears on slide: 162)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html</a> (appears on slide: 162)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html">http://www.dre.vanderbilt.edu/~schmidt/html/classComponent__Node.html</a> (appears on slide: 162)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html</a> (appears on slide: 179)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command__Factory.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command__Factory.html</a> (appears on slide: 192)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command__Factory.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command__Factory.html</a> (appears on slide: 193)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html</a> (appears on slide: 193)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Context.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Context.html</a> (appears on slide: 220)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__State.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__State.html</a> (appears on slide: 220)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree.html</a> (appears on slide: 220)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/expr-tree/classExpression__Tree__State.html">http://www.dre.vanderbilt.edu/~schmidt/expr-tree/classExpression__Tree__State.html</a> (appears on slide: 221)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/expr-tree/classExpression__Tree__Context.html">http://www.dre.vanderbilt.edu/~schmidt/expr-tree/classExpression__Tree__Context.html</a> (appears on slide: 221)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classReactor.html">http://www.dre.vanderbilt.edu/~schmidt/html/classReactor.html</a> (appears on slide: 238)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classEvent__Handler.html">http://www.dre.vanderbilt.edu/~schmidt/html/classEvent__Handler.html</a> (appears on slide: 238)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classEvent__Handler.html">http://www.dre.vanderbilt.edu/~schmidt/html/classEvent__Handler.html</a> (appears on slide: 239)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classReactor.html">http://www.dre.vanderbilt.edu/~schmidt/html/classReactor.html</a> (appears on slide: 239)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf</a> (appears on slide: 240)<br />
+<a rel="nofollow" class="external free" href="http://gee.cs.oswego.edu/dl/cpjslides/nio.pdf">http://gee.cs.oswego.edu/dl/cpjslides/nio.pdf</a> (appears on slide: 244)<br />
+<a rel="nofollow" class="external free" href="http://c2.com/cgi/wiki?SingletonsAreEvil">http://c2.com/cgi/wiki?SingletonsAreEvil</a> (appears on slide: 250)<br />
+<a rel="nofollow" class="external free" href="http://www.research.ibm.com/designpatterns/pubs/ph-jun96.txt">http://www.research.ibm.com/designpatterns/pubs/ph-jun96.txt</a> (appears on slide: 251)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/PDF/ObjMan.pdf">http://www.dre.vanderbilt.edu/~schmidt/PDF/ObjMan.pdf</a> (appears on slide: 252)<br />
+<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Double-checked_locking">http://en.wikipedia.org/wiki/Double-checked_locking</a> (appears on slide: 253)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Event__Handler.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Event__Handler.html</a> (appears on slide: 264)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html</a> (appears on slide: 264)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Event__Handler.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Event__Handler.html</a> (appears on slide: 275)<br />
+<a rel="nofollow" class="external free" href="http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html">http://www.dre.vanderbilt.edu/~schmidt/html/classExpression__Tree__Command.html</a> (appears on slide: 275)<br />
+<a rel="nofollow" class="external free" href="http://www.vincehuston.org/dp">http://www.vincehuston.org/dp</a> (appears on slide: 295)</p>
+<h2> <span class="mw-headline" id="Glossary">Glossary</span></h2>
+<h3> <span class="mw-headline" id="Keywords_in_alphabetical_order_referencing_the_video_lectures">Keywords in alphabetical order referencing the video lectures</span></h3>
+<ul>
+<li>started building Glossary [W4-1]</li>
+<li>Example: [W5-11:1m17s] refers to Video [W5-11] at 1 minutes 17 seconds </li>
+</ul>
+<h3> <span class="mw-headline" id="A">A</span></h3>
+<ul>
+<li>Abstract Factory pattern [W4-1], [GoF]</li>
+<li>ACE Acceptor [W6-4:6m00s],  [W6-4:10m20s]</li>
+<li>ACE Asynch_Acceptor [W8-3:7m00s]</li>
+<li>ACE Asynch<em>Read</em>Strean [W8-2:5m30s]</li>
+<li>ACE Asynch<em>Write</em>Strean [W8-2:5m30s]</li>
+<li>ACE C++ Socket Interface  [W5-10]</li>
+<li>ACE Connector [W6-4:6m00s] </li>
+<li>ACE Dev Poll Reactor [W6-2:13m00s]</li>
+<li>ACE Event Handler [W6-2:3m00s], [W6-2:5m00s], [W6-6:5m00s]</li>
+<li>ACE Framework examples [W4-7]</li>
+<li>ACE Handler [W8-2:8m00s]</li>
+<li>ACE Inet Addr [W5-10]</li>
+<li>ACE Streams Framework [W4-8]</li>
+<li>ACE Task [W7-2:1m30s]</li>
+<li>ACE Message [W4-8]</li>
+<li>ACE Message Block [W7-2:1m30s], [W7-7:2m00s]</li>
+<li>ACE Message Queue [W7-2:1m30s], [W7-7:1m00s]</li>
+<li>ACE Proactor Framework [W8-2:0m00s]</li>
+<li>ACE Proactor [W8-2:4m00s],  [W8-4:0m00s]</li>
+<li>ACE Reactor [W6-2:3m00s], [W6-3:9m00s]</li>
+<li>ACE Reactor Framework [W6-2:2m00s]</li>
+<li>ACE Select Reactor [W6-2:13m00s], [W7-9:2m00s]</li>
+<li>ACE Service Configurator Framework [W6-6:1m00s]</li>
+<li>ACE Service Config [W6-6:2m00s]</li>
+<li>ACE Service Handler [W8-2:3m00s]</li>
+<li>ACE Service Object [W6-6:2m00s]</li>
+<li>ACE Service Repository [W6-6:2m00s]</li>
+<li>ACE SOCK IO [W5-10]</li>
+<li>ACE SOCK Stream [W5-10], [W5-11:1m20s]</li>
+<li>ACE SOCK Connector [W5-10], [W5-11:1m10s]</li>
+<li>ACE SOCK Acceptor [W5-10], [W5-11:1m00s]</li>
+<li>ACE Socket Wrappers [W5-10]</li>
+<li>ACE Streams Framework [W4-8]</li>
+<li>ACE Svc Handler [W6-4:4m50s], [W6-4:6m00s]</li>
+<li>ACE Task [W4-8]</li>
+<li>ACE Task Framwork [W7-2:0m00s]</li>
+<li>ACE Thread Manager[W4-8], [W7-2:1m30s]</li>
+<li>ACE Time Value [W6-2:3m00s]</li>
+<li>ACE Timer Queue [W6-2:3m00s]</li>
+<li>ACE TP Reactor [W6-2:13m00s], [W7-8:6m50s], [W7-9:1m30s]</li>
+<li>ACE WFMO Reactor [W6-2:13m00s], [W7-9:9m00s]</li>
+<li>ACE Queue [W4-8]</li>
+<li>Active Object patterm [W4-7], [W4-8], [W5-6], [W5-7], [W7-1:0m00s], [W7-6:5m00s], [Posa4]</li>
+<li>Activator Pattern [W5-4], [W5-6], [W5-7], [W6-8:1m00s], [W7-1:0m30s], [Posa4]</li>
+<li>Acceptor [W5-11:4m00s]</li>
+<li>Acceptor Connector  [W5-6], [W5-7], [W5-11:4m00s], [W6-1:2m50s]</li>
+<li>Acceptor Connector Framework [W6-4:1m00s]</li>
+<li>Adapter pattern [W6-7:3m20s], [W7-2:1m30s], [GoF]</li>
+<li>Android Framework Examples [W4-6]</li>
+<li>Asynchronous Completion Token [W5-4],  [W5-6], [W5-7], [W8-4:0m00s], [Posa2]</li>
+<li>Asynchronous I/o [W8-1:0m40s]</li>
+</ul>
+<h3> <span class="mw-headline" id="B">B</span></h3>
+<ul>
+<li>Broker [W4-1], [Posa1]</li>
+</ul>
+<h3> <span class="mw-headline" id="C">C</span></h3>
+<ul>
+<li>C++ Wrappers [W5-8]</li>
+<li>Chaching Strategies [W5-5]</li>
+<li>Class library [W4-4]</li>
+<li>Concurrency Models [W5-5]</li>
+<li>Concurrency Pattern [W5-6], [W5-7]</li>
+<li>Connection Role  [W6-4:2m00s]</li>
+<li>Component Configurator pattern [W4-1], [W5-4], [W6-5:0m00s], [Posa2]</li>
+<li>Commonality and Variabilility Analysis [W5-5]</li>
+<li>Communication Role [W6-4:2m00s]</li>
+</ul>
+<h3> <span class="mw-headline" id="D">D</span></h3>
+<ul>
+<li>Design Reuse [W5-2]</li>
+</ul>
+<h3> <span class="mw-headline" id="E">E</span></h3>
+<ul>
+<li>Event [W6-2:2m00s],</li>
+<li>Event Dispatcher [W5-5]</li>
+<li>Event Handler [W6-1:3m20s], [W6-3:3m00s]</li>
+<li>Event Handling Pattern [W5-6], [W5-7]</li>
+<li>Encapsulating Low Level APIs  [W5-9]</li>
+</ul>
+<h3> <span class="mw-headline" id="F">F</span></h3>
+<ul>
+<li>Frameworks - Characteristics [W4-3]</li>
+<li>Frameworks - Inversion of Control [W4-4]</li>
+</ul>
+<h3> <span class="mw-headline" id="G">G</span></h3>
+<h3> <span class="mw-headline" id="H">H</span></h3>
+<ul>
+<li>Half Sync / Half Async pattern [W4-1], [W5-4],  [W5-6], [W5-7],  [W7-4:0m00s],  [W7-5:0m00s],  [W7-8:1m30s], [Posa2]</li>
+</ul>
+<h3> <span class="mw-headline" id="I">I</span></h3>
+<ul>
+<li>Inetd [W6-8:4m00s]</li>
+<li>Implementation reuse [W5-2]</li>
+<li>IOVEC [W5-11:3m00s]</li>
+<li>IO Multiplexer [W6-1:1m00s]</li>
+</ul>
+<h3> <span class="mw-headline" id="J">J</span></h3>
+<ul>
+<li>Jaws [W5-4], [W5-5],  [W5-9], [W6-1:9m00s], [W6-3:1m00s], [W6-4:13m20s], [W6-7:0m00s],  [W7-1:9m00s],  [W7-4:6m50s], [W8-1:6m00s], [W8-3:0m00s]</li>
+</ul>
+<h3> <span class="mw-headline" id="K">K</span></h3>
+<h3> <span class="mw-headline" id="L">L</span></h3>
+<ul>
+<li>Layer pattern [W4-1], [GoF] </li>
+<li>Leaders Followers pattern [W4-2], [W5-4], [W5-1], [W5-6], [W5-7], [W7-8:1m00s], [W7-9:1m30s], [Posa2]</li>
+</ul>
+<h3> <span class="mw-headline" id="M">M</span></h3>
+<ul>
+<li>Monitor Object pattern [W4-1], [W5-6], [W5-7],  [W7-6:2m00s], [Posa2]</li>
+<li>Multi-Threaded [W7-3:0m00s]</li>
+</ul>
+<h3> <span class="mw-headline" id="N">N</span></h3>
+<h3> <span class="mw-headline" id="O">O</span></h3>
+<h3> <span class="mw-headline" id="P">P</span></h3>
+<ul>
+<li>Pattern Languages [W4-1]</li>
+<li>Pattern Relationships [W4-1]</li>
+<li>Pattern Sequences [W4-1]</li>
+<li>PEER_ADDR [W5-10], [W5-11:2m10s]</li>
+<li>PEER_STREAM [W5-11:2m10s]</li>
+<li>Pipes and Filters pattern [W4-8]</li>
+<li>Proactor pattern [W4-7], [W5-4], [W5-6], [W5-7], [W8-1:0m00s],  [W8-5:4m00s], [Posa2]</li>
+<li>Producer / Consumer  [W7-2:0m00s]</li>
+<li>Proxy pattern [W7-1:5m00s]</li>
+</ul>
+<h3> <span class="mw-headline" id="Q">Q</span></h3>
+<h3> <span class="mw-headline" id="R">R</span></h3>
+<ul>
+<li>Reactor pattern [W4-1], [W4-7], [W5-1],  [W5-6], [W5-7], [W6-1:0m10s], [W6-2:0m30s], [Posa2]</li>
+<li>Reference counting [W7-7:2m40s]</li>
+<li>Resource management pattern [W1-10 slide 49 "Eager Acquisition.pdf"] </li>
+</ul>
+<h3> <span class="mw-headline" id="S">S</span></h3>
+<ul>
+<li>Scope Commonality &amp; Variability Analysis [4-5], [W5-2]</li>
+<li>Scoped Locking [W5-6], [W5-7]</li>
+<li>Service Access &amp; Configuration [W5-6]</li>
+<li>Service Configuration Directives [W6-6:7m20s]</li>
+<li>Socket API [W5-8]</li>
+<li>State pattern [GoF part 9]</li>
+<li>Strategy pattern [W4-1], [W7-7:5m00s], [GoF]</li>
+<li>Stratgized Locking [W5-6], [W5-7]</li>
+<li>Streams - Pipline of Filters [W4-7]</li>
+<li>Synchronization Pattern [W5-6], [W5-7]</li>
+<li>Synchronized Request Queue [W7-6:1m00s]</li>
+<li>Synchronous Event Handling [W8-1:0m40s]</li>
+<li>Synchronous I/O [W8-1:0m40s]</li>
+<li>Synchronous Multi-Threading [W8-1:0m40s]</li>
+</ul>
+<h3> <span class="mw-headline" id="T">T</span></h3>
+<ul>
+<li>TCP/IP [W5-8]</li>
+<li>Threadsafe Interface [W5-6], [W5-7]</li>
+<li>Thread-Safe Interface Pattern [W7-7:20m00s]</li>
+<li>Thread Mutex [W5-9]</li>
+<li>TPC<em>HTTP</em>Handler [W7-1:10m00s], [W7-2:1m30s],  [W7-3:0m00s]</li>
+<li>Tradeoff Analysis [W5-5]</li>
+<li>Traits [W5-10], , [W5-11:2m10s]</li>
+</ul>
+<h3> <span class="mw-headline" id="U">U</span></h3>
+<ul>
+<li>UDP [W5-8]</li>
+</ul>
+<h3> <span class="mw-headline" id="V">V</span></h3>
+<ul>
+<li>Validation reuse [W5-2]</li>
+<li>Variability [W5-5]</li>
+<li>Variation oriented design [W5-5]</li>
+</ul>
+<h3> <span class="mw-headline" id="W">W</span></h3>
+<ul>
+<li>Wrapper Facade pattern [W4-1], [W5-4],  [W5-6], [W5-7], [W5-9], [W6-1:0m40s], [W6-3:13m00s], [Posa2]</li>
+</ul>
+<h3> <span class="mw-headline" id="X">X</span></h3>
+<h3> <span class="mw-headline" id="Y">Y</span></h3>
+<h3> <span class="mw-headline" id="Z">Z</span></h3>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 306/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Posa:Main&amp;oldid=20490">https://share.coursera.org/wiki/index.php?title=Posa:Main&amp;oldid=20490</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Pattern-Oriented_Software_Architectures" title="Category:Pattern-Oriented Software Architectures">Pattern-Oriented Software Architectures</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,197 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Matrix:Transcripts</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Here you'll find all transcripts of the python sessions shown in the videos</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_0"><span class="tocnumber">1</span> <span class="toctext">Week 0</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_Field:_Introduction_to_complex_numbers"><span class="tocnumber">1.1</span> <span class="toctext">The Field: Introduction to complex numbers</span></a></li>
+<li class="toclevel-2"><a href="#The_Field:_Playing_with_C"><span class="tocnumber">1.2</span> <span class="toctext">The Field: Playing with C</span></a></li>
+<li class="toclevel-2"><a href="#The_Field:_Playing_with_GF.282.29"><span class="tocnumber">1.3</span> <span class="toctext">The Field: Playing with GF(2)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_1"><span class="tocnumber">2</span> <span class="toctext">Week 1</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_Vector:_What_is_a_vector.3F"><span class="tocnumber">2.1</span> <span class="toctext">The Vector: What is a vector?</span></a></li>
+<li class="toclevel-2"><a href="#The_Vector:_Vector_addition_and_scala-vector_multiplication"><span class="tocnumber">2.2</span> <span class="toctext">The Vector: Vector addition and scala-vector multiplication</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_3"><span class="tocnumber">3</span> <span class="toctext">Week 3</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_Matrix:_Matrix-vector_and_vector-matrix_multiplication"><span class="tocnumber">3.1</span> <span class="toctext">The Matrix: Matrix-vector and vector-matrix multiplication</span></a></li>
+<li class="toclevel-2"><a href="#The_Matrix:_Matrix-vector_multiplication_in_terms_of_dot-products"><span class="tocnumber">3.2</span> <span class="toctext">The Matrix: Matrix-vector multiplication in terms of dot-products</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_0">Week 0</span></h1>
+<h2> <span class="mw-headline" id="The_Field:_Introduction_to_complex_numbers">The Field: Introduction to complex numbers</span></h2>
+<code><pre>&gt;&gt;&gt; 3j
+3j
+&gt;&gt;&gt; j
+Traceback (most recent call last):
+  File &quot;&lt;stdin&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name 'j' is not defined
+&gt;&gt;&gt; 1j
+1j
+&gt;&gt;&gt; 1+3j
+(1+3j)
+&gt;&gt;&gt; 1+3j + (10+20j)
+(11+23j)
+&gt;&gt;&gt; x = 1+3j
+&gt;&gt;&gt; (x-1)**2
+(-9+0j)
+&gt;&gt;&gt; x.real
+1.0
+&gt;&gt;&gt; x.imag
+3.0
+&gt;&gt;&gt; type(1+2j)
+&lt;class 'complex'&gt;
+</pre></code>
+<h2> <span class="mw-headline" id="The_Field:_Playing_with_C">The Field: Playing with C</span></h2>
+<code><pre>&gt;&gt;&gt; L = [2+2j, 3+2j, 1.75+1j, 2+1j, 2.25+1j, 2.5+1j, 2.75+1j, 3+1j, 3.25+1j]
+&gt;&gt;&gt; from plotting import plot
+&gt;&gt;&gt; plot(L)
+&gt;&gt;&gt; from image import *
+&gt;&gt;&gt; I = color2gray(file2image('img01.png'))
+&gt;&gt;&gt; r = len(I)
+&gt;&gt;&gt; c = len(I[0])
+&gt;&gt;&gt; M = [x + y*1j for x in range(c) for y in range(r) if I[r-y-1][x] &lt; 120]
+&gt;&gt;&gt; plot(M, max(r,c), 1)
+&gt;&gt;&gt; abs(1+1j)
+1.4142135623730951
+&gt;&gt;&gt; plot({z + (1+2j) for z in L})
+&gt;&gt;&gt; plot([z - (c/2 + (r/2)*1j) for z in M], max(r,c), 1)
+&gt;&gt;&gt; plot({0.5 * z for z in L})
+&gt;&gt;&gt; plot([.5*z for z in M], r, 1)
+&gt;&gt;&gt; plot({(-1)*z for z in L})
+&gt;&gt;&gt; plot([-z for z in M], r, 1)
+&gt;&gt;&gt; from math import e, pi
+&gt;&gt;&gt; plot([e**(t*2*pi*1j/20) for t in range(20)])
+&gt;&gt;&gt; plot([2 * e**(t*2*pi*1j/20) for t in range(20)])
+&gt;&gt;&gt; plot([e**(pi*1j/4)* z for z in L])
+&gt;&gt;&gt; plot([e**(pi*1j/4) * z for z in M], r, 1)
+</pre></code>
+<h2> <span class="mw-headline" id="The_Field:_Playing_with_GF.282.29">The Field: Playing with GF(2)</span></h2>
+<code><pre>&gt;&gt;&gt; def encrypt(p,k): return p+k
+... 
+&gt;&gt;&gt; from GF2 import one
+&gt;&gt;&gt; k = one
+&gt;&gt;&gt; p = one
+&gt;&gt;&gt; c = encrypt(p, k)
+&gt;&gt;&gt; c
+0
+</pre></code>
+<h1> <span class="mw-headline" id="Week_1">Week 1</span></h1>
+<h2> <span class="mw-headline" id="The_Vector:_What_is_a_vector.3F">The Vector: What is a vector?</span></h2>
+<code><pre>&gt;&gt;&gt; from plotting import plot
+&gt;&gt;&gt; L = [[2, 2], [3, 2], [1.75, 1], [2, 1], [2.25, 1], [2.5, 1], [2.75, 1], [3, 1], [3.25, 1]]                                                                  
+&gt;&gt;&gt; plot(L)
+</pre></code>
+<h2> <span class="mw-headline" id="The_Vector:_Vector_addition_and_scala-vector_multiplication">The Vector: Vector addition and scala-vector multiplication</span></h2>
+<code><pre>&gt;&gt;&gt; def scalar_vector_mult(alpha, v): return [alpha*x for x in v]  # from in-video quiz
+&gt;&gt;&gt; v = [3, 2]
+&gt;&gt;&gt; plot([scalar_vector_mult(i/10, v) for i in range(11)], 5)
+&gt;&gt;&gt; plot([scalar_vector_mult(i/100, v) for i in range(100)], 5)
+&gt;&gt;&gt; plot([scalar_vector_mult(i/100, v) for i in range(-1000, 1000)], 5)
+</pre></code>
+<h1> <span class="mw-headline" id="Week_3">Week 3</span></h1>
+<h2> <span class="mw-headline" id="The_Matrix:_Matrix-vector_and_vector-matrix_multiplication">The Matrix: Matrix-vector and vector-matrix multiplication</span></h2>
+<code><pre>&gt;&gt;&gt; n = 2
+&gt;&gt;&gt; D = {(i, j) for i in range(n) for j in range(n)}
+&gt;&gt;&gt; from vec import Vec
+&gt;&gt;&gt; from GF2 import one
+&gt;&gt;&gt; b00 = Vec(D, {(0, 0): one, (0, 1): one, (1, 0): one})
+&gt;&gt;&gt; b01 = Vec(D, {(0, 0): one, (0, 1): one, (1, 1): one})
+&gt;&gt;&gt; b02 = Vec(D, {(0, 0): one, (0, 1): one, (1, 1): one})
+&gt;&gt;&gt; b10 = Vec(D, {(0, 0): one, (1, 0): one, (1, 1): one})
+&gt;&gt;&gt; b11 = Vec(D, {(0, 1): one, (1, 0): one, (1, 1): one})
+&gt;&gt;&gt; from matutil import coldict2mat
+&gt;&gt;&gt; A = coldict2mat({(0, 0): b00, (0, 1): b01, (1, 0): b10, (1, 1): b11})
+&gt;&gt;&gt; b = Vec(D, {(0, 0): one, (1, 0): one})
+&gt;&gt;&gt; from solver import solve
+&gt;&gt;&gt; x = solve(A, b)
+&gt;&gt;&gt; A * x == b
+True
+&gt;&gt;&gt; x
+Vec({(0, 1), (1, 0), (0, 0), (1, 1)},{(0, 1): one, (1, 0): 0, (0, 0): 0, (1, 1): one})
+&gt;&gt;&gt; print(x)
+
+ (0, 0) (0, 1) (1, 0) (1, 1)
+----------------------------
+      0    one      0    one
+&gt;&gt;&gt; from mat import Mat
+&gt;&gt;&gt; row_labels = {'gnome', 'hoop', 'slinky', 'putty', 'shooter'}
+&gt;&gt;&gt; col_labels = {'metal', 'concrete', 'plastic', 'water', 'electricity'}
+&gt;&gt;&gt; M = Mat((row_labels, col_labels),
+... {('gnome', 'concrete'): 1.3, ('gnome', 'plastic'): .2, ('gnome', 'water'): .8, ('gnome', 'electricity'): .4,
+... ('hoop', 'plastic'): 1.5, ('hoop', 'water'): .4, ('hoop', 'electricity'): .3,
+... ('slinky', 'metal'): .25, ('slinky', 'water'): .2, ('slinky', 'electricity'): .7,
+... ('putty', 'plastic'): .3, ('putty', 'water'): .7, ('putty', 'electricity'): .5,
+... ('shooter', 'metal'): .15, ('shooter', 'plastic'): .5, ('shooter', 'water'): .4, ('shooter', 'electricity'): .8})
+&gt;&gt;&gt; b = Vec(col_labels, {'electricity': 1409.5, 'water': 1485.0, 'concrete': 1300.0, 'metal': 226.25, 'plastic': 677.0})
+&gt;&gt;&gt; u = solve(M.transpose(), b)
+&gt;&gt;&gt; print(u)
+
+ gnome hoop putty shooter slinky
+--------------------------------
+ 1E+03  175   590      75    860
+&gt;&gt;&gt; u
+Vec({'slinky', 'gnome', 'shooter', 'hoop', 'putty'},{'shooter': 75.0000000000432, 'slinky': 859.9999999999636, 'putty': 589.9999999999914, 'hoop': 174.99999999998727, 'gnome': 1000.0})
+&gt;&gt;&gt; u*M
+Vec({'metal', 'plastic', 'water', 'concrete', 'electricity'},{'plastic': 676.9999999999999, 'water': 1488.9999999999989, 'metal': 226.24999999999739, 'electricity': 1409.500000000001, 'concrete': 1300.0})
+&gt;&gt;&gt; res = b - u*M
+&gt;&gt;&gt; res*res
+8.969739767371894e-24
+</pre></code>
+<h2> <span class="mw-headline" id="The_Matrix:_Matrix-vector_multiplication_in_terms_of_dot-products">The Matrix: Matrix-vector multiplication in terms of dot-products</span></h2>
+<code><pre>&gt;&gt;&gt; D = {'radio', 'sensor', 'memory', 'CPU'}
+&gt;&gt;&gt; duration1 = Vec(D, {'radio': .1, 'CPU': .3})
+&gt;&gt;&gt; duration2 = Vec(D, {'sensor': .2, 'CPU': .4})
+&gt;&gt;&gt; duration3 = Vec(D, {'memory': .3, 'CPU': .1})
+&gt;&gt;&gt; duration4 = Vec(D, {'memory': .5, 'CPU': .4})
+&gt;&gt;&gt; from matutil import rowdict2mat
+&gt;&gt;&gt; A = rowdict2mat({1: duration1, 2: duration2, 3: duration3, 4: duration4})
+&gt;&gt;&gt; print(A)
+
+        CPU memory radio sensor
+     --------------------------
+ 1  |   0.3      0   0.1      0
+ 2  |   0.4      0     0    0.2
+ 3  |   0.1    0.3     0      0
+ 4  |   0.4    0.5     0      0
+
+&gt;&gt;&gt; b = Vec({1, 2, 3, 4}, {1: 140.0, 2: 170.0, 3: 60.0, 4: 170.0})
+&gt;&gt;&gt; rate = solve(A, b)
+&gt;&gt;&gt; print(rate)
+
+ CPU memory radio sensor
+------------------------
+ 300    100   500    250
+&gt;&gt;&gt; res = b - A*rate
+&gt;&gt;&gt; res*res
+1.666074231826777e-27
+&gt;&gt;&gt; rate
+Vec({'CPU', 'radio', 'sensor', 'memory'},{'CPU': 300.0, 'radio': 500.0000000000002, 'sensor': 249.9999999999999, 'memory': 100.00000000000003})
+</pre></code>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 65/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Matrix:Transcripts&amp;oldid=14483">https://share.coursera.org/wiki/index.php?title=Matrix:Transcripts&amp;oldid=14483</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coding_the_Matrix" title="Category:Coding the Matrix">Coding the Matrix</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

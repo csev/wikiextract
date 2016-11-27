@@ -1,0 +1,82 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">DataSciSpec:Courses</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Return to <a href="/wiki/index.php/DataSciSpec:Main" title="DataSciSpec:Main"> Data Science Specialization</a></p>
+<p>This Page will cover additional information concerning the various courses comprising the  <a href="/wiki/index.php/DataSciSpec:Main" title="DataSciSpec:Main">Data Science Specialization</a> track.
+Please also check out the <a href="/wiki/index.php/DataSciSpec:Useful_Resources" title="DataSciSpec:Useful Resources"> Useful Resources page</a> to find common tutorials about many topics.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Course_Lecture_Notes_and_Code"><span class="tocnumber">1</span> <span class="toctext">Course Lecture Notes and Code</span></a></li>
+<li class="toclevel-1"><a href="#The_Data_Scientist.27s_Toolbox"><span class="tocnumber">2</span> <span class="toctext">The Data Scientist's Toolbox</span></a></li>
+<li class="toclevel-1"><a href="#R_Programming"><span class="tocnumber">3</span> <span class="toctext">R Programming</span></a></li>
+<li class="toclevel-1"><a href="#Getting_and_Cleaning_Data"><span class="tocnumber">4</span> <span class="toctext">Getting and Cleaning Data</span></a></li>
+<li class="toclevel-1"><a href="#Exploratory_Data_Analysis"><span class="tocnumber">5</span> <span class="toctext">Exploratory Data Analysis</span></a></li>
+<li class="toclevel-1"><a href="#Reproducible_Research"><span class="tocnumber">6</span> <span class="toctext">Reproducible Research</span></a></li>
+<li class="toclevel-1"><a href="#Statistical_Inference"><span class="tocnumber">7</span> <span class="toctext">Statistical Inference</span></a></li>
+<li class="toclevel-1"><a href="#Regression_Models"><span class="tocnumber">8</span> <span class="toctext">Regression Models</span></a></li>
+<li class="toclevel-1"><a href="#Practical_Machine_Learning"><span class="tocnumber">9</span> <span class="toctext">Practical Machine Learning</span></a></li>
+<li class="toclevel-1"><a href="#Developing_Data_Products"><span class="tocnumber">10</span> <span class="toctext">Developing Data Products</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Course_Lecture_Notes_and_Code">Course Lecture Notes and Code</span></h1>
+<p>All lecture material is on GitHub originally as Rmarkdown documents from which HTML slides and PDFs can be generated.</p>
+<p><a rel="nofollow" class="external free" href="https://github.com/DataScienceSpecialization/courses">https://github.com/DataScienceSpecialization/courses</a></p>
+<p>Note:  These lecture notes were originally created by <a rel="nofollow" class="external text" href="mailto:s.xing@me.com">Xing Su</a>, who <a rel="nofollow" class="external text" href="https://github.com/sux13/DataScienceSpCourseNotes/pulls">invites contributions</a>.</p>
+<h1> <span class="mw-headline" id="The_Data_Scientist.27s_Toolbox">The Data Scientist's Toolbox</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/1_DATASCITOOLBOX/Data_Scientists_Toolbox_Course_Notes.pdf">Data Scientist's Toolbox (single PDF document)</a></li>
+<li>Some notes for <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Datascitoolbox-006:Main">Data Scientist's Toolbox</a></li>
+</ul>
+<h1> <span class="mw-headline" id="R_Programming">R Programming</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/2_RPROG/R_Programming_Course_Notes.pdf">R Programming (single PDF document)</a></li>
+<li>Some notes on <a href="/wiki/index.php/DataSciSpec:Functional_Progr_in_R" title="DataSciSpec:Functional Progr in R"> functional programming in R</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Getting_and_Cleaning_Data">Getting and Cleaning Data</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/3_GETDATA/Getting_and_Cleaning_Data_Course_Notes.pdf">Getting and Cleaning Data (single PDF document)</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Exploratory_Data_Analysis">Exploratory Data Analysis</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/4_EXDATA/Exploratory_Data_Analysis_Course_Notes.pdf">Exploratory Data Analysis (single PDF document)</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Reproducible_Research">Reproducible Research</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/5_REPDATA/Reproducible_Research_Course_Notes.pdf">Reproducible Research (single PDF document)</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Statistical_Inference">Statistical Inference</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/6_STATINFERENCE/Statistical_Inference_Course_Notes.pdf">Statistical Inference (single PDF document)</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Regression_Models">Regression Models</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/7_REGMODS/Regression_Models_Course_Notes.pdf">Regression Models (single PDF document)</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Practical_Machine_Learning">Practical Machine Learning</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/8_PREDMACHLEARN/Practical_Machine_Learning_Course_Notes.pdf">Practical Machine Learning (single PDF document)</a></li>
+</ul>
+<h1> <span class="mw-headline" id="Developing_Data_Products">Developing Data Products</span></h1>
+<ul>
+<li>Lecture Notes for <a rel="nofollow" class="external text" href="http://sux13.github.io/DataScienceSpCourseNotes/9_DEVDATAPROD/Developing_Data_Products_Course_Notes.pdf">Developing Data Products (single PDF document)</a></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=DataSciSpec:Courses&amp;oldid=31790">https://share.coursera.org/wiki/index.php?title=DataSciSpec:Courses&amp;oldid=31790</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:DataSciSpec" title="Category:DataSciSpec">DataSciSpec</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

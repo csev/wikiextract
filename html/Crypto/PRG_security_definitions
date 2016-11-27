@@ -1,0 +1,36 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:PRG security definitions</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>$$ Let G:K\rightarrow \lbrace 0,1\rbrace^n\ be\ a\ PRG$$</p>
+<p><u>Goal:</u> define what it means for the output of a generator to be indistinguishable from random. In other words, we're gonna define a distribution that basically is defined by choosing a random key in the key space.</p>
+<h3> <span class="mw-headline" id="Statistical_Tests">Statistical Tests</span></h3>
+<p><u>Statistical test:</u> on {0,1}<sup>n</sup>: an algorithm A s.t. A(x) outputs 0 (not random) or 1 (random)</p>
+<p><b>Examples:</b></p>
+<ul>
+<li>For a random string the number of zeros is roughly the same as the number of ones.</li>
+<li>Similar we can set a limit on the number of double zero sequences</li>
+<li>Count the longest series of zeros (should be less than 10 x log(n))</li>
+</ul>
+<h3> <span class="mw-headline" id="Advantage">Advantage</span></h3>
+<p>Let $$G:\; \mathcal{K} \rightarrow \lbrace 0, 1 \rbrace^n$$ be a PRG and $$A$$ a statistical test on $$\lbrace 0, 1 \rbrace^n$$.</p>
+<p>Define $$\text{Adv}&#95;{\scriptsize \text{PRG}}[A, G] = \left\lvert \mathop{\large \text{Pr}}\limits&#95;{k \overset{\scriptsize R}{\leftarrow} \mathcal{K}} \left[ A(G(k)) = 1 \right]\; - \mathop{\large \text{Pr}}\limits&#95;{r \overset{\scriptsize R}{\leftarrow} \left\lbrace 0, 1 \right\rbrace^{\scriptsize n}} \left[ A(r) = 1 \right] \right\rvert \in [0, 1]$$</p>
+<h3> <span class="mw-headline" id="Security_and_Predictability_are_equivalent">Security and Predictability are equivalent</span></h3>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:PRG_security_definitions&amp;oldid=12965">https://share.coursera.org/wiki/index.php?title=Crypto:PRG_security_definitions&amp;oldid=12965</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

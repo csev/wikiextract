@@ -1,0 +1,62 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">AIPLAN:Playground</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Please experiment here with Wiki content, layout and tags. Don't add important content here though as it may disappear.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#This_is_a_blockquote"><span class="tocnumber">1</span> <span class="toctext">This is a blockquote</span></a></li>
+<li class="toclevel-1"><a href="#Header_number_1_level_for_what"><span class="tocnumber">2</span> <span class="toctext">Header number 1 level for what</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Header_number_2_level_for_when"><span class="tocnumber">2.1</span> <span class="toctext">Header number 2 level for when</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Header_number_3_for_why"><span class="tocnumber">2.1.1</span> <span class="toctext">Header number 3 for why</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Links_and_URLs"><span class="tocnumber">3</span> <span class="toctext">Links and URLs</span></a></li>
+<li class="toclevel-1"><a href="#Trying_Math"><span class="tocnumber">4</span> <span class="toctext">Trying Math</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="This_is_a_blockquote">This is a blockquote</span></h1>
+<ol>
+<li>Heart 
+<li>Candy.</li></li>
+<li>Liver</li>
+<li><em>Lung</em></li>
+</ol>
+<h1> <span class="mw-headline" id="Header_number_1_level_for_what">Header number 1 level for what</span></h1>
+<h2> <span class="mw-headline" id="Header_number_2_level_for_when"> Header number 2 level for when </span></h2>
+<h3> <span class="mw-headline" id="Header_number_3_for_why">Header number 3 for why</span></h3>
+<blockquote>
+    This is a blockquote.
+</blockquote>
+<ul>
+<li>A list item.</li>
+<p>With multiple paragraphs.
+</p>
+<li>Another item in the list.</li>
+</ul>
+<h1> <span class="mw-headline" id="Links_and_URLs">Links and URLs</span></h1>
+<p><a rel="nofollow" class="external text" href="http://www.google.com">Google</a></p>
+<h1> <span class="mw-headline" id="Trying_Math">Trying Math</span></h1>
+<p>$$F(x) = \sum&#95;{n=0}^\infty \frac{1}{x^n}$$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=AIPLAN:Playground&amp;oldid=20670">https://share.coursera.org/wiki/index.php?title=AIPLAN:Playground&amp;oldid=20670</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

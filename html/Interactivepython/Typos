@@ -1,0 +1,50 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Interactivepython:Typos</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><ul>
+<li>Mini-project description - Rock-paper-scissors-lizard-Spock</li>
+</ul>
+<p>In this expanded list, each choice wins against the preceding two choices and loses against the following two choices.</p>
+<ul>
+<li>Mini-project description - Spaceship</li>
+</ul>
+<p>For this mini-project, you will implement a working spaceship plus add <strong><em>as</em></strong>ingle asteroid<br />
+While the right arrow is down, your spaceship should turn clockwise.<br />
+your ship should maintain its orientation<br />
+You will need to pick some reasonable angular velocity<br />
+The thrusters should be on when the up arrow is down and off when it is up.<br />
+Modify the draw method for the Ship class to draw the ship image (without thrust flames) instead of a circle.<br />
+Modify the update method for the ship to increment its angle by its angular velocity.<br />
+Add keydown and keyup handlers that check the left and right arrow keys.<br />
+Add methods to the Ship class to increment and decrement the angular velocity<br />
+and verify that you can turn your ship as you expect<br />
+Add a method to the Ship class to turn the thrusters on/off<br />
+which is True or False to decide if they should be on or off).<br />
+play the thrust sound when the thrust is on.<br />
+Adjust the constants as you would like to get it to fly how you want.  </p>
+<p>Part: Phase two - Rocks<br />
+theupdate ... ship'svelocity ... havethese ... velocity.Instead ... now,this ... wewill ... theactual ...<br />
+androtate ... spriteupdate ... Testthis ... itbehaves ... set"a_rock" ... angularvelocity ... randomnumbers ...<br />
+sureyou ... rocks.Missiles ... alifespan ... youwill ... ignorethat ... missileand ... newmissile ...<br />
+spriteconstructor ... shoota ...</p>
+<hr />
+<p><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 19/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Interactivepython:Typos&amp;oldid=19100">https://share.coursera.org/wiki/index.php?title=Interactivepython:Typos&amp;oldid=19100</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

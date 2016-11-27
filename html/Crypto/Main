@@ -1,0 +1,107 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Opportunity to post resources for your classmates based on lectures and subjects.</p>
+<ul>
+<li><a href="/wiki/index.php/Crypto:Definitions" title="Crypto:Definitions">Crypto:Definitions</a> A page to list terms defined in the course.  </li>
+<li><a href="/wiki/index.php/Crypto:Complementary" title="Crypto:Complementary">Crypto:Complementary</a> A page to list complementary resources for learning math or programming.  </li>
+<li><a href="/wiki/index.php/Crypto:Tools" title="Crypto:Tools">Crypto:Tools</a> Tools you may want to use.</li>
+<li><a href="/wiki/index.php/Crypto:Homework" title="Crypto:Homework">Crypto:Homework</a> A page about the homework not meant for spoilers.</li>
+<li><a href="/wiki/index.php/Crypto:Abbreviations" title="Crypto:Abbreviations">Crypto:Abbreviations</a> A list of abbreviations used in the course.</li>
+</ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">1.1</span> <span class="toctext">Week 1</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Introduction"><span class="tocnumber">1.1.1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-3"><a href="#Stream_Ciphers"><span class="tocnumber">1.1.2</span> <span class="toctext">Stream Ciphers</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_2"><span class="tocnumber">2</span> <span class="toctext">Week 2</span></a></li>
+<li class="toclevel-1"><a href="#Week_3"><span class="tocnumber">3</span> <span class="toctext">Week 3</span></a></li>
+<li class="toclevel-1"><a href="#Week_4"><span class="tocnumber">4</span> <span class="toctext">Week 4</span></a></li>
+<li class="toclevel-1"><a href="#Week_5"><span class="tocnumber">5</span> <span class="toctext">Week 5</span></a></li>
+<li class="toclevel-1"><a href="#Week_6"><span class="tocnumber">6</span> <span class="toctext">Week 6</span></a></li>
+<li class="toclevel-1"><a href="#Further_Reading"><span class="tocnumber">7</span> <span class="toctext">Further Reading</span></a></li>
+<li class="toclevel-1"><a href="#Sandbox"><span class="tocnumber">8</span> <span class="toctext">Sandbox</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h2>
+<h3> <span class="mw-headline" id="Week_1">Week 1</span></h3>
+<h4> <span class="mw-headline" id="Introduction">Introduction</span></h4>
+<ul>
+<li><a href="/wiki/index.php/Crypto:Course_Overview" title="Crypto:Course Overview">Course overview</a></li>
+<li><a href="/wiki/index.php/Crypto:What_is_cryptography" title="Crypto:What is cryptography">What is cryptography?</a></li>
+<li><a href="/wiki/index.php/Crypto:History_of_cryptography" title="Crypto:History of cryptography">History of cryptography</a></li>
+<li><a href="/wiki/index.php/Crypto:Discrete_probability_crash_course" title="Crypto:Discrete probability crash course">Discrete probability (crash course, 2 parts)</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Stream_Ciphers">Stream Ciphers</span></h4>
+<ul>
+<li><a href="/wiki/index.php/Crypto:Information_theoretic_security_and_the_one_time_pad" title="Crypto:Information theoretic security and the one time pad">Information theoretic security and the one time pad</a></li>
+<li><a href="/wiki/index.php/Crypto:Stream_ciphers_and_pseudo_random_generators" title="Crypto:Stream ciphers and pseudo random generators">Stream ciphers and pseudo random generators</a></li>
+<li><a href="/wiki/index.php/Crypto:Attacks_on_stream_ciphers_and_the_one_time_pad" title="Crypto:Attacks on stream ciphers and the one time pad">Attacks on stream ciphers and the one time pad</a></li>
+<li><a href="/wiki/index.php/Crypto:Real-world_stream_ciphers" title="Crypto:Real-world stream ciphers">Real-world stream ciphers</a></li>
+<li><a href="/wiki/index.php/Crypto:PRG_security_definitions" title="Crypto:PRG security definitions">PRG security definitions</a></li>
+<li><a href="/wiki/index.php/Crypto:Semantic_security" title="Crypto:Semantic security">Semantic security</a></li>
+<li><a href="/wiki/index.php?title=Crypto:Stream_ciphers_are_semantically_secure&amp;action=edit&amp;redlink=1" class="new" title="Crypto:Stream ciphers are semantically secure (page does not exist)">Stream ciphers are semantically secure</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_2">Week 2</span></h2>
+<code><pre>Block ciphers and pseudorandom functions.
+Chosen plaintext security and modes of operation.
+The DES and AES block ciphers.
+</pre></code>
+<ul>
+<li>Errata for "The Data Encryption Standard" approx. 6 minutes into the lecture:
+The formula for the Feistel Network $$R&#95;i$$ is missing $$-1$$; the formula
+should read $$R&#95;i = f&#95;i(R&#95;{i-1}) \oplus L&#95;{i-1}$$.</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_3">Week 3</span></h2>
+<code><pre>Message integrity. CBC-MAC, HMAC, PMAC, and CW-MAC.
+Collision resistant hashing.
+</pre></code>
+<h2> <span class="mw-headline" id="Week_4">Week 4</span></h2>
+<code><pre>Authenticated encryption. CCM, GCM, TLS, and IPsec.
+Key derivation functions.
+Odds and ends: deterministic encryption, non-expanding encryption,
+and format preserving encryption.
+</pre></code>
+<h2> <span class="mw-headline" id="Week_5">Week 5</span></h2>
+<code><pre>Basic key exchange: Diffie-Hellman, RSA, and Merkle puzzles.
+A crash course in computational number theory.
+Number theoretic hardness assumptions.
+</pre></code>
+<h2> <span class="mw-headline" id="Week_6">Week 6</span></h2>
+<code><pre>Public key encryption.
+Trapdoor permutations and RSA.
+The ElGamal system and variants.
+</pre></code>
+<h2> <span class="mw-headline" id="Further_Reading">Further Reading</span></h2>
+<ul>
+<li><a href="/wiki/index.php/Crypto:Further_Reading" title="Crypto:Further Reading">Links to Further Reading material from the lectures</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Sandbox">Sandbox</span></h2>
+<p>Thought I'd add a <a href="/wiki/index.php/Sandbox" title="Sandbox">Sandbox</a>, and use it to share notes and elucidate course experience</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:Main&amp;oldid=30733">https://share.coursera.org/wiki/index.php?title=Crypto:Main&amp;oldid=30733</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Cryptography_I" title="Category:Cryptography I">Cryptography I</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

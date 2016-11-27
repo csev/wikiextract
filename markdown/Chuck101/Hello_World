@@ -1,0 +1,8 @@
+<pre>
+// prints a message to the console
+<< "Hello World!" >>>;
+</pre>
+
+We can print messages to the console, during the execution of ChucK code (i.e. debugging the program).
+
+[[Category:ChucK 101]]

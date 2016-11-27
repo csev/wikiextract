@@ -1,0 +1,194 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Proof of Normal Equation</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>We know that:</p>
+<p>$$
+J(\theta)=\dfrac{1}{2m} \displaystyle \sum&#95;{i=1}^{m} \left( h&#95;\theta(x^{(i)})-y^{(i)} \right)^2
+\quad \text{(the cost function)}
+$$</p>
+<p>$$
+h&#95;\theta(x^{(i)})=\theta&#95;0+\theta&#95;1 x^{(i)}&#95;1+\dots+\theta&#95;n x^{(i)}&#95;n
+\quad \text{(the predicted function)}
+$$</p>
+<p>$$
+\theta=
+\left[
+\begin{array}{c}
+\theta&#95;0 \newline
+\theta&#95;1 \newline
+\vdots \newline
+\theta&#95;n
+\end{array}
+\right]
+\quad \text{(the parameter vector)}
+$$</p>
+<p>$$
+Y=
+\left[
+\begin{array}{c}
+y^{(1)} \newline
+y^{(2)} \newline
+\vdots \newline
+y^{(m)}
+\end{array}
+\right]
+\quad \text{(the result vector)}
+$$</p>
+<p>$$
+X=
+\left[
+\begin{array}{cccc}
+x^{(1)}&#95;0 &amp; x^{(1)}&#95;1 &amp; \cdots &amp; x^{(1)}&#95;n \newline
+x^{(2)}&#95;0 &amp; x^{(2)}&#95;1 &amp; \cdots &amp; x^{(2)}&#95;n \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+x^{(m)}&#95;0 &amp; x^{(m)}&#95;1 &amp; \cdots &amp; x^{(m)}&#95;n 
+\end{array}
+\right]
+\quad \forall i \in &#123;1,2,\cdots,m&#125; \quad x^{(i)}&#95;0=1
+\quad \text{(the training matrix)}
+$$</p>
+<p>And we want to calculate $$\theta$$ for getting the minimum of $$J(\theta)$$. If $$J(\theta)$$ has continuous first partial derivatives for all $$\theta&#95;j$$, then as an extremum </p>
+<p>$$
+\forall j \in &#123;0,1,2,\cdots,n&#125; \quad \dfrac{\partial}{\partial\theta&#95;j}J(\theta)=0
+$$</p>
+<p>The $$J(\theta)$$ is quadratic polynomial, always positive, and can be infinitely large. So the extremum is the minimum</p>
+<p>Note: In this proof, $$i$$ and $$j$$ is all integer, and $$1 \leq i \leq m \quad 0 \leq j \leq n$$. And a equation including $$i$$(or $$j$$) without as the variable of summation, means for all value in it's interval this equation holds. So we say the last equation just as $$\dfrac{\partial}{\partial\theta&#95;j}J(\theta)=0$$ for convenience.</p>
+<p>$$
+\begin{align&#42;}
+\frac{\partial}{\partial\theta&#95;j}J(\theta)
+&amp;=\frac{1}{2m}\sum&#95;{i=1}^{m}\frac{\partial}{\partial\theta&#95;j}(h&#95;\theta(x^{(i)})-y^{(i)})^2 \newline
+&amp;=\frac{1}{2m}\sum&#95;{i=1}^{m}2(h&#95;\theta(x^{(i)})-y^{(i)})\frac{\partial}{\partial\theta&#95;j}(h&#95;\theta(x^{(i)})-y^{(i)}) \newline
+&amp;=\frac{1}{m}\sum&#95;{i=1}^{m}(h&#95;\theta(x^{(i)})-y^{(i)})x^{(i)}&#95;j
+\end{align&#42;}
+$$</p>
+<p>We define matrix $$N^{(i)}$$ as:</p>
+<p>$$
+N^{(i)}=
+\left[
+\begin{array}{c}
+x^{(i)}&#95;0 &amp; x^{(i)}&#95;1 &amp; \cdots &amp; x^{(i)}&#95;n
+\end{array}
+\right]
+$$</p>
+<p>So</p>
+<p>$$
+h&#95;\theta(x^{(i)})=N^{(i)} \cdot \theta
+\quad
+X=
+\left[
+\begin{array}{c}
+N^{(1)} \newline
+N^{(2)}\newline
+\vdots \newline
+N^{(m)}
+\end{array}
+\right]
+$$</p>
+<p>$$
+\begin{align&#42;}
+&amp;\frac{1}{m}\sum&#95;{i=1}^{m}(h&#95;\theta(x^{(i)})-y^{(i)})x^{(i)}&#95;j=0 \newline
+\Leftrightarrow \quad &amp;\sum&#95;{i=1}^{m}(N^{(i)}\theta-y^{(i)})x^{(i)}&#95;j=0 \newline
+\Leftrightarrow \quad 
+&amp;(x^{(1)}&#95;j N^{(1)}+x^{(2)}&#95;j N^{(2)}+\cdots+x^{(m)}&#95;j N^{(m)}) \cdot \theta
+-(x^{(1)}&#95;j y^{(1)},x^{(2)}&#95;j y^{(2)},\cdots,x^{(m)}&#95;j y^{(m)})=0 \newline
+\Leftrightarrow \quad
+&amp;\left[
+\begin{array}{cccc}
+x^{(1)}&#95;j &amp; x^{(2)}&#95;j &amp; \cdots &amp; x^{(m)}&#95;j
+\end{array}
+\right] \cdot 
+\left[
+\begin{array}{c}
+N^{(1)} \newline
+N^{(2)}\newline
+\vdots \newline
+N^{(m)}
+\end{array}
+\right] \cdot \theta=
+\left[
+\begin{array}{cccc}
+x^{(1)}&#95;j &amp; x^{(2)}&#95;j &amp; \cdots &amp; x^{(m)}&#95;j
+\end{array}
+\right] \cdot Y \newline
+\Leftrightarrow \quad
+&amp;\left[
+\begin{array}{cccc}
+x^{(1)}&#95;j &amp; x^{(2)}&#95;j &amp; \cdots &amp; x^{(m)}&#95;j
+\end{array}
+\right] \cdot X \cdot \theta=
+\left[
+\begin{array}{cccc}
+x^{(1)}&#95;j &amp; x^{(2)}&#95;j &amp; \cdots &amp; x^{(m)}&#95;j
+\end{array}
+\right] \cdot Y
+\end{align&#42;}
+$$</p>
+<p>For $$1 \times m$$ matrix $$H$$ and $$m \times 1$$ matrix $$V$$:</p>
+<p>$$
+H&#95;j \cdot V=a&#95;j
+\quad \Leftrightarrow \quad 
+\left[
+\begin{array}{c}
+H&#95;0 \newline
+H&#95;1 \newline
+\vdots \newline
+H&#95;n
+\end{array}
+\right]
+\cdot V=
+\left[
+\begin{array}{c}
+a&#95;0 \newline
+a&#95;1 \newline
+\vdots \newline
+a&#95;n
+\end{array}
+\right]
+$$</p>
+<p>So the equation</p>
+<p>$$
+\begin{align&#42;}
+\Leftrightarrow \quad
+&amp;\left[
+\begin{array}{cccc}
+x^{(1)}&#95;0 &amp; x^{(2)}&#95;0 &amp; \cdots &amp; x^{(m)}&#95;0 \newline
+x^{(1)}&#95;1 &amp; x^{(2)}&#95;1 &amp; \cdots &amp; x^{(m)}&#95;1 \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+x^{(1)}&#95;n &amp; x^{(2)}&#95;n &amp; \cdots &amp; x^{(m)}&#95;n
+\end{array}
+\right] \cdot X \cdot \theta=
+\left[
+\begin{array}{cccc}
+x^{(1)}&#95;0 &amp; x^{(2)}&#95;0 &amp; \cdots &amp; x^{(m)}&#95;0 \newline
+x^{(1)}&#95;1 &amp; x^{(2)}&#95;1 &amp; \cdots &amp; x^{(m)}&#95;1 \newline
+\vdots &amp; \vdots &amp; \vdots &amp; \vdots \newline
+x^{(1)}&#95;n &amp; x^{(2)}&#95;n &amp; \cdots &amp; x^{(m)}&#95;n
+\end{array}
+\right] \cdot Y \newline
+\Leftrightarrow \quad
+&amp;X^TX\theta=X^TY
+\end{align&#42;}
+$$</p>
+<p>If matrix $$X^TX$$ is invertible, then</p>
+<p>$$
+\theta=(X^TX)^{-1}X^TY
+$$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Proof_of_Normal_Equation&amp;oldid=33949">https://share.coursera.org/wiki/index.php?title=ML:Proof_of_Normal_Equation&amp;oldid=33949</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

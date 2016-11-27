@@ -1,0 +1,474 @@
+# Dose-Response Relations (11)  
+**The concept of dose and response**  
+*  There is a relationship between the drug, dose or the concentration and the response.  
+* In general, when we have zero dose we have zero response and if we do have a baseline response well we're just looking at the increment above that baseline.  
+* Then, when we add up the dose or a high enough concentration, we begin to get terms that could be called, under various terms, no more no additional response. 
+* Sometimes we call this a saturation of the response, or a plateau, or a ceiling, or an asymptote, but in general after at some high level of concentration of drug we get no more response.  
+* In this case, we can say that the drug is probably an agonist, because it is in fact eliciting a response.  
+
+
+**The “infinite sink” simplification**  
+* Receptor proteins are numerically scarce, compared with  
+--other protein molecules, or  
+--drug molecules.  
+* Therefore, drug concentrations are not markedly depleted by binding to receptors.
+* Drugs remain at constant concentration near receptors, on a time scale of seconds to minutes, and A distance scale of micrometers.  
+* Therefore.  
+: forward drug (D) binding to receptors (R) follows pseudo-first order kinetics:   
+$$
+\begin{equation}D + R \leftrightarrow D•R\end{equation} 
+$$  
+  
+$$
+\begin{equation}d[D*R]/dt = k _{bind} [D][R]- k _{unbind}[D*R]\end{equation}
+$$    
+  
+* [D] is constant, not depleted by binding  
+* Another way of saying this is that drugs remain at constant concentration near receptors. At least on a time scale of seconds to minutes and the distant scale of micrometers.  
+  
+**Excel file**  
+* There is a concentration of agonists.  
+* We have linear coordinates in the graph on the left with the yellow background.  
+* We have logarithmic agonist concentration coordinates in the graph on the right.  
+* We have a couple of parameters that we can adjust.  
+: the EC50, this is the half maximal concentration of the drug.  
+: the efficacy of the drug and the hill coefficient. 
+* Let's see what happens when we make the drug receptor interaction weaker. It will change the EC-50 from 20 nanomolar to a 100 nanomolar. But here on the linear scale the response reaches half maximal only toward the end of the range. And here on the log scale, again, the response is half maximal on the EC50.  
+* The Hill coefficient, basically, describes how cooperative the dose response relation looks.  
+* On linear coordinates, we have more or less a rectangular hyperbola. We have a linear start and a gradual saturation.  
+* In logarithmic co-ordinance in agonist we have a different scheme, we have a different form, in which there does seem to be a sigmoid plot.  
+* What this basically says is that the active state of the receptor is more likely to be associated with the presence of two bound agonist molecules than with the presence of a single bound agonist molecule.  
+* For receptors like channels which are psuedo-symmetric multimers, it often does take more than 1 bound agonist molecule to activate that receptor.  
+* So we'll press return and now have a sigmoid start. A parabolic start to the dose response relation looks a little bit like a parabola, and indeed if we blow it up we'll see that it has it's perfect square law response as long as we stay at a very small agonist concentration.  
+* And the logarithmic dose response relation has become a bit sharper.  
+* We're assuming here that every receptor molecule that binds an agonist produces a response but if we change this so called efficacy to only half, then the maximum of the dose response relation never gets bigger than half of neither coordinate.  
+
+  
+**Concepts in dose-response relations**  
+* $$EC_{50}$$ = 20 nM  
+* Efficacy (F) = 1  
+* Hill coefficient   $$n_H$$ = 1  
+
+##   $$ \frac{F[ A]^{n_H}}{([ A]^{n_H} + EC_{50}^{n_H})}$$
+  
+* The maximal response decreases as the efficacy of the agonist decreases.  
+* That is for efficacies < 1, the agonist is a partial agonist. 
+*  And again, for hill coefficients there is somewhat of a difference between a hill coefficient and cooperativity.  
+* Cooperativity indicates that after the first agonist is down, the second is more likely to bind. 
+* Hill coefficients, cooperativity:  
+: If nHill = 2, the active state of the receptor is more likely to be associated with the presence of two bound agonist molecules than with a single bound agonist.   
+ 
+> Though the exact above statement is in the class slide, Dr Lester alluded to, but did not explain in detail, the fact that 
+> cooperativity is not just the number of agonist molecules that can bind to the receptor.
+> The Hill coefficient need not be an integral number, can be a decimal.
+> Can be a non-negative number less than 1 (negatively cooperative binding).
+> Hill coefficient = 1, implies non-cooperative binding.
+> In case of positively co-operative binding, the Hill coefficient will normally be a number between 1 and the maximum number of
+> ligand binding sites per receptor. [Wikipedia article - Hill Equation](http://en.wikipedia.org/wiki/Hill_equation_(biochemistry)).
+  
+**Examples of Drug Classes**  
+* Full agonist  
+: nicotine (nicotinic receptor)  
+* Partial agonist  
+: varenicline (nicotinic receptor)- the drug used for smoking cessation. It also binds to nicotinic receptors. And it's thought that binding to nicotinic receptors but not activating them fully allows varenicline to out compete nicotine, and to give just enough of a feeling of well-being but not a full activation to help a smoker stop smoking.  
+* Antagonist  
+: fluoxetine (serotonin transporter)  
+* Partial inverse agonist (shift the receptors into a confirmation that is not simply inactive, but does not allow the agonist to bind at all.)    
+: clozapine (5-HT receptor)  
+* Full inverse agonist (act even more to keep the receptor in a closed confirmation)   
+: β-carboline (GABAA receptor)  
+  
+---  
+  
+#  Synapses as Drug-Sensitive Biophysical Machines (12) 
+**Life Cycle of a Synaptic Vesicle In a Presynaptic Terminal**  
+* In the presynaptic terminal, there are vesicles full of transmitter. Some of them docked to the membrane awaiting calcium flux which allows them to fuse with the presynaptic membrane and liberate their contents of transmitter into the synaptic cleft.  
+* All of the action is taking place here in this 500 angstrom gap between the pre-synaptic and post-synaptic cells.  
+* There is the usual action potential, then the after hyper-polarization, and then the post-synaptic recording.  
+* If there was not a post synaptic spike, we would have the post synaptic excitatory post synaptic potential (EPSP), which would reach threshold for a post synaptic impulse, and fire a spike.  
+* Now the whole synaptic delay between the peak of the action potential and the start of transmitter release is about half a millisecond.  
+* And actually the delay between the peak of the calcium current in the beginning of the EPSB is only about 0.2 milliseconds, a bit more at lower temperature.  
+* And so most of the synaptic delay is caused in the opening of calcium channels during the presynaptic action potential.  
+* The size and timing of the EPSB's can be modulated by changing the waveform of the pre-synaptic action potential and several drugs change transmitter release in this way.  
+:* For instance, Ziconitide blocks these calcium channels. Ziconitide is a relatively new
+pain killer. Its one of the few peptide drugs that work in the brain and it needs to be introduced in the brain with an intrathecal pump that is inside the spinal cord.  
+
+
+**Timing of synaptic events**  
+* “Synaptic delay”, between the peak of the action potential and the start of
+transmitter release, is ~ 0.5 ms.  
+* Delay between the peak of the Ca2+ current and the beginning of the EPSP is ~0.2 ms (more at lower temperature).  
+* Most of the “synaptic delay” is caused in opening of Ca2+ channels during the presynaptic action potential.  
+* The size and timing of the EPSP’s can be modulated by changing the waveform of the presynaptic action potential.  
+* Several drugs change transmitter release in this way.    
+(Kandel et al., Principles of Neural Science © McGraw-Hill Professional Publishing)  
+  
+**Ligand-Gated Ion Channels**  
+1. Multimeric integral membrane proteins  
+2. Ion flux through the channels can send a signal in two ways:  
+* Change in membrane voltage  
+* Ca2+ entry - critical for transmitter release, for synaptic plasticity, etc  
+3. Channel opens within a few μsec after ligand binding  
+4. Ion Selectivity:  
+* Cationic, often non-selective (Na+, K+, Ca2+)  
+* Anionic (Cl- at GABAA and Glycine receptors)  
+5. Subject to modulation in various ways  
+  
+**Superfamilies of Vertebrate Ligand-gated Ion Channels / Synaptic Receptors**  
+* Pentameric Cys-loop Receptors  
+: Nicotinic ACh
+: GABAA, Glycine
+* Many Vertebrate Glutamate Receptors  
+: AMPA-type  
+: Kainate-type
+: NMDA-type  
+* ATP (P2X) Receptors
+(Kandel et al., Principles of Neural Science © McGraw-Hill Professional Publishing)  
+  
+**Timing / Analysis of Postsynaptic Activation**  
+* channel opens  
+* now we synchronize artificially on the opening event  
+* At a synapse, the pulse of transmitter is ~ an alpha-function, and all postsynaptic channels open nearly synchronously.  
+* Several drugs perturb either the synchrony of duration of these openings.  
+* Imagine that we are doing a single channel recording, from a post synaptic memory.   * Single channel recordings are done with patch clamps, and, here at the base line the channel is closed.  
+* We have one channel in the patch, and we have some agonist's, some acetylcholine or some glutamate depending on which channel we're monitoring.  
+* And every once in a while that channel opens, it stays open for a while and then closes. Here it opens again and stays open for a while, and then closes.  
+* We take this final event and we line it up with the beginning of the opening, and then we do the same thing for one of the other events, etc, until we have all the channels retrospectively synchronized as they open together.  
+* Now, we superimpose them so that they are nearly all synchronized, and we see that they begin, although we have made them all begin at nearly the same time, they are closing at different times.  
+* They have a stacastic closing event. and the importance of this phenomenon is that although we did this recording by taking a single channel and recording it for several minutes at a time.  
+* During a synaptic event, actually there are many channels in parallel in the membrane, the neurotransmitter hits them nearly all at once, and so we get a macroscopic recording which seems to be the sum of these single channel openings.  
+* So at a synapse, the pulse of transmitter is approximately a delta function, and all post-synaptic channels open nearly synchronously.  
+* Several drugs perturb either the synchrony or the duration of these openings.   
+  
+
+---  
+  
+# Nicotinic Acetylcholine Receptors: Activation and Desensitization (13)  
+
+**Midbrain dopaminergic cells (tyrosine hydroxylase stain)**  
+* Substantia nigra pars compacta (SNc, controls motion); lost in Parkinson’s Disease  
+* A10 Ventral tegmental area (VTA, controls reward)  
+* Substantia nigra pars reticulata (SNr, GABAergic)  
+* These neurons express many types of nAChR subunits and combinations  
+
+**Nicotinic acetylcholine, GABAA , and glycine receptors look alike at this resolution**  
+  
+**The Family of Nicotinic Acetylcholine Receptors**  
+The mammalian genome contains  
+10 alpha subunits (alpha1 through 10) and  
+3 beta subunits (beta1 through 4),  
+γ, δ, and ε subunits.  
+* Nicotinic receptors always contain at least two alpha subunits.  
+Muscle: (α1)2β1εδ  
+Major brain ACh receptors: α4β2 [stoichiometry either (α4)2(β2)3 or (α4)3(β2)2 ] (α7)5  
+  
+**How do Nicotinic Receptors Transduce Agonist Binding into Channel Gating?**  
+* Swivel? (Miyazawa & Unwin, Nature 2003)  
+* Twist? (Corringer et al., J Physiol 2010)  
+  
+**In any case, the permeant ions experience a water-like environment**  
+  
+**The Reversal Potential (Erev = EEPSP) for the synaptic potential (or current**  
+* not a True Equilibrium / Nernst Potential   
+* Most excitatory ligand-gated channels allow flux of Na+ and K+ (sometimes Ca2+), and E ~ -5 mV  
+* Positive to Erev, agonist pushes voltage more negative.  
+* At Erev, the agonist has little effect on membrane potential.  
+* Negative to Erev, agonist pushes voltage more positive.  
+* resting potential: K+ channels open.  
+* Excitatory postsynaptic responses: Na+ / K+ channels open too.  
+* change in V = (EK*GK + E(EPSP)*G(EPSP)) / (GK + G(EPSP))  
+  
+**Desensitization Occurs at Many Ligand-Gated Channels**  
+* voltage-clamp trace from Xenopus oocyte expressing α4β2 nicotinic receptors  
+* (α7 nicotinic receptors desensitize in a few ms)  
+
+---  
+  
+# Inhibitory Ligand-Gated Channels (14)  
+**The cerebellum: a famous circuit in neuroscience.**  
+In this miniLecture, it exemplifies inhibition via ligand-gated channels  
+  
+**The Reversal Potential (EIPSP) for the inhibitory GABA and glycine receptors is ~ Ecl**    
+* Positive to Erev, agonist pushes voltage more negative.  
+* At Erev , agonist has little effect on membrane potential.  
+* Negative to Erev, agonist pushes voltage more positive.  
+* change in V = (EK*GK + E(EPSP)*G(EPSP) + ECl*GCl) / (GK + G(EPSP)+ GCl)  
+  
+**Nicotinic acetylcholine, GABAA , and glycine receptors look alike at this resolution**  
+  
+**The family of GABAA receptors**  
+The mammalian genome contains  
+* 4 beta subunits,  
+* 6 alpha subunits  
+* γ, δ, ε, and ρ subunits,  
+* and splice variants.  
+  
+**The Family of glycine receptors (primarily in spinal cord)**  
+The mammalian genome contains  
+2 alpha subunits  
+one beta subunit,  
+  
+**Pharmacology of GABAA Receptors: allosteric activators**  
+* Benzodiazepines (zolpidem, eszoplicone, diazepam)  
+* Bind at “non-agonist” interfaces  
+* phenobarbital site is unclear  
+* The natural ligand binds at subunit interfaces (like nicotine or acetylcholine at nicotinic receptors)  
+  
+**GABAA and Glycine blockers bind either at the agonist site or in the channel**  
+* strychnine (glycine Rec.)  
+* bicuculline  (GABAA rec.)  
+* picrotoxin (GABAA & glycine receptors)  
+  
+**Additional potentiators of GABAA receptors**  
+* Some steroids (possibly underlie premenstrual syndrome)  
+* Ethanol (caution—probably not ethanol’s only effect)  
+* General anesthetics  
+(Keramidas et al., Prog. Biophys. Mol. Biol. 86: 161 (2004))  
+  
+---  
+  
+# Glutamate-Gated Receptor Channels (15)  
+**The Hippocampus**  
+a favorite model system for neuroscience   
+* The “tri-synaptic pathway”  
+  
+**A postsynaptic density, with a cartoon of important proteins**  
+  
+**Superfamilies of Vertebrate Ligand-gated Ion Channels / Synaptic Receptors**  
+* Pentameric Cys-loop receptors  
+: Nicotinic ACh  
+: GABAA, Glycine  
+* Many Vertebrate Glutamate Receptors  
+: Nicotinic ACh  
+: GABAA, Glycine  
+* AMPA-type  
+: Kainate-type  
+: NMDA-type  
+* ATP (P2X) Receptors  
+  
+**Ionotropic Glutamate Receptors**  
+* 3 transmembrane helices per subunit x 4 subunits  
+* There are also G protein-coupled glutamate receptors  
+  
+**The Reversal Potential (Erev = EEPSP) for glutamate gated channels**  
+not a True Equilibrium / Nernst Potential  
+* Most excitatory ligand-gated channels allow flux of Na+ and K+ (sometimes Ca2+), and Erev ~ -5 mV  
+* Positive to Erev, agonist pushes voltage more negative.  
+* At Erev , agonist has little effect on membrane potential.  
+* Negative to Erev, agonist pushes voltage more positive.  
+* change in V = (EK*GK + E(EPSP)*G(EPSP)) / (GK + G(EPSP))  
+  
+**NMDA receptors are “coincidence detectors” important for memory / learning**  
+Their channel opens only when two events happen concurrently:  
+1. Binding of glutamate  
+2. Strong postsynaptic membrane depolarization (e. g., by an action potential).  
+* The depolarization relieves block by Mg2+.  
+* The coincidence readout: NMDA receptors are very permeable to Ca2+  
+(Zigmond et al. (Eds.) Fundamental Neuroscience, © Sinauer (1999))  
+  
+**How Might Ketamine Act within 2 h as an Antidepressant?**  
+* Outside in Hypotheses from Current Papers  
+
+---  
+  
+# Channel Blockers (16)  
+
+**Single-channel traces & Atomic-Scale Structure: Local Anesthetic in an Ion Channel**  
+* Muscle nicotinic receptor  
+* + quaternary lidocaine derivative 20 μM  
+* Brominated lidocaine derivative (only the Br was resolved).  
+* Bacterial pentameric ligand gated channel  
+(Hilf et al., Nature Struct. Mol. Biol. 2010 Pdb file 2XQ3 (Google: 2XQ3))  
+  
+**The membrane potential controlled by ligand-gated and voltage-gated channels**  
+* change in V = (EK*GK + E(EPSP)*G(EPSP) + ECl*GCl + ENa*GNa) / (GK + G(EPSP)+ GCl + GNa)  
+  
+**More resources on voltage-gated channels and action potentials**  
+See the Duke University / Coursera offering, “Bioelectricity”  
+  
+**Voltage-gated Na+ channels, and Blockade by Tetrodotoxin**  
+* The pufferfish toxin, from PubChem  
+* Animal Na+ channels have an inactivation flap  
+* PDB files: 4EKW, 4DXW  
+(Payandeh et al, Nature 2011; Zhang et al, Nature 2012)  
+  
+**Most Na+ Channel Blockers in Clinical Use Block from Inside the Cell**  
+* “Trapped” or “Use-Dependent” Blocker  
+  
+**Procainamide, a use-dependent blocker**  
+  
+**Na+ channel blockers in medicine**  
+* Local anesthetics  
+:* Dental surgery (procaine)  
+:* Sunburn medications  
+* Antiarrhythmics (heart)  
+:* “use-dependent blocker”  
+:* example: (procainamide)  
+* Antiepileptics / anticonvulsants (brain)  
+:* “use-dependent blocker”
+:* (phenytoin)  
+
+**Unwanted Ion Channel Blockade**  
+* Many candidate neural drugs bind in a waterfilled cavity of the cardiac K+ channel called hERG (“human ether-a-go-go related gene”).  
+* This lengthens the cardiac action potential so much that it interferes with the next action potential, causing potentially fatal arrhythmias.  
+* Experts estimate that ~40% of drug candidates cause of hERG blockade.  
+* The FDA now requires that all new drugs Bacterial pass a hERG safety test.  
+(Doyle et al, Science, 1998)  
+  
+---  
+  
+# G protein pathway: Principles and Receptors (17)  
+
+**Proof of chemical synaptic transmission (Otto Loewe, University of Graz, 1921).**  
+* Many details of G protein pathways were discovered for neuronal control of the heart  
+* Vagus nerve runs from the head to the heart  
+* Spontaneous heartbeats in both hearts are stopped by stimuli to the “upstream” vagus  
+* The diffusible substance: acetylcholine acting on muscarinic ACh receptors  
+  
+**Some postsynaptic membranes contain G protein-coupled receptors (“metabotropic” receptors) and / or ligand-gated channels**  
+* G protein-coupled serotonin receptor  
+* G protein-coupled (muscarinic) acetylcholine receptor  
+* G protein-coupled dopamine receptor  
+  
+**Several small-molecule transmitters serve as agonists for both ligand-gated channels & GPCRs (among vertebrates)**  
+  
+$$
+\begin{array}{|c|c|c|}
+Transmitter & Ligand-gated channel & GPCR \\\ \hline
+ACh & nicotinic AChR & muscarinic AChR \\\ \hline
+GABA & GABAA & GABAB \\\ \hline
+glutamate & iGluR & mGluR \\\ \hline
+serotonin & 5-HT3 & 5-HTn, n = 1,2, 4-7 \\\ \hline
+histamine & (invertebrates only) & Hn \\\ \hline
+dopamine & (invertebrates only) & Dn \\\ \hline
+\end{array}
+$$  
+  
+ 
+* On a time scale of seconds (perhaps minutes), the language of the nervous system is still electricity; and we are still describing a set of mechanisms that manipulate impulse
+frequencies in individual neurons.  
+
+**Plasma Membrane Components of the G Protein Pathway**  
+* Neurotransmitter or hormone binds to receptor
+* activates G protein  
+* Effector: enzyme or channel  
+* How fast? 100 ms to 10 s  
+* How far? Probably less 1 micrometer  
+* PDB file 3SN6  
+(Rasmussen et al., Nature 2011) 
+  
+**G protein-coupled receptors**  
+1. All have 7 alpha-helices  
+2. There are about 1000 G protein-coupled receptors in the genome.  
+* (Most are still “orphans”; their ligands are unknown)
+3. Individual receptors respond to:  
+(a) a low-molecular weight neurotransmitter such as serotonin, dopamine, or acetylcholine  
+(b) a short protein (8-40 amino acids, a “peptide”) such as an endorphin  
+(c) a relatively insoluble lipid such as anandamide, the endocannabinoid  
+(d) an olfactory stimulus;  
+or  
+(e) light, in the eye (receptor = rhodopsin)  
+
+*Selective advantage of such a complex pathway?  
+The neurotransmitter or hormone does not directly influence the response--from the viewpoint of  
+(a) Chemistry  
+(b) Speed  
+(c) Localization ( within ~ 1 μm)  
+* All this amplification and indirect coupling requires energy!  
+* Limitations of the pathway:  
+(a) Speed  
+(b) co-operativity  
+
+---  
+   
+# Inhibitory G Proteins and their Effectors (18)  
+
+**Structure of a heterotrimeric G protein: a molecular switch**  
+* α subunit  
+* β subunit  
+* γ subunit  
+* GDP  
+* Note the “propeller” in the β subunit which caps the α subunit, preventing either subunit from interacting with the effector (There is no effector in this structure).  
+  
+**Gi protein effectors include some K+ channels**  
+* +Gβγ Normally released from Gi; here, added by experimenter  
+* Excised “inside-out” patch allows access to the inside surface of the membrane  
+  
+**G protein-gated K channels inhibit neuronal (& cardiac) firing**  
+* additional K+ channels keep the membrane potential away from threshold, and therefore decrease firing rates  
+  
+**Gi-coupled receptors usually inhibit neurons**  
+* Gi directly activates some K+ channels.  
+* Gi directly inhibits some voltage-gated Ca2+ channels.  
+* Gi directly inhibits adenylyl cyclase.  
+* All these actions slow neuronal firing and decrease synaptic transmitter release.  
+  
+---  
+  
+# The Stimulatory G Protein (Gs) Pathway (19)  
+
+**Gq, Gs, and Gt protein effectors include some enzymes**  
+* Gs-coupled receptors often stimulate other neurons & cells  
+  
+**caffeine prolongs the intracellular messenger cAMP**  
+* Phosphodiesterase inhibitors prolong the life of intracellular messengers  
+* Inhibited by sildenafil, tadlafil, vardenafil  
+  
+**Intracellular messengers bind to proteins**  
+  
+**Ca2+ or cAMP binds to kinase; kinase Ca2+ cAMP this activates the kinase**  
+  
+**Example of ion channel phosphorylation: β-adrenergic receptors regulate accommodation in hippocampal neurons**  
+* Norepinephrine-induced phosphorylation inhibits the SK (smallconductance, Ca2+-activated potassium   
+* Therefore the after-hyperpolarization (AHP) is smaller and spike trains are longer.
+* The norepinephrine effect is also mimicked by agents that mimic or increase cAMP.  
+1. Phosphodiesterase does not hydrolyze 8-bromo-cAMP  
+2. Forskolin activates cyclase  
+
+---  
+  
+# The Ca2+ -mobilizing G protein (Gq) pathway; Modifying G protein Pathways (20)  
+
+**Gq, Gs, and Gt protein effectors include some enzymes**  
+  
+**Genomic diversity of the G protein pathway**  
+* ~ 1000 G protein-coupled receptors. All have 7 helices  
+* G proteins all have 3 subunits  
+* There are ~ 18 alpha subunit genes in 4 major classes i, q, s, t  
+: ~ 5 beta subunits  
+: ~ 3 gamma subunits 
+
+**There are 2 major types of effectors**
+(1) Channels affected by G proteins  
+: ~5 known K+ channel genes  
+: ~4 Ca2+ channels  
+(2) Enzymes  
+: 3 major classes, each with 2 to 10 members  
+* and many “accessory proteins”. Now we discuss one  
+  
+**Regulators of G protein Signaling tune the kinetics of effector activation/deactivation**  
+* Expressed: muscarinic acetylcholine receptor + G Protein-gated K+ channel.  
+* + RGS protein  
+
+**β-arrestins provide another example of tuning the G protein pathway** 
+  
+---  
+  
+# “Outside-in” Mechanisms for Long-term Actions on G Protein Pathways (21)  
+* On a time scale of seconds (perhaps minutes), the language of the nervous system is still electricity; and we are still describing a set of mechanisms that manipulate impulse
+frequencies in individual neurons.  
+* Now we proceed to effects on a longer time scale (hours to days).  
+  
+**Seymour Benzer’s early Drosophila learning mutants**  
+  
+**Two of Seymour Benzer’s early Drosophila learning mutants involve the cAMP system**  
+  
+**Many genes have a DNA sequence called “cAMP-Ca2+ responsive element” (CRE)**  
+  
+**The “outside-in” pathway from G protein-coupled receptor to gene activation  
+* How fast? 10 s to days  
+* How far? Up to 1 m  
+  
+**A typical schematic drawing**  
+  
+---

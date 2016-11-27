@@ -1,0 +1,44 @@
+# Send More Money #
+
+### Comet ###
+
+A constraint programming based comet model for the Send More Money problem.
+
+<pre>
+import cotfd;
+
+Solver<CP> m();
+range Digits = 0..9;
+
+var<CP>{int} S(m,Digits);
+var<CP>{int} E(m,Digits);
+var<CP>{int} N(m,Digits);
+var<CP>{int} D(m,Digits);
+var<CP>{int} M(m,Digits);
+var<CP>{int} O(m,Digits);
+var<CP>{int} R(m,Digits);
+var<CP>{int} Y(m,Digits);
+var<CP>{int} x[1..8];
+x[1]=S;x[2]=E;x[3]=N;x[4]=D;
+x[5]=M;x[6]=O;x[7]=R;x[8]=Y;
+
+solve<m> {
+m.post(alldifferent(x));
+m.post(M != 0); 
+m.post(S != 0);
+m.post(         1000 * S + 100 * E + 10 * N + D +  
+                1000 * M + 100 * O + 10 * R + E ==
+    10000 * M + 1000 * O + 100 * N + 10 * E + Y);
+} using {
+   forall(i in 1..8 : !x[i].bound()) 
+      label(x[i]);
+   cout << "D = " << D << endl;
+   cout << "E = " << E << endl;
+   cout << "O = " << O << endl;
+   cout << "N = " << N << endl;
+   cout << "M = " << M << endl;
+   cout << "R = " << R << endl;
+   cout << "S = " << S << endl;
+   cout << "Y = " << Y << endl;
+}
+</pre>

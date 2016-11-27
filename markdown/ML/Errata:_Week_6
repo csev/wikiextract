@@ -1,0 +1,35 @@
+### Errata in the Graded Quizzes
+Quiz questions in Week 6 should refer to linear regression, not logistic regression (typo only).
+
+### Errata in the Video Lectures
+#### In the "Regularization and Bias/Variance" video
+The slide "Linear Regression with Regularization" has an error in the formula for $$J(\theta)$$: the regularization term should go from $$j = 1$$ up to $$n$$ (and not $$m$$), that is $$\frac{\lambda}{2m} \sum_{j=1}^n \theta_j^2$$.
+The quiz in the video "Regularization and Bias/Variance" has regularization terms for $$J_{train}$$ and $$J_{CV}$$, while the rest of the video stresses that these should not be there. Also, the quiz says "Consider regularized logistic regression," but exhibits cost functions for regularized linear regression.
+
+At around 5:58, Prof. Ng says, "picking theta-5, the fifth order polynomial". Instead, he should have said the fifth value of $$\lambda$$ (0.08), because in this example, the polynomial degree is fixed at d = 4 and we are varying $$\lambda$$. 
+
+#### In the "Advice for applying ML" set of videos
+Often (if not always) **the sums corresponding to the regularization terms in $$J(\theta)$$** are (erroneously) written with $$j$$ running from $$1$$ to $$m$$. In fact, **$$j$$ should run from $$1$$ to $$n$$**, that is, the regularization term should be $$\lambda \sum_{j=1}^n \theta_j^2$$. The variable $$m$$ is the number of $$(x,y)$$ pairs in the set used to calculate the cost, while $$n$$ is the largest index of $$j$$ in the $$\theta_j$$ parameters or in the elements $$x_j$$ of the vector of features.
+
+In the "Advice for Applying Machine Learning" section, the figure that illustrates the relationship between lambda and the hypothesis. used to detect high variance or high bias, is incorrect. $$J_{train}$$ is low when lambda is small (indicating a high variance problem) and high when lambda is high (indicating a high bias problem).
+
+#### Video (10-2: Advice for Applying Machine Learning -- hypothesis testing) 
+
+The slide that introduces __Training/Testing procedure for logistic regression__, (around 04:50) the cost function is incorrect.
+It should be:
+
+$$J_{\mathrm{test}}(\theta)=-\frac{1}{m_{\mathrm{test}}}\sum_{i=1}^{m_{\mathrm{test}}}\left(y_{\mathrm{test}}^{(i)}\cdot \log(h_{\theta}(x_{\mathrm{test}}^{(i)})) + (1-y_{\mathrm{test}}^{(i)})\cdot \log(1-h_{\theta}(x_{\mathrm{test}}^{(i)}))\right)$$
+[[Category:ML:Errata]]
+
+
+#### Video Regularization and Bias/Variance (00:48)
+
+Regularization term is wrong. Should be 
+$$\frac{\lambda}{2m}\sum_{j=1}^{n}\theta_j^2$$ and not sum over m.
+
+#### Videos 10-4 and 10-5: current subtitles are mistimed
+
+Looks like the videos were updated in Sept 2014, but the subtitles were not updated accordingly. (10-3 was also updated in Aug 2014, but the subtitles were updated)
+
+### Errata in the ex5 programming exercise
+In ex5.m at line 104, the reference to "slide 8 in ML-advice.pdf" should be "Figure 3 in ex5.pdf".

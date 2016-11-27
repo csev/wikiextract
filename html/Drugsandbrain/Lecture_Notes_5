@@ -1,0 +1,674 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Notes 5</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Week 5,  Psychiatric Diseases  </p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Major_Depressive_Disorder_Introduction_to_Psychiatric_Disease_.2840.29"><span class="tocnumber">1</span> <span class="toctext">Major Depressive Disorder Introduction to Psychiatric Disease   (40)</span></a></li>
+<li class="toclevel-1"><a href="#Major_Depressive_Disorder_.3D_Unipolar_Depressive_Disorder:_Clinical_description_and_genetics_.2841.29"><span class="tocnumber">2</span> <span class="toctext">Major Depressive Disorder = Unipolar Depressive Disorder: Clinical description and genetics (41)</span></a></li>
+<li class="toclevel-1"><a href="#Major_Depressive_Disorder_Pathophysiology.2C_Animal_Models.2C_.28Biomarkers.29_.2842.29"><span class="tocnumber">3</span> <span class="toctext">Major Depressive Disorder Pathophysiology, Animal Models, (Biomarkers) (42)</span></a></li>
+<li class="toclevel-1"><a href="#Major_Depressive_Disorder_Mechanisms_of_antidepressant_action_.2843.29"><span class="tocnumber">4</span> <span class="toctext">Major Depressive Disorder Mechanisms of antidepressant action  (43)</span></a></li>
+<li class="toclevel-1"><a href="#Major_Depressive_Disorder_Additional_Antidepressant_Mechanisms_.2844.29"><span class="tocnumber">5</span> <span class="toctext">Major Depressive Disorder Additional Antidepressant Mechanisms  (44)</span></a></li>
+<li class="toclevel-1"><a href="#Bipolar_Disorder_.2845.29"><span class="tocnumber">6</span> <span class="toctext">Bipolar Disorder (45)</span></a></li>
+<li class="toclevel-1"><a href="#Bipolar_Disorder._Heterozygote_advantage_.2846.29"><span class="tocnumber">7</span> <span class="toctext">Bipolar Disorder. Heterozygote advantage  (46)</span></a></li>
+<li class="toclevel-1"><a href="#Bipolar_Disorder._Drugs_and_Other_Therapies_.2847.29"><span class="tocnumber">8</span> <span class="toctext">Bipolar Disorder. Drugs and Other Therapies   (47)</span></a></li>
+<li class="toclevel-1"><a href="#Schizophrenia_Clinical_Description.3B_Genetics_.2848.29"><span class="tocnumber">9</span> <span class="toctext">Schizophrenia Clinical Description; Genetics (48)</span></a></li>
+<li class="toclevel-1"><a href="#Schizophrenia_Pathophysiology._A_Century_of_Frustration_.2849.29"><span class="tocnumber">10</span> <span class="toctext">Schizophrenia Pathophysiology.  A Century of Frustration (49)</span></a></li>
+<li class="toclevel-1"><a href="#Schizophrenia_Nongenetic_contributions.2C_Biomarkers.2C_.26_Animal_Models_.2850.29"><span class="tocnumber">11</span> <span class="toctext">Schizophrenia Nongenetic contributions, Biomarkers, &amp; Animal Models  (50)</span></a></li>
+<li class="toclevel-1"><a href="#Drugs_for_schizophrenia_.2851.29"><span class="tocnumber">12</span> <span class="toctext">Drugs for schizophrenia (51)</span></a></li>
+<li class="toclevel-1"><a href="#Overview.2C_Summary.2C_Prospects_.2852.29"><span class="tocnumber">13</span> <span class="toctext">Overview, Summary, Prospects  (52)</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Major_Depressive_Disorder_Introduction_to_Psychiatric_Disease_.2840.29">Major Depressive Disorder Introduction to Psychiatric Disease   (40)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture40" title="Drugsandbrain:Lecture Week5Lecture40"> Lecture 40 Edited Text</a><br />
+<strong>The recommended textbook by Nestler, Hyman, and Malenka</strong><br />
+<ul><li> The three authors are all psychiatrists with clinical experience; they have contributed importantly to research.<br />
+</li><li> Excellent material on “Mood and Emotion” (Chapter 14) and “Schizophrenia and other Psychoses” (Chapter 16).<br />
+</li><li> See the link on the course Syllabus page.<br />
+</li><li> A psychiatric diseases can be diagnosed only if a person has clinically significant distress or social occupational functioning statement “90% of disorder” impairment in social, occupational, or other important areas of functioning.<br />
+</li><li> The statement, suicide victims have a mental disorder derives in part from this
+</li></ul>
+requirement.  </p>
+<p><strong>Major Depressive Disorder</strong><br />
+<strong>Bipolar disease</strong><br />
+<strong>Schizophrenia</strong><br />
+1. Clinical description (we’ll de-emphasize this, during the DSM-IV to V transition)
+Diagnostic &amp; Statistical Manual of Mental Disorders, American Psychiatric Association)<br />
+2. Genetics. Psychiatric disease are complex disorders.<br />
+3. Pathophysiology. We know very little yet.<br />
+4. Biomarkers and animal models. These rarely account for the “therapeutic lag”<br />
+5. Heterozygote advantage (mostly for bipolar disease)<br />
+6. Existing and experimental therapeutic approaches, mostly drug-based.<br />
+The challenge posed by the “placebo effect”
+Robert A. Scott<br />
+Miracle Cures: Saints, Pilgrimage, and the Healing Powers of Belief<br />
+University of California Press, 2010<br />
+Bears on stigmatizing psychiatric disease?  </p>
+<p><strong>Psychiatric Diseases present a large global burden</strong><br />
+<ul><li> DALY = Disability Adjusted Loss of the Years worth of full health<br />
+</li><li> This chart tells us that among high income countries three major sources of loss of full health, loss of work, loss of productivity, happiness, are the psychiatric diseases that we're going to discuss this week.   </p>
+</li></ul>
+
+<p><strong>How do psychiatric drugs work?</strong><br />
+<ul><li> The 2 -3 week delay presents a continuing mystery<br />
+</li></ul>
+1. “The mood-elevating effects of fluoxetine [Prozac] are not evident after initial exposure to the drug but require its continued use for several weeks. This delayed effect suggests that it is not the inhibition of serotonin transporters per se, but some adaptation to sustained increases in serotonin function that mediates the clinical actions of fluoxetine. However, where these adaptations occur in the brain, and the nature of the adaptations at the molecular level, have yet to be identified with certainty.” SSRI’s help ~ 50% of major depressive
+disorder patients<br />
+2. “All current antipsychotic drugs exert their full therapeutic actions over weeks,
+suggesting that, like lithium and antidepressants, slowly developing adaptations (in this case to initial D2 dopamine receptor blockade) are required for their antipsychotic effects.”  </p>
+<p><strong>Mood Disorders in DSM-IV</strong><br />
+<ul><li> Bipolar disorder and major depression are both classified as mood disorders.  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Major_Depressive_Disorder_.3D_Unipolar_Depressive_Disorder:_Clinical_description_and_genetics_.2841.29">Major Depressive Disorder = Unipolar Depressive Disorder: Clinical description and genetics (41)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture41" title="Drugsandbrain:Lecture Week5Lecture41"> Lecture 41 Edited Text</a><br />
+<strong>Major Depressive Disorder in DSM-IV</strong><br />
+<ul><li> Summary description of a Major Depressive Episode<br />
+</li></ul>
+The essential feature of a Major Depressive Episode is a period of at least 2 weeks: there is either depressed mood or the loss of interest or pleasure in nearly all activities (“anhedonia” ).
+In children, adolescents, and some adults, the mood may be irritable rather than sad.
+The individual must also experience at least four additional symptoms drawn from a list that includes:
+<ul><li> changes in appetite or weight, sleep, and psychomotor activity;
+</li><li> decreased energy;
+</li><li> feelings of worthlessness or guilt;
+</li><li> difficulty thinking, concentrating, or making decisions; or
+</li><li> recurrent thoughts of death or suicidal ideation, plans, or attempts.
+</li></ul>
+To count toward a Major Depressive Episode, a symptom must either be newly present or must
+have clearly worsened (Eeyore has no Major Depressive Episode; that’s just him). The symptoms must persist for most of the day, nearly every day, for at least 2 consecutive weeks.  </p>
+<ul>
+<li>More Characteristics of Major Depression<br />
+A Untreated episodes of major depression usually last from 7 - 14 months<br />
+B. Major Depression is a recurring disorder, usually worsening with age if untreated.<br />
+C.The reported incidence of depression is 3 times higher in women than in men<br />
+<dl><dd> Men seem to manifest depression or something like it, as irritability more than women do. We need to keep this balance among the various symptoms of depression in mind when we analyze men versus women. </li>
+</dd></dl>
+</ul>
+<p><strong>Major Depression is Often Treatable</strong><br />
+Somatic Treatments:<br />
+<ul><li> Medications<br />
+</li><li> Vagal nerve stimulation<br />
+<ul><li> Deep brain stimulation in anterior cingulate cortex 
+</li></ul>
+</li><li> Electroconvulsive therapy  </p>
+</li></ul>
+
+<p>Psychotherapy:<br />
+<ul><li> Cognitive-Behavioral Therapy<br />
+</li><li> Interpersonal Therapy<br />
+</li></ul>
+<dl><dd> Some people believe that psychotherapy is most effective when it's combined with medications, or with other somatic treatments.  </p>
+</dd></dl>
+
+<p>Other:
+<ul><li> diet, exercise, etc.  </p>
+</li></ul>
+
+<p><strong>Genetics</strong><br />
+<ul><li> Major depressive disorder is 1.5-3 times more common among first-degree biological relatives of persons with this disorder than among the general population.<br />
+</li><li> Major depressive disorder is so heterogeneous that very few scientists have tried genome-wide association scans (GWAS), as in miniLecture 30.<br />
+</li><li> “Candidate gene” approaches are being pursued.
+</li><li> There is evidence for an increased risk of alcohol dependence in adult first-degree
+</li></ul>
+biological relatives, and there may be an increased incidence of attention deficit/
+hyperactivity disorder in the children of adults with this disorder.  </p>
+<p><strong>Serotonin transporter (SERT) mutations are linked to</strong><br />
+<ul><li> Personality traits: Anxiety, neuroticism, amygdala blood flow, negative emotionality.<br />
+</li><li> Diseases: depression, bipolar disorder, suicide likelihood, substance abuse, ADD/ADHD,
+</li></ul>
+neurodegenerative disease, obsessive-compulsive disorder*, success of SSRI treatment,
+heart attack, irritable bowel syndrome, sudden infant death syndrome.<br />
+<ul><li> The serotonin transporter has been discussed as a molecule and as a drug target in mini lectures 22 and 23.<br />
+</li><li> There is no doubt that since the early 1990s mutations of the serotonin transporter has been linked to many psychiatric indications.<br />
+</li><li> First of all, to personality traits, among the early reports was a linkage between polymorphisms in the serotonin transporter and anxiety neuroticism (negative emotionality).<br />
+</li><li> More recently, fMRI which we had discussed previously, has been used to show that blood flow in the amygdala changes, and these changes may be correlated with polymorphisms in this serotonin transporter.<br />
+</li><li> This is the DNA, not the protein, and from the 5 prime end where transcription and translation start to the 3 prime end. The coding region is shown here as a salmon-colored box, and this has fourteen exons separated by as many introns. The regions of the gene that actually produce the amino acids that make up the final protein.
+</li><li> There are a couple of well-studied polymorphisms that actually change the nature of an amino acid side chain from one to another. Probably the most famous is at position 425 where the majority of the time the amino acid is an isoleucine. 
+</li><li> There are several other amino acids that can take its place, and these very rare polymorphisms are associated with highly penetrant, that is quite likely cases of autism as well as obsessive compulsive disorder.<br />
+</li><li> There's another not quite so well-studied polymorphism that changes a glycine at position 56 to an alanine.<br />
+</li><li> In the introns in the coding region, is one place where there is quite a bit of variability. It is a tandem repeat, over and over again, in the RNA. Ultimately this will get spliced out, and this, also, has been associated with some psychiatric indications.<br />
+</li><li> The RNA has some regions that come before the start of protein synthesis and these are subject to alternative splicing. You remember that we talked about splicing of RNA of which introns were removed, exons are placed in, even though these will not result in a coding region, they still bind to the ribosomes.<br />
+</li><li> further up in a polymorphic region which may be the promoter for the gene, there are SNPs <a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Single-nucleotide_polymorphism">(single-nucleotide polymorphism)</a>. And this region is called a serotonin transporter linked polymorphic region and variations in this region have been associated with a number of these diseases.   </p>
+</li></ul>
+
+<p><a rel="nofollow" class="external text" href="http://intramural.nimh.nih.gov/lcs/misc/sertpub-01.pdf">Murphy et al., Neuropharm, 2008</a> open-access  </p>
+<hr />
+<h1> <span class="mw-headline" id="Major_Depressive_Disorder_Pathophysiology.2C_Animal_Models.2C_.28Biomarkers.29_.2842.29">Major Depressive Disorder Pathophysiology, Animal Models, (Biomarkers) (42)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture42" title="Drugsandbrain:Lecture Week5Lecture42"> Lecture 42 Edited Text</a><br />
+<strong>Brain Areas that Regulate Mood</strong><br />
+FC: Frontal cortex (esp. prefrontal and cingulate) - cognitive function, attention<br />
+<dl><dd><ul><li> Deep brain stimulation in the anterior cingulate cortex is an emerging therapy for treatment-resistant depression. The frontal cortex, covering the cognitive function, and the attention, and these clearly are functions that, are disregulated in major depression.<br />
+</li></ul>
+</dd></dl>
+HP: Ventral Hippocampus - cognitive function, memory<br />
+<dl><dd><ul><li> Also thought to be disrupted in major depression.<br />
+</li></ul>
+</dd></dl>
+NAc: Nucleus Accumbens (ventral striatum) - reward and aversion<br />
+Amy: Amygdala - mediates responses to emotional stimuli, including fear<br />
+HYP: Hypothalamus regulates sleep, appetite, energy, sex. Participates in the hypothalamic-pituitary-adrenal (“HPA” axis)<br />
+<dl><dd><ul><li> This axis involves both the brain and the periphery, and involves several hormones and transmitters that are thought to be disregulated during depression.<br />
+</li></ul>
+</dd></dl>
+VTA: Ventral Tegmental Area - Sends dopaminergic projections to other areas<br />
+DR: Dorsal Raphe nuclei - send serotonergic input to other areas<br />
+LC: Locus Coeruleus - sends noradrenergic input to other areas.  </p>
+<p><strong>In addition to SERT effects, other deficits in serotonin systems cause psychiatric symptoms</strong><br />
+<ul><li> Tryptophan hydroxylase knockouts cannot make serotonin and have deficits in social behavior<br />
+</li><li> Known since the 1960’s that ~30% of autism cases have abnormally high circulating serotonin  </p>
+</li></ul>
+
+<p><strong>Animal (especially mouse) Models for Depression</strong><br />
+<ul><li> Forced Swim. Place an animal in water. Animal swims for a while, then simply floats. Antidepressants delay the time till floating.<br />
+</li><li> Tail suspension. Hold the animal by the tail. Animal struggles for a while, then stops
+</li></ul>
+struggling. Antidepressants delay the time till the animal stops struggling.<br />
+<ul><li> Learned helplessness. Subject the animal to mild foot shock. Animal attempts to escape, but cannot. After a while, animal stops trying to escape. Antidepressants delay the time till the animal stops struggling.<br />
+</li><li> Chronic unpredictable stress. Subject the animal to low levels of stress for relatively long periods of time (weeks to months), termed chronic mild stress.<br />
+</li><li> Social Defeat Stress the animal by exposure to highly aggressive dominant males.  </p>
+</li></ul>
+
+<p>“All clinically validated antidepressants are active in these tests. However, this should not be surprising because only compounds that are active in the tests are pursued as
+antidepressants for human use. This has created a “catch-22.”. Although these tests are
+good predictors of available antidepressants, it is not known whether they can detect the
+effectiveness of agents with truly novel mechanisms of action. A non-monoamine-based
+agent, for example, might be effective in humans despite its failure to produce expected
+results in these tests. On the other hand, these tests have detected antidepressant-like
+activity of numerous novel, non-monoamine-based manipulations, but these various
+manipulations have not yet been validated clinically. Hence, another catch-22.”
+Nestler et al., Chapter 14.  </p>
+<p><strong>Serotonin transporter (SERT) knockout mice</strong><br />
+<ul><li> SERT knockout mice have altered behavior and drug responses.<br />
+</li><li> Suggests that serotonin, and in particular, SERT, modulate complex behavior; actions of therapeutic agents and drugs of abuse; and pathophysiology of psychiatric, cardiovascular and gastrointestinal diseases.<br />
+</li><li> Serotonin, and in particular, the serotonin transporter, modulate these behaviors, as though one is suggesting that the serotonin transporter modulates these behaviors in ways that are unrelated to the nearby serotonin concentration, which they manipulate. Well, that's a curious phrase.<br />
+</li><li> In addition to the serotonin effects, there are other deficits in serotonin systems that cause psychiatric symptoms. Tryptophan hydrolase knockouts can't make serotonin. So these are mice, and they have deficits in social behavior, and scientists have known since the 1960's that roughly 30% of autism cases have abnormally high circulating serotonin. Now, how that intersects with depression and with antidepressant mechanisms is clearly not yet understood.<br />
+</li></ul>
+Fox et al., Psychopharmacol, 2007;<br />
+<a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3131109/pdf/nihms290884.pdf">Daws &amp; Gould, Pharmacol. Therap. 2011 </a> open-access  </p>
+<hr />
+<h1> <span class="mw-headline" id="Major_Depressive_Disorder_Mechanisms_of_antidepressant_action_.2843.29">Major Depressive Disorder Mechanisms of antidepressant action  (43)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture43" title="Drugsandbrain:Lecture Week5Lecture43"> Lecture 43 Edited Text</a>  </p>
+<p><strong>How does the SSRI-SERT Interaction relieve depression?</strong><br />
+<ul><li> Most experts restate this: How does blockade of serotonin re-uptake relieve depression via the presumed “outside-in” mechanisms?<br />
+</li><li> miniLecture 21 recapitulates “outside-in” pathways for gene activation, downstream from GPCRs.<br />
+</li><li> There is also a serotonin-activated channel, the 5-HT3 receptor.<br />
+</li></ul>
+<dl><dd><ul><li> In discussions about nicotine action and nicotine addiction, we've said that some ligand-gated channels are permeable to calcium. This could start second messenger pathways, either directly or indirectly. This seems unlikely for the 5-HT3 receptor. It's not very calcium permeable, but let's keep that in mind.<br />
+</li></ul>
+</dd></dl>
+<ul><li> Possible downstream consequences of changed regulation of serotonergic systems:<br />
+</li></ul>
+1) Short term derangement of modulation of synaptic strength and possibly also of neuronal intrinsic properties.<br />
+2) Long term change in neuronal gene expression.<br />
+Additional evidence for serotonin and norepinephrine involvement:<br />
+Also monoamine oxidase (MAO) inhibitors, Tricyclic antidepressants.  </p>
+<p><strong>SSRIs bind tightly to, and stabilize, intermediate state(s) of the serotonin transporter</strong><br />
+<ul><li>  It is thought, at least at the beginning, that this blockade of serotonin uptake is what leads to the antidepressant actions.  </p>
+</li></ul>
+
+<p><strong>To most experts, success of serotonin-selective reuptake inhibitors (SSRIs)</strong><br />
+<ul><li> Implies participation of serotonergic systems in the brain...but nonspecifically<br />
+</li><li> ~ 15 serotonin receptor genes, only one serotonin transporter gene<br />
+</li><li> Scientists have not yet implicated one of these genes or one of these serotonin receptors, either presynaptically or postsynaptically, or two or three of them, as absolutely necessary and sufficient for the anti depressant action of SSRIs.<br />
+</li><li> The one serotonin associated protein that's common to all serotonin systems, the serotonin transporter, is the one that's been implicated.  </p>
+</li></ul>
+
+<p><strong>Non-cell-autonomous actions in SSRI antidepressant treatment</strong><br />
+<ul><li> Some new data suggests the possibility that there are non-cell autonomous actions in SSRI anti-depression treatment.<br />
+</li><li> Of course, that is actions that do not involve the cells that express the serotonin transporter themselves but also involve other secretions of the serotonergic cells in addition to the ultimate non cell autonomous effect which is that the concentration of serotonin gets increased throughout the nervous system.<br />
+</li><li>  It is thought that a type of molecule is involved called a micro RNA. These are small RNA molecules which bind to messenger RNA and help to regulate protein synthesis.<br />
+</li><li> It is thought that in the native state Micro RNA helps to regulate the amount of SERT in particular, micro-RNA 16, also called miR16, and this may involve other transduction pathways.<br />
+</li><li> One data set suggests that after SSRI antidepressant treatment there is a change in the amount of micro RNA made. Not clear how this comes about from fluoxetine binding to the serotonin transporter. This changes the amount of a neurotrophic factor released (S100β).<br />
+</li><li> It is thought that possibly S100β acts on the miR16 noradrenergic neurons. This induces SERT, this induces sensitivity to fluoxetine in the noradrenergic neurons which previously had little or no concern. And this leads to serotonin being incorporated into the synaptic vesicles of the previously noradrenergic neurons. Additional trypotphan hydroxlase will be involved and this leads to release of serotonin by the previously noradrenergic neurons.  </p>
+</li></ul>
+
+<p><strong>Postulated Role for Brain-derived Neurotrophic Factor (BDNF) in Depression &amp; Therapy</strong><br />
+<ul><li> SSRIs enhance expression of brain-derived neurotrophic factor (BDNF), mRNA and protein.<br />
+</li><li> This, in turn, ameliorates some of the structural effects of major depression.<br />
+</li><li> There are data clearly indicating that in the depressed state neurons have fewer spines, so pre-synaptic terminals in some cases lack spines to make synapses on.<br />
+</li><li> There are further data suggesting that increased amounts of BDNF increases the number of spines and therefore increases the probability of having bona fide excitatory synaptic transmission.<br />
+</li><li> SSRIs then seem to enhance the expression of BDNF, either at the mRNA level and at the protein level, in fact at both levels, and so this might ameliorate some of the structural effects of major depression.  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Major_Depressive_Disorder_Additional_Antidepressant_Mechanisms_.2844.29">Major Depressive Disorder Additional Antidepressant Mechanisms  (44)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture44" title="Drugsandbrain:Lecture Week5Lecture44"> Lecture 44 Edited Text</a>  </p>
+<p><strong>Neurogenesis in the hippocampus</strong><br />
+<ul><li> In adult rodents, monkeys, and perhaps humans, new neurons form continuously from progenitor cells located near the hippocampus.<br />
+</li><li> Those neurons differentiate and become incorporated into neuronal circuits in the dentate gyrus of the hippocampus.<br />
+</li><li> They become granule cells in the granule cell layer and extend their dendrites into the molecular layer.<br />
+</li><li> It is thought that these newly born migrated neurons, maybe more active and may have special characteristics that the mature neurons do not.<br />
+</li><li> The thinking is that perhaps, these new neurons are more important for antidepressant actions than are the remaining adult neurons.  </p>
+</li></ul>
+
+<p><strong>How might adult neurogenesis influence antidepressant action?</strong><br />
+<ul><li> The possibility is that the antidepressants result in the release of growth factors, of the sort that we have already discussed and that these then produce new neurogenesis.<br />
+</li><li> The newly derived neurons become incorporated into hippocampal circuitry.<br />
+</li><li> And this then, via the diagrams that we saw in mini Lecture 42 might affect the ventral brain, the amygdala, the nucleus accumbens, as well as the prefrontal cortex.<br />
+</li><li> And might in turn, be influenced by other brain regions including the HPA axis.  </p>
+</li></ul>
+
+<p><strong>Some Antidepressants are “SNRIs”, Serotonin/Noradrenaline Reuptake Inhibitors</strong><br />
+<ul><li> Most experts ask, “How does blockade of noradrenaline reuptake relieve depression via
+</li></ul>
+the presumed “outside-in” mechanisms?”<br />
+<ul><li> Some modern antidepressants are not simply serotonin reuptake inhibitors, but mixed serotonin and norepinephrine reuptake inhibitors.<br />
+</li><li> The locus coeruleus is near the Raphe {nucleus}. It has most of the noradrenergic neurons in the brain, and these noradrenergic neurons project to many areas of the brain.<br />
+</li><li> We don't need to think about noradrenaline activated ion channels here, because there are no noradrenaline activated ion channels among vertebrates. We need to think simply about G protein coupled receptors and the usual outside-in mechanisms.  </p>
+</li></ul>
+
+<p><strong>Acute low-dose ketamine produces antidepressant effects within 2 hr. How?</strong><br />
+<ul><li> Ketamine is known as a dissociative anesthetic. It produces an altered state of reality, among many people, and it is a street drug or recreational drug, where it is also called Special K.<br />
+</li><li> It is also used as an anesthetic in veterinary practice, no longer for humans.<br />
+</li><li> Over the last ten years it has become clear that acute rather low dose ketamine also produces antidepressant actions within about two hours in people and in the animal models for antidepressant action.<br />
+</li><li> Recent papers from excellent scientists show that the effects on antidepressant action do involve BDNF synthesis and release, at least partially. So it appears that the presence of ketamine does result in the secretion of BDNF.
+</li><li> These effects occur in the dendrites as opposed to the soma of neurons.<br />
+</li><li> The effects require the synthesis of new proteins, not gene transcription, which does not place in the dendrites, but simply protein synthesis.<br />
+</li><li> Dendrites do have endoplasmic reticulum, where membrane-bound proteins and secretory proteins can be made. They do have Golgi apparatus, so that many molecules including BDNF can be synthesized within the dendrite, based on mRNA that has been shipped there from the cell body.<br />
+</li><li> These newly synthesized molecules can be secreted right away. And, in keeping with these observations, the dendritic actions do not require the activation of genes, but they do require the translation of proteins.<br />
+</li><li> The best-known action of ketamine is on NMDA-type glutamate receptors.<br />
+</li><li> Dendrite blocking NMDA receptors at rest leads to decreased calcium influx as part of the ongoing activity in a functioning nervous system.<br />
+</li><li> This decreased calcium influx acts as usual, as an intracellular messenger, changing the action of some calcium activated kinases and it is appreciated that when RNA-binding proteins get phosphorylated they change their ability to influence the translation of RNA in the dendrites.<br />
+</li><li> This changed influence might result in the expression of more BDNF, export from the endoplasmic reticulum, export through the Golgi, trafficking to the cell membrane and the release.<br />
+</li><li> 2 major disadvantages:<br />
+</li></ul>
+1. The action of ketamine is thought to be on basal synaptic transmission. Now, baseline synaptic transmission in the brain is not particularly strong. It is possible that there is a subset of neurons that really are working very hard and that it is this subset that is influenced by ketamine.<br />
+2. One can calculate that the concentration of ketamine, these sub-anesthetic very low doses of ketamine is actually not quite high enough to block the NMDA receptors.  </p>
+<hr />
+<h1> <span class="mw-headline" id="Bipolar_Disorder_.2845.29">Bipolar Disorder (45)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture45" title="Drugsandbrain:Lecture Week5Lecture45"> Lecture 45 Edited Text</a><br />
+<strong>Bipolar Disease</strong><br />
+1. Clinical description<br />
+2. Genetics<br />
+3. Possible causes<br />
+4. Heterozygote advantage?<br />
+5. Drug and other Therapeutic approaches  </p>
+<p><strong>Clinical description, based on DSM-IV</strong><br />
+<ul><li> Bipolar disorder affects 1-1.5% of the population in most modern societies.<br />
+</li><li> It was formerly termed manic-depressive disorder, because patients have one or more manic or nearly manic episodes, alternating with major depressive episodes.<br />
+</li><li> 1st episode often in mid-20’s.<br />
+</li><li> Bipolar disorder often leads to suicide.<br />
+</li><li> Major scholarly work:<br />
+</li></ul>
+Manic-Depressive Illness. Bipolar Disorders and Recurrent Depression<br />
+Frederick K. Goodwin, Kay Redfield Jamison, Oxford University Press. 2nd edition, 2007.<br />
+<ul><li> <a rel="nofollow" class="external text" href="http://www.nimh.nih.gov/health/publications/bipolar-disorder/nimh-bipolar-adults.pdf">National Institute of Mental Health</a>  </p>
+</li></ul>
+
+<p><strong>DSM-IV defines a Manic Episode</strong><br />
+<ul><li> A Manic Episode is defined by a distinct period during which there is an abnormally and persistently elevated, expansive, or irritable mood. This period of abnormal mood must last at least 1 week (or less if hospitalization is required) (Tigger is not having episodes; that’s simply his constant bouncy personality).<br />
+</li><li> The mood disturbance must be accompanied by at least three additional symptoms from this list:<br />
+</li></ul>
+-inflated self-esteem or grandiosity,<br />
+-decreased need for sleep,<br />
+-pressure of speech,<br />
+-flight of ideas,<br />
+-distractibility,<br />
+-increased involvement in goal-directed activities or psychomotor agitation, and<br />
+-excessive involvement in pleasurable activities with likelihood of painful consequences<br />
+<ul><li> If the mood is irritable (rather than elevated or expansive), at least four of the above
+</li></ul>
+symptoms must be present.<br />
+<ul><li> The disturbance must be sufficiently severe to cause marked impairment in social or 
+</li></ul>
+occupational functioning or to require hospitalization, or it is characterized by the presence of psychotic features.  </p>
+<p><strong>Mood Disorders in DSM-IV</strong><br />
+<ul><li>  Bipolar I is the classic, cycling between manic episodes and depression.<br />
+</li><li> Bipolar II: Manic episodes not so high (“hypomanic”), not so frequent; Depressive episodes are severe. May be rapid cycling.<br />
+</li><li> Less severe mood swings, but persistent and recurring.  </p>
+</li></ul>
+
+<p><strong>Genetics</strong><br />
+<ul><li> Data for concordance among twins in bipolar disorder &amp; major depression:<br />
+</li></ul>
+(Bertelsen et al Br. J. Psychiatry, 1977.<br />
+<ul><li> No single gene causes bipolar disorder.<br />
+</li><li> No individual genes stand out in replicated studies.<br />
+</li><li>  Monozygotic twins show for bipolar I disorder a concordance rate of 80%. That is, if one of the two children has Bipolar Disease, the chances are 80% that the other will.<br />
+</li><li> Dizygotic, fraternal twins drop markedly, especially in the concordance for Bipolar I. They dropped to 13%.<br />
+</li><li> Bipolar I is clearly very heritable. Bipolar II, less so.<br />
+</li><li> Studies on twins adopted into different families are rarer, of course, but they show little effect of the adopted parents instead the major effect is the biological parents.  * The fact that there's such a large difference between monozygotic and dizygotic twins is a good indication that no single gene causes Bipolar Disorder, rather that one requires several and by several we don't know whether it's two, three, eight, or ten genes to be mutated at the same time.   </p>
+</li></ul>
+
+<p><strong>Possible causes of bipolar disease</strong><br />
+<ul><li> Each new advance in neuroscience has been tried out on bipolar disorder--as for schizophrenia.<br />
+</li><li> There is no satisfactory explanation yet.<br />
+</li><li> As for schizophrenia, present theories invoke:<br />
+</li></ul>
+circuit properties<br />
+early developmental events<br />
+rather than individual neurotransmitter systems.<br />
+<ul><li> Animal models: Few, if any  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Bipolar_Disorder._Heterozygote_advantage_.2846.29">Bipolar Disorder. Heterozygote advantage  (46)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture46" title="Drugsandbrain:Lecture Week5Lecture46"> Lecture 46 Edited Text</a><br />
+<strong>Heterozygote advantage?</strong><br />
+<ul><li> People with bipolar disorder are often fascinating in the early stages.<br />
+</li><li> Bipolar people often receive favorable notice in high-functioning environments.<br />
+</li><li> The list of highly creative people, artists, writers, composers, musicians, poets, artists, is really quite impressive.<br />
+</li><li> People whose success seemed to go along with a certain propensity toward mood, possibly bipolar behavior.</p>
+</li></ul>
+
+<p><strong>Vincent Van Gogh 1853-1890</strong>  </p>
+<hr />
+<h1> <span class="mw-headline" id="Bipolar_Disorder._Drugs_and_Other_Therapies_.2847.29">Bipolar Disorder. Drugs and Other Therapies   (47)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture47" title="Drugsandbrain:Lecture Week5Lecture47"> Lecture 47 Edited Text</a>  </p>
+<p><strong>Therapeutic approaches to bipolar disorder</strong><br />
+<ul><li> Many bipolar patients avoid therapy or remain partially compliant, because they do not wish to give up the pleasant feelings during the manic phase.<br />
+</li><li> Noncompliant patients may risk suicide.<br />
+</li><li> DSM-IV:<br />
+</li></ul>
+“The presence in a depressed patient of a positive family history of bipolar disorder or
+acute psychosis probably increases the chances that the patient's own depressive disorder is a manifestation of bipolar rather than unipolar disorder and that antidepressant therapy may incite a switch into mania.”<br />
+<ul><li> DSM-IV cautions that the presence in a depressed patient of a positive family history of bipolar disorder or acute psychosis probably increases the chances that the patient's own depressive disorder is a manifestation of bipolar rather than unipolar disorder and that antidepressant therapy may incite a switch into mania.<br />
+</li><li> How will changed criteria in DSM-V for bipolar disease revise this warning?<br />
+</li><li> DSM-V may reclassify some major depressive disorders as actually being on the bipolar spectrum instead, and this would then have major ramifications for how one takes drugs to suppress bipolar disorder.  </p>
+</li></ul>
+
+<p><strong>Therapeutic approaches to bipolar disorder (slide 2)</strong><br />
+<ul><li> Surgical and electrical intervention<br />
+</li></ul>
+<dl><dd><ul><li> Surgery to remove large portions of the brain (1950’s-60’s)<br />
+</li></ul>
+</dd></dl>
+<ul><li> Electroconvulsive shock therapy (ECT)<br />
+</li></ul>
+<dl><dd><ul><li> Now administered under anesthesia.<br />
+</li><li> Various electrode placements, pulse widths, and frequencies  </p>
+</li></ul>
+</dd></dl>
+
+<p>“In situations where medication, psychotherapy, and the combination of these
+interventions prove ineffective, or work too slowly to relieve severe symptoms such as
+psychosis (e.g., hallucinations, delusional thinking) or suicidality, electroconvulsive
+therapy (ECT) may be considered. ECT is a highly effective treatment for severe
+depressive episodes.“ -- National Institute of Mental Health<br />
+<ul><li> Over a hundred theories have been offered to account for the efficacy of ECT.<br />
+</li></ul>
+<a rel="nofollow" class="external free" href="http://www.acnp.org/G4/GN401000108/CH106.html">http://www.acnp.org/G4/GN401000108/CH106.html</a>   </p>
+<p><strong>Therapeutic approaches to bipolar disorder: Drugs for Bipolar Disease</strong><br />
+<ul><li> Li+ ion<br />
+</li><li> We do not really understand how Lithium works.<br />
+</li><li> Therapeutic effects begin in ~ 5 d, require several weeks.<br />
+</li><li> Li+ is quite poisonous at higher doses.<br />
+</li><li> Drugs originally discovered as anticonvulsants<br />
+</li><li> These also require several weeka for full effects.
+</li></ul>
+Valproic Acid<br />
+Lamotrigine<br />
+<ul><li> Anticonvulsants also require several weeks for full effects. We don't understand how these drugs work either.<br />
+</li><li> The general statement that people with manic symptoms may be more active neurally than people without manic symptoms, has been invoked as a way of explaining that anticonvulsants might be quieting down excess neuronal activity. But in fact, we have no reason to believe that Valproic Acid or Lamotrigine, both approved for bipolar therapy are acting on ion channels or even that they're acting outside the cell.  </p>
+</li></ul>
+
+<p><strong>Five exemplar patients in the early days of Li+</strong><br />
+How does Li+ act?<br />
+1. We don’t know, but there are now some good guesses.<br />
+2. All ideas about Li+ assume an intracellular target.<br />
+Li+ enters cells freely through several channels and ion-coupled transporters that normally serve for Na+.<br />
+Intracellular concentrations of Li+ are probably several mM.<br />
+3. Most ideas about Li+ involve enzyme inhibition. Most of the suspected enzymes manipulate high-energy phosphate bonds.  </p>
+<p><strong>Antipsychotics in bipolar disease</strong><br />
+(lectures on schizophrenia, next)<br />
+<ul><li> 2006 FDA approved quetiapine for managing mania and hypomanic episodes in bipolar disease.<br />
+</li><li>Risperidine is used off-label.  </p>
+</li></ul>
+
+<p>Cognitive Psychotherapy is an adjunct to medication<br />
+<ul><li> behavioral therapy (CBT)<br />
+</li><li> Family-focused therapy includes family members.<br />
+</li><li> Interpersonal and social rhythm therapy.<br />
+</li><li> Psychoeducation teaches people with bipolar disorder about the illness and its
+</li></ul>
+treatment.  </p>
+<hr />
+<h1> <span class="mw-headline" id="Schizophrenia_Clinical_Description.3B_Genetics_.2848.29">Schizophrenia Clinical Description; Genetics (48)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture48" title="Drugsandbrain:Lecture Week5Lecture48"> Lecture 48 Edited Text</a><br />
+<strong>David Helfgott</strong>  </p>
+<p><strong>Clinical description</strong><br />
+<ul><li> Prodromal (Greek, precursor) signs: “he was weird, even as a child” 
+</li><li> social isolation &amp; withdrawal<br />
+</li><li> impairment in roles of normal function<br />
+</li><li> odd behavior &amp; ideas; blunted affect; poor personal hygiene<br />
+</li><li> Positive symptoms: Delusions, hallucinations, thought disorder (many simulated interviews appear on Youtube).<br />
+</li><li> Negative symptoms: Decreased motivation, diminished emotional expression.<br />
+</li><li> Motor abnormalities: Posturing, impaired coordination, “catatonia”<br />
+</li><li> Cognitive deficits: Impairments in attention, executive function, some types of memory
+</li><li> The range of clinical features suggests that schizophrenia affects several complex brain systems.  </p>
+</li></ul>
+
+<p><strong>Genetics</strong><br />
+<ul><li> Genetically multifactorial: several disstinct genes (or sets of genotype) can independently cause the disease.<br />
+</li><li> Polygenic: the disease occurs only if several genotypes are present together.<br />
+</li><li> Partially Penetrant: Nongenetic or epigenetic factors are required, or the disease is
+</li></ul>
+inherently stochastic. 
+<ul><li>  A complex psychiatric disease has three characteristics:<br />
+</li></ul>
+<dl><dd> 1. Schizophrenia is polygenic. The disease occurs only if several genotypes are present together.<br />
+</dd><dd> 2. It is partially penetrant. This means that nongenetic, or, what we call now, epigenetic factors are required, or the disease is inherently random.<br />
+</dd><dd> 3. It is genetically multi factorial where several types of collections of mutations, all come together to form this one clinical phenotype, that we might call schizophrenia.  </p>
+</dd></dl>
+
+<p><strong>8p21, site of recent schizophrenia linkages, including these genes</strong><br />
+neuregulin-1, frizzled-3, vesicular monoamine transporter-1, calcineurin Aγ, early growth response-1  </p>
+<p><strong>ARIA (acetylcholine receptor-inducing activity)</strong><br />
+<ul><li> first discovered at the neuromuscular junction, secreted by the nerve.<br />
+</li><li> A member of the neuregulin family. Neuregulin-1 is a transmembrane protein, proteolyzed to release a growth factor with EGF-like domain. (EGF = epidermal growth factor)  </p>
+</li></ul>
+
+<p><strong>Large deletions / duplications are associated with schizophrenia</strong><br />
+<ul><li>common genetic variants, the focus of most research until recently, do not seem to have a
+</li></ul>
+major impact on schizophrenia predisposition<br />
+<ul><li> Very rare, large DNA deletions and duplications contribute to or explain a minority of
+</li></ul>
+schizophrenia cases<br />
+<ul><li> Although the small number of events identified here do not restrict focus to a finite set of molecular pathways, we do show one event that deletes a gene known to interact with DISC1, a gene known to cause psychiatric problems in one family<br />
+</li><li> Schizophrenia genetics research must turn sharply toward the identification of rare genetic contributors<br />
+</li><li> The most important tool will be complete whole-genome sequencing of patients whose clinical characteristics have been very thoroughly assessed.  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Schizophrenia_Pathophysiology._A_Century_of_Frustration_.2849.29">Schizophrenia Pathophysiology.  A Century of Frustration (49)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture49" title="Drugsandbrain:Lecture Week5Lecture49"> Lecture 49 Edited Text</a><br />
+<strong>Pathophysiology</strong><br />
+<ul><li> Each “advance” in biology and technology has been tried out on schizophrenia.
+</li><li> Early 20th century, German classification &amp; Nazi genetics<br />
+</li><li> 1950’s American psychiatrists (including Bettelheim) reacted with “schizogenic mother” or “refrigerator mother” hypothesis<br />
+</li><li> 1950, Linus Pauling fractionated urine;<br />
+</li><li> 1968 “Orthomolecular Psychiatry” in Science<br />
+</li><li> 1955 chlorpromazine --&gt; dopamine theories<br />
+</li><li> 1970 glutamate theories<br />
+</li><li> 1995, growth factors, development, migration<br />
+</li><li> 2000, genetics &amp; genomics<br />
+</li><li> 2003 interneuron diversity<br />
+</li><li> 2005, inflammation<br />
+</li><li> 2012, early exocytotic pathways<br />
+</li><li> There is no satisfactory explanation yet.<br />
+</li><li> In general, modern theories of schizophrenia emphasize abnormal balance among neuronal circuits or pathways.  </p>
+</li></ul>
+
+<p><strong>Gross neuroanatomical abnormalities in schizophrenia</strong><br />
+<ul><li> Increased size of cerebral ventricles (lateral and 3rd) and decreased brain volume is the most replicated finding.<br />
+</li><li> Ventricular enlargement is found in affected twins of monozygotic pairs discordant for
+</li></ul>
+schizophrenia.<br />
+<ul><li> This enlargement appears to be stable when patients are followed up prospectively.  </p>
+</li></ul>
+
+<ul>
+<li>Decreased cortical gray matter (not shown here)  </li>
+<li>Especially evident in superior temporal gyrus, dorsal prefrontal cortex and limbic areas
+such as the hippocampal formation and anterior cingulate cortex.  </li>
+<li>These abnormalities may be present in first-episode, never-medicated patients  </li>
+<li>Only modest loss of neurons, but many are less healthy (contrast with neurodegeneration)  </li>
+</ul>
+<p><strong>Cellular neuronal abnormalities in schizophrenia (not shown here)</strong><br />
+<ul><li> In studies of monozygotic twins discordant for schizophrenia, there is diminished activation of the dorsolateral prefrontal cortex as measured by SPECT (mL36) and positron emission tomography (PET).<br />
+</li><li> Subcellular neuronal abnormalities in schizophrenia<br />
+</li><li> Abnormal dendridic spines in prefrontal cortex- layer 3  </p>
+</li></ul>
+
+<p><strong>Neuronal activity occurs during hallucinations (fMRI measurements, mL 26)</strong><br />
+<ul><li> Specific neuronal circuits involving the thalamus, caudate-putamen, anterior cingulate, limbic cortex, auditory cortex, hippocampus and parahippocampal gyrus are activated in schizophrenics during auditory hallucinations.  </p>
+</li></ul>
+
+<p><strong>Known developmental activities of neuregulins (NRGs) fit with some pathophysiological hypotheses about schizophrenia</strong><br />
+<ul><li> Neuregulins are mutant in some schizophrenic patients.<br />
+</li><li> Neuregulins are important controls of the migration of neurons early on in life of axon guidance, when axons do or do not get to their proper destination; of myelination of neurons, following up the theme of glia.<br />
+</li><li> The oligodendrocytes which are going to be in sheathing the axons have some developmental anomalies if neuregulins are not there.<br />
+</li><li> Neuregulins help to form the neuromuscular junction (the nerve muscle synapse), and also, help to form the spines and dendrites which as we have seen in a previous slide, seemed to be abnormal in schizophrenics.  </p>
+</li></ul>
+
+<p><strong>Neuregulins also have acute effects on synaptic transmission, fitting with other pathophysiological ideas about schizophrenia</strong><br />
+<ul><li> ErbB4, a tyrosine kinase neuregulin receptor, is also mutated in some schizophrenics.<br />
+</li><li> Neuregulins also seem to participate in some acute actions on synaptic transmission.<br />
+</li><li> The thinking then is that the neuregulin, which is always present, is maintaining the synaptic transmission at several key points in a microcircuit in the cortex that may go awry in schizophrenia.  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Schizophrenia_Nongenetic_contributions.2C_Biomarkers.2C_.26_Animal_Models_.2850.29">Schizophrenia Nongenetic contributions, Biomarkers, &amp; Animal Models  (50)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture50" title="Drugsandbrain:Lecture Week5Lecture50"> Lecture 50 Edited Text</a>  </p>
+<p><strong>Nongenetic contributions: the other ~50%</strong><br />
+(1) Nourishment and health of the fetus<br />
+Viral infections during pregnancy,<br />
+Possibly leading to low-level inflammation  </p>
+<p>(2) Head injury  </p>
+<ul>
+<li>Heterozygote advantage of schizophrenia: none known    </li>
+</ul>
+<p><strong>Biomarkers for schizophrenia</strong><br />
+1. Electroencephalograms<br />
+2. Eye pursuit (not discussed here)  </p>
+<p><strong>Sensory gating anomaly measured electrophysiologically</strong><br />
+<ul><li> Observed in schizophrenics (~90%) but in only 8% of the general population<br />
+</li><li> Autosomal dominant transmission, even in healthy relatives of schizophrenics<br />
+</li><li> This trait maps to the vicinity of the α7 nicotinic receptor on chromosome 15  </p>
+</li></ul>
+
+<p><strong>Animal models for schizophrenia</strong><br />
+<ul><li> Sensory gating (previous slide)<br />
+</li><li> Ultrasonic vocalization<br />
+</li><li> Social behavior, grooming<br />
+</li><li> Amphetamine-induced hyperactivity (for drug testing)<br />
+</li><li> Pretreatment with IC87114, inhibits a kinase downstream from Erbb4  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Drugs_for_schizophrenia_.2851.29">Drugs for schizophrenia (51)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture51" title="Drugsandbrain:Lecture Week5Lecture51"> Lecture 51 Edited Text</a><br />
+<strong>Therapeutic approaches</strong><br />
+<ul><li> All present approved drugs for schizophrenia are antipsychotics.<br />
+</li><li> They suppress the positive symptoms (psychoses, hallucinations, delusions), but do not suppress the negative symptoms nor the cognitive deficits.<br />
+</li><li> All conceptual views of antipsychotic drugs assume that they act via “Outside-In” pathways (G protein-coupled receptors, G-protein intracellular messengers, their blockade or their activation).<br />
+</li><li> There is no satisfactory explanation for the “therapeutic lag” (the two to three week time course between the the time a person starts taking a antipsychotic drug and the time it reaches its full effects)    </p>
+</li></ul>
+
+<p><strong>Clinical potency of “classical” or “typical” antipsychotic drugs correlates best with
+dopamine D2 receptor blocking dose</strong><br />
+<ul><li> upper left: this graph shows the correlation between their drug potency measured in cell-free systems or in cellular systems and the average clinical daily dose that is required to stabilize a patient.<br />
+</li><li> There is good correlation for the antipsychotic drugs and the dopamine D2 receptor.<br />
+</li><li> For the first generation drugs, the correlation is a lot poorer for the Serotonin 5HT2A/2C receptors. And there's a very poor correlation for the &amp;alpha:1 adrenergic receptor and the histamine receptors, these are all GPCRs.   </p>
+</li></ul>
+
+<p><strong>Not known how blocking Gi-coupled receptors reduces psychoses</strong><br />
+<ul><li> We’ve discussed these three effects of Gi-coupled receptors (mL 18, 19, 20, 21)<br />
+</li><li> G protein-activated K channels<br />
+</li><li> Decreased cAMP<br />
+</li><li> Gene activation  </p>
+</li></ul>
+
+<p><strong>Modern “atypical” antipsychotics also block other GPCRs and have fewer side effects</strong><br />
+<ul><li> Not known how blocking Gi or Gq-coupled receptors reduces psychoses<br />
+</li><li> Some drugs bind most tightly to D1 dopaminergic receptors which are Gs-coupled, some to the 5HT2A receptor Gq coupled, and some to the original dopamine D2 and D3 receptor.<br />
+</li><li> Each of these drug classes has side effects.<br />
+</li></ul>
+<dl><dd><ul><li>  conventional pyschotic drugs: tardive dyskinesia - a movement disorder thought to be localized in the pathway from the midbrain to the striatum<br />
+</li><li> weight gain<br />
+</li><li> agranulocytosis (a decrease in white cells)</p>
+</li></ul>
+</dd></dl>
+
+<p><strong>Nicotinic drugs for cognitive enhancement in schizophrenia?</strong><br />
+<ul><li> ~90% of schizophrenics smoke.<br />
+</li><li> Schizophrenics smoke more than typical nicotine addicts.<br />
+</li><li> Schizophrenics take deeper breaths, hold the breath longer, and generally seem to extract much more nicotine per cigarette.<br />
+</li><li> This practice may lead to activation of low-sensitivity nicotinic receptors.  </p>
+</li></ul>
+
+<p><strong>The sensory gating anomaly (mL 50) maps near the α7 nicotinic acetylcholine receptor;
+α7 agonists are being tested for cognitive enhancement in schizophrenia</strong>  </p>
+<hr />
+<h1> <span class="mw-headline" id="Overview.2C_Summary.2C_Prospects_.2852.29">Overview, Summary, Prospects  (52)</span></h1>
+<p><a href="/wiki/index.php/Drugsandbrain:Lecture_Week5Lecture52" title="Drugsandbrain:Lecture Week5Lecture52"> Lecture 52 Edited Text</a><br />
+<strong>The concepts and tools</strong><br />
+<ul><li> miniLectures 1-12: Introduction to neuroscience, drugs as chemicals with access to the brain, receptors as proteins, proteins as possible drugs, study of the nervous system, dose-response relations, and electrophysiology<br />
+</li><li> Week 2 Drugs Activate &amp; Block Ion Channels and Synapses (mL 13 -16)<br />
+</li><li> Week 2 Drugs Act on G protein pathways (mL 17 -21)<br />
+</li><li> Week 3: Drugs Act on Transporters (mL 22, 23)<br />
+</li><li> Week 3 Recreational Drugs (mL 24-26)  </p>
+</li></ul>
+
+<p><strong>The intellectually incomplete parts</strong><br />
+<ul><li> Neuroscientists have been willing to admit that we do not understand the causes of many
+</li></ul>
+neural diseases.<br />
+<ul><li> We have been less willing to admit that we do not understand basic mechanisms of
+</li></ul>
+important neural drugs.  </p>
+<ul>
+<li>Week 3: Mechanisms of Nicotine Addiction (mL 27 – 31)<br />
+Omitted:<br />
+opioid addiction, cocaine addiction, alcohol addiction  </li>
+<li>Week 4: Drugs for Neurodegenerative Diseases<br />
+Alzheimer’s (mL 32 -34)<br />
+Parkinson’s (35 -39)<br />
+Omitted: amyotrophic lateral sclerosis  </li>
+<li>Week 5: Drugs for Psychiatric Diseases<br />
+Major Depressive Disorder (mL 40-44)<br />
+Bipolar Disorder (mL 45-47)<br />
+Schizophrenia (mL 48 -51)<br />
+Omitted:<br />
+anxiety disorder, borderline personality disorder<br />
+Other omissions: migraine, details on epilepsy   </li>
+</ul>
+<p><strong>Eroom’s law applies especially to neural drugs</strong><br />
+Scannell, Nature Revs Drug Disc. 2012  </p>
+<p>Next steps for the Science of “Drugs and the Brain”: Admit that we know less than we assume.  </p>
+<p><strong>Contemporary “Outside-in” ideas about psychiatric drugs emphasize binding to the classical targets at synapses</strong><br />
+<ul><li> “Inside-out” mechanisms emphasize binding to the same classical targets, but within the endoplasmic reticulum and cis-Golgi  </p>
+</li></ul>
+
+<p><strong>Possible applications of “Inside-Out” Neuropharmacology</strong><br />
+<ul><li> Distinguish the drug target from the drug mechanism.<br />
+</li><li> Nicotine addiction (mL 29)<br />
+</li><li> Opioid addiction (not discussed)<br />
+</li><li> Neuroprotection in Parkinson’s disease (ml 38)<br />
+</li><li> The “therapeutic lag” with antidepressant drugs (ml 43)<br />
+</li><li> The rapid antidepressant action of ketamine-class drugs (mL 44)<br />
+</li><li> The “therapeutic lag” with antipsychotic drugs (not discussed)  </p>
+</li></ul>
+
+<hr />
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 341/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Notes_5&amp;oldid=6355">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Notes_5&amp;oldid=6355</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

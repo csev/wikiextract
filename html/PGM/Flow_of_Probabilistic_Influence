@@ -1,0 +1,91 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Flow of Probabilistic Influence</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Flow of Probabilistic Influence</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#When_can_X_influence_Y.3F"><span class="tocnumber">1</span> <span class="toctext">When can X influence Y?</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Active_Trails"><span class="tocnumber">1.1</span> <span class="toctext">Active Trails</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#When_can_X_influence_Y_given_evidence_about_Z.3F"><span class="tocnumber">2</span> <span class="toctext">When can X influence Y given evidence about Z?</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Active_Trails_2"><span class="tocnumber">2.1</span> <span class="toctext">Active Trails</span></a></li>
+<li class="toclevel-2"><a href="#Video_Lecture_Table_of_Contents"><span class="tocnumber">2.2</span> <span class="toctext">Video Lecture Table of Contents</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="When_can_X_influence_Y.3F">When can X influence Y?</span></h1>
+<p>i.e. when does condition on x change "my beliefs about" (probability of) y</p>
+<ul>
+<li>x -&gt; y (causal)</li>
+<li>x &lt;- y (evidential)</li>
+<li>x -&gt; w -&gt; y (causal)</li>
+<li>x &lt;- w &lt;- y (evidential)
+Influence is symmetrical</li>
+<li>x &lt;- w -&gt; y (intercausal)</li>
+<li>x -&gt; w &lt;- y (<b>v-structure</b>) nope. eg, "a student took a difficult class" does not tell me anything about students' intelligence</li>
+</ul>
+<h2> <span class="mw-headline" id="Active_Trails">Active Trails</span></h2>
+<p>A trail $$X&#95;1 - ... - X&#95;k$$ is active if it has no v-structures.</p>
+<h1> <span class="mw-headline" id="When_can_X_influence_Y_given_evidence_about_Z.3F">When can X influence Y given evidence about Z?</span></h1>
+<p>Z is a set of observations</p>
+<ul>
+<li>x -&gt; y</li>
+<li>y -&gt; x</li>
+</ul>
+<p>w not in Z
+<ul><li> x -&gt; w -&gt; y
+</li><li> x &lt;- w &lt;- y
+</li><li> x &lt;- w -&gt; y
+</li><li> x -&gt; w &lt;- y nope if w and all of its descendants are not in Z</p>
+</li></ul>
+
+<p>w in Z
+<ul><li> x -&gt; w -&gt; y nope.
+</li><li> x &lt;- w &lt;- y nope.
+</li><li> x &lt;- w -&gt; y nope.
+</li><li> x -&gt; w &lt;- y yep if w or one of its descendants is in Z.</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Active_Trails_2">Active Trails</span></h2>
+<p>A trail $$X&#95;1 - ... - X&#95;k$$ is active given Z if 
+<ul><li> all its v-structures are activated. ie, for every $$X&#95;i$$ in a v-structure, we have that either $$X&#95;i$$ or its descendants are observed. 
+</li><li> no other $$X&#95;i$$ is in Z</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Video_Lecture_Table_of_Contents">Video Lecture Table of Contents</span></h2>
+<p><pre>
+0:19    When can X influence Y?
+0:38    Direct influence
+1:17    Indirect influence
+1:33    Causal chain (X-&gt;W-&gt;Y)
+1:56    Evidential chain (X&lt;-W&lt;-Y)
+2:12    A-structures (X&lt;-W-&gt;Y)
+2:39    V-structures (X-&gt;W&lt;-Y)
+3:17    Active trails
+4:26    X influences Y given evidence Z
+11:35   General flow of influence
+13:40   Active trails again
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Flow_of_Probabilistic_Influence&amp;oldid=3424">https://share.coursera.org/wiki/index.php?title=PGM:Flow_of_Probabilistic_Influence&amp;oldid=3424</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

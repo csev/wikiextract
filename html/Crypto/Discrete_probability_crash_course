@@ -1,0 +1,99 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:Discrete probability crash course</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Discrete_Probability_.28crash_course.29"><span class="tocnumber">1</span> <span class="toctext">Discrete Probability (crash course)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Probability_distribution"><span class="tocnumber">1.1</span> <span class="toctext">Probability distribution</span></a></li>
+<li class="toclevel-2"><a href="#Events"><span class="tocnumber">1.2</span> <span class="toctext">Events</span></a></li>
+<li class="toclevel-2"><a href="#The_union_bound"><span class="tocnumber">1.3</span> <span class="toctext">The union bound</span></a></li>
+<li class="toclevel-2"><a href="#Random_variables"><span class="tocnumber">1.4</span> <span class="toctext">Random variables</span></a></li>
+<li class="toclevel-2"><a href="#The_uniform_random_variable"><span class="tocnumber">1.5</span> <span class="toctext">The uniform random variable</span></a></li>
+<li class="toclevel-2"><a href="#Independence"><span class="tocnumber">1.6</span> <span class="toctext">Independence</span></a></li>
+<li class="toclevel-2"><a href="#Review:_XOR"><span class="tocnumber">1.7</span> <span class="toctext">Review: XOR</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Discrete_Probability_.28crash_course.29">Discrete Probability (crash course)</span></h3>
+<p><strong>Discrete Probability examples:</strong></p>
+<p>U: finite set (e.g. U = {0,1}<sup>n</sup> is the set of all possible combinations of n bits {0,1}<sup>2</sup> equals {00, 01, 10, 11})</p>
+<p>|U| = the size of U = 4</p>
+<h4> <span class="mw-headline" id="Probability_distribution">Probability distribution</span></h4>
+<p>Def: <strong><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Probability_distribution">Probability distribution</a></strong> P over U is a function P: U -&gt; [0,1]</p>
+<p>It assigns to every element in U a number between 0 and 1, defining the weight (or probabilty) of that particular element in the universe U.</p>
+<p>$$\displaystyle\sum\limits&#95;{x \in U} P(x)=1$$</p>
+<p>The sum of weights of all elements x in the universe U must sum up to 1.</p>
+<p><strong>Examples:</strong></p>
+<ol>
+<li><p>Uniform distribution: for all $$\displaystyle x \in U:  P(x)=1 / |U|$$  </p>
+<p>The uniform distribution assigns to every element X in the universe exactly 
+the same weight. e.g.: {00 = 1/4, 01 = 1/4, 10 = 1/4, 00 = 1/4}</p></li>
+<li><p>Point distribution at x<sub>0</sub>: P(x<sub>0</sub>) = 1, $$\forall$$x$$\neq$$x<sub>0</sub>: P(x) = 0</p>
+<p>We assign the weight 1 to x<sub>0</sub> and to all other points x in U we assign the weight 0</p></li>
+</ol>
+<p>The universe U will always be a finite set, so we can write down the weights that the distribution assigns to every element and represent the entire distribution as a vector.</p>
+<p><strong>Distribution vector:</strong> (P(000), P(001), P(010),...,P(111)) for the universe of all three bit strings, a vector of dimension eight (all possible strings of three bits)</p>
+<h4> <span class="mw-headline" id="Events">Events</span></h4>
+<ul>
+<li>For a set $$A \subseteq U$$: $$Pr[A] = \sum\limits&#95;{x \in A} P(x) \in [0,1]$$ note: Pr[U] = 1</li>
+</ul>
+<p>For a subset A of our universe U the probability Pr[A] for A is the sum of the weights of all elements in this set A.</p>
+<ul>
+<li>The subset A is called an event</li>
+</ul>
+<p><strong>Example:</strong></p>
+<p>The universe U={0, 1}<sup>8</sup> (all 8 bit strings {00000000, 00000001,...,11111111}</p>
+<p>|U|= 256</p>
+<ul>
+<li>A = {all x in U such that lsb<sub>2</sub>=11}  $$\subseteq U$$ -&gt; find the probability where all lsb (least significant bits) = 11 for the uniform distribution on {0, 1}<sup>8</sup></li>
+</ul>
+<p>11111101 is an element that's not in set A (lsb = 01)<br />
+while  11111111 would be an element in A</p>
+<p>Pr[A] = 64 x 1/256 =  1/4  </p>
+<h4> <span class="mw-headline" id="The_union_bound">The union bound</span></h4>
+<p>For Events A<sub>1</sub> and A<sub>2</sub></p>
+<p>$$Pr[A&#95;{1} \cup A&#95;{2}] \le Pr[A&#95;{1}] + Pr[A&#95;{2}]$$<br />
+What is the probability that either A<sub>1</sub> or A<sub>2</sub> occurs? What is the probability of the union of these two events?<br />
+The probability is less or equal than the sum of those probabilities. As an example if A<sub>1</sub> is the probability that a die roll results in 1 or 2 and A<sub>2</sub> is the probability that it results in 2 or 3, the sum would be {1,2} + {2,3} = {1/6 + 1/6} + {1/6 + 1/6} = 4/6 = 2/3. But since the number 2 appears in both sets it is counted twice. That for the actual probability for the union bound of those two events is only 1/2.<br />
+In the simple case that the two probabilities are disjoint (have no elements in common), the probability that either of them happens is exactly equal to the sum of the probabilities $$Pr[A&#95;{1} \cap A&#95;{2}] = \oslash =&gt; Pr[A&#95;{1}] + Pr[A&#95;{2}]$$  </p>
+<p><strong>Example:</strong></p>
+<p>$$Pr[ A&#95;{1} ] = \lbrace all\ x\ in\ \lbrace 0,1 \rbrace^n\ s.t.\ lsb&#95;{2}(x)=11 \rbrace$$<br />
+$$Pr[ A&#95;{2} ] = \lbrace all\ x\ in\ \lbrace 0,1 \rbrace^n\ s.t.\ msb&#95;{2}(x)=11 \rbrace$$</p>
+<p>$$Pr[ lsb&#95;{2}(x)=11\ or\ msb&#95;{2}(x)=11 ]\ =\ Pr[A&#95;{1} \cup A&#95;{2}]\ \le\ 1/4 + 1/4 = 1/2$$<br />
+What is the probability that either the least two significant bits of a string are 11 or the most significant bits are 11?</p>
+<h4> <span class="mw-headline" id="Random_variables">Random variables</span></h4>
+<p>Def: A random variable X is a function X:U -&gt; V<br />
+A function X from the universe U into a set V. The set V is the place where the random variable takes its values.</p>
+<h4> <span class="mw-headline" id="The_uniform_random_variable">The uniform random variable</span></h4>
+<h4> <span class="mw-headline" id="Independence">Independence</span></h4>
+<p><strong>Def:</strong> events A and B are independent if $$P[A\ and\ B]\ =\ P[A] \cdot P[B]$$<br />
+If you know that event A happened you know nothing about if event B happened or not.<br />
+Random variables X,Y taking values in V are independent if<br />
+$$ \forall a,b\in V:\ Pr[X=a\ and\ Y=b]\ =\ Pr[X=a]\ \cdot\ Pr[Y=b] $$</p>
+<p><strong>Example:</strong><br />
+$$ U=\lbrace 0,1 \rbrace ^2=\lbrace 00,01,10,11\rbrace\ and\ r \overset{R}{\gets} U $$
+Define random variables X and Y as: X=lsb(r), Y=msb(r)<br />
+$$Pr[X=0\ and\ Y=0]\ =\ Pr[r=00]\ =\ 1/4\ =\ Pr[X=0]\ \cdot\ Pr[Y=0]\ =\ 1/2\ \cdot\ 1/2$$ </p>
+<h4> <span class="mw-headline" id="Review:_XOR">Review: XOR</span></h4>
+<p>XOR in two strings {0,1}<sup>2</sup> is their bit-wise addition mod 2</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 14/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:Discrete_probability_crash_course&amp;oldid=7177">https://share.coursera.org/wiki/index.php?title=Crypto:Discrete_probability_crash_course&amp;oldid=7177</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

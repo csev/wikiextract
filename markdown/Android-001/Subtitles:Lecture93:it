@@ -1,0 +1,839 @@
+[[Category:Android:Subtitles|it]]
+
+###Data Management - Part 2 - Italian subtitles
+
+* [[Android-001:Subtitles:Lecture91:it|<< prev]] | [[Android-001:Subtitles:Lecture93:en|en]] [[Android-001:Subtitles:Lecture93:es|es]] [[Android-001:Subtitles:Lecture93:it|it]] [[Android-001:Subtitles:Lecture93:zh-tw|zh-tw]] [[Android-001:Subtitles:Lecture93:pt|pt]] | [[Android-001:Subtitles:Lecture87:it|next >>]]
+
+* [Direct download](https://www.dropbox.com/s/hzfogiew2zetolz/8%20-%202%20-%20Data%20Management-%20Part%202%20%2813-43%29.srt)
+
+<pre>
+1
+00:00:09,880 --> 00:00:13,190
+Ciao, sono Adam Porter, e questo è
+
+2
+00:00:13,190 --> 00:00:18,030
+Programming Mobile Applications for
+Android Handheld Systems.
+
+3
+00:00:19,900 --> 00:00:25,250
+Come ho detto prima, Android permette alle 
+applicazioni di scrivere anche nella memoria esterna.
+
+4
+00:00:26,680 --> 00:00:29,850
+Una cosa in più che sarà necessario
+considerare tuttavia, quando
+
+5
+00:00:29,850 --> 00:00:34,280
+si esegue questa operazione, è che la memoria 
+esterna può essere rimovibile.
+
+6
+00:00:34,280 --> 00:00:37,210
+Ad esempio, quando è una scheda SD.
+
+7
+00:00:38,260 --> 00:00:43,220
+Perciò, questi supporti possono apparire
+o scomparire senza preavviso.
+
+8
+00:00:44,450 --> 00:00:48,010
+E quindi, quando l'applicazione 
+dovrebbe scrivere su memorie esterne
+
+9
+00:00:48,010 --> 00:00:53,170
+è prima necessario determinare lo stato
+della memoria esterna.
+
+10
+00:00:54,330 --> 00:00:55,870
+Ora un modo per farlo è
+
+11
+00:00:55,870 --> 00:01:03,040
+utilizzando il metodo getExternalStorageState
+della classe Environment.
+
+12
+00:01:03,040 --> 00:01:06,208
+Tale metodo restituisce un valore 
+che indica
+
+13
+00:01:06,208 --> 00:01:10,216
+lo stato attuale della memoria
+esterna del dispositivo.
+
+14
+00:01:10,216 --> 00:01:16,966
+Alcuni di questi valori sono mostrati qui,
+per esempio, c'è MEDIA_MOUNTED, 
+
+15
+00:01:16,966 --> 00:01:23,217
+che significa che il supporto è presente e che
+è montata con accesso in lettura e scrittura.
+
+16
+00:01:23,217 --> 00:01:28,967
+C'è MEDIA_MOUNTED_READ_ONLY, che significa che
+
+17
+00:01:28,967 --> 00:01:35,039
+il supporto è presente e montato, ma con
+accesso in sola lettura.
+
+18
+00:01:35,039 --> 00:01:42,750
+E c'è MEDIA_REMOVED, che indica
+che la memoria esterna non è presente.
+
+19
+00:01:42,750 --> 00:01:46,305
+E, naturalmente, ci sono ance
+molti altri valori.
+
+20
+00:01:46,305 --> 00:01:50,289
+Se l'applicazione vuole scrivere
+nella memoria esterna,
+
+21
+00:01:50,289 --> 00:01:54,379
+sarà necessario richiedere 
+l'autorizzazione appropriata.
+
+22
+00:01:54,379 --> 00:02:00,934
+In particolare, sarà  necessario aggiungere il
+permesso WRITE_EXTERNAL_STORAGE
+
+23
+00:02:00,934 --> 00:02:07,550
+nel file AndroidManifest.xml 
+dell'applicazione.
+
+24
+00:02:07,550 --> 00:02:12,990
+L'esempio seguente si chiama
+DataManagement FileExternalMemory.
+
+25
+00:02:14,030 --> 00:02:20,508
+Questa applicazione legge un file immagine 
+dalla directory res/raw.
+
+26
+00:02:20,508 --> 00:02:26,250
+Essa copia il file dallo storage esterno,
+legge i dati dell'immagine 
+
+27
+00:02:26,250 --> 00:02:32,288
+da quel file esterno, e poi
+visualizza l'immagine sullo schermo.
+
+28
+00:02:32,288 --> 00:02:35,060
+Diamo uno sguardo a questa
+applicazion.
+
+29
+00:02:35,060 --> 00:02:35,560
+Quindi
+
+30
+00:02:38,480 --> 00:02:39,280
+ecco il mio dispositivo.
+
+31
+00:02:40,740 --> 00:02:43,830
+Quando inizio Data Management File
+External Memory
+
+32
+00:02:43,830 --> 00:02:47,180
+applicazione, potrete vedere un'immagine visualizzata
+sullo schermo.
+
+33
+00:02:47,180 --> 00:02:48,470
+Andiamo.
+
+34
+00:02:48,470 --> 00:02:49,970
+Guardiamo
+
+35
+00:02:51,350 --> 00:02:53,470
+il codice sorgente, 
+per capire meglio
+
+36
+00:02:53,470 --> 00:02:55,620
+da dove provenivano 
+questi dati di immagine.
+
+37
+00:02:55,620 --> 00:02:56,120
+Quindi
+
+38
+00:02:59,050 --> 00:03:01,980
+ecco l'applicazione aperta nell'IDE.
+
+39
+00:03:03,250 --> 00:03:05,176
+Ora, apriamo la main activity.
+
+40
+00:03:05,176 --> 00:03:11,000
+Nel metodo onCreate, il codice verifica
+lo stato della memoria esterna
+
+41
+00:03:11,000 --> 00:03:15,930
+per assicurarsi che il supporto sia montato,
+e che sia leggibile e scrivibile.
+
+42
+00:03:17,440 --> 00:03:19,790
+Dopo di che, il codice ottiene 
+
+43
+00:03:19,790 --> 00:03:23,160
+la directory del file, in cui sono
+normalmente memorizzati foto.
+
+44
+00:03:24,690 --> 00:03:29,190
+E si costruisce un nuovo oggetto file,
+che punta a quella directory.
+
+45
+00:03:30,510 --> 00:03:36,690
+poi, controlla se effettivamente
+esiste un file sulla memoria esterna.
+
+46
+00:03:36,690 --> 00:03:41,040
+Il codice chiama quindi il metodo
+copyImageToMemory.
+
+47
+00:03:42,580 --> 00:03:43,570
+Diamo un'occhiata a questo metodo.
+
+48
+00:03:45,680 --> 00:03:49,150
+Questo metodo inizia con la creazione 
+di un nuovo flusso di output, che
+
+49
+00:03:49,150 --> 00:03:53,240
+verrà  utilizzato per scrivere in un file, 
+sulla memoria esterna.
+
+50
+00:03:54,280 --> 00:03:57,040
+Poi, crea un flusso di input, in modo che
+
+51
+00:03:57,040 --> 00:04:01,924
+possa leggere i dati delle immagini  
+dalla directory res/raw.
+
+52
+00:04:02,995 --> 00:04:07,850
+E, infine, copia i dati dal flusso di
+input nel flusso di output.
+
+53
+00:04:09,280 --> 00:04:14,330
+Quando questo metodo viene completato, ci sarà 
+un nuovo file nella memoria esterna.
+
+54
+00:04:16,090 --> 00:04:21,890
+Ora, tornando al metodo onCreate,
+il codice ottiene un riferimento a un'imageview
+
+55
+00:04:21,890 --> 00:04:26,300
+e imposta l'URI dell'immagine per essere
+
+56
+00:04:26,300 --> 00:04:28,870
+il file appena creato 
+nella memoria esterna.
+
+57
+00:04:33,720 --> 00:04:37,020
+Se l'applicazione deve creare 
+file temporanei, allora
+
+58
+00:04:37,020 --> 00:04:41,220
+si può considerare di scriverli 
+nella cache directory.
+
+59
+00:04:41,220 --> 00:04:44,070
+File di cache sono file temporanei 
+che possono essere
+
+60
+00:04:44,070 --> 00:04:47,680
+cancellati dal sistema, 
+quando lo spazio è poco.
+
+61
+00:04:47,680 --> 00:04:51,380
+E questi file vengono rimossi 
+quando l'applicazione viene disinstallata.
+
+62
+00:04:52,640 --> 00:04:54,310
+E si può ottenere l'accesso alla cache
+
+63
+00:04:54,310 --> 00:04:59,889
+directory, utilizzando il metodo
+getCacheDir della classe Context.
+
+64
+00:05:01,340 --> 00:05:03,905
+Questo metodo restituisce 
+il percorso assoluto di una
+
+65
+00:05:03,905 --> 00:05:08,120
+directory specifica dell'applicazione, che può
+essere utilizzato per i file temporanei.
+
+66
+00:05:10,150 --> 00:05:12,210
+In alternativa, è possibile 
+anche utilizzare il
+
+67
+00:05:12,210 --> 00:05:17,830
+metodo getExternalCacheDir
+della classe Context, che restituisce
+
+68
+00:05:17,830 --> 00:05:23,180
+un oggetto file che rappresenta una directory 
+per i file cache nella memoria esterna.
+
+69
+00:05:25,590 --> 00:05:29,960
+Quando l'applicazione legge e utilizza
+grandi quantità di dati strutturati e
+
+70
+00:05:29,960 --> 00:05:34,140
+complessi, si consiglia di mettere 
+tali dati in un database.
+
+71
+00:05:35,180 --> 00:05:40,340
+Android fornisce un'implementazione di
+SQLite, che consente alle applicazioni di
+
+72
+00:05:40,340 --> 00:05:45,590
+creare e utilizzare i database 
+relazionali in memoria.
+
+73
+00:05:45,590 --> 00:05:48,450
+SQLite è progettato per funzionare 
+all'interno di uno spazio molto
+
+74
+00:05:48,450 --> 00:05:52,142
+ridotto, diciamo meno di 300
+kilobites di memoria.
+
+75
+00:05:53,670 --> 00:05:57,731
+SQLite è comunque, un database relazionale
+a pieno titolo .
+
+76
+00:05:57,731 --> 00:06:03,191
+Esso implementa la maggior parte dello standard SQL92,
+e supporta transizioni ACID,
+
+77
+00:06:03,191 --> 00:06:06,215
+ altamente affidabili, il che significa che
+
+78
+00:06:06,215 --> 00:06:11,130
+le transazioni sono Atomiche, Coerenti,
+Isolate, e Durevoli.
+
+79
+00:06:13,420 --> 00:06:16,950
+Per utilizzare un database SQL 
+nelle applicazioni, Android
+
+80
+00:06:16,950 --> 00:06:22,310
+consiglia di utilizzare una classe helper
+chiamata SQLiteOpenHelper.
+
+81
+00:06:23,840 --> 00:06:29,690
+E come fare, si creerà una sottoclasse
+di questa classe SQLiteOpenHelper.
+
+82
+00:06:30,800 --> 00:06:34,344
+E nel costruttore per quella classe,
+dovrete chiamare il costruttore 
+
+83
+00:06:34,344 --> 00:06:37,920
+della classe superiore,
+ passando alcune informazioni
+
+84
+00:06:37,920 --> 00:06:40,340
+sul database che si desidera creare.
+
+85
+00:06:43,130 --> 00:06:49,330
+Successivamente, sostituirete(override) i metodi
+onCreate() e onUpGrade()
+
+86
+00:06:51,010 --> 00:06:54,450
+Ora tipicamente, in onCreate, 
+potrete eseguire uno o più
+
+87
+00:06:54,450 --> 00:07:00,680
+comandi Create Table, che definiscono la struttura
+ed il layout del database.
+
+88
+00:07:01,960 --> 00:07:07,410
+E dopo, si utilizzeranno  i metodi
+di SQLiteOpenHelper,
+
+89
+00:07:07,410 --> 00:07:14,070
+per esempio, per aprire e restituire il 
+database SQLite sottostante.
+
+90
+00:07:14,070 --> 00:07:18,520
+E poi, si eseguono operazioni 
+sul database.
+
+91
+00:07:20,380 --> 00:07:25,630
+La nostra ultima applicazione di esempio 
+si chiama DataManagementSQL.
+
+92
+00:07:25,630 --> 00:07:29,470
+Questa applicazione crea un database 
+SQLite, e quindi
+
+93
+00:07:29,470 --> 00:07:35,180
+Inserisce diversi record, alcune con errori,
+nel database.
+
+94
+00:07:35,180 --> 00:07:39,740
+L'applicazione visualizza anche un pulsante
+chiamato Fix (correggi).
+
+95
+00:07:39,740 --> 00:07:42,920
+E quando l'utente preme il pulsante Fix,
+l'applicazione
+
+96
+00:07:42,920 --> 00:07:47,600
+elimina e aggiorna alcuni di quei record
+che sono stati appena inseriti.
+
+97
+00:07:48,630 --> 00:07:52,540
+E dovrà poi ri-visualizzare i record
+aggiornati del database  sullo schermo.
+
+98
+00:07:52,540 --> 00:07:55,310
+Diamo uno sguardo a questa applicazione.
+
+99
+00:07:55,310 --> 00:07:57,810
+Quindi
+
+100
+00:07:59,420 --> 00:08:00,360
+ecco il mio dispositivo.
+
+101
+00:08:01,430 --> 00:08:05,720
+Ed ora, iniziamo l'applicazione 
+Data Management SQL.
+
+102
+00:08:06,960 --> 00:08:11,740
+Come potete vedere, l'applicazione ora
+visualizza quattro record del database,
+
+103
+00:08:11,740 --> 00:08:16,280
+ciascuno contenente un ID record, e il nome
+di un artista.
+
+104
+00:08:17,600 --> 00:08:22,090
+Nella parte inferiore dello schermo, c'è anche
+il pulsante Fix che ho menzionato in precedenza.
+
+105
+00:08:23,200 --> 00:08:28,750
+Quando premo questo pulsante, il record numero
+due, Lady Gaga, sarà cancellato.
+
+106
+00:08:29,850 --> 00:08:33,320
+E il record numero di tre, 
+Johnny Cash, sarà
+
+107
+00:08:33,320 --> 00:08:36,760
+aggiornato per scrivere correttamente
+il nome dell'artista.
+
+108
+00:08:38,150 --> 00:08:39,650
+premiamo ora il pulsante Fix.
+
+109
+00:08:41,350 --> 00:08:46,290
+E come potete vedere, il record numero due
+è stato eliminato, e il
+
+110
+00:08:46,290 --> 00:08:51,190
+record numero tre ora mostra la corretta
+ortografia del nome di Johnny Cash.
+
+111
+00:08:52,550 --> 00:08:57,222
+Diamo un'occhiata al codice sorgente 
+di questa applicazione.
+
+112
+00:08:57,222 --> 00:09:00,349
+Ecco l'applicazione aperta nell'IDE.
+
+113
+00:09:00,349 --> 00:09:03,885
+Vorrei ora aprire la main activity.
+
+114
+00:09:03,885 --> 00:09:06,180
+Qui nel metodo onCreate,
+
+115
+00:09:06,180 --> 00:09:10,210
+iniziamo creando una nuova istanza
+DatabaseOpenHelper.
+
+116
+00:09:11,550 --> 00:09:15,870
+E questa classe è una sottoclasse di
+SQLiteOpenHelper.
+
+117
+00:09:15,870 --> 00:09:16,370
+Diamo
+
+118
+00:09:18,380 --> 00:09:19,550
+un'occhiata a quella classe.
+
+119
+00:09:19,550 --> 00:09:21,050
+il costruttore
+
+120
+00:09:22,580 --> 00:09:27,250
+di questa classe, chiama il costruttore
+della classe super passandogli
+
+121
+00:09:27,250 --> 00:09:31,990
+le informazioni, come il nome del database
+e un numero di versione.
+
+122
+00:09:31,990 --> 00:09:36,988
+Ora il metodo onCreate di questa classe, 
+riceve un oggetto
+
+123
+00:09:36,988 --> 00:09:42,584
+database SQLite, e poi chiama il 
+metodo execSQL
+
+124
+00:09:42,584 --> 00:09:47,740
+passando una stringa, che
+corrisponde ad un effettivo
+
+125
+00:09:47,740 --> 00:09:53,600
+comando SQL, che crea una tabella
+denominata Artists.
+
+126
+00:09:53,600 --> 00:09:57,080
+E quella tabella conterà  due campi, un
+
+127
+00:09:57,080 --> 00:10:01,300
+ID integer e una stringa per
+nome dell'artista.
+
+128
+00:10:02,660 --> 00:10:07,830
+Questa classe ha anche un metodo deleteDatabase
+che si limita a cancellare il database.
+
+129
+00:10:09,620 --> 00:10:14,540
+Ora tornando alla main activity, il metodo
+onCreate continua ottenendo un
+
+130
+00:10:14,540 --> 00:10:19,360
+riferimento al database sottostante,
+che può essere utilizzato per la lettura e la scrittura.
+
+131
+00:10:20,540 --> 00:10:25,723
+Quindi, chiama il metodo ClearAll, che
+cancella tutti i record nel database.
+
+132
+00:10:27,220 --> 00:10:31,000
+Dopo di che, il codice chiama il metodo
+InsertArtist,
+
+133
+00:10:31,000 --> 00:10:34,430
+che inserisce un numero di record nel database
+
+
+134
+00:10:37,260 --> 00:10:38,802
+Ora, questo metodo crea prima un
+
+135
+00:10:38,802 --> 00:10:42,730
+oggetto contentValues, e poi inserisce
+le informazioni
+
+136
+00:10:42,730 --> 00:10:48,380
+in tale oggetto, corrispondente in questo caso
+al nome dell'artista, Frank Sinatra.
+
+137
+00:10:49,660 --> 00:10:54,610
+Successivamente, si inserisce il record nella tabella
+Artist chiamando il metodo insert()
+
+138
+00:10:55,920 --> 00:10:58,940
+Ora, poiché il campo ID viene 
+generato automaticamente dal
+
+139
+00:10:58,940 --> 00:11:03,390
+database, qui l'applicazione non deve farlo.
+
+140
+00:11:04,920 --> 00:11:08,250
+Quindi, il programma cancella 
+i valori dall'oggetto,
+
+141
+00:11:08,250 --> 00:11:11,140
+e quindi aggiunge un secondo record 
+per Lady Gaga.
+
+142
+00:11:11,140 --> 00:11:18,520
+Un terzo record per Johnny Cash, e 
+il quarto record di Ludwig van Beethoven.
+
+143
+00:11:19,890 --> 00:11:24,740
+Ora, tornando al metodo onCreate,
+il codice chiama il metodo readArtist,
+
+144
+00:11:25,780 --> 00:11:30,350
+che legge tutti i record nel database
+e restituisce un oggetto cursore.
+
+145
+00:11:31,630 --> 00:11:33,910
+Un cursore è essenzialmente 
+un iteratore su un set
+
+146
+00:11:33,910 --> 00:11:36,860
+di record restituiti 
+da un'operazione di query.
+
+147
+00:11:36,860 --> 00:11:40,690
+E questo cursore viene poi utilizzato 
+per creare un adattatore per
+
+148
+00:11:40,690 --> 00:11:45,260
+la listview, che mostrerà  questi record
+sul display.
+
+149
+00:11:46,510 --> 00:11:51,170
+E, infine, il codice imposta un listener 
+sul pulsante Fix.
+
+150
+00:11:51,170 --> 00:11:54,890
+Quando l'utente preme questo pulsante, 
+il codice chiama il metodo Fix.
+
+151
+00:11:56,360 --> 00:11:57,480
+Scendiamo fino a questo metodo.
+
+152
+00:12:01,030 --> 00:12:05,660
+Questo metodo chiama innanzitutto il metodo Delete,
+che trova il record
+
+153
+00:12:05,660 --> 00:12:09,970
+con il nome dell'artista Lady Gaga, e
+poi lo cancella.
+
+154
+00:12:11,030 --> 00:12:14,446
+E dopo, il metodo crea un
+oggetto contentValues
+
+155
+00:12:14,446 --> 00:12:17,600
+con la giusta ortografia del
+nome Johnny.
+
+156
+00:12:18,820 --> 00:12:22,950
+Si esegue quindi un'operazione di update, che
+prima trova il record
+
+157
+00:12:22,950 --> 00:12:28,070
+con il nome errato, e poi lo
+sostituisce con l'ortografia corretta.
+
+158
+00:12:31,400 --> 00:12:34,780
+Per eseguire il debug delle applicazioni
+database, ci
+
+159
+00:12:34,780 --> 00:12:36,420
+sono diverse cose che si 
+potrebbe aver bisogno di sapere.
+
+160
+00:12:37,480 --> 00:12:40,470
+In primo luogo, i file di database vengono
+
+161
+00:12:40,470 --> 00:12:47,910
+memorizzati nella directory
+data/data/packagename/databases 
+
+162
+00:12:47,910 --> 00:12:50,790
+E si esaminano questi file, 
+in primo luogo aprendo una 
+
+163
+00:12:50,790 --> 00:12:56,000
+shell per l'emulatore, o per il dispositivo,
+con ADB.
+
+164
+00:12:56,000 --> 00:13:02,028
+Per esempio, se il nome del vostro emulatore è
+emulator-5554, allora
+
+165
+00:13:02,028 --> 00:13:05,260
+si può usare questo comando 
+per aprire una shell.
+
+166
+00:13:08,370 --> 00:13:11,120
+E una volta che la shell è aperta, 
+è possibile quindi usare
+
+167
+00:13:11,120 --> 00:13:17,440
+i comando SQLite3 per aprire il collegamento
+al database stesso.
+
+168
+00:13:17,440 --> 00:13:21,074
+E da qui, è possibile digitare, per esempio,
+.help a
+
+169
+00:13:21,074 --> 00:13:26,310
+per ottenere ulteriori informazioni sui 
+comandi che usa questo programma.
+
+170
+00:13:28,480 --> 00:13:32,000
+Così questo è tutto per la nostra lezione 
+su Data Management.
+
+171
+00:13:32,000 --> 00:13:36,440
+Unitevi a me la prossima volta, quando 
+discuteremo la classe ContentProvider.
+
+172
+00:13:36,440 --> 00:13:38,338
+Ci vediamo.
+
+173
+00:13:38,338 --> 00:13:43,190
+[_]
+</pre>

@@ -1,0 +1,199 @@
+Welcome to the 'Computing for Data Analysis' wiki!
+
+#Week 1 Topics
+
+* Introduction and overview
+* Installing R
+* Data types, subsetting
+* Reading/writing data
+
+
+###Terms Covered
+**Links to pages providing a quick reference for terms covered in class lectures:**
+*(see the help page for simple instructions on adding your own page to this list)*
+
+* [[PGM:operators | Operators]]  
+* [[PGM:functions | Functions]]  
+* [[PGM:objects | Classes of Objects]]
+
+#Week 2 Topics
+* [[PGM:controlStructures | Control structures]]
+* [[PGM:functions | Functions]]
+* [[PGM:scoping | Scoping Rules in R]]
+* Loop functions
+* [[PGM:debugging |Debugging ]]
+
+#Week 3 Topics
+* Simulation
+* Plotting, visualizing data
+* Priniciples of data graphics
+
+ 
+#Week 4 Topics
+* Objected oriented programming
+* Data abstraction
+* Regular expressions
+
+#Links
+Links to sites with tricks, tutorials and helpful articles, provided by various users on the discussion forum.
+
+[Cookbook for R](http://wiki.stdout.org/rcookbook/)
+
+[Quick R](http://www.statmethods.net/)
+
+[100 most read R posts on R-statistics.com](http://www.r-statistics.com/2013/01/100-most-read-r-posts-for-2012-stats-from-r-bloggers-big-data-visualization-data-manipulation-and-other-languages/)
+
+[R Twotorials](http://www.twotorials.com/)
+
+[R Tutorial](http://www.cyclismo.org/tutorial/R/)
+
+[An introduction to R](http://cran.r-project.org/doc/manuals/R-intro.html)
+
+[R style guide](http://pairach.com/2012/06/06/r-style-guide/)
+
+[R tutor](http://www.r-tutor.com)
+
+[Try-R](http://www.codeschool.com/courses/try-r). A free self-paced introductory R course from CodeSchool.com.
+
+[Archive for datasets bundled with R](http://flowingdata.com/2012/11/20/archive-of-datasets-bundled-with-r/)
+
+[R-bloggers](http://www.r-bloggers.com/) R news and tutorials sourced from over 400 R bloggers.
+
+[CRAN Packages](http://cran.r-project.org/web/packages/available_packages_by_name.html) List of R packages available from The Comprehensive R Archive Network (CRAN).
+
+[Aprenda a usar o R](http://www.fernandohrosa.com.br/br/P/aprenda-a-usar-o-r/) Tutorial in portuguese
+
+[R Quick Reference Card](http://cran.r-project.org/doc/contrib/Short-refcard.pdf)
+
+[10 R Packages](http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html) 10 R packages I wish I knew about earlier, by Yhat
+
+#Books about Data Analysis
+Provided by various users on the discussion forum and taken from the last slide in the 'Overview and history of R' lecture.
+
+Kabacoff, Robert. 2011. **[R in Action. 1st ed](http://www.manning.com/kabacoff/)**. Manning Publications. Publishers site has two free sample chapters and source code available as downloads - may have to register first.
+
+Braun, W. John, and Duncan J. Murdoch. 2008. [A First Course in Statistical Programming with R](http://www.cambridge.org/gb/knowledge/isbn/item1163939/?site_locale=en_GB). 1st ed. Cambridge University Press.
+
+Burns, Patrick. 2011. [The R Inferno](http://www.burns-stat.com/pages/Tutor/R_inferno.pdf), this is a free PDF download.
+
+Chambers (2008). [Software for Data Analysis](http://www.springer.com/statistics/computational+statistics/book/978-0-387-75935-7), Springer. 
+
+(your textbook) Chambers (1998). [Programming with Data](http://books.google.com.au/books/about/Programming_with_Data.html?id=Km1IBFZCRPUC&redir_esc=y), Springer.
+
+The link originally came from here, which also has a description of the book and links to the R packages associated with the book.
+
+Matloff, Norman. 2011. [The Art of R Programming: A Tour of Statistical Software Design](http://books.google.com.au/books?id=4jL3sfmP1l8C&printsec=frontcover&dq=The+Art+of+R+Programming:+A+Tour+of+Statistical+Software+Design&hl=en&sa=X&ei=jcHqUJGTBsTKmgW-34CABQ&ved=0CDYQ6AEwAA). 1st ed. No Starch Press.
+
+Murrell (2005). [R Graphics](http://www.stat.auckland.ac.nz/~paul/RGraphics/rgraphics.html), Chapman & Hall/CRC Press. The book's web page has three free chapters (PDF) and the R source for all the diagrams used in the book.
+
+Pinheiro & Bates (2000). [Mixed-Effects Models in S and S-PLUS](http://www.springer.com/statistics/statistical+theory+and+methods/book/978-1-4419-0317-4), Springer. 
+
+Sakar, Deepayan. [Lattice: Multivariate Data Visualization with R](http://www.springer.com/statistics/computational+statistics/book/978-0-387-75968-5), Springer. This [site](http://lmdvr.r-forge.r-project.org/figures/figures.html)  has all the figures and the code to generate them from the book.
+
+Venables & Ripley (2000). [S Programming](http://books.google.com.au/books/about/S_Programming.html?id=-rKWRH0fglMC), Springer.
+
+Yau, Nathan (2011), [Visualize This: The FlowingData Guide to Design, Visualization, and Statistics](http://au.wiley.com/WileyCDA/WileyTitle/productCd-0470944889.html), Wiley. There is a [blog](http://flowingdata.com/) associated with this book dedicated to data visualisation, it has some stunning graphs and data representation diagrams.
+
+Springer has a series of books called [Use R!](http://www.springer.com/series/6991).
+
+A longer list of books is at available at [R-project.org](http://www.r-project.org/doc/bib/R-books.html)
+
+
+#Books about applications of Data Analysis
+
+Conway & White. (2012). [Machine Learning for Hackers](http://shop.oreilly.com/product/0636920018483.do), O'Reilly
+
+Hastie & Tibshirani & Friedman (2011) [The Elements of Statistical Learning: Data Mining, Inference, and Prediction, 2nd edition]( http://www-stat.stanford.edu/~tibs/ElemStatLearn/), Spring.  The book can be downloaded for free from the supplied link, R code is also avaiable.
+
+Venables & Ripley (2002). [Modern Applied Statistics with S](http://www.springer.com/statistics/computational+statistics/book/978-0-387-95457-8), Springer. 
+
+
+# Tools, Editors, IDEs
+
+Links to tools, editor extensions and IDEs that are mentioned in the user forums.
+
+### RStudio
+
+RStudio is a free and open source integrated development environment for R.
+
+http://www.rstudio.com/ide/
+
+
+### ESS (Emacs Speaks Statistics)
+
+Emacs Speaks Statistics (ESS) is an add-on package for Emacs text editors. It is designed to support editing of scripts and interaction with various statistical analysis programs such as R, S-Plus, SAS, Stata and JAGS.
+
+http://ess.r-project.org/
+
+
+### Open Analytics' Architect
+
+R IDE based on the Eclipse + StatET software. Currently only availabe for windows.
+
+http://www.openanalytics.eu/architect
+
+
+### r4intellij - R plugin for the IntelliJ IDE
+
+r4intellij is an R plugin fro the IntelliJ IDE, the plugin allows for syntax highlighting, intelligent code folding and completion, refactorings, and more. 
+
+https://code.google.com/p/r4intellij/
+
+
+### Rattle - A Graphical User Interface for Data Mining using R 
+
+Rattle (the R Analytical Tool To Learn Easily) presents statistical and visual summaries of data, transforms data into forms that can be readily modelled, builds both unsupervised and supervised models from the data, presents the performance of models graphically, and scores new datasets. 
+
+It is open source and available for Linux, Windows and MacOS.
+
+http://rattle.togaware.com/
+
+
+### Revolution R Community
+
+Revolution R Community is Revolution Analytics' free distribution of the open source R programming language -- enhanced for users looking for faster performance and greater stability. It's perfect for learning R and basic analysis.
+
+http://www.revolutionanalytics.com/products/revolution-r.php
+
+
+### RKWard
+
+is an easy to use and easily extensible IDE/GUI for R. It aims to combine the power of the R-language with the ease of use of commercial statistics tools. 
+
+- [http://rkward.sourceforge.net/ RKWard]
+
+
+
+### R Unit Testing frameworks
+
+A list of known testing tools for R. Such tools are useful when developing and supporting large R projects.
+
+ - [RUnit](http://cran.r-project.org/web/packages/RUnit/index.html) is based on xunit so will be familiar to programmers who have used xunit based testing frameworks for other languages e.g. Junit, Nunit, etc.
+   
+ - [Svunit](http://cran.r-project.org/web/packages/svUnit/index.html) uses same test syntax as RUnit but includes a GUI.
+    
+ - [Testthat](http://cran.r-project.org/web/packages/testthat/index.htm) not compatible with the two above, but does have a possible useful feature that it can be made to only run tests on files that have not changed.
+
+### StatET for R - R plugin for Eclipse
+
+StatET is an R plugin for the Eclipse development environment.  It offers a set of mature tools for R coding and package building. This includes a fully integrated R Console, Object Browser and R Help System, whereas multiple local and remote installations of R are supported.
+
+StatET is provided as plug-in for the Eclipse IDE. Therefore the user can combine it with a wide range set of tools working on top of the Eclipse Platform. Like R and Eclipse, StatET is open source software, and works on many operating systems.
+
+http://www.walware.de/goto/statet
+
+### Tinn-R
+
+Tinn-R is free, simple but efficient replacement for the basic code editor provided by Rgui. Only available for Windows
+
+- http://www.sciviews.org/Tinn-R/
+
+
+### Vim-R-plugin
+
+This plugin improves Vim's support for editing R code and makes it possible to integrate Vim with R. The functionality is similar to what you can find in Tinn-R and ESS mode of Emacs.
+
+http://www.vim.org/scripts/script.php?script_id=2628
+
+[[Category:Coursera]]
+[[Category:Computing for Data Analysis]]

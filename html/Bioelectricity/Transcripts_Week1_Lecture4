@@ -1,0 +1,126 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Week1 Lecture4</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Rectification_of_Names_1-4"><span class="tocnumber">1</span> <span class="toctext">Rectification of Names 1-4</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Rectification_of_Names_.28slide_21.29"><span class="tocnumber">1.1</span> <span class="toctext">Rectification of Names (slide 21)</span></a></li>
+<li class="toclevel-2"><a href="#Membranes_.28slide_22.29"><span class="tocnumber">1.2</span> <span class="toctext">Membranes (slide 22)</span></a></li>
+<li class="toclevel-2"><a href="#Positive_Membrane_Voltage_.26_Positive_Membrane_Current_.2823.29"><span class="tocnumber">1.3</span> <span class="toctext">Positive Membrane Voltage &amp; Positive Membrane Current (23)</span></a></li>
+<li class="toclevel-2"><a href="#Passive_versus_Active:_same_as_dead_versus_alive.3F_.28slide_24.29"><span class="tocnumber">1.4</span> <span class="toctext">Passive versus Active: same as dead versus alive? (slide 24)</span></a></li>
+<li class="toclevel-2"><a href="#Passive_versus_Active:_same_as_dead_versus_alive.3F_.28slide_25.29"><span class="tocnumber">1.5</span> <span class="toctext">Passive versus Active: same as dead versus alive? (slide 25)</span></a></li>
+<li class="toclevel-2"><a href="#Notation:_E_compared_to_e_.28slide_26.29"><span class="tocnumber">1.6</span> <span class="toctext">Notation: E compared to e (slide 26)</span></a></li>
+<li class="toclevel-2"><a href="#The_natural_number_e_.28slide_27.29"><span class="tocnumber">1.7</span> <span class="toctext">The natural number e (slide 27)</span></a></li>
+<li class="toclevel-2"><a href="#The_natural_number_e_.28slide_28.29"><span class="tocnumber">1.8</span> <span class="toctext">The natural number e (slide 28)</span></a></li>
+<li class="toclevel-2"><a href="#The_natural_number_e_.28slide_29.29"><span class="tocnumber">1.9</span> <span class="toctext">The natural number e (slide 29)</span></a></li>
+<li class="toclevel-2"><a href="#The_sizes_of_things.2C_and_E_.28slide_30.29"><span class="tocnumber">1.10</span> <span class="toctext">The sizes of things, and E (slide 30)</span></a></li>
+<li class="toclevel-2"><a href="#E_notation_.28slide_31.29"><span class="tocnumber">1.11</span> <span class="toctext">E notation (slide 31)</span></a></li>
+<li class="toclevel-2"><a href="#E.2C_e.2C_and_.C4.92_.28slide_32.29"><span class="tocnumber">1.12</span> <span class="toctext">E, e, and Ē (slide 32)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Rectification_of_Names_1-4">Rectification of Names 1-4</span></h1>
+<h2> <span class="mw-headline" id="Rectification_of_Names_.28slide_21.29">Rectification of Names (slide 21)</span></h2>
+<ul>
+<li>Hello everyone. This is Roger Coke Barr for the Bioelectricity course. This week's
+segment is called Rectification of Names. Now, rectification of names is phrase that shows that originates with the Confucian doctrine that social harmony is achieved by the proper designations of things. That certainly is pertinent in the case of bioelectricity because bioelectricity deals with invisible objects, and that's a big problem because it means that we, together, have nothing to see that we all see at the same time.  </li>
+<li>As a result, people have adopted conventions and what things are call, so that they can talk to each other. And it's important in order to maintain social harmony that we all use these same names for the quantities we're talking about and the objects we're talking about. So let's do a few of them.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Membranes_.28slide_22.29">Membranes (slide 22)</span></h2>
+<ul>
+<li>First, let's talk about membranes. In the context of this course, the membrane is the material that goes around an electrically active cell. Membranes are very thin, in comparison to the cell. The thickness of the membrane here is only, electrical thickness is only 40 Angstroms.  </li>
+<li>So 40 Angstroms is a tiny, tiny amount. 40 * 10^-10 meters. Very, very thin, much too thin to be seen with your eyes.  </li>
+<li>On the other hand, the membrane is where the action is. It's as if what made the car go forward was the car body rather than the engine inside. And the membrane of a cell is what makes that cell do what it does from an electrical point of view.  </li>
+<li>So it's a very important part of the course. And membranes, and that word, meaning the wrapping of a cell, comes up quite frequently as we move through this course because that's where everything happens.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Positive_Membrane_Voltage_.26_Positive_Membrane_Current_.2823.29">Positive Membrane Voltage &amp; Positive Membrane Current (23)</span></h2>
+<ul>
+<li>As one measures what's happening in the membrane, historically, there was a lot of confusion because if you said the voltage across the membrane is positive, what did that mean? Did that mean the inside was more positive than the outside or the outside was more positive than the inside?  </li>
+<li>Finally, people learned to address this issue by adopting the conventions that are shown on this slide.  </li>
+<li>In the convention that everybody now uses, a positive voltage across the membrane means that the membrane is more positive inside, more positive on the inside than it is on the outside.  </li>
+<li>Another convention was adopted for the membrane current. What does it mean when you say the membrane current is positive? Well, what it always means, nowadays, is that the current is positive when it goes from the inside to the outside.   </li>
+</ul>
+<h2> <span class="mw-headline" id="Passive_versus_Active:_same_as_dead_versus_alive.3F_.28slide_24.29">Passive versus Active: same as dead versus alive? (slide 24)</span></h2>
+<ul>
+<li>Another issue of description are the words passive and the word active. Electrically active membrane is called that because it's considered active. And what does active mean?  </li>
+<li>Well, passive means that the electrical properties are the same all the time.  </li>
+<li>Active means that, following some triggering event, the properties such as the resistance can change. Not only can they change, but they can change back, so they could be a value, they can be a bigger value, and they can be back to where they started.  </li>
+<li>Now, to make a rather vivid analogy, you can say a dead alligator is passive. You can throw rocks at it, you can hit it with a stick, nothing will happen. It's a dead alligator. A live alligator is active. It can act passive, it can seem to be dead, but it's not dead. If you throw rocks at it, you hit it with a stick, an alligator will come after you, and they're pretty quick, too.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Passive_versus_Active:_same_as_dead_versus_alive.3F_.28slide_25.29">Passive versus Active: same as dead versus alive? (slide 25)</span></h2>
+<ul>
+<li>Here is an issue of notation that will come up soon, but first, let me say a little bit more about passive versus, versus active.  </li>
+<li>Is passive versus active the same as dead versus alive. No, it can be active, but act passive.  </li>
+<li>So sometimes you take active tissue and you describe it as being in a passive phase.  </li>
+<li>Active means, in the case of a resistance like a membrane resistance, that it can change around its values radically. It can be a million Ohms, then it could be a thousand Ohms, then it could change back to a million Ohms.  </li>
+<li>Notice that it does this for resistance. A property that in, circuits made by people is usually taken to be a constant. You have a resistor, it's always a million Ohms. It doesn't fluctuate, except maybe by a little bit as it gets warm, but in active tissue, an active membrane it can go way up and then it can come back way down.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Notation:_E_compared_to_e_.28slide_26.29">Notation: E compared to e (slide 26)</span></h2>
+<ul>
+<li>Now, here we are at the issue of notation. I want to talk about e's, and in particular, I'd like to talk about capital E as compared lower-case e. Let's do the lower-case e first.  </li>
+</ul>
+<h2> <span class="mw-headline" id="The_natural_number_e_.28slide_27.29">The natural number e (slide 27)</span></h2>
+<ul>
+<li>Lowercase e stands for what's sometimes called the natural number e and it's a number, a specific number, 2.718, and then there are lots more digits. e is like pi, in the sense that both are symbols that stand for particular numbers and the numbers have an infinite number of significant digits. They're non-repeating, and so, it's really better to use the symbol because then, everybody's referring to the same number.  </li>
+<li>You might notice that e in this context, is written lowercase. I don't know for sure where the letter e came from. Some people say that the letter e came from Euler, who was a famous mathematician and who used the letter e, or at least, the value in some of this work.   </li>
+</ul>
+<h2> <span class="mw-headline" id="The_natural_number_e_.28slide_28.29">The natural number e (slide 28)</span></h2>
+<ul>
+<li>Functionally, the letter e is associated with banking in a historical context. Now, banking is associated with interest rates and if you take a particular problem used as a reference point. If you say you invest $1, and if you say the interest rate is a 100%, then of course, at the end of the year, you'll have $1 that you started with plus a 100% of that dollar or another dollar is interest.  </li>
+<li>However, in banking, and in real life, we know that things can accumulate more rapidly than that. So maybe after a half a year, it's come down to the interest with the principal, then in the second half of the year, you earn interest on the original principal plus the amount that was added.  </li>
+<li>Well, what happens if you compound more and more frequently, until ultimately, you're compounding infinitely rapidly? Well, in that case, the original $1 turns into e dollars at the end of the year. e is the amount that you will have if you start wi th $1 at an interest rate of a 100% and you compound infinitely, rapidly. This fact has been known in banking for a long time.  </li>
+<li>If you think about the problem mathematically, you can say, mathematically, you can set this problem up and the solution is that it grows according to this equation. The amount that you have, P, is the amount started with, P0 times e^r*t.  </li>
+<li>Notice that exp(r*t) is just a way of writing without having to write a superscript, e to the power rt, and it's a way that's an alternative form of notation that one sees frequently.  </li>
+</ul>
+<h2> <span class="mw-headline" id="The_natural_number_e_.28slide_29.29">The natural number e (slide 29)</span></h2>
+<ul>
+<li>Now, why do we care about that as far as bioelectricity? Well e, the natural number, shows up in equations or just calculations or results, whenever the rate of change of something is proportional to the amount which is there to start.  </li>
+<li>And some version of this situation occurs frequently in bioelectricity, and most especially, it occurs with membranes.  </li>
+<li>So, we see equations involving e and we see results involving e, and we see them when we start discussing membranes because there things change in that fashion. They change in proportion to the amount of things that you had to start with. Okay. So that's fine, as far as lowercase e. Let's move on now and talk about uppercase E.  </li>
+</ul>
+<h2> <span class="mw-headline" id="The_sizes_of_things.2C_and_E_.28slide_30.29">The sizes of things, and E (slide 30)</span></h2>
+<ul>
+<li>Uppercase E is an entirely different thing than lowercase e. That's why I bring it up here in the rectification of names.  </li>
+<li>Uppercase E usually stands for an exponent, meaning a power of ten. We need to talk about powers of ten in this course because, in this course, the sizes of objects that we are working with varies across a very wide range.  </li>
+<li>So, for example, inside this cell that's drawn on the right, there are many, many potassium ions. Suppose I write here as a symbol, K+ for potassium ion. Now, in that picture, the K+ looks pretty big in relation to the size of the cell, but it's not. It's very tiny. It's about 1 Angstrom as a rough dimension and that might be written as 1E^-10 meters minus 10. That means 1 meter divided by one followed by ten zeros. The minus signifies divided by. Membranes are much larger.  </li>
+<li>In a earlier slide, I think I said there were 100 Angstroms across and the electrical part was 40 Angstroms. Here, I put it in the middle and said a membrane, a membrane was 80 Angstroms in thickness, that would be 0.8E^-8 meters. Cells, on the other hand, are much, much larger. Let's say, for this cell, it's diameter is 50 microns. </li>
+<li>Notice the abbreviation $$\mu$$ (mu), meaning 10^-6 micrometers or 50E^-6 meters. </li>
+<li>Over here on the figure, we've drawn electrodes coming in from our meter, our voltmeter, in our field stimulus meter. How big might these electrodes be? Well, varying sizes and varying situations, but in this case I've said they're a millimeter. So they're 1 millimeter in diameter or 1E^-3 meters.  </li>
+<li>If you say, how tall am I? Well, I'm 2 meters high. Well, I'm really not 2 meters high, I'm shorter than that, but this guy up here, he's, he really is 2 meters high. So 2 meters is about the size of a tall person.  </li>
+<li>If you look at this list, it is absolutely remarkable because it says what we are dealing with in this course and in bioelectricity ranges in size over ten orders of magnitude. That is a huge variation. It causes some problems for us as we think about things and we do analysis in keeping track what is big and what is small.  </li>
+</ul>
+<h2> <span class="mw-headline" id="E_notation_.28slide_31.29">E notation (slide 31)</span></h2>
+<ul>
+<li>Looking just for a moment at the E notation itself, here, the capital E stands for exponent. It has to do with the power of ten. If we look for example, at 1 millimeter, 1E^-3, that says this is a number that can be obtained by taking the number one multiplying it by ten raised to the three power. We take 1E^-3, 1E^-3 where we have it here, that's 1/10^3.  </li>
+<li>On the slide you see that the 10^3 power is indicated here by a caret and thereby an arrow, and that's done so as to avoid having to write a superscript, which are hard to write on these slides. If you would write it normally, you would just write the three as a superscript.  </li>
+</ul>
+<h2> <span class="mw-headline" id="E.2C_e.2C_and_.C4.92_.28slide_32.29">E, e, and Ē (slide 32)</span></h2>
+<ul>
+<li>So here are our uses of E within this course.  </li>
+<li>We have capital E a s a power of ten, this one. It's an entirely different thing from Euler's constant, 2.7 etcetera, which is written with the lowercase e.  </li>
+<li>And now, neither one is the same as the electric field E, often written E with a bar over the top, which is yet a third quantity.  </li>
+<li>How will you ever keep all these E's straight? Well, the way to do it is just make use of the context. Once you know that there are three different uses of the symbol E, you can usually make use of the context and figure out very quickly, if not instantly, which E you are talking about.  </li>
+</ul>
+<hr />
+<p>So I'll close with this picture of the Duke University Chapel steps. These are extra wide steps, so you have to take it easy going up. Thank you for watching and I'll see you in the next segment.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture4&amp;oldid=7407">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture4&amp;oldid=7407</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

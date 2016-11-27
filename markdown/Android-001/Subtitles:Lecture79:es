@@ -1,0 +1,688 @@
+
+
+[[Android-001:Subtitles|<< course's subtitles page]] | [[Android-001:Subtitles:Lecture81:es | next subtitle >>]]
+
+### Sensors - Part 1 (Spanish subtitles, ES_ES)
+Spanish translation from the original english subtitles.<br>
+* **Translated by:**    Fedros G.R.<br>
+* **Instructions:**
+<ol>
+<li>Create a txt file by using Notepad app (or other text editor), then change its extension from .txt to .srt.<BR>
+    *IMPORTANT!: Make sure the name of your video lecture has the exact same name as your subtitle file.*</li>
+<li> Copy and Paste the following text into the SRT file.</li>
+</ol>
+
+<pre>
+1
+00:00:09,589 --> 00:00:12,953
+Hola, Soy Adam Porter, y esto es
+
+2
+00:00:12,953 --> 00:00:19,499
+<i><font color="#0080ff">Programación de Aplicaciones Móviles para
+Sistemas Portátiles Android.</font></i>
+
+3
+00:00:19,499 --> 00:00:24,690
+Los dispositivos portátiles admiten computación
+sensible al contexto.
+
+4
+00:00:24,690 --> 00:00:30,060
+y eso significa que las aplicaciones pueden
+responder o comportarse de manera diferente
+
+5
+00:00:30,060 --> 00:00:34,620
+según factores contextuales, tales como la
+localización en la cual estos
+
+6
+00:00:34,620 --> 00:00:38,350
+están siendo utilizados, como están siendo
+sujetados por su usuario,
+
+7
+00:00:39,360 --> 00:00:41,630
+cuanta luz ambiente hay,
+
+8
+00:00:41,630 --> 00:00:44,110
+o cuán rápido el usuario se está 
+desplazando.
+
+9
+00:00:44,110 --> 00:00:48,570
+Para conseguir esto, las aplicaciones obtienen
+información de una amplia variedad
+
+10
+00:00:48,570 --> 00:00:53,090
+de sensores que vienen integrados en
+ los dispositivos portátiles de hoy en día.
+
+11
+00:00:54,410 --> 00:00:56,470
+En esta lección, voy a hablar sobre
+
+12
+00:00:56,470 --> 00:01:00,230
+los sensores que los dispositivos
+Android pueden soportar y
+
+13
+00:01:00,230 --> 00:01:04,680
+hablaré de como las aplicaciones 
+pueden acceder a dichos sensores.
+
+14
+00:01:04,680 --> 00:01:08,170
+Después, analizaré SensorEvents, la clase
+
+15
+00:01:08,170 --> 00:01:12,300
+que Android utiliza para representar las
+lecturas del sensor.
+
+16
+00:01:12,300 --> 00:01:15,730
+Y hablaré de SensorEventListeners,
+la cual
+
+17
+00:01:15,730 --> 00:01:19,300
+es utilizada para transferir información
+desde un sensor
+
+18
+00:01:19,300 --> 00:01:20,350
+a tu aplicación.
+
+19
+00:01:21,430 --> 00:01:25,240
+Tras eso, analizaré algunas técnicas 
+habituales, usadas para
+
+20
+00:01:25,240 --> 00:01:30,210
+facilitar o filtrar valores del sensor,
+de manera que las aplicaciones
+
+21
+00:01:30,210 --> 00:01:34,540
+puedan utilizar dichos valores 
+de diferentes maneras.
+
+22
+00:01:34,540 --> 00:01:37,960
+Y, a medida que avancemos
+a través de la lección, mostraré
+
+23
+00:01:37,960 --> 00:01:42,160
+varios ejemplos de aplicaciones 
+que hacen uso de sensores ordinarios.
+
+24
+00:01:44,010 --> 00:01:46,760
+Los sensores son componentes
+hardware que miden
+
+25
+00:01:46,760 --> 00:01:50,200
+el entorno físico que rodea 
+al dispositivo.
+
+26
+00:01:50,200 --> 00:01:55,740
+Y dichos sensores vienen en tres formas.
+Hay sensores que miden el movimiento.
+
+27
+00:01:55,740 --> 00:01:57,620
+Por ejemplo, 
+como de rápido te estás moviendo.
+
+28
+00:01:58,650 --> 00:02:02,940
+Hay sensores que miden
+la posición del dispositivo.
+
+29
+00:02:02,940 --> 00:02:08,020
+Por ejemplo, donde estás en el mundo o en
+ que orientación se encuentra el dispositivo.
+
+30
+00:02:09,230 --> 00:02:11,870
+Y hay sensores que miden el
+medio ambiente,
+
+31
+00:02:11,870 --> 00:02:16,070
+Por ejemplo, la cantidad de luz, presión o
+humedad
+
+32
+00:02:16,070 --> 00:02:21,370
+alrededor del dispositivo.
+Por ejemplo, mi dispositivo tiene
+
+33
+00:02:21,370 --> 00:02:27,280
+un acelerómetro de 3 ejes, el cual mide
+las fuerzas ejercidas sobre el mismo.
+
+34
+00:02:27,280 --> 00:02:29,840
+Por ejemplo, cuando lo agito.
+
+35
+00:02:29,840 --> 00:02:32,770
+También dispone de un 
+campo magnético de 3 ejes.
+
+36
+00:02:32,770 --> 00:02:35,500
+El cual puede ser usado para
+determinar su posición
+
+37
+00:02:35,500 --> 00:02:40,580
+u orientación respecto al campo magnético
+de la tierra.
+
+38
+00:02:40,580 --> 00:02:41,119
+Y eso lo veremos
+
+39
+00:02:41,120 --> 00:02:44,260
+en acción más adelante, en una
+de las aplicaciones de ejemplo.
+
+40
+00:02:45,620 --> 00:02:50,270
+Por último, mi dispositivo tiene un
+barómetro que mide la presión atmosférica.
+
+41
+00:02:53,140 --> 00:02:55,810
+Para que una aplicación utilice un
+sensor,
+
+42
+00:02:55,810 --> 00:02:58,950
+primero necesita obtener una referencia a
+SensorManager.
+
+43
+00:03:00,100 --> 00:03:03,509
+SensorManager el servicio del sistema,
+que gestiona los sensores.
+
+44
+00:03:04,510 --> 00:03:10,000
+La aplicación obtiene una referencia al gestor
+del sensor, llamando al método getSystemService,
+
+45
+00:03:10,000 --> 00:03:17,280
+pasándole el valor
+Context.SENSOR_SERVICE.
+
+46
+00:03:17,280 --> 00:03:18,290
+Para acceder
+
+47
+00:03:18,290 --> 00:03:24,210
+a un sensor en concreto, las aplicaciones usan
+el método getDefaultSensor del gestor del sensor
+
+48
+00:03:24,210 --> 00:03:29,560
+pasándole una constante; correspondiente
+al sensor deseado.
+
+49
+00:03:32,200 --> 00:03:38,955
+Alguna de esas constantes, del tipo de sensor,
+son: Sensor.type_accelerometer para
+
+50
+00:03:38,955 --> 00:03:46,390
+el acelerómetro.
+Sensor.type_magnetic_field
+
+51
+00:03:46,390 --> 00:03:51,484
+para el sensor de campo magnético.
+O Sensor.type_pressure
+
+52
+00:03:51,484 --> 00:03:53,345
+para el barómetro.
+
+53
+00:03:55,263 --> 00:03:58,863
+Si una aplicación desea recibir 
+información desde un
+
+54
+00:03:58,863 --> 00:04:03,270
+sensor, entonces esta tendrá que
+implementar un SensorEventListener.
+
+55
+00:04:04,350 --> 00:04:07,630
+Y esta interfaz define el método 
+callback (retrollamada) que
+
+56
+00:04:07,630 --> 00:04:11,590
+es invocado cuando la precisión de 
+un sensor varía
+
+57
+00:04:11,590 --> 00:04:14,150
+y cuando el sensor obtiene una nueva
+lectura.
+
+58
+00:04:16,360 --> 00:04:23,110
+Cuando un sensor cambia su precisión,
+Android llama al método onAccuracyChanged.
+
+59
+00:04:23,110 --> 00:04:25,600
+Pasándole el sensor que varió,
+
+60
+00:04:27,360 --> 00:04:29,470
+y pasándole su nueva precisión.
+
+61
+00:04:31,200 --> 00:04:36,220
+Cuando un sensor obtiene una nueva
+ lectura, el método onSensorChanged es
+
+62
+00:04:36,220 --> 00:04:41,310
+llamado, pasándole el evento de sensor
+correspondiente a la nueva lectura.
+
+63
+00:04:43,480 --> 00:04:46,760
+No obstante, antes de que tu aplicación
+pueda recibir eventos de sensor (SensorEvent),
+
+64
+00:04:46,760 --> 00:04:51,260
+necesitará registrar un SensorEventListener
+(escuchador de eventos).
+
+65
+00:04:51,260 --> 00:04:55,580
+Y una vez que hayas acabado con 
+el sensor, también querrás anular el registro
+
+66
+00:04:55,580 --> 00:05:00,450
+de dicho sensor, el SensorListener, con
+el fin evitar malgastar batería.
+
+67
+00:05:02,470 --> 00:05:04,660
+Para registrar un SensorEventListener para
+
+68
+00:05:04,660 --> 00:05:09,150
+un sensor dado, llamarás al
+método registerListener.
+
+69
+00:05:09,150 --> 00:05:15,220
+Pasándole el SensorEventListener -que
+será llamado con frecuencia-,
+
+70
+00:05:15,220 --> 00:05:21,300
+el sensor que deseas escuchar, y la frecuencia 
+con la que quieres que sea sondeado
+
+71
+00:05:23,600 --> 00:05:26,610
+Para anular el registro de un 'listener' para
+todos los sensores con los que
+
+72
+00:05:26,610 --> 00:05:32,650
+este está registrado, puedes -por ejemplo-,
+llamar al método unregisterListener
+
+73
+00:05:32,650 --> 00:05:37,000
+Pasándole el SensorEventListener, y 
+una máscara de bits
+
+74
+00:05:37,000 --> 00:05:39,740
+indicando los sensores que no deseas
+seguir escuchando.
+
+75
+00:05:43,070 --> 00:05:49,220
+Las lecturas del sensor son representadas,
+como instancias de la clase SensorEvent.
+
+76
+00:05:49,220 --> 00:05:53,040
+Los datos que esta clase almacena dependerán,
+por supuesto, del tipo específico
+
+77
+00:05:53,040 --> 00:05:55,550
+de sensor que generó
+
+78
+00:05:55,550 --> 00:05:59,740
+la lectura, pero incluirá el tipo
+de sensor.
+
+79
+00:05:59,740 --> 00:06:04,120
+Un sello de tiempo, la precisión de la lectura, y
+
+80
+00:06:04,120 --> 00:06:07,050
+la medición de los datos asociados con
+esa  nueva lectura.
+
+81
+00:06:08,680 --> 00:06:11,010
+Con el fin de dar sentido a los datos, 
+necesitarás
+
+82
+00:06:11,010 --> 00:06:15,830
+saber cómo dichas mediciones son interpretadas
+por el sensor en cuestión.
+
+83
+00:06:16,840 --> 00:06:21,990
+Por ejemplo, muchos sensores usan un
+sistema coordenado tridimensional.
+
+84
+00:06:21,990 --> 00:06:26,875
+Cuando la orientación por defecto es vertical
+y cuando el dispositivo está colocado
+
+85
+00:06:26,875 --> 00:06:32,070
+boca arriba sobre la mesa, los ejes del
+sistema coordenado tienen este aspecto.
+
+86
+00:06:34,050 --> 00:06:34,170
+El
+
+87
+00:06:34,170 --> 00:06:40,490
+Eje X va de derecha a izquierda.
+El eje Y va de arriba abajo.
+
+88
+00:06:40,490 --> 00:06:43,710
+Y el eje Z,
+va de abajo hacia arriba.
+
+89
+00:06:45,940 --> 00:06:48,430
+Y no olvides que el sistema coordenado
+
+90
+00:06:48,430 --> 00:06:53,450
+está orientado con respecto a la
+orientación por defecto del dispositivo.
+
+91
+00:06:53,450 --> 00:06:55,256
+y este no cambia; incluso si el
+dispositivo varía su orientación actual.
+
+92
+00:06:55,256 --> 00:06:56,660
+Por ejemplo, incluso si el dispositivo
+
+93
+00:07:02,560 --> 00:07:05,530
+pasa del modo vertical (portrait) al
+modo tumbado (landscape),
+
+94
+00:07:06,780 --> 00:07:09,210
+el sistema de coordenadas no cambia.
+
+95
+00:07:11,810 --> 00:07:18,070
+Nuestra primera aplicación de ejemplo para esta
+lección se llama "Sensor Raw Accelerometer".
+
+96
+00:07:18,070 --> 00:07:21,920
+Esta aplicación simplemente muestra
+los datos sin procesar
+
+97
+00:07:21,920 --> 00:07:26,030
+que obtiene del acelerómetro
+del dispositivo.
+
+98
+00:07:26,030 --> 00:07:27,030
+Vamos a verlo en acción.
+
+99
+00:07:32,170 --> 00:07:33,670
+Entonces, aquí está mi dispositivo.
+
+100
+00:07:34,570 --> 00:07:39,540
+Ahora, iniciaré la aplicación.
+
+101
+00:07:39,540 --> 00:07:45,410
+Como puedes ver, esta aplicación muestra
+tres TextView (vistas de texto).
+
+102
+00:07:45,410 --> 00:07:50,940
+Con un número ene ellas. Y esos números
+ corresponden a los valores de X,
+
+103
+00:07:50,940 --> 00:07:56,090
+Y, y Z que son leídos desde
+el acelerómetro del dispositivo.
+
+104
+00:07:56,090 --> 00:08:01,150
+Como puedes ver la mayor fuerza está siendo
+ejercida sobre el eje Y.
+
+105
+00:08:04,420 --> 00:08:09,390
+Mientras estoy realizando esta demostración 
+estoy intentando, obviamente sin éxito,
+
+106
+00:08:09,390 --> 00:08:13,150
+mantener el dispositivo perfectamente
+vertical.
+
+107
+00:08:13,150 --> 00:08:18,160
+Pero, por supuesto, mi mano tiembla un poco y
+por eso los números bailan tanto.
+
+108
+00:08:19,680 --> 00:08:23,698
+Ahora giro el dispositivo, 90º, en sentido
+contrario a las agujas del reloj
+
+109
+00:08:23,698 --> 00:08:29,440
+entorno al eje Z.
+Y observarás que ahora la mayor fuerza
+
+110
+00:08:29,440 --> 00:08:34,740
+está siendo ejercida sobre el eje X.
+
+111
+00:08:34,740 --> 00:08:40,260
+Vamos a girar el dispositivo otros 90º,
+y ahora verás que, nuevamente,
+
+112
+00:08:40,260 --> 00:08:44,720
+que la mayor fuerza está siendo
+ejercida sobre el eje Y.
+
+113
+00:08:44,720 --> 00:08:49,550
+Pero esta vez la fuerza es negativa, 
+y eso es debido a que el eje Y
+
+114
+00:08:49,550 --> 00:08:51,090
+está ahora al revés.
+
+115
+00:08:52,750 --> 00:08:56,440
+Y por último, voy a girar el dispositivo
+otros 90º
+
+116
+00:08:56,440 --> 00:08:59,250
+y, de nuevo, verás que la mayor
+
+117
+00:08:59,250 --> 00:09:02,340
+fuerza es ejercida sobre el eje X, y
+
+118
+00:09:02,340 --> 00:09:05,610
+dicha fuerza está operando en la
+dirección negativa.
+
+119
+00:09:07,260 --> 00:09:09,710
+Vamos a echar un vistazo al código
+fuente para esta aplicación.
+
+120
+00:09:12,840 --> 00:09:18,320
+Aquí tenemos la aplicación "Sensor Raw
+Accelerometer" abierta en el entorno de desarrollo (IDE).
+
+121
+00:09:18,320 --> 00:09:20,910
+Ahora, voy a abrir la actividad principal.
+
+122
+00:09:23,270 --> 00:09:28,360
+Observa que esta clase implementa
+la interfaz SensorEventListener.
+
+123
+00:09:28,360 --> 00:09:31,650
+De esta forma podemos recibir callbacks
+(retrollamadas) del gestor del sensor.
+
+124
+00:09:33,560 --> 00:09:37,960
+Ahora, en onCreate, la aplicación obtiene
+una referencia al gestor del sensor.
+
+125
+00:09:40,080 --> 00:09:42,435
+Después, obtiene una referencia al
+
+126
+00:09:42,435 --> 00:09:49,060
+acelerómetro del dispositivo, llamando al
+gestor del sensor punto getDefaultSensor.
+
+127
+00:09:49,060 --> 00:09:53,110
+Pasándole la constante del tipo, que
+corresponde
+
+128
+00:09:53,110 --> 00:09:54,266
+al acelerómetro.
+
+129
+00:09:54,266 --> 00:10:00,503
+En el método onResume, la aplicación
+registra esta clase
+
+130
+00:10:00,503 --> 00:10:06,440
+como un listener para el evento del acelerómetro,
+llamando al método registerListener.
+
+131
+00:10:06,440 --> 00:10:16,680
+El último parámetro es 
+SensorManager.sensor_delay_UI.
+
+132
+00:10:16,680 --> 00:10:21,220
+Y este corresponde a una tasa de sondeo
+de frecuencia relativamente baja.
+
+133
+00:10:23,430 --> 00:10:26,999
+Después, el método onPause
+anula el registro de esta clase
+
+134
+00:10:26,999 --> 00:10:30,040
+como listener de cualquier sensor
+
+135
+00:10:30,040 --> 00:10:31,210
+que pueda estar escuchando.
+
+136
+00:10:33,130 --> 00:10:37,624
+Si nos desplazamos hacia abajo, 
+llegamos al método unSensorChanged.
+
+137
+00:10:39,390 --> 00:10:44,130
+Este método primero comprueba de que este 
+evento es una lectura de acelerómetro.
+
+138
+00:10:45,380 --> 00:10:49,100
+Después, comprueba que ha transcurrido
+un cierto periodo de tiempo
+
+139
+00:10:49,100 --> 00:10:53,510
+desde que la última lectura fue mostrada
+Y así sucesivamente.
+
+140
+00:10:53,510 --> 00:10:57,670
+El código guarda los valores X, Y y Z del acelerómetro,
+
+141
+00:10:57,670 --> 00:11:02,060
+y después muestra esos valores en pantalla.
+</pre>

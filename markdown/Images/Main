@@ -1,0 +1,39 @@
+## Welcome to the Image and Video Processing Wiki
+
+
+[[File:rockImgProc.jpg| 235x235px]] [[File:gWalkway.jpg| 235x235px]]
+
+
+## Course
+[[Images:Main| Home]]
+
+[Course Website](https://www.coursera.org/course/images)
+
+##Image Processing In The News
+
+* [Digitizing Painting Through Image Processing](http://phys.org/news/2012-09-mathematics-fine-art-digitizing-image.html)
+* [Writing Graphics Software Gets Much Easier](http://web.mit.edu/newsoffice/2012/better-programming-language-for-image-processing-0802.html)
+
+##Octave
+
+* [Image Processing - Basic Octave Commands](http://www.gnu.org/software/octave/doc/interpreter/Image-Processing.html)
+* [Octave's image package](http://octave.sourceforge.net/image/index.html)
+
+## Python
+
+* [Batch Image Processing with Python](http://www.coderholic.com/batch-image-processing-with-python/)
+* [Image Manipulation and Processing using Numpy and Scipy](http://scipy-lectures.github.com/advanced/image_processing/index.html)
+* [Python Image Tutorial](http://pythonvision.org/basic-tutorial)
+* [Viewing and Processing Images with PIL](http://codeidol.com/python/python3/A-Tkinter-Tour,-Part-1/Viewing-and-Processing-Images-with-PIL/)
+
+## Resources
+
+* [A Glossary of Image Processing Terms](http://usabilityetc.com/articles/image-processing-glossary/)
+* [A Short Introduction to Astronomical Image Processing](http://www.spacetelescope.org/projects/fits_liberator/improc/)
+* [Fundamentals of Image Processing](http://www.cs.ucla.edu/~soatto/vision/courses/268/jana-fip.pdf)
+* [Image Processing Fundamentals - Contents](http://www.dta.it/images/files/support/manuals/vistamanual/doc/intro/noframes/fip-Contents.html)
+* [Instagram Engineering Challenge: The Unshredder](http://instagram-engineering.tumblr.com/post/12651721845/instagram-engineering-challenge-the-unshredder)
+* [Raw vs JPEG experiment](http://www.ics.uci.edu/~eppstein/pix/rawvsjpg/)
+* [Understanding Gamma Correction](http://www.cambridgeincolour.com/tutorials/gamma-correction.htm)
+* [Javascript Image Filtering](http://www.html5rocks.com/en/tutorials/canvas/imagefilters/)
+* [Peter's Functions for Computer Vision. MATLAB ](http://www.csse.uwa.edu.au/~pk/research/matlabfns/)

@@ -1,0 +1,417 @@
+Week 4, Neurodegenerative Diseases
+
+#  Clinical description and genetics (32)  
+[[Drugsandbrain:Lecture Week4Lecture32 | Lecture 32 Text edited]]
+  
+**Alzheimer’s disease**  
+1. Clinical description  
+2. Genetics  
+3. Pathophysiology  
+4. Biomarkers and animal models  
+5. Heterozygote advantage: none known  
+6. Therapeutic approaches  
+We’ll follow this general organization for all neural diseases  
+  
+**Symptoms of Alzheimer’s Disease**  
+* AD begins with a “pure” impairment of cognitive function.  
+* “mild cognitive impairment” does not always lead to dementia.  
+  
+**Progression**  
+* AD begins slowly. At first, the only symptom may be mild forgetfulness. In this stage, people may have trouble remembering recent events, activities, or the names of familiar people or things. They may not be able to solve simple math problems. They may begin to repeat themselves every few minutes in conversation.  
+* In the middle stages of AD, individuals may forget how to do simple tasks, like brushing their teeth or combing their hair. They can no longer think clearly. They begin to have problems speaking, understanding, reading, or writing.  
+* Late stage: AD patients may become anxious or aggressive, or wander away from home.
+Eventually, patients need total care.  
+  
+**Incidence of Alzheimer’s disease (AD)**  
+* AD is the most common degenerative brain disease (est. 5 million USA, 25 million globally)  
+* Risk Factors: age  
+* (However, AD is not considered a normal part of aging).  
+* The more common form of AD, known as late-onset or sporadic AD, occurs later in life, with no obvious inheritance pattern.  
+* However, several risk factor genes may interact with each other to cause the disease.  
+* Most common risk factor gene identified so far for late-onset AD, is a gene that makes one form of apolipoprotein E (apoE). ApoE4 (prevalence ~ 16%) is the risk factor gene, 3-4 fold dominant increase.  
+* Familial AD, which is rarer, usually starts at age 30 - 60.  
+  
+**The Anatomical Hallmark of Alzheimer’s Pathology**  
+Amyloid Plaques and Neurofibrillary Tangles in Brain  
+* Amyloid Plaques contain large amounts of a 42 amino acid peptide termed “-amyloid”, or A42  
+* In the next lecture, we note that -amyloid itself is the initial cause of the
+pathophysiology that leads to dementia.  
+* Amyloid plaques probably contribute to the later stages of pathology 
+* Neurofibrillary tangles: rich in cytoskeletal proteins, especially the microtubule-associated protein, “tau”.  
+* In the tangles: heavily phosphorylated proteins, which may cause aggregation and precipitation of the cytoskeleton.  
+* Also generally reduced brain volume, especially in entorhinal cortex and hippocampus  
+  
+**Presenilin 1 and APP mutations associated with familial AD**
+*  Presenilin-1 has many mutations that are associated with familial Alzheimer's disease.  
+* Each of these amino acids can be mutated, and certain mutations then do cause Alzheimer disease.  
+* Presenilin is one is part of a large protein complex called γ-secretase, which is a membrane associated protease (an enzyme that cleaves other proteins).  
+* There are “tauopathies” (mutations in tau protein) that cause frontotemporal dementia with Parkinson’s disease, linked to Chromosome 17.    
+  
+---  
+
+# Pathophysiology (33)  
+[[Drugsandbrain:Lecture Week4Lecture33 | Lecture 33 Text edited]]   
+
+* The pathology of Alzheimer's disease is not clearly known but there are some major hints  
+
+**Pathophysiology. Aβ40 and Aβ42 are proteolytic products formed from APP**  
+
+* &beta;-[Amyloid precursor protein (APP)](http://en.wikipedia.org/wiki/Amyloid_precursor_protein) 
+- expressed by most tissues, especially neurons  
+- They reach the axon terminals and the dendrites and also found in some glial cells.  
+- 110 to 140 kDal  
+- APP consists of:  
+1. large extracellular domain  
+2. single transmembrane domain  
+3. cytoplasmic side  
+  
+- Pathological side is a set of small peptides called Ab that are released form the full length by proteolytic cleavage
+- Proteolytic cleavage is the breaking of a protein into peptides and amino acids
+- There are 3 cleavage sites: &alpha;, &beta;, and &gamma;
+- Overproduction of Aβ40 and Aβ42 results from altered ratio of proteolytic cleavages at sites termed &alpha;, β, and &gamma;.  
+- "A&beta; peptides are derived by proteolytic cleavage from the transmembrane protein APP by the action of integral membrane proteases termed
+secretases ... APP is cleaved sequentially: ﬁrst by &alpha;-secretase or &beta;-secretase, then by &gamma;-secretase." [from Sheng et al., Cold Spring Harb Perspect Biol 2012;4:a005777](http://cshperspectives.cshlp.org/content/4/5/a005777.full.pdf) Figure 1 of this paper is quite useful.
+  
+**All known genetic risk factors predisposing to Alzheimer’s disease**  
+- Increase accumulation of Aβ peptides (amyloid hypothesis)  
+- Mutations in Presenilin gene affect &gamma; secretase – one cause of familial Alzheimer's disease
+- Abnormal states of tau mediate some effects of â-amyloid. This stage may be distal to the
+more toxic dimers and oligomers.  
+-  Originally it was thought that the actual amyloid is pathogenic. More modern versions of this hypothesis actually state that Aβ and microaggregates of the Aβ, not the plaques themselves, not the amyloid plaques are the pathogenic agents (Aβ derived diffusible ligands)  
+- Abnormal states of tau also mediate some effects of beta amyloid. A lot of the effects of beta amyloid may come about because it makes tau accumulate or phosphorylates tau.     On the other hand this stage of tau pathology may be distal to downstream from the more toxic Aβ dimers and oligomers.  
+   
+**There are no convincing data suggesting the presence of a single “Aβ receptor”**  
+Soluble Oligomers of Aβ42  
+* Aβ42 peptides form soluble oligomers (an assembly of ~4 to 40 peptides).  
+* These oligomers interact with other proteins and precipitate to form amyloid plaques.  
+* Soluble oligomers of Aβ42 (containing ~12 to 40 peptides) are toxic to neurons.  
+* The 12-mer is the most significant toxic form.  
+* Misfolded Aβ42 may spread from one cell to another, like a prion.  
+* Cell autonomous versus non-cell autonomous diseases  
+:* A cell autonomous disease is one in which a cell with a mutant gene itself gets damaged and this is the cause of the disease or the cause of an animal's change due to a mutation.  
+:* In a non-cell autonomous disease or mutation, the effect of a mutation in one cell is spread to another cell or downstream.  
+:* The usual assumption is that Aβ42 toxicity is a cell autonomous process. The cell that has a bad Aβ42 dies and that's all, but in fact, misfolded Aβ42 may spread from one cell to another.  
+  
+**Normal function of presenilin’s γ-secretase activity**  
+* We don't know the selective advantage of APP in an organism.  
+* We do however know that there is another substrate, another protein which can get cleaved by γ-secretase.  
+* γsecretase complex contains presenilin (an enzyme).  
+* The real function is in signaling like the Notch pathway.  
+  
+**General Cellular Processes that could Account for aβ pathology**  
+* Protein homeostasis (to keep things constant) and turnover  
+[Unfolded protein response](http://en.wikipedia.org/wiki/Unfolded_protein_response)  
+:*  accumulation of erroneous misfolded or partially processed proteins continues as a major theme in neurodegenerative disease  
+:* When proteins accumulate in the endoplasmic reticulum, this causes ER stress and the unfolded protein response. An unchecked unfolded protein response can eventually cause cell death.  
+* [Excitotoxicity](http://en.wikipedia.org/wiki/Excitotoxicity), excess Ca2+ influx  
+:* Excess excitation overwhelms the cell’s ability to maintain ion gradients via ion-coupled transporters.  
+:* Various metabolites accumulate in wrong compartments (extracellular, cytosol, organelle).  
+:* Ca2+ also accumulates in the cytosol and organelles, activating transduction systems,
+overactivating enzymes, and generally leading to cell death.  
+  
+**Pathogenic hypotheses for mostly synaptic toxicity in Alzheimer’s disease**  
+* Loss of synapses correlates better than plaques or tangles with cognitive deficits  
+* Either loss of synapses or subtle changes in synapses could cause the cognitive defects associated with Alzheimer's.  
+  
+**Specific example of synaptic malfunction**  
+* Shows that, in fact, it was the Aβ from the conditioned medium that was the important drug, and now, if we use an antibody against another molecule, a sort of controlled non-specific antibody, then the Aβ oligomers survive.  
+* Points to specific malfunctions in synaptic transmission that point to an inability of synapses to retain information for long periods of time, and that is of course part of cognition.  
+  
+---  
+
+#  Biomarkers & therapeutic approaches(34)  
+[[Drugsandbrain:Lecture Week4Lecture34 | Lecture 34 Text edited]]  
+  
+**Animal models**  
+* Experimenters, in modern neuroscience, have a series of animal models, for Alzheimer's disease especially mice that overproduce and overexpressing APP, especially with AD-associated mutations.  
+* The challenge is to make data from mice relevant to those with people.  
+
+**Biomarkers for AD**  
+Only an autopsy is conclusive, but progress in two areas  
+1. Cerebrospinal fluid analyses of tau, phospho-tau at position 181, and Aβ42. Individual values, or ratios among these.  
+2. A positron emission tomography (PET) marker, [18F]Florbetapir, binds to plaques containing β-APP.  
+  
+* Would like to find a person with early stage Alzheimer's and stop that early stage Alzheimer's from progressing any further, if you get it early enough.  
+* The way to stop it from progressing early enough is either to have a very good neurological or psychiatric diagnosis. Or to have a so called bio marker, that is an objective measurement either bio chemical or physiological that tells you, yes this person has very early stage Alzheimer's without a doubt.  
+* Some of the new data suggest that if you take measurements of the tau protein, and phosphorylated tau, and of Aβ42 and look at the individual values, or the ratios among these you can get a fairly early diagnosis, of Alzheimer's disease.  
+* Florbetapir (fluorine radioactive isotope) seems to bind to amyloid plaques that contain β-APP which emits beta particles and is used to scan the brain.  
+* One needs to be very careful and say that a positive scan indicates moderate to frequent amyloid plaques. Some patients with these kinds of plaques also have Alzheimer's, but there are examples of people with other types of neurological conditions, as well as older people with normal cognition who show positive scans.   
+
+“A negative scan indicates sparse to no neuritic plaques and is inconsistent with a neuropathological diagnosis of AD at the time of image acquisition; a negative scan result reduces the likelihood that a patient’s cognitive impairment is due to AD. A positive scan
+indicates moderate to frequent amyloid neuritic plaques; neuropathological examination has
+shown this amount of amyloid neuritic plaque is present in patients with AD, but may also be present in patients with other types of neurologic conditions as well as older people with normal cognition. [Florbetapir] is an adjunct to other diagnostic evaluations.”  
+  
+**Heterozygote advantage: none known**  
+* Heterozygote advantage does not seem to exist for Alzheimer's    
+
+**Therapeutic approaches**  
+* Acetylcholinesterase inhibitors: (because cholinergic basal forebrain neurons are among the first to die in AD)  
+: donepezil (may also be a positive allosteric modulator of α4β2 receptors, so that it could be acting both by preventing the breakdown of acetylcholine and by enhancing its action)  
+:galantamine 
+:rivastigmine  
+:* If one can prolong the life of acetylcholine by inhibiting its breakdown by acetylcholinesterase one has more acetylcholine, and the relative lack of cholinergic neurons does not matter much.  
+
+* NMDA inhibitors: memantine  
+:* The thinking here is that excessive activity at NMDA receptors may be excitotoxic, and it may be possible to slow down the time course of Alzheimer's using memantine.  
+:* For both of these types of medications, the slowing down is statistically significant but we need very much better drugs.
+
+* Still in development: â-secretase inhibitors  
+* Failed: latrepirdine = dimebolin (unknown mechanism)  
+
+**γ-secretase inhibitors such as semagecestat have failed so far**  
+* Two types of candidates target this protease complex:
+1. "Notch-sparing" γ-secretase inhibitors, which block cleavage of APP selectively over that of Notch.  
+2. γ-secretase modulators, which shift the proportion of Aβ peptides produced in favor
+of shorter, less aggregation-prone species.  
+  
+**Antibodies against β-APP or amyloid-β have given disappointing results**  
+* Gantenerumab (penetrates BBB)  
+* Solanezumab (mildly successfully in mild stages of AD)  
+* Bapineuzumab  
+  
+---
+
+# Parkinson's disease: Clinical picture; genetics (35)  
+[[Drugsandbrain:Lecture Week4Lecture35 | Lecture 35 Text edited]] 
+  
+**Parkinson’s disease**  
+1. Clinical description  
+2. Genetics  
+3. Pathophysiology  
+4. Biomarkers and non-human models  
+5. Heterozygote advantage: none known  
+6. Therapeutic approaches: a, Symptomatic relief; b. Protection  
+  
+Parkinson, surgeon  
+1817, An Essay on the Shaking Palsy, described "paralysis agitans", from observations of 6 individuals during his daily walks in London  
+  
+Parkinson’s disease: (tremor at rest 3-5 Hz, “pill-rolling”, slow movements, particularly when starting; short, rapid steps)  
+but most Parkinson patients are either medicated or electrically stimulated
+
+**Dopaminergic neurons in the human brain: Saggital view**  
+*  In Parkinson's disease, the most dramatic death of neurons are the neurons that make dopamine. 
+* The dopaminergic neurons which die are in the substantia nigra.  
+* The ventral tegmental area does not degenerate in Parkinson's Disease to a large extent, but the substantia nigra does.  
+
+**Symptoms appear when “most” (50% -80%) SNc neurons are lost**  
+* Most people lose dopaminergic neurons throughout life; PD patients have lost more.  
+* Remaining dopaminergic neurons may form additional “sprouts” which partially compensate for the loss.  
+* In this diagram is a feedback loop from the substantia nigra in which various interruptions can cause oscillations and tremors.  
+*  SNc means literally substantia nigra pars compacta, the part of the substantia nigra that is chock full of cell bodies. It projects to the striatum; the striatum then projects back to the another part of the substantia nigra called the substantia nigra pars reticulata , the substantia nigra pars reticulata then also projects to the SNC not shown.  
+* There's another feedback loop from the substantia nigra pars reticulata to the thalamus, then to the cerebral cortex, and then back to the striatum as well as, although not shown here, back to the substantia nigra pars compacta. This feedback loop apparently also is involved in the tremors of Parkinson's disease.  
+* In many parts of the brain when a group of neurons degenerate, other neurons of the same sort which remain can pick up and form sprouts which partially compensate with new synapses for the loss. And this certainly occurs also in Parkinson's disease, which may account for the fact that patients need to lose a majority of their dopaminergic neurons before behavioral symptoms appear.  
+  
+**A hallmark of PD pathology: Intracellular “Lewy bodies”, especially in dopaminergic neurons**  
+* in postmortem studies, one of the classic hallmarks of Parkinson's disease pathology, has been the so-called the Lewy bodies, discovered of course by Lewy.  
+* These occur especially in dopaminergic neurons.  
+* These are deposits of many types of proteins including synuclein. And so it has been used for many years (Lewy bodies) as a proxy for Parkinson's disease. But one must also remember that Lewy bodies also occur in other diseases, especially in some dementias. 
+
+**PD patients often have additional symptoms and degeneration**  
+* Constipation. Detailed surveys show that most PD patients have constipation long before the clinical symptoms. Constipation does not predict PD.  
+* Intestinal biopsies show Lewy bodies in the neurons of the intestinal wall.  
+* Braak staging: various neurons with long axons through the brain show Lewy bodies before dopaminergic neurons; but there are few or no symptoms. (Braak & del Tredici, Neurology 2008)  
+* Sleep disorders, especially in rapid eye movement sleep  
+* Olfactory problems (patients have “anosmia”)  
+* Depression
+* Dementia
+
+**Genetics. Familial Parkinson’s disease provides a good review of biochemistry**  
+* (~ 10% of patients have a genetic form of PD). Onset 30’s to 50’s (rarely earlier or later)  
+* 90% of Parkinson's patients are sporadic or have no known cause  
+* The Parkinson's researchers have systematized the genes in just calling them Park1 through however many have been discovered.  
+* The most famous gene that's defective in Parkinson's Disease is α-synuclein. And even among inherited Parkinson's Disease, very few have α-synuclein mutations.  
+*  Inheritance can be  
+:* chromosomal dominant, that is one needs only one defective copy of the gene.   
+:* Autosomal recessive, one needs two copies, and then, even if the genes are present.  
+:* One sometimes has incomplete penetrance.  
+* Some of the Parkinson's genes have unknown function, for instance Park3, there is a known function of α-synuclein. It seems to be membrane fusion in various organelles from the endoplasmic reticulum to the Golgi to endosomes and from synaptic vesicles to the surface membrane for instance.  
+* Ubiquitin system:  proteins accumulate when they shouldn't.  
+* There are kinases defective in Parkinson's disease.
+  
+---  
+
+# Pathophysiology; non-human models (36)  
+[[Drugsandbrain:Lecture Week4Lecture36 | Lecture 36 Text edited]] 
+**Parkinson’s disease: pathophysiology**  
+1. Most cases are unexplained.  
+2. Dopaminergic neurons may be selectively vulnerable because the cell body must maintain large amounts of axoplasm and presynaptic problems.  
+3. Dopaminergic neurons may be selectively vulnerable because dopamine is highly
+reactive.  
+4. Pesticides (Wang et al, Eur J Epidemiol. 2011).  
+5. The “frozen addict”. An impurity in synthetic heroin.  
+Taken up by the dopamine transporter (expressed only in dopaminergic cells). Kills cells.  
+6. The influenza pandemic (worldwide epidemic) of 1918, killed 20 million people. The flu specifically killed dopaminergic neurons in many people (“Awakenings”, O. Sacks).  
+  
+**Proteins that seem to be defective in PD**  
+* &alpha;-synuclein has an unknown function; it’s an “intrinsically disordered protein” (doesn't seem to have a well described shape of α-helices and β-sheets).  
+* Mutant &alpha;-synuclein forms fibrils.  
+* &alpha;-synuclein may be transmitted among cells, like a “prion”  
+* Another major theme in Parkinson's research is improper mitochondria function. This large cell body, which must maintain massive amounts of axoplasm and also large dendrites, places severe metabolic burdens on the axoplasm and the most metabolically active organelles, the mitochondria and so, early mitochondrial function may be one of the causing agents in Parkinson's disease. 
+  
+**Animal Models for Parkinson’s Disease: Drosophila that overexpress synuclein**  
+* Among the earliest animal model was drosophila (fruit flies) which over express synuclein.  
+* The 4 dopaminergic neurons die preferentially! We don’t know why.  
+* The cells show dense structures like Lewy bodies.  
+* The flies show a “movement disorder."  
+  
+**More Models for Parkinson’s Disease**  
+* Toxin-treated mice, rats, and monkeys  
+* Mice with altered PARK genes  
+* Yeast that harbor synuclein mutations (Cooper et al, Science 2006)  
+* Cultured cells from people carrying PD mutations (“disease in a dish”)  
+: human embryonic stem cells (hESCs)  
+: human induced pluripotent stem cells (iPSCs)  
+  
+* But there are still major technical issues in generating dopaminergic neurons that behave like the vulnerable neurons.  
+* Distinction between SNc and VTA?
+: Antibody stains for tyrosine hydroxylase and other markers are not yet sufficient to reveal a true phenotype.   
+  
+**Biomarkers for Parkinson’s Disease**  
+* Experienced neurologist is the best judge. No effective blood test for PD, Responsiveness to L-dopa is a good criterion.  
+* Imaging: 125I]ioflupane, high-affinity dopamine transporter (DAT) ligand.  
+: Single-photon emission computed tomography (SPECT)  
+  
+* May help to differentiate Parkinsonian normal striatum symptoms from conditions with similar symptoms, such as essential tremor.  
+* Effectiveness as a screening or confirmatory test and for monitoring disease progression or response to therapy has not been established.   
+
+---  
+
+#  Therapeutic approaches: symptom relief (37)  
+[[Drugsandbrain:Lecture Week4Lecture37 | Lecture 37 Text edited]] 
+**Heterozygote advantage: none known**  
+* One copy of the diseased gene is enough to cause the disease.  
+  
+**Therapeutic approaches to Parkinson’s disease**  
+* Symptomatic relief: L-dopa  
+  
+**levodopa**  
+* It is a zwitterion, not neutral by itself, but has a balanced positive and negative charge.  
+* It penetrates into the brain via a transporter.  
+* Dopamine itself does not penetrate into the brain.  
+* Once in the brain, L-dopa, it is a substrate for an enzyme called a decarboxylase and the carboxyl group is removed by that enzyme and we have dopamine.  
+*  In order to get maximal effectiveness and minimal side effects in the peripheral nervous system, L-dopa is usually mixed with carbidopa (inhibits decarboxylases). It does not cross the blood-brain barrier, and it therefore prevents hydrolysis in the blood and in the peripheral nervous system, and so we don't get peripheral effects of dopamine.  
+* In addition, Parkinson's patients also take D2 receptor agonists such as bromocriptine. This seems to reduce the dyskinesias.  
+  
+**Side effects of L-dopa**  
+* L-dopa remains effective only as long as sufficient dopaminergic neurons remain to take up and secrete dopamine.  
+:*  When a patient loses too many dopaminergic neurones, despite the fact that the dopaminergic neurons sprout as well as they can, ultimately L-dopa becomes ineffective.  
+* Dyskinesias (“bad movements”, very common in people who have used L-dopa for many years, often seen in TV appearances of medicated PD patients).  
+:* Mechanism is unknown. “Outside-in” continued activation of Gicoupled pathways?  
+* Visual hallucinations, other psychotic symptoms, sleep disturbances, and confusion.  
+* “On-off” phenomenon: abrupt and transient fluctuations in the severity of Parkinsonism at intervals during the day; such fluctuations are unrelated to ongoing drug dosage.  
+* Note here we're using Parkinsonism in terms of the movement disorder to distinguish it as a cluster of symptoms rather than as the disease.  
+
+**Other drugs for relief of PD symptoms**  
+* Monoamine oxidase (MAO type B) inhibitors  
+* Muscarinic antagonists may prolong the action of certain key interneurons in the striatum  
+* Amantadine (blocks NMDA Receptors, may decrease exitotoxoicity)  
+* Antioxidants, such as coenzyme Q10 and creatine  
+* Adenosine receptor antagonists (Gs coupled, A1 or A2A), mechanism uncertain  
+  
+**Deep brain stimulation for Parkinson’s Disease**  
+*  For a period of a couple of decades neurosurgeons interrupted the feedback loops which cause tremor, by literally ablating, sometimes cauterizing individual groups of neurons, in the basal ganglia.  
+* Electrodes are placed into the brains to find out whether they were getting the characteristic discharges from the neurons in either the GPe or the STN. And ultimately to make sure, they started stimulating these neurons and that stimulation itself, not destruction but merely stimulation of the neurons seemed to decrease the tremors. So this lead to the rapid development of several wonderful devices which can be implanted in the brain that stimulate neurons without killing them, and stop the tremors and other movement abnormalities in Parkinson's disease.  
+* It is not clear how it works.  
+* The stimulus frequency, which is about 160 Hertz, is a bit too rapid to have sustained activation of neurons.  
+* The theory has developed that perhaps by keeping neurons depolarized. Keeping those sodium channels inactivated  
+* Another set of data which have arisen recently, that perhaps what the deep brain stimulation is doing is actually activating axons passing through one or the other regions of the basal ganglia.    
+
+---  
+
+# Therapeutic approaches: protection by small molecules (38)  
+[[Drugsandbrain:Lecture Week4Lecture38 | Lecture 38 Text edited]] 
+  
+**Therapeutic approaches to Parkinson’s disease**  
+* Arrest the degeneration  
+* Goal: intervene in early-stage PD with drug taken from that point.  
+* Some degeneration has already occurred.  
+* Good example of the interplay between diagnosis & therapy.  
+  
+**Does deep brain stimulation for Parkinson’s disease delay degeneration?**
+* The data are unclear, both in humans and in animal models people are continuing to pursue the hypothesis that the brain stimulation might arrest neurodegeneration. But for the moment we just don't know.  
+  
+**Inverse correlation between a person’s history of tobacco use & susceptibility to Parkinson’s disease**  
+* In brief, that means that people who smoke have less of a risk of Parkinson's disease.  
+* A person who has used tobacco is about half as likely as a non user to develop Parkinson's disease.  
+* In some cases, this risk goes back twenty years before the development of Parkinson's disease, that is one can see a protective effect even if the person smoked twenty years ago.  
+* Probable that genetics plays only a small role.  
+  
+**Tobacco use protects against PD, vs PD patients use less tobacco**  
+* Nicotine itself is probably a part of smoking’s apparent neuroprotective action  
+1. In rodents and monkeys, nicotine protects dopaminergic neurons against toxins
+(M. Quik, several papers)  
+3. Inverse correlation persists for chewing tobacco in epidemiological studies  
+2. α4 nicotinic receptor knockout mice lack this protection  
+(Ryan et al, 2001)  
+* We need additional human data, e. g., PD among Swedish snus users  
+1. Clinical trial under way for early-stage PD patients given nicotine patches  
+* Simply use nicotine patches?  
+2. Nicotine itself is a perfect addictive drug but a sub-optimal therapeutic drug.  
+3. Nicotine itself activates several nicotinic receptors; many people cannot tolerate patches  
+  
+**What is the Mechanism: for Nicotine’s apparent neuroprotective effect?**  
+* Why does it matter?   
+: There are some clear differences in the implications of these two mechanisms.  
+* Inside-out mechanisms occur at steady low concentrations of nicotine. Dosing would be quite different for neuroprotection.  
+* Several drug companies have active programs to discover analogs and derivatives of nicotine, with better drug characteristics.  
+* How should one screen for these drugs?  
+: Using “outside-in” electrical assays?  
+: Using “inside-out” Chaperoning assays?  
+* An inside-out mechanism would involve many additional molecular “targets”, in the endoplasmic reticulum and Golgi apparatus.  
+* Outside-in mechanisms seem unlikely, because elevated intracellular Ca2+ tends to kill dopaminergic neurons.  
+* Most recent review: Lester et al., Biological Psychiatry. 2012  
+  
+**Inside-out and upregulation-based mechanisms**  
+* Generate three hypotheses about the neuroprotective effects of tobacco use in PD  
+1. Circuit-based: Cell-selective upregulation of α4β2 nicotinic receptors (pharmacological deep brain stimulation)  
+2. Presynaptic: Selective upregulation in nerve terminals of dopaminergic neurons
+3. Cell-delimited: Pharmacological chaperoning of intracellular receptors → reprogram cell physiology  
+: mechanism that takes place entirely within dopaminergic neurons.  
+  
+**“Inside-out” Drug Action by Nicotine at α4β2 nAChRs May Suppress Endoplasmic Reticulum Stress and a Pathological Unfolded Protein Response**  
+* Pharmacological chaperoning leads to upregulation of nicotinic receptors on the plasma membrane of the neuron cell.  
+* We are looking deeper into the nerve cell at a phenomenon called endoplasmic reticulum stress and the unfolded protein response.  
+* In the endoplasmic reticulum, there is a system of sensors.  
+* The major sensor protein called BIP, immunoglobulin binding protein, activates a couple of enzymes; as well there is a sensor for proteins that have managed to escape the endoplasmic reticulum and go to the Golgi or ATF6.  
+* The importance of these enzymes which get activated is that they become or trigger themselves transcription factors and can operate on activation of genes.  
+* That is an important statement because for the first time now, one has a connection between chaperoning of nicotinic receptors and direct actions on gene activation.  
+* It is thought that if endoplasmic reticulum stress (too many unfolded proteins and the resulting unfolded protein response) goes on for significant amounts of time (days, weeks, years), it can trigger cell death.  
+* The overriding view here is that Parkinson's disease results from a cumulative pathological process that goes on over a period of decades gradually eliminating dopaminergic neurons, and that there is at the same time, a sustained protective process.  
+* Possibly influenced by nicotine that protects the neurons and suppresses the pathological effects of unfolded protein response.  
+  
+**Causality versus inverse causality**  
+* Causality - tobacco use protects against PD  
+* Inverse causality - PD patients use less tobacco  
+
+---  
+  
+# Therapeutic approaches: protection by proteins or gene therapy (39)  
+[[Drugsandbrain:Lecture Week4Lecture39 | Lecture 39 Text edited]]  
+**The “limiting neurotrophic factor” hypothesis for neuronal survival**    
+* Usually, more neurons initially appear in a ganglion or nucleus than are required to innervate the target cells.  
+* The excess neurons die.  
+* This occurs because the target secretes a limiting amount of a trophic factor.  
+  
+**GDNF, a neurotrophic factor**  
+* Since the early 1990’s, several pharmaceutical companies have experimented with pumps that infuse glial cell derived neurotrophic factor (GDNF) in or near the substantia nigra or its target, the striatum.  
+* Several companies abandoned, despite anecdotal stories of success; others continue.  
+* derived originally from glial cells, and it is heavily localized in the substantia nigra, as well as in its target, the striatum.  
+  
+**Attempts at Gene therapy for PD**  
+* Using adeno-associated viruses modified to express the protein of interest.  
+* “AAV2” is a viral “vector”. Lentivirus vector also show promise.  
+* Further attempts with GDNF  
+* Attempts with neurturin. Insufficient encouraging results  
+* A promising virus that can be modified to carrying genes is called adeno-associated virus. There are various subtypes of adeno-associated virus, AAV2, seems to be a lovely vector for the nervous system so a vector (a virus that has been modified to express a protein).  
+* Another class of virus called lentivirus has also been used to try to establish gene therapy for the brain. One series of trials has been with GDNF again trying to get it as close as possible to the dopaminergic neurons by injecting the vector into the substantia nigra or into the striatum. There is another growth factor, Neurotrophin called neurturin, also associated with dopaminergic neurons, also delivered by an adeno-associated virus. Also, unfortunately, insufficient encouraging results in the early treatments.  
+* When in the cell, the adenovirus releases the gene which expresses the protein, either GDNF or glutamate decarboxylase. Gene therapy for the nervous system does not yet involve any production of new receptor proteins.   
+  
+**Gene therapy with glutamate decarboxylase in subthalamic nucleus “AAV2-GAD”**  
+* Safety established; effectiveness unknown.  
+* Phase II shows initial Encouraging results  
+* The subthalamic nucleus, is the only nucleus that has glutamatergic neurons (excitatory neurons).  
+* The other nuclei are either inhibitory or they have the dopaminergic system which is both excitatory and inhibitory.  
+* The question arises, could one suppress the tremor and retune the feedback loops by changing some number of STN neurons from glutamatergic to GABAergic (from excitatory to inhibitory) and glutamate decarboxylase is the enzyme that makes GABA?  
+* The neurons are then able to package the GABA into their synaptic vesicles and secrete that GABA to inhibit other neurons (the globus pallidus pars internal or the substania nigra pars reticulata).  
+
+---

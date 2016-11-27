@@ -1,0 +1,174 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Crypto:Further Reading</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This is a set of links to the  material referenced at the end of the lectures</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_1"><span class="tocnumber">1</span> <span class="toctext">Week 1</span></a></li>
+<li class="toclevel-1"><a href="#Week_2"><span class="tocnumber">2</span> <span class="toctext">Week 2</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Using_Block_Ciphers"><span class="tocnumber">2.1</span> <span class="toctext">Using Block Ciphers</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_3"><span class="tocnumber">3</span> <span class="toctext">Week 3</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Message_Integrity"><span class="tocnumber">3.1</span> <span class="toctext">Message Integrity</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_4"><span class="tocnumber">4</span> <span class="toctext">Week 4</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Authenticated_Encryption"><span class="tocnumber">4.1</span> <span class="toctext">Authenticated Encryption</span></a></li>
+<li class="toclevel-2"><a href="#Odds_and_Ends"><span class="tocnumber">4.2</span> <span class="toctext">Odds and Ends</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_5"><span class="tocnumber">5</span> <span class="toctext">Week 5</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Basic_Key_Exchange"><span class="tocnumber">5.1</span> <span class="toctext">Basic Key Exchange</span></a></li>
+<li class="toclevel-2"><a href="#Intro._Number_Theory"><span class="tocnumber">5.2</span> <span class="toctext">Intro. Number Theory</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_6"><span class="tocnumber">6</span> <span class="toctext">Week 6</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Public_Key_Encryption_from_trapdoor_permutations:"><span class="tocnumber">6.1</span> <span class="toctext">Public Key Encryption from trapdoor permutations:</span></a></li>
+<li class="toclevel-2"><a href="#Public-Key_Encryption_from_Diffie-Hellman"><span class="tocnumber">6.2</span> <span class="toctext">Public-Key Encryption from Diffie-Hellman</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Week_1">Week 1</span></h2>
+<p>None</p>
+<h2> <span class="mw-headline" id="Week_2">Week 2</span></h2>
+<h3> <span class="mw-headline" id="Using_Block_Ciphers">Using Block Ciphers</span></h3>
+<ul>
+<li><p>A concrete security treatment of symmetric encryption: Analysis of the DES modes of operation,<br />
+M.Bellare, A.Desai, E.Jokipii and P.Rogaway, FOCS 1997<br />
+<a rel="nofollow" class="external free" href="http://www.cs.ucdavis.edu/research/tech-reports/1997/CSE-97-9.pdf">http://www.cs.ucdavis.edu/research/tech-reports/1997/CSE-97-9.pdf</a></p></li>
+<li><p>Nonce‐Based Symmetric Encryption,<br />
+P. Rogaway, FSE 2004<br />
+<a rel="nofollow" class="external free" href="http://pdf.aminer.org/000/217/279/nonce_based_symmetric_encryption.pdf">http://pdf.aminer.org/000/217/279/nonce_based_symmetric_encryption.pdf</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_3">Week 3</span></h2>
+<h3> <span class="mw-headline" id="Message_Integrity">Message Integrity</span></h3>
+<ul>
+<li><p>CBC MACs for Arbitrary‐Length Messages: The Three-­Key Constructions. J. Cryptology 18(2): 111­-131 (2005)<br />
+J.Black, P.Rogaway:<br />
+<a rel="nofollow" class="external free" href="http://www.cs.ucdavis.edu/~rogaway/papers/3k.pdf">http://www.cs.ucdavis.edu/~rogaway/papers/3k.pdf</a></p></li>
+<li><p>A Tight Bound for EMAC. ICALP (2) 2006: 168‐179<br />
+K.Pietrzak:<br />
+<a rel="nofollow" class="external free" href="http://homepages.cwi.nl/~pietrzak/publications/Pie06c.pdf">http://homepages.cwi.nl/~pietrzak/publications/Pie06c.pdf</a></p></li>
+<li><p>A Block­-Cipher Mode of Operation for Parallelizable Message Authentication. EUROCRYPT 2002: 384‐397<br />
+J.Black, P.Rogaway:<br />
+<a rel="nofollow" class="external free" href="http://www.iacr.org/cryptodb/archive/2002/EUROCRYPT/2070/2070.pdf">http://www.iacr.org/cryptodb/archive/2002/EUROCRYPT/2070/2070.pdf</a></p></li>
+<li><p>New Proofs for NMAC and HMAC: Security Without Collision‐Resistance. CRYPTO 2006: 602‐619<br />
+M.Bellare:<br />
+<a rel="nofollow" class="external free" href="http://www.iacr.org/archive/crypto2006/41170597/41170597.pdf">http://www.iacr.org/archive/crypto2006/41170597/41170597.pdf</a></p></li>
+<li><p>A New Mode of Operation for Block Ciphers and Length‐Preserving MACs. EUROCRYPT 2008: 198­-219<br />
+Y.Dodis, K.Pietrzak, P.Puniya:<br />
+<a rel="nofollow" class="external free" href="http://www.iacr.org/conferences/eurocrypt2008/sessions/KrzysztofPitrzak_20080415.pdf">http://www.iacr.org/conferences/eurocrypt2008/sessions/KrzysztofPitrzak_20080415.pdf</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_4">Week 4</span></h2>
+<h3> <span class="mw-headline" id="Authenticated_Encryption">Authenticated Encryption</span></h3>
+<ul>
+<li><p>The Order of Encryption and Authentication for Protecting Communications,<br />
+H.Krawczyk, Crypto 2001.<br />
+<a rel="nofollow" class="external free" href="http://www.iacr.org/archive/crypto2001/21390309.pdf">http://www.iacr.org/archive/crypto2001/21390309.pdf</a></p></li>
+<li><p>Authenticated‐Encryption with Associated-­Data,<br />
+P.Rogaway, Proc. of CCS 2002.<br />
+<a rel="nofollow" class="external free" href="http://www.cs.ucdavis.edu/~rogaway/papers/ad.pdf">http://www.cs.ucdavis.edu/~rogaway/papers/ad.pdf</a></p></li>
+<li><p>Password Interception in a SSL/TLS Channel,<br />
+B.Canvel, A.Hiltgen, S.Vaudenay, M.Vuagnoux, Crypto 2003.<br />
+<a rel="nofollow" class="external free" href="http://canvel.free.fr/crypto/pdf/crypto03.pdf">http://canvel.free.fr/crypto/pdf/crypto03.pdf</a></p></li>
+<li><p>Plaintext Recovery Attacks Against SSH,<br />
+M.Albrecht, K.Paterson and G.Watson, IEEE S&amp;P 2009<br />
+<a rel="nofollow" class="external free" href="http://modular.math.washington.edu/home/wstein/www/home/malb/papers/plaintext_recover_attacks_against_ssh.pdf">http://modular.math.washington.edu/home/wstein/www/home/malb/papers/plaintext_recover_attacks_against_ssh.pdf</a></p></li>
+<li><p>Problem areas for the IP security protocols,<br />
+S.Bellovin, Usenix Security 1996.<br />
+<a rel="nofollow" class="external free" href="http://academiccommons.columbia.edu/download/fedora_content/download/ac:127083/CONTENT/badesp.pdf">http://academiccommons.columbia.edu/download/fedora_content/download/ac:127083/CONTENT/badesp.pdf</a></p></li>
+</ul>
+<h3> <span class="mw-headline" id="Odds_and_Ends">Odds and Ends</span></h3>
+<ul>
+<li><p>Cryptographic Extraction and Key Derivation: The HKDF Scheme.<br />
+H.Krawczyk, Crypto 2010<br />
+<a rel="nofollow" class="external free" href="http://eprint.iacr.org/2010/264.pdf">http://eprint.iacr.org/2010/264.pdf</a></p></li>
+<li><p>Deterministic Authenticatied‐Encryption: A Provable‐Security Treatment of the Keywrap Problem.<br />
+P.Rogaway, T.Shrimp1on, Eurocrypt 2006<br />
+<a rel="nofollow" class="external free" href="http://www.cs.ucdavis.edu/~rogaway/papers/keywrap.pdf">http://www.cs.ucdavis.edu/~rogaway/papers/keywrap.pdf</a></p></li>
+<li><p>A Parallelizable Enciphering Mode.<br />
+S.Halevi, P.Rogaway, CT-RSA 2004<br />
+<a rel="nofollow" class="external free" href="http://www.cs.ucdavis.edu/~rogaway/papers/eme.pdf">http://www.cs.ucdavis.edu/~rogaway/papers/eme.pdf</a></p></li>
+<li><p>Efficient Instantiations of Tweakable Blockciphers and Refinements to Modes OCB and PMAC.<br />
+P.Rogaway, Asiacrypt 2004<br />
+<a rel="nofollow" class="external free" href="http://www.cs.ucdavis.edu/~rogaway/papers/offsets.pdf">http://www.cs.ucdavis.edu/~rogaway/papers/offsets.pdf</a></p></li>
+<li><p>How to Encipher Messages on a Small Domain: Deterministic Encryption and the Thorp Shuffle.<br />
+B.Morris, P.Rogaway, T.Stegers, Crypto 2009<br />
+<a rel="nofollow" class="external free" href="http://www.cs.ucdavis.edu/~rogaway/papers/thorp.pdf">http://www.cs.ucdavis.edu/~rogaway/papers/thorp.pdf</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_5">Week 5</span></h2>
+<h3> <span class="mw-headline" id="Basic_Key_Exchange">Basic Key Exchange</span></h3>
+<ul>
+<li><p>Merkle Puzzles are Optimal,<br />
+B.Barak, M.Mahmoody‐Ghidary, Crypto ’09<br />
+<a rel="nofollow" class="external free" href="http://www.boazbarak.org/Papers/merkle.pdf">http://www.boazbarak.org/Papers/merkle.pdf</a></p></li>
+<li><p>On formal models of key exchange<br />
+V.Shoup, 1999  (sections 7‐9)<br />
+<a rel="nofollow" class="external free" href="http://www.shoup.net/papers/skey.pdf">http://www.shoup.net/papers/skey.pdf</a></p></li>
+</ul>
+<h3> <span class="mw-headline" id="Intro._Number_Theory">Intro. Number Theory</span></h3>
+<ul>
+<li>A Computational Introduction to Number Theory and Algebra,<br />
+V.Shoup, 2008 (V2), Chapter 1‐4, 11, 12<br />
+Available at <a rel="nofollow" class="external free" href="http://shoup.net/ntb/ntb-v2.pdf">http://shoup.net/ntb/ntb-v2.pdf</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_6">Week 6</span></h2>
+<h3> <span class="mw-headline" id="Public_Key_Encryption_from_trapdoor_permutations:">Public Key Encryption from trapdoor permutations:</span></h3>
+<ul>
+<li><p>Why chosen ciphertext security matters,<br />
+V.Shoup, 1998<br />
+<a rel="nofollow" class="external free" href="http://www.shoup.net/papers/expo.pdf">http://www.shoup.net/papers/expo.pdf</a></p></li>
+<li><p>Twenty years of attacks on the RSA cryptosystem,<br />
+D.Boneh, Notices of the AMS, 1999<br />
+<a rel="nofollow" class="external free" href="http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf">http://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf</a></p></li>
+<li><p>OAEP reconsidered,<br />
+V.Shoup, Crypto 2001<br />
+<a rel="nofollow" class="external free" href="http://www.shoup.net/papers/oaep.pdf">http://www.shoup.net/papers/oaep.pdf</a></p></li>
+<li><p>Key lengths,<br />
+A.Lenstra, 2004<br />
+<a rel="nofollow" class="external free" href="http://www.keylength.com/biblio/Handbook_of_Information_Security_-_Keylength.pdf">http://www.keylength.com/biblio/Handbook_of_Information_Security_-_Keylength.pdf</a></p></li>
+</ul>
+<h3> <span class="mw-headline" id="Public-Key_Encryption_from_Diffie-Hellman">Public-Key Encryption from Diffie-Hellman</span></h3>
+<ul>
+<li><p>The Decision Diffie‐Hellman problem.<br />
+D.Boneh, ANTS 3, 1998<br />
+<a rel="nofollow" class="external free" href="http://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf">http://crypto.stanford.edu/~dabo/pubs/papers/DDH.pdf</a></p></li>
+<li><p>Universal hash proofs and a paradigm for chosen ciphertext secure public key encryption.<br />
+R.Cramer and V.Shoup, Eurocrypt 2002<br />
+<a rel="nofollow" class="external free" href="http://www.shoup.net/papers/uhp.pdf">http://www.shoup.net/papers/uhp.pdf</a></p></li>
+<li><p>Chosen‐ciphertext security from Identity‐Based Encryption.<br />
+D.Boneh, R.CaneK, S.Halevi, and J.Katz, SICOMP 2007<br />
+<a rel="nofollow" class="external free" href="http://www.stanford.edu/~dabo/papers/ccaibejour.pdf">http://www.stanford.edu/~dabo/papers/ccaibejour.pdf</a></p></li>
+<li><p>The Twin Diffie‐Hellman problem and applications.<br />
+D.Cash, E.Kiltz, V.Shoup, Eurocrypt 2008<br />
+<a rel="nofollow" class="external free" href="http://www.iacr.org/archive/eurocrypt2008/49650126/49650126.pdf">http://www.iacr.org/archive/eurocrypt2008/49650126/49650126.pdf</a></p></li>
+<li><p>Efficient chosen‐ciphertext security via extractable hash proofs.<br />
+H.Wee, Crypto 2010<br />
+<a rel="nofollow" class="external free" href="http://www.seas.gwu.edu/~hoeteck/pubs/exthps-crypto10.pdf">http://www.seas.gwu.edu/~hoeteck/pubs/exthps-crypto10.pdf</a></p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 60/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Crypto:Further_Reading&amp;oldid=14039">https://share.coursera.org/wiki/index.php?title=Crypto:Further_Reading&amp;oldid=14039</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,127 @@
+Independence
+====
+
+ 
+
+Independence is defined as:
+
+
+
+Definition: For ''events'' $$\alpha$$ and $$\beta$$, $$\alpha$$ and $$\beta$$ are '''independent''' (a.k.a. '''marginally independent''') if
+$$P(\alpha \cap \beta)=P(\alpha)*P(\beta)$$.
+
+Notation:  We will use the notation $$P \models  \alpha \perp \beta $$ to indicate that $$\alpha$$ and $$\beta$$ are independent in the probability space defined by $$P$$.
+
+Theorem: 
+If $$P( \beta) \neq 0$$, then 
+
+$$P(\alpha)=P(\alpha\mid \beta)$$
+
+if and only if $$\alpha$$ and $$\beta$$ are independent.  Similarly, if $$P( \alpha) \neq 0$$, then 
+
+$$P(\beta)=P(\beta\mid \alpha)$$ if and only if $$\alpha$$ and $$\beta$$ are independent.
+
+
+Question: Must '''all''' these rules be satisfied, or just '''one''' is enough for independence?
+
+Answer: If $$P( \alpha)$$ and  $$P( \beta)$$ are non-zero, then when one of these rules is satisfied, the other two are also satisfied.  In fact, since 
+*$$P(\alpha\mid \beta)= \Large \frac{P(\alpha \cap \beta)}{P(\beta)}$$
+the second and the third equation follow from the first one.
+
+Likewise, for random variables X, Y, P satisfies X indep of Y if
+
+* P(X,Y) = P(X)P(Y)
+* P(X|Y) = P(X)
+* P(Y|X) = P(Y)
+
+Interpretation:
+"universal": for all x, y P(x,y) = P(x)P(y)
+"factors": events are factors of r.v.'s
+
+
+Conditional Independence
+====
+Analogous to independence 
+
+For r.v.'s X,Y,Z
+
+P satisfies X indep Y given Z if
+* P(X,Y|Z) = P(X|Z)P(Y|Z)
+* P(X|Y,Z) = P(X|Z)
+* P(Y|X,Z) = P(Y|Z)
+* P(X,Y,Z) proportional Psi(X,Z)Psi(Y,Z)
+
+Conversely, conditioning can lose independences.
+
+
+Fair Coin Toss Example
+----
+Q: Pick a coin, with a certain probability that its fair C and toss it twice. How does your first toss X1 affect your belief about your second toss X2?
+
+A: P does not satisfy X1 indep X2, but
+
+P satisfies X1 indep X2 | C
+
+Student Example
+----
+Distribution P(I,S,G).
+
+Q: Look at $$P(S,G|i_0)$$. Does it satisfy S indep G when we look at $$P(S|i_0)$$, $$P(G|i_0)$$? 
+
+A: Nope need to look at all i_i as well.
+
+
+Check for Independencies from Joint Distribution table
+====
+Consider the following Joint Distribution tables of random variables I and D:
+
+$$ Table_1 = \begin{array}{|c|c|}
+ I & D & Probability \\\ \hline
+i^0 & d^0 & 0.42 \\\ \hline
+i^0 & d^1 & 0.18 \\\ \hline
+i^1 & d^0 & 0.28 \\\ \hline
+i^1 & d^1 & 0.12 \\\ \hline
+\end{array}$$
+
+$$ Table_1 = \begin{array}{|c|c|}
+ I & D & Probability \\\ \hline
+i^0 & d^0 & 0.282\\\ \hline
+i^0 & d^1 & 0.02 \\\ \hline
+i^1 & d^0 & 0.564 \\\ \hline
+i^1 & d^1 & 0.134 \\\ \hline
+\end{array}$$
+
+We check for $$Table_1$$. First we marginalize over $$i$$ and $$d$$:
+
+$$ I_{table_1} = \begin{array}{|c|c|}
+ I  & Probability \\\ \hline
+i^0 & 0.42 + 0.18 = 0.6 \\\ \hline
+i^1 & 1 - 0.6 = 0.4 \\\ \hline
+\end{array}$$
+
+and
+
+$$ D_{table_1} = \begin{array}{|c|c|}
+ D  & Probability \\\ \hline
+d^0 & 0.42 + 0.28 = 0.7 \\\ \hline
+d^1 & 1 - 0.7 = 0.3 \\\ \hline
+\end{array}$$
+
+Now we can check whether $$P(I,D) = P(I)\cdot P(D)$$ for the different values of I and D. For example from Table-1 we have that $$P(i^0,d^1) = 0.18$$ and from the two new tables we get $$P(i^0)\cdot P(d^1) = 0.6 \cdot 0.3 =0.18$$.
+
+By checking for the other values we see that for Table-1: $$P \models I \perp D$$. If we do the same for Table-2 we see that $$P \not\models I \perp D$$.
+
+More at: [Independencies in Bayesian Networks I-Maps slide 11:00](https://class.coursera.org/pgm/forum/thread?thread_id=152)
+
+
+Video Lecture Table of Contents
+----
+<pre>
+0:00	Independencies
+0:45	Definition of independence
+4:03	Example of independence
+5:25	Conditional independence
+8:25	Conditional independence: example
+10:25	Conditional independence: example 2
+11:33	Conditioning can lose independences
+</pre>

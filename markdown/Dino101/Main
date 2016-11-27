@@ -1,0 +1,112 @@
+<table style="margin: 0 10%;border-collapse: collapse;background: #fbfbfb;border: 1px solid #aaa;border-left: 10px solid #609fc1;">
+<tr>
+<td style="padding: 2px 0px 2px 0.5em; text-align: center;"><div style="width: 52px;">[[File:Dan cartoon.png|50px]]</div></td>
+<td style="padding: 0.25em 0.5em;width: 100%;">'''A wiki is a website that anyone can edit.''' Together, we'll use this wiki to compile notes about each of the lecture videos, to add questions and answers and to share information. When viewing the wiki page<!-- for a given lecture-->, click the '''Edit''' tab at the top right to begin editing. Be sure to click the '''Save page''' button at the bottom when you have finished so that others can also edit the page. While you can enter basic text into the editor, those who wish to add some formatting may wish to review this [[Markdown guide]]. Take advantage of these notes but also contribute to them!</td>
+</tr>
+</table>
+
+
+
+'''Welcome to the wiki page of [https://class.coursera.org/dino101-001/class/index Dino 101: Dinosaur Paleobiology]!'''
+
+
+
+Dino 101
+========
+
+Introduction
+------------
+
+When reflecting on this course I realized that the lectures often went too fast. I had to pause the video in order to write down the words which were displayed, and I often wanted more detailed information. I decided that I needed a list of terms and their definitions (the glossary is fine for this) together with links to appropriate Wikipedia articles. That is what I have set out to do here. I have another motivation: I had never heard of Markdown language until I saw it at the top of the edit page, and I like the idea of learning it while I work on this page.
+
+For the most part I will be following the course notes supplied with the course; it would be useful if clickable links were inserted into these notes.
+
+All diagrams and photos which I use will be from Wikimedia Commons, so there should be no trouble with copyright.
+
+Jim Bailey
+
+A Reading list for Dino101 Course students
+----------------------
+Interesting dinosaur and paleontology [[Dino101:Reading List|articles and books]] collected and recommended by Dino101 students & staff.
+
+Online Resources
+----------------
+
+Dinosaur and paleontology [[Dino101:Online Resources|online resources]] for Dino101.
+
+Lesson 1: The Skeleton
+----------------------
+
+###Skulls and Jaws###
+
+[[File:Massospondylus Skull.png|300px|thumb|right|Massospondylus Skull Showing Fenestrae]]
+
+There are five openings in the skulls of dinosaurs:
+
+1. Nares: openings for the nostrils.
+
+2. Orbits: openings for the eyes.
+
+3. Fenestrae: additional openings in the skull.
+  * Laterotemporal fenestrae are openings on the lateral sides of the skull, behind each orbit.
+  * supratemporal fenestrae are openings on the top of the skull. Both the lateraltemporal and supratemporal fenestrae provide extra room for jaw muscles.
+  * antorbital fenestrae are openings in the skull between the nares and the orbits.
+
+###Axial Skeleton###
+
+The vertebrae in different regions of the vertebral column have different shapes: 
+
+1. [Cervical vertebrae](http://en.wikipedia.org/wiki/Cervical_vertebrae "Cervical vertebrae") (neck) are addapted to support the weight of the head. They have large openings for blood and nerves.
+
+2. [Dorsal vertebrae](http://en.wikipedia.org/wiki/Dorsal_vertebrae "Dorsal vertebrae") (back) often have tall spinous processes (where muscles and ligaments are attached) and facets on the sides of the centrum for articulation with the ribs.
+
+3. [Sacral vertebrae](http://en.wikipedia.org/wiki/Sacral_vertebrae "Sacral vertebrae") (hips) are often fused to form a sacrum and are also fused to the pelvic bones where the leg muscles are attached.
+
+4. [Caudal vertebrae](http://en.wikipedia.org/wiki/Caudal_vertebrae "Caudal vertebrae") (tail) often have bones on the under side called _chevrons_ which protect nerves and blood vessels and provide support for tail muscles.
+
+###Appendicular Skeleton###
+
+All four limbed animals are [tetrapods](http://en.wikipedia.org/wiki/Tetrapod "Tetrapods") (meaning "four-footed"). Arms and legs are attached to the rest of the body by _limb girdles_. Forearms connect to the [pectoral girdle](http://en.wikipedia.org/wiki/Pectoral_girdle "Pectoral girdle") or shoulder girdle, the largest bone of which is the _scapula_. The hindlimbs connect to the [pelvic girdle](http://en.wikipedia.org/wiki/Pelvis "Pelvic girdle") consists of three bones: the [ilium](http://en.wikipedia.org/wiki/Ilium_(bone) "Ilium") which is uppermost and is fused to the sacral vertibrae. Below the ilium are the [pubis](http://en.wikipedia.org/wiki/Pubis_(bone) "Pubis") (which is nearer the belly) and the [ischium](http://en.wikipedia.org/wiki/Ischium "Ischium") (which is nearer the tail). The [acetabulum](http://en.wikipedia.org/wiki/Acetabulum "Acetabulum") is the hole in the pelvic girdle where the hind legs articulate.
+
+Starting at the shoulder, the bones of the arm and hand are the _humorus_, the _radius_ and _ulna_ (the radius is the thinner of the two), the carpals (wrist bones), the _metacarpals_, and the _phalanges_ (fingers). The corresponding bones in the leg and foot are the _femur_, the _fibula_ and _tibula_ (the fibula is the shin and is the thinner of the two), the _tarsals_, the _metatarsals_, and the _phalanges_ (the same word as for the fingers).
+
+###Dinosaur Groups###
+
+Dinosaurs are divided into two groups on the basis of their pelvic structure.
+
+[[File:Dino 101 Saurischia pelvis.png|200px|thumb|right|Saurischia pelvis structure (left side)]]
+
+1. [Saurischians](http://en.wikipedia.org/wiki/Saurischians "Saurischians")
+ (derived from the Greek _sauros_ meaning "lizard" and _ischion_ meaning "hip joint") have a pubis bone which is directed forward. This group includes all carnivorous dinosaurs, the bipedal theropods, and one of the two kinds of herbivorous dinosaurs, the sauropodomorphs.
+  * [Theropod](http://en.wikipedia.org/wiki/Theropod "Theropod")
+ (meaning "beast feet")
+were mainly carnivorous, had sharp teeth with serrated edges for cutting flesh and sharp claws. Some lacked teeth: modern birds are descended from the theropods.
+  * [Sauropodomorph](http://en.wikipedia.org/wiki/Sauropodomorph "Sauropodomorph")
+ (meaning "lizard-footed forms") were long-necked, herbivorous dinosaurs. They include the quadrupedal sauropods which had long necks and tails, and relatively small heads. They had simple, peg-like teeth. Their vertebrae had air sacks. They were the largest animals to walk on Earth.
+
+[[File:Dino 101 Ornithischia pelvis.png|200px|thumb|right|Ornithischia pelvis structure (left side)]]
+
+2. [Ornithischians](http://en.wikipedia.org/wiki/Ornithischians "Ornithischians")
+ (derived from the Greek _ornitheios_ meaning "of a bird" and _ischion_ meaning "hip joint") have a pubis bone which is rear-pointing, possibly to leave more space for their digestive tract. They all had beaks and were probably herbivorous. 
+There were five main groups:
+  * [Ornithopod](http://en.wikipedia.org/wiki/Ornithopods "Ornithopod")
+ (derived from the Greek _ornithos_ meaning "bird" and _pous_ meaning "feet") did not have armour and moved bipedally, at least when running. They had horny beaks, an elongated pubis (sometimes extending past the ilium), and a no hole in the lower jaw. They include the 
+ [iguanodons](http://en.wikipedia.org/wiki/Iguanodon "Iguanodon") which had large thumb spikes (possibly used for defence) and a long prehensile fifth fingers (used to forage for food). This group also includes the [hadrosaurs](http://en.wikipedia.org/wiki/Hadrosaur "hadrosaur"), the duck-billed dinosaurs. The back of the mouth contained a dental battery. They had a hinge between the upper jaw and the rest of its skull; while chewing, the upper jaw pushed outwards and sideways as the lower jaw slid against the upper teeth. Some had hollow crests which may have produced a distinct sound. Others had solid crests or none at all.
+  * [Pachycephalosaurs](http://en.wikipedia.org/wiki/Pachycephalosaurs "Pachycephalosaurs") 
+ (meaning "thick-headed lizards") were bipedal, herbivorous/omnivorous, and had thick skulls (which may have been used in ramming predators or head-butting) which had nodes or spikes. Behind the beak they had sharp, conical teeth (suggesting omnivory) and leaf-shaped teeth at the rear of the mouth.
+  * [Ceratopsians](http://en.wikipedia.org/wiki/Ceratopsians "Ceratopsians")
+ (meaning "horned faces") were  quadrupeds with short tails and parrot-like beaks. Some had elaborate facial horns and frills extending over the neck which might have protected the neck from predators, been used for display or thermoregulation, or served as an attachment for the large neck and chewing muscles. Many had dental batteries.
+  * [Stegosaurs](http://en.wikipedia.org/wiki/Stegosaurs "Stegosaurs")
+ (meaning "roof lizard" or "covered lizard") were quadrupeds with small, long, narrow heads. They have rows of bones ([osteoderms](http://en.wikipedia.org/wiki/Osteoderm "Osteoderm")) which develop into plates and spines along the back and tail. Their forelimbs are shorter than their hindlimbs; the fingers of the front feet were arranged into vertical columns, with the main fingers forming a tube-like structure.
+  * [Ankylosaurs](http://en.wikipedia.org/wiki/Ankylosaurs "Ankylosaurs")
+ (meaning "fused lizard") were bulky quadrupeds, with short, powerful limbs. They were slow moving, largely because of the extreme weight of their armored skin.
+ They had a very small brain in proportion to their body.
+ Their small, triangular teeth were loosely packed (similar to stegosaurs).
+
+###Integument and Colour###
+
+The [integument](http://en.wikipedia.org/wiki/Integument "Integument") is the natural covering of an animal or organ. Scales are made of _keratin_ and are sometimes fossilized as are feathers. Recently fossilized _eumelanosomes_ (pigment cells) have been studied and suggest that _Microraptor_ was a glossy black or dark blue and _Anchiornis_ was black and white with some redish-brown on its head.
+
+[[Category:Coursera]]
+[[Category:Biology]]
+[[Category:Dino101]]

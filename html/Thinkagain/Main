@@ -1,0 +1,170 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Thinkagain:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Course_Outline"><span class="tocnumber">1</span> <span class="toctext">Course Outline</span></a>
+<ul>
+<li class="toclevel-2"><a href="#PART_I:_HOW_TO_ANALYZE_ARGUMENTS"><span class="tocnumber">1.1</span> <span class="toctext">PART I: HOW TO ANALYZE ARGUMENTS</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Week_1_.28November_26_.E2.80.93_December_2.29:_How_to_Spot_an_Argument"><span class="tocnumber">1.1.1</span> <span class="toctext">Week 1 (November 26 – December 2): How to Spot an Argument</span></a></li>
+<li class="toclevel-3"><a href="#Week_2_.28December_3-9.29:_How_to_Untangle_an_Argument"><span class="tocnumber">1.1.2</span> <span class="toctext">Week 2 (December 3-9): How to Untangle an Argument</span></a></li>
+<li class="toclevel-3"><a href="#Week_3_.28December_10-16.29:_How_to_Reconstruct_an_Argument"><span class="tocnumber">1.1.3</span> <span class="toctext">Week 3 (December 10-16): How to Reconstruct an Argument</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#PART_II:_HOW_TO_EVALUATE_DEDUCTIVE_ARGUMENTS"><span class="tocnumber">1.2</span> <span class="toctext">PART II: HOW TO EVALUATE DEDUCTIVE ARGUMENTS</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Week_4_.28December_17-23.29:_Propositional_Logic_and_Truth_Tables"><span class="tocnumber">1.2.1</span> <span class="toctext">Week 4 (December 17-23): Propositional Logic and Truth Tables</span></a></li>
+<li class="toclevel-3"><a href="#Week_5_.28December_24-30.29:_Categorical_Logic_and_Syllogisms"><span class="tocnumber">1.2.2</span> <span class="toctext">Week 5 (December 24-30): Categorical Logic and Syllogisms</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#PART_III:_HOW_TO_EVALUATE_INDUCTIVE_ARGUMENTS"><span class="tocnumber">1.3</span> <span class="toctext">PART III: HOW TO EVALUATE INDUCTIVE ARGUMENTS</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Week_6_.28December_31_.E2.80.93_January_6.29:_Inductive_Arguments"><span class="tocnumber">1.3.1</span> <span class="toctext">Week 6 (December 31 – January 6): Inductive Arguments</span></a></li>
+<li class="toclevel-3"><a href="#Week_7_.28January_7-13.29:_Causal_Reasoning"><span class="tocnumber">1.3.2</span> <span class="toctext">Week 7 (January 7-13): Causal Reasoning</span></a></li>
+<li class="toclevel-3"><a href="#Week_8_.28January_14-20.29:_Chance_and_Choice"><span class="tocnumber">1.3.3</span> <span class="toctext">Week 8 (January 14-20): Chance and Choice</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#PART_IV:_HOW_TO_MESS_UP_ARGUMENTS"><span class="tocnumber">1.4</span> <span class="toctext">PART IV: HOW TO MESS UP ARGUMENTS</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Week_9_.28January_21-27.29:_Fallacies_of_Unclarity"><span class="tocnumber">1.4.1</span> <span class="toctext">Week 9 (January 21-27): Fallacies of Unclarity</span></a></li>
+<li class="toclevel-3"><a href="#Week_10_.28January_28_.E2.80.93_February_3.29:_Fallacies_of_Relevance_and_of_Vacuity"><span class="tocnumber">1.4.2</span> <span class="toctext">Week 10 (January 28 – February 3): Fallacies of Relevance and of Vacuity</span></a></li>
+<li class="toclevel-3"><a href="#Week_11_.28February_4-10.29:_Refutation"><span class="tocnumber">1.4.3</span> <span class="toctext">Week 11 (February 4-10): Refutation</span></a></li>
+<li class="toclevel-3"><a href="#Week_12_.28February_11-17.29:_Applications"><span class="tocnumber">1.4.4</span> <span class="toctext">Week 12 (February 11-17): Applications</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Other_Resources"><span class="tocnumber">2</span> <span class="toctext">Other Resources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Other_Books_and_websites"><span class="tocnumber">2.1</span> <span class="toctext">Other Books and websites</span></a></li>
+<li class="toclevel-2"><a href="#Software"><span class="tocnumber">2.2</span> <span class="toctext">Software</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Course_Outline">Course Outline</span></h1>
+<h2> <span class="mw-headline" id="PART_I:_HOW_TO_ANALYZE_ARGUMENTS">PART I: HOW TO ANALYZE ARGUMENTS</span></h2>
+<h3> <span class="mw-headline" id="Week_1_.28November_26_.E2.80.93_December_2.29:_How_to_Spot_an_Argument">Week 1 (November 26 – December 2): How to Spot an Argument</span></h3>
+<p>This week’s lectures will define what an argument is, distinguish various purposes for which arguments are given (including persuasion, justification, and explanation), and discuss the material out of which arguments are made (language). The last three lectures are optional honors lectures.<br />
+READING: Understanding Arguments, Eighth Edition, Chapters 1-2<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_1" title="ThinkAgain:Lecture Notes 1"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes" title="ThinkAgain:Lecture Notes"> Reference Card</a><br />
+<a rel="nofollow" class="external text" href="http://www.mindmeister.com/232699205">Mind Map Notes</a><br />
+<a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1eL3s09yNcsw-RMRl99I09ySk1pAKfUOrIy-aWuOy3F8/edit">Google Docs Notes</a>  </p>
+<h3> <span class="mw-headline" id="Week_2_.28December_3-9.29:_How_to_Untangle_an_Argument">Week 2 (December 3-9): How to Untangle an Argument</span></h3>
+<p>This week’s lectures will focus on the special language in which arguments are formulated. We will investigate the functions of particular words, including premise and conclusion markers plus assuring, guarding, discounting, and evaluative terms. Identifying these words will enable students to separate arguments from the irrelevant verbiage that surrounds it and then to break the argument into parts and to identify what each part of an argument is doing. The lectures end with a detailed example that uses these tools to closely analyze an op-ed from a newspaper.<br />
+READING: Understanding Arguments, Eighth Edition, Chapters 3-4<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_2" title="ThinkAgain:Lecture Notes 2"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference2" title="ThinkAgain:Reference2"> Reference Card</a> (<a href="/wiki/index.php/ThinkAgain:Reference_Card_2_Close_Analysis_Exercise" title="ThinkAgain:Reference Card 2 Close Analysis Exercise"> Close Analysis Exercise</a>)  </p>
+<h3> <span class="mw-headline" id="Week_3_.28December_10-16.29:_How_to_Reconstruct_an_Argument">Week 3 (December 10-16): How to Reconstruct an Argument</span></h3>
+<p>This week’s lectures will teach students how to organize the parts of an argument in order to show how they fit into a structure of reasoning. We work through the main steps of reconstruction, including putting the premises and conclusion into a standard form, clarifying the premises and breaking them into parts, arranging the argument into stages or sub-arguments, adding suppressed premises where needed to make the argument valid, and assessing the argument for soundness. The lectures begin by defining the crucial notions of validity, soundness, and standard form. Students also learn to diagram alternative argument structures, including linear, branching, and joint structures.<br />
+READING: Understanding Arguments, Eighth Edition, Chapter 5<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_3" title="ThinkAgain:Lecture Notes 3"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_3" title="ThinkAgain:Reference Card Week 3"> Reference Card</a>  </p>
+<p><strong>QUIZ #1</strong>  </p>
+<h2> <span class="mw-headline" id="PART_II:_HOW_TO_EVALUATE_DEDUCTIVE_ARGUMENTS">PART II: HOW TO EVALUATE DEDUCTIVE ARGUMENTS</span></h2>
+<h3> <span class="mw-headline" id="Week_4_.28December_17-23.29:_Propositional_Logic_and_Truth_Tables">Week 4 (December 17-23): Propositional Logic and Truth Tables</span></h3>
+<p>This week’s lectures will present propositional logic, which formalizes external relations between whole propositions or sentences in deductive arguments. Topics include negation (“not”), conjunction (“and”), disjunction (“or”), and conditionals (“if…, then …”). Students will learn to test arguments for validity using truth tables.<br />
+READING: Understanding Arguments, Eighth Edition, Chapter 6<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_4" title="ThinkAgain:Lecture Notes 4"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_4" title="ThinkAgain:Reference Card Week 4"> Reference Card</a></p>
+<p><a rel="nofollow" class="external text" href="https://docs.google.com/document/d/1sJNDPWH5ap4dsKrJQ5i6Of5gMPkDWSUp3QuCdE57b_g/edit">Google Docs Notes</a></p>
+<p>from the course Introduction to Mathematical Thinking:<br />
+<a href="/wiki/index.php/MathThink:Truth_Tables" title="MathThink:Truth Tables"> Learn and Practice Truth Tables</a><br />
+<a href="/wiki/index.php/Intro_MathThink:Latex" title="Intro MathThink:Latex"> LaTex Reference</a><br />
+Online JavaScript: <a rel="nofollow" class="external text" href="http://davidwees.com/javascript/logic/">Symbolic logic calculator</a><br />
+Another Online JavaScript: <a rel="nofollow" class="external text" href="http://www.brian-borowski.com/Software/Truth/">Truth Table Constructor from Brian Borowski</a>   </p>
+<h3> <span class="mw-headline" id="Week_5_.28December_24-30.29:_Categorical_Logic_and_Syllogisms">Week 5 (December 24-30): Categorical Logic and Syllogisms</span></h3>
+<p>This week’s lectures will present categorical logic, which formalizes some deductive relations that depend on internal features of propositions or sentences in deductive arguments. Topics include the four basic categorical forms, contradictory and contrary propositions, existential commitment, immediate inferences, and syllogisms. Students will learn to test arguments for validity using Venn diagrams.<br />
+READING: Understanding Arguments, Eighth Edition, Chapter 7<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_5" title="ThinkAgain:Lecture Notes 5"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_5" title="ThinkAgain:Reference Card Week 5"> Reference Card</a></p>
+<p><strong>QUIZ #2</strong>  </p>
+<h2> <span class="mw-headline" id="PART_III:_HOW_TO_EVALUATE_INDUCTIVE_ARGUMENTS">PART III: HOW TO EVALUATE INDUCTIVE ARGUMENTS</span></h2>
+<h3> <span class="mw-headline" id="Week_6_.28December_31_.E2.80.93_January_6.29:_Inductive_Arguments">Week 6 (December 31 – January 6): Inductive Arguments</span></h3>
+<p>This week’s lectures will distinguish inductive arguments from deductive arguments and then discuss four common forms of inductive argument: generalizations from samples (such as in political polls), applications of generalizations to particular cases (such as in predicting weather on a certain day), inferences to the best explanation (such as in using evidence to determine who committed a crime), and arguments from analogy (such as in identifying the use of one archaeological artifact by comparing it to other artifacts). We will expose the most common mistakes in these kinds of reasoning.<br />
+READING: Understanding Arguments, Eighth Edition, Chapter 8 and 10<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_6" title="ThinkAgain:Lecture Notes 6"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_6" title="ThinkAgain:Reference Card Week 6"> Reference Card</a></p>
+<h3> <span class="mw-headline" id="Week_7_.28January_7-13.29:_Causal_Reasoning">Week 7 (January 7-13): Causal Reasoning</span></h3>
+<p>This week’s lectures will focus on how to decide what causes what. Students will learn how to distinguish necessary conditions from sufficient conditions and how to use data to determine what is and what is not a necessary condition or a sufficient condition. Then we will distinguish causation from correlation (or concomitant variation) and explain the fallacy of post hoc ergo propter hoc.<br />
+READING: Understanding Arguments, Eighth Edition, Chapter 9<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_7" title="ThinkAgain:Lecture Notes 7"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_7" title="ThinkAgain:Reference Card Week 7"> Reference Card</a></p>
+<h3> <span class="mw-headline" id="Week_8_.28January_14-20.29:_Chance_and_Choice">Week 8 (January 14-20): Chance and Choice</span></h3>
+<p>This week’s lectures will cover chance and choice. Students will learn about the nature and kinds of probability and four simple rules for calculating probabilities. An optional honors lecture will explain Bayes’ theorem. Next we will use probabilities to evaluate decisions by figuring their expected financial value and contrasting financial value with overall value. READING: Understanding Arguments, Eighth Edition, Chapters 11 and 12<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_8" title="ThinkAgain:Lecture Notes 8"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_8" title="ThinkAgain:Reference Card Week 8"> Reference Card</a>  </p>
+<p><strong>QUIZ #3</strong>  </p>
+<h2> <span class="mw-headline" id="PART_IV:_HOW_TO_MESS_UP_ARGUMENTS">PART IV: HOW TO MESS UP ARGUMENTS</span></h2>
+<h3> <span class="mw-headline" id="Week_9_.28January_21-27.29:_Fallacies_of_Unclarity">Week 9 (January 21-27): Fallacies of Unclarity</span></h3>
+<p>This week’s lectures will define fallacies as common but tempting mistakes in argument. Then we will explore two very common kinds of fallacies that depend on unclarity in language — specifically, slippery slope arguments that depend on vagueness and equivocations that exploit ambiguity. The lectures will close by distinguishing several kinds of definitions that can help to avoid or respond to fallacies of unclarity.  READING: Understanding Arguments, Eighth Edition, Chapters 13 and 14<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_9" title="ThinkAgain:Lecture Notes 9"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_9" title="ThinkAgain:Reference Card Week 9"> Reference Card</a>  </p>
+<h3> <span class="mw-headline" id="Week_10_.28January_28_.E2.80.93_February_3.29:_Fallacies_of_Relevance_and_of_Vacuity">Week 10 (January 28 – February 3): Fallacies of Relevance and of Vacuity</span></h3>
+<p>This week’s lectures will look at fallacies in which the premises are irrelevant to the conclusion, or in which the premises cannot be reasonably accepted before we have reasonably accepted the conclusion. The first group includes arguments ad hominem and fallacious appeals to authority, to emotion, and to ignorance. The second includes begging the question, but we will also discuss various ways in which people seal their positions to make them immune to any possible counterexample. This apparent virtue turns out to be a vice.<br />
+READING: Understanding Arguments, Eighth Edition, Chapters 15 and 16<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_10" title="ThinkAgain:Lecture Notes 10"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_10" title="ThinkAgain:Reference Card Week 10"> Reference Card</a>  </p>
+<h3> <span class="mw-headline" id="Week_11_.28February_4-10.29:_Refutation">Week 11 (February 4-10): Refutation</span></h3>
+<p>Not all objections to arguments succeed in refuting those arguments, so this week’s lectures begin by distinguishing objections from refutations. One way to refute an argument is to show that its premises are false, so we will discuss counterexamples and reductio ad absurdum arguments. Another way to refute an argument is to show that its premises do not support its conclusion, which can be accomplished by a method called refutation by parallel reasoning (or “That’s just like arguing …”). The method is a general way to spot fallacies. This closing week brings us back to a theme of the first week, because refutation is another purpose of argument in addition to persuasion, justification, and explanation.<br />
+READING: Understanding Arguments, Eighth Edition, Chapter 17<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_11" title="ThinkAgain:Lecture Notes 11"> Wiki Notes</a><br />
+<a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_11" title="ThinkAgain:Reference Card Week 11"> Reference Card</a>  </p>
+<h3> <span class="mw-headline" id="Week_12_.28February_11-17.29:_Applications">Week 12 (February 11-17): Applications</span></h3>
+<p>In this final week, we will consider examples of arguments from everyday life, and figure out whether those arguments are successful. In particular, we will consider arguments concerning issues of public policy, public health, and legal questions. We will conclude by considering some arguments that bear on the issue of whether humans have free will.<br />
+<a href="/wiki/index.php/ThinkAgain:Lecture_Notes_12" title="ThinkAgain:Lecture Notes 12"> Wiki Notes</a>  </p>
+<p><strong>QUIZ #4</strong></p>
+<hr />
+<h1> <span class="mw-headline" id="Other_Resources">Other Resources</span></h1>
+<ul>
+<li><a href="/wiki/index.php/ThinkAgain:Glossary" title="ThinkAgain:Glossary"> Glossary</a>  </li>
+</ul>
+<h2> <span class="mw-headline" id="Other_Books_and_websites">Other Books and websites</span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.triviumeducation.com/logic/">Trivium Education-Logic</a><br />
+<a rel="nofollow" class="external text" href="http://librivox.org/the-art-of-controversy-or-the-art-of-being-right-by-arthur-schopenhauer/"><em>The Art of Controversy (or The Art of Being Right)</em></a> <a rel="nofollow" class="external text" href="http://librivox.org/the-art-of-controversy-or-the-art-of-being-right-by-arthur-schopenhauer/">audio versions</a> by Arthur Schopenhauer<br />
+<a rel="nofollow" class="external text" href="http://www.munseys.com/book/16432/Making_of_Arguments,_The"><em>The Making of Arguments</em></a> by JH Gardner</p>
+<p><a rel="nofollow" class="external text" href="http://www.logicallyfallacious.com/"><em>Logically Fallacious</em></a> by Bo Bennett<br />
+Aristotle's classic <a rel="nofollow" class="external text" href="https://catalog.librivox.org/search.php?title=&amp;author=aristotle&amp;status=all&amp;action=Search"><em>Organon</em> on audiobook</a> / <a rel="nofollow" class="external text" href="http://ebooks.adelaide.edu.au/a/aristotle/">ebook</a><br />
+<dl><dd> Categories 
+</dd><dd> On Interpretation 
+</dd><dd> Prior Analytics<br />
+</dd><dd> Posterior Analytics<br />
+</dd><dd> Topics<br />
+</dd><dd> Sophistical<br />
+</dd><dd> Refutations(Sophistical Elenchi)  </p>
+</dd></dl>
+
+<p><a rel="nofollow" class="external text" href="http://logic.philosophy.ox.ac.uk/main.htm">Introduction to Logic</a> An online tutorial with exercises from the University of Oxford<br />
+<a rel="nofollow" class="external text" href="http://philosophy.hku.hk/think/">Critical Thinking Web</a><br />
+<a rel="nofollow" class="external text" href="http://tellerprimer.ucdavis.edu/pdf/"><em>A Modern Formal Logic Primer</em></a> by Paul Teller<br />
+<a rel="nofollow" class="external text" href="http://www.csus.edu/indiv/d/dowdenb/4/Logical%20Reasoning.pdf"><em>Logical Reasoning</em></a> by Bradley H. Dowden (California State University Sacramento)<br />
+<a rel="nofollow" class="external text" href="http://www.sfu.ca/~swartz/pw/index.htm"><em>Possible Worlds: an introduction to logic and its philosophy</em></a> by Raymond Bradley and Norman Swartz  </p>
+<p>From the Philosophy Forum:<br />
+<a rel="nofollow" class="external text" href="http://forums.philosophyforums.com/threads/very-basic-terms-of-logic-6816.html">Very Basic Terms of Logic</a><br />
+<a rel="nofollow" class="external text" href="http://forums.philosophyforums.com/threads/recommended-reading-20167.html">Recommended Reading list for logic and mathematics</a><br />
+<a rel="nofollow" class="external text" href="http://forums.philosophyforums.com/threads/open-source-philosophy-39067.html">Open Source Philosophy</a> An extensive list of philosophy resources</p>
+<h2> <span class="mw-headline" id="Software">Software</span></h2>
+<p><a rel="nofollow" class="external text" href="http://araucaria.computing.dundee.ac.uk/doku.php">Araucaria</a>
+Araucaria is a software tool for analysing arguments. It aids a user in reconstructing and diagramming an argument using a simple point-and-click interface. The software also supports argumentation schemes, and provides a user-customisable set of schemes with which to analyse arguments.</p>
+<p><a href="/wiki/index.php/ThinkAgain-002:Main" title="ThinkAgain-002:Main"> .</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 56/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Thinkagain:Main&amp;oldid=32554">https://share.coursera.org/wiki/index.php?title=Thinkagain:Main&amp;oldid=32554</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

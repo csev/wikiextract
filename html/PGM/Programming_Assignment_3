@@ -1,0 +1,54 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Programming Assignment 3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Using_the_data_supplied_in_.mat_files"><span class="tocnumber">1</span> <span class="toctext">Using the data supplied in .mat files</span></a></li>
+<li class="toclevel-1"><a href="#Using_BuildOCRNetwork_or_ScoreModel"><span class="tocnumber">2</span> <span class="toctext">Using BuildOCRNetwork or ScoreModel</span></a></li>
+<li class="toclevel-1"><a href="#Helper_functions"><span class="tocnumber">3</span> <span class="toctext">Helper functions</span></a></li>
+<li class="toclevel-1"><a href="#RunInference.m_in_32_bit_x86_linux_system"><span class="tocnumber">4</span> <span class="toctext">RunInference.m in 32 bit x86 linux system</span></a></li>
+</ul>
+</td></tr></table>
+<h4> <span class="mw-headline" id="Using_the_data_supplied_in_.mat_files">Using the data supplied in .mat files</span></h4>
+<p>A command such as</p>
+<code><pre>load PA3SampleCases
+</pre></code>
+<p>will load the variables from PA3SampleCases into your workspace. To determine what variables have been or will be loaded, use:</p>
+<code><pre>whos -file PA3SampleCases.mat
+</pre></code>
+<h4> <span class="mw-headline" id="Using_BuildOCRNetwork_or_ScoreModel">Using BuildOCRNetwork or ScoreModel</span></h4>
+<p>Note that if you are not using similarity factors you need to set IgnoreSimilarity to true before running the commands:</p>
+<code><pre>imageModel.ignoreSimilarity = true;
+</pre></code>
+<p>If you do not, an error indicating that the partition function evaluated to 0. This is because the default similarity factors have value 0.</p>
+<h4> <span class="mw-headline" id="Helper_functions">Helper functions</span></h4>
+<p>Functions supplied by students which provide useful utilities tangential to the aims of the programming assignment (i.e. these functions do not provide help in achieving the ultimate aims of the programming assignments)</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://github.com/JackKelly/PGM/blob/master/PA3/displayWord.m">displayWord.m</a>: Displays the bitmaps from the PA3Data.mat file, along with the groundTruth character as a title (based on <a rel="nofollow" class="external text" href="https://class.coursera.org/pgm/forum/thread?thread_id=967">this forum thread</a>).  <a rel="nofollow" class="external text" href="https://github.com/JackKelly/PGM/raw/master/PA3/example.png">Here's an example output</a>.</li>
+</ul>
+<h4> <span class="mw-headline" id="RunInference.m_in_32_bit_x86_linux_system">RunInference.m in 32 bit x86 linux system</span></h4>
+<p>The doinference linux binary provided in the assignment files is built for 64 bits. This obviously won't work in 32 bit systems.<br />
+The following unofficial binary has been statically built for 32 bits, so it should work in any x86 linux system.<br />
+The link will be alive until till January 15 2013.  </p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wikisend.com/download/965290/doinference-linux.gz">doinference-linux.gz</a> 32bit binary. Uncompress with gunzip in the inference directory.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 31/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Programming_Assignment_3&amp;oldid=3874">https://share.coursera.org/wiki/index.php?title=PGM:Programming_Assignment_3&amp;oldid=3874</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

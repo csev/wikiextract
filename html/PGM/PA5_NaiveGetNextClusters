@@ -1,0 +1,84 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:PA5 NaiveGetNextClusters</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Please feel free to improve these comments.  </p>
+<pre>
+% NAIVEGETNEXTCLUSTERS 
+% function [i, j] = NaiveGetNextClusters (P, m)
+%   Takes in a node adjacency matrix and returns the indices
+%   of the nodes between which the m+1th message should be passed.
+%
+%   Output [i j]
+%     i = the origin of the m+1th message
+%     j = the destination of the m+1th message
+%
+%   This method should iterate over the messages in increasing order where
+%   messages are sorted in ascending ordered by their destination index and 
+%   ties are broken based on the origin index. (note: this differs from PA4's
+%   ordering)
+%
+%   Thus, if m is 0, [i j] will be the pair of clusters with the lowest j value
+%   and (of those pairs over this j) lowest i value as this is the 'first'
+%   element in our ordering. (this difference is because matlab is 1-indexed)
+%
+% Copyright (C) Daphne Koller, Stanford University, 2012
+% (The copyright applies to all comments above this line, comments below this line
+%  are public domain.)
+%
+%   Inputs:   
+%      P - P is a structure representing the cluster graph
+%          P.clusterList  is a list of factors describing each cluster
+%          P.edges   is the Adjacency Matrix for the graph  
+%                (see http://en.wikipedia.org/wiki/Adjacency_matrix)
+%      m - m is a non-negative integer. (see above)
+%
+%   NOTE: If m is larger than the number of edges, then we cycle the edge ordering.
+%
+%      iNumEdges =  sum (P.edges(:));
+%      if m &gt; iNumEdges
+%          m = mod (m, iNumEdges)
+%      end
+%
+%   TEST CODE:
+%
+%
+% cMVals = exampleINPUT.t1a2;
+% cOut   = exampleOUTPUT.t1;
+%    
+% for i=1:length (cMVals)
+%    [iOr, iDe] = NaiveGetNextClusters (exampleINPUT.t1a1, cMVals {i});
+%    
+%    if iOr ~= cOut{i}(1)
+%        error (['NaiveGetNextClusters failed on example ' num2str (i)])
+%    end
+%    
+%    if iDe ~= cOut{i}(2)
+%        error (['NaiveGetNextClusters failed on example ' num2str (i)])
+%    end
+% end
+%
+%' Good Job'
+%
+% END TEST CODE:
+%
+%
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:PA5_NaiveGetNextClusters&amp;oldid=550">https://share.coursera.org/wiki/index.php?title=PGM:PA5_NaiveGetNextClusters&amp;oldid=550</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

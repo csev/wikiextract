@@ -1,0 +1,25 @@
+The latest edition of Introduction to Computational Finance and Financial Econometrics started on 3 June 2013. This wiki will be used during the course.
+
+<center>
+[[File:ICF-460x270.png | alt="Introduction to Computational Finance and Financial Econometrics" 460x270px]]
+</center>
+
+* [[Compfinance:Asset Return Calculations (Equations)|Asset Return Calculations (Equations)]]
+* Here is a page for [[Compfinance:Windows Users|Windows Users]].
+* <a href="http://www.rstudio.com/">Resources for R programming</a>
+* <a href="http://wiki.stdout.org/rcookbook/">Cookbook for R (wiki)</a>
+* You can link to new wiki page here.
+* Here is a page for [[Compfinance:yahoo-data download instructions for assignment 1|yahoo-data]].
+* Prof. Zivot's <a href="http://faculty.washington.edu/ezivot/econ424/424notes.htm">ECON 424</a> notes page.
+* <a href="http://cran.r-project.org/web/packages/IPSUR/vignettes/IPSUR.pdf">Introduction to Probability and Statistics Using R</a>
+* <a href="http://quantivity.wordpress.com/2011/02/21/why-log-returns">Why Log Returns?</a> by <a href="https://twitter.com/quantivity">@Quantivity</a>
+* The manual <a href="http://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf">“Econometrics in R”</a> by Grant V. Farnsworth. 
+* <a href="http://msenux.redwoods.edu/math/R/">Using R in Statistics</a> (For Dummy but very helpful) by the College of the Redwoods.
+* <a href="http://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/src/timeseries.html">A Little Book Of R for time series</a> by <a href="http://uk.linkedin.com/pub/avril-coghlan/5/954/440"> Dr. Avril Coghlan</a>
+* <a href="http://little-book-of-r-for-multivariate-analysis.readthedocs.org/en/latest/src/multivariateanalysis.html">Using R for Multivariate Analysis</a> by <a href="http://uk.linkedin.com/pub/avril-coghlan/5/954/440"> Dr. Avril Coghlan</a>
+
+* [[Compfinance:Subtitles]]
+* [[For someone who want to use R to find max. Sharpe slope with no short sales constraints and others]]
+
+---
+Feel free to edit the content here and to create extra pages as needed. To see how to edit/create a page, see "Help" on the left navbar. It is suggested that pages related to the Introduction to Computational Finance and Financial Econometrics course should have a page title Compfinance:Title_Text with Compfinance capitalized exactly as shown. Spaces in a Wiki page title are converted into underbars in a URL.

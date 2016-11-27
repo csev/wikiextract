@@ -1,0 +1,402 @@
+<!-- START: ID Link References -->
+
+[Achondroplasia]: http://en.wikipedia.org/wiki/Achondroplasia/
+[Alzheimers_Disease]: http://en.wikipedia.org/wiki/Alzheimers/
+[Amyloid_Precursor_Protein]: http://en.wikipedia.org/wiki/APP_(gene)/
+[Autosome]: http://en.wikipedia.org/wiki/Autosomes/
+[Beta-Globin]: http://en.wikipedia.org/wiki/Beta-globin/
+[Beta-Thalassemia]: http://en.wikipedia.org/wiki/Beta_thalassemia/
+[Directional_Selection]: http://en.wikipedia.org/wiki/Directional_selection/
+[Epistasis]: http://en.wikipedia.org/wiki/Epistasis/
+[ExomeSeqIDCauseOfDisorder]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2847889/
+[Hardy-Weinberg_Law]: http://en.wikipedia.org/wiki/Hardy-Weinberg_Law/
+[Hemophilia]: http://en.wikipedia.org/wiki/Hemophilia/
+[Huntingtons_Disease]: http://en.wikipedia.org/wiki/Huntingtons_disease/
+[LOD_Score]: http://en.wikipedia.org/wiki/Lod_score#LOD_score_method_for_estimating_recombination_frequency/
+[Mendel]: http://en.wikipedia.org/wiki/Gregor_Mendel/
+[Missense]: http://en.wikipedia.org/wiki/Missense_mutation/
+[Neomorph]: http://en.wikipedia.org/wiki/Neomorph/
+[Neutral_Theory_Molecular_Evolution]: http://en.wikipedia.org/wiki/Neutral_theory_of_molecular_evolution/
+[Punnett_Square]: http://en.wikipedia.org/wiki/Punnett_Square/
+[Purifying_Selection]: http://en.wikipedia.org/wiki/Purifying_selection/
+[Rb_Gene]: http://en.wikipedia.org/wiki/Rb_gene/
+[Red_Green_Color_Blindness]: http://en.wikipedia.org/wiki/Red-green_color_blindness#Red.E2.80.93green_color_blindness/
+[Retinoblastoma]: http://en.wikipedia.org/wiki/Rb_gene/
+[Sickle-Cell_Anemia]: http://en.wikipedia.org/wiki/Sickle_cell_anemia/
+[Stop_Codon]: http://en.wikipedia.org/wiki/Stop_codon/
+[Synteny]: http://en.wikipedia.org/wiki/Synteny/
+[Vertical_Transmission]: http://en.wikipedia.org/wiki/Vertical_transmission/
+<!-- STOP: ID Link References -->
+
+### Genomic Inheritance
+
+####  Introduction
+Hi, welcome back to GCB 531, I am John Murray assistant professor of genetics here at Penn. Today’s lecture is going to be about genomic inheritance or, to use the old fashioned name, genetics.
+
+This is going to be the first in a series of three lectures on genetics and how it applies to our thinking about genomic data sets and the next generation sequencing as we move into the next two lectures.
+
+Today we are going to talk about basic genetic principles. Then in the next two lectures we are going to talk about experimental genomics and genetics and clinical genetics.
+
+[Slide 01][0:00:00]
+
+Here is an outline of what we will talk about today. First you might wonder why we need to even think about sort of traditional genetics in the genomic era, so I will give a brief summary of why I think genetic principles are critical to understanding how genome functions in disease and in other aspects of biology.
+
+We will go through some basic mendelian mechanisms and how genes are inherited across generations. This is not going to be a full course in genetics since we are assuming that you have a certain amount of background in genetics. 
+If this seems really fast, it might be worth going back and looking at some of these slides. Again, there is no shame in that, especially if you don’t have a really strong genetics background coming in.
+
+Then we will move on to some non-medelian inheritance, that is more complex patterns of inheritance. Finally we will synthesize this by looking at how these different forces act to shape the structure of the genome in populations.
+
+#### Importance of Genetics in the Genome Era
+[Slide 02][0:02:00]
+We can start with a definition of what is genetics. This is a quote I got from Wikionary.com, a favorite open source dictionary. It is “The branch of biology that deals with the transmission and variation of inherited characteristics, in particular chromosomes and DNA.”
+
+Okay, so that is a reasonably good definition. The key aspects there are inherited characteristics. The term we use for those is phenotype. That would be something like eye color, hair color, whether you have cystic fibrosis or not, etcetera, etcetera.
+
+Then there is the genotype and that is the actual underlying DNA sequences that control your phenotype. In total your phenotype is sum of all the different characters that you have that are controlled by your genetics.
+
+The term gene is a little bit tricky to define. It has evolved as we have learned more about the molecular structure of protein coding genes in the genome. In this lecture we are thinking about genes really as individually separable DNA sequences that encode for particular phenotypes. That is a little distinct from the traditional molecular biology definition of a gene which is meant to represent a particular mRNA that encodes for a pre-amplified (?) protein or perhaps a non-encoding RNA.
+
+There are definitely cases where a single transcribed sequence that gives rise to different phenotypes that are genetically separable and distinct, depending on which parts of the protein, for example, are mutated. And there are also examples of the reverse.
+
+[Slide 03][0:03:45]
+
+One of the really critical, as an experimental biologist and as a systems biologist, reasons to continue thinking about genetics is that genetic principles really tell us about the causality of biological phenomenon.
+
+So you can do all sorts of high-throughput experiments to look at, for example, which proteins interact with each other, you can find all the genes that expressed in one tissue and another tissue, and you can find genes that are co-expressed in those but it does not really tell you what those genes are actually doing working together in the same process.
+
+The gold standard is to figure out that a gene is really important for a particular process is its mutant phenotypes. What is the phenotype of the organism when that gene is altered in some way? And if you have a number of genes that have similar mutant phenotypes then that is a really powerful predictor that those are actually working together in some common process. When you combine it with these other types of large-scale data it really ties things together.
+
+[Slide 04][0:04:49]
+
+I am an experimental genomicist and I think that is going to be a really tiny fraction of where genetics touches on  people’s lives in society. One of the big things that has occurred over the last ten years or so is the advent of personal genomics, and in particular, direct to consumer genomics. 
+
+So companies like 23andMe for example which you can pay them a few hundred dollars and they will give you back a really high-resolution map of what your particular genotype is, what different variants you have for different places across your genome and tie that into your ancestry, your risk of different diseases, and so on. To really understand these kinds of information you really need to understand the genetics.
+
+I should mention this is more and more being used in the clinic as well, so it is not just in these personal direct-to-consumer kind of approaches.
+
+[Slide 05][0:05:58]
+
+A third case where genetics is really critical is in cancer. We will talk about this a little bit in the clinical genomics lecture. The key thing to remember is that cancer is really a genetic disease acting at the level of single cells. If you have a single cell, if it has a particular mutation, for example, that inactivates a particular tumor suppressor gene, and that then causes the cells to proliferate, and you get an initial clump of hyper-proliferous cells, and then you will have additional mutations. So the same processes of mutation and selection that we will talk about later in this lecture apply on those cells individually and cause them to over-grow and eventually become cancer in some cases.
+
+[Slide 06][0:06:49]
+
+#### Medelian Inheritance
+
+[Mendel][Mendel] was famous for originally coming up some of these ideas and really developed the first description of genetics looking at peas.  He famously crossed yellow peas with green peas and you can denote the relationship between genotype and phenotype using these capital and lower case letters.
+
+If you are a diploid, which we all humans are and most model organisms are, you have two copies of pretty much every gene. And if you have two different alleles (so these letters are called alleles), you might have two of the same allele, in this case little ‘y’, little ‘y’. That means the peas will be green.
+
+Or you might have two different ones alleles, maybe this big ‘Y’ and a little ‘y’, that is two different alleles, and depending on which of those alleles is dominant you will be either yellow or green.
+
+In this case the yellow allele is dominant and this means that if you have one copy of that then it does not matter if the second one is yellow, is big ‘Y’ or little ‘y’, you are going to be yellow peas.
+
+The simplest way to follow these is through one of these [punnett squares][Punnett_Square]. If you have a cross between, for example, this little ‘y’, little ‘y’ and this big ‘Y’, little ‘y’ pea, then each of the progenies is going to get one allele from each parent. In most cases this is going to be a random choice between each parent, so you will get either a little ‘y’ or a big ‘Y’ from this parent and you will always get a little ‘y’ from this parent.
+
+You can just look at the ratios of the progenies, so you will have one-fourth in each of these boxes. The results of that, in this particular cross, you get half yellow peas and half green peas out.
+
+So by following the pattern of inheritance you can really get  a sense of which genes are involved, or how many genes are involved in this particular character.
+
+The key thing to remember is that these are not abstract things – big ‘Y’ and little ‘y’ are actually individual DNA sequences on a chromosome. In this case, the big ‘Y’, little ‘y’ heterozygote you have one chromosome that has a big ‘Y’, which is some sequence and the other chromosome has little ‘y’, which some different sequence.
+
+##### Chromosomes, DNA Sequences and Alleles
+
+[Slide 06][0:09:36]
+
+A little bit more about chromosomes and how DNA sequences are related to alleles. As a reminder, in the case of humans, we have a total of 46 chromosomes – two copies of all the [autosomes][Automsome], that is chromosome one through twenty-two; and then if you are a male, you have an X and a Y chromosome; and if you are a female, you have two X chromosomes.
+
+To reiterate, each individual nucleotide along these chromosomes could be a potential genetic allele if it causes some phenotype. You can think about transmission of this big ‘A’ and little ‘a’ allele, for example, which are on chromosome 11 – now again, if you have two heterozygote for big ‘A’ and little ‘a’, their progeny are going to get randomly either a big ‘A’ or a little ‘a’ chromosome from each parent and you end up again with one-fourth getting two big ‘A’s, one-fourth getting two little ‘a’s, and one-half getting one copy of each type.
+
+These alleles could be any variety of different types of sequence changes. For example, I am showing a small region of a chromosome around the hemoglobin gene, which happens to be on chromosome 11, this is the [beta-globin][Beta-Globin] gene, and mutations around in beta-globin cause a number of diseases – for example,[sickle-cell anemia][Sickle-Cell_Anemia], [beta-thalassemia][Beta-Thalassemia], to name two.
+
+This is just showing that this is the actual gene structure of beta-globin and that there are a number of individual sequence changes that are common in the population, so that all of those could be alleles, in addition to these disease mutations.
+
+[Slide 07][0:11:33]
+
+One key aspect of inheritance is that if two genes are on the same chromosome you are not going to get random assortment of those two genes, instead they will tend to go we each other. So, if you have now this A+ and B- allele on one chromosome and A-, B+ allele on the other chromosome, you would expect by chance that you would get A+ and B- going together or A- and B+ going together, so we have co-segregation of those [syntenic][Synteny]alleles. However,  there is recombination so you do in fact get assortment of genes even if they are on the same chromosome. We can take advantage of the frequency of that recombination to map genes to particular spots on the chromosome.
+
+[Slide 08][0:12:30]
+
+Here is a question on section one.  You are studying a newly identified species of Martian. One important thing about genetics is that it can be any species with Medelian genetics, the same principles apply. These Martians have either red or purple eyes controlled by a big P gene.
+
+So if you have big P that is dominant and you have purple eyes. If you have little p and you have two of those alleles then you have red eyes. 
+
+Which of the following crosses will produce 75% purple eyes?
+
+[Slide 09][0:13:09]
+
+The answer is that this cross between the two heterozygotes is going to give you 75 percent purple because big P, which is purple, is dominant. From this cross, if you get either two copies of the big P gene or one copy of the big P gene, you are going to be purple. In the punnett square that covers three-fourths of the possible outcomes.
+
+[Slide 10: Types of sequence changes][0:13:39]
+
+To summarize before we start talking about how different sequence changes give rise to phenotypes.  In one of the earlier lectures we talked about copy number variations and structural re-arrangements. You can get deletions, in this case it is a fairly large deletion, part of a chromosome; you can get duplications; you can also get inversions; you can get translocations. Even there are a fairly small numbers of these in any given person’s genome because they are relatively large they cover a fairly large amount of genomic sequence.
+
+##### Types of Sequence Changes
+
+What types of sequence changes do we see in the genome? 
+
+The bulk of the individual mutations are going to be single-nucleotide polymorphisms.  For example, in this case this T becomes a G for a single-base change. Or you have small insertion or deletions. For example, in this case the two bases that are deleted in this particular sequence.
+
+[Slide 11: Sequence differences mutations vs. variants][0:14:58]
+
+I have been trying to be careful to use the term variant as opposed to mutation. So what is the difference between a mutation and a variant or polymorphism?
+
+The definition of a mutation is a deviation from the normal DNA sequence for a given species. But all species carry lots of sequence polymorphisms and these are at all different rates in the population – they can be very common, they can be very old, they can even cause phenotypes – so really what you call a mutant depends on the definition of normal.
+
+I think most people would agree that gene sequence changes that give rise to severe diseases – for  example, cystic fibrosis or sickle-cell anemia – those would be mutations, but is red hair a mutation? And there are all these examples of traits that are strongly genetic and they are clearly not bad things to have in population from our perspective. There are other cases where it is vague, there is some idea that maybe different types of intelligence may predispose to different kinds of psychiatric conditions, for example, and if you get rid of all the risk of those conditions you also get rid of particular beneficial classes of intelligence in the population.
+
+An alternative definition is to use allele frequency. Here the idea is to forget whether the mutation is good or bad. If it is common, more than 1% we will call it a polymorphism and if it is less than 1% we will call it a mutation even if it is neutral. Even though it is also imperfect, it is at least a fairly quantitative and reproducible definition.
+
+[Slide 12: Gene Mutations and Protein Function][0:17:07]
+
+There are lots of different ways that mutations can alter protein function. Most genes correspond to protein encoding parts of the genome; they are transcribed and translated into protein.  You could have single-nucleotide polymorphisms that cause changes in the protein sequence – for example in this instance where you have just one amino acid substituted for another or non-sense, where you actually truncate the protein by having a [stop codon][Stop_Codon] where you should have had an amino acid. You have a small insertion or deletion or you have a splice site mutation where you insert a number of bases that are not a multiple of three and that will cause a frame shift so all the proteins sequence downstream of that will be disrupted.
+
+Then there is a whole class of mutations that do not explicitly act on the coding sequence but can still have severe effects. For example, regulatory mutations, if you alter or get rid of enhancer or promoter sequence that is important you might not express the gene in the right places anymore. A splice site mutation could be… for example, take a gene that is supposed to be spliced one way and cause it to be spliced differently or you could alter the ratio of alternative splicing, you could have a mutation that causes the RNA to become unstable or too stable. And then you could have some of the larger re-arrangements, you can actually have deletions of whole genes, an inversion or a translocation, you can actually create novel genes where you have part of one gene fused to another part of another gene and that can cause detrimental effects.
+
+##### Mutants
+
+These different types of function are grossly grouped into two categories—loss function and gain of function.  If you get rid of a protein, that would be a loss of function. Usually those are inherited recessively. But there are cases where that is not true. 
+
+###### Loss of Function Mutants
+
+One of the most famous is the [Rb gene][Rb_Gene] which predisposes to [retinoblastoma][Retinoblastoma] which is a kind of eye cancer. If you get just one bad copy of that that is enough to guarantee you are going to get that cancer because it turns out that you are guaranteed to lose the other copy by some kind of mutation mechanism in some of the cells in the eye, eventually.
+
+You can also have a gene where you really need to have both copies, where one copy is not enough to maintain normal phenotype and that will also cause dominant inheritance, even when you have a loss function mutation.
+
+###### Gain of Function Mutants
+
+There are all sorts of different kinds of gain a function mutates. You can have just the normal function is amplified in the particular protein or you could have the opposite where you make a mutant protein that actually interferes with a normal protein, maybe have a protein that dimirizes so when you have a bad copy, that grabs onto, binds to the normal copy and both of them lose their function.
+
+You can have these [neo-morphs][Neomorph] and one example of that are these fusions where you have completely new genes with parts of one gene fused to another gene. But you can also have similar kinds of things where you have mutation in a particular gene that causes it to do something that it would not normally do. Those are typically, but not always inherited in a dominate fashion.
+
+[Slide 13: Lesson learned from Mendelian diseases][0:20:45]
+
+
+We have learned a lot over the years from studying Mendelian diseases and the lessons are parallel to those from experimental genetics in model organisms where you have done genetic screens and have identified the mutations that are responsible for the phenotypes. The take home message from those is that by-in-large the mutations were not in genes that we would have been able to guess if we had not done the hard work of figuring out what was involved. You cannot just say this person has a particular disease, perhaps it is this gene. That just does not work most of the time.
+
+Most of the severe high-effect mutations, which is what you see in single-gene Mendelian diseases effect the proteins, roughly half are [missense][Missense]  and a lot of the remaining are either nonsense, splice site, or severely affect the stability of the structure of the RNA. It turns out that in this category of mutations it is rare to see regulatory mutations, but that may not be true for (???).
+
+[Slide 14: Some Mendelian Traits][0:22:18]
+
+I want to prep some examples of Mendelian traits and how they are inherited. Some of the classic examples of recessive traits are cystic fibrosis, these are mutations in the cystic fibrosis transmembrane receptor, which in humans the major phenotype is in the lungs; phenylketonuria which is the inability to properly metabolize phenylalanine, these people have to go on a severely restricted diet; sickle cell anemia; albinism. These are all fairly severe diseases and the sort of characteristic of recessive traits is that in at risk matings – here is two people who are having a number of children and because they are both carriers one quarter of their progeny are expected to be affected on average. So you do not tend to get [vertical transmission][Vertical_Transmission].
+Whereas in contrast with dominant traits, the classic examples are [Huntington’s disease][Huntingtons_Disease];  [Achondroplasia][Achondroplasia], which is dwarfism; and [Marfan syndrome][Marfan_Syndrome], which is a frabrillan mutation. These have a characteristic set of phenotypes. In this case it is the big A allele that is causing the disease since it is dominant and so you see that disease vertically transmitted within families, so it is passed on from parent to child and you see this vertical transmission.
+
+There is a third class. We talked briefly about the sex chromosomes, remember males only have one X chromosome and a Y chromosome and so that the genes on the X chromosome have a particular mode of inheritance where they are much more common in males. Things like [hemophilia][ Hemophilia] A and [red-green color blindness][Red_Green_Color_Blindness] have that kind of characteristic.
+
+##### Mutations Can Be Beneficial
+
+[Slide 15: Mutations can be beneficial or both beneficial and harmful][0:24:16]
+
+Mutations are not necessarily a bad thing; otherwise we would not be nearly as interesting as we are today. Some of the classic examples of fairly recent mutations in the human population but that are arguably beneficial are lactase persistence. There are a number of populations around the world which rely on diary for a significant fraction of their calories so they domesticated animals to produce milk. Normally humans lose their capacity to digest lactose, the sugar in milk, fairly early in development but a number of populations have mutations that cause persistent expression of lactase later on in life and allow them to continue to digest diary.
+
+Similarly there are mutations in some populations that cause resistance to HIV infection. There was a recent paper a few weeks ago looking at mutations in a gene called the [APP][Amyloid _Precursor_Protein]. Those mutations make it so you are much less likely to get [Alzheimer’s disease][Alzheimers_Disease] which I think everyone would agree is a good thing. This is not to say that these mutations are not likely to have other affects besides these. So it really depends on what you are looking at. In the case of APP mutation whatever defects may result from that maybe less severe than the obvious benefit of having reduced risk of Alzheimer’s disease in modern society.
+
+Just briefly to mention some recessive disease alleles are much more common than you would expect them to be based on severe they are—for example, sickle-cell anemia disease and cystic fibrosis.  There is a category which the thinking is there is something called heterozygote advantage so, like in sickle cell for example, heterozygotes do not have sickle-cell disease but they are resistant to infection by malaria. Similarly there is thinking that cystic fibrosis heterozygotes might be resistant to cholera. And those benefits may actually explain why these diseases are so common in populations.
+
+##### Linkage Markers
+
+[Slide 16: Linkage to a Marker Localizes Genes to Chromosomes][0:26:35]
+
+So if we have a particular trait with think is genetic, and we will talk more in the next lecture about how we actually know a trait is genetic, but say we want to know where it is in the genome, the classic way to do that is with linkage.
+
+Remember genes are on chromosomes. So you can imagine a particular disease gene on chromosome 10 and there maybe also a single-nucleotide polymorphism on chromosome 10 near-by where some people have an A allele and some people have C allele at the same position.  Depending on which individual you are you might have one or the other, it does not necessarily cause any phenotype but you have A or C and it is a useful marker for that location in the genome.
+
+So here we have a recessive trait. A person who is homozygous for the recessive trait we call dd and this other person is a carrier so they are Dd. The question is which of the progeny are affected. You can see these people have four affected progeny and four unaffected progeny, which is what you would expect by chance for this particular cross. If you look carefully, all the people affected also got this C allele from them and all the people not affected got the A allele. So that suggests that maybe there is some relationship because these things may be co-segregating.  We can do statistics on this to ask whether this is happening more often than you would expect by chance. 
+
+[Slide 17: LOD score analysis measures significance of linkage][0:28:21]
+
+The way this is done classically is with something called [LOD score][LOD_Score]. The point is not necessarily to be able to calculate this, but the concept is an important one. The way you figure out basically the significance of your linkage is to count the number of recombinants to non-recombinants.
+
+ In the example we just looked at we had all of these people, eight non-recombinants and zero recombinants because everybody got the C SNP with the d allele, for the disease allele, and the A SNP with the D allele. And that is how all these people inherited that. So you have eight non-recombinants and zero recombinants so we can just compare how surprising would that be if these were tightly linked.  So that is this top term. So that is just the probability of observing the pedigree that we had if they are linked with a particular distance. And we can try different distances. 
+
+So we can say, try 0.01, 0.05, 0.1, and try different possible distances and then we compare that probability with the probability of getting the observed pedigree if they were not linked. So this is going to be one-half to the number of informative individuals.
+
+The log of that ratio is the LOD score and it is a fairly intuitive number. So if you have a LOD score of 3 it means that the pedigree observed is 1000 times more likely if the gene is linked to the marker at a particular distance that if it is not linked.
+
+If you can find the distance that gives the highest LOD score then that is the most likely distance between your marker and the disease allele. 
+
+This should be 3.6 so that if you have a LOD score above that level for a traditional linkage study that tells you that this is significant at the genome wide level after you take in to account multiple testing.
+
+We are not going to talk about it too much but the phase is important. So in the case we showed before we actually did not know before you looked at the individuals whether the C allele was with the disease or with the normal and if you know that you get a little bit of a statistical boost.
+
+This basic statistical framework is the same as what is used for a much more sophisticated modern association type studies but with slightly different links. So that is why I thought it was important to mention it now.
+
+[Slide 18: Question 2][0:31:32]
+
+
+Here is the second question. You sequence the genome of an individual with a dominant inherited disease and identify a heterozygous missense mutation in a protein kinase gene. You test for this mutation in other members of the family and find that all 23 of the affected family members and none of the 19 unaffected at-risk family members carry this mutation. Which of these is true?
+a)	The disease caused by the protein kinase mutation
+b)	The mutation is significantly linked to the disease
+c)	The disease is caused by a different gene near the protein kinase with the mutation
+d)	Half of the normal kinase protein dose is not sufficient for normal physiology
+
+The best answer here is the mutation is significantly linked to the disease. This is very significant. We have 42 non-recombinants and 0 recombinants leading to a huge LON score that is more than 12. However, we have not proven that the mutation we identified is actually causing the disease, it could also be that there is another change near our mutation that is linked to it that is the cause of the disease.
+
+Since you have some whole genome sequence data you may be able to find other candidates there or rule out other candidates. To nail this down, the point I wanted to make here with this question is that linkage does not necessarily give you the exact gene. You have to some other experiments or logic to figure out which gene is actually important.  A lot of time what people will do is find in the mutant cells from the mutant individual and add the gene that they think is important back. Or you can make a model in a model organism – you could add your mutation into a mouse and see if the mouse has similar phenotypes. And so forth.
+
+[Slide 19: Genomic Inheritance Outline][0:33:26]
+
+#### Non-Mendelian Inheritance
+
+The third section is non-Mendelian inheritance. Mendelian inheritance is all well and good but it is not the rule when you look at human variation that we see in our day-to-day lives.  
+
+[Slide 20: Most inherited human traits deviate from simple Mendelian inheritance][33:30]
+
+This is a classic plot from earlier work from Francis Galton, well over 100 years ago, comparing the height of an individual with the height of their parents. So you can just average the height of the parents and it is true that if you have tall parents then you tend to have tall children and if you have short parents you tend to have short children. But there are two big difference here from a Mendelian trait – one, you can have all different heights; and two, you do not get the simple Mendelian ratios where you have tall children always taller or short being dominant in the strict sense.  If it were Mendelian you would expect the median parents should have plenty of really tall and plenty of really short children, but instead you get this bell-shaped curve around the mean.
+
+There are lots of different ways the traits can deviate from Mendelian inheritance.  One is that they may not even be fully genetic. There can actually be stochastic or environmental aspects of a trait that interact with the genetic component. We are not going to talk a lot about things like epigenetics, which is in some cases is an environmental  stimulus that causes it but that is non-DNA sequence based inherited changes. And there are examples of that. We are not going to talk about X-linked any more than we already have. And mitochondrial inheritance is another important special non-Mendelian  inheritance case, where you have inheritance from mother’s to all of their children, because that is how the mitochondria are passed down through the fertilized egg and not through the sperm.
+
+##### Polygenic Traits
+We are really going to focus on complex genetic traits and mostly polygenic traits and how those can give rise to more complicated patterns of inheritance.
+
+
+###### Two Recessive Loci
+[Slide 21: Simple polygenic case: two independent recessive loci][0:35:45]
+
+Here is a fairly simple example where instead of having one gene there is two genes. There is R and there is W. These genes are really completely independent of each other.  If you have two copies of little r or two copies of little w, you have this phenotype which in this case is denoted by the white circles. If you have big R and big W, then you have the red case.  
+
+Now you get into these more complicated ratios. In this case you are 7/16 of the white circles and 9/16 of the red circles, so this is an example of loci heterogeneity. So the same trait can basically result from multiple different genes.  Again, these are acting individually as individual Mendelian kinds of genes.
+
+[Slide 22: Genetic interactions][0:36:47]
+
+Genes do not have to be independent though. A lot of times genes have related phenotypes through some sort of a pathway. When this happens you can actually get much more complicated arrangements of the phenotypes, when you start looking at combinations.
+
+Here is just sort of a toy pathway where you have gene A regulating B, C, and D and they are all related to a particular phenotype and then a parallel pathway through E, F, G, and H and these pathways are cross-related to each other.  Genetics is a really good way of figuring this kind of thing out. In this case there are all sorts of different types of mutations that could in combination act in a non-Mendelian way.
+
+###### Synthetic Lethal
+One classic case would be a synthetic lethal. Maybe you really need both branches of this pathway. If you knock out D well it is not such a big deal because you still have this pathway that goes through H. But if you knock out D and H, then you are in bad shape, you do not have either pathway and maybe you are dead or have some strong phenotype. So this would be a synthetic lethal or might be an enhanced relationship would another way if it were not actually lethal.
+
+Similarly, if you have a mutation for F, now you are going to have too much B. You are also going to have too much G and maybe you are going to have a problem and the problem is because you have too much D and H. But maybe if you knock out F and also knock out H, well now you have too much D but you do not have H anymore and so you have sort of the right amount of activity and you go back to normal. So now H is a suppressor of F. So you can actually work out from the double-mutant phenotypes some cases the order of a pathway like this. You might hear the term [epistasis][Epistasis], which I do not really like, but it is sometimes used to summarize this logic.
+
+###### Two Dependent Recessive Locia
+ [Slide 23: Polygenic case: two dependent recessive loci][0:39:02]
+
+Here is a Punnett square example of one of these polygenic cases where you have a synthetic phenotype. Now we have the same cross that we had a couple slides ago where we have R and W double-header zygote, but now instead of having 7/16 of the progeny having the white phenotypes, now only 1/16 have the white phenotype and the rest have the red. So that is a synthetic example.
+
+[Slide 24: In natural populations, variation rules][0:39:38]
+
+We are still talking about binary phenotypes and we know, just like for height (and here is a good example), for petal color you get more than one color, you have a whole range from this dark red to all the way up to almost white petals. This same kind of quantity of variation occurs for all sorts of traits – height, cholesterol, this can be a risk of diabetes, actually be a risk of normally a binary endpoint. These traits which are now continuously variable we call quantitative traits.
+
+###### Quantitative Model
+[Slide 25: A slightly different (additive) model (incomplete dominance)][0:40:21]
+
+One simple way you can get something like a quantitative trait, even from a single gene, is if you have this incomplete dominance relationship. Here is a cross between big A big A, little a little a, and now if you have one copy of big A and one copy of little a, instead of being red, which would be for a traditional dominant relationship, you are sort of purplish pink. You are sort of half-way in between. This would be incomplete dominance. Now you get this 1-2-1 relationship in the Punnett square and you add some blurring from some environmental influence and this could actually explain a lot of fairly broad quantitative divergence or divergence already.
+
+[Slide 26: Polygenic Inheritance][0:41:12]
+
+You start adding more and more genes together it is very easy to make a really phenotypic continuum. So here with three genes now, we have all different populations, so it is really unlikely that you will get all of the white allele or all of the red allele, more likely you are going to get some mix. If you assume that the trait is a result of the number of red alleles you have then start getting this bell-shaped curve out from where most of the individuals are going to have this intermediate phenotype, but there is going to be a range from low to high.
+
+I mentioned that this does not have to apply to get quantitative traits. Risk itself can be the quantitative trait. So you can have, one example is with risk of diabetes. So you either have diabetes or you do not have diabetes but your risk can be a result of your underlying genetic constitution. So if you have too many of the bad alleles in this simple model, you get over the threshold and you are affected. Or you have a high risk of being affected. Here is an example with type-2 diabetes where you can measure this underlying glycosylated hemoglobin, which is a trait, which is a continuously variable, but then type-2 diabetes occurs when you are at the high end there.
+
+##### Monogenic with Other Influencers
+[Slide 27: “Typical” monogenic disorder][0:42:48]
+
+To add one more wrinkle, with the typical monogenic disorder you have this simple genotype-phenotype relationship with environment and chance playing a fairly minor role. For typical common diseases you have fairly small influences from many different genes, potentially on the phenotype, but then you also have many different environmental modifiers as well as chance potentially playing a role and sort of stochastically modifying the phenotype.
+
+[Slide 28: Genomic Inheritance Outline][0:43:23]
+
+#### Population Genomics and Genome Structure
+For the last bit of lecture I would like to talk about how these forces of mutation interact with natural selection and give rise to genome structure.
+
+[Slide 29: Mutation mechanisms and rates][0:43:39]
+
+The key active force that is changing the genome is mutation. How does DNA sequence change rise for a reasonable size population by definition any new DNA sequence change is going to be a mutation because it is going to be rare in the population. There are two main mechanisms. The first way is by errors. The DNA polymerase is going along replicating the DNA and it makes a mistake or it can also happen in recombination. If you fail to fix that, the cells have proof-reading mechanisms to make sure if they put the wrong thing in they take it out and put the right thing in, you end up with a mutation.
+
+The second way is by the environment. This is why to want to avoid spending too much time in the sun. If you have UV light it will damage the DNA, especially in your skin cells. In the case of UV it is by causing thymidine dimers to form in your DNA. You have mechanisms to repair that damage but with some frequency it will fail to repair it and you will have mutations there.
+
+When you look at the germ line mutation rate; that is what this top number is. It has been estimated in a number of ways. Most recently by sequencing a bunch of small families or trios where you have both the genome sequences of the two parents and the child. It looks like the mutation rate is about 10-8. The human genome is about three billion, 109 base pairs, and it is diploid, so this corresponds to about 60 new polymorphisms per generation. This is in addition to the lower frequency new structural variations – deletions, copy number variants, etc. 
+
+This sounds like a lot of mutations but remember a lot of the sequence is not encoding for genes, only about 1% of the sequence is protein coding and maybe about 5%, probably even less, is under a strong purifying selection. So really this corresponds to about one mutation in a protein coding gene per generation.
+
+[Slide 30: Contributors to genomic diversity][0:46:12]
+
+Mutation is just one of the features that contribute to diversity in the genome sequence, since we talked about that, new alleles arising at a particular rate. Once those alleles come along they are subject to selection and to drift.
+
+Selection as an intuitive concept makes a lot of sense. If you have a mutation that decreases the change of survival of yourself, of your progeny that is going to be less likely to be fixed later in the population, that is become more prevalent and eventually become the only sequence that is present. If you have a mutation that increases the chance of survival and passing that gene onto your progeny and future generations then that is more likely to increase in the population and become fixed. 
+
+We can define extremes, and normal fitness is one, then the carrier, if have say you have a dominant lethal mutation, that would have fitness of zero, which would mean it is lethal prior to reproduction. And that makes a lot of sense.
+
+Then there is also drift. Drift is not quite as intuitive in some cases. Alleles can by random chance become more or less common in the population. Remember, we had those 60 mutations, maybe 55, maybe 59 of those mutations are going to be neutral or almost neutral—they are going to have little or no change in function; they are not going to impact phenotype in any way. Those are just going to drift up and down by random chance or if they happen to be lucky and are next to a beneficial mutation and come along as passengers.
+
+[Slide 31: Drift depends on population size][0:47:58]
+
+As a demonstration of drift, one of the interesting features of drift is that it is a function of population size. With a really small population size, these are just some simulations, if you have 20 individuals and a fairly small number of generations, you start will equal allele frequencies, many of those alleles will drift to fixation. You will have 100% of one or the other and not both within a fairly small number of generations. Whereas with a very large population size, even over dozens of generations, you are not going to get a very substantial change in the allele frequencies.
+
+It turns out that the relative quantity for this is the effective population size, which is different from the real population size. There is however many billion humans but our effective population size is only 10,000 or so. That is because of historical bottlenecks in human population size. The effective population size is more related to ancestral population size than it is to the current population size over short time frames.
+##### Nucleotide Diversity in a Population
+[Slide 32: Nucleotide diversity in a population][0:49:21]
+
+This is from the [theory of neutral evolution][Neutral_Theory_Molecular_Evolution]. I am putting some equations up here. The point is not the equations but more the concepts. The important thing here is that there is a fairly well-understood relationship between this heterozygocity, which is given by theta – (insert equation) that is just the fraction of individual nucleotides in the genome where any given individual is heterozygous. So if I take one of my sequences and one of your sequences, how often is there going to be a difference? For humans that number is about 1 in a 1000 bases are different. If you combine that with the mutation rate that gives you this estimate for the effective population size – about 10,000. And that then becomes useful for all sorts of other calculations as well.
+
+It is worth mentioning that even 1 in 1000 bases is different SNPs, there are these larger structural variants as well that cover many more bases.
+
+##### The Hardy-Weinberg Law
+[Slide 33: The Hardy-Weinberg Law][0:50:26]
+
+How are these alleles distributed across the population? This Hardy-Weinberg Law comes up again and again and deviation estimates (?) are really useful in terms of identifying genes that are under particular types of selection. It [the Hardy-Weinberg law][Hardy-Weinberg_Law] has all these assumptions:
+•	Large population
+•	Random matings
+•	No appreciable rate of mutation—it turns out that the rate of mutation is low enough so this turns out to be basically true
+•	No selection
+
+If you follow all these conditions, even for just one generation, then you end up with this Hardy-Weinberg equilibrium where if p and q are the allele frequencies, p2 is the frequency of homozygotes for p, q2 is the frequency for homozygotes for q in the population and 2pq is the heterozygote frequency.
+
+P2 + 2pq + q2 = 1
+
+As an example, if you have 0.9 for p and 0.1 for q then that means 1% of the individuals are going to be qq homozygotes, which is fairly high… 00.1 is not that rare of an allele but it is very rare to have even q homozygotes in the population. That is sort of the main point of Hardy-Weinberg equilibrium.
+
+[Slide 34: Signatures of selection][0:52:01]
+
+##### Signatures of Selection
+How can we take advantage of nucleotide diversity and DNA sequences to tell us which parts of the genome are important for biology?
+
+There are different types of selection which give different signatures in the genome.
+
+###### Purifying
+One is [purifying selection][Purifying_Selection]. Purifying selection is where you have a sequence where you are under pressure to maintain the sequence the way it is. Your typical coding gene would be under purifying selection. You end up with reduce nucleotide diversity because mutations that occur that alter that amino acid tend to be lost by selection and so have less polymorphisms in those site than you would expect at a random site.
+
+###### Positive Selection
+The reverse of this is [positive selection][Directional_Selection]. These are places where there is active pressure to change the sequence. We talked about a couple of examples. One of the classic examples would be lactase expression. What happened with lactase is we had a small number of mutations that caused the lactase gene to be expressed later into life and that brought with it a number of genes that were near-by. We will talk about that in the next slide.
+
+But you have an individual gene and where the whole gene is under selection, you can actually find examples of this, where you more changes in a protein coding sequence that you would expect by chance, and so that is a really strong signature of positive selection.
+
+###### Species-Specific Loss
+
+Now there have been a number of recent studies looking at species-specific loss, looking at genes, mostly regulatory elements which have been conserved over most of mammalian evolution but then they have been lost in human evolution. There is speculation those may have been loss in relieving some kind of gene expression regulation that then allows human specific traits to develop.
+
+##### Reduced Diversity Around Site of Selection
+[Slide 35: Reduced diversity around site of selection][0:00:0]
+
+Looking at the diversity around site selection, here is a positive selection of a new mutation that gets a selective advantage. What happens? 
+
+So this is the ancestral chromosome. You had one chromosome that had a mutation (that is the red asterisk), and there is a lot of other DNA polymorphisms linked to that chromosome that are not present on the other chromosomes in the population. So after one generation, this has been selected on. There is more of this red chromosome that is also in recombination, so it has been broken down, so you have these breaks and so the chromosomes that have your red mutation have a number of these passenger mutations around as well, but not across the whole chromosome. 
+
+After many generations, the red marker has gone to fixation in the population. So everybody has this beneficial red allele, but everybody also has a certain amount of sequence that was on either side of that red allele just because by chance there has not been recombination, up to a certain point, and the distance between your mutation and the edge of the closest recombination is going to depend on how quickly it went to fixation, among other features. So you have this block of new alleles that have come along with your selected allele.
+
+That is related to a sort of related concept which will are going to talk a lot more about in the next lecture, which is linkage disequilibrium.  Linage disequilibrium is saying that a number of alleles that are closely linked to each other are not randomly associated in the population.
+
+The same basic principle applies here so now you have some ancestral chromosome and over time there are lots of recombination happening and breaking apart these individual variants, but even after a large number of generations, if you have a number of markers that are sufficiently close to each other they will stay on the same haplotype, so they stay on the same individual chromosome as each other.
+
+How big a region that happens over, depends on how old those alleles all are. Very, very old alleles tend to have small regions of linkage disequilibrium around them and very young alleles will have much larger regions of linkage disequilibrium around them.
+
+The advantage of this is that for common traits where we think there might be some old rare variation that may impact the risk of a common trait and we can use this linkage disequilibrium. Basically instead of having to sequence the whole genome, we can just sequence these individual SNPs and that gives us a surrogate of that entire linkage disequilibrium block. And as I said, we will talk about that more in the next lecture.
+
+###### Question 4
+
+[Slide 36: Question 4][0:57:29]
+
+The last question, we have a sea squirt, Ciona savignyi, which has a population size about 100 times larger than the human population, but the mutation rate is similar. The effective ciona population size is about 1.5 million, which is huge. So what fraction of the genome would you predict is going to be heterozygous for sequence variants in ciona individuals?
+
+[Slide 37: Question 4 Answer][0:00:0]
+
+And the answer is actually, just from what I told you, should be about 1 in 10. If humans are 1 in 1000, and I told you that the heterozygosity is proportional to the effective population size, then since the ciona population size, effective population size is 100-fold higher, then the heterozygosity would be 100 fold higher.  That would be about 1 in 10. In fact, that is actually a big problem when they sequenced the ciona genome, it was hard to assemble it into a single genome because it they sequenced it diploid and so you had basically separate assemblies, at least for the two different alleles because there was some much variation between them. The actual heterozyosity is about 5% for SNPs but 16% for intals.
+
+I would just point out that the reverse is true for endangered species. So if you have a population size of 20 then you are going to have extremely low levels of diversity.
+
+[Slide 38: Magnus Manske][0:58:58]
+
+That is the end of this lecture. We will talk next time about clinical gemonics.
+
+I just want to thank all these people at Penn and online for help with images and slides.
+
+#### Lesson 05 Resources
+[Exome Sequencing Identifies the Cause of a Mendelian Disorder][ExomeSeqIDCauseOfDisorder]

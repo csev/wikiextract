@@ -1,0 +1,69 @@
+[[Category:Probabilistic Graphical Models]]
+# Structured CPDs
+
+## Overview: Structured CPDs
+
+Tabular representation: works well in a simple case, but if there are many parents of a node (say, k), then the number of entries are O($$2^k$$), so not really suitable.
+
+### Context-specific independence
+
+Independence only occurs when Z = c:
+
+$$P(X,Y \mid Z, c) = P(X \mid Z,c) P(Y \mid Z,c)$$
+
+$$P(X \mid Y, Z, c) = P(X \mid Z, c)$$
+
+$$P(Y \mid X, Z, c) = P(Y \mid Z, c)$$
+
+One example: Deterministic OR, where these are independent
+
+$$(X \perp Y_1 \mid y^1_2)$$, i.e. $$(X \perp Y_1 \mid y_2, 1)$$
+
+$$(Y_1 \perp Y_2 \mid x^0)$$
+
+Neither of these would hold for a general-purpose CPD.
+
+Conventions followed:
+
+$$X_i^0 = 0, X_i^1 = 1$$
+
+Video Lecture Table of Contents
+----
+###Overview
+<pre>
+0:22	Tabular representations
+2:11	General CPDs
+3:21	Various models
+4:36	Context-specific independence
+5:54	Deterministric OR example
+</pre>
+
+###Tree-structured CPDs
+<pre>
+0:28	Tree CPD
+3:15	Job example
+6:16	Second job example (multiplexer variables)
+9:19	Multiplexer CPD
+12:10	Microsoft troubleshooters
+13:44	Summary
+</pre>
+
+###Independence of Causal Influence
+<pre>
+0:00	Problem restatment
+1:01	Noisy OR CPD
+4:05	"Leak" probability
+5:05	Independence of causal influence
+6:30	Sigmoid CPD
+11:01	CPCS revisited
+</pre>
+
+###Continuous Variables
+<pre>
+0:23	Gaussian models
+4:27	Linear Gaussian
+5:27	Conditional linear Gaussian
+6:28	Robot Localization example
+7:08	Non-linear Gaussian
+11:39	Robot motion model
+</pre>

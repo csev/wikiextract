@@ -1,0 +1,84 @@
+If you want to transmit the assignment you call the python script ''submit\_python\_lab.py'', you enter your email address used in Coursra and your submission password (not your coursera password, check [https://class.coursera.org/matrix-001/assignment/index here]):
+
+<pre>
+$ python3 submit_python_lab.py 
+==
+== Submitting Solutions 
+==
+
+Login email address: your_email@example.com
+One-time password from the assignment page (NOT your own account's password): 7E!*FHa3Y   
+
+...
+</pre>
+
+You can avoid entering your email and you passwοrd by calling:
+
+<pre>
+$ COURSERA_EMAIL=your_email@example.com COURSERA_PASS=7E!*FHa3Y python3 submit_python_lab.py
+</pre>
+
+In linux systems you can configure ~/.bashrc file and add the line:
+
+<pre>
+export COURSERA_EMAIL=your_email@example.com
+</pre>
+
+Use expect-dev for automatic script login
+==
+In linux you can use the utility ''expect'' in order to make automatic login to the submission script. In case you don't have installed the package ''expect-dev'' in debian based linux distribution you can install it by the following command:
+
+<pre>
+sudo apt-get install expect-dev
+</pre>
+
+Create the file '''submit''' in the same directory where there is ''submit\_python\_lab.py'' and the python laboratory files. Put your coursera email and submission password inside the script.
+
+<pre>
+#!/usr/bin/expect
+spawn python3 [exec find . -name submit*.py -print]
+expect "Login email address: "
+send "YOUR_EMAIL\n"
+expect "password): "
+send "YOUR_PASSWORD\n"
+interact
+</pre>
+
+Make the script file '''submit''' executable with the command:
+
+<pre>
+chmod +x submit
+</pre>
+
+Execute the file ./submit and the expect utility automatically will login for you!
+
+Hacking submit\_python\_lab.py
+==
+You can also direct hack the python script ''submit\_python\_lab.py''. Find the login function '''def loginPrompt()''' and comment the lines as it is demonstrated (add your email and your submission password):
+
+<pre>
+def loginPrompt():
+    """Prompt the user for login credentials. Returns a tuple (login, password)."""
+    #if 'COURSERA_EMAIL' in os.environ:
+    #    login = os.environ['COURSERA_EMAIL']
+    #else:
+    #    login = input('Login email address: ')
+
+    #if 'COURSERA_PASS' in os.environ:
+    #    password = os.environ['COURSERA_PASS']
+    #else:
+    #    password = input("One-time password from the assignment page (NOT your own account\'s password): ")
+    #return login, password
+    return str("your_email@example.com"), str("7E!*FHa3Y")
+</pre>
+
+If you do this hack the python script does not asks for a login name and password and directs you in the submission list. 
+
+References
+==
+
+* [https://class.coursera.org/matrix-001/wiki/view?page=software-environment Official Software Environment instructions] for "Coding the Matrix: Linear Algebra through Computer Science Applications" class.
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=120 Command line arguments please?], Forum discussion.
+* [http://linux.die.net/man/1/expect expect], linux man page. 
+
+[[Category:Coding the Matrix|How]]

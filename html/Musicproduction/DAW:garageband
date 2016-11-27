@@ -1,0 +1,136 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:garageband</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a>&#160;: <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW specifics</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Project_specifics"><span class="tocnumber">1</span> <span class="toctext">Project specifics</span></a></li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">2</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">3</span> <span class="toctext">Editing Audio</span></a></li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">4</span> <span class="toctext">Efficient Editing</span></a></li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">5</span> <span class="toctext">Editing MIDI</span></a></li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">6</span> <span class="toctext">Mixing</span></a></li>
+<li class="toclevel-1"><a href="#Useful_resources"><span class="tocnumber">7</span> <span class="toctext">Useful resources</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Project_specifics">Project specifics</span></h2>
+<p>details of file management
+<ul><li>Project Name
+</li><li>File type
+</li><li>Bit depth</p>
+</li></ul>
+
+<p>To change the project's bit depth, select GarageBand &gt; Preferences... &gt; Advanced; from the drop down menu at the top of the screen. On the advanced panel, there are three options: good, better, and best. The default "good" setting sets the bit depth at 16-bit. "Better" uses 24-bit in recording, but exports to 16-bit. "Best" exports in 24-bit.
+Note: this does not apply in the latest Garageband (10.0.3) which only has a checkbox for 24-bit (24-bit checked, 16-bit unchecked)</p>
+<p>*Sampling rate
+By default, GarageBand records and exports and exports at 44.1kHz. There is currently no option to change the sampling rate.</p>
+<p>*Hardware</p>
+<p>*Buffer size</p>
+<p>Garageband doesn't let you set buffer size. Previous versions did, but not the more recent ones.</p>
+<p>*Project folders specifics</p>
+<h2> <span class="mw-headline" id="Recording">Recording</span></h2>
+<p>details of audio recording</p>
+<p>*Metronome(click track)</p>
+<p>The metronome can be enable by clicking on the metronome icon on the bottom panel between the master level control and the time/measure/project display.  The tempo of the metronome (and entire project) can be changed by clicking whatever icon is displayed in the time/measure/project display and selecting "project". Then click on the number displayed under tempo and move the bar up or down to your desired tempo.</p>
+<p>*Count in</p>
+<p>"Count in" gives you an intro beat count before recording begins.   To select, click "Control" on the top bar, then select "count in".</p>
+<p>*Audio recording tips</p>
+<h2> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h2>
+<p>details of editing audio
+<ul><li>Trimming
+</li><li>Cutting
+</li></ul>
+To cut/slice, place your red line marker on the place you want to cut and hit command T.
+<ul><li>Grid
+</li><li>Change grid resolution
+</li><li>modifier key to toggle grid
+</li></ul>
+To turn grid on and off, hit commad G.
+<ul><li>Add fades
+</li></ul>
+Right-click the small downward pointing arrow in the bottom right of the Track Header to reveal the Track's automation curve. Select 'Track Volume' in the drop-down and toggle the adjacent selection button to enable volume editing on the track. In the timeline, below the selected track, left-click anywhere to add a fade control point. Move the control points up or down to adjust the Track's volume at that point in the timeline. Repeat as desired.
+<ul><li>Modify fades
+</li></ul>
+Show the Track's automation curve (small downward pointing arrow in the bottom right of a Track's Header), then select 'Track Volume' in the drop-down and add, move or delete automation control points to the timeline underneath the Track in the Timeline.
+<ul><li>efficient compiling of multiple takes</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h2>
+<p>details of efficient editing
+<ul><li>Zoom
+</li></ul>
+Zoom using the scroll wheel (hold CTRL modifier) or with a two-finger 'Pinch to Zoom' motion on a touch-enabled trackpad.
+<ul><li>Nudge
+</li><li>Cycle
+</li></ul>
+Toggle the 'Cylcle Region' button (appears adjacent to the metronome button and looks like a recycle symbol of two arrows), then drag the yellow region at the top of the timeline to define the region. 
+<ul><li>Merge
+</li><li>Name
+</li></ul>
+Double-click the name of the Track, edit the name and press Enter to save.
+<ul><li>Color
+</li><li>Markers
+</li></ul>
+Markers can only be added to Movie or Podcast track: Track -&gt; Show Podcast Track. Press the 'P' key to drop a Marker at the current Timeline position. Double-click the marker to reveal the Podcast Track pane (in the lower third of the Garageband window), then edit the Chapter Title. Resize the Marker region by dragging the edges, in the same way as other regions.
+<ul><li>Change tempo
+</li><li>Other efficient editing tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h2>
+<p>details of editing midi
+<ul><li>Velocity
+</li><li>Quantization
+</li><li>Control Change data
+</li><li>MIDI monitor(through)
+</li><li>Other MIDI editing tips
+</li><li>Adding software instruments
+</li><li>Other MIDI tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Mixing">Mixing</span></h2>
+<p>details of mixing
+<ul><li>Types of tracks
+</li><li>Adding effects
+</li><li>Channel strip layout
+</li><li>Configuring a Submix
+</li><li>Configure reverb in a send and return scheme
+</li><li>Busses
+</li><li>Automation recording
+</li><li>Automation editing</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Useful_resources">Useful resources</span></h2>
+<p>additional resources
+<ul><li>Website
+</li></ul>
+<a rel="nofollow" class="external free" href="http://www.apple.com/support/garageband/">http://www.apple.com/support/garageband/</a>
+<br />support.apple.com/kb/PH1811
+<br /><a rel="nofollow" class="external free" href="https://class.coursera.org/musicproduction-001/forum/list?forum_id=79">https://class.coursera.org/musicproduction-001/forum/list?forum_id=79</a> 
+<br /><a rel="nofollow" class="external free" href="https://class.coursera.org/musicproduction-001/forum/thread?thread_id=891">https://class.coursera.org/musicproduction-001/forum/thread?thread_id=891</a>
+<ul><li>Manual
+</li></ul>
+<a rel="nofollow" class="external free" href="http://manuals.info.apple.com/en_US/GarageBand_09_Getting_Started.pdf">http://manuals.info.apple.com/en_US/GarageBand_09_Getting_Started.pdf</a></p>
+<p><a rel="nofollow" class="external free" href="http://manuals.info.apple.com/en_US/GarageBand-AtAGlance.pdf">http://manuals.info.apple.com/en_US/GarageBand-AtAGlance.pdf</a>
+<ul><li>Forums
+</li><li>Links</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:garageband&amp;oldid=31804">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:garageband&amp;oldid=31804</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

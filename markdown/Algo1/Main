@@ -1,0 +1,60 @@
+[[Category:Coursera]]
+[[Category:Algorithms]]
+
+Welcome to the Algorithms Part 1 wiki page
+If you've recently solved a tough installation issue or gotten helpful advice about a review question, programming exercise, or the video lectures, please take some time to help out your fellow classmates by writing about it in the appropriate wiki page.
+Feel free to create pages as needed. To see how to edit or create a page, see "Help" on the left navbar.
+
+# Algorithms Part 1 #
+by [https://www.coursera.org/instructor/~214 Tim Roughgarden]. His Stanford [http://theory.stanford.edu/~tim/ page]
+
+[https://www.coursera.org/course/algo Course Home Page] and full course [https://class.coursera.org/algo-004/lecture/preview videos]
+
+# Course Information
+
+This course is at an undergraduate level, likely situated in third or fourth year. Students should feel programming language concepts, including recursion, as well as proof techniques, including induction.
+
+# Lecture Notes
+
+### [[Algo1:Week1|Week 1]]
+
+Introduction. Asymptotic analysis including big-oh notation. Divide-and-conquer algorithms for sorting, counting inversions, matrix multiplication, and closest pair.
+
+### [[Algo1:Week2|Week 2]]
+
+Running time analysis of divide-and-conquer algorithms. The master method. Introduction to randomized algorithms, with a probability review. QuickSort.
+
+### [[Algo1:Week3|Week 3]]
+
+More on randomized algorithms and probability. Computing the median in linear time. A randomized algorithm for the minimum graph cut problem.
+
+# [[Algo1:DesignPrinciples|Algorithm Design Principles]]
+
+Every algorithm developer should have a toolbox from which to construct algorithms.
+
+# Online References
+* [http://algs4.cs.princeton.edu/home/ Algorithms] by Sedgewick and Wayne
+* [http://algs4.cs.princeton.edu/code/ Java Algorithm Library] provided by Sedgewick and Wayne
+* [http://www.cs.princeton.edu/courses/archive/spr10/cos433/mathcs.pdf Mathematics for Computer Science] by Lehman and Leighton
+* [http://beust.com/algorithms.pdf Algorithms] by Dasgupta, Papadimitriou and Vazirani
+* [http://algo2.iti.kit.edu/sanders/manuscript.pdf Algorithms and Data Structures] by Mehlhorn and Sanders
+* [http://infolab.stanford.edu/~ullman/focs.html Foundations of Computer Science] by Aho and Ullman
+* [https://www.coursera.org/courses?orderby=upcoming&search=Algorithm Coursera Algorithm Catalog]
+* [http://www.coursetalk.com/search/#filter_tab=all&sort=-rating&q=Algorithm Algorithm MOOCs]
+* <a href="http://en.wikipedia.org/wiki/List_of_algorithms">List of Algorithms</a>
+
+# Just For Fun
+* [https://www.youtube.com/watch?v=ywWBy6J5gz8 Quick Sort] via Hungarian folk dancers. If only sub-sorts were in parallel!
+* [https://www.youtube.com/watch?v=CmPA7zE8mx0 Shell Sort] via Hungarian folk dancers.
+
+# Programming Assignment Sample Data
+
+### Week 1
+
+**For Unix users**: It might be necessary to run dos2unix on the input file provided after clicking "Attempt Homework". The test case file here works just fine as it is.
+
+[Test case](https://gist.github.com/raw/4653745/d75f5315b48d6b32df96e29c68e6931012981731/gistfile1.txt) - Solution: 2507223936
+
+To check if your program is getting input right the sumtotal of the values is 5000050000.
+
+*Please note that this is* **NOT** *the solution to the assignment. It is a different similar file (and its solution) on which to test your code before submitting.*

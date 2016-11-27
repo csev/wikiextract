@@ -1,0 +1,281 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Advice for Applying Machine Learning</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Deciding_What_to_Try_Next"><span class="tocnumber">1</span> <span class="toctext">Deciding What to Try Next</span></a></li>
+<li class="toclevel-1"><a href="#Evaluating_a_Hypothesis"><span class="tocnumber">2</span> <span class="toctext">Evaluating a Hypothesis</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_test_set_error"><span class="tocnumber">2.1</span> <span class="toctext">The test set error</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Model_Selection_and_Train.2FValidation.2FTest_Sets"><span class="tocnumber">3</span> <span class="toctext">Model Selection and Train/Validation/Test Sets</span></a></li>
+<li class="toclevel-1"><a href="#Diagnosing_Bias_vs._Variance"><span class="tocnumber">4</span> <span class="toctext">Diagnosing Bias vs. Variance</span></a></li>
+<li class="toclevel-1"><a href="#Regularization_and_Bias.2FVariance"><span class="tocnumber">5</span> <span class="toctext">Regularization and Bias/Variance</span></a></li>
+<li class="toclevel-1"><a href="#Learning_Curves"><span class="tocnumber">6</span> <span class="toctext">Learning Curves</span></a></li>
+<li class="toclevel-1"><a href="#Deciding_What_to_Do_Next_Revisited"><span class="tocnumber">7</span> <span class="toctext">Deciding What to Do Next Revisited</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Diagnosing_Neural_Networks"><span class="tocnumber">7.1</span> <span class="toctext">Diagnosing Neural Networks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Model_Selection:"><span class="tocnumber">8</span> <span class="toctext">Model Selection:</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Bias:_approximation_error_.28Difference_between_expected_value_and_optimal_value.29"><span class="tocnumber">8.1</span> <span class="toctext">Bias: approximation error (Difference between expected value and optimal value)</span></a></li>
+<li class="toclevel-2"><a href="#Variance:_estimation_error_due_to_finite_data"><span class="tocnumber">8.2</span> <span class="toctext">Variance: estimation error due to finite data</span></a></li>
+<li class="toclevel-2"><a href="#Intuition_for_the_bias-variance_trade-off:"><span class="tocnumber">8.3</span> <span class="toctext">Intuition for the bias-variance trade-off:</span></a></li>
+<li class="toclevel-2"><a href="#Regularization_Effects:"><span class="tocnumber">8.4</span> <span class="toctext">Regularization Effects:</span></a></li>
+<li class="toclevel-2"><a href="#Model_Complexity_Effects:"><span class="tocnumber">8.5</span> <span class="toctext">Model Complexity Effects:</span></a></li>
+<li class="toclevel-2"><a href="#A_typical_rule_of_thumb_when_running_diagnostics_is:"><span class="tocnumber">8.6</span> <span class="toctext">A typical rule of thumb when running diagnostics is:</span></a></li>
+<li class="toclevel-2"><a href="#References:"><span class="tocnumber">8.7</span> <span class="toctext">References:</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Deciding_What_to_Try_Next">Deciding What to Try Next</span></h1>
+<p>Errors in your predictions can be troubleshooted by: </p>
+<ul>
+<li>Getting more training examples</li>
+<li>Trying smaller sets of features</li>
+<li>Trying additional features</li>
+<li>Trying polynomial features</li>
+<li>Increasing or decreasing $$\lambda$$</li>
+</ul>
+<p>Don't just pick one of these avenues at random. We'll explore diagnostic techniques for choosing one of the above solutions in the following sections.</p>
+<h1> <span class="mw-headline" id="Evaluating_a_Hypothesis">Evaluating a Hypothesis</span></h1>
+<p>A hypothesis may have low error for the training examples but still be inaccurate (because of overfitting).</p>
+<p>With a given dataset of training examples, we can split up the data into two sets: a <strong>training set</strong> and a <strong>test set</strong>.</p>
+<p>The new procedure using these two sets is then:</p>
+<ol>
+<li>Learn $$\Theta$$ and minimize $$J&#95;{train}(\Theta)$$ using the training set</li>
+<li>Compute the test set error $$J&#95;{test}(\Theta)$$</li>
+</ol>
+<h2> <span class="mw-headline" id="The_test_set_error">The test set error</span></h2>
+<ol>
+<li>For linear regression:
+$$J&#95;{test}(\Theta) = \dfrac{1}{2m&#95;{test}} \sum&#95;{i=1}^{m&#95;{test}}(h&#95;\Theta(x^{(i)}&#95;{test}) - y^{(i)}&#95;{test})^2$$</li>
+<li>For classification ~ Misclassification error (aka 0/1 misclassification error):
+$$err(h&#95;\Theta(x),y) =
+\begin{matrix}
+1 &amp; \mbox{if } h&#95;\Theta(x) \geq 0.5\ and\ y = 0\ or\ h&#95;\Theta(x) &lt; 0.5\ and\ y = 1\newline
+0 &amp; \mbox otherwise 
+\end{matrix} $$</li>
+</ol>
+<p>This gives us a binary 0 or 1 error result based on a misclassification.</p>
+<p>The average test error for the test set is </p>
+<p>$$
+\large
+\text{Test Error} = \dfrac{1}{m&#95;{test}} \sum^{m&#95;{test}}&#95;{i=1} err(h&#95;\Theta(x^{(i)}&#95;{test}), y^{(i)}&#95;{test})
+$$</p>
+<p>This gives us the proportion of the test data that was misclassified.</p>
+<h1> <span class="mw-headline" id="Model_Selection_and_Train.2FValidation.2FTest_Sets">Model Selection and Train/Validation/Test Sets</span></h1>
+<ul>
+<li>Just because a learning algorithm fits a training set well, that does not mean it is a good hypothesis.</li>
+<li>The error of your hypothesis as measured on the data set with which you trained the parameters will be lower than any other data set.</li>
+</ul>
+<p>In order to choose the model of your hypothesis, you can test each degree of polynomial and look at the error result.</p>
+<p><strong>Without the Validation Set (note: this is a bad method - do not use it)</strong></p>
+<ol>
+<li>Optimize the parameters in $$\Theta$$ using the training set for each polynomial degree.</li>
+<li>Find the polynomial degree $$d$$ with the least error using the test set.</li>
+<li>Estimate the generalization error also using the test set with $$J&#95;{test}(\Theta^{(d)})$$, (d = theta from polynomial with lower error);</li>
+</ol>
+<p>In this case, we have trained one variable, $$d$$, or the degree of the polynomial, using the test set. This will cause our error value to be greater for any other set of data.</p>
+<p><strong>Use of the CV set</strong></p>
+<p>To solve this, we can introduce a third set, the <strong>Cross Validation Set</strong>, to serve as an intermediate set that we can train $$d$$ with. Then our test set will give us an accurate, non-optimistic error.</p>
+<p>One example way to break down our dataset into the three sets is:</p>
+<ul>
+<li>Training set: 60%</li>
+<li>Cross validation set: 20%</li>
+<li>Test set: 20%</li>
+</ul>
+<p>We can now calculate three separate error values for the three different sets.</p>
+<p><strong>With the Validation Set (note: this method presumes we do not also use the CV set for regularization)</strong></p>
+<ol>
+<li>Optimize the parameters in $$\Theta$$ using the training set for each polynomial degree.</li>
+<li>Find the polynomial degree $$d$$ with the least error using the cross validation set.</li>
+<li>Estimate the generalization error using the test set with $$J&#95;{test}(\Theta^{(d)})$$, (d = theta from polynomial with lower error);</li>
+</ol>
+<p>This way, the degree of the polynomial $$d$$ has not been trained using the test set.</p>
+<p>(Mentor note: be aware that using the CV set to select 'd' means that we cannot also use it for the validation curve process of setting the lambda value).</p>
+<h1> <span class="mw-headline" id="Diagnosing_Bias_vs._Variance">Diagnosing Bias vs. Variance</span></h1>
+<p>In this section we examine the relationship between the degree of the polynomial $$d$$ and the underfitting or overfitting of our hypothesis.</p>
+<ul>
+<li>We need to distinguish whether <strong>bias</strong> or <strong>variance</strong> is the problem contributing to bad predictions.</li>
+<li>High bias is underfitting and high variance is overfitting. We need to find a golden mean between these two.</li>
+</ul>
+<p>The training error will tend to <strong>decrease</strong> as we increase the degree $$d$$ of the polynomial.</p>
+<p>At the same time, the cross validation error will tend to <strong>decrease</strong> as we increase $$d$$ up to a point, and then it will <strong>increase</strong> as $$d$$ is increased, forming a convex curve.</p>
+<blockquote>
+  <p><strong>High bias (underfitting)</strong>: both $$J&#95;{train}(\Theta)$$ and $$J&#95;{CV}(\Theta)$$ will be high. Also, $$J&#95;{CV}(\Theta) \approx J&#95;{train}(\Theta)$$.</p>
+  <p><strong>High variance (overfitting)</strong>: $$J&#95;{train}(\Theta)$$ will be low and $$J&#95;{CV}(\Theta)$$ will be much greater than $$J&#95;{train}(\Theta)$$.</p>
+</blockquote>
+<p>The is represented in the figure below:</p>
+<p><a href="/wiki/images/9/99/Features-and-polynom-degree.png" class="image"><img alt="Features-and-polynom-degree.png" src="/wiki/images/thumb/9/99/Features-and-polynom-degree.png/300px-Features-and-polynom-degree.png" width="300" height="255" /></a></p>
+<h1> <span class="mw-headline" id="Regularization_and_Bias.2FVariance">Regularization and Bias/Variance</span></h1>
+<p>Instead of looking at the degree $$d$$ contributing to bias/variance, now we will look at the regularization parameter $$\lambda$$.</p>
+<blockquote>
+  <p>Large $$\lambda$$: High bias (underfitting)</p>
+  <p>Intermediate $$\lambda$$: just right</p>
+  <p>Small $$\lambda$$: High variance (overfitting)</p>
+</blockquote>
+<p>A large lambda heavily penalizes all the $$\Theta$$ parameters, which greatly simplifies the line of our resulting function, so causes underfitting.</p>
+<p>The relationship of $$\lambda$$ to the training set and the variance set is as follows:</p>
+<blockquote>
+  <p><strong>Low $$\lambda$$</strong>: $$J&#95;{train}(\Theta)$$ is low and $$J&#95;{CV}(\Theta)$$ is high (high variance/overfitting).</p>
+  <p><strong>Intermediate $$\lambda$$</strong>: $$J&#95;{train}(\Theta)$$ and $$J&#95;{CV}(\Theta)$$ are somewhat low and $$J&#95;{train}(\Theta) \approx J&#95;{CV}(\Theta)$$.</p>
+  <p><strong>Large $$\lambda$$</strong>: both $$J&#95;{train}(\Theta)$$ and $$J&#95;{CV}(\Theta)$$ will be high (underfitting/high bias)</p>
+</blockquote>
+<p>The figure below illustrates the relationship between lambda and the hypothesis:</p>
+<p><a href="/wiki/images/5/58/Features-and-polynom-degree-fix.png" class="image"><img alt="Features-and-polynom-degree-fix.png" src="/wiki/images/thumb/5/58/Features-and-polynom-degree-fix.png/300px-Features-and-polynom-degree-fix.png" width="300" height="255" /></a></p>
+<p>In order to choose the model and the regularization $$\lambda$$, we need:</p>
+<ol>
+<li>Create a list of lambda (i.e. $$\lambda \in \lbrace0, 0.01, 0.02, 0.04, 0.08, 0.16, 0.32, 0.64, 1.28, 2.56, 5.12, 10.24\rbrace$$);</li>
+<li>Select a lambda to compute;</li>
+<li>Create a model set like degree of the polynomial or others;</li>
+<li>Select a model to learn $$\Theta$$;</li>
+<li>Learn the parameter $$\Theta$$ for the model selected, using $$J&#95;{train}(\Theta)$$ <strong>with</strong> $$\lambda$$ selected (this will learn $$\Theta$$ for the next step);</li>
+<li>Compute the train error using the learned $$\Theta$$ (computed with $$\lambda$$ ) on the $$J&#95;{train}(\Theta)$$ <strong>without</strong> regularization or $$\lambda$$ = 0;</li>
+<li>Compute the cross validation error using the learned $$\Theta$$ (computed with $$\lambda$$) on the $$J&#95;{CV}(\Theta)$$ <strong>without</strong> regularization or $$\lambda$$ = 0;</li>
+<li>Do this for the entire model set and lambdas, then select the best combo that produces the lowest error on the cross validation set;</li>
+<li>Now if you need visualize to help you understand your decision, you can plot to the figure like above with: ($$\lambda$$ x Cost $$J&#95;{train}(\Theta)$$) and ($$\lambda$$ x Cost $$J&#95;{CV}(\Theta)$$); </li>
+<li>Now using the best combo $$\Theta$$ and $$\lambda$$, apply it on $$J&#95;{test}(\Theta)$$ to see if it has a good generalization of the problem.</li>
+<li>To help decide the best polynomial degree and $$\lambda$$ to use, we can diagnose with the learning curves, that is the next subject.</li>
+</ol>
+<h1> <span class="mw-headline" id="Learning_Curves">Learning Curves</span></h1>
+<p>Training 3 examples will easily have 0 errors because we can always find a quadratic curve that exactly touches 3 points.</p>
+<ul>
+<li>As the training set gets larger, the error for a quadratic function increases.</li>
+<li>The error value will plateau out after a certain $$m$$, or training set size.</li>
+</ul>
+<p><strong>With high bias</strong></p>
+<blockquote>
+  <p><strong>Low training set size</strong>: causes $$J&#95;{train}(\Theta)$$ to be low and $$J&#95;{CV}(\Theta)$$ to be high.</p>
+  <p><strong>Large training set size</strong>: causes both $$J&#95;{train}(\Theta)$$ and $$J&#95;{CV}(\Theta)$$ to be high with $$J&#95;{train}(\Theta) \approx J&#95;{CV}(\Theta)$$.</p>
+</blockquote>
+<p>If a learning algorithm is suffering from <strong>high bias</strong>, getting more training data <strong>will not (by itself) help much</strong>.</p>
+<p>For high variance, we have the following relationships in terms of the training set size:</p>
+<p><strong>With high variance</strong></p>
+<blockquote>
+  <p><strong>Low training set size</strong>: $$J&#95;{train}(\Theta)$$ will be low and $$J&#95;{CV}(\Theta)$$ will be high.</p>
+  <p><strong>Large training set size</strong>: $$J&#95;{train}(\Theta)$$ increases with training set size and $$J&#95;{CV}(\Theta)$$ continues to decrease without leveling off. Also, $$J&#95;{train}(\Theta) &lt; J&#95;{CV}(\Theta)$$ but the difference between them remains significant.</p>
+</blockquote>
+<p>If a learning algorithm is suffering from <strong>high variance</strong>, getting more training data is <strong>likely to help.</strong></p>
+<p><a href="/wiki/images/9/96/Learning2.png" class="image"><img alt="Learning2.png" src="/wiki/images/thumb/9/96/Learning2.png/300px-Learning2.png" width="300" height="186" /></a>
+<a href="/wiki/images/8/85/Learning1.png" class="image"><img alt="Learning1.png" src="/wiki/images/thumb/8/85/Learning1.png/300px-Learning1.png" width="300" height="171" /></a></p>
+<h1> <span class="mw-headline" id="Deciding_What_to_Do_Next_Revisited">Deciding What to Do Next Revisited</span></h1>
+<p>Our decision process can be broken down as follows:</p>
+<ul>
+<li>Getting more training examples
+
+<ul>
+<li>Fixes <strong>high variance</strong></li>
+</ul></li>
+<li>Trying smaller sets of features
+
+<ul>
+<li>Fixes <strong>high variance</strong></li>
+</ul></li>
+<li>Adding features
+
+<ul>
+<li>Fixes <strong>high bias</strong></li>
+</ul></li>
+<li>Adding polynomial features
+
+<ul>
+<li>Fixes <strong>high bias</strong></li>
+</ul></li>
+<li>Decreasing $$\lambda$$
+
+<ul>
+<li>Fixes <strong>high bias</strong></li>
+</ul></li>
+<li>Increasing $$\lambda$$
+
+<ul>
+<li>Fixes <strong>high variance</strong></li>
+</ul></li>
+</ul>
+<h2> <span class="mw-headline" id="Diagnosing_Neural_Networks">Diagnosing Neural Networks</span></h2>
+<ul>
+<li>A neural network with fewer parameters is <strong>prone to underfitting</strong>. It is also <strong>computationally cheaper</strong>.</li>
+<li>A large neural network with more parameters is <strong>prone to overfitting</strong>. It is also <strong>computationally expensive</strong>. In this case you can use regularization (increase $$\lambda$$) to address the overfitting.</li>
+</ul>
+<p>Using a single hidden layer is a good starting default. You can train your neural network on a number of hidden layers using your cross validation set.</p>
+<h1> <span class="mw-headline" id="Model_Selection:">Model Selection:</span></h1>
+<ul>
+<li>Choosing M the order of polynomials.</li>
+<li><p>How can we tell which parameters Θ to leave in the model (known as "model selection")?</p>
+<p>There are several ways to solve this problem:</p>
+<ol>
+<li>Get more data  (very difficult).</li>
+<li>Choose the model which best fits the data without overfitting (very difficult).</li>
+<li>Reduce the opportunity for overfitting through regularization.</li>
+</ol></li>
+</ul>
+<h4> <span class="mw-headline" id="Bias:_approximation_error_.28Difference_between_expected_value_and_optimal_value.29">Bias: approximation error (Difference between expected value and optimal value)</span></h4>
+<ul>
+<li>High Bias = UnderFitting (BU)</li>
+<li>$$J&#95;{train}(\Theta)$$ and $$J&#95;{CV}(\Theta)$$ both will be high and $$J&#95;{train}(\Theta) \approx J&#95;{CV}(\Theta)$$</li>
+</ul>
+<h4> <span class="mw-headline" id="Variance:_estimation_error_due_to_finite_data">Variance: estimation error due to finite data</span></h4>
+<ul>
+<li>High Variance = OverFitting (VO)</li>
+<li>$$J&#95;{train}(\Theta)$$ is low and $$J&#95;{CV}(\Theta) \gg J&#95;{train}(\Theta)$$</li>
+</ul>
+<h4> <span class="mw-headline" id="Intuition_for_the_bias-variance_trade-off:">Intuition for the bias-variance trade-off:</span></h4>
+<ul>
+<li>Complex model =&gt; sensitive to data =&gt; much affected by changes in X             =&gt; high variance, low bias.</li>
+<li>Simple model  =&gt; more rigid        =&gt; does not change as much with changes in X =&gt; low variance, high bias.</li>
+</ul>
+<p>One of the most important goals in learning: finding a model that is just right in the bias-variance trade-off.</p>
+<h4> <span class="mw-headline" id="Regularization_Effects:">Regularization Effects:</span></h4>
+<ul>
+<li>Small values of λ  allow model to become finely tuned to noise leading to large variance =&gt; overfitting.</li>
+<li>Large values of λ pull weight parameters to zero leading to large bias =&gt; underfitting.</li>
+</ul>
+<h4> <span class="mw-headline" id="Model_Complexity_Effects:">Model Complexity Effects:</span></h4>
+<ul>
+<li>Lower-order polynomials (low model complexity) have high bias and low variance. In this case, the model fits poorly consistently. </li>
+<li>Higher-order polynomials (high model complexity) fit the training data extremely well and the test data extremely poorly. These have low bias on the training data, but very high variance. </li>
+<li>In reality, we would want to choose a model somewhere in between, that can generalize well but also fits the data reasonably well.</li>
+</ul>
+<h4> <span class="mw-headline" id="A_typical_rule_of_thumb_when_running_diagnostics_is:">A typical rule of thumb when running diagnostics is:</span></h4>
+<ul>
+<li>More training examples fixes high variance but not high bias.</li>
+<li>Fewer features fixes high variance but not high bias.</li>
+<li>Additional features fixes high bias but not high variance.</li>
+<li>The addition of polynomial and interaction features fixes high bias but not high variance.</li>
+<li>When using gradient descent, decreasing lambda can fix high bias and increasing lambda can fix high variance (lambda is the regularization parameter).</li>
+<li>When using neural networks, small neural networks are more prone to under-fitting and big neural networks are prone to over-fitting. Cross-validation of network size is a way to choose alternatives.</li>
+</ul>
+<p>I hope this helps.</p>
+<h4> <span class="mw-headline" id="References:">References:</span></h4>
+<ul>
+<li><a rel="nofollow" class="external free" href="https://class.coursera.org/ml/lecture/index">https://class.coursera.org/ml/lecture/index</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.cedar.buffalo.edu/~srihari/CSE555/Chap9.Part2.pdf">http://www.cedar.buffalo.edu/~srihari/CSE555/Chap9.Part2.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://blog.stephenpurpura.com/post/13052575854/managing-bias-variance-tradeoff-in-machine-learning">http://blog.stephenpurpura.com/post/13052575854/managing-bias-variance-tradeoff-in-machine-learning</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.cedar.buffalo.edu/~srihari/CSE574/Chap3/Bias-Variance.pdf">http://www.cedar.buffalo.edu/~srihari/CSE574/Chap3/Bias-Variance.pdf</a></li>
+</ul>
+<p><hr />
+Next: <a href="/wiki/index.php/ML:Machine_Learning_System_Design" title="ML:Machine Learning System Design">Machine Learning System Design</a>   Back to Index:  <a href="/wiki/index.php/ML:Main" title="ML:Main">Main</a></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Advice_for_Applying_Machine_Learning&amp;oldid=33957">https://share.coursera.org/wiki/index.php?title=ML:Advice_for_Applying_Machine_Learning&amp;oldid=33957</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Lecture_Notes" title="Category:ML:Lecture Notes">ML:Lecture Notes</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,404 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Interactivepython:CodeSkulptor</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Undocumented_features:"><span class="tocnumber">1</span> <span class="toctext">Undocumented features:</span></a>
+<ul>
+<li class="toclevel-2"><a href="#CodeSkulptor-specific"><span class="tocnumber">1.1</span> <span class="toctext">CodeSkulptor-specific</span></a></li>
+<li class="toclevel-2"><a href="#Generic_Python"><span class="tocnumber">1.2</span> <span class="toctext">Generic Python</span></a></li>
+<li class="toclevel-2"><a href="#Functions_and_Imports"><span class="tocnumber">1.3</span> <span class="toctext">Functions and Imports</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Miscellaneous_Notes"><span class="tocnumber">2</span> <span class="toctext">Miscellaneous Notes</span></a></li>
+<li class="toclevel-1"><a href="#Useful_Imports"><span class="tocnumber">3</span> <span class="toctext">Useful Imports</span></a></li>
+<li class="toclevel-1"><a href="#Viz_mode"><span class="tocnumber">4</span> <span class="toctext">Viz mode</span></a></li>
+<li class="toclevel-1"><a href="#Experimental_Practice_excercises"><span class="tocnumber">5</span> <span class="toctext">Experimental Practice excercises</span></a></li>
+<li class="toclevel-1"><a href="#Bugs"><span class="tocnumber">6</span> <span class="toctext">Bugs</span></a></li>
+</ul>
+</td></tr></table>
+<h3 style="display:inline;"> <span class="mw-headline" id="Undocumented_features:">Undocumented features:</span></h3> <span style="font-size:8pt;">
+<a rel="nofollow" class="external free" href="https://class.coursera.org/interactivepython-003/forum/thread?thread_id=5111">https://class.coursera.org/interactivepython-003/forum/thread?thread_id=5111</a></span></p>
+<p><h4> <span class="mw-headline" id="CodeSkulptor-specific">CodeSkulptor-specific</span></h4></p>
+<ul>
+<li><p><code>frame.get_canvas_image()</code></p>
+<p>opens a popup whose URL is a PNG representation of your canvas</p></li>
+<li><p><code>jsmillis()</code></p>
+<p>returns the current time in milliseconds</p>
+<p><code>time.time() == jsmillis() /1000.0</code></p></li>
+<li><p>Get, Set, or Reset the code's execution limit. </p>
+<p><span style="color:red;">&lt;WARNING: Can crash your browser tab if set too high and you go into an infinite loop or something like that. Make sure to SAVE before running your code.&gt;</span></p>
+<pre>import sys
+t = sys.getExecutionLimit()
+sys.setExecutionLimit(millisec)
+sys.resetTimeout()</pre></li>
+<li><p>Close a Frame</p>
+<pre>frame.stop()</pre></li>
+<li><p>stop the draw handler from clearing the canvas 60 times a second:</p>
+<pre>frame.set_canvas_background(&quot;transparent&quot;)</pre></li>
+<li><p>get the contents of the console</p>
+<pre>t = open(&quot;console&quot;)
+print t.read()
+print t.readline()
+print t.readlines()</pre></li>
+</ul>
+<p><h4> <span class="mw-headline" id="Generic_Python">Generic Python</span></h4></p>
+<ul>
+<li><p><code>t = input(message)</code> or <code>t = raw_input(message)</code></p>
+<p>prompt the user for text</p></li>
+<li><p>error management with "try:", "except:" "else:"</p></li>
+<li><p>string formatting operator:&#160;%</p></li>
+<li><p>force Codeskulptor to quit and display a certain error message</p>
+<pre>quit(&quot;Text To Display&quot;)</pre></li>
+<li><p>:-)</p>
+<pre>import this</pre></li>
+<li><p>getattr(variable, string representation of the property, default value to return if property doesn't exist)</p>
+<pre>t = object()
+t.a = 5
+t.c = 6
+print getattr(t,&quot;a&quot;)
+print getattr(t,&quot;b&quot;,&quot;nope&quot;)
+print getattr(t,&quot;c&quot;,&quot;nope&quot;)</pre></li>
+<li><p>hasattr(variable, string representation of the property)</p>
+<pre>t = object()
+t.a = 5
+t.c = 6
+print hasattr(t,&quot;a&quot;)
+print hasattr(t,&quot;b&quot;)
+print hasattr(t,&quot;c&quot;)</pre></li>
+</ul>
+<p><h4> <span class="mw-headline" id="Functions_and_Imports">Functions and Imports</span></h4></p>
+<ul>
+<li><p>Create raw wave-data sounds using <code>simplegui.create_sound</code></p>
+<pre>#simplegui.create_sound(sound_data, sample_rate, num_channels)
+def createRaw(v1,a,v2,b=1,v3=None,c=1,v4=None,d=1):
+    t = [v1]*a
+    t.extend([v2]*b)
+    if (v3&lt;&gt;None):
+        t.extend([v3]*c)
+    if (v4&lt;&gt;None):
+        t.extend([v4]*d)
+    return t
+z = createRaw(0,2,25,1)
+print z
+t = simplegui.create_sound(list(z*5000)[0:5000])
+t.play()</pre></li>
+<li><p>"create" a file with urllib2's NetFile class</p>
+<pre>a_file = urllib2.NetFile(&quot;hello\nhi\n&quot;)
+a_file.read()
+a_file.readline()
+a_file.readlines()</pre></li>
+</ul>
+<ul><li>create an "invisible" Canvas. This can be drawn to, but it won't be displayed. To display it, draw it to the frame's canvas (<a href="/wiki/index.php?title=User:00f8fa701eed10af95feacee8980bc68&amp;action=edit&amp;redlink=1" class="new" title="User:00f8fa701eed10af95feacee8980bc68 (page does not exist)">Mike Bendele</a>)
+ <div>
+<pre>invisible_canvas = simplegui.create_invisible_canvas(width,height)
+
+def draw(canvas):
+    ...
+    canvas.draw_image(invisible_canvas, ...)
+</pre>
+</div></li></ul>
+<ul>
+<li><p>create "invisible" Control and TextAreaControl objects</p>
+<pre>a = simplegui.Control([])
+a.set_text(&quot;hello&quot;)
+print a.get_text()
+b = simplegui.TextAreaControl([])
+b.set_text(&quot;hello2&quot;)
+print b.get_text()</pre></li>
+<li><p>read almost any external site</p>
+<pre>import urllib2
+def urlopenany(url):
+    return urllib2.urlopen(&quot;http://query.yahooapis.com/v1/public/yql?format=xml&amp;q=select * from html where url=&quot;+'&quot;'+url+'&quot;')
+t = urlopenany(&quot;http://www.google.com/webhp&quot;)
+print dir(t)
+t2 = t.read()
+print t2</pre></li>
+</ul>
+<ul><li>set a handler to be called when the user closes the simplegui frame 
+(contributions by <a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">Michael Cimino</a>, NCM Stewart, <a href="/wiki/index.php?title=User:7936a30bfabf844910a91818118734e9&amp;action=edit&amp;redlink=1" class="new" title="User:7936a30bfabf844910a91818118734e9 (page does not exist)">Niall Harding</a>)
+<div>
+<pre>import simplegui
+<span style="color:darkblue;">def set_unload_handler(frame,handler,period=1000):
+    <span style="color:green;">#this is the timer that will check to see if the frame has closed</span>
+    def unload_check():
+        <span style="color:green;">#catch the Firefox error that's caused by trying to read the canvas textwidth of a canvas that no longer exists
+        #Chrome returns the textwidth as 0 if the frame is closed</span>
+        try:
+            textwidth = frame.get_canvas_textwidth("t",12)
+        except:
+            textwidth = 0
+        <span style="color:green;">#if the frame is closed, call the handler and stop the timer</span>
+        if textwidth==0:
+            unload_check_timer.stop()
+            handler()
+    <span style="color:green;">#create and start the timer</span>
+    unload_check_timer = simplegui.create_timer(period,unload_check)
+    unload_check_timer.start()
+<span style="color:green;">#by adding this to simplegui.Frame, all future frames will include this method</span>
+simplegui.Frame.set_unload_handler = set_unload_handler
+<br /><span style="color:green;">#this is the function that will be called when the frame is closed
+#it's a good place to stop playing background musics</span>
+def unload():
+    print "The frame was closed"</span>
+<br />def draw(canvas):
+    canvas.draw_text("Close this", [50,112], 48, "Red")
+<br /><span style="color:green;"># Create a frame and assign callbacks to event handlers</span>
+frame = simplegui.create_frame("Home", 300, 200)
+frame.set_draw_handler(draw)
+<span style="color:darkblue;">frame.set_unload_handler(unload)</span>
+<span style="color:darkgreen;"># or set_unload_handler(frame, unload)</span>
+<br /><span style="color:green;"># Start the frame animation</span>
+frame.start()
+</pre>
+</div>
+</li>
+<li>base64 encoder:
+<pre>import simplegui
+class wrap:
+    def __init__(self,orig):
+        self.orig = orig
+        if not(hasattr(self.__class__,'list')):
+            self.__class__.list = []
+    def __call__(self,*a):
+        self.orig(*a)
+        a[0].args = a[1:]
+        self.__class__.list.append(a[0])
+simplegui.Sound.__init__ = wrap(simplegui.Sound.__init__)
+
+def base64(iter,test=0,flip_horiz=False):
+    iter2 = list(iter)
+    if type(iter)==str:
+        iter2 = [ord(x) for x in iter]
+    s = simplegui.create_sound([0]+iter2)
+    return str(s.args[0])[22+60:]
+
+#test case for base64 encoding:
+#Kevin van Zonneveld
+#S2V2aW4gdmFuIFpvbm5ldmVsZA==
+print base64([ord(x) for x in &quot;Kevin van Zonneveld&quot;])
+print base64(&quot;Kevin van Zonneveld&quot;)</pre></li>
+<li> read a file saved in CodeSkulptor / Dropbox / Google Docs
+
+    <pre>import urllib2
+import codeskulptor
+
+#read a file saved in CodeSkulptor
+filename1 = codeskulptor.file2url(&quot;user41_Jt0TU4WkWb_1.py&quot;)
+print filename1
+file1 = urllib2.urlopen(filename1)
+print file1.read(),&quot;\n&quot;
+
+#read a file saved in Dropbox
+def dropboxfile2url(url):
+    url = url.replace(&quot;www.dropbox.&quot;,&quot;dl.dropboxusercontent.&quot;)
+    return url
+filename2 = dropboxfile2url(&quot;https://www.dropbox.com/s/l399i20woznutqh/words.txt?dl=0&quot;)
+print filename2
+file2 = urllib2.urlopen(filename2)
+print file2.read(),&quot;\n&quot;
+
+#read a file saved in Google Docs
+def googlefile2url(url):
+    #converts
+    #https://docs.google.com/document/d/1TfP6xCQt0onaTzPKiOoAlUb7-CJqA6oaLEJi775wWtE/edit
+    #to
+    #https://docs.google.com/document/export?format=txt&amp;id=1TfP6xCQt0onaTzPKiOoAlUb7-CJqA6oaLEJi775wWtE
+    url = url.replace(&quot;/edit&quot;,&quot;&quot;)
+    baseurl = url.find(&quot;/&quot;,9)
+    part1 = url.find(&quot;/&quot;,baseurl+1)
+    part2 = url.find(&quot;/&quot;,part1+1)
+    url = url.replace(url[part1:part2+1],&quot;/export?format=txt&amp;id=&quot;)
+    return url
+filename3 = googlefile2url(&quot;https://docs.google.com/document/d/1TfP6xCQt0onaTzPKiOoAlUb7-CJqA6oaLEJi775wWtE/edit&quot;)
+print filename3
+file3 = urllib2.urlopen(filename3)
+print file3.read()</pre>
+</ul>
+<h3> <span class="mw-headline" id="Miscellaneous_Notes">Miscellaneous Notes</span></h3>
+<ul>
+<li><p>Save/Upload file to CodeSkulptor <a rel="nofollow" class="external text" href="http://codeskulptor.appspot.com/save/">CodeSkulptor Appspot Save Service</a> or <a rel="nofollow" class="external text" href="http://codeskulptor.appsp0t.com/save/">CodeSkulptor Appsp0t Save Service</a></p></li>
+<li><p>Download file from CodeSkulptor  <a rel="nofollow" class="external text" href="http://codeskulptor.appspot.com/download/">CodeSkulptor Appspot Download Service</a> or <a rel="nofollow" class="external text" href="http://codeskulptor.appsp0t.com/download/">CodeSkulptor Appsp0t Download Service</a></p></li>
+<li><p>If you have a CodeSkulptor url such as <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user40_random.py">http://www.codeskulptor.org/#user40_random.py</a>, it can be downloaded from:</p>
+<ul>
+<li><p><a rel="nofollow" class="external free" href="http://codeskulptor-user40.commondatastorage.googleapis.com/user40_random.py">http://codeskulptor-user40.commondatastorage.googleapis.com/user40_random.py</a></p></li>
+<li><p>or <a rel="nofollow" class="external free" href="http://commondatastorage.googleapis.com/codeskulptor-user40/user40_random.py">http://commondatastorage.googleapis.com/codeskulptor-user40/user40_random.py</a></p></li>
+</ul></li>
+<li><p>Codeskulptor AddOn Userscript (Latest version <a rel="nofollow" class="external free" href="https://greasyfork.org/en/scripts/4540-codeskulptor-addon">https://greasyfork.org/en/scripts/4540-codeskulptor-addon</a>) (Original <a rel="nofollow" class="external free" href="http://userscripts-mirror.org/scripts/show/179891">http://userscripts-mirror.org/scripts/show/179891</a>)</p></li>
+</ul>
+<h3> <span class="mw-headline" id="Useful_Imports">Useful Imports</span></h3>
+<ul>
+<li><p>web colors <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user20_iMfekD77iI0356V_5.py">http://www.codeskulptor.org/#user20_iMfekD77iI0356V_5.py</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)</p>
+<ul>
+<li><pre>import user20&#95;iMfekD77iI0356V_5 as webcolors</pre></li>
+</ul></li>
+<li><p>types <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user35_tHd8YbaP779p41U_0.py">http://www.codeskulptor.org/#user35_tHd8YbaP779p41U_0.py</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)</p>
+<ul>
+<li><pre>import user35&#95;tHd8YbaP779p41U_0 as types</pre></li>
+</ul></li>
+<li><p>StringIO <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user40_IWZDhhzwg07Z5o3.py">http://www.codeskulptor.org/#user40_IWZDhhzwg07Z5o3.py</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)</p>
+<ul>
+<li><pre>import user40_IWZDhhzwg07Z5o3 as StringIO</pre></li>
+</ul></li>
+<li><p>SVG image creation class and XML dictionary class <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user39_0S4vxutjil597Ty_3.py">http://www.codeskulptor.org/#user39_0S4vxutjil597Ty_3.py</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)</p>
+<ul>
+<li><pre>from user39&#95;0S4vxutjil597Ty&#95;3 import SVG
+from user39&#95;0S4vxutjil597Ty&#95;3 import xmldict</pre></li>
+</ul></li>
+</ul>
+<ul><li>JSON decoder class <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user37_8AZ27B6Tm8Gmq9B_0.py">http://www.codeskulptor.org/#user37_8AZ27B6Tm8Gmq9B_0.py</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)
+<div>
+<pre>import user37_8AZ27B6Tm8Gmq9B_0 as json
+# json.fetch(url) reads any url
+# json.decode(JSONString,optional key to search for)
+# json.eval(string_to_eval)
+</pre>
+</div></li>
+<li>YQL-based classes <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user37_sy2hPG6N72tRcaz_0.py">http://www.codeskulptor.org/#user37_sy2hPG6N72tRcaz_0.py</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)
+<pre>import user37_sy2hPG6N72tRcaz_0 as yql
+#    YQL functions
+#        - YQL.escape(text) URLEncodes the text
+#        - YQL.fetch(url) fetches the contents of the url
+#
+#    YQL object and methods
+#        - YQL(query string,optional additional url params) YQL object
+#        - YQL(q,a).decode(optional key to return) decodes the contents of the YQL object
+#        - YQL(q,a).decodeheaders(headers, optional key)
+#            decodes the contents of the YQL object, removing headers
+#        - YQL(q,a).raw() returns the JSON string response
+#        - YQL(q,a)['opened'] milliseconds to open the url
+#        - YQL(q,a)['read'] milliseconds to read the contents
+#        - YQL(q,a)['decoded'] milliseconds to decode the contents
+#
+#    YQLHack class
+#        - YQLHack.ip() returns (your string IP, a YQL object, method used)
+#            methods 1 and 2 use YQL's Javascript interpreter
+#            method 3 reads your IP address from http://useragent.cc/
+#            method 4 reads your IP address from http://www.whatsmyip.org/
+#        - YQLHack.dates(format) returns UTC dates such as now, yesterday, last month, 3 days ago, etc
+#        - YQLHack.date() returns today's date
+#
+#    Crypto class
+#        - Crypto.encodeSHA256(String secret, String plaintext)
+#            Encrypts a string using HMAC-SHA256 encryption.    Returns an encrypted string.
+#        - Crypto.encodeSHA1(String secret, String plaintext)
+#            Encrypts a string using HMAC-SHA1 encryption.  Returns an encrypted string.
+#        - Crypto.encodeMd5(String plaintext)
+#            Provides the MD5 hash of a string. Returns an MD5 hash of a BASE64-encoded string.
+#        - Crypto.encodeMd5Hex(String plaintext)    
+#            Provides the MD5 hash of a hex-encoded string. Returns an MD5 hash
+#        - Crypto.encodeSha(String plaintext)
+#            Provides the SHA-1 hash of a string.   Returns an SHA-1 hash.
+#        - Crypto.encodeBase64(String plaintext)
+#            Performs Base64 encoding of a string.  Returns an Base64 encoded string.
+#        - Crypto.decodeBase64(String plaintext)
+#            Performs Base64 decoding of a string.  Returns an Base64 decoded string.
+#        - Crypto.uuid()
+#            Provides a cryptographically secure version 4 Universal Unique Identifier (UUID).  Returns a UUID.
+#
+#    Zip class
+#        - Zip.decompress(base64_compressed_string)
+#            Decodes a base64 string and then decompresses that string with gunzip.
+#        - Zip.deflate(string, level=1)
+#            Deflates the given string into a zlib format at the specified 
+#            compression level and then Base64-encodes the result.
+#        - Zip.inflate(base64_deflated_string)
+#            Decodes the given Base64-encoded compressed string and 
+#            then inflates it.
+#
+#    DB object - not an actual database, but you can semi-permanently read and write to it
+#        - DB(optional YQL_store_select, optional YQL_store_update) DB object
+#            sets up access to a YQL storage
+#        - DB().ReadUserCookies(app_name,user)
+#            read all cookies for a given app and user
+#        - DB().ReadCookie(app,user,cookie)
+#            read a cookie for a given app, user, and cookie name
+#        - DB().ReadAppUsers(app,cookie)
+#            read all users for a given app and cookie
+#        - DB().WriteCookie(app,user,cookie,value)
+#            write a cookie for a given app, user, and cookie name</pre>
+</li>
+<li>SessionCookie class <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/#user39_SWD5iUaoIAQvHpx_2.py">http://www.codeskulptor.org/#user39_SWD5iUaoIAQvHpx_2.py</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)
+<pre>import simplegui
+from user39_SWD5iUaoIAQvHpx_2 import SessionCookie
+
+print SessionCookie.get(&quot;test&quot;)
+SessionCookie.set(&quot;test&quot;,117)
+print SessionCookie.get(&quot;test&quot;)
+
+print simplegui.Cookie.get(&quot;what&quot;)
+simplegui.Cookie.set(&quot;what&quot;,&quot;who&quot;)
+print simplegui.Cookie.get(&quot;what&quot;)</pre></li>
+<li>implementation of python's <span style="background-color: #f7f7f9;color:#d14;border: 1px solid #e1e1e8;font-family:monospace">super()</span> <a rel="nofollow" class="external text" href="http://www.codeskulptor.org/#user39_oKHcLUHi2y_5.py">user39_oKHcLUHi2y_5</a> (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)</li>
+</ul>
+<ul>
+<li><p>itertools's combinations (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)</p>
+<pre>from user40_CnRHY5re4YHmCKJ import combinations</pre></li>
+</ul>
+<ul><li>TinyWebDB (<a href="/wiki/index.php/User:Fb699c1b6f32adef9a3a43cb9fc775ad" title="User:Fb699c1b6f32adef9a3a43cb9fc775ad">saibotshamtul</a>)
+<br />Using the service provided by <a rel="nofollow" class="external free" href="http://appinvtinywebdb.appspot.com/">http://appinvtinywebdb.appspot.com/</a>, the following code can read/write a string to the cloud. 
+If you're going to use this for your game, choose a unique cookie name because this is public and anyone can read/write to any cookie.
+<pre>from user40_z7IvquyR5AIkShD_0 import TinyWebDB
+
+db = TinyWebDB()
+a = db.read_cookie('test')
+print a
+db.write_cookie('test','this is cool')
+print db.read_cookie('test')
+
+db.write_cookie('test',a)</pre>
+<p>App Inventor's TinyWebDB service has some limitations, but it provides instructions for running your own TinyWebDB service if you want privacy, or to not be bound by these limits.
+</p><p><br />According to the <b>App Inventor for Android: Tiny WebDB Service</b> site:
+</p>
+<div style="border:1px solid #888;margin:10px;padding:10px;background:#ffa;">
+<p><b>NOTE: This service is being modified. It might go offline without notice</b><br />
+This service is only a demo. 
+The database will store at most 250 entries; 
+adding entries beyond that will cause the oldest entries to be deleted. 
+</p>
+Also, individual data values are limited to at most 500 characters.</div>
+<p>If you set up your own TinyWebDB service, you can pass the service's url when creating the <code>TinyWebDB</code> object
+</p>
+<pre>db = TinyWebDB('http://appinvtinywebdb.appspot.com')</pre>
+</ul>
+<h3> <span class="mw-headline" id="Viz_mode">Viz mode</span></h3>
+<p>There is an experimental version of CodeSkulptor available at <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/viz">http://www.codeskulptor.org/viz</a> . </p>
+<p>Viz mode replicates the functionality of the popular Python visualization tool, <a rel="nofollow" class="external text" href="http://pythontutor.com">Online Python Tutor</a>, inside CodeSkulptor. </p>
+<p>The professors encourage you to experiment with Viz mode and welcome your feedback in <a rel="nofollow" class="external text" href="https://class.coursera.org/interactivepython1-002/forum/list?forum_id=10008">this forum</a>. </p>
+<h3> <span class="mw-headline" id="Experimental_Practice_excercises">Experimental Practice excercises</span></h3>
+<p>There is another experimental version of CodeSkulptor available at <a rel="nofollow" class="external free" href="http://www.codeskulptor.org/iipp-practice-experimental/">http://www.codeskulptor.org/iipp-practice-experimental/</a> </p>
+<p>Professor Warren's post in the forums reads:</p>
+<div style="margin-left:10px;padding:5px;background-color:#DDD;border-radius:10px;">
+<div style="display:block;background-color:#bbb;padding:5px;border-radius:2px;"><a rel="nofollow" class="external text" href="https://class.coursera.org/interactivepython1-002/forum/profile?user_id=527518">Joe Warren</a> <span style="padding:1px 3px 2px;color:white;background-color:#3c4f61;text-transform:uppercase;font-size:10px;">Instructor</span> <a rel="nofollow" class="external text" href="https://class.coursera.org/interactivepython1-002/forum/thread?thread_id=8#post-8"><span style="font-size:11px">(permalink)</span></a></div>
+<div style="margin-left: 0px;display:block;padding:5px;">
+<a rel="nofollow" class="external text" href="https://www.coursera.org/user/i/6c69896f7e1b5c3b3d0d654c28d3d1a7">Lawrence Strickland</a> (a CTA) has developed a new, <i>experimental</i>, interface to help make the practice exercise experience better for students. It's still just an experiment, but we'd love if you could help us test it out, find bugs, and give us some feedback on the design and usefulness.&#160;<br /><br />You can play with&#160;the new interface here:<br /><a rel="nofollow" class="external free" href="http://www.codeskulptor.org/iipp-practice-experimental/">http://www.codeskulptor.org/iipp-practice-experimental/</a><br /><br />The practice exercises are built on top of CodeSkulptor and are located in a tab on the bottom right side of the page:<br /><br />Clicking on the tab will maximize or minimize the tab.&#160;The tab contains a list of all the currently available categories of exercises. Inside each section is a pull down menu containing the individual exercises. Selecting an exercise will bring up a description of that exercise and some buttons.&#160;Clicking the Template button will load an exercise's template. The Solution button loads the solution. If available,&#160;clicking Check My Code will check to make sure your code meets the requirements of the exercise.<br /><br />New exercises will be released in the coming weeks.<br /><br />We'd love if you could help test us out with this experiment. If you have any comments/suggestions/criticisms, please post them&#160;in this thread. If you encounter an error or bug, please tell us about it in this thread. Please include the following:<br />OS:&#160;<br />Browser:<br />Issue:<br />Screenshot:<br /><br />Thanks for your help&#160;:)<br /></div>
+</div>
+<h3> <span class="mw-headline" id="Bugs">Bugs</span></h3>
+<ul>
+<li>Cursor doesn't change in Insert mode (Chromium for Linux)</li>
+<li>While zooming out/in on the website using Ctrl+scroll (Windows), you are no longer able to scroll to the bottom of the Insert mode, because the scroll bar goes automatically up every time it is scrolled down.</li>
+<li>Mouse clicks register outside the area of the canvas (up to CANVAS_WIDTH + 3)</li>
+<li>Commenting (Ctrl-K) does not work when cursor is at 1st position (Chromium for Linux)</li>
+<li>Copying a whole line  from position 1 by using Ctrl-C and Ctrl-V gives an extra Linefeed (Chromium for Linux)</li>
+</ul>
+<hr />
+<p><a href="/wiki/index.php/Interactivepython:Main" title="Interactivepython:Main">Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 237/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Interactivepython:CodeSkulptor&amp;oldid=33130">https://share.coursera.org/wiki/index.php?title=Interactivepython:CodeSkulptor&amp;oldid=33130</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

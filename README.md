@@ -38,7 +38,13 @@ and should look as follows:
     ...
     maestro_login_flag  1   .coursera.org   /   2017-01-06T18:04:37.776Z ...
 
-Then edit the file `wiki_extract.py` and update the list of categories.
+Then edit the file `wiki_extract.py` and update the list of categories.  If you leave 
+the categories as an empty list, the code will try to retrieve Coursera's main page
+and pull out the links:
+
+https://share.coursera.org/wiki/index.php/Courses
+
+If you are pulling from a different MediaWiki - this code will need altering.
 
 Since I happen to also be storing the html, markdown, and images for my categories
 in this github repo, you probably want to remove these folders before starting the spider.

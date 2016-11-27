@@ -1,0 +1,51 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Distributions</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h2> <span class="mw-headline" id="Distributions">Distributions</span></h2>
+<p><b>A probability distribution function</b> (AKA PDF, probability density function, probability function, or density) is a function that indicates the probability that a given random variable will take on a particular value.  If a random variable is discrete (i.e. the value of the random variable is contained in a countable set of values), then the probability density function, $$ f(x) $$ of a random variable $$ X $$ is:</p>
+<p>$$f(x) = P(X=x)$$.</p>
+<p>For example, if a random variable for weather, $$W$$, can be either "$$w^0$$(cloudy)", "$$w^1$$(rainy)", "$$w^2$$(snowy)", or "$$w^3$$(clear)" with probabilities 0.3, 0.2, 0.1, and 0.4 respectively, then the probability density function for $$W$$ would be</p>
+<p>$$f(w^0) = 0.3$$,
+$$f(w^1) = 0.2$$,
+$$f(w^2) = 0.1$$, and
+$$f(w^3) = 0.4$$.</p>
+<h2> <span class="mw-headline" id="Joint_Distributions">Joint Distributions</span></h2>
+<p>The multivariate form of a probability distributions function is a function that indicates the probability that a list of random variables will take on a list of values.  If the random variables are discrete, the joint probability density function, $$f(x&#95;1, x&#95;2, \ldots, x&#95;n)$$ for random variables </p>
+<p>$$X&#95;1, X&#95;2, \ldots, X&#95;n$$ </p>
+<p>is defined by </p>
+<p>$$f(x&#95;1, x&#95;2, \ldots, x&#95;n) = P(X&#95;1=x&#95;1, X&#95;2=x&#95;2, \ldots, X&#95;n=x&#95;n)$$.</p>
+<p>For example, if a random variable for a beverage of type $$B$$ can take on values $$b^0$$(coffee) and $$b^1$$(tea) and another random variable for taste $$T$$ can take on values $$t^0$$(bitter) and $$t^1$$(sweet), then the joint distribution function, $$f$$, for these random variables could have the form</p>
+<p>$$f(b^0, t^0) = 0.3$$, $$f(b^0, t^1) = 0.2$$,  $$f(b^1, t^0) = 0.05$$, and $$f(b^1, t^1) = 0.45$$</p>
+<p>indicating that coffee is more likely to be bitter than tea.  Note that for the above example, the probability that a random beverage is bitter coffee, $$P(B=b^0, T=t^0)$$ is 0.3 or 30 percent and the probability that a random beverage is sweet $$P(T=t^1)$$ is 65 percent because </p>
+<p>$$P(T=t^1)= P(T=t^1,B=b^0) + P(T=t^1,B=b^1)= 0.2 + 0.45 = 0.65.$$</p>
+<h2> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h2>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/pgm-003/lecture/1">Link to Video</a></p>
+ <pre> 
+0:05    Joint Distribution
+0:53    Joint distribution table
+1:39    Independent parameters
+2:12    Conditioning
+2:51    Conditioning: Reduction
+3:12    Conditioning: Renormalization
+4:07    Marginalization
+ </pre>
+<p><a href="/wiki/index.php/PGM:Main" title="PGM:Main"> Return to Main Page</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Distributions&amp;oldid=10406">https://share.coursera.org/wiki/index.php?title=PGM:Distributions&amp;oldid=10406</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,38 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Conrob:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Control_of_Mobile_Robots">Control of Mobile Robots</span></h1>
+<p>Welcome to the Course Wiki for Control of Mobile Robots.</p>
+<p>Since the Wiki is public, your contributions will also be shared with your classmates, the TAs and Professor.</p>
+<h2> <span class="mw-headline" id="To_add_maths_symbols_into_a_discussion_forum_post:">To add maths symbols into a discussion forum post:</span></h2>
+<p>For maths symbols such as the dreaded $$\dot{x}$$ have a look at <a rel="nofollow" class="external free" href="http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols">http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols</a> for the LaTeX codes then enter them in your post with <code>$$</code> on either side. For example, to enter $$\dot{x}$$ type <code>$$\dot{x}$$</code> and you can then check it in the Instant Preview by clicking the 'Render Math' button above the Instant Preview.</p>
+<p>For a short general introduction to LaTeX math mode, see <a rel="nofollow" class="external free" href="http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Math">http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Math</a>.</p>
+<h2> <span class="mw-headline" id="Useful_resources_on_differential_equations">Useful resources on differential equations</span></h2>
+<p>The following links might be useful for learning more on differential equations, integrations and other heavy duty maths subjects. Thanks to all the the contributors in this thread <a rel="nofollow" class="external free" href="http://class.coursera.org/conrob-001/forum/thread?thread_id=397">http://class.coursera.org/conrob-001/forum/thread?thread_id=397</a> for their suggestions.
+<ol>
+<li><a rel="nofollow" class="external free" href="http://ftp.jaist.ac.jp/pub/sourceforge/j/jh/jhsrobo/Programming/Idiot%20Guide%20to%20PID%20Algorithm.pdf">http://ftp.jaist.ac.jp/pub/sourceforge/j/jh/jhsrobo/Programming/Idiot%20Guide%20to%20PID%20Algorithm.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/">http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.khanacademy.org/math/differential-equations">http://www.khanacademy.org/math/differential-equations</a></li>
+<li><a rel="nofollow" class="external free" href="http://patrickjmt.com/#differential-equations">http://patrickjmt.com/#differential-equations</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.wolframalpha.com/input/?i=differential+equations">http://www.wolframalpha.com/input/?i=differential+equations</a></li>
+<li><a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Differential_equation">http://en.wikipedia.org/wiki/Differential_equation</a></li>
+</ol></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Conrob:Main&amp;oldid=18646">https://share.coursera.org/wiki/index.php?title=Conrob:Main&amp;oldid=18646</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

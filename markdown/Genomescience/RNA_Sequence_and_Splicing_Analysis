@@ -1,0 +1,317 @@
+Today we are going to talk about RNA Expression Analysis Part Two which is going to largely deal with RNA sequencing. 
+#### RNA Sequencing Is Massively Parallel EST Sequencing
+[[File:ExSciGen\_L11\_S02\_RNA-SeqMassivelyParallelESTSequencing.png|160px|thumb|right|RNA Sequencing Is Massively Parallel EST Sequencing (Slide 02)]]
+*[0:00:12][Slide 02]
+
+RNA sequencing or RNA-seq is a massively parallel expressed sequence tag (EST) sequencing technology. EST sequencing started in the early 90s and was basically the sequencing of random cDNAs. While it was great for gene identification, it was not ideal for quantification. It was expensive to generate the data, the data quality were relatively poor, and there was a lot of non-uniform depth of coverage—for example, while one library may have 1,000 cDNAs EST tags available another library may have 10,000 which made differential gene expression tricky.
+
+Massively parallel sequencing which sort of over the last five or so years has become de rigueur overcame many of these problems. In fact today 50 million reads per sample in 100 base-pair paired end Illumina run costs about the same as it does to run an array.
+
+However, the sequences are usually shorter then EST sequencing tags which today go about 800 base pairs. So they are not quite as powerful for looking at splicing.
+
+#### RNA Sequencing on Illumina
+[[File:ExSciGen\_L11\_S03\_RNASeqOnIllumina.png|160px|thumb|right|RNA Sequencing on Illumina (Slide 03)]]
+*[0:01:31][Slide 03]
+
+Here is a brief schematic on how RNA-seq works on the Illumina platform. First you take an mRNA, you can either fragment the mRNA prior to labeling or you can reverse transcribe and then fragment the fragment cDNA. In any event, once you have the fragmented reverse transcribed cDNA, you would next adapt those cDNA sequences with small adaptors and sequence them on a high-throughput sequencer—for example, Illumina HiSeq. 
+
+After the data is generated these sequences are then mapped to the genome and you generate intensity values on an exon-by-exon or gene-by-gene or splice-junction-by-splice-junction basis.
+#### Platform Comparison
+[[File:ExSciGen\_L11\_S04\_PlatformComparison.png|160px|thumb|right|Platform Comparison (Slide 04)]]
+*[0:02:19][Slide 04]
+
+Illumina isn’t the only technology to do RNA sequencing, 454 sequencing or pyrosequencing is also quite effective. The read links are longer than Illumina sequencing, they can go up to 400 base pair, but in general the number of reads is much lower. So the cost for generating enough data to do a differential gene experiment is quite high.
+
+Likewise, the ABI [Applied Biosystems] SOLiD platform can generate data. The read links tend to be shorter and to generate the data isn’t quite as inexpensive as it is on the Illumina platform. 
+
+So today we are going to talk mostly about the Illumina platform rather than the other platforms. 
+
+### Mapping Is Tricky
+[[File:ExSciGen\_L11\_S05\_MappingIsTricky.png|160px|thumb|right|Mapping Is Tricky (Slide 05)]]
+*[0:03:07][Slide 05]
+
+The first aspect that is sort of a tricky one with RNA sequencing is the mapping problem. Once you generate the data mapping, especially of transcript data is actually quite tricky, that is because transcripts are spliced and gapped alignments are much harder than un-gapped alignments. They are computationally more intensive, they take longer.
+
+Confounding this is the observation that most of the read links that we are generating with our RNA sequencing are relatively short compared to EST sequences. 
+Error rates of the high-throughput sequencing are relatively high when compared to Sanger methods and highly biased to the 5’ and 3’ ends. 
+Spliced donors and acceptors sites when you are mapping often are not clear, so you can have mis-mapping occurrences. 
+cDNAs often have repetitive sequences, there are a number of Alu repeats that are in thousands of human cDNAs and these repetitive sequences can be extremely difficult to map accurately, if not impossible without a paired end.
+
+There are many available algorithms to help tackle the mapping problem. Some of the most popular are TopHat, GSNAP, MapSplice, and RUM. It is safe to say that none of them can do the job perfectly, and all of them have their quirks.
+
+### Mapping Spliced DNA
+[[File:ExSciGen\_L11\_S06\_MappingSplicedDNA.png|160px|thumb|right|Mapping Spliced DNA (Slide 06)]]
+*[0:04:40][Slide 06]
+
+This is just an illustration of mapping a spliced RNA. Here we have a pre-mRNA sequence which contains exonal sequences in orange and introns indicated in black. When the pre-mRNA is spliced, obviously it makes a contiguous mRNA sequence. Short reads can map either entirely within an exon or between exons and over an intronal junction. The reason that mapping this computationally can be tricky is these introns here, these black sequences, can be tens of or even hundreds of kb long which makes the mapping problem quite difficult.
+
+### Quantification Is Tricky
+[[File:ExSciGen\_L11\_S07\_QuantificationIsTricky.png|160px|thumb|right|Quantification Is Tricky (Slide 07)]]
+*[0:05:29][Slide 07]
+
+After the mapping step you try to arrive at a measure of the intensity of the expression. This can be done at the gene level, at the exon level, or at the splice-junction level. At the gene level the method that appears to have gained the most traction is the RPKM method, or reads per kilobased per million reads mapped method by Mortazavi et al. from the Wohl Lab.
+
+The advantage of this method is that it normalizes both for the cDNA length, so the probability you will have more sequence tags mapped to a longer cDNA is higher than for a shorter cDNA. Also, sequencing depth—you might have one sample that is sequenced at 20 million read depth and another that is sequenced at 30 million read depth. This RPKM method gets around both of these limitations.
+
+However, depending on the sampling—for example, a ten million versus a hundred million reads—the underlying distribution of gene expression can be quite different between the two and that really complicates differential expression analysis. This is an area that is under rapid development and new methods are being generated every day.
+
+You can also do quantification at the exon level. There typically you can compute on exon junctions, a variant on the RPKM method, but this is also a largely unsolved problem and there is no perfect solution. So I think in this particular arena, the quantification arena, there is a lot of room for bioinformatic improvement. 
+
+[[File:ExSciGen\_L11\_S08\_DifferentialExpressionIsTricky.png|160px|thumb|right|Differential Expression Is Tricky (Slide 08)]]
+*[0:07:15][Slide 08]
+
+Because emitting the intensity values is tricky, determining differential gene expression is likewise tricky because it depends on that step. In addition to biological noise in the array studies we talked about in the last lecture, the number of reads per sample can vary considerably even when doing similar samples in a multiplexing environment. So even though you think you’ve done everything exactly equivalently you can still have once sample sequenced at 30 million depth and another at 75 million read depth. That can complicate differential expression. 
+
+In addition, compared to array studies the molecular biology for RNA sequencing is a lot more variant so there are protocols that bias sequence towards the 5’ end (strand specific protocols for example), towards the 3’ end (polymerase protocols for example) and small RNA protocols. All of these different protocols can make comparing data generated between them very tricky if not unadvisable all together.
+
+Obviously mapping errors can have a major impact on differential expression. 
+### How Deep to Go
+[[File:ExSciGen\_L11\_S09_HowDeepToGo.png|160px|thumb|right|How Deep to Go? (Slide 09)]]
+*[0:08:28][Slide 09]
+
+That prompts the question, how deep do you actually need to go? Here on this graph we have taken mouse liver and sequenced it at up to 90 million reads of 100 base paired-end sequences. We have taken the data and mapped it across all exons from RefSeek and then looked at the number of exon covered by one or more reads, by more than two reads, or by more than five reads.
+
+When you look at this what you see is that there is a rapid increase in the number of sequences mapped as you increase the read depth and then you have this plateauing function near the end. If we take the most conservative condition which is more than five reads per exon, here you can see that we have largely plateaued at about 50% of transcripts, which compares pretty favorably to DNA arrays where 50% expression would be on the high side.
+
+If you went out another 100 or 200 million more reads, this value would continue to rise. So when you talk about trying to determine how deep you need to go, you need to consider what your ultimate goal is. 
+
+### It Depends on Your Goal
+[[File:ExSciGen\_L11\_S10_ItDepends.png|160px|thumb|right|It Depends on Your Goal (Slide 10)]]
+*[0:10:00][Slide 10]
+
+If it is every last transcript then more is better, 200 million reads you will probably still find new transcript expressed in your sample. However, if you are more interested in splicing, more coverage is better, the more reads you have across a junction the more confident you can be in determining that that event A occurred and B quantifying the event. 
+
+Also different types of sequencing require different amounts of coverage. So total RNA sequencing requires more sequence than poly A sequencing. Of course, as a lab head or PI or a graduate student or a post doc doing the work costs could very well be a factor. As you could see on the previous graph there is a plateau and diminishing returns. You have to decide whether or not doubling the cost by generating twice as many reads is worth a 5% incremental improvement in detecting gene expression.
+
+### Comparison with Array Technology
+[[File:ExSciGen\_L11\_S11_ComparisonWithArrayTechnology.png|160px|thumb|right|Comparison with Array Technology (Slide 11)]]
+*[0:11:01][Slide 11]
+
+If we compare methodologies in RNA sequencing with that from DNA arrays, which we talked about in our last lecture, you can see there are many similarities and many differences. Although the principles are quite different, one is hybridization based and one is cloning and sequencing based, they have commonalities and differences. 
+
+With a arrays a big difference is you actually do need a genome before you can design the array. In fact, if it is a cDNA you need the clones at hand (?) before you can make the array. With RNA sequencing you do not practically need a genome to do it. I will show you an example later of de novo RNA sequencing. But if you are interested in really going deep into a transcriptome and doing differential gene expression it really does help to have a genome and an annotated genome at that.
+
+Likewise while cross-hybridization is a problem for DNA arrays, theoretically it is not a problem for RNA sequencing, but practically when you are mapping sequences, especially repetitive sequences, it does become an issue. It is not exactly cross-hybridization, but you can have a sequence tag mapped to more than one location in the genome, sometimes more than one transcript in the genome.
+
+With RNA sequencing, because you have base level resolution, allele specificity is possible. In general, that is not the case for DNA arrays, although depending on how you design the arrays it can be possible.
+
+Likewise, splice forms can be detected by both arrays and by RNA sequencing. However, with arrays you need to tile down either the junctions or the possible junctions; whereas with RNA sequencing you do not need to know the splice forms de novo.
+
+With arrays you really cannot detect new genes and genes you have not put down on the array; whereas sequencing does not require you to know what is there a priori. Both technologies can accomplished strandedness. So arrays you could put down either strand if you need to, for example a short oligonucleotides or long oligonucleotides.
+
+The dynamic range is better for sequencing depending on read depth. If you sequence 50 million or 100 million reads on a sample from a complex vertebrate genome, you have thousands of fold dynamic range.  Likewise if you… both technologies are highly reproducible. I will give a slide in a minute that will show the reproducibility of both technologies.
+
+Cost wise to generate the data they are roughly, approximately the same, depending on how you generate the data. But with RNA sequencing there are added computational costs which are not insignificant, in fact make up the larger challenge in analyzing the data.
+
+
+* [0:14:11][Question 1]
+### Question 1
+Q1: What are the differences between arrays and RNA sequencing for gene expression?
+* A) RNA-seq can have better dynamic range
+* B) RNA-seq can be stranded
+* C) Arrays are easier to analyze
+* D) A & C
+* E) A, B and C
+
+The answer is A & C (D). RNA-seq can have better dynamic range—I say can because it depends on the read depth—and DNA arrays are generally easier to analyze.
+
+### Are the Technologies Comparable?
+[[File:ExSciGen\_L11\_S14_AreTheTechnologiesComparable.png|160px|thumb|right|Are the Technologies Comparable? (Slide 14)]]
+*[0:14:47][Slide 14]
+
+Let’s talk about if the sequences are comparable. We are going to do an experiment here, we going to do a head-to-head comparison with exactly the same samples. Our samples are going to come from c57 black 6 mice from three to five mice per sample taken at three different times of the day on two consecutive days. We have overcome biological error and independent replicates. We have biological error and technical error addressed.
+
+The arrays were done on the Affymetrix platform and RNA sequence was done on Illumina. We looked at how these replicates compared between and within technologies.
+### Technology Comparisons
+[[File:ExSciGen\_L11\_S15_BothTechnologiesAreReproducible.png|160px|thumb|right|Both Technologies are Reproducible (Slide 15)]]
+*[0:15:34][Slide 15]
+
+Here are the comparisons. On the top of the slide we have RNA sequencing and this is replicate one here and replicate two here. If you look at all the genes that are expressed in this particular tissue—liver—and you do an XY plot you can see that there is extremely good reproducibility between sequencing, an r<sup>2</sup> value of 0.98.
+
+This is at one time of the day. There are two other cases and they are nearly identical; again, extremely reproducible technology [reliable results]. We took the same samples and put them on exon arrays on the Affymetrix platform. Again, with replicate one and replicate two you can see very good reproducibility, maybe even slightly higher than RNA sequencing, an r<sup>2</sup> value of 0.98. Although I’d want to do that experiment several more times before concluding that. Both technologies are extremely reproducible.
+
+#### Correlation between Technologies
+[[File:ExSciGen\_L11\_S16_CorrelationBetweenThem.png|160px|thumb|right| Correlation between Technologies (Slide 16)]]
+*[0:16:31][Slide 16]
+
+When we look between technologies plotting the values from arrays on one axis and the values from sequencing on the other axis on a gene-by-gene basis, you can see that the r<sup>2</sup> value is not quite as good. That is because of dynamic range issues but also other factors.
+
+
+* [0:16:56][Question 2]
+#### Question 2
+Q2: What reasons could explain this?
+* A) Different dynamic ranges
+* B) RNA-seq looks at one region of a transcript whereas arrays look at more than one region
+* C) Quantification by array is not as good
+* D) Arrays require the gene to be annotated
+
+Here the answer is A, the two technologies have different dynamic ranges. It is true that RNA-seq can look at one region of a transcript but in general you are sequencing the whole transcript you are not doing 3’ biased. In general you are sequencing the whole transcript. Quantification by array we just showed is just as good as RNA sequencing. It is true that arrays require the gene to be annotated but that does not have anything to do with whether or not the two technologies do not compare.
+
+### Alternative Splicing Events
+[[File:ExSciGen\_L11\_S19_AlternativeSplicing.png|160px|thumb|right|Alternative Splicing (Slide 19)]]
+*[0:17:48][Slide 19]
+
+The real reason that most people do RNA sequencing instead of arrays is to get at alternative splicing issues. This is just a really brief overview of alternative splicing events which can include:
+* Constitutive splicing—where you have the same splice form made every single time.
+*Exon skipping event—where you can have one exon, in this case this one, skip in the mature transcript to over here.
+*Intron retention—where a small chunk of the intron is retained in the mature transcript.
+*Mutually exclusive exons—where you have two very different transcripts that are made.
+*Alternative 5’ and 3’ splice sites—different forms are made because of the alternative forms.
+
+In RNA sequencing you can find all of these events.
+
+### Applications
+#### Application: RNA Splicing
+[[File:ExSciGen\_L11\_S20_ApplicationRNASplicing.png|160px|thumb|right|Application RNA Splicing (Slide 20)]]
+*[0:18:43][Slide 20]
+
+
+Here is an example of mapping out splice junctions for the SYT1 gene. What you see is that the various exons, which are here at the bottom of the screen, have multiple reads that span various exons. You can see reads that span between this exon here and this exon here. Pretty much all of the exons in the transcript are covered by these events. From looking at these events you can find issues where you have retained introns, alternative exons, mutually exclusive exons, and the various other events.
+
+#### Application: Disambiguation of Overlapping Transcripts
+[[File:ExSciGen\_L11\_S21_Application-DisambiguateOverlappingTranscripts.png|160px|thumb|right|Application – Disambiguation of Overlapping Transcripts (Slide 21)]]
+*[0:19:32][Slide 21]
+
+Another application of RNA sequencing can be disambiguation of overlapping transcripts. Here is an example of two transcripts, Nr1d1 (Rev-ErbA alpha) and Thra (thyroid hormone receptor alpha). What you see is that they both have similar expression profiles over the day in the mouse liver. It so happens that these transcripts are head-to-tail in the genome. One goes like this and the other one comes back and they have an overlapping region in their transcription. This happens to be near where probes are often been designed with arrays to detect their expression. So it was a little bit difficult to figure out what was going on at this particular locus simply looking at array data.
+
+##### Nr1d1 and Thra Messages Overlap
+[[File:ExSciGen\_L11\_S22_NR1D1.png|160px|thumb|right|Nr1d1 and Thra messages overlap (Slide 22)]]
+*[0:20:19][Slide 22]
+
+Although the messages overlap, in this case because we have paired end sequencing we can use a read up-stream or down-stream to find out which transcript of this particular read matches to, either Nr1d1 or Thra. 
+
+##### Most Reads are Unambiguous
+[[File:ExSciGen\_L11\_S23_MostReadsAreUnambigous.png|160px|thumb|right|Most Reads are Unambiguously Nr1d1 (Slide 23)]]
+*[0:20:43][Slide 23]
+
+In this case we can tell that most of the reads at this particular locus are mapping unambiguously toward Nr1d1 and not towards Thra. Therefore the probability is that our array signal is an artifact.
+
+#### Application: Looking at miRNAs
+[[File:ExSciGen\_L11\_S24_ApplicationLookingAtmiRNAs.png|160px|thumb|right|Application – Looking at miRNAs (Slide 24)]]
+*[0:20:59][Slide 24]
+
+Another example of the power of RNA sequencing is to detect new entities, in this case looking at micro-RNA expression. This is a cluster of micro-RNAs that are made off the same transcript. When we looked at this particular locus we were able to see that they had a variation in their transcription over the day. Here you can see this peaks here, here, and here. In this this particular case when we quantify these regions we found that all of these transcripts which were the mir292 cluster basically had this same identical pattern. The parental transcript does as well. 
+
+#### Application: Lots of Expressed Intronic Sequences
+[[File:ExSciGen\_L11\_S25_ApplicationLotsOfIntronicSequences.png|160px|thumb|right|Application – Lots of Expressed Intronic Sequences (Slide 25)]]
+*[0:21:44][Slide 25]
+
+One other interesting thing you can see with sequencing data that you do not get with arrays are region of the genome that you did not query. In this case we are looking at a particular gene DE box-binding protein or Dbp. Dbp has this exonal structure. Here is exon 1, exon 2, exon 3 and exon 4. What we are seeing here in our RNA sequencing data is quite a bit of signal between exons 1 and exons 2.
+
+When we look at the expression of the spliced form of this message, we see a robust oscillation in the transcription. We see a similar robust oscillation in the transcription of the intronal sequence, so a read here and a read down-stream. Those reads are also quantified not just by RTPCR but also by Northern blots where you can see the conservation of this expressed intronic sequence.
+
+#### Application: Finding New Long Noncoding RNAs (Lincs)
+[[File:ExSciGen\_L11\_S26_ApplicationFindingNewLongNoncodingRNA.png|160px|thumb|right|Application – Finding New Long Noncoding RNAs (Lincs) (Slide 26)]]
+*[0:22:51][Slide 26]
+
+
+One of the most interesting developments over the last decade or so has been the discovery of none coding transcripts that have functional consequences. These are sometimes called lincs for long non-coding RNAs. Here are a couple of lincs, one on chromosome six and one on chromosome seven. From looking at RNA sequencing we found novel lincs that have not been annotated previously that have variance in their transcription over the day. It is another type of information that you get from RNA sequencing that you do not get from arrays.
+
+#### Applications: De Novo RNA Sequencing
+[[File:ExSciGen\_L11\_S27_ApplicationsDeNovoRNA-Seq.png|160px|thumb|right|Applications - De Novo RNA Sequencing (Slide 27)]]
+*[0:23:35][Slide 27]
+
+
+We talked earlier about one of the advantages of RNA sequencing being de novo RNA-seq. Here is an example of de novo RNA-seq. In this particular case we wanted to sequence our favorite genes from Syrian hamsters which do not yet have a genome sequence, though by the time you read this it probably will have a genome sequence. Genome sequences have been dropping like flies (no pun intended). But today [Syrian hamsters] they don’t have a genome sequence.
+
+RNA-seq can do this while arrays cannot. What we did was sequenced poly A plus RNA from liver from the Syrian hamster and 165 million reads. We used an algorithm called Trinity from the Grabherr group to do de novo alignments of these de novo RNA sequencing. Then we took those assemblies and did BLASTX to find species orthologs. In this particular case we were able to find 16 of the 18 factors that we were interested in. 
+
+#### Applications: De Novo RNA Sequencing I
+[[File:ExSciGen\_L11\_S28_ApplicationsDeNovoRNA-Seq.png|160px|thumb|right|Applications – De Novo RNA-Seq (Slide 28)]]
+*[0:24:38][Slide 28]
+
+I will show you an example. Here is a gene Arntl or BMAL1. The mouse form is in red on top. That is the annotated folding form of the gene.  From mapping our hamster assemblies onto the mouse form by BLASTX we were able to find a big chunk of the hamster form. In this particular case the assay worked pretty well.
+
+Here we have 2,884 reads or approximately 100x coverage of the transcript. We are still not getting all of it. We will talk about reason for that in a minute.
+
+#### Applications: De Novo RNA Sequencing II
+[[File:ExSciGen\_L11\_S29_ApplicationsDeNovoRNA-Seq.png|160px|thumb|right|Applications – De Novo RNA-Seq (Slide 29)]]
+*[0:25:22][Slide 29]
+ 
+Here is an example where it worked okay but not quite as well. Here is a gene called Arhgap17. It doesn’t exactly roll off the tongue. Here is the hamster assembly that we got from Trinity. When we compare that from the mouse form we see this pretty weird inversion where the mouse form, which of course normally goes 5’ to 3’ and works fine. In this case because of the eccentricity of the algorithm it mapped the hamster form incorrectly. So while the hamster form should go like this and like this, it does not go that direction since it has gotten mixed up. This could be because the sequences here are repetitive and it is just simply bound to matching sequences or just for strange reasons.
+
+
+* [0:26:19][Question 3]
+#### Question 3
+Q3: Despite 100x coverage, the cDNA appears incomplete for Arntl or BMAL1. What could explain that?
+* A) Poor representation of 5’ and 3’ ends of a cDNA due to library construction methods
+* B) Mapping issues for repetitive sequences
+* C) Species differences
+* D) Tissue specific transcripts
+* E) All of the above
+
+In this particular case it is all of the above. We could very well poor representation of the 5’ and 3’ ends. One of the things that happen with sequencing is that there is a fragmentation step and so frequently the 5’ ends of the gene have this sort of step function and the 3’ ends of the gene also have a step function. This is largely due to the sonication step in fragmenting the gene.
+
+It could also be due to repetitive sequences. We have talked about that a little bit. They can be very difficult to map. Therefore we may have excluded them in the de novo mapping. 
+
+There could be species differences so the 5’ end of the hamster gene could be very different from the 5’ end of the mouse gene.
+
+There could also be tissue specific transcripts. Remember most of the time we are looking at a ref seq transcript, a reference transcript. That reference transcript may have come from brain or from liver or from adrenal gland or what have you and the form that we are looking at in this particular tissue may be different. [Therefore] all of these answers are correct.
+
+#### Applications: Allele Specific Expression and RNA Editing
+[[File:ExSciGen\_L11\_S32_ApplicationsAlleleSpecificExpressionAndRNAEditing.png|160px|thumb|right|Applications – Allele Specific Expression and RNA Editing (Slide 32)]]
+*[0:27:57][Slide 32]
+
+Another application of RNA-seq is going after base-level changes which can occur during things like allele specific expression or during RNA editing. Base-level expression allows for detection of both of these events. 
+
+There is an example of allele specific expression analysis using RNA-seq in the Gregg et al paper from Catherine Dulac’s lab which was published in Science in 2010. There is an example of A-to-I editing events from Jin Billy Li who is now at Stanford, when he was in George Churches laboratory in Science in 2009.
+
+These methods reply on deep accurate coverage of RNA and sometimes DNA too, when you need to measure the DNA, for example in an outbred population like humans. This can be technically challenging.
+
+#### Allele Specific Expression I
+[[File:ExSciGen\_L11\_S33_AlleleSpecificExpression.png|160px|thumb|right|Allele Specific Expression (Slide 33)]]
+*[0:28:49][Slide 33]
+
+Here is a case of looking at allele specific expression, if you want to think about it in a simple straight-forward fashion. In this case we are going to setup two reciprocal crosses. We are going to have one strain of mouse, for example a C57 black 6 strain in blue or an outbred (?) strain here in red. For a gene that has classical bi-allelic expression you expect that each allele is going to be equivalently expressed when you cross these two animals.
+
+However, for a paternally expressed gene you are going to see expression of only the paternal allele and the exclusion of the maternal allele. For a maternally expressed gene, these two crosses down here, you see the expression of only the maternal allele. This can happen during processes like imprinting.
+
+#### Allele Specific Expression II
+[[File:ExSciGen\_L11\_S34_AlleleSpecificExpression.png|160px|thumb|right|Allele Specific Expression (Slide 34)]]
+*[0:29:48][Slide 34]
+
+Here is an example of what that looks like at the base level. Here are two conditions. On the top we have a bi-allelic expression condition. In this case we are going to look at base-level changes. We are going to measure the paternal and the maternal parent alleles separately and by themselves. Here we see that the paternal allele has an A at this position while the maternal allele has a T. From a bi-allelic expressed message we are going to see roughly the same number of both alleles in the F1.
+
+However, in allelic imbalance when you cross these two animals, here we are going to see over-representation of the paternal allele. There are more As here than Ts here. We are going to call that allele-specific expression. In this case it is relatively dramatic but not a complete imprinting where 100% of the transcript could come from the paternal allele.
+
+
+* [0:30:47][Question 4]
+#### Question 4
+Q4: What are confounding factors in determining allelic expression?
+* A) DNA differences
+* B) Alignment errors
+* C) Depth of coverage
+* D) Poor adapter trimming
+* E) All of the above
+* D) B, C, and D
+
+In this case the answer is F (B, C, and D). Alignment errors can frequently introduce what looks to be a mutation but are actually alignment errors rather than mutations. It is also extremely sensitive to depth of coverage. If you have very poor depth of coverage your ability to detect an allelic difference is pretty poor. 
+
+Because of the relatively short read nature a lot of the sequences generated from these machines are adapters and if you have a failure of adapter trimming, parts of the adapter can look like the native locus and you can have what looks to be a mutation when it is in fact not a mutation but part of the adaptor. 
+
+The reason I am saying they are not DNA differences is not that there are not DNA differences between various strains but because you have measured both the paternal strain and the maternal strain you know that the allelic differences are not due to detection differences but rather due to expression differences.
+
+### Other Versions of RNA Sequencing
+[[File:ExSciGen\_L11\_S37_OtherVersionsOfRNA-Seq.png|160px|thumb|right|Other Versions of RNA Sequencing (Slide 37)]]
+*[0:32:11][Slide 37]
+
+I have talked today mostly about poly-A seq and a little bit about total RNA-seq, so there is obviously other versions. Total RNA-seq is very much like poly-A sequencing but it preserves messages that do not have a poly-A signal, for example like the lincs I showed you earlier. In this case, ribosomal subtraction is required because ribosomal RNAs make up about 99% of RNA in a cell. So this step is a critical step for doing total RNA-seq. 
+
+There are many small RNA sequencing protocols now to get at these classes of small RNAs, like micro-RNAs that are in samples. In this case the RNA can be purified while preserving small RNAs that are lost in some common gel preparations used for doing Poly-A or total RNA sequencing. This technique is used to find new classes of small RNAs or measure their differential gene expression.
+
+There is also Ribo sequencing where you use the antibodies to precipitate RNA associated with ribosomes. These are then labeled and sequenced. This is thought to be a more representative of what is going on translationally in a particular sample. 
+
+Virtually every month there is a new form of sequences including 3P seq.
+
+### RNA Sequencing – The Beginning
+[[File:ExSciGen\_L11\_S38_RNA-Seq-TheBeginning.png|160px|thumb|right|RNA Sequencing – The Beginning (Slide 38)]]
+*[0:33:30][Slide 38]
+
+To finish up, we are only a few years after the description of the modern RNA sequencing technologies. The technology is still in its infancy. A lot of improvements are needed. For example, to determine expression values per gene, per exon, per allele, per splice variant form. This is still very much an unsolved science.
+
+Many improvements in molecular biology and informatics means these technologies will eventually replace arrays. We are not there yet for all applications. Arrays still have some legs left in them, but pretty soon RNA-seq will supplant DNA arrays. A big advantage is that you do not need an a priori transcriptome but again that depends on what your actual needs are. If you are just looking to find a particular gene, as in the example I showed you, de novo RNA-seq can work pretty well. If you want every last base pair of every last gene then de novo RNA-seq is not a perfect technology.
+
+There are many challenges in RNA sequencing. The molecular biology is tricky. All sequences do not amplify equally so you have bias inserted by your molecular biology. The biggest challenge here is informatics. Storing and manipulating this data is extremely challenging. I mentioned several of the issues, including looking at the expression levels and mapping the data. These are rapidly changing and rapidly improving areas but still they have very far to go.
+
+
+*[0:35:11][END]

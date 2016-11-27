@@ -1,0 +1,144 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Review Questions: Linear Regression with One Variable</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="From_.22Cost_Function_-_Intuition_I.22:">From "Cost Function - Intuition I":</span></h1>
+<p>I can't make any sense of the review question. There is no value provided for $$\theta&#95;1$$ so I do not understand how to proceed.</p>
+<p>If you're stuck at the review question during the lesson they ask you to calculate J(0). Since it's J(&#952;<sub>1</sub>) that means &#952;<sub>1</sub> = 0, making h(x) = 0*x. Use this with the cost function to get the answer.</p>
+<p><span>&#160;</span></p>
+<p>Here's how to calculate cost function for some values of &#952;<sub>1</sub>
+and &#952;<sub>0</sub>.</p>
+<p><span>&#160;</span></p>
+<p><span>To make it simple you have straight line (linear regression function h(x) = &#952;<sub>0</sub>
++ &#952;<sub>1</sub>*x).</span></p>
+<p><span>For example &#952;<sub>0</sub> = 3, &#952;<sub>1</sub> = 0.5 so function is h(x) =
+3 + 0.5 * x.</span></p>
+<p><span>&#160;</span></p>
+<p><span>You have training data (m=3 because there is 3 pairs of data)</span></p>
+<p><span>&#160;</span></p>
+<table border="1">
+ <tr>
+  <td width="76" valign="top">
+  <p><b><span>x</span></b></p>
+  </td>
+  <td width="66" valign="top">
+  <p><b><span>y</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76" valign="top">
+  <p><span>3</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>5</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76" valign="top">
+  <p><span>1</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>3</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="76" valign="top">
+  <p><span>2</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>3</span></p>
+  </td>
+ </tr>
+</table>
+<p><span>&#160;</span></p>
+<p><span>Now task is relatively simple. Calculate h for each x from training data.</span></p>
+<p>&lt;p&gt;<span>Then calculate (h(x) - y)<sup>2</sup>. </span></p>
+<p><span>Sum all squared differences.</span></p>
+<p><span>&#160;</span></p>
+<table border="1">
+ <tr>
+  <td width="73" valign="top">
+  <p><b><span>x</span></b></p>
+  </td>
+  <td width="66" valign="top">
+  <p><b><span>y</span></b></p>
+  </td>
+  <td width="66" valign="top">
+  <p><b><span>h(x)</span></b></p>
+  </td>
+  <td width="76" valign="top">
+  <p><b><span>(h(x)-y)<sup>2</sup></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="73" valign="top">
+  <p><span>3</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>5</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>4.5</span></p>
+  </td>
+  <td width="76" valign="top">
+  <p><span>0.25</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="73" valign="top">
+  <p><span>1</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>3</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>3.5</span></p>
+  </td>
+  <td width="76" valign="top">
+  <p><span>0.25</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="73" valign="top">
+  <p><span>2</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>3</span></p>
+  </td>
+  <td width="66" valign="top">
+  <p><span>4.0</span></p>
+  </td>
+  <td width="76" valign="top">
+  <p><span>1.00</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="206" colspan="3" valign="top">
+  <p><span>Sum</span></p>
+  </td>
+  <td width="76" valign="top">
+  <p><span>1.50</span></p>
+  </td>
+ </tr>
+</table>&lt;/p&gt;
+<p><span>Then just multiply that sum with 1/(2 * m) =&gt; 1.5 * 1/(2 * 3)=1.5/6 = 0.25</span></p>
+<p><span>J = 0.25</span></p>
+<p>&lt;p&gt;<span>Hope that this will help.</span></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 34/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Review_Questions:_Linear_Regression_with_One_Variable&amp;oldid=34179">https://share.coursera.org/wiki/index.php?title=ML:Review_Questions:_Linear_Regression_with_One_Variable&amp;oldid=34179</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

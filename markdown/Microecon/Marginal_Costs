@@ -1,0 +1,88 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 5: 3.2 Marginal Costs
+Because the **Marginal Costs** are defined by the equation: $$MC = \Delta TC / \Delta Q$$ using the hypothetical example adding a column for Marginal Costs.
+
+<table border="1">
+  <tr>
+    <td># of Cooks</td>
+    <td># of Sandwiches</td>
+    <td>Marginal Product</td>
+    <td>Fixed Costs</td>
+    <td>Variable Costs</td>
+    <td>Total Costs</td>
+    <td>Marginal Costs</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>$100</td>
+    <td>$0</td>
+    <td>$100</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>40</td>
+    <td>40</td>
+    <td>$100</td>
+    <td>$80</td>
+    <td>$180</td>
+    <td>$2.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>90</td>
+    <td>50</td>
+    <td>$100</td>
+    <td>$160</td>
+    <td>$260</td>
+    <td>$1.60</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>120</td>
+    <td>30</td>
+    <td>$100</td>
+    <td>$240</td>
+    <td>$340</td>
+    <td>$2.67</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>135</td>
+    <td>15</td>
+    <td>$100</td>
+    <td>$320</td>
+    <td>$420</td>
+    <td>$5.30</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>140</td>
+    <td>5</td>
+    <td>$100</td>
+    <td>$400</td>
+    <td>$500</td>
+    <td>$16.00</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>142</td>
+    <td>2</td>
+    <td>$100</td>
+    <td>$480</td>
+    <td>$580</td>
+    <td>$40.00</td>
+  </tr>
+</table>
+
+As an example for the calculation of the MC for 3 cooks or 120th sandwich:
+$$MC_3 = \Delta TC_3 / \Delta Q_3 = (TC_3 - TC_2) / (Q_3 - Q_2) = (340 - 260) / (120 - 90)= 80/30 \approx $2.67$$
+
+Because in this example the Labor Cost per Work is $80 the $$\Delta TC$$ is going to be always $80. Note that $$\Delta Q$$ is actually the Marginal Product of Labor that was added by the new worker.
+
+The Marginal Cost answers the question: *How much does it cost to increase production of one sandwich?*

@@ -1,0 +1,634 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Drugsandbrain:Lecture Notes 1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction_.281a_and_b.29"><span class="tocnumber">1</span> <span class="toctext">Introduction (1a and b)</span></a></li>
+<li class="toclevel-1"><a href="#What_is_a_Drug_.282.29"><span class="tocnumber">2</span> <span class="toctext">What is a Drug (2)</span></a></li>
+<li class="toclevel-1"><a href="#Permeation_into_the_Brain_.283.29"><span class="tocnumber">3</span> <span class="toctext">Permeation into the Brain (3)</span></a></li>
+<li class="toclevel-1"><a href="#Botulinum_Toxin_.284.29"><span class="tocnumber">4</span> <span class="toctext">Botulinum Toxin (4)</span></a></li>
+<li class="toclevel-1"><a href="#Introduction_to_Drug_Receptors_.285.29"><span class="tocnumber">5</span> <span class="toctext">Introduction to Drug Receptors (5)</span></a></li>
+<li class="toclevel-1"><a href="#More_about_Receptor_Proteins_.286.29"><span class="tocnumber">6</span> <span class="toctext">More about Receptor Proteins (6)</span></a></li>
+<li class="toclevel-1"><a href="#Introduction_to_mammalian_brains._Neuronal_circuits.2C_neurons.2C_and_synapses_.287.29"><span class="tocnumber">7</span> <span class="toctext">Introduction to mammalian brains. Neuronal circuits, neurons, and synapses (7)</span></a></li>
+<li class="toclevel-1"><a href="#Sample_Recordings_and_Techniques_for_Studying_the_Brain_.288.29"><span class="tocnumber">8</span> <span class="toctext">Sample Recordings and Techniques for Studying the Brain (8)</span></a></li>
+<li class="toclevel-1"><a href="#Origin_of_the_Resting_Potential_.289.29"><span class="tocnumber">9</span> <span class="toctext">Origin of the Resting Potential (9)</span></a></li>
+<li class="toclevel-1"><a href="#Electrical_Aspects_of_Ion_Channels_.2810.29"><span class="tocnumber">10</span> <span class="toctext">Electrical Aspects of Ion Channels (10)</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction_.281a_and_b.29">Introduction (1a and b)</span></h1>
+<p>No assessments on the introduction modules.   </p>
+<p><strong>Topics we will discuss in this course</strong><br />
+pharmacology<br />
+neuroscience<br />
+biochemistry<br />
+biophysics<br />
+disease orientation<br />
+central nervous system - the relationship between the brain and the spinal cord, </p>
+<p><strong>4 examples of drugs</strong><br />
+1.  nicotine<br />
+<dl><dd><ul><li> the addictive drug in tobacco<br />
+</li><li> Tobacco for many years seemed to have a lower, not a higher, but a lower incidence of
+</li></ul>
+</dd></dl>
+Parkinson's disease.<br />
+2.  procaine<br />
+<dl><dd><ul><li> synthetic local anesthetic<br />
+</li></ul>
+</dd></dl>
+3. morphine<br />
+4. botulinum toxin<br />
+<dl><dd><ul><li> may be one of the first of the protein drugs that can be used on the nervous system</p>
+</li></ul>
+</dd></dl>
+
+<p><strong>Central Nervous System</strong><br />
+<ul><li> relationship to the spinal cord<br />
+</li><li> large scale circuits of neurons, small scale circuits of neurons, nerve cells.
+</li><li> terminology<br />
+</li></ul>
+<dl><dd><ul><li> synapse = the little chemical hop from a pre-synaptic neuron to a post-synpatic neuron.  </p>
+</li></ul>
+</dd></dl>
+
+<ul>
+<li>An adult brain contains about 10^11 neurons (100 billion)  </li>
+<li>Each of these might receive about 1000 synapses a piece, for a total of about ten to the fourteen synapses.  </li>
+<li>Nearly all of these form during the first two years of life. And so a fetus and an infant is very busy making about a million synapses per second.  </li>
+</ul>
+<p><strong>Ion Channels</strong><br />
+<ul><li> Most drug receptors are membrane proteins.
+</li><li> example: the Nicotinic Acetylcholine Receptor (at 3:25)
+</li></ul>
+<dl><dd><ul><li> has a region where drugs bind, a region that goes through a membrane, and a region that expands into the cytosol (cytosolic region)
+</li></ul>
+</dd></dl>
+<ul><li> Drugs activate and can block ion channels.<br />
+</li><li> When the plug is in the ion channel it doesn't conduct, but when the plug is out the ion channel conducts as usual.<br />
+</li><li> Sometimes these plugs get stuck in ion channels, and that's the basis for anti-epileptic drugs and for anti-arrhythmic drugs in the heart.  </p>
+</li></ul>
+
+<p><strong>G protein pathways</strong><br />
+<ul><li> We have the receptor itself, with seven transmembrane helices.<br />
+</li><li> We have the G protein. We have the effector for the G protein.<br />
+</li><li> We'll spend some time discussing several aspects of this pathway, because it has several different types of, of the action in the brain.<br />
+</li><li> And then we'll talk about how to measure the intracellular effects of G protein coupled
+</li></ul>
+receptors, and of the ion channels. We can measure some intracellular effects using
+advanced microscopy, live cell imaging, usually with fluoroscence. And we can measure other effects using biochemistry.  </p>
+<p><strong>Drugs act on Transporters</strong><br />
+<ul><li> In particular,neurotransmitter transporters.<br />
+</li><li> 2 often used classes of drugs these days<br />
+</li></ul>
+1. Na+-coupled cell membrane serotonin transporter<br />
+<ul><li> Drugs that act on the serotonin transporters are both drugs of therapy and of abuse<br />
+</li><li> The therapeutic drugs or the serotonin selective reuptake inhibitors or SSRI's are antidepressants, and they have trademarks that we are all, familiar with.<br />
+</li><li> And they block the uptake of serotonin, mostly into presynaptic nerve endings.<br />
+</li></ul>
+2. Na+-coupled cell membrane dopamine transporter<br />
+<ul><li> Also have uses both in therapy and in abuse.<br />
+</li><li> These transporters are also expressed on pre synaptic nerve terminals.<br />
+</li><li> They are also sodium coupled.<br />
+</li><li> They have trademarks that are familiar to us and there are other drugs that work on these Dopamine transporters that are drugs of abuse,such as Cocaine and Amphetamine.</p>
+</li></ul>
+
+<p><strong>Targets for Recreational Drugs</strong><br />
+<ul><li> Not all recreational drugs are drugs of abuse. For example, caffeine.<br />
+</li></ul>
+we'll be talking about LSD, morphine and heroin, tetrahydrocannabinol (THC), cocaine, PCP (or phencyclidine) and of course nicotine.  </p>
+<p><strong>Three general components of addiction</strong><br />
+1. Tolerance<br />
+<dl><dd>a. Metabolic tolerance:<br />
+</dd></dl>
+Metabolism of the drug proceeds more efficiently.<br />
+This occurs primarily in the liver.<br />
+It occurs for many types of drugs, including aspirin and penicillin.<br />
+<dl><dd>b. Cellular tolerance:<br />
+</dd></dl>
+Individual neurons or neuronal circuits become less responsive to the drug.<br />
+2. Dependence<br />
+3. Goal-seeking behavior  </p>
+<p><strong>Components of nicotine dependence</strong><br />
+<ul><li> Reward
+</li><li> Cognitive Sensitization (some nicotine addicts believe that they think better when they smoke)<br />
+</li><li> Stress Relief
+</li><li> Weight control<br />
+</li><li> Self-medication in schizophrenia  </p>
+</li></ul>
+
+<p><strong>Changes in the Brain during Chronic Exposure to Nicotine</strong><br />
+So the question becomes in every case of drug abuse and dependence: what are the changes in the brain during chronic exposure to that drug?<br />
+In order to address these questions we have to go all the way from genes, through gene
+expression RNA, through proteins, through the differences between the exogenous drugs (the ones that come from outside) versus the indigenous (the natural neurotransmitters), how the drugs bind to their receptors, the intercellular events that occur after cells bind repeatedly, for days or weeks, effects on neurons, effects on the junction between neurons
+(the synapses), effects on circuits of neurons and finally effects on behavior. </p>
+<ul>
+<li>In particular we'll talk about how activation of a G Protein coupled pathway for prolonged  periods of time, can lead to changes at the level of genes and how this can be hijacked by nicotine receptors and by other receptors, that can introduce intra-cellular messengers on their own. This is thought to be a major component of drug addiction.  </li>
+</ul>
+<p><strong>Drugs for neural diseases</strong><br />
+<ul><li> L-dopa or levodopa 
+</li></ul>
+<dl><dd><ul><li> Is converted by an enzyme (a protein catalyst) into Dopamine.<br />
+</li><li> L-dopa can enter the brain, but Dopamine cannot. 
+</li><li> Parkinson's disease, which is treated with L-Dopa, involves degeneration of neurons that make dopamine in a particular region of the brain, the Substantia Nigra.  </p>
+</li></ul>
+</dd></dl>
+
+<p><strong>Drugs for psychiatric diseases</strong><br />
+<ul><li> We'll treat them as chemicals.<br />
+</li><li> We'll talk about their permeation through membranes and of course their targets.<br />
+</li><li> A major question for psychiatric drugs is what happens during the two to three weeks
+</li></ul>
+that it takes between the time a person starts taking a psychiatric drug and the time she/he feels completely better.<br />
+<ul><li> The answers are not known.<br />
+</li><li> An exception is the novel antidepressant ketamine, called Special K on the street.<br />
+</li><li> Ketamine exerts its antidepressant effects within about 2 hours.<br />
+</li><li> However, when used at higher doses, Ketamine also causes hallucinations, and many other kinds of unpleasant behavior.  </p>
+</li></ul>
+
+<p><strong>Psychiatric cases</strong><br />
+<ul><li> Vincent Van Gogh - bipolar.<br />
+</li><li> David Helfgott - schizophrenia<br />
+</li><li> John Nash - schizophrenia  </p>
+</li></ul>
+
+<p><strong>Other topics</strong><br />
+<ul><li> Contemporary ideas about psychiatric drugs emphasized binding to classical targets, but that an idea that I'm very fond of called 'inside-out drug action', emphasizes binding to the same targets but actually within the cell, in the endoplasmic reticulum, and the Golgi's system.<br />
+</li><li> Then we'll turn to this interesting topic of developing new drugs for the brain.<br />
+</li><li> Eroom's law, note that Eroom is Moore spelled backwards.
+</li></ul>
+<dl><dd><ul><li> Moore's law applies to semiconductors and to computers, and Moore's law basically says that it gets cheaper by a factor of 2 every 18 months, a factor of 10 every 5 years, to do data processing. Well just the opposite applies to drugs these days, and has applied to drugs for the last 60 years. You can develop fewer and fewer drugs per billion dollars spent on R&amp;D spending. This is a particular problem with neural drugs.  </p>
+</li></ul>
+</dd></dl>
+
+<hr />
+<h1> <span class="mw-headline" id="What_is_a_Drug_.282.29">What is a Drug (2)</span></h1>
+<p><strong>Definition</strong><br />
+<ul><li> A substance used as a medication or in the preparation of medication.<br />
+</li><li> According to the Food, Drug, and Cosmetic Act<br />
+</li></ul>
+(1) a substance recognized in an official pharmacopoeia or formulary<br />
+(2) a substance intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease<br />
+(3) a substance other than food intended to affect the structure or function of the body<br />
+<ul><li> Something and often an illegal substance that causes addiction, habituation, or a marked change in consciousness  </p>
+</li></ul>
+
+<p><strong>Trivial names and Structural Formulas</strong><br />
+<ul><li> nicotine<br />
+</li><li> procaine<br />
+</li><li> morphine<br />
+</li><li> Botulinum toxin  </p>
+</li></ul>
+
+<p><strong>This session’s drugs exemplify the concepts in “Drugs and the Brain”</strong><br />
+<ul><li> Drugs Activate (nicotine) and block (procaine) ion channels<br />
+</li><li> Drugs act on G protein pathways (morphine)<br />
+</li><li> Drugs activate genes (nicotine, morphine)<br />
+</li><li> Protein drugs may become more useful for neuroscience diseases (botulinum toxin)<br />
+</li><li> Not treated in this session: Drugs act on neurotransmitter transporters<br />
+</li><li> Botulinum toxin does not get into the brain. It actually works in the peripheral nervous system, at the nerve muscle synapse. That's an important distinction.  </p>
+</li></ul>
+
+<p><strong>Atomic-scale Structures</strong><br />
+PubChem Database<br />
+<ul><li> <a rel="nofollow" class="external text" href="http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=89594&amp;loc=ec_rcs">nicotine</a><br />
+</li></ul>
+<dl><dd><ul><li> has a conjugated and aromatic ring (the double bonds)<br />
+</li><li> they are delocalized, hybridized 
+</li></ul>
+</dd></dl>
+<ul><li> <a rel="nofollow" class="external text" href="http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=4914&amp;loc=ec_rcs">procaine</a> 
+</li><li> <a rel="nofollow" class="external text" href="http://pubchem.ncbi.nlm.nih.gov/summary/summary.cgi?cid=5288826&amp;loc=ec_rcs">morphine</a> 
+</li><li> <a rel="nofollow" class="external text" href="http://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid=26967">Botulinum toxin</a> </p>
+</li></ul>
+
+<p><strong>Each moiety in a drug molecule has importance</strong><br />
+Example: procaine
+<ul><li> Charged amine: may bind to charged groups or π electrons on the protein<br />
+</li><li> Ester: hydrolyzed to terminate drug action<br />
+</li><li> Aromatic: may bind to nonpolar groups on the receptor protein<br />
+</li><li> Procaine is also one of those drugs that works primarily in the peripheral nervous system rather than in the brain.  </p>
+</li></ul>
+
+<p><strong>Formulas and molecular weights (MW)</strong><br />
+<ul><li> nicotine  C10H14N2 162
+</li><li> procaine  C13H20N2O2 236<br />
+</li><li> morphine  C17H19N2O3 285
+</li><li> Botulinum toxin ~150,000  </p>
+</li></ul>
+
+<p><strong>Trademark Names</strong><br />
+<ul><li> nicotine<br />
+</li></ul>
+<dl><dd><ul><li> Marlboro®<br />
+</li><li> Camel®<br />
+</li><li> Nicorette®<br />
+</li><li> Nicoderm®  </p>
+</li></ul>
+</dd></dl>
+
+<ul>
+<li><p>procaine<br />
+<dl><dd><ul><li> Duracaine®<br />
+</li><li> Novacaine®  </p></li>
+</li></ul>
+</dd></dl>
+<li><p>morphine<br />
+<dl><dd><ul><li> Astramorph®<br />
+</li><li> Kapanol®<br />
+</li><li> Skenan®  </p></li>
+</li></ul>
+</dd></dl>
+<li><p>Botulinum toxin<br />
+<dl><dd><ul><li> Botox®  </p></li>
+</li></ul>
+</dd></dl>
+</ul>
+<p><strong>Type of Compound</strong><br />
+<ul><li> nicotine - alkaloid<br />
+</li><li> morphine - alkaloid<br />
+</li></ul>
+<dl><dd><ul><li> Alkaloids are a group of nitrogenous organic compounds that have physiological effects on humans
+</li></ul>
+</dd></dl>
+<ul><li> procaine - local anesthetic (Synthetic organic compound)<br />
+</li><li> Botulinum toxin - protein: chain of amino-acid residues joined by peptide bonds  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Permeation_into_the_Brain_.283.29">Permeation into the Brain (3)</span></h1>
+<p><strong>Routes into the Nervous System</strong><br />
+<ul><li> nicotine: smoked, chewed, or skin<br />
+</li><li> procaine: injected<br />
+</li><li> morphine: smoked, injected, suppository, taken orally<br />
+</li><li> botulinum toxin: injected, eaten  </p>
+</li></ul>
+
+<p><strong>Permeation through membranes and through lipid barriers</strong><br />
+<ul><li> Going to treat a general drug, an alkaloid, as having an R group.<br />
+</li><li> These Rs can be many groups as we saw in previously.<br />
+</li><li> We'll concentrate on the amine group.<br />
+</li><li> Primary amine: RNH2<br />
+</li></ul>
+<dl><dd><ul><li> This is a neutral form of the drug.<br />
+</li><li> Get the neutral form of the drug by taking it in through the mouth, the stomach or  the lungs<br />
+</li><li> Neutral forms of drugs are quite permeable through lipids, through fats, especially through the membranes.<br />
+</li></ul>
+</dd></dl>
+<ul><li>However, it is the active charged form, which is usually the form that interacts with the drug receptor.<br />
+</li><li> So the neutral form takes up the proton, becomes protonated, charged and this is the form that interacts with the receptor.<br />
+</li><li> This protonation/deprotonation takes only a millisecond or so and it can occur either
+</li></ul>
+in the blood or the brain or it can occur outside the blood and the brain, in the lungs, or the stomach, or the mouth.<br />
+<ul><li> In general, when we have higher pH this tends to take the proton off the charged form of the drug.<br />
+</li><li> A more basic solution gives us more of the drug in the neutral form, which is able to permeate through membranes.  </p>
+</li></ul>
+
+<p><strong>Nicotine’s path from the lungs to the blood and the brain</strong><br />
+<ul><li> Tobacco leaves are roughly five percent nicotine by weight.<br />
+</li><li> The vaporized nicotine, for instance, from smoking is a neutral form.<br />
+</li><li> It has the N, now has the CH3.<br />
+</li><li> It is a tertiary amine.<br />
+</li><li> It gets through a total of 3 cells and 6 membranes in going from the lungs to the blood, and then the brain.<br />
+</li><li> Two membranes in the alveolar epithelium, and four membranes in the capillary from the blood to the brain.
+</li><li> The neutral form of nicotine permeates within just a few seconds from the lungs to the brain.<br />
+</li><li> In the brain the nicotine molecule is a weak base, and so it can easily gain or lose a proton, again, in milliseconds.<br />
+</li><li> Its pKa = 8, that is, at pK eight it is roughly half protonated and half deprotonated.<br />
+</li><li> Cigarette manufacturers put ammonium hydroxide in cigarettes to maintain neutral pH, or to make it basic. The result is that the proton leaves. The nicotine is able to be able to be more in its permeate form and permeates through the cell membranes.  </p>
+</li></ul>
+
+<p><strong>Blood nicotine concentrations during and after a cigarette</strong><br />
+<ul><li> Within a minute or so, nicotine appears in the blood and in the brain.<br />
+</li><li> And then, it rapidly gets metabolized, gets broken down.  </p>
+</li></ul>
+
+<p><strong>Another example of neutral drug permeation</strong><br />
+<ul><li> In Parkinson's Disease, most of the neurons that make dopamine degenerate, and so the challenge is to replace the dopamine in the brain.<br />
+</li><li> Dopamine, however, does not enter the brain. It's charged.<br />
+</li><li> As a result, physicians use levodopa or L-dopa, which is zwitterionic (has no net charge) and easily permeates through membranes, gets into the gets into the brain where it is decarboxylated by an enzyme.<br />
+</li><li> This decarboxylase gives us dopamine which can then be taken up by neurons in the brain.<br />
+</li><li> This is a pro-drug: a molecule that is not itself a drug, but is a precursor to a drug, and is made into a drug by the body's own enzymes.  </p>
+</li></ul>
+
+<p><strong>Blood Brain Barrier</strong><br />
+<ul><li> Made by cells lining the capillary wall called endothelial cells.<br />
+</li><li> In the periphery, outside the brain, the capillaries have spaces in between the endothelial cells through which a large number of molecules can diffuse. Proteins, non-polar molecules, polar molecules such as glucose.<br />
+</li><li> But in the brain, there are tight junctions (seals between the endothelial cells), and as a result, molecules cannot leave the capillary and go into the brain unless they're small non-polar molecules.  </p>
+</li></ul>
+
+<p><strong>The Structural Basis of Tight Junctions</strong>
+<ul><li> The structural basis of the blood brain barrier is a set of proteins called tight junctions.<br />
+</li><li> Epithelial cells have double-layered membranes, and in these double-layered membranes are proteins that make up these so-called tight junctions. 
+</li><li> And, you can think of them as zippers that zip together the two cells that make up an epithelium or an endothelium.<br />
+</li><li> The tight junctions occur only in the brain capillaries and prevent molecules from diffusing through.  </p>
+</li></ul>
+
+<p><strong>Drugs in the Body and in Cells</strong><br />
+<ul><li> Acid-base equilibrium and permeability<br />
+</li></ul>
+<dl><dd><ul><li> Uptake from the stomach<br />
+</li><li> Uptake from smoke<br />
+</li><li> Crossing the cell membrane<br />
+</li><li> Short-circuiting synaptic vesicles<br />
+</li><li> Neurotransmitter transport inhibitors<br />
+</li></ul>
+</dd></dl>
+<ul><li> Blood-brain barrier:
+</li></ul>
+<dl><dd><ul><li> molecular basis
+</li><li> an opportunity for drug specificity
+</li><li> a problem for drug delivery</p>
+</li></ul>
+</dd></dl>
+
+<hr />
+<h1> <span class="mw-headline" id="Botulinum_Toxin_.284.29">Botulinum Toxin (4)</span></h1>
+<ul>
+<li>Botulinum toxin is made by <em>Clostridium botulinum</em>, an anaerobic bacterium.  </li>
+<li>Botulinum toxin is fatal in extremely low quantities (~ 1 molecule per synapse), because it paralyzes muscles. 10^-8 grams kills a mouse. The paralysis occurs because presynaptic
+terminals cannot release transmitter.  </li>
+<li>The bacterium synthesizes botulinum toxin as a single protein chain, then cleaves the chain.  </li>
+<li>The two portions are still held together by a disulphide bond between two cysteine residues.  </li>
+<li>The light chain and the heavy chain held together.  </li>
+<li>The two chains enter into neurons and other cells.  </li>
+<li>When they are inside neurons, there is a reducing environment which reduces the disulphide bond.  </li>
+<li>The light chain and the heavy chain separate.  </li>
+<li>The light chain acts as an enzyme. </li>
+<li>Many diseases and discomforts are caused by excess muscle activity.  </li>
+<li>Botulinum toxin, injected in minute quantities, blocks this excess activity and gives relief from squint and spasm.  </li>
+<li>Botulinum toxin also decreases frown lines (Botox®).  </li>
+</ul>
+<p><strong>What are some possible new therapeutic uses for botulinum toxin?</strong><br />
+<a rel="nofollow" class="external free" href="http://www.ncbi.nlm.nih.gov/pubmed?term=botulinum%20toxin">http://www.ncbi.nlm.nih.gov/pubmed?term=botulinum%20toxin</a><br />
+Gastroparesis<br />
+Hemiplegia<br />
+Blepharospasm<br />
+Skew deviation<br />
+glabellar lines<br />
+cervical myelopathy<br />
+neurogenic detrusor overactivity<br />
+Tourette syndrome  </p>
+<hr />
+<h1> <span class="mw-headline" id="Introduction_to_Drug_Receptors_.285.29">Introduction to Drug Receptors (5)</span></h1>
+<p><strong>Most drug receptors are proteins: Parts of proteins</strong><br />
+<strong>Receptor</strong><br />
+<ul><li> A molecule on the cell surface or in the cell interior that has an affinity for a specific molecule (the ligand).<br />
+</li><li> The ligand makes a connection, a non-covalent connection with the protein in order to activate the receptor protein.<br />
+</li><li> Most drug receptors are proteins.  </p>
+</li></ul>
+
+<p><a href="/wiki/images/e/eb/DB-wk1-protein-structure.png" class="image"><img alt="DB-wk1-protein-structure.png" src="/wiki/images/e/eb/DB-wk1-protein-structure.png" width="460" height="361" /></a>    </p>
+<ul>
+<li>We see an amide bond or a peptide bond.  </li>
+<li>It has a carbonyl oxygen and it has an amino hydrogen. This is the backbone of a protein.  </li>
+<li>At one end of the protein, we have a string of these amide or peptide bonds.  </li>
+<li>At one end, we have an unbound amino group, that's the amino terminal end of the polypeptide chain.  </li>
+<li>When we have many peptide bonds together, we call that a polypeptide.  </li>
+<li>At the other end, we have the carboxyl terminal end of the polypeptide chain, a carboxyl group that's not associated in a peptide bond.  </li>
+<li>The reason that we begin with the N terminal, and then go to the C terminal, is that that's how the cell makes the protein. First, the N terminal, then adds other amino acid residues onto the C terminal.  </li>
+<li>An amino acid, literally, has an amino group, an acid group, and a side chain.  </li>
+<li>It is the side chains of each amino acid residue that do the chemistry of the protein.  </li>
+<li>The side chains can be aromatic, hydroxyls, carboxylates or acidic groups.  </li>
+<li>There are a total of twenty types of amino acids side chains and they are responsible, again, for the chemistry and the folding and most aspects of the protein.  </li>
+<li>The shortest peptide or protein in the nervous system has only 9 amino acids, and the longest has five and a half thousand amino acids.  </li>
+</ul>
+<p><strong>Proteins contain a few structural motifs</strong><br />
+alpha helices<br />
+<ul><li> The hydrogen bonds go from a carbonyl group to an NH group.<br />
+</li><li> Hydrogen bonds are the non-covalent bonds that hold the alpha-helix together and since they are regular and staggered, they do a good job of holding the alpha-helix together if the side chains will allow this.  </p>
+</li></ul>
+
+<p>beta sheets<br />
+<ul><li> There are two beta strands, anti-parallel.<br />
+</li><li> The hydrogen bonds actually exist between the two chains rather than within the chain and that's what holds a beta sheet so stable.<br />
+</li><li> They are between the carbonyl group and an amino group.  </p>
+</li></ul>
+
+<p>Hide side chains<br />
+Show H-bonds and distances<br />
+Show ribbons &amp; arrows<br />
+Show side chains<br />
+Show Van der Waals radii<br />
+Show stereo view  </p>
+<hr />
+<h1> <span class="mw-headline" id="More_about_Receptor_Proteins_.286.29">More about Receptor Proteins (6)</span></h1>
+<p><strong>Nicotinic Acetylcholine Receptor</strong><br />
+<a rel="nofollow" class="external text" href="https://www.ncbi.nlm.nih.gov/Structure/mmdb/mmdbsrv.cgi?uid=32169">Refined Structure of the Nicotinic Acetylcholine Receptor at 4A Resolution</a><br />
+<ul><li> Has about 2200 amino acids, in five chains. So it has five subunits.<br />
+</li><li> Its molecular weight is around 2 1/2 million.<br />
+</li><li> On the left, we color it by secondary structure, alpha helices in red. Beta strands and beta sheets in green and here's a little alpha helix up on top.<br />
+</li><li> On the right, we've colored it by the chain: there are 5 colors and there are 5 chains.<br />
+</li><li> Major points here are that part of the receptor proteins is embedded in the membrane, where it separates the extra-cellular compartment from the inter-cellular compartment.<br />
+</li><li> That's true of most drug receptors that we'll discuss in this course, although some soluble enzymes exist only in the cell.<br />
+</li><li> Outside in the extra cellular solution is the binding region where ligands bind.<br />
+</li><li> Inside is the  cytosolic region, but only a part of the cytosolic region of this nicotinic receptor protein because the full structure has not yet been solved.  </p>
+</li></ul>
+
+<p><strong>The AChBP interfacial “aromatic box” occupied by nicotine (Sixma, 2004)</strong><br />
+<ul><li> Most of the binding of the ligand is done to an alpha subunit.<br />
+</li><li> There are two alpha subunits in this pentamer (5 subunit structure).<br />
+</li><li> There are alpha subunits and there are non-alpha subunits.<br />
+</li><li> In this particular case, notice that there is a box of what look like aromatic side chains hereand we call this the aromatic box.<br />
+</li><li> On the right, we have shown nicotine nestled into this aromatic box.  </p>
+</li></ul>
+
+<p><strong>Simple views of nicotinic acetylcholine receptor</strong><br />
+<ul><li> The boxes are the alpha helices, and they go across the membrane.<br />
+</li><li> There are 5 of these subunits. 
+</li><li> The oval we can abstract as the binding domain.<br />
+</li><li> Each subunit has 4 alpha helices in the membrane. 
+</li><li> Since there are 5 subunits, there are total of 20 membranes alpha helices.<br />
+</li><li> The amino terminus of the protein exists out in the extra-cellular solution.<br />
+</li><li> The carboxyl terminus also exist out here in the extra-cellular solution.  </p>
+</li></ul>
+
+<p><strong>How does the binding of a drug, a ligand, activate a receptor protein?</strong><br />
+<ul><li> Most receptors are allosteric proteins.<br />
+</li><li> When an allosteric protein binds the ligand at one side, this affects the function of a different site within the same protein.<br />
+</li><li> The key point here, the most important point about this picture, is that there seems to be a signal, a confirmational change that is propagated from the place where the ligand binds to another region of the protein, the channel.<br />
+</li><li> Most allosteric proteins have several subunits and there are various types of movements.<br />
+</li></ul>
+<dl><dd><ul><li> Concerted Transition between at least two states: all the sub units undergo a transition at once.<br />
+</li><li> In a ligand-gated channel, there is the open state, the closed state and a so called desensitized state. 
+</li><li> Some allosteric proteins, undergo a so called sequential series of transition as though the ligand induces the fit of the protein.<br />
+</li><li> This subunit might transition independently from one state to another.<br />
+</li><li> We might have a more general term for allosteric protein as shape shifting proteins and that would encompass both concerted transition and sequential transition.  </p>
+</li></ul>
+</dd></dl>
+
+<hr />
+<h1> <span class="mw-headline" id="Introduction_to_mammalian_brains._Neuronal_circuits.2C_neurons.2C_and_synapses_.287.29">Introduction to mammalian brains. Neuronal circuits, neurons, and synapses (7)</span></h1>
+<p><strong>ANATOMY</strong>  </p>
+<p>The Central Nervous System (CNS) consists of two major parts the Brain at the top and the Spinal Cord which protrudes from the brain.  </p>
+<p>Terminolgy  </p>
+<p>front - rostral direction  </p>
+<p>back - caudal direction  </p>
+<p>posterior - dorsal  </p>
+<p>anterior - ventral  </p>
+<p>Important concept is that specific brain regions are the seats of specific functions.  </p>
+<p>$$\begin{array}{|c|c|}<br />
+REGION &amp; FUNCTION &#92;\ \hline 
+Motor\ Cortex\ (top\ just\ forward\ of\ central\ sulcus) &amp; Movement &#92;\ \hline
+Sensory\ Cortex\ (just\ back\ of\ central\ sulcus)&amp; Sensation &#92;\ \hline
+Visual\ Cortex\ (occipital\ lobe\ in\ caudal\ part\ of\ brain) &amp; Sight &#92;\ \hline
+Pre-frontal\ Cortex\ (rostral\ part\ of\ the\ brain)&amp; Partial\ function\ of\ judgement\ and\ higher\ neural\ function &#92;\ \hline
+Hippocampus &amp; Memory\ is\ laid\ down\ initially &#92;\ \hline
+Basal\ Ganglia\ and\ to\ some\ extent\ Cerebellum &amp; Motor\ Coordination &#92;\ \hline
+The\ Reward\ Pathway\ (important\ part\ of\ Drugs\ and\ the\ Brain) &amp; Nicotine,\ Dopamine\ and\ other\ reward\ transmitters\ play\ a\ role &#92;\<br />
+\end{array}$$  </p>
+<p><strong>SIMPLE CIRCUIT</strong>  </p>
+<p>EG Jamming finger in a door.  </p>
+<p>This involves the periphery, the spinal cord and the brain.  </p>
+<p>Pain sensations travel towards the Brain through the Nerve Roots, into the Spinal Cord where they synapse onto neurons which then project in an ascending fashion towards the brain.  Most sensory messages synapse in the Thalamus then go to the Sensory Cortex.  Then we decide to move from the pain.  We go more to the Motor Cortex back down to the Thalamus and then a descending pathway back to the Spinal Cord to a motor neuron which tells the finger and the hand to move out of the way.  </p>
+<p>This simple pathway involves Neurons, Synapses and a Loop.  </p>
+<p><strong>SPINAL REFLEXES</strong></p>
+<p>EG Knee Jerk is simpler.  </p>
+<p>They involve just 2 neurons.  </p>
+<p>A special type of muscle fiber(the spindle) is hit with a tendon hammer which stretches the tendon. The Spindle goes into the CNS, into the spinal cord through the dorsal root ganglion, synapses onto motor neurons which contract the muscle and make the leg jerk up. There is an additional pathway which inhibits the opposing flexor muscles and the reflex knee jerk.   </p>
+<p>This reflex acts almost completely on its own with no desetting control from the brain.  Interestingly the sensory neurons act like strain gauges wrapped around these special muscle fibers.  </p>
+<p>So again we have the involvement of a sensory organ, a projection into the CNS, some processing and then a motor projection back out to the muscles.  </p>
+<p><strong>PARTS OF TWO NEURONS (Refer to relevant slides mini lecture 7)</strong></p>
+<p>From left to right.  Pre Synaptic Neuron on the right and the Post Synaptic Neuron on the left.  All major parts are labelled.  The Myelin Sheath around the Axon makes the nerve conduct faster.  </p>
+<p>When one neuron contacts another, we find the synapse which is the point of information processing in the CNS.  It is a little Chemical hop whereas the nerve impulse is Electrical while travelling within the neuron.  It changes to chemistry to jump across the synapse and then it ususally changes back to electricity again and flows on its way.  </p>
+<p>The Neuron and Synaptic statistics for adult, infant and fetal brains are presented again and are documented on the slides.    </p>
+<p>It was not until the Electron Microscope was invented in the 1940s that the synapse was identified.  The first electron micro-graphs clearly showed the gap between the pre and post synaptic neurons.  </p>
+<p>We have seen that chemistry is a language of the brain eg at synapses.  In a very simple view of the synapse we see:  </p>
+<p>&lt; transmitter molecules in vescicles in the presynaptic terminal they are embedded in the cytosol (intracellular environment)<br />
+&lt; the synaptic cleft separates the pre and post synaptic cells. It's about 500 angstroms wide.<br />
+&lt; In the post synaptic dendrite membrane are receptors which are a large part of Drugs and the Brain.<br />
+&lt; The receptors usually transduce little chemical hops into electricity and the nerve impulse begins again after a great deal of processing and summation by many receptors at many places on the post synaptic cell.  </p>
+<p>Next time we'll talk about electricity as the language of the brain.  </p>
+<hr />
+<h1> <span class="mw-headline" id="Sample_Recordings_and_Techniques_for_Studying_the_Brain_.288.29">Sample Recordings and Techniques for Studying the Brain (8)</span></h1>
+<ul>
+<li>The frequency of a neuron’s action potentials (nerve impulses) is the most important parameter in brain signalling . . . and in drug effects.  </li>
+<li>Each individual neuron sits in its own circuit, has its own inputs and outputs, via its own way of processing data. But we can summarize that neuron's activity.  </li>
+<li>In many cases the affects of drugs are revealed by changes in the frequency of the neuron's action potentials.  </li>
+</ul>
+<p><strong>Electricity is also a Language of the Brain</strong><br />
+Intracellular recording with sharp glass electrodes.<br />
+(1) A current applied by the experimenter increases firing rates<br />
+<ul><li> This is an experiment on an intact brain that has a micro electrode stuck into a neuron in that brain.<br />
+</li><li> This micro electrode is recording the difference between the intra-cellular and the extra-cellular solutions, and that is a voltage difference that David McCormick is also able to pass current.<br />
+</li><li> V (voltage) and I (current) through that same electrode.<br />
+</li><li> The neuron starts off without a real resting potential because there's no straight line here.<br />
+</li><li> Then David McCormick passes some current through the electrode, depolarizing the neuron, changing it, making it less negative, more positive.<br />
+</li><li> We get a frequency of spikes, although there is a no man's land in between, which is quite interesting. And then David McCormick takes the current away and we go back to a low frequency of spiking.<br />
+</li><li> We have a frequency of about three impulses per second. Here we have a much higher frequency, oh, several tens of impulses per second, and they can't clearly be resolved on this trace, although you could hear a buzz a flurry of impulses.<br />
+</li><li> In the more negative part of the trace, there are these broad bases to the spikes. Well these broad bases probably actually trigger the spikes in the first place.<br />
+</li><li> When the cell is at its faster firing frequency, at its up state, there are not these broad bases. There is a little bit more noise here.<br />
+</li><li> The important point though is that by controlling the current that we pass across the membrane, we can control the firing frequency. And that the firing frequency is the most
+</li></ul>
+important message that one neuron sends to another.  </p>
+<p>(2) Artificially applied acetylcholine acts on muscarinic receptors to change the membrane potential, increasing action potential frequency.<br />
+<ul><li> We learn that drugs can to things that other neurons can do.<br />
+</li><li> That we can perturb a neuron's firing frequency, that most important aspect of its function with a drug, in this case, acetylcholine, and with many other types of drugs.<br />
+</li><li> We learn, of course, that electricity is the language of the nervous system, and that in particular, the frequency of impulses is vastly important.  </p>
+</li></ul>
+
+<p><strong>Modern Neuroscience Techniques: Time scales, Distance Scales, and Invasiveness</strong><br />
+<ul><li> magnetoencephalography and event-related potentials (done with either, a magnetic sensor or electrodes near the scalp.<br />
+</li><li> Functional Magnetic Resonance Imaging, FMRI, which is done at a large magnet.<br />
+</li><li> Positron emission tomography is also not very invasive.<br />
+</li><li> Lesions, if they happen to, to have been caused accidentally, or by, illness, don't require further invasiveness.<br />
+</li><li> If we want to record events on a much finer distance scale, we need to use the kinds of intracellular electrodes that we saw on the previous slide, or patch electrodes.<br />
+</li><li> There are now ways of recording lots of activity at once with sets of electrodes, or even with devices with silicone arrays. Each of these techniques has been useful for unraveling the effects of drugs on the brain.  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Origin_of_the_Resting_Potential_.289.29">Origin of the Resting Potential (9)</span></h1>
+<ul>
+<li>Simply reverse the ratio of sodium and potassium inside and outside cells.  </li>
+<li>Outside cells, in the extra cellular solution, most organisms have a high concentration of sodium ions.  </li>
+<li>Inside, most organisms have a high concentration of potassium ions.  </li>
+<li>I'll remind you that when you put sodium chloride, salt or KCl, in solution, sodium chloride dissolves and the sodium and chloride ions separate from each other, and each becomes hydrated by water molecules but retains their charge.  </li>
+<li>We have high internal potassium, low internal sodium, and their sums are the same, sodium plus chloride, so that we actually keep the osmotic pressure the same inside and outside the cells and the cells don't burst.  </li>
+</ul>
+<p><strong>Typical extracellular and cytosolic ion concentrations (mammalian cell)</strong>  </p>
+<p>\begin{array}{c|c|c}
+Major\ monovalent\ ions &amp; Extracellular &amp; Intracellular (cytosol) &#92;\ \hline
+Na+ &amp; 145\ mM &amp; 15\ mM &#92;\ 
+K+ &amp; 4\ mM &amp; 150\ mM &#92;\
+Cl- &amp; 110\ mM &amp; 10\ mM &#92;\ \hline
+\end{array}  </p>
+<p>\begin{array}{c|c|c}
+Major\ divalent\ ions &amp; Extracellular &amp; Intracellular (cytosol) &#92;\ \hline
+Ca2+ &amp; 2\ mM &amp; 15\ 10^{-8}\ mM &#92;\ 
+Mg2+ &amp; 2\ mM &amp; 0.5\ mM &#92;\
+Cl- &amp; 110\ mM &amp; 10\ mM &#92;\ \hline
+\end{array}  </p>
+<p>\begin{array}{c|c|c}
+Other\ ions &amp; Extracellular &amp; Intracellular (cytosol) &#92;\ \hline
+Pi-2 &amp; 2\ mM &amp; 40\ mM &#92;\ 
+H+ &amp; 10^{-7}\ mM &amp; 10^{-7}\ mM &#92;\
+Protein\ (not\ an\ ion) &amp; 0.2\ mM &amp; 4\ mM &#92;\ \hline
+\end{array}  </p>
+<p><strong>Converting a concentration gradient to an electrical potential</strong><br />
+<ul><li> Create permeability to one ionic species (K+)<br />
+</li><li> Potassium ions diffuse down their chemical gradient from the inside to the outside of the cell.<br />
+</li><li> This causes a lost positive charge inside the cell, this leads to a net, negative interior potential, and so, this is the origin of the resting potential.  </p>
+</li></ul>
+
+<p><strong>Deriving the Nernst Potential (Chemistry Units)</strong><br />
+<ul><li> The Nernst potential means that the energy of discharging the concentration gradient for potassium ions balances the energy of moving the potassium ions back through the potential difference.  </p>
+</li></ul>
+
+<p><strong>Neurons are not Equilibrium Systems</strong><br />
+<ul><li> Several types of channels of channels are open at once.
+</li><li> To analyze resting potentials under these circumstances, we’ll switch to electrical calculations.  </p>
+</li></ul>
+
+<p><strong>Atomic-scale structure of (bacterial) Na+ channels</strong><br />
+<ul><li> A voltage-gated sodium channel has 4 sub-units (4 different colors), and if we magnify the central axis of the channel, we see the space through which sodium ions can permeate.<br />
+</li><li> We expect to see a symmetrical or pseudosymmetric structure with the permeation pathway on the axis.<br />
+</li><li> The keypoint here is that because ions can diffuse rather easily through the channel and we have a conducting pathway, this means that an individual channel acts very much like a conductor.<br />
+</li><li> A conductor and a resistor are the same thing. Conductance is the inverse of resistance. Conductance is one over the resistance.  </p>
+</li></ul>
+
+<hr />
+<h1> <span class="mw-headline" id="Electrical_Aspects_of_Ion_Channels_.2810.29">Electrical Aspects of Ion Channels (10)</span></h1>
+<p><strong>The miniature single-channel conductors add in parallel</strong><br />
+<ul><li> Cells have tens or hundreds, or thousands, or hundreds of thousands of individual single molecule potassium channels in parallel.<br />
+</li><li> Each one of them has a switch, which says whether the channel is active or not active.  * Each one of them has its battery, which is its Nernst potential.<br />
+</li><li> There is a macroscopic conductance (G), which is the sum of all of the microscopic conductances (gamma).<br />
+</li><li> G is the sum of all of the little gammas who's switches allow the channel to open.<br />
+</li><li> Because a large number of individual channels act some in parallel if their switches allow them too, we have a variable total conductance GNA in series with the Nernst potential for sodium, and a variable potassium conductance in series with a Nernst potential for potassium.<br />
+</li><li> Conservation of charge or Kirchoff's Current Law: a charge that flows in through a sodium channel, must be balanced by flowing out through a potassium channel.  </p>
+</li></ul>
+
+<p><strong>The membrane potential at steady state</strong><br />
+<ul><li> It is not an equilibrium because the cell is pumping all of those ions back.<br />
+</li><li> The resting potential is a weighted sum of the Nernst potential for potassium times its
+</li></ul>
+conductance plus the Nernst potential for sodium times it's conductance.<br />
+<ul><li> At rest, mostly potassium channels are open. So, the potassium terms dominate and we
+</li></ul>
+have a resting potential which is very near EK (the resting potential for potassium).<br />
+<ul><li> If sodium channels are open, then we have a membrane potential that becomes nearer to the sodium Nernst potential.<br />
+</li><li> This is how we can change the voltage across a biological membrane, how nature changes the voltage across a biological membrane with drugs that open ion channels.  </p>
+</li></ul>
+
+<p><strong>Two Major Roles for Ion Channels in Drugs and the Brain</strong><br />
+<ul><li> At synapses, we have a neurotransmitter or an agonist changing ion channels from closed to open in changing the potential across the cell.<br />
+</li><li> The importance of changing the potential across the cell is that this changes the frequency of action potentials.<br />
+</li><li> In addition, at axons and cell bodies drugs can change the equilibrium between closed and open voltage gated channels.    </p>
+</li></ul>
+
+<hr />
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 263/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Notes_1&amp;oldid=6235">https://share.coursera.org/wiki/index.php?title=Drugsandbrain:Lecture_Notes_1&amp;oldid=6235</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

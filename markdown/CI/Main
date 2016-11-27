@@ -1,0 +1,160 @@
+Welcome to the CI wiki page!
+
+This wiki will be collaboratively created by students in Tucker Balch's Computational Investing, Part 1 (Oct 2012). Find out how modern electronic markets work, why stock prices change in ways they do, and how computation can help our understanding of them. Learn to build algorithms and visualizations to inform investing practice.
+
+Feel free to create pages as needed. To see how to edit or create a page, see "Help" on the left navbar.
+
+# Lecture Notes
+
+Different students have different learning styles, and having written notes to accompany the video lectures will be very useful to students who prefer learning by reading. Contributing to these notes will help those students, and will also help you internalize what you just learned!
+
+You can get to the lecture videos by going [https://class.coursera.org/compinvesting1-2012-001/class/index here]
+
+## Week 1
+### '''Module 1: Class Overview'''
+* Time:  19 minutes, Difficulty Level: Easy.
+
+__Goals and Objectives Of the Course__
+* Understand electronic markets
+* Understand market data
+* Write software to visualize
+* Write software to discover
+* Create market simulator
+
+__Lectures__
+* [[CI:Class Overview|Class Overview]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=35 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/011-CompInvestI.pdf pdf])
+
+
+### '''Module 2: So you want to be a Portfolio Manager?'''
+* Time: 108 minutes, Difficulty Level: Easy.
+
+__Goals and Objectives__
+* Understand course viewpoint: Portfolio Manager
+* Understand portfolio manager incentives
+* Understand two main types of funds
+* Understand benchmarks
+
+
+__Lectures__
+* [[CI:Module 2 Objectives|Module 2 Objectives]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=3 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/021-CompInvestI.pptx powerpoint])
+* [[CI:Common metrics for assessing fund performance 1|Common metrics for assessing fund performance 1]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=9 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/022-CompInvestI.pptx powerpoint])
+* [[CI:Common metrics for assessing fund performance 2|Common metrics for assessing fund performance 2]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=11 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/023-CompInvestI.pptx powerpoint])
+* [[CI:Demo|Demo]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=13 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/024-CompInvestI.pptx powerpoint])
+* [[CI:Construct and Assess a Portfolio|Construct and Assess a Portfolio]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=15 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/025-CompInvestI.pptx powerpoint])
+
+* [Homework 1](http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1 "Homework 1") - ([Marking](http://wiki.quantsoftware.org/index.php?title=CompInvestI_Homework_1_rubric "marking"))
+
+## Week 2
+### Module 3: Mechanics of the market
+* Time: 43 minutes, Difficulty Level: Easy.
+
+__Goals and Objectives__
+* Order Book
+* Short Selling
+* Arbitrage
+* Inside the hedge fund
+* Optimizers
+
+__Lectures__
+* [[CI:Module 3 Objectives|Module 3 Objectives]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=39 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/031-CompInvestI.pptx powerpoint])
+* [[CI:The Order book|The Order book]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=41 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/032-CompInvestI.pptx powerpoint])
+* [[CI:Hedge funds and Arbitrage|Hedge funds and Arbitrage]] ([https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a link], [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=43 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/033-CompInvestI.pptx powerpoint])
+* [[CI:The Computing inside a Hedge fund|The Computing inside a Hedge fund]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=45 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/034-CompInvestI.pptx powerpoint])
+
+### '''Module 4: What is a company worth?'''
+* Time:  88 minutes, Difficulty Level: Easy.
+
+__Goals and Objectives__
+* Intrinsic value
+* News and Price
+* Fundamental analysis of a company
+
+
+__Lectures__
+* [[CI:Intrinsic Value (Value of future dividends)|Intrinsic Value (Value of future dividends)]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=47 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/041-CompInvestI.pptx powerpoint])
+* [[CI:How and why news affects prices (Event Study)|How and why news affects prices (Event Study)]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=49 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/042-CompInvestI.pptx powerpoint])
+* [[CI:Fundamental analysis of company value|Fundamental analysis of company value]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=51 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/043-CompInvestI.pptx powerpoint])
+
+## Week 3
+### '''QSTK Software Overview'''
+** Video 61: QSTK software overview
+** Video 62: Installing prerequisites on Unix (MacOS and Ubuntu)
+** Video 63: Installing QSTK on Unix
+** Video 64: Installing Data
+** Video 65: Testing QSTK
+** Video 66: Testing QSTK continued
+
+### '''Installing on Windows'''
+** Video 61: QSTK software overview
+** Video 81: Installing QSTK on Windows Overview
+** Video 82: Ubuntu install within VirtualBox
+** Video 83: Boot Ubuntu and Test QSTK
+** Video 65: Testing QSTK
+** Video 66: Testing QSTK continued
+
+### '''Capital Assets Pricing Model'''
+** Video 71: Capital Assets Pricing Model
+** Video 72: CAPM: What is Beta
+** Video 73: How Hedge Funds use CAPM
+
+##Week 4
+### '''Efficient Markets Hypothesis'''
+*Time / Difficulty Level : 60 minutes / Easy.
+
+__Goals and Objectives__
+* Information
+* Efficient Markets Hypothesis
+
+__Lectures__
+
+* [[CI:Information and Arbitrage|Information and Arbitrage]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week4 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=83 "video")
+
+* [[CI:Efficient Markets Hypothesis|Efficient Markets Hypothesis]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week4 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=85 "video")
+
+* [[CI:Event Studies|Event Studies]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=89 "video")
+* [[CI:Event Profiler (QSTK)|Event Profiler (QSTK)]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week4 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=93 "video")
+
+
+##Week 5
+
+### '''Portfolio Optimization and the Efficient Frontier'''
+Time / Difficulty Level : 60 minutes / Medium.
+
+__Goals and Objectives__
+* Portfolio Optimization
+* Correlation and Covariance
+* Efficient Frontier
+* How optimizers work
+
+__Lectures__
+
+* [[CI:Portfolio Optimization and Efficient Frontier 1|Portfolio Optimization and Efficient Frontier 1]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=95 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/111-CompInvestI.pdf powerpoint])
+* [[CI:Portfolio Optimization and Efficient Frontier 2|Portfolio Optimization and Efficient Frontier 2]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=97 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/112-CompInvestI.pdf powerpoint])
+* [[CI:Correlation and Covariance|Correlation and Covariance]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=99 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/113-CompInvestI.pdf powerpoint])
+* [[CI:Efficient Frontier|Efficient Frontier]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=101 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/114-CompInvestI.pdf powerpoint])
+* [[CI:How optimizers work|How optimizers work]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=103 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/115-CompInvestI.pdf powerpoint])
+
+### '''Digging Into Data'''
+* Time / Difficulty Level : 60 minutes / Medium.
+
+__Goals and Objectives__
+* Digging into Data
+
+
+__Lectures__
+* [[CI:Digging into Data|Digging into Data]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=105 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/121-CompInvestI.pdf powerpoint])
+* [[CI:Actual Vs Adjusted Price|Actual Vs Adjusted Price]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=107 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/122-CompInvestI.pdf powerpoint])
+* [[CI:Data Sanity and Scrubbing|Data Sanity and Scrubbing]] ([link](https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week5 "link"), [video](https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=109 "video"), [http://www.quantsoftware.org/CompInvestI-Presentations/123-CompInvestI.pdf powerpoint])
+
+* [Quiz 4](https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=148 "Quiz 4") - Week 5
+
+# Quizzes
+* [Quiz 1](https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=68 "Quiz 1") - Module 1 & 2
+* [Quiz 2](https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=84 "Quiz 2") - Module 3 & 4
+
+* [Quiz 4](https://class.coursera.org/compinvesting1-2012-001/quiz/start?quiz_id=148 "Quiz 4") - Week 5
+
+# Quant Software wiki
+* [http://wiki.quantsoftware.org wiki.quantsoftware.org]
+
+[[Category:CI]]

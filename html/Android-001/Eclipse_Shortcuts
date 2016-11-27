@@ -1,0 +1,72 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Eclipse Shortcuts</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Eclipse_Shortcut_Keys">Eclipse Shortcut Keys</span></h1>
+<p>There are a lot of awesome shortcuts in Eclipse. I've summarized below some really awesome shortcuts that I like to use for both Mac and Windows.</p>
+<p>Nicely space out all of your code, remove whitespace, make it nice and readable.</p>
+<p><ul>
+  <li>Cmd + Shift + F</li>
+  <li>Ctrl + Shift + F</li>
+</ul></p>
+<p>Fix imports. Delete unused ones and add the ones that you need.</p>
+<p><ul>
+  <li>Cmd + Shift + O</li>
+  <li>Ctrl + Shift + O</li>
+</ul></p>
+<p>Extract code to method. Highlight code in a method and this shortcut will remove that code and put it into the method that you name.</p>
+<p><ul>
+  <li>Alt + Cmd + M</li>
+  <li>Alt + Shift + M</li>
+</ul></p>
+<p>Change the name of selected element. Highlight the variable, method, etc. and this shortcut will replace that name with the new name.</p>
+<p><ul>
+  <li>Alt + Cmd + R</li>
+  <li>Alt + Shift + R</li>
+</ul></p>
+<p>Maximize/Minimize your pane.</p>
+<p><ul>
+  <li>Ctrl + M</li>
+  <li>Ctrl + M</li>
+</ul></p>
+<p>Shows you all of the keyboard shortcuts available.</p>
+<p><ul>
+  <li>Cmd + Shift + L</li>
+  <li>Ctrl + Shift + L</li>
+</ul></p>
+<p>Autocomplete with Ctrl + Space</p>
+<p><ul>
+  <li>For + Ctrl + Space gives you a choice of four for loops and will tab complete the rest of the data</li>
+  <li>sysout + Ctrl + Space gives you "System.out.println"</li>
+  <li>In a layout file, in a &lt;Button/&gt; definition, typing "heig" and pressing Ctrl+Space will pop up a dialog with 2 selections: "android:layout_height" and "android:height".</li>
+  <li>There are many examples where Ctrl + Space can help</li>
+</ul></p>
+<p>Automatically create getters, setters, and constructors with...</p>
+<p><ul>
+  <li>Source &gt; Generate Getters and Setters</li>
+  <li>Source &gt; Generate Constructor using Fields</li>
+</ul></p>
+<p>And here's one final one for that applies to this class. You may see the skeleton files include comments like "// TODO ...". Any comments of this type can be found in a list at Window &gt; Show View &gt; Tasks.</p>
+<h1> <span class="mw-headline" id="Links">Links</span></h1>
+<p>As always there are many more great resources on the web:</p>
+<p><a rel="nofollow" class="external text" href="http://rayfd.me/2007/05/20/10-eclipse-navigation-shortcuts-every-java-programmer-should-know/">10 Eclipse Navigation Shortcuts Every Java Programmer Should Know</a></p>
+<p><a rel="nofollow" class="external text" href="http://javarevisited.blogspot.com/2010/10/eclipse-tutorial-most-useful-eclipse.html">Top 30 Eclipse Keyboard Shortcuts for Java Programmer</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=C5glFtpuy0U">Eclipse Shortcut Keys Video</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Eclipse_Shortcuts&amp;oldid=22656">https://share.coursera.org/wiki/index.php?title=Android-001:Eclipse_Shortcuts&amp;oldid=22656</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

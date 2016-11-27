@@ -1,0 +1,29 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:implementation</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>The course lectures contain many small examples, usually in an abstract specification.  This page contains a collection of those examples with specific implementations, so you can play with them.</p>
+<ul>
+<li><a href="/wiki/index.php/Optimization:implementation:magicseries" title="Optimization:implementation:magicseries"> Magic Series</a></li>
+<li><a href="/wiki/index.php/Optimization:implementation:queens" title="Optimization:implementation:queens"> N-Queens</a></li>
+<li><a href="/wiki/index.php/Optimization:implementation:sendmoremoney" title="Optimization:implementation:sendmoremoney"> Send More Money</a></li>
+<li>...</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:implementation&amp;oldid=12749">https://share.coursera.org/wiki/index.php?title=Optimization:implementation&amp;oldid=12749</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

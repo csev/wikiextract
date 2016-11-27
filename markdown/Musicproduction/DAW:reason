@@ -1,0 +1,89 @@
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project specifics
+details of file management
+*Project Name
+**You can set the project name when you save a project.
+[[File:Reason Project Name.png|center|635×480px]]
+*File type
+**The latest version of Reason, 6.5, saves projects as '.reason' files. You can open projects from older versions, but saving them will convert them to the '.reason' format.
+[[File:Reason File Type.png|center|635x480px]]
+*Bit depth
+**Bit depth can be set in your interface's control panel, reachable from 'Preferences...' under the Audio tab.
+[[File:Reason-Bit-Depth.png|center|512×379px]]
+*Sampling rate
+**You can set the sampling rate under 'Preferences...' on the Audio tab, unless your audio interface's control panel overrides it. In that case, use your interace's control panel located on the same tab.
+[[File:Reason-Sample-Rate.png|center|544×230px]]
+*Hardware
+**You can set the Input/Output audio device under 'Preferences...' on the Audio tab. 
+[[File:hardware.png|center|512×379px]]
+*Buffer size
+**You can set the buffer size under 'Preferences...' on the Audio tab.
+[[File:Reason-buffer-size.png|center|492×200px]]
+*Project folders specifics
+
+##Recording
+details of audio recording
+*Metronome(click track)
+**To turn on the metronome, simply press 'C', or click on the box labeled 'click' on the transport bar, located at the bottom of the user interface.
+**You can change the volume of the metronome using the Click Level knob located on the transport bar, under the Click and Pre checkboxes.
+*Count in
+**To turn on the count in, press 'Ctrl+P', or click on the box labeled 'pre' on the transport bar.
+**You can change the number of precount bars under 'Options>Number of Precount Bars'
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+*Grid
+*Change grid resolution
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+*[Website](http://www.propellerheads.se/)
+*[Manual](http://www.propellerheads.se/download/index.cfm?fuseaction=get_article&article=reason_doc)
+*[Forums](https://www.propellerheads.se/forum/)
+*Links
+*[Reason 101](http://www.reason101.net/)
+*[Peff](http://www.peff.com/)
+*Propellerhead's [YouTube Channel](https://www.youtube.com/user/PropellerheadSW). Lots of tutorials in playlist form.
+*[Reason on Reddit](https://www.reddit.com/r/reasoners/)
+*[Reason Refills -legal- on Reddit](https://www.reddit.com/r/reasonrefills/)

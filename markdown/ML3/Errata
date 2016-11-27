@@ -1,0 +1,26 @@
+[[ML3:Main|« Back to the main page]]
+
+## Week 1
+### Class probabilities
+* Review of basics of probabilities: 01:56 - Carlos says "if the output is 0 that means that I'm absolutely sure that every single review in the world is positive", but he is referring to the case where the output is 1; if the output is 1, then we're absolutely sure that the review is positive. The case where $$P(y = +1) = 0$$ is discussed at 02:44: "And so, on the other hand, if I say that the probability of y equals +1 is 0. That means I'm absolutely sure that every review in the world is not positive."
+
+## Week 2
+### Summarizing learning linear classifiers
+* Recap of learning logistic regression classifiers: 00:54 through 01:38 - Slide 63 should say "Learn a logistic regression model with gradient ascent" and "(Optional) Derive the gradient ascent update rule for logistic regression" (not "gradient descent")
+
+### L2 regularized logistic regression
+* L2 regularized logistic regression: 00:03 through 03:45 - Slides 45 and 46 should say "What if $$\mathbf{\hat{w}}$$ selected to maximize $$\mathscr{l}(\mathbf{w}) - \lambda \| \mathbf{w} \|_2^2$$" (not "minimize")
+
+## Week 3
+### Using the learned decision tree
+* Making predictions with decision trees: 0:56 through 01:12 - Slide 77 has two small typos; "next\_node" was meant instead of "next\_note".
+
+## Week 4
+### (OPTIONAL LESSON) Pruning decision trees
+* (OPTIONAL) Tree pruning algorithm:
+    * 01:05 - If $$\lambda = 0.3$$, then $$\lambda\; L(T) = 0.3 \cdot 6 = 1.8$$, not 0.18. The total cost, $$C(T)$$, is therefore $$0.25 + 1.8 = 2.05$$
+    * 01:55 - If $$\lambda = 0.3$$, then $$\lambda\; L(T) = 0.3 \cdot 5 = 1.5$$, not 0.15. The total cost of the simpler tree is therefore $$0.26 + 1.5 = 1.76$$
+
+## Week 6
+### The precision-recall tradeoff
+* Precision-recall extremes: 02:04 through 02:34 - Slide 34 has the descriptions of pessimistic and optimistic models swapped. A pessimistic model finds few positive sentences, but includes little-to-no false positives. An optimistic model finds many positive sentences, but includes many false positives.

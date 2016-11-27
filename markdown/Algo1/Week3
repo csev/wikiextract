@@ -1,0 +1,18 @@
+[[Category:Algorithms]]
+## Random Pivots
+
+Use a QuickSort framework with randomized pivot to find the $$n^{th}$$ ranked element in a set in average $$O(n)$$ time.
+
+## Deterministic $$O(n\ log\ n)$$ QuickSort
+
+QuickSort can obtain deterministic $$O(n\ log\ n)$$ performance through <a href="http://en.wikipedia.org/wiki/Median_of_medians">Median of Medians</a>, but in practice it's not used due to its complexity and high constant factor. Random pivot is much easier and in practice faster.
+
+## Graph
+
+A <a href="http://en.wikipedia.org/wiki/Graph_(mathematics)">Graph</a> organizes data as relationships of pairs of elements. [http://en.wikipedia.org/wiki/Graph_theory Graph Theory] can be used to understand real world structures including roads, networks, Facebook, Linkedin and <a href="https://oracleofbacon.org/">Six Degrees of Kevin Bacon</a>.
+
+Representing nodes in graphs is fairly straight forward. Representing edges is more interesting. Popular techniques include an <a href="http://en.wikipedia.org/wiki/Adjacency_matrix">adjacency matrix</a> or an <a href="http://en.wikipedia.org/wiki/Adjacency_list">adjacency list</a>. Adjacency lists tend to be better for sparse graphs.
+
+When enough edges of a graph are removed, such that the nodes left are no longer connected, then this set is called a <a href="http://en.wikipedia.org/wiki/Cut_(graph_theory)">cut</a>. The minimum set of edges is called the <a href="http://en.wikipedia.org/wiki/Cut_(graph_theory)#Minimum_cut">min cut</a>.
+
+<a href="http://en.wikipedia.org/wiki/Karger's_algorithm">Karger's Algorithm</a> finds the min cut of a graph using randomization.

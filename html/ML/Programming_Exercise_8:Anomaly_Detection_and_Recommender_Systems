@@ -1,0 +1,60 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 8:Anomaly Detection and Recommender Systems</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Debugging_Tip"><span class="tocnumber">1</span> <span class="toctext">Debugging Tip</span></a></li>
+<li class="toclevel-1"><a href="#error_in_ex8_cofi.m_.28reported_by_Charles_Davis_in_session_ML-005.29"><span class="tocnumber">2</span> <span class="toctext">error in ex8&#95;cofi.m (reported by Charles Davis in session ML-005)</span></a></li>
+<li class="toclevel-1"><a href="#Item_2:_The_grader_uses_Y_with_non-zero_values"><span class="tocnumber">3</span> <span class="toctext">Item 2: The grader uses Y with non-zero values</span></a></li>
+<li class="toclevel-1"><a href="#Item_3:_Regularization"><span class="tocnumber">4</span> <span class="toctext">Item 3: Regularization</span></a></li>
+<li class="toclevel-1"><a href="#1.2_Estimating_parameters_for_a_Gaussian"><span class="tocnumber">5</span> <span class="toctext">1.2 Estimating parameters for a Gaussian</span></a></li>
+<li class="toclevel-1"><a href="#errors_in_cofiCostFunc.m"><span class="tocnumber">6</span> <span class="toctext">errors in cofiCostFunc.m</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex8/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+<h2> <span class="mw-headline" id="error_in_ex8_cofi.m_.28reported_by_Charles_Davis_in_session_ML-005.29">error in ex8&#95;cofi.m (reported by Charles Davis in session ML-005)</span></h2>
+<p>line 199 in ex8&#95;cofi.m reads</p>
+<p>theta = fmincg (@(t)(cofiCostFunc(t, Y, R, num&#95;users, num&#95;movies, num&#95;features, lambda)), initial&#95;parameters, options);</p>
+<p>but I believe it should be</p>
+<p>theta = fmincg (@(t)(cofiCostFunc(t, Ynorm, R, num&#95;users, num&#95;movies, num&#95;features, lambda)), initial&#95;parameters, options);</p>
+<p>...to avoid creating ratings &#62; 5 at line 219. This doesn't affect the submissions of course, just the cosmetics of the recommendations.</p>
+<p>Supporting analysis:
+Y is normalized in line 181, creating Ynorm, but then it is never used. The video lecture "Implementation Detail: Mean Normalization" at 5:34 makes it pretty clear that the normalized Y matrix should be used for calculating theta.</p>
+<p>This errata also means that "ex8.pdf" Figure 4 is incorrect, since it shows movies with ratings greater than 5-stars.</p>
+<h2> <span class="mw-headline" id="Item_2:_The_grader_uses_Y_with_non-zero_values">Item 2: The grader uses Y with non-zero values</span></h2>
+<p>When using the R matrix (to ignore movies that have not been rated), do not rely on Y(i,j) to be 0 when a user has not rated a film. This expectation is true for the ex8_cofi.m script, but that is NOT true for the test case used by the submit grader for Part 3 through Part 6.</p>
+<p>Note: This might no longer be true, the grader seems to be using Y(i,j) == 0 for when a user has not rated a film</p>
+<h2> <span class="mw-headline" id="Item_3:_Regularization">Item 3: Regularization</span></h2>
+<p>Note: Unlike previous assignments when we performed regularization, for this exercise, we do NOT skip the 1st column of Theta or X when computing regularization. This is because we are not specifying bias units in the collaborative filtering algorithm (since the algorithm determines all of the theta values, it can set one to the '1' value if it leads to the optimum solution). Therefore, all values of Theta and X should be considered in regularization.</p>
+<h2> <span class="mw-headline" id="1.2_Estimating_parameters_for_a_Gaussian">1.2 Estimating parameters for a Gaussian</span></h2>
+<p>the var function can actually return normalization with 1/m instead of 1/(m-1).
+Set the second argument 0 for 1/(m-1) and 1 for 1/m.</p>
+<h2> <span class="mw-headline" id="errors_in_cofiCostFunc.m">errors in cofiCostFunc.m</span></h2>
+<p>line 9 should read "% Unfold the <strong>X</strong> and <strong>Theta</strong> matrices from params"</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_8:Anomaly_Detection_and_Recommender_Systems&amp;oldid=33729">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_8:Anomaly_Detection_and_Recommender_Systems&amp;oldid=33729</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

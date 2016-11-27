@@ -1,0 +1,105 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:Marginal Costs</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<h2> <span class="mw-headline" id="Notes_for_Week_5:_3.2_Marginal_Costs">Notes for Week 5: 3.2 Marginal Costs</span></h2>
+<p>Because the <strong>Marginal Costs</strong> are defined by the equation: $$MC = \Delta TC / \Delta Q$$ using the hypothetical example adding a column for Marginal Costs.</p>
+<table border="1">
+  <tr>
+    <td># of Cooks</td>
+    <td># of Sandwiches</td>
+    <td>Marginal Product</td>
+    <td>Fixed Costs</td>
+    <td>Variable Costs</td>
+    <td>Total Costs</td>
+    <td>Marginal Costs</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>0</td>
+    <td>0</td>
+    <td>$100</td>
+    <td>$0</td>
+    <td>$100</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>40</td>
+    <td>40</td>
+    <td>$100</td>
+    <td>$80</td>
+    <td>$180</td>
+    <td>$2.00</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>90</td>
+    <td>50</td>
+    <td>$100</td>
+    <td>$160</td>
+    <td>$260</td>
+    <td>$1.60</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>120</td>
+    <td>30</td>
+    <td>$100</td>
+    <td>$240</td>
+    <td>$340</td>
+    <td>$2.67</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>135</td>
+    <td>15</td>
+    <td>$100</td>
+    <td>$320</td>
+    <td>$420</td>
+    <td>$5.30</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>140</td>
+    <td>5</td>
+    <td>$100</td>
+    <td>$400</td>
+    <td>$500</td>
+    <td>$16.00</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>142</td>
+    <td>2</td>
+    <td>$100</td>
+    <td>$480</td>
+    <td>$580</td>
+    <td>$40.00</td>
+  </tr>
+</table>
+<p>As an example for the calculation of the MC for 3 cooks or 120th sandwich:
+$$MC&#95;3 = \Delta TC&#95;3 / \Delta Q&#95;3 = (TC&#95;3 - TC&#95;2) / (Q&#95;3 - Q&#95;2) = (340 - 260) / (120 - 90)= 80/30 \approx $2.67$$</p>
+<p>Because in this example the Labor Cost per Work is $80 the $$\Delta TC$$ is going to be always $80. Note that $$\Delta Q$$ is actually the Marginal Product of Labor that was added by the new worker.</p>
+<p>The Marginal Cost answers the question: <em>How much does it cost to increase production of one sandwich?</em></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:Marginal_Costs&amp;oldid=18517">https://share.coursera.org/wiki/index.php?title=Microecon:Marginal_Costs&amp;oldid=18517</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

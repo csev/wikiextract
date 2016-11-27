@@ -1,0 +1,70 @@
+##Useful books and Tutorials
+
+* [Linear Algebra, Theory And Applications](http://www.math.byu.edu/klkuttle/linearalgebra.pdf) {{pdf}} by Kenneth Kuttler, Mathematics Department of Brigham Young University, 2012.
+* [http://www.math.brown.edu/~treil/papers/LADW/book.pdf Linear Algebra Done Wrong] {{pdf}} by Sergei Treil, Department of Mathematics, Brown University, 2004-2009.
+* [http://courses.csail.mit.edu/6.042/spring13/mcs.pdf Math primer] {{pdf}} This is the math primer for Computer Scientists.
+* [Linear Algebra](http://joshua.smcvt.edu/linearalgebra/) by  Jim Hefferon
+* [Linear Algebra in Twenty-Five Lectures](https://www.math.ucdavis.edu/~linear/) by Tom Denton and Andrew Waldron
+* [http://math.mit.edu/linearalgebra/ Introduction to Linear Algebra 4th Edition] by Gilbert Strang
+* [http://linear.ups.edu/ A First Course in Linear Algebra] by Rob Beezer
+* [http://freemath.wikia.com Freemath - Linear Algebra] - a list of free linear algebra textbooks, currently 13 including the ones are already listed here
+* [http://www.people.vcu.edu/~rhammack/BookOfProof/BookOfProof.pdf Book of Proof] by Richard Hammack of Virginia Commonwealth University
+* [http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274 Matrix Cookbook] by Kaare Brandt Petersen, Michael Syskind Pedersen
+
+## Linear Algebra Courses
+* [https://www.khanacademy.org/math/linear-algebra Linear Algebra] Khan Academy
+* [http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/ MIT Open Courseware] Linear Algebra by Prof. Gilbert Strang.
+* [https://itunes.apple.com/us/itunes-u/mth309-introduction-to-linear/id431638451 MTH309 Introduction to Linear Algebra] University at Buffalo
+* [http://patrickjmt.com PatrickJMT] PatrickJMT
+
+##Python
+
+* [http://docs.python.org/3.3/tutorial/datastructures.html#list-comprehensions List-comprehensions], Python 3.3.x official documentation.
+* [http://docs.python.org/3.3/tutorial/index.html Tutorial]: Python 3.3.x Tutorial.
+* [http://docs.python.org/3.3/library/index.html Python Library]: Python 3.3.x library.
+* [http://www.sagemath.org Sage]: An open-source mathematics library with Python-based interface.
+* [http://www.pythontutor.com/ PythonTutor]: LEARN programming by visualizing code execution.
+* [http://ipython.org/ IP[y]]: Interactive Python.
+* [http://openbookproject.net/thinkcs/python/english3e/ How to Think Like a Computer Scientist ] Learning with Python 3
+* [http://infohost.nmt.edu/tcc/help/pubs/lang/python32/web/index.html Python 3.2 quick reference ]
+* [http://www.itmaybeahack.com/hohttp://www.diveintopython.net/mepage/books/python.html Building Skills in Python ]
+* [http://www.pythontutor.com/visualize.html#mode=display Visualizing code execution] LEARN programming by visualizing code execution
+* [http://thenewboston.org/list.php?cat=36 Python Videos] The New Boston
+* [http://www.diveintopython.net/ Dive into Python] Free book, in several languages.
+
+##Programming help
+
+* [http://www.stackoverflow.com/ Stack Overflow]:   A question and answer site for professional and enthusiast programmers.
+* [http://www.codecademy.com/tracks/python Code Academy ]:  If you are new to programming, spend some of your free time here. Concepts are explained a little more in depth.
+
+## Complex Numbers
+* [https://www.khanacademy.org/math/algebra/complex-numbers# Complex Numbers ]: Khan Academy complex number videos and practice
+
+##Functions
+
+* [http://en.wikipedia.org/wiki/Surjective_function Surjective ]: Onto
+* [http://en.wikipedia.org/wiki/Injective_function Injective ]: One to one
+* [http://en.wikipedia.org/wiki/Bijective_function Bijective ]: Exact pairing between sets
+
+## Helpful forum posts
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=503] Why "onto," "one to one" rather than "surjective" and "injective"
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=1879] Why are Span {[4, -1, 1], [0, 1, 1]} and {[x, y, z] : [1, 2, -2] · [x, y, z] = 0} equivalent representations of the same plane?
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=1787#comment-6319] Equivalence of for loops and comprehensions
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=1989] Guide - Install Python from Source on Ubuntu
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=2276#post-10103] What do GF2 Spans look like?
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=2454#post-10762] Avoiding repeating expensive operations in comprehension
+* [https://class.coursera.org/matrix-001/forum/thread?thread_id=2998#post-13023] Confused by matrix multiplication
+
+## Latex
+* [http://www.ams.org/publications/authors/tex/amslatex LaTeX]: American Mathematical Society Latex
+* [ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf LaTeX Guide ]: {{pdf}} A short Guide to LaTex
+* [http://www.codecogs.com/latex/eqneditor.php Equation Builder]: On-line equation builder
+* [http://latex-my.blogspot.com/2009/10/name-that-symbol_13.html LaTeX Symbols]: Finding symbols
+* [http://en.wikibooks.org/wiki/LaTeX/Mathematics Wikibooks Latex Math]
+
+## Miscellaneous Help
+
+* [Changing default startup directory for command prompt in Windows](http://stackoverflow.com/questions/4895966/changing-default-startup-directory-for-command-prompt-in-windows-7)
+
+## Categories
+[[Category:Coding the Matrix|Us]]

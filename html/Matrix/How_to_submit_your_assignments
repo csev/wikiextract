@@ -1,0 +1,87 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Matrix:How to submit your assignments</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>If you want to transmit the assignment you call the python script <i>submit&#95;python&#95;lab.py</i>, you enter your email address used in Coursra and your submission password (not your coursera password, check <a rel="nofollow" class="external text" href="https://class.coursera.org/matrix-001/assignment/index">here</a>):</p>
+<pre>
+$ python3 submit_python_lab.py 
+==
+== Submitting Solutions 
+==
+
+Login email address: your_email@example.com
+One-time password from the assignment page (NOT your own account's password): 7E!*FHa3Y   
+
+...
+</pre>
+<p>You can avoid entering your email and you passwοrd by calling:</p>
+<pre>
+$ COURSERA_EMAIL=your_email@example.com COURSERA_PASS=7E!*FHa3Y python3 submit_python_lab.py
+</pre>
+<p>In linux systems you can configure ~/.bashrc file and add the line:</p>
+<pre>
+export COURSERA_EMAIL=your_email@example.com
+</pre>
+<h1> <span class="mw-headline" id="Use_expect-dev_for_automatic_script_login">Use expect-dev for automatic script login</span></h1>
+<p>In linux you can use the utility <i>expect</i> in order to make automatic login to the submission script. In case you don't have installed the package <i>expect-dev</i> in debian based linux distribution you can install it by the following command:</p>
+<pre>
+sudo apt-get install expect-dev
+</pre>
+<p>Create the file <b>submit</b> in the same directory where there is <i>submit&#95;python&#95;lab.py</i> and the python laboratory files. Put your coursera email and submission password inside the script.</p>
+<pre>
+#!/usr/bin/expect
+spawn python3 [exec find . -name submit*.py -print]
+expect &quot;Login email address: &quot;
+send &quot;YOUR_EMAIL\n&quot;
+expect &quot;password): &quot;
+send &quot;YOUR_PASSWORD\n&quot;
+interact
+</pre>
+<p>Make the script file <b>submit</b> executable with the command:</p>
+<pre>
+chmod +x submit
+</pre>
+<p>Execute the file ./submit and the expect utility automatically will login for you!</p>
+<h1> <span class="mw-headline" id="Hacking_submit_python_lab.py">Hacking submit&#95;python&#95;lab.py</span></h1>
+<p>You can also direct hack the python script <i>submit&#95;python&#95;lab.py</i>. Find the login function <b>def loginPrompt()</b> and comment the lines as it is demonstrated (add your email and your submission password):</p>
+<pre>
+def loginPrompt():
+    &quot;&quot;&quot;Prompt the user for login credentials. Returns a tuple (login, password).&quot;&quot;&quot;
+    #if 'COURSERA_EMAIL' in os.environ:
+    #    login = os.environ['COURSERA_EMAIL']
+    #else:
+    #    login = input('Login email address: ')
+
+    #if 'COURSERA_PASS' in os.environ:
+    #    password = os.environ['COURSERA_PASS']
+    #else:
+    #    password = input(&quot;One-time password from the assignment page (NOT your own account\'s password): &quot;)
+    #return login, password
+    return str(&quot;your_email@example.com&quot;), str(&quot;7E!*FHa3Y&quot;)
+</pre>
+<p>If you do this hack the python script does not asks for a login name and password and directs you in the submission list. </p>
+<h1> <span class="mw-headline" id="References">References</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/matrix-001/wiki/view?page=software-environment">Official Software Environment instructions</a> for "Coding the Matrix: Linear Algebra through Computer Science Applications" class.</li>
+<li><a rel="nofollow" class="external text" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=120">Command line arguments please?</a>, Forum discussion.</li>
+<li><a rel="nofollow" class="external text" href="http://linux.die.net/man/1/expect">expect</a>, linux man page. </li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 65/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Matrix:How_to_submit_your_assignments&amp;oldid=14482">https://share.coursera.org/wiki/index.php?title=Matrix:How_to_submit_your_assignments&amp;oldid=14482</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coding_the_Matrix" title="Category:Coding the Matrix">Coding the Matrix</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

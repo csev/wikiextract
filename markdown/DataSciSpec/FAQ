@@ -1,0 +1,267 @@
+[[Category:DataSciSpec]]
+Return to [[DataSciSpec:Main| Data Science Specialization]]
+
+Where can I learn more about the John Hopkins University Data Science Specialization?
+<br>
+[Johns Hopkins University Data Science Specialization](https://www.coursera.org/specialization/jhudatascience/1?utm_medium=courseDescripTop) or [Johns Hopkins University Data Science Specialization](http://jhudatascience.org).
+<br><br>
+
+##Data Scientist's Toolbox
+
+Where can I learn more about the Data Scientist's Toolbox course?
+<br>
+Read the [Data Scientist's Toolbox](https://www.coursera.org/course/datascitoolbox) course description.
+<br>
+Important links may be found on the Data Scientist's Toolbox [main wiki page](https://share.coursera.org/wiki/index.php/Category:Data_Scientist%27s_Toolbox)
+<br>
+There is now a page with notes about the[[GIT | Git Version Control System]]
+
+##R Programming
+
+Where can I learn more about the R Programming course?
+<br>
+Read the [R Programming](https://www.coursera.org/course/rprog) course description.
+<br>
+At the main R website (CRAN) there is a printable (PDF) [reference card for various R functions](http://cran.r-project.org/doc/contrib/Short-refcard.pdf).
+
+Is there an interactive tutorial for R? 
+<br>
+[Statistics with Interactive R Learning (swirl)](http://swirlstats.com) is an interactive tutorial which runs inside the R / Rstudio environment. At the end of each lesson, swirl will ask if you'd like to notify Coursera. Select Yes and input the requested information to receive credit for your work. Your submission password is different from your Coursera password and can be found at the top of the Programming Assignments page.
+
+How can I make the transition from the lectures to the first programming assignment?
+<br>
+If you're not familiar with R and you're not familiar with programming concepts, sometimes even if you are, Programming Assignment 1 can feel like you're getting thrown in the deep end of the pool after a 5 minute lesson on how to swim. Data Science Specialization course participant Derek Franks has put together an unofficial [practice programming assignment](https://github.com/derekfranks/practice_assignment).
+
+How do I return multiple values from a function without using a list?
+<br>
+Assigning values to multiple variables using only a single line of R code is described in a StackOverflow [article](http://stackoverflow.com/questions/7519790/assign-multiple-new-variables-in-a-single-line-in-r).
+
+Why should I learn R for Statistical Analysis? Aren't Python and Julia Good Enough?
+<br>
+Professor Norman Matloff says [R is the king](http://matloff.wordpress.com/2014/05/21/r-beats-python-r-beats-julia-anyone-else-wanna-challenge-r/) of statistical analysis which is at the heart of data science.
+
+Why does R have two assignment operators (= and <-)?
+<br>
+There is an [article](http://blog.revolutionanalytics.com/2008/12/use-equals-or-arrow-for-assignment.html) on the Revolution Analytics blog describing the dual assignment operators in the R language. It is an interesting read and provides historical insight into the rationale.
+
+##Getting and Cleaning Data
+
+Where can I learn more about the Getting and Cleaning Data course?
+<br>
+Read the [Getting and Cleaning Data](https://www.coursera.org/course/getdata) course description.
+
+How do I enable reading Microsoft Excel (.xlsx) files within the R environment?
+<pre>
+1. Install the Java Run-time Environment (JRE) at the operating system level.
+2. Install Java at the operating system level.
+3. Install the rJava package within R / RStudio using the command: install.packages("rJava").
+4. Install the xlsx package within R / RStudio using the command: install.packages("xlsx").
+5. Restart R / RStudio.
+6. Load the modules using the commands: library("rJava") and library("xlsx)".
+</pre>
+
+How do I resolves problems when attempting to downloading data files, [any tips](http://rpubs.com/thoughtfulbloke/downloadtips)?
+
+##Exploratory Data Analysis
+
+Where can I learn more about the Exploratory Data Analysis course?
+<br>
+Read the [Exploratory Data Analysis](https://www.coursera.org/course/exdata) course description.
+
+##Reproducible Research
+
+Where can I learn more about the Reproducible Research course?
+<br>
+Read the [Reproducible Research](https://www.coursera.org/course/repdata) course description.
+
+##Statistical Inference
+
+Where can I learn more about the Statistical Inference course?
+<br>
+Read the [Statistical Inference](https://www.coursera.org/course/statinference) course description.
+
+##Regression Models
+
+Where can I learn more about the Regression Models course?
+<br>
+Read the [Regression Models](https://www.coursera.org/course/regmods) course description.
+
+##Practical Machine Learning
+
+Where can I learn more about the Practical Machine Learning course?
+<br>
+Read the [Practical Machine Learning](https://www.coursera.org/course/predmachlearn) course description.
+
+##Developing Data Products
+
+Where can I learn more about the Developing Data Products course?
+<br>
+Read the [Developing Data Products](https://www.coursera.org/course/devdataprod) course description.
+
+##Capstone Project
+
+Where can I learn more about the [Capstone Project](https://www.coursera.org/specialization/jhudatascience/1?utm_medium=courseDescripTop)?
+
+##Where can I find the course dependency list for prerequisite and/or co-requisite courses?
+A visual depiction of the relationship between the courses as well as an explanation of hard dependency and soft dependency can be found on the [main page](https://share.coursera.org/wiki/index.php/DataSciSpec:Main#Course_Dependency_Information) of this wiki.
+
+##What is the easiest way to learn programming using R and RStudio?
+
+R Programming course participant James Bullis offers some sage advice (edited).
+
+The easiest way to program in any language is start with something simple and work towards the progressively more complex.  To familiarize yourself with R, take a small set of data (data set) with which you are comfortable and "play" with the data, so to speak.  This approach is important for at least two reasons:
+
+* When you calculate something, such as the mean of a column, you can be confident that the results you get are correct.
+* When you make a mistake, and you will make a mistake, you can focus on correcting what you're doing wrong.
+
+If you're unfamiliar with the data, it can be difficult to separate your lack of understanding of the data verses your lack of understanding of the language or tool.
+
+Toby Marthews at the BCI Research Centre, Panama, has written an excellent introduction specifically addressing R novices. "The Friendly Beginners' R Course" is legally available from many university websites. This [introductory tutorial](https://share.coursera.org/wiki/index.php/DataSciSpec:Useful_Resources#Tutorials) is listed on the Resource page of this wiki as well.
+
+This question would not be complete without a contribution from the R Programming course instructor, Roger D. Peng, as quoted in ["R for Absolute Beginners"](http://duncanjg.files.wordpress.com/2008/11/rcoursedraft1.pdf).
+
+<pre>
+library(fortunes)
+fortune("pizza")
+
+Roger D. Peng: I don't think anyone actually believes that R is designed to
+make *everyone* happy. For me, R does about 99% of the things I need to do, but
+sadly, when I need to order a pizza, I still have to pick up the telephone.
+
+-- Roger D. Peng, et. al.
+   R-help (June 2004)
+</pre>
+
+##The art and science of problem solving for new computer programmers
+
+The single largest hurdle for anyone new to programming is translating stated requirements into a working programme. The reason? Rarely does an introductory course teach the essential skill of problem solving. By problem solving I mean breaking down a requirements specification into smaller sub-problems until the sub-problem can be translated into the implementation language. Expressing the steps in pseudo-code helps ease the transition from human language to programming language. To ease the transition for novice computer programmers an introduction to these problem-solving techniques begins on page 16 of [Introduction to Computer Science](http://people.scs.carleton.ca/~lanthier/teaching/COMP1405/Notes/COMP1405_Ch1_IntroductionToComputerScience.pdf).
+
+##Late Days- for Quizzes, Peer Assignments, or both?
+The late days credit, typically 5 days allocated per course but always read the course syllabus, can only be used before the hard deadline for non-peer assessed assignments.
+
+##Can I get some special late day dispensation because I joined the course 2 weeks late?
+No. But keep in mind the course runs every month, so if the marks matter you might want to join next months intake.
+
+##Can I recover late days?
+You can find [instructions](http://help.coursera.org/customer/portal/articles/1163257-how-can-i-apply-late-days-to-an-assignment) on how to get your late days back.
+
+##Can I get copies of the notes
+
+The [notes](https://github.com/DataScienceSpecialization/courses) for all the courses in the series are available on Github, which you learn to use in the Data Science Toolbox course.
+The raw form of the notes is Rmarkdown documents, from which other output forms are produced (this is covered in the Reproducible Research course).
+
+##How do I submit my assignment using submitscriptN.R?
+
+#### Attention!
+One thing to keep in mind is that in order to the _submit()_ function to work, you must access the data files the __exact same way__ as the example output. Most likely this means that your function is __not__ supposed to change the working directory. However, you can change your working directory __before__ you source your function and the _submit()_ function.
+
+#### Step 1 - Set your working directory
+[[File:DataSciSpec-Submit-01-setwd.png|thumb|Using the _setwd()_ function]]
+First you need to select your working directory. You can use the default working directory, as long as it contains your data files and your function files.  
+If your files are in a different directory, first you need to set that directory as your working directory with the _setwd()_ function, like the example:
+  
+    > setwd("~/datascience/rprogramming")
+
+Please note this is a *nix path. If you are a Windows user, your file path will be different.
+
+#### Step 2 - Check if your files are in your working directory
+[[File:DataSciSpec-Submit-02-listfiles.png|thumb|Using the _list.files()_ function]]
+Now you need to check if the files and directories you will need are in your working directory. The _list.files()_ function default 'path' argument corresponds to the working directory:
+
+    > list.files()
+
+You should be able to see the functions and the folder containing the data files in the working directory. If you cannot see the files, you must either save your files in your current working directory or change the working directory again.
+
+#### Step 3 - Source the submit script
+[[File:DataSciSpec-Submit-03-source.png|thumb|Using the _source()_ function]]
+Once everything you will need is in the right place, you need to source the submitscriptN.R file containing the _submit()_ function.
+
+If you don't want to download the submitscriptN.R file and store it on your computer's file system, use the command labelled (1). Alternatively, download the submitscriptN.R file and store it on your computer's file system, then use the command labelled (2).
+
+    1. > source("http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R")
+    2. > source("submitscript1.R")
+
+#### Step 4 - Submit your assignment
+[[File:DataSciSpec-Submit-04-password.png|thumb|Getting your login and password]][[File:DataSciSpec-Submit-05-submit.png|thumb|Submitting part 1]]
+
+You will need your submission login and password to submit your assignment, which are different from your Coursera login and password. You can find them in the "Programming Assignments" tab of the course. To submit your assignment the _submit()_ function will ask you for your submission login and password. Once you provide them, you will be able to select which part of the assignment you want to submit. 
+
+    > submit()
+
+Type the number corresponding to the appropriate test case and press Enter. Once you passed it, the _submit()_ function automatically sources the correct R script for the function(s) you created for the assignment.
+
+* If the result matches the example output, you will receive a "Correct!" message. Congratulations! This means you have successfully submitted an assignment part.
+
+* If you received a "Sorry, your answer was incorrect." message, you must review your code and try again.
+
+#### Step 5 - Confirm your course record has been updated
+To confirm whether the submission was recorded by Coursera, navigate to the "Programming Assignments" tab.
+
+##How do I point to the correct session of a course which requires the submitscriptN.R script to push completed assignments to Coursera?
+
+For simplicity if running *nix, including whatever add-on to Microsoft Windows allows you to run a Unix command shell, use the following command to change all occurrences of '001' to '002' for example. These instructions should only be used when the available programming assignment submit script has not been updated to reflect the current course session designator.
+
+This *nix shell command will update all occurrences in the script.
+
+<pre>$ sed -i -e 's/001/00/g' submitscriptN.R</pre>
+
+If you use a text editor, there are three places to apply the update.
+
+<pre>
+CLASS <- c("rprog-001")
+submit.url <- c("http://class.coursera.org/rprog-001/assignment/submit")
+challenge.url <- c("http://class.coursera.org/rprog-001/assignment/challenge")
+</pre>
+
+##How do I install Statistics with Interactive R Lessons (SWIRL)?
+
+The SWIRL project [website](http://swirlstats.com/) and GitHub [repository](https://github.com/swirldev/swirl) are the place for definitive answers about anything SWIRL related.
+
+##Is there a way to quickly locate a topic by keyword within the lecture videos?
+
+Yes. William Howell, a Data Science Specialization participant, has created an R script [FindVideos](https://bitbucket.org/AnonFunction/findvideos) to "search through folders of SRT subtitle files for specified text and open the matching video file in the VLC player at the time position found for the searched term."
+
+##Peer assessments
+### I work on it: I don't know what the instructions mean, they are completely unclear to me
+The instructions of the assessments are sometimes difficult to interpret as discussions in the forums show. If you need clarification
+* got to the forum and first look if somebody else has already addressed your issue. Can you find an answer to your issue there?
+* if not: you may start a new thread. Please start it in the right category and use a good, self explanatory name for it. 
+** Good practise for a __threads name__ is to prefix it with #Week/Quiz|Assessment|Progr.Assignment/#Question, like "Week 2, Quiz, Question 4". Remember that your threads will be listed without category in the "recent threads" list, so the detail which week is concerned is very useful. think about others that have the same issue and start with 1. If it's easy for them to find your thread, then it might spare them to open one on their own. 
+** __Content__: Put as much detail into the text as is needed to understand your problem, your assumptions, interpretations,etc. Ask a clear precise question. The better it is, the better the answers will be. Alwasy keep in mind: the people you ask have to understand your problem. Also add some "good" Tags if you want. Please consider reusing existing Tag values, before you add new values
+* as was pointed ot by TAs: sometimes the instructions are 'open' on purpose, like they would be in real world projects. If they leave room for interpretation - use it to some extent BUT then document your interpretation, assumptions, etc. in order to make them transparent to anybody else.
+### I grade my peers work - how should I go?
+Some of the peer assesment instructions appeare to be not allways completely consistent and open room for interpretations. So how should you grade? which interpretation is correct? Nobody can say - only thing you can do is make the course a win:win situation for you and the peer you grade...
+
+First point - Be a philosopher, do it like Kant: _Act only according to that maxim whereby you can, at the same time, will that it should become a universal law_ (http://en.wikipedia.org/wiki/Categorical_imperative) or in other words "Do not impose on others what you do not wish for yourself."
+
+May be start by asking yourself some importand questions that may guide you thru your grading activity: 
+* What is the goal of the specialisation
+* What is the goal of the course
+* What is the goal of the assignment: The assignement is here to show that you master a focused set of APIs or skills that are part of the lectures. You should focus on the aspect "mastering skills" not on the bits and bytes level
+* What is the point of that subtask of the assignment
+
+Giving an example: In Exploratory Data Analysis the instructions said "Reproduce the reference plot __exactly__". the reference plot was a given PNG file which showed some barplot with lables and stuff. There has been heated discussions about what "exact" means. Some peers said "the red foreground color must be exactly reproduced", but I actually doubt that anybody figured out that the red color was hex #FB0007 and not #FF0000. Same was with the background color which was set to transparent with the reference plots, but appeares white in the assignments instructions. the reference plots were all 32bit bit depth and included a "CCPIC Profile" whatever that is. So if you start nit-picking then I'm pretty sure you can find some subtle but irrelevant deviation to the reference and can deduce points...Ask yourself the Kant question.
+Unimportand as well should be whether a code book file is named "Codebook.md" or is named "My Code Book.pdf" (taken from "Getting and Cleaning data") as long as there is any code book file which covers the relvant information. 
+
+Anyhow, the point is that reproducing irrelevant facets is not constructive to any of the goals listed above.
+
+Okay after reflecting on the listed goals which could help to focus, it helped me to build me a checklist for all importand aspects and aspects I don't care about at all, i.e. shade of red #FB0007 does not transport more/less information than #FF0000. In fact I also ignored red completely because in my eyes the question was: "is the student able to master setting the foreground color to a color different than Rs default".
+
+And to come to and end - Relax when grading, get yourself a drink and enjoy grading and make being graded a joyfull experience to your peers.
+
+### Can I leave a grading comment for my peer?
+Yes, you can - even when there's no comment box in the grading interface you may leave a commit comment if the assignemt is done with github.
+
+The idea is that when you are evaluating one's assignment and note that it contains some incorrectness, discrepancies from the guidelines we were given etc. - then you notify the peer about this, especially when you are going to reduce his/her scores for this task. 
+
+In every case, you can leave your comment using `Comment on this commit` option in the bottom of `latest commit` page in a peer's repository. Maybe one is going to put up with more appropriate place to do this, although this one seems quite ok for me =)
+* While reviewing the peer's github repo, 
+* Click on Commits, select the latest commit and open it.
+* Scroll down to the bottom of the page and you will see a post comment box where you can enter text and post it.
+* You must need to be logged in under your own github acct to post.
+
+## How can I verify the current locale for a *nix-based operating system?
+To verify the current locale setting type the following command within a terminal session
+<pre>
+$ locale
+</pre>

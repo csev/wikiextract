@@ -1,0 +1,63 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Biostats:Expected values</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Biostats:Main" title="Biostats:Main">Biostats:Main</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Expected_values"><span class="tocnumber">1</span> <span class="toctext">Expected values</span></a></li>
+<li class="toclevel-1"><a href="#Rules_about_expected_values"><span class="tocnumber">2</span> <span class="toctext">Rules about expected values</span></a></li>
+<li class="toclevel-1"><a href="#Variances_and_Chebyshev.27s_Inequality"><span class="tocnumber">3</span> <span class="toctext">Variances and Chebyshev's Inequality</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Variance"><span class="tocnumber">3.1</span> <span class="toctext">Variance</span></a></li>
+<li class="toclevel-2"><a href="#Chebyshev.27s_Inequality"><span class="tocnumber">3.2</span> <span class="toctext">Chebyshev's Inequality</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Expected_values">Expected values</span></h2>
+<p>Expected value of a discrete random variable:</p>
+<p>$$E[X] = \displaystyle\sum&#95;{x} x p(x)$$</p>
+<p>Expected value of a continuous random variable:</p>
+<p>$$\displaystyle E[X] = \int^{\infty}&#95;{-\infty} t f(t)\,dt$$</p>
+<h2> <span class="mw-headline" id="Rules_about_expected_values">Rules about expected values</span></h2>
+<p>Expected values are linear operators:</p>
+<p>$$E [a X + b] = a E [X] + b$$</p>
+<p>$$E [X + Y] = E [X] + E [Y]$$</p>
+<blockquote>
+  <p>where <em>a</em> and <em>b</em> are constants and <em>X</em> and <em>Y</em> are random variables (discrete or continuous or one of each)</p>
+</blockquote>
+<p>In general, $$E [g (X )] \neq g (E [X ])$$ if <em>g</em> is function that is not linear.</p>
+<h2> <span class="mw-headline" id="Variances_and_Chebyshev.27s_Inequality">Variances and Chebyshev's Inequality</span></h2>
+<h4> <span class="mw-headline" id="Variance">Variance</span></h4>
+<p>$$Var(X ) = E [(X − \mu)^{2} ]$$</p>
+<blockquote>
+  <p>where X is a random variable with mean <em>µ</em></p>
+</blockquote>
+<p>Some properties of variance (aka $$\sigma^{2}$$):</p>
+<p>$$Var(X ) = E [X^{2} ] − E [X ]^{2}$$ (note that $$E[X] = \mu$$)</p>
+<p>$$Var(a X) = a^{2} Var(X)$$</p>
+<blockquote>
+  <p>where <em>a</em> is a constant</p>
+</blockquote>
+<p>The <strong>Standard Deviation</strong> is the square root of the variance.</p>
+<h4> <span class="mw-headline" id="Chebyshev.27s_Inequality">Chebyshev's Inequality</span></h4>
+<p>$$P(|X − \mu | \geq k \sigma) \leq \frac {1}{k^{2}}$$</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Biostats:Expected_values&amp;oldid=14822">https://share.coursera.org/wiki/index.php?title=Biostats:Expected_values&amp;oldid=14822</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Biostatistics" title="Category:Biostatistics">Biostatistics</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

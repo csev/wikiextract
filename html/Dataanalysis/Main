@@ -1,0 +1,527 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Dataanalysis:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">2</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">2.1</span> <span class="toctext">Week 1</span></a></li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">2.2</span> <span class="toctext">Week 2</span></a></li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">2.3</span> <span class="toctext">Week 3</span></a></li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">2.4</span> <span class="toctext">Week 4</span></a></li>
+<li class="toclevel-2"><a href="#Week_5"><span class="tocnumber">2.5</span> <span class="toctext">Week 5</span></a></li>
+<li class="toclevel-2"><a href="#Week_6"><span class="tocnumber">2.6</span> <span class="toctext">Week 6</span></a></li>
+<li class="toclevel-2"><a href="#Week_7"><span class="tocnumber">2.7</span> <span class="toctext">Week 7</span></a></li>
+<li class="toclevel-2"><a href="#Week_8"><span class="tocnumber">2.8</span> <span class="toctext">Week 8</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Course_Transcripts"><span class="tocnumber">3</span> <span class="toctext">Course Transcripts</span></a></li>
+<li class="toclevel-1"><a href="#Supplementary_Lecture_Summary_Notes_.28_compiled_by_Students_.29"><span class="tocnumber">4</span> <span class="toctext">Supplementary Lecture Summary Notes ( compiled by Students )</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lecture_2_.28Example_of_an_Exploratory_Data_Analysis.29"><span class="tocnumber">4.1</span> <span class="toctext">Lecture 2 (Example of an Exploratory Data Analysis)</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_3"><span class="tocnumber">4.2</span> <span class="toctext">Lecture 3</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Lecture_3_as.Rmd"><span class="tocnumber">4.2.1</span> <span class="toctext">Lecture 3 as.Rmd</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Lecture_4"><span class="tocnumber">4.3</span> <span class="toctext">Lecture 4</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Lecture_4_as.Rmd"><span class="tocnumber">4.3.1</span> <span class="toctext">Lecture 4 as.Rmd</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Lecture_5"><span class="tocnumber">4.4</span> <span class="toctext">Lecture 5</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Lecture_5_as.Rmd"><span class="tocnumber">4.4.1</span> <span class="toctext">Lecture 5 as.Rmd</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Other_Notes_by_students"><span class="tocnumber">4.5</span> <span class="toctext">Other Notes by students</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#R_Notes"><span class="tocnumber">5</span> <span class="toctext">R Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Getting_Help_in_R"><span class="tocnumber">5.1</span> <span class="toctext">Getting Help in R</span></a></li>
+<li class="toclevel-2"><a href="#Installing_a_Package"><span class="tocnumber">5.2</span> <span class="toctext">Installing a Package</span></a></li>
+<li class="toclevel-2"><a href="#Listing_Packages"><span class="tocnumber">5.3</span> <span class="toctext">Listing Packages</span></a></li>
+<li class="toclevel-2"><a href="#Removing_a_Package"><span class="tocnumber">5.4</span> <span class="toctext">Removing a Package</span></a></li>
+<li class="toclevel-2"><a href="#library.28.29_vs_require.28.29"><span class="tocnumber">5.5</span> <span class="toctext">library() vs require()</span></a></li>
+<li class="toclevel-2"><a href="#Configure_R_on_Windows_to_use_--internet2"><span class="tocnumber">5.6</span> <span class="toctext">Configure R on Windows to use --internet2</span></a></li>
+<li class="toclevel-2"><a href="#Downloading_Files_on_Windows"><span class="tocnumber">5.7</span> <span class="toctext">Downloading Files on Windows</span></a></li>
+<li class="toclevel-2"><a href="#Downloading_Files_On_Mac.2FLinux"><span class="tocnumber">5.8</span> <span class="toctext">Downloading Files On Mac/Linux</span></a></li>
+<li class="toclevel-2"><a href="#Subsetting_a_Dataframe"><span class="tocnumber">5.9</span> <span class="toctext">Subsetting a Dataframe</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Links"><span class="tocnumber">6</span> <span class="toctext">Links</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Course_Related"><span class="tocnumber">6.1</span> <span class="toctext">Course Related</span></a></li>
+<li class="toclevel-2"><a href="#Data_Sources"><span class="tocnumber">6.2</span> <span class="toctext">Data Sources</span></a></li>
+<li class="toclevel-2"><a href="#Learn_R"><span class="tocnumber">6.3</span> <span class="toctext">Learn R</span></a></li>
+<li class="toclevel-2"><a href="#R_Graphical_User_Interface_.28GUI.29_Software"><span class="tocnumber">6.4</span> <span class="toctext">R Graphical User Interface (GUI) Software</span></a></li>
+<li class="toclevel-2"><a href="#Markdown.2C_R_Markdown"><span class="tocnumber">6.5</span> <span class="toctext">Markdown, R Markdown</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Further_References"><span class="tocnumber">6.5.1</span> <span class="toctext">Further References</span></a></li>
+<li class="toclevel-3"><a href="#Command_line_using"><span class="tocnumber">6.5.2</span> <span class="toctext">Command line using</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Sweave"><span class="tocnumber">6.6</span> <span class="toctext">Sweave</span></a></li>
+<li class="toclevel-2"><a href="#R_Reference_documents"><span class="tocnumber">6.7</span> <span class="toctext">R Reference documents</span></a></li>
+<li class="toclevel-2"><a href="#R_Style_Guides"><span class="tocnumber">6.8</span> <span class="toctext">R Style Guides</span></a></li>
+<li class="toclevel-2"><a href="#Statistics"><span class="tocnumber">6.9</span> <span class="toctext">Statistics</span></a></li>
+<li class="toclevel-2"><a href="#Version_Control"><span class="tocnumber">6.10</span> <span class="toctext">Version Control</span></a></li>
+<li class="toclevel-2"><a href="#Reproducible_Analysis_Navigation_Template_.28rant.29"><span class="tocnumber">6.11</span> <span class="toctext">Reproducible Analysis Navigation Template (rant)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Books"><span class="tocnumber">7</span> <span class="toctext">Books</span></a></li>
+<li class="toclevel-1"><a href="#FAQ"><span class="tocnumber">8</span> <span class="toctext">FAQ</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Late_Days"><span class="tocnumber">8.1</span> <span class="toctext">Late Days</span></a></li>
+<li class="toclevel-2"><a href="#Fix_Problems_with_video_play_back"><span class="tocnumber">8.2</span> <span class="toctext">Fix Problems with video play back</span></a></li>
+<li class="toclevel-2"><a href="#How_to_Watch_Course_Videos_.28and_YouTube.29_at_2x_Speed"><span class="tocnumber">8.3</span> <span class="toctext">How to Watch Course Videos (and YouTube) at 2x Speed</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Introduction">Introduction</span></h1>
+<p>This is the wiki for the course Data Analysis with instructor Jeff Leek.  </p>
+<p>This is a class resource for the use of all participants in the course, so please feel free to add items of interest, or clean up existing entries. Don't get upset if your entries get edited or moved as that is part and parcel of an open wiki and the goal is to make a useful and well organised resource for all students.</p>
+<h1> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h1>
+<h2> <span class="mw-headline" id="Week_1">Week 1</span></h2>
+<ul>
+<li>Introduction and getting help</li>
+<li>What is data?</li>
+<li>Representing data</li>
+<li>Representing data in R</li>
+<li>Simulation basics</li>
+<li>Types of data analysis questions</li>
+<li><p>Sources of data sets</p></li>
+<li><p><a href="/wiki/index.php/Dataanalysis:Transcripts#Week_1" title="Dataanalysis:Transcripts"> Edited Transcripts</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_2">Week 2</span></h2>
+<ul>
+<li>Structure of a data analysis</li>
+<li>Organizing a data analysis</li>
+<li>Getting data</li>
+<li>Data resources</li>
+<li>Summarizing data</li>
+<li><p>Data munging basics</p></li>
+<li><p><a href="/wiki/index.php/Dataanalysis:Transcripts#Week_2" title="Dataanalysis:Transcripts"> Edited Transcripts</a></p></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_3">Week 3</span></h2>
+<ul>
+<li>Example analysis report</li>
+<li>Graphs: Exploratory and expository</li>
+<li>Clustering: hierarchical and K-means</li>
+<li>Dimension reduction</li>
+</ul>
+<p>To explore the data, ggobi [<a rel="nofollow" class="external autonumber" href="http://www.ggobi.org/">[1]</a>]
+could be worth a try.</p>
+<h2> <span class="mw-headline" id="Week_4">Week 4</span></h2>
+<ul>
+<li>Basic least squares</li>
+<li>Inference basics</li>
+<li>P-values</li>
+<li>Regression with factor variables</li>
+<li>Multiple variable regression</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_5">Week 5</span></h2>
+<ul>
+<li>ANOVA</li>
+<li>Binary outcomes</li>
+<li>Count outcomes</li>
+<li>Model checking and selection</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_6">Week 6</span></h2>
+<ul>
+<li>Prediction study design</li>
+<li>Cross-validation</li>
+<li>Prediction with regression</li>
+<li>Predicting with trees</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_7">Week 7</span></h2>
+<ul>
+<li>Smoothing</li>
+<li>Bootstrap</li>
+<li>Bootstrapping for prediction</li>
+<li>Combining predictors</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_8">Week 8</span></h2>
+<ul>
+<li>Multiple testing</li>
+<li>Simulation for  model checking</li>
+<li>Wrap-up</li>
+</ul>
+<h1> <span class="mw-headline" id="Course_Transcripts">Course Transcripts</span></h1>
+<p><a href="/wiki/index.php/Dataanalysis:Transcripts" title="Dataanalysis:Transcripts"> Edited Transcripts</a> </p>
+<h1> <span class="mw-headline" id="Supplementary_Lecture_Summary_Notes_.28_compiled_by_Students_.29">Supplementary Lecture Summary Notes ( compiled by Students )</span></h1>
+<h3> <span class="mw-headline" id="Lecture_2_.28Example_of_an_Exploratory_Data_Analysis.29"><a href="/wiki/index.php/Lecture_2" title="Lecture 2"> Lecture 2 (Example of an Exploratory Data Analysis)</a></span></h3>
+<h3> <span class="mw-headline" id="Lecture_3">Lecture 3</span></h3>
+<h5> <span class="mw-headline" id="Lecture_3_as.Rmd">Lecture 3 as.Rmd</span></h5>
+<p>Here is <a rel="nofollow" class="external text" href="https://s3.amazonaws.com/mckenna.tim/week3.Rmd">.Rmd</a> and its <a rel="nofollow" class="external text" href="https://s3.amazonaws.com/mckenna.tim/week3.html">.html</a> for then code that Jeff runs in the lecture for week 3. Data should load if you have a /data directory under where you run the code.</p>
+<h3> <span class="mw-headline" id="Lecture_4">Lecture 4</span></h3>
+<h5> <span class="mw-headline" id="Lecture_4_as.Rmd">Lecture 4 as.Rmd</span></h5>
+<p>Here is <a rel="nofollow" class="external text" href="https://s3.amazonaws.com/mckenna.tim/week4.Rmd">.Rmd</a> and its <a rel="nofollow" class="external text" href="https://s3.amazonaws.com/mckenna.tim/week4.html">.html</a> for then code that Jeff runs in the lecture for week 4. Data should load if you have a /data directory under where you run the code.</p>
+<h3> <span class="mw-headline" id="Lecture_5">Lecture 5</span></h3>
+<h5> <span class="mw-headline" id="Lecture_5_as.Rmd">Lecture 5 as.Rmd</span></h5>
+<p>Here is <a rel="nofollow" class="external text" href="https://s3.amazonaws.com/mckenna.tim/week5Rmd">.Rmd</a> and its <a rel="nofollow" class="external text" href="https://s3.amazonaws.com/mckenna.tim/week5.html">.html</a> for then code that Jeff runs in the lecture for week 5. Data should load if you have a /data directory under where you run the code. You need libraries sandwich &amp; leaps &amp; BMA</p>
+<h3> <span class="mw-headline" id="Other_Notes_by_students">Other Notes by students</span></h3>
+<p>There are some notes in this <a rel="nofollow" class="external text" href="http://bit.ly/URw1IZ">Google Docs folder</a> which has read/write access to anyone with the link. At the moment there are notes on <strong>Exploratory Graphs, Expository Graphs</strong>, and <strong>Hierarchical Clustering</strong>. (I'd like to put them directly into the wiki, but it is so much easier to put graphics into Google Docs!)</p>
+<h1> <span class="mw-headline" id="R_Notes">R Notes</span></h1>
+<h2> <span class="mw-headline" id="Getting_Help_in_R">Getting Help in R</span></h2>
+<p>R has extensive built-in help. Here is a summary of ways to access it.</p>
+<code><pre>help(&quot;functionName&quot;)            # will display help on the named function
+?functionName                   # same as above
+help.search(&quot;aString&quot;)          # search help system for entries containing &quot;aString&quot;
+??aString                       # same as above
+help(package=base)              # get a list of all functions, datasets, etc in package base
+example(&quot;functionName)&quot;         # display examples of the use of function functionName
+demo()                          # list all demos in loaded packages
+demo(Hershey)                   # run the Hershey demo
+RSiteSearch(&quot;topic&quot;)            # search for the string topic in online documentation
+apropos(&quot;foo&quot;, mode=&quot;function&quot;) # list all functions with foo in their name
+data()                          # list all available datasets
+args(&quot;functionName&quot;)            # will list the arguments accepted by function functionName
+help.start()                    # access to R manuals in a browser window.
+vignette()                      # list the names of all introductory articles available in PDF format
+vignette(&quot;name&quot;)                # display the name vignette in a PDF reader
+</pre></code>
+<h2> <span class="mw-headline" id="Installing_a_Package">Installing a Package</span></h2>
+<p>The <code>library</code> command is used to load a local package into your current R workspace.  It can only load packages that are already downloaded to your machine.</p>
+<p>If when running <code>library</code> you get an error saying that the package couldn't be found you need to run <code>install.packages</code>  eg. suppose you want to load the kernlab library which you haven't downloaded,  you need to enter the following commands:</p>
+<code><pre>install.packages(&quot;kernlab&quot;) # quotes are required
+library( kernlab )   # load the package into the workspace.
+</pre></code>
+<p>NOTE: the <code>install.packages</code> command will display a list of sites ordered by country and ask you to select one to download the file from, pick a site that is close to you as this might speed things up.  If the download fails, first try the install.packages again but pick a different site.</p>
+<h2> <span class="mw-headline" id="Listing_Packages">Listing Packages</span></h2>
+<p>To list the packages that are installed on your machine use <code>library()</code>, to see which libraries are loaded in your workspace use <code>search()</code>.</p>
+<h2> <span class="mw-headline" id="Removing_a_Package">Removing a Package</span></h2>
+<p><code>rm(list=ls())</code> doesn't totally empty your workspace in that it doesn't remove packages from your workspace. if you need to remove a package use <code>detach( "package:packageName" )</code>, replacing <code>packageName</code> with the name of the directory you want to remove eg, <code>detach( "package:downloader" )</code>.</p>
+<p><code>detach()</code> will remove a package from your workspace but it does not uninstall the package from your machine, for that you need to use <code>remove.packages()</code>. So to totally remove the downloader package from your current workspace and from your machine package library you need to do:</p>
+<code><pre>detach( &quot;package:downloader&quot; )
+remove.packages( &quot;downloader&quot; )
+</pre></code>
+<h2> <span class="mw-headline" id="library.28.29_vs_require.28.29">library() vs require()</span></h2>
+<p>There are two functions to load a package into your current R workspace, <code>library()</code> and <code>require()</code>.  The difference between the two is that if the function can't find the package (because it's not yet installed)  <code>library()</code> will generate an error where as 'require()` will generate a warning and return FALSE. </p>
+<p>So with require you could try to be a bit fancy in your scripts in the way you load packages:</p>
+<code><pre>repoSite &lt;- &quot;http://cran.us.r-project.org&quot;
+needPackage &lt;- &quot;downloader&quot;
+if(&#160;! require( needPackage, character.only = TRUE )  ) {
+    install.packages( needPackage, repos= repoSite )
+    library( needPackage, character.only = TRUE )
+}
+</pre></code>
+<p>This will first attempt to load the package with require if this returns FALSE then an attempt is made to install the package, and then load it into the workspace.</p>
+<p>NOTE: the <code>character.only=TRUE</code> is required else library/require will attempt to load a package with the same name as the variable,  i.e. <code>needPackage</code>, rather than the name in the character vector which the variable contains i.e.. <code>downloader</code>.</p>
+<h2> <span class="mw-headline" id="Configure_R_on_Windows_to_use_--internet2">Configure R on Windows to use --internet2</span></h2>
+<p>R out of the box will attempt to access the web directly. This causes problems when the machine being used makes use of a proxy server in its web browsers; such as when it is behind a corporate firewall. You won't be able to download files or install.packages.</p>
+<p>To enable R to pick up the proxy server used by your browser you need to enable the internt2 option in R.</p>
+<p>setInternet2(use = TRUE)  # this will have to be done each time your run R</p>
+<p>Another option is to right click on the icon you use to launch R and select "Properties", this will display a dialog, select the Shortcut tab, then at the end of the entry in the "Target:" text entry box enter --internet2 NOTE: that is two dashes. Click Apply and then OK. From now on when you launch R it will use the same proxy as your browser.</p>
+<h2> <span class="mw-headline" id="Downloading_Files_on_Windows">Downloading Files on Windows</span></h2>
+<ul>
+<li>make sure you have enabled the internet2 option.</li>
+<li>when using download.file <strong>don't</strong> include the <code>method="curl"</code> option that is only for Linux/Mac users.</li>
+<li>if your getting warnings starting with "Warning: unable to move temporary installation ". You likely have a problem where the firewall running on your PC is blocking the action. Try disabling the firewall, run the command again, then re-enable the firewall. </li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><p><strong>.csv file</strong></p>
+<code><pre>fileUrl = &quot;https://dl.dropbox.com/u/7710864/data/csv_hid/ss06hid.csv&quot;
+fileCsv = &quot;C:/YourPath/ss06hid.csv&quot;
+
+download.file( fileUrl, fileCsv )
+</pre></code></li>
+<li><p><strong>.xlsx file</strong> Compressed files should be downloaded as binary "wb"</p>
+<code><pre>fileUrl = &quot;http://data.baltimorecity.gov/api/views/dz54-2aru/rows.xlsx?accessType=DOWNLOAD&quot;
+fileXls = &quot;C:/YourPath/camera.xlsx&quot;
+
+download.file( fileUrl, fileXls,,,&quot;wb&quot; )
+</pre></code></li>
+<li><p><strong>.pdf file</strong></p>
+<code><pre>fileUrl = &quot;http://www.census.gov/acs/www/Downloads/data_documentation/pums/DataDict/PUMSDataDict06.pdf&quot;
+filePdf = &quot;C:/YourPath/cegov.pdf&quot;
+
+download.file( fileUrl, filePdf,,,&quot;wb&quot; )
+</pre></code></li>
+</ul>
+<h2> <span class="mw-headline" id="Downloading_Files_On_Mac.2FLinux">Downloading Files On Mac/Linux</span></h2>
+<ul>
+<li>in the download.file call make sure you do include the <code>method="curl"</code> option</li>
+<li>Linux: install the Linux curl package: from a bash/shell window enter <code>sudo apt-get install curl</code></li>
+<li>Linux: It is worth to install the Linux R devtools library <code>sudo apt-get install r-base-dev</code></li>
+</ul>
+<p><strong>Examples</strong></p>
+<ul>
+<li><p><strong>.csv file</strong></p>
+<code><pre>fileUrl = &quot;https://dl.dropbox.com/u/7710864/data/csv_hid/ss06hid.csv&quot;
+fileCsv = &quot;/home/YourPath/ss06hid.csv&quot;
+
+download.file( fileUrl, fileCsv, &quot;curl&quot; )
+</pre></code></li>
+<li><p><strong>.xlsx file</strong> Compressed files should be downloaded as binary "wb"</p>
+<code><pre>fileUrl = &quot;http://data.baltimorecity.gov/api/views/dz54-2aru/rows.xlsx?accessType=DOWNLOAD&quot;
+fileXls = &quot;/home/YourPath/camera.xlsx&quot;
+
+download.file( fileUrl, fileXls, &quot;curl&quot;,,&quot;wb&quot; )
+</pre></code></li>
+<li><p><strong>.pdf file</strong></p>
+<code><pre>fileUrl = &quot;http://www.census.gov/acs/www/Downloads/data_documentation/pums/DataDict/PUMSDataDict06.pdf&quot;
+filePdf = &quot;/home/YourPath/cegov.pdf&quot;
+
+download.file( fileUrl, filePdf, &quot;curl&quot;,,&quot;wb&quot; )
+</pre></code></li>
+</ul>
+<h2> <span class="mw-headline" id="Subsetting_a_Dataframe">Subsetting a Dataframe</span></h2>
+<p>In the examples we will use a dataset, <code>df</code>, with 3 columns (<code>nums</code>, <code>lets</code>, <code>moreLets</code>) which is constructed as follows:</p>
+<code><pre>n &lt;- rnorm(20)
+l &lt;- letters[1:20]
+m &lt;- letters[7:26]
+df &lt;- data.frame( nums=n, lets=l, moreLets=m, stringsAsFactors = FALSE)
+</pre></code>
+<p>The following examples won't use the convenience function <code>subset</code> which while useful for interactive work in the R console it's use in R program scripts is not considered good practice. Also in the following pay attention to the <code>,</code> a common error is to forget it's inclusion when it is required.</p>
+<code><pre>df[ 1, ]     # returns the first row of df in a data.frame
+df[ 1:10, ]  # returns the first 10 rows of df in a data.frame
+df[ c(3,7,9), ]# returns rows 3, 7 and 9 in a data.frame
+df[ 1 ]      # returns the first column (nums) of df in a data.frame
+df[ 2:3 ]    # returns columns lets and morelets in a data.frame
+df[ c(1,3) ] # returns columns nums and morelets in a data.frame 
+df[ &quot;nums&quot; ] # returns column nums in a data.frame
+df[[ 1 ]]    # returns the first column (nums) as a vector
+df[[ &quot;nums&quot; ]] # as above
+df$nums      # as above
+df[ , 1]     # as above
+df[ , &quot;nums&quot; ] # as above
+df[ , 2:3 ]   # returns columns lets and moreLets as a data.frame
+df[ , c(1, 3) ] # returns columns nums and moreLets as a data.frame
+df[ , c(&quot;nums&quot;, &quot;moreLets&quot;) ] # as above
+df[ df$nums &gt; 0, ] # returns all rows where nums is greater than 0
+df[ df[1] &gt; 0, ] # as above
+df[ df[[ 1 ]] &gt; 0, ] # as above
+df[ df$nums &gt; 0, 2:3] # returns columns lets, morelets were nums &gt; 0
+df[ df$nums &gt; 0, ][ 2:3 ] # as above
+</pre></code>
+<p>The conditional expressions used above (e.g. <code>nums &gt; 0</code>) can be extended to include multiple conditions joined by <code>&amp;</code> for AND and <code>|</code> for OR e.g.</p>
+<code><pre>df[ nums &gt; 0 | lets == &quot;a&quot;, ]  
+</pre></code>
+<p>will return all rows where <code>nums</code> is greater than 0 OR <code>lets</code> equals "a"</p>
+<p>All the above will in interactive mode print the results to the screen. If you need to save the subset for additional work you need to use the assignment operator e.g.,</p>
+<code><pre>subDF &lt;- df[nums &gt; 0 | lets == &quot;a&quot;,]
+</pre></code>
+<p><strong>Note on use of logical vector to choose rows</strong></p>
+<p>Assume same dataframe, <code>df</code>, as above, then</p>
+<code><pre>choose &lt;- rep(FALSE, 20)
+choose[1] &lt;- TRUE
+choose[4] &lt;- TRUE
+choose
+df[ choose,  ]  # will  only return rows 1 and 4
+</pre></code>
+<p>Be careful that the choose vector is the same length as the number of rows as your data.frame. The following will return rows, 1, 4, 5, 8, 9, 12, 13, 16, 17, 20. Essentially the choose vector gets repeated until it is long enough to match the number of rows in the dataframe. It won't just return rows 1 and 4 as you might expect.</p>
+<code><pre>choose &lt;- c(TRUE, FALSE, FALSE, TRUE)
+df[ choose, ]  
+</pre></code>
+<h1> <span class="mw-headline" id="Links">Links</span></h1>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.r-tutor.com/r-introduction">http://www.r-tutor.com/r-introduction</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.statmethods.net/">http://www.statmethods.net/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.burns-stat.com/pages/Tutor/R_inferno.pdf">http://www.burns-stat.com/pages/Tutor/R_inferno.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://freecomputerbooks.com/langRBooks.html">http://freecomputerbooks.com/langRBooks.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://freecomputerbooks.com/mathStatisticsBooks.html">http://freecomputerbooks.com/mathStatisticsBooks.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://pluto.huji.ac.il/~msby/StatThink/IntroStat.pdf">http://pluto.huji.ac.il/~msby/StatThink/IntroStat.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.stat.auckland.ac.nz/~stat782/?Lecture_Slides">http://www.stat.auckland.ac.nz/~stat782/?Lecture_Slides</a></li>
+<li><a rel="nofollow" class="external free" href="http://tryr.codeschool.com/">http://tryr.codeschool.com/</a></li>
+<li><a rel="nofollow" class="external free" href="http://pj.freefaculty.org/R/Rtips.html">http://pj.freefaculty.org/R/Rtips.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://cran.r-project.org/">http://cran.r-project.org/</a></li>
+<li><a rel="nofollow" class="external free" href="http://cran.r-project.org/doc/contrib/Owen-TheRGuide.pdf">http://cran.r-project.org/doc/contrib/Owen-TheRGuide.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf">http://cran.r-project.org/doc/contrib/Short-refcard.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://research.stowers-institute.org/efg/R/Color/Chart/ColorChart.pdf">http://research.stowers-institute.org/efg/R/Color/Chart/ColorChart.pdf</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.cookbook-r.com/">http://www.cookbook-r.com/</a></li>
+<li><a rel="nofollow" class="external free" href="http://blog.revolutionanalytics.com/2011/11/three-free-books-on-r-for-statistics.html">http://blog.revolutionanalytics.com/2011/11/three-free-books-on-r-for-statistics.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.network-theory.co.uk/R/intro/">http://www.network-theory.co.uk/R/intro/</a></li>
+<li><a rel="nofollow" class="external free" href="http://en.wikibooks.org/wiki/R_Programming">http://en.wikibooks.org/wiki/R_Programming</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.r-statistics.com/2009/10/free-statistics-e-books-for-download/">http://www.r-statistics.com/2009/10/free-statistics-e-books-for-download/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.r-bloggers.com/free-online-statistics-books/">http://www.r-bloggers.com/free-online-statistics-books/</a></li>
+<li><a rel="nofollow" class="external free" href="http://statpages.org/javasta3.html#Specific">http://statpages.org/javasta3.html#Specific</a></li>
+<li><a rel="nofollow" class="external free" href="http://home.ubalt.edu/ntsbarsh/">http://home.ubalt.edu/ntsbarsh/</a></li>
+<li><a rel="nofollow" class="external free" href="https://github.com/jtleek/dataanalysis/">https://github.com/jtleek/dataanalysis/</a></li>
+<li><a rel="nofollow" class="external free" href="http://simplystatistics.org/2013/01/16/review-of-r-graphics-cookbook-by-winston-chang/">http://simplystatistics.org/2013/01/16/review-of-r-graphics-cookbook-by-winston-chang/</a></li>
+<li><a rel="nofollow" class="external free" href="http://it-ebooks.info/book/318/">http://it-ebooks.info/book/318/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.rdatamining.com/books/rdm">http://www.rdatamining.com/books/rdm</a></li>
+<li><a rel="nofollow" class="external free" href="https://2780fa3c-a-62cb3a1a-s-sites.googlegroups.com/site/rdatamining/docs/RDataMining.pdf?attachauth=ANoY7crpCKRugQEhxk5jbRs1DQZbuwU0icWYM9m7bG82f2r-k7gOH">https://2780fa3c-a-62cb3a1a-s-sites.googlegroups.com/site/rdatamining/docs/RDataMining.pdf?attachauth=ANoY7crpCKRugQEhxk5jbRs1DQZbuwU0icWYM9m7bG82f2r-k7gOH</a><em>MwCHnpPtoy9pWrB4LBfeIKn9aIjpbAwSB3-DE8mNlYMLYfQeC6bYwQ7nVKUVCVWyB5ar</em>-67LcuUMjWXqlO0pxoJd7jybmktMYCpwYF4I1VAgtMnLaygBjc2tWwq8QrHbIqTUvpggr08QCKKAeze0zQMUwxl7kzrsM2dVrwDqMcG0d1pX1bEJh0z6hbNwwme0%3D&amp;attredirects=0</li>
+<li><a rel="nofollow" class="external free" href="http://www.dcc.fc.up.pt/~ltorgo/DataMiningWithR/">http://www.dcc.fc.up.pt/~ltorgo/DataMiningWithR/</a></li>
+<li><a rel="nofollow" class="external free" href="http://maths-people.anu.edu.au/~johnm/aboutR.html">http://maths-people.anu.edu.au/~johnm/aboutR.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.statpower.net/Teaching.html">http://www.statpower.net/Teaching.html</a></li>
+<li><a rel="nofollow" class="external free" href="http://people.stat.sfu.ca/~cschwarz/CourseNotes/">http://people.stat.sfu.ca/~cschwarz/CourseNotes/</a></li>
+<li><a rel="nofollow" class="external free" href="http://socserv.socsci.mcmaster.ca/jfox/">http://socserv.socsci.mcmaster.ca/jfox/</a></li>
+<li><a rel="nofollow" class="external free" href="https://sites.google.com/a/lakeheadu.ca/bweaver/Home/statistics">https://sites.google.com/a/lakeheadu.ca/bweaver/Home/statistics</a></li>
+<li><a rel="nofollow" class="external free" href="http://decisionstats.com/2013/02/04/r-in-oracle-java-cloud-existing-r-java-integration-rstats/#more-10857">http://decisionstats.com/2013/02/04/r-in-oracle-java-cloud-existing-r-java-integration-rstats/#more-10857</a></li>
+<li><a rel="nofollow" class="external free" href="http://ropensci.org/">http://ropensci.org/</a>   </li>
+<li><a rel="nofollow" class="external free" href="http://pairach.com/2012/06/17/r">http://pairach.com/2012/06/17/r</a><em>tutorials</em>non-uni/</li>
+<li><a rel="nofollow" class="external free" href="http://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/">http://pairach.com/2012/02/26/r-tutorials-from-universities-around-the-world/</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.edwardtufte.com/tufte/dapp/">http://www.edwardtufte.com/tufte/dapp/</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Course_Related">Course Related</span></h2>
+<ul>
+<li><a href="/wiki/index.php/Compdata:Main" title="Compdata:Main"> Wiki for the Computing for Data Analysis course</a>. Contains lists of R books and and sites which students of the course found useful or were recommend by the instructor. </li>
+<li><a rel="nofollow" class="external text" href="https://github.com/jtleek/dataanalysis/">Lecture Notes on Github</a> with course notes / lecture slides.</li>
+<li><a rel="nofollow" class="external text" href="http://www.mindmeister.com/271942668/coursera-data-analysis/">Mindmap of course notes on Mindmeister</a> with editable <a rel="nofollow" class="external text" href="http://fontanon.org/Dataanalysis.mm/">file</a> from J. Félix Ontañón</li>
+</ul>
+<h2> <span class="mw-headline" id="Data_Sources">Data Sources</span></h2>
+<p>A list of websites which either host data or catalogue sites that do is available on the <a href="/wiki/index.php/Dataanalysis:DataSources" title="Dataanalysis:DataSources">Dataanalysis:DataSources</a> page.</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.nap.edu/catalog/11098.html">Statistical Analysis of Massive Datastreams: Proceedings of A Workshop National Academy Press</a> see what NASA, LANL are doing with massive data sets including use of R</li>
+</ul>
+<h2> <span class="mw-headline" id="Learn_R">Learn R</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.biostat.jhsph.edu/~rpeng/coursera/selfquiz/">This courses' R self-quiz</a>R self-quiz, with solutions</li>
+<li><a rel="nofollow" class="external text" href="http://tryr.codeschool.com">Try R</a> Easy interactive R tutorial from CodeSchool.com</li>
+<li><a rel="nofollow" class="external text" href="http://www.twotorials.com">R at TwoTutorials.com</a> Two-minute R video tutorials</li>
+<li><a rel="nofollow" class="external text" href="http://stackoverflow.com/questions/tagged/r">R at StackOverflow.com</a> R questions answered</li>
+<li><a rel="nofollow" class="external text" href="http://bit.ly/Ufaadn">Youtube videos from the Coursera Computing for Data Analysis course</a></li>
+<li><a rel="nofollow" class="external text" href="http://flowingdata.com/category/tutorials/">R tutorials on FlowingData.com </a>in-depth R tutorials</li>
+<li><a rel="nofollow" class="external text" href="https://github.com/tdsmith/aRrgh">aRrgh: a newcomer's (angry) guide to data types in R</a>sarcastic &amp; profane R pedagogy</li>
+<li><a rel="nofollow" class="external text" href="http://www.itc.nl/~rossiter/teach/lecnotes.html#R">DG Rossiter' lecture notes on R</a></li>
+<li><a rel="nofollow" class="external text" href="http://www3.uclm.es/congresos/useR-2013/">The R User Conference 2013</a> at University of Castilla-La Mancha, Albacete, Spain July 10-12 2013</li>
+</ul>
+<h2> <span class="mw-headline" id="R_Graphical_User_Interface_.28GUI.29_Software">R Graphical User Interface (GUI) Software</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.rstudio.com/">R Studio</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.revolutionanalytics.com/products/revolution-r.php">Revolution R</a>. Compiled from a modified form of Visual Studio 2008 (via a Microsoft SDK). Offers good support for debugging and support for extremely large datasets. There is a free version for academic use.</li>
+<li>The Computing for Data Analytics course wiki also <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Compdata:Main#Tools.2C_Editors.2C_IDEs">lists a number of R IDEs</a>.</li>
+<li><a rel="nofollow" class="external text" href="http://rpubs.com/">RPubs</a> Reproducible Research published using R Markdown</li>
+</ul>
+<h2> <span class="mw-headline" id="Markdown.2C_R_Markdown">Markdown, R Markdown</span></h2>
+<p>Markdown is a plain-text formatting syntax that can be converted to XHTML or other formats. <em>R Markdown</em> is an integration of Markdown with R which can be used to easily produce nicely formatted documentation that includes R code along with its output (including graphics), all packaged into a single HTML file. This is discussed in the video lecture, <a rel="nofollow" class="external text" href="https://class.coursera.org/dataanalysis-001/lecture/83">Example Analysis Assignment</a>. See also the Sweave section below on this page (apparently Sweave is even more capable but more complex to learn).</p>
+<p>See the <em>Further References</em> below for more information, but for a very quick start:</p>
+<ul>
+<li>Install <a rel="nofollow" class="external text" href="http://rstudio.org/download/">RStudio</a></li>
+<li>Run RStudio</li>
+<li>Install the knitr package: install.packages("knitr").</li>
+<li>Select from the main menu "File -&gt; New -&gt; R Markdown". You'll get a window with a sample file.</li>
+<li>Save the sample file as "test.Rmd"</li>
+<li>Now you should see a button labeled "Knit HTML" on the menu bar. Click that button.</li>
+<li>You should see a finished web page that includes the text, R commands, output, and graph.</li>
+</ul>
+<h3> <span class="mw-headline" id="Further_References">Further References</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.rstudio.com/ide/docs/authoring/using_markdown">Using Markdown with RStudio</a></li>
+<li><a rel="nofollow" class="external text" href="http://jeromyanglim.blogspot.ca/2012/07/video-knitr-rmarkdown-rstudio.html">Jeromy Anglim's video and slides on producing reproducible analysis</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Command_line_using">Command line using</span></h3>
+<p>Install the knitr package: install.packages("knitr",'markdown').</p>
+<code><pre>library(knitr) 
+library(markdown)  
+knit('test.rmd', 'test.md') # creates md file 
+markdownToHTML('test.md', 'test.html') # creates html file
+browseURL( paste0( 'file://', getwd(), &quot;/&quot;, &quot;test.html&quot;))) # should display HTML file in browser.
+</pre></code>
+<h2> <span class="mw-headline" id="Sweave">Sweave</span></h2>
+<p>Sweave is a tool that allows R code to be embedded for complete data analyses in $$\LaTeX$$ documents.</p>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://users.stat.umn.edu/~geyer/Sweave/">A Sweave Demo</a></li>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/web/views/ReproducibleResearch.html">CRAN Task View: Reproducible Research. List of useful links and packages</a> </li>
+<li><a rel="nofollow" class="external text" href="http://www.johndcook.com/coombes.html">Kevin Coombes presentation: Sweave: First Steps to Reproducible Analysis</a></li>
+<li><a rel="nofollow" class="external text" href="http://biostat.mc.vanderbilt.edu/wiki/Main/SweaveTemplate">Sweave Templates</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/LaTeX">$$\LaTeX$$ Wikibook</a></li>
+<li><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">$$\LaTeX$$ Math Symbols: Wikibook</a></li>
+</ul>
+<h2> <span class="mw-headline" id="R_Reference_documents">R Reference documents</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf">R cheat sheet</a></li>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/manuals.html">The CRAN documentation page</a>. Includes the R Language Reference manual. Make sure you follow the link to contributed documentation page.</li>
+</ul>
+<h2> <span class="mw-headline" id="R_Style_Guides">R Style Guides</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html">Style Guide for R from Google</a></li>
+<li><a rel="nofollow" class="external text" href="http://4dpiecharts.com/r-code-style-guide">Style Guide for R from Google from 4D Pie Charts</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.fhcrc.org/bioc/Coding_Standards">Coding Standards for R from BioConductor</a> </li>
+</ul>
+<h2> <span class="mw-headline" id="Statistics">Statistics</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.openintro.org/stat/">OpenIntro Statistics</a></li>
+<li><a rel="nofollow" class="external text" href="http://simplystatistics.org">Professor Leek's website</a></li>
+<li><a rel="nofollow" class="external text" href="http://stats.stackexchange.com">Cross Validated</a> statistics questions</li>
+<li><a rel="nofollow" class="external text" href="http://www.csee.wvu.edu/~gidoretto/courses/2011-fall-cp/reading/TheUnreasonable%20EffectivenessofData_IEEE_IS2009.pdf">The Unreasonable Effectiveness of Data</a> an article (PDF) written by Alon Halevy, Peter Norvig, and Fernando Pereira, of Google. </li>
+<li><a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=yvDCzhbjYWs">The Unreasonable Effectiveness of Data</a> video lecture by Peter Norvig.</li>
+<li><a rel="nofollow" class="external text" href="http://www.usna.edu/MathSci/Michelson2x2.pdf">Davido Donoho address to US Naval Academy 2001</a></li>
+<li><a rel="nofollow" class="external text" href="http://www-stat.stanford.edu/~donoho/Lectures/AMS2000/AMS2000.html">David Donoho American Math Association: Math Challenges for 21st century... 2000</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.stanford.edu/~gavish/documents/Tukey_the_future_of_data_analysis.pdf">John Tukey, The Future of Data Analysis 1961</a>]</li>
+<li><a rel="nofollow" class="external text" href="http://www.dartmouth.edu/~mss/data%20analysis/Volume%20I%20pdf%20/006%20Intro%20%28What%20is%20the%20weal.pdf">What is Data Analysis</a> from Dartmouth University Department of Math and Statistics</li>
+<li><a rel="nofollow" class="external text" href="http://www-stat.stanford.edu/~cgates/PERSI/papers/magicalthinking.pdf">Persi Diacosis Theories of Data Analysis: From Magical Thinking Through Classical Statistic 1985</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.qualtrics.com/university/researchsuite/data-analysis-guides">Qualtrics University Data Analysis Guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.mikemetrics.com/#/cinemetrics-data-analysis/4569975605">Mike Baxter's CINEMETRICS DATA ANALYSIS 2012</a> interesting online book on the use of R and Cinemetrics</li>
+<li><a rel="nofollow" class="external text" href="http://nickredfern.wordpress.com/category/statistics/">Nick Fern's blog on Cinemetrics/Statistics</a>
+with some great links to Daniel Judge's online Statistics lectures</li>
+<li><a rel="nofollow" class="external text" href="http://archive.org/details/nonlinearmodelin00lewi">Multivariate Adaptive Regression Analysis report by James Stevens and Peter Lewis Naval War College 1990</a></li>
+<li><a rel="nofollow" class="external text" href="http://projecteuclid.org/euclid.aos/1176347963">Multivariate Adaptive Regression Analysis for flexible regression modeling James Friedman Stanford University 1990</a>
+at project Euclid)</li>
+<li><a rel="nofollow" class="external text" href="http://projecteuclid.org/DPubS?Service=UI&amp;version=1.0&amp;verb=Display&amp;handle=euclid&amp;page=about&amp;aboutArea=librarians&amp;aboutPage=about_open">Project Euclid Open Access Journals including Statistics and Probability Journals</a></li>
+<li><a rel="nofollow" class="external text" href="http://learndataanalysis.com/">Learn Data Analysis</a> a good site for various data analysis links including R</li>
+<li><a rel="nofollow" class="external text" href="http://learndataanalysis.com/free-e-books-springerlink">Free books from Springer Publishing on Data Analysis</a> at Learn Data Analysis site</li>
+<li><a rel="nofollow" class="external text" href="http://jeromyanglim.blogspot.ca/p/site-map-jeromy-anglims-blog-psychology.html">Jeromy Anglim's sitemap</a> with many links and advice</li>
+<li><a rel="nofollow" class="external text" href="http://www.maths.anu.edu.au/~johnm/Docs/planning/protgs2002.pdf">J H Maindonald's  The Design of Research Studies - A Statistical Perspective</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/">Advanced Data Analysis from an Elementary Point of View by Cosma R. Shalizi at Carnegie Mellon University</a> </li>
+<li><a rel="nofollow" class="external text" href="http://arxiv.org/abs/1207.6002">Basic Data Analysis and More - A Guided Tour Using Python by Oliver Melchert</a> arXiv paper using Python code but the code can easily be reproduced in R </li>
+<li><a rel="nofollow" class="external text" href="http://modelingwithdata.org/about_the_book.html">Modeling with Data by Ben Klemens</a> while the statistical methods in the book are bases on the language C source code can easily be rewritten in R</li>
+</ul>
+<h2> <span class="mw-headline" id="Version_Control">Version Control</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://git-scm.com/">Git</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/">Github</a></li>
+<li>[Bitbucket]<a rel="nofollow" class="external autonumber" href="https://bitbucket.org">[2]</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.clear.rice.edu/comp314/svn.html">Source Control in 10 Minutes: an SVN tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="http://subversion.apache.org/">Subversion (SVN) </a></li>
+<li><a rel="nofollow" class="external text" href="http://sixrevisions.com/resources/git-tutorials-beginners/">Top 10 Git Tutorials for Beginners</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.rstudio.com/ide/docs/version_control/overview">Using Version Control with RStudio</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Reproducible_Analysis_Navigation_Template_.28rant.29">Reproducible Analysis Navigation Template (rant)</span></h2>
+<p><a rel="nofollow" class="external text" href="https://github.com/vinomaster/dawn/tree/master/guides/rant">rant</a> is a general purpose workflow template that will help navigate a data analysis project. The template is designed to serve as guides for a research project. The template is designed to help others organize data analysis projects and the artifacts (insights, plots, code, etc) of the endeavor. </p>
+<h1> <span class="mw-headline" id="Books">Books</span></h1>
+<p>Books that students find useful.</p>
+<ul>
+<li><p>Adler, Joseph: <a rel="nofollow" class="external text" href="http://shop.oreilly.com/product/0636920022008.do">R in a Nutshell. 2nd edition 2012</a>. Comprehensive introduction into R as a programming language and its use in statistics and data analysis with lots of examples.</p></li>
+<li><p>Avril, Coghlan <a rel="nofollow" class="external text" href="http://a-little-book-of-r-for-time-series.readthedocs.org/en/latest/">A Little Book of R for Time Series</a>. This is a simple introduction to time series analysis using the R Statistics software</p></li>
+<li><p>Avril, Coghlan <a rel="nofollow" class="external text" href="http://little-book-of-r-for-multivariate-analysis.readthedocs.org/en/latest/">A Little Book of R for Multivariate Analysis</a>. This is a simple introduction to multivariate analysis using the R Statistics software.</p></li>
+<li><p>Diez, David M &amp;  Barr, Christopher D &amp; Cetinkaya-Rundel, Mine (2012). <a rel="nofollow" class="external text" href="http://www.openintro.org/stat/textbook.php">OpenIntro Statistics</a>, openintro.org. OpenIntro Statistics is a free textbook for introductory statistics. The book can be downloaded for free as a PDF or purchased on <a rel="nofollow" class="external text" href="http://www.amazon.com/dp/1478217200/">Amazon.com</a>.</p></li>
+<li><p>Hastie, Trevor &amp; Tibshirani, Robert  &amp; Friedman, Jerome  (2008) <a rel="nofollow" class="external text" href="http://www.stanford.edu/~hastie/local.ftp/Springer/OLD//ESLII_print4.pdf">Elements of Statistical Learning, Second Edition</a>, Springer. Free PDF download.</p></li>
+<li><p>Kenny, David A. <a rel="nofollow" class="external text" href="http://davidakenny.net/doc/cc_v1.pdf">Correlation and Casuality</a></p></li>
+<li><p>Kruschke, John <a rel="nofollow" class="external text" href="http://www.indiana.edu/~kruschke/DoingBayesianDataAnalysis/">Doing Bayesian Data Analysis: A Tutorial with R and BUGS</a> </p></li>
+<li><p>Marcus, Gary &amp; Davis, Ernst<a rel="nofollow" class="external text" href="http://www.newyorker.com/online/blogs/books/2013/01/what-nate-silver-gets-wrong.html">The New Yorker, "What Nate Silver Gets Wrong"</a></p></li>
+<li><p>Matloff, N. <a rel="nofollow" class="external text" href="http://nostarch.com/artofr.htm">Art of R Programming</a>, No Starch Press.  A good book on learning the R programming language for those with some prior programming background.</p></li>
+<li><p>Meys, Joris &amp; de Vries, Andrie. <a rel="nofollow" class="external text" href="http://www.amazon.com/R-For-Dummies-Joris-Meys/dp/1119962846">R for Dummies</a>, For Dummies, 2012. A good quick start. </p></li>
+<li><p>Pearl, Judea <a rel="nofollow" class="external text" href="http://bayes.cs.ucla.edu/jp_home.html">Casuality: Models, Reasoning and Inference</a></p></li>
+<li><p>Raja,Prasenjit <a rel="nofollow" class="external text" href="http://www.physik.uzh.ch/~psaha/pda/">Principles of Data Analysis</a></p></li>
+<li><p>Ramsay, James <a rel="nofollow" class="external text" href="http://www.springer.com/statistics/computational+statistics/book/978-0-387-98184-0">Functional Data Analysis with R and MATLAB</a></p></li>
+<li><p>Ramsay, James <a rel="nofollow" class="external text" href="http://www.psych.mcgill.ca/misc/fda/">Functional Data Analysis</a></p></li>
+<li><p>Shalizi, Cosma Rohilla (2013). <a rel="nofollow" class="external text" href="http://www.stat.cmu.edu/~cshalizi/ADAfaEPoV/ADAfaEPoV.pdf">Advanced Data Analysis from an Elementary Point of View</a>. Free PDF download. </p></li>
+<li><p>Venables &amp; Ripley (2010). <a rel="nofollow" class="external text" href="http://www.amazon.com/Modern-Applied-Statistics-Computing/dp/1441930086/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1358968453&amp;sr=1-1&amp;keywords=modern+applied+statistics+with+s">Modern Applied Statistics with S</a>, Springer. Ripley is by far the largest contributor to the R-Core codebase.</p></li>
+<li><p>Wickham, Hadley  <a rel="nofollow" class="external text" href="http://www.amazon.com/ggplot2-Elegant-Graphics-Data-Analysis/dp/0387981403/ref=sr_1_1?ie=UTF8&amp;qid=1358968404&amp;sr=8-1&amp;keywords=ggplot2">ggplot2: Elegant Graphics for Data Analysis</a>, Springer. Book on ggplot2 written by the author of the ggplot2 and plyr, R packages. This book is part of Springer's <a rel="nofollow" class="external text" href="http://www.springer.com/series/6991">Use R!</a> series.</p></li>
+</ul>
+<h1> <span class="mw-headline" id="FAQ">FAQ</span></h1>
+<p>Answers to common platform related questions and issues. Also see the <a rel="nofollow" class="external text" href="http://help.coursera.org/">Coursera FAQ</a></p>
+<h2> <span class="mw-headline" id="Late_Days">Late Days</span></h2>
+<p>A large number of discussion forum posts have indicated that late days are broken. Not all are due to user error. A likely cause is that when deadlines were extended late days that had already been used unnecessarily were not refunded. Result was that student had less than the 5 late days supposed to be available. This could either be a Coursera platform issue or course staff failing to update late days correctly when adusting deadlines. Ultimately a platform issue since should be done automatically without staff intervention as a result of the deadline adjustment. Anyway it was NOT fixed by the end of the course. Hopefully will be noticed by staff in this FAQ.</p>
+<h2> <span class="mw-headline" id="Fix_Problems_with_video_play_back">Fix Problems with video play back</span></h2>
+<p>See this <a rel="nofollow" class="external text" href="http://help.coursera.org/customer/portal/articles/912521-why-do-my-lecture-videos-play-incorrectly-">entry</a> in the Coursera FAQ.</p>
+<h2> <span class="mw-headline" id="How_to_Watch_Course_Videos_.28and_YouTube.29_at_2x_Speed">How to Watch Course Videos (and YouTube) at 2x Speed</span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.videolan.org/vlc/">VLC Media Player</a> is a free video player with excellent support for watching at 2x speed. You can watch one hour of lectures in 30 minutes, and at fast playback speeds the sound quality tends to be much better compared with the default web based playback.</p>
+<p>To raise the playback speed, download the video to your local computer, open the file in VLC Media Player, then select "Playback..Speed" (or the "+" button on the numeric keypad on the right hand side of your keyboard).
+T
+You can also <a rel="nofollow" class="external text" href="http://www.labnol.org/software/youtube-videos-in-vlc-player/26829/">use VLC Media Player to watch YouTube videos at 2x playback speed</a>. Select "Open..Network Stream", paste in the YouTube URL, then select the playback speed using "Playback..Speed". This is particularly useful when watching lectures referred to in Professor Leek's videos, such as <a rel="nofollow" class="external text" href="http://www.youtube.com/watch?v=yvDCzhbjYWs">The Unreasonable Effectiveness of Data by Peter Norvig</a>.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 155/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Dataanalysis:Main&amp;oldid=18585">https://share.coursera.org/wiki/index.php?title=Dataanalysis:Main&amp;oldid=18585</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

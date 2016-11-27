@@ -1,0 +1,39 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:rosegarden</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Rosegarden is a more full featured DAW (compared to Audacity) with MIDI capability for Linux machines.
+It also has very advanced music score production and editing functions.</p>
+<h2> <span class="mw-headline" id="Companion_applications">Companion applications</span></h2>
+<p>Rosegarden runs very well on Opensuse 12.2 with Qsynth (a frontend for fluidsynth) as a synthesizer for MIDI. In turn Fluidsynth runs well with soundfonts from Chris Collins' GeneraluserGS (the fluidsynth version).</p>
+<h2> <span class="mw-headline" id="Getting_it_to_run_on_a_Linux_box">Getting it to run on a Linux box</span></h2>
+<p>One of the problems that Rosegarden can present is that it likes to run with Jack. Indeed for a professional DAW this is the preferred configuration since Jack is much more of a single use highly specialized tool, and many advanced plugins will not work without Jack. However many general-purpose Linux boxes use Pulseaudio to control sound since while it is not quite as good a dedicated professional tool as Jack, it is more adaptable in the management of multiple audio devices.</p>
+<p>On a system which principally uses Pulseaudio with one audio device (say onboard sound chip only), if Jack loads into the system there can be a conflict, with the result that there is no sound in anything. So it is helpful to be able to watch the system processes and kill Jack if Rosegarden loads it. Even better is to make sure that Jack is not on the system so that Rosegarden cannot load it even if it wanted to. The result is a system which is not quite as good as it could be with Jack, but still functions well for an open source no-cost Linux solution under Pulseaudio.</p>
+<h2> <span class="mw-headline" id="Useful_resources">Useful resources</span></h2>
+<p>additional resources
+<ul><li><a rel="nofollow" class="external text" href="http://www.rosegardenmusic.com">Rosegarden Website</a>
+</li><li><a rel="nofollow" class="external text" href="http://qsynth.sourceforge.net">Qsynth Website</a>
+</li><li><a rel="nofollow" class="external text" href="http://sourceforge.net/apps/trac/fluidsynth/">Fluidsynth Website</a>
+</li><li><a rel="nofollow" class="external text" href="http://www.schristiancollins.com/generaluser.php">Generaluser soundfonts Website</a>
+</li><li><a rel="nofollow" class="external text" href="http://jackaudio.org/pulseaudio_and_jack">A how-to on Jack and Pulseaudio from the Jack website</a></p>
+</li></ul>
+
+<p>Back to *<a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Musicproduction:Main">IMPMOOC mainpage</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:rosegarden&amp;oldid=31806">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:rosegarden&amp;oldid=31806</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

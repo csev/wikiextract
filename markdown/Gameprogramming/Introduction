@@ -1,0 +1,23 @@
+[[Category:Game Programming|i]]
+<h1>Introduction to C# Programming</h1>
+<h2> A basic structure of a simple program</h2>
+
+<pre>
+using System
+namespace consoleapplication1
+{
+    class program
+    {
+        static void Main()
+        {
+           Console.WriteLine("Hello world") ;
+        }
+    }
+}
+</pre>
+
+<h2>Comments in c#</h2>
+* Documentation comments
+* Inline comments
+
+[[Gameprogramming:Main| Back to Main]]

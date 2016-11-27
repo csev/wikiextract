@@ -1,0 +1,24 @@
+<div style="border-left:15px solid darkred;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>This solution works for all assignments except the last one (code generation).</td></table></div>
+
+# COOL for Windows — unofficial guide
+
+Please follow those easy steps:
+
+* download Cygwin setup from http://www.cygwin.com/
+* run Cygwin setup
+* install all default packages and also `make`, `perl` and `wget` (allow Cygwin to install all dependencies)
+* you should also install `csh` but currently it is not present -- instead install `tcsh`
+* download the required framework -- currently either C# or Java/C++ included in [[Compilers:InstallingDirectlyonLinux|COOL minimal package]]
+
+Unpack the framework and:
+* with C# you are done
+* with Java/C++ you either have to modify provided makefiles to match Cygwin environment or copy manually needed files to create working environment
+
+You can develop COOL compiler using your favourite tools (MonoDevelop, Visual Studio, IntelliJ, Eclipse, etc.). When it comes to grading follow the assignment instructions however do not run Windows commandline, but instead Cygwin terminal.
+
+## PA5 (code generation)
+
+It is impossible (for now) to run grading script for PA5, but still you can make good progress on Windows. Run grading script once, so it unpacks all the reference files, and then run testsuite scripts as a rough comparison how well you are doing. Once you are satisfied with results, run VM and grading script for submission.
+
+<br>
+<div style="border-left:15px solid darkgreen;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>You won't be able to run provided tools (`coolc`, `spim`, etc.) -- so you have to base solely on reference input and output files provided by grading script.</td></table></div>

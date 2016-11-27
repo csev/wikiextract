@@ -1,0 +1,73 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Humanphysio:Lecture Notes Week2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table border="1">
+<tr>
+<th>Graded Potentials</th>
+<th>Action Potentials</th>
+</tr>
+
+<tr>
+<td>Amplitude varies the size of the initiating event.</td>
+<td>All-or-none. Once the membrane is depolarized to threshold, amplitude is independent of the size of the initiating event.</td>
+</tr>
+
+<tr>
+<td>Can be summed.</td>
+<td>Cannot be summed.</td>
+</tr>
+
+<tr>
+<td>Does not have a threshold.</td>
+<td>Has a threshold (about 15 mV depolarized relative to the resting potential.</td>
+</tr>
+
+<tr>
+<td>Does not have a refractory period.</td>
+<td>Has a refractory period.</td>
+<p><br />    
+</p>
+</tr>
+
+<tr>
+<td>Is conducted decrimentally (amplitude decreases with distance).</td>
+<td>Depolarization is amplified to a constant value at each point along the membrane.</td>
+</tr>
+
+<tr>
+<td>Duration varies with inititiating condition.</td>
+<td>Duration is constant under constant conditions.</td>
+</tr>
+
+<tr>
+<td>Can be a depolariztion or a hyperpolarization.</td>
+<td>Is only a depolariztion.</td>
+</tr>
+
+<tr>
+<td>Initiated by environment (receptor), neurotransmitter (synapse), or spontaneously.</td>
+<td>Initiated by a graded potential.</td>
+</tr>
+
+
+
+</table>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Humanphysio:Lecture_Notes_Week2&amp;oldid=15326">https://share.coursera.org/wiki/index.php?title=Humanphysio:Lecture_Notes_Week2&amp;oldid=15326</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

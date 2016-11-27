@@ -1,0 +1,22 @@
+Control of Mobile Robots
+========================
+Welcome to the Course Wiki for Control of Mobile Robots.
+
+Since the Wiki is public, your contributions will also be shared with your classmates, the TAs and Professor.
+
+<h2>To add maths symbols into a discussion forum post:</h2>
+
+For maths symbols such as the dreaded $$\dot{x}$$ have a look at http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Symbols for the LaTeX codes then enter them in your post with <code>$$</code> on either side. For example, to enter $$\dot{x}$$ type <code>$$\dot{x}$$</code> and you can then check it in the Instant Preview by clicking the 'Render Math' button above the Instant Preview.
+
+For a short general introduction to LaTeX math mode, see http://www.artofproblemsolving.com/Wiki/index.php/LaTeX:Math.
+
+<h2>Useful resources on differential equations</h2>
+The following links might be useful for learning more on differential equations, integrations and other heavy duty maths subjects. Thanks to all the the contributors in this thread http://class.coursera.org/conrob-001/forum/thread?thread_id=397 for their suggestions.
+<ol>
+<li>http://ftp.jaist.ac.jp/pub/sourceforge/j/jh/jhsrobo/Programming/Idiot%20Guide%20to%20PID%20Algorithm.pdf</li>
+<li>http://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/</li>
+<li>http://www.khanacademy.org/math/differential-equations</li>
+<li>http://patrickjmt.com/#differential-equations</li>
+<li>http://www.wolframalpha.com/input/?i=differential+equations</li>
+<li>http://en.wikipedia.org/wiki/Differential\_equation</li>
+</ol>

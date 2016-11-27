@@ -1,0 +1,98 @@
+[[Category:Music Production|Cubase]]
+[[Category:DAW|Cubase]]
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+Cubase is a Midi / Audio editing programming suite under a proprietary licence, started in 1989 by German based company Steinberg.
+
+Computers such as the Atari ST (the first home computer with built-in MIDI support) were able to run Cubase and communicate directly with devices such as external synthesizers and samplers via MIDI. Recording of the MIDI messages was also possible - enabling musicians to record and playback different instrument sounds from the same MIDI notes. 
+
+It was not until 1996 and the release of Cubase Audio that users could record and playback multiple audio tracks in tandem with MIDI tracks.
+
+In 1999, VSTi was born: Software synthesis of instruments.This made third party development of Cubase plugins possible. 
+
+By 2000, Cubase was capable of using a 32 bit word length (bit depth) for audio sampling and was now able to access its own real-time processing modules as well as integrating its first VST plugin - Propellerheads Rebirth.
+
+
+
+##Project specifics
+details of file management
+*Project Name
+**A project folder is specified when creating a new project or opening an existing project.
+*File type
+**Standard project files are '.cpr' but Cubase is capable of importing '.mid' and varous audio file formats.
+*Bit depth
+**The primary bit depths in Cubase are 16, 24 and 32.
+*Sampling rate
+**The primary sampling rates used in Cubase are 22,050kHz, 32,000kHz, 44,100kHz and 48,000kHz.
+*Hardware
+**Cubase can interact with a wide variety of hardware and interface devices. Hardware usually brings its own unique settings but selecting the appropriate hardware choice is always found in the MIDI device setup area of Cubase.
+*Buffer size
+*Project folders specifics
+
+##Recording
+details of audio recording
+*Metronome(click track)
+**Unlike some other DAWs, Cubase includes the metronome track so there is no need to 'create' it. The metronome can be a user assigned MIDI note or an audio click. 
+*Count in
+**A one or two bar metronome count in is available
+*Audio recording tips
+**Test the input signal level first
+**Check the monitoring levels of audio or MIDI that will be playing while you record
+**When recording additional 'takes', be sure not to record over your previous 'takes'
+
+##Editing Audio
+details of editing audio
+*Trimming
+**Use the Cut tool to split and/or trim audio samples. You can also trim by adjusting the length of audio samples with the Pencil tool.
+*Cutting
+**Use the Cut tool to split and/or trim audio samples.
+*Grid
+*Change grid resolution
+*Modifier key to toggle grid
+*Add fades
+*Modify fades
+*Efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+[*Website](http://www.steinberg.net/en/products/cubase/start.html?et_cid=20&et_lid=54&et_sub=Cubase)
+*Manual
+[*Forums](http://www.steinberg.net/forum/)
+*Links
+[Cubase 7 Video Tutorial](http://www.steinberg.net/en/products/accessories/steinberg_certified_video_tutorials/swa_complete_cubase_7.html
+ "Cubase 7 Video Tutorial") 'Not free'
+
+##Categories

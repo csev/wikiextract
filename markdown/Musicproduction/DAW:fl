@@ -1,0 +1,171 @@
+[[Category:Music Production|fl]]
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+##Project Specifics
+details of file management
+###Project Name
+You can name projects when you save, save as, or save a new version.  
+####Renaming Projects  
+You can either rename your project inside or outside of FL Studio. If you want to rename your project inside of FL Studio, you can go to the Projects folder in the side panel, find your project, right click on it, and select "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac). From there, click on "Properties" (PC) or "More Info" (Mac), and rename the file. Once you confirm the name change, you may need to right click on the file and click either "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac) to see the name change. You can perform this operation on any project file, whether it is open or not.  
+Alternatively, to rename a project outside of FL Studio, use "Explorer" (PC) or "Finder" (Mac) to find and rename the project file. In this case, you may need to close the project (if it is open) before you can rename it.
+
+###File type
+You can save a project as an *.flp (FruityLoops loop file), *.zip (Zipped Loop file), *.wav (Microsoft wave files), *.mp3 (MPEG 3 audio file), *.ogg (Ogg Vorbis audio file), or *.mid (MIDI file). The former two can be reopened and edited normally; the latter four will combine all of the audio information, keeping you from as easily making changes to the file.  
+Note that using the "Export" option in the File menu to select any of the above options (except *.flp, which is not available) will work the exact same way as using the "Save As" Menu.
+
+###Bit depth
+When exporting files, you only effect the bit depth with *.wavs. You can choose between 16Bit int, 24Bit int, or 32Bit float.
+
+###Sampling rate
+You can adjust the Sample Rate for audio output when working on files under Options, Audio Settings.
+
+###Hardware
+FL Studio runs solely on PC, but can be used on Linux as well as Mac with Bootcamp, or a similar program.
+
+###Buffer size
+You can adjust opens with the buffer under Options, Audio Settings. You can adjust the buffer length and offset, and can in addition choose whether or not to use polling, use hardware buffer, and/or to use 32Bit buffer.
+
+###Project Folders Specifics
+Project folders are great for keeping projects of a similar nature together. For example, different versions of a song, songs in the same album, or individual recordings can all be kept as separate files, but stored inside of the same folder.  
+You can search inside of Project folders by right clicking and selected "Smart Find". A window will come up in which you can type what you're looking for. You can also expand the folders in the right-click menu, collapse them, and even rename them by going to "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac) and selecting "Properties" (PC) or "More Info" (Mac) from there (you may need to right click and select "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac) again in order to see the name change).  
+You cannot create a new project folder inside of FL Studio's sidebar. You will either have to access Explorer (PC) or Finder (Mac), go to the Projects folder or a subfolder, and create a new folder. To easily find the Projects folder, you can select "Open" in the menu as and create a new folder while inside the window (once the folder is created, you can click "Cancel" in the Open window and the folder will remain).
+
+##Recording
+Audio Recording in FL Studio is only available in Producer Edition and higher (see section on FL Studio Editions). For editions below Producer, see the Free DAW section to use a separate DAW for recording.
+
+Details of audio recording
+*Metronome(click track)
+*Count in
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+*Grid
+*Change grid resolution
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+###Shortcut keys
+
+####Operations Found in the Menu
+Open: Control/Command+O  
+Save: Control/Command+S  
+Save as: Shift+Control/Command+S  
+Save new version: Control/Command+N  
+Export WAV: Control/Command+R  
+Export MP3: Shift+Control/Command+R  
+Expore Midi: Shift+Control+M  
+Access last project: Alt+1  
+Access recent projects: Alt+(projects since one to be accessed)  
+
+Undo: Control/Command+Z  
+Shift Left: Shift+Left  
+Shift Right: Shift+Right  
+Randomize: Alt+R  
+Send to Piano Poll: Alt+P  
+
+Clone selected: Alt+C  
+Delete selected: Alt+Delete  
+Move selected up: Alt+Up  
+Move selected down: Alt+Down  
+Group selected: Alt+G  
+Zip selected: Alt+Z  
+Unzip all: Alt+U
+
+Playlist: F5  
+Step sequencer: F6  
+Piano Roll: F7  
+Browser: F8  
+Mixer: F9  
+Plugin picker: Control/Command+F8  
+Project picker: Control/Command+Alt+F8  
+Close all windows: F12  
+Close all unfocused windows: Control/Command+F12  
+Arrange all windows to default: Shift+Control/Command+H  
+Plugin database: Shift+F8  
+
+Midi settings: F10  
+Project info: F11  
+Typing Keyboard to Piano: Control/Command+T  
+Metronome: Control/Command+M  
+Recording Precount: Control/Command+P  
+Start on input: Control/Command+I  
+Blend recorded notes: Control/Command+B  
+Step edit: Control/Command+E  
+Enable groups: Shift+Alt+T  
+Multilink to Controllers: Shift+J
+
+Browser smart find: Control/Command+F
+
+####Piano Roll Operations
+
+* Select Note Mode: Shift-E
+* Draw Mode: Shift-B
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##FL Studio 10 Editions
+FL Studio 10 has several editions. Each includes lifetime free upgrades to future versions of FL Studio, and each may be upgraded to a higher level of FL Studio 10 at any time. FL Studio 10 is available as a boxed purchase or as a download purchase from Image-Line's website.
+
+###Express Edition
+Express edition is the base upon which all other versions are built.
+
+###Fruity Edition
+Fruity Edition has all the features of Express Edition but includes, among other things, access to the piano roll.
+
+###Producer Edition
+Producer Edition has all of the features of Fruity Edition but includes, among other things, audio recording, use of audio clips, and use of automation clips.
+
+###Signature Bundle
+Signature Bundle has all of the features of Producer Edition but includes some popular plugins from Image-Line.
+
+###Demo Version
+FL Studio has a demo version available for free download from their website. It can be kept on a computer for as long as its owner likes, but the restrictions include the inability to open saved files (you can, however, save files), and any sounds played from inside FL Studio will occasionally "flicker out" (i.e. static will interrupt and make it difficult to interpret the sound). It includes all of the features of Signature Bundle. If you buy an edition of FL Studio 10 that does not include those features with it, they will be deactivated.
+
+##Useful Resources
+additional resources
+*Website (http://www.image-line.com/)
+*Manual (http://www.image-line.com/support/FLHelp/)
+*Official video tutorials (https://www.youtube.com/playlist?list=PL5353C9EB8A886421)
+*Demo Version (http://www.image-line.com/downloads/flstudiodownload.html)
+*Forums (http://forum.image-line.com/)
+*Links
+*Beats4beats (http://www.youtube.com/user/Beats4Beets?feature=g-user-u)
+*Warbeats - Fl Studio tutorials (http://warbeats.com/Tutorials/FL-Studio)
+
+##References
+*FL Studio 10 Reference Manual (http://www.image-line.com/support/FLHelp/)

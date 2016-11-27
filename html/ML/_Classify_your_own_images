@@ -1,0 +1,310 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Classify your own images</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#How_to_classify_your_own_images_using_the_ML_course.27s_NN_classifier_.28ex3_and_ex4.29"><span class="tocnumber">1</span> <span class="toctext">How to classify your own images using the ML course's NN classifier (ex3 and ex4)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Introduction"><span class="tocnumber">1.1</span> <span class="toctext">Introduction</span></a>
+<ul>
+<li class="toclevel-3"><a href="#.jpg_and_color_RGB_images"><span class="tocnumber">1.1.1</span> <span class="toctext">.jpg and color RGB images</span></a></li>
+<li class="toclevel-3"><a href="#Convert_to_Black_.26_White"><span class="tocnumber">1.1.2</span> <span class="toctext">Convert to Black &amp; White</span></a></li>
+<li class="toclevel-3"><a href="#Cropping_to_square_image"><span class="tocnumber">1.1.3</span> <span class="toctext">Cropping to square image</span></a></li>
+<li class="toclevel-3"><a href="#Scaling_to_20_x_20_pixels"><span class="tocnumber">1.1.4</span> <span class="toctext">Scaling to 20 x 20 pixels</span></a></li>
+<li class="toclevel-3"><a href="#Black_.26_White_to_Gray_.26_White"><span class="tocnumber">1.1.5</span> <span class="toctext">Black &amp; White to Gray &amp; White</span></a></li>
+<li class="toclevel-3"><a href="#Rotation_of_image"><span class="tocnumber">1.1.6</span> <span class="toctext">Rotation of image</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Approach"><span class="tocnumber">1.2</span> <span class="toctext">Approach</span></a></li>
+<li class="toclevel-2"><a href="#Code_step_by_step"><span class="tocnumber">1.3</span> <span class="toctext">Code step by step</span></a></li>
+<li class="toclevel-2"><a href="#Usage_samples"><span class="tocnumber">1.4</span> <span class="toctext">Usage samples</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Single_photo"><span class="tocnumber">1.4.1</span> <span class="toctext">Single photo</span></a></li>
+<li class="toclevel-3"><a href="#Multiple_photos"><span class="tocnumber">1.4.2</span> <span class="toctext">Multiple photos</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Tips"><span class="tocnumber">1.5</span> <span class="toctext">Tips</span></a></li>
+<li class="toclevel-2"><a href="#Complete_code_.28just_copy_and_paste.29"><span class="tocnumber">1.6</span> <span class="toctext">Complete code (just copy and paste)</span></a></li>
+<li class="toclevel-2"><a href="#Photo_Gallery"><span class="tocnumber">1.7</span> <span class="toctext">Photo Gallery</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Digit_2"><span class="tocnumber">1.7.1</span> <span class="toctext">Digit 2</span></a></li>
+<li class="toclevel-3"><a href="#Digit_6"><span class="tocnumber">1.7.2</span> <span class="toctext">Digit 6</span></a></li>
+<li class="toclevel-3"><a href="#Digit_6_inverted_is_digit_9"><span class="tocnumber">1.7.3</span> <span class="toctext">Digit 6 inverted is digit 9</span></a></li>
+<li class="toclevel-3"><a href="#Digit_3"><span class="tocnumber">1.7.4</span> <span class="toctext">Digit 3</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="How_to_classify_your_own_images_using_the_ML_course.27s_NN_classifier_.28ex3_and_ex4.29">How to classify your own images using the ML course's NN classifier (ex3 and ex4)</span></h1>
+<p>This tutorial will guide you on how to use the classifier provided exercise 3 and 4 to classify you own images like this:
+<a href="/wiki/images/d/d8/ML-Ex3-MyPhotoToDataDigit-4.jpg" class="image"><img alt="ML-Ex3-MyPhotoToDataDigit-4.jpg" src="/wiki/images/d/d8/ML-Ex3-MyPhotoToDataDigit-4.jpg" width="897" height="832" /></a></p>
+<p>It will also explain how the images are converted thru several formats to be processed and displayed.</p>
+<h2> <span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>The classifier provided expects 20 x 20 pixels black and white images converted in a row vector of 400 real numbers like this <pre>[ 0.14532, 0.12876, ...]</pre>
+Each pixel is represented by a real number between -1.0 to 1.0, meaning -1.0 equal black and 1.0 equal white (any number in between is a shade of gray, and number 0.0 is exactly the middle gray).</p>
+<h3> <span class="mw-headline" id=".jpg_and_color_RGB_images">.jpg and color RGB images</span></h3>
+<p>The most common image format that can be read by Octave is .jpg using function that outputs a three-dimensional matrix of integer numbers from 0 to 255, representing the height x width x 3 integers as indexes of a color map for each pixel (explaining color maps is beyond scope). 
+<pre>Image3DmatrixRGB = imread(&quot;myOwnPhoto.jpg&quot;);</pre></p>
+<h3> <span class="mw-headline" id="Convert_to_Black_.26_White">Convert to Black &amp; White</span></h3>
+<p>A common way to convert color images to black &amp; white, is to convert them to a YIQ standard and keep only the Y component that represents the luma information (black &amp; white). I and Q represent the chrominance information (color).<br />
+Octave has a function <strong>rgb2ntsc()</strong>  that outputs a similar three-dimensional matrix but of real numbers from -1.0 to 1.0, representing the height x width x 3 (Y luma, I in-phase, Q quadrature) intensity for each pixel.
+<pre>Image3DmatrixYIQ = rgb2ntsc(Image3DmatrixRGB);</pre>
+<p>To obtain the Black &amp; White component just discard the I and Q matrices. This leaves a two-dimensional matrix of real numbers from -1.0 to 1.0 representing the height x width pixels black &amp; white values.
+</p>
+<pre>Image2DmatrixBW = Image3DmatrixYIQ(:,:,1);</pre></p>
+<h3> <span class="mw-headline" id="Cropping_to_square_image">Cropping to square image</span></h3>
+<p>It is useful to crop the original image to be as square as possible. The way to crop a matrix is by selecting an area inside the original B&amp;W image and copy it to a new matrix. This is done by selecting the rows and columns that define the area. In other words, it is copying a rectangular subset of the matrix like this:
+<pre>croppedImage = Image2DmatrixBW(origen1:size1, origin2:size2);
+</pre>
+Cropping does not have to be all the way to a square. <strong>It could be cropping just a percentage of the way to a square</strong> so you can leave more of the image intact. The next step of scaling will take care of streaching the image to fit a square.</p>
+<h3> <span class="mw-headline" id="Scaling_to_20_x_20_pixels">Scaling to 20 x 20 pixels</span></h3>
+<p>The classifier provided was trained with 20 x 20 pixels images so we need to scale our photos to meet. It may cause distortion depending on the height and width ratio of the cropped original photo.
+There are many ways to scale a photo but we are going to use the simplest one. We lay a scaled grid of 20 x 20 over the original photo and take a sample pixel on the center of each grid.
+To lay a scaled grid, we compute two vectors of 20 indexes each evenly spaced on the original size of the image. One for the height and one for the width of the image.
+For example, in an image of 320 x 200 pixels will produce to vectors like <pre>[9    25    41    57    73 ... 313] &#160;% 20 indexes</pre><pre>[6    16    26    36    46 ... 196] &#160;% 20 indexes</pre>
+Copy the value of each pixel located by the grid of these indexes to a new matrix. Ending up with a matrix of 20 x 20 real numbers.</p>
+<h3> <span class="mw-headline" id="Black_.26_White_to_Gray_.26_White">Black &amp; White to Gray &amp; White</span></h3>
+<p>The classifier provided was trained with images of white digits over gray background. Specifically, the 20 x 20 matrix of real numbers ONLY range from 0.0 to 1.0 instead of the complete black &amp; white range of -1.0 to 1.0, this means that we have to normalize our photos to a range 0.0 to 1.0 for this classifier to work.
+But also, we invert the black and white colors because is easier to "draw" black over white on our photos and we need to get white digits.
+So in short, we <strong>invert black and white</strong> and <strong>stretch black to gray</strong>.</p>
+<h3> <span class="mw-headline" id="Rotation_of_image">Rotation of image</span></h3>
+<p>Some times our photos are automatically rotated like in our celular phones. The classifier provided can not recognize rotated images so we may need to rotate it back sometimes. This can be done with an Octave function <strong>rot90()</strong> like this.
+<pre>ImageAligned = rot90(Image, rotationStep);</pre>
+Where rotationStep is an integer: -1 mean rotate 90 degrees CCW and 1 mean rotate 90 degrees CW.</p>
+<h2> <span class="mw-headline" id="Approach">Approach</span></h2>
+<ol>
+<li>The approach is to have a function that converts our photo to the format the classifier is expecting. As if it was just a sample from the training data set.</li>
+<li>Use the classifier to predict the digit in the converted image.</li>
+</ol>
+<h2> <span class="mw-headline" id="Code_step_by_step">Code step by step</span></h2>
+<p>Define the function name, the output variable and three parameters, one for the filename of our photo, one optional cropping percentage (if not provided will default to zero, meaning no cropping) and the last optional rotation of the image (if not provided will default to zero, meaning no rotation).
+<pre>function vectorImage = imageTo20x20Gray(fileName, cropPercentage=0, rotStep=0)
+</pre>
+<p>Read the file as a RGB image and convert it to Black &amp; White 2D matrix (see the introduction).
+</p>
+<pre>% Read as RGB image
+Image3DmatrixRGB = imread(fileName);
+% Convert to NTSC image (YIQ)
+Image3DmatrixYIQ = rgb2ntsc(Image3DmatrixRGB );
+% Convert to grays keeping only luminance (Y)
+%        ...and discard chrominance (IQ)
+Image2DmatrixBW  = Image3DmatrixYIQ(:,:,1);
+</pre>
+<p>Establish the final size of the cropped image.
+</p>
+<pre>% Get the size of your image
+oldSize = size(Image2DmatrixBW);
+% Obtain crop size toward centered square (cropDelta)
+% ...will be zero for the already minimum dimension
+% ...and if the cropPercentage is zero, 
+% ...both dimensions are zero
+% ...meaning that the original image will go intact to croppedImage
+cropDelta = floor((oldSize - min(oldSize)) .* (cropPercentage/100));
+% Compute the desired final pixel size for the original image
+finalSize = oldSize - cropDelta;
+</pre>
+<p>Obtain the origin and amount of the columns and rows to be copied to the cropped image.
+</p>
+<pre>% Compute each dimension origin for croping
+cropOrigin = floor(cropDelta / 2) + 1;
+% Compute each dimension copying size
+copySize = cropOrigin + finalSize - 1;
+% Copy just the desired cropped image from the original B&amp;W image
+croppedImage = Image2DmatrixBW( ...
+                    cropOrigin(1):copySize(1), cropOrigin(2):copySize(2));
+</pre>
+<p>Compute the scale and compute back the new size. This last step is extra. It is computed back so the code keeps general for future modification of the classifier size. For example: if changed from 20 x 20 pixels to 30 x 30. Then the we only need to change the line of code where the scale is computed.
+</p>
+<pre>% Resolution scale factors: [rows cols]
+scale = [20 20] ./ finalSize;
+% Compute back the new image size (extra step to keep code general)
+newSize = max(floor(scale .* finalSize),1); 
+</pre>
+<p>Compute two sets of 20 indexes evenly spaced. One over the original height and one over the original width of the image.
+</p>
+<pre>% Compute a re-sampled set of indices:
+rowIndex = min(round(((1:newSize(1))-0.5)./scale(1)+0.5), finalSize(1));
+colIndex = min(round(((1:newSize(2))-0.5)./scale(2)+0.5), finalSize(2));
+</pre>
+<p>Copy just the indexed values from old image to get new image of 20 x 20 real numbers. This is called "sampling" because it copies just a sample pixel indexed by a grid. All the sample pixels make the new image.
+</p>
+<pre>% Copy just the indexed values from old image to get new image
+newImage = croppedImage(rowIndex,colIndex,:);
+</pre>
+<p>Rotate the matrix using the <strong>rot90()</strong> function with the rotStep parameter: -1 is CCW, 0 is no rotate, 1 is CW.
+</p>
+<pre>% Rotate if needed: -1 is CCW, 0 is no rotate, 1 is CW
+newAlignedImage = rot90(newImage, rotStep);
+</pre>
+<p>Invert black and white because it is easier to draw black digits over white background in our photos but the classifier needs white digits.
+</p>
+<pre>% Invert black and white
+invertedImage = - newAlignedImage;
+</pre>
+<p>Find the min and max gray values in the image and compute the total value range in preparation for normalization.
+</p>
+<pre>% Find min and max grays values in the image
+maxValue = max(invertedImage(:));
+minValue = min(invertedImage(:));
+% Compute the value range of actual grays
+delta = maxValue - minValue;
+</pre>
+<p>Do normalization so all values end up between 0.0 and 1.0 because this particular classifier do not perform well with negative numbers.
+</p>
+<pre>% Normalize grays between 0 and 1
+normImage = (invertedImage - minValue) / delta;</pre>
+<p>Add some contrast to the image. The multiplication factor is the contrast control, you can increase it if desired to obtain sharper contrast (contrast only between gray and white, black was already removed in normalization).
+</p>
+<pre>% Add contrast. Multiplication factor is contrast control.
+contrastedImage = sigmoid((normImage -0.5) * 5);
+</pre>
+<p>Show the image specifying the black &amp; white range [-1 1] to avoid automatic ranging using the image range values of gray to white. Showing the photo with different range, does not affect the values in the output matrix, so do not affect the classifier. It is only as a visual feedback for the user.
+</p>
+<pre>% Show image as seen by the classifier
+imshow(contrastedImage, [-1, 1] );</pre>
+<p>Finally, output the matrix as a unrolled vector to be compatible with the classifier.
+</p>
+<pre>% Output the matrix as a unrolled vector
+vectorImage = reshape(normImage, 1, newSize(1) * newSize(2));</pre>
+<p>End function.
+</p>
+<pre>end;</pre></p>
+<h2> <span class="mw-headline" id="Usage_samples">Usage samples</span></h2>
+<h3> <span class="mw-headline" id="Single_photo">Single photo</span></h3>
+<ul>
+<li>Photo file in myDigit.jpg</li>
+<li>Cropping 60% of the way to square photo</li>
+<li>No rotation
+<pre>vectorImage = imageTo20x20Gray('myDigit.jpg',60);
+predict(Theta1, Theta2, vectorImage)</pre></li>
+<li>Photo file in myDigit.jpg</li>
+<li>No cropping</li>
+<li>CCW rotation
+<pre>vectorImage = imageTo20x20Gray('myDigit.jpg',:,-1);
+predict(Theta1, Theta2, vectorImage)</pre></li>
+</ul>
+<h3> <span class="mw-headline" id="Multiple_photos">Multiple photos</span></h3>
+<ul>
+<li>Photo files in myFirstDigit.jpg, mySecondDigit.jpg</li>
+<li>First crop to square and second 25% of the way to square photo</li>
+<li>First no rotation and second CW rotation
+<pre>vectorImage(1,:) = imageTo20x20Gray('myFirstDigit.jpg',100);
+vectorImage(2,:) = imageTo20x20Gray('mySecondDigit.jpg',25,1);
+predict(Theta1, Theta2, vectorImage)</pre></li>
+</ul>
+<h2> <span class="mw-headline" id="Tips">Tips</span></h2>
+<ul>
+<li>JPG photos of black numbers over white background</li>
+<li>Preferred square photos but not required</li>
+<li>Rotate as needed because the classifier can only work with vertical digits</li>
+<li>Leave background space around digit. Al least 2 pixels when seen at 20 x 20 resolution. This means that the classifier only really works in a 16 x 16 area.</li>
+<li>Play changing the contrast multipier to 10 (or more).</li>
+</ul>
+<h2> <span class="mw-headline" id="Complete_code_.28just_copy_and_paste.29">Complete code (just copy and paste)</span></h2>
+<p><pre>
+function vectorImage = imageTo20x20Gray(fileName, cropPercentage=0, rotStep=0)
+%IMAGETO20X20GRAY display reduced image and converts for digit classification
+%
+% Sample usage: 
+%       imageTo20x20Gray('myDigit.jpg', 100, -1);
+%
+%       First parameter: Image file name
+%             Could be bigger than 20 x 20 px, it will
+%             be resized to 20 x 20. Better if used with
+%             square images but not required.
+% 
+%       Second parameter: cropPercentage (any number between 0 and 100)
+%             0  0% will be cropped (optional, no needed for square images)
+%            50  50% of available croping will be cropped
+%           100  crop all the way to square image (for rectangular images)
+% 
+%       Third parameter: rotStep
+%            -1  rotate image 90 degrees CCW
+%             0  do not rotate (optional)
+%             1  rotate image 90 degrees CW
+%
+% (Thanks to Edwin Frühwirth for parts of this code)
+% Read as RGB image
+Image3DmatrixRGB = imread(fileName);
+% Convert to NTSC image (YIQ)
+Image3DmatrixYIQ = rgb2ntsc(Image3DmatrixRGB );
+% Convert to grays keeping only luminance (Y) and discard chrominance (IQ)
+Image2DmatrixBW  = Image3DmatrixYIQ(:,:,1);
+% Get the size of your image
+oldSize = size(Image2DmatrixBW);
+% Obtain crop size toward centered square (cropDelta)
+% ...will be zero for the already minimum dimension
+% ...and if the cropPercentage is zero, 
+% ...both dimensions are zero
+% ...meaning that the original image will go intact to croppedImage
+cropDelta = floor((oldSize - min(oldSize)) .* (cropPercentage/100));
+% Compute the desired final pixel size for the original image
+finalSize = oldSize - cropDelta;
+% Compute each dimension origin for croping
+cropOrigin = floor(cropDelta / 2) + 1;
+% Compute each dimension copying size
+copySize = cropOrigin + finalSize - 1;
+% Copy just the desired cropped image from the original B&amp;W image
+croppedImage = Image2DmatrixBW( ...
+                    cropOrigin(1):copySize(1), cropOrigin(2):copySize(2));
+% Resolution scale factors: [rows cols]
+scale = [20 20] ./ finalSize;
+% Compute back the new image size (extra step to keep code general)
+newSize = max(floor(scale .* finalSize),1); 
+% Compute a re-sampled set of indices:
+rowIndex = min(round(((1:newSize(1))-0.5)./scale(1)+0.5), finalSize(1));
+colIndex = min(round(((1:newSize(2))-0.5)./scale(2)+0.5), finalSize(2));
+% Copy just the indexed values from old image to get new image
+newImage = croppedImage(rowIndex,colIndex,:);
+% Rotate if needed: -1 is CCW, 0 is no rotate, 1 is CW
+newAlignedImage = rot90(newImage, rotStep);
+% Invert black and white
+invertedImage = - newAlignedImage;
+% Find min and max grays values in the image
+maxValue = max(invertedImage(:));
+minValue = min(invertedImage(:));
+% Compute the value range of actual grays
+delta = maxValue - minValue;
+% Normalize grays between 0 and 1
+normImage = (invertedImage - minValue) / delta;
+% Add contrast. Multiplication factor is contrast control.
+contrastedImage = sigmoid((normImage -0.5) * 5);
+% Show image as seen by the classifier
+imshow(contrastedImage, [-1, 1] );
+% Output the matrix as a unrolled vector
+vectorImage = reshape(contrastedImage, 1, newSize(1)*newSize(2));
+end</pre></p>
+<h2> <span class="mw-headline" id="Photo_Gallery">Photo Gallery</span></h2>
+<h3> <span class="mw-headline" id="Digit_2">Digit 2</span></h3>
+<p><a href="/wiki/images/e/e6/ML-Ex3-MyPhotoToDataDigit-2.jpg" class="image"><img alt="ML-Ex3-MyPhotoToDataDigit-2.jpg" src="/wiki/images/e/e6/ML-Ex3-MyPhotoToDataDigit-2.jpg" width="885" height="846" /></a></p>
+<h3> <span class="mw-headline" id="Digit_6">Digit 6</span></h3>
+<p><a href="/wiki/images/1/19/ML-Ex3-MyPhotoToDataDigit-6.jpg" class="image"><img alt="ML-Ex3-MyPhotoToDataDigit-6.jpg" src="/wiki/images/1/19/ML-Ex3-MyPhotoToDataDigit-6.jpg" width="861" height="826" /></a></p>
+<h3> <span class="mw-headline" id="Digit_6_inverted_is_digit_9">Digit 6 inverted is digit 9</span></h3>
+<p>This is the same photo of a six but rotated.
+Also, changed the contrast multiplier from 5 to 20.
+You can note that the gray background is smoother.
+<a href="/wiki/images/0/03/ML-Ex3-MyPhotoToDataDigit-9.jpg" class="image"><img alt="ML-Ex3-MyPhotoToDataDigit-9.jpg" src="/wiki/images/0/03/ML-Ex3-MyPhotoToDataDigit-9.jpg" width="852" height="882" /></a></p>
+<h3> <span class="mw-headline" id="Digit_3">Digit 3</span></h3>
+<p><a href="/wiki/images/d/db/ML-Ex3-MyPhotoToDataDigit-3.jpg" class="image"><img alt="ML-Ex3-MyPhotoToDataDigit-3.jpg" src="/wiki/images/d/db/ML-Ex3-MyPhotoToDataDigit-3.jpg" width="884" height="847" /></a></p>
+<p><strong>-Created by Eduardo Martinez (student)</strong></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 245/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Classify_your_own_images&amp;oldid=34450">https://share.coursera.org/wiki/index.php?title=ML:Classify_your_own_images&amp;oldid=34450</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

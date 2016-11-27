@@ -1,0 +1,33 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PythonlearnCapstone:Student- Mike</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>As an avid gamer and someone who works in the computer games industry I was attracted to data involving computer games and the communities which grow around them. <a rel="nofollow" class="external text" href="http://store.steampowered.com/">Steam</a> is one of the biggest distributors of PC games whose members congregate into groups. The platform also provides a wealth of data through its API about these members, should they choose, its groups and games. </p>
+<p>I plan on making a program which will do the following (subject to tweaking)</p>
+<ul>
+<li>Allow the user to enter the name or id of a group on steam (for instance the <a rel="nofollow" class="external text" href="http://steamcommunity.com/groups/pcgamer/">PCGamer group</a></li>
+<li>Allow the user to select how many of the members of the group will have their information pulled (perhaps limit it to around 1000 max) </li>
+<li>Pull the information about the members, including which games they have in their library</li>
+<li>Produce a visual representation of the most popular games owned</li>
+</ul>
+<p>Its a fairly simply program (hopefully). But the wealth of information allowed through the Steam API means there is certainly room for expansion (assuming I manage to achieve the above). </p>
+<p>Comments/Feedback about this idea are welcome.</p>
+<p>-Michael</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-_Mike&amp;oldid=34369">https://share.coursera.org/wiki/index.php?title=PythonlearnCapstone:Student-_Mike&amp;oldid=34369</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

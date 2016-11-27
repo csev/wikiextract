@@ -1,0 +1,42 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:implementation:queens</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="N-Queens">N-Queens</span></h1>
+<h3> <span class="mw-headline" id="Comet">Comet</span></h3>
+<p>A constraint programming based implementation of the N-Queens problem</p>
+<pre>
+import cotfd;
+
+Solver&lt;CP&gt; m();
+int n = 8;
+range S = 1..n;
+var&lt;CP&gt;{int} q[i in S](m,S);
+
+solve&lt;m&gt; {
+   m.post(alldifferent(all(i in S) q[i] + i));
+   m.post(alldifferent(all(i in S) q[i] - i));
+   m.post(alldifferent(q));
+} using {
+   label(q);
+   cout &lt;&lt; q &lt;&lt; endl;
+}
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:implementation:queens&amp;oldid=12217">https://share.coursera.org/wiki/index.php?title=Optimization:implementation:queens&amp;oldid=12217</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

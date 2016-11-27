@@ -1,0 +1,39 @@
+Currently SamIam expects a dot (.) as decimal separator even if your local settings causing it to display a comma (,) as separator. This means especially you have to change commas to dots every time you edit [[CPD]].
+
+For me, on Macintosh OS X 10.7.3, modifying the probabilities required triple-clicking the fields, rather than the usual single- or double-click.
+
+<b>EDIT</b>
+
+I found a work-around to this problem. You can override java regional setting in the script that starts samiam adding "-Duser.language=en -Duser.region=US" to the java command line.
+For me, on Windows, I edited samiam.bat to change the row that sets java options from
+
+<code>set VMARGS=-Xruncalljvmti -Xms8m -Xmx512m -classpath samiam.jar;inflib.jar edu.ucla.belief.ui.UI</code>
+
+to:
+
+<code>set VMARGS=-Xruncalljvmti -Xms8m -Xmx512m -Duser.language=en -Duser.region=US -classpath samiam.jar;inflib.jar edu.ucla.belief.ui.UI</code>
+
+<br>
+<br>
+<b>Problem: Unable to open .net file, probably on a Linux machine</b>
+
+<b>Description:</b> 
+
+If, when trying to open a .net file, you get the error:
+
+   <code><file>.net not supported by SamIam. null. (See stderr for description.)</code>
+
+<b>Solution:</b>
+
+   1) Within SamIam, either press <F9> or select the "Preferences" tab and choose the "Preferences" menu option.
+
+   2) Within SamIam Preferences window, choose the "Global" tab.
+
+   3) You will likely see that the "User Interface Look and Feel" option is set to "GTK+".  
+      If so, you've found the problem!
+
+      To Fix: Using the option's pull down menu, select another option, such as "Metal", "Nimbus", or "CDE/Motif".
+
+   4) You should now be able to open your <file>.net
+
+Note that some features of SamIam might work better with one "Look and Feel" option than another, so if something isn't displaying nicely, you may want to experiment with the choices.

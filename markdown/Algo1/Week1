@@ -1,0 +1,71 @@
+[[Category:Algorithms]]
+## Algorithms
+
+[http://en.wikipedia.org/wiki/Algorithm Algorithms] are similar to recipes. They consist of a set of repeatable steps that produce a consistent result.
+
+Algorithms have existed since the beginning of mathematics, but they really took off with modern computers.
+
+## Karatsuba Multiplication
+[http://en.wikipedia.org/wiki/Karatsuba_algorithm Karatsuba Multiplication] shows that there's more than one algorithm for a task, and that algorithm may not be obvious, even if it is more efficient.
+
+## Merge Sort
+[http://en.wikipedia.org/wiki/Merge_sort Merge Sort] sorts a set of comparable elements (such as integers) using recursion.
+
+## Asymptotic Notation
+Asymptotic Notation allows algorithms to be compared more easily by identifying them by their most influential components.
+
+For example, let's assume that you're having a very unlucky day. You burn your breakfast toast. You get a flat tire on the way to work. Then your boss calls you into his office to let you know that your position is being eliminated. When your spouse asked what happened during your day, you're probably going to lead with losing your job.
+
+Asymptotic notation focuses upon the most important part of an expression. For the most part, we remove all be the most important term and then remove its constant.
+
+### Big-Oh
+$$O()$$ is probably the most common measure. It identifies the upper bound of an expression. For example, if your algorithm is $$O(f(n))$$, then for large enough $$n$$, your algorithm will be less than or equal to $$c\ f(n)$$ for a constant c. For more on <a href="http://en.wikipedia.org/wiki/Big_O_notation">Big-Oh</a>, see this [https://www.youtube.com/watch?v=ei-A_wy5Yxw video] and [http://bigocheatsheet.com/ cheat sheet], especially the [http://bigocheatsheet.com/#chart chart].
+
+### Big-Omega
+$$\Omega()$$ is almost identical to $$O()$$, except that it defines a lower bound of an expression.
+
+### Big-Theta
+$$\Theta()$$ identifies a common upper and lower bound of an expression. That is an expression is squeezed between two curves of $$\Theta(f(n))$$ except that the lower bound curve will have a smaller constant factor than the upper bound curve.
+
+## Divide and Conquer
+<a href="http://en.wikipedia.org/wiki/Divide_and_conquer_algorithms">Divide and Conquer</a> is an algorithmic technique that breaks down a problem into smaller instances of itself, solves those smaller parts and uses them to construct a solution. Divide and Conquer is usually implemented using recursion.
+
+### Recursion and Recursive Algorithms
+[http://en.wikipedia.org/wiki/Recursion Recursion] and [http://en.wikipedia.org/wiki/Recursion_(computer_science) Recursive Algorithms/Programs] are important tools to understand. These are programs that call themselves. They must first have a base case, and the self-call must be for a subset of the original problem. If you have only learned about recursion in mathematics, you may not realize how recursion works on trees in computer science - it's essential to understand how a tree can be traversed for the Week 1 homework.  There are some good videos here on recursion - http://web.stanford.edu/class/cs106b/lecture-videos.shtml. 
+
+Recursive programs can be compact and elegant, but they can easily consume a lot of process stack space, so they must be used with care.
+
+### Logarithms
+The analysis of recursive algorithms often leads to logarithmic results. Why do they appear so often?
+
+Most mathematical operations have an inverse, that is two operations that reverse each other. The inverse of addition is subtraction. The inverse of multiplication is division.
+
+The inverse of an exponent operation is the <a href="http://en.wikipedia.org/wiki/Logarithm">logarithm</a>. Let's first review exponents. This is a fixed base number raised to a certain power. For example $$10^x$$ is an exponent expression, which is basically 10 multiplied by itself x times. $$10^1 = 10$$. $$10^2 = 10 * 10 = 100$$. $$10^3 = 10 * 10 * 10 = 1000$$. 
+
+The logarithm works reverses this. If you have $$10^x = 10,000$$, and you want to know what x is, you use logarithms. In this case log(10,000) = 4. That is you have to multiple 10 by itself 4 times to get 10,000.
+
+But were did the 10 go in log(10,000)? Traditionally log(x) represents base 10; however, the properties of logarithms work for any base. If you wish to specify a base, it's represented as a subscript to the lower right of "log". There are several other common log bases, ln() is the logarithm for base e. This is used in physics and life sciences, but it doesn't appear much in computer science. log() and ln() appear on most scientific calculators.
+
+However <a href="http://en.wikipedia.org/wiki/Binary_logarithm">log base 2</a> occurs very frequently in computer science. It is sometimes represented as lg(n), ld(n), or even sometimes as log(n), which can get confusing with the base 10 version. lg(n) occurs frequently in computer science because it's the number of steps needed to split a group of elements into two equal groups repeatedly until you're down to one. Think of the kid's game Hi/Lo. One person thinks of a number from 1 to 100. The player guesses and is told if his guess is too high or too low from the secret number. The player narrows his guesses until the secret number is guessed. If the range were 1 to 1000, how many guesses would be required? It's 10, because lg(1,000) is just under 10, so the 10th guess might be needed.
+
+But calculators don't have lg(x) on them. How do we calculate lg(x)? There's a logarithmic formula for this: lg(x) = log(x)/log(2). That is log(x) of any base is log(x)/log(base), or even ln(x)/ln(base) too.
+
+Logarithms are part of common language, at least in America. We often refer to salaries by the number of "figures" in total annual pay. For example, a person making a 5 figure salary is making between $10,000 and $99,999 per year. A person making a 6 figure salary is making between $100,000 and $999,000 per year, etc. Using the term "x figure salary" is logarithmic (base 10), and usually well understood, even by people who claim they know nothing about logarithms!
+
+To learn more about logarithms, please see: [https://www.khanacademy.org/math/algebra/logarithms-tutorial Khan Academy Logarithm Tutorial]
+
+Here are a few logarithm identities to keep in mind:
+* $$log(ab) = log(a) + log(b)$$
+* $$log(a^b) = b\ log(a)$$
+* $$log(\frac{1}{a}) = -log(a)$$
+
+
+### Mathematical Induction
+<a href="http://en.wikipedia.org/wiki/Mathematical_induction">Mathematical Induction</a> is a critical tool required for algorithm design and analysis. It's a proof technique that works will with recursive programs and structures. Therefore, induction, especially strong or [http://en.wikipedia.org/wiki/Structural_induction structural induction].
+
+## Strassen’s Algorithm
+<a href="http://en.wikipedia.org/wiki/Strassen_algorithm">Strassen's Algorithm</a> multiplies matrices in fewer than $$O(n^3)$$ time, which is just a mind blowing result.
+
+## <a href="http://en.wikipedia.org/wiki/Closest_pair_of_points_problem">Closest Pair</a>
+
+## Categories

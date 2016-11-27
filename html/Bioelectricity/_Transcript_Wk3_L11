@@ -1,0 +1,53 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity: Transcript Wk3 L11</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Week_3_Lecture_11:_Channel_Probabilities">Week 3 Lecture 11: Channel Probabilities</span></h1>
+<p><strong>Bioelectricity Week3_11 (slide 60)</strong><br />
+<ul><li> Hello, again. This is Roger Coke Barr once again for the Bioelectricity course. We're in Week three and this is segment eleven. I thought, once again, it would be useful to have a short problem session so as to talk about the idea of channel probabilities.  </p>
+</li></ul>
+
+<p><strong>Problem session – Number open --Q (slide 61)</strong><br />
+<ul><li> Let's suppose we consider this question. There are thousand channels in our patch. Our initial measurement shows 100 are open, 900 are closed. So, most of them are closed. 100 are open, 900 are closed. The transmembrane voltage changes to a new value. That means, there are new values of alpha and new values for beta. The new values for alpha and beta, alpha is 0.8 per millisecond, beta 0.2 per millisecond.<br />
+</li><li> You notice that alpha and beta are right constants so they are per some unit of ten. So, now the question is, how many channels are expected to be open one millisecond after the initial measurement? And how many channels are expected to be open ten milliseconds after the initial measurement? Part big. Let's do each part in turn.  </p>
+</li></ul>
+
+<p><strong>Problem session – Number open --A (slide 62)</strong><br />
+<ul><li> How many channels are expected to be open one millisecond after the initial measurement?<br />
+</li><li> Well, you recall we had this equation that said that dN0/dt was equal to alpha times the number closed minus beta times the number open. I think we have all of the quantities that we need here that are given in the problem.<br />
+</li><li> So, alpha, we know that's 0.8. Beta, we know that's 0.2. 0.8, 0.2. The number closed at the beginning of the segment was 900. The number open at the beginning of the voltage transition, so right at the end of the voltage transition, the beginning of the time with the new voltage is 100.<br />
+</li><li> So, if we put all those numbers in there, we can compute all the quantities on the right, and if we then, if we then rewrite our equation and say, well, look then, delta N zero will be equal to delta t times what we had before, alpha times the number of closed minus beta times the number open. We know this part and we'll find the change in the number of channels that are open.<br />
+</li><li> So, the number that are open at the end of one millisecond will be 100 because we started with 100 plus delta N zero as computed by the calculation we have just completed. So, if you would work that out please and find out what the actual number is at the end of one millisecond.   </p>
+</li></ul>
+
+<p><strong>Problem session – Number open –B1 (slide 63)</strong><br />
+<ul><li> Now, let's go on and do the question for ten milliseconds. Now, we can't just do this like we did part A because there is too much of an extrapolation. So, I'd say there's just too much, too long, ten milliseconds. Too long to do in one step. I mean, for that matter, one millisecond might have been too long to do it in one step.<br />
+</li><li> We did it that way, but if we had done it in say, ten short steps, each 100 microseconds, our answer might have been a little bit different and it would have been better. Ten milliseconds is definitely too long, so we have to do it some other way.<br />
+</li><li> Well, there are a couple of alternatives. One alternative is to write a computer program and to do it as a whole bunch of short steps. But a better alternative, a better alternative is to look at our equation, dN0 / dt equals whatever it is, and then to solve that equation.<br />
+</li><li> And when we solve the equation, we'll get N0 as a function of time equal to whatever it is over here on the right hand side. Maybe you can solve it. And if you do, then, you'll be able to look at the result and to find the result after one millisecond for part A, and after ten milliseconds for part B.  </p>
+</li></ul>
+
+<p><strong>Problem session – Number open –B2 (slide 64)</strong><br />
+<ul><li> So now, let me make a comment about this part. When you solve the equation, solve dN0/dt, for N0 as a function of t, it should be that N0 after ten milliseconds is getting close, it's approaching alpha over alpha plus beta.<br />
+</li><li> Now, I say that because I've done this problem before. Why don't you do it and see if that's the case. See if, if N0 after ten milliseconds is pretty close to alpha over alpha plus beta. In fact, is it close enough that alpha over alpha plus beta can be used as a good estimate of the answer? Or is it still some distance away?<br />
+</li><li> Please check that out, and get those details straight. So, thank you for watching this problem segment. And we'll go on soon to the week in review.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 17/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:_Transcript_Wk3_L11&amp;oldid=8407">https://share.coursera.org/wiki/index.php?title=Bioelectricity:_Transcript_Wk3_L11&amp;oldid=8407</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,61 @@
+# Lecture 2-5 Ionic Equilibrium  
+**Bioelectricity week 2.5 (slide 14)**  
+So now we come, in segment 5 of week 2, to the most complex topic that we'll discuss in the present week. How does the membrane make use of these ionic differences that have been established by the sodium-potassium pumps in order to create a membrane voltage?  
+  
+---  
+**Nernst for Potassium, K+ permeable (slide 15)**  
+* It does so in the following series of steps.  
+* First, it adjusts itself so that it is permeable to potassium only; in other words, not sodium. Now of course, it can't do that perfectly, But what we mean by that is it adjusts itself so that the permeability of potassium is much greater than the permeability of sodium or, in other words, ions of potassium can pass through the membrane relatively easily as compared to ions of sodium. It's what it does first.  
+* It's not an easy trick to do, because what we're asking the membrane to do--here is the membrane, and here's a potassium channel...right here...that's the channel, here comes a potassium! Here comes a potassium, and we're asking the membrance to let that potassium go right on through. The potassium is coming fast. Fast, fast, fast! It's not just drifting over there; think in terms of a car traveling very fast. It's coming at high speed; the membrane recognizes it, and lets it though the channel.  
+* On the other hand, what we're asking the membrane to do is if we have a sodium ion coming up to that same channel well, we wanted to X out the sodium and bounce it back so that the sodium ion does not get through.  
+* It's not an easy trick to do, because these are both small ions, both a positive charge--just has to recognize it and act quickly. But it is able to do it, so it's a great accomplishment.  
+* So the membrane begins by being permeable to potassium by a much higher degree than it is to sodium.  
+  
+---  
+**Nernst for Potassium, Diffusion (slide 16)**   
+* Then, the memrbane lets potassium ions leak back out through these channels where it is permeable to potassium only.   
+  
+---  
+**Nernst for Potassium, E field (slide 17)**  
+* So, in a conceptual or pictorial sense, you'd say, "What's happening here is that the membrane is letting potassium leak, from the inside to the outside. And when it lets it leak from the inside to the outside, it carries a positive charge with it."   
+* So, the result of the potassium ion moving out is that there is excess positive outside, excess negative inside. 
+* The corollary is that an electric field is established, pointing inward, from higher potential to lower potential. So I've drawn an arrow here representing the direction of the electric field. Every time a potassium ion goes out, the electric field gets stronger.  
+* If one describes this with a mathematical equation, one has the equation that is given here. The movement of potassium outward because of the diffusion gradient is the term here on the left. The electric field, on the other hand, is pushing potassium back in. That's the term over here on the right. This is inward. Here. This is outward. There.  
+* Both processes are occurring at the same time, to the degree that they are not in balance--there is a flux of potassium ions, indicated by the Jp symbol that is moving across the membrane.  
+  
+---  
+**Nernst for Potassium, Equilibrium (slide 18)**  
+* So now let's look at this slide and take this process as a whole. The membrane begins by being permeable to potassium only. There's way more potassium inside then there is outside. So diffusion pushes potassium ions out because the membrane will allow potassium to move. The electric field pushes potassium back in.  
+* At some point, enough potassium has moved out that the electric field very strongly is pushing back in. So an equilibrium results when the flow from diffusion equals the flow because of the electric field. The result is equilibrium, and in a one-ion system, a system in which only one ion can move across the membrane, this equilibrium is called the Nernst Vm.  
+* So, the Nernst transmembrane voltage for potassium occurs when the two forces, diffusion and the electric field, are in balance.  
+* What is the voltage at which that equilibrium will occur for potassium? So, if we had more weeks in our course, I would derive this result mathematically. Since our time is limited, I will just show the result.  
+* There will be an equilibrium when the transmembrance voltage Vm is equal to RT/F (you remember that from last week) times the logarithm of the concentrations; the extracellular concentration over the intracellular concentration.  
+* In the particular case of squid, that means that the logarithm 20/397 and you recall that RT/F from last week is about 26 millivolts.  
+  
+---  
+**Nernst for Potassium, Vm at equilibrium (slide 19)**  
+* So, adjusting our slide just slightly, the membrane is permeable to potassium only, diffusion pushes potassium out, the electric field pushed potassium in, and there is a  dynamic equilibrium near the Nernst Vm, the Vm for K+ at equilibrium is about -77mv for squid. And this value of Vm is normally given a special symbol, Ek.  
+* If you write it out step by step like that, then it's just one step following another. You think  of the process as a whole and you say, This is just amazing! This membrane takes advantage of the fact that there is a potassium concentation difference. It's letting potassium ions move outside the membrane! That's creating an electric field.  
+* Diffusion, the force of diffusion, the process of diffusion is being used to create an electric field. It all comes to equilibrium, and in the case of squid axon that's at -77mV That means the inside is negative by 77 mV with respect to the outside.  
+* Now the fact that it has a special symbol is to be expected. What's extraordinary is that it happens at all. The thing is just sitting there, there's no electricity, and it charges itself up. Amazing.    
+  
+---  
+**Nernst for Sodium Ions Na+ (slide 20)**  
+* If we talk about sodium, it's all the same things, but the sodium concentration starts outside instead of inside, but same thing, same equation.  
+* The result is different because the concentration inside and outside is at a different ratio. But the result now is that the equilibrium value is positive (+57mv). Wow.  
+* Potassium equilibrium was negative, and the sodium equilibrium is positive. Quite a voltage shift!  
+* Of course, the membrane to accomplish this, has to become permeable to sodium, no longer permeable to potassium, so that the system is now a sodium-ion system instead of a potassium-ion system.  
+* Just as before, the system depends on the concentration gradient being established first so that it can be exploited to create the voltage difference.  
+  
+---  
+**Nernst for Chlorine Ions Cl- (slide 21)**  
+* We have not discussed chlorine ions, but there's a similar process for chlorine.  
+  
+---  
+**Multi-ion expression (Goldman’s equation) (slide 22)**  
+*One might ask, can you do the mathematics so that all the different ions appear in the same system? And in fact you can, and that's this multi-ionic expression, sometimes called Goldman's expression. And it appears on the slide.  
+* The thing that you notice is that the ratios, the expression is written in terms of these permeabilities, and if you work with the equation somewhat, you'll find that what's important is the permeability ratios more than the permeabilities.  
+* You can do that, for example, by taking the expression as it's given and dividing each term by, say, Pk. And if you do divide each term by Pk, you'll get a result that will be in terms of the ratios.  
+* Once again, the mystery factor, RT/F There it is. Once again the mystery factor RT/F shows up as our coefficient or, if you will, our scaling factor. So it's essentially Vm is 26 mV times the ratio of these concentrations each multiplied by their permeability.  
+  
+Thank you for your attention, and we'll go on to the next segment.

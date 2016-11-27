@@ -1,0 +1,41 @@
+Please share any great resources around the design of experiments (DOE) that you find. Preferably in the form of annotated links - the link itself, and a short description of what the link points to. Remember not to infringe copyright as you're sharing resources :-)
+
+[[EFI:Main | > Return to wiki home]]
+
+## Resources
+
+[create sub-headings as appropriate here; also - if you review a resource, please consider writing a short annotation (two sentences or so) about it, so that your classmates can more easily use the wiki resources by knowing what's behind the link!]
+
+### DOE (Design of Experiments)
+
+Thanks for the links, [Samy](https://class.coursera.org/experiments-001/forum/thread?thread_id=197)
+* [Engineering Statistics Handbook](http://www.itl.nist.gov/div898/handbook/)
+[add annotation] 
+* [MoreSteam.com's Design of Experiments toolbox](https://www.moresteam.com/toolbox/design-of-experiments.cfm) 
+[add annotation]
+
+### R
+
+Thanks to [Jose & Markus](https://class.coursera.org/experiments-001/forum/thread?thread_id=3) for sharing...
+
+* [CRAN (R's) Task View on Design of Experiments](http://cran.r-project.org/web/views/ExperimentalDesign.html)
+[add annotation]
+* [FrF2 package](http://cran.r-project.org/web/packages/FrF2/FrF2.pdf)
+[add annotation]
+* [R Quality Tools (package website)](http://www.r-qualitytools.org/xhtml/qualityTools.xhtml)
+[add annotation]
+* [Six Sigma with R (book/package companion website)](http://www.sixsigmawithr.com/) 
+[add annotation]
+
+### Scientific Python Installation
+
+Installing Python packages for scientific purposes can be a tedious task, The following links provide installers to most of the scientific packages
+
+- Anaconda Installer - https://store.continuum.io/cshop/anaconda/ [Free]
+- Enthought Canopy   -https://www.enthought.com/  [Not Free, but free academic edition , with access to learning resources]
+- Python xy          -https://code.google.com/p/pythonxy/ [Free, only Windows/]
+
+## Social networks
+
+* [LinkedIn group: "The Design of Experiment (DOE) Group"](https://www.linkedin.com/groups?home=&gid=2235170)
+The discussions that show up there are really insightful (You will need a LinkedIn account, and apply to join this group)

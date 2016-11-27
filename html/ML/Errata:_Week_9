@@ -1,0 +1,44 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Errata: Week 9</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="XV._Anomaly_Detection">XV. Anomaly Detection</span></h1>
+<p>At the risk of being pedantic, it should be noted that $$p(x)$$ is not a probability but rather the normalized probability density as parameterized by the feature vector, $$x$$; therefore, $$\epsilon$$ is a threshold condition on the probability density.  Determination of the actual probability would require integration of this density over the appropriate extent of phase space.</p>
+<p>In the <strong>Developing and Evaluating an Anomaly Detection System</strong> video an alternative way for some people to split the data is to use the same data for the cv and test sets, therefore the number of anomalous engines (y = 1) in each set would be <em>20</em> rather than 10 as it states on the slide. </p>
+<p>In the question at 9:58 in the video, the answers all show sigma in the denominator instead of sigma squared.</p>
+<h1> <span class="mw-headline" id="XVI._Recommender_Systems">XVI. Recommender Systems</span></h1>
+<p>In review questions, question 5 in option starting "Recall that the cost function for the content-based recommendation system is" the right side of the formula should be divided by m where m is number of movies. That would mean that the formula will no longer be standard cost function for the content-based recommendation system. However without this change correct answer is marked as incorrect and vice-versa.
+This description is not very clear but being more specific would mean breaking the honour code.</p>
+<hr />
+<p>In the Problem Formulation video the review question states that the no. of movies is $$n&#95;m$$=1. The correct value for $$n&#95;m$$=2.</p>
+<hr />
+<p>In "Collaborative Filtering" video, review question 2: "Which of the following is a correct gradient descent update rule for $$i \ne 0$$?"; Instead of $$i \ne 0$$ it should be $$k \ne 0$$.</p>
+<hr />
+<p>In lesson 5 "Vectorization: Low Rank Matrix Factorization" and in lesson 6 "Implementation detail: Mean normalization" the matrix Y contains a mistake. The element $$Y^{(5,4)}$$ (Dave's opinion on "Sword vs Karate") should be a question mark but is incorrectly given as 0.</p>
+<p>In lesson 6 this mistake is propagated to the calculation of $$\mu$$. When $$\mu$$ is calculated the 5th movie is given an average rating of 1.25 because (0+0+5+0)/4=1.25, but it should be (0+0+5)/3=1.67. This the affects the new values in the matrix Y.</p>
+<p>In ex8_cofi.m at line 199, where theta is trained using fmincg() for the movie ratings, the use of "Y" in the function call should be "Ynorm".
+Y is normalized in line 181, creating Ynorm, but then it is never used. The video lecture "Implementation Detail: Mean Normalization" at 5:34 makes it pretty clear that the normalized Y matrix should be used for calculating theta. </p>
+<p>In ex8.pdf section 2, "collaborative fitlering" should be "collaborative fi<b>lt</b>ering"</p>
+<p>In ex8.pdf section 2.2.1, “it will later by called” should be “it will later b<b>e</b> called”</p>
+<p>In checkCostFunction.m it prints "If your backpropagation implementation is correct...", but in this exercise there is no backpropagation.</p>
+<p>In the quiz, question 4 has an invalid phrase: "Even if <strong>you</strong> each user has rated only a small fraction of all of your products (so r(i,j)=0 for the vast majority of (i,j) pairs), you can still build a recommender system by using collaborative filtering." The word "you" seems misplaced, "your" or none.</p>
+<p>In the quiz, question 4, one of answer options has a typo "For collaborative filtering, it is possible to use one of the advanced optimization algo<strong>ir</strong>thms"</p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_9&amp;oldid=34315">https://share.coursera.org/wiki/index.php?title=ML:Errata:_Week_9&amp;oldid=34315</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Errata" title="Category:ML:Errata">ML:Errata</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

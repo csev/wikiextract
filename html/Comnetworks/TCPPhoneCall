@@ -1,0 +1,28 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Comnetworks:TCPPhoneCall</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Using TCP is very similar to making a phone call. One person dials a friends number. The other side rings, picks up the phone. You chat, and either side can hang up ending the conversation. Telephone protocols are extremely similar to TCP protocols.</p>
+<p>However, there are more similarities. As far as the two people on the phone are concerned, they are talking to each other directly. As the old AT&amp;T advertising says, "It's the next best thing to being there."</p>
+<p>But are they as close as a kid's telephone toy consisting of two cups and a string? Absolutely not! Telephone networks are massive complex structures. Before the days of VoIP, a dedicated connection was nailed up through each switch from one phone to another. A call across a continent could include up to half a dozen switches or more. Now with VoIP, voice/sound waves are converted to digital information, broken into packets and sent across the internet like any other internet data.</p>
+<p>The people in the conversation have a virtual connection reinforced through their voices, but in reality, their conversation has been converted into electrical signals or data bits streaming through equipment that's out of sight and out of mind.</p>
+<p>TCP and supporting layers are much the same way. Two hosts have a digital virtual conversation at the TCP level, but the data actually progresses through layers of Networks, Links and Physical connections beneath them.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Comnetworks:TCPPhoneCall&amp;oldid=24040">https://share.coursera.org/wiki/index.php?title=Comnetworks:TCPPhoneCall&amp;oldid=24040</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Computer_Networks" title="Category:Computer Networks">Computer Networks</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

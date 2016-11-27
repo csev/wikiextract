@@ -1,0 +1,41 @@
+# Week 3 Lecture 4: The Passive Simulation  
+  
+**Observe passive & active simulations. Observe channels (slide 16)**  
+* Well, hello again. This is Roger Coke Barr, the instructor for bioelectricity. We are in the third week, week three, and this is lecture four of the third week. The subject of this lecture is the passive simulation.  
+* Now keep in mind what we are doing here is we are building our engine, figuring out why things happen in bioelectricity. But the passive simulation is a reference point.  
+* First we have to see what happens if the tissue is not alive, then we'll come back in the next segment and see now in comparison, what happens if it is alive.  
+* We need this baseline so that we have something to compare against.  
+  
+**Simulation of Passive Patch (slide 17)**  
+* I'm gonna show you a series of slides that look like this one, and so I want to go through this slowly so that you see that these slides are rich in detail, and you can look at these whenever you want to, and know immediately what they are. Also, I thought I'd explain it this time through and then in subsequent times that we look at figures that are similar, I'd just assume you would know what the layout would be.  
+* So first of all, up at the top there's a sketch. Importance of the sketch is to show if you have a fiber where the different electrodes are. 
+* But here we see that there's the keyword clamp on. And where it says clamp on, that means that the spatial change has been eliminated. That is, where clamp on appears. Where this word clamp on appears in this sketch, that says everything, all the different spatial variation that might exist has been eliminated.  
+  
+**Stimulus (slide 18)**  
+* Now let's look at the stimulus. The word stimulus. And over here to the right is the graph of the stimulus.  
+* This is a graph of the membrane current as a function of time. Time is in microseconds, and this particular stimulus, the duration of the stimulus right here. At duration 400 milliseconds, 400 sorry microseconds. Only one, less than one half of one millisecond.  
+* There's a vertical bar that's drawn here. See this vertical bar. And that's drawn at time zero. Time zero is displaced a little bit off the axis so that you have a chance to see that before time zero, there is stimulus is zero.  
+* Then of course, after the stimulus is over, all along here, the value of the stimulus is zero. When it says on this graph, I equals 0.1. Right there. That means that on the red curve, which in this program is thought of as the curve labeled I, the, the red curve is displaced upward by one tenth of the full scale of the graph. That's just done so that you can see that the base line of the graph, right here, is flat and in fact is equal to zero.  
+* It's a way of actually looking at the zero of the plotted information. This scale I equals 0.1. If you used an oscilloscope, this is similar to the knob that moves the trace up and down on the front of the oscilloscope.  
+  
+**Response during stimulus (slide 19)**  
+* Now of course, what's most interesting to us in these simulations is the response. So let's look at the response of the passive tissue. Here we have it. So this graph.  
+* So voltage in millivolts, and we see that what happens is that during the stimulus. Voltage rises. So during this time, during this stimulus, voltage rises. It rises more or less in a straight line as time goes by. 
+* If the stimulus continued on and on and on, which it does not, but if it did, this curve would go up and curve over like that. But as we're looking at just the first part of the curve, the response is more or less aligned.  
+  
+**Response after stimulus (slide 20)**  
+* Now let's think about the response after the stimulus is over. You would say after the stimulus is over and stimulus current. As so we see right here, it's equal to zero.  
+* On the other hand, the voltage up here. It's not zero. Why doesn't that voltage go back to zero right away? After all the stimulus is all over, so why doesn't the response go back to zero right away? Well, you could say, I think I have the explanation.  
+* What's happening is that within the membrane, we have a resistive path and a capacitive path. During the stimulus, while the stimulus was underway, we were putting charges on this capacitor. And as we did so the voltage was rising. Of course, some charges were flowing through the resistor, but a lot of charges were going to the capacitor.  
+* Now, once the stimulus is over, these charges that have been accumulated flow back around through the resistor, and out. Or in this case over to the minuses. Pluses go the minuses, or the minuses to the pluses, all depending on what kinds of ions are present. So that the membrane capacitance is discharging through the membrane resistance, and that capacitive discharge is what we are seeing during this whole entire decline that's taking place after the stimulus has finished.  
+* It's a process that declines exponentially as you'd expect. So the short stimulus pulse has, relatively speaking, a long response. Now on the other hand, the peak of the stimulus was here. To its highest level. And that was at about 400 microseconds. It's declined quite substantially by 2,500 microseconds to milliseconds, so there is a delayed response, but I mean, it's going away. It'll, it'll just a little bit longer and it'll be pretty much invisible, whatever is left of it.  
+  
+**Results Summary (slide 21)**   
+* So now let's just talk that through very quickly once again.  
+* There's a stimulus for 400 microseconds. As a result, the voltage goes up.  
+* When the stimulus goes back to zero. Voltage declines.  
+* The decline in voltage is associated with the membrane capacitance now discharging through the membrane resistance.  
+* I say that same thing in words. The stimulus causes an abrupt rise in transmembrane voltage. Vm continues after the stimulus pulse ends. Stimulus Vm returns relatively slowly to the baseline and what's happening is that the energy that was stored on the capacitor is being dissipated in the resistance.  
+* We talk about this in words, just to sum up more loosely, you say you put a pulse in. That changes Vm, pretty abruptly at the start of the stimulus. But then Vm decays until all of the charge on the capacitor has flown, has moved back through the, the resistance, and the resistance has used up the pulse's energy.  
+* If you think about the relatively weight, relative wave shape, you'd say Vm is a distorted version of the current pulse. It goes up more slowly and it decays over a longer time. And when you look at all this all together, you'd say, yes people have known this for a long, long time having to do with the subject of RC circuits, and it really is not very surprising that you see it in tissue. Oh I agree. It's not very surprising, but it's nice to have it as a reference point.   
+* So here's a beautiful North Carolina meadow. As you think about what happens passively you can look out into this meadow which is actually a very active place, although it looks rather calm at the moment. Thank you for watching. We'll see you again in the next segment.

@@ -1,0 +1,45 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:SamIam Tips and Tricks</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Currently SamIam expects a dot (.) as decimal separator even if your local settings causing it to display a comma (,) as separator. This means especially you have to change commas to dots every time you edit <a href="/wiki/index.php?title=CPD&amp;action=edit&amp;redlink=1" class="new" title="CPD (page does not exist)">CPD</a>.</p>
+<p>For me, on Macintosh OS X 10.7.3, modifying the probabilities required triple-clicking the fields, rather than the usual single- or double-click.</p>
+<p><b>EDIT</b></p>
+<p>I found a work-around to this problem. You can override java regional setting in the script that starts samiam adding "-Duser.language=en -Duser.region=US" to the java command line.
+For me, on Windows, I edited samiam.bat to change the row that sets java options from</p>
+<p><code>set VMARGS=-Xruncalljvmti -Xms8m -Xmx512m -classpath samiam.jar;inflib.jar edu.ucla.belief.ui.UI</code></p>
+<p>to:</p>
+<p><code>set VMARGS=-Xruncalljvmti -Xms8m -Xmx512m -Duser.language=en -Duser.region=US -classpath samiam.jar;inflib.jar edu.ucla.belief.ui.UI</code></p>
+<p><br />
+<br />
+<b>Problem: Unable to open .net file, probably on a Linux machine</b></p>
+<p><b>Description:</b> </p>
+<p>If, when trying to open a .net file, you get the error:</p>
+<p><code>&lt;file&gt;.net not supported by SamIam. null. (See stderr for description.)</code></p>
+<p><b>Solution:</b></p>
+<p>1) Within SamIam, either press &lt;F9&gt; or select the "Preferences" tab and choose the "Preferences" menu option.</p>
+<p>2) Within SamIam Preferences window, choose the "Global" tab.</p>
+<p>3) You will likely see that the "User Interface Look and Feel" option is set to "GTK+".<br />
+      If so, you've found the problem!</p>
+<code><pre>  To Fix: Using the option's pull down menu, select another option, such as &quot;Metal&quot;, &quot;Nimbus&quot;, or &quot;CDE/Motif&quot;.
+</pre></code>
+<p>4) You should now be able to open your &lt;file&gt;.net</p>
+<p>Note that some features of SamIam might work better with one "Look and Feel" option than another, so if something isn't displaying nicely, you may want to experiment with the choices.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 5/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:SamIam_Tips_and_Tricks&amp;oldid=3851">https://share.coursera.org/wiki/index.php?title=PGM:SamIam_Tips_and_Tricks&amp;oldid=3851</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

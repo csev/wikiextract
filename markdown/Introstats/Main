@@ -1,0 +1,346 @@
+[[Category:Coursera]]
+### Other resources
+
+There is no formal textbook or required reading for this course.  But if you'd like to investigate some resources that cover the material at a similar level, here are some recommendations from Alison and Jeff:
+
+##### Traditional textbooks
+
+There are many excellent textbooks that cover the material in the course.  Here are three of our favourites:
+
+1. Introduction to the Practice of Statistics by David S. Moore and George P. McCabe.  The book is currently in its fifth edition, but all editions are great.
+
+2. Stats: Data and Models, Canadian edition by Richard D. De Veaux, Paul F. Velleman, David E. Bock, Augustin M. Vukov, and Augustine C.M. Wong.  The original version of the book by the first three authors is also recommended.
+
+3. Statistics by David Freedman, Robert Pisani and Roger Purves.
+
+##### Online textbooks
+
+There are also many resources online.  For an online textbook try one of the following:
+
+1. [OpenIntro Statistics](http://www.openintro.org/stat/index.php) (paperback copies also available)
+
+2. [OnlineStatBook](http://onlinestatbook.com/2/index.html)
+
+3. [Hyperstat](http://davidmlane.com/hyperstat/index.html)
+
+4. [StatPrimer](http://www.sjsu.edu/faculty/gerstman/StatPrimer/)
+
+##### Posts from staff
+
+The following link redirect you to the staff's posts:
+
+Jeffrey Rosenthal: 
+https://class.coursera.org/introstats-001/forum/profile?user_id=2068199
+
+Alison Gibbs: 
+https://class.coursera.org/introstats-001/forum/profile?user_id=1084582
+
+Edwin Lei: 
+https://class.coursera.org/introstats-001/forum/profile?user_id=1679722
+
+
+### Additional Resources for Week 1 
+(Posted by Alison Gibbs)
+
+* Lecture 1.3 is about measures of centre of the data.  Try playing with [this applet](http://onlinestatbook.com/stat_sim/descriptive/Contents.html) (by the Rice Virtual Lab in Statistics) to see how the relative values of the mean and median change when you manipulate the data values.
+
+* Lecture 1.5 is about the shape of a distribution of data and includes information about histograms.  You can experiment with [this applet](http://www.rossmanchance.com/applets/HClasses/Histogram.html) (by Allan Rossman and Beth Chance) to see how the shape of a histogram can vary with the choice of bin width.  The choice of bin width needs to be carefully considered on a dataset by dataset basis.
+
+
+### Summary Notes on First Week Videos: 
+
+The following is a summary of the most important points in first week videos. Please feel free to correct or add any important information.
+
+=============================================================================================
+
+####Five numbers summary:
+
+   * Minimum: the lowest point
+
+   * First quartile: the ¼ point in data.
+
+   * Median: the average point or the center of data. Median is robust or resistant to outliers.
+
+   * Third quartile: the ¾ point in data.
+
+   * Maximum: the largest point.
+
+####Box plot: 
+shows all the five numbers summary.
+
+   * Whiskers: the lowest value in both sides (left and right) of box plots
+
+####Modified box plot: 
+is used to explain unusual data.
+
+   * Inter-quartile range or IQR: the difference between the third quartile and first quartile
+
+   * Inner fences: is 1.5 times the IQR beyond the first and third quartile.
+
+   * Lower inner fence = 1st quartile - (1.5 x IQR)
+
+   * Upper inner fence = 3rd quartile + (1.5 x IQR)
+
+   * Mean= the sum of data values / number of data values
+
+#### The trimmed mean:
+to remove the influence of bigger or lowest unusual values in data by excluding a percentage of values from the largest and lowest sides of the sample and calculating the mean of the remaining. For example, a 10% trimmed mean is calculated by ignoring 10% of the data points on the highest side and 10% of the data points on the lowest side. An 8% trimmed mean is calculated by ignoring 8% of the data points on the highest side and 8% of the data points on the lowest side. What percentage to ignore is arbitrary, and is meant to exclude outliers so that their impact is removed.
+
+
+Measures of the spread of data by:
+
+  * Range: max value – min value (not robust)
+
+  * IRQ range: third quartile – 1st quartile (robust)
+
+  * Variance: “is defined as the sum of the squared distances of each term in the distribution from the mean (μ), divided by the number of terms in the distribution (N).” (http://www.sciencebuddies.org/science-fair-projects/search.shtml?t=&q=standard+deviation+&cof=FORID%3A9&cx=006938645102073751460%3A5g77bgclmby)
+
+
+  * Standard deviation SD: A measure of the dispersion of a set of data from its mean. (not robust).
+
+
+####Histogram: 
+is useful to show distribution of data.
+
+  * Bins: the intervals used in a histogram. The data must be separated into mutually exclusive and exhaustive bins.
+
+  * Cutpoints: the values that define the beginning and the end of the bins.
+
+  * Frequency: the count of the number of the data values in each bin.
+
+  * Peaks or modes: the largest bins.
+
+  * Unimodal: one peak; bimodal: 2 peaks; multimodal: multiple peaks.
+
+  * Uniform distribution: all data values occur about an equal number of times. It’s an example of a distribution without mode.
+
+  * Symmetric histogram: without mode.
+
+  * Left-skewed histogram: the longer tail on the left side.
+
+  * Right-skewed histogram: the longer tail on the right side.
+
+     https://share.coursera.org/wiki/images/7/76/Skewed_histogram.GIF
+
+(Source: http://killianhma0910.wikispaces.com/7.+Histograms)
+
+Outliers or gaps: data values that are much larger or smaller than the rest of the data.
+
+####The relative location of the mode, median, and mean in a unimodal distribution:
+
+  1. Symmetric distribution: the mean, median, and mode are all approximately the same.
+
+  2. Left-skewed distribution: the mode is larger than the median which is larger than the mean.
+
+  3. Right-skewed distribution: the mode is less than the median which is less the mean.
+
+Symmetric, unimodal is a bell-shaped distribution.
+
+####The empirical rule: 
+In statistics, the 68-95-99.7 rule — or three-sigma rule, or empirical rule — states that for a normal distribution, nearly all values lie within 3 standard deviations of the mean.
+
+About 68.27% of the values lie within 1 standard deviation of the mean. Similarly, about 95.45% of the values lie within 2 standard deviations of the mean. Nearly all (99.73%) of the values lie within 3 standard deviations of the mean. (Source: http://en.wikipedia.org/wiki/68-95-99.7_rule)
+
+Categorical variables: non-numerical data.
+
+Observational unit: the person or thing on which measurements are taken. Also called case, subject (when a person), experimental unit.
+
+Variables: a measured characteristic of an observation unit.
+
+####Types of variables:
+
+    1. Quantitative: a variable is quantitative if it takes on numerical values for which arithmetic operation make sense.
+
+    2. Categorical: categorical variable records into which of several categories an observations falls.
+
+    3. Ordinal: ordinal variables have a natural order. Ex: responses to likert scale
+
+Observed value or observation: the actual value of a variable for one of the observational nits in a database.
+
+### Additional Resources for Week 2 
+(Posted by Alison)
+
+* Lecture 2.3 is about summarising the relationship between two quantitative variables, including the (Pearson) correlation.  [This applet](http://statweb.calpoly.edu/chance/applets/guesscorrelation/GuessCorrelation.html) (by Allan Rossman and Beth Chance) and [this applet](http://onlinestatbook.com/stat_sim/reg_by_eye/index.html) (by the Rice Virtual Lab in Statistics) allow you to see how accurately you can guess the correlation from a scatterplot of randomly simulated data for two quantitative variables.
+
+### Summary Notes on Second Week Videos:
+
+The following is a summary of the most important points in second week videos.
+Please feel free to correct or add any important information.
+
+=============================================================================================
+
+1. The <b>marginal distribution</b> is the distribution of only <u>one of the variables</u> in a <b>contingency table</b>.
+2. A <b>conditional distribution</b> of a categorical variable is its distribution within a fixed value of a second variable.
+   (the <b>conditional distribution</b> proportions sum = 1)
+3. Two variables in a <b>contingency table</b> are independent if the <b>conditional distribution</b> of one variable is the same for <u>all values</u> of the other variable.
+
+#### Relationships btween two quantative variables
+
+
+
+### Additional Resources for Week 3 
+(Posted by Alison)
+
+* In Lecture 3-5, we demonstrated some of the concepts using online java applets.  The coin tossing simulation can be found [here]( http://www.rossmanchance.com/applets/CoinTossing/CoinToss.html) (with thanks to Allan Rossman and Beth Chance).  The sampling distribution of the mean applet can be found by pressing the "Begin" button on [this page](http://onlinestatbook.com/stat_sim/sampling_dist/index.html) (with thanks to David Lane for this one).  You are encouraged to play around and experiment with the applets yourself.
+
+* If you're not using R, there are online calculators for the Binomial and Normal probability distributions.  For Binomial distribution calculations, we recommend [this applet](http://www.stat.tamu.edu/~west/applets/binomialdemo.html) (with thanks to Webster West).  For Normal distribution calculations, we recommend [this applet](http://www.stat.tamu.edu/~west/applets/normaldemo.html) (thanks again to Webster West) or [this applet](http://www.rossmanchance.com/applets/NormalCalcs/NormalCalculations.html) (thanks again to Allan Rossman and Beth Chance).
+
+### Summary Notes on Third Week Videos:
+
+The following is a summary of the most important points in third week videos.
+Please feel free to correct or add any important information.
+
+=============================================================================================
+
+#### Basic Rules For Probability
+
+S = Sample space (all possible outcomes)<br />
+A = An event - Any Subset of S<br />
+P(A)= Probability of A<br />
+* 0 <= P(A) >= 1
+* P(S) = 1 
+* P(A') = 1-P(A)<br /><br />
+<b>Examples:</b><br />
+<u>We toss a fair coin 2 times:</u><br />
+S = {HH,HT,TH,TT}<br />
+p(HH)=P(HT)=p(TH)=P(TT)=$$ \frac{1}{4}$$=25%<br />
+A = Total of <u>two</u> heads --> P(A)=P(HH)=$$ \frac{1}{4}$$=25%<br />
+A = Total of <u>one</u> head --> P(A)=P(HT)+P(TH)=$$ \frac{1}{4}$$+$$ \frac{1}{4}$$=$$ \frac{1}{2}$$=50%<br /><br />
+<u>We toss a biased coin 2 times:</u><br />
+(assumption: P(Red side)=$$ \frac{1}{3}$$, P(Silver side=$$ \frac{2}{3}$$))<br />
+S = {RR,RS,SR,SS}<br />
+P(RR)=$$ \frac{1}{3}$$x$$ \frac{1}{3}$$=$$ \frac{1}{9}$$     P(RS)=$$ \frac{1}{3}$$x$$ \frac{2}{3}$$=$$ \frac{2}{9}$$     P(SR)=$$ \frac{2}{3}$$x$$ \frac{1}{3}$$=$$ \frac{2}{9}$$     P(SS)=$$ \frac{2}{3}$$x$$ \frac{2}{3}$$=$$ \frac{4}{9}$$<br /><br />
+Random value X: X = Total reds<br />
+P(X=2)=P(RR)=$$ \frac{1}{9}$$<br />
+P(X=0)=P(SS)=$$ \frac{4}{9}$$<br />
+P(X=1)=P(RS)+P(SR)=$$ \frac{2}{9}$$+$$ \frac{2}{9}$$=$$ \frac{4}{9}$$<br /><br />
+#### Distribution Of Random Variables (Discrete)
+<b>Probability Distribution</b><br />
+* Binomial(2,$$ \frac{1}{2}$$): We did 2 experiments (exp. flipped two coins) and the probability for success was $$ \frac{1}{2}$$
+* Binomial(1,$$ \frac{1}{2}$$)= Bernouly($$ \frac{1}{2}$$): We did 1 experiment (exp. flipped one coin) and the probability for success was $$ \frac{1}{2}$$<br /><br />
+<b>Mean / Average / Expected value</b><br />
+<b>$$ \sum\limits_{x} XP(X)$$</b><br />
+$$ E(aX+bY)=aE(X)+bE(Y)$$<br /><br />
+<b>Variance</b><br />
+$$ \sum\limits_{x} (X-M)^2 P(X)$$<br />
+$$ Var(aX)=a^2Var(X) $$<br />
+$$ SD(aX)=|a|SD(X) $$<br /><br />
+$$ Var(aX+b)=a^2Var(X) $$<br />
+$$ Var(X+Y)=Var(X)+Var(Y)$$ - Only if $$X,Y$$ are Independent<br />
+
+### Additional Resources for Week 4 
+(Posted by Alison)
+
+* In Lecture 4-5, we again demonstrate some of the concepts using online java applets.  The applet for simulating confidence intervals for a proportion is [here](http://www.rossmanchance.com/applets/NewConfsim/Confsim.html) (with thanks to Allan Rossman and Beth Chance).  The applet for simulating confidence intervals for a mean can be found on [this page](http://www.utstat.utoronto.ca/alisong/moocapplets/ci_creation_applet) (our thanks to Dale Berger and the WISE team for allowing us to mirror their applet).  You are encouraged to play around and experiment with the applets yourself.
+
+* This week we also introduce a new probability distribution, the t distribution.  In the R tutorial for Lecture 4-4, Cristina demonstrates how to use R to get values for t distributions.  If you're not following the optional R part of the course, you can instead use online calculators to compute these values.  For the t distribution, we recommend [this applet](http://www.stat.tamu.edu/~west/applets/tdemo.html) (with thanks to Webster West).  Alternatively, tables of the t distribution can also be found online and in most introductory statistics textbooks.  
+
+* Also, as recommended in Week 3, you can find a Binomial distribution calculator [here](http://www.stat.tamu.edu/~west/applets/binomialdemo.html) (thanks again to Webster West).  And for Normal distribution calculations, we recommend [this applet](http://www.stat.tamu.edu/~west/applets/normaldemo.html) (thanks once more to Webster West) or [this applet](http://www.rossmanchance.com/applets/NormalCalcs/NormalCalculations.html) (thanks again to Allan Rossman and Beth Chance).
+
+### Additional Resources for Week 5 
+(Posted by Alison)
+
+(Week 5 materials will be posted on Monday April 29 at 12:01 AM EDT)
+
+* Lecture 5-5 uses a java applet to illustrate some of the ideas about statistical power.  If you'd like to try the applet yourself, you can find it <a href="http://www.utstat.utoronto.ca/alisong/moocapplets/power_applet/">here</a> (our thanks to Dale Berger and the WISE team for allowing us to mirror their applet).  You are encouraged to play around and experiment with it yourself.
+
+*  If you're not following the optional R part of the course, you may again want to use online calculators for critical values and probabilities for the normal and t distributions.  Again, for Normal distribution calculations, we recommend [this applet](http://www.stat.tamu.edu/~west/applets/normaldemo.html) (thanks to Webster West) or [this applet](http://www.rossmanchance.com/applets/NormalCalcs/NormalCalculations.html) (thanks again to Allan Rossman and Beth Chance).  For the t distribution, we recommend [this applet](http://www.stat.tamu.edu/~west/applets/tdemo.html) (with thanks once more to Webster West).  Alternatively, tables of the Normal and t distributions can also be found online and in most introductory statistics textbooks.  
+
+### Slides of the course materials
+Here the class/community shares the created slides. 
+Feel free to download, add or modify in terms of choosing another location etc.  
+####Week 1
+1. Introduction (https://www.dropbox.com/s/pgwbqu3zosfzc6q/STA%20-%201-1%20-%20Introduction.pdf)<br>
+2. Five number summary (https://www.dropbox.com/s/x7oog2vesearzqb/STA%20-%201-2%20-%20Fife%20number%20summary.pdf)<br>
+3. The centre of the data and the effects of extreme values (https://www.dropbox.com/s/1ubauvgedlzmoo1/STA%20-%201-3%20-%20The%20centre%20of%20the%20data%20and%20the%20effects%20of%20extreme%20values.pdf)<br>
+4. The spread of the data (https://www.dropbox.com/s/s7fzk2gfd6uarna/STA%20-%201-4%20-%20The%20spread%20of%20the%20data.pdf)<br>
+5. The shape of the data (http://goo.gl/Ls6Uh, or https://www.dropbox.com/s/9fg8et6hegrbb9x/STA%20-%201-5%20-%20The-Shape-of-the-Data.pdf)
+6. Categorical Variables ([Slides](https://docs.google.com/file/d/0B1_15M2f9QfTbjFQWmgzYjJnT0k/edit), https://www.dropbox.com/s/4ubs1pu4wxs4pbg/STA%20-%201-6%20-%20Categorical%20variables.pdf)
+7. Some features of data (https://www.dropbox.com/s/e27v5a1jdnnh4np/STA%20-%201-7%20-%20Some%20features%20of%20data.pdf)
+
+R-Tutorials
+
+1. I'll do it: name
+
+2. I'll do it: name
+
+3. I'll do it: name
+
+
+####Week 2
+Here are the slides for week 2. Please note that they are stored on a free Dropbox account and thus might not be available after some time due to large download volumes. 
+
+I would like to suggest that everyone who likes to have slides (and downloads the below for example) registers for producing one slide deck in a subsequent week (see below). This will eliminate double work and speed up things a lot since not only one person has to produce all work. I am counting on you guys...
+
+1. Relationships Between Quantitative and Categorical Variables (https://www.dropbox.com/s/kkr8kprhq00aal7/STA%20-%202-1%20-%20Relationships%20Between%20Quantitative%20and%20Categorical%20Variables.pdf)
+2. Examining relationships between two categorical variables (https://www.dropbox.com/s/fzhlrwecofcntn8/STA%20-%202-2%20-%20Examining%20relationships%20between%20two%20categorical%20variables.pdf)
+3. Relationships between two quantitative variables (https://www.dropbox.com/s/cytfdc5cy3bketv/STA%20-%202-3%20-%20Relationships%20between%20two%20quantitative%20variables.pdf)
+4. Data Collection - Sampling (https://www.dropbox.com/s/cy0w2azer87vqyj/STA%20-%202-4%20-%20Data%20Collection%20-%20Sampling.pdf)
+5. Data Collection - Observational Studies (https://www.dropbox.com/s/fadyz70e1zov1t3/STA%20-%202-5%20-%20Data%20Collection%20-%20Observational%20Studies.pdf)
+6. STA - 2-6 - Data Collection - Experiments (https://www.dropbox.com/s/ihena29qlde1zgd/STA%20-%202-6%20-%20Data%20Collection%20-%20Experiments.pdf)
+
+R-Tutorials
+
+1. Relationships Between Quantitative and Categorical Variables R Tutorial (https://www.dropbox.com/s/0b5hj3li0oadr98/STA%202.1%20Relationship%20between%20Quantitatve%20and%20Categorical%20Variables%20R-Tutorial.pdf)
+
+2. I'll do it: name
+
+3. I'll do it: name
+
+
+####Week 3 
+
+1. 3.1
+(https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&usp=sharing)
+2. 3.2
+(https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&usp=sharing)
+3. 3.3
+(https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&usp=sharing)
+4. 3.4
+(https://drive.google.com/folderview?id=0Bx_ipdqRVKHvTW56VzJEMl9tY1E&usp=sharing)
+5. 3.5
+(https://docs.google.com/file/d/0B4TNr4F2wA_5d0czVThnSk1nWjQ/edit?usp=sharing)
+
+
+R-Tutorials
+
+1. I'll do it: name
+
+2. I'll do it: name
+
+3. I'll do it: name
+
+In case you want to link the files, press the "Edit" register top left of this page and scroll down to the "Markup" which is in fact very easy to read. Check out the source how this weeks stuff is done and copy and paste. In case of difficulties paste in the message boards.
+
+####Week 4 
+Thanks to the person posting slides for week 3! This motivated me to continue producing and sharing slides...
+
+1. Introduction to confidence intervals (https://www.dropbox.com/s/dy7sj6a44ggi8f4/STA%20-%204-1%20-%20Introduction%20to%20confidence%20intervals.pdf)
+2. Confidence intervals for proportions(https://www.dropbox.com/s/bphxh123bzfj4gs/STA%20-%204-2%20-%20Confidence%20Intervals%20for%20proportions.pdf)
+3.
+4.
+5.
+6.
+
+####From week 5
+Here is my dropbox-account. I cannot guarantee that all future course materials will be provided and I do only provide them "as-is". It would be good to see that there are some more "contributions" from other students. This would reduce the workload tremendously.
+
+Dropbox: https://www.dropbox.com/sh/7b0an21ybl4d212/bj2dKa86kp.
+
+####Week 6
+(Posted by Billy)
+Here are slides and text for all 4 week 6 lectures in one pdf! Note I do not intend to post anything for the R lectures as I don't find slides quite as useful for R. Post here if there is an issue with the download and I can try to fix it. Major kudos the person (week 5) who put up their entire set of slides - I wasted so much time pausing and rewinding making text based notes straight from the video!
+
+1-4. Week 6 All 4 Lectures (https://docs.google.com/file/d/0B6aXGpGtizy7bzNfOWctaWpVSkE/edit?usp=sharing)
+
+####Week 7
+(Posted by Billy)
+Week 7 All Lectures: https://docs.google.com/file/d/0B6aXGpGtizy7RldkS3NLVV9FeWc/edit?usp=sharing
+
+####Week 8
+(Posted by Billy)
+Week 8 All Lectures https://docs.google.com/file/d/0B6aXGpGtizy7cXhyTnFRQWo1U3c/edit?usp=sharing
+
+####All Weeks
+(Courtesy of Bernat Gabor)
+Full course lectures https://docs.google.com/file/d/0B42XvjSlpDCtUl9XbDczbjByNHc/edit

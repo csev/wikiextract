@@ -1,0 +1,59 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:Wk4</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong>
+<br /><br />
+Elasticities</p>
+<p>Price Elasticity of Demand = E_x</p>
+<p>E<em>x =&#160;% change in Q</em>x /&#160;% change in P_x</p>
+<p>(Use greek 'delta' in place of change in)</p>
+<p>Usually negative because of inverse relationship relative to price (the slope of the demand curve is negative).  Because this is always the case, we express it as a positive value by taking the absolute value.</p>
+<p>Something is Inelastic when E_x is &lt; 1, and Elastic when it is &gt; 1 (if it =1, it is "unitary")</p>
+<p>Total Revenue = TR = Price x Quantity = PxQ</p>
+<p>If relationship is Inelastic, and Price increases, then TR will increase.
+If relationship is Elastic, and Price increases, then TR will decrease.</p>
+<p>What determines elasticity?
+<ul><li> How easy is it to replace/find substitute? (Harder to replace = elastic)
+</li><li> How expensive is the good? (Higher price = elastic)
+</li><li> What is the time frame of the item?  (Longer time = inelastic, as in cars)</p>
+</li></ul>
+
+<p>Perfectly inelastic demand is evidenced by a vertical demand curve. (Visualize it as a capital "I")
+Perfectly Elastic demand is evidenced by a horizontal demand curve. (Visualize it as a capital "E")</p>
+<p>Demand is more elastic at the top of the curve, and more inelastic at the bottom.  That's why it matters where we examine the elasticity, along the demand curve.  Tutorial teaches us about the "midpoint method" but professor doesn't.</p>
+<p>Income Elasticity of Demand</p>
+<p>E_I =&#160;% change in Q /&#160;% change in I</p>
+<p>E<em>I will be positive for normal products (cars): when you have more money, you buy more
+E</em>I will be negative for inferior products (busses): when you have more money, you ride less</p>
+<p>Normal products will have an E<em>I &lt; 1 when behaving inelastically, and E</em>I when behaving elastically.</p>
+<p>Cross-Price Elasticity</p>
+<p>E =&#160;% change in Q<em>x /&#160;% change in P</em>y (note the x and y subscripts)</p>
+<p>Complementary products will have negative cross-price elasticity. (bagels &amp; cream cheese, gas &amp; cars)
+Substitute products will have postive cross-price elasticity. (coffee &amp; tea, butter &amp; margarine)</p>
+<p>Elasticity of Supply - pretty much identical to Elasticity of Demand.
+ Sign is different</p>
+<p>Inelastic is still a vertical line, like the letter "I"
+Elasticity is still a horizonatal line, like the letter "E"</p>
+<p>Good working examples on taxes &amp; who pays in different scenarios, as well as farming and drugs; depends if the demand is more inelastic than the supply, etc.</p>
+<p>Remember, tax is always an incentive to stop trading / transacting.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:Wk4&amp;oldid=10085">https://share.coursera.org/wiki/index.php?title=Microecon:Wk4&amp;oldid=10085</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

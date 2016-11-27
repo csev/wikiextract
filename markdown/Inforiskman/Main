@@ -1,0 +1,271 @@
+# Information Security and Risk Management in Context
+#### Barbara Endicott-Popovsky, Ph.D., Director of the Center for Information Assurance and Cybersecurity
+##### University of Washington Institute of Technology
+
+## Course Outline
+
+1. Implications of Information Assurance and GRC from real CISO's
+2. Definitions and the roles within GRC
+3. Laws, Regulations, and Policy-making
+4. IA Draft Planning
+5. Technologies and Vulnerabilities 
+6. Human Factors and Security Awareness
+7. Risks and Business Continuity Planning
+8. Auditing, Compliance, and Monitoring
+9. Reporting and Public Relations
+10. Social Media in Security Dynamics
+
+
+## Implications of Information Assurance and GRC from real CISO's
+
+Ernie Hayden, CISO of Port Seattle and Kirk Bailey, CISO of University of Washington
+
+Landscape of Infosec:
+*Technical Security - firewalls, network architecture
+*Information Security - Risk Management, Business Continuity/Disaster Recovery 
+*Strategic Security - Cybersecurity, Natural Disasters
+*Remember: 1 out of 25 people are Sociopaths, Internet is perfect medium for sociopaths
+*Trusted relationships are critical
+
+
+Key Skills of the CISO:  
+*READ!  Lots of diverse sources of current and rapidly changing security developments
+*Prioritize:  Must respond quickly and communicate efficiently
+**Contract Reviews
+**Spam Complaints
+**Forensic response to breach
+**Employee Safety -- <b>#1 due to PR and Liability</b> 
+**Credit Card Processing System
+**Email Service Interruptions
+
+"The CISO of the future is the one who can run the risk-management organization" - Paul Proctor
+
+Jobs in Information Security 
+* Roles
+** Practitioners
+** Auditors
+** Security Project Manager
+** Application Security Specialist
+** Consultant
+** Vendor/Entrepreneur
+** Sales/Sales Engineer
+** Executive
+
+Education
+* Certifications: CISSP, CISM, CISA, GIAC, CEH
+* Experience: Internships, Apprenticeships, Entry-level jobs, Public Service
+
+
+
+## Definitions and the roles within GRC
+
+From "Unintended Consequences: Digital Evidence in Our Legal System"
+
+M = f[P*v – (c1 + c2)]
+*M is online criminal activity motivation
+*P is the probability of not failing to successfully commit an online crime
+*v is the value of success to the perpetrator
+*c1 is the cost to the perpetrator
+*c2 is the consequences to the perpetrator.
+
+
+GRC = Governance, Risk Management, and Compliance
+
+McCumber Cube:  A Framework for IA professionals to comprehensively evaluate an IT system's security 
+
+*Information States - 
+**Storage
+**Processing
+**Transmission
+
+*Security Services or "the CIA" - 
+**Confidentiality - who can see data?
+**Integrity - How do we verify changes?
+**Availability - Can information be accessed when needed.
+**Authentication - verification of ID
+**Non-repudiation - you are who you say you are 
+
+*Security Countermeasures/Controls - Mapped to the inner part our conceptual framework of NFR
+**Human Factors
+**Policies/Practices
+**Technology
+
+
+From Agricultural Age to Industrial Age to Information Age
+* World is dominated by the Internet and our interactions through the web.  
+* Wealth was defined by Land ownership --> Capital --> Now it is based on knowledge. 
+* Time was the sun/seasons --> Factory whistle --> Conceptualized as time zones and communication exchange factors
+* Workplace was the farm --> Capital equipment --> Now, it is networks
+* Knowledge was generalized --> specialized --> now it is interdisciplinary and fluid
+* See slide for more
+
+Our new direction begins with smashing the Industrial Age Infrastructure.  
+
+The Sociopath Next Door by Stout, M. - "1 in 25 people are sociopathic"
+Dan Geer - "In the world of networked computers every sociopath is your neighbor"
+
+Threat Spectrum is growing. 
+* Local Threats to Organizational/Shared Threats to National Security.  
+* Example, Russia's invasion of Georgia.  
+* Fundamentally, we must protect critical infrastructure.
+
+Cybercrime is a $105 Billion industry.
+
+Consequences:
+* Student fines for illegal downloads
+* Outsourcing is becoming a network security
+* Amero case - poor digital forensic knowledge in the courts leads to a false conviction of an innocent bystander
+* Interdependence of Critical Infrastructure
+
+Security and Privacy - Two sides of the same coin
+* Security Revolution - Computers --> Infosec --> Information Assurance
+* Castle Approach:: Firewalls = perimeter, Layers of Walls = AV, Intrusion Detection, IPS
+* Assumption of breach
+* Poor Assumptions:
+** Design will implements your goals
+** The sum total of control will implement ALL goals
+** Implementation is correct
+** Systems are are correctly installed AND maintained
+
+
+Individual Strategy: 
+* Awareness
+* Layered Defense at home - tools, patches, and upgrades
+* Social media privacy options
+* Data storage control must be deliberate
+* Think like a "bad guy!"
+* Limit child's access/Kid Nation - More prone to Blind trust, Cyberbullying, disrespect of privacy
+
+How to grow expertise?
+* "OJT" vs Certifications vs Education/Academia
+* NSA/DHS NIETP Program
+* Cybercorps Education - map of programs
+
+
+
+
+## Laws, Regulations, and Policy-making
+
+<u>Governance, Risk Management, and Compliance</u>
+
+Governance Framework is not a revolution, its an evolution
+* Difficult, cumbersome, not fully mature, fragmented with risk information, poorly defined
+* Solution: Keep flexible, articulate roles and functions of stakeholders, supports compliance, scalable, and integrated
+* Example: Microsoft - has evolved in order to reflect "decision making posture"
+* Risk management is about planning and predicting the future
+* ISO 31000 - risk assessment process
+** Scoping & Planning
+** Risk ID: keep an eye on the ball, listen and look, logical risk buckets/ missing key aspects  (E.g. New Orleans in Katrina- good plan, NEVER used)
+** Risk Analysis: analyze bottom-up AND top-down, document / Poor consistancy, limited methods/views, Risk assessment too late
+** Risk Evaluation:  Optimizing risk and tactics, /scope is inadequate, NO accountability, Lack of Funding, Failure to account human element
+** Control & Compliance - Preventative controls - process/human capital /poor design and resource allocation (i.e. firewalls); Detective controls - (i.e. - intrusion detection)
+
+Incident Response
+
+* Old cases - NZ Hacker (DoS attack script kiddie) and Russian Hacker (automated card scheme)
+* Network Defense Strategy ==> Network Forensic Readiness (NFR)
+* NFRDLC (Development Life Cycle)
+
+Compliance Management: Policy Management
+
+Legal System:  Common Law vs Code Law vs Religious Law
+* Rule of Law Indicator - government rankings of countries, decreases risk in business
+
+Policy - form of business communication
+* Guiding principle for decisions
+* Manages expectations
+* Foundation in Infosec
+
+Good Policy -
+* Clear
+* Describe and explain
+* Basis for rules/procedures
+* Flexible and reevaluated
+* Tips: clear, concise, simple language.  "Must" vs "Should"
+
+Policy Template
+* Title and Date
+* Rationale/Purpose
+* Scope
+* Policy Statement
+* Roles and Responsibility
+* Implementation
+* Evaluation and review
+* Definitions
+* References
+* Ratified and dated
+
+Policy Lifecycle - Write --> Communicate --> Monitor --> Modify
+
+Digital Forensics
+* Incedent response - response to an intrusion, can be costly
+* Old method: 3R's of Accountable Systems = Resistance (e.g Firewalls), Recognition (e..g IDS, integrity checks), Recovery (e..g backup, replication) ==> Defense only
+* New Method: Redress - Computer Forensics, Legal remedies, active defense ==> Offense
+* Price of all defense, no offense = no points and invites attack
+* The State of the Target <==> THe State of Malicious Intruder Capabilities
+* A problem of escalation of cyberwarfar i.e. As the target grows capabilities, so does the malicious intruder
+* Espionage, Patents/Trade Secrets, Malware, and ID Theft are BIG business:  Well-financed, organized
+* Attacks: Vulnerabilities are increasing Network --> OS --> Applications
+* Difficult to originate attacks, but (see graph) we do have info on international distribution
+* Modern Malware Trends:  Evasive (e..g rootkits), Self-Defense, Multi-channelled, Flexible, High-Quality Software (Rapid improvent)
+* Re-imaging > Cleaning: due to persistence of malware
+
+<u>"Elements of Good Policy" by Michael Simon, CTO, Creation Logic  </u>
+
+Introduction to Policy
+* Policy: Unambiguous guiding principle(E.g. Do not share employee data) 
+* Standard: Specific and required methods/data/processes to direct overall implementation of policy
+* Guidelines: NON-mandatory principles of guidance
+* Procedures:  Specific process that implements policy (e.g. directions on how to place laptop in car)
+<ol>
+<li> Should reflect business requirements, should be drive by ???? (couldn't hear)
+<li> Enable productivity through access to resources
+<li> Clear and concise
+<li> Compliance should be measurable - Complexity and Inconvenience reduce compliance
+<li> Enforcable
+<li> Reflects regulations that drive business model
+<li> Regular Review
+<li> Accessibility to shareholders
+<li> Require/Track/Train the comprehension and retention of policy - very difficult to implement </li>
+</ol>
+Reviewing Policy
+<ol>
+<li> Decide on a framework 
+<li> ISO 17799, ISO 27001, COBIT, ITIL, ... Know these frameworks
+<li> Gap Analysis vs Risk Assessment - 
+<ul><li> GA - compares the policy to a specific framework without risk and finds the gaps between the two
+<li>RA - compares the policy to perceived risk within a given policy
+<li>RA usually influences decision makers more powerfully due to more immediate threat, but potential liabilities can be identified proactively through GA</ul>
+</ol>
+
+Capability Maturity Model ([CMM]) - detailed analysis of technology development, identifies 6 levels of Maturity
+*Level 0 - Nonexistent - nearly impossible
+*Level 1 - Ad hoc
+*Level 2 - Defined
+*Level 3 - Repeatable/Recorded
+*Level 4 - Managed and measurable
+*Level 5 - Optimized
+
+How do you get policy?
+* Read what they have
+* Interviews
+* Aim for business drivers
+* Reassess interpretation and implementation of policies
+* Attend post-mortem events
+
+
+[CMM]: http://en.wikipedia.org/wiki/Capability_Maturity_Model
+
+## IA Draft Planning
+
+## Technologies and Vulnerabilities 
+
+## Human Factors and Security Awareness
+
+## Risks and Business Continuity Planning
+
+## Auditing, Compliance, and Monitoring
+
+## Reporting and Public Relations
+
+## Social Media in Security Dynamics

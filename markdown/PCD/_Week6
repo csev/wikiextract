@@ -1,0 +1,182 @@
+## 6.2 – Active research on caspases In-vivo methods  
+[[PCD:Transcript W6 L2 | Transcript]]  
+**In-vitro methods**  
+* Pools of in vitro translated proteins from mammals, C. elegans or other models have since been used to identify new caspase substrates by various investigators.  
+* In most cases, one or two dimensional polyacrylamide gel electrophoresis was used to identify proteins that are cleaved by caspases in vitro.  
+* Nowadays, the nature of these cleaved proteins is determined by mass spectrometry.
+  
+**caspase substrates CAD**  
+* CAD = caspase-activated deoxyribonuclease  
+* a deoxyribonuclease that is activated by caspases in apoptotic cells  
+* is activated by caspases indirectly through the cleavage and inactivation of a CAD inhibitor  
+* found bound to ICAD in the cytoplasm in healthy cells  
+* Once caspases become activated, they cleave ICAD. This results in the translocation of CAD from the cytoplasm to the nucleus where it contributes to DNA fragmentation and DNA ladder formation through its nuclease activity.  
+    
+**ICAD**  
+* inhibitor of CAD  
+* required for CAD folding  
+* can inhibit the ability of CAD to enter the nucleus  
+* can inhibit the ability of CAD to cleave DNA  
+
+**cytoskeletal elements**  
+* structural proteins of a cell  
+  
+**Xk-related protein 8**  
+* located in the plasma membrane  
+* contribute to the externalization of PS to the outer leaflet of the plasma membrane  
+* The ability to contribute to PS externalization is dependent on its caspase-dependent cleavage. Therefore, it is speculated that Xk-related protein 8 in mammals and ced-8 in *C. elegans* are PS flippases themselves, whose flippase activity is specifically activated in apoptotic cells by caspase-cleavage.  
+  
+  
+**ced-8**  
+* the loss of ced-8 does not block apoptosis like mutations in egl-1, ced-3 or ced-4 do  
+* the loss of ced-8 only slows things down  
+  
+
+## 6.3 – Engulfment and degradation  
+[[PCD:Transcript W6 L3 | Transcript]]  
+  
+**engulfment and clearance of apoptotic cells**  
+* the last step in the apoptotic process  
+* If apoptotic cells are not cleared they can become secondarily necrotic, which induces inflammation and which can promote autoimmunity.  
+* is evolutionaryily conserved  
+  
+**secondarily necrotic**  
+    
+**evolutionarily conserved**  
+
+**find-me signals**  
+* first step in the process 
+* necessary to attract phagocytes from within the tissue.  
+* In C. elegans, such “find-me” signals may not be necessary since most of the times, it is the neighboring cells that engulf apoptotic cells.  
+  
+**eat-me signals**  
+* second step  
+* apoptotic cells exhibits “eat-me” signals on its cell surface to tell the phagocyte that it is this cell that has to be cleared.  
+* At least in mammals, apart from PS, a number of other molecules have been proposed to function as “eat-me” signals; however, they have not yet been characterized very well.  
+  
+
+* “eat-me” signals on the apoptotic cells are then recognized by specific receptors on the plasma membrane of the phagocyte.  
+* The binding to their specific “eat-me” signal activates these receptors.  
+* Their activation induces two processes.  
+: 1. they induce cytoskeletal rearrangements within the phagocyte, basically shape changes. These shape changes allow the complete engulfment of the apoptotic cell.  
+: 2. Once the apoptotic cell has been engulfed, they induce the fusion of the phagosome with the lysosomal system, which eventually leads to the degradation of the entire apoptotic cell.  
+  
+**actin cytoskeleton**  
+**microfilaments**  
+**pseudopods**  
+* one of the three major cytoskeletal components of eukaryotic cells, within the phagocyte  
+* The rearrangement of actin filaments allows the phagocyte to form plasma membrane extensions called pseudopods that eventually wrap around the entire apoptotic cell.    
+[Actin Cytoskelton](http://cellix.imba.oeaw.ac.at/3-actin-cytoskeleton/) (A Video Tour of Cell Motility)  
+  
+**receptor-mediated endocytosis**  
+**phagosome** (the apoptotic cell completely engulfed by the phagocyte)  
+**phagocytic receptor**  
+**lysosomal system** (major site of cellular degradation in eukaryotic cells)  
+[Phagocytosis animated video](https://highered.mcgraw-hill.com/sites/0072495855/student_view0/chapter2/animation__phagocytosis.html) by McGraw-Hill    
+  
+* The lysosome is a cellular organelle that is sometimes referred to as the stomach of the cell because it contains many digestive enzymes that can break down various macromolecules.  
+* To achieve a fusion of the phagosome with the lysosomal system, the phagocyte takes advantage of many of the factors that are involved in lysosomal biogenesis, which is the formation of lysosomes.  
+* Once the phagosome has been fused with the lysosomal system then it is referred to as a phagolysosome.  
+* Within this phagolysosome, the apoptotic cell is eventually completely degraded and recycled, and this is achieved mainly through the action of the digestive enzymes of the lysosome.  
+  
+  
+**Rac GTPases**  
+
+  
+**cellular degradation**  
+  
+## 6.4 – Non-apoptotic functions of the Bcl-2 superfamily  
+[[PCD:Transcript W6 L4 | Transcript]]  
+**mitochondrial function**  
+  
+**bifunctional proteins**  
+  
+**DRP-1**  
+* dynamin-related  
+* required for mitochondrial fission
+* blocking mitochondrial fragmentation in Bax-expressing cells by expressing a dominant-negative Drp-1 construct slowed down the apoptotic process and delayed apoptosis  
+* the expression of a dominant-negative construct of drp-1 can block some of the 131 apoptotic cell death that occur during *C. elegans* development
+* the overexpression of wild-type drp-1 could induce ectopic apoptosis  
+   
+**EAT-3 and FZO-9**    
+* The ability of ced-9 to cause mitochondrial fusion is dependent on two dynamin-related GTPases, which are required for mitochondrial fusion, FZO-1 and EAT-3.   
+* ced-9 directly interacts with FZO-1, which like ced-9 localizes to the outer mitochondrial membrane.  
+**EAT-3**  
+* the C. elegans homolog of mammalian Opa1  
+**FZO-1**  
+* the C. elegans homolog of the mammalian mitofusins  
+  
+**Dynamin related GTPases**  
+* from [Wikipedia](http://en.wikipedia.org/wiki/Dynamin): "Dynamin is a GTPase responsible for endocytosis in the eukaryotic cell. Dynamins are principally involved in the scission of newly formed vesicles from the membrane of one cellular compartment and their targeting to, and fusion with, another compartment, both at the cell surface (particularly caveolae internalization) as well as at the Golgi apparatus. Dynamin also plays a role in many processes including division of organelles, cytokinesis and microbial pathogen resistance. Dynamin is part of the "dynamin superfamily," which includes classical dynamins, dynamin-like proteins, Mx proteins, OPA, mitofusins, and GBPs. Dynamin itself is a 96 kDa enzyme, and was first isolated when researchers were attempting to isolate new microtubule-based motors from the bovine brain. Dynamin has been extensively studied in the context of clathrin-coated vesicle budding from the cell membrane."  
+  
+**ATP synthase**  
+  
+  
+## 6.5 – Non-apoptotic functions of caspases and the central pathway  
+[[PCD:Transcript W6 L5 | Transcript]]  
+
+**IAP ( inhibitor of apoptosis) proteins**  
+* bind to pro-caspases such as Dronc, an initiator caspase, or Drice and Dcp-1, two effector caspases  
+* prevent their activation through a process that is still not quite clear  
+* mediate the ubiquitinylation of caspases  
+* Once a cell receives pro-apoptotic stimuli, these pro-apoptotic stimuli lead to the inactivation of IAP proteins.  
+
+
+**Dronc**  
+* an initiator caspase  
+
+
+**initiator caspase**  
+
+**ubiquitinylation**  
+* The modification of a protein by the covalent attachment of one or more ubiquitin molecules. [Source: Wiktionary](http://en.wiktionary.org/wiki/ubiquitination)   
+* [Ubiquitin](http://en.wiktionary.org/wiki/ubiquitin) - A small polypeptide present in the cells of all eukaryotes; it plays a part in modifying and degrading proteins.   
+* “One way cells clear out waste is by attaching a "death tag" to proteins they no longer need. Recognizing this tag, called ubiquitin, a cellular disposal machine called the proteasome begins digesting the proteins. Researchers have known about the existence of ubiquitin for a long time. However, in recent years, they have come to appreciate the fact that cells use ubiquitin-targeted destruction for much more than simply getting rid of debris. As it turns out, cells fine-tune many critical processes by using ubiquitin and the proteasome disposal system.”  
+Source: Davis, Alison. “[The Mask of Death."](http://publications.nigms.nih.gov/insidethecell/chapter2.html) *Inside the Cell*. National Institute of General Medical Science.  
+  
+  
+**hid**, **reaper** and **grim**  
+* Bind to IAP proteins and thereby prevent them from interacting with pro-caspases.  
+* Free pro-caspases are then able to become active and consequently, the cell becomes irreversibly committed to the apoptotic fate.  
+  
+**proteasome**  
+* another major site of cellular degradation  
+  
+**programmed elimination of cellular content**  
+* The apoptotic process appear to play a role in the specific removal of nuclei and organelles, rather than the elimination of entire cells.  
+* In the case of the enucleation of red blood cells or the denucleation of the fiber cells, it is only certain components of the apoptotic pathway that appear to be activated in order to eliminate in a programmed manner specific cellular content.  
+* In the case of fiber cells in the lens, it is not only nuclei and other cellular organelles, but also house keeping enzymes that are eliminated. And the elimination does not appear to occur through extrusion, but through degradation.  
+  
+**enucleated / denucleated**  
+* describes a cell that lacks a nucleus  
+* Enucleation is the last step during erythropoiesis. The nucleus as well as other cellular organelles literally become extruded from the red blood cells through the plasma membrane.  
+  
+**erythrocytes**  
+* red blood cells  
+* enucleated or denucleated (they do not have a nucleus)  
+
+**erythropoesis**  
+* the process of forming new erythrocytes  
+
+**hemoglobin**  
+* protein in erythrocytes that is the carrier for oxygen in the blood  
+
+**fiber cells of eye lens**  
+* another type of cell that does not have a nucleus  
+
+    
+## 6.6 – Human disease and novel therapeutics  
+[[PCD:Transcript W6 L6 | Transcript]]  
+**BH3 mimetics**  
+**in silico screen**  
+**ABT-737**  
+**pan-Bcl-2 inhibitor**  
+**ABT-2# 63**  
+**Navitoclax**  
+**platelets**  
+**thrombocytes**  
+**puma**
+  
+---  
+[[PCD:Main | PCD Main Page]]  
+[[PCD: Week6LectureList | Week 6 Lecture Transcripts]]

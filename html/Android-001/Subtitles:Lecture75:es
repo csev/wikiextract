@@ -1,0 +1,904 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture75:es</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture81:es" title="Android-001:Subtitles:Lecture81:es">&lt;&lt; prev subtitle</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture77:es" title="Android-001:Subtitles:Lecture77:es"> next subtitle &gt;&gt;</a></p>
+<h3> <span class="mw-headline" id="Location_and_Maps_-_Part_1_.28Spanish_subtitles.2C_ES_ES.29">Location and Maps - Part 1 (Spanish subtitles, ES_ES)</span></h3>
+<p>Spanish translation from the original english subtitles.<br />
+<ul><li> <strong>Translated by:</strong>    Fedros G.R.<br />
+</li><li> <strong>Instructions:</strong>
+</li></ul>
+<ol>
+<li>Create a txt file by using Notepad app (or other text editor), then change its extension from .txt to .srt.<br />
+    <em>IMPORTANT!: Make sure the name of your video lecture has the exact same name as your subtitle file.</em></li>
+<li> Copy and Paste the following text into the SRT file.</li>
+</ol></p>
+<pre>
+1
+00:00:09,570 --&gt; 00:00:12,615
+Hola, soy Adam Porter, y esto es
+
+2
+00:00:12,615 --&gt; 00:00:18,528
+&lt;i&gt;&lt;font color=&quot;#0080ff&quot;&gt;Programación de Aplicaciones Móviles para
+Sistemas Portátiles Android.&lt;/font&gt;&lt;/i&gt;
+
+3
+00:00:18,528 --&gt; 00:00:24,291
+Hace unos pocos años mi familia pasó un tiempo
+en Montreal (Canadá)
+
+4
+00:00:24,291 --&gt; 00:00:29,746
+y tan pronto como llegamos comenzó a nevar y nevar...
+y nevar
+
+5
+00:00:29,746 --&gt; 00:00:32,158
+y, por supuesto, nos dimos cuenta rápidamente
+
+6
+00:00:32,158 --&gt; 00:00:35,290
+que mis dos hijas habían olvidado empaquetar sus
+respectivas botas de nieve.
+
+7
+00:00:37,220 --&gt; 00:00:39,830
+Así que,  necesitabamos comprar botas y también
+
+8
+00:00:39,830 --&gt; 00:00:42,710
+necesitábamos comprarlas en una tienda que estuviese
+cercana a nosotros.
+
+9
+00:00:43,770 --&gt; 00:00:45,460
+Por lo que  saqué mi teléfono móvil.
+
+10
+00:00:45,460 --&gt; 00:00:50,090
+Y realicé una búsqueda por &quot;botas&quot; en la
+zona local.
+
+11
+00:00:50,090 --&gt; 00:00:53,930
+La aplicación sacó una lista con las
+tiendas de  zapatos señalados en un mapa.
+
+12
+00:00:55,120 --&gt; 00:00:57,080
+La aplicación también me permitió obtener
+
+13
+00:00:57,080 --&gt; 00:01:01,750
+direcciones, desde mi localización actual
+a los establecimientos.
+
+14
+00:01:02,870 --&gt; 00:01:07,850
+Seguimos dichas direcciones, compramos algunas botas
+y salvamos nuestras vacaciones.
+
+15
+00:01:07,850 --&gt; 00:01:11,680
+Ahora, estoy seguro que  muchos de vosotros podríais
+contar experiencias similares-
+
+16
+00:01:11,680 --&gt; 00:01:16,160
+A veces, la información que necesitamos depende
+de manera crítica de donde
+
+17
+00:01:16,160 --&gt; 00:01:19,010
+nos encontramos en el momento que la necesitamos.
+
+18
+00:01:19,010 --&gt; 00:01:25,530
+Para ayudar en estas situaciones, Android
+incluye soporte para la localización y mapas.
+
+19
+00:01:26,920 --&gt; 00:01:28,270
+En la lección de hoy,
+
+20
+00:01:28,270 --&gt; 00:01:30,340
+hablaré un poco de dicho soporte.
+
+21
+00:01:30,340 --&gt; 00:01:34,320
+Hablaré sobre que es la información de localización y
+voy a repasar
+
+22
+00:01:34,320 --&gt; 00:01:39,260
+las clases que tus aplicaciones usarán para
+obtener dicha información.
+
+23
+00:01:39,260 --&gt; 00:01:42,550
+Hablaré sobre los mapas, los cuales te permitirán
+tomar la información
+
+24
+00:01:42,550 --&gt; 00:01:47,484
+de localización y mostrarla de manera visual a los usuarios.
+
+25
+00:01:47,484 --&gt; 00:01:53,458
+Y terminaré haciendo un repaso sobre las
+clases que Android proporciona
+
+26
+00:01:53,458 --&gt; 00:01:56,756
+para permitirte mostrar y personalizar el mapa.
+
+27
+00:01:56,756 --&gt; 00:02:02,500
+Así que, de manera general, las aplicaciones móviles
+pueden beneficiarse de estar al corriente de la localización.
+
+28
+00:02:02,500 --&gt; 00:02:05,480
+Es decir, para saber dónde estás tú
+u otros objetos,
+
+29
+00:02:05,480 --&gt; 00:02:08,250
+en un partic, particular momento en el tiempo.
+
+30
+00:02:09,400 --&gt; 00:02:11,790
+y de esta forma Android permite a las aplicaciones
+
+31
+00:02:11,790 --&gt; 00:02:15,750
+determinar y manipular la información de localización.
+
+32
+00:02:16,920 --&gt; 00:02:18,770
+Ahora, antes puse un ejemplo
+
+33
+00:02:18,770 --&gt; 00:02:23,620
+del uso de las capacidades de localización, para encontrar
+establecimientos cercanos a nuestra posición actual.
+
+34
+00:02:24,770 --&gt; 00:02:31,160
+y luego obtener las direcciones desde mi posición actual
+a uno de esos establecimientos.
+
+35
+00:02:31,160 --&gt; 00:02:35,460
+Además, las aplicaciones pueden también
+usar esta capacidad para
+
+36
+00:02:35,460 --&gt; 00:02:40,600
+hacer cosas como definir un área geográfica (o geofence).
+
+37
+00:02:40,600 --&gt; 00:02:44,560
+y, tras esto, iniciar acciones cuando el usuario entra
+
+38
+00:02:44,560 --&gt; 00:02:50,690
+o sale de dicha área.
+Android proporciona varias clases de ayuda
+
+39
+00:02:50,690 --&gt; 00:02:56,963
+para hacer todo esto posible.
+Una de nuestras clases es la clase Location (localización).
+
+40
+00:02:56,963 --&gt; 00:03:01,403
+Una localización representa una posición en la Tierra.
+
+41
+00:03:01,403 --&gt; 00:03:05,855
+Una instancia de Location contiene información tal como
+
+42
+00:03:05,855 --&gt; 00:03:10,519
+la latitud, longitud, un sello de tiempo y opcionalmente
+
+43
+00:03:10,519 --&gt; 00:03:15,660
+una estimada precisión, altitud, velocidad y dirección.
+
+44
+00:03:17,650 --&gt; 00:03:21,800
+La información de localización proviene de los
+proveedores de localización (providers) y
+
+45
+00:03:21,800 --&gt; 00:03:27,020
+y los dispositivos pueden tener acceso a múltiples
+proveedores de localización.
+
+46
+00:03:27,020 --&gt; 00:03:30,400
+Ahora, los datos actuales pueden provenir de fuentes tales
+
+47
+00:03:30,400 --&gt; 00:03:36,270
+como satélites GPS, teléfonos móviles,
+puntos de acceso WiFi...
+
+48
+00:03:37,930 --&gt; 00:03:43,190
+Específicamente, las aplicaciones pueden pedir información
+de la red del
+
+49
+00:03:43,190 --&gt; 00:03:48,520
+proveedor, el proveedor del GPS y el proveedor pasivo.
+
+50
+00:03:49,520 --&gt; 00:03:51,480
+Vamos a echar un vistazo de cada uno de estos,
+cada uno a su tiempo.
+
+51
+00:03:53,440 --&gt; 00:03:58,590
+El proveedor de la red, determina la localización
+basándose en antenas de telefonía móvil y
+
+52
+00:03:58,590 --&gt; 00:04:03,699
+puntos de aceso WiFi.
+Si deseas usar este proveedor,
+
+53
+00:04:03,699 --&gt; 00:04:09,666
+entonces debes declarar cualquiera de estos
+dos permisos: ACCESS_COARSE_LOCATION
+
+54
+00:04:09,666 --&gt; 00:04:15,614
+o el permiso ACCESS_FINE_LOCATION.
+
+55
+00:04:15,614 --&gt; 00:04:20,550
+EL proveedor de GPS obtiene su permiso de
+localización de
+
+56
+00:04:20,550 --&gt; 00:04:25,085
+satélites GPS.
+Para usar este proveedor, debes declarar
+
+57
+00:04:25,085 --&gt; 00:04:29,630
+el permiso ACCESS_FINE_LOCATION.
+
+58
+00:04:31,570 --&gt; 00:04:35,180
+El proveedor pasivo en realidad no activa algún dispositivo.
+
+59
+00:04:35,180 --&gt; 00:04:38,220
+Este, tan solo devuelve localizaciones que
+
+60
+00:04:38,220 --&gt; 00:04:43,060
+han sido calculadas  a través de peticiones
+de otras aplicaciones.
+
+61
+00:04:43,060 --&gt; 00:04:45,290
+Así que, el uso de este proveedor requiere
+
+62
+00:04:45,290 --&gt; 00:04:51,588
+que declares el permiso ACCESS_FINE_LOCATION.
+
+63
+00:04:51,588 --&gt; 00:04:56,490
+Ahora, mientras que de cada una de esas distintas fuentes
+obtienes la información de localización,
+
+64
+00:04:56,490 --&gt; 00:05:00,886
+cada una ofrece un conjunto de compensaciones
+con respecto al coste,
+
+65
+00:05:00,886 --&gt; 00:05:07,960
+precisión, disponibilidad, y exactitud de
+los datos que proporciona.
+
+66
+00:05:07,960 --&gt; 00:05:11,070
+Vamos a echar un vistazo a algunos de los
+proveedores disponibles en Android.
+
+67
+00:05:13,480 --&gt; 00:05:18,360
+El proveedor de GPS depende de
+la comunicación con el satélite.
+
+68
+00:05:18,360 --&gt; 00:05:20,890
+Por lo que este proveedor es  por lo general
+
+69
+00:05:20,890 --&gt; 00:05:25,480
+el más caro pero da las lecturas más precisas.
+
+70
+00:05:25,480 --&gt; 00:05:28,030
+También es el que más cantidad de tiempo tarda
+
+71
+00:05:28,030 --&gt; 00:05:32,170
+en proveer esa lectura tan precisa y
+
+72
+00:05:32,170 --&gt; 00:05:33,600
+el usuario necesita tener una vista despejada
+
+73
+00:05:33,600 --&gt; 00:05:37,560
+del cielo cuando se está comunicando con
+el satélite GPS.
+
+74
+00:05:38,620 --&gt; 00:05:42,490
+El proveedor de red es menos costoso que
+el proveedor de GPS,
+
+75
+00:05:42,490 --&gt; 00:05:45,230
+pero, puede dar lecturas menos precisas.
+
+76
+00:05:45,230 --&gt; 00:05:50,190
+Tarda menos tiempo en devolver la información
+de localización, pero solo es útil
+
+77
+00:05:50,190 --&gt; 00:05:53,480
+cuando estás en el rango de la antena de telefonía
+móvil o del punto de aceso WiFi.
+
+78
+00:05:54,760 --&gt; 00:05:57,880
+El proveedor pasivo es el menos costoso de utilizar.
+
+79
+00:05:57,880 --&gt; 00:06:02,000
+Esencialmente estás, tan solo, usando
+mediciones que ya han sido tomadas.
+
+80
+00:06:02,000 --&gt; 00:06:03,580
+Por lo que es rápido,
+
+81
+00:06:03,580 --&gt; 00:06:05,330
+pero puede resultar que no haya
+
+82
+00:06:05,330 --&gt; 00:06:09,700
+lecturas recientes cuando tu aplicación pregunte
+por dicha información.
+
+83
+00:06:12,440 --&gt; 00:06:18,028
+Una forma de acceder a la información de localización es
+usar la clase LocationManger (Gestor de Localización).
+
+84
+00:06:18,028 --&gt; 00:06:23,430
+El gestor de localización es un servicio del sistema
+para acceder a los datos de localización.
+
+85
+00:06:23,430 --&gt; 00:06:28,622
+Tu adquieres una referencia a la
+localización llamando
+
+86
+00:06:28,622 --&gt; 00:06:33,926
+al método context.getSystemService,
+pasándole un identificador (ID) del servicio:
+
+87
+00:06:33,926 --&gt; 00:06:41,481
+Context.LOCATION_SERVICE.
+Una vez que tú tengas una referencia
+
+88
+00:06:41,481 --&gt; 00:06:47,864
+al gestor de localización, puedes usarla
+para obtener (y usar) la información de localización.
+
+89
+00:06:47,864 --&gt; 00:06:52,880
+Por ejemplo, puedes determinar las últimas
+lecturas tomadas por un proveedor en concreto.
+
+90
+00:06:53,910 --&gt; 00:06:56,350
+Puedes realizar un registro para obtener
+las actualizaciones de localización para
+
+91
+00:06:56,350 --&gt; 00:07:00,670
+descubrir cuando es obtenida  nueva
+información de localización
+
+92
+00:07:00,670 --&gt; 00:07:03,900
+Y puedes también registrar para obtener
+intentos (intents)
+
+93
+00:07:03,900 --&gt; 00:07:08,550
+de cuando un dispositivo se acerca o se
+aleja de una región geográfica dada.
+
+94
+00:07:09,960 --&gt; 00:07:12,210
+Si quieres ser informado de cuando nuevas
+localizaciones
+
+95
+00:07:12,210 --&gt; 00:07:17,360
+son obtenidas, puedes implementar y usar
+un ListenerLocation.
+
+96
+00:07:17,360 --&gt; 00:07:20,570
+La interfaz ListenerLocation define los métodos
+callbacks (retrollamadas)
+
+97
+00:07:20,570 --&gt; 00:07:24,610
+que son invocados cuando la localización
+varia.
+
+98
+00:07:24,610 --&gt; 00:07:25,760
+O, cuando el estado de
+
+99
+00:07:25,760 --&gt; 00:07:27,930
+un proveedor de localización cambia.
+
+100
+00:07:27,930 --&gt; 00:07:32,580
+Una interfaz LocationListener incluye los
+siguientes métodos:
+
+101
+00:07:33,610 --&gt; 00:07:35,650
+OnLocationChanged.
+
+102
+00:07:35,650 --&gt; 00:07:38,590
+El cual es llamado cuando una nueva
+localización es calculada.
+
+103
+00:07:39,700 --&gt; 00:07:44,560
+onProviderDisabled y onProviderEnabled,
+los cuales son llamados cuando
+
+104
+00:07:44,560 --&gt; 00:07:48,360
+el usuario deshabilita o habilita un proveedor
+particular.
+
+105
+00:07:49,460 --&gt; 00:07:51,190
+Y onStatusChanged,
+
+106
+00:07:51,190 --&gt; 00:07:54,460
+el cual es llamado cuando el estado de
+un proveedor cambia.
+
+107
+00:07:56,580 --&gt; 00:07:59,410
+Si tu aplicación no puede obtener una
+lectura reciente del
+
+108
+00:07:59,410 --&gt; 00:08:03,040
+sistema, entonces necesitará obtener
+su propia lectura.
+
+109
+00:08:03,040 --&gt; 00:08:08,380
+Y, para hacer esto,  tu aplicación normalmente
+llevará a cabo los pasos siguientes:
+
+110
+00:08:08,380 --&gt; 00:08:11,390
+Primero, comenzará escuchando las actualizaciones
+
+111
+00:08:11,390 --&gt; 00:08:15,420
+de los proveedores de localización, registrando
+un LocationListener.
+
+112
+00:08:16,540 --&gt; 00:08:21,810
+Después, debería mantener y actualizar
+una estimación mejor actual.
+
+113
+00:08:21,810 --&gt; 00:08:27,720
+ya que comienza a recibir actualizaciones
+de localización. Y a medida que este proceso avanza
+
+114
+00:08:27,720 --&gt; 00:08:33,100
+la aplicación debería determinar cuando
+la mejor estimación actual es lo suficientemente buena.
+
+115
+00:08:33,100 --&gt; 00:08:36,160
+Y llegados a ese punto debería dejar de escuchar
+
+116
+00:08:36,160 --&gt; 00:08:41,020
+actualizaciones de localización, anulando el registro
+del LocationListener.
+
+117
+00:08:41,020 --&gt; 00:08:45,700
+Y finalmente, puede usar esa 'mejor estimación'
+como localización actual.
+
+118
+00:08:48,790 --&gt; 00:08:51,230
+Ahora, cuando estás determinado si tu
+localización es lo suficientemente buena
+
+119
+00:08:51,230 --&gt; 00:08:54,626
+existen varios factores que podrías
+querer considerar.
+
+120
+00:08:55,720 --&gt; 00:08:58,510
+Por ejemplo, ¿durante cuánto tiempo
+deberías seguir midiendo?
+
+121
+00:08:59,540 --&gt; 00:09:05,210
+Por ejemplo,  un sistema de navegación
+podría necesitar de continuas mediciones.
+
+122
+00:09:05,210 --&gt; 00:09:10,230
+Mientras que una aplicación que busque un
+restaurante podría tan solo requerir una sola medición
+
+123
+00:09:11,470 --&gt; 00:09:13,960
+Otra cuestión es, ¿cómo de precisa
+
+124
+00:09:13,960 --&gt; 00:09:15,190
+realmente necesitas que sea una medición?
+
+125
+00:09:15,190 --&gt; 00:09:19,340
+Y, de nuevo, un sistema de navegación
+necesita conocer
+
+126
+00:09:19,340 --&gt; 00:09:22,650
+tu localización, digamos, dentro de 10m o así.
+
+127
+00:09:24,240 --&gt; 00:09:27,530
+Una aplicación restaurante, podría tan solo
+necesitar saber en qué ciudad estás.
+
+128
+00:09:27,530 --&gt; 00:09:30,790
+Y en ese caso, podrías solo necesitar saber
+tu
+
+129
+00:09:30,790 --&gt; 00:09:34,410
+localización dentro de, digamos, 1 km o
+quizás incluso menos.
+
+130
+00:09:35,800 --&gt; 00:09:39,500
+Y, por supuesto,  las decisiones que tomes
+aquí, claramente repercutirán
+
+131
+00:09:39,500 --&gt; 00:09:44,690
+en el uso de la batería.
+La aplicación de ejemplo se llama
+
+132
+00:09:44,690 --&gt; 00:09:50,150
+LocationGetLocation (LocationObtieneLocalización).
+Esta aplicación, primero obtiene y
+
+133
+00:09:50,150 --&gt; 00:09:56,040
+muestra una (la última localización conocida)
+de todos los proveedores en el dispositivo.
+
+134
+00:09:57,220 --&gt; 00:10:01,540
+Si esas lecturas son demasiado viejas,
+o tienen muy poca precisión,
+
+135
+00:10:01,540 --&gt; 00:10:05,230
+entonces la aplicación obtiene y muestra
+nuevas lecturas
+
+136
+00:10:05,230 --&gt; 00:10:12,158
+de todos los proveedores en el dispositivo.
+Vamos a ejecutar la aplicación.
+
+137
+00:10:12,158 --&gt; 00:10:13,971
+Luego, aquí está mi dispositivo.
+
+138
+00:10:13,971 --&gt; 00:10:17,830
+Ahora, iniciaré la aplicación &quot;LocationGetLocation&quot;.
+
+139
+00:10:19,100 --&gt; 00:10:21,810
+Cuando la aplicación arranca, muestra
+
+140
+00:10:21,810 --&gt; 00:10:25,180
+La mejor estimación de localización
+anterior desde el dispositivo.
+
+141
+00:10:26,180 --&gt; 00:10:29,640
+Luego esta información es mostrada
+usando texto en rojo.
+
+142
+00:10:31,250 --&gt; 00:10:34,930
+Ya que esta lectura no es ni tan
+siquiera suficientemente reciente.
+
+143
+00:10:34,930 --&gt; 00:10:38,190
+o no tiene la suficiente precisión, la
+aplicación avanza
+
+144
+00:10:38,190 --&gt; 00:10:41,540
+para obtener una estimación de la localización
+, y puedes observar
+
+145
+00:10:41,540 --&gt; 00:10:44,810
+que dichas nuevas lecturas son mostradas
+utilizando texto en gris.
+
+146
+00:10:47,590 --&gt; 00:10:49,660
+Vamos a echar un vistazo al código fuente
+para esta aplicación.
+
+147
+00:10:49,660 --&gt; 00:10:56,390
+Así que, aquí tenemos la aplicación abierta
+en el IDE. Ahora abriré la actividad principal.
+
+148
+00:10:58,150 --&gt; 00:11:00,380
+y vamos a desplazarnos hasta el método
+onCreate.
+
+149
+00:11:00,380 --&gt; 00:11:05,900
+Y aquí podemos observar que el código obtiene
+una referencia al gestor de la localización.
+
+150
+00:11:07,240 --&gt; 00:11:11,000
+Después, llama al método con nombre
+bestLastKnownLocation.
+
+151
+00:11:12,130 --&gt; 00:11:13,090
+Este método
+
+152
+00:11:13,090 --&gt; 00:11:18,660
+encontrará la última localización conocida de
+cada proveedor de localización y después
+
+153
+00:11:18,660 --&gt; 00:11:20,570
+devolverá la más precisa de todas
+
+154
+00:11:20,570 --&gt; 00:11:24,070
+esas medidas que también coincidan con
+ciertos criterios.
+
+155
+00:11:25,430 --&gt; 00:11:29,480
+Si no hay medidas que coincidan con dichos criterios,
+entonces el método devuelve NULL.
+
+156
+00:11:31,120 --&gt; 00:11:34,610
+entonces, el código muestra información
+sobre la última lectura.
+
+157
+00:11:36,340 --&gt; 00:11:38,104
+Tras esto, el código
+
+158
+00:11:38,104 --&gt; 00:11:41,878
+continua, definiendo un LocationListener
+
+159
+00:11:41,878 --&gt; 00:11:46,318
+Y en el método onLocationChange de dicho 'listener'
+, el código determina
+
+160
+00:11:46,318 --&gt; 00:11:51,400
+si la nueva localización es mejor que
+la mejor estimación actual.
+
+161
+00:11:51,400 --&gt; 00:11:57,040
+De ser así, entonces el código actualiza la mejor
+estimación y luego actualiza la pantalla.
+
+162
+00:11:58,610 --&gt; 00:12:03,070
+Ahora, si la precisión es mejor que
+min_accuracy,
+
+163
+00:12:03,070 --&gt; 00:12:05,850
+entonces la localización actual es
+considerada suficientemente buena.
+
+164
+00:12:07,170 --&gt; 00:12:09,640
+Así que, el código anula el registro del
+LocationListener.
+
+165
+00:12:11,950 --&gt; 00:12:15,040
+Ahora, al desplazarnos hacia abajo, 
+verás al método onResume.
+
+166
+00:12:16,070 --&gt; 00:12:19,720
+Este método comprueba si la mejor estimación actual
+es
+
+167
+00:12:19,720 --&gt; 00:12:23,670
+de baja precisión, o fue tomada hace
+más de dos minutos.
+
+168
+00:12:24,940 --&gt; 00:12:28,080
+De esta forma, el código registra 'listeners' tanto
+
+169
+00:12:28,080 --&gt; 00:12:31,010
+para el proveedor de red como para el GPS.
+
+170
+00:12:32,110 --&gt; 00:12:38,100
+Tras eso, el código programa un 'runnable',
+que anulará el registro de los 'listeners' después
+
+171
+00:12:38,100 --&gt; 00:12:39,160
+un periodo de tiempo fijado.
+
+172
+00:12:40,560 --&gt; 00:12:43,332
+El código también anulará el registro del
+
+173
+00:12:43,332 --&gt; 00:12:47,170
+LocationListener; si el método onPause de la actividad
+es llamado.
+
+174
+00:12:52,846 --&gt; 00:12:54,900
+Aquí tienes algunos consejos que
+puedes usar para
+
+175
+00:12:54,900 --&gt; 00:12:59,874
+ahorrar batería cuando estés creado
+aplicaciones pendientes de localización.
+
+176
+00:12:59,874 --&gt; 00:13:02,830
+Lo primero, siempre comprobar la última
+medida conocida.
+
+177
+00:13:02,830 --&gt; 00:13:06,780
+Si es suficientemente buena, entonces
+no hay necesidad de tomar nuevas mediciones.
+
+178
+00:13:08,440 --&gt; 00:13:12,640
+Devolver actualizaciones con la mejor frecuencia
+que sea posible y limitar el tiempo total de medición.
+
+179
+00:13:13,840 --&gt; 00:13:18,190
+Algunas aplicaciones, tales como una aplicación
+que necesite realizar el seguimiento de un corredor.
+
+180
+00:13:18,190 --&gt; 00:13:21,230
+necesita actualizar más frecuentemente y
+necesita seguir midiendo,
+
+181
+00:13:21,230 --&gt; 00:13:26,080
+mientras la aplicación se esté ejecutando
+debido a que la localización del usuario está cambiando.
+
+182
+00:13:27,260 --&gt; 00:13:30,940
+Aplicaciones como la que acabamos de ver
+necesitaran una
+
+183
+00:13:30,940 --&gt; 00:13:35,130
+sola buena medición, así que pueden
+medir con menor frecuencia y durante menos tiempo.
+
+184
+00:13:36,500 --&gt; 00:13:39,590
+Utiliza la última medición precisa necesaria y
+
+185
+00:13:39,590 --&gt; 00:13:41,880
+solo usa el GPS si es realmente necesario.
+
+186
+00:13:43,740 --&gt; 00:13:45,997
+Deshabilita las actualizaciones en OnPause.
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture75:es&amp;oldid=23873">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture75:es&amp;oldid=23873</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

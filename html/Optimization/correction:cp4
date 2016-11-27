@@ -1,0 +1,24 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Optimization:correction:cp4</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>In the model of Sudoku -- at about 12:36 in CP 4 (slide 30) -- there seems to be a typo.</p>
+<p>In the third constraint (the one on 3x3 blocks) it appears that $$s[i,j]$$ should be replaced with $$s[r,c]$$.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Optimization:correction:cp4&amp;oldid=13326">https://share.coursera.org/wiki/index.php?title=Optimization:correction:cp4&amp;oldid=13326</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,68 @@
+# Welcome
+
+Join the data revolution. Companies are searching for data scientists. This specialized field demands multiple skills not easy to obtain through conventional curricula. Introduce yourself to the basics of data science and leave armed with practical experience extracting value from big data.
+
+While the main course website is your primary source for materials related to this course, we will post auxiliary materials here on the wiki.
+
+# Syllabus
+
+## Part 0: Introduction
+
+Week 1, May 1, 2013
+
+  * Introduction: data science articulated, history and context, technology landscape
+  * Data science examples, case studies
+
+    Python introduction:<http://marakana.com/bookshelf/python_fundamentals_tutorial/index.html>
+
+    Forum Post: [A Quick Rundown of Python (written for this class)](https://class.coursera.org/datasci-001/forum/thread?thread_id=1674)
+
+    [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) (Actually, it's not so hard.)
+
+## Part 1: Data Manipulation
+
+Week 2, May 8, 2013 
+
+   * Databases and the relational algebra
+   * Parallel databases, parallel query processing, in-database analytics 
+ 
+Week 3, May 15, 2013
+
+   * MapReduce, Hadoop, relationship to databases, algorithms, extensions, languages
+   * Key-value stores and NoSQL; tradeoffs of SQL and NoSQL
+
+## Part 2: Analytics
+
+Week 4, May 22, 2013
+
+  * Experimental methodology and design, introduction to R
+  * Supervised learning: simple nearest neighbor, decision trees, decision forests
+	
+Week 5, May 29, 2013   
+
+  * Unsupervised learning: k-means, multi-dimensional scaling	
+  * Overfitting, regularization: lasso
+
+## Part 3: Communicating Results
+
+Week 6, June 5, 2013
+
+  * Visualization, data products, visual data analytics   
+  * Provenance, privacy, ethics, governance
+    
+## Part 4: Special Topics
+
+Week 7, June 12, 2013
+
+  * Graph Analytics: PageRank, community detection, recursive queries, iterative processing
+  * Collaborative Filtering: slope-one
+
+Week 8, June 19, 2013
+
+  * Text Analytics: latent semantic analysis
+  * Stream Analytics: bloom filters, count-min sketch
+
+#Software Setup Tips
+  * [[Mac Users]]
+  * Windows Users
+  * Linux Users

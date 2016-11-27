@@ -1,0 +1,74 @@
+#Induction and Deduction: a clarification of concepts
+
+<sup>*by [Nuno Fernandes](https://class.coursera.org/solidsciencemethods-001/forum/profile?user_id=5612778)*, on [1.05 Englightenment](https://share.coursera.org/wiki/index.php/Quantitativemethods:Main#1.05_Enlightenment)</sup>
+
+
+<sub> [Irving Rothchild](http://www.biolreprod.org/content/76/4/736.full) says:</sub>
+>>> *"Induction and deduction are two, usually different but never contradictory, approaches to problem solving."* 
+
+
+##General considerations
+
+
+>>>"*A commonly held idea of the distinction between
+these logical paths to knowledge is that induction is the
+formation of a generalization derived from examination
+of a set of particulars, while deduction is the identification
+of an unknown particular, drawn from its resemblance
+to a set of known facts.*" <sup>([1][1])</sup>
+
+
+##Induction
+
+
+[Irving Rothchild](http://www.biolreprod.org/content/76/4/736.full) in his article [*Induction, Deduction and the Scientific Method: an eclectic overview of the practice of science*](http://www.faculty.biol.ttu.edu/carr/resources/induction-rothchild-2006.pdf) quotes the [Oxford English Dictionary](http://www.oed.com/) that states, regarding induction that ***to induce*** (in relation to science and logic) is:
+
+>>>“*to derive by reasoning, to lead to something as a conclusion, or inference, to suggest or imply*”
+
+***Induction*** is defined as:
+
+>>>"*the process of inferring a general law or
+principle from observation of particular instances.*”
+
+[Rothchild](http://www.biolreprod.org/content/76/4/736.full) also refers to the [Encyclopedia Britannica](http://www.britannica.com/), presenting us with two definitions by Stuart Mill:
+
+>>>“*the operation of discovering and proving general propositions*”
+
+>>>“*that operation of the mind by which we infer that what we know to be true in a particular case or cases will be true in all cases that resemble the former in certain assignable respects.*”
+
+
+##Deduction
+
+In what refers to ***deduction***, [Rothchild](http://www.biolreprod.org/content/76/4/736.full) quotes, again, the [Oxford English Dictionary](http://www.oed.com/):
+
+>>>"*inference by reasoning from generals to particulars*” 
+>>>>or 
+
+>>>“*the process of deducing from something known or assumed...*”
+
+And ***to deduce*** is
+
+>>>"*to show or hold a thing to be derived from etc...*"
+
+
+##A simple distinction
+
+**Induction** can be defined as a process of reasoning that draws (infers) a general conclusion from individual observations or specific premises.
+
+On the other hand, **deduction** applies a general truth (from which this type of reasoning starts) to a specific situation, enabling us to draw a specific conclusion about the specific case being studied, from the two previous premises. 
+  
+
+
+
+
+# References
+
++ <sub> 1. Induction, Deduction and the Scientific Method: an eclectic overview of the practice of science (http://www.faculty.biol.ttu.edu/carr/resources/induction-rothchild-2006.pdf)</sub>
+
+
+[1]: http://www.faculty.biol.ttu.edu/carr/resources/induction-rothchild-2006.pdf "Induction, Deduction and the Scientific Method: an eclectic overview of the practice of science"
+
+
+[[Category: Methods and Statistics in Social Sciences: Quantitative Methods]]
+[[Category:Origins of the scientific method]]
+[[Category:Enlightenment]]

@@ -1,0 +1,768 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture63:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="Graphics_and_Animation_-_Part_2_-_Italian_subtitles">Graphics and Animation - Part 2 - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture61:it" title="Android-001:Subtitles:Lecture61:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture63:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture63:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture63:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture63:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture63:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture63:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture63:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture63:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture65:it" title="Android-001:Subtitles:Lecture65:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/u1mi17xu93q6plh/6%20-%202%20-%20Graphics%20and%20Animation%20-%20Part%202%20%2812-26%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:09,880 --&gt; 00:00:13,950
+Hi.
+I'm Adam Porter, and this is Programming
+
+2
+00:00:13,950 --&gt; 00:00:18,030
+Mobile Applications for Android Handheld
+Systems.
+
+3
+00:00:19,300 --&gt; 00:00:23,920
+Si si vuole disegnare oggetti grafici
+piu complessi e aggiornare questi oggetti
+
+4
+00:00:23,920 --&gt; 00:00:29,140
+frequentemente, allora si possono 
+usare i Canvas.
+
+5
+00:00:29,140 --&gt; 00:00:35,020
+Come ho detto prima, un canvas e' un tipo 
+di contesto o meccanismo per disegnare
+
+6
+00:00:35,020 --&gt; 00:00:40,020
+su un bitmap.
+E si puo accedere a un canvas o attraverso
+
+7
+00:00:40,020 --&gt; 00:00:45,220
+un generico oggetto View o mediante una speciale 
+sottoclasse di View, chiamata Surfaceview
+
+8
+00:00:47,000 --&gt; 00:00:53,190
+solitamente, viene usata la generica view
+quando gli aggiornamenti sono meno frequenti
+
+9
+00:00:53,190 --&gt; 00:00:55,040
+e se si usa questo approccio
+
+10
+00:00:55,040 --&gt; 00:00:59,480
+l'applicazione dovrebbe creare una
+sottoclasse custom di View.
+
+11
+00:00:59,480 --&gt; 00:01:00,430
+E poi il sistema
+
+12
+00:01:00,430 --&gt; 00:01:08,030
+fornira il canvas alla View attraverso
+una chiamata al suo metodo onDraw()
+
+13
+00:01:08,030 --&gt; 00:01:11,550
+Se invece l'applicazione ha bisogno di
+aggiornamenti frequenti della
+
+14
+00:01:11,550 --&gt; 00:01:16,650
+sua grafica, allora si dovrebbe considerare
+l'uso della classe SurfaceView.
+
+15
+00:01:16,650 --&gt; 00:01:23,220
+con questo approccio, l'applicazione
+crea una sottoclase custom di SurfaceView
+
+16
+00:01:23,220 --&gt; 00:01:26,680
+e creera' anche un thread secondario
+con
+
+17
+00:01:26,680 --&gt; 00:01:30,610
+il quale si occupera' delle operazioni
+di disegno su questa SurfaceView
+
+18
+00:01:31,780 --&gt; 00:01:36,290
+A runtime, l'applicazione puo poi acquisire
+il proprio canvas, e
+
+19
+00:01:36,290 --&gt; 00:01:41,410
+quindi, avere un controllo migliore
+su come e quando avviene
+
+20
+00:01:41,410 --&gt; 00:01:46,100
+il disegno.
+Questa applicazione di esempio e' chiamata
+
+21
+00:01:46,100 --&gt; 00:01:52,330
+GraphicsCanvasBubble.
+L'idea dietro questa applicazione
+
+22
+00:01:52,330 --&gt; 00:01:56,810
+e' che disegnera' una View
+e poi la aggiornera'
+
+23
+00:01:56,810 --&gt; 00:02:01,330
+Ma gli aggiornamenti sono piuttosto 
+infrequenti, circa ogni secondo
+
+24
+00:02:01,330 --&gt; 00:02:05,290
+Questa app ha un thread interno 
+che si sveglia
+
+25
+00:02:05,290 --&gt; 00:02:09,120
+ogni secodo circa, e sposta la View.
+
+26
+00:02:10,220 --&gt; 00:02:15,800
+E poi usa un canvas in quanto ridisegna la 
+View nella sua nuova posizione.
+
+27
+00:02:15,800 --&gt; 00:02:16,800
+Vediamolo in azione.
+
+28
+00:02:24,350 --&gt; 00:02:26,100
+Questo e' il mio device.
+
+29
+00:02:26,100 --&gt; 00:02:30,600
+Ora lanciamo
+GraphicsCanvasBubble.
+
+30
+00:02:32,150 --&gt; 00:02:37,220
+Questa app parte con una bolla disegnata 
+in una posizione random
+
+31
+00:02:38,670 --&gt; 00:02:44,290
+E ogni secondo circa, puoi vedere che la
+bolla e' cancellata, spostata
+
+32
+00:02:44,290 --&gt; 00:02:50,200
+e poi ridisegnata nella nuova posizione.
+Guardiamo il codice
+
+33
+00:02:50,200 --&gt; 00:02:51,120
+di questa applicaizone.
+
+34
+00:02:53,500 --&gt; 00:02:58,440
+Qui c'e' GraphicsCanvasBubble
+aperta nell'IDE.
+
+35
+00:02:59,830 --&gt; 00:03:01,760
+Apriamo l'activity principale.
+
+36
+00:03:05,400 --&gt; 00:03:07,420
+Si puo vedere che l'app
+
+37
+00:03:07,420 --&gt; 00:03:11,440
+carica una bitmap dalla cartella delle 
+risorse.
+
+38
+00:03:11,440 --&gt; 00:03:13,810
+e poi usa questa bitmap per creare un
+
+39
+00:03:13,810 --&gt; 00:03:17,565
+un'istanza di una classe View custom
+chiamata BubbleView.
+
+40
+00:03:19,230 --&gt; 00:03:23,910
+Poi il codice aggiunge l'istanza
+BubbleView al layout.
+
+41
+00:03:25,370 --&gt; 00:03:28,020
+E poi crea e lancia un nuovo thread.
+
+42
+00:03:29,440 --&gt; 00:03:30,540
+E questo thread va in
+
+43
+00:03:30,540 --&gt; 00:03:36,850
+un loop, e ad ogni iterazione, chiama
+il metodo per spostare la BubbleView.
+
+44
+00:03:38,830 --&gt; 00:03:44,500
+Come vedremo tra poco, questo metodo cambia
+la posizione della BubbleView
+
+45
+00:03:44,500 --&gt; 00:03:48,820
+E poi ritorna vero o falso in base a che
+la nuova posizione
+
+46
+00:03:48,820 --&gt; 00:03:53,740
+e' ancora visibile o meno sul display.
+
+47
+00:03:55,620 --&gt; 00:03:59,720
+Successivamente il codice chiama il
+metodo postInvalidate() della classe view
+
+48
+00:04:01,250 --&gt; 00:04:07,950
+Questo dice ad Android di ridisegnare
+questa View , poi il thread si addormenta
+
+49
+00:04:07,950 --&gt; 00:04:13,980
+per un secondo, e quindi riesegue le stesse
+operazioni un'altra volta
+
+50
+00:04:15,700 --&gt; 00:04:20,810
+Salteremo ora la maggior aprte 
+dei dettagli di come si muove il BubbleView
+
+51
+00:04:20,810 --&gt; 00:04:24,440
+Ci focalizzeremo invece su come 
+viene ridisegnato.
+
+52
+00:04:26,070 --&gt; 00:04:30,650
+Quando il thread chiama il metodo
+postInvalidate() dice
+
+53
+00:04:30,650 --&gt; 00:04:35,340
+ad android che il BubbleView
+ha bisogno di essere ridisegnato.
+
+54
+00:04:36,580 --&gt; 00:04:41,230
+Se e' cosi, android chiamera' il
+metodo onDraw() di BubbleView,
+
+55
+00:04:42,240 --&gt; 00:04:46,510
+gli passera' il canvas, con il quale il
+BubbleView e' disegnato.
+
+56
+00:04:47,790 --&gt; 00:04:48,770
+Diamo un'occhiata al metodo
+
+57
+00:04:50,240 --&gt; 00:04:56,300
+come potete vedere, questo metodo prende
+il canvas passatogli e chiama
+
+58
+00:04:56,300 --&gt; 00:05:02,480
+il suo metodo DrawBitmap() passandogli
+il bitmap da disegnare.
+
+59
+00:05:02,480 --&gt; 00:05:07,580
+gli passera anche le coordinate x e y della
+posizione dove deve essere disegnato.
+
+60
+00:05:08,770 --&gt; 00:05:13,860
+E finalmente gli passera' un oggetto Paint
+che definisce i parametri dello stile
+
+61
+00:05:13,860 --&gt; 00:05:15,430
+relativi a questa operazione 
+di disegno.
+
+62
+00:05:17,900 --&gt; 00:05:21,920
+Ora, se volessimo aumentare la frequenza
+
+63
+00:05:21,920 --&gt; 00:05:24,860
+con il quale andiamo a ridisegnare la bolla
+
+64
+00:05:24,860 --&gt; 00:05:28,380
+per renderla piu fluida sul display
+
+65
+00:05:28,380 --&gt; 00:05:34,300
+potremmo usare un canvas e una
+SurfaceView.
+
+66
+00:05:34,300 --&gt; 00:05:37,320
+Come ho detto prima, unaSurfaceViews
+necessita di
+
+67
+00:05:37,320 --&gt; 00:05:41,360
+di un nuovo non-UI thread che si 
+occupera di lei.
+
+68
+00:05:41,360 --&gt; 00:05:43,980
+Quindi queste operazioni SurfaceView
+
+69
+00:05:43,980 --&gt; 00:05:48,220
+non interferiranno con le operazioni
+dell'UI thread
+
+70
+00:05:48,220 --&gt; 00:05:52,350
+Approfondiamo la classe SurfaceView.
+
+71
+00:05:52,350 --&gt; 00:05:57,960
+Una SurfaceView gestisce un'area di disegno
+piu a basso livello chiamata Surface.
+
+72
+00:05:57,960 --&gt; 00:06:02,978
+Questa Surface e' un'area dedicata al 
+disegno che e' posizionata all'interno
+
+73
+00:06:02,978 --&gt; 00:06:09,360
+della gerarchia di View dell'applicazione.
+Per definire una SurfaceView,
+
+74
+00:06:09,360 --&gt; 00:06:15,040
+abbiamo bisogno di creare una classe
+custom, che e' sottoclasse di SurfaceView
+
+75
+00:06:15,040 --&gt; 00:06:17,050
+Questa classe custom deve
+
+76
+00:06:17,050 --&gt; 00:06:22,119
+anche impementare l'interfaccia
+SurfaceHolder.Callback.
+
+77
+00:06:24,370 --&gt; 00:06:26,636
+Per usare questa nuova SurfaceView, abbiamo
+bisogno di fare due cose.
+
+78
+00:06:26,636 --&gt; 00:06:27,136
+Primo, dobbiamo
+
+79
+00:06:30,270 --&gt; 00:06:32,650
+impostare la SurfaceView.
+
+80
+00:06:32,650 --&gt; 00:06:38,270
+Secondo, dobbiamo disegnare sulla
+SurfaceView che si vuole impostare
+
+81
+00:06:38,270 --&gt; 00:06:40,800
+Parliamo dei due passi, uno
+alla volta.
+
+82
+00:06:42,640 --&gt; 00:06:48,870
+Per configurare una SurfaceView, bisogna 
+prima usare il metodo getHolder per
+
+83
+00:06:48,870 --&gt; 00:06:55,530
+acquisire il SurfaceHolder di SurfaceView.
+Poi
+
+84
+00:06:55,530 --&gt; 00:07:01,180
+si deve registrare il SurfaceView per le
+SurfaceHolder callbacks,
+
+85
+00:07:01,180 --&gt; 00:07:04,860
+invocando il metodo addCallback().
+
+86
+00:07:04,860 --&gt; 00:07:09,652
+Di questi metodi, surfaceCreated
+
+87
+00:07:09,652 --&gt; 00:07:14,970
+e' chiamato quando il SurfaceView's
+surface e' stato creato.
+
+88
+00:07:16,020 --&gt; 00:07:20,690
+fino a quando questo metodo viene chiamato,
+non si puo disegnare sul surface
+
+89
+00:07:20,690 --&gt; 00:07:25,210
+perche' non e' pronto.
+Il metodo surfaceChanged()
+
+90
+00:07:25,210 --&gt; 00:07:28,440
+e' chiamato ogni volta che 
+vengonno fatti
+
+91
+00:07:28,440 --&gt; 00:07:31,600
+cambiamenti strutturali, come la modifica
+della dimensione del surface.
+
+92
+00:07:32,630 --&gt; 00:07:35,530
+Il metodo surfaceDestroyed()
+
+93
+00:07:35,530 --&gt; 00:07:40,240
+viene invocato appena prima che il
+surface venga distrutto.
+
+94
+00:07:40,240 --&gt; 00:07:45,930
+Non appena questo metodo ritorna, non si
+potraanno piu richiamare le operazioni che
+
+95
+00:07:45,930 --&gt; 00:07:46,680
+disegneranno sul surface
+
+96
+00:07:49,020 --&gt; 00:07:52,280
+L'ultimo step per la configurazione e' 
+creare il thread
+
+97
+00:07:52,280 --&gt; 00:07:57,170
+sara' usato per eseguire le operazioni
+di disegno sul SurfaceView.
+
+98
+00:07:57,170 --&gt; 00:08:02,120
+Ricordate che i metodi di callback
+di SurfaceHolder
+
+99
+00:08:02,120 --&gt; 00:08:07,670
+saranno chiamati, di solito, dal
+main thread e non dal threa di SurfaceView
+
+100
+00:08:07,670 --&gt; 00:08:10,630
+Quindi dovrete assicurarvi 
+di sincronizzare
+
+101
+00:08:10,630 --&gt; 00:08:14,150
+l'accesso a ogni dato che e'
+usato da entrambi i thread.
+
+102
+00:08:16,880 --&gt; 00:08:20,780
+Una volta configurato il SurfaceView, si
+puo disegnare su esso.
+
+103
+00:08:22,000 --&gt; 00:08:24,880
+Per disegnare, occorre prima
+acquisire il lock
+
+104
+00:08:24,880 --&gt; 00:08:30,222
+sul canvase invocando il metodo 
+lockCanvas()
+
+105
+00:08:30,222 --&gt; 00:08:35,160
+Poi, si possono fare tutte le operazioni
+di disegno desiderate sul canvas
+
+106
+00:08:35,160 --&gt; 00:08:40,380
+Per esempio, chiamando i metodi canvas, 
+come drawBitmap().
+
+107
+00:08:40,380 --&gt; 00:08:42,220
+E infine, rilasciare
+
+108
+00:08:42,220 --&gt; 00:08:46,470
+il lock sul canvas, permettendo ad Android
+di aggiornare il display.
+
+109
+00:08:46,470 --&gt; 00:08:47,240
+E questo verra' fatto
+
+110
+00:08:47,240 --&gt; 00:08:51,760
+chiamando il metodo
+unlockCanvasAndPost di  SurfaceHolder
+
+111
+00:08:52,800 --&gt; 00:08:56,240
+Diamo un'occhiata alla differente
+implementazione
+
+112
+00:08:56,240 --&gt; 00:09:02,019
+dell'ultima applicazione di esempio, chiamata
+GraphicsBubbleCanvas Surface View.
+
+113
+00:09:02,019 --&gt; 00:09:04,648
+[BLANK_AUDIO]
+
+114
+00:09:04,648 --&gt; 00:09:07,123
+Qui c'e' il mio device
+
+115
+00:09:07,123 --&gt; 00:09:09,749
+Ora lancero'
+l'applicazione
+
+116
+00:09:09,749 --&gt; 00:09:14,524
+GraphicsCanvasBubbleSurfaceView
+
+117
+00:09:14,524 --&gt; 00:09:19,100
+E quando lo faccio, l'applicazione
+parte e
+
+118
+00:09:19,100 --&gt; 00:09:24,060
+disegna la bolla in una posizione
+casuale sul display.
+
+119
+00:09:24,060 --&gt; 00:09:29,950
+Ma questa volta, invece di aggiornare
+la posizione ogni secondo, questa app
+
+120
+00:09:29,950 --&gt; 00:09:35,270
+provera' ad effettuare quanti piu
+aggiornamenti possibili.
+
+121
+00:09:35,270 --&gt; 00:09:40,390
+In piu, l'app ruotera' il BubbleView per
+dare l'apparenza
+
+122
+00:09:40,390 --&gt; 00:09:45,110
+che la bolla stia volteggiando nello 
+spazio. E' qui che va quindi.
+
+123
+00:09:47,260 --&gt; 00:09:50,210
+Come potete vedere, la bolla e' dolcemente
+
+124
+00:09:50,210 --&gt; 00:09:54,660
+animata, si muove e ruota come 
+se stesse galleggiando.
+
+125
+00:09:55,700 --&gt; 00:09:58,050
+diamo un occhiata al codice sorgente.
+
+126
+00:10:01,600 --&gt; 00:10:04,670
+Qui c'e' l'app
+GraphicsCanvasBubbleSurfaceView
+
+127
+00:10:04,670 --&gt; 00:10:07,150
+aperta nell'IDE.
+
+128
+00:10:08,720 --&gt; 00:10:10,460
+Apriamo l'activity principale.
+
+129
+00:10:12,060 --&gt; 00:10:17,900
+Nel metodo onCreate(), il codice carica un 
+bitmap dalla cartella delle risorse.
+
+130
+00:10:19,710 --&gt; 00:10:21,650
+E poi lo usa per creare una
+
+131
+00:10:21,650 --&gt; 00:10:25,760
+istanza della classe custom BubbleView
+(di View).
+
+132
+00:10:26,990 --&gt; 00:10:33,676
+Guardiamo la classe BubbleView.
+Essa estende la classe SurfaceView
+
+133
+00:10:33,676 --&gt; 00:10:39,580
+e impementa l'interfaccia
+ SurfaceHolder.Callback
+
+134
+00:10:39,580 --&gt; 00:10:43,170
+Il costruttore di questa classe fa un
+sacco di pulizie, e
+
+135
+00:10:43,170 --&gt; 00:10:46,020
+poi alla fine di questo metodo, c'e'
+
+136
+00:10:46,020 --&gt; 00:10:52,480
+una chiamata al metodo getHolder()
+che ritorna un SurfaceHolder.
+
+137
+00:10:52,480 --&gt; 00:10:57,967
+Il codice prende questo SurfaceHolder
+e registra questa BubbleView (usando this)
+
+138
+00:10:57,967 --&gt; 00:11:02,370
+per le callbacks.
+Vediamo cosa succede quando
+
+139
+00:11:02,370 --&gt; 00:11:07,430
+arrivano queste callbacks.
+All'inizio, vediamo
+
+140
+00:11:07,430 --&gt; 00:11:12,520
+che quando il surface per la SurfaceView
+viene creato, il codice crea
+
+141
+00:11:12,520 --&gt; 00:11:18,560
+un nuovo thread, e poi lo avvia.
+Questo thread esegue il suo metodo run()
+
+142
+00:11:18,560 --&gt; 00:11:21,970
+che va in un ciclo.
+Per ogni iterazione,
+
+143
+00:11:24,270 --&gt; 00:11:27,520
+controlla se il thread e' stato interrotto
+
+144
+00:11:27,520 --&gt; 00:11:34,200
+E se non lo e', allora richiama il metodo
+move() che come prima muove la bolla
+
+145
+00:11:34,200 --&gt; 00:11:39,900
+e ritorna un booleano che indica se la
+bubbleView e' visibile sullo schermo o meno
+
+146
+00:11:41,250 --&gt; 00:11:44,180
+Se questi controlli restituiscono true,
+
+147
+00:11:44,180 --&gt; 00:11:49,050
+il codice prova a lockare il canvas
+del SurfaceHolder.
+
+148
+00:11:49,050 --&gt; 00:11:49,280
+E se ha successo
+
+149
+00:11:49,280 --&gt; 00:11:51,720
+il codice chiama il metodo
+
+150
+00:11:51,720 --&gt; 00:11:55,770
+drawBubble passandogli il canvas
+lockato.
+
+151
+00:11:57,080 --&gt; 00:12:00,560
+Poi finalmente, l'applicazione
+sblocca il
+
+152
+00:12:00,560 --&gt; 00:12:04,246
+canvas e permette ad Android di
+aggiornare il display
+
+153
+00:12:04,246 --&gt; 00:12:07,652
+Torniamo indietro e guardiamo il metodo
+drawBubble()
+
+154
+00:12:09,290 --&gt; 00:12:14,802
+Questo metodo prima ridisegna lo sfondo
+del canvas
+
+155
+00:12:14,802 --&gt; 00:12:21,106
+poi lo ruota, infine ridisegna
+la bolla sul canvas.
+
+156
+00:12:21,106 --&gt; 00:12:21,995
+[BLANK_AUDIO].
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture63:it&amp;oldid=23552">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture63:it&amp;oldid=23552</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

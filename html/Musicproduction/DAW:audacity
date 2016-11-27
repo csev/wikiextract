@@ -1,0 +1,197 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:audacity</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Overview"><span class="tocnumber">1</span> <span class="toctext">Overview</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Project_Specifics"><span class="tocnumber">1.1</span> <span class="toctext">Project Specifics</span></a></li>
+<li class="toclevel-2"><a href="#File_Type"><span class="tocnumber">1.2</span> <span class="toctext">File Type</span></a></li>
+<li class="toclevel-2"><a href="#Bit_depth"><span class="tocnumber">1.3</span> <span class="toctext">Bit depth</span></a></li>
+<li class="toclevel-2"><a href="#Sampling_rate"><span class="tocnumber">1.4</span> <span class="toctext">Sampling rate</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">2</span> <span class="toctext">Recording</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Metronome.28click_track.29"><span class="tocnumber">2.1</span> <span class="toctext">Metronome(click track)</span></a></li>
+<li class="toclevel-2"><a href="#Count_in"><span class="tocnumber">2.2</span> <span class="toctext">Count in</span></a></li>
+<li class="toclevel-2"><a href="#Audio_recording_tips"><span class="tocnumber">2.3</span> <span class="toctext">Audio recording tips</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">3</span> <span class="toctext">Editing Audio</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Trimming"><span class="tocnumber">3.1</span> <span class="toctext">Trimming</span></a></li>
+<li class="toclevel-2"><a href="#Cutting"><span class="tocnumber">3.2</span> <span class="toctext">Cutting</span></a></li>
+<li class="toclevel-2"><a href="#Grid"><span class="tocnumber">3.3</span> <span class="toctext">Grid</span></a></li>
+<li class="toclevel-2"><a href="#Change_grid_resolution"><span class="tocnumber">3.4</span> <span class="toctext">Change grid resolution</span></a></li>
+<li class="toclevel-2"><a href="#modifier_key_to_toggle_grid"><span class="tocnumber">3.5</span> <span class="toctext">modifier key to toggle grid</span></a></li>
+<li class="toclevel-2"><a href="#add_fades"><span class="tocnumber">3.6</span> <span class="toctext">add fades</span></a></li>
+<li class="toclevel-2"><a href="#modify_fades"><span class="tocnumber">3.7</span> <span class="toctext">modify fades</span></a></li>
+<li class="toclevel-2"><a href="#efficient_compiling_of_multiple_takes"><span class="tocnumber">3.8</span> <span class="toctext">efficient compiling of multiple takes</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">4</span> <span class="toctext">Efficient Editing</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Zoom"><span class="tocnumber">4.1</span> <span class="toctext">Zoom</span></a></li>
+<li class="toclevel-2"><a href="#Nudge"><span class="tocnumber">4.2</span> <span class="toctext">Nudge</span></a></li>
+<li class="toclevel-2"><a href="#Cycle"><span class="tocnumber">4.3</span> <span class="toctext">Cycle</span></a></li>
+<li class="toclevel-2"><a href="#Merge"><span class="tocnumber">4.4</span> <span class="toctext">Merge</span></a></li>
+<li class="toclevel-2"><a href="#Name"><span class="tocnumber">4.5</span> <span class="toctext">Name</span></a></li>
+<li class="toclevel-2"><a href="#Color"><span class="tocnumber">4.6</span> <span class="toctext">Color</span></a></li>
+<li class="toclevel-2"><a href="#Markers"><span class="tocnumber">4.7</span> <span class="toctext">Markers</span></a></li>
+<li class="toclevel-2"><a href="#Change_tempo"><span class="tocnumber">4.8</span> <span class="toctext">Change tempo</span></a></li>
+<li class="toclevel-2"><a href="#Other_efficient_editing_tips"><span class="tocnumber">4.9</span> <span class="toctext">Other efficient editing tips</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">5</span> <span class="toctext">Editing MIDI</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Velocity"><span class="tocnumber">5.1</span> <span class="toctext">Velocity</span></a></li>
+<li class="toclevel-2"><a href="#Quantization"><span class="tocnumber">5.2</span> <span class="toctext">Quantization</span></a></li>
+<li class="toclevel-2"><a href="#Control_Change_data"><span class="tocnumber">5.3</span> <span class="toctext">Control Change data</span></a></li>
+<li class="toclevel-2"><a href="#MIDI_monitor.28through.29"><span class="tocnumber">5.4</span> <span class="toctext">MIDI monitor(through)</span></a></li>
+<li class="toclevel-2"><a href="#Other_MIDI_editing_tips"><span class="tocnumber">5.5</span> <span class="toctext">Other MIDI editing tips</span></a></li>
+<li class="toclevel-2"><a href="#Adding_software_instruments"><span class="tocnumber">5.6</span> <span class="toctext">Adding software instruments</span></a></li>
+<li class="toclevel-2"><a href="#Other_MIDI_tips"><span class="tocnumber">5.7</span> <span class="toctext">Other MIDI tips</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">6</span> <span class="toctext">Mixing</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Types_of_Tracks"><span class="tocnumber">6.1</span> <span class="toctext">Types of Tracks</span></a></li>
+<li class="toclevel-2"><a href="#Adding_Effects"><span class="tocnumber">6.2</span> <span class="toctext">Adding Effects</span></a></li>
+<li class="toclevel-2"><a href="#Channel_Strip_Layout"><span class="tocnumber">6.3</span> <span class="toctext">Channel Strip Layout</span></a></li>
+<li class="toclevel-2"><a href="#Configuring_a_Submix"><span class="tocnumber">6.4</span> <span class="toctext">Configuring a Submix</span></a></li>
+<li class="toclevel-2"><a href="#Configuring_reverb_in_a_send-and-return_scheme"><span class="tocnumber">6.5</span> <span class="toctext">Configuring reverb in a send-and-return scheme</span></a></li>
+<li class="toclevel-2"><a href="#Busses"><span class="tocnumber">6.6</span> <span class="toctext">Busses</span></a></li>
+<li class="toclevel-2"><a href="#Automation_recording"><span class="tocnumber">6.7</span> <span class="toctext">Automation recording</span></a></li>
+<li class="toclevel-2"><a href="#Automation_editing"><span class="tocnumber">6.8</span> <span class="toctext">Automation editing</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Useful_resources"><span class="tocnumber">7</span> <span class="toctext">Useful resources</span></a></li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Overview">Overview</span></h1>
+<p>Audacity is a freeware program mainly for audio editing.
+It was started by Dominic Mazzoni and Roger Dannenberg at Carnegie Mellon University, on May 28th 2000.</p>
+<h3> <span class="mw-headline" id="Project_Specifics"><b>Project Specifics</b></span></h3>
+<p>Audacity uses "project" (.aup) files, a format native to the program.</p>
+<p>Projects can be moved from their location, provided both the .aup file <em>and</em> the corresponding "_data" folder gets moved with it.</p>
+<p>When working on a project, as in any DAW, it is always a good idea to save, <i>Save, <b>SAVE!!!</b></i></p>
+<p>(Tip: Sometimes, while working on a project, after making <em>minor</em> edits
+(such as the position/layout of the tracks)
+...sometimes you'll find yourself unable to Save.
+If this is the case, "Save Project" will only appear 'greyed-out' in the "File..." menu.</p>
+<p>To get around this, simply perform a simple action, such as de-creasing and then in-creasing the gain to-and-from 0 dB on an individual track.
+This will allow you to save with your minor change, without having to resort to something like applying an effect, undoing, and <i>then</i> saving.</p>
+<h3> <span class="mw-headline" id="File_Type"><b>File Type</b></span></h3>
+<p>The file type Audacity uses, as aforementioned, is the .aup file-type. (A.U.dacity P.roject)
+It is a container format, containing project and track information data.
+When created, a '_data' folder gets made alongside it, containing .au files that represent all the audio data in your project.</p>
+<h3> <span class="mw-headline" id="Bit_depth"><b>Bit depth</b></span></h3>
+<p>Bit depths supported by Audacity are 16-bit (RedBook audio), 24-bit, and 32-bit floating point.</p>
+<p>To <i>change</i> a project's <b>Bit Depth,</b> simply navigate to Edit &gt; Preferences, select <b>"Quality"</b> on the left-hand side, and choose your desired bit-depth from the dropdown menu next to <b>"Default Bit Rate".</b></p>
+<h3> <span class="mw-headline" id="Sampling_rate"><b>Sampling rate</b></span></h3>
+<p>Audacity can handle sample rates from 8000-96000 hZ. 192000 may be supported, depending on the hardware installed in the user's workstation.</p>
+<p>To <i>change</i> a project's <b>Sampling Rate,</b> navigate to <b>Edit &gt; Preferences,</b> select <b>"Quality"</b> on the left, and then choose your desired Sample Rate from the dropdown menu next to <b>"Default Sample Rate."</b></p>
+<h1> <span class="mw-headline" id="Recording">Recording</span></h1>
+<p>Audacity is primarily an audio recording application, editing can be done at the user's will with the plugins provided.
+Think "Sound Recorder" back from the Windows XP days, spruced up a bit and made to look ready for business.</p>
+<p>Recording in Audacity is a very basic operation.</p>
+<p>The interface provides the "Transport Toolbar", which has Pause, Play, Stop, Jump-To-Start, Jump-To-End, and <b>Record</b> buttons.</p>
+<p>You know which one to use.&#160;;)</p>
+<p>If there are any issues that come up in the recording, such as...no sound showing up as recorded at all,
+don't throw out the track with the trash, rather, try <b>Amplification</b>. ( Effect &gt; Amplify )</p>
+<p>Some recordings simply come out too quiet, either because<br />
+<ul>
+<li>The hardware you're using isn't powerful/dedicated enough to properly power the microphone and record from it</li>
+<li>Your recording level is too low</li>
+<li>Your device isn't functioning/properly setup.</li>
+</ul>
+<br /></p>
+<p>The 1st issue can be resolved simply by buying higher quality hardware, such as a <b>sound card</b>.</p>
+<p>The 2nd can be solved by adjusting the <a rel="nofollow" class="external text" href="http://i.imgur.com/WeGEnej.png">"Mixer Toolbar"</a> and raising the Input Volume on the Microphone slider until a desired level is achieved.</p>
+<p>The 3rd issue will be the most difficult one to address; as the improper functioning of a device could be caused by one, if not several, factors, including the state of the computer, the condition of the hardware, the updates (or lack thereof) on the computer for the hardware itself, and any other number of various anomalies.</p>
+<h3> <span class="mw-headline" id="Metronome.28click_track.29">Metronome(click track)</span></h3>
+<p>To create a click track, select Generate &gt; Click track... Adjust the tempo, beats per measure, and other parameters as desired. Note that the click track will begin at the cursor and will be a fixed length. You can change the length when you set the tempo and beats per measure. </p>
+<h3> <span class="mw-headline" id="Count_in">Count in</span></h3>
+<h3> <span class="mw-headline" id="Audio_recording_tips">Audio recording tips</span></h3>
+<p><b>Check your Levels.</b></p>
+<p>Done?<br />
+Good.<br /></p>
+<p><i>Check them again.</i></p>
+<p>...nearing insanity yet?</p>
+<p>Doesn't matter, because <i>the last thing you'll do before your audio-editing life blinks out is <b>check those levels and make sure they're set good.</b></i></p>
+<p>You may find yourself asking, well, why is checking my levels so crucial?<br />
+I'll tell you why.
+Because if you <i>don't</i> do this, (<i>which you <b>should be</b></i>) you'll run into the bane of all audio known as <b>Clipping.</b></p>
+<p>
+There are endless articles, debates, and talks about this, but basically it is the distortion of sound.
+This should be what you fight against, as sound reproduction/recording/playback is at a *loss* when there is clipping present.
+</p>
+<p><i>Checking your levels at all times, whether recording, editing, exporting, applying gain/EQ/effects, is crucial to the preservation of recorded sound.</i></p>
+<h1> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h1>
+<p><a rel="nofollow" class="external text" href="http://manual.audacityteam.org/o/man/audacity_tracks_and_clips.html">This manual page</a> describes how Audacity uses the terms "tracks" and "clips", and how to "split" (cut or delete), merge, and time-shift clips.</p>
+<h3> <span class="mw-headline" id="Trimming">Trimming</span></h3>
+<p><h3> <span class="mw-headline" id="Cutting">Cutting</span></h3>
+<h3> <span class="mw-headline" id="Grid">Grid</span></h3>
+<h3> <span class="mw-headline" id="Change_grid_resolution">Change grid resolution</span></h3>
+<h3> <span class="mw-headline" id="modifier_key_to_toggle_grid">modifier key to toggle grid</span></h3>
+<h3> <span class="mw-headline" id="add_fades">add fades</span></h3>
+<h3> <span class="mw-headline" id="modify_fades">modify fades</span></h3>
+<h3> <span class="mw-headline" id="efficient_compiling_of_multiple_takes">efficient compiling of multiple takes</span></h3></p>
+<h1> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h1>
+<p>[...Insert details of efficient editing here...]</p>
+<h3> <span class="mw-headline" id="Zoom"><a rel="nofollow" class="external text" href="http://manual.audacityteam.org/o/man/zooming.html">Zoom</a></span></h3>
+<p><h3> <span class="mw-headline" id="Nudge">Nudge</span></h3>
+<h3> <span class="mw-headline" id="Cycle">Cycle</span></h3>
+<h3> <span class="mw-headline" id="Merge">Merge</span></h3>
+<h3> <span class="mw-headline" id="Name">Name</span></h3>
+<h3> <span class="mw-headline" id="Color">Color</span></h3>
+<h3> <span class="mw-headline" id="Markers">Markers</span></h3>
+<h3> <span class="mw-headline" id="Change_tempo">Change tempo</span></h3>
+<h3> <span class="mw-headline" id="Other_efficient_editing_tips">Other efficient editing tips</span></h3></p>
+<h1> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h1>
+<p>[...Insert details of editing MIDI here...]</p>
+<h3> <span class="mw-headline" id="Velocity">Velocity</span></h3>
+<p><h3> <span class="mw-headline" id="Quantization">Quantization</span></h3>
+<h3> <span class="mw-headline" id="Control_Change_data">Control Change data</span></h3>
+<h3> <span class="mw-headline" id="MIDI_monitor.28through.29">MIDI monitor(through)</span></h3>
+<h3> <span class="mw-headline" id="Other_MIDI_editing_tips">Other MIDI editing tips</span></h3>
+<h3> <span class="mw-headline" id="Adding_software_instruments">Adding software instruments</span></h3>
+<h3> <span class="mw-headline" id="Other_MIDI_tips">Other MIDI tips</span></h3></p>
+<h1> <span class="mw-headline" id="Mixing">Mixing</span></h1>
+<p>[...Insert details of mixing here...]</p>
+<h3> <span class="mw-headline" id="Types_of_Tracks">Types of Tracks</span></h3>
+<p><h3> <span class="mw-headline" id="Adding_Effects">Adding Effects</span></h3>
+<h3> <span class="mw-headline" id="Channel_Strip_Layout">Channel Strip Layout</span></h3>
+<h3> <span class="mw-headline" id="Configuring_a_Submix">Configuring a Submix</span></h3>
+<h3> <span class="mw-headline" id="Configuring_reverb_in_a_send-and-return_scheme">Configuring reverb in a send-and-return scheme</span></h3>
+<h3> <span class="mw-headline" id="Busses">Busses</span></h3>
+<h3> <span class="mw-headline" id="Automation_recording">Automation recording</span></h3>
+<h3> <span class="mw-headline" id="Automation_editing">Automation editing</span></h3></p>
+<h1> <span class="mw-headline" id="Useful_resources">Useful resources</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://audacity.sourceforge.net/">Audacity Website</a></li>
+<li><a rel="nofollow" class="external text" href="http://manual.audacityteam.org/man/Main_Page">Audacity Manual</a></li>
+<li><a rel="nofollow" class="external text" href="http://forum.audacityteam.org/">Audacity Forums</a></li>
+</ul>
+<p>[...Insert additional resources here...]</p>
+<p>Back to --&gt; *<a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Musicproduction:Main">IMPMOOC MainPage</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:audacity&amp;oldid=28257">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:audacity&amp;oldid=28257</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

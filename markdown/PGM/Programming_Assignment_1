@@ -1,0 +1,64 @@
+### Installing SAMIAM
+SAMIAM has no installation; you only have to unzip it to a directory. But you do need to install Java, and usually also to edit `samiam.bat` in the directory of SAMIAM. 
+
+Look for java.exe. If there is no such file on your computer, you need to install Java.
+
+Open a command prompt and type `java`. If the message you see is `Bad command or file name`, it means that java.exe is not in your path. In that case, edit `samiam.bat` and replace the line 
+
+    call :which java.exe
+
+by
+
+    set EXECCMD="C:\Program Files (x86)\Java\jre6\bin\java.exe"
+
+(or whatever the path to java.exe is).
+Probably you won't be always running this batch from SAMIAM's directory. Therefore, add this line at the beginning:
+
+    cd/d %~d0%~f0
+
+Now try running `samiam.bat`. If you get an error message that includes the words `Could not find agent library calljvmti`, then delete `-Xruncalljvmti`.  Alternatively, you may be getting the error regarding -Xruncalljvmti due to not having the correct version of Java for your operating system; having a 32-bit version of Java on 64-bit Windows 7, for instance, may produce this error; in this case, installing the correct version of java for Windows 7 64-bit may solve your problem.
+
+Or in Windows XP and perhaps many other Windows versions,
+
+Generally you can make Java (or any executable) working for any program that uses it by editing the path variable in Windows. Follow the instructions below,
+
+Go to my computer --> Right click inside it --> Select "Properties" from the right click menu --> Select "Advanced" tab from the "System Properties" menu you get --> Select "Environment Variables" tab you will get the "Environment Variables" menu look for "System Variables" sub-menu --> Select "Path" and click "Edit" tab below --> Under the "Edit System Variables" menu check for the correct Java path inside "Variable Value" --> If it is not there put the correct path to the Java executable like ";C:\Program Files (x86)\Java\jre6\bin" at the end of the line of the "Variable Value" otherwise replace the incorrect one.  
+
+Note: if after changing the java path, you are unable to run "java.exe" from the command prompt, ensure that you do NOT have a space between the semicolon and "C:\" in the path to your java installation; having a space here may cause the path not to work properly.  You may have to close the command prompt and re-open it after you change your system path list as described in the previous example.  Also ensure that your path list does not exceed 255 characters, as in some versions of Windows this will cause truncation of the path to occur and your path, if it's at the end, may not take..
+ 
+Still no luck? Reinstall Java and follow above steps.  Make sure to use the correct version of java for your operating system (e.g. Windows 32 bit vs Windows 64-bit).
+
+** Do not make any other changes to "Variable Value" or you will risk your systems stability
+
+#### Mac installation instructions
+
+Download SAMIAM and unzip it to a convenient directory. Mac OS X usually comes with Java, but the latest versions may not so in that case you will need to install it.
+
+To run SAMIAM you can open the SAMIAM directory in the Finder and double-click on the "runsamiam" Unix Executable file. Alternatively you can use the Terminal and cd to the SAMIAM directory and run this command:
+
+    ./runsamiam
+
+### Using SAMIAM
+
+Bug alert:
+When editing CPD:s on locales that use ',' as a decimal point marker instead of '.', note that the program gives values as separated by ',':  '0,5', '0,5', etc., but SAMIAM requires that the values are given using period as a decimal marker, so you need to rewrite the whole number. '0,5' -> '0.3' or SAMIAM won't accept it.   
+
+### Constructing a Credit Network
+Maybe someone could clarify the 4th point it seems ambiguous. Is good payment history = acceptable payment history OR good payment history = excellent payment history OR  good payment history = acceptable payment history AND  excellent payment history ?
+
+4) It says if a person has high debt ratio (a variable/node defined in the network already) then the probability of his payment history being acceptable/excellent is low while the probability of it being unacceptable is high. P(PH_excel|DR_high) < P(PH_unaccep|DR_high). 
+
+### Factor Product
+indxA and indxB is convenient for calculating the factor product but not necessary, in fact they are actually obscuring a bit what kind of computation you actually are doing.  
+
+
+### Factor Marginalization
+
+The matlab/octave command "accumarray" may be helpful in this part for a vectorized implementation.
+
+### Observing Evidence
+### Computing the Joint Distribution
+### Computing Marginals
+### Monitor Assignment 
+
+A function that pretty prints all the marginals for a given assignment, the function can be found here: https://gist.github.com/3813686

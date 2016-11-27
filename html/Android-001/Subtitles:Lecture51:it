@@ -1,0 +1,1170 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Subtitles:Lecture51:it</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<h3> <span class="mw-headline" id="Alarms_-_Italian_subtitles">Alarms - Italian subtitles</span></h3>
+<ul>
+<li><p><a href="/wiki/index.php/Android-001:Subtitles:Lecture49:it" title="Android-001:Subtitles:Lecture49:it">&lt;&lt; prev</a> | <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture51:en&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture51:en (page does not exist)">en</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture51:es&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture51:es (page does not exist)">es</a> <strong class="selflink">it</strong> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture51:zh-tw&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture51:zh-tw (page does not exist)">zh-tw</a> <a href="/wiki/index.php?title=Android-001:Subtitles:Lecture51:pt&amp;action=edit&amp;redlink=1" class="new" title="Android-001:Subtitles:Lecture51:pt (page does not exist)">pt</a> | <a href="/wiki/index.php/Android-001:Subtitles:Lecture53:it" title="Android-001:Subtitles:Lecture53:it">next &gt;&gt;</a></p></li>
+<li><p><a rel="nofollow" class="external text" href="https://www.dropbox.com/s/9ellgnzoqhklzxt/5%20-%207%20-%20Alarms%20%2817-43%29.srt">Direct download</a></p></li>
+</ul>
+<pre>
+1
+00:00:08,880 --&gt; 00:00:13,560
+Ciao, sono Adam
+Porter, e questo è
+
+2
+00:00:13,560 --&gt; 00:00:18,170
+&quot;Programming Mobile Applications
+for Android Handheld Systems&quot;.
+
+3
+00:00:19,210 --&gt; 00:00:24,510
+Le applicazioni di esempio che abbiamo
+studiato fino ad ora hanno assunto decisioni
+
+4
+00:00:24,510 --&gt; 00:00:29,350
+e poi preso provvedimenti, subito.
+Ma cosa fare
+
+5
+00:00:29,350 --&gt; 00:00:33,990
+se l'applicazione prende una decisione, ma
+vuole intraprendere un'azione fra un'ora
+
+6
+00:00:33,990 --&gt; 00:00:38,440
+o domani a mezzanotte, o ogni
+15 minuti da ora in poi?
+
+7
+00:00:39,450 --&gt; 00:00:45,140
+In tal caso, l'applicazione dovrà
+creare e impostare allarmi.
+
+8
+00:00:46,730 --&gt; 00:00:51,500
+In questa lezione, inizieremo a discutere cosa
+sono gli allarmi e come vengono utilizzati.
+
+9
+00:00:52,510 --&gt; 00:00:56,130
+Successivamente, discuteremo
+dell'AlarmManager di Android e
+
+10
+00:00:56,130 --&gt; 00:00:59,150
+delle API previste per
+il settaggio e
+
+11
+00:00:59,150 --&gt; 00:01:00,730
+la cancellazione di allarmi.
+
+12
+00:01:01,870 --&gt; 00:01:06,950
+Dopo di che, vorrei discutere i vari
+tipi di allarmi che Android supporta.
+
+13
+00:01:06,950 --&gt; 00:01:12,500
+E, infine, vorrei presentare e discutere un
+esempio di applicazione che utilizza allarmi.
+
+14
+00:01:14,210 --&gt; 00:01:19,480
+Ora, in poche parole, gli allarmi sono
+un meccanismo per l'invio di Intent
+
+15
+00:01:19,480 --&gt; 00:01:24,610
+ad un certo momento, o momenti, in futuro.
+E questo è utile
+
+16
+00:01:24,610 --&gt; 00:01:28,790
+perché consente a un'applicazione
+di eseguire dell'altro codice,
+
+17
+00:01:28,790 --&gt; 00:01:33,670
+anche quando tale applicazione
+non è più in esecuzione.
+
+18
+00:01:35,870 --&gt; 00:01:39,530
+Una volta che gli allarmi sono stati
+creati e registrati, sono conservati
+
+19
+00:01:39,530 --&gt; 00:01:43,580
+e monitorati anche se il
+dispositivo va in pausa.
+
+20
+00:01:43,580 --&gt; 00:01:46,680
+E come vedremo dopo, a
+seconda di come si configura
+
+21
+00:01:46,680 --&gt; 00:01:51,000
+un allarme, se si attiva mentre
+il dispositivo sta in pausa,
+
+22
+00:01:51,000 --&gt; 00:01:54,640
+il dispositivo può essere
+riattivato per gestire l'allarme, o
+
+23
+00:01:54,640 --&gt; 00:01:58,470
+l'allarme può essere conservato fino alla
+successiva riattivazione del dispositivo.
+
+24
+00:01:59,675 --&gt; 00:02:00,890
+E gli allarmi continueranno a
+
+25
+00:02:00,890 --&gt; 00:02:04,430
+essere attivi finché il
+dispositivo non si spegne.
+
+26
+00:02:04,430 --&gt; 00:02:07,830
+Allo spegnimento, tutti gli allarmi
+registrati saranno annullati.
+
+27
+00:02:10,380 --&gt; 00:02:13,820
+Per darvi alcuni esempi di allarmi,
+l'altro giorno, stavo spulciando
+
+28
+00:02:13,820 --&gt; 00:02:16,230
+nel codice sorgente di Android e
+
+29
+00:02:16,230 --&gt; 00:02:19,600
+mi sono imbattuto in diverse
+applicazioni che utilizzano allarmi.
+
+30
+00:02:19,600 --&gt; 00:02:23,390
+Per esempio, l'applicazione
+di messaggistica MMS utilizza
+
+31
+00:02:23,390 --&gt; 00:02:26,260
+allarmi per avviare
+un servizio che può
+
+32
+00:02:26,260 --&gt; 00:02:29,020
+trovare messaggi MMS che
+non sono stati consegnati
+
+33
+00:02:29,020 --&gt; 00:02:31,890
+e riprovare a consegnarli.
+
+34
+00:02:31,890 --&gt; 00:02:35,970
+L'applicazione Settings (Impostazioni)
+può rendere un dispositivo rilevabile
+
+35
+00:02:35,970 --&gt; 00:02:37,270
+tramite Bluetooth.
+
+36
+00:02:37,270 --&gt; 00:02:42,600
+E quando lo fa, l'applicazione
+imposta un allarme, e quando
+
+37
+00:02:42,600 --&gt; 00:02:47,920
+l'allarme si spegne, l'applicazione rende
+il dispositivo non più rilevabile.
+
+38
+00:02:49,220 --&gt; 00:02:52,830
+E l'applicazione Phone (Telefono) mantiene
+una cache di informazioni utente.
+
+39
+00:02:53,860 --&gt; 00:02:58,350
+Questa applicazione utilizza allarmi per
+aggiornare periodicamente tale cache.
+
+40
+00:03:00,210 --&gt; 00:03:01,330
+Se si desidera
+utilizzare gli allarmi
+
+41
+00:03:01,330 --&gt; 00:03:06,930
+nelle proprie applicazioni, lo si deve fare
+interagendo con il servizio AlarmManager.
+
+42
+00:03:08,220 --&gt; 00:03:15,240
+Per ottenere un riferimento a questo servizio,
+si chiama il metodo context.GetSystemService(),
+
+43
+00:03:15,240 --&gt; 00:03:21,100
+passando il nome del servizio, in questo
+caso Alarm_Service, come parametro.
+
+44
+00:03:23,800 --&gt; 00:03:26,930
+Una volta che avete un riferimento
+ad AlarmManager, è possibile
+
+45
+00:03:26,930 --&gt; 00:03:31,510
+quindi utilizzare alcuni dei suoi
+metodi per creare ed impostare allarmi.
+
+46
+00:03:31,510 --&gt; 00:03:37,330
+Per esempio, è possibile utilizzare il metodo
+set() per impostare un singolo allarme.
+
+47
+00:03:37,330 --&gt; 00:03:42,680
+Questo metodo ha tre parametri. Un
+type, di cui parleremo tra breve, un
+
+48
+00:03:42,680 --&gt; 00:03:48,614
+un long, che rappresenta il momento in cui
+l'allarme dovrebbe scattare e un PendingIntent,
+
+49
+00:03:48,614 --&gt; 00:03:52,398
+che incapsula l'operazione
+che dovrebbe avvenire
+
+50
+00:03:52,398 --&gt; 00:03:55,062
+quando l'allarme scatta.
+
+51
+00:04:08,605 --&gt; 00:04:12,405
+È possibile utilizzare il metodo
+setRepeating() per impostare
+
+52
+00:04:12,405 --&gt; 00:04:17,770
+un allarme che va ripetuto
+a intervalli specifici.
+
+53
+00:04:17,770 --&gt; 00:04:24,340
+Questo metodo ha quattro parametri, i tre che
+abbiamo visto nel metodo set() e un ulteriore
+
+54
+00:04:24,340 --&gt; 00:04:28,270
+long che specifica
+l'intervallo di tempo tra
+
+55
+00:04:28,270 --&gt; 00:04:31,520
+ciascun momento in cui
+l'allarme si attiva.
+
+56
+00:04:33,780 --&gt; 00:04:38,800
+Un altro metodo di AlarmManager
+è setInexactRepeating.
+
+57
+00:04:38,800 --&gt; 00:04:45,100
+Questo metodo è simile a setRepeating, in
+cui l'allarme deve scattare periodicamente,
+
+58
+00:04:45,100 --&gt; 00:04:48,180
+ma questo metodo dà ad Android
+maggiore flessibilità
+
+59
+00:04:48,180 --&gt; 00:04:52,420
+nel decidere esattamente
+quando attivare gli allarmi.
+
+60
+00:04:52,420 --&gt; 00:04:55,790
+Per esempio, Android potrebbe
+agganciare allarmi multipli
+
+61
+00:04:55,790 --&gt; 00:04:58,780
+di un tipo e attivarli allo
+
+62
+00:04:58,780 --&gt; 00:05:02,940
+stesso tempo in modo da non attivare
+il dispositivo troppe volte.
+
+63
+00:05:04,170 --&gt; 00:05:08,650
+E se si vuole avere questo tipo di comportamento,
+allora l'intervallo di tempo deve essere
+
+64
+00:05:08,650 --&gt; 00:05:14,430
+una delle seguenti costanti, che
+specifica intervalli di 15 minuti,
+
+65
+00:05:14,430 --&gt; 00:05:20,670
+30 minuti, un'ora,
+12 ore e 24 ore.
+
+66
+00:05:20,670 --&gt; 00:05:23,820
+E se non si utilizza uno di questi
+costanti, allora il comportamento degli
+
+67
+00:05:23,820 --&gt; 00:05:26,030
+allarmi è lo stesso che si
+
+68
+00:05:26,030 --&gt; 00:05:29,948
+sarebbe ottenuto se aveste
+usato invece setRepeating.
+
+69
+00:05:32,290 --&gt; 00:05:37,750
+Ora ciascuno dei tre metodi che ho appena
+mostrato usa un parametro chiamato Type.
+
+70
+00:05:37,750 --&gt; 00:05:39,450
+Parliamo ora dei
+tipi di allarme.
+
+71
+00:05:41,130 --&gt; 00:05:46,650
+Android prevede due gradi di
+configurabilità rispetto agli allarmi.
+
+72
+00:05:46,650 --&gt; 00:05:51,980
+Uno ha a che fare con come le informazioni
+del tempo vengono interpretate, e l'altra
+
+73
+00:05:51,980 --&gt; 00:05:58,080
+dice ad Android come rispondere se il dispositivo
+sta dormendo quando l'allarme si attiva.
+
+74
+00:05:58,080 --&gt; 00:05:59,890
+Diamo un'occhiata a ciascuno
+di questi uno alla volta.
+
+75
+00:06:02,420 --&gt; 00:06:07,310
+In primo luogo, ricorda che ognuno dei metodi
+di impostazione dell'allarme vuole un long
+
+76
+00:06:07,310 --&gt; 00:06:12,150
+come parametro, e come ho detto che,
+quel long rappresenta un tempo.
+
+77
+00:06:13,300 --&gt; 00:06:18,710
+Gli allarmi Android possono interpretare
+questo valore in due modi diversi.
+
+78
+00:06:18,710 --&gt; 00:06:22,900
+Uno, si può considerare che sia
+un orario reale, di orologio
+
+79
+00:06:22,900 --&gt; 00:06:24,740
+e in questo caso,
+
+80
+00:06:24,740 --&gt; 00:06:28,310
+il long rappresenta il
+numero di millisecondi dalla
+
+81
+00:06:28,310 --&gt; 00:06:32,110
+mezzanotte del 1 gennaio 1970.
+
+82
+00:06:32,110 --&gt; 00:06:37,380
+E due, si può interpretare che
+sia il tempo di attivazione del sistema, e
+
+83
+00:06:37,380 --&gt; 00:06:42,660
+cioè, la quantità di tempo dal momento
+in cui il sistema è stato avviato.
+
+84
+00:06:44,000 --&gt; 00:06:48,190
+La seconda questione, è quello che
+dovrebbe fare Android se, quando
+
+85
+00:06:48,190 --&gt; 00:06:51,820
+l'allarme si attiva, il
+dispositivo sta dormendo.
+
+86
+00:06:52,860 --&gt; 00:06:53,760
+Una possibilità
+
+87
+00:06:53,760 --&gt; 00:06:56,810
+è quella di risvegliare il dispositivo
+subito, e consegnare l'Intent.
+
+88
+00:06:58,020 --&gt; 00:07:01,820
+Un'altra scelta, è quella di lasciare
+che il dispositivo rimanga in pausa, e
+
+89
+00:07:01,820 --&gt; 00:07:05,040
+recapitare l'Intent la prossima volta
+che il dispositivo si sveglia.
+
+90
+00:07:06,760 --&gt; 00:07:12,055
+Così, mettendo tutti questi casi insieme, ci
+sono quattro possibilità, definite come segue.
+
+91
+00:07:12,055 --&gt; 00:07:15,975
+RTC_WAKEUP.
+
+92
+00:07:15,975 --&gt; 00:07:19,520
+Attiva l'allarme
+all'orario specificato.
+
+93
+00:07:19,520 --&gt; 00:07:24,100
+Se il dispositivo è in pausa, lo
+attiva e consegna l'Intent.
+
+94
+00:07:25,640 --&gt; 00:07:27,240
+RTC.
+
+95
+00:07:27,240 --&gt; 00:07:30,710
+Attiva l'allarme
+all'orario specificato, ma
+
+96
+00:07:30,710 --&gt; 00:07:33,830
+se il dispositivo è addormentato,
+non lo attiva subito.
+
+97
+00:07:33,830 --&gt; 00:07:38,039
+Invece, consegnerà l'Intent al
+prossimo risveglio del dispositivo.
+
+98
+00:07:39,840 --&gt; 00:07:47,464
+Poi ci sono ELAPSED_REALTIME
+e ELAPSED_REALTIME_WAKEUP.
+
+99
+00:07:47,464 --&gt; 00:07:51,820
+Per questi due tipi di allarme,
+Android attiverà l'allarme se
+
+100
+00:07:51,820 --&gt; 00:07:56,320
+il dispositivo è acceso all'orario
+stabilito, e se il dispositivo
+
+101
+00:07:56,320 --&gt; 00:08:00,865
+sta dormendo quando l'allarme si
+attiva, non sarà attivato con
+
+102
+00:08:00,865 --&gt; 00:08:05,265
+ELAPSED_REALTIME.
+Sarà riattivato con
+
+103
+00:08:05,265 --&gt; 00:08:12,530
+ELAPSED_REALTIME_WAKEUP.
+L'ultima parte delle
+
+104
+00:08:12,530 --&gt; 00:08:16,890
+API di AlarmManager che
+vedremo è il PendingIntent.
+
+105
+00:08:17,980 --&gt; 00:08:22,530
+Come abbiamo visto nella lezione sulle
+notifiche utente, un PendingIntent contiene un
+
+106
+00:08:22,530 --&gt; 00:08:27,430
+Intent regolare ed essenzialmente serve
+come un modulo di autorizzazione, in cui un
+
+107
+00:08:27,430 --&gt; 00:08:32,970
+componente consente a un secondo componente
+di utilizzare l'Intent contenuto
+
+108
+00:08:32,970 --&gt; 00:08:37,820
+come se fosse il primo componente. Tre
+metodi che possono essere utilizzati
+
+109
+00:08:37,820 --&gt; 00:08:42,565
+per creare un PendingIntent sono
+getActivity, che restituisce un
+
+110
+00:08:42,565 --&gt; 00:08:45,620
+PendingIntent che può essere
+utilizzato per avviare un'Activity.
+
+111
+00:08:46,830 --&gt; 00:08:50,560
+GetBroadcast, che restituisce
+un PendingIntent che
+
+112
+00:08:50,560 --&gt; 00:08:53,870
+può essere utilizzato per
+trasmettere un Intent.
+
+113
+00:08:53,870 --&gt; 00:08:57,540
+E getService, che restituisce
+un PendingIntent che
+
+114
+00:08:57,540 --&gt; 00:08:59,660
+può essere utilizzato per
+avviare un Service.
+
+115
+00:09:01,220 --&gt; 00:09:02,655
+Quindi, ora che abbiamo imparato
+qualcosa sugli allarmi,
+
+116
+00:09:02,655 --&gt; 00:09:07,880
+diamo un'occhiata a un'applicazione
+di esempio chiamata AlarmCreate.
+
+117
+00:09:07,880 --&gt; 00:09:12,550
+Questa applicazione utilizza allarmi per
+incoraggiare delicatamente uno studente
+
+118
+00:09:12,550 --&gt; 00:09:17,180
+a smettere di giocare ai videogiochi
+e tornare ai suoi studi.
+
+119
+00:09:17,180 --&gt; 00:09:17,990
+Diamo uno sguardo. Ecco
+
+120
+00:09:23,370 --&gt; 00:09:24,060
+il mio dispositivo.
+
+121
+00:09:26,420 --&gt; 00:09:28,740
+Ora avvierò
+l'applicazione AlarmCreate.
+
+122
+00:09:31,260 --&gt; 00:09:36,760
+L'applicazione visualizza una semplice
+interfaccia utente con quattro pulsanti.
+
+123
+00:09:36,760 --&gt; 00:09:40,710
+Un pulsante, etichettato Set
+Single Alarm, che imposta
+
+124
+00:09:40,710 --&gt; 00:09:43,600
+un singolo allarme che
+scatti dopo due minuti.
+
+125
+00:09:44,670 --&gt; 00:09:50,490
+Un pulsante, etichettato Set Repeating
+Alarm, che imposta un allarme ripetuto che
+
+126
+00:09:50,490 --&gt; 00:09:56,950
+si attivi dopo due minuti, e poi
+continui a scattare ogni 15 minuti.
+
+127
+00:09:56,950 --&gt; 00:10:02,460
+Un pulsante, etichettato Set Inexact
+Repeating Alarm, che fissa una
+
+128
+00:10:02,460 --&gt; 00:10:09,030
+ripetizione che dovrebbe attivarsi ogni
+15 minuti partendo dopo circa due minuti.
+
+129
+00:10:09,030 --&gt; 00:10:14,840
+Ora, poiché questo è un allarme inesatto,
+Android proverà ad attivare l'allarme ogni
+
+130
+00:10:14,840 --&gt; 00:10:17,310
+15 minuti, ma
+applicherà una certa
+
+131
+00:10:17,310 --&gt; 00:10:21,160
+flessibilità su quando esattamente
+quegli allarmi si attiveranno.
+
+132
+00:10:22,350 --&gt; 00:10:27,300
+E, infine, un pulsante etichettato
+Cancel Repeating Alarm, che
+
+133
+00:10:27,300 --&gt; 00:10:31,590
+annulla ogni allarme attivo
+ripetuto o ripetuto inesatto.
+
+134
+00:10:32,820 --&gt; 00:10:36,590
+Ora, farò clic sul pulsante
+etichettato Set Single Alarm,
+
+135
+00:10:38,370 --&gt; 00:10:40,740
+e come potete vedere,
+il messaggio indica
+
+136
+00:10:40,740 --&gt; 00:10:44,750
+che l'applicazione ha
+impostato un allarme singolo,
+
+137
+00:10:44,750 --&gt; 00:10:47,620
+e in questo caso, l'allarme
+dovrebbe attivarsi
+
+138
+00:10:47,620 --&gt; 00:10:48,240
+tra due minuti.
+
+139
+00:10:49,290 --&gt; 00:10:51,270
+E quando lo fa, il codice
+
+140
+00:10:51,270 --&gt; 00:10:55,160
+emetterà una notifica utente
+nell'area di notifica.
+
+141
+00:10:56,390 --&gt; 00:10:59,060
+Torniamo a quel punto e
+vediamo cosa succede.
+
+142
+00:11:01,030 --&gt; 00:11:07,250
+Così, ora stiamo di nuovo guardando
+il dispositivo, e c'è la notifica
+
+143
+00:11:07,250 --&gt; 00:11:13,720
+che chiede se sto giocando di nuovo ad Angry
+Birds. Fatemi tirare giù l'area di notifica.
+
+144
+00:11:13,720 --&gt; 00:11:16,230
+La notifica mi dice che questo è
+
+145
+00:11:16,230 --&gt; 00:11:18,720
+un gentile promemoria
+di tornare a studiare.
+
+146
+00:11:20,460 --&gt; 00:11:22,502
+Se clicco su questa notifica,
+
+147
+00:11:22,502 --&gt; 00:11:26,240
+l'applicazione AlarmCreate
+viene riattivata.
+
+148
+00:11:28,570 --&gt; 00:11:30,940
+Ora, prima di andare
+avanti, diamo
+
+149
+00:11:30,940 --&gt; 00:11:33,770
+un'occhiata al codice sorgente
+di questa applicazione.
+
+150
+00:11:37,060 --&gt; 00:11:39,834
+Ora qui ho aperto
+l'applicazione
+
+151
+00:11:39,834 --&gt; 00:11:42,440
+nell'IDE, e ora apro
+la MainActivity.
+
+152
+00:11:44,400 --&gt; 00:11:46,340
+Diamo uno sguardo
+al metodo onCreate.
+
+153
+00:11:47,690 --&gt; 00:11:51,605
+In primo luogo, il codice ottiene un
+riferimento al servizio AlarmManager.
+
+154
+00:11:52,820 --&gt; 00:11:56,030
+Poi, il codice crea
+un Intent il cui
+
+155
+00:11:56,030 --&gt; 00:11:59,360
+obiettivo è la classe
+AlarmNotificationReceiver.
+
+156
+00:12:00,580 --&gt; 00:12:02,125
+Questo Intent viene
+poi inserito in un
+
+157
+00:12:02,125 --&gt; 00:12:06,790
+PendingIntent che permetterà a
+questo Intent di essere trasmesso.
+
+158
+00:12:08,130 --&gt; 00:12:12,710
+E dopo, il codice crea un secondo
+Intent, che questa volta si
+
+159
+00:12:12,710 --&gt; 00:12:17,450
+rivolge a un'altra classe
+denominata AlarmLoggerReceiver.
+
+160
+00:12:17,450 --&gt; 00:12:21,840
+E come prima, questo Intent è
+inserito in un PendingIntent che
+
+161
+00:12:21,840 --&gt; 00:12:25,450
+alla fine permetterà all'Intent di
+essere trasmesso a quel ricevitore.
+
+162
+00:12:26,970 --&gt; 00:12:27,070
+Ora,
+
+163
+00:12:27,070 --&gt; 00:12:31,180
+Scorrendo verso il basso, il codice imposta i
+quattro pulsanti che abbiamo visto in precedenza.
+
+164
+00:12:32,950 --&gt; 00:12:38,920
+Il primo pulsante, se premuto,
+imposterà due allarmi one-shot.
+
+165
+00:12:38,920 --&gt; 00:12:43,700
+Il primo allarme è programmato per scadere
+due minuti dopo aver premuto il pulsante.
+
+166
+00:12:44,710 --&gt; 00:12:48,860
+Il secondo di questa coppia si attiverà
+circa cinque secondi più tardi.
+
+167
+00:12:50,700 --&gt; 00:12:53,170
+Il secondo pulsante, se premuto,
+
+168
+00:12:53,170 --&gt; 00:12:56,220
+impostera due allarmi ripetuti.
+
+169
+00:12:56,220 --&gt; 00:13:01,030
+Il primo allarme è programmato per
+scadere in due minuti, o due minuti
+
+170
+00:13:01,030 --&gt; 00:13:05,460
+dopo aver premuto il pulsante,
+e poi scadrà ogni 15 minuti.
+
+171
+00:13:06,880 --&gt; 00:13:11,760
+Il secondo allarme della coppia si attiva
+circa cinque secondi dopo il primo.
+
+172
+00:13:13,610 --&gt; 00:13:19,760
+Il terzo pulsante, se premuto, imposterà
+due inexact repeating alarms.
+
+173
+00:13:19,760 --&gt; 00:13:23,180
+Il primo allarme è programmato
+per attivarsi circa ogni
+
+174
+00:13:23,180 --&gt; 00:13:27,920
+15 minuti, partendo due minuti
+dopo aver premuto il pulsante.
+
+175
+00:13:27,920 --&gt; 00:13:30,790
+E ancora, il secondo
+allarme è previsto per
+
+176
+00:13:30,790 --&gt; 00:13:34,260
+attivarsi circa cinque
+secondi dopo il primo.
+
+177
+00:13:34,260 --&gt; 00:13:40,170
+Ora ricordate, poiché questo è un
+inexact repeating alarm, Android ha
+
+178
+00:13:40,170 --&gt; 00:13:45,070
+notevole flessibilità nella esatta
+tempistica di entrambi questi allarmi.
+
+179
+00:13:45,070 --&gt; 00:13:48,370
+E in particolare, Android
+cercherà di ridurre al minimo il
+
+180
+00:13:48,370 --&gt; 00:13:50,695
+numero di volte che ha
+bisogno di riattivare il
+
+181
+00:13:50,695 --&gt; 00:13:54,745
+dispositivo se sta dormendo, per
+esempio, raggruppando allarmi separati
+
+182
+00:13:54,745 --&gt; 00:13:57,410
+per scadere più o meno
+nello stesso momento.
+
+183
+00:13:59,420 --&gt; 00:14:03,840
+Infine, il quarto pulsante, se premuto,
+annullerà gli allarmi esistenti.
+
+184
+00:14:04,940 --&gt; 00:14:09,260
+In particolare, questo è importante per
+gli allarmi ripetuti, che continueranno
+
+185
+00:14:09,260 --&gt; 00:14:13,960
+ad attivarsi fino a quando non vengono cancellati
+o fino a che il dispositivo non si spegne.
+
+186
+00:14:17,850 --&gt; 00:14:22,032
+Tornando all'applicazione
+in esecuzione, ora premo
+
+187
+00:14:22,032 --&gt; 00:14:25,558
+il pulsante Set Repeating Alarm,
+e questo imposta alcuni
+
+188
+00:14:25,558 --&gt; 00:14:28,674
+nuovi allarmi ripetuti
+che prima scadranno dopo
+
+189
+00:14:28,674 --&gt; 00:14:32,366
+due minuti e poi ogni 15 minuti.
+
+190
+00:14:35,786 --&gt; 00:14:36,840
+Torniamo quando siamo pronti.
+
+191
+00:14:38,210 --&gt; 00:14:39,870
+Ok, quindi siamo
+tornati, e sono passati
+
+192
+00:14:39,870 --&gt; 00:14:42,660
+circa due minuti da quando gli
+allarmi sono stati impostati.
+
+193
+00:14:43,970 --&gt; 00:14:47,080
+C'è la notifica che mostra
+che l'allarme è scaduto.
+
+194
+00:14:48,600 --&gt; 00:14:51,621
+Il prossimo allarme arriverà
+in circa 15 minuti.
+
+195
+00:14:51,621 --&gt; 00:14:53,920
+Facciamo una pausa adesso,
+e quando torniamo
+
+196
+00:14:53,920 --&gt; 00:14:58,120
+indietro, esamineremo l'output
+del LogCat per questa applicazione.
+
+197
+00:15:01,330 --&gt; 00:15:03,542
+Dunque, sono passati un po' più
+di 15 minuti,
+
+198
+00:15:03,542 --&gt; 00:15:07,245
+ed ecco l'applicazione
+aperta in nell'IDE.
+
+199
+00:15:07,245 --&gt; 00:15:14,070
+Ora espando la finestra del LogCat
+e filtro il LogCat
+
+200
+00:15:14,070 --&gt; 00:15:19,546
+in uscita per mostrare solo i messaggi di log che
+hanno un tag proveniente da questa applicazione.
+
+201
+00:15:19,546 --&gt; 00:15:26,380
+Digito &quot;tag:alarm&quot;,
+e mi lascia solo i
+
+202
+00:15:26,380 --&gt; 00:15:28,350
+messaggi che ci
+interessano adesso.
+
+203
+00:15:29,920 --&gt; 00:15:34,610
+Come potete vedere, ci sono quattro messaggi,
+due dalla prima volta che gli allarmi
+
+204
+00:15:34,610 --&gt; 00:15:40,140
+sono scaduti, e altri due da quando gli
+allarmi sono scaduti di nuovo dopo 15 minuti.
+
+205
+00:15:41,330 --&gt; 00:15:45,350
+E notate che i due allarmi che sono stati
+programmati per scattare con cinque
+
+206
+00:15:45,350 --&gt; 00:15:51,540
+secondi tra di loro, infatti scadono con
+quell'intervallo di tempo tra di loro.
+
+207
+00:15:51,540 --&gt; 00:15:53,920
+Così questi sono i
+repeating alarms.
+
+208
+00:15:53,920 --&gt; 00:15:57,060
+Torniamo ora all'applicazione
+e diamo un'occhiata a
+
+209
+00:15:57,060 --&gt; 00:15:59,155
+cosa succede quando usiamo
+
+210
+00:15:59,155 --&gt; 00:16:03,070
+il metodo SetInexactRepeating per
+impostare questi stessi allarmi.
+
+211
+00:16:05,120 --&gt; 00:16:06,280
+Quindi, ecco di nuovo
+il mio dispositivo.
+
+212
+00:16:06,280 --&gt; 00:16:10,610
+E ora abbasso l'area di notifica
+
+213
+00:16:10,610 --&gt; 00:16:12,680
+e la uso per tornare
+all'applicazione.
+
+214
+00:16:14,100 --&gt; 00:16:17,980
+In primo luogo, annullo
+gli allarmi esistenti, e
+
+215
+00:16:17,980 --&gt; 00:16:21,230
+poi imposto gli allarmi
+inexact repeating.
+
+216
+00:16:22,910 --&gt; 00:16:26,080
+Quindi lasciamo l'applicazione
+in esecuzione per un po', e poi
+
+217
+00:16:26,080 --&gt; 00:16:30,190
+daremo un'altra occhiata al LogCat
+in uscita di questa applicazione.
+
+218
+00:16:30,190 --&gt; 00:16:32,620
+Così eccoci di nuovo nell'IDE, e
+
+219
+00:16:32,620 --&gt; 00:16:35,380
+sono passati circa 20 minuti
+dall'ultima volta che abbiamo parlato.
+
+220
+00:16:36,810 --&gt; 00:16:39,080
+Torniamo alla vista LogCat.
+
+221
+00:16:39,080 --&gt; 00:16:44,210
+E qui si può vedere che ora ci sono quattro
+nuovi messaggi, due della prima volta
+
+222
+00:16:44,210 --&gt; 00:16:49,280
+che gli allarmi sono scaduti e
+altri due della seconda volta.
+
+223
+00:16:51,700 --&gt; 00:16:58,140
+E alcune cose da notare sono che, anche se
+alle 11:19 abbiamo impostato gli allarmi per
+
+224
+00:16:58,140 --&gt; 00:17:01,600
+scadere a partire da due
+minuti, la prima serie di
+
+225
+00:17:01,600 --&gt; 00:17:05,860
+allarmi in realtà è scattata
+dopo quattro o cinque minuti.
+
+226
+00:17:05,860 --&gt; 00:17:08,280
+E la seconda cosa da
+notare è che anche
+
+227
+00:17:08,280 --&gt; 00:17:10,360
+se gli allarmi sono stati
+programmati per scadere
+
+228
+00:17:10,360 --&gt; 00:17:14,780
+con un ritardo di cinque
+secondi tra di loro, Android
+
+229
+00:17:14,780 --&gt; 00:17:17,460
+li ha effettivamente
+attivati allo stesso tempo.
+
+230
+00:17:17,460 --&gt; 00:17:22,570
+E ancora, siccome questi sono
+inexact repeating alarms,
+
+231
+00:17:22,570 --&gt; 00:17:26,710
+Android era libero di modificare
+la tempistica esatta degli allarmi.
+
+232
+00:17:31,390 --&gt; 00:17:33,980
+Così questo è tutto per la
+nostra lezione sugli allarmi.
+
+233
+00:17:33,980 --&gt; 00:17:37,320
+Unitevi a me la prossima volta per
+una discussione sul networking.
+
+234
+00:17:37,320 --&gt; 00:17:39,052
+Ci vediamo allora.
+</pre>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture51:it&amp;oldid=23136">https://share.coursera.org/wiki/index.php?title=Android-001:Subtitles:Lecture51:it&amp;oldid=23136</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android:Subtitles" title="Category:Android:Subtitles">Android:Subtitles</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

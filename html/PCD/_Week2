@@ -1,0 +1,109 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PCD: Week2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Programmed_Cell_Death_Week_2:_Studies_on_programmed_cell_death_in_the_nematode_C._elegans"><span class="tocnumber">1</span> <span class="toctext">Programmed Cell Death Week 2: Studies on programmed cell death in the nematode C. elegans</span></a>
+<ul>
+<li class="toclevel-2"><a href="#2.1_-_Introduction_to_C._elegans"><span class="tocnumber">1.1</span> <span class="toctext">2.1 - Introduction to C. elegans</span></a></li>
+<li class="toclevel-2"><a href="#2.2_-_Programmed_cell_death_in_C._elegans"><span class="tocnumber">1.2</span> <span class="toctext">2.2 - Programmed cell death in C. elegans</span></a></li>
+<li class="toclevel-2"><a href="#2.3_-_The_identification_of_ced_mutants:_ced-3_and_ced-4"><span class="tocnumber">1.3</span> <span class="toctext">2.3 - The identification of ced mutants: ced-3 and ced-4</span></a></li>
+<li class="toclevel-2"><a href="#2.4_-_The_identification_of_ced_mutants:_ced-3_and_ced-4"><span class="tocnumber">1.4</span> <span class="toctext">2.4 - The identification of ced mutants: ced-3 and ced-4</span></a></li>
+<li class="toclevel-2"><a href="#References"><span class="tocnumber">1.5</span> <span class="toctext">References</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Programmed_Cell_Death_Week_2:_Studies_on_programmed_cell_death_in_the_nematode_C._elegans">Programmed Cell Death Week 2: Studies on programmed cell death in the nematode C. elegans</span></h1>
+<h2> <span class="mw-headline" id="2.1_-_Introduction_to_C._elegans">2.1 - Introduction to C. elegans</span></h2>
+<p><strong>Nematodes</strong><br />
+<strong>Caenorhabditis elegans</strong><br />
+<strong>Connectome</strong><br />
+<strong>Eutely</strong><br />
+<strong>Cell lineage</strong><br />
+<strong>Zygote</strong><br />
+<strong>Differential Interference Contrast (DIC) Microscopy</strong><br />
+<strong>Nomarski optics</strong><br />
+<strong>Forward genetic screens</strong><br />
+<strong>Gene discovery</strong><br />
+<strong>Orthologs</strong><br />
+<strong>Evolutionary Conservation</strong>  </p>
+<h2> <span class="mw-headline" id="2.2_-_Programmed_cell_death_in_C._elegans">2.2 - Programmed cell death in C. elegans</span></h2>
+<p><strong>Mutation</strong><br />
+<strong>EMS</strong><br />
+<strong>Spontaneous mutation</strong><br />
+<strong>Induced mutation</strong><br />
+<strong>Mutagenesis</strong><br />
+<strong>Small scale mutation</strong><br />
+<strong>Large scale mutation</strong><br />
+<strong>Loss-of-function mutation</strong><br />
+<strong>Hypomorphic mutation</strong><br />
+<strong>Null mutation</strong><br />
+<strong>Amorphic mutation</strong><br />
+<strong>Recessive</strong><br />
+<strong>Dominant</strong><br />
+<strong>Haploid</strong><br />
+<strong>Diploid</strong><br />
+<strong>Homozygous</strong><br />
+<strong>Heterozygous</strong><br />
+<strong>Parental generation (Po)</strong><br />
+<strong>First filial generation (F1)</strong><br />
+<strong>Second filial generation (F2)</strong><br />
+<strong>Wild type</strong><br />
+<strong>Allele</strong><br />
+<strong>Mendel's first law</strong><br />
+<strong>Punnett square</strong>  </p>
+<h2> <span class="mw-headline" id="2.3_-_The_identification_of_ced_mutants:_ced-3_and_ced-4">2.3 - The identification of ced mutants: ced-3 and ced-4</span></h2>
+<p><strong>Ced phenotype</strong><br />
+<strong>Lineage analysis</strong><br />
+<strong>"Undead" cells</strong><br />
+<strong>Pleiotropic</strong><br />
+<strong>Allelic</strong><br />
+<strong>Complementation test</strong><br />
+<strong>Egl phenotype</strong><br />
+<strong>Hermaphrodite-specific neurons (HSNs)</strong><br />
+<strong>Sexually dimorphic</strong>  </p>
+<h2> <span class="mw-headline" id="2.4_-_The_identification_of_ced_mutants:_ced-3_and_ced-4">2.4 - The identification of ced mutants: ced-3 and ced-4</span></h2>
+<p><strong>Neuro-secretory motorneurons (NSMs)</strong><br />
+<strong>Pharynx assay</strong><br />
+<strong>Ces phenotype</strong><br />
+<strong>Gain-of-function</strong><br />
+<strong>Hypermorphic</strong><br />
+<strong>Dominant-negative</strong><br />
+<strong>Antimorphic</strong><br />
+<strong>Neomorphic</strong><br />
+<strong>Dosage effect</strong><br />
+<strong>Haplo-insufficient</strong><br />
+<strong>Reversion screen</strong><br />
+<strong>Deficiency</strong>  </p>
+<hr />
+<h2> <span class="mw-headline" id="References">References</span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.genetics.org/content/77/1/71.long">The genetics of Caenorhabditis elegans</a> (Lecture 2.1)<br />
+Brenner S. The genetics of Caenorhabditis elegans. Genetics. 1974 May;77(1):71-94. PubMed PMID: 4366476; PubMed Central PMCID: PMC1213120.</p>
+<p><a rel="nofollow" class="external text" href="http://www.wormatlas.org/ver1/MoW_built0.92/toc.html">The Structure of the Nervous System of the Nematode Caenorhabditis elegans</a> (Lecture 2.1)
+White JG, Southgate E, Thomson JN, Brenner S. The structure of the nervous system of the nematode Caenorhabditis elegans. Philos Trans R Soc Lond B Biol Sci. 1986 Nov 12;314(1165):1-340. PubMed PMID: 22462104.</p>
+<p><a rel="nofollow" class="external text" href="http://www.wormatlas.org/ver1/postemblin_1977/toc.html">Post-embryonic cell lineages of the nematode, Caenorhabditis elegans</a>
+Sulston JE, Horvitz HR. Post-embryonic cell lineages of the nematode, Caenorhabditis elegans. Dev Biol. 1977 Mar;56(1):110-56. PubMed PMID: 838129.</p>
+<p><a rel="nofollow" class="external text" href="http://www.wormatlas.org/SulstonNeuronalCellLineages/Sulston_NCL.html">The embryonic cell lineage of the nematode Caenorhabditis elegans</a>
+Sulston JE, Schierenberg E, White JG, Thomson JN. The embryonic cell lineage of the nematode Caenorhabditis elegans. Dev Biol. 1983 Nov;100(1):64-119. PubMed PMID: 6684600.</p>
+<p><a rel="nofollow" class="external text" href="http://www.wormatlas.org/index.html">Wormatlas</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 57/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PCD:_Week2&amp;oldid=14944">https://share.coursera.org/wiki/index.php?title=PCD:_Week2&amp;oldid=14944</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:PCD" title="Category:PCD">PCD</a></li><li><a href="/wiki/index.php?title=Category:Biolgoy&amp;action=edit&amp;redlink=1" class="new" title="Category:Biolgoy (page does not exist)">Biolgoy</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

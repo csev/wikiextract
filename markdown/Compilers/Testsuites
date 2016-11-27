@@ -1,0 +1,167 @@
+<div style="border-left:15px solid darkgreen;padding-left:20px;"><table><td style="padding:16px;padding-right:20px;"><span style="font-weight:bold;font-size:120%;">note</span></td><td>If you use Microsoft Windows please install Cygwin and execute the following commands from Cygwin environment.</td></table></div>
+<br>
+
+# Running testsuites
+
+Once you have all COOL source for grading, you can use reference tools to create reference output files. From that point you can test your own COOL lexer, parser, and so on by comparing reference output and output from your program.
+
+Those scripts are here to help you automate this process. 
+
+The assumed environment:
+
+* all ".sh" scripts are in the same directory
+
+* there is subdirectory "temp"
+
+* there is subdirectory "testsuite", and further there are subdirectories "scan", "parse", "semant", and "cgen" with ".cool" source files and ".cool.ref" reference output files
+
+* in case you would like to accept the differences between reference output and yours, add ".diff" file from subdirectory "temp" as ".diff.acc" next to ".cool" file in the "testsuite" directory
+
+Normally you would run `sh scan_all.sh` (to test all scanning), `sh parse_all.sh` (to test all parsing), `sh semant_all.sh` (to run all semantic analysis), `sh cgen_all.sh` (to run all code generation) or `sh all_tests.sh` (to run all tests from all stages).
+
+**Modifications:** you should edit `run.sh` (and maybe `run_all.sh`) to make them work in your environment.
+
+## run.sh
+
+Basic building block of entire suite. Please edit this file to use your executable file (here I call .Net binary executable with help of Mono) and your working directories. This script assumes your compiler recognizes arguments in form "--op filename", where "op" is either "scan", "parse", "semant", or "cgen" -- if not, change script accordingly.
+
+
+    #!/bin/bash
+
+    CALLENV=mono
+    BASEDIR=/mnt/mobile
+
+    if [ "$OSTYPE" == "cygwin" ]
+    then
+      CALLENV=
+      BASEDIR=/cygdrive/h
+    fi
+
+    $CALLENV $BASEDIR/Projects/CoolCompiler/CoolCompiler/bin/Debug/CoolCompiler.exe --$1 $2
+
+## run_all.sh
+
+If you run the testsuite against grading files you may want to set `GRADING` variable (below) to `grading`.
+
+    #!/bin/bash
+
+    MORE=less
+
+    GRADING=
+
+    MODE=$1
+    EXT=$2
+
+    DATADIR=./
+    HEREDIR=$(pwd)
+
+    if [ "$GRADING" == "" ]
+    then
+      EXT=cool
+    fi
+
+    cd $DATADIR/testsuite/$MODE
+
+    for fn in $(ls -1S *.$EXT | tac)
+    do
+        ERR=$(sh $HEREDIR/comp.sh $HEREDIR ${MODE} ${fn})
+        if [ "$ERR" != "" ]
+        then
+            echo $fn
+            echo "$ERR" | $MORE
+            echo -e "LEFT: reference \t\t\t\t\t\t| RIGHT: mine"
+            echo $fn
+            exit 1
+        else
+            echo $MODE: $fn ... OK!
+        fi
+    done
+
+## comp.sh
+
+    #!/bin/bash
+
+    HEREDIR=$1
+    MODE=$2
+    FILE=$3
+
+    OPT=--suppress-common-lines
+    if [ "$4" != "" ]
+    then
+      OPT=
+    fi
+
+    OUTDIR=../../temp
+
+    if [ -e "$FILE" ]
+    then
+        FILENAME=${FILE%.cool}
+
+        OUTFILE=$OUTDIR/$FILENAME.my
+        DIFF=$OUTDIR/$FILENAME.diff
+        ACC=$FILENAME.diff.acc
+
+        sh $HEREDIR/run.sh $MODE $FILE &> $OUTFILE
+
+        diff -y -b $OPT $FILE.ref $OUTFILE > $DIFF
+
+        if [ "$(cat $DIFF)" != "" ] && ([ ! -e $ACC ] || [ "$(diff $DIFF $ACC)" != "" ])
+        then
+            cat $DIFF
+        else
+            rm -f $OUTFILE
+            rm -f $DIFF
+        fi
+    fi
+
+## scan_all.sh
+
+    #!/bin/bash
+
+    sh run_all.sh scan cool
+
+## parse_all.sh
+
+    #!/bin/bash
+
+    sh run_all.sh parse test
+
+## semant_all.sh
+
+    #!/bin/bash
+
+    sh run_all.sh semant test
+
+## cgen_all.sh
+
+    #!/bin/bash
+
+    sh run_all.sh cgen cl
+
+## all_tests.sh
+
+    #!/bin/bash
+
+    sh scan_all.sh
+    if [ $? -ne 0 ]
+    then
+        exit $?
+    fi
+
+    sh parse_all.sh
+    if [ $? -ne 0 ]
+    then
+        exit $?
+    fi
+
+    sh semant_all.sh
+    if [ $? -ne 0 ]
+    then
+        exit $?
+    fi
+
+    sh cgen_all.sh
+    if [ $? -ne 0 ]
+    then
+        exit $?
+    fi

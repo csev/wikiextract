@@ -1,0 +1,56 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcript week2 lecture7</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Lecture_2-7_Problem_Session_1">Lecture 2-7 Problem Session 1</span></h1>
+<p><strong>Bioelectricity week 2.7 (slide 28)</strong><br />
+<ul><li> Hello again, this is Roger Cooke Barr talking about bioelectricity, and we are at week two, segment seven. I thought it might be useful in this segment to ask a few questions, first for me and then for you.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Problem session questions (slide 29)</strong><br />
+<ul><li> Let's look at the ionic concentrations for frog muscle.<br />
+</li><li> What is the nernst potential for potassium? What is the nernst potential for sodium? And what is the difference?<br />
+</li><li> Now, I think, earlier in the lectures we were computing this values for the concentrations present in the nerve of the squid. But now we would like to do them in the muscle of the frog.  </p>
+</li></ul>
+
+<hr />
+<p><strong>Problem session K+ (slide 30)</strong><br />
+<ul><li> So, first what will be the equilibrium potential for potassium using the concentrations that are present in the frog? That's normally denoted EK so I'll write it that way. That will be RT over F times the logarithm concentration extracellular, concentration intracellular.<br />
+</li><li> Now, I've written ln as the logarithm so as to emphasize that this is the natural log, not the log base ten or some other log. So when we compute it we'll compute it that way. RT over F we've studied many times up until now, so we know that's 26 millivolts. It's now the logarithm extracellular over intracellular, so that would be 2.2 over 124.<br />
+</li><li> Units aren't important here, as long as they're the same units, so I won't write those in. If you look, if you think about taking the logarithm of 2.2 over 124, it's a number less than one. 
+</li><li> So you know right away that this is going to be = to -26 millivolts times the logarithm of 124 divided by 2.2. I'll leave that up to you to complete the calculation.   </p>
+</li></ul>
+
+<hr />
+<p><strong>Problem session Na+ (slide 31)</strong><br />
+<ul><li> If we ask the same question for sodium, then the question is answered by substitution of now the sodium concentrations for frog, 4 and 109, into the same basic equation. The equilibrium potential now is denoted ENa.<br />
+</li><li> It's the transmembrane potential at equilibrium for sodium. Mostly noted ENa and that will be RT over F. Algorithm. ENa extracellular, and ENa intracellular.<br />
+</li><li> I'll leave it up to you to determine the actual number. But we're expecting a positive number, this time. Because NaE is greater than NaI.<br />
+</li><li>  If we now ask, ask part C of the question, what is the change? Well that's easily obtained. That's simply the values we obtained in the previous two slides. ENA minus EK, so we found those and all.   </p>
+</li></ul>
+
+<hr />
+<p><strong>Problem session, Vm shift (slide 32)</strong><br />
+<ul><li> You'll fill this in and you'll fill this in and determine the shift.<br />
+</li><li> Thank you very much. We'll move on to the next segment after looking at this picture of the beautiful Duke University Library. Thank you.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 19/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcript_week2_lecture7&amp;oldid=7956">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcript_week2_lecture7&amp;oldid=7956</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

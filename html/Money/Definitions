@@ -1,0 +1,144 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Money:Definitions</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table style="margin: 0 10%;border-collapse: collapse;background: #fbfbfb;border: 1px solid #aaa;border-left: 10px solid #609fc1;">
+<tr>
+<td style="padding: 2px 0px 2px 0.5em; text-align: center;"><div style="width: 52px;"><a href="/wiki/images/b/ba/Dan_cartoon.png" class="image"><img alt="Dan cartoon.png" src="/wiki/images/thumb/b/ba/Dan_cartoon.png/50px-Dan_cartoon.png" width="50" height="28" /></a></div></td>
+<td style="padding: 0.25em 0.5em;width: 100%;">
+<p><b>EVERYONE IN THIS COURSE CAN ADD TO THIS PAGE!</b> Help condense concepts from lecture videos, add questions and answers and to share information.
+</p><p><b>Edit</b> tab at the top right to begin editing. <b>Save page</b> button at the bottom when you have finished.
+</p>
+While you can enter basic text into the editor, those who wish to add some formatting may wish to review this <a href="/wiki/index.php/Markdown_guide" title="Markdown guide">Markdown guide</a>. Take advantage of these notes but also contribute to them!</td>
+</tr>
+</table>
+<h2> <span class="mw-headline" id="Definitions">Definitions</span></h2>
+<p>SIV=Secured Investment vehicle.</p>
+<p>MONEY MARKET=A wholesale market for low-risk highly liquid short term debt securities(IOUs=US Treasuries, Federal agency securities, commercial paper, commercial securities, mortgage back securities, municipal securities, bank CDs and notes, banker acceptances, short-term participation in a bank loan.   </p>
+<p><b>BROKER</b>
+<dl><dd> Makes market; but does not expand his balance sheet; just works for a commission for bringing the parties together. See also DEALER.</p>
+</dd></dl>
+
+<p><b>CIP</b>
+<dl><dd> Covered Interest Parity. See also UCIP.</p>
+</dd></dl>
+
+<p><b>DEALER</b>
+<dl><dd> Makes market, by expanding his own balance sheet. See also BROKER.</p>
+</dd></dl>
+
+<p><b>EH</b>
+<dl><dd> Expectations hypothesis of the term structure. Theory on the term structure that economists love but fails in practice for unknown reasons.</p>
+</dd></dl>
+
+<p><b>EURODOLLAR MARKET</b>
+<dl><dd> The world unsecured funding market in dollars used by global money dealers(banks). Does show up on balance sheet, c.f. Fed Funds market, which is a brokered system which doesn't. The irate charged is the LIBOR. The market is vulnerable to liquidity because it lacks access to the Fed’s balance sheet so they line up the in/out flows in time to minimize reserves. Also see FRA.</p>
+</dd></dl>
+
+<p><b>EURODOLLARS</b>
+<dl><dd> Dollar balances held by banks (money dealers) outside the US, which banks hold no reserves at the Fed and consequently have no direct access to settlement through Fedwire thus Eurodollar balances settle on the private CHIPS network.</p>
+</dd></dl>
+
+<p><b>FED</b>
+<dl><dd> Short for Federal Reserve Bank of the United States.</p>
+</dd></dl>
+
+<p><b>FED FUNDS MARKET</b>
+<dl><dd>Centred in NYC. The market where banks lend and borrow from each other; typically overnight loans.  Does not increase overall system reserves bc the loans just transfer excess reserves of one bank to the bank in need of additional reserves.  The market operates after business hours over the night until early morning the next day before business hours start.</p>
+</dd></dl>
+
+<p><b>FED FUNDS RATE</b> (Effective) 
+<dl><dd> The actual unsecured overnight interest rate used in FED FUNDS MARKET loans between banks to meet reserve requirements.</p>
+</dd></dl>
+
+<p><b>FED FUNDS RATE</b> (Target)
+<dl><dd> The target borrowing rate the Fed wants to see on the Fed Funds Market.  During business hours the Fed trades in the Repo market, adjusting the country's credit, using the targeted Federal Funds rate as a benchmark for the repo (reverse repo) rate.  During evening hours, the Federal Funds Market, using the repo rate as a benchmark for the effective Federal Funds rate. The effective rate (no collateral) will usually be slightly higher than the repo rate (collateralized).  The next day, the FOMC will review results from the previous day to see how well the effective rate met the targeted rate, and the Repo Rate "dance" starts all over again.</p>
+</dd></dl>
+
+<p><b>FIP</b>
+<dl><dd> Forward Interest Parity. [1+R(0,2)] [1+R(2,5)] = [1+R(0,5)], where R is the LIBOR.</p>
+</dd></dl>
+
+<p><b>FOMC</b>
+<dl><dd> Federal Open Market Committee. Committee within the Federal Reserve of US (FED); meets about 8 times a year; makes decisions on monetary policies.</p>
+</dd></dl>
+
+<p><b>FRA</b>
+<dl><dd> Forward Rate Agreement. Bet on the future value of the LIBOR by investors. Helps banks line up their balance sheet payments in time. </p>
+</dd></dl>
+
+<p><b>FUNDING LIQUIDITY</b>
+<dl><dd> Ability to raise money to replace funds. See also market liquidity.</p>
+</dd></dl>
+
+<p><b>FUNDING MARKET</b>
+<dl><dd>&#160;?</p>
+</dd></dl>
+
+<p><b>INSIDE SPREAD</b>
+<dl><dd>?</p>
+</dd></dl>
+
+<p><b>LIBOR</b>
+<dl><dd> London Interbank Offer Rate. Foreign Banks lend/borrow USD from each other in the Eurodollar market at this rate. Set by the Bank of England?</p>
+</dd></dl>
+
+<p><b>MARKET LIQUIDITY</b>
+<dl><dd> Ability to buy or sell quickly in volume without moving the price.  i.e. the more you can buy/sell without moving price, the more liquid the market for that asset is. See also funding liquidity.</p>
+</dd></dl>
+
+<p><b>OUTSIDE SPREAD</b>
+<dl><dd>&#160;?</p>
+</dd></dl>
+
+<p><b>REPO, RP</b>
+<dl><dd> Repurchase agreement. A short term secured lending agreement whereby a security is loaned and repurchased at a later date for a higher amount representing the interest desired.  Also, used when the FOMC (Federal Open Market Committee) wants to adjust the country's money supply by way of adjusting the level of credit. To increase credit during a recession, the FOMC will loan funds to specific Treasury Dealers offering treasuries as collateral which is deposited (credited) to the dealers' banks, which will cause funds to be available for loans to the general public.</p>
+</dd></dl>
+
+<p><b>REVERSE REPO</b>
+<dl><dd> Same as the REPO transaction except that you are on lending side of the transaction.</p>
+</dd></dl>
+
+<p><b>REPO RATE</b>
+<dl><dd>The secured interest rate of the REPO.</p>
+</dd></dl>
+
+<p><b>REVERSE REPO RATE</b>
+<dl><dd> FOMC becomes the borrower, receiving loans from Treasury Dealers and issuing treasuries as collateral.</p>
+</dd></dl>
+
+<p><b>SHADOW BANKING</b>
+<dl><dd> Money market funding of capital market lending.</p>
+</dd></dl>
+
+<p><b>TERM STRUCTURE</b>
+<dl><dd>The banks have loans of varying terms and how these line up or overlap is the structure of the terms.</p>
+</dd></dl>
+
+<p><b>UCIP</b>
+<dl><dd> Uncovered Interest Parity.  Connection btw $ interest rates and interest rates in other currencies that shows up in exchange rates.  Economist thinks this makes sense and should be true, however, this connection fails all the time so current formula expressing this are not valid and the theory itself may not be valid also.  [Prof thinks it has to do with deep issues in monetary economics relating to liquidity and the price of liquidity so the money view is essential in figuring out these asset price anomalies.]</p>
+</dd></dl>
+
+<p><b>VOLCKER RULE</b>
+<dl><dd> Necessity of matched book.</p>
+</dd></dl>
+
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 6/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Money:Definitions&amp;oldid=17451">https://share.coursera.org/wiki/index.php?title=Money:Definitions&amp;oldid=17451</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Money" title="Category:Money">Money</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

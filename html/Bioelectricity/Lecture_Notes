@@ -1,0 +1,442 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Lecture Notes</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Bioelectricity:Week_1_transcripts" title="Bioelectricity:Week 1 transcripts"> Edited Transcripts</a>  </p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_1_Foundations:_including_electricity_in_solutions"><span class="tocnumber">1</span> <span class="toctext">Week 1 Foundations: including electricity in solutions</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Intro_to_Week_1_.281-1.29"><span class="tocnumber">1.1</span> <span class="toctext">Intro to Week 1 (1-1)</span></a></li>
+<li class="toclevel-2"><a href="#Make_Plans.2C_electricity_in_solution_.281-2.29"><span class="tocnumber">1.2</span> <span class="toctext">Make Plans, electricity in solution (1-2)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Week_1-.C2.AD2_About_Bioelectricity_.28_slide_2.29"><span class="tocnumber">1.2.1</span> <span class="toctext">Week 1-­2 About Bioelectricity ( slide 2)</span></a></li>
+<li class="toclevel-3"><a href="#About_Bioelectricity_.28slide_3.29"><span class="tocnumber">1.2.2</span> <span class="toctext">About Bioelectricity (slide 3)</span></a></li>
+<li class="toclevel-3"><a href="#When_did_the_study_of_Bioelectricity_begin.3F_.28slide_4.29"><span class="tocnumber">1.2.3</span> <span class="toctext">When did the study of Bioelectricity begin? (slide 4)</span></a></li>
+<li class="toclevel-3"><a href="#What_was_the_Galvani-Volta_conflict_about.3F_.285.29"><span class="tocnumber">1.2.4</span> <span class="toctext">What was the Galvani-Volta conflict about? (5)</span></a></li>
+<li class="toclevel-3"><a href="#How_is_electricity_in_living_tissue_different_from_the_.E2.80.9Cordinary.E2.80.9D_electricity_of_batteries.2C_wires.2C_radios_and_computers.3F_.286.29"><span class="tocnumber">1.2.5</span> <span class="toctext">How is electricity in living tissue different from the “ordinary” electricity of batteries, wires, radios and computers? (6)</span></a></li>
+<li class="toclevel-3"><a href="#What_happens_when_you_throw_a_fish_in_the_ocean.3F_.287.29"><span class="tocnumber">1.2.6</span> <span class="toctext">What happens when you throw a fish in the ocean? (7)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Major_Sections_.281-3.29"><span class="tocnumber">1.3</span> <span class="toctext">Major Sections (1-3)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Week_1_.28slide_10.29"><span class="tocnumber">1.3.1</span> <span class="toctext">Week 1 (slide 10)</span></a></li>
+<li class="toclevel-3"><a href="#Week_2_.28slide_11.29"><span class="tocnumber">1.3.2</span> <span class="toctext">Week 2 (slide 11)</span></a></li>
+<li class="toclevel-3"><a href="#Week_3_.28slide_12.29"><span class="tocnumber">1.3.3</span> <span class="toctext">Week 3 (slide 12)</span></a></li>
+<li class="toclevel-3"><a href="#Week_4_.28slide_13.29"><span class="tocnumber">1.3.4</span> <span class="toctext">Week 4 (slide 13)</span></a></li>
+<li class="toclevel-3"><a href="#Week_5_.28slide_14.29"><span class="tocnumber">1.3.5</span> <span class="toctext">Week 5 (slide 14)</span></a></li>
+<li class="toclevel-3"><a href="#Week_6_.28slide_15.29"><span class="tocnumber">1.3.6</span> <span class="toctext">Week 6 (slide 15)</span></a></li>
+<li class="toclevel-3"><a href="#Week_7_.28slide_16.29"><span class="tocnumber">1.3.7</span> <span class="toctext">Week 7 (slide 16)</span></a></li>
+<li class="toclevel-3"><a href="#Week_8_.28slide_17.29"><span class="tocnumber">1.3.8</span> <span class="toctext">Week 8 (slide 17)</span></a></li>
+<li class="toclevel-3"><a href="#What_are_the_weeks_of_the_course.3F_.28slide_18.29"><span class="tocnumber">1.3.9</span> <span class="toctext">What are the weeks of the course? (slide 18)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Rectificaton_of_Names_.28aka_terminology.29_.281-4.29"><span class="tocnumber">1.4</span> <span class="toctext">Rectificaton of Names (aka terminology) (1-4)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Rectification_of_Names_.28slide_21.29"><span class="tocnumber">1.4.1</span> <span class="toctext">Rectification of Names (slide 21)</span></a></li>
+<li class="toclevel-3"><a href="#Membranes_.28slide_22.29"><span class="tocnumber">1.4.2</span> <span class="toctext">Membranes (slide 22)</span></a></li>
+<li class="toclevel-3"><a href="#Positive_Membrane_Voltage_.26_Positive_Membrane_Current_.2823.29"><span class="tocnumber">1.4.3</span> <span class="toctext">Positive Membrane Voltage &amp; Positive Membrane Current (23)</span></a></li>
+<li class="toclevel-3"><a href="#Passive_versus_Active:_same_as_dead_versus_alive.3F_.28slide_24.29"><span class="tocnumber">1.4.4</span> <span class="toctext">Passive versus Active: same as dead versus alive? (slide 24)</span></a></li>
+<li class="toclevel-3"><a href="#Notation:_E_compared_to_e_.28slide_26.29"><span class="tocnumber">1.4.5</span> <span class="toctext">Notation: E compared to e (slide 26)</span></a></li>
+<li class="toclevel-3"><a href="#The_natural_number_e_.28slide_27.29"><span class="tocnumber">1.4.6</span> <span class="toctext">The natural number e (slide 27)</span></a></li>
+<li class="toclevel-3"><a href="#The_natural_number_e_.28slide_28.29"><span class="tocnumber">1.4.7</span> <span class="toctext">The natural number e (slide 28)</span></a></li>
+<li class="toclevel-3"><a href="#The_natural_number_e_.28slide_29.29"><span class="tocnumber">1.4.8</span> <span class="toctext">The natural number e (slide 29)</span></a></li>
+<li class="toclevel-3"><a href="#The_sizes_of_things.2C_and_E_.28slide_30.29"><span class="tocnumber">1.4.9</span> <span class="toctext">The sizes of things, and E (slide 30)</span></a></li>
+<li class="toclevel-3"><a href="#E_notation_.28slide_31.29"><span class="tocnumber">1.4.10</span> <span class="toctext">E notation (slide 31)</span></a></li>
+<li class="toclevel-3"><a href="#E.2C_e.2C_and_.C4.92_.28slide_32.29"><span class="tocnumber">1.4.11</span> <span class="toctext">E, e, and Ē (slide 32)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Ions_in_Solutions_.281-5.29"><span class="tocnumber">1.5</span> <span class="toctext">Ions in Solutions (1-5)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Ions_in_Solution_.28slide_35.29"><span class="tocnumber">1.5.1</span> <span class="toctext">Ions in Solution (slide 35)</span></a></li>
+<li class="toclevel-3"><a href="#Ions_and_Conductivity_.CF.83_.28slide_36.29"><span class="tocnumber">1.5.2</span> <span class="toctext">Ions and Conductivity σ (slide 36)</span></a></li>
+<li class="toclevel-3"><a href="#Resistivity_and_sea_water_.28slide_37.29"><span class="tocnumber">1.5.3</span> <span class="toctext">Resistivity and sea water (slide 37)</span></a></li>
+<li class="toclevel-3"><a href="#Resistivity_and_sea_water_.28slide_37.29_2"><span class="tocnumber">1.5.4</span> <span class="toctext">Resistivity and sea water (slide 37)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#RT.2FF_and_other_physical_constants_.281-6.29"><span class="tocnumber">1.6</span> <span class="toctext">RT/F and other physical constants (1-6)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#RT.2FF_.28slide_41.29"><span class="tocnumber">1.6.1</span> <span class="toctext">RT/F (slide 41)</span></a></li>
+<li class="toclevel-3"><a href="#RT.2FF_.28slide_42.29"><span class="tocnumber">1.6.2</span> <span class="toctext">RT/F (slide 42)</span></a></li>
+<li class="toclevel-3"><a href="#Farraday.27s_constant_.28slide_43.29"><span class="tocnumber">1.6.3</span> <span class="toctext">Farraday's constant (slide 43)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Electricity_in_solutions_.281-7.29"><span class="tocnumber">1.7</span> <span class="toctext">Electricity in solutions (1-7)</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Sources_and_sinks_in_a_conductive_medium.2C_a_sketch_.28slide_46.29"><span class="tocnumber">1.7.1</span> <span class="toctext">Sources and sinks in a conductive medium, a sketch (slide 46)</span></a></li>
+<li class="toclevel-3"><a href="#Electricity_in_Solutions.E2.80.94_The_.E2.80.9CBig_5.E2.80.9D_.28slide_47.29"><span class="tocnumber">1.7.2</span> <span class="toctext">Electricity in Solutions— The “Big 5” (slide 47)</span></a></li>
+<li class="toclevel-3"><a href="#.231_of_the_Big_5---Potentials_.28slide_48.29"><span class="tocnumber">1.7.3</span> <span class="toctext">#1 of the Big 5---Potentials (slide 48)</span></a></li>
+<li class="toclevel-3"><a href="#More_about_potential_.28slide_49.29"><span class="tocnumber">1.7.4</span> <span class="toctext">More about potential (slide 49)</span></a></li>
+<li class="toclevel-3"><a href="#Second_of_the_big_5.E2.80.94the_electric_field_.28slide_50.29"><span class="tocnumber">1.7.5</span> <span class="toctext">Second of the big 5—the electric field (slide 50)</span></a></li>
+<li class="toclevel-3"><a href="#Sign_of_E_.28slide_51.29"><span class="tocnumber">1.7.6</span> <span class="toctext">Sign of E (slide 51)</span></a></li>
+<li class="toclevel-3"><a href="#Third_of_the_big_5.2C_Force_F_.28slide_52.29"><span class="tocnumber">1.7.7</span> <span class="toctext">Third of the big 5, Force F (slide 52)</span></a></li>
+<li class="toclevel-3"><a href="#Fourth_of_the_big_5.E2.80.94the_current_flux_.28slide_53.29"><span class="tocnumber">1.7.8</span> <span class="toctext">Fourth of the big 5—the current flux (slide 53)</span></a></li>
+<li class="toclevel-3"><a href="#Fifth_in_the_big_5.E2.80.94_Sources_.28slide_54.29"><span class="tocnumber">1.7.9</span> <span class="toctext">Fifth in the big 5— Sources (slide 54)</span></a></li>
+<li class="toclevel-3"><a href="#Where_does_divergence_diverge_from.3F_.28slide_55.29"><span class="tocnumber">1.7.10</span> <span class="toctext">Where does divergence diverge from? (slide 55)</span></a></li>
+<li class="toclevel-3"><a href="#What_is_the_potential_anywhere.2C_for_one_source_and_one_sink.3F_.28slide_56.29"><span class="tocnumber">1.7.11</span> <span class="toctext">What is the potential anywhere, for one source and one sink? (slide 56)</span></a></li>
+<li class="toclevel-3"><a href="#Electricity_in_solutions.E2.80.94Mathematical_for_of_the_6-.C2.AD.E2.80.90step_program_.28slide_57.29"><span class="tocnumber">1.7.12</span> <span class="toctext">Electricity in solutions—Mathematical for of the 6-­‐step program (slide 57)</span></a></li>
+<li class="toclevel-3"><a href="#Electricity_in_solutions.E2.80.94Comments_on_the_math_form_of_the_6-.C2.ADstep_program_.28slide_58.29"><span class="tocnumber">1.7.13</span> <span class="toctext">Electricity in solutions—Comments on the math form of the 6-­step program (slide 58)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Electric_potentials_as_compared_to_voltages_.281-8.29"><span class="tocnumber">1.8</span> <span class="toctext">Electric potentials as compared to voltages (1-8)</span></a></li>
+<li class="toclevel-2"><a href="#Forces_exerted_by_electric_fields_.281-9.29"><span class="tocnumber">1.9</span> <span class="toctext">Forces exerted by electric fields (1-9)</span></a></li>
+<li class="toclevel-2"><a href="#First_Problem_Session_.281-10.29"><span class="tocnumber">1.10</span> <span class="toctext">First Problem Session (1-10)</span></a></li>
+<li class="toclevel-2"><a href="#Problem_session_.281-11.29"><span class="tocnumber">1.11</span> <span class="toctext">Problem session (1-11)</span></a></li>
+<li class="toclevel-2"><a href="#Week_in_review_.281-12.29"><span class="tocnumber">1.12</span> <span class="toctext">Week in review (1-12)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_1_Foundations:_including_electricity_in_solutions">Week 1 Foundations: including electricity in solutions</span></h1>
+<h2> <span class="mw-headline" id="Intro_to_Week_1_.281-1.29">Intro to Week 1 (1-1)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture1" title="Bioelectricity:Transcripts Week1 Lecture1"> Edited Transcript 1-1</a><br />
+<ul><li> lay the foundation for all eight weeks of the course<br />
+</li><li> talk a little bit about the history, so you know where we're starting from<br />
+</li><li> then, talk a little bit about some specialized terminology that is used in the field  </p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Make_Plans.2C_electricity_in_solution_.281-2.29">Make Plans, electricity in solution (1-2)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture2" title="Bioelectricity:Transcripts Week1 Lecture2"> Edited Transcript 1-2</a>  </p>
+<h3> <span class="mw-headline" id="Week_1-.C2.AD2_About_Bioelectricity_.28_slide_2.29">Week 1-­2 About Bioelectricity ( slide 2)</span></h3>
+<p><strong>What is Bioelectricity?</strong><br />
+<ul><li> From an electrical point of view, by far the most sophisticated, complicated, and automatic, electrical devices, in this picture are the two people.<br />
+</li><li> Why do we care about bioelectricity? We care about bioelectricity because it is us.</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="About_Bioelectricity_.28slide_3.29">About Bioelectricity (slide 3)</span></h3>
+<ul>
+<li>Usually refers to electricity flowing through living tissues</li>
+<li>Includes electrophysiology, electricity that enters into living things (e.g. lightening)  </li>
+<li>Why is this picture our course icon? It is because that picture shows eyes, a nose, ears and a mouth. And these are extremely sophisticated bioelectric sensors.</li>
+</ul>
+<h3> <span class="mw-headline" id="When_did_the_study_of_Bioelectricity_begin.3F_.28slide_4.29">When did the study of Bioelectricity begin? (slide 4)</span></h3>
+<ul>
+<li>Bioelectricity was one of the subjects at the very beginning of the study of electricity in the 1700s.  </li>
+<li>It is said to be the case that bioelectricity infused a competitive and exciting spirit into the study of electricity that was not biological because of a conflict between Galvani, who was a surgeon and who studied electricity in animals, and Volta, who was not medical and who instead studied electricity outside of the living context.  </li>
+</ul>
+<h3> <span class="mw-headline" id="What_was_the_Galvani-Volta_conflict_about.3F_.285.29">What was the Galvani-Volta conflict about? (5)</span></h3>
+<ul>
+<li>Galvani thought that electricity and living tissue was a whole separate physical and physiological phenomenon.  </li>
+<li>Volta thought it is all one thing and that these are different manifestations of one larger set of electrical events.  </li>
+<li>We now recognize that Volta was the person who was right in the sense of electricity being unified.  </li>
+<li>On the other hand, there are things that are really different about electricity in a biological context.  </li>
+</ul>
+<h3> <span class="mw-headline" id="How_is_electricity_in_living_tissue_different_from_the_.E2.80.9Cordinary.E2.80.9D_electricity_of_batteries.2C_wires.2C_radios_and_computers.3F_.286.29">How is electricity in living tissue different from the “ordinary” electricity of batteries, wires, radios and computers? (6)</span></h3>
+<ul>
+<li>If you throw a standard battery in the ocean, and leave it there for 3 days, the battery is utterly destroyed and of course its voltage has been reduced to zero.  </li>
+</ul>
+<h3> <span class="mw-headline" id="What_happens_when_you_throw_a_fish_in_the_ocean.3F_.287.29">What happens when you throw a fish in the ocean? (7)</span></h3>
+<ul>
+<li>When you throw a fish in the ocean, the fish is very happy.  </li>
+<li>The fish is highly electrical.  </li>
+<li>It maintains voltages all the time, and yet it does not become corroded. It just continues to function.  </li>
+<li>Biological system, exist in a solution that is similar to salt water.  </li>
+<li>Galvani was in that sense correct: living systems are in many specific respects fundamentally different from those of standard electricity.   </li>
+</ul>
+<h2> <span class="mw-headline" id="Major_Sections_.281-3.29">Major Sections (1-3)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture3" title="Bioelectricity:Transcripts Week1 Lecture3"> Edited Transcript 1-3</a>  </p>
+<h3> <span class="mw-headline" id="Week_1_.28slide_10.29">Week 1 (slide 10)</span></h3>
+<p><strong>Make Plans</strong><br />
+<ul><li> background<br />
+</li><li> Rectificaton of Names<br />
+</li><li> Electricity in Solutions  </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Week_2_.28slide_11.29">Week 2 (slide 11)</span></h3>
+<p><strong>Energy, to get Vm</strong><br />
+<ul><li> membrane patch
+</li><li> membrane resistance
+</li><li> membrane capacitance
+</li><li> ion pump
+</li><li> Nernst Vm</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Week_3_.28slide_12.29">Week 3 (slide 12)</span></h3>
+<p><strong>Channels</strong><br />
+<ul><li> Study of membrane channels.<br />
+</li><li> Membrane channels are where ions go through the membrane through special structures which are called channels. The membrane derives its power from this process.  </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Week_4_.28slide_13.29">Week 4 (slide 13)</span></h3>
+<p><strong>Action Potentials</strong><br />
+<ul><li> The Hodgkin--‐Huxley model<br />
+</li><li> Different kinds of channels<br />
+</li><li> coopersating to create voltage pulses (action potentials)  </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Week_5_.28slide_14.29">Week 5 (slide 14)</span></h3>
+<p><strong>Currents within the tissue structure</strong><br />
+<ul><li> axial current &amp; trans-membrane current as determined from Vm by the tissue's structure  </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Week_6_.28slide_15.29">Week 6 (slide 15)</span></h3>
+<p><strong>Propogation</strong><br />
+<ul><li> bringing together channels, action potentials, and structure so that electrical signals (action potentials) move along a fiber  </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Week_7_.28slide_16.29">Week 7 (slide 16)</span></h3>
+<ul>
+<li>Watching: extracellular observation of action potentials moving through the structure<br />
+<ul><li><ul><li> example: electrocardiogram  </li>
+</li></ul>
+</li></ul>
+</ul>
+<h3> <span class="mw-headline" id="Week_8_.28slide_17.29">Week 8 (slide 17)</span></h3>
+<p><strong>Control of Propogation</strong><br />
+<ul><li> by means of trans--membrane or field stimulation  </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="What_are_the_weeks_of_the_course.3F_.28slide_18.29">What are the weeks of the course? (slide 18)</span></h3>
+<ul>
+<li>The first thing we do is to make plans.  </li>
+<li>The next thing we do is to talk about where the energy to do anything comes from.  </li>
+<li>Then, we do this group of 3 (channels, action potentials, and currents in structure).  </li>
+<li>When we have done those 3, we can talk about propagation. Once propagation has been completed, then it is possible to talk about watching propagation from the outside of the active tissue and control the propagation so as to make it do what you want it to do.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Rectificaton_of_Names_.28aka_terminology.29_.281-4.29">Rectificaton of Names (aka terminology) (1-4)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture4" title="Bioelectricity:Transcripts Week1 Lecture4"> Edited Transcript 1-4</a>  </p>
+<h3> <span class="mw-headline" id="Rectification_of_Names_.28slide_21.29">Rectification of Names (slide 21)</span></h3>
+<ul>
+<li>The idea is taken from the Confucian doctrine that social harmony is achieved by using the proper designations for things.</li>
+<li>Bioelectricity deals with invisible things (problem) and some conventions have been adopted to name the abstact things that are its elements.</li>
+</ul>
+<h3> <span class="mw-headline" id="Membranes_.28slide_22.29">Membranes (slide 22)</span></h3>
+<ul>
+<li>The lipid bilayer is a thin material around cells.  </li>
+<li>It is made of 2 layers of lipid molecules.  </li>
+<li>One end (circles) is hydrophilic.  </li>
+<li>The middle (lines) is hydrophobic.  </li>
+<li>The lipid bilayer is thin in comparison to a cell diameter. In this illustration, the cell diameter is 200,000 Angstroms, while the lipid bilayer is only 80A.<br />
+<strong>KEY ASPECT:</strong> super good insulator and at the same time, is very very thin  </li>
+</ul>
+<h3> <span class="mw-headline" id="Positive_Membrane_Voltage_.26_Positive_Membrane_Current_.2823.29">Positive Membrane Voltage &amp; Positive Membrane Current (23)</span></h3>
+<ul>
+<li>Im positive means current is going from inside to outside.  </li>
+<li>Vm: positive lead inside, so +1 mV means inside more positive than outside.     </li>
+</ul>
+<h3> <span class="mw-headline" id="Passive_versus_Active:_same_as_dead_versus_alive.3F_.28slide_24.29">Passive versus Active: same as dead versus alive? (slide 24)</span></h3>
+<ul>
+<li>Passive means that electrical properties, such as resistance, are maintained without change as time passes.  </li>
+<li>Active means that, following some trigger, properties such as resistance can change.  </li>
+<li>A dead alligator is passive.  </li>
+<li>A live alligator can be passive, but don’t count on it.  </li>
+</ul>
+<h3> <span class="mw-headline" id="Notation:_E_compared_to_e_.28slide_26.29">Notation: E compared to e (slide 26)</span></h3>
+<h3> <span class="mw-headline" id="The_natural_number_e_.28slide_27.29">The natural number e (slide 27)</span></h3>
+<ul>
+<li>Lowercase e stands for the natural number e, and it is a specific number, 2.718.  </li>
+<li>e is like pi, in the sense that both are symbols that stand for particular numbers and the numbers have an infinite number of significant digits. They're non-repeating, and so, it's really better to use the symbol because then, everybody's referring to the same number.  </li>
+</ul>
+<h3> <span class="mw-headline" id="The_natural_number_e_.28slide_28.29">The natural number e (slide 28)</span></h3>
+<ul>
+<li>Functionally, the letter e is associated with banking in a historical context.  </li>
+</ul>
+<h3> <span class="mw-headline" id="The_natural_number_e_.28slide_29.29">The natural number e (slide 29)</span></h3>
+<ul>
+<li>e shows up in equations or just calculations or results, whenever the rate of change of something is proportional to the amount which is there to start, and some version of this situation occurs frequently in bioelectricity, and most especially, it occurs with membranes.  </li>
+</ul>
+<h3> <span class="mw-headline" id="The_sizes_of_things.2C_and_E_.28slide_30.29">The sizes of things, and E (slide 30)</span></h3>
+<ul>
+<li>Uppercase E usually stands for an exponent, meaning a power of ten.  </li>
+<li>We need to talk about powers of ten in this course because, in this course, the sizes of objects that we are working with varies across a very wide range.   </li>
+<li>Notice the abbreviation μ (mu), meaning 10^-6 micrometers or 50E^-6 meters.   </li>
+</ul>
+<h3> <span class="mw-headline" id="E_notation_.28slide_31.29">E notation (slide 31)</span></h3>
+<ul>
+<li>If we look for example, at 1 millimeter, 1E^-3, that says this is a number that can be obtained by taking the number one multiplying it by ten raised to the three power. We take 1E^-3, 1E^-3 where we have it here, that's 1/10^3.   </li>
+</ul>
+<h3> <span class="mw-headline" id="E.2C_e.2C_and_.C4.92_.28slide_32.29">E, e, and Ē (slide 32)</span></h3>
+<ul>
+<li>capital E a s a power of ten  </li>
+<li>e is the natural number and is equal to 2.7 etc  </li>
+<li>$$\bar E$$ represents the electric field  </li>
+<li>Can determine from the context which E is being used.    </li>
+</ul>
+<h2> <span class="mw-headline" id="Ions_in_Solutions_.281-5.29">Ions in Solutions (1-5)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture5" title="Bioelectricity:Transcripts Week1 Lecture5"> Edited Transcript 1-5</a>  </p>
+<h3> <span class="mw-headline" id="Ions_in_Solution_.28slide_35.29">Ions in Solution (slide 35)</span></h3>
+<ul>
+<li>ion = an atom or molecule with a charge due to an unequal number of protons (+) and electrons (-)  </li>
+<li>Presence of ions gives a solution electrical conductivity because ions move.  </li>
+<li>For example, in water ordinary table salt (NaCl) divides into sodium and chloride ions, Na+ and Cl-­.  </li>
+<li>Each is charged because an electron is taken from Na and added to Cl, leaving Na+ as net positive, and Cl-­ as net negative.  </li>
+</ul>
+<h3> <span class="mw-headline" id="Ions_and_Conductivity_.CF.83_.28slide_36.29">Ions and Conductivity σ (slide 36)</span></h3>
+<ul>
+<li>Ions carry a charge and move.</li>
+<li>Conductivity = the measure of how many or how easily a charge moves.</li>
+<li>High concentration of ions → high conductivity</li>
+<li>Sodium, potassium and choloride are most important in electrophysiology</li>
+</ul>
+<h3> <span class="mw-headline" id="Resistivity_and_sea_water_.28slide_37.29">Resistivity and sea water (slide 37)</span></h3>
+<ul>
+<li>Resistivity is the reciprocal of conductivity. (If you know one, you know the other.)   </li>
+<li>In ocean water, resistivity is about 25 ohm-cm.</li>
+<li>The conductivity is the reciprocal → 1/25 Siemens per cm.</li>
+<li>Internal environment of animals is similar to sea water.</li>
+</ul>
+<h3> <span class="mw-headline" id="Resistivity_and_sea_water_.28slide_37.29_2">Resistivity and sea water (slide 37)</span></h3>
+<ul>
+<li>To get the resistance of the walls of a cubical container filled with a solution of known resistivity, multiply the resistivity by the length and divide by the cross--‐sectional area. The result will be in Ohms.</li>
+<li>For example, if the resistivity ρ is 25 Ohm-­‐cm, what is the resistance along a box with length 10cm if the cross section is square with each edge 5cm?</li>
+<li>r = 25 Ohms-­‐cm /(5cm * 5cm) = 1 Ohm/cm  </li>
+<li>R = r * L = 1 Ohm/cm * 10 cm = 10 Ohms  </li>
+</ul>
+<h2> <span class="mw-headline" id="RT.2FF_and_other_physical_constants_.281-6.29">RT/F and other physical constants (1-6)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture6" title="Bioelectricity:Transcripts Week1 Lecture6"> Edited Transcript 1-6</a>  </p>
+<h3> <span class="mw-headline" id="RT.2FF_.28slide_41.29">RT/F (slide 41)</span></h3>
+<ul>
+<li>RT/F is a kind of conversion factor between ionic concentrations and voltages  </li>
+<li>R = the gas constant = 8.314 J/K*mole  </li>
+<li>T = absolute temperature in Kelvin<br />
+<dl><dd> Celsius + 273.13 = Kelvin  </li>
+</dd></dl>
+<li>F = Farraday's constant = 96,487 Coulombs/mole</li>
+</ul>
+<h3> <span class="mw-headline" id="RT.2FF_.28slide_42.29">RT/F (slide 42)</span></h3>
+<ul>
+<li>RT/F = a natural constant = about 26 milivolts  (+/- 10%)
+= a kind of conversion factor between ionic concentrations and volts</li>
+</ul>
+<h3> <span class="mw-headline" id="Farraday.27s_constant_.28slide_43.29">Farraday's constant (slide 43)</span></h3>
+<ul>
+<li>Comes from multiplying Avogadro's number times the charge of one electron.</li>
+<li>Avagadro’s number is 6.02e23 molecules per mole.  </li>
+<li>The charge on one electron is 1.6E^‐19 Coulombs.  </li>
+<li>Multiply them to get F.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Electricity_in_solutions_.281-7.29">Electricity in solutions (1-7)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture7" title="Bioelectricity:Transcripts Week1 Lecture7"> Edited Transcript 1-7</a>  </p>
+<h3> <span class="mw-headline" id="Sources_and_sinks_in_a_conductive_medium.2C_a_sketch_.28slide_46.29">Sources and sinks in a conductive medium, a sketch (slide 46)</span></h3>
+<p><a href="/wiki/images/f/f1/Bioelectricity-wk1-sources-and-sinks.png" class="image"><img alt="Bioelectricity-wk1-sources-and-sinks.png" src="/wiki/images/f/f1/Bioelectricity-wk1-sources-and-sinks.png" width="334" height="208" /></a>  </p>
+<ul>
+<li>The universe is filled with a solution that has a conductivity (σ).</li>
+<li>Often make the same assumption about animals in that they have a uniform volume conductor that is of infinite extent like the universe.</li>
+<li>We are not going to take any electrical effects of the boundary into account. </li>
+<li>Will do analysis as if things are infinite and as if they are not being influenced by the boundary.</li>
+<li>source = origin of current (flow of electricity)</li>
+<li>sink = destination of current </li>
+<li>Can be many different pathways from source to sink.</li>
+<li>More current will flow on the shorther pathways.</li>
+<li>field point (p) = point in a selected, variable location located away from the source and the sink out in the field  </li>
+</ul>
+<h3> <span class="mw-headline" id="Electricity_in_Solutions.E2.80.94_The_.E2.80.9CBig_5.E2.80.9D_.28slide_47.29">Electricity in Solutions— The “Big 5” (slide 47)</span></h3>
+<p><a href="/wiki/images/9/92/Bioelectricity-wk1-the-big-five.png" class="image"><img alt="Bioelectricity-wk1-the-big-five.png" src="/wiki/images/9/92/Bioelectricity-wk1-the-big-five.png" width="402" height="256" /></a>  </p>
+<ul>
+<li>The arrows indicate that each quantity can be found from the one before it, including 1 from 5. </li>
+</ul>
+<h3> <span class="mw-headline" id=".231_of_the_Big_5---Potentials_.28slide_48.29">#1 of the Big 5---Potentials (slide 48)</span></h3>
+<ul>
+<li>Potential = the measure of the electrical energy available at one point.  </li>
+<li>If one moves from a location with high potential to one with low potential, it means that the electrical energy diminishes and is usually released to perform some other task. The energy is released in transit.  </li>
+</ul>
+<h3> <span class="mw-headline" id="More_about_potential_.28slide_49.29">More about potential (slide 49)</span></h3>
+<ul>
+<li>Potential is a scalar function with a gradient proportional to the current.</li>
+<li>Scalar = has a measure, but not a direction</li>
+<li>Analogy: The height of a hill has a gradient (slope) proportional to the speed of water flow along the hill's surface.<br />
+<ul><li><ul><li> The electric field is like the slope of the hill.<br />
+</li><li> The slope of the hill is what allows the conversion of energy into movement of a car.</li>
+</li></ul>
+</li></ul>
+</ul>
+<h3> <span class="mw-headline" id="Second_of_the_big_5.E2.80.94the_electric_field_.28slide_50.29">Second of the big 5—the electric field (slide 50)</span></h3>
+<ul>
+<li>Electric field = a measure of the change in potential with distance.</li>
+<li>Has both magnitude and direction.</li>
+<li>Measured in Volts/meter.</li>
+<li>Sign of indicates if the potential is increasing or decreasing<br />
+<dl><dd><ul><li> If potential is increasing → sign is positive<br />
+</li><li> If potential is decreasing → sign is negative  </li>
+</li></ul>
+</dd></dl>
+</ul>
+<h3> <span class="mw-headline" id="Sign_of_E_.28slide_51.29">Sign of E (slide 51)</span></h3>
+<ul>
+<li>The electric field goes down the potential hill, not up.  </li>
+<li>It's the negative of the gradient of potential.  </li>
+<li>That is because change of potential with distance is given a positive sign when the potential is increasing. The electric field is in the downhill direction, toward lower potentials, so the sign reversal is needed.  </li>
+</ul>
+<h3> <span class="mw-headline" id="Third_of_the_big_5.2C_Force_F_.28slide_52.29">Third of the big 5, Force F (slide 52)</span></h3>
+<ul>
+<li>The force F exerted on a charge q is equal to the electric field times the charge.</li>
+<li>F = Eq</li>
+<li>E and F often involve direction as well as magnitude, and the direction is often understood from the context.  </li>
+<li>Can possibly be a very large number.  </li>
+</ul>
+<h3> <span class="mw-headline" id="Fourth_of_the_big_5.E2.80.94the_current_flux_.28slide_53.29">Fourth of the big 5—the current flux (slide 53)</span></h3>
+<ul>
+<li>The current flux J is proportional to the force, multiplied by the conductivity. </li>
+<li>Units: Ampere/cm^2</li>
+<li>Sometimes I is used instead of J, which is confusing since I is also used for the current Amperes.</li>
+<li>Current flux = the force per unit area</li>
+<li>Because the electric field produces a force, the force can move the ions in solution, or in general, move charges from one place to another.  </li>
+</ul>
+<h3> <span class="mw-headline" id="Fifth_in_the_big_5.E2.80.94_Sources_.28slide_54.29">Fifth in the big 5— Sources (slide 54)</span></h3>
+<ul>
+<li>Source = a point where current originates or disappears  </li>
+<li>One takes the divergence of the current at a point to determine if it is a source.  </li>
+<li>Can distinguish between sources and sinks.  </li>
+<li>source = where current originates = positive value  </li>
+<li>sink = where current disappears = negative value  </li>
+<li>Sources occur where the current diverges.  </li>
+<li>To determine if a point is a source, draw a closed surface around the point and total the current through the surface.  </li>
+<li>If all the current that goes into the field point equals the current that goes out, then the point is not a source. Net current going in and going out both equal zero. </li>
+</ul>
+<h3> <span class="mw-headline" id="Where_does_divergence_diverge_from.3F_.28slide_55.29">Where does divergence diverge from? (slide 55)</span></h3>
+<ul>
+<li>Answer: From sources and sinks.  </li>
+<li>The way you know if a point is a source is drawing a closed surface around the point and totaling the current through the surface.  </li>
+<li>Is the field point a source?  </li>
+<li>There is current at the field point, but no, there it is not a source because all of the current that comes into the envelope goes out of the envelope.  </li>
+<li>So as a result, the total current coming out of the field point is equal to zero. Well, the total current going into the field point is equal to zero. Everything that comes in goes out.   </li>
+</ul>
+<h3> <span class="mw-headline" id="What_is_the_potential_anywhere.2C_for_one_source_and_one_sink.3F_.28slide_56.29">What is the potential anywhere, for one source and one sink? (slide 56)</span></h3>
+<ul>
+<li>For one source and one sink, the potential is given by<br />
+<dl><dd> {formula for potential}  </li>
+</dd></dl>
+</ul>
+<h3> <span class="mw-headline" id="Electricity_in_solutions.E2.80.94Mathematical_for_of_the_6-.C2.AD.E2.80.90step_program_.28slide_57.29">Electricity in solutions—Mathematical for of the 6-­‐step program (slide 57)</span></h3>
+<p>{more formulas!}<br />
+<ul><li>  In this particular course, we don't do complex problems, especially complex problems. So generally speaking, we don't need this mathematics.   </p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Electricity_in_solutions.E2.80.94Comments_on_the_math_form_of_the_6-.C2.ADstep_program_.28slide_58.29">Electricity in solutions—Comments on the math form of the 6-­step program (slide 58)</span></h3>
+<ul>
+<li>The ideas that are here, in this particular segment, are most important because you just have to have an idea of what these quantities are qualitatively because we talk about them all the time.  </li>
+<li>And then furthermore, you have to have the concept in mind that when you know the potential, you can get the electric field.  </li>
+<li>When you have the electric field you can get the forces on charges and other charge particles, molecules, ions.  </li>
+<li>When you have the forces, you can get the currents.  </li>
+<li>When you have the currents, you can get the sources.  </li>
+<li>When you have the sources, you can get back to the potentials again.  </li>
+<li>That's a very tight group of ideas which are all tied together.   </li>
+</ul>
+<h2> <span class="mw-headline" id="Electric_potentials_as_compared_to_voltages_.281-8.29">Electric potentials as compared to voltages (1-8)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture8" title="Bioelectricity:Transcripts Week1 Lecture8"> Edited Transcript 1-8</a></p>
+<h2> <span class="mw-headline" id="Forces_exerted_by_electric_fields_.281-9.29">Forces exerted by electric fields (1-9)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture9" title="Bioelectricity:Transcripts Week1 Lecture9"> Edited Transcript 1-9</a> </p>
+<h2> <span class="mw-headline" id="First_Problem_Session_.281-10.29">First Problem Session (1-10)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture10" title="Bioelectricity:Transcripts Week1 Lecture10"> Edited Transcript 1-10</a></p>
+<h2> <span class="mw-headline" id="Problem_session_.281-11.29">Problem session (1-11)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture11" title="Bioelectricity:Transcripts Week1 Lecture11"> Edited Transcript 1-11</a></p>
+<h2> <span class="mw-headline" id="Week_in_review_.281-12.29">Week in review (1-12)</span></h2>
+<p><a href="/wiki/index.php/Bioelectricity:Transcripts_Week1_Lecture12" title="Bioelectricity:Transcripts Week1 Lecture12"> Edited Transcript 1-12</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 28/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes&amp;oldid=7502">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Lecture_Notes&amp;oldid=7502</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,83 @@
+[[Musicproduction:Main|Music Production main page]] : [[Musicproduction:daw |DAW specifics]]
+
+LMMS is an Open Source projet, which allow you to produce music with your computer. This includes the creation of melodies and beats, the synthesis and mixing of sounds, and arranging of samples. You can have connecty your MIDI-keyboard. The interface is user-friendly.
+
+It runs on Linux but you can find binaries for Windows.
+
+Some recording and post recording options are missing but can be done with another Open Source projet, Audacity. 
+
+##Project specifics
+details of file management
+*Project Name
+**A project file is stored in a mmp or mmpz. LMMS can import MIDI and FLP (Fruityloops Project) files directly.
+*File type
+** Project can be exported to wav or ogg file but can use mp3, au, SoundFont2 (SF2 Player), VSTi (VeSTige), LADSPA, GUS patches (PatMan) and MIDI files.
+*Bit depth
+** The primary bit depths in LLMS are 16 and 32.
+*Sampling rate
+*Hardware
+** LMMS can interact with MIDI keyboard.
+*Buffer size
+** The default buffer size is 256 frames but can be tuned.
+*Project folders specifics
+
+
+##Recording
+details of audio recording
+*Metronome(click track)
+*Count in
+*Audio recording tips
+
+##Editing Audio
+details of editing audio
+*Trimming
+*Cutting
+*Grid
+*Change grid resolution
+*modifier key to toggle grid
+*add fades
+*modify fades
+*efficient compiling of multiple takes
+
+##Efficient Editing
+details of efficient editing
+*Zoom
+*Nudge
+*Cycle
+*Merge
+*Name
+*Color
+*Markers
+*Change tempo
+*Other efficient editing tips
+
+##Editing MIDI
+details of editing midi
+*Velocity
+*Quantization
+*Control Change data
+*MIDI monitor(through)
+*Other MIDI editing tips
+*Adding software instruments
+*Other MIDI tips
+
+##Mixing
+details of mixing
+*Types of tracks
+*Adding effects
+*Channel strip layout
+*Configuring a Submix
+*Configure reverb in a send and return scheme
+*Busses
+*Automation recording
+*Automation editing
+
+##Useful resources
+additional resources
+*Website
+** http://lmms.sourceforge.net/
+*Manual
+** http://lmms.sourceforge.net/wiki/index.php/Main_Page
+*Forums
+** http://sourceforge.net/apps/phpbb/lmms/viewforum.php?f=2
+*Links

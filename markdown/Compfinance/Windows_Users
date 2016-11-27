@@ -1,0 +1,10 @@
+Sometimes things written for other environments are a little different in Windows.
+
+File Handling:
+* Directories are separated with forward slashes ("/") in R rather than the usual Windows back slash ("\\").  I found this stepping through the first programming homework assignment.
+
+
+
+
+
+[[Compfinance:Main|Click here to return to Compfinance:Main]]

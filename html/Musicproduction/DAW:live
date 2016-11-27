@@ -1,0 +1,175 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:live</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a>&#160;: <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW specifics</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Project_specifics"><span class="tocnumber">1</span> <span class="toctext">Project specifics</span></a></li>
+<li class="toclevel-1"><a href="#Current_Version"><span class="tocnumber">2</span> <span class="toctext">Current Version</span></a></li>
+<li class="toclevel-1"><a href="#Workflows"><span class="tocnumber">3</span> <span class="toctext">Workflows</span></a></li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">4</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">5</span> <span class="toctext">Editing Audio</span></a></li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">6</span> <span class="toctext">Efficient Editing</span></a></li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">7</span> <span class="toctext">Editing MIDI</span></a></li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">8</span> <span class="toctext">Mixing</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Channel_strip_layout"><span class="tocnumber">8.1</span> <span class="toctext">Channel strip layout</span></a></li>
+<li class="toclevel-2"><a href="#Configuring_a_Submix"><span class="tocnumber">8.2</span> <span class="toctext">Configuring a Submix</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Useful_resources"><span class="tocnumber">9</span> <span class="toctext">Useful resources</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Project_specifics">Project specifics</span></h2>
+<p>details of file management
+<ul><li>Project Name
+<ul><li>Aiff or wav
+</li></ul>
+</li></ul>
+Ableton Live projects are folders that contain the ".als" file and the associated samples within subfolders.
+<ul><li>File type
+</li><li>Bit depth
+<ul><li>Live Bar Menu (or cmd+, for Mac users)&gt;Record,Warp,Launch&gt;Resolution&gt;then choose between 16 to 32
+</li></ul>
+</li><li>Sampling rate
+<ul><li>Live Bar Menu (or cmd+, for Mac users)&gt;Audio&gt;Sampling rate&gt;then choose between 44 100 to 96 000
+</li></ul>
+</li><li>Hardware
+</li><li>Buffer size
+<ul><li>Live Bar Menu (or cmd+, for Mac users)&gt;Audio&gt;Buffer size&gt;then choose between 14 to 2048
+</li></ul>
+</li><li>Project folders specifics</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Current_Version">Current Version</span></h2>
+<p>As of Apr 22 2015 the latest version is: Version 9.1.8</p>
+<h2> <span class="mw-headline" id="Workflows">Workflows</span></h2>
+<p>Details of visual layout/GUI of software environment
+<ul><li>Session View
+</li><li>Arrangement View</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Recording">Recording</span></h2>
+<p>Details of audio recording
+<ul><li>Metronome(click track)
+<ul><li>The metronome (click track) may be enabled by clicking the metronome switch (see section 16.4 of Ableton Live User Manual): <a href="/wiki/images/7/70/SettingMetronomeAbletonLive.jpg" class="image"><img alt="SettingMetronomeAbletonLive.jpg" src="/wiki/images/7/70/SettingMetronomeAbletonLive.jpg" width="518" height="64" /></a>
+</li></ul>
+</li><li>Count in
+<ul><li>Set the count in by clicking the down arrow button next to the metronome button, and select the number of bars for the count in.  None (default), 1, 2 or 4 bars may be selected.
+</li></ul>
+</li></ul>
+<a href="/wiki/images/c/c7/SettingCountInAbletonLive.jpg" class="image"><img alt="SettingCountInAbletonLive.jpg" src="/wiki/images/c/c7/SettingCountInAbletonLive.jpg" width="816" height="240" /></a>
+<ul><li>Audio recording tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h2>
+<p>details of editing audio
+<ul><li>Trimming
+</li><li>Cutting - "Split" In Ableton Live - Left click on the audio where you would like to cut, right click and select "split" - Short cut Ctrl+E
+</li><li>Grid
+</li><li>Change grid resolution
+<ul><li>CTRL-4 (CMD-4 on a Mac) toggles the note grid on and off. CTRL-1 and CTRL-2 (CMD-1 and CMD-2 on a Mac) make the note grid wider or narrower. CTRL-3 (CMD-3 on a Mac) toggles the triplet grid. CTRL-5 (CMD-5 on a Mac) toggles between the fixed and adaptive grid, which automatically adjusts as you zoom in and out (I find it easiest to stay with the fixed grid). These shortcuts are under the Option menu at the top of Live if you forget them. You can also right click over the note editing grid and there is a pop-up menu where you can adjust the same grid settings.
+</li></ul>
+</li><li>modifier key to toggle grid
+</li><li>add fades
+</li><li>modify fades
+</li><li>efficient compiling of multiple takes</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h2>
+<p>details of efficient editing
+<ul><li>Zoom
+<ul><li>Simple Zoom out - key
+</li><li> Simple Zoom in + key
+</li><li> Pan Zoom via Crl+Alt (PC) / Cmd+Alt (Mac) while click and drag
+</li><li> For more complete coverage of zoom and navigation, see section 6.1 of Ableton Live Manual
+</li></ul>
+</li><li>Nudge
+</li><li>Cycle - "Loop" in Ableton - Shortcut - Ctrl+L
+</li><li>Merge - "Consolidate" in Ableton - Shortcut - Ctrl+J
+</li><li>Name - "Rename" in Ableton - Shortcut - Ctrl+R
+</li><li>Color
+<ul><li> 
+</li></ul>
+</li><li>Markers
+<ul><li> Markers are called Locators in Ableton Live. See Section 6.3 of the Live 9 user manual for all the details. To name a locator, select it by clicking its triangular marker, and choose the Rename Edit menu command (or use the [CTRL][PC R] / [CMD][Mac R] shortcut). You can also enter your own info text (page 9) for a locator via the Edit Info Text command in the Edit menu or in the locator’s [PC right-click] / [Mac CTRL-click] context menu. Locators can be removed with your computer’s [Backspace] or [Delete] key , the Create menu, or the Delete Locator button.
+</li></ul>
+</li><li>Change tempo
+</li><li>Other efficient editing tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h2>
+<p>details of editing midi
+<ul><li>Velocity
+</li><li>Quantization
+</li><li>Control Change data
+</li><li>MIDI monitor(through)
+</li><li>Other MIDI editing tips
+</li><li>Adding software instruments
+</li><li>Other MIDI tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Mixing">Mixing</span></h2>
+<p>details of mixing
+<ul><li>Types of tracks
+</li><li>Adding effects</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Channel_strip_layout">Channel strip layout</span></h3>
+<p><strong>Channel Strip from Ableton Live 9</strong></p>
+<p><a href="/wiki/images/b/b0/MusicProd_Ableton_ChanStrip.jpg" class="image"><img alt="MusicProd Ableton ChanStrip.jpg" src="/wiki/images/b/b0/MusicProd_Ableton_ChanStrip.jpg" width="257" height="704" /></a></p>
+<p><strong>Sections of the Channel Strip</strong></p>
+<ol>
+<li>Track Name - Ctrl (Cmd)-R is the shortcut key for renaming the track</li>
+<li>Scene Area - Ableton Live accepts multiple clips for each track.  This area shows a list of those clips</li>
+<li>Track mini-view - A bar graph representation of the clip.  Vertical bars mark loop points and current position in the clip</li>
+<li>I/O Panel - Input and output for the track is set here.  Also the monitor output is controlled from this panel</li>
+<li>Sends - Each track has a send fader for each return track in the project.</li>
+<li>Fader - This section contains the track fader and down the left side the pan knob, mute, solo and track arm buttons.</li>
+<li>Delay - Each track has an optional delay value</li>
+<li>Crossfade bank - Ableton’s master fader has a crossfade slider that switches between groups A and B.  Tracks are associated with a group here.</li>
+</ol>
+<h3> <span class="mw-headline" id="Configuring_a_Submix">Configuring a Submix</span></h3>
+<p>There are three main ways to set up a submix in Live.  It is easier to do this in Session mode.</p>
+<ol>
+<li><p><strong>Group Tracks</strong>
+Select multiple tracks and hit Ctrl (CMD) - G.  The output of all the tracks will be set to 'Group' and a new track will be created.  You can rename this track to an appropriate name for the submix.  Another UI feature in Live is you can fold up the group track to hide all the component tracks of the submix.</p></li>
+<li><p><strong>Create an aux track</strong>
+Aux tracks are not called aux tracks in Live.  But you can create one by adding a new track ( Ctrl (CMD) - T ) and setting the 'In' button on the 'Monitor' section of the track I/O panel.  You can then route the output of all the tracks in the submix to that track.</p></li>
+<li><p><strong>Create a return track</strong>
+You can create a return track from the Live Create menu.  A new send fader will be added to the Send area of the Channel Strip.  You will want to set the output of the tracks in the submix to say 'Sends only'</p></li>
+</ol>
+<p>*Configure reverb in a send and return scheme
+<ul><li>Busses
+</li><li>Automation recording
+</li><li>Automation editing</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Useful_resources">Useful resources</span></h2>
+<p>Additional Resources
+<ul><li><a rel="nofollow" class="external text" href="https://www.ableton.com/">Ableton Homepage</a>
+</li><li><a rel="nofollow" class="external text" href="https://www.ableton.com/manual">Ableton Manual</a>
+</li><li><a rel="nofollow" class="external text" href="https://forum.ableton.com/">Ableton Forum</a>
+</li><li><a rel="nofollow" class="external text" href="https://www.facebook.com/groups/AbletonLiveResourceGroup/">Ableton Live Producer Facebook Group</a>
+</li><li><a rel="nofollow" class="external text" href="http://www.synthtopia.com/content/2009/06/08/50-ableton-live-shortcuts/">Ableton Live keyboard shortcuts quick reference page</a></p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:live&amp;oldid=31803">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:live&amp;oldid=31803</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Music_Production" title="Category:Music Production">Music Production</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

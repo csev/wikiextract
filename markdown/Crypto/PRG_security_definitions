@@ -1,0 +1,22 @@
+$$ Let G:K\rightarrow \lbrace 0,1\rbrace^n\ be\ a\ PRG$$
+
+<u>Goal:</u> define what it means for the output of a generator to be indistinguishable from random. In other words, we're gonna define a distribution that basically is defined by choosing a random key in the key space.
+
+### Statistical Tests
+
+<u>Statistical test:</u> on {0,1}<sup>n</sup>: an algorithm A s.t. A(x) outputs 0 (not random) or 1 (random)
+
+<b>Examples:</b>
+
+* For a random string the number of zeros is roughly the same as the number of ones.
+* Similar we can set a limit on the number of double zero sequences
+* Count the longest series of zeros (should be less than 10 x log(n))
+
+### Advantage
+
+Let $$G:\; \mathcal{K} \rightarrow \lbrace 0, 1 \rbrace^n$$ be a PRG and $$A$$ a statistical test on $$\lbrace 0, 1 \rbrace^n$$.
+
+Define $$\text{Adv}_{\scriptsize \text{PRG}}[A, G] = \left\lvert \mathop{\large \text{Pr}}\limits_{k \overset{\scriptsize R}{\leftarrow} \mathcal{K}} \left[ A(G(k)) = 1 \right]\; - \mathop{\large \text{Pr}}\limits_{r \overset{\scriptsize R}{\leftarrow} \left\lbrace 0, 1 \right\rbrace^{\scriptsize n}} \left[ A(r) = 1 \right] \right\rvert \in [0, 1]$$
+
+
+### Security and Predictability are equivalent

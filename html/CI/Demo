@@ -1,0 +1,91 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">CI:Demo</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Homework &amp; Demo Using Excel (Lecture Video 2.4)</p>
+<ul>
+<li>Due: October 28</li>
+<li>Video lenght: 7 minutes</li>
+<li><p><a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=week1a">link</a>, <a rel="nofollow" class="external text" href="http://www.quantsoftware.org/CompInvestI-Presentations/024-CompInvestI.pptx">notes</a>, <a rel="nofollow" class="external text" href="https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=13">video</a></p></li>
+<li><p>Overview
+<ul><li><ul><li> Download historical data.
+</li><li> Manipulate historical data in Excel.</p></li>
+</li></ul>
+</li></ul>
+</ul>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Demo_Using_Excel"><span class="tocnumber">1</span> <span class="toctext">Demo Using Excel</span></a></li>
+<li class="toclevel-1"><a href="#Notes"><span class="tocnumber">2</span> <span class="toctext">Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Download_historical_data"><span class="tocnumber">2.1</span> <span class="toctext">Download historical data</span></a></li>
+<li class="toclevel-2"><a href="#How_to_manipulate_it_in_Excel"><span class="tocnumber">2.2</span> <span class="toctext">How to manipulate it in Excel</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Demo_Using_Excel">Demo Using Excel</span></h2>
+<ul>
+<li>How to download historical data from Yahoo</li>
+<li>How to manipulate it in Excel</li>
+<li>How to compute the metrics we’ve been talking about</li>
+</ul>
+<h1> <span class="mw-headline" id="Notes">Notes</span></h1>
+<h2> <span class="mw-headline" id="Download_historical_data">Download historical data</span></h2>
+<p>There are lots of good sources of financial data online. Both Yahoo Finance <a rel="nofollow" class="external autonumber" href="http://finance.yahoo.com/">[1]</a> and Google Finance <a rel="nofollow" class="external autonumber" href="https://www.google.com/finance">[2]</a> provide historical prices.
+<ul><li> For example, Apple on <a rel="nofollow" class="external text" href="http://finance.yahoo.com/q?s=AAPL&amp;ql=0">Yahoo</a> and <a rel="nofollow" class="external text" href="https://www.google.com/finance?q=NASDAQ%3AAAPL&amp;ei=eFeKUNjoGYeHwAORXg">Google</a>
+</li><li> Historic data can be saved as csv eg. <a rel="nofollow" class="external text" href="http://finance.yahoo.com/q/hp?s=AAPL&amp;a=00&amp;b=1&amp;c=2011&amp;d=11&amp;e=31&amp;f=2011&amp;g=d">Yahoo - Apple 2011 csv</a> and <a rel="nofollow" class="external text" href="https://www.google.com/finance/historical?cid=22144&amp;startdate=Jan+1%2C+2011&amp;enddate=dec+31%2C+2011&amp;num=30&amp;ei=KFmKUJiGJYeHwAORXg">Google - Apple 2011 csv</a>
+</li><li> This data can be imported into excel or other spreadsheet programs
+<ul><li> The data includes date, open, high, low, close, volume, and adjusted close.
+</li><li> The data we will work with is adjusted close. Adjusted close is different from close.</p>
+</li></ul>
+</li></ul>
+
+<h2> <span class="mw-headline" id="How_to_manipulate_it_in_Excel">How to manipulate it in Excel</span></h2>
+<p>How to calculate values using real data in a spread sheet.</p>
+<ul>
+<li>Sort data by date ascending (oldest first)</li>
+<li>Delete open, high, low, close, and volume, leaving date and adjusted close.</li>
+<li>Calculate Total Return (Annual Return)
+<ul><li><ul><li> (Final Value/First Value)-1, for example =(D253/D2)-1</li>
+</li></ul>
+</li></ul>
+<li>Calculate Daily Return
+<ul><li><ul><li> (Today's value/Yesterday's Value)-1, for example =(B3/B2)-1
+</li><li> Format as percentage.</li>
+</li></ul>
+</li></ul>
+<li>Calculate Average Daily Return.
+<ul><li><ul><li> Average of all Daily Returns, for example =average(C2:C253)
+</li><li> Format as number.</li>
+</li></ul>
+</li></ul>
+<li>Calculate Standard Deviation of Daily Return.
+<ul><li><ul><li> Standard Deviation over all Daily Returns, for example =stdev(C2:C253)
+</li><li> Format as number</li>
+</li></ul>
+</li></ul>
+<li>Calculate Sharpe Ratio
+<ul><li><ul><li> Square Root of 253 multiplied by (Average Daily Return divided by Standard Deviation of Daily Returns), for example =sqrt(253)*F4/F5</li>
+</li></ul>
+</li></ul>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=CI:Demo&amp;oldid=4226">https://share.coursera.org/wiki/index.php?title=CI:Demo&amp;oldid=4226</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:CI" title="Category:CI">CI</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

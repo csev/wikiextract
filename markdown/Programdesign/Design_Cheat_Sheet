@@ -1,0 +1,34 @@
+The Design Cheat Sheet lays out each step you take when using the How to Design Programs recipe. If you have only learned [HtDF](https://class.coursera.org/programdesign-002/wiki/view?page=HtDFunctions) or [HtDD](https://class.coursera.org/programdesign-002/wiki/view?page=HtDData) you may be better off visiting their respective pages. 
+
+## HtDW
+
+1. Domain analysis (use a piece of paper!)
+ 1. Sketch program scenarios
+ 2. Identify constant information
+ 3. Identify changing information
+ 4. Identify big-bang options
+2. Build the actual program
+ 1. Constants (based on 1.2 above)
+ 2. [[Data definition]] (based on 1.3 above)
+ 3. Functions
+   *. main first (based on 1.3, 1.4 and 2.2 above)
+   *. wish list entries for [[big-bang]] handlers
+ 4. Work through wish list until done
+
+
+## HtDD
+
+1. A possible [[structure definition]].
+2. A [[type comment]] that defines a new type name and describes how to form data of that type.
+3. An interpretation that describes the correspondence between information and data.
+4. One or more examples of the data.
+5. A [[template]] for a 1 argument function operating on data of this type.
+
+
+## HtDF
+
+1. [[Signature]], [[purpose]] and [[stub]].
+2. Define examples, wrap each in check-expect.
+3. Template and inventory.
+4. Code the function body.
+5. Test and debug until correct

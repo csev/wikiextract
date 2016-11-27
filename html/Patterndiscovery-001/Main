@@ -1,0 +1,183 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Patterndiscovery-001:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<p style="font:bold 220% Arial, serif;">Pattern Discovery in Data Mining</p>
+<p><a rel="nofollow" class="external text" href="https://www.coursera.org/course/patterndiscovery"><strong>Course Page</strong></a>
+<br />
+Offered by: <a rel="nofollow" class="external text" href="https://www.coursera.org/illinois">University of Illinois at Urbana-Champaign</a><br />
+Instructor: <a rel="nofollow" class="external text" href="https://www.coursera.org/instructor/jiaweihan">Jiawei Han</a></p>
+<p><br /></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Resources"><span class="tocnumber">1</span> <span class="toctext">Resources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lecture_module_2:_Basic_Concepts"><span class="tocnumber">1.1</span> <span class="toctext">Lecture module 2: Basic Concepts</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_3:_Mining_Methods"><span class="tocnumber">1.2</span> <span class="toctext">Lecture module 3: Mining Methods</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_4:_Pattern_Evaluation"><span class="tocnumber">1.3</span> <span class="toctext">Lecture module 4: Pattern Evaluation</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_7:_Sequential_Pattern_Mining"><span class="tocnumber">1.4</span> <span class="toctext">Lecture module 7: Sequential Pattern Mining</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_8:_Graph_pattern_Mining"><span class="tocnumber">1.5</span> <span class="toctext">Lecture module 8: Graph pattern Mining</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_10:_Frequent_Pattern_Mining_for_Text_Data"><span class="tocnumber">1.6</span> <span class="toctext">Lecture module 10: Frequent Pattern Mining for Text Data</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Definitions"><span class="tocnumber">2</span> <span class="toctext">Definitions</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lecture_module_2:_Basic_Concepts_2"><span class="tocnumber">2.1</span> <span class="toctext">Lecture module 2: Basic Concepts</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_3:_Mining_Methods_2"><span class="tocnumber">2.2</span> <span class="toctext">Lecture module 3: Mining Methods</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_4:_Pattern_Evaluation_2"><span class="tocnumber">2.3</span> <span class="toctext">Lecture module 4: Pattern Evaluation</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_5:_Mining_Diverse_Patterns"><span class="tocnumber">2.4</span> <span class="toctext">Lecture module 5: Mining Diverse Patterns</span></a>
+<ul>
+<li class="toclevel-3"><a href="#MultiLevel_patterns"><span class="tocnumber">2.4.1</span> <span class="toctext">MultiLevel patterns</span></a></li>
+<li class="toclevel-3"><a href="#MultiDimensional_patterns"><span class="tocnumber">2.4.2</span> <span class="toctext">MultiDimensional patterns</span></a></li>
+<li class="toclevel-3"><a href="#Compressed_patterns"><span class="tocnumber">2.4.3</span> <span class="toctext">Compressed patterns</span></a></li>
+<li class="toclevel-3"><a href="#Colossal_patterns"><span class="tocnumber">2.4.4</span> <span class="toctext">Colossal patterns</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Lecture_module_6:_Constraint-Based_Mining"><span class="tocnumber">2.5</span> <span class="toctext">Lecture module 6: Constraint-Based Mining</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_7:_Sequential_Pattern_Mining_2"><span class="tocnumber">2.6</span> <span class="toctext">Lecture module 7: Sequential Pattern Mining</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_8:_Graph_Pattern_Mining_2"><span class="tocnumber">2.7</span> <span class="toctext">Lecture module 8: Graph Pattern Mining</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_9:_Pattern-based_Classification"><span class="tocnumber">2.8</span> <span class="toctext">Lecture module 9: Pattern-based Classification</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_10:_Frequent_Pattern_Mining_for_Text_Data_2"><span class="tocnumber">2.9</span> <span class="toctext">Lecture module 10: Frequent Pattern Mining for Text Data</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_module_11:_Advanced_Topics"><span class="tocnumber">2.10</span> <span class="toctext">Lecture module 11: Advanced Topics</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Data_Streams"><span class="tocnumber">2.10.1</span> <span class="toctext">Data Streams</span></a></li>
+<li class="toclevel-3"><a href="#Spatiotemporal_and_Trajectory_Mining"><span class="tocnumber">2.10.2</span> <span class="toctext">Spatiotemporal and Trajectory Mining</span></a></li>
+<li class="toclevel-3"><a href="#Software_Bug_Mining"><span class="tocnumber">2.10.3</span> <span class="toctext">Software Bug Mining</span></a></li>
+<li class="toclevel-3"><a href="#Privacy_Issues_in_Pattern_Mining"><span class="tocnumber">2.10.4</span> <span class="toctext">Privacy Issues in Pattern Mining</span></a></li>
+<li class="toclevel-3"><a href="#Invisible_Pattern_Mining"><span class="tocnumber">2.10.5</span> <span class="toctext">Invisible Pattern Mining</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Resources">Resources</span></h1>
+<h2> <span class="mw-headline" id="Lecture_module_2:_Basic_Concepts"> Lecture module 2: Basic Concepts </span></h2>
+<p><a rel="nofollow" class="external text" href="http://www.saburchill.com/math/chapters/0030020.html">Set Notation from Open Door</a></p>
+<h2> <span class="mw-headline" id="Lecture_module_3:_Mining_Methods"> Lecture module 3: Mining Methods</span></h2>
+<p><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/Data_Mining_Algorithms_In_R/Frequent_Pattern_Mining/The_FP-Growth_Algorithm#FP-Tree_structure">Structure of a FP-tree, from Wikibooks</a></p>
+<h2> <span class="mw-headline" id="Lecture_module_4:_Pattern_Evaluation"> Lecture module 4: Pattern Evaluation</span></h2>
+<p><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=2pUPF6bSSaw">Video of $$\chi^2$$, chi-squared, by Brian Caffo</a></p>
+<h2> <span class="mw-headline" id="Lecture_module_7:_Sequential_Pattern_Mining"> Lecture module 7: Sequential Pattern Mining</span></h2>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/patterndiscovery-001/forum/thread?thread_id=1985">Step-by-step example of PrefixSpan algorithm</a></p>
+<h2> <span class="mw-headline" id="Lecture_module_8:_Graph_pattern_Mining"> Lecture module 8: Graph pattern Mining</span></h2>
+<p><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/Graph_Theory/Definitions">Graph theory definitions from Wikibooks</a></p>
+<h2> <span class="mw-headline" id="Lecture_module_10:_Frequent_Pattern_Mining_for_Text_Data"> Lecture module 10: Frequent Pattern Mining for Text Data</span></h2>
+<p><a rel="nofollow" class="external text" href="http://journalofdigitalhumanities.org/2-1/topic-modeling-a-basic-introduction-by-megan-r-brett/">Intro to topic mining by Megan R. Brett Creative Commons License</a></p>
+<p><a rel="nofollow" class="external text" href="http://www.matthewjockers.net/macroanalysisbook/lda/">The LDA buffet by Matthew L. Jockers Creative Commons License</a></p>
+<p><a rel="nofollow" class="external text" href="http://arxiv.org/pdf/1406.6312v2.pdf">The ToPMine algorithm original paper</a></p>
+<p><a rel="nofollow" class="external text" href="http://web.engr.illinois.edu/~elkishk2/">The ToPMine algorithm code and datasets</a></p>
+<h1> <span class="mw-headline" id="Definitions"> Definitions </span></h1>
+<p><h2> <span class="mw-headline" id="Lecture_module_2:_Basic_Concepts_2"> Lecture module 2: Basic Concepts </span></h2>
+Frequent pattern: a pattern (itemset in transaction databases) that occurs as often or more often than a minimum support level.</p>
+<p>Support level: symbolized by $$s$$ or $$\sigma$$, the minimum number of occurrences of a pattern for it to be considered frequent.</p>
+<p>Absolute support: the number of occurrences of an itemset in a transaction database.</p>
+<p>Relative support: the frequency of occurrences of an itemset in a transaction database. It is Number of transactions containing itemset/total number of transactions.</p>
+<p>$$k$$-itemset: an itemset that contains k items.</p>
+<p>confidence: a measure of the association of one item with another. $$p(A|B) = \frac{p(A\cup B)}{p(B)}$$ The conditional probability that a transaction containing B will also contain A.</p>
+<p>Closed pattern: a pattern is closed if the itemset is frequent and there does not exist any superset with the same support. This is a lossless compression of the list of frequent itemsets. </p>
+<p>Max pattern: a pattern is max if the itemset is frequent and there does not exist any superset that is frequent. This is a lossy compression of the list of frequent itemsets, because information about support is lost.</p>
+<h2> <span class="mw-headline" id="Lecture_module_3:_Mining_Methods_2"> Lecture module 3: Mining Methods</span></h2>
+<p>Apriori algorithm: Insight is that once a pattern falls below the support threshold, none of its superpatterns can be above the support threshold.</p>
+<p>ECLAT algorithm: Converts the data into a vertical format, where items are listed and associated transactions are treated as a set belonging to the item. Then forming the pattern can be done by grouping items that share transaction IDs.</p>
+<p>FPgrowth algorithm: Converts a group of patterns into a tree structure.</p>
+<h2> <span class="mw-headline" id="Lecture_module_4:_Pattern_Evaluation_2"> Lecture module 4: Pattern Evaluation</span></h2>
+<p>Many measures exist for characterization of possible correlation between events A and B.
+In pattern evaluation context these are so called "interestingness measures", which are applied for example to itemsets of transactional data. </p>
+<p>Note: almost there are two equivalent types of definition - in terms of set theory and in terms of the conditional probability.
+One can move from one to another using the following formula $$p(A|B) = \frac{p(A\cup B)}{p(B)}$$ .</p>
+<p><b>Lift measure</b>: <br /> 
+$$lift(A,B) \equiv \frac{sup(A\cup B)}{sup(A)&#42;sup(B)} = \frac{p(A|B)}{p(A)}$$</p>
+<p><b>Chi-squared measure</b>: <br /> 
+$$\chi^2 \equiv \sum\frac{(observed-expected)^2}{expected},$$ where the summation of observed and expected values is over contingency table.</p>
+<p><b>AllConfidence measure</b>: <br /> 
+$$all&#92;_conf(A,B) \equiv \frac{sup(A\cup B)}{max\left[ sup(A),sup(B)\right]} = min[p(A|B),p(B|A)]$$</p>
+<p><b>MaxConfidence measure</b>: <br />
+$$max&#92;_conf(A,B) \equiv max[p(A|B),p(B|A)]$$</p>
+<p><b>Cosine measure</b> (sometimes called "harmonized lift"): <br />
+$$cosine(A,B) \equiv \frac{sup(A\cup B)}{\sqrt{sup(A)&#42;sup(B})} = \sqrt{p(A|B)&#42;p(B|A)}$$</p>
+<p><b>Kulczynski measure</b>: <br />
+$$Kulc(A,B) \equiv \frac{1}{2}&#42;(\frac{p(A\cup B)}{p(A)}+\frac{p(A\cup B)}{p(B)}) = \frac{p(A|B)+p(B|A)}{2}$$</p>
+<p><b>Jaccard measure</b>: <br />
+$$Jaccard(A,B) \equiv \frac{p(A\cup B)}{p(A)+p(B)-p(A\cup B)} = \frac{1}{\frac{p(A|B)+p(B|A)}{p(A|B)&#42;p(B|A)}-1}$$</p>
+<h2> <span class="mw-headline" id="Lecture_module_5:_Mining_Diverse_Patterns"> Lecture module 5: Mining Diverse Patterns</span></h2>
+<p><h3> <span class="mw-headline" id="MultiLevel_patterns"> MultiLevel patterns</span></h3></p>
+<p>Level: Similar items form a higher level item, such as all types of milk. Lower levels might be specific types of milk (skim, 1%, 2%, whole)</p>
+<h3> <span class="mw-headline" id="MultiDimensional_patterns"> MultiDimensional patterns</span></h3>
+<p>A dimension is a category along which data is collected. So there may be specific other things the store measures about the shopper in addition to the items in his/her basket.</p>
+<h3> <span class="mw-headline" id="Compressed_patterns"> Compressed patterns</span></h3>
+<p>$$\delta$$ is a measure of the closeness of two patterns. It is measured by the number of transactions they have in common divided by the total number of transactions belonging to either one of them. </p>
+<h3> <span class="mw-headline" id="Colossal_patterns"> Colossal patterns</span></h3>
+<p>In a transaction database that contains a frequent colossal pattern, most frequent small patterns will be subpatterns of the colossal pattern. Therefore you can fuse together small patterns to generate the large pattern. </p>
+<h2> <span class="mw-headline" id="Lecture_module_6:_Constraint-Based_Mining"> Lecture module 6: Constraint-Based Mining</span></h2>
+<p>Pattern Space constraint: the pattern has to meet certain constraints, pruning takes place at the pattern level.</p>
+<p>Data Space constraint: the transaction has to meet certain constraints, pruning takes place in the database by removing transactions.</p>
+<p>Anti-monotonic constraint: A constraint that if violated for a set, will be violated for all supersets. Minimum support is an example of such a constraint. </p>
+<p>Monotonic constraint: A constraint that if satisfied for a set, will be satisfied for all supersets. </p>
+<p>Succinct constraint: A constraint that can be directly enforced by manipulating the data.</p>
+<p>Convertible constraint: a constraint that can be converted to either anti-monotonic or monotonic by manipulating the data.</p>
+<h2> <span class="mw-headline" id="Lecture_module_7:_Sequential_Pattern_Mining_2"> Lecture module 7: Sequential Pattern Mining</span></h2>
+<p>GSP (Generalized Sequential Patterns): an algorithm for handling sequential patterns that uses the insights of the Apriori algorithm for non-sequential patterns.</p>
+<p>SPADE: an algorithm for handling sequential patterns that uses the insights of the ECLAT algorithm for non-sequential patterns.</p>
+<p>PrefixSpan: an algorithm for handling sequential patterns that uses the insights of the FPGrowth algorithm for non-sequential patterns. Creates projected databases for restricted searching to grow the pattern (a projected database contains only transactions that have the element projected upon).</p>
+<p>Prefix: a frequent element (single or pair of items). You project the database to only keep sequences where the prefix is the first item. Used with PrefixSpan.</p>
+<p>Suffix: the sequences in the projected database after the prefix has been removed. Used with PrefixSpan.</p>
+<p>Pseudo-Projection: Once the projected databases are small enough to fit into main memory, you can use pointers for converting the sequences to suffixes. This does not require disk access and speeds up the algorithm. This is used with PrefixSpan.</p>
+<h2> <span class="mw-headline" id="Lecture_module_8:_Graph_Pattern_Mining_2"> Lecture module 8: Graph Pattern Mining</span></h2>
+<p>There are two graph mining methods that are related to the Apriori pattern-mining algorithm. AGM grows by adding vertexes and FSG grows by adding edges. Adding edges is more efficient. </p>
+<p>There is a method related to the pattern growth algorithms that is a graph-growing algorithm. gSpan.</p>
+<p>SpiderMine is similar to PatternFusion for colossal patterns. The insight is the same, that you will find the subgraphs of frequent colossal graphs much more frequently than you will find independent small patterns.</p>
+<h2> <span class="mw-headline" id="Lecture_module_9:_Pattern-based_Classification"> Lecture module 9: Pattern-based Classification</span></h2>
+<p>CBA: Classification-Based Associations</p>
+<p>CMAR: Classification based on Multiple Association Rules.</p>
+<p>overfitting: This occurs when a set of rules performs well on the training data set but poorly on the test data set. This can be caused by a small training set, or noise in the data, or a systematic difference between the training data set and the test data set. This is a situation where pattern discovery compares directly to machine learning. </p>
+<h2> <span class="mw-headline" id="Lecture_module_10:_Frequent_Pattern_Mining_for_Text_Data_2"> Lecture module 10: Frequent Pattern Mining for Text Data</span></h2>
+<p>corpus (corpora is plural): A curated collection of documents, sometimes pre-processed for text mining.</p>
+<p>Latent Dirichlet Allocation (LDA): this is a probability distribution that reflects the assignment of words (unigrams, N-grams) to topics (main subjects of a piece of text). This probability distribution has nice mathematical properties that allow it to be updated with the addition of each N-gram.</p>
+<p>N-gram: a number ($$N$$) of words.</p>
+<p>collocation: a measure of how often words occur together in excess of their distribution in the document.</p>
+<p>bag-of-words: A document is chopped up into its individual words and they are sampled randomly. </p>
+<p>phrase intrusion: A method for testing the accuracy of text mining and topic classification. A phrase from another topic is inserted into the document and the algorithm is supposed to mark it as a different topic. The frequency of correct identification of the intruding phrase is a quality measure for the algorithm.</p>
+<p>stop-word: a frequently occurring word that doesn't contain topic information (the, and, but, a).</p>
+<p>token: a word after the grammatical markers have been removed (-ing, -ed, -s).</p>
+<p>Discriminativeness (Purity): how purely a word is associated with a topic, and doesn't appear in other topics.</p>
+<h2> <span class="mw-headline" id="Lecture_module_11:_Advanced_Topics"> Lecture module 11: Advanced Topics</span></h2>
+<p><h3> <span class="mw-headline" id="Data_Streams"> Data Streams</span></h3></p>
+<p>Error rate ($$\epsilon$$): A small number (typically a fraction of the relative support minimum) that is controlled to make sure that frequent patterns are detected.</p>
+<h3> <span class="mw-headline" id="Spatiotemporal_and_Trajectory_Mining"> Spatiotemporal and Trajectory Mining</span></h3>
+<p>Flock: at least $$m$$ objects within a circle of radius $$r$$, and move in the same direction.</p>
+<p>Convoy: Use density-based clustering at each timestamp, not rigid circle.</p>
+<p>Swarm: May not be together at each timestamp, but still moving in the same direction.</p>
+<p>Periodic patterns:</p>
+<h3> <span class="mw-headline" id="Software_Bug_Mining"> Software Bug Mining</span></h3>
+<p>Example of finding copy-paste errors in software. </p>
+<h3> <span class="mw-headline" id="Privacy_Issues_in_Pattern_Mining"> Privacy Issues in Pattern Mining</span></h3>
+<p>Three ways to preserve privacy</p>
+<p>1) Input privacy (data hiding): obscure the actual inputs, for example by adding a random number to birthdates. </p>
+<p>Data supplier anonymizes the data.</p>
+<p>Third party anonymizes the data.</p>
+<p>$$k$$-anonymity: Group the information into classes that have at least $$k$$ members. </p>
+<p>$$l$$-diversity: members of the group have $$l$$ different classes.</p>
+<p>2) Output privacy (knowledge hiding): Identify sensitive knowledge and don't disclose it.</p>
+<p>3) Owner privacy: Hide the source of the data.</p>
+<h3> <span class="mw-headline" id="Invisible_Pattern_Mining"> Invisible Pattern Mining</span></h3>
+<p>Pattern Mining as part of another function.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 6/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Patterndiscovery-001:Main&amp;oldid=31217">https://share.coursera.org/wiki/index.php?title=Patterndiscovery-001:Main&amp;oldid=31217</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

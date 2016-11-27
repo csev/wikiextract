@@ -1,0 +1,717 @@
+[[Category:Coursera]]
+[[Category:Pattern-Oriented Software Architectures]]
+#Introduction
+
+This is the wiki for the course Pattern-Oriented Software Architectures for Concurrent and Networked Software led by Douglas C. Schmidt.  
+
+This class resources are intended for the use of all participants in the course, so please feel free to add, edit and organize items of interest.
+
+#Lecture Notes
+
+##Week 1
+
+### URLs cited by PowerPoint file
+####course-overview ([pdf](https://spark-public.s3.amazonaws.com/posa/slides/course-overview.pdf), [pptx](https://spark-public.s3.amazonaws.com/posa/slides/course-overview.pptx))
+##### Dynamic Instrumentation and Static Analysis
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/DSIS.pdf   
+- http://www.fluid.cs.cmu.edu/
+
+##### Challenges and strategies to deal with multi-threaded software
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/BC-schmidt.pdf
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/pdcp-editorial.pdf
+
+##### Apply for Vanderbilt
+- http://www.isis.vanderbilt.edu/  
+- http://www.vanderbilt.edu/eecs   
+- http://www.vanderbilt.edu/  
+
+##### (unclassified)
+- http://steve.vinoski.net/pdf/IEEE-Middleware\_Dark\_Matter.pdf  
+- http://www.dre.vanderbilt.edu/~schmidt/CACM-patterns.html  
+  
+- http://www.dre.vanderbilt.edu/~schmidt/CACM-frameworks.html  
+- http://www.meetup.com/Coursera  
+- http://www.dre.vanderbilt.edu/ACE   
+- http://www.dre.vanderbilt.edu/TAO  
+- http://www.dre.vanderbilt.edu/JAWS
+- http://developer.android.com/guide/basics/what-is-android.html  
+- http://en.wikipedia.org/wiki/Unified\_Modeling\_Language  
+
+
+
+####1-concurrent-networked-software-intro ([pdf](https://spark-public.s3.amazonaws.com/posa/slides/1-concurrent-networked-software-intro.pdf), [pptx](https://spark-public.s3.amazonaws.com/posa/slides/1-concurrent-networked-software-intro.pptx))
+
+####2-middleware-overview ([pdf](https://spark-public.s3.amazonaws.com/posa/slides/2-middleware-overview.pdf), [pptx](https://spark-public.s3.amazonaws.com/posa/slides/2-middleware-overview.pptx))
+
+#####Part 1
+- http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html ( Slide 6 - 1:34 )
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/middleware-encyclopedia.pdf ( Slide 11 - 3:09 )
+- http://www.rtsj.org/ (Slide 19 - 7:25 )
+- http://www.dre.vanderbilt.edu/ACE (Slide 19 - 7:25 )
+- http://www.omg.org/dds ( Slide 21 - 9:00 )
+- http://www.omg.org/corba ( Slide 21 - 9:00 )
+
+#####Part 2
+- http://www.sei.cmu.edu/uls ( Slide 46 - 11:00 )
+- http://en.wikipedia.org/wiki/Ozymandias ( Slide 47 - 11:10 )
+
+####3-design-dimensions ([pdf](https://spark-public.s3.amazonaws.com/posa/slides/3-design-dimensions.pdf), [pptx](https://spark-public.s3.amazonaws.com/posa/slides/3-design-dimensions.pptx))
+
+#####Part 1
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf ( Slide 5 - 1:28 )
+- http://en.wikipedia.org/wiki/Communications\_protocol ( Slide 6 - 1:56 )
+- http://en.wikipedia.org/wiki/Connection-oriented\_protocol ( Slide 7 - 3:34 ) 
+- http://en.wikipedia.org/wiki/Connectionless_protocol ( Slide 8 - 4:26 )
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/RT-perf.pdf ( Slide 12 - 10:24 )
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/ami1.pdf ( Slide 14 - 12:42 )
+- http://www.dre.vanderbilt.edu/~schmidt/PDF/ami2.pdf ( Slide 14 - 12:42 )
+
+#####Part 2
+
+<table border="1">
+    <tr>
+        <td>URL</td>
+        <td>Title</td>
+        <td>Slide</td>
+        <td>Time</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf</td>
+        <td>Concurrent and Network Design</td>
+        <td>20</td>
+        <td>0:48</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf</td>
+        <td>Static vs. Dynamic Linking and Configuration</td>
+        <td>40</td>
+        <td>9:48</td>
+    </tr>
+</table>
+
+#####Part 3
+
+<table border="1">
+    <tr>
+        <td>URL</td>
+        <td>Title</td>
+        <td>Slide</td>
+        <td>Time</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/daemon-design-94.pdf</td>
+        <td>Concurrent and Network Design</td>
+        <td>44</td>
+        <td>0:48</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor1-93.pdf</td>
+        <td>Iterative vs. Concurrent Servers</td>
+        <td>46</td>
+        <td>3:40</td>
+    </tr>
+    <tr>
+        <td>http://kircher-schwanninger.de/michael/publications/EagerAcquisition.pdf</td>
+        <td>Thread/Process Pool Eager Spawning Strategies</td>
+        <td>49</td>
+        <td>7:50</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf</td>
+        <td>Thread/Process Pool Eager Spawning Strategies</td>
+        <td>51</td>
+        <td>10:58</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf</td>
+        <td>Thread/Process Pool Eager Spawning Strategies</td>
+        <td>51</td>
+        <td>10:58</td>
+    </tr>
+    <tr>
+        <td>http://kircher-schwanninger.de/michael/publications/LazyAcquisition.pdf</td>
+        <td>On-demand Thread/Process Spawning Strategies</td>
+        <td>52</td>
+        <td>11:30</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/PDCP.pdf</td>
+        <td>On-demand Thread/Process Spawning Strategies</td>
+        <td>53</td>
+        <td>12:55</td>
+    </tr>
+    <tr>
+        <td>http://en.wikipedia.org/wiki/Scheduler_activations</td>
+        <td>Hybrid Threading Model</td>
+        <td>58</td>
+        <td>17:20</td>
+    </tr>
+    <tr>
+        <td>ftp://crimson.ihg.uni-duisburg.de/Solaris/docs/multi_thread.pdf</td>
+        <td>Hybrid Threading Model</td>
+        <td>60</td>
+        <td>18:17</td>
+    </tr>
+    <tr>
+        <td>http://en.wikipedia.org/wiki/Pipeline_(software)</td>
+        <td>Task- vs. Message-based Architectures</td>
+        <td>64</td>
+        <td>20:04</td>
+    </tr>
+    <tr>
+        <td>http://www.dre.vanderbilt.edu/~schmidt/PDF/INFOCOM-94.pdf</td>
+        <td>Task- vs. Message-based Architectures</td>
+        <td>64</td>
+        <td>21:50</td>
+    </tr>
+</table>
+
+### Some Terms
+- http://www.businessdictionary.com/definition/commoditization.html
+- http://en.wikipedia.org/wiki/Commoditization
+- [Decomposition](http://en.wikipedia.org/wiki/Decomposition_(computer_science))
+- [Dynamic dispatch/binding](http://en.wikipedia.org/wiki/Dynamic_dispatch)
+
+### Books cited
+- Design Patterns: Elements of Reusable Object-Oriented Software. [Wikipedia](http://en.wikipedia.org/wiki/Design_Patterns), [Amazon](http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612/ref=sr_1_1?s=books&ie=UTF8&qid=1362891532&sr=1-1&keywords=Design+Patterns%3A+Elements+of+Reusable+Object-Oriented+Software).
+- [Pattern-Oriented Software Architecture Volume 1](http://www.amazon.com/Pattern-Oriented-Software-Architecture-System-Patterns/dp/0471958697), aka POSA 1.
+- [Pattern-Oriented Software Architecture Volume 2](http://www.amazon.com/Pattern-Oriented-Software-Architecture-Concurrent-Networked/dp/0471606952), aka POSA 2.
+- [C++ Network Programming, Volume 1](http://www.amazon.com/Network-Programming-Mastering-Complexity-Patterns/dp/0201604647/ref=sr_1_4?s=books&ie=UTF8&qid=1362891302&sr=1-4&keywords=douglas+c.+schmidt)
+- [C++ Network Programming, Volume 2](http://www.amazon.com/Network-Programming-Systematic-Reuse-Frameworks/dp/0201795256/ref=sr_1_3?s=books&ie=UTF8&qid=1362891302&sr=1-3&keywords=douglas+c.+schmidt)
+
+
+##Week 2
+
+### URLs cited by PowerPoint file
+
+####OS  Support for Programming Concurrent & Networked Software
+http://en.wikipedia.org/wiki/Berkeley\_sockets (appears on slide: 4)  
+http://en.wikipedia.org/wiki/Select\_(Unix) (appears on slide: 23)  
+http://static.usenix.org/event/usenix99/full\_papers/banga/banga\_html/final2.html (appears on slide: 25)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/IPC\_SAP-92.pdf (appears on slide: 26)  
+http://en.wikipedia.org/wiki/Resource\_Acquisition\_Is\_Initialization (appears on slide: 68)  
+
+####Android Support for Programming Concurrent & Networked Software
+http://developer.android.com/guide/basics/what-is-android.html (appears on slide: 6)  
+http://en.wikipedia.org/wiki/Android\_(operating_system)#Linux (appears on slide: 8)  
+http://tidsp.es.ncku.edu.tw/cinfon/resource/slides/11102012\_02\_final.pdf (appears on slide: 10)  
+http://developer.android.com/tools/sdk/ndk/index.html (appears on slide: 12)  
+http://en.wikipedia.org/wiki/Dalvik\_(software) (appears on slide: 15)  
+http://en.wikipedia.org/wiki/Comparison\_of\_Java\_and\_Android\_API (appears on slide: 17)  
+https://sites.google.com/site/io/inside-the-android-application-framework (appears on slide: 19)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 21)  
+http://developer.android.com/reference/android/app/Activity.html (appears on slide: 23)  
+http://developer.android.com/guide/components/services.html (appears on slide: 26)  
+http://developer.android.com/guide/topics/providers/content-providers.html (appears on slide: 29)  
+http://developer.android.com/reference/android/content/BroadcastReceiver.html (appears on slide: 31)  
+https://sites.google.com/site/io/anatomy--physiology-of-an-android (appears on slide: 32)  
+http://developer.android.com/guide/components/fundamentals.html (appears on slide: 33)  
+http://source.android.com/ (appears on slide: 34)  
+http://www.nds.rub.de/media/attachments/files/2012/03/binder.pdf (appears on slide: 37)  
+http://developer.android.com/training/basics/network-ops/connecting.html (appears on slide: 38)  
+https://sites.google.com/site/io/anatomy--physiology-of-an-android (appears on slide: 41)  
+http://developer.android.com/guide/components/aidl.html (appears on slide: 45)  
+http://www.vogella.com/tutorials.html (appears on slide: 51)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf (appears on slide: 52)  
+http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf (appears on slide: 53)  
+http://developer.android.com/guide/components/processes-and-threads.html (appears on slide: 57)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf (appears on slide: 72)   
+http://developer.android.com/reference/java/util/concurrent/package-summary.html (appears on slide: 73)  
+http://developer.android.com/training/articles/perf-anr.html (appears on slide: 74)  
+http://developer.android.com/reference/android/os/AsyncTask.html (appears on slide: 77)  
+https://developer.android.com/training/multiple-threads/communicate-ui.html (appears on slide: 78)  
+http://www.vogella.com/articles/AndroidBackgroundProcessing/article.html (appears on slide: 79)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF (appears on slide: 83)  
+http://gee.cs.oswego.edu/dl/cpj (appears on slide: 84)  
+
+####Introduction to Patterns & Frameworks (with Emphasis on Concurrent & Networked Software)
+
+http://upload.wikimedia.org/wikipedia/commons/9/97/DNA\_Double\_Helix.png (appears on slide: 12)  
+http://www.dre.vanderbilt.edu/ACE (appears on slide: 20)   
+http://developer.android.com/ (appears on slide: 21)  
+http://blog.sei.cmu.edu/archives.cfm/category/reflections-on-software-architecture (appears on slide: 23)  
+
+####Overview of Patterns: Part 1
+http://www.dre.vanderbilt.edu/~schmidt/PDF/gperf.pdf (appears on slide: 7)  
+http://www.gnu.org/software/gperf (appears on slide: 8)  
+http://www.ioccc.org/ (appears on slide: 9)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ECOOP-95.pdf (appears on slide: 12)  
+http://c2.com/cgi/wiki?PatternForms (appears on slide: 37)  
+http://upload.wikimedia.org/wikipedia/commons/e/ec/Spiral\_model\_(Boehm,\_1988).svg (appears on slide: 39)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf (appears on slide: 42)  
+http://www.research.ibm.com/designpatterns/pubs/ph-jun96.txt (appears on slide: 48; link is broken, but here is an alternative: http://allpatterns.blogspot.com/2006/12/to-kill-singleton.html)  
+http://en.wikipedia.org/wiki/Double-checked\_locking (appears on slide: 52)  
+
+
+##Week 3
+
+### URLs cited by PowerPoint file
+#### GoF & POSA1 Pattern Examples
+
+http://c2.com/cgi/wiki?HistoryOfPatterns (appears on slide: 3)  
+http://c2.com/cgi/wiki?HistoryOfPatterns (appears on slide: 4)  
+http://c2.com/cgi/wiki?HistoryOfPatterns (appears on slide: 5)  
+http://c2.com/cgi/wiki?HistoryOfPatterns (appears on slide: 6)  
+http://c2.com/cgi/wiki?HistoryOfPatterns (appears on slide: 7)  
+http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/ (appears on slide: 7)  
+http://c2.com/cgi/wiki?HistoryOfPatterns (appears on slide: 8)  
+http://c2.com/cgi/wiki?HistoryOfPatterns (appears on slide: 9)  
+http://en.wikipedia.org/wiki/Design\_Patterns (appears on slide: 10)  
+http://www.dre.vanderbilt.edu/POSA (appears on slide: 12)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 20)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 21)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 22)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 23)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 24)  
+http://en.wikipedia.org/wiki/Proxy\_pattern (appears on slide: 31)  
+http://en.wikipedia.org/wiki/Proxy\_pattern (appears on slide: 32)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 46)  
+http://www.dre.vanderbilt.edu/~schmidt/comm-foreword.html (appears on slide: 50)  
+http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf (appears on slide: 61)  
+http://www.dre.vanderbit.edu/TAO (appears on slide: 62)  
+http://www.jacorb.org/ (appears on slide: 62)  
+http://www.voelter.de/publications/books-rem.html (appears on slide: 63)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 66)  
+http://developer.android.com/training/articles/perf-anr.html (appears on slide: 68)  
+http://developer.android.com/reference/android/app/IntentService.html (appears on slide: 70)  
+http://developer.android.com/reference/android/app/IntentService.html (appears on slide: 71)  
+http://developer.android.com/reference/android/app/IntentService.html (appears on slide: 72)  
+http://developer.android.com/reference/android/app/IntentService.html (appears on slide: 73)  
+http://developer.android.com/reference/android/app/IntentService.html (appears on slide: 74)  
+http://wiki.hsr.ch/APF/files/CommandProcessor.pdf (appears on slide: 75)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 85)  
+http://en.wikipedia.org/wiki/Observer\_pattern (appears on slide: 95)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ieee-patterns.pdf (appears on slide: 99)  
+
+#### Overview of Pattern Relationships
+http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/ (appears on slide: 2)  
+http://upload.wikimedia.org/wikipedia/commons/9/97/DNA\_Double\_Helix.png (appears on slide: 3)  
+http://c2.com/cgi/wiki?SingletonsAreEvil (appears on slide: 4)  
+http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/ (appears on slide: 5)  
+http://upload.wikimedia.org/wikipedia/commons/9/97/DNA\_Double\_Helix.png (appears on slide: 13)  
+http://en.wikipedia.org/wiki/Pattern\_language (appears on slide: 14)  
+http://gee.cs.oswego.edu/dl/acs/acs/acs.html (appears on slide: 20)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 21)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 22)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 23)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 24)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 25)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 26)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 27)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 28)  
+http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe\_pattern (appears on slide: 31)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 33)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 34)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 35)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 36)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 37)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 38)  
+http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf (appears on slide: 39)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 42)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 43)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-realtime.html (appears on slide: 44)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf (appears on slide: 47)  
+http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html (appears on slide: 48)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf (appears on slide: 49)  
+http://en.wikipedia.org/wiki/Proxy\_pattern (appears on slide: 50)  
+http://en.wikipedia.org/wiki/Adapter\_pattern (appears on slide: 50)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf (appears on slide: 51)  
+http://en.wikipedia.org/wiki/Abstract\_factory\_pattern (appears on slide: 52)  
+http://en.wikipedia.org/wiki/Strategy\_pattern (appears on slide: 53)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF (appears on slide: 54)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf (appears on slide: 55)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf (appears on slide: 56)  
+http://wiki.hsr.ch/APF/files/BeyondtheGangofFour.pdf (appears on slide: 61)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/POA.pdf (appears on slide: 62)  
+http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx (appears on slide: 64)  
+http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx (appears on slide: 65)  
+http://adtmag.com/articles/2001/09/24/a-tale-of-three-patterns.aspx (appears on slide: 66)  
+http://upload.wikimedia.org/wikipedia/commons/9/97/DNA\_Double\_Helix.png (appears on slide: 79)  
+http://upload.wikimedia.org/wikipedia/commons/9/97/DNA\_Double\_Helix.png (appears on slide: 80)  
+http://upload.wikimedia.org/wikipedia/commons/9/97/DNA\_Double\_Helix.png (appears on slide: 81)  
+http://en.wikipedia.org/wiki/Strategy\_pattern (appears on slide: 85)  
+http://en.wikipedia.org/wiki/Strategy\_pattern (appears on slide: 86)  
+http://en.wikipedia.org/wiki/Abstract\_factory\_pattern (appears on slide: 88)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf (appears on slide: 91)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf (appears on slide: 92)  
+http://upload.wikimedia.org/wikipedia/commons/9/97/DNA\_Double\_Helix.png (appears on slide: 96)  
+http://en.wikipedia.org/wiki/Hyperlink\_cinema (appears on slide: 103)  
+http://posa1.blogspot.com/2008/05/layered-architecture-pattern.html (appears on slide: 105)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf (appears on slide: 106)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf (appears on slide: 107)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf (appears on slide: 108)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf (appears on slide: 109)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf (appears on slide: 110)  
+http://en.wikipedia.org/wiki/Strategy\_pattern (appears on slide: 111)  
+http://en.wikipedia.org/wiki/Abstract\_factory\_pattern (appears on slide: 112)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf (appears on slide: 113)  
+http://www.kircher-schwanninger.de/michael/publications/BrokerRevisited.pdf (appears on slide: 114)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf (appears on slide: 129)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf (appears on slide: 130)  
+http://www.takeourword.com/images/persistence-of-memory.jpg (appears on slide: 132)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf (appears on slide: 133)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf (appears on slide: 140)  
+
+##Week 4
+### URLs cited by PowerPoint file
+#### Overview of Frameworks
+http://www.dre.vanderbilt.edu/~schmidt/dedicate.html (appears on slide: 5)  
+http://www.dre.vanderbilt.edu/~schmidt/comm-lessons.html (appears on slide: 7)  
+http://www.dre.vanderbilt.edu/~schmidt/reuse-lessons.html (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/~schmidt/CACM-frameworks.html (appears on slide: 12)  
+http://www.dre.vanderbilt.edu/~schmidt/Coursera/articles/hollywood-principle.txt (appears on slide: 13)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor1-93.pdf (appears on slide: 14)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor2-93.pdf (appears on slide: 15)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf (appears on slide: 18)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/TAPOS.pdf (appears on slide: 21)  
+http://www.dre.vanderbilt.edu/scoreboard (appears on slide: 26)  
+http://w3.isis.vanderbilt.edu/projects/gme (appears on slide: 27)  
+http://en.wikipedia.org/wiki/Library\_(computing) (appears on slide: 31)  
+http://st-www.cs.illinois.edu/users/johnson/frameworks.html (appears on slide: 32)  
+http://www.dre.vanderbilt.edu/~schmidt/report-doc.html (appears on slide: 33)  
+http://www.laputan.org/drc/drc.html (appears on slide: 36)  
+http://en.wikipedia.org/wiki/Strategy\_pattern (appears on slide: 37)  
+http://en.wikipedia.org/wiki/Template\_method (appears on slide: 38)  
+http://developer.android.com/reference/android/os/AsyncTask.html (appears on slide: 42)  
+http://developer.android.com/reference/android/os/AsyncTask.html (appears on slide: 46)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ICCDS.pdf (appears on slide: 48)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf (appears on slide: 50)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Queue-04.pdf (appears on slide: 53)  
+
+#### Framework examples
+http://www.sei.cmu.edu/productlines (appears on slide: 5)  
+http://www.cs.iastate.edu/~cs309/references/CoplienHoffmanWeiss\_CommonalityVariability.pdf (appears on slide: 8)  
+http://developer.android.com/ (appears on slide: 12)  
+http://www.dre.vanderbilt.edu/ACE (appears on slide: 20)  
+http://developer.android.com/training/basics/activity-lifecycle/index.html (appears on slide: 34)  
+http://developer.android.com/reference/android/app/Activity.html (appears on slide: 40)  
+http://developer.android.com/reference/android/app/Activity.html (appears on slide: 46)  
+http://www.dre.vanderbilt.edu/~schmidt/cs282 (appears on slide: 48)  
+http://developer.android.com/guide/components/services.html (appears on slide: 50)  
+http://www.androidpatterns.com/ (appears on slide: 60)  
+http://www.androiddesignpatterns.com/ (appears on slide: 60)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/reactor-rules.pdf (appears on slide: 63)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf (appears on slide: 65)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf (appears on slide: 67)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf (appears on slide: 69)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ACE-concurrency.pdf (appears on slide: 71)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/DSEJ-94.pdf (appears on slide: 73)  
+http://en.wikipedia.org/wiki/STREAMS (appears on slide: 82)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/DSEJ-94.pdf (appears on slide: 98)  
+
+##Week 5
+[[Posa:Philosophers_problem|Programming Assignment #2: The Dining Philosophers problem]]
+### URLs cited
+#### Benefits & Limitations of Patterns & Frameworks
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor2-93.pdf (appears on slide: 3)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf (appears on slide: 4)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/OM-01.pdf (appears on slide: 6)  
+http://www.dre.vanderbilt.edu/~schmidt/corba-research-design.html (appears on slide: 7)  
+http://www.dre.vanderbilt.edu/~schmidt/GEI.pdf (appears on slide: 8)  
+http://upload.wikimedia.org/wikipedia/commons/4/43/Punishment\_sisyph.jpg (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf (appears on slide: 11)  
+http://en.wikipedia.org/wiki/Epoll (appears on slide: 14)  
+http://www.dre.vanderbilt.edu/~schmidt/patterns-experience.html (appears on slide: 19)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf (appears on slide: 23)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ORB-patterns.pdf (appears on slide: 24)  
+http://www.dre.vanderbilt.edu/scoreboard (appears on slide: 25)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Queue-04.pdf (appears on slide: 32)  
+http://www.dre.vanderbilt.edu/~schmidt/patterns-ace.html (appears on slide: 35)  
+
+#### More Info on Patterns & Frameworks
+http://www.hillside.net/patterns/books (appears on slide: 7)  
+http://www.amazon.com/exec/obidos/tg/detail/-/0201607344/ (appears on slide: 7)  
+http://www.dre.vanderbilt.edu/~schmidt/writersworkshop.html (appears on slide: 9)  
+http://hillside.net/conferencesnavigation.htm (appears on slide: 9)  
+http://hillside.net/patterns/mailing.htm (appears on slide: 10)  
+http://www.dre.vanderbilt.edu/~schmidt/patterns.html (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/~schmidt/courses.html (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/~schmidt/POSA (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/~schmidt/ACE (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/~schmidt/multimedia.html (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/ACE (appears on slide: 11)  
+http://www.dre.vanderbilt.edu/TAO (appears on slide: 11)  
+
+#### Overview of JAWS Web Server Case Study
+http://download.dre.vanderbilt.edu/ (appears on slide: 8)  
+http://www.dre.vanderbilt.edu/JAWS (appears on slide: 12)  
+http://www.dre.vanderbilt.edu/POSA (appears on slide: 19)  
+http://en.wikipedia.org/wiki/Pattern\_language (appears on slide: 37)  
+http://www.dre.vanderbilt.edu/ACE.html (appears on slide: 47)  
+
+#### Applying Patterns & Frameworks to Concurrent & Networked Software
+http://download.dre.vanderbilt.edu/ (appears on slide: 7)  
+
+#### Patterns & Frameworks for Service Access & Communication
+http://en.wikipedia.org/wiki/Berkeley\_sockets (appears on slide: 4)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/C++-wrappers.pdf (appears on slide: 19)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/wrapper-facade.pdf (appears on slide: 26)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Socket-Wrappers.pdf (appears on slide: 42)  
+http://erdani.com/publications/traits.html (appears on slide: 52)  
+
+
+##Week 6
+[[Posa:EchoServer_Netty|Programming Assignment #3 - The Echo server using Java Netty NIO framework]]
+
+### URLs cited
+#### Patterns & Frameworks for Synchronous Event Handling, Connections, & Service Initialization
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf (appears on slide: 6)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf (appears on slide: 12)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/reactor-rules.pdf (appears on slide: 37)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Acc-Con.pdf (appears on slide: 95)  
+
+#### Patterns & Frameworks for Service Configuration & Activation
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf (appears on slide: 7)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Svc-Conf.pdf (appears on slide: 33)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Activator.pdf (appears on slide: 77)  
+http://en.wikipedia.org/wiki/Inetd (appears on slide: 81)  
+
+##Week 7
+
+#### Patterns & Frameworks for Concurrency & Synchronization
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Active-Objects.pdf (appears on slide: 8)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ACE-concurrency.pdf (appears on slide: 30)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/HS-HA.pdf (appears on slide: 64)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/monitor.pdf (appears on slide: 99)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf (appears on slide: 123)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf (appears on slide: 135)  
+http://en.wikipedia.org/wiki/Resource\_Acquisition\_Is\_Initialization (appears on slide: 138)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/locking-patterns.pdf (appears on slide: 142)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/LF.pdf (appears on slide: 161)  
+
+##Week 8
+
+#### Patterns & Frameworks for Asynchronous Event Handling
+http://en.wikipedia.org/wiki/Input/output\_completion\_port (appears on slide: 3)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Active-Objects.pdf (appears on slide: 8)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/proactor.pdf (appears on slide: 33)  
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ACT.pdf (appears on slide: 77)  
+
+#### Evaluating Patterns & Frameworks for Concurrent & Networked Software
+http://www.dre.vanderbilt.edu/JAWS (appears on slide: 8)  
+http://scoreboard.theaceorb.nl/test\_stats (appears on slide: 15)  
+http://www.ohloh.net/p/acetaociao (appears on slide: 16)  
+http://www.dre.vanderbilt.edu/Coverage (appears on slide: 18)  
+http://atcdstats.theaceorb.nl/index.shtml (appears on slide: 19)  
+
+##Final exam
+
+## Appendix
+
+### URLs cited by PowerPoint file
+#### A Case Study of “Gang of Four” (GoF) Patterns: Part 1
+<!-- I only removed duplicates (the same URL often appears many times on the same slide - C. Fuhrman -->
+http://www.cs.iastate.edu/~cs309/references/CoplienHoffmanWeiss\_CommonalityVariability.pdf (appears on slide: 5)   
+http://en.wikipedia.org/wiki/Binary\_expression\_tree (appears on slide: 7)   
+http://en.wikipedia.org/wiki/Binary\_expression\_tree (appears on slide: 14)   
+http://en.wikipedia.org/wiki/Design\_Patterns (appears on slide: 40)   
+http://en.wikipedia.org/wiki/C++11 (appears on slide: 44)   
+http://en.wikipedia.org/wiki/Design\_Patterns (appears on slide: 52)   
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf (appears on slide: 61)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classComponent\_\_Node.html (appears on slide: 76)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classVisitor.html (appears on slide: 76)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree.html (appears on slide: 94)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classComponent\_\_Node.html (appears on slide: 94)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Iterator.html (appears on slide: 94)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree.html (appears on slide: 94)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree.html (appears on slide: 95)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classComponent\_\_Node.html (appears on slide: 95)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Iterator.html (appears on slide: 95)   
+http://en.wikipedia.org/wiki/Smart\_pointer (appears on slide: 97)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html (appears on slide: 111)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter\_\_Context.html (appears on slide: 111)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classSymbol.html (appears on slide: 112)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classComponent\_\_Node.html (appears on slide: 112)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html (appears on slide: 112)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter\_\_Context.html (appears on slide: 112)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classSymbol.html (appears on slide: 113)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classComponent\_\_Node.html (appears on slide: 113)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter\_\_Context.html (appears on slide: 113)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classInterpreter.html (appears on slide: 113)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression\_\_Tree\_\_Iterator.html (appears on slide: 133)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression\_\_Tree\_\_Iterator\_\_Impl.html (appears on slide: 133)   
+C:\temp\WOOD\html\classExpression\_\_Tree\_\_Iterator\_\_Impl.html (appears on slide: 134)   
+C:\temp\WOOD\html\classExpression\_\_Tree.html (appears on slide: 134)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classExpression\_\_Tree\_\_Iterator.html (appears on slide: 134)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classLeaf\_\_Node.html (appears on slide: 146)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite\_\_Negate\_\_Node.html (appears on slide: 146)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite\_\_Add\_\_Node.html (appears on slide: 146)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite\_\_Subtract\_\_Node.html (appears on slide: 146)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite\_\_Divide\_\_Node.html (appears on slide: 146)   
+http://www.cs.wustl.edu/~schmidt/expr-tree/classComposite\_\_Multiply\_\_Node.html (appears on slide: 146)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Iterator\_\_Impl.html (appears on slide: 162)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree.html (appears on slide: 162)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classComponent\_\_Node.html (appears on slide: 162)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Command.html (appears on slide: 179)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Command\_\_Factory.html (appears on slide: 192)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Command\_\_Factory.html (appears on slide: 193)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Command.html (appears on slide: 193)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Context.html (appears on slide: 220)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_State.html (appears on slide: 220)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree.html (appears on slide: 220)   
+http://www.dre.vanderbilt.edu/~schmidt/expr-tree/classExpression\_\_Tree\_\_State.html (appears on slide: 221)   
+http://www.dre.vanderbilt.edu/~schmidt/expr-tree/classExpression\_\_Tree\_\_Context.html (appears on slide: 221)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classReactor.html (appears on slide: 238)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classEvent\_\_Handler.html (appears on slide: 238)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classEvent\_\_Handler.html (appears on slide: 239)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classReactor.html (appears on slide: 239)   
+http://www.dre.vanderbilt.edu/~schmidt/PDF/Reactor.pdf (appears on slide: 240)   
+http://gee.cs.oswego.edu/dl/cpjslides/nio.pdf (appears on slide: 244)   
+http://c2.com/cgi/wiki?SingletonsAreEvil (appears on slide: 250)   
+http://www.research.ibm.com/designpatterns/pubs/ph-jun96.txt (appears on slide: 251)   
+http://www.dre.vanderbilt.edu/~schmidt/PDF/ObjMan.pdf (appears on slide: 252)   
+http://en.wikipedia.org/wiki/Double-checked\_locking (appears on slide: 253)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Event\_\_Handler.html (appears on slide: 264)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Command.html (appears on slide: 264)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Event\_\_Handler.html (appears on slide: 275)   
+http://www.dre.vanderbilt.edu/~schmidt/html/classExpression\_\_Tree\_\_Command.html (appears on slide: 275)   
+http://www.vincehuston.org/dp (appears on slide: 295)
+
+## Glossary
+### Keywords in alphabetical order referencing the video lectures
+- started building Glossary [W4-1]
+- Example: [W5-11:1m17s] refers to Video [W5-11] at 1 minutes 17 seconds 
+
+###A
+- Abstract Factory pattern [W4-1], [GoF]
+- ACE Acceptor [W6-4:6m00s],  [W6-4:10m20s]
+- ACE Asynch_Acceptor [W8-3:7m00s]
+- ACE Asynch_Read_Strean [W8-2:5m30s]
+- ACE Asynch_Write_Strean [W8-2:5m30s]
+- ACE C++ Socket Interface  [W5-10]
+- ACE Connector [W6-4:6m00s] 
+- ACE Dev Poll Reactor [W6-2:13m00s]
+- ACE Event Handler [W6-2:3m00s], [W6-2:5m00s], [W6-6:5m00s]
+- ACE Framework examples [W4-7]
+- ACE Handler [W8-2:8m00s]
+- ACE Inet Addr [W5-10]
+- ACE Streams Framework [W4-8]
+- ACE Task [W7-2:1m30s]
+- ACE Message [W4-8]
+- ACE Message Block [W7-2:1m30s], [W7-7:2m00s]
+- ACE Message Queue [W7-2:1m30s], [W7-7:1m00s]
+- ACE Proactor Framework [W8-2:0m00s]
+- ACE Proactor [W8-2:4m00s],  [W8-4:0m00s]
+- ACE Reactor [W6-2:3m00s], [W6-3:9m00s]
+- ACE Reactor Framework [W6-2:2m00s]
+- ACE Select Reactor [W6-2:13m00s], [W7-9:2m00s]
+- ACE Service Configurator Framework [W6-6:1m00s]
+- ACE Service Config [W6-6:2m00s]
+- ACE Service Handler [W8-2:3m00s]
+- ACE Service Object [W6-6:2m00s]
+- ACE Service Repository [W6-6:2m00s]
+- ACE SOCK IO [W5-10]
+- ACE SOCK Stream [W5-10], [W5-11:1m20s]
+- ACE SOCK Connector [W5-10], [W5-11:1m10s]
+- ACE SOCK Acceptor [W5-10], [W5-11:1m00s]
+- ACE Socket Wrappers [W5-10]
+- ACE Streams Framework [W4-8]
+- ACE Svc Handler [W6-4:4m50s], [W6-4:6m00s]
+- ACE Task [W4-8]
+- ACE Task Framwork [W7-2:0m00s]
+- ACE Thread Manager[W4-8], [W7-2:1m30s]
+- ACE Time Value [W6-2:3m00s]
+- ACE Timer Queue [W6-2:3m00s]
+- ACE TP Reactor [W6-2:13m00s], [W7-8:6m50s], [W7-9:1m30s]
+- ACE WFMO Reactor [W6-2:13m00s], [W7-9:9m00s]
+- ACE Queue [W4-8]
+- Active Object patterm [W4-7], [W4-8], [W5-6], [W5-7], [W7-1:0m00s], [W7-6:5m00s], [Posa4]
+- Activator Pattern [W5-4], [W5-6], [W5-7], [W6-8:1m00s], [W7-1:0m30s], [Posa4]
+- Acceptor [W5-11:4m00s]
+- Acceptor Connector  [W5-6], [W5-7], [W5-11:4m00s], [W6-1:2m50s]
+- Acceptor Connector Framework [W6-4:1m00s]
+- Adapter pattern [W6-7:3m20s], [W7-2:1m30s], [GoF]
+- Android Framework Examples [W4-6]
+- Asynchronous Completion Token [W5-4],  [W5-6], [W5-7], [W8-4:0m00s], [Posa2]
+- Asynchronous I/o [W8-1:0m40s]
+###B
+- Broker [W4-1], [Posa1]
+###C
+- C++ Wrappers [W5-8]
+- Chaching Strategies [W5-5]
+- Class library [W4-4]
+- Concurrency Models [W5-5]
+- Concurrency Pattern [W5-6], [W5-7]
+- Connection Role  [W6-4:2m00s]
+- Component Configurator pattern [W4-1], [W5-4], [W6-5:0m00s], [Posa2]
+- Commonality and Variabilility Analysis [W5-5]
+- Communication Role [W6-4:2m00s]
+###D
+- Design Reuse [W5-2]
+###E
+- Event [W6-2:2m00s],
+- Event Dispatcher [W5-5]
+- Event Handler [W6-1:3m20s], [W6-3:3m00s]
+- Event Handling Pattern [W5-6], [W5-7]
+- Encapsulating Low Level APIs  [W5-9]
+###F
+- Frameworks - Characteristics [W4-3]
+- Frameworks - Inversion of Control [W4-4]
+###G
+###H
+- Half Sync / Half Async pattern [W4-1], [W5-4],  [W5-6], [W5-7],  [W7-4:0m00s],  [W7-5:0m00s],  [W7-8:1m30s], [Posa2]
+###I
+- Inetd [W6-8:4m00s]
+- Implementation reuse [W5-2]
+- IOVEC [W5-11:3m00s]
+- IO Multiplexer [W6-1:1m00s]
+###J
+- Jaws [W5-4], [W5-5],  [W5-9], [W6-1:9m00s], [W6-3:1m00s], [W6-4:13m20s], [W6-7:0m00s],  [W7-1:9m00s],  [W7-4:6m50s], [W8-1:6m00s], [W8-3:0m00s]
+###K
+###L
+- Layer pattern [W4-1], [GoF] 
+- Leaders Followers pattern [W4-2], [W5-4], [W5-1], [W5-6], [W5-7], [W7-8:1m00s], [W7-9:1m30s], [Posa2]
+###M
+- Monitor Object pattern [W4-1], [W5-6], [W5-7],  [W7-6:2m00s], [Posa2]
+- Multi-Threaded [W7-3:0m00s]
+###N
+###O
+###P
+- Pattern Languages [W4-1]
+- Pattern Relationships [W4-1]
+- Pattern Sequences [W4-1]
+- PEER_ADDR [W5-10], [W5-11:2m10s]
+- PEER_STREAM [W5-11:2m10s]
+- Pipes and Filters pattern [W4-8]
+- Proactor pattern [W4-7], [W5-4], [W5-6], [W5-7], [W8-1:0m00s],  [W8-5:4m00s], [Posa2]
+- Producer / Consumer  [W7-2:0m00s]
+- Proxy pattern [W7-1:5m00s]
+###Q
+###R
+- Reactor pattern [W4-1], [W4-7], [W5-1],  [W5-6], [W5-7], [W6-1:0m10s], [W6-2:0m30s], [Posa2]
+- Reference counting [W7-7:2m40s]
+- Resource management pattern [W1-10 slide 49 "Eager Acquisition.pdf"] 
+###S
+- Scope Commonality & Variability Analysis [4-5], [W5-2]
+- Scoped Locking [W5-6], [W5-7]
+- Service Access & Configuration [W5-6]
+- Service Configuration Directives [W6-6:7m20s]
+- Socket API [W5-8]
+- State pattern [GoF part 9]
+- Strategy pattern [W4-1], [W7-7:5m00s], [GoF]
+- Stratgized Locking [W5-6], [W5-7]
+- Streams - Pipline of Filters [W4-7]
+- Synchronization Pattern [W5-6], [W5-7]
+- Synchronized Request Queue [W7-6:1m00s]
+- Synchronous Event Handling [W8-1:0m40s]
+- Synchronous I/O [W8-1:0m40s]
+- Synchronous Multi-Threading [W8-1:0m40s]
+###T
+- TCP/IP [W5-8]
+- Threadsafe Interface [W5-6], [W5-7]
+- Thread-Safe Interface Pattern [W7-7:20m00s]
+- Thread Mutex [W5-9]
+- TPC_HTTP_Handler [W7-1:10m00s], [W7-2:1m30s],  [W7-3:0m00s]
+- Tradeoff Analysis [W5-5]
+- Traits [W5-10], , [W5-11:2m10s]
+###U
+- UDP [W5-8]
+###V
+- Validation reuse [W5-2]
+- Variability [W5-5]
+- Variation oriented design [W5-5]
+###W
+- Wrapper Facade pattern [W4-1], [W5-4],  [W5-6], [W5-7], [W5-9], [W6-1:0m40s], [W6-3:13m00s], [Posa2]
+###X
+###Y
+###Z

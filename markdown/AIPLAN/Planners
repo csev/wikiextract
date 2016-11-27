@@ -1,0 +1,57 @@
+# Edinburgh AI Planners
+* [http://www.aiai.ed.ac.uk/project/plan/ Edinburgh AI Planners and Planning Projects]
+* [http://www.aiai.ed.ac.uk/project/early-planners/ Early Edinburgh Planners]
+* [http://www.aiai.ed.ac.uk/project/nonlin/ Nonlin Web Site]
+* [http://www.aiai.ed.ac.uk/project/oplan/ O-Plan Web Site]
+([http://www.aiai.ed.ac.uk/project/oplan/web-demo/index.html O-Plan Demonstrations].
+[http://www.aiai.ed.ac.uk/project/oplan/web-demo/volume-groups.html O-Plan Unix Systems Administration Demo])
+* [http://www.aiai.ed.ac.uk/project/ix/ I-X/I-Plan Web Site]
+
+# SRI International AI Planners
+* [http://www.ai.sri.com/~sipe/ SIPE-2: System for Interactive Planning and Execution]
+
+#University of Freiburg Planners
+
+* [http://prost.informatik.uni-freiburg.de/ PROST Probabilistic Planner] - based on UCT Algorithm
+
+#University of Basel Planners
+
+* [http://www.fast-downward.org/ Fast Downward Planner]
+
+#University of Saarland Planners
+* [http://fai.cs.uni-saarland.de/hoffmann/metric-ff.html MetricFF Planner]
+
+#King's College London Planners
+* [http://www.dcs.kcl.ac.uk/staff/andrew/planning/ POPF, LPRPG-P]
+
+# University of Maryland AI Planners
+* [http://www.cs.umd.edu/projects/plus/Nonlin/ UM Nonlin]
+* [http://www.cs.umd.edu/projects/plus/umcp/ UMCP: Universal Method Composition Planner]
+* [http://www.cs.umd.edu/projects/shop/ SHOP/SHOP-2: Simple Hierarchical Ordered Planner]
+* [http://www.cs.umd.edu/projects/shop/ JSHOP2: A Java implementation of SHOP2]
+
+# University of Washington AI Planners
+* [http://www.cs.washington.edu/ai/ucpop.html UCPOP Planner]
+* [http://www.cs.washington.edu/ai/planning/glutton.html Glutton] and [http://www.cs.washington.edu/ai/planning/gourmand.html Gourmand]
+
+#PLANET - European Planning Network of Excellence
+* [http://scom.hud.ac.uk/planet/repository/ PLANET AI Planning Repository]
+* [http://scom.hud.ac.uk/planet/repository/source/choose.html PLANET Planner Demo (FF or Blackbox)]
+
+# NASA Planners
+
+* [http://ti.arc.nasa.gov/tech/asr/planning-and-scheduling/ NASA Planning and Scheduling Software]
+
+# Other AI Planning Resources
+
+* [http://www.cs.umd.edu/projects/planning/domains.html University of Maryland AI Planning and Scheduling Systems: Domain Repository]
+* [http://www4.ncsu.edu/~stamant/planning-resources.html Rob St. Amant Planning Resources]
+* [http://www-cs-students.stanford.edu/~pdoyle/quail/notes/pdoyle/planning.html Patrick Doyle's Stanford CS 1997 AI Planning Resources]
+
+# Planners and Resources Suggested by Class Participants
+
+* [http://code.google.com/p/itsimple/ itSIMPLE: CASE tool for construction of real and complex planning domains in UML (supports PDDL and Petri Nets)]
+* [http://amis.mff.cuni.cz/PDDLEditor/ PDDL Studio]
+* [http://www.dcs.kcl.ac.uk/staff/andrew/planning/index.php?option=com_content&view=article&id=70&Itemid=77 VAL: Plan Validator]
+* (AIPLAN-002) [http://www.optaplanner.org/ Red Hat / JBoss Optaplanner , integrates with Drools / KIE Rule Engine ]
+* Add planners which can be downloaded and tried here with a suitable URL

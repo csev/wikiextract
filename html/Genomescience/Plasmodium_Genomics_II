@@ -1,0 +1,323 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Genomescience:Plasmodium Genomics II</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Overview"><span class="tocnumber">2</span> <span class="toctext">Overview</span></a></li>
+<li class="toclevel-1"><a href="#Schema_to_Identify_Apicoplast_Proteins_Using_Genome_Database_Mining"><span class="tocnumber">3</span> <span class="toctext">Schema to Identify Apicoplast Proteins Using Genome Database Mining</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Dataset_Intersections_Yield_Candidate_Proteins"><span class="tocnumber">3.1</span> <span class="toctext">Dataset Intersections Yield Candidate Proteins</span></a></li>
+<li class="toclevel-2"><a href="#A_Candidate_Nuclear-Encoded_Apicoplast_Protein"><span class="tocnumber">3.2</span> <span class="toctext">A Candidate Nuclear-Encoded Apicoplast Protein</span></a></li>
+<li class="toclevel-2"><a href="#Plasmodium_Ferredoxin_NADP_Reductase_Targeted_into_Apicoplast"><span class="tocnumber">3.3</span> <span class="toctext">Plasmodium Ferredoxin NADP Reductase Targeted into Apicoplast</span></a></li>
+<li class="toclevel-2"><a href="#Metabolic_Maps_and_Functions"><span class="tocnumber">3.4</span> <span class="toctext">Metabolic Maps and Functions</span></a></li>
+<li class="toclevel-2"><a href="#Apicoplast_Lipids:_FAs.2C_Isoprenoids"><span class="tocnumber">3.5</span> <span class="toctext">Apicoplast Lipids: FAs, Isoprenoids</span></a></li>
+<li class="toclevel-2"><a href="#Integrating_Silico_Analysis_with_Bench_Work_Accelerates_Biological_Discovery_and_Clinical_Translation"><span class="tocnumber">3.6</span> <span class="toctext">Integrating Silico Analysis with Bench Work Accelerates Biological Discovery and Clinical Translation</span></a></li>
+<li class="toclevel-2"><a href="#Question_Set_.233:_Metabolic_functions_of_the_Apicoplast"><span class="tocnumber">3.7</span> <span class="toctext">Question Set #3: Metabolic functions of the Apicoplast</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Question_3.1:"><span class="tocnumber">3.7.1</span> <span class="toctext">Question 3.1:</span></a></li>
+<li class="toclevel-3"><a href="#Question_3.2:_Short_Essay_Question"><span class="tocnumber">3.7.2</span> <span class="toctext">Question 3.2: Short Essay Question</span></a></li>
+<li class="toclevel-3"><a href="#Question_3.3"><span class="tocnumber">3.7.3</span> <span class="toctext">Question 3.3</span></a></li>
+<li class="toclevel-3"><a href="#Question_3.4"><span class="tocnumber">3.7.4</span> <span class="toctext">Question 3.4</span></a></li>
+<li class="toclevel-3"><a href="#Question_3.5:_Short_Essay_Question"><span class="tocnumber">3.7.5</span> <span class="toctext">Question 3.5: Short Essay Question</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Nucleic_Acid_Research"><span class="tocnumber">4</span> <span class="toctext">Nucleic Acid Research</span></a>
+<ul>
+<li class="toclevel-2"><a href="#EuPathDB"><span class="tocnumber">4.1</span> <span class="toctext">EuPathDB</span></a></li>
+<li class="toclevel-2"><a href="#The_Philosophy_behind_the_EuPathDB"><span class="tocnumber">4.2</span> <span class="toctext">The Philosophy behind the EuPathDB</span></a></li>
+<li class="toclevel-2"><a href="#EuPathDB_Example"><span class="tocnumber">4.3</span> <span class="toctext">EuPathDB Example</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Gene-centric_Views_I"><span class="tocnumber">4.3.1</span> <span class="toctext">Gene-centric Views I</span></a></li>
+<li class="toclevel-3"><a href="#Gene-centric_Views_II"><span class="tocnumber">4.3.2</span> <span class="toctext">Gene-centric Views II</span></a></li>
+<li class="toclevel-3"><a href="#Gene-centric_Views_III"><span class="tocnumber">4.3.3</span> <span class="toctext">Gene-centric Views III</span></a></li>
+<li class="toclevel-3"><a href="#Gene-centric_Views_IV"><span class="tocnumber">4.3.4</span> <span class="toctext">Gene-centric Views IV</span></a></li>
+<li class="toclevel-3"><a href="#Gene-centric_Views_V"><span class="tocnumber">4.3.5</span> <span class="toctext">Gene-centric Views V</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Gene-centric_Views_VI"><span class="tocnumber">4.4</span> <span class="toctext">Gene-centric Views VI</span></a></li>
+<li class="toclevel-2"><a href="#Genome-centric_Views"><span class="tocnumber">4.5</span> <span class="toctext">Genome-centric Views</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Genome-centric_View_I"><span class="tocnumber">4.5.1</span> <span class="toctext">Genome-centric View I</span></a></li>
+<li class="toclevel-3"><a href="#Genome-centric_View_II"><span class="tocnumber">4.5.2</span> <span class="toctext">Genome-centric View II</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Pathway-centric_View"><span class="tocnumber">4.6</span> <span class="toctext">Pathway-centric View</span></a></li>
+<li class="toclevel-2"><a href="#Query-centric_Views"><span class="tocnumber">4.7</span> <span class="toctext">Query-centric Views</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Query-centric_View_I"><span class="tocnumber">4.7.1</span> <span class="toctext">Query-centric View I</span></a></li>
+<li class="toclevel-3"><a href="#Query-centric_View_II"><span class="tocnumber">4.7.2</span> <span class="toctext">Query-centric View II</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#A_Chemigenomics_Database_for_Target_Discovery"><span class="tocnumber">4.8</span> <span class="toctext">A Chemigenomics Database for Target Discovery</span></a></li>
+<li class="toclevel-2"><a href="#TDRTargets"><span class="tocnumber">4.9</span> <span class="toctext">TDRTargets</span></a></li>
+<li class="toclevel-2"><a href="#Question_Set_.234:_Mining_.28Pathogen.29_Genome_Databases"><span class="tocnumber">4.10</span> <span class="toctext">Question Set #4: Mining (Pathogen) Genome Databases</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Question_4.1:"><span class="tocnumber">4.10.1</span> <span class="toctext">Question 4.1:</span></a></li>
+<li class="toclevel-3"><a href="#Question_4.2:"><span class="tocnumber">4.10.2</span> <span class="toctext">Question 4.2:</span></a></li>
+<li class="toclevel-3"><a href="#Question_4.3:"><span class="tocnumber">4.10.3</span> <span class="toctext">Question 4.3:</span></a></li>
+<li class="toclevel-3"><a href="#Question_4.4:"><span class="tocnumber">4.10.4</span> <span class="toctext">Question 4.4:</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Resource_Use_Feedback"><span class="tocnumber">4.11</span> <span class="toctext">Resource Use Feedback</span></a></li>
+<li class="toclevel-2"><a href="#Database_Resources"><span class="tocnumber">4.12</span> <span class="toctext">Database Resources</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h4> <span class="mw-headline" id="Introduction">Introduction</span></h4>
+<ul>
+<li>[0:00:00] [Slide 01]</li>
+</ul>
+<p>Hello, my name is David Roos and I am back to complete the second half of today’s lecture on Genes to Therapeutics: Designing and Mining (Pathogen) Genome Database Resources.</p>
+<h4> <span class="mw-headline" id="Overview">Overview</span></h4>
+<ul>
+<li>[0:00:18] [Slide 02]</li>
+</ul>
+<p>In the first half of today’s lecture we talked about an introduction to the plasmodium parasite responsible for human malaria and I reminded you that these microbial eukaryotes, nucleated cells, have genomes too and that we are interested in those genomes both for the interesting biology of the parasite that they can inform and as a clue to identifying therapeutics that might be effective in controlling malaria.
+I also discussed the discovery of the apicomplexan plastid, a distinctive organelle acquired when an ancestor of these parasites ate a eukaryotic algal or was invaded by an algal depending upon your perspective. 
+Indicated in green here an organelle that is the target for certain classes of antibiotics validating it as a target for new drug development if only we knew what this organelle did.
+In the second half of today’s lecture which will also be divided into two parts. We will discuss first of all genomic approaches for characterizing the functions of this organelle; and secondly a more general genomic approach for identifying drug and vaccine targets.</p>
+<h4> <span class="mw-headline" id="Schema_to_Identify_Apicoplast_Proteins_Using_Genome_Database_Mining">Schema to Identify Apicoplast Proteins Using Genome Database Mining</span></h4>
+<ul>
+<li>[0:01:38] [Slide 03] </li>
+</ul>
+<p>As you recall from the earlier part of the lecture we know several things about this organelle. We know that it harbors its own episomal genome that was very informative for giving us insight into the evolutionary origins from a plant or a plastid. While most of the metabolic functions—or presumed metabolic functions—of this organelle are likely to be encoded in the nuclear genome, we imagine that those genes will harbor traces of their plant or algal ancestry. So we might search through the emerging –omic sequence databases to try to identify targets that show known similarity to plant or algal sequences. 
+Similarly we know from cell biological studies that proteins are trafficked into the organelle using a distinctive bi-partite targeting signal using a secretory signal sequence usually used for secreting proteins outside of a cell. Let’s say for hormones secreted into the blood. Or pancreatic enzymes secreted into the gut.
+Fusing the signal which mediates translocation across a single membrane with the plastid targeting signal, which is known to mediate translocation into the chloroplasts or mitochondria endosymbiotic organelles, we can use those markers of apicoplast proteins to examine predicted genes or open reading frames or sequences from these parasites to identify candidate nuclear encoded parasite genes in what is fundamentally a computational experiment.</p>
+<h5> <span class="mw-headline" id="Dataset_Intersections_Yield_Candidate_Proteins">Dataset Intersections Yield Candidate Proteins</span></h5>
+<ul>
+<li>[0:03:33][Slide 04]</li>
+</ul>
+<p>We can imagine many proteins that might yield false positive results—there might be other reasons why proteins show similarity to plant or cyanobacteria. You should think about what those reasons might be. There will certainly be many other proteins that have secretory signal sequences or the long N-terminal extensions that are hallmarks of plastid targeting domains, but we are looking for the intersection of those. We are looking to try to sequentially impose these in sort of a decision tree kind of analysis to identify candidate nuclear encoded plastid genes.</p>
+<h5> <span class="mw-headline" id="A_Candidate_Nuclear-Encoded_Apicoplast_Protein">A Candidate Nuclear-Encoded Apicoplast Protein</span></h5>
+<ul>
+<li>[0:04:11][Slide 05]</li>
+</ul>
+<p>When we screen through the parasite genome, we identify genes like this one. Here is a gene that has an unequivocal N-terminal hydrophobic secretory signal sequences indicated in pink. That is followed by an N-terminal domain and while the plastid targeting signals are not very well conserved they are certainly rich in basic amino acids in these organisms and a C-terminal domain that shows unequivocal phylogenetic similarity of ferredoxin—the terminal electron acceptor for photosynthesis.
+Malaria parasites are not green; they don’t grow better in the sun; they don’t photosynthesize. They presumably use this ferredoxin for recycling, reducing equivalence. But its phylogenetic ancestry argues that this is a likely candidate nuclear-encoded plastid gene.</p>
+<h5> <span class="mw-headline" id="Plasmodium_Ferredoxin_NADP_Reductase_Targeted_into_Apicoplast">Plasmodium Ferredoxin NADP Reductase Targeted into Apicoplast</span></h5>
+<ul>
+<li>[0:05:07][Slide 06]</li>
+</ul>
+<p>Here is the other vestigial photosynthesis gene found in the parasites, ferredoxin NADP reductase. What we have done in this case is taken those long N-terminal extensions, the bi-partite targeting signal that was shown through cut-and-paste molecular genetics and cell biological experiments to mediate translocation to the apicoplast, and infused that targeting signal from plasmodium to a florescent protein reporter and show that it in fact does mediate targeting into the apicoplast—as indicated in green. Co-location, which co-localizes beautifully with the previously validate nuclear-encoded apicoplast protein as shown in the previous segment.
+In an overnight experiment by transient transfection in toxoplasma parasites we can demonstrate that these plasmodium proteins are indeed targeting into the apicoplast using toxoplasma as a model for plasmodium.</p>
+<h5> <span class="mw-headline" id="Metabolic_Maps_and_Functions">Metabolic Maps and Functions</span></h5>
+<ul>
+<li>[0:06:12][Slide 07]</li>
+</ul>
+<p>Similar studies have led to what is now a complete metabolic pathway map for the apicoplast carried out through the work of many laboratories, but particularly in collaboration with my colleague Jeff McFadden in Melbourne and students and postdocs in his laboratory and mine.
+We know now that the apicoplast genome which was so informative in identifying this organelle is replicated within the apicoplast, transcribed into RNA, and translated to produce a few proteins which are combined with the bulk of the apicoplast proteins that are encoded in the nucleus and post-translationally imported.
+Those proteins combine to carry out three metabolic pathways. The synthesis of Haem using the same pathway observed in humans and other animals and fungi but distributed a little bit differently between different organelles or compartments. And (using two novel metabolic pathways) the synthesis of isoprene units from a xylulose precursor and the synthesis of fatty acids.
+While both of these are metabolic products that are produced by human cells, they are produced by distinctive pathways—a type II fatty acid synthesis more characteristic of the plant or algal plastid ancestor of the apicoplast and the DOXP pathway, the xylulose pathway for isopenoid synthesis.</p>
+<h5> <span class="mw-headline" id="Apicoplast_Lipids:_FAs.2C_Isoprenoids">Apicoplast Lipids: FAs, Isoprenoids</span></h5>
+<ul>
+<li>[0:07:49][Slide 08]</li>
+</ul>
+<p>We know much more about this from work in many labs. We know in particular from work in Joe DeRisi’s lab at UCSF and in Boris Striepen’s lab at the University of Georgia that the xylulose pathway is critical for parasite survival. Many of these targets are under investigation actively as potential drug targets. </p>
+<h5> <span class="mw-headline" id="Integrating_Silico_Analysis_with_Bench_Work_Accelerates_Biological_Discovery_and_Clinical_Translation">Integrating Silico Analysis with Bench Work Accelerates Biological Discovery and Clinical Translation</span></h5>
+<ul>
+<li>[0:08:10][Slide 09]</li>
+</ul>
+<p>Here in a long series of studies that are summarized by this graphical animation we can outline this remarkably rapid path from the identification of the 35kb episomal DNA as the target for macrolide antibiotics.
+Phylogenetic studies which were so informative in telling us about the origin of the apicoplast, to computational database mining strategies that led to the identification of the complete metabolic pathway map, and now through to clinical studies carried out by various groups—most notably Peter Kremsner in Germany and working in Gabon—have led to the exploration of candidate drugs that are now in clinical trial.</p>
+<h5> <span class="mw-headline" id="Question_Set_.233:_Metabolic_functions_of_the_Apicoplast">Question Set #3: Metabolic functions of the Apicoplast</span></h5>
+<ul>
+<li>[0:09:01][Slide 10]</li>
+</ul>
+<p>I would like to raise a couple of questions. Question set 3 are the following questions.</p>
+<h6> <span class="mw-headline" id="Question_3.1:">Question 3.1:</span></h6>
+<p>What criteria were used to identify nuclear-encoded apicoplast proteins?
+a) They contained a plastid targeting domain
+b) They contained a secretory signal sequence
+c) They showed phylogenetic similarity to plant and algal genes
+d) They displayed any one of the above (a, b or c)
+e) They displayed all three of the above (a, b and c)</p>
+<h6> <span class="mw-headline" id="Question_3.2:_Short_Essay_Question">Question 3.2: Short Essay Question</span></h6>
+<ul>
+<li>[0:09:42][Slide 11]</li>
+</ul>
+<p>What other genes (false positives) might emerge from your search for nuclear-encoded apicoplast proteins and why would you expect these to emerge from your computational search?</p>
+<h6> <span class="mw-headline" id="Question_3.3">Question 3.3</span></h6>
+<ul>
+<li>[0:10:00][Slide 12]</li>
+</ul>
+<p>Why test plasmodium protein targeting in Toxoplasma?
+a) Because it is experimentally easier
+b) Because plasmodium is dangerous
+c) Because apicoplast structure and function appear to be identical in these two species
+d) Two of the above
+e) All of the above</p>
+<h6> <span class="mw-headline" id="Question_3.4">Question 3.4</span></h6>
+<ul>
+<li>[0:10:30][Slide 13]</li>
+</ul>
+<p>What metabolic pathway(s) distinguish the apicoplast from human metabolism?
+a) Glycolysis
+b) Photosynthesis
+c) Haem biosynthesis
+d) The xylulose pathway for isoprenoid biosynthesis
+e) More than one of the above</p>
+<h6> <span class="mw-headline" id="Question_3.5:_Short_Essay_Question">Question 3.5: Short Essay Question</span></h6>
+<ul>
+<li>[0:11:00][Slide 14]</li>
+</ul>
+<p>Why do we care about what metabolic pathway(s) distinguish the apicoplast from human metabolism?</p>
+<h4> <span class="mw-headline" id="Nucleic_Acid_Research">Nucleic Acid Research</span></h4>
+<ul>
+<li>[0:11:11][Slide 15]</li>
+</ul>
+<p>Finally I hope that you are as excited as we have been by this dramatic demonstration of the power of computational database mining to identify candidate therapeutic targets for malaria. But, more generally, it quickly became clear that these same sorts of questions that we use identify plant genes in malaria parasites might also be used by others to ask other very different kinds of questions.</p>
+<h5> <span class="mw-headline" id="EuPathDB">EuPathDB</span></h5>
+<ul>
+<li>[0:12:05][Slide 16]</li>
+</ul>
+<p>This project has been quite successful and has led to the expansion of what was once the plasmodium genome database to encompass other apicomplexan parasites—such as toxoplasma encrypt sporidium, other protozoan parasites, and fungal microbial pathogens as well—in what is now the Eukaryotic Pathogen (Genome) Database which I hope that you will be interested to explore.</p>
+<h5> <span class="mw-headline" id="The_Philosophy_behind_the_EuPathDB">The Philosophy behind the EuPathDB</span></h5>
+<ul>
+<li>[0:12:32][Slide 17]</li>
+</ul>
+<p>The philosophy behind the all of these EuPathDB databases is to integrate curated annotation with automated analysis providing rapid access to both finished and unfinished—that is draft data—that is emerging at an unprecedented rate from biological experiments as you have heard over the course of this lecture series.
+By incorporating and integrating diverse data types—genome and transcript sequences, polymorphism data, expression profiling data, clinical data, proteomic data, interactome data, structural data, pathway data, metabolomic data, publication data, phenotyping data, and so on—our goal is to enable researchers to ask their own questions.
+Let me be clear, the goal is not to produce an encyclopedia of genomics where you can look up the answer to any question because no encyclopedia, until recently, would have allowed you to look up the answer to what seems a nonsensical question—like find plant genes in malaria parasites. The goal is to develop a hypothesis in silico that can then be tested at the laboratory bench. 
+The response to these resources has been quite remarkable, a thousands of unique users every day from over a hundred countries. The average user returns on a weekly basis. There have been extensive citations. Let me give you an example of what I mean.</p>
+<h5> <span class="mw-headline" id="EuPathDB_Example">EuPathDB Example</span></h5>
+<ul>
+<li>[0:14:02][Slide 18]</li>
+</ul>
+<p>We will turn now to the plasmodium genome database. I would like to suggest that you can analyze this or any genome resource that you may be interested in, whether your interest focuses in on malaria parasites, humans, drosophila, caenorhabditis elegans, or any  other organism. </p>
+<h6> <span class="mw-headline" id="Gene-centric_Views_I">Gene-centric Views I</span></h6>
+<ul>
+<li>[0:14:22][Slide 19]
+You might imagine that you would want to explore these genome databases in a gene-centric view. This is essentially an encyclopedic view of, in this case, a prominent antigen in malaria parasites, AMA-1, which is has been explored as a candidate vaccine target.
+This is a gene. It is next to other genes that are upstream and downstream. We can see that it is highly conversed across various different malaria parasite species.</li>
+</ul>
+<h6> <span class="mw-headline" id="Gene-centric_Views_II">Gene-centric Views II</span></h6>
+<ul>
+<li>[0:14:48][Slide 20]</li>
+</ul>
+<p>We can see that it is highly variable when we compare one species to another as indicated by the diamonds here.</p>
+<h6> <span class="mw-headline" id="Gene-centric_Views_III">Gene-centric Views III</span></h6>
+<ul>
+<li>[0:15:00][Slide 21]
+It is highly expressed at the protein level. </li>
+</ul>
+<h6> <span class="mw-headline" id="Gene-centric_Views_IV">Gene-centric Views IV</span></h6>
+<ul>
+<li>[0:15:06][Slide 22]
+We can see that it is transcribed at particular stages of the parasite life-cycle, particularly up-regulated at late stages of the life-cycle, the shizont stages that are released from parasites and the merozoite stages that invade into those parasites. </li>
+</ul>
+<h6> <span class="mw-headline" id="Gene-centric_Views_V">Gene-centric Views V</span></h6>
+<ul>
+<li>[0:15:25][Slide 23]</li>
+</ul>
+<p>We can look at the expression of these proteins in clinical samples and so on.</p>
+<h5> <span class="mw-headline" id="Gene-centric_Views_VI">Gene-centric Views VI</span></h5>
+<ul>
+<li>[0:15:29][Slide 24]
+We can also examine genes like this gene or others from a genome-centric view point.</li>
+</ul>
+<h5> <span class="mw-headline" id="Genome-centric_Views">Genome-centric Views</span></h5>
+<h6> <span class="mw-headline" id="Genome-centric_View_I">Genome-centric View I</span></h6>
+<ul>
+<li>[0:15:36][Slide 24]</li>
+</ul>
+<p>We can also examine genes like this gene or others from a genome-centric view point.  We can see for example as you have already seen that there are hundreds of genes associated with this particular chromosome, how those genes are organized and how they compare between one species and another.</p>
+<h6> <span class="mw-headline" id="Genome-centric_View_II">Genome-centric View II</span></h6>
+<ul>
+<li>[0:15:50][Slide 25]</li>
+</ul>
+<p>We can zoom in to a particular region to see genes that are conserved (those over at the left) or genes that appear to have diverged, such as this family of merozoite surface proteins. They are another set of proteins of considerable interest as candidate therapeutic vaccine targets or for understanding the biology of differentiation of malaria parasites.</p>
+<h5> <span class="mw-headline" id="Pathway-centric_View">Pathway-centric View</span></h5>
+<ul>
+<li>[0:16:13][Slide 26]</li>
+</ul>
+<p>We can look at metabolic pathways, for example mapping the predicted genes onto known metabolic pathways as has been done here in color-coded format for toxoplasma, plasmodium, cryptosporidium, and human. 
+This illustrates the xylulose pathway for isoprenoid biosynthesis which is clearly carried out by plasmodium and toxoplasma indicated in green and red using a different pathway then that used by humans—this is the HMG-CoA reductase pathway for synthesis of sterols in humans suggesting that the red and green pathway here might be a candidate therapeutic target.</p>
+<h5> <span class="mw-headline" id="Query-centric_Views">Query-centric Views</span></h5>
+<h6> <span class="mw-headline" id="Query-centric_View_I">Query-centric View I</span></h6>
+<ul>
+<li>[0:16:58][Slide 27]</li>
+</ul>
+<p>The third way that we might imagine mining these genome database resources is through a query-centric view. Here for example is a query using the plasmodium genome database to identify candidate vaccine antigens using a Boolean strategy that is based on a variety of fairly straight-forward computationally accessible questions like those questions we used to identify the apicoplast genes previously.
+We are looking for genes that appear to have none epitopes in plasmodium parasites or may be polymorphic based on re-sequencing projects. Transforming these by orthology to identify those only in plasmodium falciparum and asking for genes that are secreted and have a transmembrane domain that might be surface expressed and therefore accessible as a vaccine antigen and are expressed at the right time or in the right place.
+This particular computational experiment which I don’t have time to go into in detail but which you can explorer yourself by using the URL that is indicated in pink here on your screen. This URL which can be shared allows individual investigators to refine computational strategies.</p>
+<h6> <span class="mw-headline" id="Query-centric_View_II">Query-centric View II</span></h6>
+<ul>
+<li>[0:18:32][Slide 28]</li>
+</ul>
+<p>This computational experiment identifies a series of 27 genes including the positive controls for this experiment leading to vaccine antigen targets in clinical trials for malaria now, a variety of other proteins indicated in yellow that are of interest to malaria vaccinologists, and yet other proteins that are of yet unknown function that might be of interest to explorer.
+These kinds of strategies have been explored by many vaccinologists, biologists who know more about the biology of these parasites than I. Here a reference to a paper by Isabelle Ochola from Kenya and David Conway from The Gambia and London School of Tropical Medicine that you might want to look at for a complementary approach to try to identify through database mining candidate vaccine antigen targets in plasmodium parasites.</p>
+<h5> <span class="mw-headline" id="A_Chemigenomics_Database_for_Target_Discovery">A Chemigenomics Database for Target Discovery</span></h5>
+<ul>
+<li>[0:19:35][Slide 29]</li>
+</ul>
+<p>From the standpoint of identifying drugs you might want to ask questions about not just genes but also about small molecules that may inhibit them. This URL indicated at the lower left directs you to a Chemigenomics database for target discovery that combines both gene information and small molecule information which once again I won’t go through in detail but which I urge you to try to investigate and explorer on your own.</p>
+<h5> <span class="mw-headline" id="TDRTargets">TDRTargets</span></h5>
+<ul>
+<li>[0:20:06][Slide 30]</li>
+</ul>
+<p>You might for example be interested in developing drugs that are predicted to be enzymes as the targets for many known drugs are that are small and perhaps therefore easily expressed for crystal structure solution that have a phylogenetic distribution that suggests that they would not be targeted in the human hosts since we are interested in trying to control the pathogen and not kill the patient; or genes that have a variety of other attributes of particular interest.
+In this case I’ve applied a series of questions to another protozoan parasite causative agent of sleeping sickness, trypanosoma brucei. But we turn this same series of questions to ask about plasmodium. In this computational experiment you’ll see that we identify a number of validated drug targets, for example dihydrofolate reductase target for anti-folate therapeutics that I indicated at the beginning of the lecture were a historically very important treatment of malaria.
+We could turn these to look at these same computational approaches to look at non-eukaryotic microbes, such as mycobacteria tuberculosis the causative agent of tuberculosis.</p>
+<h5> <span class="mw-headline" id="Question_Set_.234:_Mining_.28Pathogen.29_Genome_Databases">Question Set #4: Mining (Pathogen) Genome Databases</span></h5>
+<ul>
+<li>[0:21:30][Slide 31]</li>
+</ul>
+<p>Finally, let me bring you back to the last set of questions for this lecture.</p>
+<h6> <span class="mw-headline" id="Question_4.1:">Question 4.1:</span></h6>
+<p>In general, if not for every gene, is gene organization (or synteny) maintained between different plasmodium species?
+a) Yes
+b) No
+Note: That while we have looked at some specific examples, in order to answer this question in greater generality you may need to explore the plasmodium genome database at PlasmoDB.org.</p>
+<h6> <span class="mw-headline" id="Question_4.2:">Question 4.2:</span></h6>
+<ul>
+<li>[0:22:05][Slide 32]</li>
+</ul>
+<p>In general, if not for every gene, are expression patterns (that is transcriptional profiles) maintained between different plasmodium strains?
+a) Yes
+b) No
+Note: To answer this question you may need to explore the plasmodium genome database at PlasmoDB.org.</p>
+<h6> <span class="mw-headline" id="Question_4.3:">Question 4.3:</span></h6>
+<ul>
+<li>[0:22:23][Slide 33]</li>
+</ul>
+<p>What database searches would you run if you wanted to identify nuclear-encoded apicoplast genes?</p>
+<h6> <span class="mw-headline" id="Question_4.4:">Question 4.4:</span></h6>
+<ul>
+<li>[0:22:38][Slide 34]</li>
+</ul>
+<p>Finally a thought question we raised at the beginning. What criteria would be most useful for identifying candidate therapeutic targets in the parasite genome?
+You should feel free to explore this at PlasmoDB.org, TDRTargets.org and elsewhere.</p>
+<h5> <span class="mw-headline" id="Resource_Use_Feedback">Resource Use Feedback</span></h5>
+<ul>
+<li>[0:22:55][Slide 35]</li>
+</ul>
+<p>Let me point out that in exploring these database resources you can perform a tremendously useful function. These database resources are designed for you as students and researchers. Problems that you have in using these resources we would like to know about because these resources are developed by a large team of individuals who are not biologists by-in-large but are database developers, data loaders, system administrators, database administrators, and so on whose job it is to produce resources that are useful to you. These computational tools can be readily applied to various other organisms whether it’s the organisms supported in EuPathDB or the organisms that are supported by other omics resources that you may be interested in exploring for your own research on humans or mice or worms or files or plants or whatever organisms you may be interested in.</p>
+<h5> <span class="mw-headline" id="Database_Resources">Database Resources</span></h5>
+<ul>
+<li>[0:24:00][Slide 36]</li>
+</ul>
+<p>I’d like to point out that for those who are interested in online course resources and particularly those related to cell biology and in some cases genomics of pathogens or various other cells you may be interested in a complimentary resource developed by the American Society for Cell Biology in conjunction with the Howard Hughes Medical Institute, the iBioSeminars series with a URL that is indicated at right. </p>
+<p>I hope this has been of interest to you and I will certainly be curious to see your responses and your answers to the questions that emerge, thanks very much.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Genomescience:Plasmodium_Genomics_II&amp;oldid=6110">https://share.coursera.org/wiki/index.php?title=Genomescience:Plasmodium_Genomics_II&amp;oldid=6110</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

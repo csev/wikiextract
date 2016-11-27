@@ -1,0 +1,110 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Matrix:Useful Resources</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Useful_books_and_Tutorials"><span class="tocnumber">1</span> <span class="toctext">Useful books and Tutorials</span></a></li>
+<li class="toclevel-1"><a href="#Linear_Algebra_Courses"><span class="tocnumber">2</span> <span class="toctext">Linear Algebra Courses</span></a></li>
+<li class="toclevel-1"><a href="#Python"><span class="tocnumber">3</span> <span class="toctext">Python</span></a></li>
+<li class="toclevel-1"><a href="#Programming_help"><span class="tocnumber">4</span> <span class="toctext">Programming help</span></a></li>
+<li class="toclevel-1"><a href="#Complex_Numbers"><span class="tocnumber">5</span> <span class="toctext">Complex Numbers</span></a></li>
+<li class="toclevel-1"><a href="#Functions"><span class="tocnumber">6</span> <span class="toctext">Functions</span></a></li>
+<li class="toclevel-1"><a href="#Helpful_forum_posts"><span class="tocnumber">7</span> <span class="toctext">Helpful forum posts</span></a></li>
+<li class="toclevel-1"><a href="#Latex"><span class="tocnumber">8</span> <span class="toctext">Latex</span></a></li>
+<li class="toclevel-1"><a href="#Miscellaneous_Help"><span class="tocnumber">9</span> <span class="toctext">Miscellaneous Help</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">10</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Useful_books_and_Tutorials">Useful books and Tutorials</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.math.byu.edu/klkuttle/linearalgebra.pdf">Linear Algebra, Theory And Applications</a> <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span> by Kenneth Kuttler, Mathematics Department of Brigham Young University, 2012.</li>
+<li><a rel="nofollow" class="external text" href="http://www.math.brown.edu/~treil/papers/LADW/book.pdf">Linear Algebra Done Wrong</a> <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span> by Sergei Treil, Department of Mathematics, Brown University, 2004-2009.</li>
+<li><a rel="nofollow" class="external text" href="http://courses.csail.mit.edu/6.042/spring13/mcs.pdf">Math primer</a> <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span> This is the math primer for Computer Scientists.</li>
+<li><a rel="nofollow" class="external text" href="http://joshua.smcvt.edu/linearalgebra/">Linear Algebra</a> by  Jim Hefferon</li>
+<li><a rel="nofollow" class="external text" href="https://www.math.ucdavis.edu/~linear/">Linear Algebra in Twenty-Five Lectures</a> by Tom Denton and Andrew Waldron</li>
+<li><a rel="nofollow" class="external text" href="http://math.mit.edu/linearalgebra/">Introduction to Linear Algebra 4th Edition</a> by Gilbert Strang</li>
+<li><a rel="nofollow" class="external text" href="http://linear.ups.edu/">A First Course in Linear Algebra</a> by Rob Beezer</li>
+<li><a rel="nofollow" class="external text" href="http://freemath.wikia.com">Freemath - Linear Algebra</a> - a list of free linear algebra textbooks, currently 13 including the ones are already listed here</li>
+<li><a rel="nofollow" class="external text" href="http://www.people.vcu.edu/~rhammack/BookOfProof/BookOfProof.pdf">Book of Proof</a> by Richard Hammack of Virginia Commonwealth University</li>
+<li><a rel="nofollow" class="external text" href="http://www2.imm.dtu.dk/pubdb/views/publication_details.php?id=3274">Matrix Cookbook</a> by Kaare Brandt Petersen, Michael Syskind Pedersen</li>
+</ul>
+<h2> <span class="mw-headline" id="Linear_Algebra_Courses">Linear Algebra Courses</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.khanacademy.org/math/linear-algebra">Linear Algebra</a> Khan Academy</li>
+<li><a rel="nofollow" class="external text" href="http://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/video-lectures/">MIT Open Courseware</a> Linear Algebra by Prof. Gilbert Strang.</li>
+<li><a rel="nofollow" class="external text" href="https://itunes.apple.com/us/itunes-u/mth309-introduction-to-linear/id431638451">MTH309 Introduction to Linear Algebra</a> University at Buffalo</li>
+<li><a rel="nofollow" class="external text" href="http://patrickjmt.com">PatrickJMT</a> PatrickJMT</li>
+</ul>
+<h2> <span class="mw-headline" id="Python">Python</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://docs.python.org/3.3/tutorial/datastructures.html#list-comprehensions">List-comprehensions</a>, Python 3.3.x official documentation.</li>
+<li><a rel="nofollow" class="external text" href="http://docs.python.org/3.3/tutorial/index.html">Tutorial</a>: Python 3.3.x Tutorial.</li>
+<li><a rel="nofollow" class="external text" href="http://docs.python.org/3.3/library/index.html">Python Library</a>: Python 3.3.x library.</li>
+<li><a rel="nofollow" class="external text" href="http://www.sagemath.org">Sage</a>: An open-source mathematics library with Python-based interface.</li>
+<li><a rel="nofollow" class="external text" href="http://www.pythontutor.com/">PythonTutor</a>: LEARN programming by visualizing code execution.</li>
+<li><a rel="nofollow" class="external text" href="http://ipython.org/">IP[y</a>]: Interactive Python.</li>
+<li><a rel="nofollow" class="external text" href="http://openbookproject.net/thinkcs/python/english3e/">How to Think Like a Computer Scientist </a> Learning with Python 3</li>
+<li><a rel="nofollow" class="external text" href="http://infohost.nmt.edu/tcc/help/pubs/lang/python32/web/index.html">Python 3.2 quick reference </a></li>
+<li><a rel="nofollow" class="external text" href="http://www.itmaybeahack.com/hohttp://www.diveintopython.net/mepage/books/python.html">Building Skills in Python </a></li>
+<li><a rel="nofollow" class="external text" href="http://www.pythontutor.com/visualize.html#mode=display">Visualizing code execution</a> LEARN programming by visualizing code execution</li>
+<li><a rel="nofollow" class="external text" href="http://thenewboston.org/list.php?cat=36">Python Videos</a> The New Boston</li>
+<li><a rel="nofollow" class="external text" href="http://www.diveintopython.net/">Dive into Python</a> Free book, in several languages.</li>
+</ul>
+<h2> <span class="mw-headline" id="Programming_help">Programming help</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.stackoverflow.com/">Stack Overflow</a>:   A question and answer site for professional and enthusiast programmers.</li>
+<li><a rel="nofollow" class="external text" href="http://www.codecademy.com/tracks/python">Code Academy </a>:  If you are new to programming, spend some of your free time here. Concepts are explained a little more in depth.</li>
+</ul>
+<h2> <span class="mw-headline" id="Complex_Numbers">Complex Numbers</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.khanacademy.org/math/algebra/complex-numbers#">Complex Numbers </a>: Khan Academy complex number videos and practice</li>
+</ul>
+<h2> <span class="mw-headline" id="Functions">Functions</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Surjective_function">Surjective </a>: Onto</li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Injective_function">Injective </a>: One to one</li>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Bijective_function">Bijective </a>: Exact pairing between sets</li>
+</ul>
+<h2> <span class="mw-headline" id="Helpful_forum_posts">Helpful forum posts</span></h2>
+<ul>
+<li><a rel="nofollow" class="external autonumber" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=503">[1]</a> Why "onto," "one to one" rather than "surjective" and "injective"</li>
+<li><a rel="nofollow" class="external autonumber" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=1879">[2]</a> Why are Span {[4, -1, 1], [0, 1, 1]} and {[x, y, z]&#160;: [1, 2, -2] · [x, y, z] = 0} equivalent representations of the same plane?</li>
+<li><a rel="nofollow" class="external autonumber" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=1787#comment-6319">[3]</a> Equivalence of for loops and comprehensions</li>
+<li><a rel="nofollow" class="external autonumber" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=1989">[4]</a> Guide - Install Python from Source on Ubuntu</li>
+<li><a rel="nofollow" class="external autonumber" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=2276#post-10103">[5]</a> What do GF2 Spans look like?</li>
+<li><a rel="nofollow" class="external autonumber" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=2454#post-10762">[6]</a> Avoiding repeating expensive operations in comprehension</li>
+<li><a rel="nofollow" class="external autonumber" href="https://class.coursera.org/matrix-001/forum/thread?thread_id=2998#post-13023">[7]</a> Confused by matrix multiplication</li>
+</ul>
+<h2> <span class="mw-headline" id="Latex">Latex</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.ams.org/publications/authors/tex/amslatex">LaTeX</a>: American Mathematical Society Latex</li>
+<li><a rel="nofollow" class="external text" href="ftp://ftp.ams.org/pub/tex/doc/amsmath/short-math-guide.pdf">LaTeX Guide </a>: <span style="font-family: sans-serif; cursor: help; color: #555; font-size: 1.2em;" title="File format pdf - Use a pdf reader">(<span style="color: #555; font-size: 0.7em; position: relative; bottom: 0.1em">pdf</span>)</span> A short Guide to LaTex</li>
+<li><a rel="nofollow" class="external text" href="http://www.codecogs.com/latex/eqneditor.php">Equation Builder</a>: On-line equation builder</li>
+<li><a rel="nofollow" class="external text" href="http://latex-my.blogspot.com/2009/10/name-that-symbol_13.html">LaTeX Symbols</a>: Finding symbols</li>
+<li><a rel="nofollow" class="external text" href="http://en.wikibooks.org/wiki/LaTeX/Mathematics">Wikibooks Latex Math</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Miscellaneous_Help">Miscellaneous Help</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://stackoverflow.com/questions/4895966/changing-default-startup-directory-for-command-prompt-in-windows-7">Changing default startup directory for command prompt in Windows</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Categories">Categories</span></h2>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 23/1000000
+Post-expand include size: 904/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Matrix:Useful_Resources&amp;oldid=15227">https://share.coursera.org/wiki/index.php?title=Matrix:Useful_Resources&amp;oldid=15227</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Coding_the_Matrix" title="Category:Coding the Matrix">Coding the Matrix</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

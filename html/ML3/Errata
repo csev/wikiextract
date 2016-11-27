@@ -1,0 +1,87 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML3:Errata</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ML3:Main" title="ML3:Main">« Back to the main page</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_1"><span class="tocnumber">1</span> <span class="toctext">Week 1</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Class_probabilities"><span class="tocnumber">1.1</span> <span class="toctext">Class probabilities</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_2"><span class="tocnumber">2</span> <span class="toctext">Week 2</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Summarizing_learning_linear_classifiers"><span class="tocnumber">2.1</span> <span class="toctext">Summarizing learning linear classifiers</span></a></li>
+<li class="toclevel-2"><a href="#L2_regularized_logistic_regression"><span class="tocnumber">2.2</span> <span class="toctext">L2 regularized logistic regression</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_3"><span class="tocnumber">3</span> <span class="toctext">Week 3</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Using_the_learned_decision_tree"><span class="tocnumber">3.1</span> <span class="toctext">Using the learned decision tree</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_4"><span class="tocnumber">4</span> <span class="toctext">Week 4</span></a>
+<ul>
+<li class="toclevel-2"><a href="#.28OPTIONAL_LESSON.29_Pruning_decision_trees"><span class="tocnumber">4.1</span> <span class="toctext">(OPTIONAL LESSON) Pruning decision trees</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Week_6"><span class="tocnumber">5</span> <span class="toctext">Week 6</span></a>
+<ul>
+<li class="toclevel-2"><a href="#The_precision-recall_tradeoff"><span class="tocnumber">5.1</span> <span class="toctext">The precision-recall tradeoff</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Week_1">Week 1</span></h2>
+<h3> <span class="mw-headline" id="Class_probabilities">Class probabilities</span></h3>
+<ul>
+<li>Review of basics of probabilities: 01:56 - Carlos says "if the output is 0 that means that I'm absolutely sure that every single review in the world is positive", but he is referring to the case where the output is 1; if the output is 1, then we're absolutely sure that the review is positive. The case where $$P(y = +1) = 0$$ is discussed at 02:44: "And so, on the other hand, if I say that the probability of y equals +1 is 0. That means I'm absolutely sure that every review in the world is not positive."</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_2">Week 2</span></h2>
+<h3> <span class="mw-headline" id="Summarizing_learning_linear_classifiers">Summarizing learning linear classifiers</span></h3>
+<ul>
+<li>Recap of learning logistic regression classifiers: 00:54 through 01:38 - Slide 63 should say "Learn a logistic regression model with gradient ascent" and "(Optional) Derive the gradient ascent update rule for logistic regression" (not "gradient descent")</li>
+</ul>
+<h3> <span class="mw-headline" id="L2_regularized_logistic_regression">L2 regularized logistic regression</span></h3>
+<ul>
+<li>L2 regularized logistic regression: 00:03 through 03:45 - Slides 45 and 46 should say "What if $$\mathbf{\hat{w}}$$ selected to maximize $$\mathscr{l}(\mathbf{w}) - \lambda \| \mathbf{w} \|&#95;2^2$$" (not "minimize")</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_3">Week 3</span></h2>
+<h3> <span class="mw-headline" id="Using_the_learned_decision_tree">Using the learned decision tree</span></h3>
+<ul>
+<li>Making predictions with decision trees: 0:56 through 01:12 - Slide 77 has two small typos; "next&#95;node" was meant instead of "next&#95;note".</li>
+</ul>
+<h2> <span class="mw-headline" id="Week_4">Week 4</span></h2>
+<h3> <span class="mw-headline" id=".28OPTIONAL_LESSON.29_Pruning_decision_trees">(OPTIONAL LESSON) Pruning decision trees</span></h3>
+<ul>
+<li>(OPTIONAL) Tree pruning algorithm:
+
+<ul>
+<li>01:05 - If $$\lambda = 0.3$$, then $$\lambda\; L(T) = 0.3 \cdot 6 = 1.8$$, not 0.18. The total cost, $$C(T)$$, is therefore $$0.25 + 1.8 = 2.05$$</li>
+<li>01:55 - If $$\lambda = 0.3$$, then $$\lambda\; L(T) = 0.3 \cdot 5 = 1.5$$, not 0.15. The total cost of the simpler tree is therefore $$0.26 + 1.5 = 1.76$$</li>
+</ul></li>
+</ul>
+<h2> <span class="mw-headline" id="Week_6">Week 6</span></h2>
+<h3> <span class="mw-headline" id="The_precision-recall_tradeoff">The precision-recall tradeoff</span></h3>
+<ul>
+<li>Precision-recall extremes: 02:04 through 02:34 - Slide 34 has the descriptions of pessimistic and optimistic models swapped. A pessimistic model finds few positive sentences, but includes little-to-no false positives. An optimistic model finds many positive sentences, but includes many false positives.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML3:Errata&amp;oldid=33631">https://share.coursera.org/wiki/index.php?title=ML3:Errata&amp;oldid=33631</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

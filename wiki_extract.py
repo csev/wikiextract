@@ -19,6 +19,8 @@ categories = [
 'Digitaldemocracy'
 ]
 
+categories = []
+
 start = 'Main'
 
 # The file cookies should be the cut-pasted from Chrome
@@ -48,6 +50,24 @@ for x in cookies:
     # print(x)
 # print(hdr)
 
+# If we have no categories, assume all the categories
+# https://share.coursera.org/wiki/index.php/Courses
+if len(categories) < 1 : 
+    url = baseurl + '/Courses'
+    print('Retrieving categories',url)
+    opener = urllib.request.build_opener()
+    opener.addheaders.append(('Cookie', hdr))
+    # let this traceback if there is a problem
+    f = opener.open(url)
+    web = f.read().decode()
+    # print(web)
+    # <li><a href="/wiki/index.php/Scigast:Main" title="
+    categories = re.findall('<li><a href="/wiki/index.php/([^:]+?)[:"]',web, re.MULTILINE | re.DOTALL)
+    print('Found',len(categories),'categories')
+    if len(categories) == 0 : quit()
+    print(categories)
+
+
 def save_image(url,fname,hdr) :
     print('Retrieving image',url)
     # Retrieve the Image
@@ -63,7 +83,12 @@ def save_image(url,fname,hdr) :
         if not os.path.exists(folder):
             os.makedirs(folder)
         image = f.read()
-        out = open(fname,'wb')
+        try:
+            out = open(fname,'wb')
+        except:
+            print('Failed opening file',fname)
+            return
+
         out.write(image)
         out.close()
         print('Wrote',len(data),' characters to '+fname)
@@ -171,12 +196,17 @@ for category in categories:
                 v = image_map[k]
                 data = data.replace(k,v)
 
-            folder = 'html/'+category
+            fname = 'html/'+category+'/'+page
+            folder = os.path.dirname(fname)
             if not os.path.exists(folder):
                 os.makedirs(folder)
-    
-            fname = folder+'/'+page
-            out = open(fname,'w')
+
+            try:
+                out = open(fname,'w')
+            except:
+                print('Failed opening file',fname)
+                continue
+
             out.write(data)
             out.close()
             print('Wrote',len(data),' characters to '+fname)
@@ -207,11 +237,17 @@ for category in categories:
             # Assume the first one
             textarea = html.unescape(textarea[0])
     
-            folder = 'markdown/'+category
+            fname = 'markdown/'+category+'/'+page
+            folder = os.path.dirname(fname)
             if not os.path.exists(folder):
                 os.makedirs(folder)
-            fname = folder+'/'+page
-            out = open(fname,'w')
+
+            try:
+                out = open(fname,'w')
+            except:
+                print('Failed opening file',fname)
+                continue
+
             out.write(textarea)
             out.close()
             print('Wrote',len(textarea),' characters to '+fname)
@@ -221,6 +257,8 @@ for category in categories:
                 # print(line)
     
             refs = re.findall('\[\['+category+':(.*?)\|.*?\]\]', textarea, re.MULTILINE | re.DOTALL)
+            # refs2 = re.findall('\[\['+category.capitalize()+':(.*?)\|.*?\]\]', textarea, re.MULTILINE | re.DOTALL)
+            # refs = refs + refs2
             # print(refs)
             for ref in refs :
                 ref = ref.rstrip()

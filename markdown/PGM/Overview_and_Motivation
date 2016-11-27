@@ -1,0 +1,33 @@
+[[Category:Probabilistic Graphical Models]]
+## Motivation
+
+Uncertainty is present everywhere in life. When you flip a coin to determine who wins a bet, or choose a specific road because you think it's the fastest way to reach your destination, you're experiencing an event where you don't know the specific outcome. In the case of the road maybe you know that at some times of day it's better to take road 'A' because the traffic is lighter, but one day road 'A' turns out to be a bad decision because there's a big traffic jam. Does that mean that you should avoid road 'A' from now on? Or is there some relation between the date and the traffic? It's useful to be able to analyze this kind of event, and for that we can use Probability Theory, which is the branch of mathematics concerned with the analysis of random phenomena.
+
+In many random events, the outcome depends on a large number of different factors. Taking an example discussed in the video "Overview and Motivation", consider a doctor who is faced with a patient. The doctor has a fair amount of information at her disposal when she looks at the patient. Predisposing factors, symptoms, the results of various tests. And, from that, the doctor is supposed to figure out what diseases the patient might have, and what the response to different treatments might be. This is a perfect example where one can see that the presence of some factors can greatly affect how likely an outcome is. At first it's really difficult to know  what kind of diseases the patient might have without the extra information, but if for example the patient sneezes, then with only this information the doctor can start to think that the patient might just have a cold. In problems like this Probabilistic Graphical Models can be applied.
+
+## Probabilistic Graphical Models
+
+## Overview
+
+###Lecture Table of Contents
+ <pre> 
+0:00	Introduction: Uses of PGMs
+1:43	Definition of a PGM
+1:57	"Model"
+3:20	"Probabilistic" - Uncertainty
+4:45	Probability Theory
+5:55	"Graphical" - Complex Systems
+8:20	Graphical Models - Bayesian networks
+9:56	Markov networks
+10:22	Actual bayesian network (CPCS)
+11:26	Graphical representation
+12:19	Many Applications
+12:43	Image Segmentation
+13:58	Medical Diagnosis
+14:35	Textual information extraction
+16:08	Multi-sensor integration (traffic)
+17:04 	Biological network reconstruction
+17:41	Overview of the class (inference, representation, and learning)
+ </pre>
+
+[[PGM | Return to Main Page ]]

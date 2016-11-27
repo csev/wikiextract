@@ -1,0 +1,119 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Programdesign:LinuxRacketInstall</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Choosing_Linux_OS_Racket_Downloads"><span class="tocnumber">1</span> <span class="toctext">Choosing Linux OS Racket Downloads</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Finding_a_Distribution_Download"><span class="tocnumber">1.1</span> <span class="toctext">Finding a Distribution Download</span></a></li>
+<li class="toclevel-2"><a href="#Installed_or_Available"><span class="tocnumber">1.2</span> <span class="toctext">Installed or Available</span></a></li>
+<li class="toclevel-2"><a href="#Choosing_the_Installation"><span class="tocnumber">1.3</span> <span class="toctext">Choosing the Installation</span></a></li>
+<li class="toclevel-2"><a href="#The_Installation_Process"><span class="tocnumber">1.4</span> <span class="toctext">The Installation Process</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Initial_Setup_of_DrRacket"><span class="tocnumber">2</span> <span class="toctext">Initial Setup of DrRacket</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Finding_DrRacket"><span class="tocnumber">2.1</span> <span class="toctext">Finding DrRacket</span></a></li>
+<li class="toclevel-2"><a href="#First-Time_Setup"><span class="tocnumber">2.2</span> <span class="toctext">First-Time Setup</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Choosing_Linux_OS_Racket_Downloads">Choosing Linux OS Racket Downloads</span></h1>
+<p>Linux distributions tend to make extensive collections of material available for optional download as part  of the distribution.  These downloads are customize to the Linux OS release that is being used.  Updates are also available by simple request.</p>
+<p>If possible, use the provision of downloads that is part of a Linux OS distribution.  </p>
+<p>It is possible to obtain the downloads directly, and install them manually.  It takes more experience to do that.  There are possible conflicts with the distribution-provided download system to avoid.</p>
+<h2> <span class="mw-headline" id="Finding_a_Distribution_Download">Finding a Distribution Download</span></h2>
+<p>The DrRacket used in Systematic Program Design 1 must be operated in your graphical interface.  The easiest way to find a version of DrRacket is via that interface.</p>
+<p>Use the graphical-interface menu to find the software manager or similar application program (here illustrated with the Linux Mint Debian distribution).</p>
+<p><center>
+<p><a href="/wiki/images/f/fd/Racket-5.2.1-2013-09-07-2024-MintPackage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2024-MintPackage.png" src="/wiki/images/f/fd/Racket-5.2.1-2013-09-07-2024-MintPackage.png" width="600" height="668" /></a>
+</p>
+</center></p>
+<p>On the illustrated menu, the Software Manager is listed among the programs under System Tools.</p>
+<p>On entering the software manager, find the Programming category, if there is one.  You might be able to use a search panel to search directly for "Racket" also.</p>
+<p><center>
+<p><a href="/wiki/images/8/89/Racket-5.2.1-2013-09-07-2026-MintPackage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2026-MintPackage.png" src="/wiki/images/8/89/Racket-5.2.1-2013-09-07-2026-MintPackage.png" width="780" height="495" /></a>
+</p>
+</center></p>
+<h2> <span class="mw-headline" id="Installed_or_Available">Installed or Available</span></h2>
+<p>If the software manager shows few programming resources, it is possible that only the already-installed packages are listed.  Switch to available packages, if necessary.</p>
+<p><center>
+<p><a href="/wiki/images/f/fd/Racket-5.2.1-2013-09-07-2028-MintPackage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2028-MintPackage.png" src="/wiki/images/f/fd/Racket-5.2.1-2013-09-07-2028-MintPackage.png" width="583" height="491" /></a>
+</p>
+</center></p>
+<p>Once the full list, is obtained, it may be too extensive to scroll through to find Racket.  For this stage, using a search panel is far preferable.</p>
+<h2> <span class="mw-headline" id="Choosing_the_Installation">Choosing the Installation</span></h2>
+<p><center>
+<p><a href="/wiki/images/4/44/Racket-5.2.1-2013-09-07-2030-MintPackage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2030-MintPackage.png" src="/wiki/images/4/44/Racket-5.2.1-2013-09-07-2030-MintPackage.png" width="584" height="490" /></a>
+</p>
+</center></p>
+<p>Of the choices available, such as those found above, it is the racket package that you want first.  This will generally take care of any dependencies on other material that also needs to be installed.</p>
+<p>Select the full racket package, however that is done with a given software manager.  In the illustrated case, double-clicking at the cursor position switches to detailed information about the full package.</p>
+<p><center>
+<p><a href="/wiki/images/2/2b/Racket-5.2.1-2013-09-07-2032-MintPackage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2032-MintPackage.png" src="/wiki/images/2/2b/Racket-5.2.1-2013-09-07-2032-MintPackage.png" width="704" height="558" /></a>
+</p>
+</center></p>
+<p>The description confirms that this is the Racket package and it appears to provide everything needed, especially DrRacket and documentation.  There is also confirmation that Racket is not installed.  The Install button is clicked.</p>
+<h2> <span class="mw-headline" id="The_Installation_Process">The Installation Process</span></h2>
+<p>When a software manager is used, the entire install process is managed silently, typically, with a visual indication of progress.  Some install processes are chatty.  Not this one.</p>
+<p><center>
+<p><a href="/wiki/images/0/05/Racket-5.2.1-2013-09-07-2033-MintPackage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2033-MintPackage.png" src="/wiki/images/0/05/Racket-5.2.1-2013-09-07-2033-MintPackage.png" width="706" height="119" /></a>
+</p>
+</center></p>
+<p>When the software package has been installed successfully, that is reported.</p>
+<p><center>
+<p><a href="/wiki/images/3/33/Racket-5.2.1-2013-09-07-2034-MintPackage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2034-MintPackage.png" src="/wiki/images/3/33/Racket-5.2.1-2013-09-07-2034-MintPackage.png" width="667" height="193" /></a>
+</p>
+</center></p>
+<p>There's nothing more to do.  Racket is now available to be used.</p>
+<h1> <span class="mw-headline" id="Initial_Setup_of_DrRacket">Initial Setup of DrRacket</span></h1>
+<h2> <span class="mw-headline" id="Finding_DrRacket">Finding DrRacket</span></h2>
+<p>For Systematic Program Design 1, all that's needed is DrRacket, the graphical and interactive software that will be used throughout the course.  There are other components to Racket, but DrRacket is all that is needed.</p>
+<p>With the Linux OS that was used for demonstration here, it is easy to find DrRacket.  It is already on the menu of the account used to install the package.</p>
+<p><center>
+<p><a href="/wiki/images/b/b5/Racket-5.2.1-2013-09-07-2036-MintMenu.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2036-MintMenu.png" src="/wiki/images/b/b5/Racket-5.2.1-2013-09-07-2036-MintMenu.png" width="412" height="639" /></a>
+</p>
+</center></p>
+<p>Click on the DrRacket menu entry to start the DrRacket program.</p>
+<h2> <span class="mw-headline" id="First-Time_Setup">First-Time Setup</span></h2>
+<p>The first time DrRacket starts, it is necessary to choose a programming language.  DrRacket provides several languages for use.</p>
+<p><center>
+<p><a href="/wiki/images/a/aa/Racket-5.2.1-2013-09-07-2038-MintStartup.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2038-MintStartup.png" src="/wiki/images/a/aa/Racket-5.2.1-2013-09-07-2038-MintStartup.png" width="610" height="676" /></a>
+</p>
+</center></p>
+<p>Select the Choose Language... option of the Language menu item in the DrRacket window.</p>
+<p><center>
+<p><a href="/wiki/images/9/93/Racket-5.2.1-2013-09-07-2040-MintStartup.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2040-MintStartup.png" src="/wiki/images/9/93/Racket-5.2.1-2013-09-07-2040-MintStartup.png" width="331" height="474" /></a>
+</p>
+</center></p>
+<p>For the first work with DrRacket, the Beginning Student language (BSL) is used.  In the Choose Language dialog, select the Choose a language radio button.  Then click the expansion pointer under Teaching Languages, How to Design Programs.  Finally, select Beginning Student, and click OK.</p>
+<p><center>
+<p><a href="/wiki/images/c/c5/Racket-5.2.1-2013-09-07-2041-MintLanguage.png" class="image"><img alt="Racket-5.2.1-2013-09-07-2041-MintLanguage.png" src="/wiki/images/c/c5/Racket-5.2.1-2013-09-07-2041-MintLanguage.png" width="607" height="69" /></a>
+</p>
+</center></p>
+<p>The selection of particular programming language is shown in the bottom left corner of the DrRacket window.  This setting will be retained until it is to be changed in later parts of the course.</p>
+<p>That's all that's necessary for the usual first-operation of DrRacket.  </p>
+<p><center>
+<p><b>TO BE CONTINUED</b>
+</p>
+</center></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Programdesign:LinuxRacketInstall&amp;oldid=16127">https://share.coursera.org/wiki/index.php?title=Programdesign:LinuxRacketInstall&amp;oldid=16127</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

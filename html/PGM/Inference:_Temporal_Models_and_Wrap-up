@@ -1,0 +1,43 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Inference: Temporal Models and Wrap-up</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><h1> <span class="mw-headline" id="Lecture_Video_Table_of_Contents">Lecture Video Table of Contents</span></h1>
+<h2> <span class="mw-headline" id="Inference_in_Temporal_Models">Inference in Temporal Models</span></h2>
+<p><pre>
+0:40    DBN template specification
+1:02    Ground Bayes network
+1:40    Template model
+2:16    Belief state tracking
+7:55    Robot localization
+10:24   Computational issues
+13:01   Entanglement
+17:12   Example: Collective web page classification
+19:00   Summary
+</pre></p>
+<h2> <span class="mw-headline" id="Inference:_Summary">Inference: Summary</span></h2>
+<p><pre>
+0:31    MAP versus marginals
+4:03    Algorithms for marginals
+5:19    Algorithms for MAP
+7:30    Factors in approximate inference
+10:18   &quot;So, now what?&quot;
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 20/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Temporal_Models_and_Wrap-up&amp;oldid=4273">https://share.coursera.org/wiki/index.php?title=PGM:Inference:_Temporal_Models_and_Wrap-up&amp;oldid=4273</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

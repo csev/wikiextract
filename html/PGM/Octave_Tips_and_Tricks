@@ -1,0 +1,91 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Octave Tips and Tricks</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#MATLAB_is_all_about_matrices"><span class="tocnumber">1</span> <span class="toctext">MATLAB is all about matrices</span></a></li>
+<li class="toclevel-1"><a href="#Matrix_operations_vs._element-wise_operations"><span class="tocnumber">2</span> <span class="toctext">Matrix operations vs. element-wise operations</span></a></li>
+<li class="toclevel-1"><a href="#Creating_an_automated_test"><span class="tocnumber">3</span> <span class="toctext">Creating an automated test</span></a></li>
+<li class="toclevel-1"><a href="#Two_functions_in_the_same_file"><span class="tocnumber">4</span> <span class="toctext">Two functions in the same file</span></a></li>
+<li class="toclevel-1"><a href="#Returning_2_or_more_values_in_a_function"><span class="tocnumber">5</span> <span class="toctext">Returning 2 or more values in a function</span></a></li>
+<li class="toclevel-1"><a href="#The_.22find.22_function"><span class="tocnumber">6</span> <span class="toctext">The "find" function</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="MATLAB_is_all_about_matrices">MATLAB is all about matrices</span></h2>
+<p>A key feature of MATLAB (MATrix LABoratory) is that it is based on matrix manipulations. In order to gain the full benefit of its power, you should learn to center your code around matrix manipulations. This can reduce the amount of coding required, alleviate the need for longer loops, make your code more elegant, reduce your run time, and if the skill is mastered, it can eventually help you code faster.</p>
+<p>To learn to make use of the neat little matrix tricks, you should work at gaining this skill. One way to do so is to rewrite your code and replace whatever you can with matrix multiplications, transposes, concatenations or separations. This skill can take time to build, but it will be rewarding in future MATLAB projects.</p>
+<p><strong>Example: Vector normalization</strong></p>
+<p>Let <code>A = [1 2 3 4 5]</code> be our evidence. We would like to normalize these values to obtain probabilities. Instead of using a  <code>for</code> loop, we can simply write: </p>
+<p><code>A ./ sum(A)</code>.</p>
+<h2> <span class="mw-headline" id="Matrix_operations_vs._element-wise_operations">Matrix operations vs. element-wise operations</span></h2>
+<p>There are two kinds of operations: matrix-wise and element-wise. Be careful to choose the right one. Element-wise operations are prefixed by a dot: <code>.+</code>, <code>.*</code> etc.</p>
+<p><strong>Example: Square of a matrix</strong></p>
+<p>Let <code>A</code> be a matrix, for example <code>A = magic(3)</code> or <code>A = rand(3)</code>.
+<ul><li> <code>B = A^2</code> is a matrix operation $$A \times A$$. It calculates $$b&#95;{ij} = \sum&#95;{r=1}^n a&#95;{ir}a&#95;{rj}$$.
+</li><li> <code>B = A.^2</code> is an element-wise operation. It returns a matrix where each element is the square of the original one: $$b&#95;{ij} = a&#95;{ij}^2$$.</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Creating_an_automated_test">Creating an automated test</span></h2>
+<p>See <a href="/wiki/index.php/PGM:Creating_an_automated_test_in_Octave" title="PGM:Creating an automated test in Octave">Creating an automated test in Octave</a></p>
+<h2> <span class="mw-headline" id="Two_functions_in_the_same_file">Two functions in the same file</span></h2>
+<code><pre> A = MainFunction(parameters)
+
+
+ return 
+
+ B = Auxiliary1Function(Params1)
+
+
+ return  
+
+ C = Auxiliary2Function(Params2)
+
+
+ return 
+</pre></code>
+<p>Note:</p>
+<ol>
+<li>The order is important: The main function must be first.</li>
+<li>The auxiliary functions are visible only to other functions in the same file.</li>
+<li>There is no <code>end</code> at the end of the functions.</li>
+</ol>
+<h2> <span class="mw-headline" id="Returning_2_or_more_values_in_a_function">Returning 2 or more values in a function</span></h2>
+<p>Many functions in MATLAB/Octave return 2 or more results. To get them when you call such a function you must make an assignment of the form:</p>
+<p>[A, B] = foo(bar)</p>
+<p>You must keep in mind that MATLAB/Octave will never warn you that you are missing any results. For example, if foo returns 2 values and you make an assignment of the form:</p>
+<p>A= foo(bar)</p>
+<p>the interpreter will not complain and will assign the first result to A and drop the second.</p>
+<h2> <span class="mw-headline" id="The_.22find.22_function">The "find" function</span></h2>
+<p>MATLAB and Octave include the find function for searching in a matrix or a list.  Find returns a list of indexes where its argument evaluates to 1. For example, if A is a vector of 0's and 1's, </p>
+<p>i=find(A) </p>
+<p>i will contain the indexes of A where A is 1.</p>
+<p>As we said find returns the indexes where its argument evaluates to 1. Thus giving find any valid expression that returns a matrix or a vector will return the indexes where the evaluation is equal to 1. For example, let B a vector of real numbers and c a real number, then the instruction </p>
+<p>i=find(B&gt;c)</p>
+<p>will return in i the indexes where B &gt;c.</p>
+<p>When called using the form:</p>
+<p>[i,j] = find(A)</p>
+<p>i will contain the rows and j will contain the columns where A evaluates to 1.</p>
+<p>Finally if A is a matrix and you call find using the form:</p>
+<p>i = find(A)</p>
+<p>find will return the ordinal positions where A evaluates to 1 as if the rows in A were concatenated each after other. For example if A=(0 0 0; 0 0 1; 0 0 0) then</p>
+<p>i= find(A) </p>
+<p>will return 6.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Octave_Tips_and_Tricks&amp;oldid=10861">https://share.coursera.org/wiki/index.php?title=PGM:Octave_Tips_and_Tricks&amp;oldid=10861</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

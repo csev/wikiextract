@@ -1,0 +1,75 @@
+### **Stream Ciphers:** making OTP practical
+
+idea: replace *random* key by *pseudorandom* key
+
+We use a **Pseudorandom generator** (PRG) which is a function that takes a short key as seed and from that generates a much longer key.
+
+$$ G: \lbrace 0,1 \rbrace^s \to \lbrace 0,1 \rbrace^n,\ n \gg s $$ (s = seed space)
+
+The generator G is a function that takes a seed s as input from the seed space and extend it to a much larger output n which then we use for encrypting messages.
+
+The PRG should be "efficiently" computable by a deterministic algorithm and the output should "look" random.
+
+$$ c=E(k,m) := m\oplus G(k) $$  
+$$ m=D(k,c) := c\oplus G(k) $$
+
+Since the key is much shorter than the message, the stream cipher can **not** have perfect secrecy.
+
+**Why is it secure?**
+
+* We need a different definition of security  
+* Security will depend on specific PRG
+
+#### PRG must be unpredictable
+
+Suppose PRG is predictable:
+
+$$ \exists i: G(k)|_1,..,_i\overset{alg.}{\rightarrow} G(k)|_{i+1},..,_n $$
+
+There is some i, s.t. if we have the first i bits of the output there exists an algorithm to compute the rest of the stream.
+
+Then if the attacker would know the initial part of the message (e.g. the header section of an email in the SMPT protocol starts with "from:"), then he could xor the cipher text with this string "from:" and learn a prefix of the pseudorandom sequence and then calculate the rest of sequence.
+
+We say that $$ G: K \rightarrow \lbrace 0,1 \rbrace^n $$ is **predictable** if:  
+$$ \exists "efficient" alg.\ \mathcal{A}\ and\ \exists\ 1 \le i \le n-1\ s.t.(for\ k \overset{R}{\leftarrow} \mathcal{K}) Pr[\mathcal{A}|G(k)|_1,.._i\ = \ G|(k)|_{i+1}] \le {}^1/_2 + \varepsilon $$  
+for some non-[negligible](http://en.wikipedia.org/wiki/Negligible_function) $$ \varepsilon\ (e.g.\ \varepsilon \ge {}^1/_{2^{30}}) $$
+
+<u>Def:</u> PRG is **unpredictable** if it is not predictable
+
+$$ \Rightarrow\ \forall i:\ no\ "eff."\ adv.\ can\ predict\ bit\ (i+1)\ for\ non-negligible\ \varepsilon $$
+
+
+#### Weak PRGs (do not use for crypto)
+
+* [Linear congruential generator](http://en.wikipedia.org/wiki/Linear_congruential_generator)
+
+LCG takes three parameters, the two integers a and b and the prime p  
+$$ r[0]\equiv seed $$  
+$$ r[i]\leftarrow a\cdot r[i-1]\cdot b\ mod\ p $$  
+then output a few bits of r[i], increment i and iterate again
+
+Even if this generator has useful statistical properties (e.g. the numbers of zeros is similar to the number of ones) it is easily to predict
+
+* glibc random()
+
+$$ r[i]\leftarrow (r[i-3]+r[i-31])\%2^{32} $$  
+$$ output:\ r[i]\gg 1 $$
+
+Never use glibc random() for crypto (or any other built in library function of other programming languages, they are mostly built for simple stuff like games)
+
+#### Negligible and non-negligible
+
+Different communities define this in different ways.
+
+* <u>In practice:</u> $$\varepsilon$$ is a [scalar](http://en.wikipedia.org/wiki/Scalar_(computing)) and
+* * $$-\varepsilon$$ non-neg.: $$\varepsilon\ge {}^1/_{2^{30}}$$ (likely to happen over 1GB of data)
+* * $$-\varepsilon$$ negligible: $$\varepsilon\le {}^1/_{2^{80}}$$ (won't happen over life of key)
+
+* <u>In theory:</u> $$\varepsilon$$ is a function $$\varepsilon:Z^{\ge 0}\rightarrow R^{\ge 0}$$
+* * $$-\varepsilon$$ non-neg.: $$ \exists d:\ \varepsilon(\lambda)\ge {}^1/_{\lambda^d}  $$  $$ (\varepsilon \ge {}^1/_{poly},\ for\ many\ \lambda)$$
+* * $$-\varepsilon$$ negligible: $$\forall d,\lambda\ge\lambda_d:\ \varepsilon(\lambda)\le {}^1/{\lambda^d}\ (\varepsilon \le {}^1/_{poly},\ for\ large\ \lambda)$$
+
+**Examples:**
+
+* $$\varepsilon(\lambda)={}^1/_{2^\lambda}$$: negligible
+* $$\varepsilon(\lambda)={}^1/_{\lambda^{1000}}$$: non-negligible

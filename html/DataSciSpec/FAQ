@@ -1,0 +1,264 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">DataSciSpec:FAQ</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+Return to <a href="/wiki/index.php/DataSciSpec:Main" title="DataSciSpec:Main"> Data Science Specialization</a></p>
+<p>Where can I learn more about the John Hopkins University Data Science Specialization?
+<br />
+<a rel="nofollow" class="external text" href="https://www.coursera.org/specialization/jhudatascience/1?utm_medium=courseDescripTop">Johns Hopkins University Data Science Specialization</a> or <a rel="nofollow" class="external text" href="http://jhudatascience.org">Johns Hopkins University Data Science Specialization</a>.
+<br /><br /></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Data_Scientist.27s_Toolbox"><span class="tocnumber">1</span> <span class="toctext">Data Scientist's Toolbox</span></a></li>
+<li class="toclevel-1"><a href="#R_Programming"><span class="tocnumber">2</span> <span class="toctext">R Programming</span></a></li>
+<li class="toclevel-1"><a href="#Getting_and_Cleaning_Data"><span class="tocnumber">3</span> <span class="toctext">Getting and Cleaning Data</span></a></li>
+<li class="toclevel-1"><a href="#Exploratory_Data_Analysis"><span class="tocnumber">4</span> <span class="toctext">Exploratory Data Analysis</span></a></li>
+<li class="toclevel-1"><a href="#Reproducible_Research"><span class="tocnumber">5</span> <span class="toctext">Reproducible Research</span></a></li>
+<li class="toclevel-1"><a href="#Statistical_Inference"><span class="tocnumber">6</span> <span class="toctext">Statistical Inference</span></a></li>
+<li class="toclevel-1"><a href="#Regression_Models"><span class="tocnumber">7</span> <span class="toctext">Regression Models</span></a></li>
+<li class="toclevel-1"><a href="#Practical_Machine_Learning"><span class="tocnumber">8</span> <span class="toctext">Practical Machine Learning</span></a></li>
+<li class="toclevel-1"><a href="#Developing_Data_Products"><span class="tocnumber">9</span> <span class="toctext">Developing Data Products</span></a></li>
+<li class="toclevel-1"><a href="#Capstone_Project"><span class="tocnumber">10</span> <span class="toctext">Capstone Project</span></a></li>
+<li class="toclevel-1"><a href="#Where_can_I_find_the_course_dependency_list_for_prerequisite_and.2For_co-requisite_courses.3F"><span class="tocnumber">11</span> <span class="toctext">Where can I find the course dependency list for prerequisite and/or co-requisite courses?</span></a></li>
+<li class="toclevel-1"><a href="#What_is_the_easiest_way_to_learn_programming_using_R_and_RStudio.3F"><span class="tocnumber">12</span> <span class="toctext">What is the easiest way to learn programming using R and RStudio?</span></a></li>
+<li class="toclevel-1"><a href="#The_art_and_science_of_problem_solving_for_new_computer_programmers"><span class="tocnumber">13</span> <span class="toctext">The art and science of problem solving for new computer programmers</span></a></li>
+<li class="toclevel-1"><a href="#Late_Days-_for_Quizzes.2C_Peer_Assignments.2C_or_both.3F"><span class="tocnumber">14</span> <span class="toctext">Late Days- for Quizzes, Peer Assignments, or both?</span></a></li>
+<li class="toclevel-1"><a href="#Can_I_get_some_special_late_day_dispensation_because_I_joined_the_course_2_weeks_late.3F"><span class="tocnumber">15</span> <span class="toctext">Can I get some special late day dispensation because I joined the course 2 weeks late?</span></a></li>
+<li class="toclevel-1"><a href="#Can_I_recover_late_days.3F"><span class="tocnumber">16</span> <span class="toctext">Can I recover late days?</span></a></li>
+<li class="toclevel-1"><a href="#Can_I_get_copies_of_the_notes"><span class="tocnumber">17</span> <span class="toctext">Can I get copies of the notes</span></a></li>
+<li class="toclevel-1"><a href="#How_do_I_submit_my_assignment_using_submitscriptN.R.3F"><span class="tocnumber">18</span> <span class="toctext">How do I submit my assignment using submitscriptN.R?</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Attention.21"><span class="tocnumber">18.1</span> <span class="toctext">Attention!</span></a></li>
+<li class="toclevel-2"><a href="#Step_1_-_Set_your_working_directory"><span class="tocnumber">18.2</span> <span class="toctext">Step 1 - Set your working directory</span></a></li>
+<li class="toclevel-2"><a href="#Step_2_-_Check_if_your_files_are_in_your_working_directory"><span class="tocnumber">18.3</span> <span class="toctext">Step 2 - Check if your files are in your working directory</span></a></li>
+<li class="toclevel-2"><a href="#Step_3_-_Source_the_submit_script"><span class="tocnumber">18.4</span> <span class="toctext">Step 3 - Source the submit script</span></a></li>
+<li class="toclevel-2"><a href="#Step_4_-_Submit_your_assignment"><span class="tocnumber">18.5</span> <span class="toctext">Step 4 - Submit your assignment</span></a></li>
+<li class="toclevel-2"><a href="#Step_5_-_Confirm_your_course_record_has_been_updated"><span class="tocnumber">18.6</span> <span class="toctext">Step 5 - Confirm your course record has been updated</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#How_do_I_point_to_the_correct_session_of_a_course_which_requires_the_submitscriptN.R_script_to_push_completed_assignments_to_Coursera.3F"><span class="tocnumber">19</span> <span class="toctext">How do I point to the correct session of a course which requires the submitscriptN.R script to push completed assignments to Coursera?</span></a></li>
+<li class="toclevel-1"><a href="#How_do_I_install_Statistics_with_Interactive_R_Lessons_.28SWIRL.29.3F"><span class="tocnumber">20</span> <span class="toctext">How do I install Statistics with Interactive R Lessons (SWIRL)?</span></a></li>
+<li class="toclevel-1"><a href="#Is_there_a_way_to_quickly_locate_a_topic_by_keyword_within_the_lecture_videos.3F"><span class="tocnumber">21</span> <span class="toctext">Is there a way to quickly locate a topic by keyword within the lecture videos?</span></a></li>
+<li class="toclevel-1"><a href="#Peer_assessments"><span class="tocnumber">22</span> <span class="toctext">Peer assessments</span></a>
+<ul>
+<li class="toclevel-2"><a href="#I_work_on_it:_I_don.27t_know_what_the_instructions_mean.2C_they_are_completely_unclear_to_me"><span class="tocnumber">22.1</span> <span class="toctext">I work on it: I don't know what the instructions mean, they are completely unclear to me</span></a></li>
+<li class="toclevel-2"><a href="#I_grade_my_peers_work_-_how_should_I_go.3F"><span class="tocnumber">22.2</span> <span class="toctext">I grade my peers work - how should I go?</span></a></li>
+<li class="toclevel-2"><a href="#Can_I_leave_a_grading_comment_for_my_peer.3F"><span class="tocnumber">22.3</span> <span class="toctext">Can I leave a grading comment for my peer?</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#How_can_I_verify_the_current_locale_for_a_.2Anix-based_operating_system.3F"><span class="tocnumber">23</span> <span class="toctext">How can I verify the current locale for a *nix-based operating system?</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Data_Scientist.27s_Toolbox">Data Scientist's Toolbox</span></h2>
+<p>Where can I learn more about the Data Scientist's Toolbox course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/datascitoolbox">Data Scientist's Toolbox</a> course description.
+<br />
+Important links may be found on the Data Scientist's Toolbox <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/Category:Data_Scientist%27s_Toolbox">main wiki page</a>
+<br />
+There is now a page with notes about the<a href="/wiki/index.php/GIT" title="GIT"> Git Version Control System</a></p>
+<h2> <span class="mw-headline" id="R_Programming">R Programming</span></h2>
+<p>Where can I learn more about the R Programming course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/rprog">R Programming</a> course description.
+<br />
+At the main R website (CRAN) there is a printable (PDF) <a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/contrib/Short-refcard.pdf">reference card for various R functions</a>.</p>
+<p>Is there an interactive tutorial for R? 
+<br />
+<a rel="nofollow" class="external text" href="http://swirlstats.com">Statistics with Interactive R Learning (swirl)</a> is an interactive tutorial which runs inside the R / Rstudio environment. At the end of each lesson, swirl will ask if you'd like to notify Coursera. Select Yes and input the requested information to receive credit for your work. Your submission password is different from your Coursera password and can be found at the top of the Programming Assignments page.</p>
+<p>How can I make the transition from the lectures to the first programming assignment?
+<br />
+If you're not familiar with R and you're not familiar with programming concepts, sometimes even if you are, Programming Assignment 1 can feel like you're getting thrown in the deep end of the pool after a 5 minute lesson on how to swim. Data Science Specialization course participant Derek Franks has put together an unofficial <a rel="nofollow" class="external text" href="https://github.com/derekfranks/practice_assignment">practice programming assignment</a>.</p>
+<p>How do I return multiple values from a function without using a list?
+<br />
+Assigning values to multiple variables using only a single line of R code is described in a StackOverflow <a rel="nofollow" class="external text" href="http://stackoverflow.com/questions/7519790/assign-multiple-new-variables-in-a-single-line-in-r">article</a>.</p>
+<p>Why should I learn R for Statistical Analysis? Aren't Python and Julia Good Enough?
+<br />
+Professor Norman Matloff says <a rel="nofollow" class="external text" href="http://matloff.wordpress.com/2014/05/21/r-beats-python-r-beats-julia-anyone-else-wanna-challenge-r/">R is the king</a> of statistical analysis which is at the heart of data science.</p>
+<p>Why does R have two assignment operators (= and &lt;-)?
+<br />
+There is an <a rel="nofollow" class="external text" href="http://blog.revolutionanalytics.com/2008/12/use-equals-or-arrow-for-assignment.html">article</a> on the Revolution Analytics blog describing the dual assignment operators in the R language. It is an interesting read and provides historical insight into the rationale.</p>
+<h2> <span class="mw-headline" id="Getting_and_Cleaning_Data">Getting and Cleaning Data</span></h2>
+<p>Where can I learn more about the Getting and Cleaning Data course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/getdata">Getting and Cleaning Data</a> course description.</p>
+<p>How do I enable reading Microsoft Excel (.xlsx) files within the R environment?
+<pre>
+1. Install the Java Run-time Environment (JRE) at the operating system level.
+2. Install Java at the operating system level.
+3. Install the rJava package within R / RStudio using the command: install.packages(&quot;rJava&quot;).
+4. Install the xlsx package within R / RStudio using the command: install.packages(&quot;xlsx&quot;).
+5. Restart R / RStudio.
+6. Load the modules using the commands: library(&quot;rJava&quot;) and library(&quot;xlsx)&quot;.
+</pre></p>
+<p>How do I resolves problems when attempting to downloading data files, <a rel="nofollow" class="external text" href="http://rpubs.com/thoughtfulbloke/downloadtips">any tips</a>?</p>
+<h2> <span class="mw-headline" id="Exploratory_Data_Analysis">Exploratory Data Analysis</span></h2>
+<p>Where can I learn more about the Exploratory Data Analysis course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/exdata">Exploratory Data Analysis</a> course description.</p>
+<h2> <span class="mw-headline" id="Reproducible_Research">Reproducible Research</span></h2>
+<p>Where can I learn more about the Reproducible Research course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/repdata">Reproducible Research</a> course description.</p>
+<h2> <span class="mw-headline" id="Statistical_Inference">Statistical Inference</span></h2>
+<p>Where can I learn more about the Statistical Inference course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/statinference">Statistical Inference</a> course description.</p>
+<h2> <span class="mw-headline" id="Regression_Models">Regression Models</span></h2>
+<p>Where can I learn more about the Regression Models course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/regmods">Regression Models</a> course description.</p>
+<h2> <span class="mw-headline" id="Practical_Machine_Learning">Practical Machine Learning</span></h2>
+<p>Where can I learn more about the Practical Machine Learning course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/predmachlearn">Practical Machine Learning</a> course description.</p>
+<h2> <span class="mw-headline" id="Developing_Data_Products">Developing Data Products</span></h2>
+<p>Where can I learn more about the Developing Data Products course?
+<br />
+Read the <a rel="nofollow" class="external text" href="https://www.coursera.org/course/devdataprod">Developing Data Products</a> course description.</p>
+<h2> <span class="mw-headline" id="Capstone_Project">Capstone Project</span></h2>
+<p>Where can I learn more about the <a rel="nofollow" class="external text" href="https://www.coursera.org/specialization/jhudatascience/1?utm_medium=courseDescripTop">Capstone Project</a>?</p>
+<h2> <span class="mw-headline" id="Where_can_I_find_the_course_dependency_list_for_prerequisite_and.2For_co-requisite_courses.3F">Where can I find the course dependency list for prerequisite and/or co-requisite courses?</span></h2>
+<p>A visual depiction of the relationship between the courses as well as an explanation of hard dependency and soft dependency can be found on the <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Main#Course_Dependency_Information">main page</a> of this wiki.</p>
+<h2> <span class="mw-headline" id="What_is_the_easiest_way_to_learn_programming_using_R_and_RStudio.3F">What is the easiest way to learn programming using R and RStudio?</span></h2>
+<p>R Programming course participant James Bullis offers some sage advice (edited).</p>
+<p>The easiest way to program in any language is start with something simple and work towards the progressively more complex.  To familiarize yourself with R, take a small set of data (data set) with which you are comfortable and "play" with the data, so to speak.  This approach is important for at least two reasons:</p>
+<ul>
+<li>When you calculate something, such as the mean of a column, you can be confident that the results you get are correct.</li>
+<li>When you make a mistake, and you will make a mistake, you can focus on correcting what you're doing wrong.</li>
+</ul>
+<p>If you're unfamiliar with the data, it can be difficult to separate your lack of understanding of the data verses your lack of understanding of the language or tool.</p>
+<p>Toby Marthews at the BCI Research Centre, Panama, has written an excellent introduction specifically addressing R novices. "The Friendly Beginners' R Course" is legally available from many university websites. This <a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Useful_Resources#Tutorials">introductory tutorial</a> is listed on the Resource page of this wiki as well.</p>
+<p>This question would not be complete without a contribution from the R Programming course instructor, Roger D. Peng, as quoted in <a rel="nofollow" class="external text" href="http://duncanjg.files.wordpress.com/2008/11/rcoursedraft1.pdf">"R for Absolute Beginners"</a>.</p>
+<pre>
+library(fortunes)
+fortune(&quot;pizza&quot;)
+
+Roger D. Peng: I don't think anyone actually believes that R is designed to
+make *everyone* happy. For me, R does about 99% of the things I need to do, but
+sadly, when I need to order a pizza, I still have to pick up the telephone.
+
+-- Roger D. Peng, et. al.
+   R-help (June 2004)
+</pre>
+<h2> <span class="mw-headline" id="The_art_and_science_of_problem_solving_for_new_computer_programmers">The art and science of problem solving for new computer programmers</span></h2>
+<p>The single largest hurdle for anyone new to programming is translating stated requirements into a working programme. The reason? Rarely does an introductory course teach the essential skill of problem solving. By problem solving I mean breaking down a requirements specification into smaller sub-problems until the sub-problem can be translated into the implementation language. Expressing the steps in pseudo-code helps ease the transition from human language to programming language. To ease the transition for novice computer programmers an introduction to these problem-solving techniques begins on page 16 of <a rel="nofollow" class="external text" href="http://people.scs.carleton.ca/~lanthier/teaching/COMP1405/Notes/COMP1405_Ch1_IntroductionToComputerScience.pdf">Introduction to Computer Science</a>.</p>
+<h2> <span class="mw-headline" id="Late_Days-_for_Quizzes.2C_Peer_Assignments.2C_or_both.3F">Late Days- for Quizzes, Peer Assignments, or both?</span></h2>
+<p>The late days credit, typically 5 days allocated per course but always read the course syllabus, can only be used before the hard deadline for non-peer assessed assignments.</p>
+<h2> <span class="mw-headline" id="Can_I_get_some_special_late_day_dispensation_because_I_joined_the_course_2_weeks_late.3F">Can I get some special late day dispensation because I joined the course 2 weeks late?</span></h2>
+<p>No. But keep in mind the course runs every month, so if the marks matter you might want to join next months intake.</p>
+<h2> <span class="mw-headline" id="Can_I_recover_late_days.3F">Can I recover late days?</span></h2>
+<p>You can find <a rel="nofollow" class="external text" href="http://help.coursera.org/customer/portal/articles/1163257-how-can-i-apply-late-days-to-an-assignment">instructions</a> on how to get your late days back.</p>
+<h2> <span class="mw-headline" id="Can_I_get_copies_of_the_notes">Can I get copies of the notes</span></h2>
+<p>The <a rel="nofollow" class="external text" href="https://github.com/DataScienceSpecialization/courses">notes</a> for all the courses in the series are available on Github, which you learn to use in the Data Science Toolbox course.
+The raw form of the notes is Rmarkdown documents, from which other output forms are produced (this is covered in the Reproducible Research course).</p>
+<h2> <span class="mw-headline" id="How_do_I_submit_my_assignment_using_submitscriptN.R.3F">How do I submit my assignment using submitscriptN.R?</span></h2>
+<h4> <span class="mw-headline" id="Attention.21">Attention!</span></h4>
+<p>One thing to keep in mind is that in order to the <em>submit()</em> function to work, you must access the data files the <strong>exact same way</strong> as the example output. Most likely this means that your function is <strong>not</strong> supposed to change the working directory. However, you can change your working directory <strong>before</strong> you source your function and the <em>submit()</em> function.</p>
+<h4> <span class="mw-headline" id="Step_1_-_Set_your_working_directory">Step 1 - Set your working directory</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/wiki/images/a/a4/DataSciSpec-Submit-01-setwd.png" class="image"><img alt="" src="/wiki/images/thumb/a/a4/DataSciSpec-Submit-01-setwd.png/180px-DataSciSpec-Submit-01-setwd.png" width="180" height="102" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/a/a4/DataSciSpec-Submit-01-setwd.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Using the <em>setwd()</em> function</div></div></div>
+<p>First you need to select your working directory. You can use the default working directory, as long as it contains your data files and your function files.<br />
+</p>
+If your files are in a different directory, first you need to set that directory as your working directory with the <em>setwd()</em> function, like the example:</p>
+<code><pre>&gt; setwd(&quot;~/datascience/rprogramming&quot;)
+</pre></code>
+<p>Please note this is a *nix path. If you are a Windows user, your file path will be different.</p>
+<h4> <span class="mw-headline" id="Step_2_-_Check_if_your_files_are_in_your_working_directory">Step 2 - Check if your files are in your working directory</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/wiki/images/7/77/DataSciSpec-Submit-02-listfiles.png" class="image"><img alt="" src="/wiki/images/thumb/7/77/DataSciSpec-Submit-02-listfiles.png/180px-DataSciSpec-Submit-02-listfiles.png" width="180" height="102" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/7/77/DataSciSpec-Submit-02-listfiles.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Using the <em>list.files()</em> function</div></div></div>
+Now you need to check if the files and directories you will need are in your working directory. The <em>list.files()</em> function default 'path' argument corresponds to the working directory:</p>
+<code><pre>&gt; list.files()
+</pre></code>
+<p>You should be able to see the functions and the folder containing the data files in the working directory. If you cannot see the files, you must either save your files in your current working directory or change the working directory again.</p>
+<h4> <span class="mw-headline" id="Step_3_-_Source_the_submit_script">Step 3 - Source the submit script</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/wiki/images/f/f8/DataSciSpec-Submit-03-source.png" class="image"><img alt="" src="/wiki/images/thumb/f/f8/DataSciSpec-Submit-03-source.png/180px-DataSciSpec-Submit-03-source.png" width="180" height="102" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/f/f8/DataSciSpec-Submit-03-source.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Using the <em>source()</em> function</div></div></div>
+Once everything you will need is in the right place, you need to source the submitscriptN.R file containing the <em>submit()</em> function.</p>
+<p>If you don't want to download the submitscriptN.R file and store it on your computer's file system, use the command labelled (1). Alternatively, download the submitscriptN.R file and store it on your computer's file system, then use the command labelled (2).</p>
+<code><pre>1. &gt; source(&quot;http://d396qusza40orc.cloudfront.net/rprog%2Fscripts%2Fsubmitscript1.R&quot;)
+2. &gt; source(&quot;submitscript1.R&quot;)
+</pre></code>
+<h4> <span class="mw-headline" id="Step_4_-_Submit_your_assignment">Step 4 - Submit your assignment</span></h4>
+<p><div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/wiki/images/1/16/DataSciSpec-Submit-04-password.png" class="image"><img alt="" src="/wiki/images/thumb/1/16/DataSciSpec-Submit-04-password.png/180px-DataSciSpec-Submit-04-password.png" width="180" height="102" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/1/16/DataSciSpec-Submit-04-password.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Getting your login and password</div></div></div><div class="thumb tright"><div class="thumbinner" style="width:182px;"><a href="/wiki/images/a/a4/DataSciSpec-Submit-05-submit.png" class="image"><img alt="" src="/wiki/images/thumb/a/a4/DataSciSpec-Submit-05-submit.png/180px-DataSciSpec-Submit-05-submit.png" width="180" height="102" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/a/a4/DataSciSpec-Submit-05-submit.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Submitting part 1</div></div></div></p>
+<p>You will need your submission login and password to submit your assignment, which are different from your Coursera login and password. You can find them in the "Programming Assignments" tab of the course. To submit your assignment the <em>submit()</em> function will ask you for your submission login and password. Once you provide them, you will be able to select which part of the assignment you want to submit. </p>
+<code><pre>&gt; submit()
+</pre></code>
+<p>Type the number corresponding to the appropriate test case and press Enter. Once you passed it, the <em>submit()</em> function automatically sources the correct R script for the function(s) you created for the assignment.</p>
+<ul>
+<li><p>If the result matches the example output, you will receive a "Correct!" message. Congratulations! This means you have successfully submitted an assignment part.</p></li>
+<li><p>If you received a "Sorry, your answer was incorrect." message, you must review your code and try again.</p></li>
+</ul>
+<h4> <span class="mw-headline" id="Step_5_-_Confirm_your_course_record_has_been_updated">Step 5 - Confirm your course record has been updated</span></h4>
+<p>To confirm whether the submission was recorded by Coursera, navigate to the "Programming Assignments" tab.</p>
+<h2> <span class="mw-headline" id="How_do_I_point_to_the_correct_session_of_a_course_which_requires_the_submitscriptN.R_script_to_push_completed_assignments_to_Coursera.3F">How do I point to the correct session of a course which requires the submitscriptN.R script to push completed assignments to Coursera?</span></h2>
+<p>For simplicity if running *nix, including whatever add-on to Microsoft Windows allows you to run a Unix command shell, use the following command to change all occurrences of '001' to '002' for example. These instructions should only be used when the available programming assignment submit script has not been updated to reflect the current course session designator.</p>
+<p>This *nix shell command will update all occurrences in the script.</p>
+<pre>$ sed -i -e 's/001/00/g' submitscriptN.R</pre>
+<p>If you use a text editor, there are three places to apply the update.</p>
+<pre>
+CLASS &lt;- c(&quot;rprog-001&quot;)
+submit.url &lt;- c(&quot;http://class.coursera.org/rprog-001/assignment/submit&quot;)
+challenge.url &lt;- c(&quot;http://class.coursera.org/rprog-001/assignment/challenge&quot;)
+</pre>
+<h2> <span class="mw-headline" id="How_do_I_install_Statistics_with_Interactive_R_Lessons_.28SWIRL.29.3F">How do I install Statistics with Interactive R Lessons (SWIRL)?</span></h2>
+<p>The SWIRL project <a rel="nofollow" class="external text" href="http://swirlstats.com/">website</a> and GitHub <a rel="nofollow" class="external text" href="https://github.com/swirldev/swirl">repository</a> are the place for definitive answers about anything SWIRL related.</p>
+<h2> <span class="mw-headline" id="Is_there_a_way_to_quickly_locate_a_topic_by_keyword_within_the_lecture_videos.3F">Is there a way to quickly locate a topic by keyword within the lecture videos?</span></h2>
+<p>Yes. William Howell, a Data Science Specialization participant, has created an R script <a rel="nofollow" class="external text" href="https://bitbucket.org/AnonFunction/findvideos">FindVideos</a> to "search through folders of SRT subtitle files for specified text and open the matching video file in the VLC player at the time position found for the searched term."</p>
+<h2> <span class="mw-headline" id="Peer_assessments">Peer assessments</span></h2>
+<h3> <span class="mw-headline" id="I_work_on_it:_I_don.27t_know_what_the_instructions_mean.2C_they_are_completely_unclear_to_me">I work on it: I don't know what the instructions mean, they are completely unclear to me</span></h3>
+<p>The instructions of the assessments are sometimes difficult to interpret as discussions in the forums show. If you need clarification
+<ul><li> got to the forum and first look if somebody else has already addressed your issue. Can you find an answer to your issue there?
+</li><li> if not: you may start a new thread. Please start it in the right category and use a good, self explanatory name for it. 
+<ul><li> Good practise for a <strong>threads name</strong> is to prefix it with #Week/Quiz|Assessment|Progr.Assignment/#Question, like "Week 2, Quiz, Question 4". Remember that your threads will be listed without category in the "recent threads" list, so the detail which week is concerned is very useful. think about others that have the same issue and start with 1. If it's easy for them to find your thread, then it might spare them to open one on their own. 
+</li><li> <strong>Content</strong>: Put as much detail into the text as is needed to understand your problem, your assumptions, interpretations,etc. Ask a clear precise question. The better it is, the better the answers will be. Alwasy keep in mind: the people you ask have to understand your problem. Also add some "good" Tags if you want. Please consider reusing existing Tag values, before you add new values
+</li></ul>
+</li><li> as was pointed ot by TAs: sometimes the instructions are 'open' on purpose, like they would be in real world projects. If they leave room for interpretation - use it to some extent BUT then document your interpretation, assumptions, etc. in order to make them transparent to anybody else.</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="I_grade_my_peers_work_-_how_should_I_go.3F">I grade my peers work - how should I go?</span></h3>
+<p>Some of the peer assesment instructions appeare to be not allways completely consistent and open room for interpretations. So how should you grade? which interpretation is correct? Nobody can say - only thing you can do is make the course a win:win situation for you and the peer you grade...</p>
+<p>First point - Be a philosopher, do it like Kant: <em>Act only according to that maxim whereby you can, at the same time, will that it should become a universal law</em> (<a rel="nofollow" class="external free" href="http://en.wikipedia.org/wiki/Categorical_imperative">http://en.wikipedia.org/wiki/Categorical_imperative</a>) or in other words "Do not impose on others what you do not wish for yourself."</p>
+<p>May be start by asking yourself some importand questions that may guide you thru your grading activity: 
+<ul><li> What is the goal of the specialisation
+</li><li> What is the goal of the course
+</li><li> What is the goal of the assignment: The assignement is here to show that you master a focused set of APIs or skills that are part of the lectures. You should focus on the aspect "mastering skills" not on the bits and bytes level
+</li><li> What is the point of that subtask of the assignment</p>
+</li></ul>
+
+<p>Giving an example: In Exploratory Data Analysis the instructions said "Reproduce the reference plot <strong>exactly</strong>". the reference plot was a given PNG file which showed some barplot with lables and stuff. There has been heated discussions about what "exact" means. Some peers said "the red foreground color must be exactly reproduced", but I actually doubt that anybody figured out that the red color was hex #FB0007 and not #FF0000. Same was with the background color which was set to transparent with the reference plots, but appeares white in the assignments instructions. the reference plots were all 32bit bit depth and included a "CCPIC Profile" whatever that is. So if you start nit-picking then I'm pretty sure you can find some subtle but irrelevant deviation to the reference and can deduce points...Ask yourself the Kant question.
+Unimportand as well should be whether a code book file is named "Codebook.md" or is named "My Code Book.pdf" (taken from "Getting and Cleaning data") as long as there is any code book file which covers the relvant information. </p>
+<p>Anyhow, the point is that reproducing irrelevant facets is not constructive to any of the goals listed above.</p>
+<p>Okay after reflecting on the listed goals which could help to focus, it helped me to build me a checklist for all importand aspects and aspects I don't care about at all, i.e. shade of red #FB0007 does not transport more/less information than #FF0000. In fact I also ignored red completely because in my eyes the question was: "is the student able to master setting the foreground color to a color different than Rs default".</p>
+<p>And to come to and end - Relax when grading, get yourself a drink and enjoy grading and make being graded a joyfull experience to your peers.</p>
+<h3> <span class="mw-headline" id="Can_I_leave_a_grading_comment_for_my_peer.3F">Can I leave a grading comment for my peer?</span></h3>
+<p>Yes, you can - even when there's no comment box in the grading interface you may leave a commit comment if the assignemt is done with github.</p>
+<p>The idea is that when you are evaluating one's assignment and note that it contains some incorrectness, discrepancies from the guidelines we were given etc. - then you notify the peer about this, especially when you are going to reduce his/her scores for this task. </p>
+<p>In every case, you can leave your comment using <code>Comment on this commit</code> option in the bottom of <code>latest commit</code> page in a peer's repository. Maybe one is going to put up with more appropriate place to do this, although this one seems quite ok for me =)
+<ul><li> While reviewing the peer's github repo, 
+</li><li> Click on Commits, select the latest commit and open it.
+</li><li> Scroll down to the bottom of the page and you will see a post comment box where you can enter text and post it.
+</li><li> You must need to be logged in under your own github acct to post.</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="How_can_I_verify_the_current_locale_for_a_.2Anix-based_operating_system.3F">How can I verify the current locale for a *nix-based operating system?</span></h2>
+<p>To verify the current locale setting type the following command within a terminal session
+<pre>
+$ locale
+</pre></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 84/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=DataSciSpec:FAQ&amp;oldid=29032">https://share.coursera.org/wiki/index.php?title=DataSciSpec:FAQ&amp;oldid=29032</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:DataSciSpec" title="Category:DataSciSpec">DataSciSpec</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

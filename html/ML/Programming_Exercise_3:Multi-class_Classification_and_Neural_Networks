@@ -1,0 +1,69 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 3:Multi-class Classification and Neural Networks</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Debugging_Tip"><span class="tocnumber">1</span> <span class="toctext">Debugging Tip</span></a></li>
+<li class="toclevel-1"><a href="#1.4.1_One-vs-all_Prediction"><span class="tocnumber">2</span> <span class="toctext">1.4.1 One-vs-all Prediction</span></a></li>
+<li class="toclevel-1"><a href="#2.2_Feedforward_Propagation_and_Prediction_.28Neural_network.29"><span class="tocnumber">3</span> <span class="toctext">2.2 Feedforward Propagation and Prediction (Neural network)</span></a></li>
+<li class="toclevel-1"><a href="#Prediction_of_an_image_outside_the_dataset_.28Neural_Network.29"><span class="tocnumber">4</span> <span class="toctext">Prediction of an image outside the dataset (Neural Network)</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex3/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+<h3> <span class="mw-headline" id="1.4.1_One-vs-all_Prediction">1.4.1 One-vs-all Prediction</span></h3>
+<p>The pdf says you should get 94.9% training accuracy. This might not be correct depending on how you implement your code.</p>
+<p><em>"The result you will get may differ a little bit based on how you implement your code. Sometimes, although mathematically two expressions are the same, Matlab may compute them differently. For example, expressions X'&#42;(sigmoid(X&#42;theta)-y) and sum((sigmoid(X&#42;theta)-y)&#42;ones(1,size(X,2)).&#42;X) are the same mathematically; however, Matlab does not compute them the same numerically. I tried to use the same input for these two expressions and Matlab gave me a difference about 2&#42;10^(-10) in 1 norm. Therefore, when you use different expressions to compute the gradient and then use fmincg to learn the parameters, your result may be a little different. Actually, when I used the first expression, I got the accruacy 95.14% and when I used the second one, I got 94.94%. They should be both correct in this sense."</em><br />
+<strong>-Posted by guoxian (Student)</strong></p>
+<p>Use the submit feature to find out if you are correct even if you get a different answer for training accuracy.</p>
+<h3> <span class="mw-headline" id="2.2_Feedforward_Propagation_and_Prediction_.28Neural_network.29">2.2 Feedforward Propagation and Prediction (Neural network)</span></h3>
+<p>It wasn't clear to me weather when computing the hidden layer you only need to compute $$g(z^1)$$, or should you transform it to binary values (set the value to 1 for $$g&gt;0.5$$ and to 0 for $$g&lt;0.5$$), like we learned in logistic regression. Both solutions give almost the same results in the final predictions. From the "submit" feature it is clear that you shouldn't transform the values to binary values. 
+<strong>-Posted by inna (Student)</strong></p>
+<h3> <span class="mw-headline" id="Prediction_of_an_image_outside_the_dataset_.28Neural_Network.29">Prediction of an image outside the dataset (Neural Network)</span></h3>
+<p>To test the prediction with images outside the dataset, below is a code that I wrote to import the image and use the prediction.</p>
+<code><pre>function p = predictImg(Theta1, Theta2, Img)
+X = imread(Img);&#160;% reads the image .bmp (24 bits) (20x20)
+
+X = double(X);&#160;% converts it to double
+temp = X;&#160;% creates a copy for later use
+
+X = (X.-128)./255;&#160;%normalize the features
+X = X .* (temp &gt; 0);&#160;%return the original 0 values to the X
+X = reshape(X, [], numel(X));&#160;%converts the 20x20 matrix into a 1x400 vector
+
+displayData(X);&#160;%display the image imported
+
+p = predict(Theta1, Theta2, X);&#160;% calls the neural network prediction method
+</pre></code>
+<p>Usage:</p>
+<code><pre>p = predictImg(Theta1, Theta2, '1.bmp');
+</pre></code>
+<p>Obs: Because this function will use the Theta1, and Theta2 created my <strong>ex3_nn</strong>, call it before the first use of this function.</p>
+<p><strong>-Posted by Vítor Albiero (Student)</strong></p>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 39/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_3:Multi-class_Classification_and_Neural_Networks&amp;oldid=34305">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_3:Multi-class_Classification_and_Neural_Networks&amp;oldid=34305</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Programming_Exercises" title="Category:ML:Programming Exercises">ML:Programming Exercises</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

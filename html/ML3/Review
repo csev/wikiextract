@@ -1,0 +1,44 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML3:Review</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ML3:Main" title="ML3:Main">« Back to the main page</a></p>
+<h2> <span class="mw-headline" id="Notation">Notation</span></h2>
+<p>Week 1 lesson 3 video "Linear classifier model" reviews some of the notation used in the course: <a rel="nofollow" class="external free" href="https://www.coursera.org/learn/ml-classification/lecture/XBc9n/linear-classifier-model">https://www.coursera.org/learn/ml-classification/lecture/XBc9n/linear-classifier-model</a></p>
+<p>Mostly, the notation is the same as what we saw in the Regression course.</p>
+<ul>
+<li>$$N$$ - the number of examples in the training data set</li>
+<li>$$d$$ - the number of features (other than the constant feature)</li>
+<li>$$\mathbf{x}&#95;i$$ - the vector of features for the $$i^{\mathrm{th}}$$ training example.</li>
+<li>$$\mathbf{x}&#95;{ij}$$ - the value of the $$j^{\mathrm{th}}$$ feature for the $$i^{\mathrm{th}}$$ training example.</li>
+<li>$$y&#95;i$$ - the true label for the $$i^{\mathrm{th}}$$ training example. For example, when classifying examples as positive or negative, the true label would be +1 for a positive example and -1 for a negative example.</li>
+<li>$$\mathbf{w}$$ - a vector of weights (also called coefficients) that comprise a machine learning model.</li>
+<li>$$\eta$$ and $$\lambda$$ - tunable parameters. $$\eta$$ typically refers to the chosen step size for gradient descent/ascent. $$\lambda$$ typically refers to a parameter for some sort of regularization (e.g. L2 regularization).</li>
+<li>$$\hat{y}&#95;i$$ - the model's prediction (predicted label) for the $$i^{\mathrm{th}}$$ example, typically of the test or validation data sets. When $$y&#95;i = \hat{y}&#95;i$$, then the model predicted the label correctly; otherwise, the model made a mistake.</li>
+</ul>
+<h2> <span class="mw-headline" id="Mathematics">Mathematics</span></h2>
+<ul>
+<li>"Sigma" notation (so-named because it uses the Greek capital Sigma letter) $$\sum&#95;{i = 1}^N f(i)$$ is shorthand for the sum $$f(1) + f(2) + \ldots + f(N)$$.</li>
+<li>Product notation is analogous to Sigma notation, but instead of summing the terms, we take a product; $$\prod&#95;{i = 1}^N f(i)$$ is shorthand for the product $$f(1) \cdot f(2) \cdot \ldots \cdot f(N)$$.</li>
+<li>The indicator function, $$\mathbf{1}[\mathrm{some\;condition}]$$ is 1 if $$\mathrm{some\;condition}$$ is true; otherwise it is 0.</li>
+<li>Probability notation, $$P(Y \,|\, w)$$, which is read "probability of Y given w", is the probability of event Y given that w occurred. For example, if you consider a fair six-sided die, the probability that you roll an odd number is 1/3, but the probability that you roll an odd number given that whatever you roll is greater than 2 is 1/2. This is because knowing that the roll is greater than 2 means that you must roll a 3, 4, 5, or 6, and of those four outcomes, two are odd numbers.</li>
+<li>A partial derivative $$\frac{\partial f(x, y)}{\partial x}$$ means the derivative of $$f$$ with respect to $$x$$ treating $$y$$ as a constant. For example, if $$f(x, y) = x\cdot y$$, $$\frac{\partial f(x, y)}{\partial x} = y$$.</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML3:Review&amp;oldid=34427">https://share.coursera.org/wiki/index.php?title=ML3:Review&amp;oldid=34427</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

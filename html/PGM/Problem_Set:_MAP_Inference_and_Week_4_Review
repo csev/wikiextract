@@ -1,0 +1,28 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">PGM:Problem Set: MAP Inference and Week 4 Review</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>The when running the MAP inference algorithm, two clusters $$C&#95;i$$ and $$C&#95;j$$ joined by sepset $$S&#95;{i,j}$$ are said to be "max-calibrated" if</p>
+<p>$$\max&#95;{C&#95;i - S&#95;{i,j}} \beta&#95;i = \max&#95;{C&#95;j - S&#95;{i,j}} \beta&#95;j $$.  </p>
+<p>Above </p>
+<p>$$ \beta&#95;j = \theta&#95;{C&#95;j} + \sum&#95;k \lambda&#95;{k\rightarrow j}$$ </p>
+<p>where $$\theta&#95;{C&#95;j}$$ is the logarithm of the product of the factors assigned to cluster $$j$$ and $$\lambda&#95;{k\rightarrow j}$$ is the message passed from cluster $$k$$ to cluster $$j$$.</p>
+<p>See the second to last slide titled "Max-Sum BP at Convergence" of the "MAP Exact Inference" lecture or Chapter 13.3.1 in Koller and Friedman.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 1/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=PGM:Problem_Set:_MAP_Inference_and_Week_4_Review&amp;oldid=362">https://share.coursera.org/wiki/index.php?title=PGM:Problem_Set:_MAP_Inference_and_Week_4_Review&amp;oldid=362</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

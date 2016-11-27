@@ -1,0 +1,30 @@
+# Lecture 2-11 Problem Session R and C  
+**Bioelectricity week 2.11 (slide 53)**  
+* Hello again. This is Roger Coke Barr for the Bioelectricity course. We're in Week two, Segment eleven. And this segment is simply a problem session, involving membrane resistance and membrane capacitance. I thought I would start off the problem and then, maybe you could finish it up.  
+  
+---  
+**Problem Session, R and C, a) (slide 54)**  
+* Suppose, the question that I ask is, we have a cylindrical fiber, 10 microns in diameter, that has segments that are 100 microns long. You know micron as in micrometer, 10^-6 meters. It's often shorthand written as a mu followed by an m. And when people write it on the screen, sometimes they write it as um ,and that's what's happened here in this slide.  
+* So, we have a fiber that has, that a segment of the fiber has those dimensions. We know, for this particular fiber, the Cm is 1 microfarad per centimeter square, or MS 1500 ohms per centimeter square.  
+* So, for one segment, what is the resistance and the capacitance? So, the thing you have to know here, just because you know how to do problems like this, is you have to know that you don't attack Cm or Rm or R or C directly.  
+* You, first, find the surface area because the surface area comes into both calculations. So, we would say here that the surface area for this simple, cylindrical structure, we have this arrangement, this is 100 micrometers. This diameter is given as 10 micrometers, so this will be called D and I'll call this length L, just to be able to represent them symbolically. So, I'll have the surface area will be...the circumference. So, that will be pi times the diameter. And then, to get the area, we'll multiply it times the length.  
+* So, surface area's pi times the diameter, times the length, and if one substitutes in those numbers, then one gets a numerical answer. And you have to be careful because our other values are in per centimeter square to convert A as to centimeter squared.  
+* Probably, the easiest way to do the conversion is by putting in value, a value of d and l in centimeter squared, rather than putting them in those micrometers. So, if you figure out the relation between those, I think it's 10^-4. If you put in the relation between those, then you should get the surface area in centimeter square. I'll leave it to you to complete that calculation if you would.  
+  
+---  
+**Problem Session, R and C, b) and c) (slide 55)**  
+* And now, we need to find the actual resistance and the capacitance for this segment. As it was explained in earlier, in earlier segments, the calculation itself is quite easy, resistance will be the membrane resistance. 1500 divided by whatever you found for As, capacitance will be 1 and result will be in ohms. Capacitance will be 1 microfarad per centimeter squared times As centimeter squared. So, that will be, whatever you find, and that will be in microfarads.  
+* So, as calculations like this are normally done, you could put these numbers together and you will have the results. I'll ask you to complete these calculations so that you have the actual number values.  
+* One needs number values like this in doing calculations involving membranes which always require that you have the actual resistance and the actual capacitance for the dimensions that are present in a particular problem.  
+  
+---  
+**Problem Session, R and C, notes (slide 56)**  
+* I'd like to just mention a few notes even though these are simple to come up in this problem.  
+* So, in our notation, what has happened here is that in some places, such as right here, is we have cm2, but what's meant by that is centimeter square. In other words, cm2 means centimeters squared. Similar thing happens with Cm, which really means C subscript m to capacitance of a segment of membrane.  
+* In the olden days, meaning before computers, people generally got the right thought, and set these as subscripts and superscripts. Nowadays, with the advent of computers and computer programs, they often write them in text on the line, so that means that you have to do a mental translation back and forth between what's written on the line, superscripts, and subscripts, so as to have everything in this proper notation, that's a second note.  
+* It's helpful to bring to mind the fact that the units of membrane resistivity are ohm centimeters squared. They're not the same as those for the bulk resistivity. That is to say the resistivity of the material inside the cell or the material outside the cell. We used bulk resistivity in Week One and there, and the units we used there were ohm centimeters.  
+* So, the units are different and then the process one goes through to do the conversion is different. But then again, the structure is different.  
+* Bulk resistivity exists in 3 dimensions, whereas a membrane is from the viewpoint of resistance, essentially a flat plane structure, a 2-dimensional structure.  
+* And then finally, it's just helpful once again to bring to mind that as one moves to get a resistance or a capacitance, one divides Rm by the area to get R and multiplies Cm by the area to get C.  
+* Oh, I wish I had a dollar for every time I had made this mistake, either on a calculation on paper or on the board or in a computer program. You just don't think about it. So, I'll talk about it here just to give it a little extra impetus. You'll make the mistake of doing it wrong and dividing both or multiplying both, you just have to be aware that it's they are different. And when you come back through to try to find the error, this is one of the places that the error may exist.  
+* So, with this picture of the Duke University Medical Center, we'll conclude this segment. We'll comeback in a short while and discuss in the next segment, some of the conclusions from the second week of work.

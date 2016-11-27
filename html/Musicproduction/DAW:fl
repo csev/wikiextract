@@ -1,0 +1,222 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Musicproduction:DAW:fl</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/Musicproduction:Main" title="Musicproduction:Main">Music Production main page</a>&#160;: <a href="/wiki/index.php/Musicproduction:daw" title="Musicproduction:daw">DAW specifics</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Project_Specifics"><span class="tocnumber">1</span> <span class="toctext">Project Specifics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Project_Name"><span class="tocnumber">1.1</span> <span class="toctext">Project Name</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Renaming_Projects"><span class="tocnumber">1.1.1</span> <span class="toctext">Renaming Projects</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#File_type"><span class="tocnumber">1.2</span> <span class="toctext">File type</span></a></li>
+<li class="toclevel-2"><a href="#Bit_depth"><span class="tocnumber">1.3</span> <span class="toctext">Bit depth</span></a></li>
+<li class="toclevel-2"><a href="#Sampling_rate"><span class="tocnumber">1.4</span> <span class="toctext">Sampling rate</span></a></li>
+<li class="toclevel-2"><a href="#Hardware"><span class="tocnumber">1.5</span> <span class="toctext">Hardware</span></a></li>
+<li class="toclevel-2"><a href="#Buffer_size"><span class="tocnumber">1.6</span> <span class="toctext">Buffer size</span></a></li>
+<li class="toclevel-2"><a href="#Project_Folders_Specifics"><span class="tocnumber">1.7</span> <span class="toctext">Project Folders Specifics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Recording"><span class="tocnumber">2</span> <span class="toctext">Recording</span></a></li>
+<li class="toclevel-1"><a href="#Editing_Audio"><span class="tocnumber">3</span> <span class="toctext">Editing Audio</span></a></li>
+<li class="toclevel-1"><a href="#Efficient_Editing"><span class="tocnumber">4</span> <span class="toctext">Efficient Editing</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Shortcut_keys"><span class="tocnumber">4.1</span> <span class="toctext">Shortcut keys</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Operations_Found_in_the_Menu"><span class="tocnumber">4.1.1</span> <span class="toctext">Operations Found in the Menu</span></a></li>
+<li class="toclevel-3"><a href="#Piano_Roll_Operations"><span class="tocnumber">4.1.2</span> <span class="toctext">Piano Roll Operations</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Editing_MIDI"><span class="tocnumber">5</span> <span class="toctext">Editing MIDI</span></a></li>
+<li class="toclevel-1"><a href="#Mixing"><span class="tocnumber">6</span> <span class="toctext">Mixing</span></a></li>
+<li class="toclevel-1"><a href="#FL_Studio_10_Editions"><span class="tocnumber">7</span> <span class="toctext">FL Studio 10 Editions</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Express_Edition"><span class="tocnumber">7.1</span> <span class="toctext">Express Edition</span></a></li>
+<li class="toclevel-2"><a href="#Fruity_Edition"><span class="tocnumber">7.2</span> <span class="toctext">Fruity Edition</span></a></li>
+<li class="toclevel-2"><a href="#Producer_Edition"><span class="tocnumber">7.3</span> <span class="toctext">Producer Edition</span></a></li>
+<li class="toclevel-2"><a href="#Signature_Bundle"><span class="tocnumber">7.4</span> <span class="toctext">Signature Bundle</span></a></li>
+<li class="toclevel-2"><a href="#Demo_Version"><span class="tocnumber">7.5</span> <span class="toctext">Demo Version</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Useful_Resources"><span class="tocnumber">8</span> <span class="toctext">Useful Resources</span></a></li>
+<li class="toclevel-1"><a href="#References"><span class="tocnumber">9</span> <span class="toctext">References</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Project_Specifics">Project Specifics</span></h2>
+<p>details of file management</p>
+<h3> <span class="mw-headline" id="Project_Name">Project Name</span></h3>
+<p>You can name projects when you save, save as, or save a new version.  </p>
+<h4> <span class="mw-headline" id="Renaming_Projects">Renaming Projects</span></h4>
+<p>You can either rename your project inside or outside of FL Studio. If you want to rename your project inside of FL Studio, you can go to the Projects folder in the side panel, find your project, right click on it, and select "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac). From there, click on "Properties" (PC) or "More Info" (Mac), and rename the file. Once you confirm the name change, you may need to right click on the file and click either "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac) to see the name change. You can perform this operation on any project file, whether it is open or not.<br />
+Alternatively, to rename a project outside of FL Studio, use "Explorer" (PC) or "Finder" (Mac) to find and rename the project file. In this case, you may need to close the project (if it is open) before you can rename it.</p>
+<h3> <span class="mw-headline" id="File_type">File type</span></h3>
+<p>You can save a project as an *.flp (FruityLoops loop file), *.zip (Zipped Loop file), *.wav (Microsoft wave files), *.mp3 (MPEG 3 audio file), *.ogg (Ogg Vorbis audio file), or *.mid (MIDI file). The former two can be reopened and edited normally; the latter four will combine all of the audio information, keeping you from as easily making changes to the file.<br />
+Note that using the "Export" option in the File menu to select any of the above options (except *.flp, which is not available) will work the exact same way as using the "Save As" Menu.</p>
+<h3> <span class="mw-headline" id="Bit_depth">Bit depth</span></h3>
+<p>When exporting files, you only effect the bit depth with *.wavs. You can choose between 16Bit int, 24Bit int, or 32Bit float.</p>
+<h3> <span class="mw-headline" id="Sampling_rate">Sampling rate</span></h3>
+<p>You can adjust the Sample Rate for audio output when working on files under Options, Audio Settings.</p>
+<h3> <span class="mw-headline" id="Hardware">Hardware</span></h3>
+<p>FL Studio runs solely on PC, but can be used on Linux as well as Mac with Bootcamp, or a similar program.</p>
+<h3> <span class="mw-headline" id="Buffer_size">Buffer size</span></h3>
+<p>You can adjust opens with the buffer under Options, Audio Settings. You can adjust the buffer length and offset, and can in addition choose whether or not to use polling, use hardware buffer, and/or to use 32Bit buffer.</p>
+<h3> <span class="mw-headline" id="Project_Folders_Specifics">Project Folders Specifics</span></h3>
+<p>Project folders are great for keeping projects of a similar nature together. For example, different versions of a song, songs in the same album, or individual recordings can all be kept as separate files, but stored inside of the same folder.<br />
+You can search inside of Project folders by right clicking and selected "Smart Find". A window will come up in which you can type what you're looking for. You can also expand the folders in the right-click menu, collapse them, and even rename them by going to "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac) and selecting "Properties" (PC) or "More Info" (Mac) from there (you may need to right click and select "Windows Shell Menu" (PC) or "Mac Shell Menu" (?) (Mac) again in order to see the name change).<br />
+You cannot create a new project folder inside of FL Studio's sidebar. You will either have to access Explorer (PC) or Finder (Mac), go to the Projects folder or a subfolder, and create a new folder. To easily find the Projects folder, you can select "Open" in the menu as and create a new folder while inside the window (once the folder is created, you can click "Cancel" in the Open window and the folder will remain).</p>
+<h2> <span class="mw-headline" id="Recording">Recording</span></h2>
+<p>Audio Recording in FL Studio is only available in Producer Edition and higher (see section on FL Studio Editions). For editions below Producer, see the Free DAW section to use a separate DAW for recording.</p>
+<p>Details of audio recording
+<ul><li>Metronome(click track)
+</li><li>Count in
+</li><li>Audio recording tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Editing_Audio">Editing Audio</span></h2>
+<p>details of editing audio
+<ul><li>Trimming
+</li><li>Cutting
+</li><li>Grid
+</li><li>Change grid resolution
+</li><li>modifier key to toggle grid
+</li><li>add fades
+</li><li>modify fades
+</li><li>efficient compiling of multiple takes</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Efficient_Editing">Efficient Editing</span></h2>
+<p>details of efficient editing
+<ul><li>Zoom
+</li><li>Nudge
+</li><li>Cycle
+</li><li>Merge
+</li><li>Name
+</li><li>Color
+</li><li>Markers
+</li><li>Change tempo</p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Shortcut_keys">Shortcut keys</span></h3>
+<h4> <span class="mw-headline" id="Operations_Found_in_the_Menu">Operations Found in the Menu</span></h4>
+<p>Open: Control/Command+O<br />
+Save: Control/Command+S<br />
+Save as: Shift+Control/Command+S<br />
+Save new version: Control/Command+N<br />
+Export WAV: Control/Command+R<br />
+Export MP3: Shift+Control/Command+R<br />
+Expore Midi: Shift+Control+M<br />
+Access last project: Alt+1<br />
+Access recent projects: Alt+(projects since one to be accessed)  </p>
+<p>Undo: Control/Command+Z<br />
+Shift Left: Shift+Left<br />
+Shift Right: Shift+Right<br />
+Randomize: Alt+R<br />
+Send to Piano Poll: Alt+P  </p>
+<p>Clone selected: Alt+C<br />
+Delete selected: Alt+Delete<br />
+Move selected up: Alt+Up<br />
+Move selected down: Alt+Down<br />
+Group selected: Alt+G<br />
+Zip selected: Alt+Z<br />
+Unzip all: Alt+U</p>
+<p>Playlist: F5<br />
+Step sequencer: F6<br />
+Piano Roll: F7<br />
+Browser: F8<br />
+Mixer: F9<br />
+Plugin picker: Control/Command+F8<br />
+Project picker: Control/Command+Alt+F8<br />
+Close all windows: F12<br />
+Close all unfocused windows: Control/Command+F12<br />
+Arrange all windows to default: Shift+Control/Command+H<br />
+Plugin database: Shift+F8  </p>
+<p>Midi settings: F10<br />
+Project info: F11<br />
+Typing Keyboard to Piano: Control/Command+T<br />
+Metronome: Control/Command+M<br />
+Recording Precount: Control/Command+P<br />
+Start on input: Control/Command+I<br />
+Blend recorded notes: Control/Command+B<br />
+Step edit: Control/Command+E<br />
+Enable groups: Shift+Alt+T<br />
+Multilink to Controllers: Shift+J</p>
+<p>Browser smart find: Control/Command+F</p>
+<h4> <span class="mw-headline" id="Piano_Roll_Operations">Piano Roll Operations</span></h4>
+<ul>
+<li>Select Note Mode: Shift-E</li>
+<li>Draw Mode: Shift-B
+<ul><li>Other efficient editing tips</li>
+</li></ul>
+</ul>
+<h2> <span class="mw-headline" id="Editing_MIDI">Editing MIDI</span></h2>
+<p>details of editing midi
+<ul><li>Velocity
+</li><li>Quantization
+</li><li>Control Change data
+</li><li>MIDI monitor(through)
+</li><li>Other MIDI editing tips
+</li><li>Adding software instruments
+</li><li>Other MIDI tips</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Mixing">Mixing</span></h2>
+<p>details of mixing
+<ul><li>Types of tracks
+</li><li>Adding effects
+</li><li>Channel strip layout
+</li><li>Configuring a Submix
+</li><li>Configure reverb in a send and return scheme
+</li><li>Busses
+</li><li>Automation recording
+</li><li>Automation editing</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="FL_Studio_10_Editions">FL Studio 10 Editions</span></h2>
+<p>FL Studio 10 has several editions. Each includes lifetime free upgrades to future versions of FL Studio, and each may be upgraded to a higher level of FL Studio 10 at any time. FL Studio 10 is available as a boxed purchase or as a download purchase from Image-Line's website.</p>
+<h3> <span class="mw-headline" id="Express_Edition">Express Edition</span></h3>
+<p>Express edition is the base upon which all other versions are built.</p>
+<h3> <span class="mw-headline" id="Fruity_Edition">Fruity Edition</span></h3>
+<p>Fruity Edition has all the features of Express Edition but includes, among other things, access to the piano roll.</p>
+<h3> <span class="mw-headline" id="Producer_Edition">Producer Edition</span></h3>
+<p>Producer Edition has all of the features of Fruity Edition but includes, among other things, audio recording, use of audio clips, and use of automation clips.</p>
+<h3> <span class="mw-headline" id="Signature_Bundle">Signature Bundle</span></h3>
+<p>Signature Bundle has all of the features of Producer Edition but includes some popular plugins from Image-Line.</p>
+<h3> <span class="mw-headline" id="Demo_Version">Demo Version</span></h3>
+<p>FL Studio has a demo version available for free download from their website. It can be kept on a computer for as long as its owner likes, but the restrictions include the inability to open saved files (you can, however, save files), and any sounds played from inside FL Studio will occasionally "flicker out" (i.e. static will interrupt and make it difficult to interpret the sound). It includes all of the features of Signature Bundle. If you buy an edition of FL Studio 10 that does not include those features with it, they will be deactivated.</p>
+<h2> <span class="mw-headline" id="Useful_Resources">Useful Resources</span></h2>
+<p>additional resources
+<ul><li>Website (<a rel="nofollow" class="external free" href="http://www.image-line.com/">http://www.image-line.com/</a>)
+</li><li>Manual (<a rel="nofollow" class="external free" href="http://www.image-line.com/support/FLHelp/">http://www.image-line.com/support/FLHelp/</a>)
+</li><li>Official video tutorials (<a rel="nofollow" class="external free" href="https://www.youtube.com/playlist?list=PL5353C9EB8A886421">https://www.youtube.com/playlist?list=PL5353C9EB8A886421</a>)
+</li><li>Demo Version (<a rel="nofollow" class="external free" href="http://www.image-line.com/downloads/flstudiodownload.html">http://www.image-line.com/downloads/flstudiodownload.html</a>)
+</li><li>Forums (<a rel="nofollow" class="external free" href="http://forum.image-line.com/">http://forum.image-line.com/</a>)
+</li><li>Links
+</li><li>Beats4beats (<a rel="nofollow" class="external free" href="http://www.youtube.com/user/Beats4Beets?feature=g-user-u">http://www.youtube.com/user/Beats4Beets?feature=g-user-u</a>)
+</li><li>Warbeats - Fl Studio tutorials (<a rel="nofollow" class="external free" href="http://warbeats.com/Tutorials/FL-Studio">http://warbeats.com/Tutorials/FL-Studio</a>)</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="References">References</span></h2>
+<p>*FL Studio 10 Reference Manual (<a rel="nofollow" class="external free" href="http://www.image-line.com/support/FLHelp/">http://www.image-line.com/support/FLHelp/</a>)</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 43/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:fl&amp;oldid=26029">https://share.coursera.org/wiki/index.php?title=Musicproduction:DAW:fl&amp;oldid=26029</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Music_Production" title="Category:Music Production">Music Production</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

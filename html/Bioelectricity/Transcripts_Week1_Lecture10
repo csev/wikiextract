@@ -1,0 +1,99 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Bioelectricity:Transcripts Week1 Lecture10</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#First_Problem_Session_1-10"><span class="tocnumber">1</span> <span class="toctext">First Problem Session 1-10</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Communication_.28slide_70.29"><span class="tocnumber">1.1</span> <span class="toctext">Communication (slide 70)</span></a></li>
+<li class="toclevel-2"><a href="#Axial_Potential_Field_.28slide_71.29"><span class="tocnumber">1.2</span> <span class="toctext">Axial Potential Field (slide 71)</span></a></li>
+<li class="toclevel-2"><a href="#Intracellular_Potential_Pattern_.28x.29_.28slide_72.29"><span class="tocnumber">1.3</span> <span class="toctext">Intracellular Potential Pattern (x) (slide 72)</span></a></li>
+<li class="toclevel-2"><a href="#Axial_E_and_Current_.28slide_73.29"><span class="tocnumber">1.4</span> <span class="toctext">Axial E and Current (slide 73)</span></a></li>
+<li class="toclevel-2"><a href="#Divergence_.28Sources.29_.28slide_74.29"><span class="tocnumber">1.5</span> <span class="toctext">Divergence (Sources) (slide 74)</span></a></li>
+<li class="toclevel-2"><a href="#How_Much_Current.3F_.28slide_75.29"><span class="tocnumber">1.6</span> <span class="toctext">How Much Current? (slide 75)</span></a></li>
+<li class="toclevel-2"><a href="#How_Much_Current.3F_.28slide_76.29"><span class="tocnumber">1.7</span> <span class="toctext">How Much Current? (slide 76)</span></a></li>
+<li class="toclevel-2"><a href="#Does_a_micro_Ampere_matter.3F_.28slide_77.29"><span class="tocnumber">1.8</span> <span class="toctext">Does a micro Ampere matter? (slide 77)</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="First_Problem_Session_1-10">First Problem Session 1-10</span></h1>
+<ul>
+<li>Hello again, this is Roger Coke Barr for the Bioelectricity course. We are in week one. Segment 10, and this our first problem session, as I call it.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Communication_.28slide_70.29">Communication (slide 70)</span></h2>
+<ul>
+<li>Now I've tried to structure this course, so that there's something that you learn about bioelectricity each week.  </li>
+<li>Let's talk about the issue of communication within this problem session. Now, here we have a picture of three interesting people lying on the rug at their house with an interesting arrangement among them. Notice, in particular, that this person in the middle, is supposed to have a brain, and that brain is supposed to be right up there. Now this person in the middle, whose brain is there, has his finger extended. Let's come back over and look, and here is his thumb And look at where that thumb is, almost in the mouth. And over here we, we could, over here, here's another thumb, just about to get into trouble, with his little sister.  </li>
+<li>How does this communication system work? We believe just from watching children like this, that this brain up here is connected to this thumb down there. What is the nature of that connection? Let's examine that question in the next few slides.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Axial_Potential_Field_.28slide_71.29">Axial Potential Field (slide 71)</span></h2>
+<ul>
+<li>If we draw the situation schematically, we could say well, over here is that middle boys head, then there is a nerve that follows a winding path, over to his thumb. If you look at nerves just with your eyesight, nerves are tiny but when you can see them they are little tiny pieces of white thread expect they're soft like spaghetti, but they are little tiny tiny white structures landing their way around from one place to another.  </li>
+<li>In this case let's take a portion of this nerve and examine it electrically. So we'll imagine that although it's very small, it's shaped approximately as a cylinder. And let's imagine that we look at the voltages as one moves along the axis of that nerve. And let's suppose everything is frozen right at one moment in time.  </li>
+<li>So at this moment, we can imagine because we do experiments in this course with our imagination. Now, we would like to measure the voltage, along this fiber. And to do that, we hook one end of our voltmeter here to the left end of the fiber. And we're going to leave that there, all the time. It's on the inside and it's down here on the left-hand end. The right-hand end of the voltmeter, the positive side of our voltmeter, we're going to move it along to, from different positions along the fiber. So first we'll start down here and then it'll be here. And then over here and here and we'll assume we have a measurement, at least one measurement every millimeter, preferably several all the way along this whole axis of the fiber.  </li>
+<li>For the purpose of making this diagram, I'm calling this the x axis. What does our voltage that we measure look like? Now here remember, as a matter of terminology, we will call these potentials because we have a whole set of voltages. Each voltage was measured between two points, but as we have a whole set of them all measured against a common reference, we'll call them potentials. And I'll call them phi i, because they're measured inside, that's the i, inside this nerve axis.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Intracellular_Potential_Pattern_.28x.29_.28slide_72.29">Intracellular Potential Pattern (x) (slide 72)</span></h2>
+<ul>
+<li>Well, they look like this. It's kind of remarkable, actually. They don't change smoothly from place to place. They have this bump. Goes up in the middle, then down sharply on the right hand side. It's quite different, from what you would see, in an electrical wire in your house. If we know that this is what the potentials look like, what can we make out of that?  </li>
+</ul>
+<h2> <span class="mw-headline" id="Axial_E_and_Current_.28slide_73.29">Axial E and Current (slide 73)</span></h2>
+<ul>
+<li>It carries a lot of information to know it. So here I've drawn two vertical lines, a and b and if I look at, for the moment, at line a. Lets say at line a, potential is falling very sharply along this slope. That means, as you recall, there's a substantial change of potential lift position, so therefore there is an electric field. And the electric field is headed this way and I've drawn it better but here at the bottom a very intense electrical field is pointed to the right.  </li>
+<li>On the other hand, on the slope on the back side, because things are going this way, it's frozen in moment and, at this moment, but they are moving to the right. So, on the back side I have an electric field pointing the other way. Here it is, down in b. It extends over a longer distance, but it's not quite as intense.  </li>
+<li>So, now from the potential plot, we have determined where there's an electric field. And as you know where there's an electric field, if there's a conductivity that's greater than zero, there's going to be a current.  </li>
+<li>So, that says there's currents flowing inside this nerve fiber. Not only that, they're flowing in different directions in different parts of the nerve fiber. We know all that from the potential plot.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Divergence_.28Sources.29_.28slide_74.29">Divergence (Sources) (slide 74)</span></h2>
+<ul>
+<li>Let's go one more step, and say what is the divergence? Well, this current certainly diverges because if we look at the intense current that's present here, it's not present continuing on down here, so therefore it must go out. And it does go out right there and that's the source as far as the outside is concerned. Similarly there is a sink here in the middle and another source and there to the left.  </li>
+<li>So, we have identified from the potential plot that there are actually three sources. One is a negative source, we call as a sink and this corresponds on the wave front of these corners, here, here, and there.  </li>
+<li>So, someone who's done this kind of problem before would recognize immediately, soon as they saw the plot of the potential, that there are three sources, and that the one in the middle is a negative source, or in other words the sink.  </li>
+</ul>
+<h2> <span class="mw-headline" id="How_Much_Current.3F_.28slide_75.29">How Much Current? (slide 75)</span></h2>
+<ul>
+<li>So, this course is called Bioelectricity AQA, or Bioelectricity, A Quantitative Approach. So, in the spirit of having a quantitative approach Let's ask a further question.  </li>
+<li>How much current is there? There's not just a current, how much is it? How big is it? So we need to know a few more things in order to be able to answer that.  </li>
+<li>We need a calibration, and so we'll say it's 100 millivolts. So we need some numerical values here. 100mV, is the scale for the top. 20um, is the diameter of the fiber. And lets say the resistivity is 100 Ohm cm. Now lets ask, how much current is flowing along the fiber, at this point, b? How much is that area?  </li>
+<li>First, we need to know the resistance. Let's find the resistance across this entire segment from here to there. To do that we'll use the standard formula. It'll be the resistivity, 100, times the length.  </li>
+<li>The length will need to be in centimeters because this is 100 Ohm centimeters. So our length is 3.1mm, these are millimeter marks. 3.1mm or 3.1 e-1cm.  </li>
+<li>Now divide by the cross sectional area. And the cross sectional area will be pi 20^-4, this is the radius. Remember 10 E to the -4 centimeters times 10 E to the -4 centimeters and if I don't have any mistakes this answer is. Approximately, I should write approximately, 10E^6 Ohms. 10 omega ohms.  </li>
+<li>That's a pretty large resistance, certainly compared to most resistors that you would see in circuits designed by people, especially if they were for household items.  </li>
+<li>In any event, it's the resistance along this path in here and there. The downslope of this triangular waveform.  </li>
+<li>Returning to our original question, how much current is this? So to get the current, we'll take the voltage, we'll divide by the resistance. Er, voltage, 100E^-3. Notice I put a negative sign here because the electric field is negative. It's pointing backwards, to the negative x-axis. 100E ^-3 / 10E ^ 6.  </li>
+<li>If I do the computation, and I've done it correctly, it comes out to be -10E ^ -9 Or -10 nanoamperes. Notice that nanoamperes corresponds to the -9. The minus sign goes with the fact that it's negative x, going backwards down the x-axis.  </li>
+<li>Once again, please check my work. I may have it wrong and if so, the situation will be normal. I make lots of mistakes. Please check my work. Post what you think is the right answer on the forum. One thing I'm sure is wrong, is that I have rounded off, somewhat in doing the resistance calculation. Because I said that pi, right there was only 3.1 so put in the correct value. Check it please, and post the exact correct answer as you determine it.  </li>
+</ul>
+<h2> <span class="mw-headline" id="How_Much_Current.3F_.28slide_76.29">How Much Current? (slide 76)</span></h2>
+<ul>
+<li>Now just to pursue that a little bit, let's suppose the exact answer was - 9.87nA, but I entered in the computer quiz an answer of 10nA. Would that be scored as correct or would it be incorrect? Well it'll not be scored as correct. The answer is no, answer is not correct. </li>
+<li>Because to be correct, the answer must be within 1% of the correct answer. That is to say it has to be in the range between 1.01 times the correct answer, and 0.99 the correct answer.  </li>
+<li>So the correct range would be considered to be this range, 10, all close would be outside of it. So, the correct answer, this answer would be judged as incorrect, and the computation would have to done a little more careful.  </li>
+</ul>
+<h2> <span class="mw-headline" id="Does_a_micro_Ampere_matter.3F_.28slide_77.29">Does a micro Ampere matter? (slide 77)</span></h2>
+<ul>
+<li>Now let me return to our original subject. You could say, does a microampere really matter? After all the amount of electricity, the current required to light a lamp, a normal household lamp, is about one ampere. A microampere, is only one millionth that much. Ten nanoamperes is only 1 100th of that millionth that is indeed a tiny amount, does it really matter?  </li>
+<li>Okay look at the picture, will it really matter when this thumb goes into that mouth? Will it really matter? When this thumb goes into that mouth. Will there be a response? Does it make a difference? Well there you have it. When you figure out the answer to that question you'll know the answer to the question on the slide.  </li>
+</ul>
+<hr />
+<p>So here's a picture of Duke University, the Union Building, and as we're talking about communication pathways I picked this picture because it shows some of those pathways in the form of sidewalks. Thank you for watching, we'll see you in the next segment.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 3/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture10&amp;oldid=7422">https://share.coursera.org/wiki/index.php?title=Bioelectricity:Transcripts_Week1_Lecture10&amp;oldid=7422</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

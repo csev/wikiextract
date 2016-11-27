@@ -1,0 +1,121 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:ADB Android Debugging Bridge</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Introduction"><span class="tocnumber">1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-1"><a href="#Requirements"><span class="tocnumber">2</span> <span class="toctext">Requirements</span></a></li>
+<li class="toclevel-1"><a href="#Enable_the_USB_mode_in_Android_device."><span class="tocnumber">3</span> <span class="toctext">Enable the USB mode in Android device.</span></a></li>
+<li class="toclevel-1"><a href="#Starting.2FStopping_ADB_Shell_.28many_variations.2C_we.27ll_start_with_connecting_a_physical_device.29"><span class="tocnumber">4</span> <span class="toctext">Starting/Stopping ADB Shell (many variations, we'll start with connecting a physical device)</span></a></li>
+<li class="toclevel-1"><a href="#Optional:_Start.2FStop_ADB_Shell_with_an_Emulator"><span class="tocnumber">5</span> <span class="toctext">Optional: Start/Stop ADB Shell with an Emulator</span></a></li>
+<li class="toclevel-1"><a href="#Basic_Android_Navigation_Commands"><span class="tocnumber">6</span> <span class="toctext">Basic Android Navigation Commands</span></a></li>
+<li class="toclevel-1"><a href="#Other_Commands"><span class="tocnumber">7</span> <span class="toctext">Other Commands</span></a></li>
+<li class="toclevel-1"><a href="#Start.2FStop_Programs_on_Device.2FEmulator_via_ADB"><span class="tocnumber">8</span> <span class="toctext">Start/Stop Programs on Device/Emulator via ADB</span></a></li>
+<li class="toclevel-1"><a href="#Wrap_Up"><span class="tocnumber">9</span> <span class="toctext">Wrap Up</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">10</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Introduction">Introduction</span></h2>
+<p>This is a student created page explaining how to use the ADB (Android Debugging Bridge) to interface your computer with an Android device via a USB cable or an Emulator.</p>
+<h2> <span class="mw-headline" id="Requirements">Requirements</span></h2>
+<p>These steps require that the user has successfully installed the Android SDK/Eclipse/Java SDK. In addition the user will have opened a project and loaded it to an emulator or device.</p>
+<h2> <span class="mw-headline" id="Enable_the_USB_mode_in_Android_device.">Enable the USB mode in Android device.</span></h2>
+<ol>
+<li>Connect the device to computer</li>
+<li>Tap the 'Connected as a media device' to enter USB mode</li>
+<li>Navigate to Settings-&gt;Developer Options</li>
+<li>Check 'Stay awake' and 'USB debugging' options</li>
+</ol>
+<p>In addition, the user should be familiar with starting a command window (cmd) and navigating through the folder structure.</p>
+<h2> <span class="mw-headline" id="Starting.2FStopping_ADB_Shell_.28many_variations.2C_we.27ll_start_with_connecting_a_physical_device.29">Starting/Stopping ADB Shell (many variations, we'll start with connecting a physical device)</span></h2>
+<ol>
+<li>Close Eclipse and all emulators.</li>
+<li>Disconnect your Android device from your computer.</li>
+<li>Start the 'cmd' window.</li>
+<li>Navigate to the folder containing your Android SDK.  I'll refer to this alias as the path:  [android sdk]  Located inside this folder are two subfolders on my install( eclipse and sdk).</li>
+<li>Navigate to [android sdk]/sdk/platform-tools</li>
+<li>Type 'adb' [Enter].
+You should see lots of stuff scrolling very quickly. These are adb   parameters.</li>
+<li>Type 'adb devices' [Enter]
+Message "List of devices attached" appears. You should see a couple of blank lines if you have no connected device and are not running an emulator.</li>
+<li>With your device powered up, connect the USB cable between it and the computer. (NOTE: I have not logged into my device).</li>
+<li>Type 'adb devices' [Enter]
+I now see this in the list: '028841454180e097 device'. This number is the name/id of my device.</li>
+<li>Type adb -s &lt;the name without brackets&gt; shell [Enter]
+I typed: adb -s 028841454180e097 shell [Enter]
+This starts the ADB shell. In my 'cmd' window I now see:
+"shell@android:/ $"</li>
+<li>Congrats! You have entered the ADB shell.</li>
+<li>Type 'exit' [Enter].
+This closes the ADB shell and returns  to the 'cmd' prompt.</li>
+</ol>
+<h2> <span class="mw-headline" id="Optional:_Start.2FStop_ADB_Shell_with_an_Emulator">Optional: Start/Stop ADB Shell with an Emulator</span></h2>
+<ol>
+<li>Navigate in the 'cmd' window to the following folder.
+[android sdk]/sdk/tools</li>
+<li>Type 'android list avd' [Enter]
+This will list 'Android Virtual Devices' (emulators). I note a name 'Nexus7'.</li>
+<li><p>Type 'emulator -avd &lt;emulator name without brackets&gt;' [Enter]
+I typed: emulator -avd Nexus7 [Enter]</p>
+<p>After a couple of moments the Emulator window pops up. This might take longer if you have not followed the recommendations within these forums to speed that up.</p></li>
+<li><p>Navigate to [android sdk]/sdk/platform-tools</p></li>
+<li>Type 'adb devices' [Enter]
+At this point I see two devices. The first one is the actual Android device referenced above. The second one is the emulator.</li>
+<li>Type 'adb -s &lt;emulator name without brackets&gt; shell [Enter]
+I typed: adb -s emulator-5554 shell [Enter]
+A number sign appears (#)</li>
+<li>Type 'exit' [Enter]</li>
+</ol>
+<h2> <span class="mw-headline" id="Basic_Android_Navigation_Commands">Basic Android Navigation Commands</span></h2>
+<p>If you're a Linux user you'll be very comfortable with these commands.
+Note: a couple of commands used later produce errors with the emulator. These definitely work with the device.</p>
+<ol>
+<li>Connect to a device or an emulator using ADB shell.</li>
+<li>Type 'ls' [Enter]   //Lists folders and files.</li>
+<li>Type 'ls *.rc' [Enter]  //Lists all files with an 'rc' extension</li>
+</ol>
+<p>NOTE: Use Up/Down arrows to scroll previously entered commands.</p>
+<ol>
+<li>Type 'cat &lt;filename without brackets.' [Enter] //Shows content of a file.
+I typed: cat init.rc [Enter]</li>
+<li>Type 'ls' [Enter]</li>
+<li>Type 'cd etc' [Enter]  //changes directory to /etc</li>
+<li>Type 'ls' [Enter]</li>
+<li>Type 'cd /' [Enter] //changes back to main directory</li>
+</ol>
+<p>So, 'cat', 'ls', and 'cd' are several useful commands for exploring your device or emulator.</p>
+<h2> <span class="mw-headline" id="Other_Commands">Other Commands</span></h2>
+<p>Try typing these following by the [Enter] key.</p>
+<p>date                //displays date and time
+printenv            //displays environmental variables, could be useful in future
+dumpsys meminfo     //shows apps by memory usage</p>
+<h2> <span class="mw-headline" id="Start.2FStop_Programs_on_Device.2FEmulator_via_ADB">Start/Stop Programs on Device/Emulator via ADB</span></h2>
+<p>pm list packages       //lists all packages (think android programs) You should recognize this from Lesson 1.
+From the list created I see several packages. One in particular is 'com.android.browser'.</p>
+<p>am start com.android.browser
+  Browser should start.
+am force-stop com.android.browser
+  Browser closes</p>
+<h2> <span class="mw-headline" id="Wrap_Up">Wrap Up</span></h2>
+<p>You can play with variations on these commands. If you have other commands that you find useful, please post them. There are so many things that may be done from your computer via the ADB (Android Debugging Bridge) command and shell.</p>
+<h2> <span class="mw-headline" id="Categories">Categories</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:ADB_Android_Debugging_Bridge&amp;oldid=21966">https://share.coursera.org/wiki/index.php?title=Android-001:ADB_Android_Debugging_Bridge&amp;oldid=21966</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Android" title="Category:Android">Android</a></li><li><a href="/wiki/index.php?title=Category:ADB&amp;action=edit&amp;redlink=1" class="new" title="Category:ADB (page does not exist)">ADB</a></li><li><a href="/wiki/index.php?title=Category:Debugging&amp;action=edit&amp;redlink=1" class="new" title="Category:Debugging (page does not exist)">Debugging</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

@@ -1,0 +1,185 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Biostats:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>
+This is the page where we will be putting important stuff of the course.</p>
+<p><a rel="nofollow" class="external text" href="https://class.coursera.org/biostats-003/class/index">Course Home</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_Notes"><span class="tocnumber">1</span> <span class="toctext">Lecture Notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Week_1"><span class="tocnumber">1.1</span> <span class="toctext">Week 1</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Introduction"><span class="tocnumber">1.1.1</span> <span class="toctext">Introduction</span></a></li>
+<li class="toclevel-3"><a href="#Probability"><span class="tocnumber">1.1.2</span> <span class="toctext">Probability</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_2"><span class="tocnumber">1.2</span> <span class="toctext">Week 2</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Expected_values"><span class="tocnumber">1.2.1</span> <span class="toctext">Expected values</span></a></li>
+<li class="toclevel-3"><a href="#Random_Vectors"><span class="tocnumber">1.2.2</span> <span class="toctext">Random Vectors</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_3"><span class="tocnumber">1.3</span> <span class="toctext">Week 3</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Conditional_Probability"><span class="tocnumber">1.3.1</span> <span class="toctext">Conditional Probability</span></a></li>
+<li class="toclevel-3"><a href="#Likelihood"><span class="tocnumber">1.3.2</span> <span class="toctext">Likelihood</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_4"><span class="tocnumber">1.4</span> <span class="toctext">Week 4</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Some_Common_Distribution"><span class="tocnumber">1.4.1</span> <span class="toctext">Some Common Distribution</span></a></li>
+<li class="toclevel-3"><a href="#Asymptotics"><span class="tocnumber">1.4.2</span> <span class="toctext">Asymptotics</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_5"><span class="tocnumber">1.5</span> <span class="toctext">Week 5</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Confidence_Intervals"><span class="tocnumber">1.5.1</span> <span class="toctext">Confidence Intervals</span></a></li>
+<li class="toclevel-3"><a href="#T_Confidence_Intervals"><span class="tocnumber">1.5.2</span> <span class="toctext">T Confidence Intervals</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_6"><span class="tocnumber">1.6</span> <span class="toctext">Week 6</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Bootstrapping_and_Plotting"><span class="tocnumber">1.6.1</span> <span class="toctext">Bootstrapping and Plotting</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#Week_7"><span class="tocnumber">1.7</span> <span class="toctext">Week 7</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Binomial_Proportions"><span class="tocnumber">1.7.1</span> <span class="toctext">Binomial Proportions</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Math_notes"><span class="tocnumber">2</span> <span class="toctext">Math notes</span></a></li>
+<li class="toclevel-1"><a href="#Programming_notes"><span class="tocnumber">3</span> <span class="toctext">Programming notes</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Using_LaTex"><span class="tocnumber">3.1</span> <span class="toctext">Using LaTex</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Useful_online_resources"><span class="tocnumber">4</span> <span class="toctext">Useful online resources</span></a></li>
+<li class="toclevel-1"><a href="#Useful_readings"><span class="tocnumber">5</span> <span class="toctext">Useful readings</span></a></li>
+<li class="toclevel-1"><a href="#Notations_and_Definitions"><span class="tocnumber">6</span> <span class="toctext">Notations and Definitions</span></a></li>
+<li class="toclevel-1"><a href="#Categories"><span class="tocnumber">7</span> <span class="toctext">Categories</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Lecture_Notes">Lecture Notes</span></h2>
+<p>Lets write important notes about each lecture here, especially those issues, which were discussed in the forum and not covered by video! This will save a lot of time for everybody and your efforts won't dissappear in the depths of the forum:)</p>
+<h3> <span class="mw-headline" id="Week_1">Week 1</span></h3>
+<h4> <span class="mw-headline" id="Introduction">Introduction</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Welcome_to_the_course&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Welcome to the course (page does not exist)">Welcome to the course</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Biostatistics_and_Experiments&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Biostatistics and Experiments (page does not exist)">Biostatistics and Experiments</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Set_Notation_and_Probability&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Set Notation and Probability (page does not exist)">Set Notation and Probability</a></li>
+</ul>
+<h4> <span class="mw-headline" id="Probability">Probability</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Probability&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Probability (page does not exist)">Probability</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Random_variables&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Random variables (page does not exist)">Random variables</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:PMFs_and_PDFs&amp;action=edit&amp;redlink=1" class="new" title="Biostats:PMFs and PDFs (page does not exist)">PMFs and PDFs</a></li>
+<li><a href="/wiki/index.php?title=Biostats:CDFs_Survival_Functions_and_Quantiles&amp;action=edit&amp;redlink=1" class="new" title="Biostats:CDFs Survival Functions and Quantiles (page does not exist)">CDFs Survival Functions and Quantiles</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Week_2">Week 2</span></h3>
+<h4> <span class="mw-headline" id="Expected_values">Expected values</span></h4>
+<ul>
+<li><a href="/wiki/index.php/Biostats:Expected_values" title="Biostats:Expected values">Expected values</a>  </li>
+<li><a href="/wiki/index.php/Biostats:Expected_values#Rules_about_expected_values" title="Biostats:Expected values">Rules About Expected values</a>  </li>
+<li><a href="/wiki/index.php/Biostats:Expected_values#Variances_and_Chebyshevs_Inequality" title="Biostats:Expected values">Variances and Chebyshevs Inequality</a>  </li>
+</ul>
+<h4> <span class="mw-headline" id="Random_Vectors">Random Vectors</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Random_Vectors_and_Independence&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Random Vectors and Independence (page does not exist)">Random Vectors and Independence</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Correlation&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Correlation (page does not exist)">Correlation</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Variance_Properties_and_Sample_Variance&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Variance Properties and Sample Variance (page does not exist)">Variance Properties and Sample Variance</a>  </li>
+</ul>
+<h3> <span class="mw-headline" id="Week_3">Week 3</span></h3>
+<h4> <span class="mw-headline" id="Conditional_Probability">Conditional Probability</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Conditional_Probabilities_and_Densities&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Conditional Probabilities and Densities (page does not exist)">Conditional Probabilities and Densities</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Bayes_Rule_and_DLRs&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Bayes Rule and DLRs (page does not exist)">Bayes Rule and DLRs</a>  </li>
+</ul>
+<h4> <span class="mw-headline" id="Likelihood">Likelihood</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Likelihood&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Likelihood (page does not exist)">Likelihood</a>  </li>
+</ul>
+<h3> <span class="mw-headline" id="Week_4">Week 4</span></h3>
+<h4> <span class="mw-headline" id="Some_Common_Distribution">Some Common Distribution</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Bernoulli_Distribution_and_Binomial_Trials&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Bernoulli Distribution and Binomial Trials (page does not exist)">Bernoulli Distribution and Binomial Trials</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:The_Normal_Distribution&amp;action=edit&amp;redlink=1" class="new" title="Biostats:The Normal Distribution (page does not exist)">The Normal Distribution</a>  </li>
+</ul>
+<h4> <span class="mw-headline" id="Asymptotics">Asymptotics</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Limits_and_LLN&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Limits and LLN (page does not exist)">Limits and LLN</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:CLT_and_Confidence_Intervals&amp;action=edit&amp;redlink=1" class="new" title="Biostats:CLT and Confidence Intervals (page does not exist)">CLT and Confidence Intervals</a>  </li>
+</ul>
+<h3> <span class="mw-headline" id="Week_5">Week 5</span></h3>
+<h4> <span class="mw-headline" id="Confidence_Intervals">Confidence Intervals</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Confidence_Intervals_and_CI_for_Normal_Variance&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Confidence Intervals and CI for Normal Variance (page does not exist)">Confidence Intervals and CI for Normal Variance</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Students_t_Distribution_and_CI_for_Normal_Means&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Students t Distribution and CI for Normal Means (page does not exist)">Students t Distribution and CI for Normal Means</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Profile_Likelihoods&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Profile Likelihoods (page does not exist)">Profile Likelihoods</a>  </li>
+</ul>
+<h4> <span class="mw-headline" id="T_Confidence_Intervals">T Confidence Intervals</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:T_Confidence_Intervals&amp;action=edit&amp;redlink=1" class="new" title="Biostats:T Confidence Intervals (page does not exist)">T Confidence Intervals</a>  </li>
+</ul>
+<h3> <span class="mw-headline" id="Week_6">Week 6</span></h3>
+<h4> <span class="mw-headline" id="Bootstrapping_and_Plotting">Bootstrapping and Plotting</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Plotting&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Plotting (page does not exist)">Plotting</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:The_Jackknife&amp;action=edit&amp;redlink=1" class="new" title="Biostats:The Jackknife (page does not exist)">The Jackknife</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Bootstrapping&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Bootstrapping (page does not exist)">Bootstrapping</a>  </li>
+</ul>
+<h3> <span class="mw-headline" id="Week_7">Week 7</span></h3>
+<h4> <span class="mw-headline" id="Binomial_Proportions">Binomial Proportions</span></h4>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Binomial_Proportions&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Binomial Proportions (page does not exist)">Binomial Proportions</a>  </li>
+<li><a href="/wiki/index.php?title=Biostats:Logs&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Logs (page does not exist)">Logs</a>  </li>
+</ul>
+<h2> <span class="mw-headline" id="Math_notes">Math notes</span></h2>
+<p>Place here short calculus tutorials, which can revive hidden math knowledge in the students:)</p>
+<ul>
+<li><a href="/wiki/index.php/Biostats:Basic_integration_techniques" title="Biostats:Basic integration techniques">Basic integration techniques</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Programming_notes">Programming notes</span></h2>
+<p>Lets make this course more practical. Post here your R tips and tricks when solving biostats problems.</p>
+<h3> <span class="mw-headline" id="Using_LaTex">Using LaTex</span></h3>
+<ul>
+<li><a href="/wiki/index.php?title=Biostats:Using_LaTex&amp;action=edit&amp;redlink=1" class="new" title="Biostats:Using LaTex (page does not exist)">Using LaTex</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Useful_online_resources">Useful online resources</span></h2>
+<p>Here are some online resources to help us all get up to speed on statistics in general - some of us haven't used what we learned in years!</p>
+<p><a rel="nofollow" class="external text" href="http://ocw.jhsph.edu/index.cfm/go/viewCourse/course/MethodsInBiostatisticsI/coursePage/index/">Methods in Biostatistics I</a> - professor Caffo course from Johns Hopkins, there you will find a lot of useful information like suggested readings and so on.</p>
+<p><a rel="nofollow" class="external text" href="http://onlinestatbook.com/rvls/">Rice Virtual Lab in Statistics</a> - interactive and hyper-text (online only)</p>
+<p><a rel="nofollow" class="external text" href="http://www.stanford.edu/~hastie/Papers/ESLII.pdf">The Elements of Statistical Learning</a> - a large (~22 MB) PDF download of a book from the Springer Series in Statistics</p>
+<p><a rel="nofollow" class="external text" href="https://www.math.umass.edu/~lavine/Book/book.pdf">Introduction to Statistical Thought</a> by Michael Lavine - a larger (~42 MB) download of a text focused more on the theoretic/mathematical underpinnings of statistics.</p>
+<p><a rel="nofollow" class="external text" href="http://www.statsoft.com/textbook/">StatSoft Statistics: Methods &amp; Applications</a> - totally online, though a physical book is available from StatSoft directly for $80 plus shipping.</p>
+<p><a rel="nofollow" class="external text" href="http://www.r-bloggers.com/">R-Bloggers</a> is a site that aggregates blogs from all over that are focused on the use of the R language, but there are plenty of interesting examples that are understandable even if you don't know R.</p>
+<p><a rel="nofollow" class="external text" href="http://www.youtube.com/playlist?list=PL17567A1A3F5DB5E4">Khan Academy</a> YouTube videos on math and statistics</p>
+<p><a rel="nofollow" class="external text" href="http://freemath.wikia.com/wiki/Free_Math_Sources#Probability_.26_Statistics">Freemath</a> - contains currently 10 free books on the probability &amp; statistics including some of the above</p>
+<h2> <span class="mw-headline" id="Useful_readings">Useful readings</span></h2>
+<p><a rel="nofollow" class="external text" href="http://books.google.com.au/books/about/Mathematical_Statistics_And_Data_Analysi.html?id=EKA-yeX2GVgC&amp;redir_esc=y">John A. Rice. Mathematical Statistics And Data Analysis</a></p>
+<p><a rel="nofollow" class="external text" href="http://books.google.com.ua/books?id=mviJQgAACAAJ&amp;dq=Freedman,+Pisani+and+Purves+Statistics&amp;hl=uk&amp;sa=X&amp;ei=6Xj2UYCKJaeK4ASB94GgBQ&amp;ved=0CC8Q6AEwAA">Freedman, Pisani and Purves. Statistics</a></p>
+<p><a rel="nofollow" class="external text" href="http://books.google.com.ua/books?id=4TlEPgAACAAJ&amp;dq=Morris+H.+DeGroot,+Mark+J.+Schervish.+Probability+and+Statistics&amp;hl=uk&amp;sa=X&amp;ei=K3n2Ue_VMKKF4AS9uYG4Cg&amp;ved=0CC8Q6AEwAA">Morris H. DeGroot, Mark J. Schervish. Probability and Statistics</a></p>
+<h2> <span class="mw-headline" id="Notations_and_Definitions">Notations and Definitions</span></h2>
+<p><strong>log</strong> - if not stated opposite assume that log represents natural logarithm</p>
+<h2> <span class="mw-headline" id="Categories">Categories</span></h2>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Biostats:Main&amp;oldid=22102">https://share.coursera.org/wiki/index.php?title=Biostats:Main&amp;oldid=22102</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Categories</a>: <ul><li><a href="/wiki/index.php/Category:Biostatistics" title="Category:Biostatistics">Biostatistics</a></li><li><a href="/wiki/index.php/Category:Coursera" title="Category:Coursera">Coursera</a></li><li><a href="/wiki/index.php/Category:Biology" title="Category:Biology">Biology</a></li><li><a href="/wiki/index.php/Category:Probability" title="Category:Probability">Probability</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

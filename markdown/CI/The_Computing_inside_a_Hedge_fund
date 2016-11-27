@@ -1,0 +1,39 @@
+__Module 3 The Computing inside a Hedge fund__ (Lecture Video 3.4)
+
+_Note: Just copied notes from lecture slides, needs to be cleaned up and expanded_
+
+* Due Date: November 4, Time for Completion: 14 minutes
+	
+__Overview__
+* Trading Algorithms
+* Optimizers
+* Forecasters
+
+__Materials__
+* [https://class.coursera.org/compinvesting1-2012-001/wiki/view?page=Week2a link]
+* [https://class.coursera.org/compinvesting1-2012-001/lecture/download.mp4?lecture_id=45 video]
+* [http://www.quantsoftware.org/CompInvestI-Presentations/034-CompInvestI.pptx powerpoint]
+	 	
+# Notes
+## Inside a (slower) Quant Shop
+
+[[file:Inside a slower Quant Shop.png]]
+
+## Inside a Quant Shop
+[[File:CI-034b-Inside-QuantShop.png]]
+[[File:CI-034c-Inside-QuantShop.png]]
+
+## Objectives
+* Understand order types.
+* Understand order book at exchanges.
+* Understand how buy/sell orders drive prices up or down.
+* Understand the basic infrastructure of an exchange.
+* Understand the major computational components of a hedge fund.
+
+
+
+
+
+
+
+[[Category:CI]]

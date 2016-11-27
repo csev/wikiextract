@@ -1,0 +1,30 @@
+####Using the data supplied in .mat files
+
+A command such as
+
+    load PA3SampleCases
+
+will load the variables from PA3SampleCases into your workspace. To determine what variables have been or will be loaded, use:
+
+    whos -file PA3SampleCases.mat
+
+####Using BuildOCRNetwork or ScoreModel
+Note that if you are not using similarity factors you need to set IgnoreSimilarity to true before running the commands:
+
+    imageModel.ignoreSimilarity = true;
+
+If you do not, an error indicating that the partition function evaluated to 0. This is because the default similarity factors have value 0.
+
+####Helper functions
+
+Functions supplied by students which provide useful utilities tangential to the aims of the programming assignment (i.e. these functions do not provide help in achieving the ultimate aims of the programming assignments)
+
+* [https://github.com/JackKelly/PGM/blob/master/PA3/displayWord.m displayWord.m]: Displays the bitmaps from the PA3Data.mat file, along with the groundTruth character as a title (based on [https://class.coursera.org/pgm/forum/thread?thread_id=967 this forum thread]).  [https://github.com/JackKelly/PGM/raw/master/PA3/example.png Here's an example output].
+
+#### RunInference.m in 32 bit x86 linux system
+
+The doinference linux binary provided in the assignment files is built for 64 bits. This obviously won't work in 32 bit systems.  
+The following unofficial binary has been statically built for 32 bits, so it should work in any x86 linux system.  
+The link will be alive until till January 15 2013.  
+
+* [http://wikisend.com/download/965290/doinference-linux.gz doinference-linux.gz] 32bit binary. Uncompress with gunzip in the inference directory.

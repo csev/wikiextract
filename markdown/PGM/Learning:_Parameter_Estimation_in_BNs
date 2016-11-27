@@ -1,0 +1,51 @@
+
+
+# Lecture Video Table of Contents
+
+##Maximum Likelihood Estimation
+<pre>
+0:15 	Biased coin example
+1:15	IID as a PGM
+2:41	Maximum likelihood estimation
+5:24	Maximum likelihood estimator
+6:54	Sufficient statistics
+9:18	Sufficient statistics for multinomials
+11:34	Sufficient statistics for gaussians
+13:12	Maximum likelihood estimation
+14:19	Summary
+</pre>
+
+##Maximum Likelihood Estimation for Bayesian Networks
+<pre>
+0:18	MLE for Bayesian networks
+4:32	MLE for table CPDs
+7:27	Shared parameters
+11:28	Summary for Bayesian networks
+13:04	Fragmentation and overfitting
+</pre>
+
+##Bayesian Estimation
+<pre>
+0:20	Limitations of MLE
+2:01	Parameter estimation as a PGM
+3:49	Bayesian inference
+6:30	Dirichlet distribution
+10:48	Dirichlet priors and posteriors
+14:10	Summary
+</pre>
+
+##Bayesian Prediction
+<pre>
+0:31	Bayesian prediction
+7:03	Example: Binomial data
+8:37	Effect of priors
+11:53	Summary
+</pre>
+
+##Bayesian Estimation for Bayesian Networks
+<pre>
+0:20	Bayesian estimation in BNs
+7:29	Assessing priors for BNs
+11:52	Case study: ICU alarm network
+15:55	Summary
+</pre>

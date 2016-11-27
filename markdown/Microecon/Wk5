@@ -1,0 +1,34 @@
+\Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+<br><br>
+Costs fall into two groups, They are separated based on time scale - fixed costs can be changed, but only on a long timescale, whereas variable costs could vary on a small time scale.
+
+Fixed costs (aka Capital Costs):
+ Land
+ Equipment - tractor, oven, nuclear reactor
+
+Variable costs (aka Labor Costs):
+ Workers
+ Fertilizer
+ Ingredients to prepare food
+
+Production Function: The relationsihp between the quantity of inputs a firm uses and the quantity of outputs it produces.
+
+Total Product Curve: Quantity vs. Workers (or other Variable input)
+This will be a curve with a negatively changing slope (starts out vertical, growing but becoming horizontal, in a frowny face shape)
+
+Total Cost Curve: Total Cost (sum of variable and fixed costs) vs. Quantity
+NOTE: the Quantity has moved from the y axis to the x axis.
+This will be a curve with a postively changing slope (starts out horizontal, slowly growing, but becoming vertical, in a smile shape).
+The slope of this curve is the marginal cost (different at each point on the curve, obv), and is calculated by delta_TC over delta_Q = MC (Marginal Cost).  This is directly related to the marginal production of the variable input.
+
+Note: the marginal cost curve always crosses the average total cost curve at the lowest point of the average total cost curve.
+
+AFC = Average Fixed Costs = FC/Q
+
+AVC = Average Variable Costs = VC/Q
+
+ATC = AFC + AVC
+
+Tip: Focus on marginal costs more than average costs.

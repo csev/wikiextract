@@ -1,0 +1,40 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">BigData:Main</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><hr />
+<p><strong>Web Intelligence and Big Data</strong> by <a rel="nofollow" class="external text" href="http://www.wireless.ucla.edu/bio/bio.asp?Id=20407"><em>Gautam Shroff</em></a></p>
+<p>from TCS Innovation Labs</p>
+<h1> <span class="mw-headline" id="Example_of_an_O.282_exp_N.29_problem_or_O.282.5En.29">Example of an O(2 exp N) problem or O(2^n)</span></h1>
+<p>Goal: </p>
+<ul>
+<li>Create a list that shows how many times each word in a document appears in that document.</li>
+</ul>
+<p>Approach:</p>
+<ul>
+<li><p>Start with the first word in the document, and compare it with every other word in the document to see if they are the same. Count matches.</p></li>
+<li><p>Repeat for second word in the document, and so on.</p></li>
+</ul>
+<p>The number of comparisons required for this approach is O(2^n).</p>
+<p>That's not to say that the actual number of comparisons must be exactly 2^n, but rather that is the order of magnitude of the problem, so it is the maximum number of comparisons.</p>
+<p>We can use Big-O to classify the order of magnitude of the problem, allowing us to estimate the time required to solve the problem or the amount of computing power required to solve the problem. Big-O also allows us to compare the efficiency of algorithms.</p>
+<hr />
+<p>There appears to be two 'main' pages. This one, and this one.<a rel="nofollow" class="external free" href="https://share.coursera.org/wiki/index.php/Bigdata:Main">https://share.coursera.org/wiki/index.php/Bigdata:Main</a></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=BigData:Main&amp;oldid=15584">https://share.coursera.org/wiki/index.php?title=BigData:Main&amp;oldid=15584</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

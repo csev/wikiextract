@@ -1,0 +1,95 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ML:Programming Exercise 6:Support Vector Machines</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Keep in mind that all the programming exercise solutions should handle any number of features in the training examples. Passing the test case in the PDF file is not sufficient to be sure of passing the submit grader's test case.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Debugging_Tip"><span class="tocnumber">1</span> <span class="toctext">Debugging Tip</span></a></li>
+<li class="toclevel-1"><a href="#Update_to_ex6.m"><span class="tocnumber">2</span> <span class="toctext">Update to ex6.m</span></a></li>
+<li class="toclevel-1"><a href="#Trouble_with_the_contour_plot_.28visualizeBoundary.m.29"><span class="tocnumber">3</span> <span class="toctext">Trouble with the contour plot (visualizeBoundary.m)</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Octave_3.8.x_and_higher"><span class="tocnumber">3.1</span> <span class="toctext">Octave 3.8.x and higher</span></a></li>
+<li class="toclevel-2"><a href="#Matlab"><span class="tocnumber">3.2</span> <span class="toctext">Matlab</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#processEmail_no_loop_possible"><span class="tocnumber">4</span> <span class="toctext">processEmail no loop possible</span></a></li>
+<li class="toclevel-1"><a href="#Understanding_SMO_and_the_svmTrain.28.29_and_svmPredict.28.29_methods"><span class="tocnumber">5</span> <span class="toctext">Understanding SMO and the svmTrain() and svmPredict() methods</span></a></li>
+<li class="toclevel-1"><a href="#More_SVM_explanations"><span class="tocnumber">6</span> <span class="toctext">More SVM explanations</span></a></li>
+<li class="toclevel-1"><a href="#Information_on_SVMLIB"><span class="tocnumber">7</span> <span class="toctext">Information on SVMLIB</span></a></li>
+<li class="toclevel-1"><a href="#Using_LIBSVM_in_MATLAB.2FOctave"><span class="tocnumber">8</span> <span class="toctext">Using LIBSVM in MATLAB/Octave</span></a></li>
+</ul>
+</td></tr></table>
+<h3> <span class="mw-headline" id="Debugging_Tip">Debugging Tip</span></h3>
+<p>The submit script, for all the programming assignments, does not report the line number and location of the error when it crashes. The follow method can be used to make it do so which makes debugging easier.</p>
+<p>Open ex6/lib/submitWithConfiguration.m and replace line:</p>
+<code><pre> fprintf('!! Please try again later.\n');
+</pre></code>
+<p>(around 28) with:</p>
+<code><pre>fprintf('Error from file:&#160;%s\nFunction:&#160;%s\nOn line:&#160;%d\n', e.stack(1,1).file,e.stack(1,1).name, e.stack(1,1).line );
+</pre></code>
+<p>That top line says '!! Please try again later' on crash, instead of that, the bottom line will give the location and line number of the error. This change can be applied to all the programming assignments.</p>
+<h2> <span class="mw-headline" id="Update_to_ex6.m">Update to ex6.m</span></h2>
+<p>At line 69/70, change "sigma = 0.5" to "sigma =&#160;%0.5f", and change the list of output variables from "sim" to "sigma, sim". This lets the screen output display the actual value of sigma, rather than an (incorrect) constant value.</p>
+<h2> <span class="mw-headline" id="Trouble_with_the_contour_plot_.28visualizeBoundary.m.29">Trouble with the contour plot (visualizeBoundary.m)</span></h2>
+<h3> <span class="mw-headline" id="Octave_3.8.x_and_higher">Octave 3.8.x and higher</span></h3>
+<p>If you have Octave 3.8.x, the ex6 script will not plot decision boundary, and prints 'Unknown hggroup property Color' with stack trace.</p>
+<p>One fix is to modify line 21 in visualizeBoundary.m  with this code:</p>
+<code><pre>contour(X1, X2, vals, [1 1], 'linecolor', 'blue');
+</pre></code>
+<p>(Note: I tried this and although the error went away, I still don't see any contour line drawn; sokolov 3/22/2015)</p>
+<p>I had the same problem with the line not displaying until i changed the [0 0] to [1 1] - tmcarthur 7/1/2016</p>
+<p>OR</p>
+<p>If you change line 21 to following, it will show two lines and will work with &gt;= 3.8.x .</p>
+<code><pre>contour(X1, X2, vals);
+</pre></code>
+<p>For more information see</p>
+<p><a rel="nofollow" class="external free" href="http://lists.gnu.org/archive/html/octave-bug-tracker/2014-01/msg00226.html">http://lists.gnu.org/archive/html/octave-bug-tracker/2014-01/msg00226.html</a></p>
+<h3> <span class="mw-headline" id="Matlab">Matlab</span></h3>
+<p>In Matlab R2014b and R2015b, simply changing the [0 0] parameter on line 21 in visualizeBoundary.m to [1 1] plots the boundary.</p>
+<h2> <span class="mw-headline" id="processEmail_no_loop_possible">processEmail no loop possible</span></h2>
+<p>Can use find() or ismember() for the word vocabulary cell array</p>
+<h2> <span class="mw-headline" id="Understanding_SMO_and_the_svmTrain.28.29_and_svmPredict.28.29_methods">Understanding SMO and the svmTrain() and svmPredict() methods</span></h2>
+<p>The <b>svmTrain.m</b> file is provided with this exercise and it contains an implementation of the Sequential Minimal Optimization (SMO) algorithm to minimize an SVM.
+You don't need to understand how it works in order to complete the exercise. There are comments in the code that reference numbered equations, 
+but the code doesn't say what document those numbers reference. It turns out to be a section of the course materials from CS 229 at Stanford covering SMO, which can
+be found here:</p>
+<p><a rel="nofollow" class="external free" href="http://cs229.stanford.edu/materials/smo.pdf">http://cs229.stanford.edu/materials/smo.pdf</a></p>
+<h2> <span class="mw-headline" id="More_SVM_explanations">More SVM explanations</span></h2>
+<p>"An Idiot's Guide to Support Vector Machines"</p>
+<p><a rel="nofollow" class="external free" href="http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf">http://web.mit.edu/6.034/wwwbob/svm-notes-long-08.pdf</a></p>
+<h2> <span class="mw-headline" id="Information_on_SVMLIB">Information on SVMLIB</span></h2>
+<p>This exercise uses the SVMLIB package to solve an exercise similar to ex6 (also by Prof Ng).</p>
+<p><a rel="nofollow" class="external free" href="http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex7/ex7.html">http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&amp;doc=exercises/ex7/ex7.html</a></p>
+<h2> <span class="mw-headline" id="Using_LIBSVM_in_MATLAB.2FOctave">Using LIBSVM in MATLAB/Octave</span></h2>
+<p>In the optional section of this exercise, Prof Ng recommended that we use LIBSVM to solve the problem.</p>
+<p><a rel="nofollow" class="external free" href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/">http://www.csie.ntu.edu.tw/~cjlin/libsvm/</a></p>
+<p>Installing LIBSVM on MATLAB/Octave is very easy. </p>
+<ul>
+<li><p>After downloading and unzipping the LIBSVM package, open MATLAB/Octave.</p></li>
+<li><p>Go to the directory of the MATLAB/Octave version, e.g. "E:/CourseraML/machine-learning-ex6/ex6/libsvm-3.21/matlab"</p></li>
+<li><p>Enter "make" in the command window.</p></li>
+<li><p>That's it! You're done! Now read the README file in the MATLAB directory, and learn how to use svmtrain and svmpredict function.</p></li>
+<li><p>In short, the syntax of these two functions are:</p>
+<p>model = <strong>svmtrain</strong>( trainingLabelVector, trainingInstanceMatrix [, 'libsvmOptions'])</p>
+<p>[predictedLabel, accuracy, decisionValues/probEstimates] = <strong>svmpredict</strong>( testingLabelVector, testingInstanceMatrix, model [, 'libsvmOptions']);</p></li>
+</ul>
+<p></p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 38/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_6:Support_Vector_Machines&amp;oldid=33895">https://share.coursera.org/wiki/index.php?title=ML:Programming_Exercise_6:Support_Vector_Machines&amp;oldid=33895</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:ML:Programming_Exercises" title="Category:ML:Programming Exercises">ML:Programming Exercises</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

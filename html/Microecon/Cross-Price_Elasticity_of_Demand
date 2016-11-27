@@ -1,0 +1,44 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:Cross-Price Elasticity of Demand</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<h2> <span class="mw-headline" id="Notes_for_Week_4:_3.2_Cross-Price_Elasticity_of_Demand">Notes for Week 4: 3.2 Cross-Price Elasticity of Demand</span></h2>
+<p>Cross-price elasticity of demand=&#160;% change of quantity of product X demanded /&#160;% change in price of related product Y
+- $$\epsilon&#95;x = \cfrac{\% change Q&#95;x}{\% change P&#95;y} = \cfrac{\% \Delta Q&#95;x}{\% \Delta P&#95;y}$$ <br /></p>
+<ul>
+<li>For products that are complements, E. is negative: if price of a complement Y goes up, consumed quantity of good X decreases.
+
+<ul>
+<li>Example: pizza and beer are complements.  </li>
+<li>y = pizza</li>
+<li>x = beer</li>
+<li>So if the price of pizza goes up (say 10%), then $$\Delta P&#95;y = 10 \%$$ <br /></li>
+<li>Since pizza is a complement of beer,demand for beer goes down when price of pizza goes up, so $$Q&#95;x = -10 \%$$ <br /></li>
+<li>Therefore, the cross-price elasticity, $$\cfrac{\% \Delta Q&#95;x}{\% \Delta P&#95;y}$$, is negative</li>
+</ul></li>
+</ul>
+<p><br />
+<ul><li> For products that are substitutes, E. is positive: if price of substitute Y goes up, demanded quantity if good X increases.</p>
+</li></ul>
+
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:Cross-Price_Elasticity_of_Demand&amp;oldid=17633">https://share.coursera.org/wiki/index.php?title=Microecon:Cross-Price_Elasticity_of_Demand&amp;oldid=17633</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

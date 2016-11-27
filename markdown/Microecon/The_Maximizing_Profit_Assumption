@@ -1,0 +1,25 @@
+Return to [[Microecon:Main|the list of lectures]].
+<br><br>
+**The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.**
+
+##Notes for Week 6: 2.1 The Maximizing Profit Assumption
+[[File:Greed.jpg|200px|thumb|left|Wall Street:  Gordon Gekko]] 
+[Gordon Gekko Speech](http://www.youtube.com/watch?v=ONXpaBQnBvE)
+# Greed is Good
+Greed drives the American economy, the innovation, the people to do good things in terms of business. The idea that people only
+care about money and greed, it could be controversial.
+
+For simplicity, we are going to assume, that the only goal a company has, or a manager or anyone has, is to make more profits. That means greed is the purpose of anyone trying to engage in business. Then the ultimate goal is to get the profits the highest (**maximize the profits**).
+
+## What are profits?
+Profits can be simply expressed as the difference between revenue and costs. 
+
+ - $$\prod =R -TC$$
+
+ - $$R = Revenue$$
+
+ - $$TC = Total Cost$$
+
+ - $$\prod =Profits$$
+
+Then the Goal is to $$maximize(\prod)$$

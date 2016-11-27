@@ -1,0 +1,74 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Microecon:Definition and Classifying Price Elasticities of Demand</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>Return to <a href="/wiki/index.php/Microecon:Main" title="Microecon:Main">the list of lectures</a>.
+<br /><br />
+<strong>The lecture notes are a collaborative effort of the participants in the course. You are not required to contribute to the lecture notes, but are encouraged to do so. Together, we can create resources that will be helpful to everyone.</strong></p>
+<h2> <span class="mw-headline" id="Notes_for_Week_4:_2.1_Definition_and_Classifying_Price_Elasticities_of_Demand">Notes for Week 4: 2.1 Definition and Classifying Price Elasticities of Demand</span></h2>
+<p><i>Why don't we increase the price of the sandwiches from the model in the first video?</i>
+Increasing the price of the product doesn’t necessarily increase revenue.</p>
+<p><b>Two key points:</b></p>
+<ul>
+<li>If we sell the same amount of sandwiches after we increase the price as prior to the price increase, profits increase.</li>
+<li>If we sell fewer sandwiches after we increase the price as prior to the price increase, profits decrease.</li>
+</ul>
+<h2> <span class="mw-headline" id="Elasticity_is_a_measure_of_how_consumption.2Fquantity_changes_as_a_result_of_a_change_in_price.">Elasticity is a measure of how consumption/quantity changes as a result of a change in price.</span></h2>
+<p>(in other words, Price Elasticity of Demand is the measure of responsiveness of Qd, relative to the rate of change in a product's Price)</p>
+<h2> <span class="mw-headline" id="Elasticity_is_a_measure_of_the_rate_of_change.">Elasticity is a measure of the rate of change.</span></h2>
+<p><b>To calculate the price elasticity of demand of x:</b></p>
+<ul>
+<li>$$\epsilon&#95;x = \cfrac{\% change Q&#95;x}{\% change P&#95;x} = \cfrac{\% \Delta Q&#95;x}{\% \Delta P&#95;x}$$ <br />
+$$E&#95;x$$=Price elasticity<br />
+$$Q&#95;x$$=Quantity of x<br />
+$$P&#95;x$$=Price of x<br />
+%change=percent in change<br />
+<br />
+If you increase the price, the quantity consumed goes down, and if you decrease the price, the quantity consumed goes up. The variables have an inverse relationship, therefore the answer is usually a negative number.
+<br /></li>
+<li><p>Example 1: Say you increase the price of your product by 10%, and consumers respond by consuming 5% less.  Then:</p>
+<ul>
+<li>$$ \epsilon&#95;x = \cfrac{\% \Delta Q&#95;x}{\% \Delta P&#95;x} = \cfrac{-5 \%}{10 \%} = -0.5 $$ <br /></li>
+<li>Note that elasticity is unitless <br /></li>
+<li>When elasticity is less than 1, we say the demand is not very responsive (inelastic) <br /><br /></li>
+</ul></li>
+<li><p>Example 2: Say you increase the price of your product by 10%, and consumers respond by consuming 15% less.  Then:</p>
+<ul>
+<li>$$ \epsilon&#95;x = \cfrac{\% \Delta Q&#95;x}{\% \Delta P&#95;x} = \cfrac{-15 \%}{10 \%} = -1.5 $$ <br /></li>
+<li>When elasticity is greater than 1, we say the demand is responsive (elastic)</li>
+</ul></li>
+</ul>
+<p><br /></p>
+<p><b>Nomenclature for price elasticity of demand</b></p>
+<ul>
+<li>Elastic   (very responsive)     - Absolute value of e &gt; 1</li>
+<li>Inelastic (not very responsive) - Absolute value of e &lt; 1</li>
+<li>Unitary (without changes)       - Absolute value of e = 1</li>
+</ul>
+<p><b>Working Definitions:</b><br /></p>
+<ul>
+<li><p>Elastic:
+The price is elastic when the absolute value of the change in percentage of quantity over change in price is greater than 1.</p></li>
+<li><p>Inelastic:
+The price is inelastic when the absolute value of the change in percentage of quantity over change in price is less than 1.</p></li>
+<li><p>Unitary:
+The price is Unitary when the percentage of change in price is equal to the percentage change in quantity.</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Microecon:Definition_and_Classifying_Price_Elasticities_of_Demand&amp;oldid=30970">https://share.coursera.org/wiki/index.php?title=Microecon:Definition_and_Classifying_Price_Elasticities_of_Demand&amp;oldid=30970</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

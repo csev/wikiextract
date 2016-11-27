@@ -1,0 +1,321 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">DataSciSpec:Useful Resources</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<p><br />
+</p>
+<p>Please feel free to contribute anything you might find usefull, like free eBooks, tutorials and other stuff like tools.</p>
+<p>Return to <a href="/wiki/index.php/DataSciSpec:Main" title="DataSciSpec:Main"> Data Science Specialization</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Search_Engines.2FSites_.28dedicated_to_problem_solutions.3B_question.2Fanswer.29"><span class="tocnumber">1</span> <span class="toctext">Search Engines/Sites (dedicated to problem solutions; question/answer)</span></a></li>
+<li class="toclevel-1"><a href="#Git"><span class="tocnumber">2</span> <span class="toctext">Git</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Tools"><span class="tocnumber">2.1</span> <span class="toctext">Tools</span></a></li>
+<li class="toclevel-2"><a href="#Find_help"><span class="tocnumber">2.2</span> <span class="toctext">Find help</span></a></li>
+<li class="toclevel-2"><a href="#Git_and_GitHub"><span class="tocnumber">2.3</span> <span class="toctext">Git and GitHub</span></a></li>
+<li class="toclevel-2"><a href="#Free_eBooks"><span class="tocnumber">2.4</span> <span class="toctext">Free eBooks</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#R"><span class="tocnumber">3</span> <span class="toctext">R</span></a>
+<ul>
+<li class="toclevel-2"><a href="#R_Download"><span class="tocnumber">3.1</span> <span class="toctext">R Download</span></a></li>
+<li class="toclevel-2"><a href="#.28Integrated.29_Development_Environment"><span class="tocnumber">3.2</span> <span class="toctext">(Integrated) Development Environment</span></a></li>
+<li class="toclevel-2"><a href="#Find_help_2"><span class="tocnumber">3.3</span> <span class="toctext">Find help</span></a></li>
+<li class="toclevel-2"><a href="#R_Style_Guides"><span class="tocnumber">3.4</span> <span class="toctext">R Style Guides</span></a></li>
+<li class="toclevel-2"><a href="#Tutorials"><span class="tocnumber">3.5</span> <span class="toctext">Tutorials</span></a></li>
+<li class="toclevel-2"><a href="#Graphs_and_data_visualization"><span class="tocnumber">3.6</span> <span class="toctext">Graphs and data visualization</span></a></li>
+<li class="toclevel-2"><a href="#Packages_used_in_the_Data_Science_Specialization"><span class="tocnumber">3.7</span> <span class="toctext">Packages used in the Data Science Specialization</span></a></li>
+<li class="toclevel-2"><a href="#eBooks_and_Reading"><span class="tocnumber">3.8</span> <span class="toctext">eBooks and Reading</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Programming_in_common"><span class="tocnumber">4</span> <span class="toctext">Programming in common</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Regexp"><span class="tocnumber">4.1</span> <span class="toctext">Regexp</span></a></li>
+<li class="toclevel-2"><a href="#Functional_Programming"><span class="tocnumber">4.2</span> <span class="toctext">Functional Programming</span></a></li>
+<li class="toclevel-2"><a href="#LaTeX"><span class="tocnumber">4.3</span> <span class="toctext">LaTeX</span></a></li>
+<li class="toclevel-2"><a href="#Markdown_.28md.29"><span class="tocnumber">4.4</span> <span class="toctext">Markdown (md)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Course_Lecture_Notes_.28single_PDF_document_per_course.29"><span class="tocnumber">5</span> <span class="toctext">Course Lecture Notes (single PDF document per course)</span></a></li>
+<li class="toclevel-1"><a href="#Unix_shell_-_Don.27t_be_Afraid_of_the_Command-line"><span class="tocnumber">6</span> <span class="toctext">Unix shell - Don't be Afraid of the Command-line</span></a></li>
+<li class="toclevel-1"><a href="#Data_Science_.2F_Statistics"><span class="tocnumber">7</span> <span class="toctext">Data Science / Statistics</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Free_eBooks_2"><span class="tocnumber">7.1</span> <span class="toctext">Free eBooks</span></a></li>
+<li class="toclevel-2"><a href="#Tutorials_and_Blogs"><span class="tocnumber">7.2</span> <span class="toctext">Tutorials and Blogs</span></a></li>
+<li class="toclevel-2"><a href="#More_MOOC_course_material_on_the_topic"><span class="tocnumber">7.3</span> <span class="toctext">More MOOC course material on the topic</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Open_data_sources"><span class="tocnumber">8</span> <span class="toctext">Open data sources</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Official_statistics"><span class="tocnumber">8.1</span> <span class="toctext">Official statistics</span></a></li>
+<li class="toclevel-2"><a href="#Other_public_sources"><span class="tocnumber">8.2</span> <span class="toctext">Other public sources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Misc_Information"><span class="tocnumber">9</span> <span class="toctext">Misc Information</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Related_.28older.29_Coursera_Wikis_Pages"><span class="tocnumber">9.1</span> <span class="toctext">Related (older) Coursera Wikis Pages</span></a></li>
+<li class="toclevel-2"><a href="#Other_peoples_contribution_elsewhere_on_the_Web"><span class="tocnumber">9.2</span> <span class="toctext">Other peoples contribution elsewhere on the Web</span></a></li>
+<li class="toclevel-2"><a href="#Working_with_coursera"><span class="tocnumber">9.3</span> <span class="toctext">Working with coursera</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Networking_with_fellow_students"><span class="tocnumber">10</span> <span class="toctext">Networking with fellow students</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Search_Engines.2FSites_.28dedicated_to_problem_solutions.3B_question.2Fanswer.29">Search Engines/Sites (dedicated to problem solutions; question/answer)</span></h2>
+<p>If you are lost with a problem and looking for answers...
+<ul><li> <a rel="nofollow" class="external text" href="http://stats.stackexchange.com">CrossValidated</a>
+</li><li> <a rel="nofollow" class="external text" href="http://rseek.org">Rseek</a>
+</li><li> <a rel="nofollow" class="external text" href="http://stackoverflow.com/tags/r/info">Stack Overflow</a></p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Git">Git</span></h2>
+<h3> <span class="mw-headline" id="Tools">Tools</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://git-scm.com">Git</a> - Apple Mac OS X, GNU/Linux, Microsoft Windows, or from your GNU/Linux distribution's application repository</li>
+<li><a rel="nofollow" class="external text" href="http://gitx.frim.nl">GitX</a> - Apple Mac OS X</li>
+<li><a rel="nofollow" class="external text" href="http://www.sourcetreeapp.com/">SourceTree</a> - Apple Mac OS X, Microsoft Windows</li>
+<li><a rel="nofollow" class="external text" href="http://code.google.com/p/tortoisegit/">Tortoise Git</a> - Microsoft Windows</li>
+<li><a rel="nofollow" class="external text" href="http://www.git-tower.com">Tower</a> - Apple Mac OS X</li>
+</ul>
+<h3> <span class="mw-headline" id="Find_help">Find help</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.terminally-incoherent.com/blog/2012/01/16/git-cheat-sheet/">Git Cheat Sheet</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dataschool.io/git-quick-reference-for-beginners/">Git quick reference for beginners</a></li>
+<li><a rel="nofollow" class="external text" href="http://blog.osteele.com/posts/2008/05/commit-policies">Visual Git Data Transport Commands, Commit Policies, and Workflow</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.cheetyr.com/git">Git quick search commands</a> </li>
+</ul>
+<h3> <span class="mw-headline" id="Git_and_GitHub">Git and GitHub</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/playlist?list=PL5-da3qGB5IBLMp7LtN8Nc3Efd4hJq0kD">Introduction to Git and GitHub</a>: 10 HD videos, 27 minutes total, transcripts included - created specifically to assist students in the Data Science Specialization</li>
+<li>GitHub For Beginners: Don't Get Scared, Get Started: <a rel="nofollow" class="external text" href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/">Part 1</a> and <a rel="nofollow" class="external text" href="http://readwrite.com/2013/10/02/github-for-beginners-part-2/">Part 2</a></li>
+<li><a rel="nofollow" class="external text" href="http://gitimmersion.com">Git Immersion (A Guided Tour)</a></li>
+<li><a rel="nofollow" class="external text" href="http://ndpsoftware.com/git-cheatsheet.html">Git Interactive</a></li>
+<li><a rel="nofollow" class="external text" href="https://help.github.com/categories/54/articles/">GitHub Bootcamp</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.atlassian.com/git/tutorial/">Git Tutorials from Atlassian</a></li>
+<li><a rel="nofollow" class="external text" href="http://wiki.spheredev.org/Git_for_the_lazy">Git for the Lazy</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dataschool.io/simple-guide-to-forks-in-github-and-git/">Simple guide to forks in GitHub and Git</a></li>
+<li><a rel="nofollow" class="external text" href="http://pcottle.github.io/learnGitBranching/">Learn Git Branching</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Free_eBooks">Free eBooks</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.gitpocketguide.com">Git Pocket Guide</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.git-tower.com/learn/">Learn Version Control with Git: A step-by-step course for the complete beginner</a></li>
+<li><a rel="nofollow" class="external text" href="http://git-scm.com/book/">Pro Git</a></li>
+<li><a rel="nofollow" class="external text" href="http://software-carpentry.org/v5/novice/git/index.html">Software Carpentry: Version Control with Git</a></li>
+</ul>
+<h2> <span class="mw-headline" id="R">R</span></h2>
+<p><div class="thumb tright"><div class="thumbinner" style="width:402px;"><a href="/wiki/images/e/e9/RoadToDataScientist1-1024x831.png" class="image"><img alt="" src="/wiki/images/thumb/e/e9/RoadToDataScientist1-1024x831.png/400px-RoadToDataScientist1-1024x831.png" width="400" height="325" class="thumbimage" /></a>  <div class="thumbcaption"><div class="magnify"><a href="/wiki/images/e/e9/RoadToDataScientist1-1024x831.png" class="internal" title="Enlarge"><img src="/wiki/skins/common/images/magnify-clip.png" width="15" height="11" alt="" /></a></div>Data Scientist Skillset layed out as metromap</div></div></div></p>
+<h3> <span class="mw-headline" id="R_Download">R Download</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://r-project.org">R</a> - Apple OS X, GNU/Linux, Microsoft Windows</li>
+<li><a rel="nofollow" class="external text" href="http://cran.rstudio.com">R</a> - Apple OS X, GNU/Linux, Microsoft Windows</li>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org">The Comprehensive R Archive Network</a></li>
+</ul>
+<h3> <span class="mw-headline" id=".28Integrated.29_Development_Environment">(Integrated) Development Environment</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.rstudio.com">RStudio</a> - Apple OS X, GNU/Linux, Microsoft Windows</li>
+<li><a rel="nofollow" class="external text" href="http://www.walware.de/goto/statet/">StatET for R (eclipse plug-in)</a> plus a <a rel="nofollow" class="external text" href="http://www.winterwell.com/software/markdown-editor.php">Markdown viewer/editor for eclipse</a> </li>
+<li><a rel="nofollow" class="external text" href="http://www.louisaslett.com/RStudio_AMI/">RStudio Server Amazon Machine Image (AMI) in the Cloud</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Find_help_2">Find help</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/contrib/Baggott-refcard-v2.pdf‎">R Reference Card 2.0</a></li>
+<li><a rel="nofollow" class="external text" href="http://rpubs.com/thoughtfulbloke/downloadtips">Troubleshooting downloading files with R problems</a></li>
+</ul>
+<h3> <span class="mw-headline" id="R_Style_Guides">R Style Guides</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://wiki.fhcrc.org/bioc/Coding_Standards">Coding Standards for R</a></li>
+<li><a rel="nofollow" class="external text" href="http://google-styleguide.googlecode.com/svn/trunk/google-r-style.html">Style Guide for R</a></li>
+<li><a rel="nofollow" class="external text" href="http://4dpiecharts.com/r-code-style-guide">Style Guide for R</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Tutorials">Tutorials</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.cookbook-r.com">Cookbook R</a></li>
+<li><a rel="nofollow" class="external text" href="http://ww2.coastal.edu/kingw/statistics/R-tutorials/">Coastal Carolina University / William B. King, PhD</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.codeschool.com/courses/try-r/">Code School</a></li>
+<li><a rel="nofollow" class="external text" href="http://tutorialr.com">Crowdsourced list of R tutorials and resources</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.datacamp.com/">DataCamp</a></li>
+<li><a rel="nofollow" class="external text" href="http://pages.rstudio.net/Webniar-Series-Essential-Tools-for-R.html">Essential Tools for R - Webinar Series</a></li>
+<li><a rel="nofollow" class="external text" href="http://flowingdata.com">Flowing Data</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.stat.wisc.edu/~st571-1/BeginnersRcourse.pdf">The Friendly Beginners' R Course</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.r-bloggers.com/google-developers-r-programming-video-lectures/">Google Developers R Programming Video Lectures</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.statmethods.net/index.html">Quick-R</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.nceas.ucsb.edu/files/scicomp/Dloads/RProgramming/BestFirstRTutorial.pdf">R: A self-learn tutorial</a></li>
+<li><a rel="nofollow" class="external text" href="http://duncanjg.files.wordpress.com/2008/11/rcoursedraft1.pdf">R for absolute beginners</a></li>
+<li><a rel="nofollow" class="external text" href="http://rpubs.com/neolinski/R1">R Guide for Beginners</a></li>
+<li><a rel="nofollow" class="external text" href="http://schoolofdata.org/">School of Data</a></li>
+<li><a rel="nofollow" class="external text" href="http://swirlstats.com/">SWIRL: Statistics with Interactive R Learning</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Graphs_and_data_visualization">Graphs and data visualization</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.slideshare.net/izahn/rgraphics-12040991">Introduction to R Graphics with ggplot2</a></li>
+<li><a rel="nofollow" class="external text" href="https://speakerdeck.com/karthik/introduction-to-ggplot2">Data Visualization with R &amp; ggplot2</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.r-statistics.com/2013/12/plotly-beta-collaborative-plotting-with-r/">Plotly Beta: Collaborative Plotting with R</a></li>
+<li><a rel="nofollow" class="external text" href="http://docs.ggplot2.org/current/index.html">ggplot2 Help Topics</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Packages_used_in_the_Data_Science_Specialization">Packages used in the Data Science Specialization</span></h3>
+<ul>
+<li>lubridate</li>
+<li>XML</li>
+<li>xlsx</li>
+<li>xlsxjars</li>
+<li>rJava</li>
+<li>lattice</li>
+<li>ggplot2</li>
+<li>stringr</li>
+<li>swirl</li>
+<li>Hmisc</li>
+<li>data.table</li>
+<li>manipulate</li>
+<li>plyr</li>
+<li>MASS</li>
+<li>jpeg</li>
+<li>httr</li>
+<li>reshape2</li>
+<li>knitr (which is built into RStudio)</li>
+</ul>
+<h3> <span class="mw-headline" id="eBooks_and_Reading">eBooks and Reading</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.amazon.co.uk/gp/product/1446200469">Discovering Statistics Using R</a></li>
+<li><a rel="nofollow" class="external text" href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">The Elements of Statistical Learning</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.math.umass.edu/~lavine/Book/book.pdf">Introduction to Statistical Thought</a></li>
+<li><a rel="nofollow" class="external text" href="http://ipsur.org">Introduction to Probability and Statistics Using R </a></li>
+<li><a rel="nofollow" class="external text" href="http://www.introductoryr.co.uk/">Introductory R: A Beginner's Guide to Data Visualisation and Analysis using R</a></li>
+<li><a rel="nofollow" class="external text" href="http://knowledgeforge.net/opentextbook/svn/multivariatestatistics/notes.pdf">Multivariate Statistics with R</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.introductoryr.co.uk/R_Resources_for_Beginners.html">Online R resources for Beginners</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.manning.com/zumel/">Practical Data Science with R</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.r-statistics.com/">R Statistics Blog</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.springer.com/statistics/computational+statistics/book/978-0-387-75935-7">Software for Data Analysis: Programming with R</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.springer.com/statistics/computational+statistics/book/978-0-387-98966-2">S Programming</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.r-bloggers.com">R Bloggers</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.manning.com/kabacoff/">R in Action</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.burns-stat.com/documents/books/the-r-inferno/">The R Inferno</a></li>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/manuals/R-intro.pdf">R Intro</a></li>
+<li><a rel="nofollow" class="external text" href="https://science.nature.nps.gov/im/datamgmt/statistics/R/documents/R_for_SAS_SPSS_users.pdf">R for SAS and SSPS users</a></li>
+<li><a rel="nofollow" class="external text" href="https://github.com/vinomaster/dawn/tree/master/guides/rant">Reproducible Analysis Navigation Template (rant)</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.packtpub.com/statistical-analysis-with-r-beginners-guide/book">Statistical Analysis with R</a></li>
+<li><a rel="nofollow" class="external text" href="http://upload.wikimedia.org/wikipedia/commons/8/82/Statistics.pdf">Statistics (Probability and Data Analysis)</a></li>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/contrib/usingR.pdf">Using R</a></li>
+<li><a rel="nofollow" class="external text" href="http://cran.r-project.org/doc/contrib/Verzani-SimpleR.pdf">Using R for Introductory Statistics</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Programming_in_common">Programming in common</span></h2>
+<h3> <span class="mw-headline" id="Regexp">Regexp</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://regexone.com/">Online Tutorial with possibility to try things out</a></li>
+<li><a rel="nofollow" class="external text" href="http://leaverou.github.io/regexplained/">Regular Expression Playground by Lea Verou</a></li>
+<li><a rel="nofollow" class="external text" href="http://youtu.be/EkluES9Rvak">Lea Verou's talk on Regular Expressions at Fluent</a> - this talk focuses on JavaScript Regular Expressions, but the syntax is equivalent to R Regular Exprssions.</li>
+<li><a rel="nofollow" class="external text" href="http://www.regular-expressions.info/tutorial.html">Regular Expression Tutorial</a> - focuses on a popular Regular Expression tool, RegExp Buddy.  Lots of general information about Regular Expressions </li>
+</ul>
+<h3> <span class="mw-headline" id="Functional_Programming">Functional Programming</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://en.wikipedia.org/wiki/Functional_programming">Definition for functional Programming</a>, also see <a href="/wiki/index.php/DataSciSpec:Functional_Progr_in_R" title="DataSciSpec:Functional Progr in R">DataSciSpec:Functional&#95;Progr&#95;in&#95;R</a></li>
+</ul>
+<h3> <span class="mw-headline" id="LaTeX">LaTeX</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.tug.org/twg/mactex/tutorials/ltxprimer-1.0.pdf">PDF document</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Markdown_.28md.29">Markdown (md)</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://markdowntutorial.com">Interactive Markdown Tutorial</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Course_Lecture_Notes_.28single_PDF_document_per_course.29">Course Lecture Notes (single PDF document per course)</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Data Scientist's Toolbox</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Developing Data Products</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Exploratory Data Analysis</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Getting and Cleaning Data</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Practical Machine Learning</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">R Programming</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Regression Models</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Reproducible Research</a></li>
+<li><a rel="nofollow" class="external text" href="https://share.coursera.org/wiki/index.php/DataSciSpec:Courses">Statistical Inference</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Unix_shell_-_Don.27t_be_Afraid_of_the_Command-line">Unix shell - Don't be Afraid of the Command-line</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://practical-data-science.blogspot.ca/2012/09/basic-unix-shell-commands-for-data.html">Basic Unix Shell Commands for the Data Scientist</a></li>
+<li><a rel="nofollow" class="external text" href="http://cli.learncodethehardway.org/book/">The Command Line Crash Course</a></li>
+<li><a rel="nofollow" class="external text" href="http://software-carpentry.org/v5/novice/shell/index.html">Software Carpentry: The Unix Shell</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Data_Science_.2F_Statistics">Data Science / Statistics</span></h2>
+<h3> <span class="mw-headline" id="Free_eBooks_2">Free eBooks</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning: with Applications in R</a></li>
+<li><a rel="nofollow" class="external text" href="http://cnx.org/content/col10522/1.40/pdf">Collaborative Statistics</a></li>
+<li><a rel="nofollow" class="external text" href="http://statweb.stanford.edu/~tibs/ElemStatLearn/">The Elements of Statistical Learning</a></li>
+<li><a rel="nofollow" class="external text" href="http://freecomputerbooks.com/">http://freecomputerbooks.com/ with many different sections including Maths</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Tutorials_and_Blogs">Tutorials and Blogs</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.mysliderule.com/data-analysis-intro">Data Analysis Introduction</a></li>
+<li><a rel="nofollow" class="external text" href="http://shop.oreilly.com/category/get/data-science-kit.do">Data Science Starter Kit</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.dataschool.io">Data School</a></li>
+<li><a rel="nofollow" class="external text" href="https://datascience101.wordpress.com">Data Science 101: Learning to be a Data Scientist</a></li>
+<li><a rel="nofollow" class="external text" href="http://thequintessentialdatascientist.blogspot.ca">The Quintessential Data Scientist</a></li>
+<li><a rel="nofollow" class="external text" href="http://simplystatistics.org">Simply Statistics</a></li>
+<li><a rel="nofollow" class="external text" href="http://datascientistinsights.com/2013/01/29/six-types-of-analyses-every-data-scientist-should-know/">Six Types Of Analyses Every Data Scientist Should Know</a></li>
+<li><a rel="nofollow" class="external text" href="http://schoolofdata.org/handbook/courses/the-math-you-need-to-start/#sthash.UYZFhYmX.dpuf">Taming the Fierce Beast</a></li>
+</ul>
+<h3> <span class="mw-headline" id="More_MOOC_course_material_on_the_topic">More MOOC course material on the topic</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://class.stanford.edu/courses/Medicine/MedStats/Summer2014/about">Statistics in Medicine, Stanford</a></li>
+<li><a rel="nofollow" class="external text" href="http://www.openintro.org/">OpenIntro: Stats primer with labs in R</a></li>
+<li><a rel="nofollow" class="external text" href="http://work.caltech.edu/telecourse.html">Caltech on Learning from Data</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/channel/UC4OWDcPB1peiBXDfCSZ3h-w/playlists">Stanford Statistical Learning videos on youtube</a></li>
+<li><a rel="nofollow" class="external text" href="http://mitpress.mit.edu/sites/default/files/titles/content/9780262514293_Creative_Commons_Edition.pdf">Street-Fighting Mathematics</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.khanacademy.org/math/probability">Khanacademy on Statistics</a> Unbelievable Sal Khan offering free lectures, suitable for "Statistical Inference"</li>
+</ul>
+<h2> <span class="mw-headline" id="Open_data_sources">Open data sources</span></h2>
+<h3> <span class="mw-headline" id="Official_statistics">Official statistics</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://epp.eurostat.ec.europa.eu/portal/page/portal/statistics/search_database">Eurostat Statistics Database:</a> Statistics for all countries of the European Union.</li>
+<li><a rel="nofollow" class="external text" href="http://stats.oecd.org/">OECD.Stat Extracts:</a></li>
+<li><a rel="nofollow" class="external text" href="http://data.un.org/">United Nations UNdata:</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Other_public_sources">Other public sources</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://open-data.europa.eu/en/data/">European Union Open Data Portal:</a> Besides Eurostat statistics, includes datasets from public authorities at European level.</li>
+<li><a rel="nofollow" class="external text" href="http://www.data.gov/">U.S. Government’s open data:</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Misc_Information">Misc Information</span></h2>
+<h3> <span class="mw-headline" id="Related_.28older.29_Coursera_Wikis_Pages">Related (older) Coursera Wikis Pages</span></h3>
+<ul>
+<li><a href="/wiki/index.php/Comp4Data:Main" title="Comp4Data:Main"> Computing for Data Analysis</a></li>
+<li><a href="/wiki/index.php/Dataanalysis:Main" title="Dataanalysis:Main"> Data Analysis</a></li>
+<li><a href="/wiki/index.php/ML:Main" title="ML:Main"> Machine Learning</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Other_peoples_contribution_elsewhere_on_the_Web">Other peoples contribution elsewhere on the Web</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.pinterest.com/lewis2387/coursera-data-science/">A pinterest board started by course member </a></li>
+</ul>
+<h3> <span class="mw-headline" id="Working_with_coursera">Working with coursera</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.addictivetips.com/windows-tips/how-to-batch-download-coursera-lecture-videos/">How to download course material for offline usage, Firefox add-on</a></li>
+<li><a rel="nofollow" class="external text" href="https://play.google.com/store/apps/details?id=org.coursera.android">Coursera Android App</a></li>
+</ul>
+<h2> <span class="mw-headline" id="Networking_with_fellow_students">Networking with fellow students</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.facebook.com/groups/datasciencespl/">Unofficial FB group for Data Science Specialisation</a> </li>
+<li><a rel="nofollow" class="external text" href="https://www.facebook.com/groups/1494965447391145/">Global study group for R Programming</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.facebook.com/groups/381769045298227/">facebook group</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.linkedin.com/groups?home=&amp;gid=7495000&amp;trk=anet_ug_hm">LinkedIn group</a></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 4/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=DataSciSpec:Useful_Resources&amp;oldid=30443">https://share.coursera.org/wiki/index.php?title=DataSciSpec:Useful_Resources&amp;oldid=30443</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:DataSciSpec" title="Category:DataSciSpec">DataSciSpec</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>
