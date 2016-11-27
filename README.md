@@ -17,7 +17,9 @@ and also pulls that into `images`.  Then the `File:` hrefs are patched to point 
 image file.  Then the patched HTML is stored in a folder per category under the `html` folder
 
 * Then it reads the "edit" page and pulls out the Markdown from the `<textarea>` tag.  It cleans 
-this up a bit and stores it under the `markdown` folder with folders organized by category.
+this up a bit and stores it under the `markdown` folder with folders organized by category.  This
+is not served, although you can go to `/wiki/markdown` to see it.  My main idea here is in case
+we wanted to reconstruct a real wiki server to serve and edit these pages.
 
 When this is done, the `images` and `html` folders are served up through `index.php` as long as 
 this folder is checked out into the `/wiki` path in a web server.  If you go to `/wiki/index.php`
