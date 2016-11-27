@@ -1,0 +1,537 @@
+[[ThinkAgain:Lecture Notes 1 |Lecture Notes 1]]  [[ThinkAgain:Lecture Notes 2 | <---- Lecture Notes 2 ---->]]  [[ThinkAgain:Lecture Notes 3 | Lecture Notes 3]]
+
+
+Lecture 2-1: Argument Markers
+-----------------------------
+
+* How can we tell when an argument is being given?
+ * Certain sentences are intended as reasons for other sentences.
+ * We can tell the person's intentions by which words they choose.
+ * Certain words indicate that some sentences are reasons for others. 
+
+<pre>
+[1] I am tall, **and** I am good at sports.
+[2] I am tall, **so** I am good at sports.
+</pre>
+
+* `[1]` The first sentence can be switched around and continue to have the same meaning.
+* `[2]` The second sentence cannot be switched around and have the same meaning:
+
+<pre>
+[2a] I am tall, **so** I am good at sports. 
+[2b] I am good at sports, **so** I am tall.
+</pre>
+
+* With **and**, you're simply stating the two facts and that they're both true.
+* With **so**, you're indicating that one of them is a reason for the other. 
+ * `[2a]` The *reason* why you're good at sports is that you're tall. 
+ * `[2b]` The fact that you're good at sports is some kind of *evidence* that you must be tall.
+ * `[2b]` is a bad argument, but it *is* an argument.
+
+* **Argument markers** are words that mark or indicate the presence of an argument.
+
+* **Conclusion markers**:
+ * *so*, *therefore*, *thus*, *accordingly*
+ * The sentence after them is a *conclusion*.
+ * The other sentence is a premise.
+
+* **Reason or premise markers**:
+ * *because*, *for*, *as*, *for the reason that*, *and the reason why*, *since*
+ * The sentence after them is a *reason* or a *premise*.
+ * The other sentence is the conclusion.
+
+* Conclusion markers and reason markers indicate that an argument is present, but only in some cases.
+ * You can't just look at the word and figure out whether it's an argument marker or not. Think about its **role**.
+ * For example, you can't just look for the word **since** and always mark it as an argument marker.
+ * Think about what the word **since** is doing in that **context**.
+
+<pre>
+[3] I am good at sports **since** I am tall.
+[4] The Sun has been up **since** seven o'clock this morning.
+[5] It's been raining **since** my vacation began.
+</pre>
+
+* `[3]` *since* **is** a reason marker - you're presenting the fact that you're tall as a reason why you're good at sports.
+* `[4]` *since* **is not** a reason marker - it doesn't indicate any kind of rational relation, only a temporal one.
+* `[5]` You're **not** saying "It has been raining **because** my vacation began." Another temporal relation.
+
+* The same holds true for conclusion markers - they can indicate something entirely different.
+
+<pre>
+[6] You don't need to eat **so** much. 
+</pre>
+
+* `[6]` *So* doesn't indicate that *much* is a reason for anything.
+
+* Sometimes it's hard to tell whether a particular word is being used as an argument marker or not:
+
+<pre>
+[7a] The liberal party has been dropping in the polls **since** the conservative party held their convention.
+</pre>
+
+* They *might* be saying something like:
+
+<pre>
+[7b] The liberal party has been dropping in the polls **at all times after** the conservative party held their convention.
+[7c] The liberal party has been dropping in the polls **because** the conservative party held their convention.
+</pre>
+
+* How can you tell whether this person is claiming
+ * simply a temporal progression or
+ * some kind of reason for the drop in the polls?
+
+* One trick that is very useful is to try to **substitute** a different word.
+* If their claim means the same if they had used *because*, then you're claiming there's a **rational relation**.
+* If you can't substitute _because_ for _since_, then the word _since_ is not being used as an argument marker. 
+* Sometimes that's just not going to be clear. Many people speak very loosely.
+
+* A good test is whether you can substitute another argument marker for the term that's unclear.
+* If you can, than that shows that the word, in this context, is being used to show that
+ * Something is a premise that gives a reason for something else, which is the conclusion.
+ * That there's an argument being given in that passage.
+
+* **if** is sometimes linked with the word **then** in an **if then clause**, also known as a **conditional**.
+
+* **If** might seem like an argument marker because it's often used in arguments.
+
+<pre>
+[8a] **If** I am rich enough, **then** I can buy a baseball team.
+[8b] I am rich enough. **So**, I can buy a baseball team.
+</pre>
+
+* Together, `[8a]` and `[8b]` present an argument.
+* `[8a]` by itself, however, is **not** an argument.
+ * It's not saying that I am rich enough...
+ * ... And it's not saying that I can buy a baseball team.
+
+* The word if by itself does not indicate an argument. It sets a pattern for an argument.
+
+<pre>
+[9a] if (ANTECEDENT) then (CONDITION)
+[9b] (the one thing) therefore (the other)
+</pre>
+
+* `[9a]` **is not** an argument. `[9a]` **and** `[9b]` **is** an argument.
+
+* **if** is not an argument marker even though it is important for some arguments.
+
+
+Lecture 2-2: Standard Form
+--------------------------
+
+* The actual word order doesn't always tell us the order of argument.
+
+<pre>
+[1a] Because I am a professor, I teach classes. 
+[1b] I teach classes because I am a professor.
+[1c] I teach classes, so I am a professor.
+</pre>
+
+* `[1a]` and `[1b]` express the same argument: I'm a professor is a *reason* why I teach classes.
+* `[1c]` seems to suggest that only professors can teach classes, which is a different argument.
+
+* Let's put the arguments in what's called **Standard Form**:
+
+<pre>
+(1) Premise
+(2) Premise
+--------------------------
+∴ (3) Conclusion (from 1-2)
+</pre>
+
+* Helps us show what's common to the first two examples (`[1a]` and `[1b]`) that distinguishes them from the third example (`[1c]`):
+
+<pre>
+Because I am a professor, I teach classes. 
+I teach classes because I am a professor.
+
+(1) I'm a professor. 
+----------------------
+∴ (2) I teach classes. 
+</pre>
+
+<pre>
+I teach classes, so I am a professor.
+
+(1) I teach classes.
+----------------------
+∴ (2) I'm a professor. 
+</pre>
+
+
+Lecture 2-3: A Problem for Arguments.
+------------------------------------
+
+* The premises are *intended* to be reasons for the conclusion. 
+ * Intentions are nice, but success is better!
+ * What we need to figure out is when the person *succeeds* in giving premises that really are reasons for the conclusion. 
+
+<pre>
+(1) There is at least one bacterium on Mars.
+----------------------------------------------
+∴ (2) Τhere is life on Mars.
+</pre>
+
+* Do the premises justify you in believing the conclusion? 
+ * If the premise is true, the conclusion has got to be true.
+ * If you are justified in believing the premise, then you are also justified in believing the conclusion.
+ * If there's no reason to believe the premise, then you're not justified in believing that premise.
+ * If you're not justified in believing the premise, then how can that premise make you justified in believing the conclusion? 
+
+* An argument cannot justify you in believing that the conclusion is true unless you are justified in believing that the premises are true. 
+
+* In order for the premises to be justified, they have to be backed up by an argument.
+ * But the argument has premises of its own that have to be backed up by another argument. And so on:
+
+<pre>
+... = (7) Premise
+      (6) Premise 
+      ------------
+      ∴ (5) Conclusion = (5) Premise
+                         (4) Premise
+                         -------------
+                         ∴ (3) Conclusion = (3) Premise
+                                            (2) Premise
+                                            ------------
+                                            ∴ (1) Conclusion
+</pre>
+
+* This is known as **The Problem of the Skeptical Regress**.
+ * You regress back to one argument after another after enough and this regress might never end.
+
+* There seems to be only three ways to get around the problem of the skeptical regress.
+ 1. Start with a premise that is unjustified, which doesn't need an argument to back it up.
+ 2. Use an argument with a circular structure, where claim 1 => claim 2 => ... => claim 1.
+ 3. Use an infinite chain of arguments - every claim has an argument to back it up.
+* With unjustified premises, you could make up, and prove, anything, even things which are obviously false.
+* With circular arguments, you could also prove anything. Consider the smallest circle (claim 1 => claim 1) below.
+ * If you didn't know whether there was life on Mars to begin with, you wouldn't know whether the premise was true.
+ * If you don't know the conclusion, you can't know the premise, since the premise *is* the conclusion.
+
+<pre>
+(1) There's life on Mars.
+---------------------------
+∴ (2) There's life on Mars.
+</pre>
+
+* An infinite chain of arguments would allow you to prove there's life on Mars.
+ * If the premise has no independent justification, then neither will the infinite chain:
+
+<pre>
+.
+.
+.
+There are at least three bacteria on Mars.
+------------------------------------------
+∴ There are at least two bacteria on Mars.
+------------------------------------------
+∴ There's a least one bacterium on Mars.
+------------------------------------------
+∴ There's life on Mars.
+</pre>
+
+* If these three possible solutions don't work, then it's hard to see how one would get around *skeptical regress*.
+ * It's hard to see how any kind of argument could ever justify us in believing anything.
+
+* There are various tricks for dealing with the skeptical regress problem.
+
+* One trick is to start from assumptions that everybody shares.
+ * One such assumption would be that you want a car that is *reliable*.
+ * If you want reliability, and I want reliability, that's a reason to buy a car that is reliable.
+
+* But, how do you know that a particular make of car is reliable?
+ 1. Assure the audience or appeal to an authority ("Consumer Reports has done a study...").
+ 2. Discount or respond to possible objections ("Maybe Consumer Reports has been wrong sometimes, but this time...").
+ 3. Guard your claim ("Consumer Reports might be, or are probably, right...")
+
+* Find shared assumptions.
+ * Assumptions about the **premises** of your arguments. 
+ * Assumptions about **authorities** that supposedly support your premises.
+ * Assumptions that you share with your audience in order to get the argument going.
+
+* Finding shared assumptions can be tricky, because it all depends on the context.
+ * With an audience that shares a lot of your assumptions, arguments will be relatively easy.
+ * With an audience that doesn't share any of your assumptions, arguments will be impossible.
+ * Lots of disagreement will cause your premises to be questioned, denied, or rejected by the audience.
+
+
+Lecture 2-4: Assuring
+---------------------
+
+<pre>
+I assure you that smoking is bad for your health.
+</pre>
+
+* *I assure you* means I'm trying to get you to accept that claim on my authority.
+* I might have some *reason* for believing that, but I don't say it.
+* I'm trying to get you to accept my premise without actually citing evidence.
+* Other examples: *It's obvious*, *Everybody knows*, *Certainly*, *Clearly*.
+* If a reason is not actually given, then that reason cannot be questioned.
+* If I don't give the reason, I've cut off your attack on the reason that I would give.
+
+* **Authoritative assurances** cite an authority.
+ * "The *surgeon general* has shown that smoking is bad for your health."
+ * Works only if the audience shares the assumption that the authority is trustworthy.
+ * Even the best authorities sometimes do studies that aren't very careful and might even be wrong.
+
+* **Reflexive assurances** talks about yourself.
+ * *I believe that*, *I know that*, *I am certain that*, *I feel sure that*.
+ * People don't want to question what other people *feel* sure about. It's often impolite.
+ * *Thought about it for years* or *under careful consideration* doesn't make it right.
+
+* **Abusive assurances** are a little more subtle.
+ * The arguer gets you to accept what he believes by abusing you.
+ * If you deny the argument, you're saying you lack common sense. Or are a dummy.
+ * *Nobody but a fool would think that*, *Everybody knows*, *You'd have to be stupid*.
+ * The **appeal to common sense**: *It's just common sense that...*
+
+* These types of assurances are all used on common speech to stop the skeptical regress problem.
+
+* Why do we need any of these assurances in the first place?
+ * We've got limited time. You can't check every study, issue, or authorities.
+
+* Benefits of assurances:
+ 1. They save you time.
+ 2. They help you avoid the skeptic regress.
+
+* Tricks with assurances:
+ 1. Citations of untrustworthy authorities.
+ 2. Distractions (*That's obvious*, *It's certain*, *I'm sure*)
+ 3. Dropping assurances (*He says* => *It is reported* => *Sources have said* => *There are* ...)
+
+* We want an assurance when:
+ 1. Someone might question the claim.
+ 2. The audience accepts the authority.
+ 3. It would be too much trouble to cite all of the evidence.
+
+* Assurances are not appropriate when:
+ 1. No one would question the claim anyway.
+ 2. The authority is not trustworthy.
+ 3. You are easily able to give the full explanation.
+
+
+Lecture 2-5: Guarding
+---------------------
+
+* Guarding involves making your premises weaker so that it is harder to object to them.
+
+<pre>
+We should not build any new nuclear power plants, because
+**(some|I believe that some)** of them **might** explode.
+</pre>
+
+* What's an opponent to this argument going to do?
+ * Show that you *don't really believe it*?
+ * Show that it's not true that they *might* explode?
+ * Show that it's not true that *any* of them might explode?
+
+* Guarding a premise makes it more likely to be true, and less subject to objection.
+
+* With guarding, you get people to agree to share your assumption by weakening your premises.
+
+* When you see someone guarding, why did they put in the guard?
+ * Have they weakened the premise so much that the conclusion no longer follows?
+
+<pre>
+We need a new alcohol officer on our campus because **all** students drink too much.
+We need a new alcohol officer on our campus because **most** students drink too much.
+We need a new alcohol officer on our campus because **many** students drink too much.
+We need a new alcohol officer on our campus because **some** students drink too much.
+</pre>
+
+* **Guarding by extent**:
+ * Scale: *all* => *most* => *many* => *some*.
+ * As you move down this scale, the premise gets harder and harder to deny.
+ * Whether this counts as guarding depends on the expectation.
+ * It is guarding when you weaken a premise beyond what would otherwise be expected in the context.
+
+<pre>
+It is **absolutely certain** that O.J. Simpson killed his wife.
+O.J. Simpson **probably** killed his wife.
+It is **likely** that O.J. Simpson killed his wife.
+**There is a chance** that O.J. Simpson killed his wife.
+O.J. Simpson **might** have killed his wife.
+</pre>
+
+* **Guarding by probability**:
+* Scale: *It's certain* => *It's (probable|likely)* => *There's a chance* => *He might have*.
+ * The further you scale down, the easier it is to defend your premise because you're claiming less.
+ * The question is going to be whether you've done it too much.
+ * *He might have killed his wife, therefore he ought to be convicted.* => Wrong.
+ * *He probably killed his wife, therefore he ought to be convicted.* => Might be wrong.
+
+<pre>
+I **know** that the President is 50 years old.
+I **believe** that the President is 50 years old.
+I **tend to believe** that the President is 50 years old.
+I am ***inclined to believe** that the President is 50 years old.
+</pre>
+
+* **Guarding by mental**:
+ * Scale: *know* => *believe* => *tend to believe* => *inclined to believe*.
+ * As you move down the scale, you're making the premise weaker which makes it harder to question.
+
+
+Lecture 2-6: Discounting
+------------------------
+
+* Discounting is citing a possible criticism in order to reject it or counter it.
+
+<pre>
+The ring is expensive, **but** it is beautiful.
+</pre>
+
+* Citing the objection makes it less likely that the other person is going to say it.
+ * "I know that! But it's more important to me that the ring is beautiful."
+
+1. It asserts or admits that the ring is expensive.
+2. It also asserts that the ring is beautiful.
+3. It contrasts the two claims.
+4. It emphasizes the second claim about beauty.
+
+<pre>
+[1a] The ring is beautiful, **and** it is expensive.
+[1b] The ring is expensive, **and** it is beautiful.
+[1c] The ring is expensive, **but** it is beautiful.
+[1d] The ring is beautiful, **but** it is expensive.
+</pre>
+
+* **and** and **but** can mean very different things.
+ * `[1a]` and `[1b]` are equivalent.
+ * `[1c]` and `[1d]` are very different.
+ * `[1c]` is an argument *for* buying the ring.
+ * `[1d]` is an argument *against* buying the ring.
+* *But* indicates the sentence after it is more important than the sentence before it.
+ * You're discounting the first object and citing the reason for the belief you favor.
+* The sentences on either side of *and* are reversible without changing meaning.
+* The sentences on either side of *but* are not reversible without changing meaning.
+
+* There are other words that are discounting phrases, but fall in a different place.
+ * *But* usually occurs before the emphasized clause.
+ * *Although* usually occurs before the deemphasized clause.
+
+<pre>
+Although the ring is expensive, it is beautiful.
+</pre>
+
+* Functions of discounting terms
+ 1. They assert two claims.
+ 2. They contrast the two claims.
+ 3. They emphasize one of the claims.
+
+* Other examples: *even if*, *even though*, *whereas*, *nevertheless*, *nonetheless*, *still*, *however*.
+ * These words *can* be used in other ways that are not discounting.
+ * Use the *substitution method* to test for what the function of the word is.
+
+* The trick of discounting straw people ("easy to destroy" arguments):
+ * The arguer discounts easy objections to make people overlook the more difficult objections.
+
+* Arguers can combine the trick of discounting straw people with misuses of guarding and assuring.
+
+<pre>
+The President is in favor of a public health service,
+**but** a public health service is not going to solve
+**all** of the medical problems of our people, so I think
+the President is off on the wrong track.
+</pre>
+
+* This discounts the objection that the public health service will solve *all* problems.
+ * But whoever thought the public health service would actually solve *all* the problems?
+ * The arguer is discounting the straw man by using an unguarded term *all*.
+ * The arguer has put the unguarded term in the mouth of the objecter.
+ * By not guarding it, he's made the objection more susceptible to refutation.
+ * The objector would never have used the unguarded term *all* but *most* or *many*.
+
+* Think about the objections that the arguer is **not** considering.
+
+
+Lecture 2-7: Evaluation
+-----------------------
+
+<pre>
+You ought to support my healthcare plan because it would be good for the country.
+</pre>
+
+* What is the word *good* doing here?
+ * Some will say it's just a way of expressing your emotions.
+ * So, the politician is saying "Yay!" for his health care plan.
+ * But "Yay, Duke!" is cheering for the team even if they're *not good*.
+ * And it doesn't make any sense to say "But, why?" in response to "Yay, Duke!"
+ * "Yay for my health care plan" is very different than saying it's a good plan.
+
+<pre>
+I don't like fish, so we shouldn't have fish for dinner.
+</pre>
+
+* Not liking fish doesn't really require a *reason* behind not liking it.
+ * *It's immoral / It's wrong / You ought not to eat fish* is a different story.
+ * The speaker now needs to explain what's immoral about eating fish.
+
+* Expressing Preferences ≠ Making An Evaluation.
+
+* One way of to capture this feature of evaluative language is to interpret as:
+ * *Good* -> meets the standards; *Bad* -> violates the standards.
+ * The standards of a good painting are different than those of a good investment.
+
+* The trick is, when we call something *good*, we don't specify what the standards are.
+ * We leave that up to the context to specify what kind of standards.
+ * It's like *assuring* - you have some reason, but you don't specify the reason.
+ * The claim is more defensible: standards can't be questioned if they're not presented.
+
+<pre>
+We ought to turn left here.
+</pre>
+
+* We don't have to agree on what the standards are.
+ * #1: "turn left here" because it's a quicker way to our destination.
+ * #2: "turn left here" because it's a more beautiful and scenic view.
+
+* Less objections if people can apply their own standards to the meaning of *good*.
+
+* Evaluation is another way to avoid the skeptic regress.
+
+* Different levels of evaluation:
+ * General: *Good or Bad*, *Ought or Ought Not*, *Should or Should Not*, *Right or Wrong*.
+ * Specific: *Beautiful or Ugly*, *Cruel or Kind*, *Brave or Cowardly*, *Comfortable or Uncomfortable*.
+ * Defining a more specific evaluative word often requires using general evaluative words.
+ * A *bargain* is something with a *good price* and a good price is a *low price*.
+ * What makes these words evaluative is their connection to what is good or bad.
+
+* *Contextually evaluative* words are not defined by *good* are *bad*...
+ * ...and are only evaluative in certain contexts.
+ * A conservative politician might criticize her opponent by saying:
+
+<pre>
+His policies are too liberal.
+</pre>
+
+* She intends *liberal* as a criticism, but the word itself isn't *bad*.
+ * The opponent might say "Yes, it's liberal. I'm proud to be a liberal!"
+
+* We will call language "evaluative" only when it is openly and literally evaluative.
+ * It gets defined in words like *good* or *bad*, and not when it's merely contextually evaluative.
+
+* Combining positive and negative evaluative words can be tricky:
+ * *Good* means *good*. But *pretty good* is not as good as *good*.
+ * And adding a negative, *pretty darn good*, means it's *very good*.
+
+* Another tricky word is "too":
+ * *This food is spicy* is *good*.
+ * *This food is too spicy* is *bad*.
+ * Too is a negative evaluative word because it makes a positive or neutral word become bad.
+
+* **Slanting** is using evaluative terms without having reasons for doing so.
+ * People typically slant when they don't have any reason for their evaluation.
+ * Good indication that that's where their argument is probably weak.
+
+
+Lecture 2-8: Close Analysis
+---------------------------
+
+* Reason Marker = R (or P)
+* Conclusion Marker = C
+* Assuring Term = A
+* Guarding Term = G
+* Discounting Term = D
+* Positive Evaluative Term = E+
+* Negative Evaluative Term = E-

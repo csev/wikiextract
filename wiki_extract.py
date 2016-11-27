@@ -21,6 +21,8 @@ categories = [
 
 categories = []
 
+# categories = ['Thinkagain', 'ThinkAgain']
+
 start = 'Main'
 
 # The file cookies should be the cut-pasted from Chrome
@@ -100,7 +102,7 @@ for category in categories:
 
     retrieved = list()
     todo = list()
-    todo.append(start)
+    todo.append(category+':'+start)
 
     while len(todo) > 0 : 
         print("----- Pages left to Spider ",len(todo))
@@ -115,7 +117,7 @@ for category in categories:
             continue
         retrieved.append(page)
 
-        url = baseurl + '/' + category + ':' + urllib.parse.quote_plus(page)
+        url = baseurl + '/' + urllib.parse.quote_plus(page)
         print('Retrieving HTML',url)
         # Retrieve the HTML
         opener = urllib.request.build_opener()
@@ -196,7 +198,7 @@ for category in categories:
                 v = image_map[k]
                 data = data.replace(k,v)
 
-            fname = 'html/'+category+'/'+page
+            fname = 'html/'+page.replace(':','/')
             folder = os.path.dirname(fname)
             if not os.path.exists(folder):
                 os.makedirs(folder)
@@ -212,7 +214,7 @@ for category in categories:
             print('Wrote',len(data),' characters to '+fname)
     
         # Retrieve the markdown
-        url = baseurl + '?title=' + category + ':' + urllib.parse.quote_plus(page) + '&action=edit'
+        url = baseurl + '?title=' + urllib.parse.quote_plus(page) + '&action=edit'
         print('Retrieving markdown',url)
 
         opener = urllib.request.build_opener()
@@ -237,7 +239,7 @@ for category in categories:
             # Assume the first one
             textarea = html.unescape(textarea[0])
     
-            fname = 'markdown/'+category+'/'+page
+            fname = 'markdown/'+page.replace(':','/')
             folder = os.path.dirname(fname)
             if not os.path.exists(folder):
                 os.makedirs(folder)
@@ -256,14 +258,15 @@ for category in categories:
             # for line in lines:
                 # print(line)
     
-            refs = re.findall('\[\['+category+':(.*?)\|.*?\]\]', textarea, re.MULTILINE | re.DOTALL)
-            # refs2 = re.findall('\[\['+category.capitalize()+':(.*?)\|.*?\]\]', textarea, re.MULTILINE | re.DOTALL)
-            # refs = refs + refs2
-            # print(refs)
+            refs = re.findall('\[\[(.*?:.*?)\|.*?\]\]', textarea, re.MULTILINE | re.DOTALL)
             for ref in refs :
+                pieces = ref.split(':')
+                if len(pieces) != 2 : continue
+                if pieces[0].lower() != category.lower() : continue
+                ref = pieces[1]
                 ref = ref.rstrip()
                 ref = ref.replace(' ','_')
                 if ref in retrieved : continue
                 if ref in todo : continue
-                todo.append(ref)
+                todo.append(pieces[0]+':'+ref)
 

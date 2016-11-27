@@ -1,0 +1,101 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Reference Card Week 4</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_3" title="ThinkAgain:Reference Card Week 3">Reference Card Week 3</a>  <strong class="selflink"> &lt;---- Reference Card Week 4 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_5" title="ThinkAgain:Reference Card Week 5">Reference Card Week 5</a></p>
+<h1> <span class="mw-headline" id="Propositional_Logic">Propositional Logic</span></h1>
+<p>A propositional connective is a phrase that connects to one or more propositions in order to express another proposition (a proposition is either a premise of a conclusion, and can be either true of false), e.g. "it is necessary that X", "it is true that", etc</p>
+<ul>
+<li>The final proposition may not logically depend on the original proposition(s) (whether "I hate it when [proposition]" is true is independent of whether [proposition] is true)</li>
+<li>When the final proposition is dependent on the original proposition(s) ("[proposition 1] and [proposition 2]"), the connective is called a truth-functional connective
+
+<ul>
+<li>The associated truth table stays the same even if we change the propositions</li>
+<li>Conjunction: a connective that requires all original propositions to be true ("and" or "&amp;") 
+
+<ul>
+<li>a conjunction introduction argument is a valid argument which the conclusion conjoins two or more of the premises (e.g. A, B .: A and B)</li>
+<li>a conjunction elimination argument is a valid argument which the conclusion is a conjunct of some conjuntion that appears in the premises (e.g. A and B .: A)</li>
+</ul></li>
+</ul></li>
+</ul>
+<pre>
+p  q  p&amp;q  
+T  T  T  
+T  F  F  
+F  T  F  
+F  F  F  
+</pre>
+<ul>
+<li>Disjunction: a connective that requires either/or original propositions to be true (logical "or" or "v") 
+
+<ul>
+<li>a disjunction introduction argument is a valid argument in which the conclusion disjoins one of the premises with some other proposition (e.g. A .: A or B)</li>
+<li>a disjunction elimination argument is a valid argumetnt in which the conclusion is a disjunct of some disjunction that appears in the premises (e.g. A or B .: A)</li>
+</ul></li>
+</ul>
+<pre>
+p  q  pvq  
+T  T  T  
+T  F  T  
+F  T  T  
+F  F  F  
+</pre>
+<ul>
+<li>Negation: a connective that converts a proposition into an opposite proposition (logical "not" or "~")
+
+<ul>
+<li>"it is not the case that [proposition]" is the most reliable way to negate a proposition</li>
+<li>Usual boolean logic applies: ~~p &lt;=&gt; p, ~(p&amp;q) &lt;=&gt; ~pv~q, ~(pvq) &lt;=&gt; ~p&amp;~q</li>
+</ul></li>
+</ul>
+<pre>
+p  ~p  
+T  F  
+F  T  
+</pre>
+<ul>
+<li>Conditional: a connective that connects two propositions ("if [q] then [q]", aka ⊃)
+
+<ul>
+<li>It is the equivalent of ~pvq</li>
+<li>a biconditional (≣) means that 2 propositions are equivalent (p is true if and only if q is true)</li>
+</ul></li>
+</ul>
+<pre>
+p  q  p⊃q      p  q  p≣q      
+T  T  T        T  T  T        
+T  F  F        T  F  F        
+F  T  T        F  T  F        
+F  F  T        F  F  T        
+</pre>
+<h1> <span class="mw-headline" id="Truth_Table">Truth Table</span></h1>
+<p>A truth table is a boolean logic table which displays the various possibilities (true/false) for each proposition.</p>
+<p>To see if an argument involving a truth-functional connective is valid, look for a row where all premises are true and see if the conclusion is true no matter what.</p>
+<h3> <span class="mw-headline" id="Example">Example</span></h3>
+<p><pre>
+(1) A              A  B  AvB                       A  B  AvB
+(2) A or B         T  T  T        remove rows      T  T  T
+    ------    -&gt;   T  F  T      --where A or   -&gt;  T  F  T
+.:  B              F  T  T        AvB are false
+                   F  F  F
+</pre>
+There is a scenario where B is false, therefore the argument is invalid.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 47/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_4&amp;oldid=23122">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_4&amp;oldid=23122</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

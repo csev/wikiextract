@@ -1,0 +1,301 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Lecture Notes 1</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><strong class="selflink"> &lt;---- Lecture Notes 1 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Lecture_Notes_2" title="ThinkAgain:Lecture Notes 2"> Lecture Notes 2</a></p>
+<p>Think Again: How to Reason and Argue</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Week_1_-_How_to_spot_an_Argument"><span class="tocnumber">1</span> <span class="toctext">Week 1 - How to spot an Argument</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Lecture_1-1:_Why_arguments_matter"><span class="tocnumber">1.1</span> <span class="toctext">Lecture 1-1: Why arguments matter</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-2:_What_is_an_argument."><span class="tocnumber">1.2</span> <span class="toctext">Lecture 1-2: What is an argument.</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-3:_What_arguments_are_used_for:_PERSUASION_and_JUSTIFICATION"><span class="tocnumber">1.3</span> <span class="toctext">Lecture 1-3: What arguments are used for: PERSUASION and JUSTIFICATION</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-4:_What_else_are_arguments_used_for.3F_EXPLANATION"><span class="tocnumber">1.4</span> <span class="toctext">Lecture 1-4: What else are arguments used for?  EXPLANATION</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-5:_What_arguments_are_made_of_-_Language"><span class="tocnumber">1.5</span> <span class="toctext">Lecture 1-5: What arguments are made of - Language</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-6_Meaning"><span class="tocnumber">1.6</span> <span class="toctext">Lecture 1-6 Meaning</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-7_.28optional.29_Linguistic_Acts"><span class="tocnumber">1.7</span> <span class="toctext">Lecture 1-7 (optional) Linguistic Acts</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-8_.28optional.29_Speech_Acts"><span class="tocnumber">1.8</span> <span class="toctext">Lecture 1-8 (optional) Speech Acts</span></a></li>
+<li class="toclevel-2"><a href="#Lecture_1-9_.28optional.29_Conversational_Acts"><span class="tocnumber">1.9</span> <span class="toctext">Lecture 1-9 (optional) Conversational Acts</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Week_1_-_How_to_spot_an_Argument">Week 1 - How to spot an Argument</span></h1>
+<h2> <span class="mw-headline" id="Lecture_1-1:_Why_arguments_matter">Lecture 1-1: Why arguments matter</span></h2>
+<p>General introductory information</p>
+<p>Arguments express reasons. (We do not want our reasons to be arbitrary, or unjustified.)</p>
+<p>Good arguments lead to good reasons.</p>
+<p>Το think in a new way, and in a deeper way, about the issues that matter to you most. This is a particular type of thinking, namely <strong>reasoning</strong>. </p>
+<p>Most people don't want to be arbitrary or have unjustified beliefs. They want to have reasons for what they think and do. </p>
+<p>To approach reasons by way of arguments. </p>
+<p>Arguments are ways to express reasons. </p>
+<p>If you can understand arguments, you can understand reasons. </p>
+<p>If you can formulate good arguments, you can have good reasons for the ways in which you think and behave. </p>
+<p>It's important to understand arguments to get better reasons for your own beliefs and actions. </p>
+<p>Important to understand arguments in order to avoid mistakes because there are lots of charlatans out there who are going to try to convince you to think the way they want you to think and to behave the way they want you to behave by giving you bad arguments. Thus, you need to spot them and avoid them. </p>
+<p>e.g. a lawyer in a courtroom </p>
+<ul>
+<li>PART ONE: How to analyze arguments. </li>
+</ul>
+<p>That might seem really simple, you just read the passage or hear what they're saying. But actually, it's quite hard because some passages or some sets of words contain arguments and others don't. </p>
+<p>e.g. a letter to the editor. Some letters to the editor don't have arguments at all, they just thank people. Other letters to the editor include arguments. They try to convince you to vote for a certain political candidate, for example. </p>
+<p>To distinguish which passages include arguments and which passages don't include arguments. Then, you need to look at those passages and figure out which of the words, which parts of those passages contain the argument. </p>
+<p>Then, you need to separate out those parts, put them in a certain order, which we'll call standard form. And, often these arguments will have missing parts and you'll have to supply those missing parts or suppressed premises in order to get a full picture of how the argument works. </p>
+<ul>
+<li>PART TWO: How to evaluate arguments</li>
+</ul>
+<p>Evaluation depends a lot on what the purpose of the argument is. Some arguments try to be valid in a logical way, and those are <strong>deductive arguments</strong>. So, we'll start first by looking at deductive arguments and the <strong>formal structure of deductive arguments</strong>. We'll look at <strong>propositional logic</strong> and <strong>categorical logic</strong>.  </p>
+<ul>
+<li>PART THREE: Inductive Arguments</li>
+</ul>
+<p>These don't even try to be deductively valid. There are a lot of different kinds. </p>
+<ul>
+<li>statistical generalizations, </li>
+<li>applying generalizations down to particular cases, </li>
+<li>inference to the best explanation and arguments from analogy, </li>
+<li>causal reasoning and probability and </li>
+<li><p>decision making. </p></li>
+<li><p>PART FOUR: Fallacies</p></li>
+</ul>
+<p>Common and tempting ways to make mistakes in arguments. </p>
+<ul>
+<li><p>vagueness </p></li>
+<li><p>ambiguity </p></li>
+<li><p>irrelevance like arguments Ad Hominem and Appeals to Ignorance </p></li>
+<li><p>begging the question </p></li>
+</ul>
+<p>A general method for spotting and avoiding these common mistakes. </p>
+<h2> <span class="mw-headline" id="Lecture_1-2:_What_is_an_argument.">Lecture 1-2: What is an argument.</span></h2>
+<p><strong>Arguments are tools</strong>: To understand a tool we need to know:</p>
+<ul>
+<li>the <strong>purposes</strong> for which it is used.</li>
+<li>the <strong>material</strong> out of which it is made.</li>
+<li>the <strong>forms</strong> that it may take.</li>
+</ul>
+<p><strong>What arguments are not</strong>:</p>
+<ul>
+<li><p>hitting people on the head. </p></li>
+<li><p>fights. </p></li>
+<li><p>yelling at someone.  </p></li>
+<li><p>verbal abuse. </p></li>
+<li><p>complaints.</p></li>
+<li><p>contradictions. </p></li>
+</ul>
+<p>Argument is an intellectual process. It's a process not just of asserting your views, but <strong>of giving some kind of reason for your views</strong>. </p>
+<p>What an argument is made of. It's a series of statements, and statements are made in language, so arguments are made of language. </p>
+<p>What the purpose of argument is: the purpose of argument, they say, is to establish a certain proposition, but there are lots of other series of statements or sentences <strong>that don't count as arguments because they're not intended to establish a proposition</strong>. </p>
+<p>Examples: </p>
+<ul>
+<li><p>A <strong>novel</strong> has statements about what's going on, but it's not necessarily trying to establish any particular proposition.</p></li>
+<li><p>A <strong>dictionary</strong> might have a series of definitions, but it's not intended to establish a certain proposition. </p></li>
+</ul>
+<p>Arguments: to put statements into a certain structure that reflects the order of reasoning in order to establish the proposition. But the purpose of an argument is not always to establish a proposition because some propositions are conclusions of arguments we already knew. </p>
+<ul>
+<li>Example: A mathematical proof (e.g. the Pythagorean Theorem). </li>
+</ul>
+<p>People already knew that the Pythagorean Theorem was true, so they weren't trying to establish the proposition. The proof shows you how that proposition is connected to the axioms of the system and helps you understand why the proposition is true. Other arguments, like explanations, do the same thing. </p>
+<p>Arguments are intended to help us understand the proposition and the reasons why the proposition is true. </p>
+<p>So, we want to distinguish </p>
+<ul>
+<li><p><strong>reasons</strong> to believe that the proposition is true from </p></li>
+<li><p><strong>reasons</strong> why the proposition is true. </p></li>
+</ul>
+<p>(A somewhat broader) definition of argument is:</p>
+<ul>
+<li>a series of sentences, statements, or propositions  </li>
+<li>where some are the premises  </li>
+<li>and one is the conclusion  </li>
+<li>where the premises are intended to give a reason for the conclusion  </li>
+</ul>
+<p>Another definition of an argument might be:  </p>
+<ul>
+<li>An argument is a connected series of sentences, statements or propositions in which one or more “premises” are intended to give reason(s) of some kind for another sentence, statement or proposition that is also included in that connected series, called the “conclusion”.  </li>
+</ul>
+<p>This definition is useful in many ways: </p>
+<ul>
+<li><p>It tells you what the parts of the arguments are (the premises and the conclusion).</p></li>
+<li><p>It tells you what the argument's made of (it's made of language).</p></li>
+<li><p>It tells you the purpose of argument (to give a reason for the conclusion).</p></li>
+<li><p>It's very flexible, because <strong>there are lots of different kinds of reasons</strong>.</p></li>
+</ul>
+<p>The notion of <strong>reason</strong> captures the different kinds of relations between the <strong>premises</strong> and the <strong>conclusion</strong> in different kinds of arguments. </p>
+<h2> <span class="mw-headline" id="Lecture_1-3:_What_arguments_are_used_for:_PERSUASION_and_JUSTIFICATION">Lecture 1-3: What arguments are used for: PERSUASION and JUSTIFICATION</span></h2>
+<ul>
+<li>To understand arguments, one needs to understand the purpose for arguments.  </li>
+<li>Persuading is to make someone do or believe things they otherwise wouldn’t do or believe (also known as convincing).  </li>
+<li><p>Justifying is to give someone a reason to believe a conclusion ( that they may or may not already believe ).  </p></li>
+<li><p>I want my argument not only to make you believe my conclusion, but also <strong>to make you justified in believing my conclusion.</strong></p></li>
+</ul>
+<p>How to tell them apart:<br />
+If a person is trying to change someone’s mind, the goal is persuasion.<br />
+If a person is trying to give reasons to believe, the goal is justification.  </p>
+<ul>
+<li><p>impersonal justification: what is sought is a reason that is or should be accepted as a good reason <strong>by everybody</strong>.</p></li>
+<li><p>personal justification: arguments aimed <strong>at a specific audience</strong>. </p></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_1-4:_What_else_are_arguments_used_for.3F_EXPLANATION">Lecture 1-4: What else are arguments used for?  EXPLANATION</span></h2>
+<ul>
+<li>Explaining something is giving a reason for why it happened/happens or is true.  </li>
+<li>In doing this, we assume the ‘something’ has/does in fact happened/happen or is in fact true - When you justify, the audience might not believe what you are justifying but when you explain, both you and the audience believe what you are explaining.  </li>
+<li><p>The goal is to increase understanding and help people understand why something is true.  </p></li>
+<li><p>Kinds of explanations (As defined by Aristotle; he refers to them as ‘causes’.):  </p></li>
+</ul>
+<ol>
+<li>Causal: the efficient/moving cause (primary source)<br />
+e.g.: Why did the bridge collapse? The earthquake shook it.  </li>
+<li>Teleological: the final cause (aim/purpose)<br />
+e.g.: Why did Joe go to the store? To buy milk.  </li>
+<li>Formal: the formal cause (shape)<br />
+e.g.: Why doesn’t this square peg fit in that round hole? The peg is square.  </li>
+<li>Material: the material cause (physical material)<br />
+e.g.: Why is this golf club light? It is made of graphite.  </li>
+</ol>
+<ul>
+<li>They can coexist for the same event.<br />
+Examples:<br />
+Why did the train emit a loud noise?<br />
+Causal (Why?): Because the engineer pulled a lever that made it emit the noise.<br />
+Teleological (What for?): The train was crossing the intersection and wanted cars to know it was coming.<br />
+Formal (What form/shape does it have?): Because the whistle has a certain shape that makes the air come out with a certain vibration.<br />
+Material (What does it consist of?): Because air has a certain density that creates that kind of sound.  </li>
+</ul>
+<p>nB: Only teleological explanation cites purpose/ goal. Formal, material and causal explanations do not cite purpose/goal.  </p>
+<p>Explanation in the form of an argument: (note: ∴ is known as the ‘therefore’ sign)  </p>
+<code><pre>  General principles or laws
+         Initial conditions
+ ∴ Phenomenon to be explained
+</pre></code>
+<p>Example:</p>
+<code><pre>  Colonial settlers tend to preserve their home customs, practices &amp; 
+  styles. (General principles or laws)
+
+* Flooding is a real danger in the Netherlands.
+* Dutch put their electrical outlets above floor level on their   
+  walls in the Netherlands.
+* Dutch settlers in Indonesia put their electrical outlets above 
+  floor level on their walls.
+ (Initial conditions)
+
+∴ Houses in Indonesia have their electrical outlets in the middle  
+  of the wall rather at floor level. (Phenomenon to be explained)
+</pre></code>
+<h2> <span class="mw-headline" id="Lecture_1-5:_What_arguments_are_made_of_-_Language">Lecture 1-5: What arguments are made of - Language</span></h2>
+<p>Purposes of Argument:
+<ul><li> Persuasion
+</li><li> Justification
+</li><li> Explanation
+</li></ul>
+… and more that we’ll discuss later on in the course  </p>
+<ul>
+<li>Arguments are made out of language.  </li>
+<li>Humans are the only animals that can use language complex enough to form arguments.</li>
+</ul>
+<p>Language is:  </p>
+<p><strong>Important</strong> </p>
+<p><strong>Conventional</strong>  </p>
+<p><strong>Representational</strong>  </p>
+<p><strong>Social</strong> </p>
+<p>Constraints of Language (Language operates at all of these levels)  </p>
+<p>Semantics: meanings of words.<br />
+Physical production: volume, pronunciation, and so on.<br />
+Syntax/Structural Combination: Spelling and Grammar<br />
+Etiquette  </p>
+<h2> <span class="mw-headline" id="Lecture_1-6_Meaning">Lecture 1-6 Meaning</span></h2>
+<p>What is meaning? For this class we are talking about linguistic meaning (in contrast to meaning as a personal interpretation, e.g.: ‘meaning of life‘ or meaning as natural phenomenon, e.g.: ‘clouds mean rain’).  </p>
+<p>The referential or descriptive view of language considers the meaning of words to be equal to what they refer to, and the meaning of sentences to be the facts they try to describe. - It’s NOT sufficient as it does not include many words that would be left without meaning (like ‘hello’, ‘not’, ‘am’, ‘sitting’ etc.)  </p>
+<p>Ludwig Wittgenstein states ‘Meaning is use”. - In order to find the meaning of a word, one needs to investigate how it is used.  </p>
+<p>Levels of language: </p>
+<p><strong>1) Linguistic</strong><br />
+producing a meaningful utterance<br />
+(when a sentence satisfies essential semantic and syntactic conventions, then the speaker performs a linguistic act)  </p>
+<p><strong>2) Speech</strong><br />
+getting information across, but not persuading<br />
+(when the says-so makes so, then the speaker performs a speech act)  </p>
+<p><strong>3) Conversational</strong><br />
+an act that tries to bring about an effect in the world<br />
+(when the effect actually takes place, the speaker has performed a conversational act - parallel: the shooting of a gun does not become an act of murder until the person shot at, dies)  </p>
+<p>semantic rules = rules that govern meaning and reference.<br />
+(“semantic” comes from a greek word meaning “meaningful”, so we may alternatively refer to “rules of meaning”).  </p>
+<p>grammatical or syntactic rules = rules that govern the way words are put together in order to form sentences.  </p>
+<h2> <span class="mw-headline" id="Lecture_1-7_.28optional.29_Linguistic_Acts">Lecture 1-7 (optional) Linguistic Acts</span></h2>
+<p>As soon as we can make sense of a linguistic construct (word, sentence), it is considered a linguistic act.  </p>
+<p>Examples of ‘non-sense’:  </p>
+<p>1-Lewis Caroll’s ‘Jabberwocky’<br />
+ ( The nonsense words carry no meaning; they are nonsensical.)  </p>
+<p>2-Dog fleas my has’<br />
+ ( The words carry meaning as individual words but the syntax makes this example nonsensical)  </p>
+<p>3-Chomsky’s example ‘Colorless green ideas sleep furiously’<br />
+ ( The words by themselves carry meaning and we are able to make sense of how they are interconnected as it is grammatically correct, yet it is semantically nonsensical )  </p>
+<p>Examples that may seem nonsensical but that are in fact linguistic acts:<br />
+<dl><dd> Garden path sentences
+</dd><dd> “Buffalo buffalo Buffalo”</p>
+</dd></dl>
+
+<h2> <span class="mw-headline" id="Lecture_1-8_.28optional.29_Speech_Acts">Lecture 1-8 (optional) Speech Acts</span></h2>
+<p>A speech act can be described as ‘the say-so makes so’. For example, by stating “I promise A.“ you actually promise A.  </p>
+<p>A useful - though not perfect- method to see if something qualifies as a speech act is the so-called "The Thereby Test":  </p>
+<blockquote>
+  <p>If I say ‘I ...’ then in the right circumstances I thereby … .  </p>
+</blockquote>
+<p><strong>Circumstances Matter</strong><br />
+<ul><li> A speech act has to occur in the right circumstances.<br />
+</li><li> You can't just randomly walk up to any couple on the street and say, I now pronounce you husband and wife.<br />
+</li><li> And we can build that into the thereby test by just adding a few words.
+</li><li> If I say I _____ in the appropriate circumstances, then I thereby _____.
+</li><li> But it's only in the appropriate circumstances, that you can perform the speech act by uttering the words.<br />
+</li><li> The circumstances affect whether any speech act is performed at all, or the speech act was failed to be performed.<br />
+</li><li> Sometimes when the circumstances are not right, a different speech act is performed.<br />
+</li><li> Sometimes when the circumstances are not right, no speech act is performed at all.  </p>
+</li></ul>
+
+<p><strong>Arguing is a speech act.</strong><br />
+<ul><li> You argue with language.<br />
+</li><li> It's one of those things that you do in using language in a certain way.<br />
+</li><li> You're intending to provide reasons and you're providing what you take to be a reason, but to justify or explain the conclusion.<br />
+</li><li> Need to view arguing in the context of the other speech acts.  </p>
+</li></ul>
+
+<p><strong>Speech act verbs</strong><br />
+<ul><li> thanking<br />
+</li><li> promising<br />
+</li><li> apologizing<br />
+</li><li> threatening<br />
+</li><li> justifying<br />
+</li><li> explaining</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Lecture_1-9_.28optional.29_Conversational_Acts">Lecture 1-9 (optional) Conversational Acts</span></h2>
+<p>Conversational Maxims by Paul Grice (1913-1988)  </p>
+<p>QUANTITY-  Don’t say more than you need, or too little to make the point you wish<br />
+QUALITY- Don’t say what you don’t believe to be true, or what you have no reason to believe<br />
+RELEVANCE- Be relevant<br />
+MANNER- Be brief, Be orderly, Avoid obscurity, Avoid ambiguity  </p>
+<p>( The maxims apply to cooperative language settings; not to all conversational acts as they are performed in the real world )  </p>
+<p>Definition of Conversational Act<br />
+= the bringing about of the intended effect, which is the standard effect for the kind of speech act that the speaker is performing.<br />
+Standard sets of speech act/conversational act:<br />
+- question/answer<br />
+- apology/forgiveness<br />
+- promise/reliance  </p>
+<p>Conversational implication is not the same as logical implication. To show the argument is false you must show that it a false because it is illogical, a conversational implication may result in a non precise or misleading statement, even though the statement in itself is true. For example: 1 in 4 people from Bournemouth are criminals might imply that Bournemouth has a lot of criminals in proportion to the rest of the country, when in fact 1 in 4 people in the country can be classed as criminals not just Bournemouth. This statement has a conversation implication we might want to challenge, but the statement might still be true.  </p>
+<p>We only speak of a conversational act when and if the effect actually takes or has taken place. (Parallel: the shooting of a gun does not become an act of murder until the person shot at, dies.)  </p>
+<p>Example: The conversational act of asking takes place when an answer/response is given.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 70/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Lecture_Notes_1&amp;oldid=6725">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Lecture_Notes_1&amp;oldid=6725</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

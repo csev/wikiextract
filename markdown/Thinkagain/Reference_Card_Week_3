@@ -1,0 +1,34 @@
+[[ThinkAgain:Reference Card Week 2 |Reference Card Week 2]]  [[ThinkAgain:Reference Card Week 3 | <---- Reference Card Week 3 ---->]]  [[ThinkAgain:Reference Card Week 4 |Reference Card Week 4]]
+
+
+# How to reconstruct arguments
+The point is not to make your opponent look bad but to make your arguments look as good as possible
+
+What standards are for evaluating arguments?
+- Validity: a good relation between the premises and the conclusion
+    - A valid argument means that you cannot have a false conclusion if the premises are all true
+    - Validity is about what is possible, not what is true. An argument can be valid whether the premises are true or not
+- Soundness: the premises are true and the argument is valid (=> The conclusion must be true)
+
+## Steps to reconstruct arguments
+- Stage 1: close analysis
+  - Step 1: close analysis
+- Stage 2: get down to basics
+  - Step 2: remove all excess verbiage, by removing repetitions, road markers, tangents, examples (Some people talk too much just to hide their weak argument). Only focus on the argument. But make sure the argument is still the same after the verbiage is removed
+  - Step 3: list all explicit premises and conclusion in standard form (it should be the only things left)
+- Stage 3: sharpen edges
+  - Step 4: clarify where needed. If it's impossible to reach perfect clarity, look for adequate clarity. Clear up premises and conclusions which are likely to confuse the audience (someone can use vague terms on purpose)
+  - Step 5: break up where possible (e.g. an "and" in a premise) without distortion (e.g. don't break up around "or"). Be careful around dependent clauses.
+- Stage 4: organize parts
+  - Step 6: divide in sub-arguments and arrange them in order
+    - Linear structure: A -> .: B -> .: C
+    - Branching structure: (A -> .: C) + (B -> .: C)
+    - Joint structure: A + B -> .: C
+    - You can use a combination. Number ther premises and conclusion. Then draw arrow, rearranging them when necessary
+- Stage 5: fill in the gaps
+  - Step 7: assess whether each argument is valid
+  - Step 8: add suppressed premises when the argument is not valid. An argument can indeed contain some implicit assumptions (suppressed premises) or discards unlikely scenarios that could invalid the argument. It is however important to write them explicitly to really understand how the argument works
+  - Step 9: check each suppressed premise for truth
+  - Step 10: qualify premises to make them true
+- Stage 6: assess the argument
+  - Step 11: conclude. If you find a sound reconstruction, accept the conclusion. Otherwise, the argument may not be sound

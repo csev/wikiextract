@@ -1,0 +1,43 @@
+[[ThinkAgain:Reference Card Week 4 |Reference Card Week 4]]  [[ThinkAgain:Reference Card Week 5 | <---- Reference Card Week 5 ---->]]  [[ThinkAgain:Reference Card Week 6 |Reference Card Week 6]]
+
+
+# Categorical logic
+
+##Categorical Propositions
+
+There are four types, or forms, of propositions:
+
+- A: Universal affirmative: "All A are B."  
+- E: Universal negative: "No A are B."  
+- I: Particular affirmative: "Some A are B."  
+- O: Particular negative: "Some A are not B."
+- The universal forms are said to lack existential commitment. This means they do not imply the existence of the subject category: "All A are B" does not imply any A exists.  
+
+### Examples
+
+"All squares are rectangles, all rectangles have parallel sides => All squares have parallel sides" can be turned into "All squirrels are mammals, all mammals are animals => All squirrels are animals"
+
+Or more generally "all F are G, all G are H => all F are H", F, G, H being categories
+
+### Diagramming Categorical Propositions
+A Venn Diagram can be used to represent categories and their relationships. In the above example, there would be a circle F, inside a larger circle G, which is itself inside a larger circle H. More generally, three overlapping circles F, G and H can be used to represent such relationships:
+
+
+Each categorical proposition can also be represented in a Venn diagram.  In this case, two overlapping circles F and G can be used to represent the relationships:
+
+- A: All F are G (it does NOT mean there is any F): the part of the F circle not inside of G is shaded out
+- E: No F are G: the intersection of the F and G circles is shaded out
+- I: Some F are G: the intersection of the F and G circles has an X  
+- O: Some F are not G: the part of the F circle which is not inside the G circle has an X  
+
+Contradictory Propositions:
+- "Some F are G" is the negation of "No F are G".   
+- "Some F are not G" is the negation of "All F are G".  
+- For contradictory propositions, one and only one must be true.   
+
+##Syllogisms
+
+- Syllogisms have the form of  A/E/I/O + A/E/I/O => A/E/I/O
+- They have a subject term, a middle term and a predicate term.
+
+They can be represented using Venn diagrams with 3 circles. Go through each line and either shade out each section which doesn't apply or put an X in the areas that apply (when an area is divided in two, put the X on the border).

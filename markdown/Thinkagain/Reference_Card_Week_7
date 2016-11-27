@@ -1,0 +1,83 @@
+[[ThinkAgain:Reference Card Week 6 |Reference Card Week 6]]  [[ThinkAgain:Reference Card Week 7 | <---- Reference Card Week 7 ---->]]  [[ThinkAgain:Reference Card Week 8 |Reference Card Week 8]]
+
+
+# Causal Reasoning
+
+This type of inductive argument tries to explain a given outcome. It is based on generalizations (One event causes another event) that only work in a certain range of circumstances.
+
+## Sufficient / Necessary conditions
+
+    F is a SUFFICIENT condition for G =  
+      IN NORMAL CIRCUMSTANCES  
+      whenever event F happens, an event G also happens  
+      anything that has feature F also has feature G  
+      f ⊃ g
+      F => G (in math)
+
+    F is a NECESSARY condition for G =  
+      IN NORMAL CIRCUMSTANCES  
+      whenever event F does not happen, an event G also does not happen  
+      anything that does not have feature F does not have feature G either  
+      ~f ⊃ ~g  
+      F <= G (in math)
+
+## Kinds of conditions
+
+Conceptual: feature F is necessary for feature G  
+Causal: event F is sufficient for event G  
+Moral: torturing for fun is sufficient for doing wrong
+
+## Sufficient Condition Tests
+
+Negative sufficient condition test: X is NOT a sufficient condition of Y if there is any case where X is present and Y is absent
+
+Positive test: we have good reason to believe X is a sufficient condition of Y if all the following conditions are met:
+
+- We have not found any case where X is present and Y absent (i.e. no negative sufficient condition)
+- We have tested a wide variety of cases, including cases where X is present and cases where Y is absent
+- If there are any other feature that are never present where Y is absent, then we have tested cases where those other features are absent but X is present (i.e. no competing hypothesis)
+- We have tested enough cases of various kinds that likely to include a case where X is present and Y is absent IF there is any such case ("enough cases" depends on a lot of factors and common knowledge)
+
+##Necessary Condition Tests
+
+Negative necessary Condition Tests: X is not a necessary condition of Y if there is any case where X is absent and Y is present.
+
+Positive necessary Condition Tests: we have good reason to believe X is a necessary condition of Y if all the following conditions are met:
+
+- We have not found any case where X is absent and Y is present (i.e. no negative necessary condition)
+- We have tested a wide variety of cases, included where X is absent and cases where Y is present
+- If there are any other feature that are never absent where Y is present, then we have tested cases where those other feature are present but X is absent
+- We have tested enough cases of various kinds that likely to include a case where X is absent and Y is present IF there is any such case
+
+## Complex Conditions
+
+Conjunctive condition: W & X  
+Disjunctive condition: W or X
+
+## Correlation vs. Causation
+
+Some tests are not just black & white, and come in degrees.
+
+#### X and Y are positively correlated when:
+
+- the degree of X increases as the degree of Y increases, and
+- the degree of X decreases as the degree of Y decreases
+
+#### X and Y are negatively correlated when:
+
+- the degree of X increases as the degree of Y decreases, and
+- the degree of X decreases as the degree of Y increases
+
+#### If A and B are correlated, is it because:
+
+- A causes B
+- B causes A
+- C causes both A and B
+- the correlation accidental?
+
+Several tools can be used to help determine what helps what: time (if A causes B, then A has to happen before B), changing A and see if B changes (if it does, then A causes B).
+
+#### Common fallacies
+
+- Confusing an accidental correlation with causation
+- Confusing cause with effect (believing A causes B when it's the other way around)

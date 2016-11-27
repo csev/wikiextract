@@ -1,0 +1,72 @@
+[[ThinkAgain:Reference Card Week 3 |Reference Card Week 3]]  [[ThinkAgain:Reference Card Week 4 | <---- Reference Card Week 4 ---->]]  [[ThinkAgain:Reference Card Week 5 |Reference Card Week 5]]
+
+
+#Propositional Logic
+
+A propositional connective is a phrase that connects to one or more propositions in order to express another proposition (a proposition is either a premise of a conclusion, and can be either true of false), e.g. "it is necessary that X", "it is true that", etc
+
+- The final proposition may not logically depend on the original proposition(s) (whether "I hate it when [proposition]" is true is independent of whether [proposition] is true)
+- When the final proposition is dependent on the original proposition(s) ("[proposition 1] and [proposition 2]"), the connective is called a truth-functional connective
+  - The associated truth table stays the same even if we change the propositions
+  - Conjunction: a connective that requires all original propositions to be true ("and" or "&") 
+      - a conjunction introduction argument is a valid argument which the conclusion conjoins two or more of the premises (e.g. A, B .: A and B)
+      - a conjunction elimination argument is a valid argument which the conclusion is a conjunct of some conjuntion that appears in the premises (e.g. A and B .: A)
+
+<pre>
+p  q  p&q  
+T  T  T  
+T  F  F  
+F  T  F  
+F  F  F  
+</pre>
+  
+  - Disjunction: a connective that requires either/or original propositions to be true (logical "or" or "v") 
+      - a disjunction introduction argument is a valid argument in which the conclusion disjoins one of the premises with some other proposition (e.g. A .: A or B)
+      - a disjunction elimination argument is a valid argumetnt in which the conclusion is a disjunct of some disjunction that appears in the premises (e.g. A or B .: A)
+
+<pre>
+p  q  pvq  
+T  T  T  
+T  F  T  
+F  T  T  
+F  F  F  
+</pre>
+
+  - Negation: a connective that converts a proposition into an opposite proposition (logical "not" or "~")
+      - "it is not the case that [proposition]" is the most reliable way to negate a proposition
+      - Usual boolean logic applies: ~~p <=> p, ~(p&q) <=> ~pv~q, ~(pvq) <=> ~p&~q
+
+<pre>
+p  ~p  
+T  F  
+F  T  
+</pre>
+
+  - Conditional: a connective that connects two propositions ("if [q] then [q]", aka ⊃)
+      - It is the equivalent of ~pvq
+      - a biconditional (≣) means that 2 propositions are equivalent (p is true if and only if q is true)
+
+<pre>
+p  q  p⊃q      p  q  p≣q      
+T  T  T        T  T  T        
+T  F  F        T  F  F        
+F  T  T        F  T  F        
+F  F  T        F  F  T        
+</pre>
+
+
+#Truth Table
+
+A truth table is a boolean logic table which displays the various possibilities (true/false) for each proposition.
+
+To see if an argument involving a truth-functional connective is valid, look for a row where all premises are true and see if the conclusion is true no matter what.
+
+###Example
+<pre>
+(1) A              A  B  AvB                       A  B  AvB
+(2) A or B         T  T  T        remove rows      T  T  T
+    ------    ->   T  F  T      --where A or   ->  T  F  T
+.:  B              F  T  T        AvB are false
+                   F  F  F
+</pre>
+There is a scenario where B is false, therefore the argument is invalid.

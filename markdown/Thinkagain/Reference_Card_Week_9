@@ -1,0 +1,26 @@
+[[ThinkAgain:Reference Card Week 8 |Reference Card Week 8]]  [[ThinkAgain:Reference Card Week 9 | <---- Reference Card Week 9 ---->]]  [[ThinkAgain:Reference Card Week 10 |Reference Card Week 10]]
+
+# Paradox of vagueness
+
+A paradox is an argument that seems valid, whose premises seem true yet whose conclusion seems false.
+
+    Walter is not bald  
+    You cannot turn a non-bald person into a bald person by removing 1 hair  
+    -----------------------------------------------------------------------  
+    .: No matter how many hairs Walter loses, he will still not be bald  
+
+The reason of this paradox is because the definition of "bald" is vague. A person with one single hair can indeed be considered bald. If you define precisely what "bald" means, the paradox disappears.
+
+# Fallacies of vagueness
+
+- Conceptual slippery slope argument: same as a paradox of vagueness except that the vague term is a matter of degree (e.g. habitable / inhabitable) rather than a true/false state
+- Causal slippery slope argument: the premise that shows the slippery slope ("if you pass a restrictive bill, then another even more restrictive bill will be passed") is not true
+- Fairness slippery slope argument: use fairness as the vague term.
+
+
+# Fallacies of ambiguity
+
+Fallacies of ambiguity (aka of equivocation) rely on two types of ambiguities:
+
+- Semantic ambiguity: when a single word can have several meanings
+- Syntactic ambiguity: ambiguity of the grammar in the whole phrase of sentence

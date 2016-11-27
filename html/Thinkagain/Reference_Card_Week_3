@@ -1,0 +1,72 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Reference Card Week 3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_2" title="ThinkAgain:Reference Card Week 2">Reference Card Week 2</a>  <strong class="selflink"> &lt;---- Reference Card Week 3 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_4" title="ThinkAgain:Reference Card Week 4">Reference Card Week 4</a></p>
+<h1> <span class="mw-headline" id="How_to_reconstruct_arguments">How to reconstruct arguments</span></h1>
+<p>The point is not to make your opponent look bad but to make your arguments look as good as possible</p>
+<p>What standards are for evaluating arguments?
+- Validity: a good relation between the premises and the conclusion
+    - A valid argument means that you cannot have a false conclusion if the premises are all true
+    - Validity is about what is possible, not what is true. An argument can be valid whether the premises are true or not
+- Soundness: the premises are true and the argument is valid (=&gt; The conclusion must be true)</p>
+<h2> <span class="mw-headline" id="Steps_to_reconstruct_arguments">Steps to reconstruct arguments</span></h2>
+<ul>
+<li>Stage 1: close analysis
+
+<ul>
+<li>Step 1: close analysis</li>
+</ul></li>
+<li>Stage 2: get down to basics
+
+<ul>
+<li>Step 2: remove all excess verbiage, by removing repetitions, road markers, tangents, examples (Some people talk too much just to hide their weak argument). Only focus on the argument. But make sure the argument is still the same after the verbiage is removed</li>
+<li>Step 3: list all explicit premises and conclusion in standard form (it should be the only things left)</li>
+</ul></li>
+<li>Stage 3: sharpen edges
+
+<ul>
+<li>Step 4: clarify where needed. If it's impossible to reach perfect clarity, look for adequate clarity. Clear up premises and conclusions which are likely to confuse the audience (someone can use vague terms on purpose)</li>
+<li>Step 5: break up where possible (e.g. an "and" in a premise) without distortion (e.g. don't break up around "or"). Be careful around dependent clauses.</li>
+</ul></li>
+<li>Stage 4: organize parts
+
+<ul>
+<li>Step 6: divide in sub-arguments and arrange them in order</li>
+<li>Linear structure: A -&gt; .: B -&gt; .: C</li>
+<li>Branching structure: (A -&gt; .: C) + (B -&gt; .: C)</li>
+<li>Joint structure: A + B -&gt; .: C</li>
+<li>You can use a combination. Number ther premises and conclusion. Then draw arrow, rearranging them when necessary</li>
+</ul></li>
+<li>Stage 5: fill in the gaps
+
+<ul>
+<li>Step 7: assess whether each argument is valid</li>
+<li>Step 8: add suppressed premises when the argument is not valid. An argument can indeed contain some implicit assumptions (suppressed premises) or discards unlikely scenarios that could invalid the argument. It is however important to write them explicitly to really understand how the argument works</li>
+<li>Step 9: check each suppressed premise for truth</li>
+<li>Step 10: qualify premises to make them true</li>
+</ul></li>
+<li>Stage 6: assess the argument
+
+<ul>
+<li>Step 11: conclude. If you find a sound reconstruction, accept the conclusion. Otherwise, the argument may not be sound</li>
+</ul></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_3&amp;oldid=6739">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_3&amp;oldid=6739</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

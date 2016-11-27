@@ -1,0 +1,111 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Reference Card Week 7</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_6" title="ThinkAgain:Reference Card Week 6">Reference Card Week 6</a>  <strong class="selflink"> &lt;---- Reference Card Week 7 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_8" title="ThinkAgain:Reference Card Week 8">Reference Card Week 8</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Causal_Reasoning"><span class="tocnumber">1</span> <span class="toctext">Causal Reasoning</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Sufficient_.2F_Necessary_conditions"><span class="tocnumber">1.1</span> <span class="toctext">Sufficient / Necessary conditions</span></a></li>
+<li class="toclevel-2"><a href="#Kinds_of_conditions"><span class="tocnumber">1.2</span> <span class="toctext">Kinds of conditions</span></a></li>
+<li class="toclevel-2"><a href="#Sufficient_Condition_Tests"><span class="tocnumber">1.3</span> <span class="toctext">Sufficient Condition Tests</span></a></li>
+<li class="toclevel-2"><a href="#Necessary_Condition_Tests"><span class="tocnumber">1.4</span> <span class="toctext">Necessary Condition Tests</span></a></li>
+<li class="toclevel-2"><a href="#Complex_Conditions"><span class="tocnumber">1.5</span> <span class="toctext">Complex Conditions</span></a></li>
+<li class="toclevel-2"><a href="#Correlation_vs._Causation"><span class="tocnumber">1.6</span> <span class="toctext">Correlation vs. Causation</span></a>
+<ul>
+<li class="toclevel-3"><a href="#X_and_Y_are_positively_correlated_when:"><span class="tocnumber">1.6.1</span> <span class="toctext">X and Y are positively correlated when:</span></a></li>
+<li class="toclevel-3"><a href="#X_and_Y_are_negatively_correlated_when:"><span class="tocnumber">1.6.2</span> <span class="toctext">X and Y are negatively correlated when:</span></a></li>
+<li class="toclevel-3"><a href="#If_A_and_B_are_correlated.2C_is_it_because:"><span class="tocnumber">1.6.3</span> <span class="toctext">If A and B are correlated, is it because:</span></a></li>
+<li class="toclevel-3"><a href="#Common_fallacies"><span class="tocnumber">1.6.4</span> <span class="toctext">Common fallacies</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Causal_Reasoning">Causal Reasoning</span></h1>
+<p>This type of inductive argument tries to explain a given outcome. It is based on generalizations (One event causes another event) that only work in a certain range of circumstances.</p>
+<h2> <span class="mw-headline" id="Sufficient_.2F_Necessary_conditions">Sufficient / Necessary conditions</span></h2>
+<code><pre>F is a SUFFICIENT condition for G =  
+  IN NORMAL CIRCUMSTANCES  
+  whenever event F happens, an event G also happens  
+  anything that has feature F also has feature G  
+  f ⊃ g
+  F =&gt; G (in math)
+
+F is a NECESSARY condition for G =  
+  IN NORMAL CIRCUMSTANCES  
+  whenever event F does not happen, an event G also does not happen  
+  anything that does not have feature F does not have feature G either  
+  ~f ⊃ ~g  
+  F &lt;= G (in math)
+</pre></code>
+<h2> <span class="mw-headline" id="Kinds_of_conditions">Kinds of conditions</span></h2>
+<p>Conceptual: feature F is necessary for feature G<br />
+Causal: event F is sufficient for event G<br />
+Moral: torturing for fun is sufficient for doing wrong</p>
+<h2> <span class="mw-headline" id="Sufficient_Condition_Tests">Sufficient Condition Tests</span></h2>
+<p>Negative sufficient condition test: X is NOT a sufficient condition of Y if there is any case where X is present and Y is absent</p>
+<p>Positive test: we have good reason to believe X is a sufficient condition of Y if all the following conditions are met:</p>
+<ul>
+<li>We have not found any case where X is present and Y absent (i.e. no negative sufficient condition)</li>
+<li>We have tested a wide variety of cases, including cases where X is present and cases where Y is absent</li>
+<li>If there are any other feature that are never present where Y is absent, then we have tested cases where those other features are absent but X is present (i.e. no competing hypothesis)</li>
+<li>We have tested enough cases of various kinds that likely to include a case where X is present and Y is absent IF there is any such case ("enough cases" depends on a lot of factors and common knowledge)</li>
+</ul>
+<h2> <span class="mw-headline" id="Necessary_Condition_Tests">Necessary Condition Tests</span></h2>
+<p>Negative necessary Condition Tests: X is not a necessary condition of Y if there is any case where X is absent and Y is present.</p>
+<p>Positive necessary Condition Tests: we have good reason to believe X is a necessary condition of Y if all the following conditions are met:</p>
+<ul>
+<li>We have not found any case where X is absent and Y is present (i.e. no negative necessary condition)</li>
+<li>We have tested a wide variety of cases, included where X is absent and cases where Y is present</li>
+<li>If there are any other feature that are never absent where Y is present, then we have tested cases where those other feature are present but X is absent</li>
+<li>We have tested enough cases of various kinds that likely to include a case where X is absent and Y is present IF there is any such case</li>
+</ul>
+<h2> <span class="mw-headline" id="Complex_Conditions">Complex Conditions</span></h2>
+<p>Conjunctive condition: W &amp; X<br />
+Disjunctive condition: W or X</p>
+<h2> <span class="mw-headline" id="Correlation_vs._Causation">Correlation vs. Causation</span></h2>
+<p>Some tests are not just black &amp; white, and come in degrees.</p>
+<h4> <span class="mw-headline" id="X_and_Y_are_positively_correlated_when:">X and Y are positively correlated when:</span></h4>
+<ul>
+<li>the degree of X increases as the degree of Y increases, and</li>
+<li>the degree of X decreases as the degree of Y decreases</li>
+</ul>
+<h4> <span class="mw-headline" id="X_and_Y_are_negatively_correlated_when:">X and Y are negatively correlated when:</span></h4>
+<ul>
+<li>the degree of X increases as the degree of Y decreases, and</li>
+<li>the degree of X decreases as the degree of Y increases</li>
+</ul>
+<h4> <span class="mw-headline" id="If_A_and_B_are_correlated.2C_is_it_because:">If A and B are correlated, is it because:</span></h4>
+<ul>
+<li>A causes B</li>
+<li>B causes A</li>
+<li>C causes both A and B</li>
+<li>the correlation accidental?</li>
+</ul>
+<p>Several tools can be used to help determine what helps what: time (if A causes B, then A has to happen before B), changing A and see if B changes (if it does, then A causes B).</p>
+<h4> <span class="mw-headline" id="Common_fallacies">Common fallacies</span></h4>
+<ul>
+<li>Confusing an accidental correlation with causation</li>
+<li>Confusing cause with effect (believing A causes B when it's the other way around)</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 14/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_7&amp;oldid=6734">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_7&amp;oldid=6734</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

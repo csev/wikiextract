@@ -1,0 +1,96 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Reference Card Week 8</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_7" title="ThinkAgain:Reference Card Week 7">Reference Card Week 7</a>  <strong class="selflink"> &lt;---- Reference Card Week 8 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_9" title="ThinkAgain:Reference Card Week 9">Reference Card Week 9</a></p>
+<h1> <span class="mw-headline" id="Chance_and_Choice">Chance and Choice</span></h1>
+<p>Inductive strength can be considered as a probability. But it's very easy to fall in several probability traps, such as the gambler's fallacy (believing previous attempts influence future attempts) or representative heuristics (thinking that two hands in poker have different probability only based on their value)</p>
+<ul>
+<li>Probability can be rated from 0 (no chance of happening) to 1 (can only happen)</li>
+<li>A priori probability assumes likelihood before the event happens. It can only be used when all the possibilities have the same likelihood.</li>
+<li>Statistical probability counts the outcomes from a large number of runs</li>
+<li>Subjective probability is based on degrees of rational belief</li>
+</ul>
+<p>If Pr(X) is the probability of X</p>
+<code><pre>Pr(~h) = 1 - Pr(h)  
+Pr(h1 &amp; h2) = Pr(h1) * Pr(h2) if h1 and h2 are independent  
+Pr(h1 &amp; h2) = Pr(h1) * Pr(h2|h1) if h1 and h2 are dependent  
+Pr(h1 v h2) = Pr(h1) + Pr(h2) if h1 and h2 are mutually exclusive  
+Pr(h1 v h2) = Pr(h1) + Pr(h2) - Pr(h1 &amp; h2)  
+Probability of h happening in a series of n similar events = 1 - Pr(~h)^n  
+
+h: hypothesis  
+h2|h1: h2 given that h1 happened  
+~: negation  
+Two events are independent if and only if the occurrence of one has no effect on the probability of the other.
+</pre></code>
+<h2> <span class="mw-headline" id="Bayes.27_Theorem">Bayes' Theorem</span></h2>
+<p>Consider a base population of 100,000<br />
+Base rate = Pr(h) =&#160;% of general population with the condition = 0.003<br />
+Sensitivity = Pr(e|h) =&#160;% of cases with conditions that test positive = 0.99<br />
+Specificity = Pr(~e|~h) =&#160;% of cases without condition that test negative = 0.99  </p>
+<table border="1" style="border-collapse:collapse;">
+<tr>
+  <td></td>
+  <td>Do have the condition = h</td>
+  <td>Do NOT have the condition = ~h</td>
+  <td>Total</td>
+</tr>
+<tr>
+  <td>Positive test results = e</td>
+  <td>300 * 0.99 = 297</td>
+  <td>99,700 * (1 - 0.99) = 997</td>
+  <td>297 + 997 = 1,294</td>
+</tr>
+<tr>
+  <td>Negative test result = ~e</td>
+  <td>300 * (1 - 0.99) = 3</td>
+  <td>99,700 * 0.99 = 98,703</td>
+  <td>98,703 + 3 = 98,706</td>
+</tr>
+<tr>
+  <td>Totals</td>
+  <td>100,000 * 0.003 = 300</td>
+  <td>100,000 * (1 - 0.003) = 99,700</td>
+  <td>100,000</td>
+</table>
+<p>Solution = Pr(h|e) = probability that you have the condition if you test positive = 297 / 1294 = 0.23 = 23%</p>
+<p>In other words, the false positives from the large group of people who do not have the condition may outnumber the true positives.</p>
+<h2> <span class="mw-headline" id="Different_types_of_decisions">Different types of decisions</span></h2>
+<ul>
+<li>Decisions with certainty: the chooser knows the actual outcomes of each option, even though there is never 100% certainty in real life</li>
+<li>Decisions with risk: the chooser does not know the exact outcome of each outcome, but does know the probability of the outcomes
+
+<ul>
+<li>This is where you're using the expected value theory</li>
+<li>Expected financial value = probability of winning * net win - probability of losing x total loss</li>
+<li>Don't forget that net win is the win minus the money spent</li>
+<li>A bet is favorable is its expected value &gt; 0, unfavorable if &lt; 0 and neutral if = 0</li>
+<li>Expected overall value: looks at the bigger picture, such as takes into account if you can afford to play until you win, or if the win is worth the possible lost.
+
+<ul>
+<li>Diminishing marginal utility = each increment decreases in value as you get more and more increment</li>
+<li>Actual overall value = all the good and bad effects</li>
+<li>Expected overall value = all the good and bad effects times the probability of each effect</li>
+</ul></li>
+</ul></li>
+<li>Decisions with ignorance / uncertainty: you do not know the actual outcomes nor even the probabilities</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 15/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_8&amp;oldid=6733">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_8&amp;oldid=6733</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

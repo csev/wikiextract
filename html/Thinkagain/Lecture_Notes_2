@@ -1,0 +1,620 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Lecture Notes 2</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ThinkAgain:Lecture_Notes_1" title="ThinkAgain:Lecture Notes 1">Lecture Notes 1</a>  <strong class="selflink"> &lt;---- Lecture Notes 2 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Lecture_Notes_3" title="ThinkAgain:Lecture Notes 3"> Lecture Notes 3</a></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Lecture_2-1:_Argument_Markers"><span class="tocnumber">1</span> <span class="toctext">Lecture 2-1: Argument Markers</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_2-2:_Standard_Form"><span class="tocnumber">2</span> <span class="toctext">Lecture 2-2: Standard Form</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_2-3:_A_Problem_for_Arguments."><span class="tocnumber">3</span> <span class="toctext">Lecture 2-3: A Problem for Arguments.</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_2-4:_Assuring"><span class="tocnumber">4</span> <span class="toctext">Lecture 2-4: Assuring</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_2-5:_Guarding"><span class="tocnumber">5</span> <span class="toctext">Lecture 2-5: Guarding</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_2-6:_Discounting"><span class="tocnumber">6</span> <span class="toctext">Lecture 2-6: Discounting</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_2-7:_Evaluation"><span class="tocnumber">7</span> <span class="toctext">Lecture 2-7: Evaluation</span></a></li>
+<li class="toclevel-1"><a href="#Lecture_2-8:_Close_Analysis"><span class="tocnumber">8</span> <span class="toctext">Lecture 2-8: Close Analysis</span></a></li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Lecture_2-1:_Argument_Markers">Lecture 2-1: Argument Markers</span></h2>
+<ul>
+<li>How can we tell when an argument is being given?
+
+<ul>
+<li>Certain sentences are intended as reasons for other sentences.</li>
+<li>We can tell the person's intentions by which words they choose.</li>
+<li>Certain words indicate that some sentences are reasons for others. </li>
+</ul></li>
+</ul>
+<pre>
+[1] I am tall, **and** I am good at sports.
+[2] I am tall, **so** I am good at sports.
+</pre>
+<ul>
+<li><code>[1]</code> The first sentence can be switched around and continue to have the same meaning.</li>
+<li><code>[2]</code> The second sentence cannot be switched around and have the same meaning:</li>
+</ul>
+<pre>
+[2a] I am tall, **so** I am good at sports. 
+[2b] I am good at sports, **so** I am tall.
+</pre>
+<ul>
+<li>With <strong>and</strong>, you're simply stating the two facts and that they're both true.</li>
+<li><p>With <strong>so</strong>, you're indicating that one of them is a reason for the other. </p>
+<ul>
+<li><code>[2a]</code> The <em>reason</em> why you're good at sports is that you're tall. </li>
+<li><code>[2b]</code> The fact that you're good at sports is some kind of <em>evidence</em> that you must be tall.</li>
+<li><code>[2b]</code> is a bad argument, but it <em>is</em> an argument.</li>
+</ul></li>
+<li><p><strong>Argument markers</strong> are words that mark or indicate the presence of an argument.</p></li>
+<li><p><strong>Conclusion markers</strong>:</p>
+<ul>
+<li><em>so</em>, <em>therefore</em>, <em>thus</em>, <em>accordingly</em></li>
+<li>The sentence after them is a <em>conclusion</em>.</li>
+<li>The other sentence is a premise.</li>
+</ul></li>
+<li><p><strong>Reason or premise markers</strong>:</p>
+<ul>
+<li><em>because</em>, <em>for</em>, <em>as</em>, <em>for the reason that</em>, <em>and the reason why</em>, <em>since</em></li>
+<li>The sentence after them is a <em>reason</em> or a <em>premise</em>.</li>
+<li>The other sentence is the conclusion.</li>
+</ul></li>
+<li><p>Conclusion markers and reason markers indicate that an argument is present, but only in some cases.</p>
+<ul>
+<li>You can't just look at the word and figure out whether it's an argument marker or not. Think about its <strong>role</strong>.</li>
+<li>For example, you can't just look for the word <strong>since</strong> and always mark it as an argument marker.</li>
+<li>Think about what the word <strong>since</strong> is doing in that <strong>context</strong>.</li>
+</ul></li>
+</ul>
+<pre>
+[3] I am good at sports **since** I am tall.
+[4] The Sun has been up **since** seven o'clock this morning.
+[5] It's been raining **since** my vacation began.
+</pre>
+<ul>
+<li><code>[3]</code> <em>since</em> <strong>is</strong> a reason marker - you're presenting the fact that you're tall as a reason why you're good at sports.</li>
+<li><code>[4]</code> <em>since</em> <strong>is not</strong> a reason marker - it doesn't indicate any kind of rational relation, only a temporal one.</li>
+<li><p><code>[5]</code> You're <strong>not</strong> saying "It has been raining <strong>because</strong> my vacation began." Another temporal relation.</p></li>
+<li><p>The same holds true for conclusion markers - they can indicate something entirely different.</p></li>
+</ul>
+<pre>
+[6] You don't need to eat **so** much. 
+</pre>
+<ul>
+<li><p><code>[6]</code> <em>So</em> doesn't indicate that <em>much</em> is a reason for anything.</p></li>
+<li><p>Sometimes it's hard to tell whether a particular word is being used as an argument marker or not:</p></li>
+</ul>
+<pre>
+[7a] The liberal party has been dropping in the polls **since** the conservative party held their convention.
+</pre>
+<ul>
+<li>They <em>might</em> be saying something like:</li>
+</ul>
+<pre>
+[7b] The liberal party has been dropping in the polls **at all times after** the conservative party held their convention.
+[7c] The liberal party has been dropping in the polls **because** the conservative party held their convention.
+</pre>
+<ul>
+<li><p>How can you tell whether this person is claiming</p>
+<ul>
+<li>simply a temporal progression or</li>
+<li>some kind of reason for the drop in the polls?</li>
+</ul></li>
+<li><p>One trick that is very useful is to try to <strong>substitute</strong> a different word.</p></li>
+<li>If their claim means the same if they had used <em>because</em>, then you're claiming there's a <strong>rational relation</strong>.</li>
+<li>If you can't substitute <em>because</em> for <em>since</em>, then the word <em>since</em> is not being used as an argument marker. </li>
+<li><p>Sometimes that's just not going to be clear. Many people speak very loosely.</p></li>
+<li><p>A good test is whether you can substitute another argument marker for the term that's unclear.</p></li>
+<li><p>If you can, than that shows that the word, in this context, is being used to show that</p>
+<ul>
+<li>Something is a premise that gives a reason for something else, which is the conclusion.</li>
+<li>That there's an argument being given in that passage.</li>
+</ul></li>
+<li><p><strong>if</strong> is sometimes linked with the word <strong>then</strong> in an <strong>if then clause</strong>, also known as a <strong>conditional</strong>.</p></li>
+<li><p><strong>If</strong> might seem like an argument marker because it's often used in arguments.</p></li>
+</ul>
+<pre>
+[8a] **If** I am rich enough, **then** I can buy a baseball team.
+[8b] I am rich enough. **So**, I can buy a baseball team.
+</pre>
+<ul>
+<li>Together, <code>[8a]</code> and <code>[8b]</code> present an argument.</li>
+<li><p><code>[8a]</code> by itself, however, is <strong>not</strong> an argument.</p>
+<ul>
+<li>It's not saying that I am rich enough...</li>
+<li>... And it's not saying that I can buy a baseball team.</li>
+</ul></li>
+<li><p>The word if by itself does not indicate an argument. It sets a pattern for an argument.</p></li>
+</ul>
+<pre>
+[9a] if (ANTECEDENT) then (CONDITION)
+[9b] (the one thing) therefore (the other)
+</pre>
+<ul>
+<li><p><code>[9a]</code> <strong>is not</strong> an argument. <code>[9a]</code> <strong>and</strong> <code>[9b]</code> <strong>is</strong> an argument.</p></li>
+<li><p><strong>if</strong> is not an argument marker even though it is important for some arguments.</p></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_2-2:_Standard_Form">Lecture 2-2: Standard Form</span></h2>
+<ul>
+<li>The actual word order doesn't always tell us the order of argument.</li>
+</ul>
+<pre>
+[1a] Because I am a professor, I teach classes. 
+[1b] I teach classes because I am a professor.
+[1c] I teach classes, so I am a professor.
+</pre>
+<ul>
+<li><code>[1a]</code> and <code>[1b]</code> express the same argument: I'm a professor is a <em>reason</em> why I teach classes.</li>
+<li><p><code>[1c]</code> seems to suggest that only professors can teach classes, which is a different argument.</p></li>
+<li><p>Let's put the arguments in what's called <strong>Standard Form</strong>:</p></li>
+</ul>
+<pre>
+(1) Premise
+(2) Premise
+--------------------------
+∴ (3) Conclusion (from 1-2)
+</pre>
+<ul>
+<li>Helps us show what's common to the first two examples (<code>[1a]</code> and <code>[1b]</code>) that distinguishes them from the third example (<code>[1c]</code>):</li>
+</ul>
+<pre>
+Because I am a professor, I teach classes. 
+I teach classes because I am a professor.
+
+(1) I'm a professor. 
+----------------------
+∴ (2) I teach classes. 
+</pre>
+<pre>
+I teach classes, so I am a professor.
+
+(1) I teach classes.
+----------------------
+∴ (2) I'm a professor. 
+</pre>
+<h2> <span class="mw-headline" id="Lecture_2-3:_A_Problem_for_Arguments.">Lecture 2-3: A Problem for Arguments.</span></h2>
+<ul>
+<li>The premises are <em>intended</em> to be reasons for the conclusion. 
+
+<ul>
+<li>Intentions are nice, but success is better!</li>
+<li>What we need to figure out is when the person <em>succeeds</em> in giving premises that really are reasons for the conclusion. </li>
+</ul></li>
+</ul>
+<pre>
+(1) There is at least one bacterium on Mars.
+----------------------------------------------
+∴ (2) Τhere is life on Mars.
+</pre>
+<ul>
+<li><p>Do the premises justify you in believing the conclusion? </p>
+<ul>
+<li>If the premise is true, the conclusion has got to be true.</li>
+<li>If you are justified in believing the premise, then you are also justified in believing the conclusion.</li>
+<li>If there's no reason to believe the premise, then you're not justified in believing that premise.</li>
+<li>If you're not justified in believing the premise, then how can that premise make you justified in believing the conclusion? </li>
+</ul></li>
+<li><p>An argument cannot justify you in believing that the conclusion is true unless you are justified in believing that the premises are true. </p></li>
+<li><p>In order for the premises to be justified, they have to be backed up by an argument.</p>
+<ul>
+<li>But the argument has premises of its own that have to be backed up by another argument. And so on:</li>
+</ul></li>
+</ul>
+<pre>
+... = (7) Premise
+      (6) Premise 
+      ------------
+      ∴ (5) Conclusion = (5) Premise
+                         (4) Premise
+                         -------------
+                         ∴ (3) Conclusion = (3) Premise
+                                            (2) Premise
+                                            ------------
+                                            ∴ (1) Conclusion
+</pre>
+<ul>
+<li><p>This is known as <strong>The Problem of the Skeptical Regress</strong>.</p>
+<ul>
+<li>You regress back to one argument after another after enough and this regress might never end.</li>
+</ul></li>
+<li><p>There seems to be only three ways to get around the problem of the skeptical regress.</p>
+<ol>
+<li>Start with a premise that is unjustified, which doesn't need an argument to back it up.</li>
+<li>Use an argument with a circular structure, where claim 1 =&gt; claim 2 =&gt; ... =&gt; claim 1.</li>
+<li>Use an infinite chain of arguments - every claim has an argument to back it up.</li>
+</ol></li>
+<li>With unjustified premises, you could make up, and prove, anything, even things which are obviously false.</li>
+<li>With circular arguments, you could also prove anything. Consider the smallest circle (claim 1 =&gt; claim 1) below.
+
+<ul>
+<li>If you didn't know whether there was life on Mars to begin with, you wouldn't know whether the premise was true.</li>
+<li>If you don't know the conclusion, you can't know the premise, since the premise <em>is</em> the conclusion.</li>
+</ul></li>
+</ul>
+<pre>
+(1) There's life on Mars.
+---------------------------
+∴ (2) There's life on Mars.
+</pre>
+<ul>
+<li>An infinite chain of arguments would allow you to prove there's life on Mars.
+
+<ul>
+<li>If the premise has no independent justification, then neither will the infinite chain:</li>
+</ul></li>
+</ul>
+<pre>
+.
+.
+.
+There are at least three bacteria on Mars.
+------------------------------------------
+∴ There are at least two bacteria on Mars.
+------------------------------------------
+∴ There's a least one bacterium on Mars.
+------------------------------------------
+∴ There's life on Mars.
+</pre>
+<ul>
+<li><p>If these three possible solutions don't work, then it's hard to see how one would get around <em>skeptical regress</em>.</p>
+<ul>
+<li>It's hard to see how any kind of argument could ever justify us in believing anything.</li>
+</ul></li>
+<li><p>There are various tricks for dealing with the skeptical regress problem.</p></li>
+<li><p>One trick is to start from assumptions that everybody shares.</p>
+<ul>
+<li>One such assumption would be that you want a car that is <em>reliable</em>.</li>
+<li>If you want reliability, and I want reliability, that's a reason to buy a car that is reliable.</li>
+</ul></li>
+<li><p>But, how do you know that a particular make of car is reliable?</p>
+<ol>
+<li>Assure the audience or appeal to an authority ("Consumer Reports has done a study...").</li>
+<li>Discount or respond to possible objections ("Maybe Consumer Reports has been wrong sometimes, but this time...").</li>
+<li>Guard your claim ("Consumer Reports might be, or are probably, right...")</li>
+</ol></li>
+<li><p>Find shared assumptions.</p>
+<ul>
+<li>Assumptions about the <strong>premises</strong> of your arguments. </li>
+<li>Assumptions about <strong>authorities</strong> that supposedly support your premises.</li>
+<li>Assumptions that you share with your audience in order to get the argument going.</li>
+</ul></li>
+<li><p>Finding shared assumptions can be tricky, because it all depends on the context.</p>
+<ul>
+<li>With an audience that shares a lot of your assumptions, arguments will be relatively easy.</li>
+<li>With an audience that doesn't share any of your assumptions, arguments will be impossible.</li>
+<li>Lots of disagreement will cause your premises to be questioned, denied, or rejected by the audience.</li>
+</ul></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_2-4:_Assuring">Lecture 2-4: Assuring</span></h2>
+<pre>
+I assure you that smoking is bad for your health.
+</pre>
+<ul>
+<li><em>I assure you</em> means I'm trying to get you to accept that claim on my authority.</li>
+<li>I might have some <em>reason</em> for believing that, but I don't say it.</li>
+<li>I'm trying to get you to accept my premise without actually citing evidence.</li>
+<li>Other examples: <em>It's obvious</em>, <em>Everybody knows</em>, <em>Certainly</em>, <em>Clearly</em>.</li>
+<li>If a reason is not actually given, then that reason cannot be questioned.</li>
+<li><p>If I don't give the reason, I've cut off your attack on the reason that I would give.</p></li>
+<li><p><strong>Authoritative assurances</strong> cite an authority.</p>
+<ul>
+<li>"The <em>surgeon general</em> has shown that smoking is bad for your health."</li>
+<li>Works only if the audience shares the assumption that the authority is trustworthy.</li>
+<li>Even the best authorities sometimes do studies that aren't very careful and might even be wrong.</li>
+</ul></li>
+<li><p><strong>Reflexive assurances</strong> talks about yourself.</p>
+<ul>
+<li><em>I believe that</em>, <em>I know that</em>, <em>I am certain that</em>, <em>I feel sure that</em>.</li>
+<li>People don't want to question what other people <em>feel</em> sure about. It's often impolite.</li>
+<li><em>Thought about it for years</em> or <em>under careful consideration</em> doesn't make it right.</li>
+</ul></li>
+<li><p><strong>Abusive assurances</strong> are a little more subtle.</p>
+<ul>
+<li>The arguer gets you to accept what he believes by abusing you.</li>
+<li>If you deny the argument, you're saying you lack common sense. Or are a dummy.</li>
+<li><em>Nobody but a fool would think that</em>, <em>Everybody knows</em>, <em>You'd have to be stupid</em>.</li>
+<li>The <strong>appeal to common sense</strong>: <em>It's just common sense that...</em></li>
+</ul></li>
+<li><p>These types of assurances are all used on common speech to stop the skeptical regress problem.</p></li>
+<li><p>Why do we need any of these assurances in the first place?</p>
+<ul>
+<li>We've got limited time. You can't check every study, issue, or authorities.</li>
+</ul></li>
+<li><p>Benefits of assurances:</p>
+<ol>
+<li>They save you time.</li>
+<li>They help you avoid the skeptic regress.</li>
+</ol></li>
+<li><p>Tricks with assurances:</p>
+<ol>
+<li>Citations of untrustworthy authorities.</li>
+<li>Distractions (<em>That's obvious</em>, <em>It's certain</em>, <em>I'm sure</em>)</li>
+<li>Dropping assurances (<em>He says</em> =&gt; <em>It is reported</em> =&gt; <em>Sources have said</em> =&gt; <em>There are</em> ...)</li>
+</ol></li>
+<li><p>We want an assurance when:</p>
+<ol>
+<li>Someone might question the claim.</li>
+<li>The audience accepts the authority.</li>
+<li>It would be too much trouble to cite all of the evidence.</li>
+</ol></li>
+<li><p>Assurances are not appropriate when:</p>
+<ol>
+<li>No one would question the claim anyway.</li>
+<li>The authority is not trustworthy.</li>
+<li>You are easily able to give the full explanation.</li>
+</ol></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_2-5:_Guarding">Lecture 2-5: Guarding</span></h2>
+<ul>
+<li>Guarding involves making your premises weaker so that it is harder to object to them.</li>
+</ul>
+<pre>
+We should not build any new nuclear power plants, because
+**(some|I believe that some)** of them **might** explode.
+</pre>
+<ul>
+<li><p>What's an opponent to this argument going to do?</p>
+<ul>
+<li>Show that you <em>don't really believe it</em>?</li>
+<li>Show that it's not true that they <em>might</em> explode?</li>
+<li>Show that it's not true that <em>any</em> of them might explode?</li>
+</ul></li>
+<li><p>Guarding a premise makes it more likely to be true, and less subject to objection.</p></li>
+<li><p>With guarding, you get people to agree to share your assumption by weakening your premises.</p></li>
+<li><p>When you see someone guarding, why did they put in the guard?</p>
+<ul>
+<li>Have they weakened the premise so much that the conclusion no longer follows?</li>
+</ul></li>
+</ul>
+<pre>
+We need a new alcohol officer on our campus because **all** students drink too much.
+We need a new alcohol officer on our campus because **most** students drink too much.
+We need a new alcohol officer on our campus because **many** students drink too much.
+We need a new alcohol officer on our campus because **some** students drink too much.
+</pre>
+<ul>
+<li><strong>Guarding by extent</strong>:
+
+<ul>
+<li>Scale: <em>all</em> =&gt; <em>most</em> =&gt; <em>many</em> =&gt; <em>some</em>.</li>
+<li>As you move down this scale, the premise gets harder and harder to deny.</li>
+<li>Whether this counts as guarding depends on the expectation.</li>
+<li>It is guarding when you weaken a premise beyond what would otherwise be expected in the context.</li>
+</ul></li>
+</ul>
+<pre>
+It is **absolutely certain** that O.J. Simpson killed his wife.
+O.J. Simpson **probably** killed his wife.
+It is **likely** that O.J. Simpson killed his wife.
+**There is a chance** that O.J. Simpson killed his wife.
+O.J. Simpson **might** have killed his wife.
+</pre>
+<ul>
+<li><strong>Guarding by probability</strong>:</li>
+<li>Scale: <em>It's certain</em> =&gt; <em>It's (probable|likely)</em> =&gt; <em>There's a chance</em> =&gt; <em>He might have</em>.
+
+<ul>
+<li>The further you scale down, the easier it is to defend your premise because you're claiming less.</li>
+<li>The question is going to be whether you've done it too much.</li>
+<li><em>He might have killed his wife, therefore he ought to be convicted.</em> =&gt; Wrong.</li>
+<li><em>He probably killed his wife, therefore he ought to be convicted.</em> =&gt; Might be wrong.</li>
+</ul></li>
+</ul>
+<pre>
+I **know** that the President is 50 years old.
+I **believe** that the President is 50 years old.
+I **tend to believe** that the President is 50 years old.
+I am ***inclined to believe** that the President is 50 years old.
+</pre>
+<ul>
+<li><strong>Guarding by mental</strong>:
+
+<ul>
+<li>Scale: <em>know</em> =&gt; <em>believe</em> =&gt; <em>tend to believe</em> =&gt; <em>inclined to believe</em>.</li>
+<li>As you move down the scale, you're making the premise weaker which makes it harder to question.</li>
+</ul></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_2-6:_Discounting">Lecture 2-6: Discounting</span></h2>
+<ul>
+<li>Discounting is citing a possible criticism in order to reject it or counter it.</li>
+</ul>
+<pre>
+The ring is expensive, **but** it is beautiful.
+</pre>
+<ul>
+<li>Citing the objection makes it less likely that the other person is going to say it.
+
+<ul>
+<li>"I know that! But it's more important to me that the ring is beautiful."</li>
+</ul></li>
+</ul>
+<ol>
+<li>It asserts or admits that the ring is expensive.</li>
+<li>It also asserts that the ring is beautiful.</li>
+<li>It contrasts the two claims.</li>
+<li>It emphasizes the second claim about beauty.</li>
+</ol>
+<pre>
+[1a] The ring is beautiful, **and** it is expensive.
+[1b] The ring is expensive, **and** it is beautiful.
+[1c] The ring is expensive, **but** it is beautiful.
+[1d] The ring is beautiful, **but** it is expensive.
+</pre>
+<ul>
+<li><strong>and</strong> and <strong>but</strong> can mean very different things.
+
+<ul>
+<li><code>[1a]</code> and <code>[1b]</code> are equivalent.</li>
+<li><code>[1c]</code> and <code>[1d]</code> are very different.</li>
+<li><code>[1c]</code> is an argument <em>for</em> buying the ring.</li>
+<li><code>[1d]</code> is an argument <em>against</em> buying the ring.</li>
+</ul></li>
+<li><em>But</em> indicates the sentence after it is more important than the sentence before it.
+
+<ul>
+<li>You're discounting the first object and citing the reason for the belief you favor.</li>
+</ul></li>
+<li>The sentences on either side of <em>and</em> are reversible without changing meaning.</li>
+<li><p>The sentences on either side of <em>but</em> are not reversible without changing meaning.</p></li>
+<li><p>There are other words that are discounting phrases, but fall in a different place.</p>
+<ul>
+<li><em>But</em> usually occurs before the emphasized clause.</li>
+<li><em>Although</em> usually occurs before the deemphasized clause.</li>
+</ul></li>
+</ul>
+<pre>
+Although the ring is expensive, it is beautiful.
+</pre>
+<ul>
+<li><p>Functions of discounting terms</p>
+<ol>
+<li>They assert two claims.</li>
+<li>They contrast the two claims.</li>
+<li>They emphasize one of the claims.</li>
+</ol></li>
+<li><p>Other examples: <em>even if</em>, <em>even though</em>, <em>whereas</em>, <em>nevertheless</em>, <em>nonetheless</em>, <em>still</em>, <em>however</em>.</p>
+<ul>
+<li>These words <em>can</em> be used in other ways that are not discounting.</li>
+<li>Use the <em>substitution method</em> to test for what the function of the word is.</li>
+</ul></li>
+<li><p>The trick of discounting straw people ("easy to destroy" arguments):</p>
+<ul>
+<li>The arguer discounts easy objections to make people overlook the more difficult objections.</li>
+</ul></li>
+<li><p>Arguers can combine the trick of discounting straw people with misuses of guarding and assuring.</p></li>
+</ul>
+<pre>
+The President is in favor of a public health service,
+**but** a public health service is not going to solve
+**all** of the medical problems of our people, so I think
+the President is off on the wrong track.
+</pre>
+<ul>
+<li><p>This discounts the objection that the public health service will solve <em>all</em> problems.</p>
+<ul>
+<li>But whoever thought the public health service would actually solve <em>all</em> the problems?</li>
+<li>The arguer is discounting the straw man by using an unguarded term <em>all</em>.</li>
+<li>The arguer has put the unguarded term in the mouth of the objecter.</li>
+<li>By not guarding it, he's made the objection more susceptible to refutation.</li>
+<li>The objector would never have used the unguarded term <em>all</em> but <em>most</em> or <em>many</em>.</li>
+</ul></li>
+<li><p>Think about the objections that the arguer is <strong>not</strong> considering.</p></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_2-7:_Evaluation">Lecture 2-7: Evaluation</span></h2>
+<pre>
+You ought to support my healthcare plan because it would be good for the country.
+</pre>
+<ul>
+<li>What is the word <em>good</em> doing here?
+
+<ul>
+<li>Some will say it's just a way of expressing your emotions.</li>
+<li>So, the politician is saying "Yay!" for his health care plan.</li>
+<li>But "Yay, Duke!" is cheering for the team even if they're <em>not good</em>.</li>
+<li>And it doesn't make any sense to say "But, why?" in response to "Yay, Duke!"</li>
+<li>"Yay for my health care plan" is very different than saying it's a good plan.</li>
+</ul></li>
+</ul>
+<pre>
+I don't like fish, so we shouldn't have fish for dinner.
+</pre>
+<ul>
+<li><p>Not liking fish doesn't really require a <em>reason</em> behind not liking it.</p>
+<ul>
+<li><em>It's immoral / It's wrong / You ought not to eat fish</em> is a different story.</li>
+<li>The speaker now needs to explain what's immoral about eating fish.</li>
+</ul></li>
+<li><p>Expressing Preferences ≠ Making An Evaluation.</p></li>
+<li><p>One way of to capture this feature of evaluative language is to interpret as:</p>
+<ul>
+<li><em>Good</em> -&gt; meets the standards; <em>Bad</em> -&gt; violates the standards.</li>
+<li>The standards of a good painting are different than those of a good investment.</li>
+</ul></li>
+<li><p>The trick is, when we call something <em>good</em>, we don't specify what the standards are.</p>
+<ul>
+<li>We leave that up to the context to specify what kind of standards.</li>
+<li>It's like <em>assuring</em> - you have some reason, but you don't specify the reason.</li>
+<li>The claim is more defensible: standards can't be questioned if they're not presented.</li>
+</ul></li>
+</ul>
+<pre>
+We ought to turn left here.
+</pre>
+<ul>
+<li><p>We don't have to agree on what the standards are.</p>
+<ul>
+<li>#1: "turn left here" because it's a quicker way to our destination.</li>
+<li>#2: "turn left here" because it's a more beautiful and scenic view.</li>
+</ul></li>
+<li><p>Less objections if people can apply their own standards to the meaning of <em>good</em>.</p></li>
+<li><p>Evaluation is another way to avoid the skeptic regress.</p></li>
+<li><p>Different levels of evaluation:</p>
+<ul>
+<li>General: <em>Good or Bad</em>, <em>Ought or Ought Not</em>, <em>Should or Should Not</em>, <em>Right or Wrong</em>.</li>
+<li>Specific: <em>Beautiful or Ugly</em>, <em>Cruel or Kind</em>, <em>Brave or Cowardly</em>, <em>Comfortable or Uncomfortable</em>.</li>
+<li>Defining a more specific evaluative word often requires using general evaluative words.</li>
+<li>A <em>bargain</em> is something with a <em>good price</em> and a good price is a <em>low price</em>.</li>
+<li>What makes these words evaluative is their connection to what is good or bad.</li>
+</ul></li>
+<li><p><em>Contextually evaluative</em> words are not defined by <em>good</em> are <em>bad</em>...</p>
+<ul>
+<li>...and are only evaluative in certain contexts.</li>
+<li>A conservative politician might criticize her opponent by saying:</li>
+</ul></li>
+</ul>
+<pre>
+His policies are too liberal.
+</pre>
+<ul>
+<li><p>She intends <em>liberal</em> as a criticism, but the word itself isn't <em>bad</em>.</p>
+<ul>
+<li>The opponent might say "Yes, it's liberal. I'm proud to be a liberal!"</li>
+</ul></li>
+<li><p>We will call language "evaluative" only when it is openly and literally evaluative.</p>
+<ul>
+<li>It gets defined in words like <em>good</em> or <em>bad</em>, and not when it's merely contextually evaluative.</li>
+</ul></li>
+<li><p>Combining positive and negative evaluative words can be tricky:</p>
+<ul>
+<li><em>Good</em> means <em>good</em>. But <em>pretty good</em> is not as good as <em>good</em>.</li>
+<li>And adding a negative, <em>pretty darn good</em>, means it's <em>very good</em>.</li>
+</ul></li>
+<li><p>Another tricky word is "too":</p>
+<ul>
+<li><em>This food is spicy</em> is <em>good</em>.</li>
+<li><em>This food is too spicy</em> is <em>bad</em>.</li>
+<li>Too is a negative evaluative word because it makes a positive or neutral word become bad.</li>
+</ul></li>
+<li><p><strong>Slanting</strong> is using evaluative terms without having reasons for doing so.</p>
+<ul>
+<li>People typically slant when they don't have any reason for their evaluation.</li>
+<li>Good indication that that's where their argument is probably weak.</li>
+</ul></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_2-8:_Close_Analysis">Lecture 2-8: Close Analysis</span></h2>
+<ul>
+<li>Reason Marker = R (or P)</li>
+<li>Conclusion Marker = C</li>
+<li>Assuring Term = A</li>
+<li>Guarding Term = G</li>
+<li>Discounting Term = D</li>
+<li>Positive Evaluative Term = E+</li>
+<li>Negative Evaluative Term = E-</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 263/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Lecture_Notes_2&amp;oldid=6724">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Lecture_Notes_2&amp;oldid=6724</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

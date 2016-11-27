@@ -1,0 +1,85 @@
+[[ThinkAgain:Reference Card Week 5 |Reference Card Week 5]]  [[ThinkAgain:Reference Card Week 6 | <---- Reference Card Week 6 ---->]]  [[ThinkAgain:Reference Card Week 7 |Reference Card Week 7]]
+
+
+# Inductive arguments
+
+Deductive arguments are about being valid or invalid (yes or no). They are indefeasible, which means that once an argument is valid no matter how many extra premises, the argument is still valid.
+
+Inductive arguments are about being strong vs. weak. They come in degrees (more or less strong) and can be good while invalid.
+
+- The strength depends on the context, what's at stake, etc.
+- They are defeasible: extra information can make an argument weak.
+- Examples are inference to the best explanation, analogy, statistical generalizations or applications, causal reasoning or decision making and probability.
+
+## Generalization from samples
+
+- We sometimes have to rely on samples and generalize from here as you cannot test everything
+- Such a generalization can be universal (all Fs in the sample are G => all Fs are G) or partial (X% of Fs in the sample are G => X% of all Fs are G)
+- The strengh (or weakness) can come from the size of the sample, its diversity, etc. and rely on statistics
+
+Questions to ask about generalizations:
+
+- Are the premises false (e.g. the survey didn't actually happen) or unjustified (e.g. botched survey)?
+- Is the sample large enough, depending on the context (fallacy of hasty generalization) but also what's at stake (you want a large sample when it's a life and death situation)?
+- Could the sample be biased?
+- Was the question slanted?
+
+## Application of generalizations
+
+The generalization moves from the conclusion to the premise.
+
+    X% of F are G  
+    a is F  
+    --------------------  
+    .: a is (probably) G  
+      
+    G is the attribute class  
+    F is the reference class  
+
+Questions to ask:
+
+- Are the premises false or unjustified?
+- Are the percentages either very high or low? If they are 50% we cannot make any solid conclusion.
+- Are there conflicting reference classes? (e.g. "a is also H, and 10% of H are G"). Look at the narrowest class when there are several classes - provided it has enough data to support the generalization.
+- The ideal scenario is when we have enough information to justify the premises, and the premises are specific enough so that they have all the relevant information about the case.
+
+## Inference to the best explanation
+
+This type of argument attempts to explain a conclusion which is already believed to be true. The conclusion of a regular explanation is here a premise. It works by discarding all other explanations.
+
+    1. Observation  
+    2. Explanation  
+    3. Comparison (No other hypothesis provides nearly as good an explanation)  
+    --------------------------------------------------------------------------  
+    .: Conclusion (Hypothesis in premise 2 is true)  
+
+
+What standards should be used?
+
+- Powerful: applies to many separate cases
+- Broad: explains other observations
+- Deep: does not depend on any assumption that need but lack independent explanation
+- Simple
+- Conservative: does not conflicts with any prior well-established beliefs
+- Not falsified (not proven wrong) yet falsifiable (it could theoretically be proven wrong)
+- Modest: doesn't claim more than is needed in order to explain what it is supposed to be explained
+
+## Arguments from Analogy
+
+    A has properties P, Q, R, ...  
+    B, C, D, ... have properties P, Q, R, ...  
+    B, C, D, ... have property X  
+    -----------------------------------------  
+    .: A has (probably) property X  
+
+An argument from analogy is stronger when:
+
+- The similarities are more important
+- There are more similarities
+- There are fewer disanalogies
+- The analogous objects are more diverse
+- The conclusion is weaker ("A has probably property X")
+
+## [[ThinkAgain:Reference Card Week 7 | Causal Reasoning]]
+
+## [[ThinkAgain:Reference Card Week 8 | Chance and Choice]]

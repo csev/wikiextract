@@ -1,0 +1,216 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Lecture Notes 3</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ThinkAgain:Lecture_Notes_2" title="ThinkAgain:Lecture Notes 2">Lecture Notes 2</a>  <strong class="selflink"> &lt;---- Lecture Notes 3 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Lecture_Notes_4" title="ThinkAgain:Lecture Notes 4"> Lecture Notes 4</a></p>
+<h2> <span class="mw-headline" id="Lecture_3-1:_Validity">Lecture 3-1: Validity</span></h2>
+<ul>
+<li><p>Vices in arguments</p>
+<ol>
+<li>One or more premises is/are FALSE.</li>
+<li>The premises do not provide a good reason for the conclusion.</li>
+</ol></li>
+<li><p>Virtues in arguments</p>
+<ol>
+<li>Validity</li>
+<li>Soundness</li>
+</ol></li>
+<li><p>Relation between premises and conclusion</p>
+<ul>
+<li>In a <strong>deductive</strong> argument, the conclusion should <em>follow from</em> the premises.</li>
+<li>That's a hard notion to do, so we're going to instead focus on the notion of validity.</li>
+<li>A <strong>deductive</strong> argument is supposed to be valid.</li>
+<li>An <strong>inductive</strong> argument is not supposed to be valid.</li>
+</ul></li>
+</ul>
+<pre>
+[1a] Mary has a child who is pregnant,
+[1b] and only daughters can become pregnant,
+[1c] so Mary has at least one daughter.
+</pre>
+<ul>
+<li>What's validity? Here's a simple example.
+
+<ul>
+<li>You know Mary, but you don't know her children.</li>
+<li><code>[1a] [1b]</code> But, you do know that she has one child who is pregnant.</li>
+<li><code>[1c]</code> You have all you need to know in order to draw a further conclusion.</li>
+</ul></li>
+</ul>
+<pre>
+(1) Mary has a child who is pregnant.
+(2) Only daughters can become pregnant.
+-------------------------------------
+∴ (3) Mary has at least one daughter.
+</pre>
+<ul>
+<li><p>An argument is <strong>valid</strong> if and only if it is not <em>possible</em></p>
+<ul>
+<li>that both all of its premises are true and its conclusion is false.</li>
+</ul></li>
+<li><p><em>Possible</em> is a problem: how do you tell what's possible and not possible?</p></li>
+<li><p>If you <strong>can</strong> tell a coherent story</p>
+<ul>
+<li>in which the premises are true and the conclusion is false,</li>
+<li>then the argument is <strong>invalid</strong>.</li>
+</ul></li>
+<li><p>If you <em>cannot</em> tell a coherent story</p>
+<ul>
+<li>in which the premises are true and the conclusion is false,</li>
+<li>then the argument is <strong>valid</strong>.</li>
+</ul></li>
+<li><p>Alternatively, an argument is valid if and only if</p>
+<ol>
+<li>it is not possible that both all of its premises are true and its conclusion is false.</li>
+<li>whenever its conclusion is false, at least one premise must be false.</li>
+</ol></li>
+<li><p>Pick the definition that works for you and go with that definition.</p></li>
+<li><p>What validity is not</p>
+<ul>
+<li>A valid argument is <strong>not</strong> necessarily good.</li>
+<li>Validity does <strong>not</strong> depend on whether the premises and the conclusions are actually true.</li>
+<li>Validity depends on what is possible.</li>
+</ul></li>
+</ul>
+<pre>
+                  True Conclusion          False Conclusion
+-----------------------------------------------------------------
+True Premises   | Some Valid, Some Not   | ALL INVALID
+A False Premise | Some Valid, Some Not   | Some Valid, Some Not
+</pre>
+<ul>
+<li>Four kinds of arguments. All are possibly, except for one.</li>
+<li>Our assumptions for the following examples of each kind of argument:
+
+<ul>
+<li>All Ford cars have four tires.</li>
+<li>Some Ford cars do not have four doors.</li>
+<li>Henry's only car is a four-door Ford with four tires.</li>
+<li>Jane's only car is a two-door Chrysler with four tires.</li>
+</ul></li>
+</ul>
+<pre>
+(1) All Fords have four tires.
+(2) Henry's car is a Ford.
+--------------------------------------------
+∴ (3) Henry's car has four tires.
+</pre>
+<ul>
+<li>Example #1: True premises, true conclusion, valid argument.
+
+<ul>
+<li>P1: True. That's one of our assumptions.</li>
+<li>P2: True. That's another one of our assumptions.</li>
+<li>C1: True. This is a valid argument.</li>
+<li>NOTE! MORBUS EDITED THIS EXAMPLE FOR TIRES, NOT DOORS.</li>
+<li>EXAMPLE #3 APPEARS TO BE A DUPLICATE OF EXAMPLE #1.</li>
+<li>TIRES MAKES MORE SENSE HERE. I ASSUME AN ERROR IN LECTURE.</li>
+<li><a rel="nofollow" class="external free" href="https://class.coursera.org/thinkagain-2012-001/forum/thread?thread_id=2087">https://class.coursera.org/thinkagain-2012-001/forum/thread?thread_id=2087</a></li>
+</ul></li>
+</ul>
+<pre>
+(1) All Ford cars have four tires.
+(2) Henry's car has four tires.
+--------------------------------------------
+∴ (3) Henry's car is a Ford.
+</pre>
+<ul>
+<li>Example #2: True premises, true conclusion, invalid argument.
+
+<ul>
+<li>All the premises are true based on our assumptions.</li>
+<li>Our assumptions also state that Henry's car is a Ford.</li>
+<li>But, if Henry switched cars with Jane, the conclusion is now false.</li>
+<li>It's possible to tell an coherent story with premises true and conclusion false.</li>
+<li>The argument is invalid.</li>
+</ul></li>
+</ul>
+<pre>
+(1) All Ford cars have four doors.
+(2) Henry's car is a Ford.
+--------------------------------------------
+∴ (3) Henry's car has four doors.
+</pre>
+<ul>
+<li><p>Example #3: False premises, true conclusion, valid argument.</p>
+<ul>
+<li>P1: False. Our assumptions state that some Fords do not have four doors.</li>
+<li>P2: True, based on our assumptions.</li>
+<li>C1: True, based on our assumptions.</li>
+<li>This argument is valid.</li>
+</ul></li>
+<li><p>An argument with a false premise can still be valid.</p></li>
+</ul>
+<pre>
+(1) Some Ford cars do not have four doors.
+(2) Henry's car is a Ford.
+--------------------------------------------
+∴ (3) Henry's car does not have four doors.
+</pre>
+<ul>
+<li><p>Example #4: True premises, false conclusion, invalid argument.</p>
+<ul>
+<li>P1 and P2: Both true. Conclusion is false. Invalid argument.</li>
+<li>It's easy to see how Henry's car could have four doors.</li>
+</ul></li>
+<li><p>Every argument with true premises and a false conclusion is invalid.</p></li>
+</ul>
+<pre>
+(1) David is either a swimmer or a golfer.
+(2) David is a swimmer.
+--------------------------------------------
+∴ (3) David is not a golfer.
+</pre>
+<ul>
+<li><p>Example #5: True premises, false conclusion, invalid argument.</p>
+<ul>
+<li>P1 and P2: Both true. But David could <em>also</em> be a golfer.</li>
+<li>Thus, the conclusion is false, making the argument invalid.</li>
+</ul></li>
+<li><p>Validity depends on what is possible, not what is actual.</p></li>
+</ul>
+<h2> <span class="mw-headline" id="Lecture_3-2:_Soundness">Lecture 3-2: Soundness</span></h2>
+<ul>
+<li><p>If valid arguments can have false premises, then what good are they?</p></li>
+<li><p>In a <strong>sound</strong> argument, the conclusion must be true.</p></li>
+<li><p>An argument is sound if and only if</p>
+<ol>
+<li>all of its premises are true, and</li>
+<li>it is valid.</li>
+</ol></li>
+</ul>
+<pre>
+Premises  Conclusion     Valid        Not Valid
+-----------------------------------------------
+True      True           Sound        Not Sound
+True      False          Impossible   Not Sound
+False     True           Not Sound    Not Sound
+False     False          Not Sound    Not Sound
+</pre>
+<ul>
+<li><p>Ways an argument can be unsound</p>
+<ol>
+<li>The argument is invalid.</li>
+<li>It has a false premise</li>
+</ol></li>
+<li><p>If a deductive argument is not sound, then it is not a good argument.</p></li>
+<li><p>Soundness guarantees the truth of the conclusion.</p></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 83/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Lecture_Notes_3&amp;oldid=6721">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Lecture_Notes_3&amp;oldid=6721</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

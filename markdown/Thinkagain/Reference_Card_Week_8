@@ -1,0 +1,77 @@
+[[ThinkAgain:Reference Card Week 7 |Reference Card Week 7]]  [[ThinkAgain:Reference Card Week 8 | <---- Reference Card Week 8 ---->]]  [[ThinkAgain:Reference Card Week 9 |Reference Card Week 9]]
+
+# Chance and Choice
+
+Inductive strength can be considered as a probability. But it's very easy to fall in several probability traps, such as the gambler's fallacy (believing previous attempts influence future attempts) or representative heuristics (thinking that two hands in poker have different probability only based on their value)
+
+- Probability can be rated from 0 (no chance of happening) to 1 (can only happen)
+- A priori probability assumes likelihood before the event happens. It can only be used when all the possibilities have the same likelihood.
+- Statistical probability counts the outcomes from a large number of runs
+- Subjective probability is based on degrees of rational belief
+
+If Pr(X) is the probability of X
+
+    Pr(~h) = 1 - Pr(h)  
+    Pr(h1 & h2) = Pr(h1) * Pr(h2) if h1 and h2 are independent  
+    Pr(h1 & h2) = Pr(h1) * Pr(h2|h1) if h1 and h2 are dependent  
+    Pr(h1 v h2) = Pr(h1) + Pr(h2) if h1 and h2 are mutually exclusive  
+    Pr(h1 v h2) = Pr(h1) + Pr(h2) - Pr(h1 & h2)  
+    Probability of h happening in a series of n similar events = 1 - Pr(~h)^n  
+    
+    h: hypothesis  
+    h2|h1: h2 given that h1 happened  
+    ~: negation  
+    Two events are independent if and only if the occurrence of one has no effect on the probability of the other.
+
+## Bayes' Theorem
+
+Consider a base population of 100,000  
+Base rate = Pr(h) = % of general population with the condition = 0.003  
+Sensitivity = Pr(e|h) = % of cases with conditions that test positive = 0.99  
+Specificity = Pr(~e|~h) = % of cases without condition that test negative = 0.99  
+
+
+<table border="1" style="border-collapse:collapse;">
+<tr>
+  <td></td>
+  <td>Do have the condition = h</td>
+  <td>Do NOT have the condition = ~h</td>
+  <td>Total</td>
+</tr>
+<tr>
+  <td>Positive test results = e</td>
+  <td>300 * 0.99 = 297</td>
+  <td>99,700 * (1 - 0.99) = 997</td>
+  <td>297 + 997 = 1,294</td>
+</tr>
+<tr>
+  <td>Negative test result = ~e</td>
+  <td>300 * (1 - 0.99) = 3</td>
+  <td>99,700 * 0.99 = 98,703</td>
+  <td>98,703 + 3 = 98,706</td>
+</tr>
+<tr>
+  <td>Totals</td>
+  <td>100,000 * 0.003 = 300</td>
+  <td>100,000 * (1 - 0.003) = 99,700</td>
+  <td>100,000</td>
+</table>
+
+Solution = Pr(h|e) = probability that you have the condition if you test positive = 297 / 1294 = 0.23 = 23%
+
+In other words, the false positives from the large group of people who do not have the condition may outnumber the true positives.
+
+
+## Different types of decisions
+
+- Decisions with certainty: the chooser knows the actual outcomes of each option, even though there is never 100% certainty in real life
+- Decisions with risk: the chooser does not know the exact outcome of each outcome, but does know the probability of the outcomes
+  - This is where you're using the expected value theory
+  - Expected financial value = probability of winning * net win - probability of losing x total loss
+    - Don't forget that net win is the win minus the money spent
+    - A bet is favorable is its expected value > 0, unfavorable if < 0 and neutral if = 0
+  - Expected overall value: looks at the bigger picture, such as takes into account if you can afford to play until you win, or if the win is worth the possible lost.
+     - Diminishing marginal utility = each increment decreases in value as you get more and more increment
+     - Actual overall value = all the good and bad effects
+     - Expected overall value = all the good and bad effects times the probability of each effect
+- Decisions with ignorance / uncertainty: you do not know the actual outcomes nor even the probabilities

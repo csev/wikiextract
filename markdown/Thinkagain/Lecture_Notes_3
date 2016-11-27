@@ -1,0 +1,175 @@
+[[ThinkAgain:Lecture Notes 2 |Lecture Notes 2]]  [[ThinkAgain:Lecture Notes 3 | <---- Lecture Notes 3 ---->]]  [[ThinkAgain:Lecture Notes 4 | Lecture Notes 4]]
+
+
+Lecture 3-1: Validity
+---------------------
+
+* Vices in arguments
+ 1. One or more premises is/are FALSE.
+ 2. The premises do not provide a good reason for the conclusion.
+
+* Virtues in arguments
+ 1. Validity
+ 2. Soundness
+
+* Relation between premises and conclusion
+ * In a **deductive** argument, the conclusion should *follow from* the premises.
+ * That's a hard notion to do, so we're going to instead focus on the notion of validity.
+ * A **deductive** argument is supposed to be valid.
+ * An **inductive** argument is not supposed to be valid.
+
+<pre>
+[1a] Mary has a child who is pregnant,
+[1b] and only daughters can become pregnant,
+[1c] so Mary has at least one daughter.
+</pre>
+
+* What's validity? Here's a simple example.
+ * You know Mary, but you don't know her children.
+ * `[1a] [1b]` But, you do know that she has one child who is pregnant.
+ * `[1c]` You have all you need to know in order to draw a further conclusion.
+
+<pre>
+(1) Mary has a child who is pregnant.
+(2) Only daughters can become pregnant.
+-------------------------------------
+∴ (3) Mary has at least one daughter.
+</pre>
+
+* An argument is **valid** if and only if it is not *possible*
+ * that both all of its premises are true and its conclusion is false.
+
+* *Possible* is a problem: how do you tell what's possible and not possible?
+
+* If you **can** tell a coherent story
+ * in which the premises are true and the conclusion is false,
+ * then the argument is **invalid**.
+
+* If you *cannot* tell a coherent story
+ * in which the premises are true and the conclusion is false,
+ * then the argument is **valid**.
+
+* Alternatively, an argument is valid if and only if
+ 1. it is not possible that both all of its premises are true and its conclusion is false.
+ 2. whenever its conclusion is false, at least one premise must be false.
+
+* Pick the definition that works for you and go with that definition.
+
+* What validity is not
+ * A valid argument is **not** necessarily good.
+ * Validity does **not** depend on whether the premises and the conclusions are actually true.
+ * Validity depends on what is possible.
+
+<pre>
+                  True Conclusion          False Conclusion
+-----------------------------------------------------------------
+True Premises   | Some Valid, Some Not   | ALL INVALID
+A False Premise | Some Valid, Some Not   | Some Valid, Some Not
+</pre>
+
+* Four kinds of arguments. All are possibly, except for one.
+* Our assumptions for the following examples of each kind of argument:
+ * All Ford cars have four tires.
+ * Some Ford cars do not have four doors.
+ * Henry's only car is a four-door Ford with four tires.
+ * Jane's only car is a two-door Chrysler with four tires.
+
+<pre>
+(1) All Fords have four tires.
+(2) Henry's car is a Ford.
+--------------------------------------------
+∴ (3) Henry's car has four tires.
+</pre>
+
+* Example #1: True premises, true conclusion, valid argument.
+ * P1: True. That's one of our assumptions.
+ * P2: True. That's another one of our assumptions.
+ * C1: True. This is a valid argument.
+ * NOTE! MORBUS EDITED THIS EXAMPLE FOR TIRES, NOT DOORS.
+ * EXAMPLE #3 APPEARS TO BE A DUPLICATE OF EXAMPLE #1.
+ * TIRES MAKES MORE SENSE HERE. I ASSUME AN ERROR IN LECTURE.
+ * https://class.coursera.org/thinkagain-2012-001/forum/thread?thread_id=2087
+
+<pre>
+(1) All Ford cars have four tires.
+(2) Henry's car has four tires.
+--------------------------------------------
+∴ (3) Henry's car is a Ford.
+</pre>
+
+* Example #2: True premises, true conclusion, invalid argument.
+ * All the premises are true based on our assumptions.
+ * Our assumptions also state that Henry's car is a Ford.
+ * But, if Henry switched cars with Jane, the conclusion is now false.
+ * It's possible to tell an coherent story with premises true and conclusion false.
+ * The argument is invalid.
+
+<pre>
+(1) All Ford cars have four doors.
+(2) Henry's car is a Ford.
+--------------------------------------------
+∴ (3) Henry's car has four doors.
+</pre>
+
+* Example #3: False premises, true conclusion, valid argument.
+ * P1: False. Our assumptions state that some Fords do not have four doors.
+ * P2: True, based on our assumptions.
+ * C1: True, based on our assumptions.
+ * This argument is valid.
+
+* An argument with a false premise can still be valid.
+
+<pre>
+(1) Some Ford cars do not have four doors.
+(2) Henry's car is a Ford.
+--------------------------------------------
+∴ (3) Henry's car does not have four doors.
+</pre>
+
+* Example #4: True premises, false conclusion, invalid argument.
+ * P1 and P2: Both true. Conclusion is false. Invalid argument.
+ * It's easy to see how Henry's car could have four doors.
+
+* Every argument with true premises and a false conclusion is invalid.
+
+<pre>
+(1) David is either a swimmer or a golfer.
+(2) David is a swimmer.
+--------------------------------------------
+∴ (3) David is not a golfer.
+</pre>
+
+* Example #5: True premises, false conclusion, invalid argument.
+ * P1 and P2: Both true. But David could *also* be a golfer.
+ * Thus, the conclusion is false, making the argument invalid.
+
+* Validity depends on what is possible, not what is actual.
+
+
+Lecture 3-2: Soundness
+---------------------
+
+* If valid arguments can have false premises, then what good are they?
+
+* In a **sound** argument, the conclusion must be true.
+
+* An argument is sound if and only if
+ 1. all of its premises are true, and
+ 2. it is valid.
+
+<pre>
+Premises  Conclusion     Valid        Not Valid
+-----------------------------------------------
+True      True           Sound        Not Sound
+True      False          Impossible   Not Sound
+False     True           Not Sound    Not Sound
+False     False          Not Sound    Not Sound
+</pre>
+
+* Ways an argument can be unsound
+ 1. The argument is invalid.
+ 2. It has a false premise
+
+* If a deductive argument is not sound, then it is not a good argument.
+
+* Soundness guarantees the truth of the conclusion.

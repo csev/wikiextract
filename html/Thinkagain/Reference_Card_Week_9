@@ -1,0 +1,43 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">ThinkAgain:Reference Card Week 9</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p><a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_8" title="ThinkAgain:Reference Card Week 8">Reference Card Week 8</a>  <strong class="selflink"> &lt;---- Reference Card Week 9 ----&gt;</strong>  <a href="/wiki/index.php/ThinkAgain:Reference_Card_Week_10" title="ThinkAgain:Reference Card Week 10">Reference Card Week 10</a></p>
+<h1> <span class="mw-headline" id="Paradox_of_vagueness">Paradox of vagueness</span></h1>
+<p>A paradox is an argument that seems valid, whose premises seem true yet whose conclusion seems false.</p>
+<code><pre>Walter is not bald  
+You cannot turn a non-bald person into a bald person by removing 1 hair  
+-----------------------------------------------------------------------  
+.: No matter how many hairs Walter loses, he will still not be bald  
+</pre></code>
+<p>The reason of this paradox is because the definition of "bald" is vague. A person with one single hair can indeed be considered bald. If you define precisely what "bald" means, the paradox disappears.</p>
+<h1> <span class="mw-headline" id="Fallacies_of_vagueness">Fallacies of vagueness</span></h1>
+<ul>
+<li>Conceptual slippery slope argument: same as a paradox of vagueness except that the vague term is a matter of degree (e.g. habitable / inhabitable) rather than a true/false state</li>
+<li>Causal slippery slope argument: the premise that shows the slippery slope ("if you pass a restrictive bill, then another even more restrictive bill will be passed") is not true</li>
+<li>Fairness slippery slope argument: use fairness as the vague term.</li>
+</ul>
+<h1> <span class="mw-headline" id="Fallacies_of_ambiguity">Fallacies of ambiguity</span></h1>
+<p>Fallacies of ambiguity (aka of equivocation) rely on two types of ambiguities:</p>
+<ul>
+<li>Semantic ambiguity: when a single word can have several meanings</li>
+<li>Syntactic ambiguity: ambiguity of the grammar in the whole phrase of sentence</li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 11/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_9&amp;oldid=6729">https://share.coursera.org/wiki/index.php?title=ThinkAgain:Reference_Card_Week_9&amp;oldid=6729</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>
