@@ -85,6 +85,8 @@ def save_image(url,fname,hdr) :
         if not os.path.exists(folder):
             os.makedirs(folder)
         image = f.read()
+        if ( len(image) < 1 ) :
+            print('Did not write empty file',fname);
         try:
             out = open(fname,'wb')
         except:
@@ -199,6 +201,11 @@ for category in categories:
                 data = data.replace(k,v)
 
             fname = 'html/'+page.replace(':','/')
+
+            if len(data) < 1 :
+                print('Did not write zero length file',fname);
+                continue
+
             folder = os.path.dirname(fname)
             if not os.path.exists(folder):
                 os.makedirs(folder)
@@ -240,6 +247,10 @@ for category in categories:
             textarea = html.unescape(textarea[0])
     
             fname = 'markdown/'+page.replace(':','/')
+            if len(textarea) < 1 :
+                print('Did not write zero length file',fname);
+                continue
+
             folder = os.path.dirname(fname)
             if not os.path.exists(folder):
                 os.makedirs(folder)
