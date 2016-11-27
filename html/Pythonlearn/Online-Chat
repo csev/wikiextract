@@ -14,9 +14,9 @@
 <h3> <span class="mw-headline" id="Using_the_Freenode_web_site_to_connect">Using the Freenode web site to connect</span></h3>
 <p>If you haven't used IRC before, you don't need a client or browser extension. Freenode has a web client: <a rel="nofollow" class="external free" href="http://webchat.freenode.net/">http://webchat.freenode.net/</a>  </p>
 <p>All you need is a (somewhat unique) username, and the channel (chat room) name: pr4e. Enter those (don't use "philalethe", enter your preferred name), fill out the captcha, and hit connect.</p>
-<p><a href="/wiki/index.php/File:Freenode-pr4e-IRCconnect.jpg" class="image"><img alt="&quot;Image of the connection page for the Freenode web client&quot; 533×375px" src="/wiki/images/3/31/Freenode-pr4e-IRCconnect.jpg" width="533" height="375" /></a></p>
+<p><a href="/wiki/index.php/#File:Freenode-pr4e-IRCconnect.jpg" class="image"><img alt="&quot;Image of the connection page for the Freenode web client&quot; 533×375px" src="/wiki/images/3/31/Freenode-pr4e-IRCconnect.jpg" width="533" height="375" /></a></p>
 <p>Then you'll see this:</p>
-<p><a href="/wiki/index.php/File:Freenode-pr4e-IRCchannel.JPG" class="image"><img alt="&quot;Image of IRC channel on Freenode&quot; 533×460px" src="/wiki/images/a/a7/Freenode-pr4e-IRCchannel.JPG" width="770" height="664" /></a></p>
+<p><a href="/wiki/index.php/#File:Freenode-pr4e-IRCchannel.JPG" class="image"><img alt="&quot;Image of IRC channel on Freenode&quot; 533×460px" src="/wiki/images/a/a7/Freenode-pr4e-IRCchannel.JPG" width="770" height="664" /></a></p>
 <p>Don't worry if you don't see any chat going on. It only shows what's been said since <em>you</em> logged on.  </p>
 <p>Circled in blue is the channel name. The tab next to it, "Status" is information from the server. Make sure &#35;pr4e is highlighted. If you don't see that tab, type /join pr4e into the text box. Users are to the right (highlighted in yellow). Text input is on the bottom.   </p>
 <p>That's it. Come say hi!  </p>

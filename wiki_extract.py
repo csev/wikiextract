@@ -5,16 +5,18 @@ import os
 import urllib.request, urllib.parse, urllib.error
 from bs4 import BeautifulSoup
 
-baseurl = 'https://share.coursera.org/wiki/index.php'
+wikibase = 'https://share.coursera.org'
+baseurl = wikibase+'/wiki/index.php'
+
 categories = [
+'Sna',
 'Pythonlearn',
 'Fantasysf',
 'Introfinance',
 'Introthermodynamics',
 'Modelthinking',
 'Nlangp',
-'Digitaldemocracy',
-'Sna'
+'Digitaldemocracy'
 ]
 
 start = 'Main'
@@ -53,7 +55,7 @@ for category in categories:
 
     retrieved = list()
     todo = list()
-    todo.append(start);
+    todo.append(start)
 
     while len(todo) > 0 : 
         print("----- Pages left to Spider ",len(todo))
@@ -82,9 +84,38 @@ for category in categories:
             data = f.read().decode()
             # print (data)
 
+            soup = BeautifulSoup(data, 'html.parser')
+            # Retrieve all of the anchor tags
+            tags = soup('img')
+            for tag in tags:
+                src = tag.get('src', 'None')
+                if src == None : continue
+                if not src.startswith('/wiki/images/') : continue
+                fname = src[6:]
+                folder = os.path.dirname(fname)
+                url = wikibase + src;
+                print('Retrieving image',url)
+                # Retrieve the Image
+                opener = urllib.request.build_opener()
+                opener.addheaders.append(('Cookie', hdr))
+                try:
+                    f = opener.open(url)
+                except:
+                    f = None
+
+                if f is not None:
+                    if not os.path.exists(folder):
+                        os.makedirs(folder)
+                    image = f.read()
+                    out = open(fname,'wb')
+                    out.write(image)
+                    out.close()
+                    print('Wrote',len(data),' characters to '+fname)
+
+
+
             usesoup = False
             if usesoup : 
-                soup = BeautifulSoup(data, 'html.parser')
                 thediv = soup.find("div", {"id": "content"})
                 # print(thediv)
                 data = str(thediv)
@@ -93,8 +124,10 @@ for category in categories:
                 endpos = data.find('</div><!-- end of MAINCONTENT div -->')
                 data = data[startpos:endpos]+'</div>'
 
+            # get rid of icky stuff
             data = data.replace('<div id="jump-to-nav">Jump to: <a href="#column-one">navigation</a>, <a href="#searchInput">search</a></div>','')
-            # data = data.replace('href="/wiki/index.php/','href="index.php?page=')
+            data = data.replace('<a href="/wiki/index.php/File:','<a href="/wiki/index.php/#File:')
+
             folder = 'html/'+category
             if not os.path.exists(folder):
                 os.makedirs(folder)
