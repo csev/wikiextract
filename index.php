@@ -44,3 +44,4 @@ if ( ! file_exists($fname) ) {
 header('Content-Type: text/html');
 echo file_get_contents($fname);
 
+echo('<hr/><a href="wiki/index.php">Back to all categories</a>'."\n");
