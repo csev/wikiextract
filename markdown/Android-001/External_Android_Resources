@@ -1,0 +1,60 @@
+[[Category:Android]]
+Useful Links
+=====
+
+* [https://github.com/thecodepath/android_guides/wiki/ CodePath Android Cliffnotes] - Resource for complete and up-to-date practical Android developer guides for any topic.
+* [https://www.udemy.com/java-tutorial/#/ Java for Complete Beginners] - Highly recommended Udemy Java course for total beginners.
+* [https://www.udacity.com/course/cs046/ Intro to Programming] - This course teaches basic skills and concepts of computer programming in an object-oriented approach using Java.
+
+## Free Android Development Resources
+The following links provide resources that are helpful in developing Android software.  This is not a complete list so feel free to add anything that you have found valuable.  The intent for including these links is add supplemental content to this course to provide tools for students to leverage in their quest to develop quality Android software and applications.
+* [http://git-scm.com/ Git]  - Open source version control system, source control management (SCM).
+* [http://git-scm.com/book/ Pro Git] - Free eBook written by Scott Chacon that details the history and usage of Git.
+* [http://www.eclipse.org/egit/ EGit] - Eclipse Git plugin site. Check for downloads, support and documentation.
+* [http://forum.xda-developers.com/android/ xda Android Developers] - Community forum dedicated to the distribution of knowledge about Android.  Great place to review if you have questions about anything Android.
+* [http://developer.android.com/develop/index.html Android Developers Guide] - Official site of Android.
+* [Google's Training for Android developers](https://developer.android.com/training/index.html)
+* [https://thenewcircle.com/s/tags/android/ NewCircle] - Formerly Marakana provides professional training on Android development.  This site has great videos on may of the topics that pertain to Android.
+* [https://www.youtube.com/user/GoogleDevelopers/ Google Developers youTube Channel] - Great place to review lectures from many of the previous Google I/O conferences.
+* [http://www.vogella.com/ vogella.com] - Developer tutorials covering the gambit of Android and Eclipse by Lars Vogel.  Great site!
+* [http://stackoverflow.com/ stackoverflow.com] - A great resource for almost anything code related.  If you have a question about how to do something odds are it has been answered here.
+* [http://android-developers.blogspot.com/ Android Developers Blog] - Want to know what the developers of Android are doing this is the place to find out.
+* [https://android.googlesource.com/ Official Android Git Repositories] - Android source code repositories supported by Google.
+* [https://code.google.com/p/smali/ smali/backsmali] - Advanced Android development tool! 
+* [Android 4 App Development Essentials](http://www.techotopia.com/index.php/Android_4_App_Development_Essentials) - free book (for personal use only)
+* [https://www.udemy.com/courses/search/?q=android&view=grid&price=free/ Free Udemy Android Courses] - Great site for paid and free courses to expand your education. 
+* [http://opensignal.com/blog/2013/07/30/40-developer-tips-for-android-optimization/ 40 Developer Tips for Android Optimization] - Tips and Good Practices for Android developers
+* [http://androidcookbook.com/home.seam Android Cookbook] - Crowd-Sourced Android CookBook
+
+## Free Spanish Android Development Resources
+* [http://www.sgoliver.net/blog/?page_id=3011/ Curso Programación Android – Indice de Contenidos] - Title say all.
+* [http://pendientedemigracion.ucm.es/info/tecnomovil/documentos/android.pdf/ Introducción a Android] - An Spanish pdf/book from G-TEC of UCM (Universidad Complutense de Madrid) in Spain.
+
+Podcasts
+=====
+
+## Android / Mobile Development
+### [http://walledgardenweekly.com/ Walled Garden Weekly] 
+recommended [https://class.coursera.org/android-001/forum/thread?thread_id=3350#post-8495 here]
+* http://walledgardenweekly.com/post/35444804557/wgw-14-week-14-punch-quest-android-and-free-sales
+* http://walledgardenweekly.com/post/36939605210/week-15-the-android-episode
+* http://walledgardenweekly.com/post/70176713039/season-two-episode-one
+
+### [http://www.se-radio.net/ Software Engineering Radio]
+* http://www.se-radio.net/tag/android/ - Currently only one podcast has that tag, by [http://www.se-radio.net/2013/09/episode-197-lars-vogel/ Lars Vogel]
+* http://www.se-radio.net/2007/08/episode-65-introduction-to-embedded-systems/ - Mentions mobile phones, may not be directly applicable to app development.
+* http://www.se-radio.net/tag/resource-management/ - Effective resource management is important when your resources are constrained, as they are on the mobile platforms
+
+## General Programming Information
+### [http://javascriptjabber.com/episode-guide/ JavaScript Jabber]
+* http://javascriptjabber.com/059-jsj-jquery-mobile-with-todd-parker/ - Good discussion about considerations on mobile devices, even if it is from a JS/Web based perspective instead of an App perspective. 
+* http://javascriptjabber.com/058-jsj-building-accessible-websites-with-brian-hogan/ - Accessible interface considerations
+* http://javascriptjabber.com/050-jsj-qunit-with-jorn-zaefferer/ - Information on testing, some of which should translate over to any xUnit platforms like jUnit
+* http://javascriptjabber.com/091-jsj-json-apis/ - Information about JSON, which is used for most communication with most backends, be it the Facebook or Twitter API, or your own RESTful server.
+* http://javascriptjabber.com/026-jsj-code-organization-and-reuse/ - Good basic code reuse practices
+
+### [http://rubyrogues.com/episode-guide/ Ruby Rogues]
+* http://rubyrogues.com/131-rr-how-to-learn/ - Great info on how to go about learning new things
+* http://rubyrogues.com/0074-rr-developer-environments/ - Developer Environment discussion
+* http://rubyrogues.com/068-rr-book-club-growing-object-oriented-software-guided-by-tests/ - More testing based information
+* http://rubyrogues.com/what-makes-beautiful-code/

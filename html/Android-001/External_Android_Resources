@@ -1,0 +1,112 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:External Android Resources</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p></p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Useful_Links"><span class="tocnumber">1</span> <span class="toctext">Useful Links</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Free_Android_Development_Resources"><span class="tocnumber">1.1</span> <span class="toctext">Free Android Development Resources</span></a></li>
+<li class="toclevel-2"><a href="#Free_Spanish_Android_Development_Resources"><span class="tocnumber">1.2</span> <span class="toctext">Free Spanish Android Development Resources</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Podcasts"><span class="tocnumber">2</span> <span class="toctext">Podcasts</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Android_.2F_Mobile_Development"><span class="tocnumber">2.1</span> <span class="toctext">Android / Mobile Development</span></a>
+<ul>
+<li class="toclevel-3"><a href="#Walled_Garden_Weekly"><span class="tocnumber">2.1.1</span> <span class="toctext">Walled Garden Weekly</span></a></li>
+<li class="toclevel-3"><a href="#Software_Engineering_Radio"><span class="tocnumber">2.1.2</span> <span class="toctext">Software Engineering Radio</span></a></li>
+</ul>
+</li>
+<li class="toclevel-2"><a href="#General_Programming_Information"><span class="tocnumber">2.2</span> <span class="toctext">General Programming Information</span></a>
+<ul>
+<li class="toclevel-3"><a href="#JavaScript_Jabber"><span class="tocnumber">2.2.1</span> <span class="toctext">JavaScript Jabber</span></a></li>
+<li class="toclevel-3"><a href="#Ruby_Rogues"><span class="tocnumber">2.2.2</span> <span class="toctext">Ruby Rogues</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h1> <span class="mw-headline" id="Useful_Links">Useful Links</span></h1>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://github.com/thecodepath/android_guides/wiki/">CodePath Android Cliffnotes</a> - Resource for complete and up-to-date practical Android developer guides for any topic.</li>
+<li><a rel="nofollow" class="external text" href="https://www.udemy.com/java-tutorial/#/">Java for Complete Beginners</a> - Highly recommended Udemy Java course for total beginners.</li>
+<li><a rel="nofollow" class="external text" href="https://www.udacity.com/course/cs046/">Intro to Programming</a> - This course teaches basic skills and concepts of computer programming in an object-oriented approach using Java.</li>
+</ul>
+<h2> <span class="mw-headline" id="Free_Android_Development_Resources">Free Android Development Resources</span></h2>
+<p>The following links provide resources that are helpful in developing Android software.  This is not a complete list so feel free to add anything that you have found valuable.  The intent for including these links is add supplemental content to this course to provide tools for students to leverage in their quest to develop quality Android software and applications.
+<ul><li> <a rel="nofollow" class="external text" href="http://git-scm.com/">Git</a>  - Open source version control system, source control management (SCM).
+</li><li> <a rel="nofollow" class="external text" href="http://git-scm.com/book/">Pro Git</a> - Free eBook written by Scott Chacon that details the history and usage of Git.
+</li><li> <a rel="nofollow" class="external text" href="http://www.eclipse.org/egit/">EGit</a> - Eclipse Git plugin site. Check for downloads, support and documentation.
+</li><li> <a rel="nofollow" class="external text" href="http://forum.xda-developers.com/android/">xda Android Developers</a> - Community forum dedicated to the distribution of knowledge about Android.  Great place to review if you have questions about anything Android.
+</li><li> <a rel="nofollow" class="external text" href="http://developer.android.com/develop/index.html">Android Developers Guide</a> - Official site of Android.
+</li><li> <a rel="nofollow" class="external text" href="https://developer.android.com/training/index.html">Google's Training for Android developers</a>
+</li><li> <a rel="nofollow" class="external text" href="https://thenewcircle.com/s/tags/android/">NewCircle</a> - Formerly Marakana provides professional training on Android development.  This site has great videos on may of the topics that pertain to Android.
+</li><li> <a rel="nofollow" class="external text" href="https://www.youtube.com/user/GoogleDevelopers/">Google Developers youTube Channel</a> - Great place to review lectures from many of the previous Google I/O conferences.
+</li><li> <a rel="nofollow" class="external text" href="http://www.vogella.com/">vogella.com</a> - Developer tutorials covering the gambit of Android and Eclipse by Lars Vogel.  Great site!
+</li><li> <a rel="nofollow" class="external text" href="http://stackoverflow.com/">stackoverflow.com</a> - A great resource for almost anything code related.  If you have a question about how to do something odds are it has been answered here.
+</li><li> <a rel="nofollow" class="external text" href="http://android-developers.blogspot.com/">Android Developers Blog</a> - Want to know what the developers of Android are doing this is the place to find out.
+</li><li> <a rel="nofollow" class="external text" href="https://android.googlesource.com/">Official Android Git Repositories</a> - Android source code repositories supported by Google.
+</li><li> <a rel="nofollow" class="external text" href="https://code.google.com/p/smali/">smali/backsmali</a> - Advanced Android development tool! 
+</li><li> <a rel="nofollow" class="external text" href="http://www.techotopia.com/index.php/Android_4_App_Development_Essentials">Android 4 App Development Essentials</a> - free book (for personal use only)
+</li><li> <a rel="nofollow" class="external text" href="https://www.udemy.com/courses/search/?q=android&amp;view=grid&amp;price=free/">Free Udemy Android Courses</a> - Great site for paid and free courses to expand your education. 
+</li><li> <a rel="nofollow" class="external text" href="http://opensignal.com/blog/2013/07/30/40-developer-tips-for-android-optimization/">40 Developer Tips for Android Optimization</a> - Tips and Good Practices for Android developers
+</li><li> <a rel="nofollow" class="external text" href="http://androidcookbook.com/home.seam">Android Cookbook</a> - Crowd-Sourced Android CookBook</p>
+</li></ul>
+
+<h2> <span class="mw-headline" id="Free_Spanish_Android_Development_Resources">Free Spanish Android Development Resources</span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://www.sgoliver.net/blog/?page_id=3011/">Curso Programación Android – Indice de Contenidos</a> - Title say all.</li>
+<li><a rel="nofollow" class="external text" href="http://pendientedemigracion.ucm.es/info/tecnomovil/documentos/android.pdf/">Introducción a Android</a> - An Spanish pdf/book from G-TEC of UCM (Universidad Complutense de Madrid) in Spain.</li>
+</ul>
+<h1> <span class="mw-headline" id="Podcasts">Podcasts</span></h1>
+<h2> <span class="mw-headline" id="Android_.2F_Mobile_Development">Android / Mobile Development</span></h2>
+<h3> <span class="mw-headline" id="Walled_Garden_Weekly"><a rel="nofollow" class="external text" href="http://walledgardenweekly.com/">Walled Garden Weekly</a></span></h3>
+<p>recommended <a rel="nofollow" class="external text" href="https://class.coursera.org/android-001/forum/thread?thread_id=3350#post-8495">here</a>
+<ul><li> <a rel="nofollow" class="external free" href="http://walledgardenweekly.com/post/35444804557/wgw-14-week-14-punch-quest-android-and-free-sales">http://walledgardenweekly.com/post/35444804557/wgw-14-week-14-punch-quest-android-and-free-sales</a>
+</li><li> <a rel="nofollow" class="external free" href="http://walledgardenweekly.com/post/36939605210/week-15-the-android-episode">http://walledgardenweekly.com/post/36939605210/week-15-the-android-episode</a>
+</li><li> <a rel="nofollow" class="external free" href="http://walledgardenweekly.com/post/70176713039/season-two-episode-one">http://walledgardenweekly.com/post/70176713039/season-two-episode-one</a></p>
+</li></ul>
+
+<h3> <span class="mw-headline" id="Software_Engineering_Radio"><a rel="nofollow" class="external text" href="http://www.se-radio.net/">Software Engineering Radio</a></span></h3>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.se-radio.net/tag/android/">http://www.se-radio.net/tag/android/</a> - Currently only one podcast has that tag, by <a rel="nofollow" class="external text" href="http://www.se-radio.net/2013/09/episode-197-lars-vogel/">Lars Vogel</a></li>
+<li><a rel="nofollow" class="external free" href="http://www.se-radio.net/2007/08/episode-65-introduction-to-embedded-systems/">http://www.se-radio.net/2007/08/episode-65-introduction-to-embedded-systems/</a> - Mentions mobile phones, may not be directly applicable to app development.</li>
+<li><a rel="nofollow" class="external free" href="http://www.se-radio.net/tag/resource-management/">http://www.se-radio.net/tag/resource-management/</a> - Effective resource management is important when your resources are constrained, as they are on the mobile platforms</li>
+</ul>
+<h2> <span class="mw-headline" id="General_Programming_Information">General Programming Information</span></h2>
+<h3> <span class="mw-headline" id="JavaScript_Jabber"><a rel="nofollow" class="external text" href="http://javascriptjabber.com/episode-guide/">JavaScript Jabber</a></span></h3>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://javascriptjabber.com/059-jsj-jquery-mobile-with-todd-parker/">http://javascriptjabber.com/059-jsj-jquery-mobile-with-todd-parker/</a> - Good discussion about considerations on mobile devices, even if it is from a JS/Web based perspective instead of an App perspective. </li>
+<li><a rel="nofollow" class="external free" href="http://javascriptjabber.com/058-jsj-building-accessible-websites-with-brian-hogan/">http://javascriptjabber.com/058-jsj-building-accessible-websites-with-brian-hogan/</a> - Accessible interface considerations</li>
+<li><a rel="nofollow" class="external free" href="http://javascriptjabber.com/050-jsj-qunit-with-jorn-zaefferer/">http://javascriptjabber.com/050-jsj-qunit-with-jorn-zaefferer/</a> - Information on testing, some of which should translate over to any xUnit platforms like jUnit</li>
+<li><a rel="nofollow" class="external free" href="http://javascriptjabber.com/091-jsj-json-apis/">http://javascriptjabber.com/091-jsj-json-apis/</a> - Information about JSON, which is used for most communication with most backends, be it the Facebook or Twitter API, or your own RESTful server.</li>
+<li><a rel="nofollow" class="external free" href="http://javascriptjabber.com/026-jsj-code-organization-and-reuse/">http://javascriptjabber.com/026-jsj-code-organization-and-reuse/</a> - Good basic code reuse practices</li>
+</ul>
+<h3> <span class="mw-headline" id="Ruby_Rogues"><a rel="nofollow" class="external text" href="http://rubyrogues.com/episode-guide/">Ruby Rogues</a></span></h3>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://rubyrogues.com/131-rr-how-to-learn/">http://rubyrogues.com/131-rr-how-to-learn/</a> - Great info on how to go about learning new things</li>
+<li><a rel="nofollow" class="external free" href="http://rubyrogues.com/0074-rr-developer-environments/">http://rubyrogues.com/0074-rr-developer-environments/</a> - Developer Environment discussion</li>
+<li><a rel="nofollow" class="external free" href="http://rubyrogues.com/068-rr-book-club-growing-object-oriented-software-guided-by-tests/">http://rubyrogues.com/068-rr-book-club-growing-object-oriented-software-guided-by-tests/</a> - More testing based information</li>
+<li><a rel="nofollow" class="external free" href="http://rubyrogues.com/what-makes-beautiful-code/">http://rubyrogues.com/what-makes-beautiful-code/</a></li>
+</ul>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:External_Android_Resources&amp;oldid=23049">https://share.coursera.org/wiki/index.php?title=Android-001:External_Android_Resources&amp;oldid=23049</a>"</div>
+					<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks"><a href="/wiki/index.php/Special:Categories" title="Special:Categories">Category</a>: <ul><li><a href="/wiki/index.php/Category:Android" title="Category:Android">Android</a></li></ul></div></div>					<!-- end content -->
+									</div>
+			</div>

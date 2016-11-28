@@ -1,0 +1,26 @@
+[[Category:Android|Tips]]
+This is a student-made page; please contribute any helpful information (click the "Edit" button).  If you have a new problem that's not listed here, check the forums [https://class.coursera.org/android-001/forum] and ask there, but if you find a solution, please describe it here so others can learn from it.
+Link for Android SDK bundle:
+http://developer.android.com/sdk/index.html#download
+
+## Problem: Where to find Java SDK version 6 for windows
+
+### Solution: For SDK version 6, use this link:
+
+- [http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR)
+
+## Problem: Is it possible to use JDK 7?
+
+### Solution: 
+The professor has said it should work fine, but he also said he will be using version 6.  This writer intends to use version 6 to save headaches later.
+
+Note however that it is possible to have multiple versions of the JDK in your system.  Assuming you already have JDK 7 working, just install JDK 6 as you would normally do.  Then, when building an Android application inside Eclipse, tell Eclipse to use Java 6 by choosing the JDK 6's folder in your project's compiler preferences.  No need to change your system PATH variable since you will be using JDK 6 only from within Eclipse.
+
+## Problem: Can't launch emulator even when created exactly as demonstrated in lecture video.  Error message refers to memory problem.
+
+### Solution:
+from [this post](https://class.coursera.org/android-001/forum/thread?thread_id=978\#post-2943)
+After creating emulator, edit file named like C:\users\{user id}\.android\avd\[nameofemulator_you_chose].avd\config.ini
+to have MB after the memory allocation for both the disk.dataPartition.size and hw.ramSize. (i.e. hw.ramSize=1024MB).
+
+## Categories

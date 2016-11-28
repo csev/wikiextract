@@ -1,0 +1,50 @@
+<div id="content">
+				<a id="top"></a>
+	        		        	<h1 id="firstHeading" class="firstHeading">Android-001:Tips for Setting Up Android SDK in Ubuntu</h1>
+				<div id="bodyContent">
+		            <h3 id="siteSub">From Coursera</h3>
+		            <div id="contentSub"></div>
+		            		            		            					<!-- start content -->
+					<div lang="en" dir="ltr" class="mw-content-ltr"><p>This is a student-made page; please contribute any helpful information (click the "Edit" button).  If you have a new problem that's not listed here, check the forums and ask there, but if you find a solution, please describe it here so others can learn from it.</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Contents</h2></div>
+<ul>
+<li class="toclevel-1"><a href="#Problem:_Where_to_find_Java_SDK_version_6"><span class="tocnumber">1</span> <span class="toctext">Problem: Where to find Java SDK version 6</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Solution:_For_SDK_version_6.2C_use_this_link:"><span class="tocnumber">1.1</span> <span class="toctext">Solution: For SDK version 6, use this link:</span></a></li>
+<li class="toclevel-2"><a href="#Tutorial_Videos"><span class="tocnumber">1.2</span> <span class="toctext">Tutorial Videos</span></a></li>
+<li class="toclevel-2"><a href="#Using_the_Intel_HAXM"><span class="tocnumber">1.3</span> <span class="toctext">Using the Intel HAXM</span></a></li>
+</ul>
+</li>
+</ul>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Problem:_Where_to_find_Java_SDK_version_6">Problem: Where to find Java SDK version 6</span></h2>
+<h3> <span class="mw-headline" id="Solution:_For_SDK_version_6.2C_use_this_link:">Solution: For SDK version 6, use this link:</span></h3>
+<ul>
+<li><a rel="nofollow" class="external free" href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR">http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR</a></li>
+<li>For the official Ubuntu page on installing the Android SDK <a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/AndroidSDK">try this link</a>.</li>
+<li>For the official Ubuntu documentation on how to install Java <a rel="nofollow" class="external text" href="https://help.ubuntu.com/community/Java">try this link</a>.</li>
+</ul>
+<p><strong>Many people are asking whether JDK 7 will work</strong>.  Professor has said it should work fine, but he's also said he will be using version 6.  This writer intends to use version 6 to save headaches later.</p>
+<h3> <span class="mw-headline" id="Tutorial_Videos">Tutorial Videos</span></h3>
+<ul>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=boj0f_O3i88&amp;feature=youtube_gdata_player">Install Android Development Tools on PC and Mac</a></li>
+<li><a rel="nofollow" class="external text" href="https://www.youtube.com/watch?v=9X7Xb54VfoM&amp;feature=youtube_gdata_player">Solving Android SDK Problems</a></li>
+</ul>
+<h3> <span class="mw-headline" id="Using_the_Intel_HAXM">Using the Intel HAXM</span></h3>
+<p>Using the Android emulator can be incredibly frustrating simply because it is so slow. If you are using an Intel architecture, you can take advantage of some Intel development tools to greatly decrease the time required to start and operate the emulator. This improves performance by an order of magnitude for me, so it is definitely worth the effort.  </p>
+<p>Please visit the <a rel="nofollow" class="external text" href="http://software.intel.com/en-us/android/articles/speeding-up-the-android-emulator-on-intel-architecture">Intel web site</a> for additional information and detailed installation instructions for both Windows and Linux.</p>
+
+<!-- 
+NewPP limit report
+Preprocessor node count: 2/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+
+</div><div class="printfooter">
+Retrieved from "<a href="https://share.coursera.org/wiki/index.php?title=Android-001:Tips_for_Setting_Up_Android_SDK_in_Ubuntu&amp;oldid=22825">https://share.coursera.org/wiki/index.php?title=Android-001:Tips_for_Setting_Up_Android_SDK_in_Ubuntu&amp;oldid=22825</a>"</div>
+					<div id='catlinks' class='catlinks catlinks-allhidden'></div>					<!-- end content -->
+									</div>
+			</div>

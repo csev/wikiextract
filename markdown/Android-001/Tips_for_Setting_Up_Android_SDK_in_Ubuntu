@@ -1,0 +1,21 @@
+This is a student-made page; please contribute any helpful information (click the "Edit" button).  If you have a new problem that's not listed here, check the forums and ask there, but if you find a solution, please describe it here so others can learn from it.
+
+## Problem: Where to find Java SDK version 6
+
+### Solution: For SDK version 6, use this link:
+
+- [http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR)
+- For the official Ubuntu page on installing the Android SDK [try this link](https://help.ubuntu.com/community/AndroidSDK).
+- For the official Ubuntu documentation on how to install Java [try this link](https://help.ubuntu.com/community/Java).
+
+**Many people are asking whether JDK 7 will work**.  Professor has said it should work fine, but he's also said he will be using version 6.  This writer intends to use version 6 to save headaches later.
+
+### Tutorial Videos
+- [Install Android Development Tools on PC and Mac](https://www.youtube.com/watch?v=boj0f_O3i88&feature=youtube_gdata_player)
+- [Solving Android SDK Problems](https://www.youtube.com/watch?v=9X7Xb54VfoM&feature=youtube_gdata_player)
+
+### Using the Intel HAXM
+
+Using the Android emulator can be incredibly frustrating simply because it is so slow. If you are using an Intel architecture, you can take advantage of some Intel development tools to greatly decrease the time required to start and operate the emulator. This improves performance by an order of magnitude for me, so it is definitely worth the effort.  
+
+Please visit the [Intel web site](http://software.intel.com/en-us/android/articles/speeding-up-the-android-emulator-on-intel-architecture) for additional information and detailed installation instructions for both Windows and Linux.

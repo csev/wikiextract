@@ -52,6 +52,12 @@ for x in cookies:
     # print(x)
 # print(hdr)
 
+def check_login(url, info) :
+    if info.find('Special:UserLogin') > 0 :
+        print('Must be logged in to access',url)
+        print('Spider stopped')
+        quit()
+    
 # If we have no categories, assume all the categories
 # https://share.coursera.org/wiki/index.php/Courses
 if len(categories) < 1 : 
@@ -62,13 +68,13 @@ if len(categories) < 1 :
     # let this traceback if there is a problem
     f = opener.open(url)
     web = f.read().decode()
+    check_login(url, web)
     # print(web)
     # <li><a href="/wiki/index.php/Scigast:Main" title="
     categories = re.findall('<li><a href="/wiki/index.php/([^:]+?)[:"]',web, re.MULTILINE | re.DOTALL)
     print('Found',len(categories),'categories')
     if len(categories) == 0 : quit()
     print(categories)
-
 
 def save_image(url,fname,hdr) :
     print('Retrieving image',url)
@@ -135,6 +141,7 @@ while len(categories) > 0 :
 
         if f is not None:
             data = f.read().decode()
+            check_login(url, data)
             # print (data)
 
             soup = BeautifulSoup(data, 'html.parser')
@@ -172,6 +179,7 @@ while len(categories) > 0 :
 
                 if f is not None : 
                     fpage = f.read().decode()
+                    check_login(url, fpage)
                     soup2 = BeautifulSoup(fpage, 'html.parser')
                     tags2 = soup2('a')
                     for tag2 in tags2:
@@ -243,6 +251,7 @@ while len(categories) > 0 :
 
         if f is not None:
             data = f.read().decode()
+            check_login(url, data)
             # print (data)
             textarea = re.findall('<textarea.*?>(.*)</textarea>',data, re.MULTILINE | re.DOTALL)
             if len(textarea) < 1 :
